@@ -4,16 +4,16 @@ description: 'メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3f7a2f539d7a21e47b3e35857c6475ae44f32cad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940002"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514020"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 メッセージは会議出席依頼、キャンセル、応答 (承諾、仮受諾、辞退のいずれか) を表します。 
 
@@ -21,7 +21,7 @@ ms.locfileid: "27940002"
 
 開催者またはアプリが会議出席依頼を送信すると、その会議出席依頼が出席者の受信ボックスに **meetingMessageType** が **meetingRequest** の **eventMessage** インスタンスとして届きます。 また、Outlook では出席者の予定表に **event** インスタンスが自動的に作成され、**showAs** プロパティは **tentative** になります。 
 
-出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 アプリケーションことができますもイベントに応答、出席者のためプログラムを使用して、[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[拒否](../api/event-decline.md)でイベント。
+出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 アプリはイベントを[承諾](../api/event-accept.md)、[仮受諾](../api/event-tentativelyaccept.md)、[拒否](../api/event-decline.md)することによって、出席者の代わりにプログラムでイベントに応答することもできます。
 
 別に会議出席依頼、 **eventMessage**インスタンスはイベントの開催者が会議をキャンセルするの結果として、出席者の受信トレイ フォルダー内、または、出席者が会議出席依頼への応答の結果として、開催者の受信トレイで確認できます。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
 
@@ -89,7 +89,7 @@ ms.locfileid: "27940002"
 ```
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -98,22 +98,22 @@ ms.locfileid: "27940002"
 |ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
 |changeKey|String|メッセージのバージョン。|
 |conversationId|String|電子メールが属している会話の ID。|
-|conversationIndex|Binary|電子メールが属している会話のインデックス。|
+|ConversationIndex|Binary|電子メールが属している会話のインデックス。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時間です。|
 |flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|ブール型|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String||
 |importance|String| メッセージの重要度: `low`、`normal`、`high`。|
 |inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で指定された形式でメッセージの ID です。 |
-|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
+|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。このプロパティを調整するには、イベントの **StartDateTime** および **EndDateTime** プロパティの調整も必要になります。|
 |isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
-|isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
-|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|IsOutOfDate|ブール値|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[location](location.md)|要求された会議の場所です。|
@@ -125,13 +125,13 @@ ms.locfileid: "27940002"
 |sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の開始時刻。|
-|subject|String|メッセージの件名。|
+|subject|文字列型 (String)|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
 |type|String|要求された会議の種類: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|現在のメッセージに特有のメッセージの本文の一部。|
 |UnsubscribeData|String|List-Unsubscribe ヘッダーに基づいて解析された有効なエントリ。UnsubscribeEnabled プロパティが true の場合、これは List-Unsubscribe ヘッダー内の mail コマンドのデータです。|
 |UnsubscribeEnabled|ブール値|メッセージが登録解除に対して有効になっているかどうかを示します。list-Unsubscribe ヘッダーが rfc-2369 に準拠している場合、その値は True です。|
-|webLink|String|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
+|webLink|文字列|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -148,7 +148,7 @@ ms.locfileid: "27940002"
 |:---------------|:--------|:----------|
 |[eventMessage の取得](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |eventMessage オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。|
-|[削除](../api/eventmessage-delete.md) | なし |eventMessage オブジェクトを削除します。|
+|[削除](../api/eventmessage-delete.md) | None |eventMessage オブジェクトを削除します。|
 |[copy](../api/message-copy.md)|[message](message.md)|メッセージをフォルダーにコピーします。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
@@ -173,10 +173,15 @@ ms.locfileid: "27940002"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessage resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/eventmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

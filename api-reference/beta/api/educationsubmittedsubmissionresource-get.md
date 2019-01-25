@@ -4,16 +4,16 @@ description: 送信されたリソースを返します。 これに利用可能
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bc7b6f9f0a224cf7a9c1e1c069756d8c83e08ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e529231e6503b67390b7248228af84dc59b5f633
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513278"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>EducationSubmittedSubmissionResource を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 送信されたリソースを返します。 これに利用可能な教師、受講者が送信されると、できは受講者にしたら、先生が、提出書類を公開しました。  教師おくことができますノートの一部のリソースに注意してください。
 
@@ -100,10 +100,15 @@ Content-length: 1152
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get educationSubmittedSubmissionResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmittedsubmissionresource-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: synchronizationTemplate リソースの種類
 description: " すべてのユーザーは、同期スキーマを含む、既定の設定を表示するテンプレートを取得できます。"
 localization_priority: Normal
-ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833076"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516554"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 特定のアプリケーションの構成済みの同期設定を提供します。 これらの設定は、テンプレートに基づくすべての[同期ジョブ](synchronization-synchronizationjob.md)の既定で使用されます。 アプリケーション開発者は、テンプレートを指定します。すべてのユーザーは、[同期スキーマ](synchronization-synchronizationschema.md)を含む、既定の設定を表示するテンプレートを取得できます。
 
@@ -30,12 +30,12 @@ ms.locfileid: "27833076"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 種類                      | 説明                  |
+| プロパティ      | 型                      | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|ID             |String                     |テンプレートの一意の識別子です。|
+|id             |文字列                     |テンプレートの一意の識別子です。|
 |applicationId  |文字列型 (String)                     |このテンプレートが属するアプリケーションの識別子です。|
-|既定値です。        |ブール型                    |`true`場合は、アプリケーションの既定の設定をするのには、このテンプレートをお勧めします。|
-|説明    |文字列                     |テンプレートの説明です。|
+|既定値です。        |ブール値                    |`true`場合は、アプリケーションの既定の設定をするのには、このテンプレートをお勧めします。|
+|説明    |String                     |テンプレートの説明です。|
 |検出可能   |String                     |`true`このテンプレートは、アプリケーションのインスタンス (サービス主体) の使用可能なテンプレートのコレクションに表示されます。 場合、|
 |factoryTag     |String                     |同期エンジンでサポートされている既知の工場出荷時のタグの 1 つです。 **FactoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンを指示します。|
 |metadata       |metadataEntry コレクション   |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
@@ -73,10 +73,15 @@ ms.locfileid: "27833076"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationTemplate resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

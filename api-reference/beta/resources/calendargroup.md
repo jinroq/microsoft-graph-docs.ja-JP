@@ -4,16 +4,16 @@ description: ユーザーの予定表のグループです。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 10a840fd9ae9835eb5ca6a96b88719605f89245b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515651"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーの予定表のグループです。
 
@@ -33,7 +33,7 @@ ms.locfileid: "27985292"
 
 | プロパティ  | 型   | 説明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 名前      | String | グループの名前。                                                                                                                                                                                           |
+| name      | String | グループの名前。                                                                                                                                                                                           |
 | changeKey | String | 予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。 |
 | classId   | Guid   | クラス識別子。読み取り専用です。                                                                                                                                                                          |
 | id        | String | グループの一意識別子。読み取り専用です。                                                                                                                                                                 |
@@ -69,10 +69,15 @@ ms.locfileid: "27985292"
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendarGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendargroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

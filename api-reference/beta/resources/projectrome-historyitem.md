@@ -3,16 +3,16 @@ title: historyItem リソースの種類
 description: アプリケーション内のアクティビティの履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 168587aa54446aeee78107deaa9087c6bffb8586
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976955"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514699"
 ---
 # <a name="historyitem-resource-type"></a>historyItem リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 アプリケーション内の[アクティビティ](projectrome-activity.md)の履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 
@@ -30,11 +30,11 @@ ms.locfileid: "27976955"
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |status | EnumType | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
-|userTimezone | String | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンです。 クロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
+|userTimezone | 文字列 | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンです。 クロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
 |createdDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが作成されたときの utc 日時。|
 |lastModifiedDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが変更されたときの utc 日時。|
 |id | String | 必須。 **HistoryItem**オブジェクトの GUID をクライアントに設定します。|
-|startedDateTime | DateTimeOffset | 必須。 **HistoryItem** (アクティビティ セッション) が開始されたときの UTC 日時。 タイムラインの履歴が必要です。|
+|startedDateTime | DateTimeOffset | 必須です。 **HistoryItem** (アクティビティ セッション) が開始されたときの UTC 日時。 タイムラインの履歴が必要です。|
 |lastActiveDateTime | DateTimeOffset | 省略可能。 **HistoryItem** (アクティビティ セッション) がアクティブまたは終了の null の場合、 **historyItem**の状態として理解された最後のときの UTC 日時は、継続中にする必要があります。|
 |expirationDateTime | DateTimeOffset | 省略可能。 **HistoryItem**がハード削除を行うときの UTC 日時。 クライアントによって設定できます。|
 |activeDurationSeconds | int | 省略可能。 アクティブなユーザーの活動の期間です。 指定されなかった場合、この**startedDateTime**と**lastActiveDateTime**から計算されます。|
@@ -75,10 +75,15 @@ ms.locfileid: "27976955"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "historyitem resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

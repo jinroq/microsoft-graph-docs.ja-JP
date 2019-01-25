@@ -4,16 +4,16 @@ description: 教育 graph Api では、Office 365 のリソースとは、学校
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516932"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Microsoft Graph での教育機関 API の操作
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 教育 graph Api では、Office 365 のリソースとは、学校、学生、教師、クラス、登録、および割り当てを含む、教育のシナリオに関連する情報を使用してデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
 
@@ -123,9 +123,17 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [同期エラーが発生をします。](../api/educationsynchronizationerrors-get.md)
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 Graph 教育 Api を使用すると、受講生受講者の割り当てと、学校の名簿にアクセスするための教育ソリューションを構築できます。 詳細情報
 
 - 自分のシナリオに最も役立つリソースと方法を検討する。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試す。
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

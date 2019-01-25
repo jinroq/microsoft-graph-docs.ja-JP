@@ -4,16 +4,16 @@ description: 'Outlook のタスク (outlookTask オブジェクトのコレク�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937692"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515301"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Outlook のタスク ( [outlookTask](outlooktask.md)オブジェクトのコレクション) を含むフォルダーです。 
 
@@ -40,9 +40,9 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|
 |id|String|タスク フォルダーでは、ユーザーのメールボックス内で一意の識別子です。 読み取り専用です。|
-|isDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
-|名前|String|タスク フォルダーの名前。|
-|parentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
+|IsDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
+|name|String|タスク フォルダーの名前。|
+|ParentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -77,10 +77,15 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTaskFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktaskfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

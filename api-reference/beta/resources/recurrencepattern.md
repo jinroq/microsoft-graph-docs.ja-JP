@@ -1,16 +1,17 @@
 ---
 title: recurrencePattern リソースの種類
 description: 定期的なイベントを繰り返す頻度について説明します。
-ms.openlocfilehash: 1474b56475abc58eddcb4cd57488fffcedccb074
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4798ce7fc33fd6dec7aec1b8c333ae66c917e373
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070114"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512263"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 定期的な[イベント](event.md)を繰り返す頻度について説明します。
 
@@ -34,7 +35,7 @@ ms.locfileid: "27070114"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|イベントが発生する月の日付。 **type** が、`absoluteMonthly` または `absoluteYearly` の場合、必要です。 |
-|daysOfWeek|String collection|イベントが発生する曜日のコレクションです。 使用可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
+|daysOfWeek|String collection|イベントが発生する曜日のコレクションです。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
 |firstDayOfWeek|String|週の最初の曜日。 使用可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
 |index|String|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 使用可能な値は、`first`、`second`、`third`、`fourth`、`last` です。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
 |interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須。 |
@@ -68,10 +69,15 @@ ms.locfileid: "27070114"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recurrencePattern resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/recurrencepattern.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

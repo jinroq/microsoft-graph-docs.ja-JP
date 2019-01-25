@@ -2,16 +2,16 @@
 title: 'synchronizationJob: 一時停止'
 description: 同期を一時的に停止します。 ジョブの状態を含むすべての進捗が保持され、ジョブが開始の呼び出しが行われる場合停止した位置から続行されます。
 localization_priority: Normal
-ms.openlocfilehash: f39b3a700b31169ea15f089da8873b517b50dc15
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9f8cac05511b5efd17234ccf16b763999418bf2a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804880"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513922"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob: 一時停止
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 同期を一時的に停止します。 ジョブの状態を含むすべての進捗が保持され、ジョブが[起動](../api/synchronization-synchronizationjob-start.md)の呼び出しが行われる場合停止した位置から続行されます。
 
@@ -32,7 +32,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 種類    | 説明|
+| 名前           | 型    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -68,10 +68,15 @@ HTTP/1.1 204 No Content
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob: pause",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-pause.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

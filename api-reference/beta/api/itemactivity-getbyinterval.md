@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: 間隔によって項目のアクティビティの統計 (stats) を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 7ca0e4e4767073d37ebeabbab10e1f50ce323599
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826867"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516456"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>間隔によって項目のアクティビティの統計 (stats) を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このリソース内の指定した時間間隔で行われた活動の[itemActivityStats][]を取得します。
 
@@ -45,11 +45,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter      | Type               | 説明
+| パラメーター      | 型               | 説明
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | 文字列 (タイムスタンプ) | 集計の活動に使用される開始時刻。
 | endDateTime    | 文字列 (タイムスタンプ) | 集計の活動に使用される終了時間です。
-| interval       | 文字列             | 集計間隔です。
+| interval       | string             | 集計間隔です。
 
 ## <a name="example"></a>例
 
@@ -99,10 +99,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get activities by interval"
-} -->
+  "tocPath": "BaseItem/Get activities by interval",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemactivity-getbyinterval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

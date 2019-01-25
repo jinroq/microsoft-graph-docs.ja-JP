@@ -4,25 +4,25 @@ description: 特定の参加者のオーディオのをレベルをミキサー�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bf0788b1f7822311882cfa2133083d81deff16b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977788"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513768"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 特定の参加者のオーディオのをレベルをミキサーの設定
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ               | 種類                                                      | 説明                                                                                         |
+| プロパティ               | 型                                                      | 説明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | ダック                | [audioDuckingConfiguration](audioduckingconfiguration.md) | ダック (段階的に導入と出力) のこの partipant の他のソースのカスタム ミックスの構成です。       |
-| exclusiveMode          | ブール                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |
+| exclusiveMode          | boolean                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |
 | 参加者            | String                                                    | ミキサーが構成されている構成要素です。                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md)コレクション        | その他のソース レベルの構成。                                                              |
 
@@ -76,10 +76,15 @@ ms.locfileid: "27977788"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participantMixerLevel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/participantmixerlevel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

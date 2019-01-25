@@ -4,16 +4,16 @@ description: 識別子に基づくテナントの学校のデータの同期プ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3c55cd90734fa78654baf10c940cd0debc57c50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2aaa0d47bcc98c814ad525deb781ac7a7df28d87
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512473"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>EducationSynchronizationProfile を削除します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 識別子に基づくテナントの学校のデータ[同期プロファイル](../resources/educationsynchronizationprofile.md)を削除します。
 
@@ -34,7 +34,7 @@ DELETE /synchronizationProfiles/{id}
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
-|(個人用の Microsoft アカウントを委任します。|サポートされていません。|
+|委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="request-body"></a>要求本文
@@ -62,3 +62,11 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```http
 HTTP/1.1 202 Accepted
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

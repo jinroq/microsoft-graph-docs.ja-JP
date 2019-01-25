@@ -2,16 +2,16 @@
 title: 'privilegedRole: selfActivate'
 description: 依頼者に割り当てられているロールをアクティブにします。
 localization_priority: Normal
-ms.openlocfilehash: 9423d87714fcd4a7b7cce1dd5cd03bcef3e0ef9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e0197599373246853906b879c0f3d13e61a45244
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515070"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
->**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 依頼者に割り当てられているロールをアクティブにします。
 
@@ -45,12 +45,12 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|理由|文字列|省略可能。 このロールのアクティブ化の理由について説明します。|
-|duration|文字列|省略可能。 有効な値である可能性があります```min```(最低限のライセンス認証の期間)、 ```default``` (アクティブ化の既定の期間、ロール)、または時間数は、ライセンス認証の手続きを指定する double 型の値です。 指定した期間をロールの設定をロールのアクティブ化の期間よりも長いことはできません。 |
-|ticketNumber|文字列|省略可能。 このロールのアクティブ化の追跡に使用されるチケットの数です。|
-|ticketSystem|文字列|省略可能。 チケット システムです。|
+|理由|string|省略可能。 このロールのアクティブ化の理由について説明します。|
+|duration|string|省略可能。 有効な値である可能性があります```min```(最低限のライセンス認証の期間)、 ```default``` (アクティブ化の既定の期間、ロール)、または時間数は、ライセンス認証の手続きを指定する double 型の値です。 指定した期間をロールの設定をロールのアクティブ化の期間よりも長いことはできません。 |
+|ticketNumber|string|省略可能。 このロールのアクティブ化の追跡に使用されるチケットの数です。|
+|ticketSystem|string|省略可能。 チケット システムです。|
 
 ## <a name="response"></a>応答
 
@@ -104,10 +104,15 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRole: selfActivate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrole-selfactivate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

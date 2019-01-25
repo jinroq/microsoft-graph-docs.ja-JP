@@ -1,30 +1,30 @@
 ---
 title: ネットワーク接続リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: a20520a729076c7e63079c6dfc803659ace45b9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880060"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515357"
 ---
 # <a name="networkconnection-resource-type"></a>ネットワーク接続リソースの種類
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 アラートに関連するネットワーク接続に関するステートフルな情報が含まれています。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類|説明|
+| プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |applicationName|String|ネットワーク接続 (たとえば、Facebook、SMTP など) を管理するアプリケーションの名前です。|
 |destinationAddress|String|宛先 IP アドレス (ネットワーク接続)。|
 |destinationDomain|String|リンク先の URL のリンク先のドメイン部分です。 (たとえば ' www.contoso.com')。|
 |destinationPort|String|宛先ポート (ネットワーク接続)。|
 |destinationUrl|String|ネットワークの接続の URL または URI 文字列のパラメーターを除外します。 (たとえば ' www.contoso.com/products/default.html')|
-|方向|connectionDirection|ネットワーク接続の方向です。 可能な値は、`unknown`、`inbound`、`outbound` です。|
+|Direction|connectionDirection|ネットワーク接続の方向です。 可能な値は、`unknown`、`inbound`、`outbound` です。|
 |domainRegisteredDateTime|DateTimeOffset|移行先のドメインが登録された日付です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |localDnsName|String|ローカル DNS 名前解決などの場合に 'ホスト' ファイルが改ざんされて)、ホストのローカル DNS キャッシュに表示されています。|
 |natDestinationAddress|String|ネットワーク アドレス変換の宛先 IP アドレスを示します。|
@@ -76,10 +76,15 @@ ms.locfileid: "27880060"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "networkConnection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/networkconnection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: a0f5d13381c82a42159d0802d850d9996aaf8b54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cf1f6c6cafd23a5503d645d13e597a8941019fee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855182"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512879"
 ---
 # <a name="numbercolumn-resource-type"></a>numberColumn リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) リソースの **numberColumn** は、列の値が数値であることを示します。
 
@@ -33,10 +33,10 @@ ms.locfileid: "27855182"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | Type   | 説明
+| プロパティ名      | 種類   | 説明
 |:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | 文字列 | 表示する小数点以下の桁数です。 使用可能な値については、下記を参照してください。
-| **displayAs**      | 文字列 | UX での値の表示方法です。 `number` または `percentage` のいずれかでなければなりません。 指定しない場合、`number` として扱われます。
+| **decimalPlaces**  | string | 表示する小数点以下の桁数です。 使用可能な値については、下記を参照してください。
+| **displayAs**      | string | UX での値の表示方法です。 `number` または `percentage` のいずれかでなければなりません。 指定しない場合、`number` として扱われます。
 | **maximum**        | double | 許容最大値です。
 | **minimum**        | double | 許容最小値です。
 
@@ -44,7 +44,7 @@ ms.locfileid: "27855182"
 
 | 値          | 説明
 |:---------------|:--------------------------------------------------------------
-| **automatic**  | 既定値。 必要に応じて自動的に小数点以下の桁を表示します。
+| **automatic**  | 既定。 必要に応じて自動的に小数点以下の桁を表示します。
 | **none**       | 小数点以下の桁は表示されません。
 | **one**        | 小数第 1 位までを常に表示します。
 | **two**        | 小数第 2 位までを常に表示します。
@@ -55,10 +55,15 @@ ms.locfileid: "27855182"
 注: **decimalPlaces** と **displayAs** は数値の格納方法ではなく、表示方法に適用されます。
 これらのプロパティは更新される場合があります。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/NumberColumn"
-} -->
+  "tocPath": "Resources/NumberColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/numberColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

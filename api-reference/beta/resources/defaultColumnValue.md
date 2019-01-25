@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
-ms.openlocfilehash: 6ceca45d09654771f161db63707682a4558b0d29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ad94cadaa26d0fab72236d4037ceffd09a52c561
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815548"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514279"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>DefaultColumnValue リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) リソースの **defaultColumnValue** は、この列の既定値を指定します。
 既定値は直接または数式として指定できます。
@@ -32,10 +32,10 @@ ms.locfileid: "27815548"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | Type   | 説明
+| プロパティ名 | 種類   | 説明
 |:--------------|:-------|:----------------------------------------------------
-| **formula**   | 文字列 | この列の既定値を計算するために使用する数式。
-| **value**     | 文字列 | この列の既定値として使用する直接値。
+| **formula**   | string | この列の既定値を計算するために使用する数式。
+| **value**     | string | この列の既定値として使用する直接値。
 
 一度に**数式**または**値**のうちの 1 つだけを指定することができます。
 
@@ -45,10 +45,15 @@ SharePoint の数式は、Excel の数式のような構文を使用します。
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DefaultColumnValue"
-} -->
+  "tocPath": "Resources/DefaultColumnValue",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/defaultColumnValue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

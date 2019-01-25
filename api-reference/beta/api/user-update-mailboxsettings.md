@@ -4,16 +4,16 @@ description: ユーザーのメールボックスの設定を 1 つ以上更新�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 96896d7b5440887f023b4817195af2f55beb6752
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90140a5c6f7822730b172dbc5a424c97b2fafc39
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938126"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516225"
 ---
 # <a name="update-user-mailbox-settings"></a>ユーザーのメールボックスの設定を更新する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーのメールボックスの設定を 1 つ以上更新します。これには、[自動応答](../resources/automaticrepliessetting.md) (電子メールの受信時に自動的にユーザーに通知)、[ロケール](../resources/localeinfo.md) (言語と国/地域)、タイム ゾーン、[就業時間](../resources/workinghours.md)の設定が含まれます。
 
@@ -52,7 +52,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。 将来の日付の範囲だけにこのような通知を設定することができます。|
 |language|[localeInfo](../resources/localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
-|timeZone|文字列|ユーザーのメールボックスの既定のタイム ゾーン。|
+|timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
 |workingHours|[workingHours](../resources/workinghours.md)|ユーザーが働く時間、曜日、タイムゾーン。|
 
 ## <a name="response"></a>応答
@@ -227,10 +227,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update mailbox settings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-update-mailboxsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

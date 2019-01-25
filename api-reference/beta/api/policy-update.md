@@ -2,16 +2,16 @@
 title: ポリシーを更新します。
 description: 既存のポリシーのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515413"
 ---
 # <a name="update-policy"></a>ポリシーを更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 既存の[ポリシー](../resources/policy.md)のプロパティを更新します。
 
@@ -30,7 +30,7 @@ ms.locfileid: "27857156"
 PATCH /policies/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | application/json  | エンティティ本文内のデータの性質です。必須。 |
@@ -38,11 +38,11 @@ PATCH /policies/{id}
 ## <a name="request-body"></a>要求本文
 要求の本文には、更新する必要があるパラメーターを使用して JSON オブジェクトを提供します。 次の表は、使用できるパラメーターを示します。
 
-| Parameter    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |definition|String|Stringified[ポリシー](../resources/policy.md)オブジェクトのバージョンです。|
 |displayName|String|ポリシーに独自の名前です。|
-|isOrganizationDefault|ブール型|既定でこのポリシーを適用するかどうかを指定します。|
+|isOrganizationDefault|ブール値|既定でこのポリシーを適用するかどうかを指定します。|
 |type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy"にする必要があります。|
 
 ## <a name="response"></a>応答
@@ -70,3 +70,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Azure AD のアイデンティティ保護によって検出され�
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 597ff7ed156dede995b10f07ee6ac6945745b83c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953624"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515098"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Azure AD id 保護 API (プレビュー) を使用します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Azure AD のアイデンティティ保護](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)によって検出されたリスク イベントの種類ごとに[identityRiskEvent](identityriskevent.md)リソースを照会するのにには、Microsoft Graph を使用します。 Azure AD プレミアム p2 のお客様にこれらのイベントを利用できます。 イベントのサブセットでは、Azure AD プレミアム P1 で使用可能です。
 
@@ -47,3 +47,11 @@ ms.locfileid: "27953624"
 
 * [Azure Active Directory Id の保護について](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
 * [Azure Active Directory アイデンティティ保護と Microsoft Graph を使用します。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprotection-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

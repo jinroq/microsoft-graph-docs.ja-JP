@@ -4,16 +4,16 @@ description: 受信トレイや下書きなどの、ユーザーのメールボ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923258"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513089"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 受信トレイや下書きなどの、ユーザーのメールボックス内のメール フォルダーです。 メール フォルダーには、メッセージ、他の Outlook アイテム、子メール フォルダーを含めることができます。
 
@@ -32,17 +32,17 @@ GET /me/mailFolders/drafts
 
 | 既知のフォルダー名 | 説明 |
 |:-----------------------|:------------|
-| アーカイブ | アーカイブ フォルダーのメッセージは、サポートしている Outlook クライアントで One_Click のアーカイブ機能を使用する場合に送信されます。 **注:** これは Exchange のメールボックスのアーカイブの機能は、オンラインの場合と同じです。 |
+| Archive | アーカイブ フォルダーのメッセージは、サポートしている Outlook クライアントで One_Click のアーカイブ機能を使用する場合に送信されます。 **注:** これは Exchange のメールボックスのアーカイブの機能は、オンラインの場合と同じです。 |
 | 散乱 | 整理フォルダーの優先順位の低いメッセージは、整理機能を使用するときに移動されます。 |
-| 競合 | メールボックスにある競合アイテムを含むフォルダーです。 |
+| Conflicts | メールボックスにある競合アイテムを含むフォルダーです。 |
 | conversationhistory | (これを行うには、Skype が構成されている) 場合に、Skype が IM の会話を保存するフォルダーです。 |
 | deleteditems | フォルダーのアイテムは、削除するときに移動されます。 |
 | 下書き | 未送信のメッセージを格納するフォルダー。 |
-| [受信トレイ] | [受信トレイ] フォルダーです。 |
-| junkemail | 迷惑メールのフォルダーです。 |
+| 受信トレイ | 受信トレイ フォルダー。 |
+| junkemail | 迷惑メール フォルダー。 |
 | localfailures | ローカル クライアント上に存在するが、サーバーにアップロードできませんでしたアイテムを含むフォルダーです。 |
 | msgfolderroot | 「インフォメーション ストアの最上位」のフォルダーです。 このフォルダーは、受信トレイなど、通常のメール クライアントで表示されているフォルダーの親フォルダーです。 |
-| [送信トレイ] します。 | [送信トレイ] フォルダーです。 |
+| 送信トレイ | 送信トレイ フォルダー。 |
 | recoverableitemsdeletions | ソフト削除済みアイテムを含むフォルダー: 削除済みアイテム フォルダーから、または shift キーを押して削除 + では、Outlook を削除します。 このフォルダーが、Outlook 電子メール クライアントに表示されないが、エンド ・ ユーザーを操作できます Outlook または Outlook web 上で**サーバーから削除済みアイテムの回復**機能を使用します。 |
 | スケジュール済み | IOS は、Outlook のスケジュール機能を使用して受信トレイに表示されるようにスケジュールされているメッセージを含むフォルダーです。 |
 | 使用して | ユーザーのメールボックスで定義されているすべての検索フォルダーの親フォルダーです。 |
@@ -75,12 +75,12 @@ GET /me/mailFolders/drafts
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
-|displayName|String|mailFolder の表示名。|
+|displayName|文字列型 (String)|mailFolder の表示名。|
 |id|String|MailFolder の一意の識別子です。|
 |parentFolderId|String|mailFolder の親 mailFolder の一意識別子。|
 |totalItemCount|Int32|mailFolder に含まれるアイテムの数|
 |unreadItemCount|Int32|mailFolder 内で未読としてマークされているアイテムの数。|
-|wellKnownName|String|フォルダーの既知のフォルダーの名前です。 可能な値は、上記に一覧表示されます。 Outlook で作成された既定のフォルダーには、このプロパティは設定のみです。 その他のフォルダーでは、このプロパティは**null**です。|
+|WellKnownName|String|フォルダーの既知のフォルダーの名前です。 可能な値は、上記に一覧表示されます。 Outlook で作成された既定のフォルダーには、このプロパティは設定のみです。 その他のフォルダーでは、このプロパティは**null**です。|
 
 **アイテム数を効率的に取得する**
 
@@ -144,10 +144,15 @@ Outlook のメール フォルダーにアイテムの 1 つ以上の種類を�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

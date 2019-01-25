@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 122e13513db1a59e23a41cadd16e61996e6a6c04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 13eb7ff286467a7acfef85f58ea59763a13d9801
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843191"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514335"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**remoteItem** リソースは、[**driveItem**](driveitem.md) が別のドライブに存在するアイテムを参照することを示します。このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
+remoteItem リソースは、driveItem が別のドライブに存在するアイテムを参照することを示します。このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
 
 非 null の **remoteItem** ファセットを持つ [**DriveItems**](driveitem.md)は、共有された、ユーザーの OneDrive に追加された、あるいは異質な項目のコレクション (検索結果など) から返される項目上にあるリソースです。
 
@@ -50,7 +50,7 @@ ms.locfileid: "27843191"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名        | Type                                | 説明                                                                                                                                                       |
+| プロパティ名        | 種類                                | 説明                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | その項目を作成したユーザー、デバイス、およびアプリケーションの ID。読み取り専用。                                                                                  |
 | createdDateTime      | Timestamp                           | 項目作成の日付と時刻。読み取り専用。                                                                                                                        |
@@ -58,7 +58,7 @@ ms.locfileid: "27843191"
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | ローカル ファイル システムからのリモート項目についての情報。読み取り専用。                                                                                          |
 | folder               | [Folder](folder.md)                 | リモート項目がフォルダーであることを示します。読み取り専用。                                                                                                            |
 | id                   | String                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
-| lastModifiedBy       | [IdentitySet](identityset.md)       | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                            |
+| lastModifiedBy       | [IdentitySet](identityset.md)       | 最後にその項目を修正したユーザー、デバイス、およびアプリケーションの ID。読み取り専用。                                                                            |
 | lastModifiedDateTime | Timestamp                           | アイテムが最後に変更された日時。読み取り専用。                                                                                                              |
 | name                 | String                              | 省略可能。リモート項目のファイル名です。読み取り専用。                                                                                                                 |
 | package              | [Package](package.md)               | 存在する場合、この項目がフォルダーやファイルではなくパッケージであることを示します。パッケージは、一部のコンテキストでのファイルのように、他のコンテキストではフォルダーのように扱われます。読み取り専用。 |
@@ -67,16 +67,21 @@ ms.locfileid: "27843191"
 | sharepointIds        | [SharepointIds](sharepointids.md)   | OneDrive for Business と SharePoint 間の相互運用を、項目識別子の完全なセットと共に提供します。読み取り専用。                                          |
 | size                 | Int64                               | リモート項目のサイズです。読み取り専用です。                                                                                                                               |
 | webDavUrl            | Url                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
-| webUrl               | Url                                 | ブラウザーでリソースを表示するための URL。読み取り専用。                                                                                                         |
+| webUrl               | URL                                 | ブラウザーでリソースを表示するための URL。読み取り専用。                                                                                                         |
 
 ## <a name="remarks"></a>備考
 
 **driveItem** のファセットに関する詳細については、「[driveItem](driveitem.md)」を参照してください。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/RemoteItem"
-} -->
+  "tocPath": "Facets/RemoteItem",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/remoteitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

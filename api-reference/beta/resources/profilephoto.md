@@ -2,16 +2,16 @@
 title: profilePhoto リソースの種類
 description: ユーザー、グループまたは Exchange のオンラインまたは Azure Active Directory (AAD) からアクセスする Outlook の連絡先のプロフィールの写真です。 base 64 でエンコードされていないバイナリ データです。
 localization_priority: Normal
-ms.openlocfilehash: 7754d70c4e59b13b1b0003022ddc0f185cc18ae2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2a831abd098fb9a0dfa95f6d6dd3a9cd5de128cd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837070"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513656"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザー、グループまたは Exchange のオンラインまたは Azure Active Directory (AAD) からアクセスする Outlook の連絡先のプロフィールの写真です。 base 64 でエンコードされていないバイナリ データです。
 
@@ -25,9 +25,9 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 |[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|読み取り専用です。|
+|id|string|読み取り専用です。|
 |height|int32|写真の高さ。読み取り専用です。|
 |width|int32|写真の幅。読み取り専用です。|
 
@@ -58,10 +58,15 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "profilePhoto resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/profilephoto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

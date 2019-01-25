@@ -4,16 +4,16 @@ description: テーブル内にある 1 つの列を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b6f16b078e2d865ec9800f8ebc8668c2a622911d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936586"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514384"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テーブル内にある 1 つの列を表します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "27936586"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
+|id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
 |name|文字列|テーブル列の名前を取得します。読み取り専用です。|
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
@@ -70,10 +70,15 @@ ms.locfileid: "27936586"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableColumn resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/tablecolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

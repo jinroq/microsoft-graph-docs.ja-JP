@@ -4,16 +4,16 @@ description: メール、連絡先、ソーシャル ネットワークの間で
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 7f0f3c71769d2ad8927f634b065253cf118316b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929383"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512403"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 メール、連絡先、ソーシャル ネットワークの間でのユーザーに関する情報を集計します。 ユーザーは、個人用の連絡先、ソーシャル ネットワー キングの連絡先、組織のディレクトリ、およびユーザーの最新の通信 (電子メール、Skype など) を使用できます。
 
@@ -25,29 +25,29 @@ ms.locfileid: "27929383"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|birthday|文字列|人物の誕生日。|
-|companyName|文字列|人物の会社名。|
-|department|文字列|人物の部署。|
+|birthday|string|人物の誕生日。|
+|companyName|string|人物の会社名。|
+|department|string|人物の部署。|
 |displayName|string|人物の表示名。|
 |emailAddresses|[rankedEmailAddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
-|givenName|文字列|人物に指定された名前。|
-|ID|文字列|人物の一意の識別子。読み取り専用です。|
-|isFavorite|ブール|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
-|mailboxType|文字列|相手の電子メール アドレスで表されるメールボックスの種類です。|
-|officeLocation|文字列|人物のオフィスの所在地。|
-|personNotes|文字列|ユーザーがこの人物について記入した自由形式のメモ。|
-|personType|文字列|配布リストなど、ユーザーの種類。|
+|givenName|string|人物に指定された名前。|
+|id|文字列|人物の一意の識別子。読み取り専用です。|
+|isFavorite|boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
+|MailboxType|string|相手の電子メール アドレスで表されるメールボックスの種類です。|
+|officeLocation|string|人物のオフィスの所在地。|
+|personNotes|string|ユーザーがこの人物について記入した自由形式のメモ。|
+|personType|string|配布リストなど、ユーザーの種類。|
 |phones|[phone](phone.md) コレクション|人物の電話番号。|
 |postalAddresses|[location](location.md) コレクション|人物のアドレス。|
-|profession|文字列|人物の職業。|
+|profession|string|人物の職業。|
 |ソース|[personDataSource](persondatasource.md)コレクション|ソース ユーザー データからのもの、たとえば、ディレクトリ、または Outlook の連絡先です。|
-|surname|文字列|人物の姓。|
+|surname|string|人物の姓。|
 |タイトル|文字列|人のタイトルです。|
-|userPrincipalName|文字列|人物のユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) に基づいた、個人のインターネット スタイルのログイン名です。規則では、これは個人の電子メール名にマップされる必要があります。一般的な書式は alias@domain になります。|
+|userPrincipalName|string|人物のユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) に基づいた、個人のインターネット スタイルのログイン名です。規則では、これは個人の電子メール名にマップされる必要があります。一般的な書式は alias@domain になります。|
 |websites|[website](website.md) コレクション|人物の Web サイト。|
-|yomiCompany|文字列|人物の会社の日本名の読み仮名。|
+|yomiCompany|string|人物の会社の日本名の読み仮名。|
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -94,10 +94,15 @@ ms.locfileid: "27929383"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "person resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

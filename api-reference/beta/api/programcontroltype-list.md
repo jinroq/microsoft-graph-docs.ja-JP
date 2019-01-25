@@ -2,16 +2,16 @@
 title: リスト programControlTypes
 description: Azure AD のレビュー機能にアクセス、すべての programControlType オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: ae5a2298d3c0f542f7d8fd766f412b8cf5648730
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 00983cadf4bd1e0cf136c594f06ac3ee6fbb1de5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515693"
 ---
 # <a name="list-programcontroltypes"></a>リスト programControlTypes
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、 [programControlType](../resources/programcontroltype.md)のすべてのオブジェクトを一覧表示します。
 ## <a name="permissions"></a>アクセス許可
@@ -29,9 +29,9 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /programControlTypes
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本体を提供する必要がありません。
@@ -92,10 +92,15 @@ Content-type: application/json
 |[プログラムのリスト programControls](program-listcontrols.md) |     [デバッギング](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List program control types",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

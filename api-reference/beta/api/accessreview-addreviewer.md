@@ -4,16 +4,16 @@ description: 'Azure AD アクセスのレビュー機能では、レビュー担
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a7745cf6424f3aa8b9bca16f4db961801d203431
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1a526451330321c7fbbfd1d5287dd5ad892eee84
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956865"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516365"
 ---
 # <a name="add-accessreview-reviewer"></a>AccessReview の校閲者を追加します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、レビュー担当者として他のユーザーを追加するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 
 
@@ -33,16 +33,16 @@ ms.locfileid: "27956865"
 POST /accessReviews('{reviewId}')/reviewers
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、校閲者となるユーザーの ID の JSON 表現を指定します。
 
 次の表は、accessReview を更新するときに指定できるプロパティを示しています。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | ユーザー id。  |
 
@@ -81,10 +81,15 @@ HTTP/1.1 201 Created
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add accessReview reviewer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

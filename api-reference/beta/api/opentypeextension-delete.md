@@ -3,16 +3,16 @@ title: オープン拡張機能を削除する
 description: '指定されたリソースのインスタンスからオープン拡張機能 (openTypeExtension オブジェクト) を削除します。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 617971d4e31e65a662415c75f4a6cdac330ebcb0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6882cd1502221642e10c7e0fe7cbca5d43e543a5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983178"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512529"
 ---
 # <a name="delete-open-extension"></a>オープン拡張機能を削除する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定されたリソースのインスタンスからオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を削除します。 
 
@@ -55,8 +55,8 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>パス パラメーター
 |**パラメーター**|**型**|**説明**|
 |:-----|:-----|:-----|
-|ID|文字列|対応するコレクションのインスタンスの一意識別子。必須。|
-|extensionId|文字列|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
+|id|string|対応するコレクションのインスタンスの一意識別子。必須。|
+|extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
@@ -102,10 +102,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete opentypeextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

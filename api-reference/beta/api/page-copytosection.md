@@ -4,16 +4,16 @@ description: 特定のセクションにページをコピーします。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 733f03bd04df31b79e84a7f8bbf5162ec1b023ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dd7abb016345195bd5a32e20a5623d6fca9fd6ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915201"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516442"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 特定のセクションにページをコピーします。
 
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 POST /sites/{id}/onenote/pages/{id}/copyToSection
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -45,11 +45,11 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
 |siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
-|グループ Id|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
+|groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |id|String|必須。コピー先セクションの ID です。|
 
 ## <a name="response"></a>応答
@@ -88,10 +88,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "page: copyToSection",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/page-copytosection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 'リソース エンティティの学校データ プロファイ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 51563255c11406c26cfa3b02b7b7bb868ed935c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8af6c5e2173a8b04e730529123b4608fd236f959
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415657"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513607"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>educationSynchronizationCustomization リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 リソース エンティティの学校データ プロファイルの同期をカスタマイズするための設定を提供します。 同期されているすべてのエンティティには、カスタマイズを適用できます。 
 
@@ -23,11 +23,11 @@ ms.locfileid: "29415657"
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **optionalPropertiesToSync** | 文字列のコレクション |  同期するプロパティ名のコレクションです。かどうかのセットを null に、すべてのプロパティが同期します。       |
+| **optionalPropertiesToSync** | Collection of String |  同期するプロパティ名のコレクションです。かどうかのセットを null に、すべてのプロパティが同期します。       |
 | **synchronizationStartDate** | DateTime
  |  同期を開始する日付。 この値は、将来の日付に設定する必要があります。 場合は null の場合、リソースに設定は、プロファイルの設定が完了したときに同期されます。 **注:** これは、 **StudentEnrollment**プロパティにのみ適用されます。      |
-|**isSyncDeferred** |Boolean | 親エンティティの同期がそれ以降の日付に延期されたかどうかを示します。 |
-| **allowDisplayNameUpdate** | Boolean |  同期によって、リソースの表示名を上書きするかどうかを示します。         |
+|**isSyncDeferred** |ブール値 | 親エンティティの同期がそれ以降の日付に延期されたかどうかを示します。 |
+| **allowDisplayNameUpdate** | ブール値 |  同期によって、リソースの表示名を上書きするかどうかを示します。         |
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,3 +47,11 @@ ms.locfileid: "29415657"
     "allowDisplayNameUpdate": "Boolean"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

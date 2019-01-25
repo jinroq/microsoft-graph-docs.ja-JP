@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977776"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516743"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **driveItem** リソースは、ドライブに格納されているファイル、フォルダーなどのアイテムを表します。OneDrive および SharePoint 内のすべてのファイル システム オブジェクトが、**driveItem** リソースとして返されます。
 
@@ -105,11 +105,11 @@ ms.locfileid: "27977776"
 | createdDateTime      | DateTimeOffset     | アイテム作成の日時。読み取り専用です。
 | cTag                 | String             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
 | deleted              | [deleted][]        | アイテムの削除状態に関する情報。読み取り専用です。
-| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| description          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
 | eTag                 | String             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
 | file                 | [file][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
-| folder               | [folder][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
+| folder               | [フォルダー][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
 | id                   | String             | ドライブ内のアイテムの一意識別子。読み取り専用です。
 | image                | [image][]          | 画像のメタデータ (アイテムが画像である場合)。読み取り専用です。
 | lastModifiedBy       | [identitySet][]    | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
@@ -123,7 +123,7 @@ ms.locfileid: "27977776"
 | remoteItem           | [remoteItem][]     | リモート アイテムのデータ (現在アクセス中のドライブ以外のドライブから共有されているアイテムの場合)。読み取り専用です。
 | root                 | [root][]           | このプロパティが null ではない場合は、driveItem がドライブで最上位の driveItem であることを示します。
 | searchResult         | [searchResult][]   | 検索のメタデータ (検索結果に由来するアイテムの場合)。読み取り専用です。
-| shared               | [shared][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
+| 共有               | [shared][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
 | sharepointIds        | [sharepointIds][]  | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
 | size                 | Int64              | アイテムのサイズ (バイト単位)。読み取り専用です。
 | specialFolder        | [specialFolder][]  | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。
@@ -161,7 +161,7 @@ URL は、短時間 (1 時間) が無効になる前にのみ使用できます�
 
 ## <a name="methods"></a>メソッド
 
-| Method                                                   | REST パス
+| メソッド                                                   | REST パス
 |:---------------------------------------------------------|:------------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [アクティビティを一覧表示する](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
@@ -230,11 +230,18 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",
   "keywords": "item,facet,resource",
   "section": "documentation",
   "tocPath": "Items",
-  "tocBookmarks": { "Resources/Item": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Item": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

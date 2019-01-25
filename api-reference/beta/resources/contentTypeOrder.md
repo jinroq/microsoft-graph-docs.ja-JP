@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
-ms.openlocfilehash: ad25ececa9a32a1aaab7f25bf909f7e1ef640dec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9b92a8234c493ae9b0f396db7010e7bf717d5959
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825754"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514370"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **contentTypeOrder** リソースは、コンテンツ タイプが選択 UI に表示される順序を指定します。
 
@@ -31,15 +31,20 @@ ms.locfileid: "27825754"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | Type    | 説明
+| プロパティ名 | 種類    | 説明
 |:--------------|:--------|:----------------------------------------------------
 | **default**   | boolean | 既定のコンテンツ タイプかどうか。
 | **position**  | Int32   | コンテンツ タイプが選択 UI で表示される位置を指定します。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeOrder"
-} -->
+  "tocPath": "Resources/ContentTypeOrder",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contentTypeOrder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

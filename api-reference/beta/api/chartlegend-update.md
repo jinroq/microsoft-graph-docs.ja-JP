@@ -4,16 +4,16 @@ description: chartlegend オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 03bcd9ce5d5c15f624dd0eaa231f8965137c210e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946631"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513502"
 ---
 # <a name="update-chartlegend"></a>Update chartlegend
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 chartlegend オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -39,11 +39,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
+|overlay|boolean|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
 |position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
-|visible|ブール値|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
+|visible|boolean|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
 
@@ -87,10 +87,15 @@ Content-length: 72
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update chartlegend",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartlegend-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

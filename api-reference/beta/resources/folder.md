@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
-ms.openlocfilehash: 98c477ebeda436c57db3eaac5cb062639a2447d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: af22487f017830481af6f39e113b80009f2e567f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856498"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512753"
 ---
 # <a name="folder-resource-type"></a>Folder リソース型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **フォルダー**リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。**フォルダー**ファセットが null 以外の [**DriveItems**](driveitem.md) は、他の DriveItems のコンテナーです。
 
@@ -38,7 +38,7 @@ ms.locfileid: "27856498"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類           | 説明
+| プロパティ       | 型           | 説明
 |:---------------|:---------------|:-------------------------------------------
 | **childCount** | Int64          | このコンテナーの中に含まれる子の数。
 | **view**       | [folderView][] | フォルダーに推奨されるビューを定義するプロパティのコレクション。
@@ -51,10 +51,15 @@ DriveItem のファセットの詳細については、「[DriveItem][]」を参
 [folderView]: folderview.md
 [DriveItem]: driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

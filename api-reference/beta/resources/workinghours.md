@@ -2,16 +2,16 @@
 title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
-ms.openlocfilehash: d34da38ad1a007f6c63154cb496006585df95c13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885740"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512284"
 ---
 # <a name="workinghours-resource-type"></a>workingHours リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "27885740"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | daysOfWeek | String コレクション | ユーザーが働く曜日。 |
 | startTime | Edm.TimeOfDay | ユーザーの始業時間。 |
@@ -55,10 +55,15 @@ ms.locfileid: "27885740"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workinghours.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

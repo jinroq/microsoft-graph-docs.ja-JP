@@ -2,26 +2,26 @@
 title: objectDefinition リソースの種類
 description: オブジェクトとその属性について説明します。 オブジェクトの定義は、directoryDefinition、synchronizationSchema の一部として更新の一部です。
 localization_priority: Normal
-ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866081"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514132"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 オブジェクトとその属性について説明します。 オブジェクトの定義は、 [directoryDefinition](synchronization-directorydefinition.md)、 [synchronizationSchema](synchronization-synchronizationschema.md)の一部として更新の一部です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 種類      | 説明    |
+| プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
 |属性     |[attributeDefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
 |metadata       |[metadataEntry](synchronization-metadataentry.md)コレクション   |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
-|名前           |String     |オブジェクトの名前です。 ディレクトリの定義内で一意である必要があります。 null 許容ではありません。|
+|name           |String     |オブジェクトの名前です。 ディレクトリの定義内で一意である必要があります。 null 許容ではありません。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -438,10 +438,15 @@ ms.locfileid: "27866081"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectdefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

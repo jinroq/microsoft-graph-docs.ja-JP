@@ -3,16 +3,16 @@ title: schemaExtension の作成
 description: サポートするリソースの種類を拡張するために、schemaExtension 定義を新規作成します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: c12a47880147d973583fe4104fcb3535674f512a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 446339abd7bc99879df3b6ac19dd6040ab16bf03
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514314"
 ---
 # <a name="create-schemaextension"></a>schemaExtension の作成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [サポートするリソースの種類](/graph/extensibility-overview#supported-resources)を拡張するために、[schemaExtension](../resources/schemaextension.md) 定義を新規作成します。
 
@@ -47,10 +47,10 @@ POST /schemaExtensions
 
 次の表は、スキーマの拡張機能を作成するときに使用できるプロパティを示します。
 
-| パラメーター | Type | 説明|
+| パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|説明|String|スキーマ拡張機能の説明。|
-|id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。 次に例 `contoso_mySchema` を示します。 注: 上位ドメイン `.com`、`.net`、`.gov`、`.edu`、`.org` の下では、検証済みのドメインのみがサポートされます。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
+|説明|文字列|スキーマ拡張機能の説明。|
+|id|文字列|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。 次に例 `contoso_mySchema` を示します。 注: 上位ドメイン `.com`、`.net`、`.gov`、`.edu`、`.org` の下では、検証済みのドメインのみがサポートされます。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
 |owner|String|(省略可能) スキーマ拡張機能の所有者であるアプリケーションの `appId` です。 このプロパティは作成時に指定して所有者を設定できます。  指定しない場合、呼び出し元のアプリケーションの `appId` が所有者として設定されます。 たとえば、Graph エクスプローラーを使用して新しいスキーマ拡張機能の定義を作成する場合は、所有者プロパティを指定する**必要があります**。 設定すると、このプロパティは読み取り専用で、変更することはできません。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。|
 |targetTypes|String collection|このスキーマ拡張機能の定義を適用できる、(スキーマ拡張機能をサポートしている) 一連の Microsoft Graph のリソースの種類。|
@@ -211,16 +211,21 @@ Content-length: 420
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
+- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create schemaExtension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-post-schemaextensions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

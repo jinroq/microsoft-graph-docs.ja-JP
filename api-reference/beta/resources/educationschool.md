@@ -4,16 +4,16 @@ description: '学校。 現時点で、**educationSchool** リソースは admin
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 17a5c3ad2f28e802bb6cad3a97d1cb723b3407d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918246"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512543"
 ---
-# <a name="educationschool-resource-type"></a>educationSchool リソースの種類
+# <a name="educationschool-resource-type"></a>educationSchool リソース タイプ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 学校。 現時点で、**educationSchool** リソースは [administrativeUnit](administrativeunit.md) リソースと一致していて、同じ ID を共有しています。  
 
@@ -38,13 +38,13 @@ ms.locfileid: "27918246"
 |[Delete](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String|この学校の GUID。|
+|id|文字列|この学校の GUID。|
 |displayName| String| 学校の表示名。| 
-|説明| String | 学校の説明。| 
-|status| 文字列| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|
-|externalSource| 文字列| 読み取り専用。  使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
+|説明| 文字列 | 学校の説明。| 
+|status| string| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|
+|externalSource| string| 読み取り専用。  使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
 |principalEmail| String| プリンシパルの電子メール アドレス。|
 |principalName| String | プリンシパルの名前。|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |
@@ -99,10 +99,15 @@ ms.locfileid: "27918246"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSchool resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationschool.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

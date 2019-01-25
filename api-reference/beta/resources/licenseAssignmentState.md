@@ -2,16 +2,16 @@
 title: licenseAssignmentState リソースの種類
 description: 'ユーザー エンティティの**licenseAssignmentStates**プロパティは、 **licenseAssignmentState**のコレクションです。 ユーザー ライセンスの割り当てに関する詳細情報を提供します。 詳細には、ような情報が含まれています。  '
 localization_priority: Normal
-ms.openlocfilehash: 51ff878f356902362487eda36d17c1894c33e5f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a33dce3550d5a842493b73c83e8222a579348c9a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515280"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [ユーザー](user.md)エンティティの**licenseAssignmentStates**プロパティは、 **licenseAssignmentState**のコレクションです。 ユーザー ライセンスの割り当てに関する詳細情報を提供します。 詳細には、ような情報が含まれています。  
 
@@ -22,9 +22,9 @@ ms.locfileid: "27855630"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|assignedByGroup|文字列|このライセンスを割り当てられるグループの id。 割り当てがダイレクトに割り当てられたライセンスの場合は、このフィールドは Null になります。 読み取り専用です。|
+|assignedByGroup|string|このライセンスを割り当てられるグループの id。 割り当てがダイレクトに割り当てられたライセンスの場合は、このフィールドは Null になります。 読み取り専用です。|
 |disabledPlans|Collection(String)|この割り当て内で無効になっているサービス プランです。 読み取り専用です。|
 |エラー|String|ライセンスの割り当てエラーです。 ライセンスが正常に割り当てられると、このフィールドが Null になります。 読み取り専用です。 使用可能な値: `CountViolation`、 `MutuallyExclusiveViolation`、 `DependencyViolation`、 `ProhibitedInUsageLocationViolation`、`UniquenessViolation`と`Others`。 エラーを特定し、ライセンスの割り当てを解決する方法の詳細について参照してください[ここで](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
 |skuId|String|SKU の一意識別子。 読み取り専用です。|
@@ -44,3 +44,11 @@ ms.locfileid: "27855630"
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/licenseAssignmentState.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: oAuth2PermissionGrant リソースの種類
 description: (サービス主体で表されます)、アプリケーションに与えられている OAuth 2.0 のスコープ (委任されたアクセス許可) をユーザーまたは管理者の承認プロセスの一環として表します。
 localization_priority: Normal
-ms.openlocfilehash: 835e4a2c1a8d19c9c21e706adbf2f10a6a505bb3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884449"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516925"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 (サービス主体で表されます)、アプリケーションに与えられている OAuth 2.0 のスコープ (委任されたアクセス許可) をユーザーまたは管理者の承認プロセスの一環として表します。
 
@@ -41,12 +41,12 @@ ms.locfileid: "27884449"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |clientId|String| サービス ・ プリンシパルの id 付与 (resourceId プロパティによって表される) リソースにアクセスするときにユーザーを偽装するのに同意するものです。 |
-|consentType|String| 同意が管理者 (組織) のため、個人に提供されるかどうかを示します。 使用可能な値は、 *AllPrincipals*または*プリンシパル*です。 |
-|expiryTime|DateTimeOffset| 現在、有効期限の時刻の値は無視されます。 |
-|id|String| 一意の識別子です。 読み取り専用です。|
+|consentType|String| 同意が管理者 (組織) のため、個人に提供されるかどうかを示します。 可能な値は、"AllPrincipals" または "Principal" です。 |
+|ExpiryTime|DateTimeOffset| 現在、有効期限の時刻の値は無視されます。 |
+|id|String| 一意識別子 読み取り専用です。|
 |principalId|String| ConsentType が*AllPrincipals*である場合は、この値が null の場合と同意は、組織内のすべてのユーザーに適用されます。 ConsentType が*主体*の場合は、このプロパティは同意を付与し、そのユーザーに対してのみ適用されるユーザーの id を指定します。 |
 |resourceId|文字列型 (String)| アクセスが許可されているリソース ・ サービス ・ プリンシパルの id を指定します。 |
 |scope|String| OAuth 2.0 のアクセス トークンには、リソース アプリケーションが期待する[スコープ](/graph/permissions-reference)の要求の値を指定します。 たとえば、 *User.Read* |
@@ -67,10 +67,15 @@ ms.locfileid: "27884449"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "oAuth2PermissionGrant resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/oauth2permissiongrant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

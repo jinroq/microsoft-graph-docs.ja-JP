@@ -4,16 +4,16 @@ description: Azure AD を使用するユーザーのアクセス権の陣のレ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975352"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516414"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD アクセスを確認します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Azure AD アクセスの確認](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)を使用 1 回のみを構成するか、定期的なアクセスをユーザーのアクセス権の認証の確認します。
 
@@ -67,10 +67,15 @@ Azure AD で提供されているメソッドの一覧をここではレビュ�
 - [管理者がプログラムを管理し、Azure AD のコントロールがレビューをアクセスする方法](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Service root",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

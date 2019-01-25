@@ -4,24 +4,24 @@ description: TeamsTemplate エンティティをについて説明します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bd5047950ed1ed3c57950d2c4b708a78b570649
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940086"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513047"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 チーム テンプレートは、マイクロソフトのチームで[チーム](../resources/team.md)を作成するための青写真です。 テンプレートは、テンプレートを使用して作成された新しいチームの構造、設定、および準備する必要があるものコンテンツを指定します。 マイクロソフトは、基本テンプレートのスイートを提供していて、お客様が独自のカスタム テンプレートを保存できます。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類     | 説明 |
+| プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | String   | テンプレートの一意の識別子です。 Null にすることはできません。 |
+| id                  | String   | テンプレートの一意の識別子です。 Null にすることはできません。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -39,5 +39,13 @@ ms.locfileid: "27940086"
 
 # <a name="see-also"></a>関連項目
 
-- [チーム](team.md)
+- Team
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
