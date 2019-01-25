@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: ドライブを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5c85533a2c335158d953749ae329cc6cd2b7ec37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 937b537c4ca71b5cee39f60640ede984f1c5797a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517135"
 ---
 # <a name="list-available-drives"></a>利用可能なドライブの一覧表示
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ターゲットとなる User、Group、または [Site](../resources/site.md) が利用可能な [Drive](../resources/drive.md) リソースの一覧を取得します。
 
@@ -122,10 +122,15 @@ Group と Site には、複数の Drive リソースが利用可能である場�
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the available drives for a user, group, or site.",
   "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "Drives/List drives"
-} -->
+  "tocPath": "Drives/List drives",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
