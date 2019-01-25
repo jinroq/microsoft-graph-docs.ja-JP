@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: ac119ab0b63aecba384d34014f3d0d18111b05ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866249"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521587"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **baseItem** リソースは、他のいくつかのリソースの種類間で共有されるプロパティの共通セットを含む抽象リソースです。**baseItem** から派生するリソースには以下が含まれます。
 
@@ -50,15 +50,15 @@ ms.locfileid: "27866249"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類              | 説明                                                                            |
+| プロパティ             | 型              | 説明                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| ID                   | 文字列            | ドライブの一意識別子。読み取り専用です。                                         |
+| id                   | string            | ドライブの一意識別子。読み取り専用。                                         |
 | createdBy            | [identitySet][]   | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。        |
 | createdDateTime      | dateTimeOffset    | アイテム作成の日時。読み取り専用です。                                             |
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。 |
 | lastModifiedDateTime | dateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。                                   |
-| name                 | 文字列            | アイテムの名前。読み取り/書き込み。                                                      |
+| name                 | string            | アイテムの名前。読み取り/書き込み。                                                      |
 | parentReference      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。                              |
 | webUrl               | string (URL)      | ブラウザーでリソースを表示するための URL。読み取り専用です。                              |
 
@@ -71,10 +71,15 @@ ms.locfileid: "27866249"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
-} -->
+  "tocPath": "Resources/BaseItem",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/baseitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

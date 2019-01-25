@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950726"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517443"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このリソースは、SharePoint の **[list][]** 内のアイテムを表します。
 リスト内の列の値は、`fieldValueSet` ディクショナリから利用できます。
@@ -30,9 +30,9 @@ ms.locfileid: "27950726"
 | [列の値の取得][取得]       | GET /items/{item-id}?expand=fields
 | [分析を取得します。][]              | GET/items/{アイテム id}/分析
 | [間隔によってアクティビティを取得します。][] | GET/items/{アイテム id}/getActivitiesByInterval
-| [作成][]                     | POST /items
-| [削除][]                     | DELETE /items/{item-id}
-| [更新][]                     | PATCH /items/{item-id}
+| [Create][]                     | POST /items
+| [Delete][]                     | DELETE /items/{item-id}
+| [Update][]                     | PATCH /items/{item-id}
 | [列の値の更新][更新] | PATCH /items/{item-id}/fields
 
 [取得]: ../api/listitem-get.md
@@ -83,19 +83,19 @@ ms.locfileid: "27950726"
 
 **listItem** リソースには以下のプロパティがあります。
 
-| プロパティ名 | Type                | 説明
+| プロパティ名 | 型                | 説明
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | このリスト アイテムのコンテンツ タイプ
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | Type              | 説明
+| プロパティ名        | 型              | 説明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | string            | アイテムの一意識別子。読み取り専用です。
-| name                 | 文字列            | アイテムの名前/タイトル。
+| id                   | 文字列            | アイテムの一意識別子。読み取り専用です。
+| name                 | string            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
 | createdDateTime      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
-| description          | string            | アイテムの説明テキストです。
+| 説明          | string            | アイテムの説明テキストです。
 | eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
@@ -127,7 +127,8 @@ ms.locfileid: "27950726"
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ ms.locfileid: "27950726"
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
     "ListItem": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

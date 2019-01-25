@@ -5,16 +5,16 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522302"
 ---
 # <a name="sitepage-resource"></a>sitePage リソース
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このリソースは、サイト ページの[一覧][]でページを表します。
 タイトル、レイアウト、および[web パーツ][]の s のコレクションが含まれています。
@@ -22,13 +22,13 @@ ms.locfileid: "27939239"
 ## <a name="tasks-on-a-page"></a>ページ上のタスク
 
 **SitePage**リソースの次のタスクを利用できます。
-以下のすべての例は、[サイト][]では、例えば: `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
+以下のすべての例は、[][] などのサイトからの相対指定です。
 
 | 共通タスク                     | HTTP メソッド
 |:--------------------------------|:------------------------------
-| [List pages][]                  | /Pages を取得します。
+| [List pages][]                  | ページを取得する
 | [Get page][]                    | /Pages/{ページの id を取得します。
-| [Create][]                      | 投稿/pages
+| [Create][]                      | POST pages
 | [Delete][]                      | /Pages/{ページの id を削除します。
 | [Publish][]                     | /Pages/{ページ id} の投稿し、公開
 
@@ -81,15 +81,15 @@ ms.locfileid: "27939239"
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | ページのコンテンツの種類です。
 
-## <a name="page-content"></a>ページのコンテンツ
+## <a name="page-content"></a>ページ コンテンツ
 
 **SitePage**リソースでは、次のコンテンツのフィールドがあります。
 
 | プロパティ名      | 型                       | 説明
 |:-------------------|:---------------------------|:---------------------------
 | タイトル              | 文字列                     | ページのタイトル。
-| pageLayout         | 文字列                     | ページのページ レイアウトの名前。
-| web パーツ           | [web パーツ][]                | ページ上の web パーツです。
+| pageLayout         | string                     | ページのページ レイアウトの名前。
+| web パーツ           | webpart                | ページ上の web パーツです。
 
 ## <a name="authoring-metadata"></a>メタデータを作成する
 
@@ -103,10 +103,10 @@ ms.locfileid: "27939239"
 
 | プロパティ名        | 型              | 説明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | 文字列            | アイテムの一意識別子。読み取り専用です。
-| name                 | 文字列            | アイテムの名前/タイトル。
+| id                   | 文字列            | アイテムの一意識別子。読み取り専用です。
+| name                 | string            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。
+| eTag                 | string            | アイテムの ETag。読み取り専用です。
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
 | parentReference      | [itemReference][] | アイテムが最後に変更された日時。読み取り専用です。
@@ -125,10 +125,11 @@ ms.locfileid: "27939239"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[site]: site.md
-[web パーツ]: webpart.md
+[サイト]: site.md
+webpart
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -136,8 +137,12 @@ ms.locfileid: "27939239"
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

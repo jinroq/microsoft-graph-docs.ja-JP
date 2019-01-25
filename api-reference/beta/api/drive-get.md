@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: ドライブを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b481a99232a040334fbfbbaf7d8ef65bd12261e5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518171"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Drive](../resources/drive.md) リソースのプロパティとリレーションシップを取得します。
 
@@ -62,7 +62,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | 文字列 | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -80,7 +80,7 @@ GET /groups/{groupId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | 文字列 | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -96,7 +96,7 @@ GET /sites/{siteId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | 文字列 | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
+| _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
 ## <a name="get-a-drive-by-id"></a>ID によりドライブを取得する
 
@@ -114,7 +114,7 @@ GET /drives/{driveId}
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | 文字列 | 必須。 要求されるドライブの識別子。 |
+| _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -155,10 +155,15 @@ Content-type: application/json
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "Drives/Get drive"
-} -->
+  "tocPath": "Drives/Get drive",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

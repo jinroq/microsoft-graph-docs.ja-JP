@@ -2,20 +2,20 @@
 title: GovernanceRoleAssignmentRequest を作成します。
 description: 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
 localization_priority: Normal
-ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823773"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523240"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
 
-| 操作       | Type | 
+| Operation       | 型 | 
 |:---------------|:----------|
 | 役割の割り当てを割り当てる| AdminAdd |
 | 対象のロール割り当てを有効化します。| UserAdd | 
@@ -31,7 +31,7 @@ ms.locfileid: "27823773"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | Permissions              |
+|アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
@@ -52,7 +52,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-body"></a>要求本文
 要求の本文には、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトの JSON 表現を指定します。 
 
-| プロパティ     | 種類    |必須|  説明|
+| プロパティ     | 型    |必須|  説明|
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|リソースの ID。|
 |roleDefinitionId|String|はい|役割の定義の ID です。|
@@ -60,7 +60,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |assignmentState|String|はい|割り当ての状態です。 値は、``Eligible``と``Active``。|
 |type|String|はい|要求の種類。 値は、 `AdminAdd`、 `UserAdd`、 `AdminUpdate`、 `AdminRemove`、 `UserRemove`、 `UserExtend`、 `UserRenew`、`AdminRenew`と`AdminExtend`。|
 |理由|String| |理由は、監査の役割の割り当て要求に指定して目的を確認する必要があります。|
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)| | 役割の割り当て要求のスケジュールです。 要求の種類の`UserAdd`、 `AdminAdd`、`AdminUpdate`と`AdminExtend`、これは必須です。|
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)| | 役割の割り当て要求のスケジュールです。 要求の種類の`UserAdd`、 `AdminAdd`、`AdminUpdate`と`AdminExtend`、これは必須です。|
 
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトです。
@@ -86,15 +86,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
  >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
 
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminAdd|
 |理由|String| ロールの設定によって異なります||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -169,15 +169,15 @@ Content-length: 226
 ### <a name="example-2"></a>例 2
 この例では、ユーザー nawu@fimdev.net は、対象となる請求のリーダーの役割をアクティブにします。
 
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| Active|
 |type|String|はい| UserAdd|
 |理由|String| ロールの設定によって異なります||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -264,15 +264,15 @@ Content-type: application/json
 ### <a name="example-3"></a>例 3
 この例では、ユーザー nawu@fimdev.net には、作業中の課金情報の閲覧者の役割が無効になります。
 
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| Active|
 |type|String|はい| UserRemove|
 |理由|String| いいえ||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -327,15 +327,15 @@ Content-length: 226
 
  >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
  
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminRemove|
 |理由|String| いいえ||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -389,15 +389,15 @@ Content-length: 226
 
  >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
 
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminUpdate|
 |理由|String| roleSettings によって異なります||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -469,15 +469,15 @@ Content-length: 226
 
  >**注:** Additon アクセス許可を次の使用例が必要です、依頼者が少なくとも 1 つであること`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
  
-| プロパティ     | 種類    |必須|  値 |
+| プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<とります\>|
+|resourceId|String|はい|\<|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ |
 |type|String|はい| AdminExtend|
 |理由|String| roleSettings によって異なります||
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -547,10 +547,15 @@ Content-length: 226
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post roleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

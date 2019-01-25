@@ -4,16 +4,16 @@ description: Azure AD にアクセス確認機能を`accessReviewDecision`、Azu
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b6b10a53726e12c37a598f8df735a3f70174c807
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9642c8a51e4e9efe1a1748243b0e24aeff07cfa0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977557"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517401"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReviewDecision` 、Azure AD アクセス確認意思決定の特定のエンティティへのアクセスを表します。  アクセス レビューの場合、または定期的なアクセス確認のインスタンスの中であり、1 つ`accessReviewDecision`確認済みのユーザー 1 人あたり。  などの 2 つのゲストと 1 つ、ゲスト、メンバー、および、アクセス レビュー来園者のグループがある場合は、そのグループのアクセス確認意思決定の 2 つのオブジェクトがありますし。  校閲者が自分の意思決定を変更または別の校閲者が、それらをオーバーライドする場合、`accessReviewDecision`を更新します。
 
@@ -30,11 +30,11 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | アクセス レビュー内での意思決定の id です。                                                                                     |
 | `accessReviewId`                |`String`                      | アクセス レビューの機能によって生成された id です。                                                                                       |
-| `reviewedBy`                    |[割り当てられていません](useridentity.md)| 校閲者の id です。                                                                                       |
+| `reviewedBy`                    |%__UserIdentity__%| 校閲者の id です。                                                                                       |
 | `reviewedDate`                  |`DateTimeOffset`              | 日付と時刻の最新のレビューにアクセス権が指定されました。                                                                         |
 | `reviewResult`                  |`String`                      | レビューの結果です。                                                                                    |
 | `justification`                 |`String`                      | 校閲者のビジネス ・ ジャスティフィケーションを提供された場合。                                                                         |
-| `appliedBy`                     |[割り当てられていません](useridentity.md)| レビューの完了時、結果を手動で適用されていた場合、意思決定を適用したユーザーのユーザー id です。                                                           |
+| `appliedBy`                     |%__UserIdentity__%| レビューの完了時、結果を手動で適用されていた場合、意思決定を適用したユーザーのユーザー id です。                                                           |
 | `appliedDateTime`               |`DateTimeOffset`              | 日付と時刻確認の意思決定が適用されています。                                                          |
 | `applyResult`                   |`String`                      | いずれかの意思決定を適用した結果`NotApplied`、 `Success`、 `Failed`、`NotFound`または`NotSupported`。                      |
 | `accessRecommendation`          |`String`                      | 機能で生成された推奨事項のいずれかの校閲者に示すように`Approve`、`Deny`または`NotAvailable`。 |
@@ -92,10 +92,15 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "accessReviewDecision resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreviewdecision.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

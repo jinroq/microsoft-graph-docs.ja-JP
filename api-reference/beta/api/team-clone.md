@@ -4,16 +4,16 @@ description: チームのコピーを作成します。 この操作では、対
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5ef317d004e3355f9b40fc44232b7c594a3e45a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526166"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [チーム](../resources/team.md)のコピーを作成します。 この操作では、対応する[グループ](../resources/group.md)のコピーも作成します。
 クローンを作成するチームのどの部分を指定できます。
@@ -53,12 +53,12 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>要求本文
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|分類|文字列 (省略可能)|(低、中、または高のビジネス ・ インパクト) などのグループの分類について説明します。 このプロパティの有効値は、[テンプレートの定義](../resources/directorysettingtemplate.md)に基づいて、ClassificationList の[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類を指定しない場合、分類は、元のチームまたはグループからコピーされます。|
-|description|文字列 (省略可能)|グループに関するオプションの説明。 このプロパティを指定しない場合、空白のままにします。|
+|classification|文字列 (省略可能)|(低、中、または高のビジネス ・ インパクト) などのグループの分類について説明します。 このプロパティの有効値は、[テンプレートの定義](../resources/directorysettingtemplate.md)に基づいて、ClassificationList の[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類を指定しない場合、分類は、元のチームまたはグループからコピーされます。|
+|説明|文字列 (省略可能)|グループに関するオプションの説明。 このプロパティを指定しない場合、空白のままにします。|
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|mailNickname|String|グループ、組織内で一意の電子メール エイリアス。 グループが作成されるとき、このプロパティを指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合に、表示名から計算されます。 既知の問題: 現在、このプロパティは無視されます。|
+|mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合に、表示名から計算されます。 既知の問題: 現在、このプロパティは無視されます。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンを作成する部品のコンマで区切られたリスト。 法的な部分は、「アプリケーション、タブ、設定、チャネル、メンバー"です。|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)(省略可能)| グループの可視性を指定します。 使用可能な値:**パブリック**、**プライベート**です。 可視性が指定されていない場合、元のチームまたはグループの表示と非表示がコピーされます。 **EducationClass**チームは、チームのクローンが作成されている場合、可視性パラメーターは無視されます、および新しいグループの表示/非表示を HiddenMembership に設定されます。|
 
@@ -103,10 +103,15 @@ Content-Length: 0
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-clone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

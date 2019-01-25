@@ -1,25 +1,25 @@
 ---
 title: リスト bookingBusinesses
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: テナントの作成された bookingbusiness オブジェクトのコレクションを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 51b8e049b45542de9940168c994bed8fbd273b60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8018b8ac7f9d2e5f74e4233dbc36c2a6faa2d9a8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951454"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523156"
 ---
 # <a name="list-bookingbusinesses"></a>リスト bookingBusinesses
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
- 
-テナントの作成された[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのコレクションを取得します。 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+テナントの作成された[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのコレクションを取得します。
 
 この操作には、コレクション内の**id**と予約の各企業の**表示名**だけが返されます。 パフォーマンスに関する考慮事項、その他のプロパティは返されません。 [GET](bookingbusiness-get.md)操作でその**id**を指定することによって、予約のビジネスの他のプロパティを取得できます。
 
-照会することも予約企業内の文字列を指定することにより、`query`は、テナントの企業間で一致するサブスト リングのパラメーターです。 次[の使用例](#request-2)を参照してください。
+照会することも予約企業内の文字列を指定することにより、`query`は、テナントの企業間で一致するサブスト リングのパラメーターです。 次の[例](#request-2)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -29,7 +29,7 @@ ms.locfileid: "27951454"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
-|アプリケーション | サポートされていません。  | 
+|アプリケーション | サポートされていません。  |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -123,10 +123,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List bookingBusinesses",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

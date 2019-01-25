@@ -4,16 +4,16 @@ description: 割り当てオブジェクトを更新します。 クラスの先
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524962"
 ---
 # <a name="update-educationassignment"></a>Educationassignment を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 割り当てオブジェクトを更新します。 クラスの先生だけは、これを実行できます。 割り当ての状態を変更するのには、修正プログラムの要求を使用できないことに注意してください。 [発行](../api/educationassignment-publish.md)アクションを使用すると、割り当ての状態を変更します。
 
@@ -40,16 +40,16 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|ブール型| かどうかの提出書類は、期限より後に送信できます。|
-|allowStudentsToAddResourcesToSubmission|ブール型| かどうか、受講生受講者は、提出書類にリソースを追加できます。 リソースの割り当て] ボックスの一覧から、提出書類の項目のみが付属しているかどうかを指定します。 |
+|allowLateSubmissions|ブール値| かどうかの提出書類は、期限より後に送信できます。|
+|allowStudentsToAddResourcesToSubmission|ブール値| かどうか、受講生受講者は、提出書類にリソースを追加できます。 リソースの割り当て] ボックスの一覧から、提出書類の項目のみが付属しているかどうかを指定します。 |
 |assignDateTime|DateTimeOffset| 日付は受講者に割り当てを発行する必要があります。 |
 |assignTo|educationAssignmentRecipient| 割り当てを取得した受講者です。|
 |displayName|String| 割り当ての名前です。 |
 |dueDateTime|DateTimeOffset| 割り当ての日付が期限です。 |
 |グレーディング|educationAssignmentGradeType| どの割り当てが焼き付けるされます。|
-|指示|itemBody| 割り当てと受講者に指示します。 |
+|手順|item.body| 割り当てと受講者に指示します。 |
 
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[educationAssignment](../resources/educationassignment.md)オブジェクトです。
@@ -104,10 +104,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: PrivilegedRoleAssignmentRequest を作成します。
 description: Privilegedroleassignmentrequest オブジェクトを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847770"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521069"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトを作成します。
 
@@ -38,13 +38,13 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>要求本文
 要求の本文には、 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトの JSON 表現を指定します。 
 
-| プロパティ     | 種類    |  説明|
+| プロパティ     | 型    |  説明|
 |:---------------|:--------|:----------|
 |roleId|String|ロールの ID です。 必須。|
-|type|String|表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。 必須。|
-|assignmentState|String|割り当ての状態です。 値は、`Eligible`対象となる割り当ての`Active`が直接割り当てられている場合 -`Active`管理者、またはユーザーが対象となる割り当ての有効化します。 可能な値は、``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired` です。 必須。|
+|type|String|表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。 必須です。|
+|assignmentState|String|割り当ての状態です。 値は、`Eligible`対象となる割り当ての`Active`が直接割り当てられている場合 -`Active`管理者、またはユーザーが対象となる割り当ての有効化します。 可能な値は、``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired` です。 必須です。|
 |理由|String|理由は、監査の役割の割り当て要求に指定して目的を確認する必要があります。|
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|役割の割り当て要求のスケジュールです。|
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|役割の割り当て要求のスケジュールです。|
 
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)オブジェクトです。
@@ -133,10 +133,15 @@ Content-length: 304
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post privilegedRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

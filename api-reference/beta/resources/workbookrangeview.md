@@ -4,16 +4,16 @@ description: RangeView は、親の範囲の表示されているセルのセッ
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9476b3f4a085f70be51d81a9da667c07db3b9232
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983717"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520831"
 ---
 # <a name="rangeview-resource-type"></a>rangeView リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 RangeView は、親の範囲の表示されているセルのセットを表します。
 
@@ -26,7 +26,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnCount|Int32|表示されている列の数を返します。読み取り専用。|
 |formulas|Json|A1 スタイル表記の数式を表します。 |
@@ -67,3 +67,11 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
   "values": "Json"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workbookrangeview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

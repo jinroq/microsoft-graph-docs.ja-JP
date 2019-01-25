@@ -4,16 +4,16 @@ description: グラフのソース データをリセットします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a92fe8e0c43b5dff4a406efbe0c2238ff0cab0ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3b8c6b31b9fd55463a67a40a0cc3e38f002d07bc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921662"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524521"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 グラフのソース データをリセットします。
 ## <a name="permissions"></a>アクセス許可
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|sourceData|文字列|データ ソースに対応する Range オブジェクトです。|
+|sourceData|string|データ ソースに対応する Range オブジェクトです。|
 |seriesBy|文字列|省略可能。列や行がグラフのデータ系列として使用される方法を指定します。次のいずれかを指定できます。自動 (既定)、行、列。可能な値は、`Auto`、`Columns`、`Rows` です。|
 
 ## <a name="response"></a>応答
@@ -81,10 +81,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Chart: setData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chart-setdata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

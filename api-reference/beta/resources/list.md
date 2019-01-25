@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: List
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 419f35226c09c1bde500994b6e023f764c54b3cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953617"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527662"
 ---
 # <a name="list-resource"></a>list リソース
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **list** リソースは [site][] 内のリストを表します。
 このリソースには、テンプレートとフィールドの定義を含め、リストの最上位レベルのプロパティが含まれています。
@@ -84,23 +84,23 @@ list リソースで使用可能なタスクを次に示します。
 
 **list** リソースには以下のプロパティがあります。
 
-| プロパティ名    | Type                             | 説明
+| プロパティ名    | 種類                             | 説明
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
 | **contentTypes** | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
-| **displayName**  | 文字列                           | リストの表示可能なタイトルです。
+| **displayName**  | string                           | リストの表示可能なタイトルです。
 | **list**         | [listInfo][]                     | リストに関する追加の詳細を示します。
 | **system**       | [systemFacet][]                  | 存在する場合は、これがシステム管理のリストであることを示しています。 読み取り専用です。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名            | Type             | 説明
+| プロパティ名            | 種類             | 説明
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | アイテムの一意識別子。読み取り専用です。
-| **name**                 | 文字列           | アイテムの名前。
+| **name**                 | string           | アイテムの名前。
 | **createdBy**            | [identitySet][]  | このアイテムの作成者の ID です。 読み取り専用です。
 | **createdDateTime**      | DateTimeOffset   | アイテムが作成された日時。読み取り専用です。
-| **説明**          | 文字列           | アイテムの説明テキストです。
+| **説明**          | string           | アイテムの説明テキストです。
 | **lastModifiedBy**       | [identitySet][]  | このアイテムの最終変更者の ID です。 読み取り専用です。
 | **lastModifiedDateTime** | DateTimeOffset   | アイテムが最後に変更された日時。読み取り専用です。
 | **webUrl**               | string (URL)     | ブラウザーでアイテムを表示する URL。読み取り専用です。
@@ -127,7 +127,8 @@ list リソースで使用可能なタスクを次に示します。
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ list リソースで使用可能なタスクを次に示します。
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

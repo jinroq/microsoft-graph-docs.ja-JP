@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 新しいフォルダーを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bdd5f76303d5097af3edd1fd9e2a8469d4a47a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ac78cc2e223f532c8c97fd413b799bd5cfd594cc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522988"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>ドライブに新しいフォルダーを作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を、指定された親アイテムやパスと共に[ドライブ](../resources/drive.md)内に作成します。
 
@@ -113,10 +113,15 @@ Content-Type: application/json
 エラーがどのように返されるかについては、「[エラー応答][error-response]」のトピックを参照してください。
 [エラー応答]: 項目のリソースのエラー/グラフ/:./resources/driveitem.md フォルダーとファセット。.. 説明。/resources/folder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "Items/Create folder"
-} -->
+  "tocPath": "Items/Create folder",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
