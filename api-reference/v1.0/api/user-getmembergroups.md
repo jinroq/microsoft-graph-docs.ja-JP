@@ -1,17 +1,17 @@
 ---
 title: 'user: getMemberGroups'
-description: ユーザーがのメンバーであるすべてのグループを返します。 チェックは推移機能が、読み取りとは異なり、
+description: ユーザーがメンバーであるすべてのグループを返します。 The check is transitive, unlike reading the
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb8caefae8b7c3ced9630309cae51a3b74b45937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415139"
 ---
-# <a name="user-getmembergroups"></a>user: getMemberGroups
+# <a name="user-getmembergroups"></a>user: getMemberGroups の読み取りとは異なり、チェックは推移的です。
 
 ユーザーがメンバーであるすべてのグループを返します。チェックは推移的であり、ユーザーが直接メンバーであるグループのみを返す [memberOf](../api/user-list-memberof.md) ナビゲーション プロパティの読み取りとは異なります。
 
@@ -23,11 +23,11 @@ ms.locfileid: "27969206"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | ~~User.Read および Group.Read.All~~、~~User.ReadBasic.All および Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                                                       |
-| アプリケーション                            | _Group.Read.All_、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 単独または組み合わせて、Group.Read.All のアクセス許可を使用して、`User.`のアクセス許可エラーが返されます。 これは既知のバグです。
+> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 Group.Read.All アクセス許可を単独で、または `User.` アクセス許可と組み合わせて使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター           | Type    | 説明                                                                                                                                                                                                                                                                         |
+| パラメーター           | 型    | 説明                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | securityEnabledOnly | Boolean | ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。 |
 

@@ -4,12 +4,12 @@ description: Microsoft Graph API を使用して Microsoft Teams タブを作成
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34db44b1048431f8d1bf0be715e35bcdab6ae80b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970753"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726541"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -60,7 +60,7 @@ Microsoft Stream のタブの場合、`teamsAppId` は `com.microsoftstream.embe
 ## <a name="microsoft-forms-tabs"></a>Microsoft Forms のタブ
 
 Microsoft Forms のタブの場合、`teamsAppId` は `81fef3a6-72aa-4648-a763-de824aeafb7d` です。
-構成:
+構成を次に示します。
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -80,13 +80,38 @@ Microsoft Forms のタブの場合、`teamsAppId` は `81fef3a6-72aa-4648-a763-d
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-構成はサポートされていません。
+構成を次に示します。
+
+| プロパティ   | 型        | 説明                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | 文字列      | ファイルの sourceDoc ID。 これは、SharePoint でファイルを開き、アドレス バーを見ると確認できます。URL に `sourcedoc=%7B{sourceDocId}%7D` 句があります。 これは、ドキュメントの SharePoint ドライブ項目の webUrl から派生させることもできます。 詳細については、「[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)」を参照してください。 |
+| contentUrl | 文字列      | ファイルの URL (`{folder-webUrl}/{item-name}` 形式)。 {folder-webUrl} はファイルを含む SharePoint フォルダーの webUrl です。これは SharePoint でファイルを開いてアドレス バーを確認するか、[GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) から webUrl プロパティを使用することで確認できます。 {item-name} はファイル名です (例: file.docx)。これは [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) の `name` プロパティです。 |
+| removeUrl  | 文字列      | Null                                                     |
+| websiteUrl | string      | Null                                       |
+
+### <a name="example-create-a-configured-word-tab"></a>例: 構成された Word タブを作成する
+
+次の例では、構成された Word タブを作成します。
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+     "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+     "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+     "removeUrl": null,
+     "websiteUrl": null
+  }
+}
+```
 
 ## <a name="wiki-tabs"></a>Wiki のタブ
 
 Wiki のタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.wiki` です。
 Wiki のタブは、Graph による構成をサポートしていません。
-ただし、構成が必要なものはそれほど多くありません。構成されていない Wiki のタブでは、最初のユーザーが **[セット アップ] タブ**をクリックして構成するだけで済みます。
+ただし、構成が必要なものはそれほど多くありません。構成されていない Wiki のタブで、最初のユーザーが **[セット アップ] タブ**を選択するだけで構成できます。
 
 ## <a name="document-library-tabs"></a>ドキュメント ライブラリのタブ
 
@@ -112,4 +137,4 @@ Power BI のタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.powe
 
 SharePoint のページとリスト タブの場合、`teamsAppId` は `2a527703-1f6f-4559-a332-d8a7d288cd88` です。
 構成はサポートされていません。
-構成が必要な場合は、Web サイト タブの使用を検討してください。
+タブを構成する必要がある場合は、Web サイトのタブの使用を検討してください。

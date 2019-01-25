@@ -1,28 +1,22 @@
 ---
 title: グループの一覧表示
-description: Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
+description: Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 05d3872fbc376933a0ff2fe772a79239e4d62928
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5081c5013c1bf7c1a1bfbcff58afe5a83aa67bc9
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955171"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726576"
 ---
-# <a name="list-groups"></a>グループを一覧表示する
-Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。各グループの[既定のプロパティ](../api/group-get.md#default-properties)が返されます。
+# <a name="list-groups"></a>グループの一覧表示
+Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
 
-Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。
-```
-GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
+この操作は既定で各グループのプロパティのサブセットのみを返します。 これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 
 
-OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。
-```
-GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
-```
+既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -40,10 +34,20 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+```
+
+次の例のように、OData クエリ オプション `$orderby` を使用して、組織内のグループを **displayName** 値で並べ替えることができます。<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
+```
+
+OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -51,7 +55,7 @@ GET /groups
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。 応答には、各グループの既定のプロパティのみが含まれています。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -67,41 +71,79 @@ GET https://graph.microsoft.com/v1.0/groups
 #### <a name="response"></a>応答
 応答の例を次に示します。
 
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しでは [既定のプロパティ](../api/group-get.md#default-properties)が返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
- {
-  "value": [
-    {
-      "id": "id-value",
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "groupTypes": [
-        "groupTypes-value"
-      ],
-      "mail": "mail-value",
-      "mailEnabled": true,
-      "mailNickname": "mailNickname-value",
-      "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-      "onPremisesSyncEnabled": true,
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "securityEnabled": true,
-      "visibility": "visibility-value"
-    }
-  ]
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "creationOptions": [],
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "creationOptions": [],
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "groupTypes": [],
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 
 ```

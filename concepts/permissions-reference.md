@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: 'Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリにサインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 02867d6651820fabbb374cddfb69c4a8011390f0
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 98438b9403222a8a631b2c335c1f325a70805007
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410757"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可リファレンス 
 Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリにサインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 
@@ -454,7 +454,7 @@ Office 365 グループの場合は、グループのアクセス許可により
 
 場合によっては、アプリは一部のグループ プロパティ (`member` や `memberOf` など) の読み取りに[ディレクトリのアクセス許可](#directory-permissions)を必要とすることがあります。たとえば、グループにメンバーとして 1 つ以上の [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) が含まれている場合、アプリは _Directory.\*_ アクセス許可のいずれかによって付与されるサービス プリンシパルを読み取るための有効なアクセス許可が必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します (委任されたアクセス許可の場合、サインインしているユーザーも、サービス プリンシパルを読み取るために、組織内の十分な権限が必要です)。同様のガイダンスは、[administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta) を返す `memberOf` プロパティにも当てはまります。
 
-グループのアクセス許可は、[Microsoft Teams](/graph/api/resources/teams-api-overview) のリソースと API へのアクセスを制御するために使用されます。 
+グループのアクセス許可は、[Microsoft Teams](/graph/api/resources/teams-api-overview) のリソースと API へのアクセスを制御するために使用されます。 個人用 Microsoft アカウントはサポートされません。
 
 また、グループのアクセス許可は、[Microsoft Planner](/graph/api/resources/planner-overview) のリソースと API へのアクセスを制御するためにも使用されます。Microsoft Planner API では委任されたアクセス許可のみがサポートされます。アプリケーション アクセス許可はサポートされません。個人用 Microsoft アカウントはサポートされません。
 
@@ -1099,8 +1099,6 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
-<a name="msprod-microsoft-identity-platform"></a>製品情報: 「Microsoft ID プラットフォーム」
----
 ## <a name="user-activity-permissions"></a>ユーザー アクティビティのアクセス許可
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
