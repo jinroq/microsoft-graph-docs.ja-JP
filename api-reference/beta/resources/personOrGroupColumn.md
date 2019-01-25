@@ -4,16 +4,16 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a1eb5b36f2af7b66da7fd891ccd324fa325504c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a3136d7c5b9563999eb9b21a9235317afdaeb63e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923468"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519298"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) リソースの **PersonOrGroupColumn** は、列の値がディレクトリから選択した個人またはグループを表すことを示しています。
 
@@ -32,11 +32,11 @@ ms.locfileid: "27923468"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名              | Type    | 説明
+| プロパティ名              | 種類    | 説明
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | ソースから複数の値を選択できるかどうかを示します。
-| **displayAs**              | 文字列  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
-| **chooseFromType**         | 文字列  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
+| **displayAs**              | string  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
+| **chooseFromType**         | string  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
 
 ## <a name="displayas-values"></a>DisplayAs 値
 
@@ -63,10 +63,15 @@ ms.locfileid: "27923468"
 
 注: その他の DisplayAs の種類が返される可能性があります。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/PersonOrGroupColumn"
-} -->
+  "tocPath": "Resources/PersonOrGroupColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/personOrGroupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: 717dd93d82f109926cabf0168e4e176d7c68cd35
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e57e74a0dbcb785d88fb7ccdd3aa3c0e62dc882a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861538"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517569"
 ---
 # <a name="folderview-resource-type"></a>FolderView リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **FolderView** リソースは、フォルダーのユーザー エクスペリエンスに関する推奨事項を提供または設定します。
 
@@ -33,11 +33,11 @@ ms.locfileid: "27861538"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名         | Type   | 説明
+| プロパティ名         | 種類   | 説明
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | 文字列 | フォルダーの並べ替え方法。
-| **sortOrder**         | 文字列 | true の場合は、アイテムが降順で並べ替えられることを示します。 それ以外の場合は、アイテムが昇順で並べ替えられます。
-| **viewType**          | 文字列 | フォルダーを表すために使用されるビューの種類。
+| **sortBy**            | string | フォルダーの並べ替え方法。
+| **sortOrder**         | string | true の場合は、アイテムが降順で並べ替えられることを示します。 それ以外の場合は、アイテムが昇順で並べ替えられます。
+| **viewType**          | string | フォルダーを表すために使用されるビューの種類。
 
 _sortBy_ プロパティを使用すると、**viewType** ファセットを優先するアプリケーションで、アイテムの並べ替え順序を制御できます。
 
@@ -83,10 +83,15 @@ _sortBy_ プロパティを使用すると、**viewType** ファセットを優�
 
 <!-- uuid: f9e446fd-190b-4692-a605-bb60e78f1f19
 2017-05-03 02:34:40 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folderView resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folderview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

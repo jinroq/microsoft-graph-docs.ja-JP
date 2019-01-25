@@ -4,16 +4,16 @@ description: 管理単位は、ユーザーとグループのディレクトリ 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955318"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519746"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 管理単位は、ユーザーとグループのディレクトリ オブジェクトの概念的なコンテナーを提供します。 管理単位を使用すると、企業の管理者はユーザーを管理する管理責任を委任できるようになりましたと、グループ内に含まれている、地域や部門の管理者に管理単位にスコープを設定しました。
 
@@ -36,9 +36,9 @@ ms.locfileid: "27955318"
 |[メンバーを追加する](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| (ユーザーまたはグループ) のメンバーを追加します。|
 |[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) コレクション| (ユーザーおよびグループ) のメンバーの一覧を取得します。|
 |[メンバーを取得します。](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
-|[メンバーを削除する](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
+|[メンバーを削除する](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除する|
 |[スコープ ロール メンバーを追加します。](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ ロールのメンバーを追加します。|
-|[スコープ ロールのメンバーの一覧](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープ ロールの管理者の一覧を取得します。|
+|[スコープ ロールのメンバーの一覧](../api/administrativeunit-list-scopedrolemembers.md) |scopedRoleMembership コレクション| スコープ ロールの管理者の一覧を取得します。|
 |[スコープ ロールのメンバーを取得します。](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 特定のスコープにロールのメンバーを取得します。|
 |[スコープ ロール メンバーを削除します。](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ ロールのメンバーを削除します。|
 |**オープン拡張機能**| | |
@@ -48,11 +48,11 @@ ms.locfileid: "27955318"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|description|文字列|管理単位のオプションの説明です。|
+|説明|string|管理単位のオプションの説明です。|
 |displayName|string|管理単位の名前を表示します。|
-|ID|文字列|管理単位の一意の識別子です。 読み取り専用です。|
+|id|文字列|管理単位の一意の識別子です。 読み取り専用です。|
 |visibility|文字列|またはパブリック フォルダー管理の単位とそのメンバーが非表示かどうかを制御します。 HiddenMembership またはパブリックに設定できます。 ない場合、既定の動作のセット公開。 管理の単位のメンバーだけの HiddenMembership に設定すると、管理単位の他のメンバーが一覧表示できます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -60,7 +60,7 @@ ms.locfileid: "27955318"
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|この管理単位に定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション|ユーザーとグループがこの Adminsitrative ユニットのメンバーであります。 HTTP メソッド: 投稿 (メンバーの一覧) を取得 (メンバー) を追加 (メンバーの削除) を削除します。|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) コレクション| この管理単位のスコープにロールのメンバーです。  HTTP メソッド: 投稿 (リスト scopedRoleMemberships) を取得 (scopedRoleMembership)、追加 (削除 scopedRoleMembership) を削除します。 |
+|scopedRoleMembers|scopedRoleMembership コレクション| この管理単位のスコープにロールのメンバーです。  HTTP メソッド: 投稿 (リスト scopedRoleMemberships) を取得 (scopedRoleMembership)、追加 (削除 scopedRoleMembership) を削除します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -94,10 +94,15 @@ ms.locfileid: "27955318"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "administrativeUnit resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

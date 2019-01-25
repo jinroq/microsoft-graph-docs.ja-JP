@@ -3,16 +3,16 @@ title: Office 365 アクティブ化レポート
 description: Office 365 のライセンス認証のレポートを使用すると、ユーザー先のデバイスが少なくとも 1 つの Office 365 サブスクリプションを有効にして表示します。 デスクトップとデバイスの間でのアクティブ化の詳細と、Office 365 サブスクリプションのライセンス認証を Office 365 用リソース、プロジェクト、および Visio Pro の内訳を提供します。 このレポートを使用すると可能性があります、Office のサブスクリプションをアクティブにするのには追加のサポートを必要とするユーザーを識別できます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8f9c174ba1439825ff08edb33518da74f6a77634
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f0abf320fed495040513df662be6d5c93658656
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978621"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522323"
 ---
 # <a name="office-365-activations-reports"></a>Office 365 アクティブ化レポート
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Office 365 のライセンス認証のレポートを使用すると、ユーザー先のデバイスが少なくとも 1 つの Office 365 サブスクリプションを有効にして表示します。 デスクトップとデバイスの間でのアクティブ化の詳細と、Office 365 サブスクリプションのライセンス認証を Office 365 用リソース、プロジェクト、および Visio Pro の内訳を提供します。 このレポートを使用すると可能性があります、Office のサブスクリプションをアクティブにするのには追加のサポートを必要とするユーザーを識別できます。
 
@@ -24,3 +24,11 @@ Office 365 のライセンス認証のレポートを使用すると、ユーザ
 | [ユーザーの詳細を取得する](../api/reportroot-getoffice365activationsuserdetail.md) | Stream          | [office365ActivationsUserDetail](../resources/office365activationsuserdetail.md) | Office 365 がアクティブ化されているユーザーに関する詳細情報を取得します。 |
 | [ライセンス認証の数を取得する](../api/reportroot-getoffice365activationcounts.md) | Stream          | [office365ActivationCounts](../resources/office365activationcounts.md) | デスクトップとデバイスでの Office 365 のライセンス認証の数を取得します。 |
 | [ユーザーの数を取得する](../api/reportroot-getoffice365activationsusercounts.md) | Stream          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | 有効なユーザーで、デスクトップまたはデバイスで Office サブスクリプションがアクティブ化されているユーザーの数を取得します。 |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/office-365-activations-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

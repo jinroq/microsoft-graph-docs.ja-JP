@@ -1,21 +1,21 @@
 ---
 title: 'group: getMemberObjects'
-description: 'すべてのグループとグループのメンバーである管理の単位を返します。 チェック、推移的です。 注: グループのメンバーではディレクトリの役割、ディレクトリの役割が返されないようにします。'
+description: 'グループがメンバーになっているすべてのグループ、管理単位を返します。 チェック、推移的です。 注: グループのメンバーではディレクトリの役割、ディレクトリの役割が返されないようにします。'
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a83987a15f384cf17e268a8bdbd6791164484f7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b71a683d3c311acc36ca0ab669c5d6d44180f31
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935928"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518717"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-すべてのグループとグループのメンバーである管理の単位を返します。 チェック、推移的です。 注: グループのメンバーではディレクトリの役割、ディレクトリの役割が返されないようにします。
+グループがメンバーになっているすべてのグループ、管理単位を返します。 チェック、推移的です。 注: グループのメンバーではディレクトリの役割、ディレクトリの役割が返されないようにします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ POST /groups/{id}/getMemberObjects
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|**false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。|
+|securityEnabledOnly|ブール値|**false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドはグループがメンバーであるグループの ID を含んだ応答本文で `200 OK` 応答コードと文字列コレクションを返します。
@@ -87,10 +87,15 @@ Content-length: 39
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: getMemberObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-getmemberobjects.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
