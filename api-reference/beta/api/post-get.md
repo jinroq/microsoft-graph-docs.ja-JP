@@ -4,52 +4,52 @@ description: '指定したスレッド内の投稿のプロパティと関係を
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ecccee4f63136d43c375e648e9a073e489f99c17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0d786734aa59d0048b077d4fa7eae08857da2753
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968590"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514013"
 ---
-# <a name="get-post"></a><span data-ttu-id="be121-104">投稿を取得する</span><span class="sxs-lookup"><span data-stu-id="be121-104">Get post</span></span>
+# <a name="get-post"></a><span data-ttu-id="376f9-104">投稿を取得する</span><span class="sxs-lookup"><span data-stu-id="376f9-104">Get post</span></span>
 
-> <span data-ttu-id="be121-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="be121-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="be121-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="be121-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be121-p103">指定したスレッド内の投稿のプロパティと関係を取得します。親の会話とスレッドの両方を指定したり、親の会話を参照せずにスレッドを指定したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="be121-p103">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
+<span data-ttu-id="376f9-p102">指定したスレッド内の投稿のプロパティと関係を取得します。親の会話とスレッドの両方を指定したり、親の会話を参照せずにスレッドを指定したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="376f9-p102">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
 
-<span data-ttu-id="be121-109">**投稿**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**投稿**インスタンスでカスタム プロパティと拡張機能データを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="be121-109">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
+<span data-ttu-id="376f9-107">**投稿**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**投稿**インスタンスでカスタム プロパティと拡張機能データを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="376f9-107">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be121-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="be121-110">Permissions</span></span>
-<span data-ttu-id="be121-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be121-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="376f9-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="376f9-108">Permissions</span></span>
+<span data-ttu-id="376f9-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="376f9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="be121-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="be121-113">Permission type</span></span>      | <span data-ttu-id="be121-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="be121-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="376f9-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="376f9-111">Permission type</span></span>      | <span data-ttu-id="376f9-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="376f9-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="be121-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="be121-115">Delegated (work or school account)</span></span> | <span data-ttu-id="be121-116">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be121-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="be121-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="be121-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be121-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="be121-118">Not supported.</span></span>    |
-|<span data-ttu-id="be121-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="be121-119">Application</span></span> | <span data-ttu-id="be121-120">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be121-120">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="376f9-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="376f9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="376f9-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="376f9-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="376f9-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="376f9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="376f9-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="376f9-116">Not supported.</span></span>    |
+|<span data-ttu-id="376f9-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="376f9-117">Application</span></span> | <span data-ttu-id="376f9-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="376f9-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="be121-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="be121-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="376f9-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="376f9-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="be121-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="be121-122">Optional query parameters</span></span>
-<span data-ttu-id="be121-123">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="be121-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="be121-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="be121-124">Request headers</span></span>
-| <span data-ttu-id="be121-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="be121-125">Header</span></span>       | <span data-ttu-id="be121-126">値</span><span class="sxs-lookup"><span data-stu-id="be121-126">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="376f9-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="376f9-120">Optional query parameters</span></span>
+<span data-ttu-id="376f9-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="376f9-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="376f9-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="376f9-122">Request headers</span></span>
+| <span data-ttu-id="376f9-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="376f9-123">Header</span></span>       | <span data-ttu-id="376f9-124">値</span><span class="sxs-lookup"><span data-stu-id="376f9-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="be121-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="be121-127">Authorization</span></span>  | <span data-ttu-id="be121-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="be121-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="376f9-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="376f9-125">Authorization</span></span>  | <span data-ttu-id="376f9-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="376f9-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="be121-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="be121-130">Request body</span></span>
-<span data-ttu-id="be121-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="be121-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="376f9-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="376f9-128">Request body</span></span>
+<span data-ttu-id="376f9-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="376f9-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be121-132">応答</span><span class="sxs-lookup"><span data-stu-id="be121-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="376f9-130">応答</span><span class="sxs-lookup"><span data-stu-id="376f9-130">Response</span></span>
 
-<span data-ttu-id="be121-133">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[投稿](../resources/post.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="be121-133">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="be121-134">例</span><span class="sxs-lookup"><span data-stu-id="be121-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="be121-135">要求</span><span class="sxs-lookup"><span data-stu-id="be121-135">Request</span></span>
-<span data-ttu-id="be121-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="be121-136">Here is an example of the request.</span></span>
+<span data-ttu-id="376f9-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[投稿](../resources/post.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="376f9-131">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="376f9-132">例</span><span class="sxs-lookup"><span data-stu-id="376f9-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="376f9-133">要求</span><span class="sxs-lookup"><span data-stu-id="376f9-133">Request</span></span>
+<span data-ttu-id="376f9-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="376f9-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_post"
@@ -57,8 +57,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```http
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==
 ```
-##### <a name="response"></a><span data-ttu-id="be121-137">応答</span><span class="sxs-lookup"><span data-stu-id="be121-137">Response</span></span>
-<span data-ttu-id="be121-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="be121-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="376f9-135">応答</span><span class="sxs-lookup"><span data-stu-id="376f9-135">Response</span></span>
+<span data-ttu-id="376f9-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="376f9-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,19 +100,24 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="be121-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="be121-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="376f9-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="376f9-139">See also</span></span>
 
-- [<span data-ttu-id="be121-142">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="be121-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="be121-143">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="be121-143">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="be121-144">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="be121-144">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="376f9-140">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="376f9-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="376f9-141">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="376f9-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- <span data-ttu-id="376f9-142">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="376f9-142">[Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get post",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/post-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

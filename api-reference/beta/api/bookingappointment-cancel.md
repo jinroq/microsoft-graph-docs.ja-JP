@@ -1,58 +1,58 @@
 ---
 title: 'bookingAppointment: キャンセル'
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: 指定の bookingbusiness で指定された bookingAppointment をキャンセルし、関連する顧客とスタッフのメンバーにメッセージを送信します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2ea1baae613188037ab806a81a6341daecaddc65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514685"
 ---
-# <a name="bookingappointment-cancel"></a><span data-ttu-id="8854e-104">bookingAppointment: キャンセル</span><span class="sxs-lookup"><span data-stu-id="8854e-104">bookingAppointment: cancel</span></span>
+# <a name="bookingappointment-cancel"></a><span data-ttu-id="8dbfb-103">bookingAppointment: キャンセル</span><span class="sxs-lookup"><span data-stu-id="8dbfb-103">bookingAppointment: cancel</span></span>
 
- > <span data-ttu-id="8854e-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="8854e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8854e-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8854e-106">Use of these APIs in production applications is not supported.</span></span>
- 
-<span data-ttu-id="8854e-107">指定された[bookingbusiness](../resources/bookingbusiness.md)では、指定された[bookingAppointment](../resources/bookingappointment.md)をキャンセルし、関連する顧客とスタッフのメンバーにメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="8854e-107">Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="8854e-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8854e-108">Permissions</span></span>
-<span data-ttu-id="8854e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8854e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8dbfb-104">指定された[bookingbusiness](../resources/bookingbusiness.md)では、指定された[bookingAppointment](../resources/bookingappointment.md)をキャンセルし、関連する顧客とスタッフのメンバーにメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-104">Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.</span></span>
 
-|<span data-ttu-id="8854e-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8854e-111">Permission type</span></span>      | <span data-ttu-id="8854e-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8854e-112">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="8dbfb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8dbfb-105">Permissions</span></span>
+<span data-ttu-id="8dbfb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8dbfb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8dbfb-108">Permission type</span></span>      | <span data-ttu-id="8dbfb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8dbfb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8854e-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8854e-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="8854e-114">BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="8854e-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="8854e-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8854e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8854e-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8854e-116">Not supported.</span></span>   |
-|<span data-ttu-id="8854e-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8854e-117">Application</span></span> | <span data-ttu-id="8854e-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8854e-118">Not supported.</span></span>  | 
+|<span data-ttu-id="8dbfb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8dbfb-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="8dbfb-111">BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="8dbfb-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="8dbfb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8dbfb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8dbfb-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-113">Not supported.</span></span>   |
+|<span data-ttu-id="8dbfb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8dbfb-114">Application</span></span> | <span data-ttu-id="8dbfb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="8854e-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8854e-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8dbfb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8dbfb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8854e-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8854e-120">Request headers</span></span>
-| <span data-ttu-id="8854e-121">名前</span><span class="sxs-lookup"><span data-stu-id="8854e-121">Name</span></span>       | <span data-ttu-id="8854e-122">説明</span><span class="sxs-lookup"><span data-stu-id="8854e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8dbfb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8dbfb-117">Request headers</span></span>
+| <span data-ttu-id="8dbfb-118">名前</span><span class="sxs-lookup"><span data-stu-id="8dbfb-118">Name</span></span>       | <span data-ttu-id="8dbfb-119">説明</span><span class="sxs-lookup"><span data-stu-id="8dbfb-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8854e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8854e-123">Authorization</span></span>  | <span data-ttu-id="8854e-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="8854e-124">Bearer {code}</span></span>|
+| <span data-ttu-id="8dbfb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8dbfb-120">Authorization</span></span>  | <span data-ttu-id="8dbfb-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="8dbfb-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8854e-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="8854e-125">Request body</span></span>
-<span data-ttu-id="8854e-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8854e-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8dbfb-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="8dbfb-122">Request body</span></span>
+<span data-ttu-id="8dbfb-123">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-123">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8854e-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8854e-127">Parameter</span></span>    | <span data-ttu-id="8854e-128">Type</span><span class="sxs-lookup"><span data-stu-id="8854e-128">Type</span></span>   |<span data-ttu-id="8854e-129">説明</span><span class="sxs-lookup"><span data-stu-id="8854e-129">Description</span></span>|
+| <span data-ttu-id="8dbfb-124">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8dbfb-124">Parameter</span></span>    | <span data-ttu-id="8dbfb-125">型</span><span class="sxs-lookup"><span data-stu-id="8dbfb-125">Type</span></span>   |<span data-ttu-id="8dbfb-126">説明</span><span class="sxs-lookup"><span data-stu-id="8dbfb-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8854e-130">cancellationMessage</span><span class="sxs-lookup"><span data-stu-id="8854e-130">cancellationMessage</span></span>|<span data-ttu-id="8854e-131">String</span><span class="sxs-lookup"><span data-stu-id="8854e-131">String</span></span>|<span data-ttu-id="8854e-132">予定が取り消されましたことをお客様と確認のメッセージです。</span><span class="sxs-lookup"><span data-stu-id="8854e-132">A message to acknowledge with the customer that the appointment has been cancelled.</span></span>|
+|<span data-ttu-id="8dbfb-127">cancellationMessage</span><span class="sxs-lookup"><span data-stu-id="8dbfb-127">cancellationMessage</span></span>|<span data-ttu-id="8dbfb-128">String</span><span class="sxs-lookup"><span data-stu-id="8dbfb-128">String</span></span>|<span data-ttu-id="8dbfb-129">予定が取り消されましたことをお客様と確認のメッセージです。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-129">A message to acknowledge with the customer that the appointment has been cancelled.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8854e-133">応答</span><span class="sxs-lookup"><span data-stu-id="8854e-133">Response</span></span>
-<span data-ttu-id="8854e-p104">成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="8854e-p104">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8dbfb-130">応答</span><span class="sxs-lookup"><span data-stu-id="8dbfb-130">Response</span></span>
+<span data-ttu-id="8dbfb-p102">成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-p102">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="8854e-136">Exisit ではありませんが、予定をキャンセルしようかどうか、このメソッドを返します`HTTP 404 Not found`。</span><span class="sxs-lookup"><span data-stu-id="8854e-136">If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.</span></span>
+<span data-ttu-id="8dbfb-133">Exisit ではありませんが、予定をキャンセルしようかどうか、このメソッドを返します`HTTP 404 Not found`。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-133">If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8854e-137">例</span><span class="sxs-lookup"><span data-stu-id="8854e-137">Example</span></span>
-<span data-ttu-id="8854e-138">次に、この API を呼び出す方法の例を示します。</span><span class="sxs-lookup"><span data-stu-id="8854e-138">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8854e-139">要求</span><span class="sxs-lookup"><span data-stu-id="8854e-139">Request</span></span>
-<span data-ttu-id="8854e-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8854e-140">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8dbfb-134">例</span><span class="sxs-lookup"><span data-stu-id="8dbfb-134">Example</span></span>
+<span data-ttu-id="8dbfb-135">次に、この API を呼び出す方法の例を示します。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-135">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8dbfb-136">要求</span><span class="sxs-lookup"><span data-stu-id="8dbfb-136">Request</span></span>
+<span data-ttu-id="8dbfb-137">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-137">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_cancel"
@@ -66,8 +66,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8854e-141">応答</span><span class="sxs-lookup"><span data-stu-id="8854e-141">Response</span></span>
-<span data-ttu-id="8854e-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8854e-142">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8dbfb-138">応答</span><span class="sxs-lookup"><span data-stu-id="8dbfb-138">Response</span></span>
+<span data-ttu-id="8dbfb-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8dbfb-139">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +79,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingAppointment: cancel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,52 +4,52 @@ description: 指定した会話に新しいスレッドを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4df6ba09df66966a741d6cff25580c0177848085
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ad1bf0d6878404913c7de20fecb8d3433f06dd51
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960533"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514216"
 ---
-# <a name="create-thread"></a><span data-ttu-id="c27fe-103">スレッドを作成する</span><span class="sxs-lookup"><span data-stu-id="c27fe-103">Create thread</span></span>
+# <a name="create-thread"></a><span data-ttu-id="d3c4b-103">スレッドを作成する</span><span class="sxs-lookup"><span data-stu-id="d3c4b-103">Create thread</span></span>
 
-> <span data-ttu-id="c27fe-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="c27fe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c27fe-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c27fe-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c27fe-106">指定した会話に新しいスレッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="c27fe-106">Create a new thread in the specified conversation.</span></span>
+<span data-ttu-id="d3c4b-104">指定した会話に新しいスレッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-104">Create a new thread in the specified conversation.</span></span>
 
-<span data-ttu-id="c27fe-p102">指定したとおりにスレッドと投稿を作成します。[スレッドに返信](conversationthread-reply.md) を使用して、そのスレッドへの投稿を続けます。また、投稿 ID を取得している場合は、そのスレッドのその投稿にも[返信](post-reply.md)できます。</span><span class="sxs-lookup"><span data-stu-id="c27fe-p102">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
+<span data-ttu-id="d3c4b-p101">指定したとおりにスレッドと投稿を作成します。[スレッドに返信](conversationthread-reply.md) を使用して、そのスレッドへの投稿を続けます。また、投稿 ID を取得している場合は、そのスレッドのその投稿にも[返信](post-reply.md)できます。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-p101">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
 
-<span data-ttu-id="c27fe-110">注:[最初にスレッドを作成して、新しい会話を開始](group-post-threads.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="c27fe-110">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
+<span data-ttu-id="d3c4b-108">注:[最初にスレッドを作成して、新しい会話を開始](group-post-threads.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-108">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c27fe-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c27fe-111">Permissions</span></span>
-<span data-ttu-id="c27fe-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c27fe-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3c4b-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d3c4b-109">Permissions</span></span>
+<span data-ttu-id="d3c4b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c27fe-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c27fe-114">Permission type</span></span>      | <span data-ttu-id="c27fe-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c27fe-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3c4b-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d3c4b-112">Permission type</span></span>      | <span data-ttu-id="d3c4b-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d3c4b-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c27fe-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c27fe-116">Delegated (work or school account)</span></span> | <span data-ttu-id="c27fe-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c27fe-117">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c27fe-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c27fe-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c27fe-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c27fe-119">Not supported.</span></span>    |
-|<span data-ttu-id="c27fe-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c27fe-120">Application</span></span> | <span data-ttu-id="c27fe-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c27fe-121">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="d3c4b-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d3c4b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="d3c4b-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3c4b-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d3c4b-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d3c4b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3c4b-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-117">Not supported.</span></span>    |
+|<span data-ttu-id="d3c4b-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d3c4b-118">Application</span></span> | <span data-ttu-id="d3c4b-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3c4b-119">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c27fe-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c27fe-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3c4b-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d3c4b-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations/{id}/threads
 ```
-## <a name="request-headers"></a><span data-ttu-id="c27fe-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c27fe-123">Request headers</span></span>
-| <span data-ttu-id="c27fe-124">名前</span><span class="sxs-lookup"><span data-stu-id="c27fe-124">Name</span></span>       | <span data-ttu-id="c27fe-125">種類</span><span class="sxs-lookup"><span data-stu-id="c27fe-125">Type</span></span> | <span data-ttu-id="c27fe-126">説明</span><span class="sxs-lookup"><span data-stu-id="c27fe-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d3c4b-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3c4b-121">Request headers</span></span>
+| <span data-ttu-id="d3c4b-122">名前</span><span class="sxs-lookup"><span data-stu-id="d3c4b-122">Name</span></span>       | <span data-ttu-id="d3c4b-123">型</span><span class="sxs-lookup"><span data-stu-id="d3c4b-123">Type</span></span> | <span data-ttu-id="d3c4b-124">説明</span><span class="sxs-lookup"><span data-stu-id="d3c4b-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c27fe-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="c27fe-127">Authorization</span></span>  | <span data-ttu-id="c27fe-128">string</span><span class="sxs-lookup"><span data-stu-id="c27fe-128">string</span></span>  | <span data-ttu-id="c27fe-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c27fe-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d3c4b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3c4b-125">Authorization</span></span>  | <span data-ttu-id="d3c4b-126">string</span><span class="sxs-lookup"><span data-stu-id="d3c4b-126">string</span></span>  | <span data-ttu-id="d3c4b-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c27fe-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="c27fe-131">Request body</span></span>
-<span data-ttu-id="c27fe-132">要求の本文に、[ConversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c27fe-132">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3c4b-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="d3c4b-129">Request body</span></span>
+<span data-ttu-id="d3c4b-130">要求の本文に、[ConversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-130">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c27fe-133">応答</span><span class="sxs-lookup"><span data-stu-id="c27fe-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d3c4b-131">応答</span><span class="sxs-lookup"><span data-stu-id="d3c4b-131">Response</span></span>
 
-<span data-ttu-id="c27fe-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c27fe-134">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+<span data-ttu-id="d3c4b-132">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-132">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c27fe-135">例</span><span class="sxs-lookup"><span data-stu-id="c27fe-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c27fe-136">要求</span><span class="sxs-lookup"><span data-stu-id="c27fe-136">Request</span></span>
-<span data-ttu-id="c27fe-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c27fe-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d3c4b-133">例</span><span class="sxs-lookup"><span data-stu-id="d3c4b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d3c4b-134">要求</span><span class="sxs-lookup"><span data-stu-id="d3c4b-134">Request</span></span>
+<span data-ttu-id="d3c4b-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_conversation"
@@ -68,10 +68,10 @@ Content-type: application/json
   }]
 }
 ```
-<span data-ttu-id="c27fe-138">要求の本文に、[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c27fe-138">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="c27fe-139">応答</span><span class="sxs-lookup"><span data-stu-id="c27fe-139">Response</span></span>
+<span data-ttu-id="d3c4b-136">要求の本文に、[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-136">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="d3c4b-137">応答</span><span class="sxs-lookup"><span data-stu-id="d3c4b-137">Response</span></span>
 
-<span data-ttu-id="c27fe-p105">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c27fe-p105">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
+<span data-ttu-id="d3c4b-p104">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d3c4b-p104">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,10 +89,15 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

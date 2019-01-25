@@ -4,30 +4,30 @@ description: 下書きフォルダーにメッセージを送信します。 下
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 937c2da1bab83c412097f4207f32d07dc98d2ff8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5e7689e2b0bdd07c1739b4d3f640eb71b8dd0a35
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940674"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516596"
 ---
-# <a name="message-send"></a><span data-ttu-id="fcd83-104">メッセージ: send</span><span class="sxs-lookup"><span data-stu-id="fcd83-104">message: send</span></span>
+# <a name="message-send"></a><span data-ttu-id="0dbc5-104">メッセージ: send</span><span class="sxs-lookup"><span data-stu-id="0dbc5-104">message: send</span></span>
 
-> <span data-ttu-id="fcd83-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="fcd83-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fcd83-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fcd83-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fcd83-p103">下書きフォルダー内のメッセージを送信します。新しい下書きメッセージ、返信の下書き、全員へ返信の下書き、あるいは転送の下書きが下書きメッセージとなります。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。</span><span class="sxs-lookup"><span data-stu-id="fcd83-p103">Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.</span></span>
+<span data-ttu-id="0dbc5-p102">下書きフォルダー内のメッセージを送信します。新しい下書きメッセージ、返信の下書き、全員へ返信の下書き、あるいは転送の下書きが下書きメッセージとなります。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-p102">Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fcd83-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fcd83-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0dbc5-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0dbc5-108">Permissions</span></span>
 
-<span data-ttu-id="fcd83-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fcd83-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0dbc5-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fcd83-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fcd83-113">Permission type</span></span>      | <span data-ttu-id="fcd83-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fcd83-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0dbc5-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0dbc5-111">Permission type</span></span>      | <span data-ttu-id="0dbc5-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0dbc5-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fcd83-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fcd83-115">Delegated (work or school account)</span></span> | <span data-ttu-id="fcd83-116">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="fcd83-116">Mail.Send</span></span>    |
-|<span data-ttu-id="fcd83-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fcd83-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fcd83-118">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="fcd83-118">Mail.Send</span></span>    |
-|<span data-ttu-id="fcd83-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fcd83-119">Application</span></span> | <span data-ttu-id="fcd83-120">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="fcd83-120">Mail.Send</span></span> |
+|<span data-ttu-id="0dbc5-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0dbc5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0dbc5-114">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="0dbc5-114">Mail.Send</span></span>    |
+|<span data-ttu-id="0dbc5-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0dbc5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0dbc5-116">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="0dbc5-116">Mail.Send</span></span>    |
+|<span data-ttu-id="0dbc5-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0dbc5-117">Application</span></span> | <span data-ttu-id="0dbc5-118">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="0dbc5-118">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fcd83-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fcd83-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0dbc5-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0dbc5-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,25 +36,25 @@ POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fcd83-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fcd83-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0dbc5-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0dbc5-120">Request headers</span></span>
 
-| <span data-ttu-id="fcd83-123">名前</span><span class="sxs-lookup"><span data-stu-id="fcd83-123">Name</span></span>       | <span data-ttu-id="fcd83-124">種類</span><span class="sxs-lookup"><span data-stu-id="fcd83-124">Type</span></span> | <span data-ttu-id="fcd83-125">説明</span><span class="sxs-lookup"><span data-stu-id="fcd83-125">Description</span></span>|
+| <span data-ttu-id="0dbc5-121">名前</span><span class="sxs-lookup"><span data-stu-id="0dbc5-121">Name</span></span>       | <span data-ttu-id="0dbc5-122">型</span><span class="sxs-lookup"><span data-stu-id="0dbc5-122">Type</span></span> | <span data-ttu-id="0dbc5-123">説明</span><span class="sxs-lookup"><span data-stu-id="0dbc5-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fcd83-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="fcd83-126">Authorization</span></span>  | <span data-ttu-id="fcd83-127">string</span><span class="sxs-lookup"><span data-stu-id="fcd83-127">string</span></span>  | <span data-ttu-id="fcd83-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fcd83-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fcd83-130">Content-Length</span><span class="sxs-lookup"><span data-stu-id="fcd83-130">Content-Length</span></span> | <span data-ttu-id="fcd83-131">number</span><span class="sxs-lookup"><span data-stu-id="fcd83-131">number</span></span> | <span data-ttu-id="fcd83-132">0 が必要です。</span><span class="sxs-lookup"><span data-stu-id="fcd83-132">0. Required.</span></span> |
+| <span data-ttu-id="0dbc5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0dbc5-124">Authorization</span></span>  | <span data-ttu-id="0dbc5-125">string</span><span class="sxs-lookup"><span data-stu-id="0dbc5-125">string</span></span>  | <span data-ttu-id="0dbc5-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0dbc5-128">Content-Length</span><span class="sxs-lookup"><span data-stu-id="0dbc5-128">Content-Length</span></span> | <span data-ttu-id="0dbc5-129">number</span><span class="sxs-lookup"><span data-stu-id="0dbc5-129">number</span></span> | <span data-ttu-id="0dbc5-130">0 が必要です。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-130">0. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fcd83-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="fcd83-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0dbc5-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="0dbc5-131">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="fcd83-134">応答</span><span class="sxs-lookup"><span data-stu-id="fcd83-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0dbc5-132">応答</span><span class="sxs-lookup"><span data-stu-id="0dbc5-132">Response</span></span>
 
-<span data-ttu-id="fcd83-p106">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="fcd83-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0dbc5-p105">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-p105">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fcd83-137">例</span><span class="sxs-lookup"><span data-stu-id="fcd83-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0dbc5-135">例</span><span class="sxs-lookup"><span data-stu-id="0dbc5-135">Example</span></span>
 
-<span data-ttu-id="fcd83-138">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="fcd83-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="fcd83-139">要求</span><span class="sxs-lookup"><span data-stu-id="fcd83-139">Request</span></span>
+<span data-ttu-id="0dbc5-136">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-136">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0dbc5-137">要求</span><span class="sxs-lookup"><span data-stu-id="0dbc5-137">Request</span></span>
 
-<span data-ttu-id="fcd83-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fcd83-140">Here is an example of the request.</span></span>
+<span data-ttu-id="0dbc5-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -64,9 +64,9 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 POST https://graph.microsoft.com/beta/me/messages/{id}/send
 ```
 
-##### <a name="response"></a><span data-ttu-id="fcd83-141">応答</span><span class="sxs-lookup"><span data-stu-id="fcd83-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="0dbc5-139">応答</span><span class="sxs-lookup"><span data-stu-id="0dbc5-139">Response</span></span>
 
-<span data-ttu-id="fcd83-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="fcd83-142">Here is an example of the response.</span></span>
+<span data-ttu-id="0dbc5-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="0dbc5-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -78,10 +78,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: send",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-send.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

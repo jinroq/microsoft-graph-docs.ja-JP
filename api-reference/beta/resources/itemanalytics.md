@@ -4,24 +4,24 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 03626b5dad041181558af076b5dc0ac05b684e13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 72e7f4de752ec04fbc5ebd98655254e2597fa499
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514965"
 ---
-# <a name="itemanalytics-resource-type"></a><span data-ttu-id="0e10e-102">itemAnalytics リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0e10e-102">itemAnalytics resource type</span></span>
+# <a name="itemanalytics-resource-type"></a><span data-ttu-id="d5014-102">itemAnalytics リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d5014-102">itemAnalytics resource type</span></span>
 
-> <span data-ttu-id="0e10e-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="0e10e-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0e10e-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0e10e-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0e10e-105">**ItemAnalytics**リソースでは、アイテムに対して行われたアクティビティに関する分析を提供します。</span><span class="sxs-lookup"><span data-stu-id="0e10e-105">The **itemAnalytics** resource provides analytics about activities that took place on an item.</span></span> <span data-ttu-id="0e10e-106">このリソースは、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。</span><span class="sxs-lookup"><span data-stu-id="0e10e-106">This resource is currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="d5014-103">**ItemAnalytics**リソースでは、アイテムに対して行われたアクティビティに関する分析を提供します。</span><span class="sxs-lookup"><span data-stu-id="d5014-103">The **itemAnalytics** resource provides analytics about activities that took place on an item.</span></span> <span data-ttu-id="d5014-104">このリソースは、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。</span><span class="sxs-lookup"><span data-stu-id="d5014-104">This resource is currently only available on SharePoint and OneDrive for Business.</span></span>
 
-<span data-ttu-id="0e10e-107">間隔またはユーザー設定の時刻の範囲の上で分析を取得するために、 [getActivitiesByInterval][] API を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="0e10e-107">You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.</span></span>
+<span data-ttu-id="d5014-105">間隔またはユーザー設定の時刻の範囲の上で分析を取得するために、 [getActivitiesByInterval][] API を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="d5014-105">You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.</span></span>
 
-><span data-ttu-id="0e10e-108">**注:\*\*\*\*ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="0e10e-108">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
+><span data-ttu-id="d5014-106">**注:\*\*\*\*ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5014-106">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0e10e-109">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0e10e-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d5014-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d5014-107">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,22 +37,27 @@ ms.locfileid: "27842414"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="0e10e-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0e10e-110">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d5014-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d5014-108">Properties</span></span>
 
-| <span data-ttu-id="0e10e-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0e10e-111">Property</span></span>      | <span data-ttu-id="0e10e-112">種類</span><span class="sxs-lookup"><span data-stu-id="0e10e-112">Type</span></span>                 | <span data-ttu-id="0e10e-113">説明</span><span class="sxs-lookup"><span data-stu-id="0e10e-113">Description</span></span>
+| <span data-ttu-id="d5014-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d5014-109">Property</span></span>      | <span data-ttu-id="d5014-110">型</span><span class="sxs-lookup"><span data-stu-id="d5014-110">Type</span></span>                 | <span data-ttu-id="d5014-111">説明</span><span class="sxs-lookup"><span data-stu-id="d5014-111">Description</span></span>
 |:--------------|:---------------------|:--------------------------------------
-| <span data-ttu-id="0e10e-114">allTime</span><span class="sxs-lookup"><span data-stu-id="0e10e-114">allTime</span></span>       | <span data-ttu-id="0e10e-115">[itemActivityStat][]</span><span class="sxs-lookup"><span data-stu-id="0e10e-115">[itemActivityStat][]</span></span> | <span data-ttu-id="0e10e-116">分析で、アイテムの有効期間です。</span><span class="sxs-lookup"><span data-stu-id="0e10e-116">Analytics over the the item's lifespan.</span></span>
-| <span data-ttu-id="0e10e-117">lastSevenDays</span><span class="sxs-lookup"><span data-stu-id="0e10e-117">lastSevenDays</span></span> | <span data-ttu-id="0e10e-118">[itemActivityStat][]</span><span class="sxs-lookup"><span data-stu-id="0e10e-118">[itemActivityStat][]</span></span> | <span data-ttu-id="0e10e-119">過去 7 日間の分析。</span><span class="sxs-lookup"><span data-stu-id="0e10e-119">Analytics for the last seven days.</span></span>
+| <span data-ttu-id="d5014-112">allTime</span><span class="sxs-lookup"><span data-stu-id="d5014-112">allTime</span></span>       | <span data-ttu-id="d5014-113">[itemActivityStat][]</span><span class="sxs-lookup"><span data-stu-id="d5014-113">[itemActivityStat][]</span></span> | <span data-ttu-id="d5014-114">分析で、アイテムの有効期間です。</span><span class="sxs-lookup"><span data-stu-id="d5014-114">Analytics over the the item's lifespan.</span></span>
+| <span data-ttu-id="d5014-115">lastSevenDays</span><span class="sxs-lookup"><span data-stu-id="d5014-115">lastSevenDays</span></span> | <span data-ttu-id="d5014-116">[itemActivityStat][]</span><span class="sxs-lookup"><span data-stu-id="d5014-116">[itemActivityStat][]</span></span> | <span data-ttu-id="d5014-117">過去 7 日間の分析。</span><span class="sxs-lookup"><span data-stu-id="d5014-117">Analytics for the last seven days.</span></span>
 
 [itemActivityStat]: itemactivitystat.md
 
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemAnalytics object provides analytics about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemAnalytics"
-} -->
+  "tocPath": "Resources/ItemAnalytics",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemanalytics.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,29 +4,29 @@ description: ユーザー アカウントを一致させるためには、ソー
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c2b092d5589cdccccfe73a7e71afcafa7b555a90
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 723a74cff1d5a660272d3456e9f54de8a54e21bc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513705"
 ---
-# <a name="educationidentitymatchingoptions-resource-type"></a><span data-ttu-id="ac684-105">educationIdentityMatchingOptions リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ac684-105">educationIdentityMatchingOptions resource type</span></span>
+# <a name="educationidentitymatchingoptions-resource-type"></a><span data-ttu-id="ee102-105">educationIdentityMatchingOptions リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ee102-105">educationIdentityMatchingOptions resource type</span></span>
 
-> <span data-ttu-id="ac684-106">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="ac684-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ac684-107">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ac684-107">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ac684-108">ユーザー アカウントを一致させるためには、ソース プロパティとターゲット プロパティの間のマッピングを提供します。</span><span class="sxs-lookup"><span data-stu-id="ac684-108">Provides a mapping between a source property and a target property for matching user accounts.</span></span> <span data-ttu-id="ac684-109">元データ ソース プロパティが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ac684-109">The source property should exist in the source data.</span></span> <span data-ttu-id="ac684-110">ターゲット プロパティには、Azure Active Directory (AD の Azure) の有効なプロパティをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ac684-110">The target property should be a valid property in Azure Active Directory (Azure AD).</span></span>
+<span data-ttu-id="ee102-106">ユーザー アカウントを一致させるためには、ソース プロパティとターゲット プロパティの間のマッピングを提供します。</span><span class="sxs-lookup"><span data-stu-id="ee102-106">Provides a mapping between a source property and a target property for matching user accounts.</span></span> <span data-ttu-id="ee102-107">元データ ソース プロパティが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee102-107">The source property should exist in the source data.</span></span> <span data-ttu-id="ee102-108">ターゲット プロパティには、Azure Active Directory (AD の Azure) の有効なプロパティをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee102-108">The target property should be a valid property in Azure Active Directory (Azure AD).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ac684-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ac684-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ee102-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ee102-109">Properties</span></span>
 
-| <span data-ttu-id="ac684-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ac684-112">Property</span></span> | <span data-ttu-id="ac684-113">型</span><span class="sxs-lookup"><span data-stu-id="ac684-113">Type</span></span> | <span data-ttu-id="ac684-114">説明</span><span class="sxs-lookup"><span data-stu-id="ac684-114">Description</span></span> |
+| <span data-ttu-id="ee102-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ee102-110">Property</span></span> | <span data-ttu-id="ee102-111">型</span><span class="sxs-lookup"><span data-stu-id="ee102-111">Type</span></span> | <span data-ttu-id="ee102-112">説明</span><span class="sxs-lookup"><span data-stu-id="ee102-112">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="ac684-115">**appliesTo**</span><span class="sxs-lookup"><span data-stu-id="ac684-115">**appliesTo**</span></span> | <span data-ttu-id="ac684-116">string</span><span class="sxs-lookup"><span data-stu-id="ac684-116">string</span></span> |  <span data-ttu-id="ac684-117">ライセンスを割り当てるにはユーザーのロールの種類です。</span><span class="sxs-lookup"><span data-stu-id="ac684-117">The user role type to assign to the license.</span></span> <span data-ttu-id="ac684-118">使用可能な値は、`student`、`teacher` です。</span><span class="sxs-lookup"><span data-stu-id="ac684-118">Possible values are: `student`, `teacher`.</span></span>      |
-| <span data-ttu-id="ac684-119">**sourcePropertyName**</span><span class="sxs-lookup"><span data-stu-id="ac684-119">**sourcePropertyName**</span></span> | <span data-ttu-id="ac684-120">string</span><span class="sxs-lookup"><span data-stu-id="ac684-120">string</span></span> |  <span data-ttu-id="ac684-121">ソース データ内のフィールド名をする必要があります、ソース プロパティの名前。</span><span class="sxs-lookup"><span data-stu-id="ac684-121">The name of the source property, which should be a field name in the source data.</span></span> <span data-ttu-id="ac684-122">このプロパティは、大文字小文字を区別します。</span><span class="sxs-lookup"><span data-stu-id="ac684-122">This property is case-sensitive.</span></span>        |
-| <span data-ttu-id="ac684-123">**targetPropertyName**</span><span class="sxs-lookup"><span data-stu-id="ac684-123">**targetPropertyName**</span></span> | <span data-ttu-id="ac684-124">string</span><span class="sxs-lookup"><span data-stu-id="ac684-124">string</span></span> |  <span data-ttu-id="ac684-125">Azure AD に有効なプロパティである必要がありますターゲット プロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="ac684-125">The name of the target property, which should be a valid property in Azure AD.</span></span> <span data-ttu-id="ac684-126">このプロパティは、大文字小文字を区別します。</span><span class="sxs-lookup"><span data-stu-id="ac684-126">This property is case-sensitive.</span></span>     |
-| <span data-ttu-id="ac684-127">**targetDomain**</span><span class="sxs-lookup"><span data-stu-id="ac684-127">**targetDomain**</span></span> | <span data-ttu-id="ac684-128">string</span><span class="sxs-lookup"><span data-stu-id="ac684-128">string</span></span> |  <span data-ttu-id="ac684-129">ターゲット条件に一致するソース プロパティを使用して、サフィックスをドメイン。</span><span class="sxs-lookup"><span data-stu-id="ac684-129">The domain to suffix with the source property to match on the target.</span></span> <span data-ttu-id="ac684-130">として null を指定した場合、source プロパティを使用してターゲット プロパティと一致します。</span><span class="sxs-lookup"><span data-stu-id="ac684-130">If provided as null,  the source property will be used to match with the target property.</span></span>        |
+| <span data-ttu-id="ee102-113">appliesTo</span><span class="sxs-lookup"><span data-stu-id="ee102-113">**appliesTo**</span></span> | <span data-ttu-id="ee102-114">string</span><span class="sxs-lookup"><span data-stu-id="ee102-114">string</span></span> |  <span data-ttu-id="ee102-115">ライセンスを割り当てるにはユーザーのロールの種類です。</span><span class="sxs-lookup"><span data-stu-id="ee102-115">The user role type to assign to the license.</span></span> <span data-ttu-id="ee102-116">使用可能な値は、`student`、`teacher` です。</span><span class="sxs-lookup"><span data-stu-id="ee102-116">Possible values are: `student`, `teacher`.</span></span>      |
+| <span data-ttu-id="ee102-117">**sourcePropertyName**</span><span class="sxs-lookup"><span data-stu-id="ee102-117">**sourcePropertyName**</span></span> | <span data-ttu-id="ee102-118">string</span><span class="sxs-lookup"><span data-stu-id="ee102-118">string</span></span> |  <span data-ttu-id="ee102-119">ソース データ内のフィールド名をする必要があります、ソース プロパティの名前。</span><span class="sxs-lookup"><span data-stu-id="ee102-119">The name of the source property, which should be a field name in the source data.</span></span> <span data-ttu-id="ee102-120">このプロパティは、大文字小文字を区別します。</span><span class="sxs-lookup"><span data-stu-id="ee102-120">This property is case-sensitive.</span></span>        |
+| <span data-ttu-id="ee102-121">**targetPropertyName**</span><span class="sxs-lookup"><span data-stu-id="ee102-121">**targetPropertyName**</span></span> | <span data-ttu-id="ee102-122">string</span><span class="sxs-lookup"><span data-stu-id="ee102-122">string</span></span> |  <span data-ttu-id="ee102-123">Azure AD に有効なプロパティである必要がありますターゲット プロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="ee102-123">The name of the target property, which should be a valid property in Azure AD.</span></span> <span data-ttu-id="ee102-124">このプロパティは、大文字小文字を区別します。</span><span class="sxs-lookup"><span data-stu-id="ee102-124">This property is case-sensitive.</span></span>     |
+| <span data-ttu-id="ee102-125">**targetDomain**</span><span class="sxs-lookup"><span data-stu-id="ee102-125">**targetDomain**</span></span> | <span data-ttu-id="ee102-126">string</span><span class="sxs-lookup"><span data-stu-id="ee102-126">string</span></span> |  <span data-ttu-id="ee102-127">ターゲット条件に一致するソース プロパティを使用して、サフィックスをドメイン。</span><span class="sxs-lookup"><span data-stu-id="ee102-127">The domain to suffix with the source property to match on the target.</span></span> <span data-ttu-id="ee102-128">として null を指定した場合、source プロパティを使用してターゲット プロパティと一致します。</span><span class="sxs-lookup"><span data-stu-id="ee102-128">If provided as null,  the source property will be used to match with the target property.</span></span>        |
 
-## <a name="json-representation"></a><span data-ttu-id="ac684-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ac684-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ee102-129">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ee102-129">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -43,3 +43,11 @@ ms.locfileid: "29425793"
     "targetDomain": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationidentitymatchingoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

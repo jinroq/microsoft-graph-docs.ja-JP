@@ -2,28 +2,28 @@
 title: stringKeyAttributeMappingSourceValuePair リソースの種類
 description: キーが文字列であり、値は、attributeMappingSource は、キー/値ペアを表します。
 localization_priority: Normal
-ms.openlocfilehash: 24695cc64fd3c240d5416a7b37e9a5d373e5a88a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516218"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="4a957-103">stringKeyAttributeMappingSourceValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4a957-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="97601-103">stringKeyAttributeMappingSourceValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="97601-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
 
-> <span data-ttu-id="4a957-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4a957-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4a957-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4a957-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4a957-106">キーが文字列であり、値は、 [attributeMappingSource](synchronization-attributemappingsource.md)は、キー/値ペアを表します。</span><span class="sxs-lookup"><span data-stu-id="4a957-106">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="97601-104">キーが文字列であり、値は、 [attributeMappingSource](synchronization-attributemappingsource.md)は、キー/値ペアを表します。</span><span class="sxs-lookup"><span data-stu-id="97601-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4a957-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4a957-107">Properties</span></span>
-| <span data-ttu-id="4a957-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4a957-108">Property</span></span>     | <span data-ttu-id="4a957-109">種類</span><span class="sxs-lookup"><span data-stu-id="4a957-109">Type</span></span>   |<span data-ttu-id="4a957-110">説明</span><span class="sxs-lookup"><span data-stu-id="4a957-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="97601-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97601-105">Properties</span></span>
+| <span data-ttu-id="97601-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97601-106">Property</span></span>     | <span data-ttu-id="97601-107">型</span><span class="sxs-lookup"><span data-stu-id="97601-107">Type</span></span>   |<span data-ttu-id="97601-108">説明</span><span class="sxs-lookup"><span data-stu-id="97601-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4a957-111">Key</span><span class="sxs-lookup"><span data-stu-id="4a957-111">key</span></span>|<span data-ttu-id="4a957-112">String</span><span class="sxs-lookup"><span data-stu-id="4a957-112">String</span></span>|<span data-ttu-id="4a957-113">パラメーターの名前です。</span><span class="sxs-lookup"><span data-stu-id="4a957-113">The name of the parameter.</span></span>|
-|<span data-ttu-id="4a957-114">value</span><span class="sxs-lookup"><span data-stu-id="4a957-114">value</span></span>|[<span data-ttu-id="4a957-115">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="4a957-115">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="4a957-116">パラメーターの値です。</span><span class="sxs-lookup"><span data-stu-id="4a957-116">The value of the parameter.</span></span>|
+|<span data-ttu-id="97601-109">Key</span><span class="sxs-lookup"><span data-stu-id="97601-109">key</span></span>|<span data-ttu-id="97601-110">String</span><span class="sxs-lookup"><span data-stu-id="97601-110">String</span></span>|<span data-ttu-id="97601-111">パラメーターの名前です。</span><span class="sxs-lookup"><span data-stu-id="97601-111">The name of the parameter.</span></span>|
+|<span data-ttu-id="97601-112">value</span><span class="sxs-lookup"><span data-stu-id="97601-112">value</span></span>|[<span data-ttu-id="97601-113">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="97601-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="97601-114">パラメーターの値です。</span><span class="sxs-lookup"><span data-stu-id="97601-114">The value of the parameter.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4a957-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4a957-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="97601-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="97601-115">JSON representation</span></span>
 
-<span data-ttu-id="4a957-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4a957-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="97601-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="97601-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,15 @@ ms.locfileid: "27805090"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "stringKeyAttributeMappingSourceValuePair resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-stringkeyattributemappingsourcevaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

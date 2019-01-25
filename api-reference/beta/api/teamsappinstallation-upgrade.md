@@ -4,51 +4,51 @@ description: チームで、アプリケーションのインストールをア�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5dc40399f40715f30a16262e69d9374c7f5eabb8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 30398a21d1ba1d8d37932bf0933e454600f019b2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514678"
 ---
-# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="a8e0d-103">チームでアプリケーションをアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-103">Upgrade an app in a team</span></span>
+# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="35b6f-103">チームでアプリケーションをアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="35b6f-103">Upgrade an app in a team</span></span>
 
-> <span data-ttu-id="a8e0d-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a8e0d-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8e0d-106">[チーム](../resources/team.md)で[アプリケーションのインストール](../resources/teamsappinstallation.md)をアプリケーションの最新バージョンにアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-106">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
+<span data-ttu-id="35b6f-104">[チーム](../resources/team.md)で[アプリケーションのインストール](../resources/teamsappinstallation.md)をアプリケーションの最新バージョンにアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="35b6f-104">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8e0d-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a8e0d-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="35b6f-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="35b6f-105">Permissions</span></span>
 
-<span data-ttu-id="a8e0d-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="35b6f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35b6f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a8e0d-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a8e0d-110">Permission type</span></span>      | <span data-ttu-id="a8e0d-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a8e0d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="35b6f-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="35b6f-108">Permission type</span></span>      | <span data-ttu-id="35b6f-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="35b6f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a8e0d-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a8e0d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a8e0d-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8e0d-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a8e0d-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a8e0d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8e0d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-115">Not supported.</span></span>    |
-|<span data-ttu-id="a8e0d-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a8e0d-116">Application</span></span> | <span data-ttu-id="a8e0d-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-117">Not supported.</span></span> |
+|<span data-ttu-id="35b6f-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="35b6f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="35b6f-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35b6f-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="35b6f-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="35b6f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35b6f-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="35b6f-113">Not supported.</span></span>    |
+|<span data-ttu-id="35b6f-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="35b6f-114">Application</span></span> | <span data-ttu-id="35b6f-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="35b6f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8e0d-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a8e0d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35b6f-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="35b6f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a8e0d-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a8e0d-119">Request headers</span></span>
-| <span data-ttu-id="a8e0d-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a8e0d-120">Header</span></span>       | <span data-ttu-id="a8e0d-121">値</span><span class="sxs-lookup"><span data-stu-id="a8e0d-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="35b6f-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="35b6f-117">Request headers</span></span>
+| <span data-ttu-id="35b6f-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="35b6f-118">Header</span></span>       | <span data-ttu-id="35b6f-119">値</span><span class="sxs-lookup"><span data-stu-id="35b6f-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a8e0d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8e0d-122">Authorization</span></span>  | <span data-ttu-id="a8e0d-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="35b6f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="35b6f-120">Authorization</span></span>  | <span data-ttu-id="35b6f-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="35b6f-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a8e0d-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="a8e0d-125">Request body</span></span>
-<span data-ttu-id="a8e0d-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35b6f-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="35b6f-123">Request body</span></span>
+<span data-ttu-id="35b6f-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="35b6f-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a8e0d-127">応答</span><span class="sxs-lookup"><span data-stu-id="a8e0d-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="35b6f-125">応答</span><span class="sxs-lookup"><span data-stu-id="35b6f-125">Response</span></span>
 
-<span data-ttu-id="a8e0d-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="35b6f-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="35b6f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a8e0d-130">例</span><span class="sxs-lookup"><span data-stu-id="a8e0d-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="35b6f-128">例</span><span class="sxs-lookup"><span data-stu-id="35b6f-128">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a8e0d-131">要求</span><span class="sxs-lookup"><span data-stu-id="a8e0d-131">Request</span></span>
-<span data-ttu-id="a8e0d-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-132">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="35b6f-129">要求</span><span class="sxs-lookup"><span data-stu-id="35b6f-129">Request</span></span>
+<span data-ttu-id="35b6f-130">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="35b6f-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -57,10 +57,10 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a><span data-ttu-id="a8e0d-133">応答</span><span class="sxs-lookup"><span data-stu-id="a8e0d-133">Response</span></span>
-<span data-ttu-id="a8e0d-134">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-134">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="35b6f-131">応答</span><span class="sxs-lookup"><span data-stu-id="35b6f-131">Response</span></span>
+<span data-ttu-id="35b6f-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="35b6f-132">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="a8e0d-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a8e0d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="35b6f-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="35b6f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -72,10 +72,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsappinstallation-upgrade.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

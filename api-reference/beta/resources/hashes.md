@@ -4,24 +4,24 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Hashes
 localization_priority: Normal
-ms.openlocfilehash: ff147b45bcdc200e3da5d4a8761d8248fa887271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 551b09cee9fa662d357ee763b67ce78bea03425f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853411"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514846"
 ---
-# <a name="hashes-resource-type"></a><span data-ttu-id="d85f0-102">Hashes リソース型</span><span class="sxs-lookup"><span data-stu-id="d85f0-102">Hashes resource type</span></span>
+# <a name="hashes-resource-type"></a><span data-ttu-id="bd963-102">Hashes リソース型</span><span class="sxs-lookup"><span data-stu-id="bd963-102">Hashes resource type</span></span>
 
-> <span data-ttu-id="d85f0-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d85f0-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d85f0-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d85f0-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d85f0-105"> *\*ハッシュ** リソースは、利用可能なハッシュをアイテムの 1 つの構造にグループ化します。</span><span class="sxs-lookup"><span data-stu-id="d85f0-105">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
+<span data-ttu-id="bd963-103"> *\*ハッシュ** リソースは、利用可能なハッシュをアイテムの 1 つの構造にグループ化します。</span><span class="sxs-lookup"><span data-stu-id="bd963-103">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
 
-<span data-ttu-id="d85f0-106">**注:** すべてのサービスで、表示されているすべてのハッシュ プロパティに対して値が指定されているわけではありません。</span><span class="sxs-lookup"><span data-stu-id="d85f0-106">**Note:** Not all services provide a value for all hash properties listed.</span></span>
+<span data-ttu-id="bd963-104">**注:** すべてのサービスで、表示されているすべてのハッシュ プロパティに対して値が指定されているわけではありません。</span><span class="sxs-lookup"><span data-stu-id="bd963-104">**Note:** Not all services provide a value for all hash properties listed.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d85f0-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d85f0-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bd963-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bd963-105">JSON representation</span></span>
 
-<span data-ttu-id="d85f0-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d85f0-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bd963-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="bd963-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,31 +37,36 @@ ms.locfileid: "27853411"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d85f0-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d85f0-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bd963-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd963-107">Properties</span></span>
 
-| <span data-ttu-id="d85f0-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d85f0-110">Property</span></span>         | <span data-ttu-id="d85f0-111">種類</span><span class="sxs-lookup"><span data-stu-id="d85f0-111">Type</span></span>   | <span data-ttu-id="d85f0-112">説明</span><span class="sxs-lookup"><span data-stu-id="d85f0-112">Description</span></span>                                                       |
+| <span data-ttu-id="bd963-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd963-108">Property</span></span>         | <span data-ttu-id="bd963-109">型</span><span class="sxs-lookup"><span data-stu-id="bd963-109">Type</span></span>   | <span data-ttu-id="bd963-110">説明</span><span class="sxs-lookup"><span data-stu-id="bd963-110">Description</span></span>                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| <span data-ttu-id="d85f0-113">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="d85f0-113">**sha1Hash**</span></span>     | <span data-ttu-id="d85f0-114">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-114">String</span></span> | <span data-ttu-id="d85f0-p102">ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="d85f0-p102">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
-| <span data-ttu-id="d85f0-117">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="d85f0-117">**crc32Hash**</span></span>    | <span data-ttu-id="d85f0-118">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-118">String</span></span> | <span data-ttu-id="d85f0-p103">ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="d85f0-p103">The CRC32 value of the file (if available). Read-only.</span></span>            |
-| <span data-ttu-id="d85f0-121">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="d85f0-121">**quickXorHash**</span></span> | <span data-ttu-id="d85f0-122">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-122">String</span></span> | <span data-ttu-id="d85f0-p104">ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="d85f0-p104">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
+| <span data-ttu-id="bd963-111">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="bd963-111">**sha1Hash**</span></span>     | <span data-ttu-id="bd963-112">String</span><span class="sxs-lookup"><span data-stu-id="bd963-112">String</span></span> | <span data-ttu-id="bd963-p101">ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="bd963-p101">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
+| <span data-ttu-id="bd963-115">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="bd963-115">**crc32Hash**</span></span>    | <span data-ttu-id="bd963-116">String</span><span class="sxs-lookup"><span data-stu-id="bd963-116">String</span></span> | <span data-ttu-id="bd963-p102">ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="bd963-p102">The CRC32 value of the file (if available). Read-only.</span></span>            |
+| <span data-ttu-id="bd963-119">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="bd963-119">**quickXorHash**</span></span> | <span data-ttu-id="bd963-120">String</span><span class="sxs-lookup"><span data-stu-id="bd963-120">String</span></span> | <span data-ttu-id="bd963-p103">ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="bd963-p103">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
 
-<span data-ttu-id="d85f0-p105">**注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。</span><span class="sxs-lookup"><span data-stu-id="d85f0-p105">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
+<span data-ttu-id="bd963-p104">**注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。</span><span class="sxs-lookup"><span data-stu-id="bd963-p104">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d85f0-127">注釈</span><span class="sxs-lookup"><span data-stu-id="d85f0-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd963-125">備考</span><span class="sxs-lookup"><span data-stu-id="bd963-125">Remarks</span></span>
 
-<span data-ttu-id="d85f0-128">OneDrive for Business および SharePoint Server 2016 では、**sha1Hash** と **crc32Hash** は利用できません。</span><span class="sxs-lookup"><span data-stu-id="d85f0-128">In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.</span></span>
+<span data-ttu-id="bd963-126">OneDrive for Business および SharePoint Server 2016 では、**sha1Hash** と **crc32Hash** は利用できません。</span><span class="sxs-lookup"><span data-stu-id="bd963-126">In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.</span></span>
 
-<span data-ttu-id="d85f0-129">OneDrive 個人用では、**quickXorHash** は利用できません。</span><span class="sxs-lookup"><span data-stu-id="d85f0-129">In OneDrive Personal, **quickXorHash** is not available.</span></span>
+<span data-ttu-id="bd963-127">OneDrive 個人用では、**quickXorHash** は利用できません。</span><span class="sxs-lookup"><span data-stu-id="bd963-127">In OneDrive Personal, **quickXorHash** is not available.</span></span>
 
-<span data-ttu-id="d85f0-130">ファイルに対する **quickXorHash** を計算する場合は、[QuickXorHash スニペット](https://dev.onedrive.com/snippets/quickxorhash.htm)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d85f0-130">To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).</span></span>
+<span data-ttu-id="bd963-128">ファイルに対する **quickXorHash** を計算する場合は、[QuickXorHash スニペット](https://dev.onedrive.com/snippets/quickxorhash.htm)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd963-128">To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).</span></span>
 
-<span data-ttu-id="d85f0-131">DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d85f0-131">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="bd963-129">DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd963-129">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The hashes facet provides hash identifiers for a file in OneDrive",
   "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Hashes"
-} -->
+  "tocPath": "Facets/Hashes",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/hashes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

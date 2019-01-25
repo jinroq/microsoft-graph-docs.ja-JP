@@ -4,52 +4,52 @@ description: '**plannerbucket** オブジェクトのリストを取得します
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: c0648d659dbb33c3e7d51b38999648637721ca7b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c5da6e715ae49539a31078e1e9ece9c85e1d861
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514293"
 ---
-# <a name="list-buckets"></a><span data-ttu-id="06d27-103">List buckets</span><span class="sxs-lookup"><span data-stu-id="06d27-103">List buckets</span></span>
+# <a name="list-buckets"></a><span data-ttu-id="d9d55-103">List buckets</span><span class="sxs-lookup"><span data-stu-id="d9d55-103">List buckets</span></span>
 
-> <span data-ttu-id="06d27-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="06d27-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="06d27-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="06d27-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="06d27-106">**plannerbucket** オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="06d27-106">Retrieve a list of **plannerbucket** objects.</span></span>
+<span data-ttu-id="d9d55-104">**plannerbucket** オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="d9d55-104">Retrieve a list of **plannerbucket** objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="06d27-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="06d27-107">Permissions</span></span>
-<span data-ttu-id="06d27-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06d27-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d9d55-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d9d55-105">Permissions</span></span>
+<span data-ttu-id="d9d55-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9d55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06d27-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="06d27-110">Permission type</span></span>      | <span data-ttu-id="06d27-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="06d27-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d9d55-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d9d55-108">Permission type</span></span>      | <span data-ttu-id="d9d55-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d9d55-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="06d27-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="06d27-112">Delegated (work or school account)</span></span> | <span data-ttu-id="06d27-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d27-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="06d27-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="06d27-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06d27-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="06d27-115">Not supported.</span></span>    |
-|<span data-ttu-id="06d27-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="06d27-116">Application</span></span> | <span data-ttu-id="06d27-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="06d27-117">Not supported.</span></span> |
+|<span data-ttu-id="d9d55-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d9d55-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d9d55-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9d55-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d9d55-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d9d55-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9d55-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d9d55-113">Not supported.</span></span>    |
+|<span data-ttu-id="d9d55-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d9d55-114">Application</span></span> | <span data-ttu-id="d9d55-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d9d55-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="06d27-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="06d27-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9d55-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d9d55-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/buckets
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="06d27-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="06d27-119">Optional query parameters</span></span>
-<span data-ttu-id="06d27-120">このメソッドでは planId [フィルター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06d27-120">This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d9d55-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="d9d55-117">Optional query parameters</span></span>
+<span data-ttu-id="d9d55-118">このメソッドでは planId [フィルター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9d55-118">This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="06d27-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="06d27-121">Request headers</span></span>
-| <span data-ttu-id="06d27-122">名前</span><span class="sxs-lookup"><span data-stu-id="06d27-122">Name</span></span>      |<span data-ttu-id="06d27-123">説明</span><span class="sxs-lookup"><span data-stu-id="06d27-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d9d55-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d9d55-119">Request headers</span></span>
+| <span data-ttu-id="d9d55-120">名前</span><span class="sxs-lookup"><span data-stu-id="d9d55-120">Name</span></span>      |<span data-ttu-id="d9d55-121">説明</span><span class="sxs-lookup"><span data-stu-id="d9d55-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="06d27-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="06d27-124">Authorization</span></span>  | <span data-ttu-id="06d27-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="06d27-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d9d55-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9d55-122">Authorization</span></span>  | <span data-ttu-id="d9d55-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d9d55-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="06d27-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="06d27-127">Request body</span></span>
-<span data-ttu-id="06d27-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="06d27-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d9d55-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="d9d55-125">Request body</span></span>
+<span data-ttu-id="d9d55-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d9d55-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="06d27-129">応答</span><span class="sxs-lookup"><span data-stu-id="06d27-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d9d55-127">応答</span><span class="sxs-lookup"><span data-stu-id="d9d55-127">Response</span></span>
 
-<span data-ttu-id="06d27-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerBucket](../resources/plannerbucket.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="06d27-130">If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.</span></span>
+<span data-ttu-id="d9d55-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerBucket](../resources/plannerbucket.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="d9d55-128">If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.</span></span>
 
-<span data-ttu-id="06d27-p104">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06d27-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
-## <a name="example"></a><span data-ttu-id="06d27-134">例</span><span class="sxs-lookup"><span data-stu-id="06d27-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="06d27-135">要求</span><span class="sxs-lookup"><span data-stu-id="06d27-135">Request</span></span>
-<span data-ttu-id="06d27-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="06d27-136">Here is an example of the request.</span></span>
+<span data-ttu-id="d9d55-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9d55-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+## <a name="example"></a><span data-ttu-id="d9d55-132">例</span><span class="sxs-lookup"><span data-stu-id="d9d55-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d9d55-133">要求</span><span class="sxs-lookup"><span data-stu-id="d9d55-133">Request</span></span>
+<span data-ttu-id="d9d55-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d9d55-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_buckets"
@@ -57,8 +57,8 @@ GET /planner/buckets
 ```http
 GET https://graph.microsoft.com/beta/planner/buckets
 ```
-##### <a name="response"></a><span data-ttu-id="06d27-137">応答</span><span class="sxs-lookup"><span data-stu-id="06d27-137">Response</span></span>
-<span data-ttu-id="06d27-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="06d27-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d9d55-135">応答</span><span class="sxs-lookup"><span data-stu-id="d9d55-135">Response</span></span>
+<span data-ttu-id="d9d55-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d9d55-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,10 +85,15 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List buckets",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/planner-list-buckets.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
