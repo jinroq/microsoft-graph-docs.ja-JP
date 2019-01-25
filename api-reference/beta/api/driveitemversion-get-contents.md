@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: 以前のバージョンをダウンロードします。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0d8125f86459caa0fd9fd863a1a4f280e0ad89e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980112"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528019"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>DriveItemVersion リソースのコンテンツをダウンロードする (プレビュー)
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[driveItem](../resources/driveitem.md)の特定のバージョンの内容を取得します。 
+[DriveItem](../resources/driveitem.md) の特定のバージョンのコンテンツを取得します。 
 
 >**注:** 現在のバージョンのコンテンツを取得することはサポートされていません。 [DriveItem コンテンツのエンドポイント](driveitem-get-content.md)を使用できます。
 
@@ -81,10 +81,15 @@ OneDrive は、ファイルの旧バージョンの完全なメタデータを�
 
 アプリは、ファイルの利用可能なバージョンの一覧を取得、特定のバージョンに関する情報を提供する[driveItemVersion](../resources/driveitemversion.md)リソースが返されます。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

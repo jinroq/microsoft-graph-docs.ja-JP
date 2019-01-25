@@ -2,16 +2,16 @@
 title: businessFlowTemplate リソースの種類
 description: Azure AD にアクセス確認機能を`businesFlowTemplate`、Azure AD 業務フローのテンプレートを表します。 グループのゲスト メンバーを確認する場合など、テンプレートの識別子は、呼び出し元によって、アクセス確認を作成するときに提供されます。
 localization_priority: Normal
-ms.openlocfilehash: cad361d6c2d2aba70b2623ddf272e1eba42fd93b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 567a7f499e2fb493f3ca519e312e69fb43fe3b79
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889027"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529580"
 ---
 # <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `businesFlowTemplate` 、Azure AD 業務フローのテンプレートを表します。 グループのゲスト メンバーを確認する場合など、テンプレートの識別子は、呼び出し元によって、アクセス確認を作成するときに提供されます。
 
@@ -25,7 +25,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `businesFlowT
 |[リスト businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md)コレクション| レビューにアクセスする適切なビジネス フローのテンプレートを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 業務フローのテンプレートの機能に割り当てられた識別子                                      |
 | `displayName`            |`String`                | 業務フローのテンプレートの名前                                                             |
@@ -62,10 +62,15 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `businesFlowT
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "businessFlowTemplate resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/businessflowtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

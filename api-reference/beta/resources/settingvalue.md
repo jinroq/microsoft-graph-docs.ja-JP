@@ -2,25 +2,25 @@
 title: settingValue リソースの種類
 description: 名前と値の組で表される設定。
 localization_priority: Normal
-ms.openlocfilehash: 0ddd6388e14ea3deff99e927541694a97c594195
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aa30fd61c1498be08be4d87175d18015c58323ba
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815527"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527739"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 名前と値の組で表される設定。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|設定で定義された、directorySettingTemplate) の名前です。|
-|value|文字列|設定の値です。|
+|name|string|設定で定義された、directorySettingTemplate) の名前です。|
+|value|string|設定の値です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -44,10 +44,15 @@ ms.locfileid: "27815527"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "settingValue resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/settingvalue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

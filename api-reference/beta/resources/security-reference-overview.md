@@ -4,16 +4,16 @@ description: セキュリティ上の脅威の巧妙化は、世界経済に影�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980287"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529930"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft グラフ API を使用して、セキュリティ脅威の検出と保護 (プレビュー)
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 セキュリティ上の脅威の巧妙化は、世界経済に影響を与えず、エスカレートし続けます。 企業があっても認識する前に長い間、破損がよく行われます。 ビルドまたはビルドの統合、複数のソースからのセキュリティの警告を関連付けると、ユーザーの識別情報を侵害する、通知、調査、および自動化するコンテキストのデータのロックを解除しようとする脅威を検出するセキュリティ ・ ソリューションを拡張する Microsoft Graph を使用することができます。セキュリティ ・ オペレーションによって効率が向上します。
 
@@ -25,5 +25,13 @@ ms.locfileid: "27980287"
 
 - [セキュリティ API を使用する理由](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [セキュリティ API を使用して、インテリジェントなセキュリティの統合](security-api-overview.md)
-- [組織内の ID を保護するために Azure AD を使用する理由](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
+- 組織内の ID を保護するために Azure AD を使用する理由
 - [Azure AD Identity Protection API を使用する](identityprotection-root.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

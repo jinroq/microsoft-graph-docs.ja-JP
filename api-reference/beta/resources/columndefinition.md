@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844493"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528936"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -59,16 +59,16 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 次のプロパティは、列に保持されるデータの種類と、そのデータに関する追加の設定を示します。
 タイプに関連するプロパティ (ブール値、計算された、選択、通貨、日時、検索、番号、personOrGroup、テキスト) は相互に排他的な--列のみが指定されているそれらの 1 つです。
 
-| プロパティ名           | Type    | 説明
+| プロパティ名           | 型    | 説明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | 文字列  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
-| **description**         | 文字列  | 列に関するユーザー向けの説明。
-| **displayName**         | 文字列  | 列を示すユーザー向けの名前。
+| **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
+| **description**         | string  | 列に関するユーザー向けの説明。
+| **displayName**         | string  | 列を示すユーザー向けの名前。
 | **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
 | **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
 | **id**                  | string  | 列の一意識別子。
 | **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
-| **name**                | 文字列  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
+| **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
 | **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
 | **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
 | **boolean**       | [booleanColumn][]       | この列にはブール値が格納されます。
@@ -77,13 +77,13 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 | **currency**      | [currencyColumn][]      | この列には通貨値が格納されます。
 | **dateTime**      | [dateTimeColumn][]      | この列には日時の値が格納されます。
 | **defaultValue**  | [defaultColumnValue][]  | この列の既定値です。
-| **地理位置情報**   | [geolocationColumn][]   | この列は、地理位置情報を格納します。
+| 位置情報   | [geolocationColumn][]   | この列は、地理位置情報を格納します。
 | **lookup**        | [lookupColumn][]        | この列のデータは、サイト内の別のソースから検索されます。
 | **number**        | [numberColumn][]        | この列には数値が格納されます。
 | **personOrGroup** | [personOrGroupColumn][] | この列にはユーザーまたはグループの値が格納されます。
 | **text**          | [textColumn][]          | この列にはテキスト値が格納されます。
 
->**注:** これらのプロパティは、SharePoint の[SPFieldType][]の列挙体に対応しています。
+>注: これらのプロパティは SharePoint の **SPFieldType** 列挙体に対応しています。
 最も一般的なフィールドの種類は上記の表に表示されるときにこのベータ版の API がまだないです。
 そのような場合、どの列タイプ ファセットも入力されず、基本的なプロパティだけが列に含まれます。
 
@@ -110,10 +110,15 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

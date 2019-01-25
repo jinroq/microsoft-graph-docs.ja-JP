@@ -4,16 +4,16 @@ description: グラフに凡例を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c76fd21700616ec6c353644de93bddd0a47ac7dd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528187"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 グラフに凡例を表します。
 
@@ -22,15 +22,15 @@ ms.locfileid: "27980882"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
+|Get ChartLegend | [ChartLegend](chartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |ChartLegend オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
+|overlay|boolean|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
 |position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
-|visible|ブール値|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
+|visible|boolean|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
@@ -60,10 +60,15 @@ ms.locfileid: "27980882"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartLegend resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartlegend.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

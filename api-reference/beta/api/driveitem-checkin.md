@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: ファイルをチェックインします。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fb62dc05c60e26a6d1d6683913eeec0403d1c41c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ccb4a6dee07cd324a89a7f192b0fe1bb5aaa2e53
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529888"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>DriveItem リソースへの変更をチェックインする
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 チェックアウトされた DriveItem リソースをチェックインします。これにより、他のユーザーがドキュメントのバージョンを利用できるようになります。
 
@@ -47,8 +47,8 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 |   名前    | 値  |                                                説明                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | 文字列 | 省略可能。 チェックイン操作が完了した後のドキュメントの適切なステータス。 `published` または未設定となります。 |
-| comment   | 文字列 | バージョンに関連付けられているチェックイン コメント。                                                   |
+| checkInAs | string | 省略可能。 チェックイン操作が完了した後のドキュメントの適切なステータス。 `published` または未設定となります。 |
+| comment   | string | バージョンに関連付けられているチェックイン コメント。                                                   |
 
 ## <a name="example"></a>例
 
@@ -80,10 +80,15 @@ HTTP/1.1 204 No content
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
-} -->
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

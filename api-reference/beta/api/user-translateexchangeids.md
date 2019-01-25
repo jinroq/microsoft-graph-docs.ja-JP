@@ -4,16 +4,16 @@ description: 形式との間、Outlook に関連するリソースの識別子�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d613a6c27df1b53c5a41462276f67cc1991a3c88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528229"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 形式との間、Outlook に関連するリソースの識別子を変換します。
 
@@ -54,16 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 値 | 説明 |
 |:-------|:------------|
-| エントリ Id | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
-| ewsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
+| EntryID | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
+| EwsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
 | immutableEntryId | バイナリ MAPI と互換性のある変更不可能な ID 形式です。 |
 | restId | Microsoft Graph で使用される既定の ID 形式です。 |
 | restImmutableEntryId | Microsoft Graph で使用される ID の変更不可能な形式です。 |
 
 バイナリ フォーマット (`entryId`と`immutableEntryId`) は、base64 でエンコードされた URL セーフであります。 URL safeness は、base64 エンコードのバイナリ データの次のように変更することによって実装されます。
 
-- 交換`+`で`-`
-- 交換`/`で`_`
+- `+`
+- `/`
 - 末尾の埋め込み文字を削除する (`=`)
 - 示す数のスペース文字は元の文字列の末尾に整数値を追加する (`0`、 `1`、または`2`)
 
@@ -124,3 +124,11 @@ Content-type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,20 +1,20 @@
 ---
 title: Bookingbusiness を更新します。
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: BookingBusiness オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dba24dafef030ae53fc83fb06d1cc7b99ed71e81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991337"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528803"
 ---
 # <a name="update-bookingbusiness"></a>Bookingbusiness を更新します。
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [BookingBusiness](../resources/bookingbusiness.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "27991337"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
-|アプリケーション | サポートされていません。  | 
+|アプリケーション | サポートされていません。  |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /bookingBusinesses/<id>
 |email|String|ビジネスの電子メール アドレスです。|
 |phone|String|ビジネスの電話番号です。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|このビジネスでの予約を作成する方法を指定します。|
-|webSiteUrl|String|ビジネスの web サイトの URL です。|
+|websiteUrl|String|ビジネスの web サイトの URL です。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
@@ -86,10 +86,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingbusiness",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: Azure AD 同期 API の概要
 description: )、作成を自動化することにより、保守、および id の削除クラウド (ソフトウェア、サービス、または saas のどちらとして) アプリケーションをドロップ ボックス、セールス、ServiceNow などです。 使用できます同期 Api Graph でプログラムを使用して、id の同期を管理するのになど。
 localization_priority: Normal
-ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884687"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529559"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同期 API の概要
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 (「プロビジョニング」とも呼ばれます)、azure Active Directory (AD の Azure) id の同期を使用すると、作成、保守、およびクラウド (SaaS サービスとしてのソフトウェア) の id の削除を自動化するアプリケーションをドロップ ボックス セールス ServiceNow、など。 使用できます同期 Api Graph でプログラムを使用して、id の同期を管理するのになど。
 
@@ -62,7 +62,7 @@ Azure AD 同期 API では、OAuth 2.0 を使用して、承認のため。 API 
 
 次の例では、表示名でサービスのプリンシパル オブジェクトを検索する方法を示します。
 
-**要求** 
+要求 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -94,14 +94,12 @@ HTTP/1.1 200 OK
 
 次の使用例は、アプリケーション id サービスのプリンシパル オブジェクトを検索する方法を示しています。
 
-**要求** 
-<!-- { "blockType": "ignored" } -->
+要求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**応答**
-<!-- { "blockType": "ignored" } -->
+応答
 ```http
 HTTP/1.1 200 OK
 {
@@ -119,15 +117,13 @@ HTTP/1.1 200 OK
 
 次の使用例は、既存の同期ジョブを一覧表示する方法を示しています。
 
-**要求**
-<!-- { "blockType": "ignored" } -->
+要求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**応答**
-<!-- { "blockType": "ignored" } -->
+応答
 ```http
 HTTP/1.1 200 OK
 {
@@ -149,16 +145,14 @@ HTTP/1.1 200 OK
 ### <a name="get-synchronization-job-status"></a>同期ジョブのステータスを取得します。
 次の例では、同期ジョブのステータスを取得する方法を示します。
 
-**要求**
-<!-- { "blockType": "ignored" } -->
+要求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**応答**
-<!-- { "blockType": "ignored" } -->
+応答
 ```http
     HTTP/1.1 200 OK
     {
@@ -176,14 +170,12 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ### <a name="get-synchronization-schema"></a>同期スキーマを取得します
 次の例では、同期スキーマを取得する方法を示します。
 
-**要求**
-<!-- { "blockType": "ignored" } -->
+要求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**応答**
-<!-- { "blockType": "ignored" } -->
+応答
 ```http
 HTTP/1.1 200 OK
 {
@@ -198,3 +190,11 @@ HTTP/1.1 200 OK
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

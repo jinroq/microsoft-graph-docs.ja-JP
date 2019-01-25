@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-ms.openlocfilehash: 3b7554c97eead38d13112e20eefeb411221d7716
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: afafb69e9d887d2cb8d9537dd7ef9d3a712f3333
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831403"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528551"
 ---
 # <a name="system-facet"></a>System ファセット
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **System** ファセットは、オブジェクトが自身の操作のためにシステムによって管理されていることを示します。
 アプリの多くは System ファセットを持つアイテムを無視すべきです。
@@ -33,8 +33,13 @@ ms.locfileid: "27831403"
 
 なし。 このファセットは null 値または null 以外の値になり、プロパティは含まれていません。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/System"
-} -->
+  "tocPath": "Facets/System",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/systemfacet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

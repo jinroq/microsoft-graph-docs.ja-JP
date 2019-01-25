@@ -1,19 +1,19 @@
 ---
 title: bookingBusiness リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: cf00239802cec9a705c24548649e38f3022383a0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986216"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528922"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness リソースの種類
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Microsoft 予約でビジネスを表します。 これは、Microsoft 予約 API 内の最上位オブジェクトです。 ビジネス情報や予定、顧客、サービス、スタッフなどの関連するビジネス オブジェクトが含まれています。
 
@@ -35,11 +35,11 @@ Microsoft 予約でビジネスを表します。 これは、Microsoft 予約 A
 |[BookingStaffMember を作成します。](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| StaffMembers コレクションへの投稿には、新しい bookingStaffMember を作成します。|
 |[リスト staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)コレクション| BookingStaffMember オブジェクトのコレクションを取得します。|
 |[calendarView を一覧表示する](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md)コレクション|指定した日付範囲内に発生する**bookingAppointment**オブジェクトのコレクションを取得します。|
-|[発行](../api/bookingbusiness-publish.md)|なし|このビジネスのスケジュール ページを外部の顧客が使用できるようにします。 True の場合、およびスケジュールのページの URL を**publicUrl**プロパティに**isPublished**プロパティを設定します。|
-|[公開取り下げ](../api/bookingbusiness-unpublish.md)|なし| 外部の顧客に、利用できないこのビジネスでのスケジュールのページを加えます。 **IsPublished**プロパティを false、および**publicUrl**プロパティを null に設定します。|
+|[Publish](../api/bookingbusiness-publish.md)|なし|このビジネスのスケジュール ページを外部の顧客が使用できるようにします。 True の場合、およびスケジュールのページの URL を**publicUrl**プロパティに**isPublished**プロパティを設定します。|
+|[Unpublish](../api/bookingbusiness-unpublish.md)|なし| 外部の顧客に、利用できないこのビジネスでのスケジュールのページを加えます。 **IsPublished**プロパティを false、および**publicUrl**プロパティを null に設定します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|ビジネスの住所。 **電話**と**webSiteUrl**と、**アドレス**のプロパティは、ビジネスのスケジュール ページのフッターに表示されます。|
 |businessHours|[bookingWorkHours](bookingworkhours.md)コレクション|ビジネスの操作の時間です。|
@@ -47,12 +47,12 @@ Microsoft 予約でビジネスを表します。 これは、Microsoft 予約 A
 |defaultCurrencyIso|String|ビジネスが Microsoft 予約上で動作する通貨コード。|
 |displayName|String|ビジネスでは、お客様とのインターフェイスの名前。 ページをスケジューリングするビジネスの先頭にこの名前が表示されます。|
 |email|String|ビジネスの電子メール アドレスです。|
-|id|String|ビジネス用の一意なプログラム識別子です。 読み取り専用です。|
-|isPublished|ブール型|スケジュール ページが可能となって外部の顧客にします。 このプロパティを設定するのにには、**公開**し、**非公開**のアクションを使用します。 読み取り専用です。|
+|id|文字列|ビジネス用の一意なプログラム識別子です。 読み取り専用です。|
+|IsPublished|ブール値|スケジュール ページが可能となって外部の顧客にします。 このプロパティを設定するのにには、**公開**し、**非公開**のアクションを使用します。 読み取り専用です。|
 |phone|String|ビジネスの電話番号です。 **電話**は、**アドレス**と**webSiteUrl**とは、ビジネスのスケジュール ページのフッターに表示されます。|
 |publicUrl|String|ページ[を公開](../api/bookingbusiness-publish.md)するか[非公開](../api/bookingbusiness-unpublish.md)に設定されているスケジュールのページの URL です。 読み取り専用です。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|このビジネスでの予約を作成する方法を指定します。|
-|webSiteUrl|String|ビジネスの web サイトの URL です。 **アドレス**、**電話**、および、 **webSiteUrl**プロパティは、ビジネスのスケジュール] ページのフッターに表示されます。|
+|websiteUrl|String|ビジネスの web サイトの URL です。 **アドレス**、**電話**、および、 **webSiteUrl**プロパティは、ビジネスのスケジュール] ページのフッターに表示されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -98,10 +98,15 @@ Microsoft 予約でビジネスを表します。 これは、Microsoft 予約 A
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingBusiness resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingbusiness.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

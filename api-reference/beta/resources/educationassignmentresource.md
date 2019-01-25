@@ -4,16 +4,16 @@ description: 割り当てに関連付けられているリソースを格納す�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: eb0879737d0375bf2463268fe29f2c98f2b6ed51
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991350"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529230"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 割り当てに関連付けられているリソースを格納するラッパー オブジェクトを返します。 ラッパーは、 **distributeForStudentWork**プロパティを追加し、このリソースを受講者の提出書類にコピーされることを示します。  オブジェクトはコピーされませんが、各受講者は、割り当てのリソースへのリンクが表示されます。 受講者はこのリソースを更新できません。 これは、受講者に次ことが何もに、先生からの配布資料です。 リソースが分散している場合は、各受講者がリソースの一覧で、データを送信このリソースのコピーが表示されます。 各受講者はそのコピーを変更し、グレーディングのために送信することになります。
 
@@ -29,9 +29,9 @@ ms.locfileid: "27991350"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|受講生受講者の変更、および送信のため送信するたびにこのリソースをコピーするかどうかを示します。|
+|distributeForStudentWork|ブール値|受講生受講者の変更、および送信のため送信するたびにこのリソースをコピーするかどうかを示します。|
 |id|String| このリソースの ID です。 読み取り専用です。|
-|resource|[educationResource](educationresource.md)|リソースがこの割り当てに関連付けられているオブジェクト。|
+|リソース|[educationResource](educationresource.md)|リソースがこの割り当てに関連付けられているオブジェクト。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし。
@@ -60,10 +60,15 @@ ms.locfileid: "27991350"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignmentResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignmentresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

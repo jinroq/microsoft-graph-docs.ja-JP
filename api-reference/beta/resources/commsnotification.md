@@ -4,24 +4,24 @@ description: 通信通知の変更を通知するためにサーバーによっ�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e5b929997cf17d13043264d42421418321aae84e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977697"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529517"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通信通知の変更を通知するためにサーバーによって提供される基本タイプです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 種類    | 説明                                                |
+| プロパティ       | 型    | 説明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | 可能な値は、`created`、`updated`、`deleted` です。      |
-| resource       | String  | 変更されたリソースの URI。                      |
+| リソース       | String  | 変更されたリソースの URI。                      |
 
 > **注:**`resourceData`は、追加のデータとして使用します。 エンティティまたは通知のパッケージ化された変更の数によって Collection(entity) をお勧めします。
 
@@ -93,10 +93,15 @@ ms.locfileid: "27977697"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/commsnotification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

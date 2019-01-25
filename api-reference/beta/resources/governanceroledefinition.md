@@ -2,16 +2,16 @@
 title: governanceRoleDefinition リソースの種類
 description: 役割の定義を表します。 Azure のリソースの所有者、閲覧者、投稿者など、Azure の RBAC の役割を表すことができます。
 localization_priority: Normal
-ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528642"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 役割の定義を表します。 Azure のリソースの所有者、閲覧者、投稿者など、Azure の RBAC の役割を表すことができます。
@@ -25,9 +25,9 @@ ms.locfileid: "27842451"
 |[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Id で指定されたロールの定義のエンティティのプロパティと関係を参照してください。|
 No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされています`roleDefinitions`ここではエンティティのセットです。
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 種類      |説明|
+| プロパティ  | 型      |説明|
 |:----|:----------|:----------|:----------|
-|ID         |String     |役割の定義の id です。 |
+|id         |文字列     |役割の定義の id です。 |
 |resourceId |String     |必須。 役割の定義に関連付けられているリソースの id です。 |
 |externalId   |String     |役割の定義の外部の id です。|
 |displayName|String     |役割の定義の表示名。|
@@ -66,10 +66,15 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされています`roleDe
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleDefinition",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

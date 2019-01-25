@@ -4,16 +4,16 @@ description: 連絡先オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 364a927c37673181bb499689909db113c2e5476e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941178"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528208"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 連絡先オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |assistantName|String|連絡先のアシスタントの名前。|
 |birthday|DateTimeOffset|連絡先の誕生日です。|
@@ -58,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String||
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|String|連絡先の表示名。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、更新操作の表示名としてです。|
+|displayName|文字列型 (String)|連絡先の表示名。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、更新操作の表示名としてです。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)コレクション|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |gender |String |連絡先の性別。 |
@@ -74,13 +74,13 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |parentFolderId|String|連絡先の親フォルダーの ID。|
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |phones |[phone](../resources/phone.md) コレクション |自宅電話、携帯電話、勤務先電話など、連絡先に関連付けられた電話番号。 |
-|postalAddresses |[physicalAddress](../resources/physicaladdress.md)コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
+|postalAddresses |[PhysicalAddress](../resources/physicaladdress.md) コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|姓|String|連絡先の姓。|
+|姓|文字列|連絡先の姓。|
 |タイトル|String|連絡先の肩書。|
 |websites |[website](../resources/website.md) コレクション|連絡先に関連付けられた Web サイト。 |
-|weddingAnniversary |日付 |連絡先の結婚記念日。 |
+|WeddingAnniversary |日付 |連絡先の結婚記念日。 |
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
 |yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
@@ -211,10 +211,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 更新プログラム
 description: Azure AD のレビュー機能にアクセス、既存のプログラム オブジェクトを更新します。
 localization_priority: Normal
-ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 75562aac5a7b3f3aaef0c8a1251d32a7728813aa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529923"
 ---
 # <a name="update-program"></a>更新プログラム
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、既存の[プログラム](../resources/program.md)オブジェクトを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -29,16 +29,16 @@ ms.locfileid: "27840335"
 PATCH /programs('{programId}')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、[プログラム](../resources/program.md)オブジェクトの JSON 表現を指定します。
 
 プログラムを更新するときに指定できるプロパティを次の表に示します。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  プログラムの名前です。                   |
 | `description`               |`String`                              |  プログラムの説明です。           |
@@ -89,10 +89,15 @@ Content-type: application/json
 |[プログラムのリスト programControls](program-listcontrols.md) |     [デバッギング](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
 |[デバッギングを作成します。](programcontrol-create.md) |        [デバッギング](../resources/programcontrol.md)    |   デバッギングをプログラムに追加します。|
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

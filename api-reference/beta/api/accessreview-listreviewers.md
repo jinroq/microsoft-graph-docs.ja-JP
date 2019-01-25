@@ -4,16 +4,16 @@ description: Azure AD にアクセスが機能を確認、校閲者の accessRev
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d2227ed6343900780df57aeece2fe511f07da04f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529279"
 ---
 # <a name="list-accessreview-reviewers"></a>AccessReview の校閲者の一覧
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、校閲者の[accessReview](../resources/accessreview.md)オブジェクトを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -33,7 +33,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本体を提供する必要がありません。
@@ -82,10 +82,15 @@ Content-type: application/json
 |[AccessReview のレビュー担当者を削除します。](accessreview-removereviewer.md) | なし。 |   AccessReview からレビュー担当者を削除します。 |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview reviewers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

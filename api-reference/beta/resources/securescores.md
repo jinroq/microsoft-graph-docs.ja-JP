@@ -2,16 +2,16 @@
 title: secureScores リソースの種類
 description: '上部 = n、n = のデータを取得する日数です。 '
 localization_priority: Normal
-ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828736"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528663"
 ---
 # <a name="securescores-resource-type"></a>secureScores リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントとコントロール レベルでのデータのスコアの 1 日あたりのテナントのセキュリティで保護されたスコアを表します。 既定では、90 日間のデータを保持しています。 このデータの並べ替えに**createdDateTime**から最初に最新です。 これにより、ページの応答に $top を使用して = n、n = のデータを取得する日数です。 
 
@@ -26,7 +26,7 @@ ms.locfileid: "27828736"
 ## <a name="properties"></a>プロパティ
 テナントのセキュリティのエンティティの型を含むプロパティ (日単位のスナップショット データ) のスコアです。
 
-|プロパティ |種類 |説明 |
+|プロパティ |型 |説明 |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   テナントの GUID の文字列 id。  |
 |   createdDateTime |   DateTimeOffset  |   エンティティが作成されたときの日付。  |
@@ -74,10 +74,15 @@ ms.locfileid: "27828736"
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScores resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescores.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
