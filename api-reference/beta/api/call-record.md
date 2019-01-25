@@ -4,16 +4,16 @@ description: 呼び出しを記録します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936369"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518283"
 ---
 # <a name="call-record"></a>呼び出す: レコード
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 呼び出しを記録します。
 
@@ -44,14 +44,14 @@ POST /applications/{id}/calls/{id}/record
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |メッセージが表示されます。|[mediaprompt](../resources/mediaprompt.md)コレクション | レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。 ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。 |
-|bargeInAllowed|Boolean| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
+|bargeInAllowed|ブール値| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。 プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。 |
 |maxSilenceTimeoutInSeconds|Int32| 無音部分の最大のタイムアウト (秒) です。|
 |maxRecordDurationInSeconds|Int32| 秒単位で最大のレコードの期間です。|
-|playBeep|Boolean| プロンプトを再生した後、ビープ音を再生します。|
-|streamWhileRecording|Boolean|True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。 |
+|playBeep|ブール値| プロンプトを再生した後、ビープ音を再生します。|
+|streamWhileRecording|ブール値|True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。 |
 |stopTones|String コレクション|音の録音を終了するために指定を停止します。|
-|clientContext|String|クライアントのコンテキスト。|
+|ClientContext|String|クライアントのコンテキスト。|
 
 ## <a name="response"></a>応答
 返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: record",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: 対象となるように、役割の割り当てを確認します。 ロールの割り当ては、呼び出しの前に対象が既にいる場合は、何も行われません。 ロールの割り当ては、永続的なリクエスターは、ターゲットのユーザーと異なる場合は、ロールの割り当てができるようになり、ロールはターゲット ユーザーの非アクティブ化します。 リクエスターは、ターゲット ユーザーと役割は、セキュリティ管理者、またはロールの権限を持つ管理者を既定の有効期限を持つロールがアクティブになります。
 localization_priority: Normal
-ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 54260da3f69819a1f7a351e072f8af851f0e3d3a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822590"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527237"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 対象となるように、役割の割り当てを確認します。 ロールの割り当ては、呼び出しの前に対象が既にいる場合は、何も行われません。 ロールの割り当ては、永続的なリクエスターは、ターゲットのユーザーと異なる場合は、ロールの割り当てができるようになり、ロールはターゲット ユーザーの非アクティブ化します。 リクエスターは、ターゲット ユーザーと役割は、セキュリティ管理者、またはロールの権限を持つ管理者を既定の有効期限を持つロールがアクティブになります。
 
@@ -80,10 +80,15 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignment: makeEligible",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-makeeligible.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

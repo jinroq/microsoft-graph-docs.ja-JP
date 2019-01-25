@@ -3,16 +3,16 @@ title: アクティビティのリソースの種類
 description: -テレビ番組、ドキュメント、ビデオ ゲームの現在のキャンペーンなど、アプリケーション内で 1 つのアクティビティを表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7a9000de339bc5d44fcbf2d282237caef85e076f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939295"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525893"
 ---
 # <a name="activity-resource-type"></a>アクティビティのリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 -テレビ番組、ドキュメント、ビデオ ゲームの現在のキャンペーンなど、アプリケーション内で 1 つのアクティビティを表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示します、[履歴項目](projectrome-historyitem.md)として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 
@@ -33,19 +33,19 @@ Cortana およびタイムラインの Windows ユーザー エクスペリエ�
 
 ## <a name="properties"></a>プロパティ
 
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|userTimezone | String | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンクロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
+|userTimezone | 文字列 | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンクロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
 |createdDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが作成されたときの utc 日時。 |
 |lastModifiedDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが変更されたときの utc 日時。 |
 |id | String | サーバーによって生成される ID が URL に対応するために使用します。|
 |appActivityId | String | 必須。 呼び出し元によって、不変をその後提供された - アプリケーションのコンテキストで一意のアクティビティ ID です。|
 |activitySourceHost | String | 必須。 アプリケーションのクロスプラット フォームの id のマッピングを表すドメインの URL です。 マッピングは、ドメインでホストされている JSON ファイルとして、ストアドや Windows デベロッパー センターを使用して構成できます。 JSON ファイルは、クロス プラットフォーム アプリケーション識別子の名前はまたはトップ レベルのドメイン レベルのいずれか、"HTTPS"ドメインのルートでホストされていますとサブのドメインが含まれます。 例: https://contoso.com または https://myapp.contoso.com。しかし、https://myapp.contoso.com/somepath は無効です。 クロスプラット フォームのアプリケーション id ごと、一意のファイルおよびドメイン (またはサブドメイン) をすることが必要です。 たとえば、PowerPoint と Word の別のファイルとドメインが必要です。|
-|appDisplayName | String | 省略可能。 アプリケーションがユーザーのローカル デバイスにインストールされていない場合の場合に使用するための活動を生成するために使用するアプリケーションの短い説明です。|
+|AppDisplayName | 文字列 | 省略可能。 アプリケーションがユーザーのローカル デバイスにインストールされていない場合の場合に使用するための活動を生成するために使用するアプリケーションの短い説明です。|
 |activationUrl | String | 必須。 AppId によって表される最適なネイティブの経験ではアクティビティを起動するために使用する URL です。 ネイティブ アプリケーションが存在しない場合は、web ベースのアプリケーションを起動する場合があります。|
-|fallbackUrl | String | 省略可能。 URL が利用可能な場合は、web ベースのアプリケーションでは、アクティビティの起動に使用します。|
+|fallbackUrl | 文字列 | 省略可能。 URL が利用可能な場合は、web ベースのアプリケーションでは、アクティビティの起動に使用します。|
 |contentUrl | String | 省略可能。 ネイティブまたは web ベースのアプリケーションの操作 (たとえば、RSS フィード内のアイテムへのポインター) の外部コンテンツを表示できる場合に使用されます。|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必須。 エクスペリエンスの利用状況を表示する情報を格納しているオブジェクト|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必須です。 エクスペリエンスの利用状況を表示する情報を格納しているオブジェクト|
 |contentInfo | JSON オブジェクトの型指定されていません。 | 省略可能。 [Schema.org](https://schema.org)の構文に従ってコンテンツの拡張の説明を %ld 個の JSON データのカスタムの一部。|
 |expirationDateTime | DateTimeOffset | サーバーで設定します。 オブジェクトは、サーバー上で有効期限が切れたときの utc 日時。|
 |status | EnumType | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
@@ -96,10 +96,15 @@ Cortana およびタイムラインの Windows ユーザー エクスペリエ�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "activity resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

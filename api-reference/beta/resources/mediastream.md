@@ -4,28 +4,28 @@ description: MediaStream 型です。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd003bde0eca5fd21cb12c23d5c83699a6b79c8e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4867675da3427beb790beb240cd7bc0b86f04317
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916965"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519963"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 MediaStream 型です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 種類    | 説明                                                                                                   |
+| プロパティ    | 型    | 説明                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| 方向   | String  | 方向です。 使用可能な値は、 `inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
+| Direction   | String  | 方向です。 使用可能な値は、 `inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | メディア ストリームのラベルです。                                                                                       |
-| メディアの種類   | String  | メディアは次のとおり入力します。 使用可能な値は、 `unknown`、 `audio`、 `video`、 `videoBasedScreenSharing`、 `data`。        |
-| serverMuted | ブール型 | サーバによってメディアがミュートされている場合。                                                                          |
-| sourceId    | String  | ソースの id。                                                                                                |
+| MediaType   | String  | メディアは次のとおり入力します。 使用可能な値は、 `unknown`、 `audio`、 `video`、 `videoBasedScreenSharing`、 `data`。        |
+| serverMuted | ブール値 | サーバによってメディアがミュートされている場合。                                                                          |
+| SourceId    | String  | ソースの id。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -66,10 +66,15 @@ MediaStream 型です。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mediaStream resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mediastream.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

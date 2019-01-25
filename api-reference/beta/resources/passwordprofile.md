@@ -1,26 +1,26 @@
 ---
 title: passwordProfile リソースの種類
-description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。ユーザー エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
+description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。**ユーザー** エンティティの **PasswordProfile** プロパティは、passwordProfile オブジェクトです。
 localization_priority: Normal
-ms.openlocfilehash: 11930b046fafaf89f8db751891b9b7f2f72fd99d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839005"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518934"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーに関連付けられているパスワードのプロファイルが含まれています。[ユーザー](user.md) エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|ブール値| 場合は**true の場合**、次回ログイン時、ユーザーにパスワードを変更する必要があります。 パスワードの変更では、このプロパティに自動的がリセットされるまでに ***false を指定**します。 表示しない場合は、セットでは、既定値は**false**。 |
-|forceChangePasswordNextSignInWithMfa|ブール型| **True の場合**、次回ログイン時、ユーザーを実行する必要がありますされる前に多要素認証 (MFA) は、パスワードを変更するのには強制します。 動作は**forceChangePasswordNextSignIn**と同じですが、ユーザーがパスワードを変更する前に最初の多要素認証を実行するために必要な。 パスワードの変更後このプロパティは自動的にリセットを**false**にします。 表示しない場合は、セットでは、既定値は**false**。 |
+|forceChangePasswordNextSignInWithMfa|ブール値| **True の場合**、次回ログイン時、ユーザーを実行する必要がありますされる前に多要素認証 (MFA) は、パスワードを変更するのには強制します。 動作は**forceChangePasswordNextSignIn**と同じですが、ユーザーがパスワードを変更する前に最初の多要素認証を実行するために必要な。 パスワードの変更後このプロパティは自動的にリセットを**false**にします。 表示しない場合は、セットでは、既定値は**false**。 |
 |password|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,10 +46,15 @@ ms.locfileid: "27839005"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "passwordProfile resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/passwordprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

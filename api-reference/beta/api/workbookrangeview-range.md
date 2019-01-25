@@ -4,16 +4,16 @@ description: rangeView リソースに関連付けられている範囲を返し
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 616d65c490f7691ec8ab83ffd12eaba480f4734a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b6a1b678b77cf4bd4d20d9d3d0a68178dbc07151
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970907"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526922"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 rangeView リソースに関連付けられている範囲を返します。
 
@@ -78,3 +78,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookrangeview-range.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

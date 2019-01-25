@@ -2,33 +2,33 @@
 title: synchronizationStatus リソースの種類
 description: SynchronizationJob の現在の状態を表します。
 localization_priority: Normal
-ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 404fe4f7f58b8189b3059c212aa1ce858350bb01
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817032"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523765"
 ---
 # <a name="synchronizationstatus-resource-type"></a>synchronizationStatus リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [SynchronizationJob](synchronization-synchronizationjob.md)の現在の状態を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                              | 種類      | 説明    |
+| プロパティ                              | 型      | 説明    |
 |:--------------------------------------|:----------|:---------------|
 |code|String|同期ジョブの高度なステータス コードです。 可能な値は、`NotConfigured`、`NotRun`、`Active`、`Paused`、`Quarantine` です。|
 |countSuccessiveCompleteFailures|Int64|連続回数このジョブが失敗しました。|
-|escrowsPruned|ブール型|`true`場合はジョブの escrows (オブジェクト レベルのエラー) は、初期同期中に排除されました。 初期同期中にエラーを通常どおりになりそうなジョブ検疫のしきい値に達した場合、escrows を排除することができます。 検疫場所にではなく、同期プロセスはジョブのエラーをクリアし、初期同期が完了するまで続きます。 初期同期が完了すると、ジョブが一時停止し、エラーをクリーンアップするまで待機します。|
+|escrowsPruned|ブール値|`true`場合はジョブの escrows (オブジェクト レベルのエラー) は、初期同期中に排除されました。 初期同期中にエラーを通常どおりになりそうなジョブ検疫のしきい値に達した場合、escrows を排除することができます。 検疫場所にではなく、同期プロセスはジョブのエラーをクリアし、初期同期が完了するまで続きます。 初期同期が完了すると、ジョブが一時停止し、エラーをクリーンアップするまで待機します。|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|ジョブの前回の実行の詳細です。|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|このジョブは、エラーがなかったは、前回の実行の詳細です。|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|ターゲット ディレクトリにオブジェクトをエクスポートすると、ジョブの前回の実行の詳細です。|
 |進行状況|[synchronizationProgress](synchronization-synchronizationprogress.md)コレクション|完了するまで、ジョブの進行状況の詳細です。|
 |検査|[synchronizationQuarantine](synchronization-quarantine.md)|検査中のジョブの場合は、詳細を検査します。|
-|steadyStateFirstAchievedTime|DateTimeOffset|最初に安定した状態 (プロセスに変更) が達成された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|steadyStateLastAchievedTime|DateTimeOffset|最後に安定した状態 (プロセスに変更) が達成された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|steadyStateFirstAchievedTime|DateTimeOffset|最初に安定した状態 (プロセスに変更) が達成された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
+|steadyStateLastAchievedTime|DateTimeOffset|最後に安定した状態 (プロセスに変更) が達成された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)コレクション|オブジェクトの種類ごとに一覧表示、同期オブジェクトの数。|
 |troubleshootingUrl|String|エラーの場合、問題のトラブルシューティングの手順で URL です。|
 
@@ -74,10 +74,15 @@ ms.locfileid: "27817032"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationStatus resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,19 +1,19 @@
 ---
 title: bookingCurrency リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7e2289bfa6c6aac62f12d7321d06caaafbc41f8c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d4feac66e72c756173113101a88bf8bbe35563a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956004"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518199"
 ---
 # <a name="bookingcurrency-resource-type"></a>bookingCurrency リソースの種類
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 [BookingBusiness](bookingbusiness.md)でサポートされている通貨の通貨を表します。
 
@@ -27,10 +27,10 @@ ms.locfileid: "27956004"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)の 3 文字の通貨コード。 たとえば、米ドルの通貨コードは米ドル、オーストラリアの AUD. 読み取り専用です。|
-|シンボル|String| 通貨記号。 米ドルとオーストラリア ドルの通貨記号は $ です。  |
+|id|String| [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)の 3 文字の通貨コード。 たとえば、米ドルの通貨コードは米ドル、オーストラリアの AUD. 読み取り専用です。|
+|Symbol|String| 通貨記号。 米ドルとオーストラリア ドルの通貨記号は $ です。  |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -58,10 +58,15 @@ ms.locfileid: "27956004"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingCurrency resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingcurrency.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Azure AD アクセスのレビュー機能をレビュー担当者�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941500"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525326"
 ---
 # <a name="list-my-accessreview-decisions"></a>マイ accessReview の決定事項を表示します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、レビュー担当者として、 [accessReview](../resources/accessreview.md)オブジェクトの呼び出し元のユーザーの意思決定を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -33,7 +33,7 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本体を提供する必要がありません。
@@ -85,10 +85,15 @@ Content-type: application/json
 |[リストの accessReview の決定](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    AccessReview のすべての意思決定を取得します。|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview decisions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

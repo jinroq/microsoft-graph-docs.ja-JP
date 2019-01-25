@@ -4,16 +4,16 @@ description: '**plannerAssignedToTaskBoardTaskFormat** オブジェクトのプ�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: b388d3d19287c4a5c039763ce812c22b87515622
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915705"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524850"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Update plannerAssignedToTaskBoardTaskFormat
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerAssignedToTaskBoardTaskFormat** オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -39,7 +39,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|担当者、タスク掲示板のビューでタスクを注文するために使用するヒントのディクショナリ。 タスクが割り当てられているユーザーの 1 つは、各エントリのキーと値は、order ヒントです。 各値の形式が定義されている [プランナー] の [順序のヒントを使用して (../resources/planner_order_hint_format.md)。|
 |unassignedOrderHint|String|すべてのユーザーにタスクが割り当てられていない場合、または orderHintsByAssignee の辞書は、タスクのユーザーの order ヒントを提供していない場合、担当者の作業掲示板のビューでタスクを注文するために使用するヒントの値が割り当てられます。 [プランナーで使用する順序のヒント](../resources/planner-order-hint-format.md)の形式が定義されています。|
@@ -93,10 +93,15 @@ Content-length: 225
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update plannerassignedtotaskboardtaskformat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

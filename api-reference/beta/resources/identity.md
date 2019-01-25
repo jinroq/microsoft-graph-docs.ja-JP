@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/14/2017
 title: ID
 localization_priority: Normal
-ms.openlocfilehash: c1cd28f4c2932e4196605c408470948e5b570894
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1ac2aea59ab0d6b09ae613b72fbfbf924240a4a0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518794"
 ---
 # <a name="identity-resource-type"></a>id のリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ID** リソースは、_アクター_ の ID を表します。たとえば、アクターは、ユーザー、デバイス、アプリケーションです。
 
@@ -32,7 +32,7 @@ ms.locfileid: "27847587"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類   | 説明                                                                                                                                                                                                                                                                                                           |
+| プロパティ            | 型   | 説明                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。  |
 | id                  | String | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
@@ -44,10 +44,15 @@ ms.locfileid: "27847587"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Identity contains information about an app, user, or group.",
   "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": "Resources/Identity"
-} -->
+  "tocPath": "Resources/Identity",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

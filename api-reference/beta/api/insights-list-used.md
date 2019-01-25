@@ -4,16 +4,16 @@ description: ユーザーに使用されるファイルの一覧を返す計算�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 107e9429228bbedf131ae4ca4adde79e280cedb9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e73536d5933d6293539eb00ba8cdc2e85ce5fa93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990636"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526103"
 ---
 # <a name="list-used"></a>リストの使用
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーに使用されるファイルの一覧を返す計算の把握。
 
@@ -107,3 +107,11 @@ GET https://graph.microsoft.com/beta/me/insights/used
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

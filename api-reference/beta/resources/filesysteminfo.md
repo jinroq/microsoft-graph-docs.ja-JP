@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: d9d69f00c8c52352acdd00ff4d6adc41908fffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e2dfac79f5c7d511cab11c076d697940a01f4c7c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835834"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524696"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo ファセット
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**FileSystemInfo** リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
+FileSystemInfo リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
 
 これは、[driveItem][item-resource] リソースの fileSystemInfo プロパティで使用できます。
 
@@ -39,15 +39,15 @@ ms.locfileid: "27835834"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                 | 種類           | 説明                                                                                                          |
+| プロパティ                 | 型           | 説明                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | クライアントでのファイルの作成日時 (UTC)。                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。[最近使用したファイル一覧](../api/drive-recent.md)でのみ使用可能です。 |
+| **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。最近使用したファイル一覧でのみ使用可能です。 |
 | **lastModifiedDateTime** | DateTimeOffset | クライアントでファイルを最後に変更した日時 (UTC)。                                                        |
 
 ## <a name="notes"></a>メモ
 
-**createdDateTime** と **lastModifiedDateTime** の値は、[DriveItem](driveitem.md) リソースの同じプロパティとは異なります。DriveItem リソースの値は、サービスにより認識された作成日時と更新日時です。**FileSystemInfo** リソースで保存されている値は、クライアントによって指定されています。
+createdDateTime と lastModifiedDateTime の値は、DriveItem リソースの同じプロパティとは異なります。DriveItem リソースの値は、サービスにより認識された作成日時と更新日時です。FileSystemInfo リソースで保存されている値は、クライアントによって指定されています。
 
 たとえば、ファイルがデバイス上で月曜日に作成されたものの、火曜日までアップロードされなかった場合、ファイルをアップロードするクライアントは、`fileSystemInfo` ファセットに作成日である月曜日が含まれるように書き込む必要があります。アイテムのメタデータを取得すると、アイテムの作成日には火曜日が示されますが、`fileSystemInfo` ファセットには元の作成日である月曜日が表示されます。
 
@@ -57,16 +57,21 @@ ms.locfileid: "27835834"
 
 ## <a name="remarks"></a>備考
 
-* **lastAccessedDateTime** は、SharePoint Online または OneDrive for Business のアイテムでは使用できません。
+* **lastAccessedDateTime** は、SharePoint Online または OneDrive for Business のアイテムには使用できません。
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo"
-} -->
+  "tocPath": "Facets/FileSystemInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

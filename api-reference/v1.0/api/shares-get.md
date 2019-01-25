@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
-ms.openlocfilehash: fbde377c05b4b1f86bff32afcbaf0023c9be487a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831529"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522568"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -37,9 +37,9 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメーター名        | 値    | 説明                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
+| パラメーター名                 | 値    | 説明                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
 
 ### <a name="encoding-sharing-urls"></a>共有 URL をエンコードする
 
@@ -56,6 +56,21 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+
+## <a name="optional-request-headers"></a>オプションの要求ヘッダー
+
+| 名前       | 型   | 説明                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | 省略可能。 いずれかに設定、`prefer`の下の値が記載されています。  |
+
+### <a name="prefer-header-values"></a>ヘッダーの値を使用します。
+
+| Name                          | 説明                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | **ShareIdOrEncodedSharingUrl**が共有リンクの場合は、呼び出し元に付与アイテムへのアクセスを永続的な    |
+| redeemSharingLinkIfNecessary  | のみがこの要求の間に与えられる保証へのアクセスが redeemSharingLink と同じ |
+
+redeemSharingLink する必要がありますに相当する呼び出し元に移動するリンクを共有 (共有のジェスチャの受け入れ)、ブラウザー、redeemSharingLinkIfNecessary がシナリオの目的が単にリンクのピークを意図したものメタデータです。
 
 ## <a name="response"></a>応答
 

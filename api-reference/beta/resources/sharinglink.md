@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c21c891981106faa4b631bb2713913bfa8ed0713
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856393"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521454"
 ---
-# <a name="sharinglink-resource-type"></a>sharingLink リソースの種類
+# <a name="sharinglink-resource-type"></a>SharingLink リソース型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SharingLink**リソースでは、1 つの構造体にデータのリンクに関連する項目をグループ化します。
+**SharingLink** リソースは、リンク関連のデータ項目を 1 つの構造にグループ化します。
 
-[**アクセス許可**](permission.md)リソースに非 null **sharingLink**ファセットがある場合、アクセス許可 (アクセス許可がユーザーまたはグループに与えられている) ではなく共有リンクを表します。
+[**Permission**](permission.md) リソースが非 null の **sharingLink** ファセットを持つ場合、アクセス許可は (ユーザーやグループに与えられているアクセス許可ではなく) 共有リンクを表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -42,14 +42,14 @@ ms.locfileid: "27856393"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類          | 説明
+| プロパティ       | 型          | 説明
 |:---------------|:--------------|:-------------------------------------
 | application    | [identity][]  | リンクが関連付けられているアプリケーションです。
 | type           | String        | 作成されたリンクの種類。
 | scope          | String        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
-| preventsDownload | ブール型       | True の場合、ユーザーは、web 上のアイテムを表示するのにはのみ、このリンクを使用できますし、項目の内容をダウンロードするのには使用できません。 ビジネスと SharePoint の OneDrive です。
+| preventsDownload | ブール値       | True の場合、ユーザーは、web 上のアイテムを表示するのにはのみ、このリンクを使用できますし、項目の内容をダウンロードするのには使用できません。 ビジネスと SharePoint の OneDrive です。
 | webHtml        | String        | `embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。
-| webUrl         | String        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
+| webUrl         | 文字列        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
 
 [Identity]: identity.md
 
@@ -76,10 +76,15 @@ ms.locfileid: "27856393"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

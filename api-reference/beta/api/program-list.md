@@ -2,16 +2,16 @@
 title: プログラムを一覧表示
 description: Azure AD のレビュー機能にアクセス、プログラムのすべてのオブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 9ea71e5377b7dcfe7ca6de7cfaf221e2c6dfcd98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 71073f2469087e92b43823e89881406fb17a666b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876294"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526978"
 ---
 # <a name="list-programs"></a>プログラムを一覧表示
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、[プログラム](../resources/program.md)のすべてのオブジェクトを一覧表示します。
 ## <a name="permissions"></a>アクセス許可
@@ -29,9 +29,9 @@ ms.locfileid: "27876294"
 GET /programs
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本体を提供する必要がありません。
@@ -86,10 +86,15 @@ Content-type: application/json
 |[プログラムのリスト programControls](program-listcontrols.md) |     [デバッギング](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programs",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: コネクタを connectorGroup に追加します。
 description: ConnectorGroup にコネクタを追加するのにには、この API を使用します。
 localization_priority: Normal
-ms.openlocfilehash: 0624356699b5354ddc5f11740e8561a3d6e2d851
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8df6fdda80007217164f8ae2f21a1d3f8d667d23
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869994"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518255"
 ---
 # <a name="add-connector-to-connectorgroup"></a>コネクタを connectorGroup に追加します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ConnectorGroup にコネクタを追加するのにには、この API を使用します。
 ## <a name="permissions"></a>アクセス許可
@@ -31,7 +31,7 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラーです。 必須|
+| Authorization  | Bearer  必須|
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、[コネクタ](../resources/connector.md)オブジェクトへのリンクの JSON の形式を指定します。
@@ -79,10 +79,15 @@ Content-length: 124
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create connector",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/connectorgroup-post-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

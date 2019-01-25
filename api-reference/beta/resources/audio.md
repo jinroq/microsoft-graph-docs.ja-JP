@@ -4,20 +4,20 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b88fbbcd11a4cbeff56c870225d7b0bef4b32346
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985376"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527034"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **オーディオ** リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
 
-[**DriveItem**](driveitem.md) に null 以外の**オーディオ** ファセットがある場合、そのアイテムはオーディオ ファイルを表します。**オーディオ** リソースのプロパティは、ファイルからメタデータを抽出することで設定されます。 
+DriveItem に null 以外のオーディオ ファセットがある場合、そのアイテムはオーディオ ファイルを表します。オーディオ リソースのプロパティは、ファイルからメタデータを抽出することで設定されます。 
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -45,21 +45,21 @@ ms.locfileid: "27985376"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名         | Type    | 説明                                                          |
+| プロパティ名         | 種類    | 説明                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | 文字列  | このオーディオ ファイルのアルバムのタイトル。                          |
-| **albumArtist**       | 文字列  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
-| **artist**            | 文字列  | オーディオ ファイルの歌手や奏者。                            |
+| **album**             | string  | このオーディオ ファイルのアルバムのタイトル。                          |
+| **albumArtist**       | string  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
+| **artist**            | string  | オーディオ ファイルの歌手や奏者。                            |
 | **bitrate**           | Int32   | kbps 単位で表されるビットレート。                                           |
-| **composers**         | 文字列  | オーディオ ファイルの作曲者の名前。                          |
-| **copyright**         | 文字列  | オーディオ ファイルの著作権情報。                            |
+| **composers**         | string  | オーディオ ファイルの作曲者の名前。                          |
+| **copyright**         | string  | オーディオ ファイルの著作権情報。                            |
 | **disc**              | Int32   | このオーディオ ファイルの元のディスクの番号。                    |
 | **discCount**         | Int32   | このアルバムの合計ディスク数。                             |
 | **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
-| **genre**             | 文字列  | このオーディオ ファイルのジャンル。                                        |
+| **genre**             | string  | このオーディオ ファイルのジャンル。                                        |
 | **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
 | **isVariableBitrate** | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
-| **title**             | 文字列  | オーディオ ファイルのタイトル。                                         |
+| **title**             | string  | オーディオ ファイルのタイトル。                                         |
 | **track**             | Int32   | このオーディオ ファイルの元のディスクでのトラック番号。    |
 | **trackCount**        | Int32   | このオーディオ ファイルの元のディスクの合計トラック数。 |
 | **year**              | Int32   | オーディオ ファイルが録音された年。                                |
@@ -70,10 +70,15 @@ ms.locfileid: "27985376"
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

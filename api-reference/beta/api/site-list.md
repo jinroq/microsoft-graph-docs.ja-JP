@@ -3,28 +3,28 @@ title: サイトを列挙します。
 description: 指定されたフィルター条件に一致し、オプションのクエリを実行している組織で利用できる [サイト] の一覧を表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 05c3480181126d528657d0efacde97051a178bfd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939568"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520341"
 ---
 # <a name="enumerate-sites"></a>サイトを列挙します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定されたフィルター条件に一致し、オプションのクエリを実行する組織で使用可能な[サイト][]を一覧表示します。
 
 次のクエリ オプションのみが現在サポートされています。
 
-| フィルター ステートメント             | ステートメントを選択します。        | 説明
+| フィルター ステートメント             | SELECT ステートメント        | 説明
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 組織内のすべてのルート レベルのサイト コレクションの一覧を表示します。 各地域のホーム サイトを発見するのに便利です。
 
 さらに、特定のキーワードに一致するサイトを検索するのに 'と、サイト' のコレクションに対して**[検索][]** クエリを使用することがあります。
 
-[検索]: site-search.md
+[Search]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
@@ -91,10 +91,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/List sites"
-} -->
+  "tocPath": "Site/List sites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

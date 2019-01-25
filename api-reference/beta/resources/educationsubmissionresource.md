@@ -4,16 +4,16 @@ description: '提出書類に使用するリソースのラッパーです。 �
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f242e4206c174634a3a8c3248942284798bb1550
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ef231de49d3871ec877c279b4e77585343e1a85e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979181"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522078"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 提出書類に使用するリソースのラッパーです。 ラッパーは、この課題からコピーされた場合、割り当てリソースにポインターを追加します。  
 
@@ -30,7 +30,7 @@ ms.locfileid: "27979181"
 |:---------------|:--------|:----------|
 |assignmentResourceUrl|String|このリソースのコピー元の割り当てへのポインター。 これが null の場合、受講者は、リソースをアップロードします。|
 |id|String| 読み取り専用です。|
-|resource|[educationResource](educationresource.md)|リソース オブジェクト。|
+|リソース|[educationResource](educationresource.md)|Resource オブジェクト|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -58,10 +58,15 @@ ms.locfileid: "27979181"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmissionResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsubmissionresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: 952a86161047ab869238feaba50b8ad4d8ce0658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e674c996002b3a54c92886dd1c5dca7a76c56b51
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845599"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526271"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **CommentAction**リソースは、アイテムに対して行われたコメント [アクティビティ][]に関する情報を提供します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "27845599"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名    | Type                       | 説明
+| プロパティ名    | 種類                       | 説明
 |:-----------------|:---------------------------|:-----------------------------
 | isReply          | boolean                    | true の場合、このアクティビティは既存のコメント スレッドへの返信だったことを示します。
 | parentAuthor     | [identitySet][]            | コメント スレッドを開始したユーザーの ID。
@@ -49,10 +49,15 @@ ms.locfileid: "27845599"
 
 アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The CommentAction object provides information about a comment that was made on an item.",
   "keywords": "activities,activity,action,comment",
   "section": "documentation",
-  "tocPath": "Resources/CommentAction"
-} -->
+  "tocPath": "Resources/CommentAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/commentaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,23 +1,23 @@
 ---
 title: onPremisesExtensionAttributes リソースの種類
-description: ユーザー エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 このプロパティのセットをオンプレミスの Active Directory のマスターし、Azure AD は、同期**onPremisesSyncEnabled**のユーザーは読み取り専用とします。 クラウド専用 ( **onPremisesSyncEnabled**は false)、ユーザーに対してこれらのプロパティは作成時に設定するか、更新します。
+description: ユーザー エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 onPremisesSyncEnabled ユーザーの場合、このプロパティ セットはオンプレミスの Active Directory でマスター管理され、Azure AD に同期され、読み取り専用となります。 クラウド専用ユーザー (onPremisesSyncEnabled が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。
 localization_priority: Normal
-ms.openlocfilehash: 44589338e25e01cb483df6bfa3c1e078e352f5ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868160"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518241"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ユーザー](user.md)エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 このプロパティのセットをオンプレミスの Active Directory のマスターし、Azure AD は、同期**onPremisesSyncEnabled**のユーザーは読み取り専用とします。 クラウド専用 ( **onPremisesSyncEnabled**は false)、ユーザーに対してこれらのプロパティは作成時に設定するか、更新します。
+[ユーザー](user.md)エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 onPremisesSyncEnabled ユーザーの場合、このプロパティ セットはオンプレミスの Active Directory でマスター管理され、Azure AD に同期され、読み取り専用となります。 クラウド専用ユーザー (onPremisesSyncEnabled が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |extensionAttribute1|String| 最初の拡張機能のカスタマイズ可能な属性です。 |
 |extensionAttribute2|String| 2 つ目の拡張機能のカスタマイズ可能な属性です。 |
@@ -70,10 +70,15 @@ ms.locfileid: "27868160"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onPremisesExtensionAttributes resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onpremisesextensionattributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

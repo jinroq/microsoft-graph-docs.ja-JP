@@ -1,17 +1,17 @@
 ---
 title: multiValueLegacyExtendedProperty を取得する
-description: 展開 ' です。
+description: Expand
 localization_priority: Normal
-ms.openlocfilehash: 2dd97797fb15641e772d27d6ffb9652fabe3c04b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837745"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525242"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 `$expand` を使用して、複数値の拡張プロパティを含むリソース インスタンスを取得します。
 
@@ -22,10 +22,10 @@ ms.locfileid: "27837745"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
-- [Outlook タスク](../resources/outlooktask.md)
+- Outlook タスク
 - [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)
 
 次のグループ リソースもサポートされます。
@@ -44,49 +44,49 @@ ms.locfileid: "27837745"
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | グループ [calendar](../resources/calendar.md) | Group.Read.All | 使用不可 | 使用不可 |
 | グループ [event](../resources/event.md) | Group.Read.All | 使用不可 | 使用不可 |
 | グループ [post](../resources/post.md) | Group.Read.All | サポートされていません | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポートされていません |
+| Outlook タスク | Tasks.Read | Tasks.Read | サポートされていません |
 | [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
  
 ## <a name="http-request"></a>HTTP 要求
 
 **id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
-**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得:
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**MailFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**mailFolder** インスタンスの取得:
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**イベント**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得:
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**カレンダー**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**calendar** インスタンスの取得:
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**連絡**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contact** インスタンスの取得:
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**ContactFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contactFolder** インスタンスの取得:
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,12 +109,12 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループ**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得:
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループの**投稿**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **post** インスタンスの取得:
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -192,10 +192,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get multiValueLegacyExtendedProperty",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

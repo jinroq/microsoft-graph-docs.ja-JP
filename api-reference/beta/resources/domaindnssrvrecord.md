@@ -4,16 +4,16 @@ description: テナント内の特定のドメインの DNS ゾーン ファイ�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: db8b64397bd8d2904567555759a40186f740a1ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962815"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524479"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
 
@@ -23,9 +23,9 @@ ms.locfileid: "27962815"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
+|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
 |isOptional|Boolean| False の場合、SRV レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|String| DNS ホストで SRV レコードの *name* プロパティを構成する場合に使用される値です。 |
+|label|文字列| DNS ホストで SRV レコードの *name* プロパティを構成する場合に使用される値です。 |
 |nameTarget|String| DNS ホストで SRV レコードの *Target* プロパティを構成する場合に使用する値です。 |
 |port|Int32| DNS ホストで SRV レコードの *port* プロパティを構成する場合に使用する値です。 |
 |priority|Int32| DNS ホストで SRV レコードの *priority* プロパティを構成する場合に使用する値です。 |
@@ -72,10 +72,15 @@ ms.locfileid: "27962815"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/domaindnssrvrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

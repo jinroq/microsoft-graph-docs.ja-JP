@@ -2,16 +2,16 @@
 title: PrivilegedRoleSettings を更新します。
 description: 役割の設定を特定の役割の設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527655"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 役割の設定を特定の役割の設定を更新します。 [PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。
 ## <a name="permissions"></a>アクセス許可
@@ -42,18 +42,18 @@ PUT /privilegedRoles/{id}/settings
 
 役割の設定を更新するときは指定するプロパティを次の表に一覧します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|ロールが有効な場合の期間です。 必須。|
-|ID|文字列|ロールの設定の一意の識別子です。 読み取り専用です。 必須。|
-|isMfaOnElevationConfigurable|ブール|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。 必須。|
-|lastGlobalAdmin|ブール型|内部使用のみ。|
-|maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。 必須。|
-|mfaOnElevation|ブール型|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。 必須。|
-|minElevationDuration|duration|アクティブ化されたロールの最小の期間です。 必須。|
-|notificationToUserOnElevation|ブール型|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。 必須。|
-|ticketingInfoOnElevation|ブール型|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。 必須。|
-|approvalOnElevation|ブール型|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。 必須。|
+|ElevationDuration|duration|ロールが有効な場合の期間です。 必須です。|
+|id|string|ロールの設定の一意の識別子です。 読み取り専用です。 必須です。|
+|isMfaOnElevationConfigurable|boolean|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。 必須です。|
+|lastGlobalAdmin|ブール値|内部使用のみ。|
+|maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。 必須です。|
+|mfaOnElevation|ブール値|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。 必須です。|
+|minElevationDuration|duration|アクティブ化されたロールの最小の期間です。 必須です。|
+|notificationToUserOnElevation|ブール値|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。 必須です。|
+|ticketingInfoOnElevation|ブール値|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。 必須です。|
+|approvalOnElevation|ブール値|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。 必須です。|
 |approverIds|配列|承認 Id、ライセンス認証の必要な場合は承認の一覧です。|
 
 ## <a name="response"></a>応答
@@ -95,10 +95,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update privilegedRoleSettings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

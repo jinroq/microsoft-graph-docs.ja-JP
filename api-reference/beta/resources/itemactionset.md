@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: 194530da1df449d5ba523e084b2e72cd91bbe13d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3fab75c6a63630f57dae8d0578691ba10622231d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873095"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518801"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemActionSet** リソースは、アイテムに対する[アクティビティ][itemActivity]を発生させたアクションに関する情報を提供します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "27873095"
 現在使用可能なアクションを次に示します。
 将来、新しいアクションがログに記録される可能性があるため、アプリが認識するアクションがなくても、アプリが **itemActionSet** の処理を受け入れることを確認してください。
 
-| プロパティ名 | Type              | 説明
+| プロパティ名 | 型              | 説明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | アイテムにコメントが追加されました。
 | create        | [createAction][]  | アイテムが作成されました。
@@ -78,10 +78,15 @@ ms.locfileid: "27873095"
 
 アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionSet object provides information about the actions that took place as part of an activity on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionSet"
-} -->
+  "tocPath": "Resources/ItemActionSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactionset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: ポリシー リソースの種類
 description: Azure AD ポリシーを表します。 ポリシーは、アプリケーション、サービス ・ プリンシパル、グループ、または組織に割り当てられている全体に適用することができますカスタム ルールです。 現在だけがポリシーの 1 つのタイプがあります。
 localization_priority: Normal
-ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830927"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518787"
 ---
 # <a name="policy-resource-type"></a>ポリシー リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD ポリシーを表します。 ポリシーは、アプリケーション、サービス ・ プリンシパル、グループ、または組織に割り当てられている全体に適用することができますカスタム ルールです。 現在だけがポリシーの 1 つのタイプがあります。
 
@@ -31,12 +31,12 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 |[リストが割り当てられているポリシー](../api/policy-list-assigned.md)|ポリシー コレクション|アプリケーションまたはサービス ・ プリンシパルに割り当てられているすべてのポリシー オブジェクトを取得します。|
 
 ### <a name="common-properties"></a>共通プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |definition|String|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
-|displayName|String|ポリシーに独自の名前です。 必須。|
-|IsOrganizationDefault|ブール型|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
-|type|String|ポリシーの種類を指定します。 現在"TokenLifetimePolicy"をする必要があります。 必須。|
+|displayName|String|ポリシーに独自の名前です。 必須です。|
+|IsOrganizationDefault|ブール値|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
+|type|String|ポリシーの種類を指定します。 現在"TokenLifetimePolicy"をする必要があります。 必須です。|
 
 #### <a name="common-relationships"></a>共通関係
 |リレーションシップ|型|説明|
@@ -58,7 +58,7 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 
 >注:「日」で表されるプロパティの最大値は、コンセンサスを表します日数の 1 秒です。 として 1 日の最大値を指定するたとえば、"23: 59:59"です。
 
-| プロパティ     | 種類   |説明| 最小値 | 最大値 | 既定値|
+| プロパティ     | 型   |説明| 最小値 | 最大値 | 既定値|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|どのくらいの期間**アクセスと ID のトークンの両方**有効と見なされますを制御します。|10 分|1 日|1 時間|
 |MaxInactiveTime|String|古い更新トークンは、クライアントが使用できなくなりますリソースにアクセスする新しいアクセス/更新トークンのペアを取得する前に制御します。|10 分|90 日間|14 日間|
@@ -66,7 +66,7 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 |MaxAgeMultiFactor|String|コントロールがどのくらいの時間を取得する新しいアクセスの更新トークンのペア、認証された後正常に複数の要素を持つ更新トークンを使用するユーザーが続行できます。|10 分|無効にするまで|365 日または失効するまで|
 |MaxAgeSessionSingleFactor|String|コントロールがどのくらいの時間、ユーザーは、セッション トークンを使用して、最後に、正常に認証された 1 つの要因だけで新しい ID とセッションのトークンを取得するには続行できます。 一元的は、多元的な認証よりも安全性が低いと見なされる、ためには、このポリシーが、MultiFactorSessionTokenMaxAge よりも等しいまたはより低い値に設定されているをお勧め|10 分|無効にするまで|365 または無効にするまで|
 |MaxAgeSessionMultiFactor|String|コントロールがどのくらいの時間、ユーザーは、セッション トークンを使用して複数の要因で正常に認証されて、最後に新しい ID とセッションのトークンを取得するのには続行できます。|10 分|無効にするまで|365 または無効にするまで|
-|Version|整数|1 の値を設定します。 必須。|なし|なし|なし|
+|バージョン|整数|1 の値を設定します。 必須です。|なし|なし|なし|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -79,3 +79,11 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
   "type":"TokenLifetimePolicy",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

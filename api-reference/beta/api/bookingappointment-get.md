@@ -1,20 +1,20 @@
 ---
 title: BookingAppointment を取得します。
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: 指定された bookingbusiness のプロパティと、bookingAppointment オブジェクトの関係を取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b97c1fc6b45a9380fa3fb37e092a2a11ac3437a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9e9fffa3101656d4e426578185683065b4f5e5a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951307"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525270"
 ---
 # <a name="get-bookingappointment"></a>BookingAppointment を取得します。
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 指定された[bookingbusiness](../resources/bookingbusiness.md)のプロパティと、 [bookingAppointment](../resources/bookingappointment.md)オブジェクトの関係を取得します。
 
 **Start**および**end**プロパティは常に UTC で返されます。
@@ -25,7 +25,7 @@ ms.locfileid: "27951307"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
-|アプリケーション | サポートされていません。  | 
+|アプリケーション | サポートされていません。  |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -170,10 +170,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get bookingAppointment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

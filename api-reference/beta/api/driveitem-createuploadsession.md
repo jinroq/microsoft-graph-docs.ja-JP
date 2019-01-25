@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936831"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525340"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 アプリで最大ファイル サイズまでファイルをアップロードできるようにするには、アップロード セッションを作成します。アップロード セッションにより、アプリは一連の API 要求で広範なファイルをアップロードでき、このため、アップロードの進行中に接続が切れた場合に転送を再開できます。
 
@@ -86,17 +86,17 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>パラメーター
 
-| Parameter            | Type                          | 説明
+| パラメーター            | 型                          | サポートのメモ
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | アップロードされているファイルに関するデータ
-| deferCommit          | ブール型                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
+| deferCommit          | ブール値                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
 | プロパティ             | 種類               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| 説明          | String             | ユーザーに表示されている項目の説明を提供します。 読み取り/書き込み。 上でのみ OneDrive 個人。
-| 名前                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 
 ### <a name="request"></a>要求
 
@@ -406,9 +406,14 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

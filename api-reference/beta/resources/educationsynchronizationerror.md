@@ -4,16 +4,16 @@ description: 学校データ プロファイルの検証との同期中にエラ
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525144"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 学校データ プロファイルの検証との同期中にエラーを表します。検証や Azure Active Directory (AD の Azure) との同期に失敗したすべてのエントリに対して一意のエラーが生成されます。
 
@@ -28,10 +28,10 @@ ms.locfileid: "29425814"
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
 | **示した** | string |  (学校、セクション、学生、教師) は、同期エンティティを表します。       |
-| **errorCode** | string |  このエラーのエラー コードを表します。         |
-| **エラー メッセージ** | string |  エラーの説明が含まれています。        |
+| errorCode | string |  このエラーのエラー コードを表します。         |
+| **ErrorMessage** | string |  エラーの説明が含まれています。        |
 | **joiningValue** | string |  エントリの一意の識別子です。         |
-| **recordedDateTime** | DateTimeOffset | このエラーの発生時刻。         |
+| recordedDateTime | DateTimeOffset | このエラーの発生時刻。         |
 | **reportableIdentifier** | string | このエラーのエントリの識別子です。       |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,3 +53,11 @@ ms.locfileid: "29425814"
     "reportableIdentifier": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

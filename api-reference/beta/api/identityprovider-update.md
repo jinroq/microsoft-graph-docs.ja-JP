@@ -2,16 +2,16 @@
 title: IdentityProvider を更新します。
 description: 既存の identityProvider プロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525746"
 ---
 # <a name="update-identityprovider"></a>IdentityProvider を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 既存の[identityProvider](../resources/identityprovider.md)のプロパティを更新します。
 
@@ -45,11 +45,11 @@ PATCH /identityProviders/{id}
 
 要求の本文には、更新する必要がある 1 つまたは複数のプロパティを使用して JSON オブジェクトを提供します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---------------|:--------|:----------|
 |clientId|String|アプリケーションのクライアント ID。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアント ID です。|
-|clientSecret|String|アプリケーションのクライアントの機密情報です。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアントの機密情報です。|
-|名前|String|Id プロバイダーの表示名。|
+|client_secret|String|アプリケーションのクライアントの機密情報です。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアントの機密情報です。|
+|name|String|Id プロバイダーの表示名。|
 
 ## <a name="response"></a>応答
 
@@ -87,10 +87,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update identityProvider",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

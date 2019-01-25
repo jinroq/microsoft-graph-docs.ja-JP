@@ -2,16 +2,16 @@
 title: itemAttachment リソースの種類
 description: 連絡先、イベント、または別のイベントに関連付けられているメッセージ
 localization_priority: Normal
-ms.openlocfilehash: f7372db19a545bd7d6ae39121fd14be4c9f4436b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825005"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520110"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 連絡先、イベント、または他の[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されているメッセージです。  
 
@@ -21,11 +21,11 @@ ms.locfileid: "27825005"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
+|[Get](../api/attachment-get.md) | itemAttachment |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
 |[Delete](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
@@ -37,7 +37,7 @@ ms.locfileid: "27825005"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
+|item|OutlookItem|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -64,10 +64,15 @@ ms.locfileid: "27825005"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "itemAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: リスト businessFlowTemplates
 description: Azure AD のレビュー機能にアクセス、すべての businessFlowTemplate オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5b1d96330f808600c7f306ca85009bc5948a22f4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525564"
 ---
 # <a name="list-businessflowtemplates"></a>リスト businessFlowTemplates
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、 [businessFlowTemplate](../resources/businessflowtemplate.md)のすべてのオブジェクトを一覧表示します。
 ## <a name="permissions"></a>アクセス許可
@@ -29,9 +29,9 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /businessFlowTemplates
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本体を提供する必要がありません。
@@ -94,10 +94,15 @@ Content-type: application/json
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List business flow template",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

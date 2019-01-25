@@ -1,21 +1,21 @@
 ---
 title: BookingBusiness を作成します。
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: テナント内には、新しい Microsoft 予約ビジネスを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: aa5c4b9eaa2426736d23f42856d19ab14e6a1a43
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95a9217392953d287689dca7a7b6f4c74fbe6383
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922320"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519249"
 ---
 # <a name="create-bookingbusiness"></a>BookingBusiness を作成します。
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
- 
-テナント内には、新しい Microsoft 予約ビジネスを作成します。 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+テナント内には、新しい Microsoft 予約ビジネスを作成します。
 
 これは、ビジネスの表示名を指定する必要があります予約のビジネスのセットアップの最初のステップです。 会社の住所、web サイトのアドレス、およびスケジュー リング ポリシーは、他の情報が含まれます。 または情報の設定を後で[更新](bookingbusiness-update.md)することで**bookingBusiness**できます。
 ## <a name="permissions"></a>アクセス許可
@@ -25,7 +25,7 @@ ms.locfileid: "27922320"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  Bookings.Manage.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
-|アプリケーション | サポートされていません。 | 
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -176,10 +176,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create bookingBusiness",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

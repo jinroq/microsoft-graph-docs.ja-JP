@@ -2,16 +2,16 @@
 title: リスト servicePrincipal 推移的な所属するグループ
 description: このサービス主体のメンバーであるグループおよびディレクトリの役割を取得します。 この操作では、推移的では、このサービス ・ プリンシパルには、入れ子にされたメンバーのすべてのグループが含まれます。
 localization_priority: Normal
-ms.openlocfilehash: 814059a5abb0c98098436134d8e60e21e22b4b9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4588f5ea4c6190b3743988c1d97bfd5caacbfaa4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848149"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526229"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>リスト servicePrincipal 推移的な所属するグループ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このサービス主体のメンバーであるグループおよびディレクトリの役割を取得します。 この操作では、推移的では、このサービス ・ プリンシパルには、入れ子にされたメンバーのすべてのグループが含まれます。
 
@@ -33,7 +33,7 @@ GET /servicePrincipals/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -88,10 +88,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List servicePrincipal memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-transitivememberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

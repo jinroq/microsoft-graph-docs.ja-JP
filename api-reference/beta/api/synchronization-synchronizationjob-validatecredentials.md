@@ -2,16 +2,16 @@
 title: 'synchronizationJob: validateCredentials'
 description: 資格情報は、テナントの有効なことを検証します。
 localization_priority: Normal
-ms.openlocfilehash: b78d6f7b3ff197607897fbdce123aa1e7e646afc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834921"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519004"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 資格情報は、テナントの有効なことを検証します。
 
@@ -38,9 +38,9 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|ブール型|`true`、`credentials`パラメーターは無視され、代わりに (存在する場合) には、以前に保存した資格情報が検証されます。 |
+|useSavedCredentials|ブール値|`true`、`credentials`パラメーターは無視され、代わりに (存在する場合) には、以前に保存した資格情報が検証されます。 |
 |資格情報|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)コレクション|検証する資格情報。 無視する場合、`useSavedCredentials`のパラメーターは、 `true`。|
 
 ## <a name="response"></a>応答
@@ -80,10 +80,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob: validateCredentials",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

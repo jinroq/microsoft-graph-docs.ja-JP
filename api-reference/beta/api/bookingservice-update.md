@@ -1,20 +1,20 @@
 ---
 title: Bookingservice を更新します。
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: 指定された bookingbusiness で、bookingService オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937041"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519718"
 ---
 # <a name="update-bookingservice"></a>Bookingservice を更新します。
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 指定された[bookingbusiness](../resources/bookingbusiness.md)で、 [bookingService](../resources/bookingservice.md)オブジェクトのプロパティを更新します。
 
 サービスをカスタマイズすることができます例を次に示します。
@@ -51,13 +51,13 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|Duration|日、時間、分、秒単位の数値で表される、サービスの既定の長さです。 たとえば、P11D23H59M59.999999999999S です。 |
 |defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所です。|
 |defaultPrice|倍精度浮動小数点数|サービスの既定通貨の価格です。|
-|defaultPriceType|文字列|サービスの既定の方法に請求されます。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
+|defaultPriceType|string|サービスの既定の方法に請求されます。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対するアラームの既定値を設定します。 その ID ではこの**bookingService**を読み取るときにのみ、このプロパティの値があります。|
-|説明|String|サービスの説明です。|
+|説明|文字列|サービスの説明です。|
 |displayName|String|サービスの名前です。|
-|emailAddress|String|電子メール アドレス|
-|id|String| 読み取り専用です。|
-|isHiddenFromCustomers|Boolean|True は、このサービスは予約のお客様に利用できないことを意味します。|
+|emailAddress|String|電子メール アドレス:  |
+|id|文字列| 読み取り専用です。|
+|isHiddenFromCustomers|ブール値|True は、このサービスは予約のお客様に利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
 |事後バッファリング|Duration|このサービスの予定の後のバッファーに時間が終了して、次の前に顧客の予定が予約できます。|
 |事前バッファリング|Duration|このサービスに対する予定を開始する前に、バッファーに格納する時間です。|
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>応答
-応答の例を次に示します。 
+応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingservice",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

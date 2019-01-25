@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
-ms.openlocfilehash: 16bc590fcfe14f9ce7f6f1bbe38492225cce099c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 785a0a9ac9a2a1ecbd40c0d8ccae16dca9594fdf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828659"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520537"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ShareAction** リソースは、アイテムを共有した[アクティビティ][activity]に関する情報を提供します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "27828659"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | Type                       | 説明
+| プロパティ名 | 種類                       | 説明
 |:--------------|:---------------------------|:-----------------------------
 | recipients    | [identitySet][] コレクション | このアクションでアイテムが共有された相手の ID。
 
@@ -45,10 +45,15 @@ ms.locfileid: "27828659"
 
 アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ShareAction object provides information about who an item was shared to in a share action.",
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
-  "tocPath": "Resources/ShareAction"
-} -->
+  "tocPath": "Resources/ShareAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 特定のユーザーによって使用されるドキュメント�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2f8479896f8c06fdc6193cfa8c18a0c3d8293bc7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976059"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525858"
 ---
 # <a name="used-resource-type"></a>リソースの種類を使用
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 特定のユーザーによって使用されるドキュメントを表すの把握。 詳細情報は、ユーザーが表示またはアクセスする最も適切なドキュメントを返します。 内のドキュメントが含まれます。
 
@@ -28,16 +28,16 @@ ms.locfileid: "27976059"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 種類                      | 説明  |
+| プロパティ              | 型                      | 説明  |
 | -------------         |---------------            | -------------|
-| ID                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
+| id                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | アイテムが最後表示し、ユーザーによって変更された場合について説明します。 読み取り専用です。     |
-| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用です。      |
-| resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、使用されているドキュメントのプロパティを参照。 読み取り専用です。     |
+| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用      |
+| resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、使用されているドキュメントのプロパティを参照。 読み取り専用     |
 
 ## <a name="relationships"></a>リレーションシップ
 
-| プロパティ      | 種類          | 説明  |
+| プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
 | リソース      | Entity        | 使用された項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
 
@@ -54,3 +54,11 @@ ms.locfileid: "27976059"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

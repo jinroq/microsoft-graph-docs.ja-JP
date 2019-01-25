@@ -5,22 +5,22 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3049ca860d889e069e941f5437f4f560fef9ef44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942627"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525067"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを一覧表示します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サイトの[サイト][]内のサイトのページ[] ボックスの一覧][]から [サイト ページ] のコレクションを取得します。 (改ページ) では、サイト内のすべてのページが返されます。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[サイト]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -217,10 +217,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Enumerate the list of pages in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate"
-} -->
+  "tocPath": "Pages/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

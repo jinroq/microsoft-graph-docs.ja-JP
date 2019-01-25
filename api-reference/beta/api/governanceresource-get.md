@@ -2,23 +2,23 @@
 title: GovernanceResource を取得します。
 description: プロパティと、governanceResource オブジェクトの関係を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 16442ea971a635aedfd89f09c48ffddf14c83b95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: be24fb8822101f7a67a5bd60f1fe018cf1a08f6b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888033"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522148"
 ---
 # <a name="get-governanceresource"></a>GovernanceResource を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 プロパティと、 [governanceResource](../resources/governanceresource.md)オブジェクトの関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | Permissions              |
+|アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
@@ -32,7 +32,7 @@ ms.locfileid: "27888033"
 GET /privilegedAccess/azureResources/resources/{id}
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 このメソッド**のみ**をサポートしている`$select`と`$expand`の応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)です。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -80,10 +80,15 @@ Content-Length: 459
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceresource-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

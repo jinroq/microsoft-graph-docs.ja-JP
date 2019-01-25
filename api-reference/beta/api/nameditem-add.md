@@ -2,16 +2,16 @@
 title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: 57ae84505327f2afbe2936b2671b655e76a85bd4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: dd35f2ded1c08c5f6b99a017b89dd6b5b50026b7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836702"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525263"
 ---
 # <a name="add-named-item"></a>名前付きアイテムの追加
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 
@@ -40,11 +40,11 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|名前付きの項目の名前。|
-|reference|文字列|名前が参照する数式または範囲。|
-|comment|文字列|名前付きアイテムに関連付けられているコメント。|
+|name|string|名前付きの項目の名前。|
+|reference|string|名前が参照する数式または範囲。|
+|comment|string|名前付きアイテムに関連付けられているコメント。|
 
 ## <a name="response"></a>応答
 
@@ -100,10 +100,15 @@ Content-length: 109
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/nameditem-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 変更通知を使用して Microsoft グラフ API を取得するには
 description: Microsoft グラフ REST API では、webhook メカニズムを使用して、クライアントに通知を配信します。 クライアントは、通知を受信するのにはそれ自身の URL を構成する web サービスです。 クライアント アプリケーションは、変更時に状態を更新するのには通知を使用します。 購読して、着信の通知を処理する方法を含め、詳細については、セットを参照してくださいユーザー データの変更の通知を設定します。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fe571fe0a9a7c982ee7ce93b08457586134d7d91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02ab18d3fa8980211a4937433ad1616b0629bf8c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986138"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526215"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>変更通知を使用して Microsoft グラフ API を取得するには
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft グラフ REST API では、webhook メカニズムを使用して、クライアントに通知を配信します。 クライアントは、通知を受信するのにはそれ自身の URL を構成する web サービスです。 クライアント アプリケーションは、変更時に状態を更新するのには通知を使用します。 詳細についてなどを購読、受信通知を処理し、[ユーザー データの変更の通知を設定する](/graph/webhooks)を参照してください。
 
@@ -24,11 +24,11 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 - ユーザー
 - グループ
 - グループ会話
-- SharePoint サイトに関連付けられているドライブを含む、OneDrive で共有されているコンテンツ
-- ユーザーの個人用の OneDrive フォルダー
+- SharePoint サイトに関連付けられたドライブを含む、OneDrive で共有されるコンテンツ
+- ユーザーの個人用 OneDrive フォルダー
 - セキュリティの警告
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 一般に、サブスクリプション操作にはリソースへの読み取りアクセス許可が必要です。たとえば、メッセージの通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。記事「[サブスクリプションを作成する](../api/subscription-post-subscriptions.md)」では、リソースの種類ごとに必要なアクセス許可がリストされています。次の表に、アプリが特定のリソースの種類に対して Webhook を使用するために要求できるアクセス許可の種類を示します。
 
@@ -54,4 +54,12 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
-[アラート]: ./alert.md
+ 警告 : 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

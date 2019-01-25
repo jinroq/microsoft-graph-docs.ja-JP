@@ -2,16 +2,16 @@
 title: アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
 description: アプリケーションまたはサービス ・ プリンシパルに割り当てられているポリシー オブジェクトを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 3c66eece645313f7039f12aec708cba4581fb4bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875356"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518584"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 アプリケーションまたはサービス ・ プリンシパルに割り当てられている[ポリシー](../resources/policy.md)オブジェクトを取得します。
 
@@ -33,7 +33,7 @@ GET /applications/{id}/policies
 > 注意: 要求で"id"は、アプリケーションまたはサービス ・ プリンシパル"appid"プロパティではなく"id"プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -77,3 +77,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-assigned.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

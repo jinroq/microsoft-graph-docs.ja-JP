@@ -1,19 +1,19 @@
 ---
-title: 共有リソースの種類
+title: Shared リソースタイプ
 description: または特定のユーザーが共有ファイルを表すの把握。 次の共有ファイルがサポートされています。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2c3d91023e2d68704b54308dff9566673f71dfb0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973707"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524689"
 ---
-# <a name="shared-resource-type"></a>共有リソースの種類
+# <a name="shared-resource-type"></a>Shared リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 または特定のユーザーが共有ファイルを表すの把握。 次の共有ファイルがサポートされています。
 
@@ -30,16 +30,16 @@ ms.locfileid: "27973707"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 種類                      | 説明  |
+| プロパティ              | 型                      | 説明  |
 | -------------         |---------------            | -------------|
-| ID                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
+| id                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | 共有アイテムに関する詳細情報です。 読み取り専用です。        |
-| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用です。      |
-| resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、共有ドキュメントのプロパティを参照します。 読み取り専用です。       |
+| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用      |
+| resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、共有ドキュメントのプロパティを参照します。 読み取り専用       |
 
 ## <a name="relationships"></a>リレーションシップ
 
-| プロパティ      | 種類          | 説明  |
+| プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
 | リソース      | Entity        | 共有されている項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
 
@@ -56,3 +56,11 @@ ms.locfileid: "27973707"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 指定した outlookCategory オブジェクトを削除します�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 482db944d3adbeb7b7d283a87dcf98973c4bc03d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 87bfea6c1580d5d74813199d5d7c20e9123182a1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949557"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524241"
 ---
 # <a name="delete-outlook-category"></a>Outlook カテゴリを削除する
 
-> **重要**: [Microsoft Graph で/beta のバージョンの Api を選択し、プレビューでは、変更されることができます。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した [outlookCategory](../resources/outlookcategory.md) オブジェクトを削除します。
 
@@ -73,5 +73,8 @@ HTTP/1.1 204 No Content
   "description": "Delete outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }-->

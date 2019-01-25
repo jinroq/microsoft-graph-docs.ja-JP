@@ -4,16 +4,16 @@ description: 特定のノートブックにセクションをコピーします�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65a3dd079f0ed67e7c754f22f805de8ed8368c87
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ec5292aa7b11b268b73514af8aee42260e3d6a9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928207"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523324"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 特定のノートブックにセクションをコピーします。
 
@@ -48,7 +48,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 |:---------------|:--------|:----------|
 |siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
 |siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
-|グループ Id|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
+|groupId|文字列|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |id|String|必須。コピー先ノートブックの ID。 |
 |renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |
 
@@ -89,10 +89,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "section: copyToNotebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

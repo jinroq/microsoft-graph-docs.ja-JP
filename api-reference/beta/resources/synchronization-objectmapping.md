@@ -2,16 +2,16 @@
 title: objectMapping リソースの種類
 description: どのように特定のオブジェクト同期する必要があるソース ディレクトリからコピー先のディレクトリを定義します。 ソース ディレクトリ内のオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法を定義する具体的には、どのような (もしあれば) フィルターのスコープを使用するかどうかは、特定のオブジェクトを準備して、変換からのオブジェクトの属性がどのようにする必要がありますかを決定する必要があります先のディレクトリにソースです。
 localization_priority: Normal
-ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851752"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526915"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 どのように特定のオブジェクト同期する必要があるソース ディレクトリからコピー先のディレクトリを定義します。 ソース ディレクトリ内のオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法を定義する具体的には、どのような (もしあれば) フィルターのスコープを使用するかどうかは、特定のオブジェクトを準備して、変換からのオブジェクトの属性がどのようにする必要がありますかを決定する必要があります先のディレクトリにソースです。
 
@@ -19,13 +19,13 @@ ms.locfileid: "27851752"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 種類      | 説明    |
+| プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性のマッピングは、ソース オブジェクトからターゲット オブジェクトとフローの方法にマップする属性を定義します。 元のソースの値の変換をサポートするために多くの機能を利用できます。|
-|enabled        |ブール型    |`true`、このオブジェクトのマッピングが同期中に処理されます。 `false`、このオブジェクトのマッピングはスキップされます。|
+|enabled        |Boolean    |`true`、このオブジェクトのマッピングが同期中に処理されます。 `false`、このオブジェクトのマッピングはスキップされます。|
 |flowTypes      |objectFlowType    |どのフローの種類では、このオブジェクトのマッピングは有効です。 `Add`コピー先のディレクトリに新しいオブジェクトを作成`Update`、既存のオブジェクトを変更し、`Delete`既存のユーザーを deprovisions。 既定値は `Add, Update, Delete` です。 |
 |metadata       |metadataEntry コレクション    |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
-|名前           |String     |オブジェクトのマッピングのわかりやすい名前です。|
+|name           |String     |オブジェクトのマッピングのわかりやすい名前です。|
 |scope          |[filter](synchronization-filter.md)     |特定のオブジェクトを準備する必要があるかどうかを決定する際に使用するフィルターを定義します。 たとえば、米国内にあるユーザーのみを提供する可能性があります。|
 |sourceObjectName           |String     |ソース ディレクトリ内のオブジェクトの名前です。 ソース[ディレクトリの定義](synchronization-directorydefinition.md)からオブジェクトの名前と一致する必要があります。|
 |targetObjectName           |String     |ターゲット ディレクトリ内のオブジェクトの名前です。 ターゲット[ディレクトリの定義](synchronization-directorydefinition.md)からオブジェクトの名前と一致する必要があります。|
@@ -348,10 +348,15 @@ ms.locfileid: "27851752"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectMapping resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

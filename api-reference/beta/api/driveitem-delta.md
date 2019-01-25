@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b879b99fb03ab17af4701c96c4be973f1f752be9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991294"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525319"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このメソッドでは、アプリがドライブおよびその子への変更履歴を時間の経過とともに記録できます。
 
@@ -50,9 +50,9 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター   | 型  | 説明                                                                                                                          |
+| パラメーター   | 型  | サポートのメモ                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | 文字列 | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
+| token  | string | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -221,10 +221,15 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes"
-} -->
+  "tocPath": "Items/Sync changes",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

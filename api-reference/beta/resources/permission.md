@@ -4,21 +4,21 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal
-ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843317"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518850"
 ---
-# <a name="permission-resource-type"></a>リソースのアクセス許可の種類
+# <a name="permission-resource-type"></a>Permission リソース型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**アクセス許可**リソースは、 [driveItem](driveitem.md)リソースの共有権限に関する情報を提供します。
+**permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
 
 共有アクセス許可にはさまざまなフォームがあります。
-**アクセス許可**リソースは、リソースの面でこれらの異なる形式を表します。
+**permission** リソースは、これらの異なるフォームをリソースのファセットを通じて表します。
 
 >**注:** ビジネスと SharePoint のドキュメント ライブラリの OneDrive では、 **inheritedFrom**プロパティは返されません。
 
@@ -60,18 +60,18 @@ ms.locfileid: "27843317"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類                        | 説明
+| プロパティ            | 型                        | 説明
 |:--------------------|:----------------------------|:-------------------------
-| ID                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
+| id                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
 | grantedTo           | [IdentitySet][]             | ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。
 | grantedToIdentities | コレクション ([IdentitySet][]) | リンクの種類のアクセス許可のアクセス許可の付与先ユーザーの詳細です。 読み取り専用です。
 | invitation          | [SharingInvitation][]       | このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。
 | inheritedFrom       | [ItemReference][]           | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link                | [SharingLink][]             | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles               | Collection(String)          | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId             | String                      | この**[API の共有][]** を使用して共有アイテムにアクセスするために使用できる一意なトークンです。 読み取り専用です。
+| shareId             | String                      | **[共有][] API** 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
 | expirationDateTime  | DateTimeOffset              | Yyyy の形式で MM の DateTimeOffset の ddTHH:mm:ssZ は、アクセス許可の有効期限を示します。 DateTime.MinValue を示しますがこのアクセス許可の有効期限が設定されていません。 省略可能。
-| hasPassword         | ブール型                     | これは、応答でのみ表示されてパスワードがこのアクセス許可の設定があるかどうかを示します。 オプションおよび読み取り専用であり、OneDrive 個人のみです。
+| HasPassword         | ブール値                     | これは、応答でのみ表示されてパスワードがこのアクセス許可の設定があるかどうかを示します。 オプションおよび読み取り専用であり、OneDrive 個人のみです。
 
 ### <a name="roles-enumeration-values"></a>ロールの列挙値
 
@@ -99,7 +99,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 リンクを共有するためのいくつかの例を次に示します。
 
-### <a name="view-link"></a>ビューのリンク
+### <a name="view-link"></a>表示リンク
 
 このビューのリンクは、リンクを使用してすべてのユーザーに読み取り専用アクセスを提供します。
 
@@ -219,7 +219,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ## <a name="methods"></a>メソッド
 
-| Method                                                   | REST パス
+| メソッド                                                   | REST パス
 |:---------------------------------------------------------|:-----------------------
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を取得する](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
@@ -240,10 +240,15 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
-} -->
+  "tocPath": "Resources/Permission",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

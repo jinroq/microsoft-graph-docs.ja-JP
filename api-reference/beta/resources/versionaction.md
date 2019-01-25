@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
-ms.openlocfilehash: 1f315b26c45e337986784200fb6ec2c78612344b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c65b3cf021321a7e021c5fa4193abdcdce6c635a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866711"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520607"
 ---
 # <a name="versionaction-resource-type"></a>VersionAction リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [**itemActivity**][activity] に **VersionAction** リソースがある場合、アクティビティが新しいバージョンの作成を引き起こしたことを示します。
 
@@ -35,18 +35,23 @@ ms.locfileid: "27866711"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | Type   | 説明
+| プロパティ名 | 種類   | 説明
 |:--------------|:-------|:----------------------------------------------------
-| newVersion    | 文字列 | このアクションによって作成された新しいバージョンの名前。
+| newVersion    | string | このアクションによって作成された新しいバージョンの名前。
 
 ## <a name="remarks"></a>備考
 
 アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The VersionAction object provides information about an activity that resulted in a new item version.",
   "keywords": "activities,activity,action,version",
   "section": "documentation",
-  "tocPath": "Resources/VersionAction"
-} -->
+  "tocPath": "Resources/VersionAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/versionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

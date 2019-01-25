@@ -2,16 +2,16 @@
 title: AnonymousIpRiskEvent を取得します。
 description: プロパティと anonymousipriskevent オブジェクトの関係を取得します。
 localization_priority: Normal
-ms.openlocfilehash: a4a1483dd3b4bc984a418f1ff03083bf2977b5a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c306593d55792035377d18ad1888f5a4ca707aa6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859928"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519116"
 ---
 # <a name="get-anonymousipriskevent"></a>AnonymousIpRiskEvent を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 プロパティと anonymousipriskevent オブジェクトの関係を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -81,10 +81,15 @@ Content-length: 237
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get anonymousIpRiskEvent",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/anonymousipriskevent-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: コネクタ リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884624"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525732"
 ---
 # <a name="connector-resource-type"></a>コネクタ リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- Not supported items
 |[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
@@ -24,16 +24,16 @@ ms.locfileid: "27884624"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[コネクタを取得します。](../api/connector-get.md) | [コネクタ](connector.md) |コネクタ オブジェクトのプロパティと関係を参照してください。|
+|[コネクタを取得します。](../api/connector-get.md) | [Connector](connector.md) |コネクタ オブジェクトのプロパティと関係を参照してください。|
 |[memberOf を一覧表示する](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md)コレクション| コネクタに関連付けられている connectorGroup オブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|externalIp|String|コネクタ コンピューターのサービスによって検出されたと外部の IP アドレスです。 読み取り専用です。|
+|externalIp|String|コネクタ コンピューターのサービスによって検出されたと外部の IP アドレスです。 読み取り専用|
 |id|String| コネクタのオブジェクト id です。 <BR>読み取り専用です。|
-|マシン名|String| コネクタが実行されているマシンの名前です。 <BR>読み取り専用です。|
-|status|文字列| コネクタの状態を示します。 使用可能な値は、`active`、`inactive` です。 読み取り専用です。 |
+|マシン名|String| コネクタが実行されているマシンの名前です。 <BR>読み取り専用|
+|status|string| コネクタの状態を示します。 使用可能な値は、`active`、`inactive` です。 読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -64,10 +64,15 @@ ms.locfileid: "27884624"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "connector resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/connector.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

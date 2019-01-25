@@ -2,16 +2,16 @@
 title: secureScoreControlProfiles リソースの種類
 description: コントロールのデータごとのテナントのセキュリティで保護されたスコアを表します。 既定では、テナントのすべてのコントロールを返し、個々 のコントロールを明示的に取得できます。
 localization_priority: Normal
-ms.openlocfilehash: 866b2086ff5160744f848292cedf30c3cedf6daa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866221"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524430"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>secureScoreControlProfiles リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 コントロールのデータごとのテナントのセキュリティで保護されたスコアを表します。 既定では、テナントのすべてのコントロールを返し、個々 のコントロールを明示的に取得できます。
 
@@ -25,7 +25,7 @@ ms.locfileid: "27866221"
 
 ## <a name="properties"></a>プロパティ
 
-|名前 |種類 |説明 |
+|名前 |型 |説明 |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   テナントの GUID の文字列 id。  |
 |   controlName |   String  |   コントロールの名前です。 |
@@ -35,15 +35,15 @@ ms.locfileid: "27866221"
 |   actionType  |   String  |   アクションの種類 (構成、レビュー、動作) を制御します。 |
 |   service |   String  |   (Exchange、Sharepoint、Azure AD) のコントロールを所有しているサービスです。 |
 |   maxScore |  String  |   現在では、指定した日付の最大のスコアを取得します。   |
-|   層 |  String  |   制御層 (コア、防御の深さ、高度な)。    |
+|   階層 |  String  |   制御層 (コア、防御の深さ、高度な)。    |
 |   userImpact |    String  | コントロール (低、中、高) を実装するためのユーザーへの影響。    |
 |   implementationCost |    String  |   Implemmentating コントロール (低、中、高) のリソースのコストです。 |
 |   rank |  Int32   |   マイクロソフトのコントロールのレベルを調整します。   |
-|   脅威 |   文字列コレクション   |   コントロールを軽減する脅威の一覧 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、なりすましが行われる)。 |
-|   非推奨 |    ブール型 |   コントロールで減価償却されるかどうかを示すためにフラグを設定します。   |
+|   脅威 |   String コレクション   |   コントロールを軽減する脅威の一覧 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、なりすましが行われる)。 |
+|   非推奨 |    ブール値 |   コントロールで減価償却されるかどうかを示すためにフラグを設定します。   |
 |   改善計画 |   String  |   どのようなコントロールの説明は、改善に役立ちます。 |
 |   remediationImpact | String  |   改善のユーザーへの影響の説明です。 |
-|   actionUrl | String  |   URL は、コントロールが対象になることです。 |
+|   ActionURL | String  |   URL は、コントロールが対象になることです。 |
 |   controlStateUpdates |   [secureScoreControlStateUpdate](securescorecontrolstateupdate.md)コレクション |    テナントには、コントロールとしてのマークを指定するフラグ (無視して、レビュー、サード ・ パーティ) ([更新](../api/securescorecontrolprofiles-update.md)がサポートされています)。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -91,10 +91,15 @@ ms.locfileid: "27866221"
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScoreControlProfiles resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
