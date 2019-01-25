@@ -4,54 +4,54 @@ description: contactfolder オブジェクトのプロパティを更新しま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9b2244f17bf877c1f52ae5de812f65ba1eae3b98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956151"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520502"
 ---
-# <a name="update-contactfolder"></a><span data-ttu-id="63809-103">Update contactfolder</span><span class="sxs-lookup"><span data-stu-id="63809-103">Update contactfolder</span></span>
+# <a name="update-contactfolder"></a><span data-ttu-id="c1369-103">Update contactfolder</span><span class="sxs-lookup"><span data-stu-id="c1369-103">Update contactfolder</span></span>
 
-> <span data-ttu-id="63809-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="63809-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="63809-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="63809-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="63809-106">contactfolder オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="63809-106">Update the properties of contactfolder object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="63809-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="63809-107">Permissions</span></span>
-<span data-ttu-id="63809-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="63809-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1369-104">contactfolder オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c1369-104">Update the properties of contactfolder object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1369-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c1369-105">Permissions</span></span>
+<span data-ttu-id="c1369-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c1369-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="63809-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="63809-110">Permission type</span></span>      | <span data-ttu-id="63809-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="63809-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c1369-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c1369-108">Permission type</span></span>      | <span data-ttu-id="c1369-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c1369-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="63809-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="63809-112">Delegated (work or school account)</span></span> | <span data-ttu-id="63809-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63809-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="63809-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="63809-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63809-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63809-115">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="63809-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="63809-116">Application</span></span> | <span data-ttu-id="63809-117">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63809-117">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="c1369-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c1369-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c1369-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c1369-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c1369-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c1369-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1369-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c1369-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c1369-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c1369-114">Application</span></span> | <span data-ttu-id="c1369-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c1369-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="63809-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="63809-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1369-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c1369-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/contactFolders/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="63809-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="63809-119">Request headers</span></span>
-| <span data-ttu-id="63809-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="63809-120">Header</span></span>       | <span data-ttu-id="63809-121">値</span><span class="sxs-lookup"><span data-stu-id="63809-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c1369-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c1369-117">Request headers</span></span>
+| <span data-ttu-id="c1369-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c1369-118">Header</span></span>       | <span data-ttu-id="c1369-119">値</span><span class="sxs-lookup"><span data-stu-id="c1369-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="63809-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="63809-122">Authorization</span></span>  | <span data-ttu-id="63809-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="63809-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="63809-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63809-125">Content-Type</span></span>  | <span data-ttu-id="63809-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="63809-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="c1369-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c1369-120">Authorization</span></span>  | <span data-ttu-id="c1369-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c1369-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c1369-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c1369-123">Content-Type</span></span>  | <span data-ttu-id="c1369-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c1369-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="63809-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="63809-128">Request body</span></span>
-<span data-ttu-id="63809-p105">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="63809-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1369-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c1369-126">Request body</span></span>
+<span data-ttu-id="c1369-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="c1369-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="63809-132">プロパティ</span><span class="sxs-lookup"><span data-stu-id="63809-132">Property</span></span>     | <span data-ttu-id="63809-133">種類</span><span class="sxs-lookup"><span data-stu-id="63809-133">Type</span></span>   |<span data-ttu-id="63809-134">説明</span><span class="sxs-lookup"><span data-stu-id="63809-134">Description</span></span>|
+| <span data-ttu-id="c1369-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c1369-130">Property</span></span>     | <span data-ttu-id="c1369-131">型</span><span class="sxs-lookup"><span data-stu-id="c1369-131">Type</span></span>   |<span data-ttu-id="c1369-132">説明</span><span class="sxs-lookup"><span data-stu-id="c1369-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="63809-135">displayName</span><span class="sxs-lookup"><span data-stu-id="63809-135">displayName</span></span>|<span data-ttu-id="63809-136">String</span><span class="sxs-lookup"><span data-stu-id="63809-136">String</span></span>|<span data-ttu-id="63809-137">フォルダーの表示名。</span><span class="sxs-lookup"><span data-stu-id="63809-137">The folder's display name.</span></span>|
-|<span data-ttu-id="63809-138">parentFolderId</span><span class="sxs-lookup"><span data-stu-id="63809-138">parentFolderId</span></span>|<span data-ttu-id="63809-139">String</span><span class="sxs-lookup"><span data-stu-id="63809-139">String</span></span>|<span data-ttu-id="63809-140">フォルダーの親フォルダーの ID。</span><span class="sxs-lookup"><span data-stu-id="63809-140">The ID of the folder's parent folder.</span></span>|
-|<span data-ttu-id="63809-141">wellKnownName</span><span class="sxs-lookup"><span data-stu-id="63809-141">wellKnownName</span></span>|<span data-ttu-id="63809-142">文字列</span><span class="sxs-lookup"><span data-stu-id="63809-142">string</span></span>|<span data-ttu-id="63809-p106">フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。</span><span class="sxs-lookup"><span data-stu-id="63809-p106">The name of the folder if the folder is a recognized folder. Currently `contacts` is the only recognized contacts folder.</span></span>|
+|<span data-ttu-id="c1369-133">displayName</span><span class="sxs-lookup"><span data-stu-id="c1369-133">displayName</span></span>|<span data-ttu-id="c1369-134">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="c1369-134">String</span></span>|<span data-ttu-id="c1369-135">フォルダーの表示名。</span><span class="sxs-lookup"><span data-stu-id="c1369-135">The folder's display name.</span></span>|
+|<span data-ttu-id="c1369-136">parentFolderId</span><span class="sxs-lookup"><span data-stu-id="c1369-136">parentFolderId</span></span>|<span data-ttu-id="c1369-137">String</span><span class="sxs-lookup"><span data-stu-id="c1369-137">String</span></span>|<span data-ttu-id="c1369-138">フォルダーの親フォルダーの ID。</span><span class="sxs-lookup"><span data-stu-id="c1369-138">The ID of the folder's parent folder.</span></span>|
+|<span data-ttu-id="c1369-139">WellKnownName</span><span class="sxs-lookup"><span data-stu-id="c1369-139">wellKnownName</span></span>|<span data-ttu-id="c1369-140">string</span><span class="sxs-lookup"><span data-stu-id="c1369-140">string</span></span>|<span data-ttu-id="c1369-p105">フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。</span><span class="sxs-lookup"><span data-stu-id="c1369-p105">The name of the folder if the folder is a recognized folder. Currently `contacts` is the only recognized contacts folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="63809-145">応答</span><span class="sxs-lookup"><span data-stu-id="63809-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c1369-143">応答</span><span class="sxs-lookup"><span data-stu-id="c1369-143">Response</span></span>
 
-<span data-ttu-id="63809-146">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [contactFolder](../resources/contactfolder.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="63809-146">If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="63809-147">例</span><span class="sxs-lookup"><span data-stu-id="63809-147">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="63809-148">要求</span><span class="sxs-lookup"><span data-stu-id="63809-148">Request</span></span>
-<span data-ttu-id="63809-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="63809-149">Here is an example of the request.</span></span>
+<span data-ttu-id="c1369-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [contactFolder](../resources/contactfolder.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c1369-144">If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c1369-145">例</span><span class="sxs-lookup"><span data-stu-id="c1369-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c1369-146">要求</span><span class="sxs-lookup"><span data-stu-id="c1369-146">Request</span></span>
+<span data-ttu-id="c1369-147">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c1369-147">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_contactfolder"
@@ -66,8 +66,8 @@ Content-length: 84
   "displayName": "displayName-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="63809-150">応答</span><span class="sxs-lookup"><span data-stu-id="63809-150">Response</span></span>
-<span data-ttu-id="63809-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="63809-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c1369-148">応答</span><span class="sxs-lookup"><span data-stu-id="c1369-148">Response</span></span>
+<span data-ttu-id="c1369-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c1369-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +88,15 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update contactfolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

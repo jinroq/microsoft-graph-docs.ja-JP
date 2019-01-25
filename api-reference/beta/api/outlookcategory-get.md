@@ -4,51 +4,51 @@ description: 指定した outlookCategory オブジェクトのプロパティ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c296aea62fec7090cb76607911f6be178f1ebdbb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7529568b26c56258e63a8c1080c019aaf0f57e59
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949718"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520040"
 ---
-# <a name="get-outlook-category"></a><span data-ttu-id="4615a-103">Outlook カテゴリを取得する</span><span class="sxs-lookup"><span data-stu-id="4615a-103">Get Outlook category</span></span>
+# <a name="get-outlook-category"></a><span data-ttu-id="3986e-103">Outlook カテゴリを取得する</span><span class="sxs-lookup"><span data-stu-id="3986e-103">Get Outlook category</span></span>
 
-> <span data-ttu-id="4615a-104">**重要**: [Microsoft Graph で/beta のバージョンの Api を選択し、プレビューでは、変更されることができます。</span><span class="sxs-lookup"><span data-stu-id="4615a-104">**Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4615a-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4615a-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4615a-106">指定した [outlookCategory](../resources/outlookcategory.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="4615a-106">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+<span data-ttu-id="3986e-104">指定した [outlookCategory](../resources/outlookcategory.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="3986e-104">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4615a-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4615a-107">Permissions</span></span>
-<span data-ttu-id="4615a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4615a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3986e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3986e-105">Permissions</span></span>
+<span data-ttu-id="3986e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3986e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4615a-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4615a-110">Permission type</span></span>      | <span data-ttu-id="4615a-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4615a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3986e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3986e-108">Permission type</span></span>      | <span data-ttu-id="3986e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3986e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4615a-112">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="4615a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4615a-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="4615a-113">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="4615a-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4615a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4615a-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="4615a-115">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="4615a-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4615a-116">Application</span></span> | <span data-ttu-id="4615a-117">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="4615a-117">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="3986e-110">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="3986e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3986e-111">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="3986e-111">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="3986e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3986e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3986e-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="3986e-113">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="3986e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3986e-114">Application</span></span> | <span data-ttu-id="3986e-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="3986e-115">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4615a-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4615a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3986e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3986e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/masterCategories/{id}
 GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4615a-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4615a-119">Optional query parameters</span></span>
-<span data-ttu-id="4615a-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4615a-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3986e-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="3986e-117">Optional query parameters</span></span>
+<span data-ttu-id="3986e-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3986e-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4615a-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4615a-121">Request headers</span></span>
-| <span data-ttu-id="4615a-122">名前</span><span class="sxs-lookup"><span data-stu-id="4615a-122">Name</span></span>      |<span data-ttu-id="4615a-123">説明</span><span class="sxs-lookup"><span data-stu-id="4615a-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3986e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3986e-119">Request headers</span></span>
+| <span data-ttu-id="3986e-120">名前</span><span class="sxs-lookup"><span data-stu-id="3986e-120">Name</span></span>      |<span data-ttu-id="3986e-121">説明</span><span class="sxs-lookup"><span data-stu-id="3986e-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4615a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4615a-124">Authorization</span></span>  | <span data-ttu-id="4615a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4615a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3986e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3986e-122">Authorization</span></span>  | <span data-ttu-id="3986e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3986e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4615a-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="4615a-127">Request body</span></span>
-<span data-ttu-id="4615a-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4615a-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3986e-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="3986e-125">Request body</span></span>
+<span data-ttu-id="3986e-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3986e-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4615a-129">応答</span><span class="sxs-lookup"><span data-stu-id="4615a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3986e-127">応答</span><span class="sxs-lookup"><span data-stu-id="3986e-127">Response</span></span>
 
-<span data-ttu-id="4615a-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [outlookCategory](../resources/outlookcategory.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4615a-130">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4615a-131">例</span><span class="sxs-lookup"><span data-stu-id="4615a-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4615a-132">要求</span><span class="sxs-lookup"><span data-stu-id="4615a-132">Request</span></span>
-<span data-ttu-id="4615a-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4615a-133">Here is an example of the request.</span></span>
+<span data-ttu-id="3986e-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [outlookCategory](../resources/outlookcategory.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3986e-128">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3986e-129">例</span><span class="sxs-lookup"><span data-stu-id="3986e-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3986e-130">要求</span><span class="sxs-lookup"><span data-stu-id="3986e-130">Request</span></span>
+<span data-ttu-id="3986e-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3986e-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_outlookcategory"
@@ -56,8 +56,8 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
 ```
-##### <a name="response"></a><span data-ttu-id="4615a-134">応答</span><span class="sxs-lookup"><span data-stu-id="4615a-134">Response</span></span>
-<span data-ttu-id="4615a-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4615a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3986e-132">応答</span><span class="sxs-lookup"><span data-stu-id="3986e-132">Response</span></span>
+<span data-ttu-id="3986e-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3986e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,5 +84,7 @@ Content-length: 249
   "description": "Get outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

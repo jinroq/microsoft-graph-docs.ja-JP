@@ -4,43 +4,43 @@ description: 展開 '**イベント**のパラメーター
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 96df7d14adf4b5d2d46c559d31dcd935db29a070
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ffa2524939e5866bc74d255606a7a28297d691d2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922309"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521769"
 ---
-# <a name="get-eventmessage"></a><span data-ttu-id="f3fbe-103">eventMessage の取得</span><span class="sxs-lookup"><span data-stu-id="f3fbe-103">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="3535d-103">eventMessage の取得</span><span class="sxs-lookup"><span data-stu-id="3535d-103">Get eventMessage</span></span>
 
-> <span data-ttu-id="f3fbe-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f3fbe-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f3fbe-106">[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-106">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="f3fbe-107">適用、 `$expand` 、出席者の予定表に関連する[イベント](../resources/event.md)を取得する**イベント**のナビゲーション プロパティのパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-107">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="3535d-104">[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="3535d-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="3535d-105">適用、 `$expand` 、出席者の予定表に関連する[イベント](../resources/event.md)を取得する**イベント**のナビゲーション プロパティのパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="3535d-105">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="f3fbe-108">イベント メッセージの本文を html 形式またはテキスト形式で取得します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-108">Get the event message body in HTML or text format</span></span>
+### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="3535d-106">イベント メッセージの本文を html 形式またはテキスト形式で取得します。</span><span class="sxs-lookup"><span data-stu-id="3535d-106">Get the event message body in HTML or text format</span></span>
 
-<span data-ttu-id="f3fbe-109">イベント メッセージの本文は、html 形式またはテキスト形式で指定できます。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-109">Event message bodies can be in HTML or text format.</span></span>
+<span data-ttu-id="3535d-107">イベント メッセージの本文は、html 形式またはテキスト形式で指定できます。</span><span class="sxs-lookup"><span data-stu-id="3535d-107">Event message bodies can be in HTML or text format.</span></span>
 
-<span data-ttu-id="f3fbe-110">使用することができます、`Prefer: outlook.body-content-type`の**本体**と**uniqueBody**のプロパティで、目的の形式を指定するのにはヘッダーが返されます、`GET`の要求。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-110">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
+<span data-ttu-id="3535d-108">使用することができます、`Prefer: outlook.body-content-type`の**本体**と**uniqueBody**のプロパティで、目的の形式を指定するのにはヘッダーが返されます、`GET`の要求。</span><span class="sxs-lookup"><span data-stu-id="3535d-108">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
 
-- <span data-ttu-id="f3fbe-111">指定`Prefer: outlook.body-content-type="text"`テキスト形式で返されるイベント メッセージの本文を取得します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-111">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
-- <span data-ttu-id="f3fbe-112">指定`Prefer: outlook.body-content-type="html"`、または、イベント メッセージの本文を HTML 形式で取得するのには、ヘッダーをスキップしています。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-112">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
+- <span data-ttu-id="3535d-109">指定`Prefer: outlook.body-content-type="text"`テキスト形式で返されるイベント メッセージの本文を取得します。</span><span class="sxs-lookup"><span data-stu-id="3535d-109">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
+- <span data-ttu-id="3535d-110">指定`Prefer: outlook.body-content-type="html"`、または、イベント メッセージの本文を HTML 形式で取得するのには、ヘッダーをスキップしています。</span><span class="sxs-lookup"><span data-stu-id="3535d-110">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
 
-<span data-ttu-id="f3fbe-113">いずれかのヘッダーを指定すると、応答には対応する `Preference-Applied` ヘッダーが確認として含まれます。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-113">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
+<span data-ttu-id="3535d-111">いずれかのヘッダーを指定すると、応答には対応する `Preference-Applied` ヘッダーが確認として含まれます。</span><span class="sxs-lookup"><span data-stu-id="3535d-111">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
 
-- <span data-ttu-id="f3fbe-114">テキスト形式要求の場合: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="f3fbe-114">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
-- <span data-ttu-id="f3fbe-115">HTML 形式要求の場合: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="f3fbe-115">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
+- <span data-ttu-id="3535d-112">テキスト形式要求の場合: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="3535d-112">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
+- <span data-ttu-id="3535d-113">HTML 形式要求の場合: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="3535d-113">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3fbe-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f3fbe-116">Permissions</span></span>
-<span data-ttu-id="f3fbe-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3535d-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3535d-114">Permissions</span></span>
+<span data-ttu-id="3535d-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3535d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f3fbe-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f3fbe-119">Permission type</span></span>      | <span data-ttu-id="f3fbe-120">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f3fbe-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3535d-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3535d-117">Permission type</span></span>      | <span data-ttu-id="3535d-118">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3535d-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f3fbe-121">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f3fbe-121">Delegated (work or school account)</span></span> | <span data-ttu-id="f3fbe-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f3fbe-122">Mail.Read</span></span>    |
-|<span data-ttu-id="f3fbe-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f3fbe-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3fbe-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f3fbe-124">Mail.Read</span></span>    |
-|<span data-ttu-id="f3fbe-125">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f3fbe-125">Application</span></span> | <span data-ttu-id="f3fbe-126">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f3fbe-126">Mail.Read</span></span> |
+|<span data-ttu-id="3535d-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3535d-119">Delegated (work or school account)</span></span> | <span data-ttu-id="3535d-120">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3535d-120">Mail.Read</span></span>    |
+|<span data-ttu-id="3535d-121">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3535d-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3535d-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3535d-122">Mail.Read</span></span>    |
+|<span data-ttu-id="3535d-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3535d-123">Application</span></span> | <span data-ttu-id="3535d-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3535d-124">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f3fbe-127">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f3fbe-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3535d-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3535d-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -49,22 +49,22 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f3fbe-128">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f3fbe-128">Optional query parameters</span></span>
-<span data-ttu-id="f3fbe-129">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-129">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="f3fbe-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f3fbe-130">Request headers</span></span>
-| <span data-ttu-id="f3fbe-131">名前</span><span class="sxs-lookup"><span data-stu-id="f3fbe-131">Name</span></span>       | <span data-ttu-id="f3fbe-132">型</span><span class="sxs-lookup"><span data-stu-id="f3fbe-132">Type</span></span> | <span data-ttu-id="f3fbe-133">説明</span><span class="sxs-lookup"><span data-stu-id="f3fbe-133">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="3535d-126">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="3535d-126">Optional query parameters</span></span>
+<span data-ttu-id="3535d-127">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3535d-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3535d-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3535d-128">Request headers</span></span>
+| <span data-ttu-id="3535d-129">名前</span><span class="sxs-lookup"><span data-stu-id="3535d-129">Name</span></span>       | <span data-ttu-id="3535d-130">型</span><span class="sxs-lookup"><span data-stu-id="3535d-130">Type</span></span> | <span data-ttu-id="3535d-131">説明</span><span class="sxs-lookup"><span data-stu-id="3535d-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f3fbe-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3fbe-134">Authorization</span></span>  | <span data-ttu-id="f3fbe-135">string</span><span class="sxs-lookup"><span data-stu-id="f3fbe-135">string</span></span>  | <span data-ttu-id="f3fbe-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3535d-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="3535d-132">Authorization</span></span>  | <span data-ttu-id="3535d-133">string</span><span class="sxs-lookup"><span data-stu-id="3535d-133">string</span></span>  | <span data-ttu-id="3535d-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3535d-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f3fbe-138">要求本文</span><span class="sxs-lookup"><span data-stu-id="f3fbe-138">Request body</span></span>
-<span data-ttu-id="f3fbe-139">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3535d-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="3535d-136">Request body</span></span>
+<span data-ttu-id="3535d-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3535d-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f3fbe-140">応答</span><span class="sxs-lookup"><span data-stu-id="f3fbe-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3535d-138">応答</span><span class="sxs-lookup"><span data-stu-id="3535d-138">Response</span></span>
 
-<span data-ttu-id="f3fbe-141">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [eventMessage](../resources/eventmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-141">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f3fbe-142">例</span><span class="sxs-lookup"><span data-stu-id="f3fbe-142">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="f3fbe-143">要求 1</span><span class="sxs-lookup"><span data-stu-id="f3fbe-143">Request 1</span></span>
-<span data-ttu-id="f3fbe-144">最初の例では、イベント メッセージ ID に基づいてイベント メッセージのプロパティを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-144">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="3535d-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [eventMessage](../resources/eventmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3535d-139">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3535d-140">例</span><span class="sxs-lookup"><span data-stu-id="3535d-140">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="3535d-141">要求 1</span><span class="sxs-lookup"><span data-stu-id="3535d-141">Request 1</span></span>
+<span data-ttu-id="3535d-142">最初の例では、イベント メッセージ ID に基づいてイベント メッセージのプロパティを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3535d-142">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -72,8 +72,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_lAAA=')
 ```
-##### <a name="response-1"></a><span data-ttu-id="f3fbe-145">応答 1</span><span class="sxs-lookup"><span data-stu-id="f3fbe-145">Response 1</span></span>
-<span data-ttu-id="f3fbe-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="3535d-143">応答 1</span><span class="sxs-lookup"><span data-stu-id="3535d-143">Response 1</span></span>
+<span data-ttu-id="3535d-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3535d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -179,8 +179,8 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="f3fbe-149">要求 2</span><span class="sxs-lookup"><span data-stu-id="f3fbe-149">Request 2</span></span>
-<span data-ttu-id="f3fbe-150">2 番目の例では、イベント メッセージに関連付けられているイベントを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-150">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="f3fbe-151">イベント メッセージ ID を使用してイベントのメッセージを取得し、イベント メッセージ上に明示的にキャストを提供してその **event** ナビゲーション プロパティにアクセスし、$expand パラメーターを適用してそのイベントのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-151">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="3535d-147">要求 2</span><span class="sxs-lookup"><span data-stu-id="3535d-147">Request 2</span></span>
+<span data-ttu-id="3535d-148">2 番目の例では、イベント メッセージに関連付けられているイベントを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3535d-148">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="3535d-149">イベント メッセージ ID を使用してイベントのメッセージを取得し、イベント メッセージ上に明示的にキャストを提供してその **event** ナビゲーション プロパティにアクセスし、$expand パラメーターを適用してそのイベントのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="3535d-149">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -188,9 +188,9 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a><span data-ttu-id="f3fbe-152">応答 2</span><span class="sxs-lookup"><span data-stu-id="f3fbe-152">Response 2</span></span>
-<span data-ttu-id="f3fbe-153">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-153">Here is an example of the response.</span></span> <span data-ttu-id="f3fbe-154">関連付けられているイベントのプロパティは、応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-154">The properties of the associated event are returned in the response.</span></span>
-<span data-ttu-id="f3fbe-155">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-155">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f3fbe-156">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f3fbe-156">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="3535d-150">応答 2</span><span class="sxs-lookup"><span data-stu-id="3535d-150">Response 2</span></span>
+<span data-ttu-id="3535d-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3535d-151">Here is an example of the response.</span></span> <span data-ttu-id="3535d-152">関連付けられているイベントのプロパティは、応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="3535d-152">The properties of the associated event are returned in the response.</span></span>
+<span data-ttu-id="3535d-153">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="3535d-153">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="3535d-154">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3535d-154">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
@@ -389,10 +389,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get eventMessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
