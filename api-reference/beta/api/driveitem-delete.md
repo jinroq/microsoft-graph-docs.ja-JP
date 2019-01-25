@@ -5,30 +5,30 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 40b29bee213da3693917a37b14368112ea295c12
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5317cee9288bb4a78b66d497b4a4b58f945c9198
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926240"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529020"
 ---
-# <a name="delete-a-driveitem"></a><span data-ttu-id="fc767-102">DriveItem を削除する</span><span class="sxs-lookup"><span data-stu-id="fc767-102">Delete a DriveItem</span></span>
+# <a name="delete-a-driveitem"></a><span data-ttu-id="2f441-102">DriveItem を削除する</span><span class="sxs-lookup"><span data-stu-id="2f441-102">Delete a DriveItem</span></span>
 
-> <span data-ttu-id="fc767-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="fc767-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fc767-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fc767-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fc767-p102">[DriveItem](../resources/driveitem.md) を、ID またはパスを使用して削除します。このメソッドを使用して項目を削除すると、アイテムは完全に削除されず、ごみ箱に移動するだけであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="fc767-p102">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
+<span data-ttu-id="2f441-p101">[DriveItem](../resources/driveitem.md) を、ID またはパスを使用して削除します。このメソッドを使用して項目を削除すると、アイテムは完全に削除されず、ごみ箱に移動するだけであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="2f441-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fc767-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fc767-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2f441-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2f441-105">Permissions</span></span>
 
-<span data-ttu-id="fc767-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc767-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2f441-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f441-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fc767-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fc767-110">Permission type</span></span>      | <span data-ttu-id="fc767-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fc767-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2f441-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2f441-108">Permission type</span></span>      | <span data-ttu-id="2f441-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2f441-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fc767-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fc767-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fc767-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc767-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fc767-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fc767-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc767-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc767-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fc767-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fc767-116">Application</span></span> | <span data-ttu-id="fc767-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc767-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="2f441-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2f441-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2f441-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f441-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2f441-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2f441-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f441-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f441-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2f441-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2f441-114">Application</span></span> | <span data-ttu-id="2f441-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f441-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fc767-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fc767-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f441-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2f441-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,15 +40,15 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="fc767-119">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fc767-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="2f441-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2f441-117">Optional request headers</span></span>
 
-| <span data-ttu-id="fc767-120">名前</span><span class="sxs-lookup"><span data-stu-id="fc767-120">Name</span></span>          | <span data-ttu-id="fc767-121">種類</span><span class="sxs-lookup"><span data-stu-id="fc767-121">Type</span></span>   | <span data-ttu-id="fc767-122">説明</span><span class="sxs-lookup"><span data-stu-id="fc767-122">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="2f441-118">名前</span><span class="sxs-lookup"><span data-stu-id="2f441-118">Name</span></span>          | <span data-ttu-id="2f441-119">型</span><span class="sxs-lookup"><span data-stu-id="2f441-119">Type</span></span>   | <span data-ttu-id="2f441-120">説明</span><span class="sxs-lookup"><span data-stu-id="2f441-120">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="fc767-123">if-match</span><span class="sxs-lookup"><span data-stu-id="fc767-123">if-match</span></span>      | <span data-ttu-id="fc767-124">String</span><span class="sxs-lookup"><span data-stu-id="fc767-124">String</span></span> | <span data-ttu-id="fc767-125">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="fc767-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="2f441-121">if-match</span><span class="sxs-lookup"><span data-stu-id="2f441-121">if-match</span></span>      | <span data-ttu-id="2f441-122">String</span><span class="sxs-lookup"><span data-stu-id="2f441-122">String</span></span> | <span data-ttu-id="2f441-123">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="2f441-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="fc767-126">例</span><span class="sxs-lookup"><span data-stu-id="fc767-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2f441-124">例</span><span class="sxs-lookup"><span data-stu-id="2f441-124">Example</span></span>
 
-<span data-ttu-id="fc767-127">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="fc767-127">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="2f441-125">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="2f441-125">Here is an example of how to call this API.</span></span>
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
@@ -56,9 +56,9 @@ DELETE /users/{userId}/drive/items/{itemId}
 DELETE /me/drive/items/{item-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="fc767-128">応答</span><span class="sxs-lookup"><span data-stu-id="fc767-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2f441-126">応答</span><span class="sxs-lookup"><span data-stu-id="2f441-126">Response</span></span>
 
-<span data-ttu-id="fc767-129">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="fc767-129">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
+<span data-ttu-id="2f441-127">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="2f441-127">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -66,16 +66,21 @@ DELETE /me/drive/items/{item-id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="fc767-130">エラー応答</span><span class="sxs-lookup"><span data-stu-id="fc767-130">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="2f441-128">エラー応答</span><span class="sxs-lookup"><span data-stu-id="2f441-128">Error responses</span></span>
 
-<span data-ttu-id="fc767-131">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc767-131">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="2f441-129">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f441-129">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
-} -->
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

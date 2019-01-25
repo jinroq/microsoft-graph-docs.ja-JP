@@ -1,52 +1,52 @@
 ---
 title: リストの予定
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: 指定した bookingbusiness の bookingAppointment オブジェクトのリストを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 3334e4db060868fa7b514d50d1d879e4d0182b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95813191678d3d2dd16e9d1b18db5869c0fbf1e1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946834"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529272"
 ---
-# <a name="list-appointments"></a><span data-ttu-id="adc12-104">リストの予定</span><span class="sxs-lookup"><span data-stu-id="adc12-104">List appointments</span></span>
+# <a name="list-appointments"></a><span data-ttu-id="7394a-103">リストの予定</span><span class="sxs-lookup"><span data-stu-id="7394a-103">List appointments</span></span>
 
- > <span data-ttu-id="adc12-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="adc12-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="adc12-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="adc12-106">Use of these APIs in production applications is not supported.</span></span>
- 
-<span data-ttu-id="adc12-107">指定した[bookingbusiness](../resources/bookingbusiness.md)の[bookingAppointment](../resources/bookingappointment.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="adc12-107">Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="adc12-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="adc12-108">Permissions</span></span>
-<span data-ttu-id="adc12-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adc12-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="adc12-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="adc12-111">Permission type</span></span>      | <span data-ttu-id="adc12-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="adc12-112">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="7394a-104">指定した[bookingbusiness](../resources/bookingbusiness.md)の[bookingAppointment](../resources/bookingappointment.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="7394a-104">Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7394a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7394a-105">Permissions</span></span>
+<span data-ttu-id="7394a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7394a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7394a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7394a-108">Permission type</span></span>      | <span data-ttu-id="7394a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7394a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="adc12-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="adc12-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="adc12-114">Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="adc12-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="adc12-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="adc12-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="adc12-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="adc12-116">Not supported.</span></span>   |
-|<span data-ttu-id="adc12-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="adc12-117">Application</span></span> | <span data-ttu-id="adc12-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="adc12-118">Not supported.</span></span>  | 
+|<span data-ttu-id="7394a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7394a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="7394a-111">Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="7394a-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="7394a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7394a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7394a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7394a-113">Not supported.</span></span>   |
+|<span data-ttu-id="7394a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7394a-114">Application</span></span> | <span data-ttu-id="7394a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7394a-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="adc12-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="adc12-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7394a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7394a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="adc12-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="adc12-120">Optional query parameters</span></span>
-<span data-ttu-id="adc12-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="adc12-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7394a-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7394a-117">Optional query parameters</span></span>
+<span data-ttu-id="7394a-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7394a-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="adc12-122">代わりに、一連の日付の範囲内での予約業務の予定を取得する`$filter`、その日付の範囲を[、予定表ビューを取得](bookingbusiness-list-calendarview.md)します。</span><span class="sxs-lookup"><span data-stu-id="adc12-122">To get the set of appointments of a Bookings business within a date range, instead of `$filter`, [get the calendarView](bookingbusiness-list-calendarview.md) for that date range.</span></span> 
+<span data-ttu-id="7394a-119">代わりに、一連の日付の範囲内での予約業務の予定を取得する`$filter`、その日付の範囲を[、予定表ビューを取得](bookingbusiness-list-calendarview.md)します。</span><span class="sxs-lookup"><span data-stu-id="7394a-119">To get the set of appointments of a Bookings business within a date range, instead of `$filter`, [get the calendarView](bookingbusiness-list-calendarview.md) for that date range.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="adc12-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="adc12-123">Request headers</span></span>
-| <span data-ttu-id="adc12-124">名前</span><span class="sxs-lookup"><span data-stu-id="adc12-124">Name</span></span>      |<span data-ttu-id="adc12-125">説明</span><span class="sxs-lookup"><span data-stu-id="adc12-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7394a-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7394a-120">Request headers</span></span>
+| <span data-ttu-id="7394a-121">名前</span><span class="sxs-lookup"><span data-stu-id="7394a-121">Name</span></span>      |<span data-ttu-id="7394a-122">説明</span><span class="sxs-lookup"><span data-stu-id="7394a-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="adc12-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="adc12-126">Authorization</span></span>  | <span data-ttu-id="adc12-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="adc12-127">Bearer {code}</span></span>|
+| <span data-ttu-id="7394a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7394a-123">Authorization</span></span>  | <span data-ttu-id="7394a-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7394a-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="adc12-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="adc12-128">Request body</span></span>
-<span data-ttu-id="adc12-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="adc12-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="adc12-130">応答</span><span class="sxs-lookup"><span data-stu-id="adc12-130">Response</span></span>
-<span data-ttu-id="adc12-131">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingAppointment](../resources/bookingappointment.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="adc12-131">If successful, this method returns a `200 OK` response code and collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="adc12-132">例</span><span class="sxs-lookup"><span data-stu-id="adc12-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="adc12-133">要求</span><span class="sxs-lookup"><span data-stu-id="adc12-133">Request</span></span>
-<span data-ttu-id="adc12-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="adc12-134">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7394a-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="7394a-125">Request body</span></span>
+<span data-ttu-id="7394a-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7394a-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7394a-127">応答</span><span class="sxs-lookup"><span data-stu-id="7394a-127">Response</span></span>
+<span data-ttu-id="7394a-128">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingAppointment](../resources/bookingappointment.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="7394a-128">If successful, this method returns a `200 OK` response code and collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7394a-129">例</span><span class="sxs-lookup"><span data-stu-id="7394a-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7394a-130">要求</span><span class="sxs-lookup"><span data-stu-id="7394a-130">Request</span></span>
+<span data-ttu-id="7394a-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7394a-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_appointments"
@@ -54,8 +54,8 @@ GET /bookingBusinesses/{id}/appointments
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 ```
-##### <a name="response"></a><span data-ttu-id="adc12-135">応答</span><span class="sxs-lookup"><span data-stu-id="adc12-135">Response</span></span>
-<span data-ttu-id="adc12-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="adc12-136">The following is an example of the response.</span></span> <span data-ttu-id="adc12-137">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="adc12-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="adc12-138">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="adc12-138">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7394a-132">応答</span><span class="sxs-lookup"><span data-stu-id="7394a-132">Response</span></span>
+<span data-ttu-id="7394a-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7394a-133">The following is an example of the response.</span></span> <span data-ttu-id="7394a-134">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7394a-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="7394a-135">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7394a-135">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -243,10 +243,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List appointments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list-appointments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
