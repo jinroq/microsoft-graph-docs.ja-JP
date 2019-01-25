@@ -1,61 +1,65 @@
 ---
 title: グループの一覧表示
-description: Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
+description: Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 05d3872fbc376933a0ff2fe772a79239e4d62928
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5081c5013c1bf7c1a1bfbcff58afe5a83aa67bc9
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955171"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726576"
 ---
-# <a name="list-groups"></a><span data-ttu-id="6de1a-103">グループを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="6de1a-103">List groups</span></span>
-<span data-ttu-id="6de1a-p101">Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。各グループの[既定のプロパティ](../api/group-get.md#default-properties)が返されます。</span><span class="sxs-lookup"><span data-stu-id="6de1a-p101">List all the groups available in an organization, including but not limited to Office 365 Groups. The [default properties](../api/group-get.md#default-properties) of each group are returned.</span></span>
+# <a name="list-groups"></a><span data-ttu-id="e3aa8-103">グループの一覧表示</span><span class="sxs-lookup"><span data-stu-id="e3aa8-103">List groups</span></span>
+<span data-ttu-id="e3aa8-104">Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-104">List all the groups available in an organization, including but not limited to Office 365 Groups.</span></span>
 
-<span data-ttu-id="6de1a-106">Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="6de1a-106">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
-```
-GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
+<span data-ttu-id="e3aa8-105">この操作は既定で各グループのプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-105">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="e3aa8-106">これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-106">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> 
 
-<span data-ttu-id="6de1a-107">OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="6de1a-107">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
-```
-GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
-```
+<span data-ttu-id="e3aa8-107">既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-107">To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="e3aa8-108">[例](group-get.md#request-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-108">See an [example](group-get.md#request-2).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6de1a-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6de1a-108">Permissions</span></span>
-<span data-ttu-id="6de1a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6de1a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e3aa8-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e3aa8-109">Permissions</span></span>
+<span data-ttu-id="e3aa8-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6de1a-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6de1a-111">Permission type</span></span>      | <span data-ttu-id="6de1a-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6de1a-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e3aa8-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e3aa8-112">Permission type</span></span>      | <span data-ttu-id="e3aa8-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e3aa8-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6de1a-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6de1a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6de1a-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6de1a-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6de1a-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6de1a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6de1a-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6de1a-116">Not supported.</span></span>    |
-|<span data-ttu-id="6de1a-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6de1a-117">Application</span></span> | <span data-ttu-id="6de1a-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6de1a-118">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="e3aa8-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e3aa8-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e3aa8-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3aa8-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e3aa8-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e3aa8-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3aa8-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-117">Not supported.</span></span>    |
+|<span data-ttu-id="e3aa8-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e3aa8-118">Application</span></span> | <span data-ttu-id="e3aa8-119">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3aa8-119">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6de1a-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6de1a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3aa8-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e3aa8-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6de1a-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6de1a-120">Optional query parameters</span></span>
-<span data-ttu-id="6de1a-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6de1a-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e3aa8-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e3aa8-121">Optional query parameters</span></span>
+<span data-ttu-id="e3aa8-122">Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="e3aa8-122">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
+```
+GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+```
 
-## <a name="request-headers"></a><span data-ttu-id="6de1a-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6de1a-122">Request headers</span></span>
-| <span data-ttu-id="6de1a-123">名前</span><span class="sxs-lookup"><span data-stu-id="6de1a-123">Name</span></span>       | <span data-ttu-id="6de1a-124">種類</span><span class="sxs-lookup"><span data-stu-id="6de1a-124">Type</span></span> | <span data-ttu-id="6de1a-125">説明</span><span class="sxs-lookup"><span data-stu-id="6de1a-125">Description</span></span>|
+<span data-ttu-id="e3aa8-123">次の例のように、OData クエリ オプション `$orderby` を使用して、組織内のグループを **displayName** 値で並べ替えることができます。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="e3aa8-123">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
+```
+GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
+```
+
+<span data-ttu-id="e3aa8-124">OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="e3aa8-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e3aa8-125">Request headers</span></span>
+| <span data-ttu-id="e3aa8-126">名前</span><span class="sxs-lookup"><span data-stu-id="e3aa8-126">Name</span></span>       | <span data-ttu-id="e3aa8-127">型</span><span class="sxs-lookup"><span data-stu-id="e3aa8-127">Type</span></span> | <span data-ttu-id="e3aa8-128">説明</span><span class="sxs-lookup"><span data-stu-id="e3aa8-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6de1a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6de1a-126">Authorization</span></span>  | <span data-ttu-id="6de1a-127">string</span><span class="sxs-lookup"><span data-stu-id="6de1a-127">string</span></span>  | <span data-ttu-id="6de1a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6de1a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e3aa8-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3aa8-129">Authorization</span></span>  | <span data-ttu-id="e3aa8-130">string</span><span class="sxs-lookup"><span data-stu-id="e3aa8-130">string</span></span>  | <span data-ttu-id="e3aa8-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6de1a-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="6de1a-130">Request body</span></span>
-<span data-ttu-id="6de1a-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6de1a-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3aa8-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="e3aa8-133">Request body</span></span>
+<span data-ttu-id="e3aa8-134">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6de1a-132">応答</span><span class="sxs-lookup"><span data-stu-id="6de1a-132">Response</span></span>
-<span data-ttu-id="6de1a-133">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="6de1a-133">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e3aa8-135">応答</span><span class="sxs-lookup"><span data-stu-id="e3aa8-135">Response</span></span>
+<span data-ttu-id="e3aa8-136">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span> <span data-ttu-id="e3aa8-137">応答には、各グループの既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-137">The response includes only the default properties of each group.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6de1a-134">例</span><span class="sxs-lookup"><span data-stu-id="6de1a-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="6de1a-135">要求</span><span class="sxs-lookup"><span data-stu-id="6de1a-135">Request</span></span>
-<span data-ttu-id="6de1a-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6de1a-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e3aa8-138">例</span><span class="sxs-lookup"><span data-stu-id="e3aa8-138">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="e3aa8-139">要求</span><span class="sxs-lookup"><span data-stu-id="e3aa8-139">Request</span></span>
+<span data-ttu-id="e3aa8-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -64,44 +68,82 @@ GET /groups
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response"></a><span data-ttu-id="6de1a-137">応答</span><span class="sxs-lookup"><span data-stu-id="6de1a-137">Response</span></span>
-<span data-ttu-id="6de1a-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6de1a-138">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="e3aa8-141">応答</span><span class="sxs-lookup"><span data-stu-id="e3aa8-141">Response</span></span>
+<span data-ttu-id="e3aa8-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-142">The following is an example of the response.</span></span>
 
-><span data-ttu-id="6de1a-139">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6de1a-139">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="6de1a-140">実際の呼び出しでは [既定のプロパティ](../api/group-get.md#default-properties)が返されます。</span><span class="sxs-lookup"><span data-stu-id="6de1a-140">The [default properties](../api/group-get.md#default-properties) will be returned from an actual call.</span></span>
+><span data-ttu-id="e3aa8-143">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="e3aa8-144">実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="e3aa8-144">All the default properties are returned for each group in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
- {
-  "value": [
-    {
-      "id": "id-value",
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "groupTypes": [
-        "groupTypes-value"
-      ],
-      "mail": "mail-value",
-      "mailEnabled": true,
-      "mailNickname": "mailNickname-value",
-      "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-      "onPremisesSyncEnabled": true,
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "securityEnabled": true,
-      "visibility": "visibility-value"
-    }
-  ]
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "creationOptions": [],
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "creationOptions": [],
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "groupTypes": [],
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 
 ```

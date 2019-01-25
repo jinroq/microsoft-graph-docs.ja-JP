@@ -1,4 +1,5 @@
 name: Graph のドキュメント
+metadata: {}
 items:
   - name: Microsoft Graph の概要
     href: overview.md
@@ -166,6 +167,13 @@ items:
             href: planner-concept-overview.md
           - name: チームワーク
             href: teams-concept-overview.md
+            items:
+              - name: グループとチームを作成する
+                href: teams-create-group-and-team.md
+              - name: すべてのチームのリストを作成する
+                href: teams-list-all-teams.md
+              - name: 組み込みのタブを設定する
+                href: teams-configuring-builtin-tabs.md
           - name: ブックとグラフ
             href: excel-concept-overview.md
             items:
