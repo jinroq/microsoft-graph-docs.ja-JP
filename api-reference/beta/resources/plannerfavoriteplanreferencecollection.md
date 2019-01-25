@@ -4,27 +4,27 @@ description: " 値は、plannerFavoritePlanReference オブジェクトです。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 333d7f354f056945de52687eefc8bb862ac48e75
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c473d4101a1247420e641b532ea04dfbc1a26d2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967113"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519487"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="ef977-103">plannerFavoritePlanReferenceCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ef977-103">plannerFavoritePlanReferenceCollection resource type</span></span>
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="f12c6-103">plannerFavoritePlanReferenceCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f12c6-103">plannerFavoritePlanReferenceCollection resource type</span></span>
 
-> <span data-ttu-id="ef977-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="ef977-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ef977-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ef977-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef977-106">**PlannerFavoritePlanReferenceCollection**リソースでは、ユーザーがお気に入りとしてマークされている計画への参照のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="ef977-106">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="ef977-107">このリソースは、オープン型であり、 [plannerUser](planneruser.md)オブジェクトの一部であります。</span><span class="sxs-lookup"><span data-stu-id="ef977-107">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="ef977-108">プロパティ名、プロパティ値のペアでは、対応する計画の ID をします。値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="ef977-108">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
-
-
-## <a name="properties"></a><span data-ttu-id="ef977-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ef977-109">Properties</span></span>
-<span data-ttu-id="ef977-110">このオープン型のプロパティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="ef977-110">You can define the properties of this open type.</span></span> <span data-ttu-id="ef977-111">プロパティ名は、 `id` [plannerPlan](plannerplan.md)リソースの値とその値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ef977-111">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="ef977-112">お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。</span><span class="sxs-lookup"><span data-stu-id="ef977-112">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+<span data-ttu-id="f12c6-104">**PlannerFavoritePlanReferenceCollection**リソースでは、ユーザーがお気に入りとしてマークされている計画への参照のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="f12c6-104">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="f12c6-105">このリソースは、オープン型であり、 [plannerUser](planneruser.md)オブジェクトの一部であります。</span><span class="sxs-lookup"><span data-stu-id="f12c6-105">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="f12c6-106">プロパティ名、プロパティ値のペアでは、対応する計画の ID をします。値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f12c6-106">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="ef977-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ef977-113">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="f12c6-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f12c6-107">Properties</span></span>
+<span data-ttu-id="f12c6-108">このオープン型のプロパティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="f12c6-108">You can define the properties of this open type.</span></span> <span data-ttu-id="f12c6-109">プロパティ名は、 `id` [plannerPlan](plannerplan.md)リソースの値とその値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f12c6-109">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="f12c6-110">お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。</span><span class="sxs-lookup"><span data-stu-id="f12c6-110">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
-<span data-ttu-id="ef977-114">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ef977-114">The following is a JSON representation of the resource.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="f12c6-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f12c6-111">JSON representation</span></span>
+
+<span data-ttu-id="f12c6-112">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f12c6-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,10 +51,15 @@ ms.locfileid: "27967113"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerFavoritePlanReferenceCollection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerfavoriteplanreferencecollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
