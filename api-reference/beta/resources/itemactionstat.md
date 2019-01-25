@@ -4,20 +4,20 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionStat
 localization_priority: Normal
-ms.openlocfilehash: 1d2ab438e7aaf5b0a6aede99290394a9a4ea7f0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 39209671b63b991a8fb3ccf1c830c8557fce27c1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879528"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509638"
 ---
-# <a name="itemactionstat-resource-type"></a><span data-ttu-id="fef48-102">itemActionStat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fef48-102">itemActionStat resource type</span></span>
+# <a name="itemactionstat-resource-type"></a><span data-ttu-id="dfc78-102">itemActionStat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dfc78-102">itemActionStat resource type</span></span>
 
-> <span data-ttu-id="fef48-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="fef48-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fef48-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fef48-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fef48-105">**ItemActionStat**リソースでは、集計の詳細については、期間内にアクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="fef48-105">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
+<span data-ttu-id="dfc78-103">**ItemActionStat**リソースでは、集計の詳細については、期間内にアクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="dfc78-103">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fef48-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fef48-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dfc78-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dfc78-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,17 +32,22 @@ ms.locfileid: "27879528"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="fef48-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fef48-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dfc78-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfc78-105">Properties</span></span>
 
-| <span data-ttu-id="fef48-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fef48-108">Property</span></span>    | <span data-ttu-id="fef48-109">種類</span><span class="sxs-lookup"><span data-stu-id="fef48-109">Type</span></span>  | <span data-ttu-id="fef48-110">説明</span><span class="sxs-lookup"><span data-stu-id="fef48-110">Description</span></span>
+| <span data-ttu-id="dfc78-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfc78-106">Property</span></span>    | <span data-ttu-id="dfc78-107">型</span><span class="sxs-lookup"><span data-stu-id="dfc78-107">Type</span></span>  | <span data-ttu-id="dfc78-108">説明</span><span class="sxs-lookup"><span data-stu-id="dfc78-108">Description</span></span>
 |:------------|:------|:-------------------------------------------------------
-| <span data-ttu-id="fef48-111">actionCount</span><span class="sxs-lookup"><span data-stu-id="fef48-111">actionCount</span></span> | <span data-ttu-id="fef48-112">Int32</span><span class="sxs-lookup"><span data-stu-id="fef48-112">Int32</span></span> | <span data-ttu-id="fef48-113">アクションが発生した回数です。</span><span class="sxs-lookup"><span data-stu-id="fef48-113">The number of times the action took place.</span></span> <span data-ttu-id="fef48-114">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fef48-114">Read-only.</span></span>
-| <span data-ttu-id="fef48-115">actorCount</span><span class="sxs-lookup"><span data-stu-id="fef48-115">actorCount</span></span>  | <span data-ttu-id="fef48-116">Int32</span><span class="sxs-lookup"><span data-stu-id="fef48-116">Int32</span></span> | <span data-ttu-id="fef48-117">アクションを実行する異なるアクターの数です。</span><span class="sxs-lookup"><span data-stu-id="fef48-117">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="fef48-118">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fef48-118">Read-only.</span></span>
+| <span data-ttu-id="dfc78-109">actionCount</span><span class="sxs-lookup"><span data-stu-id="dfc78-109">actionCount</span></span> | <span data-ttu-id="dfc78-110">Int32</span><span class="sxs-lookup"><span data-stu-id="dfc78-110">Int32</span></span> | <span data-ttu-id="dfc78-111">アクションが発生した回数です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-111">The number of times the action took place.</span></span> <span data-ttu-id="dfc78-112">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-112">Read-only.</span></span>
+| <span data-ttu-id="dfc78-113">actorCount</span><span class="sxs-lookup"><span data-stu-id="dfc78-113">actorCount</span></span>  | <span data-ttu-id="dfc78-114">Int32</span><span class="sxs-lookup"><span data-stu-id="dfc78-114">Int32</span></span> | <span data-ttu-id="dfc78-115">アクションを実行する異なるアクターの数です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-115">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="dfc78-116">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-116">Read-only.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionStat object provides aggregate details about an action over a period of time.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionStat"
-} -->
+  "tocPath": "Resources/ItemActionStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactionstat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

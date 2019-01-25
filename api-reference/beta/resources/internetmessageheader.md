@@ -2,31 +2,31 @@
 title: internetMessageHeader リソースの種類
 description: '提供する、RFC5322 で定義されている、インターネット メッセージのヘッダーを表すキーと値のペア '
 localization_priority: Normal
-ms.openlocfilehash: b4bc08a03d9d37738b84f7f1c9938278fb921a37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e748e6badd3e6bad6adb02a9df46a40a7241d636
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828498"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511668"
 ---
-# <a name="internetmessageheader-resource-type"></a><span data-ttu-id="f7754-103">internetMessageHeader リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f7754-103">internetMessageHeader resource type</span></span>
+# <a name="internetmessageheader-resource-type"></a><span data-ttu-id="c6c4a-103">internetMessageHeader リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c6c4a-103">internetMessageHeader resource type</span></span>
 
-> <span data-ttu-id="f7754-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f7754-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f7754-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f7754-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f7754-106">[RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、インターネット メッセージ ヘッダーを表すキーと値のペア。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。</span><span class="sxs-lookup"><span data-stu-id="f7754-106">A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides details of the network path taken by a message from the sender to the recipient.</span></span> 
+<span data-ttu-id="c6c4a-104">[RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、インターネット メッセージ ヘッダーを表すキーと値のペア。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。</span><span class="sxs-lookup"><span data-stu-id="c6c4a-104">A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides details of the network path taken by a message from the sender to the recipient.</span></span> 
 
-<span data-ttu-id="f7754-107">インターネット メッセージ ヘッダーの例については、「[View e-mail message headers (電子メールのメッセージ ヘッダーを表示する)](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7754-107">For examples of an Internet message header, see [View e-mail message headers](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).</span></span>
+<span data-ttu-id="c6c4a-105">インターネット メッセージ ヘッダーの例については、「[View e-mail message headers (電子メールのメッセージ ヘッダーを表示する)](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6c4a-105">For examples of an Internet message header, see [View e-mail message headers](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="f7754-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7754-108">Properties</span></span>
-| <span data-ttu-id="f7754-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7754-109">Property</span></span>     | <span data-ttu-id="f7754-110">種類</span><span class="sxs-lookup"><span data-stu-id="f7754-110">Type</span></span>   |<span data-ttu-id="f7754-111">説明</span><span class="sxs-lookup"><span data-stu-id="f7754-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c6c4a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c6c4a-106">Properties</span></span>
+| <span data-ttu-id="c6c4a-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c6c4a-107">Property</span></span>     | <span data-ttu-id="c6c4a-108">型</span><span class="sxs-lookup"><span data-stu-id="c6c4a-108">Type</span></span>   |<span data-ttu-id="c6c4a-109">説明</span><span class="sxs-lookup"><span data-stu-id="c6c4a-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f7754-112">name</span><span class="sxs-lookup"><span data-stu-id="f7754-112">name</span></span>|<span data-ttu-id="f7754-113">文字列</span><span class="sxs-lookup"><span data-stu-id="f7754-113">string</span></span>|<span data-ttu-id="f7754-114">キーと値のペアの、キーの部分を表します。</span><span class="sxs-lookup"><span data-stu-id="f7754-114">Represents the key in a key-value pair.</span></span>|
-|<span data-ttu-id="f7754-115">value</span><span class="sxs-lookup"><span data-stu-id="f7754-115">value</span></span>|<span data-ttu-id="f7754-116">文字列</span><span class="sxs-lookup"><span data-stu-id="f7754-116">string</span></span>|<span data-ttu-id="f7754-117">キーと値のペアの、値の部分を表します。</span><span class="sxs-lookup"><span data-stu-id="f7754-117">The value in a key-value pair.</span></span>|
+|<span data-ttu-id="c6c4a-110">name</span><span class="sxs-lookup"><span data-stu-id="c6c4a-110">name</span></span>|<span data-ttu-id="c6c4a-111">string</span><span class="sxs-lookup"><span data-stu-id="c6c4a-111">string</span></span>|<span data-ttu-id="c6c4a-112">キーと値のペアの、キーの部分を表します。</span><span class="sxs-lookup"><span data-stu-id="c6c4a-112">Represents the key in a key-value pair.</span></span>|
+|<span data-ttu-id="c6c4a-113">value</span><span class="sxs-lookup"><span data-stu-id="c6c4a-113">value</span></span>|<span data-ttu-id="c6c4a-114">string</span><span class="sxs-lookup"><span data-stu-id="c6c4a-114">string</span></span>|<span data-ttu-id="c6c4a-115">キーと値のペアの、値の部分を表します。</span><span class="sxs-lookup"><span data-stu-id="c6c4a-115">The value in a key-value pair.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f7754-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f7754-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c6c4a-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c6c4a-116">JSON representation</span></span>
 
-<span data-ttu-id="f7754-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f7754-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c6c4a-117">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="c6c4a-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -46,10 +46,15 @@ ms.locfileid: "27828498"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "internetMessageHeader resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/internetmessageheader.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

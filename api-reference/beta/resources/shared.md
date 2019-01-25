@@ -4,22 +4,22 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
-ms.openlocfilehash: cae69a60691d388570d29176fc20aac429907f8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 33b12ea8e530fd862619c9c20e77a76989efb619
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838991"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507699"
 ---
-# <a name="shared-resource-type"></a><span data-ttu-id="31f37-102">Shared リソースの種類</span><span class="sxs-lookup"><span data-stu-id="31f37-102">Shared resource type</span></span>
+# <a name="shared-resource-type"></a><span data-ttu-id="12cab-102">Shared リソースの種類</span><span class="sxs-lookup"><span data-stu-id="12cab-102">Shared resource type</span></span>
 
-> <span data-ttu-id="31f37-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="31f37-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="31f37-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31f37-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31f37-p102">**Shared** リソースは、DriveItem が他のユーザーと共有されていることを示します。リソースは、項目がどのように共有されているかに関する情報を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="31f37-p102">The **Shared** resource indicates a DriveItem has been shared with others. The resource includes information about how the item is shared.</span></span>
+<span data-ttu-id="12cab-p101">Shared リソースは、DriveItem が他のユーザーと共有されていることを示します。リソースは、項目がどのように共有されているかに関する情報を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="12cab-p101">The **Shared** resource indicates a DriveItem has been shared with others. The resource includes information about how the item is shared.</span></span>
 
-<span data-ttu-id="31f37-107">[**Driveitem**](driveitem.md) が null でない **shared** ファセットを持つ場合、項目は共有されています。</span><span class="sxs-lookup"><span data-stu-id="31f37-107">If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.</span></span>
+<span data-ttu-id="12cab-105">[**Driveitem**](driveitem.md) が null でない **shared** ファセットを持つ場合、項目は共有されています。</span><span class="sxs-lookup"><span data-stu-id="12cab-105">If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="31f37-108">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="31f37-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="12cab-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="12cab-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,31 +36,36 @@ ms.locfileid: "27838991"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="31f37-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="31f37-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="12cab-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="12cab-107">Properties</span></span>
 
-| <span data-ttu-id="31f37-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="31f37-110">Property</span></span>       | <span data-ttu-id="31f37-111">種類</span><span class="sxs-lookup"><span data-stu-id="31f37-111">Type</span></span>                          | <span data-ttu-id="31f37-112">説明</span><span class="sxs-lookup"><span data-stu-id="31f37-112">Description</span></span>
+| <span data-ttu-id="12cab-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="12cab-108">Property</span></span>       | <span data-ttu-id="12cab-109">型</span><span class="sxs-lookup"><span data-stu-id="12cab-109">Type</span></span>                          | <span data-ttu-id="12cab-110">説明</span><span class="sxs-lookup"><span data-stu-id="12cab-110">Description</span></span>
 | :------------- |:------------------------------|:----------------------------
-| <span data-ttu-id="31f37-113">owner</span><span class="sxs-lookup"><span data-stu-id="31f37-113">owner</span></span>          | [<span data-ttu-id="31f37-114">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="31f37-114">IdentitySet</span></span>](identityset.md) | <span data-ttu-id="31f37-p103">共有項目の所有者の ID。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="31f37-p103">The identity of the owner of the shared item. Read-only.</span></span>
-| <span data-ttu-id="31f37-117">scope</span><span class="sxs-lookup"><span data-stu-id="31f37-117">scope</span></span>          | <span data-ttu-id="31f37-118">String</span><span class="sxs-lookup"><span data-stu-id="31f37-118">String</span></span>                        | <span data-ttu-id="31f37-p104">`anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="31f37-p104">Indicates the scope of how the item is shared: `anonymous`, `organization`, or `users`. Read-only.</span></span>
-| <span data-ttu-id="31f37-121">sharedBy</span><span class="sxs-lookup"><span data-stu-id="31f37-121">sharedBy</span></span>       | [<span data-ttu-id="31f37-122">identitySet</span><span class="sxs-lookup"><span data-stu-id="31f37-122">identitySet</span></span>](identityset.md) | <span data-ttu-id="31f37-p105">項目を共有するユーザーの ID。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="31f37-p105">The identity of the user who shared the item. Read-only.</span></span>
-| <span data-ttu-id="31f37-125">sharedDateTime</span><span class="sxs-lookup"><span data-stu-id="31f37-125">sharedDateTime</span></span> | <span data-ttu-id="31f37-126">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="31f37-126">DateTimeOffset</span></span>                | <span data-ttu-id="31f37-p106">項目が共有された UTC 日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="31f37-p106">The UTC date and time when the item was shared. Read-only.</span></span>
+| <span data-ttu-id="12cab-111">owner</span><span class="sxs-lookup"><span data-stu-id="12cab-111">owner</span></span>          | [<span data-ttu-id="12cab-112">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="12cab-112">IdentitySet</span></span>](identityset.md) | <span data-ttu-id="12cab-p102">共有項目の所有者の ID。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12cab-p102">The identity of the owner of the shared item. Read-only.</span></span>
+| <span data-ttu-id="12cab-115">scope</span><span class="sxs-lookup"><span data-stu-id="12cab-115">scope</span></span>          | <span data-ttu-id="12cab-116">文字列</span><span class="sxs-lookup"><span data-stu-id="12cab-116">String</span></span>                        | <span data-ttu-id="12cab-p103">`anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="12cab-p103">Indicates the scope of how the item is shared: `anonymous`, `organization`, or `users`. Read-only.</span></span>
+| <span data-ttu-id="12cab-119">sharedBy</span><span class="sxs-lookup"><span data-stu-id="12cab-119">sharedBy</span></span>       | [<span data-ttu-id="12cab-120">identitySet</span><span class="sxs-lookup"><span data-stu-id="12cab-120">identitySet</span></span>](identityset.md) | <span data-ttu-id="12cab-p104">項目を共有するユーザーの ID。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="12cab-p104">The identity of the user who shared the item. Read-only.</span></span>
+| <span data-ttu-id="12cab-123">sharedDateTime</span><span class="sxs-lookup"><span data-stu-id="12cab-123">sharedDateTime</span></span> | <span data-ttu-id="12cab-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="12cab-124">DateTimeOffset</span></span>                | <span data-ttu-id="12cab-p105">項目が共有された UTC 日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="12cab-p105">The UTC date and time when the item was shared. Read-only.</span></span>
 
-## <a name="scope-values"></a><span data-ttu-id="31f37-129">スコープの値</span><span class="sxs-lookup"><span data-stu-id="31f37-129">Scope values</span></span>
+## <a name="scope-values"></a><span data-ttu-id="12cab-127">スコープの値</span><span class="sxs-lookup"><span data-stu-id="12cab-127">Scope values</span></span>
 
-| <span data-ttu-id="31f37-130">値</span><span class="sxs-lookup"><span data-stu-id="31f37-130">Value</span></span>          | <span data-ttu-id="31f37-131">説明</span><span class="sxs-lookup"><span data-stu-id="31f37-131">Description</span></span>                                                                           |
+| <span data-ttu-id="12cab-128">値</span><span class="sxs-lookup"><span data-stu-id="12cab-128">Value</span></span>          | <span data-ttu-id="12cab-129">説明</span><span class="sxs-lookup"><span data-stu-id="12cab-129">Description</span></span>                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
-| `anonymous`    | <span data-ttu-id="31f37-132">項目は、リンクを持つすべてのユーザーに対して機能するリンクを使用して共有されます。</span><span class="sxs-lookup"><span data-stu-id="31f37-132">The item is shared by using a link that works for anyone with the link.</span></span>               |
-| `organization` | <span data-ttu-id="31f37-133">項目は、所有者の組織内にいるすべてのユーザーに対して機能するリンクを使用して共有されます。</span><span class="sxs-lookup"><span data-stu-id="31f37-133">The item is shared by using a link that works for anyone in the owner's organization.</span></span> |
-| `users`        | <span data-ttu-id="31f37-134">項目は、特定のユーザーのみと共有されます。</span><span class="sxs-lookup"><span data-stu-id="31f37-134">The item is shared with specific users only.</span></span>                                          |
+| `anonymous`    | <span data-ttu-id="12cab-130">項目は、リンクを持つすべてのユーザーに対して機能するリンクを使用して共有されます。</span><span class="sxs-lookup"><span data-stu-id="12cab-130">The item is shared by using a link that works for anyone with the link.</span></span>               |
+| `organization` | <span data-ttu-id="12cab-131">項目は、所有者の組織内にいるすべてのユーザーに対して機能するリンクを使用して共有されます。</span><span class="sxs-lookup"><span data-stu-id="12cab-131">The item is shared by using a link that works for anyone in the owner's organization.</span></span> |
+| `users`        | <span data-ttu-id="12cab-132">項目は、特定のユーザーのみと共有されます。</span><span class="sxs-lookup"><span data-stu-id="12cab-132">The item is shared with specific users only.</span></span>                                          |
 
-## <a name="remarks"></a><span data-ttu-id="31f37-135">備考</span><span class="sxs-lookup"><span data-stu-id="31f37-135">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="12cab-133">備考</span><span class="sxs-lookup"><span data-stu-id="12cab-133">Remarks</span></span>
 
-<span data-ttu-id="31f37-136">**driveItem** のファセットに関する詳細については、「[**driveItem**](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31f37-136">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
+<span data-ttu-id="12cab-134">**driveItem** のファセットに関する詳細については、「[**driveItem**](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12cab-134">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Shared"
-} -->
+  "tocPath": "Facets/Shared",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

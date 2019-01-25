@@ -4,123 +4,137 @@ description: グループ オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 7de0b9dac4d1bf3295cd01bbd522d1f18314c098
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917189"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353091"
 ---
-# <a name="get-group"></a><span data-ttu-id="b7ab0-103">グループを取得する</span><span class="sxs-lookup"><span data-stu-id="b7ab0-103">Get group</span></span>
-<span data-ttu-id="b7ab0-104">グループ オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-104">Get the properties and relationships of a group object.</span></span>
+# <a name="get-group"></a><span data-ttu-id="e22b1-103">グループを取得する</span><span class="sxs-lookup"><span data-stu-id="e22b1-103">Get group</span></span>
+<span data-ttu-id="e22b1-104">グループ オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-104">Get the properties and relationships of a group object.</span></span>
 
-##### <a name="default-properties"></a><span data-ttu-id="b7ab0-105">既定のプロパティ</span><span class="sxs-lookup"><span data-stu-id="b7ab0-105">Default properties</span></span>
+<span data-ttu-id="e22b1-105">「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-105">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="e22b1-106">既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-106">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="e22b1-107">[例](#request-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e22b1-107">See an [example](#request-2).</span></span>
 
-<span data-ttu-id="b7ab0-p101">以下は、グループを取得または一覧表示するときに返されるプロパティの既定のセットを表します。これらは、利用可能なすべてのプロパティのサブセットです。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-p101">The following represent the default set of properties that are returned when getting or listing groups. These are a subset of all available properties.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e22b1-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e22b1-108">Permissions</span></span>
+<span data-ttu-id="e22b1-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e22b1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="b7ab0-108">description</span><span class="sxs-lookup"><span data-stu-id="b7ab0-108">description</span></span>
-* <span data-ttu-id="b7ab0-109">displayName</span><span class="sxs-lookup"><span data-stu-id="b7ab0-109">displayName</span></span>
-* <span data-ttu-id="b7ab0-110">groupTypes</span><span class="sxs-lookup"><span data-stu-id="b7ab0-110">groupTypes</span></span>
-* <span data-ttu-id="b7ab0-111">id</span><span class="sxs-lookup"><span data-stu-id="b7ab0-111">id</span></span>
-* <span data-ttu-id="b7ab0-112">mail</span><span class="sxs-lookup"><span data-stu-id="b7ab0-112">mail</span></span>
-* <span data-ttu-id="b7ab0-113">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="b7ab0-113">mailEnabled</span></span>
-* <span data-ttu-id="b7ab0-114">mailNickname</span><span class="sxs-lookup"><span data-stu-id="b7ab0-114">mailNickname</span></span>
-* <span data-ttu-id="b7ab0-115">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="b7ab0-115">onPremisesLastSyncDateTime</span></span>
-* <span data-ttu-id="b7ab0-116">onPremisesSecurityIdentifier</span><span class="sxs-lookup"><span data-stu-id="b7ab0-116">onPremisesSecurityIdentifier</span></span>
-* <span data-ttu-id="b7ab0-117">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="b7ab0-117">onPremisesSyncEnabled</span></span>
-* <span data-ttu-id="b7ab0-118">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="b7ab0-118">proxyAddresses</span></span>
-* <span data-ttu-id="b7ab0-119">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="b7ab0-119">securityEnabled</span></span>
-* <span data-ttu-id="b7ab0-120">visibility</span><span class="sxs-lookup"><span data-stu-id="b7ab0-120">visibility</span></span>
-
-<span data-ttu-id="b7ab0-121">次のグループ プロパティは既定では返されません。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-121">The following group properties are not returned by default:</span></span>
-
-* <span data-ttu-id="b7ab0-122">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="b7ab0-122">allowExternalSenders</span></span>
-* <span data-ttu-id="b7ab0-123">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="b7ab0-123">autoSubscribeNewMembers</span></span>
-* <span data-ttu-id="b7ab0-124">isSubscribedByMail</span><span class="sxs-lookup"><span data-stu-id="b7ab0-124">isSubscribedByMail</span></span>
-* <span data-ttu-id="b7ab0-125">unseenCount</span><span class="sxs-lookup"><span data-stu-id="b7ab0-125">unseenCount</span></span>
-
-<span data-ttu-id="b7ab0-p102">これらのプロパティを取得するには、**$select** クエリ パラメーターを使用します。次に、例を示します。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-p102">To get these properties, use the **$select** query parameter. The following are examples:</span></span> 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-
-## <a name="permissions"></a><span data-ttu-id="b7ab0-128">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b7ab0-128">Permissions</span></span>
-<span data-ttu-id="b7ab0-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="b7ab0-131">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b7ab0-131">Permission type</span></span>      | <span data-ttu-id="b7ab0-132">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b7ab0-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e22b1-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e22b1-111">Permission type</span></span>      | <span data-ttu-id="e22b1-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e22b1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b7ab0-133">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b7ab0-133">Delegated (work or school account)</span></span> | <span data-ttu-id="b7ab0-134">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7ab0-134">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b7ab0-135">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b7ab0-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7ab0-136">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-136">Not supported.</span></span>    |
-|<span data-ttu-id="b7ab0-137">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b7ab0-137">Application</span></span> | <span data-ttu-id="b7ab0-138">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7ab0-138">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="e22b1-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e22b1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e22b1-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e22b1-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e22b1-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e22b1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e22b1-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e22b1-116">Not supported.</span></span>    |
+|<span data-ttu-id="e22b1-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e22b1-117">Application</span></span> | <span data-ttu-id="e22b1-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e22b1-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b7ab0-139">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b7ab0-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e22b1-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e22b1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b7ab0-140">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b7ab0-140">Optional query parameters</span></span>
-<span data-ttu-id="b7ab0-141">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-141">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e22b1-120">省略可能なクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e22b1-120">Optional query parameters</span></span>
+<span data-ttu-id="e22b1-121">既定では返されないものも含め、特定のグループのプロパティを取得するには `$select` を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e22b1-121">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span> <span data-ttu-id="e22b1-122">次の[例](#request-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e22b1-122">See an [example](#request-2).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b7ab0-142">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b7ab0-142">Request headers</span></span>
-| <span data-ttu-id="b7ab0-143">名前</span><span class="sxs-lookup"><span data-stu-id="b7ab0-143">Name</span></span>       | <span data-ttu-id="b7ab0-144">種類</span><span class="sxs-lookup"><span data-stu-id="b7ab0-144">Type</span></span> | <span data-ttu-id="b7ab0-145">説明</span><span class="sxs-lookup"><span data-stu-id="b7ab0-145">Description</span></span>|
+<span data-ttu-id="e22b1-123">OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e22b1-123">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="e22b1-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e22b1-124">Request headers</span></span>
+| <span data-ttu-id="e22b1-125">名前</span><span class="sxs-lookup"><span data-stu-id="e22b1-125">Name</span></span>       | <span data-ttu-id="e22b1-126">型</span><span class="sxs-lookup"><span data-stu-id="e22b1-126">Type</span></span> | <span data-ttu-id="e22b1-127">説明</span><span class="sxs-lookup"><span data-stu-id="e22b1-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b7ab0-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7ab0-146">Authorization</span></span>  | <span data-ttu-id="b7ab0-147">string</span><span class="sxs-lookup"><span data-stu-id="b7ab0-147">string</span></span>  | <span data-ttu-id="b7ab0-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e22b1-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="e22b1-128">Authorization</span></span>  | <span data-ttu-id="e22b1-129">string</span><span class="sxs-lookup"><span data-stu-id="e22b1-129">string</span></span>  | <span data-ttu-id="e22b1-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e22b1-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b7ab0-150">要求本文</span><span class="sxs-lookup"><span data-stu-id="b7ab0-150">Request body</span></span>
-<span data-ttu-id="b7ab0-151">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e22b1-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="e22b1-132">Request body</span></span>
+<span data-ttu-id="e22b1-133">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e22b1-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b7ab0-152">応答</span><span class="sxs-lookup"><span data-stu-id="b7ab0-152">Response</span></span>
-<span data-ttu-id="b7ab0-153">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[グループ](../resources/group.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-153">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e22b1-134">応答</span><span class="sxs-lookup"><span data-stu-id="e22b1-134">Response</span></span>
+<span data-ttu-id="e22b1-135">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-135">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="e22b1-136">`$select` を使用して特定のプロパティを指定していない限り、既定のプロパティを返します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-136">It returns the default properties unless you use `$select` to specify specific properties.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7ab0-154">例</span><span class="sxs-lookup"><span data-stu-id="b7ab0-154">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="b7ab0-155">要求</span><span class="sxs-lookup"><span data-stu-id="b7ab0-155">Request</span></span>
-<span data-ttu-id="b7ab0-156">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-156">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e22b1-137">例</span><span class="sxs-lookup"><span data-stu-id="e22b1-137">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="e22b1-138">要求 1</span><span class="sxs-lookup"><span data-stu-id="e22b1-138">Request 1</span></span>
+<span data-ttu-id="e22b1-139">GET 要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-139">The following is an example of a request.</span></span> 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### <a name="response"></a><span data-ttu-id="b7ab0-157">応答</span><span class="sxs-lookup"><span data-stu-id="b7ab0-157">Response</span></span>
-<span data-ttu-id="b7ab0-158">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-158">The following is an example of the response.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="e22b1-140">応答 1</span><span class="sxs-lookup"><span data-stu-id="e22b1-140">Response 1</span></span>
+<span data-ttu-id="e22b1-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-141">The following is an example of the response.</span></span> <span data-ttu-id="e22b1-142">既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e22b1-142">It includes only the default properties.</span></span>
 
-><span data-ttu-id="b7ab0-159">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b7ab0-160">実際の呼び出しでは、前に示したように既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b7ab0-160">The default properties will be returned from an actual call, as described before.</span></span>
+><span data-ttu-id="e22b1-143">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="e22b1-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="e22b1-144">実際の呼び出しでは、すべて既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="e22b1-144">All the default properties are returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
-  "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-22T00:51:37Z",
+    "creationOptions": [],
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library2@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "smtp:library7423@contoso.com",
+        "SMTP:library2@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a><span data-ttu-id="e22b1-145">要求 2</span><span class="sxs-lookup"><span data-stu-id="e22b1-145">Request 2</span></span>
+<span data-ttu-id="e22b1-146">`$select` クエリ オプションを使用して、既定では返されないいくつかのプロパティを取得する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-146">The next example uses a `$select` query option to get a few properties that are not returned by default.</span></span> 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a><span data-ttu-id="e22b1-147">応答 2</span><span class="sxs-lookup"><span data-stu-id="e22b1-147">Response 2</span></span>
+<span data-ttu-id="e22b1-148">要求された既定以外のプロパティを含む応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e22b1-148">The following is an example of the response which includes the requested non-default properties.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 

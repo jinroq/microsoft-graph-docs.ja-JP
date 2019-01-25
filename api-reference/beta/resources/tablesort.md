@@ -4,43 +4,43 @@ description: テーブル オブジェクトの並べ替え操作を管理しま
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5e5e93fb1cccb420e8da08015109c81dc45ae688
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 612e0cb7d59011f04ae992f80119fc1da572b582
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966490"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511745"
 ---
-# <a name="tablesort-resource-type"></a><span data-ttu-id="53548-103">TableSort リソースの種類</span><span class="sxs-lookup"><span data-stu-id="53548-103">TableSort resource type</span></span>
+# <a name="tablesort-resource-type"></a><span data-ttu-id="dfd87-103">TableSort リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dfd87-103">TableSort resource type</span></span>
 
-> <span data-ttu-id="53548-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="53548-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="53548-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="53548-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="53548-106">テーブル オブジェクトの並べ替え操作を管理します。</span><span class="sxs-lookup"><span data-stu-id="53548-106">Manages sorting operations on Table objects.</span></span>
+<span data-ttu-id="dfd87-104">テーブル オブジェクトの並べ替え操作を管理します。</span><span class="sxs-lookup"><span data-stu-id="dfd87-104">Manages sorting operations on Table objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="53548-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="53548-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="dfd87-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="dfd87-105">Methods</span></span>
 
-| <span data-ttu-id="53548-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="53548-108">Method</span></span>           | <span data-ttu-id="53548-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="53548-109">Return Type</span></span>    |<span data-ttu-id="53548-110">説明</span><span class="sxs-lookup"><span data-stu-id="53548-110">Description</span></span>|
+| <span data-ttu-id="dfd87-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="dfd87-106">Method</span></span>           | <span data-ttu-id="dfd87-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="dfd87-107">Return Type</span></span>    |<span data-ttu-id="dfd87-108">説明</span><span class="sxs-lookup"><span data-stu-id="dfd87-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="53548-111">TableSort を取得する</span><span class="sxs-lookup"><span data-stu-id="53548-111">Get TableSort</span></span>](../api/tablesort-get.md) | [<span data-ttu-id="53548-112">TableSort</span><span class="sxs-lookup"><span data-stu-id="53548-112">TableSort</span></span>](tablesort.md) |<span data-ttu-id="53548-113">tableSort オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="53548-113">Read properties and relationships of tableSort object.</span></span>|
-|[<span data-ttu-id="53548-114">Apply</span><span class="sxs-lookup"><span data-stu-id="53548-114">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="53548-115">なし</span><span class="sxs-lookup"><span data-stu-id="53548-115">None</span></span>|<span data-ttu-id="53548-116">並べ替え操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="53548-116">Perform a sort operation.</span></span>|
-|[<span data-ttu-id="53548-117">Clear</span><span class="sxs-lookup"><span data-stu-id="53548-117">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="53548-118">なし</span><span class="sxs-lookup"><span data-stu-id="53548-118">None</span></span>|<span data-ttu-id="53548-p102">テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。</span><span class="sxs-lookup"><span data-stu-id="53548-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
-|[<span data-ttu-id="53548-121">Reapply</span><span class="sxs-lookup"><span data-stu-id="53548-121">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="53548-122">なし</span><span class="sxs-lookup"><span data-stu-id="53548-122">None</span></span>|<span data-ttu-id="53548-123">テーブルに、現在の並べ替えパラメーターを再適用します。</span><span class="sxs-lookup"><span data-stu-id="53548-123">Reapplies the current sorting parameters to the table.</span></span>|
+|<span data-ttu-id="dfd87-109">TableSort を取得する</span><span class="sxs-lookup"><span data-stu-id="dfd87-109">[Get TableSort](../api/tablesort-get.md)</span></span> | [<span data-ttu-id="dfd87-110">TableSort</span><span class="sxs-lookup"><span data-stu-id="dfd87-110">TableSort</span></span>](tablesort.md) |<span data-ttu-id="dfd87-111">tableSort オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="dfd87-111">Read properties and relationships of tableSort object.</span></span>|
+|[<span data-ttu-id="dfd87-112">Apply</span><span class="sxs-lookup"><span data-stu-id="dfd87-112">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="dfd87-113">なし</span><span class="sxs-lookup"><span data-stu-id="dfd87-113">None</span></span>|<span data-ttu-id="dfd87-114">並べ替え操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="dfd87-114">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="dfd87-115">Clear</span><span class="sxs-lookup"><span data-stu-id="dfd87-115">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="dfd87-116">なし</span><span class="sxs-lookup"><span data-stu-id="dfd87-116">None</span></span>|<span data-ttu-id="dfd87-p101">テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。</span><span class="sxs-lookup"><span data-stu-id="dfd87-p101">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
+|[<span data-ttu-id="dfd87-119">Reapply</span><span class="sxs-lookup"><span data-stu-id="dfd87-119">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="dfd87-120">なし</span><span class="sxs-lookup"><span data-stu-id="dfd87-120">None</span></span>|<span data-ttu-id="dfd87-121">テーブルに、現在の並べ替えパラメーターを再適用します。</span><span class="sxs-lookup"><span data-stu-id="dfd87-121">Reapplies the current sorting parameters to the table.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="53548-124">プロパティ</span><span class="sxs-lookup"><span data-stu-id="53548-124">Properties</span></span>
-| <span data-ttu-id="53548-125">プロパティ</span><span class="sxs-lookup"><span data-stu-id="53548-125">Property</span></span>     | <span data-ttu-id="53548-126">種類</span><span class="sxs-lookup"><span data-stu-id="53548-126">Type</span></span>   |<span data-ttu-id="53548-127">説明</span><span class="sxs-lookup"><span data-stu-id="53548-127">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dfd87-122">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfd87-122">Properties</span></span>
+| <span data-ttu-id="dfd87-123">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfd87-123">Property</span></span>     | <span data-ttu-id="dfd87-124">型</span><span class="sxs-lookup"><span data-stu-id="dfd87-124">Type</span></span>   |<span data-ttu-id="dfd87-125">説明</span><span class="sxs-lookup"><span data-stu-id="dfd87-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="53548-128">matchCase</span><span class="sxs-lookup"><span data-stu-id="53548-128">matchCase</span></span>|<span data-ttu-id="53548-129">ブール値</span><span class="sxs-lookup"><span data-stu-id="53548-129">boolean</span></span>|<span data-ttu-id="53548-p103">大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="53548-p103">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
-|<span data-ttu-id="53548-132">method</span><span class="sxs-lookup"><span data-stu-id="53548-132">method</span></span>|<span data-ttu-id="53548-133">文字列</span><span class="sxs-lookup"><span data-stu-id="53548-133">string</span></span>|<span data-ttu-id="53548-p104">テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="53548-p104">Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.</span></span>|
+|<span data-ttu-id="dfd87-126">matchCase</span><span class="sxs-lookup"><span data-stu-id="dfd87-126">matchCase</span></span>|<span data-ttu-id="dfd87-127">boolean</span><span class="sxs-lookup"><span data-stu-id="dfd87-127">boolean</span></span>|<span data-ttu-id="dfd87-p102">大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfd87-p102">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
+|<span data-ttu-id="dfd87-130">method</span><span class="sxs-lookup"><span data-stu-id="dfd87-130">method</span></span>|<span data-ttu-id="dfd87-131">string</span><span class="sxs-lookup"><span data-stu-id="dfd87-131">string</span></span>|<span data-ttu-id="dfd87-p103">テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfd87-p103">Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="53548-137">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="53548-137">Relationships</span></span>
-| <span data-ttu-id="53548-138">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="53548-138">Relationship</span></span> | <span data-ttu-id="53548-139">型</span><span class="sxs-lookup"><span data-stu-id="53548-139">Type</span></span>   |<span data-ttu-id="53548-140">説明</span><span class="sxs-lookup"><span data-stu-id="53548-140">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="dfd87-135">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="dfd87-135">Relationships</span></span>
+| <span data-ttu-id="dfd87-136">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="dfd87-136">Relationship</span></span> | <span data-ttu-id="dfd87-137">型</span><span class="sxs-lookup"><span data-stu-id="dfd87-137">Type</span></span>   |<span data-ttu-id="dfd87-138">説明</span><span class="sxs-lookup"><span data-stu-id="dfd87-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="53548-141">fields</span><span class="sxs-lookup"><span data-stu-id="53548-141">fields</span></span>|[<span data-ttu-id="53548-142">SortField</span><span class="sxs-lookup"><span data-stu-id="53548-142">SortField</span></span>](sortfield.md)|<span data-ttu-id="53548-p105">テーブルの最後の並べ替えに使用する現在の条件を表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="53548-p105">Represents the current conditions used to last sort the table. Read-only.</span></span>|
+|<span data-ttu-id="dfd87-139">fields</span><span class="sxs-lookup"><span data-stu-id="dfd87-139">fields</span></span>|[<span data-ttu-id="dfd87-140">SortField</span><span class="sxs-lookup"><span data-stu-id="dfd87-140">SortField</span></span>](sortfield.md)|<span data-ttu-id="dfd87-p104">テーブルの最後の並べ替えに使用する現在の条件を表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfd87-p104">Represents the current conditions used to last sort the table. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="53548-145">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="53548-145">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dfd87-143">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dfd87-143">JSON representation</span></span>
 
-<span data-ttu-id="53548-146">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="53548-146">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dfd87-144">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="dfd87-144">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,10 +60,15 @@ ms.locfileid: "27966490"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableSort resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/tablesort.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
