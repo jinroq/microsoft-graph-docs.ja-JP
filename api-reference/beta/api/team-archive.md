@@ -4,16 +4,16 @@ description: '指定されたチームをアーカイブします。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5bfabb7fc6c57f79cf04b58e8b8196a00b284a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1f60ffc8526d40bc373045e207a4877fb91f694d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947821"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507825"
 ---
 # <a name="archive-team"></a>チームのアーカイブ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定された[チーム](../resources/team.md)をアーカイブします。 チームがアーカイブされると、ユーザーが不要になった送信、チーム内のすべてのチャネルのメッセージのようにチームの名前、説明、またはその他の設定を編集またはチームに一般にほとんどの変更を加えます。
 チームのメンバーシップの変更を続行できるようにします。
@@ -78,10 +78,15 @@ Content-Length: 0
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Archive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-archive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

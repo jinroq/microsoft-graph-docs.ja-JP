@@ -2,16 +2,16 @@
 title: 'privilegedRoleAssignmentRequest: マイ'
 description: 依頼者の特権を持つ役割の割り当て要求を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 8f37224dd47be060f1ffc8a3551c537289edf966
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872164"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508868"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: マイ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 依頼者の特権を持つ役割の割り当て要求を取得します。
 
@@ -123,10 +123,15 @@ Content-length: 304
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignmentRequest: my",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-my.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

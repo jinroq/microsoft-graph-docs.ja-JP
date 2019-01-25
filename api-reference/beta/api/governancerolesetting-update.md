@@ -2,16 +2,16 @@
 title: GovernanceRoleSetting を更新します。
 description: GovernanceRoleSetting のプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874908"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509330"
 ---
 # <a name="update-governancerolesetting"></a>GovernanceRoleSetting を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [GovernanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。
 
@@ -20,7 +20,7 @@ ms.locfileid: "27874908"
 
 >**注:** この API では、依頼者の少なくとも 1 つある必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
 
-|アクセス許可の種類      | Permissions              |
+|アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
@@ -41,7 +41,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>要求本文
 要求の本体を更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。 
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|管理者対象のロール割り当てを追加しようとするときに評価されるルールの設定。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|直接的なメンバーの役割の割り当てを追加する際に管理者に評価されるルールの設定。|
@@ -86,10 +86,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update governanceRoleSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,22 +4,22 @@ description: 指定したフォルダーに Outlook のすべてのタスクを�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ec814616447db842f4eaaa230cd6634e98859198
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 892409d6622ffd7b6e0243f7bcdb8807f2ee1305
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924518"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509344"
 ---
 # <a name="list-tasks"></a>List tasks
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定したフォルダーに Outlook のすべてのタスクを取得します。
 
 既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。  使用することができます、 `Prefer: outlook.timezone` UTC 以外のタイム ゾーンで表される応答ですべての日付に関連するプロパティを持つヘッダーを要求します。 1 つのタスクを取得する[例](outlooktask-get.md#example-2)を参照してください。 複数のタスクを取得するには、同様にヘッダーを適用することができます。
 
-タスク グループが複数のグループでは特定のタスク、[タスク グループ内のすべての作業フォルダーを取得する](outlooktaskgroup-list-taskfolders.md)最初に、すべてのタスクを取得し、これらのタスク フォルダーにタスクを取得する場合。 
+1 つ以上のタスク グループがあり、特定のタスク グループ内のすべてのタスクを取得する場合は、最初に[タスク グループ内のすべてのタスク フォルダー](outlooktaskgroup-list-taskfolders.md)を取得してから、これらのタスク フォルダー内のタスクを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -144,10 +144,15 @@ Content-length: 465
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktaskfolder-list-tasks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

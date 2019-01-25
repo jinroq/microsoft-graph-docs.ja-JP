@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、動的な�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: b9f4e249c763b7617e946432d10f33166173dd84
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 50e6062eacd59e0497ec75333296669d001e2c53
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328014"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726618"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -17,6 +17,8 @@ ms.locfileid: "28328014"
 
 Office 365 グループ、Microsoft Teams のチーム、動的なグループ、セキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。
 [directoryObject](directoryobject.md) から継承します。
+
+パフォーマンス上の理由から、[作成](../api/group-post-groups.md)、[取得](../api/group-get.md)、[一覧表示](../api/group-list.md)の操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。 [例](../api/group-get.md#request-2)を参照してください。
 
 このリソースは以下をサポートしています。
 
@@ -89,48 +91,50 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
 |[写真を一覧表示する](../api/group-list-photos.md) |[profilePhoto](photo.md) コレクション| グループのプロファイル写真のコレクションを取得します。|
 |[plannerPlans を一覧表示する](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) コレクション| グループが所有しているプランナーの計画を取得します。|
 |**ユーザーの設定**| | |
-|[addFavorite](../api/group-addfavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧にグループを追加します。Office 365 のグループのみをサポートします。|
-|[removeFavorite](../api/group-removefavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 グループのみをサポートします。|
+|[addFavorite](../api/group-addfavorite.md)|なし|サインインしているユーザーのお気に入りのグループ一覧にグループを追加します。 Office 365 のグループのみをサポートします。|
+|[removeFavorite](../api/group-removefavorite.md)|なし|サインインしているユーザーのお気に入りのグループ一覧からグループを削除します。 Office 365 グループのみをサポートします。|
 |[memberOf を一覧表示する](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| このユーザーが直接のメンバーであるグループおよび管理単位を、**memberOf** ナビゲーション プロパティから取得します。|
 |[参加チームのリストを作成する](../api/user-list-joinedteams.md) |[group](group.md) コレクション| ユーザーがダイレクト メンバーになっている Microsoft Teams を取得します。|
-|[subscribeByMail](../api/group-subscribebymail.md)|なし|isSubscribedByMail プロパティを **true** に設定します。 現在のユーザーが電子メールの会話を受信できるようにします。 Office 365 グループのみをサポートします。|
-|[unsubscribeByMail](../api/group-unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。 現在のユーザーに対して電子メールでの会話の受信を無効にします。 Office 365 グループのみをサポートします。|
-|[resetUnseenCount](../api/group-resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。 Office 365 グループのみをサポートします。|
+|[subscribeByMail](../api/group-subscribebymail.md)|なし|isSubscribedByMail プロパティを **true** に設定します。 サインインしているユーザーが電子メールの会話を受信できるようにします。 Office 365 グループのみをサポートします。|
+|[unsubscribeByMail](../api/group-unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。 サインインしているユーザーが電子メールの会話を受信できないようにします。 Office 365 グループのみをサポートします。|
+|[resetUnseenCount](../api/group-resetunseencount.md)|なし|サインインしているユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。 Office 365 グループのみをサポートします。|
 
 ## <a name="properties"></a>プロパティ
+
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
-|assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|グループに割り当てられているライセンス。 読み取り専用です。|
-|autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。|
-|分類|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](directorysettingtemplate.md)に基づいて ClassificationList [設定](directorysetting.md)値を作成することによって定義されます。|
-|createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-|説明|String|グループに関するオプションの説明。|
-|displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|expirationDateTime|DateTimeOffset| グループに設定されている有効期限のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-|groupTypes|String コレクション| 作成するグループの種類を指定します。 使用可能な値は `Unified` (Office 365 のグループを作成する場合) または `DynamicMembership` (動的なグループを作成する場合) です。  その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。|
-|id|String|グループの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
-|isSubscribedByMail|Boolean|既定値は **true** です。現在のユーザーが電子メールの会話を受信するように登録されているかどうかを示します。|
-|licenseProcessingState|String|グループのメンバー全員へのグループ ライセンスの割り当ての状態を示します。 読み取り専用です。 使用可能な値: `QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。|
-|mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。読み取り専用です。$filter をサポートします。|
-|mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。|
-|mailNickname|String|組織内で一意のグループのメール エイリアス。このプロパティは、グループの作成時に指定する必要があります。$filter をサポートします。|
-|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。|
-|membershipRuleProcessingState|String|動的メンバーシップの処理が進行中か、または一時停止しているかどうかを示します。 使用可能な値は、"On" または "Paused" です|
-|onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。 $filter をサポートします。|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 |
-|onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたグループのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。 |
-|onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 読み取り専用です。 $filter をサポートします。|
-|preferredDataLocation|String|グループの優先されるデータの場所。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
-|preferredLanguage|String|Office 365 グループで優先する言語。 ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
-|proxyAddresses|String コレクション| 例: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には **any** 演算子が必要です。 読み取り専用です。 null 許容ではありません。 $filter をサポートします。 |
-|renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/grouplifecyclepolicy-renewgroup.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|securityEnabled|Boolean|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
-|theme|String|Office 365 グループの色のテーマを指定します。 可能な値: `Teal`、`Purple`、`Green``Blue``Pink`、`Orange`、`Red`。|
-|unseenConversationsCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、新しい投稿が 1 つまたは複数配信された会話のカウントです。 このプロパティは、**unseenCount** と同じです。|
-|unseenCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、新しい投稿が 1 つまたは複数配信された会話のカウントです。 このプロパティは、**unseenConversationsCount** と同じです。|
-|unseenMessagesCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、グループの会話に配信された新しい投稿のカウントです。|
-|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `private`、`public`、`hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。|
+|allowExternalSenders|Boolean| 組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。 既定値は **false** です。 <br><br>$select でのみ返されます。 |
+|assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|グループに割り当てられているライセンス。 <br><br>$select でのみ返されます。 読み取り専用です。|
+|autoSubscribeNewMembers|Boolean|グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。 グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。 既定値は **false** です。 <br><br>$select でのみ返されます。|
+|classification|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](directorysettingtemplate.md)に基づいて ClassificationList [設定](directorysetting.md)値を作成することによって定義されます。<br><br>既定で返されます。|
+|createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
+|説明|String|グループに関するオプションの説明。 <br><br>既定で返されます。|
+|displayName|文字列|グループの表示名。 このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 <br><br>既定で返されます。 $filter および $orderby をサポートします。 |
+|expirationDateTime|DateTimeOffset| グループに設定されている有効期限のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
+|groupTypes|String コレクション| 作成するグループの種類を指定します。 使用可能な値は `Unified` (Office 365 のグループを作成する場合) または `DynamicMembership` (動的なグループを作成する場合) です。  その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。 <br><br>既定で返されます。 $filter をサポートします。|
+|hasMembersWithLicenseErrors|Boolean| このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが **true** であるフィルターです)。 [例](../api/group-list.md#request-2)を参照してください。|
+|id|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
+|isSubscribedByMail|Boolean|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
+|licenseProcessingState|String|グループのメンバー全員へのグループ ライセンスの割り当ての状態を示します。 使用可能な値: `QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。 <br><br>$select でのみ返されます。 読み取り専用です。 |
+|mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
+|mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。 <br><br>既定で返されます。|
+|mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
+|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。 <br><br>既定で返されます。 |
+|membershipRuleProcessingState|String|動的メンバーシップの処理が進行中か、または一時停止しているかどうかを示します。 使用可能な値は、"On" または "Paused" です。 <br><br>既定で返されます。 |
+|onPremisesLastSyncDateTime|DateTimeOffset|グループがオンプレミスのディレクトリと最後に同期した日時を示します。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 <br><br>既定で返されます。|
+|onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたグループのオンプレミスのセキュリティ識別子 (SID) が含まれます。 <br><br>既定で返されます。 読み取り専用です。 |
+|onPremisesSyncEnabled|Boolean|このグループがオンプレミスのディレクトリから同期される場合は **true**、このグループが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null**。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
+|preferredDataLocation|String|グループの優先されるデータの場所。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。 <br><br>既定で返されます。|
+|preferredLanguage|String|Office 365 グループで優先する言語。 ISO 639-1 コードに従う必要があります。たとえば "en-US" です。 <br><br>既定で返されます。 |
+|proxyAddresses|String コレクション| 同じグループ メールボックスに送信されるグループのメール アドレスです。 例: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 複数値プロパティのフィルター式には **any** 演算子が必要です。 <br><br>既定で返されます。 読み取り専用です。 null 許容ではありません。 $filter をサポートします。 |
+|renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/grouplifecyclepolicy-renewgroup.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。|
+|securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 **mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。 Office 365 グループの場合、**false** にする必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
+|theme|String|Office 365 グループの色のテーマを指定します。 可能な値: `Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange`、`Red`。 <br><br>既定で返されます。 |
+|unseenConversationsCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、新しい投稿が 1 つまたは複数配信された会話のカウントです。 このプロパティは、**unseenCount** と同じです。 <br><br>$select でのみ返されます。|
+|unseenCount|Int32|サインにしているユーザーのグループへの最後のアクセス以降に新しい投稿を受け取った会話の数です。 このプロパティは、**unseenConversationsCount** と同じです。<br><br>$select でのみ返されます。 |
+|unseenMessagesCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、グループの会話に配信された新しい投稿のカウントです。 <br><br>$select でのみ返されます。|
+|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `private`、`public`、`hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
 
 ### <a name="group-visibility-options"></a>グループの表示オプション
 

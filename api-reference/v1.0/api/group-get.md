@@ -4,50 +4,17 @@ description: グループ オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 7de0b9dac4d1bf3295cd01bbd522d1f18314c098
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917189"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353091"
 ---
 # <a name="get-group"></a>グループを取得する
 グループ オブジェクトのプロパティとリレーションシップを取得します。
 
-##### <a name="default-properties"></a>既定のプロパティ
-
-以下は、グループを取得または一覧表示するときに返されるプロパティの既定のセットを表します。これらは、利用可能なすべてのプロパティのサブセットです。
-
-* description
-* displayName
-* groupTypes
-* id
-* mail
-* mailEnabled
-* mailNickname
-* onPremisesLastSyncDateTime
-* onPremisesSecurityIdentifier
-* onPremisesSyncEnabled
-* proxyAddresses
-* securityEnabled
-* visibility
-
-次のグループ プロパティは既定では返されません。
-
-* allowExternalSenders
-* autoSubscribeNewMembers
-* isSubscribedByMail
-* unseenCount
-
-これらのプロパティを取得するには、**$select** クエリ パラメーターを使用します。次に、例を示します。 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
+「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。 既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。 [例](#request-2)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,11 +31,13 @@ GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f
 GET /groups/{id}
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+既定では返されないものも含め、特定のグループのプロパティを取得するには `$select` を使用できます。 次の[例](#request-2)を参照してください。
+
+OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -76,51 +45,96 @@ GET /groups/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[グループ](../resources/group.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。 `$select` を使用して特定のプロパティを指定していない限り、既定のプロパティを返します。
 
 ## <a name="example"></a>例
-#### <a name="request"></a>要求
-要求の例を次に示します。
+#### <a name="request-1"></a>要求 1
+GET 要求の例を次に示します。 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### <a name="response"></a>応答
-応答の例を次に示します。
+#### <a name="response-1"></a>応答 1
+応答の例を次に示します。 既定のプロパティのみが含まれています。
 
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しでは、前に示したように既定のプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべて既定のプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
-  "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-22T00:51:37Z",
+    "creationOptions": [],
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library2@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "smtp:library7423@contoso.com",
+        "SMTP:library2@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a>要求 2
+`$select` クエリ オプションを使用して、既定では返されないいくつかのプロパティを取得する例を次に示します。 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a>応答 2
+要求された既定以外のプロパティを含む応答の例を次に示します。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 

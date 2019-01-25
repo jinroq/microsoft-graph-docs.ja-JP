@@ -3,16 +3,16 @@ title: 'driveItem: プレビュー'
 description: このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508539"
 ---
 # <a name="driveitem-preview"></a>driveItem: プレビュー
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
 
@@ -52,9 +52,9 @@ POST /shares/{shareId}/driveItem/preview
 
 |   名前      |  型         | 説明
 |:------------|:--------------|:-----------------------------------------------
-| ビューアー      | 文字列        | 省略可能。 使用するアプリケーションをプレビューします。 `onedrive` や `office` などになります。 Null の場合、適切なビューアーが自動的に選択されます。
-| クロムレス  | ブール       | 省略可能。 場合`true`(既定値)、組み込みのビューのコントロールは含まれません。
-| allowEdit   | ブール       | 省略可能。 場合`true`、埋め込まれた UI からファイルを編集することができます。
+| ビューアー      | string        | 省略可能。 使用するアプリケーションをプレビューします。 `onedrive` や `office` などになります。 Null の場合、適切なビューアーが自動的に選択されます。
+| クロムレス  | boolean       | 省略可能。 場合`true`(既定値)、組み込みのビューのコントロールは含まれません。
+| AllowEdit   | boolean       | 省略可能。 場合`true`、埋め込まれた UI からファイルを編集することができます。
 | page        | 文字列と番号 | 省略可能。 該当する場合に、開始するドキュメントのページ数です。 将来使用する場合は、ZIP などのファイルの種類を文字列として指定します。
 | ズーム        | number        | 省略可能。 該当する場合に、開始するレベルを拡大します。
 
@@ -72,13 +72,13 @@ POST /shares/{shareId}/driveItem/preview
 
 | 名前           | 型   | 説明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | 文字列 | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
-| postUrl        | 文字列 | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
-| postParameters | 文字列 | PostUrl を使用する場合は、POST のパラメーター
+| getUrl         | string | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
+| postUrl        | string | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
+| postParameters | string | PostUrl を使用する場合は、POST のパラメーター
 
 GetUrl、postUrl、またはその両方は、指定したオプションの埋め込みのサポートの現在の状態によって返される可能性があります。
 
-として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 例:
+として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -92,7 +92,8 @@ param1=value&param2=another%20value
 
 | 種類の値 | 説明
 |:-----------|:----------------------------------------------------------------
-| (null)     | ファイルを表示するための適切なアプリケーションを選択します。 使用するほとんどの場合、`onedrive`プレビューアーをファイルの種類によって異なる場合がありますが。
+| Null
+     | ファイルを表示するための適切なアプリケーションを選択します。 使用するほとんどの場合、`onedrive`プレビューアーをファイルの種類によって異なる場合がありますが。
 | `onedrive` | ファイルをレンダリングするのにには、OneDrive 対応のアプリケーションを使用します。
 | `office`   | WAC (Office オンライン) を使用して、ファイルをレンダリングします。 Office ドキュメントに対してのみ有効です。
 
@@ -109,3 +110,11 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>ページ/ズーム
 
 `page`と`zoom`オプションは、すべてのプレビュー アプリケーションを使用できない場合がありますが、プレビューのアプリケーションをサポートしている場合に適用されます。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

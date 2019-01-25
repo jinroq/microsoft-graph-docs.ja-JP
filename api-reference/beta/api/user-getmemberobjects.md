@@ -4,16 +4,16 @@ description: ユーザーがメンバーになっているすべてのグルー�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f4a2b01096b271b26f89c83f22a65246d02023c2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 219e996bdf9b796cdd6a000b988e0f2ac73023ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957817"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509988"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects　
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーがメンバーになっているすべてのグループ、ディレクトリ ロール、管理単位を返します。チェックは推移的です。
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean|ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。|
 
@@ -89,10 +89,15 @@ Content-length: 39
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMemberObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmemberobjects.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

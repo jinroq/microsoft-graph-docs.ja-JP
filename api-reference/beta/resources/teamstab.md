@@ -4,16 +4,16 @@ description: 'タブでは、teamsTab をチーム内でのチャネル (接続)
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c5cf5ef33f53cfaca7189df24e5dfd880a77241
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947149"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509288"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [] タブ](../resources/teamstab.md)では、teamsTab を[チーム](team.md)内での[チャネル](channel.md)(接続) を固定しました。 
 
@@ -30,14 +30,14 @@ ms.locfileid: "27947149"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---------------|:--------|:----------|
-|  ID              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
+|  id              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
 |  displayName            |   string                  |  タブの名前です。     |
-|  name            |   文字列                  |  (非推奨)タブの名前です。     |
-|  teamsAppId           |   文字列             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
+|  name            |   string                  |  (非推奨)タブの名前です。     |
+|  teamsAppId           |   string             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
 |  sortOrderIndex  |   int                     |  タブの並べ替え順序のインデックス。     |
-|  webUrl          |   文字列                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
+|  webUrl          |   string                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  タブに適用するカスタム設定のコンテナーです。タブでは、このプロパティが 1 回だけが構成されていると見なされます。     |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -71,13 +71,18 @@ ms.locfileid: "27947149"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTab resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>関連項目
 

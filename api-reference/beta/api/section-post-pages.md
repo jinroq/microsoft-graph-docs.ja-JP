@@ -4,16 +4,16 @@ description: 指定されたセクションに新しいページを作成しま�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 8957609ffd3768edb456835b522dbbb7a145b6bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510877"
 ---
 # <a name="create-page"></a>page を作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定されたセクションに新しい[ページ](../resources/page.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
@@ -34,7 +34,7 @@ POST /groups/{id}/onenote/sections/{id}/pages
 POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。 |
@@ -118,10 +118,15 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

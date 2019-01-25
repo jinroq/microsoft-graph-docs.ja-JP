@@ -4,16 +4,16 @@ description: 学生が作業を行われ、割り当てで入稿する準備が�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d1fd41c66e3f54898f6086a9bf14a0b53763df88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510772"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: 送信
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 学生が作業を行われ、割り当てで入稿する準備ができなことを示す動作です。 この操作は、受講者のみ取得できます。 「処理中」に「送信」からの提出書類のステータスが変更されます。 送信中に、すべてのリソースは、submittedResources バケットにコピーされます。 先生はグレーディングの送信済みのリソースの一覧を見ています。
 
@@ -69,10 +69,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission: submit",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

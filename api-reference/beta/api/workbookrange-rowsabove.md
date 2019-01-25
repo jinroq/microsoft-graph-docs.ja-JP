@@ -4,16 +4,16 @@ description: 指定した範囲の上にある特定の行数を取得します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 54663aeda88f29b89202dbac6ac5962788192815
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1258a55c9b371070216b1955ea40cd66a58cac6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947688"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509456"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した範囲の上にある特定の行数を取得します。
 
@@ -35,7 +35,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |count|Int32|省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。|
 
@@ -85,3 +85,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookrange-rowsabove.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

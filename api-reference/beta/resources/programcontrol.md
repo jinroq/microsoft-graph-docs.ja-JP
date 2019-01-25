@@ -2,16 +2,16 @@
 title: デバッギングのリソースの種類
 description: Azure AD にアクセスが機能を確認、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンクするコントロールを表します。
 localization_priority: Normal
-ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817823"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511416"
 ---
 # <a name="programcontrol-resource-type"></a>デバッギングのリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンク、コントロールを表します。
 
@@ -24,7 +24,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 |[デバッギングを削除します。](../api/programcontrol-delete.md) |     なし。   |   デバッギングをプログラムから削除します。|
 |[リスト programControls](../api/programcontrol-list.md) | [デバッギング](programcontrol.md)コレクション| テナント内のすべてのプログラム間でコントロールを一覧表示します。|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 |アプリケーション                            | サポートされていません。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | プログラムとコントロール間のリンクの機能に割り当てられた識別子                                      |
 | `programId`              |`String`                | プログラムの programId このコントロールは、一部です。 必要なを作成します。                            |
@@ -42,7 +42,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 | `displayName`            |`String`                | コントロールの名前です。                                                             |
 | `status`                 |`String`                | コントロールのライフ サイクルの状態です。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 作成日付と時刻のコントロールです。                                        |
-| `owner`                  |[割り当てられていません](useridentity.md)   | プログラムのコントロールを作成したユーザー。                                               |
+| `owner`                  |%__UserIdentity__%   | プログラムのコントロールを作成したユーザー。                                               |
 | `resource`               |`programResource`       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -90,15 +90,20 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 
 このタイプから継承`microsoft.graph.identity`があり、1 つの追加のプロパティ。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `type`               |`String`  | グループ、またはアプリケーションがあるかどうかを示す、リソースの種類です。 |     
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "programControl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,18 +4,18 @@ description: 'この操作により、開催者または転送するように会
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe8d108ebeb15c2684e1997b8a02cc28a99101b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990674"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510387"
 ---
 # <a name="event-forward"></a>イベント: 転送
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このアクションでは、開催者または新しい受信者に会議出席依頼を転送する[イベント](../resources/event.md)の会議の出席者を使用します。 
+このアクションにより、会議のイベントの開催者または出席者が、新しい受信者に会議出席依頼を転送することができます。 
 
 会議イベントは、出席者の Office 365 のメールボックスから別の受信者に転送されます、このアクションも、転送の構成内容の変更を通知するためにメッセージを送信し、会議イベントの開催者のコピーに受信者を追加します。 Outlook.com アカウントから転送するときは、この利便性を利用できません。
 
@@ -106,10 +106,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-forward.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

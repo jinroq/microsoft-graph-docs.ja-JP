@@ -2,16 +2,16 @@
 title: デバッギングを作成します。
 description: Azure AD のレビュー機能にアクセス、デバッギング オブジェクトを新規作成します。  アクセス確認をプログラムにリンクします。
 localization_priority: Normal
-ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851535"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511115"
 ---
 # <a name="create-programcontrol"></a>デバッギングを作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、新しい[デバッギング](../resources/programcontrol.md)オブジェクトを作成します。  アクセス確認をプログラムにリンクします。
 
@@ -37,16 +37,16 @@ ms.locfileid: "27851535"
 POST /programControls
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー\{トークン\}。 必須。 |
+| Authorization | string | ベアラー トークン 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、[デバッギング](../resources/programcontrol.md)オブジェクトの JSON の形式を指定します。
 
 プログラムのコントロールを作成するときに必要なプロパティを次の表に示します。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | プログラムの programId コントロールしようの一部になります。                             |
 | `controlId`              |`String`                | コントロールの処理、特にアクセスの id を確認します。                                                |
@@ -104,10 +104,15 @@ Content-type: application/json
 |[リスト programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md)コレクション| プログラムのコントロールの種類を一覧表示します。 |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create programControl",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

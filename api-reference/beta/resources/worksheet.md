@@ -4,16 +4,16 @@ description: Excel のワークシートは、セルのグリッドになって�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d04ebafda64f9a081096fbf0fd94461b9765a6db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: beffb9747045d0d3792d994237710e886ff0b3d8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926527"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509148"
 ---
 # <a name="worksheet-resource-type"></a>ワークシート リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。
 
@@ -22,12 +22,12 @@ Excel のワークシートは、セルのグリッドになっています。�
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[ワークシートを取得する](../api/worksheet-get.md) | [Worksheet](worksheet.md) |ワークシート オブジェクトのプロパティと関係を読み取ります。|
-|[グラフを作成する](../api/worksheet-post-charts.md) |[Chart](chart.md)| グラフ コレクションに投稿して、新しいグラフを作成します。|
-|[名前を一覧表示する](../api/worksheet-list-names.md) |[NamedItem](nameditem.md) コレクション| ワークシートに関連付けられている名前付きのアイテムのコレクションを取得します。|
-|[グラフを一覧表示する](../api/worksheet-list-charts.md) |[Chart](chart.md) コレクション| グラフ オブジェクトのコレクションを取得します。|
-|[テーブルを作成する](../api/worksheet-post-tables.md) |[Table](table.md)| テーブル コレクションに投稿して、新しいテーブルを作成します。|
-|[テーブルを一覧表示する](../api/worksheet-list-tables.md) |[Table](table.md) コレクション| テーブル オブジェクトのコレクションを取得します。|
+|ワークシートを取得する | [Worksheet](worksheet.md) |ワークシート オブジェクトのプロパティと関係を読み取ります。|
+|グラフを作成する |[Chart](chart.md)| グラフ コレクションに投稿して、新しいグラフを作成します。|
+|名前を一覧表示する |[NamedItem](nameditem.md) コレクション| ワークシートに関連付けられている名前付きのアイテムのコレクションを取得します。|
+|グラフを一覧表示する |Chart コレクション| グラフ オブジェクトのコレクションを取得します。|
+|テーブルを作成する |[Table](table.md)| テーブル コレクションに投稿して、新しいテーブルを作成します。|
+|テーブルを一覧表示する |[Table](table.md) コレクション| テーブル オブジェクトのコレクションを取得します。|
 |[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |ワークシート オブジェクトを更新します。 |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|アドレスまたは名前で指定された範囲オブジェクトを取得します。|
@@ -35,13 +35,13 @@ Excel のワークシートは、セルのグリッドになっています。�
 |[Delete](../api/worksheet-delete.md)|なし|ブックからワークシートを削除します。|
 |[List](../api/worksheet-list.md) | [Worksheet](worksheet.md) コレクション |ワークシート オブジェクトのコレクションを取得します。 |
 |[Add](../api/worksheetcollection-add.md)|[Worksheet](worksheet.md)|新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。 |
-|[pivotTables を一覧表示する](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
+|pivotTables を一覧表示する |workbookPivotTable コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
-|name|文字列|ワークシートの表示名。|
+|id|文字列|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
+|name|string|ワークシートの表示名。|
 |position|int|0 を起点とした、ブック内のワークシートの位置。|
 |visibility|文字列|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
 
@@ -78,10 +78,15 @@ Excel のワークシートは、セルのグリッドになっています。�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Worksheet resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/worksheet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

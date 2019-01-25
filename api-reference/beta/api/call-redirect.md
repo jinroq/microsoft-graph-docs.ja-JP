@@ -4,16 +4,16 @@ description: 着信呼び出しをリダイレクトします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921725"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511990"
 ---
 # <a name="call-redirect"></a>呼び出す: リダイレクト
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 着信呼び出しをリダイレクトします。
 
@@ -43,14 +43,14 @@ POST /applications/{id}/calls/{id}/redirect
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|ターゲット|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作のターゲットの参加者です。|
+|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作のターゲットの参加者です。|
 |targetDisposition|String|使用可能な値は次のとおりです。`default`|
 |timeout|Int32|リダイレクト処理を秒単位でタイムアウトします。|
-|maskCallee|Boolean|呼び出し先をマスクするかどうかを示します。|
-|maskCaller|Boolean|呼び出し元をマスクするかどうかを示します。|
+|maskCallee|ブール値|呼び出し先をマスクするかどうかを示します。|
+|maskCaller|ブール値|呼び出し元をマスクするかどうかを示します。|
 
 ## <a name="response"></a>応答
-返します`202 Accepted`応答コード。
+応答コードを返します。
 
 ## <a name="examples"></a>例
 
@@ -260,10 +260,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: redirect",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 範囲のフォント、塗りつぶし、境界線、配置など�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b4018995e37ff40ae014b54d08b77bbed73d6fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937349"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511360"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
 
@@ -22,9 +22,9 @@ ms.locfileid: "27937349"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[RangeFormat を取得する](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
-|[RangeBorder を作成する](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
-|[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) コレクション| RangeBorder オブジェクトのコレクションを取得します。|
+|RangeFormat を取得する | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
+|RangeBorder を作成する |RangeBorder| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
+|境界線を一覧表示する |RangeBorder コレクション| RangeBorder オブジェクトのコレクションを取得します。|
 |[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |RangeFormat オブジェクトを更新します。 |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
@@ -33,10 +33,10 @@ ms.locfileid: "27937349"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnWidth|double|範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。|
-|horizontalAlignment|文字列|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
+|horizontalAlignment|string|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
 |rowHeight|double|範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。|
 |verticalAlignment|文字列|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
-|wrapText|ブール値|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
+|wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -71,10 +71,15 @@ ms.locfileid: "27937349"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "RangeFormat resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/rangeformat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

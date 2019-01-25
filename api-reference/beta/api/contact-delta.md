@@ -4,16 +4,16 @@ description: 指定したフォルダーで追加、削除、更新された連�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 500895404d92c1eb74b06bc80dd380b9f7c224e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0fd287fa8674991979633573a4d1ebfdc66fa826
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916223"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508427"
 ---
 # <a name="contact-delta"></a>contact: delta
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定したフォルダーで追加、削除、更新された連絡先のセットを取得します。
 
@@ -41,8 +41,8 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 同じ連絡先コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じ連絡先コレクションに追跡すべき変更が他にもあることを示します。 |
+| $deltatoken | string | 同じ連絡先コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じ連絡先コレクションに追跡すべき変更が他にもあることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -54,7 +54,7 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |
-| Prefer | 文字列  | odata.maxpagesize={x}.省略可能。 |
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -118,10 +118,15 @@ Content-length: 337
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "contact: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

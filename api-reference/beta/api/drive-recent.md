@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 最近使用したファイルを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d99caa91bc0b5d7140d3628db42955e558de3598
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 600db7e3f654ebaf0f8168c9fe74b82c58abf087
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915403"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510940"
 ---
 # <a name="list-recent-files"></a>最近使用したファイルを一覧表示する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしたユーザーによって最近使用されたアイテムのセットを一覧表示します。このコレクションには、ユーザーのドライブにあるアイテムと、他のドライブとの間でアクセス可能なアイテムが含まれています。
 
@@ -97,10 +97,15 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Drives/Recent files"
-} -->
+  "tocPath": "Drives/Recent files",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-recent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

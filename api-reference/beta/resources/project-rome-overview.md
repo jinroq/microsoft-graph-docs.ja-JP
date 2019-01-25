@@ -2,16 +2,16 @@
 title: 'Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには '
 description: 'ローマのプロジェクトは、アプリケーション開発者は、デバイス間の優れたエクスペリエンスを構築できるプラットフォームを構築するのにはマイクロソフトの方針です。 ローマのプロジェクトは、同じ Microsoft を使用してユーザーがサインイン アカウントの機能、またはアカウントの学校とは、さまざまなサービスとクライアントのエンドポイントを接続する別の機能を有効にします。 これにより、デバイスではなく、ユーザーの作業の中心は、デバイス間およびプラットフォーム間でのエクスペリエンスを実装することができます。 '
 localization_priority: Normal
-ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830003"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509694"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには 
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [ローマのプロジェクト](https://developer.microsoft.com/en-us/windows/project-rome)は、アプリケーション開発者は、デバイス間の優れたエクスペリエンスを構築できるプラットフォームを構築するのにはマイクロソフトの方針です。 ローマのプロジェクトは、同じ Microsoft を使用してユーザーがサインイン アカウントの機能、またはアカウントの学校とは、さまざまなサービスとクライアントのエンドポイントを接続する別の機能を有効にします。 これにより、デバイスではなく、ユーザーの作業の中心は、デバイス間およびプラットフォーム間でのエクスペリエンスを実装することができます。 
 
@@ -62,3 +62,11 @@ Graph で通知 Api を使用するには上に同じユーザーが署名され
 
 詳細については、[作成し通知の送信](../api/projectrome-notification-post.md)を参照してください。
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

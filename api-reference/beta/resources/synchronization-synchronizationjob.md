@@ -2,16 +2,16 @@
 title: synchronizationJob リソースの種類
 description: バック グラウンドで定期的に実行している、1 つのディレクトリと別のディレクトリにプッシュすることで変更をポーリングして同期を実行します。 同期ジョブは、テナントにアプリケーションの特定のインスタンスに固有では常にします。 同期ジョブの設定の一部として、ターゲット ディレクトリにオブジェクトを読み書きするための承認を与えると、ジョブの同期スキーマをカスタマイズする必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892149"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510569"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 バック グラウンドで定期的に実行している、1 つのディレクトリと別のディレクトリにプッシュすることで変更をポーリングして同期を実行します。 同期ジョブは、テナントにアプリケーションの特定のインスタンスに固有では常にします。 同期ジョブの設定の一部として、ターゲット ディレクトリにオブジェクトを読み書きするための承認を与えると、ジョブの同期スキーマをカスタマイズする必要があります。
 
@@ -32,10 +32,10 @@ ms.locfileid: "27892149"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 種類      | 説明    |
+| プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|ID             |String                     |固有の同期ジョブの識別子です。 読み取り専用です。|
-|スケジュール       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|スケジュールがジョブを実行するために使用します。 読み取り専用です。|
+|id             |String                     |固有の同期ジョブの識別子です。 読み取り専用です。|
+|Schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|スケジュールがジョブを実行するために使用します。 読み取り専用です。|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |ジョブが前回実行されたときに、ジョブ、ジョブの現在の状態およびエラーの状態です。|
 |templateId     |文字列    |このジョブで使用する[同期テンプレート](synchronization-synchronizationtemplate.md)の識別子です。|
 
@@ -68,10 +68,15 @@ ms.locfileid: "27892149"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

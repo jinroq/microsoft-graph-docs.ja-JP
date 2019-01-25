@@ -4,16 +4,16 @@ description: 'リソースを [リソース] リストに追加します。 こ�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a3c7592614eb1987df6730cd7f029bc84bb422cf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511731"
 ---
 # <a name="create-educationsubmissionresource"></a>EducationSubmissionResource を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 リソースを [リソース] リストに追加します。 このアクションは、この送信が割り当てられている受講者にのみ実行できます。 **AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。 呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。 ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。 
 
@@ -134,10 +134,15 @@ Content-length: 1152
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationSubmissionResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

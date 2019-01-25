@@ -4,16 +4,16 @@ description: '招待マネージャーを使用して、組織に外部ユーザ
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 72ff2ca13a0de314697961504da9a4203afdb2b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981050"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511514"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 
 
@@ -33,7 +33,7 @@ ms.locfileid: "27981050"
 |[招待状の作成](../api/invitation-post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|
@@ -70,10 +70,15 @@ ms.locfileid: "27981050"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/invitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

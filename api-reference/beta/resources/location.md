@@ -2,16 +2,16 @@
 title: Location リソースの種類
 description: イベントの場所の情報を表します。
 localization_priority: Normal
-ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879402"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508609"
 ---
 # <a name="location-resource-type"></a>Location リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [イベント](event.md)の場所の情報を表します。
 
@@ -28,11 +28,11 @@ ms.locfileid: "27879402"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 種類   | 説明                                                     |
+| プロパティ  | 型   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |
-| displayName  | String | 場所に関連付けられた名前。                       |
+| displayName  | 文字列 | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所のメール アドレス (省略可能)。 |
 | locationUri | String | 場所を表す URI (省略可能)。 |
 | locationType | String | 場所の種類。 可能な値は、`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` です。 読み取り専用。|
@@ -67,10 +67,15 @@ ms.locfileid: "27879402"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "location resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/location.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

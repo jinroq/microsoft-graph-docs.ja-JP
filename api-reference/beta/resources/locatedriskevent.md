@@ -2,16 +2,16 @@
 title: locatedRiskEvent リソースの種類
 description: Azure Active ディレクトリ Id 保護場所データに基づくによって検出されたリスク イベントです。 あるリスク イベントの種類は次のとおりです。
 localization_priority: Normal
-ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 20fe76099c511483144b42e33fc260910debb5ed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867558"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510261"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 場所データに基づく[Azure Active Directory アイデンティティ保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出されたリスク イベントです。 あるリスク イベントの種類は次のとおりです。
 * [匿名の IP アドレスからサインイン](anonymousipriskevent.md)
@@ -28,20 +28,20 @@ ms.locfileid: "27867558"
 |[LocatedRiskEvent を取得します。](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |LocatedRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|文字列| 読み取り専用です。|
-|ipAddress|文字列| サインイン用の IP アドレス|
-|location|文字列| サインイン用の IP アドレスに接続されている場所|
+|id|string| 読み取り専用|
+|ipAddress|string| サインイン用の IP アドレス|
+|location|string| サインイン用の IP アドレスに接続されている場所|
 |riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|
-|riskEventStatus|文字列| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
-|riskLevel|文字列| 使用可能な値: `low`、`medium`、`high`。|
-|riskEventType|文字列| リスクの種類|
-|userDisplayName|文字列| リスクのユーザーの名前|
-|userId|文字列| リスクのユーザーの id|
-|userPrincipalName|文字列| リスクのユーザーのユーザー プリンシパル名|
+|riskEventStatus|string| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
+|riskLevel|string| 使用可能な値: `low`、`medium`、`high`。|
+|riskEventType|string| リスクの種類|
+|userDisplayName|string| リスクのユーザーの名前|
+|userId|string| リスクのユーザーの id|
+|userPrincipalName|string| リスクのユーザーのユーザー プリンシパル名|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -80,10 +80,15 @@ ms.locfileid: "27867558"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "locatedRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/locatedriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

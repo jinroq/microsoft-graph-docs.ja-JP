@@ -2,16 +2,16 @@
 title: カスタム ターゲットの属性を使用して同期を構成します。
 description: 同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。 呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。 Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。
 localization_priority: Normal
-ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806756"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508882"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>カスタム ターゲットの属性を使用して同期を構成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。 呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。 Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。
 
@@ -262,3 +262,11 @@ HTTP/1.1 201 No Content
 ```
 
 スキーマが正常に保存された場合は、同期ジョブの次回のイテレーションで、Azure の AD 内のすべてのアカウントを再処理を開始し、プロビジョニングされたすべてのアカウントに新しいマッピングが適用されます。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: 4a647b2872899e3756d95483b91525a2843122b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821610"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508966"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 
 
@@ -20,10 +20,10 @@ ms.locfileid: "27821610"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
-- [Outlook タスク](../resources/outlooktask.md)
+- Outlook タスク
 - [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)
 
 次のグループ リソースもサポートされます。
@@ -48,7 +48,7 @@ ms.locfileid: "27821610"
 | グループ [post](../resources/post.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | サポートされていません |
+| Outlook タスク | Tasks.ReadWrite | Tasks.ReadWrite | サポートされていません |
 | [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | 非サポート |
  
 ## <a name="http-request"></a>HTTP 要求
@@ -156,7 +156,7 @@ PATCH /groups/{id}/events/{id}
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
 |id|String|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
-|value|文字列|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
+|value|string|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
 
 _新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **singleValueExtendedProperties**コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。
 
@@ -261,11 +261,16 @@ Content-Type: application/json
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a single-value extended property",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

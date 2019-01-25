@@ -2,27 +2,27 @@
 title: synchronizationProgress リソースの種類
 description: 完了するまで、synchronizationJob の進行状況を表します。
 localization_priority: Normal
-ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885387"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510975"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 完了するまでの[synchronizationJob](synchronization-synchronizationjob.md)の進行状況を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                              | 種類      | 説明    |
+| プロパティ                              | 型      | 説明    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|分子の進行状況の比率です。既に処理された変更単位の数です。|
 |progressObservationDateTime|DateTimeOffset|分 UTC からのオフセットとしての進行状況の監視の時間です。|
 |totalUnits|Int32|分母の進行状況の比率です。変更の同期を実行する処理の単位数を示します。|
-|単位|String|単位のオプションの説明です。|
+|Units|String|単位のオプションの説明です。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -50,10 +50,15 @@ ms.locfileid: "27885387"
 
 <!-- uuid: 15571993-7e2f-4842-84d5-01ceb67cdc05
 20185-08-14 22:30:00 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationProcess resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

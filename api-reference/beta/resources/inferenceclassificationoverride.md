@@ -1,17 +1,17 @@
 ---
 title: inferenceClassificationOverride リソースの種類
-description: 特定の送信者からの受信のメッセージのユーザーのオーバーライドする必要があります常として分類されます。
+description: 特定の差出人からの着信メッセージを常時分類するためのユーザーのオーバーライドを表します。
 localization_priority: Normal
-ms.openlocfilehash: 9124f773a26c9edf1238276c3d0017dcc46e7ad8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876271"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511801"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 どのように特定の送信者からメッセージを受信する必要があります常に分類される、[受信トレイの中心](manage-focused-inbox.md)のように、ユーザーのオーバーライドを表します。
 
@@ -24,10 +24,10 @@ ms.locfileid: "27876271"
 |[Delete](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|classifyAs|文字列| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
-|ID|文字列| オーバーライドの一意識別子。読み取り専用です。|
+|classifyAs|string| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
+|id|string| オーバーライドの一意識別子。読み取り専用です。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|オーバーライドを作成する対象の差出人のメール アドレス情報。|
 
 ## <a name="relationships"></a>関係
@@ -57,10 +57,15 @@ ms.locfileid: "27876271"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "inferenceClassificationOverride resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/inferenceclassificationoverride.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

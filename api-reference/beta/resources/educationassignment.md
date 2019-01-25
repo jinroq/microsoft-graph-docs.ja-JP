@@ -4,16 +4,16 @@ description: '**EducationAssignment**リソースは、タスクや、研究の�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 68bb881800e1c63acb588e39bb64e1d02e005cc3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982261"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508959"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **EducationAssignment**リソースは、タスクや、研究の一部として、クラスの受講生受講者またはチームのメンバーに割り当てられた作業時間の単位を表します。 教師またはチームの所有者のみが、割り当てを作成できます。 配布資料と講師が、受講生受講者の作業をしようとしているタスクの割り当てが含まれています。 各受講生受講者の割り当てには、その小学校は、オンする作業が含まれている関連する[提出書類](educationsubmissionresource.md)があります。 教師では受講者に提出するスコアとフィードバックを追加できます。
 
@@ -37,10 +37,10 @@ ms.locfileid: "27982261"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| 読み取り専用です。|
-|allowLateSubmissions|Boolean| 受講者が期限より後に送信できるかどうかを識別します。 作成中にこのプロパティを指定しない場合の既定値は true です。 |
-|allowStudentsToAddResourcesToSubmission|Boolean| 受講者が提出書類に独自のリソースを追加できるかどうか、またはかどうかのみ変更できる、先生によって追加のリソースを識別します。 |
-|assignDateTime|DateTimeOffset|日付と割り当てをアクティブになります。  今後は場合、割り当ては表示されません、受講生受講者にこの日まで。  **Timestamp**型は、ISO 8601 形式を使用して日付と時刻の情報を表し、UTC 時間に常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|id|文字列| 読み取り専用です。|
+|allowLateSubmissions|ブール値| 受講者が期限より後に送信できるかどうかを識別します。 作成中にこのプロパティを指定しない場合の既定値は true です。 |
+|allowStudentsToAddResourcesToSubmission|ブール値| 受講者が提出書類に独自のリソースを追加できるかどうか、またはかどうかのみ変更できる、先生によって追加のリソースを識別します。 |
+|assignDateTime|DateTimeOffset|日付と割り当てをアクティブになります。  今後は場合、割り当ては表示されません、受講生受講者にこの日まで。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| ユーザー、または全体のクラスは、割り当てが発行される送信オブジェクトを受信する必要があります。 |
 |assignedDateTime|DateTimeOffset|受講者を割り当て、割り当てが発行された時点を受講者のタイムライン上示しています。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |classId|String| この割り当てが属するクラス。 |
@@ -49,7 +49,7 @@ ms.locfileid: "27982261"
 |displayName|String|割り当ての名前です。|
 |dueDateTime|DateTimeOffset|受講者の割り当てを期限の日付。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |グレーディング|[educationAssignmentGradeType](educationassignmentgradetype.md)|どの割り当てが焼き付けるされます。 |
-|指示|[itemBody](itembody.md)| 割り当ての説明です。  この表示名と受講者を指示を行います。 |
+|手順|[itemBody](itembody.md)| 割り当ての説明です。  この表示名と受講者を指示を行います。 |
 |lastModifiedBy|[identitySet](identityset.md)| 最後の割り当てを変更したユーザーです。 |
 |lastModifiedDateTime|DateTimeOffset|割り当てが最後に修正された瞬間。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |status|string| **割り当て**の状態です。  しないことができますこの値を修正します。  可能な値は、`draft`、`published`、`assigned` です。|
@@ -58,7 +58,7 @@ ms.locfileid: "27982261"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |resources|[educationAssignmentResource](educationassignmentresource.md)コレクション| この割り当てに関連付けられているオブジェクトを学習します。  教師だけでは、このリストを変更できます。 Null 許容型。|
-|提出書類|[educationSubmission](educationsubmission.md)コレクション| 発行されるとグレードを表す各受講者の提出書類のオブジェクトがあります。  読み取り専用です。 Null 許容型。|
+|Submissions|[educationSubmission](educationsubmission.md)コレクション| 発行されるとグレードを表す各受講者の提出書類のオブジェクトがあります。  読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -95,10 +95,15 @@ ms.locfileid: "27982261"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

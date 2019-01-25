@@ -4,16 +4,16 @@ description: 管理単位に (ユーザーまたはグループ) のメンバー
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f64ca4c00265903fa1b4ebc467f2d70274628078
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946827"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509484"
 ---
 # <a name="add-a-member"></a>メンバーを追加する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 管理単位に (ユーザーまたはグループ) のメンバーを追加するのにはこの API を使用します。
 
@@ -68,3 +68,11 @@ Content-length: 109
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-post-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

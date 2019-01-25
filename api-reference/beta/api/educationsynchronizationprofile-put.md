@@ -4,16 +4,16 @@ description: テナント内の既存校のデータの同期プロファイル�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0c99984b4ca0d8d72fdc02d28a8de80761fdbd60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398738"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510576"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナント内の既存校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)のプロパティを更新します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "29398738"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|(個人用の Microsoft アカウントを委任します。|サポートされていません。|
+|委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -187,3 +187,11 @@ Content-type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

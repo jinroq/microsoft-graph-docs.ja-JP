@@ -4,16 +4,16 @@ description: 参加者のタイプです。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d6a4474525086fb1e8aefe00ad37acaf6511e9f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938332"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508147"
 ---
 # <a name="participant-resource-type"></a>参加者のリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 参加者のタイプです。
 
@@ -29,12 +29,12 @@ ms.locfileid: "27938332"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類                                     | 説明                                                  |
+| プロパティ             | 型                                     | 説明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| ID                   | String                                   | 参加者の id です。                                          |
-| 情報                 | [participantInfo](participantinfo.md)    | 参加者の参加者です。                          |
-| isInLobby            | ブール                                  | 参加者がロビーに入っている場合は true。                          |
-| isMuted              | ブール                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュートになって)    |
+| id                   | String                                   | 参加者の id です。                                          |
+| Info                 | [participantInfo](participantinfo.md)    | 参加者の参加者です。                          |
+| isInLobby            | boolean                                  | 参加者がロビーに入っている場合は true。                          |
+| isMuted              | boolean                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュートになって)    |
 | mediaStreams         | [mediaStream](mediastream.md)コレクション | メディア ストリームのリスト。                                   |
 | metadata             | String                                   | 名簿にある参加者が提供するデータの blob     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 参加者が録画機能を持つかどうかについて説明します。 |
@@ -105,10 +105,15 @@ ms.locfileid: "27938332"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

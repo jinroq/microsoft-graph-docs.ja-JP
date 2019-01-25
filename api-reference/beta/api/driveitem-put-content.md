@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: サイズの小さいファイルをアップロードする
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 404310b10610b5378ec11dfbf517ee2cde0042d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 408e88cc3fa670c525b9e994e82fbb652489dd9b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955920"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508077"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>DriveItem の内容をアップロードまたは置換する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 簡単なアップロード API を使用すると、新しいファイルの内容を提供したり、単一の API 呼び出しで既存のファイルの内容を更新したりすることができます。このメソッドは、サイズが 4MB までのファイルのみをサポートしています。
 
@@ -131,9 +131,14 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

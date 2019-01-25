@@ -4,16 +4,16 @@ description: PlannerUser オブジェクトのプロパティを更新します�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 733743ffee8e29d66f2ebe411d127161e7e8eb2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95c631d39fb650dea0b87871bdd10d92a3ab31eb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925890"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508924"
 ---
 # <a name="update-planneruser"></a>PlannerUser を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [PlannerUser](../resources/planneruser.md)オブジェクトのプロパティを更新します。 追加またはユーザーのお気に入りのプランの一覧からプランを削除するこの操作を使用することができ、ユーザーを計画することを示すには、最近表示しました。
 
@@ -35,7 +35,7 @@ PATCH /me/planner
 | 名前       | 説明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}。必須。|
-| If-Match  | 最後の既知の ETag 値を更新する**plannerUser**のです。 必須。|
+| If-Match  | 最後の既知の ETag 値を更新する**plannerUser**のです。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
@@ -127,10 +127,15 @@ Content-length: 979
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update planneruser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/planneruser-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

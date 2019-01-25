@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: 928dc79ae62b5b8b6f6789e42c719eb832135dcb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c5d15c380908f09ef292b7c5794046bad6e95ac8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847503"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507951"
 ---
 # <a name="uploadsession-resource"></a>UploadSession リソース
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **UploadSession** リソースは、OneDrive、OneDrive for Business、または SharePoint のドキュメント ライブラリに、大容量ファイルをアップロードする方法に関する情報を提供します。
 
@@ -38,21 +38,26 @@ ms.locfileid: "27847503"
 ## <a name="properties"></a>プロパティ
 
 
-| プロパティ       | 種類              |説明
+| プロパティ       | 型              |説明
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | アップロード セッションの有効期限が切れる日時の UTC 表示。この有効期限に達する前に、完全なファイルをアップロードする必要があります。
-| nextExpectedRanges | String コレクション | サーバーのファイルに足りないバイト範囲のコレクションです。これらの範囲は 0 インデックスが作成されており、「開始-終了」形式のものです (例、「0-26」でファイルの最初の 27 バイトを示す)。
+| nextExpectedRanges | String collection | サーバーのファイルに足りないバイト範囲のコレクションです。これらの範囲は 0 インデックスが作成されており、「開始-終了」形式のものです (例、「0-26」でファイルの最初の 27 バイトを示す)。
 | uploadUrl          | String            | ファイルのバイト範囲の PUT 要求を受け付ける URL エンドポイントです。
 
 ## <a name="see-also"></a>関連項目
 
-- [アップロード セッションを使ってサイズの大きなファイルをアップロードする](../api/driveitem-createuploadsession.md)
+- アップロード セッションを使ってサイズの大きなファイルをアップロードする
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "UploadSession is used to provide information about large file uploads.",
   "section": "documentation",
-  "tocPath": "Resources/UploadSession"
-} -->
+  "tocPath": "Resources/UploadSession",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/uploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionStat
 localization_priority: Normal
-ms.openlocfilehash: 1d2ab438e7aaf5b0a6aede99290394a9a4ea7f0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 39209671b63b991a8fb3ccf1c830c8557fce27c1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879528"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509638"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemActionStat**リソースでは、集計の詳細については、期間内にアクションを提供します。
 
@@ -34,15 +34,20 @@ ms.locfileid: "27879528"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 種類  | 説明
+| プロパティ    | 型  | 説明
 |:------------|:------|:-------------------------------------------------------
 | actionCount | Int32 | アクションが発生した回数です。 読み取り専用です。
 | actorCount  | Int32 | アクションを実行する異なるアクターの数です。 読み取り専用です。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionStat object provides aggregate details about an action over a period of time.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionStat"
-} -->
+  "tocPath": "Resources/ItemActionStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactionstat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

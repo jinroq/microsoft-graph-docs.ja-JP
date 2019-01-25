@@ -1,19 +1,19 @@
 ---
 title: bookingAppointment リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 0314c8a4d451625c2ee1df332c342c1871a098ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c5868788159f0602c1f8a263138c7ce9107c2c94
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934094"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509841"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment リソースの種類
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 [BookingService](bookingservice.md)Microsoft の予約ビジネスによって提供される、スタッフ メンバーのセットによって実行されるため、顧客の予定を表します。
 
@@ -30,7 +30,7 @@ ms.locfileid: "27934094"
 |[Cancel](../api/bookingappointment-cancel.md)|なし| **BookingAppointment**オブジェクトをキャンセルします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String|予定を予約する、 [bookingCustomer](bookingcustomer.md)の SMTP アドレスです。|
 |customerId|String|この予定の[bookingCustomer](bookingcustomer.md)の ID です。 ID が指定されていない場合、予定を作成するとき、新しい**bookingCustomer**オブジェクトが作成されます。 1 回に設定する必要があります **[得意先コード]** 不変です。|
@@ -44,14 +44,14 @@ ms.locfileid: "27934094"
 |invoiceAmount|倍精度浮動小数点数|請求書の請求金額です。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|日付、時刻、および請求書のこの予定のタイム ゾーンです。|
 |invoiceId|String|請求書の ID。|
-|invoiceStatus|文字列| 請求書の状態です。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
+|invoiceStatus|string| 請求書の状態です。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft の予約で請求書の URL です。|
-|optOutOfCustomerEmail|ブール型|True は、この予定の[bookingCustomer](bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
+|optOutOfCustomerEmail|ブール値|True は、この予定の[bookingCustomer](bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
 |事後バッファリング|Duration|クリーンアップ、例として、予定が終了した後に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。 |
 |事前バッファリング|Duration|例として、準備のため、予定の開始前に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|
-|価格|倍精度浮動小数点数|指定された[bookingService](bookingservice.md)の予定の正規の価格です。|
-|priceType|文字列| サービスの価格設定構造の柔軟性を提供するように設定します。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
-|アラーム|[bookingReminder](bookingreminder.md)コレクション|この予定に送信される顧客の事前通知のコレクションです。 その ID ではこの**bookingAppointment**を読み取るときにのみ、このプロパティの値があります。|
+|Price|倍精度浮動小数点数|指定された[bookingService](bookingservice.md)の予定の正規の価格です。|
+|priceType|string| サービスの価格設定構造の柔軟性を提供するように設定します。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
+|Reminders|[bookingReminder](bookingreminder.md)コレクション|この予定に送信される顧客の事前通知のコレクションです。 その ID ではこの**bookingAppointment**を読み取るときにのみ、このプロパティの値があります。|
 |selfServiceAppointmentId|String|予定が作成された場合 [スケジュール] ページで、お客様が直接にではなく、お客様の代わりにスタッフのメンバーでは、予定の他の追跡 ID。|
 |serviceId|String|[BookingService](bookingservice.md)の ID は、この予定に関連付けられています。|
 |serviceLocation|[location](location.md)|サービスの配信場所です。|
@@ -111,10 +111,15 @@ ms.locfileid: "27934094"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingAppointment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingappointment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

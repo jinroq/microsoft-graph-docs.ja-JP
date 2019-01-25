@@ -4,16 +4,16 @@ description: 追加またはユーザーを有効にするか、マイクロソ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82347f46855baa91b5a42452cdbacc914bc89cdd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d15202d24148b2f75bd857500117a4f97b61fe51
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510499"
 ---
 # <a name="assignlicense"></a>assignLicense
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 追加またはユーザーを有効にするか、マイクロソフトのクラウド サービスの使用を無効にするためのライセンスを削除します。 たとえば、組織は、100 のライセンスを持つ、Office 365 エンタープライズ E3 サブスクリプションを持つことができ、この要求がこれらのライセンスのいずれかを特定のユーザーに割り当てます。 有効にし、サブスクリプションに関連付けられている特定のプランを無効にできます。 サブスクリプションとライセンスに関する詳細については、この[Technet の記事](https://technet.microsoft.com/en-us/library/mt765146.aspx)を参照してください。
 
@@ -42,9 +42,9 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|追加するのにはライセンスを指定する[assignedLicense](../resources/assignedlicense.md)オブジェクトのコレクションです。 [AssignedLicense](../resources/assignedlicense.md)オブジェクトの**disabledPlans**プロパティを設定することにより、ライセンスに関連する servicePlans を無効にすることができます。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) コレクション|追加するのにはライセンスを指定する[assignedLicense](../resources/assignedlicense.md)オブジェクトのコレクションです。 [AssignedLicense](../resources/assignedlicense.md)オブジェクトの**disabledPlans**プロパティを設定することにより、ライセンスに関連する servicePlans を無効にすることができます。|
 |removeLicenses|Guid|削除するライセンスを識別する skuIds のコレクションです。|
 
 ## <a name="response"></a>応答
@@ -131,10 +131,15 @@ Content-length: 491
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: assignLicense",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

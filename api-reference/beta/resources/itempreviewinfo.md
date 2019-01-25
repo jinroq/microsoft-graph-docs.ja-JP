@@ -4,16 +4,16 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
 localization_priority: Normal
-ms.openlocfilehash: 0f2a161b9b43a8d372b90530b1b9d9244f77d8e9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 469679e9baa016560f5a02425bc41d628a24dc2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857345"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509764"
 ---
 # <a name="itempreviewinfo-resource-type"></a>ItemPreviewInfo リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemPreviewInfo**リソースには、 [DriveItem](driveitem.md)のプレビューを埋め込む方法についての情報が含まれています。
 
@@ -29,11 +29,11 @@ ms.locfileid: "27857345"
 
 ## <a name="properties"></a>プロパティ
 
-| 名前           | 種類   | 説明
+| 名前           | 型   | 説明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | 文字列 | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
-| postUrl        | 文字列 | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
-| postParameters | 文字列 | PostUrl を使用する場合は、POST のパラメーター
+| getUrl         | string | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
+| postUrl        | string | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
+| postParameters | string | PostUrl を使用する場合は、POST のパラメーター
 
 GetUrl、postUrl、またはその両方は、指定したオプションのサポートの現在の状態によって返される可能性があります。
 
@@ -46,3 +46,11 @@ param1=value&param2=another%20value
 ```
 
 不透明な Url とパラメーターの形式を検討してください。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itempreviewinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 'reportRoot: getYammerDeviceUsageDistributionUserCounts'
 description: デバイスの種類別にユーザーの数を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 03b97b60fbc650653f6b08eae7f63dba08e8d780
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5d8f74926d6cbfee6a22f9a6789fb232f1166b55
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978068"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511374"
 ---
 # <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a>reportRoot: getYammerDeviceUsageDistributionUserCounts
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 デバイスの種類別にユーザーの数を取得します。
 
@@ -40,7 +40,7 @@ GET /reports/getYammerDeviceUsageDistributionUserCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -171,3 +171,11 @@ Content-Length: 271
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getyammerdeviceusagedistributionusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

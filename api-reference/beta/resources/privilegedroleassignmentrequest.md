@@ -2,16 +2,16 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Id 管理の役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: bfe3b6802136b2848f36abef08134efd0eb82518
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880130"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509008"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
@@ -28,16 +28,16 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|ID|String| 読み取り専用です。 役割の割り当て要求の id。|
+|id|String| 読み取り専用です。 役割の割り当て要求の id。|
 |assignmentState|String| 割り当ての状態です。 値は、`Eligible`対象となる割り当ての`Active`が直接割り当てられている場合 -`Active`管理者、またはユーザーが対象となる割り当ての有効化します。|
 |duration|String| 役割の割り当ての期間です。|
 |理由|String| ロールの割り当ての理由です。|
-|requestedDateTime|DateTimeOffset| 読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|requestedDateTime|DateTimeOffset| 読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |roleId|String| ロールの id です。|
-|スケジュール|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求のスケジュール オブジェクトです。|
-|status|String| 役割の割り当て要求の読み取り only.The 状態です。 値は、 `NotStarted`、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。|
+|Schedule|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求のスケジュール オブジェクトです。|
+|status|文字列型 (String)| 役割の割り当て要求の読み取り only.The 状態です。 値は、 `NotStarted`、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。|
 |ticketNumber|String| ロールの割り当てを ticketNumber。 |
 |ticketSystem|String| ロールの割り当てを ticketSystem。|
 |type|String| 表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。|
@@ -80,10 +80,15 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignmentRequest resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

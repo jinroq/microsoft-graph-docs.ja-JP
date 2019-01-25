@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: SharePoint サイトを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7ef1a6a3a0bdbcf84cb0e0696e280842a63f4812
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 69845652cef0f726ae466a093bf504320c0fdd50
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508574"
 ---
 # <a name="get-a-site-resource"></a>サイト リソースを取得する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [サイト][] リソースのプロパティとリレーションシップを取得します。**サイト** リソースは、SharePoint のチーム サイトを表します。
 
@@ -102,10 +102,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Get by ID"
-} -->
+  "tocPath": "Sites/Get by ID",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

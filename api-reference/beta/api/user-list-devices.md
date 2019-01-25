@@ -4,16 +4,16 @@ description: プロジェクト ローマの機能をサポートしているユ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983542"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509526"
 ---
 # <a name="list-user-devices"></a>ユーザー デバイスの一覧表示
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 プロジェクト ローマの機能をサポートしているユーザーのデバイスの一覧を取得します。 または、アプリケーションを起動またはアプリケーションにデータを送信する機能が含まれます。 した後に GET 呼び出しを行うし、デバイスがデバイスに[コマンドを送信](send-device-command.md)するデバイスの ID を渡します。
 
@@ -123,3 +123,11 @@ Content-length: 140
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-devices.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

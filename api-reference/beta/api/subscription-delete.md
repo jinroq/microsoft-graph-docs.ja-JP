@@ -3,16 +3,16 @@ title: サブスクリプションを削除する
 description: サブスクリプションを削除します。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 79ffce638036414469953d6d729229e00cb1662f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9ca4c772cb6d7de088550a16262275b4c43fb9c9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509463"
 ---
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サブスクリプションを削除します。
 
@@ -44,7 +44,7 @@ DELETE /subscriptions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -83,10 +83,15 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

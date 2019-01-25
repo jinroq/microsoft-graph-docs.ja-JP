@@ -3,16 +3,16 @@ title: アクティビティ フィードの REST API を使用します。
 description: 'Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーのアクティビティを再開します。 アクティビティ フィードの API 要求は、委任されたアクセス許可とユーザーのアクティビティ権限、個人または仕事や学校のアカウントで使用できるユーザーの代わりに実行されます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943397"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509967"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティ フィードの REST API を使用します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーのアクティビティを再開します。 アクティビティ フィードの API 要求は、[委任されたアクセス許可](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)と[ユーザーの活動のアクセス権](/graph/permissions-reference)、個人または仕事や学校のアカウントを使用できるユーザーの代わりに実行されます。 
@@ -62,14 +62,21 @@ Each activity represents a unique...
 ## Common use cases 
 -->
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [アクティビティのリソース](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/projectrome_activity)を参照してくださいし、の重要なタスクを再開するユーザーを支援するアプリのアクティビティを定義します。
 - 活動**pop**にするアイデアの[アダプティブ ・ カードのサンプル](https://adaptivecards.io/samples/)のサンプルを表示します。  
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 
 **詳細については調べていますか。** 
 
 - [アクティビティを使用しているマイクロソフトの経験](https://channel9.msdn.com/events/Build/2017/B8108)を参照してください。
 - [アクティビティ フィードの API と中断した場所を選択](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)について説明します。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

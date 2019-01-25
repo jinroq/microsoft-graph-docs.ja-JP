@@ -2,16 +2,16 @@
 title: アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
 description: 割り当てられている指定されたポリシーを使用して、アプリケーションとサービスのプリンシパル オブジェクトを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 21a5a9ba4260e306553f53866657a482d814b5f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875608"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510478"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 割り当てられている指定されたポリシーを使用して、[アプリケーション](../resources/application.md)と[サービス ・ プリンシパル](../resources/serviceprincipal.md)オブジェクトを取得します。
 
@@ -30,7 +30,7 @@ GET /policies/{id}/appliesTo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -75,3 +75,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-appliesto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

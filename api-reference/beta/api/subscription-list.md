@@ -3,27 +3,27 @@ title: リストの購読
 description: " 詳細については以下のシナリオを参照してください。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: e7b6c618c35aa9952673b79f238777a71bc41f6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 20aad712bc49f91bec58a67c0c66ef76bf4653e2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928781"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510982"
 ---
 # <a name="list-subscriptions"></a>リストの購読
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Webhook サブスクリプションの一覧を取得します。 応答の内容では、アプリケーションを呼び出す; コンテキストによって異なります。詳細については以下のシナリオを参照してください。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 この API には、次のアクセス許可のスコープがサポートされています。アクセス許可] を選択する方法などの詳細については、[アクセス許可](/graph/permissions-reference)を参照してください。
 
 | アクセス許可の種類  | アクセス許可 (特権の小さいものから大きいものへ)  |
 |:---------------- |:-------------------------------------------- |
-| [委任](/graph/auth-v2-user)(職場、学校のアカウント) | [サブスクリプションを作成](subscription-post-subscriptions.md)または Subscription.Read.All (下記参照) に必要なアクセスを許可します。 |
-| [委任](/graph/auth-v2-user)(個人用の Microsoft アカウント) | [サブスクリプションを作成](subscription-post-subscriptions.md)または Subscription.Read.All (下記参照) に必要なアクセスを許可します。 |
+| 委任 (職場または学校のアカウント) | [サブスクリプションを作成](subscription-post-subscriptions.md)または Subscription.Read.All (下記参照) に必要なアクセスを許可します。 |
+| 委任 (個人用 Microsoft アカウント) | [サブスクリプションを作成](subscription-post-subscriptions.md)または Subscription.Read.All (下記参照) に必要なアクセスを許可します。 |
 | [Application](/graph/auth-v2-service) | [サブスクリプションを作成](subscription-post-subscriptions.md)するために必要なアクセスを許可します。 |
 
 応答の結果は、呼び出し元のアプリケーションのコンテキストに基づいています。 以下は、一般的なシナリオの概要です。
@@ -34,8 +34,8 @@ Webhook サブスクリプションの一覧を取得します。 応答の内�
 
 | 呼び出し元のアプリケーションのコンテキスト | 応答が含まれています |
 |:-----|:---------------- |
-| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 <br/>- と -<br/>アプリケーションでは、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元の権限を持っています。<br/><br/>注意: 個人用の Microsoft アカウントとアカウントの仕事/学校の両方に適用します。 | サブスクリプションは、サインインしているユーザーに対してのみ、**このアプリケーション**によって作成されました。 |
-| 自体 (アプリケーションのアクセス許可) のため、アプリケーションを呼び出しています。<br/>- と -<br/>アプリケーションでは、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元の権限を持っています。<br/><br/>注意: 仕事/学校のアカウントのみに適用します。| 自体やディレクトリ内のすべてのユーザーに、**このアプリケーション**によって作成されたサブスクリプション。|
+| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 <br/>And<br/>アプリケーションでは、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元の権限を持っています。<br/><br/>注意: 個人用の Microsoft アカウントとアカウントの仕事/学校の両方に適用します。 | サブスクリプションは、サインインしているユーザーに対してのみ、**このアプリケーション**によって作成されました。 |
+| 自体 (アプリケーションのアクセス許可) のため、アプリケーションを呼び出しています。<br/>And<br/>アプリケーションでは、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元の権限を持っています。<br/><br/>注意: 仕事/学校のアカウントのみに適用します。| 自体やディレクトリ内のすべてのユーザーに、**このアプリケーション**によって作成されたサブスクリプション。|
 
 ### <a name="advanced-scenarios"></a>高度なシナリオ
 
@@ -44,8 +44,8 @@ Webhook サブスクリプションの一覧を取得します。 応答の内�
 
 | 呼び出し元のアプリケーションのコンテキスト | 応答が含まれています |
 |:-----|:---------------- |
-| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 *ユーザーは管理者以外*は。 <br/>- と -<br/>アプリには、アクセス許可が Subscription.Read.All<br/><br/>注意: 個人用の Microsoft アカウントとアカウントの仕事/学校の両方に適用します。 | サブスクリプションは、サインインしているユーザーに対してのみ **、アプリケーション**によって作成されました。 |
-| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 *ユーザーは管理者*です。<br/>- と -<br/>アプリには、アクセス許可が Subscription.Read.All<br/><br/>注意: 仕事/学校のアカウントのみに適用します。 | ディレクトリ内の**すべてのユーザー**の**すべてのアプリケーション**によって作成されるサブスクリプションです。|
+| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 *ユーザーは管理者以外*は。 <br/>And<br/>アプリには、アクセス許可が Subscription.Read.All<br/><br/>注意: 個人用の Microsoft アカウントとアカウントの仕事/学校の両方に適用します。 | サブスクリプションは、サインインしているユーザーに対してのみ **、アプリケーション**によって作成されました。 |
+| サインインしているユーザー (委任されたアクセス許可) のため、アプリケーションを呼び出しています。 *ユーザーは管理者*です。<br/>And<br/>アプリには、アクセス許可が Subscription.Read.All<br/><br/>注意: 仕事/学校のアカウントのみに適用します。 | ディレクトリ内の**すべてのユーザー**の**すべてのアプリケーション**によって作成されるサブスクリプションです。|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -55,13 +55,13 @@ Webhook サブスクリプションの一覧を取得します。 応答の内�
 GET /subscriptions
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -121,12 +121,17 @@ Content-length: 586
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List subscriptions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 応答が含まれて、要求にデータの複数のページが返されるとき、 `@odata.nextLink` 、結果を管理するためのプロパティです。  詳細については、[アプリケーションでは、Microsoft Graph のページング データ](/graph/paging)を参照してください。

@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: アイテムにアクセスするために招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f428fe7b8a61fc158d4175f50fb287760e25d524
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d5afd0a7a23465ffc6e69e1ac7873769c6622b2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945980"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510044"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **DriveItem** の共有の招待状を送信します。共有の招待状は受信者にアクセス許可を提供します。また、任意で受信者に、アイテムが共有されたことを通知する電子メールを送信します。
 
@@ -63,8 +63,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | Recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | アクセスおよび共有の招待状を受信する、受信者のコレクション。                                            |
 | message          | String                                          | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。 |
-| requireSignIn    | Boolean                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
-| sendInvitation   | Boolean                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
+| requireSignIn    | ブール値                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
+| sendInvitation   | ブール値                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
 | roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
 
 ## <a name="example"></a>例
@@ -137,10 +137,15 @@ Content-type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
-} -->
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

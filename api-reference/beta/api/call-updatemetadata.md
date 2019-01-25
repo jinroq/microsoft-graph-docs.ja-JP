@@ -4,16 +4,16 @@ description: 呼び出しに関連付けられているアプリケーション�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 19e56c3ac00aa0b61efef6be3a25020166e364d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b3dade26dde72acd796cc3751df136fde4a4bbea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976479"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507986"
 ---
 # <a name="call-updatemetadata"></a>電話: updateMetadata
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 呼び出しに関連付けられているアプリケーションのメタデータを更新します。
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |metadata|String|名簿にある参加者が提供するデータの blob です。|
-|clientContext|String|クライアントのコンテキスト。|
+|ClientContext|String|クライアントのコンテキスト。|
 
 ## <a name="response"></a>応答
 返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
@@ -86,10 +86,15 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: updateMetadata",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-updatemetadata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

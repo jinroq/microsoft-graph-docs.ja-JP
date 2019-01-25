@@ -3,16 +3,16 @@ title: DriveItemVersion リソースを取得する (プレビュー)
 description: DriveItem の特定のバージョンのメタデータを取得します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4292f511ffde5da4b287fcb090f2102575adcb2f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e0f47a6a47a456d90f43bcb8bfb5a95359f1abfa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984683"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507881"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>DriveItemVersion リソースを取得する (プレビュー)
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) の特定のバージョンのメタデータを取得します。
 
@@ -86,10 +86,15 @@ OneDrive は、ファイルの旧バージョンの完全なメタデータを�
 アプリがファイルの利用可能なバージョンのリストを取得すると、[DriveItemVersion](../resources/driveitemversion.md) リソースが返され、特定のバージョンに関する利用可能な情報が提供されます。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,23 +2,23 @@
 title: GovernanceRoleDefinition を取得します。
 description: プロパティと、governanceRoleDefinition の関係を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 99f19e1942c198259d9df7dd6e0f9e5a7685bc09
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e6a057816a8e07a355941f272325c30078327ab9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865066"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511927"
 ---
 # <a name="get-governanceroledefinition"></a>GovernanceRoleDefinition を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 プロパティと、 [governanceRoleDefinition](../resources/governanceroledefinition.md)の関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | Permissions              |
+|アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
@@ -32,7 +32,7 @@ ms.locfileid: "27865066"
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポート**しません**。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -78,10 +78,15 @@ Content-length: 174
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceRoleDefinition",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroledefinition-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: '予定表オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a9b9ac65fa5d03b73a7508f6032ebe199118b09c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2fb6ea839d6565c379c2d9af55920bd0166a7fb1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922495"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508476"
 ---
 # <a name="update-calendar"></a>予定表を更新する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [予定表](../resources/calendar.md)オブジェクトのプロパティを更新します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 ## <a name="permissions"></a>アクセス許可
@@ -57,8 +57,8 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|String|UI で予定表を他の予定表から区別するための配色テーマを指定します。プロパティ値は次のとおりです。薄い青=0、薄い緑=1、薄いオレンジ=2、薄い灰色=3、薄い黄=4、薄い青緑=5、薄いピンク=6、薄い茶色=7、薄い赤=8、最大色=9、自動=-1|
-|isDefaultCalendar|Boolean|この予定表がユーザーの既定の予定表であれば True、そうでなければ False。|
-|名前|String|予定表の名前。|
+|IsDefaultCalendar|Boolean|この予定表がユーザーの既定の予定表であれば True、そうでなければ False。|
+|name|String|予定表の名前。|
 
 ## <a name="response"></a>応答
 
@@ -112,10 +112,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

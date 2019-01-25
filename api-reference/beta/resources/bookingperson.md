@@ -1,28 +1,28 @@
 ---
 title: bookingPerson リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: e39fbbf12909e7a4d29c95e22896df081522a7d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: be00e59e2378c454cd9c939f992376dd9c54c3b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990111"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508406"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson リソースの種類
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 これは、 [bookingCustomer](bookingcustomer.md)または[bookingStaffMember](bookingstaffmember.md)であることができます、Microsoft の予約のビジネス ユーザーの基本型です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|String|派生のエンティティは、顧客とのインターフェイスの名前です。|
+|displayName|文字列型 (String)|派生のエンティティは、顧客とのインターフェイスの名前です。|
 |emailAddress|String|ユーザーの電子メール アドレスです。|
-|id|String| 派生エンティティの ID です。 読み取り専用です。|
+|id|文字列| 派生エンティティの ID です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -51,10 +51,15 @@ ms.locfileid: "27990111"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingPerson resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingperson.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

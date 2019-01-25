@@ -1,17 +1,17 @@
 ---
 title: secureScoreControlProfiles の更新
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+description: 担当者や tenantNote などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な secureScoreControlProfiles プロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817655"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510954"
 ---
 # <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **担当者**や**tenantNote**などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な**secureScoreControlProfiles**プロパティを更新します。
 
@@ -21,9 +21,9 @@ ms.locfileid: "27817655"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All。  |
+|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.ReadWrite.All。 |
+|アプリケーション | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -44,9 +44,9 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 SecureScoreControlProfile に更新可能なフィールドを次の表に一覧します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 種類 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|担当者|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
+|AssignedTo|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
 |tenantNote|String|(顧客管理) のコントロールのアナリストのコメントです。|
 |controlStateUpdates| String|アナリストは、コントロールの設定を優先します。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
 
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

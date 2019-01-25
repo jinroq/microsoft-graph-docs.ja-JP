@@ -4,24 +4,24 @@ description: 会議の情報を作成または、ミーティングに参加す�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b3590227e55ee217c63110c8f90e1a1741eac81d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1126a3408b8353e927b5653fe60dd4a89125051
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947919"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509358"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 会議の情報を作成または、ミーティングに参加するために指定します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類    | 説明|
+| プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | ブール型 |  |
+| allowConversationWithoutHost | ブール値 |  |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -42,10 +42,15 @@ ms.locfileid: "27947919"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "meetingInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/meetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: オーディオのルーティング グループでは、通話参
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980189"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509624"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
 
@@ -31,10 +31,10 @@ ms.locfileid: "27980189"
 
 | プロパティ      | 型              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| ID            | String            | 読み取り専用です。 サーバーを生成します。                                         |
-| 受信機     | 文字列コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |
+| id            | String            | 読み取り専用です。 サーバーを生成します。                                         |
+| 受信機     | String コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |
 | routingMode   | String            | ルーティング グループのモードです。  使用可能な値は、`oneToOne`、`multicast` です。   |
-| ソース       | 文字列コレクション | ソースの構成要素の id の一覧です。                                      |
+| ソース       | String コレクション | ソースの構成要素の id の一覧です。                                      |
 
 > **注:** ルーティング モードでは、送信元と受信機の制限を決定します。 次のルーティング グループのみがサポートされています。
 > - `oneToOne`-ソースと受信機に 1 つだけの参加者がそれぞれが含まれています。
@@ -66,10 +66,15 @@ ms.locfileid: "27980189"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioRoutingGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

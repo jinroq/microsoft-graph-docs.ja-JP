@@ -3,15 +3,15 @@ title: 通知リソースの種類
 description: '指定したユーザーを対象とするアプリケーション ・ サーバによって提供される通知を表します。 通知は、Microsoft Graph で格納され、ユーザーによって所有されている端点を別のデバイスに配布されます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: e920645e0d526893eff197b42ed5d6ef7f7c7b93
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973077"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509260"
 ---
 # <a name="notification-resource-type"></a>通知リソースの種類
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定したユーザーを対象とするアプリケーション ・ サーバによって提供される通知を表します。 通知は、Microsoft Graph で格納され、ユーザーによって所有されている端点を別のデバイスに配布されます。 
 
@@ -22,7 +22,7 @@ ms.locfileid: "27973077"
 ## <a name="methods"></a>メソッド
 |メソッド | 戻り値の型 | 説明|
 |:------|:------------|:-----------|
-|[通知を作成します。](../api/projectrome-notification-post.md) | [通知](projectrome-notification.md) |作成し、通知を送信します。 |
+|[通知を作成します。](../api/projectrome-notification-post.md) | NOTIFICATION |作成し、通知を送信します。 |
 
 ## <a name="properties"></a>プロパティ
 |名前 | 型 | 説明|
@@ -37,7 +37,7 @@ ms.locfileid: "27973077"
 | payload.visual.body | String | ビジュアルなユーザー通知の本文です。 タイトルまたは本文のいずれかが必要です。 |
 | displayTimeToLive | 整数型 (Int) | 時間 (秒) この通知の内容のままで各プラットフォームの通知のビューアーを設定します。 たとえば、通知が配信されると Windows のデバイスに、このプロパティの値に渡されます ToastNotification.ExpirationTime は、どのくらいの時間、トースト通知は常にユーザーの Windows アクション センターで決定します。 |
 | priority | EnumType | 生のユーザーの通知の優先順位を示します。 既定で優先度の高い視覚的な通知が送信されます。 有効な値は、最低額です。 |
-| グループ名 | String | この通知が所属するグループの名前。 通知をグループ化するための開発者によって設定されます。 |
+| GroupName | String | この通知が所属するグループの名前。 通知をグループ化するための開発者によって設定されます。 |
 | targetPolicy | Edm.ComplexType、JSON オブジェクト | ターゲット ポリシー オブジェクトは、さまざまなレベルの 2 つのエンドポイントの種類 (Windows、iOS および Android) の対象とする、および対象とする、(サブスクリプションの id によって識別される) 特定のエンドポイントに配信ポリシーを通知を処理します。 |
 | targetPolicy.platformTypes | Edm.ComplexType、コレクション (EnumType) | フィルター通知の配布を特定のプラットフォームまたはプラットフォームを使用します。 既定では、プッシュ エンドポイントのすべての種類 (iOS、ウィンドウ、および Android) が有効になります。 |
 
@@ -93,3 +93,11 @@ ms.locfileid: "27973077"
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-notification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

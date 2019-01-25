@@ -4,16 +4,16 @@ description: テナントで特定の学校のデータの同期プロファイ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e0119a583ea1cdc753b44a984af84a42173a4295
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 74f37f5653147691c408cf83e3039920957352c7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969913"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511598"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の Azure blob ストレージにソース ファイルをアップロードするには、共有アクセス署名 (SAS) を取得します。 SAS トークンには、1 時間の有効期限が。
 
@@ -27,7 +27,7 @@ ms.locfileid: "27969913"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|(個人用の Microsoft アカウントを委任します。|サポートされていません。|
+|委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -78,3 +78,11 @@ Content-length: 314
     "value": "https://sdsstorage.blob.core.windows.net/86904b1e-c7d0-4ead-b13a-98f11fc400ee?sv=2015-07-08&sr=c&si=SharedAccessPolicy_20170704044441&sig=CH65vxxqXETCkQNH0Lfsu31cUo0s0XcEEo0OE2YiL6Q%3D&se=2017-07-04T08%3A43%3A01Z&sp=w"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-uploadurl.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

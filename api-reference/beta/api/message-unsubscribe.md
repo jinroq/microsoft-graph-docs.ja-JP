@@ -4,28 +4,28 @@ description: サイン インユーザーに代わって電子メール要求を
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 772c01c0522becc737d07d6e842c610a5abecc0d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 69d14315fc0732ed12db357f9aa9a0c837f48f29
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968163"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508826"
 ---
 # <a name="message-unsubscribe"></a>メッセージ: 購読の取り消し
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サイン インユーザーに代わって電子メール要求を送信し、電子メール配布リストから登録を解除します。`List-Unsubscribe` ヘッダー内の情報を使用します。
 
 メッセージの送信者使用できますメーリング リスト ユーザー フレンドリな方法で受信者のオプションを含めることによって脱退します。ように指定することにより、`List-Unsubscribe`次の[RFC 2369](https://www.faqs.org/rfcs/rfc2369.html)各メッセージのメッセージ ヘッダー。
 
-**メモ**具体的には、**購読の取り消し**操作をするため動作、送信者を指定してください`mailto:`し、URL ベースではない情報の購読を解除します。
+**注** 具体的には、**Unsubscribe** アクションを有効にするには、送信者が URL ベースの登録解除情報ではなく、`mailto:` を指定する必要があります。
 
-そのヘッダーを設定する[メッセージ](../resources/message.md)のインスタンスの**unsubscribeEnabled**プロパティを設定します`true`、 **unsubscribeData**プロパティは、ヘッダーのデータをします。
+そのヘッダーを設定すると、[メッセージ](../resources/message.md) インスタンスの **UnsubscribeEnabled** プロパティが `true` に設定され、**UnsubscribeData** プロパティがヘッダー データに設定されます。
 
-かどうか、メッセージの**unsubscribeEnabled**プロパティは、 `true`、メッセージの送信者によって管理のようなメッセージからユーザーの購読を解除する**購読を解除**アクションを使用することができます。
+メッセージの **UnsubscribeEnabled** プロパティが `true` の場合、**Unsubscribe** アクションを使用して、メッセージ送信者が管理するとおり、同じような今後のメッセージについてユーザーを登録解除することができます。
 
-成功を**登録解除**の操作は、メッセージを**削除済みアイテム**フォルダーに移動します。 将来のメールの配信から、ユーザーの実際の除外は、送信者によって管理されます。
+**Unsubscribe** アクションが完了すると、メッセージは削除済みアイテム フォルダーに移動します。将来のメール配布からのユーザーの実際の除外は、送信者によって管理されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ ms.locfileid: "27968163"
 POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -77,10 +77,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: unsubscribe",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-unsubscribe.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

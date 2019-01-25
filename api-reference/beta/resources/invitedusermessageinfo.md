@@ -2,22 +2,22 @@
 title: 招待メッセージの構成
 description: invitedUserMessageInfo オブジェクトでは、招待メッセージを構成できます。
 localization_priority: Normal
-ms.openlocfilehash: f8a6dd118f1774320e3fe8327d284dac1141fc55
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: fa7ead6938ddfaca78322f56f4638c45d3f2df14
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874124"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507783"
 ---
 # <a name="configuring-the-invitation-message"></a>招待メッセージの構成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 invitedUserMessageInfo オブジェクトでは、[招待](invitation.md)メッセージを構成できます。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ccRecipients|[受信者](recipient.md)|招待メッセージの送信先にする必要がある追加の受信者。現在、サポートされている追加の受信者は 1 人のみです。|
 |customizedMessageBody|String|既定のメッセージを使用しない場合に送信するカスタマイズされたメッセージ本文。|
@@ -37,10 +37,15 @@ invitedUserMessageInfo オブジェクトでは、[招待](invitation.md)メッ�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitedUserMessageInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/invitedusermessageinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

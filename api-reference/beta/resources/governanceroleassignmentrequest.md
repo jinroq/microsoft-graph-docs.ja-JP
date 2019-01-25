@@ -2,16 +2,16 @@
 title: governanceRoleAssignmentRequest リソースの種類
 description: Privilegd Id 管理の役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: 036e44a34d3c5373bcedba305eba6bd686c28601
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509575"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
@@ -28,16 +28,16 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 |[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|管理者は、要求の状態の場合に要求の決定を更新`PendingAdminDecision`。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ                  | 種類          |説明|
+| プロパティ                  | 型          |説明|
 |:--------------------------|:--------------|:----------|
-|ID                         |String         |役割の割り当て要求の id。|
+|id                         |String         |役割の割り当て要求の id。|
 |resourceId                 |String         |必須。 役割の割り当て要求に関連付けられているリソースの id です。|
 |roleDefinitionId           |String         |必須。 役割の割り当て要求に関連付けられている役割の定義の id です。|
 |subjectId                  |String         |必須。 役割の割り当て要求に関連付けられているサブジェクトの id です。|
 |type                       |String         |必須。 表す、ロールの割り当ての操作の種類です。 値は、します。 <ul><li>`AdminAdd`: 管理者の役割にユーザーまたはグループを割り当てる</li><li>`UserAdd`: ユーザーが対象の割り当てを有効化します。</li><li> `AdminUpdate`: 管理者は、既存のロールの割り当てを変更します。</li><li>`AdminRemove`: 管理者の役割からユーザーまたはグループを削除します。<li>`UserRemove`: ユーザーは、作業中の割り当てを非アクティブ化します。<li>`UserExtend`: ユーザーが、有効期限切れの割り当てを拡張する要求します。</li><li>`AdminExtend`: 管理者は、期限切れの割り当てを拡張します。</li><li>`UserRenew`: ユーザーの要求が期限切れの割り当てを更新するには</li><li>`AdminRenew`: 管理者は、期限切れの割り当てを拡張します。</li></ul>|
 |assignmentState|String  |必須。 割り当ての状態です。 値は、します。 <ul><li> `Eligible`対象となる割り当ての</li><li> `Active`-直接割り当てられている場合`Active`管理者、またはユーザーが対象となる割り当ての有効化します。</li></ul>|
 |requestedDateTime          |DateTimeOffset |読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|スケジュール                   |[governanceSchedule](governanceschedule.md)|役割の割り当て要求のスケジュール オブジェクトです。|
+|Schedule                   |[governanceSchedule](governanceschedule.md)|役割の割り当て要求のスケジュール オブジェクトです。|
 |理由                     |String         |ユーザーおよび管理者によって提供されるメッセージが必要な理由についての要求を作成するとします。|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |役割の割り当て要求のステータス。|
 |linkedEligibleRoleAssignmentId|String        |Id を表すロールのアクティブ化の要求の場合は、`eligible assignment`で参照されます。値は、それ以外の場合、 `null`。 |
@@ -82,10 +82,15 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

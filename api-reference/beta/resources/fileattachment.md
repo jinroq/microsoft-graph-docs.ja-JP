@@ -2,16 +2,16 @@
 title: fileAttachment リソースの種類
 description: イベントに関連付けられているテキスト ファイルまたは Word 文書) などのファイル
 localization_priority: Normal
-ms.openlocfilehash: 7f7270bd5392e2d880daeb45491f4c65e9fca198
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869280"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510765"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 (テキスト ファイルなどの Word 文書)、[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)の添付ファイルです。 **ContentBytes**プロパティには、base64 でエンコードされたファイルの内容が含まれています。  
 
@@ -30,7 +30,7 @@ ms.locfileid: "27869280"
 |[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
@@ -75,10 +75,15 @@ ms.locfileid: "27869280"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
