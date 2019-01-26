@@ -2,38 +2,38 @@
 title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
-ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512284"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573824"
 ---
-# <a name="workinghours-resource-type"></a><span data-ttu-id="9e926-103">workingHours リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9e926-103">workingHours resource type</span></span>
+# <a name="workinghours-resource-type"></a><span data-ttu-id="99b49-103">workingHours リソースの種類</span><span class="sxs-lookup"><span data-stu-id="99b49-103">workingHours resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9e926-104">ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。</span><span class="sxs-lookup"><span data-stu-id="9e926-104">Represents the days of the week and hours in a specific time zone that the user works.</span></span>
+<span data-ttu-id="99b49-104">ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。</span><span class="sxs-lookup"><span data-stu-id="99b49-104">Represents the days of the week and hours in a specific time zone that the user works.</span></span>
 
-<span data-ttu-id="9e926-105">アクティビティまたはリソースの計画に対処するシナリオでは、ユーザーの就業時間にアクセスできると便利です。</span><span class="sxs-lookup"><span data-stu-id="9e926-105">Having access to a user's working hours is useful in scenarios that handle activity or resource planning.</span></span> <span data-ttu-id="9e926-106">ユーザーの就業時間は、ユーザーの[メールボックス設定](mailboxsettings.md)の一部として[取得](../api/user-get-mailboxsettings.md#request-3)、[設定](../api/user-update-mailboxsettings.md#request-2)できます。</span><span class="sxs-lookup"><span data-stu-id="9e926-106">You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the working hours of a user as part of the user's [mailbox settings](mailboxsettings.md).</span></span> 
+<span data-ttu-id="99b49-105">アクティビティまたはリソースの計画に対処するシナリオでは、ユーザーの就業時間にアクセスできると便利です。</span><span class="sxs-lookup"><span data-stu-id="99b49-105">Having access to a user's working hours is useful in scenarios that handle activity or resource planning.</span></span> <span data-ttu-id="99b49-106">ユーザーの就業時間は、ユーザーの[メールボックス設定](mailboxsettings.md)の一部として[取得](../api/user-get-mailboxsettings.md#request-3)、[設定](../api/user-update-mailboxsettings.md#request-2)できます。</span><span class="sxs-lookup"><span data-stu-id="99b49-106">You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the working hours of a user as part of the user's [mailbox settings](mailboxsettings.md).</span></span> 
 
-<span data-ttu-id="9e926-107">就業時間には、Outlook クライアントに設定したタイム ゾーンとは異なるタイム ゾーンを設定できます。</span><span class="sxs-lookup"><span data-stu-id="9e926-107">You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client.</span></span> <span data-ttu-id="9e926-108">これは、通常の勤務地とは異なるタイム ゾーンに移動する場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="9e926-108">This can be useful in cases like when you travel to a different time zone than you usually work in.</span></span> <span data-ttu-id="9e926-109">Outlook クライアントを</span><span class="sxs-lookup"><span data-stu-id="9e926-109">You can set the Outlook client</span></span>  
-<span data-ttu-id="9e926-110">移動先のタイム ゾーンに設定すると、現地にいる間、Outlook の時刻の値を現地時間で表示できます。</span><span class="sxs-lookup"><span data-stu-id="9e926-110">to the destination time zone so that Outlook time values are displayed in local time while you are there.</span></span>
-<span data-ttu-id="9e926-111">他のユーザーが通常の勤務地での時間で会議を要求するとしても、該当するタイム ゾーンでの就業時間が考慮されます。</span><span class="sxs-lookup"><span data-stu-id="9e926-111">When other people request work meetings with you in your usual place of work, they can still respect your working hours in the appropriate time zone.</span></span>
+<span data-ttu-id="99b49-107">就業時間には、Outlook クライアントに設定したタイム ゾーンとは異なるタイム ゾーンを設定できます。</span><span class="sxs-lookup"><span data-stu-id="99b49-107">You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client.</span></span> <span data-ttu-id="99b49-108">これは、通常の勤務地とは異なるタイム ゾーンに移動する場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="99b49-108">This can be useful in cases like when you travel to a different time zone than you usually work in.</span></span> <span data-ttu-id="99b49-109">Outlook クライアントを</span><span class="sxs-lookup"><span data-stu-id="99b49-109">You can set the Outlook client</span></span>  
+<span data-ttu-id="99b49-110">移動先のタイム ゾーンに設定すると、現地にいる間、Outlook の時刻の値を現地時間で表示できます。</span><span class="sxs-lookup"><span data-stu-id="99b49-110">to the destination time zone so that Outlook time values are displayed in local time while you are there.</span></span>
+<span data-ttu-id="99b49-111">他のユーザーが通常の勤務地での時間で会議を要求するとしても、該当するタイム ゾーンでの就業時間が考慮されます。</span><span class="sxs-lookup"><span data-stu-id="99b49-111">When other people request work meetings with you in your usual place of work, they can still respect your working hours in the appropriate time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9e926-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9e926-112">Properties</span></span>
-| <span data-ttu-id="9e926-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9e926-113">Property</span></span>     | <span data-ttu-id="9e926-114">型</span><span class="sxs-lookup"><span data-stu-id="9e926-114">Type</span></span>   |<span data-ttu-id="9e926-115">説明</span><span class="sxs-lookup"><span data-stu-id="9e926-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="99b49-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="99b49-112">Properties</span></span>
+| <span data-ttu-id="99b49-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="99b49-113">Property</span></span>     | <span data-ttu-id="99b49-114">型</span><span class="sxs-lookup"><span data-stu-id="99b49-114">Type</span></span>   |<span data-ttu-id="99b49-115">説明</span><span class="sxs-lookup"><span data-stu-id="99b49-115">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9e926-116">daysOfWeek</span><span class="sxs-lookup"><span data-stu-id="9e926-116">daysOfWeek</span></span> | <span data-ttu-id="9e926-117">String コレクション</span><span class="sxs-lookup"><span data-stu-id="9e926-117">String collection</span></span> | <span data-ttu-id="9e926-118">ユーザーが働く曜日。</span><span class="sxs-lookup"><span data-stu-id="9e926-118">The days of the week on which the user works.</span></span> |
-| <span data-ttu-id="9e926-119">startTime</span><span class="sxs-lookup"><span data-stu-id="9e926-119">startTime</span></span> | <span data-ttu-id="9e926-120">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9e926-120">Edm.TimeOfDay</span></span> | <span data-ttu-id="9e926-121">ユーザーの始業時間。</span><span class="sxs-lookup"><span data-stu-id="9e926-121">The time of the day that the user starts working.</span></span> |
-| <span data-ttu-id="9e926-122">endTime</span><span class="sxs-lookup"><span data-stu-id="9e926-122">endTime</span></span> | <span data-ttu-id="9e926-123">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9e926-123">Edm.TimeOfDay</span></span> | <span data-ttu-id="9e926-124">ユーザーの終業時間。</span><span class="sxs-lookup"><span data-stu-id="9e926-124">The time of the day that the user stops working.</span></span> |
-| <span data-ttu-id="9e926-125">timeZone</span><span class="sxs-lookup"><span data-stu-id="9e926-125">timeZone</span></span> | [<span data-ttu-id="9e926-126">timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="9e926-126">timeZoneBase</span></span>](timezonebase.md) | <span data-ttu-id="9e926-127">就業時間に適用するタイム ゾーン。</span><span class="sxs-lookup"><span data-stu-id="9e926-127">The time zone to which the working hours apply.</span></span> |
+| <span data-ttu-id="99b49-116">daysOfWeek</span><span class="sxs-lookup"><span data-stu-id="99b49-116">daysOfWeek</span></span> | <span data-ttu-id="99b49-117">dayOfWeek コレクション</span><span class="sxs-lookup"><span data-stu-id="99b49-117">dayOfWeek collection</span></span> | <span data-ttu-id="99b49-118">ユーザーが働く曜日。</span><span class="sxs-lookup"><span data-stu-id="99b49-118">The days of the week on which the user works.</span></span> |
+| <span data-ttu-id="99b49-119">startTime</span><span class="sxs-lookup"><span data-stu-id="99b49-119">startTime</span></span> | <span data-ttu-id="99b49-120">文字列 (TimeOfDay)</span><span class="sxs-lookup"><span data-stu-id="99b49-120">String (TimeOfDay)</span></span> | <span data-ttu-id="99b49-121">ユーザーの始業時間。</span><span class="sxs-lookup"><span data-stu-id="99b49-121">The time of the day that the user starts working.</span></span> |
+| <span data-ttu-id="99b49-122">endTime</span><span class="sxs-lookup"><span data-stu-id="99b49-122">endTime</span></span> | <span data-ttu-id="99b49-123">文字列 (TimeOfDay)</span><span class="sxs-lookup"><span data-stu-id="99b49-123">String (TimeOfDay)</span></span> | <span data-ttu-id="99b49-124">ユーザーの終業時間。</span><span class="sxs-lookup"><span data-stu-id="99b49-124">The time of the day that the user stops working.</span></span> |
+| <span data-ttu-id="99b49-125">timeZone</span><span class="sxs-lookup"><span data-stu-id="99b49-125">timeZone</span></span> | [<span data-ttu-id="99b49-126">timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="99b49-126">timeZoneBase</span></span>](timezonebase.md) | <span data-ttu-id="99b49-127">就業時間に適用するタイム ゾーン。</span><span class="sxs-lookup"><span data-stu-id="99b49-127">The time zone to which the working hours apply.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="9e926-128">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9e926-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="99b49-128">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="99b49-128">JSON representation</span></span>
 
-<span data-ttu-id="9e926-129">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9e926-129">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="99b49-129">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="99b49-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,9 +45,9 @@ ms.locfileid: "29512284"
 
 ```json
 {
-  "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "daysOfWeek": ["dayOfWeek"],
+  "startTime": "String (TimeOfDay)",
+  "endTime": "String (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

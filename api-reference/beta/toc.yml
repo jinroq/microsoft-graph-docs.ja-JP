@@ -76,7 +76,7 @@ items:
         href: api/user-delete.md
       - name: デルタを取得します。
         href: api/user-delta.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -281,7 +281,7 @@ items:
         href: api/group-getmemberobjects.md
       - name: グループのリストが削除されました
         href: api/directory-deleteditems-list.md
-      - name: グループを一覧表示する
+      - name: グループの一覧表示
         href: api/group-list.md
       - name: 結合されたチームをリストします。
         href: api/user-list-joinedteams.md
@@ -324,7 +324,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -470,7 +470,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: カレンダー
+  - name: 予定表
     href: resources/calendar.md
     items:
     - name: イベント
@@ -560,7 +560,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
@@ -7406,8 +7406,8 @@ items:
         href: api/sectiongroup-list-sections.md
       - name: セクションを作成する
         href: api/sectiongroup-post-sections.md
-    - name: ページ
-      href: resources/page.md
+    - name: Onenote のページ
+      href: resources/onenotepage.md
       items:
       - name: pages を一覧表示する
         href: api/onenote-list-pages.md
@@ -7931,7 +7931,7 @@ items:
         href: api/team-clone.md
       - name: チームの一覧を表示します。
         href: api/user-list-joinedteams.md
-      - name: すべてのチームをリストします。
+      - name: すべてのチームのリストを作成する
         href: /graph/teams-list-all-teams?toc=./ref/toc.json
     - name: グループ (チーム)
       href: resources/group.md
@@ -7940,7 +7940,7 @@ items:
         href: api/group-post-groups.md
       - name: グループを取得する
         href: api/group-get.md
-      - name: グループを一覧表示する
+      - name: グループの一覧表示
         href: api/group-list.md
       - name: グループを更新する
         href: api/group-update.md
@@ -8027,7 +8027,7 @@ items:
         href: api/teamstab-delete.md
     - name: チャット メッセージ
       href: resources/chatmessage.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -8270,8 +8270,8 @@ items:
         href: api/chart-setdata.md
       - name: 位置データ
         href: api/chart-setposition.md
-    - name: 名前付きアイテム
-      href: resources/nameditem.md
+    - name: ブックの名前付きアイテム
+      href: resources/workbooknameditem.md
       items:
       - name: 名前付きアイテム] ボックスの一覧
         href: api/nameditem-get.md
@@ -8325,9 +8325,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 443efbc89a19ae068b60bc47eb9b967f5b893aaa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe9913f85fd7b81857a4137a9896c5ecab7f45ea
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421271"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573446"

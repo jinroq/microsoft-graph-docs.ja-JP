@@ -2,28 +2,28 @@
 title: expressionInputObject リソースの種類
 description: 'テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。'
 localization_priority: Normal
-ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510779"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570961"
 ---
-# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="6fce3-103">expressionInputObject リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6fce3-103">expressionInputObject resource type</span></span>
+# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="60381-103">expressionInputObject リソースの種類</span><span class="sxs-lookup"><span data-stu-id="60381-103">expressionInputObject resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6fce3-104">テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。</span><span class="sxs-lookup"><span data-stu-id="6fce3-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation.</span></span>
+<span data-ttu-id="60381-104">テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md)式の評価を実行するアクションです。</span><span class="sxs-lookup"><span data-stu-id="60381-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action performs an expression evaluation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6fce3-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6fce3-105">Properties</span></span>
-| <span data-ttu-id="6fce3-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6fce3-106">Property</span></span>     | <span data-ttu-id="6fce3-107">型</span><span class="sxs-lookup"><span data-stu-id="6fce3-107">Type</span></span>   |<span data-ttu-id="6fce3-108">説明</span><span class="sxs-lookup"><span data-stu-id="6fce3-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="60381-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="60381-105">Properties</span></span>
+| <span data-ttu-id="60381-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="60381-106">Property</span></span>     | <span data-ttu-id="60381-107">型</span><span class="sxs-lookup"><span data-stu-id="60381-107">Type</span></span>   |<span data-ttu-id="60381-108">説明</span><span class="sxs-lookup"><span data-stu-id="60381-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6fce3-109">definition</span><span class="sxs-lookup"><span data-stu-id="6fce3-109">definition</span></span>|[<span data-ttu-id="6fce3-110">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="6fce3-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="6fce3-111">テスト オブジェクトの定義です。</span><span class="sxs-lookup"><span data-stu-id="6fce3-111">Definition of the test object.</span></span>|
-|<span data-ttu-id="6fce3-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6fce3-112">properties</span></span>|<span data-ttu-id="6fce3-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="6fce3-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="6fce3-114">テスト オブジェクトのプロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="6fce3-114">Property values of the test object.</span></span>|
+|<span data-ttu-id="60381-109">definition</span><span class="sxs-lookup"><span data-stu-id="60381-109">definition</span></span>|[<span data-ttu-id="60381-110">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="60381-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="60381-111">テスト オブジェクトの定義です。</span><span class="sxs-lookup"><span data-stu-id="60381-111">Definition of the test object.</span></span>|
+|<span data-ttu-id="60381-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="60381-112">properties</span></span>|<span data-ttu-id="60381-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="60381-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="60381-114">テスト オブジェクトのプロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="60381-114">Property values of the test object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6fce3-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6fce3-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="60381-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="60381-115">JSON representation</span></span>
 
-<span data-ttu-id="6fce3-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6fce3-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="60381-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="60381-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

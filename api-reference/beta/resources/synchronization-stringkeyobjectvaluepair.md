@@ -2,28 +2,28 @@
 title: stringKeyObjectValuePair リソースの種類
 description: キーが文字列であり、値は、任意の JSON オブジェクトのキー/値ペアを表します。 これは、OData オープン型という名前のプロパティを要求する`value`は有効な JSON オブジェクト。
 localization_priority: Normal
-ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 819a2e004ee712f1250652ce0b3811940545e643
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516967"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572172"
 ---
-# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="ebb4f-104">stringKeyObjectValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ebb4f-104">stringKeyObjectValuePair resource type</span></span>
+# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="d1912-104">stringKeyObjectValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d1912-104">stringKeyObjectValuePair resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebb4f-105">キーが文字列であり、値は、任意の JSON オブジェクトのキー/値ペアを表します。</span><span class="sxs-lookup"><span data-stu-id="ebb4f-105">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="ebb4f-106">これは、OData オープン型という名前のプロパティを要求する`value`は有効な JSON オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ebb4f-106">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
+<span data-ttu-id="d1912-105">キーが文字列であり、値は、任意の JSON オブジェクトのキー/値ペアを表します。</span><span class="sxs-lookup"><span data-stu-id="d1912-105">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="d1912-106">これは、OData オープン型という名前のプロパティを要求する`value`は有効な JSON オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="d1912-106">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ebb4f-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ebb4f-107">Properties</span></span>
-| <span data-ttu-id="ebb4f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ebb4f-108">Property</span></span>     | <span data-ttu-id="ebb4f-109">型</span><span class="sxs-lookup"><span data-stu-id="ebb4f-109">Type</span></span>   |<span data-ttu-id="ebb4f-110">説明</span><span class="sxs-lookup"><span data-stu-id="ebb4f-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d1912-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1912-107">Properties</span></span>
+| <span data-ttu-id="d1912-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1912-108">Property</span></span>     | <span data-ttu-id="d1912-109">型</span><span class="sxs-lookup"><span data-stu-id="d1912-109">Type</span></span>   |<span data-ttu-id="d1912-110">説明</span><span class="sxs-lookup"><span data-stu-id="d1912-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ebb4f-111">Key</span><span class="sxs-lookup"><span data-stu-id="ebb4f-111">key</span></span>|<span data-ttu-id="ebb4f-112">String</span><span class="sxs-lookup"><span data-stu-id="ebb4f-112">String</span></span>|<span data-ttu-id="ebb4f-113">キー。</span><span class="sxs-lookup"><span data-stu-id="ebb4f-113">Key.</span></span>|
-|<span data-ttu-id="ebb4f-114">value</span><span class="sxs-lookup"><span data-stu-id="ebb4f-114">value</span></span>|<span data-ttu-id="ebb4f-115">Any</span><span class="sxs-lookup"><span data-stu-id="ebb4f-115">Any</span></span>|<span data-ttu-id="ebb4f-116">任意の JSON オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ebb4f-116">Arbitrary JSON object.</span></span>|
+|<span data-ttu-id="d1912-111">Key</span><span class="sxs-lookup"><span data-stu-id="d1912-111">key</span></span>|<span data-ttu-id="d1912-112">String</span><span class="sxs-lookup"><span data-stu-id="d1912-112">String</span></span>|<span data-ttu-id="d1912-113">キー。</span><span class="sxs-lookup"><span data-stu-id="d1912-113">Key.</span></span>|
+|<span data-ttu-id="d1912-114">value</span><span class="sxs-lookup"><span data-stu-id="d1912-114">value</span></span>|<span data-ttu-id="d1912-115">Json</span><span class="sxs-lookup"><span data-stu-id="d1912-115">Json</span></span>|<span data-ttu-id="d1912-116">任意の JSON オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="d1912-116">Arbitrary JSON object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ebb4f-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ebb4f-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d1912-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d1912-117">JSON representation</span></span>
 
-<span data-ttu-id="ebb4f-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ebb4f-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d1912-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d1912-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,7 +35,8 @@ ms.locfileid: "29516967"
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value":"Json"
 }
 
 ```

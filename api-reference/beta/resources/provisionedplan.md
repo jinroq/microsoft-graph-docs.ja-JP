@@ -1,38 +1,38 @@
 ---
 title: provisionedPlan リソースの種類
-description: '**ユーザー** エンティティと組織エンティティの provisionedPlans プロパティは、provisionedPlan のコレクションです。'
+description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: be19bb49409751ae5d7a0f11387e74770fde333b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527816"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572550"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="a8cb8-103">provisionedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a8cb8-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="dc8a5-103">provisionedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dc8a5-103">provisionedPlan resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8cb8-104">[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="a8cb8-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="dc8a5-104">[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="dc8a5-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a8cb8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a8cb8-105">Properties</span></span>
-| <span data-ttu-id="a8cb8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a8cb8-106">Property</span></span>     | <span data-ttu-id="a8cb8-107">型</span><span class="sxs-lookup"><span data-stu-id="a8cb8-107">Type</span></span>   |<span data-ttu-id="a8cb8-108">説明</span><span class="sxs-lookup"><span data-stu-id="a8cb8-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dc8a5-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dc8a5-105">Properties</span></span>
+| <span data-ttu-id="dc8a5-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dc8a5-106">Property</span></span>     | <span data-ttu-id="dc8a5-107">型</span><span class="sxs-lookup"><span data-stu-id="dc8a5-107">Type</span></span>   |<span data-ttu-id="dc8a5-108">説明</span><span class="sxs-lookup"><span data-stu-id="dc8a5-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a8cb8-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="a8cb8-109">capabilityStatus</span></span>|<span data-ttu-id="a8cb8-110">String</span><span class="sxs-lookup"><span data-stu-id="a8cb8-110">String</span></span>|<span data-ttu-id="a8cb8-111">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="a8cb8-111">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="a8cb8-112">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="a8cb8-112">provisioningStatus</span></span>|<span data-ttu-id="a8cb8-113">String</span><span class="sxs-lookup"><span data-stu-id="a8cb8-113">String</span></span>|<span data-ttu-id="a8cb8-114">「成功」など。</span><span class="sxs-lookup"><span data-stu-id="a8cb8-114">For example, “Success”.</span></span>|
-|<span data-ttu-id="a8cb8-115">service</span><span class="sxs-lookup"><span data-stu-id="a8cb8-115">service</span></span>|<span data-ttu-id="a8cb8-116">String</span><span class="sxs-lookup"><span data-stu-id="a8cb8-116">String</span></span>|<span data-ttu-id="a8cb8-117">サービスの名前。「AccessControlS2S」など。</span><span class="sxs-lookup"><span data-stu-id="a8cb8-117">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="dc8a5-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="dc8a5-109">capabilityStatus</span></span>|<span data-ttu-id="dc8a5-110">String</span><span class="sxs-lookup"><span data-stu-id="dc8a5-110">String</span></span>|<span data-ttu-id="dc8a5-111">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="dc8a5-111">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="dc8a5-112">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="dc8a5-112">provisioningStatus</span></span>|<span data-ttu-id="dc8a5-113">String</span><span class="sxs-lookup"><span data-stu-id="dc8a5-113">String</span></span>|<span data-ttu-id="dc8a5-114">「成功」など。</span><span class="sxs-lookup"><span data-stu-id="dc8a5-114">For example, “Success”.</span></span>|
+|<span data-ttu-id="dc8a5-115">service</span><span class="sxs-lookup"><span data-stu-id="dc8a5-115">service</span></span>|<span data-ttu-id="dc8a5-116">String</span><span class="sxs-lookup"><span data-stu-id="dc8a5-116">String</span></span>|<span data-ttu-id="dc8a5-117">サービスの名前。「AccessControlS2S」など。</span><span class="sxs-lookup"><span data-stu-id="dc8a5-117">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a8cb8-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a8cb8-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dc8a5-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dc8a5-118">JSON representation</span></span>
 
-<span data-ttu-id="a8cb8-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="a8cb8-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="dc8a5-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="dc8a5-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

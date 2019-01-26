@@ -4,32 +4,32 @@ description: '**InvitationParticipant**は、会話への招待に関連付け�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520677"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573600"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="40b27-103">invitationParticipantInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="40b27-103">invitationParticipantInfo resource type</span></span>
+# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="dad9d-103">invitationParticipantInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dad9d-103">invitationParticipantInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="40b27-104">**InvitationParticipant**は、会話への招待に関連付けられている id のセットを表すために使用し、招待状の追加のパラメーターを提供します。</span><span class="sxs-lookup"><span data-stu-id="40b27-104">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
+<span data-ttu-id="dad9d-104">**InvitationParticipant**は、会話への招待に関連付けられている id のセットを表すために使用し、招待状の追加のパラメーターを提供します。</span><span class="sxs-lookup"><span data-stu-id="dad9d-104">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="40b27-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="40b27-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dad9d-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dad9d-105">Properties</span></span>
 
-| <span data-ttu-id="40b27-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="40b27-106">Property</span></span>                           | <span data-ttu-id="40b27-107">型</span><span class="sxs-lookup"><span data-stu-id="40b27-107">Type</span></span>                          | <span data-ttu-id="40b27-108">説明</span><span class="sxs-lookup"><span data-stu-id="40b27-108">Description</span></span>                                                                          |
+| <span data-ttu-id="dad9d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dad9d-106">Property</span></span>                           | <span data-ttu-id="dad9d-107">型</span><span class="sxs-lookup"><span data-stu-id="dad9d-107">Type</span></span>                          | <span data-ttu-id="dad9d-108">説明</span><span class="sxs-lookup"><span data-stu-id="dad9d-108">Description</span></span>                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="40b27-109">endpointType</span><span class="sxs-lookup"><span data-stu-id="40b27-109">endpointType</span></span>                       | <span data-ttu-id="40b27-110">String</span><span class="sxs-lookup"><span data-stu-id="40b27-110">String</span></span>                        | <span data-ttu-id="40b27-111">使用可能な値は、`default`、`voicemail` です。</span><span class="sxs-lookup"><span data-stu-id="40b27-111">Possible values are: `default`, `voicemail`.</span></span> |
-| <span data-ttu-id="40b27-112">identity</span><span class="sxs-lookup"><span data-stu-id="40b27-112">identity</span></span>                           | [<span data-ttu-id="40b27-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="40b27-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="40b27-114">この招待状に関連付けられている[identitySet](identityset.md) 。</span><span class="sxs-lookup"><span data-stu-id="40b27-114">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
-| <span data-ttu-id="40b27-115">languageId</span><span class="sxs-lookup"><span data-stu-id="40b27-115">languageId</span></span>                         | <span data-ttu-id="40b27-116">String</span><span class="sxs-lookup"><span data-stu-id="40b27-116">String</span></span>                        | <span data-ttu-id="40b27-117">言語カルチャの文字列です。</span><span class="sxs-lookup"><span data-stu-id="40b27-117">The language culture string.</span></span>                                                                                     |
-| <span data-ttu-id="40b27-118">地域</span><span class="sxs-lookup"><span data-stu-id="40b27-118">region</span></span>                             | <span data-ttu-id="40b27-119">String</span><span class="sxs-lookup"><span data-stu-id="40b27-119">String</span></span>                        | <span data-ttu-id="40b27-120">参加者の領域です。</span><span class="sxs-lookup"><span data-stu-id="40b27-120">Region of the participant.</span></span>                                                           |
-| <span data-ttu-id="40b27-121">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="40b27-121">replacesCallId</span></span>                     | <span data-ttu-id="40b27-122">String</span><span class="sxs-lookup"><span data-stu-id="40b27-122">String</span></span>                        | <span data-ttu-id="40b27-123">省略可能。</span><span class="sxs-lookup"><span data-stu-id="40b27-123">Optional.</span></span> <span data-ttu-id="40b27-124">ターゲットの idenity がの一部である現在の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="40b27-124">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="40b27-125">参加者を追加するには、この呼び出しが削除されます。</span><span class="sxs-lookup"><span data-stu-id="40b27-125">This call will be dropped once the participant is added.</span></span> |
+| <span data-ttu-id="dad9d-109">endpointType</span><span class="sxs-lookup"><span data-stu-id="dad9d-109">endpointType</span></span>                       | <span data-ttu-id="dad9d-110">operationStatus</span><span class="sxs-lookup"><span data-stu-id="dad9d-110">operationStatus</span></span>               | <span data-ttu-id="dad9d-111">使用可能な値は、`default`、`voicemail` です。</span><span class="sxs-lookup"><span data-stu-id="dad9d-111">Possible values are: `default`, `voicemail`.</span></span> |
+| <span data-ttu-id="dad9d-112">identity</span><span class="sxs-lookup"><span data-stu-id="dad9d-112">identity</span></span>                           | [<span data-ttu-id="dad9d-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="dad9d-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="dad9d-114">この招待状に関連付けられている[identitySet](identityset.md) 。</span><span class="sxs-lookup"><span data-stu-id="dad9d-114">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
+| <span data-ttu-id="dad9d-115">languageId</span><span class="sxs-lookup"><span data-stu-id="dad9d-115">languageId</span></span>                         | <span data-ttu-id="dad9d-116">String</span><span class="sxs-lookup"><span data-stu-id="dad9d-116">String</span></span>                        | <span data-ttu-id="dad9d-117">言語カルチャの文字列です。</span><span class="sxs-lookup"><span data-stu-id="dad9d-117">The language culture string.</span></span>                                                                                     |
+| <span data-ttu-id="dad9d-118">地域</span><span class="sxs-lookup"><span data-stu-id="dad9d-118">region</span></span>                             | <span data-ttu-id="dad9d-119">String</span><span class="sxs-lookup"><span data-stu-id="dad9d-119">String</span></span>                        | <span data-ttu-id="dad9d-120">参加者の領域です。</span><span class="sxs-lookup"><span data-stu-id="dad9d-120">Region of the participant.</span></span>                                                           |
+| <span data-ttu-id="dad9d-121">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="dad9d-121">replacesCallId</span></span>                     | <span data-ttu-id="dad9d-122">String</span><span class="sxs-lookup"><span data-stu-id="dad9d-122">String</span></span>                        | <span data-ttu-id="dad9d-123">省略可能。</span><span class="sxs-lookup"><span data-stu-id="dad9d-123">Optional.</span></span> <span data-ttu-id="dad9d-124">ターゲットの idenity がの一部である現在の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="dad9d-124">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="dad9d-125">参加者を追加するには、この呼び出しが削除されます。</span><span class="sxs-lookup"><span data-stu-id="dad9d-125">This call will be dropped once the participant is added.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="40b27-126">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="40b27-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dad9d-126">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dad9d-126">JSON representation</span></span>
 
-<span data-ttu-id="40b27-127">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40b27-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dad9d-127">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dad9d-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +40,7 @@ ms.locfileid: "29520677"
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "operationStatus",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",
