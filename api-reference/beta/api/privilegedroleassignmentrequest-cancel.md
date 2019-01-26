@@ -2,59 +2,59 @@
 title: PrivilegedRoleAssignmentRequest をキャンセルします。
 description: PrivilegedRoleAssignmentRequest をキャンセルします。
 localization_priority: Normal
-ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2d717f0ca6fccc274b4ee80cda6b65f02f01abec
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528474"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577509"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="7341e-103">PrivilegedRoleAssignmentRequest をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="7341e-103">Cancel privilegedRoleAssignmentRequest</span></span>
+# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="1bac1-103">PrivilegedRoleAssignmentRequest をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="1bac1-103">Cancel privilegedRoleAssignmentRequest</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7341e-104">の[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="7341e-104">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
+<span data-ttu-id="1bac1-104">の[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="1bac1-104">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7341e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7341e-105">Permissions</span></span>
-<span data-ttu-id="7341e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7341e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1bac1-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1bac1-105">Permissions</span></span>
+<span data-ttu-id="1bac1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1bac1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7341e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7341e-108">Permission type</span></span>                        | <span data-ttu-id="7341e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7341e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1bac1-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1bac1-108">Permission type</span></span>                        | <span data-ttu-id="1bac1-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1bac1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7341e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7341e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7341e-111">PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7341e-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="7341e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7341e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7341e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7341e-113">Not supported.</span></span> |
-|<span data-ttu-id="7341e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7341e-114">Application</span></span>                            | <span data-ttu-id="7341e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7341e-115">Not supported.</span></span> |
+|<span data-ttu-id="1bac1-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1bac1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1bac1-111">PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1bac1-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="1bac1-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1bac1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1bac1-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-113">Not supported.</span></span> |
+|<span data-ttu-id="1bac1-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1bac1-114">Application</span></span>                            | <span data-ttu-id="1bac1-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-115">Not supported.</span></span> |
 
 
-### <a name="http-request"></a><span data-ttu-id="7341e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7341e-116">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1bac1-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1bac1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7341e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7341e-117">Request headers</span></span>
-| <span data-ttu-id="7341e-118">名前</span><span class="sxs-lookup"><span data-stu-id="7341e-118">Name</span></span>      |<span data-ttu-id="7341e-119">説明</span><span class="sxs-lookup"><span data-stu-id="7341e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1bac1-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1bac1-117">Request headers</span></span>
+| <span data-ttu-id="1bac1-118">名前</span><span class="sxs-lookup"><span data-stu-id="1bac1-118">Name</span></span>      |<span data-ttu-id="1bac1-119">説明</span><span class="sxs-lookup"><span data-stu-id="1bac1-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7341e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7341e-120">Authorization</span></span>  | <span data-ttu-id="7341e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7341e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1bac1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1bac1-120">Authorization</span></span>  | <span data-ttu-id="1bac1-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1bac1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7341e-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="7341e-123">Request body</span></span>
-<span data-ttu-id="7341e-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7341e-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1bac1-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="1bac1-123">Request body</span></span>
+<span data-ttu-id="1bac1-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7341e-125">応答</span><span class="sxs-lookup"><span data-stu-id="7341e-125">Response</span></span>
-<span data-ttu-id="7341e-126">成功した場合、このメソッドは `200 Ok` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7341e-126">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="7341e-127">[PrivilegedRoleAssignmentRequest] が返されます (../resources/privilegedRoleAssignmentRequest.md)、応答の本文にします。</span><span class="sxs-lookup"><span data-stu-id="7341e-127">It returns [privilegedRoleAssignmentRequest] (../resources/privilegedRoleAssignmentRequest.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1bac1-125">応答</span><span class="sxs-lookup"><span data-stu-id="1bac1-125">Response</span></span>
+<span data-ttu-id="1bac1-126">成功した場合、このメソッドは `200 Ok` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="1bac1-126">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="1bac1-127">応答本体に[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md)を返します。</span><span class="sxs-lookup"><span data-stu-id="1bac1-127">It returns [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) in the response body.</span></span>
 
-### <a name="error-codes"></a><span data-ttu-id="7341e-128">エラー コード</span><span class="sxs-lookup"><span data-stu-id="7341e-128">Error codes</span></span>
-<span data-ttu-id="7341e-129">この API では、標準の HTTP エラー コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7341e-129">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="7341e-130">さらに、次の表に記載されているカスタムのエラー コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7341e-130">In addition, it returns the custom error codes listed in the following table.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="1bac1-128">エラー コード</span><span class="sxs-lookup"><span data-stu-id="1bac1-128">Error codes</span></span>
+<span data-ttu-id="1bac1-129">この API では、標準の HTTP エラー コードを返します。</span><span class="sxs-lookup"><span data-stu-id="1bac1-129">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="1bac1-130">さらに、次の表に記載されているカスタムのエラー コードを返します。</span><span class="sxs-lookup"><span data-stu-id="1bac1-130">In addition, it returns the custom error codes listed in the following table.</span></span>
 
-|<span data-ttu-id="7341e-131">エラー コード</span><span class="sxs-lookup"><span data-stu-id="7341e-131">Error code</span></span>     | <span data-ttu-id="7341e-132">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="7341e-132">Error message</span></span>              |
+|<span data-ttu-id="1bac1-131">エラー コード</span><span class="sxs-lookup"><span data-stu-id="1bac1-131">Error code</span></span>     | <span data-ttu-id="1bac1-132">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="1bac1-132">Error message</span></span>              |
 |:--------------------| :---------------------|
-| <span data-ttu-id="7341e-133">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="7341e-133">400 BadRequest</span></span> | <span data-ttu-id="7341e-134">要求 Id は、Null にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="7341e-134">RequestId cannot be Null.</span></span> |
-| <span data-ttu-id="7341e-135">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="7341e-135">400 BadRequest</span></span> | <span data-ttu-id="7341e-136">要求 ID が見つからないと要求します。</span><span class="sxs-lookup"><span data-stu-id="7341e-136">Request with request ID not found.</span></span> |
-| <span data-ttu-id="7341e-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="7341e-137">400 BadRequest</span></span> | <span data-ttu-id="7341e-138">キャンセルは、スケジュールおよび PendingApproval の状態でのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="7341e-138">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
-| <span data-ttu-id="7341e-139">403 許可されていません。</span><span class="sxs-lookup"><span data-stu-id="7341e-139">403 UnAuthorized</span></span> | <span data-ttu-id="7341e-140">依頼者がするには [キャンセル] の呼び出し、または見つかりません要求は許可されません。</span><span class="sxs-lookup"><span data-stu-id="7341e-140">Requester not allowed to make Cancel call or request not found.</span></span> |
+| <span data-ttu-id="1bac1-133">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1bac1-133">400 BadRequest</span></span> | <span data-ttu-id="1bac1-134">要求 Id は、Null にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-134">RequestId cannot be Null.</span></span> |
+| <span data-ttu-id="1bac1-135">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1bac1-135">400 BadRequest</span></span> | <span data-ttu-id="1bac1-136">要求 ID が見つからないと要求します。</span><span class="sxs-lookup"><span data-stu-id="1bac1-136">Request with request ID not found.</span></span> |
+| <span data-ttu-id="1bac1-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1bac1-137">400 BadRequest</span></span> | <span data-ttu-id="1bac1-138">キャンセルは、スケジュールおよび PendingApproval の状態でのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="1bac1-138">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
+| <span data-ttu-id="1bac1-139">403 許可されていません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-139">403 UnAuthorized</span></span> | <span data-ttu-id="1bac1-140">依頼者がするには [キャンセル] の呼び出し、または見つかりません要求は許可されません。</span><span class="sxs-lookup"><span data-stu-id="1bac1-140">Requester not allowed to make Cancel call or request not found.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="7341e-141">例</span><span class="sxs-lookup"><span data-stu-id="7341e-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7341e-142">要求</span><span class="sxs-lookup"><span data-stu-id="7341e-142">Request</span></span>
-<span data-ttu-id="7341e-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7341e-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1bac1-141">例</span><span class="sxs-lookup"><span data-stu-id="1bac1-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1bac1-142">要求</span><span class="sxs-lookup"><span data-stu-id="1bac1-142">Request</span></span>
+<span data-ttu-id="1bac1-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1bac1-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "cancel_privilegedRoleAssignmentRequests"
@@ -63,11 +63,11 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/cancel
 ```
 
-##### <a name="response"></a><span data-ttu-id="7341e-144">応答</span><span class="sxs-lookup"><span data-stu-id="7341e-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1bac1-144">応答</span><span class="sxs-lookup"><span data-stu-id="1bac1-144">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

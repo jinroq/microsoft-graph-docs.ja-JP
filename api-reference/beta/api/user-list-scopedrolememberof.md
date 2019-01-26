@@ -4,52 +4,52 @@ description: ユーザーの scopedRoleMembership の一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b6d458aa275b7405d25f60c8946e544b79bc7ac2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: af5d74161aff083e6d1bc70ad8efa7866d4cc02c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515049"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577334"
 ---
-# <a name="list-scopedadministratorof"></a><span data-ttu-id="78710-103">scopedAdministratorOf を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="78710-103">List scopedAdministratorOf</span></span>
+# <a name="list-scopedadministratorof"></a><span data-ttu-id="08e49-103">scopedAdministratorOf を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="08e49-103">List scopedAdministratorOf</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78710-104">ユーザーの[scopedRoleMembership](../resources/scopedrolemembership.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="78710-104">Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="78710-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="78710-105">Permissions</span></span>
-<span data-ttu-id="78710-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="78710-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08e49-104">ユーザーの[scopedRoleMembership](../resources/scopedrolemembership.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="08e49-104">Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="08e49-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="08e49-105">Permissions</span></span>
+<span data-ttu-id="08e49-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="08e49-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="78710-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="78710-108">Permission type</span></span>      | <span data-ttu-id="78710-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="78710-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08e49-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="08e49-108">Permission type</span></span>      | <span data-ttu-id="08e49-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="08e49-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78710-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="78710-110">Delegated (work or school account)</span></span> | <span data-ttu-id="78710-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="78710-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="78710-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="78710-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78710-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="78710-113">Not supported.</span></span>    |
-|<span data-ttu-id="78710-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="78710-114">Application</span></span> | <span data-ttu-id="78710-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78710-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="08e49-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="08e49-110">Delegated (work or school account)</span></span> | <span data-ttu-id="08e49-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="08e49-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="08e49-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="08e49-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08e49-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="08e49-113">Not supported.</span></span>    |
+|<span data-ttu-id="08e49-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="08e49-114">Application</span></span> | <span data-ttu-id="08e49-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08e49-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78710-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="78710-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08e49-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="08e49-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/scopedAdministratorOf
 GET /users/{id}/scopedAdministratorOf
 
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="78710-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="78710-117">Optional query parameters</span></span>
-<span data-ttu-id="78710-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="78710-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="08e49-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="08e49-117">Optional query parameters</span></span>
+<span data-ttu-id="08e49-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="08e49-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="78710-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="78710-119">Request headers</span></span>
-| <span data-ttu-id="78710-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="78710-120">Header</span></span>       | <span data-ttu-id="78710-121">値</span><span class="sxs-lookup"><span data-stu-id="78710-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="08e49-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="08e49-119">Request headers</span></span>
+| <span data-ttu-id="08e49-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="08e49-120">Header</span></span>       | <span data-ttu-id="08e49-121">値</span><span class="sxs-lookup"><span data-stu-id="08e49-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="78710-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="78710-122">Authorization</span></span>  | <span data-ttu-id="78710-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="78710-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="08e49-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="08e49-122">Authorization</span></span>  | <span data-ttu-id="08e49-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="08e49-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="78710-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="78710-125">Request body</span></span>
-<span data-ttu-id="78710-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="78710-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="08e49-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="08e49-125">Request body</span></span>
+<span data-ttu-id="08e49-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="08e49-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="78710-127">応答</span><span class="sxs-lookup"><span data-stu-id="78710-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08e49-127">応答</span><span class="sxs-lookup"><span data-stu-id="08e49-127">Response</span></span>
 
-<span data-ttu-id="78710-128">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="78710-128">If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="78710-129">例</span><span class="sxs-lookup"><span data-stu-id="78710-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="78710-130">要求</span><span class="sxs-lookup"><span data-stu-id="78710-130">Request</span></span>
-<span data-ttu-id="78710-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="78710-131">Here is an example of the request.</span></span>
+<span data-ttu-id="08e49-128">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="08e49-128">If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="08e49-129">例</span><span class="sxs-lookup"><span data-stu-id="08e49-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="08e49-130">要求</span><span class="sxs-lookup"><span data-stu-id="08e49-130">Request</span></span>
+<span data-ttu-id="08e49-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="08e49-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_scopedadministratorof"
@@ -57,12 +57,12 @@ GET /users/{id}/scopedAdministratorOf
 ```http
 GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 ```
-##### <a name="response"></a><span data-ttu-id="78710-132">応答</span><span class="sxs-lookup"><span data-stu-id="78710-132">Response</span></span>
-<span data-ttu-id="78710-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="78710-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="08e49-132">応答</span><span class="sxs-lookup"><span data-stu-id="08e49-132">Response</span></span>
+<span data-ttu-id="08e49-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="08e49-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
   "isCollection": true
 } -->
 ```http

@@ -4,48 +4,48 @@ description: 'AcceptedSenders リストからユーザーまたはグループ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a3406c028990b7b5989036f4173cf86f257b4f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a01c51487a2ffde821c2a4fd04c52363f7f82aa5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520691"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575535"
 ---
-# <a name="remove-acceptedsender"></a><span data-ttu-id="b6d34-103">AcceptedSender の削除</span><span class="sxs-lookup"><span data-stu-id="b6d34-103">Remove acceptedSender</span></span>
+# <a name="remove-acceptedsender"></a><span data-ttu-id="0775e-103">AcceptedSender の削除</span><span class="sxs-lookup"><span data-stu-id="0775e-103">Remove acceptedSender</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b6d34-104">AcceptedSenders リストからユーザーまたはグループを削除します。</span><span class="sxs-lookup"><span data-stu-id="b6d34-104">Remove a user or group from the acceptedSenders list.</span></span> 
+<span data-ttu-id="0775e-104">AcceptedSenders リストからユーザーまたはグループを削除します。</span><span class="sxs-lookup"><span data-stu-id="0775e-104">Remove a user or group from the acceptedSenders list.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="b6d34-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b6d34-105">Permissions</span></span>
-<span data-ttu-id="b6d34-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6d34-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0775e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0775e-105">Permissions</span></span>
+<span data-ttu-id="0775e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0775e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b6d34-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b6d34-108">Permission type</span></span>                        | <span data-ttu-id="b6d34-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b6d34-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="0775e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0775e-108">Permission type</span></span>                        | <span data-ttu-id="0775e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0775e-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="b6d34-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b6d34-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b6d34-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6d34-111">Group.ReadWrite.All</span></span>    |
-| <span data-ttu-id="b6d34-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b6d34-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6d34-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6d34-113">Not supported.</span></span>|
-| <span data-ttu-id="b6d34-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b6d34-114">Application</span></span>                            | <span data-ttu-id="b6d34-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6d34-115">Not supported.</span></span>|
+| <span data-ttu-id="0775e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0775e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0775e-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0775e-111">Group.ReadWrite.All</span></span>    |
+| <span data-ttu-id="0775e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0775e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0775e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0775e-113">Not supported.</span></span>|
+| <span data-ttu-id="0775e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0775e-114">Application</span></span>                            | <span data-ttu-id="0775e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0775e-115">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b6d34-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b6d34-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0775e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0775e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b6d34-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6d34-117">Request headers</span></span>
-| <span data-ttu-id="b6d34-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6d34-118">Header</span></span>         | <span data-ttu-id="b6d34-119">値</span><span class="sxs-lookup"><span data-stu-id="b6d34-119">Value</span></span>                      |
+## <a name="request-headers"></a><span data-ttu-id="0775e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0775e-117">Request headers</span></span>
+| <span data-ttu-id="0775e-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0775e-118">Header</span></span>         | <span data-ttu-id="0775e-119">値</span><span class="sxs-lookup"><span data-stu-id="0775e-119">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="b6d34-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6d34-120">Authorization</span></span>  | <span data-ttu-id="b6d34-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b6d34-p102">Bearer {token}. Required.</span></span>  
+| <span data-ttu-id="0775e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0775e-120">Authorization</span></span>  | <span data-ttu-id="0775e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0775e-p102">Bearer {token}. Required.</span></span>  
 
-## <a name="request-body"></a><span data-ttu-id="b6d34-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b6d34-123">Request body</span></span>
-<span data-ttu-id="b6d34-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b6d34-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0775e-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="0775e-123">Request body</span></span>
+<span data-ttu-id="0775e-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0775e-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b6d34-125">応答</span><span class="sxs-lookup"><span data-stu-id="b6d34-125">Response</span></span>
-<span data-ttu-id="b6d34-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="b6d34-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0775e-125">応答</span><span class="sxs-lookup"><span data-stu-id="0775e-125">Response</span></span>
+<span data-ttu-id="0775e-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="0775e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b6d34-128">例</span><span class="sxs-lookup"><span data-stu-id="b6d34-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="b6d34-129">要求</span><span class="sxs-lookup"><span data-stu-id="b6d34-129">Request</span></span>
-<span data-ttu-id="b6d34-130">要求のいくつかの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6d34-130">The following are a couple of examples of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0775e-128">例</span><span class="sxs-lookup"><span data-stu-id="0775e-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="0775e-129">要求</span><span class="sxs-lookup"><span data-stu-id="0775e-129">Request</span></span>
+<span data-ttu-id="0775e-130">要求のいくつかの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0775e-130">The following are a couple of examples of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,12 +53,10 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="b6d34-131">応答</span><span class="sxs-lookup"><span data-stu-id="b6d34-131">Response</span></span>
-<span data-ttu-id="b6d34-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6d34-132">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="0775e-131">応答</span><span class="sxs-lookup"><span data-stu-id="0775e-131">Response</span></span>
+<span data-ttu-id="0775e-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0775e-132">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
