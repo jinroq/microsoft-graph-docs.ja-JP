@@ -4,12 +4,12 @@ description: worksheetprotection オブジェクトのプロパティと関係�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c3de9aa039b824cff5e5e746c599452b6cfed79
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a175eb5bf4804c294807428405255b7627e54a73
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514888"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577390"
 ---
 # <a name="get-worksheetprotection"></a>WorksheetProtection を取得する
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: ユーザーごとに、Microsoft Teams ユーザー アクティビティの詳細を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: eb884bce47943da0f3f0a3047a65295353fa3252
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 7ca084fbae4ca7714a207364bdf0e9f525a39ff4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521538"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576417"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 

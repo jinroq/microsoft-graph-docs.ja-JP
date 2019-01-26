@@ -2,12 +2,12 @@
 title: NamedItem オブジェクトを更新する
 description: nameditem オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: ffb01e0998b3b94706e50ed461014fcfd11ce927
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b25657a6913a9fe56ce7068b9318fa7390f139f8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514048"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577495"
 ---
 # <a name="update-nameditem"></a>NamedItem オブジェクトを更新する
 
@@ -40,11 +40,11 @@ PATCH /workbook/names(<name>)
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |visible|boolean|オブジェクトを表示するかどうかを指定します。|
-|comment|   string  |この名前に関連付けられているコメントを表します。|
+|comment|   文字列  |この名前に関連付けられているコメントを表します。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [NamedItem](../resources/nameditem.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[workbookNamedItem](../resources/workbooknameditem.md)オブジェクトです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -71,7 +71,7 @@ Content-length: 87
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

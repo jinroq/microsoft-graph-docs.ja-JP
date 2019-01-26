@@ -4,12 +4,12 @@ description: この API を使用して、新しいテーブルを作成しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 67f34a0310fcfd0ba6641eeecbbb8c3e6fc2a05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f88a7e931aa1d3b0991c4e749268ca70ea32082e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528593"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577012"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -42,12 +42,12 @@ POST /workbook/tables/$/add
 
 | パラメーター           | 型      |説明|
 |:---------------|:----------|:----------|
-| Address  | string| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
+| Address  | 文字列| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[テーブル](../resources/table.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[workbookTable](../resources/table.md)のオブジェクトです。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -71,7 +71,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

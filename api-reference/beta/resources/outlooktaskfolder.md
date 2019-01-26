@@ -4,12 +4,12 @@ description: 'Outlook のタスク (outlookTask オブジェクトのコレク�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a117e14ea1cfe4b69cbbf69720a22a0094fb0b72
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515301"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575668"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder リソースの種類
 
@@ -40,15 +40,15 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|
 |id|String|タスク フォルダーでは、ユーザーのメールボックス内で一意の識別子です。 読み取り専用です。|
-|IsDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
+|isDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
 |name|String|タスク フォルダーの名前。|
-|ParentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
+|parentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|複数値のコレクションでは、仕事フォルダーに対して定義されたプロパティを拡張できます。 読み取り専用です。 Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|仕事フォルダーに対して定義されている拡張プロパティを単一値のコレクションです。 読み取り専用です。 Null 許容型。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|複数値のコレクションでは、仕事フォルダーに対して定義されたプロパティを拡張できます。 読み取り専用です。 Null 許容型。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|仕事フォルダーに対して定義されている拡張プロパティを単一値のコレクションです。 読み取り専用です。 Null 許容型。|
 |tasks|[outlookTask](outlooktask.md)コレクション|対象タスク フォルダー内のタスク。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -57,8 +57,8 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty",
     "tasks"
   ],
   "@odata.type": "microsoft.graph.outlookTaskFolder"

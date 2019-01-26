@@ -2,12 +2,12 @@
 title: アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
 description: アプリケーションまたはサービス ・ プリンシパルに割り当てられているポリシー オブジェクトを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 417d59228aadd3c6a54c4634416fd577fce11f18
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518584"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575962"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
 
@@ -70,7 +70,7 @@ Content-Type: application/json
             "alternativeIdentifier":null,
             "definition":["policy-definition"],
             "displayName":"name-value",
-            "isOrganizationDefault":boolean-value,
+            "isOrganizationDefault": true | false,
             "keyCredentials":[key-credentials],
             "type":"type-value"
         }

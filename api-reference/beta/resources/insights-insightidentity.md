@@ -4,12 +4,12 @@ description: 共有アイテムのプロパティを格納する複合型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47283a82260d4f03a271a16660d58aca60da94e1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523058"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577229"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -19,7 +19,15 @@ ms.locfileid: "29523058"
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",
@@ -33,7 +41,7 @@ ms.locfileid: "29523058"
 | プロパティ              | 型          | 説明  |
 | -------------         |-----------    | -------------|
 | displayName       | String          | アイテムを共有するユーザーの表示名。 |
-| id              | 文字列        | アイテムを共有するユーザーの id です。     |
+| id              | String        | アイテムを共有するユーザーの id です。     |
 | address             | String      | アイテムを共有するユーザーの電子メール アドレスです。  |
 <!--
 {

@@ -2,12 +2,12 @@
 title: multiValueLegacyExtendedProperty リソースの種類
 description: 値のコレクションが含まれる拡張プロパティ。
 localization_priority: Normal
-ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512949"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575892"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty リソースの種類
 
@@ -21,13 +21,13 @@ ms.locfileid: "29512949"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | サポートされているリソース インスタンス:[メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[お問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook のタスク](../resources/outlooktask.md)、または[Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)。 そのグループの[送信](../resources/post.md)はサポートされていません注意してください。 | サポートされているリソースの新しいインスタンスまたは既存のインスタンスに multiValueLegacyExtendedProperty を作成します。 |
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | サポートされているリソース インスタンス:[メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[お問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook のタスク](../resources/outlooktask.md)、または[Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)。 そのグループの[送信](../resources/post.md)はサポートされていません注意してください。 | サポートされているリソースの新しいインスタンスまたは既存のインスタンスに **multiValueLegacyExtendedProperty** を作成します。 |
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |([メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)[にお問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md) [Outlook の仕事](../resources/outlooktask.md)、 [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)、またはグループの[転記](../resources/post.md))、サポートされているリソースのインスタンスは、[と展開multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)オブジェクトです。 |`$expand` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|string|プロパティ識別子。読み取り専用です。|
+|id|文字列|プロパティ識別子。読み取り専用です。|
 |value|string collection|プロパティ値のコレクション。|
 
 ## <a name="relationships"></a>関係
@@ -43,7 +43,7 @@ ms.locfileid: "29512949"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

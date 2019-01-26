@@ -4,12 +4,12 @@ description: プロパティと、 **riskyUsers**オブジェクトの関係を�
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: 5c0c0557a5cd84312ef9d6381d8cf3018ab8ce7d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0987a45aafdb31cad17728851ce1ac1ddb066aa0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519319"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576375"
 ---
 # <a name="list-riskyusers"></a>リスト riskyUsers
 
@@ -24,16 +24,16 @@ ms.locfileid: "29519319"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | IdentityRiskyUser.Read.All    |
+|委任 (職場または学校のアカウント) | IdentityriskyUser.Read.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | IdentityRiskyUser.Read.All |
+|アプリケーション | IdentityriskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{query}
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドをサポートしています`$filter`クエリの応答をカスタマイズします。 このトピックで後述する例を参照してください。 
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -63,18 +63,20 @@ GET https://graph.microsoft.com/beta/riskyUsers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isDeleted": "true",
+  "isGuest": true,
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
@@ -102,10 +104,12 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
@@ -115,9 +119,9 @@ HTTP/1.1 200 OK
       "riskLevel": "medium",
       "riskState": "atRisk",
       "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com",
-      }
-    }
+      "userPrincipalName": "jon@contoso.com"
+      
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

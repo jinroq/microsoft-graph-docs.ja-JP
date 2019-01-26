@@ -4,12 +4,12 @@ description: メディア スタックは、アプリケーションによって
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2545d02301233dbe1657d94ec3cf4f953a43531b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511087"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575773"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig リソースの種類
 
@@ -21,8 +21,8 @@ ms.locfileid: "29511087"
 
 | プロパティ                          | 型    | 説明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| ブロブ                              | String  | スマート メディア エージェントによって生成されたメディア構成の blob です。    |
-| removeFromDefaultAudioGroup       | ブール値 | オーディオの既定のグループからのオーディオを削除します。                       |
+| blob                              | String  | スマート メディア エージェントによって生成されたメディア構成の blob です。    |
+| removeFromDefaultAudioGroup       | Boolean | オーディオの既定のグループからのオーディオを削除します。                       |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,6 +33,7 @@ ms.locfileid: "29511087"
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 }-->
 ```json

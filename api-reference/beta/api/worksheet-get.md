@@ -4,12 +4,12 @@ description: ワークシート オブジェクトのプロパティと関係を
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e95cfffe60655ba129839438f58ce5b9efbf11f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3010e806f771e51b5f1cb22a68184a133848ef84
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525536"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577215"
 ---
 # <a name="get-worksheet"></a>ワークシートを取得する
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

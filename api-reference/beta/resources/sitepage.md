@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522302"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576242"
 ---
 # <a name="sitepage-resource"></a>sitePage リソース
 
@@ -22,13 +22,13 @@ ms.locfileid: "29522302"
 ## <a name="tasks-on-a-page"></a>ページ上のタスク
 
 **SitePage**リソースの次のタスクを利用できます。
-以下のすべての例は、[][] などのサイトからの相対指定です。
+以下のすべての例は、[サイト][]では、例えば: `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
 
 | 共通タスク                     | HTTP メソッド
 |:--------------------------------|:------------------------------
-| [List pages][]                  | ページを取得する
+| [List pages][]                  | /Pages を取得します。
 | [Get page][]                    | /Pages/{ページの id を取得します。
-| [Create][]                      | POST pages
+| [Create][]                      | 投稿/pages
 | [Delete][]                      | /Pages/{ページの id を削除します。
 | [Publish][]                     | /Pages/{ページ id} の投稿し、公開
 
@@ -56,7 +56,7 @@ ms.locfileid: "29522302"
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
@@ -81,15 +81,15 @@ ms.locfileid: "29522302"
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | ページのコンテンツの種類です。
 
-## <a name="page-content"></a>ページ コンテンツ
+## <a name="page-content"></a>ページのコンテンツ
 
 **SitePage**リソースでは、次のコンテンツのフィールドがあります。
 
 | プロパティ名      | 型                       | 説明
 |:-------------------|:---------------------------|:---------------------------
 | タイトル              | 文字列                     | ページのタイトル。
-| pageLayout         | string                     | ページのページ レイアウトの名前。
-| web パーツ           | webpart                | ページ上の web パーツです。
+| pageLayout         | 文字列                     | ページのページ レイアウトの名前。
+| web パーツ           | [web パーツ][]                | ページ上の web パーツです。
 
 ## <a name="authoring-metadata"></a>メタデータを作成する
 
@@ -104,9 +104,9 @@ ms.locfileid: "29522302"
 | プロパティ名        | 型              | 説明
 |:---------------------|:------------------|:----------------------------------
 | id                   | 文字列            | アイテムの一意識別子。読み取り専用です。
-| name                 | string            | アイテムの名前/タイトル。
+| name                 | 文字列            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
-| eTag                 | string            | アイテムの ETag。読み取り専用です。
+| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
 | parentReference      | [itemReference][] | アイテムが最後に変更された日時。読み取り専用です。
@@ -126,7 +126,7 @@ ms.locfileid: "29522302"
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [サイト]: site.md
-webpart
+[web パーツ]: webpart.md
 
 <!--
 {

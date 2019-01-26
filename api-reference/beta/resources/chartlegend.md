@@ -4,12 +4,12 @@ description: グラフに凡例を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88330f98b2d652d347aae703ec91fd4de8678c9d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528187"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576396"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend リソースの種類
 
@@ -22,20 +22,20 @@ ms.locfileid: "29528187"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartLegend | [ChartLegend](chartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |ChartLegend オブジェクトを更新します。 |
+|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |ChartLegend オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|boolean|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
-|position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
+|position|文字列|グラフの凡例の位置を表します。 可能な値: `Top`、 `Bottom`、 `Left`、 `Right`、 `Corner`、 `Custom`。|
 |visible|boolean|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|グラフ の凡例の書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|グラフ の凡例の書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -43,17 +43,19 @@ ms.locfileid: "29528187"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
 }
 
 ```

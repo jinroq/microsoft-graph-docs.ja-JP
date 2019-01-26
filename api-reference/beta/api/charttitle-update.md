@@ -4,12 +4,12 @@ description: charttitle オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e67790672f2e31baaacd0eba500684f7b2275e97
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 109c7565cc409064ee25f6a1ee285e6f73be1edf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509645"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577320"
 ---
 # <a name="update-charttitle"></a>charttitle オブジェクトを更新する
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartTitle](../resources/charttitle.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[workbookChartTitle](../resources/charttitle.md)オブジェクトです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -71,7 +71,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,18 +3,19 @@ title: office365ActivationCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 4787672df6462e8d1f343e4dace43ede7c79ff37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 7bc21be693a5c68ecd5c6a1e4e44d53c9261acdb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991182"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575528"
 ---
 # <a name="office365activationcounts-resource-type"></a>office365ActivationCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   | 説明                              |
+| プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日付   | コンテンツの最新の日付。          |
 | productType       | String | 「Office 365 用リソース"、「プロジェクト クライアント」など、製品の種類または"Office 365"の Visio Pro です。 |

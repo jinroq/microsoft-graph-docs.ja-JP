@@ -3,12 +3,13 @@ title: Skype for Business アクティビティ レポート
 description: 組織全体にわたってアクティビティの詳細を取得できます。 これらの詳細は、組織のための調査、計画、その他のビジネスの意思決定に役立ちます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a81e27d58316cb415d6296b4f77519a3f2125643
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 3f843efc6834ee59872e7bf750174558cdb0a103
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512396"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577383"
 ---
 # <a name="skype-for-business-activity-reports"></a>Skype for Business アクティビティ レポート
 
@@ -24,7 +25,7 @@ ms.locfileid: "29512396"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [ユーザーの詳細を取得する](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Stream          | [skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md) | ユーザー別の Skype for Business アクティビティに関する詳細を取得します。 |
 | [アクティビティの数を取得する](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream          | [skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md) | Skype for Business を介して組織内で行われた会議セッションの開催ユーザー数と参加ユーザー数の傾向を取得します。 レポートには、ピア ツー ピア セッションの数も含まれます。 |
-| [ユーザーの数を取得する](../api/reportroot-getskypeforbusinessactivityusercounts.md) | ストリーム          | [skypeForBusinessActivityUserCounts](../resources/skypeforbusinessactivityusercounts.md) | Skype for Business を介して組織内で行われた会議セッションにおける、それぞれ別個の開催ユーザー数と参加ユーザー数の傾向を取得します。 レポートには、ピア ツー ピア セッションの数も含まれます。 |
+| [ユーザーの数を取得する](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream          | [skypeForBusinessActivityUserCounts](../resources/skypeforbusinessactivityusercounts.md) | Skype for Business を介して組織内で行われた会議セッションにおける、それぞれ別個の開催ユーザー数と参加ユーザー数の傾向を取得します。 レポートには、ピア ツー ピア セッションの数も含まれます。 |
 <!--
 {
   "type": "#page.annotation",

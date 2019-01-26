@@ -4,12 +4,12 @@ description: 表の行を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513999"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577223"
 ---
 # <a name="tablerow-resource-type"></a>TableRow リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "29513999"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|TableRow を取得する　 | [TableRow](tablerow.md) |tableRow オブジェクトのプロパティと関係を読み取ります。|
+|[TableRow を取得する](../api/tablerow-get.md) | [TableRow](tablerow.md) |tableRow オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |TableRow を更新します。 |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|行全体に関連付けられた範囲オブジェクトを返します。|
 |[Delete](../api/tablerow-delete.md)|なし|テーブルから行を削除します。|
@@ -34,7 +34,7 @@ ms.locfileid: "29513999"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |index|int|テーブルの行コレクション内の行のインデックス番号を返します。0 を起点とする番号になります。読み取り専用。|
-|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係
 なし

@@ -3,12 +3,13 @@ title: Yammer デバイス使用状況レポート
 description: Yammer デバイス使用状況レポートでは、Yammer での取り組みにユーザーが利用しているデバイスに関する情報を取得できます。 一定期間中のデバイスの種類別ユーザーの数、およびユーザー別の詳細も確認することができます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f5b24d6d235a8719f5f4b7df0389b5e5971dd8cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521867"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577432"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer デバイス使用状況レポート
 

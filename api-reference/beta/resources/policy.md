@@ -2,12 +2,12 @@
 title: ポリシー リソースの種類
 description: Azure AD ポリシーを表します。 ポリシーは、アプリケーション、サービス ・ プリンシパル、グループ、または組織に割り当てられている全体に適用することができますカスタム ルールです。 現在だけがポリシーの 1 つのタイプがあります。
 localization_priority: Normal
-ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518787"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576200"
 ---
 # <a name="policy-resource-type"></a>ポリシー リソースの種類
 
@@ -33,9 +33,9 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 ### <a name="common-properties"></a>共通プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|definition|String|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
+|definition|String コレクション|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
 |displayName|String|ポリシーに独自の名前です。 必須です。|
-|IsOrganizationDefault|ブール値|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
+|IsOrganizationDefault|Boolean|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
 |type|String|ポリシーの種類を指定します。 現在"TokenLifetimePolicy"をする必要があります。 必須です。|
 
 #### <a name="common-relationships"></a>共通関係
@@ -70,6 +70,13 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {

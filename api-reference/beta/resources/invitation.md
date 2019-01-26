@@ -4,12 +4,12 @@ description: '招待マネージャーを使用して、組織に外部ユーザ
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 05330d0a8d62dc3afdff5c90301ed4d4a60b2be0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511514"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577446"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 
@@ -30,14 +30,14 @@ ms.locfileid: "29511514"
 ## <a name="methods"></a>メソッド
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[招待状の作成](../api/invitation-post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
+| [招待状の作成](../api/invitation-post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|メッセージ テキスト、言語、および cc 受信者リストのカスタマイズなど、招待ユーザーに送信されるメッセージの追加構成。|
+|invitedUserMessageInfo| [invitedUserMessageInfo](../resources/invitedusermessageinfo.md)|メッセージ テキスト、言語、および cc 受信者リストのカスタマイズなど、招待ユーザーに送信されるメッセージの追加構成。|
 |sendInvitationMessage|ブール値|招待されるユーザーにメールを送信するかどうかを示します。既定値は false です。|
 |inviteRedirectUrl|String|招待状が引き換えられるとにユーザーがリダイレクトされる URL。必須。|
 |inviteRedeemUrl|String|ユーザーが招待状の引き換えに使用できる URL。読み取り専用|
@@ -47,7 +47,7 @@ ms.locfileid: "29511514"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|招待状作成の一環として作成されたユーザー。読み取り専用|
+|invitedUser| [User](../resources/user.md) コレクション|招待状作成の一環として作成されたユーザー。読み取り専用|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
@@ -57,13 +57,13 @@ ms.locfileid: "29511514"
 {
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
-  "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
+  "invitedUserMessageInfo": {"@odata.type": "#microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
 
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": [{"@odata.type": "#microsoft.graph.user"}]
 }
 ```
 

@@ -4,12 +4,12 @@ description: 直線要素の書式設定オプションをカプセル化しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6bede2e3e8eeb44dbac67832621a2b1586c6b319
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517933"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577054"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "29517933"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartLineFormat | ChartLineFormat |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartlineformat-update.md) | ChartLineFormat |ChartLineFormat オブジェクトを更新します。 |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
 |[Clear](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
@@ -32,19 +32,18 @@ ms.locfileid: "29517933"
 |color|文字列|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="relationships"></a>関係
-None
+なし
 
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

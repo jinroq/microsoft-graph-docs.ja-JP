@@ -2,12 +2,12 @@
 title: scopedRoleMembership リソースの種類
 description: スコープ ロール メンバーシップでは、スコープ管理単位 (AU) には、さらに、ディレクトリのロールのユーザーのメンバーシップについて説明します。  これは、ユーザーおよび組織の一部のグループ (、AU で定義されるサブセット) を管理するユーザーに管理者特権を委任するテナント規模の企業の adminsistrator を許可するためのメカニズムを提供します。
 localization_priority: Normal
-ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3af7a44221c4cf2822440a6025706c8bd4a93ac
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521503"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575661"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership リソースの種類
 
@@ -21,12 +21,12 @@ ms.locfileid: "29521503"
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|ディレクトリの役割のスコープは、管理単位の一意の識別子|
-|id|string| スコープ ロール メンバーシップの一意の識別子です。 読み取り専用です。|
-|roleId|string| メンバーが含まれるディレクトリの役割の一意の識別子です。|
+|administrativeUnitId|文字列|ディレクトリの役割のスコープは、管理単位の一意の識別子|
+|id|文字列| スコープ ロール メンバーシップの一意の識別子です。 読み取り専用です。|
+|roleId|文字列| メンバーが含まれるディレクトリの役割の一意の識別子です。|
 |roleMemberInfo|[identity](identity.md)| ロール メンバーの識別情報です。 このスコープの役割のメンバーであるユーザーを表します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "29521503"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ description: ブック セッションについての情報を提供します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 502781c4049c9451f5ed67ff97222abf4df462d7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962451"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575619"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo リソース型
 
@@ -35,8 +35,8 @@ ms.locfileid: "27962451"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類  | 説明                               |
+| プロパティ | 型  | 説明                               |
 |:---------|:------|:------------------------------------------|
-| ID  | 文字列 | ブック セッションの ID。 |
-| persistChanges | 文字列 |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
+| id  | 文字列 | ブック セッションの ID。 |
+| persistChanges | boolean |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
 

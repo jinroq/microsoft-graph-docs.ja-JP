@@ -3,18 +3,19 @@ title: office365GroupsActivityFileCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: adff009d9047aa147c8042059fbdab8491288fb7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 89ac23b89730ec98515d6d0d3c06867e57b19ed1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972559"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575577"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>office365GroupsActivityFileCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   | 説明                              |
+| プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日付   | コンテンツの最新の日付。          |
 | total             | Int64  | グループの SharePoint ドキュメント ライブラリ内のファイルの合計数です。 |

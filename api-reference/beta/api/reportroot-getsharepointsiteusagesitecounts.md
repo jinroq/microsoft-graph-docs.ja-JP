@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageSiteCounts'
 description: すべてのサイトのファイルの合計数と、アクティブ ファイルの数を取得します。 ファイル (ユーザーまたはシステム) は、一定期間中に保存、同期、変更、共有されるとアクティブとみなされます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 81b5a8d1e6679ee306ac1a180db4a597fb05e50f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d1286b1904c2e9d89fc4d629c7a635f76cf43d62
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522267"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575472"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 

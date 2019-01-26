@@ -4,12 +4,12 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8be2b9fa3c135e710b8a0bcf819187e6cb57959
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: beb8277e843b9514d9588ed915ad07040b73fb43
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512823"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577131"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
@@ -43,13 +43,13 @@ PATCH /users/{id | userPrincipalName}
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
+|assignedLicenses|[microsoft.graph.assignedLicense](../resources/assignedlicense.md)コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
 |department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|EmployeeID|String|組織がユーザーに割り当てられている従業員の識別子です。 $filter をサポートします。|
+|[社員コード]|String|組織がユーザーに割り当てられている従業員の識別子です。 $filter をサポートします。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |interests|String コレクション|ユーザーが自分の関心事を記述する一覧。|
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}
 |officeLocation|String|ユーザーの勤務先の場所。|
 |onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。**重要:****$** と **_** の文字は、このプロパティを指定するときには使用できません。$filter をサポートします。                            |
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
+|passwordProfile|[microsoft.graph.passwordProfile](../resources/passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |pastProjects|String コレクション|ユーザーが過去のプロジェクトを列挙する一覧。|
 |postalCode|String|ユーザーの住所の郵便番号。郵便番号は、ユーザーの国/地域に固有です。アメリカ合衆国では、この属性には、ZIP コードが含まれます。|
 |preferredLanguage|String|ユーザーが設定する言語。ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
@@ -129,7 +129,7 @@ HTTP/1.1 204 No Content
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

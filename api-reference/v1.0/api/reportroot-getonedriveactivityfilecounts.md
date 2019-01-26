@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveActivityFileCounts'
 description: いずれかの OneDrive アカウントに対してファイル操作を実行した、一意のライセンス ユーザーの数を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 247df845ac174f58bfd12fd401d3442ff93dd6af
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: d715e48af9b21b9b1290e757c0bb3f51ff9dfffb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980406"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577425"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 

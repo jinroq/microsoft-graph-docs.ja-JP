@@ -4,12 +4,12 @@ description: グラフのポイントにあるすべてのデータ ラベルの
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f722dccd84d1861ff47e0aa073fe66f50372ad4f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510338"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576403"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels リソースの種類
 
@@ -22,13 +22,13 @@ ms.locfileid: "29510338"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartDataLabels | [chartDataLabels](chartdatalabels.md) |chartDataLabels オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartdatalabels-update.md) | ChartDataLabels |ChartDataLabels オブジェクトを更新します。 |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |chartDataLabels オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md) |ChartDataLabels オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|position|string|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
+|position|文字列|データ ラベルの位置を表す値を DataLabelPosition。 可能な値: `None`、 `Center`、 `InsideEnd`、 `InsideBase`、 `OutsideEnd`、 `Left`、 `Right`、 `Top`、 `Bottom`、 `BestFit`、 `Callout`。|
 |separator|文字列|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
 |showBubbleSize|boolean|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
 |showCategoryName|boolean|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
@@ -40,18 +40,17 @@ ms.locfileid: "29510338"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。値の取得のみ可能です。|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 }-->
 
 ```json

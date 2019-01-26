@@ -2,12 +2,12 @@
 title: デバッギングのリソースの種類
 description: Azure AD にアクセスが機能を確認、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンクするコントロールを表します。
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511416"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576557"
 ---
 # <a name="programcontrol-resource-type"></a>デバッギングのリソースの種類
 
@@ -42,10 +42,10 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 | `displayName`            |`String`                | コントロールの名前です。                                                             |
 | `status`                 |`String`                | コントロールのライフ サイクルの状態です。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 作成日付と時刻のコントロールです。                                        |
-| `owner`                  |%__UserIdentity__%   | プログラムのコントロールを作成したユーザー。                                               |
-| `resource`               |`programResource`       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
+| `owner`                  |[割り当てられていません](useridentity.md)   | プログラムのコントロールを作成したユーザー。                                               |
+| `resource`               | [programResource](programresource.md)       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 | `program`                |[プログラム](program.md)               | このコントロールの一部であるプログラムです。                                                |

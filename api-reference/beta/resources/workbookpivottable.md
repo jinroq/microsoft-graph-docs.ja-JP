@@ -4,12 +4,12 @@ description: Excel のピボットテーブルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 774c407022d700bc5856dc780eff3a6dafa6bc4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520460"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577460"
 ---
 # <a name="pivottable-resource-type"></a>ピボットテーブル リソースの種類
 
@@ -34,13 +34,14 @@ Excel のピボットテーブルを表します。
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|ワークシート|[worksheet](worksheet.md)| 現在のピボットテーブルを含んでいるワークシート。読み取り専用です。   |
+|worksheet|[WorkbookWorksheet](worksheet.md)| 現在のピボットテーブルを含んでいるワークシート。読み取り専用。   |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

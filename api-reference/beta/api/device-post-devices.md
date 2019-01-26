@@ -4,12 +4,12 @@ description: 新しいデバイスを作成します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 30c4852d3e44e9318fef38018f1a99823e362112
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514811"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577061"
 ---
 # <a name="create-device"></a>デバイスを作成する
 
@@ -92,7 +92,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "binary"
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
@@ -106,7 +106,7 @@ Content-length: 364
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

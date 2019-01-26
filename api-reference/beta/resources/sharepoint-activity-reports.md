@@ -3,12 +3,13 @@ title: SharePoint アクティビティ レポート
 description: ファイルとの相互作用を参照して、SharePoint を使用するライセンスを保有するすべてのユーザーの利用状況を取得できます。 共有されたファイル数に基づいて、進行中のコラボレーションのレベルを確認することもできます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 55013b3ada74e876734a83acf512a532e32cc4be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 98d0393545963a73852197f5bd78241cfb958a22
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522197"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577117"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint アクティビティ レポート
 

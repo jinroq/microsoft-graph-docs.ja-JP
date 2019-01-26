@@ -4,12 +4,12 @@ description: 受信トレイや下書きなどの、ユーザーのメールボ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513089"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576732"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
@@ -32,17 +32,17 @@ GET /me/mailFolders/drafts
 
 | 既知のフォルダー名 | 説明 |
 |:-----------------------|:------------|
-| Archive | アーカイブ フォルダーのメッセージは、サポートしている Outlook クライアントで One_Click のアーカイブ機能を使用する場合に送信されます。 **注:** これは Exchange のメールボックスのアーカイブの機能は、オンラインの場合と同じです。 |
+| アーカイブ | アーカイブ フォルダーのメッセージは、サポートしている Outlook クライアントで One_Click のアーカイブ機能を使用する場合に送信されます。 **注:** これは Exchange のメールボックスのアーカイブの機能は、オンラインの場合と同じです。 |
 | 散乱 | 整理フォルダーの優先順位の低いメッセージは、整理機能を使用するときに移動されます。 |
-| Conflicts | メールボックスにある競合アイテムを含むフォルダーです。 |
+| 競合 | メールボックスにある競合アイテムを含むフォルダーです。 |
 | conversationhistory | (これを行うには、Skype が構成されている) 場合に、Skype が IM の会話を保存するフォルダーです。 |
 | deleteditems | フォルダーのアイテムは、削除するときに移動されます。 |
 | 下書き | 未送信のメッセージを格納するフォルダー。 |
-| 受信トレイ | 受信トレイ フォルダー。 |
-| junkemail | 迷惑メール フォルダー。 |
+| [受信トレイ] | [受信トレイ] フォルダーです。 |
+| junkemail | 迷惑メールのフォルダーです。 |
 | localfailures | ローカル クライアント上に存在するが、サーバーにアップロードできませんでしたアイテムを含むフォルダーです。 |
 | msgfolderroot | 「インフォメーション ストアの最上位」のフォルダーです。 このフォルダーは、受信トレイなど、通常のメール クライアントで表示されているフォルダーの親フォルダーです。 |
-| 送信トレイ | 送信トレイ フォルダー。 |
+| [送信トレイ] します。 | [送信トレイ] フォルダーです。 |
 | recoverableitemsdeletions | ソフト削除済みアイテムを含むフォルダー: 削除済みアイテム フォルダーから、または shift キーを押して削除 + では、Outlook を削除します。 このフォルダーが、Outlook 電子メール クライアントに表示されないが、エンド ・ ユーザーを操作できます Outlook または Outlook web 上で**サーバーから削除済みアイテムの回復**機能を使用します。 |
 | スケジュール済み | IOS は、Outlook のスケジュール機能を使用して受信トレイに表示されるようにスケジュールされているメッセージを含むフォルダーです。 |
 | 使用して | ユーザーのメールボックスで定義されているすべての検索フォルダーの親フォルダーです。 |
@@ -75,12 +75,12 @@ GET /me/mailFolders/drafts
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
-|displayName|文字列型 (String)|mailFolder の表示名。|
+|displayName|String|mailFolder の表示名。|
 |id|String|MailFolder の一意の識別子です。|
 |parentFolderId|String|mailFolder の親 mailFolder の一意識別子。|
 |totalItemCount|Int32|mailFolder に含まれるアイテムの数|
 |unreadItemCount|Int32|mailFolder 内で未読としてマークされているアイテムの数。|
-|WellKnownName|String|フォルダーの既知のフォルダーの名前です。 可能な値は、上記に一覧表示されます。 Outlook で作成された既定のフォルダーには、このプロパティは設定のみです。 その他のフォルダーでは、このプロパティは**null**です。|
+|wellKnownName|String|フォルダーの既知のフォルダーの名前です。 可能な値は、上記に一覧表示されます。 Outlook で作成された既定のフォルダーには、このプロパティは設定のみです。 その他のフォルダーでは、このプロパティは**null**です。|
 
 **アイテム数を効率的に取得する**
 
@@ -93,15 +93,15 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Outlook のメール フォルダーにアイテムの 1 つ以上の種類を含めることができます、受信トレイを含めることができますたとえば、会議出席依頼アイテムがメール アイテムとは異なる。 `TotalItemCount``UnreadItemCount`の項目の種類に関係なく、[メール] フォルダーにアイテムが含まれます。
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型 | 説明 |
 |:-------------|:-----|:------------|
 |childFolders|[MailFolder](mailfolder.md) コレクション|mailFolder 内の子フォルダーのコレクション。|
 |messageRules | [messageRule](messagerule.md) コレクション | ユーザーの受信トレイ フォルダーに適用されるルールのコレクション。 |
 |messages|[Message](message.md) コレクション|mailFolder 内のメッセージのコレクション。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -113,8 +113,8 @@ Outlook のメール フォルダーにアイテムの 1 つ以上の種類を�
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ Outlook のメール フォルダーにアイテムの 1 つ以上の種類を�
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

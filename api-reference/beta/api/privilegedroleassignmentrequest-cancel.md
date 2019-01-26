@@ -2,12 +2,12 @@
 title: PrivilegedRoleAssignmentRequest をキャンセルします。
 description: PrivilegedRoleAssignmentRequest をキャンセルします。
 localization_priority: Normal
-ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2d717f0ca6fccc274b4ee80cda6b65f02f01abec
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528474"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577509"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest をキャンセルします。
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 Ok` 応答コードを返します。 [PrivilegedRoleAssignmentRequest] が返されます (../resources/privilegedRoleAssignmentRequest.md)、応答の本文にします。
+成功した場合、このメソッドは `200 Ok` 応答コードを返します。 応答本体に[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md)を返します。
 
 ### <a name="error-codes"></a>エラー コード
 この API では、標準の HTTP エラー コードを返します。 さらに、次の表に記載されているカスタムのエラー コードを返します。
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

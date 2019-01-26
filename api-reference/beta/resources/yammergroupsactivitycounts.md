@@ -3,18 +3,19 @@ title: yammerGroupsActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: db9dfaa8c107acfa2c0f28fba2cfd06f242b166c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 404dcd44baac005374634db097b79c10c86ae78f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950831"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577285"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>yammerGroupsActivityCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   |
+| プロパティ          | 型   |
 | :---------------- | :----- |
 | reportRefreshDate | 日付   |
 | 気に入られました             | Int64  |

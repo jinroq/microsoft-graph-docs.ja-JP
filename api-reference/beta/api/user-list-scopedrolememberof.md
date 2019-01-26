@@ -4,12 +4,12 @@ description: ユーザーの scopedRoleMembership の一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b6d458aa275b7405d25f60c8946e544b79bc7ac2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: af5d74161aff083e6d1bc70ad8efa7866d4cc02c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515049"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577334"
 ---
 # <a name="list-scopedadministratorof"></a>scopedAdministratorOf を一覧表示する
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
   "isCollection": true
 } -->
 ```http

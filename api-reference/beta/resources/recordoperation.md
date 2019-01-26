@@ -4,12 +4,12 @@ description: RecordOperation 型
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 914b8d819fdbcc132d4e04cd12f5c0db9980f659
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512508"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577187"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
@@ -21,7 +21,7 @@ RecordOperation 型
 
 | プロパティ                       | 型                        | 説明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| ClientContext                  | String                      | クライアントのコンテキスト。                                                                                                                               |
+| clientContext                  | String                      | クライアントのコンテキスト。                                                                                                                               |
 | completionReason               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |
 | createdDateTime                | DateTimeOffset              | レコーディングが作成された時刻。                                                                                                          |
 | id                             | String                      | サーバー操作の id です。読み取り専用です。 サーバーを生成します。                                                                                             |
@@ -29,9 +29,8 @@ RecordOperation 型
 | recordResourceAccessToken      | String                      | 記録を取得するために必要なアクセス トークンです。                                                                                              |
 | recordResourceLocation         | String                      | 記録が保存されている場所です。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報です。  読み取り専用です。 サーバーを生成します。                                                                                             |
-| status                         | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 サーバーを生成します。                                                 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,14 +47,13 @@ RecordOperation 型
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
+  "completionReason": "recordCompletionReason",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceAccessToken": "String",
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
-  "status": "notStarted | running | completed | failed"
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"}
 }
 ```
 

@@ -4,12 +4,12 @@ description: chartdatalabels オブジェクトのプロパティと関係を取
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 245e64d5182b4807ffe435026aefe75cf9a672eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9e62cbed37e150737e2b26def90000309d4e346
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530126"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577306"
 ---
 # <a name="get-chartdatalabels"></a>Get ChartDataLabels
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartDataLabels](../resources/chartdatalabels.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartDataLabels](../resources/chartdatalabels.md)オブジェクトです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

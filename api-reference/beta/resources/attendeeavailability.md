@@ -2,12 +2,12 @@
 title: attendeeAvailability リソースの種類
 description: 出席者の種類と空き時間情報。
 localization_priority: Normal
-ms.openlocfilehash: f831a88a14fc6ec970332208389e15a5adc49377
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 37b344f110557d6e04129a2b93592009635bddcf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508938"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576284"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "29508938"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|出席者の種類 - 人、またはリソースのいずれか、さらに人である場合は、必須かどうか。|
-|availability|String| 出席者の空き時間の状態。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|availability|freeBusyStatus| 出席者の空き時間の状態。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

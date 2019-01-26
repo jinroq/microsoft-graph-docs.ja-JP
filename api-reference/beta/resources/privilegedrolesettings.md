@@ -2,12 +2,12 @@
 title: privilegedRoleSettings リソースの種類
 description: 特権を持つロールの設定を表します。
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 673327e3c83a4111eb469ca48550836433dbdf0a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525697"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577152"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings リソースの種類
 
@@ -25,19 +25,19 @@ ms.locfileid: "29525697"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ElevationDuration|duration|ロールが有効な場合の期間です。|
-|id|string| ロールの設定の一意の識別子です。 読み取り専用です。|
+|elevationDuration| 文字列 (タイムスタンプ) |ロールが有効な場合の期間です。|
+|id| 文字列 (識別子)| ロールの設定の一意の識別子です。 読み取り専用です。|
 |isMfaOnElevationConfigurable|boolean|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。|
 |lastGlobalAdmin|boolean|内部エラーのみを使用します。|
-|maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。|
+|maxElavationDuration| 文字列 (識別子)| |アクティブ化されたロールの最大の期間です。|
 |mfaOnElevation|boolean|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。|
-|minElevationDuration|duration|アクティブ化されたロールの最低限の期間です。|
+|minElevationDuration|文字列 (識別子)||アクティブ化されたロールの最低限の期間です。|
 |notificationToUserOnElevation|boolean|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。|
 |ticketingInfoOnElevation|boolean|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。|
 |approvalOnElevation|boolean|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。|
-|approverIds|配列|承認 id、ライセンス認証の必要な場合は承認の一覧です。|
+|approverIds| String コレクション |承認 id、ライセンス認証の必要な場合は承認の一覧です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -65,7 +65,7 @@ ms.locfileid: "29525697"
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": [ "String (identifier)" ]
 }
 
 ```

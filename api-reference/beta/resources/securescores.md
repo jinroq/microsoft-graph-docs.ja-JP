@@ -2,12 +2,12 @@
 title: secureScores リソースの種類
 description: '上部 = n、n = のデータを取得する日数です。 '
 localization_priority: Normal
-ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fef5c43130aecf1604677d07f785a0cee0539568
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528663"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576081"
 ---
 # <a name="securescores-resource-type"></a>secureScores リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "29528663"
 |   enabledServices |   String コレクション   |   (たとえば、Exchange のオンライン、Skype、Sharepoint) テナントの Microsoft 提供のサービスです。   |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)コレクション    |さまざまなスコープ (業界では、座席で平均での平均値など) およびコントロールの分類 (識別情報、データ、デバイス、アプリケーション、インフラストラクチャ) のスコープ内での平均スコアです。 |
 |   controlScores | [controlScore](controlscore.md)コレクション  |   コントロールのセットのテナントのスコアが含まれています。   |
-
+|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | セキュリティ製品やサービスの仕入先、プロバイダー、および subprovider の詳細が含まれています (たとえば、ベンダー = Microsoft; プロバイダー = Windows Defender の分析ツールです。 subProvider AppLocker を =)。|
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -53,24 +53,23 @@ ms.locfileid: "29528663"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+    "id": "String",
+    "azureTenantId": "String (identifier)",
+    "createdDateTime": "DateTimeOffset",
+    "licensedUserCount": "Int32",
+    "activeUserCount": "Int32",
+    "currentScore": "Double",
+    "maxScore": "Double",    
+    "enabledServices": ["String"],
+    "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
+    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
+    "vendorInformation" : "microsoft.graph.securityVendorInformation"
 }
-
 ```
 
 
