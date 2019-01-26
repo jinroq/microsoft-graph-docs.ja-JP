@@ -4,12 +4,12 @@ description: chartlegend オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b1356e8e32fee08584774a16959d91a3fa3c149a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513502"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572984"
 ---
 # <a name="update-chartlegend"></a>Update chartlegend
 
@@ -42,12 +42,12 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|boolean|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
-|position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
+|position|文字列|グラフの凡例の位置を表します。 可能な値: `Top`、 `Bottom`、 `Left`、 `Right`、 `Corner`、 `Custom`。|
 |visible|boolean|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartLegend](../resources/chartlegend.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartLegend](../resources/chartlegend.md)オブジェクトを更新します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -71,7 +71,7 @@ Content-length: 72
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

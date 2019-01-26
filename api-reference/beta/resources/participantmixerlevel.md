@@ -4,12 +4,12 @@ description: 特定の参加者のオーディオのをレベルをミキサー�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bb5d28ac45d510a715dcc5001c8ee02b8352bb8c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513768"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575420"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
@@ -39,10 +39,10 @@ ms.locfileid: "29513768"
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

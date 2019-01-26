@@ -4,12 +4,12 @@ description: 新しいテーブルを作成します。範囲のソース アド
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a4d96ba219ffe10d0bb0a4e5d414fd474490e84a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d8b317bc3e7d91a17039b76199e0db830491e5ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522904"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571773"
 ---
 # <a name="tablecollection-add"></a>TableCollection: 追加
 
@@ -53,7 +53,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[テーブル](../resources/table.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[workbookTable](../resources/table.md)のオブジェクトです。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -79,7 +79,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: OneDrive アクティビティ レポート
 description: OneDrive 上のファイルとの相互作用を参照して OneDrive を使用するライセンスのすべてのユーザーの利用状況を取得できます。 共有されるファイルの数を表示することによって起こっているのコラボレーションのレベルを理解することができます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9075bd042a0c27debc8017a007351428191e9d43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d545f1d92beee89e19eb47cfd8c6ba8c391c5349
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519228"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574006"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive アクティビティ レポート
 

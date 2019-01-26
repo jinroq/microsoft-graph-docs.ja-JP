@@ -2,14 +2,14 @@
 title: governanceSchedule リソースの種類
 description: 'GovernanceRoleAssignmentRequest のスケジュールを表します。 役割の割り当て要求のスケジュールを制御、ロールの割り当て操作を実行する場合、役割の割り当てを停止するタイミングと役割の割り当て操作を実行する頻度です。 '
 localization_priority: Normal
-ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 11ac010829309c9b701e20da8ad40ebf905e02ba
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508028"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575252"
 ---
-# <a name="governanceschedule-resource-type"></a>governanceSchedule リソースの種類
+# <a name="microsoftgraphgovernanceschedule-resource-type"></a>microsoft.graph.governanceSchedule リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

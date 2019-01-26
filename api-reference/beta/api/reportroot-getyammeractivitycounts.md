@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerActivityCounts'
 description: 投稿、読み取り、および " いいね!" を付けられたメッセージの数によって、組織内での Yammer アクティビティの量の傾向を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0204c0ea634f8793d2f0ab58fdffc8c389443eed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 92dea308af9cd2ac00abbff0bf86073b0a0fac3b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514720"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573614"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

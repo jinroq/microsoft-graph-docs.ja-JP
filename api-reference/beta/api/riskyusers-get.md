@@ -4,12 +4,12 @@ description: プロパティと、 **riskyUsers**オブジェクトの関係を�
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: 586e76cd57e720741c6a63bc00374cd0973a1cf3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 18798df27ebccb3e56afa4e0f479ced4b4029863
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516778"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575301"
 ---
 # <a name="get-riskyusers"></a>RiskyUsers を取得します。
 
@@ -55,25 +55,27 @@ GET /riskyUsers/{query}
   "name": "get_identityriskevent"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isDeleted": "true",
+  "isGuest": true,
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }

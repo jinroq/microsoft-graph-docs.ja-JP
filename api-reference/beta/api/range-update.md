@@ -4,12 +4,12 @@ description: 範囲オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507706"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574027"
 ---
 # <a name="update-range"></a>範囲を更新する
 
@@ -44,12 +44,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnHidden|boolean|現在の範囲のすべての列が非表示になっているかどうかを表します。|
-|formulas|json|A1 スタイル表記の数式を表します。|
-|formulasLocal|json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。|
-|formulasR1C1|json|R1C1 スタイル表記の数式を表します。|
-|numberFormat|json|指定したセルの Excel の数値書式コードを表します。|
+|formulas|Json|A1 スタイル表記の数式を表します。|
+|formulasLocal|Json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。|
+|formulasR1C1|Json|R1C1 スタイル表記の数式を表します。|
+|numberFormat|Json|指定したセルの Excel の数値書式コードを表します。|
 |rowHidden|boolean|現在の範囲のすべての行が非表示になっているかどうかを表します。|
-|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 

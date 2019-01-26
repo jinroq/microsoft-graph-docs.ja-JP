@@ -4,12 +4,12 @@ description: 既定のノートブックの既定のセクションで OneNote �
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c55a3f023ddaa50e7917aed8f1ec1b8bc9b8b6e7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528705"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573460"
 ---
 # <a name="create-page"></a>page を作成する
 
@@ -52,7 +52,7 @@ POST /sites/{id}/onenote/pages
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新規 [page](../resources/page.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に新しい[onenotePage](../resources/onenotepage.md)オブジェクトです。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

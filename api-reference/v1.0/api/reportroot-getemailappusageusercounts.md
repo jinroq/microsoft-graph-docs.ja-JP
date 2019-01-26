@@ -3,12 +3,13 @@ title: 'reportRoot: getEmailAppUsageUserCounts'
 description: 任意のメール アプリを使用して Exchange Online に接続されている、それぞれ別個のユーザー数を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 6815e5a64c6a9ecb3ecd6911d8882edd229ec4b8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 242a7256bab59fa8fa010a1e1966e262c81797c2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983955"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574244"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 

@@ -3,12 +3,13 @@ title: OneDrive 使用状況レポート
 description: OneDrive ファイルと OneDrive のすべてのアカウントが組織内で使用されているストレージの合計数から取得する値の高度なビューを取得できます。 さらにドリルダウンすると、アクティブな OneDrive アカウントの傾向、ユーザーが操作したファイルの数、使用したストレージの量などを把握することができます。 できます、単位の OneDrive のアカウントの詳細。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c5a73b33f4422440df8817c3f6a69299eedeae50
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 1f899c3a60e1c0d66dd3b7e075bf0daf13de0b43
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519837"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574160"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive 使用状況レポート
 

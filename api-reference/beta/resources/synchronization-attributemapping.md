@@ -2,12 +2,12 @@
 title: attributeMapping リソースの種類
 description: 特定のターゲット属性の値が同期中にフローは方法を定義します。
 localization_priority: Normal
-ms.openlocfilehash: 16235cce73a17b462f6f44aedf0c8759277983c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9f33aa9a784ba3e40fd8d38650737a9064a0831c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509323"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573663"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping リソースの種類
 
@@ -21,8 +21,8 @@ ms.locfileid: "29509323"
 |:--------------------------|:--------------------------|:---------------|
 |defaultValue               | 文字列                    |既定値に、 **source**プロパティが評価された場合に使用する`null`。 省略可能。|
 |exportMissingReferences    |String                     |内部使用のみ。|
-|flowBehavior               |attributeFlowBehavior      |この属性をターゲット ディレクトリにエクスポートするときを定義します。 使用可能な値:`FlowWhenChanged`と`FlowAlways`。 既定値は `FlowWhenChanged` です。 |
-|flowType                   |attributeFlowType          |ターゲット ディレクトリにこの属性を更新するときを定義します。 使用可能な値: `Always` (既定値)、 `ObjectAddOnly` (だけ新しいオブジェクトが作成された日時) `MultiValueAddOnly` (のみと変更は、値を追加する新しい複数値を持つ属性に)。 |
+|flowBehavior               | 列挙型文字列      |この属性をターゲット ディレクトリにエクスポートするときを定義します。 使用可能な値:`FlowWhenChanged`と`FlowAlways`。 既定値は `FlowWhenChanged` です。 |
+|flowType                   | ennum 文字列          |ターゲット ディレクトリにこの属性を更新するときを定義します。 使用可能な値: `Always` (既定値)、 `ObjectAddOnly` (だけ新しいオブジェクトが作成された日時) `MultiValueAddOnly` (のみと変更は、値を追加する新しい複数値を持つ属性に)。 |
 |matchingPriority           |Int32                      |0 よりも大きい場合、は、ソースとターゲットのディレクトリ間でオブジェクトの最初の一致を実行するこの属性が使用されます。 同期エンジンは、優先度と一致する最初の最小値を持つ属性を使用して一致するオブジェクトを検索しようとしています。 かどうか、次に一致する優先順位を持つ属性を使用してために、一致が見つかったか、これ以上の一致する属性が残っているまでです。 一致する属性としては、e メールのような一意の値があると予想される属性だけを使用してください。|
 |source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定義の値がどのようにする必要があります抽出 (変換)、ソース オブジェクトからです。 |
 |targetAttributeName        |String                     |対象のオブジェクトの属性の名前です。 |
@@ -43,8 +43,8 @@ ms.locfileid: "29509323"
 {
   "defaultValue": "String",
   "exportMissingReferences": true,
-  "flowBehavior": "String",
-  "flowType": "String",
+  "flowBehavior": "FlowWhenChanged | FlowAlways",
+  "flowType": "Always |  ObjectAddOnly | MultiValueAddOnly ",
   "matchingPriority": 1024,
   "source": {"@odata.type": "microsoft.graph.attributeMappingSource"},
   "targetAttributeName": "String"

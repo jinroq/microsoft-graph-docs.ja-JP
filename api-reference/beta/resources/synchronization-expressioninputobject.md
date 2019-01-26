@@ -2,18 +2,18 @@
 title: expressionInputObject リソースの種類
 description: 'テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。'
 localization_priority: Normal
-ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510779"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570961"
 ---
 # <a name="expressioninputobject-resource-type"></a>expressionInputObject リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。
+テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md)式の評価を実行するアクションです。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

@@ -4,12 +4,12 @@ description: グラフ要素の塗りつぶしの書式設定を均一な色に�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e841ee13719b7d19f1ca306ad3a555b447cb9cb6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6c9e7a897d0dfb7a2577f69dff4fb9ac8f841cce
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518493"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573082"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -72,8 +72,7 @@ Content-length: 28
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

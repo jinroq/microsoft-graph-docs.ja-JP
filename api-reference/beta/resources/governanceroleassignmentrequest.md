@@ -2,12 +2,12 @@
 title: governanceRoleAssignmentRequest リソースの種類
 description: Privilegd Id 管理の役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 838d16455a2eaea2183d008800eaef72a0af2a15
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509575"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572102"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest リソースの種類
 
@@ -37,14 +37,14 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 |type                       |String         |必須。 表す、ロールの割り当ての操作の種類です。 値は、します。 <ul><li>`AdminAdd`: 管理者の役割にユーザーまたはグループを割り当てる</li><li>`UserAdd`: ユーザーが対象の割り当てを有効化します。</li><li> `AdminUpdate`: 管理者は、既存のロールの割り当てを変更します。</li><li>`AdminRemove`: 管理者の役割からユーザーまたはグループを削除します。<li>`UserRemove`: ユーザーは、作業中の割り当てを非アクティブ化します。<li>`UserExtend`: ユーザーが、有効期限切れの割り当てを拡張する要求します。</li><li>`AdminExtend`: 管理者は、期限切れの割り当てを拡張します。</li><li>`UserRenew`: ユーザーの要求が期限切れの割り当てを更新するには</li><li>`AdminRenew`: 管理者は、期限切れの割り当てを拡張します。</li></ul>|
 |assignmentState|String  |必須。 割り当ての状態です。 値は、します。 <ul><li> `Eligible`対象となる割り当ての</li><li> `Active`-直接割り当てられている場合`Active`管理者、またはユーザーが対象となる割り当ての有効化します。</li></ul>|
 |requestedDateTime          |DateTimeOffset |読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|Schedule                   |[governanceSchedule](governanceschedule.md)|役割の割り当て要求のスケジュール オブジェクトです。|
+|スケジュール                   |[microsoft.graph.governanceSchedule](governanceschedule.md)|役割の割り当て要求のスケジュール オブジェクトです。|
 |理由                     |String         |ユーザーおよび管理者によって提供されるメッセージが必要な理由についての要求を作成するとします。|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |役割の割り当て要求のステータス。|
 |linkedEligibleRoleAssignmentId|String        |Id を表すロールのアクティブ化の要求の場合は、`eligible assignment`で参照されます。値は、それ以外の場合、 `null`。 |
 
 
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型                                |説明|
 |:-------------|:----------------------------------|:----------|
 |リソース      |[governanceResource](../resources/governanceresource.md)            |読み取り専用です。 要求することを目的とするリソースです。 |

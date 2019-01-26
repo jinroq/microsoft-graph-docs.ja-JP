@@ -2,12 +2,12 @@
 title: fileAttachment リソースの種類
 description: イベントに関連付けられているテキスト ファイルまたは Word 文書) などのファイル
 localization_priority: Normal
-ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510765"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572802"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -32,9 +32,9 @@ ms.locfileid: "29510765"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
+|contentBytes|String|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
-|contentLocation|String|添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI)。|
+|contentLocation|String|サポートされていないと、このプロパティは使用しません。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。|
 |isInline|ブール値|インライン添付ファイルの場合、true に設定します。|
@@ -60,7 +60,7 @@ ms.locfileid: "29510765"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "String",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

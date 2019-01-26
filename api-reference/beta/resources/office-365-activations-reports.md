@@ -3,12 +3,13 @@ title: Office 365 アクティブ化レポート
 description: Office 365 のライセンス認証のレポートを使用すると、ユーザー先のデバイスが少なくとも 1 つの Office 365 サブスクリプションを有効にして表示します。 デスクトップとデバイスの間でのアクティブ化の詳細と、Office 365 サブスクリプションのライセンス認証を Office 365 用リソース、プロジェクト、および Visio Pro の内訳を提供します。 このレポートを使用すると可能性があります、Office のサブスクリプションをアクティブにするのには追加のサポートを必要とするユーザーを識別できます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 3f0abf320fed495040513df662be6d5c93658656
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 345ab500ef5986471bb801a88ee5886473a3dd60
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522323"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573679"
 ---
 # <a name="office-365-activations-reports"></a>Office 365 アクティブ化レポート
 

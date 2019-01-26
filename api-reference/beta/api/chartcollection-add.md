@@ -4,12 +4,12 @@ description: 新しいグラフを作成します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f552e4d8f0c8dc9f1257baf02ebe7a449c98a348
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516337"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572116"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -42,13 +42,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|type|string|グラフの種類を表します。可能な値は、`ColumnClustered`、`ColumnStacked`、`ColumnStacked100`、`BarClustered`、`BarStacked`、`BarStacked100`、`LineStacked`、`LineStacked100`、`LineMarkers`、`LineMarkersStacked`、`LineMarkersStacked100`、`PieOfPie`、`etc.` です。|
-|sourceData|string|データ ソースに対応する Range オブジェクトです。|
-|seriesBy|文字列|省略可能。列や行がグラフのデータ系列として使用される方法を指定します。可能な値は、`Auto`、`Columns`、`Rows` です。|
+|type|文字列|グラフの種類を表します。  可能な値: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100`、 `BarClustered`、 `BarStacked`、 `BarStacked100`、 `LineStacked`、 `LineStacked100`、 `LineMarkers`、 `LineMarkersStacked`、 `LineMarkersStacked100`、 `PieOfPie`、 `etc.`。|
+|sourceData|Json|データ ソースに対応する Range オブジェクトです。|
+|seriesBy|文字列|省略可能。 方法の列または行がグラフのデータ系列として使用されるかを指定します。  可能な値: `Auto`、 `Columns`、 `Rows`。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[グラフ](../resources/chart.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookChart](../resources/chart.md)オブジェクトです。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -75,7 +75,7 @@ Content-length: 94
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

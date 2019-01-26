@@ -4,18 +4,18 @@ description: 指定されたセクションからページ オブジェクトの
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: a87126876917b9fcdd4ed818a3e8efcef8a9635f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a68fef97f48c48f789317915dd2da0dacdd2f06f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525431"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571213"
 ---
 # <a name="list-pages"></a>pages を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定されたセクションから[ページ](../resources/page.md) オブジェクトの一覧を取得します。
+指定したセクションからには、 [onenotePage](../resources/onenotepage.md)オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -51,7 +51,7 @@ GET /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [page](../resources/page.md) オブジェクトのコレクションを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[onenotePage](../resources/onenotepage.md)オブジェクトのコレクションです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

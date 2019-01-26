@@ -4,12 +4,12 @@ description: TokenMeetingInfo 型です。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513369"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571073"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo リソースの種類
 
@@ -21,7 +21,7 @@ TokenMeetingInfo 型です。
 
 | プロパティ                     | 型    | 説明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | ブール値 | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
+| allowConversationWithoutHost | Boolean | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
 | token                        | String  | 会議を結合またはアクティブにするトークンです。                                        |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -33,6 +33,7 @@ TokenMeetingInfo 型です。
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

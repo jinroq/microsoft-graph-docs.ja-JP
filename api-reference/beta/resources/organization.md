@@ -4,12 +4,12 @@ description: 'Azure Active Directory のテナント型を表します。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529426"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574993"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -43,7 +43,7 @@ ms.locfileid: "29529426"
 |createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 | deletedDateTime                    | DateTimeOffset                                                    | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。                                                                                     |
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
-|displayName|文字列|テナントの表示名。|
+|displayName|String|テナントの表示名。|
 |id|String|テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容ではありません。 読み取り専用です。|
 |isMultipleDataLocationsForServicesEnabled|Boolean|組織の Multi-Geo が有効の場合 **true**、組織の Multi-Geo が有効ではない場合 **false**、**null** (既定)。 読み取り専用です。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
 |marketingNotificationEmails|String コレクション| null 許容ではありません。            |
@@ -51,16 +51,16 @@ ms.locfileid: "29529426"
 |postalCode|String| 組織の住所の郵便番号 |
 |preferredLanguage|String| 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。 |
 |privacyProfile|[privacyProfile](privacyprofile.md)| 組織のプライバシー プロファイル。            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション| null 許容ではありません。            |
-|provisioningErrors|ProvisioningError コレクション| null 許容ではありません。            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md)コレクション| null 許容ではありません。            |
+|provisioningErrors|onPremisesProvisioningError コレクション| null 許容ではありません。            |
 |securityComplianceNotificationMails|String コレクション||
-|securityComplianceNotificationPhones|String collection||
-|state|文字列型 (String)| 組織の住所の都道府県名 |
+|securityComplianceNotificationPhones|String コレクション||
+|state|String| 組織の住所の都道府県名 |
 |street|String| 組織の住所の番地 |
 |technicalNotificationMails|String コレクション| null 許容ではありません。 |
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) コレクション|このテナントに関連付けられているドメインのコレクション。null 許容ではありません。            |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ     | 型   |説明|
 |:---------------|:--------|:----------|

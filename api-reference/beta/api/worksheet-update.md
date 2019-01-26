@@ -4,12 +4,12 @@ description: ワークシート オブジェクトのプロパティを更新し
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519585"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571717"
 ---
 # <a name="update-worksheet"></a>ワークシートを更新する
 
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|string|ワークシートの表示名。|
+|name|文字列|ワークシートの表示名。|
 |position|int|0 を起点とした、ブック内のワークシートの位置。|
 |visibility|文字列|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
 
@@ -71,7 +71,7 @@ Content-length: 100
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

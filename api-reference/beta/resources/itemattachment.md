@@ -2,12 +2,12 @@
 title: itemAttachment リソースの種類
 description: 連絡先、イベント、または別のイベントに関連付けられているメッセージ
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520110"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571409"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "29520110"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | itemAttachment |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
 |[Delete](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
@@ -37,7 +37,7 @@ ms.locfileid: "29520110"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|item|OutlookItem|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
+|item|[outlookItem](outlookitem.md)|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

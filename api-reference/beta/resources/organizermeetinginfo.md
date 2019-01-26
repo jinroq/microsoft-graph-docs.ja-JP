@@ -4,12 +4,12 @@ description: 会議については、会議の開催者を含みます。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1aa72e37e1f2332b10fd5aecc38b1b8d42ce1303
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512242"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575007"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "29512242"
 
 | プロパティ                     | 型                          | 説明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | ブール値                       | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
+| allowConversationWithoutHost | Boolean                       | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
 | organizer                    | [identitySet](identityset.md) | 開催者は Azure Active Directory アイデンティティであります。  |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -33,12 +33,13 @@ ms.locfileid: "29512242"
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 

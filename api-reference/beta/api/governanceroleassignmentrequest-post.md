@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequest を作成します。
 description: 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
 localization_priority: Normal
-ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523240"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572368"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成します。
 
@@ -60,7 +60,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |assignmentState|String|はい|割り当ての状態です。 値は、``Eligible``と``Active``。|
 |type|String|はい|要求の種類。 値は、 `AdminAdd`、 `UserAdd`、 `AdminUpdate`、 `AdminRemove`、 `UserRemove`、 `UserExtend`、 `UserRenew`、`AdminRenew`と`AdminExtend`。|
 |理由|String| |理由は、監査の役割の割り当て要求に指定して目的を確認する必要があります。|
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)| | 役割の割り当て要求のスケジュールです。 要求の種類の`UserAdd`、 `AdminAdd`、`AdminUpdate`と`AdminExtend`、これは必須です。|
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | 役割の割り当て要求のスケジュールです。 要求の種類の`UserAdd`、 `AdminAdd`、`AdminUpdate`と`AdminExtend`、これは必須です。|
 
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトです。
@@ -88,13 +88,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminAdd|
 |理由|String| ロールの設定によって異なります||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ Content-length: 226
 
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| Active|
 |type|String|はい| UserAdd|
 |理由|String| ロールの設定によって異なります||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ Content-type: application/json
 
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| Active|
 |type|String|はい| UserRemove|
 |理由|String| いいえ||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -329,13 +329,13 @@ Content-length: 226
  
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminRemove|
 |理由|String| いいえ||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|いいえ|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ Content-length: 226
 
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ|
 |type|String|はい| AdminUpdate|
 |理由|String| roleSettings によって異なります||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ Content-length: 226
  
 | プロパティ     | 型    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|はい|\<|
+|resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
 |assignmentState|String|はい| 対象となる/アクティブ |
 |type|String|はい| AdminExtend|
 |理由|String| roleSettings によって異なります||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
+|スケジュール|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|はい|        |
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",

@@ -4,12 +4,12 @@ description: マイクロソフトまたはパートナーのセキュリティ 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7973522b8593d38724ee40374f40d58d3408ff6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9b08025890a5f3429d1a29762e73b14c6e942817
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526201"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574734"
 ---
 # <a name="alert-resource-type"></a>通知リソースの種類
 
@@ -23,8 +23,8 @@ ms.locfileid: "29526201"
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[警告の取得](../api/alert-get.md) |  警告 :  |Alert オブジェクトのプロパティと関係を参照してください。|
-|[警告の更新](../api/alert-update.md) |  警告 :  |Alert オブジェクトを更新します。 |
+|[警告の取得](../api/alert-get.md) | [アラート](alert.md) |Alert オブジェクトのプロパティと関係を参照してください。|
+|[警告の更新](../api/alert-update.md) | [アラート](alert.md) |Alert オブジェクトを更新します。 |
 |[警告の一覧表示](../api/alert-list.md) | [アラート](alert.md)のコレクション |Alert オブジェクトのコレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
@@ -32,34 +32,34 @@ ms.locfileid: "29526201"
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |activityGroupName|String|アクティビティ グループ (攻撃者) の名前またはエイリアスにこのアラートが属する。|
-|AssignedTo|String|アナリスト、警告の名前は、選別、調査、または ([更新](../api/alert-update.md)がサポートされています) の改善のために割り当てられます。|
+|担当者|String|アナリスト、警告の名前は、選別、調査、または ([更新](../api/alert-update.md)がサポートされています) の改善のために割り当てられます。|
 |azureSubscriptionId|String|Azure サブスクリプション ID、このアラートは、Azure のリソースに関連している場合に存在します。|
-|azureTenantId |String|Azure Active Directory のテナント id。 必須です。 |
+|azureTenantId |String|Azure Active Directory のテナント id。 必須です。|
 |category|String|(たとえば、credentialTheft、ransomware など) の警告のカテゴリです。|
 |closedDateTime|DateTimeOffset|時間のアラートが閉じられました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 2014 年 1 月 1 日に UTC 午前 0 時、これのようになります: `'2014-01-01T00:00:00Z'` ([更新](../api/alert-update.md)がサポートされています)。|
 |cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md)コレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するクラウド アプリケーション/秒のプロバイダーによって生成されます。|
 |comments|String コレクション|アラート (アラート管理の顧客) のお客様提供のコメント ([更新](../api/alert-update.md)がサポートされています)。|
 |confidence|Int32|検出ロジック (1 ~ 100%) を信頼します。|
 |createdDateTime |DateTimeOffset|アラートが通知プロバイダーによって作成された時点の時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 必須です。|
-|説明|文字列型 (String)|アラートの説明です。|
+|説明|String|アラートの説明です。|
 |detectionIds|String コレクション|(各アラートは、個別のレコードとして SIEM にプッシュされます) この警告のエンティティに関連するアラートのセットです。|
 |eventDateTime |DateTimeOffset|アラートを生成するトリガーとして処理されるイベントが発生した時刻です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 必須です。|
 |feedback|alertFeedback|アナリストのフィードバック通知をします。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 ([更新](../api/alert-update.md)がサポートされています)|
 |fileStates|[fileSecurityState](filesecuritystate.md)コレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するファイルのプロバイダーによって生成されます。|
 |hostStates|[hostSecurityState](hostsecuritystate.md)コレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するホスト プロバイダーによって生成されます。|
-|id |文字列|プロバイダーによって生成された GUID または一意の識別子。 読み取り専用です。 必須です。|
+|id |String|プロバイダーによって生成された GUID または一意の識別子。 読み取り専用です。 必須です。|
 |lastModifiedDateTime|DateTimeOffset|アラートのエンティティが最後に修正された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |malwareStates|[malwareState](malwarestate.md)コレクション|このアラートに関連するマルウェアに関連する脅威インテリジェンスです。|
 |networkConnections|[ネットワーク接続](networkconnection.md)のコレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するネットワーク接続のプロバイダーによって生成されます。|
 |プロセス|[プロセス](process.md)のコレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するプロセスのプロバイダーによって生成されます。|
 |recommendedActions|String コレクション|仕入先/プロバイダーは、(たとえば、特定のコンピューター、enforce2FA、ホストのイメージを再作成) は、アラートの結果として実行するアクションをお勧めします。|
 |registryKeyStates|[registryKeyState](registrykeystate.md)コレクション|レジストリ キーのプロバイダーによって生成されるセキュリティ関連のステートフルな情報は、このアラートに関連しています。|
-|重要度 |alertSeverity|アラートの重大度のベンダーまたはプロバイダーが設定します。 可能な値は、`unknown`、`informational`、`low`、`medium`、`high` です。 必須です。|
+|重大度レベル |alertSeverity|アラートの重大度のベンダーまたはプロバイダーが設定します。 可能な値は、`unknown`、`informational`、`low`、`medium`、`high` です。 必須です。|
 |sourceMaterials|String コレクション|ソース マテリアルへのハイパーリンク (Uri) に関連する警告などの通知またはログの検索などのユーザー インターフェイスをプロバイダーの。|
 |status |alertStatus|アラートのライフ サイクルのステータス (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。 ([更新](../api/alert-update.md)をサポートしています)。 必須です。|
-|タグの前に追加されるマークアップ|String コレクション|アラートに適用することができますし、(たとえば"HVA"、"SAW"など) のフィルター条件として使用できるユーザー定義のラベル([更新](../api/alert-update.md)をサポートしています)。|
+|tags|String コレクション|アラートに適用することができますし、(たとえば"HVA"、"SAW"など) のフィルター条件として使用できるユーザー定義のラベル([更新](../api/alert-update.md)をサポートしています)。|
 |タイトル |String|通知のタイトル。 必須です。|
-|トリガ|[alertTrigger](alerttrigger.md)コレクション|セキュリティに関連するアラート (アラートに表示されるプロパティ) をトリガーする特定のプロパティについての情報です。 アラートには、複数のユーザー、ホスト、ファイル、ip アドレスに関する情報が含まれます。 このフィールドは、プロパティ、アラートの生成をトリガーすることを示します。|
+|トリガー|[alertTrigger](alerttrigger.md)コレクション|セキュリティに関連するアラート (アラートに表示されるプロパティ) をトリガーする特定のプロパティについての情報です。 アラートには、複数のユーザー、ホスト、ファイル、ip アドレスに関する情報が含まれます。 このフィールドは、プロパティ、アラートの生成をトリガーすることを示します。|
 |userStates|[userSecurityState](usersecuritystate.md)コレクション|ユーザー アカウントのプロバイダーによって生成されるセキュリティ関連のステートフルな情報は、このアラートに関連しています。|
 |vendorInformation |[securityVendorInformation](securityvendorinformation.md)|セキュリティ製品やサービスの仕入先、プロバイダー、および subprovider の詳細を含む複合型 (仕入先など = Microsoft; プロバイダー = Windows Defender の ATP は subProvider AppLocker を =)。 必須です。|
 |vulnerabilityStates|[vulnerabilityState](vulnerabilitystate.md)コレクション|このアラートに関連する 1 つまたは複数の脆弱性に関連する脅威インテリジェンスです。|

@@ -4,12 +4,12 @@ description: 危険にさらされている Azure AD ユーザーを表します
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515714"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572186"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
@@ -42,13 +42,13 @@ ms.locfileid: "29515714"
 |`userDisplayName`|`string`|危険なユーザーの表示名|
 |`userPrincipalName`|`string`|危険なユーザー プリンシパル名|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|id|UserObjectId| 特定のリスク イベントに関連付けられたユーザーの一意の識別子です。|
-|isGuest|isGuest| 危険なユーザーは、ホーム ユーザー (B2E) または (B2B、B2C) は、ゲスト ユーザーのいずれかです。|
-|isDeleted|isDeleted| ユーザーは、可能性があります。 または削除できません。 |
+|id|文字列| 特定のリスク イベントに関連付けられたユーザーの一意の識別子です。|
+|isGuest|boolean| 危険なユーザーは、ホーム ユーザー (B2E) または (B2B、B2C) は、ゲスト ユーザーのいずれかです。|
+|isDeleted|boolean| ユーザーは、可能性があります。 または削除できません。 |
 |riskState|riskState| 危険なユーザーは、複数の状態のいずれかに存在でした。 |
 |riskDetail|riskDetail| 危険なユーザーは複数の理由により、特定の状態にします。 |
 |riskLevel|riskLevel| リスクの高いユーザーと考えられます複数のリスク レベルのいずれかです。 |
@@ -60,9 +60,8 @@ ms.locfileid: "29515714"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json

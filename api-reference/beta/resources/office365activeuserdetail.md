@@ -3,12 +3,13 @@ title: office365ActiveUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 14c785069868783b1e248b41a5b339c9adb4710a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 192629623b0a0d46453f4dd4f9bfd7f1dc48cccf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929285"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575371"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>office365ActiveUserDetail リソースの種類
 

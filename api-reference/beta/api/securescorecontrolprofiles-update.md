@@ -2,12 +2,12 @@
 title: secureScoreControlProfiles の更新
 description: 担当者や tenantNote などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な secureScoreControlProfiles プロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510954"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573362"
 ---
 # <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
@@ -21,9 +21,9 @@ ms.locfileid: "29510954"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All  |
+|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All。  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.ReadWrite.All |
+|アプリケーション | SecurityEvents.ReadWrite.All。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -46,7 +46,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|AssignedTo|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
+|担当者|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
 |tenantNote|String|(顧客管理) のコントロールのアナリストのコメントです。|
 |controlStateUpdates| String|アナリストは、コントロールの設定を優先します。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
 
@@ -84,20 +84,16 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

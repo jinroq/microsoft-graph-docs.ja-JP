@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessActivityCounts'
 description: Skype for Business を介して組織内で行われた会議セッションの開催ユーザー数と参加ユーザー数の傾向を取得します。 レポートには、ピア ツー ピア セッションの数も含まれます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 76e574e0ab8a8f4e8cec730596ac21dde44e06da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 7b18680a9fa2f47b9d7c2dceac7a64206b372c22
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520481"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571808"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 

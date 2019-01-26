@@ -3,12 +3,12 @@ title: openTypeExtension リソース タイプ (オープン拡張機能)
 description: (Office 365 のデータ拡張機能と呼ばれていました) 開いているの拡張機能では、直接グラフ内のリソースに型指定されていないプロパティを追加する簡単な方法を提供します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508833"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574909"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張機能)
 
@@ -43,7 +43,7 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 - 必要な拡張の最小数を作成します。 ほとんどのアプリケーションは、複数の拡張機能を必要があります。 拡張機能があるないプロパティの設定を定義または構造体は、単一の拡張機能に複数の値を格納することができますので。
 - (などのユーザー入力などに基づきます)。 変数の方法で拡張機能の名前付けをしないでください。 前に、ユーザーのメールボックスで使用されていない新しい名前で開いている拡張機能を作成するたびに、新しい MAPI 名前付きプロパティが作成されます。 拡張子を削除しても、名前付きプロパティは削除されません。
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>オープン拡張機能 (Outlook リソース用) と拡張プロパティのどちらを使用するか
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>(Outlook のリソース) の拡張子を開くか、拡張プロパティを使用します。
 
 保存して、カスタムのデータへのアクセスに関連するほとんどのシナリオで推奨されるソリューションを開いています。 ただし、 [Microsoft グラフ API メタデータ](https://developer.microsoft.com/graph/docs/overview/call_api)を通じて公開されていない Outlook MAPI プロパティのカスタムのデータにアクセスする必要がある場合は、[拡張プロパティおよびその他の API](extended-properties-overview.md)を使用できます。 メタデータを公開するプロパティを確認することができます[https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
@@ -54,9 +54,11 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+       "companyName",
+        "dealValue",
+        "expirationDate"
   ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json
@@ -74,7 +76,7 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 |extensionName|String|オープン型のデータ拡張情報の一意のテキスト識別子。必須。|
 |id|String| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 なし
 

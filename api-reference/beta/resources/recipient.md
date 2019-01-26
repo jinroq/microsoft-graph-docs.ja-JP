@@ -2,12 +2,12 @@
 title: 受信者リソースの種類
 description: 'イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 '
 localization_priority: Normal
-ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1ae49432e0ef6ab5881b41d9de5adebd306a4da8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525543"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574944"
 ---
 # <a name="recipient-resource-type"></a>受信者リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "29525543"
 
 ```json
 {
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "emailAddress": {"@odata.type": "#microsoft.graph.emailAddress"}
 }
 
 ```

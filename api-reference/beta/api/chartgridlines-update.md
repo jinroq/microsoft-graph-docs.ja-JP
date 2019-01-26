@@ -4,12 +4,12 @@ description: chartgridlines オブジェクトのプロパティを更新しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cabe56ab279deb5e98898029f60cdfef34c1e031
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 92ef9fe1d8414db0e81b5b5468b15cc503a24603
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529937"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570816"
 ---
 # <a name="update-chartgridlines"></a>Update chartgridlines
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartGridlines](../resources/chartgridlines.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[workbookChartGridlines](../resources/chartgridlines.md)オブジェクトです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -69,8 +69,9 @@ Content-length: 21
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

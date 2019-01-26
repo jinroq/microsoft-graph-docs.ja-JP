@@ -1,12 +1,12 @@
 ---
 title: timeZoneStandard 値
 description: " 値"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fae641b0dbb7f87a55d5bca3db36c1f24c23ad29
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430255"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574762"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard 値
 
@@ -641,3 +641,210 @@ Windows 定義ごとユーザー ・ アカウントの種類 (グループ) の
 |標準|0|標準ユーザー グループのメンバーです。|
 |電源|1| Power Users グループのメンバーです。|
 |管理者|2| Administrators グループのメンバーです。|
+
+
+
+### <a name="scopeoperatortype-values"></a>scopeOperatorType 値
+
+| Member            |値
+|:------------------|:-------
+| バイナリ              | 0
+| 単項         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 値
+
+| Member            |値
+|:------------------|:-------
+| all              | 0
+| any         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 値
+
+| Member            |値
+|:------------------|:-------
+| 低              | 0
+| medium         | 1
+| 高         | 2
+
+### <a name="exchangeidformat-values"></a>exchangeIdFormat 値
+
+| Member            |値
+|:------------------|:-------
+| エントリ Id              | 0
+| ewsId         | 1
+| immutableEntryId         | 2
+| restId         | 2
+| restImmutableEntryId         | 2
+
+### <a name="risklevel-values"></a>riskLevel 値
+
+| 値           
+|:------------------
+| none
+| 低
+| medium
+| 高
+| hidden
+| unknownFutureValue
+
+### <a name="riskstate-values"></a>riskState 値
+
+| 値           
+|:------------------
+| none
+| 低
+| medium
+| 高
+| hidden
+| unknownFutureValue
+
+### <a name="riskdetail-values"></a>riskDetail 値
+
+| 値           
+|:------------------
+| none
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
+
+# <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol 値
+
+|Member|値|説明|
+|:---|:---|:---|
+|不明|-1|不明なプロトコルです。|
+|ip|0|インターネット プロトコルです。|
+|icmp|1| インターネット制御メッセージ プロトコル。|
+|igmp|2| インターネット グループ管理プロトコルです。|
+|ggp|3| ゲートウェイ間プロトコル。|
+|ipv4|4| インターネット プロトコル バージョン 4 です。|
+|tcp|6| 伝送制御プロトコル。|
+|pup|12| まだ珍しかったころ汎用パケットのプロトコルです。|
+|udp|17| ユーザー データグラム プロトコルです。|
+|idp|22| インターネット データグラム プロトコルです。|
+|ipv6|41| インターネット プロトコル バージョン 6 (ipv6) です。|
+|ipv6RoutingHeader|43| ipv6 ルーティング ヘッダー。|
+|ipv6FragmentHeader|44| ipv6 フラグメント ヘッダー。|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 カプセル化セキュリティ ペイロード ヘッダー。|
+|ipSecAuthenticationHeader|51| ipv6 認証ヘッダー。|
+|icmpV6|58| Ipv6 用インターネット コントロール メッセージ プロトコル。|
+|ipv6NoNextHeader|59| ipv6 次ヘッダーなし。|
+|ipv6DestinationOptions|60| ipv6 終点オプション ヘッダー。|
+|nd|77| ネット ディスク プロトコル (非公式) です。|
+|生|255| 生の IP パケットのプロトコルです。|
+|ipx|1000| インターネット パケット交換プロトコル。|
+|spx|1256| シーケンスのパケット交換プロトコル。|
+|spxII|1257| パケット交換バージョン 2 のプロトコル シーケンスが付けられました。|
+
+
+
+### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission 値
+
+| Member            |値
+|:------------------|:-------
+| その他の             | 0
+| ビュー              | 1
+| edit              | 2
+| anonymousView     | 3
+| anonymousEdit     | 4
+| organizationView  | 5
+| organizationEdit  | 6
+
+
+### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider 値
+
+| Member            |値
+|:------------------|:-------
+| その他の             | 0
+| oneDriveBusiness  | 1
+| oneDriveConsumer  | 2
+| ドロップ ボックス           | 3
+
+### <a name="modality-values"></a>モーダルかどうかの値
+
+| Member                    |値
+|:--------------------------|:-------
+| 不明                   | 0
+| audio                     | 1
+| video                     | 2
+| videoBasedScreenSharing   | 3
+| data                      | 4
+
+### <a name="routingpolicy-values"></a>routingPolicy 値
+
+| Member                        |値
+|:------------------------------|:-------
+| none                          | 0
+| noMissedCall                  | 1
+| disableForwardingExceptPhone  | 2
+| disableForwarding             | 3
+
+### <a name="callstate-values"></a>callState 値
+
+| Member               |値
+|:---------------------|:-------
+| incoming             | 0
+| 確立します。         | 1
+| 共鳴              | 2
+| 確立          | 3
+| 保留中                 | 4
+| 転送します。         | 5
+| transferAccepted     | 6
+| リダイレクトします。          | 7
+| 終了          | 8
+| 終了           | 9
+
+### <a name="calldirection-values"></a>callDirection 値
+
+| Member               |値
+|:---------------------|:-------
+| incoming             | 0
+| 送信             | 1
+
+### <a name="attributetype-values"></a>属性型の値
+
+| Member               |値
+|:---------------------|:-------
+| dateTime             | 5
+| boolean              | 4
+| バイナリ               | 3
+| reference            | 2
+| integer              | 1
+| @string              | 0
+
+### <a name="operationstatus-values"></a>operationStatus 値
+
+| Member               |値
+|:---------------------|:-------
+| 未開始           | 0
+| 実行              | 1
+| 完了            | 2
+| 失敗しました。               | 3
+
+### <a name="operationstatus-values"></a>operationStatus 値
+
+| Member               |値
+|:---------------------|:-------
+| 既定値です。              | 0
+| ボイスメール 1
+
+### <a name="recordcompletionreason-values"></a>recordCompletionReason 値
+
+| Member                    |値
+|:--------------------------|:-------
+| operationCanceled         | 0
+| stopToneDetected          | 1
+| maxRecordDurationReached  | 2
+| initialSilenceTimeout     | 3
+| maxSilenceTimeout         | 4
+| playPromptFailed          | 5
+| playBeepFailed            | 6
+| mediaReceiveTimeout       | 7
+| unspecifiedError          | 8

@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ServicesUserCounts'
 description: アクティビティの種類とサービス別のユーザー数を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 90e295b8547074a72d907a0cbfda9583fb2218d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f04f892e3bcfe593ebd1d5a4ca04cf70f0dd38e7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513873"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572809"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -75,6 +76,8 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 - Yammer 非アクティブ
 - Teams アクティブ
 - Teams 非アクティブ
+- Office 365 のアクティブな
+- Office 365 使用頻度の低い
 - レポート期間
 
 21Vianet によって運営されて、Microsoft Graph 中国では、次の列はサポートされていません。
@@ -192,6 +195,8 @@ Content-Length: 458
       "yammerInactive": 2526, 
       "teamsActive": 846, 
       "teamsInactive": 1960, 
+      "office365Active": 2791,
+      "office365Inactive": 503,
       "reportPeriod": "7"
     }
   ]

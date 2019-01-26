@@ -2,12 +2,12 @@
 title: stringKeyObjectValuePair リソースの種類
 description: キーが文字列であり、値は、任意の JSON オブジェクトのキー/値ペアを表します。 これは、OData オープン型という名前のプロパティを要求する`value`は有効な JSON オブジェクト。
 localization_priority: Normal
-ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 819a2e004ee712f1250652ce0b3811940545e643
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516967"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572172"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>stringKeyObjectValuePair リソースの種類
 
@@ -19,7 +19,7 @@ ms.locfileid: "29516967"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |Key|String|キー。|
-|value|Any|任意の JSON オブジェクト。|
+|value|Json|任意の JSON オブジェクト。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -35,7 +35,8 @@ ms.locfileid: "29516967"
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value":"Json"
 }
 
 ```

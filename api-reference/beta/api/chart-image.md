@@ -4,12 +4,12 @@ description: 指定したサイズに合わせてグラフを拡大、縮小す�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3405ebd80193028ad2e2150c800082993828183d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526649"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571780"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -37,14 +37,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Authorization  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="request-body"></a>要求本文
+## <a name="path-parameters"></a>パス パラメーター
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|height|number|省略可能。結果の画像の希望する高さ。|
-|width|number|省略可能。結果の画像の希望する幅。|
-|fittingMode|string|省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。可能な値は、`Fit`、`FitAndCenter`、`Fill` です。|
+|height|Int32|結果のイメージの高さ。 省略可能。|
+|width|Int32|結果のイメージの幅。 省略可能。|
+|fittingMode|文字列|メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」  可能な値: `Fit`、 `FitAndCenter`、 `Fill`。|
 
 ## <a name="response"></a>応答
 
@@ -54,14 +54,15 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>応答
 以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -72,7 +73,7 @@ Content-length: 3
 }
 ```
 
-##### <a name="usage"></a>使用方法
+## <a name="usage"></a>使用方法
 
 HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。
 

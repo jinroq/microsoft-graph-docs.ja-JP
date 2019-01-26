@@ -2,12 +2,12 @@
 title: 添付ファイルを取得する
 description: プロパティとイベント、メッセージ、Outlook のタスク、または投稿に添付された添付ファイルの関係を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509498"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574350"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 
@@ -27,8 +27,8 @@ ms.locfileid: "29509498"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合:Mail.Read。
-* イベントの添付ファイルにアクセスする場合:Calendars.Read。
+* メッセージの添付ファイルにアクセスする場合: Mail.Read
+* イベントで添付ファイルにアクセスする場合: Calendars.Read
 * Outlook からのタスクの添付ファイルにアクセスする場合: Tasks.Read
 * グループの投稿の添付ファイルにアクセスする場合: Group.Read.All
 
@@ -67,7 +67,8 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
+ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイルです。  次の例は、入れ子のレベルを 1 つを示していますが、メッセージというように子の子であることができます。
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -137,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

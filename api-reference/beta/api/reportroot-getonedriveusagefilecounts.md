@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveUsageFileCounts'
 description: すべてのサイトのファイル合計数と、アクティブ ファイルの数を取得します。 ファイルは一定期間中に保存、同期、変更、共有されるとアクティブとみなされます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 62269d1fae7b4e4ee973fe1990c3c827d618db95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: e4d340b3bc8a9e73b3a6bb02f49deccf3aeacff8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528040"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575231"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 

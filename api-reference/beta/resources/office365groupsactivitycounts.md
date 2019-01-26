@@ -3,18 +3,19 @@ title: office365GroupsActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: c94e79f688e117960b3a8a0f2c9888a908634a82
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968289"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572333"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>office365GroupsActivityCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ               | 種類   | 説明                              |
+| プロパティ               | 型   | 説明                              |
 | :--------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate      | 日付   | コンテンツの最新の日付。          |
 | exchangeEmailsReceived | Int64  | グループのメールボックスで受信したメールの数です。 |

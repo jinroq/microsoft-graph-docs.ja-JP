@@ -4,16 +4,35 @@ description: Workbook は、ワークシート、テーブル、範囲などの�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 930a36f32b0768609050e200d705254cf600be4f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957978"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572060"
 ---
 # <a name="workbook-resource-type"></a>Workbook リソースタイプ
 
 Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
+
+## <a name="json-representation"></a>JSON 表記
+
+以下は、リソースの JSON 表記です
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -30,9 +49,9 @@ Workbook は、ワークシート、テーブル、範囲などの関連する�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
-|テーブル|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
-|worksheets|[Worksheet](worksheet.md) コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
+|names|[WorkbookNamedItem](workbooknameditem.md)コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
+|テーブル|[WorkbookTable](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
+|worksheets|[WorkbookWorksheet](worksheet.md)コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
 
 ## <a name="functions"></a>関数
 

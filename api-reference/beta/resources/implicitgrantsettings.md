@@ -2,12 +2,12 @@
 title: implicitGrantSettings リソースの種類
 description: この web アプリケーションが、OAuth 2.0 の暗黙的なフローを使用してトークンを要求できるかどうかを指定します。 暗黙の流れの一部として、ID とアクセス トークンを要求する別のプロパティを利用できます。 暗黙のフローを有効にするには、次のプロパティの少なくとも 1 つ設定する必要がある true に設定します。
 localization_priority: Normal
-ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 82051c3605d9815fef8a0852e0ffa9075f4a6d78
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520565"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574517"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>implicitGrantSettings リソースの種類
 
@@ -19,12 +19,18 @@ ms.locfileid: "29520565"
 
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| ブール値 | この web アプリケーションが、OAuth 2.0 の暗黙的なフローを使用して ID トークンを要求できるかどうかを指定します。|
-|enableAccessTokenIssuance| ブール値 | この web アプリケーションで、OAuth 2.0 の暗黙的なフローを使用してアクセス トークンを要求できるかどうかを指定します。|
+|enableIdTokenIssuance| Boolean | この web アプリケーションが、OAuth 2.0 の暗黙的なフローを使用して ID トークンを要求できるかどうかを指定します。|
+|enableAccessTokenIssuance| Boolean | この web アプリケーションで、OAuth 2.0 の暗黙的なフローを使用してアクセス トークンを要求できるかどうかを指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.implicitGrantSettings"
+}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

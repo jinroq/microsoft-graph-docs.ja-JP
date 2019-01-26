@@ -3,12 +3,13 @@ title: OneDrive アクティビティ レポート
 description: OneDrive アクティビティ レポートを使用すると、OneDrive 上のファイルの操作を参照して、OneDrive のすべてのライセンス ユーザーのアクティビティを取得できます。 これらのレポートでは、共有されているファイルの数を表示して、コラボレーションの進捗レベルを把握することができます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a493114fb44ddd9040675c9feb6a3b21ce543009
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 9771507e336ecf82b93eb2c12d22f45f47eb74fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923076"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572592"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive アクティビティ レポート
 

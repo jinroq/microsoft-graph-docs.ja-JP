@@ -2,12 +2,12 @@
 title: Serviceprincipal を更新します。
 description: Serviceprincipal オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 946db869863d74a94e2e9adc04a66c8d9a50e4f5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511661"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573859"
 ---
 # <a name="update-serviceprincipal"></a>Serviceprincipal を更新します。
 
@@ -39,23 +39,23 @@ PATCH /servicePrincipals/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値|                **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
-|AppDisplayName|String|関連付けられたアプリケーションによって公開される表示名です。|
+|appDisplayName|String|関連付けられたアプリケーションによって公開される表示名です。|
 |appId|文字列型 (String)|関連付けられているアプリケーション (その**appId**プロパティの一意の識別子です。|
-|appRoleAssignmentRequired|ブール値|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
-|appRoles|エンティティ|アプリケーション ロールは、関連付けられたアプリケーションによって公開されています。 詳細についてはアプリケーション エンティティ**のノート**で**appRoles**プロパティの定義を参照してください: バージョン 1.5 が必要ですか、null を許容しません。            |
+|appRoleAssignmentRequired|Boolean|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
+|appRoles| [microsoft.graph.appRole](../resources/approle.md)コレクション|アプリケーション ロールは、関連付けられたアプリケーションによって公開されています。 詳細についてはアプリケーション エンティティ**のノート**で**appRoles**プロパティの定義を参照してください: バージョン 1.5 が必要ですか、null を許容しません。            |
 |displayName|String|サービス ・ プリンシパルの表示名です。|
 |errorUrl|String|            |
-|HomePage|String|関連付けられたアプリケーションのホーム ページの URL です。|
-|keyCredentials|keyCredential|サービス ・ プリンシパルに関連付けられているキーの資格情報のコレクションです。                            **注**: Null は許容されません。            |
+|ホームページ|String|関連付けられたアプリケーションのホーム ページの URL です。|
+|keyCredentials|microsoft.graph.keyCredential|サービス ・ プリンシパルに関連付けられているキーの資格情報のコレクションです。                            **注**: Null は許容されません。            |
 |logoutUrl|String| [前方チャンネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[背面チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウトのプロトコルを使用してユーザーをログアウトするマイクロソフトの承認のサービスによって使用される URL を指定します。 |
-|oauth2Permissions|oAuth2Permission|関連付けられたアプリケーションによって公開される OAuth 2.0 のアクセス許可。 詳細については、アプリケーション エンティティの**oauth2Permissions**プロパティの定義を参照してください。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
-|passwordCredentials|passwordCredential|サービス ・ プリンシパルに関連付けられているパスワード資格情報のコレクションです。                            **注**: Null は許容されません。            |
+|oauth2Permissions|microsoft.graph.oAuth2Permission|関連付けられたアプリケーションによって公開される OAuth 2.0 のアクセス許可。 詳細については、アプリケーション エンティティの**oauth2Permissions**プロパティの定義を参照してください。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
+|passwordCredentials|microsoft.graph.passwordCredential|サービス ・ プリンシパルに関連付けられているパスワード資格情報のコレクションです。                            **注**: Null は許容されません。            |
 |preferredTokenSigningKeyThumbprint|String|内部使用専用として予約されています。   記述したり、それ以外の場合、このプロパティに依存しないでください。 将来のバージョンで削除する可能性があります。                            **メモ**: バージョン 1.5 以降が必要です。            |
-|publisherName|String|関連付けられたアプリケーションが指定されているテナントの表示名です。|
+|publisherName|文字列型 (String)|関連付けられたアプリケーションが指定されているテナントの表示名です。|
 |replyUrls|String|ユーザー トークン用に送信される、関連するアプリケーション、またはリダイレクトを使用して記号を OAuth 2.0 の Uri の認証コードをアクセス トークンは、関連付けられたアプリケーション用に送信される Url です。                            **注**: Null は許容されません。            |
 |samlMetadataUrl|String|            |
 |servicePrincipalNames|String|関連付けられたアプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://msdn.microsoft.com/library/azure/dn132633.aspx)です。                            **メモ**: null を許容しない、 **any**演算子は、複数値を持つプロパティのフィルター式に必要な詳細については、[サポートされているクエリ、フィルター、およびページングのオプション](https://msdn.microsoft.com/library/azure/dn727074.aspx)を参照してください。            |
-|タグの前に追加されるマークアップ|String|                                        **注**: Null は許容されません。            |
+|tags|String|                                        **注**: Null は許容されません。            |
 
 ## <a name="response"></a>応答
 
@@ -97,7 +97,7 @@ Content-length: 391
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

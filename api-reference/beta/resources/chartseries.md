@@ -4,12 +4,12 @@ description: グラフのデータ系列を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: eccd0d970ffeff7b41ceb0f9af810bb7a420d663
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519662"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570660"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries リソースの種類
 
@@ -22,12 +22,12 @@ ms.locfileid: "29519662"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartSeries | [chartSeries](chartseries.md) |chartSeries オブジェクトのプロパティと関係を読み取ります。|
-|ChartPoints を作成する |ChartPoints| ポイント コレクションに投稿して、新しい ChartPoints を作成します。|
-|ポイントを一覧表示する |ChartPoints コレクション| ChartPoints オブジェクトのコレクションを取得します。|
-|[Update](../api/chartseries-update.md) | [chartSeries](chartseries.md) |ChartSeries オブジェクトを更新します。 |
-|[List](../api/chartseries-list.md) | ChartSeries コレクション |chartSeries オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/chartseriescollection-itemat.md)|ChartSeries|コレクション内の位置に基づいてデータ系列を取得します。|
+|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |chartSeries オブジェクトのプロパティと関係を読み取ります。|
+|[ChartPoints を作成する](../api/chartseries-post-points.md) |[chartPoints](chartpoint.md)| ポイント コレクションに投稿して、新しい ChartPoints を作成します。|
+|[ポイントを一覧表示する](../api/chartseries-list-points.md) |[chartPoints](chartpoint.md)コレクション| ChartPoints オブジェクトのコレクションを取得します。|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md) |ChartSeries オブジェクトを更新します。 |
+|[List](../api/chartseries-list.md) | [workbookChartSeries](chartseries.md)コレクション |chartSeries オブジェクトのコレクションを取得します。 |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -37,8 +37,8 @@ ms.locfileid: "29519662"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|
-|points|[ChartPoints](chartpoint.md) コレクション|データ系列にあるすべてのポイントのコレクションを返します。値の取得のみ可能です。|
+|format|[workbookChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|
+|points|[workbookChartPoint](chartpoint.md)コレクション|データ系列にあるすべてのポイントのコレクションを返します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,10 +46,11 @@ ms.locfileid: "29519662"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

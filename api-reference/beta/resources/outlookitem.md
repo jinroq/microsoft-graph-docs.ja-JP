@@ -4,12 +4,12 @@ description: 以下は、リソースの JSON 表記です
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fe582c4568995710d882ab22ebb7f4683469fc0f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528292"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574748"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "29528292"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json
@@ -46,7 +46,7 @@ ms.locfileid: "29528292"
 |id|String| 読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

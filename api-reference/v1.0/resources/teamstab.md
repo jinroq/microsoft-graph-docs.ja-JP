@@ -4,12 +4,12 @@ description: 'タブでは、teamsTab をチーム内でのチャネル (接続)
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 305b8d530eb0b10a658a1b5e5051f7854e3919ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 181d2fd23ff922709b3e098f6069adf300ad3928
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917777"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574671"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
@@ -30,15 +30,14 @@ ms.locfileid: "27917777"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---------------|:--------|:----------|
-|  ID              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
+|  id              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
 |  displayName            |   string                  |  タブの名前です。     |
-|  sortOrderIndex  |   int                     |  タブの並べ替え順序のインデックス     |
 |  webUrl          |   文字列                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  タブに適用するカスタム設定のコンテナーです。タブでは、このプロパティが 1 回だけが構成されていると見なされます。     |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型   | 説明 |
 |:---------------|:--------|:----------|
@@ -59,7 +58,6 @@ ms.locfileid: "27917777"
 {  
   "id": "string",
   "displayName": "string",
-  "sortOrderIndex": "string",
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }

@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveUsageAccountCounts'
 description: アクティブな OneDrive for Business サイトの数の傾向を取得します。 ユーザーがファイルを表示、変更、アップロード、ダウンロード、共有、同期したサイトはすべて、アクティブなサイトとみなされます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 5ee2d7e40bd197157595e3c0c8336ae914a24718
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 3fecc11e17e9abdb584bef405501a6e33ca70a6f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941066"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574538"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 

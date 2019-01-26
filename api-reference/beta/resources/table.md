@@ -4,12 +4,12 @@ description: Excel の表を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510667"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572683"
 ---
 # <a name="table-resource-type"></a>テーブル リソースの種類
 
@@ -56,10 +56,10 @@ Excel の表を表します。
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
-|rows|[TableRow](tablerow.md) コレクション|テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。|
-|sort|[TableSort](tablesort.md)|テーブル内の並べ替えを表します。読み取り専用。|
-|worksheet|[Worksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|
+|columns|[tableColumn](tablecolumn.md)コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
+|rows|[[tableRow](tablerow.md)コレクション|テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。|
+|sort|[tableSort](tablesort.md)|テーブル内の並べ替えを表します。読み取り専用。|
+|worksheet|[workbookWorksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -70,7 +70,7 @@ Excel の表を表します。
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json

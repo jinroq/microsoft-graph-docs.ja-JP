@@ -3,12 +3,13 @@ title: SharePoint サイト使用状況レポート
 description: SharePoint サイト使用状況レポートを使用すると、ユーザーが SharePoint サイトに保存したファイルの合計数、アクティブに使用中のファイルの数、サイト全体で消費されたストレージなど、SharePoint から取得している値の概略が得られます。 次に、これらのレポートを掘り下げると、すべてのサイトの傾向とサイト レベルの詳細を把握することができます。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: b5fdcf5c264fcbcc499759cf955cc49cdac2976b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 999be8cc10eb0bfa3c937d2fe3e5a849e7423a34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954394"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575070"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint サイト使用状況レポート
 

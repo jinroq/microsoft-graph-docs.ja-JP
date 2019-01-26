@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityGroupCounts'
 description: グループの日次合計数と、そのうちのアクティブなグループの数を、電子メールでの会話、Yammer の投稿、SharePoint ファイルのアクティビティに基づいて取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 313b02bceb385f5f400ff0874142853b56c59320
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 9b06042772ee1889e568780098013c0b78ff6e47
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524150"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571682"
 ---
 # <a name="reportroot-getoffice365groupsactivitygroupcounts"></a>reportRoot: getOffice365GroupsActivityGroupCounts
 

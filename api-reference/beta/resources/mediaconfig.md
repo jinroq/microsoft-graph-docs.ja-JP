@@ -4,12 +4,12 @@ description: メディア構成は、呼び出しに接続するために使用�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b2d8b8063307660b0d4cce459e1906f0b0a99c5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515105"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573964"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "29515105"
 
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | ブール値 |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -32,6 +32,7 @@ ms.locfileid: "29515105"
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
+  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

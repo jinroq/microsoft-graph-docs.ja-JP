@@ -4,33 +4,31 @@ description: 複合型のプロパティ情報にはが含まれています。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526761"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575105"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-複合型のプロパティ[情報](insights.md)にはが含まれています。
+複合型が[officeGraphInsights](insights.md)のプロパティを格納します。
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
 }
 ```
 
@@ -40,27 +38,27 @@ ms.locfileid: "29526761"
 | -------------         |---------------| -------------|
 | タイトル                 | String        | アイテムのタイトルのテキストです。               |
 | type              | String        | 項目のメディア ・ タイプ。 特定の種類に基づいて特定のファイルをフィルター処理するために使用できます。 サポートされている型の下を参照してください。 |
-| MediaType             | String        | 項目のメディア ・ タイプ。 IANA メディアのサポートされている Mime の種類に基づいて、ファイルの特定の種類のフィルター処理に使用できます。 すべてのメディアの Mime タイプがサポートされていることに注意してください。 |
-| PreviewImageUrl       | String        | 先頭のアイテムのプレビュー イメージの URL です。 |
+| メディアの種類             | String        | 項目のメディア ・ タイプ。 IANA メディアのサポートされている Mime の種類に基づいて、ファイルの特定の種類のフィルター処理に使用できます。 すべてのメディアの Mime タイプがサポートされていることに注意してください。 |
+| previewImageUrl       | String        | 先頭のアイテムのプレビュー イメージの URL です。 |
 | previewText           | String        | アイテムのプレビュー テキストです。 |
 | containerWebUrl       | String        | アイテムが格納されるフォルダーへのパスです。 |
 | containerDisplayName  | String        | アイテムを保存する場所を説明する文字列。 たとえば、SharePoint サイト、または項目を格納する OneDrive の所有者を識別するユーザー名の名前です。  |
-| ContainerType         | String | ファイルを格納するコンテナーの種類によってフィルター処理するために使用できます。 サイトなど OneDriveBusiness。       |
+| コンテナー         | String | ファイルを格納するコンテナーの種類によってフィルター処理するために使用できます。 サイトなど OneDriveBusiness。       |
 
 ## <a name="type-property-values"></a>プロパティ値の型
 -   PowerPoint
 -   Word
 -   Excel
--   PDF
+-   Pdf
 -   OneNote
 -   OneNotePage
 -   InfoPath
 -   Visio
 -   Publisher
--   Project
+-   プロジェクト
 -   Access
 -   メール
--   *.csv
+-   Csv
 -   アーカイブ
 -   Xps
 -   オーディオ
@@ -82,7 +80,7 @@ ms.locfileid: "29526761"
 -   OneDriveBusiness
 -   Site
 -   メール
--   Dropbox
+-   ドロップ ボックス
 -   ボックス
 -   ください
 

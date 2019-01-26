@@ -4,12 +4,12 @@ description: アプリケーション オブジェクトのプロパティを更
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9965a46e340063940e1a9af18a89ada7e492bf26
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525949"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572214"
 ---
 # <a name="update-application"></a>アプリケーションを更新します。
 
@@ -41,23 +41,23 @@ PATCH /applications/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowPublicClient|ブール値| アプリケーションは、パブリック クライアントとして動作できるかどうかを指定します。 たとえば、モバイル デバイスで実行されているインストール済みのアプリケーションです。 既定値は *false* です。 |
-|API|API| API アプリケーションの設定を指定します。 |
+|allowPublicClient|Boolean| アプリケーションは、パブリック クライアントとして動作できるかどうかを指定します。 たとえば、モバイル デバイスで実行されているインストール済みのアプリケーションです。 既定値は *false* です。 |
+|api|[api](../resources/api.md)| API アプリケーションの設定を指定します。 |
 |appRoles|[エンティティ](../resources/approle.md)のコレクション|アプリケーションが宣言されているアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、またはサービス ・ プリンシパルを指定できます。 null 許容ではありません。|
 |applicationAliases|String コレクション| アプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)です。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容ではありません。 |
 |createdDateTime|DateTimeOffset| 日付と時刻、アプリケーションが登録されています。 |
 |deletedDateTime|DateTimeOffset| 日付と時刻、アプリケーションが削除されました。 |
 |displayName|String|アプリケーションの表示名です。 |
 |id|String|アプリケーションの一意の識別子です。 [directoryObject](../resources/directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。 |
-|Info|[informationalUrl](../resources/informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 | デスクトップやモバイル デバイスなどのインストールされているクライアントの設定を指定します。 |
+|情報|[informationalUrl](../resources/informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 | デスクトップやモバイル デバイスなどのインストールされているクライアントの設定を指定します。 |
 |keyCredentials|[keyCredential](../resources/keycredential.md)コレクション|しないアプリケーションに関連付けられているキーの資格情報のコレクション null 許容型です。 |
 |logo|Stream|アプリケーションのメインのロゴです。 null 許容ではありません。 |
 |orgRestrictions|String コレクション| 組織 tenantIds をアプリケーションに制限されます。  コレクションが空の場合は、アプリケーションは、マルチ テナント型 (制限されていないです)。 コレクションには、tenantIds が含まれている、アプリケーションは、コレクション内の組織の tenantIds に制限されます。 他のテナントがアプリケーションが登録されている tenantId ではありませんを指定すると、アプリケーションの tenantId が間接的に含まれていることを意味します。 |
 |passwordCredentials|[passwordCredential](../resources/passwordcredential.md)コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。|
 |preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)コレクション| アプリケーションと暗黙的な同意を要求されたアクセス許可の一覧です。 管理者がアプリケーションに同意を提供する必要があります。 preAuthorizedApplications では、ユーザーが要求されたアクセス許可に同意するものは必要ありません。 PreAuthorizedApplications に記載されているアクセス許可では、ユーザーの同意は必要ありません。 ただし、preAuthorizedApplications に記載されていない追加の要求されたアクセス許可は、ユーザーの同意を必要とします。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md)コレクション|このアプリケーションへのアクセスと、OAuth アクセス許可のスコープおよび各リソースの下に必要なアプリケーション ロールのセットを必要とするリソースを指定します。 必要なリソースへのアクセスのこの前の構成では、同意の経験をドライブします。 null 許容ではありません。|
-|タグの前に追加されるマークアップ|String コレクション| 分類し、アプリケーションの識別に使用できるカスタム文字列。 |
-|web|Web| Web アプリケーションの設定を指定します。 |
+|tags|String コレクション| 分類し、アプリケーションの識別に使用できるカスタム文字列。 |
+|web|[web アプリケーション](../resources/web.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="response"></a>応答
 

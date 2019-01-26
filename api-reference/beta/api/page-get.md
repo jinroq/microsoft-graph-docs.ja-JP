@@ -4,18 +4,18 @@ description: ページ オブジェクトのプロパティとリレーション
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1cafa1b430f20fc74d045c498d7bba81eb160463
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528516"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572634"
 ---
 # <a name="get-page"></a>ページを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ページ](../resources/page.md) オブジェクトのプロパティとリレーションシップを取得します。
+[ページ](../resources/onenotepage.md) オブジェクトのプロパティとリレーションシップを取得します。
 
 **ページ情報を取得する**
 
@@ -69,7 +69,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [page](../resources/page.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [page](../resources/onenotepage.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

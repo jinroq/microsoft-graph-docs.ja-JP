@@ -4,12 +4,12 @@ description: 'タブでは、teamsTab をチーム内でのチャネル (接続)
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509288"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574951"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
@@ -34,13 +34,13 @@ ms.locfileid: "29509288"
 |:---------------|:--------|:----------|
 |  id              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
 |  displayName            |   string                  |  タブの名前です。     |
-|  name            |   string                  |  (非推奨)タブの名前です。     |
-|  teamsAppId           |   string             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
-|  sortOrderIndex  |   int                     |  タブの並べ替え順序のインデックス。     |
-|  webUrl          |   string                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
+|  name            |   文字列                  |  (非推奨)タブの名前です。     |
+|  teamsAppId           |   文字列             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
+|  sortOrderIndex  |   文字列                  |  タブの並べ替え順序のインデックス。     |
+|  webUrl          |   文字列                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  タブに適用するカスタム設定のコンテナーです。タブでは、このプロパティが 1 回だけが構成されていると見なされます。     |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型   | 説明 |
 |:---------------|:--------|:----------|

@@ -2,12 +2,12 @@
 title: referenceAttachment リソースの種類
 description: '接続されているフォルダーや、OneDrive ビジネス クラウド ドライブ、またはその他のサポートされているストレージの場所にテキスト ファイルまたは Word 文書) などのファイルへのリンク '
 localization_priority: Normal
-ms.openlocfilehash: 59ebb0af10a64195643cb7073d1206790ae6a875
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: adf078f7ba678a4fe90a51972c5e4be4788c9c0c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512711"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574559"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -29,18 +29,18 @@ ms.locfileid: "29512711"
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。 省略可能。|
 |id|String|添付ファイル ID。読み取り専用です。|
-|IsFolder|ブール値|添付ファイルがフォルダーへのリンクであるかどうかを指定します。**SourceUrl** がフォルダーへのリンクの場合、true に設定する必要があります。省略可能。|
+|isFolder|Boolean|添付ファイルがフォルダーへのリンクであるかどうかを指定します。 True を設定**し直すこと**は、フォルダーへのリンクを設定する必要があります。 省略可能。|
 |isInline|ブール値|添付ファイルを埋め込みオブジェクトの本文にインラインで表示する場合は、true に設定します。 省略可能。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 省略可能。|
 |name|String|埋め込まれた添付ファイルを表すアイコンの下に表示されるテキストです。 これは、実際のファイル名を指定するのには必要ありません。 必須です。|
-|アクセス許可|ReferenceAttachmentPermissions|**ProviderType** のプロバイダーの種類によって、添付ファイルに付与されるアクセス許可を指定します。可能な値は、`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView`、`organizationEdit` です。省略可能。|
-|PreviewUrl|String|プレビュー イメージを取得するための、イメージの URL の参照添付ファイルのみに適用されます。**SourceUrl** によってイメージ ファイルが識別される場合にのみ、**ThumbnailUrl** と **PreviewUrl** を使用します。省略可能。|
-|ProviderType|ReferenceAttachmentProviders|この `other` の添付ファイルをサポートするプロバイダーの種類。可能な値は、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox`、 です。省略可能。|
+|アクセス許可|referenceAttachmentPermission|**プロバイダーの種類**のプロバイダーの種類によって、添付ファイルに付与するアクセス許可を指定します。 可能な値は、`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView`、`organizationEdit` です。 省略可能。|
+|previewUrl|String|イメージのプレビュー イメージを取得する URL の参照添付ファイルのみに適用されます。 **直すこと**は、イメージ ファイルを指定するときにのみ、 **thumbnailUrl**および**previewUrl**を使用します。 省略可能。|
+|プロバイダーの種類| referenceAttachmentProvider |このコンテンツ タイプの添付ファイルをサポートするプロバイダーの型。 可能な値は、`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox` です。 省略可能。|
 |size|Int32|バイト内の参照の添付ファイルをメッセージに格納されているメタデータのサイズです。 この値は実際のファイルのサイズを示すものではありません。 省略可能。|
-|sourceUrl|String|添付ファイルの内容を取得するための URL。フォルダーへの URL の場合、Outlook または Outlook on the web 上でフォルダーが正しく表示されるには、**IsFolder** を true に設定します。必須。|
-|ThumbnailUrl|String|サムネイル イメージを取得するための、イメージの URL の参照添付ファイルのみに適用されます。**SourceUrl** によってイメージ ファイルが識別される場合にのみ、**ThumbnailUrl** と **PreviewUrl** を使用します。省略可能。|
+|sourceUrl|String|添付ファイルのコンテンツを取得する URL です。 フォルダーへの URL の場合は、し、Outlook または Outlook web 上で正しく表示されるフォルダーの**isFolder** true に設定します。 必須です。|
+|thumbnailUrl|String|イメージのサムネイル イメージを取得する URL の参照添付ファイルのみに適用されます。 **直すこと**は、イメージ ファイルを指定するときにのみ、 **thumbnailUrl**および**previewUrl**を使用します。 省略可能。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -65,9 +65,9 @@ ms.locfileid: "29512711"
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "permission": "string",
+  "permission": "referenceAttachmentPermission",
   "previewUrl": "string",
-  "providerType": "string",
+  "providerType": "referenceAttachmentProvider",
   "size": 1024,
   "sourceUrl": "string",
   "thumbnailUrl": "string"

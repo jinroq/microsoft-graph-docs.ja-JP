@@ -3,18 +3,19 @@ title: office365ActiveUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2eaeccb1fa3b67c6b3e1d2d7c88a1dfad4e40e88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: bbc51e4859b005c01b0f8d2cfb2db3ca902d60e2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959126"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572207"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   | 説明                              |
+| プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日付   | コンテンツの最新の日付。          |
 | office365         | Int64  | Office 365 のアクティブ ユーザーの数です。 この数値には、Exchange、OneDrive、SharePoint、Skype のビジネス、Yammer、およびマイクロソフトのチームで作業中のすべてのユーザーが含まれます。 それぞれのプロパティの説明では、各製品のアクティブなユーザーの定義が表示されます。 |

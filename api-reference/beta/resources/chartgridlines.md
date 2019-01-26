@@ -4,12 +4,12 @@ description: グラフの軸の目盛線または補助目盛線を表します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3c57c68e7d9dfcd26741d15e302dd5dddeaae378
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510310"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572536"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "29510310"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartGridlines | ChartGridlines |chartGridlines オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartgridlines-update.md) | ChartGridlines    |ChartGridlines オブジェクトを更新します。 |
+|[Get ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |chartGridlines オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -33,7 +33,7 @@ ms.locfileid: "29510310"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。値の取得のみ可能です。|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -41,10 +41,11 @@ ms.locfileid: "29510310"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

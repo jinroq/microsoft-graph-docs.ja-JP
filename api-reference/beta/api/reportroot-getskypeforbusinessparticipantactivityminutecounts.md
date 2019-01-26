@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts'
 description: 組織からユーザーが参加した会議セッションの長さ (分) と種類について、使用傾向を取得します。 会議セッションの種類には、オーディオ/ビデオがあります。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 70a61da1f0402ee8c97337ac42f7f006db5e21aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 6677ac111a1cad24e44e4c0e77892d55069ee825
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525935"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574356"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 

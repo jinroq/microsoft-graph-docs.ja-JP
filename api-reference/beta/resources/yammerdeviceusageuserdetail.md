@@ -3,18 +3,19 @@ title: yammerDeviceUsageUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2b74222c1a636fac271268e228c8140e7d1cf33f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 5fe3aa7fa9da243c9cc8f9b015ee85d779b84eb3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912009"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574153"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類    |
+| プロパティ          | 型    |
 | :---------------- | :------ |
 | reportRefreshDate | 日付    |
 | userPrincipalName | String  |
@@ -22,12 +23,12 @@ ms.locfileid: "27912009"
 | userState         | String  |
 | stateChangeDate   | 日付    |
 | lastActivityDate  | 日付    |
-| usedWeb           | ブール型 |
-| usedWindowsPhone  | ブール型 |
-| usedAndroidPhone  | ブール型 |
-| usediPhone        | ブール型 |
-| usediPad          | ブール型 |
-| usedOthers        | ブール型 |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表記

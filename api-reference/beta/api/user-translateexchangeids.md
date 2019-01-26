@@ -4,12 +4,12 @@ description: 形式との間、Outlook に関連するリソースの識別子�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528229"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571290"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -54,16 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 値 | 説明 |
 |:-------|:------------|
-| EntryID | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
-| EwsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
+| エントリ Id | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
+| ewsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
 | immutableEntryId | バイナリ MAPI と互換性のある変更不可能な ID 形式です。 |
 | restId | Microsoft Graph で使用される既定の ID 形式です。 |
 | restImmutableEntryId | Microsoft Graph で使用される ID の変更不可能な形式です。 |
 
 バイナリ フォーマット (`entryId`と`immutableEntryId`) は、base64 でエンコードされた URL セーフであります。 URL safeness は、base64 エンコードのバイナリ データの次のように変更することによって実装されます。
 
-- `+`
-- `/`
+- 交換`+`で`-`
+- 交換`/`で`_`
 - 末尾の埋め込み文字を削除する (`=`)
 - 示す数のスペース文字は元の文字列の末尾に整数値を追加する (`0`、 `1`、または`2`)
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

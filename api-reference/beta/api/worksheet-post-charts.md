@@ -4,12 +4,12 @@ description: この API を使用して、新しいグラフを作成します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 27bd441e6002d69cf94f79b8e3de40f9614ad6a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07d310471aef6560557a8a78c62b8aa15767c90f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522771"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570870"
 ---
 # <a name="create-chart"></a>グラフを作成します。
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[グラフ](../resources/chart.md) オブジェクトの JSON 表記を指定します。
+要求の本文には、 [workbookChart](../resources/chart.md)オブジェクトの JSON 表現を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[グラフ](../resources/chart.md) オブジェクトを返します。
+かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[workbookChart](../resources/chart.md)のオブジェクトです。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -62,13 +62,13 @@ Content-length: 52
   "left": 99
 }
 ```
-要求本文で、[グラフ](../resources/chart.md) オブジェクトの JSON 表記を指定します。
+要求の本文には、 [workbookChart](../resources/chart.md)オブジェクトの JSON 表現を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created

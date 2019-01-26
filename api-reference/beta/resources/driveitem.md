@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516743"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572068"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソースの種類
 
@@ -38,16 +38,22 @@ ms.locfileid: "29516743"
 
 **driveItem** リソースは [**baseItem**][baseItem] から派生し、そのリソースからプロパティを継承します。
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -100,7 +106,7 @@ ms.locfileid: "29516743"
 
 | プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
+| audio                | [audio](audio.md)  | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
 | createdBy            | [identitySet][]    | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | createdDateTime      | DateTimeOffset     | アイテム作成の日時。読み取り専用です。
 | cTag                 | String             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
@@ -140,7 +146,7 @@ ms.locfileid: "29516743"
 | アクティビティ         | [itemActivity][] コレクション     | このアイテムに対して行われた最近のアクティビティのリストです。
 | 分析          | [itemAnalytics][]リソース      | この項目に対して行われた活動の表示について分析します。
 | content            | Stream                          | コンテンツのストリーム (アイテムがファイルを表す場合)。
-| children           | driveitem コレクション            | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
+| children           | driveItem コレクション            | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | listItem           | [listItem][]                    | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用です。 Null 許容型。
 | permissions        | [permission][] コレクション       | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
 | thumbnails         | [thumbnailSet][] コレクション     | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
@@ -152,9 +158,9 @@ ms.locfileid: "29516743"
 
 | プロパティ名                     | 型   | 説明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
-| @microsoft.graph.downloadUrl      | string | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
-| @microsoft.graph.sourceUrl        | string | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
+| @microsoft.graph.conflictBehavior | 文字列 | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
+| @microsoft.graph.downloadUrl      | 文字列 | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
+| @microsoft.graph.sourceUrl        | 文字列 | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
 
 **注:**@Microsoft.graph.downloadUrl 値は短時間の URL であるため、キャッシュすることはできません。
 URL は、短時間 (1 時間) が無効になる前にのみ使用できます。 ユーザーに対するファイル アクセス許可を削除する可能性がありますすぐに無効の URL。

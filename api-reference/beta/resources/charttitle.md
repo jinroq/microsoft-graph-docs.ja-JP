@@ -4,12 +4,12 @@ description: グラフのグラフ タイトル オブジェクトを表しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f0b669593bd9ca0768ad977ace8d54f5531301a4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514713"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573096"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "29514713"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get ChartTitle | [ChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
+|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -35,7 +35,7 @@ ms.locfileid: "29514713"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -43,10 +43,11 @@ ms.locfileid: "29514713"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

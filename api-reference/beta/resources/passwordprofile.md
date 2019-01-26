@@ -1,13 +1,13 @@
 ---
 title: passwordProfile リソースの種類
-description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。**ユーザー** エンティティの **PasswordProfile** プロパティは、passwordProfile オブジェクトです。
+description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。ユーザー エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
 localization_priority: Normal
-ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a68cd61c7ab3fd1e62ca9bc889a6691068174dc6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518934"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574573"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "29518934"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|ブール値| 場合は**true の場合**、次回ログイン時、ユーザーにパスワードを変更する必要があります。 パスワードの変更では、このプロパティに自動的がリセットされるまでに ***false を指定**します。 表示しない場合は、セットでは、既定値は**false**。 |
-|forceChangePasswordNextSignInWithMfa|ブール値| **True の場合**、次回ログイン時、ユーザーを実行する必要がありますされる前に多要素認証 (MFA) は、パスワードを変更するのには強制します。 動作は**forceChangePasswordNextSignIn**と同じですが、ユーザーがパスワードを変更する前に最初の多要素認証を実行するために必要な。 パスワードの変更後このプロパティは自動的にリセットを**false**にします。 表示しない場合は、セットでは、既定値は**false**。 |
+|forceChangePasswordNextSignInWithMfa|Boolean| **True の場合**、次回ログイン時、ユーザーを実行する必要がありますされる前に多要素認証 (MFA) は、パスワードを変更するのには強制します。 動作は**forceChangePasswordNextSignIn**と同じですが、ユーザーがパスワードを変更する前に最初の多要素認証を実行するために必要な。 パスワードの変更後このプロパティは自動的にリセットを**false**にします。 表示しない場合は、セットでは、既定値は**false**。 |
 |password|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -32,7 +32,7 @@ ms.locfileid: "29518934"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

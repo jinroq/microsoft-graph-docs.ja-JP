@@ -2,12 +2,12 @@
 title: synchronizationProgress リソースの種類
 description: 完了するまで、synchronizationJob の進行状況を表します。
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510975"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572746"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "29510975"
 |completedUnits|Int32|分子の進行状況の比率です。既に処理された変更単位の数です。|
 |progressObservationDateTime|DateTimeOffset|分 UTC からのオフセットとしての進行状況の監視の時間です。|
 |totalUnits|Int32|分母の進行状況の比率です。変更の同期を実行する処理の単位数を示します。|
-|Units|String|単位のオプションの説明です。|
+|単位|String|単位のオプションの説明です。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "29510975"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json

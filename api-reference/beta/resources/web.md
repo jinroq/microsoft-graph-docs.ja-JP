@@ -2,12 +2,12 @@
 title: web リソースの種類
 description: Web アプリケーションの設定を指定します。
 localization_priority: Normal
-ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 281a3f23dd0e22cae6b3ca2b67e2e9cd8b400740
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527669"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572718"
 ---
 # <a name="web-resource-type"></a>web リソースの種類
 
@@ -21,7 +21,7 @@ Web アプリケーションの設定を指定します。
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| この web アプリケーションが、OAuth 2.0 の暗黙的なフローを使用してトークンを要求できるかどうかを指定します。|
 |logoutUrl|String| [前方チャンネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[背面チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウトのプロトコルを使用してユーザーをログアウトするマイクロソフトの承認のサービスによって使用される URL を指定します。 |
-|oauth2AllowImplicitFlow|ブール値| 現在は廃止されています。 使用しないでください。 | 
+|oauth2AllowImplicitFlow|Boolean| 現在は廃止されています。 使用しないでください。 | 
 |redirectUris|String コレクション| ユーザー トークンは、サインイン用に送信される Url または Uri を OAuth 2.0 の認証コードとアクセス トークンに送信のリダイレクトを指定します。 |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -32,7 +32,7 @@ Web アプリケーションの設定を指定します。
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.web"
+  "@odata.type": "microsoft.graph.webApplication"
 }-->
 
 ```json

@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: 有効になっているユーザーとデスクトップやデバイスに Office のサブスクリプションをアクティブ化または共有のコンピューターの数を取得します。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a67f54b0c2abc1ef201782525492bed3bab98983
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 9d9c42dac12fa1464f119a301b4205893b33ab96
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526894"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573579"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 

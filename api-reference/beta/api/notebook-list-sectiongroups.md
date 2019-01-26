@@ -4,12 +4,12 @@ description: 指定されたノートブックからセクション グループ
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 554366d30258e731f5521b0744245947ca506572
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 466503a1ebeefcab9ad1e4de961872230e534ea4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507741"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573985"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups を一覧表示する
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

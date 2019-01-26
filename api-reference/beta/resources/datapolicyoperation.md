@@ -4,12 +4,12 @@ description: 送信されたデータ ポリシー操作を表します。 操�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938749"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570926"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation リソースの種類
 
@@ -27,15 +27,14 @@ ms.locfileid: "27938749"
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|CompletedDateTime|DateTimeOffset|このデータ ポリシーの操作の要求が完了すると、UTC 時刻での ISO 8601 形式を使用して表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 操作が完了するまで null になります。|
+|CompletedDateTime|DateTimeOffset|このデータ ポリシーの操作の要求が完了すると、UTC 時刻での ISO 8601 形式を使用して表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 操作が完了するまで null になります。|
 |id|String| この操作に固有のキーです。 |
 |status|文字列| 可能な値は、`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue` です。|
 |storageLocation|String|URL の場所のデータをエクスポートするのには、要求をエクスポートします。|
 |userId|String|操作を実行するユーザーのユーザーの id。|
 |submittedDateTime|DateTimeOffset|このデータの操作の要求が送信された UTC 時刻での ISO 8601 形式を使用する場合を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|進行状況|倍精度浮動小数点数|操作の進行状況を指定します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -58,8 +57,7 @@ ms.locfileid: "27938749"
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)",
-  "progress": "Double"
+  "submittedDateTime": "String (timestamp)"
 }
 
 ```

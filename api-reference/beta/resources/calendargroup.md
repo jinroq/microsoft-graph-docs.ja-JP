@@ -4,12 +4,12 @@ description: ユーザーの予定表のグループです。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a40b01136df2bb20a143a8de01188efaa2585191
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515651"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574797"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "29515651"
 | classId   | Guid   | クラス識別子。読み取り専用です。                                                                                                                                                                          |
 | id        | String | グループの一意識別子。読み取り専用です。                                                                                                                                                                 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型                               | 説明                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
@@ -54,7 +54,19 @@ ms.locfileid: "29515651"
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

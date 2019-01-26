@@ -2,12 +2,12 @@
 title: networkLocationDetail リソースの種類
 description: ネットワーク上の場所に関連付けられている詳細情報を示します。 .
 localization_priority: Normal
-ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62bdb23c63beb89b85386e6bea67face097cf1ae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834322"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570940"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail リソースの種類
 ネットワーク上の場所に関連付けられている詳細情報を示します。 .
@@ -15,9 +15,9 @@ ms.locfileid: "27834322"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|networkType|String|ネットワークの種類を提供します。 使用可能な値は、 `intranet`、 `extranet`、`namedNetwork`と`trusted`。|
+|networkType| 列挙型文字列 |ネットワークの種類を提供します。 使用可能な値は、 `intranet`、 `extranet`、`namedNetwork`と`trusted`。|
 |ネットワーク名リソース|String|ネットワークの名前です。|
 
 
@@ -35,7 +35,7 @@ ms.locfileid: "27834322"
 
 ```json
 {
-  "networkTypes": "namedNetork",
+  "networkTypes": " intranet | extranet | namedNetwork | trusted ",
   "networkName": "String"
 }
 
