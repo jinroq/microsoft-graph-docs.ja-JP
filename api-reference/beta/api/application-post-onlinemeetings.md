@@ -1,23 +1,23 @@
 ---
-title: オンライン会議を作成します。
-description: 要求の本文で指定されたユーザーの代わりにオンライン会議を作成します。
+title: オンライン会議を作成する
+description: 要求本文で指定されたユーザーのためにオンライン会議を作成します。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: dc6521a09bcfaf52b7240d5ad63129fa729d7899
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946932"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516869"
 ---
-# <a name="create-online-meeting"></a>オンライン会議を作成します。
+# <a name="create-online-meeting"></a>オンライン会議を作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要求の本文で指定されたユーザーの代わりにオンライン会議を作成します。
+要求本文で指定されたユーザーのためにオンライン会議を作成します。
 
-> **注**: ユーザーの予定表に会議が表示されません。
+> **注**: ユーザーの予定表に、会議が表示されません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,10 +41,10 @@ POST /applications/{id}/onlineMeetings
 | Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [onlineMeeting](../resources/onlinemeeting.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文内の[onlineMeeting](../resources/onlinemeeting.md)オブジェクトです。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [onlineMeeting](../resources/onlinemeeting.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -75,7 +75,7 @@ Content-Length: 1553
 }
 ```
 
-要求の本文には、 [onlineMeeting](../resources/onlinemeeting.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。
 
 ##### <a name="response"></a>応答
 
@@ -133,10 +133,15 @@ Content-Length: 1574
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
