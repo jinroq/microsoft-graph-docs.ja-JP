@@ -3,12 +3,12 @@ title: Microsoft Graph の概要
 description: Microsoft Graph は、Microsoft 365 のデータとインテリジェンスにアクセスするための入り口です。 Microsoft Graph は、Office 365、Enterprise Mobility + Security、および Windows 10 の大量のデータを活用するために使用できる統合型プログラミング モデルを提供します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b8256cebe9e8e706a655221c3e1acc5947f9eecd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879913"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573712"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph の概要
 
@@ -105,7 +105,4 @@ Microsoft Graph データ接続の詳細については、[Microsoft Graph デ�
 - アプリで[認証トークンを取得する](auth-overview.md)方法を検索します。
 - [API の使用](use-the-api.md)を開始します。
 
-## <a name="feedback"></a>フィードバック
-
-お客様からのフィードバックを重視しています。[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)でご連絡いただけます。ご質問には {MicrosoftGraph} のタグを付けてください。
 
