@@ -1,44 +1,44 @@
 ---
-title: directoryAudit リソースの種類
-description: このリソースを表し、ディレクトリの監査項目のコレクション
+title: directoryAudit リソース型
+description: このリソースでは、ディレクトリの監査アイテムとそのコレクションについて示します
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991784"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573159"
 ---
-# <a name="directoryaudit-resource-type"></a>directoryAudit リソースの種類
-このリソースを表し、ディレクトリの監査項目のコレクション
+# <a name="directoryaudit-resource-type"></a>directoryAudit リソース型
+このリソースでは、ディレクトリの監査アイテムとそのコレクションについて示します
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リスト directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |コレクションとそのプロパティでディレクトリの監査項目を一覧表示します。|
-|[DirectoryAudit を取得します。](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |特定のディレクトリの監査項目とそのプロパティを取得します。|
+|[directoryAudits を一覧表示する](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |コレクションの中のディレクトリの監査アイテムとそのプロパティを一覧表示します。|
+|[directoryAudit を取得する](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |特定のディレクトリの監査アイテムとそのプロパティを取得します。|
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|activityDateTime|DateTimeOffset|アクティビティが実行された日時を示します。 タイムスタンプ型が、常に UTC 時刻です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|アクティビティ名または操作の名前 (例。 「ユーザーを作成する」、「グループ メンバーの追加」)。 ログに記録する活動のリストは、 [Azure の広告活動のリスト](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)を参照してください。|
-|additionalDetails|[keyValue](keyvalue.md)コレクション|活動に関する詳細情報を示します。|
-|category|String|活動の対象となっているリソース カテゴリを示します。 (例: ユーザーの管理、グループの管理などです。)。|
-|correlationId|GUID|により、さまざまなサービス全体にわたる活動を関連付ける一意の ID を示します。 サービス全体にわたるトレース ログを使用できます。|
+|activityDateTime|DateTimeOffset|アクティビティが実行された日付と時刻を示します。 Timestamp 型は、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|activityDisplayName|String|アクティビティ名または操作名 (例: "Create User"、"Add member to group")。 記録されるアクティビティの一覧は、[Azure AD アクティビティの一覧](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)を参照してください。|
+|additionalDetails|[keyvalue](keyvalue.md) コレクション|アクティビティに関する詳細情報を示します。|
+|category|String|どのリソース カテゴリがアクティビティの対象となっているかを示します。 (例: ユーザー管理、グループ管理など)|
+|correlationId| String (識別子) |さまざまなサービスの間にまたがるアクティビティを関連付けるのに役立つ一意の ID を示します。 サービスのログを追跡するために使用できます。|
 |id|String| アクティビティの一意の ID を示します。 これは、GUID です。|
-|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|ユーザーまたはアプリケーションに関する情報が、アクティビティを開始することを示します。|
-|loggedByService|String|サービスが動作を開始する情報を示します (例: セルフ サービスのパスワード管理、コア ディレクトリ、B2C、ユーザーの招待、Microsoft 個人情報管理、Id 管理の権限を持つ。|
-|result|string| 活動の結果を示します。使用可能な値: `success`、 `failure`、 `timeout`、 `unknownFutureValue`。||
-|resultReason|String|結果が [エラー] または [タイムアウト] の場合は、エラーの原因を示します。|
-|targetResources|[targetResource](targetresource.md)コレクション|活動のためのリソースが変更された情報を示します。 ターゲット リソースの型には、ユーザー、デバイス、ディレクトリ、アプリケーション、役割、グループ、ポリシーまたはその他を指定できます。
+|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|アクティビティを開始したユーザーまたはアプリについての情報を示します。|
+|loggedByService|String|アクティビティを開始するサービスについての情報を示します (例: セルフ サービス パスワード管理、コア ディレクトリ、B2C、招待されたユーザー、Microsoft Identity Manager、Privileged Identity Management)。|
+|result|string| アクティビティの結果を示します。使用可能な値は `success`、`failure`、`timeout`、`unknownFutureValue` です。||
+|resultReason|String|結果が「エラー」または「タイムアウト」の場合の、エラーの原因を示します。|
+|targetResources|[targetResource](targetresource.md) コレクション|アクティビティのためにどのリソースが変更されたかについての情報を示します。 ターゲット リソースの型には、ユーザー、デバイス、ディレクトリ、アプリ、役割、グループ、ポリシー、その他があります。
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -60,7 +60,7 @@ ms.locfileid: "27991784"
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "Guid",
+  "correlationId": "String (identifier)",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

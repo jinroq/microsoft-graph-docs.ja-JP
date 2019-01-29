@@ -3,12 +3,13 @@ title: Microsoft Graph での Office 365 使用状況レポートの使用
 description: Microsoft Graph によって、Office 365 使用状況レポートのリソースにアクセスし、社内で Office 365 サービスがどのように使用されているかについての情報を取得できます。 たとえば、サービスをよく利用してクォータに到達しそうなユーザーや、Office 365 ライセンスを必要としない可能性があるユーザーなどを識別できます。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 4e1a139b000eb1d4f1175ddc05f818aaa0072b01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: c786d2a6c26a667f44037e1bcb2834dee757ae94
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987133"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577257"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Microsoft Graph での Office 365 使用状況レポートの使用
 

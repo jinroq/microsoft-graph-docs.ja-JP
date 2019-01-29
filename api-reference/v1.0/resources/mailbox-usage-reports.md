@@ -2,14 +2,14 @@
 title: メールボックス使用状況レポート
 description: メールボックス使用状況レポートを使用して、主に電子メールの送受信に基づき、メールボックスを持つユーザーの情報と、そのアクティビティのレベルを取得します。 また、各メールボックスが消費するストレージの量と、ストレージのクォータに近づいているメールボックスの数も確認できます。
 localization_priority: Priority
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: b018220f9f90577cfb6972528ae7013cc7f81fed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6b02821da78338e8af1dec99fe73bedf81561116
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919842"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574650"
 ---
 # <a name="mailbox-usage-reports"></a>メールボックス使用状況レポート
 

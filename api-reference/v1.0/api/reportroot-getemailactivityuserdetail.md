@@ -3,12 +3,13 @@ title: 'reportRoot: getEmailActivityUserDetail'
 description: ユーザーが実行した電子メール アクティビティに関する詳細を取得します。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 558366fec2a870d47bdc88a315fa68dd9b36bdd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: c2c0626fe53795dc2496a45d706bd934603cf18d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981764"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575084"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 

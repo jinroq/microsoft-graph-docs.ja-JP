@@ -2,14 +2,14 @@
 title: 電子メール アクティビティ レポート
 description: 電子メール アクティビティ レポートを使用して、組織内の電子メール トラフィックの詳細ビューを取得します。 [メール アクティビティ] ウィジェットに進み、組織内のユーザーごとの電子メール アクティビティの傾向と詳細を把握することもできます。
 localization_priority: Priority
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: e28e968a536b4025094ba0376973352f7d9cc949
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 861e206e2f63a314c551f8242d9fc20cc002064d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981785"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571493"
 ---
 # <a name="email-activity-reports"></a>電子メール アクティビティ レポート
 

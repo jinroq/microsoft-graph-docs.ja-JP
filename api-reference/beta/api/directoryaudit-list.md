@@ -1,19 +1,19 @@
 ---
-title: リスト directoryAudits
-description: Azure Active Directory によって生成された監査ログのリストを提供します。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.
+title: directoryAudits を一覧表示する
+description: Azure Active Directory によって生成された監査ログの一覧を示します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2f9330cd8ca1bd2b17755ffd1e09fee7743355b2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921263"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576683"
 ---
-# <a name="list-directoryaudits"></a>リスト directoryAudits
+# <a name="list-directoryaudits"></a>directoryAudits を一覧表示する
 
-Azure Active Directory によって生成された監査ログのリストを提供します。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.
+Azure Active Directory によって生成された監査ログの一覧を示します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ Azure Active Directory によって生成された監査ログのリストを提
 |委任 (個人用 Microsoft アカウント) | サポートされていません   |
 |アプリケーション | AuditLog.Read.All | 
 
-さらに、アプリケーションでは、Azure AD に[適切に登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)をする必要があります。
+また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -32,25 +32,25 @@ Azure Active Directory によって生成された監査ログのリストを提
 GET /auditLogs/directoryAudits
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 これらのパラメーターを使用する方法については、 [OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を確認してください。
+このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
 
 |名前     |説明                            |例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|結果 (行) をフィルターします。 |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/query-parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|取得の結果からの結果の次のページを設定するは、複数ページに します。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性の一覧
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターにサポートされる属性の一覧
 |属性名 |サポートされる演算子|
 |:----------------|:------|
 |activityDisplayName| eq、startswith|
 |activityDateTime| eq、ge、le|
 |loggedByService|eq|
-|initiatedBy、構造体、id のユーザー|eq|
-|initiatedBy、構造体、displayName ユーザー| eq|
-|userPrincipalName/initiatedBy/ユーザー| eq、startswith|
-|initiatedBy、構造体、appId アプリケーション| eq|
-|initiatedBy/アプリケーション/appDisplayName| eq|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq、startswith|
+|initiatedBy/app/appId| eq|
+|initiatedBy/app/appDisplayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq、startswith|
 ## <a name="request-headers"></a>要求ヘッダー
@@ -61,7 +61,7 @@ GET /auditLogs/directoryAudits
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[directoryAudit](../resources/directoryaudit.md)オブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryAudit](../resources/directoryaudit.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -107,7 +107,7 @@ Content-length: 271
             "app": null
         },
         "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
+            "@odata.type": "microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
             "displayName": "Lynda.com",
             "modifiedProperties": [{
@@ -117,7 +117,7 @@ Content-length: 271
             }],
             "groupType": "unifiedGroups"
         }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
+            "@odata.type": "microsoft.graph.targetResourceUser",
             "id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
             "displayName": null,
             "modifiedProperties": [],

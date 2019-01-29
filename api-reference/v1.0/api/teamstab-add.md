@@ -1,21 +1,21 @@
 ---
-title: チャネルにタブを追加します。
-description: '(ピン) を追加、チーム内で指定したチャンネルをタブします。 '
+title: チャネルへのタブの追加
+description: 'チーム内で指定されたチャネルにタブを追加 (ピン留め) します。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8c2aee1f67eebd2fda7515ede27158f3154dd2d1
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: 38609a373ccac9a66b643f600a39de7aeb57cfbb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016717"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572508"
 ---
-# <a name="add-tab-to-channel"></a>チャネルにタブを追加します。
+# <a name="add-tab-to-channel"></a>チャネルへのタブの追加
 
 
 
-(ピン) を追加する[チーム](../resources/team.md)内で指定された[チャネル](../resources/channel.md)を[タブ](../resources/teamstab.md)します。 対応するアプリケーションでは、[チームにインストールされている](../api/teamsappinstallation-add.md)ある必要があります。
+[チーム内](../resources/team.md)で指定された[チャネル](../resources/channel.md)に[タブ](../resources/teamstab.md)を追加 (ピン留め) します。 対応するアプリは、既に[チーム内にインストールされている](../api/teamsappinstallation-add.md)はずです。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -26,7 +26,7 @@ ms.locfileid: "28016717"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 | アプリケーション                            | Group.ReadWrite.All                         |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="request-body"></a>要求本文
 
-[TeamsTab](../resources/teamstab.md)。
+[teamsTab](../resources/teamstab.md)。
 
 ## <a name="response"></a>応答
 
@@ -92,14 +92,13 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": 20,
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
 
 ## <a name="see-also"></a>関連項目
 
-[組み込みタブのタイプを設定します。](/graph/teams-configuring-builtin-tabs)
+[組み込みタブ タイプの構成](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
