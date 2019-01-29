@@ -1,23 +1,23 @@
 ---
 title: アプリケーション リソースの種類
-description: 'アプリケーションを表します。 Azure Active Directory (AD の Azure) への認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録してください。 Azure AD を示す URL は、場所、アプリケーション、および詳細を識別する URI の認証の後に応答を送信する URL を含む、アプリケーションに関するアプリケーションの登録が含まれます。 詳細については、基本のアプリケーションを登録する Azure AD で参照してください。 directoryObject から継承します。 '
+description: 'これはアプリケーションを表すものです。 Azure Active Directory (Azure AD) に認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録する必要があります。 アプリケーションの登録では、アプリケーションに関する情報 (場所の URL、認証後に返信を送信する URL、アプリケーションを識別する URI など) を Azure AD に通知する必要があります。 詳細については、Azure AD でのアプリケーションの登録の基本を参照してください。 directoryObject から継承します。 '
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946680"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529223"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アプリケーションを表します。 Azure Active Directory (AD の Azure) への認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録してください。 Azure AD を示す URL は、場所、アプリケーション、および詳細を識別する URI の認証の後に応答を送信する URL を含む、アプリケーションに関するアプリケーションの登録が含まれます。 詳細については、[基本のアプリケーションを登録する Azure AD で](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)参照してください。 [directoryObject](directoryobject.md) から継承します。 
+これはアプリケーションを表すものです。 Azure Active Directory (Azure AD) に認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録する必要があります。 アプリケーションの登録では、アプリケーションに関する情報 (場所の URL、認証後に返信を送信する URL、アプリケーションを識別する URI など) を Azure AD に通知する必要があります。 詳細については、[Azure AD でのアプリケーションの登録の基本](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)を参照してください。 [directoryObject](directoryobject.md) から継承します。 
 
-> **注:** アプリケーション リソースの種類への変更は、現在開発中です。 詳細については、[既知の問題を Microsoft Graph を使用して](/graph/known-issues#application-and-serviceprincipal-api-changes)参照してください。
+> **注:** アプリケーション リソースの種類に対する変更は、現在開発中です。 詳細については、「[Microsoft Graph に関する既知の問題](/graph/known-issues#application-and-serviceprincipal-api-changes)」を参照してください。
 
 このリソースは以下をサポートしています。
 
@@ -27,55 +27,55 @@ ms.locfileid: "27946680"
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[アプリケーションを取得します。](../api/application-get.md) | application |アプリケーション オブジェクトのプロパティと関係を参照してください。|
-|[アプリケーションを作成します。](../api/application-post-applications.md) | application | (レジスタ) を作成する新しいアプリケーションです。|
-|[アプリケーション一覧](../api/application-list.md) | application | 組織内のアプリケーションの一覧を取得します。 |
-|[アプリケーションを更新します。](../api/application-update.md) | application |アプリケーション オブジェクトを更新します。 |
-|[アプリケーションを削除します。](../api/application-delete.md) | なし |アプリケーション オブジェクトを削除します。 |
-|[リストが割り当てられているポリシー](../api/policy-list-assigned.md)| [ポリシー](policy.md)コレクション| このオブジェクトに割り当てられているすべてのポリシーを取得します。|
-|[所有者を作成します。](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| 所有者のコレクションへの投稿には、新しい所有者を作成します。|
+|[アプリケーションを取得する](../api/application-get.md) | application |アプリケーション オブジェクトのプロパティと関係を読み取ります。|
+|[アプリケーションを作成する](../api/application-post-applications.md) | application | 新しいアプリケーションを作成 (登録) します。|
+|[アプリケーションを一覧表示する](../api/application-list.md) | application | 組織内のアプリケーションの一覧を取得します。 |
+|[アプリケーションを更新する](../api/application-update.md) | application |アプリケーション オブジェクトを更新します。 |
+|[アプリケーションを削除する](../api/application-delete.md) | なし |アプリケーション オブジェクトを削除します。 |
+|[割り当てられているポリシーを一覧表示する](../api/policy-list-assigned.md)| [policy](policy.md) コレクション| このオブジェクトに割り当てられているすべてのポリシーを取得します。|
+|[所有者を作成する](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| 所有者のコレクションに投稿して、新しい所有者を作成します。|
 |[所有者を一覧表示する](../api/application-list-owners.md) |[directoryObject](directoryobject.md) コレクション| 所有者オブジェクトのコレクションを取得します。|
-|[delta](../api/application-delta.md)|アプリケーション コレクション| アプリケーションの増分の変更を取得します。 |
-|[呼び出しを作成します。](../api/application-post-calls.md)|[呼び出し](call.md)|呼び出しのコレクションへの投稿には、新しい呼び出しを作成します。|
-|[オンライン会議を作成します。](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|OnlineMeetings コレクションへの投稿には、新しいオンライン ミーティングを作成します。|
+|[デルタ](../api/application-delta.md)|application コレクション| アプリケーションに対する増分の変更を取得します。 |
+|[通話の作成](../api/application-post-calls.md)|[call](call.md)|通話のコレクションに投稿して新しい通話を作成します。|
+|[オンライン会議を作成する](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|onlineMeetings コレクションに投稿して、新しいオンライン会議を作成します。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |api|[api](api.md)| API アプリケーションの設定を指定します。 |
-|appId| 文字列型 (String) | Azure AD でアプリケーションに割り当てられているアプリケーションの一意の識別子です。 null 許容ではありません。 読み取り専用です。 |
-|appRoles|[エンティティ](approle.md)のコレクション|アプリケーションが宣言されているアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、またはサービス ・ プリンシパルを指定できます。 null 許容ではありません。|
-|createdDateTime|DateTimeOffset| 日付と時刻、アプリケーションが登録されています。 |
-|deletedDateTime|DateTimeOffset| 日付と時刻、アプリケーションが削除されました。 |
-|displayName|String|アプリケーションの表示名です。 |
+|appId| String | Azure AD によってアプリケーションに割り当てられる、アプリケーションの一意の識別子です。 null 許容型ではありません。 読み取り専用です。 |
+|appRoles|[appRole](approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容型ではありません。|
+|createdDateTime|DateTimeOffset| アプリケーションが登録された日付と時刻です。 |
+|deletedDateTime|DateTimeOffset| アプリケーションが削除された日付と時刻です。 |
+|displayName|String|アプリケーションの表示名。 |
 |id|String|アプリケーションの一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。 |
-|identifierUris|String コレクション| アプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)です。 *Any*演算子は、複数値を持つプロパティのフィルター式に必要です。 null 許容ではありません。 |
-|情報|[informationalUrl](informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 |
-|isFallbackPublicClient|ブール型| パブリック クライアント モバイル デバイスで実行されているインストール済みのアプリケーションとして、代替のアプリケーションの種類を指定します。 既定値は*false*フォールバックのアプリケーションの種類は、web アプリケーションなどの機密性の高いクライアントです。 Azure AD がクライアント アプリケーションの種類 (例: リダイレクト URI を指定することがなく構成されている[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)フロー) を判断できない特定のシナリオがあります。 このような場合に、Azure AD がこのプロパティの値に基づいてアプリケーションの種類を解釈します。|
-|keyCredentials|[keyCredential](keycredential.md)コレクション|しないアプリケーションに関連付けられているキーの資格情報のコレクション null 許容型です。 |
-|logo|Stream|アプリケーションのメインのロゴです。 null 許容ではありません。 |
-|optionalClaims|optionalClaims| 将来の使用のために予約されています。 |
-|orgRestrictions|String コレクション| 将来の使用のために予約されています。 |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |アプリケーションの視聴制限の設定を指定します。|
-|passwordCredentials|[passwordCredential](passwordcredential.md)コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。|
-|publicClient|[publicClient](publicclient.md)| デスクトップやモバイル デバイスなどのインストールされているクライアントの設定を指定します。 |
-|publisherDomain| String | アプリケーションの確認された発行元のドメイン。 読み取り専用です。|
-|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md)コレクション|このアプリケーションへのアクセスと、OAuth アクセス許可のスコープおよび各リソースの下に必要なアプリケーション ロールのセットを必要とするリソースを指定します。 必要なリソースへのアクセスのこの前の構成では、同意の経験をドライブします。 null 許容ではありません。|
-|signInAudience | String | 現在のアプリケーションのサポートはどのような Microsoft アカウントを指定します。 サポートされている値は次のとおりです。<ul><li>**AzureADMyOrg**: microsoft のユーザーまたは組織の Azure AD テナント (つまり単一のテナント) でアカウントの学校</li><li>**AzureADMultipleOrgs**: microsoft ユーザーは、作業や、学校でどのような組織の Azure AD テナント (マルチ テナント型など) のアカウント</li> <li>**AzureADandPersonalMicrosoftAccount**: Microsoft の個人アカウントでは、またはどのような組織の Azure AD テナントで、職場、学校のアカウントを持つユーザー</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-|タグの前に追加されるマークアップ|String コレクション| 分類し、アプリケーションの識別に使用できるカスタム文字列。 |
+|identifierUris|String コレクション| アプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)」を参照してください。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容型ではありません。 |
+|info|[informationalUrl](informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 |
+|isFallbackPublicClient|Boolean| モバイル デバイスで実行されているインストール済みアプリなど、フォールバック アプリの種類をパブリック クライアントとして指定します。 既定値は *false* です。つまりフォールバック アプリの種類は Web アプリなどの機密性の高いクライアントです。 Azure AD がクライアント アプリの種類を特定できないシナリオ (例: リダイレクト URI を指定せずに構成されている [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) フロー) もあります。 そのような場合、Azure AD では、このプロパティの値に基づいてアプリの種類を解釈します。|
+|keyCredentials|[keyCredential](keycredential.md) コレクション|アプリケーションに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。 |
+|logo|Stream|アプリケーションのメイン ロゴです。 null 許容型ではありません。 |
+|optionalClaims|optionalClaims| 将来使用するために予約されています。 |
+|orgRestrictions|String コレクション| 将来使用するために予約されています。 |
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |アプリケーションにおける、保護者による制限設定を指定します。|
+|passwordCredentials|[passwordCredential](passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容型ではありません。|
+|publicClient|[publicClient](publicclient.md)| デスクトップやモバイル デバイスなど、インストールされているクライアントの設定を指定します。 |
+|publisherDomain| String | アプリケーションの確認済み発行元のドメインです。 読み取り専用です。|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) コレクション|このアプリケーションがアクセスする必要があるリソース、およびそのリソースで必要な OAuth アクセス許可の範囲とアプリケーション ロールのセットを指定します。 必要なリソースへのアクセスに対するこの事前構成によって、同意エクスペリエンスが促進されます。 null 許容型ではありません。|
+|signInAudience | String | 現在のアプリケーションでサポートされている Microsoft アカウントを指定します。 サポートされている値は次のとおりです。<ul><li>**AzureADMyOrg**: 組織の Azure AD テナント (つまり、シングル テナント) で Microsoft の職場または学校アカウントを持つユーザー</li><li>**AzureADMultipleOrgs**: 組織の Azure AD テナント (つまり、マルチ テナント) で Microsoft の職場または学校アカウントを持つユーザー</li> <li>**AzureADandPersonalMicrosoftAccount**: 個人の Microsoft アカウントを持つユーザー、または組織の Azure AD テナントで職場または学校のアカウントを持つユーザー</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|tags|String コレクション| アプリケーションを分類および識別するために使用できるカスタム文字列です。 |
 |web|[web](web.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|呼び出し           |コレクションの[呼び出し](call.md)                  |読み取り専用。Null 許容型。|
-|connectorGroup|[connectorGroup](connectorgroup.md)| ConnectorGroup アプリケーションは、Azure AD アプリケーション プロキシを使用しています。 Null 許容型。|
+|calls           |[call](call.md) コレクション                  |読み取り専用。Null 許容型です。|
+|connectorGroup|[connectorGroup](connectorgroup.md)| アプリケーションが Azure AD アプリケーション プロキシで使用している connectorGroup です。 Null 許容型です。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 読み取り専用です。|
-|onlineMeetings  |[onlineMeeting](onlinemeeting.md)コレクション|読み取り専用。Null 許容型。|
-|owners|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクト、アプリケーションの所有者であります。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 2013-11-08 のバージョンが必要ですまたはそれ以降です。 読み取り専用です。 Null 許容型。|
-|役割|[ポリシー](policy.md)コレクション|このアプリケーションに割り当てられているポリシーです。|
+|onlineMeetings  |[onlineMeeting](onlinemeeting.md) コレクション|読み取り専用。Null 許容型です。|
+|owners|[directoryObject](directoryobject.md) コレクション|アプリケーションの所有者であるディレクトリ オブジェクトです。 所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。 バージョン 2013-11-08 以降が必要です。 読み取り専用です。 Null 許容型です。|
+|policy|[policy](policy.md) コレクション|このアプリケーションに割り当てられているポリシーです。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -120,10 +120,15 @@ ms.locfileid: "27946680"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
