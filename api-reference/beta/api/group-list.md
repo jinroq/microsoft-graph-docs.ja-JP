@@ -1,37 +1,28 @@
 ---
 title: グループの一覧表示
-description: Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
+description: Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 504ee61bcf246362332cec2382048aa1c5e91d75
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4967fd5b84f1329836b6a3e3e5dc7ba7b08ee19a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916510"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520621"
 ---
-# <a name="list-groups"></a>グループを一覧表示する
+# <a name="list-groups"></a>グループの一覧表示
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。各グループの[既定のプロパティ](../api/group-get.md#default-properties)が返されます。
+Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
 
-Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。
-```
-GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
+この操作は既定で各グループで頻繁に使用されるプロパティのサブセットのみを返します。 これらの_既定_のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 
 
-OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。
-```
-GET https://graph.microsoft.com/beta/groups?$orderby=displayName
-```
+既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
 
-ライセンス エラーのあるメンバーを含むグループを返すには、 **$filter**クエリ パラメーターを使用します。 
+例外は **hasMembersWithLicenseErrors** プロパティです。 このプロパティの使用方法の[例](#request-2)を参照してください。
 
-```http 
-GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
-```
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -48,7 +39,18 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+
+Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+```
+
+次の例のように、OData クエリ オプション `$orderby` を使用して、組織内のグループを **displayName** 値で並べ替えることができます。<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/beta/groups?$orderby=displayName
+```
+
+OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -59,10 +61,10 @@ GET /groups
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。 応答には、各グループの既定のプロパティのみが含まれています。
 
 ## <a name="example"></a>例
-#### <a name="request"></a>要求
+#### <a name="request-1"></a>要求 1
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
@@ -72,53 +74,143 @@ GET /groups
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### <a name="response"></a>応答
+#### <a name="response-1"></a>応答 1
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しでは [既定のプロパティ](../api/group-get.md#default-properties)が返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
- {
-  "value": [
-    {
-      "id": "id-value",
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "groupTypes": [
-        "groupTypes-value"
-      ],
-      "mail": "mail-value",
-      "mailEnabled": true,
-      "mailNickname": "mailNickname-value",
-      "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-      "onPremisesSyncEnabled": true,
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "securityEnabled": true,
-      "visibility": "visibility-value"
-    }
-  ]
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+    "value": [
+         {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "expirationDateTime": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "expirationDateTime": null,
+            "groupTypes": [],
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 
 ```
 
+#### <a name="request-2"></a>要求 2
+この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。 また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### <a name="response-2"></a>応答 2
+要求したプロパティのみを含む応答の例を次に示します。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List groups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
