@@ -4,59 +4,59 @@ description: 範囲オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574027"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643011"
 ---
-# <a name="update-range"></a><span data-ttu-id="954af-103">範囲を更新する</span><span class="sxs-lookup"><span data-stu-id="954af-103">Update range</span></span>
+# <a name="update-range"></a><span data-ttu-id="47954-103">範囲を更新する</span><span class="sxs-lookup"><span data-stu-id="47954-103">Update range</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="954af-104">範囲オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="954af-104">Update the properties of range object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="954af-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="954af-105">Permissions</span></span>
-<span data-ttu-id="954af-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="954af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="47954-104">範囲オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="47954-104">Update the properties of range object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="47954-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="47954-105">Permissions</span></span>
+<span data-ttu-id="47954-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="47954-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="954af-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="954af-108">Permission type</span></span>      | <span data-ttu-id="954af-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="954af-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="47954-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="47954-108">Permission type</span></span>      | <span data-ttu-id="47954-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="47954-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="954af-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="954af-110">Delegated (work or school account)</span></span> | <span data-ttu-id="954af-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="954af-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="954af-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="954af-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="954af-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="954af-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="954af-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="954af-114">Application</span></span> | <span data-ttu-id="954af-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="954af-115">Not supported.</span></span> |
+|<span data-ttu-id="47954-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="47954-110">Delegated (work or school account)</span></span> | <span data-ttu-id="47954-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="47954-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="47954-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="47954-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47954-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="47954-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="47954-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="47954-114">Application</span></span> | <span data-ttu-id="47954-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="47954-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="954af-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="954af-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="47954-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="47954-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="954af-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="954af-117">Optional request headers</span></span>
-| <span data-ttu-id="954af-118">名前</span><span class="sxs-lookup"><span data-stu-id="954af-118">Name</span></span>       | <span data-ttu-id="954af-119">説明</span><span class="sxs-lookup"><span data-stu-id="954af-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="47954-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="47954-117">Optional request headers</span></span>
+| <span data-ttu-id="47954-118">名前</span><span class="sxs-lookup"><span data-stu-id="47954-118">Name</span></span>       | <span data-ttu-id="47954-119">説明</span><span class="sxs-lookup"><span data-stu-id="47954-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="954af-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="954af-120">Authorization</span></span>  | <span data-ttu-id="954af-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="954af-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="954af-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="954af-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="954af-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="954af-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="47954-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="47954-120">Authorization</span></span>  | <span data-ttu-id="47954-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="47954-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="47954-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="47954-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="47954-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="47954-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="954af-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="954af-126">Request body</span></span>
-<span data-ttu-id="954af-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="954af-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="47954-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="47954-126">Request body</span></span>
+<span data-ttu-id="47954-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="47954-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="954af-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="954af-130">Property</span></span>     | <span data-ttu-id="954af-131">型</span><span class="sxs-lookup"><span data-stu-id="954af-131">Type</span></span>   |<span data-ttu-id="954af-132">説明</span><span class="sxs-lookup"><span data-stu-id="954af-132">Description</span></span>|
+| <span data-ttu-id="47954-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="47954-130">Property</span></span>     | <span data-ttu-id="47954-131">型</span><span class="sxs-lookup"><span data-stu-id="47954-131">Type</span></span>   |<span data-ttu-id="47954-132">説明</span><span class="sxs-lookup"><span data-stu-id="47954-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="954af-133">columnHidden</span><span class="sxs-lookup"><span data-stu-id="954af-133">columnHidden</span></span>|<span data-ttu-id="954af-134">boolean</span><span class="sxs-lookup"><span data-stu-id="954af-134">boolean</span></span>|<span data-ttu-id="954af-135">現在の範囲のすべての列が非表示になっているかどうかを表します。</span><span class="sxs-lookup"><span data-stu-id="954af-135">Represents if all columns of the current range are hidden.</span></span>|
-|<span data-ttu-id="954af-136">formulas</span><span class="sxs-lookup"><span data-stu-id="954af-136">formulas</span></span>|<span data-ttu-id="954af-137">Json</span><span class="sxs-lookup"><span data-stu-id="954af-137">Json</span></span>|<span data-ttu-id="954af-138">A1 スタイル表記の数式を表します。</span><span class="sxs-lookup"><span data-stu-id="954af-138">Represents the formula in A1-style notation.</span></span>|
-|<span data-ttu-id="954af-139">formulasLocal</span><span class="sxs-lookup"><span data-stu-id="954af-139">formulasLocal</span></span>|<span data-ttu-id="954af-140">Json</span><span class="sxs-lookup"><span data-stu-id="954af-140">Json</span></span>|<span data-ttu-id="954af-p105">ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。</span><span class="sxs-lookup"><span data-stu-id="954af-p105">Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.</span></span>|
-|<span data-ttu-id="954af-143">formulasR1C1</span><span class="sxs-lookup"><span data-stu-id="954af-143">formulasR1C1</span></span>|<span data-ttu-id="954af-144">Json</span><span class="sxs-lookup"><span data-stu-id="954af-144">Json</span></span>|<span data-ttu-id="954af-145">R1C1 スタイル表記の数式を表します。</span><span class="sxs-lookup"><span data-stu-id="954af-145">Represents the formula in R1C1-style notation.</span></span>|
-|<span data-ttu-id="954af-146">numberFormat</span><span class="sxs-lookup"><span data-stu-id="954af-146">numberFormat</span></span>|<span data-ttu-id="954af-147">Json</span><span class="sxs-lookup"><span data-stu-id="954af-147">Json</span></span>|<span data-ttu-id="954af-148">指定したセルの Excel の数値書式コードを表します。</span><span class="sxs-lookup"><span data-stu-id="954af-148">Represents Excel's number format code for the given cell.</span></span>|
-|<span data-ttu-id="954af-149">rowHidden</span><span class="sxs-lookup"><span data-stu-id="954af-149">rowHidden</span></span>|<span data-ttu-id="954af-150">boolean</span><span class="sxs-lookup"><span data-stu-id="954af-150">boolean</span></span>|<span data-ttu-id="954af-151">現在の範囲のすべての行が非表示になっているかどうかを表します。</span><span class="sxs-lookup"><span data-stu-id="954af-151">Represents if all rows of the current range are hidden.</span></span>|
-|<span data-ttu-id="954af-152">values</span><span class="sxs-lookup"><span data-stu-id="954af-152">values</span></span>|<span data-ttu-id="954af-153">Json</span><span class="sxs-lookup"><span data-stu-id="954af-153">Json</span></span>|<span data-ttu-id="954af-p106">指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="954af-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
+|<span data-ttu-id="47954-133">columnHidden</span><span class="sxs-lookup"><span data-stu-id="47954-133">columnHidden</span></span>|<span data-ttu-id="47954-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="47954-134">boolean</span></span>|<span data-ttu-id="47954-135">現在の範囲のすべての列が非表示になっているかどうかを表します。</span><span class="sxs-lookup"><span data-stu-id="47954-135">Represents if all columns of the current range are hidden.</span></span>|
+|<span data-ttu-id="47954-136">formulas</span><span class="sxs-lookup"><span data-stu-id="47954-136">formulas</span></span>|<span data-ttu-id="47954-137">json</span><span class="sxs-lookup"><span data-stu-id="47954-137">json</span></span>|<span data-ttu-id="47954-138">A1 スタイル表記の数式を表します。</span><span class="sxs-lookup"><span data-stu-id="47954-138">Represents the formula in A1-style notation.</span></span>|
+|<span data-ttu-id="47954-139">formulasLocal</span><span class="sxs-lookup"><span data-stu-id="47954-139">formulasLocal</span></span>|<span data-ttu-id="47954-140">json</span><span class="sxs-lookup"><span data-stu-id="47954-140">json</span></span>|<span data-ttu-id="47954-p105">ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。</span><span class="sxs-lookup"><span data-stu-id="47954-p105">Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.</span></span>|
+|<span data-ttu-id="47954-143">formulasR1C1</span><span class="sxs-lookup"><span data-stu-id="47954-143">formulasR1C1</span></span>|<span data-ttu-id="47954-144">json</span><span class="sxs-lookup"><span data-stu-id="47954-144">json</span></span>|<span data-ttu-id="47954-145">R1C1 スタイル表記の数式を表します。</span><span class="sxs-lookup"><span data-stu-id="47954-145">Represents the formula in R1C1-style notation.</span></span>|
+|<span data-ttu-id="47954-146">numberFormat</span><span class="sxs-lookup"><span data-stu-id="47954-146">numberFormat</span></span>|<span data-ttu-id="47954-147">json</span><span class="sxs-lookup"><span data-stu-id="47954-147">json</span></span>|<span data-ttu-id="47954-148">指定したセルの Excel の数値書式コードを表します。</span><span class="sxs-lookup"><span data-stu-id="47954-148">Represents Excel's number format code for the given cell.</span></span>|
+|<span data-ttu-id="47954-149">rowHidden</span><span class="sxs-lookup"><span data-stu-id="47954-149">rowHidden</span></span>|<span data-ttu-id="47954-150">ブール値</span><span class="sxs-lookup"><span data-stu-id="47954-150">boolean</span></span>|<span data-ttu-id="47954-151">現在の範囲のすべての行が非表示になっているかどうかを表します。</span><span class="sxs-lookup"><span data-stu-id="47954-151">Represents if all rows of the current range are hidden.</span></span>|
+|<span data-ttu-id="47954-152">values</span><span class="sxs-lookup"><span data-stu-id="47954-152">values</span></span>|<span data-ttu-id="47954-153">json</span><span class="sxs-lookup"><span data-stu-id="47954-153">json</span></span>|<span data-ttu-id="47954-p106">指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="47954-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="954af-157">応答</span><span class="sxs-lookup"><span data-stu-id="954af-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="47954-157">応答</span><span class="sxs-lookup"><span data-stu-id="47954-157">Response</span></span>
 
-<span data-ttu-id="954af-158">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="954af-158">If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="954af-159">例</span><span class="sxs-lookup"><span data-stu-id="954af-159">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="954af-160">要求</span><span class="sxs-lookup"><span data-stu-id="954af-160">Request</span></span>
-<span data-ttu-id="954af-p107">以下は、要求の例です。値、数値書式、および数式の範囲が更新されます。`null` 入力は、その特定の入力用のセルを無視するように API に指示します。値、数値書式、および数式は、個別に更新したり、同じ API 呼び出しで一緒に結合したりできます。</span><span class="sxs-lookup"><span data-stu-id="954af-p107">Here is an example of the request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call.</span></span> 
+<span data-ttu-id="47954-158">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="47954-158">If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="47954-159">例</span><span class="sxs-lookup"><span data-stu-id="47954-159">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="47954-160">要求</span><span class="sxs-lookup"><span data-stu-id="47954-160">Request</span></span>
+<span data-ttu-id="47954-p107">以下は、要求の例です。値、数値書式、および数式の範囲が更新されます。`null` 入力は、その特定の入力用のセルを無視するように API に指示します。値、数値書式、および数式は、個別に更新したり、同じ API 呼び出しで一緒に結合したりできます。</span><span class="sxs-lookup"><span data-stu-id="47954-p107">Here is an example of the request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -73,8 +73,8 @@ Content-length: 169
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="954af-165">応答</span><span class="sxs-lookup"><span data-stu-id="954af-165">Response</span></span>
-<span data-ttu-id="954af-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="954af-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="47954-165">応答</span><span class="sxs-lookup"><span data-stu-id="47954-165">Response</span></span>
+<span data-ttu-id="47954-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="47954-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

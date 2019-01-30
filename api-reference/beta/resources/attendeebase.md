@@ -2,28 +2,27 @@
 title: attendeeBase リソースの種類
 description: 出席者の種類です。
 localization_priority: Normal
-ms.openlocfilehash: 6ec80f5505cb3dd742a2690ebb3cd5374635770d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bce1550c107f2114d02744091b5863360ab0bcea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572739"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643441"
 ---
-# <a name="attendeebase-resource-type"></a><span data-ttu-id="77715-103">attendeeBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="77715-103">attendeeBase resource type</span></span>
+# <a name="attendeebase-resource-type"></a><span data-ttu-id="9d221-103">attendeeBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9d221-103">attendeeBase resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="77715-104">出席者の種類です。</span><span class="sxs-lookup"><span data-stu-id="77715-104">The type of attendee.</span></span>
+<span data-ttu-id="9d221-104">出席者の種類です。</span><span class="sxs-lookup"><span data-stu-id="9d221-104">The type of attendee.</span></span>
 
-<span data-ttu-id="77715-105">[recipient](recipient.md) から派生します。</span><span class="sxs-lookup"><span data-stu-id="77715-105">Derived from [recipient](recipient.md).</span></span>
+<span data-ttu-id="9d221-105">[recipient](recipient.md) から派生します。</span><span class="sxs-lookup"><span data-stu-id="9d221-105">Derived from [recipient](recipient.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="77715-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="77715-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d221-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9d221-106">JSON representation</span></span>
 
-<span data-ttu-id="77715-107">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="77715-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="9d221-107">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="9d221-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -37,11 +36,11 @@ ms.locfileid: "29572739"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="77715-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="77715-108">Properties</span></span>
-| <span data-ttu-id="77715-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="77715-109">Property</span></span>     | <span data-ttu-id="77715-110">型</span><span class="sxs-lookup"><span data-stu-id="77715-110">Type</span></span>   |<span data-ttu-id="77715-111">説明</span><span class="sxs-lookup"><span data-stu-id="77715-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9d221-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9d221-108">Properties</span></span>
+| <span data-ttu-id="9d221-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9d221-109">Property</span></span>     | <span data-ttu-id="9d221-110">型</span><span class="sxs-lookup"><span data-stu-id="9d221-110">Type</span></span>   |<span data-ttu-id="9d221-111">説明</span><span class="sxs-lookup"><span data-stu-id="9d221-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="77715-112">type</span><span class="sxs-lookup"><span data-stu-id="77715-112">type</span></span>|<span data-ttu-id="77715-113">attendeeType</span><span class="sxs-lookup"><span data-stu-id="77715-113">attendeeType</span></span>| <span data-ttu-id="77715-114">出席者の種類です。</span><span class="sxs-lookup"><span data-stu-id="77715-114">The type of attendee.</span></span> <span data-ttu-id="77715-115">可能な値: `required`、 `optional`、 `resource`。</span><span class="sxs-lookup"><span data-stu-id="77715-115">The possible values are: `required`, `optional`, `resource`.</span></span> <span data-ttu-id="77715-116">現在、出席者が人間の場合は、 [findMeetingTimes](../api/user-findmeetingtimes.md)は一切の人では、`Required`型です。</span><span class="sxs-lookup"><span data-stu-id="77715-116">Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.</span></span>|
-|<span data-ttu-id="77715-117">emailAddress</span><span class="sxs-lookup"><span data-stu-id="77715-117">emailAddress</span></span>|[<span data-ttu-id="77715-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="77715-118">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="77715-119">参加者の名前と SMTP アドレスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="77715-119">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="9d221-112">type</span><span class="sxs-lookup"><span data-stu-id="9d221-112">type</span></span>|<span data-ttu-id="9d221-113">String</span><span class="sxs-lookup"><span data-stu-id="9d221-113">String</span></span>| <span data-ttu-id="9d221-p101">出席者の種類です。使用可能な値: `required`、`optional`、`resource`。現時点では、出席者が 1 人である場合、[findMeetingTimes](../api/user-findmeetingtimes.md) では常にその人は `Required` 型と見なされます。</span><span class="sxs-lookup"><span data-stu-id="9d221-p101">The type of attendee. Possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.</span></span>|
+|<span data-ttu-id="9d221-117">emailAddress</span><span class="sxs-lookup"><span data-stu-id="9d221-117">emailAddress</span></span>|[<span data-ttu-id="9d221-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="9d221-118">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="9d221-119">参加者の名前と SMTP アドレスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9d221-119">Includes the name and SMTP address of the attendee.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

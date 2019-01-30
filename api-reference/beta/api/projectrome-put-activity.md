@@ -3,31 +3,31 @@ title: アクティビティを作成または置換する
 description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: f9dfa75f8503e9fcd9bec6f7b36840e310bf629d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 99c1abc800464a6b3c4113ba825a8455f6cdea40
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520362"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642283"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="f35fb-104">アクティビティを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="f35fb-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="8781c-104">アクティビティを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="8781c-104">Create or replace an activity</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f35fb-105">新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="f35fb-106">1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、[深い挿入](projectrome-put-activity.md#example-2---deep-insert)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f35fb-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
+<span data-ttu-id="8781c-105">新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。</span><span class="sxs-lookup"><span data-stu-id="8781c-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="8781c-106">1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、[深い挿入](projectrome-put-activity.md#example-2---deep-insert)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="8781c-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f35fb-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f35fb-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8781c-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8781c-107">Permissions</span></span>
 
-<span data-ttu-id="f35fb-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f35fb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8781c-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8781c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="f35fb-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f35fb-110">Permission type</span></span>      | <span data-ttu-id="f35fb-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f35fb-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8781c-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8781c-110">Permission type</span></span>      | <span data-ttu-id="8781c-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8781c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f35fb-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f35fb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f35fb-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="f35fb-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="f35fb-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f35fb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f35fb-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="f35fb-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="f35fb-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f35fb-116">Application</span></span> | <span data-ttu-id="f35fb-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f35fb-117">Not supported.</span></span> |
+|<span data-ttu-id="8781c-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8781c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8781c-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="8781c-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="8781c-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8781c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8781c-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="8781c-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="8781c-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8781c-116">Application</span></span> | <span data-ttu-id="8781c-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8781c-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f35fb-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f35fb-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8781c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8781c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +35,27 @@ ms.locfileid: "29520362"
 PUT /me/activities/{appActivityId}
 ```
 
-><span data-ttu-id="f35fb-119">**注:** URL に appActivityId を (RFC 2396 の予約文字は、16 進表現に変換する必要がありますを除くすべての文字) を URL セーフである必要がありますが、元の appActivityId は、URL セーフである必要はありません。</span><span class="sxs-lookup"><span data-stu-id="f35fb-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+><span data-ttu-id="8781c-119">**注:** URL に appActivityId を (RFC 2396 の予約文字は、16 進表現に変換する必要がありますを除くすべての文字) を URL セーフである必要がありますが、元の appActivityId は、URL セーフである必要はありません。</span><span class="sxs-lookup"><span data-stu-id="8781c-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f35fb-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f35fb-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8781c-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8781c-120">Request headers</span></span>
 
-|<span data-ttu-id="f35fb-121">名前</span><span class="sxs-lookup"><span data-stu-id="f35fb-121">Name</span></span> | <span data-ttu-id="f35fb-122">型</span><span class="sxs-lookup"><span data-stu-id="f35fb-122">Type</span></span> | <span data-ttu-id="f35fb-123">説明</span><span class="sxs-lookup"><span data-stu-id="f35fb-123">Description</span></span>|
+|<span data-ttu-id="8781c-121">名前</span><span class="sxs-lookup"><span data-stu-id="8781c-121">Name</span></span> | <span data-ttu-id="8781c-122">型</span><span class="sxs-lookup"><span data-stu-id="8781c-122">Type</span></span> | <span data-ttu-id="8781c-123">説明</span><span class="sxs-lookup"><span data-stu-id="8781c-123">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="f35fb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f35fb-124">Authorization</span></span> | <span data-ttu-id="f35fb-125">string</span><span class="sxs-lookup"><span data-stu-id="f35fb-125">string</span></span> | <span data-ttu-id="f35fb-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f35fb-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="8781c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8781c-124">Authorization</span></span> | <span data-ttu-id="8781c-125">string</span><span class="sxs-lookup"><span data-stu-id="8781c-125">string</span></span> | <span data-ttu-id="8781c-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8781c-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f35fb-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="f35fb-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8781c-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="8781c-128">Request body</span></span>
 
-<span data-ttu-id="f35fb-129">要求の本文には、[アクティビティ](../resources/projectrome-activity.md)オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="8781c-129">要求の本文には、[アクティビティ](../resources/projectrome-activity.md)オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="8781c-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f35fb-130">応答</span><span class="sxs-lookup"><span data-stu-id="f35fb-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8781c-130">応答</span><span class="sxs-lookup"><span data-stu-id="8781c-130">Response</span></span>
 
-<span data-ttu-id="f35fb-131">かどうかは成功すると、このメソッドが返されます、 `201 Created` 、活動が作成された場合の応答コードまたは`200 OK`アクティビティが表示された場合。</span><span class="sxs-lookup"><span data-stu-id="f35fb-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="8781c-131">かどうかは成功すると、このメソッドが返されます、 `201 Created` 、活動が作成された場合の応答コードまたは`200 OK`アクティビティが表示された場合。</span><span class="sxs-lookup"><span data-stu-id="8781c-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="f35fb-132">例 1</span><span class="sxs-lookup"><span data-stu-id="f35fb-132">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="8781c-132">例 1</span><span class="sxs-lookup"><span data-stu-id="8781c-132">Example 1</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f35fb-133">要求</span><span class="sxs-lookup"><span data-stu-id="f35fb-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8781c-133">要求</span><span class="sxs-lookup"><span data-stu-id="8781c-133">Request</span></span>
 
-<span data-ttu-id="f35fb-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-134">The following is an example of the request.</span></span>
+<span data-ttu-id="8781c-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8781c-134">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -103,9 +103,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="f35fb-135">応答</span><span class="sxs-lookup"><span data-stu-id="f35fb-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8781c-135">応答</span><span class="sxs-lookup"><span data-stu-id="8781c-135">Response</span></span>
 
-<span data-ttu-id="f35fb-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-136">The following is an example of the response.</span></span>
+<span data-ttu-id="8781c-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8781c-136">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -133,7 +133,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -160,11 +160,11 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 }
 ```
 
-## <a name="example-2---deep-insert"></a><span data-ttu-id="f35fb-137">例 2 - ディープ挿入</span><span class="sxs-lookup"><span data-stu-id="f35fb-137">Example 2 - Deep insert</span></span>
+## <a name="example-2---deep-insert"></a><span data-ttu-id="8781c-137">例 2 - ディープ挿入</span><span class="sxs-lookup"><span data-stu-id="8781c-137">Example 2 - Deep insert</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f35fb-138">要求</span><span class="sxs-lookup"><span data-stu-id="f35fb-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8781c-138">要求</span><span class="sxs-lookup"><span data-stu-id="8781c-138">Request</span></span>
 
-<span data-ttu-id="f35fb-139">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-139">The following is an example of the request.</span></span>
+<span data-ttu-id="8781c-139">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8781c-139">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -194,7 +194,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false",
+            "addImageQuery": "false"
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -213,15 +213,15 @@ Content-length: 364
         {
             "userTimezone": "Africa/Casablanca",
             "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
         }
     ]
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="f35fb-140">応答</span><span class="sxs-lookup"><span data-stu-id="f35fb-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8781c-140">応答</span><span class="sxs-lookup"><span data-stu-id="8781c-140">Response</span></span>
 
-<span data-ttu-id="f35fb-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f35fb-141">The following is an example of the response.</span></span>
+<span data-ttu-id="8781c-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8781c-141">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -249,7 +249,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {

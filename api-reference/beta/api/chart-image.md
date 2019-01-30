@@ -4,65 +4,64 @@ description: 指定したサイズに合わせてグラフを拡大、縮小す�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3405ebd80193028ad2e2150c800082993828183d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571780"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642843"
 ---
-# <a name="chart-image"></a><span data-ttu-id="55e90-103">グラフ:画像</span><span class="sxs-lookup"><span data-stu-id="55e90-103">Chart: Image</span></span>
+# <a name="chart-image"></a><span data-ttu-id="4cafe-103">グラフ:画像</span><span class="sxs-lookup"><span data-stu-id="4cafe-103">Chart: Image</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="55e90-104">指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。</span><span class="sxs-lookup"><span data-stu-id="55e90-104">Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.</span></span>
-## <a name="permissions"></a><span data-ttu-id="55e90-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="55e90-105">Permissions</span></span>
-<span data-ttu-id="55e90-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="55e90-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4cafe-104">指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。</span><span class="sxs-lookup"><span data-stu-id="4cafe-104">Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4cafe-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4cafe-105">Permissions</span></span>
+<span data-ttu-id="4cafe-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="55e90-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="55e90-108">Permission type</span></span>      | <span data-ttu-id="55e90-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="55e90-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4cafe-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4cafe-108">Permission type</span></span>      | <span data-ttu-id="4cafe-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4cafe-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="55e90-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="55e90-110">Delegated (work or school account)</span></span> | <span data-ttu-id="55e90-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55e90-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="55e90-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="55e90-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55e90-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55e90-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="55e90-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="55e90-114">Application</span></span> | <span data-ttu-id="55e90-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="55e90-115">Not supported.</span></span> |
+|<span data-ttu-id="4cafe-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4cafe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4cafe-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4cafe-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="4cafe-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4cafe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4cafe-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4cafe-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="4cafe-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4cafe-114">Application</span></span> | <span data-ttu-id="4cafe-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4cafe-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="55e90-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="55e90-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4cafe-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4cafe-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="55e90-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="55e90-117">Request headers</span></span>
-| <span data-ttu-id="55e90-118">名前</span><span class="sxs-lookup"><span data-stu-id="55e90-118">Name</span></span>       | <span data-ttu-id="55e90-119">説明</span><span class="sxs-lookup"><span data-stu-id="55e90-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4cafe-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4cafe-117">Request headers</span></span>
+| <span data-ttu-id="4cafe-118">名前</span><span class="sxs-lookup"><span data-stu-id="4cafe-118">Name</span></span>       | <span data-ttu-id="4cafe-119">説明</span><span class="sxs-lookup"><span data-stu-id="4cafe-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="55e90-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="55e90-120">Authorization</span></span>  | <span data-ttu-id="55e90-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="55e90-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="55e90-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="55e90-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="55e90-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="55e90-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="4cafe-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4cafe-120">Authorization</span></span>  | <span data-ttu-id="4cafe-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4cafe-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4cafe-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="4cafe-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="path-parameters"></a><span data-ttu-id="55e90-126">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="55e90-126">Path parameters</span></span>
-<span data-ttu-id="55e90-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="55e90-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4cafe-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4cafe-126">Request body</span></span>
+<span data-ttu-id="4cafe-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="4cafe-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="55e90-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="55e90-128">Parameter</span></span>    | <span data-ttu-id="55e90-129">型</span><span class="sxs-lookup"><span data-stu-id="55e90-129">Type</span></span>   |<span data-ttu-id="55e90-130">説明</span><span class="sxs-lookup"><span data-stu-id="55e90-130">Description</span></span>|
+| <span data-ttu-id="4cafe-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4cafe-128">Parameter</span></span>    | <span data-ttu-id="4cafe-129">型</span><span class="sxs-lookup"><span data-stu-id="4cafe-129">Type</span></span>   |<span data-ttu-id="4cafe-130">説明</span><span class="sxs-lookup"><span data-stu-id="4cafe-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="55e90-131">height</span><span class="sxs-lookup"><span data-stu-id="55e90-131">height</span></span>|<span data-ttu-id="55e90-132">Int32</span><span class="sxs-lookup"><span data-stu-id="55e90-132">Int32</span></span>|<span data-ttu-id="55e90-133">結果のイメージの高さ。</span><span class="sxs-lookup"><span data-stu-id="55e90-133">The desired height of the resulting image.</span></span> <span data-ttu-id="55e90-134">省略可能。</span><span class="sxs-lookup"><span data-stu-id="55e90-134">Optional.</span></span>|
-|<span data-ttu-id="55e90-135">width</span><span class="sxs-lookup"><span data-stu-id="55e90-135">width</span></span>|<span data-ttu-id="55e90-136">Int32</span><span class="sxs-lookup"><span data-stu-id="55e90-136">Int32</span></span>|<span data-ttu-id="55e90-137">結果のイメージの幅。</span><span class="sxs-lookup"><span data-stu-id="55e90-137">The desired width of the resulting image.</span></span> <span data-ttu-id="55e90-138">省略可能。</span><span class="sxs-lookup"><span data-stu-id="55e90-138">Optional.</span></span>|
-|<span data-ttu-id="55e90-139">fittingMode</span><span class="sxs-lookup"><span data-stu-id="55e90-139">fittingMode</span></span>|<span data-ttu-id="55e90-140">文字列</span><span class="sxs-lookup"><span data-stu-id="55e90-140">string</span></span>|<span data-ttu-id="55e90-141">メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」</span><span class="sxs-lookup"><span data-stu-id="55e90-141">The method used to scale the chart to the specified dimensions (if both height and width are set)."</span></span>  <span data-ttu-id="55e90-142">可能な値: `Fit`、 `FitAndCenter`、 `Fill`。</span><span class="sxs-lookup"><span data-stu-id="55e90-142">The possible values are: `Fit`, `FitAndCenter`, `Fill`.</span></span>|
+|<span data-ttu-id="4cafe-131">height</span><span class="sxs-lookup"><span data-stu-id="4cafe-131">height</span></span>|<span data-ttu-id="4cafe-132">number</span><span class="sxs-lookup"><span data-stu-id="4cafe-132">number</span></span>|<span data-ttu-id="4cafe-p104">省略可能。結果の画像の希望する高さ。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p104">Optional. The desired height of the resulting image.</span></span>|
+|<span data-ttu-id="4cafe-135">width</span><span class="sxs-lookup"><span data-stu-id="4cafe-135">width</span></span>|<span data-ttu-id="4cafe-136">number</span><span class="sxs-lookup"><span data-stu-id="4cafe-136">number</span></span>|<span data-ttu-id="4cafe-p105">省略可能。結果の画像の希望する幅。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p105">Optional. The desired width of the resulting image.</span></span>|
+|<span data-ttu-id="4cafe-139">fittingMode</span><span class="sxs-lookup"><span data-stu-id="4cafe-139">fittingMode</span></span>|<span data-ttu-id="4cafe-140">string</span><span class="sxs-lookup"><span data-stu-id="4cafe-140">string</span></span>|<span data-ttu-id="4cafe-p106">省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。可能な値は、`Fit`、`FitAndCenter`、`Fill` です。</span><span class="sxs-lookup"><span data-stu-id="4cafe-p106">Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="55e90-143">応答</span><span class="sxs-lookup"><span data-stu-id="55e90-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4cafe-144">応答</span><span class="sxs-lookup"><span data-stu-id="4cafe-144">Response</span></span>
 
-<span data-ttu-id="55e90-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で base-64 画像 string を返します。</span><span class="sxs-lookup"><span data-stu-id="55e90-144">If successful, this method returns `200 OK` response code and base-64 image string in the response body.</span></span>
+<span data-ttu-id="4cafe-145">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で base-64 画像 string を返します。</span><span class="sxs-lookup"><span data-stu-id="4cafe-145">If successful, this method returns `200 OK` response code and base-64 image string in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="55e90-145">例</span><span class="sxs-lookup"><span data-stu-id="55e90-145">Example</span></span>
-<span data-ttu-id="55e90-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="55e90-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="55e90-147">要求</span><span class="sxs-lookup"><span data-stu-id="55e90-147">Request</span></span>
-<span data-ttu-id="55e90-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="55e90-148">Here is an example of the request.</span></span>
-
-<!-- { "blockType": "request" } -->
+## <a name="example"></a><span data-ttu-id="4cafe-146">例</span><span class="sxs-lookup"><span data-stu-id="4cafe-146">Example</span></span>
+<span data-ttu-id="4cafe-147">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="4cafe-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="4cafe-148">要求</span><span class="sxs-lookup"><span data-stu-id="4cafe-148">Request</span></span>
+<span data-ttu-id="4cafe-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4cafe-149">Here is an example of the request.</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
-##### <a name="response"></a><span data-ttu-id="55e90-149">応答</span><span class="sxs-lookup"><span data-stu-id="55e90-149">Response</span></span>
-<span data-ttu-id="55e90-150">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="55e90-150">Here is an example of the response.</span></span> <span data-ttu-id="55e90-151">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="55e90-151">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="55e90-152">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="55e90-152">All of the properties will be returned from an actual call.</span></span>
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+##### <a name="response"></a><span data-ttu-id="4cafe-150">応答</span><span class="sxs-lookup"><span data-stu-id="4cafe-150">Response</span></span>
+<span data-ttu-id="4cafe-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="4cafe-151">Here is an example of the response.</span></span> <span data-ttu-id="4cafe-152">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="4cafe-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="4cafe-153">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="4cafe-153">All of the properties will be returned from an actual call.</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -73,15 +72,15 @@ Content-length: 3
 }
 ```
 
-## <a name="usage"></a><span data-ttu-id="55e90-153">使用方法</span><span class="sxs-lookup"><span data-stu-id="55e90-153">Usage</span></span>
+##### <a name="usage"></a><span data-ttu-id="4cafe-154">使用方法</span><span class="sxs-lookup"><span data-stu-id="4cafe-154">Usage</span></span>
 
-<span data-ttu-id="55e90-154">HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。</span><span class="sxs-lookup"><span data-stu-id="55e90-154">You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.</span></span>
+<span data-ttu-id="4cafe-155">HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。</span><span class="sxs-lookup"><span data-stu-id="4cafe-155">You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.</span></span>
 
-<span data-ttu-id="55e90-155">既定の動作には、`Image(width=0,height=0,fittingMode='fit')` を使用します。</span><span class="sxs-lookup"><span data-stu-id="55e90-155">For default behavior, use `Image(width=0,height=0,fittingMode='fit')`.</span></span> <span data-ttu-id="55e90-156">既定のパラメーターで返されるグラフ イメージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="55e90-156">Here is an example of a chart image returned with the default parameters.</span></span>
+<span data-ttu-id="4cafe-156">既定の動作には、`Image(width=0,height=0,fittingMode='fit')` を使用します。</span><span class="sxs-lookup"><span data-stu-id="4cafe-156">For default behavior, use `Image(width=0,height=0,fittingMode='fit')`.</span></span> <span data-ttu-id="4cafe-157">既定のパラメーターで返されるグラフ イメージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4cafe-157">Here is an example of a chart image returned with the default parameters.</span></span>
 
 ![既定値の高さと幅の Excel グラフのイメージです。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
-<span data-ttu-id="55e90-158">イメージの表示をカスタマイズする場合は、高さ、幅、自動調整モードを指定します。</span><span class="sxs-lookup"><span data-stu-id="55e90-158">If you want to customize the display of the image, specify a height, width, and a fitting mode.</span></span> <span data-ttu-id="55e90-159">これらのパラメーターを使用してグラフ イメージを取得する場合、どのように表示されるかを次に示します。`Image(width=500,height=500,fittingMode='Fill')`。</span><span class="sxs-lookup"><span data-stu-id="55e90-159">Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.</span></span>
+<span data-ttu-id="4cafe-159">イメージの表示をカスタマイズする場合は、高さ、幅、自動調整モードを指定します。</span><span class="sxs-lookup"><span data-stu-id="4cafe-159">If you want to customize the display of the image, specify a height, width, and a fitting mode.</span></span> <span data-ttu-id="4cafe-160">これらのパラメーターを使用してグラフ イメージを取得する場合、どのように表示されるかを次に示します。`Image(width=500,height=500,fittingMode='Fill')`。</span><span class="sxs-lookup"><span data-stu-id="4cafe-160">Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.</span></span>
 
 ![既定値の高さと幅の Excel グラフのイメージです。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 

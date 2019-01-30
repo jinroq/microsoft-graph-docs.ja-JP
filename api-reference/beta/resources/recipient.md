@@ -2,27 +2,27 @@
 title: 受信者リソースの種類
 description: 'イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 '
 localization_priority: Normal
-ms.openlocfilehash: 1ae49432e0ef6ab5881b41d9de5adebd306a4da8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574944"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642584"
 ---
-# <a name="recipient-resource-type"></a><span data-ttu-id="6b480-103">受信者リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6b480-103">recipient resource type</span></span>
+# <a name="recipient-resource-type"></a><span data-ttu-id="092ef-103">受信者リソースの種類</span><span class="sxs-lookup"><span data-stu-id="092ef-103">recipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b480-104">イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。</span><span class="sxs-lookup"><span data-stu-id="6b480-104">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span> 
+<span data-ttu-id="092ef-104">イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。</span><span class="sxs-lookup"><span data-stu-id="092ef-104">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="6b480-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6b480-105">Properties</span></span>
-| <span data-ttu-id="6b480-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6b480-106">Property</span></span>     | <span data-ttu-id="6b480-107">型</span><span class="sxs-lookup"><span data-stu-id="6b480-107">Type</span></span>   |<span data-ttu-id="6b480-108">説明</span><span class="sxs-lookup"><span data-stu-id="6b480-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="092ef-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="092ef-105">Properties</span></span>
+| <span data-ttu-id="092ef-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="092ef-106">Property</span></span>     | <span data-ttu-id="092ef-107">型</span><span class="sxs-lookup"><span data-stu-id="092ef-107">Type</span></span>   |<span data-ttu-id="092ef-108">説明</span><span class="sxs-lookup"><span data-stu-id="092ef-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6b480-109">emailAddress</span><span class="sxs-lookup"><span data-stu-id="6b480-109">emailAddress</span></span>|[<span data-ttu-id="6b480-110">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="6b480-110">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="6b480-111">受信者の電子メール アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b480-111">The recipient's email address.</span></span>|
+|<span data-ttu-id="092ef-109">emailAddress</span><span class="sxs-lookup"><span data-stu-id="092ef-109">emailAddress</span></span>|[<span data-ttu-id="092ef-110">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="092ef-110">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="092ef-111">受信者の電子メール アドレス。</span><span class="sxs-lookup"><span data-stu-id="092ef-111">The recipient's email address.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6b480-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6b480-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="092ef-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="092ef-112">JSON representation</span></span>
 
-<span data-ttu-id="6b480-113">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="6b480-113">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="092ef-113">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="092ef-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,7 +34,7 @@ ms.locfileid: "29574944"
 
 ```json
 {
-  "emailAddress": {"@odata.type": "#microsoft.graph.emailAddress"}
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```

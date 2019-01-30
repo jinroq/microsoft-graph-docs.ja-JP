@@ -4,36 +4,35 @@ description: TokenMeetingInfo 型です。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571073"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642591"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="52b15-103">tokenMeetingInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="52b15-103">tokenMeetingInfo resource type</span></span>
+# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="1ff85-103">tokenMeetingInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1ff85-103">tokenMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="52b15-104">TokenMeetingInfo 型です。</span><span class="sxs-lookup"><span data-stu-id="52b15-104">The tokenMeetingInfo type.</span></span>
+<span data-ttu-id="1ff85-104">TokenMeetingInfo 型です。</span><span class="sxs-lookup"><span data-stu-id="1ff85-104">The tokenMeetingInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="52b15-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="52b15-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1ff85-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1ff85-105">Properties</span></span>
 
-| <span data-ttu-id="52b15-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="52b15-106">Property</span></span>                     | <span data-ttu-id="52b15-107">型</span><span class="sxs-lookup"><span data-stu-id="52b15-107">Type</span></span>    | <span data-ttu-id="52b15-108">説明</span><span class="sxs-lookup"><span data-stu-id="52b15-108">Description</span></span>                                                                    |
+| <span data-ttu-id="1ff85-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1ff85-106">Property</span></span>                     | <span data-ttu-id="1ff85-107">型</span><span class="sxs-lookup"><span data-stu-id="1ff85-107">Type</span></span>    | <span data-ttu-id="1ff85-108">説明</span><span class="sxs-lookup"><span data-stu-id="1ff85-108">Description</span></span>                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| <span data-ttu-id="52b15-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="52b15-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="52b15-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="52b15-110">Boolean</span></span> | <span data-ttu-id="52b15-111">会話のホストから離れると、会話を続行できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="52b15-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="52b15-112">token</span><span class="sxs-lookup"><span data-stu-id="52b15-112">token</span></span>                        | <span data-ttu-id="52b15-113">String</span><span class="sxs-lookup"><span data-stu-id="52b15-113">String</span></span>  | <span data-ttu-id="52b15-114">会議を結合またはアクティブにするトークンです。</span><span class="sxs-lookup"><span data-stu-id="52b15-114">The token to join/activate the meeting.</span></span>                                        |
+| <span data-ttu-id="1ff85-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="1ff85-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="1ff85-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ff85-110">Boolean</span></span> | <span data-ttu-id="1ff85-111">会話のホストから離れると、会話を続行できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="1ff85-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="1ff85-112">token</span><span class="sxs-lookup"><span data-stu-id="1ff85-112">token</span></span>                        | <span data-ttu-id="1ff85-113">String</span><span class="sxs-lookup"><span data-stu-id="1ff85-113">String</span></span>  | <span data-ttu-id="1ff85-114">会議を結合またはアクティブにするトークンです。</span><span class="sxs-lookup"><span data-stu-id="1ff85-114">The token to join/activate the meeting.</span></span>                                        |
 
-## <a name="json-representation"></a><span data-ttu-id="52b15-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="52b15-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1ff85-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1ff85-115">JSON representation</span></span>
 
-<span data-ttu-id="52b15-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52b15-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1ff85-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1ff85-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
@@ -43,7 +42,7 @@ ms.locfileid: "29571073"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="52b15-117">例</span><span class="sxs-lookup"><span data-stu-id="52b15-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ff85-117">例</span><span class="sxs-lookup"><span data-stu-id="1ff85-117">Example</span></span>
 
 <!-- {
   "blockType": "example",

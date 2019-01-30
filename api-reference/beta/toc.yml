@@ -76,7 +76,7 @@ items:
         href: api/user-delete.md
       - name: デルタを取得します。
         href: api/user-delta.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -261,7 +261,7 @@ items:
         href: api/group-addfavorite.md
       - name: メンバーを追加する
         href: api/group-post-members.md
-      - name: Add owner
+      - name: 所有者を追加する
         href: api/group-post-owners.md
       - name: メンバー グループをチェックする
         href: api/group-checkmembergroups.md
@@ -324,7 +324,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -470,7 +470,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: 予定表
+  - name: カレンダー
     href: resources/calendar.md
     items:
     - name: イベント
@@ -560,7 +560,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
@@ -653,15 +653,15 @@ items:
       items:
       - name: Create
         href: api/application-post-calls.md
-      - name: 呼び出しを取得します。
+      - name: call を取得する
         href: api/call-get.md
       - name: 削除または切断
         href: api/call-delete.md
       - name: 回答
         href: api/call-answer.md
-      - name: Reject
+      - name: 拒否する
         href: api/call-reject.md
-      - name: リダイレクト
+      - name: リダイレクトする
         href: api/call-redirect.md
       - name: Transfer
         href: api/call-transfer.md
@@ -687,7 +687,7 @@ items:
           href: api/participant-mute.md
         - name: 参加者全員をミュートします。
           href: api/participant-muteall.md
-        - name: 参加者の一覧
+        - name: 参加者を一覧表示する
           href: api/call-list-participants.md
         - name: 参加者を招待します。
           href: api/participant-invite.md
@@ -711,7 +711,7 @@ items:
     - name: オンライン会議
       href: resources/onlinemeeting.md
       items:
-      - name: オンライン会議を作成します。
+      - name: オンライン会議を作成する
         href: api/application-post-onlinemeetings.md
       - name: オンライン会議を取得します。
         href: api/onlinemeeting-get.md
@@ -6697,7 +6697,7 @@ items:
     - name: アプリケーション ロールの割り当て
       href: resources/approleassignment.md
       items:
-      - name: AppRoleAssignment を取得します。
+      - name: appRoleAssignment を取得する
         href: api/approleassignment-get.md
       - name: Approleassignment を更新します。
         href: api/approleassignment-update.md
@@ -6706,15 +6706,15 @@ items:
     - name: アプリケーション
       href: resources/application.md
       items:
-      - name: アプリケーション一覧
+      - name: アプリケーションを一覧表示する
         href: api/application-list.md
-      - name: アプリケーションを作成します。
+      - name: アプリケーションを作成する
         href: api/application-post-applications.md
-      - name: アプリケーションを取得します。
+      - name: アプリケーションを取得する
         href: api/application-get.md
-      - name: アプリケーションを更新します。
+      - name: アプリケーションを更新する
         href: api/application-update.md
-      - name: アプリケーションを削除します。
+      - name: アプリケーションを削除する
         href: api/application-delete.md
       - name: 所有者を一覧表示する
         href: api/application-list-owners.md
@@ -6762,7 +6762,7 @@ items:
         href: api/directory-deleteditems-restore.md
       - name: ユーザーによって所有されている削除済みのアイテムを一覧表示します。
         href: api/directory-deleteditems-user-owned.md
-    - name: Device
+    - name: デバイス
       href: resources/device.md
       items:
       - name: デバイスを一覧表示する
@@ -6982,7 +6982,7 @@ items:
         href: api/policy-delete.md
       - name: ポリシーを割り当てる
         href: api/policy-assign.md
-      - name: リストが割り当てられているポリシー
+      - name: 割り当てられているポリシーを一覧表示する
         href: api/policy-list-assigned.md
       - name: アプリケーションに適用] ボックスの一覧
         href: api/policy-list-appliesto.md
@@ -7406,8 +7406,8 @@ items:
         href: api/sectiongroup-list-sections.md
       - name: セクションを作成する
         href: api/sectiongroup-post-sections.md
-    - name: Onenote のページ
-      href: resources/onenotepage.md
+    - name: ページ
+      href: resources/page.md
       items:
       - name: pages を一覧表示する
         href: api/onenote-list-pages.md
@@ -7702,29 +7702,29 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: アクティビティの数を取得する
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: セキュリティ
+  - name: Security
     href: resources/security-api-overview.md
     items:
     - name: アラート
       href: resources/alert.md
       items:
-      - name: 警告の一覧表示
+      - name: アラートを一覧表示する
         href: api/alert-list.md
       - name: 警告の取得
         href: api/alert-get.md
-      - name: 警告の更新
+      - name: アラートの更新
         href: api/alert-update.md
     - name: セキュリティで保護されたスコア
       href: resources/securescores.md
       items:
-      - name: リストのセキュリティで保護されたスコア
+      - name: セキュリティ スコアを一覧表示する
         href: api/securescores-list.md
     - name: プロファイルを制御するセキュリティで保護されたスコア
       href: resources/securescorecontrolprofiles.md
       items:
-      - name: スコア管理プロファイルをセキュリティで保護] ボックスの一覧
+      - name: セキュア スコア制御プロファイルを一覧表示する
         href: api/securescorecontrolprofiles-list.md
-      - name: 更新プログラムは、スコア管理プロファイルをセキュリティで保護します。
+      - name: セキュア スコア制御プロファイルを更新する
         href: api/securescorecontrolprofiles-update.md
     - name: エラー
       href: resources/security-error-codes.md
@@ -7789,7 +7789,7 @@ items:
     - name: 洞察
       href: resources/insights.md
       items:
-      - name: トレンド
+      - name: トレンド分析
         href: resources/insights-trending.md
         items:
         - name: リストのトレンド分析
@@ -7919,7 +7919,7 @@ items:
         href: api/team-post.md
       - name: グループからチームを作成します。
         href: api/team-put-teams.md
-      - name: チームを取得します。
+      - name: チームを取得する
         href: api/team-get.md
       - name: チームを更新します。
         href: api/team-update.md
@@ -7956,7 +7956,7 @@ items:
         href: api/group-delete-members.md
       - name: 所有者を一覧表示する
         href: api/group-list-owners.md
-      - name: Add owner
+      - name: 所有者を追加する
         href: api/group-post-owners.md
       - name: 所有者の削除
         href: api/group-delete-owners.md
@@ -8027,7 +8027,7 @@ items:
         href: api/teamstab-delete.md
     - name: チャット メッセージ
       href: resources/chatmessage.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -8270,8 +8270,8 @@ items:
         href: api/chart-setdata.md
       - name: 位置データ
         href: api/chart-setposition.md
-    - name: ブックの名前付きアイテム
-      href: resources/workbooknameditem.md
+    - name: 名前付きアイテム
+      href: resources/nameditem.md
       items:
       - name: 名前付きアイテム] ボックスの一覧
         href: api/nameditem-get.md
@@ -8325,9 +8325,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: fe9913f85fd7b81857a4137a9896c5ecab7f45ea
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 443efbc89a19ae068b60bc47eb9b967f5b893aaa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573446"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641751"
