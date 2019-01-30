@@ -2,12 +2,12 @@
 title: privilegedApproval リソースの種類
 description: 要求された特権 Id 管理の役割に承認を表します。
 localization_priority: Normal
-ms.openlocfilehash: 03cdba4eee7b031645928b2f512288a18ba18bf8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571018"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643875"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "29571018"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|文字列| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
+|approvalState|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -40,11 +40,11 @@ ms.locfileid: "29571018"
 |startDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |userId|String||
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|roleInfo| [privilegedRole](privilegedrole.md) | 読み取り専用。Null 許容型。|
-|要求| [privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md) | 読み取り専用です。 この承認オブジェクトのロール割り当ての依頼|
+|roleInfo|[privilegedRole](privilegedrole.md)| 読み取り専用。Null 許容型です。|
+|要求|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 読み取り専用です。 この承認オブジェクトのロール割り当ての依頼|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

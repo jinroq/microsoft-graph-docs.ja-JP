@@ -2,12 +2,12 @@
 title: fileAttachment リソースの種類
 description: イベントに関連付けられているテキスト ファイルまたは Word 文書) などのファイル
 localization_priority: Normal
-ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572802"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644092"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -32,12 +32,12 @@ ms.locfileid: "29572802"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|String|base64 でエンコードされたファイルの内容。|
+|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
-|contentLocation|String|サポートされていないと、このプロパティは使用しません。|
+|contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。|
-|isInline|ブール値|インライン添付ファイルの場合、true に設定します。|
+|isInline|Boolean|インライン添付ファイルの場合、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。|
 |name|String|埋め込み添付ファイルを表すアイコンの下に表示されるテキストを表す名前。これは、実際のファイル名にする必要はありません。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
@@ -60,7 +60,7 @@ ms.locfileid: "29572802"
 
 ```json
 {
-  "contentBytes": "String",
+  "contentBytes": "binary",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

@@ -4,12 +4,12 @@ description: グラフ軸のタイトルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e0ad1385bb46dc4ff0e3f6bc9a3acfb861e7af88
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572711"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644085"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 
@@ -22,36 +22,36 @@ ms.locfileid: "29572711"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
+|[更新する](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |text|文字列|軸タイトルを表します。|
-|visible|boolean|軸のタイトルの表示/非表示を指定するブール型の値です。|
+|visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
+|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
+  "visible": true
 }
 
 ```

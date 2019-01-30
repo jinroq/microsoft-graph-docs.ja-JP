@@ -2,12 +2,12 @@
 title: NamedItem を取得する
 description: nameditem オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
-ms.openlocfilehash: bb190c8329389aed3196807d5b15f6a48a18240d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 80c98e34239ddd81cc5a52308f105bb698ee6125
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570996"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643805"
 ---
 # <a name="get-nameditem"></a>NamedItem を取得する
 
@@ -42,7 +42,7 @@ GET /workbook/names(<name>)
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [NamedItem](../resources/workbooknameditem.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [NamedItem](../resources/nameditem.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookNamedItem"
+  "@odata.type": "microsoft.graph.namedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

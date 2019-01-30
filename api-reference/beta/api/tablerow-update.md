@@ -4,12 +4,12 @@ description: tablerow オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc3d8ff8b87465c1a68095a1a9973a239d359707
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a57508de840ea4f305a426e70511071c3f1d7d12
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572053"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640988"
 ---
 # <a name="update-tablerow"></a>tablerow を更新する　
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|values|microsoft.graph.Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 

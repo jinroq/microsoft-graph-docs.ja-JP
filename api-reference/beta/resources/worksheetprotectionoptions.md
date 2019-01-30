@@ -4,12 +4,12 @@ description: シート保護のオプションを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 786bcf4b26e2e7bedf3fe8fd0429ddc9f1f22b39
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e32e41eb46cc5af98f6d9aeffcf470e22fbad349
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574146"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640526"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions リソースの種類
 
@@ -20,17 +20,17 @@ ms.locfileid: "29574146"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowAutoFilter|boolean|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
-|allowDeleteColumns|boolean|列の削除を可能にするワークシート保護オプションを表します。|
-|allowDeleteRows|boolean|行の削除を可能にするワークシート保護オプションを表します。|
-|allowFormatCells|boolean|セルの書式設定を可能にするワークシート保護オプションを表します。|
-|allowFormatColumns|boolean|列の書式設定を可能にするワークシート保護オプションを表します。|
-|allowFormatRows|boolean|行の書式設定を可能にするワークシート保護オプションを表します。|
-|allowInsertColumns|boolean|列の挿入を可能にするワークシート保護オプションを表します。|
-|allowInsertHyperlinks|boolean|ハイパーリンクの挿入を可能にするワークシート保護オプションを表します。|
-|allowInsertRows|boolean|行の挿入を可能にするワークシート保護オプションを表します。|
-|allowPivotTables|boolean|ピボット テーブル機能の使用を可能にするワークシート保護オプションを表します。|
-|allowSort|boolean|並ベ替え機能の使用を可能にするワークシート保護オプションを表します。|
+|allowAutoFilter|ブール値|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
+|allowDeleteColumns|ブール値|列の削除を可能にするワークシート保護オプションを表します。|
+|allowDeleteRows|ブール値|行の削除を可能にするワークシート保護オプションを表します。|
+|allowFormatCells|ブール値|セルの書式設定を可能にするワークシート保護オプションを表します。|
+|allowFormatColumns|ブール値|列の書式設定を可能にするワークシート保護オプションを表します。|
+|allowFormatRows|ブール値|行の書式設定を可能にするワークシート保護オプションを表します。|
+|allowInsertColumns|ブール値|列の挿入を可能にするワークシート保護オプションを表します。|
+|allowInsertHyperlinks|ブール値|ハイパーリンクの挿入を可能にするワークシート保護オプションを表します。|
+|allowInsertRows|ブール値|行の挿入を可能にするワークシート保護オプションを表します。|
+|allowPivotTables|ブール値|ピボット テーブル機能の使用を可能にするワークシート保護オプションを表します。|
+|allowSort|ブール値|並ベ替え機能の使用を可能にするワークシート保護オプションを表します。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -41,7 +41,7 @@ ms.locfileid: "29574146"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
 }-->
 
 ```json

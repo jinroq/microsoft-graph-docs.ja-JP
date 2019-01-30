@@ -4,12 +4,12 @@ description: この API を使用して、新しい ChartPoints を作成しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 421df294710cda9ac07c4aea2f79c4d2c4ea9abc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c9575770bdd93a411daa3ea664cd859476a115c8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575843"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640001"
 ---
 # <a name="create-chartpoints"></a>Create ChartPoints
 
@@ -65,7 +65,7 @@ Content-length: 3
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "@odata.type": "microsoft.graph.chartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created

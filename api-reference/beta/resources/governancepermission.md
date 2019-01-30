@@ -2,12 +2,12 @@
 title: governancePermission リソースの種類
 description: '特定の governanceResource に、governanceSubject を持つアクセス許可を表します。  '
 localization_priority: Normal
-ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570723"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643784"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission リソースの種類
 
@@ -27,13 +27,6 @@ ms.locfileid: "29570723"
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.governancePermission"
-}-->
 ```json
 {
   "accessLevel": "String",

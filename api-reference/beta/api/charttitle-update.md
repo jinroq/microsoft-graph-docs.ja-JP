@@ -4,12 +4,12 @@ description: charttitle オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 109c7565cc409064ee25f6a1ee285e6f73be1edf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e67790672f2e31baaacd0eba500684f7b2275e97
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577320"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640379"
 ---
 # <a name="update-charttitle"></a>charttitle オブジェクトを更新する
 
@@ -41,13 +41,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|overlay|boolean|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
+|overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
 |text|文字列|グラフのタイトルのテキストを表します。|
-|visible|boolean|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
+|visible|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[workbookChartTitle](../resources/charttitle.md)オブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartTitle](../resources/charttitle.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -71,7 +71,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartTitle"
+  "@odata.type": "microsoft.graph.chartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

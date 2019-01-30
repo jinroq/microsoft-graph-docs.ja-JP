@@ -5,12 +5,12 @@ ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e7bbd0f6aa8d4ea04304d6aecae97b98ab0a46b7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574279"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640176"
 ---
 # <a name="webpart-resource"></a>web パーツ リソース
 
@@ -22,14 +22,13 @@ ms.locfileid: "29574279"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  
-    ],
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.webPart"
 }-->
 
 ```json
 {
-  "type": "String (identifier)",
+  "type": "string (guid)",
   "data": {
     "instanceId": "string (guid) (optional)"
   }
@@ -40,8 +39,8 @@ ms.locfileid: "29574279"
 
 | プロパティ                | 型             | 説明
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | 文字列 (識別子)         | Web パーツの種類を指定する一意の識別子です。 読み取り専用です。
-| **data**                | [sitePageData](sitepagedata.md) | Web パーツ (web パーツによって異なります) に必要なプロパティ
+| **type**                | String           | Web パーツの種類を指定する一意の識別子です。 読み取り専用です。
+| **data**                | [sitePageData][] | Web パーツ (web パーツによって異なります) に必要なプロパティ
 
 [sitePageData]: sitepagedata.md
 

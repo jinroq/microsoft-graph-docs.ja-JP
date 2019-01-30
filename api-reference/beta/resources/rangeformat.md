@@ -1,15 +1,15 @@
 ---
-title: rangeFormat リソースの種類
+title: RangeFormat リソースの種類
 description: 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572424"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643931"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
 
@@ -23,9 +23,9 @@ ms.locfileid: "29572424"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[RangeFormat を取得する](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
-|[RangeBorder を作成する](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
-|[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md)コレクション| RangeBorder オブジェクトのコレクションを取得します。|
-|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |RangeFormat オブジェクトを更新します。 |
+|[RangeBorder を作成する](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
+|[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) コレクション| RangeBorder オブジェクトのコレクションを取得します。|
+|[更新する](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |RangeFormat オブジェクトを更新します。 |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
 
@@ -36,15 +36,15 @@ ms.locfileid: "29572424"
 |horizontalAlignment|文字列|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
 |rowHeight|double|範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。|
 |verticalAlignment|文字列|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
-|wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
+|wrapText|ブール値|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|borders|[rangeBorder](rangeborder.md)コレクション|選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。|
-|fill|[rangeFill](rangefill.md)|範囲全体に定義された塗りつぶしオブジェクトを返します。読み取り専用です。|
-|font|[rangeFont](rangefont.md)|選択した範囲全体に定義されているフォント オブジェクトを返します。読み取り専用です。|
-|protection|[formatProtection](formatprotection.md)|範囲に対する書式保護オブジェクトを返します。読み取り専用です。|
+|borders|[RangeBorder](rangeborder.md) コレクション|選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。|
+|fill|[RangeFill](rangefill.md)|範囲全体に定義された塗りつぶしオブジェクトを返します。読み取り専用です。|
+|font|[RangeFont](rangefont.md)|選択した範囲全体に定義されているフォント オブジェクトを返します。読み取り専用です。|
+|protection|[FormatProtection](formatprotection.md)|範囲に対する書式保護オブジェクトを返します。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,12 @@ description: グラフ オブジェクトを削除します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c2b0b051517e30e2a0275684124b26de0a355cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 513d54e855cd0e0acd358c085f3ae0fb9231692b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572123"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640470"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -58,7 +58,9 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: シート オブジェクトの保護を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f32ad7b1cc25d9a937f2de68f1bd930d92ec8f9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572935"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639945"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection リソースの種類
 
@@ -22,19 +22,19 @@ ms.locfileid: "29572935"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[WorksheetProtection を取得する](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |worksheetProtection オブジェクトのプロパティと関係を読み取ります。|
+|[WorksheetProtection を取得する](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |worksheetProtection オブジェクトのプロパティと関係を読み取ります。|
 |[Protect](../api/worksheetprotection-protect.md)|なし|ワークシートを保護します。ワークシートが保護されている場合はスローします。|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|なし|ワークシートの保護を解除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|protected|boolean|ワークシートが保護されているかどうかを示します。読み取り専用です。|
+|protected|ブール値|ワークシートが保護されているかどうかを示します。読み取り専用です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
+|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -43,16 +43,14 @@ ms.locfileid: "29572935"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-  "options"
+
   ],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
+  "@odata.type": "microsoft.graph.worksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true,
-  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
+  "protected": true
 }
 
 ```

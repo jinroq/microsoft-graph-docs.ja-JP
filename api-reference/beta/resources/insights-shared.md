@@ -4,12 +4,12 @@ description: または特定のユーザーが共有ファイルを表すの把�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573180"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640127"
 ---
 # <a name="shared-resource-type"></a>共有リソースの種類
 
@@ -37,21 +37,15 @@ ms.locfileid: "29573180"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、共有ドキュメントのプロパティを参照します。 読み取り専用       |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 | プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
-| リソース      | エンティティのコレクション | 共有されている項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
+| リソース      | Entity        | 共有されている項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.shared"
-}-->
 ```json
 {
   "id": "string",

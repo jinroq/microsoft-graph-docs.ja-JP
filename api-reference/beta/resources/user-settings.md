@@ -4,12 +4,12 @@ description: '現在のユーザー設定します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5812141d21a32b8ab1835a75c05cbd57ea25a3a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571815"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640512"
 ---
 # <a name="settings-resource-type"></a>設定リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "29571815"
 
 現在のユーザー設定します。 取得またはユーザー設定を更新する方法については、[設定を取得](../api/user-get-settings.md)および[設定の更新](../api/user-update-settings.md)を参照してください。
 
-このリソースは次の内容サポートしています。
+このリソースは以下をサポートしています。
 
 - ユーザーおよびユーザーの組織がコンテンツの検出に貢献するかどうかを確認しています。
 - 無効にするか、特定のユーザーに対してコンテンツの検出を有効にするとします。 Office についてのドキュメントも無効になります。
@@ -38,11 +38,7 @@ ms.locfileid: "29571815"
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.userSettings"
-}-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

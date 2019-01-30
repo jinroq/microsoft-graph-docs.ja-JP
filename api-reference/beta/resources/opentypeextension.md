@@ -3,12 +3,12 @@ title: openTypeExtension リソース タイプ (オープン拡張機能)
 description: (Office 365 のデータ拡張機能と呼ばれていました) 開いているの拡張機能では、直接グラフ内のリソースに型指定されていないプロパティを追加する簡単な方法を提供します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574909"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643840"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張機能)
 
@@ -54,11 +54,9 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-       "companyName",
-        "dealValue",
-        "expirationDate"
+
   ],
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 }-->
 
 ```json
@@ -76,7 +74,7 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 |extensionName|String|オープン型のデータ拡張情報の一意のテキスト識別子。必須。|
 |id|String| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 なし
 

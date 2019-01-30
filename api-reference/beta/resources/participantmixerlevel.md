@@ -4,12 +4,12 @@ description: 特定の参加者のオーディオのをレベルをミキサー�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bb5d28ac45d510a715dcc5001c8ee02b8352bb8c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575420"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643833"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "29575420"
 | プロパティ               | 型                                                      | 説明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | ダック                | [audioDuckingConfiguration](audioduckingconfiguration.md) | ダック (段階的に導入と出力) のこの partipant の他のソースのカスタム ミックスの構成です。       |
-| exclusiveMode          | boolean                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |
+| exclusiveMode          | ブール値                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |
 | 参加者            | String                                                    | ミキサーが構成されている構成要素です。                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md)コレクション        | その他のソース レベルの構成。                                                              |
 
@@ -39,10 +39,10 @@ ms.locfileid: "29575420"
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

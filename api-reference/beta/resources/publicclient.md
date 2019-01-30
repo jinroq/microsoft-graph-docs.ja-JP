@@ -2,12 +2,12 @@
 title: publicClient リソースの種類
 description: 以外の Web アプリケーションまたは Web Api の設定を指定します。 (モバイルやデスクトップ デバイスで実行されているインストール済みのアプリケーションなどの他のパブリック クライアント)
 localization_priority: Normal
-ms.openlocfilehash: 866e27b4ea3e1386b7cc69f967635d38641f121c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571843"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644057"
 ---
 # <a name="publicclient-resource-type"></a>publicClient リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "29571843"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publicClientApplication"
+  "@odata.type": "microsoft.graph.installedClient"
 }-->
 
 ```json

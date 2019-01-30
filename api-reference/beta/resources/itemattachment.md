@@ -2,12 +2,12 @@
 title: itemAttachment リソースの種類
 description: 連絡先、イベント、または別のイベントに関連付けられているメッセージ
 localization_priority: Normal
-ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571409"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640421"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
@@ -22,14 +22,14 @@ ms.locfileid: "29571409"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
+|[削除する](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
-|isInline|ブール値|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
+|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
 |name|String|添付ファイルの表示名。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
@@ -37,7 +37,7 @@ ms.locfileid: "29571409"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|item|[outlookItem](outlookitem.md)|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
+|item|[OutlookItem](outlookitem.md)|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

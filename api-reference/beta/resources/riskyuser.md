@@ -4,12 +4,12 @@ description: 危険にさらされている Azure AD ユーザーを表します
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572186"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643910"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
@@ -35,20 +35,20 @@ ms.locfileid: "29572186"
 |`id`|`string`|リスクのユーザーの一意の id|
 |`isDeleted`|`bool`|ユーザーを削除するかどうかを示します。 使用可能な値: `true`、`false`|
 |`isGuest`|`bool`|ユーザーが guest ユーザーであるかを示します。 使用可能な値は、`true`、`false` です。 におけるテナント以外のユーザーの id が存在する場合は true。 このユーザーは、id を使用して、B2B または B2C Azure AD、MSA のまたはサード パーティの id プロバイダー。 におけるテナント内のユーザーの id が存在する場合は false。|
-|`riskDetail`|`riskDetail`|危険なユーザー、サインインまたはリスク事象の特定の状態の背後にある '理由' を提供します。 可能な値: `none`、 `adminGeneratedTemporaryPassword`、 `userPerformedSecuredPasswordChange`、 `userPerformedSecuredPasswordReset`、 `adminConfirmedSigninSafe`、 `aiConfirmedSigninSafe`、 `userPassedMFADrivenByRiskBasedPolicy`、 `adminDismissedAllRiskForUser`、 `adminConfirmedSigninCompromised`、 `unknownFutureValue`。 値`none`アクションが実行されたことなしに、ユーザーまたはのサインインでこれまでにすることを意味します。|
-|`riskLevel`|`riskLevel`|危険なユーザー、サインインまたはリスク事象の全体的なリスクのレベルを提供します。 可能な値: `none`、 `low`、 `medium`、 `high`、`hidden`と`unknownFutureValue`。 値`hidden`ユーザーまたはサインインが有効ではなかった Azure AD のアイデンティティ保護のことを意味します。|
-|`riskState`|`riskState`|危険なユーザー、サインインまたはリスク イベントの 'リスク状態' を提供します。 使用可能な値: `none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
+|`riskDetail`|`riskDetail`|リスクの高いユーザー、サインイン、リスク イベントの特定の状態の背後にある「理由」について示します。 使用可能な値: `none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 値 `none` は、ユーザーについて実行されたアクションまたはサインインが今のところないことを意味しています。|
+|`riskLevel`|`riskLevel`|危険なユーザー、サインインまたはリスク事象の全体的なリスクのレベルを提供します。 使用可能な値: `none`、`low`、`medium`、`high`、`hidden`、`unknownFutureValue`。 値 `hidden` は、ユーザーまたはサインインが Azure AD Identity Protection で有効になっていないことを意味します。|
+|`riskState`|`riskState`|リスクの高いユーザー、サインイン、リスク イベントの「リスクの状態」について示します。 使用可能な値: `none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |`riskLastUpdatedDateTime`|`datetime`|危険なユーザーが最後に更新されたときの日時|
 |`userDisplayName`|`string`|危険なユーザーの表示名|
 |`userPrincipalName`|`string`|危険なユーザー プリンシパル名|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|id|文字列| 特定のリスク イベントに関連付けられたユーザーの一意の識別子です。|
-|isGuest|boolean| 危険なユーザーは、ホーム ユーザー (B2E) または (B2B、B2C) は、ゲスト ユーザーのいずれかです。|
-|isDeleted|boolean| ユーザーは、可能性があります。 または削除できません。 |
+|id|UserObjectId| 特定のリスク イベントに関連付けられたユーザーの一意の識別子です。|
+|isGuest|isGuest| 危険なユーザーは、ホーム ユーザー (B2E) または (B2B、B2C) は、ゲスト ユーザーのいずれかです。|
+|isDeleted|isDeleted| ユーザーは、可能性があります。 または削除できません。 |
 |riskState|riskState| 危険なユーザーは、複数の状態のいずれかに存在でした。 |
 |riskDetail|riskDetail| 危険なユーザーは複数の理由により、特定の状態にします。 |
 |riskLevel|riskLevel| リスクの高いユーザーと考えられます複数のリスク レベルのいずれかです。 |
@@ -60,8 +60,9 @@ ms.locfileid: "29572186"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyusers"
 }-->
 
 ```json

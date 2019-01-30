@@ -4,12 +4,12 @@ description: OneNote リソースのエントリ ポイントです。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 6259f817058d0faebc77a0e1a22b478697d79b66
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576088"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640099"
 ---
 # <a name="onenote-resource-type"></a>OneNote リソースの種類
 
@@ -53,10 +53,10 @@ OneNote API で動作するために必要なアクセス許可については�
 |:---------------|:--------|:----------|
 |notebooks|[Notebook](notebook.md) collection|ユーザーまたはグループが所有している OneNote ノートブックのコレクションです。読み取り専用。Null 許容型。|
 |operations|[Operation](onenoteoperation.md) collection |OneNote の操作の状態です。操作のコレクションを取得することはサポートされていませんが、応答で `Operation-Location` ヘッダーが返される場合には長時間実行処理の状態を取得できます。読み取り専用。Null 許容型。|
-|pages|[onenotePage](onenotepage.md)コレクション|ユーザーまたはグループが所有しているすべての OneNote ノートブックのページです。読み取り専用。Null 許容型。|
-|resources|[governanceResource](resource.md)コレクション |OneNote ページの画像リソースおよび他のファイル リソースです。リソース コレクションを取得することはサポートされていませんが、[特定のリソースのバイナリ コンテンツを取得](resource.md)できます。読み取り専用。Null 許容型。|
-|sectionGroups|[sectionGroup](sectiongroup.md)コレクション|ユーザーまたはグループが所有しているすべての OneNote ノートブックのセクション グループです。読み取り専用。Null 許容型。|
-|sections|[onenoteSection](section.md)コレクション|ユーザーまたはグループが所有しているすべての OneNote ノートブック内のセクションです。読み取り専用。Null 許容型。|
+|pages|[Page](page.md) collection|ユーザーまたはグループが所有しているすべての OneNote ノートブックのページです。読み取り専用。Null 許容型。|
+|resources|[Resource](resource.md) collection |OneNote ページの画像リソースおよび他のファイル リソースです。リソース コレクションを取得することはサポートされていませんが、[特定のリソースのバイナリ コンテンツを取得](resource.md)できます。読み取り専用。Null 許容型。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|ユーザーまたはグループが所有しているすべての OneNote ノートブックのセクション グループです。読み取り専用。Null 許容型。|
+|sections|[Section](section.md) collection|ユーザーまたはグループが所有しているすべての OneNote ノートブック内のセクションです。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 
@@ -64,19 +64,10 @@ OneNote API で動作するために必要なアクセス許可については�
 |:---------------|:--------|:----------|
 |[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| ノートブックのコレクションに投稿してノートブックを作成します。|
 |[List notebooks](../api/onenote-list-notebooks.md) |[Notebook](notebook.md) collection| ノートブックのコレクションを取得します。|
-|[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md)| ページのコレクションに投稿してページを作成します。|
-|[List pages](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)コレクション| ページのコレクションを取得します。|
+|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| ページのコレクションに投稿してページを作成します。|
+|[List pages](../api/onenote-list-pages.md) |[Page](page.md) collection| ページのコレクションを取得します。|
 |[List section groups](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| セクション グループのコレクションを取得します。|
 |[List sections](../api/onenote-list-sections.md) |[Section](section.md) collection| セクションのコレクションを取得します。|
-<!--{
-  "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.oneNote"
-}-->
-``` json
-{
-}
-```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
