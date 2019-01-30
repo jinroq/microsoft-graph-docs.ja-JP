@@ -4,12 +4,12 @@ description: '作業アイテムを追跡することができる Outlook アイ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6a6d5809f2634f4b9e0f1e30e3fddb0c798f0f6c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576438"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641478"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask リソースの種類
 
@@ -78,9 +78,9 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|タスクの [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md)、[referenceAttachment](referenceattachment.md) の各添付ファイルのコレクション。  読み取り専用です。 Null 許容型です。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション|そのタスクに対して定義された、複数値拡張プロパティのコレクションです。 読み取り専用です。 Null 許容型です。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション|そのタスクに対して定義された、単一値拡張プロパティのコレクションです。 読み取り専用です。 Null 許容型。|
+|attachments|[attachment](attachment.md) コレクション|タスクの [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md)、[referenceAttachment](referenceattachment.md) の各添付ファイルのコレクション。  読み取り専用です。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション|そのタスクに対して定義された、複数値拡張プロパティのコレクションです。 読み取り専用です。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション|そのタスクに対して定義された、単一値拡張プロパティのコレクションです。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -89,8 +89,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

@@ -4,17 +4,17 @@ description: グループ オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353091"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641338"
 ---
 # <a name="get-group"></a>グループを取得する
 グループ オブジェクトのプロパティとリレーションシップを取得します。
 
-「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。 既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。 [例](#request-2)を参照してください。
+「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。 既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。 `$select` の[例](#request-2)を参照してください。 例外は **hasMembersWithLicenseErrors** プロパティです。 このプロパティの使用方法の[例](group-list.md#request-2)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

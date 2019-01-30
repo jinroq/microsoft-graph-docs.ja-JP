@@ -2,12 +2,12 @@
 title: servicePrincipal リソースの種類
 description: ディレクトリ内のアプリケーションのインスタンスを表します。 directoryObject から継承します。
 localization_priority: Priority
-ms.openlocfilehash: d36a82ae885725387e788cf280442afe09fa63de
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574188"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641156"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "29574188"
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
 
 ```json
@@ -88,14 +88,14 @@ ms.locfileid: "29574188"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |このサービス プリンシパルに割り当てられているプリンシパル (ユーザー、グループ、サービス プリンシパル)。 読み取り専用です。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|このサービス プリンシパルに割り当てられているプリンシパル (ユーザー、グループ、サービス プリンシパル)。 読み取り専用です。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) コレクション|サービス プリンシパルが割り当てられているアプリケーション。 読み取り専用です。 Null 許容型。|
 |createdObjects|[directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで作成したディレクトリ オブジェクト。 読み取り専用です。 Null 許容型。|
-|memberOf| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルがメンバーになっているロール。 HTTP メソッド: GET 読み取り専用。 Null 許容型です。|
-|oauth2PermissionGrants| [oAuth2PermissionGrant](oauth2permissiongrant.md) コレクション|このサービス プリンシパルに関連付けられているユーザーの偽装許可です。 読み取り専用です。 Null 許容型。|
-|ownedObjects| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有しているディレクトリ オブジェクト。 読み取り専用です。 Null 許容型です。|
-|owners| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有者であるディレクトリ オブジェクト。 所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。 読み取り専用です。 Null 許容型です。|
-|policy| [policy](policy.md) コレクション|このサービス プリンシパルに割り当てられているポリシー。|
+|memberOf|[directoryObject](directoryobject.md) コレクション|このサービス プリンシパルがメンバーになっているロール。 HTTP メソッド: GET 読み取り専用。 Null 許容型です。|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) コレクション|このサービス プリンシパルに関連付けられているユーザーの偽装許可です。 読み取り専用です。 Null 許容型。|
+|ownedObjects|[directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有しているディレクトリ オブジェクト。 読み取り専用です。 Null 許容型です。|
+|owners|[directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有者であるディレクトリ オブジェクト。 所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。 読み取り専用です。 Null 許容型です。|
+|policy|[policy](policy.md) コレクション|このサービス プリンシパルに割り当てられているポリシー。|
 
 ## <a name="methods"></a>メソッド
 

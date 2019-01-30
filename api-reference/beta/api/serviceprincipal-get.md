@@ -2,12 +2,12 @@
 title: servicePrincipal を取得する
 description: serviceprincipal オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Priority
-ms.openlocfilehash: 2fca7895b03a52e5fda06df940782b716e8ca1c4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 53f8755f11e7e8e71a3ab339e0f9cced7adec3d1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575154"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642836"
 ---
 # <a name="get-serviceprincipal"></a>servicePrincipal を取得する
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

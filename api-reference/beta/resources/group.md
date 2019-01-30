@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、動的な�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 85a921449a57b3e65d4a10e2d0439542f7bb1810
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574412"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641765"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -161,8 +161,8 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクション。 読み取り専用です。 Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|グループがメンバーになっているグループと管理単位です。 HTTP メソッド: GET (すべてのグループでサポートされます)。 読み取り専用です。 Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザー、連絡先、グループ。 HTTP メソッド: GET (すべてのグループでサポートされます)、POST (セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (セキュリティ グループでのみサポートされます)。読み取り専用です。 Null 許容型。|
-|membersWithLicenseErrors|[user](user.md) コレクション|このグループに基づくライセンスの割り当てからのライセンス エラーが発生しているグループ メンバーの一覧です。 読み取り専用です。|
-|onenote|[oneNote](onenote.md)| 読み取り専用です。|
+|membersWithLicenseErrors|[User](user.md) コレクション|このグループに基づくライセンスの割り当てからのライセンス エラーが発生しているグループ メンバーの一覧です。 読み取り専用です。|
+|onenote|[OneNote](onenote.md)| 読み取り専用です。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。 所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。 HTTP メソッド: GET (すべてのグループでサポートされます)、POST (セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (セキュリティ グループでのみサポートされます)。読み取り専用です。 Null 許容型。|
 |photo|[profilePhoto](profilephoto.md)| グループのプロファイル写真。 |
 |photos|[profilePhoto](profilephoto.md) コレクション| グループが所有しているプロファイル写真。読み取り専用です。Null 許容型。|
@@ -189,7 +189,7 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
     "extensions",
     "memberOf",
     "members",
-    "oneNote",
+    "onenote",
     "owners",
     "photo",
     "photos",    
@@ -223,7 +223,7 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
+  "preferredDataLocation": ["string"],
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

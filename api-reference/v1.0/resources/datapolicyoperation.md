@@ -9,13 +9,13 @@
 |[DataPolicyOperation を取得します。](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |**DataPolicyOperation**オブジェクトのプロパティを取得します。|
 |[個人データをエクスポートします。](../api/user-exportpersonaldata.md) | なし |[DataPolicyOperation の取得](../api/datapolicyoperation-get.md)を使用して後で読み取ることができますが、組織のユーザーのデータをエクスポートするのには、データ ポリシーの操作要求を送信します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 > **注:** このリソースのすべてのプロパティは、読み取り専用です。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|CompletedDateTime|DateTimeOffset|このデータ ポリシーの操作の要求が完了すると、UTC 時刻での ISO 8601 形式を使用して表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 操作が完了するまで null になります。|
+|CompletedDateTime|DateTimeOffset|このデータ ポリシーの操作の要求が完了すると、UTC 時刻での ISO 8601 形式を使用して表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 操作が完了するまで null になります。|
 |id|String| この操作に固有のキーです。 |
 |status|string| 可能な値は、`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue` です。|
 |storageLocation|String|URL の場所のデータをエクスポートするのには、要求をエクスポートします。|

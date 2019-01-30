@@ -4,12 +4,12 @@ description: Office 365 グループを含み、それに限定されない組�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5081c5013c1bf7c1a1bfbcff58afe5a83aa67bc9
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 8ede194abffe745bee9a23906b965d43de93cec8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726576"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643742"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
@@ -17,6 +17,8 @@ Office 365 グループを含み、それに限定されない組織で使用可
 この操作は既定で各グループのプロパティのサブセットのみを返します。 これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 
 
 既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
+
+例外は **hasMembersWithLicenseErrors** プロパティです。 このプロパティの使用方法の[例](#request-2)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -58,7 +60,7 @@ OData クエリ オプションの詳細については、「[OData クエリ �
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。 応答には、各グループの既定のプロパティのみが含まれています。
 
 ## <a name="example"></a>例
-#### <a name="request"></a>要求
+#### <a name="request-1"></a>要求 1
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
@@ -68,7 +70,7 @@ OData クエリ オプションの詳細については、「[OData クエリ �
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response"></a>応答
+#### <a name="response-1"></a>応答 1
 応答の例を次に示します。
 
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。
@@ -146,6 +148,44 @@ Content-type: application/json
     ]
 }
 
+```
+#### <a name="request-2"></a>要求 2
+この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。 また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### <a name="response-2"></a>応答 2
+要求したプロパティのみを含む応答の例を次に示します。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
