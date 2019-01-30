@@ -2,12 +2,12 @@
 title: デバッギングのリソースの種類
 description: Azure AD にアクセスが機能を確認、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンクするコントロールを表します。
 localization_priority: Normal
-ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576557"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644008"
 ---
 # <a name="programcontrol-resource-type"></a>デバッギングのリソースの種類
 
@@ -36,16 +36,16 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | プログラムとコントロール間のリンクの機能に割り当てられた識別子                                      |
-| `programId`              |`String`                | プログラムの programId このコントロールは、一部です。 必要なを作成します。                            |
-| `controlId`              |`String`                | コントロールの処理、特にアクセスの id を確認します。 必要なを作成します。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType は、プログラムの制御の種類を識別 - たとえば、ゲスト アクセスへのリンク コントロールを確認します。 必要なを作成します。 |
+| `programId`              |`String`                | プログラムの programId このコントロールは、一部です。 作成時に必要です。                            |
+| `controlId`              |`String`                | コントロールの処理、特にアクセスの id を確認します。 作成時に必要です。                                                |
+| `controlTypeId`          |`String`                | ProgramControlType は、プログラムの制御の種類を識別 - たとえば、ゲスト アクセスへのリンク コントロールを確認します。 作成時に必要です。 |
 | `displayName`            |`String`                | コントロールの名前です。                                                             |
 | `status`                 |`String`                | コントロールのライフ サイクルの状態です。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 作成日付と時刻のコントロールです。                                        |
 | `owner`                  |[割り当てられていません](useridentity.md)   | プログラムのコントロールを作成したユーザー。                                               |
-| `resource`               | [programResource](programresource.md)       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
+| `resource`               |`programResource`       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 | `program`                |[プログラム](program.md)               | このコントロールの一部であるプログラムです。                                                |

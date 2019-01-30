@@ -1,17 +1,17 @@
 ---
-title: 呼び出しを作成します。
+title: 通話の作成
 description: 新しい呼び出しを作成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 60bd69bbef636f9e46f8f50a124b9a5a246dbe63
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573943"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643574"
 ---
-# <a name="create-call"></a>呼び出しを作成します。
+# <a name="create-call"></a>通話の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,6 +117,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

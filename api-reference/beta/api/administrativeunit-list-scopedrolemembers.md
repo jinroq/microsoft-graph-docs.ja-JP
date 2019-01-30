@@ -4,12 +4,12 @@ description: ScopedRoleMembership リソースの一覧を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 06ed1a4f06b3d348e81039b5701f5adff9e3b85b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4254723a4902772cf45b1af024058a32192bc8fb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576137"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641793"
 ---
 # <a name="list-scopedrolemembers"></a>リスト scopedRoleMembers
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "@odata.type": "microsoft.graph.scopedrolemembership",
   "isCollection": true
 } -->
 ```http

@@ -4,12 +4,12 @@ description: 連絡先は、連絡を取り合う人や組織に関する情報�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576858"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642451"
 ---
 # <a name="contact-resource-type"></a>contact リソース型
 
@@ -31,9 +31,9 @@ ms.locfileid: "29576858"
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
     "photo",
-    "singleValueLegacyExtendedProperty"
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -85,7 +85,7 @@ ms.locfileid: "29576858"
 |:---------------|:--------|:----------|
 |assistantName|String|連絡先のアシスタントの名前。|
 |birthday|DateTimeOffset|連絡先の誕生日です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|categories|String コレクション|連絡先に関連付けられたカテゴリ。 各カテゴリは、ユーザーに対して定義されている[outlookCategory](outlookcategory.md)の**表示名**のプロパティに対応します。|
+|categories|String コレクション|連絡先に関連付けられたカテゴリ。 各カテゴリは、ユーザーに対して定義されている [outlookCategory](outlookcategory.md) の **displayName** プロパティに対応しています。|
 |changeKey|String|連絡先のバージョンを識別します。連絡先を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |children|String コレクション|連絡先の子供の名前。|
 |companyName|String|連絡先の会社の名前。|
@@ -125,9 +125,9 @@ ms.locfileid: "29576858"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|連絡先に対して定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 |写真|[photo](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|

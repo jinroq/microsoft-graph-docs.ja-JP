@@ -4,12 +4,12 @@ description: テーブル オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aca860bb5896a8de43ea7479ad103deab6c0294e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 296fac43d0aa415effd35f4477994bd38763cf86
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570681"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642052"
 ---
 # <a name="list-tablecollection"></a>TableCollection の一覧表示
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[workbookTable](../resources/table.md)オブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Table](../resources/table.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable",
+  "@odata.type": "microsoft.graph.table",
   "isCollection": true
 } -->
 ```http

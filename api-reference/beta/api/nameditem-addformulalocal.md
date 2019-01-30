@@ -2,12 +2,12 @@
 title: 名前付きアイテム FormulaLocal の追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: d17734e4bdc407f6c24204f54f486d35d990d140
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574601"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643973"
 ---
 # <a name="add-named-item-formulalocal"></a>名前付きアイテム FormulaLocal の追加
 ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
@@ -39,13 +39,13 @@ POST /workbook/worksheets({id|name})/names/add
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|名前付きのアイテムの名前。|
-|formula|文字列|名前が参照する数式または範囲。|
-|comment|文字列|名前付きアイテムに関連付けられているコメント。|
+|name|string|名前付きのアイテムの名前。|
+|formula|string|名前が参照する数式または範囲。|
+|comment|string|名前付きアイテムに関連付けられているコメント。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[workbookNamedItem](../resources/workbooknameditem.md)のオブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [NamedItem](../resources/nameditem.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -74,7 +74,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookNamedItem"
+  "@odata.type": "microsoft.graph.namedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

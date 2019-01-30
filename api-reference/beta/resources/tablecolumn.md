@@ -4,12 +4,12 @@ description: テーブル内にある 1 つの列を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10c5dbffcb5460ea029368a4c9b6dcfb6c21f256
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574664"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643102"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "29574664"
 |id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
 |name|文字列|テーブル列の名前を取得します。読み取り専用です。|
-|values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|

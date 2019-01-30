@@ -5,22 +5,22 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d3d164c2d4f349b605823af3273ae84f6eea3627
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576039"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641191"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを一覧表示します。
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サイトの[サイト](../resources/site.md)内のサイトのページ[] ボックスの一覧](../resources/list.md)から、[サイト ページ](../resources/sitepage.md)のコレクションを取得します。 (改ページ) では、サイト内のすべてのページが返されます。
+サイトの[サイト][]内のサイトのページ[] ボックスの一覧][]から [サイト ページ] のコレクションを取得します。 (改ページ) では、サイト内のすべてのページが返されます。
 
-[sitePage](../resources/sitepage.md)
-[リスト](../resources/list.md)
-[サイト](../resources/site.md)
+[sitePage]: ../resources/sitepage.md
+[list]: ../resources/list.md
+[サイト]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -51,16 +51,9 @@ GET /sites/{site-id}/pages
 
 #### <a name="response"></a>応答
 
-<!-- 
-{ 
-    "blockType": "response", 
-    "@odata.type": "microsoft.graph.sitePage", 
-    "truncated": true,
-    "isCollection" : true
-} 
--->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -125,12 +118,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
+                            "query": { ... },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
+                            "displayMaps": { ... },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -140,7 +133,7 @@ Content-type: application/json
             ]
         },
         {
-            "id": "2",
+            "id": 2,
             "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",

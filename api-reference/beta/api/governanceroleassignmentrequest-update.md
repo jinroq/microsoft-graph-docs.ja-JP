@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequests を更新します。
 description: 管理者が意思決定を更新するを有効にする (`AdminApproved`または`AdminDenied`) の状態にある governanceRoleAssignmentRequests の`PendingAdminDecision`。
 localization_priority: Normal
-ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576529"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643263"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests を更新します。
 
@@ -44,7 +44,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |:-------------|:----------------------|:--------|:----------|
 |理由        |String                 |✓        |彼の意思決定の管理者によって提供されている理由です。|
 |意思決定        |String                 |✓        |役割の割り当て要求の管理者の意思決定します。 として値を更新する必要があります`AdminApproved`または`AdminDenied`。|
-|スケジュール      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュールです。 状態の`AdminApproved`、これは必須です。|
+|スケジュール      |[governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュールです。 状態の`AdminApproved`、これは必須です。|
 |assignmentState      |String|         | 割り当て、および値の状態は、`Eligible`または`Active`。 意思決定の`AdminApproved`、これは必須です。 |
 ### <a name="response"></a>応答
 このメソッドは、要求の状態にあるにのみ適用できます`PendingAdminDecision`。

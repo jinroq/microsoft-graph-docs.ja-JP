@@ -4,12 +4,12 @@ description: 'Azure AD にアクセス確認機能を`accessReview`、アクセ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a02cc7cfe74bf9f12c4e2a8568c764934cb0c842
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576347"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642493"
 ---
 # <a name="accessreview-resource-type"></a>accessReview リソースの種類
 
@@ -49,20 +49,20 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 機能に割り当てられた一意の識別子アクセス レビューします。 |
-| `displayName`             |`String`                                                        | アクセス確認の名前です。 必要なを作成します。 |
-| `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付可能性があります。  必要なを作成します。 |
-| `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。  必要なを作成します。 |
+| `displayName`             |`String`                                                        | アクセス確認の名前です。 作成時に必要です。 |
+| `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付可能性があります。  作成時に必要です。 |
+| `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。  作成時に必要です。 |
 | `status`                  |`String`                                                        | この読み取り専用フィールドは、accessReview のステータスを指定します。 標準的な状態には、 `Initializing`、 `NotStarted`、 `Starting`、`InProgress`、 `Completing`、 `Completed`、`AutoReviewing`と`AutoReviewed`。 |
 | `description`             |`String`                                                        | アクセス レビュー作成者は、校閲者を表示して説明します。 |
-| `businessFlowTemplateId`  |`String`                                                        | 業務フローのテンプレートの識別子です。 必要なを作成します。 |
-| `reviewerType`            |`String`                                                        | 関連付けの種類、対象のオブジェクトのいずれかの校閲者の`self`、`delegated`または`entityOwners`。 必要なを作成します。 | 
+| `businessFlowTemplateId`  |`String`                                                        | 業務フローのテンプレートの識別子です。 作成時に必要です。 |
+| `reviewerType`            |`String`                                                        | 関連付けの種類、対象のオブジェクトのいずれかの校閲者の`self`、`delegated`または`entityOwners`。 作成時に必要です。 | 
 | `createdBy`               |[割り当てられていません](useridentity.md)                                 | このレビューを作成したユーザー。 |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス権を確認するオブジェクトがアクセス権限の割り当てを確認します。 グループでは、ユーザーのグループ メンバーシップの確認のため、またはアプリケーションへのユーザーの割り当ての詳細についてはアプリケーションを使用できます。 必要なを作成します。 | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス権を確認するオブジェクトがアクセス権限の割り当てを確認します。 グループでは、ユーザーのグループ メンバーシップの確認のため、またはアプリケーションへのユーザーの割り当ての詳細についてはアプリケーションを使用できます。 作成時に必要です。 | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview の設定は、以下の種類の定義を参照してください。 |
 
 
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 
 
@@ -104,10 +104,10 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.useridentity",
- "reviewedEntity": "microsoft.graph.entity",
- "settings": "microsoft.graph.entity",
- "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
+ "createdBy": "microsoft.graph.userIdentity",
+ "reviewedEntity": "microsoft.graph.identity",
+ "settings": "microsoft.graph.accessReviewSettings",
+ "reviewers": "Collection(microsoft.graph.userIdentity)"
 }
 
 ```

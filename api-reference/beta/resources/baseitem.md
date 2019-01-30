@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: bf1b0c71491f502f6a047f7c174516d2dcbf0f6e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577418"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641562"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem リソースの種類
 
@@ -30,8 +30,6 @@ ms.locfileid: "29577418"
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
-  "abstract": true,
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -57,24 +55,15 @@ ms.locfileid: "29577418"
 | id                   | string            | ドライブの一意識別子。読み取り専用。                                         |
 | createdBy            | [identitySet][]   | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。        |
 | createdDateTime      | dateTimeOffset    | アイテム作成の日時。読み取り専用です。                                             |
-| 説明          | String            | ユーザーに表示されている項目の説明を提供します。 省略可能。                             |
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。 |
 | lastModifiedDateTime | dateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。                                   |
-| name                 | 文字列            | アイテムの名前。読み取り/書き込み。                                                      |
+| name                 | string            | アイテムの名前。読み取り/書き込み。                                                      |
 | parentReference      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。                              |
 | webUrl               | string (URL)      | ブラウザーでリソースを表示するための URL。読み取り専用です。                              |
 
-## <a name="relationships"></a>関係
-
-| リレーションシップ       | 型     | 説明
-|:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | アイテムを作成したユーザーの ID です。 読み取り専用です。
-| lastModifiedByUser | [user][] | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
-
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
 
 ## <a name="remarks"></a>備考
 

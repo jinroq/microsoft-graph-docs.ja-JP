@@ -4,12 +4,12 @@ description: '**InvitationParticipant**は、会話への招待に関連付け�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573600"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641919"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "29573600"
 
 | プロパティ                           | 型                          | 説明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | 使用可能な値は、`default`、`voicemail` です。 |
+| endpointType                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
 | identity                           | [identitySet](identityset.md) | この招待状に関連付けられている[identitySet](identityset.md) 。                   |
 | languageId                         | String                        | 言語カルチャの文字列です。                                                                                     |
 | 地域                             | String                        | 参加者の領域です。                                                           |
@@ -40,7 +40,7 @@ ms.locfileid: "29573600"
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

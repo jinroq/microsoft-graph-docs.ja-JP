@@ -4,12 +4,12 @@ description: グラフ要素の塗りつぶしの色をクリアします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6a053814b1be4fdee947d4d28911263b7e53d55d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573040"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641947"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -40,7 +40,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
@@ -62,7 +61,8 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK

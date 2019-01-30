@@ -2,18 +2,18 @@
 title: synchronizationJobRestartCriteria リソースの種類
 description: 'スコープを定義します[synchronizationJob: 再起動](../api/synchronization_synchronizationjob_restart.md)アクション。'
 localization_priority: Normal
-ms.openlocfilehash: 960bfa56d0bb6921ca971722d894d1b837bfab49
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572305"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642521"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-スコープを定義します[synchronizationJob: 再起動](../api/synchronization-synchronizationjob-restart.md)アクション。
+スコープを定義します[synchronizationJob: 再起動](../api/synchronization_synchronizationjob_restart.md)アクション。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

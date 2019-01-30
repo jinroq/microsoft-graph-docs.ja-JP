@@ -2,12 +2,12 @@
 title: ポリシー リソースの種類
 description: Azure AD ポリシーを表します。 ポリシーは、アプリケーション、サービス ・ プリンシパル、グループ、または組織に割り当てられている全体に適用することができますカスタム ルールです。 現在だけがポリシーの 1 つのタイプがあります。
 localization_priority: Normal
-ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576200"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642129"
 ---
 # <a name="policy-resource-type"></a>ポリシー リソースの種類
 
@@ -28,12 +28,12 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 |[ポリシーを削除します。](../api/policy-delete.md)|なし|ポリシー オブジェクトを削除します。|
 |[ポリシーを割り当てる](../api/policy-assign.md)|なし|サービス主体のアプリケーションにポリシーを割り当てます。|
 |[リスト ポリシー](../api/policy-list.md)|ポリシー コレクション|組織内のすべてのポリシー オブジェクトを取得します。|
-|[リストが割り当てられているポリシー](../api/policy-list-assigned.md)|ポリシー コレクション|アプリケーションまたはサービス ・ プリンシパルに割り当てられているすべてのポリシー オブジェクトを取得します。|
+|[割り当てられているポリシーを一覧表示する](../api/policy-list-assigned.md)|ポリシー コレクション|アプリケーションまたはサービス ・ プリンシパルに割り当てられているすべてのポリシー オブジェクトを取得します。|
 
 ### <a name="common-properties"></a>共通プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|definition|String コレクション|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
+|definition|String|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
 |displayName|String|ポリシーに独自の名前です。 必須です。|
 |IsOrganizationDefault|Boolean|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
 |type|String|ポリシーの種類を指定します。 現在"TokenLifetimePolicy"をする必要があります。 必須です。|
@@ -70,13 +70,6 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.policy"
-}-->
 
 ```json
 {

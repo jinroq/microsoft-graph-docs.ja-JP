@@ -4,12 +4,12 @@ description: グラフ要素の塗りつぶしの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 17c123a3fb8c1fe2f2dd6f09b1fda3695bad0404
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ca968737007e5c1dfc223a45d2c2aeb3a0d12c3e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577138"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641884"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill リソースの種類
 
@@ -30,21 +30,6 @@ ms.locfileid: "29577138"
 
 ## <a name="relationships"></a>関係
 なし
-
-
-## <a name="json-representation"></a>JSON 表記
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartFill"
-}-->
-
-```json
-{
-}
-```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

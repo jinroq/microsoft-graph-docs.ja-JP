@@ -4,12 +4,12 @@ description: グラフの軸を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f2a3744e38ffebef0c28784c0fd4be8f35b8af23
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df18ff1902dd750ef44311e2924a7e63e0ba0e58
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570863"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644078"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes リソースの種類
 
@@ -27,29 +27,9 @@ ms.locfileid: "29570863"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](chartaxis.md)|グラフの項目軸を表します。値の取得のみ可能です。|
-|seriesAxis|[WorkbookChartAxis](chartaxis.md)|3 次元グラフの系列軸を表します。値の取得のみ可能です。|
-|valueAxis|[WorkbookChartAxis](chartaxis.md)|軸の数値軸を表します。値の取得のみ可能です。|
-
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxes"
-}-->
-
-```json
-{
-  "categoryAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
-  "seriesAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
-  "valueAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"}
-}
-
-```
+|categoryAxis|[ChartAxis](chartaxis.md)|グラフの項目軸を表します。値の取得のみ可能です。|
+|seriesAxis|[ChartAxis](chartaxis.md)|3 次元グラフの系列軸を表します。値の取得のみ可能です。|
+|valueAxis|[ChartAxis](chartaxis.md)|軸の数値軸を表します。値の取得のみ可能です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

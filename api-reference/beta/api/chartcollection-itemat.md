@@ -4,12 +4,12 @@ description: コレクション内での位置を基にグラフを取得しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 089977be0993f8ed5930b5a29c3b5ee880c6bc34
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 82e5d79ee4498a5b5b4e2fc2adc0461aec13cae4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575941"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643679"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -42,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|index|Int32|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
+|index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookChart](../resources/chart.md)オブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[グラフ](../resources/chart.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -54,10 +54,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "isComposable": true,
-  "name": "chartcollection_itemat",
-  "idempotent": true,
-  "@type": "requestBodyResourceFor.chartcollection_itemat"
+  "name": "chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -65,7 +62,8 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": 8
+  "index": {
+  }
 }
 ```
 
@@ -74,7 +72,7 @@ Content-length: 20
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 200 OK

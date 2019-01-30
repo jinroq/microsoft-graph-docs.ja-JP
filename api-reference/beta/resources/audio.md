@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd1f1af0e1ddcd1d56853c708da7ba03be740812
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573635"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642276"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 
@@ -50,11 +50,11 @@ ms.locfileid: "29573635"
 | **album**             | string  | このオーディオ ファイルのアルバムのタイトル。                          |
 | **albumArtist**       | string  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
 | **artist**            | string  | オーディオ ファイルの歌手や奏者。                            |
-| **bitrate**           | Int64   | kbps 単位で表されるビットレート。                                           |
+| **bitrate**           | Int32   | kbps 単位で表されるビットレート。                                           |
 | **composers**         | string  | オーディオ ファイルの作曲者の名前。                          |
 | **copyright**         | string  | オーディオ ファイルの著作権情報。                            |
-| **disc**              | Int16 型   | このオーディオ ファイルの元のディスクの番号。                    |
-| **discCount**         | Int16 型   | このアルバムの合計ディスク数。                             |
+| **disc**              | Int32   | このオーディオ ファイルの元のディスクの番号。                    |
+| **discCount**         | Int32   | このアルバムの合計ディスク数。                             |
 | **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
 | **genre**             | string  | このオーディオ ファイルのジャンル。                                        |
 | **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |

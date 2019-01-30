@@ -4,12 +4,12 @@ description: chartlineformat オブジェクトのプロパティと関係を読
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4750168617058a9d46ef4cb90fc91a0fbb0a89d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a84e0d9c31f08ac8fe6396cb73e2fd7fb0993e0c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570716"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643938"
 ---
 # <a name="get-chartlineformat"></a>Get ChartLineFormat
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartLineFormat"
+  "@odata.type": "microsoft.graph.chartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -1,15 +1,15 @@
 ---
-title: リスト oauth2PermissionGrants
+title: oauth2PermissionGrants を一覧表示する
 description: Oauth2PermissionGrant オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 4a3ab48b4ab3162fd2222bc98f261d4f12c8d39a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572641"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643256"
 ---
-# <a name="list-oauth2permissiongrants"></a>リスト oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants"></a>oauth2PermissionGrants を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
   "isCollection": true
 } -->
 ```http

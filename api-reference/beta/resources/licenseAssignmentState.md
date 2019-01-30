@@ -2,12 +2,12 @@
 title: licenseAssignmentState リソースの種類
 description: 'ユーザー エンティティの**licenseAssignmentStates**プロパティは、 **licenseAssignmentState**のコレクションです。 ユーザー ライセンスの割り当てに関する詳細情報を提供します。 詳細には、ような情報が含まれています。  '
 localization_priority: Normal
-ms.openlocfilehash: f2f905baaba4dddd65266ffafab44febe7a61139
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a33dce3550d5a842493b73c83e8222a579348c9a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575182"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641681"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState リソースの種類
 
@@ -24,8 +24,8 @@ ms.locfileid: "29575182"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|assignedByGroup|文字列|このライセンスを割り当てられるグループの id。 割り当てがダイレクトに割り当てられたライセンスの場合は、このフィールドは Null になります。 読み取り専用です。|
-|disabledPlans| String コレクション |この割り当て内で無効になっているサービス プランです。 読み取り専用です。|
+|assignedByGroup|string|このライセンスを割り当てられるグループの id。 割り当てがダイレクトに割り当てられたライセンスの場合は、このフィールドは Null になります。 読み取り専用です。|
+|disabledPlans|Collection(String)|この割り当て内で無効になっているサービス プランです。 読み取り専用です。|
 |エラー|String|ライセンスの割り当てエラーです。 ライセンスが正常に割り当てられると、このフィールドが Null になります。 読み取り専用です。 使用可能な値: `CountViolation`、 `MutuallyExclusiveViolation`、 `DependencyViolation`、 `ProhibitedInUsageLocationViolation`、`UniquenessViolation`と`Others`。 エラーを特定し、ライセンスの割り当てを解決する方法の詳細について参照してください[ここで](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
 |skuId|String|SKU の一意識別子。 読み取り専用です。|
 |state|String|この割り当ての現在の状態を示します。 読み取り専用です。 使用可能な値: アクティブ、ActiveWithError、無効になり、エラーです。|
@@ -33,11 +33,7 @@ ms.locfileid: "29575182"
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.licenseAssignmentState"
-}-->
+
 ```json
 {
   "assignedByGroup": "String",

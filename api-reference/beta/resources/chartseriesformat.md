@@ -4,12 +4,12 @@ description: グラフ系列の書式設定プロパティをカプセル化し�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c5fdfffdf5bcf6aeefc5068392f689cbf66d683d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 739da09fccc1d2c40b103397b8a10e91eab39fdf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573586"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643207"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat リソースの種類
 
@@ -27,28 +27,8 @@ ms.locfileid: "29573586"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|グラフ系列の塗りつぶしの書式を表します。これには背景の書式設定情報などがあります。値の取得のみ可能です。|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|線の書式設定を表します。値の取得のみ可能です。|
-
-
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
-}
-```
-
+|fill|[ChartFill](chartfill.md)|グラフ系列の塗りつぶしの書式を表します。これには背景の書式設定情報などがあります。値の取得のみ可能です。|
+|line|[ChartLineFormat](chartlineformat.md)|線の書式設定を表します。値の取得のみ可能です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

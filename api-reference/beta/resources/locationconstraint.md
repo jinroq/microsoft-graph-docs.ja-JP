@@ -2,12 +2,12 @@
 title: locationConstraint リソースの種類
 description: 会議の場所に関して、クライアントが表明している条件です。
 localization_priority: Normal
-ms.openlocfilehash: e15acbac529179b0d79fd8b9b52f691fa9ef1322
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f311ceae1718333ba6ffca55f046317d6da53705
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573033"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642801"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "29573033"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationConstraint"
+  "@odata.type": "microsoft.graph.locationconstraint"
 }-->
 
 ```json

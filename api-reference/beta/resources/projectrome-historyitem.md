@@ -3,12 +3,12 @@ title: historyItem リソースの種類
 description: アプリケーション内のアクティビティの履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 582cfe71ab85602efc087d5e39005d5a9763394d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576305"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640589"
 ---
 # <a name="historyitem-resource-type"></a>historyItem リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "29576305"
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|status | 列挙型文字列 | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
+|status | EnumType | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
 |userTimezone | String | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンです。 クロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
 |createdDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが作成されたときの utc 日時。|
 |lastModifiedDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが変更されたときの utc 日時。|
@@ -39,7 +39,7 @@ ms.locfileid: "29576305"
 |expirationDateTime | DateTimeOffset | 省略可能。 **HistoryItem**がハード削除を行うときの UTC 日時。 クライアントによって設定できます。|
 |activeDurationSeconds | int | 省略可能。 アクティブなユーザーの活動の期間です。 指定されなかった場合、この**startedDateTime**と**lastActiveDateTime**から計算されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 |リレーションシップ | 型 | 説明|
 |:------------|:-----|:-----------|
@@ -61,7 +61,7 @@ ms.locfileid: "29576305"
 
 ```json
 {
-    "status": "enum-string",
+    "status": "String (EnumType)",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

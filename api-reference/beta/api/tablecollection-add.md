@@ -4,12 +4,12 @@ description: 新しいテーブルを作成します。範囲のソース アド
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d8b317bc3e7d91a17039b76199e0db830491e5ad
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a4d96ba219ffe10d0bb0a4e5d414fd474490e84a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571773"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641212"
 ---
 # <a name="tablecollection-add"></a>TableCollection: 追加
 
@@ -49,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/add
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。|
-|hasHeaders|boolean|インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
+|hasHeaders|ブール値|インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[workbookTable](../resources/table.md)のオブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[テーブル](../resources/table.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -79,7 +79,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 } -->
 ```http
 HTTP/1.1 200 OK

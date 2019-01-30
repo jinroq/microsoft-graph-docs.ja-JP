@@ -4,12 +4,12 @@ description: 複合型のプロパティ情報にはが含まれています。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 8cc7e686aebd531a25b6c1637fcf99338df09396
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572298"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642759"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference リソースの種類
 
@@ -20,15 +20,7 @@ ms.locfileid: "29572298"
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.resourceReference"
-}-->
+
 ```json
 {
   "webUrl": "string",

@@ -4,12 +4,12 @@ description: 'メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 669f1a81f76decf8103b7d6e6acba2fb93c458dc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575745"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643420"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -35,8 +35,8 @@ ms.locfileid: "29575745"
     "attachments",
     "event",
     "extensions",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.eventMessage"
 }-->
@@ -69,10 +69,10 @@ ms.locfileid: "29575745"
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
-  "meetingMessageType": "none | meetingRequest | meetingCancelled | meetingAccepted | meetingTenativelyAccepted | meetingDeclined",
+  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -109,7 +109,7 @@ ms.locfileid: "29575745"
 |inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で指定された形式でメッセージの ID です。 |
-|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
+|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
@@ -117,7 +117,7 @@ ms.locfileid: "29575745"
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[location](location.md)|要求された会議の場所です。|
-|meetingMessageType| 列挙型文字列 | イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
+|meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|要求された会議の定期的なパターンです。|
@@ -139,8 +139,8 @@ ms.locfileid: "29575745"
 |attachments|[attachment](attachment.md) コレクション|メッセージの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
 |event|[event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[extension](extension.md) コレクション| eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 

@@ -3,12 +3,12 @@ title: DriveItemVersion リソースの種類
 description: '**DriveItemVersion**リソースは、DriveItem の特定のバージョンを表します。'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5b6e9ecd2c3c8ec14958cfa2645f8fb0dbfe30e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949592"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643987"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -24,7 +24,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 | [バージョンの一覧表示][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [コンテンツの取得][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -55,7 +55,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="properties"></a>プロパティ
 
-|      プロパティ名       |                         Type                         |                               説明                               |
+|      プロパティ名       |                         型                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |

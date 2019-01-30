@@ -4,12 +4,12 @@ description: chartAxis オブジェクトのプロパティと関係を取得し
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9fd966aa8cfa0ebd39d586d36f952e144989072f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 98ce124c35fa39c6ad2ae41565b7ef180ff57c55
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571710"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642101"
 ---
 # <a name="get-chartaxis"></a>Get ChartAxis
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartAxis"
+  "@odata.type": "microsoft.graph.chartaxis"
 } -->
 ```http
 HTTP/1.1 200 OK

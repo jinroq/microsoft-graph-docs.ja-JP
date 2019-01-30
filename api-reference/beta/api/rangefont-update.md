@@ -4,12 +4,12 @@ description: rangefont オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 06ca64783c516e681c871acda76c8e26f1137b63
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5857941f8c08c9090ba05098ae1d69a34dead791
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572011"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643060"
 ---
 # <a name="update-rangefont"></a>ｒangefont を更新する
 
@@ -43,12 +43,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bold|boolean|フォントの太字の状態を表します。|
+|bold|ブール値|フォントの太字の状態を表します。|
 |color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
-|italic|boolean|フォントの斜体の状態を表します。|
+|italic|ブール値|フォントの斜体の状態を表します。|
 |name|文字列|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ|
-|underline| 列挙型文字列 |フォントに適用する下線の種類。可能な値は、`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant` です。|
+|underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant` です。|
 
 ## <a name="response"></a>応答
 
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### <a name="response"></a>応答
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

@@ -2,12 +2,12 @@
 title: Approleassignment を更新します。
 description: Approleassignment オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572914"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643476"
 ---
 # <a name="update-approleassignment"></a>Approleassignment を更新します。
 
@@ -41,11 +41,11 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|交付が作成された時刻。|
-|ID|Guid|プリンシパルに割り当てられたロールの id です。  この役割は、 **appRoles**プロパティにターゲットのリソース アプリケーション**引数 resourceId**で宣言されなければなりません。 リソースですべてのアクセス許可が宣言されていない場合は、デフォルトの id (GUID は 0) を指定してください。                            **注**: Null は許容されません。            |
-|principalDisplayName|String|アクセス権を与えられたプリンシパルの表示名。|
+|id|Guid|プリンシパルに割り当てられたロール ID です。  このロールは、**appRoles** プロパティのターゲット リソース アプリケーション **resourceId** によって宣言される必要があります。 リソースがアクセス許可を宣言していない場合は、既存の ID (ゼロ GUID) を指定する必要があります。                            **注**: Null は許容されません。            |
+|principalDisplayName|String|アクセス権が付与されているプリンシパルの表示名。|
 |principalId|Guid|アクセスを付与されているプリンシパルの一意の識別子 (**オブジェクト Id**) です。                            **メモ**: 必要です。            |
-|principalType|String|プリンシパルの種類。  「ユーザー」、「グループ」または"ServicePrincipal"指定できます。|
-|resourceDisplayName|String|割り当てが作成するリソースの表示名。|
+|principalType|String|プリンシパルの種類。  "User"、"Group"、"ServicePrincipal" のいずれかを指定できます。|
+|resourceDisplayName|String|割り当てが作成されたリソースの表示名。|
 |resourceId|Guid|割り当てが作成する対象のリソース (サービス主体) の一意の識別子 (**オブジェクト Id**) です。|
 
 ## <a name="response"></a>応答
@@ -76,7 +76,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

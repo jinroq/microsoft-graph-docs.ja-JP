@@ -2,15 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: driveItemVersion
+title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528971"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642024"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -28,7 +28,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 | [バージョンの一覧表示][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [コンテンツの取得][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -58,7 +58,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 | **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 | **size**                 | Int64                                                | アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。  |
 
 ## <a name="relationships"></a>リレーションシップ

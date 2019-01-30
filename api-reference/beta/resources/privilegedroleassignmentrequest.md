@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Id 管理の役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: a0cb0bc03d8bb2436e45139bc9db5322cc3970cf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571749"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642430"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 
@@ -21,10 +21,10 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 
 | メソッド       | 戻り値の型 | 説明 |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)コレクション|役割の割り当て要求を一覧表示します。|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|既存または新しい役割の割り当てのライフ サイクルを管理するために要求を作成します。|
+|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)コレクション|役割の割り当て要求を一覧表示します。|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|既存または新しい役割の割り当てのライフ サイクルを管理するために要求を作成します。|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |保留中の役割の割り当て要求をキャンセルします。|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |リクエスターが現在の役割の割り当て要求を取得します。|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |現在の requstor の役割の割り当て要求を取得します。|
 
 ## <a name="properties"></a>プロパティ
 
@@ -36,14 +36,14 @@ Privilegd Id 管理の役割の割り当て操作の要求を表します。
 |理由|String| ロールの割り当ての理由です。|
 |requestedDateTime|DateTimeOffset| 読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |roleId|String| ロールの id です。|
-|スケジュール|[microsoft.graph.governanceSchedule](governanceschedule.md)| 役割の割り当て要求のスケジュール オブジェクトです。|
+|スケジュール|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求のスケジュール オブジェクトです。|
 |status|String| 役割の割り当て要求の読み取り only.The 状態です。 値は、 `NotStarted`、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。|
 |ticketNumber|String| ロールの割り当てを ticketNumber。 |
 |ticketSystem|String| ロールの割り当てを ticketSystem。|
 |type|String| 表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。|
 |userId|String| ユーザーの id です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型        | 説明 |
 |:-------------|:------------|:------------|
 |roleInfo|[privilegedRole](privilegedrole.md)| 役割の割り当て要求の roleInfo オブジェクトです。|

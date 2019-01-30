@@ -4,12 +4,12 @@ description: グラフ軸のタイトルの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aeb39c46b349bda9f71385d13ef8e9ab17320823
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 188561f3e34063b6006cebd84283b8455686ed84
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575920"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639931"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat リソースの種類
 
@@ -27,24 +27,7 @@ ms.locfileid: "29575920"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
-
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxisTitleFormat"
-}-->
-
-```json
-{
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
+|font|[ChartFont](chartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

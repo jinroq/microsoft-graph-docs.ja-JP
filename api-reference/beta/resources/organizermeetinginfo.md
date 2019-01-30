@@ -4,12 +4,12 @@ description: 会議については、会議の開催者を含みます。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1aa72e37e1f2332b10fd5aecc38b1b8d42ce1303
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575007"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641996"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo リソースの種類
 
@@ -33,13 +33,12 @@ ms.locfileid: "29575007"
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 

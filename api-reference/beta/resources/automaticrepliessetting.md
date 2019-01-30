@@ -2,12 +2,12 @@
 title: automaticRepliesSetting リソースの種類
 description: 'メッセージを受信したメールの送信者に自動的に通知する設定を構成します '
 localization_priority: Normal
-ms.openlocfilehash: 6755fda99f7a6186316b6198bfa975d73e14b09b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5ff16aa93042e0d66063cb62de7a8dcdf870c892
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576774"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641254"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting リソースの種類
 
@@ -19,12 +19,12 @@ ms.locfileid: "29576774"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|externalAudience|externalAudienceScope| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。 可能な値: `none`、 `contactsOnly`、 `all`。|
-|externalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
-|internalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
+|externalAudience|String| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。可能な値は、`none`、`contactsOnly`、`all` です。|
+|externalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
+|internalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を終了する日時。 |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を開始する日時。|
-|status|automaticRepliesStatus|自動応答の構成状態です。 可能な値: `disabled`、 `alwaysEnabled`、 `scheduled`。|
+|status|String|自動応答の構成状態。可能な値は、`disabled`、`alwaysEnabled`、`scheduled` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -3,12 +3,12 @@ title: アクティビティのリソースの種類
 description: -テレビ番組、ドキュメント、ビデオ ゲームの現在のキャンペーンなど、アプリケーション内で 1 つのアクティビティを表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3d05c684d9498378a07a944f7aebd5e8a6b97f53
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573838"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641275"
 ---
 # <a name="activity-resource-type"></a>アクティビティのリソースの種類
 
@@ -48,9 +48,9 @@ Cortana およびタイムラインの Windows ユーザー エクスペリエ�
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必須です。 エクスペリエンスの利用状況を表示する情報を格納しているオブジェクト|
 |contentInfo | JSON オブジェクトの型指定されていません。 | 省略可能。 [Schema.org](https://schema.org)の構文に従ってコンテンツの拡張の説明を %ld 個の JSON データのカスタムの一部。|
 |expirationDateTime | DateTimeOffset | サーバーで設定します。 オブジェクトは、サーバー上で有効期限が切れたときの utc 日時。|
-|status | 列挙型文字列 | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
+|status | EnumType | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 |リレーションシップ | 型 | 説明|
 |:------------|:-----|:-----------|
@@ -87,7 +87,7 @@ Cortana およびタイムラインの Windows ユーザー エクスペリエ�
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "active | updated | deleted | ignored",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

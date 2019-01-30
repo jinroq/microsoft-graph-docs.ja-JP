@@ -4,12 +4,12 @@ description: table オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b056a4e2255d4f3627673cb93865ca521947d689
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2b78603a261145e2047b5e16175143a3b3c591e1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574958"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641744"
 ---
 # <a name="update-table"></a>テーブルを更新する
 
@@ -42,9 +42,9 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|テーブルの名前。|
-|showHeaders|boolean|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|
-|showTotals|boolean|集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。|
+|name|string|テーブルの名前。|
+|showHeaders|ブール値|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|
+|showTotals|ブール値|集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。|
 |style|文字列|テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
 
 ## <a name="response"></a>応答
@@ -74,7 +74,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 } -->
 ```http
 HTTP/1.1 200 OK

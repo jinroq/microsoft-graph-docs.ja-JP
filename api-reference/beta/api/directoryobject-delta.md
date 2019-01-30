@@ -4,12 +4,12 @@ description: 'Get を新規作成、更新、または、次の種類のディ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b00f86dcb3789a2117a23ffa20e6392e557910d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573257"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641366"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: デルタ
 
@@ -47,8 +47,8 @@ GET /directoryObjects/delta
 
 | クエリ パラメーター | 種類 |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数の `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
+| $deltatoken | string | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数の `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -108,8 +108,7 @@ GET /directoryObjects/delta
 要求の例を次に示します。 ありません`$select`パラメーター、プロパティの既定のセットが追跡され、返されるようにします。
 <!-- {
   "blockType": "request",
-  "name": "user_delta",
-  "truncated": true
+  "name": "user_delta"
 }-->
 
 ```http
@@ -151,7 +150,8 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null
+      "jobTitle": null,
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -160,7 +160,8 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp"
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -172,8 +173,11 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "jobTitle": "string"
-    }    
+      "id": "string (identifier)",
+      "jobTitle": "string",
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
@@ -183,8 +187,7 @@ Content-type: application/json
 次の使用例は、最小限に抑える別の応答の動作の使用を示しています。
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta",
-  "truncated": true
+  "name": "directoryObject_delta"
 }-->
 
 ```http
@@ -226,7 +229,8 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    }    
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
@@ -236,8 +240,7 @@ Content-type: application/json
 次の例は、最初の要求を使用して、`isOf`のユーザーとグループのエンティティのみを除外する演算子。
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta",
-  "truncated": true
+  "name": "directoryobject_delta"
 }-->
 
 ```http
@@ -277,7 +280,8 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null
+      "jobTitle": null,
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -286,8 +290,10 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp"      
-    }    
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```

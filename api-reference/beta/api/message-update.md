@@ -4,12 +4,12 @@ description: メッセージ オブジェクトのプロパティを更新しま
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 78f030e49f5e9caad5cf505be0118eee5b732752
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573670"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644050"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
@@ -54,10 +54,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 複数値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) コレクション| 複数値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
 |replyTo|Recipient collection|返信時に使用される電子メール アドレス。 更新可能な場合にのみ isDraft = true です。|
 |sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 [共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)、または[委任](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するメッセージを送信するときに更新します。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。|
-|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 単一値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) コレクション| 単一値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
 |subject|String|メッセージの件名。 更新可能な場合にのみ isDraft = true です。|
 |toRecipients|Recipient collection|宛先] の受信者のメッセージです。 |
 

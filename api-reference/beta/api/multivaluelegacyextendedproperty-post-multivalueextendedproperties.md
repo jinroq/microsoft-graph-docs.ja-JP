@@ -2,12 +2,12 @@
 title: 複数値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: 4ed9af6fda2117fee7ef1ac50c69c4f006abd45d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576263"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642255"
 ---
 # <a name="create-multi-value-extended-property"></a>複数値の拡張プロパティを作成する
 
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>要求本文
 
-リソース インスタンスの**multiValueLegacyExtendedProperty**コレクション プロパティには、各[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)オブジェクトの JSON の本体を提供します。
+リソース インスタンスの **multiValueExtendedProperties** コレクション プロパティに、各 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
 
 |**プロパティ**|**型**|**説明**|
 |:-----|:-----|:-----|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
-|id|String|**MultiValueLegacyExtendedProperty**コレクション内の各プロパティのプロパティを識別するのにはこれを指定します。 サポートされている形式のいずれかに従う必要があります。 詳細については、 [Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)を参照してください。 必須です。|
-|value|文字列|**MultiValueLegacyExtendedProperty**コレクション内の各プロパティのプロパティ値を指定します。 必須です。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
+|id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
+|value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
 
-だけでなく、新しい**multiValueLegacyExtendedProperty**コレクションの_新しい_リソースのインスタンスで拡張プロパティを作成するときは、そのリソースのインスタンス (つまり、[メッセージ](../resources/message.md)は、 [mailFolder](../resources/mailfolder.md)の JSON 表現を提供します。、[イベント](../resources/event.md)などです。)
+_新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **multiValueExtendedProperties** コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。
 
 ## <a name="response"></a>応答
 
@@ -178,7 +178,7 @@ _新しい_グループ投稿に拡張プロパティを作成する場合、応
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
 
-最初の例では、POST 操作を同時にすべての新しいイベントのプロパティを拡張する複数の値を作成します。 新しいイベントは、通常のプロパティとは別は、要求の本体には、1 つの拡張プロパティが含まれている**multiValueLegacyExtendedProperty**のコレクションが含まれています。 要求本文には、その複数値の拡張プロパティに関する次のものが含まれています。
+最初の例では、すべて同じ POST 操作の新しいイベントで複数値の拡張プロパティを作成します。新しいイベントに通常含まれるプロパティとは別に、要求の本文に 1 つの拡張プロパティを含む **multiValueExtendedProperties** コレクションが含まれます。要求本文には、その複数値の拡張プロパティに関する次のものが含まれています。
 
 - **id** 指定された GUID と名前 `Recreation` の文字列の配列としてプロパティを指定します。 
 - **value** は、3 つの文字列値 `["Food", "Hiking", "Swimming"]` の配列として `Recreation` を指定します。
@@ -219,7 +219,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -239,7 +239,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>要求 2
 
-2 番目の例では、指定したメッセージに対して 1 つの複数値の拡張プロパティを作成します。 **MultiValueLegacyExtendedProperty**コレクション内の唯一の要素は、プロパティを拡張します。 要求本文には、拡張プロパティに関する次のものが含まれています。
+2 番目の例では、指定したメッセージに対して 1 つの複数値の拡張プロパティを作成します。拡張プロパティは、**multiValueExtendedProperties** コレクションの唯一の要素です。要求本文には、拡張プロパティに関する次のものが含まれています。
 
 - **id** 指定された GUID と名前 `Palette` を使って、文字列の配列としてプロパティを指定します。
 - **value** 3 つの文字列値 `["Green", "Aqua", "Blue"]` の配列として `Palette` を指定します。
@@ -251,7 +251,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

@@ -4,12 +4,12 @@ description: グラフの系列のポイントを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8ede39ef53bfc39574ebfc86c8138a70fc31ad6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573068"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641968"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint リソースの種類
 
@@ -22,37 +22,35 @@ ms.locfileid: "29573068"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](chartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
-|[List](../api/chartpoint-list.md) | [workbookChartPoint](chartpoint.md)コレクション |chartPoint オブジェクトのコレクションを取得します。 |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
+|[Get ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
+|[List](../api/chartpoint-list.md) | [ChartPoint](chartpoint.md) コレクション |chartPoint オブジェクトのコレクションを取得します。 |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|value|Json|グラフのポイントの値を返します。値の取得のみ可能です。|
-|id|文字列|一意識別子|
+|value|object|グラフのポイントの値を返します。値の取得のみ可能です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|
+|format|[ChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

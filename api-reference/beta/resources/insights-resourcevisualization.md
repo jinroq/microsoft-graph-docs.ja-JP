@@ -4,31 +4,33 @@ description: 複合型のプロパティ情報にはが含まれています。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575105"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641296"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-複合型が[officeGraphInsights](insights.md)のプロパティを格納します。
+複合型のプロパティ[情報](insights.md)にはが含まれています。
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
 ```json
 {
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
 }
 ```
 

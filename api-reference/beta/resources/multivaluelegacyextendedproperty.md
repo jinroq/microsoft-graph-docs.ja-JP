@@ -2,12 +2,12 @@
 title: multiValueLegacyExtendedProperty リソースの種類
 description: 値のコレクションが含まれる拡張プロパティ。
 localization_priority: Normal
-ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575892"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643277"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "29575892"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|文字列|プロパティ識別子。読み取り専用です。|
+|id|string|プロパティ識別子。読み取り専用です。|
 |value|string collection|プロパティ値のコレクション。|
 
 ## <a name="relationships"></a>関係
@@ -43,7 +43,7 @@ ms.locfileid: "29575892"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
+  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
 }-->
 
 ```json

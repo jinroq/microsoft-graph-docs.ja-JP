@@ -4,12 +4,12 @@ description: オーディオのルーティング グループでは、通話参
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573019"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643172"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -24,14 +24,14 @@ ms.locfileid: "29573019"
 | メソッド                                                  | 戻り値の型                               | 説明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [AudioRoutingGroup を取得します。](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | AudioRoutingGroup オブジェクトのプロパティと関係を参照してください。|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者リストを更新します。                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
+| [更新する](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者リストを更新します。                       |
+| [削除する](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | 読み取り専用です。 サーバーを生成します。                                         |
+| id            | String            | 読み取り専用です。 サーバーによって生成されます。                                         |
 | 受信機     | 文字列コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |
 | routingMode   | String            | ルーティング グループのモードです。  使用可能な値は、`oneToOne`、`multicast` です。   |
 | ソース       | 文字列コレクション | ソースの構成要素の id の一覧です。                                      |
@@ -42,7 +42,7 @@ ms.locfileid: "29573019"
 
 > **注:** 多くのオーディオ ルーティング グループ (参加者ごとの bot など) を作成する場合は、4 最上位の優先度の高いスピーカーのオーディオのみが転送されます。 カスタマイズされたオーディオのルーティング グループを使用しても意味のスピーカーがおさまるように、メインのミキサーでない場合は、本人聞こえない bot でこのスピーカーと、bot のためだけのオーディオのプライベート グループがある場合でもします。
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -59,9 +59,9 @@ ms.locfileid: "29573019"
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "Guid" ],
+  "receivers": [ "String" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "Guid" ]
+  "sources": [ "String" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,15 +1,15 @@
 ---
-title: usedInsight リソースの種類
+title: リソースの種類を使用
 description: 特定のユーザーによって使用されるドキュメントを表すの把握。 詳細情報は、ユーザーが表示またはアクセスする最も適切なドキュメントを返します。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 056654a5e467e202b2bde5ac8ee98dccab93d7c9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574230"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642542"
 ---
 # <a name="used-resource-type"></a>リソースの種類を使用
 
@@ -35,21 +35,15 @@ ms.locfileid: "29574230"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、使用されているドキュメントのプロパティを参照。 読み取り専用     |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 | プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
-| リソース      | エンティティのコレクション | 使用された項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
+| リソース      | Entity        | 使用された項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.usedInsight"
-}-->
 ```json
 {
   "id": "string",

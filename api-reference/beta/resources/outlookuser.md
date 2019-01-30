@@ -4,12 +4,12 @@ description: ユーザーが利用できる Outlook サービスを表します�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f8265f9da285ce0f52e6201ffdb1298893b86753
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574097"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643546"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "29574097"
 |[OutlookTaskGroup を作成します。](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| ユーザーのメールボックスに Outlook のタスク グループを作成します。|
 |[TaskGroups のリスト](../api/outlookuser-list-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)コレクション| ユーザーのメールボックス内のすべての Outlook のタスク グループを取得します。|
 |[OutlookTask を作成します。](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| デフォルトのタスク グループに Outlook のタスクを作成する (`My Tasks`) と既定の作業フォルダー (`Tasks`) ユーザーのメールボックスにします。|
-|[List tasks](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md)コレクション| ユーザーのメールボックス内のすべての Outlook タスクを取得します。|
+|[List tasks](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md) コレクション| ユーザーのメールボックス内のすべての Outlook タスクを取得します。|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) コレクション | ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) ロケールと言語のリストを取得します。 |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) コレクション | ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) タイム ゾーンのリストを取得します。 |
 
@@ -43,19 +43,8 @@ ms.locfileid: "29574097"
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) コレクション| ユーザーに対して定義されているカテゴリのリスト。 | 
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md)コレクション| ユーザーの Outlook の仕事フォルダー。 読み取り専用です。 Null 許容型。|
 |taskGroups|[outlookTaskGroup](outlooktaskgroup.md)コレクション| ユーザーの Outlook のタスク グループ。 読み取り専用です。 Null 許容型。|
-|tasks|[outlookTask](outlooktask.md)コレクション| ユーザーの Outlook の仕事です。 読み取り専用です。 Null 許容型。|
+|tasks|[outlookTask](outlooktask.md) コレクション| ユーザーの Outlook の仕事です。 読み取り専用です。 Null 許容型。|
 
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.outlookUser"
-}-->
-```json
-{
-}
-
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

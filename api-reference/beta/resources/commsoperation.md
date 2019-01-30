@@ -4,12 +4,12 @@ description: 特定の実行時間の長い操作のステータス。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5a82020741033f81d5a4394f2e32b3f0f76a6e03
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575647"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642206"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation リソースの種類
 
@@ -26,12 +26,12 @@ ms.locfileid: "29575647"
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | クライアントのコンテキスト。                                                             |
 | createdDateTime    | DateTimeOffset              | 操作の開始時刻です。                                                |
-| id                 | 文字列 (識別子)         | 操作 ID です。読み取り専用です。 サーバーを生成します。                                  |
+| id                 | String                      | 操作 ID です。読み取り専用です。 サーバーによって生成されます。                                  |
 | lastActionDateTime | DateTimeOffset              | 操作の最後の操作の時間です。                                   |
-| errorInfo          | [resultInfo](resultinfo.md) | 結果の情報です。 読み取り専用です。 サーバーを生成します。                            |
-| status             | operationStatus             | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
+| resultInfo         | [resultInfo](resultinfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                            |
+| status             | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,7 +43,6 @@ ms.locfileid: "29575647"
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.commsOperation"
 }-->
 ```json
@@ -52,8 +51,8 @@ ms.locfileid: "29575647"
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "errorInfo": { "@odata.type": "microsoft.graph.resultInfo" },
-  "status": "operationStatus"
+  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "status": "notStarted | running | completed | failed"
 }
 ```
 
@@ -70,7 +69,7 @@ ms.locfileid: "29575647"
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
+    "@odata.type": "#microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"

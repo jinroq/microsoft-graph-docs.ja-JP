@@ -2,12 +2,12 @@
 title: secureScoreControlProfiles の更新
 description: 担当者や tenantNote などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な secureScoreControlProfiles プロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573362"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642031"
 ---
 # <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
@@ -46,7 +46,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|担当者|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
+|assignedTo|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
 |tenantNote|String|(顧客管理) のコントロールのアナリストのコメントです。|
 |controlStateUpdates| String|アナリストは、コントロールの設定を優先します。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
 
@@ -80,20 +80,24 @@ Content-type: application/json
 
 ### <a name="response"></a>応答
 
-次は、正常な応答の例です。
+成功応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+
+
+
+<!--
+{
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfile",
+  "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

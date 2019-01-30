@@ -2,12 +2,12 @@
 title: 添付ファイル リソースの種類
 description: イベントに関連するコンテンツを追加します。
 localization_priority: Normal
-ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573425"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643151"
 ---
 # <a name="attachment-resource-type"></a>添付ファイル リソースの種類
 
@@ -60,8 +60,6 @@ ms.locfileid: "29573425"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "abstract": true,
   "optionalProperties": [
 
   ],

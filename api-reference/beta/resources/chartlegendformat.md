@@ -4,12 +4,12 @@ description: グラフの凡例の書式設定プロパティをカプセル化�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0ce9ac757f255bbee0334f5c6a3f397736a81884
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570947"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640078"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat リソースの種類
 
@@ -27,28 +27,8 @@ ms.locfileid: "29570947"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。|
-|font|[WorkbookChartFont](chartfont.md)|グラフの凡例のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
-
-
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartLegendFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
-
+|fill|[ChartFill](chartfill.md)|背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。|
+|font|[ChartFont](chartfont.md)|グラフの凡例のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

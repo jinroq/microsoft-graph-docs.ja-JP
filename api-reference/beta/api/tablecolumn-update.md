@@ -4,12 +4,12 @@ description: tablecolumn オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b56a37cd0fa55c2d996b8df16a7bf326daaa0da3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1287cb8c7c8e9b477d1e103a1dc845cbb37b3b87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575238"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641674"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn を更新する
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|values|microsoft.graph.Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 

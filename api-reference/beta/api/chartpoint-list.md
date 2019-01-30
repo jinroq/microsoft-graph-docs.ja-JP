@@ -4,12 +4,12 @@ description: chartpoint オブジェクトのリストを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9c2a1ce7a72c48268a6a375eed5fd294c6486f4d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1ddda680359b076728fb2eea1cc983a8e757d33e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571689"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639987"
 ---
 # <a name="list-chartpointscollection"></a>List ChartPointsCollection
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint",
+  "@odata.type": "microsoft.graph.chartPoint",
   "isCollection": true
 } -->
 ```http

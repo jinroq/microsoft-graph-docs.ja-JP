@@ -4,12 +4,12 @@ description: OneNote ノートブックです。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573341"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641625"
 ---
 # <a name="notebook-resource-type"></a>notebook リソースの種類
 
@@ -65,11 +65,11 @@ OneNote ノートブックです。
 |self|String|ノートブックに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
 |userRole|String|使用可能な値: `Owner`、`Contributor`、`Reader`、`None`。Owner は、ノートブックへの所有者レベルのアクセス権を表します。Contributor は、ノートブックへの読み取り/書き込みアクセス権を表します。Reader は、ノートブックへの読み取り専用アクセス権を表します。読み取り専用です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|sectionGroups|[sectionGroup](sectiongroup.md)コレクション|ノートブック内のセクション グループ。読み取り専用です。Null 許容型。|
-|sections|[onenoteSection](section.md)コレクション|ノートブック内のセクション。読み取り専用です。Null 許容型。|
+|sectionGroups|[SectionGroup](sectiongroup.md) コレクション|ノートブック内のセクション グループ。読み取り専用です。Null 許容型。|
+|sections|[Section](section.md) コレクション|ノートブック内のセクション。読み取り専用です。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 

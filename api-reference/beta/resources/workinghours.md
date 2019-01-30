@@ -2,12 +2,12 @@
 title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
-ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573824"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642094"
 ---
 # <a name="workinghours-resource-type"></a>workingHours リソースの種類
 
@@ -25,9 +25,9 @@ ms.locfileid: "29573824"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| daysOfWeek | dayOfWeek コレクション | ユーザーが働く曜日。 |
-| startTime | 文字列 (TimeOfDay) | ユーザーの始業時間。 |
-| endTime | 文字列 (TimeOfDay) | ユーザーの終業時間。 |
+| daysOfWeek | String コレクション | ユーザーが働く曜日。 |
+| startTime | Edm.TimeOfDay | ユーザーの始業時間。 |
+| endTime | Edm.TimeOfDay | ユーザーの終業時間。 |
 | timeZone | [timeZoneBase](timezonebase.md) | 就業時間に適用するタイム ゾーン。 |
 
 
@@ -45,9 +45,9 @@ ms.locfileid: "29573824"
 
 ```json
 {
-  "daysOfWeek": ["dayOfWeek"],
-  "startTime": "String (TimeOfDay)",
-  "endTime": "String (TimeOfDay)",
+  "daysOfWeek": ["string"],
+  "startTime": "TimeOfDay",
+  "endTime": "TimeOfDay",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

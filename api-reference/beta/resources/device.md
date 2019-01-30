@@ -4,12 +4,12 @@ description: ディレクトリに登録されているデバイスを表しま�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42b1f0625cfa14f7beff1d4206bd93abb9f9a9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574874"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641373"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -41,9 +41,9 @@ ms.locfileid: "29574874"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 既定では true を指定します。|
-|alternativeSecurityIds| microsoft.graph.alternativeSecurityId コレクション | 内部使用専用です。 null 許容ではありません。 |
+|alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
 |approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-|deviceId|文字列 (識別子)| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
+|deviceId|Guid| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
 |deviceMetadata|String| 内部使用のみ。 Null に設定します。 |
 |deviceVersion|Int32| 内部使用のみ。 |
 |displayName|String| デバイスの表示名。必須。 |
@@ -63,7 +63,7 @@ ms.locfileid: "29574874"
 |モデル| String| デバイスのモデルです。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
 |製造元| String| デバイスの製造元です。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
@@ -72,7 +72,7 @@ ms.locfileid: "29574874"
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
 |registeredOwners|[directoryObject](directoryobject.md) コレクション|デバイスの登録済み所有者であるユーザー。読み取り専用。Null 許容型。|
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーであるユーザー。読み取り専用。Null 許容型。|
-|コマンド | microsoft.graph.command コレクション | このデバイスに送信されたコマンドのセット|
+|コマンド | Collection(microsoft.graph.command) | このデバイスに送信されたコマンドのセット|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -92,7 +92,6 @@ ms.locfileid: "29574874"
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",

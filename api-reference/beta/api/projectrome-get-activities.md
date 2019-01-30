@@ -3,12 +3,12 @@ title: ユーザー ・ アクティビティを取得します。
 description: 特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: acca0926e08887143c12bed6517efbc87e41d178
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575731"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643462"
 ---
 # <a name="get-user-activities"></a>ユーザー ・ アクティビティを取得します。
 
@@ -88,8 +88,7 @@ GET https://graph.microsoft.com/beta/me/activities
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.activity"
+  "@odata.type": "Collection(microsoft.graph.activity)"
 } -->
 
 ```http
@@ -100,7 +99,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",

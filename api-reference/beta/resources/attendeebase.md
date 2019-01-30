@@ -2,12 +2,12 @@
 title: attendeeBase リソースの種類
 description: 出席者の種類です。
 localization_priority: Normal
-ms.openlocfilehash: 6ec80f5505cb3dd742a2690ebb3cd5374635770d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bce1550c107f2114d02744091b5863360ab0bcea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572739"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643441"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase リソースの種類
 
@@ -23,7 +23,6 @@ ms.locfileid: "29572739"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -40,7 +39,7 @@ ms.locfileid: "29572739"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|type|attendeeType| 出席者の種類です。 可能な値: `required`、 `optional`、 `resource`。 現在、出席者が人間の場合は、 [findMeetingTimes](../api/user-findmeetingtimes.md)は一切の人では、`Required`型です。|
+|type|String| 出席者の種類です。使用可能な値: `required`、`optional`、`resource`。現時点では、出席者が 1 人である場合、[findMeetingTimes](../api/user-findmeetingtimes.md) では常にその人は `Required` 型と見なされます。|
 |emailAddress|[emailAddress](emailaddress.md)|参加者の名前と SMTP アドレスが含まれます。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

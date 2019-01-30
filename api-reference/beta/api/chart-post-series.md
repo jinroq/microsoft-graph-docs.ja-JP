@@ -4,12 +4,12 @@ description: この API を使用して、新しい ChartSeries を作成しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 901a6ff0d8305f0ef8b7eb92aab0d0eea6c40e6e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 89022d8468f842753a4b74ace2f802f4ee23ad09
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576704"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642892"
 ---
 # <a name="create-chartseries"></a>Create ChartSeries
 
@@ -60,13 +60,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-要求の本文には、 [chartSeries](../resources/chartseries.md)オブジェクトの JSON の形式を指定します。
+要求本文で、[ChartSeries](../resources/chartseries.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created

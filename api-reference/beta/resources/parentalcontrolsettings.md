@@ -1,19 +1,19 @@
 ---
 title: parentalControlSettings リソースの種類
-description: アプリケーションの視聴制限の設定を指定します。 これらの設定は、同意の操作性を制御します。
+description: アプリケーションにおける、保護者による制限設定を指定します。 これらの設定は、同意の操作性を制御します。
 localization_priority: Normal
-ms.openlocfilehash: 8a3a768cc9264b6d1a25532455da20d87a5bc4e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52a808cd4c3e6f29e4d43c7c4ea5c9e30a81447b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573873"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643004"
 ---
 # <a name="parentalcontrolsettings-resource-type"></a>parentalControlSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アプリケーションの視聴制限の設定を指定します。 これらの設定は、同意の操作性を制御します。
+アプリケーションにおける、保護者による制限設定を指定します。 これらの設定は、同意の操作性を制御します。
 
 ## <a name="properties"></a>プロパティ
 
@@ -24,12 +24,7 @@ ms.locfileid: "29573873"
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- 
-{
-    "blockType": "resource",
-    "@odata.type":"microsoft.graph.parentalControlSettings"
-}
--->
+
 ```json
 {
   "countriesBlockedForMinors": [ "String" ],

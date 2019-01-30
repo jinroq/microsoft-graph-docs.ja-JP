@@ -1,21 +1,21 @@
 ---
 title: '呼び出す: レコード'
-description: 呼び出しを記録します。
+description: 通話を録音します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574860"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641905"
 ---
 # <a name="call-record"></a>呼び出す: レコード
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出しを記録します。
+通話を録音します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/record
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|メッセージが表示されます。|[mediaPrompt](../resources/mediaprompt.md)コレクション | レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。 ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。 |
+|メッセージが表示されます。|[mediaprompt](../resources/mediaprompt.md)コレクション | レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。 ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。 |
 |bargeInAllowed|Boolean| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。 プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。 |
 |maxSilenceTimeoutInSeconds|Int32| 無音部分の最大のタイムアウト (秒) です。|

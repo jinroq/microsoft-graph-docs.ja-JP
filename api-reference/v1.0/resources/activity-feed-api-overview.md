@@ -1,18 +1,18 @@
 ---
 title: アクティビティ フィードの REST API を使用します。
-description: 'Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーの actiity を再開します。 アクティビティ フィードの API 要求は、委任されたアクセス許可とユーザーのアクティビティ権限、個人または仕事や学校のアカウントで使用できるユーザーの代わりに実行されます。 '
+description: 'Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーのアクティビティを再開します。 アクティビティ フィードの API 要求は、委任されたアクセス許可とユーザーのアクティビティ権限、個人または仕事や学校のアカウントで使用できるユーザーの代わりに実行されます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a229a5231894598fce0ff11f15926256987caa84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971845"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641072"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティ フィードの REST API を使用します。
 
-Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーの actiity を再開します。 アクティビティ フィードの API 要求は、[委任されたアクセス許可](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)と[ユーザーの活動のアクセス権](/graph/permissions-reference)、個人または仕事や学校のアカウントを使用できるユーザーの代わりに実行されます。 
+Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーのアクティビティを再開します。 アクティビティ フィードの API 要求は、[委任されたアクセス許可](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)と[ユーザーの活動のアクセス権](/graph/permissions-reference)、個人または仕事や学校のアカウントを使用できるユーザーの代わりに実行されます。 
 
 ユーザー アクティビティが[アクティビティ](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)のリソースによって表されで構成されて、時間ベースのフィードで表されるコレクション私と活動します。 
 <!-- Add missing content.
@@ -59,12 +59,11 @@ Each activity represents a unique...
 ## Common use cases 
 -->
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [アクティビティのリソース](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)を参照してくださいし、の重要なタスクを再開するユーザーを支援するアプリのアクティビティを定義します。
 - 活動**pop**にするアイデアの[アダプティブ ・ カードのサンプル](https://adaptivecards.io/samples/)のサンプルを表示します。  
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試します。
 
 **詳細については調べていますか。** 
 

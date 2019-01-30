@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576242"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640659"
 ---
 # <a name="sitepage-resource"></a>sitePage リソース
 
@@ -29,7 +29,7 @@ ms.locfileid: "29576242"
 | [List pages][]                  | /Pages を取得します。
 | [Get page][]                    | /Pages/{ページの id を取得します。
 | [Create][]                      | 投稿/pages
-| [Delete][]                      | /Pages/{ページの id を削除します。
+| [削除する][]                      | /Pages/{ページの id を削除します。
 | [Publish][]                     | /Pages/{ページ id} の投稿し、公開
 
 [List pages]: ../api/sitepage-list.md
@@ -56,7 +56,7 @@ ms.locfileid: "29576242"
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
@@ -88,7 +88,7 @@ ms.locfileid: "29576242"
 | プロパティ名      | 型                       | 説明
 |:-------------------|:---------------------------|:---------------------------
 | タイトル              | 文字列                     | ページのタイトル。
-| pageLayout         | 文字列                     | ページのページ レイアウトの名前。
+| pageLayout         | string                     | ページのページ レイアウトの名前。
 | web パーツ           | [web パーツ][]                | ページ上の web パーツです。
 
 ## <a name="authoring-metadata"></a>メタデータを作成する
@@ -103,10 +103,10 @@ ms.locfileid: "29576242"
 
 | プロパティ名        | 型              | 説明
 |:---------------------|:------------------|:----------------------------------
-| id                   | 文字列            | アイテムの一意識別子。読み取り専用です。
-| name                 | 文字列            | アイテムの名前/タイトル。
+| id                   | string            | アイテムの一意識別子。読み取り専用です。
+| name                 | string            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。
+| eTag                 | string            | アイテムの ETag。読み取り専用です。
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
 | parentReference      | [itemReference][] | アイテムが最後に変更された日時。読み取り専用です。

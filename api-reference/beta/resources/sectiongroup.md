@@ -4,12 +4,12 @@ description: OneNote ノートブックのセクション グループ。セク�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575521"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640953"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup リソースの種類
 
@@ -29,7 +29,7 @@ OneNote ノートブックのセクション グループ。セクション グ�
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 }-->
 
 ```json
@@ -59,13 +59,13 @@ OneNote ノートブックのセクション グループ。セクション グ�
 |sectionsUrl|String|セクション グループ内のすべてのセクションを返す `sections` ナビゲーション プロパティの URL。読み取り専用です。|
 |self|String|セクション グループに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|parentNotebook|[ノートブック](notebook.md)|セクション グループを含むノートブック。読み取り専用です。|
-|parentSectionGroup|[sectionGroup](sectiongroup.md)|セクション グループを含むセクション グループ。読み取り専用です。|
-|sectionGroups|[sectionGroup](sectiongroup.md)コレクション|セクション内のセクション グループ。読み取り専用です。Null 許容型。|
-|sections|[onenoteSection](section.md)コレクション|セクション グループ内のセクション。読み取り専用です。Null 許容型。|
+|parentNotebook|[Notebook](notebook.md)|セクション グループを含むノートブック。読み取り専用です。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|セクション グループを含むセクション グループ。読み取り専用です。|
+|sectionGroups|[SectionGroup](sectiongroup.md) コレクション|セクション内のセクション グループ。読み取り専用です。Null 許容型。|
+|sections|[Section](section.md) コレクション|セクション グループ内のセクション。読み取り専用です。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 

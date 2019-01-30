@@ -2,12 +2,12 @@
 title: provisionedPlan リソースの種類
 description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: be19bb49409751ae5d7a0f11387e74770fde333b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572550"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643371"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "29572550"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedPlan"
+  "@odata.type": "microsoft.graph.provisionedplan"
 }-->
 
 ```json

@@ -2,12 +2,12 @@
 title: oAuth2PermissionGrant リソースの種類
 description: (サービス主体で表されます)、アプリケーションに与えられている OAuth 2.0 のスコープ (委任されたアクセス許可) をユーザーまたは管理者の承認プロセスの一環として表します。
 localization_priority: Normal
-ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576970"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640778"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "29576970"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 }-->
 
 ```json
@@ -48,11 +48,11 @@ ms.locfileid: "29576970"
 |expiryTime|DateTimeOffset| 現在、有効期限の時刻の値は無視されます。 |
 |id|String| 一意の識別子です。 読み取り専用です。|
 |principalId|String| ConsentType が*AllPrincipals*である場合は、この値が null の場合と同意は、組織内のすべてのユーザーに適用されます。 ConsentType が*主体*の場合は、このプロパティは同意を付与し、そのユーザーに対してのみ適用されるユーザーの id を指定します。 |
-|resourceId|文字列型 (String)| アクセスが許可されているリソース ・ サービス ・ プリンシパルの id を指定します。 |
+|resourceId|String| アクセスが許可されているリソース ・ サービス ・ プリンシパルの id を指定します。 |
 |scope|String| OAuth 2.0 のアクセス トークンには、リソース アプリケーションが期待する[スコープ](/graph/permissions-reference)の要求の値を指定します。 たとえば、 *User.Read* |
 |startTime|DateTimeOffset| 現時点では、開始時刻の値は無視されます。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -61,7 +61,7 @@ ms.locfileid: "29576970"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[OAuth2PermissionGrant を取得します。](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |OAuth2PermissionGrant オブジェクトのプロパティと関係を参照してください。|
-|[リスト oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)コレクション | Oauth2PermissionGrant オブジェクトのリストを取得します。 |
+|[リスト oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) コレクション | Oauth2PermissionGrant オブジェクトのリストを取得します。 |
 |[OAuth2PermissionGrant を更新します。](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |OAuth2PermissionGrant オブジェクトを更新します。 |
 |[OAuth2PermissionGrant を削除します。](../api/oauth2permissiongrant-delete.md) | なし |OAuth2PermissionGrant オブジェクトを削除します。 |
 

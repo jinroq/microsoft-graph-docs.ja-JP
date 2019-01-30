@@ -4,12 +4,12 @@ description: グラフ軸の書式設定プロパティをカプセル化しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 587c35f0bf28d695f67e61a8eefa1593317a8d5d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 87ed72ab4a07ffbe3d8757b4283f85aa5f4791d3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577110"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643378"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat リソースの種類
 
@@ -26,28 +26,8 @@ ms.locfileid: "29577110"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。読み取り専用。|
-
-
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxisFormat"
-}-->
-
-```json
-{
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
-}
-```
-
+|font|[ChartFont](chartfont.md)|グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
+|line|[ChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。値の取得のみ可能です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: chartfont オブジェクトのプロパティと関係を取得し
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 45901dbbc011e99785bc585e128115aae740d09f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3440b4c01988cfad6af10e40a36da6551f5ec854
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573278"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643130"
 ---
 # <a name="get-chartfont"></a>Get ChartFont
 
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartFont](../resources/chartfont.md)オブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartFont](../resources/chartfont.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

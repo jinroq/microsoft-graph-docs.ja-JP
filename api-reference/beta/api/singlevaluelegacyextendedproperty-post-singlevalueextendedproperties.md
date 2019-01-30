@@ -2,12 +2,12 @@
 title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: 6a9ddee699cac0e11a5656fc12174a9d4fb610c3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575448"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641394"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>要求本文
 
-リソース インスタンスの**singleValueLegacyExtendedProperty**コレクション プロパティには、各[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)オブジェクトの JSON の本体を提供します。
+リソース インスタンスの **singleValueExtendedProperties** コレクション プロパティに、各 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
 
 |**プロパティ**|**型**|**説明**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
-|id|String|**SingleValueLegacyExtendedProperty**コレクション内の各プロパティのプロパティを識別するのにはこれを指定します。 サポートされている形式のいずれかに従う必要があります。 詳細については、 [Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)を参照してください。 必須です。|
-|value|文字列|**SingleValueLegacyExtendedProperty**コレクション内の各プロパティのプロパティ値を指定します。 必須です。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
+|id|String|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
+|value|string|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
 
-だけでなく、新しい**singleValueLegacyExtendedProperty**コレクションの_新しい_リソースのインスタンスで拡張プロパティを作成するときにそのリソースのインスタンス (つまり、[メッセージ](../resources/message.md)は、 [mailFolder の JSON 表現を提供します。](../resources/mailfolder.md)、[イベント](../resources/event.md)などです)。
+_新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **singleValueExtendedProperties**コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。
 
 ## <a name="response"></a>応答
 
@@ -179,7 +179,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
 
-最初の例では、同一の投稿操作で新しいイベントと単一値の拡張プロパティを作成します。 新しいイベントは、通常のプロパティとは別は、要求の本体には、1 つの単一値の拡張プロパティ、およびプロパティは、次を含む**singleValueLegacyExtendedProperty**のコレクションが含まれています。
+最初の例では、同じ POST 操作で新しいイベントと単一値の拡張プロパティを作成します。新しいイベントに通常含めるプロパティとは別に、1 つの単一値の拡張プロパティを含む **singleValueExtendedProperties** コレクションを要求の本文に含め、そのプロパティは次のようにします。
 
 - **id** は、プロパティの型を `String` (GUID) として指定し、`Fun` という名前のプロパティとして指定します。
 - **value** は、`Fun` プロパティの値として `Food` を指定します。 
@@ -212,7 +212,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -232,7 +232,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>要求 2
 
-2 番目の例では、1 つの単一値の指定した既存のメッセージのプロパティを拡張を作成します。 **SingleValueLegacyExtendedProperty**配列内の唯一の要素は、プロパティを拡張します。 要求本文には、拡張プロパティに関する次のものが含まれています。
+2 番目の例では、指定した既存のメッセージに 1 つの単一値の拡張プロパティを作成します。拡張プロパティは、**singleValueExtendedProperties** 配列内の唯一の要素です。要求本文には、拡張プロパティに関する次のものが含まれています。
 - **id** は、プロパティの型を `String` (GUID) として指定し、`Color` という名前のプロパティとして指定します。
 - **value** は、`Color` プロパティの値として `Green` を指定します。
 
@@ -243,7 +243,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

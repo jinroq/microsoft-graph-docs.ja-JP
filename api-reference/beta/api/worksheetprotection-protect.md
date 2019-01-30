@@ -4,12 +4,12 @@ description: ワークシートを保護します。ワークシートが保護�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4bb02bfd77cd1e86f6acf9b4f2f393474f484b11
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572956"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643406"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|options|workbookWorksheetProtectionOptions|省略可能。シートの保護のオプション。|
+|options|WorksheetProtectionOptions|省略可能。シートの保護のオプション。|
 
 ## <a name="response"></a>応答
 

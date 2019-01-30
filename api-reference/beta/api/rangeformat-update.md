@@ -4,12 +4,12 @@ description: rangeformat オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b1b3f768af0efe94c5b14177c5e70bbe9a642174
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2bd576fcb30facd220e9abf7a8a1fee8d22f80a7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574426"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642164"
 ---
 # <a name="update-rangeformat"></a>rangeformat オブジェクトを更新する
 
@@ -47,7 +47,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 |horizontalAlignment|文字列|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
 |rowHeight|double|範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。|
 |verticalAlignment|文字列|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
-|wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
+|wrapText|ブール値|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
 ## <a name="response"></a>応答
 
@@ -326,7 +326,7 @@ PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/S
 Content-type: application/json
 
 {
-  "underline": "None",
+  "underline": "Single",
   "color": "#FFFFFF",
   "size": 26
 }
@@ -348,7 +348,7 @@ Content-type: application/json
     "italic": false,
     "name": "Calibri",
     "size": 26,
-    "underline": "None"
+    "underline": "Single"
 }
 ```
 

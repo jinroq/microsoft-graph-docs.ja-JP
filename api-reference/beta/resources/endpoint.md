@@ -2,12 +2,12 @@
 title: エンドポイント リソースの種類
 description: 'エンドポイントでは、エンティティに関連付けられているリソースの Url を表します。  などの Office 365 の新しいグループが作成されると、追加のリソースは Office 365 のグループの一部として作成も。 会話のグループのメールボックスとドキュメントやファイル グループの OneDrive フォルダーのようなものが含まれます。 これでグループのリソースの種類の*エンドポイント*のナビゲーションを使用して、関連付けられているリソースの Url を含む、Office 365 グループ リソースに関する詳細な情報を読み取ることができます。 これにより、これらのリソースを理解し、自分の経験にも URL が発生したリソースを埋め込むアプリケーションことができます。 '
 localization_priority: Normal
-ms.openlocfilehash: 39a6a2d8213e809f426c492654272aa994c25a6d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574483"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640855"
 ---
 # <a name="endpoint-resource-type"></a>エンドポイント リソースの種類
 
@@ -26,11 +26,11 @@ ms.locfileid: "29574483"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | capability     | String  | このリソースに関連付けられている機能をについて説明します。 (例: メッセージ、会話など) Null を許容しません。 読み取り専用です。 |
-| id             | String  | エンドポイントの一意の識別子キーです。 null 許容ではありません。 読み取り専用です。|
-| providerId     | String  | アプリケーション id が公開するサービスの基になるのです。 null 許容ではありません。 読み取り専用です。|
+| id             | String  | エンドポイントの一意の識別子キーです。 null 許容型ではありません。 読み取り専用です。|
+| providerId     | String  | アプリケーション id が公開するサービスの基になるのです。 null 許容型ではありません。 読み取り専用です。|
 | プロバイダー   | String  | 公開するサービスの基になるの名前です。 読み取り専用です。|
-| providerResourceId|String| Office 365 グループでは、この処理は、リソース (たとえば Yammer.FeedURL など) の既知の名前に設定されます。 null 許容ではありません。 読み取り専用です。|
-| uri            | String  | 公開されたリソースの URL です。 null 許容ではありません。 読み取り専用です。|
+| providerResourceId|String| Office 365 グループでは、この処理は、リソース (たとえば Yammer.FeedURL など) の既知の名前に設定されます。 null 許容型ではありません。 読み取り専用です。|
+| uri            | String  | 公開されたリソースの URL です。 null 許容型ではありません。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -45,7 +45,7 @@ ms.locfileid: "29574483"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.endpoint"
+  "@odata.type": "microsoft.graph.Endpoint"
 }-->
 
 ```json

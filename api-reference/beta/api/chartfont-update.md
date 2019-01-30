@@ -4,12 +4,12 @@ description: chartfont オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a8e7d2665ce93a62ea27c1a5459382ab07e1184d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574972"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642304"
 ---
 # <a name="update-chartfont"></a>Update chartfont
 
@@ -43,16 +43,16 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bold| boolean |フォントの太字の状態を表します。|
-|color| 文字列 |テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
-|italic| boolean |フォントの斜体の状態を表します。|
-|name| 文字列 |フォント名 (例: "Calibri")|
-|size| double |フォント サイズ (例: 11)|
-|underline| 列挙型文字列 |フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
+|bold|ブール値|フォントの太字の状態を表します。|
+|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|italic|ブール値|フォントの斜体の状態を表します。|
+|name|文字列|フォント名 (例: "Calibri")|
+|size|double|フォント サイズ (例: 11)|
+|underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[workbookChartFont](../resources/chartfont.md)オブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartFont](../resources/chartfont.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### <a name="response"></a>応答
@@ -79,7 +79,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

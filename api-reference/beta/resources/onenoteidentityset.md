@@ -4,12 +4,12 @@ description: '**準備中のサポート**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: dc8256cb2459ae23fcdae9e2e658394df899a134
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e149d5548ce3585bbcda1f0a199fa97d7543af77
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577292"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642472"
 ---
 # <a name="onenoteidentityset-resource-type"></a>oneNoteIdentitySet リソースの種類
 
@@ -33,7 +33,7 @@ OneNoteIdentitySet 型は、 [OneNoteIdentity](onenoteidentity.md)オブジェ�
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentitySet"
+  "@odata.type": "microsoft.graph.onenoteidentityset"
 }-->
 
 ```json

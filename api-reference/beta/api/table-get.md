@@ -4,12 +4,12 @@ description: テーブル オブジェクトのプロパティと関係を取得
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 81f6fd4a9fe63754abcc39effa2dd10da392bff8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: faae44f86428b55aae24fb83a5d68f2ad1d3e562
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575126"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641646"
 ---
 # <a name="get-table"></a>テーブルを取得する
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[workbookTable](../resources/table.md)のオブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [テーブル](../resources/table.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 } -->
 ```http
 HTTP/1.1 200 OK
