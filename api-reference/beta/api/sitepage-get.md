@@ -5,43 +5,43 @@ ms.date: 03/15/2018
 title: サイトのページを取得します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b6f7196040897d225ccb17d3d6bad6318c76590e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575927"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640547"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="8c052-102">サイトのサイトのページ一覧でページを取得します。</span><span class="sxs-lookup"><span data-stu-id="8c052-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="1e4e8-102">サイトのサイトのページ一覧でページを取得します。</span><span class="sxs-lookup"><span data-stu-id="1e4e8-102">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8c052-103">[サイト][]のサイトのページ[] ボックスの一覧][]での[sitePage][]のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="8c052-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="1e4e8-103">[サイト][]のサイトのページ[] ボックスの一覧][]での[sitePage][]のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="1e4e8-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="8c052-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8c052-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1e4e8-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1e4e8-107">Permissions</span></span>
 
-<span data-ttu-id="8c052-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8c052-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1e4e8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1e4e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8c052-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8c052-110">Permission type</span></span>      | <span data-ttu-id="8c052-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8c052-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1e4e8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1e4e8-110">Permission type</span></span>      | <span data-ttu-id="1e4e8-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1e4e8-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8c052-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8c052-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8c052-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c052-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8c052-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8c052-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8c052-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8c052-115">Not supported.</span></span>    |
-|<span data-ttu-id="8c052-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8c052-116">Application</span></span> | <span data-ttu-id="8c052-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c052-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="1e4e8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1e4e8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1e4e8-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e4e8-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1e4e8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1e4e8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e4e8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1e4e8-115">Not supported.</span></span>    |
+|<span data-ttu-id="1e4e8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1e4e8-116">Application</span></span> | <span data-ttu-id="1e4e8-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e4e8-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8c052-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8c052-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e4e8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1e4e8-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="8c052-119">例</span><span class="sxs-lookup"><span data-stu-id="8c052-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1e4e8-119">例</span><span class="sxs-lookup"><span data-stu-id="1e4e8-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8c052-120">要求</span><span class="sxs-lookup"><span data-stu-id="8c052-120">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="1e4e8-120">要求</span><span class="sxs-lookup"><span data-stu-id="1e4e8-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -49,7 +49,7 @@ GET /sites/{site-id}/pages/{page-id}
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="8c052-121">応答</span><span class="sxs-lookup"><span data-stu-id="8c052-121">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1e4e8-121">応答</span><span class="sxs-lookup"><span data-stu-id="1e4e8-121">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -58,7 +58,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

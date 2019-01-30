@@ -4,49 +4,49 @@ description: グラフ オブジェクトを削除します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c2b0b051517e30e2a0275684124b26de0a355cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 513d54e855cd0e0acd358c085f3ae0fb9231692b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572123"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640470"
 ---
-# <a name="chart-delete"></a><span data-ttu-id="c9e06-103">Chart: delete</span><span class="sxs-lookup"><span data-stu-id="c9e06-103">Chart: delete</span></span>
+# <a name="chart-delete"></a><span data-ttu-id="831f0-103">Chart: delete</span><span class="sxs-lookup"><span data-stu-id="831f0-103">Chart: delete</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9e06-104">グラフ オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="c9e06-104">Deletes the chart object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c9e06-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c9e06-105">Permissions</span></span>
-<span data-ttu-id="c9e06-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c9e06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="831f0-104">グラフ オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="831f0-104">Deletes the chart object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="831f0-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="831f0-105">Permissions</span></span>
+<span data-ttu-id="831f0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="831f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9e06-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c9e06-108">Permission type</span></span>      | <span data-ttu-id="c9e06-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c9e06-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="831f0-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="831f0-108">Permission type</span></span>      | <span data-ttu-id="831f0-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="831f0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9e06-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e06-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9e06-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9e06-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c9e06-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e06-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9e06-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9e06-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c9e06-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c9e06-114">Application</span></span> | <span data-ttu-id="c9e06-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c9e06-115">Not supported.</span></span> |
+|<span data-ttu-id="831f0-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="831f0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="831f0-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="831f0-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="831f0-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="831f0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="831f0-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="831f0-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="831f0-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="831f0-114">Application</span></span> | <span data-ttu-id="831f0-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="831f0-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9e06-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c9e06-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="831f0-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="831f0-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c9e06-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c9e06-117">Request headers</span></span>
-| <span data-ttu-id="c9e06-118">名前</span><span class="sxs-lookup"><span data-stu-id="c9e06-118">Name</span></span>       | <span data-ttu-id="c9e06-119">説明</span><span class="sxs-lookup"><span data-stu-id="c9e06-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="831f0-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="831f0-117">Request headers</span></span>
+| <span data-ttu-id="831f0-118">名前</span><span class="sxs-lookup"><span data-stu-id="831f0-118">Name</span></span>       | <span data-ttu-id="831f0-119">説明</span><span class="sxs-lookup"><span data-stu-id="831f0-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c9e06-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c9e06-120">Authorization</span></span>  | <span data-ttu-id="c9e06-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c9e06-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c9e06-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c9e06-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c9e06-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="c9e06-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="831f0-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="831f0-120">Authorization</span></span>  | <span data-ttu-id="831f0-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="831f0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="831f0-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="831f0-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="831f0-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="831f0-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c9e06-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c9e06-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="831f0-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="831f0-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="c9e06-127">応答</span><span class="sxs-lookup"><span data-stu-id="c9e06-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="831f0-127">応答</span><span class="sxs-lookup"><span data-stu-id="831f0-127">Response</span></span>
 
-<span data-ttu-id="c9e06-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c9e06-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="831f0-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="831f0-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c9e06-130">例</span><span class="sxs-lookup"><span data-stu-id="c9e06-130">Example</span></span>
-<span data-ttu-id="c9e06-131">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e06-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c9e06-132">要求</span><span class="sxs-lookup"><span data-stu-id="c9e06-132">Request</span></span>
-<span data-ttu-id="c9e06-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e06-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="831f0-130">例</span><span class="sxs-lookup"><span data-stu-id="831f0-130">Example</span></span>
+<span data-ttu-id="831f0-131">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="831f0-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="831f0-132">要求</span><span class="sxs-lookup"><span data-stu-id="831f0-132">Request</span></span>
+<span data-ttu-id="831f0-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="831f0-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_delete"
@@ -55,10 +55,12 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/delete
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="c9e06-134">応答</span><span class="sxs-lookup"><span data-stu-id="c9e06-134">Response</span></span>
-<span data-ttu-id="c9e06-135">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e06-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="831f0-134">応答</span><span class="sxs-lookup"><span data-stu-id="831f0-134">Response</span></span>
+<span data-ttu-id="831f0-135">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="831f0-135">Here is an example of the response.</span></span> 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK

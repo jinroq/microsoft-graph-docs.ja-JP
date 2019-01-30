@@ -5,30 +5,30 @@ ms.date: 05/07/2018
 title: SharePoint サイトに新しいページを作成します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be3f24f3d4795c473562ddc01d75d54117dcedd3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572788"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640155"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="95b80-102">サイトのサイトのページ一覧でページを作成します。</span><span class="sxs-lookup"><span data-stu-id="95b80-102">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="797d9-102">サイトのサイトのページ一覧でページを作成します。</span><span class="sxs-lookup"><span data-stu-id="797d9-102">Create a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95b80-103">[サイト][]のサイトのページ[] ボックスの一覧][]で、新しい[sitePage][]を作成します。</span><span class="sxs-lookup"><span data-stu-id="95b80-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="797d9-103">[サイト][]のサイトのページ[] ボックスの一覧][]で、新しい[sitePage][]を作成します。</span><span class="sxs-lookup"><span data-stu-id="797d9-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="95b80-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="95b80-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="797d9-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="797d9-104">Permissions</span></span>
 
-<span data-ttu-id="95b80-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95b80-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="797d9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="797d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="95b80-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="95b80-107">Permission type</span></span>      | <span data-ttu-id="95b80-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="95b80-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="797d9-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="797d9-107">Permission type</span></span>      | <span data-ttu-id="797d9-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="797d9-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95b80-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="95b80-109">Delegated (work or school account)</span></span> | <span data-ttu-id="95b80-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95b80-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="95b80-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="95b80-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95b80-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="95b80-112">Not supported.</span></span>    |
-|<span data-ttu-id="95b80-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="95b80-113">Application</span></span> | <span data-ttu-id="95b80-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95b80-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="797d9-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="797d9-109">Delegated (work or school account)</span></span> | <span data-ttu-id="797d9-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="797d9-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="797d9-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="797d9-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="797d9-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="797d9-112">Not supported.</span></span>    |
+|<span data-ttu-id="797d9-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="797d9-113">Application</span></span> | <span data-ttu-id="797d9-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="797d9-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95b80-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="95b80-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="797d9-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="797d9-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,13 +36,13 @@ ms.locfileid: "29572788"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="95b80-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="95b80-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="797d9-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="797d9-116">Request body</span></span>
 
-<span data-ttu-id="95b80-117">要求の本体を作成する[sitePage][]リソースの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="95b80-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="797d9-117">要求の本体を作成する[sitePage][]リソースの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="797d9-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95b80-118">例</span><span class="sxs-lookup"><span data-stu-id="95b80-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="797d9-118">例</span><span class="sxs-lookup"><span data-stu-id="797d9-118">Example</span></span>
 
-<span data-ttu-id="95b80-119">次の例では、新しいページを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="95b80-119">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="797d9-119">次の例では、新しいページを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="797d9-119">The following example shows how to create a new page.</span></span>
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -99,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="95b80-120">応答</span><span class="sxs-lookup"><span data-stu-id="95b80-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="797d9-120">応答</span><span class="sxs-lookup"><span data-stu-id="797d9-120">Response</span></span>
 
-<span data-ttu-id="95b80-121">成功した場合、このメソッドは、作成されたページの応答の本体で、 [sitePage][]を返します。</span><span class="sxs-lookup"><span data-stu-id="95b80-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="797d9-121">成功した場合、このメソッドは、作成されたページの応答の本体で、 [sitePage][]を返します。</span><span class="sxs-lookup"><span data-stu-id="797d9-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -182,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="95b80-122">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="95b80-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="95b80-123">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="95b80-123">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="797d9-122">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="797d9-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="797d9-123">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="797d9-123">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md

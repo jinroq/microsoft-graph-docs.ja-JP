@@ -4,43 +4,43 @@ description: DataPolicyOperation オブジェクトのプロパティを取得�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46839a9b2bf45cb54342de86f3db476de24689e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577397"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640757"
 ---
-# <a name="get-datapolicyoperation"></a><span data-ttu-id="7f8ab-103">DataPolicyOperation を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-103">Get dataPolicyOperation</span></span>
+# <a name="get-datapolicyoperation"></a><span data-ttu-id="53446-103">DataPolicyOperation を取得します。</span><span class="sxs-lookup"><span data-stu-id="53446-103">Get dataPolicyOperation</span></span>
 
-<span data-ttu-id="7f8ab-104">DataPolicyOperation オブジェクトのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
+<span data-ttu-id="53446-104">DataPolicyOperation オブジェクトのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="53446-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7f8ab-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7f8ab-105">Permissions</span></span>
-<span data-ttu-id="7f8ab-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="53446-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="53446-105">Permissions</span></span>
+<span data-ttu-id="53446-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="53446-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7f8ab-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7f8ab-108">Permission type</span></span>      | <span data-ttu-id="7f8ab-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7f8ab-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53446-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="53446-108">Permission type</span></span>      | <span data-ttu-id="53446-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="53446-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7f8ab-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7f8ab-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="7f8ab-111">User.Export.All と User.Read.All</span><span class="sxs-lookup"><span data-stu-id="7f8ab-111">User.Export.All and User.Read.All</span></span>  |
-|<span data-ttu-id="7f8ab-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7f8ab-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7f8ab-113">該当なし</span><span class="sxs-lookup"><span data-stu-id="7f8ab-113">Not applicable</span></span>  |
-|<span data-ttu-id="7f8ab-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7f8ab-114">Application</span></span> | <span data-ttu-id="7f8ab-115">User.Export.All と User.Read.All</span><span class="sxs-lookup"><span data-stu-id="7f8ab-115">User.Export.All and User.Read.All</span></span> | 
+|<span data-ttu-id="53446-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="53446-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="53446-111">User.Export.All と User.Read.All</span><span class="sxs-lookup"><span data-stu-id="53446-111">User.Export.All and User.Read.All</span></span>  |
+|<span data-ttu-id="53446-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="53446-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="53446-113">該当なし</span><span class="sxs-lookup"><span data-stu-id="53446-113">Not applicable</span></span>  |
+|<span data-ttu-id="53446-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="53446-114">Application</span></span> | <span data-ttu-id="53446-115">User.Export.All と User.Read.All</span><span class="sxs-lookup"><span data-stu-id="53446-115">User.Export.All and User.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="7f8ab-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7f8ab-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53446-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="53446-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /dataPolicyOperations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7f8ab-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7f8ab-117">Request headers</span></span>
-| <span data-ttu-id="7f8ab-118">名前</span><span class="sxs-lookup"><span data-stu-id="7f8ab-118">Name</span></span>      |<span data-ttu-id="7f8ab-119">説明</span><span class="sxs-lookup"><span data-stu-id="7f8ab-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="53446-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="53446-117">Request headers</span></span>
+| <span data-ttu-id="53446-118">名前</span><span class="sxs-lookup"><span data-stu-id="53446-118">Name</span></span>      |<span data-ttu-id="53446-119">説明</span><span class="sxs-lookup"><span data-stu-id="53446-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7f8ab-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f8ab-120">Authorization</span></span>  | <span data-ttu-id="7f8ab-121">ベアラー {トークン}</span><span class="sxs-lookup"><span data-stu-id="7f8ab-121">Bearer {token}</span></span>|
+| <span data-ttu-id="53446-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="53446-120">Authorization</span></span>  | <span data-ttu-id="53446-121">ベアラー {トークン}</span><span class="sxs-lookup"><span data-stu-id="53446-121">Bearer {token}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7f8ab-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="7f8ab-122">Request body</span></span>
-<span data-ttu-id="7f8ab-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-123">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="7f8ab-124">応答</span><span class="sxs-lookup"><span data-stu-id="7f8ab-124">Response</span></span>
-<span data-ttu-id="7f8ab-125">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[dataPolicyOperation](../resources/datapolicyoperation.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7f8ab-126">例</span><span class="sxs-lookup"><span data-stu-id="7f8ab-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7f8ab-127">要求</span><span class="sxs-lookup"><span data-stu-id="7f8ab-127">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="53446-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="53446-122">Request body</span></span>
+<span data-ttu-id="53446-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="53446-123">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="53446-124">応答</span><span class="sxs-lookup"><span data-stu-id="53446-124">Response</span></span>
+<span data-ttu-id="53446-125">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[dataPolicyOperation](../resources/datapolicyoperation.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="53446-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="53446-126">例</span><span class="sxs-lookup"><span data-stu-id="53446-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="53446-127">要求</span><span class="sxs-lookup"><span data-stu-id="53446-127">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_datapolicyoperation"
@@ -48,8 +48,8 @@ GET /dataPolicyOperations/{id}
 ```http
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="7f8ab-128">応答</span><span class="sxs-lookup"><span data-stu-id="7f8ab-128">Response</span></span>
-<span data-ttu-id="7f8ab-p102">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7f8ab-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="53446-128">応答</span><span class="sxs-lookup"><span data-stu-id="53446-128">Response</span></span>
+<span data-ttu-id="53446-p102">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="53446-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,7 +66,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 
