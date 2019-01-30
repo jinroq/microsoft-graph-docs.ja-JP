@@ -2,16 +2,16 @@
 title: servicePrincipal リソースの種類
 description: ディレクトリ内のアプリケーションのインスタンスを表します。 directoryObject から継承します。
 localization_priority: Priority
-ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: d36a82ae885725387e788cf280442afe09fa63de
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880207"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574188"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ディレクトリ内のアプリケーションのインスタンスを表します。 [directoryObject](directoryobject.md) から継承します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "27880207"
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 }-->
 
 ```json
@@ -63,69 +63,74 @@ ms.locfileid: "27880207"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類 |説明|
+| プロパティ     | 型 |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|ブール型| **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
-|appDisplayName|String|関連付けられたアプリケーションによって公開される表示名です。|
-|appId|文字列型 (String)|関連付けられているアプリケーション (その**appId**プロパティの一意の識別子です。|
-|appRoleAssignmentRequired|ブール型|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。 null 許容ではありません。 |
-|appRoles|[エンティティ](approle.md)のコレクション|アプリケーション ロールは、関連付けられたアプリケーションによって公開されています。 詳細については、[アプリケーション](application.md)エンティティの**appRoles**プロパティの定義を参照してください。 null 許容ではありません。 |
-|displayName|String|サービス ・ プリンシパルの表示名です。|
+|accountEnabled|Boolean| サービス プリンシパルのアカウントが有効な場合は **true**。それ以外の場合は **false**。            |
+|appDisplayName|String|関連付けられているアプリケーションによって公開される表示名。|
+|appId|String|関連付けられたアプリケーションの一意の識別子 (その **appId** プロパティ)。|
+|appRoleAssignmentRequired|Boolean|Azure AD からアプリケーションにユーザー トークンまたはアクセス トークンが発行される前に、ユーザーまたはグループに対する **appRoleAssignment** が必要かどうかを指定します。 null 許容型ではありません。 |
+|appRoles|[appRole](approle.md) コレクション|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 さらに詳しい情報については、[アプリケーション](application.md) エンティティの **appRoles** プロパティの定義を参照してください。 null 許容型ではありません。 |
+|displayName|String|サービス プリンシパルの表示名。|
 |errorUrl|String|            |
-|ホームページ|String|関連付けられたアプリケーションのホーム ページの URL です。|
-|keyCredentials|[keyCredential](keycredential.md)コレクション|サービス ・ プリンシパルに関連付けられているキーの資格情報のコレクションです。 null 許容ではありません。            |
-|logoutUrl|String| [前方チャンネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[背面チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウトのプロトコルを使用してユーザーをログアウトするマイクロソフトの承認のサービスによって使用される URL を指定します。  |
-|oauth2Permissions|[oAuth2Permission](oauth2permission.md)コレクション|関連付けられたアプリケーションによって公開される OAuth 2.0 のアクセス許可。 詳細については、[アプリケーション](application.md)エンティティの**oauth2Permissions**プロパティの定義を参照してください。 null 許容ではありません。            |
-|id|String|サービス ・ プリンシパルの一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
-|passwordCredentials|[passwordCredential](passwordcredential.md)コレクション|サービス ・ プリンシパルに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。 |
-|preferredTokenSigningKeyThumbprint|String|内部使用専用として予約されています。   記述したり、それ以外の場合、このプロパティに依存しないでください。 将来のバージョンで削除する可能性があります。 |
-|publisherName|文字列型 (String)|関連付けられたアプリケーションが指定されているテナントの表示名です。|
-|replyUrls|String コレクション|ユーザー トークン用に送信される、関連するアプリケーション、またはリダイレクトを使用して記号を OAuth 2.0 の Uri の認証コードをアクセス トークンは、関連付けられたアプリケーション用に送信される Url です。 null 許容ではありません。 |
+|HomePage|String|関連付けられたアプリケーションのホーム ページの URL。|
+|keyCredentials|[keyCredential](keycredential.md) コレクション|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。 null 許容型ではありません。            |
+|logoutUrl|String| Microsoft の承認サービスで、[フロント チャネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[バック チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウト プロトコルを使ってユーザーのログアウトするのに使う URL を指定します。  |
+|oauth2Permissions|[oAuth2Permission](oauth2permission.md) コレクション|関連付けられているアプリケーションによって公開される OAuth 2.0 のアクセス許可。 さらに詳しい情報については、[アプリケーション](application.md) エンティティの **oauth2Permissions** プロパティの定義を参照してください。 null 許容型ではありません。            |
+|id|String|サービス プリンシパルの一意識別子。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
+|passwordCredentials|[passwordCredential](passwordcredential.md) コレクション|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。 null 許容型ではありません。 |
+|preferredTokenSigningKeyThumbprint|String|内部使用専用に予約済みです。 このプロパティに書き込みしたり、依存したりしないでください。 将来のバージョンで削除される可能性があります。 |
+|publisherName|String|関連付けられたアプリケーションが指定されているテナントの表示名。|
+|replyUrls|String コレクション|関連付けられたアプリケーションにサインインするためにユーザー トークンが送信される URL、または関連付けられたアプリケーションに対して OAuth 2.0 認証コードとアクセス トークンが送信されるリダイレクト URI。 null 許容型ではありません。 |
 |samlMetadataUrl|String| |
-|servicePrincipalNames|String コレクション|関連付けられたアプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://msdn.microsoft.com/library/azure/dn132633.aspx)です。**Any**演算子は、複数値を持つプロパティのフィルター式に必要です。  null 許容ではありません。 |
-|タグの前に追加されるマークアップ|String コレクション| null 許容ではありません。 |
+|servicePrincipalNames|String コレクション|関連するアプリケーションを識別する URI です。 詳細情報については、「[アプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://msdn.microsoft.com/library/azure/dn132633.aspx)」を参照してください。複数値プロパティのフィルター式には **any** 演算子が必要です。  null 許容型ではありません。 |
+|tags|String コレクション| null 許容型ではありません。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|プリンシパル (ユーザー、グループ、およびサービス プリンシパル) このサービス ・ プリンシパルに割り当てられています。 読み取り専用です。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md)コレクション|サービス ・ プリンシパルが割り当てられているアプリケーションです。 読み取り専用です。 Null 許容型。|
-|createdObjects|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクトがこのサービス ・ プリンシパルを作成します。 読み取り専用です。 Null 許容型。|
-|memberOf|[directoryObject](directoryobject.md) コレクション|このサービス主体のメンバーである役割。 : の HTTP メソッドは、読み取り専用を取得します。 Null 許容型。|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md)コレクション|ユーザーの偽装の補助金がこのサービス ・ プリンシパルに関連付けられています。 読み取り専用です。 Null 許容型。|
-|ownedObjects|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルが所有するディレクトリ オブジェクトです。 読み取り専用です。 Null 許容型。|
-|owners|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルの所有者であるディレクトリ オブジェクトです。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 読み取り専用です。 Null 許容型。|
-|役割|[ポリシー](policy.md)コレクション|このサービス ・ プリンシパルに割り当てられているポリシーです。|
+|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |このサービス プリンシパルに割り当てられているプリンシパル (ユーザー、グループ、サービス プリンシパル)。 読み取り専用です。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) コレクション|サービス プリンシパルが割り当てられているアプリケーション。 読み取り専用です。 Null 許容型。|
+|createdObjects|[directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで作成したディレクトリ オブジェクト。 読み取り専用です。 Null 許容型。|
+|memberOf| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルがメンバーになっているロール。 HTTP メソッド: GET 読み取り専用。 Null 許容型です。|
+|oauth2PermissionGrants| [oAuth2PermissionGrant](oauth2permissiongrant.md) コレクション|このサービス プリンシパルに関連付けられているユーザーの偽装許可です。 読み取り専用です。 Null 許容型。|
+|ownedObjects| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有しているディレクトリ オブジェクト。 読み取り専用です。 Null 許容型です。|
+|owners| [directoryObject](directoryobject.md) コレクション|このサービス プリンシパルで所有者であるディレクトリ オブジェクト。 所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。 読み取り専用です。 Null 許容型です。|
+|policy| [policy](policy.md) コレクション|このサービス プリンシパルに割り当てられているポリシー。|
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[ServicePrincipal を取得します。](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |ServicePrincipal オブジェクトのプロパティと関係を参照してください。|
-|[リスト servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md)コレクション | ServicePrincipal オブジェクトのリストを取得します。 |
-|[AppRoleAssignment を作成します。](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| AppRoleAssignments コレクションへの投稿には、新しい appRoleAssignment を作成します。|
-|[リスト appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md)コレクション| AppRoleAssignment オブジェクトのコレクションを取得します。|
-|[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| CreatedObject オブジェクトのコレクションを取得します。|
-|[memberOf を一覧表示する](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| このサービス ・ プリンシパルがへの後方リンクのナビゲーション プロパティからの直接メンバーであるグループを取得します。|
-|[推移的な所属するグループ] ボックスの一覧](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| このサービス主体のメンバーであるグループを一覧表示します。 この操作では、推移的では、このサービス ・ プリンシパルの入れ子にされたメンバーであるグループが含まれています。 |
-|[リストが割り当てられているポリシー](../api/policy-list-assigned.md)| [ポリシー](policy.md)コレクション| このオブジェクトに割り当てられているすべてのポリシーを取得します。|
-|[リスト oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md)コレクション| OAuth2PermissionGrant オブジェクトのコレクションを取得します。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| OwnedObject オブジェクトのコレクションを取得します。|
-|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| 所有者のコレクションへの投稿には、新しい所有者を作成します。|
-|[所有者を一覧表示する](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) コレクション| 所有者のオブジェクトのコレクションを取得します。|
-|[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |ServicePrincipal オブジェクトを更新します。 |
-|[Delete](../api/serviceprincipal-delete.md) | なし |ServicePrincipal オブジェクトを削除します。 |
+|[servicePrincipal を取得する](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |servicePrincipal オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[servicePrincipals を一覧表示する](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) コレクション | servicePrincipal オブジェクトの一覧を取得します。 |
+|[appRoleAssignment を作成する](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| appRoleAssignment コレクションに投稿して新しい AppRoleAssignments を作成します。|
+|[appRoleAssignments を一覧表示する](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) コレクション| appRoleAssignment オブジェクト コレクションを取得します。|
+|[createdObjects を一覧表示する](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) コレクション| createdObject オブジェクト コレクションを取得します。|
+|[memberOf を一覧表示する](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| memberOf ナビゲーション プロパティからこのサービス プリンシパルが直接のメンバーであるグループを取得します。|
+|[推移的な memberOf を一覧表示する](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| このサービス プリンシパルがメンバーになっているグループを一覧表示します。 この操作は推移的で、このサービス プリンシパルが入れ子のメンバーになっているグループが含まれます。 |
+|[割り当てられているポリシーを一覧表示する](../api/policy-list-assigned.md)| [policy](policy.md) コレクション| このオブジェクトに割り当てられているすべてのポリシーを取得します。|
+|[oauth2PermissionGrants を一覧表示する](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) コレクション| oAuth2PermissionGrant オブジェクト コレクションを取得します。|
+|[ownedObjects を一覧表示する](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) コレクション| ownedObject オブジェクト コレクションを取得します。|
+|[所有者を追加する](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| 所有者のコレクションに投稿して、新しい所有者を作成します。|
+|[所有者を一覧表示する](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) コレクション| owner オブジェクトのコレクションを取得します。|
+|[更新する](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |servicePrincipal オブジェクトを更新します。 |
+|[削除する](../api/serviceprincipal-delete.md) | なし |servicePrincipal オブジェクトを削除します。 |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String コレクション||
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String コレクション||
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String コレクション||
-|[delta](../api/serviceprincipal-delta.md)|servicePrincipal コレクション| サービス ・ プリンシパルの増分の変更を取得します。 |
+|[差分](../api/serviceprincipal-delta.md)|servicePrincipal コレクション| サービス プリンシパルに対する増分の変更を取得します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

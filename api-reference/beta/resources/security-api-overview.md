@@ -1,84 +1,92 @@
 ---
-title: Microsoft Graph セキュリティ API を使用する
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
+title: Microsoft Graph Security API を使用する
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: bc5a307b17a37f5523e3dbc8b145c248b0226471
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: cd55b2d26d7460e7421b9da19658990b53dd7580
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944769"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571696"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する
+# <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
- > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft グラフ セキュリティ API は、統一されたインタ フェースとマイクロソフトとエコシステムのパートナーからのセキュリティ ソリューションと統合するためにスキーマを提供します。 これは、セキュリティ ・ オペレーションを合理化し、サイバー脅威の増加が防御よりのお客様を支援します。 Microsoft グラフ セキュリティ API は、集約された応答を取得するすべての onboarded セキュリティ プロバイダーにクエリを発行するフェデレーション セキュリティ集約サービスとして使用できます。 Microsoft グラフ セキュリティ API を使用してアプリケーションを構築します。
+Microsoft Graph Security API には、Microsoft とエコシステム パートナーのセキュリティ ソリューションを統合するための統一されたインターフェイスとスキーマが備わっています。 これにより、お客様は、増加するサイバー脅威に対するセキュリティ操作と優れた防御を効率的に行うことができます。 Security API をフェデレーション セキュリティ集約サービスとして使用することにより、オンボードのセキュリティ プロバイダーすべてに対してクエリを発行し、回答の集約情報を得ることができます。 Microsoft Graph Security API を使用して以下の処理を行うアプリケーションを構築できます。
 
-- 統合し、複数のソースからのセキュリティの警告の相関関係
-- 調査を通知するためにコンテキストのデータのロックを解除します。
-- 効率のセキュリティ ・ オペレーションを自動化します。
-- プロアクティブ リスク管理を有効にするセキュリティ ・ データの可視性を提供します。
+- 複数のソースからのセキュリティの警告を統合し、関連付ける
+- コンテキスト データをロック解除し、調査について通知する
+- 効率を上げるためにセキュリティ操作を自動化する
+- 予防的なリスク管理を可能にするため、セキュリティ データを可視化する
 
-Microsoft グラフ セキュリティ API には、次のキーのエンティティが含まれています。
+Microsoft Graph Security API には以下の主要なエンティティが含まれています。
 
 ## <a name="alerts"></a>アラート
 
-通知は、マイクロソフトまたはパートナーのセキュリティ ・ ソリューションが既に特定し、アクションの通知フラグが設定されているお客様のテナント内で潜在的なセキュリティ上の問題です。 Microsoft グラフのセキュリティの[警告](alert.md)のエンティティとを統合し、すべての統合されたソリューションのセキュリティの問題を合理化できます。 これは、アプリケーションのアラートおよび脅威の保護とレスポンスを向上させるためにコンテキストを関連付けることもできます。 これらは、インシデントの解決方法を調査の時間と時間を減らすことでセキュリティの運用効率をアンロックします。 アラートの更新機能により、さまざまなセキュリティ製品およびサービスの[アラート](alert.md)のエンティティを更新することによって、Microsoft グラフ セキュリティ API と統合されている間、特定のアラートの状態を同期できます。
+アラートは、Microsoft またはパートナーのセキュリティ ソリューションが識別し、アクションまたは通知のためのフラグが設定された、お客様のテナント内における潜在的なセキュリティ問題です。 Microsoft Graph Security [アラート](alert.md) エンティティを使用すると、統合されたすべてのソリューション内のセキュリティ問題を統一して合理化できます。 これにより、アプリケーション側でも、アラートとコンテキストを関連付け、脅威保護や対応能力を向上できます。 その結果、インシデントの調査時間と解決までの時間が短縮され、セキュリティ操作の効率性が上がります。 アラート更新機能を利用すると、[アラート](alert.md) エンティティを更新することによって Microsoft Graph Security API に統合される各種セキュリティ製品とサービスにおいて特定のアラート状態を同期できます。
 
-グラフのセキュリティに統合されたソリューションの Microsoft 次のセキュリティ プロバイダーからのアラートが表示されます。
+Microsoft Graph Security 統合ソリューションは、以下のセキュリティ プロバイダーからのアラートを受信します。
 
-- [Azure のセキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Azure Active Directory Id の保護](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [マイクロソフト クラウド アプリケーションのセキュリティ](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Windows Defender の脅威保護の詳細](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Azure の情報の保護](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**(プレビュー)**
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(プレビュー)**
 - Microsoft Intune **(プライベート プレビュー)**
-- Office 365 は **(準備中)**
-- Azure の脅威保護の詳細 **(準備中)**
-- パートナー ・ ソリューション、パロアルトのネットワーク ・ アプリケーション ・ フレームワーク
+- Office 365 **(準備中)**
+- Azure Advanced Threat Protection **(準備中)**
+- Palo Alto Networks App Framework などのパートナー ソリューション
 
-> **注:** 新しいプロバイダーは、Microsoft のグラフのセキュリティ エコシステムの契約時では継続的にします。
+> **注:** Microsoft Graph Security エコシステムに新しいプロバイダーが継続的にオンボードされています。
 
-## <a name="secure-score-preview"></a>スコアをセキュリティで保護された (プレビュー)
+## <a name="secure-score-preview"></a>セキュア スコア (プレビュー)
 
-[マイクロソフトのセキュリティで保護されたスコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオへの可視性とその改善方法については、セキュリティ分析ソリューションです。 スコアが 1 つ、何を行う Microsoft のソリューションでリスクを軽減するよりよく理解できます。 他の組織とあなたのスコアを比較して、スコアがどのように時間の経過と共にトレンド分析されているを参照してください。 Microsoft グラフ セキュリティ[secureScore](securescores.md)と[secureScoreControlProfiles](securescorecontrolprofiles.md)のエンティティを使用して、セキュリティ機能の適切な組み合わせを有効にするときに、組織のセキュリティと生産性のニーズのバランスをとるするのに役立ちます。 でしょうあなたのスコアを射影することもセキュリティ機能を採用した後です。
+[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescores.md) と [secureScoreControlProfile](securescorecontrolprofiles.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース
 
-Microsoft グラフ セキュリティ API を使用するための最も一般的な要求の一部を次に示します。
+Microsoft Graph Security API の操作で最も一般的な要求の一部を以下に取り上げます。
 
-| **ユース ケース**   | **REST リソース** | **グラフのエクスプ ローラーで試してみよう** |
+| **ユース ケース**   | **REST リソース** | **Graph エクスプローラーで試す** |
 |:---------------|:--------|:----------|
-| 警告の一覧表示 | [警告の一覧表示](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| アラートを更新します。 | [警告の更新](../api/alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
-|リストのセキュリティで保護されたスコア|[リスト secureScores](../api/securescores-list.md)(プレビュー)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|スコア管理プロファイルをセキュリティで保護] ボックスの一覧|[リスト secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)(プレビュー)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|更新プログラムは、スコア管理プロファイルをセキュリティで保護します。|[SecureScoreControlProfiles を更新](../api/securescorecontrolprofiles-update.md)(プレビュー)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+| アラートを一覧表示する | [アラートの一覧表示](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| アラートを更新する | [アラートの更新](../api/alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+|セキュリティ スコアを一覧表示する|[secureScores の一覧表示](../api/securescores-list.md) (プレビュー)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|セキュア スコア制御プロファイルを一覧表示する|[secureScoreControlProfiles の一覧表示](../api/securescorecontrolprofiles-list.md) (プレビュー)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|セキュア スコア制御プロファイルを更新する|[secureScoreControlProfiles の更新](../api/securescorecontrolprofiles-update.md) (プレビュー)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
-購読して、Microsoft のグラフのセキュリティ エンティティの更新に関する通知を受け取るには、Graph [webhooks](/graph/webhooks)を使用できます。
+Microsoft Graph [webhook](/graph/webhooks) を使用すると、Microsoft Graph Security エンティティの更新に関する通知をサブスクライブして受信できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-Microsoft グラフ セキュリティ API は、Microsoft およびパートナーからのさまざまなセキュリティ ソリューションと連携するための新しい方法を開くことができます。 開始する次の手順に従います。
+Microsoft Graph Security API は、Microsoft およびパートナーの各種セキュリティ ソリューションを活用するための新しい手段となります。 以下の手順に従って開始しましょう。
 
-- [アラート](alert.md)にドリル ・ ダウンし、 [secureScore](securescores.md) (プレビュー)、 [secureScoreControlProfiles](securescorecontrolprofiles.md) (プレビュー)。
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 [**サンプル クエリ**] は、**多くのサンプルを表示する**を選択し、セキュリティ カテゴリを**オン**に設定します。
-- エンティティの変更[をサブスクライブして、受信通知](/graph/webhooks)を実行してください。
+- [アラート](alert.md)、[secureScore](securescores.md) (プレビュー)、[secureScoreControlProfile](securescorecontrolprofiles.md) (プレビュー) について詳しく調査します。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試します。 **[サンプル クエリ]** で、**[サンプルをさらに表示]** を選択してセキュリティ カテゴリを **[オン]** に設定します。
+- エンティティ変更時の[通知のサブスクライブと受信](/graph/webhooks)を試します。
 
 さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-コードされ、これらの Microsoft グラフ セキュリティ API のサンプル。
+コードを作成し、以下の Microsoft Graph Security API サンプルに投稿できます。
 
-- [サンプルの ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python のサンプル](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) のサンプル](https://github.com/microsoftgraph/nodejs-security-sample)
+- [ASP.NET (C#) サンプル](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python サンプル](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript) サンプル](https://github.com/microsoftgraph/nodejs-security-sample)
 
-コミュニティに参加します。
+以下のコミュニティに参加できます。
 
-- [テクニカル コミュニティに参加します。](https://aka.ms/graphsecuritycommunity)
-- [StackOverflow を説明します。](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+- [技術コミュニティに参加する](https://aka.ms/graphsecuritycommunity)
+- [StackOverflow についてディスカッションする](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,17 @@ title: Microsoft Graph での Office 365 使用状況レポートの使用
 description: Microsoft Graph によって、Office 365 使用状況レポートのリソースにアクセスし、社内で Office 365 サービスがどのように使用されているかについての情報を取得できます。 たとえば、サービスをよく利用してクォータに到達しそうなユーザーや、Office 365 ライセンスを必要としない可能性があるユーザーなどを識別できます。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: ff0ac12d2a216face3381574effb080624af97e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: 4799289374df8fbaac8edf7c43514557d193c80d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978026"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572039"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Microsoft Graph での Office 365 使用状況レポートの使用
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph によって、Office 365 使用状況レポートのリソースにアクセスし、社内で Office 365 サービスがどのように使用されているかについての情報を取得できます。 たとえば、サービスをよく利用してクォータに到達しそうなユーザーや、Office 365 ライセンスを必要としない可能性があるユーザーなどを識別できます。
 
@@ -20,9 +21,9 @@ Microsoft Graph によって、Office 365 使用状況レポートのリソー�
 
 Microsoft Graph では、アクセス許可によってリソースへのアクセスを制御します。 Reports リソースにアクセスするには、アクセス許可を指定する必要があります。 通常は Azure Active Directory (Azure AD) ポータルでアクセス許可を指定します。 詳細については、「[Microsoft Graph のアクセス許可のリファレンス](/graph/permissions-reference)」および「[Reports のアクセス許可](/graph/permissions-reference#reports-permissions)」を参照してください。
 
-## <a name="changes-to-the-reports-apis"></a>レポート Api への変更
+## <a name="changes-to-the-reports-apis"></a>レポート API への変更
 
-ビューのパラメーターを渡すに必要な特定のビューの API を呼び出すことができますので、元のレポート Api が更新されました。 アプリケーションの新しい Api を使用すると、すぐに開始することをお勧めします。 次の表は、削除された Api と、それらを交換する新しい Api を示します。
+元のレポート API が更新され、ビュー パラメーターを渡すのではなく、特定のビューの API を呼び出すことができるようになりました。 アプリケーションで可能な限り早急に新しい API を使用することをお勧めします。 以下の表に、削除した API と、それらに代わる新しい API をまとめます。
 
 | 元の API            | 新しい API                                  |
 | :---------------------- | :--------------------------------------- |
@@ -53,3 +54,11 @@ Reports リソースと API によって、ユーザーとの連携や、ユー�
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 
 さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/report.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

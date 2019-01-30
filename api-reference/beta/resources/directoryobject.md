@@ -4,16 +4,16 @@ description: Azure Active Directory オブジェクトを表します。**direct
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f02687a8fc3b5b50f4e1e956da4bdc632ea389e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5ba2454a5eda90ec50dbd6a0c152383bb42a437d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952938"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573957"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure Active Directory オブジェクトを表します。**directoryObject** 型は、他の多くのディレクトリ エンティティ型の基本型です。
 
@@ -25,22 +25,22 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[directoryObject を取得する](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |ディレクトリ オブジェクトのプロパティを読み取ります。|
+|[directoryObject を取得する](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |ディレクトリ オブジェクトのプロパティを読み取ります。|
 |[Delete](../api/directoryobject-delete.md) | なし |ディレクトリ オブジェクトを削除します。 |
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String コレクション|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String コレクション|ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループを返します。チェックは推移的です。|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String コレクション| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
-|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) コレクション | 指定された一連の ID に基づいて、一連のディレクトリ オブジェクトを取得します。 |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| メールのニックネームは、命名ポリシーに準拠しているまたは、Office 365 のグループの表示名を検証します。 |
-|[delta](../api/directoryobject-delta.md)|directoryObject コレクション| ディレクトリ オブジェクトに対して増分の変更を取得します。 Derrived の種類でフィルター処理をサポートします。 |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループを返します。チェックは推移的です。|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](../resources/directoryobject.md) コレクション | 指定された一連の ID に基づいて、一連のディレクトリ オブジェクトを取得します。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| 名前付けポリシーに準拠した Office 365 グループの表示名またはメール ニックネームを検証します。 |
+|[delta](../api/directoryobject-delta.md)|directoryObject コレクション| ディレクトリ オブジェクトの増分の変更を取得します。 派生した型によるフィルター処理をサポートします。 |
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|ID|String|オブジェクトの一意の識別子である Guidたとえば、12345678-9abc-def0-1234-56789abcde12 です。 キー。 null 許容ではありません。 読み取り専用です。|
+|id|String|オブジェクトの一意識別子である Guid。例: 12345678-9abc-def0-1234-56789abcde12。 キー。 null 許容ではありません。 読み取り専用です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 なし
 
@@ -61,15 +61,19 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObject resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

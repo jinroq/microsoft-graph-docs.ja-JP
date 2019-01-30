@@ -1,41 +1,51 @@
 ---
-title: 情報リソースの種類
-description: 情報は、関係の高度な解析と機械学習技術を使用して計算です。 OneDrive ドキュメントがユーザーの周りのトレンド分析を識別するなど。
+title: officeGraphInsights リソースの種類
+description: インサイトとは、高度な分析と機械学習の機能を使って計算されるリレーションシップのことです。 たとえば、ユーザーの周囲で人気急上昇中の OneDrive ドキュメントを特定することができます。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 38f7afb40c1618a8a7cf9d585c99633e2bb8d940
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: daded26bff88d611ea39754d98007fa3329d142b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938315"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572459"
 ---
-# <a name="insights-resource-type"></a>情報リソースの種類
+# <a name="insights-resource-type"></a>インサイト リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-情報は、関係の高度な解析と機械学習技術を使用して計算です。 OneDrive ドキュメントがユーザーの周りのトレンド分析を識別するなど。
+インサイトとは、高度な分析と機械学習の機能を使って計算されるリレーションシップのことです。 たとえば、ユーザーの周囲で人気急上昇中の OneDrive ドキュメントを特定することができます。
 
-次の Api では、情報が返されます。
+インサイトは、次の API によって返されます。
 
-- [Trending](insights-trending.md)のでは、OneDrive と SharePoint サイトのユーザーの周りのトレンド分析から、ドキュメントが返されます。
-- [使用されている](insights-used.md)のでは、ドキュメントの表示し、ユーザーが変更を返します。 ビジネス、SharePoint、電子メールの添付ファイル、およびボックス、ドロップ ボックスや Google のドライブのようなソースからのリンクの添付ファイルとして開かれたの OneDrive で、ユーザーが使用するドキュメントが含まれます。
-- [共有](insights-shared.md)では、ユーザーと共有するドキュメントを返します。 ドキュメント共有できる電子メールの添付ファイル、または OneDrive としてビジネスに送信した電子メールのリンクをします。
+- [Trending](insights-trending.md) - ユーザーの周囲で人気上昇中の OneDrive ドキュメントや SharePoint サイトを返します。
+- [Used](insights-used.md) - ユーザーが表示および変更したドキュメントを返します。 ユーザーが OneDrive for Business、SharePoint で使ったドキュメント、メールの添付ファイルとして、あるいは Box、DropBox、Google ドライブなどのソースからのリンクの添付ファイルとして開いたドキュメントが含まれます。
+- [Shared](insights-shared.md) - ユーザーと共有されているドキュメントを返します。 ドキュメントは、メールの添付ファイルとして、またはメールで送信した OneDrive for Business のリンクとして共有できます。
 
-各情報が返されます、`resourceVisualization`と`resourceReference`複雑な値の種類 (CVT) です。 含まれているプロパティを次のように CVT の resourceVisualization`title`と`previewImageUrl`。 マイクロソフトは、Office の説明のような経験でファイルを表示するのに視覚エフェクトのプロパティを使用します。
+各インサイトは、`resourceVisualization` と `resourceReference` の複合値型 (CVT) で返されます。 resourceVisualization CVT には `title` と `previewImageUrl` などのプロパティが含まれます。 Microsoft では、視覚化プロパティを使って Office Delve のようなエクスペリエンスでファイルをレンダリングします。
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ      | 型          | 説明  |
 | ------------- |---------------| -------------|
-| トレンド分析      | [Trending](insights-trending.md)コレクション       | トレンド分析ドキュメントを識別する計算の関係です。 OneDrive または SharePoint サイトでは、トレンドのドキュメントを格納できます。   |
-| used      | コレクションの[使用](insights-used.md)       | ドキュメントを表示し、ユーザーによって変更を識別するリレーションシップが計算されます。 ビジネス、SharePoint、電子メールの添付ファイル、およびボックス、ドロップ ボックスや Google のドライブのようなソースからのリンクの添付ファイルとして開かれたの OneDrive で、ユーザーが使用するドキュメントが含まれます。  |
-| shared        | [共有](insights-shared.md)コレクション       | ユーザーと共有するドキュメントを識別する計算の関係です。 ドキュメント共有できる電子メールの添付ファイル、または OneDrive としてビジネスに送信した電子メールのリンクをします。   |
+| trending      | [trending](insights-trending.md) コレクション       | 計算されたリレーションシップによって人気上昇中のドキュメントを識別します。 人気上昇中のドキュメントは、OneDrive または SharePoint のサイトに保存することができます。   |
+| used      | [usedInsight](insights-used.md) コレクション        | 計算されたリレーションシップによってユーザーが表示したり変更したりしたドキュメントを識別します。 ユーザーが OneDrive for Business、SharePoint で使ったドキュメント、メールの添付ファイルとして、あるいは Box、DropBox、Google ドライブなどのソースからのリンクの添付ファイルとして開いたドキュメントが含まれます。  |
+| shared        | [shared](insights-shared.md) コレクション       | 計算されたリレーションシップによってユーザーが共有しているドキュメントを識別します。 ドキュメントは、メールの添付ファイルとして、またはメールで送信した OneDrive for Business のリンクとして共有できます。   |
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.officeGraphInsights"
+}-->
+
 ```json
 {
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
@@ -43,3 +53,11 @@ ms.locfileid: "27938315"
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
