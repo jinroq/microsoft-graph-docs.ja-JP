@@ -4,32 +4,30 @@ description: ユーザーがメンバーであるすべてのグループを返�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 292a7e6c9ed0d67ced657dd726d9f41b32eac458
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415139"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517597"
 ---
-# <a name="user-getmembergroups"></a><span data-ttu-id="f79b6-104">user: getMemberGroups の読み取りとは異なり、チェックは推移的です。</span><span class="sxs-lookup"><span data-stu-id="f79b6-104">user: getMemberGroups</span></span>
+# <a name="user-getmembergroups"></a><span data-ttu-id="6ce27-104">user: getMemberGroups の読み取りとは異なり、チェックは推移的です。</span><span class="sxs-lookup"><span data-stu-id="6ce27-104">user: getMemberGroups</span></span>
 
-<span data-ttu-id="f79b6-p102">ユーザーがメンバーであるすべてのグループを返します。チェックは推移的であり、ユーザーが直接メンバーであるグループのみを返す [memberOf](../api/user-list-memberof.md) ナビゲーション プロパティの読み取りとは異なります。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p102">Return all the groups that the user is a member of. The check is transitive, unlike reading the [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.</span></span>
+<span data-ttu-id="6ce27-p102">ユーザーがメンバーであるすべてのグループを返します。チェックは推移的であり、ユーザーが直接メンバーであるグループのみを返す [memberOf](../api/user-list-memberof.md) ナビゲーション プロパティの読み取りとは異なります。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p102">Return all the groups that the user is a member of. The check is transitive, unlike reading the [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.</span></span>
 
-<span data-ttu-id="f79b6-p103">この関数は、Office 365 と Azure AD でプロビジョニングされた他の種類のグループをサポートしています。各要求を返すことができるグループの最大数は 2046 です。Office 365 グループにグループを含めることはできません。そのため、Office 365 グループのメンバーシップは常にダイレクト メンバーシップです。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
+<span data-ttu-id="6ce27-p103">この関数は、Office 365 と Azure AD でプロビジョニングされた他の種類のグループをサポートしています。各要求を返すことができるグループの最大数は 2046 です。Office 365 グループにグループを含めることはできません。そのため、Office 365 グループのメンバーシップは常にダイレクト メンバーシップです。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f79b6-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f79b6-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ce27-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6ce27-111">Permissions</span></span>
 
-<span data-ttu-id="f79b6-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6ce27-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f79b6-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f79b6-114">Permission type</span></span>                        | <span data-ttu-id="f79b6-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f79b6-115">Permissions (from least to most privileged)</span></span>                                                                                                          |
+| <span data-ttu-id="6ce27-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6ce27-114">Permission type</span></span>                        | <span data-ttu-id="6ce27-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6ce27-115">Permissions (from least to most privileged)</span></span>                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f79b6-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f79b6-116">Delegated (work or school account)</span></span>     |  <span data-ttu-id="f79b6-117">User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f79b6-117">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="f79b6-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f79b6-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f79b6-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f79b6-119">Not supported.</span></span>                                                                                                                                       |
-| <span data-ttu-id="f79b6-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f79b6-120">Application</span></span>                            | <span data-ttu-id="f79b6-121">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f79b6-121">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span>                                                                                        |
+| <span data-ttu-id="6ce27-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6ce27-116">Delegated (work or school account)</span></span>     |  <span data-ttu-id="6ce27-117">User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6ce27-117">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="6ce27-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6ce27-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ce27-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6ce27-119">Not supported.</span></span>                                                                                                                                       |
+| <span data-ttu-id="6ce27-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6ce27-120">Application</span></span>                            | <span data-ttu-id="6ce27-121">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ce27-121">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span>                                                                                        |
 
-> <span data-ttu-id="f79b6-122">**注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f79b6-122">Note: This API currently requires the Directory.Read.All permission or higher.</span></span> <span data-ttu-id="f79b6-123">Group.Read.All アクセス許可を単独で、または `User.` アクセス許可と組み合わせて使用すると、エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="f79b6-123">Using the Group.Read.All permission, either alone or in combination with a User permission, will return an error.</span></span> <span data-ttu-id="f79b6-124">これは既知のバグです。</span><span class="sxs-lookup"><span data-stu-id="f79b6-124">This is a known bug.</span></span>
-
-## <a name="http-request"></a><span data-ttu-id="f79b6-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f79b6-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ce27-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6ce27-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,32 +35,32 @@ ms.locfileid: "29415139"
 POST /users/{id | userPrincipalName}/getMemberGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f79b6-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f79b6-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6ce27-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6ce27-123">Request headers</span></span>
 
-| <span data-ttu-id="f79b6-127">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f79b6-127">Header</span></span>        | <span data-ttu-id="f79b6-128">値</span><span class="sxs-lookup"><span data-stu-id="f79b6-128">Value</span></span>                     |
+| <span data-ttu-id="6ce27-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6ce27-124">Header</span></span>        | <span data-ttu-id="6ce27-125">値</span><span class="sxs-lookup"><span data-stu-id="6ce27-125">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="f79b6-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="f79b6-129">Authorization</span></span> | <span data-ttu-id="f79b6-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f79b6-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f79b6-132">Content-Type</span></span>  | <span data-ttu-id="f79b6-133">application/json</span><span class="sxs-lookup"><span data-stu-id="f79b6-133">application/json</span></span>          |
+| <span data-ttu-id="6ce27-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ce27-126">Authorization</span></span> | <span data-ttu-id="6ce27-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6ce27-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6ce27-129">Content-Type</span></span>  | <span data-ttu-id="6ce27-130">application/json</span><span class="sxs-lookup"><span data-stu-id="6ce27-130">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="f79b6-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="f79b6-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ce27-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="6ce27-131">Request body</span></span>
 
-<span data-ttu-id="f79b6-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f79b6-135">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="6ce27-132">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="6ce27-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f79b6-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f79b6-136">Parameter</span></span>           | <span data-ttu-id="f79b6-137">型</span><span class="sxs-lookup"><span data-stu-id="f79b6-137">Type</span></span>    | <span data-ttu-id="f79b6-138">説明</span><span class="sxs-lookup"><span data-stu-id="f79b6-138">Description</span></span>                                                                                                                                                                                                                                                                         |
+| <span data-ttu-id="6ce27-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6ce27-133">Parameter</span></span>           | <span data-ttu-id="6ce27-134">型</span><span class="sxs-lookup"><span data-stu-id="6ce27-134">Type</span></span>    | <span data-ttu-id="6ce27-135">説明</span><span class="sxs-lookup"><span data-stu-id="6ce27-135">Description</span></span>                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f79b6-139">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="f79b6-139">securityEnabledOnly</span></span> | <span data-ttu-id="f79b6-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="f79b6-140">Boolean</span></span> | <span data-ttu-id="f79b6-p107">ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p107">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span> |
+| <span data-ttu-id="6ce27-136">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="6ce27-136">securityEnabledOnly</span></span> | <span data-ttu-id="6ce27-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="6ce27-137">Boolean</span></span> | <span data-ttu-id="6ce27-p106">ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p106">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f79b6-143">応答</span><span class="sxs-lookup"><span data-stu-id="f79b6-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6ce27-140">応答</span><span class="sxs-lookup"><span data-stu-id="6ce27-140">Response</span></span>
 
-<span data-ttu-id="f79b6-144">成功した場合、このメソッドはユーザーがメンバーであるグループの ID を含んだ応答本文で `200 OK` 応答コードと文字列コレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="f79b6-144">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.</span></span>
+<span data-ttu-id="6ce27-141">成功した場合、このメソッドはユーザーがメンバーであるグループの ID を含んだ応答本文で `200 OK` 応答コードと文字列コレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="6ce27-141">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f79b6-145">例</span><span class="sxs-lookup"><span data-stu-id="f79b6-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6ce27-142">例</span><span class="sxs-lookup"><span data-stu-id="6ce27-142">Example</span></span>
 
-<span data-ttu-id="f79b6-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="f79b6-146">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="6ce27-143">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="6ce27-143">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f79b6-147">要求</span><span class="sxs-lookup"><span data-stu-id="f79b6-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6ce27-144">要求</span><span class="sxs-lookup"><span data-stu-id="6ce27-144">Request</span></span>
 
-<span data-ttu-id="f79b6-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f79b6-148">Here is an example of the request.</span></span>
+<span data-ttu-id="6ce27-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6ce27-145">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -79,9 +77,9 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f79b6-149">応答</span><span class="sxs-lookup"><span data-stu-id="f79b6-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6ce27-146">応答</span><span class="sxs-lookup"><span data-stu-id="6ce27-146">Response</span></span>
 
-<span data-ttu-id="f79b6-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f79b6-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6ce27-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6ce27-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
