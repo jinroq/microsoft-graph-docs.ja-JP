@@ -4,12 +4,12 @@ description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API は
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: cd55b2d26d7460e7421b9da19658990b53dd7580
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 042c63cfee833a1f9c7493a9e35a6bbb8eb2fbaa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571696"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643088"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
@@ -44,7 +44,7 @@ Microsoft Graph Security 統合ソリューションは、以下のセキュリ�
 
 ## <a name="secure-score-preview"></a>セキュア スコア (プレビュー)
 
-[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescores.md) と [secureScoreControlProfile](securescorecontrolprofiles.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
+[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescores.md) と [secureScoreControlProfiles](securescorecontrolprofiles.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース
 
@@ -64,7 +64,7 @@ Microsoft Graph [webhook](/graph/webhooks) を使用すると、Microsoft Graph 
 
 Microsoft Graph Security API は、Microsoft およびパートナーの各種セキュリティ ソリューションを活用するための新しい手段となります。 以下の手順に従って開始しましょう。
 
-- [アラート](alert.md)、[secureScore](securescores.md) (プレビュー)、[secureScoreControlProfile](securescorecontrolprofiles.md) (プレビュー) について詳しく調査します。
+- [アラート](alert.md)、[secureScore](securescores.md) (プレビュー)、[secureScoreControlProfiles](securescorecontrolprofiles.md) (プレビュー) について詳しく調査します。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試します。 **[サンプル クエリ]** で、**[サンプルをさらに表示]** を選択してセキュリティ カテゴリを **[オン]** に設定します。
 - エンティティ変更時の[通知のサブスクライブと受信](/graph/webhooks)を試します。
 

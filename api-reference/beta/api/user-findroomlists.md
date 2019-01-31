@@ -1,24 +1,24 @@
 ---
-title: 'ユーザー: findRoomLists'
+title: 'user: findRoomLists'
 description: テナントで定義された部屋の一覧を取得します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979293"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520579"
 ---
-# <a name="user-findroomlists"></a>ユーザー: findRoomLists
+# <a name="user-findroomlists"></a>user: findRoomLists
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントで定義された部屋の一覧を取得します。
 
-テナントは、ルーム リストに会議室を整理できます。 各会議室や部屋の一覧は、 [emailAddress](../resources/emailaddress.md)インスタンスによって表されます。
-テナント、テナント内の[すべての部屋を取得](user-findrooms.md)を、または[すべての会議室を取得する](user-findrooms.md)特定の会議室の一覧で [すべてのルーム一覧を取得できます。
+テナントは会議室を部屋の一覧に整理できます。 それぞれの会議室と部屋の一覧は、[emailAddress](../resources/emailaddress.md) インスタンスによって表されます。
+テナント内のすべての部屋の一覧を取得できます。また、テナント内の[すべての部屋を取得](user-findrooms.md)したり、または特定の部屋の一覧の[すべての部屋を取得](user-findrooms.md)することができます。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -51,9 +51,9 @@ GET /users/<id>/findRoomLists
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードおよび[emailAddress](../resources/emailaddress.md)コレクション オブジェクト。
+成功した場合、このメソッドは `200 OK` の応答コードと、応答本文で [emailAddress](../resources/emailaddress.md) コレクション オブジェクトを返します。
 
-テナントのリストが定義されていない場合は、空の配列が返されます。
+テナントで定義されている一覧が存在しない場合は、空の配列が返されます。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

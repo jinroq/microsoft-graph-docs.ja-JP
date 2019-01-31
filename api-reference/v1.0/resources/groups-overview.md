@@ -4,12 +4,12 @@ description: グループとは、Microsoft サービス内またはアプリ内
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 031d67db4f0ad151175fc244aefdfd31615b221c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961688"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642269"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Microsoft Graph でのグループの操作
 
@@ -65,13 +65,13 @@ Outlook 内にあるグループの JSON 表記を次に示します。
     "visibility": "Public"
 }
 ```
-Office 365 グループと管理者の操作性の詳細については、「[Office 365 グループの概要](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
+Office 365 グループと管理者の操作性の詳細については、「[Office 365 グループの概要](https://support.office.com/ja-JP/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>セキュリティ グループとメールが有効なセキュリティ グループ
 
 セキュリティ グループは、リソースへのユーザー アクセスを制御するためのものです。 ユーザーがセキュリティ グループのメンバーであるかどうかを確認することで、そのユーザーがアプリ内のいくつかのセキュア リソースにアクセスしようとしているときに、アプリが承認を判断することができます。 セキュリティ グループには、ユーザーおよび他のセキュリティ グループをメンバーとして含めることができます。
 
-メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。  メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
+メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。  メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/ja-JP/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
 
 ### <a name="security-group-example"></a>セキュリティ グループの例
 
@@ -116,13 +116,17 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-membershipRule の数式化の詳細については、「[Azure Active Directory で動的グループ メンバーシップの属性ベースのルールを作成する](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)」を参照してください。
+membershipRule の数式化の詳細については、「[Azure Active Directory で動的グループ メンバーシップの属性ベースのルールを作成する](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)」を参照してください。
 
-> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
+> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/ja-JP/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
 
 ## <a name="other-types-of-groups"></a>その他の種類のグループ
 
 Yammer の Office 365 グループは、Yammer への投稿によりユーザーのコラボレーションを容易にするために使用されます。 この種類のグループは、読み取りの要求で返すことができますが、その投稿に API でアクセスすることはできません。 Yammer 投稿とスレッド フィードがグループで有効になると、既定の Office 365 グループ会話が無効になります。 詳細については、「[Yammer 開発者向け API ドキュメント](https://developer.yammer.com/docs)」をご覧ください。
+
+## <a name="group-based-licensing"></a>グループベースのライセンス 
+
+グループベースのライセンスを使用すると、Azure AD グループに 1 つ以上の製品ライセンスを割り当てることができます。 Azure AD では、グループのメンバー全員にライセンスが割り当てられていることを確認します。 グループに参加する新しいメンバー全員に、適切なライセンスが割り当てられます。 グループを脱退するときに、これらのライセンスは削除されます。 この機能は、セキュリティ グループと `securityEnabled=TRUE` を持つ Office 365 グループでのみ使用でききます。 グループベースのライセンスの詳細については、「[Azure Active Directory のグループベースのライセンスとは](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)」を参照してください。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース
 

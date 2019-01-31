@@ -4,12 +4,12 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 1c8ba23c6137bdedbf282c5bfcaf1a63b975efac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577355"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643966"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
@@ -40,8 +40,8 @@ ms.locfileid: "29577355"
     "calendar",
     "extensions",
     "instances",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -56,7 +56,7 @@ ms.locfileid: "29577355"
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "uid": "string",
+  "iud": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -87,8 +87,8 @@ ms.locfileid: "29577355"
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -133,12 +133,12 @@ ms.locfileid: "29577355"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|イベントの [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md)、[referenceAttachment](referenceattachment.md) の各添付ファイルのコレクション。 ナビゲーション プロパティ。 読み取り専用。 Null 許容型。|
+|attachments|[Attachment](attachment.md) コレクション|イベントの [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md)、[referenceAttachment](referenceattachment.md) の各添付ファイルのコレクション。 ナビゲーション プロパティ。 読み取り専用。 Null 許容型。|
 |calendar|[Calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[Extension](extension.md) コレクション|イベントに対して定義されているオープン拡張機能のコレクション。 Null 許容型です。|
 |instances|[Event](event.md) コレクション|イベントのインスタンス。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 

@@ -2,12 +2,12 @@
 title: passwordProfile リソースの種類
 description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。ユーザー エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
 localization_priority: Priority
-ms.openlocfilehash: 80d774906fb4897f57b943af827cfbc32e90511f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cea8dcc114cb599a2d857ced67ac25c9eb275497
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819664"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526026"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile リソースの種類
 
@@ -15,10 +15,11 @@ ms.locfileid: "27819664"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| ユーザーが次回のログインでパスワードを変更する必要がある場合は **true**、それ以外の場合は **false**。 |
-|password|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
+|forceChangePasswordNextSignInWithMfa|Boolean| **true** の場合、次回のサインイン時にユーザーは、パスワードの変更を強制される前に多要素認証 (MFA) を実行する必要があります。 この動作は **forceChangePasswordNextSignIn** と同じですが、パスワードを変更する前にユーザーが多要素認証を実行する必要がある点が異なります。 パスワードを変更すると、このプロパティは自動的に **false** にリセットされます。 設定しない場合、既定値は **false** です。 |
+|パスワード|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -35,6 +36,7 @@ ms.locfileid: "27819664"
 ```json
 {
   "forceChangePasswordNextSignIn": true,
+  "forceChangePasswordNextSignInWithMfa": false,
   "password": "string"
 }
 

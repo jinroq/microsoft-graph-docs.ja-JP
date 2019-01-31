@@ -4,12 +4,12 @@ description: Office 365 グループ、動的なグループ、セキュリテ�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726611"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641282"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -17,7 +17,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 
 パフォーマンス上の理由から、[create](../api/group-post-groups.md) 操作、[get](../api/group-get.md) 操作、および [list](../api/group-list.md) 操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。 [例](../api/group-get.md#request-2)を参照してください。
 
-このリソースは次の内容サポートしています。
+このリソースは以下をサポートしています。
 
 - [拡張機能](/graph/extensibility-overview)として、カスタム プロパティに独自のデータを追加します。
 - [変更通知](/graph/webhooks)を受信します。
@@ -97,17 +97,20 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|ブール値| 組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。 既定値は **false** です。 <br><br>$select でのみ返されます。 |
-|autoSubscribeNewMembers|ブール値|グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。 グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。 既定値は **false** です。 <br><br>$select でのみ返されます。|
-|分類|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](groupsettingtemplate.md)に基づいて ClassificationList [設定](groupsetting.md)値を作成することによって定義されます。<br><br>既定で返されます。|
+|allowExternalSenders|Boolean| 組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。 既定値は **false** です。 <br><br>$select でのみ返されます。 |
+|assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|グループに割り当てられているライセンス。 <br><br>$select でのみ返されます。 読み取り専用です。|
+|autoSubscribeNewMembers|Boolean|グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。 グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。 既定値は **false** です。 <br><br>$select でのみ返されます。|
+|classification|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](groupsettingtemplate.md)に基づいて ClassificationList [設定](groupsetting.md)値を作成することによって定義されます。<br><br>既定で返されます。|
 |createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
 |説明|String|グループに関するオプションの説明。 <br><br>既定で返されます。|
 |displayName|文字列|グループの表示名。 このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 <br><br>既定で返されます。 $filter および $orderby をサポートします。 |
 |groupTypes|String コレクション| 作成するグループの種類を指定します。 使用可能な値は `Unified` (Office 365 のグループを作成する場合) または `DynamicMembership` (動的なグループを作成する場合) です。  その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。 <br><br>既定で返されます。 $filter をサポートします。|
+|hasMembersWithLicenseErrors|Boolean|このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが true であるフィルターです)。 [例](../api/group-list.md)を参照してください。|
 |id|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
-|isSubscribedByMail|ブール値|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
+|isSubscribedByMail|Boolean|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
+|licenseProcessingState|String|グループのメンバー全員にグループ ライセンスの割り当ての状態を示します。 既定値は **false** です。 読み取り専用です。 使用可能な値: `QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。<br><br>$select でのみ返されます。 読み取り専用です。|
 |mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
-|mailEnabled|ブール値|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。 <br><br>既定で返されます。|
+|mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。 <br><br>既定で返されます。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
 |onPremisesLastSyncDateTime|DateTimeOffset|グループがオンプレミスのディレクトリと最後に同期した日時を示します。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 <br><br>既定で返されます。|
@@ -119,6 +122,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 **mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。 Office 365 グループの場合、**false** にする必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
 |unseenCount|Int32|サインにしているユーザーのグループへの最後のアクセス以降に新しい投稿を受け取った会話の数です。 <br><br>$select でのみ返されます。 |
 |visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `private`、`public`、`hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
+
 
 ### <a name="group-visibility-options"></a>グループの表示オプション
 
@@ -146,6 +150,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクション。 読み取り専用です。 Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
+|membersWithLicenseErrors|[User](user.md) コレクション|このグループに基づくライセンスの割り当てからのライセンス エラーが発生しているグループ メンバーの一覧です。 読み取り専用です。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |写真|[profilePhoto](profilephoto.md)| グループのプロファイル写真 |
@@ -282,14 +287,17 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 ```json
 {
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
@@ -312,6 +320,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
   "events": [ { "@odata.type": "microsoft.graph.event" }],
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

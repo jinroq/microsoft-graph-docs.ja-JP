@@ -3,16 +3,16 @@ title: Microsoft Graph でのファイルの作業
 description: Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7d791f983573f56744a47952aff282f822568785
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8ed01ced4f1aa42f5e3d71b1ec07d6d5f746cb31
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965895"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521994"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Microsoft Graph でのファイルの作業
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 
@@ -91,7 +91,7 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 
 [DriveItem](driveitem.md) は、ドライブのファイル システム内のオブジェクトです。`/items/{item-id}` 構文で **id** を使用して、または `/root:/path/to/item/` 構文でファイル システム パスを使用して、それらにアクセスできます。
 
-DriveItem には、アイテムの ID と機能に関するデータを提供する_ファセット_が存在します。
+DriveItem には、アイテムの id および機能に関するデータを提供する_ファセット_が存在します。
 
 **folder** ファセットを持つ DriveItem は、アイテムのコンテナーとして機能し、フォルダーの下のアイテムのコレクションを指す**子**参照を持ちます。
 
@@ -108,3 +108,11 @@ OneDrive と SharePoint のドキュメント ライブラリの最も一般的�
 Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares-get.md)することもできます。
 
  
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onedrive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

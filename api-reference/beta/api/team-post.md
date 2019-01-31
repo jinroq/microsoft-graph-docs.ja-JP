@@ -1,19 +1,19 @@
 ---
-title: チームを作成します。
+title: チームの作成
 description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962738"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519613"
 ---
-# <a name="create-team"></a>チームを作成します。
+# <a name="create-team"></a>チームを作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 新しい[チーム](../resources/team.md)を作成します。
 
@@ -44,17 +44,17 @@ POST /teams
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体で、[チーム](../resources/team.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、この API を取得、 `202 Accepted` [teamsAsyncOperation](../resources/teamsasyncoperation.md)へのリンクを含む応答します。
+成功すると、この API は [teamsAsyncOperation](../resources/teamsasyncoperation.md) へのリンクを含む `202 Accepted` 応答を返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example---delegated-permissions"></a>委任されたアクセス許可の使用例
+### <a name="example---delegated-permissions"></a>例: 委任されたアクセス許可
 
-ここでは、最低限の要求の例です。 その他のプロパティを省略することによって、クライアントが暗黙的にかかってによって表される定義済みのテンプレートから既定の設定`template`。
+最低限の要求の例を次に示します。 他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。
 
 #### <a name="request"></a>要求
 
@@ -79,9 +79,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>例 - インストールされているアプリにチームを作成、複数のチャネルを使用して、固定されたタブでアクセス許可を委任します。
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>例: 委任されたアクセス許可を使用して、インストールされたアプリと固定されたタブによる複数のチャネルを持つチームを作成します。
 
-フル ペイロードを使用して要求を次に示します。 クライアントが基本テンプレート内の値をオーバーライドして追加の入力規則で許可されている範囲内の項目の配列の値を持つ、 `specialization`。
+完全なペイロードの要求を次に示します。 クライアントは基本テンプレートの値を上書きして、`specialization` の検証規則で許容される範囲に配列値のアイテムを追加できます。
 
 #### <a name="request"></a>要求
 
@@ -177,9 +177,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>アプリケーションのアクセス許可の使用例
+### <a name="example---application-permissions"></a>例: アプリケーションのアクセス許可
 
-ここでは、アプリケーションのアクセス許可を使用して最小限の要求の例です。 その他のプロパティを省略することによって、クライアントが暗黙的にかかってによって表される定義済みのテンプレートから既定の設定`template`。 アプリケーションのアクセス許可を持つ[ユーザー](../resources/user.md)は要求を発行する必要があるに指定する場合、`owners`コレクションです。
+アプリケーションのアクセス許可を使用した最小限の要求の例を次に示します。 他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。 アプリケーションのアクセス許可で要求を発行する際には、[ユーザー](../resources/user.md)が `owners` コレクションで指定されている必要があります。
 
 #### <a name="request"></a>要求
 
@@ -209,4 +209,12 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>関連項目
 
-- [チームのグループを作成](/graph/teams-create-group-and-team)
+- [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

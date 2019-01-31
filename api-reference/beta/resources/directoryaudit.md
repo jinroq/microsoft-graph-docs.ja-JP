@@ -4,12 +4,12 @@ description: このリソースでは、ディレクトリの監査アイテム�
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573159"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643756"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit リソース型
 このリソースでは、ディレクトリの監査アイテムとそのコレクションについて示します
@@ -30,7 +30,7 @@ ms.locfileid: "29573159"
 |activityDisplayName|String|アクティビティ名または操作名 (例: "Create User"、"Add member to group")。 記録されるアクティビティの一覧は、[Azure AD アクティビティの一覧](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)を参照してください。|
 |additionalDetails|[keyvalue](keyvalue.md) コレクション|アクティビティに関する詳細情報を示します。|
 |category|String|どのリソース カテゴリがアクティビティの対象となっているかを示します。 (例: ユーザー管理、グループ管理など)|
-|correlationId| String (識別子) |さまざまなサービスの間にまたがるアクティビティを関連付けるのに役立つ一意の ID を示します。 サービスのログを追跡するために使用できます。|
+|correlationId|GUID|さまざまなサービスの間にまたがるアクティビティを関連付けるのに役立つ一意の ID を示します。 サービスのログを追跡するために使用できます。|
 |id|String| アクティビティの一意の ID を示します。 これは、GUID です。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|アクティビティを開始したユーザーまたはアプリについての情報を示します。|
 |loggedByService|String|アクティビティを開始するサービスについての情報を示します (例: セルフ サービス パスワード管理、コア ディレクトリ、B2C、招待されたユーザー、Microsoft Identity Manager、Privileged Identity Management)。|
@@ -60,7 +60,7 @@ ms.locfileid: "29573159"
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "String (identifier)",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

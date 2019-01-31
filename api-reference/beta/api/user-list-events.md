@@ -1,28 +1,28 @@
 ---
 title: イベントを一覧表示する
-description: 'ユーザーの既定の予定表からイベント オブジェクトの一覧を取得または '
+description: 'ユーザーの既定の予定表、または指定された予定表からイベント オブジェクトの一覧を取得する '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17e5123f5327ab3958f1ec9b2c53d49fc02ab74f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef16f9f0db1bc1e489bc7322ff72f58598d8d0a6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526663"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーの既定の予定表、または指定した予定表からは、[イベント](../resources/event.md)オブジェクトの一覧を取得します。 一覧には、単一インスタンスの会議およびシリーズのマスターが含まれています。
+ユーザーの既定の予定表、または指定された予定表から[イベント](../resources/event.md) オブジェクトの一覧を取得します。 一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
 
-拡張イベントのインスタンスを取得するには、[予定表ビューを取得する](calendar-list-calendarview.md)、または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。
+拡張イベントのインスタンスを取得すると、[予定表ビューを取得する](calendar-list-calendarview.md)または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。
 
-2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。
+アプリが別のユーザーの予定表のイベントを取得できるシナリオが 2 つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーと予定表を共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
 
 
 ### <a name="support-various-time-zones"></a>さまざまなタイム ゾーンをサポートします。
@@ -68,11 +68,11 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| 優先: outlook.timezone | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
-| Prefer: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
+| 優先: outlook.timezone | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| Prefer: outlook.body-content-type | string | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -82,12 +82,12 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [event](../resources/event.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-最初の例では、ユーザーのすべてのイベントを取得します。 次を指定します。
+最初の例は、ユーザーのイベントをすべて取得します。 以下のものを指定します。
 
 - 太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。 
-- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。
+- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターを使用しないと、すべてのイベント プロパティが返されます。
 
-要求が指定されていません、`Prefer: outlook.body-content-type`ヘッダーが返されたイベントの本文の特定の形式を指定します。 
+要求では、返されたイベント本体の具体的な形式を示す `Prefer: outlook.body-content-type` ヘッダーを指定しません。 
 
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>応答 1
-以下は、応答の例です。 なし`Prefer: outlook.body-content-type`ヘッダーが指定されている**body**プロパティで返される既定の HTML 形式です。
+以下は、応答の例です。 `Prefer: outlook.body-content-type` ヘッダーが指定されていないため、**body** プロパティが既定の HTML 形式で返されます。
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -181,9 +181,9 @@ Content-length: 1932
 ```
 
 ##### <a name="request-2"></a>要求 2
-2 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式で指定されたメッセージの**本文**のプロパティを取得します。
+2 番目の例は、`Prefer: outlook.body-content-type="text"` ヘッダーを使用して指定されたメッセージの **body** プロパティをテキスト形式で取得する方法を示しています。
 
-要求を使用しても、`$select`固有のプロパティを取得するパラメーター クエリを実行します。 なし、`$select`パラメーターでは、すべてのイベント プロパティが表示されます。
+この要求も、`$select` クエリ パラメーターを使用して特定のプロパティを返します。 `$select` パラメーターを使用しないと、すべてのイベント プロパティが返されます。
 <!-- {
   "blockType": "request",
   "name": "get_events_in_text"
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
 ##### <a name="response-2"></a>応答 2
-以下は、応答の例です。 **Body**プロパティは、テキスト形式で返されます。 
+以下は、応答の例です。 **body** プロパティがテキスト形式で返されます。 
 
 <!-- {
   "blockType": "response",
@@ -226,10 +226,15 @@ Content-length: 640
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

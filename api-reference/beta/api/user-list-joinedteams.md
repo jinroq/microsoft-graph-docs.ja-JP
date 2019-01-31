@@ -1,21 +1,21 @@
 ---
-title: 参加チームのリストを作成する
-description: ユーザーの直接のメンバーでは、マイクロソフトのチームで、チームを取得します。
+title: joinedTeams を一覧表示する
+description: ユーザーがダイレクト メンバーになっている Microsoft Teams のチームを取得します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 839b6531318ca9fc8abb3fd3544566622d02a78b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8695d97120da8d50bcc329bfec1aa0ee0c2b5434
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528761"
 ---
-# <a name="list-joinedteams"></a>参加チームのリストを作成する
+# <a name="list-joinedteams"></a>joinedTeams を一覧表示する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーの直接のメンバーでは、マイクロソフトのチームで[チーム](../resources/team.md)を取得します。
+ユーザーがダイレクト メンバーになっている Microsoft Teams の[チーム](../resources/team.md)を取得します。
  
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -26,8 +26,8 @@ ms.locfileid: "27938203"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | User.Read.All、User.ReadWrite.All |
 
-> 現在、委任されたユーザーのアクセス許可を持つこの操作だけが、'me' ユーザーです。 
-> アプリケーションのアクセス許可を持つ機能のすべてのユーザーによって特定のユーザー id を指定します。('me' エイリアスはアプリケーションのアクセス許可)詳細については、[既知の問題](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)を参照してください。
+> 現在、ユーザーに委任されたアクセス許可では、この操作は 'me' ユーザーに対してのみ機能します。 
+> アプリケーションのアクセス許可では、特定のユーザー ID を指定することにより、すべてのユーザーに対して機能します ('me' エイリアスはアプリケーションのアクセス許可ではサポートされていません)。詳細については、「[既知の問題](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-[OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
+[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -85,14 +85,19 @@ Content-length: 55
 ```
 
 ## <a name="see-also"></a>関連項目
-[すべてのチームをリストします。](/graph/teams-list-all-teams)
+[すべてのチームのリストを作成する](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List joinedTeams",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-joinedteams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
