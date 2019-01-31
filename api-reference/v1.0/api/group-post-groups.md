@@ -4,12 +4,12 @@ description: この API を使用して、要求本文で指定した新しい�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
-ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
+ms.openlocfilehash: 8bf432d30ba000641654d8c5d457096f5bfcb70e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442319"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574867"
 ---
 # <a name="create-group"></a>グループを作成する
 この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
@@ -43,6 +43,7 @@ POST /groups
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
 次の表は、グループを作成するときに指定する [group](../resources/group.md) リソースのプロパティを示しています。 
