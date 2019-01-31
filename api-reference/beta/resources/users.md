@@ -4,12 +4,12 @@ description: Microsoft Graph を使用し、ユーザー達、他のユーザー
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b98bdd3f84171823942b3a48dd49a8993597a5ee
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572179"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642059"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーの操作
 
@@ -36,31 +36,21 @@ Microsoft Graph から 2 つの方法でユーザーにアクセスすること�
 
 ## <a name="common-properties"></a>共通プロパティ
 
-以下は、ユーザーまたはユーザーの一覧を取得するときに返されるプロパティの既定のセットを表します。 これらは、利用可能なすべてのプロパティのサブセットです。 より多くのユーザー プロパティを取得するには、`$select` クエリ パラメーターを使用します。 
-
-|プロパティ |説明 |
-|:----------|:-------------|
-|id | ユーザーの一意の識別子。|
-|businessPhones | ユーザーの電話番号。|
-|displayName | アドレス帳に表示されるユーザーの名前。|
+| プロパティ | 説明 |
+|----------|-------------|
+| displayName | アドレス帳に表示されるユーザーの名前。|
 |givenName| ユーザーの名。 |
-|jobTitle | ユーザーの役職。|
-|mail| ユーザーの電子メール アドレス。 |
-|mobilePhone | ユーザーの携帯電話番号。|
-|officeLocation | ユーザーの物理的なオフィスの場所。|
-|preferredLanguage | ユーザーの選択言語。|
 |surname| ユーザーの姓。 |
 |mail| ユーザーの電子メール アドレス。 |
 |photo| ユーザーのプロフィール写真。 |
-|userPrincipalName| ユーザーのプリンシパル名。 |
 
-詳細と全プロパティの一覧は、[ユーザー](user.md) オブジェクトを参照してください。
+詳細と全プロパティの一覧は、[user](user.md) オブジェクトを参照してください。
 
 ## <a name="common-operations"></a>共通の操作
 >**注:** これらの操作のいくつかは、追加のアクセス許可を必要とします。
 
 | パス    | 説明 |
-|:---------|:-------------|
+|---------|-------------|
 |[`/users`](../api/user-list.md) | 組織内のユーザーを一覧表示します。 |
 |[`/users/{id}`](../api/user-get.md) | Id で特定のユーザーを取得します。 |
 |[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| ユーザーのプロフィール写真を取得します。 |
