@@ -1,33 +1,33 @@
 ---
-title: チームを作成します。
+title: チームの作成
 description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962738"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519613"
 ---
-# <a name="create-team"></a><span data-ttu-id="92e31-103">チームを作成します。</span><span class="sxs-lookup"><span data-stu-id="92e31-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="cdb86-103">チームを作成する</span><span class="sxs-lookup"><span data-stu-id="cdb86-103">Create team</span></span>
 
-> <span data-ttu-id="92e31-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="92e31-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="92e31-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="92e31-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="92e31-106">新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="92e31-106">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="cdb86-104">新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-104">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="92e31-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="92e31-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdb86-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cdb86-105">Permissions</span></span>
 
-<span data-ttu-id="92e31-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92e31-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cdb86-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cdb86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="92e31-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="92e31-110">Permission type</span></span>                        | <span data-ttu-id="92e31-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="92e31-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cdb86-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cdb86-108">Permission type</span></span>                        | <span data-ttu-id="cdb86-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cdb86-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="92e31-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="92e31-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="92e31-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92e31-113">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="92e31-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="92e31-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92e31-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="92e31-115">Not supported.</span></span>                              |
-| <span data-ttu-id="92e31-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="92e31-116">Application</span></span>                            | <span data-ttu-id="92e31-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92e31-117">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="cdb86-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cdb86-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdb86-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdb86-111">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="cdb86-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cdb86-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdb86-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cdb86-113">Not supported.</span></span>                              |
+| <span data-ttu-id="cdb86-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cdb86-114">Application</span></span>                            | <span data-ttu-id="cdb86-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdb86-115">Group.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="92e31-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="92e31-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdb86-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cdb86-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,28 +35,28 @@ ms.locfileid: "27962738"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="92e31-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="92e31-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cdb86-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cdb86-117">Request headers</span></span>
 
-| <span data-ttu-id="92e31-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="92e31-120">Header</span></span>        | <span data-ttu-id="92e31-121">値</span><span class="sxs-lookup"><span data-stu-id="92e31-121">Value</span></span>                     |
+| <span data-ttu-id="cdb86-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cdb86-118">Header</span></span>        | <span data-ttu-id="cdb86-119">値</span><span class="sxs-lookup"><span data-stu-id="cdb86-119">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="92e31-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="92e31-122">Authorization</span></span> | <span data-ttu-id="92e31-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="92e31-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="92e31-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="92e31-125">Content-Type</span></span>  | <span data-ttu-id="92e31-126">application/json</span><span class="sxs-lookup"><span data-stu-id="92e31-126">application/json</span></span>          |
+| <span data-ttu-id="cdb86-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdb86-120">Authorization</span></span> | <span data-ttu-id="cdb86-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cdb86-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cdb86-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cdb86-123">Content-Type</span></span>  | <span data-ttu-id="cdb86-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cdb86-124">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="92e31-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="92e31-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdb86-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="cdb86-125">Request body</span></span>
 
-<span data-ttu-id="92e31-128">要求の本体で、[チーム](../resources/team.md)オブジェクトの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="92e31-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="cdb86-126">要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-126">In the request body, supply a JSON representation of [plannerBucket](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="92e31-129">応答</span><span class="sxs-lookup"><span data-stu-id="92e31-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cdb86-127">応答</span><span class="sxs-lookup"><span data-stu-id="cdb86-127">Response</span></span>
 
-<span data-ttu-id="92e31-130">かどうかは成功すると、この API を取得、 `202 Accepted` [teamsAsyncOperation](../resources/teamsasyncoperation.md)へのリンクを含む応答します。</span><span class="sxs-lookup"><span data-stu-id="92e31-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="cdb86-128">成功すると、この API は [teamsAsyncOperation](../resources/teamsasyncoperation.md) へのリンクを含む `202 Accepted` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-128">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="92e31-131">例</span><span class="sxs-lookup"><span data-stu-id="92e31-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cdb86-129">例</span><span class="sxs-lookup"><span data-stu-id="cdb86-129">Examples</span></span>
 
-### <a name="example---delegated-permissions"></a><span data-ttu-id="92e31-132">委任されたアクセス許可の使用例</span><span class="sxs-lookup"><span data-stu-id="92e31-132">Example - delegated permissions</span></span>
+### <a name="example---delegated-permissions"></a><span data-ttu-id="cdb86-130">例: 委任されたアクセス許可</span><span class="sxs-lookup"><span data-stu-id="cdb86-130">Example - delegated permissions</span></span>
 
-<span data-ttu-id="92e31-133">ここでは、最低限の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="92e31-133">Here is an example of a minimal request.</span></span> <span data-ttu-id="92e31-134">その他のプロパティを省略することによって、クライアントが暗黙的にかかってによって表される定義済みのテンプレートから既定の設定`template`。</span><span class="sxs-lookup"><span data-stu-id="92e31-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="cdb86-131">最低限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-131">Here is an example of a minimal request.</span></span> <span data-ttu-id="cdb86-132">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-132">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="92e31-135">要求</span><span class="sxs-lookup"><span data-stu-id="92e31-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cdb86-133">要求</span><span class="sxs-lookup"><span data-stu-id="cdb86-133">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="92e31-136">応答</span><span class="sxs-lookup"><span data-stu-id="92e31-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cdb86-134">応答</span><span class="sxs-lookup"><span data-stu-id="cdb86-134">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -79,11 +79,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="92e31-137">例 - インストールされているアプリにチームを作成、複数のチャネルを使用して、固定されたタブでアクセス許可を委任します。</span><span class="sxs-lookup"><span data-stu-id="92e31-137">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="cdb86-135">例: 委任されたアクセス許可を使用して、インストールされたアプリと固定されたタブによる複数のチャネルを持つチームを作成します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-135">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="92e31-138">フル ペイロードを使用して要求を次に示します。</span><span class="sxs-lookup"><span data-stu-id="92e31-138">Here is request with a full payload.</span></span> <span data-ttu-id="92e31-139">クライアントが基本テンプレート内の値をオーバーライドして追加の入力規則で許可されている範囲内の項目の配列の値を持つ、 `specialization`。</span><span class="sxs-lookup"><span data-stu-id="92e31-139">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
+<span data-ttu-id="cdb86-136">完全なペイロードの要求を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-136">Here is request with a full payload.</span></span> <span data-ttu-id="cdb86-137">クライアントは基本テンプレートの値を上書きして、`specialization` の検証規則で許容される範囲に配列値のアイテムを追加できます。</span><span class="sxs-lookup"><span data-stu-id="cdb86-137">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="92e31-140">要求</span><span class="sxs-lookup"><span data-stu-id="92e31-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cdb86-138">要求</span><span class="sxs-lookup"><span data-stu-id="cdb86-138">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="92e31-141">応答</span><span class="sxs-lookup"><span data-stu-id="92e31-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cdb86-139">応答</span><span class="sxs-lookup"><span data-stu-id="cdb86-139">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -177,11 +177,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a><span data-ttu-id="92e31-142">アプリケーションのアクセス許可の使用例</span><span class="sxs-lookup"><span data-stu-id="92e31-142">Example - application permissions</span></span>
+### <a name="example---application-permissions"></a><span data-ttu-id="cdb86-140">例: アプリケーションのアクセス許可</span><span class="sxs-lookup"><span data-stu-id="cdb86-140">Example - application permissions</span></span>
 
-<span data-ttu-id="92e31-143">ここでは、アプリケーションのアクセス許可を使用して最小限の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="92e31-143">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="92e31-144">その他のプロパティを省略することによって、クライアントが暗黙的にかかってによって表される定義済みのテンプレートから既定の設定`template`。</span><span class="sxs-lookup"><span data-stu-id="92e31-144">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="92e31-145">アプリケーションのアクセス許可を持つ[ユーザー](../resources/user.md)は要求を発行する必要があるに指定する場合、`owners`コレクションです。</span><span class="sxs-lookup"><span data-stu-id="92e31-145">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
+<span data-ttu-id="cdb86-141">アプリケーションのアクセス許可を使用した最小限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-141">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="cdb86-142">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="cdb86-142">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="cdb86-143">アプリケーションのアクセス許可で要求を発行する際には、[ユーザー](../resources/user.md)が `owners` コレクションで指定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cdb86-143">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="92e31-146">要求</span><span class="sxs-lookup"><span data-stu-id="92e31-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cdb86-144">要求</span><span class="sxs-lookup"><span data-stu-id="cdb86-144">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="92e31-147">応答</span><span class="sxs-lookup"><span data-stu-id="92e31-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cdb86-145">応答</span><span class="sxs-lookup"><span data-stu-id="cdb86-145">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -207,6 +207,14 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="92e31-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="92e31-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cdb86-146">関連項目</span><span class="sxs-lookup"><span data-stu-id="cdb86-146">See also</span></span>
 
-- [<span data-ttu-id="92e31-149">チームのグループを作成</span><span class="sxs-lookup"><span data-stu-id="92e31-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="cdb86-147">チームを使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="cdb86-147">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
