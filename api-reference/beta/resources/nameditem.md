@@ -3,11 +3,11 @@ title: NamedItem リソースの種類
 description: セルまたは値の範囲の定義済みの名前を表します。名前には、(以下の型に見られるような) プリミティブ名前付きオブジェクト、範囲オブジェクト、範囲への参照を設定できます。このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 localization_priority: Normal
 ms.openlocfilehash: 5dd093976b2c09ae93c608144c8d6c2b7d7161c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815373"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649432"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem リソースの種類
 
@@ -26,13 +26,13 @@ ms.locfileid: "27815373"
 |[List](../api/nameditem-list.md) | [NamedItem](nameditem.md) コレクション |namedItem オブジェクトのコレクションを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|string|オブジェクトの名前。読み取り専用です。|
-|comment|文字列|この名前に関連付けられているコメントを表します。|
+|comment|string|この名前に関連付けられているコメントを表します。|
 |scope|string|名前がブックを対象にしているのか、特定のワークシートを対象にしているのかを示します。読み取り専用です。|
-|type|文字列|名前に関連付けられている参照の型を示します。可能な値は、`String`、`Integer`、`Double`、`Boolean`、`Range` です。読み取り専用です。|
-|value|文字列|定義されている名前が参照する数式を表します。例: =Sheet14!$B$2:$H$12、=4.75, など。読み取り専用です。|
+|type|string|名前に関連付けられている参照の型を示します。可能な値は、`String`、`Integer`、`Double`、`Boolean`、`Range` です。読み取り専用です。|
+|value|string|定義されている名前が参照する数式を表します。例: =Sheet14!$B$2:$H$12、=4.75, など。読み取り専用です。|
 |visible|ブール値|オブジェクトを表示するかどうかを指定します。|
 
 ## <a name="relationships"></a>リレーションシップ

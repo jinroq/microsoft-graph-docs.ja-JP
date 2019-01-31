@@ -3,11 +3,11 @@ title: page リソースの種類
 description: OneNote ノートブックのページです。
 localization_priority: Normal
 ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519242"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649433"
 ---
 # <a name="page-resource-type"></a>page リソースの種類
 
@@ -51,7 +51,7 @@ OneNote ノートブックのページです。
 |contentUrl|String|ページの HTML コンテンツの URL。読み取り専用です。|
 |createdByAppId|String|ページを作成したアプリケーションの一意の識別子。読み取り専用です。|
 |createdDateTime|DateTimeOffset|ページが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|id|文字列|ページの一意識別子。読み取り専用です。|
+|id|String|ページの一意識別子。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|ページが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |level|Int32|ページのインデント レベル。読み取り専用です。|
 |links|[PageLinks](pagelinks.md)|ページを開くためのリンク。`oneNoteClientURL`リンクが OneNote のネイティブ クライアントでページを開きます (インストールされている場合)。`oneNoteWebUrl` リンクでは、OneNote オンラインでページを開きます。読み取り専用です。|
