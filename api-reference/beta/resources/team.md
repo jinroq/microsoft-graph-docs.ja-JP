@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526208"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643777"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -64,6 +64,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |channels|[channel](channel.md) コレクション|チームに関連付けられているチャネルとメッセージのコレクション。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) コレクション|このチームにインストールされているアプリ。|
 |owners|[user](user.md)| このチームの所有者の一覧。 |
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
 |template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 |
 
 ## <a name="json-representation"></a>JSON 表記
