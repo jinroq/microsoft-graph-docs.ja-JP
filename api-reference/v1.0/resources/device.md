@@ -4,12 +4,12 @@ description: 組織に登録されているデバイスを表します。 デバ
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ab03eed26f5e34c2ac149815b3ba66b37fc2090c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9b69f51e045bff43d4c250f2b00791000df1499e
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984998"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690925"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -26,8 +26,8 @@ ms.locfileid: "27984998"
 |[デバイスを一覧表示する](../api/device-list.md) | [device](device.md) コレクション| ディレクトリに登録されたデバイスの一覧を取得します。 |
 |[デバイスを更新する](../api/device-update.md) | [device](device.md) |デバイス オブジェクトのプロパティを更新します。 |
 |[デバイスを削除する](../api/device-delete.md) | なし |デバイス オブジェクトを削除します。 |
-|[memberOf を一覧表示する](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| デバイスが直接のメンバーであるグループを一覧表示します。 |
-|[registeredOwners を一覧表示する](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) コレクション| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
+|[memberOf を一覧表示する](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| デバイスが直接のメンバーであるグループを一覧表示します。 |
+|[registeredOwners を一覧表示する](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
 |[registeredUsers を一覧表示する](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) コレクション| registeredUsers ナビゲーション プロパティから、デバイスの登録済みユーザーを取得します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
@@ -38,7 +38,7 @@ ms.locfileid: "27984998"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
 |approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
 |deviceId|string| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
@@ -51,7 +51,7 @@ ms.locfileid: "27984998"
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。|
 |onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 読み取り専用です。 |
 |operatingSystem|String| デバイス上のオペレーティング システムの種類。必須。 |
-|operatingSystemVersion|String|デバイス上のオペレーティング システムのバージョン。必須。 |
+|operatingSystemVersion|文字列|デバイス上のオペレーティング システムのバージョン。必須。 |
 |physicalIds|String collection| 内部使用専用です。 null 許容ではありません。 |
 |trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください |
 
@@ -59,8 +59,9 @@ ms.locfileid: "27984998"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
-|memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
-|registeredOwners|[directoryObject](directoryobject.md) コレクション|デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザー。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。 読み取り専用です。 Null 許容型。 |
+|memberOf|[directoryObject](directoryobject.md) collection|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
+|[推移的な memberOf を一覧表示する](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| メンバーであるデバイスのグループを一覧表示します。 この操作は、推移的です。 |
+|registeredOwners|[directoryObject](directoryobject.md) collection|デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザー。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。 読み取り専用です。 Null 許容型。 |
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーのコレクション。 クラウドに参加済みのデバイスと登録済みの個人用デバイスの場合、登録済みのユーザーは、登録時に登録済み所有者と同じ値に設定されます。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記

@@ -4,12 +4,12 @@ description: システム内のユーザーです。 これは教育機関に固
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e8b1f9a98800330b2f46b9de1582c97e475cd162
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d0467ed9ac03a1607d575b6eac5f6b3330b68c3c
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521153"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690932"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -34,26 +34,27 @@ ms.locfileid: "29521153"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
-|assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
-|assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
-|businessPhones|String コレクション|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
+|assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
+|businessPhones|String コレクション|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |createdBy|[identitySet](identityset.md)| ユーザーを作成したエンティティ。 |
 |部署|String|ユーザーが働いている部門の名前。$filter をサポートします。|
-|displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値は、`sis`、`manual`、`unkownFutureValue` です。|
+|displayName|文字列型 (String)|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
+|externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値は `sis`、`manual`、`unkownFutureValue` です。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
-|mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
+|mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。 読み取り専用。 $filter をサポートします。|
 |mailingAddress|[physicalAddress](physicaladdress.md)| ユーザーのメール アドレス。|
 |mailNickname|String|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
 |middleName| String | ユーザーのミドル ネーム。|
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。 この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。 "DisablePasswordExpiration" を指定することもできます。 2 つを一緒に指定できます。例: "DisablePasswordExpiration、DisableStrongPassword"。|
 |passwordProfile|[passwordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
-|preferredLanguage|String|ユーザーが設定する言語。ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
+|preferredLanguage|String|ユーザーが設定する言語。 ISO 639-1 コードに従う必要があります。例: "en-US"。|
 |primaryRole|string| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。 $filter をサポートします。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md)コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
 |residenceAddress|[physicalAddress](physicaladdress.md)| ユーザーが在住している場所のアドレス。|
+|relatedContacts|[relatedContact](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセットです。  この省略可能なプロパティは、$select 句で指定する必要があり、個々 のユーザーに対してのみ取得できます。|
 |student|[educationStudent](educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
 |teacher|[educationTeacher](educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|

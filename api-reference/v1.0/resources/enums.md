@@ -1,14 +1,27 @@
 ---
-title: timeZoneStandard 値
-description: " 値"
+title: 列挙値
+description: Graph の列挙型の値。
 localization_priority: Normal
-ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825733"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690946"
 ---
+### <a name="contactrelationship-values"></a>contactRelationship 値
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|親|0|ユーザーの親です。|
+|相対|1| ユーザーは、相対的なのです。|
+|aide|2| ユーザーの aide。|
+|医師|3| ユーザーの医師です。|
+|ガーディアン|4| ユーザーの守護者。|
+|子|5| ユーザーの子です。|
+|その他の|6| ユーザーに指定されていない関係です。|
+|unknownFutureValue|7| 将来の互換性のためのマーカーの値です。|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard 値
 
 | 値
@@ -35,7 +48,7 @@ ms.locfileid: "27825733"
 |:-------------------------
 | 必須
 | 省略可能
-| resource
+| リソース
 
 
 ### <a name="externalaudiencescope-values"></a>externalAudienceScope 値
@@ -259,7 +272,7 @@ ms.locfileid: "27825733"
 
 | 値
 |:-------------------------
-| Replace
+| 置換
 | 追加
 | Delete
 | Insert
@@ -279,7 +292,7 @@ ms.locfileid: "27825733"
 |:-------------------------
 | ホーム
 | ビジネス
-| モバイル
+| mobile
 | その他の
 | アシスタント
 | homeFax
@@ -296,7 +309,7 @@ ms.locfileid: "27825733"
 | 自動
 | noPreview
 | checklist
-| description
+| 説明
 | reference
 
 
@@ -428,13 +441,9 @@ ms.locfileid: "27825733"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>セキュリティ API の列挙型
-
-# <a name="alertfeedback-enum-type"></a>alertFeedback 列挙型
+### <a name="alertfeedback-values"></a>alertFeedback 値
 
 アナリストによって提供される通知を可能な限りフィードバック値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -443,11 +452,9 @@ ms.locfileid: "27825733"
 |falsePositive|2| アラートが誤ってとは。|
 |benignPositive|3| アラートは、正の問題です。|
 
-# <a name="filehashtype-enum-type"></a>fileHashType 列挙型
+### <a name="filehashtype-values"></a>fileHashType 値
 
 ファイル ハッシュの種類を列挙します。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -461,11 +468,9 @@ ms.locfileid: "27825733"
 |peSha1|7| PESHA1 ハッシュ タイプを入力します。|
 |peSha256|8| PESHA256 ハッシュ タイプを入力します。|
 
-# <a name="connectiondirection-enum-type"></a>connectionDirection 列挙型
+### <a name="connectiondirection-values"></a>connectionDirection 値
 
 ネットワーク接続 (着信/発信) の方向を表す列挙型です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -473,11 +478,9 @@ ms.locfileid: "27825733"
 |受信|1|接続を受信します。|
 |送信|2| 送信接続します。|
 
-# <a name="connectionstatus-enum-type"></a>connectionStatus 列挙型
+### <a name="connectionstatus-values"></a>connectionStatus 値
 
 接続の状態の列挙です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -487,11 +490,9 @@ ms.locfileid: "27825733"
 |ブロック|3| 接続をブロックします。|
 |失敗しました。|4| 接続に失敗しました。|
 
-# <a name="processintegritylevel-enum-type"></a>processIntegrityLevel 列挙型
+### <a name="processintegritylevel-values"></a>processIntegrityLevel 値
 
 プロセスの可能な整合性レベルの値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -502,11 +503,9 @@ ms.locfileid: "27825733"
 |高|40| 整合性レベルは、高いです。|
 |システム|50| 整合性レベルは、システムです。|
 
-# <a name="registryhive-enum-type"></a>registryHive 列挙型
+### <a name="registryhive-values"></a>registryHive 値
 
 レジストリの列挙型で定義されているハイブを[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -518,11 +517,9 @@ ms.locfileid: "27825733"
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System ハイブです。|
 |usersDefault|6| HKEY_USERS\\。デフォルトのハイブです。|
 
-# <a name="registryoperation-enum-type"></a>registryOperation 列挙型
+### <a name="registryoperation-values"></a>registryOperation 値
 
 レジストリ キーの名前または値を変更する操作です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -531,11 +528,9 @@ ms.locfileid: "27825733"
 |変更|2|レジストリを変更します。|
 |delete|3|レジストリを削除します。|
 
-# <a name="registryvaluetype-enum-type"></a>registryValueType 列挙型
+### <a name="registryvaluetype-values"></a>registryValueType 値
 
 レジストリ値の列挙型の型で定義されている[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -552,11 +547,9 @@ ms.locfileid: "27825733"
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN レジストリ値の型。|
 |sz|11| REG_SZ レジストリ値の型。|
 
-# <a name="alertseverity-enum-type"></a>alertSeverity 列挙型
+### <a name="alertseverity-values"></a>alertSeverity 値
 
 アラートの重大度レベルを列挙します。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -566,11 +559,9 @@ ms.locfileid: "27825733"
 |medium|3| 重大度レベルは、[中] です。|
 |高|4| 重要度は高くなります。|
 
-# <a name="alertstatus-enum-type"></a>alertStatus 列挙型
+### <a name="alertstatus-values"></a>alertStatus 値
 
 アラートのライフ サイクルの状態 (ステージ) の使用可能な値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -579,11 +570,8 @@ ms.locfileid: "27825733"
 |inProgress|20|アラートは、処理中です。|
 |解決|30|アラートが解決されます。|
 
-# <a name="emailrole-enum-type"></a>emailRole 列挙型
-
+### <a name="emailrole-values"></a>emailRole 値
 電子メールのロールの使用可能な値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -591,11 +579,9 @@ ms.locfileid: "27825733"
 |sender|1|電子メールの送信者です。|
 |受信者|2|電子メールの受信者。|
 
-# <a name="logontype-enum-type"></a>列挙型のことを示します
+### <a name="logontype-values"></a>値のことを示します
 
 ユーザーのサインインのメソッドの使用可能な値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -606,11 +592,9 @@ ms.locfileid: "27825733"
 |batch|3| ログオンは、バッチです。|
 |service|4| ログオンは、サービスです。|
 
-# <a name="useraccountsecuritytype-enum-type"></a>userAccountSecurityType 列挙型
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 値
 
 Windows 定義ごとユーザー ・ アカウントの種類 (グループ) の使用可能な値です。
-
-## <a name="members"></a>メンバー
 
 |メンバー|値|説明|
 |:---|:---|:---|

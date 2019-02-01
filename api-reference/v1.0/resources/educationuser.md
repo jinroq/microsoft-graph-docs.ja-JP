@@ -4,12 +4,12 @@ description: システム内のユーザーです。 これは教育機関に固
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6c0dce86c06036424e7be64f1864d900fef368fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4a1caaa7d81540f6a90052b13f04d7d3e5bf77da
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968170"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690918"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -29,15 +29,15 @@ ms.locfileid: "27968170"
 |[Delete](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
-|assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
+|assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |businessPhones|String コレクション|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |createdBy|[identitySet](identityset.md)| ユーザーを作成したエンティティ。 |
 |部署|String|ユーザーが働いている部門の名前。$filter をサポートします。|
-|displayName|String|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
+|displayName|文字列型 (String)|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
 |externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値: `sis`、 `manual`、 `unkownFutureValue`。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
@@ -50,13 +50,14 @@ ms.locfileid: "27968170"
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |preferredLanguage|String|ユーザーが設定する言語。 ISO 639-1 コードに従う必要があります。例: "en-US"。|
 |primaryRole|educationUserRole| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 可能な値: `student`、 `teacher`、 `unknownFutureValue`。 $filter をサポートします。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
+|relatedContacts|[relatedContact](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセットです。  この省略可能なプロパティは、$select 句で指定する必要があり、個々 のユーザーに対してのみ取得できます。|
 |residenceAddress|[physicalAddress](physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |student|[educationStudent](educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
 |teacher|[educationTeacher](educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|
 |usageLocation|String|2 文字の国コード (ISO 規格 3166) 国や地域におけるサービスの利用可能性を確認することが法的に義務付けられているため、ライセンスを割り当てられるユーザーには必須です。 たとえば、"US"、"JP"、"GB" などです。 null 許容ではありません。 $filter をサポートします。|
-|userPrincipalName|String|ユーザーのユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 RFC 822 に基づいた、インターネット スタイルのユーザーのログイン名です。規則では、これはユーザーの電子メール名にマップされる必要があります。一般的な形式は alias@domain です。このドメインは、検証済みドメインのテナントのコレクション内に存在している必要があります。このプロパティは、ユーザーの作成時に必要です。テナントの検証済みのドメインには、[organization](organization.md) の **verifiedDomains** プロパティからアクセスできます。$filter および $orderby をサポートします。
+|userPrincipalName|文字列|ユーザーのユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 RFC 822 に基づいた、インターネット スタイルのユーザーのログイン名です。規則では、これはユーザーの電子メール名にマップされる必要があります。一般的な形式は alias@domain です。このドメインは、検証済みドメインのテナントのコレクション内に存在している必要があります。このプロパティは、ユーザーの作成時に必要です。テナントの検証済みのドメインには、[organization](organization.md) の **verifiedDomains** プロパティからアクセスできます。$filter および $orderby をサポートします。
 |userType|String|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -128,7 +129,9 @@ var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for admi
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
+    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
+      Property 'relatedContacts' found in markdown table but not in resource definition."
   ],
   "tocPath": ""
 }-->
