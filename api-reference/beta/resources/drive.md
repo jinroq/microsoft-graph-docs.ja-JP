@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 581a611fa077eab6d44db01d998d5ea42886f052
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938189"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641870"
 ---
-# <a name="drive-resource-type"></a>ドライブ リソースの種類
+# <a name="drive-resource-type"></a>Drive リソース型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ドライブ リソースは、ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表す、最上位のオブジェクトです。
 
@@ -22,9 +22,9 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 
 ## <a name="json-representation"></a>JSON 表記
 
-ドライブ リソースの JSON 表記を次に示します。
+Drive リソースの JSON 表記を以下に示します。
 
-**drive** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。
+**drive** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。
 
 <!--{
   "blockType": "resource",
@@ -77,14 +77,14 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 | createdDateTime      | dateTimeOffset                | アイテム作成の日時。読み取り専用です。                                                                                                                                                                                       |
 | 説明          | String                        | ユーザーに表示されるドライブの説明を提供します。 読み取り/書き込み。
 | driveType            | String                        | このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。 |
-| id                   | String                        | ドライブの一意識別子。読み取り専用です。                                                                                                                                                                                   |
+| id                   | String                        | ドライブの一意識別子。読み取り専用。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用です。                                                                                                                                                                             |
-| name                 | 文字列                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
+| name                 | string                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | 省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                                                                         |
-| システム               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
+| system               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
 | webUrl               | string (URL)                  | ブラウザーでリソースを表示するための URL。読み取り専用です。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -99,22 +99,22 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 | items        | [driveitem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
 | root         | [driveitem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
 | special      | [driveitem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
-| 次    | [DriveItem](driveitem.md)コレクション | ユーザーは、次の項目の一覧です。 でビジネスの OneDrive です。
+| フォロー中    | [DriveItem](driveitem.md) コレクション | ユーザーがフォローしているアイテムの一覧。 OneDrive for Business のみ。
 
 ## <a name="methods"></a>メソッド
 
 |                        共通タスク                         |         HTTP メソッド         |
 | :--------------------------------------------------------- | :-------------------------- |
-| [別のドライブのドライブ メタデータを取得する][drive-get]           | `GET /drives/{drive-id}`    |
+| [別の Drive の Drive メタデータを取得する][drive-get]           | `GET /drives/{drive-id}`    |
 | [ユーザーの既定のドライブのルート フォルダーを取得する][item-get]       | `GET /drive/root`           |
 | [ドライブのアクティビティを一覧表示する][drive-activities]        | `GET /drive/activities`     |
-| [リスト項目の後に][drive-following]                     | `GET /drive/following`      |
+| [フォローされたアイテムを一覧表示する][drive-following]                     | `GET /drive/following`      |
 | [ドライブの子を一覧表示する][item-children]             | `GET /drive/root/children`  |
 | [ドライブ内のすべてのアイテムの変更を一覧表示する][item-changes]    | `GET /drive/root/delta`     |
 | [ドライブ内のアイテムを検索する][item-search]               | `GET /drive/root/search`    |
 | [特別なフォルダーにアクセスする](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-例を使用して上記の表では、 `/drive`、他のパスは有効なすぎます。
+前の表では例に `/drive` を使用していますが、他のパスも有効です。
 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
@@ -132,11 +132,18 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
