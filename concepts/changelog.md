@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577201"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641310"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,12 @@ ms.locfileid: "29577201"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="january-2019"></a>2019 年 1 月
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |v1.0|新しいリソースの種類である [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) エンティティと、[作成](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0)、[一覧表示](/graph/api/identityprovider-list?view=graph-rest-v1.0)、[取得](/graph/api/identityprovider-get?view=graph-rest-v1.0)、[更新](/graph/api/identityprovider-update?view=graph-rest-v1.0)、[削除](/graph/api/identityprovider-delete?view=graph-rest-v1.0)の各操作を導入しました。|
 
 ### <a name="reports-apis"></a>レポート API
 
@@ -29,6 +35,10 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | v1.0 | **forceChangePasswordNextSignInWithMfa** プロパティを [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) 複合型に追加しました。|
+| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [User](../api-reference/v1.0/resources/user.md) エンティティに、**licenseAssignmentStates** プロパティを追加しました。|
+| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の **licenseAssignmentState** リソースを追加しました。| 
+| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [Group](../api-reference/v1.0/resources/group.md) エンティティに、**assignedLicenses** プロパティ、**licenseProcessingState** プロパティ、**hasMembersWithLicenseErrors** プロパティ、**membersWithLicenseErrors** リレーションシップを追加しました。|
+| 追加 | ベータ版 | **createdDateTime** プロパティを [user](/graph/api/resources/user?view=graph-rest-beta) リソースに追加しました。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -55,6 +65,11 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|**mobileAppTroubleshootingEvents** ナビゲーション プロパティを [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) エンティティに追加しました|
 |追加|ベータ版|**appLogCollectionRequests** ナビゲーション プロパティを [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) エンティティに追加しました|
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版| EducationStandard、educationClass、educationProfessionalLearningCommunity、educationStaff、unknownFutureValue を [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) 列挙値に追加しました。|
 
 ## <a name="december-2018"></a>2018 年 12 月
 
