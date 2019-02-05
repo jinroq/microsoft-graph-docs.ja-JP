@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525319"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735587"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -208,11 +208,22 @@ Content-type: application/json
 * アイテムの `parentReference` プロパティには**パス**の値は含まれません。これは、フォルダー名を変更しても**デルタ**からそのフォルダーの子孫が返されることはないためです。**差分を使用する場合、アイテムは必ず ID で追跡する必要があります**。
 * OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、ドライブ内の他のフォルダーではサポートされません。
 
-* Delta は DriveItem の次のプロパティを返しません。
+* 次の表に示すように、デルタのクエリは操作とサービスの種類に応じて、いくつかの DriveItem プロパティを返しません。
 
-* **cTag**
-* **lastModifiedBy**
-* **size**
+    **OneDrive for Business**
+    
+    | 操作の種類 | デルタ ・ クエリを省略するとプロパティ |
+    |---------|----------|
+    | 作成変更 | `ctag`, `lastModifiedBy` |
+    | Delete | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive (消費者)**
+    
+    | 操作の種類 | デルタ ・ クエリを省略するとプロパティ |
+    |---------|----------|
+    | 作成変更 | 該当なし |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>エラー応答
 
