@@ -3,18 +3,27 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 7d5d0a9e7d19a2ae51ed2843a3aa56b9119163a4
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641310"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690974"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="february-2019"></a>2019 年 2 月
+
+### <a name="education-apis"></a>教育機関向け API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に導入しました。|
+|追加 |v1.0|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) に導入しました。|
 
 ## <a name="january-2019"></a>2019 年 1 月
 
@@ -30,14 +39,18 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |:----------------|:------------|:-----------------------------------------|
 | 追加        | ベータ版  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティテに追加しました。|
 
+
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | transitiveMembers という新しいメソッドを[グループ](/graph/api/group-list-transitivemembers?view=graph-rest-1.0)に追加しました。 このメソッドでは、入れ子になったメンバーを含むメンバーのフラット リストが返されます。|
+| 追加 | v1.0 | [ユーザー](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0)、[グループ](/graph/api/group-list-transitivemembersof?view=graph-rest-beta)、[デバイス](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0)に transitiveMemberOf という新しいメソッドを追加しました。|
+| 追加 | v1.0 | **employeeId**、**faxNumber**、**onPremisesDistinguishedName**、**showInAddressList**、**otherMails** という新しいプロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0)に追加しました。|
 | 追加 | v1.0 | **forceChangePasswordNextSignInWithMfa** プロパティを [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) 複合型に追加しました。|
-| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [User](../api-reference/v1.0/resources/user.md) エンティティに、**licenseAssignmentStates** プロパティを追加しました。|
+| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [User](/graph/api/resources/user?view=graph-rest-1.0) エンティティに、**licenseAssignmentStates** プロパティを追加しました。|
 | 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の **licenseAssignmentState** リソースを追加しました。| 
-| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [Group](../api-reference/v1.0/resources/group.md) エンティティに、**assignedLicenses** プロパティ、**licenseProcessingState** プロパティ、**hasMembersWithLicenseErrors** プロパティ、**membersWithLicenseErrors** リレーションシップを追加しました。|
+| 追加 | v1.0 | [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の [Group](/graph/api/resources/group?view=graph-rest-1.0) エンティティに、**assignedLicenses** プロパティ、**licenseProcessingState** プロパティ、**hasMembersWithLicenseErrors** プロパティ、**membersWithLicenseErrors** リレーションシップを追加しました。|
 | 追加 | ベータ版 | **createdDateTime** プロパティを [user](/graph/api/resources/user?view=graph-rest-beta) リソースに追加しました。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
