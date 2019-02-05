@@ -4,12 +4,12 @@ description: Office 365 グループ、動的なグループ、セキュリテ�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: aa3dd6974a0e75661b91d155a19bd197d3fe742e
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641282"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690953"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -42,6 +42,8 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[所有者を削除する](../api/group-delete-owners.md) | なし |**owners** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループから所有者を削除します。|
 |[メンバーを追加する](../api/group-post-members.md) |なし| **members** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループでのみサポートされます) に投稿することによってこのグループにユーザーまたはグループを追加します。|
 |[メンバーを一覧表示する](../api/group-list-members.md) |[directoryObject](directoryobject.md) コレクション| **members** ナビゲーション プロパティからこのグループの直接のメンバーであるユーザーおよびグループを取得します。|
+|[推移的なメンバーを一覧表示する](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) コレクション| このグループの入れ子のメンバーを含む、メンバーになっているユーザー、グループ、デバイスを取得します。|
+|[推移的な memberOf を一覧表示する](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| ユーザーがメンバーになっているグループを一覧表示します。 この操作は推移的で、このグループが入れ子のメンバーになっているグループが含まれます。 |
 |[メンバーを削除する](../api/group-delete-members.md) | なし |**members** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。 |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップについてこのグループを確認します。この関数は、推移的です。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|

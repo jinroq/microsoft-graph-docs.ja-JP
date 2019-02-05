@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 64c8cb0c580af0692ddc4aacca984774bc76ab2f
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642535"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690960"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -49,7 +49,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| そのユーザーの部下であるユーザーと連絡先を、directReports ナビゲーション プロパティから取得します。|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | そのユーザーの上司であるユーザーまたは連絡先を、マネージャー ナビゲーション プロパティから取得します。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| そのユーザーが直接のメンバーであるグループおよびディレクトリ ロールを、memberOf ナビゲーション プロパティから取得します。|
-|[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているデバイスを、OwnedDevices ナビゲーション プロパティから取得します。|
+|[推移的な memberOf を一覧表示する](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| ユーザーがメンバーになっているグループとディレクトリ ロールを一覧表示します。 この操作は推移的で、このユーザーが入れ子のメンバーになっているグループが含まれます。 |
+|[LownedDevices を一覧表示する](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているデバイスを、OwnedDevices ナビゲーション プロパティから取得します。|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーについて登録されているデバイスを、RegisteredDevices ナビゲーション プロパティから取得します。|
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより作成されたディレクトリ オブジェクトを、createdObjects ナビゲーション プロパティから取得します。|
@@ -84,6 +85,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |createdDateTime | DateTimeOffset |ユーザー オブジェクトの作成日です。 |
 |department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
+|employeeId|String|組織によりユーザーに割り当てられた従業員 ID。 $filter をサポートします。|
+|faxNumber|String|ユーザーの Fax 番号。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
@@ -98,6 +101,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
 |mySite|String|ユーザーの個人用サイトの URL。|
 |officeLocation|String|ユーザーの勤務先の場所。|
+|onPremisesDistinguishedName|String| オンプレミスの Active Directory `distinguished name` または `DN` が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
 |onPremisesDomainName|String| オンプレミス ディレクトリから同期されたオンプレミス `domainFQDN` (dnsDomainName とも呼ばれます) が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttribute 1 ～ 15 が含まれています。 個々の拡張属性は選択もフィルター処理もできないことに注意してください。 `onPremisesSyncEnabled` ユーザーの場合、この一連のプロパティはマスターされており、読み取り専用です。 クラウド専用ユーザー (`onPremisesSyncEnabled` が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。 |
 |onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。 Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。 **重要:** **$** と **\_** の文字は、このプロパティを指定するときには使用できません。 $filter をサポートします。                            |
@@ -107,6 +111,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたユーザーのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。|
 |onPremisesSyncEnabled|Boolean| このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**、このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから 1 度も同期されたことがない場合は **null** (既定値)。読み取り専用 |
 |onPremisesUserPrincipalName|String| オンプレミス ディレクトリから同期されたオンプレミス `userPrincipalName` が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
+|otherMails|String| ユーザーの追加のメール アドレスの一覧 (例: `["bob@contoso.com", "Robert@fabrikam.com"]`)。 $filter をサポートします。|
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |pastProjects|String collection|ユーザーが過去のプロジェクトを列挙する一覧。|
@@ -118,6 +123,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |proxyAddresses|String collection|例:`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には、**任意の**演算子が必要です。読み取り専用。null 許容ではありません。$filter をサポートします。          |
 |responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
+|showInAddressList|Boolean|Outlook グローバル アドレス一覧にこのユーザーが含まれている必要がある場合は **true**、それ以外の場合は **false**。 設定されていない場合は、**true** として扱われます。 招待マネージャーから招待されたユーザーの場合、このプロパティは **false** に設定されます。|
 |skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|
@@ -375,6 +381,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "country": "string",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
+  "faxNumber" : "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -389,6 +397,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
   "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
@@ -398,6 +407,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -409,6 +419,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "proxyAddresses": ["string"],
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
