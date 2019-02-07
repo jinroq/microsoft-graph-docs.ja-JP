@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: eac24ac60b176547b56d75ba23972e649c025578
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987847"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735595"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -50,7 +50,7 @@ GET /users/{userId}/drive/root/delta
 
 | パラメーター   | 型  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
+| token  | string | 省略可能。 指定しない場合、階層の現在の状態を列挙します。 `latest` の場合、最後のデルタ トークンを使用して、空の応答本文を返します。 一つ前のデルタ トークンの場合は、そのトークン以降の新しい状態を返します。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -199,17 +199,29 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 * 差分フィードは各変更を示すのではなく、各アイテムの最新の状態を示すものです。アイテムの名前が 2 回変更された場合、最新の名前で 1 回だけ表示されます。
 * 差分フィードには、さまざまな理由から同じアイテムが複数回表示される場合があります。その場合は最後に出現したものを使用する必要があります。
 * アイテムの `parentReference` プロパティには**パス**の値は含まれません。これは、フォルダー名を変更しても**デルタ**からそのフォルダーの子孫が返されることはないためです。**差分を使用する場合、アイテムは必ず ID で追跡する必要があります**。
 * OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、ドライブ内の他のフォルダーではサポートされません。
 
-* Delta は DriveItem の次のプロパティを返しません。
-  * **cTag**
-  * **lastModifiedBy**
-  * **size**
+* デルタ クエリは、次の表に示す通り、操作とサービスの種類によって、一部の DriveItem プロパティを返しません。
+
+    **OneDrive for Business**
+    
+    | 操作の種類 | デルタ クエリに省略されるプロパティ |
+    |---------|----------|
+    | 作成/変更 | `ctag`, `lastModifiedBy` |
+    | 削除 | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive (コンシューマー向け)**
+    
+    | 操作の種類 | デルタ クエリに省略されるプロパティ |
+    |---------|----------|
+    | 作成/変更 | 該当なし |
+    | 削除 | `ctag`, `size` |
 
 ## <a name="error-responses"></a>エラー応答
 

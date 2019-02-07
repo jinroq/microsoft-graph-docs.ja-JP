@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 80283edd8d0a4ea2f9abca2a51fda3f96752d96e
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643777"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735601"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -51,6 +51,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| グループとチームの可視性。 既定では Public です。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |チームでの Giphy、ミーム、およびステッカーの使用を構成する設定。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |ゲストがチームでチャネルを作成、更新、または削除できるかどうかを構成する設定。|
+|InternalId | string | 監査ログまたは [Office 365 マネージメント アクティビティ API](https://docs.microsoft.com/ja-JP/office/office-365-management-api/office-365-management-activity-api-reference) など、いくつかの場所で使用されているチームの一意の ID。 |
 |isArchived|Boolean|このチームが読み取り専用モードかどうか。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |チームでメッセージとメンションを構成する設定。|
@@ -83,6 +84,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }

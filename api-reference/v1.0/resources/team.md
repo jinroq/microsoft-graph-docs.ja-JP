@@ -1,60 +1,61 @@
 ---
-title: チーム リソースの種類
-description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
+title: team リソースの種類
+description: 'Microsoft Teams のチームは、チャネルのコレクションです。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7dff1bb05b2abe604963657d4691766eeeaae4ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 692f0d12c172fb6b7088912eec952b519d852cac
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976934"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735573"
 ---
-# <a name="team-resource-type"></a>チーム リソースの種類
+# <a name="team-resource-type"></a>team リソースの種類
 
 
 
-マイクロソフトのチームで、チームは、[チャネル](channel.md)のコレクションです。 チャネルでは、トピックとチーム内での議論の論理的分離を表します。
+Microsoft Teams のチームは、[チャネル](channel.md) のコレクションです。 チャネルは 1 つのトピック、つまりチーム内でのディスカッションの論理的分離を表します。
 
-すべてのチームは、[グループ](../resources/group.md)に関連付けられます。
-グループは、チーム ・/groups/{id} などと同じ ID を持っているし、チームは、/teams/{id} と同じです。
-グループとチームのメンバーの詳細については、[マイクロソフトのチームで作業するのには Microsoft グラフ REST API を使用](teams-api-overview.md)を参照してください。
+各チームには[グループ](../resources/group.md)が関連付けられています。
+グループの ID はチームと同じです。たとえば、/groups/{id}/team は /teams/{id} と同じです。
+チームのメンバーおよびグループの操作の詳細については、「[Microsoft Graph REST API を使用して Microsoft Teams を操作する](teams-api-overview.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チームを作成します。](../api/team-put-teams.md) | [チーム](team.md) | 新しいチームを作成または既存のグループにチームを追加します。|
-|[チームを取得します。](../api/team-get.md) | [チーム](team.md) | プロパティと指定されたチームの関係を取得します。|
-|[チームを更新します。](../api/team-update.md) | [チーム](team.md) |指定されたチームのプロパティを更新します。 |
-|[チームを削除します。](/graph/api/group-delete?view=graph-rest-1.0) | なし |チームおよびその関連付けられているグループを削除します。 |
-|[チームのクローンを作成します。](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |チームおよびその関連付けられているグループをコピーします。 |
-|[チームのアーカイブ](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |読み取り専用状態で、チームを配置します。 |
-|[チームを unarchive します。](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |チームを読み取り/書き込み状態に復元します。 |
-|[チームの一覧を表示します。](../api/user-list-joinedteams.md) | [チーム](team.md)コレクション | チームのメンバーを一覧表示します。 |
-|[すべてのチームをリストします。](/graph/teams-list-all-teams) | [group](group.md) コレクション | チームのすべてのグループを一覧表示します。 |
-|[組織にアプリケーションを発行します。](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 組織にのみ表示されているチームのアプリケーションを作成します。 |
-|[アプリケーションをチームに追加します。](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | (インストール) を追加するチームにアプリです。|
-|[チャネルにタブを追加します。](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | (インストール) を追加するチャネル ・ チームのタブです。|
+|[チームを作成する](../api/team-put-teams.md) | [team](team.md) | 新しいチームを作成するか、既存のグループにチームを追加します。|
+|[チームを取得する](../api/team-get.md) | [team](team.md) | 指定したチームのプロパティとリレーションシップを取得します。|
+|[チームを更新する](../api/team-update.md) | [team](team.md) |指定されたチームのプロパティを更新します。 |
+|[チームを削除する](/graph/api/group-delete?view=graph-rest-1.0) | なし |チームとその関連グループを削除します。 |
+|[チームを複製する](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |チームとその関連グループをコピーします。 |
+|[チームをアーカイブする](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |チームを読み取り専用状態にします。 |
+|[チームを展開する](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |チームを読み取り/書き込み状態に復元します。 |
+|[チームを一覧表示する](../api/user-list-joinedteams.md) | [team](team.md) コレクション | メンバーであるチームの一覧を表示します。 |
+|[すべてのチームのリストを作成する](/graph/teams-list-all-teams) | [group](group.md) コレクション | チームを持つすべてのグループを一覧表示します。 |
+|[組織に対してアプリを公開する](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 所属組織のみに表示する Teams アプリを作成します。 |
+|[アプリをチームに追加する](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | アプリをチームに追加 (インストール) します。|
+|[チャネルにタブを追加する](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | タブをチームのチャネルに追加 (インストール) します。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類   | 説明 |
+| プロパティ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|funSettings|[teamFunSettings](teamfunsettings.md) |Giphy、memes、およびチームのステッカーを構成する設定を使用します。|
-|guestSettings|[teamGuestSettings](teamguestsettings.md) |来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。|
-|isArchived|ブール型|このチームが、読み取り専用モードでかどうかです。 |
-|memberSettings|[teamMemberSettings](teammembersettings.md) |など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、チームにボットを追加します。|
-|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |メッセージングを構成する設定は、チーム内の参照。|
-|webUrl|文字列 (読み取り専用) | クライアントの Microsoft のチームにチームに移動するハイパーリンク。 これは、クライアントの Microsoft のチームにチームを右クリックし、**チームへのリンクを取得する**を選択するときに表示される URL です。 この URL は、非透過 blob として扱われます、解析されない必要があります。 |
+|funSettings|[teamFunSettings](teamfunsettings.md) |チームでの Giphy、ミーム、およびステッカーの使用を構成する設定。|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |ゲストがチームでチャネルを作成、更新、削除できるかどうかを構成する設定。|
+|InternalId | string | 監査ログまたは [Office 365 マネージメント アクティビティ API](https://docs.microsoft.com/ja-JP/office/office-365-management-api/office-365-management-activity-api-reference) など、いくつかの場所で使用されているチームの一意の ID。 |
+|isArchived|Boolean|このチームが読み取り専用モードかどうか。 |
+|memberSettings|[teamMemberSettings](teammembersettings.md) |メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。|
+|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |チームでメッセージとメンションを構成する設定。|
+|webUrl|string (読み取り専用) | Microsoft Teams クライアントのチームに移動するハイパーリンク。 これは、Microsoft Teams クライアントでチームを右クリックし、**[Get link to team]** を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|チャンネル|[チャネル](channel.md)コレクション|チャンネルとチームに関連付けられているメッセージのコレクションです。|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md)コレクション|このチームにインストールされているアプリケーションです。|
+|channels|[channel](channel.md) コレクション|チームに関連付けられているチャネルとメッセージのコレクション。|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) コレクション|このチームにインストールされているアプリ。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -72,6 +73,7 @@ ms.locfileid: "27976934"
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
@@ -89,5 +91,5 @@ ms.locfileid: "27976934"
 }-->
 
 ## <a name="see-also"></a>関連項目
-- [チームのグループを作成](/graph/teams-create-group-and-team)
-- [チーム Api を使用します。](teams-api-overview.md)
+- [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
+- [Teams API を使用する](teams-api-overview.md)

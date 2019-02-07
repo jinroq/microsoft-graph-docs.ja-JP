@@ -1,49 +1,49 @@
 ---
 title: chatMessage リソースの種類
-description: チャネルまたはチャットのエンティティ内で個別のチャット メッセージを表します。 メッセージは、ルートのメッセージまたはメッセージ内の**replyToId**プロパティで定義されているスレッドの一部にできます。
+description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 localization_priority: Priority
-ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855994"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735580"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チャネル](channel.md)またはチャットのエンティティ内で個別のチャット メッセージを表します。 メッセージは、ルートのメッセージまたはメッセージ内の**replyToId**プロパティで定義されているスレッドの一部にできます。
+[チャネル](channel.md)またはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[リストのチャネルのメッセージ](../api/channel-list-messages.md) | [chatmessage](chatmessage.md)コレクション | チャネルでは、ルートのすべてのメッセージの一覧を取得します。|
-|[チャネル取得メッセージ](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | チャンネルから 1 つのルートのメッセージを取得します。|
-|[メッセージに対する返信の一覧](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md)コレクション| チャネルでのメッセージに対する返信をすべての一覧を取得します。|
-|[メッセージへの応答を取得します。](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージに 1 つの返信を取得します。|
+|[チャネル メッセージを一覧表示する](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) コレクション | チャネルのすべてのルート メッセージの一覧を取得します。|
+|[チャネル メッセージを取得する](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | チャネルからのルート メッセージを 1 件取得します。|
+|[メッセージへの返信を一覧表示する](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) コレクション| チャネル内のメッセージへの返信すべての一覧を取得します。|
+|[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| 読み取り専用です。 メッセージの一意の ID です。|
-|replyToId| 文字列 | スレッドの親メッセージとルートのメッセージの id |
+|id|String| 読み取り専用です。 メッセージの一意の ID。|
+|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID |
 |from|[identitySet](identityset.md)| メッセージの送信者の詳細|
-|etag| 文字列 | メッセージのバージョン番号 |
-|messageType|String|サポートされているメッセージでは、現在の type の値: メッセージ、chatEvent を入力します。|
-|createdDateTime|dateTimeOffset|読み取り専用です。 メッセージが作成された日時のタイムスタンプ|
-|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージが編集更新をされたときのタイムスタンプ|
-|isDeleted|ブール|メッセージをソフト削除されている場合を表します。|
-|deletedDateTime|dateTimeOffset|読み取り専用です。 タイムスタンプは、メッセージが削除されました |
-|subject|文字列|メッセージの件名です。 省略可能|
-|body|[itemBody](itembody.md)|メッセージのコンテンツのプレーン テキストと HTML 形式です。 プレーン テキストを返します既定では、アプリケーションは、クエリ パラメーターの一部として HTML を選択できます。|
-|概要|文字列|プッシュ通知し、サマリー ・ ビューまたはフォール バック ・ ビューの使用できるメッセージの概要のテキスト|
-|mentions|[chatMessageMention](chatmention.md)コレクション| メッセージに記載されているエンティティの一覧です。 チャネル、ユーザー、ボット、チームが現在サポートしています|
-|importance| 文字列 | メッセージの重要度: 高、通常|
-|反力| [chatMessageReaction](chatreaction.md)コレクション | このメッセージの反応 (たとえばなど)|
-|locale|文字列|クライアントが設定するメッセージのロケール|
-|attachments|[chatMessageAttachment](chatattachment.md)コレクション |添付ファイル|
+|etag| string | メッセージのバージョン番号 |
+|messageType|String|メッセージの種類。現在サポートされている値: message、chatEvent、Typing|
+|createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ|
+|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ|
+|deleted|Boolean|メッセージが削除済み (回復可能) かどうかを示します。|
+|deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージ削除時のタイムスタンプ |
+|subject|string|メッセージの件名。 省略可能|
+|body|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 既定ではプレーンテキストを返しますが、クエリ パラメーターの一部としてアプリケーションで HTML を選択できます|
+|summary|string|プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト|
+|mentions|[chatMessageMention](chatmention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています|
+|importance| string | メッセージの重要度: 通常、高|
+|reactions| [chatMessageReaction](chatreaction.md) コレクション | このメッセージに対する反応 (例: いいね!)|
+|locale|string|クライアントに設定されたメッセージのロケール|
+|attachments|[chatMessageAttachment](chatattachment.md) コレクション |添付ファイル|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,7 +53,7 @@ ms.locfileid: "27855994"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",
@@ -91,10 +91,15 @@ ms.locfileid: "27855994"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
