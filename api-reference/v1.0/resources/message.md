@@ -4,12 +4,12 @@ description: mailFolder のメッセージ。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ea66839fe756fc6ecd57008c775fd20a9a23633a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966455"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745553"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
@@ -17,9 +17,9 @@ mailFolder のメッセージ。
 
 このリソースは以下をサポートしています。
 
-- カスタムのインターネット メッセージのヘッダーとして、独自のデータを追加しています。 メッセージを作成するときにのみ、カスタム ヘッダーを追加し、名前を付けます"x-"で始まります。 メッセージが送信されると、ヘッダーを変更することはできません。 メッセージのヘッダーを取得するには、適用、 `$select` 、[メッセージの取得](../api/message-get.md)操作のパラメーターのクエリを実行します。
-- [拡張機能](/graph/extensibility-overview)として、カスタム プロパティとしては、独自のデータを追加します。
-- [変更通知](/graph/webhooks)にサブスクライブします。
+- カスタム インターネット メッセージ ヘッダーとして独自のデータを追加します。 メッセージの作成時にのみカスタム ヘッダーを追加し、ヘッダーに "x-" で始まる名前を付けます。 メッセージが送信された後ではヘッダーを変更することはできません。 メッセージのヘッダーを取得するには、[get message](../api/message-get.md) パラメーターで `$select` クエリ パラメーターを適用します。
+- [拡張機能](/graph/extensibility-overview)として、カスタム プロパティに独自のデータを追加します。
+- [変更通知](/graph/webhooks)を受信します。
 - [デルタ](../api/message-delta.md)関数を提供することにより、[デルタ クエリ](/graph/delta-query-overview)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
@@ -56,33 +56,33 @@ mailFolder のメッセージ。
 |[複数値の拡張プロパティを持つメッセージの取得](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | `$expand` を使用して、複数値の拡張プロパティを含むメッセージを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
-|body|[itemBody](itembody.md)|メッセージの本文。 Html 形式またはテキスト形式でことができます。 [メッセージの本文内の安全な HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)をお探しです。|
+|body|[itemBody](itembody.md)|メッセージの本文。 HTML 形式またはテキスト形式にできます。 [メッセージ本文での安全な HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned) に関する情報を参照してください。|
 |bodyPreview|String|メッセージ本文の最初の 255 文字。テキスト形式です。|
-|categories|String コレクション|メッセージに関連付けられたカテゴリ。|
+|categories|String collection|メッセージに関連付けられたカテゴリ。|
 |ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
 |changeKey|String|メッセージのバージョン。|
 |conversationId|String|電子メールが属している会話の ID。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
-|flag|[followupFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
-|from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。 値は、使用される実際のメールボックスに対応する必要があります。 について[の設定からとセンダーのプロパティ](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)のメッセージです。|
+|flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
+|from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。 この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。このプロパティにはインライン添付ファイルが含まれていません。このためメッセージにインライン添付ファイルのみが含まれている場合、このプロパティは false です。インライン添付ファイルが存在するかどうかを確認するには、**body** プロパティを解析して `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">` などの `src` 属性を探します。|
 |id|String|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
 |importance|importance| メッセージの重要度: `Low`、`Normal`、`High`。|
-|inferenceClassification | inferenceClassificationType | 推論の妥当性や重要度、または明示的なオーバーライドに基づいて、ユーザーに対するメッセージの分類です。 可能な値:`focused`または`other`。 |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で定義されているメッセージ ヘッダーのコレクションです。 セットには、受信者に送信者からのメッセージを取得するネットワーク パスを示すメッセージのヘッダーが含まれています。 メッセージのアプリケーション データを保持するカスタム メッセージのヘッダーを含めることもできます。 |
+|inferenceClassification | inferenceClassificationType | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類。 使用可能な値: `focused`、`other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で定義されている一連のメッセージ ヘッダーです。 これには、メッセージが辿った送信者から受信者へのネットワーク パスを示すメッセージ ヘッダーが含まれています。 また、メッセージのアプリ データを保持するカスタム メッセージ ヘッダーも含めることができます。 <br><br> `$select` クエリ オプションの適用時にのみ、返されます。 読み取り専用です。 |
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
-|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
-|isRead|ブール値|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
-|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は、 **from**プロパティと同じです。 [共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)、または[委任](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するメッセージを送信するとき、別の値にこのプロパティを設定できます。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。 について[の設定からとセンダーのプロパティ](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)のメッセージです。|
+|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |subject|String|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
@@ -94,9 +94,9 @@ mailFolder のメッセージ。
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) コレクション|メッセージの [fileAttachment](fileattachment.md) 添付ファイルと [itemAttachment](itemattachment.md) 添付ファイル。|
-|extensions|[extension](extension.md) コレクション|メッセージに対して定義されている未処理の拡張機能のコレクションです。 Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 複数値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 単一値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
+|extensions|[extension](extension.md) コレクション|メッセージに対して定義されているオープン拡張機能のコレクションです。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、複数値の拡張プロパティのコレクション。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -110,7 +110,9 @@ mailFolder のメッセージ。
     "attachments",
     "extensions",
     "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "multiValueExtendedProperties",
+
+    "internetMessageHeaders"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message",

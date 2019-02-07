@@ -4,12 +4,12 @@ description: メールボックス フォルダー内のメッセージです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641219"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745539"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
@@ -35,7 +35,9 @@ ms.locfileid: "29641219"
     "extensions",
     "singleValueExtendedProperties",
     "multiValueExtendedProperties",
-    "mentions"
+    "mentions",
+
+    "internetMessageHeaders"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -103,7 +105,7 @@ ms.locfileid: "29641219"
 |id|String|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類。使用可能な値は、`focused` または `other` です。|
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で定義されている一連のメッセージ ヘッダーです。 これには、メッセージが辿った送信者から受信者へのネットワーク パスを示すメッセージ ヘッダーが含まれています。 また、メッセージのアプリ データを保持するカスタム メッセージ ヘッダーも含めることができます。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で定義されている一連のメッセージ ヘッダーです。 これには、メッセージが辿った送信者から受信者へのネットワーク パスを示すメッセージ ヘッダーが含まれています。 また、メッセージのアプリ データを保持するカスタム メッセージ ヘッダーも含めることができます。 <br><br> `$select` クエリ オプションの適用時にのみ、返されます。 読み取り専用です。|
 |internetMessageId | String | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で指定されている形式のメッセージ ID。 **isDraft** が True の場合にのみ更新可能です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
@@ -190,4 +192,4 @@ ms.locfileid: "29641219"
     "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
--->
+

@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2feb77d02e575d378ad54bde9d10e98a9f5db093
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: c8184f858dceec1904678829d54817e86dff3606
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643819"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745581"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -90,7 +90,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
-|companyName| String | ユーザーが関連付けられている会社名。 読み取り専用です。
+|companyName| String | ユーザーが関連付けられている会社名。 このプロパティは、外部ユーザーが所属する会社を記述するのに役立ちます。 |
 |consentProvidedForMinor|String|未成年者について同意を得ているかどうかを設定します。 使用できる値: `null`、`granted`、`denied`、および `notRequired`。 詳細については、「[法的年齢グループ プロパティの定義](#legal-age-group-property-definitions)」を参照してください。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。 $filter をサポートします。|
 |createdDateTime|DateTimeOffset|ユーザーが作成された日付と時刻。 値は変更できず、エンティティが作成されると自動的に設定されます。 DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 プロパティは、Null 許容型です。 Null 値は、ユーザーには正確な作成時刻が特定できないことを示します。 読み取り専用です。 $filter をサポートします。|

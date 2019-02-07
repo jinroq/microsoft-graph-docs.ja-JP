@@ -4,12 +4,12 @@ description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0798ca15e61dcb9522019ba855f5b2e329b97356
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e34a095597064401f59ad5f78f8ca092e93b94b4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643847"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745532"
 ---
 # <a name="create-team"></a>チームを作成する
 
@@ -294,7 +294,11 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>関連項目
 
+- [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
+- [Retail Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Healthcare Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
