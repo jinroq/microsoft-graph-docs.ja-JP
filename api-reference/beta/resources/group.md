@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、動的な�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641765"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745560"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -47,10 +47,10 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
 |[メンバーを削除する](../api/group-delete-members.md) | なし |**members** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。 |
 |[memberOf を一覧表示する](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| このグループが直接のメンバーであるグループおよび管理単位を、memberOf ナビゲーション プロパティから取得します。|
 |[推移的な memberOf を一覧表示する](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| ユーザーがメンバーになっているグループ、管理単位を一覧表示します。 この操作は推移的で、このグループが入れ子のメンバーになっているグループが含まれます。 |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|String コレクション|グループの一覧内のメンバーシップを確認します。 この関数は推移的です。|
+|[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップについて確認します。この関数は、推移的です。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|
-|[getMemberObjects](../api/group-getmemberobjects.md)|String コレクション|グループがメンバーになっているすべてのグループ、管理単位を返します。 この関数は推移的です。 |
-|[設定を作成する](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |directorySettingTemplate に基づいて、設定オブジェクトを作成します。 POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。 グループ固有のテンプレートにのみ、この操作を使用します。|
+|[getMemberObjects](../api/group-getmemberobjects.md)|String collection|グループがメンバーになっているすべてのグループ、管理単位を返します。この関数は推移的です。 |
+|[設定を作成する](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |directorySettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。グループ固有のテンプレートにのみ、この操作を使用します。|
 |[設定を取得する](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |特定の設定オブジェクトのプロパティを参照します。|
 |[設定を一覧表示する](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) コレクション |すべての設定オブジェクトのプロパティを一覧表示します。|
 |[設定を更新する](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |設定オブジェクトを更新します。 |
@@ -179,22 +179,38 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
   "blockType": "resource",
   "optionalProperties": [
     "acceptedSenders",
-    "appRoleAssignments",
     "calendar",
     "calendarView",
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
+    "endpoints",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
+    "membersWithLicenseErrors",
     "onenote",
     "owners",
     "photo",
-    "photos",    
+    "photos",
+    "planner",    
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"
