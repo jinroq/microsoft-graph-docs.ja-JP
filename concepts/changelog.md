@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7d5d0a9e7d19a2ae51ed2843a3aa56b9119163a4
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690974"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735622"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -24,6 +24,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に導入しました。|
 |追加 |v1.0|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) に導入しました。|
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版および v1.0| **internalId** プロパティを[チーム](/graph/api/resources/team?view=graph-rest-v1.0)のリソースに追加しました。|
 
 ## <a name="january-2019"></a>2019 年 1 月
 
