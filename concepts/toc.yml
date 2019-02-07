@@ -55,6 +55,7 @@ items:
             href: office365-groups-concept-overview.md
           - name: 予定表
             href: outlook-calendar-concept-overview.md
+            displayName: Outlook
             items:
               - name: 会議の日時を検索する
                 href: findmeetingtimes-example.md
@@ -68,6 +69,7 @@ items:
                 href: outlook-immutable-id.md
           - name: クロスデバイス エクスペリエンス
             href: cross-device-concept-overview.md
+            displayName: Project Rome
             items:
               - name: アクティビティ フィード
                 href: activity-feed-concept-overview.md
@@ -79,21 +81,27 @@ items:
                 href: cross-device-app-configuration.md
           - name: 顧客の予約 (プレビュー)
             href: booking-concept-overview.md
+            displayName: 'Bookings, Microsoft Bookings'
           - name: データ アクセス (プレビュー)
             href: data-connect-concept-overview.md
+            displayName: Microsoft Graph data connect
             items:
               - name: 作業の開始
                 href: data-connect-get-started.md
           - name: デバイスとアプリ
             href: intune-concept-overview.md
+            displayName: Intune
           - name: 教育
             href: education-concept-overview.md
           - name: ファイル
             href: onedrive-concept-overview.md
+            displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
           - name: ID とアクセス
             href: azuread-identity-access-management-concept-overview.md
+            displaName: 'Azure AD, Microsoft identity platform'
           - name: メール
             href: outlook-mail-concept-overview.md
+            displayName: 'Outlook, Outlook mail'
             items:
               - name: メッセージングを自動化する
                 href: outlook-create-send-messages.md
@@ -107,6 +115,7 @@ items:
                 href: outlook-send-mail-from-other-user.md
           - name: 備考
             href: integrate-with-onenote.md
+            idsplayName: OneNote
             items:
               - name: OneNote のコンテンツを入手する
                 href: onenote-get-content.md
@@ -135,6 +144,7 @@ items:
                 href: onenote-error-codes.md
           - name: 個人用連絡先
             href: outlook-contacts-concept-overview.md
+            displayName: 'Outlook, Outlook contacts, Outlook contact, People'
             items:
               - name: 共有の連絡先を取得する
                 href: outlook-get-shared-contacts-folders.md
@@ -158,6 +168,7 @@ items:
                     href: security-qradar-siemintegration.md
           - name: サイトとリスト
             href: sharepoint-concept-overview.md
+            displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
           - name: ソーシャル インテリジェンス
             href: social-intel-concept-overview.md
             items:
@@ -165,8 +176,10 @@ items:
                 href: people-example.md
           - name: タスクとプラン
             href: planner-concept-overview.md
+            displayName: Planner
           - name: チームワーク
             href: teams-concept-overview.md
+            displayName: Microsoft Teams
             items:
               - name: グループとチームを作成する
                 href: teams-create-group-and-team.md
@@ -176,6 +189,7 @@ items:
                 href: teams-configuring-builtin-tabs.md
           - name: ブックとグラフ
             href: excel-concept-overview.md
+            displayName: Excel
             items:
               - name: セッションを管理する
                 href: excel-manage-sessions.md
@@ -216,8 +230,10 @@ items:
                 href: throttling.md
               - name: 変更通知
                 href: webhooks.md
+                displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               - name: 変更履歴の記録
                 href: delta-query-overview.md
+                displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
                 items:
                   - name: イベントへの変更の取得 (例)
                     href: delta-query-events.md
@@ -229,6 +245,7 @@ items:
                     href: delta-query-users.md
               - name: カスタム データの追加
                 href: extensibility-overview.md
+                displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
                 items:
                   - name: オープン拡張機能の使用 (例)
                     href: extensibility-open-users.md

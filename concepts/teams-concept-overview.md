@@ -4,12 +4,12 @@ description: 'Microsoft Teams は、チームワークおよびインテリジ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e1ac6977add3de95b76f27a5e9184ee9f79e798a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967981"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760819"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API の概要
 
@@ -82,7 +82,7 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 
 ## <a name="next-steps"></a>次のステップ
 
-- [概要ビデオ](http://aka.ms/teamsgraph/v1/video)を見る。
+- [概要ビデオ](https://aka.ms/teamsgraph/v1/video)を見る。
 - [Microsoft Teams API の使用](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)方法を確認する。
 - [チーム](/graph/api/resources/team?view=graph-rest-1.0)、[チャネル](/graph/api/resources/channel?view=graph-rest-1.0)、および [グループ](/graph/api/resources/group?view=graph-rest-1.0)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。

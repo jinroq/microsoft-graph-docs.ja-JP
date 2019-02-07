@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 新しいフォルダーを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ac78cc2e223f532c8c97fd413b799bd5cfd594cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522988"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760847"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>ドライブに新しいフォルダーを作成する
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは新しく作成されたフォルダーを [DriveItem] [item-resource] リソースとして返します。
+かどうかは成功すると、このメソッドを返します新しく作成したフォルダーの[DriveItem]と[item-resource]リソースです。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -110,8 +110,11 @@ Content-Type: application/json
 
 ## <a name="error-response"></a>エラー応答
 
-エラーがどのように返されるかについては、「[エラー応答][error-response]」のトピックを参照してください。
-[エラー応答]: 項目のリソースのエラー/グラフ/:./resources/driveitem.md フォルダーとファセット。.. 説明。/resources/folder.md
+エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!--
 {

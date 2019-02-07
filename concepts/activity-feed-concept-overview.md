@@ -3,12 +3,12 @@ title: Microsoft Graph のアクティビティ フィード API を使用して
 description: アクティビティの利用で、それらの Microsoft エクスペリエンスによってアプリの利用が推進されます。 また、アプリでのアクティビティを表示することにより、Windows、Android、iOS など、どんなプラットフォームのどんなデバイス上でも、直前の作業の続きにすぐ取り掛かることができます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d264ca473dae66a945144c69cb64416d7c703611
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964943"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760861"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Microsoft Graph のアクティビティ フィード API を使用してクロスデバイス エクスペリエンスを有効にする
 
@@ -25,8 +25,6 @@ Windows Timeline などの Microsoft エクスペリエンスでアクティビ�
 
 ### <a name="let-microsoft-help-drive-app-usage-with-features-that-reach-hundreds-of-millions-of-customers"></a>Microsoft の機能利用により何億というユーザーに向けてアプリの利用を推進
 ユーザー アクティビティ統合で可能になるのは、ユーザーは、アプリのアクティビティをシームレスに再開できることだけではありません。それにより、Windows、iOS、および Android のための Microsoft のエクスペリエンスを活用して、どんなデバイスでもアプリを利用できるようになり、ユーザーの生産性が向上するのです。 Microsoft Graph を利用すれば、ひとたびユーザー アクティビティを統合することで何億というユーザーに達することができ、さらには、Windows のみならず iOS や Android デバイス用の Microsoft 製品を使用する何千万という組織ユーザーにも達することができます。
-
-![Windows Timeline のスクリーンショット](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
 
 ## <a name="see-also"></a>関連項目
 
