@@ -1,17 +1,17 @@
 ---
-title: ユーザーの代わりにアクセスを取得
-description: 'Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。 '
+title: ユーザーの代わりにアクセスを取得する
+description: Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914270"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760931"
 ---
-# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得
+# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得する
 Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。 
 
 ## <a name="authentication-and-authorization-steps"></a>認証および承認の手順
@@ -241,7 +241,7 @@ Microsoft Graph は、次に示す種類のアプリから、ユーザーの代�
 
 Azure AD v2.0 のエンドポイントでサポートされているアプリの種類の詳細については、「[Azure Active Directory v2.0 エンドポイントのアプリの種類](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)」を参照してください。
 
-> **注**:[スタンドアロンの Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) からの Microsoft Graph の呼び出しは、現在 Azure AD v2.0 エンドポイントではサポートされていません。このシナリオでは、Azure AD エンドポイントを使用する必要があります。
+> **注**:スタンドアロンの Web API からの Microsoft Graph の呼び出しは、現在 Azure AD v2.0 エンドポイントではサポートされていません。このシナリオでは、Azure AD エンドポイントを使用する必要があります。
 
 Azure AD v2.0 エンドポイントからユーザーに代わって Microsoft Graph にアクセスする方法の詳細については、次を参照してください。
 
@@ -252,7 +252,7 @@ Azure AD v2.0 エンドポイントからユーザーに代わって Microsoft G
 ## <a name="azure-ad-endpoint-considerations"></a>Azure AD エンドポイントに関して考慮すべき事項
 Azure AD エンドポイントと Azure AD v2.0 エンドポイントの使用には、いくつかの違いがあります。次に例を示します。
 
-- アプリは [Azure ポータル](https://portal.azure.com)を使用して構成します。Azure ポータルでアプリを構成する方法の詳細については、「[Azure Active Directory とアプリケーションの統合：アプリケーションの追加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)」を参照してください。
+- アプリは [Azure ポータル](https://portal.azure.com)を使用して構成します。 Azure ポータルでアプリを構成する方法の詳細については、「[アプリを Azure Active Directory v2.0 エンドポイントに登録する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/quickstart-v2-register-an-app)」を参照してください
 - アプリには、プラットフォームごとのアプリケーション ID (クライアント ID) が必要です。
 - アプリがマルチ テナント アプリの場合は、[Azure ポータル](https://portal.azure.com)でマルチ テナントとなるよう明示的に設定する必要があります。
 - Azure AD エンドポイントでは、アプリに必要なすべてのアクセス許可を開発者が構成する必要があります。Azure AD エンドポイントは、動的 (増分) の同意をサポートしていません。

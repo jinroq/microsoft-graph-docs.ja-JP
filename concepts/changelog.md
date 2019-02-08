@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735622"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745595"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -18,7 +18,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="february-2019"></a>2019 年 2 月
 
-### <a name="education-apis"></a>教育機関向け API
+### <a name="directory-apis"></a>ディレクトリ API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|変更 |ベータ版および v1.0| 書き込み可能になるように、[user](/graph/api/resources/user?view=graph-rest-v1.0) リソースの **companyName** プロパティを更新しました。|
+
+### <a name="education-apis"></a>教育機関 API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2763,7 +2769,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="eventmessages"></a>EventMessages
 
-| **変更の種類** | **バージョン** | **説明**                          |
+| **変更の種類** | **Version** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0        | _inferenceClassification_ と _extensions_ が _eventMessages_ に追加されました。 |
 | 追加        | ベータ版        | _responseRequested_ が _eventMessageRequest_ に追加されました。 |

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph を呼び出すためのトークンの取得
-description: 'Microsoft Graph を呼び出すために、アプリは Microsoft のクラウド ID サービス Azure Active Directory (Azure AD) からアクセス トークンを取得する必要があります。アクセス トークンには、アプリとアプリに付与されているアクセス許可に関する情報 (要求) が含まれています (このアクセス許可は、Microsoft Graph を通じて利用できるリソースと API に対応するものです)。アクセス トークンを取得するためには、アプリを Azure AD で認証できるようにすることと、そのアプリが必要とする Microsoft Graph リソースへのアクセスをユーザーまたは管理者が承認することが必要です。 '
+description: Microsoft Graph を呼び出すために、アプリは Microsoft のクラウド ID サービス Azure Active Directory (Azure AD) からアクセス トークンを取得する必要があります。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d08c481ab7a42eee4cfabb8c6869225cb6d547ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5438dfd81dddb2089792f37a42f87070d337a6b4
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932071"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760924"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Microsoft Graph を呼び出すためのアクセス トークンの取得
 
@@ -147,7 +147,7 @@ Azure AD v2.0 は Azure AD よりも新しく、機能の追加が続けられ�
 
 * 一部の機能は、まだ v2.0 では完全に実装されていません。たとえば、エンタープライズのお客様がモバイル セキュリティ機能 ([デバイスへの条件付きアクセス](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies)など) をオンにすると、アプリが動作しなくなることがあります。
 * クラウド ソリューション プロバイダー アプリは呼び出せません。
-* [フェデレーション テナントの統合 Windows 認証](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts)はサポートされていません。このため、フェデレーション Azure AD テナントのユーザーは、オンプレミスの Active Directory インスタンスでの自動認証ができなくなります。ユーザーは、自分の資格情報を再入力する必要があります。
+* [フェデレーション テナントの統合 Windows 認証](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#limitations)はサポートされていません。このため、フェデレーション Azure AD テナントのユーザーは、オンプレミスの Active Directory インスタンスでの自動認証ができなくなります。ユーザーは、自分の資格情報を再入力する必要があります。
 
 Azure AD v2.0 エンドポイントと Azure AD エンドポイントの相違点の詳細については、「[v2.0 エンドポイントの変更点](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare)」を参照してください。
 

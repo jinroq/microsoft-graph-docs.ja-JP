@@ -1,15 +1,15 @@
 ---
 title: アプリを Azure AD v2.0 エンドポイントに登録する
-description: 'アプリは、Azure AD に登録する必要があります。アプリを登録すると、トークンの取得のための Azure AD での認証でアプリケーションが使用する一意のアプリケーション ID と他の値が確定します。Azure AD v2.0 エンドポイントの場合は、Microsoft アプリ登録ポータルでアプリを登録します。アプリを登録するには、Microsoft アカウントのほか、職場または学校のアカウントを使用できます。開発するアプリケーションの種類によっては、アプリケーションの認証と承認の設定で 1 つまたは複数のプロパティをコピーする必要があります。 '
+description: アプリは、Azure AD に登録する必要があります。 アプリを登録すると、トークンの取得のための Azure AD での認証でアプリケーションが使用する一意のアプリケーション ID と他の値が確定します。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930559"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760959"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>アプリを Azure AD v2.0 エンドポイントに登録する
 
@@ -91,4 +91,4 @@ ms.locfileid: "27930559"
 - アプリケーションがマルチ テナント アプリケーションの場合は、ポータルでマルチ テナントとなるよう明示的に設定する必要があります。
 - アプリケーションがポータルで必要とするすべてのアクセス許可 (Microsoft Graph アクセス許可を含む) を事前に設定しておく必要があります。 
 
-Azure ポータルを使用してアプリケーションを追加する方法の詳細については「[アプリケーションと Azure Active Directory の統合:アプリケーションの追加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)」を参照してください。
+Azure ポータルを使用してアプリケーションを追加する方法の詳細については「[アプリを Azure Active Directory v2.0 エンドポイントに登録する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/quickstart-v2-register-an-app)」を参照してください。

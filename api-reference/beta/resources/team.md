@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 80283edd8d0a4ea2f9abca2a51fda3f96752d96e
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735601"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745546"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -50,7 +50,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |specialization|[teamSpecialization](teamspecialization.md)| 省略可能。 チームが特定のユース ケースを目的としているかどうかを示します。  チーム専門分野ごとに、ユース ケースをターゲットとする一意の動作とエクスペリエンスにアクセスできます。 |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| グループとチームの可視性。 既定では Public です。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |チームでの Giphy、ミーム、およびステッカーの使用を構成する設定。|
-|guestSettings|[teamGuestSettings](teamguestsettings.md) |ゲストがチームでチャネルを作成、更新、または削除できるかどうかを構成する設定。|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |ゲストがチームでチャネルを作成、更新、削除できるかどうかを構成する設定。|
 |InternalId | string | 監査ログまたは [Office 365 マネージメント アクティビティ API](https://docs.microsoft.com/ja-JP/office/office-365-management-api/office-365-management-activity-api-reference) など、いくつかの場所で使用されているチームの一意の ID。 |
 |isArchived|Boolean|このチームが読み取り専用モードかどうか。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。|
@@ -66,7 +66,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) コレクション|このチームにインストールされているアプリ。|
 |owners|[user](user.md)| このチームの所有者の一覧。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
-|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 |
+|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
