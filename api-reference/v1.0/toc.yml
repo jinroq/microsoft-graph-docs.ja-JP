@@ -58,28 +58,28 @@ items:
       href: /graph/changelog?toc=./ref/toc.json
     - name: エラー
       href: /graph/errors?toc=./ref/toc.json
-- name: リファレンス
+- name: 参照
   href: overview.md
   items:
   - name: ユーザー
     href: resources/users.md
     items:
-    - name: User
+    - name: ユーザー
       href: resources/user.md
       items:
       - name: ユーザーを一覧表示する
         href: api/user-list.md
       - name: ユーザーを取得する
         href: api/user-get.md
-      - name: user の作成
+      - name: ユーザーを作成する
         href: api/user-post-users.md
       - name: ユーザーを更新する
         href: api/user-update.md
       - name: ユーザーを削除する
         href: api/user-delete.md
-      - name: デルタを取得します。
+      - name: 差分を取得する
         href: api/user-delta.md
-    - name: カレンダー
+    - name: 予定表
       displayName: Outlook, Outlook calendar
       href: resources/event.md
       items:
@@ -89,15 +89,15 @@ items:
         href: api/user-post-events.md
       - name: 予定表を一覧表示する
         href: api/user-list-calendars.md
-      - name: Create calendar
+      - name: 予定表を作成する
         href: api/user-post-calendars.md
       - name: 予定表グループを一覧表示する
         href: api/user-list-calendargroups.md
       - name: 予定表グループを作成する
         href: api/user-post-calendargroups.md
-      - name: ボックスの一覧の [カレンダー] ビュー
+      - name: 予定表ビューを一覧表示する
         href: api/user-list-calendarview.md
-      - name: アラームの表示
+      - name: 通知ビュー
         href: api/user-reminderview.md
       - name: 会議の日時を検索する
         href: api/user-findmeetingtimes.md
@@ -108,22 +108,22 @@ items:
         href: api/user-list-contacts.md
       - name: 連絡先を作成する
         href: api/user-post-contacts.md
-      - name: 連絡先フォルダーの一覧
+      - name: 連絡先フォルダーを一覧表示する
         href: api/user-list-contactfolders.md
-      - name: 連絡先フォルダーを作成します。
+      - name: 連絡先フォルダーを作成する
         href: api/user-post-contactfolders.md
     - name: ディレクトリ オブジェクト
       href: resources/directoryobject.md
       items:
-      - name: 所有されているデバイスを一覧表示します。
+      - name: 所有されているデバイスを一覧表示する
         href: api/user-list-owneddevices.md
-      - name: 登録されているデバイスを一覧表示します。
+      - name: 登録されているデバイスを一覧表示する
         href: api/user-list-registereddevices.md
-      - name: 所有しているオブジェクトを一覧表示します。
+      - name: 所有されているオブジェクトを一覧表示する
         href: api/user-list-ownedobjects.md
-      - name: オブジェクトの作成] ボックスの一覧
+      - name: 作成されたオブジェクトを一覧表示する
         href: api/user-list-createdobjects.md
-      - name: ライセンスを割り当てください。
+      - name: ライセンスを割り当てる
         href: api/user-assignlicense.md
       - name: メンバー オブジェクトを取得する
         href: api/user-getmemberobjects.md
@@ -131,9 +131,9 @@ items:
         href: api/user-getmembergroups.md
       - name: メンバー グループをチェックする
         href: api/user-checkmembergroups.md
-      - name: オブジェクトの Id を取得します。
+      - name: ID によってオブジェクトを取得する
         href: api/directoryobject-getbyids.md
-      - name: 個人データをエクスポートします。
+      - name: 個人データをエクスポートする
         href: api/user-exportpersonaldata.md
     - name: ドライブ
       href: resources/drive.md
@@ -152,15 +152,15 @@ items:
       items:
       - name: メッセージを一覧表示する
         href: api/user-list-messages.md
-      - name: メッセージを作成します。
+      - name: メッセージを作成する
         href: api/user-post-messages.md
-      - name: リストの上書き
+      - name: オーバーライドを一覧表示する
         href: api/inferenceclassification-list-overrides.md
-      - name: 上書きを作成します。
+      - name: オーバーライドを作成する
         href: api/inferenceclassification-post-overrides.md
-      - name: メール フォルダーの一覧
+      - name: メール フォルダーを一覧表示する
         href: api/user-list-mailfolders.md
-      - name: メール フォルダーを作成します。
+      - name: メール フォルダーを作成する
         href: api/user-post-mailfolders.md
       - name: メールを送信する
         href: api/user-sendmail.md
@@ -174,7 +174,7 @@ items:
         href: api/mailfolder-post-messagerules.md
       - name: メール ヒントを取得する
         href: api/user-getmailtips.md
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -184,41 +184,41 @@ items:
     - name: Outlook の設定
       href: resources/outlookuser.md
       items:
-      - name: 言語の選択項目を取得します。
+      - name: 言語の選択肢を取得する
         href: api/outlookuser-supportedlanguages.md
-      - name: タイム ゾーンの選択項目を取得します。
+      - name: タイム ゾーンの選択肢を取得する
         href: api/outlookuser-supportedtimezones.md
-      - name: カテゴリの一覧表示
+      - name: カテゴリを一覧表示する
         href: api/outlookuser-list-mastercategories.md
-      - name: カテゴリの作成
+      - name: カテゴリを作成する
         href: api/outlookuser-post-mastercategories.md
     - name: 組織階層
       href: resources/organization.md
       items:
-      - name: リストの直属の部下
+      - name: 直属の部下を一覧表示する
         href: api/user-list-directreports.md
-      - name: マネージャーを取得します。
+      - name: マネージャーを取得する
         href: api/user-list-manager.md
       - name: マネージャーを割り当てる
         href: api/user-post-manager.md
-    - name: Photo
+    - name: 写真
       href: resources/profilephoto.md
       items:
       - name: 写真を取得する
         href: api/profilephoto-get.md
       - name: 写真を更新する
         href: api/profilephoto-update.md
-    - name: 計画タスク
+    - name: プランナー タスク
       href: resources/plannertask.md
       items:
-      - name: List tasks
+      - name: タスクを一覧表示する
         href: api/planneruser-list-tasks.md
-    - name: ユーザーの設定
+    - name: ユーザー設定
       href: resources/user-settings.md
       items:
-      - name: 設定を取得します。
+      - name: 設定を取得する
         href: api/user-get-settings.md
-      - name: 設定の更新
+      - name: 設定を更新する
         href: api/user-update-settings.md
   - name: グループ
     href: resources/groups-overview.md
@@ -226,19 +226,19 @@ items:
     - name: グループ
       href: resources/group.md
       items:
-      - name: お気に入りに追加します。
+      - name: お気に入りに追加する
         href: api/group-addfavorite.md
       - name: メンバーを追加する
         href: api/group-post-members.md
-      - name: Add owner
+      - name: 所有者を追加する
         href: api/group-post-owners.md
       - name: メンバー グループをチェックする
         href: api/group-checkmembergroups.md
       - name: グループを作成する
         href: api/group-post-groups.md
-      - name: グループの削除
+      - name: グループを削除する
         href: api/group-delete.md
-      - name: デルタを取得します。
+      - name: 差分を取得する
         href: api/group-delta.md
       - name: グループを取得する
         href: api/group-get.md
@@ -246,11 +246,11 @@ items:
         href: api/group-getmembergroups.md
       - name: メンバー オブジェクトを取得する
         href: api/group-getmemberobjects.md
-      - name: グループの一覧表示
+      - name: グループを一覧表示する
         href: api/group-list.md
-      - name: ライフ サイクル ポリシーのリスト
+      - name: ライフサイクル ポリシーを一覧表示する
         href: api/group-list-grouplifecyclepolicies.md
-      - name: リストのメンバー
+      - name: 所属を一覧表示する
         href: api/group-list-memberof.md
       - name: メンバーを一覧表示する
         href: api/group-list-members.md
@@ -258,51 +258,51 @@ items:
         href: api/group-list-owners.md
       - name: グループを更新する
         href: api/group-update.md
-      - name: お気に入りを削除します。
+      - name: お気に入りを削除する
         href: api/group-removefavorite.md
       - name: メンバーを削除する
         href: api/group-delete-members.md
-      - name: 所有者の削除
+      - name: 所有者を削除する
         href: api/group-delete-owners.md
-      - name: グループを更新します。
+      - name: グループを更新する
         href: api/group-renew.md
-      - name: 見えないカウントをリセットします。
+      - name: 見えないカウントをリセットする
         href: api/group-resetunseencount.md
-      - name: メールを購読します。
+      - name: メールで購読する
         href: api/group-subscribebymail.md
-      - name: メールで購読を解除します。
+      - name: メールでの購読を中止する
         href: api/group-unsubscribebymail.md
-      - name: ライフ サイクル ポリシー
+      - name: ライフサイクル ポリシー
         href: resources/grouplifecyclepolicy.md
         items:
-        - name: リスト ポリシー
+        - name: ポリシーを一覧表示する
           href: api/grouplifecyclepolicy-list.md
-        - name: ポリシーを作成します。
+        - name: ポリシーを作成する
           href: api/grouplifecyclepolicy-post-grouplifecyclepolicies.md
-        - name: ポリシーを取得します。
+        - name: ポリシーを取得する
           href: api/grouplifecyclepolicy-get.md
-        - name: ポリシーを更新します。
+        - name: ポリシーを更新する
           href: api/grouplifecyclepolicy-update.md
-        - name: ポリシーを削除します。
+        - name: ポリシーを削除する
           href: api/grouplifecyclepolicy-delete.md
-        - name: グループの追加
+        - name: グループを追加する
           href: api/grouplifecyclepolicy-addgroup.md
-        - name: グループを削除します。
+        - name: グループを削除する
           href: api/grouplifecyclepolicy-removegroup.md
     - name: 添付ファイル
       href: resources/attachment.md
       items:
-      - name: ファイルの添付ファイルのリソース
+      - name: 添付ファイルのリソース
         href: resources/fileattachment.md
-      - name: アイテムの添付ファイルのリソース
+      - name: 項目の添付ファイルのリソース
         href: resources/itemattachment.md
-      - name: 添付ファイルのリソースの参照
+      - name: 参照の添付ファイルのリソース
         href: resources/referenceattachment.md
       - name: 添付ファイルを取得する
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -311,44 +311,44 @@ items:
         href: api/group-post-events.md
       - name: イベントを取得する
         href: api/group-get-event.md
-      - name: イベントの更新
+      - name: イベントを更新する
         href: api/group-update-event.md
       - name: イベントを削除する
         href: api/group-delete-event.md
-      - name: ボックスの一覧の [カレンダー] ビュー
+      - name: 予定表ビューを一覧表示する
         href: api/group-list-calendarview.md
-      - name: デルタを取得します。
+      - name: 差分を取得する
         href: api/event-delta.md
       - name: オープン拡張機能を作成する
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-    - name: スレッド
+    - name: 会話
       href: resources/conversation.md
       items:
-      - name: 会話の一覧表示
+      - name: 会話を一覧表示する
         href: api/group-list-conversations.md
       - name: 会話を作成する
         href: api/group-post-conversations.md
-      - name: グループの会話を取得します。
+      - name: グループ会話を取得する
         href: api/group-get-conversation.md
-      - name: グループの会話を削除します。
+      - name: グループ会話を削除する
         href: api/group-delete-conversation.md
       - name: 会話スレッドを一覧表示する
         href: api/conversation-list-threads.md
       - name: 会話スレッドを作成する
         href: api/conversation-post-threads.md
-      - name: 許可された送信者の一覧を表示します。
+      - name: 承認済み送信者を一覧表示する
         href: api/group-list-acceptedsenders.md
-      - name: 承認済み送信者を作成します。
+      - name: 承認済み送信者を作成する
         href: api/group-post-acceptedsenders.md
-      - name: 承認済み送信者を削除します。
+      - name: 承認済み送信者を削除する
         href: api/group-delete-acceptedsenders.md
-      - name: 拒否する送信者の一覧を表示します。
+      - name: 拒否する送信者を一覧表示する
         href: api/group-list-rejectedsenders.md
-      - name: 拒否する送信元を作成します。
+      - name: 拒否する送信元を作成する
         href: api/group-post-rejectedsenders.md
-      - name: 拒否する送信者を削除します。
+      - name: 拒否済みの送信者を削除する
         href: api/group-delete-rejectedsenders.md
     - name: 会話スレッド
       href: resources/conversationthread.md
@@ -363,7 +363,7 @@ items:
         href: api/group-update-thread.md
       - name: 会話スレッドを削除する
         href: api/group-delete-thread.md
-      - name: 会話のスレッドに返信します。
+      - name: 会話のスレッドに返信する
         href: api/conversationthread-reply.md
     - name: ドライブ
       href: resources/drive.md
@@ -375,38 +375,38 @@ items:
     - name: 拡張プロパティ
       href: resources/extended-properties-overview.md
       items:
-      - name: 単一値プロパティの拡張
+      - name: 単一値の拡張プロパティ
         href: resources/singlevaluelegacyextendedproperty.md
         items:
-        - name: 単一値のプロパティを作成します。
+        - name: 単一値のプロパティを作成する
           href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-        - name: 単一値のプロパティを取得します。
+        - name: 単一値のプロパティを取得する
           href: api/singlevaluelegacyextendedproperty-get.md
-      - name: 複数値のプロパティを拡張
+      - name: 複数値の拡張プロパティ
         href: resources/multivaluelegacyextendedproperty.md
         items:
-        - name: 複数値プロパティを作成します。
+        - name: 複数値のプロパティを作成する
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-        - name: 複数値プロパティを取得します。
+        - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
         href: api/onenote-list-notebooks.md
       - name: ノートブックを作成する
         href: api/onenote-post-notebooks.md
-    - name: Photo
+    - name: 写真
       href: resources/profilephoto.md
       items:
       - name: 写真を取得する
         href: api/profilephoto-get.md
       - name: 写真を更新する
         href: api/profilephoto-update.md
-    - name: プラン
+    - name: 計画
       href: resources/plannerplan.md
       items:
-      - name: plans を一覧表示する
+      - name: 計画を一覧表示する
         href: api/plannergroup-list-plans.md
     - name: 投稿
       href: resources/post.md
@@ -415,9 +415,9 @@ items:
         href: api/conversationthread-list-posts.md
       - name: 投稿を取得する
         href: api/post-get.md
-      - name: 返信の投稿
+      - name: 返信を一覧表示する
         href: api/post-reply.md
-      - name: 前方の投稿
+      - name: 投稿を転送する
         href: api/post-forward.md
       - name: 添付ファイルを一覧表示する
         href: api/post-list-attachments.md
@@ -427,7 +427,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: カレンダー
+  - name: 予定表
     href: resources/calendar.md
     items:
     - name: イベント
@@ -439,23 +439,23 @@ items:
         href: api/user-post-events.md
       - name: イベントを取得する
         href: api/event-get.md
-      - name: イベントの更新
+      - name: イベントを更新する
         href: api/event-update.md
       - name: イベントを削除する
         href: api/event-delete.md
-      - name: デルタを取得します。
+      - name: 差分を取得する
         href: api/event-delta.md
-      - name: イベントをそのまま使用します。
+      - name: イベントを承認する
         href: api/event-accept.md
-      - name: 仮承諾します。
+      - name: 仮承諾
         href: api/event-tentativelyaccept.md
-      - name: イベントを辞退します。
+      - name: イベントを辞退する
         href: api/event-decline.md
-      - name: アラームを消す
+      - name: 通知を消す
         href: api/event-dismissreminder.md
-      - name: アラームの再通知します。
+      - name: アラームを再通知する
         href: api/event-snoozereminder.md
-      - name: イベント リスト インスタンスです。
+      - name: イベント インスタンスを一覧表示する
         href: api/event-list-instances.md
       - name: 添付ファイルを一覧表示する
         href: api/event-list-attachments.md
@@ -468,29 +468,29 @@ items:
     - name: イベント メッセージ
       href: resources/eventmessage.md
       items:
-      - name: イベント メッセージを取得します。
+      - name: イベント メッセージを取得する
         href: api/eventmessage-get.md
-      - name: イベント メッセージを更新します。
+      - name: イベント メッセージを更新する
         href: api/eventmessage-update.md
-      - name: イベント メッセージを削除します。
+      - name: イベント メッセージを削除する
         href: api/eventmessage-delete.md
-      - name: イベント メッセージを送信します。
+      - name: イベント メッセージを送信する
         href: api/message-send.md
-      - name: イベント メッセージをコピーします。
+      - name: イベント メッセージをコピーする
         href: api/message-copy.md
-      - name: イベント メッセージを移動します。
+      - name: イベント メッセージを移動する
         href: api/message-move.md
-      - name: 返信を作成します。
+      - name: 返信を作成する
         href: api/message-createreply.md
-      - name: イベント メッセージの返信
+      - name: イベント メッセージに返信する
         href: api/message-reply.md
-      - name: 全員に返信を作成します。
+      - name: ReplyAll を作成する
         href: api/message-createreplyall.md
       - name: ReplyAll イベント メッセージ
         href: api/message-replyall.md
-      - name: 前方参照を作成します。
+      - name: 転送を作成する
         href: api/message-createforward.md
-      - name: 前方のイベント メッセージ
+      - name: イベント メッセージを転送する
         href: api/message-forward.md
       - name: 添付ファイルを追加する
         href: api/eventmessage-post-attachments.md
@@ -503,47 +503,47 @@ items:
     - name: 添付ファイル
       href: resources/attachment.md
       items:
-      - name: ファイルの添付ファイルのリソース
+      - name: 添付ファイルのリソース
         href: resources/fileattachment.md
-      - name: アイテムの添付ファイルのリソース
+      - name: 項目の添付ファイルのリソース
         href: resources/itemattachment.md
-      - name: 添付ファイルのリソースの参照
+      - name: 参照の添付ファイルのリソース
         href: resources/referenceattachment.md
       - name: 添付ファイルを取得する
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
         href: api/user-list-calendars.md
-      - name: Create calendar
+      - name: 予定表を作成する
         href: api/user-post-calendars.md
       - name: 予定表を取得する
         href: api/calendar-get.md
       - name: 予定表を更新する
         href: api/calendar-update.md
-      - name: Delete calendar
+      - name: 予定表を削除する
         href: api/calendar-delete.md
-      - name: ボックスの一覧の [カレンダー] ビュー
+      - name: 予定表ビューを一覧表示する
         href: api/calendar-list-calendarview.md
       - name: イベントを一覧表示する
         href: api/calendar-list-events.md
       - name: イベントを作成する
         href: api/calendar-post-events.md
-      - name: アラームの表示
+      - name: 通知ビュー
         href: api/user-reminderview.md
       - name: 会議の日時を検索する
         href: api/user-findmeetingtimes.md
-    - name: '[カレンダー] ビュー'
+    - name: 予定表ビュー
       href: api/calendar-list-calendarview.md
       items:
-      - name: ボックスの一覧の [カレンダー] ビュー
+      - name: 予定表ビューを一覧表示する
         href: api/calendar-list-calendarview.md
-      - name: デルタを取得します。
+      - name: 差分を取得する
         href: api/event-delta.md
-      - name: アラームの表示
+      - name: 通知ビュー
         href: api/user-reminderview.md
     - name: 予定表グループ
       href: resources/calendargroup.md
@@ -554,43 +554,43 @@ items:
         href: api/user-post-calendargroups.md
       - name: 予定表グループを取得する
         href: api/calendargroup-get.md
-      - name: グループの予定表を更新します。
+      - name: 予定表グループを更新する
         href: api/calendargroup-update.md
-      - name: 予定表グループを削除します。
+      - name: 予定表グループを削除する
         href: api/calendargroup-delete.md
-      - name: 予定表グループのリストの予定表
+      - name: 予定表グループ内の予定表を一覧表示する
         href: api/calendargroup-list-calendars.md
-      - name: 予定表グループの予定表を作成します。
+      - name: 予定表グループで予定表を作成する
         href: api/calendargroup-post-calendars.md
     - name: カテゴリ
       href: resources/outlookcategory.md
       items:
-      - name: カテゴリの一覧表示
+      - name: カテゴリを一覧表示する
         href: api/outlookuser-list-mastercategories.md
-      - name: カテゴリの作成
+      - name: カテゴリを作成する
         href: api/outlookuser-post-mastercategories.md
-      - name: カテゴリの取得
+      - name: カテゴリを取得する
         href: api/outlookcategory-get.md
-      - name: カテゴリを更新します。
+      - name: カテゴリを更新する
         href: api/outlookcategory-update.md
-      - name: カテゴリを削除します。
+      - name: カテゴリを削除する
         href: api/outlookcategory-delete.md
     - name: 拡張プロパティ
       href: resources/extended-properties-overview.md
       items:
-      - name: 単一値プロパティの拡張
+      - name: 単一値の拡張プロパティ
         href: resources/singlevaluelegacyextendedproperty.md
         items:
-        - name: 単一値のプロパティを作成します。
+        - name: 単一値のプロパティを作成する
           href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-        - name: 単一値のプロパティを取得します。
+        - name: 単一値のプロパティを取得する
           href: api/singlevaluelegacyextendedproperty-get.md
-      - name: 複数値のプロパティを拡張
+      - name: 複数値の拡張プロパティ
         href: resources/multivaluelegacyextendedproperty.md
         items:
-        - name: 複数値プロパティを作成します。
+        - name: 複数値のプロパティを作成する
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-        - name: 複数値プロパティを取得します。
+        - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
   - name: クロスデバイス エクスペリエンス
     displayName: Project Rome
@@ -602,13 +602,13 @@ items:
       - name: アクティビティ
         href: resources/projectrome-activity.md
         items:
-        - name: 活動の作成または
+        - name: アクティビティを作成または置換する
           href: api/projectrome-put-activity.md
-        - name: アクティビティを取得します。
+        - name: アクティビティを取得する
           href: api/projectrome-get-activities.md
         - name: 最近のアクティビティを取得する
           href: api/projectrome-get-recent-activities.md
-        - name: アクティビティを削除します。
+        - name: アクティビティを削除する
           href: api/projectrome-delete-activity.md
       - name: 履歴項目
         href: resources/projectrome-historyitem.md
@@ -621,7 +621,7 @@ items:
     displayName: Intune
     href: resources/intune-graph-overview.md
     items:
-    - name: アプリケーションの管理
+    - name: アプリ管理
       href: resources/intune-app-conceptual.md
       items:
       - name: Android LOB アプリ
@@ -631,11 +631,11 @@ items:
           href: api/intune-apps-androidlobapp-list.md
         - name: 取得
           href: api/intune-apps-androidlobapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-androidlobapp-create.md
         - name: 削除
           href: api/intune-apps-androidlobapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-androidlobapp-update.md
       - name: 最小構成の Android オペレーティング システム
         href: resources/intune-apps-androidminimumoperatingsystem.md
@@ -646,37 +646,37 @@ items:
           href: api/intune-apps-androidstoreapp-list.md
         - name: 取得
           href: api/intune-apps-androidstoreapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-androidstoreapp-create.md
         - name: 削除
           href: api/intune-apps-androidstoreapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-androidstoreapp-update.md
-      - name: アプリケーション構成の設定項目
+      - name: アプリの構成設定アイテム
         href: resources/intune-apps-appconfigurationsettingitem.md
-      - name: デバイスのインストール状態
+      - name: デバイスのインストール状況
         href: resources/intune-books-deviceinstallstate.md
         items:
         - name: リスト
           href: api/intune-books-deviceinstallstate-list.md
         - name: 取得
           href: api/intune-books-deviceinstallstate-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-books-deviceinstallstate-create.md
         - name: 削除
           href: api/intune-books-deviceinstallstate-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-deviceinstallstate-update.md
       - name: 電子書籍のインストールの概要
         href: resources/intune-books-ebookinstallsummary.md
         items:
         - name: 取得
           href: api/intune-books-ebookinstallsummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-ebookinstallsummary-update.md
       - name: ファイル暗号化情報
         href: resources/intune-apps-fileencryptioninfo.md
-      - name: インストール状態
+      - name: インストール状況
         href: resources/intune-books-installstate.md
       - name: iOS デバイスの種類
         href: resources/intune-apps-iosdevicetype.md
@@ -687,28 +687,28 @@ items:
           href: api/intune-apps-ioslobapp-list.md
         - name: 取得
           href: api/intune-apps-ioslobapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-ioslobapp-create.md
         - name: 削除
           href: api/intune-apps-ioslobapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-ioslobapp-update.md
       - name: iOS LOB アプリの割り当ての設定
         href: resources/intune-apps-ioslobappassignmentsettings.md
       - name: 最小構成の iOS オペレーティング システム
         href: resources/intune-apps-iosminimumoperatingsystem.md
-      - name: iOS モバイル アプリケーションの構成
+      - name: iOS モバイル アプリの構成
         href: resources/intune-apps-iosmobileappconfiguration.md
         items:
         - name: リスト
           href: api/intune-apps-iosmobileappconfiguration-list.md
         - name: 取得
           href: api/intune-apps-iosmobileappconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-iosmobileappconfiguration-create.md
         - name: 削除
           href: api/intune-apps-iosmobileappconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-iosmobileappconfiguration-update.md
       - name: iOS ストア アプリ
         href: resources/intune-apps-iosstoreapp.md
@@ -717,11 +717,11 @@ items:
           href: api/intune-apps-iosstoreapp-list.md
         - name: 取得
           href: api/intune-apps-iosstoreapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-iosstoreapp-create.md
         - name: 削除
           href: api/intune-apps-iosstoreapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-iosstoreapp-update.md
       - name: iOS ストア アプリの割り当ての設定
         href: resources/intune-apps-iosstoreappassignmentsettings.md
@@ -732,11 +732,11 @@ items:
           href: api/intune-apps-iosvppapp-list.md
         - name: 取得
           href: api/intune-apps-iosvppapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-iosvppapp-create.md
         - name: 削除
           href: api/intune-apps-iosvppapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-iosvppapp-update.md
       - name: iOS VPP アプリの割り当ての設定
         href: resources/intune-apps-iosvppappassignmentsettings.md
@@ -747,37 +747,37 @@ items:
           href: api/intune-books-iosvppebook-list.md
         - name: 取得
           href: api/intune-books-iosvppebook-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-books-iosvppebook-create.md
         - name: 削除
           href: api/intune-books-iosvppebook-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-iosvppebook-update.md
-      - name: iOS VPP 電子書籍の割り当て
+      - name: iOS VPP 電子ブックの割り当て
         href: resources/intune-books-iosvppebookassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-books-iosvppebookassignment-list.md
         - name: 取得
           href: api/intune-books-iosvppebookassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-books-iosvppebookassignment-create.md
         - name: 削除
           href: api/intune-books-iosvppebookassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-iosvppebookassignment-update.md
       - name: macOS Office スイート アプリ
         href: resources/intune-apps-macosofficesuiteapp.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-apps-macosofficesuiteapp-list.md
         - name: 取得
           href: api/intune-apps-macosofficesuiteapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-macosofficesuiteapp-create.md
         - name: 削除
           href: api/intune-apps-macosofficesuiteapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-macosofficesuiteapp-update.md
       - name: 管理対象 Android LOB アプリ
         href: resources/intune-apps-managedandroidlobapp.md
@@ -786,11 +786,11 @@ items:
           href: api/intune-apps-managedandroidlobapp-list.md
         - name: 取得
           href: api/intune-apps-managedandroidlobapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-managedandroidlobapp-create.md
         - name: 削除
           href: api/intune-apps-managedandroidlobapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-managedandroidlobapp-update.md
       - name: 管理対象 Android ストア アプリ
         href: resources/intune-apps-managedandroidstoreapp.md
@@ -799,11 +799,11 @@ items:
           href: api/intune-apps-managedandroidstoreapp-list.md
         - name: 取得
           href: api/intune-apps-managedandroidstoreapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-managedandroidstoreapp-create.md
         - name: 削除
           href: api/intune-apps-managedandroidstoreapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-managedandroidstoreapp-update.md
       - name: 管理対象アプリ
         href: resources/intune-apps-managedapp.md
@@ -812,7 +812,7 @@ items:
           href: api/intune-apps-managedapp-list.md
         - name: 取得
           href: api/intune-apps-managedapp-get.md
-      - name: マネージ アプリケーションの可用性
+      - name: 管理対象アプリの可用性
         href: resources/intune-apps-managedappavailability.md
       - name: 管理対象デバイスのモバイル アプリ構成
         href: resources/intune-apps-manageddevicemobileappconfiguration.md
@@ -821,40 +821,40 @@ items:
           href: api/intune-apps-manageddevicemobileappconfiguration-list.md
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfiguration-get.md
-        - name: assign アクション
+        - name: 割り当てのアクション
           href: api/intune-apps-manageddevicemobileappconfiguration-assign.md
       - name: 管理対象デバイスのモバイル アプリ構成の割り当て
         href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-create.md
         - name: 削除
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-update.md
-      - name: デバイスのモバイル アプリケーションの構成デバイスの状態を管理
+      - name: 管理対象デバイスのモバイル アプリ構成のデバイス状態
         href: resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md
         items:
         - name: リスト
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-create.md
         - name: 削除
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-update.md
       - name: 管理対象デバイスのモバイル アプリ構成のデバイスの要約
         href: resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md
         items:
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update.md
       - name: 管理対象デバイスのモバイル アプリ構成のユーザー状態
         href: resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md
@@ -863,18 +863,18 @@ items:
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-create.md
         - name: 削除
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-update.md
       - name: 管理対象デバイスのモバイル アプリ構成のユーザー要約
         href: resources/intune-apps-manageddevicemobileappconfigurationusersummary.md
         items:
         - name: 取得
           href: api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
       - name: 管理対象の電子書籍
         href: resources/intune-books-managedebook.md
@@ -883,20 +883,20 @@ items:
           href: api/intune-books-managedebook-list.md
         - name: 取得
           href: api/intune-books-managedebook-get.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-books-managedebook-assign.md
-      - name: 管理対象電子書籍の割り当て
+      - name: 管理対象電子ブックの割り当て
         href: resources/intune-books-managedebookassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-books-managedebookassignment-list.md
         - name: 取得
           href: api/intune-books-managedebookassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-books-managedebookassignment-create.md
         - name: 削除
           href: api/intune-books-managedebookassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-managedebookassignment-update.md
       - name: 管理対象 iOS LOB アプリ
         href: resources/intune-apps-managedioslobapp.md
@@ -905,11 +905,11 @@ items:
           href: api/intune-apps-managedioslobapp-list.md
         - name: 取得
           href: api/intune-apps-managedioslobapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-managedioslobapp-create.md
         - name: 削除
           href: api/intune-apps-managedioslobapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-managedioslobapp-update.md
       - name: 管理対象 iOS ストア アプリ
         href: resources/intune-apps-managediosstoreapp.md
@@ -918,11 +918,11 @@ items:
           href: api/intune-apps-managediosstoreapp-list.md
         - name: 取得
           href: api/intune-apps-managediosstoreapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-managediosstoreapp-create.md
         - name: 削除
           href: api/intune-apps-managediosstoreapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-managediosstoreapp-update.md
       - name: 管理対象モバイル LOB アプリ
         href: resources/intune-apps-managedmobilelobapp.md
@@ -931,7 +931,7 @@ items:
           href: api/intune-apps-managedmobilelobapp-list.md
         - name: 取得
           href: api/intune-apps-managedmobilelobapp-get.md
-      - name: MDM アプリケーション設定のキーの種類
+      - name: MDM アプリ設定キー タイプ
         href: resources/intune-apps-mdmappconfigkeytype.md
       - name: ビジネス向け Microsoft Store のアプリ
         href: resources/intune-apps-microsoftstoreforbusinessapp.md
@@ -940,15 +940,15 @@ items:
           href: api/intune-apps-microsoftstoreforbusinessapp-list.md
         - name: 取得
           href: api/intune-apps-microsoftstoreforbusinessapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-microsoftstoreforbusinessapp-create.md
         - name: 削除
           href: api/intune-apps-microsoftstoreforbusinessapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-microsoftstoreforbusinessapp-update.md
       - name: ビジネス向け Microsoft Store のアプリの割り当ての設定
         href: resources/intune-apps-microsoftstoreforbusinessappassignmentsettings.md
-      - name: マイクロソフトは、ビジネス ライセンスの種類を保存します。
+      - name: ビジネス向け Microsoft Store のライセンスの種類
         href: resources/intune-apps-microsoftstoreforbusinesslicensetype.md
       - name: モバイル アプリ
         href: resources/intune-apps-mobileapp.md
@@ -957,20 +957,20 @@ items:
           href: api/intune-apps-mobileapp-list.md
         - name: 取得
           href: api/intune-apps-mobileapp-get.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-apps-mobileapp-assign.md
       - name: モバイル アプリの割り当て
         href: resources/intune-apps-mobileappassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-apps-mobileappassignment-list.md
         - name: 取得
           href: api/intune-apps-mobileappassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-mobileappassignment-create.md
         - name: 削除
           href: api/intune-apps-mobileappassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-mobileappassignment-update.md
       - name: モバイル アプリの割り当ての設定
         href: resources/intune-apps-mobileappassignmentsettings.md
@@ -981,11 +981,11 @@ items:
           href: api/intune-apps-mobileappcategory-list.md
         - name: 取得
           href: api/intune-apps-mobileappcategory-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-mobileappcategory-create.md
         - name: 削除
           href: api/intune-apps-mobileappcategory-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-mobileappcategory-update.md
       - name: モバイル アプリ コンテンツ
         href: resources/intune-apps-mobileappcontent.md
@@ -994,11 +994,11 @@ items:
           href: api/intune-apps-mobileappcontent-list.md
         - name: 取得
           href: api/intune-apps-mobileappcontent-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-mobileappcontent-create.md
         - name: 削除
           href: api/intune-apps-mobileappcontent-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-mobileappcontent-update.md
       - name: モバイル アプリ コンテンツ ファイル
         href: resources/intune-apps-mobileappcontentfile.md
@@ -1007,19 +1007,19 @@ items:
           href: api/intune-apps-mobileappcontentfile-list.md
         - name: 取得
           href: api/intune-apps-mobileappcontentfile-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-mobileappcontentfile-create.md
         - name: 削除
           href: api/intune-apps-mobileappcontentfile-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-mobileappcontentfile-update.md
-        - name: commit アクション
+        - name: コミット アクション
           href: api/intune-apps-mobileappcontentfile-commit.md
         - name: renewUpload アクション
           href: api/intune-apps-mobileappcontentfile-renewupload.md
-      - name: モバイル アプリケーション コンテンツ ファイルのアップロードの状態
+      - name: モバイル アプリ コンテンツ ファイルのアップロード状態
         href: resources/intune-apps-mobileappcontentfileuploadstate.md
-      - name: モバイル アプリケーションの公開状況
+      - name: モバイル アプリの公開状態
         href: resources/intune-apps-mobileapppublishingstate.md
       - name: モバイル LOB アプリ
         href: resources/intune-apps-mobilelobapp.md
@@ -1035,11 +1035,11 @@ items:
           href: api/intune-books-userinstallstatesummary-list.md
         - name: 取得
           href: api/intune-books-userinstallstatesummary-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-books-userinstallstatesummary-create.md
         - name: 削除
           href: api/intune-books-userinstallstatesummary-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-books-userinstallstatesummary-update.md
       - name: VPP ライセンスの種類
         href: resources/intune-apps-vpplicensingtype.md
@@ -1050,13 +1050,13 @@ items:
           href: api/intune-apps-webapp-list.md
         - name: 取得
           href: api/intune-apps-webapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-webapp-create.md
         - name: 削除
           href: api/intune-apps-webapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-webapp-update.md
-      - name: Windows のアーキテクチャ
+      - name: Windows アーキテクチャ
         href: resources/intune-apps-windowsarchitecture.md
       - name: Windows デバイスの種類
         href: resources/intune-apps-windowsdevicetype.md
@@ -1069,11 +1069,11 @@ items:
           href: api/intune-apps-windowsmobilemsi-list.md
         - name: 取得
           href: api/intune-apps-windowsmobilemsi-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-windowsmobilemsi-create.md
         - name: 削除
           href: api/intune-apps-windowsmobilemsi-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-windowsmobilemsi-update.md
       - name: Windows ユニバーサル AppX
         href: resources/intune-apps-windowsuniversalappx.md
@@ -1082,11 +1082,11 @@ items:
           href: api/intune-apps-windowsuniversalappx-list.md
         - name: 取得
           href: api/intune-apps-windowsuniversalappx-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-apps-windowsuniversalappx-create.md
         - name: 削除
           href: api/intune-apps-windowsuniversalappx-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-apps-windowsuniversalappx-update.md
     - name: 会社の用語
       href: resources/intune-company-conceptual.md
@@ -1098,11 +1098,11 @@ items:
           href: api/intune-companyterms-termsandconditions-list.md
         - name: 取得
           href: api/intune-companyterms-termsandconditions-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-companyterms-termsandconditions-create.md
         - name: 削除
           href: api/intune-companyterms-termsandconditions-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-companyterms-termsandconditions-update.md
       - name: 使用条件の承認状態
         href: resources/intune-companyterms-termsandconditionsacceptancestatus.md
@@ -1111,59 +1111,59 @@ items:
           href: api/intune-companyterms-termsandconditionsacceptancestatus-list.md
         - name: 取得
           href: api/intune-companyterms-termsandconditionsacceptancestatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-companyterms-termsandconditionsacceptancestatus-create.md
         - name: 削除
           href: api/intune-companyterms-termsandconditionsacceptancestatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-companyterms-termsandconditionsacceptancestatus-update.md
-      - name: 使用条件の割り当て
+      - name: 条項および条件の割り当て
         href: resources/intune-companyterms-termsandconditionsassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-companyterms-termsandconditionsassignment-list.md
         - name: 取得
           href: api/intune-companyterms-termsandconditionsassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-companyterms-termsandconditionsassignment-create.md
         - name: 削除
           href: api/intune-companyterms-termsandconditionsassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-companyterms-termsandconditionsassignment-update.md
-    - name: 企業登録
+    - name: 企業の登録
       href: resources/intune-enrollment-conceptual.md
       items:
-      - name: インポートされた windows の自動操縦装置のデバイス id
+      - name: インポートした Windows AutoPilot デバイス ID
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
         - name: リスト
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 取得
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
         - name: 削除
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
-      - name: インポートされた windows 自動操縦装置のデバイス id のインポート状態
+      - name: インポートした Windows AutoPilot デバイス ID のインポート状態
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
-      - name: インポートされた windows 自動操縦装置のアイデンティティの状態
+      - name: インポートした Windows AutoPilot デバイス ID の状態
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
-      - name: インポートされた windows 自動操縦装置のデバイス識別情報のアップロード
+      - name: インポートした Windows AutoPilot デバイス ID のアップロード
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
         items:
         - name: リスト
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
         - name: 取得
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
         - name: 削除
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md
-      - name: インポートされた windows 自動操縦装置のデバイス id アップロード状態
+      - name: インポートした Windows AutoPilot デバイス ID のアップロードの状態
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
     - name: デバイス構成
       href: resources/intune-device-cfg-conceptual.md
@@ -1175,11 +1175,11 @@ items:
           href: api/intune-deviceconfig-androidcompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidcompliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidcompliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidcompliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidcompliancepolicy-update.md
       - name: Android カスタム構成
         href: resources/intune-deviceconfig-androidcustomconfiguration.md
@@ -1188,11 +1188,11 @@ items:
           href: api/intune-deviceconfig-androidcustomconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidcustomconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidcustomconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidcustomconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidcustomconfiguration-update.md
       - name: Android 一般デバイス構成
         href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
@@ -1201,64 +1201,64 @@ items:
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-update.md
-      - name: Android の必要なパスワードの種類
+      - name: Android に必要なパスワードの種類
         href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
-      - name: Android 作業プロファイル ・ コンプライアンス ・ ポリシー
+      - name: Android 作業プロファイル コンプライアンス ポリシー
         href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md
-      - name: Android 作業プロファイルをプロファイル データの共有型クロス
+      - name: Android 仕事用プロファイルのクロス プロファイル データ共有タイプ
         href: resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md
-      - name: Android の作業プロファイルのユーザー設定の構成
+      - name: Android 仕事用プロファイルのカスタム構成
         href: resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md
-      - name: Android の作業のプロファイルの既定のアプリケーション アクセス許可ポリシーの種類
+      - name: Android 仕事用プロファイル既定アプリのアクセス許可ポリシーの種類
         href: resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md
-      - name: Android 作業プロファイルの一般的なデバイスの構成
+      - name: Android 仕事用プロファイル一般デバイス構成
         href: resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md
-      - name: Android の作業に必要なプロファイルのパスワードの種類
+      - name: Android 仕事用プロファイルに必要なパスワードの種類
         href: resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md
       - name: アプリ リストの項目
         href: resources/intune-deviceconfig-applistitem.md
-      - name: アプリケーション] ボックスの一覧の種類
+      - name: アプリ リストの種類
         href: resources/intune-deviceconfig-applisttype.md
-      - name: アプリ ロッカー アプリケーションのコントロールの種類
+      - name: App locker アプリケーションのコントロールの種類
         href: resources/intune-deviceconfig-applockerapplicationcontroltype.md
       - name: Apple デバイス機能構成ベース
         href: resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md
@@ -1267,25 +1267,25 @@ items:
           href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
         - name: 取得
           href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
-      - name: アプリケーション ガード ブロックのクリップボード共有機能の種類
+      - name: アプリケーション ガード ブロックのクリップボード共有タイプ
         href: resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md
-      - name: ガード ブロックのファイル転送の種類のアプリケーション
+      - name: アプリケーション ガード ブロックのファイル転送タイプ
         href: resources/intune-deviceconfig-applicationguardblockfiletransfertype.md
       - name: 自動更新モード
         href: resources/intune-deviceconfig-automaticupdatemode.md
-      - name: BitLocker 暗号化方式
+      - name: BitLocker 暗号化方法
         href: resources/intune-deviceconfig-bitlockerencryptionmethod.md
-      - name: BitLocker のリムーバブル ドライブのポリシー
+      - name: BitLocker リムーバブル ドライブ ポリシー
         href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
       - name: 曜日
         href: resources/intune-deviceconfig-dayofweek.md
-      - name: Defender がブロック レベルの種類をクラウド
+      - name: Defender クラウド ブロックレベルの種類
         href: resources/intune-deviceconfig-defendercloudblockleveltype.md
       - name: Defender によって検出されたマルウェア アクション
         href: resources/intune-deviceconfig-defenderdetectedmalwareactions.md
-      - name: Defender ファイルのアクティビティを監視します。
+      - name: Defender ファイル アクティビティの監視
         href: resources/intune-deviceconfig-defendermonitorfileactivity.md
-      - name: Defender サンプル送信を求める
+      - name: Defender サンプルの送信を促す
         href: resources/intune-deviceconfig-defenderpromptforsamplesubmission.md
       - name: Defender スキャンの種類
         href: resources/intune-deviceconfig-defenderscantype.md
@@ -1298,33 +1298,33 @@ items:
           href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecomplianceactionitem-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecomplianceactionitem-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecomplianceactionitem-update.md
-      - name: デバイス対応のアクションの種類
+      - name: デバイス コンプライアンス アクションの種類
         href: resources/intune-deviceconfig-devicecomplianceactiontype.md
-      - name: デバイス コンプライアンスのデバイスの概要
+      - name: デバイス コンプライアンスのデバイス概要
         href: resources/intune-deviceconfig-devicecompliancedeviceoverview.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
-      - name: デバイス コンプライアンスのデバイスの状態
+      - name: デバイス コンプライアンス デバイス状態
         href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecompliancedevicestatus-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecompliancedevicestatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancedevicestatus-update.md
       - name: デバイス コンプライアンス ポリシー
         href: resources/intune-deviceconfig-devicecompliancepolicy.md
@@ -1333,7 +1333,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancepolicy-get.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-deviceconfig-devicecompliancepolicy-assign.md
         - name: scheduleActionsForRules アクション
           href: api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules.md
@@ -1344,46 +1344,46 @@ items:
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-update.md
-      - name: デバイス コンプライアンス ポリシーのデバイス状態の要約
+      - name: デバイス コンプライアンス ポリシー デバイスの状態の要約
         href: resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
-      - name: デバイス コンプライアンス ポリシーの設定状態
+      - name: デバイス コンプライアンス ポリシー設定の状態
         href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
-      - name: デバイス コンプライアンス ポリシーの設定状態の要約
+      - name: デバイス コンプライアンス ポリシー設定の状態の要約
         href: resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update.md
-      - name: デバイス コンプライアンスのルールに関するスケジュール済みアクション
+      - name: デバイス コンプライアンスのルールごとのスケジュール済みアクション
         href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
       - name: デバイス コンプライアンスの設定状態
         href: resources/intune-deviceconfig-devicecompliancesettingstate.md
@@ -1392,31 +1392,31 @@ items:
           href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecompliancesettingstate-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecompliancesettingstate-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecompliancesettingstate-update.md
-      - name: デバイス コンプライアンスのユーザーの概要
+      - name: デバイス コンプライアンスのユーザー概要
         href: resources/intune-deviceconfig-devicecomplianceuseroverview.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
-      - name: デバイス コンプライアンスのユーザーの状態
+      - name: デバイス コンプライアンスのユーザー状態
         href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
         - name: 取得
           href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-devicecomplianceuserstatus-create.md
         - name: 削除
           href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-devicecomplianceuserstatus-update.md
       - name: デバイス構成
         href: resources/intune-deviceconfig-deviceconfiguration.md
@@ -1425,7 +1425,7 @@ items:
           href: api/intune-deviceconfig-deviceconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-deviceconfiguration-get.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-deviceconfig-deviceconfiguration-assign.md
       - name: デバイス構成の割り当て
         href: resources/intune-deviceconfig-deviceconfigurationassignment.md
@@ -1434,38 +1434,38 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-deviceconfigurationassignment-create.md
         - name: 削除
           href: api/intune-deviceconfig-deviceconfigurationassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationassignment-update.md
-      - name: デバイス構成のデバイスの概要
+      - name: デバイス構成のデバイス概要
         href: resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md
-      - name: デバイス構成のデバイス状態の要約
+      - name: デバイス構成のデバイス状態要約
         href: resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md
-      - name: デバイス構成のデバイスの状態
+      - name: デバイス構成のデバイス状態
         href: resources/intune-deviceconfig-deviceconfigurationdevicestatus.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-list.md
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-create.md
         - name: 削除
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-update.md
       - name: デバイス構成の設定状態
         href: resources/intune-deviceconfig-deviceconfigurationsettingstate.md
@@ -1474,28 +1474,28 @@ items:
         items:
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
-      - name: デバイス構成のユーザーの状態
+      - name: デバイス構成ユーザー状態
         href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
         - name: 取得
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-create.md
         - name: 削除
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
-      - name: デバイス管理設定
+      - name: デバイス管理構成
         href: resources/intune-deviceconfig-devicemanagementsettings.md
-      - name: デバイスの脅威保護のレベル
+      - name: デバイスの脅威保護レベル
         href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
       - name: 診断データの送信モード
         href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-      - name: エッジの cookie のポリシー
+      - name: Edge の Cookie ポリシー
         href: resources/intune-deviceconfig-edgecookiepolicy.md
       - name: Edge の検索エンジン
         href: resources/intune-deviceconfig-edgesearchengine.md
@@ -1503,7 +1503,7 @@ items:
         href: resources/intune-deviceconfig-edgesearchenginebase.md
       - name: Edge の検索エンジンのユーザー設定
         href: resources/intune-deviceconfig-edgesearchenginecustom.md
-      - name: 検索エンジンの縁の種類
+      - name: Edge の検索エンジンの種類
         href: resources/intune-deviceconfig-edgesearchenginetype.md
       - name: エディション アップグレード構成
         href: resources/intune-deviceconfig-editionupgradeconfiguration.md
@@ -1512,19 +1512,19 @@ items:
           href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-editionupgradeconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-editionupgradeconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
-      - name: エディションのアップグレード ライセンスの種類
+      - name: エディション アップグレード ライセンスの種類
         href: resources/intune-deviceconfig-editionupgradelicensetype.md
-      - name: ファイアウォールの証明書失効リストは、メソッドの種類を確認します。
+      - name: ファイアウォール証明書失効リスト確認方法の種類
         href: resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md
-      - name: ファイアウォール パケットのキューイング方法の種類
+      - name: ファイアウォール パケット キュー メソッドの種類
         href: resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md
-      - name: ファイアウォール事前共有キー メソッドの型のエンコーディング
+      - name: ファイアウォール事前共有キー エンコーディング方法の種類
         href: resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md
       - name: インターネット サイトのセキュリティ レベル
         href: resources/intune-deviceconfig-internetsitesecuritylevel.md
@@ -1542,11 +1542,11 @@ items:
           href: api/intune-deviceconfig-ioscompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-ioscompliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-ioscompliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-ioscompliancepolicy-update.md
       - name: iOS カスタム構成
         href: resources/intune-deviceconfig-ioscustomconfiguration.md
@@ -1555,11 +1555,11 @@ items:
           href: api/intune-deviceconfig-ioscustomconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-ioscustomconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-ioscustomconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-ioscustomconfiguration-update.md
       - name: iOS デバイス機能構成
         href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
@@ -1568,11 +1568,11 @@ items:
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-update.md
       - name: iOS 一般デバイス構成
         href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
@@ -1581,11 +1581,11 @@ items:
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-update.md
       - name: iOS ホーム画面のアプリ
         href: resources/intune-deviceconfig-ioshomescreenapp.md
@@ -1599,7 +1599,7 @@ items:
         href: resources/intune-deviceconfig-ioshomescreenpage.md
       - name: iOS ネットワークの使用規則
         href: resources/intune-deviceconfig-iosnetworkusagerule.md
-      - name: iOS の通知メッセージの種類
+      - name: iOS の通知アラートの種類
         href: resources/intune-deviceconfig-iosnotificationalerttype.md
       - name: iOS の通知設定
         href: resources/intune-deviceconfig-iosnotificationsettings.md
@@ -1610,26 +1610,26 @@ items:
           href: api/intune-deviceconfig-iosupdateconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-iosupdateconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-iosupdateconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-iosupdateconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-iosupdateconfiguration-update.md
-      - name: iOS 更新デバイスの状態
+      - name: 更新された iOS デバイスの状態
         href: resources/intune-deviceconfig-iosupdatedevicestatus.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
         - name: 取得
           href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-iosupdatedevicestatus-create.md
         - name: 削除
           href: api/intune-deviceconfig-iosupdatedevicestatus-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-iosupdatedevicestatus-update.md
-      - name: iOS の更新プログラムのインストール ステータス
+      - name: iOS の更新プログラムのインストール状態
         href: resources/intune-deviceconfig-iosupdatesinstallstatus.md
       - name: macOS コンプライアンス ポリシー
         href: resources/intune-deviceconfig-macoscompliancepolicy.md
@@ -1638,11 +1638,11 @@ items:
           href: api/intune-deviceconfig-macoscompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-macoscompliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-macoscompliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-macoscompliancepolicy-update.md
       - name: macOS カスタム構成
         href: resources/intune-deviceconfig-macoscustomconfiguration.md
@@ -1651,11 +1651,11 @@ items:
           href: api/intune-deviceconfig-macoscustomconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-macoscustomconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-macoscustomconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-macoscustomconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-macoscustomconfiguration-update.md
       - name: macOS デバイス機能構成
         href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
@@ -1664,11 +1664,11 @@ items:
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-update.md
       - name: macOS 一般デバイス構成
         href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
@@ -1677,11 +1677,11 @@ items:
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-update.md
       - name: メディア コンテンツのレーティング、オーストラリア
         href: resources/intune-deviceconfig-mediacontentratingaustralia.md
@@ -1719,72 +1719,72 @@ items:
         href: resources/intune-deviceconfig-omasettingstring.md
       - name: OMA 設定、xml 文字列
         href: resources/intune-deviceconfig-omasettingstringxml.md
-      - name: ポリシーのプラットフォームの種類
+      - name: ポリシー プラットフォームの種類
         href: resources/intune-deviceconfig-policyplatformtype.md
-      - name: プレリリース版の機能
+      - name: プレリリース機能
         href: resources/intune-deviceconfig-prereleasefeatures.md
-      - name: アプリケーションの評価のタイプ
+      - name: アプリの種類の評価
         href: resources/intune-deviceconfig-ratingappstype.md
-      - name: オーストラリア映画の種類を評価
+      - name: オーストラリアの映画の種類の評価
         href: resources/intune-deviceconfig-ratingaustraliamoviestype.md
-      - name: オーストラリア テレビのタイプを評価
+      - name: オーストラリアのテレビの種類の評価
         href: resources/intune-deviceconfig-ratingaustraliatelevisiontype.md
-      - name: カナダ映画の種類を評価
+      - name: カナダの映画の種類の評価
         href: resources/intune-deviceconfig-ratingcanadamoviestype.md
-      - name: カナダのテレビのタイプを評価
+      - name: カナダのテレビの種類の評価
         href: resources/intune-deviceconfig-ratingcanadatelevisiontype.md
-      - name: フランス映画の評価のタイプ
+      - name: フランスの映画の種類の評価
         href: resources/intune-deviceconfig-ratingfrancemoviestype.md
-      - name: フランスのテレビのタイプを評価
+      - name: フランスのテレビの種類の評価
         href: resources/intune-deviceconfig-ratingfrancetelevisiontype.md
-      - name: ドイツ映画の種類を評価
+      - name: ドイツの映画の種類の評価
         href: resources/intune-deviceconfig-ratinggermanymoviestype.md
-      - name: ドイツのテレビのタイプを評価
+      - name: ドイツのテレビの種類の評価
         href: resources/intune-deviceconfig-ratinggermanytelevisiontype.md
-      - name: アイルランド映画の種類を評価
+      - name: アイルランドの映画の種類の評価
         href: resources/intune-deviceconfig-ratingirelandmoviestype.md
-      - name: アイルランドのテレビのタイプを評価
+      - name: アイルランドのテレビの種類の評価
         href: resources/intune-deviceconfig-ratingirelandtelevisiontype.md
-      - name: 日本映画の種類を評価
+      - name: 日本の映画の種類の評価
         href: resources/intune-deviceconfig-ratingjapanmoviestype.md
-      - name: 日本テレビのタイプを評価
+      - name: 日本のテレビの種類の評価
         href: resources/intune-deviceconfig-ratingjapantelevisiontype.md
-      - name: ニュージーランド映画の種類を評価
+      - name: ニュージーランド ムービーの種類の評価
         href: resources/intune-deviceconfig-ratingnewzealandmoviestype.md
-      - name: ニュージーランド テレビのタイプを評価
+      - name: ニュージーランド テレビの種類の評価
         href: resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md
-      - name: 英国映画の種類を評価
+      - name: 英国ムービーの種類の評価
         href: resources/intune-deviceconfig-ratingunitedkingdommoviestype.md
-      - name: 英国テレビのタイプを評価
+      - name: 英国のテレビの種類の評価
         href: resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md
-      - name: アメリカ合衆国の映画の種類を評価
+      - name: アメリカ合衆国ムービーの種類の評価
         href: resources/intune-deviceconfig-ratingunitedstatesmoviestype.md
-      - name: 米国のテレビのタイプを評価
+      - name: アメリカ合衆国テレビの種類の評価
         href: resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md
-      - name: 必須のパスワードの種類
+      - name: パスワードの入力が必要
         href: resources/intune-deviceconfig-requiredpasswordtype.md
-      - name: 安全な検索フィルターの種類
+      - name: セーフ サーチのフィルターのタイプ
         href: resources/intune-deviceconfig-safesearchfiltertype.md
       - name: ソースの設定
         href: resources/intune-deviceconfig-settingsource.md
-      - name: 設定状態とデバイスの要約
+      - name: 状態デバイス設定要約
         href: resources/intune-deviceconfig-settingstatedevicesummary.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-deviceconfig-settingstatedevicesummary-list.md
         - name: 取得
           href: api/intune-deviceconfig-settingstatedevicesummary-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-settingstatedevicesummary-create.md
         - name: 削除
           href: api/intune-deviceconfig-settingstatedevicesummary-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-settingstatedevicesummary-update.md
-      - name: PC アカウントの削除ポリシーの種類を共有
+      - name: 共有 PC アカウントの削除ポリシーの種類
         href: resources/intune-deviceconfig-sharedpcaccountdeletionpolicytype.md
       - name: 共有 PC アカウント マネージャー ポリシー
         href: resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md
-      - name: アカウントの種類を許可する PC の共有
+      - name: 共有 PC が許可するアカウント タイプ
         href: resources/intune-deviceconfig-sharedpcallowedaccounttype.md
       - name: 共有 PC 構成
         href: resources/intune-deviceconfig-sharedpcconfiguration.md
@@ -1793,30 +1793,30 @@ items:
           href: api/intune-deviceconfig-sharedpcconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-sharedpcconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-sharedpcconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-sharedpcconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-sharedpcconfiguration-update.md
       - name: サイトのセキュリティ レベル
         href: resources/intune-deviceconfig-sitesecuritylevel.md
-      - name: ソフトウェア更新状態の要約
+      - name: ソフトウェア更新ステータス要約
         href: resources/intune-deviceconfig-softwareupdatestatussummary.md
         items:
         - name: 取得
           href: api/intune-deviceconfig-softwareupdatestatussummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-softwareupdatestatussummary-update.md
       - name: 状態管理の設定
         href: resources/intune-deviceconfig-statemanagementsetting.md
-      - name: 表示/非表示の設定
+      - name: 表示設定
         href: resources/intune-deviceconfig-visibilitysetting.md
-      - name: Web ブラウザーの cookie の設定
+      - name: Web ブラウザーの Cookie の設定
         href: resources/intune-deviceconfig-webbrowsercookiesettings.md
       - name: 週単位のスケジュール
         href: resources/intune-deviceconfig-weeklyschedule.md
-      - name: 会議については [ようこそ] 画面
+      - name: ようこそ画面の会議情報
         href: resources/intune-deviceconfig-welcomescreenmeetinginformation.md
       - name: Windows 10 コンプライアンス ポリシー
         href: resources/intune-deviceconfig-windows10compliancepolicy.md
@@ -1825,11 +1825,11 @@ items:
           href: api/intune-deviceconfig-windows10compliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10compliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10compliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10compliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10compliancepolicy-update.md
       - name: Windows 10 カスタム構成
         href: resources/intune-deviceconfig-windows10customconfiguration.md
@@ -1838,26 +1838,26 @@ items:
           href: api/intune-deviceconfig-windows10customconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10customconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10customconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10customconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10customconfiguration-update.md
-      - name: 10 の Windows エディションの種類
+      - name: Windows 10 エディションの種類
         href: resources/intune-deviceconfig-windows10editiontype.md
-      - name: Windows 10 Endpoint Protection 構成
+      - name: Windows 10 Endpoint Protection の構成
         href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
         items:
         - name: リスト
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-update.md
       - name: Windows 10 Enterprise モダン アプリの管理構成
         href: resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md
@@ -1866,11 +1866,11 @@ items:
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-update.md
       - name: Windows 10 一般構成
         href: resources/intune-deviceconfig-windows10generalconfiguration.md
@@ -1879,11 +1879,11 @@ items:
           href: api/intune-deviceconfig-windows10generalconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10generalconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10generalconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10generalconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10generalconfiguration-update.md
       - name: Windows 10 モバイル コンプライアンス ポリシー
         href: resources/intune-deviceconfig-windows10mobilecompliancepolicy.md
@@ -1892,11 +1892,11 @@ items:
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-update.md
       - name: Windows 10 ネットワーク プロキシ サーバー
         href: resources/intune-deviceconfig-windows10networkproxyserver.md
@@ -1907,11 +1907,11 @@ items:
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-update.md
       - name: Windows 10 Team 一般構成
         href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
@@ -1920,11 +1920,11 @@ items:
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-update.md
       - name: Windows 8.1 コンプライアンス ポリシー
         href: resources/intune-deviceconfig-windows81compliancepolicy.md
@@ -1933,11 +1933,11 @@ items:
           href: api/intune-deviceconfig-windows81compliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows81compliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows81compliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows81compliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows81compliancepolicy-update.md
       - name: Windows 8.1 一般構成
         href: resources/intune-deviceconfig-windows81generalconfiguration.md
@@ -1946,11 +1946,11 @@ items:
           href: api/intune-deviceconfig-windows81generalconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows81generalconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows81generalconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows81generalconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windows81generalconfiguration-update.md
       - name: Windows Defender Advanced Threat Protection 構成
         href: resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md
@@ -1959,13 +1959,13 @@ items:
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-      - name: Windows の配信最適化モード
+      - name: Windows 配信最適化モード
         href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
       - name: Windows ファイアウォール ネットワーク プロファイル
         href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -1976,11 +1976,11 @@ items:
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
         - name: 取得
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-create.md
         - name: 削除
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-update.md
       - name: Windows Phone 8.1 カスタム構成
         href: resources/intune-deviceconfig-windowsphone81customconfiguration.md
@@ -1989,11 +1989,11 @@ items:
           href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windowsphone81customconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windowsphone81customconfiguration-update.md
       - name: Windows Phone 8.1 一般構成
         href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
@@ -2002,17 +2002,17 @@ items:
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-update.md
-      - name: Windows 対応の設定をスポット ライトします。
+      - name: Windows スポットライト有効化設定
         href: resources/intune-deviceconfig-windowsspotlightenablementsettings.md
-      - name: Windows の [スタート] メニューの [アプリケーション] ボックスの一覧表示/非表示の種類
+      - name: Windows スタート メニュー アプリ リストの表示タイプ
         href: resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md
-      - name: Windows の [スタート] メニューの [モードの種類
+      - name: Windows スタート メニューのモード タイプ
         href: resources/intune-deviceconfig-windowsstartmenumodetype.md
       - name: Windows Update アクティブ期間インストール
         href: resources/intune-deviceconfig-windowsupdateactivehoursinstall.md
@@ -2023,52 +2023,52 @@ items:
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md
-      - name: Windows Update インストール スケジュールのタイプ
+      - name: Windows update インストールスケジュールのタイプ
         href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
       - name: Windows Update のスケジュール済みインストール
         href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-      - name: Windows の更新の種類
+      - name: Windows Update の種類
         href: resources/intune-deviceconfig-windowsupdatetype.md
       - name: Windows ユーザー アカウント制御の設定
         href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
     - name: デバイスの管理
       href: resources/intune-device-mgt-conceptual.md
       items:
-      - name: 動作状態
+      - name: アクションの状態
         href: resources/intune-devices-actionstate.md
       - name: Apple プッシュ通知証明書
         href: resources/intune-devices-applepushnotificationcertificate.md
         items:
         - name: 取得
           href: api/intune-devices-applepushnotificationcertificate-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-devices-applepushnotificationcertificate-update.md
       - name: 監査アクター
         href: resources/intune-auditing-auditactor.md
       - name: 監査イベント
         href: resources/intune-auditing-auditevent.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-auditing-auditevent-list.md
         - name: 取得
           href: api/intune-auditing-auditevent-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-auditing-auditevent-create.md
         - name: 削除
           href: api/intune-auditing-auditevent-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-auditing-auditevent-update.md
       - name: 監査のプロパティ
         href: resources/intune-auditing-auditproperty.md
       - name: 監査のリソース
         href: resources/intune-auditing-auditresource.md
-      - name: 準拠状態
+      - name: コンプライアンスのステータス
         href: resources/intune-devices-compliancestate.md
       - name: 構成マネージャーのクライアントに対応した機能
         href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
@@ -2077,21 +2077,21 @@ items:
       - name: 検出されたアプリ
         href: resources/intune-devices-detectedapp.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-devices-detectedapp-list.md
         - name: 取得
           href: api/intune-devices-detectedapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-devices-detectedapp-create.md
         - name: 削除
           href: api/intune-devices-detectedapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-devices-detectedapp-update.md
-      - name: デバイス アクションの結果
+      - name: デバイスのアクションの結果
         href: resources/intune-devices-deviceactionresult.md
-      - name: デバイス登録の失敗の理由
+      - name: デバイスの登録失敗の理由
         href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-      - name: デバイス登録の種類
+      - name: デバイスの登録の種類
         href: resources/intune-devices-deviceenrollmenttype.md
       - name: デバイスの Exchange アクセス状態の要約
         href: resources/intune-devices-deviceexchangeaccessstatesummary.md
@@ -2099,41 +2099,41 @@ items:
         href: resources/intune-devices-devicegeolocation.md
       - name: デバイスの正常性構成証明の状態
         href: resources/intune-devices-devicehealthattestationstate.md
-      - name: デバイス管理 exchange のアクセスの状態
+      - name: デバイスの管理 Exchange アクセス状態
         href: resources/intune-devices-devicemanagementexchangeaccessstate.md
-      - name: デバイス管理 exchange アクセス状態の理由
+      - name: デバイスの管理 Exchange アクセス状態理由
         href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
-      - name: デバイス管理のサブスクリプションの状態
+      - name: デバイス管理サブスクリプションの状態
         href: resources/intune-devices-devicemanagementsubscriptionstate.md
       - name: デバイス管理のトラブルシューティング イベント
         href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
         - name: 取得
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
         - name: 削除
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
-      - name: デバイス オペレーティング システムの概要
+      - name: デバイスのオペレーティング システムの概要
         href: resources/intune-devices-deviceoperatingsystemsummary.md
-      - name: デバイス登録の状態
+      - name: デバイスの登録状態
         href: resources/intune-devices-deviceregistrationstate.md
       - name: 登録のトラブルシューティング イベント
         href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
         - name: 取得
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
         - name: 削除
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
       - name: ローカライズ済み通知メッセージ
         href: resources/intune-notification-localizednotificationmessage.md
@@ -2142,30 +2142,30 @@ items:
           href: api/intune-notification-localizednotificationmessage-list.md
         - name: 取得
           href: api/intune-notification-localizednotificationmessage-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-notification-localizednotificationmessage-create.md
         - name: 削除
           href: api/intune-notification-localizednotificationmessage-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-notification-localizednotificationmessage-update.md
       - name: デバイスの検索アクションの結果
         href: resources/intune-devices-locatedeviceactionresult.md
       - name: 管理対象デバイス
         href: resources/intune-devices-manageddevice.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-devices-manageddevice-list.md
         - name: 取得
           href: api/intune-devices-manageddevice-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-devices-manageddevice-create.md
         - name: 削除
           href: api/intune-devices-manageddevice-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-devices-manageddevice-update.md
         - name: retire アクション
           href: api/intune-devices-manageddevice-retire.md
-        - name: wipe action
+        - name: ワイプ アクション
           href: api/intune-devices-manageddevice-wipe.md
         - name: resetPasscode アクション
           href: api/intune-devices-manageddevice-resetpasscode.md
@@ -2204,11 +2204,11 @@ items:
         items:
         - name: 取得
           href: api/intune-devices-manageddeviceoverview-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-devices-manageddeviceoverview-update.md
-      - name: デバイス所有者の種類を管理
+      - name: 管理対象デバイスの所有者の種類
         href: resources/intune-devices-manageddeviceownertype.md
-      - name: 管理対象デバイスのパートナーは、正常性状態を報告
+      - name: 管理対象デバイスのパートナー正常性状態の報告
         href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
       - name: 管理エージェントの種類
         href: resources/intune-devices-managementagenttype.md
@@ -2219,17 +2219,17 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 取得
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: 削除
           href: api/intune-notification-notificationmessagetemplate-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-notification-notificationmessagetemplate-update.md
         - name: sendTestMessage アクション
           href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
-      - name: 通知テンプレートのオプションをブランド化
+      - name: 通知テンプレートのブランド化オプション
         href: resources/intune-notification-notificationtemplatebrandingoptions.md
-      - name: リモート アシスタンスの採用状況
+      - name: リモート アシスタンス オンボード状態
         href: resources/intune-remoteassistance-remoteassistanceonboardingstatus.md
       - name: リモート アシスタンス パートナー
         href: resources/intune-remoteassistance-remoteassistancepartner.md
@@ -2238,31 +2238,31 @@ items:
           href: api/intune-remoteassistance-remoteassistancepartner-list.md
         - name: 取得
           href: api/intune-remoteassistance-remoteassistancepartner-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-remoteassistance-remoteassistancepartner-create.md
         - name: 削除
           href: api/intune-remoteassistance-remoteassistancepartner-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-remoteassistance-remoteassistancepartner-update.md
         - name: beginOnboarding アクション
           href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
-        - name: disconnect アクション
+        - name: 切断アクション
           href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
       - name: リモート ロック アクションの結果
         href: resources/intune-devices-remotelockactionresult.md
       - name: パスコードのリセット アクションの結果
         href: resources/intune-devices-resetpasscodeactionresult.md
-      - name: Windows のデバイス アカウントのアクション パラメーターの更新
+      - name: Windows デバイス アカウントのアクション パラメーターの更新
         href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
-      - name: Windows Defender のスキャン アクションの結果
+      - name: Windows defender のスキャン アクションの結果
         href: resources/intune-devices-windowsdefenderscanactionresult.md
       - name: Windows のデバイス アカウント
         href: resources/intune-devices-windowsdeviceaccount.md
       - name: Windows のデバイス AD アカウント
         href: resources/intune-devices-windowsdeviceadaccount.md
-      - name: Windows のデバイス Azure AD アカウント
+      - name: Windows デバイス Azure AD アカウント
         href: resources/intune-devices-windowsdeviceazureadaccount.md
-    - name: モバイル アプリケーションの管理
+    - name: モバイル アプリの管理
       href: resources/intune-mam-conceptual.md
       items:
       - name: Android 管理対象アプリの保護
@@ -2272,11 +2272,11 @@ items:
           href: api/intune-mam-androidmanagedappprotection-list.md
         - name: 取得
           href: api/intune-mam-androidmanagedappprotection-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-androidmanagedappprotection-create.md
         - name: 削除
           href: api/intune-mam-androidmanagedappprotection-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-androidmanagedappprotection-update.md
       - name: Android 管理対象アプリの登録
         href: resources/intune-mam-androidmanagedappregistration.md
@@ -2285,7 +2285,7 @@ items:
           href: api/intune-mam-androidmanagedappregistration-list.md
         - name: 取得
           href: api/intune-mam-androidmanagedappregistration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-androidmanagedappregistration-create.md
       - name: Android モバイル アプリ ID
         href: resources/intune-mam-androidmobileappidentifier.md
@@ -2298,11 +2298,11 @@ items:
           href: api/intune-mam-defaultmanagedappprotection-list.md
         - name: 取得
           href: api/intune-mam-defaultmanagedappprotection-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-defaultmanagedappprotection-create.md
         - name: 削除
           href: api/intune-mam-defaultmanagedappprotection-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-defaultmanagedappprotection-update.md
       - name: iOS 管理対象アプリ保護
         href: resources/intune-mam-iosmanagedappprotection.md
@@ -2311,11 +2311,11 @@ items:
           href: api/intune-mam-iosmanagedappprotection-list.md
         - name: 取得
           href: api/intune-mam-iosmanagedappprotection-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-iosmanagedappprotection-create.md
         - name: 削除
           href: api/intune-mam-iosmanagedappprotection-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-iosmanagedappprotection-update.md
       - name: iOS 管理対象アプリの登録
         href: resources/intune-mam-iosmanagedappregistration.md
@@ -2336,7 +2336,7 @@ items:
         href: resources/intune-mam-json.md
       - name: キー/値のペア
         href: resources/intune-mam-keyvaluepair.md
-      - name: アプリケーションのクリップボード共有機能レベルの管理
+      - name: 管理対象アプリのクリップボード共有レベル
         href: resources/intune-mam-managedappclipboardsharinglevel.md
       - name: 管理対象アプリの構成
         href: resources/intune-mam-managedappconfiguration.md
@@ -2345,15 +2345,15 @@ items:
           href: api/intune-mam-managedappconfiguration-list.md
         - name: 取得
           href: api/intune-mam-managedappconfiguration-get.md
-      - name: アプリケーション データの暗号化の種類を管理
+      - name: 管理対象アプリのデータの暗号化種類
         href: resources/intune-mam-managedappdataencryptiontype.md
-      - name: 管理されているアプリケーション データの格納場所
+      - name: 管理対象アプリのデータの保存場所
         href: resources/intune-mam-managedappdatastoragelocation.md
-      - name: 管理されているアプリケーション データの転送レベル
+      - name: 管理対象アプリのデータ転送レベル
         href: resources/intune-mam-managedappdatatransferlevel.md
       - name: 管理対象アプリの診断状態
         href: resources/intune-mam-managedappdiagnosticstatus.md
-      - name: マネージ アプリケーションのフラグを設定した理由
+      - name: 管理対象アプリのフラグ付き理由
         href: resources/intune-mam-managedappflaggedreason.md
       - name: 管理対象アプリの操作
         href: resources/intune-mam-managedappoperation.md
@@ -2362,13 +2362,13 @@ items:
           href: api/intune-mam-managedappoperation-list.md
         - name: 取得
           href: api/intune-mam-managedappoperation-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-managedappoperation-create.md
         - name: 削除
           href: api/intune-mam-managedappoperation-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-managedappoperation-update.md
-      - name: 暗証番号 (pin) のマネージ アプリケーションの文字セット
+      - name: 管理対象アプリの暗証番号 (PIN) 文字セット
         href: resources/intune-mam-managedapppincharacterset.md
       - name: 管理対象アプリ ポリシー
         href: resources/intune-mam-managedapppolicy.md
@@ -2384,7 +2384,7 @@ items:
         items:
         - name: 取得
           href: api/intune-mam-managedapppolicydeploymentsummary-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-managedapppolicydeploymentsummary-update.md
       - name: アプリごとの管理対象アプリ ポリシーの展開の概要
         href: resources/intune-mam-managedapppolicydeploymentsummaryperapp.md
@@ -2421,15 +2421,15 @@ items:
       - name: 管理対象モバイル アプリ
         href: resources/intune-mam-managedmobileapp.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-mam-managedmobileapp-list.md
         - name: 取得
           href: api/intune-mam-managedmobileapp-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-managedmobileapp-create.md
         - name: 削除
           href: api/intune-mam-managedmobileapp-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-managedmobileapp-update.md
       - name: MDM Windows 情報保護ポリシー
         href: resources/intune-mam-mdmwindowsinformationprotectionpolicy.md
@@ -2438,30 +2438,30 @@ items:
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
         - name: 取得
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
         - name: 削除
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-update.md
       - name: モバイル アプリ ID
         href: resources/intune-mam-mobileappidentifier.md
       - name: プロキシ化されたドメイン
         href: resources/intune-mam-proxieddomain.md
-      - name: 対象となる管理対象アプリの構成
+      - name: ターゲットとなる管理対象アプリの構成
         href: resources/intune-mam-targetedmanagedappconfiguration.md
         items:
         - name: リスト
           href: api/intune-mam-targetedmanagedappconfiguration-list.md
         - name: 取得
           href: api/intune-mam-targetedmanagedappconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-targetedmanagedappconfiguration-create.md
         - name: 削除
           href: api/intune-mam-targetedmanagedappconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-targetedmanagedappconfiguration-update.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-mam-targetedmanagedappconfiguration-assign.md
         - name: targetApps アクション
           href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
@@ -2474,7 +2474,7 @@ items:
           href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
         - name: 削除
           href: api/intune-mam-targetedmanagedapppolicyassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-targetedmanagedapppolicyassignment-update.md
       - name: 対象となる管理対象アプリの保護
         href: resources/intune-mam-targetedmanagedappprotection.md
@@ -2483,7 +2483,7 @@ items:
           href: api/intune-mam-targetedmanagedappprotection-list.md
         - name: 取得
           href: api/intune-mam-targetedmanagedappprotection-get.md
-        - name: assign アクション
+        - name: 割り当てのアクション
           href: api/intune-mam-targetedmanagedappprotection-assign.md
       - name: Windows 情報保護
         href: resources/intune-mam-windowsinformationprotection.md
@@ -2492,7 +2492,7 @@ items:
           href: api/intune-mam-windowsinformationprotection-list.md
         - name: 取得
           href: api/intune-mam-windowsinformationprotection-get.md
-        - name: assign アクション
+        - name: 割り当てのアクション
           href: api/intune-mam-windowsinformationprotection-assign.md
       - name: Windows 情報保護アプリ
         href: resources/intune-mam-windowsinformationprotectionapp.md
@@ -2503,11 +2503,11 @@ items:
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
         - name: 取得
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
         - name: 削除
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-update.md
       - name: Windows 情報保護アプリの Locker ファイル
         href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
@@ -2516,17 +2516,17 @@ items:
           href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
         - name: 取得
           href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
         - name: 削除
           href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
       - name: Windows 情報保護のデータ回復証明書
         href: resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md
       - name: Windows 情報保護のデスクトップ アプリ
         href: resources/intune-mam-windowsinformationprotectiondesktopapp.md
-      - name: Windows 情報保護の適用レベル
+      - name: Windows 情報保護の実施レベル
         href: resources/intune-mam-windowsinformationprotectionenforcementlevel.md
       - name: Windows 情報保護の IP 範囲のコレクション
         href: resources/intune-mam-windowsinformationprotectioniprangecollection.md
@@ -2537,13 +2537,13 @@ items:
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
         - name: 取得
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
         - name: 削除
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-update.md
-      - name: Windows 情報保護暗証番号 (pin) の文字の要件
+      - name: Windows 情報保護暗証番号 (PIN) の文字の要件
         href: resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md
       - name: Windows 情報保護ポリシー
         href: resources/intune-mam-windowsinformationprotectionpolicy.md
@@ -2552,11 +2552,11 @@ items:
           href: api/intune-mam-windowsinformationprotectionpolicy-list.md
         - name: 取得
           href: api/intune-mam-windowsinformationprotectionpolicy-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-mam-windowsinformationprotectionpolicy-create.md
         - name: 削除
           href: api/intune-mam-windowsinformationprotectionpolicy-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-mam-windowsinformationprotectionpolicy-update.md
       - name: Windows 情報保護のプロキシ化されたドメイン コレクション
         href: resources/intune-mam-windowsinformationprotectionproxieddomaincollection.md
@@ -2564,47 +2564,47 @@ items:
         href: resources/intune-mam-windowsinformationprotectionresourcecollection.md
       - name: Windows 情報保護ストア アプリ
         href: resources/intune-mam-windowsinformationprotectionstoreapp.md
-    - name: 契約時
+    - name: オンボーディング
       href: resources/intune-onboarding-conceptual.md
       items:
       - name: デバイス登録の構成
         href: resources/intune-onboarding-deviceenrollmentconfiguration.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
         - name: 取得
           href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
         - name: setPriority アクション
           href: api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
-        - name: assign アクション
+        - name: アクションの割り当て
           href: api/intune-onboarding-deviceenrollmentconfiguration-assign.md
-      - name: デバイス登録の制限の構成
+      - name: デバイス登録限界の構成
         href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
         - name: 取得
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
         - name: 削除
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md
       - name: デバイス登録プラットフォームの制限
         href: resources/intune-onboarding-deviceenrollmentplatformrestriction.md
       - name: デバイス登録プラットフォームの制限の構成
         href: resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
         - name: 取得
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
         - name: 削除
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-update.md
       - name: デバイス登録 Windows Hello for Business の構成
         href: resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md
@@ -2613,11 +2613,11 @@ items:
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
         - name: 取得
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
         - name: 削除
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update.md
       - name: デバイスの管理 Exchange コネクタ
         href: resources/intune-onboarding-devicemanagementexchangeconnector.md
@@ -2626,36 +2626,36 @@ items:
           href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
         - name: 取得
           href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
         - name: 削除
           href: api/intune-onboarding-devicemanagementexchangeconnector-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-devicemanagementexchangeconnector-update.md
-        - name: sync アクション
+        - name: 同期アクション
           href: api/intune-onboarding-devicemanagementexchangeconnector-sync.md
-      - name: デバイス管理 exchange コネクタの状態
+      - name: デバイスの管理 Exchange コネクタの状態
         href: resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md
-      - name: デバイス管理 exchange コネクタの同期の種類
+      - name: デバイスの管理 Exchange コネクタの同期タイプ
         href: resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md
-      - name: デバイス管理 exchange コネクタの種類
+      - name: デバイスの管理 Exchange コネクタのタイプ
         href: resources/intune-onboarding-devicemanagementexchangeconnectortype.md
       - name: デバイス管理パートナー
         href: resources/intune-onboarding-devicemanagementpartner.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-devicemanagementpartner-list.md
         - name: 取得
           href: api/intune-onboarding-devicemanagementpartner-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-devicemanagementpartner-create.md
         - name: 削除
           href: api/intune-onboarding-devicemanagementpartner-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-devicemanagementpartner-update.md
-      - name: デバイス管理のパートナー アプリケーションの種類
+      - name: デバイス管理パートナー アプリの種類
         href: resources/intune-onboarding-devicemanagementpartnerapptype.md
-      - name: デバイス管理のパートナーのテナントの状態
+      - name: デバイス管理パートナー テナントの状態
         href: resources/intune-onboarding-devicemanagementpartnertenantstate.md
       - name: 有効化
         href: resources/intune-onboarding-enablement.md
@@ -2666,11 +2666,11 @@ items:
           href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
         - name: 取得
           href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
         - name: 削除
           href: api/intune-onboarding-enrollmentconfigurationassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-enrollmentconfigurationassignment-update.md
       - name: Intune ブランド
         href: resources/intune-onboarding-intunebrand.md
@@ -2679,24 +2679,24 @@ items:
       - name: モバイルの脅威保護コネクタ
         href: resources/intune-onboarding-mobilethreatdefenseconnector.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
         - name: 取得
           href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
         - name: 削除
           href: api/intune-onboarding-mobilethreatdefenseconnector-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-mobilethreatdefenseconnector-update.md
-      - name: モバイル脅威パートナー テナントの状態
+      - name: モバイル脅威パートナーのテナント状態
         href: resources/intune-onboarding-mobilethreatpartnertenantstate.md
       - name: オンプレミスの条件付きアクセス設定
         href: resources/intune-onboarding-onpremisesconditionalaccesssettings.md
         items:
         - name: 取得
           href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
       - name: 組織
         href: resources/intune-onboarding-organization.md
@@ -2705,7 +2705,7 @@ items:
           href: api/intune-onboarding-organization-list.md
         - name: 取得
           href: api/intune-onboarding-organization-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-organization-update.md
         - name: setMobileDeviceManagementAuthority アクション
           href: api/intune-onboarding-organization-setmobiledevicemanagementauthority.md
@@ -2714,15 +2714,15 @@ items:
       - name: VPP トークン
         href: resources/intune-onboarding-vpptoken.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-onboarding-vpptoken-list.md
         - name: 取得
           href: api/intune-onboarding-vpptoken-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-onboarding-vpptoken-create.md
         - name: 削除
           href: api/intune-onboarding-vpptoken-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-onboarding-vpptoken-update.md
         - name: syncLicenses アクション
           href: api/intune-onboarding-vpptoken-synclicenses.md
@@ -2730,38 +2730,38 @@ items:
           href: api/intune-onboarding-vpptoken-synclicenses.md
       - name: VPP トークンの状態
         href: resources/intune-onboarding-vpptokenstate.md
-      - name: VPP トークンの同期の状態
+      - name: VPP トークンの同期状態
         href: resources/intune-onboarding-vpptokensyncstatus.md
-      - name: Windows Hello ビジネス暗証番号 (pin) を使用するため
+      - name: ビジネス向け Windows Hello 暗証番号 (PIN) の使用
         href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-    - name: ロール ベースのアクセス制御
+    - name: 役割ベースのアクセス制御
       href: resources/intune-rbac-conceptual.md
       items:
       - name: デバイスおよびアプリ管理役割の割り当て
         href: resources/intune-rbac-deviceandappmanagementroleassignment.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
         - name: 取得
           href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-rbac-deviceandappmanagementroleassignment-create.md
         - name: 削除
           href: api/intune-rbac-deviceandappmanagementroleassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-rbac-deviceandappmanagementroleassignment-update.md
       - name: デバイスおよびアプリ管理役割の定義
         href: resources/intune-rbac-deviceandappmanagementroledefinition.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
         - name: 取得
           href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-rbac-deviceandappmanagementroledefinition-create.md
         - name: 削除
           href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
       - name: リソース アクション
         href: resources/intune-rbac-resourceaction.md
@@ -2772,39 +2772,39 @@ items:
           href: api/intune-rbac-resourceoperation-list.md
         - name: 取得
           href: api/intune-rbac-resourceoperation-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-rbac-resourceoperation-create.md
         - name: 削除
           href: api/intune-rbac-resourceoperation-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-rbac-resourceoperation-update.md
-      - name: 役割の割り当て
+      - name: ロールの割り当て
         href: resources/intune-rbac-roleassignment.md
         items:
         - name: リスト
           href: api/intune-rbac-roleassignment-list.md
         - name: 取得
           href: api/intune-rbac-roleassignment-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-rbac-roleassignment-create.md
         - name: 削除
           href: api/intune-rbac-roleassignment-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-rbac-roleassignment-update.md
-      - name: 役割の定義
+      - name: ロールの定義
         href: resources/intune-rbac-roledefinition.md
         items:
         - name: リスト
           href: api/intune-rbac-roledefinition-list.md
         - name: 取得
           href: api/intune-rbac-roledefinition-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-rbac-roledefinition-create.md
         - name: 削除
           href: api/intune-rbac-roledefinition-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-rbac-roledefinition-update.md
-      - name: 役割のアクセス許可
+      - name: ロールのアクセス許可
         href: resources/intune-rbac-rolepermission.md
     - name: 共有リソース
       href: resources/intune-shared-conceptual.md
@@ -2813,7 +2813,7 @@ items:
         href: resources/intune-shared-alldevicesassignmenttarget.md
       - name: すべてのライセンス ユーザーの割り当て先
         href: resources/intune-shared-alllicensedusersassignmenttarget.md
-      - name: 準拠の状態
+      - name: コンプライアンスのステータス
         href: resources/intune-shared-compliancestatus.md
       - name: デバイスおよびアプリ管理の割り当て先
         href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
@@ -2822,7 +2822,7 @@ items:
         items:
         - name: 取得
           href: api/intune-shared-deviceappmanagement-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-shared-deviceappmanagement-update.md
         - name: syncMicrosoftStoreForBusinessApps アクション
           href: api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md
@@ -2833,24 +2833,24 @@ items:
           href: api/intune-shared-devicecategory-list.md
         - name: 取得
           href: api/intune-shared-devicecategory-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-shared-devicecategory-create.md
         - name: 削除
           href: api/intune-shared-devicecategory-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-shared-devicecategory-update.md
       - name: デバイスの管理
         href: resources/intune-shared-devicemanagement.md
         items:
         - name: 取得
           href: api/intune-shared-devicemanagement-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-shared-devicemanagement-update.md
       - name: 除外グループの割り当て先
         href: resources/intune-shared-exclusiongroupassignmenttarget.md
       - name: グループの割り当て先
         href: resources/intune-shared-groupassignmenttarget.md
-      - name: 目的をインストールします。
+      - name: インストール目的
         href: resources/intune-shared-installintent.md
       - name: MIME コンテンツ
         href: resources/intune-shared-mimecontent.md
@@ -2861,32 +2861,32 @@ items:
         items:
         - name: 取得
           href: api/intune-shared-reportroot-get.md
-        - name: Update
+        - name: 更新
           href: api/intune-shared-reportroot-update.md
-      - name: UI 状態の生成オプションを保存
+      - name: 保存 UI 状態生成オプション
         href: resources/intune-shared-saveduistategenerationoptions.md
       - name: URI
         href: resources/intune-shared-uri.md
-      - name: User
+      - name: ユーザー
         href: resources/intune-shared-user.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-shared-user-list.md
         - name: 取得
           href: api/intune-shared-user-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-shared-user-create.md
         - name: 削除
           href: api/intune-shared-user-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-shared-user-update.md
         - name: removeAllDevicesFromManagement アクション
           href: api/intune-shared-user-removealldevicesfrommanagement.md
         - name: wipeManagedAppRegistrationsByDeviceTag アクション
           href: api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md
-      - name: VPP トークン アカウントの種類
+      - name: VPP トークン アカウントのタイプ
         href: resources/intune-shared-vpptokenaccounttype.md
-    - name: 通信費
+    - name: 通信経費
       href: resources/intune-tem-conceptual.md
       items:
       - name: 通信経費の管理パートナー
@@ -2896,56 +2896,56 @@ items:
           href: api/intune-tem-telecomexpensemanagementpartner-list.md
         - name: 取得
           href: api/intune-tem-telecomexpensemanagementpartner-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-tem-telecomexpensemanagementpartner-create.md
         - name: 削除
           href: api/intune-tem-telecomexpensemanagementpartner-delete.md
-        - name: Update
+        - name: 更新
           href: api/intune-tem-telecomexpensemanagementpartner-update.md
   - name: 教育
     href: resources/education-overview.md
     items:
-    - name: Schools
+    - name: 学校
       href: resources/educationschool.md
       items:
-      - name: 学校をリストする
+      - name: 学校を一覧表示する
         href: api/educationroot-list-schools.md
-      - name: 学校を作成します。
+      - name: 学校を作成する
         href: api/educationroot-post-schools.md
-      - name: 学校を取得します。
+      - name: 学校を取得する
         href: api/educationschool-get.md
-      - name: 学校を更新します。
+      - name: 学校を更新する
         href: api/educationschool-update.md
-      - name: 学校を削除します。
+      - name: 学校を削除する
         href: api/educationschool-delete.md
-      - name: クラスをリストする
+      - name: クラスを一覧表示する
         href: api/educationschool-list-classes.md
-      - name: クラスを作成します。
+      - name: クラスを作成する
         href: api/educationschool-post-classes.md
-      - name: Remove class
+      - name: クラスを削除する
         href: api/educationschool-delete-classes.md
       - name: ユーザーを一覧表示する
         href: api/educationschool-list-users.md
-      - name: Add user
+      - name: ユーザーを追加する
         href: api/educationschool-post-users.md
-      - name: Remove user
+      - name: ユーザーを削除する
         href: api/educationschool-delete-users.md
     - name: クラス
       href: resources/educationclass.md
       items:
-      - name: 学校をリストする
+      - name: 学校を一覧表示する
         href: api/educationclass-list-schools.md
-      - name: クラスをリストする
+      - name: クラスを一覧表示する
         href: api/educationroot-list-classes.md
-      - name: クラスを作成します。
+      - name: クラスを作成する
         href: api/educationroot-post-classes.md
-      - name: クラスを取得します。
+      - name: クラスを取得する
         href: api/educationclass-get.md
-      - name: クラスを更新します。
+      - name: クラスを更新する
         href: api/educationclass-update.md
-      - name: クラスを削除します。
+      - name: クラスを削除する
         href: api/educationclass-delete.md
-      - name: 教師をリストする
+      - name: 教師を一覧表示する
         href: api/educationclass-list-teachers.md
       - name: 教師を追加する
         href: api/educationclass-post-teachers.md
@@ -2960,9 +2960,9 @@ items:
     - name: ユーザー
       href: resources/educationuser.md
       items:
-      - name: 学校をリストする
+      - name: 学校を一覧表示する
         href: api/educationuser-list-schools.md
-      - name: クラスをリストする
+      - name: クラスを一覧表示する
         href: api/educationuser-list-classes.md
       - name: ユーザーを取得する
         href: api/educationuser-get.md
@@ -2992,42 +2992,42 @@ items:
       items:
       - name: 子を一覧表示する
         href: api/driveitem-list-children.md
-      - name: アイテムを取得する
+      - name: 項目を取得する
         href: api/driveitem-get.md
-      - name: サムネイルを取得します。
+      - name: サムネイルを取得する
         href: api/driveitem-list-thumbnails.md
       - name: フォルダーを作成する
         href: api/driveitem-post-children.md
-      - name: アイテムを更新する
+      - name: 項目を更新する
         href: api/driveitem-update.md
-      - name: アイテムの削除
+      - name: 項目を削除する
         href: api/driveitem-delete.md
-      - name: アイテムを移動する
+      - name: 項目を移動する
         href: api/driveitem-move.md
-      - name: アイテムをコピーします。
+      - name: 項目をコピーする
         href: api/driveitem-copy.md
-      - name: ファイルをダウンロードします。
+      - name: ファイルをダウンロードする
         href: api/driveitem-get-content.md
-      - name: コンテンツを変換します。
+      - name: コンテンツを変換する
         href: api/driveitem-get-content-format.md
       - name: アップロード
         href: api/driveitem-put-content.md
       - name: 再開可能なアップロード
         href: api/driveitem-createuploadsession.md
-      - name: アイテムを検索する
+      - name: 項目を検索する
         href: api/driveitem-search.md
       - name: 変更履歴の記録
         href: api/driveitem-delta.md
-      - name: バージョンの一覧表示
+      - name: バージョンを一覧表示する
         href: api/driveitem-list-versions.md
-      - name: アイテムのプレビュー
+      - name: プレビュー項目
         href: api/driveitem-preview.md
     - name: アクセス許可
       href: resources/permission.md
       items:
       - name: 共有リンクを作成する
         href: api/driveitem-createlink.md
-      - name: 共有リンクを使用します。
+      - name: 共有リンクを使用する
         href: api/shares-get.md
       - name: アクセス許可を一覧表示する
         href: api/driveitem-list-permissions.md
@@ -3043,17 +3043,17 @@ items:
     displayName: Azure AD, Microsoft identity platform
     href: resources/azure-ad-overview.md
     items:
-    - name: 契約
+    - name: 契約書
       href: resources/contract.md
       items:
-      - name: コントラクトを取得します。
+      - name: 契約書を取得する
         href: api/contract-get.md
       - name: 契約書を一覧表示する
         href: api/contract-list.md
-    - name: データ ポリシーの操作
+    - name: データ ポリシー操作
       href: resources/datapolicyoperation.md
       items:
-      - name: データ ポリシーの操作を取得します。
+      - name: データ ポリシー操作を取得する
         href: api/datapolicyoperation-get.md
     - name: 削除済みアイテム
       href: resources/directory.md
@@ -3066,9 +3066,9 @@ items:
         href: api/directory-deleteditems-delete.md
       - name: 削除済みアイテムを復元する
         href: api/directory-deleteditems-restore.md
-      - name: ユーザーによって所有されている削除済みのアイテムを一覧表示します。
+      - name: ユーザーによって所有されている削除済みアイテムを一覧表示する
         href: api/directory-deleteditems-user-owned.md
-    - name: Device
+    - name: デバイス
       href: resources/device.md
       items:
       - name: デバイスを一覧表示する
@@ -3081,22 +3081,22 @@ items:
         href: api/device-update.md
       - name: デバイスを削除する
         href: api/device-delete.md
-      - name: 登録されている所有者を一覧します。
+      - name: 登録済み所有者を一覧表示する
         href: api/device-list-registeredowners.md
-      - name: 登録済みユーザーの一覧を表示します。
+      - name: 登録済みユーザーを一覧表示する
         href: api/device-list-registeredusers.md
-      - name: 登録所有者を作成します。
+      - name: 登録済み所有者を作成する
         href: api/device-post-registeredowners.md
-      - name: 登録済みユーザーを作成します。
+      - name: 登録済みユーザーを作成する
         href: api/device-post-registeredusers.md
-      - name: デバイス グループを一覧表示
+      - name: デバイスを一覧表示する
         href: api/device-list-memberof.md
     - name: ディレクトリ オブジェクト
       href: resources/directoryobject.md
       items:
-      - name: ディレクトリ オブジェクトを取得します。
+      - name: ディレクトリ オブジェクトを取得する
         href: api/directoryobject-get.md
-      - name: ディレクトリ オブジェクトを削除します。
+      - name: ディレクトリ オブジェクトを削除する
         href: api/directoryobject-delete.md
       - name: メンバー オブジェクトを取得する
         href: api/directoryobject-getmemberobjects.md
@@ -3104,16 +3104,16 @@ items:
         href: api/directoryobject-getmembergroups.md
       - name: メンバー グループをチェックする
         href: api/directoryobject-checkmembergroups.md
-      - name: オブジェクトの Id を取得します。
+      - name: ID によってオブジェクトを取得する
         href: api/directoryobject-getbyids.md
-    - name: ディレクトリの役割
+    - name: ディレクトリ ロール
       href: resources/directoryrole.md
       items:
-      - name: リストのディレクトリの役割
+      - name: ディレクトリ ロールを一覧表示する
         href: api/directoryrole-list.md
-      - name: ディレクトリの役割をアクティブにします。
+      - name: ディレクトリ ロールをアクティブ化する
         href: api/directoryrole-post-directoryroles.md
-      - name: ディレクトリの役割を取得します。
+      - name: ディレクトリ ロールを取得する
         href: api/directoryrole-get.md
       - name: メンバーを一覧表示する
         href: api/directoryrole-list-members.md
@@ -3121,7 +3121,7 @@ items:
         href: api/directoryrole-post-members.md
       - name: メンバーを削除する
         href: api/directoryrole-delete-member.md
-    - name: ロール テンプレートのディレクトリ
+    - name: ディレクトリ ロール テンプレート
       href: resources/directoryroletemplate.md
       items:
       - name: directoryRoleTemplates を一覧表示する
@@ -3141,40 +3141,40 @@ items:
         href: api/domain-get.md
       - name: ドメインを更新する
         href: api/domain-update.md
-      - name: Verify domain
+      - name: ドメインを確認する
         href: api/domain-verify.md
-    - name: グループの設定
+    - name: グループ設定
       href: resources/groupsetting.md
       items:
       - name: 設定を作成する
         href: api/groupsetting-post-groupsettings.md
       - name: 設定を取得する
         href: api/groupsetting-get.md
-      - name: 設定を一覧表示する
+      - name: 設定をリストする
         href: api/groupsetting-list.md
       - name: 設定を更新する
         href: api/groupsetting-update.md
       - name: 設定を削除する
         href: api/groupsetting-delete.md
-    - name: グループ設定のテンプレート
+    - name: グループ設定テンプレート
       href: resources/groupsettingtemplate.md
       items:
-      - name: テンプレートの設定] ボックスの一覧のグループ
+      - name: グループ設定テンプレートをリストする
         href: api/groupsettingtemplate-list.md
-      - name: グループ設定のテンプレートを取得します。
+      - name: グループ設定テンプレートを取得する
         href: api/groupsettingtemplate-get.md
     - name: ID プロバイダー
       href: resources/identityprovider.md
       items:
-      - name: Id プロバイダーのリスト
+      - name: ID プロバイダーを一覧表示する
         href: api/identityprovider-list.md
-      - name: Id プロバイダーを作成します。
+      - name: ID プロバイダーを作成する
         href: api/identityprovider-post-identityproviders.md
-      - name: Id プロバイダーを取得します。
+      - name: ID プロバイダーを取得する
         href: api/identityprovider-get.md
-      - name: Id プロバイダーを更新します。
+      - name: ID プロバイダーを更新する
         href: api/identityprovider-update.md
-      - name: Id プロバイダーを削除します。
+      - name: ID プロバイダーを削除する
         href: api/identityprovider-delete.md
     - name: 招待マネージャー
       href: resources/invitation.md
@@ -3184,9 +3184,9 @@ items:
     - name: 組織
       href: resources/organization.md
       items:
-      - name: 組織の詳細を取得します。
+      - name: 組織の詳細を取得する
         href: api/organization-get.md
-      - name: 組織の詳細を更新します。
+      - name: 組織の詳細を更新する
         href: api/organization-update.md
     - name: 購読している SKU
       href: resources/subscribedsku.md
@@ -3204,7 +3204,7 @@ items:
       items:
       - name: メッセージを一覧表示する
         href: api/user-list-messages.md
-      - name: メッセージを作成します。
+      - name: メッセージを作成する
         href: api/user-post-messages.md
       - name: メッセージを取得する
         href: api/message-get.md
@@ -3212,25 +3212,25 @@ items:
         href: api/message-update.md
       - name: メッセージを削除する
         href: api/message-delete.md
-      - name: メッセージのデルタを取得します。
+      - name: メッセージの差分を取得する
         href: api/message-delta.md
-      - name: メッセージを送信します。
+      - name: メッセージを送信する
         href: api/message-send.md
-      - name: メッセージをコピーします。
+      - name: メッセージをコピーする
         href: api/message-copy.md
-      - name: メッセージを移動
+      - name: メッセージを移動する
         href: api/message-move.md
-      - name: メッセージへの応答を作成します。
+      - name: メッセージの返信を作成する
         href: api/message-createreply.md
-      - name: メッセージに返信します。
+      - name: メッセージに返信する
         href: api/message-reply.md
-      - name: すべてのメッセージに返信を作成します。
+      - name: 全員にメッセージの返信を作成する
         href: api/message-createreplyall.md
-      - name: すべてのメッセージに返信します。
+      - name: メッセージを全員に返信する
         href: api/message-replyall.md
-      - name: メッセージの転送を作成します。
+      - name: 転送メッセージを作成する
         href: api/message-createforward.md
-      - name: メッセージを転送
+      - name: メッセージを転送する
         href: api/message-forward.md
       - name: メールを送信する
         href: api/user-sendmail.md
@@ -3245,11 +3245,11 @@ items:
     - name: 添付ファイル
       href: resources/attachment.md
       items:
-      - name: ファイルの添付ファイルのリソース
+      - name: 添付ファイルのリソース
         href: resources/fileattachment.md
-      - name: アイテムの添付ファイルのリソース
+      - name: 項目の添付ファイルのリソース
         href: resources/itemattachment.md
-      - name: 添付ファイルのリソースの参照
+      - name: 参照の添付ファイルのリソース
         href: resources/referenceattachment.md
       - name: 添付ファイルを取得する
         href: api/attachment-get.md
@@ -3258,55 +3258,55 @@ items:
     - name: 優先受信トレイ
       href: resources/manage-focused-inbox.md
       items:
-      - name: 上書きを作成します。
+      - name: オーバーライドを作成する
         href: api/inferenceclassification-post-overrides.md
-      - name: リストの上書き
+      - name: オーバーライドを一覧表示する
         href: api/inferenceclassification-list-overrides.md
-      - name: 更新の上書き
+      - name: オーバーライドを更新する
         href: api/inferenceclassificationoverride-update.md
-      - name: オーバーライドを削除します。
+      - name: オーバーライドを削除する
         href: api/inferenceclassificationoverride-delete.md
     - name: メール フォルダー
       href: resources/mailfolder.md
       items:
-      - name: メール フォルダーの一覧
+      - name: メール フォルダーを一覧表示する
         href: api/user-list-mailfolders.md
-      - name: メール フォルダーを作成します。
+      - name: メール フォルダーを作成する
         href: api/user-post-mailfolders.md
-      - name: メール フォルダーを取得します。
+      - name: メール フォルダーを取得する
         href: api/mailfolder-get.md
-      - name: メール フォルダーを更新します。
+      - name: メール フォルダーを更新する
         href: api/mailfolder-update.md
-      - name: メール フォルダーを削除します。
+      - name: メール フォルダーを削除する
         href: api/mailfolder-delete.md
-      - name: メール フォルダーのデルタを取得します。
+      - name: メール フォルダーの差分を取得する
         href: api/mailfolder-delta.md
-      - name: メール フォルダーをコピーします。
+      - name: メール フォルダーをコピーする
         href: api/mailfolder-copy.md
-      - name: メール フォルダーに移動します。
+      - name: メール フォルダーを移動する
         href: api/mailfolder-move.md
-      - name: フォルダー内のメッセージの一覧
+      - name: フォルダー内のメッセージを一覧表示する
         href: api/mailfolder-list-messages.md
-      - name: フォルダーにメッセージを作成します。
+      - name: フォルダーにメッセージを作成する
         href: api/mailfolder-post-messages.md
-      - name: メッセージのデルタを取得します。
+      - name: メッセージの差分を取得する
         href: api/message-delta.md
-      - name: 子フォルダーの一覧
+      - name: 子フォルダーを一覧表示する
         href: api/mailfolder-list-childfolders.md
-      - name: メールの子フォルダーを作成します。
+      - name: メールの子フォルダーを作成する
         href: api/mailfolder-post-childfolders.md
     - name: カテゴリ
       href: resources/outlookcategory.md
       items:
-      - name: カテゴリの一覧表示
+      - name: カテゴリを一覧表示する
         href: api/outlookuser-list-mastercategories.md
-      - name: カテゴリの作成
+      - name: カテゴリを作成する
         href: api/outlookuser-post-mastercategories.md
-      - name: カテゴリの取得
+      - name: カテゴリを取得する
         href: api/outlookcategory-get.md
-      - name: カテゴリを更新します。
+      - name: カテゴリを更新する
         href: api/outlookcategory-update.md
-      - name: カテゴリを削除します。
+      - name: カテゴリを削除する
         href: api/outlookcategory-delete.md
     - name: ルール
       href: resources/messagerule.md
@@ -3319,30 +3319,30 @@ items:
         href: api/messagerule-get.md
       - name: ルールを更新する
         href: api/messagerule-update.md
-      - name: ルールを削除します。
+      - name: ルールを削除する
         href: api/messagerule-delete.md
     - name: 拡張プロパティ
       href: resources/extended-properties-overview.md
       items:
-      - name: 単一値プロパティの拡張
+      - name: 単一値の拡張プロパティ
         href: resources/singlevaluelegacyextendedproperty.md
         items:
-        - name: 単一値のプロパティを作成します。
+        - name: 単一値のプロパティを作成する
           href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-        - name: 単一値のプロパティを取得します。
+        - name: 単一値のプロパティを取得する
           href: api/singlevaluelegacyextendedproperty-get.md
-      - name: 複数値のプロパティを拡張
+      - name: 複数値の拡張プロパティ
         href: resources/multivaluelegacyextendedproperty.md
         items:
-        - name: 複数値プロパティを作成します。
+        - name: 複数値のプロパティを作成する
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-        - name: 複数値プロパティを取得します。
+        - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 備考
+  - name: ノート
     displayName: OneNote
     href: resources/onenote-api-overview.md
     items:
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -3351,11 +3351,11 @@ items:
         href: api/onenote-post-notebooks.md
       - name: セクションを一覧表示する
         href: api/onenote-list-sections.md
-      - name: List section groups
+      - name: セクション グループを一覧表示する
         href: api/onenote-list-sectiongroups.md
-      - name: pages を一覧表示する
+      - name: ページを一覧表示する
         href: api/onenote-list-pages.md
-      - name: page を作成する
+      - name: ページを作成する
         href: api/onenote-post-pages.md
     - name: ノートブック
       href: resources/notebook.md
@@ -3366,17 +3366,17 @@ items:
         href: api/onenote-post-notebooks.md
       - name: ノートブックを取得する
         href: api/notebook-get.md
-      - name: 最新のノートブックを取得します。
+      - name: 最新のノートブックを取得する
         href: api/notebook-getrecentnotebooks.md
-      - name: ノートブックをコピーします。
+      - name: ノートブックをコピーする
         href: api/notebook-copynotebook.md
       - name: セクションを一覧表示する
         href: api/notebook-list-sections.md
       - name: セクションを作成する
         href: api/notebook-post-sections.md
-      - name: List section groups
+      - name: セクション グループを一覧表示する
         href: api/notebook-list-sectiongroups.md
-      - name: Create section group
+      - name: セクション グループを作成する
         href: api/notebook-post-sectiongroups.md
     - name: セクション
       href: resources/section.md
@@ -3385,24 +3385,24 @@ items:
         href: api/onenote-list-sections.md
       - name: セクションを作成する
         href: api/notebook-post-sections.md
-      - name: Get section
+      - name: セクションを取得する
         href: api/section-get.md
-      - name: pages を一覧表示する
+      - name: ページを一覧表示する
         href: api/section-list-pages.md
-      - name: page を作成する
+      - name: ページを作成する
         href: api/section-post-pages.md
-      - name: ノートブックにコピーします。
+      - name: ノートブックにコピーする
         href: api/section-copytonotebook.md
-      - name: セクション グループへのコピーします。
+      - name: セクション グループにコピーする
         href: api/section-copytosectiongroup.md
     - name: セクション グループ
       href: resources/sectiongroup.md
       items:
-      - name: List section groups
+      - name: セクション グループを一覧表示する
         href: api/onenote-list-sectiongroups.md
-      - name: Create section group
+      - name: セクション グループを作成する
         href: api/notebook-post-sectiongroups.md
-      - name: Get section group
+      - name: セクション グループを取得する
         href: api/sectiongroup-get.md
       - name: セクションを一覧表示する
         href: api/sectiongroup-list-sections.md
@@ -3411,9 +3411,9 @@ items:
     - name: ページ
       href: resources/page.md
       items:
-      - name: pages を一覧表示する
+      - name: ページを一覧表示する
         href: api/onenote-list-pages.md
-      - name: page を作成する
+      - name: ページを作成する
         href: api/section-post-pages.md
       - name: ページを取得する
         href: api/page-get.md
@@ -3421,7 +3421,7 @@ items:
         href: api/page-update.md
       - name: ページを削除する
         href: api/page-delete.md
-      - name: セクションにコピーします。
+      - name: セクションにコピーする
         href: api/page-copytosection.md
     - name: リソース
       href: resources/resource.md
@@ -3445,7 +3445,7 @@ items:
         href: api/contact-update.md
       - name: 連絡先を削除する
         href: api/contact-delete.md
-      - name: 連絡先のデルタを取得します。
+      - name: 連絡先の差分を取得する
         href: api/contact-delta.md
       - name: オープン拡張機能を作成する
         href: api/opentypeextension-post-opentypeextension.md
@@ -3454,62 +3454,62 @@ items:
     - name: 連絡先フォルダー
       href: resources/contactfolder.md
       items:
-      - name: 連絡先フォルダーの一覧
+      - name: 連絡先フォルダーを一覧表示する
         href: api/user-list-contactfolders.md
-      - name: 連絡先フォルダーを作成します。
+      - name: 連絡先フォルダーを作成する
         href: api/user-post-contactfolders.md
-      - name: 連絡先フォルダーを取得します。
+      - name: 連絡先フォルダーを取得する
         href: api/contactfolder-get.md
-      - name: フォルダーの連絡先を更新します。
+      - name: 連絡先フォルダーを更新する
         href: api/contactfolder-update.md
-      - name: 連絡先フォルダーを削除します。
+      - name: 連絡先フォルダーを削除する
         href: api/contactfolder-delete.md
-      - name: 連絡先フォルダーのデルタを取得します。
+      - name: 連絡先フォルダーの差分を取得する
         href: api/contactfolder-delta.md
-      - name: 子フォルダーの一覧
+      - name: 子フォルダーを一覧表示する
         href: api/contactfolder-list-childfolders.md
-      - name: 子フォルダーを作成します。
+      - name: 子フォルダーを作成する
         href: api/contactfolder-post-childfolders.md
       - name: フォルダー内の連絡先を一覧表示する
         href: api/contactfolder-list-contacts.md
-      - name: フォルダー内に連絡先を作成する
+      - name: フォルダーに連絡先を作成する
         href: api/contactfolder-post-contacts.md
-      - name: 連絡先のデルタを取得します。
+      - name: 連絡先の差分を取得する
         href: api/contact-delta.md
     - name: カテゴリ
       href: resources/outlookcategory.md
       items:
-      - name: カテゴリの一覧表示
+      - name: カテゴリを一覧表示する
         href: api/outlookuser-list-mastercategories.md
-      - name: カテゴリの作成
+      - name: カテゴリを作成する
         href: api/outlookuser-post-mastercategories.md
-      - name: カテゴリの取得
+      - name: カテゴリを取得する
         href: api/outlookcategory-get.md
-      - name: カテゴリを更新します。
+      - name: カテゴリを更新する
         href: api/outlookcategory-update.md
-      - name: カテゴリを削除します。
+      - name: カテゴリを削除する
         href: api/outlookcategory-delete.md
     - name: 拡張プロパティ
       href: resources/extended-properties-overview.md
       items:
-      - name: 単一値プロパティの拡張
+      - name: 単一値の拡張プロパティ
         href: resources/singlevaluelegacyextendedproperty.md
         items:
-        - name: 単一値のプロパティを作成します。
+        - name: 単一値のプロパティを作成する
           href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-        - name: 単一値のプロパティを取得します。
+        - name: 単一値のプロパティを取得する
           href: api/singlevaluelegacyextendedproperty-get.md
-      - name: 複数値のプロパティを拡張
+      - name: 複数値の拡張プロパティ
         href: resources/multivaluelegacyextendedproperty.md
         items:
-        - name: 複数値プロパティを作成します。
+        - name: 複数値のプロパティを作成する
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-        - name: 複数値プロパティを取得します。
+        - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
   - name: レポート
     href: resources/report.md
     items:
-    - name: マイクロソフト チームのデバイスの使用状況
+    - name: Microsoft Teams デバイスの使用状況
       href: resources/microsoft-teams-device-usage-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3518,7 +3518,7 @@ items:
         href: api/reportroot-getteamsdeviceusageusercounts.md
       - name: 配布のユーザーの数を取得する
         href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
-    - name: マイクロソフトのチームのユーザーの利用状況
+    - name: Microsoft Teams ユーザー アクティビティ
       href: resources/microsoft-teams-user-activity-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3527,7 +3527,7 @@ items:
         href: api/reportroot-getteamsuseractivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getteamsuseractivityusercounts.md
-    - name: Outlook の動作
+    - name: Outlook アクティビティ
       href: resources/email-activity-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3536,7 +3536,7 @@ items:
         href: api/reportroot-getemailactivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getemailactivityusercounts.md
-    - name: Outlook アプリケーションの使用状況
+    - name: Outlook アプリの使用状況
       href: resources/email-app-usage-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3547,7 +3547,7 @@ items:
         href: api/reportroot-getemailappusageusercounts.md
       - name: バージョンのユーザーの数を取得する
         href: api/reportroot-getemailappusageversionsusercounts.md
-    - name: Outlook メールボックスの使用率
+    - name: Outlook メールボックスの使用状況
       href: resources/mailbox-usage-reports.md
       items:
       - name: メールボックスの詳細を取得する
@@ -3556,7 +3556,7 @@ items:
         href: api/reportroot-getmailboxusagemailboxcounts.md
       - name: クォータ状態のメールボックスの数を取得する
         href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-      - name: ストレージを取得します。
+      - name: ストレージを取得する
         href: api/reportroot-getmailboxusagestorage.md
     - name: Office 365 のライセンス認証
       href: resources/office-365-activations-reports.md
@@ -3576,7 +3576,7 @@ items:
         href: api/reportroot-getoffice365activeusercounts.md
       - name: サービスのユーザーの数を取得する
         href: api/reportroot-getoffice365servicesusercounts.md
-    - name: Office 365 グループ活動
+    - name: Office 365 グループ アクティビティ
       href: resources/office-365-groups-activity-reports.md
       items:
       - name: グループの詳細を取得する
@@ -3589,7 +3589,7 @@ items:
         href: api/reportroot-getoffice365groupsactivitystorage.md
       - name: ファイルの数を取得する
         href: api/reportroot-getoffice365groupsactivityfilecounts.md
-    - name: OneDrive 活動
+    - name: OneDrive アクティビティ
       href: resources/onedrive-activity-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3598,7 +3598,7 @@ items:
         href: api/reportroot-getonedriveactivityusercounts.md
       - name: ファイルの数を取得する
         href: api/reportroot-getonedriveactivityfilecounts.md
-    - name: OneDrive の使用法
+    - name: OneDrive の使用状況
       href: resources/onedrive-usage-reports.md
       items:
       - name: アカウントの詳細を取得する
@@ -3618,9 +3618,9 @@ items:
         href: api/reportroot-getsharepointactivityfilecounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getsharepointactivityusercounts.md
-      - name: ページを取得します。
+      - name: ページを取得する
         href: api/reportroot-getsharepointactivitypages.md
-    - name: SharePoint サイトの利用状況
+    - name: SharePoint サイトの使用状況
       href: resources/sharepoint-site-usage-reports.md
       items:
       - name: サイトの詳細を取得する
@@ -3631,9 +3631,9 @@ items:
         href: api/reportroot-getsharepointsiteusagesitecounts.md
       - name: ストレージを取得する
         href: api/reportroot-getsharepointsiteusagestorage.md
-      - name: ページを取得します。
+      - name: ページを取得する
         href: api/reportroot-getsharepointsiteusagepages.md
-    - name: ビジネス アクティビティの Skype
+    - name: Skype for Business アクティビティ
       href: resources/skype-for-business-activity-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3642,7 +3642,7 @@ items:
         href: api/reportroot-getskypeforbusinessactivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getskypeforbusinessactivityusercounts.md
-    - name: Skype ビジネス デバイスの使用状況について
+    - name: Skype for Business デバイスの使用状況
       href: resources/skype-for-business-device-usage-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3651,34 +3651,34 @@ items:
         href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-    - name: Skype ビジネス主催者活動の
+    - name: Skype for Business 開催者アクティビティ
       href: resources/skype-for-business-organizer-activity-reports.md
       items:
       - name: アクティビティの数を取得する
         href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-      - name: 時間 (分) を取得する
+      - name: 分の数を取得する
         href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-    - name: ビジネス アクティビティの参加者の Skype
+    - name: Skype for Business 参加者アクティビティ
       href: resources/skype-for-business-participant-activity-reports.md
       items:
       - name: アクティビティの数を取得する
         href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-      - name: 時間 (分) を取得する
+      - name: 分の数を取得する
         href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-    - name: ビジネス アクティビティのピア ツー ピアの Skype
+    - name: Skype for Business ピアツーピア アクティビティ
       href: resources/skype-for-business-peer-to-peer-activity.md
       items:
       - name: アクティビティの数を取得する
         href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-      - name: 時間 (分) を取得する
+      - name: 分の数を取得する
         href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-    - name: Yammer のアクティビティ
+    - name: Yammer アクティビティ
       href: resources/yammer-activity-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3687,7 +3687,7 @@ items:
         href: api/reportroot-getyammeractivitycounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getyammeractivityusercounts.md
-    - name: Yammer のデバイスの使用状況
+    - name: Yammer デバイスの使用状況
       href: resources/yammer-device-usage-reports.md
       items:
       - name: ユーザーの詳細を取得する
@@ -3696,7 +3696,7 @@ items:
         href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
       - name: ユーザーの数を取得する
         href: api/reportroot-getyammerdeviceusageusercounts.md
-    - name: Yammer グループ活動
+    - name: Yammer グループ アクティビティ
       href: resources/yammer-groups-activity-reports.md
       items:
       - name: グループの詳細を取得する
@@ -3705,7 +3705,7 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: アクティビティの数を取得する
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: Security
+  - name: セキュリティ
     href: resources/security-api-overview.md
     items:
     - name: アラート
@@ -3713,9 +3713,9 @@ items:
       items:
       - name: アラートを一覧表示する
         href: api/alert-list.md
-      - name: 警告の取得
+      - name: アラートを取得する
         href: api/alert-get.md
-      - name: 警告の更新
+      - name: アラートを更新する
         href: api/alert-update.md
     - name: エラー
       href: resources/security-error-codes.md
@@ -3737,24 +3737,24 @@ items:
       items:
       - name: リストを取得する
         href: api/list-get.md
-      - name: 項目を取得します。
+      - name: 項目を取得する
         href: api/listitem-list.md
-      - name: リストを作成します。
+      - name: リストを作成する
         href: api/list-create.md
     - name: ListItems
       href: resources/listitem.md
       items:
-      - name: アイテムを取得する
+      - name: 項目を取得する
         href: api/listitem-get.md
-      - name: アイテムを作成する
+      - name: 項目を作成する
         href: api/listitem-create.md
-      - name: アイテムを更新する
+      - name: 項目を更新する
         href: api/listitem-update.md
-      - name: アイテムの削除
+      - name: 項目を削除する
         href: api/listitem-delete.md
-      - name: バージョンの一覧表示
+      - name: バージョンを一覧表示する
         href: api/listitem-list-versions.md
-  - name: '社会的知性: 人'
+  - name: 'ソーシャル インテリジェンス: 連絡先'
     href: resources/social-overview.md
     items:
     - name: 人物
@@ -3762,7 +3762,7 @@ items:
       items:
       - name: ユーザーを一覧表示する
         href: api/user-list-people.md
-  - name: タスクとプラン
+  - name: タスクと計画
     displayName: Planner
     href: resources/planner-overview.md
     items:
@@ -3771,82 +3771,82 @@ items:
       items:
       - name: 計画を作成する
         href: api/planner-post-plans.md
-      - name: グループのリストの計画
+      - name: グループ計画を一覧表示する
         href: api/plannergroup-list-plans.md
       - name: 計画を取得する
         href: api/plannerplan-get.md
-      - name: 計画タスクの一覧
+      - name: 計画タスクを一覧表示する
         href: api/plannerplan-list-tasks.md
-      - name: 計画バケットの一覧
+      - name: 計画バケットを一覧表示する
         href: api/plannerplan-list-buckets.md
       - name: 計画を更新する
         href: api/plannerplan-update.md
     - name: タスク
       href: resources/plannertask.md
       items:
-      - name: タスクを作成します。
+      - name: タスクを作成する
         href: api/planner-post-tasks.md
-      - name: ユーザーのタスクを取得します。
+      - name: ユーザーのタスクを取得する
         href: api/planneruser-list-tasks.md
-      - name: タスクを取得します。
+      - name: タスクを取得する
         href: api/plannertask-get.md
-      - name: タスクを更新します。
+      - name: タスクを更新する
         href: api/plannertask-update.md
-      - name: タスクを削除します。
+      - name: タスクを削除する
         href: api/plannertask-delete.md
     - name: タスクの詳細
       href: resources/plannertaskdetails.md
       items:
-      - name: タスクの詳細を取得します。
+      - name: タスクの詳細を取得する
         href: api/plannertaskdetails-get.md
-      - name: タスクの詳細を更新します。
+      - name: タスクの詳細を更新する
         href: api/plannertaskdetails-update.md
-    - name: プランの詳細
+    - name: 計画の詳細
       href: resources/plannerplandetails.md
       items:
-      - name: プランの詳細を取得します。
+      - name: 計画の詳細を取得する
         href: api/plannerplandetails-get.md
-      - name: プランの詳細を更新します。
+      - name: 計画の詳細を更新する
         href: api/plannerplandetails-update.md
     - name: バケット
       href: resources/plannerbucket.md
       items:
-      - name: バケットを作成します。
+      - name: バケットを作成する
         href: api/planner-post-buckets.md
-      - name: バケットを取得します。
+      - name: バケットを取得する
         href: api/plannerbucket-get.md
-      - name: バケットのタスクの一覧
+      - name: バケットのタスクを一覧表示する
         href: api/plannerbucket-list-tasks.md
-      - name: バケットを更新します。
+      - name: バケットを更新する
         href: api/plannerbucket-update.md
-      - name: バケットを削除します。
+      - name: バケットを削除する
         href: api/plannerbucket-delete.md
-    - name: 掲示板形式のタスクに割り当てられています。
+    - name: タスク ボード形式に割り当て済み
       href: resources/plannerassignedtotaskboardtaskformat.md
       items:
-      - name: 掲示板形式のタスクに割り当てられました。
+      - name: タスク ボード形式に割り当てる
         href: api/plannerassignedtotaskboardtaskformat-get.md
-      - name: 掲示板形式のタスクに割り当てられている更新プログラム
+      - name: タスク ボード形式の割り当てを更新する
         href: api/plannerassignedtotaskboardtaskformat-update.md
-    - name: バケット作業ボード タスクの書式設定
+    - name: バケット タスクのタスク ボード形式
       href: resources/plannerbuckettaskboardtaskformat.md
       items:
-      - name: バケット作業の掲示板の形式を取得します。
+      - name: バケット タスク ボード形式を取得する
         href: api/plannerbuckettaskboardtaskformat-get.md
-      - name: バケット作業の掲示板の形式を更新します。
+      - name: バケット タスク ボード形式を更新する
         href: api/plannerbuckettaskboardtaskformat-update.md
-    - name: 進行中タスク ボード タスクの形式
+    - name: 進行タスクのタスク ボード形式
       href: resources/plannerprogresstaskboardtaskformat.md
       items:
-      - name: 進行中タスクの掲示板の形式を取得します。
+      - name: 進行タスクのタスク ボード形式を取得する
         href: api/plannerprogresstaskboardtaskformat-get.md
-      - name: タスク ボード形式の進行状況を更新します。
+      - name: 進行タスクのタスク ボード形式を更新する
         href: api/plannerprogresstaskboardtaskformat-update.md
   - name: チームワーク
     displayName: Microsoft Teams
     href: resources/teams-api-overview.md
     items:
-    - name: Team
+    - name: チーム
       href: resources/team.md
       items:
       - name: チームを作成する
@@ -3872,13 +3872,13 @@ items:
         href: api/group-post-groups.md
       - name: グループを取得する
         href: api/group-get.md
-      - name: グループの一覧表示
+      - name: グループを一覧表示する
         href: api/group-list.md
       - name: グループを更新する
         href: api/group-update.md
-      - name: グループの削除
+      - name: グループを削除する
         href: api/group-delete.md
-      - name: 結合されたチームをリストします。
+      - name: 結合されたチームを一覧表示する
         href: api/user-list-joinedteams.md
       - name: メンバーを一覧表示する
         href: api/group-list-members.md
@@ -3888,9 +3888,9 @@ items:
         href: api/group-delete-members.md
       - name: 所有者を一覧表示する
         href: api/group-list-owners.md
-      - name: Add owner
+      - name: 所有者を追加する
         href: api/group-post-owners.md
-      - name: 所有者の削除
+      - name: 所有者を削除する
         href: api/group-delete-owners.md
       - name: メンバー グループを取得する
         href: api/group-getmembergroups.md
@@ -3898,53 +3898,53 @@ items:
         href: api/group-getmemberobjects.md
       - name: メンバー グループをチェックする
         href: api/group-checkmembergroups.md
-      - name: リストのメンバー
+      - name: 所属を一覧表示する
         href: api/group-list-memberof.md
-      - name: 削除されたグループを取得します。
+      - name: 削除されたグループを取得する
         href: api/directory-deleteditems-get.md
-      - name: グループのリストが削除されました
+      - name: 削除されたグループを一覧表示する
         href: api/directory-deleteditems-list.md
-      - name: グループを完全に削除します。
+      - name: グループを完全に削除する
         href: api/directory-deleteditems-delete.md
-      - name: 削除されたグループ
+      - name: 削除されたグループを復元する
         href: api/directory-deleteditems-restore.md
     - name: チャネル
       href: resources/channel.md
       items:
       - name: チャネルを一覧表示する
         href: api/channel-list.md
-      - name: チャネルを作成します。
+      - name: チャネルを作成する
         href: api/channel-post.md
-      - name: チャネルを取得します。
+      - name: チャネルを取得する
         href: api/channel-get.md
-    - name: Apps
+    - name: アプリ
       href: resources/teamsapp.md
       items:
-      - name: チームでのアプリケーションの一覧
+      - name: チームのアプリを一覧表示する
         href: api/teamsappinstallation-list.md
       - name: アプリをチームに追加する
         href: api/teamsappinstallation-add.md
-      - name: チームからアプリケーションを削除します。
+      - name: チームからアプリを削除する
         href: api/teamsappinstallation-delete.md
-      - name: カタログにアプリケーションを発行します。
+      - name: アプリ カタログを公開する
         href: api/teamsapp-publish.md
-      - name: カタログの一覧のアプリケーション
+      - name: カタログにあるアプリを一覧表示する
         href: api/teamsapp-list.md
-      - name: カタログでアプリケーションを更新します。
+      - name: カタログにあるアプリを更新する
         href: api/teamsapp-update.md
-      - name: カタログからアプリケーションを削除します。
+      - name: カタログからアプリを削除する
         href: api/teamsapp-delete.md
-      - name: 一覧] タブ
+      - name: タブを一覧表示する
         href: api/teamstab-list.md
-      - name: タブを取得します。
+      - name: タブを取得する
         href: api/teamstab-get.md
-      - name: '[更新] タブ'
+      - name: タブを更新する
         href: api/teamstab-update.md
-      - name: タブを削除します。
+      - name: タブを削除する
         href: api/teamstab-delete.md
-      - name: タブを追加します。
+      - name: タブを追加する
         href: api/teamstab-add.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -3953,11 +3953,11 @@ items:
         href: api/group-post-events.md
       - name: イベントを取得する
         href: api/event-get.md
-      - name: イベントの更新
+      - name: イベントを更新する
         href: api/event-update.md
       - name: イベントを削除する
         href: api/event-delete.md
-      - name: ボックスの一覧の [カレンダー] ビュー
+      - name: 予定表ビューを一覧表示する
         href: api/group-list-calendarview.md
       - name: 添付ファイルを一覧表示する
         href: api/event-list-attachments.md
@@ -3974,12 +3974,12 @@ items:
         href: api/drive-get.md
       - name: 子を一覧表示する
         href: api/driveitem-list-children.md
-    - name: プラン
+    - name: 計画
       href: resources/plannerplan.md
       items:
-      - name: plans を一覧表示する
+      - name: 計画を一覧表示する
         href: api/plannergroup-list-plans.md
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -3993,11 +3993,11 @@ items:
     - name: ブック
       href: resources/workbook.md
       items:
-      - name: セッションを作成します。
+      - name: セッションを作成する
         href: api/workbook-createsession.md
-      - name: セッションを更新します。
+      - name: セッションを更新する
         href: api/workbook-refreshsession.md
-      - name: セッションを終了します
+      - name: セッションを閉じる
         href: api/workbook-closesession.md
       - name: テーブルを一覧表示する
         href: api/workbook-list-tables.md
@@ -4008,99 +4008,99 @@ items:
     - name: ワークシート
       href: resources/worksheet.md
       items:
-      - name: ワークシートを追加します。
+      - name: ワークシートを追加する
         href: api/worksheetcollection-add.md
-      - name: ワークシートを取得します。
+      - name: ワークシートを取得する
         href: api/worksheet-get.md
-      - name: Usedrange を取得します。
+      - name: Usedrange を取得する
         href: api/worksheet-usedrange.md
       - name: ワークシートを更新する
         href: api/worksheet-update.md
-      - name: セルを取得します。
+      - name: セルを取得する
         href: api/worksheet-cell.md
-      - name: 範囲を取得します。
+      - name: 範囲を取得する
         href: api/worksheet-range.md
       - name: テーブルを一覧表示する
         href: api/worksheet-list-tables.md
-      - name: テーブルの追加
+      - name: テーブルを追加する
         href: api/worksheet-post-tables.md
       - name: グラフを一覧表示する
         href: api/worksheet-list-charts.md
-      - name: グラフを追加します。
+      - name: グラフを追加する
         href: api/worksheet-post-charts.md
     - name: 範囲
       href: resources/range.md
       items:
-      - name: 範囲を取得します。
+      - name: 範囲を取得する
         href: api/range-get.md
       - name: 範囲を更新する
         href: api/range-update.md
-      - name: 範囲を挿入します。
+      - name: 範囲を挿入する
         href: api/range-insert.md
-      - name: 範囲の書式を取得します。
+      - name: 範囲の書式を取得する
         href: api/rangeformat-get.md
-      - name: 範囲の書式を更新
+      - name: 範囲の書式を更新する
         href: api/rangeformat-update.md
-      - name: Merge
+      - name: 結合する
         href: api/range-merge.md
-      - name: 結合を解除します。
+      - name: 結合を解除する
         href: api/range-unmerge.md
-      - name: 透明
+      - name: 解除する
         href: api/range-clear.md
-      - name: 削除
+      - name: 削除する
         href: api/range-delete.md
-    - name: Table
+    - name: テーブル
       href: resources/table.md
       items:
-      - name: テーブルの追加
+      - name: テーブルを追加する
         href: api/tablecollection-add.md
-      - name: テーブルを取得します。
+      - name: テーブルを取得する
         href: api/table-get.md
-      - name: テーブルの更新
+      - name: テーブルを更新する
         href: api/table-update.md
-      - name: テーブルを削除します。
+      - name: テーブルを削除する
         href: api/table-delete.md
       - name: 行を一覧表示する
         href: api/table-list-rows.md
-      - name: 行を作成します。
+      - name: 行を作成する
         href: api/table-post-rows.md
       - name: 列を一覧表示する
         href: api/table-list-columns.md
-      - name: 列を作成します。
+      - name: 列を作成する
         href: api/table-post-columns.md
-      - name: 範囲を取得します。
+      - name: 範囲を取得する
         href: api/table-range.md
     - name: グラフ
       href: resources/chart.md
       items:
       - name: グラフを一覧表示する
         href: api/chart-list.md
-      - name: グラフを取得します。
+      - name: グラフを取得する
         href: api/chart-get.md
-      - name: Update chart
+      - name: グラフを更新する
         href: api/chart-update.md
-      - name: グラフを削除します。
+      - name: グラフを削除する
         href: api/chart-delete.md
-      - name: グラフを追加します。
+      - name: グラフを追加する
         href: api/chartcollection-add.md
       - name: グラフの画像を取得する
         href: api/chart-image.md
-      - name: データをリセットします。
+      - name: データをリセットする
         href: api/chart-setdata.md
-      - name: 位置データ
+      - name: 位置データを設定する
         href: api/chart-setposition.md
     - name: 名前付きアイテム
       href: resources/nameditem.md
       items:
-      - name: 名前付きアイテム] ボックスの一覧
+      - name: 名前付きアイテムを一覧表示する
         href: api/nameditem-list.md
-      - name: 名前付き項目を取得
+      - name: 名前付きアイテムを取得する
         href: api/nameditem-get.md
-      - name: 名前付きアイテムの更新
+      - name: 名前付きアイテムを更新する
         href: api/nameditem-update.md
-      - name: 名前付きアイテムを追加します。
+      - name: 名前付きアイテムを追加する
         href: api/nameditem-add.md
-      - name: リスト範囲
+      - name: 範囲を一覧表示する
         href: api/nameditem-range.md
   - name: ツール
   - name: オープン拡張機能
@@ -4118,15 +4118,15 @@ items:
   - name: スキーマ拡張機能
     href: resources/schemaextension.md
     items:
-    - name: リスト スキーマの拡張機能
+    - name: スキーマ拡張機能を一覧表示する
       href: api/schemaextension-list.md
-    - name: スキーマ拡張機能を作成します。
+    - name: スキーマ拡張機能を作成する
       href: api/schemaextension-post-schemaextensions.md
-    - name: スキーマ拡張機能を取得します。
+    - name: スキーマ拡張機能を取得する
       href: api/schemaextension-get.md
-    - name: スキーマの拡張機能を更新します。
+    - name: スキーマ拡張機能を更新する
       href: api/schemaextension-update.md
-    - name: スキーマ拡張機能を削除します。
+    - name: スキーマ拡張機能を削除する
       href: api/schemaextension-delete.md
     displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
   - name: 変更通知
@@ -4136,7 +4136,7 @@ items:
     - name: サブスクリプション
       href: resources/subscription.md
       items:
-      - name: リスト購読
+      - name: サブスクリプションを一覧表示する
         href: api/subscription-list.md
       - name: サブスクリプションを取得する
         href: api/subscription-get.md
@@ -4149,7 +4149,7 @@ items:
   expanded: true
 ms.openlocfilehash: 1339855adb73ed440f159043c7d5d60e65752ebd
 ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/07/2019
 ms.locfileid: "29760973"
