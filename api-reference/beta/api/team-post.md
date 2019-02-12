@@ -4,30 +4,30 @@ description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e34a095597064401f59ad5f78f8ca092e93b94b4
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: d5463bdc2cc5aa5b471e9526be579364991645ad
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745532"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892520"
 ---
-# <a name="create-team"></a><span data-ttu-id="05d18-103">チームを作成する</span><span class="sxs-lookup"><span data-stu-id="05d18-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="f33be-103">チームを作成する</span><span class="sxs-lookup"><span data-stu-id="f33be-103">Create team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="05d18-104">新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="05d18-104">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="f33be-104">新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="f33be-104">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="05d18-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="05d18-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f33be-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f33be-105">Permissions</span></span>
 
-<span data-ttu-id="05d18-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05d18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f33be-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f33be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="05d18-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="05d18-108">Permission type</span></span>                        | <span data-ttu-id="05d18-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="05d18-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f33be-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f33be-108">Permission type</span></span>                        | <span data-ttu-id="f33be-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f33be-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="05d18-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="05d18-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="05d18-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05d18-111">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="05d18-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="05d18-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05d18-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05d18-113">Not supported.</span></span>                              |
-| <span data-ttu-id="05d18-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="05d18-114">Application</span></span>                            | <span data-ttu-id="05d18-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05d18-115">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="f33be-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f33be-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f33be-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f33be-111">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="f33be-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f33be-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f33be-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f33be-113">Not supported.</span></span>                              |
+| <span data-ttu-id="f33be-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f33be-114">Application</span></span>                            | <span data-ttu-id="f33be-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f33be-115">Group.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="05d18-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="05d18-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f33be-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f33be-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,28 +35,28 @@ ms.locfileid: "29745532"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="05d18-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05d18-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f33be-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f33be-117">Request headers</span></span>
 
-| <span data-ttu-id="05d18-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05d18-118">Header</span></span>        | <span data-ttu-id="05d18-119">値</span><span class="sxs-lookup"><span data-stu-id="05d18-119">Value</span></span>                     |
+| <span data-ttu-id="f33be-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f33be-118">Header</span></span>        | <span data-ttu-id="f33be-119">値</span><span class="sxs-lookup"><span data-stu-id="f33be-119">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="05d18-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="05d18-120">Authorization</span></span> | <span data-ttu-id="05d18-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="05d18-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="05d18-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="05d18-123">Content-Type</span></span>  | <span data-ttu-id="05d18-124">application/json</span><span class="sxs-lookup"><span data-stu-id="05d18-124">application/json</span></span>          |
+| <span data-ttu-id="f33be-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f33be-120">Authorization</span></span> | <span data-ttu-id="f33be-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f33be-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f33be-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f33be-123">Content-Type</span></span>  | <span data-ttu-id="f33be-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f33be-124">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="05d18-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="05d18-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f33be-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f33be-125">Request body</span></span>
 
-<span data-ttu-id="05d18-126">要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="05d18-126">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="f33be-126">要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f33be-126">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="05d18-127">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f33be-127">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-127">Response</span></span>
 
-<span data-ttu-id="05d18-128">成功すると、この API は [teamsAsyncOperation](../resources/teamsasyncoperation.md) へのリンクを含む `202 Accepted` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="05d18-128">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="f33be-128">成功すると、この API は [teamsAsyncOperation](../resources/teamsasyncoperation.md) へのリンクを含む `202 Accepted` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="f33be-128">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="05d18-129">例</span><span class="sxs-lookup"><span data-stu-id="05d18-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f33be-129">例</span><span class="sxs-lookup"><span data-stu-id="f33be-129">Examples</span></span>
 
-### <a name="example-1-delegated-permissions"></a><span data-ttu-id="05d18-130">例 1: 委任されたアクセス許可</span><span class="sxs-lookup"><span data-stu-id="05d18-130">Example 1: Delegated permissions</span></span>
+### <a name="example-1-delegated-permissions"></a><span data-ttu-id="f33be-130">例 1: 委任されたアクセス許可</span><span class="sxs-lookup"><span data-stu-id="f33be-130">Example 1: Delegated permissions</span></span>
 
-<span data-ttu-id="05d18-131">最低限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05d18-131">The following is an example of a minimal request.</span></span> <span data-ttu-id="05d18-132">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="05d18-132">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="f33be-131">最低限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f33be-131">The following is an example of a minimal request.</span></span> <span data-ttu-id="f33be-132">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f33be-132">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="05d18-133">要求</span><span class="sxs-lookup"><span data-stu-id="05d18-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f33be-133">要求</span><span class="sxs-lookup"><span data-stu-id="f33be-133">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="05d18-134">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f33be-134">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-134">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -79,11 +79,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-2-application-permissions"></a><span data-ttu-id="05d18-135">例 2:アプリケーションのアクセス許可</span><span class="sxs-lookup"><span data-stu-id="05d18-135">Example 2: Application permissions</span></span>
+### <a name="example-2-application-permissions"></a><span data-ttu-id="f33be-135">例 2:アプリケーションのアクセス許可</span><span class="sxs-lookup"><span data-stu-id="f33be-135">Example 2: Application permissions</span></span>
 
-<span data-ttu-id="05d18-136">アプリケーションのアクセス許可を使用した最小限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05d18-136">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="05d18-137">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="05d18-137">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="05d18-138">アプリケーションのアクセス許可で要求を発行する際には、[ユーザー](../resources/user.md)が `owners` コレクションで指定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="05d18-138">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
+<span data-ttu-id="f33be-136">アプリケーションのアクセス許可を使用した最小限の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f33be-136">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="f33be-137">他のプロパティを省略することにより、クライアントは `template` で表される事前に定義されたテンプレートから暗黙的に既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f33be-137">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="f33be-138">アプリケーションのアクセス許可で要求を発行する際には、[ユーザー](../resources/user.md)が `owners` コレクションで指定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f33be-138">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="05d18-139">要求</span><span class="sxs-lookup"><span data-stu-id="05d18-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f33be-139">要求</span><span class="sxs-lookup"><span data-stu-id="f33be-139">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -98,7 +98,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="05d18-140">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f33be-140">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-140">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -109,17 +109,17 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="05d18-141">例 3: 委任されたアクセス許可を使用して、インストールされたアプリと固定されたタブによる複数のチャネルを持つチームを作成する</span><span class="sxs-lookup"><span data-stu-id="05d18-141">Example 3: Create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
+### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="f33be-141">例 3: 委任されたアクセス許可を使用して、インストールされたアプリと固定されたタブによる複数のチャネルを持つチームを作成する</span><span class="sxs-lookup"><span data-stu-id="f33be-141">Example 3: Create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="05d18-142">完全なペイロードの要求を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05d18-142">The following is a request with a full payload.</span></span> <span data-ttu-id="05d18-143">クライアントは基本テンプレートの値を上書きして、`specialization` の検証規則で許容される範囲に配列値のアイテムを追加できます。</span><span class="sxs-lookup"><span data-stu-id="05d18-143">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span> 
+<span data-ttu-id="f33be-142">完全なペイロードの要求を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f33be-142">The following is a request with a full payload.</span></span> <span data-ttu-id="f33be-143">クライアントは基本テンプレートの値を上書きして、`specialization` の検証規則で許容される範囲に配列値のアイテムを追加できます。</span><span class="sxs-lookup"><span data-stu-id="f33be-143">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="05d18-144">要求</span><span class="sxs-lookup"><span data-stu-id="05d18-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f33be-144">要求</span><span class="sxs-lookup"><span data-stu-id="f33be-144">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="05d18-145">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f33be-145">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-145">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -207,15 +207,15 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="05d18-146">例 4: 非標準のベース テンプレート タイプを使用してチームを作成する</span><span class="sxs-lookup"><span data-stu-id="05d18-146">Example 4: Create a team with a non-standard base template type</span></span>
+### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="f33be-146">例 4: 非標準のベース テンプレート タイプを使用してチームを作成する</span><span class="sxs-lookup"><span data-stu-id="f33be-146">Example 4: Create a team with a non-standard base template type</span></span>
 
-<span data-ttu-id="05d18-147">ベース テンプレート タイプとは、Microsoft が特定の業界向けに作成した特別なテンプレートです。</span><span class="sxs-lookup"><span data-stu-id="05d18-147">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="05d18-148">多くの場合、これらのベース テンプレートにはストアでは入手できない独自のアプリおよび Microsoft Teams のテンプレートでまだ個別にサポートされていないチームのプロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="05d18-148">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
+<span data-ttu-id="f33be-147">ベース テンプレート タイプとは、Microsoft が特定の業界向けに作成した特別なテンプレートです。</span><span class="sxs-lookup"><span data-stu-id="f33be-147">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="f33be-148">多くの場合、これらのベース テンプレートにはストアでは入手できない独自のアプリおよび Microsoft Teams のテンプレートでまだ個別にサポートされていないチームのプロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f33be-148">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
 
-<span data-ttu-id="05d18-149">非標準のベース テンプレートからチームを作成するには、要求本文で `template@odata.bind` プロパティを `standard` から使用する特定のベース テンプレートへのポイントに変更します。</span><span class="sxs-lookup"><span data-stu-id="05d18-149">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
+<span data-ttu-id="f33be-149">非標準のベース テンプレートからチームを作成するには、要求本文で `template@odata.bind` プロパティを `standard` から使用する特定のベース テンプレートへのポイントに変更します。</span><span class="sxs-lookup"><span data-stu-id="f33be-149">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
 
-<span data-ttu-id="05d18-150">サポートされているベース テンプレートの詳細については、「[Teams テンプレートの使用を開始する](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05d18-150">To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="f33be-150">サポートされているベース テンプレートの詳細については、「[Teams テンプレートの使用を開始する](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f33be-150">To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="05d18-151">要求</span><span class="sxs-lookup"><span data-stu-id="05d18-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f33be-151">要求</span><span class="sxs-lookup"><span data-stu-id="f33be-151">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -227,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="05d18-152">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f33be-152">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-152">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -238,13 +238,13 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="05d18-153">例 5: 拡張プロパティを含んだ非標準のベース テンプレート タイプを使用してチームを作成する</span><span class="sxs-lookup"><span data-stu-id="05d18-153">Example 5: Create a team with a non-standard base template type with extended properties</span></span>
+### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="f33be-153">例 5: 拡張プロパティを含んだ非標準のベース テンプレート タイプを使用してチームを作成する</span><span class="sxs-lookup"><span data-stu-id="f33be-153">Example 5: Create a team with a non-standard base template type with extended properties</span></span>
 
-<span data-ttu-id="05d18-154">ベース テンプレート タイプは追加のプロパティを使用して拡張することができ、既存のベース テンプレートを元にチームの追加の設定、チャンネル、アプリ、またはタブを設定してベース テンプレートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="05d18-154">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
+<span data-ttu-id="f33be-154">ベース テンプレート タイプは追加のプロパティを使用して拡張することができ、既存のベース テンプレートを元にチームの追加の設定、チャンネル、アプリ、またはタブを設定してベース テンプレートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="f33be-154">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
 
-<span data-ttu-id="05d18-155">サポートされているベース テンプレートとサポートされているプロパティの詳細については、「[Teams テンプレートの使用を開始する](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05d18-155">To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="f33be-155">サポートされているベース テンプレートとサポートされているプロパティの詳細については、「[Teams テンプレートの使用を開始する](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f33be-155">To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="05d18-156">要求</span><span class="sxs-lookup"><span data-stu-id="05d18-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f33be-156">要求</span><span class="sxs-lookup"><span data-stu-id="f33be-156">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -281,7 +281,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="05d18-157">応答</span><span class="sxs-lookup"><span data-stu-id="05d18-157">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f33be-157">応答</span><span class="sxs-lookup"><span data-stu-id="f33be-157">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -292,12 +292,12 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="05d18-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="05d18-158">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f33be-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="f33be-158">See also</span></span>
 
-- [<span data-ttu-id="05d18-159">使用可能なテンプレート</span><span class="sxs-lookup"><span data-stu-id="05d18-159">Available templates</span></span>](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
-- [<span data-ttu-id="05d18-160">Retail Teams テンプレートの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="05d18-160">Getting started with Retail Teams templates</span></span>](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [<span data-ttu-id="05d18-161">Healthcare Teams テンプレートの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="05d18-161">Getting started with Healthcare Teams templates</span></span>](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
-- [<span data-ttu-id="05d18-162">チームを使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="05d18-162">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="f33be-159">使用可能なテンプレート</span><span class="sxs-lookup"><span data-stu-id="f33be-159">Available templates</span></span>](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
+- [<span data-ttu-id="f33be-160">Retail Teams テンプレートの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="f33be-160">Getting started with Retail Teams templates</span></span>](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [<span data-ttu-id="f33be-161">Healthcare Teams テンプレートの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="f33be-161">Getting started with Healthcare Teams templates</span></span>](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [<span data-ttu-id="f33be-162">チームを使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="f33be-162">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
 
 <!-- {
   "type": "#page.annotation",
