@@ -1,12 +1,12 @@
 ---
 title: 国内クラウドの展開
 description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国の雲のバージョンは、物理および論理ネットワークの分離のインスタンスを特定の国の地理的な境界の内部に限定され、ローカル スタッフによって運営されている Microsoft のエンタープライズのクラウド サービスです。
-ms.openlocfilehash: a5f5c5d0ae8611957cb9087de53f5ddd87d1f25d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571297"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892499"
 ---
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 
@@ -65,10 +65,10 @@ Azure AD に関するその他のアクセス トークンと Microsoft のグ�
 | Outlook カレンダー | ✔ | ✔ | ✔ |
 | 個人用連絡先 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔* | ✔ |
-| デルタ クエリ | ✔ | ✔ | ✔ |
-| Webhooks  | ✔ | ✔ | ✔ |
+| プランナー|✔ |✔ |✔ |
 | レポート  |➖| ✔ |➖|
-| Microsoft Planner|➖|➖|➖|
+| デルタ クエリ | ➖ | ➖| ➖ |
+| Webhook  | ➖| ➖| ➖
 |ディレクトリ スキーマの拡張 |➖|➖|➖|
 | オープン型の拡張機能|➖|➖|➖|
   

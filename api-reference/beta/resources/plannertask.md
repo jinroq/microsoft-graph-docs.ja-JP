@@ -4,12 +4,12 @@ description: '**plannerTask** リソースは、Office 365 の Planner のタス
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: daa5b451211b442fb1b5b197f323baa4cd37cda7
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511213"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892506"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask のリソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "29511213"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|チェックリストの項目数で、値が「false」である場合は、不完全な項目があることを示します。|
+|activeChecklistItemCount|Int32|チェックリストの項目の値を設定して`false`、不完全な項目を指定します。|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|タスクが適用されているカテゴリ。可能な値については、「[適用されるカテゴリ](plannerappliedcategories.md)」を参照してください。|
 |assigneePriority|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 |assignments|[plannerAssignments](plannerassignments.md)|タスクが割り当てられている一連の担当者。|
@@ -46,7 +46,7 @@ ms.locfileid: "29511213"
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 |percentComplete|Int32|タスクの完了の割合。`100` に設定すると、タスクが完了したと見なされます。 |
 |planId|String|タスクが属している計画 ID。|
-|previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。|
+|previewType|String|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|タスクに上に存在している外部への参照の数。|
 |startDateTime|DateTimeOffset|タスクが開始される日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |タイトル|String|タスクのタイトル。|
@@ -89,7 +89,7 @@ ms.locfileid: "29511213"
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
