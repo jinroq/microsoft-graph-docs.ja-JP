@@ -4,12 +4,12 @@ description: OneNote ノートブックです。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 24e9a7a4b87a59af27166121aff2847f5f15d894
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641625"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967278"
 ---
 # <a name="notebook-resource-type"></a>notebook リソースの種類
 
@@ -51,10 +51,10 @@ OneNote ノートブックです。
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
+|createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用。|
 |createdDateTime|DateTimeOffset|ノートブックが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|id|String|ノートブックの一意識別子。読み取り専用です。|
-|isDefault|Boolean|これがユーザーの既定のノートブックであるかどうかを示します。読み取り専用です。|
+|id|文字列|ノートブックの一意識別子。読み取り専用です。|
+|isDefault|ブール値|これがユーザーの既定のノートブックであるかどうかを示します。読み取り専用です。|
 |IsShared|Boolean|ノートブックを共有するかどうかを示します。True の場合、所有者以外のユーザーにノートブックのコンテンツが表示されます。読み取り専用です。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|ノートブックが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
@@ -77,6 +77,7 @@ OneNote ノートブックです。
 |:---------------|:--------|:----------|
 |[Get notebook](../api/notebook-get.md) | [Notebook](notebook.md) |ノートブックのプロパティとリレーションシップを読み取ります。|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) コレクション | ユーザーの最近アクセスしたノートブックのコレクションを取得します。 |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | プロパティと URL パスを使用してノートブックのオブジェクトの関係を取得します。 |
 |[Create section group](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 指定したノートブックで sectionGroup コレクションに投稿してセクション グループを作成します。|
 |[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) コレクション| 指定されたノートブック内のセクション グループのコレクションを取得します。|
 |[Create section](../api/notebook-post-sections.md) |[Section](section.md)| 指定されたノートブックでセクションのコレクションに投稿してセクションを作成します。|

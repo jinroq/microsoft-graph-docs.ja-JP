@@ -1,23 +1,24 @@
 ---
-title: 参加者の一覧
+title: 参加者を一覧表示する
 description: 呼び出し内の構成要素のオブジェクトの一覧を取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f4eb95e4aed03dfd9809f8afb0e3f3557717430
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507622"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967348"
 ---
-# <a name="list-participants"></a>参加者の一覧
+# <a name="list-participants"></a>参加者を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 呼び出し内の構成要素のオブジェクトの一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
@@ -27,42 +28,49 @@ ms.locfileid: "29507622"
 | アプリケーション     | なし                                        |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前          | 説明               |
 |:--------------|:--------------------------|
 | Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[構成要素](../resources/participant.md)オブジェクトのコレクションです。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1"></a>例 1
-
-##### <a name="request"></a>要求
-次の例は要求を示しています。
+### <a name="request"></a>要求
 
 <!-- {
   "blockType": "request",
   "name": "get-participants"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants
+GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
+Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a>応答
+<!-- markdownlint-disable MD024 -->
+
+### <a name="response"></a>応答
 
 > **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
@@ -73,66 +81,11 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
   "isCollection": true,
   "truncated": true
 } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1152
-
-{
-  "value": [
-    {
-      "id": "id-value",
-      "info": {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "languageId": "languageId-value",
-        "region": "region-value"
-      },
-      "isInLobby": false,
-      "isMuted": true,
-      "mediaStreams": [
-        {
-          "sourceId": "1",
-          "direction": "sendReceive",
-          "label": "main-audio",
-          "mediaType": "audio",
-          "serverMuted": false
-        }
-      ],
-      "metadata": "metadata-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2"></a>例 2
-
-##### <a name="request"></a>要求
-
-```http
-GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
-Authorization: Bearer <TOKEN>
-```
-
-##### <a name="response"></a>応答
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
-}-->
-```json
 {
   "value": [
     {

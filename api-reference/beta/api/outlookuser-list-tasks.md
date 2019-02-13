@@ -4,20 +4,21 @@ description: ユーザーのメールボックス内のすべての Outlook タ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8a9f9af56f821890e01f2a77f5bfb953e7bd31f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f854d5649c311531e65909c3d6b33f356cd5bac2
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523898"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967355"
 ---
-# <a name="list-tasks"></a>List tasks
+# <a name="list-tasks"></a>タスクを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーのメールボックス内のすべての Outlook タスクを取得します。
 
-既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone` 1 つのタスクを取得する[例](outlooktask-get.md#example-2)を参照してください。 複数のタスクを取得するには、同様にヘッダーを適用することができます。 
+既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。
+`Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。 1 つのタスクを取得する[例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)を参照してください。 複数のタスクを取得するには、同様にヘッダーを適用することができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -59,7 +60,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。 
+以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。
 
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

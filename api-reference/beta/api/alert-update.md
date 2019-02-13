@@ -1,17 +1,17 @@
 ---
-title: 警告の更新
+title: アラートを更新する
 description: アラートの状態および割り当ての同期を保つソリューション全体に統合されたソリューション内で編集可能なアラートのプロパティを更新します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fc0bc88dad83024d3da2d6f2adf3f16288719cb2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517415"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967327"
 ---
-# <a name="update-alert"></a>警告の更新
+# <a name="update-alert"></a>アラートを更新する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,12 +49,12 @@ PATCH /security/alerts/{alert_id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|AssignedTo|String|アナリスト、警告の名前は、選別、調査、または修復用に割り当てられます。|
+|assignedTo|String|アナリスト、警告の名前は、選別、調査、または修復用に割り当てられます。|
 |closedDateTime|DateTimeOffset|時間のアラートが閉じられました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |comments|String コレクション|(顧客の警告管理) の警告のアナリストのコメントです。|
-|feedback|alertFeedback 列挙型|アナリストのフィードバック通知をします。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
-|status|alertStatus 列挙型|アラートのライフ サイクルのステータス (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
-|タグの前に追加されるマークアップ|String コレクション|アラートに適用することができますし、フィルターの条件 (たとえば、"HVA"、"されていた) として使用できるユーザー定義のラベル。|
+|feedback|alertFeedback 列挙型|アナリストのフィードバック通知をします。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
+|status|alertStatus 列挙型|アラートのライフ サイクルのステータス (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
+|tags|String コレクション|アラートに適用することができますし、フィルターの条件 (たとえば、"HVA"、"されていた) として使用できるユーザー定義のラベル。|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品やサービスの仕入先、プロバイダー、および subprovider の詳細を含む複合型 (仕入先など = Microsoft; プロバイダー = Windows Defender の ATP は subProvider AppLocker を =)。 **プロバイダーおよび仕入先のフィールドは、必要があります。**|
 
 ## <a name="response"></a>応答
@@ -63,11 +63,13 @@ PATCH /security/alerts/{alert_id}
 
 省略可能な要求ヘッダーが使用され、メソッドが返されます、`200 OK`応答コードおよび応答の本体で更新された[アラート](../resources/alert.md)オブジェクトです。
 
-## <a name="example-1"></a>例 1
+## <a name="examples"></a>例
 
-### <a name="request"></a>要求
+### <a name="example-1-request-without-prefer-header"></a>選択ヘッダーなしの例 1: 要求
 
-要求の例を次に示します。
+#### <a name="request"></a>要求
+
+次のことがなく要求の例では、`Prefer`ヘッダー。
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -92,9 +94,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>応答
+<!-- markdownlint-disable MD024 -->
 
-次は、正常な応答の例です。
+#### <a name="response"></a>応答
+
+成功応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,9 +109,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>例 2
+### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーの選択
 
-### <a name="request"></a>要求
+#### <a name="request"></a>要求
 
 次の例では、要求を含む、`Prefer`要求ヘッダー。
 
@@ -136,11 +140,11 @@ Prefer: return=representation
 }
 ```
 
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 次の応答の例ではときに、省略可能な`Prefer: return=representation`要求ヘッダーを使用します。
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

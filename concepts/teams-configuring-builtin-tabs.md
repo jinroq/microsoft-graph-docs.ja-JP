@@ -4,12 +4,12 @@ description: Microsoft Graph API を使用して Microsoft Teams タブを作成
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
-ms.translationtype: HT
+ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726541"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967194"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -18,9 +18,9 @@ Microsoft Graph API を使用して Microsoft Teams タブを[作成](/graph/api
 
 ## <a name="custom-tabs"></a>カスタム タブ
 
-Microsoft Graph を使用して、作成した[タブ プロバイダー](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) と関連付けるタブを構成するには、アプリの[構成 UI が Microsoft Teams に提供する](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` を識別し、同じ `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` の値を Microsoft Graph に渡します。
+Microsoft Graph を使用して、作成した[タブ プロバイダー](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) と関連付けるタブを構成するには、アプリの[構成 UI が Microsoft Teams に提供する](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` を識別し、同じ `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` の値を Microsoft Graph に渡します。
 
-`teamsAppId` は、[Microsoft Teams のアプリ マニフェスト スキーマ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/resources/schema/manifest-schema)の `id` と同じです。
+`teamsAppId` は、[Microsoft Teams のアプリ マニフェスト スキーマ](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema)の `id` と同じです。
 
 ## <a name="website-tabs"></a>Web サイトのタブ
 
@@ -115,7 +115,32 @@ Wiki のタブは、Graph による構成をサポートしていません。
 
 ## <a name="document-library-tabs"></a>ドキュメント ライブラリのタブ
 
-ドキュメント ライブラリのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.files.sharepoint` です。 構成はサポートされていません。
+ドキュメント ライブラリのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.files.sharepoint` です。 構成は以下のとおりです。
+
+| プロパティ   | 型        | 説明                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | 空の文字列 ("")                                        |
+| contentUrl | string      | ドキュメント ライブラリのルート フォルダーの URL。 お使いのブラウザーで SharePoint フォルダーを開き、URL をコピーおよび削除して、この URL を検索できます」と Forms/AllItems.aspx」とその後のすべてのものです。 |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>例: 設定済みのドキュメント ライブラリ] タブを作成します。
+
+次の例では、構成された Word タブを作成します。
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
 
 ## <a name="onenote-tabs"></a>OneNote のタブ
 
@@ -123,9 +148,9 @@ OneNote のタブの場合、`teamsAppId` は `0d820ecd-def2-4297-adad-78056cde7
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | `{randomGuid}_{notebookId}`。ここで、{randomGuid} は、生成する GUID です。                                      |
-| contentUrl | 文字列      | フォームの URL `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
-| removeUrl  | 文字列      | フォームの URL `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
+| entityId   | string      | `{randomGuid}_{notebookId}`。ここで、{randomGuid} は、生成する GUID です。                                      |
+| contentUrl | string      | フォームの URL `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
+| removeUrl  | string      | フォームの URL `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
 | websiteUrl | 文字列      | フォームの URL `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`。ここで、`oneNoteWebUrl` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 |
 
 ## <a name="power-bi-tabs"></a>Power BI のタブ

@@ -4,12 +4,12 @@ description: '削除 (固定解除)、チーム内で指定されたチャネル
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9b66bf69645c9a76ea11375984cf8c56e0dff6bd
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: a5cb2334c250c63d0644c8fab3f97d35c481a515
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016696"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967306"
 ---
 # <a name="delete-tab-from-channel"></a>チャネルからタブを削除します。
 
@@ -26,7 +26,7 @@ ms.locfileid: "28016696"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -64,10 +64,12 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}
+-->
