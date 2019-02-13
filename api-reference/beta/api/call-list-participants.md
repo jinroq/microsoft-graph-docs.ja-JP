@@ -1,70 +1,78 @@
 ---
-title: 参加者の一覧
+title: 参加者を一覧表示する
 description: 呼び出し内の構成要素のオブジェクトの一覧を取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f4eb95e4aed03dfd9809f8afb0e3f3557717430
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507622"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967348"
 ---
-# <a name="list-participants"></a><span data-ttu-id="9bdf9-103">参加者の一覧</span><span class="sxs-lookup"><span data-stu-id="9bdf9-103">List participants</span></span>
+# <a name="list-participants"></a><span data-ttu-id="43b7e-103">参加者を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="43b7e-103">List participants</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9bdf9-104">呼び出し内の構成要素のオブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-104">Retrieve a list of participant objects in the call.</span></span>
+<span data-ttu-id="43b7e-104">呼び出し内の構成要素のオブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="43b7e-104">Retrieve a list of participant objects in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9bdf9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9bdf9-105">Permissions</span></span>
-<span data-ttu-id="9bdf9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="43b7e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="43b7e-105">Permissions</span></span>
 
-| <span data-ttu-id="9bdf9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9bdf9-108">Permission type</span></span> | <span data-ttu-id="9bdf9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9bdf9-109">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="43b7e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="43b7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="43b7e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="43b7e-108">Permission type</span></span> | <span data-ttu-id="43b7e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="43b7e-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="9bdf9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9bdf9-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9bdf9-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="9bdf9-111">Not Supported</span></span>        |
-| <span data-ttu-id="9bdf9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9bdf9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9bdf9-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="9bdf9-113">Not Supported</span></span>        |
-| <span data-ttu-id="9bdf9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9bdf9-114">Application</span></span>     | <span data-ttu-id="9bdf9-115">なし</span><span class="sxs-lookup"><span data-stu-id="9bdf9-115">None</span></span>                                        |
+| <span data-ttu-id="43b7e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="43b7e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="43b7e-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="43b7e-111">Not Supported</span></span>        |
+| <span data-ttu-id="43b7e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="43b7e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43b7e-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="43b7e-113">Not Supported</span></span>        |
+| <span data-ttu-id="43b7e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="43b7e-114">Application</span></span>     | <span data-ttu-id="43b7e-115">なし</span><span class="sxs-lookup"><span data-stu-id="43b7e-115">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="9bdf9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9bdf9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43b7e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="43b7e-116">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9bdf9-117">省略可能なクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="9bdf9-117">Optional query parameters</span></span>
-<span data-ttu-id="9bdf9-118">このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="43b7e-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="43b7e-117">Optional query parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9bdf9-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9bdf9-119">Request headers</span></span>
-| <span data-ttu-id="9bdf9-120">名前</span><span class="sxs-lookup"><span data-stu-id="9bdf9-120">Name</span></span>          | <span data-ttu-id="9bdf9-121">説明</span><span class="sxs-lookup"><span data-stu-id="9bdf9-121">Description</span></span>               |
+<span data-ttu-id="43b7e-118">このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="43b7e-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="43b7e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="43b7e-119">Request headers</span></span>
+
+| <span data-ttu-id="43b7e-120">名前</span><span class="sxs-lookup"><span data-stu-id="43b7e-120">Name</span></span>          | <span data-ttu-id="43b7e-121">説明</span><span class="sxs-lookup"><span data-stu-id="43b7e-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="9bdf9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9bdf9-122">Authorization</span></span> | <span data-ttu-id="9bdf9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="43b7e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="43b7e-122">Authorization</span></span> | <span data-ttu-id="43b7e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="43b7e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9bdf9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="9bdf9-125">Request body</span></span>
-<span data-ttu-id="9bdf9-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43b7e-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="43b7e-125">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="9bdf9-127">応答</span><span class="sxs-lookup"><span data-stu-id="9bdf9-127">Response</span></span>
-<span data-ttu-id="9bdf9-128">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[構成要素](../resources/participant.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-128">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
+<span data-ttu-id="43b7e-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="43b7e-126">Do not supply a request body for this method.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9bdf9-129">例</span><span class="sxs-lookup"><span data-stu-id="9bdf9-129">Examples</span></span>
+## <a name="response"></a><span data-ttu-id="43b7e-127">応答</span><span class="sxs-lookup"><span data-stu-id="43b7e-127">Response</span></span>
 
-### <a name="example-1"></a><span data-ttu-id="9bdf9-130">例 1</span><span class="sxs-lookup"><span data-stu-id="9bdf9-130">Example 1</span></span>
+<span data-ttu-id="43b7e-128">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[構成要素](../resources/participant.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="43b7e-128">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9bdf9-131">要求</span><span class="sxs-lookup"><span data-stu-id="9bdf9-131">Request</span></span>
-<span data-ttu-id="9bdf9-132">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-132">The following example shows the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="43b7e-129">例</span><span class="sxs-lookup"><span data-stu-id="43b7e-129">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="43b7e-130">要求</span><span class="sxs-lookup"><span data-stu-id="43b7e-130">Request</span></span>
 
 <!-- {
   "blockType": "request",
   "name": "get-participants"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants
+GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
+Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a><span data-ttu-id="9bdf9-133">応答</span><span class="sxs-lookup"><span data-stu-id="9bdf9-133">Response</span></span>
+<!-- markdownlint-disable MD024 -->
 
-> <span data-ttu-id="9bdf9-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9bdf9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="43b7e-131">応答</span><span class="sxs-lookup"><span data-stu-id="43b7e-131">Response</span></span>
+
+> <span data-ttu-id="43b7e-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="43b7e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -73,66 +81,11 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
   "isCollection": true,
   "truncated": true
 } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1152
-
-{
-  "value": [
-    {
-      "id": "id-value",
-      "info": {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "languageId": "languageId-value",
-        "region": "region-value"
-      },
-      "isInLobby": false,
-      "isMuted": true,
-      "mediaStreams": [
-        {
-          "sourceId": "1",
-          "direction": "sendReceive",
-          "label": "main-audio",
-          "mediaType": "audio",
-          "serverMuted": false
-        }
-      ],
-      "metadata": "metadata-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2"></a><span data-ttu-id="9bdf9-136">例 2</span><span class="sxs-lookup"><span data-stu-id="9bdf9-136">Example 2</span></span>
-
-##### <a name="request"></a><span data-ttu-id="9bdf9-137">要求</span><span class="sxs-lookup"><span data-stu-id="9bdf9-137">Request</span></span>
-
-```http
-GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
-Authorization: Bearer <TOKEN>
-```
-
-##### <a name="response"></a><span data-ttu-id="9bdf9-138">応答</span><span class="sxs-lookup"><span data-stu-id="9bdf9-138">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
-}-->
-```json
 {
   "value": [
     {
