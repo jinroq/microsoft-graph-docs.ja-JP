@@ -1,620 +1,652 @@
 ---
 title: 列挙値
-description: Graph の列挙値
-ms.openlocfilehash: ab73a185b9e37f99a413486ef4fcdf50bbced7b2
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+description: Microsoft Graph 列挙値
+ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690939"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057051"
 ---
-### <a name="contactrelationship-values"></a><span data-ttu-id="589b6-103">contactRelationship 値</span><span class="sxs-lookup"><span data-stu-id="589b6-103">contactRelationship values</span></span>
+### <a name="contactrelationship-values"></a><span data-ttu-id="66d9c-103">contactrelationship 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-103">contactRelationship values</span></span>
 
-|<span data-ttu-id="589b6-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-104">Member</span></span>|<span data-ttu-id="589b6-105">値</span><span class="sxs-lookup"><span data-stu-id="589b6-105">Value</span></span>|<span data-ttu-id="589b6-106">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-106">Description</span></span>|
+|<span data-ttu-id="66d9c-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-104">Member</span></span>|<span data-ttu-id="66d9c-105">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-105">Value</span></span>|<span data-ttu-id="66d9c-106">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-106">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-107">親</span><span class="sxs-lookup"><span data-stu-id="589b6-107">parent</span></span>|<span data-ttu-id="589b6-108">0</span><span class="sxs-lookup"><span data-stu-id="589b6-108">0</span></span>|<span data-ttu-id="589b6-109">ユーザーの親です。</span><span class="sxs-lookup"><span data-stu-id="589b6-109">The user's parent.</span></span>|
-|<span data-ttu-id="589b6-110">相対</span><span class="sxs-lookup"><span data-stu-id="589b6-110">relative</span></span>|<span data-ttu-id="589b6-111">1</span><span class="sxs-lookup"><span data-stu-id="589b6-111">1</span></span>| <span data-ttu-id="589b6-112">ユーザーは、相対的なのです。</span><span class="sxs-lookup"><span data-stu-id="589b6-112">The user's relative.</span></span>|
-|<span data-ttu-id="589b6-113">aide</span><span class="sxs-lookup"><span data-stu-id="589b6-113">aide</span></span>|<span data-ttu-id="589b6-114">2</span><span class="sxs-lookup"><span data-stu-id="589b6-114">2</span></span>| <span data-ttu-id="589b6-115">ユーザーの aide。</span><span class="sxs-lookup"><span data-stu-id="589b6-115">The user's aide.</span></span>|
-|<span data-ttu-id="589b6-116">医師</span><span class="sxs-lookup"><span data-stu-id="589b6-116">doctor</span></span>|<span data-ttu-id="589b6-117">3</span><span class="sxs-lookup"><span data-stu-id="589b6-117">3</span></span>| <span data-ttu-id="589b6-118">ユーザーの医師です。</span><span class="sxs-lookup"><span data-stu-id="589b6-118">The user's doctor.</span></span>|
-|<span data-ttu-id="589b6-119">ガーディアン</span><span class="sxs-lookup"><span data-stu-id="589b6-119">guardian</span></span>|<span data-ttu-id="589b6-120">4</span><span class="sxs-lookup"><span data-stu-id="589b6-120">4</span></span>| <span data-ttu-id="589b6-121">ユーザーの守護者。</span><span class="sxs-lookup"><span data-stu-id="589b6-121">The user's guardian.</span></span>|
-|<span data-ttu-id="589b6-122">子</span><span class="sxs-lookup"><span data-stu-id="589b6-122">child</span></span>|<span data-ttu-id="589b6-123">5</span><span class="sxs-lookup"><span data-stu-id="589b6-123">5</span></span>| <span data-ttu-id="589b6-124">ユーザーの子です。</span><span class="sxs-lookup"><span data-stu-id="589b6-124">The user's child.</span></span>|
-|<span data-ttu-id="589b6-125">その他の</span><span class="sxs-lookup"><span data-stu-id="589b6-125">other</span></span>|<span data-ttu-id="589b6-126">6</span><span class="sxs-lookup"><span data-stu-id="589b6-126">6</span></span>| <span data-ttu-id="589b6-127">ユーザーに指定されていない関係です。</span><span class="sxs-lookup"><span data-stu-id="589b6-127">An unspecified relationship to the user.</span></span>|
-|<span data-ttu-id="589b6-128">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-128">unknownFutureValue</span></span>|<span data-ttu-id="589b6-129">7</span><span class="sxs-lookup"><span data-stu-id="589b6-129">7</span></span>| <span data-ttu-id="589b6-130">将来の互換性のためのマーカーの値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-130">Marker value for future compatibility.</span></span>|
+|<span data-ttu-id="66d9c-107">親行</span><span class="sxs-lookup"><span data-stu-id="66d9c-107">parent</span></span>|<span data-ttu-id="66d9c-108">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-108">0</span></span>|<span data-ttu-id="66d9c-109">ユーザーの親。</span><span class="sxs-lookup"><span data-stu-id="66d9c-109">The user's parent.</span></span>|
+|<span data-ttu-id="66d9c-110">合わせる</span><span class="sxs-lookup"><span data-stu-id="66d9c-110">relative</span></span>|<span data-ttu-id="66d9c-111">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-111">1</span></span>| <span data-ttu-id="66d9c-112">ユーザーの相対パス。</span><span class="sxs-lookup"><span data-stu-id="66d9c-112">The user's relative.</span></span>|
+|<span data-ttu-id="66d9c-113">aide</span><span class="sxs-lookup"><span data-stu-id="66d9c-113">aide</span></span>|<span data-ttu-id="66d9c-114">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-114">2</span></span>| <span data-ttu-id="66d9c-115">ユーザーの aide。</span><span class="sxs-lookup"><span data-stu-id="66d9c-115">The user's aide.</span></span>|
+|<span data-ttu-id="66d9c-116">診察</span><span class="sxs-lookup"><span data-stu-id="66d9c-116">doctor</span></span>|<span data-ttu-id="66d9c-117">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-117">3</span></span>| <span data-ttu-id="66d9c-118">ユーザーの医師。</span><span class="sxs-lookup"><span data-stu-id="66d9c-118">The user's doctor.</span></span>|
+|<span data-ttu-id="66d9c-119">守護</span><span class="sxs-lookup"><span data-stu-id="66d9c-119">guardian</span></span>|<span data-ttu-id="66d9c-120">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-120">4</span></span>| <span data-ttu-id="66d9c-121">ユーザーのガーディアン。</span><span class="sxs-lookup"><span data-stu-id="66d9c-121">The user's guardian.</span></span>|
+|<span data-ttu-id="66d9c-122">子供</span><span class="sxs-lookup"><span data-stu-id="66d9c-122">child</span></span>|<span data-ttu-id="66d9c-123">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-123">5</span></span>| <span data-ttu-id="66d9c-124">ユーザーの子。</span><span class="sxs-lookup"><span data-stu-id="66d9c-124">The user's child.</span></span>|
+|<span data-ttu-id="66d9c-125">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-125">other</span></span>|<span data-ttu-id="66d9c-126">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-126">6</span></span>| <span data-ttu-id="66d9c-127">ユーザーとの特定されていない関係。</span><span class="sxs-lookup"><span data-stu-id="66d9c-127">An unspecified relationship to the user.</span></span>|
+|<span data-ttu-id="66d9c-128">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-128">unknownFutureValue</span></span>|<span data-ttu-id="66d9c-129">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-129">7</span></span>| <span data-ttu-id="66d9c-130">将来の互換性のためのマーカー値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-130">Marker value for future compatibility.</span></span>|
 
-### <a name="timezonestandard-values"></a><span data-ttu-id="589b6-131">timeZoneStandard 値</span><span class="sxs-lookup"><span data-stu-id="589b6-131">timeZoneStandard values</span></span>
+### <a name="timezonestandard-values"></a><span data-ttu-id="66d9c-131">timeZoneStandard の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-131">timeZoneStandard values</span></span>
 
-| <span data-ttu-id="589b6-132">値</span><span class="sxs-lookup"><span data-stu-id="589b6-132">Value</span></span>
+| <span data-ttu-id="66d9c-132">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-132">Value</span></span>
 |:-----------------
-| <span data-ttu-id="589b6-133">windows</span><span class="sxs-lookup"><span data-stu-id="589b6-133">windows</span></span>
-| <span data-ttu-id="589b6-134">iana</span><span class="sxs-lookup"><span data-stu-id="589b6-134">iana</span></span>
+| <span data-ttu-id="66d9c-133">ws</span><span class="sxs-lookup"><span data-stu-id="66d9c-133">windows</span></span>
+| <span data-ttu-id="66d9c-134">iana</span><span class="sxs-lookup"><span data-stu-id="66d9c-134">iana</span></span>
 
 
-### <a name="freebusystatus-values"></a><span data-ttu-id="589b6-135">freeBusyStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-135">freeBusyStatus values</span></span>
+### <a name="availabilitystatus-values"></a><span data-ttu-id="66d9c-135">availabilityStatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-135">availabilityStatus values</span></span>
 
-| <span data-ttu-id="589b6-136">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-136">Member</span></span>            |<span data-ttu-id="589b6-137">値</span><span class="sxs-lookup"><span data-stu-id="589b6-137">Value</span></span>
+| <span data-ttu-id="66d9c-136">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-136">Value</span></span>
+|:-------------------------
+| <span data-ttu-id="66d9c-137">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-137">unknown</span></span>
+| <span data-ttu-id="66d9c-138">増やし</span><span class="sxs-lookup"><span data-stu-id="66d9c-138">free</span></span>
+| <span data-ttu-id="66d9c-139">一時的</span><span class="sxs-lookup"><span data-stu-id="66d9c-139">tentative</span></span>
+| <span data-ttu-id="66d9c-140">多忙</span><span class="sxs-lookup"><span data-stu-id="66d9c-140">busy</span></span>
+| <span data-ttu-id="66d9c-141">oof</span><span class="sxs-lookup"><span data-stu-id="66d9c-141">oof</span></span>  
+| <span data-ttu-id="66d9c-142">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="66d9c-142">workingElsewhere</span></span>
+
+
+### <a name="freebusystatus-values"></a><span data-ttu-id="66d9c-143">freeBusyStatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-143">freeBusyStatus values</span></span>
+
+| <span data-ttu-id="66d9c-144">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-144">Member</span></span>            |<span data-ttu-id="66d9c-145">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-145">Value</span></span>
 |:------------------|:-------
-| <span data-ttu-id="589b6-138">解放</span><span class="sxs-lookup"><span data-stu-id="589b6-138">free</span></span>              | <span data-ttu-id="589b6-139">0</span><span class="sxs-lookup"><span data-stu-id="589b6-139">0</span></span>
-| <span data-ttu-id="589b6-140">仮の予定</span><span class="sxs-lookup"><span data-stu-id="589b6-140">tentative</span></span>         | <span data-ttu-id="589b6-141">1</span><span class="sxs-lookup"><span data-stu-id="589b6-141">1</span></span>
-| <span data-ttu-id="589b6-142">ビジー状態です。</span><span class="sxs-lookup"><span data-stu-id="589b6-142">busy</span></span>              | <span data-ttu-id="589b6-143">2</span><span class="sxs-lookup"><span data-stu-id="589b6-143">2</span></span>
-| <span data-ttu-id="589b6-144">不在時</span><span class="sxs-lookup"><span data-stu-id="589b6-144">oof</span></span>               | <span data-ttu-id="589b6-145">3</span><span class="sxs-lookup"><span data-stu-id="589b6-145">3</span></span>
-| <span data-ttu-id="589b6-146">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="589b6-146">workingElsewhere</span></span>  | <span data-ttu-id="589b6-147">4</span><span class="sxs-lookup"><span data-stu-id="589b6-147">4</span></span>
-| <span data-ttu-id="589b6-148">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-148">unknown</span></span>           | <span data-ttu-id="589b6-149">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-149">-1</span></span>
+| <span data-ttu-id="66d9c-146">増やし</span><span class="sxs-lookup"><span data-stu-id="66d9c-146">free</span></span>              | <span data-ttu-id="66d9c-147">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-147">0</span></span>
+| <span data-ttu-id="66d9c-148">一時的</span><span class="sxs-lookup"><span data-stu-id="66d9c-148">tentative</span></span>         | <span data-ttu-id="66d9c-149">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-149">1</span></span>
+| <span data-ttu-id="66d9c-150">多忙</span><span class="sxs-lookup"><span data-stu-id="66d9c-150">busy</span></span>              | <span data-ttu-id="66d9c-151">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-151">2</span></span>
+| <span data-ttu-id="66d9c-152">oof</span><span class="sxs-lookup"><span data-stu-id="66d9c-152">oof</span></span>               | <span data-ttu-id="66d9c-153">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-153">3</span></span>
+| <span data-ttu-id="66d9c-154">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="66d9c-154">workingElsewhere</span></span>  | <span data-ttu-id="66d9c-155">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-155">4</span></span>
+| <span data-ttu-id="66d9c-156">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-156">unknown</span></span>           | <span data-ttu-id="66d9c-157">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-157">-1</span></span>
 
 
-### <a name="attendeetype-values"></a><span data-ttu-id="589b6-150">attendeeType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-150">attendeeType values</span></span>
+### <a name="addresstype-values"></a><span data-ttu-id="66d9c-158">addressType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-158">addressType values</span></span>
 
-| <span data-ttu-id="589b6-151">値</span><span class="sxs-lookup"><span data-stu-id="589b6-151">Value</span></span>
+| <span data-ttu-id="66d9c-159">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-159">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-152">必須</span><span class="sxs-lookup"><span data-stu-id="589b6-152">required</span></span>
-| <span data-ttu-id="589b6-153">省略可能</span><span class="sxs-lookup"><span data-stu-id="589b6-153">optional</span></span>
-| <span data-ttu-id="589b6-154">リソース</span><span class="sxs-lookup"><span data-stu-id="589b6-154">resource</span></span>
+| <span data-ttu-id="66d9c-160">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-160">unknown</span></span> 
+| <span data-ttu-id="66d9c-161">コール</span><span class="sxs-lookup"><span data-stu-id="66d9c-161">home</span></span>
+| <span data-ttu-id="66d9c-162">出張</span><span class="sxs-lookup"><span data-stu-id="66d9c-162">business</span></span> 
+| <span data-ttu-id="66d9c-163">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-163">other</span></span>
 
 
-### <a name="externalaudiencescope-values"></a><span data-ttu-id="589b6-155">externalAudienceScope 値</span><span class="sxs-lookup"><span data-stu-id="589b6-155">externalAudienceScope values</span></span>
+### <a name="physicaladdresstype-values"></a><span data-ttu-id="66d9c-164">physicaladdresstype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-164">physicalAddressType values</span></span>
 
-| <span data-ttu-id="589b6-156">値</span><span class="sxs-lookup"><span data-stu-id="589b6-156">Value</span></span>
+| <span data-ttu-id="66d9c-165">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-165">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-157">none</span><span class="sxs-lookup"><span data-stu-id="589b6-157">none</span></span>
-| <span data-ttu-id="589b6-158">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="589b6-158">contactsOnly</span></span>
-| <span data-ttu-id="589b6-159">all</span><span class="sxs-lookup"><span data-stu-id="589b6-159">all</span></span>
+| <span data-ttu-id="66d9c-166">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-166">unknown</span></span> 
+| <span data-ttu-id="66d9c-167">コール</span><span class="sxs-lookup"><span data-stu-id="66d9c-167">home</span></span>
+| <span data-ttu-id="66d9c-168">出張</span><span class="sxs-lookup"><span data-stu-id="66d9c-168">business</span></span> 
+| <span data-ttu-id="66d9c-169">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-169">other</span></span>
 
 
-### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="589b6-160">automaticRepliesStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-160">automaticRepliesStatus values</span></span>
+### <a name="attendeetype-values"></a><span data-ttu-id="66d9c-170">attendeeType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-170">attendeeType values</span></span>
 
-| <span data-ttu-id="589b6-161">値</span><span class="sxs-lookup"><span data-stu-id="589b6-161">Value</span></span>
+| <span data-ttu-id="66d9c-171">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-171">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-162">無効になっています。</span><span class="sxs-lookup"><span data-stu-id="589b6-162">disabled</span></span>
-| <span data-ttu-id="589b6-163">alwaysEnabled</span><span class="sxs-lookup"><span data-stu-id="589b6-163">alwaysEnabled</span></span>
-| <span data-ttu-id="589b6-164">スケジュール済み</span><span class="sxs-lookup"><span data-stu-id="589b6-164">scheduled</span></span>
+| <span data-ttu-id="66d9c-172">必須</span><span class="sxs-lookup"><span data-stu-id="66d9c-172">required</span></span>
+| <span data-ttu-id="66d9c-173">省略可能</span><span class="sxs-lookup"><span data-stu-id="66d9c-173">optional</span></span>
+| <span data-ttu-id="66d9c-174">リソース</span><span class="sxs-lookup"><span data-stu-id="66d9c-174">resource</span></span>
 
 
-### <a name="calendarcolor-values"></a><span data-ttu-id="589b6-165">calendarColor 値</span><span class="sxs-lookup"><span data-stu-id="589b6-165">calendarColor values</span></span>
+### <a name="externalaudiencescope-values"></a><span data-ttu-id="66d9c-175">externalaudiencescope 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-175">externalAudienceScope values</span></span>
 
-| <span data-ttu-id="589b6-166">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-166">Member</span></span>     | <span data-ttu-id="589b6-167">値</span><span class="sxs-lookup"><span data-stu-id="589b6-167">Value</span></span>
+| <span data-ttu-id="66d9c-176">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-176">Value</span></span>
+|:-------------------------
+| <span data-ttu-id="66d9c-177">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-177">none</span></span>
+| <span data-ttu-id="66d9c-178">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="66d9c-178">contactsOnly</span></span>
+| <span data-ttu-id="66d9c-179">all</span><span class="sxs-lookup"><span data-stu-id="66d9c-179">all</span></span>
+
+
+### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="66d9c-180">automaticRepliesStatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-180">automaticRepliesStatus values</span></span>
+
+| <span data-ttu-id="66d9c-181">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-181">Value</span></span>
+|:-------------------------
+| <span data-ttu-id="66d9c-182">党</span><span class="sxs-lookup"><span data-stu-id="66d9c-182">disabled</span></span>
+| <span data-ttu-id="66d9c-183">alwaysEnabled</span><span class="sxs-lookup"><span data-stu-id="66d9c-183">alwaysEnabled</span></span>
+| <span data-ttu-id="66d9c-184">スケジュール済み</span><span class="sxs-lookup"><span data-stu-id="66d9c-184">scheduled</span></span>
+
+
+### <a name="calendarcolor-values"></a><span data-ttu-id="66d9c-185">calendarcolor 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-185">calendarColor values</span></span>
+
+| <span data-ttu-id="66d9c-186">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-186">Member</span></span>     | <span data-ttu-id="66d9c-187">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-187">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="589b6-168">自動</span><span class="sxs-lookup"><span data-stu-id="589b6-168">auto</span></span>       | <span data-ttu-id="589b6-169">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-169">-1</span></span>
-| <span data-ttu-id="589b6-170">lightBlue</span><span class="sxs-lookup"><span data-stu-id="589b6-170">lightBlue</span></span>  | <span data-ttu-id="589b6-171">0</span><span class="sxs-lookup"><span data-stu-id="589b6-171">0</span></span>
-| <span data-ttu-id="589b6-172">薄</span><span class="sxs-lookup"><span data-stu-id="589b6-172">lightGreen</span></span> | <span data-ttu-id="589b6-173">1</span><span class="sxs-lookup"><span data-stu-id="589b6-173">1</span></span>
-| <span data-ttu-id="589b6-174">lightOrange</span><span class="sxs-lookup"><span data-stu-id="589b6-174">lightOrange</span></span>| <span data-ttu-id="589b6-175">2</span><span class="sxs-lookup"><span data-stu-id="589b6-175">2</span></span>
-| <span data-ttu-id="589b6-176">lightGray</span><span class="sxs-lookup"><span data-stu-id="589b6-176">lightGray</span></span>  | <span data-ttu-id="589b6-177">3</span><span class="sxs-lookup"><span data-stu-id="589b6-177">3</span></span>
-| <span data-ttu-id="589b6-178">lightYellow</span><span class="sxs-lookup"><span data-stu-id="589b6-178">lightYellow</span></span>| <span data-ttu-id="589b6-179">4</span><span class="sxs-lookup"><span data-stu-id="589b6-179">4</span></span>
-| <span data-ttu-id="589b6-180">lightTeal</span><span class="sxs-lookup"><span data-stu-id="589b6-180">lightTeal</span></span>  | <span data-ttu-id="589b6-181">5</span><span class="sxs-lookup"><span data-stu-id="589b6-181">5</span></span>
-| <span data-ttu-id="589b6-182">lightPink</span><span class="sxs-lookup"><span data-stu-id="589b6-182">lightPink</span></span>  | <span data-ttu-id="589b6-183">6</span><span class="sxs-lookup"><span data-stu-id="589b6-183">6</span></span>
-| <span data-ttu-id="589b6-184">lightBrown</span><span class="sxs-lookup"><span data-stu-id="589b6-184">lightBrown</span></span> | <span data-ttu-id="589b6-185">7</span><span class="sxs-lookup"><span data-stu-id="589b6-185">7</span></span>
-| <span data-ttu-id="589b6-186">lightRed</span><span class="sxs-lookup"><span data-stu-id="589b6-186">lightRed</span></span>   | <span data-ttu-id="589b6-187">8</span><span class="sxs-lookup"><span data-stu-id="589b6-187">8</span></span>
-| <span data-ttu-id="589b6-188">maxColor</span><span class="sxs-lookup"><span data-stu-id="589b6-188">maxColor</span></span>   | <span data-ttu-id="589b6-189">9</span><span class="sxs-lookup"><span data-stu-id="589b6-189">9</span></span>
+| <span data-ttu-id="66d9c-188">自動</span><span class="sxs-lookup"><span data-stu-id="66d9c-188">auto</span></span>       | <span data-ttu-id="66d9c-189">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-189">-1</span></span>
+| <span data-ttu-id="66d9c-190">ライトブルー</span><span class="sxs-lookup"><span data-stu-id="66d9c-190">lightBlue</span></span>  | <span data-ttu-id="66d9c-191">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-191">0</span></span>
+| <span data-ttu-id="66d9c-192">ライトグリーン</span><span class="sxs-lookup"><span data-stu-id="66d9c-192">lightGreen</span></span> | <span data-ttu-id="66d9c-193">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-193">1</span></span>
+| <span data-ttu-id="66d9c-194">ライトオレンジ</span><span class="sxs-lookup"><span data-stu-id="66d9c-194">lightOrange</span></span>| <span data-ttu-id="66d9c-195">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-195">2</span></span>
+| <span data-ttu-id="66d9c-196">ライトグレー</span><span class="sxs-lookup"><span data-stu-id="66d9c-196">lightGray</span></span>  | <span data-ttu-id="66d9c-197">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-197">3</span></span>
+| <span data-ttu-id="66d9c-198">ライト黄</span><span class="sxs-lookup"><span data-stu-id="66d9c-198">lightYellow</span></span>| <span data-ttu-id="66d9c-199">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-199">4</span></span>
+| <span data-ttu-id="66d9c-200">ライト青緑</span><span class="sxs-lookup"><span data-stu-id="66d9c-200">lightTeal</span></span>  | <span data-ttu-id="66d9c-201">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-201">5</span></span>
+| <span data-ttu-id="66d9c-202">ライトピンク</span><span class="sxs-lookup"><span data-stu-id="66d9c-202">lightPink</span></span>  | <span data-ttu-id="66d9c-203">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-203">6</span></span>
+| <span data-ttu-id="66d9c-204">ライトブラウン</span><span class="sxs-lookup"><span data-stu-id="66d9c-204">lightBrown</span></span> | <span data-ttu-id="66d9c-205">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-205">7</span></span>
+| <span data-ttu-id="66d9c-206">ライトレッド</span><span class="sxs-lookup"><span data-stu-id="66d9c-206">lightRed</span></span>   | <span data-ttu-id="66d9c-207">~</span><span class="sxs-lookup"><span data-stu-id="66d9c-207">8</span></span>
+| <span data-ttu-id="66d9c-208">maxcolor</span><span class="sxs-lookup"><span data-stu-id="66d9c-208">maxColor</span></span>   | <span data-ttu-id="66d9c-209">i-9</span><span class="sxs-lookup"><span data-stu-id="66d9c-209">9</span></span>
 
 
-### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="589b6-190">educationSynchronizationProfileState 値</span><span class="sxs-lookup"><span data-stu-id="589b6-190">educationSynchronizationProfileState values</span></span>
+### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="66d9c-210">educationSynchronizationProfileState の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-210">educationSynchronizationProfileState values</span></span>
 
-| <span data-ttu-id="589b6-191">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-191">Member</span></span>     | <span data-ttu-id="589b6-192">値</span><span class="sxs-lookup"><span data-stu-id="589b6-192">Value</span></span>
+| <span data-ttu-id="66d9c-211">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-211">Member</span></span>     | <span data-ttu-id="66d9c-212">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-212">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="589b6-193">削除</span><span class="sxs-lookup"><span data-stu-id="589b6-193">deleting</span></span>          | <span data-ttu-id="589b6-194">2</span><span class="sxs-lookup"><span data-stu-id="589b6-194">2</span></span>
-| <span data-ttu-id="589b6-195">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="589b6-195">deletionFailed</span></span>    | <span data-ttu-id="589b6-196">3</span><span class="sxs-lookup"><span data-stu-id="589b6-196">3</span></span>
-| <span data-ttu-id="589b6-197">provisioningFailed</span><span class="sxs-lookup"><span data-stu-id="589b6-197">provisioningFailed</span></span> | <span data-ttu-id="589b6-198">5</span><span class="sxs-lookup"><span data-stu-id="589b6-198">5</span></span>
-| <span data-ttu-id="589b6-199">準備済み</span><span class="sxs-lookup"><span data-stu-id="589b6-199">provisioned</span></span>        | <span data-ttu-id="589b6-200">6</span><span class="sxs-lookup"><span data-stu-id="589b6-200">6</span></span>
-| <span data-ttu-id="589b6-201">準備</span><span class="sxs-lookup"><span data-stu-id="589b6-201">provisioning</span></span>       | <span data-ttu-id="589b6-202">7</span><span class="sxs-lookup"><span data-stu-id="589b6-202">7</span></span>
-| <span data-ttu-id="589b6-203">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-203">unknownFutureValue</span></span> | <span data-ttu-id="589b6-204">8</span><span class="sxs-lookup"><span data-stu-id="589b6-204">8</span></span>
+| <span data-ttu-id="66d9c-213">削除</span><span class="sxs-lookup"><span data-stu-id="66d9c-213">deleting</span></span>          | <span data-ttu-id="66d9c-214">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-214">2</span></span>
+| <span data-ttu-id="66d9c-215">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="66d9c-215">deletionFailed</span></span>    | <span data-ttu-id="66d9c-216">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-216">3</span></span>
+| <span data-ttu-id="66d9c-217">プロビジョニングが失敗しました</span><span class="sxs-lookup"><span data-stu-id="66d9c-217">provisioningFailed</span></span> | <span data-ttu-id="66d9c-218">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-218">5</span></span>
+| <span data-ttu-id="66d9c-219">準備済み</span><span class="sxs-lookup"><span data-stu-id="66d9c-219">provisioned</span></span>        | <span data-ttu-id="66d9c-220">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-220">6</span></span>
+| <span data-ttu-id="66d9c-221">準備</span><span class="sxs-lookup"><span data-stu-id="66d9c-221">provisioning</span></span>       | <span data-ttu-id="66d9c-222">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-222">7</span></span>
+| <span data-ttu-id="66d9c-223">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-223">unknownFutureValue</span></span> | <span data-ttu-id="66d9c-224">~</span><span class="sxs-lookup"><span data-stu-id="66d9c-224">8</span></span>
 
 
-### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="589b6-205">educationSynchronizationStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-205">educationSynchronizationStatus values</span></span>
+### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="66d9c-225">educationSynchronizationStatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-225">educationSynchronizationStatus values</span></span>
 
-| <span data-ttu-id="589b6-206">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-206">Member</span></span>     | <span data-ttu-id="589b6-207">値</span><span class="sxs-lookup"><span data-stu-id="589b6-207">Value</span></span>
+| <span data-ttu-id="66d9c-226">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-226">Member</span></span>     | <span data-ttu-id="66d9c-227">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-227">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="589b6-208">一時停止</span><span class="sxs-lookup"><span data-stu-id="589b6-208">paused</span></span>          | <span data-ttu-id="589b6-209">0</span><span class="sxs-lookup"><span data-stu-id="589b6-209">0</span></span>
-| <span data-ttu-id="589b6-210">inProgress</span><span class="sxs-lookup"><span data-stu-id="589b6-210">inProgress</span></span>    | <span data-ttu-id="589b6-211">1</span><span class="sxs-lookup"><span data-stu-id="589b6-211">1</span></span>
-| <span data-ttu-id="589b6-212">success</span><span class="sxs-lookup"><span data-stu-id="589b6-212">success</span></span> | <span data-ttu-id="589b6-213">2</span><span class="sxs-lookup"><span data-stu-id="589b6-213">2</span></span>
-| <span data-ttu-id="589b6-214">エラー</span><span class="sxs-lookup"><span data-stu-id="589b6-214">error</span></span>        | <span data-ttu-id="589b6-215">3</span><span class="sxs-lookup"><span data-stu-id="589b6-215">3</span></span>
-| <span data-ttu-id="589b6-216">validationError</span><span class="sxs-lookup"><span data-stu-id="589b6-216">validationError</span></span> | <span data-ttu-id="589b6-217">4</span><span class="sxs-lookup"><span data-stu-id="589b6-217">4</span></span>
-| <span data-ttu-id="589b6-218">検疫</span><span class="sxs-lookup"><span data-stu-id="589b6-218">quarantined</span></span>       | <span data-ttu-id="589b6-219">5</span><span class="sxs-lookup"><span data-stu-id="589b6-219">5</span></span>
-| <span data-ttu-id="589b6-220">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-220">unknownFutureValue</span></span> | <span data-ttu-id="589b6-221">6</span><span class="sxs-lookup"><span data-stu-id="589b6-221">6</span></span>
+| <span data-ttu-id="66d9c-228">れ</span><span class="sxs-lookup"><span data-stu-id="66d9c-228">paused</span></span>          | <span data-ttu-id="66d9c-229">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-229">0</span></span>
+| <span data-ttu-id="66d9c-230">inProgress</span><span class="sxs-lookup"><span data-stu-id="66d9c-230">inProgress</span></span>    | <span data-ttu-id="66d9c-231">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-231">1</span></span>
+| <span data-ttu-id="66d9c-232">success</span><span class="sxs-lookup"><span data-stu-id="66d9c-232">success</span></span> | <span data-ttu-id="66d9c-233">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-233">2</span></span>
+| <span data-ttu-id="66d9c-234">エラー</span><span class="sxs-lookup"><span data-stu-id="66d9c-234">error</span></span>        | <span data-ttu-id="66d9c-235">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-235">3</span></span>
+| <span data-ttu-id="66d9c-236">validationerror</span><span class="sxs-lookup"><span data-stu-id="66d9c-236">validationError</span></span> | <span data-ttu-id="66d9c-237">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-237">4</span></span>
+| <span data-ttu-id="66d9c-238">隔離</span><span class="sxs-lookup"><span data-stu-id="66d9c-238">quarantined</span></span>       | <span data-ttu-id="66d9c-239">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-239">5</span></span>
+| <span data-ttu-id="66d9c-240">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-240">unknownFutureValue</span></span> | <span data-ttu-id="66d9c-241">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-241">6</span></span>
 
-### <a name="educationexternalsource-values"></a><span data-ttu-id="589b6-222">educationExternalSource 値</span><span class="sxs-lookup"><span data-stu-id="589b6-222">educationExternalSource values</span></span>
+### <a name="educationexternalsource-values"></a><span data-ttu-id="66d9c-242">educationExternalSource の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-242">educationExternalSource values</span></span>
 
-| <span data-ttu-id="589b6-223">値</span><span class="sxs-lookup"><span data-stu-id="589b6-223">Value</span></span>
+| <span data-ttu-id="66d9c-243">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-243">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-224">sis</span><span class="sxs-lookup"><span data-stu-id="589b6-224">sis</span></span>
-| <span data-ttu-id="589b6-225">手動</span><span class="sxs-lookup"><span data-stu-id="589b6-225">manual</span></span>
-| <span data-ttu-id="589b6-226">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-226">unknownFutureValue</span></span>
+| <span data-ttu-id="66d9c-244">sis</span><span class="sxs-lookup"><span data-stu-id="66d9c-244">sis</span></span>
+| <span data-ttu-id="66d9c-245">手動</span><span class="sxs-lookup"><span data-stu-id="66d9c-245">manual</span></span>
+| <span data-ttu-id="66d9c-246">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-246">unknownFutureValue</span></span>
 
 
-### <a name="educationgender-values"></a><span data-ttu-id="589b6-227">educationGender 値</span><span class="sxs-lookup"><span data-stu-id="589b6-227">educationGender values</span></span>
+### <a name="educationgender-values"></a><span data-ttu-id="66d9c-247">educationGender の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-247">educationGender values</span></span>
 
-| <span data-ttu-id="589b6-228">値</span><span class="sxs-lookup"><span data-stu-id="589b6-228">Value</span></span>
+| <span data-ttu-id="66d9c-248">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-248">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-229">(メス)</span><span class="sxs-lookup"><span data-stu-id="589b6-229">female</span></span>
-| <span data-ttu-id="589b6-230">(オス)</span><span class="sxs-lookup"><span data-stu-id="589b6-230">male</span></span>
-| <span data-ttu-id="589b6-231">その他の</span><span class="sxs-lookup"><span data-stu-id="589b6-231">other</span></span>
-| <span data-ttu-id="589b6-232">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-232">unknownFutureValue</span></span>
+| <span data-ttu-id="66d9c-249">female</span><span class="sxs-lookup"><span data-stu-id="66d9c-249">female</span></span>
+| <span data-ttu-id="66d9c-250">男</span><span class="sxs-lookup"><span data-stu-id="66d9c-250">male</span></span>
+| <span data-ttu-id="66d9c-251">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-251">other</span></span>
+| <span data-ttu-id="66d9c-252">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-252">unknownFutureValue</span></span>
 
 
-### <a name="eventtype-values"></a><span data-ttu-id="589b6-233">イベントの種類の値</span><span class="sxs-lookup"><span data-stu-id="589b6-233">eventType values</span></span>
+### <a name="eventtype-values"></a><span data-ttu-id="66d9c-253">eventType 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-253">eventType values</span></span>
 
-| <span data-ttu-id="589b6-234">値</span><span class="sxs-lookup"><span data-stu-id="589b6-234">Value</span></span>
+| <span data-ttu-id="66d9c-254">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-254">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-235">singleInstance</span><span class="sxs-lookup"><span data-stu-id="589b6-235">singleInstance</span></span>
-| <span data-ttu-id="589b6-236">出現</span><span class="sxs-lookup"><span data-stu-id="589b6-236">occurrence</span></span>
-| <span data-ttu-id="589b6-237">例外</span><span class="sxs-lookup"><span data-stu-id="589b6-237">exception</span></span>
-| <span data-ttu-id="589b6-238">seriesMaster</span><span class="sxs-lookup"><span data-stu-id="589b6-238">seriesMaster</span></span>
+| <span data-ttu-id="66d9c-255">単一インスタンス</span><span class="sxs-lookup"><span data-stu-id="66d9c-255">singleInstance</span></span>
+| <span data-ttu-id="66d9c-256">発生</span><span class="sxs-lookup"><span data-stu-id="66d9c-256">occurrence</span></span>
+| <span data-ttu-id="66d9c-257">例外</span><span class="sxs-lookup"><span data-stu-id="66d9c-257">exception</span></span>
+| <span data-ttu-id="66d9c-258">連続マスター</span><span class="sxs-lookup"><span data-stu-id="66d9c-258">seriesMaster</span></span>
 
 
-### <a name="sensitivity-values"></a><span data-ttu-id="589b6-239">秘密度の値</span><span class="sxs-lookup"><span data-stu-id="589b6-239">sensitivity values</span></span>
+### <a name="sensitivity-values"></a><span data-ttu-id="66d9c-259">感度の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-259">sensitivity values</span></span>
 
-| <span data-ttu-id="589b6-240">値</span><span class="sxs-lookup"><span data-stu-id="589b6-240">Value</span></span>
+| <span data-ttu-id="66d9c-260">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-260">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-241">標準</span><span class="sxs-lookup"><span data-stu-id="589b6-241">normal</span></span>
-| <span data-ttu-id="589b6-242">personal</span><span class="sxs-lookup"><span data-stu-id="589b6-242">personal</span></span>
-| <span data-ttu-id="589b6-243">プライベート</span><span class="sxs-lookup"><span data-stu-id="589b6-243">private</span></span>
-| <span data-ttu-id="589b6-244">機密</span><span class="sxs-lookup"><span data-stu-id="589b6-244">confidential</span></span>
+| <span data-ttu-id="66d9c-261">標準</span><span class="sxs-lookup"><span data-stu-id="66d9c-261">normal</span></span>
+| <span data-ttu-id="66d9c-262">personal</span><span class="sxs-lookup"><span data-stu-id="66d9c-262">personal</span></span>
+| <span data-ttu-id="66d9c-263">機密性</span><span class="sxs-lookup"><span data-stu-id="66d9c-263">private</span></span>
+| <span data-ttu-id="66d9c-264">機密</span><span class="sxs-lookup"><span data-stu-id="66d9c-264">confidential</span></span>
 
 
-### <a name="importance-values"></a><span data-ttu-id="589b6-245">重要度の値</span><span class="sxs-lookup"><span data-stu-id="589b6-245">importance values</span></span>
+### <a name="importance-values"></a><span data-ttu-id="66d9c-265">重要度の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-265">importance values</span></span>
 
-| <span data-ttu-id="589b6-246">値</span><span class="sxs-lookup"><span data-stu-id="589b6-246">Value</span></span>
+| <span data-ttu-id="66d9c-266">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-266">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-247">低</span><span class="sxs-lookup"><span data-stu-id="589b6-247">low</span></span>
-| <span data-ttu-id="589b6-248">標準</span><span class="sxs-lookup"><span data-stu-id="589b6-248">normal</span></span>
-| <span data-ttu-id="589b6-249">高</span><span class="sxs-lookup"><span data-stu-id="589b6-249">high</span></span>
+| <span data-ttu-id="66d9c-267">低さ</span><span class="sxs-lookup"><span data-stu-id="66d9c-267">low</span></span>
+| <span data-ttu-id="66d9c-268">標準</span><span class="sxs-lookup"><span data-stu-id="66d9c-268">normal</span></span>
+| <span data-ttu-id="66d9c-269">高額</span><span class="sxs-lookup"><span data-stu-id="66d9c-269">high</span></span>
 
 
-### <a name="educationuserrole-values"></a><span data-ttu-id="589b6-250">educationUserRole 値</span><span class="sxs-lookup"><span data-stu-id="589b6-250">educationUserRole values</span></span>
-| <span data-ttu-id="589b6-251">値</span><span class="sxs-lookup"><span data-stu-id="589b6-251">Value</span></span>
+### <a name="educationuserrole-values"></a><span data-ttu-id="66d9c-270">educationUserRole の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-270">educationUserRole values</span></span>
+| <span data-ttu-id="66d9c-271">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-271">Value</span></span>
 |:---------------------
-| <span data-ttu-id="589b6-252">student</span><span class="sxs-lookup"><span data-stu-id="589b6-252">student</span></span>
-| <span data-ttu-id="589b6-253">teacher</span><span class="sxs-lookup"><span data-stu-id="589b6-253">teacher</span></span>
-| <span data-ttu-id="589b6-254">none</span><span class="sxs-lookup"><span data-stu-id="589b6-254">none</span></span>
-| <span data-ttu-id="589b6-255">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-255">unknownFutureValue</span></span>
+| <span data-ttu-id="66d9c-272">student</span><span class="sxs-lookup"><span data-stu-id="66d9c-272">student</span></span>
+| <span data-ttu-id="66d9c-273">teacher</span><span class="sxs-lookup"><span data-stu-id="66d9c-273">teacher</span></span>
+| <span data-ttu-id="66d9c-274">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-274">none</span></span>
+| <span data-ttu-id="66d9c-275">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-275">unknownFutureValue</span></span>
 
 
-### <a name="meetingmessagetype-values"></a><span data-ttu-id="589b6-256">meetingMessageType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-256">meetingMessageType values</span></span>
+### <a name="meetingmessagetype-values"></a><span data-ttu-id="66d9c-276">会議の messagetype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-276">meetingMessageType values</span></span>
 
-| <span data-ttu-id="589b6-257">値</span><span class="sxs-lookup"><span data-stu-id="589b6-257">Value</span></span>
+| <span data-ttu-id="66d9c-277">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-277">Value</span></span>
 |:-----------------
-| <span data-ttu-id="589b6-258">none</span><span class="sxs-lookup"><span data-stu-id="589b6-258">none</span></span>
-| <span data-ttu-id="589b6-259">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="589b6-259">meetingRequest</span></span>
-| <span data-ttu-id="589b6-260">meetingCancelled</span><span class="sxs-lookup"><span data-stu-id="589b6-260">meetingCancelled</span></span>
-| <span data-ttu-id="589b6-261">meetingAccepted</span><span class="sxs-lookup"><span data-stu-id="589b6-261">meetingAccepted</span></span>
-| <span data-ttu-id="589b6-262">meetingTentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="589b6-262">meetingTentativelyAccepted</span></span>
-| <span data-ttu-id="589b6-263">meetingDeclined</span><span class="sxs-lookup"><span data-stu-id="589b6-263">meetingDeclined</span></span>
+| <span data-ttu-id="66d9c-278">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-278">none</span></span>
+| <span data-ttu-id="66d9c-279">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="66d9c-279">meetingRequest</span></span>
+| <span data-ttu-id="66d9c-280">中止</span><span class="sxs-lookup"><span data-stu-id="66d9c-280">meetingCancelled</span></span>
+| <span data-ttu-id="66d9c-281">承諾</span><span class="sxs-lookup"><span data-stu-id="66d9c-281">meetingAccepted</span></span>
+| <span data-ttu-id="66d9c-282">一時承諾</span><span class="sxs-lookup"><span data-stu-id="66d9c-282">meetingTentativelyAccepted</span></span>
+| <span data-ttu-id="66d9c-283">辞退</span><span class="sxs-lookup"><span data-stu-id="66d9c-283">meetingDeclined</span></span>
 
 
-### <a name="followupflagstatus-values"></a><span data-ttu-id="589b6-264">followupFlagStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-264">followupFlagStatus values</span></span>
+### <a name="followupflagstatus-values"></a><span data-ttu-id="66d9c-284">の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-284">followupFlagStatus values</span></span>
 
-| <span data-ttu-id="589b6-265">値</span><span class="sxs-lookup"><span data-stu-id="589b6-265">Value</span></span>
+| <span data-ttu-id="66d9c-285">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-285">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-266">notFlagged</span><span class="sxs-lookup"><span data-stu-id="589b6-266">notFlagged</span></span>
-| <span data-ttu-id="589b6-267">complete</span><span class="sxs-lookup"><span data-stu-id="589b6-267">complete</span></span>
-| <span data-ttu-id="589b6-268">フラグが付けられます</span><span class="sxs-lookup"><span data-stu-id="589b6-268">flagged</span></span>
+| <span data-ttu-id="66d9c-286">notflagged 付き</span><span class="sxs-lookup"><span data-stu-id="66d9c-286">notFlagged</span></span>
+| <span data-ttu-id="66d9c-287">complete</span><span class="sxs-lookup"><span data-stu-id="66d9c-287">complete</span></span>
+| <span data-ttu-id="66d9c-288">示さ</span><span class="sxs-lookup"><span data-stu-id="66d9c-288">flagged</span></span>
 
 
-### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="589b6-269">inferenceClassificationType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-269">inferenceClassificationType values</span></span>
+### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="66d9c-289">inferenceClassificationType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-289">inferenceClassificationType values</span></span>
 
-| <span data-ttu-id="589b6-270">値</span><span class="sxs-lookup"><span data-stu-id="589b6-270">Value</span></span>
+| <span data-ttu-id="66d9c-290">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-290">Value</span></span>
 |:-----------------
-| <span data-ttu-id="589b6-271">重点を置く</span><span class="sxs-lookup"><span data-stu-id="589b6-271">focused</span></span>
-| <span data-ttu-id="589b6-272">その他の</span><span class="sxs-lookup"><span data-stu-id="589b6-272">other</span></span>
+| <span data-ttu-id="66d9c-291">注力</span><span class="sxs-lookup"><span data-stu-id="66d9c-291">focused</span></span>
+| <span data-ttu-id="66d9c-292">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-292">other</span></span>
 
 
-### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="589b6-273">iosNotificationAlertType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-273">iosNotificationAlertType values</span></span>
+### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="66d9c-293">iosnotificationalerttype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-293">iosNotificationAlertType values</span></span>
 
-| <span data-ttu-id="589b6-274">値</span><span class="sxs-lookup"><span data-stu-id="589b6-274">Value</span></span>
+| <span data-ttu-id="66d9c-294">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-294">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-275">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="589b6-275">deviceDefault</span></span>
-| <span data-ttu-id="589b6-276">バナー</span><span class="sxs-lookup"><span data-stu-id="589b6-276">banner</span></span>
-| <span data-ttu-id="589b6-277">modal</span><span class="sxs-lookup"><span data-stu-id="589b6-277">modal</span></span>
-| <span data-ttu-id="589b6-278">none</span><span class="sxs-lookup"><span data-stu-id="589b6-278">none</span></span>
+| <span data-ttu-id="66d9c-295">devicedefault</span><span class="sxs-lookup"><span data-stu-id="66d9c-295">deviceDefault</span></span>
+| <span data-ttu-id="66d9c-296">尺</span><span class="sxs-lookup"><span data-stu-id="66d9c-296">banner</span></span>
+| <span data-ttu-id="66d9c-297">modal</span><span class="sxs-lookup"><span data-stu-id="66d9c-297">modal</span></span>
+| <span data-ttu-id="66d9c-298">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-298">none</span></span>
 
-### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="589b6-279">deviceEnrollmentFailureReason 値</span><span class="sxs-lookup"><span data-stu-id="589b6-279">deviceEnrollmentFailureReason values</span></span>
+### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="66d9c-299">deviceEnrollmentFailureReason の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-299">deviceEnrollmentFailureReason values</span></span>
 
-| <span data-ttu-id="589b6-280">値</span><span class="sxs-lookup"><span data-stu-id="589b6-280">Value</span></span>
+| <span data-ttu-id="66d9c-300">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-300">Value</span></span>
 |:-------------
-| <span data-ttu-id="589b6-281">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-281">unknown</span></span>
-| <span data-ttu-id="589b6-282">認証</span><span class="sxs-lookup"><span data-stu-id="589b6-282">authentication</span></span>
-| <span data-ttu-id="589b6-283">承認</span><span class="sxs-lookup"><span data-stu-id="589b6-283">authorization</span></span>
-| <span data-ttu-id="589b6-284">accountValidation</span><span class="sxs-lookup"><span data-stu-id="589b6-284">accountValidation</span></span>
-| <span data-ttu-id="589b6-285">userValidation</span><span class="sxs-lookup"><span data-stu-id="589b6-285">userValidation</span></span>
-| <span data-ttu-id="589b6-286">deviceNotSupported</span><span class="sxs-lookup"><span data-stu-id="589b6-286">deviceNotSupported</span></span>
-| <span data-ttu-id="589b6-287">inMaintenance</span><span class="sxs-lookup"><span data-stu-id="589b6-287">inMaintenance</span></span>
-| <span data-ttu-id="589b6-288">badRequest</span><span class="sxs-lookup"><span data-stu-id="589b6-288">badRequest</span></span>
-| <span data-ttu-id="589b6-289">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="589b6-289">featureNotSupported</span></span>
-| <span data-ttu-id="589b6-290">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="589b6-290">enrollmentRestrictionsEnforced</span></span>
-| <span data-ttu-id="589b6-291">clientDisconnected</span><span class="sxs-lookup"><span data-stu-id="589b6-291">clientDisconnected</span></span>
+| <span data-ttu-id="66d9c-301">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-301">unknown</span></span>
+| <span data-ttu-id="66d9c-302">認証</span><span class="sxs-lookup"><span data-stu-id="66d9c-302">authentication</span></span>
+| <span data-ttu-id="66d9c-303">承認</span><span class="sxs-lookup"><span data-stu-id="66d9c-303">authorization</span></span>
+| <span data-ttu-id="66d9c-304">accountvalidation</span><span class="sxs-lookup"><span data-stu-id="66d9c-304">accountValidation</span></span>
+| <span data-ttu-id="66d9c-305">uservalidation</span><span class="sxs-lookup"><span data-stu-id="66d9c-305">userValidation</span></span>
+| <span data-ttu-id="66d9c-306">devicenotsupported</span><span class="sxs-lookup"><span data-stu-id="66d9c-306">deviceNotSupported</span></span>
+| <span data-ttu-id="66d9c-307">inmaintenance</span><span class="sxs-lookup"><span data-stu-id="66d9c-307">inMaintenance</span></span>
+| <span data-ttu-id="66d9c-308">badrequest</span><span class="sxs-lookup"><span data-stu-id="66d9c-308">badRequest</span></span>
+| <span data-ttu-id="66d9c-309">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="66d9c-309">featureNotSupported</span></span>
+| <span data-ttu-id="66d9c-310">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="66d9c-310">enrollmentRestrictionsEnforced</span></span>
+| <span data-ttu-id="66d9c-311">clientdisconnected</span><span class="sxs-lookup"><span data-stu-id="66d9c-311">clientDisconnected</span></span>
 
 
-### <a name="bodytype-values"></a><span data-ttu-id="589b6-292">bodyType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-292">bodyType values</span></span>
-| <span data-ttu-id="589b6-293">値</span><span class="sxs-lookup"><span data-stu-id="589b6-293">Value</span></span>
+### <a name="bodytype-values"></a><span data-ttu-id="66d9c-312">bodytype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-312">bodyType values</span></span>
+| <span data-ttu-id="66d9c-313">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-313">Value</span></span>
 |:---------
-| <span data-ttu-id="589b6-294">text</span><span class="sxs-lookup"><span data-stu-id="589b6-294">text</span></span>
-| <span data-ttu-id="589b6-295">html</span><span class="sxs-lookup"><span data-stu-id="589b6-295">html</span></span>
+| <span data-ttu-id="66d9c-314">text</span><span class="sxs-lookup"><span data-stu-id="66d9c-314">text</span></span>
+| <span data-ttu-id="66d9c-315">html</span><span class="sxs-lookup"><span data-stu-id="66d9c-315">html</span></span>
 
 
-### <a name="locationtype-values"></a><span data-ttu-id="589b6-296">場所の値</span><span class="sxs-lookup"><span data-stu-id="589b6-296">locationType values</span></span>
+### <a name="locationtype-values"></a><span data-ttu-id="66d9c-316">locationType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-316">locationType values</span></span>
 
-| <span data-ttu-id="589b6-297">値</span><span class="sxs-lookup"><span data-stu-id="589b6-297">Value</span></span>
+| <span data-ttu-id="66d9c-317">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-317">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-298">既定値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-298">default</span></span>
-| <span data-ttu-id="589b6-299">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="589b6-299">conferenceRoom</span></span>
-| <span data-ttu-id="589b6-300">homeAddress</span><span class="sxs-lookup"><span data-stu-id="589b6-300">homeAddress</span></span>
-| <span data-ttu-id="589b6-301">businessAddress</span><span class="sxs-lookup"><span data-stu-id="589b6-301">businessAddress</span></span>
-| <span data-ttu-id="589b6-302">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="589b6-302">geoCoordinates</span></span>
-| <span data-ttu-id="589b6-303">streetAddress</span><span class="sxs-lookup"><span data-stu-id="589b6-303">streetAddress</span></span>
-| <span data-ttu-id="589b6-304">ホテル</span><span class="sxs-lookup"><span data-stu-id="589b6-304">hotel</span></span>
-| <span data-ttu-id="589b6-305">レストラン</span><span class="sxs-lookup"><span data-stu-id="589b6-305">restaurant</span></span>
-| <span data-ttu-id="589b6-306">localBusiness</span><span class="sxs-lookup"><span data-stu-id="589b6-306">localBusiness</span></span>
-| <span data-ttu-id="589b6-307">住所</span><span class="sxs-lookup"><span data-stu-id="589b6-307">postalAddress</span></span>
+| <span data-ttu-id="66d9c-318">既定値です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-318">default</span></span>
+| <span data-ttu-id="66d9c-319">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="66d9c-319">conferenceRoom</span></span>
+| <span data-ttu-id="66d9c-320">homeAddress</span><span class="sxs-lookup"><span data-stu-id="66d9c-320">homeAddress</span></span>
+| <span data-ttu-id="66d9c-321">businessAddress</span><span class="sxs-lookup"><span data-stu-id="66d9c-321">businessAddress</span></span>
+| <span data-ttu-id="66d9c-322">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="66d9c-322">geoCoordinates</span></span>
+| <span data-ttu-id="66d9c-323">streetAddress</span><span class="sxs-lookup"><span data-stu-id="66d9c-323">streetAddress</span></span>
+| <span data-ttu-id="66d9c-324">ホテル</span><span class="sxs-lookup"><span data-stu-id="66d9c-324">hotel</span></span>
+| <span data-ttu-id="66d9c-325">レストラン</span><span class="sxs-lookup"><span data-stu-id="66d9c-325">restaurant</span></span>
+| <span data-ttu-id="66d9c-326">localbusiness</span><span class="sxs-lookup"><span data-stu-id="66d9c-326">localBusiness</span></span>
+| <span data-ttu-id="66d9c-327">"postaladdress</span><span class="sxs-lookup"><span data-stu-id="66d9c-327">postalAddress</span></span>
 
-### <a name="locationuniqueidtype-values"></a><span data-ttu-id="589b6-308">locationUniqueIdType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-308">locationUniqueIdType values</span></span>
+### <a name="locationuniqueidtype-values"></a><span data-ttu-id="66d9c-328">locationUniqueIdType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-328">locationUniqueIdType values</span></span>
 
-| <span data-ttu-id="589b6-309">値</span><span class="sxs-lookup"><span data-stu-id="589b6-309">Value</span></span>
+| <span data-ttu-id="66d9c-329">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-329">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-310">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-310">unknown</span></span>
-| <span data-ttu-id="589b6-311">locationStore</span><span class="sxs-lookup"><span data-stu-id="589b6-311">locationStore</span></span>
-| <span data-ttu-id="589b6-312">ディレクトリ</span><span class="sxs-lookup"><span data-stu-id="589b6-312">directory</span></span>
-| <span data-ttu-id="589b6-313">プライベート</span><span class="sxs-lookup"><span data-stu-id="589b6-313">private</span></span>
-| <span data-ttu-id="589b6-314">bing</span><span class="sxs-lookup"><span data-stu-id="589b6-314">bing</span></span>
+| <span data-ttu-id="66d9c-330">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-330">unknown</span></span>
+| <span data-ttu-id="66d9c-331">locationstore</span><span class="sxs-lookup"><span data-stu-id="66d9c-331">locationStore</span></span>
+| <span data-ttu-id="66d9c-332">名簿</span><span class="sxs-lookup"><span data-stu-id="66d9c-332">directory</span></span>
+| <span data-ttu-id="66d9c-333">機密性</span><span class="sxs-lookup"><span data-stu-id="66d9c-333">private</span></span>
+| <span data-ttu-id="66d9c-334">地図</span><span class="sxs-lookup"><span data-stu-id="66d9c-334">bing</span></span>
 
 
-### <a name="messageactionflag-values"></a><span data-ttu-id="589b6-315">messageActionFlag 値</span><span class="sxs-lookup"><span data-stu-id="589b6-315">messageActionFlag values</span></span>
+### <a name="messageactionflag-values"></a><span data-ttu-id="66d9c-335">messageactionflag の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-335">messageActionFlag values</span></span>
 
-| <span data-ttu-id="589b6-316">値</span><span class="sxs-lookup"><span data-stu-id="589b6-316">Value</span></span>
+| <span data-ttu-id="66d9c-336">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-336">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-317">any</span><span class="sxs-lookup"><span data-stu-id="589b6-317">any</span></span>
-| <span data-ttu-id="589b6-318">call</span><span class="sxs-lookup"><span data-stu-id="589b6-318">call</span></span>
-| <span data-ttu-id="589b6-319">doNotForward</span><span class="sxs-lookup"><span data-stu-id="589b6-319">doNotForward</span></span>
-| <span data-ttu-id="589b6-320">フォロー アップ</span><span class="sxs-lookup"><span data-stu-id="589b6-320">followUp</span></span>
-| <span data-ttu-id="589b6-321">ヒント</span><span class="sxs-lookup"><span data-stu-id="589b6-321">fyi</span></span>
-| <span data-ttu-id="589b6-322">転送</span><span class="sxs-lookup"><span data-stu-id="589b6-322">forward</span></span>
-| <span data-ttu-id="589b6-323">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="589b6-323">noResponseNecessary</span></span>
-| <span data-ttu-id="589b6-324">読み取り</span><span class="sxs-lookup"><span data-stu-id="589b6-324">read</span></span>
-| <span data-ttu-id="589b6-325">返信</span><span class="sxs-lookup"><span data-stu-id="589b6-325">reply</span></span>
-| <span data-ttu-id="589b6-326">replyToAll</span><span class="sxs-lookup"><span data-stu-id="589b6-326">replyToAll</span></span>
-| <span data-ttu-id="589b6-327">レビュー</span><span class="sxs-lookup"><span data-stu-id="589b6-327">review</span></span>
+| <span data-ttu-id="66d9c-337">any</span><span class="sxs-lookup"><span data-stu-id="66d9c-337">any</span></span>
+| <span data-ttu-id="66d9c-338">call</span><span class="sxs-lookup"><span data-stu-id="66d9c-338">call</span></span>
+| <span data-ttu-id="66d9c-339">交換</span><span class="sxs-lookup"><span data-stu-id="66d9c-339">doNotForward</span></span>
+| <span data-ttu-id="66d9c-340">フォローアップ</span><span class="sxs-lookup"><span data-stu-id="66d9c-340">followUp</span></span>
+| <span data-ttu-id="66d9c-341">注意</span><span class="sxs-lookup"><span data-stu-id="66d9c-341">fyi</span></span>
+| <span data-ttu-id="66d9c-342">転送</span><span class="sxs-lookup"><span data-stu-id="66d9c-342">forward</span></span>
+| <span data-ttu-id="66d9c-343">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="66d9c-343">noResponseNecessary</span></span>
+| <span data-ttu-id="66d9c-344">読み込む</span><span class="sxs-lookup"><span data-stu-id="66d9c-344">read</span></span>
+| <span data-ttu-id="66d9c-345">返信</span><span class="sxs-lookup"><span data-stu-id="66d9c-345">reply</span></span>
+| <span data-ttu-id="66d9c-346">replyToAll</span><span class="sxs-lookup"><span data-stu-id="66d9c-346">replyToAll</span></span>
+| <span data-ttu-id="66d9c-347">中</span><span class="sxs-lookup"><span data-stu-id="66d9c-347">review</span></span>
 
 
-### <a name="onenoteuserrole-values"></a><span data-ttu-id="589b6-328">onenoteUserRole 値</span><span class="sxs-lookup"><span data-stu-id="589b6-328">onenoteUserRole values</span></span>
+### <a name="onenoteuserrole-values"></a><span data-ttu-id="66d9c-348">onenoteUserRole の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-348">onenoteUserRole values</span></span>
 
-| <span data-ttu-id="589b6-329">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-329">Member</span></span>      | <span data-ttu-id="589b6-330">値</span><span class="sxs-lookup"><span data-stu-id="589b6-330">Value</span></span>
+| <span data-ttu-id="66d9c-349">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-349">Member</span></span>      | <span data-ttu-id="66d9c-350">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-350">Value</span></span>
 |:------------|:------------
-| <span data-ttu-id="589b6-331">Owner</span><span class="sxs-lookup"><span data-stu-id="589b6-331">Owner</span></span>       | <span data-ttu-id="589b6-332">0</span><span class="sxs-lookup"><span data-stu-id="589b6-332">0</span></span>
-| <span data-ttu-id="589b6-333">Contributor (投稿者)</span><span class="sxs-lookup"><span data-stu-id="589b6-333">Contributor</span></span> | <span data-ttu-id="589b6-334">1</span><span class="sxs-lookup"><span data-stu-id="589b6-334">1</span></span>
-| <span data-ttu-id="589b6-335">Reader</span><span class="sxs-lookup"><span data-stu-id="589b6-335">Reader</span></span>      | <span data-ttu-id="589b6-336">2</span><span class="sxs-lookup"><span data-stu-id="589b6-336">2</span></span>
-| <span data-ttu-id="589b6-337">なし</span><span class="sxs-lookup"><span data-stu-id="589b6-337">None</span></span>        | <span data-ttu-id="589b6-338">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-338">-1</span></span>
+| <span data-ttu-id="66d9c-351">Owner</span><span class="sxs-lookup"><span data-stu-id="66d9c-351">Owner</span></span>       | <span data-ttu-id="66d9c-352">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-352">0</span></span>
+| <span data-ttu-id="66d9c-353">Contributor (投稿者)</span><span class="sxs-lookup"><span data-stu-id="66d9c-353">Contributor</span></span> | <span data-ttu-id="66d9c-354">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-354">1</span></span>
+| <span data-ttu-id="66d9c-355">Reader</span><span class="sxs-lookup"><span data-stu-id="66d9c-355">Reader</span></span>      | <span data-ttu-id="66d9c-356">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-356">2</span></span>
+| <span data-ttu-id="66d9c-357">なし</span><span class="sxs-lookup"><span data-stu-id="66d9c-357">None</span></span>        | <span data-ttu-id="66d9c-358">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-358">-1</span></span>
 
 
-### <a name="operationstatus-values"></a><span data-ttu-id="589b6-339">operationStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-339">operationStatus values</span></span>
+### <a name="operationstatus-values"></a><span data-ttu-id="66d9c-359">operationstatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-359">operationStatus values</span></span>
 
-| <span data-ttu-id="589b6-340">値</span><span class="sxs-lookup"><span data-stu-id="589b6-340">Value</span></span>
+| <span data-ttu-id="66d9c-360">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-360">Value</span></span>
 |:-----------------
-| <span data-ttu-id="589b6-341">NotStarted</span><span class="sxs-lookup"><span data-stu-id="589b6-341">NotStarted</span></span>
-| <span data-ttu-id="589b6-342">実行中</span><span class="sxs-lookup"><span data-stu-id="589b6-342">Running</span></span>
-| <span data-ttu-id="589b6-343">Completed</span><span class="sxs-lookup"><span data-stu-id="589b6-343">Completed</span></span>
-| <span data-ttu-id="589b6-344">Failed</span><span class="sxs-lookup"><span data-stu-id="589b6-344">Failed</span></span>
+| <span data-ttu-id="66d9c-361">NotStarted</span><span class="sxs-lookup"><span data-stu-id="66d9c-361">NotStarted</span></span>
+| <span data-ttu-id="66d9c-362">実行中</span><span class="sxs-lookup"><span data-stu-id="66d9c-362">Running</span></span>
+| <span data-ttu-id="66d9c-363">Completed</span><span class="sxs-lookup"><span data-stu-id="66d9c-363">Completed</span></span>
+| <span data-ttu-id="66d9c-364">Failed</span><span class="sxs-lookup"><span data-stu-id="66d9c-364">Failed</span></span>
 
 
-### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="589b6-345">onenotePatchActionType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-345">onenotePatchActionType values</span></span>
+### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="66d9c-365">onenotePatchActionType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-365">onenotePatchActionType values</span></span>
 
-| <span data-ttu-id="589b6-346">値</span><span class="sxs-lookup"><span data-stu-id="589b6-346">Value</span></span>
+| <span data-ttu-id="66d9c-366">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-366">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-347">置換</span><span class="sxs-lookup"><span data-stu-id="589b6-347">Replace</span></span>
-| <span data-ttu-id="589b6-348">追加</span><span class="sxs-lookup"><span data-stu-id="589b6-348">Append</span></span>
-| <span data-ttu-id="589b6-349">Delete</span><span class="sxs-lookup"><span data-stu-id="589b6-349">Delete</span></span>
-| <span data-ttu-id="589b6-350">Insert</span><span class="sxs-lookup"><span data-stu-id="589b6-350">Insert</span></span>
-| <span data-ttu-id="589b6-351">先頭に追加します。</span><span class="sxs-lookup"><span data-stu-id="589b6-351">Prepend</span></span>
+| <span data-ttu-id="66d9c-367">置換</span><span class="sxs-lookup"><span data-stu-id="66d9c-367">Replace</span></span>
+| <span data-ttu-id="66d9c-368">追加</span><span class="sxs-lookup"><span data-stu-id="66d9c-368">Append</span></span>
+| <span data-ttu-id="66d9c-369">削除する</span><span class="sxs-lookup"><span data-stu-id="66d9c-369">Delete</span></span>
+| <span data-ttu-id="66d9c-370">Insert</span><span class="sxs-lookup"><span data-stu-id="66d9c-370">Insert</span></span>
+| <span data-ttu-id="66d9c-371">ド</span><span class="sxs-lookup"><span data-stu-id="66d9c-371">Prepend</span></span>
 
-### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="589b6-352">onenotePatchInsertPosition 値</span><span class="sxs-lookup"><span data-stu-id="589b6-352">onenotePatchInsertPosition values</span></span>
+### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="66d9c-372">onenotePatchInsertPosition の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-372">onenotePatchInsertPosition values</span></span>
 
-| <span data-ttu-id="589b6-353">値</span><span class="sxs-lookup"><span data-stu-id="589b6-353">Value</span></span>
+| <span data-ttu-id="66d9c-373">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-373">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-354">After</span><span class="sxs-lookup"><span data-stu-id="589b6-354">After</span></span>
-| <span data-ttu-id="589b6-355">Before</span><span class="sxs-lookup"><span data-stu-id="589b6-355">Before</span></span>
+| <span data-ttu-id="66d9c-374">After</span><span class="sxs-lookup"><span data-stu-id="66d9c-374">After</span></span>
+| <span data-ttu-id="66d9c-375">Before</span><span class="sxs-lookup"><span data-stu-id="66d9c-375">Before</span></span>
 
 
-### <a name="phonetype-values"></a><span data-ttu-id="589b6-356">phoneType の値</span><span class="sxs-lookup"><span data-stu-id="589b6-356">phoneType values</span></span>
+### <a name="phonetype-values"></a><span data-ttu-id="66d9c-376">phoneType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-376">phoneType values</span></span>
 
-| <span data-ttu-id="589b6-357">値</span><span class="sxs-lookup"><span data-stu-id="589b6-357">Value</span></span>
+| <span data-ttu-id="66d9c-377">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-377">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-358">ホーム</span><span class="sxs-lookup"><span data-stu-id="589b6-358">home</span></span>
-| <span data-ttu-id="589b6-359">ビジネス</span><span class="sxs-lookup"><span data-stu-id="589b6-359">business</span></span>
-| <span data-ttu-id="589b6-360">mobile</span><span class="sxs-lookup"><span data-stu-id="589b6-360">mobile</span></span>
-| <span data-ttu-id="589b6-361">その他の</span><span class="sxs-lookup"><span data-stu-id="589b6-361">other</span></span>
-| <span data-ttu-id="589b6-362">アシスタント</span><span class="sxs-lookup"><span data-stu-id="589b6-362">assistant</span></span>
-| <span data-ttu-id="589b6-363">homeFax</span><span class="sxs-lookup"><span data-stu-id="589b6-363">homeFax</span></span>
-| <span data-ttu-id="589b6-364">businessFax</span><span class="sxs-lookup"><span data-stu-id="589b6-364">businessFax</span></span>
-| <span data-ttu-id="589b6-365">otherFax</span><span class="sxs-lookup"><span data-stu-id="589b6-365">otherFax</span></span>
-| <span data-ttu-id="589b6-366">ポケットベル</span><span class="sxs-lookup"><span data-stu-id="589b6-366">pager</span></span>
-| <span data-ttu-id="589b6-367">ラジオ</span><span class="sxs-lookup"><span data-stu-id="589b6-367">radio</span></span>
+| <span data-ttu-id="66d9c-378">コール</span><span class="sxs-lookup"><span data-stu-id="66d9c-378">home</span></span>
+| <span data-ttu-id="66d9c-379">出張</span><span class="sxs-lookup"><span data-stu-id="66d9c-379">business</span></span>
+| <span data-ttu-id="66d9c-380">体</span><span class="sxs-lookup"><span data-stu-id="66d9c-380">mobile</span></span>
+| <span data-ttu-id="66d9c-381">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-381">other</span></span>
+| <span data-ttu-id="66d9c-382">アシスタント</span><span class="sxs-lookup"><span data-stu-id="66d9c-382">assistant</span></span>
+| <span data-ttu-id="66d9c-383">ホーム fax</span><span class="sxs-lookup"><span data-stu-id="66d9c-383">homeFax</span></span>
+| <span data-ttu-id="66d9c-384">businessfax</span><span class="sxs-lookup"><span data-stu-id="66d9c-384">businessFax</span></span>
+| <span data-ttu-id="66d9c-385">otherFax</span><span class="sxs-lookup"><span data-stu-id="66d9c-385">otherFax</span></span>
+| <span data-ttu-id="66d9c-386">携帯</span><span class="sxs-lookup"><span data-stu-id="66d9c-386">pager</span></span>
+| <span data-ttu-id="66d9c-387">オン</span><span class="sxs-lookup"><span data-stu-id="66d9c-387">radio</span></span>
 
 
-### <a name="plannerpreviewtype-values"></a><span data-ttu-id="589b6-368">plannerPreviewType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-368">plannerPreviewType values</span></span>
+### <a name="plannerpreviewtype-values"></a><span data-ttu-id="66d9c-388">プランの種類の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-388">plannerPreviewType values</span></span>
 
-| <span data-ttu-id="589b6-369">値</span><span class="sxs-lookup"><span data-stu-id="589b6-369">Value</span></span>
+| <span data-ttu-id="66d9c-389">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-389">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-370">自動</span><span class="sxs-lookup"><span data-stu-id="589b6-370">automatic</span></span>
-| <span data-ttu-id="589b6-371">noPreview</span><span class="sxs-lookup"><span data-stu-id="589b6-371">noPreview</span></span>
-| <span data-ttu-id="589b6-372">checklist</span><span class="sxs-lookup"><span data-stu-id="589b6-372">checklist</span></span>
-| <span data-ttu-id="589b6-373">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-373">description</span></span>
-| <span data-ttu-id="589b6-374">reference</span><span class="sxs-lookup"><span data-stu-id="589b6-374">reference</span></span>
+| <span data-ttu-id="66d9c-390">自動</span><span class="sxs-lookup"><span data-stu-id="66d9c-390">automatic</span></span>
+| <span data-ttu-id="66d9c-391">nopreview</span><span class="sxs-lookup"><span data-stu-id="66d9c-391">noPreview</span></span>
+| <span data-ttu-id="66d9c-392">checklist</span><span class="sxs-lookup"><span data-stu-id="66d9c-392">checklist</span></span>
+| <span data-ttu-id="66d9c-393">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-393">description</span></span>
+| <span data-ttu-id="66d9c-394">reference</span><span class="sxs-lookup"><span data-stu-id="66d9c-394">reference</span></span>
 
 
-### <a name="status-values"></a><span data-ttu-id="589b6-375">ステータス値</span><span class="sxs-lookup"><span data-stu-id="589b6-375">status values</span></span>
+### <a name="status-values"></a><span data-ttu-id="66d9c-395">状態の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-395">status values</span></span>
 
-| <span data-ttu-id="589b6-376">値</span><span class="sxs-lookup"><span data-stu-id="589b6-376">Value</span></span>
+| <span data-ttu-id="66d9c-396">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-396">Value</span></span>
 |:-----------------
-| <span data-ttu-id="589b6-377">アクティブです</span><span class="sxs-lookup"><span data-stu-id="589b6-377">active</span></span>
-| <span data-ttu-id="589b6-378">更新</span><span class="sxs-lookup"><span data-stu-id="589b6-378">updated</span></span>
-| <span data-ttu-id="589b6-379">deleted</span><span class="sxs-lookup"><span data-stu-id="589b6-379">deleted</span></span>
-| <span data-ttu-id="589b6-380">無視</span><span class="sxs-lookup"><span data-stu-id="589b6-380">ignored</span></span>
-| <span data-ttu-id="589b6-381">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="589b6-381">unknownFutureValue</span></span>
+| <span data-ttu-id="66d9c-397">active</span><span class="sxs-lookup"><span data-stu-id="66d9c-397">active</span></span>
+| <span data-ttu-id="66d9c-398">まし</span><span class="sxs-lookup"><span data-stu-id="66d9c-398">updated</span></span>
+| <span data-ttu-id="66d9c-399">deleted</span><span class="sxs-lookup"><span data-stu-id="66d9c-399">deleted</span></span>
+| <span data-ttu-id="66d9c-400">すべて</span><span class="sxs-lookup"><span data-stu-id="66d9c-400">ignored</span></span>
+| <span data-ttu-id="66d9c-401">unknownfuturevalue という</span><span class="sxs-lookup"><span data-stu-id="66d9c-401">unknownFutureValue</span></span>
 
 
-### <a name="weekindex-values"></a><span data-ttu-id="589b6-382">weekIndex 値</span><span class="sxs-lookup"><span data-stu-id="589b6-382">weekIndex values</span></span>
+### <a name="weekindex-values"></a><span data-ttu-id="66d9c-402">weekIndex の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-402">weekIndex values</span></span>
 
-| <span data-ttu-id="589b6-383">値</span><span class="sxs-lookup"><span data-stu-id="589b6-383">Value</span></span>
+| <span data-ttu-id="66d9c-403">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-403">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-384">まずは</span><span class="sxs-lookup"><span data-stu-id="589b6-384">first</span></span>
-| <span data-ttu-id="589b6-385">1 秒</span><span class="sxs-lookup"><span data-stu-id="589b6-385">second</span></span>
-| <span data-ttu-id="589b6-386">3 番目</span><span class="sxs-lookup"><span data-stu-id="589b6-386">third</span></span>
-| <span data-ttu-id="589b6-387">4 番目</span><span class="sxs-lookup"><span data-stu-id="589b6-387">fourth</span></span>
-| <span data-ttu-id="589b6-388">前の</span><span class="sxs-lookup"><span data-stu-id="589b6-388">last</span></span>
+| <span data-ttu-id="66d9c-404">まずは</span><span class="sxs-lookup"><span data-stu-id="66d9c-404">first</span></span>
+| <span data-ttu-id="66d9c-405">補助</span><span class="sxs-lookup"><span data-stu-id="66d9c-405">second</span></span>
+| <span data-ttu-id="66d9c-406">種類</span><span class="sxs-lookup"><span data-stu-id="66d9c-406">third</span></span>
+| <span data-ttu-id="66d9c-407">つめの</span><span class="sxs-lookup"><span data-stu-id="66d9c-407">fourth</span></span>
+| <span data-ttu-id="66d9c-408">前の</span><span class="sxs-lookup"><span data-stu-id="66d9c-408">last</span></span>
 
 
-### <a name="dayofweek-values"></a><span data-ttu-id="589b6-389">dayOfWeek 値</span><span class="sxs-lookup"><span data-stu-id="589b6-389">dayOfWeek values</span></span>
+### <a name="dayofweek-values"></a><span data-ttu-id="66d9c-409">dayOfWeek 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-409">dayOfWeek values</span></span>
 
-| <span data-ttu-id="589b6-390">値</span><span class="sxs-lookup"><span data-stu-id="589b6-390">Value</span></span>
+| <span data-ttu-id="66d9c-410">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-410">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-391">日曜日</span><span class="sxs-lookup"><span data-stu-id="589b6-391">sunday</span></span>
-| <span data-ttu-id="589b6-392">月曜日</span><span class="sxs-lookup"><span data-stu-id="589b6-392">monday</span></span>
-| <span data-ttu-id="589b6-393">火曜日</span><span class="sxs-lookup"><span data-stu-id="589b6-393">tuesday</span></span>
-| <span data-ttu-id="589b6-394">(水)</span><span class="sxs-lookup"><span data-stu-id="589b6-394">wednesday</span></span>
-| <span data-ttu-id="589b6-395">(木)</span><span class="sxs-lookup"><span data-stu-id="589b6-395">thursday</span></span>
-| <span data-ttu-id="589b6-396">金曜日</span><span class="sxs-lookup"><span data-stu-id="589b6-396">friday</span></span>
-| <span data-ttu-id="589b6-397">土曜日</span><span class="sxs-lookup"><span data-stu-id="589b6-397">saturday</span></span>
+| <span data-ttu-id="66d9c-411">n</span><span class="sxs-lookup"><span data-stu-id="66d9c-411">sunday</span></span>
+| <span data-ttu-id="66d9c-412">曜日</span><span class="sxs-lookup"><span data-stu-id="66d9c-412">monday</span></span>
+| <span data-ttu-id="66d9c-413">毎週</span><span class="sxs-lookup"><span data-stu-id="66d9c-413">tuesday</span></span>
+| <span data-ttu-id="66d9c-414">毎週</span><span class="sxs-lookup"><span data-stu-id="66d9c-414">wednesday</span></span>
+| <span data-ttu-id="66d9c-415">火曜日</span><span class="sxs-lookup"><span data-stu-id="66d9c-415">thursday</span></span>
+| <span data-ttu-id="66d9c-416">金曜日</span><span class="sxs-lookup"><span data-stu-id="66d9c-416">friday</span></span>
+| <span data-ttu-id="66d9c-417">土日</span><span class="sxs-lookup"><span data-stu-id="66d9c-417">saturday</span></span>
 
-### <a name="recurrencepatterntype-values"></a><span data-ttu-id="589b6-398">recurrencePatternType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-398">recurrencePatternType values</span></span>
+### <a name="recurrencepatterntype-values"></a><span data-ttu-id="66d9c-418">recurrencePatternType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-418">recurrencePatternType values</span></span>
 
-| <span data-ttu-id="589b6-399">値</span><span class="sxs-lookup"><span data-stu-id="589b6-399">Value</span></span>
+| <span data-ttu-id="66d9c-419">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-419">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-400">毎日</span><span class="sxs-lookup"><span data-stu-id="589b6-400">daily</span></span>
-| <span data-ttu-id="589b6-401">毎週</span><span class="sxs-lookup"><span data-stu-id="589b6-401">weekly</span></span>
-| <span data-ttu-id="589b6-402">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="589b6-402">absoluteMonthly</span></span>
-| <span data-ttu-id="589b6-403">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="589b6-403">relativeMonthly</span></span>
-| <span data-ttu-id="589b6-404">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="589b6-404">absoluteYearly</span></span>
-| <span data-ttu-id="589b6-405">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="589b6-405">relativeYearly</span></span>
+| <span data-ttu-id="66d9c-420">定期的</span><span class="sxs-lookup"><span data-stu-id="66d9c-420">daily</span></span>
+| <span data-ttu-id="66d9c-421">あたり</span><span class="sxs-lookup"><span data-stu-id="66d9c-421">weekly</span></span>
+| <span data-ttu-id="66d9c-422">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="66d9c-422">absoluteMonthly</span></span>
+| <span data-ttu-id="66d9c-423">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="66d9c-423">relativeMonthly</span></span>
+| <span data-ttu-id="66d9c-424">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="66d9c-424">absoluteYearly</span></span>
+| <span data-ttu-id="66d9c-425">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="66d9c-425">relativeYearly</span></span>
 
 
-### <a name="recurrencerangetype-values"></a><span data-ttu-id="589b6-406">recurrenceRangeType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-406">recurrenceRangeType values</span></span>
+### <a name="recurrencerangetype-values"></a><span data-ttu-id="66d9c-426">recurrenceRangeType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-426">recurrenceRangeType values</span></span>
 
-| <span data-ttu-id="589b6-407">値</span><span class="sxs-lookup"><span data-stu-id="589b6-407">Value</span></span>
+| <span data-ttu-id="66d9c-427">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-427">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-408">endDate</span><span class="sxs-lookup"><span data-stu-id="589b6-408">endDate</span></span>
-| <span data-ttu-id="589b6-409">パーザ</span><span class="sxs-lookup"><span data-stu-id="589b6-409">noEnd</span></span>
-| <span data-ttu-id="589b6-410">番号が付けられます</span><span class="sxs-lookup"><span data-stu-id="589b6-410">numbered</span></span>
+| <span data-ttu-id="66d9c-428">endDate</span><span class="sxs-lookup"><span data-stu-id="66d9c-428">endDate</span></span>
+| <span data-ttu-id="66d9c-429">無制限</span><span class="sxs-lookup"><span data-stu-id="66d9c-429">noEnd</span></span>
+| <span data-ttu-id="66d9c-430">振ら</span><span class="sxs-lookup"><span data-stu-id="66d9c-430">numbered</span></span>
 
 
-### <a name="onenotesourceservice-values"></a><span data-ttu-id="589b6-411">onenoteSourceService 値</span><span class="sxs-lookup"><span data-stu-id="589b6-411">onenoteSourceService values</span></span>
-| <span data-ttu-id="589b6-412">値</span><span class="sxs-lookup"><span data-stu-id="589b6-412">Value</span></span>
+### <a name="onenotesourceservice-values"></a><span data-ttu-id="66d9c-431">onenoteSourceService の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-431">onenoteSourceService values</span></span>
+| <span data-ttu-id="66d9c-432">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-432">Value</span></span>
 |:---------------------
-| <span data-ttu-id="589b6-413">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-413">Unknown</span></span>
-| <span data-ttu-id="589b6-414">OneDrive</span><span class="sxs-lookup"><span data-stu-id="589b6-414">OneDrive</span></span>
-| <span data-ttu-id="589b6-415">OneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="589b6-415">OneDriveForBusiness</span></span>
-| <span data-ttu-id="589b6-416">OnPremOneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="589b6-416">OnPremOneDriveForBusiness</span></span>
+| <span data-ttu-id="66d9c-433">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-433">Unknown</span></span>
+| <span data-ttu-id="66d9c-434">OneDrive</span><span class="sxs-lookup"><span data-stu-id="66d9c-434">OneDrive</span></span>
+| <span data-ttu-id="66d9c-435">onedrive forbusiness</span><span class="sxs-lookup"><span data-stu-id="66d9c-435">OneDriveForBusiness</span></span>
+| <span data-ttu-id="66d9c-436">onpremonedrive forbusiness</span><span class="sxs-lookup"><span data-stu-id="66d9c-436">OnPremOneDriveForBusiness</span></span>
 
 
-### <a name="responsetype-values"></a><span data-ttu-id="589b6-417">responseType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-417">responseType values</span></span>
+### <a name="responsetype-values"></a><span data-ttu-id="66d9c-437">responsetype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-437">responseType values</span></span>
 
-| <span data-ttu-id="589b6-418">値</span><span class="sxs-lookup"><span data-stu-id="589b6-418">Value</span></span>
+| <span data-ttu-id="66d9c-438">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-438">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-419">none</span><span class="sxs-lookup"><span data-stu-id="589b6-419">none</span></span>
-| <span data-ttu-id="589b6-420">organizer</span><span class="sxs-lookup"><span data-stu-id="589b6-420">organizer</span></span>
-| <span data-ttu-id="589b6-421">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="589b6-421">tentativelyAccepted</span></span>
-| <span data-ttu-id="589b6-422">accepted</span><span class="sxs-lookup"><span data-stu-id="589b6-422">accepted</span></span>
-| <span data-ttu-id="589b6-423">辞退</span><span class="sxs-lookup"><span data-stu-id="589b6-423">declined</span></span>
-| <span data-ttu-id="589b6-424">notResponded</span><span class="sxs-lookup"><span data-stu-id="589b6-424">notResponded</span></span>
+| <span data-ttu-id="66d9c-439">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-439">none</span></span>
+| <span data-ttu-id="66d9c-440">organizer</span><span class="sxs-lookup"><span data-stu-id="66d9c-440">organizer</span></span>
+| <span data-ttu-id="66d9c-441">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="66d9c-441">tentativelyAccepted</span></span>
+| <span data-ttu-id="66d9c-442">accepted</span><span class="sxs-lookup"><span data-stu-id="66d9c-442">accepted</span></span>
+| <span data-ttu-id="66d9c-443">同意</span><span class="sxs-lookup"><span data-stu-id="66d9c-443">declined</span></span>
+| <span data-ttu-id="66d9c-444">notresponded</span><span class="sxs-lookup"><span data-stu-id="66d9c-444">notResponded</span></span>
 
 
-### <a name="activitydomain-values"></a><span data-ttu-id="589b6-425">activityDomain 値</span><span class="sxs-lookup"><span data-stu-id="589b6-425">activityDomain values</span></span>
+### <a name="activitydomain-values"></a><span data-ttu-id="66d9c-445">activitydomain の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-445">activityDomain values</span></span>
 
-| <span data-ttu-id="589b6-426">値</span><span class="sxs-lookup"><span data-stu-id="589b6-426">Value</span></span>
+| <span data-ttu-id="66d9c-446">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-446">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-427">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-427">unknown</span></span>
-| <span data-ttu-id="589b6-428">作業</span><span class="sxs-lookup"><span data-stu-id="589b6-428">work</span></span>
-| <span data-ttu-id="589b6-429">personal</span><span class="sxs-lookup"><span data-stu-id="589b6-429">personal</span></span>
-| <span data-ttu-id="589b6-430">Unrestricted</span><span class="sxs-lookup"><span data-stu-id="589b6-430">unrestricted</span></span>
+| <span data-ttu-id="66d9c-447">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-447">unknown</span></span>
+| <span data-ttu-id="66d9c-448">作業</span><span class="sxs-lookup"><span data-stu-id="66d9c-448">work</span></span>
+| <span data-ttu-id="66d9c-449">personal</span><span class="sxs-lookup"><span data-stu-id="66d9c-449">personal</span></span>
+| <span data-ttu-id="66d9c-450">Unrestricted</span><span class="sxs-lookup"><span data-stu-id="66d9c-450">unrestricted</span></span>
 
 
-### <a name="websitetype-values"></a><span data-ttu-id="589b6-431">websiteType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-431">websiteType values</span></span>
+### <a name="websitetype-values"></a><span data-ttu-id="66d9c-451">websitetype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-451">websiteType values</span></span>
 
-| <span data-ttu-id="589b6-432">値</span><span class="sxs-lookup"><span data-stu-id="589b6-432">Value</span></span>
+| <span data-ttu-id="66d9c-452">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-452">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="589b6-433">その他の</span><span class="sxs-lookup"><span data-stu-id="589b6-433">other</span></span>
-| <span data-ttu-id="589b6-434">ホーム</span><span class="sxs-lookup"><span data-stu-id="589b6-434">home</span></span>
-| <span data-ttu-id="589b6-435">作業</span><span class="sxs-lookup"><span data-stu-id="589b6-435">work</span></span>
-| <span data-ttu-id="589b6-436">ブログ</span><span class="sxs-lookup"><span data-stu-id="589b6-436">blog</span></span>
-| <span data-ttu-id="589b6-437">profile</span><span class="sxs-lookup"><span data-stu-id="589b6-437">profile</span></span>
+| <span data-ttu-id="66d9c-453">も</span><span class="sxs-lookup"><span data-stu-id="66d9c-453">other</span></span>
+| <span data-ttu-id="66d9c-454">コール</span><span class="sxs-lookup"><span data-stu-id="66d9c-454">home</span></span>
+| <span data-ttu-id="66d9c-455">作業</span><span class="sxs-lookup"><span data-stu-id="66d9c-455">work</span></span>
+| <span data-ttu-id="66d9c-456">ブログ</span><span class="sxs-lookup"><span data-stu-id="66d9c-456">blog</span></span>
+| <span data-ttu-id="66d9c-457">profile</span><span class="sxs-lookup"><span data-stu-id="66d9c-457">profile</span></span>
 
 
-### <a name="categorycolor-values"></a><span data-ttu-id="589b6-438">categoryColor 値</span><span class="sxs-lookup"><span data-stu-id="589b6-438">categoryColor values</span></span>
+### <a name="categorycolor-values"></a><span data-ttu-id="66d9c-458">カテゴリの色の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-458">categoryColor values</span></span>
 
-| <span data-ttu-id="589b6-439">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-439">Member</span></span>   |<span data-ttu-id="589b6-440">値</span><span class="sxs-lookup"><span data-stu-id="589b6-440">Value</span></span>    
+| <span data-ttu-id="66d9c-459">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-459">Member</span></span>   |<span data-ttu-id="66d9c-460">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-460">Value</span></span>    
 |:---------|:--------
-| <span data-ttu-id="589b6-441">none</span><span class="sxs-lookup"><span data-stu-id="589b6-441">none</span></span>     | <span data-ttu-id="589b6-442">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-442">-1</span></span>      
-| <span data-ttu-id="589b6-443">preset0</span><span class="sxs-lookup"><span data-stu-id="589b6-443">preset0</span></span>  | <span data-ttu-id="589b6-444">0</span><span class="sxs-lookup"><span data-stu-id="589b6-444">0</span></span>       
-| <span data-ttu-id="589b6-445">preset1</span><span class="sxs-lookup"><span data-stu-id="589b6-445">preset1</span></span>  | <span data-ttu-id="589b6-446">1</span><span class="sxs-lookup"><span data-stu-id="589b6-446">1</span></span>       
-| <span data-ttu-id="589b6-447">preset2</span><span class="sxs-lookup"><span data-stu-id="589b6-447">preset2</span></span>  | <span data-ttu-id="589b6-448">2</span><span class="sxs-lookup"><span data-stu-id="589b6-448">2</span></span>       
-| <span data-ttu-id="589b6-449">preset3</span><span class="sxs-lookup"><span data-stu-id="589b6-449">preset3</span></span>  | <span data-ttu-id="589b6-450">3</span><span class="sxs-lookup"><span data-stu-id="589b6-450">3</span></span>       
-| <span data-ttu-id="589b6-451">preset4</span><span class="sxs-lookup"><span data-stu-id="589b6-451">preset4</span></span>  | <span data-ttu-id="589b6-452">4</span><span class="sxs-lookup"><span data-stu-id="589b6-452">4</span></span>       
-| <span data-ttu-id="589b6-453">preset5</span><span class="sxs-lookup"><span data-stu-id="589b6-453">preset5</span></span>  | <span data-ttu-id="589b6-454">5</span><span class="sxs-lookup"><span data-stu-id="589b6-454">5</span></span>       
-| <span data-ttu-id="589b6-455">preset6</span><span class="sxs-lookup"><span data-stu-id="589b6-455">preset6</span></span>  | <span data-ttu-id="589b6-456">6</span><span class="sxs-lookup"><span data-stu-id="589b6-456">6</span></span>       
-| <span data-ttu-id="589b6-457">preset7</span><span class="sxs-lookup"><span data-stu-id="589b6-457">preset7</span></span>  | <span data-ttu-id="589b6-458">7</span><span class="sxs-lookup"><span data-stu-id="589b6-458">7</span></span>       
-| <span data-ttu-id="589b6-459">preset8</span><span class="sxs-lookup"><span data-stu-id="589b6-459">preset8</span></span>  | <span data-ttu-id="589b6-460">8</span><span class="sxs-lookup"><span data-stu-id="589b6-460">8</span></span>       
-| <span data-ttu-id="589b6-461">preset9</span><span class="sxs-lookup"><span data-stu-id="589b6-461">preset9</span></span>  | <span data-ttu-id="589b6-462">9</span><span class="sxs-lookup"><span data-stu-id="589b6-462">9</span></span>       
-| <span data-ttu-id="589b6-463">preset10</span><span class="sxs-lookup"><span data-stu-id="589b6-463">preset10</span></span> | <span data-ttu-id="589b6-464">10</span><span class="sxs-lookup"><span data-stu-id="589b6-464">10</span></span>      
-| <span data-ttu-id="589b6-465">preset11</span><span class="sxs-lookup"><span data-stu-id="589b6-465">preset11</span></span> | <span data-ttu-id="589b6-466">11</span><span class="sxs-lookup"><span data-stu-id="589b6-466">11</span></span>      
-| <span data-ttu-id="589b6-467">preset12</span><span class="sxs-lookup"><span data-stu-id="589b6-467">preset12</span></span> | <span data-ttu-id="589b6-468">12</span><span class="sxs-lookup"><span data-stu-id="589b6-468">12</span></span>      
-| <span data-ttu-id="589b6-469">preset13</span><span class="sxs-lookup"><span data-stu-id="589b6-469">preset13</span></span> | <span data-ttu-id="589b6-470">13</span><span class="sxs-lookup"><span data-stu-id="589b6-470">13</span></span>      
-| <span data-ttu-id="589b6-471">preset14</span><span class="sxs-lookup"><span data-stu-id="589b6-471">preset14</span></span> | <span data-ttu-id="589b6-472">14</span><span class="sxs-lookup"><span data-stu-id="589b6-472">14</span></span>      
-| <span data-ttu-id="589b6-473">preset15</span><span class="sxs-lookup"><span data-stu-id="589b6-473">preset15</span></span> | <span data-ttu-id="589b6-474">15</span><span class="sxs-lookup"><span data-stu-id="589b6-474">15</span></span>      
-| <span data-ttu-id="589b6-475">preset16</span><span class="sxs-lookup"><span data-stu-id="589b6-475">preset16</span></span> | <span data-ttu-id="589b6-476">16</span><span class="sxs-lookup"><span data-stu-id="589b6-476">16</span></span>      
-| <span data-ttu-id="589b6-477">preset17</span><span class="sxs-lookup"><span data-stu-id="589b6-477">preset17</span></span> | <span data-ttu-id="589b6-478">17</span><span class="sxs-lookup"><span data-stu-id="589b6-478">17</span></span>      
-| <span data-ttu-id="589b6-479">preset18</span><span class="sxs-lookup"><span data-stu-id="589b6-479">preset18</span></span> | <span data-ttu-id="589b6-480">18</span><span class="sxs-lookup"><span data-stu-id="589b6-480">18</span></span>      
-| <span data-ttu-id="589b6-481">preset19</span><span class="sxs-lookup"><span data-stu-id="589b6-481">preset19</span></span> | <span data-ttu-id="589b6-482">19</span><span class="sxs-lookup"><span data-stu-id="589b6-482">19</span></span>      
-| <span data-ttu-id="589b6-483">preset20</span><span class="sxs-lookup"><span data-stu-id="589b6-483">preset20</span></span> | <span data-ttu-id="589b6-484">20</span><span class="sxs-lookup"><span data-stu-id="589b6-484">20</span></span>      
-| <span data-ttu-id="589b6-485">preset21</span><span class="sxs-lookup"><span data-stu-id="589b6-485">preset21</span></span> | <span data-ttu-id="589b6-486">21</span><span class="sxs-lookup"><span data-stu-id="589b6-486">21</span></span>      
-| <span data-ttu-id="589b6-487">preset22</span><span class="sxs-lookup"><span data-stu-id="589b6-487">preset22</span></span> | <span data-ttu-id="589b6-488">22</span><span class="sxs-lookup"><span data-stu-id="589b6-488">22</span></span>      
-| <span data-ttu-id="589b6-489">preset23</span><span class="sxs-lookup"><span data-stu-id="589b6-489">preset23</span></span> | <span data-ttu-id="589b6-490">23</span><span class="sxs-lookup"><span data-stu-id="589b6-490">23</span></span>      
-| <span data-ttu-id="589b6-491">preset24</span><span class="sxs-lookup"><span data-stu-id="589b6-491">preset24</span></span> | <span data-ttu-id="589b6-492">24</span><span class="sxs-lookup"><span data-stu-id="589b6-492">24</span></span>      
+| <span data-ttu-id="66d9c-461">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-461">none</span></span>     | <span data-ttu-id="66d9c-462">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-462">-1</span></span>      
+| <span data-ttu-id="66d9c-463">preset0</span><span class="sxs-lookup"><span data-stu-id="66d9c-463">preset0</span></span>  | <span data-ttu-id="66d9c-464">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-464">0</span></span>       
+| <span data-ttu-id="66d9c-465">preset1</span><span class="sxs-lookup"><span data-stu-id="66d9c-465">preset1</span></span>  | <span data-ttu-id="66d9c-466">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-466">1</span></span>       
+| <span data-ttu-id="66d9c-467">preset2</span><span class="sxs-lookup"><span data-stu-id="66d9c-467">preset2</span></span>  | <span data-ttu-id="66d9c-468">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-468">2</span></span>       
+| <span data-ttu-id="66d9c-469">preset3</span><span class="sxs-lookup"><span data-stu-id="66d9c-469">preset3</span></span>  | <span data-ttu-id="66d9c-470">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-470">3</span></span>       
+| <span data-ttu-id="66d9c-471">preset4</span><span class="sxs-lookup"><span data-stu-id="66d9c-471">preset4</span></span>  | <span data-ttu-id="66d9c-472">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-472">4</span></span>       
+| <span data-ttu-id="66d9c-473">preset5</span><span class="sxs-lookup"><span data-stu-id="66d9c-473">preset5</span></span>  | <span data-ttu-id="66d9c-474">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-474">5</span></span>       
+| <span data-ttu-id="66d9c-475">preset6</span><span class="sxs-lookup"><span data-stu-id="66d9c-475">preset6</span></span>  | <span data-ttu-id="66d9c-476">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-476">6</span></span>       
+| <span data-ttu-id="66d9c-477">preset7</span><span class="sxs-lookup"><span data-stu-id="66d9c-477">preset7</span></span>  | <span data-ttu-id="66d9c-478">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-478">7</span></span>       
+| <span data-ttu-id="66d9c-479">preset8</span><span class="sxs-lookup"><span data-stu-id="66d9c-479">preset8</span></span>  | <span data-ttu-id="66d9c-480">~</span><span class="sxs-lookup"><span data-stu-id="66d9c-480">8</span></span>       
+| <span data-ttu-id="66d9c-481">preset9</span><span class="sxs-lookup"><span data-stu-id="66d9c-481">preset9</span></span>  | <span data-ttu-id="66d9c-482">i-9</span><span class="sxs-lookup"><span data-stu-id="66d9c-482">9</span></span>       
+| <span data-ttu-id="66d9c-483">preset10</span><span class="sxs-lookup"><span data-stu-id="66d9c-483">preset10</span></span> | <span data-ttu-id="66d9c-484">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-484">10</span></span>      
+| <span data-ttu-id="66d9c-485">preset11</span><span class="sxs-lookup"><span data-stu-id="66d9c-485">preset11</span></span> | <span data-ttu-id="66d9c-486">#</span><span class="sxs-lookup"><span data-stu-id="66d9c-486">11</span></span>      
+| <span data-ttu-id="66d9c-487">preset12</span><span class="sxs-lookup"><span data-stu-id="66d9c-487">preset12</span></span> | <span data-ttu-id="66d9c-488">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-488">12</span></span>      
+| <span data-ttu-id="66d9c-489">preset13</span><span class="sxs-lookup"><span data-stu-id="66d9c-489">preset13</span></span> | <span data-ttu-id="66d9c-490">スリー</span><span class="sxs-lookup"><span data-stu-id="66d9c-490">13</span></span>      
+| <span data-ttu-id="66d9c-491">preset14</span><span class="sxs-lookup"><span data-stu-id="66d9c-491">preset14</span></span> | <span data-ttu-id="66d9c-492">第</span><span class="sxs-lookup"><span data-stu-id="66d9c-492">14</span></span>      
+| <span data-ttu-id="66d9c-493">preset15</span><span class="sxs-lookup"><span data-stu-id="66d9c-493">preset15</span></span> | <span data-ttu-id="66d9c-494">約</span><span class="sxs-lookup"><span data-stu-id="66d9c-494">15</span></span>      
+| <span data-ttu-id="66d9c-495">preset16</span><span class="sxs-lookup"><span data-stu-id="66d9c-495">preset16</span></span> | <span data-ttu-id="66d9c-496">16</span><span class="sxs-lookup"><span data-stu-id="66d9c-496">16</span></span>      
+| <span data-ttu-id="66d9c-497">preset17</span><span class="sxs-lookup"><span data-stu-id="66d9c-497">preset17</span></span> | <span data-ttu-id="66d9c-498">インチ</span><span class="sxs-lookup"><span data-stu-id="66d9c-498">17</span></span>      
+| <span data-ttu-id="66d9c-499">preset18</span><span class="sxs-lookup"><span data-stu-id="66d9c-499">preset18</span></span> | <span data-ttu-id="66d9c-500">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-500">18</span></span>      
+| <span data-ttu-id="66d9c-501">preset19</span><span class="sxs-lookup"><span data-stu-id="66d9c-501">preset19</span></span> | <span data-ttu-id="66d9c-502">年</span><span class="sxs-lookup"><span data-stu-id="66d9c-502">19</span></span>      
+| <span data-ttu-id="66d9c-503">preset20</span><span class="sxs-lookup"><span data-stu-id="66d9c-503">preset20</span></span> | <span data-ttu-id="66d9c-504">1280</span><span class="sxs-lookup"><span data-stu-id="66d9c-504">20</span></span>      
+| <span data-ttu-id="66d9c-505">preset21</span><span class="sxs-lookup"><span data-stu-id="66d9c-505">preset21</span></span> | <span data-ttu-id="66d9c-506">21</span><span class="sxs-lookup"><span data-stu-id="66d9c-506">21</span></span>      
+| <span data-ttu-id="66d9c-507">preset22</span><span class="sxs-lookup"><span data-stu-id="66d9c-507">preset22</span></span> | <span data-ttu-id="66d9c-508">×</span><span class="sxs-lookup"><span data-stu-id="66d9c-508">22</span></span>      
+| <span data-ttu-id="66d9c-509">preset23</span><span class="sxs-lookup"><span data-stu-id="66d9c-509">preset23</span></span> | <span data-ttu-id="66d9c-510">最高</span><span class="sxs-lookup"><span data-stu-id="66d9c-510">23</span></span>      
+| <span data-ttu-id="66d9c-511">preset24</span><span class="sxs-lookup"><span data-stu-id="66d9c-511">preset24</span></span> | <span data-ttu-id="66d9c-512">ソケット</span><span class="sxs-lookup"><span data-stu-id="66d9c-512">24</span></span>      
 
-### <a name="alertfeedback-values"></a><span data-ttu-id="589b6-493">alertFeedback 値</span><span class="sxs-lookup"><span data-stu-id="589b6-493">alertFeedback values</span></span>
+### <a name="alertfeedback-values"></a><span data-ttu-id="66d9c-513">alertfeedback 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-513">alertFeedback values</span></span>
 
-<span data-ttu-id="589b6-494">アナリストによって提供される通知を可能な限りフィードバック値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-494">Possible feedback values on the alert provided by an analyst.</span></span>
+<span data-ttu-id="66d9c-514">アナリストによって提供される警告での可能なフィードバック値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-514">Possible feedback values on the alert provided by an analyst.</span></span>
 
-|<span data-ttu-id="589b6-495">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-495">Member</span></span>|<span data-ttu-id="589b6-496">値</span><span class="sxs-lookup"><span data-stu-id="589b6-496">Value</span></span>|<span data-ttu-id="589b6-497">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-497">Description</span></span>|
+|<span data-ttu-id="66d9c-515">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-515">Member</span></span>|<span data-ttu-id="66d9c-516">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-516">Value</span></span>|<span data-ttu-id="66d9c-517">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-517">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-498">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-498">unknown</span></span>|<span data-ttu-id="589b6-499">0</span><span class="sxs-lookup"><span data-stu-id="589b6-499">0</span></span>|<span data-ttu-id="589b6-500">不明。</span><span class="sxs-lookup"><span data-stu-id="589b6-500">Unknown.</span></span>|
-|<span data-ttu-id="589b6-501">truePositive</span><span class="sxs-lookup"><span data-stu-id="589b6-501">truePositive</span></span>|<span data-ttu-id="589b6-502">1</span><span class="sxs-lookup"><span data-stu-id="589b6-502">1</span></span>|<span data-ttu-id="589b6-503">アラートは、正の true です。</span><span class="sxs-lookup"><span data-stu-id="589b6-503">Alert is true-positive.</span></span>|
-|<span data-ttu-id="589b6-504">falsePositive</span><span class="sxs-lookup"><span data-stu-id="589b6-504">falsePositive</span></span>|<span data-ttu-id="589b6-505">2</span><span class="sxs-lookup"><span data-stu-id="589b6-505">2</span></span>| <span data-ttu-id="589b6-506">アラートが誤ってとは。</span><span class="sxs-lookup"><span data-stu-id="589b6-506">Alert is false-positive.</span></span>|
-|<span data-ttu-id="589b6-507">benignPositive</span><span class="sxs-lookup"><span data-stu-id="589b6-507">benignPositive</span></span>|<span data-ttu-id="589b6-508">3</span><span class="sxs-lookup"><span data-stu-id="589b6-508">3</span></span>| <span data-ttu-id="589b6-509">アラートは、正の問題です。</span><span class="sxs-lookup"><span data-stu-id="589b6-509">Alert is benign-positive.</span></span>|
+|<span data-ttu-id="66d9c-518">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-518">unknown</span></span>|<span data-ttu-id="66d9c-519">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-519">0</span></span>|<span data-ttu-id="66d9c-520">わかり.</span><span class="sxs-lookup"><span data-stu-id="66d9c-520">Unknown.</span></span>|
+|<span data-ttu-id="66d9c-521">truePositive</span><span class="sxs-lookup"><span data-stu-id="66d9c-521">truePositive</span></span>|<span data-ttu-id="66d9c-522">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-522">1</span></span>|<span data-ttu-id="66d9c-523">Alert は true-正の数値です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-523">Alert is true-positive.</span></span>|
+|<span data-ttu-id="66d9c-524">falsePositive</span><span class="sxs-lookup"><span data-stu-id="66d9c-524">falsePositive</span></span>|<span data-ttu-id="66d9c-525">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-525">2</span></span>| <span data-ttu-id="66d9c-526">警告は誤検知です-正数。</span><span class="sxs-lookup"><span data-stu-id="66d9c-526">Alert is false-positive.</span></span>|
+|<span data-ttu-id="66d9c-527">benignPositive</span><span class="sxs-lookup"><span data-stu-id="66d9c-527">benignPositive</span></span>|<span data-ttu-id="66d9c-528">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-528">3</span></span>| <span data-ttu-id="66d9c-529">通知は害のない-正。</span><span class="sxs-lookup"><span data-stu-id="66d9c-529">Alert is benign-positive.</span></span>|
 
-### <a name="filehashtype-values"></a><span data-ttu-id="589b6-510">fileHashType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-510">fileHashType values</span></span>
+### <a name="filehashtype-values"></a><span data-ttu-id="66d9c-530">filehashtype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-530">fileHashType values</span></span>
 
-|<span data-ttu-id="589b6-511">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-511">Member</span></span>|<span data-ttu-id="589b6-512">値</span><span class="sxs-lookup"><span data-stu-id="589b6-512">Value</span></span>|<span data-ttu-id="589b6-513">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-513">Description</span></span>|
+|<span data-ttu-id="66d9c-531">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-531">Member</span></span>|<span data-ttu-id="66d9c-532">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-532">Value</span></span>|<span data-ttu-id="66d9c-533">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-533">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-514">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-514">unknown</span></span>|<span data-ttu-id="589b6-515">0</span><span class="sxs-lookup"><span data-stu-id="589b6-515">0</span></span>|<span data-ttu-id="589b6-516">不明な種類です。</span><span class="sxs-lookup"><span data-stu-id="589b6-516">Unknown type.</span></span>|
-|<span data-ttu-id="589b6-517">sha1</span><span class="sxs-lookup"><span data-stu-id="589b6-517">sha1</span></span>|<span data-ttu-id="589b6-518">1</span><span class="sxs-lookup"><span data-stu-id="589b6-518">1</span></span>|<span data-ttu-id="589b6-519">SHA1 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-519">SHA1 hash type.</span></span>|
-|<span data-ttu-id="589b6-520">sha256</span><span class="sxs-lookup"><span data-stu-id="589b6-520">sha256</span></span>|<span data-ttu-id="589b6-521">2</span><span class="sxs-lookup"><span data-stu-id="589b6-521">2</span></span>| <span data-ttu-id="589b6-522">SHA256 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-522">SHA256 hash type.</span></span>|
-|<span data-ttu-id="589b6-523">md5</span><span class="sxs-lookup"><span data-stu-id="589b6-523">md5</span></span>|<span data-ttu-id="589b6-524">3</span><span class="sxs-lookup"><span data-stu-id="589b6-524">3</span></span>| <span data-ttu-id="589b6-525">MD5 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-525">MD5 hash type.</span></span>|
-|<span data-ttu-id="589b6-526">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="589b6-526">authenticodeHash256</span></span>|<span data-ttu-id="589b6-527">4</span><span class="sxs-lookup"><span data-stu-id="589b6-527">4</span></span>| <span data-ttu-id="589b6-528">AuthenticodeHash256 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-528">AuthenticodeHash256 hash type.</span></span>|
-|<span data-ttu-id="589b6-529">lsHash</span><span class="sxs-lookup"><span data-stu-id="589b6-529">lsHash</span></span>|<span data-ttu-id="589b6-530">5</span><span class="sxs-lookup"><span data-stu-id="589b6-530">5</span></span>| <span data-ttu-id="589b6-531">LsHash ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-531">LsHash hash type.</span></span>|
-|<span data-ttu-id="589b6-532">ctph</span><span class="sxs-lookup"><span data-stu-id="589b6-532">ctph</span></span>|<span data-ttu-id="589b6-533">6</span><span class="sxs-lookup"><span data-stu-id="589b6-533">6</span></span>| <span data-ttu-id="589b6-534">CTPH ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-534">CTPH hash type.</span></span>|
-|<span data-ttu-id="589b6-535">peSha1</span><span class="sxs-lookup"><span data-stu-id="589b6-535">peSha1</span></span>|<span data-ttu-id="589b6-536">7</span><span class="sxs-lookup"><span data-stu-id="589b6-536">7</span></span>| <span data-ttu-id="589b6-537">PESHA1 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-537">PESHA1 hash type.</span></span>|
-|<span data-ttu-id="589b6-538">peSha256</span><span class="sxs-lookup"><span data-stu-id="589b6-538">peSha256</span></span>|<span data-ttu-id="589b6-539">8</span><span class="sxs-lookup"><span data-stu-id="589b6-539">8</span></span>| <span data-ttu-id="589b6-540">PESHA256 ハッシュ タイプを入力します。</span><span class="sxs-lookup"><span data-stu-id="589b6-540">PESHA256 hash type.</span></span>|
+|<span data-ttu-id="66d9c-534">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-534">unknown</span></span>|<span data-ttu-id="66d9c-535">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-535">0</span></span>|<span data-ttu-id="66d9c-536">不明な種類です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-536">Unknown type.</span></span>|
+|<span data-ttu-id="66d9c-537">sha1</span><span class="sxs-lookup"><span data-stu-id="66d9c-537">sha1</span></span>|<span data-ttu-id="66d9c-538">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-538">1</span></span>|<span data-ttu-id="66d9c-539">SHA1 ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-539">SHA1 hash type.</span></span>|
+|<span data-ttu-id="66d9c-540">sha256</span><span class="sxs-lookup"><span data-stu-id="66d9c-540">sha256</span></span>|<span data-ttu-id="66d9c-541">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-541">2</span></span>| <span data-ttu-id="66d9c-542">SHA256 ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-542">SHA256 hash type.</span></span>|
+|<span data-ttu-id="66d9c-543">md5</span><span class="sxs-lookup"><span data-stu-id="66d9c-543">md5</span></span>|<span data-ttu-id="66d9c-544">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-544">3</span></span>| <span data-ttu-id="66d9c-545">MD5 ハッシュ型。</span><span class="sxs-lookup"><span data-stu-id="66d9c-545">MD5 hash type.</span></span>|
+|<span data-ttu-id="66d9c-546">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="66d9c-546">authenticodeHash256</span></span>|<span data-ttu-id="66d9c-547">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-547">4</span></span>| <span data-ttu-id="66d9c-548">AuthenticodeHash256 ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-548">AuthenticodeHash256 hash type.</span></span>|
+|<span data-ttu-id="66d9c-549">lsHash</span><span class="sxs-lookup"><span data-stu-id="66d9c-549">lsHash</span></span>|<span data-ttu-id="66d9c-550">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-550">5</span></span>| <span data-ttu-id="66d9c-551">LsHash ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-551">LsHash hash type.</span></span>|
+|<span data-ttu-id="66d9c-552">ctph</span><span class="sxs-lookup"><span data-stu-id="66d9c-552">ctph</span></span>|<span data-ttu-id="66d9c-553">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-553">6</span></span>| <span data-ttu-id="66d9c-554">ctph ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-554">CTPH hash type.</span></span>|
+|<span data-ttu-id="66d9c-555">peSha1</span><span class="sxs-lookup"><span data-stu-id="66d9c-555">peSha1</span></span>|<span data-ttu-id="66d9c-556">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-556">7</span></span>| <span data-ttu-id="66d9c-557">PESHA1 ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-557">PESHA1 hash type.</span></span>|
+|<span data-ttu-id="66d9c-558">peSha256</span><span class="sxs-lookup"><span data-stu-id="66d9c-558">peSha256</span></span>|<span data-ttu-id="66d9c-559">~</span><span class="sxs-lookup"><span data-stu-id="66d9c-559">8</span></span>| <span data-ttu-id="66d9c-560">PESHA256 ハッシュの種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-560">PESHA256 hash type.</span></span>|
 
-### <a name="connectiondirection-values"></a><span data-ttu-id="589b6-541">connectionDirection 値</span><span class="sxs-lookup"><span data-stu-id="589b6-541">connectionDirection values</span></span>
+### <a name="connectiondirection-values"></a><span data-ttu-id="66d9c-561">connectiondirection 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-561">connectionDirection values</span></span>
 
-|<span data-ttu-id="589b6-542">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-542">Member</span></span>|<span data-ttu-id="589b6-543">値</span><span class="sxs-lookup"><span data-stu-id="589b6-543">Value</span></span>|<span data-ttu-id="589b6-544">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-544">Description</span></span>|
+|<span data-ttu-id="66d9c-562">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-562">Member</span></span>|<span data-ttu-id="66d9c-563">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-563">Value</span></span>|<span data-ttu-id="66d9c-564">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-564">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-545">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-545">unknown</span></span>|<span data-ttu-id="589b6-546">0</span><span class="sxs-lookup"><span data-stu-id="589b6-546">0</span></span>|<span data-ttu-id="589b6-547">不明な接続です。</span><span class="sxs-lookup"><span data-stu-id="589b6-547">Unknown connection.</span></span>|
-|<span data-ttu-id="589b6-548">受信</span><span class="sxs-lookup"><span data-stu-id="589b6-548">inbound</span></span>|<span data-ttu-id="589b6-549">1</span><span class="sxs-lookup"><span data-stu-id="589b6-549">1</span></span>|<span data-ttu-id="589b6-550">接続を受信します。</span><span class="sxs-lookup"><span data-stu-id="589b6-550">Inbound connection.</span></span>|
-|<span data-ttu-id="589b6-551">送信</span><span class="sxs-lookup"><span data-stu-id="589b6-551">outbound</span></span>|<span data-ttu-id="589b6-552">2</span><span class="sxs-lookup"><span data-stu-id="589b6-552">2</span></span>| <span data-ttu-id="589b6-553">送信接続します。</span><span class="sxs-lookup"><span data-stu-id="589b6-553">Outbound connection.</span></span>|
+|<span data-ttu-id="66d9c-565">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-565">unknown</span></span>|<span data-ttu-id="66d9c-566">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-566">0</span></span>|<span data-ttu-id="66d9c-567">不明な接続。</span><span class="sxs-lookup"><span data-stu-id="66d9c-567">Unknown connection.</span></span>|
+|<span data-ttu-id="66d9c-568">受信</span><span class="sxs-lookup"><span data-stu-id="66d9c-568">inbound</span></span>|<span data-ttu-id="66d9c-569">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-569">1</span></span>|<span data-ttu-id="66d9c-570">受信接続。</span><span class="sxs-lookup"><span data-stu-id="66d9c-570">Inbound connection.</span></span>|
+|<span data-ttu-id="66d9c-571">向き</span><span class="sxs-lookup"><span data-stu-id="66d9c-571">outbound</span></span>|<span data-ttu-id="66d9c-572">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-572">2</span></span>| <span data-ttu-id="66d9c-573">送信接続。</span><span class="sxs-lookup"><span data-stu-id="66d9c-573">Outbound connection.</span></span>|
 
-### <a name="connectionstatus-values"></a><span data-ttu-id="589b6-554">connectionStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-554">connectionStatus values</span></span>
+### <a name="connectionstatus-values"></a><span data-ttu-id="66d9c-574">connectionstatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-574">connectionStatus values</span></span>
 
-|<span data-ttu-id="589b6-555">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-555">Member</span></span>|<span data-ttu-id="589b6-556">値</span><span class="sxs-lookup"><span data-stu-id="589b6-556">Value</span></span>|<span data-ttu-id="589b6-557">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-557">Description</span></span>|
+|<span data-ttu-id="66d9c-575">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-575">Member</span></span>|<span data-ttu-id="66d9c-576">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-576">Value</span></span>|<span data-ttu-id="66d9c-577">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-577">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-558">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-558">unknown</span></span>|<span data-ttu-id="589b6-559">0</span><span class="sxs-lookup"><span data-stu-id="589b6-559">0</span></span>|<span data-ttu-id="589b6-560">不明な接続状態です。</span><span class="sxs-lookup"><span data-stu-id="589b6-560">Unknown connection status.</span></span>|
-|<span data-ttu-id="589b6-561">しようとしました</span><span class="sxs-lookup"><span data-stu-id="589b6-561">attempted</span></span>|<span data-ttu-id="589b6-562">1</span><span class="sxs-lookup"><span data-stu-id="589b6-562">1</span></span>|<span data-ttu-id="589b6-563">接続が試行されます。</span><span class="sxs-lookup"><span data-stu-id="589b6-563">Connection attempted.</span></span>|
-|<span data-ttu-id="589b6-564">成功しました</span><span class="sxs-lookup"><span data-stu-id="589b6-564">succeeded</span></span>|<span data-ttu-id="589b6-565">2</span><span class="sxs-lookup"><span data-stu-id="589b6-565">2</span></span>| <span data-ttu-id="589b6-566">接続に成功しました。</span><span class="sxs-lookup"><span data-stu-id="589b6-566">Connection succeeded.</span></span>|
-|<span data-ttu-id="589b6-567">ブロック</span><span class="sxs-lookup"><span data-stu-id="589b6-567">blocked</span></span>|<span data-ttu-id="589b6-568">3</span><span class="sxs-lookup"><span data-stu-id="589b6-568">3</span></span>| <span data-ttu-id="589b6-569">接続をブロックします。</span><span class="sxs-lookup"><span data-stu-id="589b6-569">Connection blocked.</span></span>|
-|<span data-ttu-id="589b6-570">失敗しました。</span><span class="sxs-lookup"><span data-stu-id="589b6-570">failed</span></span>|<span data-ttu-id="589b6-571">4</span><span class="sxs-lookup"><span data-stu-id="589b6-571">4</span></span>| <span data-ttu-id="589b6-572">接続に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="589b6-572">Connection failed.</span></span>|
+|<span data-ttu-id="66d9c-578">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-578">unknown</span></span>|<span data-ttu-id="66d9c-579">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-579">0</span></span>|<span data-ttu-id="66d9c-580">接続状態が不明です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-580">Unknown connection status.</span></span>|
+|<span data-ttu-id="66d9c-581">しよう</span><span class="sxs-lookup"><span data-stu-id="66d9c-581">attempted</span></span>|<span data-ttu-id="66d9c-582">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-582">1</span></span>|<span data-ttu-id="66d9c-583">接続を試行しました。</span><span class="sxs-lookup"><span data-stu-id="66d9c-583">Connection attempted.</span></span>|
+|<span data-ttu-id="66d9c-584">失敗</span><span class="sxs-lookup"><span data-stu-id="66d9c-584">succeeded</span></span>|<span data-ttu-id="66d9c-585">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-585">2</span></span>| <span data-ttu-id="66d9c-586">接続に成功しました。</span><span class="sxs-lookup"><span data-stu-id="66d9c-586">Connection succeeded.</span></span>|
+|<span data-ttu-id="66d9c-587">ブロック</span><span class="sxs-lookup"><span data-stu-id="66d9c-587">blocked</span></span>|<span data-ttu-id="66d9c-588">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-588">3</span></span>| <span data-ttu-id="66d9c-589">接続がブロックされました。</span><span class="sxs-lookup"><span data-stu-id="66d9c-589">Connection blocked.</span></span>|
+|<span data-ttu-id="66d9c-590">フェール</span><span class="sxs-lookup"><span data-stu-id="66d9c-590">failed</span></span>|<span data-ttu-id="66d9c-591">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-591">4</span></span>| <span data-ttu-id="66d9c-592">接続に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="66d9c-592">Connection failed.</span></span>|
 
-### <a name="processintegritylevel-values"></a><span data-ttu-id="589b6-573">processIntegrityLevel 値</span><span class="sxs-lookup"><span data-stu-id="589b6-573">processIntegrityLevel values</span></span>
+### <a name="processintegritylevel-values"></a><span data-ttu-id="66d9c-593">processIntegrityLevel の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-593">processIntegrityLevel values</span></span>
 
-|<span data-ttu-id="589b6-574">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-574">Member</span></span>|<span data-ttu-id="589b6-575">値</span><span class="sxs-lookup"><span data-stu-id="589b6-575">Value</span></span>|<span data-ttu-id="589b6-576">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-576">Description</span></span>|
+|<span data-ttu-id="66d9c-594">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-594">Member</span></span>|<span data-ttu-id="66d9c-595">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-595">Value</span></span>|<span data-ttu-id="66d9c-596">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-596">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-577">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-577">unknown</span></span>|<span data-ttu-id="589b6-578">0</span><span class="sxs-lookup"><span data-stu-id="589b6-578">0</span></span>|<span data-ttu-id="589b6-579">不明。</span><span class="sxs-lookup"><span data-stu-id="589b6-579">Unknown.</span></span>|
-|<span data-ttu-id="589b6-580">信頼されていません。</span><span class="sxs-lookup"><span data-stu-id="589b6-580">untrusted</span></span>|<span data-ttu-id="589b6-581">10</span><span class="sxs-lookup"><span data-stu-id="589b6-581">10</span></span>|<span data-ttu-id="589b6-582">整合性レベルは、信頼されていません。</span><span class="sxs-lookup"><span data-stu-id="589b6-582">Integrity level is Untrusted.</span></span>|
-|<span data-ttu-id="589b6-583">低</span><span class="sxs-lookup"><span data-stu-id="589b6-583">low</span></span>|<span data-ttu-id="589b6-584">20</span><span class="sxs-lookup"><span data-stu-id="589b6-584">20</span></span>| <span data-ttu-id="589b6-585">整合性レベルは、低いです。</span><span class="sxs-lookup"><span data-stu-id="589b6-585">Integrity level is Low.</span></span>|
-|<span data-ttu-id="589b6-586">medium</span><span class="sxs-lookup"><span data-stu-id="589b6-586">medium</span></span>|<span data-ttu-id="589b6-587">30</span><span class="sxs-lookup"><span data-stu-id="589b6-587">30</span></span>| <span data-ttu-id="589b6-588">整合性レベルは、[中] です。</span><span class="sxs-lookup"><span data-stu-id="589b6-588">Integrity level is Medium.</span></span>|
-|<span data-ttu-id="589b6-589">高</span><span class="sxs-lookup"><span data-stu-id="589b6-589">high</span></span>|<span data-ttu-id="589b6-590">40</span><span class="sxs-lookup"><span data-stu-id="589b6-590">40</span></span>| <span data-ttu-id="589b6-591">整合性レベルは、高いです。</span><span class="sxs-lookup"><span data-stu-id="589b6-591">Integrity level is High.</span></span>|
-|<span data-ttu-id="589b6-592">システム</span><span class="sxs-lookup"><span data-stu-id="589b6-592">system</span></span>|<span data-ttu-id="589b6-593">50</span><span class="sxs-lookup"><span data-stu-id="589b6-593">50</span></span>| <span data-ttu-id="589b6-594">整合性レベルは、システムです。</span><span class="sxs-lookup"><span data-stu-id="589b6-594">Integrity level is System.</span></span>|
+|<span data-ttu-id="66d9c-597">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-597">unknown</span></span>|<span data-ttu-id="66d9c-598">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-598">0</span></span>|<span data-ttu-id="66d9c-599">わかり.</span><span class="sxs-lookup"><span data-stu-id="66d9c-599">Unknown.</span></span>|
+|<span data-ttu-id="66d9c-600">ない</span><span class="sxs-lookup"><span data-stu-id="66d9c-600">untrusted</span></span>|<span data-ttu-id="66d9c-601">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-601">10</span></span>|<span data-ttu-id="66d9c-602">整合性レベルは信頼されていません。</span><span class="sxs-lookup"><span data-stu-id="66d9c-602">Integrity level is Untrusted.</span></span>|
+|<span data-ttu-id="66d9c-603">低さ</span><span class="sxs-lookup"><span data-stu-id="66d9c-603">low</span></span>|<span data-ttu-id="66d9c-604">1280</span><span class="sxs-lookup"><span data-stu-id="66d9c-604">20</span></span>| <span data-ttu-id="66d9c-605">整合性レベルは低くなっています。</span><span class="sxs-lookup"><span data-stu-id="66d9c-605">Integrity level is Low.</span></span>|
+|<span data-ttu-id="66d9c-606">medium</span><span class="sxs-lookup"><span data-stu-id="66d9c-606">medium</span></span>|<span data-ttu-id="66d9c-607">31</span><span class="sxs-lookup"><span data-stu-id="66d9c-607">30</span></span>| <span data-ttu-id="66d9c-608">整合性レベルは中程度です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-608">Integrity level is Medium.</span></span>|
+|<span data-ttu-id="66d9c-609">高額</span><span class="sxs-lookup"><span data-stu-id="66d9c-609">high</span></span>|<span data-ttu-id="66d9c-610">40</span><span class="sxs-lookup"><span data-stu-id="66d9c-610">40</span></span>| <span data-ttu-id="66d9c-611">整合性レベルは High です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-611">Integrity level is High.</span></span>|
+|<span data-ttu-id="66d9c-612">system</span><span class="sxs-lookup"><span data-stu-id="66d9c-612">system</span></span>|<span data-ttu-id="66d9c-613">50</span><span class="sxs-lookup"><span data-stu-id="66d9c-613">50</span></span>| <span data-ttu-id="66d9c-614">整合性レベルはシステムです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-614">Integrity level is System.</span></span>|
 
-### <a name="registryhive-values"></a><span data-ttu-id="589b6-595">registryHive 値</span><span class="sxs-lookup"><span data-stu-id="589b6-595">registryHive values</span></span>
+### <a name="registryhive-values"></a><span data-ttu-id="66d9c-615">registryhive 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-615">registryHive values</span></span>
 
-<span data-ttu-id="589b6-596">レジストリの列挙型で定義されているハイブを[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。</span><span class="sxs-lookup"><span data-stu-id="589b6-596">Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span></span>
+<span data-ttu-id="66d9c-616">で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)定義されているレジストリハイブの列挙。</span><span class="sxs-lookup"><span data-stu-id="66d9c-616">Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span></span>
 
-|<span data-ttu-id="589b6-597">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-597">Member</span></span>|<span data-ttu-id="589b6-598">値</span><span class="sxs-lookup"><span data-stu-id="589b6-598">Value</span></span>|<span data-ttu-id="589b6-599">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-599">Description</span></span>|
+|<span data-ttu-id="66d9c-617">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-617">Member</span></span>|<span data-ttu-id="66d9c-618">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-618">Value</span></span>|<span data-ttu-id="66d9c-619">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-619">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-600">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-600">unknown</span></span>|<span data-ttu-id="589b6-601">0</span><span class="sxs-lookup"><span data-stu-id="589b6-601">0</span></span>|<span data-ttu-id="589b6-602">不明なハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-602">Unknown hive.</span></span>|
-|<span data-ttu-id="589b6-603">currentConfig</span><span class="sxs-lookup"><span data-stu-id="589b6-603">currentConfig</span></span>|<span data-ttu-id="589b6-604">1</span><span class="sxs-lookup"><span data-stu-id="589b6-604">1</span></span>|<span data-ttu-id="589b6-605">HKEY_CURRENT_CONFIG ハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-605">HKEY_CURRENT_CONFIG hive.</span></span>|
-|<span data-ttu-id="589b6-606">作業中</span><span class="sxs-lookup"><span data-stu-id="589b6-606">currentUser</span></span>|<span data-ttu-id="589b6-607">2</span><span class="sxs-lookup"><span data-stu-id="589b6-607">2</span></span>| <span data-ttu-id="589b6-608">HKEY_CURRENT_USER ハイブを使用します。</span><span class="sxs-lookup"><span data-stu-id="589b6-608">HKEY_CURRENT_USER hive.</span></span>|
-|<span data-ttu-id="589b6-609">localMachineSam</span><span class="sxs-lookup"><span data-stu-id="589b6-609">localMachineSam</span></span>|<span data-ttu-id="589b6-610">3</span><span class="sxs-lookup"><span data-stu-id="589b6-610">3</span></span>| <span data-ttu-id="589b6-611">HKEY_LOCAL_MACHINE\SAM ハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-611">HKEY_LOCAL_MACHINE\SAM hive.</span></span>|
-|<span data-ttu-id="589b6-612">localMachineSamSoftware</span><span class="sxs-lookup"><span data-stu-id="589b6-612">localMachineSamSoftware</span></span>|<span data-ttu-id="589b6-613">4</span><span class="sxs-lookup"><span data-stu-id="589b6-613">4</span></span>| <span data-ttu-id="589b6-614">HKEY_LOCAL_MACHINE\Software ハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-614">HKEY_LOCAL_MACHINE\Software hive.</span></span>|
-|<span data-ttu-id="589b6-615">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="589b6-615">localMachineSystem</span></span>|<span data-ttu-id="589b6-616">5</span><span class="sxs-lookup"><span data-stu-id="589b6-616">5</span></span>| <span data-ttu-id="589b6-617">HKEY_LOCAL_MACHINE\System ハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-617">HKEY_LOCAL_MACHINE\System hive.</span></span>|
-|<span data-ttu-id="589b6-618">usersDefault</span><span class="sxs-lookup"><span data-stu-id="589b6-618">usersDefault</span></span>|<span data-ttu-id="589b6-619">6</span><span class="sxs-lookup"><span data-stu-id="589b6-619">6</span></span>| <span data-ttu-id="589b6-620">HKEY_USERS\\。デフォルトのハイブです。</span><span class="sxs-lookup"><span data-stu-id="589b6-620">HKEY_USERS\\.DEFAULT hive.</span></span>|
+|<span data-ttu-id="66d9c-620">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-620">unknown</span></span>|<span data-ttu-id="66d9c-621">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-621">0</span></span>|<span data-ttu-id="66d9c-622">不明なハイブです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-622">Unknown hive.</span></span>|
+|<span data-ttu-id="66d9c-623">currentconfig</span><span class="sxs-lookup"><span data-stu-id="66d9c-623">currentConfig</span></span>|<span data-ttu-id="66d9c-624">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-624">1</span></span>|<span data-ttu-id="66d9c-625">HKEY_CURRENT_CONFIG ハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-625">HKEY_CURRENT_CONFIG hive.</span></span>|
+|<span data-ttu-id="66d9c-626">currentUser</span><span class="sxs-lookup"><span data-stu-id="66d9c-626">currentUser</span></span>|<span data-ttu-id="66d9c-627">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-627">2</span></span>| <span data-ttu-id="66d9c-628">HKEY_CURRENT_USER ハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-628">HKEY_CURRENT_USER hive.</span></span>|
+|<span data-ttu-id="66d9c-629">localmachinesam</span><span class="sxs-lookup"><span data-stu-id="66d9c-629">localMachineSam</span></span>|<span data-ttu-id="66d9c-630">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-630">3</span></span>| <span data-ttu-id="66d9c-631">HKEY_LOCAL_MACHINE\SAM ハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-631">HKEY_LOCAL_MACHINE\SAM hive.</span></span>|
+|<span data-ttu-id="66d9c-632">localmachinesamsoftware</span><span class="sxs-lookup"><span data-stu-id="66d9c-632">localMachineSamSoftware</span></span>|<span data-ttu-id="66d9c-633">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-633">4</span></span>| <span data-ttu-id="66d9c-634">HKEY_LOCAL_MACHINE\Software ハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-634">HKEY_LOCAL_MACHINE\Software hive.</span></span>|
+|<span data-ttu-id="66d9c-635">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="66d9c-635">localMachineSystem</span></span>|<span data-ttu-id="66d9c-636">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-636">5</span></span>| <span data-ttu-id="66d9c-637">HKEY_LOCAL_MACHINE\System ハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-637">HKEY_LOCAL_MACHINE\System hive.</span></span>|
+|<span data-ttu-id="66d9c-638">ユーザー既定</span><span class="sxs-lookup"><span data-stu-id="66d9c-638">usersDefault</span></span>|<span data-ttu-id="66d9c-639">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-639">6</span></span>| <span data-ttu-id="66d9c-640">HKEY_USERS\\既定のハイブ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-640">HKEY_USERS\\.DEFAULT hive.</span></span>|
 
-### <a name="registryoperation-values"></a><span data-ttu-id="589b6-621">registryOperation 値</span><span class="sxs-lookup"><span data-stu-id="589b6-621">registryOperation values</span></span>
+### <a name="registryoperation-values"></a><span data-ttu-id="66d9c-641">registryoperation の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-641">registryOperation values</span></span>
 
-<span data-ttu-id="589b6-622">レジストリ キーの名前または値を変更する操作です。</span><span class="sxs-lookup"><span data-stu-id="589b6-622">Operation that changed the registry key name and/or value.</span></span>
+<span data-ttu-id="66d9c-642">レジストリキー名と値の一方または両方を変更した操作。</span><span class="sxs-lookup"><span data-stu-id="66d9c-642">Operation that changed the registry key name and/or value.</span></span>
 
-|<span data-ttu-id="589b6-623">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-623">Member</span></span>|<span data-ttu-id="589b6-624">値</span><span class="sxs-lookup"><span data-stu-id="589b6-624">Value</span></span>|<span data-ttu-id="589b6-625">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-625">Description</span></span>|
+|<span data-ttu-id="66d9c-643">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-643">Member</span></span>|<span data-ttu-id="66d9c-644">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-644">Value</span></span>|<span data-ttu-id="66d9c-645">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-645">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-626">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-626">unknown</span></span>|<span data-ttu-id="589b6-627">0</span><span class="sxs-lookup"><span data-stu-id="589b6-627">0</span></span>|<span data-ttu-id="589b6-628">不明なレジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-628">Unknown registry value type.</span></span>|
-|<span data-ttu-id="589b6-629">create</span><span class="sxs-lookup"><span data-stu-id="589b6-629">create</span></span>|<span data-ttu-id="589b6-630">1</span><span class="sxs-lookup"><span data-stu-id="589b6-630">1</span></span>|<span data-ttu-id="589b6-631">レジストリを作成します。</span><span class="sxs-lookup"><span data-stu-id="589b6-631">Create registry.</span></span>|
-|<span data-ttu-id="589b6-632">変更</span><span class="sxs-lookup"><span data-stu-id="589b6-632">modify</span></span>|<span data-ttu-id="589b6-633">2</span><span class="sxs-lookup"><span data-stu-id="589b6-633">2</span></span>|<span data-ttu-id="589b6-634">レジストリを変更します。</span><span class="sxs-lookup"><span data-stu-id="589b6-634">Modify registry.</span></span>|
-|<span data-ttu-id="589b6-635">delete</span><span class="sxs-lookup"><span data-stu-id="589b6-635">delete</span></span>|<span data-ttu-id="589b6-636">3</span><span class="sxs-lookup"><span data-stu-id="589b6-636">3</span></span>|<span data-ttu-id="589b6-637">レジストリを削除します。</span><span class="sxs-lookup"><span data-stu-id="589b6-637">Delete registry.</span></span>|
+|<span data-ttu-id="66d9c-646">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-646">unknown</span></span>|<span data-ttu-id="66d9c-647">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-647">0</span></span>|<span data-ttu-id="66d9c-648">不明なレジストリ値の種類です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-648">Unknown registry value type.</span></span>|
+|<span data-ttu-id="66d9c-649">create</span><span class="sxs-lookup"><span data-stu-id="66d9c-649">create</span></span>|<span data-ttu-id="66d9c-650">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-650">1</span></span>|<span data-ttu-id="66d9c-651">レジストリを作成します。</span><span class="sxs-lookup"><span data-stu-id="66d9c-651">Create registry.</span></span>|
+|<span data-ttu-id="66d9c-652">modify</span><span class="sxs-lookup"><span data-stu-id="66d9c-652">modify</span></span>|<span data-ttu-id="66d9c-653">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-653">2</span></span>|<span data-ttu-id="66d9c-654">レジストリを変更します。</span><span class="sxs-lookup"><span data-stu-id="66d9c-654">Modify registry.</span></span>|
+|<span data-ttu-id="66d9c-655">delete</span><span class="sxs-lookup"><span data-stu-id="66d9c-655">delete</span></span>|<span data-ttu-id="66d9c-656">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-656">3</span></span>|<span data-ttu-id="66d9c-657">レジストリを削除します。</span><span class="sxs-lookup"><span data-stu-id="66d9c-657">Delete registry.</span></span>|
 
-### <a name="registryvaluetype-values"></a><span data-ttu-id="589b6-638">registryValueType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-638">registryValueType values</span></span>
+### <a name="registryvaluetype-values"></a><span data-ttu-id="66d9c-658">registryvaluetype 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-658">registryValueType values</span></span>
 
-<span data-ttu-id="589b6-639">レジストリ値の列挙型の型で定義されている[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)。</span><span class="sxs-lookup"><span data-stu-id="589b6-639">Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).</span></span>
+<span data-ttu-id="66d9c-659">で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)定義されているレジストリ値の種類の列挙。</span><span class="sxs-lookup"><span data-stu-id="66d9c-659">Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).</span></span>
 
-|<span data-ttu-id="589b6-640">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-640">Member</span></span>|<span data-ttu-id="589b6-641">値</span><span class="sxs-lookup"><span data-stu-id="589b6-641">Value</span></span>|<span data-ttu-id="589b6-642">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-642">Description</span></span>|
+|<span data-ttu-id="66d9c-660">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-660">Member</span></span>|<span data-ttu-id="66d9c-661">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-661">Value</span></span>|<span data-ttu-id="66d9c-662">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-662">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-643">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-643">unknown</span></span>|<span data-ttu-id="589b6-644">0</span><span class="sxs-lookup"><span data-stu-id="589b6-644">0</span></span>|<span data-ttu-id="589b6-645">不明なレジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-645">Unknown registry value type.</span></span>|
-|<span data-ttu-id="589b6-646">バイナリ</span><span class="sxs-lookup"><span data-stu-id="589b6-646">binary</span></span>|<span data-ttu-id="589b6-647">1</span><span class="sxs-lookup"><span data-stu-id="589b6-647">1</span></span>|<span data-ttu-id="589b6-648">REG_BINARY レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-648">REG_BINARY registry value type.</span></span>|
-|<span data-ttu-id="589b6-649">dword</span><span class="sxs-lookup"><span data-stu-id="589b6-649">dword</span></span>|<span data-ttu-id="589b6-650">2</span><span class="sxs-lookup"><span data-stu-id="589b6-650">2</span></span>| <span data-ttu-id="589b6-651">REG_DWORD レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-651">REG_DWORD registry value type.</span></span>|
-|<span data-ttu-id="589b6-652">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="589b6-652">dwordLittleEndian</span></span>|<span data-ttu-id="589b6-653">3</span><span class="sxs-lookup"><span data-stu-id="589b6-653">3</span></span>| <span data-ttu-id="589b6-654">REG_DWORD_LITTLE_ENDIAN レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-654">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="589b6-655">dwordBigEndian</span><span class="sxs-lookup"><span data-stu-id="589b6-655">dwordBigEndian</span></span>|<span data-ttu-id="589b6-656">4</span><span class="sxs-lookup"><span data-stu-id="589b6-656">4</span></span>| <span data-ttu-id="589b6-657">REG_DWORD_BIG_ENDIAN レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-657">REG_DWORD_BIG_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="589b6-658">expandSz</span><span class="sxs-lookup"><span data-stu-id="589b6-658">expandSz</span></span>|<span data-ttu-id="589b6-659">5</span><span class="sxs-lookup"><span data-stu-id="589b6-659">5</span></span>| <span data-ttu-id="589b6-660">REG_EXPAND_SZ レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-660">REG_EXPAND_SZ registry value type.</span></span>|
-|<span data-ttu-id="589b6-661">link</span><span class="sxs-lookup"><span data-stu-id="589b6-661">link</span></span>|<span data-ttu-id="589b6-662">6</span><span class="sxs-lookup"><span data-stu-id="589b6-662">6</span></span>| <span data-ttu-id="589b6-663">REG_LINK レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-663">REG_LINK registry value type.</span></span>|
-|<span data-ttu-id="589b6-664">multiSz</span><span class="sxs-lookup"><span data-stu-id="589b6-664">multiSz</span></span>|<span data-ttu-id="589b6-665">7</span><span class="sxs-lookup"><span data-stu-id="589b6-665">7</span></span>| <span data-ttu-id="589b6-666">REG_MULTI_SZ レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-666">REG_MULTI_SZ registry value type.</span></span>|
-|<span data-ttu-id="589b6-667">none</span><span class="sxs-lookup"><span data-stu-id="589b6-667">none</span></span>|<span data-ttu-id="589b6-668">8</span><span class="sxs-lookup"><span data-stu-id="589b6-668">8</span></span>| <span data-ttu-id="589b6-669">REG_NONE レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-669">REG_NONE registry value type.</span></span>|
-|<span data-ttu-id="589b6-670">qword</span><span class="sxs-lookup"><span data-stu-id="589b6-670">qword</span></span>|<span data-ttu-id="589b6-671">9</span><span class="sxs-lookup"><span data-stu-id="589b6-671">9</span></span>| <span data-ttu-id="589b6-672">値型のレジストリで定義します。</span><span class="sxs-lookup"><span data-stu-id="589b6-672">REG_QWORD registry value type.</span></span>|
-|<span data-ttu-id="589b6-673">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="589b6-673">qwordlittleEndian</span></span>|<span data-ttu-id="589b6-674">10</span><span class="sxs-lookup"><span data-stu-id="589b6-674">10</span></span>| <span data-ttu-id="589b6-675">REG_QWORD_LITTLE_ENDIAN レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-675">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="589b6-676">sz</span><span class="sxs-lookup"><span data-stu-id="589b6-676">sz</span></span>|<span data-ttu-id="589b6-677">11</span><span class="sxs-lookup"><span data-stu-id="589b6-677">11</span></span>| <span data-ttu-id="589b6-678">REG_SZ レジストリ値の型。</span><span class="sxs-lookup"><span data-stu-id="589b6-678">REG_SZ registry value type.</span></span>|
+|<span data-ttu-id="66d9c-663">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-663">unknown</span></span>|<span data-ttu-id="66d9c-664">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-664">0</span></span>|<span data-ttu-id="66d9c-665">不明なレジストリ値の種類です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-665">Unknown registry value type.</span></span>|
+|<span data-ttu-id="66d9c-666">バイナリ</span><span class="sxs-lookup"><span data-stu-id="66d9c-666">binary</span></span>|<span data-ttu-id="66d9c-667">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-667">1</span></span>|<span data-ttu-id="66d9c-668">REG_BINARY レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-668">REG_BINARY registry value type.</span></span>|
+|<span data-ttu-id="66d9c-669">dword</span><span class="sxs-lookup"><span data-stu-id="66d9c-669">dword</span></span>|<span data-ttu-id="66d9c-670">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-670">2</span></span>| <span data-ttu-id="66d9c-671">REG_DWORD のレジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-671">REG_DWORD registry value type.</span></span>|
+|<span data-ttu-id="66d9c-672">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="66d9c-672">dwordLittleEndian</span></span>|<span data-ttu-id="66d9c-673">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-673">3</span></span>| <span data-ttu-id="66d9c-674">REG_DWORD_LITTLE_ENDIAN レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-674">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="66d9c-675">dて dbigエンディアン</span><span class="sxs-lookup"><span data-stu-id="66d9c-675">dwordBigEndian</span></span>|<span data-ttu-id="66d9c-676">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-676">4</span></span>| <span data-ttu-id="66d9c-677">REG_DWORD_BIG_ENDIAN レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-677">REG_DWORD_BIG_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="66d9c-678">expandsz</span><span class="sxs-lookup"><span data-stu-id="66d9c-678">expandSz</span></span>|<span data-ttu-id="66d9c-679">5</span><span class="sxs-lookup"><span data-stu-id="66d9c-679">5</span></span>| <span data-ttu-id="66d9c-680">REG_EXPAND_SZ レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-680">REG_EXPAND_SZ registry value type.</span></span>|
+|<span data-ttu-id="66d9c-681">link</span><span class="sxs-lookup"><span data-stu-id="66d9c-681">link</span></span>|<span data-ttu-id="66d9c-682">シックス</span><span class="sxs-lookup"><span data-stu-id="66d9c-682">6</span></span>| <span data-ttu-id="66d9c-683">REG_LINK レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-683">REG_LINK registry value type.</span></span>|
+|<span data-ttu-id="66d9c-684">multisz</span><span class="sxs-lookup"><span data-stu-id="66d9c-684">multiSz</span></span>|<span data-ttu-id="66d9c-685">7</span><span class="sxs-lookup"><span data-stu-id="66d9c-685">7</span></span>| <span data-ttu-id="66d9c-686">REG_MULTI_SZ レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-686">REG_MULTI_SZ registry value type.</span></span>|
+|<span data-ttu-id="66d9c-687">none</span><span class="sxs-lookup"><span data-stu-id="66d9c-687">none</span></span>|<span data-ttu-id="66d9c-688">~</span><span class="sxs-lookup"><span data-stu-id="66d9c-688">8</span></span>| <span data-ttu-id="66d9c-689">REG_NONE レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-689">REG_NONE registry value type.</span></span>|
+|<span data-ttu-id="66d9c-690">qword</span><span class="sxs-lookup"><span data-stu-id="66d9c-690">qword</span></span>|<span data-ttu-id="66d9c-691">i-9</span><span class="sxs-lookup"><span data-stu-id="66d9c-691">9</span></span>| <span data-ttu-id="66d9c-692">REG_QWORD レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-692">REG_QWORD registry value type.</span></span>|
+|<span data-ttu-id="66d9c-693">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="66d9c-693">qwordlittleEndian</span></span>|<span data-ttu-id="66d9c-694">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-694">10</span></span>| <span data-ttu-id="66d9c-695">REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-695">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="66d9c-696">sz</span><span class="sxs-lookup"><span data-stu-id="66d9c-696">sz</span></span>|<span data-ttu-id="66d9c-697">#</span><span class="sxs-lookup"><span data-stu-id="66d9c-697">11</span></span>| <span data-ttu-id="66d9c-698">REG_SZ レジストリ値の種類。</span><span class="sxs-lookup"><span data-stu-id="66d9c-698">REG_SZ registry value type.</span></span>|
 
-### <a name="alertseverity-values"></a><span data-ttu-id="589b6-679">alertSeverity 値</span><span class="sxs-lookup"><span data-stu-id="589b6-679">alertSeverity values</span></span>
+### <a name="alertseverity-values"></a><span data-ttu-id="66d9c-699">alertseverity 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-699">alertSeverity values</span></span>
 
-<span data-ttu-id="589b6-680">アラートの重大度レベルを列挙します。</span><span class="sxs-lookup"><span data-stu-id="589b6-680">Enum for severity of alerts.</span></span>
+<span data-ttu-id="66d9c-700">通知の重要度を列挙します。</span><span class="sxs-lookup"><span data-stu-id="66d9c-700">Enum for severity of alerts.</span></span>
 
-|<span data-ttu-id="589b6-681">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-681">Member</span></span>|<span data-ttu-id="589b6-682">値</span><span class="sxs-lookup"><span data-stu-id="589b6-682">Value</span></span>|<span data-ttu-id="589b6-683">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-683">Description</span></span>|
+|<span data-ttu-id="66d9c-701">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-701">Member</span></span>|<span data-ttu-id="66d9c-702">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-702">Value</span></span>|<span data-ttu-id="66d9c-703">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-703">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-684">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-684">unknown</span></span>|<span data-ttu-id="589b6-685">0</span><span class="sxs-lookup"><span data-stu-id="589b6-685">0</span></span>|<span data-ttu-id="589b6-686">重大度は不明です。</span><span class="sxs-lookup"><span data-stu-id="589b6-686">Severity is unknown.</span></span>|
-|<span data-ttu-id="589b6-687">情報</span><span class="sxs-lookup"><span data-stu-id="589b6-687">informational</span></span>|<span data-ttu-id="589b6-688">1</span><span class="sxs-lookup"><span data-stu-id="589b6-688">1</span></span>|<span data-ttu-id="589b6-689">重大度は、情報専用です。</span><span class="sxs-lookup"><span data-stu-id="589b6-689">Severity is only for information.</span></span>|
-|<span data-ttu-id="589b6-690">低</span><span class="sxs-lookup"><span data-stu-id="589b6-690">low</span></span>|<span data-ttu-id="589b6-691">2</span><span class="sxs-lookup"><span data-stu-id="589b6-691">2</span></span>| <span data-ttu-id="589b6-692">重大度レベルが不足しています。</span><span class="sxs-lookup"><span data-stu-id="589b6-692">Severity is low.</span></span>|
-|<span data-ttu-id="589b6-693">medium</span><span class="sxs-lookup"><span data-stu-id="589b6-693">medium</span></span>|<span data-ttu-id="589b6-694">3</span><span class="sxs-lookup"><span data-stu-id="589b6-694">3</span></span>| <span data-ttu-id="589b6-695">重大度レベルは、[中] です。</span><span class="sxs-lookup"><span data-stu-id="589b6-695">Severity is medium.</span></span>|
-|<span data-ttu-id="589b6-696">高</span><span class="sxs-lookup"><span data-stu-id="589b6-696">high</span></span>|<span data-ttu-id="589b6-697">4</span><span class="sxs-lookup"><span data-stu-id="589b6-697">4</span></span>| <span data-ttu-id="589b6-698">重要度は高くなります。</span><span class="sxs-lookup"><span data-stu-id="589b6-698">Severity is high.</span></span>|
+|<span data-ttu-id="66d9c-704">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-704">unknown</span></span>|<span data-ttu-id="66d9c-705">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-705">0</span></span>|<span data-ttu-id="66d9c-706">重要度が不明です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-706">Severity is unknown.</span></span>|
+|<span data-ttu-id="66d9c-707">だけ</span><span class="sxs-lookup"><span data-stu-id="66d9c-707">informational</span></span>|<span data-ttu-id="66d9c-708">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-708">1</span></span>|<span data-ttu-id="66d9c-709">重要度は情報のみです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-709">Severity is only for information.</span></span>|
+|<span data-ttu-id="66d9c-710">低さ</span><span class="sxs-lookup"><span data-stu-id="66d9c-710">low</span></span>|<span data-ttu-id="66d9c-711">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-711">2</span></span>| <span data-ttu-id="66d9c-712">重要度は低くなります。</span><span class="sxs-lookup"><span data-stu-id="66d9c-712">Severity is low.</span></span>|
+|<span data-ttu-id="66d9c-713">medium</span><span class="sxs-lookup"><span data-stu-id="66d9c-713">medium</span></span>|<span data-ttu-id="66d9c-714">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-714">3</span></span>| <span data-ttu-id="66d9c-715">重要度は中程度です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-715">Severity is medium.</span></span>|
+|<span data-ttu-id="66d9c-716">高額</span><span class="sxs-lookup"><span data-stu-id="66d9c-716">high</span></span>|<span data-ttu-id="66d9c-717">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-717">4</span></span>| <span data-ttu-id="66d9c-718">重要度は high です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-718">Severity is high.</span></span>|
 
-### <a name="alertstatus-values"></a><span data-ttu-id="589b6-699">alertStatus 値</span><span class="sxs-lookup"><span data-stu-id="589b6-699">alertStatus values</span></span>
+### <a name="alertstatus-values"></a><span data-ttu-id="66d9c-719">alertstatus の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-719">alertStatus values</span></span>
 
-<span data-ttu-id="589b6-700">アラートのライフ サイクルの状態 (ステージ) の使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-700">Possible values of an Alert lifecycle status (stage).</span></span>
+<span data-ttu-id="66d9c-720">アラートライフサイクル状態 (ステージ) の可能な値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-720">Possible values of an Alert lifecycle status (stage).</span></span>
 
-|<span data-ttu-id="589b6-701">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-701">Member</span></span>|<span data-ttu-id="589b6-702">値</span><span class="sxs-lookup"><span data-stu-id="589b6-702">Value</span></span>|<span data-ttu-id="589b6-703">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-703">Description</span></span>|
+|<span data-ttu-id="66d9c-721">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-721">Member</span></span>|<span data-ttu-id="66d9c-722">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-722">Value</span></span>|<span data-ttu-id="66d9c-723">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-723">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-704">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-704">unknown</span></span>|<span data-ttu-id="589b6-705">0</span><span class="sxs-lookup"><span data-stu-id="589b6-705">0</span></span>|<span data-ttu-id="589b6-706">不明な状態です。</span><span class="sxs-lookup"><span data-stu-id="589b6-706">Unknown status.</span></span>|
-|<span data-ttu-id="589b6-707">newAlert</span><span class="sxs-lookup"><span data-stu-id="589b6-707">newAlert</span></span>|<span data-ttu-id="589b6-708">10</span><span class="sxs-lookup"><span data-stu-id="589b6-708">10</span></span>| <span data-ttu-id="589b6-709">アラートは、新しい。</span><span class="sxs-lookup"><span data-stu-id="589b6-709">Alert is new.</span></span>|
-|<span data-ttu-id="589b6-710">inProgress</span><span class="sxs-lookup"><span data-stu-id="589b6-710">inProgress</span></span>|<span data-ttu-id="589b6-711">20</span><span class="sxs-lookup"><span data-stu-id="589b6-711">20</span></span>|<span data-ttu-id="589b6-712">アラートは、処理中です。</span><span class="sxs-lookup"><span data-stu-id="589b6-712">Alert is in progress.</span></span>|
-|<span data-ttu-id="589b6-713">解決</span><span class="sxs-lookup"><span data-stu-id="589b6-713">resolved</span></span>|<span data-ttu-id="589b6-714">30</span><span class="sxs-lookup"><span data-stu-id="589b6-714">30</span></span>|<span data-ttu-id="589b6-715">アラートが解決されます。</span><span class="sxs-lookup"><span data-stu-id="589b6-715">Alert is resolved.</span></span>|
+|<span data-ttu-id="66d9c-724">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-724">unknown</span></span>|<span data-ttu-id="66d9c-725">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-725">0</span></span>|<span data-ttu-id="66d9c-726">状態が不明です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-726">Unknown status.</span></span>|
+|<span data-ttu-id="66d9c-727">newalert</span><span class="sxs-lookup"><span data-stu-id="66d9c-727">newAlert</span></span>|<span data-ttu-id="66d9c-728">個</span><span class="sxs-lookup"><span data-stu-id="66d9c-728">10</span></span>| <span data-ttu-id="66d9c-729">通知は新規です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-729">Alert is new.</span></span>|
+|<span data-ttu-id="66d9c-730">inProgress</span><span class="sxs-lookup"><span data-stu-id="66d9c-730">inProgress</span></span>|<span data-ttu-id="66d9c-731">1280</span><span class="sxs-lookup"><span data-stu-id="66d9c-731">20</span></span>|<span data-ttu-id="66d9c-732">通知が進行中です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-732">Alert is in progress.</span></span>|
+|<span data-ttu-id="66d9c-733">解析</span><span class="sxs-lookup"><span data-stu-id="66d9c-733">resolved</span></span>|<span data-ttu-id="66d9c-734">31</span><span class="sxs-lookup"><span data-stu-id="66d9c-734">30</span></span>|<span data-ttu-id="66d9c-735">アラートが解決されます。</span><span class="sxs-lookup"><span data-stu-id="66d9c-735">Alert is resolved.</span></span>|
 
-### <a name="emailrole-values"></a><span data-ttu-id="589b6-716">emailRole 値</span><span class="sxs-lookup"><span data-stu-id="589b6-716">emailRole values</span></span>
+### <a name="emailrole-values"></a><span data-ttu-id="66d9c-736">emailrole 値</span><span class="sxs-lookup"><span data-stu-id="66d9c-736">emailRole values</span></span>
 
-<span data-ttu-id="589b6-717">電子メールのロールの使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-717">Possible values for email roles.</span></span>
+<span data-ttu-id="66d9c-737">電子メールの役割に指定できる値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-737">Possible values for email roles.</span></span>
 
-|<span data-ttu-id="589b6-718">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-718">Member</span></span>|<span data-ttu-id="589b6-719">値</span><span class="sxs-lookup"><span data-stu-id="589b6-719">Value</span></span>|<span data-ttu-id="589b6-720">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-720">Description</span></span>|
+|<span data-ttu-id="66d9c-738">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-738">Member</span></span>|<span data-ttu-id="66d9c-739">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-739">Value</span></span>|<span data-ttu-id="66d9c-740">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-740">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-721">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-721">unknown</span></span>|<span data-ttu-id="589b6-722">0</span><span class="sxs-lookup"><span data-stu-id="589b6-722">0</span></span>|<span data-ttu-id="589b6-723">不明なロールです。</span><span class="sxs-lookup"><span data-stu-id="589b6-723">Unknown Role.</span></span>|
-|<span data-ttu-id="589b6-724">sender</span><span class="sxs-lookup"><span data-stu-id="589b6-724">sender</span></span>|<span data-ttu-id="589b6-725">1</span><span class="sxs-lookup"><span data-stu-id="589b6-725">1</span></span>|<span data-ttu-id="589b6-726">電子メールの送信者です。</span><span class="sxs-lookup"><span data-stu-id="589b6-726">Sender of the email.</span></span>|
-|<span data-ttu-id="589b6-727">受信者</span><span class="sxs-lookup"><span data-stu-id="589b6-727">recipient</span></span>|<span data-ttu-id="589b6-728">2</span><span class="sxs-lookup"><span data-stu-id="589b6-728">2</span></span>|<span data-ttu-id="589b6-729">電子メールの受信者。</span><span class="sxs-lookup"><span data-stu-id="589b6-729">Recipient of the email.</span></span>|
+|<span data-ttu-id="66d9c-741">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-741">unknown</span></span>|<span data-ttu-id="66d9c-742">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-742">0</span></span>|<span data-ttu-id="66d9c-743">不明な役割。</span><span class="sxs-lookup"><span data-stu-id="66d9c-743">Unknown Role.</span></span>|
+|<span data-ttu-id="66d9c-744">sender</span><span class="sxs-lookup"><span data-stu-id="66d9c-744">sender</span></span>|<span data-ttu-id="66d9c-745">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-745">1</span></span>|<span data-ttu-id="66d9c-746">電子メールの送信者。</span><span class="sxs-lookup"><span data-stu-id="66d9c-746">Sender of the email.</span></span>|
+|<span data-ttu-id="66d9c-747">recipient</span><span class="sxs-lookup"><span data-stu-id="66d9c-747">recipient</span></span>|<span data-ttu-id="66d9c-748">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-748">2</span></span>|<span data-ttu-id="66d9c-749">電子メールの受信者。</span><span class="sxs-lookup"><span data-stu-id="66d9c-749">Recipient of the email.</span></span>|
 
-### <a name="logontype-values"></a><span data-ttu-id="589b6-730">値のことを示します</span><span class="sxs-lookup"><span data-stu-id="589b6-730">logonType values</span></span>
+### <a name="logontype-values"></a><span data-ttu-id="66d9c-750">logontype の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-750">logonType values</span></span>
 
-<span data-ttu-id="589b6-731">ユーザーのサインインのメソッドの使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-731">Possible values for the method of user signin.</span></span>
+<span data-ttu-id="66d9c-751">ユーザーのサインイン方法に指定できる値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-751">Possible values for the method of user signin.</span></span>
 
-|<span data-ttu-id="589b6-732">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-732">Member</span></span>|<span data-ttu-id="589b6-733">値</span><span class="sxs-lookup"><span data-stu-id="589b6-733">Value</span></span>|<span data-ttu-id="589b6-734">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-734">Description</span></span>|
+|<span data-ttu-id="66d9c-752">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-752">Member</span></span>|<span data-ttu-id="66d9c-753">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-753">Value</span></span>|<span data-ttu-id="66d9c-754">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-754">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-735">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-735">unknown</span></span>|<span data-ttu-id="589b6-736">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-736">-1</span></span>|<span data-ttu-id="589b6-737">不明。</span><span class="sxs-lookup"><span data-stu-id="589b6-737">Unknown.</span></span>|
-|<span data-ttu-id="589b6-738">対話型</span><span class="sxs-lookup"><span data-stu-id="589b6-738">interactive</span></span>|<span data-ttu-id="589b6-739">0</span><span class="sxs-lookup"><span data-stu-id="589b6-739">0</span></span>|<span data-ttu-id="589b6-740">ログオンは、対話型です。</span><span class="sxs-lookup"><span data-stu-id="589b6-740">Logon is interactive.</span></span>|
-|<span data-ttu-id="589b6-741">remoteInteractive</span><span class="sxs-lookup"><span data-stu-id="589b6-741">remoteInteractive</span></span>|<span data-ttu-id="589b6-742">1</span><span class="sxs-lookup"><span data-stu-id="589b6-742">1</span></span>| <span data-ttu-id="589b6-743">ログオン、リモート対話型です。</span><span class="sxs-lookup"><span data-stu-id="589b6-743">Logon is remote interactive.</span></span>|
-|<span data-ttu-id="589b6-744">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="589b6-744">network</span></span>|<span data-ttu-id="589b6-745">2</span><span class="sxs-lookup"><span data-stu-id="589b6-745">2</span></span>| <span data-ttu-id="589b6-746">ログオンとは、ネットワークです。</span><span class="sxs-lookup"><span data-stu-id="589b6-746">Logon is network.</span></span>|
-|<span data-ttu-id="589b6-747">batch</span><span class="sxs-lookup"><span data-stu-id="589b6-747">batch</span></span>|<span data-ttu-id="589b6-748">3</span><span class="sxs-lookup"><span data-stu-id="589b6-748">3</span></span>| <span data-ttu-id="589b6-749">ログオンは、バッチです。</span><span class="sxs-lookup"><span data-stu-id="589b6-749">Logon is batch.</span></span>|
-|<span data-ttu-id="589b6-750">service</span><span class="sxs-lookup"><span data-stu-id="589b6-750">service</span></span>|<span data-ttu-id="589b6-751">4</span><span class="sxs-lookup"><span data-stu-id="589b6-751">4</span></span>| <span data-ttu-id="589b6-752">ログオンは、サービスです。</span><span class="sxs-lookup"><span data-stu-id="589b6-752">Logon is service.</span></span>|
+|<span data-ttu-id="66d9c-755">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-755">unknown</span></span>|<span data-ttu-id="66d9c-756">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-756">-1</span></span>|<span data-ttu-id="66d9c-757">わかり.</span><span class="sxs-lookup"><span data-stu-id="66d9c-757">Unknown.</span></span>|
+|<span data-ttu-id="66d9c-758">対話的</span><span class="sxs-lookup"><span data-stu-id="66d9c-758">interactive</span></span>|<span data-ttu-id="66d9c-759">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-759">0</span></span>|<span data-ttu-id="66d9c-760">ログオンは対話的です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-760">Logon is interactive.</span></span>|
+|<span data-ttu-id="66d9c-761">remoteinteractive</span><span class="sxs-lookup"><span data-stu-id="66d9c-761">remoteInteractive</span></span>|<span data-ttu-id="66d9c-762">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-762">1</span></span>| <span data-ttu-id="66d9c-763">ログオンはリモート対話型です。</span><span class="sxs-lookup"><span data-stu-id="66d9c-763">Logon is remote interactive.</span></span>|
+|<span data-ttu-id="66d9c-764">lan</span><span class="sxs-lookup"><span data-stu-id="66d9c-764">network</span></span>|<span data-ttu-id="66d9c-765">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-765">2</span></span>| <span data-ttu-id="66d9c-766">ログオンはネットワークです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-766">Logon is network.</span></span>|
+|<span data-ttu-id="66d9c-767">batch</span><span class="sxs-lookup"><span data-stu-id="66d9c-767">batch</span></span>|<span data-ttu-id="66d9c-768">1/3</span><span class="sxs-lookup"><span data-stu-id="66d9c-768">3</span></span>| <span data-ttu-id="66d9c-769">ログオンはバッチです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-769">Logon is batch.</span></span>|
+|<span data-ttu-id="66d9c-770">service</span><span class="sxs-lookup"><span data-stu-id="66d9c-770">service</span></span>|<span data-ttu-id="66d9c-771">2/4</span><span class="sxs-lookup"><span data-stu-id="66d9c-771">4</span></span>| <span data-ttu-id="66d9c-772">ログオンはサービスです。</span><span class="sxs-lookup"><span data-stu-id="66d9c-772">Logon is service.</span></span>|
 
-### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="589b6-753">userAccountSecurityType 値</span><span class="sxs-lookup"><span data-stu-id="589b6-753">userAccountSecurityType values</span></span>
+### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="66d9c-773">userAccountSecurityType の値</span><span class="sxs-lookup"><span data-stu-id="66d9c-773">userAccountSecurityType values</span></span>
 
-<span data-ttu-id="589b6-754">Windows 定義ごとユーザー ・ アカウントの種類 (グループ) の使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="589b6-754">Possible values for user account types (group membership), per Windows definition.</span></span>
+<span data-ttu-id="66d9c-774">Windows 定義ごとに、ユーザーアカウントの種類 (グループメンバーシップ) に指定できる値。</span><span class="sxs-lookup"><span data-stu-id="66d9c-774">Possible values for user account types (group membership), per Windows definition.</span></span>
 
-|<span data-ttu-id="589b6-755">メンバー</span><span class="sxs-lookup"><span data-stu-id="589b6-755">Member</span></span>|<span data-ttu-id="589b6-756">値</span><span class="sxs-lookup"><span data-stu-id="589b6-756">Value</span></span>|<span data-ttu-id="589b6-757">説明</span><span class="sxs-lookup"><span data-stu-id="589b6-757">Description</span></span>|
+|<span data-ttu-id="66d9c-775">メンバー</span><span class="sxs-lookup"><span data-stu-id="66d9c-775">Member</span></span>|<span data-ttu-id="66d9c-776">値</span><span class="sxs-lookup"><span data-stu-id="66d9c-776">Value</span></span>|<span data-ttu-id="66d9c-777">説明</span><span class="sxs-lookup"><span data-stu-id="66d9c-777">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="589b6-758">不明</span><span class="sxs-lookup"><span data-stu-id="589b6-758">unknown</span></span>|<span data-ttu-id="589b6-759">-1</span><span class="sxs-lookup"><span data-stu-id="589b6-759">-1</span></span>|<span data-ttu-id="589b6-760">不明。</span><span class="sxs-lookup"><span data-stu-id="589b6-760">Unknown.</span></span>|
-|<span data-ttu-id="589b6-761">標準</span><span class="sxs-lookup"><span data-stu-id="589b6-761">standard</span></span>|<span data-ttu-id="589b6-762">0</span><span class="sxs-lookup"><span data-stu-id="589b6-762">0</span></span>|<span data-ttu-id="589b6-763">標準ユーザー グループのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="589b6-763">Member of Standard Users group.</span></span>|
-|<span data-ttu-id="589b6-764">電源</span><span class="sxs-lookup"><span data-stu-id="589b6-764">power</span></span>|<span data-ttu-id="589b6-765">1</span><span class="sxs-lookup"><span data-stu-id="589b6-765">1</span></span>| <span data-ttu-id="589b6-766">Power Users グループのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="589b6-766">Member of Power Users group.</span></span>|
-|<span data-ttu-id="589b6-767">管理者</span><span class="sxs-lookup"><span data-stu-id="589b6-767">administrator</span></span>|<span data-ttu-id="589b6-768">2</span><span class="sxs-lookup"><span data-stu-id="589b6-768">2</span></span>| <span data-ttu-id="589b6-769">Administrators グループのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="589b6-769">Member of Administrators group.</span></span>|
+|<span data-ttu-id="66d9c-778">不明</span><span class="sxs-lookup"><span data-stu-id="66d9c-778">unknown</span></span>|<span data-ttu-id="66d9c-779">-1</span><span class="sxs-lookup"><span data-stu-id="66d9c-779">-1</span></span>|<span data-ttu-id="66d9c-780">わかり.</span><span class="sxs-lookup"><span data-stu-id="66d9c-780">Unknown.</span></span>|
+|<span data-ttu-id="66d9c-781">standard</span><span class="sxs-lookup"><span data-stu-id="66d9c-781">standard</span></span>|<span data-ttu-id="66d9c-782">.0</span><span class="sxs-lookup"><span data-stu-id="66d9c-782">0</span></span>|<span data-ttu-id="66d9c-783">標準ユーザーグループのメンバ。</span><span class="sxs-lookup"><span data-stu-id="66d9c-783">Member of Standard Users group.</span></span>|
+|<span data-ttu-id="66d9c-784">power</span><span class="sxs-lookup"><span data-stu-id="66d9c-784">power</span></span>|<span data-ttu-id="66d9c-785">1-d</span><span class="sxs-lookup"><span data-stu-id="66d9c-785">1</span></span>| <span data-ttu-id="66d9c-786">Power Users グループのメンバー。</span><span class="sxs-lookup"><span data-stu-id="66d9c-786">Member of Power Users group.</span></span>|
+|<span data-ttu-id="66d9c-787">者</span><span class="sxs-lookup"><span data-stu-id="66d9c-787">administrator</span></span>|<span data-ttu-id="66d9c-788">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66d9c-788">2</span></span>| <span data-ttu-id="66d9c-789">Administrators グループのメンバー。</span><span class="sxs-lookup"><span data-stu-id="66d9c-789">Member of Administrators group.</span></span>|

@@ -185,7 +185,7 @@ items:
         href: api/mailfolder-post-messagerules.md
       - name: メール ヒントを取得する
         href: api/user-getmailtips.md
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -328,7 +328,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -474,7 +474,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: カレンダー
+  - name: 予定表
     href: resources/calendar.md
     items:
     - name: イベント
@@ -564,7 +564,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: カレンダー
+    - name: 予定表
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
@@ -2171,7 +2171,7 @@ items:
       - name: インポートした Windows AutoPilot デバイス ID
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: リスト
+        - name: 一覧表示
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 取得
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -4315,7 +4315,7 @@ items:
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-        - name: 作成する
+        - name: Create
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -5384,7 +5384,7 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 取得
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: 作成する
+        - name: Create
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: 削除
           href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -7348,11 +7348,11 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 備考
+  - name: ノート
     displayName: OneNote
     href: resources/onenote-api-overview.md
     items:
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -7380,6 +7380,8 @@ items:
         href: api/notebook-copynotebook.md
       - name: 最新のノートブックを取得する
         href: api/notebook-getrecentnotebooks.md
+      - name: Web の URL からノートブックを取得する
+        href: api/notebook-getnotebookfromweburl.md
       - name: セクションを一覧表示する
         href: api/notebook-list-sections.md
       - name: セクションを作成する
@@ -7956,7 +7958,7 @@ items:
         href: api/group-post-groups.md
       - name: グループを取得する
         href: api/group-get.md
-      - name: グループの一覧表示
+      - name: グループを一覧表示する
         href: api/group-list.md
       - name: グループを更新する
         href: api/group-update.md
@@ -8078,7 +8080,7 @@ items:
       items:
       - name: 計画を一覧表示する
         href: api/plannergroup-list-plans.md
-    - name: 備考
+    - name: ノート
       href: resources/onenote.md
       items:
       - name: ノートブックを一覧表示する
@@ -8346,9 +8348,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 65ab8ab45280083c917ec080c39ebdc305b49d43
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 93a958552a5dab5a62415bee602531e9bb914402
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760980"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967208"
