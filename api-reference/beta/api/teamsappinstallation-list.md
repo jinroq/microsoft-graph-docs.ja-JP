@@ -1,21 +1,21 @@
 ---
-title: チームでのアプリケーションの一覧
-description: 指定されたチームにインストールされているアプリケーションの一覧を取得します。
+title: チームのアプリを一覧表示する
+description: 指定したチームにインストールされているアプリのリストを取得します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe3ba5cd3be91c7e69b77f67cb53ab702741c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524612"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057009"
 ---
-# <a name="list-apps-in-team"></a>チームでのアプリケーションの一覧
+# <a name="list-apps-in-team"></a>チームのアプリを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[アプリケーションのインストール](../resources/teamsappinstallation.md)を指定された[チーム](../resources/team.md)での一覧を取得します。
+指定した[チーム](../resources/team.md)に[インストールされているアプリ](../resources/teamsappinstallation.md)のリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29524612"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,9 +35,9 @@ ms.locfileid: "29524612"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、$filter、$select をサポートしていて、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。
+このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -51,7 +51,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[teamsApp](../resources/teamsapp.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[teamsapp](../resources/teamsapp.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>例--は、インストールされているアプリケーションの名前を取得します。
+## <a name="example----getting-the-names-of-the-installed-apps"></a>例--インストールされているアプリの名前を取得する
 
 ### <a name="request"></a>要求
 

@@ -1,21 +1,23 @@
 ---
-title: チームからアプリケーションを削除します。
-description: 指定されたチームからアプリケーションをアンインストールします。
+title: チームからアプリを削除する
+description: 指定したチームからアプリをアンインストールします。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47db9ece65eea6d91d03b4c4652a8c5df59e9e7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521987"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057023"
 ---
-# <a name="delete-app-from-team"></a>チームからアプリケーションを削除します。
+# <a name="delete-app-from-team"></a>チームからアプリを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[チーム](../resources/team.md)から[アプリケーション](../resources/teamsappinstallation.md)をアンインストールします。
+指定した[チーム](../resources/team.md)から[アプリ](../resources/teamsappinstallation.md)をアンインストールします。
+
+>**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](graph/concepts/known-issues.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +26,7 @@ ms.locfileid: "29521987"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

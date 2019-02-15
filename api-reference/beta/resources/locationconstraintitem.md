@@ -2,12 +2,14 @@
 title: locationConstraintItem リソースの種類
 description: 会議の場所に関して、クライアントが表明している条件です。
 localization_priority: Normal
-ms.openlocfilehash: 9752b3acec2dd9071e31b743245d662168ecdfd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508854"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057002"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem リソースの種類
 
@@ -15,7 +17,7 @@ ms.locfileid: "29508854"
 
 会議の場所に関して、クライアントが表明している条件です。
 
-[location](location.md) から派生します。
+[locationDataModel](locationdatamodel.md)から派生します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -41,7 +43,7 @@ ms.locfileid: "29508854"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |

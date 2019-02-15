@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576788"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994399"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -38,10 +38,6 @@ ms.locfileid: "29576788"
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="create-chat-thread-api"></a>チャット スレッドの作成 API
-
-[チャット スレッドを作成する](/graph/api/channel-post-chatthreads?view=graph-rest-beta)現在の API が、[チャネル メッセージのリスト作成](/graph/api/channel-list-messages?view=graph-rest-beta)のスキーマと整合性のある、より充実した API に置き換えられます。
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph エクスプローラーと全体管理者
 

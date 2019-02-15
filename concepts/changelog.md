@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745595"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967215"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,12 @@ ms.locfileid: "29745595"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="february-2019"></a>2019 年 2 月
+
+### <a name="onenote"></a>OneNote
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版および v1.0 | [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) メソッドを追加しました。 |
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -36,6 +42,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版および v1.0| **internalId** プロパティを[チーム](/graph/api/resources/team?view=graph-rest-v1.0)のリソースに追加しました。|
+|追加 |ベータ版および v1.0| Word、Excel、PowerPoint、PDF、およびドキュメント ライブラリの[タブ](teams-configuring-builtin-tabs.md)の設定に対するサポートを追加しました。 |
 
 ## <a name="january-2019"></a>2019 年 1 月
 
@@ -50,7 +57,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 追加        | ベータ版  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティテに追加しました。|
-
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -2769,7 +2775,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="eventmessages"></a>EventMessages
 
-| **変更の種類** | **Version** | **説明**                          |
+| **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0        | _inferenceClassification_ と _extensions_ が _eventMessages_ に追加されました。 |
 | 追加        | ベータ版        | _responseRequested_ が _eventMessageRequest_ に追加されました。 |

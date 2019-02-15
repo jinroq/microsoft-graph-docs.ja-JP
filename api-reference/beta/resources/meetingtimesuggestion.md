@@ -1,15 +1,15 @@
 ---
 title: meetingTimeSuggestion リソースの種類
-description: '提案された会議の時間、出勤の可能性、個人情報が含まれる会議 '
+description: '会議の時間、出席の可能性、個人などの情報を含む会議の提案 '
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: 029e579ce5cba0a578741cb4ce30886090a71cd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523184"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057030"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion リソースの種類
 
@@ -31,23 +31,24 @@ ms.locfileid: "29523184"
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) コレクション|この提案された会議の各出席者の空き時間情報の状態を示す配列。|
+|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md)コレクション|この提案された会議の各出席者の空き時間情報の状態を示す配列。|
 |confidence|Double|すべての出席者が出席する見込みを表すパーセンテージ。|
-|locations|[location](location.md) コレクション|この提案された会議の各会議場所の名前と地理的な場所を指定する配列。|
-|meetingTimeSlot|[timeSlot](timeslot.md)|会議の提案されている期間。|
-|organizerAvailability|String| この提案されている会議の開催者の空き時間情報。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|locations|[locationDataModel](locationdatamodel.md)コレクション|この提案された会議の各会議場所の名前と地理的な場所を指定する配列。|
+|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|会議の提案されている期間。|
+|organizerAvailability|availabilityStatus| この提案されている会議の開催者の空き時間情報。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会議時間を提案する理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
