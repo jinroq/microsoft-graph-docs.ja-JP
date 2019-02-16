@@ -4,12 +4,12 @@ description: チーム内のアプリのインストールをアップグレー�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ef5c41c8b09512b0ee6ebb888be1df1166cf9c5
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 0ab151203e3b2ec3ee863bae34a8feed0c6d1064
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056981"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070807"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>チーム内のアプリをアップグレードする
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056981"
 
 [チーム](../resources/team.md)内の[アプリのインストール](../resources/teamsappinstallation.md)をアプリの最新バージョンにアップグレードします。
 
->**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](graph/concepts/known-issues.md)」を参照してください。
+>**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](/graph/known-issues)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 

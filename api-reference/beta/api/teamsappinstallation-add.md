@@ -4,12 +4,12 @@ description: 指定したチームにアプリをインストールします。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056995"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070828"
 ---
 # <a name="add-app-to-team"></a>アプリをチームに追加する
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056995"
 
 指定した[チーム](../resources/team.md)に[アプリ](../resources/teamsapp.md)をインストールします。
 
->**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](graph/concepts/known-issues.md)」を参照してください。
+>**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](/graph/known-issues)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,10 +41,9 @@ POST /teams/{id}/installedApps
 
 ## <a name="request-body"></a>要求本文
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|teamsApp|String
-|追加するアプリの id。|
+|teamsApp|String|追加するアプリの id。|
 
 
 ## <a name="response"></a>応答

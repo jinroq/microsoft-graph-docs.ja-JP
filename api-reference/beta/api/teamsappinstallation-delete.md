@@ -4,12 +4,12 @@ description: 指定したチームからアプリをアンインストールし�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057023"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070821"
 ---
 # <a name="delete-app-from-team"></a>チームからアプリを削除する
 
@@ -17,7 +17,7 @@ ms.locfileid: "30057023"
 
 指定した[チーム](../resources/team.md)から[アプリ](../resources/teamsappinstallation.md)をアンインストールします。
 
->**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](graph/concepts/known-issues.md)」を参照してください。
+>**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](/graph/known-issues)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
