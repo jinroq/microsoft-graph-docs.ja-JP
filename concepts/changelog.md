@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8b0cc10c46487bbce281ee2233e5c69880cb4156
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967215"
+ms.locfileid: "29994483"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -43,6 +43,10 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版および v1.0| **internalId** プロパティを[チーム](/graph/api/resources/team?view=graph-rest-v1.0)のリソースに追加しました。|
 |追加 |ベータ版および v1.0| Word、Excel、PowerPoint、PDF、およびドキュメント ライブラリの[タブ](teams-configuring-builtin-tabs.md)の設定に対するサポートを追加しました。 |
+|追加 |ベータ版| [チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API を導入しました。 |
+|追加 |ベータ版| [チャネル内のメッセージへの返信](/graph/api/channel-post-messagereply?view=graph-rest-beta) API を導入しました。 |
+|削除 |ベータ版| POST /teams/{id}/channels/{id}/chatThreads API は削除されました。 代わりに[チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta)を使用してください。 |
+
 
 ## <a name="january-2019"></a>2019 年 1 月
 
