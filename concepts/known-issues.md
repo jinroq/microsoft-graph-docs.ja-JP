@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994399"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056967"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -39,10 +39,6 @@ ms.locfileid: "29994399"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="graph-explorer-and-global-admins"></a>Graph エクスプローラーと全体管理者
-
-現在の Graph エクスプローラーでは、全体管理者は自分が所有者やメンバーではないチームを操作することができます。ただし、現在のユーザーがチームのメンバーや所有者ではない場合に、他のアプリが同じ API 呼び出しを行おうとすると、そのアプリは失敗します。
-
 ### <a name="get-teams-and-post-teams-are-not-supported"></a>GET /teams と POST /teams はサポート対象外
 
 チームのリストを取得するには、「[すべてのチームのリスト](teams-list-all-teams.md)」と「[自分のチームのリスト](/graph/api/user-list-joinedteams?view=graph-rest-1.0)」を参照してください。
@@ -54,6 +50,12 @@ ms.locfileid: "29994399"
 新しいチームはリストに含まれます。
 古いチームの一部には、**resourceProvisioningOptions** プロパティが存在しないものがあります。このプロパティには "Team" が含まれており、新しく作成され、Microsoft Teams 内でアクセスされたチームには設定されます。
 将来的には、Microsoft Teams で開かれたことのない既存のチームに対しても、**resourceProvisioningOptions** が設定される予定です。
+
+### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>アプリケーションのアクセス許可を使用したアプリケーションのインストールとアンインストール
+
+アプリケーションのアクセス許可を使用してチームからアプリをアンインストールすると、アプリが正常にアンインストールされた場合でも API は 500 エラー コードを返します。
+
+アプリケーションのアクセス許可を使用してチームに対しアプリのインストール、更新、アンインストールを行っても、監査ログ イベントは記録されません。
 
 ## <a name="groups"></a>グループ
 
