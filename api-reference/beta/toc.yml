@@ -2171,7 +2171,7 @@ items:
       - name: インポートした Windows AutoPilot デバイス ID
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: 一覧表示
+        - name: リスト
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 取得
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -8011,11 +8011,10 @@ items:
         href: api/channel-list-messagereplies.md
       - name: メッセージの返信を取得する
         href: api/channel-get-messagereply.md
-    - name: チャット スレッド
-      href: resources/chatthread.md
-      items:
-      - name: チャット スレッドを作成する
-        href: api/channel-post-chatthreads.md
+      - name: メッセージを作成する
+        href: api/channel-post-chatmessage.md
+      - name: メッセージに返信する
+        href: api/channel-post-messagereply.md
     - name: アプリ
       href: resources/teamsapp.md
       items:
@@ -8348,9 +8347,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 93a958552a5dab5a62415bee602531e9bb914402
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 7ef9b9c3264eba05b5f388691df086bbbdc336a2
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967208"
+ms.locfileid: "29994420"
