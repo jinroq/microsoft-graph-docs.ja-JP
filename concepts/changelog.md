@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8b0cc10c46487bbce281ee2233e5c69880cb4156
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: dc4c2d62bbbf3191c2472891e828c13a386e3c7c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994483"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057072"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -46,6 +46,21 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |ベータ版| [チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API を導入しました。 |
 |追加 |ベータ版| [チャネル内のメッセージへの返信](/graph/api/channel-post-messagereply?view=graph-rest-beta) API を導入しました。 |
 |削除 |ベータ版| POST /teams/{id}/channels/{id}/chatThreads API は削除されました。 代わりに[チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta)を使用してください。 |
+|追加 |ベータ版 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|変更 | ベータ版 | 次の [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) のパラメーターのデータ型を変更しました。 <br>**attendees**:**attendeeBase** から [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) に変更 <br>**locationConstraint**:**locationConstraint** から [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) に変更 <br> **timeConstraint**:**timeConstraint** から [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) に変更|
+|変更 | ベータ版 | **findMeetingTimes** の戻り値の型を **meetingTimeSuggestionsResult** から [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) に変更しました |
+|変更 | ベータ版 | 出席者が必須なのか任意なのか、またはリソースであるかどうかを識別する各出席者の**型**を除外するため、**findMeetingTimes** の応答ペイロードを変更しました |
+|変更 | ベータ版 | [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) の基本型を [location](/graph/api/resources/location?view=graph-rest-beta) から [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) に変更しました |
+|変更 | ベータ版 | 次の [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) のプロパティのデータ型を変更しました。 <br> **attendeeAvailability**:**attendeeAvailability** のコレクションから [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) のコレクションに変更 <br> **locations**:[location](/graph/api/resources/location?view=graph-rest-beta) のコレクションから[locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) のコレクションに変更 <br> **meetingTimeSlot**:[timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta)から[meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) に変更 <br> **organizerAvailability**:**freeBusyStatus** から **availabilityStatus** に変更 |
+|追加 | ベータ版 | 新しい複合型: <br> [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br> [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) <br> [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) <br> [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> [PostalAddress](/graph/api/resources/postaladdress?view=graph-rest-beta) <br> [searchWindowTimeSlot](/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)|
+|追加 | ベータ版 | 新しい列挙体: <br> **addressType** <br> **availabilityStatus** |
+|追加 | ベータ版 | **order** プロパティを [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) に追加しました |
+|削除 | ベータ版 | 次の複合型を削除しました。 <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
 
 ## <a name="january-2019"></a>2019 年 1 月
