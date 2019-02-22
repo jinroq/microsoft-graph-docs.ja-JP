@@ -1,38 +1,38 @@
 ---
-title: WindowsDomainJoinConfiguration を取得します。
-description: WindowsDomainJoinConfiguration オブジェクトのプロパティと関係を参照してください。
+title: windowsdomainjoinconfiguration の取得
+description: windowsdomainjoinconfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 64e8db69cc7a3bf158d5ae4d359fde15f1ab7751
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 322ec3a695eff42a5dbd5df5c8cb327ce6fc8f56
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144010"
 ---
-# <a name="get-windowsdomainjoinconfiguration"></a><span data-ttu-id="f5f81-103">WindowsDomainJoinConfiguration を取得します。</span><span class="sxs-lookup"><span data-stu-id="f5f81-103">Get windowsDomainJoinConfiguration</span></span>
+# <a name="get-windowsdomainjoinconfiguration"></a><span data-ttu-id="0dc66-103">windowsdomainjoinconfiguration の取得</span><span class="sxs-lookup"><span data-stu-id="0dc66-103">Get windowsDomainJoinConfiguration</span></span>
 
-> <span data-ttu-id="f5f81-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f5f81-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f5f81-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f5f81-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0dc66-104">**重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0dc66-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0dc66-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0dc66-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f5f81-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f5f81-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0dc66-106">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0dc66-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f5f81-107">[WindowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトのプロパティと関係を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5f81-107">Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.</span></span>
+<span data-ttu-id="0dc66-107">[windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="0dc66-107">Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f5f81-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="f5f81-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0dc66-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="0dc66-108">Prerequisites</span></span>
 
-<span data-ttu-id="f5f81-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5f81-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0dc66-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0dc66-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).</span></span>
 
-|<span data-ttu-id="f5f81-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f5f81-111">Permission type</span></span>|<span data-ttu-id="f5f81-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="f5f81-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0dc66-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0dc66-111">Permission type</span></span>|<span data-ttu-id="0dc66-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0dc66-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f5f81-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f5f81-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="f5f81-114">&nbsp; &nbsp; **デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="f5f81-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="f5f81-115">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f5f81-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-| <span data-ttu-id="f5f81-116">&nbsp; &nbsp; **登録**</span><span class="sxs-lookup"><span data-stu-id="f5f81-116">&nbsp; &nbsp; **Enrollment**</span></span> | <span data-ttu-id="f5f81-117">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="f5f81-117">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-|<span data-ttu-id="f5f81-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f5f81-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f5f81-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f5f81-119">Not supported.</span></span>|
-|<span data-ttu-id="f5f81-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f5f81-120">Application</span></span>|<span data-ttu-id="f5f81-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f5f81-121">Not supported.</span></span>|
+|<span data-ttu-id="0dc66-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0dc66-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="0dc66-114">&nbsp; &nbsp; **デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="0dc66-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="0dc66-115">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="0dc66-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+| <span data-ttu-id="0dc66-116">&nbsp; &nbsp; **登録**</span><span class="sxs-lookup"><span data-stu-id="0dc66-116">&nbsp; &nbsp; **Enrollment**</span></span> | <span data-ttu-id="0dc66-117">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="0dc66-117">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+|<span data-ttu-id="0dc66-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0dc66-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0dc66-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0dc66-119">Not supported.</span></span>|
+|<span data-ttu-id="0dc66-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0dc66-120">Application</span></span>|<span data-ttu-id="0dc66-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0dc66-121">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f5f81-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f5f81-122">HTTP Request</span></span>
-<span data-ttu-id="f5f81-123">**デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="f5f81-123">**Device configuration**</span></span>
+## <a name="http-request"></a><span data-ttu-id="0dc66-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0dc66-122">HTTP Request</span></span>
+<span data-ttu-id="0dc66-123">**デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="0dc66-123">**Device configuration**</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-<span data-ttu-id="f5f81-124">**登録**</span><span class="sxs-lookup"><span data-stu-id="f5f81-124">**Enrollment**</span></span>
+<span data-ttu-id="0dc66-124">**登録**</span><span class="sxs-lookup"><span data-stu-id="0dc66-124">**Enrollment**</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -53,38 +53,38 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f5f81-125">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f5f81-125">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0dc66-125">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="0dc66-125">Optional query parameters</span></span>
 
-<span data-ttu-id="f5f81-126">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f5f81-126">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="0dc66-126">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="0dc66-126">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f5f81-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f5f81-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0dc66-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0dc66-127">Request headers</span></span>
 
-|<span data-ttu-id="f5f81-128">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f5f81-128">Header</span></span>|<span data-ttu-id="f5f81-129">値</span><span class="sxs-lookup"><span data-stu-id="f5f81-129">Value</span></span>|
+|<span data-ttu-id="0dc66-128">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0dc66-128">Header</span></span>|<span data-ttu-id="0dc66-129">値</span><span class="sxs-lookup"><span data-stu-id="0dc66-129">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f5f81-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5f81-130">Authorization</span></span>|<span data-ttu-id="f5f81-131">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="f5f81-131">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f5f81-132">Accept</span><span class="sxs-lookup"><span data-stu-id="f5f81-132">Accept</span></span>|<span data-ttu-id="f5f81-133">application/json</span><span class="sxs-lookup"><span data-stu-id="f5f81-133">application/json</span></span>|
+|<span data-ttu-id="0dc66-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="0dc66-130">Authorization</span></span>|<span data-ttu-id="0dc66-131">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="0dc66-131">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0dc66-132">承諾</span><span class="sxs-lookup"><span data-stu-id="0dc66-132">Accept</span></span>|<span data-ttu-id="0dc66-133">application/json</span><span class="sxs-lookup"><span data-stu-id="0dc66-133">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f5f81-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="f5f81-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0dc66-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="0dc66-134">Request body</span></span>
 
-<span data-ttu-id="f5f81-135">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f5f81-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0dc66-135">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0dc66-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f5f81-136">応答</span><span class="sxs-lookup"><span data-stu-id="f5f81-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0dc66-136">応答</span><span class="sxs-lookup"><span data-stu-id="0dc66-136">Response</span></span>
 
-<span data-ttu-id="f5f81-137">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f5f81-137">If successful, this method returns a `200 OK` response code and [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="0dc66-137">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0dc66-137">If successful, this method returns a `200 OK` response code and [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5f81-138">例</span><span class="sxs-lookup"><span data-stu-id="f5f81-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0dc66-138">例</span><span class="sxs-lookup"><span data-stu-id="0dc66-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f5f81-139">要求</span><span class="sxs-lookup"><span data-stu-id="f5f81-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0dc66-139">要求</span><span class="sxs-lookup"><span data-stu-id="0dc66-139">Request</span></span>
 
-<span data-ttu-id="f5f81-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f5f81-140">Here is an example of the request.</span></span>
+<span data-ttu-id="0dc66-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0dc66-140">Here is an example of the request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f5f81-141">応答</span><span class="sxs-lookup"><span data-stu-id="f5f81-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0dc66-141">応答</span><span class="sxs-lookup"><span data-stu-id="0dc66-141">Response</span></span>
 
-<span data-ttu-id="f5f81-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f5f81-142">Here is an example of the response.</span></span> <span data-ttu-id="f5f81-143">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f5f81-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f5f81-144">実際の呼び出しから返されるプロパティは、コンテキストに依存します。</span><span class="sxs-lookup"><span data-stu-id="f5f81-144">Properties returned from an actual call depend on the context.</span></span>
+<span data-ttu-id="0dc66-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="0dc66-142">Here is an example of the response.</span></span> <span data-ttu-id="0dc66-143">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="0dc66-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0dc66-144">実際の呼び出しから返されるプロパティは、コンテキストによって異なります。</span><span class="sxs-lookup"><span data-stu-id="0dc66-144">Properties returned from an actual call depend on the context.</span></span>
 
 ``` http
 HTTP/1.1 200 OK

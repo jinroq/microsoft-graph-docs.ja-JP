@@ -1,34 +1,34 @@
 ---
-title: MobileAppIntentAndState を作成します。
+title: mobileAppIntentAndState を作成する
 description: 新しい mobileAppIntentAndState オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94aeb4551fac9534cf2c88a973b0d37fd49aa048
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea3c005473c4979515ab7810a4ce1b16a06ebabf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399823"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145935"
 ---
-# <a name="create-mobileappintentandstate"></a><span data-ttu-id="9536e-103">MobileAppIntentAndState を作成します。</span><span class="sxs-lookup"><span data-stu-id="9536e-103">Create mobileAppIntentAndState</span></span>
+# <a name="create-mobileappintentandstate"></a><span data-ttu-id="e66f0-103">mobileAppIntentAndState を作成する</span><span class="sxs-lookup"><span data-stu-id="e66f0-103">Create mobileAppIntentAndState</span></span>
 
-> <span data-ttu-id="9536e-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9536e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9536e-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9536e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e66f0-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e66f0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9536e-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9536e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e66f0-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e66f0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9536e-107">新しい[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="9536e-107">Create a new [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
+<span data-ttu-id="e66f0-106">新しい[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e66f0-106">Create a new [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9536e-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="9536e-108">Prerequisites</span></span>
-<span data-ttu-id="9536e-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9536e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e66f0-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="e66f0-107">Prerequisites</span></span>
+<span data-ttu-id="e66f0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e66f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="9536e-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9536e-111">Permission type</span></span>|<span data-ttu-id="9536e-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="9536e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e66f0-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e66f0-110">Permission type</span></span>|<span data-ttu-id="e66f0-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="e66f0-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9536e-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9536e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9536e-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9536e-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="9536e-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9536e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9536e-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9536e-116">Not supported.</span></span>|
-|<span data-ttu-id="9536e-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9536e-117">Application</span></span>|<span data-ttu-id="9536e-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9536e-118">Not supported.</span></span>|
+|<span data-ttu-id="e66f0-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e66f0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e66f0-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e66f0-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="e66f0-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e66f0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e66f0-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e66f0-115">Not supported.</span></span>|
+|<span data-ttu-id="e66f0-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e66f0-116">Application</span></span>|<span data-ttu-id="e66f0-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e66f0-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9536e-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9536e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e66f0-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e66f0-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +37,33 @@ ms.locfileid: "29399823"
 POST /users/{usersId}/mobileAppIntentAndStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9536e-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9536e-120">Request headers</span></span>
-|<span data-ttu-id="9536e-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9536e-121">Header</span></span>|<span data-ttu-id="9536e-122">値</span><span class="sxs-lookup"><span data-stu-id="9536e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e66f0-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e66f0-119">Request headers</span></span>
+|<span data-ttu-id="e66f0-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e66f0-120">Header</span></span>|<span data-ttu-id="e66f0-121">値</span><span class="sxs-lookup"><span data-stu-id="e66f0-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9536e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9536e-123">Authorization</span></span>|<span data-ttu-id="9536e-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="9536e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9536e-125">Accept</span><span class="sxs-lookup"><span data-stu-id="9536e-125">Accept</span></span>|<span data-ttu-id="9536e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9536e-126">application/json</span></span>|
+|<span data-ttu-id="e66f0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e66f0-122">Authorization</span></span>|<span data-ttu-id="e66f0-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="e66f0-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e66f0-124">承諾</span><span class="sxs-lookup"><span data-stu-id="e66f0-124">Accept</span></span>|<span data-ttu-id="e66f0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e66f0-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9536e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="9536e-127">Request body</span></span>
-<span data-ttu-id="9536e-128">要求の本文に mobileAppIntentAndState オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="9536e-128">In the request body, supply a JSON representation for the mobileAppIntentAndState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e66f0-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e66f0-126">Request body</span></span>
+<span data-ttu-id="e66f0-127">要求本文で、mobileAppIntentAndState オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e66f0-127">In the request body, supply a JSON representation for the mobileAppIntentAndState object.</span></span>
 
-<span data-ttu-id="9536e-129">次の表は、mobileAppIntentAndState を作成するときに必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="9536e-129">The following table shows the properties that are required when you create the mobileAppIntentAndState.</span></span>
+<span data-ttu-id="e66f0-128">次の表に、mobileAppIntentAndState の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="e66f0-128">The following table shows the properties that are required when you create the mobileAppIntentAndState.</span></span>
 
-|<span data-ttu-id="9536e-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9536e-130">Property</span></span>|<span data-ttu-id="9536e-131">型</span><span class="sxs-lookup"><span data-stu-id="9536e-131">Type</span></span>|<span data-ttu-id="9536e-132">説明</span><span class="sxs-lookup"><span data-stu-id="9536e-132">Description</span></span>|
+|<span data-ttu-id="e66f0-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e66f0-129">Property</span></span>|<span data-ttu-id="e66f0-130">型</span><span class="sxs-lookup"><span data-stu-id="e66f0-130">Type</span></span>|<span data-ttu-id="e66f0-131">説明</span><span class="sxs-lookup"><span data-stu-id="e66f0-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9536e-133">id</span><span class="sxs-lookup"><span data-stu-id="9536e-133">id</span></span>|<span data-ttu-id="9536e-134">String</span><span class="sxs-lookup"><span data-stu-id="9536e-134">String</span></span>|<span data-ttu-id="9536e-135">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="9536e-135">UUID for the object</span></span>|
-|<span data-ttu-id="9536e-136">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="9536e-136">managedDeviceIdentifier</span></span>|<span data-ttu-id="9536e-137">String</span><span class="sxs-lookup"><span data-stu-id="9536e-137">String</span></span>|<span data-ttu-id="9536e-138">Intune によって作成または収集されるデバイス識別子。</span><span class="sxs-lookup"><span data-stu-id="9536e-138">Device identifier created or collected by Intune.</span></span>|
-|<span data-ttu-id="9536e-139">userId</span><span class="sxs-lookup"><span data-stu-id="9536e-139">userId</span></span>|<span data-ttu-id="9536e-140">String</span><span class="sxs-lookup"><span data-stu-id="9536e-140">String</span></span>|<span data-ttu-id="9536e-141">デバイスを登録しようとするユーザーの識別子。</span><span class="sxs-lookup"><span data-stu-id="9536e-141">Identifier for the user that tried to enroll the device.</span></span>|
-|<span data-ttu-id="9536e-142">mobileAppList</span><span class="sxs-lookup"><span data-stu-id="9536e-142">mobileAppList</span></span>|<span data-ttu-id="9536e-143">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="9536e-143">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="9536e-144">ペイロードの目的と、テナントの状態の一覧です。</span><span class="sxs-lookup"><span data-stu-id="9536e-144">The list of payload intents and states for the tenant.</span></span>|
+|<span data-ttu-id="e66f0-132">id</span><span class="sxs-lookup"><span data-stu-id="e66f0-132">id</span></span>|<span data-ttu-id="e66f0-133">文字列</span><span class="sxs-lookup"><span data-stu-id="e66f0-133">String</span></span>|<span data-ttu-id="e66f0-134">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="e66f0-134">UUID for the object</span></span>|
+|<span data-ttu-id="e66f0-135">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="e66f0-135">managedDeviceIdentifier</span></span>|<span data-ttu-id="e66f0-136">String</span><span class="sxs-lookup"><span data-stu-id="e66f0-136">String</span></span>|<span data-ttu-id="e66f0-137">Intune によって作成または収集されるデバイス識別子。</span><span class="sxs-lookup"><span data-stu-id="e66f0-137">Device identifier created or collected by Intune.</span></span>|
+|<span data-ttu-id="e66f0-138">userId</span><span class="sxs-lookup"><span data-stu-id="e66f0-138">userId</span></span>|<span data-ttu-id="e66f0-139">String</span><span class="sxs-lookup"><span data-stu-id="e66f0-139">String</span></span>|<span data-ttu-id="e66f0-140">デバイスを登録しようとするユーザーの識別子。</span><span class="sxs-lookup"><span data-stu-id="e66f0-140">Identifier for the user that tried to enroll the device.</span></span>|
+|<span data-ttu-id="e66f0-141">mobileAppList</span><span class="sxs-lookup"><span data-stu-id="e66f0-141">mobileAppList</span></span>|<span data-ttu-id="e66f0-142">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="e66f0-142">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="e66f0-143">テナントのペイロードの意図と状態の一覧。</span><span class="sxs-lookup"><span data-stu-id="e66f0-143">The list of payload intents and states for the tenant.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9536e-145">応答</span><span class="sxs-lookup"><span data-stu-id="9536e-145">Response</span></span>
-<span data-ttu-id="9536e-146">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="9536e-146">If successful, this method returns a `201 Created` response code and a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e66f0-144">応答</span><span class="sxs-lookup"><span data-stu-id="e66f0-144">Response</span></span>
+<span data-ttu-id="e66f0-145">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e66f0-145">If successful, this method returns a `201 Created` response code and a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9536e-147">例</span><span class="sxs-lookup"><span data-stu-id="9536e-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e66f0-146">例</span><span class="sxs-lookup"><span data-stu-id="e66f0-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9536e-148">要求</span><span class="sxs-lookup"><span data-stu-id="9536e-148">Request</span></span>
-<span data-ttu-id="9536e-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9536e-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e66f0-147">要求</span><span class="sxs-lookup"><span data-stu-id="e66f0-147">Request</span></span>
+<span data-ttu-id="e66f0-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e66f0-148">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
@@ -94,8 +94,8 @@ Content-length: 831
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9536e-150">応答</span><span class="sxs-lookup"><span data-stu-id="9536e-150">Response</span></span>
-<span data-ttu-id="9536e-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9536e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e66f0-149">応答</span><span class="sxs-lookup"><span data-stu-id="e66f0-149">Response</span></span>
+<span data-ttu-id="e66f0-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e66f0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

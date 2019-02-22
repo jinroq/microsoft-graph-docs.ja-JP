@@ -1,34 +1,34 @@
 ---
-title: AndroidDeviceOwnerEnrollmentProfile を作成します。
+title: androidDeviceOwnerEnrollmentProfile を作成する
 description: 新しい androidDeviceOwnerEnrollmentProfile オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0c766106d4467e54bda3465ff360bfcadfe71c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 888c20a0e8b409137501695b9363019d61c732b1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401993"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142400"
 ---
-# <a name="create-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="4f503-103">AndroidDeviceOwnerEnrollmentProfile を作成します。</span><span class="sxs-lookup"><span data-stu-id="4f503-103">Create androidDeviceOwnerEnrollmentProfile</span></span>
+# <a name="create-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="02962-103">androidDeviceOwnerEnrollmentProfile を作成する</span><span class="sxs-lookup"><span data-stu-id="02962-103">Create androidDeviceOwnerEnrollmentProfile</span></span>
 
-> <span data-ttu-id="4f503-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4f503-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4f503-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4f503-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="02962-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02962-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4f503-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4f503-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="02962-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="02962-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4f503-107">新しい[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f503-107">Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
+<span data-ttu-id="02962-106">新しい[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="02962-106">Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4f503-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="4f503-108">Prerequisites</span></span>
-<span data-ttu-id="4f503-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f503-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="02962-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="02962-107">Prerequisites</span></span>
+<span data-ttu-id="02962-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02962-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="4f503-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4f503-111">Permission type</span></span>|<span data-ttu-id="4f503-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="4f503-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="02962-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="02962-110">Permission type</span></span>|<span data-ttu-id="02962-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="02962-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4f503-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4f503-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4f503-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f503-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="4f503-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4f503-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4f503-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4f503-116">Not supported.</span></span>|
-|<span data-ttu-id="4f503-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4f503-117">Application</span></span>|<span data-ttu-id="4f503-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4f503-118">Not supported.</span></span>|
+|<span data-ttu-id="02962-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="02962-112">Delegated (work or school account)</span></span>|<span data-ttu-id="02962-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02962-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="02962-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="02962-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="02962-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02962-115">Not supported.</span></span>|
+|<span data-ttu-id="02962-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="02962-116">Application</span></span>|<span data-ttu-id="02962-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02962-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4f503-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4f503-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02962-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="02962-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,41 +37,41 @@ ms.locfileid: "29401993"
 POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4f503-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4f503-120">Request headers</span></span>
-|<span data-ttu-id="4f503-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4f503-121">Header</span></span>|<span data-ttu-id="4f503-122">値</span><span class="sxs-lookup"><span data-stu-id="4f503-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="02962-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="02962-119">Request headers</span></span>
+|<span data-ttu-id="02962-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="02962-120">Header</span></span>|<span data-ttu-id="02962-121">値</span><span class="sxs-lookup"><span data-stu-id="02962-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4f503-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f503-123">Authorization</span></span>|<span data-ttu-id="4f503-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="4f503-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4f503-125">Accept</span><span class="sxs-lookup"><span data-stu-id="4f503-125">Accept</span></span>|<span data-ttu-id="4f503-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4f503-126">application/json</span></span>|
+|<span data-ttu-id="02962-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="02962-122">Authorization</span></span>|<span data-ttu-id="02962-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="02962-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="02962-124">承諾</span><span class="sxs-lookup"><span data-stu-id="02962-124">Accept</span></span>|<span data-ttu-id="02962-125">application/json</span><span class="sxs-lookup"><span data-stu-id="02962-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4f503-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="4f503-127">Request body</span></span>
-<span data-ttu-id="4f503-128">要求の本文に androidDeviceOwnerEnrollmentProfile オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="4f503-128">In the request body, supply a JSON representation for the androidDeviceOwnerEnrollmentProfile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02962-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="02962-126">Request body</span></span>
+<span data-ttu-id="02962-127">要求本文で、androidDeviceOwnerEnrollmentProfile オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="02962-127">In the request body, supply a JSON representation for the androidDeviceOwnerEnrollmentProfile object.</span></span>
 
-<span data-ttu-id="4f503-129">次の表は、androidDeviceOwnerEnrollmentProfile を作成するときに必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="4f503-129">The following table shows the properties that are required when you create the androidDeviceOwnerEnrollmentProfile.</span></span>
+<span data-ttu-id="02962-128">次の表に、androidDeviceOwnerEnrollmentProfile の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="02962-128">The following table shows the properties that are required when you create the androidDeviceOwnerEnrollmentProfile.</span></span>
 
-|<span data-ttu-id="4f503-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4f503-130">Property</span></span>|<span data-ttu-id="4f503-131">型</span><span class="sxs-lookup"><span data-stu-id="4f503-131">Type</span></span>|<span data-ttu-id="4f503-132">説明</span><span class="sxs-lookup"><span data-stu-id="4f503-132">Description</span></span>|
+|<span data-ttu-id="02962-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="02962-129">Property</span></span>|<span data-ttu-id="02962-130">型</span><span class="sxs-lookup"><span data-stu-id="02962-130">Type</span></span>|<span data-ttu-id="02962-131">説明</span><span class="sxs-lookup"><span data-stu-id="02962-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4f503-133">accountId</span><span class="sxs-lookup"><span data-stu-id="4f503-133">accountId</span></span>|<span data-ttu-id="4f503-134">String</span><span class="sxs-lookup"><span data-stu-id="4f503-134">String</span></span>|<span data-ttu-id="4f503-135">登録プロファイルが属するテナント GUID。</span><span class="sxs-lookup"><span data-stu-id="4f503-135">Tenant GUID the enrollment profile belongs to.</span></span>|
-|<span data-ttu-id="4f503-136">id</span><span class="sxs-lookup"><span data-stu-id="4f503-136">id</span></span>|<span data-ttu-id="4f503-137">String</span><span class="sxs-lookup"><span data-stu-id="4f503-137">String</span></span>|<span data-ttu-id="4f503-138">登録プロファイル用の一意な GUID。</span><span class="sxs-lookup"><span data-stu-id="4f503-138">Unique GUID for the enrollment profile.</span></span>|
-|<span data-ttu-id="4f503-139">displayName</span><span class="sxs-lookup"><span data-stu-id="4f503-139">displayName</span></span>|<span data-ttu-id="4f503-140">String</span><span class="sxs-lookup"><span data-stu-id="4f503-140">String</span></span>|<span data-ttu-id="4f503-141">登録プロファイルの表示名。</span><span class="sxs-lookup"><span data-stu-id="4f503-141">Display name for the enrollment profile.</span></span>|
-|<span data-ttu-id="4f503-142">説明</span><span class="sxs-lookup"><span data-stu-id="4f503-142">description</span></span>|<span data-ttu-id="4f503-143">String</span><span class="sxs-lookup"><span data-stu-id="4f503-143">String</span></span>|<span data-ttu-id="4f503-144">登録プロファイルの説明。</span><span class="sxs-lookup"><span data-stu-id="4f503-144">Description for the enrollment profile.</span></span>|
-|<span data-ttu-id="4f503-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4f503-145">createdDateTime</span></span>|<span data-ttu-id="4f503-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f503-146">DateTimeOffset</span></span>|<span data-ttu-id="4f503-147">登録プロファイルが作成された日時。</span><span class="sxs-lookup"><span data-stu-id="4f503-147">Date time the enrollment profile was created.</span></span>|
-|<span data-ttu-id="4f503-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4f503-148">lastModifiedDateTime</span></span>|<span data-ttu-id="4f503-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f503-149">DateTimeOffset</span></span>|<span data-ttu-id="4f503-150">登録プロファイルが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="4f503-150">Date time the enrollment profile was last modified.</span></span>|
-|<span data-ttu-id="4f503-151">tokenValue</span><span class="sxs-lookup"><span data-stu-id="4f503-151">tokenValue</span></span>|<span data-ttu-id="4f503-152">String</span><span class="sxs-lookup"><span data-stu-id="4f503-152">String</span></span>|<span data-ttu-id="4f503-153">この登録プロファイル用に最後に作成されたトークンの値。</span><span class="sxs-lookup"><span data-stu-id="4f503-153">Value of the most recently created token for this enrollment profile.</span></span>|
-|<span data-ttu-id="4f503-154">tokenCreationDateTime</span><span class="sxs-lookup"><span data-stu-id="4f503-154">tokenCreationDateTime</span></span>|<span data-ttu-id="4f503-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f503-155">DateTimeOffset</span></span>|<span data-ttu-id="4f503-156">直前に作成されたトークンが作成された日時です。</span><span class="sxs-lookup"><span data-stu-id="4f503-156">Date time the most recently created token was created.</span></span>|
-|<span data-ttu-id="4f503-157">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4f503-157">tokenExpirationDateTime</span></span>|<span data-ttu-id="4f503-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f503-158">DateTimeOffset</span></span>|<span data-ttu-id="4f503-159">最後に作成されたトークンの有効期限が切れる日時。</span><span class="sxs-lookup"><span data-stu-id="4f503-159">Date time the most recently created token will expire.</span></span>|
-|<span data-ttu-id="4f503-160">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4f503-160">enrolledDeviceCount</span></span>|<span data-ttu-id="4f503-161">Int32</span><span class="sxs-lookup"><span data-stu-id="4f503-161">Int32</span></span>|<span data-ttu-id="4f503-162">この登録プロファイルを使用して登録した Android デバイスの合計数。</span><span class="sxs-lookup"><span data-stu-id="4f503-162">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
-|<span data-ttu-id="4f503-163">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="4f503-163">qrCodeContent</span></span>|<span data-ttu-id="4f503-164">String</span><span class="sxs-lookup"><span data-stu-id="4f503-164">String</span></span>|<span data-ttu-id="4f503-165">トークン用の QR コードを生成するために使用された文字列。</span><span class="sxs-lookup"><span data-stu-id="4f503-165">String used to generate a QR code for the token.</span></span>|
-|<span data-ttu-id="4f503-166">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="4f503-166">qrCodeImage</span></span>|[<span data-ttu-id="4f503-167">mimeContent</span><span class="sxs-lookup"><span data-stu-id="4f503-167">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="4f503-168">トークン用の QR コードを生成するために使用された文字列。</span><span class="sxs-lookup"><span data-stu-id="4f503-168">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="02962-132">accountId</span><span class="sxs-lookup"><span data-stu-id="02962-132">accountId</span></span>|<span data-ttu-id="02962-133">String</span><span class="sxs-lookup"><span data-stu-id="02962-133">String</span></span>|<span data-ttu-id="02962-134">登録プロファイルが属するテナント GUID。</span><span class="sxs-lookup"><span data-stu-id="02962-134">Tenant GUID the enrollment profile belongs to.</span></span>|
+|<span data-ttu-id="02962-135">id</span><span class="sxs-lookup"><span data-stu-id="02962-135">id</span></span>|<span data-ttu-id="02962-136">文字列</span><span class="sxs-lookup"><span data-stu-id="02962-136">String</span></span>|<span data-ttu-id="02962-137">登録プロファイル用の一意な GUID。</span><span class="sxs-lookup"><span data-stu-id="02962-137">Unique GUID for the enrollment profile.</span></span>|
+|<span data-ttu-id="02962-138">displayName</span><span class="sxs-lookup"><span data-stu-id="02962-138">displayName</span></span>|<span data-ttu-id="02962-139">String</span><span class="sxs-lookup"><span data-stu-id="02962-139">String</span></span>|<span data-ttu-id="02962-140">登録プロファイルの表示名。</span><span class="sxs-lookup"><span data-stu-id="02962-140">Display name for the enrollment profile.</span></span>|
+|<span data-ttu-id="02962-141">説明</span><span class="sxs-lookup"><span data-stu-id="02962-141">description</span></span>|<span data-ttu-id="02962-142">文字列</span><span class="sxs-lookup"><span data-stu-id="02962-142">String</span></span>|<span data-ttu-id="02962-143">登録プロファイルの説明。</span><span class="sxs-lookup"><span data-stu-id="02962-143">Description for the enrollment profile.</span></span>|
+|<span data-ttu-id="02962-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="02962-144">createdDateTime</span></span>|<span data-ttu-id="02962-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02962-145">DateTimeOffset</span></span>|<span data-ttu-id="02962-146">登録プロファイルが作成された日時。</span><span class="sxs-lookup"><span data-stu-id="02962-146">Date time the enrollment profile was created.</span></span>|
+|<span data-ttu-id="02962-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="02962-147">lastModifiedDateTime</span></span>|<span data-ttu-id="02962-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02962-148">DateTimeOffset</span></span>|<span data-ttu-id="02962-149">登録プロファイルが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="02962-149">Date time the enrollment profile was last modified.</span></span>|
+|<span data-ttu-id="02962-150">tokenValue</span><span class="sxs-lookup"><span data-stu-id="02962-150">tokenValue</span></span>|<span data-ttu-id="02962-151">String</span><span class="sxs-lookup"><span data-stu-id="02962-151">String</span></span>|<span data-ttu-id="02962-152">この登録プロファイル用に最後に作成されたトークンの値。</span><span class="sxs-lookup"><span data-stu-id="02962-152">Value of the most recently created token for this enrollment profile.</span></span>|
+|<span data-ttu-id="02962-153">tokenの日付/時刻</span><span class="sxs-lookup"><span data-stu-id="02962-153">tokenCreationDateTime</span></span>|<span data-ttu-id="02962-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02962-154">DateTimeOffset</span></span>|<span data-ttu-id="02962-155">最後に作成されたトークンが作成された日時。</span><span class="sxs-lookup"><span data-stu-id="02962-155">Date time the most recently created token was created.</span></span>|
+|<span data-ttu-id="02962-156">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="02962-156">tokenExpirationDateTime</span></span>|<span data-ttu-id="02962-157">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02962-157">DateTimeOffset</span></span>|<span data-ttu-id="02962-158">最後に作成されたトークンの有効期限が切れる日時。</span><span class="sxs-lookup"><span data-stu-id="02962-158">Date time the most recently created token will expire.</span></span>|
+|<span data-ttu-id="02962-159">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="02962-159">enrolledDeviceCount</span></span>|<span data-ttu-id="02962-160">Int32</span><span class="sxs-lookup"><span data-stu-id="02962-160">Int32</span></span>|<span data-ttu-id="02962-161">この登録プロファイルを使用して登録した Android デバイスの合計数。</span><span class="sxs-lookup"><span data-stu-id="02962-161">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
+|<span data-ttu-id="02962-162">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="02962-162">qrCodeContent</span></span>|<span data-ttu-id="02962-163">String</span><span class="sxs-lookup"><span data-stu-id="02962-163">String</span></span>|<span data-ttu-id="02962-164">トークン用の QR コードを生成するために使用された文字列。</span><span class="sxs-lookup"><span data-stu-id="02962-164">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="02962-165">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="02962-165">qrCodeImage</span></span>|[<span data-ttu-id="02962-166">mimeContent</span><span class="sxs-lookup"><span data-stu-id="02962-166">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="02962-167">トークン用の QR コードを生成するために使用された文字列。</span><span class="sxs-lookup"><span data-stu-id="02962-167">String used to generate a QR code for the token.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4f503-169">応答</span><span class="sxs-lookup"><span data-stu-id="4f503-169">Response</span></span>
-<span data-ttu-id="4f503-170">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="4f503-170">If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="02962-168">応答</span><span class="sxs-lookup"><span data-stu-id="02962-168">Response</span></span>
+<span data-ttu-id="02962-169">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="02962-169">If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4f503-171">例</span><span class="sxs-lookup"><span data-stu-id="4f503-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="02962-170">例</span><span class="sxs-lookup"><span data-stu-id="02962-170">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4f503-172">要求</span><span class="sxs-lookup"><span data-stu-id="4f503-172">Request</span></span>
-<span data-ttu-id="4f503-173">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4f503-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="02962-171">要求</span><span class="sxs-lookup"><span data-stu-id="02962-171">Request</span></span>
+<span data-ttu-id="02962-172">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="02962-172">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles
 Content-type: application/json
@@ -95,8 +95,8 @@ Content-length: 565
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4f503-174">応答</span><span class="sxs-lookup"><span data-stu-id="4f503-174">Response</span></span>
-<span data-ttu-id="4f503-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4f503-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="02962-173">応答</span><span class="sxs-lookup"><span data-stu-id="02962-173">Response</span></span>
+<span data-ttu-id="02962-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="02962-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

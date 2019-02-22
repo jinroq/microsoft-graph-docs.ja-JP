@@ -1,39 +1,39 @@
 ---
 title: deviceConfigurationTargetedUserAndDevice リソースの種類
-description: 競合デバイスの構成のポリシーのセットの概要です。
-localization_priority: Normal
+description: 一連のデバイス構成ポリシーの競合の概要。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144143"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="30816-103">deviceConfigurationTargetedUserAndDevice リソースの種類</span><span class="sxs-lookup"><span data-stu-id="30816-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="f0ea4-103">deviceConfigurationTargetedUserAndDevice リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f0ea4-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
 
-> <span data-ttu-id="30816-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="30816-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="30816-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="30816-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f0ea4-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="30816-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="30816-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f0ea4-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="30816-107">競合デバイスの構成のポリシーのセットの概要です。</span><span class="sxs-lookup"><span data-stu-id="30816-107">Conflict summary for a set of device configuration policies.</span></span>
+<span data-ttu-id="f0ea4-106">一連のデバイス構成ポリシーの競合の概要。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-106">Conflict summary for a set of device configuration policies.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="30816-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="30816-108">Properties</span></span>
-|<span data-ttu-id="30816-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="30816-109">Property</span></span>|<span data-ttu-id="30816-110">型</span><span class="sxs-lookup"><span data-stu-id="30816-110">Type</span></span>|<span data-ttu-id="30816-111">説明</span><span class="sxs-lookup"><span data-stu-id="30816-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f0ea4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0ea4-107">Properties</span></span>
+|<span data-ttu-id="f0ea4-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0ea4-108">Property</span></span>|<span data-ttu-id="f0ea4-109">型</span><span class="sxs-lookup"><span data-stu-id="f0ea4-109">Type</span></span>|<span data-ttu-id="f0ea4-110">説明</span><span class="sxs-lookup"><span data-stu-id="f0ea4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="30816-112">deviceId</span><span class="sxs-lookup"><span data-stu-id="30816-112">deviceId</span></span>|<span data-ttu-id="30816-113">String</span><span class="sxs-lookup"><span data-stu-id="30816-113">String</span></span>|<span data-ttu-id="30816-114">チェックインで、デバイスの id です。</span><span class="sxs-lookup"><span data-stu-id="30816-114">The id of the device in the checkin.</span></span>|
-|<span data-ttu-id="30816-115">deviceName</span><span class="sxs-lookup"><span data-stu-id="30816-115">deviceName</span></span>|<span data-ttu-id="30816-116">String</span><span class="sxs-lookup"><span data-stu-id="30816-116">String</span></span>|<span data-ttu-id="30816-117">チェックインで、デバイスの名前。</span><span class="sxs-lookup"><span data-stu-id="30816-117">The name of the device in the checkin.</span></span>|
-|<span data-ttu-id="30816-118">userId</span><span class="sxs-lookup"><span data-stu-id="30816-118">userId</span></span>|<span data-ttu-id="30816-119">String</span><span class="sxs-lookup"><span data-stu-id="30816-119">String</span></span>|<span data-ttu-id="30816-120">チェックインでユーザーの id です。</span><span class="sxs-lookup"><span data-stu-id="30816-120">The id of the user in the checkin.</span></span>|
-|<span data-ttu-id="30816-121">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="30816-121">userDisplayName</span></span>|<span data-ttu-id="30816-122">String</span><span class="sxs-lookup"><span data-stu-id="30816-122">String</span></span>|<span data-ttu-id="30816-123">チェックインでユーザーの表示名</span><span class="sxs-lookup"><span data-stu-id="30816-123">The display name of the user in the checkin</span></span>|
-|<span data-ttu-id="30816-124">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="30816-124">userPrincipalName</span></span>|<span data-ttu-id="30816-125">String</span><span class="sxs-lookup"><span data-stu-id="30816-125">String</span></span>|<span data-ttu-id="30816-126">チェックインのユーザーの UPN。</span><span class="sxs-lookup"><span data-stu-id="30816-126">The UPN of the user in the checkin.</span></span>|
-|<span data-ttu-id="30816-127">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="30816-127">lastCheckinDateTime</span></span>|<span data-ttu-id="30816-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="30816-128">DateTimeOffset</span></span>|<span data-ttu-id="30816-129">このユーザー/デバイス ・ ペアの最後のチェックインの時間です。</span><span class="sxs-lookup"><span data-stu-id="30816-129">Last checkin time for this user/device pair.</span></span>|
+|<span data-ttu-id="f0ea4-111">deviceId</span><span class="sxs-lookup"><span data-stu-id="f0ea4-111">deviceId</span></span>|<span data-ttu-id="f0ea4-112">String</span><span class="sxs-lookup"><span data-stu-id="f0ea4-112">String</span></span>|<span data-ttu-id="f0ea4-113">チェックイン内のデバイスの id。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-113">The id of the device in the checkin.</span></span>|
+|<span data-ttu-id="f0ea4-114">deviceName</span><span class="sxs-lookup"><span data-stu-id="f0ea4-114">deviceName</span></span>|<span data-ttu-id="f0ea4-115">String</span><span class="sxs-lookup"><span data-stu-id="f0ea4-115">String</span></span>|<span data-ttu-id="f0ea4-116">チェックイン内のデバイスの名前。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-116">The name of the device in the checkin.</span></span>|
+|<span data-ttu-id="f0ea4-117">userId</span><span class="sxs-lookup"><span data-stu-id="f0ea4-117">userId</span></span>|<span data-ttu-id="f0ea4-118">String</span><span class="sxs-lookup"><span data-stu-id="f0ea4-118">String</span></span>|<span data-ttu-id="f0ea4-119">チェックイン内のユーザーの id。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-119">The id of the user in the checkin.</span></span>|
+|<span data-ttu-id="f0ea4-120">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="f0ea4-120">userDisplayName</span></span>|<span data-ttu-id="f0ea4-121">String</span><span class="sxs-lookup"><span data-stu-id="f0ea4-121">String</span></span>|<span data-ttu-id="f0ea4-122">チェックイン内のユーザーの表示名</span><span class="sxs-lookup"><span data-stu-id="f0ea4-122">The display name of the user in the checkin</span></span>|
+|<span data-ttu-id="f0ea4-123">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f0ea4-123">userPrincipalName</span></span>|<span data-ttu-id="f0ea4-124">文字列</span><span class="sxs-lookup"><span data-stu-id="f0ea4-124">String</span></span>|<span data-ttu-id="f0ea4-125">チェックイン内のユーザーの UPN。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-125">The UPN of the user in the checkin.</span></span>|
+|<span data-ttu-id="f0ea4-126">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="f0ea4-126">lastCheckinDateTime</span></span>|<span data-ttu-id="f0ea4-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0ea4-127">DateTimeOffset</span></span>|<span data-ttu-id="f0ea4-128">このユーザー/デバイスのペアの最終チェックイン時刻。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-128">Last checkin time for this user/device pair.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="30816-130">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="30816-130">Relationships</span></span>
-<span data-ttu-id="30816-131">なし</span><span class="sxs-lookup"><span data-stu-id="30816-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f0ea4-129">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="f0ea4-129">Relationships</span></span>
+<span data-ttu-id="f0ea4-130">なし</span><span class="sxs-lookup"><span data-stu-id="f0ea4-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="30816-132">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="30816-132">JSON Representation</span></span>
-<span data-ttu-id="30816-133">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="30816-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0ea4-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f0ea4-131">JSON Representation</span></span>
+<span data-ttu-id="f0ea4-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f0ea4-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationTargetedUserAndDevice"

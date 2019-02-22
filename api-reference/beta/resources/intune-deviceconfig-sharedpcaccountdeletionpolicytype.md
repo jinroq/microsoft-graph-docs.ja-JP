@@ -1,30 +1,30 @@
 ---
 title: sharedPCAccountDeletionPolicyType 列挙型
-description: 共有の PC でアカウントが削除されたときに指定できる値です。
-localization_priority: Normal
+description: 共有 PC でアカウントを削除する場合に使用できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645cd3dfd4121c6c9bdd9d57a0dc3b63723cc461
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415167"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139936"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="4945a-103">sharedPCAccountDeletionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="4945a-103">sharedPCAccountDeletionPolicyType enum type</span></span>
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="e1a67-103">sharedPCAccountDeletionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="e1a67-103">sharedPCAccountDeletionPolicyType enum type</span></span>
 
-> <span data-ttu-id="4945a-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4945a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4945a-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4945a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e1a67-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1a67-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4945a-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4945a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e1a67-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e1a67-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4945a-107">共有の PC でアカウントが削除されたときに指定できる値です。</span><span class="sxs-lookup"><span data-stu-id="4945a-107">Possible values for when accounts are deleted on a shared PC.</span></span>
+<span data-ttu-id="e1a67-106">共有 PC でアカウントを削除する場合に使用できる値。</span><span class="sxs-lookup"><span data-stu-id="e1a67-106">Possible values for when accounts are deleted on a shared PC.</span></span>
 
-## <a name="members"></a><span data-ttu-id="4945a-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="4945a-108">Members</span></span>
-|<span data-ttu-id="4945a-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="4945a-109">Member</span></span>|<span data-ttu-id="4945a-110">値</span><span class="sxs-lookup"><span data-stu-id="4945a-110">Value</span></span>|<span data-ttu-id="4945a-111">説明</span><span class="sxs-lookup"><span data-stu-id="4945a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e1a67-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="e1a67-107">Members</span></span>
+|<span data-ttu-id="e1a67-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="e1a67-108">Member</span></span>|<span data-ttu-id="e1a67-109">値</span><span class="sxs-lookup"><span data-stu-id="e1a67-109">Value</span></span>|<span data-ttu-id="e1a67-110">説明</span><span class="sxs-lookup"><span data-stu-id="e1a67-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4945a-112">イミディ エイト</span><span class="sxs-lookup"><span data-stu-id="4945a-112">immediate</span></span>|<span data-ttu-id="4945a-113">0</span><span class="sxs-lookup"><span data-stu-id="4945a-113">0</span></span>|<span data-ttu-id="4945a-114">すぐに削除します。</span><span class="sxs-lookup"><span data-stu-id="4945a-114">Delete immediately.</span></span>|
-|<span data-ttu-id="4945a-115">diskSpaceThreshold</span><span class="sxs-lookup"><span data-stu-id="4945a-115">diskSpaceThreshold</span></span>|<span data-ttu-id="4945a-116">1</span><span class="sxs-lookup"><span data-stu-id="4945a-116">1</span></span>|<span data-ttu-id="4945a-117">ディスク容量のしきい値を削除します。</span><span class="sxs-lookup"><span data-stu-id="4945a-117">Delete at disk space threshold.</span></span>|
-|<span data-ttu-id="4945a-118">diskSpaceThresholdOrInactiveThreshold</span><span class="sxs-lookup"><span data-stu-id="4945a-118">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="4945a-119">2</span><span class="sxs-lookup"><span data-stu-id="4945a-119">2</span></span>|<span data-ttu-id="4945a-120">ディスク容量のしきい値または非アクティブのしきい値を削除します。</span><span class="sxs-lookup"><span data-stu-id="4945a-120">Delete at disk space threshold or inactive threshold.</span></span>|
+|<span data-ttu-id="e1a67-111">瞬時</span><span class="sxs-lookup"><span data-stu-id="e1a67-111">immediate</span></span>|<span data-ttu-id="e1a67-112">.0</span><span class="sxs-lookup"><span data-stu-id="e1a67-112">0</span></span>|<span data-ttu-id="e1a67-113">すぐに削除します。</span><span class="sxs-lookup"><span data-stu-id="e1a67-113">Delete immediately.</span></span>|
+|<span data-ttu-id="e1a67-114">ディスクスペースしきい値</span><span class="sxs-lookup"><span data-stu-id="e1a67-114">diskSpaceThreshold</span></span>|<span data-ttu-id="e1a67-115">1-d</span><span class="sxs-lookup"><span data-stu-id="e1a67-115">1</span></span>|<span data-ttu-id="e1a67-116">ディスク容量のしきい値で削除します。</span><span class="sxs-lookup"><span data-stu-id="e1a67-116">Delete at disk space threshold.</span></span>|
+|<span data-ttu-id="e1a67-117">diskSpaceThresholdOrInactiveThreshold</span><span class="sxs-lookup"><span data-stu-id="e1a67-117">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="e1a67-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="e1a67-118">2</span></span>|<span data-ttu-id="e1a67-119">ディスク容量のしきい値または非アクティブなしきい値での削除。</span><span class="sxs-lookup"><span data-stu-id="e1a67-119">Delete at disk space threshold or inactive threshold.</span></span>|
 
 
 

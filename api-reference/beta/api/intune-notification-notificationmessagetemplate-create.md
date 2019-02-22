@@ -1,34 +1,34 @@
 ---
 title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f16d9e679533e56e59393f967b9b192b74f3607b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 238aa7a6977655300e54cdb64f430b89022d3942
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419822"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145186"
 ---
-# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="7a076-103">notificationMessageTemplate の作成</span><span class="sxs-lookup"><span data-stu-id="7a076-103">Create notificationMessageTemplate</span></span>
+# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="85ec5-103">notificationMessageTemplate の作成</span><span class="sxs-lookup"><span data-stu-id="85ec5-103">Create notificationMessageTemplate</span></span>
 
-> <span data-ttu-id="7a076-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="7a076-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7a076-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7a076-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85ec5-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="85ec5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7a076-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7a076-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="85ec5-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="85ec5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7a076-107">新しい [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="7a076-107">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
+<span data-ttu-id="85ec5-106">新しい [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="85ec5-106">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7a076-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="7a076-108">Prerequisites</span></span>
-<span data-ttu-id="7a076-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7a076-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="85ec5-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="85ec5-107">Prerequisites</span></span>
+<span data-ttu-id="85ec5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="85ec5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="7a076-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7a076-111">Permission type</span></span>|<span data-ttu-id="7a076-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="7a076-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="85ec5-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="85ec5-110">Permission type</span></span>|<span data-ttu-id="85ec5-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="85ec5-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a076-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7a076-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7a076-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a076-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="7a076-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7a076-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7a076-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7a076-116">Not supported.</span></span>|
-|<span data-ttu-id="7a076-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7a076-117">Application</span></span>|<span data-ttu-id="7a076-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7a076-118">Not supported.</span></span>|
+|<span data-ttu-id="85ec5-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="85ec5-112">Delegated (work or school account)</span></span>|<span data-ttu-id="85ec5-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85ec5-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="85ec5-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="85ec5-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="85ec5-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="85ec5-115">Not supported.</span></span>|
+|<span data-ttu-id="85ec5-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="85ec5-116">Application</span></span>|<span data-ttu-id="85ec5-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="85ec5-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7a076-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7a076-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85ec5-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="85ec5-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "29419822"
 POST /deviceManagement/notificationMessageTemplates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7a076-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7a076-120">Request headers</span></span>
-|<span data-ttu-id="7a076-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7a076-121">Header</span></span>|<span data-ttu-id="7a076-122">値</span><span class="sxs-lookup"><span data-stu-id="7a076-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="85ec5-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="85ec5-119">Request headers</span></span>
+|<span data-ttu-id="85ec5-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="85ec5-120">Header</span></span>|<span data-ttu-id="85ec5-121">値</span><span class="sxs-lookup"><span data-stu-id="85ec5-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a076-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7a076-123">Authorization</span></span>|<span data-ttu-id="7a076-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="7a076-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7a076-125">Accept</span><span class="sxs-lookup"><span data-stu-id="7a076-125">Accept</span></span>|<span data-ttu-id="7a076-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7a076-126">application/json</span></span>|
+|<span data-ttu-id="85ec5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="85ec5-122">Authorization</span></span>|<span data-ttu-id="85ec5-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="85ec5-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="85ec5-124">承諾</span><span class="sxs-lookup"><span data-stu-id="85ec5-124">Accept</span></span>|<span data-ttu-id="85ec5-125">application/json</span><span class="sxs-lookup"><span data-stu-id="85ec5-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7a076-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="7a076-127">Request body</span></span>
-<span data-ttu-id="7a076-128">要求の本文で、notificationMessageTemplate オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7a076-128">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85ec5-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="85ec5-126">Request body</span></span>
+<span data-ttu-id="85ec5-127">要求の本文で、notificationMessageTemplate オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="85ec5-127">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
 
-<span data-ttu-id="7a076-129">次の表に、notificationMessageTemplate の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="7a076-129">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
+<span data-ttu-id="85ec5-128">次の表に、notificationMessageTemplate の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="85ec5-128">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
 
-|<span data-ttu-id="7a076-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7a076-130">Property</span></span>|<span data-ttu-id="7a076-131">型</span><span class="sxs-lookup"><span data-stu-id="7a076-131">Type</span></span>|<span data-ttu-id="7a076-132">説明</span><span class="sxs-lookup"><span data-stu-id="7a076-132">Description</span></span>|
+|<span data-ttu-id="85ec5-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="85ec5-129">Property</span></span>|<span data-ttu-id="85ec5-130">型</span><span class="sxs-lookup"><span data-stu-id="85ec5-130">Type</span></span>|<span data-ttu-id="85ec5-131">説明</span><span class="sxs-lookup"><span data-stu-id="85ec5-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7a076-133">id</span><span class="sxs-lookup"><span data-stu-id="7a076-133">id</span></span>|<span data-ttu-id="7a076-134">String</span><span class="sxs-lookup"><span data-stu-id="7a076-134">String</span></span>|<span data-ttu-id="7a076-135">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="7a076-135">Key of the entity.</span></span>|
-|<span data-ttu-id="7a076-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7a076-136">lastModifiedDateTime</span></span>|<span data-ttu-id="7a076-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7a076-137">DateTimeOffset</span></span>|<span data-ttu-id="7a076-138">オブジェクトが最後に変更された DateTime。</span><span class="sxs-lookup"><span data-stu-id="7a076-138">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="7a076-139">displayName</span><span class="sxs-lookup"><span data-stu-id="7a076-139">displayName</span></span>|<span data-ttu-id="7a076-140">String</span><span class="sxs-lookup"><span data-stu-id="7a076-140">String</span></span>|<span data-ttu-id="7a076-141">通知メッセージ テンプレートの表示名。</span><span class="sxs-lookup"><span data-stu-id="7a076-141">Display name for the Notification Message Template.</span></span>|
-|<span data-ttu-id="7a076-142">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="7a076-142">defaultLocale</span></span>|<span data-ttu-id="7a076-143">String</span><span class="sxs-lookup"><span data-stu-id="7a076-143">String</span></span>|<span data-ttu-id="7a076-144">要求されたロケールが使用できないときにフォールバックする既定のロケール。</span><span class="sxs-lookup"><span data-stu-id="7a076-144">The default locale to fallback onto when the requested locale is not available.</span></span>|
-|<span data-ttu-id="7a076-145">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="7a076-145">brandingOptions</span></span>|[<span data-ttu-id="7a076-146">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="7a076-146">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="7a076-147">メッセージ テンプレートのブランド化オプション。</span><span class="sxs-lookup"><span data-stu-id="7a076-147">The Message Template Branding Options.</span></span> <span data-ttu-id="7a076-148">ブランド化は、Intune 管理コンソールで定義されます。</span><span class="sxs-lookup"><span data-stu-id="7a076-148">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="7a076-149">可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。</span><span class="sxs-lookup"><span data-stu-id="7a076-149">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
-|<span data-ttu-id="7a076-150">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="7a076-150">roleScopeTagIds</span></span>|<span data-ttu-id="7a076-151">String コレクション</span><span class="sxs-lookup"><span data-stu-id="7a076-151">String collection</span></span>|<span data-ttu-id="7a076-152">このエンティティ インスタンスのスコープのタグのリストです。</span><span class="sxs-lookup"><span data-stu-id="7a076-152">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="85ec5-132">id</span><span class="sxs-lookup"><span data-stu-id="85ec5-132">id</span></span>|<span data-ttu-id="85ec5-133">String</span><span class="sxs-lookup"><span data-stu-id="85ec5-133">String</span></span>|<span data-ttu-id="85ec5-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="85ec5-134">Key of the entity.</span></span>|
+|<span data-ttu-id="85ec5-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="85ec5-135">lastModifiedDateTime</span></span>|<span data-ttu-id="85ec5-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85ec5-136">DateTimeOffset</span></span>|<span data-ttu-id="85ec5-137">オブジェクトが最後に変更された DateTime。</span><span class="sxs-lookup"><span data-stu-id="85ec5-137">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="85ec5-138">displayName</span><span class="sxs-lookup"><span data-stu-id="85ec5-138">displayName</span></span>|<span data-ttu-id="85ec5-139">String</span><span class="sxs-lookup"><span data-stu-id="85ec5-139">String</span></span>|<span data-ttu-id="85ec5-140">通知メッセージ テンプレートの表示名。</span><span class="sxs-lookup"><span data-stu-id="85ec5-140">Display name for the Notification Message Template.</span></span>|
+|<span data-ttu-id="85ec5-141">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="85ec5-141">defaultLocale</span></span>|<span data-ttu-id="85ec5-142">String</span><span class="sxs-lookup"><span data-stu-id="85ec5-142">String</span></span>|<span data-ttu-id="85ec5-143">要求されたロケールが使用できないときにフォールバックする既定のロケール。</span><span class="sxs-lookup"><span data-stu-id="85ec5-143">The default locale to fallback onto when the requested locale is not available.</span></span>|
+|<span data-ttu-id="85ec5-144">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="85ec5-144">brandingOptions</span></span>|[<span data-ttu-id="85ec5-145">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="85ec5-145">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="85ec5-146">メッセージ テンプレートのブランド化オプション。</span><span class="sxs-lookup"><span data-stu-id="85ec5-146">The Message Template Branding Options.</span></span> <span data-ttu-id="85ec5-147">ブランド化は、Intune 管理コンソールで定義されます。</span><span class="sxs-lookup"><span data-stu-id="85ec5-147">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="85ec5-148">可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。</span><span class="sxs-lookup"><span data-stu-id="85ec5-148">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
+|<span data-ttu-id="85ec5-149">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="85ec5-149">roleScopeTagIds</span></span>|<span data-ttu-id="85ec5-150">String collection</span><span class="sxs-lookup"><span data-stu-id="85ec5-150">String collection</span></span>|<span data-ttu-id="85ec5-151">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="85ec5-151">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7a076-153">応答</span><span class="sxs-lookup"><span data-stu-id="7a076-153">Response</span></span>
-<span data-ttu-id="7a076-154">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7a076-154">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="85ec5-152">応答</span><span class="sxs-lookup"><span data-stu-id="85ec5-152">Response</span></span>
+<span data-ttu-id="85ec5-153">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="85ec5-153">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a076-155">例</span><span class="sxs-lookup"><span data-stu-id="7a076-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85ec5-154">例</span><span class="sxs-lookup"><span data-stu-id="85ec5-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7a076-156">要求</span><span class="sxs-lookup"><span data-stu-id="7a076-156">Request</span></span>
-<span data-ttu-id="7a076-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7a076-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="85ec5-155">要求</span><span class="sxs-lookup"><span data-stu-id="85ec5-155">Request</span></span>
+<span data-ttu-id="85ec5-156">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="85ec5-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 259
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7a076-158">応答</span><span class="sxs-lookup"><span data-stu-id="7a076-158">Response</span></span>
-<span data-ttu-id="7a076-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7a076-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="85ec5-157">応答</span><span class="sxs-lookup"><span data-stu-id="85ec5-157">Response</span></span>
+<span data-ttu-id="85ec5-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="85ec5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

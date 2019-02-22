@@ -1,31 +1,31 @@
 ---
-title: androidForWorkBindStatus 列挙型
-description: Google の EMM の API を使用してテナントの状態をバインドします。
-localization_priority: Normal
+title: androidforwork bindstatus 列挙型
+description: Google EMM API を使用したテナントの状態のバインド
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acb6fbf3946973dec75da5ea3b31a6e3faa486d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f926f808e566263fd59526aa5531baf827ce3f72
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399466"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139565"
 ---
-# <a name="androidforworkbindstatus-enum-type"></a><span data-ttu-id="70f6a-103">androidForWorkBindStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="70f6a-103">androidForWorkBindStatus enum type</span></span>
+# <a name="androidforworkbindstatus-enum-type"></a><span data-ttu-id="30472-103">androidforwork bindstatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="30472-103">androidForWorkBindStatus enum type</span></span>
 
-> <span data-ttu-id="70f6a-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="70f6a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="70f6a-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70f6a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="30472-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="30472-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="70f6a-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="70f6a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="30472-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="30472-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="70f6a-107">Google の EMM の API を使用してテナントの状態をバインドします。</span><span class="sxs-lookup"><span data-stu-id="70f6a-107">Bind status of the tenant with the Google EMM API</span></span>
+<span data-ttu-id="30472-106">Google EMM API を使用したテナントの状態のバインド</span><span class="sxs-lookup"><span data-stu-id="30472-106">Bind status of the tenant with the Google EMM API</span></span>
 
-## <a name="members"></a><span data-ttu-id="70f6a-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="70f6a-108">Members</span></span>
-|<span data-ttu-id="70f6a-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="70f6a-109">Member</span></span>|<span data-ttu-id="70f6a-110">値</span><span class="sxs-lookup"><span data-stu-id="70f6a-110">Value</span></span>|<span data-ttu-id="70f6a-111">説明</span><span class="sxs-lookup"><span data-stu-id="70f6a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="30472-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="30472-107">Members</span></span>
+|<span data-ttu-id="30472-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="30472-108">Member</span></span>|<span data-ttu-id="30472-109">値</span><span class="sxs-lookup"><span data-stu-id="30472-109">Value</span></span>|<span data-ttu-id="30472-110">説明</span><span class="sxs-lookup"><span data-stu-id="30472-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="70f6a-112">notBound</span><span class="sxs-lookup"><span data-stu-id="70f6a-112">notBound</span></span>|<span data-ttu-id="70f6a-113">0</span><span class="sxs-lookup"><span data-stu-id="70f6a-113">0</span></span>|<span data-ttu-id="70f6a-114">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70f6a-114">Not yet documented</span></span>|
-|<span data-ttu-id="70f6a-115">バインド</span><span class="sxs-lookup"><span data-stu-id="70f6a-115">bound</span></span>|<span data-ttu-id="70f6a-116">1</span><span class="sxs-lookup"><span data-stu-id="70f6a-116">1</span></span>|<span data-ttu-id="70f6a-117">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70f6a-117">Not yet documented</span></span>|
-|<span data-ttu-id="70f6a-118">boundAndValidated</span><span class="sxs-lookup"><span data-stu-id="70f6a-118">boundAndValidated</span></span>|<span data-ttu-id="70f6a-119">2</span><span class="sxs-lookup"><span data-stu-id="70f6a-119">2</span></span>|<span data-ttu-id="70f6a-120">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70f6a-120">Not yet documented</span></span>|
-|<span data-ttu-id="70f6a-121">バインド解除</span><span class="sxs-lookup"><span data-stu-id="70f6a-121">unbinding</span></span>|<span data-ttu-id="70f6a-122">3</span><span class="sxs-lookup"><span data-stu-id="70f6a-122">3</span></span>|<span data-ttu-id="70f6a-123">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70f6a-123">Not yet documented</span></span>|
+|<span data-ttu-id="30472-111">notbound</span><span class="sxs-lookup"><span data-stu-id="30472-111">notBound</span></span>|<span data-ttu-id="30472-112">.0</span><span class="sxs-lookup"><span data-stu-id="30472-112">0</span></span>|<span data-ttu-id="30472-113">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30472-113">Not yet documented</span></span>|
+|<span data-ttu-id="30472-114">バインド</span><span class="sxs-lookup"><span data-stu-id="30472-114">bound</span></span>|<span data-ttu-id="30472-115">1-d</span><span class="sxs-lookup"><span data-stu-id="30472-115">1</span></span>|<span data-ttu-id="30472-116">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30472-116">Not yet documented</span></span>|
+|<span data-ttu-id="30472-117">boundandvalidated</span><span class="sxs-lookup"><span data-stu-id="30472-117">boundAndValidated</span></span>|<span data-ttu-id="30472-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="30472-118">2</span></span>|<span data-ttu-id="30472-119">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30472-119">Not yet documented</span></span>|
+|<span data-ttu-id="30472-120">バインド</span><span class="sxs-lookup"><span data-stu-id="30472-120">unbinding</span></span>|<span data-ttu-id="30472-121">1/3</span><span class="sxs-lookup"><span data-stu-id="30472-121">3</span></span>|<span data-ttu-id="30472-122">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30472-122">Not yet documented</span></span>|
 
 
 
