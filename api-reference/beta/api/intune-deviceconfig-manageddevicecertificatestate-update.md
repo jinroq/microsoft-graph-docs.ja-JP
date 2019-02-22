@@ -1,23 +1,23 @@
 ---
-title: ManagedDeviceCertificateState を更新します。
-description: ManagedDeviceCertificateState オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: managedDeviceCertificateState の更新
+description: managedDeviceCertificateState オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f092cd6adcaf1e8da0846c0ce7af354770319b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a360e35e83712178d71256bdd6f389081e4047c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409805"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171702"
 ---
-# <a name="update-manageddevicecertificatestate"></a>ManagedDeviceCertificateState を更新します。
+# <a name="update-manageddevicecertificatestate"></a>managedDeviceCertificateState の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。
+[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -57,45 +57,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトの JSON 表記を指定します。
 
-[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスのプラットフォームです。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
-|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|キーの使用法です。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は、`days`、`months`、`years` です。|
-|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|発行の状態です。 使用可能な値: `unknown`、 `challengeIssued`、 `challengeIssueFailed`、 `requestCreationFailed`、 `requestSubmitFailed`、 `challengeValidationSucceeded`、 `challengeValidationFailed`、 `issueFailed`、 `issuePending`、 `issued`、 `responseProcessingFailed`、 `responsePending`、 `enrollmentSucceeded`、 `enrollmentNotNeeded`、 `revoked`、 `removedFromCollection`、 `renewVerified`、 `installFailed`、 `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キー記憶域プロバイダーです。 可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
-|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|サブジェクト名の形式です。 可能な値は、`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId` です。|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|サブジェクト代替名の形式です。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|状態を無効にします。 可能な値は、`none`、`pending`、`issued`、`failed`、`revoked` です。|
-|certificateProfileDisplayName|String|証明書プロファイルの表示名|
+|id|文字列型 (String)|エンティティのキー。|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスプラットフォーム。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
+|certificatekeyusage|[keyusages](../resources/intune-deviceconfig-keyusages.md)|キー使用法。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は `days`、`months`、`years` です。|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|発行状態。 可能な値: `unknown`、 `challengeIssued` `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending`、、、、、、、、、、、、 `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
+|certificatekeystorageprovider|[keystorageprovideroption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キーストレージプロバイダー。 使用可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
+|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|サブジェクト名の形式。 可能な値は、`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId` です。|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|サブジェクトの別名形式。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|状態を取り消します。 可能な値は、`none`、`pending`、`issued`、`failed`、`revoked` です。|
+|certificateprofiledisplayname|String|証明書プロファイルの表示名|
 |deviceDisplayName|String|デバイスの表示名|
 |userDisplayName|String|ユーザーの表示名|
 |certificateExpirationDateTime|DateTimeOffset|証明書の有効期限|
-|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|最後の証明書の発行状態の変更|
-|lastCertificateStateChangeDateTime|DateTimeOffset|最後の証明書の発行状態の変更|
-|certificateIssuer|String|発行者|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|証明書の発行状態の最終変更|
+|lastCertificateStateChangeDateTime|DateTimeOffset|証明書の発行状態の最終変更|
+|certificateissuer|String|会社|
 |certificateThumbprint|String|拇印|
 |certificateSerialNumber|String|シリアル番号|
 |certificateKeyLength|Int32|キーの長さ|
-|certificateEnhancedKeyUsage|String|拡張キー使用法|
+|certificateEnhancedKeyUsage|String|拡張キーの使用|
 |certificateValidityPeriod|Int32|有効期間|
-|certificateSubjectNameFormatString|String|カスタム サブジェクト名の形式のサブジェクト名の形式の文字列|
-|certificateSubjectAlternativeNameFormatString|String|カスタム書式のサブジェクト代替名の書式指定文字列|
+|certificateSubjectNameFormatString|String|カスタムサブジェクト名の形式のサブジェクト名の書式指定文字列|
+|certificateSubjectAlternativeNameFormatString|String|カスタム書式のサブジェクトの別名書式文字列|
 |certificateIssuanceDateTime|DateTimeOffset|発行日|
-|certificateErrorCode|Int32|エラー コード|
+|certificateerrorcode|Int32|エラー コード|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

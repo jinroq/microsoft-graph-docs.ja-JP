@@ -1,31 +1,31 @@
 ---
 title: windows10AppsUpdateRecurrence 列挙型
-description: Windows10 の定期的な予定のアプリケーションに使用できる値を更新します。
-localization_priority: Normal
+description: Windows10 の定期的なアプリ更新に使用できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bc9d6662b0b3198d22c9ffb297765ec88a002e8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 932a374f7ec78eca46862f6f7693072b27ef5109
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172416"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Windows10 の定期的な予定のアプリケーションに使用できる値を更新します。
+Windows10 の定期的なアプリ更新に使用できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|既定値、1 回の発生を指定します。|
-|毎日|1|毎日。|
-|毎週|2|毎週。|
-|毎月|3|月間です。|
+|none|.0|既定値は、1つのオカレンスを指定します。|
+|定期的|1-d|定期的.|
+|あたり|pbm-2|あたり.|
+|ごと|1/3|ごと.|
 
 
 

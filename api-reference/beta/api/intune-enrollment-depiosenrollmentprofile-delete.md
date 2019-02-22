@@ -1,23 +1,23 @@
 ---
-title: DepIOSEnrollmentProfile を削除します。
-description: DepIOSEnrollmentProfile を削除します。
-localization_priority: Normal
+title: depIOSEnrollmentProfile の削除
+description: depIOSEnrollmentProfile を削除します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2da539563975da3c59c57be44c9febacfecd63a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e9ac127f9f58f18175edb216a7d0d929c693e43
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400796"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172570"
 ---
-# <a name="delete-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を削除します。
+# <a name="delete-depiosenrollmentprofile"></a>depIOSEnrollmentProfile の削除
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-の[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)を削除します。
+[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,7 +41,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultI
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

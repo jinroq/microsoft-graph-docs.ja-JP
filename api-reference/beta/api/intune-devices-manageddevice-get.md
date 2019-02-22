@@ -1,21 +1,21 @@
 ---
 title: Get managedDevice
 description: managedDevice オブジェクトのプロパティとリレーションシップを読み取ります。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b8974a5b778e39a3295f80f93bd53a9cbb24cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8b5796686161c0ad532132670ef47bf9487ee6ed
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393761"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172983"
 ---
 # <a name="get-manageddevice"></a>Get managedDevice
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDevi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7560
+Content-Length: 7622
 
 {
   "value": {
@@ -166,7 +166,9 @@ Content-Length: 7560
       "resourceAccess": true,
       "deviceConfiguration": true,
       "compliancePolicy": true,
-      "windowsUpdateForBusiness": true
+      "windowsUpdateForBusiness": true,
+      "endpointProtection": true,
+      "officeApps": true
     },
     "wiFiMacAddress": "Wi Fi Mac Address value",
     "deviceHealthAttestationState": {

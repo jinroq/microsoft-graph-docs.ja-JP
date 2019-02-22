@@ -1,29 +1,29 @@
 ---
 title: androidWiFiSecurityType 列挙型
-description: Android の Wi-fi セキュリティの種類です。
-localization_priority: Normal
+description: Android の wi-fi セキュリティの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6585558f3c9434e930fbec9bf612b591e74dbf3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83a43853a59deb4df16399f0b0b177baa2453a8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172990"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android の Wi-fi セキュリティの種類です。
+Android の wi-fi セキュリティの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|開く|0|(認証なし) を開きます。|
-|wpaEnterprise|1|WPA-エンタープライズと WPA2-エンタープライズ。 エンタープライズ オプションを構成するのには AndroidEnterpriseWifiConfiguration 型を使用する必要があります。|
+|開か|.0|開く (認証なし)。|
+|wpaenterprise|1-d|WPA-エンタープライズ/WPA2-エンタープライズ。 エンタープライズオプションを構成するには、AndroidEnterpriseWifiConfiguration type を使用する必要があります。|
 
 
 

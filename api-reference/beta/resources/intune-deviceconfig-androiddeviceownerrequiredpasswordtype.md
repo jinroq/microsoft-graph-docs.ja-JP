@@ -1,34 +1,34 @@
 ---
-title: androidDeviceOwnerRequiredPasswordType 列挙型
-description: Android デバイスの所有者のポリシーでは、パスワード入力が必要です。
-localization_priority: Normal
+title: androiddeviceownerrequiredpasswordtype 列挙型
+description: Android デバイスの所有者ポリシーに必要なパスワードの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c405cf3a69597994d5539427698baa92cabd3904
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 79d71fbabc4597c87c9cee782904334e2f12d7e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403540"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172591"
 ---
-# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 列挙型
+# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androiddeviceownerrequiredpasswordtype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android デバイスの所有者のポリシーでは、パスワード入力が必要です。
+Android デバイスの所有者ポリシーに必要なパスワードの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスの既定値でことを目的しません。|
-|必須|1|パスワードのセットでは、必要がありますが、型に制限はありません。|
-|numeric|2|At は最低の数値です。|
-|numericComplex|3|At なしまたは繰り返しの順序付けられたシーケンスでは、少なくとも数値です。|
-|アルファベット|4|少なくともアルファベットのパスワードです。|
-|英数字|5|以上の英数字のパスワード|
-|alphanumericWithSymbols|6|少なくとも文字の英数字の記号です。|
+|devicedefault|.0|デバイスの既定値。意図的ではありません。|
+|必須|1-d|パスワードを設定する必要がありますが、種類に制限はありません。|
+|numeric|pbm-2|少なくとも数値。|
+|numericcomplex|1/3|繰り返しまたは順序付けられていない、少なくとも数値。|
+|読み|2/4|少なくとも英字のパスワード。|
+|英数字|5|少なくとも英数字のパスワード|
+|alphanumericWithSymbols|シックス|記号を含む、少なくとも英数字。|
 
 
 

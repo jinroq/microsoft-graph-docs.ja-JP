@@ -1,40 +1,40 @@
 ---
 title: windows10EditionType 列挙型
-description: 10 エディションの Windows の種類です。
-localization_priority: Normal
+description: Windows 10 エディションの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cc19a0e4fcd5f291b143e48393a992d03ce7f75
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 18fba8f5fc663ff00b07a6338badf87e4ab5d875
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422342"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173382"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-10 エディションの Windows の種類です。
+Windows 10 エディションの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|windows10Enterprise|0|10 の Windows エンタープライズ|
-|windows10EnterpriseN|1|Windows 10 EnterpriseN|
-|windows10Education|2|Windows 10 教育|
-|windows10EducationN|3|Windows 10 EducationN|
-|windows10MobileEnterprise|4|10 の Windows モバイル ・ エンタープライズ|
-|windows10HolographicEnterprise|5|Holographic エンタープライズの Windows 10|
-|windows10Professional|6|Windows 10 プロフェッショナル|
+|windows10Enterprise|.0|Windows 10 Enterprise|
+|windows10EnterpriseN|1-d|Windows 10 EnterpriseN|
+|windows10Education|pbm-2|Windows 10 のエデュケーション|
+|windows10EducationN|1/3|Windows 10 EducationN|
+|windows10MobileEnterprise|2/4|Windows 10 Mobile Enterprise|
+|windows10HolographicEnterprise|5|Windows 10 Holographic Enterprise|
+|windows10Professional|シックス|Windows 10 Professional|
 |windows10ProfessionalN|7|Windows 10 ProfessionalN|
-|windows10ProfessionalEducation|8|Windows 10 の専門的な教育|
-|windows10ProfessionalEducationN|9|Windows 10 本格的な EducationN|
-|windows10ProfessionalWorkstation|10|ワークステーションの Windows 10 プロフェッショナル|
-|windows10ProfessionalWorkstationN|11|N のワークステーションの Windows 10 プロフェッショナル|
-|notConfigured|12|NotConfigured|
+|windows10ProfessionalEducation|~|Windows 10 Professional エデュケーション|
+|windows10ProfessionalEducationN|i-9|Windows 10 Professional EducationN|
+|windows10ProfessionalWorkstation|個|Windows 10 Professional for workstation|
+|windows10ProfessionalWorkstationN|#|Windows 10 Professional ワークステーション N|
+|notConfigured|個|NotConfigured|
 
 
 

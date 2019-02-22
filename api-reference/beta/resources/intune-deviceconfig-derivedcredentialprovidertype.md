@@ -1,32 +1,32 @@
 ---
 title: derivedCredentialProviderType 列挙型
-description: 派生の資格情報プロバイダーの種類。
-localization_priority: Normal
+description: 派生した資格情報のプロバイダーの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431673"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175312"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-派生の資格情報プロバイダーの種類。
+派生した資格情報のプロバイダーの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|派生の資格情報プロバイダーが構成されているがありません。|
-|entrustDataCard|1|DataCard を委託します。|
-|purebred|2|Purebred の国防情報システム局です。|
-|xTec|3|Xtec - AuthentX です。|
-|任命|4|任命します。|
+|notConfigured|.0|派生した資格情報プロバイダーが構成されていません。|
+|entrustdatacard|1-d|Entrust|
+|purebred|pbm-2|Purebred 情報システムエージェンシー。|
+|xTec|1/3|Xtec-AuthentX|
+|intercede|2/4|Intercede。|
 
 
 

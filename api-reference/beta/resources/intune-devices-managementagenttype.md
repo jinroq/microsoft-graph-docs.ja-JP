@@ -1,39 +1,39 @@
 ---
-title: managementAgentType 列挙型
-description: 管理エージェントの種類です。
-localization_priority: Normal
+title: managementagenttype 列挙型
+description: 管理エージェントの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c42d4ea4a5114bc42966891e4cd60ea87ca303e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401006"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172542"
 ---
-# <a name="managementagenttype-enum-type"></a>managementAgentType 列挙型
+# <a name="managementagenttype-enum-type"></a>managementagenttype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理エージェントの種類です。
+管理エージェントの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ea|1|デバイスは、Exchange サーバーによって管理されます。|
-|mdm|2|Intune MDM. で、デバイスを管理します。|
-|easMdm|3|Intune MDM. と Exchange サーバーの両方がデバイス管理します。|
-|intuneClient|4|Intune クライアントが管理されています。|
-|easIntuneClient|5|デバイスは、EA と Intune クライアント デュアル管理です。|
-|configurationManagerClient|8|デバイスは、構成マネージャーによって管理されます。|
-|configurationManagerClientMdm|10|デバイスの管理は、構成マネージャーと MDM.|
-|configurationManagerClientMdmEas|11|デバイスは、MDM および Ea は、構成マネージャーによって管理されます。|
-|不明|16|不明な管理エージェントの種類です。|
-|jamf|32|デバイス属性は、Jamf からフェッチされます。|
-|googleCloudDevicePolicyController|64|デバイスは、Google の CloudDPC によって管理されます。|
-|microsoft365ManagedMdm|258|Intune によって Microsoft 365 では、このデバイスが管理されます。|
+|eas|1-d|デバイスは、Exchange server によって管理されています。|
+|mdm.exe|pbm-2|デバイスは Intune MDM によって管理されます。|
+|easmdm|1/3|デバイスは、Exchange server と Intune MDM の両方によって管理されます。|
+|intアンの場合|2/4|Intune クライアント管理。|
+|easintアンの場合|5|デバイスは EAS で、Intune クライアントはデュアル管理されています。|
+|configurationmanagerclient|~|デバイスは構成マネージャーによって管理されています。|
+|configurationmanagerclientmdm|個|デバイスは、構成マネージャーおよび MDM によって管理されます。|
+|configurationmanagerclientmdmeas|#|デバイスは、構成マネージャー、MDM、Eas によって管理されます。|
+|不明|16|管理エージェントの種類が不明です。|
+|jamf|32|デバイス属性は、Jamf から取得されます。|
+|googleCloudDevicePolicyController|64|デバイスは Google の CloudDPC によって管理されています。|
+|microsoft365ManagedMdm|258|このデバイスは、Microsoft 365 によって Intune によって管理されます。|
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: windowsStartMenuModeType 列挙型
-description: '[スタート] メニューの表示モードの種類です。'
-localization_priority: Normal
+title: windowsstartmenumodetype 列挙型
+description: '[スタート] メニューの表示モードの種類。'
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76b10ec7dc42ee2f7fa799a4424b2f39dd4b63a1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b41cca60d4da983ccf1e92370db2454c4e0a483
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170967"
 ---
-# <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 列挙型
+# <a name="windowsstartmenumodetype-enum-type"></a>windowsstartmenumodetype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[スタート] メニューの表示モードの種類です。
+[スタート] メニューの表示モードの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザーが定義します。 既定値です。|
-|全画面表示|1|画面全体|
-|nonFullScreen|2|非フル画面です。|
+|自分のもの|.0|ユーザー定義。 既定値です。|
+|全|1-d|画面全体|
+|非全画面|pbm-2|非全画面表示|
 
 
 

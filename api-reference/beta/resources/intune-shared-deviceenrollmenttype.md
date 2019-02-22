@@ -1,37 +1,37 @@
 ---
 title: deviceEnrollmentType 列挙型
-description: 管理するモバイル デバイスを追加するための方法です。
-localization_priority: Normal
+description: モバイルデバイスを管理に追加する方法には、次のようなものがあります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aed1f40604a765b1a434bca35dbb356e65e8ccd5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b186110c4f69ea7b6f4d12c9fb2a333927f81385
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399291"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173655"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理するモバイル デバイスを追加するための方法です。
+モバイルデバイスを管理に追加する方法には、次のようなものがあります。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|登録型の既定値は収集されませんでした。|
-|userEnrollment|1|BYOD チャネルを通じてユーザー駆動の登録します。|
-|deviceEnrollmentManager|2|デバイス登録の管理者アカウントとユーザー登録します。|
-|appleBulkWithUser|3|アップル一括登録はユーザーの課題です。 (DEP、Apple の構成ウィザード)|
-|appleBulkWithoutUser|4|ユーザーの課題に Apple の一括登録します。 (DEP では、Apple の構成ウィザードは、モバイルの設定)|
-|windowsAzureADJoin|5|Windows Azure AD を 10 に参加します。|
-|windowsBulkUserless|6|証明書で ICD を Windows 10 一括登録します。|
-|windowsAutoEnrollment|7|10 の Windows の自動登録します。 (勤務先のアカウントを追加)|
-|windowsBulkAzureDomainJoin|8|10 の windows Azure AD に参加を一括します。|
-|windowsCoManagement|9|Windows 10 共同管理自動操縦装置、またはグループ ポリシーによって発生します。|
+|不明|.0|既定値。登録の種類は収集されませんでした。|
+|userenrollment|1-d|byod channel 経由のユーザー主導型の登録。|
+|deviceEnrollmentManager|pbm-2|デバイス登録マネージャーアカウントを使用したユーザー登録。|
+|appleBulkWithUser|1/3|ユーザーチャレンジを使用した Apple 一括登録。 (DEP、Apple Configurator)|
+|appleBulkWithoutUser|2/4|ユーザーチャレンジなしの Apple 一括登録。 (DEP、Apple Configurator、モバイル構成)|
+|windowsAzureADJoin|5|Windows 10 Azure AD Join。|
+|windowsbulkuserless|シックス|Windows 10 証明書を使用した ICD による一括登録。|
+|windowsautoenrollment 登録|7|Windows 10 の自動登録。 (作業アカウントの追加)|
+|windowsbulkazuredomainjoin|~|Windows 10 一括 Azure AD Join。|
+|windowsCoManagement|i-9|Windows 10 の共同管理は、自動操縦またはグループポリシーによって開始されます。|
 
 
 

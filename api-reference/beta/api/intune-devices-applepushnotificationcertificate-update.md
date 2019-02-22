@@ -1,21 +1,21 @@
 ---
 title: applePushNotificationCertificate の更新
 description: applePushNotificationCertificate オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e14e4056f0428548e0b910c8647dc4442efe4abd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ee760b38c8f684c0ca7f0c8bcca0c98d8a87d931
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172045"
 ---
 # <a name="update-applepushnotificationcertificate"></a>applePushNotificationCertificate の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトのプロパティを更新します。
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトの JSON 表記を指定します。
@@ -55,8 +55,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
 |expirationDateTime|DateTimeOffset|Apple プッシュ通知証明書の有効期限。|
-|certificateUploadStatus|String|証明書のアップロードの状態です。|
-|certificateUploadFailureReason|String|理由の証明書のアップロードに失敗しました。|
+|certificateuploadstatus|String|証明書のアップロード状態。|
+|certificateUploadFailureReason|String|証明書のアップロードが失敗した理由。|
 |証明書|String|まだ文書化されていません|
 
 

@@ -1,28 +1,28 @@
 ---
-title: unaryManagementConditionExpressionOperatorType 列挙型
-description: 管理条件式の単項演算子がサポートされています。
-localization_priority: Normal
+title: アン arymanagementconditionexpression 演算子 type 列挙型
+description: 単項管理条件式でサポートされている演算子
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93f610e8ebea48402e32b6b88a944e5fe493821c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a7cbf2e04fd7247cc061ef5ade114571d5e92dad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399949"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173319"
 ---
-# <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType 列挙型
+# <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>アン arymanagementconditionexpression 演算子 type 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理条件式の単項演算子がサポートされています。
+単項管理条件式でサポートされている演算子
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|not|0|オペランドの評価を無効にします。|
+|not|.0|オペランドの評価を否定します。|
 
 
 

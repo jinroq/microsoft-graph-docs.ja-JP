@@ -1,23 +1,23 @@
 ---
-title: ActiveDirectoryWindowsAutopilotDeploymentProfile を取得します。
-description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティと関係を参照してください。
-localization_priority: Normal
+title: activeDirectoryWindowsAutopilotDeploymentProfile を取得する
+description: activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad44e8b6c9b2fd8d2be4a821404c2333dde09f3d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0e64ca2eb0bcee1fe064bc9a80a58ddbb1631c1d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408356"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170869"
 ---
-# <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を取得します。
+# <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>activeDirectoryWindowsAutopilotDeploymentProfile を取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ActiveDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトのプロパティと関係を参照してください。
+[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -46,13 +46,13 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1291
+Content-Length: 1322
 
 {
   "value": {
@@ -98,7 +98,8 @@ Content-Length: 1291
       "allowDeviceUseOnInstallFailure": true
     },
     "extractHardwareHash": true,
-    "deviceNameTemplate": "Device Name Template value"
+    "deviceNameTemplate": "Device Name Template value",
+    "enableWhiteGlove": true
   }
 }
 ```

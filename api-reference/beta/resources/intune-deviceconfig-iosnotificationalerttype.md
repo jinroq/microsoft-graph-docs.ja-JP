@@ -1,31 +1,31 @@
 ---
-title: iosNotificationAlertType 列挙型
-description: 通知の設定の警告の種類。
-localization_priority: Normal
+title: iosnotificationalerttype 列挙型
+description: 通知設定警告の種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db289e15f82750d484fceed4261cfb190e826bea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5af4a4e4718734220321a2867d2e6a6be36f254
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172437"
 ---
-# <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 列挙型
+# <a name="iosnotificationalerttype-enum-type"></a>iosnotificationalerttype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-通知の設定の警告の種類。
+通知設定警告の種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスの既定値でことを目的しません。|
-|バナー|1|バナーです。|
-|modal|2|モーダルです。|
-|none|3|なし。|
+|devicedefault|.0|デバイスの既定値。意図的ではありません。|
+|尺|1-d|尺.|
+|modal|pbm-2|ポップアップ.|
+|none|1/3|なし。|
 
 
 

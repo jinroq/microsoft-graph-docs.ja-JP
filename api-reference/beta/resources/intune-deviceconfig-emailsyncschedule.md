@@ -1,34 +1,34 @@
 ---
-title: emailSyncSchedule 列挙型
-description: 電子メールの同期スケジュールの可能な値です。
-localization_priority: Normal
+title: emailsyncschedule 列挙型
+description: 電子メール同期スケジュールに指定できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8285b9a34e208b86b7c53c38e6aa015fd8c37560
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174847"
 ---
-# <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 列挙型
+# <a name="emailsyncschedule-enum-type"></a>emailsyncschedule 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-電子メールの同期スケジュールの可能な値です。
+電子メール同期スケジュールに指定できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|asMessagesArrive|1|メッセージの受信時に同期します。|
-|手動|2|手動で同期します。|
-|fifteenMinutes|3|15 分ごとの同期します。|
-|thirtyMinutes|4|30 分ごとの同期します。|
-|sixtyMinutes|5|同期は 60 分ごと。|
-|basedOnMyUsage|6|私の使用率に基づく同期。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|asメッセージの受信|1-d|メッセージが到着したときに同期します。|
+|手動|pbm-2|手動で同期します。|
+|fifteenMinutes|1/3|15分ごとに同期します。|
+|thirtyMinutes|2/4|30分ごとに同期します。|
+|sixtyMinutes|5|60分ごとに同期します。|
+|basedOnMyUsage|シックス|自分の使用状況に基づいて同期します。|
 
 
 

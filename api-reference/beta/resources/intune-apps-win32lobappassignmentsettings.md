@@ -1,23 +1,23 @@
 ---
 title: win32LobAppAssignmentSettings リソースの種類
-description: Win32 の LOB のモバイル アプリケーションをグループに割り当てるために使用するプロパティが含まれています。
-localization_priority: Normal
+description: グループへの Win32 LOB モバイルアプリの割り当てに使用されるプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215b5c7086c2336f80bc0b812a108fbe2e2c1740
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e98688a10c126ee6597f8d244e4a605a2addeaee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430375"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172178"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Win32 の LOB のモバイル アプリケーションをグループに割り当てるために使用するプロパティが含まれています。
+グループへの Win32 LOB モバイルアプリの割り当てに使用されるプロパティが含まれています。
 
 
 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md) からの継承
@@ -25,7 +25,7 @@ Win32 の LOB のモバイル アプリケーションをグループに割り�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|通知|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|通知の状態このアプリケーションの割り当て。 可能な値は、`showAll`、`showReboot`、`hideAll` です。|
+|受け取る|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|このアプリの割り当ての通知状態。 可能な値は、`showAll`、`showReboot`、`hideAll` です。|
 
 ## <a name="relationships"></a>関係
 なし
