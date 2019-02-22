@@ -1,23 +1,23 @@
 ---
 title: updatePriorities アクション
-description: ポリシーの優先順位を更新します。
+description: ポリシーの優先度を更新します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: a78ec2801522354709643dfdd88da0e6dd9756c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412976"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154993"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities アクション
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ポリシーの優先順位を更新します。
+ポリシーの優先度を更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,7 +41,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
@@ -50,8 +50,8 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|String コレクション|Office の構成のポリシー id のリスト|
-|officeConfigurationPriorities|Int32 型のコレクション|Office 設定の優先順位の一覧|
+|officeConfigurationPolicyIds|String collection|office 構成ポリシー id の一覧|
+|officeConfigurationPriorities|Int32 コレクション|office の構成の優先度の一覧|
 
 
 

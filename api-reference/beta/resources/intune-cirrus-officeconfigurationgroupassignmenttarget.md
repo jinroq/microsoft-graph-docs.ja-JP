@@ -1,30 +1,30 @@
 ---
 title: officeConfigurationGroupAssignmentTarget リソースの種類
-description: AAD Office クライアントの構成は、ターゲットの割り当てをグループ化します。
+description: Office クライアント構成 AAD グループの割り当て先。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 411af117999498050288405874bd6b5baff5b6b5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a3451d4bddec96c1e21cd605b05cb34d96372ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422748"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153551"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-AAD Office クライアントの構成は、ターゲットの割り当てをグループ化します。
+Office クライアント構成 AAD グループの割り当て先。
 
-[OfficeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)から継承します。
+[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|groupId|String|AAD グループの Id は、対象としてデバイスを構成します。|
+|groupId|String|デバイス構成を対象としている AAD グループの Id。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

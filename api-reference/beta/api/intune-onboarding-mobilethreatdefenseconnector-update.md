@@ -1,21 +1,21 @@
 ---
 title: mobileThreatDefenseConnector の更新
 description: mobileThreatDefenseConnector オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8ed44a29f3e56f602689b58e3f58071998cde21
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a41ff7591642c9188aacd813438b9476ffcb6e40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411212"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147692"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) オブジェクトのプロパティを更新します。
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) オブジェクトの JSON 表記を指定します。
@@ -52,18 +52,18 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータの同期パートナーの状態です。 可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
-|androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
-|iosEnabled|ブール型|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
-|windowsEnabled|Boolean|ウィンドウを取得または設定するコンプライアンスの評価中にデータの同期パートナーからのデータを使用する必要があるかどうか|
-|macEnabled|Boolean|For Mac を取得または設定するコンプライアンスの評価中にデータの同期パートナーからのデータを使用する必要があるかどうか|
-|androidDeviceBlockedOnMissingPartnerData|ブール型|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
-|iosDeviceBlockedOnMissingPartnerData|ブール型|IOS において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
-|windowsDeviceBlockedOnMissingPartnerData|Boolean|Windows Intune は、準拠デバイスをマークする前にデータの同期パートナーからデータを受信する必要があるかどうかを設定します。|
-|macDeviceBlockedOnMissingPartnerData|Boolean|For Mac を取得または設定する Intune 準拠デバイスをマークする前にデータの同期パートナーからデータを受信する必要があるかどうか|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態。 使用可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
+|androidEnabled|ブール値|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
+|iosEnabled|Boolean|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
+|windowsenabled|ブール値|Windows の場合は、コンプライアンスの評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します。|
+|macenabled|ブール値|Mac の場合は、コンプライアンス評価中にデータ同期パートナーからのデータを使用する必要があるかどうかを取得または設定します。|
+|androidDeviceBlockedOnMissingPartnerData|ブール値|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|iosDeviceBlockedOnMissingPartnerData|ブール値|IOS において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|windowsDeviceBlockedOnMissingPartnerData|ブール値|Windows の場合は、デバイスに準拠したマークを付ける前に、Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します。|
+|macDeviceBlockedOnMissingPartnerData|ブール値|Mac の場合、デバイスに準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを取得または設定します。|
 |partnerUnsupportedOsVersionBlocked|ブール型|データ同期パートナーの最小バージョンの要件を満たさない、有効なプラットフォーム上のデバイスをブロックするかどうかを取得または設定します|
 |partnerUnresponsivenessThresholdInDays|Int32|このパートナー統合に関する、テナントごとの無応答への許容日数の取得または設定を行います|
-|allowPartnerToCollectIOSApplicationMetadata|Boolean|IOS デバイスでは、データの同期パートナー Intune からインストールされているアプリケーションについてのメタデータの収集もあるかどうかを構成するのには管理者では、します。|
+|allowPartnerToCollectIOSApplicationMetadata|ブール値|IOS デバイスでは、管理者が、インストールされたアプリケーションに関するメタデータを Intune からも収集できるかどうかを管理者が構成できるようにします。|
 
 
 

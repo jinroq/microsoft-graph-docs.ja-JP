@@ -1,29 +1,29 @@
 ---
 title: wiFiAuthenticationMethod 列挙型
-description: Wi-fi の認証方法です。
-localization_priority: Normal
+description: wi-fi 認証方法。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af03f9136718d644c427e4261f74099df0be168c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 530265fc23a3ae94470779fb2b830aa6c677fb18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146719"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Wi-fi の認証方法です。
+wi-fi 認証方法。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|証明書|0|Id の証明書を認証に使用します。|
-|usernameAndPassword|1|認証用のユーザー名とパスワードを使用します。|
+|証明書|.0|認証には、id 証明書を使用します。|
+|usernameAndPassword|1-d|認証にユーザー名とパスワードを使用します。|
 
 
 

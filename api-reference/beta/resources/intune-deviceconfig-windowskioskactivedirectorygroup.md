@@ -1,31 +1,31 @@
 ---
 title: windowsKioskActiveDirectoryGroup リソースの種類
-description: キオスクの構成の Azure ディレクトリ グループを識別するに使用するクラス
-localization_priority: Normal
+description: キオスク構成の Azure ディレクトリグループを識別するために使用されるクラス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88b151b856809247cfa6e5e211cc45c6f33c4c53
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9f3345462583ab24850449d4a6178df7d5e3688
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415713"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147076"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-キオスクの構成の Azure ディレクトリ グループを識別するに使用するクラス
+キオスク構成の Azure ディレクトリグループを識別するために使用されるクラス
 
 
-[WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
+[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|グループ名|String|この構成にキオスクがロックアウトされている AD グループの名前|
+|groupName|String|このキオスク構成にロックされる AD グループの名前|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

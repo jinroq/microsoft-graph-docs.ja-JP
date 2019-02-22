@@ -1,21 +1,21 @@
 ---
 title: telecomExpenseManagementPartner リソースの種類
 description: telecomExpenseManagementPartner リソースは、特定の TEM サービスのメタデータおよび状態を表します。 貴社がパートナーと協力関係を結ぶと、パートナーが TEM 機能をオンまたはオフに切り替える機能を有効または無効にできます。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e1d148366a9ff67b643bad37e6aef5ed67653d1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dac5531657a63b5f848ecfd9151d9964ccada598
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148140"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 telecomExpenseManagementPartner リソースは、特定の TEM サービスのメタデータおよび状態を表します。 貴社がパートナーと協力関係を結ぶと、パートナーが TEM 機能をオンまたはオフに切り替える機能を有効または無効にできます。
 
@@ -31,10 +31,10 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|TEM パートナーの一意識別子。|
+|id|文字列|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
 |url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
+|appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
 |enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 

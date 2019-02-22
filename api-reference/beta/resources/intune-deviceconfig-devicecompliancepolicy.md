@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicy リソース タイプ
 description: 'これは、コンプライアンス ポリシーの基本クラスです。 コンプライアンス ポリシーはプラットフォーム固有のものであり、個々のプラットフォームごとのコンプライアンス ポリシーはここから継承されます。 '
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a02fc8ab612011edf1ff6f2d1e281d8aeb8f8e6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 04138e7488925350630f7a36d743292408441bee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407572"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146740"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 これは、コンプライアンス ポリシーの基本クラスです。 コンプライアンス ポリシーはプラットフォーム固有のものであり、個々のプラットフォームごとのコンプライアンス ポリシーはここから継承されます。 
 
@@ -31,8 +31,8 @@ ms.locfileid: "29407572"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。|
-|id|String|エンティティのキー。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|id|文字列|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |説明|String|デバイス構成について管理者が提供した説明です。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|

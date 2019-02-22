@@ -1,21 +1,21 @@
 ---
 title: mobileApp リソースの種類
 description: Intune モバイル アプリの基本プロパティを含む抽象クラスです。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e1e68ede0e4beef689d753aca9af8292812d64c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 94481902b7038ab9de9c845c938aac9bc9d409b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408335"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154923"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune モバイル アプリの基本プロパティを含む抽象クラスです。
 
@@ -31,10 +31,10 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
-|説明|String|アプリの説明。|
-|publisher|String|アプリの発行元。|
+|説明|文字列|アプリの説明。|
+|publisher|文字列型 (String)|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
@@ -44,10 +44,10 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |owner|String|アプリの所有者。|
 |developer|String|アプリの開発者。|
 |notes|String|アプリ用のメモ。|
-|uploadState|Int32|アップロードの状態です。|
+|uploadState|Int32|アップロード状態。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。|
+|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -55,8 +55,8 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
+|userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -1,21 +1,21 @@
 ---
 title: macOSCompliancePolicy リソースの種類
 description: このクラスには、Mac OS のコンプライアンス設定が含まれています。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8aca24951c55800d2ee098800b3539cc87cba65
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 92999283588e2733a741ee91f81cb692c0c10808
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424043"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153796"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このクラスには、Mac OS のコンプライアンス設定が含まれています。
 
@@ -34,33 +34,33 @@ ms.locfileid: "29424043"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
-|passwordBlockSimple|Boolean|単純なパスワードをブロックするかどうかを示します。|
+|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
+|passwordBlockSimple|ブール値|単純なパスワードをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 14 までです|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数。 有効な値は 1 から 24 までです|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|osMinimumVersion|String|MacOS の最小バージョンです。|
-|osMaximumVersion|String|最大の MacOS のバージョンです。|
-|osMinimumBuildVersion|String|最小の MacOS では、バージョンをビルドします。|
-|osMaximumBuildVersion|String|最大の MacOS では、バージョンをビルドします。|
+|passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|osMinimumVersion|String|最小 os バージョン。|
+|osMaximumVersion|String|最大 os バージョン。|
+|osminimumbuildversion|String|最小 os ビルドバージョン。|
+|osmaximumbuildversion|String|最大 os ビルドバージョン。|
 |systemIntegrityProtectionEnabled|Boolean|デバイスでシステム整合性の保護が有効になっている必要があります。|
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
-|storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|システムは、macOS のデバイスでどのダウンロード場所のアプリケーションから実行できるかを決定するプライバシー設定。 可能な値は、`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere` です。|
-|firewallEnabled|Boolean|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|Boolean|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|Boolean|「有効にするステルス モード」に対応|
+|storageRequireEncryption|ブール値|Mac OS デバイスでの暗号化を要求します。|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|macOS デバイスからどのダウンロード場所のアプリを実行できるかを決定する、システムおよびプライバシー設定。 使用可能な値は、`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere` です。|
+|firewallEnabled|ブール値|ファイアウォールを有効にするかどうかを指定します。|
+|firewallBlockAllIncoming|ブール値|[着信接続をすべてブロックする] オプションに対応しています。|
+|firewallEnableStealthMode|ブール値|[ステルスモードを有効にする] に相当します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

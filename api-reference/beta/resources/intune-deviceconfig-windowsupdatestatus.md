@@ -1,31 +1,31 @@
 ---
 title: windowsUpdateStatus 列挙型
-description: ビジネス構成のデバイスの状態の windows を更新します。
-localization_priority: Normal
+description: ビジネス構成デバイスの状態に関する Windows update
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74493359eeccdbc6df1c351ecec771b5990649b6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed7549fb77cf5a9f7c3014192d5524019323405f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431654"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154160"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ビジネス構成のデバイスの状態の windows を更新します。
+ビジネス構成デバイスの状態に関する Windows update
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|古く|0|保留中の更新プログラム、更新プログラムの再起動や障害が発生した更新保留中の不要はありません。|
-|pendingInstallation|1|保留中の承認されていない更新プログラムを含むインストールの更新プログラムがあります。 再起動の保留中の更新はありません、ない障害が発生した更新プログラムがあります。|
-|pendingReboot|2|再起動を必要とする更新プログラムがあります。 更新が失敗したことがありません。|
-|失敗しました。|3|デバイスのインストールに失敗した更新プログラムがあります。|
+|upToDate|.0|保留中の更新はありません。保留中の再起動更新プログラムはありません。更新は失敗しています。|
+|pendinginstallation|1-d|承認されていない更新プログラムが含まれている保留中の更新プログラムがあります。 保留中の再起動更新はありません。更新は失敗しません。|
+|pendingreboot|pbm-2|再起動が必要な更新プログラムがあります。 失敗した更新はありません。|
+|フェール|1/3|デバイスにインストールできなかった更新プログラムがあります。|
 
 
 

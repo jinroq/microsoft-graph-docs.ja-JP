@@ -1,15 +1,15 @@
 ---
-title: Intune における管理用にデバイスを登録する
-description: " (BYOD) の登録では、個人の電話、タブレット、または Pc を登録することができます。 会社所有のデバイス (COD) の登録により、リモートワイプ、共有デバイス、デバイスのユーザー アフィニティなどの管理シナリオが可能になります。"
+title: Intune を使用した管理対象デバイス-Microsoft Graph API
+description: テナント組織用にデバイスをオンボード (構成および初期化) するために使用される Intune エンドポイント (REST) の Microsoft Graph API の一覧を示します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 895977194822918fc2ac61ed13e0aae938a25166
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2acd4310c07fd1532a1a16bdc419d7bad23bc973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923748"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147832"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Intune における管理用にデバイスを登録する
 
@@ -21,39 +21,39 @@ ms.locfileid: "27923748"
 
 次の Graph リソースを使用して、Intune での登録を管理できます。
 
-- [証明書のコネクタの設定](intune-onboarding-certificateconnectorsetting.md)
-- [デバイスとアプリケーションの管理データ](intune-onboarding-deviceandappmanagementdata.md)
+- [証明書コネクタの設定](intune-onboarding-certificateconnectorsetting.md)
+- [デバイスおよびアプリの管理データ](intune-onboarding-deviceandappmanagementdata.md)
 - [デバイス登録の構成](intune-onboarding-deviceenrollmentconfiguration.md)
 - [デバイス登録の制限の構成](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [デバイス登録プラットフォームの制限](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [デバイス登録プラットフォームの制限の構成](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [デバイス登録 Windows Hello for Business の構成](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
-- [デバイス管理 exchange のアクセス レベル](intune-onboarding-devicemanagementexchangeaccesslevel.md)
-- [デバイス管理 exchange のアクセス ルール](intune-onboarding-devicemanagementexchangeaccessrule.md)
-- [デバイス管理 exchange アクセス規則の種類](intune-onboarding-devicemanagementexchangeaccessruletype.md)
+- [デバイスの管理 Exchange アクセス レベル](intune-onboarding-devicemanagementexchangeaccesslevel.md)
+- [デバイスの管理 Exchange アクセス ルール](intune-onboarding-devicemanagementexchangeaccessrule.md)
+- [デバイスの管理 Exchange アクセス ルールのタイプ](intune-onboarding-devicemanagementexchangeaccessruletype.md)
 - [デバイスの管理 Exchange コネクタ](intune-onboarding-devicemanagementexchangeconnector.md)
-- [デバイス管理 exchange コネクタの状態](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
-- [デバイス管理 exchange コネクタの同期の種類](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
-- [デバイス管理 exchange コネクタの種類](intune-onboarding-devicemanagementexchangeconnectortype.md)
-- [デバイス管理 exchange デバイス クラス](intune-onboarding-devicemanagementexchangedeviceclass.md)
-- [デバイス管理の交換設置のポリシー](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+- [デバイスの管理 Exchange コネクタの状態](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
+- [デバイスの管理 Exchange コネクタの同期タイプ](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
+- [デバイスの管理 Exchange コネクタのタイプ](intune-onboarding-devicemanagementexchangeconnectortype.md)
+- [デバイスの管理 Exchange デバイス クラス](intune-onboarding-devicemanagementexchangedeviceclass.md)
+- [デバイスの管理 Exchange オンプレミスのポリシー](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [デバイス管理パートナー](intune-onboarding-devicemanagementpartner.md)
-- [デバイス管理のパートナー アプリケーションの種類](intune-onboarding-devicemanagementpartnerapptype.md)
-- [デバイス管理のパートナーのテナントの状態](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [デバイス管理パートナー アプリの種類](intune-onboarding-devicemanagementpartnerapptype.md)
+- [デバイス管理パートナー テナントの状態](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [登録構成の割り当て](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune ブランド](intune-onboarding-intunebrand.md)
 - [MDM 機関](intune-onboarding-mdmauthority.md)
-- [ビジネス ポータルの選択オプションのマイクロソフト ストア](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
+- [ビジネス向け Microsoft Store のポータル選択オプション](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
 - [モバイルの脅威保護コネクタ](intune-onboarding-mobilethreatdefenseconnector.md)
-- [モバイル脅威パートナー テナントの状態](intune-onboarding-mobilethreatpartnertenantstate.md)
+- [モバイル脅威パートナーのテナント状態](intune-onboarding-mobilethreatpartnertenantstate.md)
 - [オンプレミスの条件付きアクセス設定](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [組織](intune-onboarding-organization.md)
-- [側のロード キー](intune-onboarding-sideloadingkey.md)
+- [サイドローディング キー](intune-onboarding-sideloadingkey.md)
 - [VPP トークン](intune-onboarding-vpptoken.md)
-- [VPP トークン処理結果](intune-onboarding-vpptokenactionresult.md)
-- [VPP トークン ライセンスの概要](intune-onboarding-vpptokenlicensesummary.md)
-- [VPP トークンの取り消しライセンスのアクションの結果](intune-onboarding-vpptokenrevokelicensesactionresult.md)
+- [VPP トークンのアクションの結果](intune-onboarding-vpptokenactionresult.md)
+- [VPP トークンのライセンスの概要](intune-onboarding-vpptokenlicensesummary.md)
+- [VPP トークンの失効ライセンスのアクションの結果](intune-onboarding-vpptokenrevokelicensesactionresult.md)
 - [VPP トークンの状態](intune-onboarding-vpptokenstate.md)
-- [VPP トークンの同期の状態](intune-onboarding-vpptokensyncstatus.md)
-- [Windows 10 登録の完了] ページの構成](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
-- [Windows Hello ビジネス暗証番号 (pin) を使用するため](intune-onboarding-windowshelloforbusinesspinusage.md)
+- [VPP トークンの同期状態](intune-onboarding-vpptokensyncstatus.md)
+- [Windows 10 登録完了ページの構成](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+- [ビジネス向け Windows Hello 暗証番号 (PIN) の使用](intune-onboarding-windowshelloforbusinesspinusage.md)

@@ -1,30 +1,30 @@
 ---
-title: managedAppDataStorageLocation 列挙型
-description: マネージ アプリケーションによってデータが保存される可能性があります、記憶域の場所
-localization_priority: Normal
+title: managedappdatastoragelocation 列挙型
+description: 管理対象アプリがデータを保存できる可能性があるストレージの場所
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acb9c820670cdf0781de0be576152f25c2a131db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cd1031027f1a2d7c21acff4781484be79f7183fb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395777"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148550"
 ---
-# <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 列挙型
+# <a name="managedappdatastoragelocation-enum-type"></a>managedappdatastoragelocation 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-マネージ アプリケーションによってデータが保存される可能性があります、記憶域の場所
+管理対象アプリがデータを保存できる可能性があるストレージの場所
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|oneDriveForBusiness|1|ビジネスの OneDrive|
-|sharePoint|2|SharePoint|
-|localStorage|6|デバイス上のローカル ストレージ|
+|onedrive forbusiness|1-d|OneDrive for business|
+|sharePoint|pbm-2|SharePoint|
+|localStorage|シックス|デバイス上のローカルストレージ|
 
 
 

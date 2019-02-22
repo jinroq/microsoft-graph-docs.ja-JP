@@ -1,31 +1,31 @@
 ---
-title: managementConditionExpressionString リソースの種類
-description: 管理条件の式の文字列は、管理条件式の文字列表現です。
-localization_priority: Normal
+title: managementcondition式 string リソースの種類
+description: 管理条件式文字列は、管理条件式の文字列表現です。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b8abc3492690afe6709070decbfe050356fd614
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc4552ab6cc97676ced32ae7e7f5649262c4f4f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151010"
 ---
-# <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString リソースの種類
+# <a name="managementconditionexpressionstring-resource-type"></a>managementcondition式 string リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理条件の式の文字列は、管理条件式の文字列表現です。
+管理条件式文字列は、管理条件式の文字列表現です。
 
 
-[ManagementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)から継承します。
+[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|value|文字列|管理条件ステートメント式の文字列値。|
+|value|文字列|管理条件ステートメントの式文字列値。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

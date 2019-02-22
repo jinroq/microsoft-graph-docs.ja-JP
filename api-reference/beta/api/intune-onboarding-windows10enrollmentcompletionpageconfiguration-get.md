@@ -1,23 +1,23 @@
 ---
-title: Windows10EnrollmentCompletionPageConfiguration を取得します。
-description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティと関係を参照してください。
-localization_priority: Normal
+title: windows10EnrollmentCompletionPageConfiguration を取得する
+description: windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 840ddecdc1592113f84031acd30ede0216c05f2a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5979d7d446a79a8abdc4e7a2eae08968e1dafc3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147146"
 ---
-# <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を取得します。
+# <a name="get-windows10enrollmentcompletionpageconfiguration"></a>windows10EnrollmentCompletionPageConfiguration を取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトのプロパティと関係を参照してください。
+[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

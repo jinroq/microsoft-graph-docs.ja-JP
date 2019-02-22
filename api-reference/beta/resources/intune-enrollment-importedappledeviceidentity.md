@@ -1,32 +1,32 @@
 ---
 title: importedAppleDeviceIdentity リソースの種類
-description: ImportedAppleDeviceIdentity リソースでは、アップル デバイスのインポートされたデバイス id を表します。
-localization_priority: Normal
+description: importedAppleDeviceIdentity リソースは、Apple デバイスのインポートされたデバイス id を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae0f940614ae8b872891579957e8f86c92342da8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5db17bc6a87ab74102126cab3061da5ffbab6fe5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151150"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ImportedAppleDeviceIdentity リソースでは、アップル デバイスのインポートされたデバイス id を表します。
+importedAppleDeviceIdentity リソースは、Apple デバイスのインポートされたデバイス id を表します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)コレクション|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[ImportedAppleDeviceIdentity を取得します。](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティと関係を参照してください。|
-|[ImportedAppleDeviceIdentity を作成します。](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|新しい[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトを作成します。|
-|[ImportedAppleDeviceIdentity を削除します。](../api/intune-enrollment-importedappledeviceidentity-delete.md)|なし|の[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)を削除します。|
-|[ImportedAppleDeviceIdentity を更新します。](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティを更新します。|
+|[リスト importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)コレクション|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[importedAppleDeviceIdentity を取得する](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[importedAppleDeviceIdentity を作成する](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|新しい[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトを作成します。|
+|[importedAppleDeviceIdentity の削除](../api/intune-enrollment-importedappledeviceidentity-delete.md)|なし|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)を削除します。|
+|[importedAppleDeviceIdentity の更新](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)オブジェクトのプロパティを更新します。|
 |[importAppleDeviceIdentityList アクション](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
@@ -34,15 +34,15 @@ ImportedAppleDeviceIdentity リソースでは、アップル デバイスのイ
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|
-|requestedEnrollmentProfileId|String|登録プロファイル Id の管理者が、次の登録時にデバイスに適用しようとしています。|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録のプロファイルは、デバイスに割り当てられました。|
-|isSupervised|Boolean|Apple デバイスが監視された状態を示します。 詳細についてでです。https://support.apple.com/en-us/HT202837|
-|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple のデバイス検出のソースです。 可能な値は、`unknown`、`adminImport`、`deviceEnrollmentProgram` です。|
-|createdDateTime|DateTimeOffset|デバイスの作成日時|
-|lastContactedDateTime|DateTimeOffset|最終アクセス日時、デバイスの|
-|説明|String|デバイスの説明|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォームです。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|requestedEnrollmentProfileId|String|登録プロファイル Id 管理者が次回の登録時にデバイスに適用する予定|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録プロファイルがデバイスに割り当てられている|
+|isSupervised|Boolean|Apple デバイスが監視されているかどうかを示します。 詳細情報は次のとおりです。https://support.apple.com/en-us/HT202837|
+|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple デバイスの検出ソース。 可能な値は `unknown`、`adminImport`、`deviceEnrollmentProgram` です。|
+|createdDateTime|DateTimeOffset|デバイスの日時の作成日時|
+|lastContactedDateTime|DateTimeOffset|デバイスの最終連絡日時|
+|説明|文字列|デバイスの説明|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

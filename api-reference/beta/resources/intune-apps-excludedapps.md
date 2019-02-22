@@ -1,40 +1,40 @@
 ---
 title: excludedApps リソースの種類
-description: Office365 アプリケーションの除外プロパティが含まれています。
-localization_priority: Normal
+description: 除外された Office365 アプリのプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d3cd9a159597689a64070181640415a6ce2fc61
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395679"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154027"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Office365 アプリケーションの除外プロパティが含まれています。
+除外された Office365 アプリのプロパティが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|アクセス|Boolean|値かの MS Office のアクセスを除外する必要があります。|
-|excel|Boolean|値かの MS Office Excel を除外する必要があります。|
-|溝|Boolean|値か、ビジネスの Groove の MS Office の OneDrive を除外する必要があります。|
-|infoPath|Boolean|値かの MS Office InfoPath を除外する必要があります。|
-|lync|Boolean|値か、ビジネス - Lync の MS Office の Skype を除外する必要があります。|
-|oneDrive|Boolean|値かの MS Office の OneDrive を除外する必要があります。|
-|oneNote|Boolean|値かの MS Office OneNote を除外する必要があります。|
-|outlook|Boolean|値かの MS Office Outlook を除外する必要があります。|
-|powerPoint|Boolean|値かの MS Office PowerPoint を除外する必要があります。|
-|publisher|Boolean|値かの MS Office の発行元を除外する必要があります。|
-|sharePointDesigner|Boolean|値かの MS Office の SharePointDesigner を除外する必要があります。|
-|visio|Boolean|値かの MS Office Visio を除外する必要があります。|
-|単語|Boolean|値かの MS Office の Word を除外する必要があります。|
+|接続|ブール値|MS Office へのアクセスを除外する必要があるかどうかを示す値。|
+|シート|ブール値|MS Office Excel を除外するかどうかを指定します。|
+|スペース|ブール値|MS Office OneDrive for business-Groove を除外する必要があるかどうかを示す値。|
+|もと|ブール値|MS Office InfoPath を除外する必要があるかどうかを示す値。|
+|lync|ブール値|MS Office Skype for business-Lync を除外する必要があるかどうかを示す値。|
+|スペース|ブール値|MS Office OneDrive を除外する必要があるかどうかを示す値。|
+|ノート|ブール値|MS Office OneNote を除外する必要があるかどうかの値。|
+|outlook|ブール値|MS Office Outlook を除外する必要があるかどうかを示す値。|
+|しまう|ブール値|microsoft Office PowerPoint を除外するかどうかを指定します。|
+|publisher|ブール値|MS Office Publisher を除外する必要があるかどうかの値。|
+|sharepointdesigner|ブール値|MS Office sharepointdesigner を除外するかどうかを指定します。|
+|visio|ブール値|MS Office Visio を除外する必要があるかどうかを示す値。|
+|段落|ブール値|MS Office Word を除外する必要があるかどうかを示す値。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

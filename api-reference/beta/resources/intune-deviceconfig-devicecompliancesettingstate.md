@@ -1,21 +1,21 @@
 ---
 title: deviceComplianceSettingState リソース タイプ
 description: 特定のデバイスに関する、デバイスのコンプライアンスの設定状態です。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d618356d115f437bccccee57f6c259a1cdbd14a8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4d8ebb3daa8eb039b2b95efd840dd525a32ea304
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152060"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のデバイスに関する、デバイスのコンプライアンスの設定状態です。
 
@@ -32,7 +32,7 @@ ms.locfileid: "29403036"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイス プラットフォームのタイプです。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|
 |deviceId|String|レポートされているデバイス ID。|
@@ -42,7 +42,7 @@ ms.locfileid: "29403036"
 |userName|String|レポートされているユーザー名|
 |userPrincipalName|String|レポートされているユーザーの PrincipalName|
 |deviceModel|String|レポートされているデバイス モデル|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 ## <a name="relationships"></a>リレーションシップ

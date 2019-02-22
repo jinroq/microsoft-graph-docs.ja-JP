@@ -1,31 +1,31 @@
 ---
 title: roleAssignmentScopeType 列挙型
 description: 役割の割り当てのスコープの種類を指定します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b815cf7eb396aa82f49df792ceee0612678077c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6089021851e3d953fce4874b11e343b4747adf40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419892"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150695"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 役割の割り当てのスコープの種類を指定します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|resourceScope|0|指定された ResourceScopes への割り当てを許可します。|
-|しています。|1|Intune のすべてのデバイスへの割り当てを許可します。|
-|allLicensedUsers|2|Intune にライセンスのすべてのユーザーへの割り当てを許可します。|
-|allDevicesAndLicensedUsers|3|Intune デバイスおよびライセンスを受けたユーザーのすべての割り当てを許可します。|
+|resourcescope|.0|指定した ResourceScopes への割り当てを許可します。|
+|alldevices|1-d|すべての Intune デバイスへの割り当てを許可します。|
+|allLicensedUsers|pbm-2|Intune にライセンスされたすべてのユーザーへの割り当てを許可します。|
+|allDevicesAndLicensedUsers|1/3|すべての Intune デバイスおよびライセンスされたユーザーへの割り当てを許可します。|
 
 
 

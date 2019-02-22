@@ -1,23 +1,23 @@
 ---
-title: IosLobAppProvisioningConfigurationAssignment を作成します。
-description: 新しい iosLobAppProvisioningConfigurationAssignment オブジェクトを作成します。
-localization_priority: Normal
+title: ioslobappプロビジョニング configurationassignment の作成
+description: 新しい ioslobappプロビジョニング configurationassignment オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d1ba6130224718c7c28c02f0866ae01144f4c66
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 63f2862c9545a9683e66de58a0355299d0733092
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421530"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148385"
 ---
-# <a name="create-ioslobappprovisioningconfigurationassignment"></a>IosLobAppProvisioningConfigurationAssignment を作成します。
+# <a name="create-ioslobappprovisioningconfigurationassignment"></a>ioslobappプロビジョニング configurationassignment の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトを作成します。
+新しい[ioslobappプロビジョニング configurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,12 +41,12 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に iosLobAppProvisioningConfigurationAssignment オブジェクトの JSON の形式を指定します。
+要求本文で、ioslobappプロビジョニング configurationassignment オブジェクトの JSON 表記を指定します。
 
-次の表は、iosLobAppProvisioningConfigurationAssignment を作成するときに必要なプロパティを示します。
+次の表に、ioslobappare configurationassignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[ioslobappプロビジョニング configurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

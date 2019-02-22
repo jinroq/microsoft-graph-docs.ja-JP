@@ -1,30 +1,30 @@
 ---
 title: appLogCollectionDownloadDetails リソースの種類
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6946b3cd1aa60c4025859bd8d41d2dc4775bf39d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430244"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147755"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|downloadUrl|String|完了した AppLogUploadRequest の SA の Url をダウンロードします。|
-|するアプリレーション|String|文字列とするアプリレーション|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|コンテンツの DecryptionAlgorithm です。 使用可能な値: `aes256`。|
+|downloadUrl|String|完成した、完了した処理のための SAS Url をダウンロードする|
+|decryptionKey|String|DecryptionKey as string|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|コンテンツの DecryptionAlgorithm。 可能な値は`aes256`次のとおりです。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

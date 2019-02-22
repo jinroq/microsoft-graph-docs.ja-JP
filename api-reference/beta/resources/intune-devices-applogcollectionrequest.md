@@ -1,42 +1,42 @@
 ---
 title: appLogCollectionRequest リソースの種類
-description: AppLogCollectionRequest エンティティです。
-localization_priority: Normal
+description: AppLogCollectionRequest エンティティ。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 795b80b0194f2c3a1d314cbb317af954fb675063
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed0512340431be0456ebbbc5a3bffbb2713fda89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151703"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-AppLogCollectionRequest エンティティです。
+AppLogCollectionRequest エンティティ。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)コレクション|[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[AppLogCollectionRequest を取得します。](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティと関係を参照してください。|
-|[AppLogCollectionRequest を作成します。](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|新しい[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを作成します。|
-|[AppLogCollectionRequest を削除します。](../api/intune-devices-applogcollectionrequest-delete.md)|なし|の[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)を削除します。|
-|[AppLogCollectionRequest を更新します。](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。|
+|[リスト appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)コレクション|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[appLogCollectionRequest を取得する](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[appLogCollectionRequest を作成する](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|新しい[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを作成します。|
+|[appLogCollectionRequest の削除](../api/intune-devices-applogcollectionrequest-delete.md)|なし|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)を削除します。|
+|[appLogCollectionRequest の更新](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。|
 |[createDownloadUrl アクション](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|一意の識別子です。 これは、userId_DeviceId_AppId の id です。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態です。 可能な値は、`pending`、`completed`、`failed` です。|
-|エラー メッセージ|String|アップロード プロセス中に存在する場合のエラー メッセージ|
-|customLogFolders|String コレクション|ログのフォルダーの一覧です。 |
-|CompletedDateTime|DateTimeOffset|までに時間のアップロードのログ要求が終了状態|
+|id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は `pending`、`completed`、`failed` です。|
+|errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
+|customlogfolders|String collection|ログフォルダーの一覧。 |
+|CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

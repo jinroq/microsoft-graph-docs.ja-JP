@@ -1,38 +1,38 @@
 ---
 title: intuneBrandingProfileAssignment リソースの種類
-description: このエンティティには、ブランドのプロファイルをグループに割り当てるためのプロパティが含まれています。
-localization_priority: Normal
+description: このエンティティには、ブランド化プロファイルをグループに割り当てるために使用されるプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcc0b625bc3918206a1d75ae7ef123484ae0357c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 956cf652167714270dfcaf348523db236fb62941
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431613"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151395"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このエンティティには、ブランドのプロファイルをグループに割り当てるためのプロパティが含まれています。
+このエンティティには、ブランド化プロファイルをグループに割り当てるために使用されるプロパティが含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト intuneBrandingProfileAssignments](../api/intune-wip-intunebrandingprofileassignment-list.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[IntuneBrandingProfileAssignment を取得します。](../api/intune-wip-intunebrandingprofileassignment-get.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティと関係を参照してください。|
-|[IntuneBrandingProfileAssignment を作成します。](../api/intune-wip-intunebrandingprofileassignment-create.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|新しい[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトを作成します。|
-|[IntuneBrandingProfileAssignment を削除します。](../api/intune-wip-intunebrandingprofileassignment-delete.md)|なし|の[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)を削除します。|
-|[IntuneBrandingProfileAssignment を更新します。](../api/intune-wip-intunebrandingprofileassignment-update.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティを更新します。|
+|[リスト intuneBrandingProfileAssignments](../api/intune-wip-intunebrandingprofileassignment-list.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[intuneBrandingProfileAssignment を取得する](../api/intune-wip-intunebrandingprofileassignment-get.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[intuneBrandingProfileAssignment を作成する](../api/intune-wip-intunebrandingprofileassignment-create.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|新しい[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトを作成します。|
+|[intuneBrandingProfileAssignment の削除](../api/intune-wip-intunebrandingprofileassignment-delete.md)|なし|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)を削除します。|
+|[intuneBrandingProfileAssignment の更新](../api/intune-wip-intunebrandingprofileassignment-update.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|割り当てのターゲットにブランドのプロファイルが割り当てられています。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|ブランド化プロファイルが割り当てられている割り当て先。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

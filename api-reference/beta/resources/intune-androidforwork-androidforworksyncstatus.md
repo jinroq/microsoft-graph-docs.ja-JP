@@ -1,32 +1,32 @@
 ---
-title: androidForWorkSyncStatus 列挙型
-description: Google の EMM の API を使用してテナントの同期の状態
-localization_priority: Normal
+title: androidforwork syncstatus 列挙型
+description: Google EMM API を使用したテナントの状態の同期
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f9139ad1ce6d8f6982f7dcce4ab58bd2ed5b594
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 60a27027cdd3dc4c927b04f1ada6c446549b2d45
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153670"
 ---
-# <a name="androidforworksyncstatus-enum-type"></a>androidForWorkSyncStatus 列挙型
+# <a name="androidforworksyncstatus-enum-type"></a>androidforwork syncstatus 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Google の EMM の API を使用してテナントの同期の状態
+Google EMM API を使用したテナントの状態の同期
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|success|0|まだ文書化されていません|
-|credentialsNotValid|1|まだ文書化されていません|
-|androidForWorkApiError|2|まだ文書化されていません|
-|managementServiceError|3|まだ文書化されていません|
-|unknownError|4|まだ文書化されていません|
+|success|.0|まだ文書化されていません|
+|credentialsNotValid|1-d|まだ文書化されていません|
+|androidforwork apierror|pbm-2|まだ文書化されていません|
+|managementserviceerror|1/3|まだ文書化されていません|
+|unknownError|2/4|まだ文書化されていません|
 |none|5|まだ文書化されていません|
 
 

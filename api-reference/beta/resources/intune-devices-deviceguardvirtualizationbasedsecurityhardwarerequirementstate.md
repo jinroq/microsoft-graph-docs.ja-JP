@@ -1,32 +1,32 @@
 ---
 title: deviceGuardVirtualizationBasedSecurityHardwareRequirementState 列挙型
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bef199ef0ea3822cb7f76578e0fe3b5c8e203799
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0afb02cdd0dd1189642b9598639860f0a809a8ae
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406081"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148504"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|meetHardwareRequirements|0|システムは、ハードウェア構成の要件を満たしています。|
-|secureBootRequired|1|セキュリティで保護されたブートのために必要な|
-|dmaProtectionRequired|2|DMA 保護が必要|
-|hyperVNotSupportedForGuestVM|4|HyperV のゲスト VM ではサポートされません。|
-|hyperVNotAvailable|8|HyperV 機能は利用できません。|
+|meetHardwareRequirements|.0|システムがハードウェア構成要件を満たしている|
+|secureBootRequired|1-d|セキュアブートが必要|
+|dmaProtectionRequired|pbm-2|DMA 保護が必要|
+|hypervnotsupportedforguestvm|2/4|HyperV はゲスト VM でサポートされていません|
+|hypervnotavailable|~|HyperV 機能は使用できません|
 
 
 

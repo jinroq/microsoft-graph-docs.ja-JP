@@ -1,23 +1,23 @@
 ---
-title: ManagedEBookCategory を作成します。
-description: 新しい managedEBookCategory オブジェクトを作成します。
-localization_priority: Normal
+title: managedebookcategory の作成
+description: 新しい managedebookcategory オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17005e88792a17c3c9fa71d0ecc999e3b43813f2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fd23f14bab5db4ef0d0fbae7f3ff2d752a28595c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421054"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147636"
 ---
-# <a name="create-managedebookcategory"></a>ManagedEBookCategory を作成します。
+# <a name="create-managedebookcategory"></a>managedebookcategory の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[managedEBookCategory](../resources/intune-books-managedebookcategory.md)オブジェクトを作成します。
+新しい[managedebookcategory](../resources/intune-books-managedebookcategory.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,23 +42,23 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に managedEBookCategory オブジェクトの JSON の形式を指定します。
+要求本文で、managedebookcategory オブジェクトの JSON 表記を指定します。
 
-次の表は、managedEBookCategory を作成するときに必要なプロパティを示します。
+次の表に、managedebookcategory の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|displayName|String|EBook カテゴリの名前です。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、ManagedEBookCategory が最後に修正されました。|
+|displayName|String|eBook カテゴリの名前を指定します。|
+|lastModifiedDateTime|DateTimeOffset|managedebookcategory が最後に変更された日付と時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[managedEBookCategory](../resources/intune-books-managedebookcategory.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[managedebookcategory](../resources/intune-books-managedebookcategory.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

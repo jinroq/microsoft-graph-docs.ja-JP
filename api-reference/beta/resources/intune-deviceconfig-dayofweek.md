@@ -1,34 +1,34 @@
 ---
 title: dayOfWeek 列挙型
-description: 平日に指定できる値
-localization_priority: Normal
+description: 曜日の指定可能な値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81f35389ac482ab429a35266959f233e6afc3404
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7d618fe7a91ef52777cff272858079c1fedd5739
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152067"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-平日に指定できる値
+曜日の指定可能な値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|日曜日|0|日曜日|
-|月曜日|1|月曜日|
-|火曜日|2|火曜日|
-|(水)|3|水曜日|
-|(木)|4|木曜日|
+|n|.0|日曜日|
+|曜日|1-d|月曜日|
+|毎週|pbm-2|火曜日|
+|毎週|1/3|水曜日|
+|火曜日|2/4|木曜日|
 |金曜日|5|金曜日|
-|土曜日|6|土曜日|
+|土日|シックス|土曜日|
 
 
 

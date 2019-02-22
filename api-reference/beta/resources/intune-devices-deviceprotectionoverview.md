@@ -1,37 +1,37 @@
 ---
-title: deviceProtectionOverview リソースの種類
-description: 特定のデバイスのハードウェア情報です。
-localization_priority: Normal
+title: deviceprotectionoverview リソースの種類
+description: 特定のデバイスのハードウェア情報。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e3a6062d2aa50c96c27eb9d542905bf9a029d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d6cd5cc1eef939476a6fa3b5c46a7cfa315607b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418989"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154090"
 ---
-# <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview リソースの種類
+# <a name="deviceprotectionoverview-resource-type"></a>deviceprotectionoverview リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-特定のデバイスのハードウェア情報です。
+特定のデバイスのハードウェア情報。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|totalReportedDeviceCount|Int32|デバイスの合計数です。|
-|inactiveThreatAgentDeviceCount|Int32|使用頻度の低い脅威エージェントの数とデバイス|
-|unknownStateThreatAgentDeviceCount|Int32|不明な数として脅威エージェントの状態を持つデバイス。|
-|pendingSignatureUpdateDeviceCount|Int32|古い署名の数を持つデバイス。|
-|cleanDeviceCount|Int32|デバイス数をクリーニングします。|
-|pendingFullScanDeviceCount|Int32|全体を走査する保留中のデバイスの数。|
-|pendingRestartDeviceCount|Int32|再起動の保留中のデバイスの数。|
-|pendingManualStepsDeviceCount|Int32|手作業で保留中のデバイスの数。|
-|pendingOfflineScanDeviceCount|Int32|オフライン保留中のデバイス数をスキャンします。|
-|criticalFailuresDeviceCount|Int32|障害の重要なデバイスの数。|
+|totalreporteddevicecount|Int32|デバイスの合計数。|
+|inactiveThreatAgentDeviceCount|Int32|脅威エージェント数が非アクティブなデバイス|
+|unknownStateThreatAgentDeviceCount|Int32|不明な数の脅威エージェントの状態を持つデバイス。|
+|pendingsignatureupdatedevicecount|Int32|署名数が古いデバイス。|
+|cleandevicecount|Int32|デバイス数をクリーニングします。|
+|pendingfullscandevicecount|Int32|保留中のフルスキャンデバイス数。|
+|pendingRestartDeviceCount|Int32|保留中の再起動デバイス数。|
+|pendingmanualstepsdevicecount|Int32|保留中の手動手順デバイス数。|
+|pendingOfflineScanDeviceCount|Int32|保留中のオフラインスキャンデバイス数。|
+|criticalFailuresDeviceCount|Int32|重大なエラーデバイス数。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

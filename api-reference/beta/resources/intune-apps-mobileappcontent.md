@@ -1,21 +1,21 @@
 ---
 title: mobileAppContent リソースの種類
 description: 特定のアプリのバージョンに関するコンテンツのプロパティが含まれています。 各 mobileAppContent には、複数の mobileAppContentFile を含めることができます。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ceeb6cd4e989f4e020c885dde119c39d9659539c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 82c2100fb7bd9e906bf6cf9092d3df88865c26e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153446"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のアプリのバージョンに関するコンテンツのプロパティが含まれています。 各 mobileAppContent には、複数の mobileAppContentFile を含めることができます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "29418184"
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) コレクション|このアプリのコンテンツのバージョンに関するファイルのリストです。|
-|containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)コレクション|パッケージとして機能する、MobileLobApp に含まれているアプリケーションのコレクションです。|
+|containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)コレクション|パッケージとして機能する mobilelobapp に含まれているアプリのコレクションです。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

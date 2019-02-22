@@ -1,33 +1,33 @@
 ---
-title: プラットフォームの列挙型
+title: プラットフォーム列挙型
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5735f9ac4156ae3aa6657a23996228dd461242e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f07965ce3929a74d6596ed708cc7045437921a7a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422790"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148175"
 ---
-# <a name="platform-enum-type"></a>プラットフォームの列挙型
+# <a name="platform-enum-type"></a>プラットフォーム列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明なデバイスのプラットフォーム|
-|ios|1|IOS デバイス プラットフォーム|
-|android|2|Android デバイス プラットフォーム|
-|windows|3|Windows デバイス プラットフォーム|
-|windowsMobile|4|WindowsMobile デバイス プラットフォーム|
-|macOS|5|Mac デバイス プラットフォーム|
+|不明|.0|不明なデバイスプラットフォーム|
+|ios|1-d|IOS デバイスプラットフォーム|
+|android|pbm-2|Android デバイスプラットフォーム|
+|ws|1/3|Windows デバイスプラットフォーム|
+|windowsMobile|2/4|windowsmobile デバイスプラットフォーム|
+|macOS|5|Mac デバイスプラットフォーム|
 
 
 

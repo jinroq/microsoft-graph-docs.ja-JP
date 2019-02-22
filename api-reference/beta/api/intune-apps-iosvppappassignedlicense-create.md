@@ -1,21 +1,21 @@
 ---
-title: IosVppAppAssignedLicense を作成します。
+title: iosVppAppAssignedLicense を作成する
 description: 新しい iosVppAppAssignedLicense オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9afb719d28dd18d80b42de8406f959e80e50b1b9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eff71bebc59285d5938d784bc57249772d225d95
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414229"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154811"
 ---
-# <a name="create-iosvppappassignedlicense"></a>IosVppAppAssignedLicense を作成します。
+# <a name="create-iosvppappassignedlicense"></a>iosVppAppAssignedLicense を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)オブジェクトを作成します。
 
@@ -41,25 +41,25 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に iosVppAppAssignedLicense オブジェクトの JSON の形式を指定します。
+要求本文で、iosVppAppAssignedLicense オブジェクトの JSON 表記を指定します。
 
-次の表は、iosVppAppAssignedLicense を作成するときに必要なプロパティを示します。
+次の表に、iosVppAppAssignedLicense の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|String|ユーザーの電子メール アドレスです。|
-|userId|String|ユーザー id。|
+|userEmailAddress|String|ユーザーの電子メールアドレス。|
+|userId|String|ユーザー ID。|
 |userName|String|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

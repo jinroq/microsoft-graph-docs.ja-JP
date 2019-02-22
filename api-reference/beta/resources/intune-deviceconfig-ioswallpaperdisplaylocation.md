@@ -1,31 +1,31 @@
 ---
-title: iosWallpaperDisplayLocation 列挙型
-description: 壁紙の列挙型は、位置指定子を表示します。
-localization_priority: Normal
+title: ioswallpaperdisplaylocation 列挙型
+description: 壁紙の表示場所指定子の列挙型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdf6a0a837d420d37641221bf39b5b64f1046591
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430323"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146628"
 ---
-# <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 列挙型
+# <a name="ioswallpaperdisplaylocation-enum-type"></a>ioswallpaperdisplaylocation 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-壁紙の列挙型は、位置指定子を表示します。
+壁紙の表示場所指定子の列挙型。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|壁紙の表示を指定した場所がありません。|
-|lockScreen|1|ロック画面に設定されている壁紙の画像が表示されます。|
-|ホーム スクリーン|2|(アイコン一覧) のホーム画面に設定されている壁紙の画像が表示されます。|
-|lockAndHomeScreens|3|ロック画面とホーム画面に設定されている壁紙の画像が表示されます。|
+|notConfigured|.0|壁紙を表示する場所が指定されていません。|
+|画面|1-d|構成済みの壁紙画像がロック画面に表示されます。|
+|homeScreen|pbm-2|構成済みの壁紙イメージは、ホーム (アイコン一覧) 画面に表示されます。|
+|lockAndHomeScreens|1/3|構成済みの壁紙画像は、ロック画面とホーム画面に表示されます。|
 
 
 

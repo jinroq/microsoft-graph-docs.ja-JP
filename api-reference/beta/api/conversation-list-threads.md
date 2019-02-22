@@ -4,12 +4,12 @@ description: グループの会話のすべてのスレッドを取得します�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: bdef7c4a5fe6d28772cff5ed0f286065595e1088
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b4aba1fd9018c95f2067605b07c0f73d6f02e3f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153880"
 ---
 # <a name="list-threads"></a>スレッドを一覧表示する
 
@@ -25,7 +25,7 @@ ms.locfileid: "29519403"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All、Group.Read.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

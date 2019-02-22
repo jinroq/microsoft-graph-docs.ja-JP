@@ -4,31 +4,31 @@ description: user オブジェクトのプロパティとリレーションシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7e6643fa2beccf83384c454451094473e7c80ac8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 27fed236cf7c4e6ae46b107437d04c31fb3b0e4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419269"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152781"
 ---
 # <a name="get-user"></a>ユーザーを取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [user](../resources/intune-shared-user.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには次のアクセス許可のいずれかが必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  特定のアクセス許可は、コンテキストに依存します。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。  特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
 | &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
-| &nbsp;&nbsp; **契約時** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **トラブルシューティング** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
@@ -52,7 +52,7 @@ GET /users/{usersId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 

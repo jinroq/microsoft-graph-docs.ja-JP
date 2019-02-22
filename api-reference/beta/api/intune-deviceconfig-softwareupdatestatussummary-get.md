@@ -1,21 +1,21 @@
 ---
 title: softwareUpdateStatusSummary の取得
 description: softwareUpdateStatusSummary オブジェクトのプロパティとリレーションシップを読み取ります。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e05d7b237d9964fba8b8fe7a7c4f32f59473ede
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a668a16f3b9770367549a7b3ce97a6721b07ce6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406599"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147083"
 ---
 # <a name="get-softwareupdatestatussummary"></a>softwareUpdateStatusSummary の取得
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -44,7 +44,7 @@ GET /deviceManagement/softwareUpdateStatusSummary
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

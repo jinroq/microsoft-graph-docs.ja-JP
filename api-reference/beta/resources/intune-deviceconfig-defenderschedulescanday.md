@@ -1,36 +1,36 @@
 ---
 title: defenderScheduleScanDay 列挙型
-description: 'DefenderScheduleScanDay の使用可能な値 '
-localization_priority: Normal
+description: 'DefenderScheduleScanDay の可能な値 '
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee08566d0811666dacad158e380f86b30417a3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5dc459479fb74214f0efe1913a3d281445bc49f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415181"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154559"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>defenderScheduleScanDay 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-DefenderScheduleScanDay の使用可能な値 
+DefenderScheduleScanDay の可能な値 
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|毎日毎日|0|毎日毎日|
-|月曜日|1|月曜日|
-|火曜日|2|火曜日|
-|(水)|3|水曜日|
-|(木)|4|木曜日|
+|毎日毎日|.0|毎日毎日|
+|曜日|1-d|月曜日|
+|毎週|pbm-2|火曜日|
+|毎週|1/3|水曜日|
+|火曜日|2/4|木曜日|
 |金曜日|5|金曜日|
-|土曜日|6|土曜日|
-|日曜日|7|日曜日|
-|noScheduledScan|8|スケジュールされたスキャンが行われません|
+|土日|シックス|土曜日|
+|n|7|日曜日|
+|noscheduledscan|~|スケジュールされたスキャンなし|
 
 
 

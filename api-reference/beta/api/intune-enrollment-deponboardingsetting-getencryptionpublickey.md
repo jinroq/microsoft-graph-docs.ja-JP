@@ -1,23 +1,23 @@
 ---
-title: getEncryptionPublicKey 関数
-description: アップル デバイスの登録プログラムを暗号化するために使用する公開キーのトークンを取得します。
-localization_priority: Normal
+title: getencryptionpublickey 関数
+description: Apple device enrollment program トークンを暗号化するために使用する公開キーを取得する
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2d2359f5bc6c13f094b9c8fbe6e302ab82d9147
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 72149171a964d72be0ef35351638ffcdf27e0289
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420599"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154265"
 ---
-# <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 関数
+# <a name="getencryptionpublickey-function"></a>getencryptionpublickey 関数
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アップル デバイスの登録プログラムを暗号化するために使用する公開キーのトークンを取得します。
+Apple device enrollment program トークンを暗号化するために使用する公開キーを取得する
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

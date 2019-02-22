@@ -1,32 +1,32 @@
 ---
 title: intendedPurpose 列挙型
-description: PFX のインポートのオプションです。
-localization_priority: Normal
+description: PFX インポートオプション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3965ae57d98bd0a0cebaa1e0c5dbaf052fc8e2fa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4933386599e7d99494d2972734653569854e89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392452"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150597"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-PFX のインポートのオプションです。
+PFX インポートオプション。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|割り当てられていません。|1|割り当てられていません。|
-|smimeEncryption|2|SmimeEncryption|
-|smimeSigning|3|SmimeSigning|
-|vpn|4|VPN|
-|wifi|5|Wifi|
+|未定義|1-d|未定義|
+|smimeEncryption|pbm-2|SmimeEncryption|
+|smimeSigning|1/3|SmimeSigning|
+|仮想|2/4|仮想|
+|wi-fi|5|wi-fi|
 
 
 

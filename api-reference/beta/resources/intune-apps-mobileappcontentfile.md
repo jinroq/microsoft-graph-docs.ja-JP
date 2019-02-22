@@ -1,21 +1,21 @@
 ---
 title: mobileAppContentFile リソース タイプ
 description: 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e9f28ea036bbe73fae8e9e59d8d63ea8916f15d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d9ca5286214f73540472230c64005f8b8b99236d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148112"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
 
@@ -43,8 +43,8 @@ ms.locfileid: "29425681"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
 |manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
-|isFrameworkFile|Boolean|フレームワーク ファイルのファイルかどうかを示す値です。|
-|isDependency|Boolean|かどうか、コンテンツ ファイルは、メインのコンテンツ ファイルの依存関係です。|
+|isframeworkfile|ブール値|ファイルがフレームワークファイルであるかどうかを示す値。|
+|isdependency|ブール値|コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,36 +1,36 @@
 ---
 title: ratingUnitedKingdomMoviesType 列挙型
-description: 映画は英国でのラベルの評価
-localization_priority: Normal
+description: 英国での映画の評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62194038006b011fdc8a70c4b399beef5e8c742b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412535"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148119"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画は英国でのラベルの評価
+英国での映画の評価のラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|U のクラス分けがすべての年代に適しています。|
-|universalChildren|3|UC のクラス分けが前の学校の子、以前の規制ラベルに適しています。|
-|parentalGuidance|4|PG の分類が適切で完成度の高い|
-|agesAbove12Video|5|12 年間、12、ビデオを適切なリリースします。|
-|agesAbove12Cinema|6|12 a、映画のリリースが 12 年間、適切です|
-|agesAbove15|7|15、15 年間にのみ適していると古い|
-|大人|8|大人にのみ適して|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|U 分類は、すべての年齢に適しています。|
+|universalChildren|1/3|UC の分類は、以前の評価のラベルである、学校の子に適しています。|
+|parentalguidance|2/4|PG 分類は、成熟に適しています。|
+|agesAbove12Video|5|12年以上に適した12のビデオリリース|
+|agesAbove12Cinema|シックス|12a、cinema リリースは、12年以上に適しています。|
+|agesAbove15|7|15年以前にのみ適切|
+|保護者|~|大人にのみ適している|
 
 
 

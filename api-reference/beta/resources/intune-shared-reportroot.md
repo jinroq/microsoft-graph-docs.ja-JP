@@ -1,23 +1,23 @@
 ---
 title: reportRoot リソースの種類
-description: デバイスまたはコンテキストに応じて、トラブルシューティング レポートのインスタンスを表すリソースです。
+description: コンテキストに応じて、デバイスのインスタンスまたはトラブルシューティングレポートを表すリソース。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 378f1758773bfcffda5d9039d3b60d4ac4bd5cc5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a2e41d9b17ca7acafa98dad65db5d2ff5ce30925
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421334"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151297"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイスまたはコンテキストに応じて、トラブルシューティング レポートのインスタンスを表すリソースです。
+コンテキストに応じて、デバイスのインスタンスまたはトラブルシューティングレポートを表すリソース。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
@@ -28,10 +28,10 @@ ms.locfileid: "29421334"
 |[deviceConfigurationUserActivity function](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|デバイス構成のユーザー アクティビティ レポートのメタデータ|
 |[deviceConfigurationDeviceActivity function](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|デバイス構成のデバイス アクティビティ レポートのメタデータ|
 |**トラブルシューティング**|
-|[managedDeviceEnrollmentAbandonmentDetails 関数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[レポート](../resources/intune-shared-report.md)|登録放棄の詳細レポートのメタデータ|
-|[managedDeviceEnrollmentAbandonmentSummary 関数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[レポート](../resources/intune-shared-report.md)|登録放棄の概要レポートのメタデータ|
+|[managedDeviceEnrollmentAbandonmentDetails 関数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[レポート](../resources/intune-shared-report.md)|登録 abandonment 詳細レポートのメタデータ|
+|[managedDeviceEnrollmentAbandonmentSummary 関数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[レポート](../resources/intune-shared-report.md)|登録 abandonment の概要レポートのメタデータ|
 |[managedDeviceEnrollmentFailureDetails 関数](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|まだ文書化されていません|
-|[managedDeviceEnrollmentFailureTrends 関数](../api/intune-shared-reportroot-manageddeviceenrollmentfailuretrends.md)|登録の失敗の傾向レポートのメタデータ|
+|[managedDeviceEnrollmentFailureTrends 関数](../api/intune-shared-reportroot-manageddeviceenrollmentfailuretrends.md)|登録失敗傾向レポートのメタデータ|
 |[managedDeviceEnrollmentTopFailures 関数](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ

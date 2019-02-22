@@ -1,21 +1,21 @@
 ---
 title: sharedPCConfiguration の更新
 description: sharedPCConfiguration オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da0cbba1de768fffd572728d3d416de83917e582
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 573378a13c11f3ac08f2c07e42db2358a55518e9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396330"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147398"
 ---
 # <a name="update-sharedpcconfiguration"></a>sharedPCConfiguration の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) オブジェクトのプロパティを更新します。
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) オブジェクト用の JSON 表記を指定します。
@@ -52,30 +52,25 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|共有の PC 上でアカウントを管理する方法を指定します。 disableAccountManager が false の場合にのみ適用されます。|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 可能な値は、`notConfigured`、`guest`、`domain` です。|
-|localStorage|[有効化](../resources/intune-shared-enablement
-.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|allowLocalStorage|Boolean|共有の PC でローカル ストレージを許可するかどうかを指定します。|
-|setAccountManager|[有効化](../resources/intune-shared-enablement
-.md)|共有 PC モードのアカウント マネージャーを無効にします。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|disableAccountManager|Boolean|共有 PC モードのアカウント マネージャーを無効にします。|
-|setEduPolicies|[有効化](../resources/intune-shared-enablement
-.md)|PC 教育環境の既定の共有ポリシー構成かどうか、有効、無効としないことを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|allowedAccounts|[sharedpcallowedaccounttype](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 可能な値は `notConfigured`、`guest`、`domain` です。|
+|localStorage|[購入](../resources/intune-shared-enablement.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|allowLocalStorage|ブール値|共有の PC でローカル ストレージを許可するかどうかを指定します。|
+|setaccountmanager|[購入](../resources/intune-shared-enablement.md)|共有 PC モードのアカウント マネージャーを無効にします。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|disableAccountManager|ブール値|共有 PC モードのアカウント マネージャーを無効にします。|
+|setEduPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 教育環境ポリシーを有効/無効にするか、構成しないかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
 |disableEduPolicies|Boolean|既定の共有 PC 教育環境ポリシーを無効にするかどうかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。|
-|setPowerPolicies|[有効化](../resources/intune-shared-enablement
-.md)|かどうか既定の共有の PC の電源ポリシーが有効または無効にするを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|disablePowerPolicies|Boolean|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
-|signInOnResume|[有効化](../resources/intune-shared-enablement
-.md)|署名するための要件を指定のときに、デバイスのスリープ状態スリープ モードから。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|setpowerpolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 電源ポリシーを有効または無効にするかどうかを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|disablePowerPolicies|ブール値|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
+|signInOnResume|[購入](../resources/intune-shared-enablement.md)|デバイスがスリープモードから復帰したときに毎回サインインする必要があることを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
 |disableSignInOnResume|Boolean|デバイスがスリープ モードから再開するたびにサインインを求める設定を無効にします。|
 |enabled|Boolean|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
 |idleTimeBeforeSleepInSeconds|Int32|PC がスリープ状態になるまでにデバイスがアイドル状態を続ける時間を秒単位で指定します。 この値を 0 に設定すると、スリープ タイムアウトは発生しなくなります。|

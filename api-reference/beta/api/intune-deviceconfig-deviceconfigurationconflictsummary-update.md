@@ -1,23 +1,23 @@
 ---
-title: DeviceConfigurationConflictSummary を更新します。
-description: DeviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: deviceConfigurationConflictSummary の更新
+description: deviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ad5c5c7ad9db02afed53b4deb0cb6af3d2c57e1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4ceff42a7f1c495769756cd8b8077918b51eade9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150002"
 ---
-# <a name="update-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary を更新します。
+# <a name="update-deviceconfigurationconflictsummary"></a>deviceConfigurationConflictSummary の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトのプロパティを更新します。
+[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,24 +41,24 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトの JSON 表記を指定します。
 
-[DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|一連のポリシーを指定された設定と競合していません。|
-|id|String|競合するポリシーのセットの id です。 この id では、ConflictingDeviceConfigurations 内のすべてのポリシーの id をアンダー スコアで区切られた辞書式の順序にします。|
-|contributingSettings|String コレクション|一連の特定のポリシーと競合の設定|
-|deviceCheckinsImpacted|Int32|チェックインの競合しているポリシーと設定の影響を受ける数|
+|競合する devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
+|id|String|競合しているポリシーのセットの id。 この id は、アンダースコアで区切られた辞書順で競合しているすべてのポリシーの id です。|
+|contributingSettings|String collection|指定されたポリシーと競合する設定のセット|
+|deviceCheckinsImpacted|Int32|競合するポリシーと設定によって影響を受けるチェックインの数|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -1,56 +1,56 @@
 ---
-title: windowsProtectionState リソースの種類
-description: デバイス保護の状態のエンティティです。
-localization_priority: Normal
+title: windowsprotectionstate リソースの種類
+description: デバイス保護状態エンティティ。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eebf798a41e5cbab27fab849cdead8a288a782e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423588"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148315"
 ---
-# <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
+# <a name="windowsprotectionstate-resource-type"></a>windowsprotectionstate リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイス保護の状態のエンティティです。
+デバイス保護状態エンティティ。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[WindowsProtectionState を取得します。](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティと関係を参照してください。|
-|[WindowsProtectionState を更新します。](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
+|[windowsprotectionstate の取得](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsprotectionstate の更新](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
-|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|リアルタイム保護を有効または無効ですか。|
-|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効か無効か。|
-|quickScanOverdue|Boolean|クイック スキャン、か期限切れですか。|
-|fullScanOverdue|Boolean|完全なスキャンの期限切れかどうでしょうか。|
-|signatureUpdateOverdue|Boolean|署名が期限切れかどうか。|
-|rebootRequired|Boolean|しましたか。|
-|fullScanRequired|Boolean|全体を走査するかが必要でしょうか。|
-|engineVersion|String|現在のエンドポイントの保護エンジンのバージョン|
-|signatureVersion|String|マルウェア定義の現在のバージョン|
-|antiMalwareVersion|String|現在のバージョンのマルウェア対策|
-|lastQuickScanDateTime|DateTimeOffset|最後のクイック スキャンの日時|
-|lastFullScanDateTime|DateTimeOffset|最後のクイック スキャンの日時|
-|lastQuickScanSignatureVersion|String|最後のクイック スキャンの署名バージョン|
-|lastFullScanSignatureVersion|String|最後の完全なスキャンの署名バージョン|
-|lastReportedDateTime|DateTimeOffset|最後のデバイスの状態が報告された時間|
+|id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
+|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか、または使用できない|
+|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|ブール値|リアルタイム保護が有効になっているかどうか。|
+|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効になっているかどうか。|
+|quickscanoverdue 超過|ブール値|クイックスキャンの期限が過ぎたかどうか。|
+|fullscanoverdue|ブール値|完全スキャンの期限が過ぎたかどうか。|
+|signatureupdateoverdue|ブール値|署名が古くなっているかどうか|
+|rebootRequired|ブール値|再起動が必要かどうか|
+|fullscanrequired|ブール値|フルスキャンが必要かどうか。|
+|engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
+|signatureversion|String|現在のマルウェア定義バージョン|
+|antiMalwareVersion|String|現在のマルウェア対策バージョン|
+|lastquickscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastfullscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastquickscansignatureversion|String|最終クイックスキャン署名バージョン|
+|lastfullscansignatureversion|String|前回のフルスキャン署名バージョン|
+|lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)コレクション|マルウェアのデバイス ・ リスト|
+|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)コレクション|デバイスマルウェアの一覧|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

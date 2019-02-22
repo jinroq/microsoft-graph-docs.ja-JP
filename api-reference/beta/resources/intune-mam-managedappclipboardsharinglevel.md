@@ -1,31 +1,31 @@
 ---
-title: managedAppClipboardSharingLevel 列挙型
-description: アプリケーションとの間にデバイスのクリップボードを共有する可能性がありますレベルを表します
-localization_priority: Normal
+title: managedappクリップボード sharinglevel 列挙型
+description: アプリケーション間でデバイスのクリップボードを共有するレベルを表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ccd90e4d704a075eaf43650fa765fabf3ab0b99
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 352a801c53acd487fdac0206eca828461d35bf68
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148350"
 ---
-# <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 列挙型
+# <a name="managedappclipboardsharinglevel-enum-type"></a>managedappクリップボード sharinglevel 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーションとの間にデバイスのクリップボードを共有する可能性がありますレベルを表します
+アプリケーション間でデバイスのクリップボードを共有するレベルを表します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allApps|0|かを管理するすべてのアプリケーション間での共有は|
-|managedAppsWithPasteIn|1|共有間で許可されてすべてのマネージ アプリケーションでの貼り付けを有効になっています。|
-|managedApps|2|すべてのマネージ アプリケーションの間で許可を共有|
-|ブロック|3|アプリケーション間での共有が無効になっています。|
+|allapps|.0|すべてのアプリ間での共有が可能、管理されている|
+|managedAppsWithPasteIn|1-d|[貼り付け] が有効になっているすべての管理対象アプリ間で共有が許可されます。|
+|managedApps|pbm-2|すべての管理対象アプリ間で共有が可能|
+|ブロック|1/3|アプリ間の共有が無効になっている|
 
 
 

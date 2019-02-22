@@ -1,42 +1,43 @@
 ---
-title: windowsInformationProtectionWipeAction リソースの種類
-description: 表しますは、Bring-Your-Own-Device(BYOD) Windows デバイス用のテナント管理者によって発行された要求を拭きます。
-localization_priority: Normal
+title: windowsinformationprotectionwipepeaction リソースの種類
+description: テナント管理者が独自のデバイス (byod) Windows デバイス用に発行したワイプ要求を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67af8bdde412381bb6362ef1768dca12fdfce6c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e08cd6a2cf27830f6f88328440fb100bcd77ef6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431655"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148007"
 ---
-# <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction リソースの種類
+# <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsinformationprotectionwipepeaction リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-表しますは、Bring-Your-Own-Device(BYOD) Windows デバイス用のテナント管理者によって発行された要求を拭きます。
+テナント管理者が独自のデバイス (byod) Windows デバイス用に発行したワイプ要求を表します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト windowsInformationProtectionWipeActions](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)コレクション|[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[WindowsInformationProtectionWipeAction を取得します。](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティと関係を参照してください。|
-|[WindowsInformationProtectionWipeAction を作成します。](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|新しい[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを作成します。|
-|[WindowsInformationProtectionWipeAction を削除します。](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|なし|の[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)を削除します。|
-|[WindowsInformationProtectionWipeAction を更新します。](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。|
+|[windowsinformationprotectionwipeactions を一覧表示する](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)コレクション|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[windowsinformationprotectionwipeaction を取得する](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsinformationprotectionwipeaction を作成する](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|新しい[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを作成します。|
+|[windowsinformationprotectionwipeaction を削除する](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|なし|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)を削除します。|
+|[windowsinformationprotectionwipeaction を更新する](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|status|[actionState](../resources/intune-shared-actionstate.md)|アクションのステータスを消去します。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targetedUserId|String|このワイプ操作のターゲットとなるユーザーの Id。|
-|targetedDeviceRegistrationId|String|このワイプ操作のターゲットとなる DeviceRegistrationId。|
-|targetedDeviceName|String|ターゲット ・ デバイスの名前です。|
-|targetedDeviceMacAddress|String|ターゲット デバイスの Mac アドレスです。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|targeteduserid|String|このワイプアクションの対象となる UserId。|
+|targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
+|targeteddevicename|String|対象のデバイス名。|
+|targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
+|lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -57,7 +58,8 @@ ms.locfileid: "29431655"
   "targetedUserId": "String",
   "targetedDeviceRegistrationId": "String",
   "targetedDeviceName": "String",
-  "targetedDeviceMacAddress": "String"
+  "targetedDeviceMacAddress": "String",
+  "lastCheckInDateTime": "String (timestamp)"
 }
 ```
 

@@ -1,33 +1,33 @@
 ---
-title: deviceManagementPartnerTenantState 列挙型
-description: このテナントのパートナーの状態です。
-localization_priority: Normal
+title: devicemanagementpartnertenantstate 列挙型
+description: このテナントのパートナーの状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0044aae0069ceb87f8a8820e49a114b814da62c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 11276fa24b5128c52c39fcc4c8a944df39c865b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153334"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 列挙型
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>devicemanagementpartnertenantstate 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このテナントのパートナーの状態です。
+このテナントのパートナーの状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|パートナーの状態は不明です。|
-|利用不可|1|パートナーが利用可能ではありません。|
-|enabled|2|パートナーが有効になります。|
-|終了|3|パートナー接続は終了します。|
-|rejected|4|パートナーのメッセージは拒否されます。|
-|応答しません。|5|パートナーは、応答ではありません。|
+|不明|.0|パートナーの状態が不明です。|
+|無効|1-d|パートナーは利用できません。|
+|enabled|pbm-2|パートナーが有効になっている。|
+|停止|1/3|パートナー接続が終了します。|
+|rejected|2/4|パートナーメッセージは拒否されます。|
+|なかっ|5|パートナーが応答していません。|
 
 
 

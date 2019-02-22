@@ -1,21 +1,21 @@
 ---
-title: WindowsPhoneXAP を作成します。
+title: windowsPhoneXAP を作成する
 description: 新しい windowsPhoneXAP オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f46688bb501a19db688d55f8c2eea27cd0ae84b9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8bc66deefc23cc0f1b02dcbd927060d3fdb8cb16
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421152"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154335"
 ---
-# <a name="create-windowsphonexap"></a>WindowsPhoneXAP を作成します。
+# <a name="create-windowsphonexap"></a>windowsPhoneXAP を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)オブジェクトを作成します。
 
@@ -41,19 +41,19 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に windowsPhoneXAP オブジェクトの JSON の形式を指定します。
+要求本文で、windowsPhoneXAP オブジェクトの JSON 表記を指定します。
 
-次の表は、windowsPhoneXAP を作成するときに必要なプロパティを示します。
+次の表に、windowsPhoneXAP の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -63,21 +63,21 @@ POST /deviceAppManagement/mobileApps
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
+|fileName|文字列型 (String)|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
-|productIdentifier|String|製品の識別子です。|
+|productIdentifier|String|製品識別子。|
 |identityVersion|String|ID のバージョン。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

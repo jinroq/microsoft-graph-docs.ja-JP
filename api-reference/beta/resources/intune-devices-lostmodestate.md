@@ -1,29 +1,29 @@
 ---
 title: lostModeState 列挙型
-description: 失われたモードが有効か無効を示す、失われたモードの状態
-localization_priority: Normal
+description: 失われたモードが有効か無効かを示す、失われたモードの状態
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edb36ed905a15e56ff67e7829f526fd86ac49f1d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a12e9d09a94ec17ae77b5ff754fca7ce18e43f94
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392963"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154727"
 ---
 # <a name="lostmodestate-enum-type"></a>lostModeState 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-失われたモードが有効か無効を示す、失われたモードの状態
+失われたモードが有効か無効かを示す、失われたモードの状態
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|無効になっています。|0|失われたモードが無効になります。|
-|enabled|1|失われたモードが有効になります。|
+|党|.0|失われたモードは無効です。|
+|enabled|1-d|失われたモードが有効になります。|
 
 
 
