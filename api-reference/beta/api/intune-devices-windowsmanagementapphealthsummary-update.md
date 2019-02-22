@@ -1,23 +1,23 @@
 ---
-title: WindowsManagementAppHealthSummary を更新します。
-description: WindowsManagementAppHealthSummary オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: windowsManagementAppHealthSummary の更新
+description: windowsManagementAppHealthSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7e8c077b8f06b9647e34a18fd5aa92987272e77
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 764549ee57bc3ab3a2a1e0c2db9c6ac16309b85d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394167"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155966"
 ---
-# <a name="update-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary を更新します。
+# <a name="update-windowsmanagementapphealthsummary"></a>windowsManagementAppHealthSummary の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。
+[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,24 +41,24 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
-|healthyDeviceCount|Int32|正常なデバイスの数。|
-|unhealthyDeviceCount|Int32|問題のあるデバイスの数。|
-|unknownDeviceCount|Int32|不明なデバイスの数。|
+|id|String|Windows management app health summary エンティティのキー。|
+|healthyDeviceCount|Int32|正常なデバイス数。|
+|unhealthyDeviceCount|Int32|異常なデバイス数。|
+|unknownDeviceCount|Int32|デバイス数が不明です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

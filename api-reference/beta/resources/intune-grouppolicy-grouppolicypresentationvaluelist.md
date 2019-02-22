@@ -1,49 +1,49 @@
 ---
-title: groupPolicyPresentationValueList リソースの種類
-description: エンティティでは、ポリシー定義のリスト ボックスのプレゼンテーションの名前/値ペアのコレクションを表します。
-localization_priority: Normal
+title: grouppolicypresentationvaluelist リソースの種類
+description: エンティティは、ポリシー定義のリストボックスプレゼンテーションの名前と値のペアのコレクションを表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0a4ea5193edbf58a54da86f9478bfe9a51010d5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 885fc70e51353bf2df9eedfe6293147c3778fc3a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155400"
 ---
-# <a name="grouppolicypresentationvaluelist-resource-type"></a>groupPolicyPresentationValueList リソースの種類
+# <a name="grouppolicypresentationvaluelist-resource-type"></a>grouppolicypresentationvaluelist リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-エンティティでは、ポリシー定義のリスト ボックスのプレゼンテーションの名前/値ペアのコレクションを表します。
+エンティティは、ポリシー定義のリストボックスプレゼンテーションの名前と値のペアのコレクションを表します。
 
 
-[GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。
+[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト groupPolicyPresentationValueLists](../api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)コレクション|[GroupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[GroupPolicyPresentationValueList を取得します。](../api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|[GroupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyPresentationValueList を作成します。](../api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|新しい[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトを作成します。|
-|[GroupPolicyPresentationValueList を削除します。](../api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md)|なし|の[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)を削除します。|
-|[GroupPolicyPresentationValueList を更新します。](../api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|[GroupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティを更新します。|
+|[grouppolicypresentationvaluelists のリスト](../api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)コレクション|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[grouppolicypresentationvaluelist の取得](../api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicypresentationvaluelist の作成](../api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|新しい[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトを作成します。|
+|[grouppolicypresentationvaluelist の削除](../api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md)|なし|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)を削除します。|
+|[grouppolicypresentationvaluelist の更新](../api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|[grouppolicypresentationvaluelist](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻オブジェクトが最後に修正されました。 [GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承されました。|
-|createdDateTime|DateTimeOffset|日付と時刻オブジェクトを作成します。 [GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承されました。|
-|id|String|エンティティのキー。 [GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承されました。|
-|values|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|関連付けられているプレゼンテーションのペアのリストです。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
+|createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
+|id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
+|values|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|関連付けられているプレゼンテーションのペアのリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|definitionValue|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|プレゼンテーションの値に関連付けられているグループ ポリシーの定義の値です。 [GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承されました。|
-|プレゼンテーション|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|プレゼンテーションの値に関連付けられているグループ ポリシーのプレゼンテーションです。 [GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承されました。|
+|definitionvalue|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|プレゼンテーション値に関連付けられているグループポリシー定義の値。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
+|プレゼンテーション|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|プレゼンテーション値に関連付けられたグループポリシーのプレゼンテーション。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

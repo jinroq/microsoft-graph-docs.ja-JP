@@ -1,23 +1,23 @@
 ---
-title: OfficeClientConfigurationAssignment を作成します。
-description: ターゲット グループを既存のポリシーに追加します。
+title: officeClientConfigurationAssignment を作成する
+description: 既存のポリシーにターゲットグループを追加します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c1f09ba2dfabf85501120cb2099373e5664deb08
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425198"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155266"
 ---
-# <a name="create-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を作成します。
+# <a name="create-officeclientconfigurationassignment"></a>officeClientConfigurationAssignment を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ターゲット グループを既存のポリシーに追加します。
+既存のポリシーにターゲットグループを追加します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,22 +41,22 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に officeClientConfigurationAssignment オブジェクトの JSON の形式を指定します。
+要求本文で、officeClientConfigurationAssignment オブジェクトの JSON 表記を指定します。
 
-次の表は、officeClientConfigurationAssignment を作成するときに必要なプロパティを示します。
+次の表に、officeClientConfigurationAssignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|OfficeConfigurationAssignment の id です。|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Admin によって定義されているターゲットの割り当て|
+|id|String|OfficeConfigurationAssignment の Id。|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|管理者によって定義されたターゲットの割り当て。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 Created`応答コードおよび応答の本文に[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)オブジェクトです。
+成功した場合、このメソッド`200 Created`は応答コードと、応答本文で[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

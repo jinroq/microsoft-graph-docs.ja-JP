@@ -1,21 +1,21 @@
 ---
 title: windows10EndpointProtectionConfiguration の更新
 description: windows10EndpointProtectionConfiguration オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bb398da325f6895eee7dd5e53938f8dafc5d5f6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5f2680e25560d8211067a37f160d1341fd94b28a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155091"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティを更新します。
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトの JSON 表記を指定します。
@@ -52,184 +52,188 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|このポリシーは、外部の DMA 機能を持つデバイスに対して追加のセキュリティを提供します。 これにより外部の DMA 対応デバイスの列挙体をより細かく制御互換性のないデバイスと DMA Remapping メモリの分離レベルとサンド ボックス化できます。 このポリシーは、カーネルの DMA の保護がサポートされていて、システムのファームウェアで有効になっている場合にのみ有効です。 カーネル DMA の保護は、ポリシーを使用して、またはエンド ・ ユーザーが制御できないプラットフォーム機能です。 製造時にシステムでサポートする必要があります。 システムがカーネルの DMA の保護をサポートしているかを確認するには、MSINFO32.exe の概要] ページでカーネルの DMA 保護フィールドを確認してください。 可能な値は、`deviceDefault`、`blockAll`、`allowAll` です。|
-|userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利のバックアップ/リストアの実行中に資格情報マネージャーで表示されます。 他のエンティティにこの特権が与えられた場合、ユーザーの保存された資格情報が危険にさらされる可能性があります。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーを決定し、グループがネットワーク経由でコンピューターに接続できます。 許可の状態がサポートされています。|
-|userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーとグループは、ネットワーク経由でコンピューターへの接続からのブロックを決定します。 ステート ブロックがサポートされています。|
-|userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、認証なしのすべてのユーザーを偽装するプロセスを使用できます。 プロセスをユーザーと同じローカル リソースへのアクセスを得ることができます。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、コンピューターにログオンできるユーザーを決定します。 状態 NotConfigured、許可とブロックのすべてをサポートします。 |
-|userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、回避できるユーザー ファイル、ディレクトリ、レジストリ、およびその他の永続的なオブジェクトのアクセス許可ファイルとディレクトリをバックアップするときを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーとグループは、コンピューターの内部時計の日付と時刻を変更できますを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、ユーザーがすべてのセッションに使用可能なグローバル オブジェクトを作成できるかどうかを決定します。 グローバル オブジェクトを作成できるユーザーに影響を与える他のユーザーのセッションは、アプリケーションの障害やデータの破損につながる可能性の下で実行するプロセスです。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsCreatePageFile|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーおよびグループを作成し、ページファイルのサイズを変更する内部 API を呼び出すことができますを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsCreatePermanentSharedObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、マネージャー オブジェクトを使用してディレクトリ オブジェクトを作成するプロセスで使用できるアカウントを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsCreateSymbolicLinks|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ユーザーが、ログオンしているコンピューターからシンボリック リンクを作成できるかどうかを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsCreateToken|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、プロセスでは、内部の API を使用して、アクセス トークンを作成するときに、ローカル リソースへのアクセスを取得するために使用するトークンを作成するプロセスにするユーザーまたはグループを使用することができますを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsDebugPrograms|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ユーザーが任意のプロセスまたはカーネルにデバッガーをアタッチできるを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsRemoteDesktopServicesLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、リモート デスクトップ サービス クライアントとしてログオン拒否するユーザーとグループを指定します。 NotConfigured および受信拒否の状態のみがサポートされています。|
-|userRightsDelegation|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ユーザーまたはコンピューター オブジェクトの委任に対して信頼されるように設定できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsGenerateSecurityAudits|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、セキュリティ ログにエントリを追加するのにはプロセスが使用できるアカウントを決定します。 セキュリティ ログは、承認されていないシステムへのアクセスを追跡に使用します。  NotConfigured と許可の状態のみがサポートされています。|
-|userRightsImpersonateClient|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|ユーザーには、このユーザー権利を割り当てるには、クライアントを偽装するには、そのユーザーに代わって実行されるプログラムすることができます。 により承認されていないユーザーが自分が作成したサービスに接続するクライアントを納得させることと、偽装して、クライアントに許可されていないユーザーのアクセス許可を昇格させるという、この種の偽装にこのユーザー権利を必要とします。管理者レベルまたはシステム レベル。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsIncreaseSchedulingPriority|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、取引先企業は他のプロセスに割り当てられている実行の優先順位を上げる別のプロセスに対するプロパティの書き込みアクセスを持つプロセスを使用することができますを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsLoadUnloadDrivers|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ユーザーが動的にロードおよびデバイス ドライバーやカーネル モードでは、他のコードをアンロードするを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsLockMemory|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、ディスク上の仮想メモリを物理メモリにデータを保持するプロセスを使用できるアカウントを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsManageAuditingAndSecurityLogs|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、オブジェクト アクセスの監査ファイル、Active Directory オブジェクト、レジストリ キーなどの個々 のリソースのオプションを指定できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsManageVolumes|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、リモート最適化などのボリュームの保守タスクを実行できるユーザーおよびグループを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsModifyFirmwareEnvironment|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、ファームウェアの環境値を変更できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsModifyObjectLabels|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ユーザー アカウントは、ファイル、レジストリ キー、またはその他のユーザーが所有するプロセスなどのオブジェクトの整合性ラベルを変更できますを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsProfileSingleProcess|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、システム プロセスのパフォーマンスを監視するパフォーマンス監視ツールを使用できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、ネットワーク上のリモートの場所からコンピューターをシャット ダウンできるユーザーを決定します。 このユーザー権利が誤用されると、サービス拒否攻撃があります。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、ファイル、ディレクトリ、レジストリ、およびその他の永続的なオブジェクトのファイルおよびディレクトリをバックアップ、復元するときのアクセス許可を回避できるユーザーを決定し、オブジェクトの所有者として有効なセキュリティ プリンシパルを設定できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|所有権をユーザーのセキュリティ保護可能なオブジェクトの Active Directory オブジェクト、ファイル、フォルダー、プリンター、レジストリ キー、プロセス、およびスレッドを含め、システムでこのユーザー権利を決定します。 NotConfigured と許可の状態のみがサポートされています。|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、サービスとしてプロセスを登録できないサービス アカウントを決定します。 注: このセキュリティ設定は、システム、ローカル サービス、またはネットワーク サービス アカウントには適用されません。 ブロックがサポートされているだけの状態です。|
-|xboxServicesEnableXboxGameSaveTask|Boolean|この設定は、xbox ゲームの保存が有効 (1) または無効 (0) かどうかを判断します。|
-|xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、付属品の管理サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
-|xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、認証マネージャーの Live サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
-|xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|保存サービスの開始のタイプのゲームのライブは Automatic(2)、Manual(3)、Disabled(4) であるかどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
-|xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、ネットワーク サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
-|localSecurityOptionsBlockMicrosoftAccounts|Boolean|ユーザーがこのコンピューターに Microsoft の新しいアカウントを追加するを防ぐ。|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|物理デバイス以外の場所からのログオンにパスワードで保護していないローカルのアカウントを有効にします。既定値が有効になっています。|
-|localSecurityOptionsDisableAdministratorAccount|Boolean|ローカル管理者アカウントを有効または無効にするかどうかを決定します。|
-|localSecurityOptionsAdministratorAccountName|String|"Administrator"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
-|localSecurityOptionsDisableGuestAccount|Boolean|Guest アカウントが有効か無効になっているかどうかを決定します。|
-|localSecurityOptionsGuestAccountName|String|"Guest"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|ポータブル コンピューターを防ぐため、ログインしなくても接続されているからです。|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|管理者だけが使用する共有プリンターへの接続の一部としてプリンター ドライバーをインストールを制限します。|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|CD-ROM メディアにアクセスする唯一の対話形式でログオンしているユーザーは、この設定を有効にできます。|
-|localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|リムーバブル NTFS メディアを取り出すことができるユーザーを定義します。 可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
-|localSecurityOptionsMachineInactivityLimit|Int32|対話型デスクトップのログイン画面でスクリーン セーバーの実行まで最大分続くとを定義します。 有効な値の 0 から 9999 まで|
-|localSecurityOptionsMachineInactivityLimitInMinutes|Int32|対話型デスクトップのログイン画面でスクリーン セーバーの実行まで最大分続くとを定義します。 有効な値の 0 から 9999 まで|
-|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|CTRL + ALT + DEL を押す前に、ユーザーがログオンできる必要があります。|
-|localSecurityOptionsHideLastSignedInUser|Boolean|このデバイス上で最後署名した人のユーザー名は表示されません。|
-|localSecurityOptionsHideUsernameAtSignIn|Boolean|資格情報を入力した後、デバイスのデスクトップが表示される前にこのデバイスに署名した人のユーザー名は表示されません。|
-|localSecurityOptionsLogOnMessageTitle|String|ログオン ユーザーのメッセージのタイトルを設定します。|
-|localSecurityOptionsLogOnMessageText|String|ログオン ユーザーのメッセージ テキストを設定します。|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|ブロック PKU2U 認証要求をこのデバイスにオンライン id を使用します。|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|UI ヘルパー LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティのブール値|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|または、SAM にリモート呼び出しを行うには、ユーザーとグループを拒否する既定のセキュリティ記述子定義言語の文字列を編集します。|
-|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定では、クライアントが 128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とすることができます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
-|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定は、128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とするサーバーです。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
-|lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワーク ログオン時に使用するチャレンジ/レスポンス認証プロトコルを決定します。 使用可能な値: `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|有効な場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを使用できます。 構成されていない場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを拒否します。|
-|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|このセキュリティ設定は、システムのシャット ダウン時に仮想メモリのページファイルがオフになっているかどうかを決定します。|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|このセキュリティ設定は、Windows にログオンしなくてもコンピューターをシャット ダウンできるかどうかを決定します。|
-|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|ファイルとレジストリの書き込みエラーをユーザーの場所ごとに仮想化します。|
-|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|実行が許可される前に、実行可能ファイルに、PKI 証明書パス検証を強制します。|
-|localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|管理者承認モードでは、管理者に対する昇格時のプロンプトの動作を定義します。 可能な値は、`notConfigured`、`elevateWithoutPrompting`、`promptForCredentialsOnTheSecureDesktop`、`promptForConsentOnTheSecureDesktop`、`promptForCredentials`、`promptForConsent`、`promptForConsentForNonWindowsBinaries` です。|
-|localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|標準ユーザーに対する昇格時のプロンプトの動作を定義します。 可能な値は、`notConfigured`、`automaticallyDenyElevationRequests`、`promptForCredentialsOnTheSecureDesktop`、`promptForCredentials` です。|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|セキュリティで保護されたデスクトップではなく、対話ユーザーのデスクトップに移動するすべての昇格要求を有効にします。 管理者および標準ユーザーに対するプロンプトの動作ポリシー設定が使用されます。|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|システム特権を必要とするアプリケーションのインストールは、管理者の資格情報を求められます。既定値が有効になっています。|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。既定値が有効になっています。|
-|localSecurityOptionsUseAdminApprovalMode|Boolean|ビルトイン管理者アカウントが管理者承認モードを使用して、または完全な管理者特権を持つすべてのアプリケーションを実行するかどうかを定義します。既定値が有効になっています。|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|管理者承認モードおよびすべての UAC ポリシー設定を有効にするかどうかを定義する既定値が有効になっています。|
-|localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 可能な値は、`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser` です。|
-|localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|このセキュリティ設定は、SMB クライアントが SMB パケット署名をネゴシエートしようとしたかどうかを決定します。|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|このセキュリティ設定は、SMB クライアント コンポーネントでパケット署名が必要かどうかを決定します。|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|このセキュリティ設定が有効の場合、サーバー メッセージ ブロック (SMB) リダイレクターは、認証時にパスワード暗号化をサポートしない Microsoft 以外の SMB サーバーにプレーン テキスト パスワードを送信するのには。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|このセキュリティ設定は、SMB サーバー コンポーネントがパケット署名が必要かどうかを決定します。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|このセキュリティ設定は、SMB サーバーが SMB パケット署名を要求するクライアントをネゴシエートするかどうかを決定します。|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|既定では、このセキュリティ設定は共有とパイプは匿名でアクセスできる名前付きパイプおよび匿名でアクセスできる共有の設定に匿名アクセスを制限します。|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|このセキュリティ設定は、どのような追加のアクセス許可をコンピューターへの匿名接続を許可しますを指定します。|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|このセキュリティ設定は、ドメイン アカウントやネットワーク共有の名前の列挙など、特定の操作を実行するのには匿名ユーザーを許可するかどうかを決定します。|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|このセキュリティ設定は、かどうかは、次のパスワードの変更で新しいパスワードの LAN Manager (LM) ハッシュ値が格納されているを決定します。 既定では格納されません。|
-|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|このセキュリティ設定は、ユーザーのログオン用のスマート カードがスマート カード リーダーから削除されたときの動作を決定します。 可能な値は、`lockWorkstation`、`noAction`、`forceLogoff`、`disconnectRemoteDesktopSession` です。|
-|defenderSecurityCenterDisableAppBrowserUI|Boolean|アプリケーションとブラウザーの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableFamilyUI|Boolean|ファミリのオプション領域の表示を無効にするために使用します。|
-|defenderSecurityCenterDisableHealthUI|Boolean|デバイスのパフォーマンスと稼働状態の領域の表示を無効にするために使用します。|
-|defenderSecurityCenterDisableNetworkUI|Boolean|ファイアウォールとネットワークの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableVirusUI|Boolean|ウイルスと脅威の保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableAccountUI|Boolean|アカウントの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableHardwareUI|Boolean|ハードウェアの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableRansomwareUI|Boolean|Ransomware 保護領域の表示を無効にする場合に使用されます。 |
-|defenderSecurityCenterDisableSecureBootUI|Boolean|[デバイスのセキュリティ、セキュリティで保護されたブート領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableTroubleshootingUI|Boolean|[デバイスのセキュリティのトラブルシューティング、セキュリティ プロセスの表示を無効にする場合に使用されます。|
-|defenderSecurityCenterOrganizationDisplayName|String|ユーザーに表示される会社名です。|
-|defenderSecurityCenterHelpEmail|String|ユーザーに表示される電子メール アドレスです。|
-|defenderSecurityCenterHelpPhone|String|電話番号または Skype ID のユーザーに表示されます。|
-|defenderSecurityCenterHelpURL|String|ヘルプ ポータルの URL をユーザーに表示されます。|
-|defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|アプリケーションの表示領域を表示するのに通知します。 可能な値は、`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications` です。|
-|defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|IT の連絡先を表示する場所を構成するエンド ・ ユーザーへの情報です。 可能な値は、`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications` です。|
-|firewallBlockStatefulFTP|Boolean|デバイスへのステートフル FTP 接続をブロックします|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|このポリシーは、外部 DMA 対応デバイスに対して追加のセキュリティを提供することを目的としています。 これにより、dma リマップ/デバイスメモリの分離とサンドボックスと互換性のない外部 DMA 対応デバイスの列挙を制御することができます。 このポリシーは、カーネル DMA 保護がサポートされていて、システムファームウェアによって有効になっている場合にのみ有効になります。 カーネル DMA 保護は、ポリシーまたはエンドユーザーによって制御できないプラットフォーム機能です。 これは、製造時にシステムによってサポートされる必要があります。 システムがカーネル dma 保護をサポートしているかどうかを確認するには、MSINFO32 の要約ページにある「kernel dma 保護」フィールドを確認してください。 可能な値は `deviceDefault`、`blockAll`、`allowAll` です。|
+|userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、バックアップ/復元中に Credential Manager によって使用されます。 この特権が他のエンティティに付与されている場合、ユーザーの保存された資格情報が侵害される可能性があります。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ネットワーク経由でコンピューターに接続できるユーザーとグループを決定します。 State Allowed がサポートされています。|
+|userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ネットワーク経由でコンピューターへの接続をブロックするユーザーとグループを決定します。 ステートブロックがサポートされています。|
+|userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利により、プロセスは認証なしで任意のユーザーになりすますことができます。 そのため、このプロセスは、そのユーザーと同じローカルリソースにアクセスできるようになります。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、コンピューターにログオンできるユーザーを決定します。 NotConfigured、許可およびブロックされる状態のすべてがサポートされています。 |
+|userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ファイルやディレクトリをバックアップするときに、ファイル、ディレクトリ、レジストリ、およびその他の固定オブジェクトのアクセス許可をバイパスできるユーザーを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、コンピューターの内部時計の日時を変更できるユーザーとグループを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、ユーザーがすべてのセッションで使用できるグローバルオブジェクトを作成できるかどうかを決定します。 グローバルオブジェクトを作成できるユーザーは、他のユーザーのセッションで実行されるプロセスに影響を与える可能性があります。これにより、アプリケーション障害またはデータ破損が発生する可能性があります。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsCreatePageFile|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、内部 API を呼び出してページファイルのサイズを作成および変更できるユーザーとグループを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsCreatePermanentSharedObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、オブジェクトマネージャーを使用してディレクトリオブジェクトを作成するために、プロセスで使用できるアカウントを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsCreateSymbolicLinks|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ユーザーがログオンしているコンピューターからシンボリックリンクを作成できるかどうかを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsCreateToken|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、プロセスが内部 API を使用してアクセストークンを作成するときにローカルリソースへのアクセスを取得するために使用できるトークンを作成するために、プロセスで使用できるユーザーまたはグループを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsDebugPrograms|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、任意のプロセスまたはカーネルにデバッガーをアタッチできるユーザーを決定します。 NotConfigured および許可されている状態のみがサポートされる|
+|userRightsRemoteDesktopServicesLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、リモートデスクトップサービスクライアントとしてのログオンを禁止するユーザーとグループを決定します。 NotConfigured とブロックのみがサポートされています。|
+|userRightsDelegation|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ユーザーまたはコンピューターオブジェクトで委任に対して信頼されている設定を設定できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsGenerateSecurityAudits|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、プロセスがセキュリティログにエントリを追加するために使用できるアカウントを決定します。 セキュリティログは、承認されていないシステムアクセスを追跡するために使用されます。  サポートされているのは、NotConfigured と許可の状態のみです。|
+|user/シムの個人ユーザー|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利をユーザーに割り当てると、そのユーザーの代わりに実行しているプログラムがクライアントを偽装できるようになります。 この種の偽装に対してこのユーザー権限を要求することで、権限のないユーザーが作成したサービスに接続して、そのクライアントを偽装して、権限のないユーザーのアクセス許可を昇格させることができるようになります。管理レベルまたはシステムレベル。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsIncreaseSchedulingPriority|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、他のプロセスに割り当てられている実行の優先度を上げるために、プロパティの書き込みアクセス権を持つプロセスを使用できるアカウントを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsLoadUnloadDrivers|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、デバイスドライバーまたはその他のコードをカーネルモードに動的にロードおよびアンロードできるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsLockMemory|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、プロセスを使用してデータを物理メモリに保持できるアカウントを決定します。これにより、システムはデータをディスク上の仮想メモリにページングすることができなくなります。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsManageAuditingAndSecurityLogs|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ファイル、Active Directory オブジェクト、レジストリキーなど、個々のリソースに対してオブジェクトアクセスの監査オプションを指定できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsManageVolumes|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、リモートの最適化など、ボリューム上で保守タスクを実行できるユーザーとグループを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsModifyFirmwareEnvironment|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ファームウェア環境の値を変更できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsModifyObjectLabels|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ファイル、レジストリキー、他のユーザーが所有するプロセスなど、オブジェクトの整合性ラベルを変更できるユーザーアカウントを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsProfileSingleProcess|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、パフォーマンス監視ツールを使用してシステムプロセスのパフォーマンスを監視できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ネットワーク上のリモートの場所からコンピューターをシャットダウンできるユーザーを決定します。 このユーザーの権利を誤用すると、サービス拒否が発生する可能性があります。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、バックアップされたファイルとディレクトリを復元するときに、ファイル、ディレクトリ、レジストリ、およびその他の固定オブジェクトのアクセス許可をバイパスできるユーザーを決定し、任意のユーザーが任意の有効なセキュリティプリンシパルをオブジェクトの所有者として設定できるようにします。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、Active Directory オブジェクト、ファイルとフォルダー、プリンター、レジストリキー、プロセス、スレッドなど、システム内のセキュリティ保護可能なオブジェクトの所有権を取得できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
+|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、サービスとしてのプロセスの登録を禁止するサービスアカウントを決定します。 注: このセキュリティ設定は、システム、ローカルサービス、またはネットワークサービスアカウントには適用されません。 サポートされている状態はブロックされます。|
+|xboxServicesEnableXboxGameSaveTask|ブール値|この設定では、xbox ゲームの保存を有効にするか (1)、無効にするか (0) を指定します。|
+|xboxServicesAccessoryManagementServiceStartupMode|[servicestarttype](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、アクセサリ管理サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は `manual`、`automatic`、`disabled` です。|
+|xboxServicesLiveAuthManagerServiceStartupMode|[servicestarttype](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、Live Auth Manager サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は `manual`、`automatic`、`disabled` です。|
+|xboxServicesLiveGameSaveServiceStartupMode|[servicestarttype](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、Live Game save service の開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は `manual`、`automatic`、`disabled` です。|
+|xboxServicesLiveNetworkingServiceStartupMode|[servicestarttype](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、ネットワークサービスの開始の種類を自動 (2)、手動 (3)、無効 (4) のいずれにするかを指定します。 既定値: Manual。 可能な値は `manual`、`automatic`、`disabled` です。|
+|localsecurityoptionsenableadministratoraccount|ブール値|ユーザーがこのコンピューターに新しい Microsoft アカウントを追加できないようにします。|
+|localsecurityoptionsblockremotelogonwithpassword|ブール値|パスワードで保護されていないローカルアカウントで、物理デバイス以外の場所からログオンできるようにします。既定値を有効にする|
+|localsecurityoptionsdisableアドミニストレーターアカウント|ブール値|ローカル管理者アカウントを有効にするか無効にするかを指定します。|
+|localsecurityoptionsadministratoraccountname|String|アカウント "Administrator" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localsecurityoptionsdisableguestaccount|ブール値|ゲストアカウントを有効にするか無効にするかを指定します。|
+|localsecurityoptionsguestaccountname|String|アカウント "Guest" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|ブール値|ログインせずに、ポータブルコンピューターをアンドックできないようにします。|
+|localsecurityoptionsblockユーザーのドライバー|ブール値|共有プリンターへの接続の一部として、プリンタードライバーのインストールを管理者のみに制限します。|
+|localsecurityoptionsblockremoteop' aldrive access|ブール値|この設定を有効にすると、対話的にログオンしたユーザーのみが、cd-rom メディアにアクセスできます。|
+|localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|リムーバブル NTFS メディアの書式設定と取り出しが許可されているユーザーを定義します。 使用可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
+|localsecurityoptionsmachineinactivitylimit|Int32|スクリーンセーバーが実行されるまで、対話デスクトップのログイン画面で非アクティブな最大時間 (分) を定義します。 有効な値は 0 ~ 9999|
+|localsecurityoptionsallowremotecallstosecurityaccountsmanagerhelperbool|Int32|スクリーンセーバーが実行されるまで、対話デスクトップのログイン画面で非アクティブな最大時間 (分) を定義します。 有効な値は 0 ~ 9999|
+|localSecurityOptionsDoNotRequireCtrlAltDel|ブール値|ユーザーがログオンできるようにするには、CTRL + ALT + DEL キーを押しておく必要があります。|
+|localsecurityoption佐々木 delastsignedinuser|ブール値|このデバイスに最後にサインインしたユーザーのユーザー名を表示しません。|
+|localSecurityOptionsHideUsernameAtSignIn|ブール値|資格情報を入力した後、デバイスのデスクトップが表示される前に、このデバイスにサインインしているユーザーのユーザー名を表示しません。|
+|localsecurityoptionslogonmessagetitle|String|ログインを試行するユーザーのメッセージのタイトルを設定します。|
+|localsecurityoptionslogonmessagetext|String|ログインを試行するユーザーのメッセージテキストを設定します。|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|ブール値|オンライン id を使用するために、このデバイスへの PKU2U 認証要求をブロックします。|
+|localsecurityoptionsinformationshownonlockscreen|ブール値|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティの UI ヘルパーの boolean|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|既定のセキュリティ記述子定義言語文字列を編集して、ユーザーおよびグループに SAM へのリモート呼び出しを許可または拒否します。|
+|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、クライアントは128ビット暗号化と NTLMv2 セッションセキュリティのいずれかまたは両方のネゴシエーションを要求できます。 使用可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
+|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、サーバーで128ビット暗号化と NTLMv2 セッションセキュリティのどちらかまたは両方のネゴシエーションが要求されます。 使用可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
+|lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワークログオンに使用するチャレンジ/応答認証プロトコルを決定します。 使用可能な値: `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
+|lanmanagerwork ステーション disableinsecureguestログオン|ブール値|有効にした場合、SMB クライアントは安全でないゲストログオンを許可します。 構成されていない場合、SMB クライアントは安全でないゲストログオンを拒否します。|
+|localSecurityOptionsClearVirtualMemoryPageFile|ブール値|このセキュリティ設定は、システムのシャットダウン時に仮想メモリのページファイルをクリアするかどうかを決定します。|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|ブール値|このセキュリティ設定は、Windows にログオンせずに、コンピューターをシャットダウンできるかどうかを決定します。|
+|localsecurityoptionsallowuiaccessapplicationelevation|ブール値|セキュリティで保護されたデスクトップを使用せずに、UIAccess アプリで昇格を確認できるようにします。|
+|localsecurityoptionsvirtualizefileandregistrywritefailurestoperuserlocations|ブール値|ユーザーごとの場所に対するファイルおよびレジストリの書き込みエラーを仮想化する|
+|localSecurityOptionsOnlyElevateSignedExecutables|ブール値|指定した実行可能ファイルに対して、実行が許可される前に、PKI 証明書パス検証を強制します。|
+|localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|管理者承認モードでの管理者の昇格時のプロンプトの動作を定義します。 可能な値は、`notConfigured`、`elevateWithoutPrompting`、`promptForCredentialsOnTheSecureDesktop`、`promptForConsentOnTheSecureDesktop`、`promptForCredentials`、`promptForConsent`、`promptForConsentForNonWindowsBinaries` です。|
+|localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|標準ユーザーの昇格時のプロンプトの動作を定義します。 使用可能な値は、`notConfigured`、`automaticallyDenyElevationRequests`、`promptForCredentialsOnTheSecureDesktop`、`promptForCredentials` です。|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|ブール値|セキュリティで保護されたデスクトップではなく、対話ユーザーのデスクトップにアクセスするすべての昇格要求を有効にします。 管理者および標準ユーザーのプロンプト動作ポリシー設定が使用されます。|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|ブール値|昇格した権限が必要なアプリのインストールでは、管理者の資格情報の入力を求められます既定値を有効にする|
+|localsecurityoptionsallowuiaccessapplicationsforsecurelocations|ブール値|セキュリティで保護されたデスクトップを使用せずに、UIAccess アプリで昇格を確認できるようにします。既定値を有効にする|
+|localsecurityoptionsuseadminapprovalmode|ブール値|組み込みの管理者アカウントが管理者承認モードを使用するか、完全な管理者特権を持つすべてのアプリを実行するかを定義します。既定値を有効にする|
+|localsecurityoptionsuseadminapprovalmodeforadministrators|ブール値|管理者承認モードとすべての UAC ポリシー設定を有効にするかどうかを定義し、既定値を有効にする|
+|localsecurityoptionsinformationshownonlockscreen ロックアウト|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 使用可能な値は、`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser` です。|
+|localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 使用可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
+|localsecurityoptionsclientsendunencryptedpasswordtothirdpartysmbservers|ブール値|このセキュリティ設定は、smb クライアントが smb パケット署名のネゴシエートを試行するかどうかを決定します。|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|ブール値|このセキュリティ設定は、SMB クライアントコンポーネントがパケット署名を必要とするかどうかを決定します。|
+|localsecurityoptionsdisableserverdigitallysigncommunicationsalways|ブール値|このセキュリティ設定が有効になっている場合、サーバーメッセージブロック (SMB) リダイレクターは、認証時にパスワード暗号化をサポートしていない Microsoft 以外の SMB サーバーにプレーンテキストのパスワードを送信することを許可されます。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|ブール値|このセキュリティ設定は、SMB サーバーコンポーネントがパケット署名を必要とするかどうかを決定します。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|ブール値|このセキュリティ設定は、smb サーバーが smb パケットの署名を要求するクライアントとの間で smb パケットの署名をネゴシエートするかどうかを決定します。|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|ブール値|既定では、このセキュリティ設定では、匿名アクセス可能な名前付きパイプと、匿名でアクセスできる共有の設定に対して、共有とパイプへの匿名アクセスが制限されます。|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|ブール値|このセキュリティ設定は、コンピューターへの匿名接続に付与される追加のアクセス許可を決定します。|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|ブール値|このセキュリティ設定は、匿名ユーザーが特定の操作 (ドメインアカウントやネットワーク共有の名前の列挙など) を実行できるようにするかどうかを決定します。|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|ブール値|このセキュリティ設定は、次のパスワード変更時に新しいパスワードの LAN Manager (LM) ハッシュ値が保存されるかどうかを決定します。 既定では保存されません。|
+|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|このセキュリティ設定は、ログオンしているユーザーのスマートカードがスマートカード読み取り装置から削除されたときの動作を決定します。 使用可能な値は、`lockWorkstation`、`noAction`、`forceLogoff`、`disconnectRemoteDesktopSession` です。|
+|defendersecuritycenterdisablehealthui|ブール値|アプリとブラウザーの保護領域の表示を無効にするために使用されます。|
+|defendersecuritycenterdisablenetworkui|ブール値|[ファミリオプション] 領域の表示を無効にするために使用します。|
+|defenderSecurityCenterDisableHealthUI|ブール値|[デバイスのパフォーマンスと正常性] 領域の表示を無効にするために使用されます。|
+|defenderSecurityCenterDisableNetworkUI|ブール値|ファイアウォールとネットワーク保護領域の表示を無効にするために使用されます。|
+|defenderSecurityCenterDisableVirusUI|ブール値|ウイルスおよび脅威保護領域の表示を無効にするために使用されます。|
+|defenderSecurityCenterDisableAccountUI|ブール値|[アカウントの保護] 領域の表示を無効にするために使用します。|
+|defenderSecurityCenterDisableClearTpmUI|ブール値|[TPM のクリア] ボタンの表示を無効にするために使用されます。|
+|defendersecurityセンター disableハードウェア ui|ブール値|[ハードウェア保護] 領域の表示を無効にするために使用されます。|
+|defenderSecurityCenterDisableNotificationAreaUI|ブール値|通知領域コントロールの表示を無効にするために使用されます。 この設定を有効にするには、ユーザーはサインアウトしてからサインインするか、コンピューターを再起動する必要があります。|
+|defenderSecurityCenterDisableRansomwareUI|ブール値|ランサムウェア対策領域の表示を無効にするために使用されます。 |
+|defenderSecurityCenterDisableSecureBootUI|ブール値|デバイスセキュリティの下でのセキュアブート領域の表示を無効にするために使用されます。|
+|defendersecurityセンター disableトラブルシューティング ui|ブール値|[デバイスのセキュリティ] の下にあるセキュリティプロセスのトラブルシューティングの表示を無効にするために使用されます。|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|ブール値|脆弱なファームウェアが検出された場合に、更新プログラムの TPM ファームウェアの表示を無効にするために使用されます。|
+|defendersecurityセンター組織 displayname|String|ユーザーに表示される会社名。|
+|defendersecurityセンター helpemail|String|ユーザーに表示される電子メールアドレス。|
+|defendersecurityセンター helpphone|String|ユーザーに表示される電話番号または Skype ID。|
+|defenderSecurityCenterHelpURL|String|ヘルプポータルの URL これは、ユーザーに表示されます。|
+|defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|アプリの表示領域から表示する通知。 可能な値は `notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications` です。|
+|defendersecurityセンター itcontactdisplay|[defendersecurityセンター itcontactdisplaytype](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|エンドユーザーに対して IT の連絡先情報を表示する場所を構成します。 使用可能な値は、`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications` です。|
+|firewallBlockStatefulFTP|ブール値|デバイスへのステートフル FTP 接続をブロックします|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|セキュリティ アソシエーションのアイドル タイムアウトを 300 から 3600 まで (両端を含む) の秒単位で構成します。 これは、セキュリティ アソシエーションが期限切れになり、削除されるまでの期間です。 有効な値は 300 から 3600 までです|
-|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|事前共有キーを使用するエンコーディングを選択します。 可能な値は、`deviceDefault`、`none`、`utF8` です。|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|IPSec 除外を構成し、近隣探索の IPv6 ICMP の種類コードを許可します|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|使用する事前共有キーのエンコードを選択します。 可能な値は `deviceDefault`、`none`、`utF8` です。|
+|firewallIPSecExemptionsAllowNeighborDiscovery|ブール値|IPSec 除外を構成し、近隣探索の IPv6 ICMP の種類コードを許可します|
 |firewallIPSecExemptionsAllowICMP|Boolean|IPSec 除外を構成し、ICMP を許可します|
-|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|IPSec 除外を構成し、ルーター発見の IPv6 ICMP の種類コードを許可します|
-|firewallIPSecExemptionsAllowDHCP|Boolean|IPSec 除外を構成し、IPv4 と IPv6 の両方の DHCP トラフィックを許可します|
-|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|証明書失効リストを適用する方法を指定します。 可能な値は、`deviceDefault`、`none`、`attempt`、`require` です。|
+|firewallIPSecExemptionsAllowRouterDiscovery|ブール値|IPSec 除外を構成し、ルーター発見の IPv6 ICMP の種類コードを許可します|
+|firewallIPSecExemptionsAllowDHCP|ブール値|IPSec 除外を構成し、IPv4 と IPv6 の両方の DHCP トラフィックを許可します|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|証明書失効リストの適用方法を指定します。 使用可能な値は、`deviceDefault`、`none`、`attempt`、`require` です。|
 |firewallMergeKeyingModuleSettings|Boolean|認証セットがキー モジュールによって完全にサポートされていない場合は、セット全体ではなくサポートされていない認証スイートのみを無視するようにモジュールに指示します|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|トンネルのゲートウェイでパケットのキューイングを適用する方法を構成します。 可能な値は、`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound`、`queueBoth` です。|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|トンネルゲートウェイのシナリオでパケットキューを適用する方法を構成します。 可能な値は、`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound`、`queueBoth` です。|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|ドメイン ネットワーク用のファイアウォールのプロファイル設定を構成します|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|パブリック ネットワーク用のファイアウォールのプロファイル設定を構成します|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|プライベート ネットワーク用のファイアウォールのプロファイル設定を構成します|
+|defenderAdobeReaderLaunchChildProcess|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|子プロセスの作成による Adobe Reader の動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
 |defenderAttackSurfaceReductionExcludedPaths|String コレクション|攻撃回避規則から除外する exe ファイルとフォルダーのリスト|
-|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|他のプロセス内に挿入する Office アプリケーションの動作を示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|他のプロセス内に挿入する Office アプリケーションの動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Office アプリケーションとマクロを作成または実行可能なコンテンツを起動する動作を示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Office アプリケーションとマクロを作成または実行可能なコンテンツを起動する動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|子プロセスを起動する Office アプリケーションの動作を示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderOfficeAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|子プロセスを起動する Office アプリケーションの動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Win32 の動作は、Office でマクロ コードからインポートするかを示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderOfficeMacroCodeAllowWin32Imports|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Win32 の動作は、Office でマクロ コードからインポートするかを示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Js、vbs、ps/マクロの難読化されたコードの動作を示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderScriptObfuscatedMacroCode|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Js、vbs、ps/マクロの難読化されたコードの動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Js と vbs のペイロードの実行の動作を示す値は、インターネットからダウンロードします。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderScriptDownloadedPayloadExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Js と vbs のペイロードの実行の動作を示す値は、インターネットからダウンロードします。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderPreventCredentialStealingType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|資格情報が Windows のローカル セキュリティ機関サブシステムから盗むことが許可されているかどうかを示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderProcessCreationType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|PSExec と WMI のコマンドから生成されるプロセスを作成することを示す応答を値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderProcessCreation|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|PSExec と WMI のコマンドから生成されるプロセスを作成することを示す応答を値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderUntrustedUSBProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|USB から実行している信頼されていない、署名のないプロセスへの応答を示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderUntrustedUSBProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|USB から実行している信頼されていない、署名のないプロセスへの応答を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|蔓延状況、年齢、または信頼される側のリストに一致しない実行可能ファイルへの応答を示す基準です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderUntrustedExecutable|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|蔓延状況、年齢、または信頼される側のリストに一致しない実行可能ファイルへの応答を示す基準です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|メール (web メール/メール ・ クライアント) から (exe、dll、ps、js、vbs など) の実行可能なコンテンツの実行を削除する必要があるかどうかを示す値です。 可能な値は、`userDefined`、`block`、`auditMode` です。|
-|defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|メール (web メール/メール ・ クライアント) から (exe、dll、ps、js、vbs など) の実行可能なコンテンツの実行を削除する必要があるかどうかを示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Ransomeware に対して高度な保護の使用を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
-|defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|保護されたフォルダーの動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification` です。|
-|defenderGuardedFoldersAllowedAppPaths|String コレクション|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
+|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|他のプロセスに挿入される Office アプリケーションの動作を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderofficeappsexecutablecontentcreationorlaunch|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|他のプロセスに挿入される Office アプリケーションの動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderOfficeCommunicationAppsLaunchChildProcess|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|子プロセスの作成からの Office コミュニケーションアプリケーション (Microsoft Outlook を含む) の動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Office アプリケーション/マクロの動作を示す値です。実行可能なコンテンツを作成または起動します。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderofficeappslaunchchildprocess|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|Office アプリケーション/マクロの動作を示す値です。実行可能なコンテンツを作成または起動します。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderofficeappslaunchchildprocesstype|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Office アプリケーションの開始子プロセスの動作を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderofficeappslaunchchildprocess|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|Office アプリケーションの開始子プロセスの動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Office のマクロコードからの Win32 インポートの動作を示す値です。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderOfficeMacroCodeAllowWin32Imports|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|Office のマクロコードからの Win32 インポートの動作を示す値です。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|難読化された js/vbs/ps/マクロコードの動作を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderScriptObfuscatedMacroCode|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|難読化された js/vbs/ps/マクロコードの動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|インターネットからダウンロードされた、js/vbs のペイロード実行の動作を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderScriptDownloadedPayloadExecution|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|インターネットからダウンロードされた、js/vbs のペイロード実行の動作を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderPreventCredentialStealingType|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|Windows ローカルセキュリティ機関サブシステムからの資格情報の盗用が許可されているかどうかを示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderprocessの種類|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|PSExec および WMI コマンドからのプロセス作成に対する応答を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderprocesscreation|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|PSExec および WMI コマンドからのプロセス作成に対する応答を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderアン trustedusbprocesstype|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|USB から実行される信頼されていないおよび署名されていないプロセスへの応答を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderアン trustedusbプロセス|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|USB から実行される信頼されていないおよび署名されていないプロセスへの応答を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|流行、年齢、または信頼できるリストの条件を満たさない実行可能ファイルへの応答を示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderUntrustedExecutable|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|流行、年齢、または信頼できるリストの条件を満たさない実行可能ファイルへの応答を示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderemailcontentexecutiontype|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行を電子メール (webmail/メールクライアント) から削除する必要があるかどうかを示す値。 可能な値は `userDefined`、`block`、`auditMode` です。|
+|defenderemailcontentexecution|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行を電子メール (webmail/メールクライアント) から削除する必要があるかどうかを示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defenderAdvancedRansomewareProtectionType|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|ranware に対して高度な保護を使用することを示す値。 可能な値は `userDefined`、`enable`、`auditMode` です。|
+|defendergu/myfolderstype|[folderprotectiontype](../resources/intune-deviceconfig-folderprotectiontype.md)|保護されたフォルダーの動作を示す値。 可能な値は、`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification` です。|
+|defenderGuardedFoldersAllowedAppPaths|String collection|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
 |defenderAdditionalGuardedFolders|String コレクション|保護されたフォルダーのリストに追加されるフォルダー パスのリスト|
-|defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|NetworkProtection の動作を示す値です。 可能な値は、`userDefined`、`enable`、`auditMode` です。|
+|defendernetworkprotectiontype|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|networkprotection の動作を示す値です。 可能な値は `userDefined`、`enable`、`auditMode` です。|
 |defenderExploitProtectionXml|Binary|Exploit Protection の詳細に関する情報を含む XML コンテンツ。|
 |defenderExploitProtectionXmlFileName|String|DefenderExploitProtectionXml の取得元となるファイルの名前。|
-|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|ユーザーによる Exploit Protection の設定の上書きを禁止するかどうかを示します。|
+|defenderSecurityCenterBlockExploitProtectionOverride|ブール値|ユーザーによる Exploit Protection の設定の上書きを禁止するかどうかを示します。|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|管理者がデバイスで許可するアプリの種類を選択できるようにします。 可能な値は、`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker`、`auditComponentsStoreAppsAndSmartlocker` です。|
-|deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|プラットフォームのセキュリティ レベルとセキュリティで保護されたブートし、仮想化ベースのセキュリティの両方が有効である場合は、資格情報の保護にします。 可能な値は、`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock` です。|
-|deviceGuardEnableVirtualizationBasedSecurity|Boolean|Security(VBS) を仮想化をオンに基づいています。|
-|deviceGuardEnableSecureBootWithDMA|Boolean|プラットフォームのセキュリティ レベルが次の再起動時に有効になっているかどうかを指定します。|
-|deviceGuardLaunchSystemGuard|[有効化](../resources/intune-shared-enablement
-.md)|ガードのシステムの起動を構成するのには IT 管理者を使用できます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|smartScreenEnableInShell|Boolean|IT 管理者が Windows 用の SmartScreen を構成することを許可します。|
-|smartScreenBlockOverrideForFiles|Boolean|ユーザーが SmartScreen 警告を無視し、悪意のあるファイルを実行できるかどうかを IT 管理者が制御することを許可します。|
-|applicationGuardEnabled|Boolean|Windows Defender Application Guard を有効にします|
-|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|新しい Windows のビルドの Windows Defender のアプリケーション保護を有効にします。 可能な値は、`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice` です。|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|イメージ ファイルの転送、テキスト ファイルのいずれかにクリップボードをブロックします。 可能な値は、`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile` です。|
-|applicationGuardBlockNonEnterpriseContent|Boolean|サード パーティのプラグインなどエンタープライズ以外のコンテンツを読み込むエンタープライズ サイトをブロックします|
-|applicationGuardAllowPersistence|Boolean|App Guard のコンテナー内のユーザー生成データ (お気に入り、Cookie、Web パスワードなど) の保存を許可します|
-|applicationGuardForceAuditing|Boolean|監査の実施では、セキュリティ/コンプライアンスの基準 (サンプル イベントでは、ユーザーのログインとログオフ、特権の使用、ソフトウェアのインストール、システムの変更など) を満たすために Windows のログとイベントが保持されます|
-|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|ホストからコンテナーへ、コンテナーからホストへ、または両方向にデータを共有するクリップボードをブロックします。あるいは、どちらの方向の共有もブロックしません。 可能な値は、`notConfigured`、`blockBoth`、`blockHostToContainer`、`blockContainerToHost`、`blockNone` です。|
-|applicationGuardAllowPrintToPDF|Boolean|コンテナーから PDF への出力を許可します|
-|applicationGuardAllowPrintToXPS|Boolean|コンテナーから XPS への出力を許可します|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|コンテナーからローカル プリンターへの出力を許可します|
+|deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|セキュリティで保護されたブートと仮想化ベースのセキュリティがあるプラットフォームセキュリティレベルが両方とも有効になっている場合は、Credential Guard をオンにします。 可能な値は `notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock` です。|
+|deviceGuardEnableVirtualizationBasedSecurity|ブール値|仮想化ベースのセキュリティ (VBS) を有効にします。|
+|deviceGuardEnableSecureBootWithDMA|ブール値|次回の再起動時にプラットフォームセキュリティレベルを有効にするかどうかを指定します。|
+|devicegu//systemguard|[購入](../resources/intune-shared-enablement.md)|IT 管理者がシステムガードの起動を構成できるようにします。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|smartScreenEnableInShell|ブール値|IT 管理者が Windows 用の SmartScreen を構成することを許可します。|
+|smartScreenBlockOverrideForFiles|ブール値|ユーザーが SmartScreen 警告を無視し、悪意のあるファイルを実行できるかどうかを IT 管理者が制御することを許可します。|
+|applicationGuardEnabled|ブール値|Windows Defender Application Guard を有効にします|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|新しい windows ビルドに対して windows Defender Application Guard を有効にします。 使用可能な値は、`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice` です。|
+|applicationGuardBlockFileTransfer|[applicationgu/blockfiletransfertype](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|画像ファイル、テキストファイル、またはそのどちらも転送しないように、クリップボードをブロックします。 可能な値は、`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile` です。|
+|applicationGuardBlockNonEnterpriseContent|ブール値|サード パーティのプラグインなどエンタープライズ以外のコンテンツを読み込むエンタープライズ サイトをブロックします|
+|applicationGuardAllowPersistence|ブール値|App Guard のコンテナー内のユーザー生成データ (お気に入り、Cookie、Web パスワードなど) の保存を許可します|
+|applicationGuardForceAuditing|ブール値|監査の実施では、セキュリティ/コンプライアンスの基準 (サンプル イベントでは、ユーザーのログインとログオフ、特権の使用、ソフトウェアのインストール、システムの変更など) を満たすために Windows のログとイベントが保持されます|
+|applicationGuardBlockClipboardSharing|[applicationgu/blockクリップボード sharingtype](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|ホストからコンテナーへ、コンテナーからホストへ、または両方向にデータを共有するクリップボードをブロックします。あるいは、どちらの方向の共有もブロックしません。 可能な値は、`notConfigured`、`blockBoth`、`blockHostToContainer`、`blockContainerToHost`、`blockNone` です。|
+|applicationGuardAllowPrintToPDF|ブール値|コンテナーから PDF への出力を許可します|
+|applicationGuardAllowPrintToXPS|ブール値|コンテナーから XPS への出力を許可します|
+|applicationGuardAllowPrintToLocalPrinters|ブール値|コンテナーからローカル プリンターへの出力を許可します|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|コンテナーからネットワーク プリンターへの出力を許可します|
-|applicationGuardAllowVirtualGPU|Boolean|仮想 GPU を使用するアプリケーションの保護を許可します。|
-|applicationGuardAllowFileSaveOnHost|Boolean|アプリケーション ガード コンテナーの端からファイルをダウンロードし、ホスト上でファイル システムを保存するユーザーを許可します。|
-|bitLockerAllowStandardUserEncryption|Boolean|Azure AD に参加中に encrpytion を有効にする標準のユーザーに許可するのには管理者を使用できます。|
-|bitLockerDisableWarningForOtherDiskEncryption|Boolean|管理者がユーザーのマシンで他のディスクの暗号化に関する警告プロンプトを無効にすることを許可します。|
+|applicationGuardAllowVirtualGPU|ブール値|application guard が仮想 GPU を使用できるようにする|
+|applicationGuardAllowFileSaveOnHost|ブール値|アプリケーションガードコンテナーのエッジからファイルをダウンロードし、ホストファイルシステムに保存することをユーザーに許可する|
+|bitlockerallowstandarduserencryption|ブール値|管理者は、Azure AD Join 時に encrpytion を有効にすることを標準ユーザーに許可します。|
+|bitLockerDisableWarningForOtherDiskEncryption|ブール値|管理者がユーザーのマシンで他のディスクの暗号化に関する警告プロンプトを無効にすることを許可します。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|管理者が BitLocker を使用して暗号化をオンにすることを許可します。 このポリシーは、モバイルの SKU に対してのみ有効です。
 |
 |bitLockerEncryptDevice|Boolean|管理者が BitLocker を使用して暗号化をオンにすることを許可します。|
-|bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker のシステム ドライブのポリシーです。|
-|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker は、ドライブのポリシーを修正します。|
+|bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker システムドライブポリシー。|
+|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker 固定ドライブポリシー。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker リムーバブル ドライブ ポリシー。|
 
 
@@ -244,7 +248,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 26475
+Content-length: 26778
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -663,10 +667,13 @@ Content-length: 26475
   "defenderSecurityCenterDisableNetworkUI": true,
   "defenderSecurityCenterDisableVirusUI": true,
   "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
   "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
   "defenderSecurityCenterDisableRansomwareUI": true,
   "defenderSecurityCenterDisableSecureBootUI": true,
   "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
   "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
   "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
   "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -761,11 +768,13 @@ Content-length: 26475
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
+  "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
   "defenderOfficeAppsOtherProcessInjection": "enable",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
   "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",
@@ -874,7 +883,7 @@ Content-length: 26475
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 26647
+Content-Length: 26950
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1296,10 +1305,13 @@ Content-Length: 26647
   "defenderSecurityCenterDisableNetworkUI": true,
   "defenderSecurityCenterDisableVirusUI": true,
   "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
   "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
   "defenderSecurityCenterDisableRansomwareUI": true,
   "defenderSecurityCenterDisableSecureBootUI": true,
   "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
   "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
   "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
   "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -1394,11 +1406,13 @@ Content-Length: 26647
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
+  "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
   "defenderOfficeAppsOtherProcessInjection": "enable",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
   "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",

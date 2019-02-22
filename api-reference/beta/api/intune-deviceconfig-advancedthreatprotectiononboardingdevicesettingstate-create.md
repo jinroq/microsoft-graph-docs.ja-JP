@@ -1,21 +1,21 @@
 ---
-title: AdvancedThreatProtectionOnboardingDeviceSettingState を作成します。
+title: advancedThreatProtectionOnboardingDeviceSettingState を作成する
 description: 新しい advancedThreatProtectionOnboardingDeviceSettingState オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87db4f3c58a8f205ec6c72805d766e510dbb4188
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d37c00522a5f27db84e180035c38cc7d45db48
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394692"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155903"
 ---
-# <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>AdvancedThreatProtectionOnboardingDeviceSettingState を作成します。
+# <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>advancedThreatProtectionOnboardingDeviceSettingState を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)オブジェクトを作成します。
 
@@ -41,17 +41,17 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に advancedThreatProtectionOnboardingDeviceSettingState オブジェクトの JSON の形式を指定します。
+要求本文で、advancedThreatProtectionOnboardingDeviceSettingState オブジェクトの JSON 表記を指定します。
 
-次の表は、advancedThreatProtectionOnboardingDeviceSettingState を作成するときに必要なプロパティを示します。
+次の表に、advancedThreatProtectionOnboardingDeviceSettingState の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイス プラットフォームのタイプです。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|
 |deviceId|String|レポートされているデバイス ID。|
@@ -61,13 +61,13 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |userName|String|レポートされているユーザー名|
 |userPrincipalName|String|レポートされているユーザーの PrincipalName|
 |deviceModel|String|レポートされているデバイス モデル|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
