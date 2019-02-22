@@ -1,40 +1,40 @@
 ---
 title: windowsEnrollmentStatusScreenSettings リソースの種類
-description: 登録ステータス画面の設定
-localization_priority: Normal
+description: 登録の状態画面の設定
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5ffb2827988b80b4d6563d8a92c9ccea7ac9828
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5684a447b82f285784eda1bf71c13f35d766a570
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399935"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148686"
 ---
-# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="1d946-103">windowsEnrollmentStatusScreenSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1d946-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
+# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="1bd2e-103">windowsEnrollmentStatusScreenSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1bd2e-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
 
-> <span data-ttu-id="1d946-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1d946-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1d946-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1d946-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1bd2e-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bd2e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1d946-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1d946-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1bd2e-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1bd2e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1d946-107">登録ステータス画面の設定</span><span class="sxs-lookup"><span data-stu-id="1d946-107">Enrollment status screen setting</span></span>
+<span data-ttu-id="1bd2e-106">登録の状態画面の設定</span><span class="sxs-lookup"><span data-stu-id="1bd2e-106">Enrollment status screen setting</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1d946-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1d946-108">Properties</span></span>
-|<span data-ttu-id="1d946-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1d946-109">Property</span></span>|<span data-ttu-id="1d946-110">型</span><span class="sxs-lookup"><span data-stu-id="1d946-110">Type</span></span>|<span data-ttu-id="1d946-111">説明</span><span class="sxs-lookup"><span data-stu-id="1d946-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1bd2e-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1bd2e-107">Properties</span></span>
+|<span data-ttu-id="1bd2e-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1bd2e-108">Property</span></span>|<span data-ttu-id="1bd2e-109">型</span><span class="sxs-lookup"><span data-stu-id="1bd2e-109">Type</span></span>|<span data-ttu-id="1bd2e-110">説明</span><span class="sxs-lookup"><span data-stu-id="1bd2e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1d946-112">hideInstallationProgress</span><span class="sxs-lookup"><span data-stu-id="1d946-112">hideInstallationProgress</span></span>|<span data-ttu-id="1d946-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d946-113">Boolean</span></span>|<span data-ttu-id="1d946-114">ユーザーにインストールの進行状況の表示と非表示を切り替える</span><span class="sxs-lookup"><span data-stu-id="1d946-114">Show or hide installation progress to user</span></span>|
-|<span data-ttu-id="1d946-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span><span class="sxs-lookup"><span data-stu-id="1d946-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="1d946-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d946-116">Boolean</span></span>|<span data-ttu-id="1d946-117">許可またはブロックのユーザー プロファイル、およびアプリケーション インストールが完了する前にデバイスを使用するには</span><span class="sxs-lookup"><span data-stu-id="1d946-117">Allow or block user to use device before profile and app installation complete</span></span>|
-|<span data-ttu-id="1d946-118">blockDeviceSetupRetryByUser</span><span class="sxs-lookup"><span data-stu-id="1d946-118">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="1d946-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d946-119">Boolean</span></span>|<span data-ttu-id="1d946-120">インストールの失敗時にセットアップを再実行するユーザーを許可します。</span><span class="sxs-lookup"><span data-stu-id="1d946-120">Allow the user to retry the setup on installation failure</span></span>|
-|<span data-ttu-id="1d946-121">allowLogCollectionOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="1d946-121">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="1d946-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d946-122">Boolean</span></span>|<span data-ttu-id="1d946-123">許可またはブロックのインストールの失敗時にログの収集</span><span class="sxs-lookup"><span data-stu-id="1d946-123">Allow or block log collection on installation failure</span></span>|
-|<span data-ttu-id="1d946-124">customErrorMessage</span><span class="sxs-lookup"><span data-stu-id="1d946-124">customErrorMessage</span></span>|<span data-ttu-id="1d946-125">String</span><span class="sxs-lookup"><span data-stu-id="1d946-125">String</span></span>|<span data-ttu-id="1d946-126">インストールの失敗時に表示するカスタム エラー メッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="1d946-126">Set custom error message to show upon installation failure</span></span>|
-|<span data-ttu-id="1d946-127">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="1d946-127">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="1d946-128">Int32</span><span class="sxs-lookup"><span data-stu-id="1d946-128">Int32</span></span>|<span data-ttu-id="1d946-129">インストールの進行状況のタイムアウトを分単位で設定します。</span><span class="sxs-lookup"><span data-stu-id="1d946-129">Set installation progress timeout in minutes</span></span>|
-|<span data-ttu-id="1d946-130">allowDeviceUseOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="1d946-130">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="1d946-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d946-131">Boolean</span></span>|<span data-ttu-id="1d946-132">インストールの失敗時にデバイスを使用するユーザーを許可します。</span><span class="sxs-lookup"><span data-stu-id="1d946-132">Allow the user to continue using the device on installation failure</span></span>|
+|<span data-ttu-id="1bd2e-111">hideinstallationprogress 進行状況</span><span class="sxs-lookup"><span data-stu-id="1bd2e-111">hideInstallationProgress</span></span>|<span data-ttu-id="1bd2e-112">ブール値</span><span class="sxs-lookup"><span data-stu-id="1bd2e-112">Boolean</span></span>|<span data-ttu-id="1bd2e-113">ユーザーにインストールの進行状況を表示または非表示にする</span><span class="sxs-lookup"><span data-stu-id="1bd2e-113">Show or hide installation progress to user</span></span>|
+|<span data-ttu-id="1bd2e-114">allowdeviceusebeforeprofileandappinstallcomplete</span><span class="sxs-lookup"><span data-stu-id="1bd2e-114">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="1bd2e-115">ブール値</span><span class="sxs-lookup"><span data-stu-id="1bd2e-115">Boolean</span></span>|<span data-ttu-id="1bd2e-116">プロファイルとアプリのインストールが完了する前にユーザーがデバイスを使用することを許可またはブロックする</span><span class="sxs-lookup"><span data-stu-id="1bd2e-116">Allow or block user to use device before profile and app installation complete</span></span>|
+|<span data-ttu-id="1bd2e-117">blockdevicesetupretrybyuser</span><span class="sxs-lookup"><span data-stu-id="1bd2e-117">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="1bd2e-118">ブール値</span><span class="sxs-lookup"><span data-stu-id="1bd2e-118">Boolean</span></span>|<span data-ttu-id="1bd2e-119">ユーザーがインストールエラー時にセットアップを再試行できるようにする</span><span class="sxs-lookup"><span data-stu-id="1bd2e-119">Allow the user to retry the setup on installation failure</span></span>|
+|<span data-ttu-id="1bd2e-120">allowlogcollectiononinstallfailure</span><span class="sxs-lookup"><span data-stu-id="1bd2e-120">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="1bd2e-121">ブール値</span><span class="sxs-lookup"><span data-stu-id="1bd2e-121">Boolean</span></span>|<span data-ttu-id="1bd2e-122">インストール失敗時にログ収集を許可またはブロックする</span><span class="sxs-lookup"><span data-stu-id="1bd2e-122">Allow or block log collection on installation failure</span></span>|
+|<span data-ttu-id="1bd2e-123">customerrormessage</span><span class="sxs-lookup"><span data-stu-id="1bd2e-123">customErrorMessage</span></span>|<span data-ttu-id="1bd2e-124">String</span><span class="sxs-lookup"><span data-stu-id="1bd2e-124">String</span></span>|<span data-ttu-id="1bd2e-125">インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する</span><span class="sxs-lookup"><span data-stu-id="1bd2e-125">Set custom error message to show upon installation failure</span></span>|
+|<span data-ttu-id="1bd2e-126">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="1bd2e-126">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="1bd2e-127">Int32</span><span class="sxs-lookup"><span data-stu-id="1bd2e-127">Int32</span></span>|<span data-ttu-id="1bd2e-128">インストールの進行状況のタイムアウトを分単位で設定する</span><span class="sxs-lookup"><span data-stu-id="1bd2e-128">Set installation progress timeout in minutes</span></span>|
+|<span data-ttu-id="1bd2e-129">allowdeviceuseoninstallfailure</span><span class="sxs-lookup"><span data-stu-id="1bd2e-129">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="1bd2e-130">ブール値</span><span class="sxs-lookup"><span data-stu-id="1bd2e-130">Boolean</span></span>|<span data-ttu-id="1bd2e-131">インストールエラー時にユーザーがデバイスを引き続き使用できるようにする</span><span class="sxs-lookup"><span data-stu-id="1bd2e-131">Allow the user to continue using the device on installation failure</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1d946-133">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="1d946-133">Relationships</span></span>
-<span data-ttu-id="1d946-134">なし</span><span class="sxs-lookup"><span data-stu-id="1d946-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="1bd2e-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="1bd2e-132">Relationships</span></span>
+<span data-ttu-id="1bd2e-133">なし</span><span class="sxs-lookup"><span data-stu-id="1bd2e-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1d946-135">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1d946-135">JSON Representation</span></span>
-<span data-ttu-id="1d946-136">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="1d946-136">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1bd2e-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1bd2e-134">JSON Representation</span></span>
+<span data-ttu-id="1bd2e-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="1bd2e-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings"

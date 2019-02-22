@@ -1,36 +1,36 @@
 ---
 title: ratingUnitedKingdomMoviesType 列挙型
-description: 映画は英国でのラベルの評価
-localization_priority: Normal
+description: 英国での映画の評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62194038006b011fdc8a70c4b399beef5e8c742b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412535"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148119"
 ---
-# <a name="ratingunitedkingdommoviestype-enum-type"></a><span data-ttu-id="01858-103">ratingUnitedKingdomMoviesType 列挙型</span><span class="sxs-lookup"><span data-stu-id="01858-103">ratingUnitedKingdomMoviesType enum type</span></span>
+# <a name="ratingunitedkingdommoviestype-enum-type"></a><span data-ttu-id="9d64d-103">ratingUnitedKingdomMoviesType 列挙型</span><span class="sxs-lookup"><span data-stu-id="9d64d-103">ratingUnitedKingdomMoviesType enum type</span></span>
 
-> <span data-ttu-id="01858-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="01858-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="01858-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="01858-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9d64d-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d64d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="01858-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="01858-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9d64d-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9d64d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="01858-107">映画は英国でのラベルの評価</span><span class="sxs-lookup"><span data-stu-id="01858-107">Movies rating labels in United Kingdom</span></span>
+<span data-ttu-id="9d64d-106">英国での映画の評価のラベル</span><span class="sxs-lookup"><span data-stu-id="9d64d-106">Movies rating labels in United Kingdom</span></span>
 
-## <a name="members"></a><span data-ttu-id="01858-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="01858-108">Members</span></span>
-|<span data-ttu-id="01858-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="01858-109">Member</span></span>|<span data-ttu-id="01858-110">値</span><span class="sxs-lookup"><span data-stu-id="01858-110">Value</span></span>|<span data-ttu-id="01858-111">説明</span><span class="sxs-lookup"><span data-stu-id="01858-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="9d64d-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="9d64d-107">Members</span></span>
+|<span data-ttu-id="9d64d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="9d64d-108">Member</span></span>|<span data-ttu-id="9d64d-109">値</span><span class="sxs-lookup"><span data-stu-id="9d64d-109">Value</span></span>|<span data-ttu-id="9d64d-110">説明</span><span class="sxs-lookup"><span data-stu-id="9d64d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="01858-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="01858-112">allAllowed</span></span>|<span data-ttu-id="01858-113">0</span><span class="sxs-lookup"><span data-stu-id="01858-113">0</span></span>|<span data-ttu-id="01858-114">既定値、映画のすべてのコンテンツを許可します。</span><span class="sxs-lookup"><span data-stu-id="01858-114">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="01858-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="01858-115">allBlocked</span></span>|<span data-ttu-id="01858-116">1</span><span class="sxs-lookup"><span data-stu-id="01858-116">1</span></span>|<span data-ttu-id="01858-117">ビデオ コンテンツを許可しません。</span><span class="sxs-lookup"><span data-stu-id="01858-117">Do not allow any movies content</span></span>|
-|<span data-ttu-id="01858-118">全般</span><span class="sxs-lookup"><span data-stu-id="01858-118">general</span></span>|<span data-ttu-id="01858-119">2</span><span class="sxs-lookup"><span data-stu-id="01858-119">2</span></span>|<span data-ttu-id="01858-120">U のクラス分けがすべての年代に適しています。</span><span class="sxs-lookup"><span data-stu-id="01858-120">The U classification is suitable for all ages</span></span>|
-|<span data-ttu-id="01858-121">universalChildren</span><span class="sxs-lookup"><span data-stu-id="01858-121">universalChildren</span></span>|<span data-ttu-id="01858-122">3</span><span class="sxs-lookup"><span data-stu-id="01858-122">3</span></span>|<span data-ttu-id="01858-123">UC のクラス分けが前の学校の子、以前の規制ラベルに適しています。</span><span class="sxs-lookup"><span data-stu-id="01858-123">The UC classification is suitable for pre-school children, an old rating label</span></span>|
-|<span data-ttu-id="01858-124">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="01858-124">parentalGuidance</span></span>|<span data-ttu-id="01858-125">4</span><span class="sxs-lookup"><span data-stu-id="01858-125">4</span></span>|<span data-ttu-id="01858-126">PG の分類が適切で完成度の高い</span><span class="sxs-lookup"><span data-stu-id="01858-126">The PG classification is suitable for mature</span></span>|
-|<span data-ttu-id="01858-127">agesAbove12Video</span><span class="sxs-lookup"><span data-stu-id="01858-127">agesAbove12Video</span></span>|<span data-ttu-id="01858-128">5</span><span class="sxs-lookup"><span data-stu-id="01858-128">5</span></span>|<span data-ttu-id="01858-129">12 年間、12、ビデオを適切なリリースします。</span><span class="sxs-lookup"><span data-stu-id="01858-129">12, video release suitable for 12 years and over</span></span>|
-|<span data-ttu-id="01858-130">agesAbove12Cinema</span><span class="sxs-lookup"><span data-stu-id="01858-130">agesAbove12Cinema</span></span>|<span data-ttu-id="01858-131">6</span><span class="sxs-lookup"><span data-stu-id="01858-131">6</span></span>|<span data-ttu-id="01858-132">12 a、映画のリリースが 12 年間、適切です</span><span class="sxs-lookup"><span data-stu-id="01858-132">12A, cinema release suitable for 12 years and over</span></span>|
-|<span data-ttu-id="01858-133">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="01858-133">agesAbove15</span></span>|<span data-ttu-id="01858-134">7</span><span class="sxs-lookup"><span data-stu-id="01858-134">7</span></span>|<span data-ttu-id="01858-135">15、15 年間にのみ適していると古い</span><span class="sxs-lookup"><span data-stu-id="01858-135">15, suitable only for 15 years and older</span></span>|
-|<span data-ttu-id="01858-136">大人</span><span class="sxs-lookup"><span data-stu-id="01858-136">adults</span></span>|<span data-ttu-id="01858-137">8</span><span class="sxs-lookup"><span data-stu-id="01858-137">8</span></span>|<span data-ttu-id="01858-138">大人にのみ適して</span><span class="sxs-lookup"><span data-stu-id="01858-138">Suitable only for adults</span></span>|
+|<span data-ttu-id="9d64d-111">allallowed</span><span class="sxs-lookup"><span data-stu-id="9d64d-111">allAllowed</span></span>|<span data-ttu-id="9d64d-112">.0</span><span class="sxs-lookup"><span data-stu-id="9d64d-112">0</span></span>|<span data-ttu-id="9d64d-113">既定値。すべてのムービーコンテンツを許可する</span><span class="sxs-lookup"><span data-stu-id="9d64d-113">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="9d64d-114">allblocked</span><span class="sxs-lookup"><span data-stu-id="9d64d-114">allBlocked</span></span>|<span data-ttu-id="9d64d-115">1-d</span><span class="sxs-lookup"><span data-stu-id="9d64d-115">1</span></span>|<span data-ttu-id="9d64d-116">任意の映画コンテンツを許可しない</span><span class="sxs-lookup"><span data-stu-id="9d64d-116">Do not allow any movies content</span></span>|
+|<span data-ttu-id="9d64d-117">元帳</span><span class="sxs-lookup"><span data-stu-id="9d64d-117">general</span></span>|<span data-ttu-id="9d64d-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="9d64d-118">2</span></span>|<span data-ttu-id="9d64d-119">U 分類は、すべての年齢に適しています。</span><span class="sxs-lookup"><span data-stu-id="9d64d-119">The U classification is suitable for all ages</span></span>|
+|<span data-ttu-id="9d64d-120">universalChildren</span><span class="sxs-lookup"><span data-stu-id="9d64d-120">universalChildren</span></span>|<span data-ttu-id="9d64d-121">1/3</span><span class="sxs-lookup"><span data-stu-id="9d64d-121">3</span></span>|<span data-ttu-id="9d64d-122">UC の分類は、以前の評価のラベルである、学校の子に適しています。</span><span class="sxs-lookup"><span data-stu-id="9d64d-122">The UC classification is suitable for pre-school children, an old rating label</span></span>|
+|<span data-ttu-id="9d64d-123">parentalguidance</span><span class="sxs-lookup"><span data-stu-id="9d64d-123">parentalGuidance</span></span>|<span data-ttu-id="9d64d-124">2/4</span><span class="sxs-lookup"><span data-stu-id="9d64d-124">4</span></span>|<span data-ttu-id="9d64d-125">PG 分類は、成熟に適しています。</span><span class="sxs-lookup"><span data-stu-id="9d64d-125">The PG classification is suitable for mature</span></span>|
+|<span data-ttu-id="9d64d-126">agesAbove12Video</span><span class="sxs-lookup"><span data-stu-id="9d64d-126">agesAbove12Video</span></span>|<span data-ttu-id="9d64d-127">5</span><span class="sxs-lookup"><span data-stu-id="9d64d-127">5</span></span>|<span data-ttu-id="9d64d-128">12年以上に適した12のビデオリリース</span><span class="sxs-lookup"><span data-stu-id="9d64d-128">12, video release suitable for 12 years and over</span></span>|
+|<span data-ttu-id="9d64d-129">agesAbove12Cinema</span><span class="sxs-lookup"><span data-stu-id="9d64d-129">agesAbove12Cinema</span></span>|<span data-ttu-id="9d64d-130">シックス</span><span class="sxs-lookup"><span data-stu-id="9d64d-130">6</span></span>|<span data-ttu-id="9d64d-131">12a、cinema リリースは、12年以上に適しています。</span><span class="sxs-lookup"><span data-stu-id="9d64d-131">12A, cinema release suitable for 12 years and over</span></span>|
+|<span data-ttu-id="9d64d-132">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="9d64d-132">agesAbove15</span></span>|<span data-ttu-id="9d64d-133">7</span><span class="sxs-lookup"><span data-stu-id="9d64d-133">7</span></span>|<span data-ttu-id="9d64d-134">15年以前にのみ適切</span><span class="sxs-lookup"><span data-stu-id="9d64d-134">15, suitable only for 15 years and older</span></span>|
+|<span data-ttu-id="9d64d-135">保護者</span><span class="sxs-lookup"><span data-stu-id="9d64d-135">adults</span></span>|<span data-ttu-id="9d64d-136">~</span><span class="sxs-lookup"><span data-stu-id="9d64d-136">8</span></span>|<span data-ttu-id="9d64d-137">大人にのみ適している</span><span class="sxs-lookup"><span data-stu-id="9d64d-137">Suitable only for adults</span></span>|
 
 
 

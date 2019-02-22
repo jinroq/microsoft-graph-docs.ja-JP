@@ -1,37 +1,37 @@
 ---
-title: managementConditionExpressionString リソースの種類
-description: 管理条件の式の文字列は、管理条件式の文字列表現です。
-localization_priority: Normal
+title: managementcondition式 string リソースの種類
+description: 管理条件式文字列は、管理条件式の文字列表現です。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b8abc3492690afe6709070decbfe050356fd614
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc4552ab6cc97676ced32ae7e7f5649262c4f4f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151010"
 ---
-# <a name="managementconditionexpressionstring-resource-type"></a><span data-ttu-id="3b9a1-103">managementConditionExpressionString リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3b9a1-103">managementConditionExpressionString resource type</span></span>
+# <a name="managementconditionexpressionstring-resource-type"></a><span data-ttu-id="4dbff-103">managementcondition式 string リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4dbff-103">managementConditionExpressionString resource type</span></span>
 
-> <span data-ttu-id="3b9a1-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3b9a1-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4dbff-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4dbff-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3b9a1-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4dbff-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4dbff-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3b9a1-107">管理条件の式の文字列は、管理条件式の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-107">A management condition expression string is a string representation of a management condition expression.</span></span>
+<span data-ttu-id="4dbff-106">管理条件式文字列は、管理条件式の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="4dbff-106">A management condition expression string is a string representation of a management condition expression.</span></span>
 
 
-<span data-ttu-id="3b9a1-108">[ManagementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-108">Inherits from [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)</span></span>
+<span data-ttu-id="4dbff-107">[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)から継承します</span><span class="sxs-lookup"><span data-stu-id="4dbff-107">Inherits from [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3b9a1-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3b9a1-109">Properties</span></span>
-|<span data-ttu-id="3b9a1-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3b9a1-110">Property</span></span>|<span data-ttu-id="3b9a1-111">型</span><span class="sxs-lookup"><span data-stu-id="3b9a1-111">Type</span></span>|<span data-ttu-id="3b9a1-112">説明</span><span class="sxs-lookup"><span data-stu-id="3b9a1-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4dbff-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4dbff-108">Properties</span></span>
+|<span data-ttu-id="4dbff-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4dbff-109">Property</span></span>|<span data-ttu-id="4dbff-110">型</span><span class="sxs-lookup"><span data-stu-id="4dbff-110">Type</span></span>|<span data-ttu-id="4dbff-111">説明</span><span class="sxs-lookup"><span data-stu-id="4dbff-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3b9a1-113">value</span><span class="sxs-lookup"><span data-stu-id="3b9a1-113">value</span></span>|<span data-ttu-id="3b9a1-114">文字列</span><span class="sxs-lookup"><span data-stu-id="3b9a1-114">String</span></span>|<span data-ttu-id="3b9a1-115">管理条件ステートメント式の文字列値。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-115">The management condition statement expression string value.</span></span>|
+|<span data-ttu-id="4dbff-112">value</span><span class="sxs-lookup"><span data-stu-id="4dbff-112">value</span></span>|<span data-ttu-id="4dbff-113">文字列</span><span class="sxs-lookup"><span data-stu-id="4dbff-113">String</span></span>|<span data-ttu-id="4dbff-114">管理条件ステートメントの式文字列値。</span><span class="sxs-lookup"><span data-stu-id="4dbff-114">The management condition statement expression string value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3b9a1-116">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="3b9a1-116">Relationships</span></span>
-<span data-ttu-id="3b9a1-117">なし</span><span class="sxs-lookup"><span data-stu-id="3b9a1-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4dbff-115">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="4dbff-115">Relationships</span></span>
+<span data-ttu-id="4dbff-116">なし</span><span class="sxs-lookup"><span data-stu-id="4dbff-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3b9a1-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3b9a1-118">JSON Representation</span></span>
-<span data-ttu-id="3b9a1-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="3b9a1-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4dbff-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4dbff-117">JSON Representation</span></span>
+<span data-ttu-id="4dbff-118">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="4dbff-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managementConditionExpressionString"

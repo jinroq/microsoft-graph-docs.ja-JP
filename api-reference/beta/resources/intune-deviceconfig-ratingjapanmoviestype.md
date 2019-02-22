@@ -1,33 +1,33 @@
 ---
 title: ratingJapanMoviesType 列挙型
-description: 映画の日本でのラベルの評価
-localization_priority: Normal
+description: 日本の映画の視聴制限ラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc8b5a6ba4790f749fb2da5c1e8c6ec1c000b962
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f327bd9c3623cbe768e7a87ba8af416ae9b0e4e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422041"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147643"
 ---
-# <a name="ratingjapanmoviestype-enum-type"></a><span data-ttu-id="59c29-103">ratingJapanMoviesType 列挙型</span><span class="sxs-lookup"><span data-stu-id="59c29-103">ratingJapanMoviesType enum type</span></span>
+# <a name="ratingjapanmoviestype-enum-type"></a><span data-ttu-id="4b08c-103">ratingJapanMoviesType 列挙型</span><span class="sxs-lookup"><span data-stu-id="4b08c-103">ratingJapanMoviesType enum type</span></span>
 
-> <span data-ttu-id="59c29-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="59c29-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="59c29-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="59c29-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4b08c-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4b08c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="59c29-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="59c29-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4b08c-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4b08c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="59c29-107">映画の日本でのラベルの評価</span><span class="sxs-lookup"><span data-stu-id="59c29-107">Movies rating labels in Japan</span></span>
+<span data-ttu-id="4b08c-106">日本の映画の視聴制限ラベル</span><span class="sxs-lookup"><span data-stu-id="4b08c-106">Movies rating labels in Japan</span></span>
 
-## <a name="members"></a><span data-ttu-id="59c29-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="59c29-108">Members</span></span>
-|<span data-ttu-id="59c29-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="59c29-109">Member</span></span>|<span data-ttu-id="59c29-110">値</span><span class="sxs-lookup"><span data-stu-id="59c29-110">Value</span></span>|<span data-ttu-id="59c29-111">説明</span><span class="sxs-lookup"><span data-stu-id="59c29-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="4b08c-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="4b08c-107">Members</span></span>
+|<span data-ttu-id="4b08c-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="4b08c-108">Member</span></span>|<span data-ttu-id="4b08c-109">値</span><span class="sxs-lookup"><span data-stu-id="4b08c-109">Value</span></span>|<span data-ttu-id="4b08c-110">説明</span><span class="sxs-lookup"><span data-stu-id="4b08c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="59c29-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="59c29-112">allAllowed</span></span>|<span data-ttu-id="59c29-113">0</span><span class="sxs-lookup"><span data-stu-id="59c29-113">0</span></span>|<span data-ttu-id="59c29-114">既定値、映画のすべてのコンテンツを許可します。</span><span class="sxs-lookup"><span data-stu-id="59c29-114">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="59c29-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="59c29-115">allBlocked</span></span>|<span data-ttu-id="59c29-116">1</span><span class="sxs-lookup"><span data-stu-id="59c29-116">1</span></span>|<span data-ttu-id="59c29-117">ビデオ コンテンツを許可しません。</span><span class="sxs-lookup"><span data-stu-id="59c29-117">Do not allow any movies content</span></span>|
-|<span data-ttu-id="59c29-118">全般</span><span class="sxs-lookup"><span data-stu-id="59c29-118">general</span></span>|<span data-ttu-id="59c29-119">2</span><span class="sxs-lookup"><span data-stu-id="59c29-119">2</span></span>|<span data-ttu-id="59c29-120">一般ユーザー向け</span><span class="sxs-lookup"><span data-stu-id="59c29-120">Suitable for all ages</span></span>|
-|<span data-ttu-id="59c29-121">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="59c29-121">parentalGuidance</span></span>|<span data-ttu-id="59c29-122">3</span><span class="sxs-lookup"><span data-stu-id="59c29-122">3</span></span>|<span data-ttu-id="59c29-123">PG 12 分類若い人で 12 の保護者による制限を要求します。</span><span class="sxs-lookup"><span data-stu-id="59c29-123">The PG-12 classification requests parental guidance for young people under 12</span></span>|
-|<span data-ttu-id="59c29-124">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="59c29-124">agesAbove15</span></span>|<span data-ttu-id="59c29-125">4</span><span class="sxs-lookup"><span data-stu-id="59c29-125">4</span></span>|<span data-ttu-id="59c29-126">R15 の各 + のクラス分けは、15 の閲覧者に対して適切なまたは古い</span><span class="sxs-lookup"><span data-stu-id="59c29-126">The R15+ classification is suitable for viewers of 15 or older</span></span>|
-|<span data-ttu-id="59c29-127">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="59c29-127">agesAbove18</span></span>|<span data-ttu-id="59c29-128">5</span><span class="sxs-lookup"><span data-stu-id="59c29-128">5</span></span>|<span data-ttu-id="59c29-129">R18 + の分類は、18 の閲覧者に対して適切なまたは古い</span><span class="sxs-lookup"><span data-stu-id="59c29-129">The R18+ classification is suitable for viewers of 18 or older</span></span>|
+|<span data-ttu-id="4b08c-111">allallowed</span><span class="sxs-lookup"><span data-stu-id="4b08c-111">allAllowed</span></span>|<span data-ttu-id="4b08c-112">.0</span><span class="sxs-lookup"><span data-stu-id="4b08c-112">0</span></span>|<span data-ttu-id="4b08c-113">既定値。すべてのムービーコンテンツを許可する</span><span class="sxs-lookup"><span data-stu-id="4b08c-113">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="4b08c-114">allblocked</span><span class="sxs-lookup"><span data-stu-id="4b08c-114">allBlocked</span></span>|<span data-ttu-id="4b08c-115">1-d</span><span class="sxs-lookup"><span data-stu-id="4b08c-115">1</span></span>|<span data-ttu-id="4b08c-116">任意の映画コンテンツを許可しない</span><span class="sxs-lookup"><span data-stu-id="4b08c-116">Do not allow any movies content</span></span>|
+|<span data-ttu-id="4b08c-117">元帳</span><span class="sxs-lookup"><span data-stu-id="4b08c-117">general</span></span>|<span data-ttu-id="4b08c-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="4b08c-118">2</span></span>|<span data-ttu-id="4b08c-119">すべての年齢に適している</span><span class="sxs-lookup"><span data-stu-id="4b08c-119">Suitable for all ages</span></span>|
+|<span data-ttu-id="4b08c-120">parentalguidance</span><span class="sxs-lookup"><span data-stu-id="4b08c-120">parentalGuidance</span></span>|<span data-ttu-id="4b08c-121">1/3</span><span class="sxs-lookup"><span data-stu-id="4b08c-121">3</span></span>|<span data-ttu-id="4b08c-122">PG-12 の分類では、12の下のユーザーについての上位のガイダンスが要求されます。</span><span class="sxs-lookup"><span data-stu-id="4b08c-122">The PG-12 classification requests parental guidance for young people under 12</span></span>|
+|<span data-ttu-id="4b08c-123">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="4b08c-123">agesAbove15</span></span>|<span data-ttu-id="4b08c-124">2/4</span><span class="sxs-lookup"><span data-stu-id="4b08c-124">4</span></span>|<span data-ttu-id="4b08c-125">R15 + 分類は、15才以上の閲覧者に適しています。</span><span class="sxs-lookup"><span data-stu-id="4b08c-125">The R15+ classification is suitable for viewers of 15 or older</span></span>|
+|<span data-ttu-id="4b08c-126">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="4b08c-126">agesAbove18</span></span>|<span data-ttu-id="4b08c-127">5</span><span class="sxs-lookup"><span data-stu-id="4b08c-127">5</span></span>|<span data-ttu-id="4b08c-128">R18 + 分類は、18才以上の閲覧者に適しています。</span><span class="sxs-lookup"><span data-stu-id="4b08c-128">The R18+ classification is suitable for viewers of 18 or older</span></span>|
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: mobileAppActionType 列挙型
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5dee317bfecdf98d45999cb7b4d6c0da22c7ac5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 624d91851e2182bd8196a1c2bd64df93190b098b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396057"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152788"
 ---
-# <a name="mobileappactiontype-enum-type"></a><span data-ttu-id="b0843-103">mobileAppActionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="b0843-103">mobileAppActionType enum type</span></span>
+# <a name="mobileappactiontype-enum-type"></a><span data-ttu-id="16ed7-103">mobileAppActionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="16ed7-103">mobileAppActionType enum type</span></span>
 
-> <span data-ttu-id="b0843-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b0843-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b0843-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0843-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="16ed7-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="16ed7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b0843-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b0843-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="16ed7-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="16ed7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b0843-107">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b0843-107">Not yet documented</span></span>
+<span data-ttu-id="16ed7-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="16ed7-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="b0843-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="b0843-108">Members</span></span>
-|<span data-ttu-id="b0843-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="b0843-109">Member</span></span>|<span data-ttu-id="b0843-110">値</span><span class="sxs-lookup"><span data-stu-id="b0843-110">Value</span></span>|<span data-ttu-id="b0843-111">説明</span><span class="sxs-lookup"><span data-stu-id="b0843-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="16ed7-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="16ed7-107">Members</span></span>
+|<span data-ttu-id="16ed7-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="16ed7-108">Member</span></span>|<span data-ttu-id="16ed7-109">値</span><span class="sxs-lookup"><span data-stu-id="16ed7-109">Value</span></span>|<span data-ttu-id="16ed7-110">説明</span><span class="sxs-lookup"><span data-stu-id="16ed7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b0843-112">不明</span><span class="sxs-lookup"><span data-stu-id="b0843-112">unknown</span></span>|<span data-ttu-id="b0843-113">0</span><span class="sxs-lookup"><span data-stu-id="b0843-113">0</span></span>|<span data-ttu-id="b0843-114">不明な結果です。</span><span class="sxs-lookup"><span data-stu-id="b0843-114">Unknown result.</span></span>|
-|<span data-ttu-id="b0843-115">installCommandSent</span><span class="sxs-lookup"><span data-stu-id="b0843-115">installCommandSent</span></span>|<span data-ttu-id="b0843-116">1</span><span class="sxs-lookup"><span data-stu-id="b0843-116">1</span></span>|<span data-ttu-id="b0843-117">アプリケーションのインストール コマンドが送信されました。</span><span class="sxs-lookup"><span data-stu-id="b0843-117">Application install command was sent.</span></span>|
-|<span data-ttu-id="b0843-118">インストールされています。</span><span class="sxs-lookup"><span data-stu-id="b0843-118">installed</span></span>|<span data-ttu-id="b0843-119">3</span><span class="sxs-lookup"><span data-stu-id="b0843-119">3</span></span>|<span data-ttu-id="b0843-120">アプリケーションをインストールします。</span><span class="sxs-lookup"><span data-stu-id="b0843-120">Application installed.</span></span>|
-|<span data-ttu-id="b0843-121">アンインストール</span><span class="sxs-lookup"><span data-stu-id="b0843-121">uninstalled</span></span>|<span data-ttu-id="b0843-122">4</span><span class="sxs-lookup"><span data-stu-id="b0843-122">4</span></span>|<span data-ttu-id="b0843-123">アプリケーションをアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="b0843-123">Application uninstalled.</span></span>|
-|<span data-ttu-id="b0843-124">userRequestedInstall</span><span class="sxs-lookup"><span data-stu-id="b0843-124">userRequestedInstall</span></span>|<span data-ttu-id="b0843-125">5</span><span class="sxs-lookup"><span data-stu-id="b0843-125">5</span></span>|<span data-ttu-id="b0843-126">インストールを要求します。</span><span class="sxs-lookup"><span data-stu-id="b0843-126">User requested installation</span></span>|
+|<span data-ttu-id="16ed7-111">不明</span><span class="sxs-lookup"><span data-stu-id="16ed7-111">unknown</span></span>|<span data-ttu-id="16ed7-112">.0</span><span class="sxs-lookup"><span data-stu-id="16ed7-112">0</span></span>|<span data-ttu-id="16ed7-113">不明な結果です。</span><span class="sxs-lookup"><span data-stu-id="16ed7-113">Unknown result.</span></span>|
+|<span data-ttu-id="16ed7-114">installcommandsent</span><span class="sxs-lookup"><span data-stu-id="16ed7-114">installCommandSent</span></span>|<span data-ttu-id="16ed7-115">1-d</span><span class="sxs-lookup"><span data-stu-id="16ed7-115">1</span></span>|<span data-ttu-id="16ed7-116">アプリケーションのインストールコマンドが送信されました。</span><span class="sxs-lookup"><span data-stu-id="16ed7-116">Application install command was sent.</span></span>|
+|<span data-ttu-id="16ed7-117">れる</span><span class="sxs-lookup"><span data-stu-id="16ed7-117">installed</span></span>|<span data-ttu-id="16ed7-118">1/3</span><span class="sxs-lookup"><span data-stu-id="16ed7-118">3</span></span>|<span data-ttu-id="16ed7-119">アプリケーションがインストールされている。</span><span class="sxs-lookup"><span data-stu-id="16ed7-119">Application installed.</span></span>|
+|<span data-ttu-id="16ed7-120">アンインストール</span><span class="sxs-lookup"><span data-stu-id="16ed7-120">uninstalled</span></span>|<span data-ttu-id="16ed7-121">2/4</span><span class="sxs-lookup"><span data-stu-id="16ed7-121">4</span></span>|<span data-ttu-id="16ed7-122">アプリケーションがアンインストールされた。</span><span class="sxs-lookup"><span data-stu-id="16ed7-122">Application uninstalled.</span></span>|
+|<span data-ttu-id="16ed7-123">userrequestedinstall</span><span class="sxs-lookup"><span data-stu-id="16ed7-123">userRequestedInstall</span></span>|<span data-ttu-id="16ed7-124">5</span><span class="sxs-lookup"><span data-stu-id="16ed7-124">5</span></span>|<span data-ttu-id="16ed7-125">ユーザーが要求したインストール</span><span class="sxs-lookup"><span data-stu-id="16ed7-125">User requested installation</span></span>|
 
 
 

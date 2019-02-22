@@ -1,34 +1,34 @@
 ---
-title: deviceAndAppManagementData リソースの種類
+title: deviceandappmanagementdata リソースの種類
 description: エクスポートされたデータ
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 595fa02011b2e88a0cec214f33cd9479f9a5dd30
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d3b91b0186b2263a936cabe02bd533a550a24748
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415909"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154853"
 ---
-# <a name="deviceandappmanagementdata-resource-type"></a><span data-ttu-id="1906f-103">deviceAndAppManagementData リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1906f-103">deviceAndAppManagementData resource type</span></span>
+# <a name="deviceandappmanagementdata-resource-type"></a><span data-ttu-id="2c275-103">deviceandappmanagementdata リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2c275-103">deviceAndAppManagementData resource type</span></span>
 
-> <span data-ttu-id="1906f-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1906f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1906f-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1906f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2c275-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2c275-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1906f-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1906f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2c275-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2c275-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1906f-107">エクスポートされたデータ</span><span class="sxs-lookup"><span data-stu-id="1906f-107">Exported Data</span></span>
+<span data-ttu-id="2c275-106">エクスポートされたデータ</span><span class="sxs-lookup"><span data-stu-id="2c275-106">Exported Data</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1906f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1906f-108">Properties</span></span>
-|<span data-ttu-id="1906f-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1906f-109">Property</span></span>|<span data-ttu-id="1906f-110">型</span><span class="sxs-lookup"><span data-stu-id="1906f-110">Type</span></span>|<span data-ttu-id="1906f-111">説明</span><span class="sxs-lookup"><span data-stu-id="1906f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2c275-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2c275-107">Properties</span></span>
+|<span data-ttu-id="2c275-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2c275-108">Property</span></span>|<span data-ttu-id="2c275-109">型</span><span class="sxs-lookup"><span data-stu-id="2c275-109">Type</span></span>|<span data-ttu-id="2c275-110">説明</span><span class="sxs-lookup"><span data-stu-id="2c275-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1906f-112">content</span><span class="sxs-lookup"><span data-stu-id="1906f-112">content</span></span>|<span data-ttu-id="1906f-113">ストリーム</span><span class="sxs-lookup"><span data-stu-id="1906f-113">Stream</span></span>|<span data-ttu-id="1906f-114">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="1906f-114">Not yet documented</span></span>|
+|<span data-ttu-id="2c275-111">content</span><span class="sxs-lookup"><span data-stu-id="2c275-111">content</span></span>|<span data-ttu-id="2c275-112">ストリーム</span><span class="sxs-lookup"><span data-stu-id="2c275-112">Stream</span></span>|<span data-ttu-id="2c275-113">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="2c275-113">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1906f-115">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="1906f-115">Relationships</span></span>
-<span data-ttu-id="1906f-116">なし</span><span class="sxs-lookup"><span data-stu-id="1906f-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2c275-114">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="2c275-114">Relationships</span></span>
+<span data-ttu-id="2c275-115">なし</span><span class="sxs-lookup"><span data-stu-id="2c275-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1906f-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1906f-117">JSON Representation</span></span>
-<span data-ttu-id="1906f-118">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="1906f-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2c275-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2c275-116">JSON Representation</span></span>
+<span data-ttu-id="2c275-117">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2c275-117">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementData"
