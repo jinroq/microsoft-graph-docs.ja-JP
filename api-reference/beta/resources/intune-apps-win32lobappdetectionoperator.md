@@ -1,34 +1,34 @@
 ---
 title: win32LobAppDetectionOperator 列挙型
 description: 検出演算子のプロパティが含まれています。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f600d545691741c37d8a315f8af3f5e12ec435c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 477306e8f4ed5029d9f504ca80ed7126ee1093f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165941"
 ---
-# <a name="win32lobappdetectionoperator-enum-type"></a><span data-ttu-id="643d6-103">win32LobAppDetectionOperator 列挙型</span><span class="sxs-lookup"><span data-stu-id="643d6-103">win32LobAppDetectionOperator enum type</span></span>
+# <a name="win32lobappdetectionoperator-enum-type"></a><span data-ttu-id="fc408-103">win32LobAppDetectionOperator 列挙型</span><span class="sxs-lookup"><span data-stu-id="fc408-103">win32LobAppDetectionOperator enum type</span></span>
 
-> <span data-ttu-id="643d6-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="643d6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="643d6-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="643d6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fc408-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fc408-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="643d6-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="643d6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fc408-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="fc408-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="643d6-107">検出演算子のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="643d6-107">Contains properties for detection operator.</span></span>
+<span data-ttu-id="fc408-106">検出演算子のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fc408-106">Contains properties for detection operator.</span></span>
 
-## <a name="members"></a><span data-ttu-id="643d6-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="643d6-108">Members</span></span>
-|<span data-ttu-id="643d6-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="643d6-109">Member</span></span>|<span data-ttu-id="643d6-110">値</span><span class="sxs-lookup"><span data-stu-id="643d6-110">Value</span></span>|<span data-ttu-id="643d6-111">説明</span><span class="sxs-lookup"><span data-stu-id="643d6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="fc408-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="fc408-107">Members</span></span>
+|<span data-ttu-id="fc408-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="fc408-108">Member</span></span>|<span data-ttu-id="fc408-109">値</span><span class="sxs-lookup"><span data-stu-id="fc408-109">Value</span></span>|<span data-ttu-id="fc408-110">説明</span><span class="sxs-lookup"><span data-stu-id="fc408-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="643d6-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="643d6-112">notConfigured</span></span>|<span data-ttu-id="643d6-113">0</span><span class="sxs-lookup"><span data-stu-id="643d6-113">0</span></span>|<span data-ttu-id="643d6-114">構成されていません。</span><span class="sxs-lookup"><span data-stu-id="643d6-114">Not configured.</span></span>|
-|<span data-ttu-id="643d6-115">等しい</span><span class="sxs-lookup"><span data-stu-id="643d6-115">equal</span></span>|<span data-ttu-id="643d6-116">1</span><span class="sxs-lookup"><span data-stu-id="643d6-116">1</span></span>|<span data-ttu-id="643d6-117">等値演算子。</span><span class="sxs-lookup"><span data-stu-id="643d6-117">Equal operator.</span></span>|
-|<span data-ttu-id="643d6-118">notEqual</span><span class="sxs-lookup"><span data-stu-id="643d6-118">notEqual</span></span>|<span data-ttu-id="643d6-119">2</span><span class="sxs-lookup"><span data-stu-id="643d6-119">2</span></span>|<span data-ttu-id="643d6-120">等しくない演算子です。</span><span class="sxs-lookup"><span data-stu-id="643d6-120">Not equal operator.</span></span>|
-|<span data-ttu-id="643d6-121">公差</span><span class="sxs-lookup"><span data-stu-id="643d6-121">greaterThan</span></span>|<span data-ttu-id="643d6-122">4</span><span class="sxs-lookup"><span data-stu-id="643d6-122">4</span></span>|<span data-ttu-id="643d6-123">演算子よりも大きい。</span><span class="sxs-lookup"><span data-stu-id="643d6-123">Greater than operator.</span></span>|
-|<span data-ttu-id="643d6-124">greaterThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="643d6-124">greaterThanOrEqual</span></span>|<span data-ttu-id="643d6-125">5</span><span class="sxs-lookup"><span data-stu-id="643d6-125">5</span></span>|<span data-ttu-id="643d6-126">大きいか等しい演算子です。</span><span class="sxs-lookup"><span data-stu-id="643d6-126">Greater than or equal operator.</span></span>|
-|<span data-ttu-id="643d6-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="643d6-127">lessThan</span></span>|<span data-ttu-id="643d6-128">8</span><span class="sxs-lookup"><span data-stu-id="643d6-128">8</span></span>|<span data-ttu-id="643d6-129">演算子よりも小さい値です。</span><span class="sxs-lookup"><span data-stu-id="643d6-129">Less than operator.</span></span>|
-|<span data-ttu-id="643d6-130">lessThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="643d6-130">lessThanOrEqual</span></span>|<span data-ttu-id="643d6-131">9</span><span class="sxs-lookup"><span data-stu-id="643d6-131">9</span></span>|<span data-ttu-id="643d6-132">小さいか等しい演算子。</span><span class="sxs-lookup"><span data-stu-id="643d6-132">Less than or equal operator.</span></span>|
+|<span data-ttu-id="fc408-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="fc408-111">notConfigured</span></span>|<span data-ttu-id="fc408-112">.0</span><span class="sxs-lookup"><span data-stu-id="fc408-112">0</span></span>|<span data-ttu-id="fc408-113">構成されていません。</span><span class="sxs-lookup"><span data-stu-id="fc408-113">Not configured.</span></span>|
+|<span data-ttu-id="fc408-114">なり</span><span class="sxs-lookup"><span data-stu-id="fc408-114">equal</span></span>|<span data-ttu-id="fc408-115">1-d</span><span class="sxs-lookup"><span data-stu-id="fc408-115">1</span></span>|<span data-ttu-id="fc408-116">等値演算子</span><span class="sxs-lookup"><span data-stu-id="fc408-116">Equal operator.</span></span>|
+|<span data-ttu-id="fc408-117">メモの qual</span><span class="sxs-lookup"><span data-stu-id="fc408-117">notEqual</span></span>|<span data-ttu-id="fc408-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="fc408-118">2</span></span>|<span data-ttu-id="fc408-119">等しくない演算子です。</span><span class="sxs-lookup"><span data-stu-id="fc408-119">Not equal operator.</span></span>|
+|<span data-ttu-id="fc408-120">greaterThan</span><span class="sxs-lookup"><span data-stu-id="fc408-120">greaterThan</span></span>|<span data-ttu-id="fc408-121">2/4</span><span class="sxs-lookup"><span data-stu-id="fc408-121">4</span></span>|<span data-ttu-id="fc408-122">より大きい演算子。</span><span class="sxs-lookup"><span data-stu-id="fc408-122">Greater than operator.</span></span>|
+|<span data-ttu-id="fc408-123">greaterThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="fc408-123">greaterThanOrEqual</span></span>|<span data-ttu-id="fc408-124">5</span><span class="sxs-lookup"><span data-stu-id="fc408-124">5</span></span>|<span data-ttu-id="fc408-125">演算子より大きいまたは等しい。</span><span class="sxs-lookup"><span data-stu-id="fc408-125">Greater than or equal operator.</span></span>|
+|<span data-ttu-id="fc408-126">lessThan</span><span class="sxs-lookup"><span data-stu-id="fc408-126">lessThan</span></span>|<span data-ttu-id="fc408-127">~</span><span class="sxs-lookup"><span data-stu-id="fc408-127">8</span></span>|<span data-ttu-id="fc408-128">未満演算子。</span><span class="sxs-lookup"><span data-stu-id="fc408-128">Less than operator.</span></span>|
+|<span data-ttu-id="fc408-129">不等号 (等しくない)</span><span class="sxs-lookup"><span data-stu-id="fc408-129">lessThanOrEqual</span></span>|<span data-ttu-id="fc408-130">i-9</span><span class="sxs-lookup"><span data-stu-id="fc408-130">9</span></span>|<span data-ttu-id="fc408-131">演算子の値より小さいまたは等しい。</span><span class="sxs-lookup"><span data-stu-id="fc408-131">Less than or equal operator.</span></span>|
 
 
 

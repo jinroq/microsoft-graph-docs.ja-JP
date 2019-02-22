@@ -1,40 +1,40 @@
 ---
 title: macOSMinimumOperatingSystem リソースの種類
-description: MacOS アプリケーションに必要な最低限のオペレーティング システムです。
-localization_priority: Normal
+description: MacOS アプリに必要な最小限のオペレーティングシステム。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1b5bb3c31f876cb7444ff90cad5060c08d2f60b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f6975690361c981d6b5aaf1d9dae959ad6f8be5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169938"
 ---
-# <a name="macosminimumoperatingsystem-resource-type"></a><span data-ttu-id="a7f5c-103">macOSMinimumOperatingSystem リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a7f5c-103">macOSMinimumOperatingSystem resource type</span></span>
+# <a name="macosminimumoperatingsystem-resource-type"></a><span data-ttu-id="47f40-103">macOSMinimumOperatingSystem リソースの種類</span><span class="sxs-lookup"><span data-stu-id="47f40-103">macOSMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="a7f5c-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a7f5c-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="47f40-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="47f40-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a7f5c-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="47f40-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="47f40-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a7f5c-107">MacOS アプリケーションに必要な最低限のオペレーティング システムです。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-107">The minimum operating system required for a MacOS app.</span></span>
+<span data-ttu-id="47f40-106">MacOS アプリに必要な最小限のオペレーティングシステム。</span><span class="sxs-lookup"><span data-stu-id="47f40-106">The minimum operating system required for a MacOS app.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a7f5c-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a7f5c-108">Properties</span></span>
-|<span data-ttu-id="a7f5c-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a7f5c-109">Property</span></span>|<span data-ttu-id="a7f5c-110">型</span><span class="sxs-lookup"><span data-stu-id="a7f5c-110">Type</span></span>|<span data-ttu-id="a7f5c-111">説明</span><span class="sxs-lookup"><span data-stu-id="a7f5c-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="47f40-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="47f40-107">Properties</span></span>
+|<span data-ttu-id="47f40-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="47f40-108">Property</span></span>|<span data-ttu-id="47f40-109">型</span><span class="sxs-lookup"><span data-stu-id="47f40-109">Type</span></span>|<span data-ttu-id="47f40-110">説明</span><span class="sxs-lookup"><span data-stu-id="47f40-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a7f5c-112">v10_7</span><span class="sxs-lookup"><span data-stu-id="a7f5c-112">v10_7</span></span>|<span data-ttu-id="a7f5c-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-113">Boolean</span></span>|<span data-ttu-id="a7f5c-114">Mac OS 10.7 以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-114">Mac OS 10.7 or later.</span></span>|
-|<span data-ttu-id="a7f5c-115">v10_8</span><span class="sxs-lookup"><span data-stu-id="a7f5c-115">v10_8</span></span>|<span data-ttu-id="a7f5c-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-116">Boolean</span></span>|<span data-ttu-id="a7f5c-117">Mac OS 10.8 以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-117">Mac OS 10.8 or later.</span></span>|
-|<span data-ttu-id="a7f5c-118">v10_9</span><span class="sxs-lookup"><span data-stu-id="a7f5c-118">v10_9</span></span>|<span data-ttu-id="a7f5c-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-119">Boolean</span></span>|<span data-ttu-id="a7f5c-120">Mac OS 10.9 以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-120">Mac OS 10.9 or later.</span></span>|
-|<span data-ttu-id="a7f5c-121">v10_10</span><span class="sxs-lookup"><span data-stu-id="a7f5c-121">v10_10</span></span>|<span data-ttu-id="a7f5c-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-122">Boolean</span></span>|<span data-ttu-id="a7f5c-123">Mac OS 10.10 以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-123">Mac OS 10.10 or later.</span></span>|
-|<span data-ttu-id="a7f5c-124">v10_11</span><span class="sxs-lookup"><span data-stu-id="a7f5c-124">v10_11</span></span>|<span data-ttu-id="a7f5c-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-125">Boolean</span></span>|<span data-ttu-id="a7f5c-126">Mac OS 10.11 またはそれ以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-126">Mac OS 10.11 or later.</span></span>|
-|<span data-ttu-id="a7f5c-127">v10_12</span><span class="sxs-lookup"><span data-stu-id="a7f5c-127">v10_12</span></span>|<span data-ttu-id="a7f5c-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-128">Boolean</span></span>|<span data-ttu-id="a7f5c-129">Mac OS 10.12 以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-129">Mac OS 10.12 or later.</span></span>|
-|<span data-ttu-id="a7f5c-130">v10_13</span><span class="sxs-lookup"><span data-stu-id="a7f5c-130">v10_13</span></span>|<span data-ttu-id="a7f5c-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="a7f5c-131">Boolean</span></span>|<span data-ttu-id="a7f5c-132">Mac OS 10.13 またはそれ以降です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-132">Mac OS 10.13 or later.</span></span>|
+|<span data-ttu-id="47f40-111">v10_7</span><span class="sxs-lookup"><span data-stu-id="47f40-111">v10_7</span></span>|<span data-ttu-id="47f40-112">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-112">Boolean</span></span>|<span data-ttu-id="47f40-113">Mac OS 10.7 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-113">Mac OS 10.7 or later.</span></span>|
+|<span data-ttu-id="47f40-114">v10_8</span><span class="sxs-lookup"><span data-stu-id="47f40-114">v10_8</span></span>|<span data-ttu-id="47f40-115">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-115">Boolean</span></span>|<span data-ttu-id="47f40-116">Mac OS 10.8 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-116">Mac OS 10.8 or later.</span></span>|
+|<span data-ttu-id="47f40-117">v10_9</span><span class="sxs-lookup"><span data-stu-id="47f40-117">v10_9</span></span>|<span data-ttu-id="47f40-118">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-118">Boolean</span></span>|<span data-ttu-id="47f40-119">Mac OS 10.9 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-119">Mac OS 10.9 or later.</span></span>|
+|<span data-ttu-id="47f40-120">v10_10</span><span class="sxs-lookup"><span data-stu-id="47f40-120">v10_10</span></span>|<span data-ttu-id="47f40-121">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-121">Boolean</span></span>|<span data-ttu-id="47f40-122">Mac OS 10.10 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-122">Mac OS 10.10 or later.</span></span>|
+|<span data-ttu-id="47f40-123">v10_11</span><span class="sxs-lookup"><span data-stu-id="47f40-123">v10_11</span></span>|<span data-ttu-id="47f40-124">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-124">Boolean</span></span>|<span data-ttu-id="47f40-125">Mac OS 10.11 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-125">Mac OS 10.11 or later.</span></span>|
+|<span data-ttu-id="47f40-126">v10_12</span><span class="sxs-lookup"><span data-stu-id="47f40-126">v10_12</span></span>|<span data-ttu-id="47f40-127">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-127">Boolean</span></span>|<span data-ttu-id="47f40-128">Mac OS 10.12 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-128">Mac OS 10.12 or later.</span></span>|
+|<span data-ttu-id="47f40-129">v10_13</span><span class="sxs-lookup"><span data-stu-id="47f40-129">v10_13</span></span>|<span data-ttu-id="47f40-130">ブール値</span><span class="sxs-lookup"><span data-stu-id="47f40-130">Boolean</span></span>|<span data-ttu-id="47f40-131">Mac OS 10.13 以降。</span><span class="sxs-lookup"><span data-stu-id="47f40-131">Mac OS 10.13 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a7f5c-133">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a7f5c-133">Relationships</span></span>
-<span data-ttu-id="a7f5c-134">なし</span><span class="sxs-lookup"><span data-stu-id="a7f5c-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="47f40-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="47f40-132">Relationships</span></span>
+<span data-ttu-id="47f40-133">なし</span><span class="sxs-lookup"><span data-stu-id="47f40-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a7f5c-135">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a7f5c-135">JSON Representation</span></span>
-<span data-ttu-id="a7f5c-136">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a7f5c-136">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="47f40-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="47f40-134">JSON Representation</span></span>
+<span data-ttu-id="47f40-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="47f40-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem"

@@ -1,33 +1,33 @@
 ---
-title: androidManagedStoreAccountAppSyncStatus 列挙型
-description: Google の EMM の API を使用してテナントの同期の状態
-localization_priority: Normal
+title: androidmanagedstoreaccountappsyncstatus 列挙型
+description: Google EMM API を使用したテナントの状態の同期
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00eff60547b7d68655cd6aec80c4d3a6f7475bef
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: db29d059d0e8b57c69bfe24a4ab9bdd07c58781f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164317"
 ---
-# <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a><span data-ttu-id="06fe8-103">androidManagedStoreAccountAppSyncStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="06fe8-103">androidManagedStoreAccountAppSyncStatus enum type</span></span>
+# <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a><span data-ttu-id="3f07d-103">androidmanagedstoreaccountappsyncstatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="3f07d-103">androidManagedStoreAccountAppSyncStatus enum type</span></span>
 
-> <span data-ttu-id="06fe8-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="06fe8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="06fe8-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="06fe8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3f07d-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3f07d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="06fe8-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="06fe8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3f07d-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3f07d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="06fe8-107">Google の EMM の API を使用してテナントの同期の状態</span><span class="sxs-lookup"><span data-stu-id="06fe8-107">Sync status of the tenant with the Google EMM API</span></span>
+<span data-ttu-id="3f07d-106">Google EMM API を使用したテナントの状態の同期</span><span class="sxs-lookup"><span data-stu-id="3f07d-106">Sync status of the tenant with the Google EMM API</span></span>
 
-## <a name="members"></a><span data-ttu-id="06fe8-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="06fe8-108">Members</span></span>
-|<span data-ttu-id="06fe8-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="06fe8-109">Member</span></span>|<span data-ttu-id="06fe8-110">値</span><span class="sxs-lookup"><span data-stu-id="06fe8-110">Value</span></span>|<span data-ttu-id="06fe8-111">説明</span><span class="sxs-lookup"><span data-stu-id="06fe8-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3f07d-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="3f07d-107">Members</span></span>
+|<span data-ttu-id="3f07d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="3f07d-108">Member</span></span>|<span data-ttu-id="3f07d-109">値</span><span class="sxs-lookup"><span data-stu-id="3f07d-109">Value</span></span>|<span data-ttu-id="3f07d-110">説明</span><span class="sxs-lookup"><span data-stu-id="3f07d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="06fe8-112">success</span><span class="sxs-lookup"><span data-stu-id="06fe8-112">success</span></span>|<span data-ttu-id="06fe8-113">0</span><span class="sxs-lookup"><span data-stu-id="06fe8-113">0</span></span>|<span data-ttu-id="06fe8-114">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-114">Not yet documented</span></span>|
-|<span data-ttu-id="06fe8-115">credentialsNotValid</span><span class="sxs-lookup"><span data-stu-id="06fe8-115">credentialsNotValid</span></span>|<span data-ttu-id="06fe8-116">1</span><span class="sxs-lookup"><span data-stu-id="06fe8-116">1</span></span>|<span data-ttu-id="06fe8-117">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-117">Not yet documented</span></span>|
-|<span data-ttu-id="06fe8-118">androidForWorkApiError</span><span class="sxs-lookup"><span data-stu-id="06fe8-118">androidForWorkApiError</span></span>|<span data-ttu-id="06fe8-119">2</span><span class="sxs-lookup"><span data-stu-id="06fe8-119">2</span></span>|<span data-ttu-id="06fe8-120">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-120">Not yet documented</span></span>|
-|<span data-ttu-id="06fe8-121">managementServiceError</span><span class="sxs-lookup"><span data-stu-id="06fe8-121">managementServiceError</span></span>|<span data-ttu-id="06fe8-122">3</span><span class="sxs-lookup"><span data-stu-id="06fe8-122">3</span></span>|<span data-ttu-id="06fe8-123">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-123">Not yet documented</span></span>|
-|<span data-ttu-id="06fe8-124">unknownError</span><span class="sxs-lookup"><span data-stu-id="06fe8-124">unknownError</span></span>|<span data-ttu-id="06fe8-125">4</span><span class="sxs-lookup"><span data-stu-id="06fe8-125">4</span></span>|<span data-ttu-id="06fe8-126">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-126">Not yet documented</span></span>|
-|<span data-ttu-id="06fe8-127">none</span><span class="sxs-lookup"><span data-stu-id="06fe8-127">none</span></span>|<span data-ttu-id="06fe8-128">5</span><span class="sxs-lookup"><span data-stu-id="06fe8-128">5</span></span>|<span data-ttu-id="06fe8-129">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="06fe8-129">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-111">success</span><span class="sxs-lookup"><span data-stu-id="3f07d-111">success</span></span>|<span data-ttu-id="3f07d-112">.0</span><span class="sxs-lookup"><span data-stu-id="3f07d-112">0</span></span>|<span data-ttu-id="3f07d-113">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-113">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-114">credentialsNotValid</span><span class="sxs-lookup"><span data-stu-id="3f07d-114">credentialsNotValid</span></span>|<span data-ttu-id="3f07d-115">1-d</span><span class="sxs-lookup"><span data-stu-id="3f07d-115">1</span></span>|<span data-ttu-id="3f07d-116">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-116">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-117">androidforwork apierror</span><span class="sxs-lookup"><span data-stu-id="3f07d-117">androidForWorkApiError</span></span>|<span data-ttu-id="3f07d-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="3f07d-118">2</span></span>|<span data-ttu-id="3f07d-119">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-119">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-120">managementserviceerror</span><span class="sxs-lookup"><span data-stu-id="3f07d-120">managementServiceError</span></span>|<span data-ttu-id="3f07d-121">1/3</span><span class="sxs-lookup"><span data-stu-id="3f07d-121">3</span></span>|<span data-ttu-id="3f07d-122">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-122">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-123">unknownError</span><span class="sxs-lookup"><span data-stu-id="3f07d-123">unknownError</span></span>|<span data-ttu-id="3f07d-124">2/4</span><span class="sxs-lookup"><span data-stu-id="3f07d-124">4</span></span>|<span data-ttu-id="3f07d-125">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-125">Not yet documented</span></span>|
+|<span data-ttu-id="3f07d-126">none</span><span class="sxs-lookup"><span data-stu-id="3f07d-126">none</span></span>|<span data-ttu-id="3f07d-127">5</span><span class="sxs-lookup"><span data-stu-id="3f07d-127">5</span></span>|<span data-ttu-id="3f07d-128">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3f07d-128">Not yet documented</span></span>|
 
 
 

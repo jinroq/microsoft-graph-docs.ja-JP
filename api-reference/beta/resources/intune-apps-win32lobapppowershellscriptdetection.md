@@ -1,39 +1,39 @@
 ---
 title: win32LobAppPowerShellScriptDetection リソースの種類
-description: Win32 アプリケーションを検出する PowerShell スクリプトのプロパティが含まれています
-localization_priority: Normal
+description: Win32 アプリを検出するための PowerShell スクリプトのプロパティが含まれています
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5c02228589042d0abf36c34c5818c5a4610514e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168524"
 ---
-# <a name="win32lobapppowershellscriptdetection-resource-type"></a><span data-ttu-id="9f231-103">win32LobAppPowerShellScriptDetection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9f231-103">win32LobAppPowerShellScriptDetection resource type</span></span>
+# <a name="win32lobapppowershellscriptdetection-resource-type"></a><span data-ttu-id="92027-103">win32LobAppPowerShellScriptDetection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="92027-103">win32LobAppPowerShellScriptDetection resource type</span></span>
 
-> <span data-ttu-id="9f231-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9f231-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9f231-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9f231-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="92027-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="92027-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9f231-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9f231-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92027-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="92027-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9f231-107">Win32 アプリケーションを検出する PowerShell スクリプトのプロパティが含まれています</span><span class="sxs-lookup"><span data-stu-id="9f231-107">Contains PowerShell script properties to detect a Win32 App</span></span>
+<span data-ttu-id="92027-106">Win32 アプリを検出するための PowerShell スクリプトのプロパティが含まれています</span><span class="sxs-lookup"><span data-stu-id="92027-106">Contains PowerShell script properties to detect a Win32 App</span></span>
 
 
-<span data-ttu-id="9f231-108">[Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="9f231-108">Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)</span></span>
+<span data-ttu-id="92027-107">[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="92027-107">Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9f231-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9f231-109">Properties</span></span>
-|<span data-ttu-id="9f231-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9f231-110">Property</span></span>|<span data-ttu-id="9f231-111">型</span><span class="sxs-lookup"><span data-stu-id="9f231-111">Type</span></span>|<span data-ttu-id="9f231-112">説明</span><span class="sxs-lookup"><span data-stu-id="9f231-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="92027-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="92027-108">Properties</span></span>
+|<span data-ttu-id="92027-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="92027-109">Property</span></span>|<span data-ttu-id="92027-110">型</span><span class="sxs-lookup"><span data-stu-id="92027-110">Type</span></span>|<span data-ttu-id="92027-111">説明</span><span class="sxs-lookup"><span data-stu-id="92027-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9f231-113">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="9f231-113">enforceSignatureCheck</span></span>|<span data-ttu-id="9f231-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="9f231-114">Boolean</span></span>|<span data-ttu-id="9f231-115">署名チェックを強制するかどうかを示す値</span><span class="sxs-lookup"><span data-stu-id="9f231-115">A value indicating whether signature check is enforced</span></span>|
-|<span data-ttu-id="9f231-116">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="9f231-116">runAs32Bit</span></span>|<span data-ttu-id="9f231-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="9f231-117">Boolean</span></span>|<span data-ttu-id="9f231-118">このスクリプトは 32 ビットとして実行するかどうかを示す値</span><span class="sxs-lookup"><span data-stu-id="9f231-118">A value indicating whether this script should run as 32-bit</span></span>|
-|<span data-ttu-id="9f231-119">scriptContent</span><span class="sxs-lookup"><span data-stu-id="9f231-119">scriptContent</span></span>|<span data-ttu-id="9f231-120">String</span><span class="sxs-lookup"><span data-stu-id="9f231-120">String</span></span>|<span data-ttu-id="9f231-121">Base64 にエンコードされた Win32 基幹業務 (LoB) アプリケーションを検出するためにスクリプトの内容</span><span class="sxs-lookup"><span data-stu-id="9f231-121">The base64 encoded script content to detect Win32 Line of Business (LoB) app</span></span>|
+|<span data-ttu-id="92027-112">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="92027-112">enforceSignatureCheck</span></span>|<span data-ttu-id="92027-113">ブール値</span><span class="sxs-lookup"><span data-stu-id="92027-113">Boolean</span></span>|<span data-ttu-id="92027-114">署名チェックを適用するかどうかを示す値</span><span class="sxs-lookup"><span data-stu-id="92027-114">A value indicating whether signature check is enforced</span></span>|
+|<span data-ttu-id="92027-115">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="92027-115">runAs32Bit</span></span>|<span data-ttu-id="92027-116">ブール値</span><span class="sxs-lookup"><span data-stu-id="92027-116">Boolean</span></span>|<span data-ttu-id="92027-117">このスクリプトを32ビットとして実行する必要があるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="92027-117">A value indicating whether this script should run as 32-bit</span></span>|
+|<span data-ttu-id="92027-118">scriptcontent</span><span class="sxs-lookup"><span data-stu-id="92027-118">scriptContent</span></span>|<span data-ttu-id="92027-119">String</span><span class="sxs-lookup"><span data-stu-id="92027-119">String</span></span>|<span data-ttu-id="92027-120">Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容</span><span class="sxs-lookup"><span data-stu-id="92027-120">The base64 encoded script content to detect Win32 Line of Business (LoB) app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9f231-122">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="9f231-122">Relationships</span></span>
-<span data-ttu-id="9f231-123">なし</span><span class="sxs-lookup"><span data-stu-id="9f231-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="92027-121">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="92027-121">Relationships</span></span>
+<span data-ttu-id="92027-122">なし</span><span class="sxs-lookup"><span data-stu-id="92027-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9f231-124">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9f231-124">JSON Representation</span></span>
-<span data-ttu-id="9f231-125">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9f231-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="92027-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="92027-123">JSON Representation</span></span>
+<span data-ttu-id="92027-124">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="92027-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppPowerShellScriptDetection"

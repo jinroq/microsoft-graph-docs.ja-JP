@@ -1,40 +1,40 @@
 ---
-title: windowsPackageInformation リソースの種類
-description: パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
-localization_priority: Normal
+title: windowspackageinformation リソースの種類
+description: Windows 基幹業務アプリのパッケージ情報のプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 112d84c5bae889e24b889b4598d61a6b3d63db50
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ba69fe277809b3ce4d6f81a198fc305204984d73
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166452"
 ---
-# <a name="windowspackageinformation-resource-type"></a><span data-ttu-id="a0036-103">windowsPackageInformation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a0036-103">windowsPackageInformation resource type</span></span>
+# <a name="windowspackageinformation-resource-type"></a><span data-ttu-id="6fdc4-103">windowspackageinformation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6fdc4-103">windowsPackageInformation resource type</span></span>
 
-> <span data-ttu-id="a0036-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a0036-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a0036-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a0036-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6fdc4-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a0036-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a0036-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6fdc4-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a0036-107">パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a0036-107">Contains properties for the package information for a Windows line of business app.</span></span>
+<span data-ttu-id="6fdc4-106">Windows 基幹業務アプリのパッケージ情報のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-106">Contains properties for the package information for a Windows line of business app.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a0036-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a0036-108">Properties</span></span>
-|<span data-ttu-id="a0036-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a0036-109">Property</span></span>|<span data-ttu-id="a0036-110">型</span><span class="sxs-lookup"><span data-stu-id="a0036-110">Type</span></span>|<span data-ttu-id="a0036-111">説明</span><span class="sxs-lookup"><span data-stu-id="a0036-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6fdc4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6fdc4-107">Properties</span></span>
+|<span data-ttu-id="6fdc4-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6fdc4-108">Property</span></span>|<span data-ttu-id="6fdc4-109">型</span><span class="sxs-lookup"><span data-stu-id="6fdc4-109">Type</span></span>|<span data-ttu-id="6fdc4-110">説明</span><span class="sxs-lookup"><span data-stu-id="6fdc4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a0036-112">applicableArchitecture</span><span class="sxs-lookup"><span data-stu-id="a0036-112">applicableArchitecture</span></span>|[<span data-ttu-id="a0036-113">windowsArchitecture</span><span class="sxs-lookup"><span data-stu-id="a0036-113">windowsArchitecture</span></span>](../resources/intune-apps-windowsarchitecture.md)|<span data-ttu-id="a0036-114">Windows のアーキテクチャでこのアプリケーションが実行できます。</span><span class="sxs-lookup"><span data-stu-id="a0036-114">The Windows architecture for which this app can run on.</span></span> <span data-ttu-id="a0036-115">使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。</span><span class="sxs-lookup"><span data-stu-id="a0036-115">Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.</span></span>|
-|<span data-ttu-id="a0036-116">displayName</span><span class="sxs-lookup"><span data-stu-id="a0036-116">displayName</span></span>|<span data-ttu-id="a0036-117">String</span><span class="sxs-lookup"><span data-stu-id="a0036-117">String</span></span>|<span data-ttu-id="a0036-118">表示名。</span><span class="sxs-lookup"><span data-stu-id="a0036-118">The Display Name.</span></span>|
-|<span data-ttu-id="a0036-119">identityName</span><span class="sxs-lookup"><span data-stu-id="a0036-119">identityName</span></span>|<span data-ttu-id="a0036-120">String</span><span class="sxs-lookup"><span data-stu-id="a0036-120">String</span></span>|<span data-ttu-id="a0036-121">ID 名。</span><span class="sxs-lookup"><span data-stu-id="a0036-121">The Identity Name.</span></span>|
-|<span data-ttu-id="a0036-122">identityPublisher</span><span class="sxs-lookup"><span data-stu-id="a0036-122">identityPublisher</span></span>|<span data-ttu-id="a0036-123">String</span><span class="sxs-lookup"><span data-stu-id="a0036-123">String</span></span>|<span data-ttu-id="a0036-124">識別情報の発行元です。</span><span class="sxs-lookup"><span data-stu-id="a0036-124">The Identity Publisher.</span></span>|
-|<span data-ttu-id="a0036-125">identityResourceIdentifier</span><span class="sxs-lookup"><span data-stu-id="a0036-125">identityResourceIdentifier</span></span>|<span data-ttu-id="a0036-126">String</span><span class="sxs-lookup"><span data-stu-id="a0036-126">String</span></span>|<span data-ttu-id="a0036-127">ID のリソースの識別子。</span><span class="sxs-lookup"><span data-stu-id="a0036-127">The Identity Resource Identifier.</span></span>|
-|<span data-ttu-id="a0036-128">identityVersion</span><span class="sxs-lookup"><span data-stu-id="a0036-128">identityVersion</span></span>|<span data-ttu-id="a0036-129">String</span><span class="sxs-lookup"><span data-stu-id="a0036-129">String</span></span>|<span data-ttu-id="a0036-130">アイデンティティのバージョンです。</span><span class="sxs-lookup"><span data-stu-id="a0036-130">The Identity Version.</span></span>|
-|<span data-ttu-id="a0036-131">minimumSupportedOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="a0036-131">minimumSupportedOperatingSystem</span></span>|[<span data-ttu-id="a0036-132">windowsMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="a0036-132">windowsMinimumOperatingSystem</span></span>](../resources/intune-apps-windowsminimumoperatingsystem.md)|<span data-ttu-id="a0036-133">該当するオペレーティング システムの最小の値です。</span><span class="sxs-lookup"><span data-stu-id="a0036-133">The value for the minimum applicable operating system.</span></span>|
+|<span data-ttu-id="6fdc4-111">applicableArchitecture</span><span class="sxs-lookup"><span data-stu-id="6fdc4-111">applicableArchitecture</span></span>|[<span data-ttu-id="6fdc4-112">windowsArchitecture</span><span class="sxs-lookup"><span data-stu-id="6fdc4-112">windowsArchitecture</span></span>](../resources/intune-apps-windowsarchitecture.md)|<span data-ttu-id="6fdc4-113">このアプリを実行できる Windows アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-113">The Windows architecture for which this app can run on.</span></span> <span data-ttu-id="6fdc4-114">使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-114">Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.</span></span>|
+|<span data-ttu-id="6fdc4-115">displayName</span><span class="sxs-lookup"><span data-stu-id="6fdc4-115">displayName</span></span>|<span data-ttu-id="6fdc4-116">文字列</span><span class="sxs-lookup"><span data-stu-id="6fdc4-116">String</span></span>|<span data-ttu-id="6fdc4-117">表示名を指定します。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-117">The Display Name.</span></span>|
+|<span data-ttu-id="6fdc4-118">identityName</span><span class="sxs-lookup"><span data-stu-id="6fdc4-118">identityName</span></span>|<span data-ttu-id="6fdc4-119">String</span><span class="sxs-lookup"><span data-stu-id="6fdc4-119">String</span></span>|<span data-ttu-id="6fdc4-120">ID 名。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-120">The Identity Name.</span></span>|
+|<span data-ttu-id="6fdc4-121">識別子の入力</span><span class="sxs-lookup"><span data-stu-id="6fdc4-121">identityPublisher</span></span>|<span data-ttu-id="6fdc4-122">String</span><span class="sxs-lookup"><span data-stu-id="6fdc4-122">String</span></span>|<span data-ttu-id="6fdc4-123">id 発行者。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-123">The Identity Publisher.</span></span>|
+|<span data-ttu-id="6fdc4-124">identityResourceIdentifier</span><span class="sxs-lookup"><span data-stu-id="6fdc4-124">identityResourceIdentifier</span></span>|<span data-ttu-id="6fdc4-125">String</span><span class="sxs-lookup"><span data-stu-id="6fdc4-125">String</span></span>|<span data-ttu-id="6fdc4-126">ID のリソースの識別子。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-126">The Identity Resource Identifier.</span></span>|
+|<span data-ttu-id="6fdc4-127">identityVersion</span><span class="sxs-lookup"><span data-stu-id="6fdc4-127">identityVersion</span></span>|<span data-ttu-id="6fdc4-128">String</span><span class="sxs-lookup"><span data-stu-id="6fdc4-128">String</span></span>|<span data-ttu-id="6fdc4-129">id のバージョン。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-129">The Identity Version.</span></span>|
+|<span data-ttu-id="6fdc4-130">minimumSupportedOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="6fdc4-130">minimumSupportedOperatingSystem</span></span>|[<span data-ttu-id="6fdc4-131">windowsMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="6fdc4-131">windowsMinimumOperatingSystem</span></span>](../resources/intune-apps-windowsminimumoperatingsystem.md)|<span data-ttu-id="6fdc4-132">該当するオペレーティング システムの最小の値です。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-132">The value for the minimum applicable operating system.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a0036-134">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a0036-134">Relationships</span></span>
-<span data-ttu-id="a0036-135">なし</span><span class="sxs-lookup"><span data-stu-id="a0036-135">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6fdc4-133">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="6fdc4-133">Relationships</span></span>
+<span data-ttu-id="6fdc4-134">なし</span><span class="sxs-lookup"><span data-stu-id="6fdc4-134">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a0036-136">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a0036-136">JSON Representation</span></span>
-<span data-ttu-id="a0036-137">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a0036-137">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6fdc4-135">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6fdc4-135">JSON Representation</span></span>
+<span data-ttu-id="6fdc4-136">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="6fdc4-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsPackageInformation"
