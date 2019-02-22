@@ -1,32 +1,32 @@
 ---
-title: deviceManagementTroubleshootingErrorDetails リソースの種類
-description: エラーとその修復に関する詳細情報を含むオブジェクトです。
-localization_priority: Normal
+title: devicemanagementトラブルシューティングエラーの詳細リソースの種類
+description: エラーとその修復に関する詳細情報を含むオブジェクト。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cdda64170afc739c23f1b258e5f2f1b31158662
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08ad43b717a5e08229054bc10aa81a0786f4e344
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430334"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142582"
 ---
-# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>deviceManagementTroubleshootingErrorDetails リソースの種類
+# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>devicemanagementトラブルシューティングエラーの詳細リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-エラーとその修復に関する詳細情報を含むオブジェクトです。
+エラーとその修復に関する詳細情報を含むオブジェクト。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |context|String|まだ文書化されていません|
 |failure|String|まだ文書化されていません|
-|failureDetails|String|失敗の原因の詳細な説明です。|
-|改善計画|String|この問題を修正する方法についての詳細な説明です。|
-|resources|[deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|この障害に関する役に立つドキュメントにリンクします。|
+|failuredetails|String|問題の詳細な説明。|
+|修復|String|この問題を修復する方法の詳細な説明。|
+|resources|[devicemanagementのトラブルシューティング errorresource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|このエラーについての有用なドキュメントへのリンクを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

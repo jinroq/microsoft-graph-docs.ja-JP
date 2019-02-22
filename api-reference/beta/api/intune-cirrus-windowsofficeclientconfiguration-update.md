@@ -1,23 +1,23 @@
 ---
-title: WindowsOfficeClientConfiguration を更新します。
-description: セキュリティ以外の特定のポリシーのペイロードにパッチを適用します。
+title: windowsOfficeClientConfiguration の更新
+description: 特定のセキュリティ以外のポリシーペイロードにパッチを適用します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: cb9078e630ab20c38bcf9cb41a08d6e94f370311
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d116d846b6540ea2b9e2a91f54a5abdfa81e2409
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401363"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139250"
 ---
-# <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を更新します。
+# <a name="update-windowsofficeclientconfiguration"></a>windowsOfficeClientConfiguration の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-セキュリティ以外の特定のポリシーのペイロードにパッチを適用します。
+特定のセキュリティ以外のポリシーペイロードにパッチを適用します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,28 +41,28 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|userPreferencePayload|Stream|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|policyPayload|Stream|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|説明|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|displayName|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|priority|Int32|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
+|id|文字列|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|userPreferencePayload|Stream|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|policypayload|Stream|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|説明|String|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|displayName|String|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|priority|Int32|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
+|checkinstatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|まだ文書化されていない[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)からの継承|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

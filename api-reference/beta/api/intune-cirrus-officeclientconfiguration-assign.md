@@ -1,23 +1,23 @@
 ---
 title: assign アクション
-description: ポリシーのすべての対象とするグループを交換してください。
+description: ポリシーの対象グループをすべて置換します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 37143c09382ae08b600aeacd6af02ebb44c86bf1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6dfde86fe1163ea7cb9f86720a979c79e99671c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409259"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145662"
 ---
-# <a name="assign-action"></a>assign アクション
+# <a name="assign-action"></a>アクションの割り当て
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ポリシーのすべての対象とするグループを交換してください。
+ポリシーの対象グループをすべて置換します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,7 +41,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
@@ -50,12 +50,12 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|Office 構成の割り当ての一覧|
+|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|office の構成割り当ての一覧|
 
 
 
 ## <a name="response"></a>応答
-かどうか、成功を返すアクション、`200 OK`応答コードおよび応答の本文に[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)のコレクションです。
+成功した場合、このアクション`200 OK`は応答コードと、応答本文で[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクションを返します。
 
 ## <a name="example"></a>例
 

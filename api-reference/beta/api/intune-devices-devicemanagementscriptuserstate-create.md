@@ -1,23 +1,23 @@
 ---
-title: DeviceManagementScriptUserState を作成します。
-description: 新しい deviceManagementScriptUserState オブジェクトを作成します。
-localization_priority: Normal
+title: devicemanagementscriptuserstate の作成
+description: 新しい devicemanagementscriptuserstate オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01ab54a736a5e9d1a305bff44a601494e8ec8860
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e7e0a0f7f8c3f837d6125b6c91eee51f1bfed7e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424267"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139348"
 ---
-# <a name="create-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState を作成します。
+# <a name="create-devicemanagementscriptuserstate"></a>devicemanagementscriptuserstate の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトを作成します。
+新しい[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,24 +41,24 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に deviceManagementScriptUserState オブジェクトの JSON の形式を指定します。
+要求本文で、devicemanagementscriptuserstate オブジェクトの JSON 表記を指定します。
 
-次の表は、deviceManagementScriptUserState を作成するときに必要なプロパティを示します。
+次の表に、devicemanagementscriptuserstate の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
-|successDeviceCount|Int32|デバイスの数の特定のユーザーに成功します。|
-|errorDeviceCount|Int32|特定のユーザー エラー デバイスの数。|
-|userPrincipalName|String|特定のユーザーのユーザー プリンシパル名です。|
+|id|String|デバイス管理スクリプトのユーザー状態エンティティのキー。|
+|successDeviceCount|Int32|特定のユーザーの成功デバイス数。|
+|errorDeviceCount|Int32|特定のユーザーのエラーデバイス数。|
+|userPrincipalName|String|特定のユーザーのユーザープリンシパル名。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

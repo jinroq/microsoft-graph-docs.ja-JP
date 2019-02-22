@@ -1,37 +1,37 @@
 ---
 title: vpnTrafficRule リソースの種類
-description: VPN トラフィックの規則の定義です。
-localization_priority: Normal
+description: VPN トラフィックルールの定義。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b28d26356eea113f267c4eb0499f9600671f114
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fd004341928260187518966e2356f59faff57898
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415286"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139943"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN トラフィックの規則の定義です。
+VPN トラフィックルールの定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|name|String|名前です。|
-|プロトコル|Int32|(0 ~ 255) のプロトコル。 0 から 255 までの有効な値|
-|localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)コレクション|プロトコルが TCP または UDP 6 (17) である場合にのみ、ローカル ポートの範囲を設定できます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)コレクション|プロトコルが TCP または UDP 6 (17) である場合にのみ、リモート ポートの範囲を設定できます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|localAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|ローカル アドレスの範囲です。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|remoteAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|リモート アドレスの範囲です。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|appId|文字列型 (String)|アプリケーション識別子、アプリケーションでこのトラフィック ルールがトリガーされる場合です。|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|アプリケーションの種類、アプリケーションでこのトラフィック ルールがトリガーされる場合。 可能な値は、`none`、`desktop`、`universal` です。|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|いつトリガーされると、アプリケーションでは、このルートの分割トンネリングを有効にするかどうかを示します。 可能な値は、`none`、`splitTunnel`、`forceTunnel` です。|
-|クレーム|String|このトラフィックの規則に関連付けられている請求します。|
+|name|String|拡張子.|
+|プロトコル|Int32|プロトコル (0-255)。 有効な値は 0 ~ 255|
+|localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)コレクション|プロトコルが TCP または UDP (6 または 17) の場合にのみ、ローカルポート範囲を設定できます。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)コレクション|プロトコルが TCP または UDP (6 または 17) の場合にのみ、リモートポート範囲を設定できます。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|localaddressranges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|ローカルアドレス範囲。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|remoteaddressranges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|リモートアドレス範囲。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|appId|String|アプリ識別子。このトラフィックルールがアプリによってトリガーされた場合。|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|アプリの種類。このトラフィックルールがアプリによってトリガーされた場合。 可能な値は `none`、`desktop`、`universal` です。|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|アプリがトリガーされたときに、このルートに沿った分割トンネリングを有効にするかどうかを示します。 可能な値は `none`、`splitTunnel`、`forceTunnel` です。|
+|クレーム|String|このトラフィック規則に関連付けられているクレーム。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

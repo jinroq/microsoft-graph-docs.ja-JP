@@ -1,21 +1,21 @@
 ---
 title: androidManagedAppRegistration の作成
 description: 新しい androidManagedAppRegistration オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83a2fd4c1967da5bdb401ab57bf603dace128f05
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6b94770bdcf52938df6439039607a500ede1e42d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142449"
 ---
 # <a name="create-androidmanagedappregistration"></a>androidManagedAppRegistration の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/managedAppRegistrations
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、androidManagedAppRegistration オブジェクトの JSON 表記を指定します。
@@ -58,16 +58,16 @@ POST /deviceAppManagement/managedAppRegistrations
 |deviceType|String|ホスト デバイスの種類 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)|
 |deviceTag|String|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
 |deviceName|String|ホスト デバイスの名前 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)|
-|managedDeviceId|String|ホスト ・ デバイスの管理デバイスの識別子です。 ホスト ・ デバイスが管理されている場合にも、値を空にする可能性があります。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
-|azureADDeviceId|String|ホスト ・ デバイスの Azure Active Directory のデバイスの識別子です。 ホスト ・ デバイスは、Azure Active Directory が登録されている場合でも、値を空にする可能性があります。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
-|deviceModel|String|[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)から現在のアプリケーション登録継承用のデバイス モデル|
-|deviceManufacturer|String|[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)から現在のアプリケーション登録継承のデバイスの製造元|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: [managedAppRegistration](../resources/intune-mam-managedappregistration.md)から継承のルート デバイス上で実行されているアプリケーションです。 使用可能な値は、`none`、`rootedDevice` です。|
+|manageddeviceid|String|ホストデバイスの管理デバイス識別子。 ホストデバイスが管理されている場合でも、値を空にすることができます。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
+|azureADDeviceId|String|ホストデバイスの Azure Active Directory デバイス識別子。 ホストデバイスが Azure Active Directory に登録されている場合でも、値を空にすることができます。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
+|deviceModel|String|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)から継承された現在のアプリの登録のデバイスモデル。|
+|deviceManufacturer|String|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)から継承された現在のアプリの登録のデバイスの製造元|
+|flaggedReasons|[managedappflaggedreason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: [managedAppRegistration](../resources/intune-mam-managedappregistration.md)から継承されたルートデバイスで実行されているアプリ。 使用可能な値は、`none`、`rootedDevice` です。|
 |userId|String|このアプリの登録が属するユーザー ID。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリ パッケージの識別子 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)|
-|id|String|エンティティのキー。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
-|version|String|エンティティのバージョン。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
-|patchVersion|String|現在 android アプリの登録の修正プログラムのバージョン|
+|id|文字列|エンティティのキー。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
+|version|文字列型 (String)|エンティティのバージョン。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
+|パッチバージョン|String|現在の android アプリの登録のパッチバージョン|
 
 
 

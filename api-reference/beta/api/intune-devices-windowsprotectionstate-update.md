@@ -1,23 +1,23 @@
 ---
-title: WindowsProtectionState を更新します。
-description: WindowsProtectionState オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: windowsprotectionstate の更新
+description: windowsprotectionstate オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: faad744f1a7910b693ea7f87ea0e2ab5dddd7a25
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406207"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143821"
 ---
-# <a name="update-windowsprotectionstate"></a>WindowsProtectionState を更新します。
+# <a name="update-windowsprotectionstate"></a>windowsprotectionstate の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。
+[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,38 +42,38 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
-|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|リアルタイム保護を有効または無効ですか。|
-|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効か無効か。|
-|quickScanOverdue|Boolean|クイック スキャン、か期限切れですか。|
-|fullScanOverdue|Boolean|完全なスキャンの期限切れかどうでしょうか。|
-|signatureUpdateOverdue|Boolean|署名が期限切れかどうか。|
-|rebootRequired|Boolean|しましたか。|
-|fullScanRequired|Boolean|全体を走査するかが必要でしょうか。|
-|engineVersion|String|現在のエンドポイントの保護エンジンのバージョン|
-|signatureVersion|String|マルウェア定義の現在のバージョン|
-|antiMalwareVersion|String|現在のバージョンのマルウェア対策|
-|lastQuickScanDateTime|DateTimeOffset|最後のクイック スキャンの日時|
-|lastFullScanDateTime|DateTimeOffset|最後のクイック スキャンの日時|
-|lastQuickScanSignatureVersion|String|最後のクイック スキャンの署名バージョン|
-|lastFullScanSignatureVersion|String|最後の完全なスキャンの署名バージョン|
-|lastReportedDateTime|DateTimeOffset|最後のデバイスの状態が報告された時間|
+|id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
+|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか、または使用できない|
+|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|ブール値|リアルタイム保護が有効になっているかどうか。|
+|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効になっているかどうか。|
+|quickscanoverdue 超過|ブール値|クイックスキャンの期限が過ぎたかどうか。|
+|fullscanoverdue|ブール値|完全スキャンの期限が過ぎたかどうか。|
+|signatureupdateoverdue|ブール値|署名が古くなっているかどうか|
+|rebootRequired|ブール値|再起動が必要かどうか|
+|fullscanrequired|ブール値|フルスキャンが必要かどうか。|
+|engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
+|signatureversion|String|現在のマルウェア定義バージョン|
+|antiMalwareVersion|String|現在のマルウェア対策バージョン|
+|lastquickscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastfullscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastquickscansignatureversion|String|最終クイックスキャン署名バージョン|
+|lastfullscansignatureversion|String|前回のフルスキャン署名バージョン|
+|lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

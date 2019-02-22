@@ -1,23 +1,23 @@
 ---
-title: AndroidManagedStoreAccountEnterpriseSettings を更新します。
-description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: androidmanagedstoreaccountenterprisesettings の更新
+description: androidmanagedstoreaccountenterprisesettings オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e57b7965e5393faf9bdb953dc915652772deb14c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4d7a131c98fa5a175435df01837a674eb4fbe747
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398486"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139719"
 ---
-# <a name="update-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings を更新します。
+# <a name="update-androidmanagedstoreaccountenterprisesettings"></a>androidmanagedstoreaccountenterprisesettings の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[AndroidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティを更新します。
+[androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,32 +41,32 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトの JSON 表記を指定します。
 
-[AndroidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
-|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
+|id|String|Android ストアアカウントのエンタープライズ設定識別子|
+|bindStatus|[androidmanagedstoreaccountbindstatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 使用可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
-|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|アプリケーション同期の最終結果です。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
+|lastAppSyncStatus|[androidmanagedstoreaccountappsyncstatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|最後のアプリケーションの同期結果。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
 |ownerUserPrincipalName|String|エンタープライズを作成した所有者 UPN|
-|ownerOrganizationName|String|組織名を使用する場合 Android のエンタープライズ契約時|
+|ownerOrganizationName|String|Android Enterprise のオンボード時に使用される組織名|
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
-|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズ デバイスの管理デバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズデバイス管理にデバイスを登録できるユーザーを示します。 使用可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|Boolean|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
-|companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)コレクション|AndroidManagedStoreAccountEnterpriseSettings の会社コード|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|AndroidManagedStoreAccountEnterpriseSettings の会社コード|
+|deviceownermanagementenabled|ブール値|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
+|会社コード|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)コレクション|androidmanagedstoreaccountenterprisesettings の会社コード|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|ブール値|androidmanagedstoreaccountenterprisesettings の会社コード|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

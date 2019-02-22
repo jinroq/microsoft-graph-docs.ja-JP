@@ -1,33 +1,33 @@
 ---
 title: deviceConfigurationTargetedUserAndDevice リソースの種類
-description: 競合デバイスの構成のポリシーのセットの概要です。
-localization_priority: Normal
+description: 一連のデバイス構成ポリシーの競合の概要。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144143"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-競合デバイスの構成のポリシーのセットの概要です。
+一連のデバイス構成ポリシーの競合の概要。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|deviceId|String|チェックインで、デバイスの id です。|
-|deviceName|String|チェックインで、デバイスの名前。|
-|userId|String|チェックインでユーザーの id です。|
-|userDisplayName|String|チェックインでユーザーの表示名|
-|userPrincipalName|String|チェックインのユーザーの UPN。|
-|lastCheckinDateTime|DateTimeOffset|このユーザー/デバイス ・ ペアの最後のチェックインの時間です。|
+|deviceId|String|チェックイン内のデバイスの id。|
+|deviceName|String|チェックイン内のデバイスの名前。|
+|userId|String|チェックイン内のユーザーの id。|
+|userDisplayName|String|チェックイン内のユーザーの表示名|
+|userPrincipalName|文字列|チェックイン内のユーザーの UPN。|
+|lastCheckinDateTime|DateTimeOffset|このユーザー/デバイスのペアの最終チェックイン時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

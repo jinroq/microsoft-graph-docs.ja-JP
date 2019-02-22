@@ -1,43 +1,43 @@
 ---
 title: intuneBrandingProfile リソースの種類
-description: このエンティティには、会社のポータル アプリケーションとエンド ・ ユーザーの web ポータルのテナントのレベルの外観をカスタマイズするために使用するデータが含まれています。
-localization_priority: Normal
+description: このエンティティにはデータが含まれており、これを使用して、会社のポータルアプリケーションとエンドユーザーの web ポータルのテナントレベルの外観をカスタマイズできます。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411100"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144703"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このエンティティには、会社のポータル アプリケーションとエンド ・ ユーザーの web ポータルのテナントのレベルの外観をカスタマイズするために使用するデータが含まれています。
+このエンティティにはデータが含まれており、これを使用して、会社のポータルアプリケーションとエンドユーザーの web ポータルのテナントレベルの外観をカスタマイズできます。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)コレクション|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[IntuneBrandingProfile を取得します。](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティと関係を参照してください。|
-|[IntuneBrandingProfile を作成します。](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。|
-|[IntuneBrandingProfile を削除します。](../api/intune-wip-intunebrandingprofile-delete.md)|なし|の[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を削除します。|
-|[IntuneBrandingProfile を更新します。](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
+|[リスト intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)コレクション|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[intuneBrandingProfile を取得する](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[intuneBrandingProfile を作成する](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。|
+|[intuneBrandingProfile の削除](../api/intune-wip-intunebrandingprofile-delete.md)|なし|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を削除します。|
+|[intuneBrandingProfile の更新](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
 |[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|プロファイル キー|
-|profilename プロパティ|String|プロファイルの名前|
-|profileDescription|String|プロファイルの説明|
-|isDefaultProfile|Boolean|既定のプロファイルが使用される場合について説明します。|
-|createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
-|lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
+|id|文字列|プロファイルキー|
+|profileName|String|プロファイルの名前|
+|profiledescription|String|プロファイルの説明|
+|isdefaultprofile|ブール値|既定でプロファイルが使用されているかどうかを示します。|
+|createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
+|lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
 |contactITName|String|IT サポートを担当する個人名または組織名。|
 |contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
@@ -47,16 +47,16 @@ ms.locfileid: "29411100"
 |onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴ イメージがテーマの背景色を会社のポータル アプリケーションに表示されます。|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴのイメージは明るい背景に会社のポータル アプリケーションに表示されます。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータル アプリケーションのランディング ページに表示されるカスタムのイメージ|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|一連のブランド化のプロファイルの割り当てをグループ化します。|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|ブランド化プロファイルのグループの割り当てのリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

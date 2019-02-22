@@ -1,32 +1,32 @@
 ---
 title: mdmAppConfigKeyType 列挙型
-description: アプリケーション構成の種類のキーです。
-localization_priority: Normal
+description: アプリ構成キーの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d5c7c87f91a538a6afce5e790b69f0ae09b364d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 220e3ebf0bb9482b64c894025f233404769bff8c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418793"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145221"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーション構成の種類のキーです。
+アプリ構成キーの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|文字列型|0|まだ文書化されていません|
-|integerType|1|まだ文書化されていません|
-|realType|2|まだ文書化されていません|
-|booleanType|3|まだ文書化されていません|
-|tokenType|4|まだ文書化されていません|
+|stringtype|.0|まだ文書化されていません|
+|整数型|1-d|まだ文書化されていません|
+|realtype|pbm-2|まだ文書化されていません|
+|booleanType|1/3|まだ文書化されていません|
+|tokenType|2/4|まだ文書化されていません|
 
 
 

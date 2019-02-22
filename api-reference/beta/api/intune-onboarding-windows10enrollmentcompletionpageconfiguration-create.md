@@ -1,21 +1,21 @@
 ---
-title: Windows10EnrollmentCompletionPageConfiguration を作成します。
+title: windows10EnrollmentCompletionPageConfiguration を作成する
 description: 新しい windows10EnrollmentCompletionPageConfiguration オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e7797ac1cd3ca46724c046e43bfa1fa1649ebb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0018e99738e09317835af3fe79505c9723c5e6a5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411359"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140293"
 ---
-# <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を作成します。
+# <a name="create-windows10enrollmentcompletionpageconfiguration"></a>windows10EnrollmentCompletionPageConfiguration を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトを作成します。
 
@@ -41,35 +41,35 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に windows10EnrollmentCompletionPageConfiguration オブジェクトの JSON の形式を指定します。
+要求本文で、windows10EnrollmentCompletionPageConfiguration オブジェクトの JSON 表記を指定します。
 
-次の表は、windows10EnrollmentCompletionPageConfiguration を作成するときに必要なプロパティを示します。
+次の表に、windows10EnrollmentCompletionPageConfiguration の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|id|文字列|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showInstallationProgress|Boolean|ユーザーにインストールの進行状況の表示と非表示を切り替える|
-|blockDeviceSetupRetryByUser|Boolean|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
-|allowDeviceResetOnInstallFailure|Boolean|許可またはブロック デバイスのインストールの失敗時にリセット|
-|allowLogCollectionOnInstallFailure|Boolean|許可またはブロックのインストールの失敗時にログの収集|
-|customErrorMessage|String|インストールの失敗時に表示するカスタム エラー メッセージを設定します。|
-|installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定します。|
-|allowDeviceUseOnInstallFailure|Boolean|インストールの失敗時にデバイスを使用するユーザーを許可します。|
-|selectedMobileAppIds|String コレクション|インストールのステータスを追跡するために選択したアプリケーション|
+|showinstallationprogress|ブール値|ユーザーにインストールの進行状況を表示または非表示にする|
+|blockdevicesetupretrybyuser|ブール値|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
+|allowdeviceresetoninstallfailure|ブール値|インストール失敗時にデバイスのリセットを許可またはブロックする|
+|allowlogcollectiononinstallfailure|ブール値|インストール失敗時にログ収集を許可またはブロックする|
+|customerrormessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
+|installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
+|allowdeviceuseoninstallfailure|ブール値|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
+|selectedMobileAppIds|String collection|インストールの状態を追跡するために選択されたアプリケーション|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -1,36 +1,36 @@
 ---
 title: ratingAustraliaTelevisionType 列挙型
-description: オーストラリアのテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: オーストラリアでのテレビコンテンツの評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 148e8c1bb12f8563261402b98e4ff0552e83f3f6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a223f19a0360f9fef851bcd1576187a2f5a7f58e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139390"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-オーストラリアのテレビのコンテンツの規制ラベル
+オーストラリアでのテレビコンテンツの評価のラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|preschoolers|2|P のクラス分けは、preschoolers|
-|children|3|子で 14 C のクラス分けは、します。|
-|全般|4|G のクラス分けがすべての年代に適しています。|
-|parentalGuidance|5|PG クラス分けが若い視聴者を推奨します。|
-|成熟|6|ビューアー 15 以上の M クラス分けをお勧め|
-|agesAbove15|7|MA15 + 分類には適していません 15 未満の閲覧者です。|
-|agesAbove15AdultViolence|8|AV15 + 分類が 15、成人向け暴力に固有であるユーザーに適していません。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|prespreser|pbm-2|P 分類は、preschoolers に対して使用されます。|
+|children|1/3|C の分類は、14の下の子を対象としています。|
+|元帳|2/4|G 分類は、すべての年齢に適しています。|
+|parentalguidance|5|閲覧者には PG 分類が推奨されています|
+|度|シックス|15を超える閲覧者には M 分類が推奨されています|
+|agesAbove15|7|MA15 + 分類は15以下の閲覧者には適していません|
+|agesAbove15AdultViolence|~|AV15 + 分類は、15の下の閲覧者には適していません。成人の暴力に固有のものです。|
 
 
 

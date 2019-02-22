@@ -1,28 +1,28 @@
 ---
 title: omaSetting リソースの種類
 description: OMA 設定の定義。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdf74ba7e8932ce06bca83d88336239c2abcacf4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab80ad06fb5654578f29b92e3b0f3aa9c09abdb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411037"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143849"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 OMA 設定の定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|表示名。|
+|displayName|String|表示名。|
 |説明|String|説明。|
 |omaUri|文字列|OMA。|
 

@@ -1,21 +1,21 @@
 ---
 title: androidForWorkEnrollmentProfile の更新
 description: androidForWorkEnrollmentProfile オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d017ca961a012c195e1e729bf4a2527e50f5e0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 77c5dcd3af7caf26c8320486ccb693c5004acc7a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398017"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145627"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティを更新します。
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトの JSON 表記を指定します。
@@ -51,9 +51,9 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 |プロパティ|型|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
-|id|String|登録プロファイル用の一意な GUID。|
+|id|文字列|登録プロファイル用の一意な GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|説明|String|登録プロファイルの説明。|
+|説明|文字列|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
 |tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|

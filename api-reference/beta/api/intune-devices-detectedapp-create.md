@@ -1,21 +1,21 @@
 ---
 title: detectedApp の作成
 description: 新しい detectedApp オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24151e64b23e1e0d57485fab82d63eff839eb84a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1e7ca8cedef11ad25a943398854f3a779b2573fa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393103"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144794"
 ---
 # <a name="create-detectedapp"></a>detectedApp の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトを作成します。
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、detectedApp オブジェクトの JSON 表記を指定します。
@@ -51,9 +51,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
-|displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
-|version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
+|id|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|String|検出されたアプリケーションの名前。 読み取り専用|
+|version|String|検出されたアプリケーションのバージョン。 読み取り専用|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 

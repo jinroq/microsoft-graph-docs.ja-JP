@@ -1,21 +1,21 @@
 ---
 title: mobileAppAssignment リソース タイプ
 description: モバイル アプリのグループ割り当て用に使用されるプロパティを含むクラスです。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec9901c8f07e2ae56500c1b99aac1fcce1bfb379
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 77816742d4e7d736cad2941c3a49f2f6350ebd84
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404520"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140636"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 モバイル アプリのグループ割り当て用に使用されるプロパティを含むクラスです。
 

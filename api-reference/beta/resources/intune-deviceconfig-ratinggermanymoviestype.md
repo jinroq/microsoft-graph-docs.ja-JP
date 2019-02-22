@@ -1,34 +1,34 @@
 ---
 title: ratingGermanyMoviesType 列挙型
-description: 映画のドイツのラベルの評価
-localization_priority: Normal
+description: ドイツでの映画の定格ラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfa8211b562fac95e5c325c9afe682c38e5272db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139523"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画のドイツのラベルの評価
+ドイツでの映画の定格ラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|Ab 0 Jahren、年齢制限はありません。|
-|agesAbove6|3|Ab 6 Jahren では、6 と以前のエージングします。|
-|agesAbove12|4|Ab 12 Jahren、12 と古いのエージングします。|
-|agesAbove16|5|Ab 16 Jahren、16 のエージングします。|
-|大人|6|Ab 18 Jahren、成人のみ|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|Ab 0 Jahren、年齢制限なし|
+|agesAbove6|1/3|Ab 6 Jahren、才を過ぎた|
+|agesAbove12|2/4|Ab 12 Jahren、12才以上|
+|agesAbove16|5|Ab 16 Jahren、16才以上|
+|保護者|シックス|Ab 18 Jahren、大人のみ|
 
 
 

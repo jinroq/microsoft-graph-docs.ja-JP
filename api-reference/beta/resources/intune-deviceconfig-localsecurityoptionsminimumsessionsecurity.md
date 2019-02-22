@@ -1,31 +1,31 @@
 ---
-title: localSecurityOptionsMinimumSessionSecurity 列挙型
-description: LocalSecurityOptionsMinimumSessionSecurity に指定できる値
-localization_priority: Normal
+title: localsecurityoptionsminimumsessionsecurity 列挙型
+description: localsecurityoptionsminimumsessionsecurity に指定できる値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c39f2bb6d0bab2aff09fc05bb0492e81102e1b7c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe6007747aed1037a4dc3d5264bb432182a28c00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396085"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145347"
 ---
-# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 列挙型
+# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localsecurityoptionsminimumsessionsecurity 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-LocalSecurityOptionsMinimumSessionSecurity に指定できる値
+localsecurityoptionsminimumsessionsecurity に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|NTLM 応答を送信するには、LM &|
-|requireNtmlV2SessionSecurity|1|LM NTLM の使用を & の NTLMv2 セッション セキュリティをネゴシエートされた場合に送信します。|
-|require128BitEncryption|2|NTLM 応答のみを送信するには、LM &|
-|ntlmV2And128BitEncryption|3|NTLMv2 応答のみを送信するには、LM &|
+|none|.0|LM & NTLM 応答の送信|
+|requireNtmlV2SessionSecurity|1-d|LM & NTLM を送信する-ネゴシエートされる場合は NTLMv2 セッションセキュリティを使用する|
+|require128BitEncryption|pbm-2|LM & NTLM 応答のみを送信する|
+|ntlmV2And128BitEncryption|1/3|LM & NTLMv2 応答のみを送信する|
 
 
 

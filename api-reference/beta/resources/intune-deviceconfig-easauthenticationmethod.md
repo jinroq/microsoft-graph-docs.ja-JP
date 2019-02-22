@@ -1,29 +1,29 @@
 ---
-title: easAuthenticationMethod 列挙型
-description: Exchange Active Sync の認証方法です。
-localization_priority: Normal
+title: easauthenticationmethod enum 型
+description: Exchange Active Sync 認証方法。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c113fda996ff9ece3ce2c0f192aa3fb6d6adc994
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e60c1168ad1c0e35628822fa6b111ea4959c90c9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406788"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145739"
 ---
-# <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 列挙型
+# <a name="easauthenticationmethod-enum-type"></a>easauthenticationmethod enum 型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Exchange Active Sync の認証方法です。
+Exchange Active Sync 認証方法。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|usernameAndPassword|0|ユーザー名とパスワードを認証します。|
-|証明書|1|証明書による認証です。|
+|usernameAndPassword|.0|ユーザー名とパスワードを使用して認証します。|
+|証明書|1-d|証明書を使用して認証します。|
 
 
 

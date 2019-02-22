@@ -1,30 +1,30 @@
 ---
-title: managedAppDataTransferLevel 列挙型
-description: これらのクラスのアプリケーションにデータを転送できます。
-localization_priority: Normal
+title: managedappdatatransフェリーレベル列挙型
+description: これらのアプリケーションのクラスからデータを転送することができます。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09289b03c4304a00f1cf3fadd35b0ea2f3387358
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9028e37c825be81c844ffe084a04ee6751cccc7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422804"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145123"
 ---
-# <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 列挙型
+# <a name="managedappdatatransferlevel-enum-type"></a>managedappdatatransフェリーレベル列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-これらのクラスのアプリケーションにデータを転送できます。
+これらのアプリケーションのクラスからデータを転送することができます。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allApps|0|すべてのアプリケーションです。|
-|managedApps|1|マネージ アプリケーションです。|
-|none|2|ないアプリケーションです。|
+|allapps|.0|すべてのアプリ。|
+|managedApps|1-d|管理対象アプリ。|
+|none|pbm-2|アプリがありません。|
 
 
 

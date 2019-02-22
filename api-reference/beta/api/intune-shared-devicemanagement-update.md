@@ -4,46 +4,46 @@ description: deviceManagement オブジェクトのプロパティを更新し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415776"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141217"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
 
-ワークフローに応じて、[アクセス許可が異なることに注意してください。
+アクセス許可は、ワークフローによって異なることに注意してください。
 
-| アクセス権&nbsp;型&nbsp;(によって&nbsp;ワークフロー) | アクセス許可 (特権の大きいものから小さいものへ) |
+| アクセス&nbsp;許可&nbsp;の種類&nbsp;(ワークフロー別) | アクセス許可 (特権の大きいものから小さいものへ) |
 |:---|:---|
 | 委任 (職場または学校のアカウント) ||
-| &nbsp;&nbsp; **Android の作業** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp;&nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **監査** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **会社の用語** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **会社の用語** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **の通知** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **契約時** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **ロール ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **リモート アクセス** | DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **リモート アシスタンス** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **通信経費の管理** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **役割ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; **リモートアクセス** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **リモートアシスタンス** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **通信経費管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **Windows 情報の保護** | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; **Windows 情報保護** | DeviceManagementApps.ReadWrite.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。|
 | アプリケーション | サポートされていません。 |
 
@@ -61,7 +61,7 @@ PATCH /deviceManagement
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 
@@ -71,21 +71,21 @@ PATCH /deviceManagement
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意の識別子です。|
+|id|String|デバイスの一意識別子。|
 |**デバイス構成**|
-|intuneAccountId|GUID|Intune アカウント ID にはテナントが指定されました。|
-|legacyPcManangementEnabled|Boolean|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
-|maximumDepTokens|Int32|DEP のトークンの最大数では、テナントごとに許可されます。|
+|int未指定 eaccountid|GUID|指定したテナントの Intune アカウント ID|
+|legacyPcManangementEnabled|ブール値|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティは読み取りのみ可能です。|
+|maximumdeptokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|Scaleunits のテナントのデータを移動するときの日付の & の時刻です。|
-|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|同意の情報を管理します。|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要です。|
-|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスのクリーンアップ ・ ルール|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
-|サブスクリプション|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 使用可能な値: `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows デバイスのマルウェアの概要です。|
-|**契約時**|
+|accountMoveCompletionDateTime|DateTimeOffset|& が、scaleunits 間でテナントデータを移動した日時です。|
+|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理者の同意情報。|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
+|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|
+|subscriptionState|[devicemanagementsubscriptionstate](../resources/intune-devices-devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
+|講読|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 使用可能な値: `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows デバイスのマルウェアの概要。|
+|**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
 
 要求本文のプロパティのサポートは、ワークフローによって異なります。
@@ -97,7 +97,7 @@ PATCH /deviceManagement
 
 ### <a name="request"></a>要求
 
-デバイス管理のワークフローを次の要求の例を以下に示します。
+以下は、デバイス管理ワークフローの後の要求の例です。
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement

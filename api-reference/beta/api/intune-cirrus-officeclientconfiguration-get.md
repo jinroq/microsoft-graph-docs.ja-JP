@@ -1,21 +1,21 @@
 ---
-title: OfficeClientConfiguration を取得します。
+title: officeClientConfiguration を取得する
 description: 特定のポリシーを取得します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 364aa059d5b4c9ba1b1b82599327eb659eb4a58e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 669f545bfac29dfd7a5d34e4491c7c7212575596
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140650"
 ---
-# <a name="get-officeclientconfiguration"></a>OfficeClientConfiguration を取得します。
+# <a name="get-officeclientconfiguration"></a>officeClientConfiguration を取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のポリシーを取得します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "29420494"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|委任 (職場または学校のアカウント)|devicemanagementconfiguration をすべて取得します。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -43,13 +43,13 @@ GET /officeConfiguration/clientConfigurations/{key}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

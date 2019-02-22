@@ -1,21 +1,21 @@
 ---
-title: SideLoadingKey を作成します。
+title: sideLoadingKey を作成する
 description: 新しい sideLoadingKey オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3aa9efa7018a99f3e9f8d5f9a3d9e8569b895d0b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: afaae9fca5d6f459b94e5a6e7a7818d9426a0b6f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400362"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142953"
 ---
-# <a name="create-sideloadingkey"></a>SideLoadingKey を作成します。
+# <a name="create-sideloadingkey"></a>sideLoadingKey を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを作成します。
 
@@ -41,26 +41,26 @@ POST /deviceAppManagement/sideLoadingKeys
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に sideLoadingKey オブジェクトの JSON の形式を指定します。
+要求本文で、sideLoadingKey オブジェクトの JSON 表記を指定します。
 
-次の表は、sideLoadingKey を作成するときに必要なプロパティを示します。
+次の表に、sideLoadingKey の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|側のキーの一意の id の読み込み|
-|value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|
-|displayName|String|側の読み込みキー名、it プロフェッショナルの管理者に表示されます。|
-|説明|String|側キーの読み込み中の説明は、it プロフェッショナルの管理者に表示されます.|
-|totalActivation|Int32|側の読み込みキー合計のアクティブ化、it プロフェッショナルの管理者に表示されます。|
-|lastUpdatedDateTime|String|側の読み込みキー最終更新日 it プロフェッショナルの管理者に表示されます。|
+|id|String|サイドローディングキーの一意 Id。|
+|value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
+|displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
+|説明|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
+|totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
+|lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

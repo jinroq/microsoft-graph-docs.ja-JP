@@ -1,38 +1,38 @@
 ---
 title: deviceManagementExchangeOnPremisesPolicy リソースの種類
-description: テナント用に構成された Exchange OnPremises ポリシーを表す単一のエンティティです。
-localization_priority: Normal
+description: テナントに対して構成された Exchange onpremises ポリシーを表すシングルトンエンティティ。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 516b2d96ab365e4f04102472f3118d29823d32be
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 492a1f238bcbdd6891b99bca1f48c13bcabd5ab0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398577"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142771"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-テナント用に構成された Exchange OnPremises ポリシーを表す単一のエンティティです。
+テナントに対して構成された Exchange onpremises ポリシーを表すシングルトンエンティティ。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[DeviceManagementExchangeOnPremisesPolicy を取得します。](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-get.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[DeviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティと関係を参照してください。|
-|[DeviceManagementExchangeOnPremisesPolicy を更新します。](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-update.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[DeviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティを更新します。|
+|[deviceManagementExchangeOnPremisesPolicy を取得する](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-get.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[deviceManagementExchangeOnPremisesPolicy の更新](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-update.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
-|notificationContent|Binary|このポリシーで検疫されたユーザーに送信される通知のテキストです。 これは、UTF8 のエンコードされたバイト配列 HTML です。|
-|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange の既定のアクセス状態。 このルールは、Exchange 組織全体にグローバルに適用されます。 可能な値は、`none`、`allow`、`block`、`quarantine` です。|
-|accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)コレクション|デバイスへのアクセスの一覧で Exchange ルールします。 アクセス ルールは、Exchange 組織全体にグローバルに適用します。|
-|knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)コレクション|Exchange に既知のデバイス クラスの一覧|
+|notificationContent|Binary|このポリシーによって検疫されたユーザーに送信される通知テキスト。 これは、UTF8 でエンコードされたバイト配列 HTML です。|
+|defaultaccesslevel|[devicemanagementexchangeaccesslevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange の既定のアクセス状態。 このルールは、Exchange 組織全体にグローバルに適用されます。 使用可能な値は、`none`、`allow`、`block`、`quarantine` です。|
+|accessrules|[devicemanagementexchangeaccessrule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)コレクション|Exchange のデバイスアクセスルールの一覧。 アクセスルールは、Exchange 組織全体にグローバルに適用されます。|
+|knowndeviceclasses 場合|[devicemanagementexchangedeviceclass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)コレクション|Exchange に認識されているデバイスクラスの一覧|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

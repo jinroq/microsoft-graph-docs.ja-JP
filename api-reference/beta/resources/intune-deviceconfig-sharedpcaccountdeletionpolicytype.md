@@ -1,30 +1,30 @@
 ---
 title: sharedPCAccountDeletionPolicyType 列挙型
-description: 共有の PC でアカウントが削除されたときに指定できる値です。
-localization_priority: Normal
+description: 共有 PC でアカウントを削除する場合に使用できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645cd3dfd4121c6c9bdd9d57a0dc3b63723cc461
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415167"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139936"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-共有の PC でアカウントが削除されたときに指定できる値です。
+共有 PC でアカウントを削除する場合に使用できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|イミディ エイト|0|すぐに削除します。|
-|diskSpaceThreshold|1|ディスク容量のしきい値を削除します。|
-|diskSpaceThresholdOrInactiveThreshold|2|ディスク容量のしきい値または非アクティブのしきい値を削除します。|
+|瞬時|.0|すぐに削除します。|
+|ディスクスペースしきい値|1-d|ディスク容量のしきい値で削除します。|
+|diskSpaceThresholdOrInactiveThreshold|pbm-2|ディスク容量のしきい値または非アクティブなしきい値での削除。|
 
 
 

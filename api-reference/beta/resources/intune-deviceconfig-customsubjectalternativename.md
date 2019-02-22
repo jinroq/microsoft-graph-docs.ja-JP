@@ -1,29 +1,29 @@
 ---
-title: customSubjectAlternativeName リソースの種類
-description: カスタムのサブジェクトの別名定義
-localization_priority: Normal
+title: customsubjectoff・ベンダーのリソースの種類
+description: カスタムサブジェクトの別名定義
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3f081b37b79be45d6705d24be58ea7295b58b68
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3b1583a88a52a626803fe45837e056ec020b05e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415671"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146215"
 ---
-# <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName リソースの種類
+# <a name="customsubjectalternativename-resource-type"></a>customsubjectoff・ベンダーのリソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-カスタムのサブジェクトの別名定義
+カスタムサブジェクトの別名定義
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|SAN のカスタム型です。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
-|name|String|SAN のカスタム名|
+|santype|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|カスタム SAN の種類。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
+|name|String|ユーザー設定の SAN 名|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

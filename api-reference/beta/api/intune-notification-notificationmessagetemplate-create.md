@@ -1,21 +1,21 @@
 ---
 title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f16d9e679533e56e59393f967b9b192b74f3607b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 238aa7a6977655300e54cdb64f430b89022d3942
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419822"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145186"
 ---
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceManagement/notificationMessageTemplates
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求の本文で、notificationMessageTemplate オブジェクトの JSON 表記を指定します。
@@ -55,7 +55,7 @@ POST /deviceManagement/notificationMessageTemplates
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 

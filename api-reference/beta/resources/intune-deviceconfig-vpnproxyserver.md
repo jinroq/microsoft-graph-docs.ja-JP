@@ -1,30 +1,30 @@
 ---
 title: vpnProxyServer リソースの種類
-description: VPN プロキシ サーバーです。
-localization_priority: Normal
+description: VPN プロキシサーバー。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 676e56771f021a79179e268280f5e3190754eef2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b8a452cdde7c4c360107a67396d8f5ce49d6eb1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425674"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145277"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN プロキシ サーバーです。
+VPN プロキシサーバー。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|プロキシの自動構成スクリプトの url です。|
-|address|String|アドレスです。|
-|port|Int32|ポートです。 0 から 65535 までの有効な値|
+|自動構成 scripturl|String|プロキシの自動構成スクリプトの url。|
+|address|String|連絡先.|
+|port|Int32|ポート. 有効な値は 0 ~ 65535|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

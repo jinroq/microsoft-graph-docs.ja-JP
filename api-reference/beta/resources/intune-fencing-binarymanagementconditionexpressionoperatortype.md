@@ -1,29 +1,29 @@
 ---
-title: binaryManagementConditionExpressionOperatorType 列挙型
-description: 管理条件式の二項演算子をサポートします。
-localization_priority: Normal
+title: binarymanagementconditionexpression 演算子 type 列挙型
+description: 管理条件式に対してサポートされる二項演算子。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05b195df95d6f7a85673a352edf090cea7f074aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143807"
 ---
-# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 列挙型
+# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binarymanagementconditionexpression 演算子 type 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理条件式の二項演算子をサポートします。
+管理条件式に対してサポートされる二項演算子。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|または|0|1 つ以上のオペランドが true の場合にのみ一連のオペランドが true と評価されました。|
-|and|1|オペランドのすべてに該当する場合にのみ一連のオペランドが true と評価されました。|
+|または|.0|オペランドが1つ以上 true の場合にのみ、オペランドのセットを true として評価します。|
+|and|1-d|オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
 
 
 

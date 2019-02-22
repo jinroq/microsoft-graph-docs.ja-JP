@@ -1,30 +1,30 @@
 ---
-title: requiredPasswordType 列挙型
-description: 必要なパスワードの使用可能な値です。
-localization_priority: Normal
+title: requiredpasswordtype 列挙型
+description: 必要なパスワードの有効な値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d254c18fd827db961c1d31e962a506fb82d32cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 756a4623e117b8925c682d4a599d0f6ec05ebde0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145473"
 ---
-# <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 列挙型
+# <a name="requiredpasswordtype-enum-type"></a>requiredpasswordtype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-必要なパスワードの使用可能な値です。
+必要なパスワードの有効な値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスの既定値でことを目的しません。|
-|英数字|1|英数字のパスワードが必要です。|
-|numeric|2|数字のパスワードが必要です。|
+|devicedefault|.0|デバイスの既定値。意図的ではありません。|
+|英数字|1-d|英数字のパスワードが必要です。|
+|numeric|pbm-2|数字のパスワードが必要です。|
 
 
 

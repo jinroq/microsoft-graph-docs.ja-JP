@@ -1,45 +1,45 @@
 ---
-title: deviceManagementScriptUserState リソースの種類
-description: 状態のデバイスの管理スクリプトを実行するユーザーのプロパティが含まれています。
-localization_priority: Normal
+title: devicemanagementscriptuserstate リソースの種類
+description: デバイス管理スクリプトのユーザー実行状態のプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1884967707be8e126724148afa5d04b07f80a48
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9f2a0d24c76d0eb01e7a7edc889dae47ae5bc0fa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407285"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144745"
 ---
-# <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState リソースの種類
+# <a name="devicemanagementscriptuserstate-resource-type"></a>devicemanagementscriptuserstate リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-状態のデバイスの管理スクリプトを実行するユーザーのプロパティが含まれています。
+デバイス管理スクリプトのユーザー実行状態のプロパティが含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト deviceManagementScriptUserStates](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)コレクション|[DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[DeviceManagementScriptUserState を取得します。](../api/intune-devices-devicemanagementscriptuserstate-get.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティと関係を参照してください。|
-|[DeviceManagementScriptUserState を作成します。](../api/intune-devices-devicemanagementscriptuserstate-create.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|新しい[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトを作成します。|
-|[DeviceManagementScriptUserState を削除します。](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|なし|の[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)を削除します。|
-|[DeviceManagementScriptUserState を更新します。](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementscriptuserstates のリスト](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)コレクション|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[devicemanagementscriptuserstate の取得](../api/intune-devices-devicemanagementscriptuserstate-get.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementscriptuserstate の作成](../api/intune-devices-devicemanagementscriptuserstate-create.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|新しい[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトを作成します。|
+|[devicemanagementscriptuserstate の削除](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|なし|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)を削除します。|
+|[devicemanagementscriptuserstate の更新](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
-|successDeviceCount|Int32|デバイスの数の特定のユーザーに成功します。|
-|errorDeviceCount|Int32|特定のユーザー エラー デバイスの数。|
-|userPrincipalName|String|特定のユーザーのユーザー プリンシパル名です。|
+|id|String|デバイス管理スクリプトのユーザー状態エンティティのキー。|
+|successDeviceCount|Int32|特定のユーザーの成功デバイス数。|
+|errorDeviceCount|Int32|特定のユーザーのエラーデバイス数。|
+|userPrincipalName|String|特定のユーザーのユーザープリンシパル名。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)コレクション|特定のユーザーのすべてのデバイスでは、このスクリプトの実行状態のリストです。|
+|deviceRunStates|[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)コレクション|特定のユーザーのすべてのデバイスでこのスクリプトの実行状態を一覧表示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

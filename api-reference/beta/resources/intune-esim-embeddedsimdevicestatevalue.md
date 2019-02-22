@@ -1,35 +1,35 @@
 ---
 title: embeddedSIMDeviceStateValue 列挙型
-description: SIM の埋め込みのライセンス認証コードのさまざまな状態をについて説明します。
-localization_priority: Normal
+description: 埋め込まれた SIM のアクティブ化コードのさまざまな状態について説明します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2da255ef2d0cf192dd09a6351bbd337f3cd9b5c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9bdc3250605de7db7a3778d64b5e743a415de4c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421327"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145424"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-SIM の埋め込みのライセンス認証コードのさまざまな状態をについて説明します。
+埋め込まれた SIM のアクティブ化コードのさまざまな状態について説明します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notEvaluated|0|SIM の埋め込みのライセンス認証コードが空き時間と、デバイスに割り当てられる利用可能なことを指定します。|
-|失敗しました。|1|Intune サービスがデバイスにこのプロファイルを提供する失敗したことを指定します。|
-|インストール|2|SIM の埋め込みのライセンス認証コードは、デバイスに割り当てられているし、デバイスが、トークンをインストールすることを指定します。|
-|インストールされています。|3|SIM の埋め込みのライセンス認証コードがターゲット ・ デバイスを正常にインストールされているかを指定します。|
-|削除|4|Intune サービスがデバイスのプロファイルを削除しようとしていることを指定します。|
-|エラー|5|このプロファイルを使用してエラーがあることを指定します。|
-|deleted|6|デバイスからプロファイルを削除することを指定します。|
-|removedByUser|7|ユーザーがデバイスからプロファイルが削除されるかを指定します。|
+|注評価|.0|埋め込まれている SIM ライセンス認証コードが無料で、デバイスに割り当てることができることを指定します。|
+|フェール|1-d|Intune サービスがこのプロファイルをデバイスに配信できなかったことを指定します。|
+|インストール|pbm-2|埋め込まれた SIM ライセンス認証コードがデバイスに割り当てられており、デバイスがトークンをインストールしていることを指定します。|
+|れる|1/3|埋め込まれた SIM ライセンス認証コードがターゲットデバイスに正常にインストールされたことを指定します。|
+|削除|2/4|Intune サービスがデバイスからプロファイルを削除しようとしていることを指定します。|
+|エラー|5|このプロファイルにエラーがあることを指定します。|
+|deleted|シックス|プロファイルがデバイスから削除されることを指定します。|
+|removedbyuser|7|ユーザーがプロファイルをデバイスから削除することを指定します。|
 
 
 

@@ -1,31 +1,31 @@
 ---
 title: androidManagedStoreAccountEnrollmentTarget 列挙型
-description: アカウントの種類を対象とする作業のデバイス管理のためのアプリ
-localization_priority: Normal
+description: アカウントのための Android for Work デバイス管理対象の種類
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9401953e2444dde72344bbfddd77415ba4339c82
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 038753c16fab1eba3d8d181a1e33fa94aaf7a8bd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399067"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139509"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>androidManagedStoreAccountEnrollmentTarget 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アカウントの種類を対象とする作業のデバイス管理のためのアプリ
+アカウントのための Android for Work デバイス管理対象の種類
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|まだ文書化されていません|
-|all|1|まだ文書化されていません|
-|対象となります。|2|まだ文書化されていません|
-|targetedAsEnrollmentRestrictions|3|まだ文書化されていません|
+|none|.0|まだ文書化されていません|
+|all|1-d|まだ文書化されていません|
+|おり|pbm-2|まだ文書化されていません|
+|targetedAsEnrollmentRestrictions|1/3|まだ文書化されていません|
 
 
 

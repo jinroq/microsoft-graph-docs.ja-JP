@@ -1,21 +1,21 @@
 ---
 title: executeAction アクション
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24311c198127b2ac8fb618285e6a6eba8b44c12d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 84cb53d097b7f9e68869d48c618cb0a56f89d9db
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404415"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144535"
 ---
 # <a name="executeaction-action"></a>executeAction アクション
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
@@ -53,12 +53,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|まだ文書化されていません|
-|deviceIds|String コレクション|まだ文書化されていません|
+|deviceids|String コレクション|まだ文書化されていません|
 
 
 
 ## <a name="response"></a>応答
-かどうか、成功を返すアクション、`200 OK`応答コードおよび応答の本文には[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)です。
+成功した場合、このアクション`200 OK`は応答コードと、応答本文で[bulkmanageddeviceactionresult](../resources/intune-devices-bulkmanageddeviceactionresult.md)を返します。
 
 ## <a name="example"></a>例
 

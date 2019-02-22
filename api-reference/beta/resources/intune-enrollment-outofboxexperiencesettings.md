@@ -1,33 +1,33 @@
 ---
 title: outOfBoxExperienceSettings リソースの種類
-description: ボックスの設定が発生します。
-localization_priority: Normal
+description: 不在時の環境設定
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145529"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ボックスの設定が発生します。
+不在時の環境設定
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|ユーザーのプライバシー設定の表示と非表示を切り替える|
-|hideEULA|Boolean|ユーザーに使用許諾契約書の表示と非表示を切り替える|
-|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|ユーザーの種類です。 使用可能な値は、`administrator`、`standard` です。|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD の結合の認証の種類です。 使用可能な値は、`singleUser`、`shared` です。|
-|skipKeyboardSelectionPage|Boolean|かどうか、セット、キーボードの選択をスキップするページの言語と地域が設定されている場合|
-|hideEscapeLink|Boolean|ユーザーでは、true に設定を別のアカウントでのサインインの会社経由で起動できない場合|
+|hideprivacysettings|ブール値|ユーザーのプライバシー設定を表示または非表示にする|
+|hideeula|ブール値|ユーザーに EULA を表示または非表示にする|
+|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|ユーザーの種類。 使用可能な値は、`administrator`、`standard` です。|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD 参加認証の種類。 使用可能な値は、`singleUser`、`shared` です。|
+|skipキーボードの selectionpage|ブール値|設定されている場合は、言語と地域が設定されている場合は、キーボードの選択ページをスキップします。|
+|hideEscapeLink|ブール値|true に設定されている場合、ユーザーは別のアカウントを使用してサインインすることはできません (会社のサインイン時)。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

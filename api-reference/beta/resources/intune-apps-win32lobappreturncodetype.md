@@ -1,32 +1,32 @@
 ---
 title: win32LobAppReturnCodeType 列挙型
-description: リターン コードの種類を示します。
-localization_priority: Normal
+description: 戻り値のコードの種類を示します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42491bd49759dbb7642fc968cd8957d5a2948305
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e49268447551a3c86752536cf3b1f8f052d8fb2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145760"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-リターン コードの種類を示します。
+戻り値のコードの種類を示します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|失敗しました。|0|失敗しました。|
-|success|1|成功します。|
-|softReboot|2|ソフト再起動が必要があります。|
-|hardReboot|3|ハードの再起動が必要があります。|
-|再試行してください。|4|再試行してください。|
+|フェール|.0|フェール.|
+|success|1-d|完了.|
+|softReboot|pbm-2|Soft-再起動が必要です。|
+|ハードリブート|1/3|ハード再起動が必要です。|
+|み|2/4|み.|
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: ratingNewZealandTelevisionType 列挙型
-description: ニュージーランドのテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: 新しいニュージーランドのテレビコンテンツの評価ラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4030ce62a3ae37166c0f9f64d62e513db5a22baf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144598"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ニュージーランドのテレビのコンテンツの規制ラベル
+新しいニュージーランドのテレビコンテンツの評価ラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|全般|2|G 分類 14 下の子に害を与える可能性の高い材料を除外します。|
-|parentalGuidance|3|PGR のクラス分けが若い視聴者を監督するには、親と保護者を促進します。|
-|大人|4|AO 分類が子供に適していません。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|元帳|pbm-2|G 分類は、14の下の子に悪影響を与える可能性がある材料を除外します。|
+|parentalguidance|1/3|pgr 分類は、親とガーディアンによる、若い閲覧者の監督を促進します。|
+|保護者|2/4|AO 分類は、子には適していません|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: リスト windowsManagedDevices
-description: WindowsManagedDevice オブジェクトのプロパティと関係を一覧表示します。
-localization_priority: Normal
+title: windowsmanageddevices を一覧表示する
+description: windowsmanageddevice オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16d71b025e0f324f6eb3ca822b9027eccb398b14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 55043db2f0e5b935fecce60641b434003dd10f14
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411814"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143968"
 ---
-# <a name="list-windowsmanageddevices"></a>リスト windowsManagedDevices
+# <a name="list-windowsmanageddevices"></a>windowsmanageddevices を一覧表示する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのプロパティと関係を一覧表示します。
+[windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -43,13 +43,13 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7907
+Content-Length: 7973
 
 {
   "value": [
@@ -163,7 +163,9 @@ Content-Length: 7907
         "resourceAccess": true,
         "deviceConfiguration": true,
         "compliancePolicy": true,
-        "windowsUpdateForBusiness": true
+        "windowsUpdateForBusiness": true,
+        "endpointProtection": true,
+        "officeApps": true
       },
       "wiFiMacAddress": "Wi Fi Mac Address value",
       "deviceHealthAttestationState": {

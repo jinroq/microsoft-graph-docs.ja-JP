@@ -1,21 +1,21 @@
 ---
 title: Create importedWindowsAutopilotDeviceIdentity
 description: 新規で importedWindowsAutopilotDeviceIdentity オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c951e6b0489d5d42035d6f415efe64a8b6fb5d3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c13f46d168bbb20d8166d063d3f12695ce02f50a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400726"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146257"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新規で [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) オブジェクトを作成します。
 
@@ -42,7 +42,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、importedWindowsAutopilotDeviceIdentity オブジェクトの JSON 表記を指定します。
@@ -51,7 +51,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|id|文字列|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
 |シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
