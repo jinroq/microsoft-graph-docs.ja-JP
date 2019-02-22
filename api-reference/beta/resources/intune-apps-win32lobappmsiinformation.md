@@ -1,34 +1,36 @@
 ---
 title: win32LobAppMsiInformation リソースの種類
-description: Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
-localization_priority: Normal
+description: Win32 アプリ用の MSI アプリのプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba91c572286020a3e349527f325d22bf0be5d67
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f330111a3e924e54cf23c30cd98d20e85cb38022
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399249"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158647"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
+Win32 アプリ用の MSI アプリのプロパティが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|productCode|String|MSI の製品コードです。|
-|productVersion|String|MSI 製品のバージョンです。|
-|upgradeCode|String|Msi ファイルは、コードをアップグレードします。|
-|requiresReboot|Boolean|かどうか、MSI アプリケーションには、インストールの完了に再起動するコンピューターが必要です。|
-|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI パッケージの種類です。 可能な値は、`perMachine`、`perUser`、`dualPurpose` です。|
+|productCode|String|MSI 製品コード。|
+|productVersion|String|MSI 製品バージョン。|
+|upgradeCode|String|MSI アップグレードコード。|
+|requiresReboot|ブール値|MSI アプリがインストールを完了するためにコンピューターを再起動する必要があるかどうか。|
+|packagetype|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI パッケージの種類。 可能な値は `perMachine`、`perUser`、`dualPurpose` です。|
+|productName|String|MSI 製品名。|
+|publisher|文字列型 (String)|MSI パブリッシャー。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,7 +47,9 @@ Win32 アプリケーションの MSI アプリケーションのプロパティ
   "productVersion": "String",
   "upgradeCode": "String",
   "requiresReboot": true,
-  "packageType": "String"
+  "packageType": "String",
+  "productName": "String",
+  "publisher": "String"
 }
 ```
 

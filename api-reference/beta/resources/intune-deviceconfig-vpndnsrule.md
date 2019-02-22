@@ -1,32 +1,32 @@
 ---
-title: vpnDnsRule リソースの種類
-description: VPN の DNS ルール定義します。
-localization_priority: Normal
+title: vpndnsrule リソースの種類
+description: VPN DNS ルールの定義。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6141cc0579840a23a28be2dce951c160f90248
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 545c0dd8a84f19888452261e350a9b347061595c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158507"
 ---
-# <a name="vpndnsrule-resource-type"></a>vpnDnsRule リソースの種類
+# <a name="vpndnsrule-resource-type"></a>vpndnsrule リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN の DNS ルール定義します。
+VPN DNS ルールの定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|name|String|名前です。|
-|サーバー|String コレクション|サーバーです。|
-|proxyServerUri|String|プロキシ サーバーの Uri。|
-|autoTrigger|Boolean|VPN への接続に自動的にデバイスがこのドメインに接続する場合: 既定値は False です。|
-|persistent|Boolean|VPN が接続されていない場合でもこの規則をアクティブにしておく既定値は False。|
+|name|String|拡張子.|
+|サーバー|String collection|サーバ.|
+|proxyserveruri|String|プロキシサーバーの Uri。|
+|autotrigger|ブール値|デバイスがこのドメインに接続されている場合は、自動的に VPN に接続します。既定値は False です。|
+|persistent|ブール値|VPN が接続されていない場合も、このルールをアクティブにします。既定値は False です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

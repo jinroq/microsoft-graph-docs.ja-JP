@@ -1,30 +1,30 @@
 ---
-title: windowsInformationProtectionPinCharacterRequirements 列挙型
-description: 暗証番号 (pin) の文字の要件
-localization_priority: Normal
+title: windowsinformationprotectionpin文字の要件列挙型
+description: Pin 文字の要件
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 203f5c7d52fb72346d099949ea5880fa9b82726c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1147f597a1c2bcaf18a29d783b42722195c79407
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160810"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 列挙型
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsinformationprotectionpin文字の要件列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-暗証番号 (pin) の文字の要件
+Pin 文字の要件
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|許されない|0|許可しません。|
-|requireAtLeastOne|1|少なくとも 1 つを必要とします。|
-|許可します。|2|任意の数を許可します。|
+|notallow|.0|許可しない|
+|requireatall ストーン|1-d|少なくとも1つ必要|
+|使う|pbm-2|任意の番号を許可する|
 
 
 

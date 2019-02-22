@@ -1,50 +1,50 @@
 ---
-title: groupPolicyPresentationTextBox リソースの種類
-description: ADMX textBox 要素と ADMX テキスト要素を表します。
-localization_priority: Normal
+title: grouppolicypresentationtextbox リソースの種類
+description: admx textBox 要素と admx テキスト要素を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5e5e034ce2cc0cd18aac27abf59730873e7998a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c90355aa9c355b586b060e0e37ddeab8467e5964
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430380"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155581"
 ---
-# <a name="grouppolicypresentationtextbox-resource-type"></a>groupPolicyPresentationTextBox リソースの種類
+# <a name="grouppolicypresentationtextbox-resource-type"></a>grouppolicypresentationtextbox リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ADMX textBox 要素と ADMX テキスト要素を表します。
+admx textBox 要素と admx テキスト要素を表します。
 
 
-[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
+[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト groupPolicyPresentationTextBoxes](../api/intune-grouppolicy-grouppolicypresentationtextbox-list.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)コレクション|[GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[GroupPolicyPresentationTextBox を取得します。](../api/intune-grouppolicy-grouppolicypresentationtextbox-get.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|[GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyPresentationTextBox を作成します。](../api/intune-grouppolicy-grouppolicypresentationtextbox-create.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|新しい[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを作成します。|
-|[GroupPolicyPresentationTextBox を削除します。](../api/intune-grouppolicy-grouppolicypresentationtextbox-delete.md)|なし|の[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)を削除します。|
-|[GroupPolicyPresentationTextBox を更新します。](../api/intune-grouppolicy-grouppolicypresentationtextbox-update.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|[GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティを更新します。|
+|[grouppolicypresentationtextboxes テキストボックスのリスト](../api/intune-grouppolicy-grouppolicypresentationtextbox-list.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)コレクション|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[grouppolicypresentationtextbox の取得](../api/intune-grouppolicy-grouppolicypresentationtextbox-get.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicypresentationtextbox の作成](../api/intune-grouppolicy-grouppolicypresentationtextbox-create.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|新しい[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを作成します。|
+|[grouppolicypresentationtextbox の削除](../api/intune-grouppolicy-grouppolicypresentationtextbox-delete.md)|なし|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)を削除します。|
+|[grouppolicypresentationtextbox の更新](../api/intune-grouppolicy-grouppolicypresentationtextbox-update.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|プレゼンテーションの任意のエンティティのローカライズされたテキスト ラベルです。 既定値は空です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|defaultValue|文字列|テキスト ボックスに表示される既定の文字列をローカライズします。 既定値は空です。|
-|必須|Boolean|テキスト ボックスに値を入力するための要件。 既定値は false です。|
-|maxLength|Int64|テキスト文字の最大数を指定する符号なし整数。 1023 を既定値には。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|defaultValue|文字列|テキストボックスに表示されるローカライズされた既定の文字列。 既定値は empty です。|
+|必須|ブール値|テキストボックスに値を入力する必要があります。 既定値は false です。|
+|maxLength|Int64|テキストの最大文字数を指定する符号なし整数。 既定値は1023です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられているグループ ポリシーの定義です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
+|definition|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

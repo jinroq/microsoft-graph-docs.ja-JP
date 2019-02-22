@@ -1,23 +1,23 @@
 ---
-title: SideLoadingKey を更新します。
-description: SideLoadingKey オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: sideLoadingKey の更新
+description: sideLoadingKey オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fd498404543353c45714f739a68b0195ae3d3dd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156820"
 ---
-# <a name="update-sideloadingkey"></a>SideLoadingKey を更新します。
+# <a name="update-sideloadingkey"></a>sideLoadingKey の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。
+[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,26 +41,26 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトの JSON 表記を指定します。
 
-[SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|側のキーの一意の id の読み込み|
-|value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|
-|displayName|String|側の読み込みキー名、it プロフェッショナルの管理者に表示されます。|
-|説明|String|側キーの読み込み中の説明は、it プロフェッショナルの管理者に表示されます.|
-|totalActivation|Int32|側の読み込みキー合計のアクティブ化、it プロフェッショナルの管理者に表示されます。|
-|lastUpdatedDateTime|String|側の読み込みキー最終更新日 it プロフェッショナルの管理者に表示されます。|
+|id|String|サイドローディングキーの一意 Id。|
+|value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
+|displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
+|説明|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
+|totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
+|lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

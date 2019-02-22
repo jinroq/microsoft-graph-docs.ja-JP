@@ -1,34 +1,34 @@
 ---
-title: automaticUpdateMode 列挙型
-description: 自動更新モードを使用可能な値です。
-localization_priority: Normal
+title: 自動 updatemode 列挙型
+description: 自動更新モードで可能な値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d982c4c9ee524712c212eba1b8b44349d0a70377
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bba7addc5ae3b7942c3e52e1d8989100e27b2831
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402637"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156785"
 ---
-# <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 列挙型
+# <a name="automaticupdatemode-enum-type"></a>自動 updatemode 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-自動更新モードを使用可能な値です。
+自動更新モードで可能な値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|notifyDownload|1|ダウンロード時に通知します。|
-|autoInstallAtMaintenanceTime|2|メンテナンス時に自動インストールします。|
-|autoInstallAndRebootAtMaintenanceTime|3|自動インストールおよびメンテナンス時に再起動します。|
-|autoInstallAndRebootAtScheduledTime|4|自動インストールし、スケジュールされた時刻に再起動します。|
-|autoInstallAndRebootWithoutEndUserControl|5|自動インストールし、エンドユーザーの制御に再起動します|
-|windowsDefault|6|Windows の既定値にリセットされます。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|notifydownload|1-d|ダウンロードを通知します。|
+|autoInstallAtMaintenanceTime|pbm-2|メンテナンス時に自動インストールします。|
+|autoInstallAndRebootAtMaintenanceTime|1/3|メンテナンス時に自動的にインストールおよび再起動します。|
+|autoInstallAndRebootAtScheduledTime|2/4|スケジュールされた時刻に自動インストールおよび再起動します。|
+|autoInstallAndRebootWithoutEndUserControl|5|エンドユーザーコントロールを使用せずに自動インストールおよび再起動|
+|windowsdefault|シックス|Windows の既定値にリセットします。|
 
 
 

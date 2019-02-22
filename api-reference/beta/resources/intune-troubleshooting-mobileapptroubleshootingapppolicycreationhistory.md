@@ -1,33 +1,33 @@
 ---
 title: mobileAppTroubleshootingAppPolicyCreationHistory リソースの種類
-description: 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
-localization_priority: Normal
+description: モバイルアプリのトラブルシューティングイベントに含まれる履歴アイテム。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e81f7f39cac934a89cf06d77fbcb80581267097b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a93b88f850e2fa220903362375774d8a6dded59c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394559"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160502"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
+モバイルアプリのトラブルシューティングイベントに含まれる履歴アイテム。
 
 
-[MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。
+[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|履歴項目が発生した時刻です。 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承されました。|
-|runState|[runState](../resources/intune-shared-runstate.md)|項目の状態です。 可能な値は、`unknown`、`success`、`fail` です。|
-|errorCode|String|障害なしの場合は、空のエラーのエラー コードです。|
+|occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。|
+|runstate|[runstate](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は `unknown`、`success`、`fail` です。|
+|errorCode|String|失敗のエラーコード。エラーがない場合は空です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,31 +1,31 @@
 ---
 title: windowsPrivacyDataAccessLevel 列挙型
-description: Windows プライバシー データの特定のカテゴリへのアクセス レベルを決定します。
-localization_priority: Normal
+description: 特定の Windows プライバシーデータカテゴリへのアクセスレベルを決定します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5d6fed0897b22a6a6b478dc5d2b7954faca42b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e2cdf124d3da6bf2c08954365a87ae0a97b05267
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410624"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159067"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Windows プライバシー データの特定のカテゴリへのアクセス レベルを決定します。
+特定の Windows プライバシーデータカテゴリへのアクセスレベルを決定します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|目的なしアクセス レベルが指定されませんでした。 デバイスは、UserInControl や ForceAllow のように動作可能性があります。 プライバシー ・ データによりますが、されたバージョンの Windows およびその他の要素にアクセスします。|
-|forceAllow|1|アプリケーションは、指定したプライバシー データへのアクセスが許可されます。|
-|forceDeny|2|指定したプライバシー ・ データにアクセスするアプリケーションは拒否されます。|
-|userInControl|3|アプリケーションが指定したプライバシー ・ データにアクセスしようとした場合、ユーザーが要求されます。|
+|notConfigured|.0|指定されたアクセスレベルはありません。意図的なものではありません。 デバイスは userincontrol または forceallow のどちらかの動作をすることがあります。 アクセスされたプライバシーデータ、Windows のバージョン、その他の要因によって異なる場合があります。|
+|forceallow|1-d|アプリは、指定されたプライバシーデータにアクセスできるようになります。|
+|forcedeny|pbm-2|アプリは、指定されたプライバシーデータにアクセスすることを拒否されます。|
+|userincontrol|1/3|アプリが指定されたプライバシーデータにアクセスしようとすると、ユーザーにメッセージが表示されます。|
 
 
 

@@ -1,34 +1,34 @@
 ---
 title: vpnOnDemandRule リソースの種類
-description: VPN オンデマンド ルール定義します。
-localization_priority: Normal
+description: VPN のオンデマンドルールの定義。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8164d1c12aeb172120bb9803d7f3dd98366ec948
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b1bccd015e45291b344e7c77df4ac5c0a0af07d0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421460"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161587"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN オンデマンド ルール定義します。
+VPN のオンデマンドルールの定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ssid|String コレクション|ネットワーク サービスでは、識別子 (Ssid) を設定します。|
-|dnsSearchDomains|String コレクション|DNS ドメインを検索します。|
-|probeUrl|String|プローブへの URL です。 この URL は、正常に場合、リダイレクトには、(HTTP ステータス コード 200 を返す) をフェッチ、この規則に一致します。|
-|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|アクションです。 可能な値は、`connect`、`evaluateConnection`、`ignore`、`disconnect` です。|
-|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|ドメインのアクション (アクションは、接続を評価するときにのみ該当する)。 使用可能な値は、`connectIfNeeded`、`neverConnect` です。|
-|ドメイン|String コレクション|(操作は、接続を評価するときにのみ該当する) のドメインです。|
-|probeRequiredUrl|String|(操作は、接続を評価し、必要な場合に DomainAction を接続するときにのみ該当する) が必要な Url をプローブします。|
+|ssid|String collection|ネットワークサービスセット識別子 (ssid)。|
+|dnssearchdomains|String collection|DNS 検索ドメイン。|
+|probeUrl|String|プローブする URL。 リダイレクトされていない (200 HTTP 状態コードを返す) この URL が正常に取得された場合、このルールは一致します。|
+|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. 使用可能な値は、`connect`、`evaluateConnection`、`ignore`、`disconnect` です。|
+|domainaction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|ドメインアクション (アクションが接続を評価する場合にのみ該当)。 使用可能な値は、`connectIfNeeded`、`neverConnect` です。|
+|ドメイン|String collection|ドメイン (アクションが接続を評価する場合にのみ該当)。|
+|probeRequiredUrl|String|必要な Url をプローブします (アクションが接続を評価する場合にのみ適用され、必要に応じて、domainaction が connect である)。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

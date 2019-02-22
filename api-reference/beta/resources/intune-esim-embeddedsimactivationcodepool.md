@@ -1,49 +1,49 @@
 ---
 title: embeddedSIMActivationCodePool リソースの種類
-description: プールでは、埋め込み SIM のアクティベーション コードのグループを表します。
-localization_priority: Normal
+description: プールは、埋め込まれた SIM アクティブ化コードのグループを表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dfcca046abf206fc29bbc6033bbd88980f9bf43
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 55cd515bf57dedf4cac2826000d7bc8e9764e3dd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158983"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-プールでは、埋め込み SIM のアクティベーション コードのグループを表します。
+プールは、埋め込まれた SIM アクティブ化コードのグループを表します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)コレクション|[EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[EmbeddedSIMActivationCodePool を取得します。](../api/intune-esim-embeddedsimactivationcodepool-get.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|[EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティと関係を参照してください。|
-|[EmbeddedSIMActivationCodePool を作成します。](../api/intune-esim-embeddedsimactivationcodepool-create.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|新しい[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトを作成します。|
-|[EmbeddedSIMActivationCodePool を削除します。](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|なし|の[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)を削除します。|
-|[EmbeddedSIMActivationCodePool を更新します。](../api/intune-esim-embeddedsimactivationcodepool-update.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|[EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティを更新します。|
+|[リスト embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)コレクション|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[embeddedSIMActivationCodePool を取得する](../api/intune-esim-embeddedsimactivationcodepool-get.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[embeddedSIMActivationCodePool を作成する](../api/intune-esim-embeddedsimactivationcodepool-create.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|新しい[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトを作成します。|
+|[embeddedSIMActivationCodePool の削除](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|なし|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)を削除します。|
+|[embeddedSIMActivationCodePool の更新](../api/intune-esim-embeddedsimactivationcodepool-update.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティを更新します。|
 |[assign action](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|displayName|String|管理者には、埋め込み SIM アクティベーション コードのプールの名前が定義されています。|
-|createdDateTime|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが作成された時刻。 サービス側が生成されます。|
-|変更された日時|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが最後に修正された時間です。 サービス側を更新します。|
-|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)コレクション|このプールに属しているアクティブ化コードです。 このナビゲーション プロパティは Intune にライセンス認証コードを投稿するために使用しますが、Intune からアクティブ化コードを読み取るには使用できません。|
-|activationCodeCount|Int32|このプールに属しているアクティブ化コードの合計数。|
+|id|String|埋め込まれた SIM アクティブ化コードプールの一意識別子。 作成時に割り当てられたシステム生成値。|
+|displayName|String|埋め込まれた SIM アクティブ化コードプールの管理者定義の名前。|
+|createdDateTime|DateTimeOffset|埋め込まれた SIM ライセンス認証コードプールが作成された時刻。 サービス側を生成しました。|
+|変更された日時|DateTimeOffset|埋め込まれた SIM ライセンス認証コードプールが最後に変更された時刻。 サービス側を更新しました。|
+|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)コレクション|このプールに属するアクティブ化コード。 このナビゲーションプロパティは、アクティブ化コードを intune に送信するために使用されますが、intune からのアクティブ化コードの読み取りには使用できません。|
+|activationCodeCount|Int32|このプールに属するアクティブ化コードの合計数。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|assignments|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|このプールが割り当てられているターゲットのリストにプロパティをナビゲーションします。|
-|deviceStates|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)コレクション|このプールのデバイスの状態の一覧にプロパティをナビゲーションします。|
+|assignments|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|このプールが割り当てられているターゲットのリストへのナビゲーションプロパティ。|
+|deviceStates|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)コレクション|このプールのデバイス状態のリストへのナビゲーションプロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

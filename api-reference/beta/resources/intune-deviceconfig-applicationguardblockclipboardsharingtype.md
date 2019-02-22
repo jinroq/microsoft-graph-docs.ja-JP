@@ -1,32 +1,32 @@
 ---
-title: applicationGuardBlockClipboardSharingType 列挙型
-description: ApplicationGuardBlockClipboardSharingType に指定できる値
-localization_priority: Normal
+title: applicationgu/blockクリップの sharingtype 列挙型
+description: applicationgu/blockblocksharingsharingtype に指定できる値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f9621db53e16231f710cccb12d79f65d22d4017
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dba5ba1a2d27862c9adaaa1430631b8cb4cf94d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160663"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 列挙型
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationgu/blockクリップの sharingtype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ApplicationGuardBlockClipboardSharingType に指定できる値
+applicationgu/blockblocksharingsharingtype に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|構成されていません|
-|blockBoth|1|ブロックのクリップボード データのコンテナーにホストとホスト コンテナーの両方を共有するには|
-|blockHostToContainer|2|コンテナーにホストからのデータを共有するためのブロックのクリップボード|
-|blockContainerToHost|3|コンテナーからホストへのデータを共有するためのブロックのクリップボード|
-|blockNone|4|ブロックのクリップボード データのコンテナーにホストもホストするためのコンテナーを共有するには|
+|notConfigured|.0|未構成|
+|blockboth|1-d|ホストからコンテナーへ、およびコンテナーからホストへのデータの共有をブロックするクリップボード|
+|blockhosttocontainer|pbm-2|データをホストからコンテナーに共有するためのクリップボードをブロックする|
+|blockContainerToHost|1/3|コンテナーからホストへのデータを共有するためのクリップボードをブロックする|
+|blocknone|2/4|データをホストからコンテナーにも、コンテナーからホストへも共有しないようにクリップボードをブロックする|
 
 
 

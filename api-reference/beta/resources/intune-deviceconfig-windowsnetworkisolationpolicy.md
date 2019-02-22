@@ -1,35 +1,35 @@
 ---
 title: windowsNetworkIsolationPolicy リソースの種類
-description: Windows ネットワークの分離のポリシー
-localization_priority: Normal
+description: Windows ネットワーク分離ポリシー
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7ab7addffa4ff3f9b84ced60c30fe8707c695b0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e98d14d68ff5b936a9baf0a0065d0080f275a2ac
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158241"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Windows ネットワークの分離のポリシー
+Windows ネットワーク分離ポリシー
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enterpriseNetworkDomainNames|String コレクション|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインの 1 つのデータはエンタープライズ データと見なされ、保護します。 これらの場所は安全なエンタープライズ ・ データを共有する先と見なされます。|
-|enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|保護する必要のあるクラウドでホストされているエンタープライズ リソースのドメインの一覧が含まれています。 これらのリソースへの接続は、エンタープライズ データと見なされます。 プロキシがクラウド リソースとペアリング済みの場合、クラウド リソースへのトラフィックは、指定されたプロキシ サーバー (ポート 80) を介してエンタープライズ ネットワーク経由でルーティングされます。 EnterpriseInternalProxyServers ポリシーを使用してこの目的に使用されるプロキシ サーバーを構成することもする必要があります。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|enterpriseIPRanges|[ipRange](../resources/intune-shared-iprange.md) コレクション|エンタープライズ ネットワーク内のコンピューターを定義するエンタープライズ IP の範囲を設定します。 これらのコンピューターからのデータはエンタープライズの一部と見なされ、保護されます。 これらの場所は安全なエンタープライズ ・ データを共有する先と見なされます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|enterpriseInternalProxyServers|String コレクション|これは、内部プロキシ サーバーのコンマ区切りのリストです。 例: "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59"。 これらのプロキシは、管理者により、インターネット上の特定のリソースに接続するように構成されています。 それらはエンタープライズ ネットワークの場所にあると見なされます。 プロキシは、一致したクラウド リソースのこれらのプロキシを経由するトラフィックを強制的に EnterpriseCloudResources のポリシーを構成する際に活用できるのみ。|
-|enterpriseIPRangesAreAuthoritative|Boolean|構成済みのリストを承諾し、ヒューリスティックを使用した他のサブネットの検索を行わないよう、クライアントに指示するブール値。 既定では false を指定します。|
-|enterpriseProxyServers|String コレクション|これは、プロキシ サーバーのリストです。 任意のサーバー一覧とは見なされません非エンタープライズです。|
+|enterpriseNetworkDomainNames|String collection|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインのいずれかのデータは、エンタープライズデータとして保護されています。 これらの場所は、エンタープライズデータの共有先として安全であると見なされます。|
+|enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|クラウドでホストされている、保護する必要があるエンタープライズリソースドメインの一覧が含まれています。 これらのリソースへの接続は、エンタープライズ データと見なされます。 プロキシがクラウド リソースとペアリング済みの場合、クラウド リソースへのトラフィックは、指定されたプロキシ サーバー (ポート 80) を介してエンタープライズ ネットワーク経由でルーティングされます。 この目的で使用されるプロキシサーバーも、enterpriseinternalproxyservers ポリシーを使用して構成する必要があります。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|enterpriseIPRanges|[ipRange](../resources/intune-shared-iprange.md) コレクション|エンタープライズ ネットワーク内のコンピューターを定義するエンタープライズ IP の範囲を設定します。 これらのコンピューターからのデータはエンタープライズの一部と見なされ、保護されます。 これらの場所は、エンタープライズデータの共有先として安全であると見なされます。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|enterpriseInternalProxyServers|String collection|これは、内部プロキシ サーバーのコンマ区切りのリストです。 例: "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59"。 これらのプロキシは、管理者により、インターネット上の特定のリソースに接続するように構成されています。 それらはエンタープライズ ネットワークの場所にあると見なされます。 プロキシは、EnterpriseCloudResources ポリシーを構成する場合にのみ使用され、これらのプロキシを介して一致するクラウドリソースにトラフィックを強制します。|
+|enterpriseIPRangesAreAuthoritative|Boolean|構成済みのリストを承諾し、ヒューリスティックを使用した他のサブネットの検索を行わないよう、クライアントに指示するブール値。 既定値は false です。|
+|enterpriseProxyServers|String collection|これは、プロキシ サーバーのリストです。 この一覧にないサーバーは、非エンタープライズとみなされます。|
 |enterpriseProxyServersAreAuthoritative|Boolean|プロキシの構成済みリストを承諾し、他の作業プロキシの検出を試みないよう、クライアントに指示するブール値。 既定値は false です|
-|neutralDomainResources|String コレクション|作業時間またはリソースの個人に使用できるドメイン名のリストです。|
+|neutralDomainResources|String collection|作業または個人のリソースに使用できるドメイン名のリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

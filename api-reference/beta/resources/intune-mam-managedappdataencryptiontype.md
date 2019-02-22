@@ -1,31 +1,31 @@
 ---
 title: managedAppDataEncryptionType 列挙型
-description: マネージ アプリケーションのアプリケーション データを暗号化するレベルを表します。
-localization_priority: Normal
+description: 管理対象アプリについてアプリケーションデータを暗号化するレベルを表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00174e7fba8a8da7490d04815b07a794a966179c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47396f32ed23234c5fe758a29b6e97ee3602234f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413690"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159081"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-マネージ アプリケーションのアプリケーション データを暗号化するレベルを表します。
+管理対象アプリについてアプリケーションデータを暗号化するレベルを表します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|useDeviceSettings|0|デバイスの既定の設定に基づいて、アプリケーション データが暗号化されます。|
-|afterDeviceRestart|1|デバイスが再起動されると、アプリケーション データが暗号化されます。|
-|whenDeviceLockedExceptOpenFiles|2|開かれているファイル内のデータを除いて、デバイスがロックされている場合、このポリシーに関連付けられているアプリケーションのデータは暗号化されて|
-|whenDeviceLocked|3|デバイスがロックされている場合、このポリシーに関連付けられているアプリケーション データが暗号化されて|
+|usedevicesettings|.0|アプリデータは、デバイスの既定の設定に基づいて暗号化されます。|
+|afterdevicerestart|1-d|アプリのデータは、デバイスの再起動時に暗号化されます。|
+|whenDeviceLockedExceptOpenFiles|pbm-2|このポリシーに関連付けられたアプリデータは、開いているファイル内のデータを除き、デバイスがロックされたときに暗号化されます。|
+|whendevicelocked|1/3|デバイスがロックされている場合、このポリシーに関連付けられているアプリデータは暗号化されます。|
 
 
 

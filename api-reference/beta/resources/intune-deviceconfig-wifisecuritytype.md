@@ -1,33 +1,33 @@
 ---
 title: wiFiSecurityType 列挙型
-description: Wi-fi セキュリティの種類です。
-localization_priority: Normal
+description: wi-fi セキュリティの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73724041c223d50d0030bf27b780d6b694792a16
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c16265ecf9b4fa56536838dde1f4f1f757d8b1f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422132"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159046"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Wi-fi セキュリティの種類です。
+wi-fi セキュリティの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|開く|0|(認証なし) を開きます。|
-|wpaPersonal|1|WPA-パーソナルです。|
-|wpaEnterprise|2|WPA-エンタープライズ。 エンタープライズ オプションを構成するのには IOSEnterpriseWifiConfiguration 型を使用する必要があります。|
-|wep|3|WEP 暗号化します。|
-|wpa2Personal|4|WPA2-パーソナルです。|
-|wpa2Enterprise|5|WPA2-エンタープライズ。 エンタープライズ オプションを構成するのには WindowsWifiEnterpriseEAPConfiguration 型を使用する必要があります。|
+|開か|.0|開く (認証なし)。|
+|wpaPersonal|1-d|WPA-個人用。|
+|wpaenterprise|pbm-2|WPA-エンタープライズ。 エンタープライズオプションを構成するには、IOSEnterpriseWifiConfiguration type を使用する必要があります。|
+|wep|1/3|WEP 暗号化。|
+|wpa2Personal|2/4|WPA2-個人用。|
+|wpa2Enterprise|5|WPA2-エンタープライズ。 エンタープライズオプションを構成するには、WindowsWifiEnterpriseEAPConfiguration type を使用する必要があります。|
 
 
 

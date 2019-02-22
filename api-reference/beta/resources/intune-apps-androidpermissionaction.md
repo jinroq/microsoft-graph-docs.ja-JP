@@ -1,29 +1,29 @@
 ---
-title: androidPermissionAction リソースの種類
-description: Android アプリケーションのアクセス許可とアプリの操作の間のマッピングは、そのアクセス許可が要求されたときにかかります。
-localization_priority: Normal
+title: androidpermissionaction リソースの種類
+description: android アプリのアクセス許可と android のアクションとの間のマッピングは、そのアクセス許可が要求されたときに行われる必要があります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62355c3427083df09963e316f3b6b3c104a8662f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425632"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161573"
 ---
-# <a name="androidpermissionaction-resource-type"></a>androidPermissionAction リソースの種類
+# <a name="androidpermissionaction-resource-type"></a>androidpermissionaction リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android アプリケーションのアクセス許可とアプリの操作の間のマッピングは、そのアクセス許可が要求されたときにかかります。
+android アプリのアクセス許可と android のアクションとの間のマッピングは、そのアクセス許可が要求されたときに行われる必要があります。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|アクセス許可|String|Android のアクセス許可の文字列、公式の Android のドキュメントで定義されています。  'Android.permission.READ_CONTACTS' の使用例です。|
-|action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android 権限操作の種類です。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
+|アクセス許可|String|android のアクセス許可文字列。公式の android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
+|action|[androidpermissionactiontype](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
 
 ## <a name="relationships"></a>関係
 なし

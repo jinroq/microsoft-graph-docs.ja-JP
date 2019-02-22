@@ -1,30 +1,30 @@
 ---
 title: dmaGuardDeviceEnumerationPolicyType 列挙型
-description: DmaGuardDeviceEnumerationPolicy の使用可能な値です。
-localization_priority: Normal
+description: DmaGuardDeviceEnumerationPolicy の可能な値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5baa0cfd5c80f954036e10f0e4d04d2b83e57f2b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 512bf44d25629f4b1c88c2309c464e9d0f33f625
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430454"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159711"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-DmaGuardDeviceEnumerationPolicy の使用可能な値です。
+DmaGuardDeviceEnumerationPolicy の可能な値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|既定値です。 DMA の互換性のないドライバーを再割り当てを持つデバイスは、ユーザー画面のロックを解除した後にのみ列挙されます。|
-|これ|1|DMA の互換性のないドライバーを再割り当てを持つデバイスは、起動し、いつでも DMA を実行するのには許可されません。|
-|すべて許可が次|2|いつでもすべての外部 DMA 対応 PCIe デバイスが列挙されます。|
+|devicedefault|.0|既定値です。 DMA が再マッピングされているデバイス互換性のないドライバーは、ユーザーが画面をロック解除した後にのみ列挙されます。|
+|blockall|1-d|dma がマッピングされていないデバイス互換性のないドライバーは、いつでも dma を開始して実行することはできません。|
+|allowAll|pbm-2|すべての外部 DMA 対応 PCIe デバイスは、いつでも列挙されます。|
 
 
 

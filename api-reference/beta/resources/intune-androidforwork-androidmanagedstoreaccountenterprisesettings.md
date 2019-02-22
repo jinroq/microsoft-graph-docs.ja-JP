@@ -1,51 +1,51 @@
 ---
-title: androidManagedStoreAccountEnterpriseSettings リソースの種類
-description: Android のエンタープライズの設定は、ストア アカウントを管理します。
-localization_priority: Normal
+title: androidmanagedstoreaccountenterprisesettings リソースの種類
+description: Android 管理ストアアカウントのエンタープライズ設定。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0deee2d3bbf816371a6331c000383398390e6610
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fd6f278963bd37276b808f221d1902fd82e23a48
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406382"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159137"
 ---
-# <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings リソースの種類
+# <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidmanagedstoreaccountenterprisesettings リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android のエンタープライズの設定は、ストア アカウントを管理します。
+Android 管理ストアアカウントのエンタープライズ設定。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[AndroidManagedStoreAccountEnterpriseSettings を取得します。](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|[AndroidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティと関係を参照してください。|
-|[AndroidManagedStoreAccountEnterpriseSettings を更新します。](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|[AndroidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティを更新します。|
+|[androidmanagedstoreaccountenterprisesettings の取得](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|[androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[androidmanagedstoreaccountenterprisesettings の更新](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|[androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティを更新します。|
 |[requestSignupUrl action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestsignupurl.md)|String|まだ文書化されていません|
 |[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|なし|まだ文書化されていません|
 |[syncApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|なし|まだ文書化されていません|
 |[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|なし|まだ文書化されていません|
-|[createGooglePlayWebToken アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|組み込み可能なコンポーネントで使用される web トークンを生成します。|
-|[setAndroidDeviceOwnerFullyManagedEnrollmentState アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|なし|AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled を指定した値に設定します。|
+|[createGooglePlayWebToken アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|埋め込みコンポーネントで使用される web トークンを生成します。|
+|[setAndroidDeviceOwnerFullyManagedEnrollmentState アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|なし|androidmanagedstoreaccountenterprisesettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled を指定された値に設定します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
-|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
+|id|String|Android ストアアカウントのエンタープライズ設定識別子|
+|bindStatus|[androidmanagedstoreaccountbindstatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 使用可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
-|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|アプリケーション同期の最終結果です。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
+|lastAppSyncStatus|[androidmanagedstoreaccountappsyncstatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|最後のアプリケーションの同期結果。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
 |ownerUserPrincipalName|String|エンタープライズを作成した所有者 UPN|
-|ownerOrganizationName|String|組織名を使用する場合 Android のエンタープライズ契約時|
+|ownerOrganizationName|String|Android Enterprise のオンボード時に使用される組織名|
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
-|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズ デバイスの管理デバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズデバイス管理にデバイスを登録できるユーザーを示します。 使用可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|Boolean|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
-|companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)コレクション|AndroidManagedStoreAccountEnterpriseSettings の会社コード|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|AndroidManagedStoreAccountEnterpriseSettings の会社コード|
+|deviceownermanagementenabled|ブール値|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
+|会社コード|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)コレクション|androidmanagedstoreaccountenterprisesettings の会社コード|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|ブール値|androidmanagedstoreaccountenterprisesettings の会社コード|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

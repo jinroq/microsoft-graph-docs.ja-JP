@@ -1,41 +1,41 @@
 ---
-title: appleVpnConnectionType 列挙型
-description: Apple 社の VPN 接続の種類です。
-localization_priority: Normal
+title: りんご evpnconnectiontype 列挙型
+description: Apple VPN 接続の種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f40281934aa241f245772e0bc4c5cd5bbbd0ec33
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 53ed413b05e29a10cebf151c718e55c75de702c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155602"
 ---
-# <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 列挙型
+# <a name="applevpnconnectiontype-enum-type"></a>りんご evpnconnectiontype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Apple 社の VPN 接続の種類です。
+Apple VPN 接続の種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1|パルスをセキュリティで保護します。|
-|f5EdgeClient|2|F5 キーを押してエッジのクライアントです。|
-|dellSonicWallMobileConnect|3|Dell SonicWALL モバイル接続します。|
-|checkPointCapsuleVpn|4|ポイント カプセル VPN を確認してください。|
-|customVpn|5|VPN のユーザーを設定します。|
-|ciscoIPSec|6|Cisco (IPSec)。|
-|citrix|7|Citrix。|
-|ciscoAnyConnectV2|8|Cisco AnyConnect V2。|
-|paloAltoGlobalProtect|9|パロアルトの Alto ネットワーク GlobalProtect。|
-|zscalerPrivateAccess|10|Zscaler プライベート アクセス。|
-|f5Access2018|11|F5 キーを押してアクセス 2018。|
-|citrixSso|12|Citrix Sso です。|
-|paloAltoGlobalProtectV2|13|パロアルトでは、GlobalProtect V2 をネットワークします。|
+|ciscoanyconnect|.0|Cisco anyconnect。|
+|pulseSecure|1-d|パルスがセキュリティで保護されています。|
+|f5EdgeClient|pbm-2|F5 キーを押したエッジクライアント。|
+|dellSonicWallMobileConnect|1/3|Dell SonicWALL モバイル接続。|
+|checkPointCapsuleVpn|2/4|[カプセル接続] VPN をチェックします。|
+|customvpn|5|カスタム VPN。|
+|ciscoipsec|シックス|Cisco (IPSec)。|
+|社|7|社.|
+|ciscoAnyConnectV2|~|Cisco anyconnect V2。|
+|paloAltoGlobalProtect|i-9|Palo Alto Networks globalprotect。|
+|zscalerPrivateAccess|個|Zscaler プライベートアクセス。|
+|f5Access2018|#|F5 キーを押してアクセス2018。|
+|citrixSso|個|Citrix Sso。|
+|paloAltoGlobalProtectV2|スリー|Palo Alto Networks globalprotect V2。|
 
 
 

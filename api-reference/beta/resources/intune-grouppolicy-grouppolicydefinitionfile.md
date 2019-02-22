@@ -1,46 +1,46 @@
 ---
-title: groupPolicyDefinitionFile リソースの種類
-description: エンティティでは、ADMX (管理テンプレート) の XML ファイルを表します。 ADMX ファイルには、カテゴリへのパスでのグループ ポリシーの定義のコレクションとその場所が含まれています。 グループ ポリシー定義ファイルには、言語依存の ADML (管理テンプレート) の言語ファイルでサポートされる言語も含まれています。
-localization_priority: Normal
+title: grouppolicydefinitionfile リソースの種類
+description: エンティティは、ADMX (管理用テンプレート) XML ファイルを表します。 ADMX ファイルには、グループポリシー定義のコレクションと、カテゴリパスごとの場所が含まれています。 グループポリシー定義ファイルには、言語に依存する ADML (管理用テンプレート) の言語ファイルによってサポートされている言語も含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ac5206321047dd4cd54732103e4adb70221e860
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 494a2f8ff80b3a7f8ee9db9fea4d795494c19a92
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161335"
 ---
-# <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile リソースの種類
+# <a name="grouppolicydefinitionfile-resource-type"></a>grouppolicydefinitionfile リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-エンティティでは、ADMX (管理テンプレート) の XML ファイルを表します。 ADMX ファイルには、カテゴリへのパスでのグループ ポリシーの定義のコレクションとその場所が含まれています。 グループ ポリシー定義ファイルには、言語依存の ADML (管理テンプレート) の言語ファイルでサポートされる言語も含まれています。
+エンティティは、ADMX (管理用テンプレート) XML ファイルを表します。 ADMX ファイルには、グループポリシー定義のコレクションと、カテゴリパスごとの場所が含まれています。 グループポリシー定義ファイルには、言語に依存する ADML (管理用テンプレート) の言語ファイルによってサポートされている言語も含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[GroupPolicyDefinitionFile を取得します。](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[GroupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyDefinitionFile を更新します。](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[GroupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。|
+|[grouppolicydefinitionfile の取得](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicydefinitionfile の更新](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|ADMX ファイルのローカライズされた表示名です。|
-|説明|String|ADMX ファイル内のポリシー設定のローカライズされた説明。 既定値は空です。|
-|languageCodes|String コレクション|ADMX ファイルのサポートされている言語コードです。|
-|targetPrefix|String|ADMX ファイル内で名前空間を参照する論理名を指定します。|
-|targetNamespace|String|ADMX ファイル内で名前空間を識別するために使用する URI を指定します。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループ ポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
+|displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
+|説明|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は empty です。|
+|languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
+|targetprefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
+|targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
+|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|定義|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)コレクション|ファイルに関連付けられているグループ ポリシーの定義です。|
+|定義|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)コレクション|ファイルに関連付けられたグループポリシーの定義。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

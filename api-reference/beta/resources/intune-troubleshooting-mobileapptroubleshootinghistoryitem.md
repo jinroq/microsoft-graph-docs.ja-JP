@@ -1,28 +1,28 @@
 ---
 title: mobileAppTroubleshootingHistoryItem リソースの種類
-description: 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
-localization_priority: Normal
+description: モバイルアプリのトラブルシューティングイベントに含まれる履歴アイテム。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28245267a7c05f03bedd21c8dc0de17198de213c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fbc37488f478c47b0b097c4fd8a54b09273bc5c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400068"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160859"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
+モバイルアプリのトラブルシューティングイベントに含まれる履歴アイテム。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|履歴項目が発生した時刻です。|
+|occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

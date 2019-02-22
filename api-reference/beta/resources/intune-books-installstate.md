@@ -1,33 +1,33 @@
 ---
-title: installState 列挙型
-description: インストール状態の値です。
-localization_priority: Normal
+title: installstate 列挙型
+description: インストール状態の値を指定できます。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c3a1d86257611cb00d8ee2c4ee0b8173b03f197
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0554df30b4d7165c0164749730e2584af6cc35fd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425877"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158213"
 ---
-# <a name="installstate-enum-type"></a>installState 列挙型
+# <a name="installstate-enum-type"></a>installstate 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-インストール状態の値です。
+インストール状態の値を指定できます。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|質問表|0|適用されません。|
-|インストールされています。|1|インストールされています。|
-|失敗しました。|2|失敗しました。|
-|notInstalled|3|インストールされていません。|
-|uninstallFailed|4|アンインストールできませんでした。|
-|不明|5|不明。|
+|notapplicable|.0|該当なし。|
+|れる|1-d|れる.|
+|フェール|pbm-2|フェール.|
+|notinstalled|1/3|インストールされていません。|
+|アンインストールの失敗|2/4|アンインストールに失敗しました。|
+|不明|5|わかり.|
 
 
 

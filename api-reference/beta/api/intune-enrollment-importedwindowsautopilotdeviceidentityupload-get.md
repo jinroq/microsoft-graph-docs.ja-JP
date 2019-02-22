@@ -1,23 +1,23 @@
 ---
-title: ImportedWindowsAutopilotDeviceIdentityUpload を取得します。
-description: ImportedWindowsAutopilotDeviceIdentityUpload オブジェクトのプロパティと関係を参照してください。
-localization_priority: Normal
+title: importedWindowsAutopilotDeviceIdentityUpload を取得する
+description: importedWindowsAutopilotDeviceIdentityUpload オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b694db5f115756a099b3f8e4cb929269300bb9ed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5e173ca94aa975193fd0291c7f9c88a3aed6c99f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404499"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156561"
 ---
-# <a name="get-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を取得します。
+# <a name="get-importedwindowsautopilotdeviceidentityupload"></a>importedWindowsAutopilotDeviceIdentityUpload を取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトのプロパティと関係を参照してください。
+[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -44,13 +44,13 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

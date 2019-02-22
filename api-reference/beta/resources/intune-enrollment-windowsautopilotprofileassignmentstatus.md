@@ -1,34 +1,34 @@
 ---
 title: windowsAutopilotProfileAssignmentStatus 列挙型
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68612e2f4ccee46612c82237630efafda484b7e9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156379"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明な割り当ての状態|
-|assignedInSync|1|Intune で正常に割り当てられていると Windows の自動パイロット プログラムとの同期|
-|assignedOutOfSync|2|Intune で正常に割り当てられているといないと同期させる Windows 自動パイロット プログラム|
-|assignedUnkownSyncState|3|Intune といずれかの同期で正常に割り当てられているまたは Windows 自動パイロット プログラムとの同期|
-|notAssigned|4|割り当てられていません。|
-|保留中|5|保留中の割り当て|
-|失敗しました。|6| 割り当てに失敗しました。|
+|不明|.0|不明な割り当て状態|
+|assignedInSync|1-d|Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの同期|
+|assignedOutOfSync|pbm-2|Intune で正常に割り当てられ、Windows 自動パイロットプログラムと同期されません|
+|assignedUnkownSyncState|1/3|Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの間で同期されているか、同期されていません|
+|notAssigned|2/4|未割り当て|
+|対する|5|保留中の割り当て|
+|フェール|シックス| 割り当て失敗|
 
 
 

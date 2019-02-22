@@ -1,31 +1,31 @@
 ---
-title: officeProductId 列挙型
-description: Office365 スイート Sku を表す Office365 ProductIds を指定する列挙型です。
-localization_priority: Normal
+title: officeproductid 列挙型
+description: office365 スイート sku を表す office365 ProductIds を指定する列挙型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfe0f2f9c4f94ebdbcce20e1295383ef05d8f734
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0264b1f1f022d99aa433ef94936e0053ce086b9f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418779"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158206"
 ---
-# <a name="officeproductid-enum-type"></a>officeProductId 列挙型
+# <a name="officeproductid-enum-type"></a>officeproductid 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Office365 スイート Sku を表す Office365 ProductIds を指定する列挙型です。
+office365 スイート sku を表す office365 ProductIds を指定する列挙型。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|o365ProPlusRetail|0|まだ文書化されていません|
-|o365BusinessRetail|1|まだ文書化されていません|
-|visioProRetail|2|まだ文書化されていません|
-|projectProRetail|3|まだ文書化されていません|
+|o365ProPlusRetail|.0|まだ文書化されていません|
+|o365BusinessRetail|1-d|まだ文書化されていません|
+|visioProRetail|pbm-2|まだ文書化されていません|
+|projectProRetail|1/3|まだ文書化されていません|
 
 
 

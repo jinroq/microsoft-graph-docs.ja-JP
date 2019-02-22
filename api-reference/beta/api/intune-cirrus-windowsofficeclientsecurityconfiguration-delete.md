@@ -1,23 +1,23 @@
 ---
-title: WindowsOfficeClientSecurityConfiguration を削除します。
-description: セキュリティ ポリシーの windowsOfficeClientSecurityConfiguration を削除します。
+title: windowsOfficeClientSecurityConfiguration の削除
+description: セキュリティポリシー windowsOfficeClientSecurityConfiguration を削除します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 8fad15c1a9f9d499be0f9116a196ddb2a08db886
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e236c56dff58cb0efefe96c58a97f284394afdd6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159473"
 ---
-# <a name="delete-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を削除します。
+# <a name="delete-windowsofficeclientsecurityconfiguration"></a>windowsOfficeClientSecurityConfiguration の削除
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-セキュリティ ポリシーの[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を削除します。
+セキュリティポリシー [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -41,7 +41,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

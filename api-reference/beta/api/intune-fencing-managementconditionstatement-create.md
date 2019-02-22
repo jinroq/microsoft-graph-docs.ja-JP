@@ -1,23 +1,23 @@
 ---
-title: ManagementConditionStatement を作成します。
-description: 新しい managementConditionStatement オブジェクトを作成します。
-localization_priority: Normal
+title: managementconditionstatement の作成
+description: 新しい managementconditionstatement オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba9d3f96d7d3a8b1f855c94b18aab6a6450651f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f19cef2899a11a57b06590c006de2181865a9d45
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417358"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156862"
 ---
-# <a name="create-managementconditionstatement"></a>ManagementConditionStatement を作成します。
+# <a name="create-managementconditionstatement"></a>managementconditionstatement の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトを作成します。
+新しい[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,29 +42,29 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に managementConditionStatement オブジェクトの JSON の形式を指定します。
+要求本文で、managementconditionstatement オブジェクトの JSON 表記を指定します。
 
-次の表は、managementConditionStatement を作成するときに必要なプロパティを示します。
+次の表に、managementconditionstatement の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|displayName|String|管理者は、管理条件ステートメントの名前を定義します。|
-|説明|String|管理者は、管理条件付きステートメントの説明を定義します。|
-|createdDateTime|DateTimeOffset|管理条件付きステートメントが作成された時刻。 サービス側が生成されます。|
-|変更された日時|DateTimeOffset|管理条件付きステートメントが最後に修正された時間です。 サービス側を更新します。|
-|式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|場合は、管理条件ステートメントを評価するために使用、管理条件ステートメントの式は、アクティブ/非アクティブでした。|
-|eTag|String|管理条件付きステートメントの ETag。 サービス側を更新します。|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントに適用可能なプラットフォームです。
-管理に関連付けられている管理の条件を見てからこの計算は、ステートメントと該当するプラットフォームの交点の検出の条件です。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
+|id|文字列|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
+|displayName|String|管理条件ステートメントの管理者定義の名前。|
+|説明|String|管理条件ステートメントの管理者定義の説明。|
+|createdDateTime|DateTimeOffset|管理条件ステートメントが作成された時刻。 サービス側を生成しました。|
+|変更された日時|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
+|式|[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
+|eTag|String|管理条件ステートメントの ETag。 サービス側を更新しました。|
+|アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。
+これは、管理条件ステートメントに関連付けられている管理条件を参照して、適用可能なプラットフォームの共通部分を検索することによって計算されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

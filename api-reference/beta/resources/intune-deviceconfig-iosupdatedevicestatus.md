@@ -1,21 +1,21 @@
 ---
 title: iosUpdateDeviceStatus リソースの種類
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 174abb27f48f6f3c28bce543dc9d547ce521f4c9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 35389cf2c7995a1b1ef479b8289b14d49cd984f3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160257"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -32,18 +32,18 @@ ms.locfileid: "29409000"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|ポリシー レポートのインストール状態。 使用可能な値: `success`、 `available`、 `idle`、 `unknown`、 `downloading`、 `downloadFailed`、 `downloadRequiresComputer`、 `downloadInsufficientSpace`、 `downloadInsufficientPower`、 `downloadInsufficientNetwork`、 `installing`、 `installInsufficientSpace`、 `installInsufficientPower`、 `installPhoneCallInProgress`、 `installFailed`、 `notSupportedOperation`、 `sharedDeviceUserLoggedInError`。|
+|installStatus|[iosupの installstatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|ポリシー レポートのインストール状態。 可能な値は`success`、 `available`、 `idle` `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `sharedDeviceUserLoggedInError`、、 `installing`、、、、、、、、です。 `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation`|
 |osVersion|String|レポートされているデバイス バージョン。|
 |deviceId|String|レポートされているデバイス ID。|
 |userId|String|レポートされているユーザー ID。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|
-|platform|Int32|報告されているデバイスのプラットフォーム|
+|platform|Int32|レポートされているデバイスのプラットフォーム|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|文字列|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

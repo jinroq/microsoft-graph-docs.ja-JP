@@ -1,48 +1,48 @@
 ---
-title: groupPolicyPresentationCheckBox リソースの種類
-description: ADMX チェック ボックス要素と ADMX ブール型の要素を表します。
-localization_priority: Normal
+title: grouppolicypresentationcheckbox リソースの種類
+description: admx checkBox 要素と admx boolean 要素を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1427f3a2466d996e067b464a9d15a3db086314b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d50f04b39490f48d2efa316d8f2825ed9ee31461
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160642"
 ---
-# <a name="grouppolicypresentationcheckbox-resource-type"></a>groupPolicyPresentationCheckBox リソースの種類
+# <a name="grouppolicypresentationcheckbox-resource-type"></a>grouppolicypresentationcheckbox リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ADMX チェック ボックス要素と ADMX ブール型の要素を表します。
+admx checkBox 要素と admx boolean 要素を表します。
 
 
-[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
+[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト groupPolicyPresentationCheckBoxes](../api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md)|[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)コレクション|[GroupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[GroupPolicyPresentationCheckBox を取得します。](../api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md)|[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|[GroupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyPresentationCheckBox を作成します。](../api/intune-grouppolicy-grouppolicypresentationcheckbox-create.md)|[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|新しい[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトを作成します。|
-|[GroupPolicyPresentationCheckBox を削除します。](../api/intune-grouppolicy-grouppolicypresentationcheckbox-delete.md)|なし|の[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)を削除します。|
-|[GroupPolicyPresentationCheckBox を更新します。](../api/intune-grouppolicy-grouppolicypresentationcheckbox-update.md)|[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|[GroupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティを更新します。|
+|[grouppolicypresentationcheckboxes の一覧を表示する](../api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)コレクション|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[grouppolicypresentationcheckbox の取得](../api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicypresentationcheckbox の作成](../api/intune-grouppolicy-grouppolicypresentationcheckbox-create.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|新しい[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトを作成します。|
+|[grouppolicypresentationcheckbox の削除](../api/intune-grouppolicy-grouppolicypresentationcheckbox-delete.md)|なし|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)を削除します。|
+|[grouppolicypresentationcheckbox の更新](../api/intune-grouppolicy-grouppolicypresentationcheckbox-update.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)|[grouppolicypresentationcheckbox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|プレゼンテーションの任意のエンティティのローカライズされたテキスト ラベルです。 既定値は空です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|defaultChecked|Boolean|チェック ボックスの既定値です。 既定値は、false を指定します。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|defaultchecked|ブール値|チェックボックスの既定値。 既定値は false です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられているグループ ポリシーの定義です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
+|definition|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

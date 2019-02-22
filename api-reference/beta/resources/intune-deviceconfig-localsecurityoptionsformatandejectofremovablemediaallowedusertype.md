@@ -1,31 +1,31 @@
 ---
 title: localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 列挙型
 description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser に指定できる値
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b708f1ec4afb3165cfa8f8d59d492f4b6ae4c6c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e740f5a7e70d4244a1b0216b4d8c9719b2d82304
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424190"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161209"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|構成されていません|
-|管理者|1|管理者|
-|administratorsAndPowerUsers|2|管理者およびパワー ユーザー|
-|administratorsAndInteractiveUsers|3|管理者と対話ユーザー |
+|notConfigured|.0|未構成|
+|管理者|1-d|管理者|
+|administratorsAndPowerUsers|pbm-2|管理者とパワーユーザー|
+|administratorsAndInteractiveUsers|1/3|管理者と対話ユーザー |
 
 
 

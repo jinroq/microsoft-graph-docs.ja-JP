@@ -1,23 +1,23 @@
 ---
-title: NdesConnector を作成します。
-description: 新しい ndesConnector オブジェクトを作成します。
-localization_priority: Normal
+title: ndesconnector の作成
+description: 新しい ndesconnector オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2764e461b0cfce3e620c5e5300539297b9cb5b1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 09988408e3b49490e66ed49c47e2696c8b0ad66c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419934"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158087"
 ---
-# <a name="create-ndesconnector"></a>NdesConnector を作成します。
+# <a name="create-ndesconnector"></a>ndesconnector の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトを作成します。
+新しい[ndesconnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,24 +41,24 @@ POST /deviceManagement/ndesConnectors
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に ndesConnector オブジェクトの JSON の形式を指定します。
+要求本文で、ndesconnector オブジェクトの JSON 表記を指定します。
 
-次の表は、ndesConnector を作成するときに必要なプロパティを示します。
+次の表に、ndesconnector の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|NDES のコネクタのキー。|
-|lastConnectionDateTime|DateTimeOffset|Ndes コネクタの前回の接続|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
-|displayName|String|Ndes のコネクタの表示名。|
+|id|String|NDES connector のキー。|
+|lastConnectionDateTime|DateTimeOffset|Ndes connector の最終接続時刻|
+|state|[ndesコネクタ状態](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes connector の状態。 可能な値は `none`、`active`、`inactive` です。|
+|displayName|String|Ndes connector のフレンドリ名。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[ndesconnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

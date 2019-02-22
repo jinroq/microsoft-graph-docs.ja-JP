@@ -1,57 +1,57 @@
 ---
-title: Microsoft Intune 内の共有リソース
-description: これらのエンドポイントは、Intune ワークフローの複数の Microsoft グラフ API で使用されます。  意図、目的、および特定のリソースを使用する必要なアクセス許可は、特定のワークフローと基になる呼び出しのコンテキストによって異なります。  さらに、特定のメソッド、プロパティ、およびアクションが特定のワークフローに対してのみサポートします。
+title: microsoft Intune での共有リソース-microsoft Graph API
+description: テナント組織の複数のワークフローをサポートする Intune エンドポイント (REST) の Microsoft Graph API の一覧を示します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 11ee529edd3d74b5d6fb0c2d9d4e63bada0b0b22
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6436f134ae9e95623b073f6e645f0737d45d540e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415433"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158311"
 ---
-# <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 内の共有リソース
+# <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune での共有リソース
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
-これらのエンドポイントは、Intune ワークフローの複数の Microsoft グラフ API で使用されます。  意図、目的、および特定のリソースを使用する必要なアクセス許可は、特定のワークフローと基になる呼び出しのコンテキストによって異なります。  さらに、特定のメソッド、プロパティ、およびアクションが特定のワークフローに対してのみサポートします。
+これらのエンドポイントは、Intune ワークフロー用の複数の Microsoft graph API で使用されます。  特定のリソースを使用するために必要な目的、およびアクセス許可は、基になる呼び出しの特定のワークフローおよびコンテキストによって異なります。  さらに、特定のワークフローに対してのみ、特定のメソッド、プロパティ、およびアクションがサポートされます。
 
-Intune ワークフローとの間は、次のグラフのリソースを共有します。
+次の Graph リソースは、Intune ワークフロー間で共有されます。
 
-- [動作状態](intune-shared-actionstate.md)
+- [アクションの状態](intune-shared-actionstate.md)
 - [すべてのデバイスの割り当て先](intune-shared-alldevicesassignmenttarget.md)
 - [すべてのライセンス ユーザーの割り当て先](intune-shared-alllicensedusersassignmenttarget.md)
-- [準拠の状態](intune-shared-compliancestatus.md)
+- [コンプライアンスのステータス](intune-shared-compliancestatus.md)
 - [デバイスおよびアプリ管理の割り当て先](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [デバイス アプリの管理](intune-shared-deviceappmanagement.md)
 - [デバイス カテゴリ](intune-shared-devicecategory.md)
-- [デバイス登録の種類](intune-shared-deviceenrollmenttype.md)
+- [デバイスの登録のタイプ](intune-shared-deviceenrollmenttype.md)
 - [デバイスの管理](intune-shared-devicemanagement.md)
-- [デバイス プラットフォームの種類](intune-shared-deviceplatformtype.md)
-- [デバイスの種類](intune-shared-devicetype.md)
+- [デバイスのプラットフォームの種類](intune-shared-deviceplatformtype.md)
+- [デバイスのタイプ](intune-shared-devicetype.md)
 - [有効化](intune-shared-enablement.md)
 - [除外グループの割り当て先](intune-shared-exclusiongroupassignmenttarget.md)
 - [グループの割り当て先](intune-shared-groupassignmenttarget.md)
-- [目的をインストールします。](intune-shared-installintent.md)
+- [インストール目的](intune-shared-installintent.md)
 - [IP 範囲](intune-shared-iprange.md)
 - [IPv4 の範囲](intune-shared-ipv4range.md)
 - [IPv6 の範囲](intune-shared-ipv6range.md)
 - [キー/値のペア](intune-shared-keyvaluepair.md)
 - [MIME コンテンツ](intune-shared-mimecontent.md)
-- [モバイル アプリケーションのトラブルシューティング イベント](intune-shared-mobileapptroubleshootingevent.md)
+- [モバイル アプリのトラブルシューティング イベント](intune-shared-mobileapptroubleshootingevent.md)
 - [プロキシ化されたドメイン](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [レポートのルート](intune-shared-reportroot.md)
-- [結果のアプリケーションの状態](intune-shared-resultantappstate.md)
+- [アプリの状態の結果](intune-shared-resultantappstate.md)
 - [RGB カラー](intune-shared-rgbcolor.md)
-- [実行アカウントの種類として](intune-shared-runasaccounttype.md)
-- [状態を実行します。](intune-shared-runstate.md)
-- [UI 状態の生成オプションを保存](intune-shared-saveduistategenerationoptions.md)
+- [アカウントの種類として実行](intune-shared-runasaccounttype.md)
+- [実行状態](intune-shared-runstate.md)
+- [保存 UI 状態生成オプション](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
 - [ユーザー](intune-shared-user.md)
-- [VPP トークン アカウントの種類](intune-shared-vpptokenaccounttype.md)
-- [VPP トークンの操作の失敗の理由](intune-shared-vpptokenactionfailurereason.md)
-- [Windows ドメインの結合の構成](intune-shared-windowsdomainjoinconfiguration.md)
+- [VPP トークン アカウントのタイプ](intune-shared-vpptokenaccounttype.md)
+- [VPP トークンのアクションのエラーの理由](intune-shared-vpptokenactionfailurereason.md)
+- [Windows ドメイン参加の構成](intune-shared-windowsdomainjoinconfiguration.md)

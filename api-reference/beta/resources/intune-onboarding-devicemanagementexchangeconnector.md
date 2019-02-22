@@ -1,21 +1,21 @@
 ---
 title: deviceManagementExchangeConnector リソースの種類
 description: Exchange 環境との接続を表すエンティティです。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d37fa88cf84b5e709175c91386b64a867eba41a3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7ff8b8cb35db099c0b011aef83d57bdc65d98613
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422363"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160915"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Exchange 環境との接続を表すエンティティです。
 
@@ -32,12 +32,12 @@ Exchange 環境との接続を表すエンティティです。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|id|文字列|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange コネクタの状態です。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。 使用可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
 |primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
-|serverName|String|Exchange サーバーの名前です。|
-|connectorServerName|String|Exchange Connector をホストするサーバーの名前。|
+|serverName|String|Exchange サーバーの名前。|
+|コネクタ servername|String|Exchange Connector をホストするサーバーの名前。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
 |version|String|ExchangeConnectorAgent のバージョン|
 |exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|

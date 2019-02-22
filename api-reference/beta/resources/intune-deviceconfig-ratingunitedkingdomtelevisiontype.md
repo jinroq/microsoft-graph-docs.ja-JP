@@ -1,30 +1,30 @@
 ---
 title: ratingUnitedKingdomTelevisionType 列挙型
-description: 英国のテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: 英国でのテレビコンテンツの評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa7f6c0753bb5e5c0d74925a2feea5b16e8c663f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2f048c9b34cc7cebbfe5a6caa21d6499ad8b8f45
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158570"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-英国のテレビのコンテンツの規制ラベル
+英国でのテレビコンテンツの評価のラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|caution|2|テレビの内容の警告メッセージを許可します。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|caution|pbm-2|警告メッセージを使用してテレビの内容を許可する|
 
 
 

@@ -1,33 +1,33 @@
 ---
 title: enrollmentState 列挙型
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71f41d459e3fdb50fd853c62a855b4591a8ca8e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dcb039563d9c45a33c4e42344fc8557dfe29b333
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419108"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159249"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|デバイス登録の状態は不明です。|
-|登録|1|デバイスを登録します。|
-|pendingReset|2|登録され、登録プロファイルを使用して登録されているが、登録されているプロファイルが割り当てられているプロファイルとは異なる。|
-|失敗しました。|3|登録していない登録に失敗したレコードがあるとします。|
-|notContacted|4|デバイスをインポートしていますが、登録していません。|
-|ブロック|5|デバイスが、userless として登録されて、アプリケーションのインストールに失敗したため、ユーザー登録への移動がブロックされます。|
+|不明|.0|デバイス登録の状態が不明です|
+|遂げ|1-d|デバイスは登録されています。|
+|pendingreset|pbm-2|登録済みですが、登録プロファイルによって登録され、登録されたプロファイルは割り当てられたプロファイルとは異なります。|
+|フェール|1/3|登録されていません。登録エラーレコードがあります。|
+|notcontacted|2/4|デバイスはインポートされていますが、登録されていません。|
+|ブロック|5|デバイスは userless として登録されていますが、アプリのインストールが失敗したため、ユーザー登録への移動がブロックされています。|
 
 
 

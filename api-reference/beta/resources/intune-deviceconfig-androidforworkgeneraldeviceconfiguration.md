@@ -1,23 +1,23 @@
 ---
-title: androidForWorkGeneralDeviceConfiguration リソースの種類
-description: Android の作業の一般的なデバイス構成します。
-localization_priority: Normal
+title: androidforwork の devic/リソースの種類
+description: Android For Work の一般的なデバイス構成。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 427963a80f48e7f98c73a89d0288d515257bbafa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 474e957ea4ebbbafa7922d1258b7a97bcd535e0d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420123"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156365"
 ---
-# <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>androidForWorkGeneralDeviceConfiguration リソースの種類
+# <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>androidforwork の devic/リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android の作業の一般的なデバイス構成します。
+Android For Work の一般的なデバイス構成。
 
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
@@ -25,59 +25,59 @@ Android の作業の一般的なデバイス構成します。
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト androidForWorkGeneralDeviceConfigurations](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)コレクション|[AndroidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[AndroidForWorkGeneralDeviceConfiguration を取得します。](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|[AndroidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
-|[AndroidForWorkGeneralDeviceConfiguration を作成します。](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|新しい[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)オブジェクトを作成します。|
-|[AndroidForWorkGeneralDeviceConfiguration を削除します。](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-delete.md)|なし|の[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)を削除します。|
-|[AndroidForWorkGeneralDeviceConfiguration を更新します。](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-update.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|[AndroidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)オブジェクトのプロパティを更新します。|
+|[リスト androidforwork の各 deviceconfigurん](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md)|[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)の devic/すべてのコレクション|[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)の各オブジェクトのプロパティとリレーションシップをリストします。|
+|[androidforwork の各 devicの種類を取得する](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)の各 devic/オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[androidforwork の各 devicの作成](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|新しい[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)の devic/オブジェクトを作成します。|
+|[androidforwork の削除](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-delete.md)|なし|[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)の各 devicの種類を削除します。|
+|[androidforwork の更新](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-update.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|[androidforwork](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)のプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|passwordBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
+|passwordBlockFingerprintUnlock|ブール値|指紋によるロック解除を禁止するかどうかを示します。|
 |passwordBlockTrustAgents|Boolean|Smart Lock や他の信頼エージェントをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 365 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 16 までです|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値 1 ~ 16|
-|passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
-|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|共有するデータの種類を許可します。 可能な値は、`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions` です。|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|デバイスがロックされているときに通知をブロックするかどうかを示します。|
-|workProfileBlockAddingAccounts|Boolean|作業プロファイル内のアカウントを追加または削除したり、ユーザーをブロックします。|
-|workProfileBluetoothEnableContactSharing|Boolean|企業の連絡先にアクセスするための bluetooth デバイスを使用できます。|
-|workProfileBlockScreenCapture|Boolean|作業プロファイルで、画面の取り込みをブロックします。|
-|workProfileBlockCrossProfileCallerId|Boolean|ブロックでは、作業プロファイル呼び出し元 ID を表示個人プロファイルにします。|
-|workProfileBlockCamera|Boolean|ブロック プロファイル カメラが動作します。|
-|workProfileBlockCrossProfileContactsSearch|Boolean|個人プロファイルでは、作業プロファイルの連絡先可用性ブロックです。|
-|workProfileBlockCrossProfileCopyPaste|Boolean|プロファイルのコピーと貼り付けが有効になっている間の設定を許可しない場合を示すブール値です。|
-|workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|workProfilePasswordBlockFingerprintUnlock|Boolean|指紋をブロックするかどうかを示す作業プロファイルのロックを解除します。|
-|workProfilePasswordBlockTrustAgents|Boolean|スマート ロックと作業プロファイルを他の信頼のエージェントをブロックするかどうかを示します。|
-|workProfilePasswordExpirationDays|Int32|日前作業プロファイルのパスワードに、の有効期限が切れます。 有効な値は 1 から 365 までです|
-|workProfilePasswordMinimumLength|Int32|作業プロファイル パスワードの最小長。 有効な値は 4 から 16 までです|
-|workProfilePasswordMinNumericCharacters|Int32|プロファイル パスワードの作業に必要な数字の最小数です。 有効な値 1 ~ 10|
-|workProfilePasswordMinNonLetterCharacters|Int32|プロファイル パスワードの作業に必要なアルファベット以外の文字数の最小値です。 有効な値 1 ~ 10|
-|workProfilePasswordMinLetterCharacters|Int32|プロファイル パスワードの作業で必要な文字数の最小値。 有効な値 1 ~ 10|
-|workProfilePasswordMinLowerCaseCharacters|Int32|作業プロファイルのパスワードに必要な小文字の文字数の最小値です。 有効な値 1 ~ 10|
-|workProfilePasswordMinUpperCaseCharacters|Int32|プロファイル パスワードの作業に必要な大文字の文字数の最小値。 有効な値 1 ~ 10|
-|workProfilePasswordMinSymbolCharacters|Int32|プロファイル パスワードの作業で必要なシンボル数の最小値です。 有効な値 1 ~ 10|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値は1から16までです|
+|passwordRequiredType|[androidforwork requiredpasswordtype](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
+|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|許可されているデータ共有の種類。 使用可能な値は、`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions` です。|
+|workProfileBlockNotificationsWhileDeviceLocked|ブール値|デバイスがロックされているときに通知をブロックするかどうかを示します。|
+|ワークワークプロファイルのアカウント|ブール値|ユーザーが作業プロファイルでアカウントを追加または削除することを禁止します。|
+|workProfileBluetoothEnableContactSharing|ブール値|bluetooth デバイスがエンタープライズの連絡先にアクセスできるようにします。|
+|workProfileBlockScreenCapture|ブール値|作業プロファイルの画面キャプチャをブロックします。|
+|work profileblockクロスバープロファイル ecallerid|ブール値|[ブロック表示作業プロファイルの発信者番号を個人プロファイルに表示する。|
+|workProfileBlockCamera|ブール値|作業プロファイルカメラをブロックします。|
+|workProfileBlockCrossProfileContactsSearch|ブール値|個人用プロファイルでの作業プロファイルの連絡先の使用を禁止します。|
+|workProfileBlockCrossProfileCopyPaste|ブール値|[クロスプロファイルコピー/貼り付けを許可する] の設定が有効になっているかどうかを示すブール値。|
+|work profiledefaultapppermissionpolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|必要なパスワードの種類。 使用可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
+|。 workprofilepasswordblockfingerprintunlock|ブール値|ワークプロファイルの指紋のロック解除をブロックするかどうかを示します。|
+|workProfilePasswordBlockTrustAgents|ブール値|ワークプロファイルのスマートロックおよびその他の信頼エージェントを禁止するかどうかを示します。|
+|workProfilePasswordExpirationDays|Int32|作業プロファイルのパスワードが期限切れになるまでの日数。 有効な値は 1 から 365 までです|
+|workProfilePasswordMinimumLength|Int32|ワークプロファイルのパスワードの最小の長さ。 有効な値は 4 から 16 までです|
+|ワークプロファイルのパスワード minnumericcharacters|Int32|作業プロファイルのパスワードに必要な数字の最小数。 有効な値は1から10までです|
+|workProfilePasswordMinNonLetterCharacters|Int32|作業プロファイルのパスワードに必要な文字以外の文字数の最小値。 有効な値は1から10までです|
+|workProfilePasswordMinLetterCharacters|Int32|作業プロファイルのパスワードに必要な文字数の最小値。 有効な値は1から10までです|
+|workProfilePasswordMinLowerCaseCharacters|Int32|作業プロファイルのパスワードに必要な小文字の最小文字数。 有効な値は1から10までです|
+|workProfilePasswordMinUpperCaseCharacters|Int32|作業プロファイルのパスワードに必要な大文字と小文字の最小値。 有効な値は1から10までです|
+|ワークスペースのパスワードを入力する|Int32|作業プロファイルのパスワードに必要な記号の最小数。 有効な値は1から10までです|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
-|workProfilePasswordPreviousPasswordBlockCount|Int32|ブロックする前の作業プロファイル パスワードの数です。 有効な値は 0 から 24 までです|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|作業プロファイルが削除されるまでに許容される障害および削除されたすべての企業データの記号の数です。 有効な値 1 ~ 16|
-|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必要な作業プロファイル パスワードの種類です。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
-|workProfileRequirePassword|Boolean|パスワードが必要な作業プロファイルを|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|ブロックする、以前の作業プロファイルのパスワードの数。 有効な値は 0 から 24 までです|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|作業プロファイルが削除され、すべての企業データが削除されるまでに許可されるサインイン失敗回数。 有効な値は1から16までです|
+|workProfilePasswordRequiredType|[androidforwork requiredpasswordtype](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必要な業務プロファイルのパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
+|次|ブール値|パスワードが必要です。または職場プロファイルでは使用できません|
 |securityRequireVerifyApps|Boolean|Android の検証アプリ機能をオンにするよう要求します。|
-|vpnAlwaysOnPackageIdentifier|String|常時接続で VPN には、ロックダウン モードを有効にします。|
-|vpnEnableAlwaysOnLockdownMode|Boolean|常時接続で VPN には、ロックダウン モードを有効にします。|
+|vpnAlwaysOnPackageIdentifier|String|always on VPN のロックダウンモードを有効にします。|
+|vpnEnableAlwaysOnLockdownMode|ブール値|always on VPN のロックダウンモードを有効にします。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -85,7 +85,7 @@ Android の作業の一般的なデバイス構成します。
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) コレクション|デバイスごとのデバイス構成のインストール状況。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|

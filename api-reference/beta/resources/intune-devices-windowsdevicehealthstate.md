@@ -1,33 +1,33 @@
 ---
-title: windowsDeviceHealthState 列挙型
-description: コンピューター エンドポイントの保護の状態
-localization_priority: Normal
+title: windowsdevicehealthstate 列挙型
+description: コンピューターエンドポイントの保護の状態
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d971de9b20780bb51a19c3417384a0ca0563452
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bb335cd39e6cbcd00f754faae8f7784001c424b4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416350"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156169"
 ---
-# <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 列挙型
+# <a name="windowsdevicehealthstate-enum-type"></a>windowsdevicehealthstate 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-コンピューター エンドポイントの保護の状態
+コンピューターエンドポイントの保護の状態
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|クリーン|0|コンピューターがクリーンであり、操作する必要はありません。|
-|fullScanPending|1|コンピューターで保留中の状態の完全なスキャンは、|
-|rebootPending|2|コンピューターで保留中の再起動の状態には|
-|manualStepsPending|4|コンピューターで保留中の手動の手順の状態は、|
-|offlineScanPending|8|オフライン スキャンの状態を保留中のコンピューターが、します。|
-|critical|16|コンピューターが、重大なエラー状態|
+|クリーン|.0|コンピューターがクリーンであり、アクションは必要ありません|
+|fullscanpending|1-d|コンピューターが保留中の完全なスキャン状態である|
+|rebootPending|pbm-2|コンピューターが再起動の保留状態になっている|
+|manualstepspending|2/4|コンピューターが保留中の手動の手順状態である|
+|offlineScanPending|~|コンピューターが保留中のオフラインスキャン状態になっている|
+|critical|16|コンピューターは重大なエラー状態です|
 
 
 

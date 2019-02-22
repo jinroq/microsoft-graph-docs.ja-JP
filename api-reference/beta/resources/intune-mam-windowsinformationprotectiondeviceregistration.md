@@ -1,44 +1,44 @@
 ---
 title: windowsInformationProtectionDeviceRegistration リソースの種類
-description: Bring-Your-Own-Device(BYOD) Windows デバイスのデバイス登録のレコードを表します。
-localization_priority: Normal
+description: 独自のデバイス (byod) Windows デバイスのデバイス登録レコードを表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ae81d973db8c47d9fa613db0eb1b661bb8fa0f9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4d4403ae2e4629a330fadd5136530d66c8a7d7f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430368"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161678"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Bring-Your-Own-Device(BYOD) Windows デバイスのデバイス登録のレコードを表します。
+独自のデバイス (byod) Windows デバイスのデバイス登録レコードを表します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト windowsInformationProtectionDeviceRegistrations](../api/intune-mam-windowsinformationprotectiondeviceregistration-list.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)コレクション|[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[WindowsInformationProtectionDeviceRegistration を取得します。](../api/intune-mam-windowsinformationprotectiondeviceregistration-get.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティと関係を参照してください。|
-|[WindowsInformationProtectionDeviceRegistration を作成します。](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|新しい[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトを作成します。|
-|[WindowsInformationProtectionDeviceRegistration を削除します。](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|なし|の[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)を削除します。|
-|[WindowsInformationProtectionDeviceRegistration を更新します。](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。|
+|[リスト windowsInformationProtectionDeviceRegistrations](../api/intune-mam-windowsinformationprotectiondeviceregistration-list.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)コレクション|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[windowsInformationProtectionDeviceRegistration を取得する](../api/intune-mam-windowsinformationprotectiondeviceregistration-get.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsInformationProtectionDeviceRegistration を作成する](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|新しい[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトを作成します。|
+|[windowsInformationProtectionDeviceRegistration の削除](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|なし|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)を削除します。|
+|[windowsInformationProtectionDeviceRegistration の更新](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。|
 |[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userId|String|このデバイスの登録レコードに関連付けられているユーザーの Id。|
-|deviceRegistrationId|String|このデバイスの登録レコードのデバイスの識別子です。|
+|userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
+|deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
-|deviceType|String|デバイスの種類、たとえば、Windows のラップトップ コンピューターと Windows phone です。|
-|deviceMacAddress|String|デバイスの Mac アドレスです。|
-|lastCheckInDateTime|DateTimeOffset|デバイスの最後のチェックインの時間です。|
+|deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
+|deviceMacAddress|String|デバイスの Mac アドレス。|
+|lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,31 +1,31 @@
 ---
-title: vppTokenLicenseSummary リソースの種類
-description: トークンで指定されたアプリケーションのライセンスの概要です。
-localization_priority: Normal
+title: vpptokenlicensesummary リソースの種類
+description: トークン内の特定のアプリのライセンスの概要。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fb84a549d95459db1e4b39c11b526f73db08752
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f9c126323e0f5785752238ec64cfade2c34d5c24
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395182"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161062"
 ---
-# <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary リソースの種類
+# <a name="vpptokenlicensesummary-resource-type"></a>vpptokenlicensesummary リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-トークンで指定されたアプリケーションのライセンスの概要です。
+トークン内の特定のアプリのライセンスの概要。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|vppTokenId|String|VPP トークンの識別子です。|
+|vppTokenId|String|VPP トークンの識別子。|
 |appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
-|organizationName|String|Apple ボリューム購入プログラム トークンに関連付けられている組織です。|
-|availableLicenseCount|Int32|VPP のライセンスが使用可能な数です。|
+|organizationName|String|Apple volume purchase program のトークンに関連付けられている組織。|
+|availableLicenseCount|Int32|使用可能な VPP ライセンスの数。|
 |usedLicenseCount|Int32|使用中の VPP ライセンスの数。|
 
 ## <a name="relationships"></a>リレーションシップ

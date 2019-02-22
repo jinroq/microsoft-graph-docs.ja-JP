@@ -1,39 +1,39 @@
 ---
-title: roleScopeTag リソースの種類
-description: ロールのスコープのタグ
-localization_priority: Normal
+title: ロール copetag リソースの種類
+description: 役割のスコープタグ
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a63ac05ea6161843aa1ad664a99003b7f69d38e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8c7bfb12172f6ae99f14a65647a7a6ab8955fef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159424"
 ---
-# <a name="rolescopetag-resource-type"></a>roleScopeTag リソースの種類
+# <a name="rolescopetag-resource-type"></a>ロール copetag リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ロールのスコープのタグ
+役割のスコープタグ
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)コレクション|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[RoleScopeTag を取得します。](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティと関係を参照してください。|
-|[RoleScopeTag を作成します。](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|新しい[roleScopeTag](../resources/intune-rbac-rolescopetag.md)オブジェクトを作成します。|
-|[RoleScopeTag を削除します。](../api/intune-rbac-rolescopetag-delete.md)|なし|の[roleScopeTag](../resources/intune-rbac-rolescopetag.md)を削除します。|
-|[RoleScopeTag を更新します。](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティを更新します。|
+|[リスト roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[ロール copetag](../resources/intune-rbac-rolescopetag.md)コレクション|[ロール copetag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[ロール copetag の取得](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[ロール copetag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[ロール copetag の作成](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|新しい[ロール copetag](../resources/intune-rbac-rolescopetag.md)オブジェクトを作成します。|
+|[ロール copetag の削除](../api/intune-rbac-rolescopetag-delete.md)|なし|[ロール copetag](../resources/intune-rbac-rolescopetag.md)を削除します。|
+|[ロール copetag の更新](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[ロール copetag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|String|表示する、またはロールのスコープのタグの表示名。|
-|説明|String|ロールのスコープのタグの説明です。|
+|displayName|String|ロールスコープタグの表示名またはフレンドリ名。|
+|説明|String|役割の範囲タグの説明。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

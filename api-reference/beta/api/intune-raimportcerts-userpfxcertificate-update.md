@@ -1,23 +1,23 @@
 ---
-title: UserPFXCertificate を更新します。
-description: UserPFXCertificate オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: userPFXCertificate の更新
+description: userPFXCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a3880a5747f33916bb6bd2f6bfc4ee5b8058a6c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 139d7f3523510728195e5e6f7b725c5fdb05f94a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422916"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158409"
 ---
-# <a name="update-userpfxcertificate"></a>UserPFXCertificate を更新します。
+# <a name="update-userpfxcertificate"></a>userPFXCertificate の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。
+[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,33 +41,33 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトの JSON 表記を指定します。
 
-[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意の識別子です。|
-|拇印|String|PFX 証明書の拇印を sha-1 です。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
-|userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
-|startDateTime|DateTimeOffset|証明書の有効性は、日付と時刻を開始します。|
-|expirationDateTime|DateTimeOffset|証明書の有効期限切れ日時です。|
-|プロバイダー|String|暗号サービス プロバイダーがこの blob の暗号化に使用します。|
-|キー名|String|(プロバイダー) 内のキーの名前が blob の暗号化に使用します。|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化中に、プロバイダーによって使用されるスキームをパディングします。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|Binary|PFX の暗号化された blob です。|
-|encryptedPfxPassword|String|PFX パスワードを暗号化します。|
-|createdDateTime|DateTimeOffset|PFX 証明書がインポートされたときに、日付と時刻。|
-|lastModifiedDateTime|DateTimeOffset|PFX 証明書が最後に修正された日時です。|
+|id|String|PFX 証明書の一意識別子。|
+|拇印|String|PFX 証明書の sha-1 拇印。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|展開の観点から見た証明書の目的。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
+|userPrincipalName|String|PFX 証明書のユーザープリンシパル名。|
+|startDateTime|DateTimeOffset|証明書の有効期間の開始日/時刻。|
+|expirationDateTime|DateTimeOffset|証明書の有効期限の日付/時刻。|
+|プロバイダー|String|この blob を暗号化するために使用される暗号化プロバイダー。|
+|keyName|String|blob の暗号化に使用された (プロバイダー内の) キーの名前。|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
+|encryptedPfxBlob|Binary|暗号化された PFX blob。|
+|encryptedPfxPassword|String|暗号化された PFX パスワード。|
+|createdDateTime|DateTimeOffset|この PFX 証明書がインポートされた日付/時刻です。|
+|lastModifiedDateTime|DateTimeOffset|この PFX 証明書が最後に変更された日付/時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

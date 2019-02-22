@@ -1,23 +1,23 @@
 ---
-title: WindowsInformationProtectionWipeAction を更新します。
-description: WindowsInformationProtectionWipeAction オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: windowsinformationprotectionwipeaction を更新する
+description: windowsinformationprotectionwipepeaction オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f49b79d6ebd12d81332613c646623d68dc0b09a2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b198f1387cc3f0806cc6b76953948eca08d88cfc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159102"
 ---
-# <a name="update-windowsinformationprotectionwipeaction"></a>WindowsInformationProtectionWipeAction を更新します。
+# <a name="update-windowsinformationprotectionwipeaction"></a>windowsinformationprotectionwipeaction を更新する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。
+[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,26 +41,27 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsinformationprotectionwipepepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|status|[actionState](../resources/intune-shared-actionstate.md)|アクションのステータスを消去します。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targetedUserId|String|このワイプ操作のターゲットとなるユーザーの Id。|
-|targetedDeviceRegistrationId|String|このワイプ操作のターゲットとなる DeviceRegistrationId。|
-|targetedDeviceName|String|ターゲット ・ デバイスの名前です。|
-|targetedDeviceMacAddress|String|ターゲット デバイスの Mac アドレスです。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|targeteduserid|String|このワイプアクションの対象となる UserId。|
+|targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
+|targeteddevicename|String|対象のデバイス名。|
+|targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
+|lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -69,7 +70,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 Content-type: application/json
-Content-length: 350
+Content-length: 412
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -77,7 +78,8 @@ Content-length: 350
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 
@@ -86,7 +88,7 @@ Content-length: 350
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 461
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -95,7 +97,8 @@ Content-Length: 399
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 

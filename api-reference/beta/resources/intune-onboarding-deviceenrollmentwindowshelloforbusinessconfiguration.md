@@ -1,21 +1,21 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 380ee426260fe28e5521d75608e6bd630adb0abc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6e7bc14c6ef54b2718fccdf2ca1823b5ea13a113
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402035"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158752"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -34,7 +34,7 @@ ms.locfileid: "29402035"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|id|文字列|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
@@ -43,16 +43,16 @@ ms.locfileid: "29402035"
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |pinMinimumLength|Int32|まだ文書化されていません|
 |pinMaximumLength|Int32|まだ文書化されていません|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|state|[有効化](../resources/intune-shared-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|securityDeviceRequired|Boolean|まだ文書化されていません|
-|unlockWithBiometricsEnabled|Boolean|まだ文書化されていません|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|state|[購入](../resources/intune-shared-enablement.md)|まだ文書化されていません。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|securityDeviceRequired|ブール値|まだ文書化されていません|
+|unlockWithBiometricsEnabled|ブール値|まだ文書化されていません|
 |remotePassportEnabled|Boolean|まだ文書化されていません|
 |pinPreviousBlockCount|Int32|まだ文書化されていません|
 |pinExpirationInDays|Int32|まだ文書化されていません|
-|enhancedBiometricsState|[有効化](../resources/intune-shared-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|enhancedBiometricsState|[購入](../resources/intune-shared-enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 ## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|

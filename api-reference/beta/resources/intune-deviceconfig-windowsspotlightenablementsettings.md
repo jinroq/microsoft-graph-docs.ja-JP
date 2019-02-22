@@ -1,30 +1,30 @@
 ---
-title: windowsSpotlightEnablementSettings 列挙型
-description: MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
-localization_priority: Normal
+title: windowsスポットライト enablementsettings 列挙型
+description: MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d23e481ff6d5ae7b1c36bf09a31753f4a7c6d734
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d20abb4e0ffb6dc6a99ea323c920dc2065eb36e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395469"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161615"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 列挙型
+# <a name="windowsspotlightenablementsettings-enum-type"></a>windowsスポットライト enablementsettings 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
+MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|ロック画面上でスポット ライトが構成されていません|
-|無効になっています。|1|ロック画面に Windows のスポット ライトを無効にします。|
-|enabled|2|ロック画面で Windows のスポット ライトを有効にします。|
+|notConfigured|.0|ロック画面のスポットライトが構成されていません|
+|党|1-d|ロック画面で Windows スポットライトを無効にする|
+|enabled|pbm-2|ロック画面で Windows スポットライトを有効にする|
 
 
 

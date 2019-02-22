@@ -1,35 +1,35 @@
 ---
 title: officeClientCheckinStatus リソースの種類
-description: チェックインのテナント統計 (stats) を記述するエンティティです。
+description: テナントのチェックイン統計を記述するエンティティ。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: aebc534a6c424a9dac4316d0029e2fd35839f0a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156057"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-チェックインのテナント統計 (stats) を記述するエンティティです。
+テナントのチェックイン統計を記述するエンティティ。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|userPrincipalName|String|ユーザー プリンシパル名は、デバイスを使用します。|
-|deviceName|String|チェックインしようとするデバイスの名前。|
-|devicePlatform|String|デバイスのプラットフォームにチェックインしようとします。|
-|devicePlatformVersion|String|デバイス プラットフォームのバージョンがチェックインをしようとします。|
-|wasSuccessful|Boolean|最後のチェックインが正常に完了しました。 場合、|
-|userId|String|デバイスを使用してユーザーの識別子です。|
-|checkinDateTime|DateTimeOffset|最後デバイス チェックの時間 (utc) です。|
-|エラー メッセージ|String|最後のチェックインに関連付けられている場合のエラー メッセージです。|
-|appliedPolicies|String コレクション|ポリシーの一覧では、最後のチェックインと、デバイスに配信されます。|
+|userPrincipalName|文字列|デバイスを使用したユーザープリンシパル名。|
+|deviceName|String|チェックインしようとしているデバイスの名前。|
+|devicePlatform|String|チェックインしようとしているデバイスプラットフォーム。|
+|deviceplatformversion|String|デバイスプラットフォームのバージョンをチェックインしようとしています。|
+|成功|ブール値|前回のチェックインが成功した場合。|
+|userId|String|デバイスを使用するユーザー識別子。|
+|checkinDateTime|DateTimeOffset|前回のデバイスのチェックイン時刻 (UTC)。|
+|errorMessage|String|前回のチェックインに関連付けられたエラーメッセージ。|
+|appliedPolicies|String collection|前回のチェックインとしてデバイスに配信されたポリシーの一覧です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,21 +1,21 @@
 ---
-title: UserPFXCertificate を作成します。
+title: userPFXCertificate を作成する
 description: 新しい userPFXCertificate オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8896e3bb300507f0d1a89892852a2e1d4865d9b3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418170"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158710"
 ---
-# <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成します。
+# <a name="create-userpfxcertificate"></a>userPFXCertificate を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを作成します。
 
@@ -41,33 +41,33 @@ POST /deviceManagement/userPfxCertificates
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に userPFXCertificate オブジェクトの JSON の形式を指定します。
+要求本文で、userPFXCertificate オブジェクトの JSON 表記を指定します。
 
-次の表は、userPFXCertificate を作成するときに必要なプロパティを示します。
+次の表に、userPFXCertificate の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意の識別子です。|
-|拇印|String|PFX 証明書の拇印を sha-1 です。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
-|userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
-|startDateTime|DateTimeOffset|証明書の有効性は、日付と時刻を開始します。|
-|expirationDateTime|DateTimeOffset|証明書の有効期限切れ日時です。|
-|プロバイダー|String|暗号サービス プロバイダーがこの blob の暗号化に使用します。|
-|キー名|String|(プロバイダー) 内のキーの名前が blob の暗号化に使用します。|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化中に、プロバイダーによって使用されるスキームをパディングします。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|Binary|PFX の暗号化された blob です。|
-|encryptedPfxPassword|String|PFX パスワードを暗号化します。|
-|createdDateTime|DateTimeOffset|PFX 証明書がインポートされたときに、日付と時刻。|
-|lastModifiedDateTime|DateTimeOffset|PFX 証明書が最後に修正された日時です。|
+|id|String|PFX 証明書の一意識別子。|
+|拇印|String|PFX 証明書の sha-1 拇印。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|展開の観点から見た証明書の目的。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
+|userPrincipalName|String|PFX 証明書のユーザープリンシパル名。|
+|startDateTime|DateTimeOffset|証明書の有効期間の開始日/時刻。|
+|expirationDateTime|DateTimeOffset|証明書の有効期限の日付/時刻。|
+|プロバイダー|String|この blob を暗号化するために使用される暗号化プロバイダー。|
+|keyName|String|blob の暗号化に使用された (プロバイダー内の) キーの名前。|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
+|encryptedPfxBlob|Binary|暗号化された PFX blob。|
+|encryptedPfxPassword|String|暗号化された PFX パスワード。|
+|createdDateTime|DateTimeOffset|この PFX 証明書がインポートされた日付/時刻です。|
+|lastModifiedDateTime|DateTimeOffset|この PFX 証明書が最後に変更された日付/時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -1,29 +1,29 @@
 ---
-title: vppTokenActionResult リソースの種類
-description: アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
-localization_priority: Normal
+title: vpptokenactionresult リソースの種類
+description: Apple volume purchase program トークンを使用して実行されたアクションの状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fb78ea991ed43bd100a424ea7ddd7e23b22412d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 853c5c12ca0a85fe0f5a16efa86321e46a28ec5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159389"
 ---
-# <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult リソースの種類
+# <a name="vpptokenactionresult-resource-type"></a>vpptokenactionresult リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
+Apple volume purchase program トークンを使用して実行されたアクションの状態。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|文字列型 (String)|アクション名|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 

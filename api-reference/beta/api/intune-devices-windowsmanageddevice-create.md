@@ -1,23 +1,23 @@
 ---
-title: WindowsManagedDevice を作成します。
-description: 新しい windowsManagedDevice オブジェクトを作成します。
-localization_priority: Normal
+title: windowsmanageddevice の作成
+description: 新しい windowsmanageddevice オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9d68fdd768f4084609b12d65b189b6b2961dfe2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d2860a5e982e9079356df81b527a0cf9d02f6f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398675"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161146"
 ---
-# <a name="create-windowsmanageddevice"></a>WindowsManagedDevice を作成します。
+# <a name="create-windowsmanageddevice"></a>windowsmanageddevice の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトを作成します。
+新しい[windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -43,88 +43,88 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に windowsManagedDevice オブジェクトの JSON の形式を指定します。
+要求本文で、windowsmanageddevice オブジェクトの JSON 表記を指定します。
 
-次の表は、windowsManagedDevice を作成するときに必要なプロパティを示します。
+次の表に、windowsmanageddevice の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの一意の識別子|
-|userId|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスに関連付けられているユーザーの一意の識別子|
-|deviceName|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの名前|
-|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードウェアの詳細。  記憶域の製造元、シリアル番号などの情報が含まれています。[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 '会社' または[managedDevice](../resources/intune-devices-manageddevice.md)からの '個人' の継承を使用できます。 可能な値は、`unknown`、`company`、`personal` です。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 '会社' または[managedDevice](../resources/intune-devices-manageddevice.md)からの '個人' の継承を使用できます。 可能な値は、`unknown`、`company`、`personal` です。|
-|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|デバイスの状態を管理します。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered` です。|
-|enrolledDateTime|DateTimeOffset|デバイスの登録時刻。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|lastSyncDateTime|DateTimeOffset|デバイスが Intune との正常な同期を最終的に完了した日時。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|デバイスのシャーシの種類です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown` です。|
-|operatingSystem|String|デバイスのオペレーティング システム。 Windows では、iOS などです。[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスのプラットフォームです。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
-|jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EA などです。[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm` です。|
-|osVersion|String|デバイスのオペレーティング システムのバージョン。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|easDeviceId|String|デバイスの Exchange ActiveSync の ID。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|aadRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
-|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|失われたモードが有効になっているか、 [managedDevice](../resources/intune-devices-manageddevice.md)からの継承を無効にかどうかを示します。 使用可能な値は、`disabled`、`enabled` です。|
-|activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|emailAddress|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスに関連付けられているユーザーの email(s)|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|デバイスの登録状態。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown` です。|
-|deviceCategoryDisplayName|String|デバイスのカテゴリ表示名を継承[managedDevice から](../resources/intune-devices-manageddevice.md)|
-|isSupervised|Boolean|デバイスは、 [managedDevice](../resources/intune-devices-manageddevice.md)からの継承の状態を管理|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
+|id|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの一意識別子|
+|userId|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイスに関連付けられているユーザーの一意識別子|
+|deviceName|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの名前|
+|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードワードの詳細。  記憶領域、製造元、シリアル番号などの情報が含まれます。[manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' company ' または ' personal ' を[manageddevice](../resources/intune-devices-manageddevice.md)から継承することができます。 可能な値は `unknown`、`company`、`personal` です。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' を[manageddevice](../resources/intune-devices-manageddevice.md)から継承することができます。 可能な値は `unknown`、`company`、`personal` です。|
+|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|managementstate|[managementstate](../resources/intune-devices-managementstate.md)|デバイスの管理状態。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered` です。|
+|enrolledDateTime|DateTimeOffset|デバイスの登録時刻。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|lastSyncDateTime|DateTimeOffset|デバイスが Intune との正常な同期を最終的に完了した日時。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|デバイスのシャーシの種類。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown` です。|
+|operatingSystem|文字列|デバイスのオペレーティング システム。 Windows、iOS など[manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスのプラットフォーム。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
+|jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。[manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm` です。|
+|osVersion|String|デバイスのオペレーティング システムのバージョン。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|easActivated|ブール値|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|easDeviceId|String|デバイスの Exchange ActiveSync の ID。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|aadRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
+|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|失われたモードが有効になっているか、 [manageddevice](../resources/intune-devices-manageddevice.md)から継承が無効かどうかを示します。 使用可能な値は、`disabled`、`enabled` です。|
+|activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|emailAddress|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイスに関連付けられているユーザーの電子メール|
+|azureActiveDirectoryDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|デバイスの登録状態。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown` です。|
+|deviceCategoryDisplayName|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスカテゴリの表示名|
+|isSupervised|ブール値|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの監視状態|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|exchangeAccessState|[devicemanagementexchangeaccessstate](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。
- [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
-|remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|isEncrypted|Boolean|[ManagedDevice](../resources/intune-devices-manageddevice.md)から、デバイスの暗号化状態継承|
-|userPrincipalName|String|デバイス ユーザー プリンシパル名で継承される[managedDevice から](../resources/intune-devices-manageddevice.md)|
-|model|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスのモデル|
-|manufacturer|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスの製造元|
-|imei|String|IMEI は[managedDevice](../resources/intune-devices-manageddevice.md)から継承|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるがデバイスのコンプライアンスの猶予期間の有効期限が切れると、日付と時刻|
-|シリアル番号|String|シリアル番号は[managedDevice](../resources/intune-devices-manageddevice.md)から継承|
-|phoneNumber|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの電話番号|
-|androidSecurityPatchLevel|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から android のセキュリティ ・ パッチ ・ レベル継承|
-|userDisplayName|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から、ユーザーの表示名継承|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr クライアントには、 [managedDevice](../resources/intune-devices-manageddevice.md)からの継承の機能が有効になっています。|
-|wiFiMacAddress|String|Wi-fi MAC は、 [managedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|デバイスの正常性構成証明の状態。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|subscriberCarrier|String|サブスクライバーのキャリアは、 [managedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|meid|String|MEID は[managedDevice](../resources/intune-devices-manageddevice.md)から継承|
-|totalStorageSpaceInBytes|Int64|バイトが[managedDevice](../resources/intune-devices-manageddevice.md)から継承することでストレージの合計|
-|freeStorageSpaceInBytes|Int64|空きバイト数は、 [managedDevice](../resources/intune-devices-manageddevice.md)から継承することで|
-|managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
-|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|最後に[managedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスのユーザーのログオンを示します|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|レポート preferMdmOverGroupPolicy 設定日付と時刻が設定されています。  設定すると、Intune MDM 設定が優先されますグループ ポリシー設定の競合がある場合。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|autopilotEnrolled|Boolean|自動操縦を使用して管理対象のデバイスが登録されている場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|requireUserEnrollmentApproval|Boolean|マネージ iOS デバイスがユーザーの承認登録の場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限の日付継承[managedDevice](../resources/intune-devices-manageddevice.md)からの報告します。|
-|iccid|String|A SIM カードの一意の識別番号は集積回路カードの識別子です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|udid|String|IOS と macOS デバイスに一意のデバイス識別子です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|roleScopeTagIds|String コレクション|このデバイス インスタンスのスコープのタグ Id のリストです。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|windowsActiveMalwareCount|Int32|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される windows デバイスのアクティブなマルウェアの数|
-|windowsRemediatedMalwareCount|Int32|この windows デバイス継承[managedDevice](../resources/intune-devices-manageddevice.md)からの修正されたマルウェアの数|
-|notes|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から IT 管理者は継承によって作成されたデバイスに関する注意事項|
-|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャー クライアント正常性の状態、 [managedDevice](../resources/intune-devices-manageddevice.md)から、MDM と構成マネージャー エージェントの継承によって管理されているデバイスに対してのみ有効です。|
+ [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
+|remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|isEncrypted|Boolean|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの暗号化状態|
+|userPrincipalName|文字列|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスユーザープリンシパル名|
+|model|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスのモデル|
+|manufacturer|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの製造元|
+|imei|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイスコンプライアンスの猶予期間が[manageddevice](../resources/intune-devices-manageddevice.md)から継承される日時|
+|シリアル番号|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたシリアル|
+|phoneNumber|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの電話番号|
+|androidSecurityPatchLevel|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された Android セキュリティパッチレベル|
+|userDisplayName|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたユーザーの表示名|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された grmgr クライアントの有効な機能の設定|
+|wiFiMacAddress|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された wi-fi MAC|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|デバイスの正常性構成証明の状態。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|subscriberCarrier|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたサブスクライバーキャリア|
+|meid|String|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された meid|
+|totalStorageSpaceInBytes|Int64|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された合計記憶域 (バイト)|
+|freeStorageSpaceInBytes|Int64|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された空き記憶域 (バイト単位)|
+|managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|partnerReportedThreatState|[manageddevicepartnerreportedhealthstate](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
+|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイスの最後にログオンしたユーザーを示します|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|preferMdmOverGroupPolicy の設定が設定された DateTime を報告します。  設定すると、競合がある場合に Intune MDM 設定がグループポリシー設定を上書きします。 読み取り専用です。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|autopilotEnrolled|ブール値|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|requireUserEnrollmentApproval|ブール値|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|managementCertificateExpirationDate|DateTimeOffset|[manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイス管理証明書の有効期限日を報告します|
+|iccid|String|ic カード識別子。 SIM カードの一意の識別番号です。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|udid|String|iOS および macOS デバイスの一意のデバイス識別子。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ id のリスト。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|windowsactivemalwarecount 再計算|Int32|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスのアクティブなマルウェアの数|
+|windowsRemediatedMalwareCount|Int32|[manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスの修復されたマルウェアの数|
+|notes|String|IT 管理者によって作成された、 [manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイス上のメモ|
+|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されているデバイスに対してのみ有効。 [manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -133,7 +133,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 7173
+Content-length: 7231
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -229,7 +229,9 @@ Content-length: 7173
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -306,7 +308,7 @@ Content-length: 7173
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7222
+Content-Length: 7280
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -403,7 +405,9 @@ Content-Length: 7222
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {

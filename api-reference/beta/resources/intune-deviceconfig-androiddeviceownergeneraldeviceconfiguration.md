@@ -1,23 +1,23 @@
 ---
-title: androidDeviceOwnerGeneralDeviceConfiguration リソースの種類
-description: このトピックでは、宣言されたメソッドに、プロパティと androidDeviceOwnerGeneralDeviceConfiguration リソースによって公開されているリレーションシップの説明を提供します。
-localization_priority: Normal
+title: androiddeviceowner一般 devic/リソースの種類
+description: このトピックでは、androiddeviceownerによって公開される宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ac403bd13091a9db61b7f27462caecf6934b452
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fee3354cc66bb90a51874986ed46b80b4a8c9d8c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403750"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156204"
 ---
-# <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration リソースの種類
+# <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androiddeviceowner一般 devic/リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このトピックでは、宣言されたメソッドに、プロパティと androidDeviceOwnerGeneralDeviceConfiguration リソースによって公開されているリレーションシップの説明を提供します。
+このトピックでは、androiddeviceownerによって公開される宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
@@ -25,71 +25,71 @@ ms.locfileid: "29403750"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト androidDeviceOwnerGeneralDeviceConfigurations](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)コレクション|[AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[AndroidDeviceOwnerGeneralDeviceConfiguration を取得します。](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|[AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
-|[AndroidDeviceOwnerGeneralDeviceConfiguration を作成します。](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-create.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|新しい[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトを作成します。|
-|[AndroidDeviceOwnerGeneralDeviceConfiguration を削除します。](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md)|なし|の[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)を削除します。|
-|[AndroidDeviceOwnerGeneralDeviceConfiguration を更新します。](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|[AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトのプロパティを更新します。|
+|[List androiddeviceowner一般 deviceconfigurん](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md)|[androiddeviceowner一般 devic/デバイス](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)のコレクション|[androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[androiddeviceowner一般の devic/デバイスを取得する](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|[androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)プロパティとリレーションシップを読み取ります。|
+|[androiddeviceowner一般の devic/デバイスの作成](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-create.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|新しい[androiddeviceowner一般の devic/デバイス](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトを作成します。|
+|[androiddeviceowner一般の devic/デバイスの削除](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md)|なし|[androiddeviceowner一般](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の devicの種類を削除します。|
+|[androiddeviceowner一般の devic/デバイスの更新](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|[androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)プロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|accountsBlockModification|Boolean|追加または削除、アカウントが無効かどうかを示します。|
-|appsAllowInstallFromUnknownSources|Boolean|不明なソースの設定を有効にするユーザーを許可するかどうかを示します。|
-|appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|アプリケーションの自動更新ポリシーの値を示します。 可能な値は、`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always` です。|
-|appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|いずれかが定義されていない場合、アプリケーションの具体的には、実行時のアクセス許可の要求のアクセス許可ポリシーを示します。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|appsRecommendSkippingFirstUseHints|Boolean|すべてのアプリケーションをお勧めするかどうかは、追加可能性があります、最初の時間の使用のヒントをスキップします。|
-|bluetoothBlockConfiguration|Boolean|Bluetooth の構成からユーザーをブロックするかどうかを示します。|
-|bluetoothBlockContactSharing|Boolean|Bluetooth を使用して連絡先の共有からユーザーをブロックするかどうかを示します。|
-|cameraBlocked|Boolean|カメラの使用を無効にするかどうかを示します。|
+|accountsBlockModification|ブール値|アカウントの追加または削除が無効であるかどうかを示します。|
+|appsAllowInstallFromUnknownSources|ブール値|ユーザーが不明なソースを有効にできるかどうかを示します。|
+|appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|アプリの自動更新ポリシーの値を示します。 可能な値は、`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always` です。|
+|appsdefaultpermissionpolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|アプリに対して定義されていない場合、実行時のアクセス許可の要求に対するアクセス許可ポリシーを示します。 使用可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
+|appsRecommendSkippingFirstUseHints|ブール値|すべてのアプリが、追加された初回使用時のヒントをスキップするかどうかを指定します。|
+|bluetoothBlockConfiguration|ブール値|ユーザーが bluetooth を構成することを禁止するかどうかを示します。|
+|bluetoothBlockContactSharing|ブール値|ユーザーが bluetooth を介して連絡先を共有することを禁止するかどうかを示します。|
+|cameraBlocked|ブール値|カメラの使用を無効にするかどうかを示します。|
 |cellularBlockWiFiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。|
-|dataRoamingBlocked|Boolean|ユーザーによるデータの移動を禁止するかどうかを示します。|
-|dateTimeConfigurationBlocked|Boolean|日付またはデバイス上の時刻を手動で変更するからユーザーをブロックするかどうかを示します|
-|factoryResetDeviceAdministratorEmails|String コレクション|デバイスは、工場出荷時を設定する前にリセットした後に認証する必要があります Google アカウントのメールのリストです。|
-|factoryResetBlocked|Boolean|設定の工場出荷時リセット ・ オプションが無効になっているかどうかを示します。|
-|kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|キオスク モードでは、デバイスに表示される管理対象のアプリケーションの一覧です。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|kioskModeWallpaperUrl|String|キオスク モードでは、デバイスとは、壁紙に使用するパブリックにアクセス可能なイメージの URL。|
-|kioskModeExitCode|String|ユーザーがキオスク モードでは、デバイスとは、キオスク モードからエスケープできるようにするためのコードを終了します。|
-|kioskModeVirtualHomeButtonEnabled|Boolean|キオスク モードでは、デバイスと仮想のホーム ボタンを表示するかどうかを指定します。|
-|microphoneForceMute|Boolean|Unmuting デバイスのマイクをブロックするかどうかを示します。|
-|networkEscapeHatchAllowed|Boolean|デバイスがブート時に一時的なネットワーク接続への接続を許可するかどうかを示します。|
-|nfcBlockOutgoingBeam|Boolean|NFC 送信ビームをブロックするかどうかを示します。|
-|passwordBlockKeyguard|Boolean|Keyguard が無効になっているかどうかを示します。|
-|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md)コレクション|ブロックするデバイスの keyguard の機能の一覧です。 このコレクションには、最大で 7 個の要素を含めることができます。|
-|passwordExpirationDays|Int32|期限が切れるし、新しいパスワードが必要になる前のパスワードを設定できる時間 (秒) の量を示します。 有効な値は 1 から 365 までです|
-|passwordMinimumLength|Int32|デバイスに必要なパスワードの最小の長さを示します。 有効な値は 4 から 16 までです|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトするまで非アクティブのミリ秒です。|
-|passwordPreviousPasswordCountToBlock|Int32|場所ユーザーことはできませんが、履歴内の任意のパスワードと同じパスワードを入力するのには、パスワードの履歴の長さを示します。 有効な値は 0 から 24 までです|
-|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスに必要なパスワードの最小の品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols` です。|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|デバイスをワイプする前に、ユーザーが誤ったパスワードを入力できる回数を示します。 有効な値は 4 から 11 までです|
-|safeBootBlocked|Boolean|セーフ ブート デバイスが無効になってを再起動するかどうかを示します。|
-|screenCaptureBlocked|Boolean|スクリーン ショットを実行する機能を無効にするかどうかを示します。|
-|securityAllowDebuggingFeatures|Boolean|デバイスのデバッグ機能を有効にすることからユーザーをブロックするかどうかを示します。|
-|securityRequireVerifyApps|Boolean|示しているかどうかのアプリケーションが必要なことを確認します。|
-|statusBarBlocked|Boolean|示すかどうか、またはステータス バーを無効に、通知、すばやく設定およびその他の画面のオーバーレイを含みます。|
-|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示が残ります電源モードの一覧です。 このコレクションには、最大 4 つの要素を含めることができます。|
-|storageAllowUsb|Boolean|USB 大容量記憶装置を許可するかどうかを示します。|
-|storageBlockExternalMedia|Boolean|外部メディアをブロックするかどうかを示します。|
-|storageBlockUsbFileTransfer|Boolean|USB ファイル転送をブロックするかどうかを示します。|
-|systemUpdateWindowStartMinutesAfterMidnight|Int32|システム更新プログラムの開始を午前 0 時以降後の分単位の数を示します。 有効な値の 0 から 1440|
-|systemUpdateWindowEndMinutesAfterMidnight|Int32|システムの更新] ウィンドウを終了する午前 0 時以降後の分単位の数を示します。 有効な値の 0 から 1440|
-|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新の構成の型。 可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
-|systemWindowsBlocked|Boolean|Android システムをブロックするかどうかは、toasts、電話活動、およびシステムの警告のように、windows を確認します。|
-|usersBlockAdd|Boolean|ユーザーとプロファイルを追加することが無効になっているかどうかを示します。|
-|usersBlockRemove|Boolean|デバイスから他のユーザーを削除するを無効にするかどうかを示します。|
-|volumeBlockAdjustment|Boolean|マスター ボリュームが無効になっているを調整するかどうかを示します。|
-|vpnAlwaysOnPackageIdentifier|String|常時接続で VPN 接続を処理するアプリケーションの android アプリのパッケージ名です。|
-|vpnAlwaysOnLockdownMode|Boolean|常にオンの VPN は、パッケージの名前は指定、かどうか、その VPN が切断されたときに、ネットワーク トラフィックをロックされます。|
-|wifiBlockEditConfigurations|Boolean|Wifi 接続の設定を編集することからユーザーをブロックするかどうかを示します。|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean|ポリシーで定義されているネットワークだけを編集するユーザーをブロックするかどうかを示します。|
+|dataRoamingBlocked|ブール値|ユーザーのデータ移動を禁止するかどうかを示します。|
+|dateTimeConfigurationBlocked|ブール値|ユーザーがデバイスの日付または時刻を手動で変更することを禁止するかどうかを示します。|
+|factoryResetDeviceAdministratorEmails|String collection|デバイスを設定する前にリセットする必要がある、Google アカウント電子メールの一覧。|
+|factoryResetBlocked|Boolean|設定の出荷時のリセットオプションが無効になっているかどうかを示します。|
+|kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスがキオスクモードのときに表示される管理対象アプリの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|kioskModeWallpaperUrl|String|デバイスがキオスクモードのときに壁紙に使用する、公開されている画像の URL。|
+|kioskModeExitCode|String|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
+|kioskModeVirtualHomeButtonEnabled|ブール値|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
+|microphoneForceMute|ブール値|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
+|networkEscapeHatchAllowed|ブール値|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
+|nfcblockoutgoingbeam|ブール値|NFC の送信ビームをブロックするかどうかを示します。|
+|passwordblockkeyguard|ブール値|keyguard が無効であるかどうかを示します。|
+|passwordblockkeygu/機能|[androidkeygu/機能](../resources/intune-deviceconfig-androidkeyguardfeature.md)コレクション|ブロックする device keyguard 機能のリストです。 このコレクションには、最大で 7 個の要素を含めることができます。|
+|passwordExpirationDays|Int32|パスワードを期限切れにするために設定できる時間を秒単位で指定し、新しいパスワードを入力する必要があります。 有効な値は 1 から 365 までです|
+|passwordMinimumLength|Int32|デバイスで必要なパスワードの最小の長さを示します。 有効な値は 4 から 16 までです|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (ミリ秒)。|
+|passwordPreviousPasswordCountToBlock|Int32|パスワードの履歴の長さを示します。ユーザーは、履歴にあるパスワードと同じパスワードを入力することはできません。 有効な値は 0 から 24 までです|
+|passwordRequiredType|[androiddeviceownerrequiredpasswordtype](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスで必要なパスワードの最小品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols` です。|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|ユーザーが間違ったパスワードを入力したときにデバイスがワイプされるまでの回数を示します。 有効な値は 4 から 11 までです|
+|safebootblocked|ブール値|セーフブートでのデバイスの再起動を無効にするかどうかを示します。|
+|screenCaptureBlocked|Boolean|スクリーンショットを撮影する機能を無効にするかどうかを示します。|
+|securityallowデバッグ機能|ブール値|ユーザーがデバイスのデバッグ機能を有効にすることを禁止するかどうかを示します。|
+|securityRequireVerifyApps|ブール値|アプリを確認する必要があるかどうかを示します。|
+|statusBarBlocked|ブール値|通知、クイック設定、その他の画面オーバーレイを含む、ステータスバーを無効にするかどうかを示します。|
+|stayonmodes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示がオンのままになるモードの一覧です。 このコレクションには、最大4つの要素を含めることができます。|
+|storageallowusb|ブール値|USB 大容量ストレージを許可するかどうかを示します。|
+|storageblockexternalmedia|ブール値|外部メディアをブロックするかどうかを示します。|
+|storageblockusbfiletransfer|ブール値|USB ファイル転送をブロックするかどうかを示します。|
+|systemUpdateWindowStartMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが起動する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
+|systemUpdateWindowEndMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが終了する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
+|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新構成の種類。 使用可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
+|systemwindowsblocked ブロック|ブール値|Android システムプロンプトウィンドウ (toasts、電話活動、システム通知など) を禁止するかどうかを指定します。|
+|ユーザー blockadd|ブール値|ユーザーおよびプロファイルの追加を無効にするかどうかを示します。|
+|ユーザー blockremove|ブール値|他のユーザーのデバイスからの削除を無効にするかどうかを示します。|
+|volumeblockadjustment|ブール値|マスターボリュームを調整するかどうかを示します。|
+|vpnAlwaysOnPackageIdentifier|String|always on VPN 接続を処理するアプリの Android アプリパッケージ名。|
+|vpnAlwaysOnLockdownMode|ブール値|always on vpn パッケージ名が指定されている場合は、vpn が切断されたときにネットワークトラフィックをロックするかどうかを指定します。|
+|wifiBlockEditConfigurations|ブール値|ユーザーが wifi 接続設定を編集することを禁止するかどうかを示します。|
+|wifiBlockEditPolicyDefinedConfigurations|ブール値|ユーザーがポリシーによって定義されたネットワークのみを編集することを禁止するかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -97,7 +97,7 @@ ms.locfileid: "29403750"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) コレクション|デバイスごとのデバイス構成のインストール状況。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|

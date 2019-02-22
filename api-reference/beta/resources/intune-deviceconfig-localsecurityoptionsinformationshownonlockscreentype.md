@@ -1,31 +1,31 @@
 ---
-title: localSecurityOptionsInformationShownOnLockScreenType 列挙型
-description: LocalSecurityOptionsInformationShownOnLockScreenType に指定できる値
-localization_priority: Normal
+title: localsecurityoptionsinformationshownonlockscreentype 列挙型
+description: localsecurityoptionsinformationshownonlockscreentype に指定できる値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da1eb1b137168db10888997d07684e19452fa4a3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1709fe10b6e6992aba128da57cb77006633c6909
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401048"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156134"
 ---
-# <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 列挙型
+# <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localsecurityoptionsinformationshownonlockscreentype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-LocalSecurityOptionsInformationShownOnLockScreenType に指定できる値
+localsecurityoptionsinformationshownonlockscreentype に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|構成されていません|
-|userDisplayNameDomainUser|1|ユーザーの表示名、ドメイン名とユーザー名|
-|userDisplayNameOnly|2|ユーザーの表示名のみ|
-|doNotDisplayUser|3|ユーザー情報を表示しません。|
+|notConfigured|.0|未構成|
+|userDisplayNameDomainUser|1-d|ユーザーの表示名、ドメインおよびユーザー名|
+|userdisplaynameonly|pbm-2|ユーザーの表示名のみ|
+|displaydisplayuser|1/3|ユーザー情報を表示しない|
 
 
 

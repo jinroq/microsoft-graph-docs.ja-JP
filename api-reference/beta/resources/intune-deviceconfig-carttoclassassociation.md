@@ -1,44 +1,44 @@
 ---
 title: cartToClassAssociation リソースの種類
-description: 教室カートのデバイスに関連付けるための CartToClassAssociation です。
-localization_priority: Normal
+description: デバイスカートと教室を関連付けるための CartToClassAssociation。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b832e4597b15f062289a086d068ea3da71d9f66a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 228a3bfc873fdaf1fbd77e51a79ca184c2416d7c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395693"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156596"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-教室カートのデバイスに関連付けるための CartToClassAssociation です。
+デバイスカートと教室を関連付けるための CartToClassAssociation。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)コレクション|[CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[CartToClassAssociation を取得します。](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|[CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティと関係を参照してください。|
-|[CartToClassAssociation を作成します。](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|新しい[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトを作成します。|
-|[CartToClassAssociation を削除します。](../api/intune-deviceconfig-carttoclassassociation-delete.md)|なし|の[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)を削除します。|
-|[CartToClassAssociation を更新します。](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|[CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティを更新します。|
+|[リスト cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)コレクション|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[cartToClassAssociation を取得する](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[cartToClassAssociation を作成する](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|新しい[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトを作成します。|
+|[cartToClassAssociation の削除](../api/intune-deviceconfig-carttoclassassociation-delete.md)|なし|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)を削除します。|
+|[cartToClassAssociation の更新](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
-|version|Int32|CartToClassAssociation のバージョンです。|
+|version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|デバイス構成について管理者が指定した名前。|
-|説明|String|管理者には、CartToClassAssociation の説明が用意されています。|
-|deviceCartIds|String コレクション|クラスに関連するデバイスのカートの識別子です。|
-|classroomIds|String コレクション|デバイスのカートに関連する教室の識別子です。|
+|説明|String|CartToClassAssociation の管理者提供の説明。|
+|devicecartids|String collection|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

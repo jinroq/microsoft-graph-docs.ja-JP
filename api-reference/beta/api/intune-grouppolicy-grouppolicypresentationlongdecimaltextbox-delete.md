@@ -1,23 +1,23 @@
 ---
-title: GroupPolicyPresentationLongDecimalTextBox を削除します。
-description: GroupPolicyPresentationLongDecimalTextBox を削除します。
-localization_priority: Normal
+title: groupPolicyPresentationLongDecimalTextBox の削除
+description: groupPolicyPresentationLongDecimalTextBox を削除します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 310d661f19336332df4559d0ba6992054d6e8bb4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b197d2d4e6fba7d2fe66798563d1e4101757606c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430257"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160124"
 ---
-# <a name="delete-grouppolicypresentationlongdecimaltextbox"></a>GroupPolicyPresentationLongDecimalTextBox を削除します。
+# <a name="delete-grouppolicypresentationlongdecimaltextbox"></a>groupPolicyPresentationLongDecimalTextBox の削除
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-の[groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)を削除します。
+[groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,7 +42,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

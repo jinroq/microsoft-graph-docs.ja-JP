@@ -1,31 +1,31 @@
 ---
-title: defenderCloudBlockLevelType 列挙型
-description: クラウド ・ ブロック ・ レベルで使用できる値
-localization_priority: Normal
+title: defendercloudblockleveltype 列挙型
+description: クラウドブロックレベルの可能な値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b309184623cff19e44ee5afea311d46fa89210fb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbf442a11335602c510a210d7bd805b2a76eb7df
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425912"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156925"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 列挙型
+# <a name="defendercloudblockleveltype-enum-type"></a>defendercloudblockleveltype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-クラウド ・ ブロック ・ レベルで使用できる値
+クラウドブロックレベルの可能な値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|既定値、レベルおよび検出のリスクを増大させることがなく強固な検出は、既定の Windows Defender のウイルス対策プログラムのブロック機能を使用して正規のファイル|
-|高|1|高には、強力な検出レベルが適用されます。|
-|highPlus|2|高 + 高レベルを使用し、追加の保護手段を適用します。|
-|zeroTolerance|3|耐は、すべての不明な実行可能ファイルをブロックします。|
+|notConfigured|.0|既定値は、Windows Defender ウイルス対策の既定のブロックレベルを使用し、正当なファイルを検出するリスクを増やさずに、強力な検出を提供します。|
+|高額|1-d|High は、強力なレベルの検出を適用します。|
+|highplus|pbm-2|高 + は高レベルを使用し、追加の保護対策を適用します。|
+|zeroTolerance|1/3|ゼロトレランスによってすべての不明な実行可能ファイルがブロック|
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: certificateRevocationStatus 列挙型
-description: 証明書失効の状態です。
-localization_priority: Normal
+description: 証明書の失効状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 373cb6247a695a5912d02d4fb1a353c40aeac581
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c182cf2317f185108570116a283973d481f17ab2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421971"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159445"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-証明書失効の状態です。
+証明書の失効状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|失効していません。|
-|保留中|1|保留中の失効します。|
-|発行|2|取り消しコマンドが発行されました。|
-|失敗しました。|3|失効が失敗しました。|
-|失効|4|無効にします。|
+|none|.0|取り消されません。|
+|対する|1-d|失効が保留中です。|
+|発行|pbm-2|失効コマンドが発行されました。|
+|フェール|1/3|取り消しに失敗しました。|
+|破棄|2/4|破棄.|
 
 
 
