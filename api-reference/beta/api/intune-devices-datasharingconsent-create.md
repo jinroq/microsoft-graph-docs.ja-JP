@@ -1,21 +1,21 @@
 ---
-title: DataSharingConsent を作成します。
+title: dataSharingConsent を作成する
 description: 新しい dataSharingConsent オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 686f8e5ddb56c53224d467bc6ac31cfdb5b6858c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406949"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167110"
 ---
-# <a name="create-datasharingconsent"></a>DataSharingConsent を作成します。
+# <a name="create-datasharingconsent"></a>dataSharingConsent を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを作成します。
 
@@ -41,27 +41,27 @@ POST /deviceManagement/dataSharingConsents
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に dataSharingConsent オブジェクトの JSON の形式を指定します。
+要求本文で、dataSharingConsent オブジェクトの JSON 表記を指定します。
 
-次の表は、dataSharingConsent を作成するときに必要なプロパティを示します。
+次の表に、dataSharingConsent の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|データ共有同意 Id|
-|serviceDisplayName|String|サービス作業の流れの表示名|
-|termsUrl|String|同意の共有データの TermsUrl|
-|付与|Boolean|同意の共有データに付与されている状態|
-|grantDateTime|DateTimeOffset|同意は、このアカウントに与えられました。|
-|grantedByUpn|String|このアカウントに許可を付与するユーザーの Upn|
-|grantedByUserId|String|このアカウントに許可を付与するユーザーのユーザー Id|
+|id|String|データ共有の同意 Id|
+|servicedisplayname|String|サービスワークフローの表示名|
+|termsUrl|String|データ共有の同意の TermsUrl|
+|granted|ブール値|データ共有の同意の付与された状態|
+|grantDateTime|DateTimeOffset|このアカウントに対して同意が与えられた時間|
+|grantedByUpn|String|このアカウントに同意を付与したユーザーの Upn|
+|grantedByUserId|String|このアカウントに同意を付与したユーザーの UserId|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -1,23 +1,23 @@
 ---
 title: windowsIdentityProtectionConfiguration リソースの種類
-description: このエンティティは、宣言されたメソッドに、プロパティと Windows こんにちはのビジネスで公開されているリレーションシップの説明を提供します。
-localization_priority: Normal
+description: このエンティティは、Windows Hello for business が公開する宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 431e85e0daddb10e2726dd65e5a6770cf80a0452
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 29510dca8eac2713576f847485a9d22d0bedf1d6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168013"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>windowsIdentityProtectionConfiguration リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このエンティティは、宣言されたメソッドに、プロパティと Windows こんにちはのビジネスで公開されているリレーションシップの説明を提供します。
+このエンティティは、Windows Hello for business が公開する宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
@@ -25,37 +25,37 @@ ms.locfileid: "29398598"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト windowsIdentityProtectionConfigurations](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-list.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)コレクション|[WindowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[WindowsIdentityProtectionConfiguration を取得します。](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-get.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|[WindowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
-|[WindowsIdentityProtectionConfiguration を作成します。](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-create.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|新しい[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトを作成します。|
-|[WindowsIdentityProtectionConfiguration を削除します。](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-delete.md)|なし|の[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)を削除します。|
-|[WindowsIdentityProtectionConfiguration を更新します。](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-update.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|[WindowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティを更新します。|
+|[リスト windowsIdentityProtectionConfigurations](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-list.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)コレクション|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[windowsIdentityProtectionConfiguration を取得する](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-get.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsIdentityProtectionConfiguration を作成する](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-create.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|新しい[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトを作成します。|
+|[windowsIdentityProtectionConfiguration の削除](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-delete.md)|なし|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)を削除します。|
+|[windowsIdentityProtectionConfiguration の更新](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-update.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|useSecurityKeyForSignin|Boolean|ログオン資格情報として Windows こんにちはセキュリティ キーを有効にするために使用するブール値です。|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|拡張スプーフィング対策 Windows こんにちは顔認証の facial の機能の認識を有効にするために使用するブール値です。|
-|pinMinimumLength|Int32|ビジネスの暗証番号 (pin) は、Windows こんにちはに必要な文字の最小数を設定する整数値。 有効な値は 4 ~ 127 包括的で、最大の暗証番号 (pin) の設定値に等しいかそれより小さい。 有効な値 4 ~ 127|
-|pinMaximumLength|Int32|暗証番号 (pin) の作業に使用できる文字の最大数を設定する整数値。 有効な値は、4 ~ 127 包括的以上の最小の暗証番号 (pin) の設定値と同じです。 有効な値 4 ~ 127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|この値は、ビジネスの暗証番号 (pin) の Windows こんにちはの文字の大文字の使用を構成します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|この値は、ビジネスの暗証番号 (pin) の Windows こんにちはで小文字の使用を構成します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|ビジネスの暗証番号 (pin) を Windows こんにちはで特殊文字を使用する機能を制御します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|pinExpirationInDays|Int32|期間 (日数) を指定する整数値システムがそれを変更するユーザーを必要とする前に、暗証番号 (pin) を使用することができます。 有効な値は、0 に 730 包括的です。 有効な値は 0 から 730 までです|
-|pinPreviousBlockCount|Int32|過去のピンを使用できないようにする機能を制御します。 0 から 50、包括的で、これを設定する必要があり、その数にユーザーの現在の暗証番号 (pin) が含まれています。 かどうかは 0 では、以前に設定ピンは格納されません。 PIN を通じて暗証番号 (pin) の履歴は保持されませんをリセットします。 有効な値は 0 から 50 までです|
-|pinRecoveryEnabled|Boolean|使用して、Windows こんにちはビジネス暗証番号 (pin) リカバリ ・ サービスの PIN を変更するユーザーを有効にするブール値です。|
-|securityDeviceRequired|Boolean|Windows こんにちはビジネスのための準備のトラステッド プラットフォーム モジュール (TPM) を必要とするかどうかを制御します。 TPM は、他のデバイス上に格納されているデータは使用できませんという点で、その他セキュリティ上の利点を提供します。 かどうかは False に設定すると、すべてのデバイスをプロビジョニングできる Windows こんにちはビジネスに使用可能な TPM がない場合でも。|
-|unlockWithBiometricsEnabled|Boolean|代わりに、Windows こんにちはビジネス暗証番号 (pin) の顔や指紋などの生体認証のジェスチャの使用を制御します。  場合は False、生体認証のジェスチャに設定することはできません。 ユーザーは、障害が発生した場合のバックアップとして、暗証番号 (pin) を構成する必要があります。|
-|useCertificatesForOnPremisesAuthEnabled|Boolean|Windows こんにちは設置型リソースの認証に証明書を使用するビジネスを可能にするブール値です。|
-|windowsHelloForBusinessBlocked|Boolean|Windows こんにちはの Windows へのサインイン方法としてビジネスをブロックするブール値です。|
+|useSecurityKeyForSignin|ブール値|ログオン資格情報として Windows Hello セキュリティキーを有効にするために使用されるブール値。|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|ブール値|Windows Hello 顔認証で顔機能認識の強化されたスプーフィング対策を有効にするために使用するブール値。|
+|pinMinimumLength|Int32|Windows Hello for business の PIN に必要な最小文字数を設定する整数値。 有効な値は、4 ~ 127 の範囲で、最大 PIN の値を設定します。 有効な値は 4 ~ 127|
+|pinMaximumLength|Int32|作業 PIN に使用できる最大文字数を設定する整数値。 有効な値は、最小 PIN で設定された値以上の4から127の範囲です。 有効な値は 4 ~ 127|
+|pinUppercaseCharactersUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|この値は、Windows Hello for Business の PIN での大文字の使用を構成します。 可能な値は `blocked`、`required`、`allowed` です。|
+|pinLowercaseCharactersUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|この値は、Windows Hello for Business の PIN に小文字を使用するように構成します。 可能な値は `blocked`、`required`、`allowed` です。|
+|pinSpecialCharactersUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|Windows Hello for Business の PIN で特殊文字を使用する機能を制御します。 可能な値は `blocked`、`required`、`allowed` です。|
+|pinExpirationInDays|Int32|[整数値] PIN の変更をユーザーに要求する前に PIN を使用できる期間 (日数) を指定します。 有効な値は0から730の範囲です。 有効な値は 0 から 730 までです|
+|pinPreviousBlockCount|Int32|ユーザーが過去の pin を使用できないようにする機能を制御します。 0 ~ 50 の範囲で設定する必要があり、ユーザーの現在の PIN がその数に含まれています。 0に設定すると、以前の pin は保存されません。 pin をリセットすると、pin 履歴は保持されません。 有効な値は 0 から 50 までです|
+|pinrecoveryenabled|ブール値|ユーザーが Windows Hello for business pin 回復サービスを使用して pin を変更できるようにするブール値。|
+|securityDeviceRequired|ブール値|Windows Hello for business のプロビジョニングにトラステッドプラットフォームモジュール (TPM) を必要とするかどうかを制御します。 TPM に格納されたデータは、他のデバイスでは使用できないため、追加のセキュリティ上の利点があります。 False に設定されている場合は、使用可能な TPM がない場合でも、すべてのデバイスが Windows Hello for business をプロビジョニングできます。|
+|unlockWithBiometricsEnabled|Boolean|Windows Hello for Business PIN の代わりに、顔文字や指紋などのバイオメトリクスジェスチャの使用を制御します。  False に設定すると、生体認証ジェスチャは許可されません。 ユーザーは、障害が発生した場合に、バックアップとして PIN を構成する必要があります。|
+|useCertificatesForOnPremisesAuthEnabled|ブール値|Windows Hello for business が証明書を使用してオンプレミスのリソースを認証できるようにするブール値。|
+|windowsHelloForBusinessBlocked|ブール値|windows Hello for business を windows にサインインするための方法としてブロックするブール値。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -63,7 +63,7 @@ ms.locfileid: "29398598"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) コレクション|デバイスごとのデバイス構成のインストール状況。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|

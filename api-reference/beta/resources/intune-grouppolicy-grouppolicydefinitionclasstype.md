@@ -1,30 +1,30 @@
 ---
-title: groupPolicyDefinitionClassType 列挙型
-description: グループ ポリシーの定義のクラスの型。
-localization_priority: Normal
+title: grouppolicydefinitionclasstype 列挙型
+description: グループポリシー定義のクラスの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afd1e6a8ebead5b0e81fe9d13351061ff20a96b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: df93a8e1687008738b3b2bafb3a11d9c969f3191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164933"
 ---
-# <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 列挙型
+# <a name="grouppolicydefinitionclasstype-enum-type"></a>grouppolicydefinitionclasstype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-グループ ポリシーの定義のクラスの型。
+グループポリシー定義のクラスの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|user|0|[ユーザー構成] ノードは、ポリシー設定の位置を識別します。|
-|マシン|1|ポリシーの設定、コンピューターの構成] ノードの下の位置を識別します。|
-|両方とも|2|ポリシーの設定、コンピューターとユーザーの構成ノードの下の位置を識別します。|
+|user|.0|[ユーザーの構成] ノードの下にあるポリシー設定の配置を指定します。|
+|マシン|1-d|[コンピューターの構成] ノードの下にあるポリシー設定の配置を指定します。|
+|両方とも|pbm-2|コンピューターとユーザーの両方の構成ノードの下にあるポリシー設定の配置を識別します。|
 
 
 

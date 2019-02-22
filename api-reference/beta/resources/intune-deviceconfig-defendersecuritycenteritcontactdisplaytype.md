@@ -1,31 +1,31 @@
 ---
-title: defenderSecurityCenterITContactDisplayType 列挙型
-description: DefenderSecurityCenterITContactDisplay に指定できる値
-localization_priority: Normal
+title: defendersecurityセンター itcontactdisplaytype 列挙型
+description: defendersecurityセンター itcontactdisplay に指定できる値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dccc00207990b021630ee3677e57874d13514b81
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c9a91b83f14226cd3272939deb99139e312b1689
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418401"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170036"
 ---
-# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 列挙型
+# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defendersecurityセンター itcontactdisplaytype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-DefenderSecurityCenterITContactDisplay に指定できる値
+defendersecurityセンター itcontactdisplay に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|構成されていません|
-|displayInAppAndInNotifications|1|アプリケーションと通知を表示します。|
-|displayOnlyInApp|2|アプリケーションでのみ表示します。|
-|displayOnlyInNotifications|3|通知にのみ表示します。|
+|notConfigured|.0|未構成|
+|displayinappandinnotifications|1-d|アプリと通知に表示|
+|displayonlyinapp|pbm-2|アプリにのみ表示する|
+|displayonlyinnotifications|1/3|通知にのみ表示する|
 
 
 

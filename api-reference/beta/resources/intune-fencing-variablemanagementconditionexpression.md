@@ -1,31 +1,31 @@
 ---
 title: variableManagementConditionExpression リソースの種類
-description: 管理条件の状態は、ブール式として評価されます。
-localization_priority: Normal
+description: 管理条件の状態をブール式として評価します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a5e7efd0c8213f40d1dfb5f86d2f86c999069d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab070cc9d2c51fbe1dc4b33c82fb823a849b7cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168230"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理条件の状態は、ブール式として評価されます。
+管理条件の状態をブール式として評価します。
 
 
-[ManagementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します。
+[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|managementConditionId|String|式を評価するために使用される管理条件の id です。|
+|managementconditionid|String|式の評価に使用される管理条件 id。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

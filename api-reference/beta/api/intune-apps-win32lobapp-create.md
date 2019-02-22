@@ -1,21 +1,21 @@
 ---
-title: Win32LobApp を作成します。
+title: win32LobApp を作成する
 description: 新しい win32LobApp オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 089f84f3578c70e3d83b9f7bbfae11e2e72e1eab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 89336782798f92a3626a8a46a0ab49cd8b765da3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168475"
 ---
-# <a name="create-win32lobapp"></a>Win32LobApp を作成します。
+# <a name="create-win32lobapp"></a>win32LobApp を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトを作成します。
 
@@ -41,19 +41,19 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に win32LobApp オブジェクトの JSON の形式を指定します。
+要求本文で、win32LobApp オブジェクトの JSON 表記を指定します。
 
-次の表は、win32LobApp を作成するときに必要なプロパティを示します。
+次の表に、win32LobApp の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -63,31 +63,31 @@ POST /deviceAppManagement/mobileApps
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|installCommandLine|String|このアプリケーションをインストールするのにはコマンド ・ ライン|
-|uninstallCommandLine|String|このアプリケーションをアンインストールするのにはコマンド ・ ライン|
+|installcommandline|String|このアプリをインストールするためのコマンドライン|
+|アン installcommandline|String|このアプリをアンインストールするためのコマンドライン|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
-|minimumFreeDiskSpaceInMB|Int32|このアプリケーションをインストールするために必要な最小空きディスク容量の値。|
-|minimumMemoryInMB|Int32|このアプリケーションをインストールするために必要な物理メモリの最小の値。|
-|minimumNumberOfProcessors|Int32|このアプリケーションをインストールするために必要な最小のプロセッサの数の値。|
-|minimumCpuSpeedInMHz|Int32|このアプリケーションをインストールするために必要な最低限の CPU 速度の値です。|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)コレクション|Win32 基幹業務 (LoB) アプリケーションを検出する検出ルールです。|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|このアプリケーションのインストール経験。|
-|開始|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)コレクション|リターン コードは、インストール時の動作を転記します。|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|この Win32 アプリケーションでは、MSI アプリケーションの場合は、MSI 詳細です。|
-|setupFilePath|String|暗号化された Win32LobApp パッケージのセットアップ ファイルの相対パスです。|
+|minimumfreediskspace inmb|Int32|このアプリをインストールするのに必要な最小空きディスク領域の値。|
+|minimummemoryinmb|Int32|このアプリをインストールするのに必要な最小物理メモリの値。|
+|minimumnumberofprocessors|Int32|このアプリのインストールに必要なプロセッサの最小数の値。|
+|minimumcpuspeedinmhz|Int32|このアプリをインストールするのに必要な最小 CPU 速度の値。|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)コレクション|Win32 基幹業務 (LoB) アプリを検出するための検出ルール。|
+|installexperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|このアプリのインストール手順。|
+|returncodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)コレクション|インストール後の動作のリターンコード。|
+|msiinformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|この Win32 アプリが msi アプリの場合、msi の詳細。|
+|setupfilepath|String|暗号化された Win32LobApp パッケージ内のセットアップファイルの相対パス。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -96,7 +96,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2285
+Content-length: 2364
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -168,7 +168,9 @@ Content-length: 2285
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }
@@ -179,7 +181,7 @@ Content-length: 2285
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2457
+Content-Length: 2536
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -254,7 +256,9 @@ Content-Length: 2457
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }

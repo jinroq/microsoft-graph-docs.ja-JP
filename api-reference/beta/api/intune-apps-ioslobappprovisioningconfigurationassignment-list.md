@@ -1,23 +1,23 @@
 ---
-title: リスト iosLobAppProvisioningConfigurationAssignments
-description: IosLobAppProvisioningConfigurationAssignment オブジェクトのプロパティと関係を一覧表示します。
-localization_priority: Normal
+title: ioslobappプロビジョニング configurationassignments のリスト
+description: ioslobappプロビジョニング configurationassignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c177e97d0d55cd728cb5909acbaedf889078642
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6cf3755a54d3ad7c3a09c2342640a783a4a131ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409532"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170540"
 ---
-# <a name="list-ioslobappprovisioningconfigurationassignments"></a>リスト iosLobAppProvisioningConfigurationAssignments
+# <a name="list-ioslobappprovisioningconfigurationassignments"></a>ioslobappプロビジョニング configurationassignments のリスト
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[IosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのプロパティと関係を一覧表示します。
+[ioslobappプロビジョニング configurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,13 +41,13 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ioslobappprovisioningconfigurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 

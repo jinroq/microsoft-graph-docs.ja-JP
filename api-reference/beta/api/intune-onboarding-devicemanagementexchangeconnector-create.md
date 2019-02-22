@@ -1,21 +1,21 @@
 ---
 title: deviceManagementExchangeConnector の作成
 description: 新しい deviceManagementExchangeConnector オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97c6b8abb02efb4e03f8a4fedcbb41e41fa2655b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b4aee6dbffccf6ed486e11103ec1d211e8c314ec
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393677"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164212"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceManagement/exchangeConnectors
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceManagementExchangeConnector オブジェクトの JSON 表記を指定します。
@@ -50,12 +50,12 @@ POST /deviceManagement/exchangeConnectors
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|id|文字列|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange コネクタの状態です。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。 使用可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
 |primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
-|serverName|String|Exchange サーバーの名前です。|
-|connectorServerName|String|Exchange Connector をホストするサーバーの名前。|
+|serverName|String|Exchange サーバーの名前。|
+|コネクタ servername|String|Exchange Connector をホストするサーバーの名前。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
 |version|String|ExchangeConnectorAgent のバージョン|
 |exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|

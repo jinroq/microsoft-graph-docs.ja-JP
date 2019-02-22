@@ -1,23 +1,23 @@
 ---
-title: RemoteActionAudit を更新します。
-description: RemoteActionAudit オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: remoteactionaudit の更新
+description: remoteactionaudit オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6078b3f6fd5236bd0e6e1a51f5f52cbf69a59c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6105145c9e284c1f522c85f6a1237dcb2320fa28
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396190"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170225"
 ---
-# <a name="update-remoteactionaudit"></a>RemoteActionAudit を更新します。
+# <a name="update-remoteactionaudit"></a>remoteactionaudit の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトのプロパティを更新します。
+[remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,29 +41,29 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトの JSON 表記を指定します。
 
-[RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|レポートの id。|
-|deviceDisplayName|String|Intune デバイスの名前です。|
-|userName|String|\[推奨\]InitiatedByUserPrincipalName を代わりに使用してください。|
-|initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーは、UPN 形式です。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 使用可能な値: `unknown`、 `factoryReset`、 `removeCompanyData`、 `resetPasscode`、 `remoteLock`、 `enableLostMode`、 `disableLostMode`、 `locateDevice`、 `rebootNow`、 `recoverPasscode`、 `cleanWindowsDevice`、 `logoutSharedAppleDeviceActiveUser`、 `quickScan`、 `fullScan`、 `windowsDefenderUpdateSignatures`、 `factoryResetKeepEnrollmentData`、 `updateDeviceAccount`、 `automaticRedeployment`、 `shutDown`.|
-|requestDateTime|DateTimeOffset|UTC で指定されたアクションを発行した時の時間です。|
+|id|String|レポート Id。|
+|deviceDisplayName|String|Intune デバイス名。|
+|userName|文字列型 (String)|\[非\]推奨 initiatedbyuserprincipalname を代わりに使用してください。|
+|initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
+|action|[remoteaction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
+|requestdatetime|DateTimeOffset|アクションが発行された日時 (UTC)。|
 |deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
 |deviceIMEI|String|デバイスの IMEI。|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|動作状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

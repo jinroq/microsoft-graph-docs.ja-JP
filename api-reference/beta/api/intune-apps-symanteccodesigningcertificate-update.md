@@ -1,23 +1,23 @@
 ---
-title: SymantecCodeSigningCertificate を更新します。
-description: SymantecCodeSigningCertificate オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: symantecCodeSigningCertificate の更新
+description: symantecCodeSigningCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5da263a8b4c2bbf121fb994b4d20168c45da9e03
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 26a56296956c3955808a308989a0ca8ded5d4ae5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414026"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168755"
 ---
-# <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate を更新します。
+# <a name="update-symanteccodesigningcertificate"></a>symantecCodeSigningCertificate の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。
+[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,30 +41,30 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトの JSON 表記を指定します。
 
-[SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|content|Binary|生データの形式で Windows のシマンテック社のコード署名証明書。|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態は、準備または準備されていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
-|password|String|.Pfx ファイルに必要なパスワードです。|
-|subjectName|文字列型 (String)|証明書のサブジェクト名。|
-|subject|String|証明書のサブジェクト値。|
-|issuerName|String|証明書の発行者の名前です。|
-|発行者|String|証明書の発行者の値です。|
-|expirationDateTime|DateTimeOffset|証明書の有効期限日です。|
-|uploadDateTime|DateTimeOffset|シマンテック社の証明書とコード署名証明書の種類です。|
+|content|Binary|Windows Symantec コード署名証明書が生データ形式で表示されます。|
+|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
+|password|String|.pfx ファイルに必要なパスワードを指定します。|
+|subjectName|String|証明書のサブジェクト名。|
+|subject|String|証明書のサブジェクトの値。|
+|issuerName|String|証明書の発行者名。|
+|会社|String|証明書の発行者の値。|
+|expirationDateTime|DateTimeOffset|証明書の有効期限。|
+|uploaddatetime|DateTimeOffset|Symantec cert としての CodeSigning cert の種類。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

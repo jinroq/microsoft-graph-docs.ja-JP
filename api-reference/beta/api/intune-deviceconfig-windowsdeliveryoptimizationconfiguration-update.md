@@ -1,23 +1,23 @@
 ---
-title: WindowsDeliveryOptimizationConfiguration を更新します。
-description: WindowsDeliveryOptimizationConfiguration オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: windowsDeliveryOptimizationConfiguration の更新
+description: windowsDeliveryOptimizationConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82e2a225d8492f78d908a3c52987ae24037e5b59
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 844cb46a4696b3eacad842e7b938734e412ce572
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430309"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168531"
 ---
-# <a name="update-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration を更新します。
+# <a name="update-windowsdeliveryoptimizationconfiguration"></a>windowsDeliveryOptimizationConfiguration の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトのプロパティを更新します。
+[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -43,29 +43,48 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|ダウンロード方法を指定しますその配信の最適化を使用して大規模なコンテンツ配信のシナリオで使用するネットワーク帯域幅を管理します。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|大規模なコンテンツ配信シナリオのネットワーク帯域幅の消費を管理するために、配信の最適化で使用できるダウンロード方法を指定します。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
+|restrictPeerSelectionBy|[deliveryOptimizationRestrictPeerSelectionByOptions](../resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)|選択したオプションを使用してピアの選択を制限するように指定します。
+オプション 1 (サブネットマスク) は、配信最適化モードのダウンロードモード LAN (1) とグループ (2) にのみ適用されます。 使用可能な値は、`notConfigured`、`subnetMask` です。|
+|groupidsource|[deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)|ピア選択を固有ソースに制限するように指定します。
+このポリシーで設定されたオプションは、配信最適化モードグループ (2) ダウンロードモードにのみ適用されます。 グループ (2) がダウンロードモードに設定されていない場合、このポリシーは無視されます。 オプション 3-dhcp オプション id の場合、クライアントは dhcp オプション id 234 に対してクエリを実行し、返された GUID 値をグループ ID として使用します。|
+|bandwidthMode|[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)|パーセント、absolutes、または時間を使用して、フォアグラウンドおよびバックグラウンドの帯域幅の使用を指定します。|
+|backgroundDownloadFromHttpDelayInSeconds|Int64|ピアツーピアの使用が許可されているバックグラウンドダウンロードで HTTP ソースを遅延させる秒数を指定します。 有効な値は 0 ~ 4294967295|
+|foregroundDownloadFromHttpDelayInSeconds|Int64|ピアツーピア (0-86400) の使用が許可されているフォアグラウンドダウンロードで HTTP ソースを遅延させる秒数を指定します。 有効な値は 0 ~ 86400
+0を指定すると、クラウドサービスを使用してこの設定を管理するための配信の最適化が設定されます。 有効な値は 0 ~ 86400|
+|minimumRamAllowedToPeerInGigabytes|Int32|ピアキャッシュを使用するための最小 RAM サイズを GB 単位で指定します (1-100000)。 有効な値は 1 ~ 10万|
+|minimumDiskSizeAllowedToPeerInGigabytes|Int32|ピアキャッシュ (1-100000) を使用するための最小ディスクサイズを GB 単位で指定します。 有効な値は 1 ~ 10万
+推奨値:64 gb から 256 GB。 有効な値は 1 ~ 10万|
+|minimumfilesizetocacheinmegabytes バイト|Int32|ピアキャッシュを使用するために有効にするコンテンツファイルの最小サイズを MB 単位で指定します (1-100000)。 有効な値は 1 ~ 10万
+推奨値: 1 mb ~ 10万 MB。 有効な値は 1 ~ 10万|
+|minimumBatteryPercentageAllowedToUpload|Int32|デバイスがデータをアップロードできるように、最小バッテリの割合 (0-100) を指定します。 有効な値は 0 から 100 までです
+既定値は 0 です。 値 0 (ゼロ) は "制限なし" を意味し、クラウドサービスの既定値が使用されます。 有効な値は 0 から 100 までです|
+|modifycachelocation|String|配信の最適化でキャッシュに使用するドライブを指定します。|
+|maximumcacheageindays|Int32|正常にダウンロードされた後に、各ファイルが配信最適化キャッシュに保持される最大時間 (0-49710) を指定します。 有効な値は 0 ~ 49710|
+|maximumcachesize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|配信最適化の最大キャッシュサイズをパーセンテージまたは GB で指定します。|
+|vpnpeercaching キャッシュ|[購入](../resources/intune-shared-enablement.md)|ドメインネットワークに VPN 経由で接続している間、デバイスがピアキャッシュへの参加を許可するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -74,7 +93,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 313
+Content-length: 1060
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -85,7 +104,26 @@ Content-length: 313
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 
@@ -94,7 +132,7 @@ Content-length: 313
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 1232
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -108,7 +146,26 @@ Content-Length: 485
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 

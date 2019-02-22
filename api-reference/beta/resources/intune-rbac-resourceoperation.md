@@ -1,21 +1,21 @@
 ---
 title: resourceOperation リソース タイプ
-description: Intune は、役割ベースのアクセス制御 (RBAC) をサポートしている Microsoft グラフ API の resourceOperation リソースについて説明します。
-localization_priority: Normal
+description: テナント組織の役割ベースのアクセス制御 (RBAC) シナリオをサポートする Intune (REST) 用 Microsoft Graph API の resourceoperation リソース (エンティティ) について説明します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 897c076139f3a385152738dd5f4b15c06320990d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a299247815993a6ac1e99fe11ecead7ab66e2f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165003"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune リソース (またはエンティティ) で実行できる操作またはアクションを定義します。  一般的な操作は Read、Delete、Update、Create です。  これらの操作は、基となる Intune リソース自体の基本的な管理を提供します。  場合によっては、リソースにより使われる Intune リソースの操作が、他のリソースとの組み合わせでアクションを実行する場合もあります。  たとえば、Assign 操作は MobileApp リソースを AAD セキュリティ グループに割り当てるために使用されます。  組み込みのロールについては、リソース操作を変更できません。これは、Intune リソース (またはエンティティ) に実行できる操作またはアクションを定義します。  一般的な操作は Get、List、Delete、Update、Create です。  これらの操作は、基となる Intune リソース自体の基本的な管理を提供します。  場合によっては、リソースにより使われる Intune リソースの操作が、他のリソースとの組み合わせでアクションを実行する場合もあります。  たとえば、「Assign」操作は MobileApp リソースを AAD セキュリティ グループに割り当てるために使用されます。  組み込みのロールについては、リソース操作を変更できません。
 
@@ -32,12 +32,12 @@ Intune リソース (またはエンティティ) で実行できる操作また
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|リソース|String|この操作が所属しているリソースのカテゴリです。|
+|id|文字列|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|リソース|String|この操作が属するリソースカテゴリ。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
-|enabledForScopeValidation|Boolean|ロールの割り当てごとに定義されたスコープのアクセス許可を検証するかどうかを決定します。|
+|enabledforscopevalidation|ブール値|権限が役割の割り当てごとに定義されたスコープに対して検証されているかどうかを判断します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

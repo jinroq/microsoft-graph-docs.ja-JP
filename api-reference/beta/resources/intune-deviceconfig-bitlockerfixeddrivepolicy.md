@@ -1,30 +1,30 @@
 ---
-title: bitLockerFixedDrivePolicy リソースの種類
-description: BitLocker は、ドライブのポリシーを修正します。
-localization_priority: Normal
+title: bitlockerfixeddrive policy リソースの種類
+description: BitLocker 固定ドライブポリシー。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f233e4c1779a860cc40dc97007aa0216795928f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e09130a2426f6a7196d472a29f7667b9c044d313
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424666"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164296"
 ---
-# <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy リソースの種類
+# <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitlockerfixeddrive policy リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-BitLocker は、ドライブのポリシーを修正します。
+BitLocker 固定ドライブポリシー。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|固定のドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
-|requireEncryptionForWriteAccess|Boolean|このポリシー設定は、BitLocker の保護が固定データ ドライブをコンピューターに書き込み可能にするために必要かどうかを判断します。|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|このポリシー設定では、BitLocker で保護された方法固定データ ドライブは、必要な資格情報がない場合にリカバリを制御できます。 BitLocker を有効にするときは、このポリシー設定が適用されます。|
+|encryptionMethod|[bitlockerencryptionmethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|固定ドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
+|requireEncryptionForWriteAccess|Boolean|このポリシー設定は、固定データドライブをコンピューター上で書き込み可能にするために BitLocker 保護が必要かどうかを決定します。|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|このポリシー設定を使用すると、必要な資格情報が存在しない場合に BitLocker で保護された固定データドライブを回復する方法を制御できます。 このポリシー設定は、BitLocker を有効にしたときに適用されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,30 +1,30 @@
 ---
 title: windowsHelloForBusinessPinUsage 列挙型
-description: Windows Hello ビジネス暗証番号 (pin) の使用方法のオプションについて
-localization_priority: Normal
+description: Windows Hello for Business pin の使用オプションオプション
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42e3ea7d0fcd91075c3b9b689210610c225ff478
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a2a066728d28e12f8be9bd09a63005c88e391043
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169434"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Windows Hello ビジネス暗証番号 (pin) の使用方法のオプションについて
+Windows Hello for Business pin の使用オプションオプション
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|許可|0|まだ文書化されていません|
-|必須|1|まだ文書化されていません|
-|許可されていません|2|まだ文書化されていません|
+|れる|.0|まだ文書化されていません|
+|必須|1-d|まだ文書化されていません|
+|許可され|pbm-2|まだ文書化されていません|
 
 
 

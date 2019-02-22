@@ -1,32 +1,32 @@
 ---
 title: windowsKioskAzureADUser リソースの種類
-description: キオスクの構成の AzureAD ユーザー アカウントの識別に使用するクラス
-localization_priority: Normal
+description: キオスク構成の AzureAD ユーザーアカウントを識別するために使用されるクラス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08c5b53e8e208abac2801146ff70df6023eaedff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: feda393a6bee1b3cfc55d16cc91d321a5b99d54d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168251"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-キオスクの構成の AzureAD ユーザー アカウントの識別に使用するクラス
+キオスク構成の AzureAD ユーザーアカウントを識別するために使用されるクラス
 
 
-[WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
+[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|userId|String|この構成にキオスクがロックアウトされている AzureAD のユーザーの ID|
-|userPrincipalName|String|この構成にキオスクがロックアウトされているユーザー アカウント|
+|userId|String|このキオスク構成にロックされる AzureAD ユーザーの ID|
+|userPrincipalName|String|このキオスク構成にロックされるユーザーアカウント|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

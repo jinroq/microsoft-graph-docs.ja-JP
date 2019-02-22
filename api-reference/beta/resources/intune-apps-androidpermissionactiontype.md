@@ -1,30 +1,30 @@
 ---
-title: androidPermissionActionType 列挙型
-description: Android ときの動作、アプリケーションが危険なアクセス許可を要求します。
-localization_priority: Normal
+title: androidpermissionactiontype 列挙型
+description: アプリが危険なアクセス許可を要求したときに実行される Android アクション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d22b24248325d38754be1263f2a7d8344e45e5ae
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32e275ffc6fd3f6fd5faf4d44e594d19e599310a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413935"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168594"
 ---
-# <a name="androidpermissionactiontype-enum-type"></a>androidPermissionActionType 列挙型
+# <a name="androidpermissionactiontype-enum-type"></a>androidpermissionactiontype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android ときの動作、アプリケーションが危険なアクセス許可を要求します。
+アプリが危険なアクセス許可を要求したときに実行される Android アクション。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|Prompt|0|まだ文書化されていません|
-|autoGrant|1|まだ文書化されていません|
-|autoDeny|2|まだ文書化されていません|
+|Prompt|.0|まだ文書化されていません|
+|autogrant|1-d|まだ文書化されていません|
+|autodeny|pbm-2|まだ文書化されていません|
 
 
 

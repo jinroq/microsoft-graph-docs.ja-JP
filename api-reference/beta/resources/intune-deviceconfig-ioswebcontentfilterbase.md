@@ -1,23 +1,23 @@
 ---
 title: iosWebContentFilterBase リソースの種類
-description: IOS の Web コンテンツ フィルター設定の基本型を表します。 空と抽象ベースでは。 呼び出し元は、構成の派生型のいずれかを使用する必要があります。
-localization_priority: Normal
+description: iOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70d3619ead1e9a8748153a094960580773318a1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 440d85a8d3f07e61eb7936f31b01138ca6a74d53
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409091"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167628"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-IOS の Web コンテンツ フィルター設定の基本型を表します。 空と抽象ベースでは。 呼び出し元は、構成の派生型のいずれかを使用する必要があります。
+iOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

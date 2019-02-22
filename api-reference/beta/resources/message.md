@@ -4,12 +4,12 @@ description: メールボックス フォルダー内のメッセージです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 487427e13d06bc703728986505de789aab65963f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166795"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 

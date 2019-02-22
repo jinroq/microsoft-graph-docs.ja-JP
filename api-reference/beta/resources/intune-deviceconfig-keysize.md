@@ -1,29 +1,29 @@
 ---
-title: キーサイズ列挙型
-description: キーのサイズのオプションです。
-localization_priority: Normal
+title: keySize 列挙型
+description: キーサイズのオプション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdfc2418c3de1c798b0bc8756aed67bde285547a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e558cb0b11ca1c4afc555dbb3dff2e41264b2cf1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167747"
 ---
-# <a name="keysize-enum-type"></a>キーサイズ列挙型
+# <a name="keysize-enum-type"></a>keySize 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-キーのサイズのオプションです。
+キーサイズのオプション。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|size1024|0|1024 ビットです。|
-|size2048|1|2048 ビットです。|
+|size1024|.0|1024ビット|
+|size2048|1-d|2048ビット|
 
 
 

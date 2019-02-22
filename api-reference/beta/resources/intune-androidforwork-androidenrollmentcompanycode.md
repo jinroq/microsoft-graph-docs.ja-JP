@@ -1,30 +1,30 @@
 ---
 title: androidEnrollmentCompanyCode リソースの種類
-description: トークン、Url、QR コードとコンテンツなど、Google の Android の管理 API を使用して登録するのに使用される専門分野の登録データを保持するクラス
-localization_priority: Normal
+description: トークン、Url、QR コードコンテンツなど、Google の Android 管理 API 経由の登録に使用される、専門分野の登録データを保持するクラス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be5b2a94445e95fe18271467b6661320d8204d76
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a0cd3ede4193ea3fdb33d33010349812150848e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430285"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169343"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-トークン、Url、QR コードとコンテンツなど、Google の Android の管理 API を使用して登録するのに使用される専門分野の登録データを保持するクラス
+トークン、Url、QR コードコンテンツなど、Google の Android 管理 API 経由の登録に使用される、専門分野の登録データを保持するクラス
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enrollmentToken|String|登録トークンがそのデバイスを登録するユーザーが使用します。|
+|enrollmentToken|String|ユーザーがデバイスを登録するために使用する登録トークン。|
 |qrCodeContent|String|トークン用の QR コードを生成するために使用された文字列。|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの生成された QR コードです。|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの生成された QR コード。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

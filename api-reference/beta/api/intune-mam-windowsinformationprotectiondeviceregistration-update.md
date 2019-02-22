@@ -1,23 +1,23 @@
 ---
-title: WindowsInformationProtectionDeviceRegistration を更新します。
-description: WindowsInformationProtectionDeviceRegistration オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: windowsInformationProtectionDeviceRegistration の更新
+description: windowsInformationProtectionDeviceRegistration オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c84f81dd8d9df54c6f05b1435ee4644a1a75342
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc11fe9ce1bf16c53259e352087be4e1a9849c5a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430396"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167845"
 ---
-# <a name="update-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration を更新します。
+# <a name="update-windowsinformationprotectiondeviceregistration"></a>windowsInformationProtectionDeviceRegistration の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。
+[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,27 +41,27 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトの JSON 表記を指定します。
 
-[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userId|String|このデバイスの登録レコードに関連付けられているユーザーの Id。|
-|deviceRegistrationId|String|このデバイスの登録レコードのデバイスの識別子です。|
+|userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
+|deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
-|deviceType|String|デバイスの種類、たとえば、Windows のラップトップ コンピューターと Windows phone です。|
-|deviceMacAddress|String|デバイスの Mac アドレスです。|
-|lastCheckInDateTime|DateTimeOffset|デバイスの最後のチェックインの時間です。|
+|deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
+|deviceMacAddress|String|デバイスの Mac アドレス。|
+|lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

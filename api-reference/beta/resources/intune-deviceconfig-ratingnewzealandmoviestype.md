@@ -1,38 +1,38 @@
 ---
 title: ratingNewZealandMoviesType 列挙型
-description: 映画がニュージーランドでのラベルの評価
-localization_priority: Normal
+description: ニュージーランドでの映画の定格ラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b60bb2d443763115bb547c254ab086b171033658
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd20f1e8c675efba2919d8e192c4955b39484849
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402945"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169182"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画がニュージーランドでのラベルの評価
+ニュージーランドでの映画の定格ラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|一般的な対象ユーザーに適した|
-|parentalGuidance|3|PG クラス分けは、保護者による制限を推奨します。|
-|成熟|4|M のクラス分けが 18 歳以上向けに適しています。|
-|agesAbove13|5|R13 のクラス分けは 13 年間の担当者と制限されました。|
-|agesAbove15|6|R15 の各分類は、15 年以上の担当者と制限|
-|agesAbove16|7|R16 クラス分けは 16 年間の担当者と制限されました。|
-|agesAbove18|8|R18 の分類は 18 年間の担当者と制限されました。|
-|制限|9|R 分類が特定の対象ユーザーに限定されます。|
-|agesAbove16Restricted|10|RP16 分類には、視聴者と共に、親または成人向けコンテンツを 16 が必要です。|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|一般的な対象ユーザーに適している|
+|parentalguidance|1/3|PG の分類では、保護者による指導を推奨|
+|度|2/4|M 分類は、成熟した対象ユーザーに適しています。|
+|agesAbove13|5|R13 の分類は、13才以上に制限されます。|
+|agesAbove15|シックス|R15 の分類は、15年以上に制限されています。|
+|agesAbove16|7|R16 の分類は、16年以上に制限されています。|
+|agesAbove18|~|R18 の分類は、18年以上に制限されています。|
+|しか|i-9|R 分類は特定の対象ユーザーに制限されています。|
+|agesAbove16Restricted|個|RP16 分類には、16以下の閲覧者が親または成人と共に必要|
 
 
 

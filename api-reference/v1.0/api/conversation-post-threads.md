@@ -4,12 +4,12 @@ description: '指定した会話に新しいスレッドを作成します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2a1e5335a68377a876a9de124c8b3418a28df105
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6887b27a32f561d005b2c86eeb71eaeda9abb8a7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990881"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169084"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 
@@ -26,7 +26,7 @@ ms.locfileid: "27990881"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ ms.locfileid: "27990881"
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

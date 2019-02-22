@@ -1,21 +1,21 @@
 ---
 title: intuneBrand リソース タイプ
 description: intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4e1e4a4a4042b9a4dd9382f1310d737ac1c9678
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167383"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。
 
@@ -31,11 +31,11 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色が明るいポータル サイト アプリに表示されるロゴ画像。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色が暗いポータル サイト アプリに表示されるロゴ画像。|
 |showNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Compnay ポータル アプリケーションのランディング ・ ページに表示されるイメージをカスタマイズしました。|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|[compnay ポータルアプリのランディングページに表示されるカスタマイズされた画像]|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 
 ## <a name="relationships"></a>リレーションシップ

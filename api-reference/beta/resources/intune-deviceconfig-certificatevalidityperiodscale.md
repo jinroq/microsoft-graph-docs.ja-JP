@@ -1,30 +1,30 @@
 ---
 title: certificateValidityPeriodScale 列挙型
-description: 証明書の有効性の期間のオプションです。
-localization_priority: Normal
+description: 証明書の有効期間のオプション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b6e090743ec8096254adbded3be8cd3279b5cdc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c573605a0aa91955b52ea65e62af1ff326545374
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402896"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170064"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-証明書の有効性の期間のオプションです。
+証明書の有効期間のオプション。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|日|0|日数|
-|月|1|月数|
-|年|2|年数|
+|分|.0|日数|
+|ヶ|1-d|月数|
+|今後|pbm-2|年数|
 
 
 

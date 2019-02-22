@@ -1,21 +1,21 @@
 ---
 title: settingStateDeviceSummary の作成
 description: 新しい settingStateDeviceSummary オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5393bc76fe9d4a6b546ff182191993e43d1a3d63
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3af103ab586a636269e17b0f59cb1df7aad20bad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398850"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164884"
 ---
 # <a name="create-settingstatedevicesummary"></a>settingStateDeviceSummary の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) オブジェクトを作成します。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、settingStateDeviceSummary オブジェクトの JSON 表記を指定します。
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|settingName|String|設定の名前|
+|settingName|文字列型 (String)|設定の名前|
 |instancePath|String|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|
 |notApplicableDeviceCount|Int32|設定の該当しないデバイスの数|

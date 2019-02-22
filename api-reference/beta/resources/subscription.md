@@ -1,26 +1,27 @@
 ---
-title: Subscription リソースタイプ
-description: サブスクリプションは、Microsoft Graph でデータへの変更に関する通知を受信するクライアント アプリケーションを許可します。 現時点では、サブスクリプションが有効になって次のリソース。
+title: subscription リソースの種類
+description: サブスクリプションを使用すると、クライアントアプリは Microsoft Graph のデータに対する変更に関する通知を受け取ることができます。 現時点では、以下のリソースのサブスクリプションが有効になっています。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 265ea807330f833edf0d7b1f6a640e0a1f6f4634
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9de48cc6a3e5dde459673117d9ee00a34477faf6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163939"
 ---
-# <a name="subscription-resource-type"></a>Subscription リソースタイプ
+# <a name="subscription-resource-type"></a>subscription リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サブスクリプションは、Microsoft Graph でデータへの変更に関する通知を受信するクライアント アプリケーションを許可します。 現時点では、サブスクリプションが有効になって次のリソース。
+サブスクリプションを使用すると、クライアントアプリは Microsoft Graph のデータに対する変更に関する通知を受け取ることができます。 現時点では、以下のリソースのサブスクリプションが有効になっています。
 
-- Outlook からのメール、イベント、および連絡先
-- Office グループからの会話。
-- OneDrive からドライブ ルート項目
-- ユーザーと Azure Active Directory のグループ。
-- Graph セキュリティ API から通知されます。
+- Outlook の[メッセージ][]、[イベント][]、または[連絡先][]
+- Office 365 グループの[会話][]
+- onedrive for business のルートフォルダーのファイル[][]の階層内のコンテンツ、またはユーザーの個人用 OneDrive のルートフォルダーまたはサブフォルダの[ドライブ項目][]。
+- Azure Active Directory の[ユーザー][]または[グループ][]
+- Microsoft Graph セキュリティ API からの[警告][]
+
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -51,27 +52,27 @@ ms.locfileid: "29517268"
 
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
-| changeType | string | 必須。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。 <br><br>メモ: ドライブのルート アイテムの通知だけをサポートして、 `updated` changeType です。 ユーザーとグループの通知をサポートして`updated`と`deleted`changeType です。 |
-| notificationUrl | string | 必須。 通知を受信するエンドポイントの URL。 この URL が、HTTPS を使用する必要がありますプロトコルです。 |
-| リソース | 文字列 | 必須。 変更の監視対象となるリソースを指定します。 ベース URL が含まれていない (`https://graph.microsoft.com/beta/`)。 |
+| changeType | string | 必須。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。 <br><br>注: ドライブのルートアイテムの通知で`updated`は、changeType のみがサポートされます。 ユーザーおよびグループの通知`updated`の`deleted`サポートと changeType。 |
+| notificationUrl | string | 必須。 通知を受信するエンドポイントの URL。 この URL には、HTTPS プロトコルを使用する必要があります。 |
+| リソース | 文字列 | 必須。 変更の監視対象となるリソースを指定します。 ベース URL (`https://graph.microsoft.com/beta/`) は含めないでください。 |
 | expirationDateTime | DateTimeOffset | 必須です。 webhook サブスクリプションの有効期限が切れる日時を指定します。 時刻は UTC 表示で、登録したリソースごとに異なるサブスクリプション作成からの経過時間にもできます。  サポートされているサブスクリプションの最長時間については、次の表をご覧ください。 |
 | clientState | string | 省略可能。 各通知内のサービスによって送信される `clientState` プロパティの値を指定します。 最大の長さは、255 文字です。 クライアントは、サブスクリプションと共に送信された `clientState` プロパティの値と、各通知と共に受信された `clientState` プロパティの値を比較することで、その通知がサービスから来たことを確認できます。 |
 | id | string | サブスクリプションの一意の識別子です。読み取り専用です。 |
-| applicationId | string | サブスクリプションを作成するために使用するアプリケーションの識別子です。 読み取り専用です。 |
-| creatorId | string | ユーザーまたはサブスクリプションを作成するサービス ・ プリンシパルの識別子です。 使用するアプリケーションがサブスクリプションを作成するアクセス許可を委任する場合、このフィールドは、サインイン中のユーザーの代理で、アプリケーションが呼び出されるの id を含みます。 アプリケーションは、アプリケーションのアクセス許可を使用する場合、このフィールドには、アプリケーションに対応するサービス ・ プリンシパルの id が含まれています。 読み取り専用です。 |
+| applicationId | string | サブスクリプションの作成に使用されたアプリケーションの識別子。 読み取り専用です。 |
+| creatorId | string | サブスクリプションを作成したユーザーまたはサービスプリンシパルの識別子。 アプリがサブスクリプションを作成するために委任されたアクセス許可を使用している場合、このフィールドには、アプリが代理で呼び出した、サインインしているユーザーの id が含まれています。 アプリがアプリケーションのアクセス許可を使用している場合、このフィールドには、アプリに対応するサービスプリンシパルの id が含まれます。 読み取り専用です。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>リソースの種類別のサブスクリプションの最大の長さ
 
 | リソース            | 最大有効期限  |
 |:--------------------|:-------------------------|
-| メール                | 4230 分 (3 日間で)    |
-| カレンダー            | 4230 分 (3 日間で)    |
-| 連絡先            | 4230 分 (3 日間で)    |
-| グループ会話 | 4230 分 (3 日間で)    |
-| ドライブ ルート項目    | 4230 分 (3 日間で)    |
-| セキュリティの警告     | 43200 分 (30 日間で)  |
+| メール                | 4230分 (3 日以内)    |
+| カレンダー            | 4230分 (3 日以内)    |
+| 連絡先            | 4230分 (3 日以内)    |
+| グループ会話 | 4230分 (3 日以内)    |
+| ドライブ ルート項目    | 4230分 (3 日以内)    |
+| セキュリティの警告     | 43200分 (30 日以内)  |
 
-> **注:** 既存のアプリケーションと新しいアプリケーションは、サポートされている値を超える必要があります。 将来、作成するか、最大値を超えるサブスクリプションを更新するすべての要求は失敗します。
+> **注:** 既存のアプリケーションと新しいアプリケーションは、サポートされている値を超えないようにする必要があります。 その後、最大値を超えるサブスクリプションを作成または更新する要求は失敗します。
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -82,10 +83,19 @@ ms.locfileid: "29517268"
 | メソッド | 戻り値の型 | 説明 |
 |:-------|:------------|:------------|
 | [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Microsoft Graph のデータが変更されたときに通知を受信するリスナー アプリケーションに登録します。 |
-| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | 有効期限を更新することにより、サブスクリプションを更新します。 |
-| [リストの購読](../api/subscription-list.md) | [subscription](subscription.md) | アクティブなサブスクリプションの一覧を表示します。 |
-| [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Subscription オブジェクトのプロパティと関係を参照してください。 |
-| [サブスクリプションの削除](../api/subscription-delete.md) | なし | サブスクリプション オブジェクトを削除します。 |
+| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | 有効期限を更新して、サブスクリプションを更新します。 |
+| [サブスクリプションの一覧表示](../api/subscription-list.md) | [subscription](subscription.md) | アクティブなサブスクリプションを一覧表示します。 |
+| [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | subscription オブジェクトのプロパティとリレーションシップを読み取ります。 |
+| [サブスクリプションの削除](../api/subscription-delete.md) | なし | サブスクリプションオブジェクトを削除します。 |
+
+[連絡先]: ./contact.md
+[会話]: ./conversation.md
+[driveItem]: ./driveitem.md
+[event]: ./event.md
+[group]: ./group.md
+[message]: ./message.md
+[user]: ./user.md
+[通知]: ./alert.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

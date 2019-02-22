@@ -1,50 +1,50 @@
 ---
-title: groupPolicyPresentationMultiTextBox リソースの種類
-description: ADMX multiTextBox 要素と ADMX の multiText 要素を表します。
-localization_priority: Normal
+title: grouppolicypresentationmultitextbox リソースの種類
+description: admx multitextbox 要素と admx multitextbox 要素を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85253b6a1af70e75dcba3849fc06dc50935de306
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 70656a4922227371c1f4aa795b851acd4a8f5de9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430364"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163848"
 ---
-# <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox リソースの種類
+# <a name="grouppolicypresentationmultitextbox-resource-type"></a>grouppolicypresentationmultitextbox リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ADMX multiTextBox 要素と ADMX の multiText 要素を表します。
+admx multitextbox 要素と admx multitextbox 要素を表します。
 
 
-[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
+[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト groupPolicyPresentationMultiTextBoxes](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)コレクション|[GroupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[GroupPolicyPresentationMultiTextBox を取得します。](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|[GroupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyPresentationMultiTextBox を作成します。](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-create.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|新しい[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトを作成します。|
-|[GroupPolicyPresentationMultiTextBox を削除します。](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-delete.md)|なし|の[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)を削除します。|
-|[GroupPolicyPresentationMultiTextBox を更新します。](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|[GroupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティを更新します。|
+|[grouppolicypresentationmultitextboxes ボックスのリスト](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)コレクション|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[grouppolicypresentationmultitextbox の取得](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicypresentationmultitextbox の作成](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-create.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|新しい[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトを作成します。|
+|[grouppolicypresentationmultitextbox の削除](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-delete.md)|なし|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)を削除します。|
+|[grouppolicypresentationmultitextbox の更新](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|[grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|プレゼンテーションの任意のエンティティのローカライズされたテキスト ラベルです。 既定値は空です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|必須|Boolean|テキスト ボックスに値を入力するための要件。 既定値は false です。|
-|maxLength|Int64|テキスト文字の最大数を指定する符号なし整数。 1023 を既定値には。|
-|maxStrings|Int64|文字列の最大数を指定する符号なし整数。 既定値は 0 です。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|必須|ブール値|テキストボックスに値を入力する必要があります。 既定値は false です。|
+|maxLength|Int64|テキストの最大文字数を指定する符号なし整数。 既定値は1023です。|
+|maxstrings|Int64|文字列の最大数を指定する符号なし整数。 既定値は0です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられているグループ ポリシーの定義です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
+|definition|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -1,29 +1,29 @@
 ---
 title: numberRange リソースの種類
-description: 番号範囲の定義です。
-localization_priority: Normal
+description: 番号範囲の定義。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27393bdac6519078c2021e3484ae58ddf43216d9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 711206a256e17d6e10c7c54cf8a3dda4868db031
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166788"
 ---
 # <a name="numberrange-resource-type"></a>numberRange リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-番号範囲の定義です。
+番号範囲の定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|lowerNumber|Int32|下の数です。|
-|upperNumber|Int32|上の数です。|
+|小数|Int32|数値 (小)|
+|upperNumber|Int32|上番号|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

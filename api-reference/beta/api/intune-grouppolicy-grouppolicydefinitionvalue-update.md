@@ -1,23 +1,23 @@
 ---
-title: GroupPolicyDefinitionValue を更新します。
-description: GroupPolicyDefinitionValue オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: grouppolicydefinitionvalue の更新
+description: grouppolicydefinitionvalue オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d346a40e5ee8c2cba6f1510cf52d747e85a0b788
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 808136183ebbeb1a6691ab8ccf22b527950bf91d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169707"
 ---
-# <a name="update-grouppolicydefinitionvalue"></a>GroupPolicyDefinitionValue を更新します。
+# <a name="update-grouppolicydefinitionvalue"></a>grouppolicydefinitionvalue の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティを更新します。
+[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,25 +42,25 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトの JSON 表記を指定します。
 
-[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|日付と時刻オブジェクトを作成します。|
-|enabled|Boolean|有効または、関連付けられているグループ ポリシーの定義を無効にします。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値を構成する方法を指定します。 ポリシーとして、または環境設定のいずれかを指定できます。 使用可能な値は、`policy`、`preference` です。|
+|createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
+|enabled|Boolean|関連付けられたグループポリシー定義を有効または無効にします。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値の構成方法を指定します。 これは、ポリシーとして、または設定することができます。 使用可能な値は、`policy`、`preference` です。|
 |id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

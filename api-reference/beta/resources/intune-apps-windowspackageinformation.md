@@ -1,33 +1,33 @@
 ---
-title: windowsPackageInformation リソースの種類
-description: パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
-localization_priority: Normal
+title: windowspackageinformation リソースの種類
+description: Windows 基幹業務アプリのパッケージ情報のプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 112d84c5bae889e24b889b4598d61a6b3d63db50
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ba69fe277809b3ce4d6f81a198fc305204984d73
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166452"
 ---
-# <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation リソースの種類
+# <a name="windowspackageinformation-resource-type"></a>windowspackageinformation リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
+Windows 基幹業務アプリのパッケージ情報のプロパティが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Windows のアーキテクチャでこのアプリケーションが実行できます。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|displayName|String|表示名。|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
+|displayName|文字列|表示名を指定します。|
 |identityName|String|ID 名。|
-|identityPublisher|String|識別情報の発行元です。|
+|識別子の入力|String|id 発行者。|
 |identityResourceIdentifier|String|ID のリソースの識別子。|
-|identityVersion|String|アイデンティティのバージョンです。|
+|identityVersion|String|id のバージョン。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
 
 ## <a name="relationships"></a>リレーションシップ

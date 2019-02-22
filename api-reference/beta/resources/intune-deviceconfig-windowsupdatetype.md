@@ -1,33 +1,33 @@
 ---
 title: windowsUpdateType 列挙型
-description: 分岐デバイスから更新を受け取ります。
-localization_priority: Normal
+description: 更新プログラムを受信するブランチデバイス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d3dd0f6d8ba46d7f1cc803b217a98a862602149
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17aad82b25982b90ecea348d959e2ed2ec94a483
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169161"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-分岐デバイスから更新を受け取ります。
+更新プログラムを受信するブランチデバイス
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|設定するユーザーを許可します。|
-|all|1|半年のチャネル (対象となる)。 デバイスでは、半年のチャネル (対象) からすべての適用可能な機能の更新を取得します。|
-|businessReadyOnly|2|半年チャンネルです。 デバイスは、半年のチャネルからの機能の更新を取得します。|
-|windowsInsiderBuildFast|3|Windows の内部からのビルド - 高速|
-|windowsInsiderBuildSlow|4|Windows 内部からビルド時間がかかる|
-|windowsInsiderBuildRelease|5|リリース ビルドの Windows の内部から|
+|自分のもの|.0|ユーザーがを設定できるようにします。|
+|all|1-d|半期チャネル (対象指定)。 デバイスは、半期チャネル (対象指定) から、適用可能なすべての機能の更新を取得します。|
+|businessReadyOnly|pbm-2|半期チャネル デバイスは、半期チャネルから機能の更新を取得します。|
+|windowsinsiderbuildfast|1/3|Windows Insider ビルド-Fast|
+|windowsInsiderBuildSlow|2/4|Windows Insider ビルド-低速|
+|windowsinsiderbuildrelease|5|Windows Insider ビルドをリリースする|
 
 
 

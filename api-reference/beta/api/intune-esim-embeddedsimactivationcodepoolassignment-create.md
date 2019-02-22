@@ -1,21 +1,21 @@
 ---
-title: EmbeddedSIMActivationCodePoolAssignment を作成します。
+title: embeddedSIMActivationCodePoolAssignment を作成する
 description: 新しい embeddedSIMActivationCodePoolAssignment オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d42ab3e6444a98019e4e54fdd3e5f6719dfa66e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 02b4c39b4ca999780a620510c38fc80036e02ee1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409126"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169623"
 ---
-# <a name="create-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment を作成します。
+# <a name="create-embeddedsimactivationcodepoolassignment"></a>embeddedSIMActivationCodePoolAssignment を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)オブジェクトを作成します。
 
@@ -41,22 +41,22 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に embeddedSIMActivationCodePoolAssignment オブジェクトの JSON の形式を指定します。
+要求本文で、embeddedSIMActivationCodePoolAssignment オブジェクトの JSON 表記を指定します。
 
-次の表は、embeddedSIMActivationCodePoolAssignment を作成するときに必要なプロパティを示します。
+次の表に、embeddedSIMActivationCodePoolAssignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|埋め込み SIM アクティベーション コードのプール割り当ての一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|SIM のアクティブ化コードの埋め込み、プールの対象となるグループの種類。|
+|id|String|埋め込まれている SIM ライセンス認証コードプールの割り当ての一意の識別子。 作成時に割り当てられたシステム生成値。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|埋め込まれた SIM アクティブ化コードプールの対象となるグループの種類。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

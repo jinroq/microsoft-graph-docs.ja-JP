@@ -1,32 +1,32 @@
 ---
-title: unaryManagementConditionExpression リソースの種類
-description: 単項演算を使用して評価される管理条件式です。
-localization_priority: Normal
+title: 非 arymanagementconditionexpression リソースの種類
+description: 単項演算を使用して評価される管理条件式。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1224a869ec2ec9cae2f38273f7a68b64d3d7333
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164219"
 ---
-# <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression リソースの種類
+# <a name="unarymanagementconditionexpression-resource-type"></a>非 arymanagementconditionexpression リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-単項演算を使用して評価される管理条件式です。
+単項演算を使用して評価される管理条件式。
 
 
-[ManagementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します。
+[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|単項演算の評価に使用する演算子です。 使用可能な値: `not`。|
-|オペランド|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|単項演算のオペランドです。|
+|operator|[非 arymanagementconditionexpression 演算子の種類](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|単項演算の評価に使用する演算子。 可能な値は`not`次のとおりです。|
+|左辺|[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|単項演算のオペランド。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

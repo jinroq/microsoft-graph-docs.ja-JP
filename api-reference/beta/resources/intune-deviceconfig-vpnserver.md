@@ -1,30 +1,30 @@
 ---
-title: vpnServer のリソースの種類
-description: VPN サーバーの定義です。
-localization_priority: Normal
+title: vpnServer リソースの種類
+description: VPN サーバーの定義。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0febdae5745f1295e9c690213d4a51b79d7d3bdb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406809"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170463"
 ---
-# <a name="vpnserver-resource-type"></a>vpnServer のリソースの種類
+# <a name="vpnserver-resource-type"></a>vpnServer リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN サーバーの定義です。
+VPN サーバーの定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |説明|String|説明。|
-|address|String|アドレス (IP アドレス、FQDN、または URL)|
-|isDefaultServer|Boolean|既定のサーバーです。|
+|address|String|Address (IP アドレス、FQDN または URL)|
+|isdefaultserver|ブール値|既定のサーバー。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

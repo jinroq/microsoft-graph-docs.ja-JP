@@ -1,30 +1,30 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardType 列挙型
-description: キラーの資格情報の設定で使用できる値です。
-localization_priority: Normal
+description: Credential Guard 設定の可能な値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d8643744e1f5c36cf6c620ac85a6a99c9a77548
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8452f24f0bc5641d9d7ebcfd68c8cd593443554d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398094"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167859"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-キラーの資格情報の設定で使用できる値です。
+Credential Guard 設定の可能な値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|UEFI ロックせずに以前設定されている場合リモート資格情報の保護をオフにします。|
-|enableWithUEFILock|1|UEFI ロックで資格情報の保護をオンにします。|
-|enableWithoutUEFILock|2|UEFI ロックせず資格情報の保護をオンにします。|
+|notConfigured|.0|以前に UEFI ロックを設定していない場合に、Credential Guard をリモートで無効にします。|
+|enableWithUEFILock|1-d|UEFI ロックを使用して Credential Guard を有効にします。|
+|enableWithoutUEFILock|pbm-2|UEFI ロックなしで Credential Guard を有効にします。|
 
 
 

@@ -1,34 +1,34 @@
 ---
 title: macOSMinimumOperatingSystem リソースの種類
-description: MacOS アプリケーションに必要な最低限のオペレーティング システムです。
-localization_priority: Normal
+description: MacOS アプリに必要な最小限のオペレーティングシステム。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1b5bb3c31f876cb7444ff90cad5060c08d2f60b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f6975690361c981d6b5aaf1d9dae959ad6f8be5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169938"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MacOS アプリケーションに必要な最低限のオペレーティング システムです。
+MacOS アプリに必要な最小限のオペレーティングシステム。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v10_7|Boolean|Mac OS 10.7 以降です。|
-|v10_8|Boolean|Mac OS 10.8 以降です。|
-|v10_9|Boolean|Mac OS 10.9 以降です。|
-|v10_10|Boolean|Mac OS 10.10 以降です。|
-|v10_11|Boolean|Mac OS 10.11 またはそれ以降です。|
-|v10_12|Boolean|Mac OS 10.12 以降です。|
-|v10_13|Boolean|Mac OS 10.13 またはそれ以降です。|
+|v10_7|ブール値|Mac OS 10.7 以降。|
+|v10_8|ブール値|Mac OS 10.8 以降。|
+|v10_9|ブール値|Mac OS 10.9 以降。|
+|v10_10|ブール値|Mac OS 10.10 以降。|
+|v10_11|ブール値|Mac OS 10.11 以降。|
+|v10_12|ブール値|Mac OS 10.12 以降。|
+|v10_13|ブール値|Mac OS 10.13 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

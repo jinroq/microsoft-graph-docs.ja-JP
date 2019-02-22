@@ -1,23 +1,23 @@
 ---
-title: DeviceManagementScriptDeviceState を削除します。
-description: DeviceManagementScriptDeviceState を削除します。
-localization_priority: Normal
+title: devicemanagementscriptdevicestate の削除
+description: devicemanagementscriptdevicestate を削除します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bd8c1ba6982773bdd44c20ba2ad35e1aae0a638
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb2ff3907f41a8ed16764768dc6ba7b42f9fcdde
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405395"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168580"
 ---
-# <a name="delete-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState を削除します。
+# <a name="delete-devicemanagementscriptdevicestate"></a>devicemanagementscriptdevicestate の削除
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-の[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)を削除します。
+[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,7 +42,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
