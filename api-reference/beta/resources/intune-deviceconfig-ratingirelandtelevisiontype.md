@@ -1,34 +1,34 @@
 ---
 title: ratingIrelandTelevisionType 列挙型
-description: アイルランドのテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: アイルランドのテレビコンテンツ評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8177ea18d5a8f840daf8f13c0493288fad342285
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172465"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a><span data-ttu-id="86c07-103">ratingIrelandTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="86c07-103">ratingIrelandTelevisionType enum type</span></span>
+# <a name="ratingirelandtelevisiontype-enum-type"></a><span data-ttu-id="66c47-103">ratingIrelandTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="66c47-103">ratingIrelandTelevisionType enum type</span></span>
 
-> <span data-ttu-id="86c07-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="86c07-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="86c07-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="86c07-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="66c47-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="66c47-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="86c07-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="86c07-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="66c47-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="66c47-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="86c07-107">アイルランドのテレビのコンテンツの規制ラベル</span><span class="sxs-lookup"><span data-stu-id="86c07-107">TV content rating labels in Ireland</span></span>
+<span data-ttu-id="66c47-106">アイルランドのテレビコンテンツ評価のラベル</span><span class="sxs-lookup"><span data-stu-id="66c47-106">TV content rating labels in Ireland</span></span>
 
-## <a name="members"></a><span data-ttu-id="86c07-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="86c07-108">Members</span></span>
-|<span data-ttu-id="86c07-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="86c07-109">Member</span></span>|<span data-ttu-id="86c07-110">値</span><span class="sxs-lookup"><span data-stu-id="86c07-110">Value</span></span>|<span data-ttu-id="86c07-111">説明</span><span class="sxs-lookup"><span data-stu-id="86c07-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="66c47-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="66c47-107">Members</span></span>
+|<span data-ttu-id="66c47-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="66c47-108">Member</span></span>|<span data-ttu-id="66c47-109">値</span><span class="sxs-lookup"><span data-stu-id="66c47-109">Value</span></span>|<span data-ttu-id="66c47-110">説明</span><span class="sxs-lookup"><span data-stu-id="66c47-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="86c07-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="86c07-112">allAllowed</span></span>|<span data-ttu-id="86c07-113">0</span><span class="sxs-lookup"><span data-stu-id="86c07-113">0</span></span>|<span data-ttu-id="86c07-114">既定値、すべてのテレビ番組コンテンツを許可します。</span><span class="sxs-lookup"><span data-stu-id="86c07-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="86c07-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="86c07-115">allBlocked</span></span>|<span data-ttu-id="86c07-116">1</span><span class="sxs-lookup"><span data-stu-id="86c07-116">1</span></span>|<span data-ttu-id="86c07-117">任意のテレビ番組コンテンツを許可しません。</span><span class="sxs-lookup"><span data-stu-id="86c07-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="86c07-118">全般</span><span class="sxs-lookup"><span data-stu-id="86c07-118">general</span></span>|<span data-ttu-id="86c07-119">2</span><span class="sxs-lookup"><span data-stu-id="86c07-119">2</span></span>|<span data-ttu-id="86c07-120">GA クラス分けがすべての対象ユーザーに適しています。</span><span class="sxs-lookup"><span data-stu-id="86c07-120">The GA classification is suitable for all audiences</span></span>|
-|<span data-ttu-id="86c07-121">children</span><span class="sxs-lookup"><span data-stu-id="86c07-121">children</span></span>|<span data-ttu-id="86c07-122">3</span><span class="sxs-lookup"><span data-stu-id="86c07-122">3</span></span>|<span data-ttu-id="86c07-123">CH クラス分けが子供に適しています。</span><span class="sxs-lookup"><span data-stu-id="86c07-123">The CH classification is suitable for children</span></span>|
-|<span data-ttu-id="86c07-124">youngAdults</span><span class="sxs-lookup"><span data-stu-id="86c07-124">youngAdults</span></span>|<span data-ttu-id="86c07-125">4</span><span class="sxs-lookup"><span data-stu-id="86c07-125">4</span></span>|<span data-ttu-id="86c07-126">YA クラス分けが 10 代向けに適しています。</span><span class="sxs-lookup"><span data-stu-id="86c07-126">The YA classification is suitable for teenage audience</span></span>|
-|<span data-ttu-id="86c07-127">parentalSupervision</span><span class="sxs-lookup"><span data-stu-id="86c07-127">parentalSupervision</span></span>|<span data-ttu-id="86c07-128">5</span><span class="sxs-lookup"><span data-stu-id="86c07-128">5</span></span>|<span data-ttu-id="86c07-129">PS 分類制限子供のアクセスを考慮するには、親と保護者へを招待します。</span><span class="sxs-lookup"><span data-stu-id="86c07-129">The PS classification invites parents and guardians to consider restriction children’s access</span></span>|
-|<span data-ttu-id="86c07-130">成熟</span><span class="sxs-lookup"><span data-stu-id="86c07-130">mature</span></span>|<span data-ttu-id="86c07-131">6</span><span class="sxs-lookup"><span data-stu-id="86c07-131">6</span></span>|<span data-ttu-id="86c07-132">MA クラス分けが大人に適しています。</span><span class="sxs-lookup"><span data-stu-id="86c07-132">The MA classification is suitable for adults</span></span>|
+|<span data-ttu-id="66c47-111">allallowed</span><span class="sxs-lookup"><span data-stu-id="66c47-111">allAllowed</span></span>|<span data-ttu-id="66c47-112">.0</span><span class="sxs-lookup"><span data-stu-id="66c47-112">0</span></span>|<span data-ttu-id="66c47-113">既定値、すべてのテレビ番組にコンテンツを表示する</span><span class="sxs-lookup"><span data-stu-id="66c47-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="66c47-114">allblocked</span><span class="sxs-lookup"><span data-stu-id="66c47-114">allBlocked</span></span>|<span data-ttu-id="66c47-115">1-d</span><span class="sxs-lookup"><span data-stu-id="66c47-115">1</span></span>|<span data-ttu-id="66c47-116">すべてのテレビ番組の内容を許可しない</span><span class="sxs-lookup"><span data-stu-id="66c47-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="66c47-117">元帳</span><span class="sxs-lookup"><span data-stu-id="66c47-117">general</span></span>|<span data-ttu-id="66c47-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="66c47-118">2</span></span>|<span data-ttu-id="66c47-119">GA 分類は、すべての対象ユーザーに適しています。</span><span class="sxs-lookup"><span data-stu-id="66c47-119">The GA classification is suitable for all audiences</span></span>|
+|<span data-ttu-id="66c47-120">children</span><span class="sxs-lookup"><span data-stu-id="66c47-120">children</span></span>|<span data-ttu-id="66c47-121">1/3</span><span class="sxs-lookup"><span data-stu-id="66c47-121">3</span></span>|<span data-ttu-id="66c47-122">CH 分類は、子に適しています。</span><span class="sxs-lookup"><span data-stu-id="66c47-122">The CH classification is suitable for children</span></span>|
+|<span data-ttu-id="66c47-123">youngAdults</span><span class="sxs-lookup"><span data-stu-id="66c47-123">youngAdults</span></span>|<span data-ttu-id="66c47-124">2/4</span><span class="sxs-lookup"><span data-stu-id="66c47-124">4</span></span>|<span data-ttu-id="66c47-125">YA の分類は、teenage 対象ユーザーに適しています。</span><span class="sxs-lookup"><span data-stu-id="66c47-125">The YA classification is suitable for teenage audience</span></span>|
+|<span data-ttu-id="66c47-126">parentalsupervision</span><span class="sxs-lookup"><span data-stu-id="66c47-126">parentalSupervision</span></span>|<span data-ttu-id="66c47-127">5</span><span class="sxs-lookup"><span data-stu-id="66c47-127">5</span></span>|<span data-ttu-id="66c47-128">PS 分類は親とガーディアンを招待して、子のアクセス制限を考慮します。</span><span class="sxs-lookup"><span data-stu-id="66c47-128">The PS classification invites parents and guardians to consider restriction children’s access</span></span>|
+|<span data-ttu-id="66c47-129">度</span><span class="sxs-lookup"><span data-stu-id="66c47-129">mature</span></span>|<span data-ttu-id="66c47-130">シックス</span><span class="sxs-lookup"><span data-stu-id="66c47-130">6</span></span>|<span data-ttu-id="66c47-131">MA 分類は、大人に適しています。</span><span class="sxs-lookup"><span data-stu-id="66c47-131">The MA classification is suitable for adults</span></span>|
 
 
 

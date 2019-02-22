@@ -1,34 +1,34 @@
 ---
 title: applePushNotificationCertificate の更新
 description: applePushNotificationCertificate オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e14e4056f0428548e0b910c8647dc4442efe4abd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ee760b38c8f684c0ca7f0c8bcca0c98d8a87d931
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172045"
 ---
-# <a name="update-applepushnotificationcertificate"></a><span data-ttu-id="d7abe-103">applePushNotificationCertificate の更新</span><span class="sxs-lookup"><span data-stu-id="d7abe-103">Update applePushNotificationCertificate</span></span>
+# <a name="update-applepushnotificationcertificate"></a><span data-ttu-id="d6c05-103">applePushNotificationCertificate の更新</span><span class="sxs-lookup"><span data-stu-id="d6c05-103">Update applePushNotificationCertificate</span></span>
 
-> <span data-ttu-id="d7abe-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d7abe-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d7abe-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7abe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d6c05-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d6c05-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d7abe-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d7abe-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d6c05-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d6c05-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d7abe-107">[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="d7abe-107">Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
+<span data-ttu-id="d6c05-106">[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="d6c05-106">Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d7abe-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="d7abe-108">Prerequisites</span></span>
-<span data-ttu-id="d7abe-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d7abe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d6c05-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="d6c05-107">Prerequisites</span></span>
+<span data-ttu-id="d6c05-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6c05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="d7abe-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d7abe-111">Permission type</span></span>|<span data-ttu-id="d7abe-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d7abe-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d6c05-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d6c05-110">Permission type</span></span>|<span data-ttu-id="d6c05-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d6c05-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d7abe-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d7abe-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d7abe-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7abe-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="d7abe-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d7abe-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d7abe-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7abe-116">Not supported.</span></span>|
-|<span data-ttu-id="d7abe-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d7abe-117">Application</span></span>|<span data-ttu-id="d7abe-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7abe-118">Not supported.</span></span>|
+|<span data-ttu-id="d6c05-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d6c05-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d6c05-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6c05-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="d6c05-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d6c05-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6c05-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d6c05-115">Not supported.</span></span>|
+|<span data-ttu-id="d6c05-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d6c05-116">Application</span></span>|<span data-ttu-id="d6c05-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d6c05-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d7abe-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d7abe-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6c05-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d6c05-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,37 +37,37 @@ ms.locfileid: "29397485"
 PATCH /deviceManagement/applePushNotificationCertificate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d7abe-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d7abe-120">Request headers</span></span>
-|<span data-ttu-id="d7abe-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d7abe-121">Header</span></span>|<span data-ttu-id="d7abe-122">値</span><span class="sxs-lookup"><span data-stu-id="d7abe-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d6c05-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d6c05-119">Request headers</span></span>
+|<span data-ttu-id="d6c05-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d6c05-120">Header</span></span>|<span data-ttu-id="d6c05-121">値</span><span class="sxs-lookup"><span data-stu-id="d6c05-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d7abe-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7abe-123">Authorization</span></span>|<span data-ttu-id="d7abe-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="d7abe-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d7abe-125">Accept</span><span class="sxs-lookup"><span data-stu-id="d7abe-125">Accept</span></span>|<span data-ttu-id="d7abe-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d7abe-126">application/json</span></span>|
+|<span data-ttu-id="d6c05-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6c05-122">Authorization</span></span>|<span data-ttu-id="d6c05-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="d6c05-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d6c05-124">承諾</span><span class="sxs-lookup"><span data-stu-id="d6c05-124">Accept</span></span>|<span data-ttu-id="d6c05-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d6c05-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d7abe-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="d7abe-127">Request body</span></span>
-<span data-ttu-id="d7abe-128">要求本文で、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d7abe-128">In the request body, supply a JSON representation for the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6c05-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="d6c05-126">Request body</span></span>
+<span data-ttu-id="d6c05-127">要求本文で、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d6c05-127">In the request body, supply a JSON representation for the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
 
-<span data-ttu-id="d7abe-129">次の表に、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="d7abe-129">The following table shows the properties that are required when you create the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span></span>
+<span data-ttu-id="d6c05-128">次の表に、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="d6c05-128">The following table shows the properties that are required when you create the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span></span>
 
-|<span data-ttu-id="d7abe-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d7abe-130">Property</span></span>|<span data-ttu-id="d7abe-131">型</span><span class="sxs-lookup"><span data-stu-id="d7abe-131">Type</span></span>|<span data-ttu-id="d7abe-132">説明</span><span class="sxs-lookup"><span data-stu-id="d7abe-132">Description</span></span>|
+|<span data-ttu-id="d6c05-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d6c05-129">Property</span></span>|<span data-ttu-id="d6c05-130">型</span><span class="sxs-lookup"><span data-stu-id="d6c05-130">Type</span></span>|<span data-ttu-id="d6c05-131">説明</span><span class="sxs-lookup"><span data-stu-id="d6c05-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d7abe-133">id</span><span class="sxs-lookup"><span data-stu-id="d7abe-133">id</span></span>|<span data-ttu-id="d7abe-134">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-134">String</span></span>|<span data-ttu-id="d7abe-135">証明書の一意識別子</span><span class="sxs-lookup"><span data-stu-id="d7abe-135">Unique Identifier for the certificate</span></span>|
-|<span data-ttu-id="d7abe-136">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="d7abe-136">appleIdentifier</span></span>|<span data-ttu-id="d7abe-137">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-137">String</span></span>|<span data-ttu-id="d7abe-138">MDM プッシュ証明書の作成に使用するアカウントの Apple ID。</span><span class="sxs-lookup"><span data-stu-id="d7abe-138">Apple Id of the account used to create the MDM push certificate.</span></span>|
-|<span data-ttu-id="d7abe-139">topicIdentifier</span><span class="sxs-lookup"><span data-stu-id="d7abe-139">topicIdentifier</span></span>|<span data-ttu-id="d7abe-140">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-140">String</span></span>|<span data-ttu-id="d7abe-141">トピック ID。</span><span class="sxs-lookup"><span data-stu-id="d7abe-141">Topic Id.</span></span>|
-|<span data-ttu-id="d7abe-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="d7abe-142">lastModifiedDateTime</span></span>|<span data-ttu-id="d7abe-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d7abe-143">DateTimeOffset</span></span>|<span data-ttu-id="d7abe-144">Apple プッシュ通知証明書の最終変更日時。</span><span class="sxs-lookup"><span data-stu-id="d7abe-144">Last modified date and time for Apple push notification certificate.</span></span>|
-|<span data-ttu-id="d7abe-145">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="d7abe-145">expirationDateTime</span></span>|<span data-ttu-id="d7abe-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d7abe-146">DateTimeOffset</span></span>|<span data-ttu-id="d7abe-147">Apple プッシュ通知証明書の有効期限。</span><span class="sxs-lookup"><span data-stu-id="d7abe-147">The expiration date and time for Apple push notification certificate.</span></span>|
-|<span data-ttu-id="d7abe-148">certificateUploadStatus</span><span class="sxs-lookup"><span data-stu-id="d7abe-148">certificateUploadStatus</span></span>|<span data-ttu-id="d7abe-149">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-149">String</span></span>|<span data-ttu-id="d7abe-150">証明書のアップロードの状態です。</span><span class="sxs-lookup"><span data-stu-id="d7abe-150">The certificate upload status.</span></span>|
-|<span data-ttu-id="d7abe-151">certificateUploadFailureReason</span><span class="sxs-lookup"><span data-stu-id="d7abe-151">certificateUploadFailureReason</span></span>|<span data-ttu-id="d7abe-152">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-152">String</span></span>|<span data-ttu-id="d7abe-153">理由の証明書のアップロードに失敗しました。</span><span class="sxs-lookup"><span data-stu-id="d7abe-153">The reason the certificate upload failed.</span></span>|
-|<span data-ttu-id="d7abe-154">証明書</span><span class="sxs-lookup"><span data-stu-id="d7abe-154">certificate</span></span>|<span data-ttu-id="d7abe-155">String</span><span class="sxs-lookup"><span data-stu-id="d7abe-155">String</span></span>|<span data-ttu-id="d7abe-156">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="d7abe-156">Not yet documented</span></span>|
+|<span data-ttu-id="d6c05-132">id</span><span class="sxs-lookup"><span data-stu-id="d6c05-132">id</span></span>|<span data-ttu-id="d6c05-133">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-133">String</span></span>|<span data-ttu-id="d6c05-134">証明書の一意識別子</span><span class="sxs-lookup"><span data-stu-id="d6c05-134">Unique Identifier for the certificate</span></span>|
+|<span data-ttu-id="d6c05-135">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="d6c05-135">appleIdentifier</span></span>|<span data-ttu-id="d6c05-136">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-136">String</span></span>|<span data-ttu-id="d6c05-137">MDM プッシュ証明書の作成に使用するアカウントの Apple ID。</span><span class="sxs-lookup"><span data-stu-id="d6c05-137">Apple Id of the account used to create the MDM push certificate.</span></span>|
+|<span data-ttu-id="d6c05-138">topicIdentifier</span><span class="sxs-lookup"><span data-stu-id="d6c05-138">topicIdentifier</span></span>|<span data-ttu-id="d6c05-139">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-139">String</span></span>|<span data-ttu-id="d6c05-140">トピック ID。</span><span class="sxs-lookup"><span data-stu-id="d6c05-140">Topic Id.</span></span>|
+|<span data-ttu-id="d6c05-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="d6c05-141">lastModifiedDateTime</span></span>|<span data-ttu-id="d6c05-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d6c05-142">DateTimeOffset</span></span>|<span data-ttu-id="d6c05-143">Apple プッシュ通知証明書の最終変更日時。</span><span class="sxs-lookup"><span data-stu-id="d6c05-143">Last modified date and time for Apple push notification certificate.</span></span>|
+|<span data-ttu-id="d6c05-144">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="d6c05-144">expirationDateTime</span></span>|<span data-ttu-id="d6c05-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d6c05-145">DateTimeOffset</span></span>|<span data-ttu-id="d6c05-146">Apple プッシュ通知証明書の有効期限。</span><span class="sxs-lookup"><span data-stu-id="d6c05-146">The expiration date and time for Apple push notification certificate.</span></span>|
+|<span data-ttu-id="d6c05-147">certificateuploadstatus</span><span class="sxs-lookup"><span data-stu-id="d6c05-147">certificateUploadStatus</span></span>|<span data-ttu-id="d6c05-148">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-148">String</span></span>|<span data-ttu-id="d6c05-149">証明書のアップロード状態。</span><span class="sxs-lookup"><span data-stu-id="d6c05-149">The certificate upload status.</span></span>|
+|<span data-ttu-id="d6c05-150">certificateUploadFailureReason</span><span class="sxs-lookup"><span data-stu-id="d6c05-150">certificateUploadFailureReason</span></span>|<span data-ttu-id="d6c05-151">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-151">String</span></span>|<span data-ttu-id="d6c05-152">証明書のアップロードが失敗した理由。</span><span class="sxs-lookup"><span data-stu-id="d6c05-152">The reason the certificate upload failed.</span></span>|
+|<span data-ttu-id="d6c05-153">証明書</span><span class="sxs-lookup"><span data-stu-id="d6c05-153">certificate</span></span>|<span data-ttu-id="d6c05-154">String</span><span class="sxs-lookup"><span data-stu-id="d6c05-154">String</span></span>|<span data-ttu-id="d6c05-155">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="d6c05-155">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d7abe-157">応答</span><span class="sxs-lookup"><span data-stu-id="d7abe-157">Response</span></span>
-<span data-ttu-id="d7abe-158">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d7abe-158">If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d6c05-156">応答</span><span class="sxs-lookup"><span data-stu-id="d6c05-156">Response</span></span>
+<span data-ttu-id="d6c05-157">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d6c05-157">If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7abe-159">例</span><span class="sxs-lookup"><span data-stu-id="d7abe-159">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6c05-158">例</span><span class="sxs-lookup"><span data-stu-id="d6c05-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d7abe-160">要求</span><span class="sxs-lookup"><span data-stu-id="d7abe-160">Request</span></span>
-<span data-ttu-id="d7abe-161">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d7abe-161">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d6c05-159">要求</span><span class="sxs-lookup"><span data-stu-id="d6c05-159">Request</span></span>
+<span data-ttu-id="d6c05-160">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d6c05-160">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 416
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d7abe-162">応答</span><span class="sxs-lookup"><span data-stu-id="d7abe-162">Response</span></span>
-<span data-ttu-id="d7abe-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d7abe-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d6c05-161">応答</span><span class="sxs-lookup"><span data-stu-id="d6c05-161">Response</span></span>
+<span data-ttu-id="d6c05-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d6c05-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

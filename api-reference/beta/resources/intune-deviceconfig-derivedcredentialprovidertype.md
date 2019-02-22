@@ -1,32 +1,32 @@
 ---
 title: derivedCredentialProviderType 列挙型
-description: 派生の資格情報プロバイダーの種類。
-localization_priority: Normal
+description: 派生した資格情報のプロバイダーの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431673"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175312"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="fee1c-103">derivedCredentialProviderType 列挙型</span><span class="sxs-lookup"><span data-stu-id="fee1c-103">derivedCredentialProviderType enum type</span></span>
+# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="d20ae-103">derivedCredentialProviderType 列挙型</span><span class="sxs-lookup"><span data-stu-id="d20ae-103">derivedCredentialProviderType enum type</span></span>
 
-> <span data-ttu-id="fee1c-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="fee1c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="fee1c-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fee1c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d20ae-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d20ae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fee1c-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="fee1c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d20ae-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d20ae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fee1c-107">派生の資格情報プロバイダーの種類。</span><span class="sxs-lookup"><span data-stu-id="fee1c-107">Provider type for Derived Credentials.</span></span>
+<span data-ttu-id="d20ae-106">派生した資格情報のプロバイダーの種類。</span><span class="sxs-lookup"><span data-stu-id="d20ae-106">Provider type for Derived Credentials.</span></span>
 
-## <a name="members"></a><span data-ttu-id="fee1c-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="fee1c-108">Members</span></span>
-|<span data-ttu-id="fee1c-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="fee1c-109">Member</span></span>|<span data-ttu-id="fee1c-110">値</span><span class="sxs-lookup"><span data-stu-id="fee1c-110">Value</span></span>|<span data-ttu-id="fee1c-111">説明</span><span class="sxs-lookup"><span data-stu-id="fee1c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d20ae-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="d20ae-107">Members</span></span>
+|<span data-ttu-id="d20ae-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="d20ae-108">Member</span></span>|<span data-ttu-id="d20ae-109">値</span><span class="sxs-lookup"><span data-stu-id="d20ae-109">Value</span></span>|<span data-ttu-id="d20ae-110">説明</span><span class="sxs-lookup"><span data-stu-id="d20ae-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fee1c-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="fee1c-112">notConfigured</span></span>|<span data-ttu-id="fee1c-113">0</span><span class="sxs-lookup"><span data-stu-id="fee1c-113">0</span></span>|<span data-ttu-id="fee1c-114">派生の資格情報プロバイダーが構成されているがありません。</span><span class="sxs-lookup"><span data-stu-id="fee1c-114">No Derived Credential Provider Configured.</span></span>|
-|<span data-ttu-id="fee1c-115">entrustDataCard</span><span class="sxs-lookup"><span data-stu-id="fee1c-115">entrustDataCard</span></span>|<span data-ttu-id="fee1c-116">1</span><span class="sxs-lookup"><span data-stu-id="fee1c-116">1</span></span>|<span data-ttu-id="fee1c-117">DataCard を委託します。</span><span class="sxs-lookup"><span data-stu-id="fee1c-117">Entrust DataCard.</span></span>|
-|<span data-ttu-id="fee1c-118">purebred</span><span class="sxs-lookup"><span data-stu-id="fee1c-118">purebred</span></span>|<span data-ttu-id="fee1c-119">2</span><span class="sxs-lookup"><span data-stu-id="fee1c-119">2</span></span>|<span data-ttu-id="fee1c-120">Purebred の国防情報システム局です。</span><span class="sxs-lookup"><span data-stu-id="fee1c-120">Purebred - Defense Information Systems Agency.</span></span>|
-|<span data-ttu-id="fee1c-121">xTec</span><span class="sxs-lookup"><span data-stu-id="fee1c-121">xTec</span></span>|<span data-ttu-id="fee1c-122">3</span><span class="sxs-lookup"><span data-stu-id="fee1c-122">3</span></span>|<span data-ttu-id="fee1c-123">Xtec - AuthentX です。</span><span class="sxs-lookup"><span data-stu-id="fee1c-123">Xtec - AuthentX.</span></span>|
-|<span data-ttu-id="fee1c-124">任命</span><span class="sxs-lookup"><span data-stu-id="fee1c-124">intercede</span></span>|<span data-ttu-id="fee1c-125">4</span><span class="sxs-lookup"><span data-stu-id="fee1c-125">4</span></span>|<span data-ttu-id="fee1c-126">任命します。</span><span class="sxs-lookup"><span data-stu-id="fee1c-126">Intercede.</span></span>|
+|<span data-ttu-id="d20ae-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="d20ae-111">notConfigured</span></span>|<span data-ttu-id="d20ae-112">.0</span><span class="sxs-lookup"><span data-stu-id="d20ae-112">0</span></span>|<span data-ttu-id="d20ae-113">派生した資格情報プロバイダーが構成されていません。</span><span class="sxs-lookup"><span data-stu-id="d20ae-113">No Derived Credential Provider Configured.</span></span>|
+|<span data-ttu-id="d20ae-114">entrustdatacard</span><span class="sxs-lookup"><span data-stu-id="d20ae-114">entrustDataCard</span></span>|<span data-ttu-id="d20ae-115">1-d</span><span class="sxs-lookup"><span data-stu-id="d20ae-115">1</span></span>|<span data-ttu-id="d20ae-116">Entrust</span><span class="sxs-lookup"><span data-stu-id="d20ae-116">Entrust DataCard.</span></span>|
+|<span data-ttu-id="d20ae-117">purebred</span><span class="sxs-lookup"><span data-stu-id="d20ae-117">purebred</span></span>|<span data-ttu-id="d20ae-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="d20ae-118">2</span></span>|<span data-ttu-id="d20ae-119">Purebred 情報システムエージェンシー。</span><span class="sxs-lookup"><span data-stu-id="d20ae-119">Purebred - Defense Information Systems Agency.</span></span>|
+|<span data-ttu-id="d20ae-120">xTec</span><span class="sxs-lookup"><span data-stu-id="d20ae-120">xTec</span></span>|<span data-ttu-id="d20ae-121">1/3</span><span class="sxs-lookup"><span data-stu-id="d20ae-121">3</span></span>|<span data-ttu-id="d20ae-122">Xtec-AuthentX</span><span class="sxs-lookup"><span data-stu-id="d20ae-122">Xtec - AuthentX.</span></span>|
+|<span data-ttu-id="d20ae-123">intercede</span><span class="sxs-lookup"><span data-stu-id="d20ae-123">intercede</span></span>|<span data-ttu-id="d20ae-124">2/4</span><span class="sxs-lookup"><span data-stu-id="d20ae-124">4</span></span>|<span data-ttu-id="d20ae-125">Intercede。</span><span class="sxs-lookup"><span data-stu-id="d20ae-125">Intercede.</span></span>|
 
 
 
