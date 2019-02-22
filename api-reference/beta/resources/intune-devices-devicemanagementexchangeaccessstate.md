@@ -1,32 +1,32 @@
 ---
-title: deviceManagementExchangeAccessState 列挙型
-description: デバイスの Exchange のアクセスの状態です。
-localization_priority: Normal
+title: devicemanagementexchangeaccessstate 列挙型
+description: デバイスの Exchange アクセス状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f66f8372b5bd087ad620fa86d8e0beff8b3eb3a0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 15b0dd7b99d8395b7c66171969bad1cb79bce0b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159585"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="285ba-103">deviceManagementExchangeAccessState 列挙型</span><span class="sxs-lookup"><span data-stu-id="285ba-103">deviceManagementExchangeAccessState enum type</span></span>
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="8f9ff-103">devicemanagementexchangeaccessstate 列挙型</span><span class="sxs-lookup"><span data-stu-id="8f9ff-103">deviceManagementExchangeAccessState enum type</span></span>
 
-> <span data-ttu-id="285ba-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="285ba-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="285ba-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="285ba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8f9ff-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8f9ff-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="285ba-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="285ba-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8f9ff-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="8f9ff-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="285ba-107">デバイスの Exchange のアクセスの状態です。</span><span class="sxs-lookup"><span data-stu-id="285ba-107">Device Exchange Access State.</span></span>
+<span data-ttu-id="8f9ff-106">デバイスの Exchange アクセス状態。</span><span class="sxs-lookup"><span data-stu-id="8f9ff-106">Device Exchange Access State.</span></span>
 
-## <a name="members"></a><span data-ttu-id="285ba-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="285ba-108">Members</span></span>
-|<span data-ttu-id="285ba-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="285ba-109">Member</span></span>|<span data-ttu-id="285ba-110">値</span><span class="sxs-lookup"><span data-stu-id="285ba-110">Value</span></span>|<span data-ttu-id="285ba-111">説明</span><span class="sxs-lookup"><span data-stu-id="285ba-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8f9ff-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="8f9ff-107">Members</span></span>
+|<span data-ttu-id="8f9ff-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="8f9ff-108">Member</span></span>|<span data-ttu-id="8f9ff-109">値</span><span class="sxs-lookup"><span data-stu-id="8f9ff-109">Value</span></span>|<span data-ttu-id="8f9ff-110">説明</span><span class="sxs-lookup"><span data-stu-id="8f9ff-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="285ba-112">none</span><span class="sxs-lookup"><span data-stu-id="285ba-112">none</span></span>|<span data-ttu-id="285ba-113">0</span><span class="sxs-lookup"><span data-stu-id="285ba-113">0</span></span>|<span data-ttu-id="285ba-114">Exchange から検出アクセス状態がないです。</span><span class="sxs-lookup"><span data-stu-id="285ba-114">No access state discovered from Exchange</span></span>|
-|<span data-ttu-id="285ba-115">不明</span><span class="sxs-lookup"><span data-stu-id="285ba-115">unknown</span></span>|<span data-ttu-id="285ba-116">1</span><span class="sxs-lookup"><span data-stu-id="285ba-116">1</span></span>|<span data-ttu-id="285ba-117">Exchange へのデバイスのアクセス状態は不明です。</span><span class="sxs-lookup"><span data-stu-id="285ba-117">Device access state to Exchange is unknown</span></span>|
-|<span data-ttu-id="285ba-118">許可</span><span class="sxs-lookup"><span data-stu-id="285ba-118">allowed</span></span>|<span data-ttu-id="285ba-119">2</span><span class="sxs-lookup"><span data-stu-id="285ba-119">2</span></span>|<span data-ttu-id="285ba-120">デバイスが Exchange へのアクセス権を持つ</span><span class="sxs-lookup"><span data-stu-id="285ba-120">Device has access to Exchange</span></span>|
-|<span data-ttu-id="285ba-121">ブロック</span><span class="sxs-lookup"><span data-stu-id="285ba-121">blocked</span></span>|<span data-ttu-id="285ba-122">3</span><span class="sxs-lookup"><span data-stu-id="285ba-122">3</span></span>|<span data-ttu-id="285ba-123">デバイスが Exchange でブロックされています。</span><span class="sxs-lookup"><span data-stu-id="285ba-123">Device is Blocked in Exchange</span></span>|
-|<span data-ttu-id="285ba-124">検疫</span><span class="sxs-lookup"><span data-stu-id="285ba-124">quarantined</span></span>|<span data-ttu-id="285ba-125">4</span><span class="sxs-lookup"><span data-stu-id="285ba-125">4</span></span>|<span data-ttu-id="285ba-126">デバイスが Exchange の検疫します。</span><span class="sxs-lookup"><span data-stu-id="285ba-126">Device is Quarantined in Exchange</span></span>|
+|<span data-ttu-id="8f9ff-111">none</span><span class="sxs-lookup"><span data-stu-id="8f9ff-111">none</span></span>|<span data-ttu-id="8f9ff-112">.0</span><span class="sxs-lookup"><span data-stu-id="8f9ff-112">0</span></span>|<span data-ttu-id="8f9ff-113">Exchange から検出されたアクセス状態なし</span><span class="sxs-lookup"><span data-stu-id="8f9ff-113">No access state discovered from Exchange</span></span>|
+|<span data-ttu-id="8f9ff-114">不明</span><span class="sxs-lookup"><span data-stu-id="8f9ff-114">unknown</span></span>|<span data-ttu-id="8f9ff-115">1-d</span><span class="sxs-lookup"><span data-stu-id="8f9ff-115">1</span></span>|<span data-ttu-id="8f9ff-116">Exchange へのデバイスアクセス状態が不明です</span><span class="sxs-lookup"><span data-stu-id="8f9ff-116">Device access state to Exchange is unknown</span></span>|
+|<span data-ttu-id="8f9ff-117">れる</span><span class="sxs-lookup"><span data-stu-id="8f9ff-117">allowed</span></span>|<span data-ttu-id="8f9ff-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="8f9ff-118">2</span></span>|<span data-ttu-id="8f9ff-119">デバイスが Exchange にアクセスできる</span><span class="sxs-lookup"><span data-stu-id="8f9ff-119">Device has access to Exchange</span></span>|
+|<span data-ttu-id="8f9ff-120">ブロック</span><span class="sxs-lookup"><span data-stu-id="8f9ff-120">blocked</span></span>|<span data-ttu-id="8f9ff-121">1/3</span><span class="sxs-lookup"><span data-stu-id="8f9ff-121">3</span></span>|<span data-ttu-id="8f9ff-122">Exchange でデバイスがブロックされている</span><span class="sxs-lookup"><span data-stu-id="8f9ff-122">Device is Blocked in Exchange</span></span>|
+|<span data-ttu-id="8f9ff-123">隔離</span><span class="sxs-lookup"><span data-stu-id="8f9ff-123">quarantined</span></span>|<span data-ttu-id="8f9ff-124">2/4</span><span class="sxs-lookup"><span data-stu-id="8f9ff-124">4</span></span>|<span data-ttu-id="8f9ff-125">Exchange でのデバイスの検疫</span><span class="sxs-lookup"><span data-stu-id="8f9ff-125">Device is Quarantined in Exchange</span></span>|
 
 
 

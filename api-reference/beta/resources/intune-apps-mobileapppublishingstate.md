@@ -1,30 +1,30 @@
 ---
 title: mobileAppPublishingState 列挙型
-description: アプリケーションの発行状態を示します。
-localization_priority: Normal
+description: アプリの発行状態を示します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db10e62e714e50ccdf9bac933b2746cb52ea25eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6ae8cdb97afb0b44acf268381c3cb128aaff9b7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423882"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160166"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="b735c-103">mobileAppPublishingState 列挙型</span><span class="sxs-lookup"><span data-stu-id="b735c-103">mobileAppPublishingState enum type</span></span>
+# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="d99e5-103">mobileAppPublishingState 列挙型</span><span class="sxs-lookup"><span data-stu-id="d99e5-103">mobileAppPublishingState enum type</span></span>
 
-> <span data-ttu-id="b735c-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b735c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b735c-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b735c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d99e5-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d99e5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b735c-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b735c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d99e5-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d99e5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b735c-107">アプリケーションの発行状態を示します。</span><span class="sxs-lookup"><span data-stu-id="b735c-107">Indicates the publishing state of an app.</span></span>
+<span data-ttu-id="d99e5-106">アプリの発行状態を示します。</span><span class="sxs-lookup"><span data-stu-id="d99e5-106">Indicates the publishing state of an app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b735c-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="b735c-108">Members</span></span>
-|<span data-ttu-id="b735c-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="b735c-109">Member</span></span>|<span data-ttu-id="b735c-110">値</span><span class="sxs-lookup"><span data-stu-id="b735c-110">Value</span></span>|<span data-ttu-id="b735c-111">説明</span><span class="sxs-lookup"><span data-stu-id="b735c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d99e5-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="d99e5-107">Members</span></span>
+|<span data-ttu-id="d99e5-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="d99e5-108">Member</span></span>|<span data-ttu-id="d99e5-109">値</span><span class="sxs-lookup"><span data-stu-id="d99e5-109">Value</span></span>|<span data-ttu-id="d99e5-110">説明</span><span class="sxs-lookup"><span data-stu-id="d99e5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b735c-112">notPublished</span><span class="sxs-lookup"><span data-stu-id="b735c-112">notPublished</span></span>|<span data-ttu-id="b735c-113">0</span><span class="sxs-lookup"><span data-stu-id="b735c-113">0</span></span>|<span data-ttu-id="b735c-114">アプリケーションはまだ公開されていません。</span><span class="sxs-lookup"><span data-stu-id="b735c-114">The app is not yet published.</span></span>|
-|<span data-ttu-id="b735c-115">処理</span><span class="sxs-lookup"><span data-stu-id="b735c-115">processing</span></span>|<span data-ttu-id="b735c-116">1</span><span class="sxs-lookup"><span data-stu-id="b735c-116">1</span></span>|<span data-ttu-id="b735c-117">アプリケーションは、サービス側の処理を保留中です。</span><span class="sxs-lookup"><span data-stu-id="b735c-117">The app is pending service-side processing.</span></span>|
-|<span data-ttu-id="b735c-118">公開</span><span class="sxs-lookup"><span data-stu-id="b735c-118">published</span></span>|<span data-ttu-id="b735c-119">2</span><span class="sxs-lookup"><span data-stu-id="b735c-119">2</span></span>|<span data-ttu-id="b735c-120">アプリケーションが発行されます。</span><span class="sxs-lookup"><span data-stu-id="b735c-120">The app is published.</span></span>|
+|<span data-ttu-id="d99e5-111">notpublished</span><span class="sxs-lookup"><span data-stu-id="d99e5-111">notPublished</span></span>|<span data-ttu-id="d99e5-112">.0</span><span class="sxs-lookup"><span data-stu-id="d99e5-112">0</span></span>|<span data-ttu-id="d99e5-113">アプリはまだ公開されていません。</span><span class="sxs-lookup"><span data-stu-id="d99e5-113">The app is not yet published.</span></span>|
+|<span data-ttu-id="d99e5-114">処理</span><span class="sxs-lookup"><span data-stu-id="d99e5-114">processing</span></span>|<span data-ttu-id="d99e5-115">1-d</span><span class="sxs-lookup"><span data-stu-id="d99e5-115">1</span></span>|<span data-ttu-id="d99e5-116">アプリは、サービス側の処理を保留しています。</span><span class="sxs-lookup"><span data-stu-id="d99e5-116">The app is pending service-side processing.</span></span>|
+|<span data-ttu-id="d99e5-117">公開</span><span class="sxs-lookup"><span data-stu-id="d99e5-117">published</span></span>|<span data-ttu-id="d99e5-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="d99e5-118">2</span></span>|<span data-ttu-id="d99e5-119">アプリが発行されます。</span><span class="sxs-lookup"><span data-stu-id="d99e5-119">The app is published.</span></span>|
 
 
 

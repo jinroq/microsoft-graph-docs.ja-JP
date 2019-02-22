@@ -1,32 +1,32 @@
 ---
-title: vppTokenState 列挙型
-description: Apple ボリューム購入プログラム、トークンに関連付けられている状態です。
-localization_priority: Normal
+title: vpptokenstate 列挙型
+description: Apple volume purchase program のトークンに関連付けられている状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d0c4ee7ae0b8e35f97a18d0958a2456cab40a10
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cdb356d5103fc1c1dc07245d8552cb77b9383c8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416161"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159865"
 ---
-# <a name="vpptokenstate-enum-type"></a><span data-ttu-id="7915c-103">vppTokenState 列挙型</span><span class="sxs-lookup"><span data-stu-id="7915c-103">vppTokenState enum type</span></span>
+# <a name="vpptokenstate-enum-type"></a><span data-ttu-id="c8ed2-103">vpptokenstate 列挙型</span><span class="sxs-lookup"><span data-stu-id="c8ed2-103">vppTokenState enum type</span></span>
 
-> <span data-ttu-id="7915c-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="7915c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7915c-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7915c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c8ed2-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7915c-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7915c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c8ed2-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7915c-107">Apple ボリューム購入プログラム、トークンに関連付けられている状態です。</span><span class="sxs-lookup"><span data-stu-id="7915c-107">Possible states associated with an Apple Volume Purchase Program token.</span></span>
+<span data-ttu-id="c8ed2-106">Apple volume purchase program のトークンに関連付けられている状態。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-106">Possible states associated with an Apple Volume Purchase Program token.</span></span>
 
-## <a name="members"></a><span data-ttu-id="7915c-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="7915c-108">Members</span></span>
-|<span data-ttu-id="7915c-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="7915c-109">Member</span></span>|<span data-ttu-id="7915c-110">値</span><span class="sxs-lookup"><span data-stu-id="7915c-110">Value</span></span>|<span data-ttu-id="7915c-111">説明</span><span class="sxs-lookup"><span data-stu-id="7915c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c8ed2-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="c8ed2-107">Members</span></span>
+|<span data-ttu-id="c8ed2-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="c8ed2-108">Member</span></span>|<span data-ttu-id="c8ed2-109">値</span><span class="sxs-lookup"><span data-stu-id="c8ed2-109">Value</span></span>|<span data-ttu-id="c8ed2-110">説明</span><span class="sxs-lookup"><span data-stu-id="c8ed2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7915c-112">不明</span><span class="sxs-lookup"><span data-stu-id="7915c-112">unknown</span></span>|<span data-ttu-id="7915c-113">0</span><span class="sxs-lookup"><span data-stu-id="7915c-113">0</span></span>|<span data-ttu-id="7915c-114">既定の状態。</span><span class="sxs-lookup"><span data-stu-id="7915c-114">Default state.</span></span>|
-|<span data-ttu-id="7915c-115">有効です</span><span class="sxs-lookup"><span data-stu-id="7915c-115">valid</span></span>|<span data-ttu-id="7915c-116">1</span><span class="sxs-lookup"><span data-stu-id="7915c-116">1</span></span>|<span data-ttu-id="7915c-117">トークンは、有効です。</span><span class="sxs-lookup"><span data-stu-id="7915c-117">Token is valid.</span></span>|
-|<span data-ttu-id="7915c-118">有効期限が切れてください。</span><span class="sxs-lookup"><span data-stu-id="7915c-118">expired</span></span>|<span data-ttu-id="7915c-119">2</span><span class="sxs-lookup"><span data-stu-id="7915c-119">2</span></span>|<span data-ttu-id="7915c-120">トークンの期限が切れています。</span><span class="sxs-lookup"><span data-stu-id="7915c-120">Token is expired.</span></span>|
-|<span data-ttu-id="7915c-121">無効です</span><span class="sxs-lookup"><span data-stu-id="7915c-121">invalid</span></span>|<span data-ttu-id="7915c-122">3</span><span class="sxs-lookup"><span data-stu-id="7915c-122">3</span></span>|<span data-ttu-id="7915c-123">トークンが有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="7915c-123">Token is invalid.</span></span>|
-|<span data-ttu-id="7915c-124">assignedToExternalMDM</span><span class="sxs-lookup"><span data-stu-id="7915c-124">assignedToExternalMDM</span></span>|<span data-ttu-id="7915c-125">4</span><span class="sxs-lookup"><span data-stu-id="7915c-125">4</span></span>|<span data-ttu-id="7915c-126">トークンは、別の MDM サービスによって管理されます。</span><span class="sxs-lookup"><span data-stu-id="7915c-126">Token is managed by another MDM Service.</span></span>|
+|<span data-ttu-id="c8ed2-111">不明</span><span class="sxs-lookup"><span data-stu-id="c8ed2-111">unknown</span></span>|<span data-ttu-id="c8ed2-112">.0</span><span class="sxs-lookup"><span data-stu-id="c8ed2-112">0</span></span>|<span data-ttu-id="c8ed2-113">既定の状態です。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-113">Default state.</span></span>|
+|<span data-ttu-id="c8ed2-114">有効な</span><span class="sxs-lookup"><span data-stu-id="c8ed2-114">valid</span></span>|<span data-ttu-id="c8ed2-115">1-d</span><span class="sxs-lookup"><span data-stu-id="c8ed2-115">1</span></span>|<span data-ttu-id="c8ed2-116">トークンが有効です。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-116">Token is valid.</span></span>|
+|<span data-ttu-id="c8ed2-117">終了</span><span class="sxs-lookup"><span data-stu-id="c8ed2-117">expired</span></span>|<span data-ttu-id="c8ed2-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="c8ed2-118">2</span></span>|<span data-ttu-id="c8ed2-119">トークンの有効期限が切れています。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-119">Token is expired.</span></span>|
+|<span data-ttu-id="c8ed2-120">無効です</span><span class="sxs-lookup"><span data-stu-id="c8ed2-120">invalid</span></span>|<span data-ttu-id="c8ed2-121">1/3</span><span class="sxs-lookup"><span data-stu-id="c8ed2-121">3</span></span>|<span data-ttu-id="c8ed2-122">トークンが無効です。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-122">Token is invalid.</span></span>|
+|<span data-ttu-id="c8ed2-123">assignedToExternalMDM</span><span class="sxs-lookup"><span data-stu-id="c8ed2-123">assignedToExternalMDM</span></span>|<span data-ttu-id="c8ed2-124">2/4</span><span class="sxs-lookup"><span data-stu-id="c8ed2-124">4</span></span>|<span data-ttu-id="c8ed2-125">トークンは別の MDM サービスによって管理されています。</span><span class="sxs-lookup"><span data-stu-id="c8ed2-125">Token is managed by another MDM Service.</span></span>|
 
 
 

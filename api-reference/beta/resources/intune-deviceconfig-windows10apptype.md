@@ -1,29 +1,29 @@
 ---
 title: windows10AppType 列挙型
-description: 10 の Windows アプリケーションの種類です。
-localization_priority: Normal
+description: Windows 10 アプリケーションの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b47d27c35fcafd2589bb1ab3188bfd753038fd6f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 99c467a5717aaf3ba40669becdb1867e2242ee3b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410645"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159186"
 ---
-# <a name="windows10apptype-enum-type"></a><span data-ttu-id="b2055-103">windows10AppType 列挙型</span><span class="sxs-lookup"><span data-stu-id="b2055-103">windows10AppType enum type</span></span>
+# <a name="windows10apptype-enum-type"></a><span data-ttu-id="c4966-103">windows10AppType 列挙型</span><span class="sxs-lookup"><span data-stu-id="c4966-103">windows10AppType enum type</span></span>
 
-> <span data-ttu-id="b2055-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b2055-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b2055-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b2055-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c4966-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c4966-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b2055-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b2055-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c4966-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c4966-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b2055-107">10 の Windows アプリケーションの種類です。</span><span class="sxs-lookup"><span data-stu-id="b2055-107">Windows 10 Application type.</span></span>
+<span data-ttu-id="c4966-106">Windows 10 アプリケーションの種類。</span><span class="sxs-lookup"><span data-stu-id="c4966-106">Windows 10 Application type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b2055-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="b2055-108">Members</span></span>
-|<span data-ttu-id="b2055-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="b2055-109">Member</span></span>|<span data-ttu-id="b2055-110">値</span><span class="sxs-lookup"><span data-stu-id="b2055-110">Value</span></span>|<span data-ttu-id="b2055-111">説明</span><span class="sxs-lookup"><span data-stu-id="b2055-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c4966-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="c4966-107">Members</span></span>
+|<span data-ttu-id="c4966-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="c4966-108">Member</span></span>|<span data-ttu-id="c4966-109">値</span><span class="sxs-lookup"><span data-stu-id="c4966-109">Value</span></span>|<span data-ttu-id="c4966-110">説明</span><span class="sxs-lookup"><span data-stu-id="c4966-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b2055-112">デスクトップ</span><span class="sxs-lookup"><span data-stu-id="b2055-112">desktop</span></span>|<span data-ttu-id="b2055-113">0</span><span class="sxs-lookup"><span data-stu-id="b2055-113">0</span></span>|<span data-ttu-id="b2055-114">デスクトップです。</span><span class="sxs-lookup"><span data-stu-id="b2055-114">Desktop.</span></span>|
-|<span data-ttu-id="b2055-115">ユニバーサル</span><span class="sxs-lookup"><span data-stu-id="b2055-115">universal</span></span>|<span data-ttu-id="b2055-116">1</span><span class="sxs-lookup"><span data-stu-id="b2055-116">1</span></span>|<span data-ttu-id="b2055-117">ユニバーサルです。</span><span class="sxs-lookup"><span data-stu-id="b2055-117">Universal.</span></span>|
+|<span data-ttu-id="c4966-111">コンピューター</span><span class="sxs-lookup"><span data-stu-id="c4966-111">desktop</span></span>|<span data-ttu-id="c4966-112">.0</span><span class="sxs-lookup"><span data-stu-id="c4966-112">0</span></span>|<span data-ttu-id="c4966-113">コンピューター.</span><span class="sxs-lookup"><span data-stu-id="c4966-113">Desktop.</span></span>|
+|<span data-ttu-id="c4966-114">ユニバーサル</span><span class="sxs-lookup"><span data-stu-id="c4966-114">universal</span></span>|<span data-ttu-id="c4966-115">1-d</span><span class="sxs-lookup"><span data-stu-id="c4966-115">1</span></span>|<span data-ttu-id="c4966-116">ユニバーサル.</span><span class="sxs-lookup"><span data-stu-id="c4966-116">Universal.</span></span>|
 
 
 

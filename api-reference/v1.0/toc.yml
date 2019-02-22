@@ -79,7 +79,7 @@ items:
         href: api/user-delete.md
       - name: 差分を取得する
         href: api/user-delta.md
-    - name: 予定表
+    - name: カレンダー
       displayName: Outlook, Outlook calendar
       href: resources/event.md
       items:
@@ -323,7 +323,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-    - name: 会話
+    - name: スレッド
       href: resources/conversation.md
       items:
       - name: 会話を一覧表示する
@@ -592,6 +592,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
+    displayname: Outlook calendar
   - name: クロスデバイス エクスペリエンス
     displayName: Project Rome
     href: resources/project-rome-overview.md
@@ -3089,7 +3090,7 @@ items:
         href: api/device-post-registeredowners.md
       - name: 登録済みユーザーを作成する
         href: api/device-post-registeredusers.md
-      - name: デバイスを一覧表示する
+      - name: デバイス グループを一覧表示する
         href: api/device-list-memberof.md
     - name: ディレクトリ オブジェクト
       href: resources/directoryobject.md
@@ -3464,7 +3465,7 @@ items:
         href: api/contactfolder-update.md
       - name: 連絡先フォルダーを削除する
         href: api/contactfolder-delete.md
-      - name: 連絡先フォルダーの差分を取得する
+      - name: 連絡先フォルダーを取得する
         href: api/contactfolder-delta.md
       - name: 子フォルダーを一覧表示する
         href: api/contactfolder-list-childfolders.md
@@ -3719,6 +3720,7 @@ items:
         href: api/alert-update.md
     - name: エラー
       href: resources/security-error-codes.md
+    displayname: Security API, Microsoft Intelligent Security Graph
   - name: サイトとリスト
     displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
     href: resources/sharepoint.md
@@ -3928,9 +3930,9 @@ items:
         href: api/teamsappinstallation-delete.md
       - name: アプリ カタログを公開する
         href: api/teamsapp-publish.md
-      - name: カタログにあるアプリを一覧表示する
+      - name: カタログのアプリを一覧表示する
         href: api/teamsapp-list.md
-      - name: カタログにあるアプリを更新する
+      - name: カタログのアプリを更新する
         href: api/teamsapp-update.md
       - name: カタログからアプリを削除する
         href: api/teamsapp-delete.md
@@ -4136,7 +4138,7 @@ items:
     - name: サブスクリプション
       href: resources/subscription.md
       items:
-      - name: サブスクリプションを一覧表示する
+      - name: サブスクリプションをリストする
         href: api/subscription-list.md
       - name: サブスクリプションを取得する
         href: api/subscription-get.md
@@ -4147,9 +4149,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 1339855adb73ed440f159043c7d5d60e65752ebd
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 4295a10b58fa5a762811291710233df5b2d333aa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760973"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157044"

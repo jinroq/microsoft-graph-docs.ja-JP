@@ -1,40 +1,40 @@
 ---
 title: omaSettingBoolean リソースの種類
 description: OMA 設定のブール定義。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5753bbe5c434b8d46d80ed79ab3e995dadfcdba
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 739c7377b2b85ff3bae9dd0cf755961a9ca3cbb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407201"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161594"
 ---
-# <a name="omasettingboolean-resource-type"></a><span data-ttu-id="69dfc-103">omaSettingBoolean リソースの種類</span><span class="sxs-lookup"><span data-stu-id="69dfc-103">omaSettingBoolean resource type</span></span>
+# <a name="omasettingboolean-resource-type"></a><span data-ttu-id="de2f2-103">omaSettingBoolean リソースの種類</span><span class="sxs-lookup"><span data-stu-id="de2f2-103">omaSettingBoolean resource type</span></span>
 
-> <span data-ttu-id="69dfc-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="69dfc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="69dfc-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="69dfc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="de2f2-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="de2f2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="69dfc-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="69dfc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="de2f2-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="de2f2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="69dfc-107">OMA 設定のブール定義。</span><span class="sxs-lookup"><span data-stu-id="69dfc-107">OMA Settings Boolean definition.</span></span>
+<span data-ttu-id="de2f2-106">OMA 設定のブール定義。</span><span class="sxs-lookup"><span data-stu-id="de2f2-106">OMA Settings Boolean definition.</span></span>
 
 
-<span data-ttu-id="69dfc-108">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="69dfc-108">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
+<span data-ttu-id="de2f2-107">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="de2f2-107">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="69dfc-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="69dfc-109">Properties</span></span>
-|<span data-ttu-id="69dfc-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="69dfc-110">Property</span></span>|<span data-ttu-id="69dfc-111">型</span><span class="sxs-lookup"><span data-stu-id="69dfc-111">Type</span></span>|<span data-ttu-id="69dfc-112">説明</span><span class="sxs-lookup"><span data-stu-id="69dfc-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="de2f2-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de2f2-108">Properties</span></span>
+|<span data-ttu-id="de2f2-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de2f2-109">Property</span></span>|<span data-ttu-id="de2f2-110">型</span><span class="sxs-lookup"><span data-stu-id="de2f2-110">Type</span></span>|<span data-ttu-id="de2f2-111">説明</span><span class="sxs-lookup"><span data-stu-id="de2f2-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="69dfc-113">displayName</span><span class="sxs-lookup"><span data-stu-id="69dfc-113">displayName</span></span>|<span data-ttu-id="69dfc-114">文字列</span><span class="sxs-lookup"><span data-stu-id="69dfc-114">String</span></span>|<span data-ttu-id="69dfc-115">表示名。</span><span class="sxs-lookup"><span data-stu-id="69dfc-115">Display Name.</span></span> <span data-ttu-id="69dfc-116">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="69dfc-116">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="69dfc-117">説明</span><span class="sxs-lookup"><span data-stu-id="69dfc-117">description</span></span>|<span data-ttu-id="69dfc-118">String</span><span class="sxs-lookup"><span data-stu-id="69dfc-118">String</span></span>|<span data-ttu-id="69dfc-119">説明。</span><span class="sxs-lookup"><span data-stu-id="69dfc-119">Description.</span></span> <span data-ttu-id="69dfc-120">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="69dfc-120">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="69dfc-121">omaUri</span><span class="sxs-lookup"><span data-stu-id="69dfc-121">omaUri</span></span>|<span data-ttu-id="69dfc-122">文字列</span><span class="sxs-lookup"><span data-stu-id="69dfc-122">String</span></span>|<span data-ttu-id="69dfc-123">OMA。</span><span class="sxs-lookup"><span data-stu-id="69dfc-123">OMA.</span></span> <span data-ttu-id="69dfc-124">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="69dfc-124">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="69dfc-125">value</span><span class="sxs-lookup"><span data-stu-id="69dfc-125">value</span></span>|<span data-ttu-id="69dfc-126">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="69dfc-126">Boolean</span></span>|<span data-ttu-id="69dfc-127">値。</span><span class="sxs-lookup"><span data-stu-id="69dfc-127">Value.</span></span>|
+|<span data-ttu-id="de2f2-112">displayName</span><span class="sxs-lookup"><span data-stu-id="de2f2-112">displayName</span></span>|<span data-ttu-id="de2f2-113">String</span><span class="sxs-lookup"><span data-stu-id="de2f2-113">String</span></span>|<span data-ttu-id="de2f2-114">表示名。</span><span class="sxs-lookup"><span data-stu-id="de2f2-114">Display Name.</span></span> <span data-ttu-id="de2f2-115">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="de2f2-115">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="de2f2-116">説明</span><span class="sxs-lookup"><span data-stu-id="de2f2-116">description</span></span>|<span data-ttu-id="de2f2-117">String</span><span class="sxs-lookup"><span data-stu-id="de2f2-117">String</span></span>|<span data-ttu-id="de2f2-118">説明。</span><span class="sxs-lookup"><span data-stu-id="de2f2-118">Description.</span></span> <span data-ttu-id="de2f2-119">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="de2f2-119">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="de2f2-120">omaUri</span><span class="sxs-lookup"><span data-stu-id="de2f2-120">omaUri</span></span>|<span data-ttu-id="de2f2-121">文字列</span><span class="sxs-lookup"><span data-stu-id="de2f2-121">String</span></span>|<span data-ttu-id="de2f2-122">OMA。</span><span class="sxs-lookup"><span data-stu-id="de2f2-122">OMA.</span></span> <span data-ttu-id="de2f2-123">[omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="de2f2-123">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="de2f2-124">value</span><span class="sxs-lookup"><span data-stu-id="de2f2-124">value</span></span>|<span data-ttu-id="de2f2-125">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="de2f2-125">Boolean</span></span>|<span data-ttu-id="de2f2-126">値。</span><span class="sxs-lookup"><span data-stu-id="de2f2-126">Value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="69dfc-128">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="69dfc-128">Relationships</span></span>
-<span data-ttu-id="69dfc-129">なし</span><span class="sxs-lookup"><span data-stu-id="69dfc-129">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="de2f2-127">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="de2f2-127">Relationships</span></span>
+<span data-ttu-id="de2f2-128">なし</span><span class="sxs-lookup"><span data-stu-id="de2f2-128">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="69dfc-130">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="69dfc-130">JSON Representation</span></span>
-<span data-ttu-id="69dfc-131">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="69dfc-131">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="de2f2-129">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="de2f2-129">JSON Representation</span></span>
+<span data-ttu-id="de2f2-130">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="de2f2-130">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"

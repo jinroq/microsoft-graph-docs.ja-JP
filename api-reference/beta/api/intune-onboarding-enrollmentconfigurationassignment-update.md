@@ -1,34 +1,34 @@
 ---
 title: enrollmentConfigurationAssignment の更新
 description: enrollmentConfigurationAssignment オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 928abb0869a401015a6485e240d5ebd2336a7d3f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9d33fb62ec3b476717c535e26de02d68a4bda098
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160537"
 ---
-# <a name="update-enrollmentconfigurationassignment"></a><span data-ttu-id="66ff5-103">enrollmentConfigurationAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="66ff5-103">Update enrollmentConfigurationAssignment</span></span>
+# <a name="update-enrollmentconfigurationassignment"></a><span data-ttu-id="31167-103">enrollmentConfigurationAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="31167-103">Update enrollmentConfigurationAssignment</span></span>
 
-> <span data-ttu-id="66ff5-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="66ff5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="66ff5-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="66ff5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="31167-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31167-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="66ff5-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="66ff5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="31167-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="31167-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="66ff5-107">[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="66ff5-107">Update the properties of a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="31167-106">[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="31167-106">Update the properties of a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="66ff5-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="66ff5-108">Prerequisites</span></span>
-<span data-ttu-id="66ff5-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66ff5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="31167-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="31167-107">Prerequisites</span></span>
+<span data-ttu-id="31167-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31167-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="66ff5-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="66ff5-111">Permission type</span></span>|<span data-ttu-id="66ff5-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="66ff5-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="31167-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="31167-110">Permission type</span></span>|<span data-ttu-id="31167-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="31167-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="66ff5-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="66ff5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="66ff5-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="66ff5-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="66ff5-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="66ff5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="66ff5-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="66ff5-116">Not supported.</span></span>|
-|<span data-ttu-id="66ff5-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="66ff5-117">Application</span></span>|<span data-ttu-id="66ff5-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="66ff5-118">Not supported.</span></span>|
+|<span data-ttu-id="31167-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="31167-112">Delegated (work or school account)</span></span>|<span data-ttu-id="31167-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31167-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="31167-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="31167-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="31167-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31167-115">Not supported.</span></span>|
+|<span data-ttu-id="31167-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="31167-116">Application</span></span>|<span data-ttu-id="31167-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31167-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="66ff5-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="66ff5-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31167-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="31167-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "29403603"
 PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="66ff5-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="66ff5-120">Request headers</span></span>
-|<span data-ttu-id="66ff5-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="66ff5-121">Header</span></span>|<span data-ttu-id="66ff5-122">値</span><span class="sxs-lookup"><span data-stu-id="66ff5-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="31167-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31167-119">Request headers</span></span>
+|<span data-ttu-id="31167-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31167-120">Header</span></span>|<span data-ttu-id="31167-121">値</span><span class="sxs-lookup"><span data-stu-id="31167-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="66ff5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="66ff5-123">Authorization</span></span>|<span data-ttu-id="66ff5-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="66ff5-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="66ff5-125">Accept</span><span class="sxs-lookup"><span data-stu-id="66ff5-125">Accept</span></span>|<span data-ttu-id="66ff5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="66ff5-126">application/json</span></span>|
+|<span data-ttu-id="31167-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="31167-122">Authorization</span></span>|<span data-ttu-id="31167-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="31167-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="31167-124">承諾</span><span class="sxs-lookup"><span data-stu-id="31167-124">Accept</span></span>|<span data-ttu-id="31167-125">application/json</span><span class="sxs-lookup"><span data-stu-id="31167-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="66ff5-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="66ff5-127">Request body</span></span>
-<span data-ttu-id="66ff5-128">要求本文で、[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="66ff5-128">In the request body, supply a JSON representation for the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31167-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="31167-126">Request body</span></span>
+<span data-ttu-id="31167-127">要求本文で、[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="31167-127">In the request body, supply a JSON representation for the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
 
-<span data-ttu-id="66ff5-129">次の表に、[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="66ff5-129">The following table shows the properties that are required when you create the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
+<span data-ttu-id="31167-128">次の表に、[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="31167-128">The following table shows the properties that are required when you create the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
 
-|<span data-ttu-id="66ff5-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="66ff5-130">Property</span></span>|<span data-ttu-id="66ff5-131">型</span><span class="sxs-lookup"><span data-stu-id="66ff5-131">Type</span></span>|<span data-ttu-id="66ff5-132">説明</span><span class="sxs-lookup"><span data-stu-id="66ff5-132">Description</span></span>|
+|<span data-ttu-id="31167-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="31167-129">Property</span></span>|<span data-ttu-id="31167-130">型</span><span class="sxs-lookup"><span data-stu-id="31167-130">Type</span></span>|<span data-ttu-id="31167-131">説明</span><span class="sxs-lookup"><span data-stu-id="31167-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="66ff5-133">id</span><span class="sxs-lookup"><span data-stu-id="66ff5-133">id</span></span>|<span data-ttu-id="66ff5-134">String</span><span class="sxs-lookup"><span data-stu-id="66ff5-134">String</span></span>|<span data-ttu-id="66ff5-135">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="66ff5-135">Not yet documented</span></span>|
-|<span data-ttu-id="66ff5-136">target</span><span class="sxs-lookup"><span data-stu-id="66ff5-136">target</span></span>|[<span data-ttu-id="66ff5-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="66ff5-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="66ff5-138">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="66ff5-138">Not yet documented</span></span>|
+|<span data-ttu-id="31167-132">id</span><span class="sxs-lookup"><span data-stu-id="31167-132">id</span></span>|<span data-ttu-id="31167-133">String</span><span class="sxs-lookup"><span data-stu-id="31167-133">String</span></span>|<span data-ttu-id="31167-134">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="31167-134">Not yet documented</span></span>|
+|<span data-ttu-id="31167-135">target</span><span class="sxs-lookup"><span data-stu-id="31167-135">target</span></span>|[<span data-ttu-id="31167-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="31167-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="31167-137">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="31167-137">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="66ff5-139">応答</span><span class="sxs-lookup"><span data-stu-id="66ff5-139">Response</span></span>
-<span data-ttu-id="66ff5-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="66ff5-140">If successful, this method returns a `200 OK` response code and an updated [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="31167-138">応答</span><span class="sxs-lookup"><span data-stu-id="31167-138">Response</span></span>
+<span data-ttu-id="31167-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="31167-139">If successful, this method returns a `200 OK` response code and an updated [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66ff5-141">例</span><span class="sxs-lookup"><span data-stu-id="66ff5-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="31167-140">例</span><span class="sxs-lookup"><span data-stu-id="31167-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="66ff5-142">要求</span><span class="sxs-lookup"><span data-stu-id="66ff5-142">Request</span></span>
-<span data-ttu-id="66ff5-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="66ff5-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="31167-141">要求</span><span class="sxs-lookup"><span data-stu-id="31167-141">Request</span></span>
+<span data-ttu-id="31167-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="31167-142">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
@@ -75,8 +75,8 @@ Content-length: 173
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="66ff5-144">応答</span><span class="sxs-lookup"><span data-stu-id="66ff5-144">Response</span></span>
-<span data-ttu-id="66ff5-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="66ff5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="31167-143">応答</span><span class="sxs-lookup"><span data-stu-id="31167-143">Response</span></span>
+<span data-ttu-id="31167-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="31167-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

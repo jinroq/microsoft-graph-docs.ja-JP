@@ -1,33 +1,33 @@
 ---
-title: installState 列挙型
-description: インストール状態の値です。
-localization_priority: Normal
+title: installstate 列挙型
+description: インストール状態の値を指定できます。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c3a1d86257611cb00d8ee2c4ee0b8173b03f197
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0554df30b4d7165c0164749730e2584af6cc35fd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425877"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158213"
 ---
-# <a name="installstate-enum-type"></a><span data-ttu-id="6f5c1-103">installState 列挙型</span><span class="sxs-lookup"><span data-stu-id="6f5c1-103">installState enum type</span></span>
+# <a name="installstate-enum-type"></a><span data-ttu-id="19a16-103">installstate 列挙型</span><span class="sxs-lookup"><span data-stu-id="19a16-103">installState enum type</span></span>
 
-> <span data-ttu-id="6f5c1-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6f5c1-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="19a16-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19a16-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6f5c1-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="19a16-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="19a16-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6f5c1-107">インストール状態の値です。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-107">Possible values for install state.</span></span>
+<span data-ttu-id="19a16-106">インストール状態の値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="19a16-106">Possible values for install state.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6f5c1-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="6f5c1-108">Members</span></span>
-|<span data-ttu-id="6f5c1-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="6f5c1-109">Member</span></span>|<span data-ttu-id="6f5c1-110">値</span><span class="sxs-lookup"><span data-stu-id="6f5c1-110">Value</span></span>|<span data-ttu-id="6f5c1-111">説明</span><span class="sxs-lookup"><span data-stu-id="6f5c1-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="19a16-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="19a16-107">Members</span></span>
+|<span data-ttu-id="19a16-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="19a16-108">Member</span></span>|<span data-ttu-id="19a16-109">値</span><span class="sxs-lookup"><span data-stu-id="19a16-109">Value</span></span>|<span data-ttu-id="19a16-110">説明</span><span class="sxs-lookup"><span data-stu-id="19a16-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6f5c1-112">質問表</span><span class="sxs-lookup"><span data-stu-id="6f5c1-112">notApplicable</span></span>|<span data-ttu-id="6f5c1-113">0</span><span class="sxs-lookup"><span data-stu-id="6f5c1-113">0</span></span>|<span data-ttu-id="6f5c1-114">適用されません。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-114">Not Applicable.</span></span>|
-|<span data-ttu-id="6f5c1-115">インストールされています。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-115">installed</span></span>|<span data-ttu-id="6f5c1-116">1</span><span class="sxs-lookup"><span data-stu-id="6f5c1-116">1</span></span>|<span data-ttu-id="6f5c1-117">インストールされています。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-117">Installed.</span></span>|
-|<span data-ttu-id="6f5c1-118">失敗しました。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-118">failed</span></span>|<span data-ttu-id="6f5c1-119">2</span><span class="sxs-lookup"><span data-stu-id="6f5c1-119">2</span></span>|<span data-ttu-id="6f5c1-120">失敗しました。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-120">Failed.</span></span>|
-|<span data-ttu-id="6f5c1-121">notInstalled</span><span class="sxs-lookup"><span data-stu-id="6f5c1-121">notInstalled</span></span>|<span data-ttu-id="6f5c1-122">3</span><span class="sxs-lookup"><span data-stu-id="6f5c1-122">3</span></span>|<span data-ttu-id="6f5c1-123">インストールされていません。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-123">Not Installed.</span></span>|
-|<span data-ttu-id="6f5c1-124">uninstallFailed</span><span class="sxs-lookup"><span data-stu-id="6f5c1-124">uninstallFailed</span></span>|<span data-ttu-id="6f5c1-125">4</span><span class="sxs-lookup"><span data-stu-id="6f5c1-125">4</span></span>|<span data-ttu-id="6f5c1-126">アンインストールできませんでした。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-126">Uninstall Failed.</span></span>|
-|<span data-ttu-id="6f5c1-127">不明</span><span class="sxs-lookup"><span data-stu-id="6f5c1-127">unknown</span></span>|<span data-ttu-id="6f5c1-128">5</span><span class="sxs-lookup"><span data-stu-id="6f5c1-128">5</span></span>|<span data-ttu-id="6f5c1-129">不明。</span><span class="sxs-lookup"><span data-stu-id="6f5c1-129">Unknown.</span></span>|
+|<span data-ttu-id="19a16-111">notapplicable</span><span class="sxs-lookup"><span data-stu-id="19a16-111">notApplicable</span></span>|<span data-ttu-id="19a16-112">.0</span><span class="sxs-lookup"><span data-stu-id="19a16-112">0</span></span>|<span data-ttu-id="19a16-113">該当なし。</span><span class="sxs-lookup"><span data-stu-id="19a16-113">Not Applicable.</span></span>|
+|<span data-ttu-id="19a16-114">れる</span><span class="sxs-lookup"><span data-stu-id="19a16-114">installed</span></span>|<span data-ttu-id="19a16-115">1-d</span><span class="sxs-lookup"><span data-stu-id="19a16-115">1</span></span>|<span data-ttu-id="19a16-116">れる.</span><span class="sxs-lookup"><span data-stu-id="19a16-116">Installed.</span></span>|
+|<span data-ttu-id="19a16-117">フェール</span><span class="sxs-lookup"><span data-stu-id="19a16-117">failed</span></span>|<span data-ttu-id="19a16-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="19a16-118">2</span></span>|<span data-ttu-id="19a16-119">フェール.</span><span class="sxs-lookup"><span data-stu-id="19a16-119">Failed.</span></span>|
+|<span data-ttu-id="19a16-120">notinstalled</span><span class="sxs-lookup"><span data-stu-id="19a16-120">notInstalled</span></span>|<span data-ttu-id="19a16-121">1/3</span><span class="sxs-lookup"><span data-stu-id="19a16-121">3</span></span>|<span data-ttu-id="19a16-122">インストールされていません。</span><span class="sxs-lookup"><span data-stu-id="19a16-122">Not Installed.</span></span>|
+|<span data-ttu-id="19a16-123">アンインストールの失敗</span><span class="sxs-lookup"><span data-stu-id="19a16-123">uninstallFailed</span></span>|<span data-ttu-id="19a16-124">2/4</span><span class="sxs-lookup"><span data-stu-id="19a16-124">4</span></span>|<span data-ttu-id="19a16-125">アンインストールに失敗しました。</span><span class="sxs-lookup"><span data-stu-id="19a16-125">Uninstall Failed.</span></span>|
+|<span data-ttu-id="19a16-126">不明</span><span class="sxs-lookup"><span data-stu-id="19a16-126">unknown</span></span>|<span data-ttu-id="19a16-127">5</span><span class="sxs-lookup"><span data-stu-id="19a16-127">5</span></span>|<span data-ttu-id="19a16-128">わかり.</span><span class="sxs-lookup"><span data-stu-id="19a16-128">Unknown.</span></span>|
 
 
 

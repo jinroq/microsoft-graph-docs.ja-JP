@@ -1,30 +1,30 @@
 ---
 title: ratingUnitedKingdomTelevisionType 列挙型
-description: 英国のテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: 英国でのテレビコンテンツの評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa7f6c0753bb5e5c0d74925a2feea5b16e8c663f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2f048c9b34cc7cebbfe5a6caa21d6499ad8b8f45
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158570"
 ---
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a><span data-ttu-id="cbe8d-103">ratingUnitedKingdomTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="cbe8d-103">ratingUnitedKingdomTelevisionType enum type</span></span>
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a><span data-ttu-id="a8576-103">ratingUnitedKingdomTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="a8576-103">ratingUnitedKingdomTelevisionType enum type</span></span>
 
-> <span data-ttu-id="cbe8d-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cbe8d-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a8576-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a8576-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cbe8d-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a8576-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a8576-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cbe8d-107">英国のテレビのコンテンツの規制ラベル</span><span class="sxs-lookup"><span data-stu-id="cbe8d-107">TV content rating labels in United Kingdom</span></span>
+<span data-ttu-id="a8576-106">英国でのテレビコンテンツの評価のラベル</span><span class="sxs-lookup"><span data-stu-id="a8576-106">TV content rating labels in United Kingdom</span></span>
 
-## <a name="members"></a><span data-ttu-id="cbe8d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="cbe8d-108">Members</span></span>
-|<span data-ttu-id="cbe8d-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="cbe8d-109">Member</span></span>|<span data-ttu-id="cbe8d-110">値</span><span class="sxs-lookup"><span data-stu-id="cbe8d-110">Value</span></span>|<span data-ttu-id="cbe8d-111">説明</span><span class="sxs-lookup"><span data-stu-id="cbe8d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="a8576-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="a8576-107">Members</span></span>
+|<span data-ttu-id="a8576-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="a8576-108">Member</span></span>|<span data-ttu-id="a8576-109">値</span><span class="sxs-lookup"><span data-stu-id="a8576-109">Value</span></span>|<span data-ttu-id="a8576-110">説明</span><span class="sxs-lookup"><span data-stu-id="a8576-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cbe8d-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="cbe8d-112">allAllowed</span></span>|<span data-ttu-id="cbe8d-113">0</span><span class="sxs-lookup"><span data-stu-id="cbe8d-113">0</span></span>|<span data-ttu-id="cbe8d-114">既定値、すべてのテレビ番組コンテンツを許可します。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="cbe8d-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="cbe8d-115">allBlocked</span></span>|<span data-ttu-id="cbe8d-116">1</span><span class="sxs-lookup"><span data-stu-id="cbe8d-116">1</span></span>|<span data-ttu-id="cbe8d-117">任意のテレビ番組コンテンツを許可しません。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="cbe8d-118">caution</span><span class="sxs-lookup"><span data-stu-id="cbe8d-118">caution</span></span>|<span data-ttu-id="cbe8d-119">2</span><span class="sxs-lookup"><span data-stu-id="cbe8d-119">2</span></span>|<span data-ttu-id="cbe8d-120">テレビの内容の警告メッセージを許可します。</span><span class="sxs-lookup"><span data-stu-id="cbe8d-120">Allowing TV contents with a warning message</span></span>|
+|<span data-ttu-id="a8576-111">allallowed</span><span class="sxs-lookup"><span data-stu-id="a8576-111">allAllowed</span></span>|<span data-ttu-id="a8576-112">.0</span><span class="sxs-lookup"><span data-stu-id="a8576-112">0</span></span>|<span data-ttu-id="a8576-113">既定値、すべてのテレビ番組にコンテンツを表示する</span><span class="sxs-lookup"><span data-stu-id="a8576-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="a8576-114">allblocked</span><span class="sxs-lookup"><span data-stu-id="a8576-114">allBlocked</span></span>|<span data-ttu-id="a8576-115">1-d</span><span class="sxs-lookup"><span data-stu-id="a8576-115">1</span></span>|<span data-ttu-id="a8576-116">すべてのテレビ番組の内容を許可しない</span><span class="sxs-lookup"><span data-stu-id="a8576-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="a8576-117">caution</span><span class="sxs-lookup"><span data-stu-id="a8576-117">caution</span></span>|<span data-ttu-id="a8576-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="a8576-118">2</span></span>|<span data-ttu-id="a8576-119">警告メッセージを使用してテレビの内容を許可する</span><span class="sxs-lookup"><span data-stu-id="a8576-119">Allowing TV contents with a warning message</span></span>|
 
 
 
