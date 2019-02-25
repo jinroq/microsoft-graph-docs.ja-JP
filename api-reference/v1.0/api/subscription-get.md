@@ -3,12 +3,12 @@ title: サブスクリプションを取得する
 description: サブスクリプションのプロパティとリレーションシップを取得します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 4c55c81fdb26bb706ad270e5d53ded712ea69b22
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156470"
 ---
 # <a name="get-subscription"></a>サブスクリプションを取得する
 
@@ -16,19 +16,30 @@ ms.locfileid: "27956977"
 
 ## <a name="permissions"></a>アクセス許可
 
-次の表に、各リソースに必要な、推奨されるアクセス許可を示します。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+要求されたリソースとアクセス許可の種類 (委任またはアプリケーション) に応じて、以下の表で指定されているアクセス許可がこの API を呼び出すため必要な最小限の特権となります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| リソースの種類/項目        | アクセス許可          |
-|-----------------------------|---------------------|
-| 連絡先                    | Contacts.Read       |
-| スレッド               | Group.Read.All      |
-| イベント                      | Calendars.Read      |
-| メッセージ                    | Mail.Read           |
-| グループ                      | Group.Read.All      |
-| ユーザー                       | User.Read.All       |
-| ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
-| ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
-|セキュリティの警告| SecurityEvents.ReadWrite.All |
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+|[連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポート対象外 | Files.ReadWrite | サポート対象外 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
+|[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
+|[グループ会話](../resources/conversation.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+|[メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[セキュリティの警告](../resources/alert.md) | SecurityEvents.ReadWrite.All | サポート対象外 | SecurityEvents.ReadWrite.All |
+|[ユーザー](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+> **注:** OneDrive と Outlook のアイテムのサブスクリプションについては、追加の制限があります。 この制限は、サブスクリプションの作成および管理 (サブスクリプションの取得、更新、削除) に適用されます。
+
+- 個人用 OneDrive では、そのドライブのルート フォルダーまたは任意のサブフォルダーにサブスクライブできます。 OneDrive for Business の場合、サブスクライブできるのはルート フォルダーだけです。 サブスクライブしたフォルダー、または階層内の任意のファイル、フォルダー、あるいは他の driveItem オブジェクトの要求された種類の変更について通知が送信されます。 **ドライブ**、または個々のファイルなどのフォルダーではない **driveItem** インスタンスをサブスクライブすることはできません。
+
+- Outlook における委任されたアクセス許可では、サインインしているユーザーのメールボックス内のフォルダーにあるアイテムのみをサブスクライブできます。 つまり、委任されたアクセス許可 Calendars.Read を使用して、別のユーザーのメールボックス内のイベントをサブスクライブすることなどはできません。
+- _共有または委任_フォルダーの Outlook 連絡先、イベント、メッセージの変更通知をサブスクライブするには、次のようにします。
+
+  - 対応するアプリケーション アクセス許可を使用して、テナントの_任意_のユーザーのフォルダーまたはメールボックス内にあるアイテムの変更をサブスクライブします。
+  - Outlook 共有アクセス許可 (Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared、および対応する読み取り/書き込み) は使用しないでください。それらは、共有フォルダーまたは委任フォルダーにあるアイテムの変更通知のサブスクライブをサポート**していない**からです。
+ 
 
 ## <a name="http-request"></a>HTTP 要求
 

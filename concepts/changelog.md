@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: dc4c2d62bbbf3191c2472891e828c13a386e3c7c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057072"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139677"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -36,6 +36,27 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に導入しました。|
 |追加 |v1.0|relatedContacts という新しいプロパティを [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) に導入しました。|
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい列挙型を追加しました。<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
+|追加|ベータ版|[depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) エンティティに **roleScopeTagIds** プロパティを追加しました|
+|追加|ベータ版|[iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) エンティティに **autoFillForceAuthentication**、**cellularBlockPlanModification**、**classroomForceAutomaticallyJoinClasses**、**classroomForceUnpromptedAppAndDeviceLock**、**esimBlockModification**、**proximityBlockSetupToNewDevice**、**softwareUpdatesEnforcedDelayInDays**、**softwareUpdatesForceDelayed** の各プロパティを追加しました|
+|追加|ベータ版|[macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) エンティティに **softwareUpdatesEnforcedDelayInDays**、**softwareUpdatesForceDelayed**、**contentCachingBlocked** の各プロパティを追加しました|
+|追加|ベータ版|[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta) エンティティに **licensingType** プロパティを追加しました|
+|追加|ベータ版|[windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) エンティティに **defenderSecurityCenterDisableClearTpmUI**、**defenderSecurityCenterDisableNotificationAreaUI**、**defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI**、**defenderAdobeReaderLaunchChildProcess**、**defenderOfficeCommunicationAppsLaunchChildProcess** の各プロパティを追加しました|
+|追加|ベータ版|[windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) エンティティに **edgeKioskModeRestriction**、**edgeKioskResetAfterIdleTimeInMinutes**、**defenderScheduleScanEnableLowCpuPriority**、**defenderDisableCatchupQuickScan**、**defenderDisableCatchupFullScan**、**edgeBlockSearchEngineCustomization** の各プロパティを追加しました|
+|追加|ベータ版|[windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) エンティティに **enableWhiteGlove** プロパティを追加しました|
+|追加|ベータ版|[windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta) エンティティに **restrictPeerSelectionBy**、**groupIdSource**、**bandwidthMode**、**backgroundDownloadFromHttpDelayInSeconds**、**foregroundDownloadFromHttpDelayInSeconds**、**minimumRamAllowedToPeerInGigabytes**、**minimumDiskSizeAllowedToPeerInGigabytes**、**minimumFileSizeToCacheInMegabytes**、**minimumBatteryPercentageAllowedToUpload**、**modifyCacheLocation**、**maximumCacheAgeInDays**、**maximumCacheSize**、**vpnPeerCaching** の各プロパティを追加しました|
+|追加|ベータ版|[windowsInformationProtectionWipeAction](/graph/api/resources/intune-mam-windowsinformationprotectionwipeaction?view=graph-rest-beta) エンティティに **lastCheckInDateTime** プロパティを追加しました|
+|追加|ベータ版|[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) エンティティに **managedDeviceEncryptionStates** ナビゲーション プロパティを追加しました|
+|追加|ベータ版|[configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta) 複合型に **endpointProtection** プロパティと **officeApps** プロパティを追加しました|
+|追加|ベータ版|[win32LobAppMsiInformation](/graph/api/resources/intune-apps-win32lobappmsiinformation?view=graph-rest-beta) 複合型に **productName** プロパティと **publisher** プロパティを追加しました|
+|追加|ベータ版|[managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta) 列挙型に **warn** メンバーを追加しました|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 

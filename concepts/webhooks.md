@@ -3,12 +3,12 @@ title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168496"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
@@ -20,28 +20,28 @@ Microsoft Graph はサブスクリプション要求を受け入れると、サ�
 
 Microsoft Graph の API を使用すると、アプリは次のリソースに変更を登録できます。
 
-- メッセージ
-- イベント
-- 連絡先
-- ユーザー
-- グループ
-- グループ会話
-- SharePoint サイトに関連付けられたドライブを含む、OneDrive で共有されるコンテンツ
-- ユーザーの個人用 OneDrive フォルダー
-- セキュリティの警告
+- Outlook [メッセージ][]
+- Outlook [イベント][]
+- Outlook 個人用[連絡先][]
+- [ユーザー][]
+- [グループ][]
+- Office 365 グループ[会話][]
+- ユーザーの個人用 OneDrive 上の_任意のフォルダー_の [driveItem][] 階層内のコンテンツ
+- OneDrive for Business 上の_ルート フォルダー_の [driveItem][] 階層内のコンテンツ
+- セキュリティの[警告][]
 
-たとえば、特定のメール フォルダーへサブスクリプションを作成できます: `me/mailFolders('inbox')/messages`
+受信トレイなど特定の Outlook フォルダーに対してサブスクリプションを作成できます: `me/mailFolders('inbox')/messages`
 
 あるいは、最上位レベルのリソース: `me/messages`、`me/contacts`、`me/events`、`users`、または `groups`
 
 あるいは、特定のリソース インスタンス: `users/{id}`、`groups/{id}`、`groups/{id}/conversations`
 
-あるいは、Sharepoint/OneDrive for Business ドライブ: `/drive/root`
-
-または、ユーザーの個人用 OneDrive: `/drives/{id}/root`
+または、ユーザーの個人用 OneDrive 内の任意のフォルダー: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-または、新しい[セキュリティ API の警告](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+あるいは、Sharepoint/OneDrive for Business ドライブのルート フォルダー: `/drive/root`
+
+または、新しい[セキュリティ API](security-concept-overview.md) の警告: `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD リソースの制限
 
@@ -240,8 +240,11 @@ GitHub では、次のコード サンプルを利用できます。
 - [サブスクリプションを取得する](/graph/api/subscription-get?view=graph-rest-1.0)
 - [サブスクリプションを作成する](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
+[連絡先]: /graph/api/resources/contact?view=graph-rest-1.0
+[会話]: /graph/api/resources/conversation?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
+[イベント]: /graph/api/resources/event?view=graph-rest-1.0
+[グループ]: /graph/api/resources/group?view=graph-rest-1.0
+[メッセージ]: /graph/api/resources/message?view=graph-rest-1.0
+[ユーザー]: /graph/api/resources/user?view=graph-rest-1.0
+[警告]: /graph/api/resources/alert?view=graph-rest-1.0

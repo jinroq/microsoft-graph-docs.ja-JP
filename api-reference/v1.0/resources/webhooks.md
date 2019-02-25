@@ -1,55 +1,56 @@
 ---
-title: 変更通知を使用して Microsoft グラフ API を取得するには
-description: Microsoft グラフ REST API では、webhook メカニズムを使用して、クライアントに通知を配信します。 クライアントは、通知を受信するのにはそれ自身の URL を構成する web サービスです。 クライアント アプリケーションは、変更時に状態を更新するのには通知を使用します。 購読して、着信の通知を処理する方法を含め、詳細については、セットを参照してくださいユーザー データの変更の通知を設定します。
+title: Microsoft Graph API を使用して変更通知を取得する
+description: Microsoft Graph の REST API は、webhook メカニズムを使用して、クライアントに変更通知を配信します。 クライアントは、通知を受信するために自身の URL を構成する Web サービスです。 クライアント アプリは通知を使用して、変更時に状態を更新します。 着信通知のサブスクライブ方法や処理方法などの詳細については、「ユーザー データの変更に関する通知の設定」をご覧ください。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: cb522c50b2cd9fec007dd32d4257dd68fc56ea6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159375"
 ---
-# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>変更通知を使用して Microsoft グラフ API を取得するには
+# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Microsoft Graph API を使用して変更通知を取得する
 
-Microsoft グラフ REST API では、webhook メカニズムを使用して、クライアントに通知を配信します。 クライアントは、通知を受信するのにはそれ自身の URL を構成する web サービスです。 クライアント アプリケーションは、変更時に状態を更新するのには通知を使用します。 詳細についてなどを購読、受信通知を処理し、[ユーザー データの変更の通知を設定する](/graph/webhooks)を参照してください。
+Microsoft Graph の REST API は、webhook メカニズムを使用して、クライアントに変更通知を配信します。 クライアントは、通知を受信するために自身の URL を構成する Web サービスです。 クライアント アプリは通知を使用して、変更時に状態を更新します。 着信通知のサブスクライブ方法や処理方法などの詳細については、「[ユーザー データの変更に関する通知の設定](/graph/webhooks)」をご覧ください。
 
-Microsoft Graph の API を使用すると、アプリは次のリソースに変更を登録できます。
+Microsoft Graph の API を使用すると、アプリは次のリソースの変更にサブスクライブできます。
 
-- メッセージ
-- イベント
-- 連絡先
-- ユーザー
-- グループ
-- グループ会話
-- SharePoint サイトに関連付けられているドライブを含む、OneDrive で共有されているコンテンツ
-- ユーザーの個人用の OneDrive フォルダー
-- セキュリティの警告
+- Outlook [メッセージ][]
+- Outlook [イベント][]
+- Outlook 個人用[連絡先][]
+- [ユーザー][]
+- [グループ][]
+- Office 365 グループ[会話][]
+- ユーザーの個人用 OneDrive 上の_任意のフォルダーの_ [driveItem][] 階層内のコンテンツ
+- OneDrive for Business 上の_ルート フォルダーの _ [driveItem][] 階層内のコンテンツ
+- セキュリティの[警告][]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 一般に、サブスクリプション操作にはリソースへの読み取りアクセス許可が必要です。たとえば、メッセージの通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。記事「[サブスクリプションを作成する](../api/subscription-post-subscriptions.md)」では、リソースの種類ごとに必要なアクセス許可がリストされています。次の表に、アプリが特定のリソースの種類に対して Webhook を使用するために要求できるアクセス許可の種類を示します。
 
 | アクセス許可の種類                        | サポートされているリソースの種類                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委任 - 職場または学校アカウント     | [連絡先][]、[会話][]、[ドライブ][]、[イベント][]、[グループ][]、[メッセージ][]、[ユーザー][]は、[警告][] |
-| 委任 - 個人用の Microsoft アカウント | [問い合わせて][]、[ドライブ][]、[イベント][]、[メッセージ][]                                        |
-| アプリケーション                            | [連絡先][]、[会話][]、[ドライブ][]、[イベント][]、[グループ][]、[メッセージ][]、[ユーザー][]は、[警告][] |
+| 委任 - 職場または学校アカウント     | [警告][]、[連絡先][]、[会話][]、[driveItem][]、[イベント][]、[グループ][]、[メッセージ][]、[ユーザー][]|
+| 委任 - 個人用の Microsoft アカウント | [連絡先][]、[driveItem][]、[イベント][]、[メッセージ][]                                        |
+| アプリケーション                            | [警告][]、[連絡先][]、[driveItem][]、[イベント][]、[グループ][]、[メッセージ][]、[ユーザー][]|
+
 
 ## <a name="see-also"></a>関連項目
 
-- [Subscription リソースタイプ](./subscription.md)
-- [リストの購読](../api/subscription-list.md)
-- [サブスクリプションを取得する](../api/subscription-get.md)
-- [サブスクリプションを作成する](../api/subscription-post-subscriptions.md)
-- [Update subscription](../api/subscription-update.md)
+- [サブスクリプション リソースの種類](./subscription.md)
+- [サブスクリプションのリスト作成](../api/subscription-list.md)
+- [サブスクリプションの取得](../api/subscription-get.md)
+- [サブスクリプションの作成](../api/subscription-post-subscriptions.md)
+- [サブスクリプションの更新](../api/subscription-update.md)
 - [サブスクリプションの削除](../api/subscription-delete.md)
 
 [連絡先]: ./contact.md
 [会話]: ./conversation.md
-[ドライブ]: ./drive.md
+[driveItem]: ./driveitem.md
 [イベント]: ./event.md
-[group]: ./group.md
-[message]: ./message.md
-[user]: ./user.md
-[アラート]: ./alert.md
+[グループ]: ./group.md
+[メッセージ]: ./message.md
+[ユーザー]: ./user.md
+[警告]: ./alert.md

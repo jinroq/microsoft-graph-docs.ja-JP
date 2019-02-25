@@ -4,12 +4,12 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 48b10fae8b98912981f7132c8bd9761c832c5339
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 544e88f119963132116f88bc4b41ca730387aa8a
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945637"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212383"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
@@ -39,10 +39,10 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|interests|String コレクション|ユーザーが自分の関心事を記述する一覧。|
+|interests|String collection|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |mailNickname|String|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
@@ -59,13 +59,12 @@ PATCH /users/{id | userPrincipalName}
 |onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。**重要:****$** と **_** の文字は、このプロパティを指定するときには使用できません。$filter をサポートします。                            |
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
-|pastProjects|String コレクション|ユーザーが過去のプロジェクトを列挙する一覧。|
+|pastProjects|String collection|ユーザーが過去のプロジェクトを列挙する一覧。|
 |postalCode|String|ユーザーの住所の郵便番号。郵便番号は、ユーザーの国/地域に固有です。アメリカ合衆国では、この属性には、ZIP コードが含まれます。|
 |preferredLanguage|String|ユーザーが設定する言語。ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
-|preferredName|String|ユーザーが設定する名前。|
-|responsibilities|String コレクション|ユーザーが自分の責任の範囲を列挙する一覧。|
-|schools|String コレクション|ユーザーが在籍した学校を列挙する一覧。|
-|skills|String コレクション|ユーザーが自分のスキルを列挙する一覧。|
+|responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
+|schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
+|skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|
 |surname|String|ユーザーの姓。$filter をサポートします。|

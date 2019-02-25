@@ -4,12 +4,12 @@ description: グループ オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: edf1b53beaf519e86669e7ea8a472ea1562766af
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641338"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212418"
 ---
 # <a name="get-group"></a>グループを取得する
 グループ オブジェクトのプロパティとリレーションシップを取得します。
@@ -21,9 +21,9 @@ ms.locfileid: "29641338"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All |
+|アプリケーション | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

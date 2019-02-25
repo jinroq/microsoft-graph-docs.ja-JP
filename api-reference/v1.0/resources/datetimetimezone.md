@@ -2,21 +2,21 @@
 title: dateTimeTimeZone リソースの種類
 description: 特定時点の日付、時刻、およびタイム ゾーンを記述します。
 localization_priority: Priority
-ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827329"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212362"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone リソースの種類
 
 特定時点の日付、時刻、およびタイム ゾーンを記述します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|dateTime|String|特定時点の日付と時刻を組み合わせた表現 (`<date>T<time>`)。|
+|dateTime|String|特定時点の日付と時刻を組み合わせた表現 (`{date}T{time}`、例 `2017-08-29T04:00:00.0000000`)。|
 |timeZone|String|次のいずれかのタイム ゾーン名。|
 
 _TimeZone_ プロパティは、Windows でサポートされている任意のタイム ゾーン、および次のタイム ゾーン名に設定できます。

@@ -3,34 +3,45 @@ title: サブスクリプションを作成する
 description: Microsoft Graph のデータが変更されたときに通知を受信するため、リスナー アプリケーションに登録します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 7b23968620abcb8f9a20e4a7b3598c21dec72980
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6d06e230dd85aadaa4d2b3a4f851b339b34793eb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913887"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157695"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
-Microsoft Graph のデータが変更されたときに通知を受信するため、リスナー アプリケーションに登録します。
+変更の要求された種類が Microsoft Graph の指定されたリソースに発生したときに通知を受信するため、リスナー アプリケーションに登録します。
 
 ## <a name="permissions"></a>アクセス許可
 
-サブスクリプションを作成するにはリソースへの読み取りスコープが必要です。たとえば、通知メッセージを受信するには、アプリに `Mail.Read` アクセス許可が必要です。次の表に、各リソースに必要な、推奨されるアクセス許可を示します。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+ サブスクリプションを作成するにはリソースへの読み取りスコープが必要です。 たとえば、メッセージに関する通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。 
+ 
+ 要求されたリソースとアクセス許可の種類 (委任およびアプリケーション) によっては、以下の表で指定されているアクセス許可がこの API を呼び出すために最小限必要な特権となります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| リソースの種類/項目        | アクセス許可          |
-|-----------------------------|---------------------|
-| 連絡先                    | Contacts.Read       |
-| スレッド               | Group.Read.All      |
-| イベント                      | Calendars.Read      |
-| メッセージ                    | Mail.Read           |
-| グループ                      | Group.Read.All      |
-| ユーザー                       | User.Read.All       |
-| ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
-| ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
-|セキュリティの警告| SecurityEvents.ReadWrite.All |
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+|[連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポート対象外 | Files.ReadWrite | サポート対象外 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
+|[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
+|[グループ会話](../resources/conversation.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+|[メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[セキュリティの警告](../resources/alert.md) | SecurityEvents.ReadWrite.All | サポート対象外 | SecurityEvents.ReadWrite.All |
+|[ユーザー](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
- > **注:**/V1.0 エンドポイントでは、リソースのほとんどのアプリケーションのアクセス許可を使用できます。 ドライブ ルート アイテムがグループ化して OneDrive での会話は、アプリケーションのアクセス許可ではサポートされていません。
+> **注:** OneDrive と Outlook のアイテムに関するサブスクリプションについては、追加の制限があります。 この制限は、サブスクリプションの作成および管理 (サブスクリプションの取得、更新、削除) に適用されます。
+
+- 個人用 OneDrive では、そのドライブのルート フォルダーまたは任意のサブフォルダーにサブスクライブできます。 OneDrive for Business の場合、サブスクライブできるのはルート フォルダーのみです。 サブスクライブしたフォルダー、または階層内の任意のファイル、フォルダー、あるいは他の **driveItem** インスタンスに関する変更の要求された種類についての通知が送信されます。 個別のファイルなどのフォルダーではない、**ドライブ** インスタンスまたは **driveItem** インスタンスをサブスクライブすることはできません。
+
+- Outlook における委任されたアクセス許可では、サインイン ユーザーのメールボックス内のフォルダーにあるアイテムのみをサブスクライブできます。 つまり、たとえば委任されたアクセス許可 Calendars.Read を使用して、別のユーザーのメールボックス内のイベントをサブスクライブすることはできません。
+- _共有または委任_フォルダーの Outlook 連絡先、イベント、メッセージに関する変更通知をサブスクライブするには、次のようにします。
+
+  - 対応するアプリケーション アクセス許可を使用して、テナントの_任意_のユーザーのフォルダーまたはメールボックス内にあるアイテムの変更をサブスクライブします。
+  - Outlook 共有アクセス許可 (Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared、および対応する読み取り/開き込み) は使用しないでください。それらは、共有フォルダーまたは委任フォルダーにあるアイテムの変更通知のサブスクライブをサポート**していない**からです。 
+
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -73,8 +84,8 @@ Content-type: application/json
 }
 ```
 
-要求の本文には、[サブスクリプション](../resources/subscription.md)オブジェクトを JSON 表現したものを指定します。
-`clientState`フィールドは省略可能です。
+要求本文で、[subscription](../resources/subscription.md) オブジェクトの JSON 表記を指定します。
+`clientState` フィールドは省略可能です。
 
 ##### <a name="resources-examples"></a>リソースの例
 
@@ -86,10 +97,10 @@ Content-type: application/json
 |連絡先|me/contacts|
 |カレンダー|me/events|
 |ユーザー|users|
-|グループ|グループ|
+|グループ|groups|
 |会話|groups('*{id}*')/conversations|
 |ドライブ|me/drive/root|
-|セキュリティの警告|セキュリティと警告? $filter eq のステータスを 'New' =|
+|セキュリティの警告|security/alerts?$filter=status eq ‘New’|
 
 ##### <a name="response"></a>応答
 
@@ -120,7 +131,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知エンドポイントの検証
 
-サブスクリプション通知エンドポイント (で指定されている、`notificationUrl`プロパティ) の[ユーザー データの変更の通知の設定](/graph/webhooks#notification-endpoint-validation)で説明したように、検証要求に応答できる必要があります。 検証が失敗した場合、サブスクリプションを作成する要求は 400 不正な要求のエラーを返します。
+サブスクリプションの通知のエンドポイントは (`notificationUrl` プロパティで指定されている)、「[ユーザー データの変更に関する通知の設定](/graph/webhooks#notification-endpoint-validation)」での説明にあるように、検証依頼に応答できなければなりません。 検証に失敗した場合、サブスクリプションを作成する要求は「400 要求が正しくありません」というエラーを返します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
