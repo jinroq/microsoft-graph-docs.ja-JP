@@ -3,27 +3,28 @@ title: importedWindowsAutopilotDeviceIdentityImportStatus 列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 30e63d4291a5f9f2d04c84b139dbb10d5e91e436
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0dae6cb2d8962c10091ecf78a076fe3a371f821b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947533"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258185"
 ---
-# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a><span data-ttu-id="cd20b-103">importedWindowsAutopilotDeviceIdentityImportStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="cd20b-103">importedWindowsAutopilotDeviceIdentityImportStatus enum type</span></span>
+# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a><span data-ttu-id="f9b79-103">importedWindowsAutopilotDeviceIdentityImportStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="f9b79-103">importedWindowsAutopilotDeviceIdentityImportStatus enum type</span></span>
 
-> <span data-ttu-id="cd20b-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd20b-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f9b79-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f9b79-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cd20b-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="cd20b-105">Not yet documented</span></span>
-## <a name="members"></a><span data-ttu-id="cd20b-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="cd20b-106">Members</span></span>
-|<span data-ttu-id="cd20b-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="cd20b-107">Member</span></span>|<span data-ttu-id="cd20b-108">値</span><span class="sxs-lookup"><span data-stu-id="cd20b-108">Value</span></span>|<span data-ttu-id="cd20b-109">説明</span><span class="sxs-lookup"><span data-stu-id="cd20b-109">Description</span></span>|
+<span data-ttu-id="f9b79-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f9b79-105">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="f9b79-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="f9b79-106">Members</span></span>
+|<span data-ttu-id="f9b79-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="f9b79-107">Member</span></span>|<span data-ttu-id="f9b79-108">値</span><span class="sxs-lookup"><span data-stu-id="f9b79-108">Value</span></span>|<span data-ttu-id="f9b79-109">説明</span><span class="sxs-lookup"><span data-stu-id="f9b79-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cd20b-110">不明</span><span class="sxs-lookup"><span data-stu-id="cd20b-110">unknown</span></span>|<span data-ttu-id="cd20b-111">0</span><span class="sxs-lookup"><span data-stu-id="cd20b-111">0</span></span>|<span data-ttu-id="cd20b-112">不明な状態です。</span><span class="sxs-lookup"><span data-stu-id="cd20b-112">Unknown status.</span></span>|
-|<span data-ttu-id="cd20b-113">保留中</span><span class="sxs-lookup"><span data-stu-id="cd20b-113">pending</span></span>|<span data-ttu-id="cd20b-114">1</span><span class="sxs-lookup"><span data-stu-id="cd20b-114">1</span></span>|<span data-ttu-id="cd20b-115">保留中の状態です。</span><span class="sxs-lookup"><span data-stu-id="cd20b-115">Pending status.</span></span>|
-|<span data-ttu-id="cd20b-116">部分</span><span class="sxs-lookup"><span data-stu-id="cd20b-116">partial</span></span>|<span data-ttu-id="cd20b-117">2</span><span class="sxs-lookup"><span data-stu-id="cd20b-117">2</span></span>|<span data-ttu-id="cd20b-118">部分的な状態です。</span><span class="sxs-lookup"><span data-stu-id="cd20b-118">Partial status.</span></span>|
-|<span data-ttu-id="cd20b-119">complete</span><span class="sxs-lookup"><span data-stu-id="cd20b-119">complete</span></span>|<span data-ttu-id="cd20b-120">3</span><span class="sxs-lookup"><span data-stu-id="cd20b-120">3</span></span>|<span data-ttu-id="cd20b-121">完全な状態です。</span><span class="sxs-lookup"><span data-stu-id="cd20b-121">Complete status.</span></span>|
-|<span data-ttu-id="cd20b-122">エラー</span><span class="sxs-lookup"><span data-stu-id="cd20b-122">error</span></span>|<span data-ttu-id="cd20b-123">4</span><span class="sxs-lookup"><span data-stu-id="cd20b-123">4</span></span>|<span data-ttu-id="cd20b-124">エラー状態です。</span><span class="sxs-lookup"><span data-stu-id="cd20b-124">Error status.</span></span>|
+|<span data-ttu-id="f9b79-110">不明</span><span class="sxs-lookup"><span data-stu-id="f9b79-110">unknown</span></span>|<span data-ttu-id="f9b79-111">.0</span><span class="sxs-lookup"><span data-stu-id="f9b79-111">0</span></span>|<span data-ttu-id="f9b79-112">状態が不明です。</span><span class="sxs-lookup"><span data-stu-id="f9b79-112">Unknown status.</span></span>|
+|<span data-ttu-id="f9b79-113">対する</span><span class="sxs-lookup"><span data-stu-id="f9b79-113">pending</span></span>|<span data-ttu-id="f9b79-114">1-d</span><span class="sxs-lookup"><span data-stu-id="f9b79-114">1</span></span>|<span data-ttu-id="f9b79-115">保留中の状態。</span><span class="sxs-lookup"><span data-stu-id="f9b79-115">Pending status.</span></span>|
+|<span data-ttu-id="f9b79-116">偏</span><span class="sxs-lookup"><span data-stu-id="f9b79-116">partial</span></span>|<span data-ttu-id="f9b79-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="f9b79-117">2</span></span>|<span data-ttu-id="f9b79-118">部分的な状態。</span><span class="sxs-lookup"><span data-stu-id="f9b79-118">Partial status.</span></span>|
+|<span data-ttu-id="f9b79-119">complete</span><span class="sxs-lookup"><span data-stu-id="f9b79-119">complete</span></span>|<span data-ttu-id="f9b79-120">1/3</span><span class="sxs-lookup"><span data-stu-id="f9b79-120">3</span></span>|<span data-ttu-id="f9b79-121">完全な状態。</span><span class="sxs-lookup"><span data-stu-id="f9b79-121">Complete status.</span></span>|
+|<span data-ttu-id="f9b79-122">エラー</span><span class="sxs-lookup"><span data-stu-id="f9b79-122">error</span></span>|<span data-ttu-id="f9b79-123">2/4</span><span class="sxs-lookup"><span data-stu-id="f9b79-123">4</span></span>|<span data-ttu-id="f9b79-124">エラー状態。</span><span class="sxs-lookup"><span data-stu-id="f9b79-124">Error status.</span></span>|
 
 
 

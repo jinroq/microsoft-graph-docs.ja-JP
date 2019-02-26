@@ -649,6 +649,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 複数値のプロパティを取得する
           href: api/multivaluelegacyextendedproperty-get.md
+    displayname: Outlook calendar
   - name: 通話とオンライン会議
     displayName: Microsoft Teams
     href: resources/calls-api-overview.md
@@ -1258,36 +1259,6 @@ items:
           href: api/intune-books-iosvppebookassignment-delete.md
         - name: 更新
           href: api/intune-books-iosvppebookassignment-update.md
-      - name: macOS VPP アプリ
-        href: resources/intune-apps-macosvppapp.md
-        items:
-        - name: リスト
-          href: api/intune-apps-macosvppapp-list.md
-        - name: 取得
-          href: api/intune-apps-macosvppapp-get.md
-        - name: 作成
-          href: api/intune-apps-macosvppapp-create.md
-        - name: 削除
-          href: api/intune-apps-macosvppapp-delete.md
-        - name: 更新
-          href: api/intune-apps-macosvppapp-update.md
-      - name: macOS VPP アプリが割り当てられているライセンス
-        href: resources/intune-apps-macosvppappassignedlicense.md
-        items:
-        - name: リスト
-          href: api/intune-apps-macosvppappassignedlicense-list.md
-        - name: 取得
-          href: api/intune-apps-macosvppappassignedlicense-get.md
-        - name: 作成
-          href: api/intune-apps-macosvppappassignedlicense-create.md
-        - name: 削除
-          href: api/intune-apps-macosvppappassignedlicense-delete.md
-        - name: 更新
-          href: api/intune-apps-macosvppappassignedlicense-update.md
-      - name: macOS VPP アプリの割り当ての設定
-        href: resources/intune-apps-macosvppappassignmentsettings.md
-      - name: macOS VPP アプリの失効ライセンスのアクションの結果
-        href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
       - name: macOS LOB アプリ
         href: resources/intune-apps-macoslobapp.md
         items:
@@ -1318,6 +1289,36 @@ items:
           href: api/intune-apps-macosofficesuiteapp-delete.md
         - name: 更新
           href: api/intune-apps-macosofficesuiteapp-update.md
+      - name: macOS VPP アプリ
+        href: resources/intune-apps-macosvppapp.md
+        items:
+        - name: リスト
+          href: api/intune-apps-macosvppapp-list.md
+        - name: 取得
+          href: api/intune-apps-macosvppapp-get.md
+        - name: 作成
+          href: api/intune-apps-macosvppapp-create.md
+        - name: 削除
+          href: api/intune-apps-macosvppapp-delete.md
+        - name: 更新
+          href: api/intune-apps-macosvppapp-update.md
+      - name: macOS VPP アプリが割り当てられているライセンス
+        href: resources/intune-apps-macosvppappassignedlicense.md
+        items:
+        - name: リスト
+          href: api/intune-apps-macosvppappassignedlicense-list.md
+        - name: 取得
+          href: api/intune-apps-macosvppappassignedlicense-get.md
+        - name: 作成
+          href: api/intune-apps-macosvppappassignedlicense-create.md
+        - name: 削除
+          href: api/intune-apps-macosvppappassignedlicense-delete.md
+        - name: 更新
+          href: api/intune-apps-macosvppappassignedlicense-update.md
+      - name: macOS VPP アプリの割り当ての設定
+        href: resources/intune-apps-macosvppappassignmentsettings.md
+      - name: macOS VPP アプリの失効ライセンスのアクションの結果
+        href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
       - name: 管理対象 Android LOB アプリ
         href: resources/intune-apps-managedandroidlobapp.md
         items:
@@ -2271,6 +2272,8 @@ items:
       items:
       - name: 管理者により構成されたデバイスのコンプライアンス状態
         href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+      - name: Advanced BitLocker の状態
+        href: resources/intune-deviceconfig-advancedbitlockerstate.md
       - name: Advanced Threat Protection オンボード デバイス設定の状態
         href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
         items:
@@ -2598,6 +2601,19 @@ items:
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
       - name: Android Keyguard 機能
         href: resources/intune-deviceconfig-androidkeyguardfeature.md
+      - name: Android OMA cp の構成
+        href: resources/intune-deviceconfig-androidomacpconfiguration.md
+        items:
+        - name: リスト
+          href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+        - name: 取得
+          href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+        - name: 作成
+          href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+        - name: 削除
+          href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-androidomacpconfiguration-update.md
       - name: Android PKCS 証明書のプロファイル
         href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
         items:
@@ -2952,6 +2968,32 @@ items:
         href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
       - name: Defender 脅威アクション
         href: resources/intune-deviceconfig-defenderthreataction.md
+      - name: 配信最適化 (帯域幅)
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+      - name: 配信最適化 (絶対帯域幅)
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+      - name: 配信最適化 (帯域幅の勤務時間制限)
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+      - name: 配信最適化 (帯域幅の時間の割合)
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+      - name: 配信最適化 (帯域幅の割合)
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+      - name: 配信最適化 (グループ ID カスタム)
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+      - name: 配信最適化 (グループ ID オプションの種類)
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+      - name: 配信最適化 (グループ ID ソース)
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+      - name: 配信最適化 (グループ ID ソース オプション)
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+      - name: 配信最適化 (最大キャッシュ サイズ)
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+      - name: 配信最適化 (絶対最大キャッシュ サイズ)
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+      - name: 配信最適化 (最大キャッシュ サイズの割合)
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+      - name: 配信最適化 (オプション別のピアの選択の制限)
+        href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
       - name: 派生の資格情報プロバイダーの種類
         href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
       - name: デバイス コンプライアンス アクションの項目
@@ -3205,6 +3247,8 @@ items:
         href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
       - name: デバイスの脅威保護レベル
         href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+      - name: デバイスの種類
+        href: resources/intune-deviceconfig-devicetypes.md
       - name: 診断データの送信モード
         href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
       - name: DMA ガードのデバイス列挙ポリシーの種類
@@ -3236,6 +3280,8 @@ items:
         href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
       - name: Edge のホーム ボタンで新しいタブを開く
         href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+      - name: Edge のキオスク モード制限の種類
+        href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
       - name: Edge でオプションを開く
         href: resources/intune-deviceconfig-edgeopenoptions.md
       - name: Edge の検索エンジン
@@ -3267,6 +3313,12 @@ items:
         href: resources/intune-deviceconfig-emailsyncduration.md
       - name: メールの同期スケジュール
         href: resources/intune-deviceconfig-emailsyncschedule.md
+      - name: 暗号化の対応状態
+        href: resources/intune-deviceconfig-encryptionreadinessstate.md
+      - name: 暗号化レポート ポリシーの詳細
+        href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+      - name: 暗号化の状態
+        href: resources/intune-deviceconfig-encryptionstate.md
       - name: 拡張キーの使用
         href: resources/intune-deviceconfig-extendedkeyusage.md
       - name: ファイアウォール証明書失効リスト確認方法の種類
@@ -4010,6 +4062,19 @@ items:
           href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
         - name: 更新
           href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+      - name: 管理対象デバイスの暗号化の状態
+        href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+        items:
+        - name: リスト
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+        - name: 取得
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+        - name: 作成
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+        - name: 削除
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
       - name: 管理対象デバイスの報告されたアプリ
         href: resources/intune-deviceconfig-manageddevicereportedapp.md
       - name: メディア コンテンツのレーティング、オーストラリア
@@ -4315,7 +4380,7 @@ items:
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
         - name: 取得
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
         - name: 削除
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -4823,8 +4888,6 @@ items:
         href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
       - name: Windows Update のスケジュール済みインストール
         href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-      - name: Windows Update の状況
-        href: resources/intune-deviceconfig-windowsupdatestate.md
       - name: Windows Update の状態
         href: resources/intune-deviceconfig-windowsupdatestatus.md
       - name: Windows Update の種類
@@ -5384,7 +5447,7 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 取得
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: Create
+        - name: 作成
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: 削除
           href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -7743,6 +7806,7 @@ items:
         href: api/securescorecontrolprofiles-update.md
     - name: エラー
       href: resources/security-error-codes.md
+    displayname: Security API, Microsoft Intelligent Security Graph
   - name: サイトとリスト
     displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
     href: resources/sharepoint.md
@@ -8347,9 +8411,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 7ef9b9c3264eba05b5f388691df086bbbdc336a2
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: cc8fb4bd32656d8e02ef1b7882bab1067176ff11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994420"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154349"

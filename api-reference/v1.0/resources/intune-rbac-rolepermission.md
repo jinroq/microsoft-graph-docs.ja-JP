@@ -3,28 +3,30 @@ title: rolePermission リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b8b9ba237052fef2b4caa8123d147ea1782fa9b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7a90de4e78bbc831ebb9eb7bf5ee65c26434fc06
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932806"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257786"
 ---
-# <a name="rolepermission-resource-type"></a><span data-ttu-id="cbd68-103">rolePermission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cbd68-103">rolePermission resource type</span></span>
+# <a name="rolepermission-resource-type"></a><span data-ttu-id="b907e-103">rolePermission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b907e-103">rolePermission resource type</span></span>
 
-> <span data-ttu-id="cbd68-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbd68-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b907e-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b907e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cbd68-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="cbd68-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="cbd68-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cbd68-106">Properties</span></span>
-|<span data-ttu-id="cbd68-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cbd68-107">Property</span></span>|<span data-ttu-id="cbd68-108">種類</span><span class="sxs-lookup"><span data-stu-id="cbd68-108">Type</span></span>|<span data-ttu-id="cbd68-109">説明</span><span class="sxs-lookup"><span data-stu-id="cbd68-109">Description</span></span>|
+<span data-ttu-id="b907e-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b907e-105">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="b907e-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b907e-106">Properties</span></span>
+|<span data-ttu-id="b907e-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b907e-107">Property</span></span>|<span data-ttu-id="b907e-108">型</span><span class="sxs-lookup"><span data-stu-id="b907e-108">Type</span></span>|<span data-ttu-id="b907e-109">説明</span><span class="sxs-lookup"><span data-stu-id="b907e-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cbd68-110">resourceActions</span><span class="sxs-lookup"><span data-stu-id="cbd68-110">resourceActions</span></span>|<span data-ttu-id="cbd68-111">[resourceAction](../resources/intune-rbac-resourceaction.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="cbd68-111">[resourceAction](../resources/intune-rbac-resourceaction.md) collection</span></span>|<span data-ttu-id="cbd68-112">アクション</span><span class="sxs-lookup"><span data-stu-id="cbd68-112">Actions</span></span>|
+|<span data-ttu-id="b907e-110">resourceActions</span><span class="sxs-lookup"><span data-stu-id="b907e-110">resourceActions</span></span>|<span data-ttu-id="b907e-111">[resourceAction](../resources/intune-rbac-resourceaction.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b907e-111">[resourceAction](../resources/intune-rbac-resourceaction.md) collection</span></span>|<span data-ttu-id="b907e-112">アクション</span><span class="sxs-lookup"><span data-stu-id="b907e-112">Actions</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="cbd68-113">関係</span><span class="sxs-lookup"><span data-stu-id="cbd68-113">Relationships</span></span>
-<span data-ttu-id="cbd68-114">なし</span><span class="sxs-lookup"><span data-stu-id="cbd68-114">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="cbd68-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="cbd68-115">JSON Representation</span></span>
-<span data-ttu-id="cbd68-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="cbd68-116">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="b907e-113">関係</span><span class="sxs-lookup"><span data-stu-id="b907e-113">Relationships</span></span>
+<span data-ttu-id="b907e-114">なし</span><span class="sxs-lookup"><span data-stu-id="b907e-114">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="b907e-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b907e-115">JSON Representation</span></span>
+<span data-ttu-id="b907e-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b907e-116">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rolePermission"

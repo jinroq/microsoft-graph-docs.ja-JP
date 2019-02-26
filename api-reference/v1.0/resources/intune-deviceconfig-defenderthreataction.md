@@ -1,31 +1,32 @@
 ---
 title: defenderThreatAction 列挙型
-description: Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。
-localization_priority: Normal
+description: 検出されたマルウェアの脅威を処理する Defender の既定のアクション。
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 51aa26483ac6b79d48567f7e5950733def31f01e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 8d3d48415e55ad246f75ca9b32bd169ee102fc67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976647"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252316"
 ---
-# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="313cb-103">defenderThreatAction 列挙型</span><span class="sxs-lookup"><span data-stu-id="313cb-103">defenderThreatAction enum type</span></span>
+# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="5be42-103">defenderThreatAction 列挙型</span><span class="sxs-lookup"><span data-stu-id="5be42-103">defenderThreatAction enum type</span></span>
 
-> <span data-ttu-id="313cb-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="313cb-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5be42-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5be42-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="313cb-105">Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。</span><span class="sxs-lookup"><span data-stu-id="313cb-105">Defender’s default action to take on detected Malware threats.</span></span>
-## <a name="members"></a><span data-ttu-id="313cb-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="313cb-106">Members</span></span>
-|<span data-ttu-id="313cb-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="313cb-107">Member</span></span>|<span data-ttu-id="313cb-108">値</span><span class="sxs-lookup"><span data-stu-id="313cb-108">Value</span></span>|<span data-ttu-id="313cb-109">説明</span><span class="sxs-lookup"><span data-stu-id="313cb-109">Description</span></span>|
+<span data-ttu-id="5be42-105">検出されたマルウェアの脅威を処理する Defender の既定のアクション。</span><span class="sxs-lookup"><span data-stu-id="5be42-105">Defender’s default action to take on detected Malware threats.</span></span>
+
+## <a name="members"></a><span data-ttu-id="5be42-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="5be42-106">Members</span></span>
+|<span data-ttu-id="5be42-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="5be42-107">Member</span></span>|<span data-ttu-id="5be42-108">値</span><span class="sxs-lookup"><span data-stu-id="5be42-108">Value</span></span>|<span data-ttu-id="5be42-109">説明</span><span class="sxs-lookup"><span data-stu-id="5be42-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="313cb-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="313cb-110">deviceDefault</span></span>|<span data-ttu-id="313cb-111">0</span><span class="sxs-lookup"><span data-stu-id="313cb-111">0</span></span>|<span data-ttu-id="313cb-112">更新プログラム定義に基づいたアクションを適用します。</span><span class="sxs-lookup"><span data-stu-id="313cb-112">Apply action based on the update definition.</span></span>|
-|<span data-ttu-id="313cb-113">クリーン</span><span class="sxs-lookup"><span data-stu-id="313cb-113">clean</span></span>|<span data-ttu-id="313cb-114">1</span><span class="sxs-lookup"><span data-stu-id="313cb-114">1</span></span>|<span data-ttu-id="313cb-115">検出された脅威をクリーニングします。</span><span class="sxs-lookup"><span data-stu-id="313cb-115">Clean the detected threat.</span></span>|
-|<span data-ttu-id="313cb-116">検査</span><span class="sxs-lookup"><span data-stu-id="313cb-116">quarantine</span></span>|<span data-ttu-id="313cb-117">2</span><span class="sxs-lookup"><span data-stu-id="313cb-117">2</span></span>|<span data-ttu-id="313cb-118">検出された脅威を隔離します。</span><span class="sxs-lookup"><span data-stu-id="313cb-118">Quarantine the detected threat.</span></span>|
-|<span data-ttu-id="313cb-119">remove</span><span class="sxs-lookup"><span data-stu-id="313cb-119">remove</span></span>|<span data-ttu-id="313cb-120">3</span><span class="sxs-lookup"><span data-stu-id="313cb-120">3</span></span>|<span data-ttu-id="313cb-121">検出された脅威を削除します。</span><span class="sxs-lookup"><span data-stu-id="313cb-121">Remove the detected threat.</span></span>|
-|<span data-ttu-id="313cb-122">許可します。</span><span class="sxs-lookup"><span data-stu-id="313cb-122">allow</span></span>|<span data-ttu-id="313cb-123">4</span><span class="sxs-lookup"><span data-stu-id="313cb-123">4</span></span>|<span data-ttu-id="313cb-124">脅威の検出を許可します。</span><span class="sxs-lookup"><span data-stu-id="313cb-124">Allow the detected threat.</span></span>|
-|<span data-ttu-id="313cb-125">ユーザー定義</span><span class="sxs-lookup"><span data-stu-id="313cb-125">userDefined</span></span>|<span data-ttu-id="313cb-126">5</span><span class="sxs-lookup"><span data-stu-id="313cb-126">5</span></span>|<span data-ttu-id="313cb-127">検出された脅威に対して実行するアクションを決定するユーザーを許可します。</span><span class="sxs-lookup"><span data-stu-id="313cb-127">Allow the user to determine the action to take with the detected threat.</span></span>|
-|<span data-ttu-id="313cb-128">ブロック</span><span class="sxs-lookup"><span data-stu-id="313cb-128">block</span></span>|<span data-ttu-id="313cb-129">6</span><span class="sxs-lookup"><span data-stu-id="313cb-129">6</span></span>|<span data-ttu-id="313cb-130">検出された脅威をブロックします。</span><span class="sxs-lookup"><span data-stu-id="313cb-130">Block the detected threat.</span></span>|
+|<span data-ttu-id="5be42-110">devicedefault</span><span class="sxs-lookup"><span data-stu-id="5be42-110">deviceDefault</span></span>|<span data-ttu-id="5be42-111">.0</span><span class="sxs-lookup"><span data-stu-id="5be42-111">0</span></span>|<span data-ttu-id="5be42-112">更新定義に基づいてアクションを適用します。</span><span class="sxs-lookup"><span data-stu-id="5be42-112">Apply action based on the update definition.</span></span>|
+|<span data-ttu-id="5be42-113">クリーン</span><span class="sxs-lookup"><span data-stu-id="5be42-113">clean</span></span>|<span data-ttu-id="5be42-114">1-d</span><span class="sxs-lookup"><span data-stu-id="5be42-114">1</span></span>|<span data-ttu-id="5be42-115">検出された脅威を除去します。</span><span class="sxs-lookup"><span data-stu-id="5be42-115">Clean the detected threat.</span></span>|
+|<span data-ttu-id="5be42-116">済み</span><span class="sxs-lookup"><span data-stu-id="5be42-116">quarantine</span></span>|<span data-ttu-id="5be42-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="5be42-117">2</span></span>|<span data-ttu-id="5be42-118">検出された脅威を検疫します。</span><span class="sxs-lookup"><span data-stu-id="5be42-118">Quarantine the detected threat.</span></span>|
+|<span data-ttu-id="5be42-119">remove</span><span class="sxs-lookup"><span data-stu-id="5be42-119">remove</span></span>|<span data-ttu-id="5be42-120">1/3</span><span class="sxs-lookup"><span data-stu-id="5be42-120">3</span></span>|<span data-ttu-id="5be42-121">検出された脅威を削除します。</span><span class="sxs-lookup"><span data-stu-id="5be42-121">Remove the detected threat.</span></span>|
+|<span data-ttu-id="5be42-122">使う</span><span class="sxs-lookup"><span data-stu-id="5be42-122">allow</span></span>|<span data-ttu-id="5be42-123">2/4</span><span class="sxs-lookup"><span data-stu-id="5be42-123">4</span></span>|<span data-ttu-id="5be42-124">検出された脅威を許可します。</span><span class="sxs-lookup"><span data-stu-id="5be42-124">Allow the detected threat.</span></span>|
+|<span data-ttu-id="5be42-125">自分のもの</span><span class="sxs-lookup"><span data-stu-id="5be42-125">userDefined</span></span>|<span data-ttu-id="5be42-126">5</span><span class="sxs-lookup"><span data-stu-id="5be42-126">5</span></span>|<span data-ttu-id="5be42-127">検出された脅威に対して実行するアクションをユーザーが決定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="5be42-127">Allow the user to determine the action to take with the detected threat.</span></span>|
+|<span data-ttu-id="5be42-128">拒否</span><span class="sxs-lookup"><span data-stu-id="5be42-128">block</span></span>|<span data-ttu-id="5be42-129">シックス</span><span class="sxs-lookup"><span data-stu-id="5be42-129">6</span></span>|<span data-ttu-id="5be42-130">検出された脅威をブロックします。</span><span class="sxs-lookup"><span data-stu-id="5be42-130">Block the detected threat.</span></span>|
 
 
 

@@ -1,48 +1,58 @@
 ---
-title: グループの削除
-description: グループを削除します。
+title: グループの削除-Microsoft Graph API
+description: Microsoft Graph API (REST) のグループリソース (エンティティ) の delete メソッドについて説明します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65fd34fe01a2543389356e86334e986332210b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968611"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251196"
 ---
-# <a name="delete-group"></a><span data-ttu-id="e9052-103">グループの削除</span><span class="sxs-lookup"><span data-stu-id="e9052-103">Delete group</span></span>
-<span data-ttu-id="e9052-104">グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="e9052-104">Delete group.</span></span>
+# <a name="delete-group"></a><span data-ttu-id="7d001-103">グループの削除</span><span class="sxs-lookup"><span data-stu-id="7d001-103">Delete group</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e9052-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e9052-105">Permissions</span></span>
-<span data-ttu-id="e9052-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e9052-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d001-104">グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="7d001-104">Delete group.</span></span>  
 
-|<span data-ttu-id="e9052-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e9052-108">Permission type</span></span>      | <span data-ttu-id="e9052-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e9052-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="7d001-105">削除すると、Office 365 グループが一時コンテナーに移動され、30日以内に復元できるようになります。</span><span class="sxs-lookup"><span data-stu-id="7d001-105">When deleted, Office 365 groups are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="7d001-106">その時間が過ぎると、完全に削除されます。</span><span class="sxs-lookup"><span data-stu-id="7d001-106">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="7d001-107">詳細については、「 [deletedItems](../resources/directory.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d001-107">To learn more, see [deletedItems](../resources/directory.md).</span></span>  <span data-ttu-id="7d001-108">これは、Office 365 グループにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="7d001-108">This applies only to Office 365 groups.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="7d001-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d001-109">Permissions</span></span>
+
+<span data-ttu-id="7d001-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d001-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7d001-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7d001-112">Permission type</span></span>      | <span data-ttu-id="7d001-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7d001-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e9052-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e9052-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e9052-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e9052-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e9052-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e9052-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9052-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e9052-113">Not supported.</span></span>    |
-|<span data-ttu-id="e9052-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e9052-114">Application</span></span> | <span data-ttu-id="e9052-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e9052-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="7d001-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d001-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7d001-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d001-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d001-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7d001-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d001-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d001-117">Not supported.</span></span>    |
+|<span data-ttu-id="7d001-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d001-118">Application</span></span> | <span data-ttu-id="7d001-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d001-119">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e9052-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e9052-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d001-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d001-120">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e9052-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e9052-117">Request headers</span></span>
-| <span data-ttu-id="e9052-118">名前</span><span class="sxs-lookup"><span data-stu-id="e9052-118">Name</span></span>       | <span data-ttu-id="e9052-119">種類</span><span class="sxs-lookup"><span data-stu-id="e9052-119">Type</span></span> | <span data-ttu-id="e9052-120">説明</span><span class="sxs-lookup"><span data-stu-id="e9052-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7d001-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7d001-121">Request headers</span></span>
+
+| <span data-ttu-id="7d001-122">名前</span><span class="sxs-lookup"><span data-stu-id="7d001-122">Name</span></span>       | <span data-ttu-id="7d001-123">型</span><span class="sxs-lookup"><span data-stu-id="7d001-123">Type</span></span> | <span data-ttu-id="7d001-124">説明</span><span class="sxs-lookup"><span data-stu-id="7d001-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e9052-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9052-121">Authorization</span></span>  | <span data-ttu-id="e9052-122">string</span><span class="sxs-lookup"><span data-stu-id="e9052-122">string</span></span>  | <span data-ttu-id="e9052-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e9052-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7d001-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d001-125">Authorization</span></span>  | <span data-ttu-id="7d001-126">string</span><span class="sxs-lookup"><span data-stu-id="7d001-126">string</span></span>  | <span data-ttu-id="7d001-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7d001-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e9052-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e9052-125">Request body</span></span>
-<span data-ttu-id="e9052-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e9052-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d001-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d001-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="e9052-127">応答</span><span class="sxs-lookup"><span data-stu-id="e9052-127">Response</span></span>
-<span data-ttu-id="e9052-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="e9052-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="7d001-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7d001-130">Do not supply a request body for this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e9052-130">例</span><span class="sxs-lookup"><span data-stu-id="e9052-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="e9052-131">要求</span><span class="sxs-lookup"><span data-stu-id="e9052-131">Request</span></span>
-<span data-ttu-id="e9052-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e9052-132">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="7d001-131">応答</span><span class="sxs-lookup"><span data-stu-id="7d001-131">Response</span></span>
+
+<span data-ttu-id="7d001-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="7d001-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="7d001-134">例</span><span class="sxs-lookup"><span data-stu-id="7d001-134">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="7d001-135">要求</span><span class="sxs-lookup"><span data-stu-id="7d001-135">Request</span></span>
+
+<span data-ttu-id="7d001-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d001-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -51,8 +61,9 @@ DELETE /groups/{id}
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="e9052-133">応答</span><span class="sxs-lookup"><span data-stu-id="e9052-133">Response</span></span>
-<span data-ttu-id="e9052-134">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e9052-134">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="7d001-137">応答</span><span class="sxs-lookup"><span data-stu-id="7d001-137">Response</span></span>
+
+<span data-ttu-id="7d001-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d001-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
