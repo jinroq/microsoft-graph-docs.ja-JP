@@ -1,29 +1,29 @@
 ---
 title: deviceManagementExchangeConnectorSyncType 列挙型
-description: Exchange コネクタの同期要求の種類。
-localization_priority: Normal
+description: 要求された Exchange Connector の同期の種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a78bf79990eb16ae6dbc62d4c324b905a79a7f2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47021a0a071995261f218cd4080026ababa33e0f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405626"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166599"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="d1c85-103">deviceManagementExchangeConnectorSyncType 列挙型</span><span class="sxs-lookup"><span data-stu-id="d1c85-103">deviceManagementExchangeConnectorSyncType enum type</span></span>
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="26700-103">deviceManagementExchangeConnectorSyncType 列挙型</span><span class="sxs-lookup"><span data-stu-id="26700-103">deviceManagementExchangeConnectorSyncType enum type</span></span>
 
-> <span data-ttu-id="d1c85-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d1c85-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d1c85-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d1c85-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="26700-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26700-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d1c85-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d1c85-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="26700-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="26700-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d1c85-107">Exchange コネクタの同期要求の種類。</span><span class="sxs-lookup"><span data-stu-id="d1c85-107">The type of Exchange Connector sync requested.</span></span>
+<span data-ttu-id="26700-106">要求された Exchange Connector の同期の種類。</span><span class="sxs-lookup"><span data-stu-id="26700-106">The type of Exchange Connector sync requested.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d1c85-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="d1c85-108">Members</span></span>
-|<span data-ttu-id="d1c85-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="d1c85-109">Member</span></span>|<span data-ttu-id="d1c85-110">値</span><span class="sxs-lookup"><span data-stu-id="d1c85-110">Value</span></span>|<span data-ttu-id="d1c85-111">説明</span><span class="sxs-lookup"><span data-stu-id="d1c85-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="26700-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="26700-107">Members</span></span>
+|<span data-ttu-id="26700-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="26700-108">Member</span></span>|<span data-ttu-id="26700-109">値</span><span class="sxs-lookup"><span data-stu-id="26700-109">Value</span></span>|<span data-ttu-id="26700-110">説明</span><span class="sxs-lookup"><span data-stu-id="26700-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d1c85-112">fullSync</span><span class="sxs-lookup"><span data-stu-id="d1c85-112">fullSync</span></span>|<span data-ttu-id="d1c85-113">0</span><span class="sxs-lookup"><span data-stu-id="d1c85-113">0</span></span>|<span data-ttu-id="d1c85-114">Exchange のすべてのデバイスを検出します。</span><span class="sxs-lookup"><span data-stu-id="d1c85-114">Discover all the device in Exchange.</span></span>|
-|<span data-ttu-id="d1c85-115">deltaSync</span><span class="sxs-lookup"><span data-stu-id="d1c85-115">deltaSync</span></span>|<span data-ttu-id="d1c85-116">1</span><span class="sxs-lookup"><span data-stu-id="d1c85-116">1</span></span>|<span data-ttu-id="d1c85-117">デルタ同期ウィンドウの中に更新する Exchange のデバイスのみを検出します。</span><span class="sxs-lookup"><span data-stu-id="d1c85-117">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
+|<span data-ttu-id="26700-111">fullSync</span><span class="sxs-lookup"><span data-stu-id="26700-111">fullSync</span></span>|<span data-ttu-id="26700-112">.0</span><span class="sxs-lookup"><span data-stu-id="26700-112">0</span></span>|<span data-ttu-id="26700-113">Exchange のすべてのデバイスを検出します。</span><span class="sxs-lookup"><span data-stu-id="26700-113">Discover all the device in Exchange.</span></span>|
+|<span data-ttu-id="26700-114">deltasync]</span><span class="sxs-lookup"><span data-stu-id="26700-114">deltaSync</span></span>|<span data-ttu-id="26700-115">1-d</span><span class="sxs-lookup"><span data-stu-id="26700-115">1</span></span>|<span data-ttu-id="26700-116">[差分同期] ウィンドウで更新された Exchange のデバイスのみを検出します。</span><span class="sxs-lookup"><span data-stu-id="26700-116">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
 
 
 

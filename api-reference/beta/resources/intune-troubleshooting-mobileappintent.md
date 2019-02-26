@@ -1,34 +1,34 @@
 ---
 title: mobileAppIntent 列挙型
-description: デバイスのモバイル アプリケーションのステータスを示します。
-localization_priority: Normal
+description: デバイス上のモバイルアプリの状態を示します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a807e89ec949c2c48f04af46b26f43b393cc4b0a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1df0b41636668e0ebcc38dfb6b399a73551658d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419262"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171044"
 ---
-# <a name="mobileappintent-enum-type"></a><span data-ttu-id="a4979-103">mobileAppIntent 列挙型</span><span class="sxs-lookup"><span data-stu-id="a4979-103">mobileAppIntent enum type</span></span>
+# <a name="mobileappintent-enum-type"></a><span data-ttu-id="8eeea-103">mobileAppIntent 列挙型</span><span class="sxs-lookup"><span data-stu-id="8eeea-103">mobileAppIntent enum type</span></span>
 
-> <span data-ttu-id="a4979-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a4979-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a4979-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4979-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8eeea-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8eeea-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a4979-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a4979-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8eeea-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="8eeea-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a4979-107">デバイスのモバイル アプリケーションのステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="a4979-107">Indicates the status of the mobile app on the device.</span></span>
+<span data-ttu-id="8eeea-106">デバイス上のモバイルアプリの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="8eeea-106">Indicates the status of the mobile app on the device.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a4979-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="a4979-108">Members</span></span>
-|<span data-ttu-id="a4979-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="a4979-109">Member</span></span>|<span data-ttu-id="a4979-110">値</span><span class="sxs-lookup"><span data-stu-id="a4979-110">Value</span></span>|<span data-ttu-id="a4979-111">説明</span><span class="sxs-lookup"><span data-stu-id="a4979-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8eeea-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="8eeea-107">Members</span></span>
+|<span data-ttu-id="8eeea-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="8eeea-108">Member</span></span>|<span data-ttu-id="8eeea-109">値</span><span class="sxs-lookup"><span data-stu-id="8eeea-109">Value</span></span>|<span data-ttu-id="8eeea-110">説明</span><span class="sxs-lookup"><span data-stu-id="8eeea-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a4979-112">使用可能</span><span class="sxs-lookup"><span data-stu-id="a4979-112">available</span></span>|<span data-ttu-id="a4979-113">0</span><span class="sxs-lookup"><span data-stu-id="a4979-113">0</span></span>|<span data-ttu-id="a4979-114">Available</span><span class="sxs-lookup"><span data-stu-id="a4979-114">Available</span></span>|
-|<span data-ttu-id="a4979-115">送出</span><span class="sxs-lookup"><span data-stu-id="a4979-115">notAvailable</span></span>|<span data-ttu-id="a4979-116">1</span><span class="sxs-lookup"><span data-stu-id="a4979-116">1</span></span>|<span data-ttu-id="a4979-117">利用できません。</span><span class="sxs-lookup"><span data-stu-id="a4979-117">Not Available</span></span>|
-|<span data-ttu-id="a4979-118">requiredInstall</span><span class="sxs-lookup"><span data-stu-id="a4979-118">requiredInstall</span></span>|<span data-ttu-id="a4979-119">2</span><span class="sxs-lookup"><span data-stu-id="a4979-119">2</span></span>|<span data-ttu-id="a4979-120">必要なインストール</span><span class="sxs-lookup"><span data-stu-id="a4979-120">Required Install</span></span>|
-|<span data-ttu-id="a4979-121">requiredUninstall</span><span class="sxs-lookup"><span data-stu-id="a4979-121">requiredUninstall</span></span>|<span data-ttu-id="a4979-122">3</span><span class="sxs-lookup"><span data-stu-id="a4979-122">3</span></span>|<span data-ttu-id="a4979-123">必要なアンインストール</span><span class="sxs-lookup"><span data-stu-id="a4979-123">Required Uninstall</span></span>|
-|<span data-ttu-id="a4979-124">requiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="a4979-124">requiredAndAvailableInstall</span></span>|<span data-ttu-id="a4979-125">4</span><span class="sxs-lookup"><span data-stu-id="a4979-125">4</span></span>|<span data-ttu-id="a4979-126">RequiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="a4979-126">RequiredAndAvailableInstall</span></span>|
-|<span data-ttu-id="a4979-127">availableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="a4979-127">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="a4979-128">5</span><span class="sxs-lookup"><span data-stu-id="a4979-128">5</span></span>|<span data-ttu-id="a4979-129">AvailableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="a4979-129">AvailableInstallWithoutEnrollment</span></span>|
-|<span data-ttu-id="a4979-130">除外</span><span class="sxs-lookup"><span data-stu-id="a4979-130">exclude</span></span>|<span data-ttu-id="a4979-131">6</span><span class="sxs-lookup"><span data-stu-id="a4979-131">6</span></span>|<span data-ttu-id="a4979-132">除外</span><span class="sxs-lookup"><span data-stu-id="a4979-132">Exclude</span></span>|
+|<span data-ttu-id="8eeea-111">使用可能</span><span class="sxs-lookup"><span data-stu-id="8eeea-111">available</span></span>|<span data-ttu-id="8eeea-112">.0</span><span class="sxs-lookup"><span data-stu-id="8eeea-112">0</span></span>|<span data-ttu-id="8eeea-113">Available</span><span class="sxs-lookup"><span data-stu-id="8eeea-113">Available</span></span>|
+|<span data-ttu-id="8eeea-114">notavailable</span><span class="sxs-lookup"><span data-stu-id="8eeea-114">notAvailable</span></span>|<span data-ttu-id="8eeea-115">1-d</span><span class="sxs-lookup"><span data-stu-id="8eeea-115">1</span></span>|<span data-ttu-id="8eeea-116">利用不可</span><span class="sxs-lookup"><span data-stu-id="8eeea-116">Not Available</span></span>|
+|<span data-ttu-id="8eeea-117">requiredinstall</span><span class="sxs-lookup"><span data-stu-id="8eeea-117">requiredInstall</span></span>|<span data-ttu-id="8eeea-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="8eeea-118">2</span></span>|<span data-ttu-id="8eeea-119">必要なインストール</span><span class="sxs-lookup"><span data-stu-id="8eeea-119">Required Install</span></span>|
+|<span data-ttu-id="8eeea-120">requireduninstall</span><span class="sxs-lookup"><span data-stu-id="8eeea-120">requiredUninstall</span></span>|<span data-ttu-id="8eeea-121">1/3</span><span class="sxs-lookup"><span data-stu-id="8eeea-121">3</span></span>|<span data-ttu-id="8eeea-122">必要なアンインストール</span><span class="sxs-lookup"><span data-stu-id="8eeea-122">Required Uninstall</span></span>|
+|<span data-ttu-id="8eeea-123">requiredandのインストール</span><span class="sxs-lookup"><span data-stu-id="8eeea-123">requiredAndAvailableInstall</span></span>|<span data-ttu-id="8eeea-124">2/4</span><span class="sxs-lookup"><span data-stu-id="8eeea-124">4</span></span>|<span data-ttu-id="8eeea-125">requiredandのインストール</span><span class="sxs-lookup"><span data-stu-id="8eeea-125">RequiredAndAvailableInstall</span></span>|
+|<span data-ttu-id="8eeea-126">登録がありません。</span><span class="sxs-lookup"><span data-stu-id="8eeea-126">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="8eeea-127">5</span><span class="sxs-lookup"><span data-stu-id="8eeea-127">5</span></span>|<span data-ttu-id="8eeea-128">登録がありません。</span><span class="sxs-lookup"><span data-stu-id="8eeea-128">AvailableInstallWithoutEnrollment</span></span>|
+|<span data-ttu-id="8eeea-129">削除</span><span class="sxs-lookup"><span data-stu-id="8eeea-129">exclude</span></span>|<span data-ttu-id="8eeea-130">シックス</span><span class="sxs-lookup"><span data-stu-id="8eeea-130">6</span></span>|<span data-ttu-id="8eeea-131">削除</span><span class="sxs-lookup"><span data-stu-id="8eeea-131">Exclude</span></span>|
 
 
 

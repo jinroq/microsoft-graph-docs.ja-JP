@@ -1,37 +1,37 @@
 ---
 title: レポート リソースの種類
-description: Intune は、複数のワークフローをサポートする Microsoft グラフ API のレポートのリソースについて説明します。
+description: 複数のワークフローをサポートする Microsoft Graph API for Intune のレポートリソースについて説明します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 098c20b2460324c4975533902e1b71fde1af41c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f523f6df0b8b90cb6649ac81f1e433d6df227aea
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165752"
 ---
-# <a name="report-resource-type"></a><span data-ttu-id="925ce-103">レポート リソースの種類</span><span class="sxs-lookup"><span data-stu-id="925ce-103">report resource type</span></span>
+# <a name="report-resource-type"></a><span data-ttu-id="2051d-103">レポート リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2051d-103">report resource type</span></span>
 
-> <span data-ttu-id="925ce-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="925ce-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="925ce-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="925ce-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2051d-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2051d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="925ce-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="925ce-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="2051d-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2051d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="925ce-107">コンテキストに適切なコンテンツを返すなど。</span><span class="sxs-lookup"><span data-stu-id="925ce-107">Returns the content appropriate for the context, including:</span></span>
+<span data-ttu-id="2051d-106">コンテキストに適した次の内容を返します。</span><span class="sxs-lookup"><span data-stu-id="2051d-106">Returns the content appropriate for the context, including:</span></span>
 
-- <span data-ttu-id="925ce-108">デバイス構成のプロファイルの履歴のレポートです。</span><span class="sxs-lookup"><span data-stu-id="925ce-108">Device Configuration profile history reports.</span></span>
-- <span data-ttu-id="925ce-109">障害レポートを登録します。</span><span class="sxs-lookup"><span data-stu-id="925ce-109">Enrollment failure reports.</span></span>
+- <span data-ttu-id="2051d-107">デバイス構成プロファイルの履歴レポート。</span><span class="sxs-lookup"><span data-stu-id="2051d-107">Device Configuration profile history reports.</span></span>
+- <span data-ttu-id="2051d-108">登録エラーレポート。</span><span class="sxs-lookup"><span data-stu-id="2051d-108">Enrollment failure reports.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="925ce-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="925ce-110">Properties</span></span>
-|<span data-ttu-id="925ce-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="925ce-111">Property</span></span>|<span data-ttu-id="925ce-112">型</span><span class="sxs-lookup"><span data-stu-id="925ce-112">Type</span></span>|<span data-ttu-id="925ce-113">説明</span><span class="sxs-lookup"><span data-stu-id="925ce-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2051d-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2051d-109">Properties</span></span>
+|<span data-ttu-id="2051d-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2051d-110">Property</span></span>|<span data-ttu-id="2051d-111">型</span><span class="sxs-lookup"><span data-stu-id="2051d-111">Type</span></span>|<span data-ttu-id="2051d-112">説明</span><span class="sxs-lookup"><span data-stu-id="2051d-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="925ce-114">content</span><span class="sxs-lookup"><span data-stu-id="925ce-114">content</span></span>|<span data-ttu-id="925ce-115">Stream</span><span class="sxs-lookup"><span data-stu-id="925ce-115">Stream</span></span>|<span data-ttu-id="925ce-116">レポート コンテンツです。詳細は、レポートの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="925ce-116">Report content; details vary by report type.</span></span>|
+|<span data-ttu-id="2051d-113">content</span><span class="sxs-lookup"><span data-stu-id="2051d-113">content</span></span>|<span data-ttu-id="2051d-114">Stream</span><span class="sxs-lookup"><span data-stu-id="2051d-114">Stream</span></span>|<span data-ttu-id="2051d-115">レポートコンテンツ。詳細はレポートの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="2051d-115">Report content; details vary by report type.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="925ce-117">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="925ce-117">Relationships</span></span>
-<span data-ttu-id="925ce-118">なし</span><span class="sxs-lookup"><span data-stu-id="925ce-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2051d-116">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="2051d-116">Relationships</span></span>
+<span data-ttu-id="2051d-117">なし</span><span class="sxs-lookup"><span data-stu-id="2051d-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="925ce-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="925ce-119">JSON Representation</span></span>
-<span data-ttu-id="925ce-120">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="925ce-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2051d-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2051d-118">JSON Representation</span></span>
+<span data-ttu-id="2051d-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2051d-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
