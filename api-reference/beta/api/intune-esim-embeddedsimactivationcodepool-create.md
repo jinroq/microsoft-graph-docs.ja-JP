@@ -1,34 +1,34 @@
 ---
-title: EmbeddedSIMActivationCodePool を作成します。
+title: embeddedSIMActivationCodePool を作成する
 description: 新しい embeddedSIMActivationCodePool オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b2d84230049c7b1f96756ac104557c5d8648c6a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9c0cf5f48f10d01fbaf5e15d74d8fb2421e203f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174602"
 ---
-# <a name="create-embeddedsimactivationcodepool"></a><span data-ttu-id="debc9-103">EmbeddedSIMActivationCodePool を作成します。</span><span class="sxs-lookup"><span data-stu-id="debc9-103">Create embeddedSIMActivationCodePool</span></span>
+# <a name="create-embeddedsimactivationcodepool"></a><span data-ttu-id="b1e0e-103">embeddedSIMActivationCodePool を作成する</span><span class="sxs-lookup"><span data-stu-id="b1e0e-103">Create embeddedSIMActivationCodePool</span></span>
 
-> <span data-ttu-id="debc9-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="debc9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="debc9-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="debc9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b1e0e-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="debc9-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="debc9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b1e0e-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="debc9-107">新しい[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="debc9-107">Create a new [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.</span></span>
+<span data-ttu-id="b1e0e-106">新しい[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-106">Create a new [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="debc9-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="debc9-108">Prerequisites</span></span>
-<span data-ttu-id="debc9-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="debc9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b1e0e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="b1e0e-107">Prerequisites</span></span>
+<span data-ttu-id="b1e0e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="debc9-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="debc9-111">Permission type</span></span>|<span data-ttu-id="debc9-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="debc9-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b1e0e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b1e0e-110">Permission type</span></span>|<span data-ttu-id="b1e0e-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b1e0e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="debc9-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="debc9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="debc9-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="debc9-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="debc9-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="debc9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="debc9-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="debc9-116">Not supported.</span></span>|
-|<span data-ttu-id="debc9-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="debc9-117">Application</span></span>|<span data-ttu-id="debc9-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="debc9-118">Not supported.</span></span>|
+|<span data-ttu-id="b1e0e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b1e0e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b1e0e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1e0e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="b1e0e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b1e0e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b1e0e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-115">Not supported.</span></span>|
+|<span data-ttu-id="b1e0e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b1e0e-116">Application</span></span>|<span data-ttu-id="b1e0e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="debc9-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="debc9-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1e0e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b1e0e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "29394027"
 POST /deviceManagement/embeddedSIMActivationCodePools
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="debc9-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="debc9-120">Request headers</span></span>
-|<span data-ttu-id="debc9-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="debc9-121">Header</span></span>|<span data-ttu-id="debc9-122">値</span><span class="sxs-lookup"><span data-stu-id="debc9-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b1e0e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1e0e-119">Request headers</span></span>
+|<span data-ttu-id="b1e0e-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1e0e-120">Header</span></span>|<span data-ttu-id="b1e0e-121">値</span><span class="sxs-lookup"><span data-stu-id="b1e0e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="debc9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="debc9-123">Authorization</span></span>|<span data-ttu-id="debc9-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="debc9-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="debc9-125">Accept</span><span class="sxs-lookup"><span data-stu-id="debc9-125">Accept</span></span>|<span data-ttu-id="debc9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="debc9-126">application/json</span></span>|
+|<span data-ttu-id="b1e0e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1e0e-122">Authorization</span></span>|<span data-ttu-id="b1e0e-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b1e0e-124">承諾</span><span class="sxs-lookup"><span data-stu-id="b1e0e-124">Accept</span></span>|<span data-ttu-id="b1e0e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b1e0e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="debc9-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="debc9-127">Request body</span></span>
-<span data-ttu-id="debc9-128">要求の本文に embeddedSIMActivationCodePool オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="debc9-128">In the request body, supply a JSON representation for the embeddedSIMActivationCodePool object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1e0e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b1e0e-126">Request body</span></span>
+<span data-ttu-id="b1e0e-127">要求本文で、embeddedSIMActivationCodePool オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-127">In the request body, supply a JSON representation for the embeddedSIMActivationCodePool object.</span></span>
 
-<span data-ttu-id="debc9-129">次の表は、embeddedSIMActivationCodePool を作成するときに必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="debc9-129">The following table shows the properties that are required when you create the embeddedSIMActivationCodePool.</span></span>
+<span data-ttu-id="b1e0e-128">次の表に、embeddedSIMActivationCodePool の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-128">The following table shows the properties that are required when you create the embeddedSIMActivationCodePool.</span></span>
 
-|<span data-ttu-id="debc9-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="debc9-130">Property</span></span>|<span data-ttu-id="debc9-131">型</span><span class="sxs-lookup"><span data-stu-id="debc9-131">Type</span></span>|<span data-ttu-id="debc9-132">説明</span><span class="sxs-lookup"><span data-stu-id="debc9-132">Description</span></span>|
+|<span data-ttu-id="b1e0e-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b1e0e-129">Property</span></span>|<span data-ttu-id="b1e0e-130">型</span><span class="sxs-lookup"><span data-stu-id="b1e0e-130">Type</span></span>|<span data-ttu-id="b1e0e-131">説明</span><span class="sxs-lookup"><span data-stu-id="b1e0e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="debc9-133">id</span><span class="sxs-lookup"><span data-stu-id="debc9-133">id</span></span>|<span data-ttu-id="debc9-134">String</span><span class="sxs-lookup"><span data-stu-id="debc9-134">String</span></span>|<span data-ttu-id="debc9-135">SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。</span><span class="sxs-lookup"><span data-stu-id="debc9-135">Unique identifier for the embedded SIM activation code pool.</span></span> <span data-ttu-id="debc9-136">システムでは、作成時に割り当てられた値が生成されます。</span><span class="sxs-lookup"><span data-stu-id="debc9-136">System generated value assigned when created.</span></span>|
-|<span data-ttu-id="debc9-137">displayName</span><span class="sxs-lookup"><span data-stu-id="debc9-137">displayName</span></span>|<span data-ttu-id="debc9-138">String</span><span class="sxs-lookup"><span data-stu-id="debc9-138">String</span></span>|<span data-ttu-id="debc9-139">管理者には、埋め込み SIM アクティベーション コードのプールの名前が定義されています。</span><span class="sxs-lookup"><span data-stu-id="debc9-139">The admin defined name of the embedded SIM activation code pool.</span></span>|
-|<span data-ttu-id="debc9-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="debc9-140">createdDateTime</span></span>|<span data-ttu-id="debc9-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="debc9-141">DateTimeOffset</span></span>|<span data-ttu-id="debc9-142">埋め込み SIM アクティベーション コードのプールが作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="debc9-142">The time the embedded SIM activation code pool was created.</span></span> <span data-ttu-id="debc9-143">サービス側が生成されます。</span><span class="sxs-lookup"><span data-stu-id="debc9-143">Generated service side.</span></span>|
-|<span data-ttu-id="debc9-144">変更された日時</span><span class="sxs-lookup"><span data-stu-id="debc9-144">modifiedDateTime</span></span>|<span data-ttu-id="debc9-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="debc9-145">DateTimeOffset</span></span>|<span data-ttu-id="debc9-146">埋め込み SIM アクティベーション コードのプールが最後に修正された時間です。</span><span class="sxs-lookup"><span data-stu-id="debc9-146">The time the embedded SIM activation code pool was last modified.</span></span> <span data-ttu-id="debc9-147">サービス側を更新します。</span><span class="sxs-lookup"><span data-stu-id="debc9-147">Updated service side.</span></span>|
-|<span data-ttu-id="debc9-148">activationCodes</span><span class="sxs-lookup"><span data-stu-id="debc9-148">activationCodes</span></span>|<span data-ttu-id="debc9-149">[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="debc9-149">[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) collection</span></span>|<span data-ttu-id="debc9-150">このプールに属しているアクティブ化コードです。</span><span class="sxs-lookup"><span data-stu-id="debc9-150">The activation codes which belong to this pool.</span></span> <span data-ttu-id="debc9-151">このナビゲーション プロパティは Intune にライセンス認証コードを投稿するために使用しますが、Intune からアクティブ化コードを読み取るには使用できません。</span><span class="sxs-lookup"><span data-stu-id="debc9-151">This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.</span></span>|
-|<span data-ttu-id="debc9-152">activationCodeCount</span><span class="sxs-lookup"><span data-stu-id="debc9-152">activationCodeCount</span></span>|<span data-ttu-id="debc9-153">Int32</span><span class="sxs-lookup"><span data-stu-id="debc9-153">Int32</span></span>|<span data-ttu-id="debc9-154">このプールに属しているアクティブ化コードの合計数。</span><span class="sxs-lookup"><span data-stu-id="debc9-154">The total count of activation codes which belong to this pool.</span></span>|
+|<span data-ttu-id="b1e0e-132">id</span><span class="sxs-lookup"><span data-stu-id="b1e0e-132">id</span></span>|<span data-ttu-id="b1e0e-133">String</span><span class="sxs-lookup"><span data-stu-id="b1e0e-133">String</span></span>|<span data-ttu-id="b1e0e-134">埋め込まれた SIM アクティブ化コードプールの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-134">Unique identifier for the embedded SIM activation code pool.</span></span> <span data-ttu-id="b1e0e-135">作成時に割り当てられたシステム生成値。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-135">System generated value assigned when created.</span></span>|
+|<span data-ttu-id="b1e0e-136">displayName</span><span class="sxs-lookup"><span data-stu-id="b1e0e-136">displayName</span></span>|<span data-ttu-id="b1e0e-137">String</span><span class="sxs-lookup"><span data-stu-id="b1e0e-137">String</span></span>|<span data-ttu-id="b1e0e-138">埋め込まれた SIM アクティブ化コードプールの管理者定義の名前。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-138">The admin defined name of the embedded SIM activation code pool.</span></span>|
+|<span data-ttu-id="b1e0e-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b1e0e-139">createdDateTime</span></span>|<span data-ttu-id="b1e0e-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1e0e-140">DateTimeOffset</span></span>|<span data-ttu-id="b1e0e-141">埋め込まれた SIM ライセンス認証コードプールが作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-141">The time the embedded SIM activation code pool was created.</span></span> <span data-ttu-id="b1e0e-142">サービス側を生成しました。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-142">Generated service side.</span></span>|
+|<span data-ttu-id="b1e0e-143">変更された日時</span><span class="sxs-lookup"><span data-stu-id="b1e0e-143">modifiedDateTime</span></span>|<span data-ttu-id="b1e0e-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1e0e-144">DateTimeOffset</span></span>|<span data-ttu-id="b1e0e-145">埋め込まれた SIM ライセンス認証コードプールが最後に変更された時刻。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-145">The time the embedded SIM activation code pool was last modified.</span></span> <span data-ttu-id="b1e0e-146">サービス側を更新しました。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-146">Updated service side.</span></span>|
+|<span data-ttu-id="b1e0e-147">activationCodes</span><span class="sxs-lookup"><span data-stu-id="b1e0e-147">activationCodes</span></span>|<span data-ttu-id="b1e0e-148">[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="b1e0e-148">[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) collection</span></span>|<span data-ttu-id="b1e0e-149">このプールに属するアクティブ化コード。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-149">The activation codes which belong to this pool.</span></span> <span data-ttu-id="b1e0e-150">このナビゲーションプロパティは、アクティブ化コードを intune に送信するために使用されますが、intune からのアクティブ化コードの読み取りには使用できません。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-150">This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.</span></span>|
+|<span data-ttu-id="b1e0e-151">activationCodeCount</span><span class="sxs-lookup"><span data-stu-id="b1e0e-151">activationCodeCount</span></span>|<span data-ttu-id="b1e0e-152">Int32</span><span class="sxs-lookup"><span data-stu-id="b1e0e-152">Int32</span></span>|<span data-ttu-id="b1e0e-153">このプールに属するアクティブ化コードの合計数。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-153">The total count of activation codes which belong to this pool.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="debc9-155">応答</span><span class="sxs-lookup"><span data-stu-id="debc9-155">Response</span></span>
-<span data-ttu-id="debc9-156">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="debc9-156">If successful, this method returns a `201 Created` response code and a [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b1e0e-154">応答</span><span class="sxs-lookup"><span data-stu-id="b1e0e-154">Response</span></span>
+<span data-ttu-id="b1e0e-155">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-155">If successful, this method returns a `201 Created` response code and a [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="debc9-157">例</span><span class="sxs-lookup"><span data-stu-id="debc9-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b1e0e-156">例</span><span class="sxs-lookup"><span data-stu-id="b1e0e-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="debc9-158">要求</span><span class="sxs-lookup"><span data-stu-id="debc9-158">Request</span></span>
-<span data-ttu-id="debc9-159">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="debc9-159">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b1e0e-157">要求</span><span class="sxs-lookup"><span data-stu-id="b1e0e-157">Request</span></span>
+<span data-ttu-id="b1e0e-158">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-158">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 460
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="debc9-160">応答</span><span class="sxs-lookup"><span data-stu-id="debc9-160">Response</span></span>
-<span data-ttu-id="debc9-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="debc9-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b1e0e-159">応答</span><span class="sxs-lookup"><span data-stu-id="b1e0e-159">Response</span></span>
+<span data-ttu-id="b1e0e-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b1e0e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
