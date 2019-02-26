@@ -1,27 +1,28 @@
 ---
-title: 列挙型の有効化
+title: 有効化列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25ee1a9e3121dee96830a03e1f6cef18dca684ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2bb862dd45b49e67bb1e02b7a34a7945845fd1e7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933534"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256106"
 ---
-# <a name="enablement-enum-type"></a>列挙型の有効化
+# <a name="enablement-enum-type"></a>有効化列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|まだ文書化されていません|
-|enabled|1|まだ文書化されていません|
-|無効になっています。|2|まだ文書化されていません|
+|notConfigured|.0|まだ文書化されていません|
+|enabled|1-d|まだ文書化されていません|
+|党|pbm-2|まだ文書化されていません|
 
 
 

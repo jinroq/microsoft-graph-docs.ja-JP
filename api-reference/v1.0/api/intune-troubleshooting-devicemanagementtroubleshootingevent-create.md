@@ -3,21 +3,22 @@ title: deviceManagementTroubleshootingEvent の作成
 description: 新しい deviceManagementTroubleshootingEvent オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c0fd0e5ddceec3e3aa4ffae3507635286d664df8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0d222ddfa480072baefd943ca38ea8ade6d61641
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922600"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258451"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の作成
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ POST /deviceManagement/troubleshootingEvents
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceManagementTroubleshootingEvent オブジェクトの JSON 表記を指定します。
@@ -47,7 +48,7 @@ POST /deviceManagement/troubleshootingEvents
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの UUID|
+|id|String|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 
@@ -57,6 +58,7 @@ POST /deviceManagement/troubleshootingEvents
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

@@ -1,23 +1,23 @@
 ---
-title: IntuneBrandingProfile を更新します。
-description: IntuneBrandingProfile オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: intuneBrandingProfile の更新
+description: intuneBrandingProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa1382101012bb202286f75489532a80a87bb381
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a66589e4be7d5cc175c792935e2f309c8f28e33
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162343"
 ---
-# <a name="update-intunebrandingprofile"></a>IntuneBrandingProfile を更新します。
+# <a name="update-intunebrandingprofile"></a>intuneBrandingProfile の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。
+[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,21 +41,21 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトの JSON 表記を指定します。
 
-[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|プロファイル キー|
-|profilename プロパティ|String|プロファイルの名前|
-|profileDescription|String|プロファイルの説明|
-|isDefaultProfile|Boolean|既定のプロファイルが使用される場合について説明します。|
-|createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
-|lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
+|id|文字列|プロファイルキー|
+|profileName|String|プロファイルの名前|
+|profiledescription|String|プロファイルの説明|
+|isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
+|createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
+|lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
 |contactITName|String|IT サポートを担当する個人名または組織名。|
 |contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
@@ -67,14 +67,14 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
 |showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴ イメージがテーマの背景色を会社のポータル アプリケーションに表示されます。|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴのイメージは明るい背景に会社のポータル アプリケーションに表示されます。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータル アプリケーションのランディング ページに表示されるカスタムのイメージ|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

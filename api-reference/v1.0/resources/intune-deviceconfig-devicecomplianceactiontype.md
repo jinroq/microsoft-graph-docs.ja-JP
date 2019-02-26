@@ -1,31 +1,32 @@
 ---
-title: deviceComplianceActionType 列挙型
-description: 列挙型の操作をスケジュールします。
+title: devicecomplianceactiontype 列挙型
+description: スケジュールされたアクションの種類列挙
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8d725213790260ece51c02bb81f2394fc8602095
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: bd370f9e706955d76de519a518b4659ba46c6d25
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917343"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250916"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 列挙型
+# <a name="devicecomplianceactiontype-enum-type"></a>devicecomplianceactiontype 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-列挙型の操作をスケジュールします。
+スケジュールされたアクションの種類列挙
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|noAction|0|操作は必要ありません。|
-|通知|1|通知を送信します。|
-|ブロック|2|AAD でデバイスをブロックします。|
-|退職|3|デバイスを破棄します。|
-|ワイプ|4|デバイスをワイプします。|
-|removeResourceAccessProfiles|5|デバイスからリソースのアクセス ・ プロファイルを削除します。|
-|pushNotification|9|デバイスにプッシュ通知を送信します。|
+|noAction|.0|アクションなし|
+|お知らせ|1-d|通知の送信|
+|拒否|pbm-2|AAD でデバイスをブロックする|
+|削除|1/3|デバイスをインベントリから削除する|
+|ふき|2/4|デバイスをワイプする|
+|removeresourceaccessprofiles|5|デバイスからリソースアクセスプロファイルを削除する|
+|pushnotification|i-9|デバイスへのプッシュ通知の送信|
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: IntuneBrandingProfile を作成します。
+title: intuneBrandingProfile を作成する
 description: 新しい intuneBrandingProfile オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a613d6d98aee2b17624e7894cafa712c7d6b66ed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: de4786920476794d370a33d8275c347c909cf538
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399536"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142057"
 ---
-# <a name="create-intunebrandingprofile"></a>IntuneBrandingProfile を作成します。
+# <a name="create-intunebrandingprofile"></a>intuneBrandingProfile を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。
 
@@ -41,21 +41,21 @@ POST /deviceManagement/intuneBrandingProfiles
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に intuneBrandingProfile オブジェクトの JSON の形式を指定します。
+要求本文で、intuneBrandingProfile オブジェクトの JSON 表記を指定します。
 
-次の表は、intuneBrandingProfile を作成するときに必要なプロパティを示します。
+次の表に、intuneBrandingProfile の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|プロファイル キー|
-|profilename プロパティ|String|プロファイルの名前|
-|profileDescription|String|プロファイルの説明|
-|isDefaultProfile|Boolean|既定のプロファイルが使用される場合について説明します。|
-|createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
-|lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
+|id|文字列|プロファイルキー|
+|profileName|String|プロファイルの名前|
+|profiledescription|String|プロファイルの説明|
+|isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
+|createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
+|lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
 |contactITName|String|IT サポートを担当する個人名または組織名。|
 |contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
@@ -67,14 +67,14 @@ POST /deviceManagement/intuneBrandingProfiles
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
 |showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴ イメージがテーマの背景色を会社のポータル アプリケーションに表示されます。|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴのイメージは明るい背景に会社のポータル アプリケーションに表示されます。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータル アプリケーションのランディング ページに表示されるカスタムのイメージ|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

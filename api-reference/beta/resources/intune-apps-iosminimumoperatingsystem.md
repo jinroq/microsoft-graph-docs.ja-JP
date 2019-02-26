@@ -1,32 +1,32 @@
 ---
 title: iosMinimumOperatingSystem リソースの種類
 description: iOS モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4a97932c76a737aa1a98321feb429244228c97d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 98ad7191b919905e18246e904744b79dfeead06e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406942"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161496"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v8_0|ブール型 (Boolean)|バージョン 8.0 以降。|
-|v9_0|ブール型 (Boolean)|バージョン 9.0 以降。|
-|v10_0|ブール型 (Boolean)|バージョン 10.0 以降。|
+|v8_0|Boolean|バージョン 8.0 以降。|
+|v9_0|Boolean|バージョン 9.0 以降。|
+|v10_0|Boolean|バージョン 10.0 以降。|
 |v11_0|ブール型 (Boolean)|バージョン 11.0 以降。|
-|v12_0|Boolean|12.0 またはそれ以降のバージョンです。|
+|v12_0|Boolean|バージョン12.0 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

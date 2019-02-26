@@ -1,30 +1,30 @@
 ---
 title: win32LobAppMsiPackageType 列挙型
-description: MSI の Win32LobApp のパッケージの種類を示します。
-localization_priority: Normal
+description: MSI Win32LobApp のパッケージの種類を示します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ec9245330f323ae6d52d46059643c6352f511d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 637c694eda2bb46d869b3f7aadd40b469879468e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172766"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MSI の Win32LobApp のパッケージの種類を示します。
+MSI Win32LobApp のパッケージの種類を示します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|#e412|0|コンピューターごとのアプリケーションのパッケージを示します。|
-|perUser|1|ユーザーごとのアプリケーションのパッケージを示します。|
-|dualPurpose|2|2 つの目的のアプリケーションのパッケージを示します。|
+|permachine|.0|コンピューターごとのアプリパッケージを示します。|
+|perUser|1-d|ユーザーごとのアプリパッケージを示します。|
+|dualPurpose|pbm-2|2目的のアプリパッケージを示します。|
 
 
 

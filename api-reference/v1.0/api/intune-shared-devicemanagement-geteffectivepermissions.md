@@ -4,16 +4,16 @@ description: 現在の認証ユーザーの有効なアクセス許可を取得�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f40412a8d95fd6bde17843b0c13e81f00459dd12
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d6c58ae88e2b5cf9a6787529868f8cf9e42879be
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980077"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257352"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 関数
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 現在の認証ユーザーの有効なアクセス許可を取得します
 
@@ -23,7 +23,7 @@ ms.locfileid: "27980077"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp;&nbsp;ロール ベースのアクセス制御 | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
+| &nbsp;&nbsp;役割ベースのアクセス制御 | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -40,7 +40,7 @@ GET /deviceManagement/getEffectivePermissions
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求 URL で、次のクエリ パラメーターに値を指定します。

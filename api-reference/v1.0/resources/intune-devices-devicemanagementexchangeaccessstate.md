@@ -1,29 +1,30 @@
 ---
-title: deviceManagementExchangeAccessState 列挙型
-description: デバイスの Exchange のアクセスの状態です。
+title: devicemanagementexchangeaccessstate 列挙型
+description: デバイスの Exchange アクセス状態。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dbfa7b9396a1100f2e3c7e4e78cf697233d840cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fedbd157c4668397256971c57a4cb5fa355f78c1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947016"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257604"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 列挙型
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>devicemanagementexchangeaccessstate 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイスの Exchange のアクセスの状態です。
+デバイスの Exchange アクセス状態。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|Exchange から検出アクセス状態がないです。|
-|不明|1|Exchange へのデバイスのアクセス状態は不明です。|
-|許可|2|デバイスが Exchange へのアクセス権を持つ|
-|ブロック|3|デバイスが Exchange でブロックされています。|
-|検疫|4|デバイスが Exchange の検疫します。|
+|none|.0|Exchange から検出されたアクセス状態なし|
+|不明|1-d|Exchange へのデバイスアクセス状態が不明です|
+|れる|pbm-2|デバイスが Exchange にアクセスできる|
+|ブロック|1/3|Exchange でデバイスがブロックされている|
+|隔離|2/4|Exchange でのデバイスの検疫|
 
 
 

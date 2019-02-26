@@ -1,23 +1,23 @@
 ---
-title: AndroidForWorkApp を作成します。
-description: 新しい androidForWorkApp オブジェクトを作成します。
-localization_priority: Normal
+title: androidforwork アプリの作成
+description: 新しい androidforwork app オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dad21f184ff5cfdd31ef4ed8114169850b2239c4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1b96fbe67fac0a6c5c3bca7becb84f84538a056f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142085"
 ---
-# <a name="create-androidforworkapp"></a>AndroidForWorkApp を作成します。
+# <a name="create-androidforworkapp"></a>androidforwork アプリの作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)オブジェクトを作成します。
+新しい[androidforwork app](../resources/intune-apps-androidforworkapp.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,18 +41,18 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に androidForWorkApp オブジェクトの JSON の形式を指定します。
+要求本文で、androidforwork app オブジェクトの JSON 表記を指定します。
 
-次の表は、androidForWorkApp を作成するときに必要なプロパティを示します。
+次の表に、androidforwork アプリの作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -63,20 +63,20 @@ POST /deviceAppManagement/mobileApps
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |packageId|String|パッケージの識別子。|
 |appIdentifier|String|ID 名。|
 |usedLicenseCount|Int32|使用中の VPP ライセンスの数。|
 |totalLicenseCount|Int32|VPP ライセンスの総数。|
-|appStoreUrl|String|作業ストア アプリケーションの URL を再生します。|
+|appStoreUrl|String|ワークストアアプリの URL を再生します。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[androidforwork app](../resources/intune-apps-androidforworkapp.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -1,21 +1,21 @@
 ---
-title: EnterpriseCodeSigningCertificate を作成します。
+title: enterpriseCodeSigningCertificate を作成する
 description: 新しい enterpriseCodeSigningCertificate オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5ba50739903fce6e462f5c1a2602a4a61221eb3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 20b65d8b1eda5eab4bdd3e497eb6d505753f04de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402553"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173102"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を作成します。
+# <a name="create-enterprisecodesigningcertificate"></a>enterpriseCodeSigningCertificate を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトを作成します。
 
@@ -41,29 +41,29 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に enterpriseCodeSigningCertificate オブジェクトの JSON の形式を指定します。
+要求本文で、enterpriseCodeSigningCertificate オブジェクトの JSON 表記を指定します。
 
-次の表は、enterpriseCodeSigningCertificate を作成するときに必要なプロパティを示します。
+次の表に、enterpriseCodeSigningCertificate の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|content|Binary|生データの形式で Windows エンタープライズ コード署名証明書。|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態は、準備または準備されていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
-|subjectName|文字列型 (String)|証明書のサブジェクト名。|
-|subject|String|証明書のサブジェクト値。|
-|issuerName|String|証明書の発行者の名前です。|
-|発行者|String|証明書の発行者の値です。|
-|expirationDateTime|DateTimeOffset|証明書の有効期限日です。|
-|uploadDateTime|DateTimeOffset|コード署名証明書のアップロード時の日時です。|
+|content|Binary|未加工のデータ形式の Windows エンタープライズコード署名証明書。|
+|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
+|subjectName|String|証明書のサブジェクト名。|
+|subject|String|証明書のサブジェクトの値。|
+|issuerName|String|証明書の発行者名。|
+|会社|String|証明書の発行者の値。|
+|expirationDateTime|DateTimeOffset|証明書の有効期限。|
+|uploaddatetime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

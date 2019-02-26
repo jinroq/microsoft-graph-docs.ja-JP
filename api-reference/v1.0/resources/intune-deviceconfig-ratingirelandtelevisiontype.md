@@ -1,31 +1,32 @@
 ---
 title: ratingIrelandTelevisionType 列挙型
-description: アイルランドのテレビのコンテンツの規制ラベル
+description: アイルランドのテレビコンテンツ評価のラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb03562a32fa9a8d41ea0d68cf7cd5cf5416ac0e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5730f3be21aa18465ab7829b49dc098c122329b9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967309"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252624"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アイルランドのテレビのコンテンツの規制ラベル
+アイルランドのテレビコンテンツ評価のラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|全般|2|GA クラス分けがすべての対象ユーザーに適しています。|
-|children|3|CH クラス分けが子供に適しています。|
-|youngAdults|4|YA クラス分けが 10 代向けに適しています。|
-|parentalSupervision|5|PS 分類制限子供のアクセスを考慮するには、親と保護者へを招待します。|
-|成熟|6|MA クラス分けが大人に適しています。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|元帳|pbm-2|GA 分類は、すべての対象ユーザーに適しています。|
+|children|1/3|CH 分類は、子に適しています。|
+|youngAdults|2/4|YA の分類は、teenage 対象ユーザーに適しています。|
+|parentalsupervision|5|PS 分類は親とガーディアンを招待して、子のアクセス制限を考慮します。|
+|度|シックス|MA 分類は、大人に適しています。|
 
 
 

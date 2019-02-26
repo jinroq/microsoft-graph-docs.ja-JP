@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicySettingStateSummary リソースの種類
 description: アカウント全体における、デバイス コンプライアンスのポリシー設定状態の要約です。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bb53973f689e555e2ba6f1e361d59692665284
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bb9802ecca80178eb98ca041d26d45b8688ebb36
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425947"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173158"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アカウント全体における、デバイス コンプライアンスのポリシー設定状態の要約です。
 
@@ -31,10 +31,10 @@ ms.locfileid: "29425947"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|設定の名前。|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|設定のプラットフォームです。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームを設定します。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|

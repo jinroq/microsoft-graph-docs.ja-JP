@@ -1,21 +1,21 @@
 ---
 title: managedDeviceOverview リソースの種類
 description: 管理対象デバイスの概要データ
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db5cebe36850971c871f673d07f18b8d5121cb1b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e6c7187bc5cb984e4ca7e607068e6010f747f868
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422237"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175004"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象デバイスの概要データ
 
@@ -34,8 +34,8 @@ ms.locfileid: "29422237"
 |dualEnrolledDeviceCount|Int32|MDM と EAS の両方に登録されているデバイスの数|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|デバイスのオペレーティング システムの概要。|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Intune での Exchange アクセス状態の配布|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|モデルと、アカウントで管理されているデバイスのメーカーの meatadata|
-|lastModifiedDateTime|DateTimeOffset|デバイスの概要の最後の更新日時|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|アカウントの管理対象デバイスのモデルと製造 meatadata|
+|lastModifiedDateTime|DateTimeOffset|デバイスの最終変更日時の概要|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

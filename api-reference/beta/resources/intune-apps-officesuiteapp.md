@@ -1,23 +1,23 @@
 ---
 title: officeSuiteApp リソースの種類
-description: Office365 スイート アプリケーションのプロパティと継承されたプロパティが含まれています。
-localization_priority: Normal
+description: Office365 Suite アプリのプロパティと継承されたプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2be565af88961ebafe4ed978524763797a3fe475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 06ddc6e6e41b6302bf0027c704df79939088c8d0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395532"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151941"
 ---
 # <a name="officesuiteapp-resource-type"></a>officeSuiteApp リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Office365 スイート アプリケーションのプロパティと継承されたプロパティが含まれています。
+Office365 Suite アプリのプロパティと継承されたプロパティが含まれています。
 
 
 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します
@@ -25,19 +25,19 @@ Office365 スイート アプリケーションのプロパティと継承され
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト officeSuiteApps](../api/intune-apps-officesuiteapp-list.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)コレクション|[OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[OfficeSuiteApp を取得します。](../api/intune-apps-officesuiteapp-get.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティと関係を参照してください。|
-|[OfficeSuiteApp を作成します。](../api/intune-apps-officesuiteapp-create.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|新しい[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトを作成します。|
-|[OfficeSuiteApp を削除します。](../api/intune-apps-officesuiteapp-delete.md)|なし|の[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)を削除します。|
-|[OfficeSuiteApp を更新します。](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティを更新します。|
+|[リスト officeSuiteApps](../api/intune-apps-officesuiteapp-list.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)コレクション|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[officeSuiteApp を取得する](../api/intune-apps-officesuiteapp-get.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[officeSuiteApp を作成する](../api/intune-apps-officesuiteapp-create.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|新しい[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトを作成します。|
+|[officeSuiteApp の削除](../api/intune-apps-officesuiteapp-delete.md)|なし|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)を削除します。|
+|[officeSuiteApp の更新](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -47,22 +47,22 @@ Office365 スイート アプリケーションのプロパティと継承され
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|autoAcceptEula|Boolean|エンド ・ ユーザーのデバイスに自動的に使用許諾契約書をそのまま使用する値。|
-|productIds|[officeProductId](../resources/intune-apps-officeproductid.md)コレクション|Office365 スイート SKU を表すプロダクト Id です。|
-|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|選択した Office365 製品 id。 から除外されている場合、アプリケーションを表すためのプロパティ|
-|useSharedComputerActivation|Boolean|Office365 アプリケーション スイートではなく、共有のコンピューターのライセンス認証が使用されるかどうかを表すプロパティです。|
-|updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Office365 更新チャネルを表すプロパティです。 可能な値は、`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred` です。|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Office365 アプリケーション スイートのバージョンを表すプロパティです。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|localesToInstall|String コレクション|インストールされているロケールを表すプロパティ Office365 からアプリケーションがインストールされています。 標準の RFC 6033 を使用します。 Ref。https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|デバイスのインストール中のセットアップの UI の表示のレベルを指定します。 使用可能な値は、`none`、`full` です。|
-|shouldUninstallOlderVersionsOfOffice|Boolean|Office365 のアプリケーション スイートをかデバイスに配置する場合は、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
-|targetVersion|String|デバイス上に配置されたままする必要があります Office365 アプリケーション スイートの特定のターゲットのバージョンを表すプロパティです。|
-|updateVersion|String|ターゲットの特定のバージョンで Office365 アプリケーション スイートの利用可能な更新プログラムのバージョンを表すプロパティです。|
-|officeConfigurationXml|Binary|Office 用リソースのアプリケーションに指定できる XML 構成ファイルを表すプロパティです。 その他のすべてのプロパティに優先します。 存在する場合、XML 構成ファイルを使用してアプリケーションを作成します。|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|autoAcceptEula|Boolean|enduser のデバイスで EULA に自動的に同意する値。|
+|productIds|[officeproductid](../resources/intune-apps-officeproductid.md)コレクション|Office365 スイート SKU を表す製品 id。|
+|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|選択した Office365 製品 Id から除外されるアプリを表すプロパティ。|
+|。 usesharedcomputeractivation|Boolean|office 365 アプリスイートに対して共有コンピューターのライセンス認証が使用されていないかどうかを表すプロパティ。|
+|updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Office365 更新チャネルを表すプロパティ。 可能な値は、`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred` です。|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Office365 アプリスイートのバージョンを表すプロパティ。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
+|次|String コレクション|Office365 のアプリをインストールするときにインストールされるロケールを表すプロパティ。 標準の RFC 6033 を使用します。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|install進捗 displaylevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|デバイス上のインストールの進行状況のセットアップ UI の表示レベルを指定します。 使用可能な値は、`none`、`full` です。|
+|shouldUninstallOlderVersionsOfOffice|Boolean|Office365 アプリスイートがデバイスに展開されている場合に、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
+|targetVersion|String|デバイスに展開されたままにする必要がある、Office365 アプリスイートの特定のターゲットバージョンを表すプロパティ。|
+|updateversion|String|Office365 アプリスイートで特定のターゲットバージョンが利用可能な更新バージョンを表すプロパティ。|
+|officeConfigurationXml|Binary|Office ProPlus アプリに指定できる XML 構成ファイルを表すプロパティ。 他のすべてのプロパティより優先されます。 指定した場合、XML 構成ファイルを使用してアプリが作成されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -70,8 +70,8 @@ Office365 スイート アプリケーションのプロパティと継承され
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

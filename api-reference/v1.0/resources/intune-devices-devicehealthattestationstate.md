@@ -3,21 +3,22 @@ title: deviceHealthAttestationState リソース タイプ
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7d246e5bd4235a3bc121d2809e95a59788bf9441
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 53fa5cdafdc125fdc32ef599a625c58e3bcbe687
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972153"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256148"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |lastUpdateDateTime|String|最終更新のタイムスタンプ。|
 |contentNamespaceUrl|String|DHA レポートのバージョン。 (名前空間のバージョン)|
@@ -54,6 +55,7 @@ ms.locfileid: "27972153"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

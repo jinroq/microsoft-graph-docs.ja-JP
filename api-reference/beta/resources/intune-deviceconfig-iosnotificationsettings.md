@@ -1,21 +1,21 @@
 ---
 title: iosNotificationSettings リソース タイプ
 description: 通知設定を記述するアイテムです。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7db0b6ba438522db0795f6897daba8b5c43258c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2876146e7e20ad94a7356f623a5b2e17443a18f8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420501"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172703"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 通知設定を記述するアイテムです。
 
@@ -25,10 +25,10 @@ ms.locfileid: "29420501"
 |bundleID|String|これらの通知設定を適用するアプリのバンドル ID。|
 |appName|String|bundleID に関連するアプリケーション名。|
 |publisher|String|bundleID に関連するパブリッシャー。|
-|enabled|Boolean|通知がこのアプリで許可されているかどうかを示します。|
+|enabled|ブール型|通知がこのアプリで許可されているかどうかを示します。|
 |showInNotificationCenter|Boolean|通知センターに通知を表示できるかどうかを示します。|
 |showOnLockScreen|Boolean|ロック画面に通知を表示できるかどうかを示します。|
-|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|このアプリの通知用の警告の種類を示します。 可能な値は、`deviceDefault`、`banner`、`modal`、`none` です。|
+|alertType|[iosnotificationalerttype](../resources/intune-deviceconfig-iosnotificationalerttype.md)|このアプリの通知用の警告の種類を示します。 可能な値は、`deviceDefault`、`banner`、`modal`、`none` です。|
 |badgesEnabled|Boolean|バッジがこのアプリで許可されているかどうかを示します。|
 |soundsEnabled|Boolean|サウンドがこのアプリで許可されているかどうかを示します。|
 

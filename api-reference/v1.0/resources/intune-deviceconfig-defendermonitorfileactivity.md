@@ -1,29 +1,30 @@
 ---
-title: defenderMonitorFileActivity 列挙型
-description: ファイル ・ アクティビティを監視するための可能な値です。
+title: defendermonitorfileactivity 列挙型
+description: ファイルアクティビティの監視に使用できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d818264470543d077384f055cf2ef4004e019b26
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 39c53847d270639d11b5014291e62dde2668a4d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937118"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256001"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 列挙型
+# <a name="defendermonitorfileactivity-enum-type"></a>defendermonitorfileactivity 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ファイル ・ アクティビティを監視するための可能な値です。
+ファイルアクティビティの監視に使用できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|無効にします。|1|ファイル ・ アクティビティの監視を無効にします。|
-|monitorAllFiles|2|すべてのファイルを監視します。|
-|monitorIncomingFilesOnly|3| 受信ファイルのみを監視します。|
-|monitorOutgoingFilesOnly|4|送信ファイルのみを監視します。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|無効にする|1-d|ファイルの監視処理を無効にします。|
+|monitorallfiles|pbm-2|すべてのファイルを監視します。|
+|monitorIncomingFilesOnly|1/3| 受信ファイルのみを監視します。|
+|monitorOutgoingFilesOnly|2/4|送信ファイルのみを監視します。|
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: managedAppOperation リソースの種類
 description: アプリ登録に対して適用される操作を表します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb72c4bf8cf7f2a4a55790087c3d46746c46a84a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5fb8ad24a86822b657e4f0239f78ab8f08656ee4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424659"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162210"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリ登録に対して適用される操作を表します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "29424659"
 |displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
 |state|String|操作の現在の状態。|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

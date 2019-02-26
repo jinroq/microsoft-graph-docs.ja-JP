@@ -1,49 +1,49 @@
 ---
-title: hardwareInformation リソースの種類
-description: 特定のデバイスのハードウェア情報です。
-localization_priority: Normal
+title: ハードウェア情報リソースの種類
+description: 特定のデバイスのハードウェア情報。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32b6d0e637c477265a6d23f39e531ca89c7e490c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: be7d87f1d596a4756b3e964cd57f29da60f1c468
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172878"
 ---
-# <a name="hardwareinformation-resource-type"></a>hardwareInformation リソースの種類
+# <a name="hardwareinformation-resource-type"></a>ハードウェア情報リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-特定のデバイスのハードウェア情報です。
+特定のデバイスのハードウェア情報。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |シリアル番号|String|シリアル番号です。|
-|totalStorageSpace|Int64|デバイスの合計容量。|
-|freeStorageSpace|Int64|デバイスの空き容量。|
+|totalStorageSpace|Int64|デバイスの記憶領域の合計。|
+|freeStorageSpace|Int64|デバイスの記憶域スペースを解放します。|
 |imei|String|IMEI|
 |meid|String|MEID|
 |manufacturer|String|デバイスのメーカー|
 |model|String|デバイスのモデル|
 |phoneNumber|String|デバイスの電話番号|
-|subscriberCarrier|String|デバイスのサブスクライバーのキャリア|
-|cellularTechnology|String|デバイスの携帯電話のテクノロジー|
-|wifiMac|String|デバイスの WiFi の MAC アドレス|
-|operatingSystemLanguage|String|デバイスのオペレーティング システムの言語|
-|isSupervised|Boolean|デバイスのコールを管理モード|
+|subscriberCarrier|String|デバイスのサブスクライバーキャリア|
+|cellulartechnology|String|デバイスの携帯電話テクノロジ|
+|wifiMac|String|デバイスの WiFi MAC アドレス|
+|operatingSystemLanguage|String|デバイスのオペレーティングシステムの言語|
+|isSupervised|Boolean|デバイスの監視モード|
 |isEncrypted|Boolean|デバイスの暗号化の状態|
-|isSharedDevice|Boolean|IPad の共有|
-|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)コレクション|共有の Apple デバイス上のすべてのユーザー|
-|tpmSpecificationVersion|String|仕様のバージョンを指定する文字列。|
+|isSharedDevice|Boolean|共有 iPad|
+|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)コレクション|共有 Apple デバイス上のすべてのユーザー|
+|tpmSpecificationVersion|String|仕様バージョンを指定する文字列。|
 |operatingSystemEdition|String|OS のエディションを指定する文字列。|
-|deviceFullQualifiedDomainName|String|(存在する場合) は、デバイスの完全修飾ドメイン名を返します。 デバイスがドメインに参加していない場合は、空の文字列を返します。 |
-|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|仮想化ベースのセキュリティ ハードウェアの要件の状態です。 可能な値は、`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable` です。|
-|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|仮想化ベースのセキュリティの状態です。 . 可能な値は、`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements`、`other` です。|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|ローカル システム機関 (LSA) の資格情報のガード状態です。 . 可能な値は、`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning` です。|
+|deviceFullQualifiedDomainName|String|デバイスの完全修飾ドメイン名を返します (存在する場合)。 デバイスがドメインに参加していない場合は、空の文字列が返されます。 |
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|仮想化ベースのセキュリティハードウェア要件の状態。 可能な値は、`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable` です。|
+|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|仮想化ベースのセキュリティの状態。 . 可能な値は、`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements`、`other` です。|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|ローカルシステム権限 (LSA) credential guard の状態。 . 可能な値は、`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,26 +1,27 @@
 ---
 title: deviceManagementExchangeConnectorSyncType 列挙型
-description: Exchange コネクタの同期要求の種類。
+description: 要求された Exchange Connector の同期の種類。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af14006bd6f3cc8733faecc8e0219cc02e7fcd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cfdd1da2ecec6fb7848787386991ee09741d0b67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983283"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257583"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Exchange コネクタの同期要求の種類。
+要求された Exchange Connector の同期の種類。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|fullSync|0|Exchange のすべてのデバイスを検出します。|
-|deltaSync|1|デルタ同期ウィンドウの中に更新する Exchange のデバイスのみを検出します。|
+|fullSync|.0|Exchange のすべてのデバイスを検出します。|
+|deltasync]|1-d|[差分同期] ウィンドウで更新された Exchange のデバイスのみを検出します。|
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: IosVppAppAssignedDeviceLicense を作成します。
+title: iosVppAppAssignedDeviceLicense を作成する
 description: 新しい iosVppAppAssignedDeviceLicense オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2806e6db550068f46e943f03baca96647176912a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3157c49f1ed9f0b05df9115a0370edf881a3ab3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172640"
 ---
-# <a name="create-iosvppappassigneddevicelicense"></a>IosVppAppAssignedDeviceLicense を作成します。
+# <a name="create-iosvppappassigneddevicelicense"></a>iosVppAppAssignedDeviceLicense を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md)オブジェクトを作成します。
 
@@ -41,27 +41,27 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に iosVppAppAssignedDeviceLicense オブジェクトの JSON の形式を指定します。
+要求本文で、iosVppAppAssignedDeviceLicense オブジェクトの JSON 表記を指定します。
 
-次の表は、iosVppAppAssignedDeviceLicense を作成するときに必要なプロパティを示します。
+次の表に、iosVppAppAssignedDeviceLicense の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
-|userEmailAddress|String|ユーザーの電子メール アドレスです。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
-|userId|String|ユーザー id。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
-|userName|String|ユーザー名。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
-|userPrincipalName|String|ユーザー プリンシパル名。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
-|managedDeviceId|String|管理対象デバイスの id。|
-|deviceName|String|デバイスの名前。|
+|id|String|エンティティのキー。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userEmailAddress|String|ユーザーの電子メールアドレス。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userId|String|ユーザー ID。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userName|String|ユーザー名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userPrincipalName|文字列|ユーザー プリンシパル名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|manageddeviceid|String|管理されているデバイス ID。|
+|deviceName|String|デバイス名。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

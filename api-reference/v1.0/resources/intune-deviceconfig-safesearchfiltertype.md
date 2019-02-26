@@ -1,27 +1,28 @@
 ---
 title: safeSearchFilterType 列挙型
-description: (成人向けコンテンツのフィルタ リング)、安全な検索のレベルが必要なを指定します。
+description: 安全な検索のレベル (アダルトコンテンツのフィルタリング) を指定します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 788a266cdd0161ce1cfef426a7fcf4d9726e3324
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964614"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250587"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-(成人向けコンテンツのフィルタ リング)、安全な検索のレベルが必要なを指定します。
+安全な検索のレベル (アダルトコンテンツのフィルタリング) を指定します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|厳密です|1|厳密で、最高の成人向けコンテンツのフィルタ リングします。|
-|中程度|2|中程度の (有効な検索結果はフィルターされません)、成人向けコンテンツのフィルタ リングします。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|厳格|1-d|アダルトコンテンツに対する厳密で最高のフィルタリング。|
+|多く|pbm-2|成人向けコンテンツに対するフィルター処理を中程度にする (有効な検索結果はフィルター処理されません)。|
 
 
 

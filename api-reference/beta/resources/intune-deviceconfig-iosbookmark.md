@@ -1,29 +1,29 @@
 ---
-title: iosBookmark リソースの種類
-description: iOS の URL のブックマーク
-localization_priority: Normal
+title: iosbookmark リソースの種類
+description: iOS URL ブックマーク
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e95f3bfd40bdf5ca5782aa9233a020623d32d6a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9de5d95cd14931da850ab9bdaf5c581fd17f09dc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395910"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174997"
 ---
-# <a name="iosbookmark-resource-type"></a>iosBookmark リソースの種類
+# <a name="iosbookmark-resource-type"></a>iosbookmark リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-iOS の URL のブックマーク
+iOS URL ブックマーク
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|url|String|URL のアクセスを許可|
-|bookmarkFolder|String|フォルダーには、Safari でブックマークを追加します。|
+|url|String|アクセスが許可されている URL|
+|bookmarkFolder|String|ブックマークを Safari で追加するフォルダー|
 |displayName|String|ブックマークの表示名|
 
 ## <a name="relationships"></a>リレーションシップ

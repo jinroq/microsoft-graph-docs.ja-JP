@@ -1,34 +1,34 @@
 ---
-title: windowsKioskMultipleApps リソースの種類
-description: キオスクの構成のマルチ ・ モード ・ アプリケーションの構成を識別するために使用するクラス
-localization_priority: Normal
+title: windowskiosk多重アプリリソースの種類
+description: キオスク構成でのマルチモードアプリの構成を識別するために使用されるクラス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71b8a57151b08d0297a89dfd815f72d66c2d12a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b2d2ff38e3b07920f474d9e3894bbd1f8855e277
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162021"
 ---
-# <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps リソースの種類
+# <a name="windowskioskmultipleapps-resource-type"></a>windowskiosk多重アプリリソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-キオスクの構成のマルチ ・ モード ・ アプリケーションの構成を識別するために使用するクラス
+キオスク構成でのマルチモードアプリの構成を識別するために使用されるクラス
 
 
-[WindowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)から継承します。
+[windowskioskappconfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。 このコレクションは、最大 128 の要素を含めることができます。|
-|showTaskBar|Boolean|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
-|disallowDesktopApps|Boolean|この設定は、デスクトップ アプリケーションを許可することを示します。 デフォルトは true になります。|
-|startMenuLayoutXml|Binary|開始の既定のレイアウトを変更するのには管理者は、ユーザーが変更できないようにします。レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML は、バイナリ形式である必要があります。|
+|apps|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)コレクション|[スタート] メニューから起動できる Windows ストアアプリは次のとおりです。 このコレクションには、最大128個の要素を含めることができます。|
+|showtaskbar バー|Boolean|この設定では、管理者がタスクバーを表示するかどうかを指定できます。|
+|disallowDesktopApps|Boolean|この設定は、デスクトップアプリが許可されていることを示します。 既定値は true です。|
+|startMenuLayoutXml|Binary|管理者が既定の開始レイアウトを上書きし、ユーザーがそれを変更できないようにします。レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML はバイナリ形式である必要があります。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

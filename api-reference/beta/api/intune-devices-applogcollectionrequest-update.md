@@ -1,23 +1,23 @@
 ---
-title: AppLogCollectionRequest を更新します。
-description: AppLogCollectionRequest オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: appLogCollectionRequest の更新
+description: appLogCollectionRequest オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55974ed3c5158d4b005402fe4d6350854a197656
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8adcfb50cf48e8ad0d41c76addc29484232f3fa0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430460"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157646"
 ---
-# <a name="update-applogcollectionrequest"></a>AppLogCollectionRequest を更新します。
+# <a name="update-applogcollectionrequest"></a>appLogCollectionRequest の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。
+[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,25 +41,25 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトの JSON 表記を指定します。
 
-[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|一意の識別子です。 これは、userId_DeviceId_AppId の id です。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態です。 可能な値は、`pending`、`completed`、`failed` です。|
-|エラー メッセージ|String|アップロード プロセス中に存在する場合のエラー メッセージ|
-|customLogFolders|String コレクション|ログのフォルダーの一覧です。 |
-|CompletedDateTime|DateTimeOffset|までに時間のアップロードのログ要求が終了状態|
+|id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は `pending`、`completed`、`failed` です。|
+|errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
+|customlogfolders|String コレクション|ログフォルダーの一覧。 |
+|CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -3,21 +3,22 @@ title: Create managedDevice
 description: 新しい managedDevice オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1fab2e2eb4263917cfb549906e98143514df2282
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: aa68138f59cc713d3af87d2bd87bbc262a92b2cf
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917945"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257380"
 ---
 # <a name="create-manageddevice"></a>Create managedDevice
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,32 +41,32 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、managedDevice オブジェクトの JSON 表記を指定します。
 
 次の表に、managedDevice の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスの一意識別子|
+|id|文字列型 (String)|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 '会社' または '個人' にすることができます。 可能な値は、`unknown`、`company`、`personal` です。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 可能な値は `unknown`、`company`、`personal` です。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。|
 |enrolledDateTime|DateTimeOffset|デバイスの登録時刻。|
 |lastSyncDateTime|DateTimeOffset|デバイスが Intune との正常な同期を最終的に完了した日時。|
-|operatingSystem|String|デバイスのオペレーティング システム。 Windows、iOS など。|
+|operatingSystem|文字列|デバイスのオペレーティング システム。 Windows、iOS など。|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
 |jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は、`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController` です。|
-|osVersion|String|デバイスのオペレーティング システムのバージョン。|
+|managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は、`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController` です。|
+|osVersion|文字列型 (String)|デバイスのオペレーティング システムのバージョン。|
 |easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
 |easDeviceId|String|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
 |azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|デバイスの登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
 |activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。|
 |emailAddress|String|デバイスに関連付けられているユーザーの電子メール|
 |azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
@@ -73,13 +74,13 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |deviceCategoryDisplayName|String|デバイス カテゴリの表示名|
 |isSupervised|Boolean|デバイスの管理状況|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
+|exchangeAccessState|[devicemanagementexchangeaccessstate](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。
  可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
 |remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
 |remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
 |isEncrypted|Boolean|デバイスの暗号化の状態|
-|userPrincipalName|String|デバイスのユーザー プリンシパル名。|
+|userPrincipalName|文字列|デバイスのユーザー プリンシパル名。|
 |model|String|デバイスのモデル|
 |manufacturer|String|デバイスのメーカー|
 |imei|String|IMEI|
@@ -97,7 +98,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |totalStorageSpaceInBytes|Int64|記憶域の合計 (バイト)|
 |freeStorageSpaceInBytes|Int64|空き記憶域 (バイト)|
 |managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
+|partnerReportedThreatState|[manageddevicepartnerreportedhealthstate](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
 
 
 
@@ -105,6 +106,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

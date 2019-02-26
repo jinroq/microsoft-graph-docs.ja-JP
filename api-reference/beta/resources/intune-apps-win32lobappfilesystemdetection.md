@@ -1,35 +1,35 @@
 ---
 title: win32LobAppFileSystemDetection リソースの種類
-description: Win32 アプリケーションを検出するためにファイルまたはフォルダーのパスが含まれています
-localization_priority: Normal
+description: Win32 アプリを検出するためのファイルまたはフォルダーのパスが保存されています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5fb4e66ce17fb7a964f3210244e2f3a7027c578
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c8145e6196b6537eec4142d4412a11234913df7c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415230"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157513"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Win32 アプリケーションを検出するためにファイルまたはフォルダーのパスが含まれています
+Win32 アプリを検出するためのファイルまたはフォルダーのパスが保存されています。
 
 
-[Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
+[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|path|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにファイルまたはフォルダーのパス|
-|fileOrFolderName|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにファイルまたはフォルダーの名前|
-|check32BitOn64System|Boolean|このファイルまたはフォルダーは、64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイル システムの検出の種類。 使用可能な値: `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`。|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|ファイルまたは fodler を検出するための演算子です。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
+|path|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーのパス|
+|fileorfoldername|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前|
+|check32BitOn64System|Boolean|このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。|
+|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 使用可能な値: `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`。|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|file または dセラの検出の演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|ファイルまたはフォルダーの検出値|
 
 ## <a name="relationships"></a>リレーションシップ

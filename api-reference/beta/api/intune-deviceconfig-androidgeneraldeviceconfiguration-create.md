@@ -1,21 +1,21 @@
 ---
 title: Create androidGeneralDeviceConfiguration
 description: 新しい androidGeneralDeviceConfiguration オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22e5ab9278bd5771f50e4c8eb4dc476e71fb4a21
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b9acf47f0d04634d2b864537dfdd12304ce94c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142253"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Create androidGeneralDeviceConfiguration
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) オブジェクトを作成します。
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、androidGeneralDeviceConfiguration オブジェクトの JSON 表記を指定します。
@@ -51,10 +51,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -69,14 +69,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |cellularBlockVoiceRoaming|Boolean|音声通話ローミングをブロックするかどうかを示します。|
 |cellularBlockWiFiTethering|Boolean|Wi-Fi テザリングの同期をブロックするかどうかを示します。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|CompliantAppsList 内にあるリストの種類。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|CompliantAppsList 内にあるリストの種類。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |diagnosticDataBlockSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
 |locationServicesBlocked|Boolean|位置情報サービスをブロックするかどうかを示します。|
 |googleAccountBlockAutoSync|Boolean|Google アカウントの自動同期をブロックするかどうかを示します。|
 |googlePlayStoreBlocked|Boolean|Google Play ストアをブロックするかどうかを示します。|
 |kioskModeBlockSleepButton|Boolean|キオスク モード中に画面スリープ ボタンをブロックするかどうかを示します。|
 |kioskModeBlockVolumeButtons|Boolean|キオスク モード中にボリューム ボタンをブロックするかどうかを示します。|
-|dateAndTimeBlockChanges|Boolean|日付や連盟ノックス ・ モードでの時間の変更をブロックするかどうかを示します。|
+|dateandtimeblockchanges|Boolean|KNOX モードの間に日付と時刻の変更を禁止するかどうかを示します。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスがキオスク モードのときに実行できるアプリのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |nfcBlocked|Boolean|近距離無線通信をブロックするかどうかを示します。|
 |passwordBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
@@ -85,8 +85,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 16 までです|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値 1 ~ 16|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値は1から16までです|
+|passwordRequiredType|[androidrequiredpasswordtype](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
 |passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
 |powerOffBlocked|Boolean|デバイスの電源オフをブロックするかどうかを示します。|
 |factoryResetBlocked|Boolean|ユーザーが出荷時の設定にリセットできないようにするかどうかを示します。|

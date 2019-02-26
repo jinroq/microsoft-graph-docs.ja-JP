@@ -4,22 +4,22 @@ description: deviceAppManagement オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d700939f9073ff5d655421942ccc83ff5fc6bf7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c5d54e1dfeb67192465468a8abe2f26a39c2c50a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935424"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257387"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには次のアクセス許可のいずれかが必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  ワークフローに従って、適切なアクセス許可が異なることに注意してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  適切なアクセス許可は、ワークフローによって異なることに注意してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -43,7 +43,7 @@ GET /deviceAppManagement
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>応答の例
-ここに示す応答オブジェクトは、簡潔にするために切り詰められます。 すべてのプロパティは、実際の呼び出しから返されます。
+簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは、実際の呼び出しから返されます。
 
 ``` http
 HTTP/1.1 200 OK

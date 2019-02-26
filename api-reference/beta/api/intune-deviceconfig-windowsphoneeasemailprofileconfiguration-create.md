@@ -1,23 +1,23 @@
 ---
-title: WindowsPhoneEASEmailProfileConfiguration を作成します。
-description: 新しい windowsPhoneEASEmailProfileConfiguration オブジェクトを作成します。
-localization_priority: Normal
+title: windowsphoneeasemailprofileconfiguration の作成
+description: 新しい windowsphoneeasemailprofileconfiguration オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b304c7b45ef487845a66ee6df74e74195aa46ad3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 997d001c86c960d5a1f5351ae76a6c6e5ee77876
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408559"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152256"
 ---
-# <a name="create-windowsphoneeasemailprofileconfiguration"></a>WindowsPhoneEASEmailProfileConfiguration を作成します。
+# <a name="create-windowsphoneeasemailprofileconfiguration"></a>windowsphoneeasemailprofileconfiguration の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md)オブジェクトを作成します。
+新しい[windowsphoneeasemailprofileconfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,42 +42,42 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に windowsPhoneEASEmailProfileConfiguration オブジェクトの JSON の形式を指定します。
+要求本文で、windowsphoneeasemailprofileconfiguration オブジェクトの JSON 表記を指定します。
 
-次の表は、windowsPhoneEASEmailProfileConfiguration を作成するときに必要なプロパティを示します。
+次の表に、windowsphoneeasemailprofileconfiguration 作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたユーザー名の属性です。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
-|usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|AAD フィールドには、電子メール プロファイルのユーザー名を取得するために使用するの名前です。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 可能な値は、`userPrincipalName`、`primarySmtpAddress`、`samAccountName` です。|
-|userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたユーザー ドメイン名属性です。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 使用可能な値は、`fullDomainName`、`netBiosDomainName` です。|
-|customDomainName|String|カスタム ドメイン名の値は、デバイスにインストールする前に、電子メール プロファイルを生成する際に使用します。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されました。|
-|accountName|String|アカウントの名前です。|
+|usernameSource|[useremailsource](../resources/intune-deviceconfig-useremailsource.md)|ユーザー名属性。 AAD から選択され、デバイスにインストールする前にこのプロファイルに挿入されます。 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
+|usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|メールプロファイルのユーザー名を取得するために使用される AAD フィールドの名前。 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 可能な値は `userPrincipalName`、`primarySmtpAddress`、`samAccountName` です。|
+|userdomainnamesource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|userdomainname 属性。 AAD から選択され、デバイスにインストールする前にこのプロファイルに挿入されます。 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されます。 使用可能な値は、`fullDomainName`、`netBiosDomainName` です。|
+|customdomainname|String|デバイスにインストールする前に電子メールプロファイルを生成するときに使用するカスタムドメイン名の値。 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承します。|
+|accountName|String|アカウント名。|
 |applyOnlyToWindowsPhone81|Boolean|このポリシーを Windows 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
-|syncCalendar|Boolean|予定表を同期するかどうかを指定します。|
-|syncContacts|Boolean|連絡先を同期するかどうかを指定します。|
-|syncTasks|Boolean|タスクを同期するかどうかを指定します。|
-|durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|同期するメールの期間です。使用可能な値: `userDefined`、 `oneDay`、 `threeDays`、 `oneWeek`、 `twoWeeks`、 `oneMonth`、 `unlimited`。|
-|emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたメール属性です。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
-|emailSyncSchedule|[emailSyncSchedule](../resources/intune-deviceconfig-emailsyncschedule.md)|電子メールの同期のスケジュールです。 可能な値は、`userDefined`、`asMessagesArrive`、`manual`、`fifteenMinutes`、`thirtyMinutes`、`sixtyMinutes`、`basedOnMyUsage` です。|
-|hostName|String|場所 (URL) の交換、ネイティブのメール アプリケーションに接続します。|
+|synccalendar|Boolean|予定表を同期するかどうかを指定します。|
+|synccontacts|Boolean|連絡先を同期するかどうかを指定します。|
+|synctasks|Boolean|タスクを同期するかどうかを指定します。|
+|durationOfEmailToSync|[emailsyncduration](../resources/intune-deviceconfig-emailsyncduration.md)|同期する電子メールの期間。可能な値は`userDefined`、 `oneDay`、 `threeDays` `oneWeek` `twoWeeks` `oneMonth`、、、、 `unlimited`、です。|
+|emailaddresssource|[useremailsource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前にこのプロファイルに挿入される電子メール属性。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
+|emailsyncschedule|[emailsyncschedule](../resources/intune-deviceconfig-emailsyncschedule.md)|電子メール同期スケジュール。 可能な値は、`userDefined`、`asMessagesArrive`、`manual`、`fifteenMinutes`、`thirtyMinutes`、`sixtyMinutes`、`basedOnMyUsage` です。|
+|hostName|String|ネイティブメールアプリが接続する Exchange の場所 (URL)。|
 |requireSsl|Boolean|SSL を使用するかどうかを示します。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsphoneeasemailprofileconfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

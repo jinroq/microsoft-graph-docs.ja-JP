@@ -4,26 +4,27 @@ description: reportRoot オブジェクトのプロパティを更新します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a902d341761cf56ced39a8309479ca27611ec5ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0039490379054ddb98c687957c1af0462a2e7f02
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934556"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255452"
 ---
 # <a name="update-reportroot"></a>reportRoot の更新
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [reportRoot](../resources/intune-shared-reportroot.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp;&nbsp;デバイスの構成 | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;デバイス構成 | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -40,7 +41,7 @@ PATCH /reports
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[reportRoot](../resources/intune-shared-reportroot.md) オブジェクトの JSON 表記を指定します。
@@ -49,7 +50,7 @@ PATCH /reports
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|このエンティティの一意識別子。|
+|id|String|このエンティティの一意識別子。|
 
 
 

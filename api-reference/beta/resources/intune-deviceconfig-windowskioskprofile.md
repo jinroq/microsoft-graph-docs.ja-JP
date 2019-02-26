@@ -1,31 +1,31 @@
 ---
-title: windowsKioskProfile リソースの種類
+title: windowskioskprofile リソースの種類
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d8c23d3bfae2baf9d632c33390b8aafb5e7ef8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420249"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164751"
 ---
-# <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile リソースの種類
+# <a name="windowskioskprofile-resource-type"></a>windowskioskprofile リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|プロファイル Id|String|エンティティのキー。|
-|profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|
-|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|このプレゼンテーションの構成を使用するアプリケーション構成します。|
-|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)コレクション|この構成にキオスクがロックアウトされているユーザー アカウントです。 このコレクションには、最大 100 個の要素を含めることができます。|
+|profileId|String|エンティティのキー。|
+|profileName|String|これは、アプリケーションのグループ、[スタート] メニューにこれらのアプリのレイアウト、およびこのキオスク構成を割り当てるユーザーを識別するために使用されるフレンドリ名です。|
+|appconfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|このキオスク構成で使用されるアプリ構成。|
+|userAccountsConfiguration|[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)コレクション|このキオスク構成にロックされるユーザーアカウント。 このコレクションには、最大100個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
