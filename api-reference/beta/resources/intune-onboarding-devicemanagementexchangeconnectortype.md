@@ -1,31 +1,31 @@
 ---
 title: deviceManagementExchangeConnectorType 列挙型
-description: Exchange コネクタの種類です。
-localization_priority: Normal
+description: Exchange Connector の種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20eb1053d3dbf6cb657313f0c68f6c6c84804848
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8742a146f1183376424678f070b902eb052df5ac
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398983"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150436"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Exchange コネクタの種類です。
+Exchange Connector の種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|onPremises|0|オンプレミスの Exchange 環境に接続します。|
-|ホスト|1|O365 マルチ テナント型の Exchange 環境に接続します。|
-|serviceToService|2|O365 マルチ テナント型の Exchange 環境に直接 Intune サービスに接続します。|
-|専用|3|O365 専用の Exchange 環境に接続します。|
+|onPremises|.0|オンプレミスの Exchange 環境に接続します。|
+|さ|1-d|O365 マルチテナントの Exchange 環境に接続します。|
+|servicetoservice|pbm-2|Intune サービスが O365 マルチテナントの Exchange 環境に直接接続される|
+|集中的|1/3|O365 専用 Exchange 環境に接続します。|
 
 
 
