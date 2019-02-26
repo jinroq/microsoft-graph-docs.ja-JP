@@ -1,29 +1,31 @@
 ---
 title: ipRange リソースの種類
 description: IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3d89ee22be38764d6eacadcb28a26a3a83c03bc8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 11208723f62a84e371c37160bdbd0ab251fa2546
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254591"
 ---
-# <a name="iprange-resource-type"></a><span data-ttu-id="2a5fd-103">ipRange リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2a5fd-103">ipRange resource type</span></span>
+# <a name="iprange-resource-type"></a><span data-ttu-id="7ffb9-103">ipRange リソースの種類</span><span class="sxs-lookup"><span data-stu-id="7ffb9-103">ipRange resource type</span></span>
 
-> <span data-ttu-id="2a5fd-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a5fd-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7ffb9-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7ffb9-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2a5fd-105">IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス</span><span class="sxs-lookup"><span data-stu-id="2a5fd-105">IP range base class for representing IPV4, IPV6 address ranges</span></span>
-## <a name="properties"></a><span data-ttu-id="2a5fd-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2a5fd-106">Properties</span></span>
-|<span data-ttu-id="2a5fd-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2a5fd-107">Property</span></span>|<span data-ttu-id="2a5fd-108">種類</span><span class="sxs-lookup"><span data-stu-id="2a5fd-108">Type</span></span>|<span data-ttu-id="2a5fd-109">説明</span><span class="sxs-lookup"><span data-stu-id="2a5fd-109">Description</span></span>|
+<span data-ttu-id="7ffb9-105">IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス</span><span class="sxs-lookup"><span data-stu-id="7ffb9-105">IP range base class for representing IPV4, IPV6 address ranges</span></span>
+
+## <a name="properties"></a><span data-ttu-id="7ffb9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7ffb9-106">Properties</span></span>
+|<span data-ttu-id="7ffb9-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7ffb9-107">Property</span></span>|<span data-ttu-id="7ffb9-108">型</span><span class="sxs-lookup"><span data-stu-id="7ffb9-108">Type</span></span>|<span data-ttu-id="7ffb9-109">説明</span><span class="sxs-lookup"><span data-stu-id="7ffb9-109">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="2a5fd-110">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="2a5fd-110">Relationships</span></span>
-<span data-ttu-id="2a5fd-111">なし</span><span class="sxs-lookup"><span data-stu-id="2a5fd-111">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="2a5fd-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2a5fd-112">JSON Representation</span></span>
-<span data-ttu-id="2a5fd-113">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2a5fd-113">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="7ffb9-110">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="7ffb9-110">Relationships</span></span>
+<span data-ttu-id="7ffb9-111">なし</span><span class="sxs-lookup"><span data-stu-id="7ffb9-111">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="7ffb9-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7ffb9-112">JSON Representation</span></span>
+<span data-ttu-id="7ffb9-113">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="7ffb9-113">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"

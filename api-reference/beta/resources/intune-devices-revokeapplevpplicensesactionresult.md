@@ -1,42 +1,42 @@
 ---
 title: revokeAppleVppLicensesActionResult リソースの種類
-description: アップル Vpp ライセンスのアクションの結果を取り消す
-localization_priority: Normal
+description: Apple Vpp ライセンスの取り消しの操作結果
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cd77bee330e919ab51927af0773d913099cea6e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6590ae51f88c5bb00318e5e5be3769afdf629edf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419227"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146488"
 ---
-# <a name="revokeapplevpplicensesactionresult-resource-type"></a><span data-ttu-id="ee865-103">revokeAppleVppLicensesActionResult リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ee865-103">revokeAppleVppLicensesActionResult resource type</span></span>
+# <a name="revokeapplevpplicensesactionresult-resource-type"></a><span data-ttu-id="03059-103">revokeAppleVppLicensesActionResult リソースの種類</span><span class="sxs-lookup"><span data-stu-id="03059-103">revokeAppleVppLicensesActionResult resource type</span></span>
 
-> <span data-ttu-id="ee865-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="ee865-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ee865-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ee865-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="03059-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="03059-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ee865-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="ee865-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="03059-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="03059-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ee865-107">アップル Vpp ライセンスのアクションの結果を取り消す</span><span class="sxs-lookup"><span data-stu-id="ee865-107">Revoke Apple Vpp licenses action result</span></span>
+<span data-ttu-id="03059-106">Apple Vpp ライセンスの取り消しの操作結果</span><span class="sxs-lookup"><span data-stu-id="03059-106">Revoke Apple Vpp licenses action result</span></span>
 
 
-<span data-ttu-id="ee865-108">[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="ee865-108">Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>
+<span data-ttu-id="03059-107">[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="03059-107">Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ee865-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ee865-109">Properties</span></span>
-|<span data-ttu-id="ee865-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ee865-110">Property</span></span>|<span data-ttu-id="ee865-111">型</span><span class="sxs-lookup"><span data-stu-id="ee865-111">Type</span></span>|<span data-ttu-id="ee865-112">説明</span><span class="sxs-lookup"><span data-stu-id="ee865-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="03059-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="03059-108">Properties</span></span>
+|<span data-ttu-id="03059-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="03059-109">Property</span></span>|<span data-ttu-id="03059-110">型</span><span class="sxs-lookup"><span data-stu-id="03059-110">Type</span></span>|<span data-ttu-id="03059-111">説明</span><span class="sxs-lookup"><span data-stu-id="03059-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ee865-113">actionName</span><span class="sxs-lookup"><span data-stu-id="ee865-113">actionName</span></span>|<span data-ttu-id="ee865-114">String</span><span class="sxs-lookup"><span data-stu-id="ee865-114">String</span></span>|<span data-ttu-id="ee865-115">[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名</span><span class="sxs-lookup"><span data-stu-id="ee865-115">Action name Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
-|<span data-ttu-id="ee865-116">actionState</span><span class="sxs-lookup"><span data-stu-id="ee865-116">actionState</span></span>|[<span data-ttu-id="ee865-117">actionState</span><span class="sxs-lookup"><span data-stu-id="ee865-117">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="ee865-118">[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。</span><span class="sxs-lookup"><span data-stu-id="ee865-118">State of the action Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md).</span></span> <span data-ttu-id="ee865-119">可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。</span><span class="sxs-lookup"><span data-stu-id="ee865-119">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
-|<span data-ttu-id="ee865-120">startDateTime</span><span class="sxs-lookup"><span data-stu-id="ee865-120">startDateTime</span></span>|<span data-ttu-id="ee865-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee865-121">DateTimeOffset</span></span>|<span data-ttu-id="ee865-122">アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)</span><span class="sxs-lookup"><span data-stu-id="ee865-122">Time the action was initiated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
-|<span data-ttu-id="ee865-123">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="ee865-123">lastUpdatedDateTime</span></span>|<span data-ttu-id="ee865-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee865-124">DateTimeOffset</span></span>|<span data-ttu-id="ee865-125">アクション状態の最終更新時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)</span><span class="sxs-lookup"><span data-stu-id="ee865-125">Time the action state was last updated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
-|<span data-ttu-id="ee865-126">totalLicensesCount</span><span class="sxs-lookup"><span data-stu-id="ee865-126">totalLicensesCount</span></span>|<span data-ttu-id="ee865-127">Int32</span><span class="sxs-lookup"><span data-stu-id="ee865-127">Int32</span></span>|<span data-ttu-id="ee865-128">関連付けられている Apple Vpp ライセンスの合計数</span><span class="sxs-lookup"><span data-stu-id="ee865-128">Total number of Apple Vpp licenses associated</span></span>|
-|<span data-ttu-id="ee865-129">failedLicensesCount</span><span class="sxs-lookup"><span data-stu-id="ee865-129">failedLicensesCount</span></span>|<span data-ttu-id="ee865-130">Int32</span><span class="sxs-lookup"><span data-stu-id="ee865-130">Int32</span></span>|<span data-ttu-id="ee865-131">アップル Vpp ライセンスを失効に失敗した数の合計</span><span class="sxs-lookup"><span data-stu-id="ee865-131">Total number of Apple Vpp licenses that failed to revoke</span></span>|
+|<span data-ttu-id="03059-112">actionName</span><span class="sxs-lookup"><span data-stu-id="03059-112">actionName</span></span>|<span data-ttu-id="03059-113">String</span><span class="sxs-lookup"><span data-stu-id="03059-113">String</span></span>|<span data-ttu-id="03059-114">[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名</span><span class="sxs-lookup"><span data-stu-id="03059-114">Action name Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
+|<span data-ttu-id="03059-115">actionState</span><span class="sxs-lookup"><span data-stu-id="03059-115">actionState</span></span>|[<span data-ttu-id="03059-116">actionState</span><span class="sxs-lookup"><span data-stu-id="03059-116">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="03059-117">[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。</span><span class="sxs-lookup"><span data-stu-id="03059-117">State of the action Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md).</span></span> <span data-ttu-id="03059-118">可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。</span><span class="sxs-lookup"><span data-stu-id="03059-118">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
+|<span data-ttu-id="03059-119">startDateTime</span><span class="sxs-lookup"><span data-stu-id="03059-119">startDateTime</span></span>|<span data-ttu-id="03059-120">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="03059-120">DateTimeOffset</span></span>|<span data-ttu-id="03059-121">アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)</span><span class="sxs-lookup"><span data-stu-id="03059-121">Time the action was initiated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
+|<span data-ttu-id="03059-122">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="03059-122">lastUpdatedDateTime</span></span>|<span data-ttu-id="03059-123">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="03059-123">DateTimeOffset</span></span>|<span data-ttu-id="03059-124">アクション状態の最終更新時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)</span><span class="sxs-lookup"><span data-stu-id="03059-124">Time the action state was last updated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)</span></span>|
+|<span data-ttu-id="03059-125">合計の合計数</span><span class="sxs-lookup"><span data-stu-id="03059-125">totalLicensesCount</span></span>|<span data-ttu-id="03059-126">Int32</span><span class="sxs-lookup"><span data-stu-id="03059-126">Int32</span></span>|<span data-ttu-id="03059-127">関連付けられている Apple Vpp ライセンスの合計数</span><span class="sxs-lookup"><span data-stu-id="03059-127">Total number of Apple Vpp licenses associated</span></span>|
+|<span data-ttu-id="03059-128">failedLicensesCount</span><span class="sxs-lookup"><span data-stu-id="03059-128">failedLicensesCount</span></span>|<span data-ttu-id="03059-129">Int32</span><span class="sxs-lookup"><span data-stu-id="03059-129">Int32</span></span>|<span data-ttu-id="03059-130">失効に失敗した Apple Vpp ライセンスの合計数</span><span class="sxs-lookup"><span data-stu-id="03059-130">Total number of Apple Vpp licenses that failed to revoke</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ee865-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="ee865-132">Relationships</span></span>
-<span data-ttu-id="ee865-133">なし</span><span class="sxs-lookup"><span data-stu-id="ee865-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="03059-131">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="03059-131">Relationships</span></span>
+<span data-ttu-id="03059-132">なし</span><span class="sxs-lookup"><span data-stu-id="03059-132">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ee865-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ee865-134">JSON Representation</span></span>
-<span data-ttu-id="ee865-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="ee865-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="03059-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="03059-133">JSON Representation</span></span>
+<span data-ttu-id="03059-134">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="03059-134">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.revokeAppleVppLicensesActionResult"

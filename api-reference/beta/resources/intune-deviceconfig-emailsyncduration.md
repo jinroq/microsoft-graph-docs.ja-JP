@@ -1,34 +1,34 @@
 ---
-title: emailSyncDuration 列挙型
-description: 電子メールに使用できる値は、時間を同期します。
-localization_priority: Normal
+title: emailsyncduration 列挙型
+description: 電子メール同期の期間として指定できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bf62aea1904c0fd25867aef308ca5a269e3ea20
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f2408150ea590a5d154b71521ca46df7c0fcff9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399410"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142267"
 ---
-# <a name="emailsyncduration-enum-type"></a><span data-ttu-id="4aae3-103">emailSyncDuration 列挙型</span><span class="sxs-lookup"><span data-stu-id="4aae3-103">emailSyncDuration enum type</span></span>
+# <a name="emailsyncduration-enum-type"></a><span data-ttu-id="e81be-103">emailsyncduration 列挙型</span><span class="sxs-lookup"><span data-stu-id="e81be-103">emailSyncDuration enum type</span></span>
 
-> <span data-ttu-id="4aae3-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4aae3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4aae3-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4aae3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e81be-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e81be-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4aae3-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4aae3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e81be-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e81be-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4aae3-107">電子メールに使用できる値は、時間を同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-107">Possible values for email sync duration.</span></span>
+<span data-ttu-id="e81be-106">電子メール同期の期間として指定できる値。</span><span class="sxs-lookup"><span data-stu-id="e81be-106">Possible values for email sync duration.</span></span>
 
-## <a name="members"></a><span data-ttu-id="4aae3-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="4aae3-108">Members</span></span>
-|<span data-ttu-id="4aae3-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="4aae3-109">Member</span></span>|<span data-ttu-id="4aae3-110">値</span><span class="sxs-lookup"><span data-stu-id="4aae3-110">Value</span></span>|<span data-ttu-id="4aae3-111">説明</span><span class="sxs-lookup"><span data-stu-id="4aae3-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e81be-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="e81be-107">Members</span></span>
+|<span data-ttu-id="e81be-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="e81be-108">Member</span></span>|<span data-ttu-id="e81be-109">値</span><span class="sxs-lookup"><span data-stu-id="e81be-109">Value</span></span>|<span data-ttu-id="e81be-110">説明</span><span class="sxs-lookup"><span data-stu-id="e81be-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4aae3-112">ユーザー定義</span><span class="sxs-lookup"><span data-stu-id="4aae3-112">userDefined</span></span>|<span data-ttu-id="4aae3-113">0</span><span class="sxs-lookup"><span data-stu-id="4aae3-113">0</span></span>|<span data-ttu-id="4aae3-114">ユーザー定義、既定値、ない目的。</span><span class="sxs-lookup"><span data-stu-id="4aae3-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="4aae3-115">直後</span><span class="sxs-lookup"><span data-stu-id="4aae3-115">oneDay</span></span>|<span data-ttu-id="4aae3-116">1</span><span class="sxs-lookup"><span data-stu-id="4aae3-116">1</span></span>|<span data-ttu-id="4aae3-117">1 日分の電子メールを同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-117">Sync one day of email.</span></span>|
-|<span data-ttu-id="4aae3-118">3 日</span><span class="sxs-lookup"><span data-stu-id="4aae3-118">threeDays</span></span>|<span data-ttu-id="4aae3-119">2</span><span class="sxs-lookup"><span data-stu-id="4aae3-119">2</span></span>|<span data-ttu-id="4aae3-120">3 日間の電子メールを同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-120">Sync three days of email.</span></span>|
-|<span data-ttu-id="4aae3-121">1 週間</span><span class="sxs-lookup"><span data-stu-id="4aae3-121">oneWeek</span></span>|<span data-ttu-id="4aae3-122">3</span><span class="sxs-lookup"><span data-stu-id="4aae3-122">3</span></span>|<span data-ttu-id="4aae3-123">1 週間分のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-123">Sync one week of email.</span></span>|
-|<span data-ttu-id="4aae3-124">2 週間</span><span class="sxs-lookup"><span data-stu-id="4aae3-124">twoWeeks</span></span>|<span data-ttu-id="4aae3-125">4</span><span class="sxs-lookup"><span data-stu-id="4aae3-125">4</span></span>|<span data-ttu-id="4aae3-126">2 週間分のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-126">Sync two weeks of email.</span></span>|
-|<span data-ttu-id="4aae3-127">oneMonth</span><span class="sxs-lookup"><span data-stu-id="4aae3-127">oneMonth</span></span>|<span data-ttu-id="4aae3-128">5</span><span class="sxs-lookup"><span data-stu-id="4aae3-128">5</span></span>|<span data-ttu-id="4aae3-129">電子メールの 1 か月を同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-129">Sync one month of email.</span></span>|
-|<span data-ttu-id="4aae3-130">無制限</span><span class="sxs-lookup"><span data-stu-id="4aae3-130">unlimited</span></span>|<span data-ttu-id="4aae3-131">6</span><span class="sxs-lookup"><span data-stu-id="4aae3-131">6</span></span>|<span data-ttu-id="4aae3-132">電子メールの無制限の時間を同期します。</span><span class="sxs-lookup"><span data-stu-id="4aae3-132">Sync an unlimited duration of email.</span></span>|
+|<span data-ttu-id="e81be-111">自分のもの</span><span class="sxs-lookup"><span data-stu-id="e81be-111">userDefined</span></span>|<span data-ttu-id="e81be-112">.0</span><span class="sxs-lookup"><span data-stu-id="e81be-112">0</span></span>|<span data-ttu-id="e81be-113">ユーザー定義、既定値、意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="e81be-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="e81be-114">oneday</span><span class="sxs-lookup"><span data-stu-id="e81be-114">oneDay</span></span>|<span data-ttu-id="e81be-115">1-d</span><span class="sxs-lookup"><span data-stu-id="e81be-115">1</span></span>|<span data-ttu-id="e81be-116">1日分のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-116">Sync one day of email.</span></span>|
+|<span data-ttu-id="e81be-117">threeDays</span><span class="sxs-lookup"><span data-stu-id="e81be-117">threeDays</span></span>|<span data-ttu-id="e81be-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="e81be-118">2</span></span>|<span data-ttu-id="e81be-119">3日間のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-119">Sync three days of email.</span></span>|
+|<span data-ttu-id="e81be-120">oneWeek</span><span class="sxs-lookup"><span data-stu-id="e81be-120">oneWeek</span></span>|<span data-ttu-id="e81be-121">1/3</span><span class="sxs-lookup"><span data-stu-id="e81be-121">3</span></span>|<span data-ttu-id="e81be-122">電子メールの1週間を同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-122">Sync one week of email.</span></span>|
+|<span data-ttu-id="e81be-123">2週間</span><span class="sxs-lookup"><span data-stu-id="e81be-123">twoWeeks</span></span>|<span data-ttu-id="e81be-124">2/4</span><span class="sxs-lookup"><span data-stu-id="e81be-124">4</span></span>|<span data-ttu-id="e81be-125">2週間のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-125">Sync two weeks of email.</span></span>|
+|<span data-ttu-id="e81be-126">オンライン</span><span class="sxs-lookup"><span data-stu-id="e81be-126">oneMonth</span></span>|<span data-ttu-id="e81be-127">5</span><span class="sxs-lookup"><span data-stu-id="e81be-127">5</span></span>|<span data-ttu-id="e81be-128">1か月分のメールを同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-128">Sync one month of email.</span></span>|
+|<span data-ttu-id="e81be-129">無し</span><span class="sxs-lookup"><span data-stu-id="e81be-129">unlimited</span></span>|<span data-ttu-id="e81be-130">シックス</span><span class="sxs-lookup"><span data-stu-id="e81be-130">6</span></span>|<span data-ttu-id="e81be-131">電子メールの期間を無制限に同期します。</span><span class="sxs-lookup"><span data-stu-id="e81be-131">Sync an unlimited duration of email.</span></span>|
 
 
 
