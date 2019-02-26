@@ -1,29 +1,30 @@
 ---
 title: mdmAppConfigKeyType 列挙型
-description: アプリケーション構成の種類のキーです。
+description: アプリ構成キーの種類。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e0c3574c76e363e00b574f6ec2c8bb0f0dbe9ad6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 39dc2aa863af9da2920704ab1c00ac8872c45e90
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935886"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257996"
 ---
-# <a name="mdmappconfigkeytype-enum-type"></a><span data-ttu-id="dbb5f-103">mdmAppConfigKeyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="dbb5f-103">mdmAppConfigKeyType enum type</span></span>
+# <a name="mdmappconfigkeytype-enum-type"></a><span data-ttu-id="f3fa9-103">mdmAppConfigKeyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="f3fa9-103">mdmAppConfigKeyType enum type</span></span>
 
-> <span data-ttu-id="dbb5f-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="dbb5f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f3fa9-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f3fa9-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dbb5f-105">アプリケーション構成の種類のキーです。</span><span class="sxs-lookup"><span data-stu-id="dbb5f-105">App configuration key types.</span></span>
-## <a name="members"></a><span data-ttu-id="dbb5f-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="dbb5f-106">Members</span></span>
-|<span data-ttu-id="dbb5f-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="dbb5f-107">Member</span></span>|<span data-ttu-id="dbb5f-108">値</span><span class="sxs-lookup"><span data-stu-id="dbb5f-108">Value</span></span>|<span data-ttu-id="dbb5f-109">説明</span><span class="sxs-lookup"><span data-stu-id="dbb5f-109">Description</span></span>|
+<span data-ttu-id="f3fa9-105">アプリ構成キーの種類。</span><span class="sxs-lookup"><span data-stu-id="f3fa9-105">App configuration key types.</span></span>
+
+## <a name="members"></a><span data-ttu-id="f3fa9-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="f3fa9-106">Members</span></span>
+|<span data-ttu-id="f3fa9-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="f3fa9-107">Member</span></span>|<span data-ttu-id="f3fa9-108">値</span><span class="sxs-lookup"><span data-stu-id="f3fa9-108">Value</span></span>|<span data-ttu-id="f3fa9-109">説明</span><span class="sxs-lookup"><span data-stu-id="f3fa9-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dbb5f-110">文字列型</span><span class="sxs-lookup"><span data-stu-id="dbb5f-110">stringType</span></span>|<span data-ttu-id="dbb5f-111">0</span><span class="sxs-lookup"><span data-stu-id="dbb5f-111">0</span></span>|<span data-ttu-id="dbb5f-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="dbb5f-112">Not yet documented</span></span>|
-|<span data-ttu-id="dbb5f-113">integerType</span><span class="sxs-lookup"><span data-stu-id="dbb5f-113">integerType</span></span>|<span data-ttu-id="dbb5f-114">1</span><span class="sxs-lookup"><span data-stu-id="dbb5f-114">1</span></span>|<span data-ttu-id="dbb5f-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="dbb5f-115">Not yet documented</span></span>|
-|<span data-ttu-id="dbb5f-116">realType</span><span class="sxs-lookup"><span data-stu-id="dbb5f-116">realType</span></span>|<span data-ttu-id="dbb5f-117">2</span><span class="sxs-lookup"><span data-stu-id="dbb5f-117">2</span></span>|<span data-ttu-id="dbb5f-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="dbb5f-118">Not yet documented</span></span>|
-|<span data-ttu-id="dbb5f-119">booleanType</span><span class="sxs-lookup"><span data-stu-id="dbb5f-119">booleanType</span></span>|<span data-ttu-id="dbb5f-120">3</span><span class="sxs-lookup"><span data-stu-id="dbb5f-120">3</span></span>|<span data-ttu-id="dbb5f-121">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="dbb5f-121">Not yet documented</span></span>|
-|<span data-ttu-id="dbb5f-122">tokenType</span><span class="sxs-lookup"><span data-stu-id="dbb5f-122">tokenType</span></span>|<span data-ttu-id="dbb5f-123">4</span><span class="sxs-lookup"><span data-stu-id="dbb5f-123">4</span></span>|<span data-ttu-id="dbb5f-124">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="dbb5f-124">Not yet documented</span></span>|
+|<span data-ttu-id="f3fa9-110">stringtype</span><span class="sxs-lookup"><span data-stu-id="f3fa9-110">stringType</span></span>|<span data-ttu-id="f3fa9-111">.0</span><span class="sxs-lookup"><span data-stu-id="f3fa9-111">0</span></span>|<span data-ttu-id="f3fa9-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f3fa9-112">Not yet documented</span></span>|
+|<span data-ttu-id="f3fa9-113">整数型</span><span class="sxs-lookup"><span data-stu-id="f3fa9-113">integerType</span></span>|<span data-ttu-id="f3fa9-114">1-d</span><span class="sxs-lookup"><span data-stu-id="f3fa9-114">1</span></span>|<span data-ttu-id="f3fa9-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f3fa9-115">Not yet documented</span></span>|
+|<span data-ttu-id="f3fa9-116">realtype</span><span class="sxs-lookup"><span data-stu-id="f3fa9-116">realType</span></span>|<span data-ttu-id="f3fa9-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="f3fa9-117">2</span></span>|<span data-ttu-id="f3fa9-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f3fa9-118">Not yet documented</span></span>|
+|<span data-ttu-id="f3fa9-119">booleanType</span><span class="sxs-lookup"><span data-stu-id="f3fa9-119">booleanType</span></span>|<span data-ttu-id="f3fa9-120">1/3</span><span class="sxs-lookup"><span data-stu-id="f3fa9-120">3</span></span>|<span data-ttu-id="f3fa9-121">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f3fa9-121">Not yet documented</span></span>|
+|<span data-ttu-id="f3fa9-122">tokenType</span><span class="sxs-lookup"><span data-stu-id="f3fa9-122">tokenType</span></span>|<span data-ttu-id="f3fa9-123">2/4</span><span class="sxs-lookup"><span data-stu-id="f3fa9-123">4</span></span>|<span data-ttu-id="f3fa9-124">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f3fa9-124">Not yet documented</span></span>|
 
 
 

@@ -3,33 +3,35 @@ title: updateWindowsDeviceAccountActionParameter リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f62dce1364fca28e85b728e0b7571906488ebbee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d67599dfc9db2afa337324e3f1ba9334134458f4
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986678"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256673"
 ---
-# <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a><span data-ttu-id="56d19-103">updateWindowsDeviceAccountActionParameter リソースの種類</span><span class="sxs-lookup"><span data-stu-id="56d19-103">updateWindowsDeviceAccountActionParameter resource type</span></span>
+# <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a><span data-ttu-id="534ad-103">updateWindowsDeviceAccountActionParameter リソースの種類</span><span class="sxs-lookup"><span data-stu-id="534ad-103">updateWindowsDeviceAccountActionParameter resource type</span></span>
 
-> <span data-ttu-id="56d19-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="56d19-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="534ad-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="534ad-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="56d19-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="56d19-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="56d19-106">Properties</span></span>
-|<span data-ttu-id="56d19-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="56d19-107">Property</span></span>|<span data-ttu-id="56d19-108">種類</span><span class="sxs-lookup"><span data-stu-id="56d19-108">Type</span></span>|<span data-ttu-id="56d19-109">説明</span><span class="sxs-lookup"><span data-stu-id="56d19-109">Description</span></span>|
+<span data-ttu-id="534ad-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-105">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="534ad-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="534ad-106">Properties</span></span>
+|<span data-ttu-id="534ad-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="534ad-107">Property</span></span>|<span data-ttu-id="534ad-108">型</span><span class="sxs-lookup"><span data-stu-id="534ad-108">Type</span></span>|<span data-ttu-id="534ad-109">説明</span><span class="sxs-lookup"><span data-stu-id="534ad-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="56d19-110">deviceAccount</span><span class="sxs-lookup"><span data-stu-id="56d19-110">deviceAccount</span></span>|[<span data-ttu-id="56d19-111">windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="56d19-111">windowsDeviceAccount</span></span>](../resources/intune-devices-windowsdeviceaccount.md)|<span data-ttu-id="56d19-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-112">Not yet documented</span></span>|
-|<span data-ttu-id="56d19-113">passwordRotationEnabled</span><span class="sxs-lookup"><span data-stu-id="56d19-113">passwordRotationEnabled</span></span>|<span data-ttu-id="56d19-114">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="56d19-114">Boolean</span></span>|<span data-ttu-id="56d19-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-115">Not yet documented</span></span>|
-|<span data-ttu-id="56d19-116">calendarSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="56d19-116">calendarSyncEnabled</span></span>|<span data-ttu-id="56d19-117">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="56d19-117">Boolean</span></span>|<span data-ttu-id="56d19-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-118">Not yet documented</span></span>|
-|<span data-ttu-id="56d19-119">deviceAccountEmail</span><span class="sxs-lookup"><span data-stu-id="56d19-119">deviceAccountEmail</span></span>|<span data-ttu-id="56d19-120">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="56d19-120">String</span></span>|<span data-ttu-id="56d19-121">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-121">Not yet documented</span></span>|
-|<span data-ttu-id="56d19-122">exchangeServer</span><span class="sxs-lookup"><span data-stu-id="56d19-122">exchangeServer</span></span>|<span data-ttu-id="56d19-123">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="56d19-123">String</span></span>|<span data-ttu-id="56d19-124">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-124">Not yet documented</span></span>|
-|<span data-ttu-id="56d19-125">sessionInitiationProtocalAddress</span><span class="sxs-lookup"><span data-stu-id="56d19-125">sessionInitiationProtocalAddress</span></span>|<span data-ttu-id="56d19-126">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="56d19-126">String</span></span>|<span data-ttu-id="56d19-127">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="56d19-127">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-110">deviceAccount</span><span class="sxs-lookup"><span data-stu-id="534ad-110">deviceAccount</span></span>|[<span data-ttu-id="534ad-111">windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="534ad-111">windowsDeviceAccount</span></span>](../resources/intune-devices-windowsdeviceaccount.md)|<span data-ttu-id="534ad-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-112">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-113">passwordRotationEnabled</span><span class="sxs-lookup"><span data-stu-id="534ad-113">passwordRotationEnabled</span></span>|<span data-ttu-id="534ad-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="534ad-114">Boolean</span></span>|<span data-ttu-id="534ad-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-115">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-116">calendarSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="534ad-116">calendarSyncEnabled</span></span>|<span data-ttu-id="534ad-117">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="534ad-117">Boolean</span></span>|<span data-ttu-id="534ad-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-118">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-119">deviceAccountEmail</span><span class="sxs-lookup"><span data-stu-id="534ad-119">deviceAccountEmail</span></span>|<span data-ttu-id="534ad-120">String</span><span class="sxs-lookup"><span data-stu-id="534ad-120">String</span></span>|<span data-ttu-id="534ad-121">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-121">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-122">exchangeServer</span><span class="sxs-lookup"><span data-stu-id="534ad-122">exchangeServer</span></span>|<span data-ttu-id="534ad-123">String</span><span class="sxs-lookup"><span data-stu-id="534ad-123">String</span></span>|<span data-ttu-id="534ad-124">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-124">Not yet documented</span></span>|
+|<span data-ttu-id="534ad-125">sessionInitiationProtocalAddress</span><span class="sxs-lookup"><span data-stu-id="534ad-125">sessionInitiationProtocalAddress</span></span>|<span data-ttu-id="534ad-126">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="534ad-126">String</span></span>|<span data-ttu-id="534ad-127">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="534ad-127">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="56d19-128">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="56d19-128">Relationships</span></span>
-<span data-ttu-id="56d19-129">なし</span><span class="sxs-lookup"><span data-stu-id="56d19-129">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="56d19-130">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="56d19-130">JSON Representation</span></span>
-<span data-ttu-id="56d19-131">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="56d19-131">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="534ad-128">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="534ad-128">Relationships</span></span>
+<span data-ttu-id="534ad-129">なし</span><span class="sxs-lookup"><span data-stu-id="534ad-129">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="534ad-130">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="534ad-130">JSON Representation</span></span>
+<span data-ttu-id="534ad-131">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="534ad-131">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.updateWindowsDeviceAccountActionParameter"
