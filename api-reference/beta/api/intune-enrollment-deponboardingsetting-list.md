@@ -1,23 +1,23 @@
 ---
-title: リスト depOnboardingSettings
-description: DepOnboardingSetting オブジェクトのプロパティと関係を一覧表示します。
-localization_priority: Normal
+title: depon掲示板の設定を一覧表示する
+description: deponboardingsetting オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64b15a19943ee5d03861ffc39b2e74a006b12936
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9c8ffd4ac7b76a692978c73362ec94400facf139
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394153"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141462"
 ---
-# <a name="list-deponboardingsettings"></a>リスト depOnboardingSettings
+# <a name="list-deponboardingsettings"></a>depon掲示板の設定を一覧表示する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティと関係を一覧表示します。
+[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,13 +41,13 @@ GET /deviceManagement/depOnboardingSettings
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 712
+Content-Length: 786
 
 {
   "value": [
@@ -79,7 +79,10 @@ Content-Length: 712
       "tokenType": "dep",
       "tokenName": "Token Name value",
       "syncedDeviceCount": 1,
-      "dataSharingConsentGranted": true
+      "dataSharingConsentGranted": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

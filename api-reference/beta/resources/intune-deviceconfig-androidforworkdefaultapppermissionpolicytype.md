@@ -1,31 +1,31 @@
 ---
 title: androidForWorkDefaultAppPermissionPolicyType 列挙型
-description: Android の作業既定アプリケーションのアクセス許可ポリシーの種類。
-localization_priority: Normal
+description: Android 用の既定のアプリのアクセス許可ポリシーの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb815b18bb6f12d6e9a27c66993aa59193495d6c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08285d504b5d022a5154c58082530b94b1cf9ee0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157212"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android の作業既定アプリケーションのアクセス許可ポリシーの種類。
+Android 用の既定のアプリのアクセス許可ポリシーの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスの既定値でことを目的しません。|
-|プロンプト|1|メッセージを表示します。|
-|autoGrant|2|自動付与します。|
-|autoDeny|3|自動を拒否します。|
+|devicedefault|.0|デバイスの既定値。意図的ではありません。|
+|・|1-d|・.|
+|autogrant|pbm-2|自動付与|
+|autodeny|1/3|自動拒否。|
 
 
 

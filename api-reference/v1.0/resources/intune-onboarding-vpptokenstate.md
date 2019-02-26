@@ -1,29 +1,30 @@
 ---
-title: vppTokenState 列挙型
-description: Apple ボリューム購入プログラム、トークンに関連付けられている状態です。
+title: vpptokenstate 列挙型
+description: Apple volume purchase program のトークンに関連付けられている状態。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6bdeb73b6491f3960ce30db91a35d06c0f8ffaf1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 573fe27064881f670e642e7c3727b8c9eb7db5a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986664"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254934"
 ---
-# <a name="vpptokenstate-enum-type"></a>vppTokenState 列挙型
+# <a name="vpptokenstate-enum-type"></a>vpptokenstate 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Apple ボリューム購入プログラム、トークンに関連付けられている状態です。
+Apple volume purchase program のトークンに関連付けられている状態。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|既定の状態。|
-|有効です|1|トークンは、有効です。|
-|有効期限が切れてください。|2|トークンの期限が切れています。|
-|無効です|3|トークンが有効ではありません。|
-|assignedToExternalMDM|4|トークンは、別の MDM サービスによって管理されます。|
+|不明|.0|既定の状態です。|
+|有効な|1-d|トークンが有効です。|
+|終了|pbm-2|トークンの有効期限が切れています。|
+|無効です|1/3|トークンが無効です。|
+|assignedToExternalMDM|2/4|トークンは別の MDM サービスによって管理されています。|
 
 
 

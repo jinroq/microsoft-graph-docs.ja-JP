@@ -4,25 +4,26 @@ description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 709217670f946d92135c15b13b2c825703337daa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950453"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255172"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp;&nbsp; **契約時** | DeviceManagementManaged Devices.ReadWrite.All|
+| &nbsp; &nbsp; **オンボーディング** | devicemanagementmanaged 対象のデバイス。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -39,17 +40,17 @@ POST /deviceManagement/deviceCategories
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceCategory オブジェクトの JSON 表記を指定します。
 
 次の表に、deviceCategory の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
-|**契約時**|
+|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
 |説明|String|デバイス カテゴリに関するオプションの説明。|
 

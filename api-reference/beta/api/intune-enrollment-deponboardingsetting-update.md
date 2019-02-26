@@ -1,23 +1,23 @@
 ---
-title: DepOnboardingSetting を更新します。
-description: DepOnboardingSetting オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: deponboardingsetting の更新
+description: deponboardingsetting オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78d3138950776dd74a055fbb00339e9e69b5f0f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1ddb018277ba6b91d6fe7a19c9165090397127e9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412290"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141490"
 ---
-# <a name="update-deponboardingsetting"></a>DepOnboardingSetting を更新します。
+# <a name="update-deponboardingsetting"></a>deponboardingsetting の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。
+[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,32 +41,33 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトの JSON 表記を指定します。
 
-[DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|オブジェクトの UUID|
-|appleIdentifier|String|Apple ID は、現在のトークンを取得するために使用します。|
-|tokenExpirationDateTime|DateTimeOffset|トークンの期限が切れる。|
-|lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
-|lastSuccessfulSyncDateTime|DateTimeOffset|Intune のサービスの最後の syned|
-|lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求された場合。|
-|shareTokenWithSchoolDataSyncService|Boolean|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
-|lastSyncErrorCode|Int32|Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
-|tokenName|String|Dep のトークンの表示名|
-|syncedDeviceCount|Int32|同期されたデバイスの数を取得|
-|dataSharingConsentGranted|Boolean|アップル Dep のサービスと共有データの許可に同意するもの|
+|appleIdentifier|String|現在のトークンを取得するために使用される Apple ID。|
+|tokenExpirationDateTime|DateTimeOffset|トークンの有効期限が切れるとき。|
+|lastModifiedDateTime|DateTimeOffset|サービスが利用されたとき。|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Intune でサービスが最後に使用されたとき|
+|lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
+|shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
+|lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は `none`、`dep`、`appleSchoolManager` です。|
+|tokenName|String|Dep トークンのフレンドリ名|
+|syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
+|dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -75,7 +76,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 Content-type: application/json
-Content-length: 514
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -88,7 +89,10 @@ Content-length: 514
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -97,7 +101,7 @@ Content-length: 514
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 689
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -112,7 +116,10 @@ Content-Length: 627
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

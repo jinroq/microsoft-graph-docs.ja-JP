@@ -1,42 +1,44 @@
 ---
 title: deviceEnrollmentFailureReason 列挙型
-description: 登録の最上位レベルの障害のカテゴリ。
+description: 登録の最上位レベルのエラーカテゴリ。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: efee4e4655d36e7575df9e0ddda508dbbcc473c5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 623030bccfac9e023a0d1df2dff7ea317b503485
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962073"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258332"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-登録の最上位レベルの障害のカテゴリ。
+登録の最上位レベルのエラーカテゴリ。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|既定値、失敗の理由は不明です。|
-|認証|1|認証に失敗しました|
-|承認|2|呼び出しが認証されると、ですが、登録する権限がありませんでした。|
-|accountValidation|3|登録用のアカウントを検証できませんでした。 (アカウントがブロックされている登録が有効になっていません)|
-|userValidation|4|ユーザーを検証できませんでした。 (ユーザーが存在しない場合は、不足しているライセンス)|
-|deviceNotSupported|5|モバイル デバイスの管理には、デバイスはサポートされていません。|
-|inMaintenance|6|アカウントがメンテナンスします。|
-|badRequest|7|サービスで認識されるサポートではない要求をクライアントに送信されます。|
-|featureNotSupported|8|このアカウントには、この登録で使用される機能はサポートされていません。|
-|enrollmentRestrictionsEnforced|9|管理者によって構成されている登録の制限には、この登録がブロックされています。|
-|clientDisconnected|10|クライアントがタイムアウトするか、登録は、エンド ・ ユーザーによって中止されました。|
-|userAbandonment|11|登録は、エンド ・ ユーザーによって中断されました。 (エンド ・ ユーザーは、契約時の開始が、時間内に完了できませんでした)|
+|不明|.0|既定値、エラーの理由は不明です。|
+|認証|1-d|認証に失敗した|
+|承認|pbm-2|呼び出しは認証されましたが、登録が承認されていません。|
+|accountvalidation|1/3|登録のためにアカウントを検証できませんでした。 (アカウントがブロックされ、登録が有効になっていません)|
+|uservalidation|2/4|ユーザーを検証できませんでした。 (ユーザーが存在しません。ライセンスがありません)|
+|devicenotsupported|5|デバイスは、モバイルデバイス管理ではサポートされていません。|
+|inmaintenance|シックス|アカウントはメンテナンス中です。|
+|badrequest|7|クライアントがサービスで認識/サポートされていない要求を送信しました。|
+|featureNotSupported|~|この登録で使用されている機能は、このアカウントではサポートされていません。|
+|enrollmentRestrictionsEnforced|i-9|管理者によって構成された登録の制限は、この登録をブロックしました。|
+|clientdisconnected|個|クライアントがタイムアウトしたか、登録が enduser によって中止されました。|
+|userAbandonment|#|登録は enduser によって中止されました。 (Enduser が開始されましたが、適切なタイミングで完了できませんでした)|
 
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
   ],
 }
 -->
+

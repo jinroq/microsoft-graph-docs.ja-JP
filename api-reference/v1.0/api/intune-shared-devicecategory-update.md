@@ -4,25 +4,26 @@ description: deviceCategory オブジェクトのプロパティを更新しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b055f8865592e935aaa32e8a3a541151886d36de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986860"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255179"
 ---
 # <a name="update-devicecategory"></a>deviceCategory の更新
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp;&nbsp; **契約時**と <br> &nbsp;&nbsp; **デバイスの管理**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **オンボード**と <br> &nbsp;&nbsp; **デバイスの管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -40,17 +41,17 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[deviceCategory](../resources/intune-shared-devicecategory.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
-|**契約時**|
+|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
 |説明|String|デバイス カテゴリに関するオプションの説明。|
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答のプロパティは、コンテキストによって異なります。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答プロパティは、状況に応じて異なります。
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

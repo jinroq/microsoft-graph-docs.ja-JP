@@ -1,34 +1,34 @@
 ---
-title: deviceManagementSubscriptionState 列挙型
+title: devicemanagementsubscriptionstate 列挙型
 description: テナントのモバイル デバイス管理のサブスクリプション状態。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15a500add2ddc85f12bca1b4f6df8db429fba07e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 716e313ccd0c9c7827a11eba88e2388d50a3716e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141784"
 ---
-# <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 列挙型
+# <a name="devicemanagementsubscriptionstate-enum-type"></a>devicemanagementsubscriptionstate 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 テナントのモバイル デバイス管理のサブスクリプション状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|保留中|0|Pending|
-|アクティブです|1|Active|
-|warning|2|警告|
-|無効になっています。|3|Disabled|
-|deleted|4|Deleted|
+|対する|.0|Pending|
+|active|1-d|Active|
+|warning|pbm-2|警告|
+|党|1/3|無効|
+|deleted|2/4|Deleted|
 |ブロック|5|Blocked|
-|lockedOut|8|LockedOut|
+|lockedOut|~|LockedOut|
 
 
 

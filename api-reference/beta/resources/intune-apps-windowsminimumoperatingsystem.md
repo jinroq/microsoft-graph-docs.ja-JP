@@ -1,34 +1,34 @@
 ---
 title: windowsMinimumOperatingSystem リソースの種類
 description: Windows モバイル アプリに必要な最小オペレーティング システム。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c293e7490df1e7a6c53628b49440a050ee21a39
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9f230ed4860e3ff8bad7968367ce5337b59521d4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152886"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows モバイル アプリに必要な最小オペレーティング システム。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v8_0|ブール型 (Boolean)|Windows バージョン 8.0 以降。|
+|v8_0|Boolean|Windows バージョン 8.0 以降。|
 |v8_1|ブール型 (Boolean)|Windows バージョン 8.1 以降。|
 |v10_0|ブール型 (Boolean)|Windows バージョン 10.0 以降。|
-|v10_1607|Boolean|Windows 10 1607 以降です。|
-|v10_1703|Boolean|10 1703 の Windows またはそれ以降です。|
-|v10_1709|Boolean|10 1709 の Windows またはそれ以降です。|
-|v10_1803|Boolean|10 1803 の Windows またはそれ以降です。|
+|v10_1607|Boolean|Windows 10 1607 以降。|
+|v10_1703|Boolean|Windows 10 1703 以降。|
+|v10_1709|Boolean|Windows 10 1709 以降。|
+|v10_1803|Boolean|Windows 10 1803 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

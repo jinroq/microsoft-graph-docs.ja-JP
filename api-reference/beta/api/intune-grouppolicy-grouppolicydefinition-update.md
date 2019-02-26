@@ -1,23 +1,23 @@
 ---
-title: GroupPolicyDefinition を更新します。
-description: GroupPolicyDefinition オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: grouppolicydefinition の更新
+description: grouppolicydefinition オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eeb3e32f1870eac8491989426081df2ae41e4d42
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3439c14463118f616847dd5e7f71970fa3d6a8c7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430315"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157254"
 ---
-# <a name="update-grouppolicydefinition"></a>GroupPolicyDefinition を更新します。
+# <a name="update-grouppolicydefinition"></a>grouppolicydefinition の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティを更新します。
+[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -44,28 +44,28 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトの JSON 表記を指定します。
 
-[GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|ポリシーを適用できるグループの種類を識別します。 可能な値は、`user`、`machine`、`both` です。|
-|displayName|String|ローカライズされたポリシーの名前です。|
-|説明|String|ローカライズされた説明またはヘルプ テキスト、ポリシーに関連付けられています。 既定値は空です。|
-|categoryPath|String|ポリシーのすべてのローカライズされたカテゴリのパスです。|
-|supportedOn|String|どのようなオペレーティング システムまたはアプリケーションのバージョンを指定するために使用するローカライズされた文字列は、ポリシーの影響を受けます。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループ ポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
+|classType|[grouppolicydefinitionclasstype](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|ポリシーを適用できるグループの種類を指定します。 可能な値は `user`、`machine`、`both` です。|
+|displayName|String|ローカライズされたポリシー名。|
+|explainText|String|ポリシーに関連付けられたローカライズされた説明またはヘルプテキスト。 既定値は empty です。|
+|categoryPath|String|ポリシーのローカライズされた完全なカテゴリのパス。|
+|supportedOn|String|ポリシーによって影響を受けるオペレーティングシステムまたはアプリケーションのバージョンを指定するために使用されるローカライズされた文字列。|
+|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

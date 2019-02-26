@@ -1,30 +1,30 @@
 ---
 title: vpnTrafficRuleRoutingPolicyType 列挙型
-description: VPN トラフィックの規則のルーティング ポリシーを指定します。
-localization_priority: Normal
+description: VPN トラフィックルールのルーティングポリシーを指定します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 028e49085e4a1fa5f01ac59ff00fbafd8846dfb9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a7c6121b9adc47d116a7b3321ca150a8d42449a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415006"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157345"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN トラフィックの規則のルーティング ポリシーを指定します。
+VPN トラフィックルールのルーティングポリシーを指定します。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|ルーティング ポリシーが指定されていません。|
-|splitTunnel|1|指定したアプリケーションのネットワーク トラフィックは、VPN を介してルーティングされます。|
-|forceTunnel|2|すべてのネットワーク トラフィックは、VPN を介してルーティングされます。|
+|none|.0|ルーティングポリシーが指定されていません。|
+|splittunnel|1-d|指定したアプリのネットワークトラフィックは、VPN 経由でルーティングされます。|
+|forcetunnel|pbm-2|すべてのネットワークトラフィックは、VPN 経由でルーティングされます。|
 
 
 

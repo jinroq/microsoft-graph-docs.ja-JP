@@ -3,19 +3,20 @@ title: iosVppEBook リソースの種類
 description: iOS Vpp eBook のプロパティを含むクラスです。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4a0db53609932fc5b602ca03757e38c218dee4f2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e045ea22a668cfdc2220c8af82f03ede8cd9bbe4
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952476"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257023"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS Vpp eBook のプロパティを含むクラスです。
+
 
 [managedEBook](../resources/intune-books-managedebook.md) から継承します
 
@@ -29,12 +30,12 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |[iosVppEBook の更新](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|説明|String|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|publisher|String|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|説明|文字列|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|publisher|文字列型 (String)|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
@@ -42,7 +43,7 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |informationUrl|String|詳細情報の URL。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |vppTokenId|Guid|Vpp トークン ID。|
-|appleId|String|Vpp トークンに関連付けられている Apple ID。|
+|appleId|文字列|Vpp トークンに関連付けられている Apple ID。|
 |vppOrganizationName|String|Vpp トークンの組織の名前。|
 |genres|String コレクション|ジャンル。|
 |language|String|言語。|

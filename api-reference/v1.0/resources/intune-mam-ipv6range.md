@@ -1,32 +1,34 @@
 ---
 title: iPv6Range リソースの種類
-description: IP V6 の範囲
+description: IPv6 範囲の定義。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 115c89b6ae90a292e08e7b0374e1c3b529e2df19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f171a8ebb28d15e78a30bf542c37a163f0d097f0
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926863"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258990"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-IP V6 の範囲
+IPv6 範囲の定義。
+
 
 [ipRange](../resources/intune-mam-iprange.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|lowerAddress|文字列|低い番号の IP アドレス|
-|upperAddress|文字列|高い番号の IP アドレス|
+|lowerAddress|String|下のアドレス|
+|upperAddress|文字列|上住所|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

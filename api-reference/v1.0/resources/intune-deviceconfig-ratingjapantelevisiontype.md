@@ -1,27 +1,28 @@
 ---
 title: ratingJapanTelevisionType 列挙型
-description: 日本のテレビのコンテンツの規制ラベル
+description: 日本のテレビコンテンツ評価のラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c78b05ad0787737f0d468d63b6da78902cf8700f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a13e7d529ab2378c9df6a4b7466f1b063040f474
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920234"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258381"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-日本のテレビのコンテンツの規制ラベル
+日本のテレビコンテンツ評価のラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|explicitAllowed|2|テレビのすべてのコンテンツが明示的に許可されています。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|explicitAllowed|pbm-2|すべてのテレビコンテンツが明示的に許可されている|
 
 
 
