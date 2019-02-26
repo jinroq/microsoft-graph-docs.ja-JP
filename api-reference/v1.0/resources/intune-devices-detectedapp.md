@@ -3,19 +3,20 @@ title: detectedApp リソースの種類
 description: 管理対象デバイスにインストールされている管理対象アプリまたは非管理対象アプリです。 非管理対象アプリは、会社所有のデバイスにのみ表示されます。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 01e942790136deb967d1efc22928ed9144b5012b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 8a9a31245676dfba465de61aca6527d112ce0b6d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951398"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252603"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象デバイスにインストールされている管理対象アプリまたは非管理対象アプリです。 非管理対象アプリは、会社所有のデバイスにのみ表示されます。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -26,11 +27,11 @@ ms.locfileid: "27951398"
 |[detectedApp の更新](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
-|displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
-|version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
+|id|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|String|検出されたアプリケーションの名前。 読み取り専用|
+|version|String|検出されたアプリケーションのバージョン。 読み取り専用|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 

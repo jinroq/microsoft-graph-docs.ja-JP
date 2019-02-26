@@ -1,21 +1,22 @@
 ---
 title: deviceAndAppManagementRoleDefinition リソースの種類
 description: ロールの定義リソースです。 ロールの定義は、Intune におけるロール ベース アクセスの基礎です。 ロールは、モバイル アプリなどの Intune リソースと、リソースに対する Create や Read などの関連するロールのアクセス許可を結びつけます。 ロールには、組み込みとカスタムの 2 種類があります。 組み込みのロールは変更できません。 組み込みのロールとカスタム ロールは両方とも、割り当てを実施する必要があります。 ロールを定義して、任意の使用可能なリソースとロールのアクセス許可を結合して単一のロールにしたい場合、カスタム ロールを作成します。
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: b3a5204b766352436e1af3964b2f3f4baedc4efa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: e703909f818535eac7ae00284d15620bce55ba80
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965188"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253429"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>deviceAndAppManagementRoleDefinition リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ロールの定義リソースです。 ロールの定義は、Intune におけるロール ベース アクセスの基礎です。 ロールは、モバイル アプリなどの Intune リソースと、リソースに対する Create や Read などの関連するロールのアクセス許可を結びつけます。 ロールには、組み込みとカスタムの 2 種類があります。 組み込みのロールは変更できません。 組み込みのロールとカスタム ロールは両方とも、割り当てを実施する必要があります。 ロールを定義して、任意の使用可能なリソースとロールのアクセス許可を結合して単一のロールにしたい場合、カスタム ロールを作成します。
+
 
 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します
 
@@ -29,9 +30,9 @@ ms.locfileid: "27965188"
 |[deviceAndAppManagementRoleDefinition の更新](../api/intune-rbac-deviceandappmanagementroledefinition-update.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
+|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |displayName|String|ロールの定義の表示名。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |説明|String|ロールの定義の説明。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|

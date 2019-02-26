@@ -3,19 +3,20 @@ title: deviceComplianceScheduledActionForRule リソースの種類
 description: ルールに関するスケジュール済みのアクション
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 61e0fa49afaf3b048d1d10b1c06006cb0537f005
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cf5b36d63ae1da9726e6948211f053a908ad04d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965713"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257842"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ルールに関するスケジュール済みのアクション
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -26,9 +27,9 @@ ms.locfileid: "27965713"
 |[deviceComplianceScheduledActionForRule の更新](../api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md)|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |ruleName|String|このスケジュール済みのアクションが適用されるルールの名前です。|
 
 ## <a name="relationships"></a>リレーションシップ

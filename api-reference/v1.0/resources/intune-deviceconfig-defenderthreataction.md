@@ -1,31 +1,32 @@
 ---
 title: defenderThreatAction 列挙型
-description: Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。
-localization_priority: Normal
+description: 検出されたマルウェアの脅威を処理する Defender の既定のアクション。
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 51aa26483ac6b79d48567f7e5950733def31f01e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 8d3d48415e55ad246f75ca9b32bd169ee102fc67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976647"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252316"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。
+検出されたマルウェアの脅威を処理する Defender の既定のアクション。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|更新プログラム定義に基づいたアクションを適用します。|
-|クリーン|1|検出された脅威をクリーニングします。|
-|検査|2|検出された脅威を隔離します。|
-|remove|3|検出された脅威を削除します。|
-|許可します。|4|脅威の検出を許可します。|
-|ユーザー定義|5|検出された脅威に対して実行するアクションを決定するユーザーを許可します。|
-|ブロック|6|検出された脅威をブロックします。|
+|devicedefault|.0|更新定義に基づいてアクションを適用します。|
+|クリーン|1-d|検出された脅威を除去します。|
+|済み|pbm-2|検出された脅威を検疫します。|
+|remove|1/3|検出された脅威を削除します。|
+|使う|2/4|検出された脅威を許可します。|
+|自分のもの|5|検出された脅威に対して実行するアクションをユーザーが決定できるようにします。|
+|拒否|シックス|検出された脅威をブロックします。|
 
 
 

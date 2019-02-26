@@ -3,21 +3,22 @@ title: termsAndConditions の作成
 description: 新しい termsAndConditions オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 262390218470408edbf7d63ee00142c9b8e2b789
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ff711b887c012d795b5c2f5757ba22f2d8a79de5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972272"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251721"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文において、termsAndConditions オブジェクトの JSON 表記を指定します。
@@ -47,11 +48,11 @@ POST /deviceManagement/termsAndConditions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|T&C ポリシーの一意識別子。|
+|id|文字列|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|説明|String|管理者が提供した T&C ポリシーの説明。|
+|説明|文字列型 (String)|管理者が提供した T&C ポリシーの説明。|
 |タイトル|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
@@ -63,6 +64,7 @@ POST /deviceManagement/termsAndConditions
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

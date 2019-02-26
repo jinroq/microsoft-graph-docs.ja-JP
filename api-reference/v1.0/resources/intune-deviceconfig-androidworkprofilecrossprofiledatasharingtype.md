@@ -1,28 +1,29 @@
 ---
 title: androidWorkProfileCrossProfileDataSharingType 列挙型
-description: Android の作業プロファイルは、プロファイル データの種類の共有を横断します。
+description: Android 作業プロファイルクロスプロファイルデータ共有の種類。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7aa701f2e19ae008b0306d1d3c52fdcf53cbf33c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ddfcfc6926005dff2f9befa400e5352d58f92b3b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967274"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253016"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android の作業プロファイルは、プロファイル データの種類の共有を横断します。
+Android 作業プロファイルクロスプロファイルデータ共有の種類。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスの既定値でことを目的しません。|
-|preventAny|1|任意の共有を防止します。|
-|allowPersonalToWork|2|データ共有プロファイルを使用する個人のプロファイルからの要求を許可します。|
-|noRestrictions|3|共有の制限はありません。|
+|devicedefault|.0|デバイスの既定値。意図的ではありません。|
+|preventAny|1-d|共有を禁止します。|
+|allowPersonalToWork|pbm-2|個人プロファイルから作業プロファイルへのデータ共有要求を許可します。|
+|noRestrictions|1/3|共有に制限はありません。|
 
 
 

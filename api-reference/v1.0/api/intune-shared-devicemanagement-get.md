@@ -4,37 +4,37 @@ description: deviceManagement オブジェクトのプロパティとリレー�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: af4dc08832b09387774ad3ad1642b0103b3b7db9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936929"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250636"
 ---
 # <a name="get-devicemanagement"></a>deviceManagement の取得
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス権&nbsp;型&nbsp;(によって&nbsp;ワークフロー) | アクセス許可 (特権の大きいものから小さいものへ) |
+| アクセス&nbsp;許可&nbsp;の種類&nbsp;(ワークフロー別) | アクセス許可 (特権の大きいものから小さいものへ) |
 |:---|:---|
 | 委任 (職場または学校のアカウント) | |
 | &nbsp;&nbsp;監査 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
-| &nbsp;&nbsp;会社の用語 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp;デバイスの構成 | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;会社の使用条件 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;デバイス構成 | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp;登録 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp;の通知 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;通知 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;オンボード | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
-| &nbsp;&nbsp;リモート アシスタンス | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp;通信経費の管理 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-| &nbsp;&nbsp; Windows 情報の保護 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp;&nbsp;リモートアシスタンス | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;通信経費管理 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; Windows 情報保護 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。|
 | アプリケーション | サポートされていません。 |
 
@@ -55,7 +55,7 @@ GET /deviceManagement
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

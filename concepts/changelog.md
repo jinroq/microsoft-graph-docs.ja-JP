@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139677"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212397"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -28,6 +28,8 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版および v1.0| **createdDateTime** プロパティを [organization](/graph/api/resources/organization?view=graph-rest-v1.0) に追加します。|
+|追加 | v1.0 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) を追加しました。|
 |変更 |ベータ版および v1.0| 書き込み可能になるように、[user](/graph/api/resources/user?view=graph-rest-v1.0) リソースの **companyName** プロパティを更新しました。|
 
 ### <a name="education-apis"></a>教育機関 API

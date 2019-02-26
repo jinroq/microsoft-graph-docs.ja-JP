@@ -1,31 +1,32 @@
 ---
 title: complianceState 列挙型
-description: コンプライアンス状態です。
+description: コンプライアンスの状態です。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5a4f4c359665eb1a0087f64802b5e7c829002fd6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d578417c616fc2dbf30b8fe95d2f58ede5fd3df2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940198"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253359"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-コンプライアンス状態です。
+コンプライアンスの状態です。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明。|
-|準拠|1|準拠していません。|
-|準拠していません。|2|デバイスは非準拠、企業のリソースがブロックされました。|
-|競合|3|その他の規則と競合しています。|
-|エラー|4|エラー。|
-|inGracePeriod|254|デバイスは非準拠ですが、社内リソースへのアクセスにはまだ|
-|configManager|255|構成マネージャーによって管理されます。|
+|不明|.0|わかり.|
+|要件|1-d|要件.|
+|互換性|pbm-2|デバイスは非準拠で、企業リソースからブロックされます。|
+|異なる|1/3|他のルールと競合しています。|
+|エラー|2/4|エラー。|
+|inGracePeriod|254|デバイスは準拠していないが、会社のリソースにアクセスできる|
+|configmanager|255|構成マネージャーによる管理|
 
 
 
