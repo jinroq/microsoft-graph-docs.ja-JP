@@ -1,34 +1,34 @@
 ---
-title: emailSyncDuration 列挙型
-description: 電子メールに使用できる値は、時間を同期します。
-localization_priority: Normal
+title: emailsyncduration 列挙型
+description: 電子メール同期の期間として指定できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bf62aea1904c0fd25867aef308ca5a269e3ea20
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f2408150ea590a5d154b71521ca46df7c0fcff9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399410"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142267"
 ---
-# <a name="emailsyncduration-enum-type"></a>emailSyncDuration 列挙型
+# <a name="emailsyncduration-enum-type"></a>emailsyncduration 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-電子メールに使用できる値は、時間を同期します。
+電子メール同期の期間として指定できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|直後|1|1 日分の電子メールを同期します。|
-|3 日|2|3 日間の電子メールを同期します。|
-|1 週間|3|1 週間分のメールを同期します。|
-|2 週間|4|2 週間分のメールを同期します。|
-|oneMonth|5|電子メールの 1 か月を同期します。|
-|無制限|6|電子メールの無制限の時間を同期します。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|oneday|1-d|1日分のメールを同期します。|
+|threeDays|pbm-2|3日間のメールを同期します。|
+|oneWeek|1/3|電子メールの1週間を同期します。|
+|2週間|2/4|2週間のメールを同期します。|
+|オンライン|5|1か月分のメールを同期します。|
+|無し|シックス|電子メールの期間を無制限に同期します。|
 
 
 

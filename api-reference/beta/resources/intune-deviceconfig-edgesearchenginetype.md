@@ -1,29 +1,29 @@
 ---
 title: edgeSearchEngineType 列挙型
-description: MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
-localization_priority: Normal
+description: MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4a0e8dc580d7dc173bdc97b875f6d62a755afbc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eea8310d26e5b89e068efc927835b437423a1d8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150163"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
+MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|既定値です。|0|エッジの工場出荷時の設定を使用して、ユーザーの市場に既定の検索エンジンを割り当てます|
-|bing|1|既定の検索エンジンに Bing を設定します。|
+|既定値です。|.0|エッジのファクトリ設定を使用して、ユーザー市場ごとに既定の検索エンジンを割り当てます。|
+|地図|1-d|Bing を既定の検索エンジンとして設定する|
 
 
 

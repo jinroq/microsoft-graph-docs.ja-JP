@@ -1,23 +1,23 @@
 ---
 title: revokeAppleVppLicensesActionResult リソースの種類
-description: アップル Vpp ライセンスのアクションの結果を取り消す
-localization_priority: Normal
+description: Apple Vpp ライセンスの取り消しの操作結果
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cd77bee330e919ab51927af0773d913099cea6e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6590ae51f88c5bb00318e5e5be3769afdf629edf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419227"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146488"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アップル Vpp ライセンスのアクションの結果を取り消す
+Apple Vpp ライセンスの取り消しの操作結果
 
 
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します
@@ -26,11 +26,11 @@ ms.locfileid: "29419227"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 |startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
-|totalLicensesCount|Int32|関連付けられている Apple Vpp ライセンスの合計数|
-|failedLicensesCount|Int32|アップル Vpp ライセンスを失効に失敗した数の合計|
+|合計の合計数|Int32|関連付けられている Apple Vpp ライセンスの合計数|
+|failedLicensesCount|Int32|失効に失敗した Apple Vpp ライセンスの合計数|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -4,28 +4,29 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 455a3e0c68fadc9768c434f5893dbc950a371bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8fb82586ea0fda24297179963b730a097b2d81fa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922523"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251350"
 ---
-# <a name="update-user"></a>user の更新
+# <a name="update-user"></a>ユーザーを更新する
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [user](../resources/intune-shared-user.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)| _コンテキストによって異なります_|
+|委任 (職場または学校のアカウント)| _コンテキストによって異なる_|
 | &nbsp;&nbsp;デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;オンボード | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -42,17 +43,17 @@ PATCH /users/{usersId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[user](../resources/intune-shared-user.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[user](../resources/intune-shared-user.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|ユーザーの一意識別子。|
-|**契約時**|
+|id|String|ユーザーの一意識別子。|
+|**オンボーディング**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 
 ## <a name="response"></a>応答

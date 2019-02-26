@@ -4,50 +4,49 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3d665b70f812a18f840ce43a029fe0729d454745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980644"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250069"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
-- [動作状態](intune-devices-actionstate.md)
+- [アクションの状態](intune-devices-actionstate.md)
 - [Apple プッシュ通知証明書](intune-devices-applepushnotificationcertificate.md)
 - [監査アクター](intune-auditing-auditactor.md)
 - [監査イベント](intune-auditing-auditevent.md)
 - [監査のプロパティ](intune-auditing-auditproperty.md)
 - [監査のリソース](intune-auditing-auditresource.md)
-- [準拠状態](intune-devices-compliancestate.md)
+- [コンプライアンスのステータス](intune-devices-compliancestate.md)
 - [構成マネージャーのクライアントに対応した機能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [共有の Apple デバイスのアクションの結果からユーザーを削除する](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [検出されたアプリ](intune-devices-detectedapp.md)
 - [デバイスのアクションの結果](intune-devices-deviceactionresult.md)
-- [デバイス登録の失敗の理由](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [デバイス登録の種類](intune-devices-deviceenrollmenttype.md)
+- [デバイスの登録失敗の理由](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [デバイスの Exchange アクセス状態の要約](intune-devices-deviceexchangeaccessstatesummary.md)
 - [デバイスの位置情報](intune-devices-devicegeolocation.md)
 - [デバイスの正常性構成証明の状態](intune-devices-devicehealthattestationstate.md)
-- [デバイス管理 exchange のアクセスの状態](intune-devices-devicemanagementexchangeaccessstate.md)
-- [デバイス管理 exchange アクセス状態の理由](intune-devices-devicemanagementexchangeaccessstatereason.md)
-- [デバイス管理のサブスクリプションの状態](intune-devices-devicemanagementsubscriptionstate.md)
+- [デバイスの管理 Exchange アクセス状態](intune-devices-devicemanagementexchangeaccessstate.md)
+- [デバイスの管理 Exchange アクセス状態理由](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [デバイス管理サブスクリプションの状態](intune-devices-devicemanagementsubscriptionstate.md)
 - [デバイス管理のトラブルシューティング イベント](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [デバイスのオペレーティング システムの概要](intune-devices-deviceoperatingsystemsummary.md)
-- [デバイス登録の状態](intune-devices-deviceregistrationstate.md)
+- [デバイスの登録状態](intune-devices-deviceregistrationstate.md)
 - [登録のトラブルシューティング イベント](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [ローカライズ済み通知メッセージ](intune-notification-localizednotificationmessage.md)
 - [デバイスの検索アクションの結果](intune-devices-locatedeviceactionresult.md)
 - [管理対象デバイス](intune-devices-manageddevice.md)
 - [管理対象デバイスの概要](intune-devices-manageddeviceoverview.md)
-- [デバイス所有者の種類を管理](intune-devices-manageddeviceownertype.md)
-- [管理対象デバイスのパートナーは、正常性状態を報告](intune-devices-manageddevicepartnerreportedhealthstate.md)
+- [管理対象デバイスの所有者の種類](intune-devices-manageddeviceownertype.md)
+- [管理対象デバイスのパートナー正常性状態の報告](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [管理エージェントの種類](intune-devices-managementagenttype.md)
 - [通知メッセージ テンプレート](intune-notification-notificationmessagetemplate.md)
-- [通知テンプレートのオプションをブランド化](intune-notification-notificationtemplatebrandingoptions.md)
-- [リモート アシスタンスの採用状況](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [通知テンプレートのブランド化オプション](intune-notification-notificationtemplatebrandingoptions.md)
+- [リモート アシスタンス オンボード状態](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [リモート アシスタンス パートナー](intune-remoteassistance-remoteassistancepartner.md)
 - [リモート ロック アクションの結果](intune-devices-remotelockactionresult.md)
 - [パスコードのリセット アクションの結果](intune-devices-resetpasscodeactionresult.md)

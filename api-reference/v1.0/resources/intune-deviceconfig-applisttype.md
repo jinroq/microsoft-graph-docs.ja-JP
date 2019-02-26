@@ -1,27 +1,28 @@
 ---
-title: appListType 列挙型
-description: 準拠のアプリケーションのリストで使用できる値です。
+title: applisttype 列挙型
+description: コンプライアンスアプリリストの可能な値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1439ab860ab6a1fbf9ff4deb30320bb57fba338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 379ec2e10e68d62353875cd2b49c0944fe11f4da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967239"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254325"
 ---
-# <a name="applisttype-enum-type"></a>appListType 列挙型
+# <a name="applisttype-enum-type"></a>applisttype 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-準拠のアプリケーションのリストで使用できる値です。
+コンプライアンスアプリリストの可能な値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|既定値でことを目的しません。|
-|appsInListCompliant|1|一覧は、考慮される準拠 (準拠では、リスト上のアプリ) 専用のアプリケーションを表します。|
-|appsNotInListCompliant|2|リストと見なされます非準拠のアプリケーションを表します (すべてのアプリケーション準拠では、リスト上のアプリを除く)。|
+|none|.0|既定値。意図的ではありません。|
+|appsinlistcompliant|1-d|リストは、準拠していると見なされるアプリを表します (リスト上のアプリのみが準拠しています)。|
+|appsnotinlistcompliant|pbm-2|このリストは、非準拠と見なされるアプリを表します (すべてのアプリはリスト上のアプリ以外に準拠しています)。|
 
 
 

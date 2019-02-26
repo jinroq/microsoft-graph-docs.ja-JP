@@ -3,33 +3,35 @@ title: auditActor リソースの種類
 description: 監査アクターのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ba63fd04d917a464933e749622a5abf959c2859e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948703"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254458"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 監査アクターのプロパティが含まれるクラス。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|type|文字列型 (String)|アクターの種類。|
+|type|String|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
-|applicationId|文字列型 (String)|AAD アプリケーション ID。|
-|applicationDisplayName|文字列型 (String)|アプリケーションの名前。|
-|userPrincipalName|文字列型 (String)|ユーザー プリンシパル名 (UPN)。|
-|servicePrincipalName|文字列型 (String)|サービス プリンシパル名 (SPN)。|
-|ipAddress|文字列型 (String)|IPAddress。|
-|userId|文字列型 (String)|ユーザー ID。|
+|applicationId|String|AAD アプリケーション ID。|
+|applicationDisplayName|String|アプリケーションの名前。|
+|userPrincipalName|文字列|ユーザー プリンシパル名 (UPN)。|
+|servicePrincipalName|String|サービス プリンシパル名 (SPN)。|
+|ipAddress|String|IPAddress。|
+|userId|String|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

@@ -4,28 +4,29 @@ description: 新しいユーザー オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 1b1789cbf0743384780147ce8c50f5472f9f2d64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95b01b4b00328c230d55b530cbdef2cb32dfe607
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981505"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250230"
 ---
-# <a name="create-user"></a>user の作成
+# <a name="create-user"></a>ユーザーを作成する
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [user](../resources/intune-shared-user.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには次のアクセス許可のいずれかが必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  必要な特定のアクセス許可は、コンテキストに依存します。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)| _コンテキストによって異なります_ |
+|委任 (職場または学校のアカウント)| _コンテキストによって異なる_ |
 | &nbsp;&nbsp;デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;オンボード | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -42,7 +43,7 @@ POST /users
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、user オブジェクトの JSON 表記を指定します。
@@ -51,11 +52,11 @@ POST /users
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|ユーザーの一意識別子。|
-|**契約時**|
+|id|String|ユーザーの一意識別子。|
+|**オンボーディング**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 
-要求本文のプロパティのサポートは、コンテキストによって異なります。
+要求本文のプロパティのサポートは、コンテキストに応じて異なります。
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [user](../resources/intune-shared-user.md) オブジェクトを返します。
@@ -76,7 +77,7 @@ Content-length: 46
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストによって異なります。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
 
 ``` http
 HTTP/1.1 201 Created

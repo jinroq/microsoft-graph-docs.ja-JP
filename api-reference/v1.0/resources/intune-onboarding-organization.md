@@ -3,19 +3,20 @@ title: 組織リソースの種類
 description: organization リソースは、グローバル設定インスタンスと、テナント レベルで操作およびプロビジョニングされるリソースを表わします。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cd38274fea11f4312b60719fe04464d9b283fe9c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1e1afa1ded131844f687fa2dbad1a8e07639b264
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961377"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250055"
 ---
-# <a name="organization-resource-type"></a>organization リソースの種類
+# <a name="organization-resource-type"></a>組織リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 organization リソースは、グローバル設定インスタンスと、テナント レベルで操作およびプロビジョニングされるリソースを表わします。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -27,11 +28,12 @@ organization リソースは、グローバル設定インスタンスと、テ�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの GUID。|
+|id|String|オブジェクトの GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|
 
 ## <a name="relationships"></a>関係
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -47,7 +49,6 @@ organization リソースは、グローバル設定インスタンスと、テ�
   "mobileDeviceManagementAuthority": "String"
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",
@@ -65,4 +66,6 @@ organization リソースは、グローバル設定インスタンスと、テ�
 
 }
 -->
+
+
 

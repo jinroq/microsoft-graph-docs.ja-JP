@@ -1,29 +1,29 @@
 ---
 title: proxiedDomain リソースの種類
-description: Intune は、複数のワークフローをサポートする Microsoft グラフ API の proxiedDomain リソースについて説明します。
+description: プロキシ化されたドメイン
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b13e880508c80a009eacb520452c66e7b733ad86
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 5edabc31761a3abd79a94bb700392923d2d54513
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421845"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151206"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 プロキシ化されたドメイン
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ipAddressOrFQDN|文字列|IP アドレスまたは完全修飾ドメイン名 (FQDN) です。|
-|プロキシ|文字列|プロキシの IP アドレスまたは FQDN です。|
+|ipAddressOrFQDN|文字列|IP アドレスまたは FQDN|
+|プロキシ|文字列|プロキシ IP または FQDN|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -32,7 +32,6 @@ ms.locfileid: "29421845"
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.proxiedDomain"
 }
 -->
@@ -43,6 +42,7 @@ ms.locfileid: "29421845"
   "proxy": "String"
 }
 ```
+
 
 
 

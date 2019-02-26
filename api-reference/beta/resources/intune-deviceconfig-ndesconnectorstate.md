@@ -1,30 +1,30 @@
 ---
-title: ndesConnectorState 列挙型
-description: Ndes コネクタの現在の状態です。
-localization_priority: Normal
+title: ndesコネクタ状態列挙型
+description: Ndes connector の現在の状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9cfb0ec31bccd853b3ff2b2965c83fb6813a82e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 99ce6b85f08e929189a7dbdf4eb802fbf79f584f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409385"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146439"
 ---
-# <a name="ndesconnectorstate-enum-type"></a>ndesConnectorState 列挙型
+# <a name="ndesconnectorstate-enum-type"></a>ndesコネクタ状態列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Ndes コネクタの現在の状態です。
+Ndes connector の現在の状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|状態このコネクタはまだ利用できません。|
-|アクティブです|1|Ndes のコネクタが接続されている最近|
-|使用頻度の低い|2|Ndes のコネクタの最近のアクティビティはありません。|
+|none|.0|このコネクタの状態はまだ使用できません。|
+|active|1-d|Ndes connector が最近接続した|
+|未使用|pbm-2|Ndes connector の最近のアクティビティはありません|
 
 
 

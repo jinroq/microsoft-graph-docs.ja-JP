@@ -1,29 +1,30 @@
 ---
 title: defenderPromptForSampleSubmission 列挙型
-description: サンプル提出用のユーザーにメッセージを表示可能な値です。
+description: ユーザーにサンプル送信のプロンプトを表示するために使用できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e103916bd55e6c2d505a85c379b80962ab9a0cac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c1df39da4989417a8e21e5d0dad61667354e28ed
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928088"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251042"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-サンプル提出用のユーザーにメッセージを表示可能な値です。
+ユーザーにサンプル送信のプロンプトを表示するために使用できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|alwaysPrompt|1|常にメッセージを表示します。|
-|promptBeforeSendingPersonalData|2|個人データを送信する前にメッセージを表示します。|
-|neverSendData|3|データを送信しないでください。|
-|sendAllDataWithoutPrompting|4|メッセージを表示せず、すべてのデータを送信します。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|always プロンプト|1-d|常にプロンプトを表示します。|
+|promptBeforeSendingPersonalData|pbm-2|個人データを送信する前にメッセージを表示します。|
+|neverSendData|1/3|データを送信しません。|
+|sendalldataメッセージを表示しない|2/4|メッセージを表示せずにすべてのデータを送信します。|
 
 
 

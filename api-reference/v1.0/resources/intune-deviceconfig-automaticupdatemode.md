@@ -1,30 +1,31 @@
 ---
-title: automaticUpdateMode 列挙型
-description: 自動更新モードを使用可能な値です。
+title: 自動 updatemode 列挙型
+description: 自動更新モードで可能な値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a31c50b5d16f4b9be8db4f95f2bbd9bd0ca123e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987861"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251378"
 ---
-# <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 列挙型
+# <a name="automaticupdatemode-enum-type"></a>自動 updatemode 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-自動更新モードを使用可能な値です。
+自動更新モードで可能な値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|notifyDownload|1|ダウンロード時に通知します。|
-|autoInstallAtMaintenanceTime|2|メンテナンス時に自動インストールします。|
-|autoInstallAndRebootAtMaintenanceTime|3|自動インストールおよびメンテナンス時に再起動します。|
-|autoInstallAndRebootAtScheduledTime|4|自動インストールし、スケジュールされた時刻に再起動します。|
-|autoInstallAndRebootWithoutEndUserControl|5|自動インストールし、エンドユーザーの制御に再起動します|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|notifydownload|1-d|ダウンロードを通知します。|
+|autoInstallAtMaintenanceTime|pbm-2|メンテナンス時に自動インストールします。|
+|autoInstallAndRebootAtMaintenanceTime|1/3|メンテナンス時に自動的にインストールおよび再起動します。|
+|autoInstallAndRebootAtScheduledTime|2/4|スケジュールされた時刻に自動インストールおよび再起動します。|
+|autoInstallAndRebootWithoutEndUserControl|5|エンドユーザーコントロールを使用せずに自動インストールおよび再起動|
 
 
 

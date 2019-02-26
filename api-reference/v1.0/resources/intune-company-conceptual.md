@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune の会社の使用条件
-description: Intune の使用条件をユーザー グループに展開して、登録、作業リソースへのアクセス、ポータル サイト アプリがデバイスやユーザーにどのように影響するかを説明することができます。 ポータル サイトを使用して自分の仕事に登録してアクセスするには、ユーザーはまず使用条件に同意する必要があります。
+title: microsoft Intune での会社の使用条件-microsoft Graph API
+description: 会社の使用条件をサポートする Intune (REST) エンドポイントの Microsoft graph API を一覧表示します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: c9d5b41e0c672db5dfff82b6a70bc97214a56f4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3de3cdf4ac55177bceb56e59743d0bef9bd4cb50
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925932"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253534"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune の会社の使用条件
 

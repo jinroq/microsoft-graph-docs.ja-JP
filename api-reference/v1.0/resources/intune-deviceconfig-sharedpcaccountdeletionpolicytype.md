@@ -1,27 +1,28 @@
 ---
 title: sharedPCAccountDeletionPolicyType 列挙型
-description: 共有の PC でアカウントが削除されたときに指定できる値です。
+description: 共有 PC でアカウントを削除する場合に使用できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5dc216d20becdc233bd1664250a958aa7208f1c2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0c547a59c02e3c4cad9bd8140a2e11ca6e3c84a7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937629"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253233"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-共有の PC でアカウントが削除されたときに指定できる値です。
+共有 PC でアカウントを削除する場合に使用できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|イミディ エイト|0|すぐに削除します。|
-|diskSpaceThreshold|1|ディスク容量のしきい値を削除します。|
-|diskSpaceThresholdOrInactiveThreshold|2|ディスク容量のしきい値または非アクティブのしきい値を削除します。|
+|瞬時|.0|すぐに削除します。|
+|ディスクスペースしきい値|1-d|ディスク容量のしきい値で削除します。|
+|diskSpaceThresholdOrInactiveThreshold|pbm-2|ディスク容量のしきい値または非アクティブなしきい値での削除。|
 
 
 

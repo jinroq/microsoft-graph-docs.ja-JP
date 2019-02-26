@@ -1,26 +1,27 @@
 ---
 title: managedAppPinCharacterSet 列挙型
-description: 暗証番号 (pin) のユーザーのアプリケーションに使用する文字セット
-localization_priority: Normal
+description: ユーザーのアプリ PIN に使用される文字セット
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: d2d46e030224d21c8d0876a9f940d85e94a88591
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: cfc198a6f1db877ecee7b43eb4b07989c9967291
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978369"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250251"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-暗証番号 (pin) のユーザーのアプリケーションに使用する文字セット
+ユーザーのアプリ PIN に使用される文字セット
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|numeric|0|数値文字|
-|alphanumericAndSymbol|1|英数字および記号|
+|numeric|.0|数字|
+|alphanumericAndSymbol|1-d|英数字と文字の記号|
 
 
 

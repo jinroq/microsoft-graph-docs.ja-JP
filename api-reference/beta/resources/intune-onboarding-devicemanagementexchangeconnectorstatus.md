@@ -1,31 +1,31 @@
 ---
 title: deviceManagementExchangeConnectorStatus 列挙型
-description: Exchange コネクタの現在の状態です。
-localization_priority: Normal
+description: Exchange Connector の現在の状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16181c49b05c74ef680f456b4bffd11b435299fb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: acfb4bccf0cbf9a2fc7b1074c119ac2f9c74855f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397772"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149813"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Exchange コネクタの現在の状態です。
+Exchange Connector の現在の状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|コネクタが存在しません。|
-|connectionPending|1|Exchange 環境に対して保留中の接続です。|
-|接続されています。|2|Exchange 環境に接続されています。|
-|切断|3|Exchange 環境から切断されています。|
+|none|.0|コネクタが存在しません。|
+|connectionpending|1-d|Exchange 環境への保留中の接続。|
+|まし|pbm-2|Exchange 環境に接続されている|
+|外す|1/3|Exchange 環境から切断されている|
 
 
 

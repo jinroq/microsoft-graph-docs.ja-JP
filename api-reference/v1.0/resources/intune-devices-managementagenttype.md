@@ -1,35 +1,36 @@
 ---
-title: managementAgentType 列挙型
-description: 管理エージェントの種類です。
+title: managementagenttype 列挙型
+description: 管理エージェントの種類。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b76231a2781a153c5384c1dc3efdf8facec04dcc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9743c9c83e34a0c58dee78e73839f8fdcaaf2cda
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966168"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251567"
 ---
-# <a name="managementagenttype-enum-type"></a>managementAgentType 列挙型
+# <a name="managementagenttype-enum-type"></a>managementagenttype 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理エージェントの種類です。
+管理エージェントの種類。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ea|1|デバイスは、Exchange サーバーによって管理されます。|
-|mdm|2|Intune MDM. で、デバイスを管理します。|
-|easMdm|3|Intune MDM. と Exchange サーバーの両方がデバイス管理します。|
-|intuneClient|4|Intune クライアントが管理されています。|
-|easIntuneClient|5|デバイスは、EA と Intune クライアント デュアル管理です。|
-|configurationManagerClient|8|デバイスは、構成マネージャーによって管理されます。|
-|configurationManagerClientMdm|10|デバイスの管理は、構成マネージャーと MDM.|
-|configurationManagerClientMdmEas|11|デバイスは、MDM および Ea は、構成マネージャーによって管理されます。|
-|不明|16|不明な管理エージェントの種類です。|
-|jamf|32|デバイス属性は、Jamf からフェッチされます。|
-|googleCloudDevicePolicyController|64|デバイスは、Google の CloudDPC によって管理されます。|
+|eas|1-d|デバイスは、Exchange server によって管理されています。|
+|mdm.exe|pbm-2|デバイスは Intune MDM によって管理されます。|
+|easmdm|1/3|デバイスは、Exchange server と Intune MDM の両方によって管理されます。|
+|intアンの場合|2/4|Intune クライアント管理。|
+|easintアンの場合|5|デバイスは EAS で、Intune クライアントはデュアル管理されています。|
+|configurationmanagerclient|~|デバイスは構成マネージャーによって管理されています。|
+|configurationmanagerclientmdm|個|デバイスは、構成マネージャーおよび MDM によって管理されます。|
+|configurationmanagerclientmdmeas|#|デバイスは、構成マネージャー、MDM、Eas によって管理されます。|
+|不明|16|管理エージェントの種類が不明です。|
+|jamf|32|デバイス属性は、Jamf から取得されます。|
+|googleCloudDevicePolicyController|64|デバイスは Google の CloudDPC によって管理されています。|
 
 
 

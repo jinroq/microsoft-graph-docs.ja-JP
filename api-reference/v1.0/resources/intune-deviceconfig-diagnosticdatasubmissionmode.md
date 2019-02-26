@@ -1,29 +1,30 @@
 ---
 title: diagnosticDataSubmissionMode 列挙型
-description: ワトソンなど、診断および利用状況の遠隔測定データを送信するデバイスを使用できます。
-localization_priority: Normal
+description: デバイスが診断データと使用統計情報 (Watson など) を送信できるようにします。
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: a293288c3891f8ecd77d422986e419d2e3d53767
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 3c0707b97e60da406210d6a091ed0dd4efaa2299
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912947"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251035"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ワトソンなど、診断および利用状況の遠隔測定データを送信するデバイスを使用できます。
+デバイスが診断データと使用統計情報 (Watson など) を送信できるようにします。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|設定するユーザーを許可します。|
-|none|1|OS コンポーネントからは、遠隔測定データは送信されません。 注: この値は、エンタープライズとサーバのデバイスに適用されるのみです。 その他のデバイスでこの設定を使用して、1 の値を設定するのと同じです。|
-|基本的な|2|基本的な遠隔測定データを送信します。|
-|強化|3|送信には、使用状況と情報のデータを含む遠隔測定データが強化されています。|
-|フル|4|システム状態などの診断データを含む完全な遠隔測定データを送信します。|
+|自分のもの|.0|ユーザーがを設定できるようにします。|
+|none|1-d|テレメトリデータは、OS コンポーネントから送信されません。 注: この値は、エンタープライズおよびサーバーデバイスにのみ適用されます。 他のデバイスでこの設定を使用することは、値を1に設定するのと同じです。|
+|基本的な|pbm-2|基本的なテレメトリデータを送信します。|
+|保護|1/3|利用状況データおよびインサイトデータを含む、拡張されたテレメトリデータを送信します。|
+|完全|2/4|システム状態などの診断データを含む完全なテレメトリデータを送信します。|
 
 
 

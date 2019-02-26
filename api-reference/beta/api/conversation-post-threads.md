@@ -4,12 +4,12 @@ description: 指定した会話に新しいスレッドを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ad1bf0d6878404913c7de20fecb8d3433f06dd51
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514216"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149827"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "29514216"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
