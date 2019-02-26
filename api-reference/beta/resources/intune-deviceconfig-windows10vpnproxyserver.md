@@ -1,34 +1,34 @@
 ---
 title: windows10VpnProxyServer リソースの種類
-description: VPN プロキシ サーバーです。
-localization_priority: Normal
+description: VPN プロキシサーバー。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4f8975a08e60105c37e0959ac72e24a1dd639cd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4686049e2f3525409e81ec1492dcb052ab9f3657
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140692"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-VPN プロキシ サーバーです。
+VPN プロキシサーバー。
 
 
-[VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
+[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|プロキシの自動構成スクリプトの url です。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承されました。|
-|address|String|アドレスです。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承されました。|
-|port|Int32|ポートです。 有効な値は[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から 0 から 65535 までの継承|
-|bypassProxyServerForLocalAddress|Boolean|ローカル アドレスに対してプロキシ サーバーをバイパスします。|
+|自動構成 scripturl|String|プロキシの自動構成スクリプトの url。 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|address|String|連絡先. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|port|Int32|ポート. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
+|bypassProxyServerForLocalAddress|Boolean|ローカルアドレスにはプロキシサーバーを使用しないでください。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

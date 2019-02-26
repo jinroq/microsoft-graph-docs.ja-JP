@@ -3,21 +3,22 @@ title: windowsUpdateForBusinessConfiguration の更新
 description: windowsUpdateForBusinessConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d02bbb949e25d587e267130d5f3ebd110a626534
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5d1ca9a6d93e689c849c5f9fa847504dd78df5bd
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931280"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264485"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>windowsUpdateForBusinessConfiguration の更新
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,22 +39,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文では、[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|配信の最適化モードです。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|配信最適化モード。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|プレリリース機能です。 可能な値は、`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed` です。|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自動更新モードです。 可能な値は、`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl` です。|
 |microsoftUpdateServiceAllowed|Boolean|Microsoft の更新サービスを許可します。|
@@ -65,7 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |featureUpdatesPaused|Boolean|機能更新プログラムの実行を一時停止します|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|品質更新プログラム実行一時停止の有効期限が切れる日時です|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|機能更新プログラム実行一時停止の有効期限が切れる日時です|
-|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|更新を受信できるの分岐デバイスを決定します。 使用可能な値: `userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
+|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|更新プログラムを受信するブランチデバイスを決定します。 使用可能な値: `userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
 
 
 
@@ -73,6 +74,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 このメソッドが成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

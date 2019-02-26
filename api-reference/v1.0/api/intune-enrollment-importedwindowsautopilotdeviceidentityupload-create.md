@@ -1,23 +1,24 @@
 ---
-title: ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
+title: importedWindowsAutopilotDeviceIdentityUpload を作成する
 description: 新しい importedWindowsAutopilotDeviceIdentityUpload オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c99426a3f8f3f3568ea251532042a028a94d35cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2fd4230b0ecdb4279380255b1fa62cbe697a4843
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923398"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264394"
 ---
-# <a name="create-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
+# <a name="create-importedwindowsautopilotdeviceidentityupload"></a>importedWindowsAutopilotDeviceIdentityUpload を作成する
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,25 +39,26 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に importedWindowsAutopilotDeviceIdentityUpload オブジェクトの JSON の形式を指定します。
+要求本文で、importedWindowsAutopilotDeviceIdentityUpload オブジェクトの JSON 表記を指定します。
 
-次の表は、importedWindowsAutopilotDeviceIdentityUpload を作成するときに必要なプロパティを示します。
+次の表に、importedWindowsAutopilotDeviceIdentityUpload の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの GUID|
-|createdDateTimeUtc|DateTimeOffset|日時を設定すると、エンティティを作成します。|
-|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|ステータスをアップロードします。 可能な値は、`noUpload`、`pending`、`complete`、`error` です。|
+|id|String|オブジェクトの GUID|
+|createdDateTimeUtc|DateTimeOffset|エンティティが作成された日時。|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|アップロードの状態。 可能な値は、`noUpload`、`pending`、`complete`、`error` です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

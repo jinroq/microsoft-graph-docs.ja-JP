@@ -1,31 +1,32 @@
 ---
 title: ratingGermanyTelevisionType 列挙型
-description: ドイツのテレビのコンテンツの規制ラベル
+description: ドイツでのテレビコンテンツの評価のラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dafa3b5b3bfec5c67b87dc10d3162f2c9e24b4bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a1cdc5fdc8b52f52c62da1a4cd66f3322089edeb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911617"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264457"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ドイツのテレビのコンテンツの規制ラベル
+ドイツでのテレビコンテンツの評価のラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|全般|2|Ab 0 Jahren、年齢制限はありません。|
-|agesAbove6|3|Ab 6 Jahren では、6 と以前のエージングします。|
-|agesAbove12|4|Ab 12 Jahren、12 と古いのエージングします。|
-|agesAbove16|5|Ab 16 Jahren、16 のエージングします。|
-|大人|6|Ab 18 Jahren、成人のみ|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|元帳|pbm-2|Ab 0 Jahren、年齢制限なし|
+|agesAbove6|1/3|Ab 6 Jahren、才を過ぎた|
+|agesAbove12|2/4|Ab 12 Jahren、12才以上|
+|agesAbove16|5|Ab 16 Jahren、16才以上|
+|保護者|シックス|Ab 18 Jahren、大人のみ|
 
 
 

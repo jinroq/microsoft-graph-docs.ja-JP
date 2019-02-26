@@ -1,23 +1,24 @@
 ---
-title: ManagedDeviceMobileAppConfigurationDeviceStatus を更新します。
-description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティを更新します。
+title: managedDeviceMobileAppConfigurationDeviceStatus の更新
+description: managedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2a5cc2b46bc02644dc6467e3e629c3d631a13a59
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 30e30a37587a891a0303030ec35a71f331d0aba6
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264310"
 ---
-# <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を更新します。
+# <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>managedDeviceMobileAppConfigurationDeviceStatus の更新
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトのプロパティを更新します。
+[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,30 +39,31 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトの JSON 表記を指定します。
 
-[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|文字列型 (String)|UserPrincipalName。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

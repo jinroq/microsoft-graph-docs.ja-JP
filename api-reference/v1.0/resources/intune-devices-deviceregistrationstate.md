@@ -1,32 +1,33 @@
 ---
 title: deviceRegistrationState 列挙型
-description: デバイス登録のステータス。
+description: デバイス登録の状態。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5b0048385930166de3329ef9d407f5ddd19efc77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4b3bee7ab56f07dd6f27c20c771329ba84edbb19
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911897"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264135"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイス登録のステータス。
+デバイス登録の状態。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notRegistered|0|デバイスは登録されていません。|
-|登録|2|デバイスが登録されています。|
-|失効|3|デバイスがブロックされている、消去した廃止します。|
-|keyConflict|4|デバイスには、キーの競合があります。|
-|approvalPending|5|デバイスは、承認が保留中です。|
-|certificateReset|6|デバイスの証明書をリセットするとします。|
-|notRegisteredPendingEnrollment|7|デバイスが登録されていないと登録を保留中です。|
-|不明|8|デバイス ライセンス登録のステータスは不明です。|
+|notregistered 済み|.0|デバイスが登録されていません。|
+|い|pbm-2|デバイスは登録されています。|
+|破棄|1/3|デバイスがブロックされているか、ワイプされているか、破棄されています。|
+|keyconflict|2/4|デバイスにキーの競合があります。|
+|approvalpending|5|デバイスの承認が保留中です。|
+|certificateReset|シックス|デバイス証明書がリセットされました。|
+|notregisteredpendingenrollment|7|デバイスは登録されておらず、登録が保留されていません。|
+|不明|~|デバイス登録の状態が不明です。|
 
 
 

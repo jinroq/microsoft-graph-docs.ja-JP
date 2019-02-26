@@ -3,21 +3,22 @@ title: Get termsAndConditions
 description: termsAndConditions オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 76fd95fb25e237ed18481cfb813db2a6d1216cce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3f7c2b4e658762392a2f4b648bb926777a7e0278
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923524"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264338"
 ---
 # <a name="get-termsandconditions"></a>Get termsAndConditions
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトのプロパティとリレーションシップを読み取ります。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -36,12 +37,13 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。
+
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -50,6 +52,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

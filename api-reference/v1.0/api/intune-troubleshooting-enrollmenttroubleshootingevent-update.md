@@ -3,21 +3,22 @@ title: enrollmentTroubleshootingEvent の更新
 description: enrollmentTroubleshootingEvent オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 002f1e29c993326ab85d17d5092935525249a9db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 87f5212469ced8a2c97d030c8fd83480fe6efca9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939772"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264359"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の更新
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトの JSON 表記を指定します。
@@ -47,11 +48,11 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
+|id|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
-|operatingSystem|String|オペレーティング システム。|
+|operatingSystem|文字列|オペレーティング システム。|
 |osVersion|String|OS バージョン。|
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 |deviceId|String|Azure AD デバイス識別子。|
@@ -65,14 +66,16 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
-Content-length: 440
+Content-length: 509
 
 {
+  "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "correlationId": "Correlation Id value",
   "managedDeviceIdentifier": "Managed Device Identifier value",
