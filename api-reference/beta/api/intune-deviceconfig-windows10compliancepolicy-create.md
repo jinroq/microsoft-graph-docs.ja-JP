@@ -1,21 +1,21 @@
 ---
 title: windows10CompliancePolicy の作成
 description: 新しい windows10CompliancePolicy オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2eba67635ea4e596dd9bf1881b5b5c0d7b9743df
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cb83507aa28ec859939e846312539656d81b3f69
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422741"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165332"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windows10CompliancePolicy オブジェクトの JSON 表記を指定します。
@@ -50,10 +50,10 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordExpirationDays|Int32|パスワードの有効期限 (日数)。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |requireHealthyDeviceReport|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
 |osMinimumVersion|String|Windows 10 の最小バージョン。|
@@ -76,17 +76,17 @@ POST /deviceManagement/deviceCompliancePolicies
 |secureBootEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (セキュア ブートが有効である) ことを要求します。|
 |codeIntegrityEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
-|activeFirewallRequired|Boolean|Windows デバイス上のアクティブなファイアウォールが必要です。|
-|defenderEnabled|Boolean|Windows デバイスで Windows Defender のウイルス対策が必要です。|
-|defenderVersion|String|Windows デバイスの最小バージョンの Windows Defender のウイルス対策が必要です。|
-|signatureOutOfDate|Boolean|Windows デバイスで最新のものに、Windows Defender のウイルス対策署名が必要です。|
-|rtpEnabled|Boolean|Windows デバイスでは、Windows Defender のウイルス対策のリアルタイム保護を必要とします。|
-|antivirusRequired|Boolean|上にある Windows セキュリティ センターに登録され、(例: シマンテック、Windows Defender) を監視するウイルス対策ソリューションが必要です。|
-|antiSpywareRequired|Boolean|任意のウイルス対策ソリューションに Windows セキュリティ センターに登録され、監視 (シマンテック、Windows Defender など) が必要です。|
-|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)コレクション|有効なオペレーティング システムは、Windows デバイス上の範囲を作成します。 このコレクションには、最大で 10000 個の要素を含めることができます。|
+|activeFirewallRequired|Boolean|Windows デバイスでアクティブなファイアウォールが必要です。|
+|defenderenabled|Boolean|windows デバイスで windows Defender マルウェア対策を必須にする。|
+|defenderversion|String|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
+|signatureOutOfDate|Boolean|windows デバイスで windows Defender マルウェア対策の署名が最新の状態になっていることを要求します。|
+|rtpenabled|Boolean|windows デバイスで windows Defender マルウェア対策のリアルタイム保護を必要とします。|
+|antivirusRequired|Boolean|windows Decurity Center に登録されているウイルス対策ソリューション (Symantec、Windows Defender など) を必要とします。|
+|antiSpywareRequired|Boolean|windows Decurity Center に登録されているスパイウェア対策ソリューションで、オンおよび監視する必要があります (Symantec、Windows Defender など)。|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)コレクション|Windows デバイス上の有効なオペレーティングシステムのビルド範囲。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|法令遵守の不履行を報告する最小のリスク レベルの脅威のデバイスの保護を必要とします。 使用可能な値: `unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|Boolean|Intune 準拠状態の考慮事項に SCCM の準拠状態を考慮する必要があります。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|デバイスの脅威保護で、コンプライアンス違反を報告するために最低限必要となるリスクレベル。 使用可能な値: `unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|configurationManagerComplianceRequired|Boolean|Intune コンプライアンスの状態を考慮に入れて SCCM コンプライアンスの状態を考慮する必要があります。|
 
 
 

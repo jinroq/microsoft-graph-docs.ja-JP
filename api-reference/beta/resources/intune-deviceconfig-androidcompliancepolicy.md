@@ -1,21 +1,21 @@
 ---
 title: androidCompliancePolicy リソース タイプ
 description: このクラスには、Android のコンプライアンス設定が含まれています。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f73c150a1b27dc11aa3fe7ab900711e3cff1780
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ad1cd25d15e4b42b49b43bc4b599037dca023082
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410813"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139901"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このクラスには、Android のコンプライアンス設定が含まれています。
 
@@ -34,8 +34,8 @@ ms.locfileid: "29410813"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -43,11 +43,11 @@ ms.locfileid: "29410813"
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |passwordRequired|Boolean|デバイスのロックを解除するパスワードを要求します。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。 有効な値は 4 から 16 までです|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|パスワード内の文字の種類です。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
+|passwordRequiredType|[androidrequiredpasswordtype](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|パスワードの文字の種類。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 365 までです|
 |passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数。 有効な値は 1 から 24 までです|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|工場出荷時リセットする前に許容されるサインインの障害の数です。 有効な値 1 ~ 16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時のリセットまでに許可されるサインインの失敗回数。 有効な値は1から16までです|
 |securityPreventInstallAppsFromUnknownSources|Boolean|デバイスが不明なソースからのアプリのインストールを許可しないことを要求します。|
 |securityDisableUsbDebugging|Boolean|Android デバイスでの USB デバッグを無効にします。|
 |securityRequireVerifyApps|Boolean|Android の検証アプリ機能をオンにするよう要求します。|
@@ -63,8 +63,8 @@ ms.locfileid: "29410813"
 |securityRequireGooglePlayServices|Boolean|Google Play 開発者サービスがデバイスにインストールされて有効になっていることを要求します。|
 |securityRequireUpToDateSecurityProviders|Boolean|デバイスに最新のセキュリティ プロバイダーが必要です。 デバイスで Google Play 開発者サービスが有効かつ最新の状態になっている必要があります。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|デバイスが会社のポータル クライアント アプリのランタイム整合性チェックに合格することを要求します。|
-|conditionStatementId|String|条件ステートメントの id です。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大 100 個の要素を含めることができます。|
+|conditionStatementId|String|条件ステートメントの id。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスに、指定されたアプリがインストールされていないことを要求します。 このコレクションには、最大100個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

@@ -1,31 +1,32 @@
 ---
-title: actionState 列挙型
+title: actionstate 列挙型
 description: デバイス上のアクションの状態
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5579d8de986a764cd96e42dff30c007449130b0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e06b492e41ffa5e2f9aa4b64782e96125ea746a2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922446"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261489"
 ---
-# <a name="actionstate-enum-type"></a>actionState 列挙型
+# <a name="actionstate-enum-type"></a>actionstate 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス上のアクションの状態
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|アクションが有効な状態ではなく|
-|保留中|1|操作が保留中です。|
-|キャンセル|2|アクションが取り消されました。|
-|アクティブです|3|影響はありません。|
-|done|4|操作がエラーなく完了しました。|
-|失敗しました。|5|操作が失敗しました|
-|notSupported|6|アクションはサポートされていません。|
+|none|.0|有効なアクション状態ではありません|
+|対する|1-d|アクションが保留中|
+|取り消す|pbm-2|アクションが取り消されました。|
+|active|1/3|アクションはアクティブです。|
+|done|2/4|操作はエラーなしで完了しました。|
+|フェール|5|アクションの失敗|
+|notSupported|シックス|アクションはサポートされていません。|
 
 
 

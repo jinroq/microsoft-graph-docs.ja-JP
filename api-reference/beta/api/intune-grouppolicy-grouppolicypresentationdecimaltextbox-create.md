@@ -1,21 +1,21 @@
 ---
-title: GroupPolicyPresentationDecimalTextBox を作成します。
+title: groupPolicyPresentationDecimalTextBox を作成する
 description: 新しい groupPolicyPresentationDecimalTextBox オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cc6e5cb8104cc4d9ff4cffcf2157fe954f991cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2c518eb990927e98a8ea75f8b71d98811f455557
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167166"
 ---
-# <a name="create-grouppolicypresentationdecimaltextbox"></a>GroupPolicyPresentationDecimalTextBox を作成します。
+# <a name="create-grouppolicypresentationdecimaltextbox"></a>groupPolicyPresentationDecimalTextBox を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)オブジェクトを作成します。
 
@@ -41,29 +41,29 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に groupPolicyPresentationDecimalTextBox オブジェクトの JSON の形式を指定します。
+要求本文で、groupPolicyPresentationDecimalTextBox オブジェクトの JSON 表記を指定します。
 
-次の表は、groupPolicyPresentationDecimalTextBox を作成するときに必要なプロパティを示します。
+次の表に、groupPolicyPresentationDecimalTextBox の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|プレゼンテーションの任意のエンティティのローカライズされたテキスト ラベルです。 既定値は空です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承されました。|
-|defaultValue|Int64|符号なし整数を 10 進数のテキスト ボックスの初期値を指定します。 既定値は 1 です。|
-|スピン|Boolean|True の場合、スピン コントロールを作成します。それ以外の場合、数値入力用のテキスト ボックスを作成します。 既定値は、true を指定します。|
-|spinStep|Int64|スピン コントロールの変更の増分値を指定する符号なし整数。 既定値は 1 です。|
-|必須|Boolean|パラメーター] ボックスに値を入力するための要件です。 既定値は、false を指定します。|
-|minValue|Int64|指定できる最小の値を指定する符号なし整数。 既定値は 0 です。|
-|maxValue|Int64|最大許容値を指定する符号なし整数。 既定値は、9999 です。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|defaultValue|Int64|小数点のテキストボックスの初期値を指定する符号なし整数。 既定値は 1 です。|
+|スピン|Boolean|true の場合はスピンコントロールを作成します。それ以外の場合は、数値を入力するためのテキストボックスを作成します。 既定値は true です。|
+|spinstep|Int64|スピンコントロールの変更のインクリメントを指定する符号なし整数。 既定値は 1 です。|
+|必須|Boolean|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
+|minValue|Int64|最小許容値を指定する符号なし整数。 既定値は 0 です。|
+|maxValue|Int64|最大許容値を指定する符号なし整数。 既定値は9999です。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

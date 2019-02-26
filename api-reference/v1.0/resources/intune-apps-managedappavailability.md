@@ -1,26 +1,27 @@
 ---
-title: managedAppAvailability 列挙型
-description: マネージ (MAM) アプリケーションの可用性です。
-localization_priority: Normal
+title: managedappavailability 列挙型
+description: マネージ (MAM) アプリケーションの可用性。
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: b79504fac79773dec5c58c894033a9ae9750442c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 9f4ec62590a5b91866c4a0d28fffd1596e161ffc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936124"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264002"
 ---
-# <a name="managedappavailability-enum-type"></a>managedAppAvailability 列挙型
+# <a name="managedappavailability-enum-type"></a>managedappavailability 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-マネージ (MAM) アプリケーションの可用性です。
+マネージ (MAM) アプリケーションの可用性。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|グローバル|0|すべてのテナントにグローバルに使用できるアプリケーションです。|
-|lineOfBusiness|1|組織専用のビジネス アプリケーションの線です。|
+|全体|.0|すべてのテナントに対してグローバルに利用可能なアプリ。|
+|lineofbusiness|1-d|組織にとってプライベートな基幹業務アプリ。|
 
 
 

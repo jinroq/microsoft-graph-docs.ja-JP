@@ -1,27 +1,28 @@
 ---
 title: welcomeScreenMeetingInformation 列挙型
-description: 会議については [ようこそ] 画面の使用可能な値です。
+description: ウェルカム画面の会議情報に指定できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1bdec076eae34adddf9846df5d29436dd20100d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5eb28fba08ce30d32cb37fe35efaf7471db558e2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937657"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264072"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-会議については [ようこそ] 画面の使用可能な値です。
+ウェルカム画面の会議情報に指定できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|showOrganizerAndTimeOnly|1|開催者と時間のみを表示します。|
-|showOrganizerAndTimeAndSubject|2|開催者、時刻と件名を表示する (個人の会議の件名は表示されません)。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|shoのガントチャート izerandtimeonly|1-d|開催者と時間のみを表示します。|
+|shoのガントチャート izerandtimeandsubject|pbm-2|開催者、時間、および件名を表示する (個人の会議の場合は、件名が非表示)。|
 
 
 

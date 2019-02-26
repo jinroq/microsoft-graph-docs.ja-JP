@@ -1,21 +1,21 @@
 ---
-title: IntuneBrandingProfileAssignment を作成します。
+title: intuneBrandingProfileAssignment を作成する
 description: 新しい intuneBrandingProfileAssignment オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17c6a6c1f06d383a6019c168b41187826cb63067
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d7f8336edf5bffd8708c5a5149066faed4ab3e21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430345"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157912"
 ---
-# <a name="create-intunebrandingprofileassignment"></a>IntuneBrandingProfileAssignment を作成します。
+# <a name="create-intunebrandingprofileassignment"></a>intuneBrandingProfileAssignment を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトを作成します。
 
@@ -41,22 +41,22 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignme
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に intuneBrandingProfileAssignment オブジェクトの JSON の形式を指定します。
+要求本文で、intuneBrandingProfileAssignment オブジェクトの JSON 表記を指定します。
 
-次の表は、intuneBrandingProfileAssignment を作成するときに必要なプロパティを示します。
+次の表に、intuneBrandingProfileAssignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|割り当てのターゲットにブランドのプロファイルが割り当てられています。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|ブランド化プロファイルが割り当てられている割り当て先。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

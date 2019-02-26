@@ -1,39 +1,39 @@
 ---
-title: bitLockerSystemDrivePolicy リソースの種類
-description: BitLocker 暗号化の基本ポリシーです。
-localization_priority: Normal
+title: bitlockersystemdrive policy リソースの種類
+description: BitLocker 暗号化の基本ポリシー。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b63d075538508941d012df1e44f7cb563fed20d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 27b4492dd6df2821cfdeb885d3412536c0d3991c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425709"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164891"
 ---
-# <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy リソースの種類
+# <a name="bitlockersystemdrivepolicy-resource-type"></a>bitlockersystemdrive policy リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-BitLocker 暗号化の基本ポリシーです。
+BitLocker 暗号化の基本ポリシー。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|オペレーティング システム ドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
-|startupAuthenticationRequired|Boolean|起動時に追加の認証が必要です。|
-|startupAuthenticationBlockWithoutTpmChip|Boolean|なし (または USB フラッシュ ドライブにスタートアップ キーのパスワードが必要です)、互換性のある TPM は BitLocker を許可するかどうかを示します。|
-|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップを許可または必要と許可しないかどうかを示します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップの暗証番号 (pin) を許可または必要と許可しないかどうかを示します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|スタートアップ キーを TPM を許可または必要と許可しないかどうかを示します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップに追加することを示しますキーとキーは、許可または必要と許可しません。 可能な値は、`blocked`、`required`、`allowed` です。|
-|minimumPinLength|Int32|スタートアップの暗証番号 (pin) の最小の長さを示します。 4 ~ 20 の有効な値|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|必要なスタートアップ キー情報がない場合、BitLocker で暗号化されたオペレーティング システム ドライブを回復することができます。 BitLocker を有効にするときは、このポリシー設定が適用されます。|
-|prebootRecoveryEnableMessageAndUrl|Boolean|ブート前の回復のメッセージと Url を有効にします。 RequireStartupAuthentication が false の場合、この値は影響しません。|
-|prebootRecoveryMessage|String|回復のカスタム メッセージを定義します。|
-|prebootRecoveryUrl|String|回復のカスタム URL を定義します。|
+|encryptionMethod|[bitlockerencryptionmethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|オペレーティングシステムドライブの暗号化方法を選択します。 使用可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
+|startupAuthenticationRequired|Boolean|起動時に追加の認証を要求します。|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|互換性のある TPM を使用せずに BitLocker を許可するかどうかを示します (パスワードまたは USB フラッシュドライブのスタートアップキーが必要です)。|
+|startupAuthenticationTpmUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|TPM のスタートアップが許可されているかどうか、または要求/禁止を示します。 可能な値は `blocked`、`required`、`allowed` です。|
+|startupAuthenticationTpmPinUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップ pin が許可されているかどうか、または許可/禁止を示します。 可能な値は `blocked`、`required`、`allowed` です。|
+|startupAuthenticationTpmKeyUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップキーが許可されているかどうか、または必要/不許可かを示します。 可能な値は `blocked`、`required`、`allowed` です。|
+|startupAuthenticationTpmPinAndKeyUsage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|TPM スタートアップ pin キーとキーが許可されているかどうか、または許可/不許可かを示します。 可能な値は `blocked`、`required`、`allowed` です。|
+|minimumPinLength|Int32|スタートアップ pin の最小の長さを示します。 有効な値は4から20までです|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|必要なスタートアップキー情報がない場合に BitLocker で暗号化されたオペレーティングシステムドライブを回復できるようにします。 このポリシー設定は、BitLocker を有効にしたときに適用されます。|
+|prebootRecoveryEnableMessageAndUrl|Boolean|ブート前の回復メッセージと Url を有効にします。 requirestartupauthentication が false の場合、この値は影響を与えません。|
+|prebootrecoverymessage|String|カスタムの回復メッセージを定義します。|
+|prebootrecoveryurl|String|カスタムの回復 URL を定義します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -3,27 +3,29 @@ title: mimeContent リソースの種類
 description: 汎用 MIME コンテンツのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8a486753c95afce9dff6ceec5846ff618b9103b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: de4360ce5a8873fde7d3286f55fc0c8993936a7c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971901"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260005"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 汎用 MIME コンテンツのプロパティが含まれています。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |type|String|コンテンツ MIME の種類を示します。|
 |value|バイナリ|実際のコンテンツを含むバイト配列です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

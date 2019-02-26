@@ -3,21 +3,22 @@ title: deviceConfigurationAssignment の作成
 description: 新しい deviceConfigurationAssignment オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d81f8f5618b9582b40bfbccbb4c6c0fb50c2c11c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4fc75ded1de59ee691b6b2888f4ecda6ad5c618e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961562"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261923"
 ---
 # <a name="create-deviceconfigurationassignment"></a>deviceConfigurationAssignment の作成
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceConfigurationAssignment オブジェクトの JSON 表記を指定します。
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|割り当てのキー。|
+|id|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先。|
 
 
@@ -56,6 +57,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

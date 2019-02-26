@@ -1,30 +1,30 @@
 ---
-title: defenderProtectionType 列挙型
-description: Defender の保護の使用可能な値
-localization_priority: Normal
+title: defenderprotectiontype 列挙型
+description: Defender 保護の可能な値
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6662edbc20a4af53761820ca6b3c69245236f656
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a5cd5446aad528b6b4949ad0761351c936f2881e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139446"
 ---
-# <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 列挙型
+# <a name="defenderprotectiontype-enum-type"></a>defenderprotectiontype 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Defender の保護の使用可能な値
+Defender 保護の可能な値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|デバイスの既定値でことを目的しません。|
-|有効にします。|1|機能をブロックします。|
-|auditMode|2|機能を許可するが、ログを生成します。|
+|自分のもの|.0|デバイスの既定値。意図的ではありません。|
+|使う|1-d|機能をブロックする。|
+|auditmode|pbm-2|機能を有効にし、ログを生成します。|
 
 
 

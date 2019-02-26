@@ -1,21 +1,21 @@
 ---
 title: iosGeneralDeviceConfiguration リソース タイプ
 description: このトピックでは、iosGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 055abce38989d5d49f1f009ac38b6a5aac548ac2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 01ea145e90b2595035bbb49d02d14c285750e612
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410890"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175354"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このトピックでは、iosGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 
@@ -34,10 +34,10 @@ ms.locfileid: "29410890"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -52,24 +52,28 @@ ms.locfileid: "29410890"
 |appleNewsBlocked|Boolean|デバイスが監視モードのときに、ユーザーによる News の使用を禁止するかどうかを示します (iOS 9.0 以降)。|
 |appsSingleAppModeList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|単一アプリ モードに自律的に入ることが許可されている iOS アプリのリストを取得または設定します。 監視モードのみ。 iOS 7.0 以降。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |appsVisibilityList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|可視性リストにあるアプリのリスト (iOS 9.3 以降で、AppVisibilityListType によって制御される、表示可能/起動可能なアプリのリスト、または非表示/起動できないアプリのリスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|AppsVisibilityList 内にあるリストの種類です。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|appsVisibilityListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppsVisibilityList 内にあるリストの種類です。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |appStoreBlockAutomaticDownloads|Boolean|デバイスが監視モードのときに、他のデバイスで購入したアプリの自動ダウンロードをブロックするかどうかを示します (iOS 9.0 以降)。|
 |appStoreBlocked|Boolean|ユーザーによる App Store の使用を禁止するかどうかを示します。|
 |appStoreBlockInAppPurchases|Boolean|ユーザーによるアプリの購入を禁止するかどうかを示します。|
 |appStoreBlockUIAppInstallation|Boolean|ホスト アプリによるインストールを制限せずに、App Store アプリをブロックするかどうかを示します。 監視モードのみに適用されます (iOS 9.0 以降)。|
 |appStoreRequirePassword|Boolean|App Store 使用時に、パスワードを要求するかどうかを指定します。|
+|autofillforceauthentication|Boolean|Safari や、監視対象デバイスの他のアプリで、パスワードとクレジットカード情報を自動入力する前に、ユーザー認証を強制するかどうかを示します。|
 |bluetoothBlockModification|Boolean|デバイスが監視モードのときに、Bluetooth の設定の変更を許可するかどうかを示します (iOS 10.0 以降)。|
 |cameraBlocked|Boolean|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。|
 |cellularBlockDataRoaming|Boolean|データ ローミングをブロックするかどうかを示します。|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|ローミング中に、グローバルなバックグラウンド フェッチをブロックするかどうかを示します。|
 |cellularBlockPerAppDataModification|Boolean|デバイスが監視モードのときに、携帯ネットワーク アプリのデータの使用設定の変更を許可するかどうかを示します。|
 |cellularBlockPersonalHotspot|Boolean|個人用ホットスポットをブロックするかどうかを示します。|
+|cellularblockplan の変更|Boolean|ユーザーが、監視対象デバイスの携帯電話プランの設定を変更することを許可するかどうかを示します。|
 |cellularBlockVoiceRoaming|Boolean|音声通話ローミングをブロックするかどうかを示します。|
 |certificatesBlockUntrustedTlsCertificates|Boolean|信頼されていない TLS の証明書をブロックするかどうかを示します。|
 |classroomAppBlockRemoteScreenObservation|Boolean|デバイスが監視モードのときに、Classroom アプリによるリモート画面の監視を許可するかどうかを示します (iOS 9.3 以降)。|
 |classroomAppForceUnpromptedScreenObservation|Boolean|デバイスが監視モードになっているときに、Classroom アプリでの管理対象コースの教師に、メッセージを表示せずに学生の画面を表示する許可を自動的に与えるかどうかを示します。|
+|classroomForceAutomaticallyJoinClasses|Boolean|デバイスが監視モードのときに、学生に確認せずに教師の要求に対して自動的にアクセス許可を付与するかどうかを示します。|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|学生にメッセージを表示せずに、アプリまたはデバイスのロックを教師に許可するかどうかを示します。 監視モードのみ。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|AppComplianceList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppComplianceList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |configurationProfileBlockChanges|Boolean|デバイスが監視モードのときに、ユーザーが構成プロファイルと証明書を対話形式でインストールするのをブロックするかどうかを示します。|
 |definitionLookupBlocked|Boolean|デバイスが監視モードのときに、定義の検索を禁止するかどうかを示します (iOS 8.1.3 以降)。|
 |deviceBlockEnableRestrictions|Boolean|デバイスが監視モードのときに、ユーザーがデバイス設定の制限を有効にできるようにするかどうかを示します。|
@@ -82,6 +86,7 @@ ms.locfileid: "29410890"
 |emailInDomainSuffixes|String コレクション|これらの文字列のいずれかに一致するサフィックスがないメール アドレスは、ドメイン外と見なされます。|
 |enterpriseAppBlockTrust|Boolean|ユーザーによるエンタープライズ アプリの信頼を禁止するかどうかを示します。|
 |enterpriseAppBlockTrustModification|Boolean|ユーザーによるエンタープライズ アプリの信頼の設定の変更を禁止するかどうかを示します。|
+|esimblockmodification|Boolean|監視対象デバイスの eSIM での携帯電話プランの追加または削除を許可するかどうかを示します。|
 |faceTimeBlocked|Boolean|ユーザーによる FaceTime の使用を禁止するかどうかを示します。|
 |findMyFriendsBlocked|Boolean|デバイスが監視モードのときに、"友達を探す" をブロックするかどうかを示します。|
 |gamingBlockGameCenterFriends|Boolean|ユーザーによる Game Center での友達の追加を禁止するかどうかを示します。|
@@ -90,7 +95,7 @@ ms.locfileid: "29410890"
 |hostPairingBlocked|Boolean|iOS デバイスが監視モードのときに、iOS デバイスがペアリングできるデバイスをホスト ペアリングで制御できるようにするかどうかを示します。|
 |iBooksStoreBlocked|Boolean|デバイスが監視モードのときに、ユーザーによる iBooks Store の使用を禁止するかどうかを示します。|
 |iBooksStoreBlockErotica|Boolean|アダルトのフラグが付いている iBookstore からのメディアのダウンロードをブロックするかどうかを示します。|
-|iCloudBlockActivityContinuation|Boolean|iOS デバイスで起動した作業の、別の iOS デバイスまたは macOS デバイスでの継続実施をブロックするかどうかを示します。|
+|iCloudBlockActivityContinuation|ブール型|iOS デバイスで起動した作業の、別の iOS デバイスまたは macOS デバイスでの継続実施をブロックするかどうかを示します。|
 |iCloudBlockBackup|Boolean|iCloud バックアップを禁止するかどうかを示します。|
 |iCloudBlockDocumentSync|Boolean|iCloud のドキュメントの同期を禁止するかどうかを示します。|
 |iCloudBlockManagedAppsSync|Boolean|管理対象アプリのクラウドの同期を禁止するかどうかを示します。|
@@ -119,7 +124,7 @@ ms.locfileid: "29410890"
 |kioskModeBlockVolumeButtons|Boolean|キオスク モード中にボリューム ボタンをブロックするかどうかを示します。|
 |kioskModeAllowZoomSettings|Boolean|キオスク モード時のズーム設定へのアクセスを許可するかどうかを示します。|
 |kioskModeAppStoreUrl|String|キオスク モード用に使用するアプリへの、App Store 内の URL。 KioskModeManagedAppId が不明な場合に使用します。|
-|kioskModeBuiltInAppId|String|キオスク モードを使用する組み込みアプリケーションの ID です。 KioskModeManagedAppId と KioskModeAppStoreUrl が設定されていない場合に使用します。|
+|kioskModeBuiltInAppId|String|キオスクモード用に使用する組み込みアプリの ID。 KioskModeManagedAppId および KioskModeAppStoreUrl が設定されていない場合に使用します。|
 |kioskModeRequireAssistiveTouch|Boolean|キオスク モード時に Assistive Touch が必要かどうかを示します。|
 |kioskModeRequireColorInversion|Boolean|キオスク モード時に色反転が必要かどうかを示します。|
 |kioskModeRequireMonoAudio|Boolean|キオスク モード時にモノラル オーディオが必要かどうかを示します。|
@@ -140,7 +145,7 @@ ms.locfileid: "29410890"
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune-deviceconfig-mediacontentratingunitedkingdom.md)|メディア コンテンツの評価の設定 (英国向け)|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune-deviceconfig-mediacontentratingunitedstates.md)|メディア コンテンツの評価の設定 (米国向け)|
 |networkUsageRules|[iosNetworkUsageRule](../resources/intune-deviceconfig-iosnetworkusagerule.md) コレクション|管理対象アプリと、それらに適用されるネットワーク ルールのリストです。 このコレクションには、最大で 1000 個の要素を含めることができます。|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|メディア コンテンツのアプリケーションの設定を評価します。 使用可能な値: `allAllowed`、`allBlocked`、`agesAbove4`、`agesAbove9`、`agesAbove12`、`agesAbove17`。|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|アプリのメディアコンテンツの評価の設定。 使用可能な値: `allAllowed`、`allBlocked`、`agesAbove4`、`agesAbove9`、`agesAbove12`、`agesAbove17`。|
 |messagesBlocked|Boolean|ユーザーによる監視対象デバイスでのメッセージ アプリの使用を禁止するかどうかを示します。|
 |notificationsBlockSettingsModification|Boolean|通知の設定の変更を許可するかどうかを示します (iOS 9.3 以降)。|
 |passcodeBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
@@ -154,9 +159,10 @@ ms.locfileid: "29410890"
 |passcodeMinimumCharacterSetCount|Int32|パスコードが含まなければならない文字セットの数。 有効な値は 0 から 4 までです|
 |passcodePreviousPasscodeBlockCount|Int32|ブロックする、以前のパスコードの数。 有効な値は 1 から 24 までです|
 |passcodeSignInFailureCountBeforeWipe|Int32|デバイスをワイプするまでの、失敗が許可されるサインインの回数。 有効な値は 4 から 11 までです|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passcodeRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
 |podcastsBlocked|Boolean|ユーザーによる監視対象デバイスでのポッドキャストの使用を禁止するかどうかを示します (iOS 8.0 以降)。|
+|proximityBlockSetupToNewDevice|Boolean|監視対象デバイスで近くのデバイスをセットアップするためのプロンプトを有効にするかどうかを示します。|
 |safariBlockAutofill|Boolean|ユーザーによる Safari での自動入力の使用を禁止するかどうかを示します。|
 |safariBlockJavaScript|Boolean|Safari 内で JavaScript をブロックするかどうかを示します。|
 |safariBlockPopups|Boolean|Safari 内でポップアップをブロックするかどうかを示します。|
@@ -170,30 +176,32 @@ ms.locfileid: "29410890"
 |siriBlockedWhenLocked|Boolean|ロックされている場合に、ユーザーによる Siri の使用を禁止するかどうかを示します。|
 |siriBlockUserGeneratedContent|Boolean|監視対象デバイスでの使用時に、Siri による、ユーザー生成コンテンツに対するクエリの実行をブロックするかどうかを示します。|
 |siriRequireProfanityFilter|Boolean|Siri が監視対象デバイスで不適切な言葉をディクテーションまたは読み上げないようにするかどうかを示します。|
+|softwareUpdatesEnforcedDelayInDays|Int32|監視対象デバイスに対してソフトウェア更新プログラムが delyed される日数を設定します。 有効な値は 0 から 90 までです|
+|ソフトウェアの更新 force延期|Boolean|デバイスが監視モードのときに、ユーザーのソフトウェア更新プログラムの表示を延期するかどうかを示します。|
 |spotlightBlockInternetResults|Boolean|監視対象デバイスで Spotlight 検索がインターネットでの結果を返すのをブロックするかどうかを示します。|
 |voiceDialingBlocked|Boolean|音声ダイヤルをブロックするかどうかを示します。|
 |wallpaperBlockModification|Boolean|監視対象デバイスでの壁紙の変更を許可するかどうかを示します (iOS 9.0 以降)。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|デバイスが監視モードのときに、構成プロファイルからの Wi-Fi ネットワークのみを使用するようデバイスに強制するかどうかを示します。|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|かどうか、受講者用の教室を使用してアンマネージのコースに登録されているアクセス許可を要求、教師コース (iOS 11.3 とそれ以降) のままにしようとしていますを示します。|
-|keychainBlockCloudSync|Boolean|ICloud キーチェーンの同期をブロックするかどうかを示します。|
-|pkiBlockOTAUpdates|Boolean|地上の PKI の更新プログラムがブロックされているかどうかを示します。 False の場合、CRL および OCSP のチェック (iOS 7.0 およびそれ以降) は無効に、この制限を設定します。|
-|privacyForceLimitAdTracking|Boolean|広告の追跡が限られたかどうかを示します。(iOS から 7.0 およびそれ以降)。|
-|enterpriseBookBlockBackup|Boolean|企業がバックアップを予約するかどうかがブロックされていることを示します。|
-|enterpriseBookBlockMetadataSync|Boolean|エンタープライズ帳に関する注意事項を示し、同期がブロックされているかどうかを示します。|
-|airPrintBlocked|Boolean|AirPrint がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
-|airPrintBlockCredentialsStorage|Boolean|ユーザー名とパスワードの Airprint のキーチェーンの記憶域がブロックされている (iOS 11.0 とそれ以降) かどうかを示します。|
-|airPrintForceTrustedTLS|Boolean|信頼された証明書が TLS 印刷通信 (iOS 11.0 とそれ以降) に必要なかどうかを示します。|
-|airPrintBlockiBeaconDiscovery|Boolean|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
-|blockSystemAppRemoval|Boolean|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
-|vpnBlockCreation|Boolean|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
-|appRemovalBlocked|Boolean|アプリの削除を許可するかを示します。|
-|usbRestrictedModeBlocked|Boolean|デバイスがロックされている間、USB アクセサリへの接続が許可されるかどうかを示します (iOS 11.4.1 以降)。|
-|passwordBlockAutoFill|Boolean|かどうかは、オートフィルのパスワードが有効になって (iOS 12.0 とそれ以降) を示します。|
-|passwordBlockProximityRequests|Boolean|(IOS 12.0 とそれ以降) の近くにあるデバイスからパスワードを要求をブロックするかどうかを示します。|
-|passwordBlockAirDropSharing|Boolean|示します AirDrop のパスワード機能 iOS 12.0 とそれ以降では、共有パスワードをブロックするかどうか)。|
-|dateAndTimeForceSetAutomatically|Boolean|かどうかの日付と時刻] 設定に自動的に"機能が有効し、することはできません、無効になってユーザー (iOS 12.0 とそれ以降) を示します。|
-|contactsAllowManagedToUnmanagedWrite|Boolean|アプリケーションは、アンマネージの連絡先のアカウント (iOS 12.0 とそれ以降) に連絡先を書き込むことが管理するかどうかを示します。|
-|contactsAllowUnmanagedToManagedRead|Boolean|かどうかアンマネージ アプリケーションから読み取ることがマネージ メンバー アカウント (iOS 12.0 以降) を示します。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|教室経由で管理されていないコースに登録された学生が、コースを離れるときに教師にアクセス許可を要求するかどうかを示します (iOS 11.3 以降)。|
+|keychainBlockCloudSync|Boolean|iCloud のキーチェーン同期がブロックされるかどうかを示します。|
+|pkiBlockOTAUpdates|Boolean|空軍の PKI 更新がブロックされるかどうかを示します。 この制限を false に設定しても、CRL および OCSP チェック (iOS 7.0 以降) は無効になりません。|
+|privacyforcelimitadtracking|Boolean|ad の追跡が制限されているかどうかを示します。(iOS 7.0 以降)。|
+|enterprisebookblockbackup|Boolean|エンタープライズブックのバックアップがブロックされるかどうかを示します。|
+|enterprisebookblockmetadatasync|Boolean|エンタープライズブックのメモと強調表示の同期がブロックされているかどうかを示します。|
+|airPrintBlocked|Boolean|放映印刷をブロックするかどうかを示します (iOS 11.0 以降)。|
+|airPrintBlockCredentialsStorage|Boolean|放映された印刷に対して、ユーザー名とパスワードのキーチェーンストレージをブロックするかどうかを示します (iOS 11.0 以降)。|
+|airPrintForceTrustedTLS|Boolean|TLS 印刷通信 (iOS 11.0 以降) に対して信頼できる証明書が必要かどうかを示します。|
+|airPrintBlockiBeaconDiscovery|Boolean|放映された印刷プリンターの ibeacon 検出をブロックするかどうかを示します。 これにより、ネットワークトラフィック (iOS 11.0 以降) では、フィッシングからの Bluetooth ビーコンを誤って印刷することがなくなります。|
+|blocksystemappremoval 削除|Boolean|デバイスからのシステムアプリの削除が、監視対象デバイスでブロックされているかどうかを示します (iOS 11.0 以降)。|
+|vpnblockcreation 作成|Boolean|VPN 構成の作成がブロックされるかどうかを示します (iOS 11.0 以降)。|
+|appRemovalBlocked|Boolean|アプリの削除が許可されているかどうかを示します。|
+|usbRestrictedModeBlocked|Boolean|デバイスがロックされているときに USB アクセサリへの接続が許可されるかどうかを示します (iOS 11.4.1 以降)。|
+|passwordblockautofill フィル|Boolean|パスワードのオートフィル機能が許可されているかどうかを示します (iOS 12.0 以降)。|
+|passwordBlockProximityRequests|Boolean|近くのデバイスからのパスワードの要求をブロックするかどうかを示します (iOS 12.0 以降)。|
+|passwordblockエア drop共有|Boolean|通話ドロップパスワード機能 iOS 12.0 以降) でのパスワードの共有を禁止するかどうかを示します。|
+|dateandtimeforcesetautomatically に|Boolean|ユーザーが日付と時刻を自動的に設定する機能が有効であるかどうか、およびユーザーが無効にすることができないかどうかを示します (iOS 12.0 以降)。|
+|contactsAllowManagedToUnmanagedWrite|Boolean|管理対象アプリが、管理されていない連絡先アカウントに連絡先を書き込むことができるかどうかを示します (iOS 12.0 以降)。|
+|contactsAllowUnmanagedToManagedRead|Boolean|管理対象外アプリが管理された連絡先から読み取ることができるかどうかを示します (iOS 12.0 以降)。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -201,7 +209,7 @@ ms.locfileid: "29410890"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) コレクション|デバイスごとのデバイス構成のインストール状況。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
@@ -259,16 +267,20 @@ ms.locfileid: "29410890"
   "appStoreBlockInAppPurchases": true,
   "appStoreBlockUIAppInstallation": true,
   "appStoreRequirePassword": true,
+  "autoFillForceAuthentication": true,
   "bluetoothBlockModification": true,
   "cameraBlocked": true,
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
   "cellularBlockPersonalHotspot": true,
+  "cellularBlockPlanModification": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
   "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true,
   "compliantAppsList": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -293,6 +305,7 @@ ms.locfileid: "29410890"
   ],
   "enterpriseAppBlockTrust": true,
   "enterpriseAppBlockTrustModification": true,
+  "esimBlockModification": true,
   "faceTimeBlocked": true,
   "findMyFriendsBlocked": true,
   "gamingBlockGameCenterFriends": true,
@@ -419,6 +432,7 @@ ms.locfileid: "29410890"
   "passcodeRequiredType": "String",
   "passcodeRequired": true,
   "podcastsBlocked": true,
+  "proximityBlockSetupToNewDevice": true,
   "safariBlockAutofill": true,
   "safariBlockJavaScript": true,
   "safariBlockPopups": true,
@@ -436,6 +450,8 @@ ms.locfileid: "29410890"
   "siriBlockedWhenLocked": true,
   "siriBlockUserGeneratedContent": true,
   "siriRequireProfanityFilter": true,
+  "softwareUpdatesEnforcedDelayInDays": 1024,
+  "softwareUpdatesForceDelayed": true,
   "spotlightBlockInternetResults": true,
   "voiceDialingBlocked": true,
   "wallpaperBlockModification": true,

@@ -1,38 +1,38 @@
 ---
-title: resultantAppStateDetail 列挙型
-description: アプリケーションが特定には理由について、列挙型を示す追加の詳細は、状態をインストールします。
-localization_priority: Normal
+title: resultの appstatedetail 列挙型
+description: 列挙アプリケーションが特定のインストール状態を持っている理由に関する追加の詳細を示しています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b4d885f9ed2a23669bc2e30c91de40af8d915b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8d6b7e6a665229d02033cd1c0c25469a83dfc37d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410239"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167215"
 ---
-# <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 列挙型
+# <a name="resultantappstatedetail-enum-type"></a>resultの appstatedetail 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーションが特定には理由について、列挙型を示す追加の詳細は、状態をインストールします。
+列挙アプリケーションが特定のインストール状態を持っている理由に関する追加の詳細を示しています。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|noAdditionalDetails|0|追加の詳細情報は利用できません。|
-|seeInstallErrorCode|2000|アプリケーションは、インストールに失敗しました。 詳細についてはエラー コードのプロパティを参照してください。|
-|seeUninstallErrorCode|4000|アプリケーションをアンインストールできませんでした。 詳細についてはエラー コードのプロパティを参照してください。|
-|pendingReboot|5000|アプリケーションのインストールを完了するには、デバイスを再起動する必要があります。|
-|platformNotApplicable|-1006|アプリケーションがこのプラットフォームに適用可能ではありません。 (例: Android アプリ IOS を対象とした)|
-|minimumCpuSpeedNotMet|-1005|ターゲット ・ デバイスの CPU 速度は、構成されている最小値より小さいです。|
-|minimumLogicalProcessorCountNotMet|-1004|ターゲット ・ デバイス上の論理プロセッサの数は、構成されている最小値より小さいです。|
-|minimumPhysicalMemoryNotMet|-1003|ターゲット ・ デバイスの RAM の容量は、構成されている最小値より小さいです。|
-|minimumOsVersionNotMet|-1002|ターゲット ・ デバイス上の OS バージョンは、構成されている最小値より小さいです。|
-|minimumDiskSpaceNotMet|-1001|ターゲット ・ デバイス上の空きディスク領域は、構成されている最小値より小さいです。|
-|processorArchitectureNotApplicable|-1000|デバイス アーキテクチャ (例: x86 と amd64) は、アプリケーションに適用可能ではありません。|
+|noadditionaldetails|.0|追加の詳細情報は利用できません。|
+|参照 installerrorcode|2000|アプリケーションをインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|
+|未確認のエラーを参照|4000|アプリケーションをアンインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|
+|pendingreboot|5000|アプリケーションのインストールを完了するには、デバイスを再起動する必要があります。|
+|platformnotapplicable|-1006|アプリケーションはこのプラットフォームには適用できません。 (IOS を対象とした Android アプリなど)|
+|minimumcpuspeednotmet れている|-1005|ターゲットデバイスの CPU 速度が構成されている最小値を下回っています。|
+|minimumlogicalprocessorcountnotmet れた|-1004|ターゲットデバイス上の論理プロセッサ数が構成されている最小値を下回っています。|
+|minimumphysicalmemorynotmet|-1003|ターゲットデバイスの RAM の容量が構成されている最小値を下回っています。|
+|minimumOsVersionNotMet|-1002|ターゲットデバイスの OS のバージョンが、構成されている最小値を下回っています。|
+|minimumdiskん enot満たさ|-1001|ターゲットデバイスの使用可能なディスク領域が構成されている最小値を下回っています。|
+|プロセッサアーキテクチャ (該当する場合)|-1000|デバイスアーキテクチャ (x86/amd64 など) は、アプリケーションには適用されません。|
 
 
 

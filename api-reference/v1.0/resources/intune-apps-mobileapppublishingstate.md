@@ -1,27 +1,28 @@
 ---
 title: mobileAppPublishingState 列挙型
-description: アプリケーションの発行状態を示します。
+description: アプリの発行状態を示します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937762"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263393"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーションの発行状態を示します。
+アプリの発行状態を示します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notPublished|0|アプリケーションはまだ公開されていません。|
-|処理|1|アプリケーションは、サービス側の処理を保留中です。|
-|公開|2|アプリケーションが発行されます。|
+|notpublished|.0|アプリはまだ公開されていません。|
+|処理|1-d|アプリは、サービス側の処理を保留しています。|
+|公開|pbm-2|アプリが発行されます。|
 
 
 

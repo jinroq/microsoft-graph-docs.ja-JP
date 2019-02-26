@@ -1,23 +1,23 @@
 ---
-title: managedDeviceReportedApp リソースの種類
-description: 報告のためのアプリケーション データ
-localization_priority: Normal
+title: manageddevicereportedapp リソースの種類
+description: レポート用のアプリケーションデータ
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 104503083f5f599bc366de2ca8082fd9fdf3102e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e1cd99974259835859cf8a2fc6a9f197c09d4d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422608"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166270"
 ---
-# <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp リソースの種類
+# <a name="manageddevicereportedapp-resource-type"></a>manageddevicereportedapp リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-報告のためのアプリケーション データ
+レポート用のアプリケーションデータ
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

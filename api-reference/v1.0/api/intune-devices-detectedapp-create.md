@@ -3,21 +3,22 @@ title: detectedApp の作成
 description: 新しい detectedApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a30ec97009099f7102362ed5cae3eac2aeeaee93
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6d8d3dd82c5c45fbb1cf69fa9067e73e830f064c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957355"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263540"
 ---
 # <a name="create-detectedapp"></a>detectedApp の作成
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、detectedApp オブジェクトの JSON 表記を指定します。
@@ -47,9 +48,9 @@ POST /deviceManagement/detectedApps
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
-|displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
-|version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
+|id|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|String|検出されたアプリケーションの名前。 読み取り専用|
+|version|String|検出されたアプリケーションのバージョン。 読み取り専用|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 
@@ -59,6 +60,7 @@ POST /deviceManagement/detectedApps
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

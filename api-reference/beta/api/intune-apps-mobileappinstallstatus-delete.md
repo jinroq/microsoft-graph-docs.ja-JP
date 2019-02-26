@@ -1,23 +1,23 @@
 ---
-title: MobileAppInstallStatus を削除します。
-description: MobileAppInstallStatus を削除します。
-localization_priority: Normal
+title: mobileAppInstallStatus の削除
+description: mobileAppInstallStatus を削除します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 664a65bff49e467adbe3b5cd23b39acd3d0e9e35
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f26960a07833c2c2e25be28b72072bc2755b9ba
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165297"
 ---
-# <a name="delete-mobileappinstallstatus"></a>MobileAppInstallStatus を削除します。
+# <a name="delete-mobileappinstallstatus"></a>mobileAppInstallStatus の削除
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-の[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)を削除します。
+[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstal
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

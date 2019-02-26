@@ -3,19 +3,20 @@ title: onPremisesConditionalAccessSettings リソースの種類
 description: テナントの Exchange OnPremises 条件付きアクセス設定を表す単一エンティティ。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4d39d7da372c562c12dd15c702d7f7e6f161a67a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f307b137a39323e5e3c6b644602b1c0df3ab5512
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970291"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262280"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 テナントの Exchange OnPremises 条件付きアクセス設定を表す単一エンティティ。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -25,14 +26,15 @@ ms.locfileid: "27970291"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|まだ文書化されていません|
-|enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|id|String|まだ文書化されていません|
+|enabled|ブール型|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|Boolean|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

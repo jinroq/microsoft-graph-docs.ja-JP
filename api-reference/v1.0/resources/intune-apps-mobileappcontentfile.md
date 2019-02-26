@@ -3,19 +3,20 @@ title: mobileAppContentFile リソース タイプ
 description: 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6f745367a61a61511cdab35e556538631fa93962
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f8edeebdc3df12d3e1a458ae57e805052e47e3d8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986090"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262294"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile リソース タイプ
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -28,7 +29,7 @@ ms.locfileid: "27986090"
 |[renewUpload action](../api/intune-apps-mobileappcontentfile-renewupload.md)|なし|アプリケーション ファイルのアップロード用の SAS URI を更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
@@ -43,6 +44,7 @@ ms.locfileid: "27986090"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

@@ -3,19 +3,20 @@ title: deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種�
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 26eb1eb09ea4a32739794be9fea582ad3f790d44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929145"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260992"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
+
 
 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) からの継承
 
@@ -31,7 +32,7 @@ ms.locfileid: "27929145"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
@@ -40,16 +41,16 @@ ms.locfileid: "27929145"
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |pinMinimumLength|Int32|まだ文書化されていません|
 |pinMaximumLength|Int32|まだ文書化されていません|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|state|[有効化](../resources/intune-onboarding-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
+|state|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
 |securityDeviceRequired|Boolean|まだ文書化されていません|
 |unlockWithBiometricsEnabled|Boolean|まだ文書化されていません|
 |remotePassportEnabled|Boolean|まだ文書化されていません|
 |pinPreviousBlockCount|Int32|まだ文書化されていません|
 |pinExpirationInDays|Int32|まだ文書化されていません|
-|enhancedBiometricsState|[有効化](../resources/intune-onboarding-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|enhancedBiometricsState|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 ## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|

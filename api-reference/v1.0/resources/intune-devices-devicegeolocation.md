@@ -3,33 +3,35 @@ title: deviceGeoLocation リソースの種類
 description: デバイスの場所
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 248af3f66a78e3197a3f966225e864f5583f8597
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b51768aea1338486431ceffadd95f8760a7216ab
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940954"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260215"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスの場所
+
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
-|longitude|Double|デバイスの場所の経度座標|
-|latitude|Double|デバイスの場所の緯度座標|
-|altitude|Double|海抜標高 (メートル単位)|
-|horizontalAccuracy|Double|経度と緯度の精度 (メートル単位)|
-|verticalAccuracy|Double|標高の精度 (メートル単位)|
-|heading|Double|真北を基準とする方角|
+|longitude|倍精度浮動小数点数|デバイスの場所の経度座標|
+|latitude|倍精度浮動小数点数|デバイスの場所の緯度座標|
+|altitude|倍精度浮動小数点数|海抜標高 (メートル単位)|
+|horizontalAccuracy|倍精度浮動小数点数|経度と緯度の精度 (メートル単位)|
+|verticalAccuracy|倍精度浮動小数点数|標高の精度 (メートル単位)|
+|heading|倍精度浮動小数点数|真北を基準とする方角|
 |speed|Double|デバイスの移動速度 (m/秒)|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

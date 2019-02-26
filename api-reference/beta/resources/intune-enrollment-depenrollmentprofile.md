@@ -1,70 +1,70 @@
 ---
 title: depEnrollmentProfile リソースの種類
-description: DepEnrollmentProfile リソースでは、アップル デバイスの登録プログラム (DEP) の登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
-localization_priority: Normal
+description: depEnrollmentProfile リソースは、Apple Device enrollment program (DEP) 登録プロファイルを表します。 この種類のプロファイルは、対応するデバイスが dep を使用して登録できるようになる前に、Apple DEP シリアル番号に割り当てる必要があります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61119a97deb41807e6eee66f0ef3376035500190
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0ecc14dcd7cf2d171259c76592352ff13bb6ed1d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395903"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166424"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-DepEnrollmentProfile リソースでは、アップル デバイスの登録プログラム (DEP) の登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
+depEnrollmentProfile リソースは、Apple Device enrollment program (DEP) 登録プロファイルを表します。 この種類のプロファイルは、対応するデバイスが dep を使用して登録できるようになる前に、Apple DEP シリアル番号に割り当てる必要があります。
 
 
-[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承します。
+[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)コレクション|[DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[DepEnrollmentProfile を取得します。](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|[DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティと関係を参照してください。|
-|[DepEnrollmentProfile を作成します。](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|新しい[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトを作成します。|
-|[DepEnrollmentProfile を削除します。](../api/intune-enrollment-depenrollmentprofile-delete.md)|なし|の[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)を削除します。|
-|[DepEnrollmentProfile を更新します。](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|[DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティを更新します。|
+|[リスト depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)コレクション|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[depEnrollmentProfile を取得する](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[depEnrollmentProfile を作成する](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|新しい[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトを作成します。|
+|[depEnrollmentProfile の削除](../api/intune-enrollment-depenrollmentprofile-delete.md)|なし|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)を削除します。|
+|[depEnrollmentProfile の更新](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
-|displayName|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの名前|
-|説明|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの説明|
-|requiresUserAuthentication|Boolean|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
-|configurationEndpointUrl|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から登録の継承を使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|Boolean|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|継承セットアップ アシスタントが登録されているデバイスは、 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)からの会社のポータルが必要であることを示します。|
-|isDefault|Boolean|これは、既定のプロファイルであるかどうかを示します|
-|supervisedModeEnabled|Boolean|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。|
-|supportDepartment|String|サポート部門の情報|
-|passCodeDisabled|Boolean|パスコードの設定] ウィンドウが無効になっているかどうかを示します|
-|isMandatory|Boolean|プロファイルが必須かどうかを|
-|locationDisabled|Boolean|場所サービス セットアップ] ウィンドウが無効になっているかどうかを示します|
+|id|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
+|displayName|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの名前|
+|説明|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
+|requiresUserAuthentication|Boolean|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
+|configurationendpointurl|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
+|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
+|isDefault|Boolean|これが既定のプロファイルであるかどうかを示します|
+|supervisedModeEnabled|Boolean|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
+|supportdepartment|String|サポート部門の情報|
+|pass codedisabled|Boolean|パスコードセットアップウィンドウが無効であるかどうかを示します|
+|ismandatory|Boolean|プロファイルが必須であるかどうかを示します|
+|locationdisabled|Boolean|場所サービスの設定ウィンドウが無効であるかどうかを示します|
 |supportPhoneNumber|String|サポート電話番号|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|ITunes のペアリング モードを示します。 可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|iTunes ペアリングモードを示します。 可能な値は `disallow`、`allow`、`requiresCertificate` です。|
 |profileRemovalDisabled|Boolean|プロファイルの削除オプションが無効になっているかどうかを示します|
-|managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の証明書を管理|
-|restoreBlocked|Boolean|復元の設定] ウィンドウがブロックされていることを示します。|
-|restoreFromAndroidDisabled|Boolean|Android からの復元が無効になっているかどうかを示します|
-|appleIdDisabled|Boolean|Apple id の設定] ウィンドウが無効になっているかどうかを示します|
-|termsAndConditionsDisabled|Boolean|'条項および条件' の設定ウィンドウが無効になっているかどうかを示します|
-|touchIdDisabled|Boolean|タッチ id の設定] ウィンドウが無効になっているかどうかを示します|
-|applePayDisabled|Boolean|アップル支払設定] ウィンドウが無効になっているかどうかを示します|
-|zoomDisabled|Boolean|ズームの設定] ウィンドウが無効になっているかどうかを示します|
-|siriDisabled|Boolean|Siri の設定] ウィンドウが無効になっているかどうかを示します|
-|diagnosticsDisabled|Boolean|診断設定] ウィンドウが無効になっているかどうかを示します|
-|macOSRegistrationDisabled|Boolean|Mac OS の登録が無効になっているかどうかを示します|
-|macOSFileVaultDisabled|Boolean|Mac OS ファイルのボルトが無効になっているかどうかを示します|
-|awaitDeviceConfiguredConfirmation|Boolean|デバイスが構成されている確認メッセージを待機する必要がかどうかを示します|
-|sharedIPadMaximumUserCount|Int32|共有の iPad を使用できるユーザーの最大数を指定します。 IPad を共有モードでのみ適用できます。|
-|enableSharedIPad|Boolean|これは、デバイスが、マルチ ユーザー シナリオを有効にするモードに登録するかどうかを示します。 共有台もの Ipad でのみ適用できます。|
+|managementcertificates|[managementcertificatewiththumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の管理証明書|
+|restoreblocked|Boolean|セットアップウィンドウの復元がブロックされているかどうかを示します|
+|restoreFromAndroidDisabled|Boolean|Android からの復元が無効であるかどうかを示します|
+|りんご eiddisabled|Boolean|Apple id のセットアップウィンドウが無効であるかどうかを示します|
+|termsAndConditionsDisabled|Boolean|[使用条件] セットアップウィンドウが無効かどうかを示します|
+|touchIdDisabled|Boolean|タッチ id のセットアップウィンドウが無効であるかどうかを示します|
+|applePayDisabled|Boolean|Apple の支払い設定ウィンドウが無効であるかどうかを示します|
+|zoomDisabled|Boolean|ズーム設定ウィンドウが無効であるかどうかを示します|
+|siridisabled|Boolean|siri セットアップウィンドウが無効であるかどうかを示します|
+|diagnosticsDisabled|Boolean|診断セットアップウィンドウが無効であるかどうかを示します|
+|macosregistrationdisabled|Boolean|Mac OS 登録が無効であるかどうかを示します|
+|macOSFileVaultDisabled|Boolean|Mac OS ファイルボルトが無効であるかどうかを示します|
+|awaitDeviceConfiguredConfirmation|Boolean|構成済みの確認をデバイスが待機する必要があるかどうかを示します|
+|sharedIPadMaximumUserCount|Int32|これにより、共有 iPad を使用できるユーザーの最大数が指定されます。 共有 iPad モードでのみ適用されます。|
+|enableSharedIPad|Boolean|これは、デバイスを、複数のユーザーシナリオを有効にするモードで登録するかどうかを示します。 共有 ipad にのみ適用されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

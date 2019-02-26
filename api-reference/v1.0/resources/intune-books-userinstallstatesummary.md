@@ -3,19 +3,20 @@ title: userInstallStateSummary リソースの種類
 description: ユーザーのインストール状態の要約のプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 82782be90b0d9cda70def3a2e6d41ba1d76794a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5e7c219ef2128f6d15a0efc6e98ec781e2c47ffe
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955381"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262574"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ユーザーのインストール状態の要約のプロパティが含まれています。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -28,7 +29,7 @@ ms.locfileid: "27955381"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
 |failedDeviceCount|Int32|失敗したデバイスの数です。|

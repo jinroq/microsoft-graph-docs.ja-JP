@@ -1,21 +1,21 @@
 ---
 title: iosVppEBook の作成
 description: 新しい iosVppEBook オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf780e1bc3bcb15392a6f2a1b164ef3c94ab1cc2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409756"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165220"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/managedEBooks
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iosVppEBook オブジェクトの JSON 表記を指定します。
@@ -52,8 +52,8 @@ POST /deviceAppManagement/managedEBooks
 |:---|:---|:---|
 |id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|説明|String|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|publisher|String|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|説明|文字列|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|publisher|文字列型 (String)|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
@@ -61,14 +61,14 @@ POST /deviceAppManagement/managedEBooks
 |informationUrl|String|詳細情報の URL。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |vppTokenId|Guid|Vpp トークン ID。|
-|appleId|String|Vpp トークンに関連付けられている Apple ID。|
+|appleId|文字列|Vpp トークンに関連付けられている Apple ID。|
 |vppOrganizationName|String|Vpp トークンの組織の名前。|
 |genres|String コレクション|ジャンル。|
 |language|String|言語。|
 |seller|String|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 

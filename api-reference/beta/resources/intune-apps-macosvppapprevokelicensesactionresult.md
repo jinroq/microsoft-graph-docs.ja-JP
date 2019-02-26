@@ -1,34 +1,34 @@
 ---
 title: macOsVppAppRevokeLicensesActionResult リソースの種類
-description: ActionResult の継承されたプロパティが含まれています、MacOS Vpp のアプリケーションでの操作の結果を定義します。
-localization_priority: Normal
+description: MacOS Vpp アプリでのアクションの結果を定義します。 actionresult の継承されたプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f90bd55476bbbb48ab3a4904886a67b217ab67b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7cf8390dc2c1541525e288b81defd073144f4132
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430282"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166508"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ActionResult の継承されたプロパティが含まれています、MacOS Vpp のアプリケーションでの操作の結果を定義します。
+MacOS Vpp アプリでのアクションの結果を定義します。 actionresult の継承されたプロパティが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|userId|String|アクションに関連付けられているユーザーの Id。|
-|managedDeviceId|String|DeviceId はアクションに関連付けられています。|
-|totalLicensesCount|Int32|取り消しが実行しようとするライセンス数のカウントです。|
-|failedLicensesCount|Int32|失敗する revoke のライセンス数のカウントです。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|取り消しライセンス操作が失敗した理由です。 可能な値は、`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate` です。|
-|actionName|文字列型 (String)|アクション名|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|userId|String|アクションに関連付けられている UserId。|
+|manageddeviceid|String|アクションに関連付けられている DeviceId。|
+|合計の合計数|Int32|取り消しが試行されたライセンスの数。|
+|failedLicensesCount|Int32|失効に失敗したライセンスの数。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|失効ライセンスの処理の失敗の理由。 可能な値は、`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate` です。|
+|actionName|String|アクション名|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 

@@ -1,29 +1,30 @@
 ---
-title: applicationGuardBlockClipboardSharingType 列挙型
-description: ApplicationGuardBlockClipboardSharingType に指定できる値
+title: applicationgu/blockクリップの sharingtype 列挙型
+description: applicationgu/blockblocksharingsharingtype に指定できる値
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7dacce6dbe91a2bbc76b52795bc20de4cf0e5f71
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f3d1b5132773bb0bf92f35c39b660726d7a1ef66
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911883"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261860"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 列挙型
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationgu/blockクリップの sharingtype 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ApplicationGuardBlockClipboardSharingType に指定できる値
+applicationgu/blockblocksharingsharingtype に指定できる値
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|0|構成されていません|
-|blockBoth|1|ブロックのクリップボード データのコンテナーにホストとホスト コンテナーの両方を共有するには|
-|blockHostToContainer|2|コンテナーにホストからのデータを共有するためのブロックのクリップボード|
-|blockContainerToHost|3|コンテナーからホストへのデータを共有するためのブロックのクリップボード|
-|blockNone|4|ブロックのクリップボード データのコンテナーにホストもホストするためのコンテナーを共有するには|
+|notConfigured|.0|未構成|
+|blockboth|1-d|ホストからコンテナーへ、およびコンテナーからホストへのデータの共有をブロックするクリップボード|
+|blockhosttocontainer|pbm-2|データをホストからコンテナーに共有するためのクリップボードをブロックする|
+|blockContainerToHost|1/3|コンテナーからホストへのデータを共有するためのクリップボードをブロックする|
+|blocknone|2/4|データをホストからコンテナーにも、コンテナーからホストへも共有しないようにクリップボードをブロックする|
 
 
 

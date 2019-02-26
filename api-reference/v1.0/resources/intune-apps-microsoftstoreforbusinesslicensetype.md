@@ -1,26 +1,27 @@
 ---
-title: microsoftStoreForBusinessLicenseType 列挙型
+title: microsoft storeforbusinesslicensetype 列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c4b768543515ac8866ea49dfc77e7b5b83648f94
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 74ff5841dc007c2e3f79c641cb26414e8e59413b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951587"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259963"
 ---
-# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 列挙型
+# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoft storeforbusinesslicensetype 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|オフライン|0|まだ文書化されていません|
-|オンライン|1|まだ文書化されていません|
+|オフライン|.0|まだ文書化されていません|
+|オンライン|1-d|まだ文書化されていません|
 
 
 
