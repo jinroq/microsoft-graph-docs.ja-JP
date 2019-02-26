@@ -3,29 +3,30 @@ title: userInstallStateSummary の作成
 description: 新しい userInstallStateSummary オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 32f7b427143c8fa1d31302d51417c330cd3ca32d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 94b74d6619f3975b8dbdb08c96d58b54c0419392
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985908"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260138"
 ---
-# <a name="create-userinstallstatesummary"></a><span data-ttu-id="27b05-103">userInstallStateSummary の作成</span><span class="sxs-lookup"><span data-stu-id="27b05-103">Create userInstallStateSummary</span></span>
+# <a name="create-userinstallstatesummary"></a><span data-ttu-id="a22ac-103">userInstallStateSummary の作成</span><span class="sxs-lookup"><span data-stu-id="a22ac-103">Create userInstallStateSummary</span></span>
 
-> <span data-ttu-id="27b05-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="27b05-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="a22ac-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="27b05-105">新しい [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="27b05-105">Create a new [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="27b05-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="27b05-106">Prerequisites</span></span>
-<span data-ttu-id="27b05-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="27b05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a22ac-105">新しい [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="a22ac-105">Create a new [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
 
-|<span data-ttu-id="27b05-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="27b05-109">Permission type</span></span>|<span data-ttu-id="27b05-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="27b05-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="a22ac-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="a22ac-106">Prerequisites</span></span>
+<span data-ttu-id="a22ac-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a22ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="a22ac-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a22ac-109">Permission type</span></span>|<span data-ttu-id="a22ac-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a22ac-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="27b05-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="27b05-111">Delegated (work or school account)</span></span>|<span data-ttu-id="27b05-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="27b05-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="27b05-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="27b05-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="27b05-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="27b05-114">Not supported.</span></span>|
-|<span data-ttu-id="27b05-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="27b05-115">Application</span></span>|<span data-ttu-id="27b05-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="27b05-116">Not supported.</span></span>|
+|<span data-ttu-id="a22ac-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a22ac-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a22ac-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a22ac-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="a22ac-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a22ac-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a22ac-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a22ac-114">Not supported.</span></span>|
+|<span data-ttu-id="a22ac-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a22ac-115">Application</span></span>|<span data-ttu-id="a22ac-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a22ac-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="27b05-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="27b05-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a22ac-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a22ac-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,33 +35,34 @@ ms.locfileid: "27985908"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="27b05-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="27b05-118">Request headers</span></span>
-|<span data-ttu-id="27b05-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="27b05-119">Header</span></span>|<span data-ttu-id="27b05-120">値</span><span class="sxs-lookup"><span data-stu-id="27b05-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a22ac-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a22ac-118">Request headers</span></span>
+|<span data-ttu-id="a22ac-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a22ac-119">Header</span></span>|<span data-ttu-id="a22ac-120">値</span><span class="sxs-lookup"><span data-stu-id="a22ac-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="27b05-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="27b05-121">Authorization</span></span>|<span data-ttu-id="27b05-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="27b05-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="27b05-123">Accept</span><span class="sxs-lookup"><span data-stu-id="27b05-123">Accept</span></span>|<span data-ttu-id="27b05-124">application/json</span><span class="sxs-lookup"><span data-stu-id="27b05-124">application/json</span></span>|
+|<span data-ttu-id="a22ac-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a22ac-121">Authorization</span></span>|<span data-ttu-id="a22ac-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="a22ac-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a22ac-123">承諾</span><span class="sxs-lookup"><span data-stu-id="a22ac-123">Accept</span></span>|<span data-ttu-id="a22ac-124">application/json</span><span class="sxs-lookup"><span data-stu-id="a22ac-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="27b05-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="27b05-125">Request body</span></span>
-<span data-ttu-id="27b05-126">要求本文で、userInstallStateSummary オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="27b05-126">In the request body, supply a JSON representation for the userInstallStateSummary object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a22ac-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="a22ac-125">Request body</span></span>
+<span data-ttu-id="a22ac-126">要求本文で、userInstallStateSummary オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a22ac-126">In the request body, supply a JSON representation for the userInstallStateSummary object.</span></span>
 
-<span data-ttu-id="27b05-127">次の表に、userInstallStateSummary の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="27b05-127">The following table shows the properties that are required when you create the userInstallStateSummary.</span></span>
+<span data-ttu-id="a22ac-127">次の表に、userInstallStateSummary の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a22ac-127">The following table shows the properties that are required when you create the userInstallStateSummary.</span></span>
 
-|<span data-ttu-id="27b05-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="27b05-128">Property</span></span>|<span data-ttu-id="27b05-129">種類</span><span class="sxs-lookup"><span data-stu-id="27b05-129">Type</span></span>|<span data-ttu-id="27b05-130">説明</span><span class="sxs-lookup"><span data-stu-id="27b05-130">Description</span></span>|
+|<span data-ttu-id="a22ac-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a22ac-128">Property</span></span>|<span data-ttu-id="a22ac-129">型</span><span class="sxs-lookup"><span data-stu-id="a22ac-129">Type</span></span>|<span data-ttu-id="a22ac-130">説明</span><span class="sxs-lookup"><span data-stu-id="a22ac-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="27b05-131">ID</span><span class="sxs-lookup"><span data-stu-id="27b05-131">id</span></span>|<span data-ttu-id="27b05-132">String</span><span class="sxs-lookup"><span data-stu-id="27b05-132">String</span></span>|<span data-ttu-id="27b05-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="27b05-133">Key of the entity.</span></span>|
-|<span data-ttu-id="27b05-134">userName</span><span class="sxs-lookup"><span data-stu-id="27b05-134">userName</span></span>|<span data-ttu-id="27b05-135">String</span><span class="sxs-lookup"><span data-stu-id="27b05-135">String</span></span>|<span data-ttu-id="27b05-136">ユーザー名です。</span><span class="sxs-lookup"><span data-stu-id="27b05-136">User name.</span></span>|
-|<span data-ttu-id="27b05-137">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="27b05-137">installedDeviceCount</span></span>|<span data-ttu-id="27b05-138">Int32</span><span class="sxs-lookup"><span data-stu-id="27b05-138">Int32</span></span>|<span data-ttu-id="27b05-139">インストールされたデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="27b05-139">Installed Device Count.</span></span>|
-|<span data-ttu-id="27b05-140">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="27b05-140">failedDeviceCount</span></span>|<span data-ttu-id="27b05-141">Int32</span><span class="sxs-lookup"><span data-stu-id="27b05-141">Int32</span></span>|<span data-ttu-id="27b05-142">失敗したデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="27b05-142">Failed Device Count.</span></span>|
-|<span data-ttu-id="27b05-143">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="27b05-143">notInstalledDeviceCount</span></span>|<span data-ttu-id="27b05-144">Int32</span><span class="sxs-lookup"><span data-stu-id="27b05-144">Int32</span></span>|<span data-ttu-id="27b05-145">インストールされていないデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="27b05-145">Not installed device count.</span></span>|
+|<span data-ttu-id="a22ac-131">id</span><span class="sxs-lookup"><span data-stu-id="a22ac-131">id</span></span>|<span data-ttu-id="a22ac-132">String</span><span class="sxs-lookup"><span data-stu-id="a22ac-132">String</span></span>|<span data-ttu-id="a22ac-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="a22ac-133">Key of the entity.</span></span>|
+|<span data-ttu-id="a22ac-134">userName</span><span class="sxs-lookup"><span data-stu-id="a22ac-134">userName</span></span>|<span data-ttu-id="a22ac-135">String</span><span class="sxs-lookup"><span data-stu-id="a22ac-135">String</span></span>|<span data-ttu-id="a22ac-136">ユーザー名です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-136">User name.</span></span>|
+|<span data-ttu-id="a22ac-137">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="a22ac-137">installedDeviceCount</span></span>|<span data-ttu-id="a22ac-138">Int32</span><span class="sxs-lookup"><span data-stu-id="a22ac-138">Int32</span></span>|<span data-ttu-id="a22ac-139">インストールされたデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-139">Installed Device Count.</span></span>|
+|<span data-ttu-id="a22ac-140">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="a22ac-140">failedDeviceCount</span></span>|<span data-ttu-id="a22ac-141">Int32</span><span class="sxs-lookup"><span data-stu-id="a22ac-141">Int32</span></span>|<span data-ttu-id="a22ac-142">失敗したデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-142">Failed Device Count.</span></span>|
+|<span data-ttu-id="a22ac-143">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="a22ac-143">notInstalledDeviceCount</span></span>|<span data-ttu-id="a22ac-144">Int32</span><span class="sxs-lookup"><span data-stu-id="a22ac-144">Int32</span></span>|<span data-ttu-id="a22ac-145">インストールされていないデバイスの数です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-145">Not installed device count.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="27b05-146">応答</span><span class="sxs-lookup"><span data-stu-id="27b05-146">Response</span></span>
-<span data-ttu-id="27b05-147">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="27b05-147">If successful, this method returns a `201 Created` response code and a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a22ac-146">応答</span><span class="sxs-lookup"><span data-stu-id="a22ac-146">Response</span></span>
+<span data-ttu-id="a22ac-147">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a22ac-147">If successful, this method returns a `201 Created` response code and a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="27b05-148">例</span><span class="sxs-lookup"><span data-stu-id="27b05-148">Example</span></span>
-### <a name="request"></a><span data-ttu-id="27b05-149">要求</span><span class="sxs-lookup"><span data-stu-id="27b05-149">Request</span></span>
-<span data-ttu-id="27b05-150">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="27b05-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a22ac-148">例</span><span class="sxs-lookup"><span data-stu-id="a22ac-148">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="a22ac-149">要求</span><span class="sxs-lookup"><span data-stu-id="a22ac-149">Request</span></span>
+<span data-ttu-id="a22ac-150">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a22ac-150">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 Content-type: application/json
@@ -75,8 +77,8 @@ Content-length: 189
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="27b05-151">応答</span><span class="sxs-lookup"><span data-stu-id="27b05-151">Response</span></span>
-<span data-ttu-id="27b05-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="27b05-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a22ac-151">応答</span><span class="sxs-lookup"><span data-stu-id="a22ac-151">Response</span></span>
+<span data-ttu-id="a22ac-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a22ac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

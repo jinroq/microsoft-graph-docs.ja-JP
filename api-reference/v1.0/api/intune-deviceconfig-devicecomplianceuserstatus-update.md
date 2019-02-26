@@ -3,29 +3,30 @@ title: deviceComplianceUserStatus の更新
 description: deviceComplianceUserStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a3e3aced0068ceca0f364819db419eb8801a3916
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9604061eabefefb94e693917b480abc15b8ffc89
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966770"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259900"
 ---
-# <a name="update-devicecomplianceuserstatus"></a><span data-ttu-id="45de5-103">deviceComplianceUserStatus の更新</span><span class="sxs-lookup"><span data-stu-id="45de5-103">Update deviceComplianceUserStatus</span></span>
+# <a name="update-devicecomplianceuserstatus"></a><span data-ttu-id="f4778-103">deviceComplianceUserStatus の更新</span><span class="sxs-lookup"><span data-stu-id="f4778-103">Update deviceComplianceUserStatus</span></span>
 
-> <span data-ttu-id="45de5-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="45de5-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f4778-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f4778-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="45de5-105">[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="45de5-105">Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="45de5-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="45de5-106">Prerequisites</span></span>
-<span data-ttu-id="45de5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45de5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f4778-105">[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="f4778-105">Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
 
-|<span data-ttu-id="45de5-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45de5-109">Permission type</span></span>|<span data-ttu-id="45de5-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="45de5-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="f4778-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="f4778-106">Prerequisites</span></span>
+<span data-ttu-id="f4778-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4778-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="f4778-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f4778-109">Permission type</span></span>|<span data-ttu-id="f4778-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="f4778-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="45de5-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45de5-111">Delegated (work or school account)</span></span>|<span data-ttu-id="45de5-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45de5-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="45de5-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45de5-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="45de5-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45de5-114">Not supported.</span></span>|
-|<span data-ttu-id="45de5-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45de5-115">Application</span></span>|<span data-ttu-id="45de5-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45de5-116">Not supported.</span></span>|
+|<span data-ttu-id="f4778-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f4778-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f4778-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f4778-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f4778-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f4778-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f4778-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f4778-114">Not supported.</span></span>|
+|<span data-ttu-id="f4778-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f4778-115">Application</span></span>|<span data-ttu-id="f4778-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f4778-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="45de5-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45de5-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4778-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f4778-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,34 +35,35 @@ ms.locfileid: "27966770"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="45de5-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45de5-118">Request headers</span></span>
-|<span data-ttu-id="45de5-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45de5-119">Header</span></span>|<span data-ttu-id="45de5-120">値</span><span class="sxs-lookup"><span data-stu-id="45de5-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f4778-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f4778-118">Request headers</span></span>
+|<span data-ttu-id="f4778-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f4778-119">Header</span></span>|<span data-ttu-id="f4778-120">値</span><span class="sxs-lookup"><span data-stu-id="f4778-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="45de5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="45de5-121">Authorization</span></span>|<span data-ttu-id="45de5-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="45de5-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="45de5-123">Accept</span><span class="sxs-lookup"><span data-stu-id="45de5-123">Accept</span></span>|<span data-ttu-id="45de5-124">application/json</span><span class="sxs-lookup"><span data-stu-id="45de5-124">application/json</span></span>|
+|<span data-ttu-id="f4778-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4778-121">Authorization</span></span>|<span data-ttu-id="f4778-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="f4778-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f4778-123">承諾</span><span class="sxs-lookup"><span data-stu-id="f4778-123">Accept</span></span>|<span data-ttu-id="f4778-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f4778-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="45de5-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="45de5-125">Request body</span></span>
-<span data-ttu-id="45de5-126">要求本文で、[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="45de5-126">In the request body, supply a JSON representation for the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4778-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f4778-125">Request body</span></span>
+<span data-ttu-id="f4778-126">要求本文で、[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f4778-126">In the request body, supply a JSON representation for the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
 
-<span data-ttu-id="45de5-127">次の表に、[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="45de5-127">The following table shows the properties that are required when you create the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).</span></span>
+<span data-ttu-id="f4778-127">次の表に、[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="f4778-127">The following table shows the properties that are required when you create the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).</span></span>
 
-|<span data-ttu-id="45de5-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="45de5-128">Property</span></span>|<span data-ttu-id="45de5-129">種類</span><span class="sxs-lookup"><span data-stu-id="45de5-129">Type</span></span>|<span data-ttu-id="45de5-130">説明</span><span class="sxs-lookup"><span data-stu-id="45de5-130">Description</span></span>|
+|<span data-ttu-id="f4778-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f4778-128">Property</span></span>|<span data-ttu-id="f4778-129">型</span><span class="sxs-lookup"><span data-stu-id="f4778-129">Type</span></span>|<span data-ttu-id="f4778-130">説明</span><span class="sxs-lookup"><span data-stu-id="f4778-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="45de5-131">ID</span><span class="sxs-lookup"><span data-stu-id="45de5-131">id</span></span>|<span data-ttu-id="45de5-132">String</span><span class="sxs-lookup"><span data-stu-id="45de5-132">String</span></span>|<span data-ttu-id="45de5-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="45de5-133">Key of the entity.</span></span>|
-|<span data-ttu-id="45de5-134">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="45de5-134">userDisplayName</span></span>|<span data-ttu-id="45de5-135">String</span><span class="sxs-lookup"><span data-stu-id="45de5-135">String</span></span>|<span data-ttu-id="45de5-136">DevicePolicyStatus のユーザー名。</span><span class="sxs-lookup"><span data-stu-id="45de5-136">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="45de5-137">devicesCount</span><span class="sxs-lookup"><span data-stu-id="45de5-137">devicesCount</span></span>|<span data-ttu-id="45de5-138">Int32</span><span class="sxs-lookup"><span data-stu-id="45de5-138">Int32</span></span>|<span data-ttu-id="45de5-139">そのユーザーのデバイスの数。</span><span class="sxs-lookup"><span data-stu-id="45de5-139">Devices count for that user.</span></span>|
-|<span data-ttu-id="45de5-140">status</span><span class="sxs-lookup"><span data-stu-id="45de5-140">status</span></span>|[<span data-ttu-id="45de5-141">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="45de5-141">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="45de5-142">ポリシー レポートのコンプライアンスの状態。</span><span class="sxs-lookup"><span data-stu-id="45de5-142">Compliance status of the policy report.</span></span> <span data-ttu-id="45de5-143">可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。</span><span class="sxs-lookup"><span data-stu-id="45de5-143">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="45de5-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="45de5-144">lastReportedDateTime</span></span>|<span data-ttu-id="45de5-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="45de5-145">DateTimeOffset</span></span>|<span data-ttu-id="45de5-146">ポリシー レポートの最終変更日時。</span><span class="sxs-lookup"><span data-stu-id="45de5-146">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="45de5-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="45de5-147">userPrincipalName</span></span>|<span data-ttu-id="45de5-148">String</span><span class="sxs-lookup"><span data-stu-id="45de5-148">String</span></span>|<span data-ttu-id="45de5-149">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="45de5-149">UserPrincipalName.</span></span>|
+|<span data-ttu-id="f4778-131">id</span><span class="sxs-lookup"><span data-stu-id="f4778-131">id</span></span>|<span data-ttu-id="f4778-132">String</span><span class="sxs-lookup"><span data-stu-id="f4778-132">String</span></span>|<span data-ttu-id="f4778-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="f4778-133">Key of the entity.</span></span>|
+|<span data-ttu-id="f4778-134">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="f4778-134">userDisplayName</span></span>|<span data-ttu-id="f4778-135">String</span><span class="sxs-lookup"><span data-stu-id="f4778-135">String</span></span>|<span data-ttu-id="f4778-136">DevicePolicyStatus のユーザー名。</span><span class="sxs-lookup"><span data-stu-id="f4778-136">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="f4778-137">devicesCount</span><span class="sxs-lookup"><span data-stu-id="f4778-137">devicesCount</span></span>|<span data-ttu-id="f4778-138">Int32</span><span class="sxs-lookup"><span data-stu-id="f4778-138">Int32</span></span>|<span data-ttu-id="f4778-139">そのユーザーのデバイスの数。</span><span class="sxs-lookup"><span data-stu-id="f4778-139">Devices count for that user.</span></span>|
+|<span data-ttu-id="f4778-140">status</span><span class="sxs-lookup"><span data-stu-id="f4778-140">status</span></span>|[<span data-ttu-id="f4778-141">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="f4778-141">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="f4778-142">ポリシー レポートのコンプライアンスの状態。</span><span class="sxs-lookup"><span data-stu-id="f4778-142">Compliance status of the policy report.</span></span> <span data-ttu-id="f4778-143">可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。</span><span class="sxs-lookup"><span data-stu-id="f4778-143">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="f4778-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="f4778-144">lastReportedDateTime</span></span>|<span data-ttu-id="f4778-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f4778-145">DateTimeOffset</span></span>|<span data-ttu-id="f4778-146">ポリシー レポートの最終変更日時。</span><span class="sxs-lookup"><span data-stu-id="f4778-146">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="f4778-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f4778-147">userPrincipalName</span></span>|<span data-ttu-id="f4778-148">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="f4778-148">String</span></span>|<span data-ttu-id="f4778-149">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="f4778-149">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="45de5-150">応答</span><span class="sxs-lookup"><span data-stu-id="45de5-150">Response</span></span>
-<span data-ttu-id="45de5-151">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="45de5-151">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f4778-150">応答</span><span class="sxs-lookup"><span data-stu-id="f4778-150">Response</span></span>
+<span data-ttu-id="f4778-151">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f4778-151">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45de5-152">例</span><span class="sxs-lookup"><span data-stu-id="45de5-152">Example</span></span>
-### <a name="request"></a><span data-ttu-id="45de5-153">要求</span><span class="sxs-lookup"><span data-stu-id="45de5-153">Request</span></span>
-<span data-ttu-id="45de5-154">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="45de5-154">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f4778-152">例</span><span class="sxs-lookup"><span data-stu-id="f4778-152">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="f4778-153">要求</span><span class="sxs-lookup"><span data-stu-id="f4778-153">Request</span></span>
+<span data-ttu-id="f4778-154">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f4778-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 Content-type: application/json
@@ -77,8 +79,8 @@ Content-length: 287
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="45de5-155">応答</span><span class="sxs-lookup"><span data-stu-id="45de5-155">Response</span></span>
-<span data-ttu-id="45de5-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="45de5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f4778-155">応答</span><span class="sxs-lookup"><span data-stu-id="f4778-155">Response</span></span>
+<span data-ttu-id="f4778-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f4778-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

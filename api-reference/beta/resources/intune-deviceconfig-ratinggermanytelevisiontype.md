@@ -1,34 +1,34 @@
 ---
 title: ratingGermanyTelevisionType 列挙型
-description: ドイツのテレビのコンテンツの規制ラベル
-localization_priority: Normal
+description: ドイツでのテレビコンテンツの評価のラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9bbe383b13e5a6f3d9ec704977b284eaf740aed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5efdbf5f9bd9aa3d29c366a0e3769aa29b6f411c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158143"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a><span data-ttu-id="00f2b-103">ratingGermanyTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="00f2b-103">ratingGermanyTelevisionType enum type</span></span>
+# <a name="ratinggermanytelevisiontype-enum-type"></a><span data-ttu-id="2f699-103">ratingGermanyTelevisionType 列挙型</span><span class="sxs-lookup"><span data-stu-id="2f699-103">ratingGermanyTelevisionType enum type</span></span>
 
-> <span data-ttu-id="00f2b-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="00f2b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="00f2b-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="00f2b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2f699-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2f699-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="00f2b-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="00f2b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2f699-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2f699-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="00f2b-107">ドイツのテレビのコンテンツの規制ラベル</span><span class="sxs-lookup"><span data-stu-id="00f2b-107">TV content rating labels in Germany</span></span>
+<span data-ttu-id="2f699-106">ドイツでのテレビコンテンツの評価のラベル</span><span class="sxs-lookup"><span data-stu-id="2f699-106">TV content rating labels in Germany</span></span>
 
-## <a name="members"></a><span data-ttu-id="00f2b-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="00f2b-108">Members</span></span>
-|<span data-ttu-id="00f2b-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="00f2b-109">Member</span></span>|<span data-ttu-id="00f2b-110">値</span><span class="sxs-lookup"><span data-stu-id="00f2b-110">Value</span></span>|<span data-ttu-id="00f2b-111">説明</span><span class="sxs-lookup"><span data-stu-id="00f2b-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="2f699-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="2f699-107">Members</span></span>
+|<span data-ttu-id="2f699-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="2f699-108">Member</span></span>|<span data-ttu-id="2f699-109">値</span><span class="sxs-lookup"><span data-stu-id="2f699-109">Value</span></span>|<span data-ttu-id="2f699-110">説明</span><span class="sxs-lookup"><span data-stu-id="2f699-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="00f2b-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="00f2b-112">allAllowed</span></span>|<span data-ttu-id="00f2b-113">0</span><span class="sxs-lookup"><span data-stu-id="00f2b-113">0</span></span>|<span data-ttu-id="00f2b-114">既定値、すべてのテレビ番組コンテンツを許可します。</span><span class="sxs-lookup"><span data-stu-id="00f2b-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="00f2b-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="00f2b-115">allBlocked</span></span>|<span data-ttu-id="00f2b-116">1</span><span class="sxs-lookup"><span data-stu-id="00f2b-116">1</span></span>|<span data-ttu-id="00f2b-117">任意のテレビ番組コンテンツを許可しません。</span><span class="sxs-lookup"><span data-stu-id="00f2b-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="00f2b-118">全般</span><span class="sxs-lookup"><span data-stu-id="00f2b-118">general</span></span>|<span data-ttu-id="00f2b-119">2</span><span class="sxs-lookup"><span data-stu-id="00f2b-119">2</span></span>|<span data-ttu-id="00f2b-120">Ab 0 Jahren、年齢制限はありません。</span><span class="sxs-lookup"><span data-stu-id="00f2b-120">Ab 0 Jahren, no age restrictions</span></span>|
-|<span data-ttu-id="00f2b-121">agesAbove6</span><span class="sxs-lookup"><span data-stu-id="00f2b-121">agesAbove6</span></span>|<span data-ttu-id="00f2b-122">3</span><span class="sxs-lookup"><span data-stu-id="00f2b-122">3</span></span>|<span data-ttu-id="00f2b-123">Ab 6 Jahren では、6 と以前のエージングします。</span><span class="sxs-lookup"><span data-stu-id="00f2b-123">Ab 6 Jahren, ages 6 and older</span></span>|
-|<span data-ttu-id="00f2b-124">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="00f2b-124">agesAbove12</span></span>|<span data-ttu-id="00f2b-125">4</span><span class="sxs-lookup"><span data-stu-id="00f2b-125">4</span></span>|<span data-ttu-id="00f2b-126">Ab 12 Jahren、12 と古いのエージングします。</span><span class="sxs-lookup"><span data-stu-id="00f2b-126">Ab 12 Jahren, ages 12 and older</span></span>|
-|<span data-ttu-id="00f2b-127">agesAbove16</span><span class="sxs-lookup"><span data-stu-id="00f2b-127">agesAbove16</span></span>|<span data-ttu-id="00f2b-128">5</span><span class="sxs-lookup"><span data-stu-id="00f2b-128">5</span></span>|<span data-ttu-id="00f2b-129">Ab 16 Jahren、16 のエージングします。</span><span class="sxs-lookup"><span data-stu-id="00f2b-129">Ab 16 Jahren, ages 16 and older</span></span>|
-|<span data-ttu-id="00f2b-130">大人</span><span class="sxs-lookup"><span data-stu-id="00f2b-130">adults</span></span>|<span data-ttu-id="00f2b-131">6</span><span class="sxs-lookup"><span data-stu-id="00f2b-131">6</span></span>|<span data-ttu-id="00f2b-132">Ab 18 Jahren、成人のみ</span><span class="sxs-lookup"><span data-stu-id="00f2b-132">Ab 18 Jahren, adults only</span></span>|
+|<span data-ttu-id="2f699-111">allallowed</span><span class="sxs-lookup"><span data-stu-id="2f699-111">allAllowed</span></span>|<span data-ttu-id="2f699-112">.0</span><span class="sxs-lookup"><span data-stu-id="2f699-112">0</span></span>|<span data-ttu-id="2f699-113">既定値、すべてのテレビ番組にコンテンツを表示する</span><span class="sxs-lookup"><span data-stu-id="2f699-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="2f699-114">allblocked</span><span class="sxs-lookup"><span data-stu-id="2f699-114">allBlocked</span></span>|<span data-ttu-id="2f699-115">1-d</span><span class="sxs-lookup"><span data-stu-id="2f699-115">1</span></span>|<span data-ttu-id="2f699-116">すべてのテレビ番組の内容を許可しない</span><span class="sxs-lookup"><span data-stu-id="2f699-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="2f699-117">元帳</span><span class="sxs-lookup"><span data-stu-id="2f699-117">general</span></span>|<span data-ttu-id="2f699-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="2f699-118">2</span></span>|<span data-ttu-id="2f699-119">Ab 0 Jahren、年齢制限なし</span><span class="sxs-lookup"><span data-stu-id="2f699-119">Ab 0 Jahren, no age restrictions</span></span>|
+|<span data-ttu-id="2f699-120">agesAbove6</span><span class="sxs-lookup"><span data-stu-id="2f699-120">agesAbove6</span></span>|<span data-ttu-id="2f699-121">1/3</span><span class="sxs-lookup"><span data-stu-id="2f699-121">3</span></span>|<span data-ttu-id="2f699-122">Ab 6 Jahren、才を過ぎた</span><span class="sxs-lookup"><span data-stu-id="2f699-122">Ab 6 Jahren, ages 6 and older</span></span>|
+|<span data-ttu-id="2f699-123">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="2f699-123">agesAbove12</span></span>|<span data-ttu-id="2f699-124">2/4</span><span class="sxs-lookup"><span data-stu-id="2f699-124">4</span></span>|<span data-ttu-id="2f699-125">Ab 12 Jahren、12才以上</span><span class="sxs-lookup"><span data-stu-id="2f699-125">Ab 12 Jahren, ages 12 and older</span></span>|
+|<span data-ttu-id="2f699-126">agesAbove16</span><span class="sxs-lookup"><span data-stu-id="2f699-126">agesAbove16</span></span>|<span data-ttu-id="2f699-127">5</span><span class="sxs-lookup"><span data-stu-id="2f699-127">5</span></span>|<span data-ttu-id="2f699-128">Ab 16 Jahren、16才以上</span><span class="sxs-lookup"><span data-stu-id="2f699-128">Ab 16 Jahren, ages 16 and older</span></span>|
+|<span data-ttu-id="2f699-129">保護者</span><span class="sxs-lookup"><span data-stu-id="2f699-129">adults</span></span>|<span data-ttu-id="2f699-130">シックス</span><span class="sxs-lookup"><span data-stu-id="2f699-130">6</span></span>|<span data-ttu-id="2f699-131">Ab 18 Jahren、大人のみ</span><span class="sxs-lookup"><span data-stu-id="2f699-131">Ab 18 Jahren, adults only</span></span>|
 
 
 

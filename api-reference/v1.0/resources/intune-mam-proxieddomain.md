@@ -3,29 +3,31 @@ title: proxiedDomain リソースの種類
 description: プロキシ化されたドメイン
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dc90ebd57752fedcaf7acf069da6e653da04978e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b28271308f5256d034de3b4704353aa0471aeb29
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968548"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264044"
 ---
-# <a name="proxieddomain-resource-type"></a><span data-ttu-id="2a058-103">proxiedDomain リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2a058-103">proxiedDomain resource type</span></span>
+# <a name="proxieddomain-resource-type"></a><span data-ttu-id="16b2a-103">proxiedDomain リソースの種類</span><span class="sxs-lookup"><span data-stu-id="16b2a-103">proxiedDomain resource type</span></span>
 
-> <span data-ttu-id="2a058-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a058-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="16b2a-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="16b2a-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2a058-105">プロキシ化されたドメイン</span><span class="sxs-lookup"><span data-stu-id="2a058-105">Proxied Domain</span></span>
-## <a name="properties"></a><span data-ttu-id="2a058-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2a058-106">Properties</span></span>
-|<span data-ttu-id="2a058-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2a058-107">Property</span></span>|<span data-ttu-id="2a058-108">種類</span><span class="sxs-lookup"><span data-stu-id="2a058-108">Type</span></span>|<span data-ttu-id="2a058-109">説明</span><span class="sxs-lookup"><span data-stu-id="2a058-109">Description</span></span>|
+<span data-ttu-id="16b2a-105">プロキシ化されたドメイン</span><span class="sxs-lookup"><span data-stu-id="16b2a-105">Proxied Domain</span></span>
+
+## <a name="properties"></a><span data-ttu-id="16b2a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="16b2a-106">Properties</span></span>
+|<span data-ttu-id="16b2a-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="16b2a-107">Property</span></span>|<span data-ttu-id="16b2a-108">型</span><span class="sxs-lookup"><span data-stu-id="16b2a-108">Type</span></span>|<span data-ttu-id="16b2a-109">説明</span><span class="sxs-lookup"><span data-stu-id="16b2a-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2a058-110">ipAddressOrFQDN</span><span class="sxs-lookup"><span data-stu-id="2a058-110">ipAddressOrFQDN</span></span>|<span data-ttu-id="2a058-111">文字列</span><span class="sxs-lookup"><span data-stu-id="2a058-111">String</span></span>|<span data-ttu-id="2a058-112">IP アドレスまたは FQDN</span><span class="sxs-lookup"><span data-stu-id="2a058-112">The IP address or FQDN</span></span>|
-|<span data-ttu-id="2a058-113">プロキシ</span><span class="sxs-lookup"><span data-stu-id="2a058-113">proxy</span></span>|<span data-ttu-id="2a058-114">文字列</span><span class="sxs-lookup"><span data-stu-id="2a058-114">String</span></span>|<span data-ttu-id="2a058-115">プロキシ IP</span><span class="sxs-lookup"><span data-stu-id="2a058-115">Proxy IP</span></span>|
+|<span data-ttu-id="16b2a-110">ipAddressOrFQDN</span><span class="sxs-lookup"><span data-stu-id="16b2a-110">ipAddressOrFQDN</span></span>|<span data-ttu-id="16b2a-111">文字列</span><span class="sxs-lookup"><span data-stu-id="16b2a-111">String</span></span>|<span data-ttu-id="16b2a-112">IP アドレスまたは FQDN</span><span class="sxs-lookup"><span data-stu-id="16b2a-112">The IP address or FQDN</span></span>|
+|<span data-ttu-id="16b2a-113">プロキシ</span><span class="sxs-lookup"><span data-stu-id="16b2a-113">proxy</span></span>|<span data-ttu-id="16b2a-114">文字列</span><span class="sxs-lookup"><span data-stu-id="16b2a-114">String</span></span>|<span data-ttu-id="16b2a-115">プロキシ IP または FQDN</span><span class="sxs-lookup"><span data-stu-id="16b2a-115">Proxy IP or FQDN</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2a058-116">関係</span><span class="sxs-lookup"><span data-stu-id="2a058-116">Relationships</span></span>
-<span data-ttu-id="2a058-117">なし</span><span class="sxs-lookup"><span data-stu-id="2a058-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="2a058-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2a058-118">JSON Representation</span></span>
-<span data-ttu-id="2a058-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2a058-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="16b2a-116">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="16b2a-116">Relationships</span></span>
+<span data-ttu-id="16b2a-117">なし</span><span class="sxs-lookup"><span data-stu-id="16b2a-117">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="16b2a-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="16b2a-118">JSON Representation</span></span>
+<span data-ttu-id="16b2a-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="16b2a-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.proxiedDomain"

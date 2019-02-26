@@ -1,26 +1,27 @@
 ---
-title: microsoftStoreForBusinessLicenseType 列挙型
+title: microsoft storeforbusinesslicensetype 列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c4b768543515ac8866ea49dfc77e7b5b83648f94
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 74ff5841dc007c2e3f79c641cb26414e8e59413b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951587"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259963"
 ---
-# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a><span data-ttu-id="26546-103">microsoftStoreForBusinessLicenseType 列挙型</span><span class="sxs-lookup"><span data-stu-id="26546-103">microsoftStoreForBusinessLicenseType enum type</span></span>
+# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a><span data-ttu-id="468e1-103">microsoft storeforbusinesslicensetype 列挙型</span><span class="sxs-lookup"><span data-stu-id="468e1-103">microsoftStoreForBusinessLicenseType enum type</span></span>
 
-> <span data-ttu-id="26546-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="26546-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="468e1-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="468e1-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26546-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="26546-105">Not yet documented</span></span>
-## <a name="members"></a><span data-ttu-id="26546-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="26546-106">Members</span></span>
-|<span data-ttu-id="26546-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="26546-107">Member</span></span>|<span data-ttu-id="26546-108">値</span><span class="sxs-lookup"><span data-stu-id="26546-108">Value</span></span>|<span data-ttu-id="26546-109">説明</span><span class="sxs-lookup"><span data-stu-id="26546-109">Description</span></span>|
+<span data-ttu-id="468e1-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="468e1-105">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="468e1-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="468e1-106">Members</span></span>
+|<span data-ttu-id="468e1-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="468e1-107">Member</span></span>|<span data-ttu-id="468e1-108">値</span><span class="sxs-lookup"><span data-stu-id="468e1-108">Value</span></span>|<span data-ttu-id="468e1-109">説明</span><span class="sxs-lookup"><span data-stu-id="468e1-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="26546-110">オフライン</span><span class="sxs-lookup"><span data-stu-id="26546-110">offline</span></span>|<span data-ttu-id="26546-111">0</span><span class="sxs-lookup"><span data-stu-id="26546-111">0</span></span>|<span data-ttu-id="26546-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="26546-112">Not yet documented</span></span>|
-|<span data-ttu-id="26546-113">オンライン</span><span class="sxs-lookup"><span data-stu-id="26546-113">online</span></span>|<span data-ttu-id="26546-114">1</span><span class="sxs-lookup"><span data-stu-id="26546-114">1</span></span>|<span data-ttu-id="26546-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="26546-115">Not yet documented</span></span>|
+|<span data-ttu-id="468e1-110">オフライン</span><span class="sxs-lookup"><span data-stu-id="468e1-110">offline</span></span>|<span data-ttu-id="468e1-111">.0</span><span class="sxs-lookup"><span data-stu-id="468e1-111">0</span></span>|<span data-ttu-id="468e1-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="468e1-112">Not yet documented</span></span>|
+|<span data-ttu-id="468e1-113">オンライン</span><span class="sxs-lookup"><span data-stu-id="468e1-113">online</span></span>|<span data-ttu-id="468e1-114">1-d</span><span class="sxs-lookup"><span data-stu-id="468e1-114">1</span></span>|<span data-ttu-id="468e1-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="468e1-115">Not yet documented</span></span>|
 
 
 
