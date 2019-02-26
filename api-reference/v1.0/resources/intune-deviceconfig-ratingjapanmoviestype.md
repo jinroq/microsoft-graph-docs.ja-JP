@@ -1,30 +1,31 @@
 ---
 title: ratingJapanMoviesType 列挙型
-description: 映画の日本でのラベルの評価
+description: 日本の映画の視聴制限ラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 407c725b958c45fc395ba9adbe9634e78a288f53
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957299"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259277"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画の日本でのラベルの評価
+日本の映画の視聴制限ラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|一般ユーザー向け|
-|parentalGuidance|3|PG 12 分類若い人で 12 の保護者による制限を要求します。|
-|agesAbove15|4|R15 の各 + のクラス分けは、15 の閲覧者に対して適切なまたは古い|
-|agesAbove18|5|R18 + の分類は、18 の閲覧者に対して適切なまたは古い|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|すべての年齢に適している|
+|parentalguidance|1/3|PG-12 の分類では、12の下のユーザーについての上位のガイダンスが要求されます。|
+|agesAbove15|2/4|R15 + 分類は、15才以上の閲覧者に適しています。|
+|agesAbove18|5|R18 + 分類は、18才以上の閲覧者に適しています。|
 
 
 
