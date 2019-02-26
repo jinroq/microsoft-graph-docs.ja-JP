@@ -1,34 +1,34 @@
 ---
-title: DepOnboardingSetting を作成します。
-description: 新しい depOnboardingSetting オブジェクトを作成します。
-localization_priority: Normal
+title: depon掲示の設定を作成する
+description: 新しい depon掲示設定オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aa17e5741df007d7ee449a4ab305be37807051d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164387"
 ---
-# <a name="create-deponboardingsetting"></a><span data-ttu-id="b1f47-103">DepOnboardingSetting を作成します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-103">Create depOnboardingSetting</span></span>
+# <a name="create-deponboardingsetting"></a><span data-ttu-id="9beb3-103">depon掲示の設定を作成する</span><span class="sxs-lookup"><span data-stu-id="9beb3-103">Create depOnboardingSetting</span></span>
 
-> <span data-ttu-id="b1f47-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b1f47-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b1f47-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1f47-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9beb3-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9beb3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b1f47-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b1f47-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9beb3-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9beb3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b1f47-107">新しい[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-107">Create a new [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
+<span data-ttu-id="9beb3-106">新しい[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="9beb3-106">Create a new [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b1f47-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="b1f47-108">Prerequisites</span></span>
-<span data-ttu-id="b1f47-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1f47-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9beb3-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="9beb3-107">Prerequisites</span></span>
+<span data-ttu-id="9beb3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9beb3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="b1f47-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b1f47-111">Permission type</span></span>|<span data-ttu-id="b1f47-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b1f47-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9beb3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9beb3-110">Permission type</span></span>|<span data-ttu-id="9beb3-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="9beb3-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b1f47-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b1f47-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b1f47-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1f47-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b1f47-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b1f47-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b1f47-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1f47-116">Not supported.</span></span>|
-|<span data-ttu-id="b1f47-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b1f47-117">Application</span></span>|<span data-ttu-id="b1f47-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1f47-118">Not supported.</span></span>|
+|<span data-ttu-id="9beb3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9beb3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9beb3-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9beb3-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9beb3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9beb3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9beb3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9beb3-115">Not supported.</span></span>|
+|<span data-ttu-id="9beb3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9beb3-116">Application</span></span>|<span data-ttu-id="9beb3-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9beb3-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b1f47-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b1f47-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9beb3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9beb3-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,45 +37,46 @@ ms.locfileid: "29409819"
 POST /deviceManagement/depOnboardingSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b1f47-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1f47-120">Request headers</span></span>
-|<span data-ttu-id="b1f47-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1f47-121">Header</span></span>|<span data-ttu-id="b1f47-122">値</span><span class="sxs-lookup"><span data-stu-id="b1f47-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9beb3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9beb3-119">Request headers</span></span>
+|<span data-ttu-id="9beb3-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9beb3-120">Header</span></span>|<span data-ttu-id="9beb3-121">値</span><span class="sxs-lookup"><span data-stu-id="9beb3-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b1f47-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1f47-123">Authorization</span></span>|<span data-ttu-id="b1f47-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="b1f47-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b1f47-125">Accept</span><span class="sxs-lookup"><span data-stu-id="b1f47-125">Accept</span></span>|<span data-ttu-id="b1f47-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b1f47-126">application/json</span></span>|
+|<span data-ttu-id="9beb3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9beb3-122">Authorization</span></span>|<span data-ttu-id="9beb3-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="9beb3-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9beb3-124">承諾</span><span class="sxs-lookup"><span data-stu-id="9beb3-124">Accept</span></span>|<span data-ttu-id="9beb3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9beb3-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b1f47-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="b1f47-127">Request body</span></span>
-<span data-ttu-id="b1f47-128">要求の本文に depOnboardingSetting オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-128">In the request body, supply a JSON representation for the depOnboardingSetting object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9beb3-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="9beb3-126">Request body</span></span>
+<span data-ttu-id="9beb3-127">要求本文で、deponboardingsetting オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="9beb3-127">In the request body, supply a JSON representation for the depOnboardingSetting object.</span></span>
 
-<span data-ttu-id="b1f47-129">次の表は、depOnboardingSetting を作成するときに必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-129">The following table shows the properties that are required when you create the depOnboardingSetting.</span></span>
+<span data-ttu-id="9beb3-128">次の表に、deponboardingsetting の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="9beb3-128">The following table shows the properties that are required when you create the depOnboardingSetting.</span></span>
 
-|<span data-ttu-id="b1f47-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b1f47-130">Property</span></span>|<span data-ttu-id="b1f47-131">型</span><span class="sxs-lookup"><span data-stu-id="b1f47-131">Type</span></span>|<span data-ttu-id="b1f47-132">説明</span><span class="sxs-lookup"><span data-stu-id="b1f47-132">Description</span></span>|
+|<span data-ttu-id="9beb3-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9beb3-129">Property</span></span>|<span data-ttu-id="9beb3-130">型</span><span class="sxs-lookup"><span data-stu-id="9beb3-130">Type</span></span>|<span data-ttu-id="9beb3-131">説明</span><span class="sxs-lookup"><span data-stu-id="9beb3-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b1f47-133">id</span><span class="sxs-lookup"><span data-stu-id="b1f47-133">id</span></span>|<span data-ttu-id="b1f47-134">String</span><span class="sxs-lookup"><span data-stu-id="b1f47-134">String</span></span>|<span data-ttu-id="b1f47-135">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="b1f47-135">UUID for the object</span></span>|
-|<span data-ttu-id="b1f47-136">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="b1f47-136">appleIdentifier</span></span>|<span data-ttu-id="b1f47-137">String</span><span class="sxs-lookup"><span data-stu-id="b1f47-137">String</span></span>|<span data-ttu-id="b1f47-138">Apple ID は、現在のトークンを取得するために使用します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-138">The Apple ID used to obtain the current token.</span></span>|
-|<span data-ttu-id="b1f47-139">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f47-139">tokenExpirationDateTime</span></span>|<span data-ttu-id="b1f47-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1f47-140">DateTimeOffset</span></span>|<span data-ttu-id="b1f47-141">トークンの期限が切れる。</span><span class="sxs-lookup"><span data-stu-id="b1f47-141">When the token will expire.</span></span>|
-|<span data-ttu-id="b1f47-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f47-142">lastModifiedDateTime</span></span>|<span data-ttu-id="b1f47-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1f47-143">DateTimeOffset</span></span>|<span data-ttu-id="b1f47-144">Onboarded でした。</span><span class="sxs-lookup"><span data-stu-id="b1f47-144">When the service was onboarded.</span></span>|
-|<span data-ttu-id="b1f47-145">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f47-145">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="b1f47-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1f47-146">DateTimeOffset</span></span>|<span data-ttu-id="b1f47-147">Intune のサービスの最後の syned</span><span class="sxs-lookup"><span data-stu-id="b1f47-147">When the service last syned with Intune</span></span>|
-|<span data-ttu-id="b1f47-148">lastSyncTriggeredDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f47-148">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="b1f47-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1f47-149">DateTimeOffset</span></span>|<span data-ttu-id="b1f47-150">Intune が最後に同期を要求された場合。</span><span class="sxs-lookup"><span data-stu-id="b1f47-150">When Intune last requested a sync.</span></span>|
-|<span data-ttu-id="b1f47-151">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="b1f47-151">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="b1f47-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="b1f47-152">Boolean</span></span>|<span data-ttu-id="b1f47-153">かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。</span><span class="sxs-lookup"><span data-stu-id="b1f47-153">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
-|<span data-ttu-id="b1f47-154">lastSyncErrorCode</span><span class="sxs-lookup"><span data-stu-id="b1f47-154">lastSyncErrorCode</span></span>|<span data-ttu-id="b1f47-155">Int32</span><span class="sxs-lookup"><span data-stu-id="b1f47-155">Int32</span></span>|<span data-ttu-id="b1f47-156">Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。</span><span class="sxs-lookup"><span data-stu-id="b1f47-156">Error code reported by Apple during last dep sync.</span></span>|
-|<span data-ttu-id="b1f47-157">tokenType</span><span class="sxs-lookup"><span data-stu-id="b1f47-157">tokenType</span></span>|[<span data-ttu-id="b1f47-158">depTokenType</span><span class="sxs-lookup"><span data-stu-id="b1f47-158">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="b1f47-159">Dep のトークンの種類を設定を取得または取得します。</span><span class="sxs-lookup"><span data-stu-id="b1f47-159">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="b1f47-160">可能な値は、`none`、`dep`、`appleSchoolManager` です。</span><span class="sxs-lookup"><span data-stu-id="b1f47-160">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
-|<span data-ttu-id="b1f47-161">tokenName</span><span class="sxs-lookup"><span data-stu-id="b1f47-161">tokenName</span></span>|<span data-ttu-id="b1f47-162">String</span><span class="sxs-lookup"><span data-stu-id="b1f47-162">String</span></span>|<span data-ttu-id="b1f47-163">Dep のトークンの表示名</span><span class="sxs-lookup"><span data-stu-id="b1f47-163">Friendly Name for Dep Token</span></span>|
-|<span data-ttu-id="b1f47-164">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="b1f47-164">syncedDeviceCount</span></span>|<span data-ttu-id="b1f47-165">Int32</span><span class="sxs-lookup"><span data-stu-id="b1f47-165">Int32</span></span>|<span data-ttu-id="b1f47-166">同期されたデバイスの数を取得</span><span class="sxs-lookup"><span data-stu-id="b1f47-166">Gets synced device count</span></span>|
-|<span data-ttu-id="b1f47-167">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="b1f47-167">dataSharingConsentGranted</span></span>|<span data-ttu-id="b1f47-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="b1f47-168">Boolean</span></span>|<span data-ttu-id="b1f47-169">アップル Dep のサービスと共有データの許可に同意するもの</span><span class="sxs-lookup"><span data-stu-id="b1f47-169">Consent granted for data sharing with Apple Dep Service</span></span>|
+|<span data-ttu-id="9beb3-132">id</span><span class="sxs-lookup"><span data-stu-id="9beb3-132">id</span></span>|<span data-ttu-id="9beb3-133">String</span><span class="sxs-lookup"><span data-stu-id="9beb3-133">String</span></span>|<span data-ttu-id="9beb3-134">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="9beb3-134">UUID for the object</span></span>|
+|<span data-ttu-id="9beb3-135">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="9beb3-135">appleIdentifier</span></span>|<span data-ttu-id="9beb3-136">String</span><span class="sxs-lookup"><span data-stu-id="9beb3-136">String</span></span>|<span data-ttu-id="9beb3-137">現在のトークンを取得するために使用される Apple ID。</span><span class="sxs-lookup"><span data-stu-id="9beb3-137">The Apple ID used to obtain the current token.</span></span>|
+|<span data-ttu-id="9beb3-138">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="9beb3-138">tokenExpirationDateTime</span></span>|<span data-ttu-id="9beb3-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9beb3-139">DateTimeOffset</span></span>|<span data-ttu-id="9beb3-140">トークンの有効期限が切れるとき。</span><span class="sxs-lookup"><span data-stu-id="9beb3-140">When the token will expire.</span></span>|
+|<span data-ttu-id="9beb3-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9beb3-141">lastModifiedDateTime</span></span>|<span data-ttu-id="9beb3-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9beb3-142">DateTimeOffset</span></span>|<span data-ttu-id="9beb3-143">サービスが利用されたとき。</span><span class="sxs-lookup"><span data-stu-id="9beb3-143">When the service was onboarded.</span></span>|
+|<span data-ttu-id="9beb3-144">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="9beb3-144">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="9beb3-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9beb3-145">DateTimeOffset</span></span>|<span data-ttu-id="9beb3-146">Intune でサービスが最後に使用されたとき</span><span class="sxs-lookup"><span data-stu-id="9beb3-146">When the service last syned with Intune</span></span>|
+|<span data-ttu-id="9beb3-147">lastsynctriggereddatetime</span><span class="sxs-lookup"><span data-stu-id="9beb3-147">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="9beb3-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9beb3-148">DateTimeOffset</span></span>|<span data-ttu-id="9beb3-149">Intune が最後に同期を要求したとき。</span><span class="sxs-lookup"><span data-stu-id="9beb3-149">When Intune last requested a sync.</span></span>|
+|<span data-ttu-id="9beb3-150">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="9beb3-150">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="9beb3-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="9beb3-151">Boolean</span></span>|<span data-ttu-id="9beb3-152">School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。</span><span class="sxs-lookup"><span data-stu-id="9beb3-152">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
+|<span data-ttu-id="9beb3-153">lastSyncErrorCode</span><span class="sxs-lookup"><span data-stu-id="9beb3-153">lastSyncErrorCode</span></span>|<span data-ttu-id="9beb3-154">Int32</span><span class="sxs-lookup"><span data-stu-id="9beb3-154">Int32</span></span>|<span data-ttu-id="9beb3-155">前回の dep 同期中に Apple によって報告されたエラーコード。</span><span class="sxs-lookup"><span data-stu-id="9beb3-155">Error code reported by Apple during last dep sync.</span></span>|
+|<span data-ttu-id="9beb3-156">tokenType</span><span class="sxs-lookup"><span data-stu-id="9beb3-156">tokenType</span></span>|[<span data-ttu-id="9beb3-157">depTokenType</span><span class="sxs-lookup"><span data-stu-id="9beb3-157">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="9beb3-158">Dep トークンの種類を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="9beb3-158">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="9beb3-159">可能な値は `none`、`dep`、`appleSchoolManager` です。</span><span class="sxs-lookup"><span data-stu-id="9beb3-159">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
+|<span data-ttu-id="9beb3-160">tokenName</span><span class="sxs-lookup"><span data-stu-id="9beb3-160">tokenName</span></span>|<span data-ttu-id="9beb3-161">String</span><span class="sxs-lookup"><span data-stu-id="9beb3-161">String</span></span>|<span data-ttu-id="9beb3-162">Dep トークンのフレンドリ名</span><span class="sxs-lookup"><span data-stu-id="9beb3-162">Friendly Name for Dep Token</span></span>|
+|<span data-ttu-id="9beb3-163">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="9beb3-163">syncedDeviceCount</span></span>|<span data-ttu-id="9beb3-164">Int32</span><span class="sxs-lookup"><span data-stu-id="9beb3-164">Int32</span></span>|<span data-ttu-id="9beb3-165">同期されたデバイスの数を取得する</span><span class="sxs-lookup"><span data-stu-id="9beb3-165">Gets synced device count</span></span>|
+|<span data-ttu-id="9beb3-166">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="9beb3-166">dataSharingConsentGranted</span></span>|<span data-ttu-id="9beb3-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="9beb3-167">Boolean</span></span>|<span data-ttu-id="9beb3-168">Apple Dep サービスでのデータ共有に対して付与される同意</span><span class="sxs-lookup"><span data-stu-id="9beb3-168">Consent granted for data sharing with Apple Dep Service</span></span>|
+|<span data-ttu-id="9beb3-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="9beb3-169">roleScopeTagIds</span></span>|<span data-ttu-id="9beb3-170">String コレクション</span><span class="sxs-lookup"><span data-stu-id="9beb3-170">String collection</span></span>|<span data-ttu-id="9beb3-171">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="9beb3-171">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b1f47-170">応答</span><span class="sxs-lookup"><span data-stu-id="b1f47-170">Response</span></span>
-<span data-ttu-id="b1f47-171">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="b1f47-171">If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9beb3-172">応答</span><span class="sxs-lookup"><span data-stu-id="9beb3-172">Response</span></span>
+<span data-ttu-id="9beb3-173">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9beb3-173">If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b1f47-172">例</span><span class="sxs-lookup"><span data-stu-id="b1f47-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9beb3-174">例</span><span class="sxs-lookup"><span data-stu-id="9beb3-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b1f47-173">要求</span><span class="sxs-lookup"><span data-stu-id="b1f47-173">Request</span></span>
-<span data-ttu-id="b1f47-174">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b1f47-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9beb3-175">要求</span><span class="sxs-lookup"><span data-stu-id="9beb3-175">Request</span></span>
+<span data-ttu-id="9beb3-176">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9beb3-176">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
-Content-length: 514
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -88,16 +89,19 @@ Content-length: 514
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b1f47-175">応答</span><span class="sxs-lookup"><span data-stu-id="b1f47-175">Response</span></span>
-<span data-ttu-id="b1f47-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b1f47-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9beb3-177">応答</span><span class="sxs-lookup"><span data-stu-id="9beb3-177">Response</span></span>
+<span data-ttu-id="9beb3-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9beb3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 689
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -112,7 +116,10 @@ Content-Length: 627
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

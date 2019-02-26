@@ -1,30 +1,30 @@
 ---
-title: browserSyncSetting 列挙型
-description: Allow(Not Configured) または prevent(Block) がマイクロソフトのエッジのブラウザーの設定の同期します。 防止するオプションはデバイス間で同期しますが、ユーザーのオーバーライドを許可します。
-localization_priority: Normal
+title: browsersyncsetting 列挙型
+description: Microsoft Edge ブラウザーの設定の同期を許可 (未構成) または禁止 (ブロック) します。 デバイス間での同期を禁止し、ユーザーによる上書きを許可するオプション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dce2b82b1eea5e4b06ed0f6949ba6a403b073a8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 71b5fd7addebdb24fce07644da9b33a2bb41f936
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431590"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152172"
 ---
-# <a name="browsersyncsetting-enum-type"></a><span data-ttu-id="2dc91-104">browserSyncSetting 列挙型</span><span class="sxs-lookup"><span data-stu-id="2dc91-104">browserSyncSetting enum type</span></span>
+# <a name="browsersyncsetting-enum-type"></a><span data-ttu-id="52f13-104">browsersyncsetting 列挙型</span><span class="sxs-lookup"><span data-stu-id="52f13-104">browserSyncSetting enum type</span></span>
 
-> <span data-ttu-id="2dc91-105">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="2dc91-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2dc91-106">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2dc91-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="52f13-105">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52f13-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2dc91-107">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2dc91-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="52f13-106">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="52f13-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2dc91-108">Allow(Not Configured) または prevent(Block) がマイクロソフトのエッジのブラウザーの設定の同期します。</span><span class="sxs-lookup"><span data-stu-id="2dc91-108">Allow(Not Configured) or prevent(Block) the syncing of Microsoft Edge Browser settings.</span></span> <span data-ttu-id="2dc91-109">防止するオプションはデバイス間で同期しますが、ユーザーのオーバーライドを許可します。</span><span class="sxs-lookup"><span data-stu-id="2dc91-109">Option to prevent syncing across devices, but allow user override.</span></span>
+<span data-ttu-id="52f13-107">Microsoft Edge ブラウザーの設定の同期を許可 (未構成) または禁止 (ブロック) します。</span><span class="sxs-lookup"><span data-stu-id="52f13-107">Allow(Not Configured) or prevent(Block) the syncing of Microsoft Edge Browser settings.</span></span> <span data-ttu-id="52f13-108">デバイス間での同期を禁止し、ユーザーによる上書きを許可するオプション。</span><span class="sxs-lookup"><span data-stu-id="52f13-108">Option to prevent syncing across devices, but allow user override.</span></span>
 
-## <a name="members"></a><span data-ttu-id="2dc91-110">メンバー</span><span class="sxs-lookup"><span data-stu-id="2dc91-110">Members</span></span>
-|<span data-ttu-id="2dc91-111">メンバー</span><span class="sxs-lookup"><span data-stu-id="2dc91-111">Member</span></span>|<span data-ttu-id="2dc91-112">値</span><span class="sxs-lookup"><span data-stu-id="2dc91-112">Value</span></span>|<span data-ttu-id="2dc91-113">説明</span><span class="sxs-lookup"><span data-stu-id="2dc91-113">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="52f13-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="52f13-109">Members</span></span>
+|<span data-ttu-id="52f13-110">メンバー</span><span class="sxs-lookup"><span data-stu-id="52f13-110">Member</span></span>|<span data-ttu-id="52f13-111">値</span><span class="sxs-lookup"><span data-stu-id="52f13-111">Value</span></span>|<span data-ttu-id="52f13-112">説明</span><span class="sxs-lookup"><span data-stu-id="52f13-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2dc91-114">notConfigured</span><span class="sxs-lookup"><span data-stu-id="2dc91-114">notConfigured</span></span>|<span data-ttu-id="2dc91-115">0</span><span class="sxs-lookup"><span data-stu-id="2dc91-115">0</span></span>|<span data-ttu-id="2dc91-116">既定 – 複数のデバイスのブラウザーの設定の同期を許可します。</span><span class="sxs-lookup"><span data-stu-id="2dc91-116">Default – Allow syncing of browser settings across devices.</span></span>|
-|<span data-ttu-id="2dc91-117">blockedWithUserOverride</span><span class="sxs-lookup"><span data-stu-id="2dc91-117">blockedWithUserOverride</span></span>|<span data-ttu-id="2dc91-118">1</span><span class="sxs-lookup"><span data-stu-id="2dc91-118">1</span></span>|<span data-ttu-id="2dc91-119">複数のユーザーのデバイスのブラウザーの設定の同期を防ぐため、設定のユーザーの上書きを許可します。</span><span class="sxs-lookup"><span data-stu-id="2dc91-119">Prevent syncing of browser settings across user devices, allow user override of setting.</span></span>|
-|<span data-ttu-id="2dc91-120">ブロック</span><span class="sxs-lookup"><span data-stu-id="2dc91-120">blocked</span></span>|<span data-ttu-id="2dc91-121">2</span><span class="sxs-lookup"><span data-stu-id="2dc91-121">2</span></span>|<span data-ttu-id="2dc91-122">絶対に複数のユーザーのデバイスのブラウザーの設定の同期を防ぐためです。</span><span class="sxs-lookup"><span data-stu-id="2dc91-122">Absolutely prevent syncing of browser settings across user devices.</span></span>|
+|<span data-ttu-id="52f13-113">notConfigured</span><span class="sxs-lookup"><span data-stu-id="52f13-113">notConfigured</span></span>|<span data-ttu-id="52f13-114">.0</span><span class="sxs-lookup"><span data-stu-id="52f13-114">0</span></span>|<span data-ttu-id="52f13-115">Default –デバイス間でのブラウザー設定の同期を許可します。</span><span class="sxs-lookup"><span data-stu-id="52f13-115">Default – Allow syncing of browser settings across devices.</span></span>|
+|<span data-ttu-id="52f13-116">blockedWithUserOverride</span><span class="sxs-lookup"><span data-stu-id="52f13-116">blockedWithUserOverride</span></span>|<span data-ttu-id="52f13-117">1-d</span><span class="sxs-lookup"><span data-stu-id="52f13-117">1</span></span>|<span data-ttu-id="52f13-118">ユーザーのデバイス間でブラウザー設定を同期できないようにして、ユーザーが設定を上書きできるようにします。</span><span class="sxs-lookup"><span data-stu-id="52f13-118">Prevent syncing of browser settings across user devices, allow user override of setting.</span></span>|
+|<span data-ttu-id="52f13-119">ブロック</span><span class="sxs-lookup"><span data-stu-id="52f13-119">blocked</span></span>|<span data-ttu-id="52f13-120">pbm-2</span><span class="sxs-lookup"><span data-stu-id="52f13-120">2</span></span>|<span data-ttu-id="52f13-121">ユーザーデバイス間でのブラウザー設定の同期を完全に防止します。</span><span class="sxs-lookup"><span data-stu-id="52f13-121">Absolutely prevent syncing of browser settings across user devices.</span></span>|
 
 
 

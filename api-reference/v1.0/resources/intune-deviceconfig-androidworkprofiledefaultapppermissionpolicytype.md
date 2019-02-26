@@ -1,28 +1,29 @@
 ---
 title: androidWorkProfileDefaultAppPermissionPolicyType 列挙型
-description: Android 作業プロファイル既定アプリケーションのアクセス許可ポリシーの種類。
+description: Android 作業プロファイル既定のアプリアクセス許可ポリシーの種類。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5f4e3b7a01d92981b79311049fd2da46c058c0aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947513"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255942"
 ---
-# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="92a26-103">androidWorkProfileDefaultAppPermissionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="92a26-103">androidWorkProfileDefaultAppPermissionPolicyType enum type</span></span>
+# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="8be58-103">androidWorkProfileDefaultAppPermissionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="8be58-103">androidWorkProfileDefaultAppPermissionPolicyType enum type</span></span>
 
-> <span data-ttu-id="92a26-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="92a26-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="8be58-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="8be58-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="92a26-105">Android 作業プロファイル既定アプリケーションのアクセス許可ポリシーの種類。</span><span class="sxs-lookup"><span data-stu-id="92a26-105">Android Work Profile default app permission policy type.</span></span>
-## <a name="members"></a><span data-ttu-id="92a26-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="92a26-106">Members</span></span>
-|<span data-ttu-id="92a26-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="92a26-107">Member</span></span>|<span data-ttu-id="92a26-108">値</span><span class="sxs-lookup"><span data-stu-id="92a26-108">Value</span></span>|<span data-ttu-id="92a26-109">説明</span><span class="sxs-lookup"><span data-stu-id="92a26-109">Description</span></span>|
+<span data-ttu-id="8be58-105">Android 作業プロファイル既定のアプリアクセス許可ポリシーの種類。</span><span class="sxs-lookup"><span data-stu-id="8be58-105">Android Work Profile default app permission policy type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="8be58-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="8be58-106">Members</span></span>
+|<span data-ttu-id="8be58-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="8be58-107">Member</span></span>|<span data-ttu-id="8be58-108">値</span><span class="sxs-lookup"><span data-stu-id="8be58-108">Value</span></span>|<span data-ttu-id="8be58-109">説明</span><span class="sxs-lookup"><span data-stu-id="8be58-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="92a26-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="92a26-110">deviceDefault</span></span>|<span data-ttu-id="92a26-111">0</span><span class="sxs-lookup"><span data-stu-id="92a26-111">0</span></span>|<span data-ttu-id="92a26-112">デバイスの既定値でことを目的しません。</span><span class="sxs-lookup"><span data-stu-id="92a26-112">Device default value, no intent.</span></span>|
-|<span data-ttu-id="92a26-113">プロンプト</span><span class="sxs-lookup"><span data-stu-id="92a26-113">prompt</span></span>|<span data-ttu-id="92a26-114">1</span><span class="sxs-lookup"><span data-stu-id="92a26-114">1</span></span>|<span data-ttu-id="92a26-115">メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="92a26-115">Prompt.</span></span>|
-|<span data-ttu-id="92a26-116">autoGrant</span><span class="sxs-lookup"><span data-stu-id="92a26-116">autoGrant</span></span>|<span data-ttu-id="92a26-117">2</span><span class="sxs-lookup"><span data-stu-id="92a26-117">2</span></span>|<span data-ttu-id="92a26-118">自動付与します。</span><span class="sxs-lookup"><span data-stu-id="92a26-118">Auto grant.</span></span>|
-|<span data-ttu-id="92a26-119">autoDeny</span><span class="sxs-lookup"><span data-stu-id="92a26-119">autoDeny</span></span>|<span data-ttu-id="92a26-120">3</span><span class="sxs-lookup"><span data-stu-id="92a26-120">3</span></span>|<span data-ttu-id="92a26-121">自動を拒否します。</span><span class="sxs-lookup"><span data-stu-id="92a26-121">Auto deny.</span></span>|
+|<span data-ttu-id="8be58-110">devicedefault</span><span class="sxs-lookup"><span data-stu-id="8be58-110">deviceDefault</span></span>|<span data-ttu-id="8be58-111">.0</span><span class="sxs-lookup"><span data-stu-id="8be58-111">0</span></span>|<span data-ttu-id="8be58-112">デバイスの既定値。意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="8be58-112">Device default value, no intent.</span></span>|
+|<span data-ttu-id="8be58-113">・</span><span class="sxs-lookup"><span data-stu-id="8be58-113">prompt</span></span>|<span data-ttu-id="8be58-114">1-d</span><span class="sxs-lookup"><span data-stu-id="8be58-114">1</span></span>|<span data-ttu-id="8be58-115">・.</span><span class="sxs-lookup"><span data-stu-id="8be58-115">Prompt.</span></span>|
+|<span data-ttu-id="8be58-116">autogrant</span><span class="sxs-lookup"><span data-stu-id="8be58-116">autoGrant</span></span>|<span data-ttu-id="8be58-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="8be58-117">2</span></span>|<span data-ttu-id="8be58-118">自動付与</span><span class="sxs-lookup"><span data-stu-id="8be58-118">Auto grant.</span></span>|
+|<span data-ttu-id="8be58-119">autodeny</span><span class="sxs-lookup"><span data-stu-id="8be58-119">autoDeny</span></span>|<span data-ttu-id="8be58-120">1/3</span><span class="sxs-lookup"><span data-stu-id="8be58-120">3</span></span>|<span data-ttu-id="8be58-121">自動拒否。</span><span class="sxs-lookup"><span data-stu-id="8be58-121">Auto deny.</span></span>|
 
 
 

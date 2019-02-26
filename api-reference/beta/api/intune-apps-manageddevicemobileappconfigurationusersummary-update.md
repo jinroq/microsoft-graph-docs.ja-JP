@@ -1,34 +1,34 @@
 ---
 title: managedDeviceMobileAppConfigurationUserSummary の更新
 description: managedDeviceMobileAppConfigurationUserSummary オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b5386c6a385ef499ea92f22ac20cd79a999f833
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb2ff2e5eeac7283dd850dc5bcb25a92466f0b1e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397667"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172710"
 ---
-# <a name="update-manageddevicemobileappconfigurationusersummary"></a><span data-ttu-id="c7364-103">managedDeviceMobileAppConfigurationUserSummary の更新</span><span class="sxs-lookup"><span data-stu-id="c7364-103">Update managedDeviceMobileAppConfigurationUserSummary</span></span>
+# <a name="update-manageddevicemobileappconfigurationusersummary"></a><span data-ttu-id="0c6bf-103">managedDeviceMobileAppConfigurationUserSummary の更新</span><span class="sxs-lookup"><span data-stu-id="0c6bf-103">Update managedDeviceMobileAppConfigurationUserSummary</span></span>
 
-> <span data-ttu-id="c7364-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="c7364-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c7364-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7364-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0c6bf-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c7364-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c7364-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0c6bf-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c7364-107">[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c7364-107">Update the properties of a [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object.</span></span>
+<span data-ttu-id="0c6bf-106">[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-106">Update the properties of a [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c7364-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="c7364-108">Prerequisites</span></span>
-<span data-ttu-id="c7364-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c7364-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0c6bf-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0c6bf-107">Prerequisites</span></span>
+<span data-ttu-id="0c6bf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="c7364-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c7364-111">Permission type</span></span>|<span data-ttu-id="c7364-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="c7364-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0c6bf-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0c6bf-110">Permission type</span></span>|<span data-ttu-id="0c6bf-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0c6bf-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7364-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c7364-113">Delegated (work or school account)</span></span>|<span data-ttu-id="c7364-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7364-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="c7364-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c7364-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7364-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7364-116">Not supported.</span></span>|
-|<span data-ttu-id="c7364-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c7364-117">Application</span></span>|<span data-ttu-id="c7364-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7364-118">Not supported.</span></span>|
+|<span data-ttu-id="0c6bf-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0c6bf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0c6bf-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c6bf-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="0c6bf-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0c6bf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0c6bf-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-115">Not supported.</span></span>|
+|<span data-ttu-id="0c6bf-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0c6bf-116">Application</span></span>|<span data-ttu-id="0c6bf-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c7364-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c7364-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0c6bf-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0c6bf-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,38 +37,38 @@ ms.locfileid: "29397667"
 PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7364-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c7364-120">Request headers</span></span>
-|<span data-ttu-id="c7364-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c7364-121">Header</span></span>|<span data-ttu-id="c7364-122">値</span><span class="sxs-lookup"><span data-stu-id="c7364-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0c6bf-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c6bf-119">Request headers</span></span>
+|<span data-ttu-id="0c6bf-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c6bf-120">Header</span></span>|<span data-ttu-id="0c6bf-121">値</span><span class="sxs-lookup"><span data-stu-id="0c6bf-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7364-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7364-123">Authorization</span></span>|<span data-ttu-id="c7364-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="c7364-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c7364-125">Accept</span><span class="sxs-lookup"><span data-stu-id="c7364-125">Accept</span></span>|<span data-ttu-id="c7364-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c7364-126">application/json</span></span>|
+|<span data-ttu-id="0c6bf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c6bf-122">Authorization</span></span>|<span data-ttu-id="0c6bf-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0c6bf-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0c6bf-124">Accept</span></span>|<span data-ttu-id="0c6bf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0c6bf-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7364-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="c7364-127">Request body</span></span>
-<span data-ttu-id="c7364-128">要求本文で、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c7364-128">In the request body, supply a JSON representation for the [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0c6bf-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0c6bf-126">Request body</span></span>
+<span data-ttu-id="0c6bf-127">要求本文で、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-127">In the request body, supply a JSON representation for the [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object.</span></span>
 
-<span data-ttu-id="c7364-129">次の表に、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="c7364-129">The following table shows the properties that are required when you create the [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md).</span></span>
+<span data-ttu-id="0c6bf-128">次の表に、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-128">The following table shows the properties that are required when you create the [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md).</span></span>
 
-|<span data-ttu-id="c7364-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c7364-130">Property</span></span>|<span data-ttu-id="c7364-131">型</span><span class="sxs-lookup"><span data-stu-id="c7364-131">Type</span></span>|<span data-ttu-id="c7364-132">説明</span><span class="sxs-lookup"><span data-stu-id="c7364-132">Description</span></span>|
+|<span data-ttu-id="0c6bf-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c6bf-129">Property</span></span>|<span data-ttu-id="0c6bf-130">型</span><span class="sxs-lookup"><span data-stu-id="0c6bf-130">Type</span></span>|<span data-ttu-id="0c6bf-131">説明</span><span class="sxs-lookup"><span data-stu-id="0c6bf-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c7364-133">id</span><span class="sxs-lookup"><span data-stu-id="c7364-133">id</span></span>|<span data-ttu-id="c7364-134">String</span><span class="sxs-lookup"><span data-stu-id="c7364-134">String</span></span>|<span data-ttu-id="c7364-135">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="c7364-135">Key of the entity.</span></span>|
-|<span data-ttu-id="c7364-136">pendingCount</span><span class="sxs-lookup"><span data-stu-id="c7364-136">pendingCount</span></span>|<span data-ttu-id="c7364-137">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-137">Int32</span></span>|<span data-ttu-id="c7364-138">保留中のユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-138">Number of pending Users</span></span>|
-|<span data-ttu-id="c7364-139">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="c7364-139">notApplicableCount</span></span>|<span data-ttu-id="c7364-140">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-140">Int32</span></span>|<span data-ttu-id="c7364-141">適用されないユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-141">Number of not applicable users</span></span>|
-|<span data-ttu-id="c7364-142">successCount</span><span class="sxs-lookup"><span data-stu-id="c7364-142">successCount</span></span>|<span data-ttu-id="c7364-143">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-143">Int32</span></span>|<span data-ttu-id="c7364-144">成功したユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-144">Number of succeeded Users</span></span>|
-|<span data-ttu-id="c7364-145">errorCount</span><span class="sxs-lookup"><span data-stu-id="c7364-145">errorCount</span></span>|<span data-ttu-id="c7364-146">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-146">Int32</span></span>|<span data-ttu-id="c7364-147">エラー ユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-147">Number of error Users</span></span>|
-|<span data-ttu-id="c7364-148">failedCount</span><span class="sxs-lookup"><span data-stu-id="c7364-148">failedCount</span></span>|<span data-ttu-id="c7364-149">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-149">Int32</span></span>|<span data-ttu-id="c7364-150">失敗したユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-150">Number of failed Users</span></span>|
-|<span data-ttu-id="c7364-151">conflictCount</span><span class="sxs-lookup"><span data-stu-id="c7364-151">conflictCount</span></span>|<span data-ttu-id="c7364-152">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-152">Int32</span></span>|<span data-ttu-id="c7364-153">競合しているユーザーの数</span><span class="sxs-lookup"><span data-stu-id="c7364-153">Number of users in conflict</span></span>|
-|<span data-ttu-id="c7364-154">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="c7364-154">lastUpdateDateTime</span></span>|<span data-ttu-id="c7364-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c7364-155">DateTimeOffset</span></span>|<span data-ttu-id="c7364-156">最終更新時刻</span><span class="sxs-lookup"><span data-stu-id="c7364-156">Last update time</span></span>|
-|<span data-ttu-id="c7364-157">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="c7364-157">configurationVersion</span></span>|<span data-ttu-id="c7364-158">Int32</span><span class="sxs-lookup"><span data-stu-id="c7364-158">Int32</span></span>|<span data-ttu-id="c7364-159">対象の概要に関するポリシーのバージョン</span><span class="sxs-lookup"><span data-stu-id="c7364-159">Version of the policy for that overview</span></span>|
+|<span data-ttu-id="0c6bf-132">id</span><span class="sxs-lookup"><span data-stu-id="0c6bf-132">id</span></span>|<span data-ttu-id="0c6bf-133">String</span><span class="sxs-lookup"><span data-stu-id="0c6bf-133">String</span></span>|<span data-ttu-id="0c6bf-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-134">Key of the entity.</span></span>|
+|<span data-ttu-id="0c6bf-135">pendingCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-135">pendingCount</span></span>|<span data-ttu-id="0c6bf-136">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-136">Int32</span></span>|<span data-ttu-id="0c6bf-137">保留中のユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-137">Number of pending Users</span></span>|
+|<span data-ttu-id="0c6bf-138">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-138">notApplicableCount</span></span>|<span data-ttu-id="0c6bf-139">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-139">Int32</span></span>|<span data-ttu-id="0c6bf-140">該当しないユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-140">Number of not applicable users</span></span>|
+|<span data-ttu-id="0c6bf-141">successCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-141">successCount</span></span>|<span data-ttu-id="0c6bf-142">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-142">Int32</span></span>|<span data-ttu-id="0c6bf-143">成功したユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-143">Number of succeeded Users</span></span>|
+|<span data-ttu-id="0c6bf-144">errorCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-144">errorCount</span></span>|<span data-ttu-id="0c6bf-145">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-145">Int32</span></span>|<span data-ttu-id="0c6bf-146">エラー ユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-146">Number of error Users</span></span>|
+|<span data-ttu-id="0c6bf-147">failedCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-147">failedCount</span></span>|<span data-ttu-id="0c6bf-148">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-148">Int32</span></span>|<span data-ttu-id="0c6bf-149">失敗したユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-149">Number of failed Users</span></span>|
+|<span data-ttu-id="0c6bf-150">conflictCount</span><span class="sxs-lookup"><span data-stu-id="0c6bf-150">conflictCount</span></span>|<span data-ttu-id="0c6bf-151">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-151">Int32</span></span>|<span data-ttu-id="0c6bf-152">競合しているユーザーの数</span><span class="sxs-lookup"><span data-stu-id="0c6bf-152">Number of users in conflict</span></span>|
+|<span data-ttu-id="0c6bf-153">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="0c6bf-153">lastUpdateDateTime</span></span>|<span data-ttu-id="0c6bf-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0c6bf-154">DateTimeOffset</span></span>|<span data-ttu-id="0c6bf-155">最終更新時刻</span><span class="sxs-lookup"><span data-stu-id="0c6bf-155">Last update time</span></span>|
+|<span data-ttu-id="0c6bf-156">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="0c6bf-156">configurationVersion</span></span>|<span data-ttu-id="0c6bf-157">Int32</span><span class="sxs-lookup"><span data-stu-id="0c6bf-157">Int32</span></span>|<span data-ttu-id="0c6bf-158">対象の概要に関するポリシーのバージョン</span><span class="sxs-lookup"><span data-stu-id="0c6bf-158">Version of the policy for that overview</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c7364-160">応答</span><span class="sxs-lookup"><span data-stu-id="c7364-160">Response</span></span>
-<span data-ttu-id="c7364-161">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c7364-161">If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0c6bf-159">応答</span><span class="sxs-lookup"><span data-stu-id="0c6bf-159">Response</span></span>
+<span data-ttu-id="0c6bf-160">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-160">If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7364-162">例</span><span class="sxs-lookup"><span data-stu-id="c7364-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0c6bf-161">例</span><span class="sxs-lookup"><span data-stu-id="0c6bf-161">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c7364-163">要求</span><span class="sxs-lookup"><span data-stu-id="c7364-163">Request</span></span>
-<span data-ttu-id="c7364-164">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c7364-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0c6bf-162">要求</span><span class="sxs-lookup"><span data-stu-id="0c6bf-162">Request</span></span>
+<span data-ttu-id="0c6bf-163">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-163">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 321
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c7364-165">応答</span><span class="sxs-lookup"><span data-stu-id="c7364-165">Response</span></span>
-<span data-ttu-id="c7364-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c7364-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0c6bf-164">応答</span><span class="sxs-lookup"><span data-stu-id="0c6bf-164">Response</span></span>
+<span data-ttu-id="0c6bf-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0c6bf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
