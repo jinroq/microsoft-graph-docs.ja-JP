@@ -1,47 +1,47 @@
 ---
-title: managementCondition リソースの種類
-description: 管理条件は、geo の囲いのように動的に発生することをイベントのタイム ・ フェンスとネットワーク フェンスです。
-localization_priority: Normal
+title: managementcondition リソースの種類
+description: 管理条件は、地域フェンス、タイムフェンス、ネットワークフェンスなど、動的にトリガーされる可能性があるイベントです。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c41b4cb3143349ba0fdd97633a70ec7b38e266ec
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 594716867cec1dcef9e0fee87af21fb63af99df0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405857"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163106"
 ---
-# <a name="managementcondition-resource-type"></a>managementCondition リソースの種類
+# <a name="managementcondition-resource-type"></a>managementcondition リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-管理条件は、geo の囲いのように動的に発生することをイベントのタイム ・ フェンスとネットワーク フェンスです。
+管理条件は、地域フェンス、タイムフェンス、ネットワークフェンスなど、動的にトリガーされる可能性があるイベントです。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト managementConditions](../api/intune-fencing-managementcondition-list.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)コレクション|[ManagementCondition](../resources/intune-fencing-managementcondition.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[ManagementCondition を取得します。](../api/intune-fencing-managementcondition-get.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)|[ManagementCondition](../resources/intune-fencing-managementcondition.md)オブジェクトのプロパティと関係を参照してください。|
-|[getManagementConditionsForPlatform 関数](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)コレクション|まだ文書化されていません|
+|[managementconditions を一覧表示する](../api/intune-fencing-managementcondition-list.md)|[managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|[managementcondition](../resources/intune-fencing-managementcondition.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[managementcondition の取得](../api/intune-fencing-managementcondition-get.md)|[managementcondition](../resources/intune-fencing-managementcondition.md)|[managementcondition](../resources/intune-fencing-managementcondition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[getmanagementconditionsforplatform 関数](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。|
-|displayName|String|管理者は、管理の条件の名前を定義します。|
-|説明|String|管理者は、管理状態の説明を定義します。|
-|createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側が生成されます。|
-|変更された日時|DateTimeOffset|管理条件が最後に修正された時間です。 サービス側を更新します。|
-|eTag|String|管理条件の ETag。 サービス側を更新します。|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件に該当するプラットフォームです。|
+|id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。|
+|uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。|
+|displayName|String|管理条件の管理者定義の名前。|
+|説明|String|管理条件の管理者定義の説明。|
+|createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側を生成しました。|
+|変更された日時|DateTimeOffset|管理条件が最後に変更された時刻。 サービス側を更新しました。|
+|eTag|String|管理条件の ETag。 サービス側を更新しました。|
+|アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|管理条件に関連付けられている管理の条件ステートメントです。|
+|managementconditionstatements|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|管理条件に関連付けられている管理条件ステートメント。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

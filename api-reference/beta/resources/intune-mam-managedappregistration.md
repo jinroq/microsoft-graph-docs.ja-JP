@@ -1,21 +1,21 @@
 ---
 title: managedAppRegistration リソース タイプ
 description: ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。 ManagedAppRegistration リソースは、組織のメンバーに使用されるアプリの詳細を管理機能と共に示します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a343dba3df1274693449b8f7cbefd83b131138c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 63645c7817281f201fd66e39e7fac2c59ff88f5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151122"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。
 ManagedAppRegistration リソースは、組織のメンバーに使用されるアプリの詳細を管理機能と共に示します。
@@ -38,15 +38,15 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |deviceType|String|ホスト デバイスの種類|
 |deviceTag|String|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。|
 |deviceName|String|ホスト デバイスの名前|
-|managedDeviceId|String|ホスト ・ デバイスの管理デバイスの識別子です。 ホスト ・ デバイスが管理されている場合にも、値を空にする可能性があります。|
-|azureADDeviceId|String|ホスト ・ デバイスの Azure Active Directory のデバイスの識別子です。 ホスト ・ デバイスは、Azure Active Directory が登録されている場合でも、値を空にする可能性があります。|
-|deviceModel|String|現在のアプリケーションの登録用のデバイス モデル |
-|deviceManufacturer|String|現在のアプリケーションの登録のためのデバイスの製造元 |
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイスで実行されているアプリ|
+|manageddeviceid|String|ホストデバイスの管理デバイス識別子。 ホストデバイスが管理されている場合でも、値を空にすることができます。|
+|azureADDeviceId|String|ホストデバイスの Azure Active Directory デバイス識別子。 ホストデバイスが Azure Active Directory に登録されている場合でも、値を空にすることができます。|
+|deviceModel|String|現在のアプリ登録のデバイスモデル |
+|deviceManufacturer|String|現在のアプリ登録のデバイスの製造元 |
+|flaggedReasons|[managedappflaggedreason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイスで実行されているアプリ|
 |userId|String|このアプリの登録が属するユーザー ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリ パッケージの識別子|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|id|文字列|エンティティのキー。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

@@ -1,35 +1,35 @@
 ---
 title: iosEduCertificateSettings リソースの種類
-description: 信頼されたルートと PFX 証明書 EDU の入出力数のです。
-localization_priority: Normal
+description: iOS EDU の信頼されたルートおよび PFX 証明書。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d23b379dea7a75e4ae79029845cd6e9f956503c0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4c94b7bc75022f8338a41da3b3b9d135dff47ac3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423553"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142652"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-信頼されたルートと PFX 証明書 EDU の入出力数のです。
+iOS EDU の信頼されたルートおよび PFX 証明書。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|trustedRootCertificate|Binary|信頼されたルート証明書です。|
-|します|String|UI に表示するファイル名です。|
+|trustedRootCertificate|Binary|信頼されたルート証明書。|
+|certfilename|String|UI に表示されるファイル名。|
 |certificationAuthority|String|PKCS 証明機関。|
-|certificationAuthorityName|String|PKCS 証明機関の名前です。|
-|certificateTemplateName|String|PKCS の証明書テンプレートの名前です。|
-|renewalThresholdPercentage|Int32|証明書の書き換えのしきい値の割合です。 1 から 99 までの有効な値|
-|certificateValidityPeriodValue|Int32|証明書の有効期間の値です。|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケールです。 可能な値は、`days`、`months`、`years` です。|
+|certificationAuthorityName|String|PKCS 証明機関名。|
+|certificatetemplatename|String|PKCS 証明書テンプレート名。|
+|renewalThresholdPercentage|Int32|証明書の更新しきい値の割合。 有効な値は 1 ~ 99|
+|certificateValidityPeriodValue|Int32|証明書の有効期間の値。|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケール。 可能な値は、`days`、`months`、`years` です。|
 
 ## <a name="relationships"></a>関係
 なし

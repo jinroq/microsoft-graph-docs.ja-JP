@@ -1,47 +1,47 @@
 ---
-title: groupPolicyDefinition リソースの種類
-description: エンティティでは、すべての単一のグループ ポリシーに関する情報について説明します。
-localization_priority: Normal
+title: grouppolicydefinition リソースの種類
+description: エンティティは、1つのグループポリシーに関するすべての情報を記述します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 502312f7a39dd5dc93fd8e39203f56d47a9ebf27
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e7649d249a034278741199e1f858f07ea34c7137
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164058"
 ---
-# <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition リソースの種類
+# <a name="grouppolicydefinition-resource-type"></a>grouppolicydefinition リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-エンティティでは、すべての単一のグループ ポリシーに関する情報について説明します。
+エンティティは、1つのグループポリシーに関するすべての情報を記述します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[GroupPolicyDefinition を取得します。](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|[GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyDefinition を更新します。](../api/intune-grouppolicy-grouppolicydefinition-update.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|[GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティを更新します。|
+|[grouppolicydefinition の取得](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicydefinition の更新](../api/intune-grouppolicy-grouppolicydefinition-update.md)|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|ポリシーを適用できるグループの種類を識別します。 可能な値は、`user`、`machine`、`both` です。|
-|displayName|String|ローカライズされたポリシーの名前です。|
-|説明|String|ローカライズされた説明またはヘルプ テキスト、ポリシーに関連付けられています。 既定値は空です。|
-|categoryPath|String|ポリシーのすべてのローカライズされたカテゴリのパスです。|
-|supportedOn|String|どのようなオペレーティング システムまたはアプリケーションのバージョンを指定するために使用するローカライズされた文字列は、ポリシーの影響を受けます。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループ ポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
+|classType|[grouppolicydefinitionclasstype](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|ポリシーを適用できるグループの種類を指定します。 可能な値は `user`、`machine`、`both` です。|
+|displayName|String|ローカライズされたポリシー名。|
+|explainText|String|ポリシーに関連付けられたローカライズされた説明またはヘルプテキスト。 既定値は empty です。|
+|categoryPath|String|ポリシーのローカライズされた完全なカテゴリのパス。|
+|supportedOn|String|ポリシーによって影響を受けるオペレーティングシステムまたはアプリケーションのバージョンを指定するために使用されるローカライズされた文字列。|
+|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|-definitionfile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|定義に関連付けられているグループ ポリシー ファイルです。|
-|プレゼンテーション|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)コレクション|定義に関連付けられているグループ ポリシーのプレゼンテーションです。|
+|definitionfile|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|定義に関連付けられているグループポリシーファイル。|
+|プレゼンテーション|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)コレクション|定義に関連付けられたグループポリシーのプレゼンテーション。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

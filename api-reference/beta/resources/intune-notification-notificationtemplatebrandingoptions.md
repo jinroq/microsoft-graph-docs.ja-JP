@@ -1,31 +1,31 @@
 ---
 title: notificationTemplateBrandingOptions 列挙型
-description: メッセージ テンプレートのオプションをブランド化します。 ブランド化は、Intune 管理コンソールで定義されます。
-localization_priority: Normal
+description: メッセージテンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbd152ea3669f39e623f9301cbfeacc4f0b6b40f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e208f0d1ba1e72e1598120ec844fa77a4b8d3b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403526"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172444"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-メッセージ テンプレートのオプションをブランド化します。 ブランド化は、Intune 管理コンソールで定義されます。
+メッセージテンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|ブランド化はありません。|
-|includeCompanyLogo|1|会社のロゴが含まれます。|
-|includeCompanyName|2|会社名が含まれます。|
-|includeContactInformation|4|連絡先情報が含まれます。|
+|none|.0|ブランド化なし。|
+|includeCompanyLogo|1-d|会社のロゴを含めます。|
+|includeCompanyName|pbm-2|会社名を含めます。|
+|情報|2/4|連絡先情報を含めます。|
 
 
 

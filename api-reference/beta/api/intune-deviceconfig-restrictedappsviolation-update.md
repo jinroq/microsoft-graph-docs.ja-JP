@@ -1,23 +1,23 @@
 ---
-title: RestrictedAppsViolation を更新します。
-description: RestrictedAppsViolation オブジェクトのプロパティを更新します。
-localization_priority: Normal
+title: restrictedAppsViolation の更新
+description: restrictedAppsViolation オブジェクトのプロパティを更新します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01509691e65410776ba57269c8a7cb9e804ee661
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc2a440872d399cc684c2ce52ce2d825ba52f9ce
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403855"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163351"
 ---
-# <a name="update-restrictedappsviolation"></a>RestrictedAppsViolation を更新します。
+# <a name="update-restrictedappsviolation"></a>restrictedAppsViolation の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトのプロパティを更新します。
+[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,30 +41,30 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトの JSON 表記を指定します。
 
-[RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの一意の識別子です。 "Accountid"、deviceId、policyId、およびユーザー Id から構成されます。|
-|userId|String|ユーザーの一意の識別子の Guid にする必要があります。|
+|id|文字列|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
+|userId|String|ユーザーの一意識別子。 Guid である必要があります|
 |userName|String|ユーザー名|
-|managedDeviceId|String|管理対象デバイスの一意の識別子の Guid にする必要があります。|
+|manageddeviceid|String|管理デバイスの一意識別子。 Guid である必要があります|
 |deviceName|String|デバイス名|
-|deviceConfigurationId|String|デバイス構成プロファイルの一意の識別子の Guid にする必要があります。|
-|deviceConfigurationName|String|デバイス構成のプロファイル名|
+|deviceConfigurationId|String|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
+|deviceConfigurationName|String|デバイス構成プロファイル名|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームの種類。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
-|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|アプリケーションの状態を制限します。 使用可能な値は、`prohibitedApps`、`notApprovedApps` です。|
-|restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限されたアプリケーションの一覧|
+|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 使用可能な値は、`prohibitedApps`、`notApprovedApps` です。|
+|restrictedApps|[manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

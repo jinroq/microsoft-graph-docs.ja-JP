@@ -1,23 +1,23 @@
 ---
-title: DeviceManagementScript を作成します。
-description: 新しい deviceManagementScript オブジェクトを作成します。
-localization_priority: Normal
+title: devicemanagementscript の作成
+description: 新しい devicemanagementscript オブジェクトを作成します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be0ffb8b912b25684ba0ed3dc383a995fb872f3b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 40472e27f1ba900121c5c7927ec5d15f27582c99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409273"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173620"
 ---
-# <a name="create-devicemanagementscript"></a>DeviceManagementScript を作成します。
+# <a name="create-devicemanagementscript"></a>devicemanagementscript の作成
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。
+新しい[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -41,32 +41,32 @@ POST /deviceManagement/deviceManagementScripts
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に deviceManagementScript オブジェクトの JSON の形式を指定します。
+要求本文で、devicemanagementscript オブジェクトの JSON 表記を指定します。
 
-次の表は、deviceManagementScript を作成するときに必要なプロパティを示します。
+次の表に、devicemanagementscript の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト用の一意の識別子。|
-|displayName|String|デバイスの管理スクリプトの名前です。|
-|説明|String|デバイスの管理スクリプトのオプションの説明です。|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔です。 定義されていないスクリプトは実行 1 回|
-|scriptContent|Binary|スクリプトの内容。|
-|createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日時です。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、デバイス管理のスクリプトが最後に修正されました。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを指定します。|
-|fileName|String|スクリプト ファイルの名前です。|
-|roleScopeTagIds|String コレクション|この PowerShellScript インスタンスのスコープのタグ Id のリストです。|
-|runAs32Bit|Boolean|PowerShell スクリプトが 32 ビットとして実行する必要があるかどうかを示す値|
+|id|文字列|デバイス管理スクリプトの一意識別子。|
+|displayName|String|デバイス管理スクリプトの名前。|
+|説明|文字列|デバイス管理スクリプトの省略可能な説明です。|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
+|scriptcontent|Binary|スクリプトの内容。|
+|createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日付と時刻。|
+|lastModifiedDateTime|DateTimeOffset|デバイス管理スクリプトが最後に変更された日付と時刻。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理スクリプトを実行する実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
+|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
+|fileName|String|スクリプトファイル名。|
+|roleScopeTagIds|String コレクション|この powershellscript インスタンスの範囲タグ id のリスト。|
+|runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

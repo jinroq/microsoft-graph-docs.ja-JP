@@ -1,23 +1,23 @@
 ---
 title: officeConfigurationAssignmentTarget リソースの種類
-description: Office クライアントの構成の割り当てのターゲットです。
+description: Office クライアントの構成の割り当て先。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 61dbb87006935c8b39b0eab6f87a2255c465a446
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e20f9c6e0503d3d2870096ca11f2f634f1610f90
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396869"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172367"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>officeConfigurationAssignmentTarget リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Office クライアントの構成の割り当てのターゲットです。
+Office クライアントの構成の割り当て先。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

@@ -1,31 +1,31 @@
 ---
-title: airPrintDestination リソースの種類
-description: AirPrint のリンク先を表します。
-localization_priority: Normal
+title: 放映 printdestination リソースの種類
+description: 放映印刷先を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f56578427427d45a69c4c64fe9fde3cf31f8fd9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f09301bd791b5fd8b3fa430b50f7cdf58de43944
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167334"
 ---
-# <a name="airprintdestination-resource-type"></a>airPrintDestination リソースの種類
+# <a name="airprintdestination-resource-type"></a>放映 printdestination リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-AirPrint のリンク先を表します。
+放映印刷先を表します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ipAddress|文字列型 (String)|AirPrint の宛先の IP アドレスです。|
-|resourcePath|String|プリンターに関連付けられているリソースのパスです。 これは、Bonjour のレコードの _ipps.tcp の rp のパラメーターに対応しています。 例: プリンター/Canon_MG5300_series、プリンター/Xerox_Phaser_7600、ipp 印刷/Epson_IPP_Printer です。|
-|port|Int32|AirPrint のリンク先のリッスン ポート。 このキーが既定のポートは AirPrint を使用して、指定されていない場合。 IOS 11.0 で利用可能な後で。|
-|forceTls|Boolean|AirPrint 接続の場合は true、トランスポート層セキュリティ (TLS) によって保護されている場合。 既定では false を指定します。 IOS 11.0 で利用可能な後で。|
+|ipAddress|String|放映される印刷先の IP アドレス。|
+|resourcePath|String|プリンターに関連付けられているリソースパス。 これは、(ipBonjour レコードの rp パラメーターに対応します。 例: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer|
+|port|Int32|放映された印刷先のリスニングポート。 このキーが指定されていない場合、印刷時に既定のポートが使用されます。 iOS 11.0 以降で利用可能です。|
+|forcetls|Boolean|true の場合、放送印刷接続はトランスポート層セキュリティ (TLS) によって保護されます。 既定値は false です。 iOS 11.0 以降で利用可能です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

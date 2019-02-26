@@ -1,21 +1,21 @@
 ---
 title: onPremisesConditionalAccessSettings の更新
 description: onPremisesConditionalAccessSettings オブジェクトのプロパティを更新します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efd5ba18c958bd09e10a461350b76eb97aa56cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b7fa6f3c1c5305cb06b24880aac868ff46c4c0f5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142344"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトのプロパティを更新します。
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトの JSON 表記を指定します。
@@ -52,7 +52,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
-|enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|enabled|ブール型|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|Boolean|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|

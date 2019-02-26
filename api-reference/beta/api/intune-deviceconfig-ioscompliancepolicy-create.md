@@ -1,21 +1,21 @@
 ---
 title: Create iosCompliancePolicy
 description: 新しい iosCompliancePolicy オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1fdebc75bfa98d2da83889c0e0e4cbc2ed76a23
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 744c795a67cd240b03127419f9c00068df8e702a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166200"
 ---
 # <a name="create-ioscompliancepolicy"></a>Create iosCompliancePolicy
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iosCompliancePolicy オブジェクトの JSON 表記を指定します。
@@ -50,10 +50,10 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -64,17 +64,17 @@ POST /deviceManagement/deviceCompliancePolicies
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
 |passcodePreviousPasscodeBlockCount|Int32|ブロックする、以前のパスコードの数。 有効な値は 1 から 24 までです|
 |passcodeMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|要求されるパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passcodeRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|要求されるパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
 |osMinimumVersion|String|最低限必要な iOS のバージョン。|
 |osMaximumVersion|String|iOS の最高バージョン。|
-|osMinimumBuildVersion|String|最低限の IOS のバージョンをビルドします。|
-|osMaximumBuildVersion|String|最大の IOS バージョンをビルドします。|
+|osminimumbuildversion|String|最小の IOS ビルドバージョン。|
+|osmaximumbuildversion|String|IOS ビルドの最大バージョン。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
 |deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを指定します。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大 100 個の要素を含めることができます。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスに、指定されたアプリがインストールされていないことを要求します。 このコレクションには、最大100個の要素を含めることができます。|
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: ActiveDirectoryWindowsAutopilotDeploymentProfile を作成します。
+title: activeDirectoryWindowsAutopilotDeploymentProfile を作成する
 description: 新しい activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2afa98528be1dfdf8049142dc66f5ae2c0657cb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8eb470994fc0227cfce3ad497bfe933df646b049
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393607"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162973"
 ---
-# <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を作成します。
+# <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>activeDirectoryWindowsAutopilotDeploymentProfile を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトを作成します。
 
@@ -41,30 +41,31 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトの JSON の形式を指定します。
+要求本文で、activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトの JSON 表記を指定します。
 
-次の表は、activeDirectoryWindowsAutopilotDeploymentProfile を作成するときに必要なプロパティを示します。
+次の表に、activeDirectoryWindowsAutopilotDeploymentProfile の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|プロファイル キーは、 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されました。|
-|displayName|String|[WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されるプロファイルの名前|
-|説明|String|[WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されるプロファイルの説明|
-|language|String|[WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されるデバイスで構成されている言語|
-|createdDateTime|DateTimeOffset|継承されるプロファイル作成時は、 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から|
-|lastModifiedDateTime|DateTimeOffset|プロファイルは、 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)からの継承の時間を最終更新日|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|ボックス発生[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)からの継承を設定します。|
-|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|登録ステータス画面が[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)からの継承を設定します。|
-|extractHardwareHash|Boolean|[WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されるプロファイルの HardwareHash の抽出|
-|deviceNameTemplate|String|自動操縦装置のデバイスの名前を指定するために使用するテンプレートです。 これは、ユーザー設定のテキスト、デバイスのシリアル番号またはランダムに生成された番号のいずれかが含まれていることもできます。 テンプレートによって生成されたテキストの長さの合計は、15 個以内の文字を使用できます。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されました。|
+|id|文字列|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルキー|
+|displayName|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの名前|
+|説明|文字列|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの説明|
+|language|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承したデバイスで構成されている言語|
+|createdDateTime|DateTimeOffset|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの作成時刻|
+|lastModifiedDateTime|DateTimeOffset|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの最終更新日時|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承された、すぐに使える状態設定|
+|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承された登録の状態画面の設定|
+|extractHardwareHash|Boolean|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルのハードウェアハッシュ抽出|
+|deviceNameTemplate|String|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
+|enableホワイトグローブ|Boolean|プロファイルの自動操縦白の手袋を有効にします。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -73,7 +74,7 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles
 Content-type: application/json
-Content-length: 1044
+Content-length: 1073
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
@@ -100,7 +101,8 @@ Content-length: 1044
     "allowDeviceUseOnInstallFailure": true
   },
   "extractHardwareHash": true,
-  "deviceNameTemplate": "Device Name Template value"
+  "deviceNameTemplate": "Device Name Template value",
+  "enableWhiteGlove": true
 }
 ```
 
@@ -109,7 +111,7 @@ Content-length: 1044
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1216
+Content-Length: 1245
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
@@ -139,7 +141,8 @@ Content-Length: 1216
     "allowDeviceUseOnInstallFailure": true
   },
   "extractHardwareHash": true,
-  "deviceNameTemplate": "Device Name Template value"
+  "deviceNameTemplate": "Device Name Template value",
+  "enableWhiteGlove": true
 }
 ```
 

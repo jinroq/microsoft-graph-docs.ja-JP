@@ -1,34 +1,34 @@
 ---
 title: ratingAustraliaMoviesType 列挙型
-description: 映画のオーストラリアのラベルの評価
-localization_priority: Normal
+description: オーストラリアでの映画の定格ラベル
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee94e37275d0a97729ea3de12264067ecf1e2d3d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408412"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162665"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画のオーストラリアのラベルの評価
+オーストラリアでの映画の定格ラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|G のクラス分けは、すべてのユーザーに対して適切です|
-|parentalGuidance|3|PG が視聴者の親または保護者からのガイドに目をお勧め|
-|成熟|4|ビューアーで 15 M のクラス分けは推奨されません。|
-|agesAbove15|5|MA15 + 分類には適していません 15 未満の閲覧者です。|
-|agesAbove18|6|R18 + の分類は 18 才未満の閲覧者には適していません。|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|G 分類は、すべてのユーザーに適しています。|
+|parentalguidance|1/3|この PG は、親またはガーディアンからのガイダンスを含む15未満のビューアーを推奨します。|
+|度|2/4|M 分類は15以下の閲覧者には推奨されません|
+|agesAbove15|5|MA15 + 分類は15以下の閲覧者には適していません|
+|agesAbove18|シックス|R18 + 分類が18の閲覧者には適していません|
 
 
 

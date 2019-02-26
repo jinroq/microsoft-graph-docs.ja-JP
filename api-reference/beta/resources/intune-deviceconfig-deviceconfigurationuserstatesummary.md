@@ -1,40 +1,40 @@
 ---
 title: deviceConfigurationUserStateSummary リソースの種類
 description: まだ文書化されていません
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09b6bc36bb78583025378af4610e5cbb6fabea0c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 170b84d58d17bfbf8eea7d402c26b78019be3958
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163022"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>deviceConfigurationUserStateSummary リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[DeviceConfigurationUserStateSummary を取得します。](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|[DeviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)オブジェクトのプロパティと関係を参照してください。|
-|[DeviceConfigurationUserStateSummary を更新します。](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|[DeviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)オブジェクトのプロパティを更新します。|
+|[deviceConfigurationUserStateSummary を取得する](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[deviceConfigurationUserStateSummary の更新](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |unknownUserCount|Int32|不明なユーザーの数|
-|notApplicableUserCount|Int32|適用されないユーザーの数|
-|compliantUserCount|Int32|準拠のユーザーの数|
-|remediatedUserCount|Int32|修正されたユーザーの数|
+|notApplicableUserCount|Int32|該当しないユーザーの数|
+|compliantUserCount|Int32|準拠しているユーザーの数|
+|remediatedUserCount|Int32|修復したユーザーの数|
 |nonCompliantUserCount|Int32|準拠していないユーザーの数|
-|errorUserCount|Int32|エラー ユーザーの数|
+|errorUserCount|Int32|エラーが発生したユーザーの数|
 |conflictUserCount|Int32|競合ユーザーの数|
 
 ## <a name="relationships"></a>リレーションシップ

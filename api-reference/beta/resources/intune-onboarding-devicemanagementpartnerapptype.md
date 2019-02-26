@@ -1,30 +1,30 @@
 ---
 title: deviceManagementPartnerAppType 列挙型
-description: パートナー アプリケーションの種類です。
-localization_priority: Normal
+description: パートナーアプリの種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54dc77d063272a7ac5fca33a68b0436c0437d3ab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5942517f489d4ede4bb078b316d70145e1d66d6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419010"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171058"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-パートナー アプリケーションの種類です。
+パートナーアプリの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|パートナー アプリケーションの種類は不明です。|
-|singleTenantApp|1|パートナー アプリケーションは、AAD で単一のテナントです。|
-|multiTenantApp|2|パートナー アプリケーションは、AAD のマルチ テナント型です。|
+|不明|.0|パートナーアプリの種類が不明です。|
+|singleTenantApp|1-d|パートナーアプリは AAD の単一テナントです。|
+|multitenantapp|pbm-2|パートナーアプリは AAD のマルチテナントです。|
 
 
 

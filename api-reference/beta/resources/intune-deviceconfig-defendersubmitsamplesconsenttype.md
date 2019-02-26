@@ -1,31 +1,31 @@
 ---
 title: defenderSubmitSamplesConsentType 列挙型
 description: DefenderSubmitSamplesConsentType に指定できる値
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ee675152ba72eea3d12a9d8be1a22f5b3f31a0e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17b035677c0f0e1639c6cfb0568852f0d366562a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163162"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 DefenderSubmitSamplesConsentType に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|sendSafeSamplesAutomatically|0|安全なサンプルを自動的に送信します。|
-|alwaysPrompt|1|常に確認します。|
-|neverSend|2|送信しません。|
-|sendAllSamplesAutomatically|3|すべてのサンプルを自動的に送信します。|
+|sendSafeSamplesAutomatically|.0|安全なサンプルを自動的に送信する|
+|always プロンプト|1-d|常に確認する|
+|neverSend|pbm-2|送信しない|
+|sendAllSamplesAutomatically|1/3|すべてのサンプルを自動的に送信する|
 
 
 

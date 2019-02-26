@@ -1,47 +1,47 @@
 ---
-title: groupPolicyDefinitionValue リソースの種類
-description: 定義値のエンティティは、1 つのグループ ポリシーの定義の値を格納します。
-localization_priority: Normal
+title: grouppolicydefinitionvalue リソースの種類
+description: 定義値エンティティは、1つのグループポリシー定義の値を格納します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7e98a41409efba60ee1431fac82a49be2029039
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e822cb4ce46a0fa9492f7624904588fd1b10a7c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430510"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142617"
 ---
-# <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue リソースの種類
+# <a name="grouppolicydefinitionvalue-resource-type"></a>grouppolicydefinitionvalue リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-定義値のエンティティは、1 つのグループ ポリシーの定義の値を格納します。
+定義値エンティティは、1つのグループポリシー定義の値を格納します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト groupPolicyDefinitionValues](../api/intune-grouppolicy-grouppolicydefinitionvalue-list.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)コレクション|[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[GroupPolicyDefinitionValue を取得します。](../api/intune-grouppolicy-grouppolicydefinitionvalue-get.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティと関係を参照してください。|
-|[GroupPolicyDefinitionValue を作成します。](../api/intune-grouppolicy-grouppolicydefinitionvalue-create.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|新しい[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。|
-|[GroupPolicyDefinitionValue を削除します。](../api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md)|なし|の[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)を削除します。|
-|[GroupPolicyDefinitionValue を更新します。](../api/intune-grouppolicy-grouppolicydefinitionvalue-update.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティを更新します。|
+|[grouppolicydefinitionvalues のリスト](../api/intune-grouppolicy-grouppolicydefinitionvalue-list.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)コレクション|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[grouppolicydefinitionvalue の取得](../api/intune-grouppolicy-grouppolicydefinitionvalue-get.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[grouppolicydefinitionvalue の作成](../api/intune-grouppolicy-grouppolicydefinitionvalue-create.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|新しい[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。|
+|[grouppolicydefinitionvalue の削除](../api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md)|なし|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)を削除します。|
+|[grouppolicydefinitionvalue の更新](../api/intune-grouppolicy-grouppolicydefinitionvalue-update.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|日付と時刻オブジェクトを作成します。|
-|enabled|Boolean|有効または、関連付けられているグループ ポリシーの定義を無効にします。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値を構成する方法を指定します。 ポリシーとして、または環境設定のいずれかを指定できます。 使用可能な値は、`policy`、`preference` です。|
+|createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
+|enabled|Boolean|関連付けられたグループポリシー定義を有効または無効にします。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値の構成方法を指定します。 これは、ポリシーとして、または設定することができます。 使用可能な値は、`policy`、`preference` です。|
 |id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|日付と時刻、エンティティが最後に修正されました。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|presentationValues|[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)コレクション|定義の値に関連付けられたグループ ポリシー プレゼンテーション値です。|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|値に関連付けられているグループ ポリシーの定義です。|
+|プレゼンテーションの値|[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)コレクション|関連付けられたグループポリシーの値が定義値と共に表示されます。|
+|definition|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|関連付けられたグループポリシー定義の値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -1,39 +1,39 @@
 ---
-title: managementState 列挙型
-description: Microsoft Intune でのデバイスの状態を管理します。
-localization_priority: Normal
+title: managementstate 列挙型
+description: Microsoft Intune でのデバイスの管理状態。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8d0801949125f3b0cceb865ac1f8546195112e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174145"
 ---
-# <a name="managementstate-enum-type"></a>managementState 列挙型
+# <a name="managementstate-enum-type"></a>managementstate 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Microsoft Intune でのデバイスの状態を管理します。
+Microsoft Intune でのデバイスの管理状態。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|管理|0|管理対象デバイスは、します。|
-|retirePending|1|削除コマンドは、デバイスと管理から unenrolling の処理中に発生しています。|
-|retireFailed|2|破棄コマンドがデバイスに失敗しました。|
-|wipePending|3|ワイプ コマンドは、デバイスと管理から unenrolling の処理中に発生しています。|
-|wipeFailed|4|デバイス ワイプ コマンドが失敗しました。|
-|問題があります。|5|デバイスが正常な状態ではありません。|
-|deletePending|6|削除コマンドは、デバイスで発生しています。 |
-|retireIssued|7|デバイスの削除コマンドが発行されました|
-|wipeIssued|8|デバイス ワイプ コマンドがに対して発行されました|
-|wipeCanceled|9|このデバイスのワイプ コマンドがキャンセルされました|
-|retireCanceled|10|このデバイスの削除コマンドがキャンセルされました|
-|発見|11|デバイスが検出されたが、完全に登録されています。|
+|対象|.0|デバイスが管理下にある|
+|retirePending|1-d|廃棄コマンドは、デバイス上および管理からの登録取り消しプロセス中に発生します。|
+|retireFailed|pbm-2|デバイスでのリタイアコマンドが失敗しました|
+|wipepending|1/3|ワイプコマンドがデバイス上で発生していて、管理からの登録取り消しプロセスである|
+|wipefailed|2/4|デバイスでワイプコマンドが失敗しました|
+|正常|5|デバイスに問題があります。|
+|deletepending|シックス|デバイスで削除コマンドが発生しています |
+|retireIssued|7|デバイスに対して、廃棄コマンドが発行されました|
+|wipeissued 済み|~|デバイスに対してワイプコマンドが発行されました|
+|wipeCanceled|i-9|このデバイスのワイプコマンドは取り消されました|
+|retireCanceled|個|このデバイスの廃棄コマンドは取り消されました|
+|た|#|デバイスが検出されますが、完全に登録されていません。|
 
 
 

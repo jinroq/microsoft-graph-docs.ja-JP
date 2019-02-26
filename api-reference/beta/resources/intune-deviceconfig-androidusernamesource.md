@@ -1,31 +1,31 @@
 ---
 title: androidUsernameSource 列挙型
-description: Android のユーザー名のソースです。
-localization_priority: Normal
+description: Android ユーザー名ソース。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3a6e50820938386bfecb647d4ab9f8b756e51cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 658891e8958fd8e38b66ddc64db2bba4479566be
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404247"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151136"
 ---
 # <a name="androidusernamesource-enum-type"></a>androidUsernameSource 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Android のユーザー名のソースです。
+Android ユーザー名ソース。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|username|0|ユーザー名。|
-|userPrincipalName|1|ユーザー プリンシパル名。|
-|samAccountName|2|ユーザーの sam アカウント名。|
-|primarySmtpAddress|3|プライマリ SMTP アドレスです。|
+|username|.0|ユーザー名。|
+|userPrincipalName|1-d|ユーザー プリンシパル名。|
+|samAccountName|pbm-2|ユーザー sam のアカウント名。|
+|primarySmtpAddress|1/3|プライマリ SMTP アドレス。|
 
 
 

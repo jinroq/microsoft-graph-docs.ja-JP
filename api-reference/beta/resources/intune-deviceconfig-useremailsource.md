@@ -1,29 +1,29 @@
 ---
-title: userEmailSource 列挙型
-description: ユーザー名のソースまたはソースの表示可能な値です。
-localization_priority: Normal
+title: useremailsource 列挙型
+description: ユーザー名のソースまたはメールソースに指定できる値。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ffd50d6773ffa5cc037ef9ba6bfe44fd9e8a1be
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eef7e91c27b60f8b285b9abed0cca3acb862fa32
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399095"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166018"
 ---
-# <a name="useremailsource-enum-type"></a>userEmailSource 列挙型
+# <a name="useremailsource-enum-type"></a>useremailsource 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ユーザー名のソースまたはソースの表示可能な値です。
+ユーザー名のソースまたはメールソースに指定できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|userPrincipalName|0|ユーザー プリンシパル名です。|
-|primarySmtpAddress|1|プライマリ SMTP アドレスです。|
+|userPrincipalName|.0|ユーザープリンシパル名。|
+|primarySmtpAddress|1-d|プライマリ SMTP アドレス。|
 
 
 

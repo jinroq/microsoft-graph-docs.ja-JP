@@ -1,37 +1,37 @@
 ---
 title: windowsManagementAppHealthSummary リソースの種類
-description: Windows 管理アプリケーションの健康状態の概要のプロパティが含まれています。
-localization_priority: Normal
+description: Windows 管理アプリの正常性の概要のプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ca46f61259b8b956439c541bf8d5703a35aa93b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f62f5967702143149176cecd2513478256ead6d3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172059"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>windowsManagementAppHealthSummary リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Windows 管理アプリケーションの健康状態の概要のプロパティが含まれています。
+Windows 管理アプリの正常性の概要のプロパティが含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[WindowsManagementAppHealthSummary を取得します。](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティと関係を参照してください。|
-|[WindowsManagementAppHealthSummary を更新します。](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。|
+|[windowsManagementAppHealthSummary を取得する](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsManagementAppHealthSummary の更新](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
-|healthyDeviceCount|Int32|正常なデバイスの数。|
-|unhealthyDeviceCount|Int32|問題のあるデバイスの数。|
-|unknownDeviceCount|Int32|不明なデバイスの数。|
+|id|String|Windows management app health summary エンティティのキー。|
+|healthyDeviceCount|Int32|正常なデバイス数。|
+|unhealthyDeviceCount|Int32|異常なデバイス数。|
+|unknownDeviceCount|Int32|デバイス数が不明です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

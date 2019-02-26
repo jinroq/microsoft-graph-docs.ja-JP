@@ -1,32 +1,32 @@
 ---
 title: iosSingleSignOnSettings リソースの種類
-description: iOS は単一のサインオンでの Kerberos 認証の設定
-localization_priority: Normal
+description: シングルサインオンの iOS Kerberos 認証設定
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 189fb79be741bdf6b731b1e3c2b336934db8c86b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b438ea8fadc30a0bf5fa3786e9b4cec3344093c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421320"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142624"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-iOS は単一のサインオンでの Kerberos 認証の設定
+シングルサインオンの iOS Kerberos 認証設定
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|allowedAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|このログインを使用するのには許可されているアプリケーションの識別子の一覧です。 このフィールドを省略すると、ログインは、デバイス上のすべてのアプリケーションに適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|allowedUrls|String コレクション|このログインを使用するために一致する必要がある HTTP Url の一覧です。 9.0 以降、iOS でワイルドカード文字を使用することがあります。|
-|displayName|String|受信側デバイスに表示されるログインの設定の表示名。|
-|kerberosPrincipalName|String|Kerberos プリンシパルの名前です。 指定しない場合、プロファイルのインストール時にいずれかの入力が求められます。|
-|kerberosRealm|String|Kerberos レルムの名前です。 大文字小文字を区別します。|
+|allowedappslist プロパティ|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|このログインの使用が許可されているアプリ識別子のリスト。 このフィールドを省略した場合、ログインはデバイス上のすべてのアプリケーションに適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|allowedUrls|String コレクション|このログインを使用するために一致する必要がある HTTP url のリスト。 iOS 9.0 以降では、ワイルドカード文字を使用することができます。|
+|displayName|String|受信側デバイスに表示されるログイン設定の表示名。|
+|kerberosPrincipalName|String|Kerberos プリンシパル名。 指定しない場合、プロファイルのインストール時にユーザーに対してプロンプトが表示されます。|
+|kerberosRealm|String|Kerberos 領域名。 大文字小文字を区別します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

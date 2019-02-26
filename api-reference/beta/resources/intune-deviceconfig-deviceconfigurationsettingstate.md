@@ -1,21 +1,21 @@
 ---
 title: deviceConfigurationSettingState リソースの種類
 description: 指定されたデバイスのデバイス構成設定の状態。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9355cdf0aab60208246fdae699cda78be65d62ff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0acfcd697815ee9403e6144c5da34dd824022de3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415188"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165885"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定されたデバイスのデバイス構成設定の状態。
 
@@ -25,7 +25,7 @@ ms.locfileid: "29415188"
 |setting|String|レポートされている設定値です。|
 |settingName|String|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|
 |instanceDisplayName|String|レポートされている設定インスタンスの名前です。|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |errorCode|Int64|設定のエラー コード|
 |errorDescription|String|エラーの説明|
 |userId|String|UserId|

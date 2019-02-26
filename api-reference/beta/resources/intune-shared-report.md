@@ -1,31 +1,31 @@
 ---
 title: レポート リソースの種類
-description: Intune は、複数のワークフローをサポートする Microsoft グラフ API のレポートのリソースについて説明します。
+description: 複数のワークフローをサポートする Microsoft Graph API for Intune のレポートリソースについて説明します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 098c20b2460324c4975533902e1b71fde1af41c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f523f6df0b8b90cb6649ac81f1e433d6df227aea
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165752"
 ---
 # <a name="report-resource-type"></a>レポート リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-コンテキストに適切なコンテンツを返すなど。
+コンテキストに適した次の内容を返します。
 
-- デバイス構成のプロファイルの履歴のレポートです。
-- 障害レポートを登録します。
+- デバイス構成プロファイルの履歴レポート。
+- 登録エラーレポート。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|content|Stream|レポート コンテンツです。詳細は、レポートの種類によって異なります。|
+|content|Stream|レポートコンテンツ。詳細はレポートの種類によって異なります。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

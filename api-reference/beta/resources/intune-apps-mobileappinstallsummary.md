@@ -1,44 +1,44 @@
 ---
 title: mobileAppInstallSummary リソースの種類
-description: モバイル アプリケーションのインストールの概要のプロパティが含まれています。
-localization_priority: Normal
+description: モバイルアプリのインストールの概要のプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bd7c30c1b00e83731766bcd80f9a9fafd8e8b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150765"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-モバイル アプリケーションのインストールの概要のプロパティが含まれています。
+モバイルアプリのインストールの概要のプロパティが含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[MobileAppInstallSummary を取得します。](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティと関係を参照してください。|
-|[MobileAppInstallSummary を更新します。](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティを更新します。|
+|[mobileAppInstallSummary を取得する](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[mobileAppInstallSummary の更新](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|installedDeviceCount|Int32|このアプリケーションを正常にインストールするデバイスの数です。|
-|failedDeviceCount|Int32|このアプリケーションのインストールに失敗したデバイスの数。|
-|notApplicableDeviceCount|Int32|このアプリケーションには適用されていないデバイスの数です。|
-|notInstalledDeviceCount|Int32|このアプリケーションをインストールしていないデバイスの数。|
-|pendingInstallDeviceCount|Int32|このアプリケーションをインストールするのには通知しているデバイスの数です。|
-|installedUserCount|Int32|このアプリケーションをインストールするのにはデバイスがすべて成功しているユーザーの数です。|
-|failedUserCount|Int32|1 を持っているユーザー、またはこのアプリケーションのインストールに失敗した複数のデバイスの数です。|
-|notApplicableUserCount|Int32|デバイスがなかったすべてこのアプリケーションに適用可能なユーザーの数です。|
-|notInstalledUserCount|Int32|このアプリケーションがインストールされていない 1 つ以上のデバイスを持っているユーザーの数です。|
-|pendingInstallUserCount|Int32|1 を持っているユーザー、またはこのアプリケーションをインストールし、0 のデバイス障害を通知している複数のデバイスの数です。|
+|installedDeviceCount|Int32|このアプリが正常にインストールされたデバイスの数。|
+|failedDeviceCount|Int32|このアプリのインストールに失敗したデバイスの数。|
+|notApplicableDeviceCount|Int32|このアプリに適用されないデバイスの数。|
+|notInstalledDeviceCount|Int32|このアプリがインストールされていないデバイスの数。|
+|pendinginstalldevicecount|Int32|このアプリをインストールするように通知されたデバイスの数。|
+|installedUserCount|Int32|このアプリをインストールするためにすべてのデバイスが正常に終了したユーザーの数。|
+|failedUserCount|Int32|このアプリのインストールに失敗した1つ以上のデバイスを持つユーザーの数。|
+|notApplicableUserCount|Int32|このアプリに適用されていないデバイスを持つユーザーの数。|
+|notInstalledUserCount|Int32|このアプリをインストールしなかった1つ以上のデバイスを持つユーザーの数。|
+|pendinginstallusercount|Int32|このアプリをインストールするように通知された1つ以上のデバイスを保有していて、エラーがあるデバイスが0個あるユーザーの数。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

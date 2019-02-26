@@ -1,26 +1,26 @@
 ---
-title: windowsKioskVisitor リソースの種類
-description: 訪問者のキオスク アカウントの識別に使用するクラス
-localization_priority: Normal
+title: windowskioskvisitor リソースの種類
+description: 訪問者のキオスクアカウントを識別するために使用されるクラス
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 887d99061d507fa5c58a7f49c69504c4bef3d41c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 954f5a5dd5bddc76a9374540012992aa0b207671
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398542"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163246"
 ---
-# <a name="windowskioskvisitor-resource-type"></a>windowsKioskVisitor リソースの種類
+# <a name="windowskioskvisitor-resource-type"></a>windowskioskvisitor リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-訪問者のキオスク アカウントの識別に使用するクラス
+訪問者のキオスクアカウントを識別するために使用されるクラス
 
 
-[WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
+[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
