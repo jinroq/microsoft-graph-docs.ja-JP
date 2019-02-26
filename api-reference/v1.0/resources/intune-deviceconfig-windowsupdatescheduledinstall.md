@@ -3,32 +3,34 @@ title: windowsUpdateScheduledInstall リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3c0a58bf0bb6bc95c0208e1195566d5fc125073d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6b8f0eea6eb81f9e06243101bb2433fbcafaecae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971852"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264317"
 ---
-# <a name="windowsupdatescheduledinstall-resource-type"></a><span data-ttu-id="79a66-103">windowsUpdateScheduledInstall リソースの種類</span><span class="sxs-lookup"><span data-stu-id="79a66-103">windowsUpdateScheduledInstall resource type</span></span>
+# <a name="windowsupdatescheduledinstall-resource-type"></a><span data-ttu-id="67d83-103">windowsUpdateScheduledInstall リソースの種類</span><span class="sxs-lookup"><span data-stu-id="67d83-103">windowsUpdateScheduledInstall resource type</span></span>
 
-> <span data-ttu-id="79a66-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="79a66-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="67d83-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="67d83-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="79a66-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="79a66-105">Not yet documented</span></span>
+<span data-ttu-id="67d83-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="67d83-105">Not yet documented</span></span>
 
-<span data-ttu-id="79a66-106">[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="79a66-106">Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="79a66-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="79a66-107">Properties</span></span>
-|<span data-ttu-id="79a66-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="79a66-108">Property</span></span>|<span data-ttu-id="79a66-109">種類</span><span class="sxs-lookup"><span data-stu-id="79a66-109">Type</span></span>|<span data-ttu-id="79a66-110">説明</span><span class="sxs-lookup"><span data-stu-id="79a66-110">Description</span></span>|
+<span data-ttu-id="67d83-106">[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="67d83-106">Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="67d83-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="67d83-107">Properties</span></span>
+|<span data-ttu-id="67d83-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="67d83-108">Property</span></span>|<span data-ttu-id="67d83-109">型</span><span class="sxs-lookup"><span data-stu-id="67d83-109">Type</span></span>|<span data-ttu-id="67d83-110">説明</span><span class="sxs-lookup"><span data-stu-id="67d83-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="79a66-111">scheduledInstallDay</span><span class="sxs-lookup"><span data-stu-id="79a66-111">scheduledInstallDay</span></span>|[<span data-ttu-id="79a66-112">weeklySchedule</span><span class="sxs-lookup"><span data-stu-id="79a66-112">weeklySchedule</span></span>](../resources/intune-deviceconfig-weeklyschedule.md)|<span data-ttu-id="79a66-113">スケジュールされたインストールの週の曜日です。</span><span class="sxs-lookup"><span data-stu-id="79a66-113">Scheduled Install Day in week.</span></span> <span data-ttu-id="79a66-114">可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。</span><span class="sxs-lookup"><span data-stu-id="79a66-114">Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.</span></span>|
-|<span data-ttu-id="79a66-115">scheduledInstallTime</span><span class="sxs-lookup"><span data-stu-id="79a66-115">scheduledInstallTime</span></span>|<span data-ttu-id="79a66-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="79a66-116">TimeOfDay</span></span>|<span data-ttu-id="79a66-117">スケジュールされたインストール時刻</span><span class="sxs-lookup"><span data-stu-id="79a66-117">Scheduled Install Time during day</span></span>|
+|<span data-ttu-id="67d83-111">scheduledInstallDay</span><span class="sxs-lookup"><span data-stu-id="67d83-111">scheduledInstallDay</span></span>|[<span data-ttu-id="67d83-112">weeklySchedule</span><span class="sxs-lookup"><span data-stu-id="67d83-112">weeklySchedule</span></span>](../resources/intune-deviceconfig-weeklyschedule.md)|<span data-ttu-id="67d83-113">スケジュールされたインストール日 (週単位)。</span><span class="sxs-lookup"><span data-stu-id="67d83-113">Scheduled Install Day in week.</span></span> <span data-ttu-id="67d83-114">可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。</span><span class="sxs-lookup"><span data-stu-id="67d83-114">Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.</span></span>|
+|<span data-ttu-id="67d83-115">scheduledInstallTime</span><span class="sxs-lookup"><span data-stu-id="67d83-115">scheduledInstallTime</span></span>|<span data-ttu-id="67d83-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="67d83-116">TimeOfDay</span></span>|<span data-ttu-id="67d83-117">スケジュールされたインストール時刻</span><span class="sxs-lookup"><span data-stu-id="67d83-117">Scheduled Install Time during day</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="79a66-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="79a66-118">Relationships</span></span>
-<span data-ttu-id="79a66-119">なし</span><span class="sxs-lookup"><span data-stu-id="79a66-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="79a66-120">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="79a66-120">JSON Representation</span></span>
-<span data-ttu-id="79a66-121">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="79a66-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="67d83-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="67d83-118">Relationships</span></span>
+<span data-ttu-id="67d83-119">なし</span><span class="sxs-lookup"><span data-stu-id="67d83-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="67d83-120">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="67d83-120">JSON Representation</span></span>
+<span data-ttu-id="67d83-121">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="67d83-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall"

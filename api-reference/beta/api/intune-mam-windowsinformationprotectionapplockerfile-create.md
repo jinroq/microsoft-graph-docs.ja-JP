@@ -1,34 +1,34 @@
 ---
 title: windowsInformationProtectionAppLockerFile の作成
 description: 新しい windowsInformationProtectionAppLockerFile オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d55359478d72df0001ac730f6fffed8c70af066
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5972f8842cd91cf70b91f6b2242ad96b55a07846
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140909"
 ---
-# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="226c7-103">windowsInformationProtectionAppLockerFile の作成</span><span class="sxs-lookup"><span data-stu-id="226c7-103">Create windowsInformationProtectionAppLockerFile</span></span>
+# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="d09df-103">windowsInformationProtectionAppLockerFile の作成</span><span class="sxs-lookup"><span data-stu-id="d09df-103">Create windowsInformationProtectionAppLockerFile</span></span>
 
-> <span data-ttu-id="226c7-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="226c7-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="226c7-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="226c7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d09df-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d09df-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="226c7-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="226c7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d09df-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d09df-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="226c7-107">新しい [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="226c7-107">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
+<span data-ttu-id="d09df-106">新しい [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="d09df-106">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="226c7-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="226c7-108">Prerequisites</span></span>
-<span data-ttu-id="226c7-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="226c7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d09df-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="d09df-107">Prerequisites</span></span>
+<span data-ttu-id="d09df-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d09df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="226c7-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="226c7-111">Permission type</span></span>|<span data-ttu-id="226c7-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="226c7-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d09df-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d09df-110">Permission type</span></span>|<span data-ttu-id="d09df-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d09df-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="226c7-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="226c7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="226c7-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="226c7-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="226c7-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="226c7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="226c7-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="226c7-116">Not supported.</span></span>|
-|<span data-ttu-id="226c7-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="226c7-117">Application</span></span>|<span data-ttu-id="226c7-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="226c7-118">Not supported.</span></span>|
+|<span data-ttu-id="d09df-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d09df-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d09df-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d09df-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="d09df-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d09df-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d09df-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d09df-115">Not supported.</span></span>|
+|<span data-ttu-id="d09df-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d09df-116">Application</span></span>|<span data-ttu-id="d09df-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d09df-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="226c7-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="226c7-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d09df-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d09df-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="226c7-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="226c7-120">Request headers</span></span>
-|<span data-ttu-id="226c7-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="226c7-121">Header</span></span>|<span data-ttu-id="226c7-122">値</span><span class="sxs-lookup"><span data-stu-id="226c7-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d09df-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d09df-119">Request headers</span></span>
+|<span data-ttu-id="d09df-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d09df-120">Header</span></span>|<span data-ttu-id="d09df-121">値</span><span class="sxs-lookup"><span data-stu-id="d09df-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="226c7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="226c7-123">Authorization</span></span>|<span data-ttu-id="226c7-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="226c7-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="226c7-125">Accept</span><span class="sxs-lookup"><span data-stu-id="226c7-125">Accept</span></span>|<span data-ttu-id="226c7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="226c7-126">application/json</span></span>|
+|<span data-ttu-id="d09df-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d09df-122">Authorization</span></span>|<span data-ttu-id="d09df-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="d09df-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d09df-124">承諾</span><span class="sxs-lookup"><span data-stu-id="d09df-124">Accept</span></span>|<span data-ttu-id="d09df-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d09df-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="226c7-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="226c7-127">Request body</span></span>
-<span data-ttu-id="226c7-128">要求本文で、windowsInformationProtectionAppLockerFile オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="226c7-128">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d09df-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="d09df-126">Request body</span></span>
+<span data-ttu-id="d09df-127">要求本文で、windowsInformationProtectionAppLockerFile オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d09df-127">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
 
-<span data-ttu-id="226c7-129">次の表に、windowsInformationProtectionAppLockerFile の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="226c7-129">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
+<span data-ttu-id="d09df-128">次の表に、windowsInformationProtectionAppLockerFile の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="d09df-128">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
 
-|<span data-ttu-id="226c7-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="226c7-130">Property</span></span>|<span data-ttu-id="226c7-131">型</span><span class="sxs-lookup"><span data-stu-id="226c7-131">Type</span></span>|<span data-ttu-id="226c7-132">説明</span><span class="sxs-lookup"><span data-stu-id="226c7-132">Description</span></span>|
+|<span data-ttu-id="d09df-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d09df-129">Property</span></span>|<span data-ttu-id="d09df-130">型</span><span class="sxs-lookup"><span data-stu-id="d09df-130">Type</span></span>|<span data-ttu-id="d09df-131">説明</span><span class="sxs-lookup"><span data-stu-id="d09df-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="226c7-133">displayName</span><span class="sxs-lookup"><span data-stu-id="226c7-133">displayName</span></span>|<span data-ttu-id="226c7-134">String</span><span class="sxs-lookup"><span data-stu-id="226c7-134">String</span></span>|<span data-ttu-id="226c7-135">フレンドリ名</span><span class="sxs-lookup"><span data-stu-id="226c7-135">The friendly name</span></span>|
-|<span data-ttu-id="226c7-136">fileHash</span><span class="sxs-lookup"><span data-stu-id="226c7-136">fileHash</span></span>|<span data-ttu-id="226c7-137">String</span><span class="sxs-lookup"><span data-stu-id="226c7-137">String</span></span>|<span data-ttu-id="226c7-138">ファイルの SHA256 ハッシュ</span><span class="sxs-lookup"><span data-stu-id="226c7-138">SHA256 hash of the file</span></span>|
-|<span data-ttu-id="226c7-139">file</span><span class="sxs-lookup"><span data-stu-id="226c7-139">file</span></span>|<span data-ttu-id="226c7-140">Binary</span><span class="sxs-lookup"><span data-stu-id="226c7-140">Binary</span></span>|<span data-ttu-id="226c7-141">バイト配列のファイル</span><span class="sxs-lookup"><span data-stu-id="226c7-141">File as a byte array</span></span>|
-|<span data-ttu-id="226c7-142">id</span><span class="sxs-lookup"><span data-stu-id="226c7-142">id</span></span>|<span data-ttu-id="226c7-143">String</span><span class="sxs-lookup"><span data-stu-id="226c7-143">String</span></span>|<span data-ttu-id="226c7-144">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="226c7-144">Key of the entity.</span></span>|
-|<span data-ttu-id="226c7-145">version</span><span class="sxs-lookup"><span data-stu-id="226c7-145">version</span></span>|<span data-ttu-id="226c7-146">String</span><span class="sxs-lookup"><span data-stu-id="226c7-146">String</span></span>|<span data-ttu-id="226c7-147">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="226c7-147">Version of the entity.</span></span>|
+|<span data-ttu-id="d09df-132">displayName</span><span class="sxs-lookup"><span data-stu-id="d09df-132">displayName</span></span>|<span data-ttu-id="d09df-133">String</span><span class="sxs-lookup"><span data-stu-id="d09df-133">String</span></span>|<span data-ttu-id="d09df-134">フレンドリ名</span><span class="sxs-lookup"><span data-stu-id="d09df-134">The friendly name</span></span>|
+|<span data-ttu-id="d09df-135">fileHash</span><span class="sxs-lookup"><span data-stu-id="d09df-135">fileHash</span></span>|<span data-ttu-id="d09df-136">String</span><span class="sxs-lookup"><span data-stu-id="d09df-136">String</span></span>|<span data-ttu-id="d09df-137">ファイルの SHA256 ハッシュ</span><span class="sxs-lookup"><span data-stu-id="d09df-137">SHA256 hash of the file</span></span>|
+|<span data-ttu-id="d09df-138">file</span><span class="sxs-lookup"><span data-stu-id="d09df-138">file</span></span>|<span data-ttu-id="d09df-139">Binary</span><span class="sxs-lookup"><span data-stu-id="d09df-139">Binary</span></span>|<span data-ttu-id="d09df-140">バイト配列のファイル</span><span class="sxs-lookup"><span data-stu-id="d09df-140">File as a byte array</span></span>|
+|<span data-ttu-id="d09df-141">id</span><span class="sxs-lookup"><span data-stu-id="d09df-141">id</span></span>|<span data-ttu-id="d09df-142">文字列</span><span class="sxs-lookup"><span data-stu-id="d09df-142">String</span></span>|<span data-ttu-id="d09df-143">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="d09df-143">Key of the entity.</span></span>|
+|<span data-ttu-id="d09df-144">version</span><span class="sxs-lookup"><span data-stu-id="d09df-144">version</span></span>|<span data-ttu-id="d09df-145">String</span><span class="sxs-lookup"><span data-stu-id="d09df-145">String</span></span>|<span data-ttu-id="d09df-146">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="d09df-146">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="226c7-148">応答</span><span class="sxs-lookup"><span data-stu-id="226c7-148">Response</span></span>
-<span data-ttu-id="226c7-149">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="226c7-149">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d09df-147">応答</span><span class="sxs-lookup"><span data-stu-id="d09df-147">Response</span></span>
+<span data-ttu-id="d09df-148">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d09df-148">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="226c7-150">例</span><span class="sxs-lookup"><span data-stu-id="226c7-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d09df-149">例</span><span class="sxs-lookup"><span data-stu-id="d09df-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="226c7-151">要求</span><span class="sxs-lookup"><span data-stu-id="226c7-151">Request</span></span>
-<span data-ttu-id="226c7-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="226c7-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d09df-150">要求</span><span class="sxs-lookup"><span data-stu-id="d09df-150">Request</span></span>
+<span data-ttu-id="d09df-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d09df-151">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="226c7-153">応答</span><span class="sxs-lookup"><span data-stu-id="226c7-153">Response</span></span>
-<span data-ttu-id="226c7-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="226c7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d09df-152">応答</span><span class="sxs-lookup"><span data-stu-id="d09df-152">Response</span></span>
+<span data-ttu-id="d09df-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d09df-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

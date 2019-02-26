@@ -1,37 +1,37 @@
 ---
 title: deviceEnrollmentPlatformRestriction リソースの種類
 description: プラットフォーム固有の登録の制限
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bf4748d8dc083fe03b55b5ee88062ebb429f639
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eecbc405fd56d21f7be1c7b9bccd5254db89c8d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140601"
 ---
-# <a name="deviceenrollmentplatformrestriction-resource-type"></a><span data-ttu-id="9d6c8-103">deviceEnrollmentPlatformRestriction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9d6c8-103">deviceEnrollmentPlatformRestriction resource type</span></span>
+# <a name="deviceenrollmentplatformrestriction-resource-type"></a><span data-ttu-id="e204c-103">deviceEnrollmentPlatformRestriction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e204c-103">deviceEnrollmentPlatformRestriction resource type</span></span>
 
-> <span data-ttu-id="9d6c8-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9d6c8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9d6c8-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d6c8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e204c-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e204c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9d6c8-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9d6c8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e204c-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e204c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9d6c8-107">プラットフォーム固有の登録の制限</span><span class="sxs-lookup"><span data-stu-id="9d6c8-107">Platform specific enrollment restrictions</span></span>
+<span data-ttu-id="e204c-106">プラットフォーム固有の登録の制限</span><span class="sxs-lookup"><span data-stu-id="e204c-106">Platform specific enrollment restrictions</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9d6c8-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9d6c8-108">Properties</span></span>
-|<span data-ttu-id="9d6c8-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9d6c8-109">Property</span></span>|<span data-ttu-id="9d6c8-110">型</span><span class="sxs-lookup"><span data-stu-id="9d6c8-110">Type</span></span>|<span data-ttu-id="9d6c8-111">説明</span><span class="sxs-lookup"><span data-stu-id="9d6c8-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e204c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e204c-107">Properties</span></span>
+|<span data-ttu-id="e204c-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e204c-108">Property</span></span>|<span data-ttu-id="e204c-109">型</span><span class="sxs-lookup"><span data-stu-id="e204c-109">Type</span></span>|<span data-ttu-id="e204c-110">説明</span><span class="sxs-lookup"><span data-stu-id="e204c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9d6c8-112">platformBlocked</span><span class="sxs-lookup"><span data-stu-id="9d6c8-112">platformBlocked</span></span>|<span data-ttu-id="9d6c8-113">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="9d6c8-113">Boolean</span></span>|<span data-ttu-id="9d6c8-114">登録で対象プラットフォームをブロックします</span><span class="sxs-lookup"><span data-stu-id="9d6c8-114">Block the platform from enrolling</span></span>|
-|<span data-ttu-id="9d6c8-115">personalDeviceEnrollmentBlocked</span><span class="sxs-lookup"><span data-stu-id="9d6c8-115">personalDeviceEnrollmentBlocked</span></span>|<span data-ttu-id="9d6c8-116">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="9d6c8-116">Boolean</span></span>|<span data-ttu-id="9d6c8-117">個人所有のデバイスの登録をブロックします</span><span class="sxs-lookup"><span data-stu-id="9d6c8-117">Block personally owned devices from enrolling</span></span>|
-|<span data-ttu-id="9d6c8-118">osMinimumVersion</span><span class="sxs-lookup"><span data-stu-id="9d6c8-118">osMinimumVersion</span></span>|<span data-ttu-id="9d6c8-119">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="9d6c8-119">String</span></span>|<span data-ttu-id="9d6c8-120">サポートされる最小 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="9d6c8-120">Min OS version supported</span></span>|
-|<span data-ttu-id="9d6c8-121">osMaximumVersion</span><span class="sxs-lookup"><span data-stu-id="9d6c8-121">osMaximumVersion</span></span>|<span data-ttu-id="9d6c8-122">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="9d6c8-122">String</span></span>|<span data-ttu-id="9d6c8-123">サポートされる最大 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="9d6c8-123">Max OS version supported</span></span>|
+|<span data-ttu-id="e204c-111">platformBlocked</span><span class="sxs-lookup"><span data-stu-id="e204c-111">platformBlocked</span></span>|<span data-ttu-id="e204c-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="e204c-112">Boolean</span></span>|<span data-ttu-id="e204c-113">登録で対象プラットフォームをブロックします</span><span class="sxs-lookup"><span data-stu-id="e204c-113">Block the platform from enrolling</span></span>|
+|<span data-ttu-id="e204c-114">personalDeviceEnrollmentBlocked</span><span class="sxs-lookup"><span data-stu-id="e204c-114">personalDeviceEnrollmentBlocked</span></span>|<span data-ttu-id="e204c-115">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="e204c-115">Boolean</span></span>|<span data-ttu-id="e204c-116">個人所有のデバイスの登録をブロックします</span><span class="sxs-lookup"><span data-stu-id="e204c-116">Block personally owned devices from enrolling</span></span>|
+|<span data-ttu-id="e204c-117">osMinimumVersion</span><span class="sxs-lookup"><span data-stu-id="e204c-117">osMinimumVersion</span></span>|<span data-ttu-id="e204c-118">String</span><span class="sxs-lookup"><span data-stu-id="e204c-118">String</span></span>|<span data-ttu-id="e204c-119">サポートされる最小 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="e204c-119">Min OS version supported</span></span>|
+|<span data-ttu-id="e204c-120">osMaximumVersion</span><span class="sxs-lookup"><span data-stu-id="e204c-120">osMaximumVersion</span></span>|<span data-ttu-id="e204c-121">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="e204c-121">String</span></span>|<span data-ttu-id="e204c-122">サポートされる最大 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="e204c-122">Max OS version supported</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9d6c8-124">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="9d6c8-124">Relationships</span></span>
-<span data-ttu-id="9d6c8-125">なし</span><span class="sxs-lookup"><span data-stu-id="9d6c8-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e204c-123">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="e204c-123">Relationships</span></span>
+<span data-ttu-id="e204c-124">なし</span><span class="sxs-lookup"><span data-stu-id="e204c-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9d6c8-126">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9d6c8-126">JSON Representation</span></span>
-<span data-ttu-id="9d6c8-127">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9d6c8-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e204c-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e204c-125">JSON Representation</span></span>
+<span data-ttu-id="e204c-126">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e204c-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction"
