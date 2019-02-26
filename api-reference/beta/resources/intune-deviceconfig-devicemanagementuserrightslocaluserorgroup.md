@@ -1,30 +1,30 @@
 ---
 title: deviceManagementUserRightsLocalUserOrGroup リソースの種類
-description: ローカル ユーザーまたはグループのユーザー権利の設定の使用に関する情報を表します。
-localization_priority: Normal
+description: ユーザー権限の設定に使用されるローカルユーザーまたはグループの情報を表します。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a2cc0ff5b9e054398e7878b7d99619b59d109a4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 68c514635540bcf12db27e8a9ca816573293d3ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174861"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ローカル ユーザーまたはグループのユーザー権利の設定の使用に関する情報を表します。
+ユーザー権限の設定に使用されるローカルユーザーまたはグループの情報を表します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|name|String|ローカル ユーザーまたはグループの名前です。|
-|説明|String|ローカル ユーザーまたはグループの管理の説明です。|
-|securityIdentifier|String|このローカル ユーザーまたはグループのセキュリティ識別子 (例: * S-1-5-32-544)。|
+|name|String|このローカルユーザーまたはグループの名前。|
+|説明|String|このローカルユーザーまたはグループの管理者の説明。|
+|securityIdentifier|String|このローカルユーザーまたはグループのセキュリティ識別子 (たとえば * S-1-5-32-544)。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

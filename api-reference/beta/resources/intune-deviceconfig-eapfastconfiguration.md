@@ -1,31 +1,31 @@
 ---
-title: eapFastConfiguration 列挙型
-description: EAP-FAST 構成の使用可能な設定です。
-localization_priority: Normal
+title: eapfastconfiguration 列挙型
+description: eap-fast 構成で利用可能な設定。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa2c3c3a4cf0bc245ea7c9fbc4294d69215deee
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399389"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173571"
 ---
-# <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 列挙型
+# <a name="eapfastconfiguration-enum-type"></a>eapfastconfiguration 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-EAP-FAST 構成の使用可能な設定です。
+eap-fast 構成で利用可能な設定。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|noProtectedAccessCredential|0|EAP-FAST クリデンシャル (PAC) の保護されたアクセスなしを使用します。|
-|useProtectedAccessCredential|1|保護されたアクセス クリデンシャル (PAC) をを利用します。|
-|useProtectedAccessCredentialAndProvision|2|使用してアクセスを保護するクリデンシャル (PAC) と PAC. を提供します。|
-|useProtectedAccessCredentialAndProvisionAnonymously|3|保護されたアクセスの資格情報 (PAC)、PAC のプロビジョニングを使用して実行し、匿名で。|
+|noProtectedAccessCredential|.0|保護されたアクセス資格情報 (PAC) を使用せずに、eap-fast を使用します。|
+|useProtectedAccessCredential|1-d|保護されたアクセス資格情報 (PAC) を使用します。|
+|useProtectedAccessCredentialAndProvision|pbm-2|保護されたアクセス資格情報 (pac) を使用し、pac をプロビジョニングします。|
+|useProtectedAccessCredentialAndProvisionAnonymously|1/3|保護されたアクセス資格情報 (pac) を使用し、pac をプロビジョニングして、匿名で行います。|
 
 
 

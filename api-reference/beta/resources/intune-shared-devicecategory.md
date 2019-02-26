@@ -4,20 +4,20 @@ description: これらのカテゴリは、Intune Azure コンソールでデバ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b7470f6cf0193474bfaff4f7444ed3df1d9453a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 75fb11ef3b734e6d5d0490be1abc3c5399433a70
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418863"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174553"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-カテゴリのデバイスは、デバイスを分類する方法を提供します。 カテゴリのデバイスを使用すると、会社の管理者は、会社に意味のある一意のカテゴリを定義できます。これらのカテゴリは、Intune Azure コンソールでデバイスに適用することも、デバイスの登録時にユーザーが選択することもできます。 レポートをフィルター処理し、デバイス カテゴリに基づく動的な Azure Active Directory デバイス グループを作成できます。
+デバイスカテゴリは、デバイスを整理する方法を提供します。 会社の管理者は、デバイスカテゴリを使用して、会社にとって意味のある一意のカテゴリを定義できます。これらのカテゴリは、Intune Azure コンソールでデバイスに適用することも、デバイスの登録時にユーザーが選択することもできます。 レポートをフィルター処理し、デバイス カテゴリに基づく動的な Azure Active Directory デバイス グループを作成できます。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
@@ -31,8 +31,8 @@ ms.locfileid: "29418863"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
-|**契約時**|
+|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
 |説明|String|デバイス カテゴリに関するオプションの説明。|
 

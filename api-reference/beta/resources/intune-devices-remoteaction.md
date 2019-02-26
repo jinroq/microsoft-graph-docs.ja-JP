@@ -1,46 +1,46 @@
 ---
-title: remoteAction 列挙型
-description: リモート操作 Intune をサポートしています。
-localization_priority: Normal
+title: remoteaction 列挙型
+description: リモートアクション Intune がサポートしています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3177ea43599cd155e11af1786636111a8578d29b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c4eb232f53ecb6b857e1a762ac0bef59c9ca246a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405542"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174875"
 ---
-# <a name="remoteaction-enum-type"></a>remoteAction 列挙型
+# <a name="remoteaction-enum-type"></a>remoteaction 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-リモート操作 Intune をサポートしています。
+リモートアクション Intune がサポートしています。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|ユーザーは、不明なアクションを開始します。|
-|factoryReset|1|工場出荷時の動作を開始するユーザーは、デバイスをリセットします。 |
-|removeCompanyData|2|ユーザーは、デバイスから企業データを削除するアクションを開始します。 |
-|resetPasscode|3|ユーザーが、iOS デバイスのパスコードを削除するか、アプリのパスコードをリセットする操作を開始すると Windows のデバイスです。 |
-|remoteLock|4|ユーザーは、デバイスをリモート ロック操作を開始します。|
-|enableLostMode|5|ユーザーは、コールを管理する iOS デバイス上で失われたモードを有効にする操作を開始します。|
-|disableLostMode|6|ユーザーは、コールを管理する iOS デバイス上で失われたモードを無効にする操作を開始します。|
-|locateDevice|7|ユーザーは、コールを管理する iOS デバイスを検索する操作を開始します。|
-|rebootNow|8|ユーザーは、Windows のデバイスを再起動する操作を開始します。|
-|recoverPasscode|9|ユーザーは、windows の電話デバイスでの作業の passport の pin をリセットするのにはアクションを開始します。|
-|cleanWindowsDevice|10|ユーザーは、windows のデバイスをクリーンアップする処理を開始します。|
-|logoutSharedAppleDeviceActiveUser|11|ユーザーは、共有の apple デバイス上の現在のユーザーをログアウトする操作を開始します。|
-|quickScan|12|ユーザーは、デバイス上のクイック スキャンを実行するアクションを開始します。|
-|fullScan|13|ユーザーは、デバイスの完全なスキャンを実行するアクションを開始します。|
-|windowsDefenderUpdateSignatures|14|ユーザーは、デバイス上のマルウェアの署名を更新する操作を開始します。|
-|factoryResetKeepEnrollmentData|15|ユーザーは、登録データを保持することで、デバイスを操作リモート ワイプを開始します。|
-|updateDeviceAccount|16|ユーザーは、デバイス上のアカウントを更新する操作を開始します。|
-|automaticRedeployment|17|ユーザーが automatice デバイスを再配置する操作を開始します。|
-|シャット ダウン|18|ユーザーは、デバイスをシャット ダウンする操作を開始します。|
+|不明|.0|ユーザーが不明なアクションを開始します。|
+|factoryReset|1-d|ユーザーがデバイスを出荷時にリセットするアクションを開始します。 |
+|removecompanydata|pbm-2|ユーザーがデバイスから会社のデータを削除するアクションを開始します。 |
+|resetPasscode|1/3|ユーザーが、iOS デバイスのパスコードを削除するアクションを開始するか、Android/Windows デバイスのパスコードをリセットします。 |
+|remoteLock|2/4|ユーザーがデバイスをリモートロックするアクションを開始します。|
+|enableLostMode|5|ユーザーが、監視対象 iOS デバイスで失われたモードを有効にするアクションを開始します。|
+|disableLostMode|シックス|ユーザーが、監視対象 iOS デバイスで失われたモードを無効にするアクションを開始します。|
+|locateDevice|7|ユーザーが、監視対象 iOS デバイスを検索するアクションを開始します。|
+|rebootNow|~|ユーザーが Windows デバイスを再起動するアクションを開始します。|
+|recoverPasscode|i-9|ユーザーが windows phone デバイスでのパスポートの pin をリセットするアクションを開始します。|
+|cleanWindowsDevice|個|ユーザーが windows デバイスをクリーンアップするアクションを開始します。|
+|logoutSharedAppleDeviceActiveUser|#|ユーザーが、共有 apple デバイスの現在のユーザーをログアウトするアクションを開始します。|
+|quickScan|個|ユーザーがデバイスでクイックスキャンを実行するアクションを開始します。|
+|fullScan|スリー|ユーザーがデバイスでフルスキャンを実行するアクションを開始します。|
+|windowsDefenderUpdateSignatures|第|ユーザーがデバイスでマルウェア署名を更新するアクションを開始します。|
+|factoryResetKeepEnrollmentData|約|ユーザーが、登録データを保持する操作リモートワイプデバイスを開始します。|
+|updatedeviceaccount|16|ユーザーがデバイス上のアカウントを更新するアクションを開始します。|
+|自動再展開|インチ|ユーザーがデバイスを自動化して再展開するアクションを開始する|
+|シャット|個|ユーザーがデバイスをシャットダウンするアクションを開始します。|
 
 
 

@@ -1,27 +1,28 @@
 ---
 title: firewallPreSharedKeyEncodingMethodType 列挙型
-description: FirewallPreSharedKeyEncodingMethod に指定できる値
+description: firewallPreSharedKeyEncodingMethod に指定できる値
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4ad59a11aec2fbf715657de95eb3aafc778da43a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0c62144ef2974da5a3d975c759bb8d2bd2be6032
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947828"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259550"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-FirewallPreSharedKeyEncodingMethod に指定できる値
+firewallPreSharedKeyEncodingMethod に指定できる値
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|Intune で構成されている値は、デバイスのユーザーが設定した既定値をオーバーライドしない場合|
-|none|1|事前共有キーはエンコードされません。 ワイド文字形式で保存される代わりに、|
-|utF8|2|UTF-8 を使用して事前共有キーをエンコードします。|
+|devicedefault|.0|Intune によって構成された値がない。ユーザーが構成したデバイスの既定値を上書きしない|
+|none|1-d|事前共有キーはエンコードされていません。 代わりに、ワイド文字形式で保存されます。|
+|utF8|pbm-2|utf-8 を使用して事前共有キーをエンコードする|
 
 
 

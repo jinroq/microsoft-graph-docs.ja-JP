@@ -1,31 +1,31 @@
 ---
 title: windowsStartMenuAppListVisibilityType 列挙型
-description: '[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。'
-localization_priority: Normal
+description: スタートメニューアプリリスト表示の種類。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ee1d42f74217a2c1f1629b9e2e779307fdb29c7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bed7086b2aeaaf1aeb6cfbd735b17268ae616fcc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395966"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174567"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。
+スタートメニューアプリリスト表示の種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザーが定義します。 既定値です。|
-|折りたたみ|1|[スタート] メニューの [アプリケーション] ボックスの一覧を折りたたみます。|
-|remove|2|[スタート] メニューから、[アプリケーション] ボックスの一覧を削除します。|
-|disableSettingsApp|4|設定アプリで対応する切り替え (縮小または削除する) を無効にします。|
+|自分のもの|.0|ユーザー定義。 既定値です。|
+|表示|1-d|[スタート] メニューの [アプリ] の一覧を折りたたみます。|
+|remove|pbm-2|[スタート] メニューからアプリの一覧を完全に削除します。|
+|disablesettingsapp|2/4|設定アプリ内の対応するトグル (折りたたみまたは削除) を無効にします。|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: macOSLobApp リソースの種類
-description: MacOS の LOB アプリケーションのプロパティと継承されたプロパティが含まれています。
-localization_priority: Normal
+title: macoslobapp リソースの種類
+description: MacOS LOB アプリのプロパティと継承されたプロパティが含まれています。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a9f76cfe32261cb01d286ef0bc0f898d04943a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 49ee1f1ca3b9e9f05d2f9106dac4b9cf59309b9a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402847"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173452"
 ---
-# <a name="macoslobapp-resource-type"></a>macOSLobApp リソースの種類
+# <a name="macoslobapp-resource-type"></a>macoslobapp リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MacOS の LOB アプリケーションのプロパティと継承されたプロパティが含まれています。
+MacOS LOB アプリのプロパティと継承されたプロパティが含まれています。
 
 
 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します
@@ -25,19 +25,19 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)コレクション|[MacOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[MacOSLobApp を取得します。](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[MacOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティと関係を参照してください。|
-|[MacOSLobApp を作成します。](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|新しい[macOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトを作成します。|
-|[MacOSLobApp を削除します。](../api/intune-apps-macoslobapp-delete.md)|なし|の[macOSLobApp](../resources/intune-apps-macoslobapp.md)を削除します。|
-|[MacOSLobApp を更新します。](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[MacOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティを更新します。|
+|[macoslobapps のリスト](../api/intune-apps-macoslobapp-list.md)|[macoslobapp](../resources/intune-apps-macoslobapp.md)コレクション|[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[macoslobapp の取得](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[macoslobapp の作成](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|新しい[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトを作成します。|
+|[macoslobapp の削除](../api/intune-apps-macoslobapp-delete.md)|なし|[macoslobapp](../resources/intune-apps-macoslobapp.md)を削除します。|
+|[macoslobapp の更新](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -47,22 +47,22 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
+|fileName|文字列型 (String)|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|bundleId|String|バンドル id です。|
+|bundleId|String|バンドル id。|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
-|buildNumber|String|MacOS の基幹業務 (LoB) アプリケーションのビルド番号です。|
-|VersionNumber|String|MacOS の基幹業務 (LoB) アプリケーションのバージョン番号です。|
-|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md)コレクション|このバンドル パッケージ内のアプリケーションのリスト|
+|buildNumber|String|MacOS 基幹業務 (LoB) アプリのビルド番号。|
+|VersionNumber|String|MacOS 基幹業務 (LoB) アプリのバージョン番号。|
+|childapps|[macoslobchildapp](../resources/intune-apps-macoslobchildapp.md)コレクション|このバンドルパッケージのアプリリスト|
 |identityVersion|String|ID のバージョン。|
-|md5HashChunkSize|Int32|MD5 ハッシュのチャンク ・ サイズ|
-|md5Hash|String コレクション|MD5 のハッシュ コード|
-|ignoreVersionDetection|Boolean|アプリをデバイスにインストールした後に、アプリのバージョンを使用してアプリを検出するかどうかを制御するブール値。 MacOS の自己更新機能を使用する基幹業務 (LoB) アプリケーションは、true に設定します。|
+|md5HashChunkSize|Int32|MD5 ハッシュのチャンクサイズ|
+|md5Hash|String コレクション|MD5 ハッシュコード|
+|ignoreVersionDetection|Boolean|アプリをデバイスにインストールした後に、アプリのバージョンを使用してアプリを検出するかどうかを制御するブール値。 自己更新機能を使用する macOS 基幹業務 (LoB) アプリの場合は、true に設定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -70,8 +70,8 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイル アプリケーションのインストール状況の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) コレクション|このアプリのコンテンツのバージョンのリスト。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記

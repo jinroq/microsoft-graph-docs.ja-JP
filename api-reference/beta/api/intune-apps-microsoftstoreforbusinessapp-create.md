@@ -1,21 +1,21 @@
 ---
 title: Create microsoftStoreForBusinessApp
 description: 新しい microsoftStoreForBusinessApp オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9b866c2ada395144c779b59fb4b0fc096117ff7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3471bb6e06d3c201ed21c4b120ca4f37c8c4c2ab
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404758"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174962"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Create microsoftStoreForBusinessApp
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) オブジェクトを作成します。
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、microsoftStoreForBusinessApp オブジェクト用の JSON 表記を指定します。
@@ -50,10 +50,10 @@ POST /deviceAppManagement/mobileApps
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -63,15 +63,16 @@ POST /deviceAppManagement/mobileApps
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |usedLicenseCount|Int32|使用中の、ビジネス向け Microsoft Store ライセンスの数。|
 |totalLicenseCount|Int32|ビジネス向け Microsoft Store ライセンスの合計数。|
 |productKey|String|アプリのプロダクト キー|
-|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|アプリケーション ライセンスの種類。 使用可能な値は、`offline`、`online` です。|
+|licenseType|[microsoft storeforbusinesslicensetype](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|アプリライセンスの種類。 使用可能な値は、`offline`、`online` です。|
 |packageIdentityName|String|アプリ パッケージの識別子|
+|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|サポートされているライセンスの種類。|
 
 
 
@@ -85,7 +86,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 876
+Content-length: 1105
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -113,7 +114,14 @@ Content-length: 876
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 
@@ -122,7 +130,7 @@ Content-length: 876
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1277
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -153,7 +161,14 @@ Content-Length: 1048
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 

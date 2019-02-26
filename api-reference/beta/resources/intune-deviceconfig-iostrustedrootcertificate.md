@@ -1,23 +1,23 @@
 ---
 title: iosTrustedRootCertificate リソースの種類
-description: iOS 構成プロファイルのルート証明書を信頼します。
-localization_priority: Normal
+description: iOS の信頼されたルート証明書の構成プロファイル。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52f86631197ef31d7ce25f966a3b814f11071d60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b7875e10c5a3b4216318eaf1894c269413809928
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407250"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175165"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>iosTrustedRootCertificate リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-iOS 構成プロファイルのルート証明書を信頼します。
+iOS の信頼されたルート証明書の構成プロファイル。
 
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
@@ -25,25 +25,25 @@ iOS 構成プロファイルのルート証明書を信頼します。
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト iosTrustedRootCertificates](../api/intune-deviceconfig-iostrustedrootcertificate-list.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)コレクション|[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティと関係を一覧表示します。|
-|[IosTrustedRootCertificate を取得します。](../api/intune-deviceconfig-iostrustedrootcertificate-get.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティと関係を参照してください。|
-|[IosTrustedRootCertificate を作成します。](../api/intune-deviceconfig-iostrustedrootcertificate-create.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|新しい[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトを作成します。|
-|[IosTrustedRootCertificate を削除します。](../api/intune-deviceconfig-iostrustedrootcertificate-delete.md)|なし|の[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)を削除します。|
-|[IosTrustedRootCertificate を更新します。](../api/intune-deviceconfig-iostrustedrootcertificate-update.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
+|[リスト iosTrustedRootCertificates](../api/intune-deviceconfig-iostrustedrootcertificate-list.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)コレクション|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[iosTrustedRootCertificate を取得する](../api/intune-deviceconfig-iostrustedrootcertificate-get.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[iosTrustedRootCertificate を作成する](../api/intune-deviceconfig-iostrustedrootcertificate-create.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|新しい[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトを作成します。|
+|[iosTrustedRootCertificate の削除](../api/intune-deviceconfig-iostrustedrootcertificate-delete.md)|なし|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)を削除します。|
+|[iosTrustedRootCertificate の更新](../api/intune-deviceconfig-iostrustedrootcertificate-update.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|trustedRootCertificate|Binary|信頼されたルート証明書です。|
-|します|String|UI に表示するファイル名です。|
+|trustedRootCertificate|Binary|信頼されたルート証明書。|
+|certfilename|String|UI に表示されるファイル名。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -51,7 +51,7 @@ iOS 構成プロファイルのルート証明書を信頼します。
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) コレクション|デバイスごとのデバイス構成のインストール状況。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) コレクション|ユーザーごとのデバイス構成のインストール状態。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|

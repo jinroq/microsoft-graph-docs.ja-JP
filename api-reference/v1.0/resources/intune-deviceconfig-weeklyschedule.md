@@ -1,33 +1,34 @@
 ---
 title: weeklySchedule 列挙型
-description: 週単位のスケジュールに指定できる値です。
+description: 週単位のスケジュールに使用できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934661"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263022"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-週単位のスケジュールに指定できる値です。
+週単位のスケジュールに使用できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|毎日毎日|1|毎日毎日。|
-|日曜日|2|日曜日|
-|月曜日|3|月曜日|
-|火曜日|4|火曜日|
-|(水)|5|水曜日|
-|(木)|6|木曜日|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|毎日毎日|1-d|毎日毎日。|
+|n|pbm-2|日曜日|
+|曜日|1/3|月曜日|
+|毎週|2/4|火曜日|
+|毎週|5|水曜日|
+|火曜日|シックス|木曜日|
 |金曜日|7|金曜日|
-|土曜日|8|土曜日|
+|土日|~|土曜日|
 
 
 

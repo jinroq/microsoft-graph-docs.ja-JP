@@ -1,21 +1,21 @@
 ---
-title: WindowsAutopilotDeploymentProfileAssignment を作成します。
+title: windowsAutopilotDeploymentProfileAssignment を作成する
 description: 新しい windowsAutopilotDeploymentProfileAssignment オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cbed97d178b392d56e400f5c2c554ebe573ba41
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 30a6b1b64c4c434dfe364a49c6bf6fe080880a90
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395483"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175074"
 ---
-# <a name="create-windowsautopilotdeploymentprofileassignment"></a>WindowsAutopilotDeploymentProfileAssignment を作成します。
+# <a name="create-windowsautopilotdeploymentprofileassignment"></a>windowsAutopilotDeploymentProfileAssignment を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)オブジェクトを作成します。
 
@@ -41,22 +41,22 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に windowsAutopilotDeploymentProfileAssignment オブジェクトの JSON の形式を指定します。
+要求本文で、windowsAutopilotDeploymentProfileAssignment オブジェクトの JSON 表記を指定します。
 
-次の表は、windowsAutopilotDeploymentProfileAssignment を作成するときに必要なプロパティを示します。
+次の表に、windowsAutopilotDeploymentProfileAssignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|割り当てのキー。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Windows の自動操縦装置の配置のプロファイルの割り当てのターゲットです。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Windows 自動操縦展開プロファイルの割り当て先。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
