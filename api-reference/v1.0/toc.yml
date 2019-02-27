@@ -1090,6 +1090,7 @@ items:
         - name: 更新
           href: api/intune-apps-windowsuniversalappx-update.md
     - name: 会社の用語
+      displayName: Intune
       href: resources/intune-company-conceptual.md
       items:
       - name: 使用条件
@@ -1132,6 +1133,7 @@ items:
         - name: 更新
           href: api/intune-companyterms-termsandconditionsassignment-update.md
     - name: 企業の登録
+      displayName: Intune
       href: resources/intune-enrollment-conceptual.md
       items:
       - name: インポートした Windows AutoPilot デバイス ID
@@ -1167,6 +1169,7 @@ items:
       - name: インポートした Windows AutoPilot デバイス ID のアップロードの状態
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
     - name: デバイス構成
+      displayName: Intune
       href: resources/intune-device-cfg-conceptual.md
       items:
       - name: Android コンプライアンス ポリシー
@@ -2039,6 +2042,7 @@ items:
       - name: Windows ユーザー アカウント制御の設定
         href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
     - name: デバイスの管理
+      displayName: Intune
       href: resources/intune-device-mgt-conceptual.md
       items:
       - name: アクションの状態
@@ -2092,8 +2096,6 @@ items:
         href: resources/intune-devices-deviceactionresult.md
       - name: デバイスの登録失敗の理由
         href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-      - name: デバイスの登録の種類
-        href: resources/intune-devices-deviceenrollmenttype.md
       - name: デバイスの Exchange アクセス状態の要約
         href: resources/intune-devices-deviceexchangeaccessstatesummary.md
       - name: デバイスの位置情報
@@ -2263,7 +2265,8 @@ items:
         href: resources/intune-devices-windowsdeviceadaccount.md
       - name: Windows デバイス Azure AD アカウント
         href: resources/intune-devices-windowsdeviceazureadaccount.md
-    - name: モバイル アプリの管理
+    - name: モバイル アプリの管理 (MAM)
+      displayName: Intune
       href: resources/intune-mam-conceptual.md
       items:
       - name: Android 管理対象アプリの保護
@@ -2566,6 +2569,7 @@ items:
       - name: Windows 情報保護ストア アプリ
         href: resources/intune-mam-windowsinformationprotectionstoreapp.md
     - name: オンボーディング
+      displayName: Intune
       href: resources/intune-onboarding-conceptual.md
       items:
       - name: デバイス登録の構成
@@ -2735,8 +2739,9 @@ items:
         href: resources/intune-onboarding-vpptokensyncstatus.md
       - name: ビジネス向け Windows Hello 暗証番号 (PIN) の使用
         href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-    - name: 役割ベースのアクセス制御
-      href: resources/intune-rbac-conceptual.md
+    - name: 役割ベースのアクセス制御 (RBAC)
+      displayName: Intune
+      href: /resources/intune-rbac-conceptual.md
       items:
       - name: デバイスおよびアプリ管理役割の割り当て
         href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2808,6 +2813,7 @@ items:
       - name: ロールのアクセス許可
         href: resources/intune-rbac-rolepermission.md
     - name: 共有リソース
+      displayName: Intune
       href: resources/intune-shared-conceptual.md
       items:
       - name: すべてのデバイスの割り当て先
@@ -2840,6 +2846,8 @@ items:
           href: api/intune-shared-devicecategory-delete.md
         - name: 更新
           href: api/intune-shared-devicecategory-update.md
+      - name: デバイスの登録のタイプ
+        href: resources/intune-shared-deviceenrollmenttype.md
       - name: デバイスの管理
         href: resources/intune-shared-devicemanagement.md
         items:
@@ -2888,6 +2896,7 @@ items:
       - name: VPP トークン アカウントのタイプ
         href: resources/intune-shared-vpptokenaccounttype.md
     - name: 通信経費
+      displayName: Intune
       href: resources/intune-tem-conceptual.md
       items:
       - name: 通信経費の管理パートナー
@@ -4149,9 +4158,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 4295a10b58fa5a762811291710233df5b2d333aa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0ef10175d057f1e31a49259ad2cea04fcda8f906
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157044"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258899"

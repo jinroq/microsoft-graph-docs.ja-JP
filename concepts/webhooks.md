@@ -3,12 +3,12 @@ title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168496"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263378"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
@@ -26,8 +26,8 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 - [ユーザー][]
 - [グループ][]
 - Office 365 グループ[会話][]
-- ユーザーの個人用 OneDrive 上の_任意のフォルダー_の [driveItem][] 階層内のコンテンツ
-- OneDrive for Business 上の_ルート フォルダー_の [driveItem][] 階層内のコンテンツ
+- ユーザーの個人用 OneDrive 上の_任意のフォルダーの_ [driveItem][] 階層内のコンテンツ
+- OneDrive for Business 上の_ルート フォルダーの _ [driveItem][] 階層内のコンテンツ
 - セキュリティの[警告][]
 
 受信トレイなど特定の Outlook フォルダーに対してサブスクリプションを作成できます: `me/mailFolders('inbox')/messages`
@@ -50,8 +50,8 @@ Azure AD ベースのリソース (ユーザー、グループ) には一定の�
 - 最大サブスクリプションのクォータ:
 
   - アプリあたり: 合計 50,000 サブスクリプション
-  - テナントあたり: すべてのアプリで合計 35 サブスクリプション
-  - アプリとテナントの組み合わせ: 合計 7 サブスクリプション
+  - テナントあたり: すべてのアプリで合計 1000 サブスクリプション
+  - アプリとテナントの組み合わせ: 合計 100 サブスクリプション
 
 - Azure AD B2C テナントはサポートされていません。
 
