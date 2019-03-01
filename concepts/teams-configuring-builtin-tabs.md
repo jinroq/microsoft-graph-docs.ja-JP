@@ -4,12 +4,12 @@ description: Microsoft Graph API を使用して Microsoft Teams タブを作成
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967194"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342283"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -120,11 +120,11 @@ Wiki のタブは、Graph による構成をサポートしていません。
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | 空の文字列 ("")                                        |
-| contentUrl | string      | ドキュメント ライブラリのルート フォルダーの URL。 お使いのブラウザーで SharePoint フォルダーを開き、URL をコピーおよび削除して、この URL を検索できます」と Forms/AllItems.aspx」とその後のすべてのものです。 |
+| contentUrl | string      | ドキュメントライブラリのルートフォルダーの URL。 この url を確認するには、ブラウザーで SharePoint フォルダーを開き、url をコピーして、"/"/"/" を削除します。 |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>例: 設定済みのドキュメント ライブラリ] タブを作成します。
+### <a name="example-create-a-configured-document-library-tab"></a>例: 構成されたドキュメントライブラリタブを作成する
 
 次の例では、構成された Word タブを作成します。
 
@@ -135,7 +135,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
     "configuration": {
         "entityId": "",
-        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
         "removeUrl": null,
         "websiteUrl": null
     }
