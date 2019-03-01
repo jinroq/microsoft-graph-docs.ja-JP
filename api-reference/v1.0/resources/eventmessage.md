@@ -4,12 +4,12 @@ description: メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917728"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342318"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -19,9 +19,9 @@ ms.locfileid: "27917728"
 
 開催者またはアプリが会議出席依頼を送信すると、その会議出席依頼が出席者の受信ボックスに **meetingMessageType** が **meetingRequest** の **eventMessage** インスタンスとして届きます。 また、Outlook では出席者の予定表に **event** インスタンスが自動的に作成され、**showAs** プロパティは **tentative** になります。 
 
-出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 アプリケーションことができますもイベントに応答、出席者のためプログラムを使用して、[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[拒否](../api/event-decline.md)でイベント。
+出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 また、アプリでは、イベントを承諾、[仮](../api/event-tentativelyaccept.md)承諾、または[拒否](../api/event-decline.md)することによって、プログラムによって、出席者の代わりにイベントに応答することもできます。 [](../api/event-accept.md)
 
-別に会議出席依頼、 **eventMessage**インスタンスはイベントの開催者が会議をキャンセルするの結果として、出席者の受信トレイ フォルダー内、または、出席者が会議出席依頼への応答の結果として、開催者の受信トレイで確認できます。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
+会議出席依頼とは別に、イベント開催者が会議をキャンセルした結果として、または開催者の受信トレイで、会議出席依頼への返信が出席者によって行われたときに、出席者の受信トレイフォルダーに**eventmessage**インスタンスが見つかることがあります。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
 
 ## <a name="methods"></a>メソッド
 
@@ -29,7 +29,7 @@ ms.locfileid: "27917728"
 |:---------------|:--------|:----------|
 |[eventMessage の取得](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |eventMessage オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。 |
-|[削除](../api/message-delete.md) | なし |eventMessage オブジェクトを削除します。 |
+|[削除](../api/message-delete.md) | None |eventMessage オブジェクトを削除します。 |
 |[copy](../api/message-copy.md)|[message](message.md)|メッセージをフォルダーにコピーします。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
@@ -52,30 +52,30 @@ ms.locfileid: "27917728"
 |[複数値の拡張プロパティを持つ eventMessage の取得](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | `$expand` を使用して、複数値の拡張プロパティを含む eventMessage を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
 |bodyPreview|String|メッセージ本文の最初の 255 文字。テキスト形式です。|
 |categories|String コレクション|メッセージに関連付けられたカテゴリ。|
 |ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
-|changeKey|String|メッセージのバージョン。|
+|changeKey|文字列|メッセージのバージョン。|
 |conversationId|String|電子メールが属している会話の ID。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
-|flag|[followupFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
+|flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。|
-|id|String|イベント メッセージ (メッセージの移動または変更される場合、この値は変更可能性があることに注意) の一意の識別子|
+|hasAttachments|ブール型|メッセージに添付ファイルがあるかどうかを示します。|
+|id|String|イベントメッセージの一意の識別子 (メッセージが移動または変更されると、この値が変わる可能性があることに注意してください)|
 |importance|String| メッセージの重要度: `low`、`normal`、`high`。|
-|inferenceClassification|String| 可能な値: `focused`、 `other`。|
+|inferenceClassification|String| 使用可能な値は`focused`、 `other`、です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
-|meetingMessageType|meetingMessageType| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
+|meetingMessageType|meetingMessageType| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTentativelyAccepted``meetingDeclined`。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
@@ -92,8 +92,8 @@ ms.locfileid: "27917728"
 |attachments|[attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
 |event|[event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[extension](extension.md) コレクション|eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

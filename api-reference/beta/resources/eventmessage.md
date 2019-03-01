@@ -4,12 +4,12 @@ description: 'メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 11b38679916f85d9606989442ffb53e41c51c855
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643420"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342325"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -17,13 +17,13 @@ ms.locfileid: "29643420"
 
 メッセージは会議出席依頼、キャンセル、応答 (承諾、仮受諾、辞退のいずれか) を表します。 
 
-**EventMessage**エンティティは、[メッセージ](message.md)から派生し、 [eventMessageRequest](eventmessagerequest.md) **eventMessage**から派生し、会議出席依頼を表します。 **meetingMessageType** プロパティはイベント メッセージの種類を特定します。
+**eventmessage**エンティティは[message](message.md)から派生し、 [eventmessagの](eventmessagerequest.md)場合は**eventmessage**から派生し、会議出席依頼を表します。 **meetingMessageType** プロパティはイベント メッセージの種類を特定します。
 
 開催者またはアプリが会議出席依頼を送信すると、その会議出席依頼が出席者の受信ボックスに **meetingMessageType** が **meetingRequest** の **eventMessage** インスタンスとして届きます。 また、Outlook では出席者の予定表に **event** インスタンスが自動的に作成され、**showAs** プロパティは **tentative** になります。 
 
-出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 アプリケーションことができますもイベントに応答、出席者のためプログラムを使用して、[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[拒否](../api/event-decline.md)でイベント。
+出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage-get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 また、アプリでは、イベントを承諾、[仮](../api/event-tentativelyaccept.md)承諾、または[拒否](../api/event-decline.md)することによって、プログラムによって、出席者の代わりにイベントに応答することもできます。 [](../api/event-accept.md)
 
-別に会議出席依頼、 **eventMessage**インスタンスはイベントの開催者が会議をキャンセルするの結果として、出席者の受信トレイ フォルダー内、または、出席者が会議出席依頼への応答の結果として、開催者の受信トレイで確認できます。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
+会議出席依頼とは別に、イベント開催者が会議をキャンセルした結果として、または開催者の受信トレイで、会議出席依頼への返信が出席者によって行われたときに、出席者の受信トレイフォルダーに**eventmessage**インスタンスが見つかることがあります。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -100,43 +100,43 @@ ms.locfileid: "29643420"
 |conversationId|String|電子メールが属している会話の ID。|
 |conversationIndex|Binary|電子メールが属している会話のインデックス。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
-|endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時間です。|
+|endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時刻。|
 |flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
-|id|String||
+|hasAttachments|ブール型|メッセージに添付ファイルがあるかどうかを示します。|
+|id|文字列型 (String)||
 |importance|String| メッセージの重要度: `low`、`normal`、`high`。|
 |inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
-|internetMessageId |String |[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で指定された形式でメッセージの ID です。 |
-|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
+|internetMessageId |String |[RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で指定されている形式のメッセージ ID。 |
+|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントの**startDateTime**および**enddatetime**プロパティの調整も必要です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
-|location|[location](location.md)|要求された会議の場所です。|
-|meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
-|parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
+|location|[location](location.md)|要求された会議の場所。|
+|meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTentativelyAccepted``meetingDeclined`。|
+|parentFolderId|文字列|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|要求された会議の定期的なパターンです。|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|要求された会議の定期的なパターン。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
 |sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の開始時刻。|
 |subject|String|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
-|type|String|要求された会議の種類: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|String|要求された会議の`singleInstance`種類`occurence`: `exception`、 `seriesMaster`、、。|
 |uniqueBody|[itemBody](itembody.md)|現在のメッセージに特有のメッセージの本文の一部。|
 |UnsubscribeData|String|List-Unsubscribe ヘッダーに基づいて解析された有効なエントリ。UnsubscribeEnabled プロパティが true の場合、これは List-Unsubscribe ヘッダー内の mail コマンドのデータです。|
-|UnsubscribeEnabled|ブール値|メッセージが登録解除に対して有効になっているかどうかを示します。list-Unsubscribe ヘッダーが rfc-2369 に準拠している場合、その値は True です。|
-|webLink|String|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
+|UnsubscribeEnabled|Boolean|メッセージが登録解除に対して有効になっているかどうかを示します。list-Unsubscribe ヘッダーが rfc-2369 に準拠している場合、その値は True です。|
+|webLink|文字列|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|メッセージの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
+|attachments|[attachment](attachment.md) コレクション|メッセージの[fileattachment](fileattachment.md)、 [itemattachment](itemattachment.md)、および[referenceattachment](referenceattachment.md)添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
 |event|[event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[extension](extension.md) コレクション| eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
@@ -148,7 +148,7 @@ ms.locfileid: "29643420"
 |:---------------|:--------|:----------|
 |[eventMessage の取得](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |eventMessage オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。|
-|[削除](../api/eventmessage-delete.md) | なし |eventMessage オブジェクトを削除します。|
+|[削除](../api/eventmessage-delete.md) | None |eventMessage オブジェクトを削除します。|
 |[copy](../api/message-copy.md)|[message](message.md)|メッセージをフォルダーにコピーします。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
@@ -159,12 +159,12 @@ ms.locfileid: "29643420"
 |[replyAll](../api/message-replyall.md)|なし|メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[送信](../api/message-send.md)|なし|以前に作成したメッセージの下書きを送信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[unsubscribe](../api/message-unsubscribe.md)|なし|List-Unsubscribe ヘッダー内の最初の mailto コマンドで指定されたデータとアドレスを使用して、メッセージを送信します。|
-|**添付ファイル**| | |
+|**Attachments**| | |
 |[添付ファイルを一覧表示する](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) コレクション| eventMessage のすべての添付ファイルを取得します。|
 |[添付ファイルを追加する](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 添付ファイル コレクションへの投稿により、eventMessage に新しい添付ファイルを追加します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。|
-|[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能がオープンであることを名前で識別されるを取得します。|
+|[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前で識別されるオープン拡張機能を取得します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |新規または既存の eventMessage に、1 つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つ eventMessage の取得](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む eventMessage を取得します。 |
