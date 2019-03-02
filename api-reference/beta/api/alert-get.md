@@ -1,21 +1,21 @@
 ---
-title: 警告の取得
-description: プロパティと alert オブジェクトの関係を取得します。
+title: アラートを取得する
+description: alert オブジェクトのプロパティと関係を取得する
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 47564a15d7218d439b8d89a442f08bd363b6daa2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517184"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364599"
 ---
-# <a name="get-alert"></a>警告の取得
+# <a name="get-alert"></a>アラートを取得する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと[通知](../resources/alert.md)オブジェクトの関係を取得します。
+[alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,9 +23,9 @@ ms.locfileid: "29517184"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
+|委任 (職場または学校のアカウント) |  securityevents. all、securityevents、ReadWrite   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
+|アプリケーション | securityevents. all、securityevents、ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -47,7 +47,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**通知**オブジェクト。 2 xx または 404 以外のステータス コードは、プロバイダーから返された場合、またはプロバイダーがタイムアウトすると、応答がある場合、`206 Partial Content`警告ヘッダー内のプロバイダーの応答のステータス コード。 詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。 2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。 詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="example"></a>例
 
@@ -106,6 +106,19 @@ Content-type: application/json
       "name": "String",
       "path": "String",
       "riskScore": "String"
+    }
+  ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
     }
   ],
   "hostStates": [
