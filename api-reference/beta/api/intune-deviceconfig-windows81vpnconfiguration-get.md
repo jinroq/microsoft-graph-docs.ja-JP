@@ -1,34 +1,34 @@
 ---
-title: Windows81VpnConfiguration を取得します。
-description: Windows81VpnConfiguration オブジェクトのプロパティと関係を参照してください。
-localization_priority: Normal
+title: windows81VpnConfiguration を取得する
+description: windows81VpnConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 236bdd64910b9714e6632089fc97b8a8e64bde0a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 19319f1813b731dfa3d41f444629c0f6375e2401
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423364"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143170"
 ---
-# <a name="get-windows81vpnconfiguration"></a><span data-ttu-id="28fb7-103">Windows81VpnConfiguration を取得します。</span><span class="sxs-lookup"><span data-stu-id="28fb7-103">Get windows81VpnConfiguration</span></span>
+# <a name="get-windows81vpnconfiguration"></a><span data-ttu-id="c6791-103">windows81VpnConfiguration を取得する</span><span class="sxs-lookup"><span data-stu-id="c6791-103">Get windows81VpnConfiguration</span></span>
 
-> <span data-ttu-id="28fb7-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="28fb7-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="28fb7-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="28fb7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c6791-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c6791-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="28fb7-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="28fb7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c6791-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c6791-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="28fb7-107">[Windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)オブジェクトのプロパティと関係を参照してください。</span><span class="sxs-lookup"><span data-stu-id="28fb7-107">Read properties and relationships of the [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md) object.</span></span>
+<span data-ttu-id="c6791-106">[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="c6791-106">Read properties and relationships of the [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="28fb7-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="28fb7-108">Prerequisites</span></span>
-<span data-ttu-id="28fb7-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="28fb7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c6791-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="c6791-107">Prerequisites</span></span>
+<span data-ttu-id="c6791-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6791-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="28fb7-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="28fb7-111">Permission type</span></span>|<span data-ttu-id="28fb7-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="28fb7-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c6791-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c6791-110">Permission type</span></span>|<span data-ttu-id="c6791-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="c6791-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="28fb7-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="28fb7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="28fb7-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="28fb7-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="28fb7-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="28fb7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28fb7-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="28fb7-116">Not supported.</span></span>|
-|<span data-ttu-id="28fb7-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="28fb7-117">Application</span></span>|<span data-ttu-id="28fb7-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="28fb7-118">Not supported.</span></span>|
+|<span data-ttu-id="c6791-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c6791-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c6791-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c6791-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c6791-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c6791-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c6791-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c6791-115">Not supported.</span></span>|
+|<span data-ttu-id="c6791-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c6791-116">Application</span></span>|<span data-ttu-id="c6791-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c6791-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="28fb7-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="28fb7-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6791-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c6791-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="28fb7-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="28fb7-120">Optional query parameters</span></span>
-<span data-ttu-id="28fb7-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="28fb7-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c6791-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c6791-119">Optional query parameters</span></span>
+<span data-ttu-id="c6791-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c6791-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="28fb7-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="28fb7-122">Request headers</span></span>
-|<span data-ttu-id="28fb7-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="28fb7-123">Header</span></span>|<span data-ttu-id="28fb7-124">値</span><span class="sxs-lookup"><span data-stu-id="28fb7-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c6791-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6791-121">Request headers</span></span>
+|<span data-ttu-id="c6791-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6791-122">Header</span></span>|<span data-ttu-id="c6791-123">値</span><span class="sxs-lookup"><span data-stu-id="c6791-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="28fb7-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="28fb7-125">Authorization</span></span>|<span data-ttu-id="28fb7-126">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="28fb7-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="28fb7-127">Accept</span><span class="sxs-lookup"><span data-stu-id="28fb7-127">Accept</span></span>|<span data-ttu-id="28fb7-128">application/json</span><span class="sxs-lookup"><span data-stu-id="28fb7-128">application/json</span></span>|
+|<span data-ttu-id="c6791-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6791-124">Authorization</span></span>|<span data-ttu-id="c6791-125">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="c6791-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c6791-126">承諾</span><span class="sxs-lookup"><span data-stu-id="c6791-126">Accept</span></span>|<span data-ttu-id="c6791-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c6791-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="28fb7-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="28fb7-129">Request body</span></span>
-<span data-ttu-id="28fb7-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="28fb7-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6791-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="c6791-128">Request body</span></span>
+<span data-ttu-id="c6791-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c6791-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="28fb7-131">応答</span><span class="sxs-lookup"><span data-stu-id="28fb7-131">Response</span></span>
-<span data-ttu-id="28fb7-132">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="28fb7-132">If successful, this method returns a `200 OK` response code and [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c6791-130">応答</span><span class="sxs-lookup"><span data-stu-id="c6791-130">Response</span></span>
+<span data-ttu-id="c6791-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c6791-131">If successful, this method returns a `200 OK` response code and [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="28fb7-133">例</span><span class="sxs-lookup"><span data-stu-id="28fb7-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c6791-132">例</span><span class="sxs-lookup"><span data-stu-id="c6791-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="28fb7-134">要求</span><span class="sxs-lookup"><span data-stu-id="28fb7-134">Request</span></span>
-<span data-ttu-id="28fb7-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="28fb7-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c6791-133">要求</span><span class="sxs-lookup"><span data-stu-id="c6791-133">Request</span></span>
+<span data-ttu-id="c6791-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c6791-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="28fb7-136">応答</span><span class="sxs-lookup"><span data-stu-id="28fb7-136">Response</span></span>
-<span data-ttu-id="28fb7-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="28fb7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c6791-135">応答</span><span class="sxs-lookup"><span data-stu-id="c6791-135">Response</span></span>
+<span data-ttu-id="c6791-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c6791-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
