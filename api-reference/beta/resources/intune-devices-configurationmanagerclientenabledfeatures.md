@@ -1,21 +1,21 @@
 ---
 title: configurationManagerClientEnabledFeatures リソースの種類
 description: 構成マネージャーのクライアントに対応した機能
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7975130bb047e097ea0d52a4ce770fb35e4efa32
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed376bc616c26f1ad6e8a3ea06d3898c051e8d0b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425905"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148777"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 構成マネージャーのクライアントに対応した機能
 
@@ -28,6 +28,8 @@ ms.locfileid: "29425905"
 |deviceConfiguration|Boolean|デバイス構成が Intune によって管理されているかどうか|
 |compliancePolicy|Boolean|コンプライアンス ポリシーが Intune によって管理されているかどうか|
 |windowsUpdateForBusiness|Boolean|Windows Update for Business が Intune によって管理されているかどうか|
+|endpointprotection|Boolean|エンドポイント保護が Intune によって管理されているかどうか|
+|officeoffice|Boolean|Office アプリケーションが Intune によって管理されているかどうか|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -47,7 +49,9 @@ ms.locfileid: "29425905"
   "resourceAccess": true,
   "deviceConfiguration": true,
   "compliancePolicy": true,
-  "windowsUpdateForBusiness": true
+  "windowsUpdateForBusiness": true,
+  "endpointProtection": true,
+  "officeApps": true
 }
 ```
 
