@@ -1,32 +1,34 @@
 ---
 title: iPv4Range リソースの種類
-description: IP V4 範囲
+description: IPv4 の範囲定義。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2c260796259ce6084add7eadb48192ea50c209c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 14cb0d88013b13f57b186f5388d5ac89f60db043
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931931"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256841"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-IP V4 範囲
+IPv4 の範囲定義。
+
 
 [ipRange](../resources/intune-mam-iprange.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|lowerAddress|文字列|低い番号の IP アドレス|
-|upperAddress|文字列|高い番号の IP アドレス|
+|lowerAddress|String|小さいアドレス。|
+|upperAddress|文字列|上住所|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

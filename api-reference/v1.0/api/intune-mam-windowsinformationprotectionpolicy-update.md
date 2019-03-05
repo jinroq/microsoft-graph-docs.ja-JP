@@ -3,21 +3,22 @@ title: Update windowsInformationProtectionPolicy
 description: windowsInformationProtectionPolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: db347138feacaf19a0832f744bb409eebb10fae7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0336dc91bc96ec5a87e813e6b0053d7b050d9d69
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954632"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251819"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Update windowsInformationProtectionPolicy
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,22 +39,22 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求の本文に、[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) オブジェクトの JSON 表現を指定します。
 
 次の表に、[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|説明|文字列|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|id|String|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|WIP の適用レベルです。[WindowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)からサポートされている値継承の列挙型定義を参照してください。 可能な値は、`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock` です。|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|version|文字列型 (String)|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|仕掛品の実施レベル。[windowsinformationprotection](../resources/intune-mam-windowsinformationprotection.md)から継承した、サポートされている値の列挙定義を参照してください。 使用可能な値は、`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock` です。|
 |enterpriseDomain|String|プライマリ エンタープライズ ドメイン ([windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) から継承)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md) コレクション|保護するエンタープライズ ドメインのリスト ([windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) から継承)|
 |protectionUnderLockConfigRequired|Boolean|ロック機能による保護 (pin での暗号化) を構成するかどうかを指定します ([windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) から継承)|
@@ -79,9 +80,9 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 |mdmEnrollmentUrl|String|MDM の登録 URL|
 |windowsHelloForBusinessBlocked|Boolean|Windows にサインインするためのメソッドとして Windows Hello for Business を設定するブール値です。|
 |pinMinimumLength|Int32|PIN に必要な文字の最小数を設定する整数値です。 既定値は 4 です。 このポリシー設定で構成できる最小値は 4 です。 構成できる最大値は、[PIN の最大文字数] ポリシー設定で構成された値、または 127 のうち、どちらか小さい方です。|
-|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における大文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における小文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinUppercaseLetters|[windowsinformationprotectionpin文字の要件](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における大文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinLowercaseLetters|[windowsinformationprotectionpin文字の要件](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における小文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinSpecialCharacters|[windowsinformationprotectionpin文字の要件](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \]^ _ ` { | } ~. Default is NotAllow. Possible values are: `notallow`, `requireatall ストーン`, `allow '。|
 |pinExpirationDays|Int32|この整数値は、システムがユーザーに PIN の変更を要求する前の、PIN の使用可能な期間 (日数) を指定します。 このポリシー設定で構成できる最大値は 730 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、ユーザーの PIN は期限切れになりません。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |numberOfPastPinsRemembered|Int32|再使用できないユーザー アカウントに関連付けられる過去の PIN の数を指定する整数値です。 このポリシー設定で構成できる最大値は 50 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、以前の PIN の格納は不要です。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |passwordMaximumAttemptCount|Int32|デバイスがワイプされるまでの、許可されている認証失敗の回数です。 値を 0 にすると、デバイス ワイプ機能が無効になります。 範囲は整数 X (デスクトップの場合: 4 <= X <= 16、モバイル デバイスの場合: 0 <= X <= 999) です。|
@@ -94,6 +95,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

@@ -1,29 +1,29 @@
 ---
-title: hashAlgorithms 列挙型
-description: ハッシュ アルゴリズムのオプションです。
-localization_priority: Normal
+title: hashalgorithms の列挙型
+description: ハッシュアルゴリズムオプション。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2c6890f0a6749095f11c86ff51a979447972aed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 92788ec5afc3e3ddfbe89d847282ab5d5c74cc08
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149722"
 ---
-# <a name="hashalgorithms-enum-type"></a>hashAlgorithms 列挙型
+# <a name="hashalgorithms-enum-type"></a>hashalgorithms の列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-ハッシュ アルゴリズムのオプションです。
+ハッシュアルゴリズムオプション。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|sha1|1|Sha-1 ハッシュ アルゴリズム。|
-|sha2|2|Sha-2 ハッシュ アルゴリズム。|
+|sha1|1-d|sha-1 ハッシュアルゴリズム。|
+|sha2|pbm-2|sha-1 ハッシュアルゴリズム。|
 
 
 

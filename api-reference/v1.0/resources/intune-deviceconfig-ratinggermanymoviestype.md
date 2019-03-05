@@ -1,31 +1,32 @@
 ---
 title: ratingGermanyMoviesType 列挙型
-description: 映画のドイツのラベルの評価
+description: ドイツでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ef57f27d72204136e101b03dfa5e4af00ba39b1d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c00c49022782fd2a677702a72fd202e2bf627604
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928676"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258276"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画のドイツのラベルの評価
+ドイツでの映画の定格ラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|Ab 0 Jahren、年齢制限はありません。|
-|agesAbove6|3|Ab 6 Jahren では、6 と以前のエージングします。|
-|agesAbove12|4|Ab 12 Jahren、12 と古いのエージングします。|
-|agesAbove16|5|Ab 16 Jahren、16 のエージングします。|
-|大人|6|Ab 18 Jahren、成人のみ|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|Ab 0 Jahren、年齢制限なし|
+|agesAbove6|1/3|Ab 6 Jahren、才を過ぎた|
+|agesAbove12|2/4|Ab 12 Jahren、12才以上|
+|agesAbove16|5|Ab 16 Jahren、16才以上|
+|保護者|シックス|Ab 18 Jahren、大人のみ|
 
 
 

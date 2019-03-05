@@ -4,12 +4,12 @@ description: メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342318"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379522"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -75,7 +75,7 @@ ms.locfileid: "30342318"
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
-|meetingMessageType|meetingMessageType| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTentativelyAccepted``meetingDeclined`。|
+|meetingMessageType|meetingMessageType| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|

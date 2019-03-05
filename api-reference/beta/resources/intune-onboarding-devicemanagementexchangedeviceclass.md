@@ -1,29 +1,29 @@
 ---
-title: deviceManagementExchangeDeviceClass リソースの種類
-description: Exchange でのデバイスのクラスです。
-localization_priority: Normal
+title: devicemanagementexchangedeviceclass リソースの種類
+description: Exchange のデバイスクラス。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e512253a9b9bc4228d41c369501bec1e7a5e031
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ffa5f9c9f54722711a2e38116c2f2a3e03a3171e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413732"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149568"
 ---
-# <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass リソースの種類
+# <a name="devicemanagementexchangedeviceclass-resource-type"></a>devicemanagementexchangedeviceclass リソースの種類
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Exchange でのデバイスのクラスです。
+Exchange のデバイスクラス。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|name|String|このルールの影響を受けるデバイス クラスの名前です。|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|このルールの影響を受けるデバイスの種類など、ファミリです。 可能な値: `family`、`model`。|
+|name|String|このルールの影響を受けるデバイスクラスの名前。|
+|type|[devicemanagementexchangeaccessruletype](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|このルールの影響を受けるデバイスの種類 (例: Model, Family)。 可能な値: `family`、`model`。|
 
 ## <a name="relationships"></a>関係
 なし

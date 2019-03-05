@@ -3,19 +3,20 @@ title: allDevicesAssignmentTarget リソースの種類
 description: テナント内のすべての管理されたデバイスへの割り当てを表します。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5d5cdf795ded3b0af352f89f85ee6b133ddd1878
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: eff3076ec935cae75238df843d442789b716d22b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919429"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259214"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 テナント内のすべての管理されたデバイスへの割り当てを表します。
+
 
 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) からの継承
 
@@ -25,6 +26,7 @@ ms.locfileid: "27919429"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

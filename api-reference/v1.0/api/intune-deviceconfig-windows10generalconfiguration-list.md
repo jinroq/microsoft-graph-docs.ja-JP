@@ -3,21 +3,22 @@ title: windows10GeneralConfigurations のリスト
 description: windows10GeneralConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 61152396259a81202b5002dc34a04bb66edc3732
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 16ccf2ec5c2cafa9ef45346d7c2790d0a99cc963
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962318"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259627"
 ---
 # <a name="list-windows10generalconfigurations"></a>windows10GeneralConfigurations のリスト
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -47,6 +48,7 @@ GET /deviceManagement/deviceConfigurations
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
@@ -58,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10901
+Content-Length: 10959
 
 {
   "value": [
@@ -242,6 +244,7 @@ Content-Length: 10901
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+      "edgeSendIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,
       "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
       "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",

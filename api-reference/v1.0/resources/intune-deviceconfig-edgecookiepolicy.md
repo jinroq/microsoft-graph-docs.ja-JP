@@ -1,28 +1,29 @@
 ---
 title: edgeCookiePolicy 列挙型
-description: マイクロソフトのエッジにしている cookie を指定の値を指定します。
+description: Microsoft Edge で許可する cookie を指定するための値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b9fcb0d338239976b8e52ab34015c9687cb39276
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f11514978e187d87d9f8fae2990925ec8ea3f193
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991812"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251518"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-マイクロソフトのエッジにしている cookie を指定の値を指定します。
+Microsoft Edge で許可する cookie を指定するための値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|設定するユーザーを許可します。|
-|許可します。|1|使用できます。|
-|blockThirdParty|2|唯一のサードパーティ製の cookie をブロックします。|
-|これ|3|すべての cookie をブロックします。|
+|自分のもの|.0|ユーザーがを設定できるようにします。|
+|使う|1-d|使う.|
+|blockThirdParty|pbm-2|サードパーティの cookie のみをブロックします。|
+|blockall|1/3|すべての cookie をブロックします。|
 
 
 

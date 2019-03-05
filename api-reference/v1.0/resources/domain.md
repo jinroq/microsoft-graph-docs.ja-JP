@@ -4,12 +4,12 @@ description: テナントに関連付けられているドメインを表しま�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9474d476a27fe0822955ae7bbc4147a5f4a8949c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bd141fe02ab7b2685f83ebcfb787aca4ced2294f
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979762"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379508"
 ---
 # <a name="domain-resource-type"></a>ドメイン リソースの種類
 
@@ -40,21 +40,23 @@ ms.locfileid: "27979762"
 |[List verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  ドメイン検証のためドメインの DNS レコードの一覧を取得します。|
 |[Update domain](../api/domain-update.md) | [domain](domain.md) |ドメインを更新します|
 |[Delete domain](../api/domain-delete.md) | なし |ドメインを削除します。|
-|[ForceDelete ドメイン](../api/domain-forcedelete.md)|なし|非同期操作を使用してドメインを削除します。|
+|[forcedelete ドメイン](../api/domain-forcedelete.md)|なし|非同期操作を使用してドメインを削除します。|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 | 説明 |
+| プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
 |authenticationType|String| ドメインに対して構成されている認証の種類を示します。値は、*Managed* または *Federated* のいずれかです。<br> *Managed* の場合、Azure AD がユーザー認証を実行するクラウド管理のドメインを表します。<br>*Federated* の場合、Active Directory フェデレーション サービスを経由したテナントのオンプレミスの Active Directory のように、認証が ID プロバイダーとフェデレーションを行うことを表します。null 許容ではありません |
 |availabilityStatus|String| [確認](../api/domain-verify.md)操作を使用する場合を除き、このプロパティは常に null です。[確認](../api/domain-verify.md)操作を使用する場合、応答で**ドメイン** エンティティが返されます。応答内の、**ドメイン** エンティティの **availabilityStatus** プロパティは、*AvailableImmediately* または *EmailVerifiedDomainTakeoverScheduled* のいずれかです。|
 |id|String| ドメインの完全修飾名です。キー、不変、Null 許容ではない、一意 |
 |isAdminManaged|Boolean| ドメインの DNS レコードの管理が Office 365 に委任されている場合、プロパティの値は false です。それ以外の場合、値は true です。null 許容ではありません |
-|isDefault|Boolean| ユーザーの作成に使用する既定のドメインの場合は true です。会社ごとに 1 つだけの既定のドメインがあります。null 許容ではありません |
-|isInitial|Boolean| Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインがある場合は true です。会社ごとに 1 つだけの初期ドメインがあります。null 許容ではありません |
+|isDefault|ブール型| ユーザーの作成に使用する既定のドメインの場合は true です。会社ごとに 1 つだけの既定のドメインがあります。null 許容ではありません |
+|isInitial|ブール値| Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインがある場合は true です。会社ごとに 1 つだけの初期ドメインがあります。null 許容ではありません |
 |isRoot|Boolean| ドメインが検証済みのルート ドメインである場合は true です。それ以外に、ドメインがサブドメインまたは未確認である場合は false です。null 許容ではありません |
 |isVerified|Boolean| そのドメインが、ドメイン所有権の確認を完了している場合は true です。null 許容ではありません |
+|passwordNotificationWindowInDays|Int32|ユーザーがパスワードの有効期限が切れると通知を受信するまでの日数を指定します。 このプロパティが設定されていない場合は、既定値の14日が使用されます。|
+|passwordValidityPeriodInDays|Int32| パスワードを変更するまでの有効期間を指定します。 このプロパティが設定されていない場合は、既定値の90日が使用されます。 |
 |supportedServices|String collection| ドメインに割り当てられている機能です。<br><br>0、1 または次の値を含めることができます。*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。*Email*、*OfficeCommunicationsOnline*、*Yammer*<br>null 許容ではありません|
 |state|[domainState](domainstate.md)| ドメインのためにスケジュールされている非同期操作の状態です。 |
 
@@ -89,6 +91,8 @@ ms.locfileid: "27979762"
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }

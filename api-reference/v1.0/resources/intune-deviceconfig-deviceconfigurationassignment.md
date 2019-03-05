@@ -3,19 +3,20 @@ title: deviceConfigurationAssignment リソースの種類
 description: デバイス構成の割り当てエンティティは、特定のデバイス構成に AAD グループを割り当てます。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5a4a527f8b9da9f11d521311c54697fd04c4f019
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 60fb4f0a782d9502f9e3da3f0a7da2389e937a7d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940912"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251427"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス構成の割り当てエンティティは、特定のデバイス構成に AAD グループを割り当てます。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -28,11 +29,12 @@ ms.locfileid: "27940912"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|割り当てのキー。|
+|id|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

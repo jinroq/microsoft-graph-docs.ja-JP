@@ -1,34 +1,35 @@
 ---
-title: managedDevicePartnerReportedHealthState 列挙型
-description: デバイス状態の API の使用可能な状態
+title: manageddevicepartnerreportedhealthstate 列挙型
+description: デバイス正常性 API の利用可能な状態
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 85d6731fc34bb3133fa7aed631d3d687a45a7dce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4e6ef870687f0ee48eebd3d0f8d45eb4c88906ef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919051"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252057"
 ---
-# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 列挙型
+# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>manageddevicepartnerreportedhealthstate 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイス状態の API の使用可能な状態
+デバイス正常性 API の利用可能な状態
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|デバイスの正常性の状態はレポートされていません。|
-|アクティブ化|1|デバイスは、モバイルの脅威の防御のパートナー様が済んでいるは、まだ状態を報告します。|
-|非アクティブ化|2|モバイルの脅威の防御のパートナーでは、デバイスを無効化されています。 デバイスの状態が不明です。|
-|セキュリティで保護|3|デバイスは、モバイルの脅威の防御のパートナーによってセキュリティで保護されたと見なされます。|
-|lowSeverity|4|デバイスは、モバイルの脅威の防御のパートナーによって、低レベルの脅威と見なされます。|
-|mediumSeverity|5|デバイスは、モバイルの脅威の防御のパートナーが中レベルの脅威と見なされます。|
-|highSeverity|6|デバイスは、モバイルの脅威の防御のパートナーが高レベルの脅威と見なされます。|
-|応答しません。|7|デバイスは、モバイルの脅威の防御のパートナーが応答しなくなったと見なされます。 デバイスの状態が不明です。|
-|危険にさらされました。|8|デバイスでは、脅威に対する防御のパートナーが危険にさらされたと見なされます。 つまり、デバイスには、作業中の脅威やリスクをエンド ・ ユーザーによって容易に改善することはできませんし、ユーザーは、IT 管理者に連絡する必要があります。|
-|構成が正しくありません。|9|デバイスでは、脅威に対する防御のパートナーで正しく構成されていないと見なされます。 つまりデバイスが必要なプロファイルまたは正常に機能する脅威の防御のパートナーの構成が存在しませんし、脅威は、このようにリスク分析が完了することはありません。|
+|不明|.0|デバイス正常性状態はまだ報告されていません|
+|アクティブ化|1-d|デバイスは、モバイル脅威防衛パートナーによってアクティブ化されていますが、正常性を報告していません。|
+|不可|pbm-2|モバイル脅威防御パートナーによってデバイスが非アクティブ化されました。 デバイスの正常性が不明です。|
+|セキュリティ保護|1/3|モバイル脅威防御パートナーによって、デバイスはセキュリティで保護されていると見なされます。|
+|lowSeverity|2/4|モバイル脅威防御パートナーによって、デバイスの脅威は低いと見なされます。|
+|mediumSeverity|5|モバイル脅威防御パートナーによって、デバイスは中程度の脅威と見なされます。|
+|highSeverity|シックス|モバイル脅威防御パートナーによって、デバイスが高い脅威と見なされます。|
+|なかっ|7|モバイル脅威防御パートナーによってデバイスが応答しないと見なされます。 デバイスの正常性が不明です。|
+|セキュリティ|~|脅威の防御パートナーによってデバイスが侵害されたと見なされます。 これは、デバイスのアクティブな脅威またはリスクが、エンドユーザーによって簡単に修復できず、ユーザーが IT 管理者に連絡する必要があることを意味します。|
+|誤った|i-9|脅威の防御パートナーとの間でデバイスが正しく構成されていないと考えられます。 これは、脅威またはリスク分析が正常に機能するために必要なプロファイルまたは構成がデバイスにないことを意味します。そのため、脅威またはリスク分析を完了できません。|
 
 
 

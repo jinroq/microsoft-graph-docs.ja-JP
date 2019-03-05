@@ -3,31 +3,33 @@ title: windowsDeviceADAccount リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f8524b3c58d7ce152c01dfe627e888f27affdc60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f23b1922019a257e0f824b6ef6d00e0064d57f7b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987154"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252883"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
+
 
 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|password|文字列|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
+|password|String|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
 |domainName|String|まだ文書化されていません|
 |userName|String|まだ文書化されていません|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

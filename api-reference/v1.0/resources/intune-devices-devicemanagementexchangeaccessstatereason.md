@@ -1,40 +1,41 @@
 ---
 title: deviceManagementExchangeAccessStateReason 列挙型
-description: デバイスの Exchange のアクセス状態の理由です。
+description: デバイスの Exchange アクセス状態の理由。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 956eca76c4ccabe0d3d5c003d38e35ced172febf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2c014afbf22c58f89f8b8926058e28a5ca2d1a1d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917413"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252036"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-デバイスの Exchange のアクセス状態の理由です。
+デバイスの Exchange アクセス状態の理由。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|Exchange から検出アクセス状態の理由もなく|
-|不明|1|不明なアクセスの状態の理由|
-|exchangeGlobalRule|2|Exchange グローバル規則によって決定されるアクセスの状態|
-|exchangeIndividualRule|3|Exchange の個別の規則によって決定されるアクセスの状態|
-|exchangeDeviceRule|4|アクセス状態のデバイスの交換の規則によって決定されます。|
-|exchangeUpgrade|5|Exchange のアップグレードのためのアクセスの状態|
-|exchangeMailboxPolicy|6|Exchange メールボックス ポリシーで定義されたアクセスの状態|
-|その他の|7|アクセス状態が Exchange によって決定されます。|
-|準拠|8|コンプライアンスの課題によって与えられたアクセスの状態|
-|notCompliant|9|コンプライアンスの課題によって失効アクセス状態|
-|notEnrolled|10|アクセスの状態管理の課題によって失効|
-|unknownLocation|12|不明な場所のためのアクセスの状態|
-|mfaRequired|13|MFA の課題のためのアクセスの状態|
-|azureADBlockDueToAccessPolicy|14|AAD アクセス ポリシーによって無効にするアクセスの状態|
-|compromisedPassword|15|アクセス状態が危険にさらされたパスワードが無効|
-|deviceNotKnownWithManagedApp|16|マネージ アプリケーションの課題によって失効アクセス状態|
+|none|.0|Exchange から検出されたアクセス状態の理由はありません|
+|不明|1-d|不明なアクセス状態の理由|
+|exchangeglobalrule|pbm-2|Exchange グローバルルールによって決定されるアクセス状態|
+|exchange個性 alrule|1/3|Exchange の個々のルールによって決定されるアクセス状態|
+|exchangedevicerule 方法|2/4|Exchange デバイスルールによって決定されるアクセス状態|
+|exchangeupgrade|5|Exchange アップグレードのためのアクセス状態|
+|exchangeMailboxPolicy|シックス|Exchange メールボックスポリシーによって決定されるアクセス状態|
+|も|7|Exchange によって決定されるアクセス状態|
+|要件|~|コンプライアンスの課題によって付与されるアクセス状態|
+|notcompliant|i-9|コンプライアンスの課題によるアクセス状態の取り消し|
+|notenrolled|個|管理の課題によるアクセス状態の取り消し|
+|unknownLocation|個|不明な場所のためのアクセス状態|
+|mfarequired|スリー|MFA チャレンジによるアクセス状態|
+|azureADBlockDueToAccessPolicy|第|AAD アクセスポリシーによって無効にされたアクセス状態|
+|compromisedPassword|約|侵害されたパスワードによって取り消されたアクセス状態|
+|devicenotknownwithmanagedapp|16|管理対象アプリケーションのチャレンジによって取り消されたアクセス状態|
 
 
 

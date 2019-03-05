@@ -3,12 +3,12 @@ title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
+ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820686"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30361892"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
@@ -117,6 +117,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 顧客の予約 (プレビュー) | Microsoft Bookings | 小規模企業を対象として、顧客が Web または Facebook 上で直接にサービスを予約できるようにします。 業務担当者が、顧客の好み、サービスと価格、スタッフのリストとスケジュール、その他の一般的なビジネス情報を管理できるようにします。 | [Microsoft Bookings API の概要](booking-concept-overview.md) |
+| Financials (プレビュー) | Dynamics 365 Business Central | 財務データの管理、サプライ チェーンの自動化とセキュリティ保護、販売管理と顧客サービスの改善、プロジェクト管理、業務の最適化を、オールインワンのビジネス管理ソリューションで実現できます。| [Business Central API の概要](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>次の手順

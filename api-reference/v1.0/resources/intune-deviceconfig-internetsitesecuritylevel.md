@@ -1,28 +1,29 @@
 ---
 title: internetSiteSecurityLevel 列挙型
-description: インターネット サイトのセキュリティ レベルの使用可能な値です。
+description: インターネットサイトのセキュリティレベルに指定できる値。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 674c9e7b1202584db5bbaae7224e5c042b977d78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 796056795c2d3cee0324cd4ce4be2854034faffa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987616"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259480"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-インターネット サイトのセキュリティ レベルの使用可能な値です。
+インターネットサイトのセキュリティレベルに指定できる値。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
-|medium|1|普通。|
-|mediumHigh|2|中高。|
-|高|3|高。|
+|自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
+|medium|1-d|普通。|
+|mediumHigh|pbm-2|中-高|
+|高額|1/3|高。|
 
 
 

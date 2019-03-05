@@ -3,25 +3,26 @@ title: wipe action
 description: デバイスをワイプする
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 20ebe11dce6847066148f06a77bffa970e3a1b1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 23d4d9536c57d4a9f2af863473b85d2062a06b3a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919821"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259158"
 ---
-# <a name="wipe-action"></a>wipe action
+# <a name="wipe-action"></a>ワイプ アクション
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスをワイプする
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委任 (職場または学校のアカウント)|devicemanagementmanageddevices all、devicemanagementmanageddevices. すべて|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -40,17 +41,17 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|keepEnrollmentData|ブール値|まだ文書化されていません|
-|keepUserData|ブール値|まだ文書化されていません|
+|keepEnrollmentData|Boolean|まだ文書化されていません|
+|keepUserData|Boolean|まだ文書化されていません|
 |macOsUnlockCode|文字列|まだ文書化されていません|
 
 
@@ -59,6 +60,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 成功した場合、このアクションは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http

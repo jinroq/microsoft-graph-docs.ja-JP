@@ -1,31 +1,32 @@
 ---
 title: ratingCanadaMoviesType 列挙型
-description: 映画がカナダでのラベルの評価
+description: カナダでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d44edb2d96430a7d929867620bce7cb6808d50c9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 99a26da44779152c6d758494930fe225dea91f1e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957268"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253632"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-映画がカナダでのラベルの評価
+カナダでの映画の定格ラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、映画のすべてのコンテンツを許可します。|
-|allBlocked|1|ビデオ コンテンツを許可しません。|
-|全般|2|G のクラス分けがすべての年代に適しています。|
-|parentalGuidance|3|PG の分類には、保護者による制限が示されます|
-|agesAbove14|4|14A 分類が 14 またはそれ以前の上のあるユーザーに適しています。|
-|agesAbove18|5|18A 分類が 18 またはそれ以前の上のあるユーザーに適しています。|
-|制限|6|R のクラス分けは、18 年間に限定され、古い|
+|allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
+|allblocked|1-d|任意の映画コンテンツを許可しない|
+|元帳|pbm-2|G 分類は、すべての年齢に適しています。|
+|parentalguidance|1/3|PG 分類は、保護者によるガイダンスをアドバイスします。|
+|agesAbove14|2/4|14A の分類は、14才以上の閲覧者に適しています。|
+|agesAbove18|5|18a 分類は18またはそれ以前の閲覧者に適しています。|
+|しか|シックス|R 分類は18年以上に制限されています。|
 
 
 

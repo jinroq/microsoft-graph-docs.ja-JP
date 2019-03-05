@@ -1,21 +1,21 @@
 ---
-title: CartToClassAssociation を作成します。
+title: cartToClassAssociation を作成する
 description: 新しい cartToClassAssociation オブジェクトを作成します。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2368507adbf7e0065b10d4c0c93353d81d5d936
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a4fe03f073fec54db6f9136ed104033e1deaf857
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150086"
 ---
-# <a name="create-carttoclassassociation"></a>CartToClassAssociation を作成します。
+# <a name="create-carttoclassassociation"></a>cartToClassAssociation を作成する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトを作成します。
 
@@ -41,28 +41,28 @@ POST /deviceManagement/cartToClassAssociations
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に cartToClassAssociation オブジェクトの JSON の形式を指定します。
+要求本文で、cartToClassAssociation オブジェクトの JSON 表記を指定します。
 
-次の表は、cartToClassAssociation を作成するときに必要なプロパティを示します。
+次の表に、cartToClassAssociation の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
-|version|Int32|CartToClassAssociation のバージョンです。|
+|version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|デバイス構成について管理者が指定した名前。|
-|説明|String|管理者には、CartToClassAssociation の説明が用意されています。|
-|deviceCartIds|String コレクション|クラスに関連するデバイスのカートの識別子です。|
-|classroomIds|String コレクション|デバイスのカートに関連する教室の識別子です。|
+|説明|String|CartToClassAssociation の管理者提供の説明。|
+|devicecartids|String コレクション|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|String コレクション|デバイスカートに関連付ける教室の識別子。|
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

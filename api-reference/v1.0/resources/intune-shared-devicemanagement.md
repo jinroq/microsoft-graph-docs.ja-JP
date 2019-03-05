@@ -1,55 +1,55 @@
 ---
 title: deviceManagement リソースの種類
-description: 'DeviceManagement リソースが、ワークフローに従って、内容を変更するコンテナーを表しますを含みます。  '
+description: 'deviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  '
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: a5868a5d156a60cc51a131884a2deca22c114393
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 08f04242b379fee6ebcc4496e10d342fd3ec342e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942221"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256036"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-DeviceManagement リソースが、ワークフローに従って、内容を変更するコンテナーを表しますを含みます。  
+deviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  
 
-- イベントの監査  
-- 企業の諸条件   
+- 監査イベント  
+- 会社の使用条件   
 - デバイス構成の設定  
 - デバイスの管理  
-- エンドポイントの保護  
+- エンドポイント保護  
 - 登録プロファイル  
 - 通知  
-- 契約時のポリシー、設定、および詳細情報  
-- 役割ベースのアクセス制御 (RBAC) のポリシー  
-- リモート アシスタンスのパートナー  
-- 電気通信の効率的管理のパートナー  
+- オンボードポリシー、設定、詳細  
+- 役割ベースのアクセス制御 (RBAC) ポリシー  
+- リモートアシスタンスパートナー  
+- 通信マネージャー se 管理パートナー  
 - イベントのトラブルシューティング  
-- Windows の情報保護の概要  
+- Windows 情報保護の概要  
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[deviceManagement の取得](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[deviceManagement の更新](../api/intune-shared-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。|
-|**契約時**|
+|**オンボーディング**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|まだ文書化されていません|
 |**RBAC**|
-|[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md)コレクション、または文字列のコレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
+|[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolepermission](../resources/intune-rbac-rolepermission.md)コレクションまたは文字列コレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスの一意識別子|
+|id|String|デバイスの一意識別子|
 |**デバイス構成**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|subscriptionState|String|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値: `pending`、 `active`、 `warning`、 `disabled`、 `deleted`、 `blocked`、 `lockedOut`。|
-|**契約時**|
+|subscriptionState|String|テナントのモバイル デバイス管理のサブスクリプション状態。 使用可能な値: `pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
+|**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -57,7 +57,7 @@ DeviceManagement リソースが、ワークフローに従って、内容を変
 |:---|:---|:---|
 |**監査**|
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) コレクション|監査イベント|
-|**企業の諸条件**|
+|**会社の使用条件**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) コレクション|対象の会社のデバイス管理に関連付けられている条項および条件。|
 |**デバイス構成**|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) コレクション|デバイス コンプライアンス ポリシーです。|
@@ -74,10 +74,10 @@ DeviceManagement リソースが、ワークフローに従って、内容を変
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) コレクション|管理対象デバイスの一覧。|
 |**登録**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)コレクション|インポートされたWindows Autopilot デバイスのコレクション。|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)コレクション|デバイスをアップロード、Windows 自動操縦装置のコレクションです。|
+|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)コレクション|Windows 自動操縦デバイスのコレクションをアップロードします。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) コレクション|通知メッセージ テンプレート。|
-|**契約時**|
+|**オンボーディング**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Exchange のオンプレミスでの条件付きアクセス設定。 オンプレミスの条件付きアクセスでは、デバイスを登録し、メール アクセスに準拠させる必要があります|
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) コレクション|テナントを含むデバイスのカテゴリのリスト。|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) コレクション|デバイス登録の構成のリスト|
@@ -88,13 +88,13 @@ DeviceManagement リソースが、ワークフローに従って、内容を変
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) コレクション|リソースの操作。|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) コレクション|ロールの割り当て。|
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) コレクション|ロールの定義。|
-|**リモート アシスタンス**|
+|**リモートアシスタンス**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) コレクション|リモート アシスタンス パートナー。|
-|**通信経費の管理**|
+|**通信経費管理**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) コレクション|通信経費の管理パートナー。|
 |**トラブルシューティング**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) コレクション|テナントのトラブルシューティング イベントの一覧です。|
-|**Windows 情報の保護**|
+|**Windows 情報保護**|
 |windowsInformationProtectionAppLearningSummaries|[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) コレクション|Windows 情報保護アプリの学習概要。|
 |windowsInformationProtectionNetworkLearningSummaries|[windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) コレクション|Windows 情報保護ネットワークの学習概要。|
 

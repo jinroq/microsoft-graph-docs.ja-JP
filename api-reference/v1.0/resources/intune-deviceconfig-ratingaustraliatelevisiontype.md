@@ -1,33 +1,34 @@
 ---
 title: ratingAustraliaTelevisionType 列挙型
-description: オーストラリアのテレビのコンテンツの規制ラベル
+description: オーストラリアでのテレビコンテンツの評価のラベル
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 16bd081f157434903578661973bb30e44b3d778d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3db2989c7cc61eec2cbd736c336c222c23e9a5fe
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976640"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252967"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 列挙型
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-オーストラリアのテレビのコンテンツの規制ラベル
+オーストラリアでのテレビコンテンツの評価のラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
-|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
-|preschoolers|2|P のクラス分けは、preschoolers|
-|children|3|子で 14 C のクラス分けは、します。|
-|全般|4|G のクラス分けがすべての年代に適しています。|
-|parentalGuidance|5|PG クラス分けが若い視聴者を推奨します。|
-|成熟|6|ビューアー 15 以上の M クラス分けをお勧め|
-|agesAbove15|7|MA15 + 分類には適していません 15 未満の閲覧者です。|
-|agesAbove15AdultViolence|8|AV15 + 分類が 15、成人向け暴力に固有であるユーザーに適していません。|
+|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
+|prespreser|pbm-2|P 分類は、preschoolers に対して使用されます。|
+|children|1/3|C の分類は、14の下の子を対象としています。|
+|元帳|2/4|G 分類は、すべての年齢に適しています。|
+|parentalguidance|5|閲覧者には PG 分類が推奨されています|
+|度|シックス|15を超える閲覧者には M 分類が推奨されています|
+|agesAbove15|7|MA15 + 分類は15以下の閲覧者には適していません|
+|agesAbove15AdultViolence|~|AV15 + 分類は、15の下の閲覧者には適していません。成人の暴力に固有のものです。|
 
 
 

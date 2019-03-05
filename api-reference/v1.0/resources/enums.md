@@ -1,57 +1,57 @@
 ---
 title: 列挙値
-description: Graph の列挙型の値。
+description: Microsoft Graph 列挙値。
 localization_priority: Normal
-ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: 86dcbb1fbbdc61a0855f45a6675efc80f4855010
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690946"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379515"
 ---
-### <a name="contactrelationship-values"></a>contactRelationship 値
+### <a name="contactrelationship-values"></a>contactrelationship 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|親|0|ユーザーの親です。|
-|相対|1| ユーザーは、相対的なのです。|
-|aide|2| ユーザーの aide。|
-|医師|3| ユーザーの医師です。|
-|ガーディアン|4| ユーザーの守護者。|
-|子|5| ユーザーの子です。|
-|その他の|6| ユーザーに指定されていない関係です。|
-|unknownFutureValue|7| 将来の互換性のためのマーカーの値です。|
+|親行|.0|ユーザーの親。|
+|合わせる|1-d| ユーザーの相対パス。|
+|aide|pbm-2| ユーザーの aide。|
+|診察|1/3| ユーザーの医師。|
+|守護|2/4| ユーザーのガーディアン。|
+|子供|5| ユーザーの子。|
+|も|シックス| ユーザーとの特定されていない関係。|
+|unknownfuturevalue という|7| 将来の互換性のためのマーカー値。|
 
-### <a name="timezonestandard-values"></a>timeZoneStandard 値
+### <a name="timezonestandard-values"></a>timeZoneStandard の値
 
 | 値
 |:-----------------
-| windows
+| ws
 | iana
 
 
-### <a name="freebusystatus-values"></a>freeBusyStatus 値
+### <a name="freebusystatus-values"></a>freeBusyStatus の値
 
 | メンバー            |値
 |:------------------|:-------
-| 解放              | 0
-| 仮の予定         | 1
-| ビジー状態です。              | 2
-| 不在時               | 3
-| workingElsewhere  | 4
+| 増やし              | .0
+| 一時的         | 1-d
+| 多忙              | pbm-2
+| oof               | 1/3
+| workingElsewhere  | 2/4
 | 不明           | -1
 
 
-### <a name="attendeetype-values"></a>attendeeType 値
+### <a name="attendeetype-values"></a>attendeeType の値
 
 | 値
 |:-------------------------
 | 必須
 | 省略可能
-| リソース
+| resource
 
 
-### <a name="externalaudiencescope-values"></a>externalAudienceScope 値
+### <a name="externalaudiencescope-values"></a>externalaudiencescope 値
 
 | 値
 |:-------------------------
@@ -60,68 +60,68 @@ ms.locfileid: "29690946"
 | all
 
 
-### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus 値
+### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus の値
 
 | 値
 |:-------------------------
-| 無効になっています。
+| 党
 | alwaysEnabled
 | スケジュール済み
 
 
-### <a name="calendarcolor-values"></a>calendarColor 値
+### <a name="calendarcolor-values"></a>calendarcolor 値
 
 | メンバー     | 値
 |:-----------|:----------
 | 自動       | -1
-| lightBlue  | 0
-| 薄 | 1
-| lightOrange| 2
-| lightGray  | 3
-| lightYellow| 4
-| lightTeal  | 5
-| lightPink  | 6
-| lightBrown | 7
-| lightRed   | 8
-| maxColor   | 9
+| ライトブルー  | .0
+| ライトグリーン | 1-d
+| ライトオレンジ| pbm-2
+| ライトグレー  | 1/3
+| ライト黄| 2/4
+| ライト青緑  | 5
+| ライトピンク  | シックス
+| ライトブラウン | 7
+| ライトレッド   | ~
+| maxcolor   | i-9
 
 
-### <a name="educationexternalsource-values"></a>educationExternalSource 値
+### <a name="educationexternalsource-values"></a>educationExternalSource の値
 
 | 値
 |:-------------------------
 | sis
 | 手動
-| unknownFutureValue
+| unknownfuturevalue という
 
 
-### <a name="educationgender-values"></a>educationGender 値
-
-| 値
-|:-------------------------
-| (メス)
-| (オス)
-| その他の
-| unknownFutureValue
-
-
-### <a name="eventtype-values"></a>イベントの種類の値
+### <a name="educationgender-values"></a>educationGender の値
 
 | 値
 |:-------------------------
-| singleInstance
-| 出現
+| female
+| 男
+| も
+| unknownfuturevalue という
+
+
+### <a name="eventtype-values"></a>eventType 値
+
+| 値
+|:-------------------------
+| 単一インスタンス
+| 発生
 | 例外
-| seriesMaster
+| 連続マスター
 
 
-### <a name="sensitivity-values"></a>秘密度の値
+### <a name="sensitivity-values"></a>感度の値
 
 | 値
 |:-------------------------
 | 標準
 | personal
-| プライベート
+| 機密性
 | 機密
 
 
@@ -129,83 +129,83 @@ ms.locfileid: "29690946"
 
 | 値
 |:-------------------------
-| 低
+| 低さ
 | 標準
-| 高
+| 高額
 
 
-### <a name="educationuserrole-values"></a>educationUserRole 値
+### <a name="educationuserrole-values"></a>educationUserRole の値
 | 値
 |:---------------------
 | student
 | teacher
 | none
-| unknownFutureValue
+| unknownfuturevalue という
 
 
-### <a name="meetingmessagetype-values"></a>meetingMessageType 値
+### <a name="meetingmessagetype-values"></a>会議の messagetype の値
 
 | 値
 |:-----------------
 | none
 | meetingRequest
-| meetingCancelled
-| meetingAccepted
-| meetingTentativelyAccepted
-| meetingDeclined
+| 中止
+| 承諾
+| meetingTenativelyAccepted
+| 辞退
 
 
-### <a name="followupflagstatus-values"></a>followupFlagStatus 値
+### <a name="followupflagstatus-values"></a>の値
 
 | 値
 |:-------------------------
-| notFlagged
+| notflagged 付き
 | complete
-| フラグが付けられます
+| 示さ
 
 
-### <a name="inferenceclassificationtype-values"></a>inferenceClassificationType 値
+### <a name="inferenceclassificationtype-values"></a>inferenceClassificationType の値
 
 | 値
 |:-----------------
-| 重点を置く
-| その他の
+| 注力
+| も
 
 
-### <a name="iosnotificationalerttype-values"></a>iosNotificationAlertType 値
+### <a name="iosnotificationalerttype-values"></a>iosnotificationalerttype の値
 
 | 値
 |:-------------------------
-| deviceDefault
-| バナー
+| devicedefault
+| 尺
 | modal
 | none
 
-### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason 値
+### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason の値
 
 | 値
 |:-------------
 | 不明
 | 認証
 | 承認
-| accountValidation
-| userValidation
-| deviceNotSupported
-| inMaintenance
-| badRequest
+| accountvalidation
+| uservalidation
+| devicenotsupported
+| inmaintenance
+| badrequest
 | featureNotSupported
 | enrollmentRestrictionsEnforced
-| clientDisconnected
+| clientdisconnected
 
 
-### <a name="bodytype-values"></a>bodyType 値
+### <a name="bodytype-values"></a>bodytype の値
 | 値
 |:---------
 | text
 | html
 
 
-### <a name="locationtype-values"></a>場所の値
+### <a name="locationtype-values"></a>locationType の値
 
 | 値
 |:-------------------------
@@ -217,48 +217,48 @@ ms.locfileid: "29690946"
 | streetAddress
 | ホテル
 | レストラン
-| localBusiness
-| 住所
+| localbusiness
+| PostalAddress
 
-### <a name="locationuniqueidtype-values"></a>locationUniqueIdType 値
+### <a name="locationuniqueidtype-values"></a>locationUniqueIdType の値
 
 | 値
 |:-------------------------
 | 不明
-| locationStore
-| ディレクトリ
-| プライベート
-| bing
+| locationstore
+| 名簿
+| 機密性
+| 地図
 
 
-### <a name="messageactionflag-values"></a>messageActionFlag 値
+### <a name="messageactionflag-values"></a>messageactionflag の値
 
 | 値
 |:-------------------------
 | any
 | call
-| doNotForward
-| フォロー アップ
-| ヒント
+| 交換
+| フォローアップ
+| 注意
 | 転送
 | noResponseNecessary
-| 読み取り
+| 読み込む
 | 返信
 | replyToAll
-| レビュー
+| 中
 
 
-### <a name="onenoteuserrole-values"></a>onenoteUserRole 値
+### <a name="onenoteuserrole-values"></a>onenoteUserRole の値
 
 | メンバー      | 値
 |:------------|:------------
-| Owner       | 0
-| Contributor (投稿者) | 1
-| Reader      | 2
+| Owner       | .0
+| Contributor (投稿者) | 1-d
+| Reader      | pbm-2
 | なし        | -1
 
 
-### <a name="operationstatus-values"></a>operationStatus 値
+### <a name="operationstatus-values"></a>operationstatus の値
 
 | 値
 |:-----------------
@@ -268,17 +268,17 @@ ms.locfileid: "29690946"
 | Failed
 
 
-### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType 値
+### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType の値
 
 | 値
 |:-------------------------
 | 置換
 | 追加
-| Delete
+| 削除する
 | Insert
-| 先頭に追加します。
+| ド
 
-### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition 値
+### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition の値
 
 | 値
 |:-------------------------
@@ -290,48 +290,48 @@ ms.locfileid: "29690946"
 
 | 値
 |:-------------------------
-| ホーム
-| ビジネス
-| mobile
-| その他の
+| コール
+| 出張
+| 体
+| も
 | アシスタント
-| homeFax
-| businessFax
+| ホーム fax
+| businessfax
 | otherFax
-| ポケットベル
-| ラジオ
+| 携帯
+| オン
 
 
-### <a name="plannerpreviewtype-values"></a>plannerPreviewType 値
+### <a name="plannerpreviewtype-values"></a>プランの種類の値
 
 | 値
 |:-------------------------
 | 自動
-| noPreview
+| nopreview
 | checklist
 | 説明
 | reference
 
 
-### <a name="status-values"></a>ステータス値
+### <a name="status-values"></a>状態の値
 
 | 値
 |:-----------------
-| アクティブです
-| 更新
+| active
+| まし
 | deleted
-| 無視
-| unknownFutureValue
+| すべて
+| unknownfuturevalue という
 
 
-### <a name="weekindex-values"></a>weekIndex 値
+### <a name="weekindex-values"></a>weekIndex の値
 
 | 値
 |:-------------------------
 | まずは
-| 1 秒
-| 3 番目
-| 4 番目
+| 補助
+| 種類
+| つめの
 | 前の
 
 
@@ -339,45 +339,45 @@ ms.locfileid: "29690946"
 
 | 値
 |:-------------------------
-| 日曜日
-| 月曜日
+| n
+| 曜日
+| 毎週
+| 毎週
 | 火曜日
-| (水)
-| (木)
 | 金曜日
-| 土曜日
+| 土日
 
-### <a name="recurrencepatterntype-values"></a>recurrencePatternType 値
+### <a name="recurrencepatterntype-values"></a>recurrencePatternType の値
 
 | 値
 |:-------------------------
-| 毎日
-| 毎週
+| 定期的
+| あたり
 | absoluteMonthly
 | relativeMonthly
 | absoluteYearly
 | relativeYearly
 
 
-### <a name="recurrencerangetype-values"></a>recurrenceRangeType 値
+### <a name="recurrencerangetype-values"></a>recurrenceRangeType の値
 
 | 値
 |:-------------------------
 | endDate
-| パーザ
-| 番号が付けられます
+| 無制限
+| 振ら
 
 
-### <a name="onenotesourceservice-values"></a>onenoteSourceService 値
+### <a name="onenotesourceservice-values"></a>onenoteSourceService の値
 | 値
 |:---------------------
 | 不明
 | OneDrive
-| OneDriveForBusiness
-| OnPremOneDriveForBusiness
+| onedrive forbusiness
+| onpremonedrive forbusiness
 
 
-### <a name="responsetype-values"></a>responseType 値
+### <a name="responsetype-values"></a>responsetype の値
 
 | 値
 |:-------------------------
@@ -385,11 +385,11 @@ ms.locfileid: "29690946"
 | organizer
 | tentativelyAccepted
 | accepted
-| 辞退
-| notResponded
+| 同意
+| notresponded
 
 
-### <a name="activitydomain-values"></a>activityDomain 値
+### <a name="activitydomain-values"></a>activitydomain の値
 
 | 値
 |:-------------------------
@@ -399,206 +399,206 @@ ms.locfileid: "29690946"
 | Unrestricted
 
 
-### <a name="websitetype-values"></a>websiteType 値
+### <a name="websitetype-values"></a>websitetype の値
 
 | 値
 |:-------------------------
-| その他の
-| ホーム
+| も
+| コール
 | 作業
 | ブログ
 | profile
 
 
-### <a name="categorycolor-values"></a>categoryColor 値
+### <a name="categorycolor-values"></a>カテゴリの色の値
 
 | メンバー   |値    
 |:---------|:--------
 | none     | -1      
-| preset0  | 0       
-| preset1  | 1       
-| preset2  | 2       
-| preset3  | 3       
-| preset4  | 4       
+| preset0  | .0       
+| preset1  | 1-d       
+| preset2  | pbm-2       
+| preset3  | 1/3       
+| preset4  | 2/4       
 | preset5  | 5       
-| preset6  | 6       
+| preset6  | シックス       
 | preset7  | 7       
-| preset8  | 8       
-| preset9  | 9       
-| preset10 | 10      
-| preset11 | 11      
-| preset12 | 12      
-| preset13 | 13      
-| preset14 | 14      
-| preset15 | 15      
+| preset8  | ~       
+| preset9  | i-9       
+| preset10 | 個      
+| preset11 | #      
+| preset12 | 個      
+| preset13 | スリー      
+| preset14 | 第      
+| preset15 | 約      
 | preset16 | 16      
-| preset17 | 17      
-| preset18 | 18      
-| preset19 | 19      
-| preset20 | 20      
+| preset17 | インチ      
+| preset18 | 個      
+| preset19 | 年      
+| preset20 | 1280      
 | preset21 | 21      
-| preset22 | 22      
-| preset23 | 23      
-| preset24 | 24      
+| preset22 | ×      
+| preset23 | 最高      
+| preset24 | ソケット      
 
-### <a name="alertfeedback-values"></a>alertFeedback 値
+### <a name="alertfeedback-values"></a>alertfeedback 値
 
-アナリストによって提供される通知を可能な限りフィードバック値です。
-
-|メンバー|値|説明|
-|:---|:---|:---|
-|不明|0|不明。|
-|truePositive|1|アラートは、正の true です。|
-|falsePositive|2| アラートが誤ってとは。|
-|benignPositive|3| アラートは、正の問題です。|
-
-### <a name="filehashtype-values"></a>fileHashType 値
-
-ファイル ハッシュの種類を列挙します。
+アナリストによって提供される警告での可能なフィードバック値。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明な種類です。|
-|sha1|1|SHA1 ハッシュ タイプを入力します。|
-|sha256|2| SHA256 ハッシュ タイプを入力します。|
-|md5|3| MD5 ハッシュ タイプを入力します。|
-|authenticodeHash256|4| AuthenticodeHash256 ハッシュ タイプを入力します。|
-|lsHash|5| LsHash ハッシュ タイプを入力します。|
-|ctph|6| CTPH ハッシュ タイプを入力します。|
-|peSha1|7| PESHA1 ハッシュ タイプを入力します。|
-|peSha256|8| PESHA256 ハッシュ タイプを入力します。|
+|不明|.0|わかり.|
+|truePositive|1-d|Alert は true-正の数値です。|
+|falsePositive|pbm-2| 警告は誤検知です-正数。|
+|benignPositive|1/3| 通知は害のない-正。|
 
-### <a name="connectiondirection-values"></a>connectionDirection 値
+### <a name="filehashtype-values"></a>filehashtype の値
 
-ネットワーク接続 (着信/発信) の方向を表す列挙型です。
+ファイルハッシュの種類の列挙。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明な接続です。|
-|受信|1|接続を受信します。|
-|送信|2| 送信接続します。|
+|不明|.0|不明な種類です。|
+|sha1|1-d|SHA1 ハッシュの種類。|
+|sha256|pbm-2| SHA256 ハッシュの種類。|
+|md5|1/3| MD5 ハッシュ型。|
+|authenticodeHash256|2/4| AuthenticodeHash256 ハッシュの種類。|
+|lsHash|5| LsHash ハッシュの種類。|
+|ctph|シックス| ctph ハッシュの種類。|
+|peSha1|7| PESHA1 ハッシュの種類。|
+|peSha256|~| PESHA256 ハッシュの種類。|
 
-### <a name="connectionstatus-values"></a>connectionStatus 値
+### <a name="connectiondirection-values"></a>connectiondirection 値
 
-接続の状態の列挙です。
-
-|メンバー|値|説明|
-|:---|:---|:---|
-|不明|0|不明な接続状態です。|
-|しようとしました|1|接続が試行されます。|
-|成功しました|2| 接続に成功しました。|
-|ブロック|3| 接続をブロックします。|
-|失敗しました。|4| 接続に失敗しました。|
-
-### <a name="processintegritylevel-values"></a>processIntegrityLevel 値
-
-プロセスの可能な整合性レベルの値です。
+ネットワーク接続の方向を示す列挙 (受信/送信)。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明。|
-|信頼されていません。|10|整合性レベルは、信頼されていません。|
-|低|20| 整合性レベルは、低いです。|
-|medium|30| 整合性レベルは、[中] です。|
-|高|40| 整合性レベルは、高いです。|
-|システム|50| 整合性レベルは、システムです。|
+|不明|.0|不明な接続。|
+|受信|1-d|受信接続。|
+|向き|pbm-2| 送信接続。|
 
-### <a name="registryhive-values"></a>registryHive 値
+### <a name="connectionstatus-values"></a>connectionstatus の値
 
-レジストリの列挙型で定義されているハイブを[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。
+接続の状態を列挙します。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明なハイブです。|
-|currentConfig|1|HKEY_CURRENT_CONFIG ハイブです。|
-|作業中|2| HKEY_CURRENT_USER ハイブを使用します。|
-|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM ハイブです。|
-|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software ハイブです。|
-|localMachineSystem|5| HKEY_LOCAL_MACHINE\System ハイブです。|
-|usersDefault|6| HKEY_USERS\\。デフォルトのハイブです。|
+|不明|.0|接続状態が不明です。|
+|しよう|1-d|接続を試行しました。|
+|失敗|pbm-2| 接続に成功しました。|
+|ブロック|1/3| 接続がブロックされました。|
+|フェール|2/4| 接続に失敗しました。|
 
-### <a name="registryoperation-values"></a>registryOperation 値
+### <a name="processintegritylevel-values"></a>processIntegrityLevel の値
 
-レジストリ キーの名前または値を変更する操作です。
+プロセスの可能な整合性レベルの値。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明なレジストリ値の型。|
-|create|1|レジストリを作成します。|
-|変更|2|レジストリを変更します。|
-|delete|3|レジストリを削除します。|
+|不明|.0|わかり.|
+|ない|個|整合性レベルは信頼されていません。|
+|低さ|1280| 整合性レベルは低くなっています。|
+|medium|31| 整合性レベルは中程度です。|
+|高額|40| 整合性レベルは High です。|
+|system|50| 整合性レベルはシステムです。|
 
-### <a name="registryvaluetype-values"></a>registryValueType 値
+### <a name="registryhive-values"></a>registryhive 値
 
-レジストリ値の列挙型の型で定義されている[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)。
-
-|メンバー|値|説明|
-|:---|:---|:---|
-|不明|0|不明なレジストリ値の型。|
-|バイナリ|1|REG_BINARY レジストリ値の型。|
-|dword|2| REG_DWORD レジストリ値の型。|
-|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN レジストリ値の型。|
-|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN レジストリ値の型。|
-|expandSz|5| REG_EXPAND_SZ レジストリ値の型。|
-|link|6| REG_LINK レジストリ値の型。|
-|multiSz|7| REG_MULTI_SZ レジストリ値の型。|
-|none|8| REG_NONE レジストリ値の型。|
-|qword|9| 値型のレジストリで定義します。|
-|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN レジストリ値の型。|
-|sz|11| REG_SZ レジストリ値の型。|
-
-### <a name="alertseverity-values"></a>alertSeverity 値
-
-アラートの重大度レベルを列挙します。
+で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)定義されているレジストリハイブの列挙。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|重大度は不明です。|
-|情報|1|重大度は、情報専用です。|
-|低|2| 重大度レベルが不足しています。|
-|medium|3| 重大度レベルは、[中] です。|
-|高|4| 重要度は高くなります。|
+|不明|.0|不明なハイブです。|
+|currentconfig|1-d|HKEY_CURRENT_CONFIG ハイブ。|
+|currentUser|pbm-2| HKEY_CURRENT_USER ハイブ。|
+|localmachinesam|1/3| HKEY_LOCAL_MACHINE\SAM ハイブ。|
+|localmachinesamsoftware|2/4| HKEY_LOCAL_MACHINE\Software ハイブ。|
+|localMachineSystem|5| HKEY_LOCAL_MACHINE\System ハイブ。|
+|ユーザー既定|シックス| HKEY_USERS\\既定のハイブ。|
 
-### <a name="alertstatus-values"></a>alertStatus 値
+### <a name="registryoperation-values"></a>registryoperation の値
 
-アラートのライフ サイクルの状態 (ステージ) の使用可能な値です。
-
-|メンバー|値|説明|
-|:---|:---|:---|
-|不明|0|不明な状態です。|
-|newAlert|10| アラートは、新しい。|
-|inProgress|20|アラートは、処理中です。|
-|解決|30|アラートが解決されます。|
-
-### <a name="emailrole-values"></a>emailRole 値
-電子メールのロールの使用可能な値です。
+レジストリキー名と値の一方または両方を変更した操作。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|不明なロールです。|
-|sender|1|電子メールの送信者です。|
-|受信者|2|電子メールの受信者。|
+|不明|.0|不明なレジストリ値の種類です。|
+|create|1-d|レジストリを作成します。|
+|modify|pbm-2|レジストリを変更します。|
+|delete|1/3|レジストリを削除します。|
 
-### <a name="logontype-values"></a>値のことを示します
+### <a name="registryvaluetype-values"></a>registryvaluetype 値
 
-ユーザーのサインインのメソッドの使用可能な値です。
-
-|メンバー|値|説明|
-|:---|:---|:---|
-|不明|-1|不明。|
-|対話型|0|ログオンは、対話型です。|
-|remoteInteractive|1| ログオン、リモート対話型です。|
-|ネットワーク|2| ログオンとは、ネットワークです。|
-|batch|3| ログオンは、バッチです。|
-|service|4| ログオンは、サービスです。|
-
-### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 値
-
-Windows 定義ごとユーザー ・ アカウントの種類 (グループ) の使用可能な値です。
+で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)定義されているレジストリ値の種類の列挙。
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|-1|不明。|
-|標準|0|標準ユーザー グループのメンバーです。|
-|電源|1| Power Users グループのメンバーです。|
-|管理者|2| Administrators グループのメンバーです。|
+|不明|.0|不明なレジストリ値の種類です。|
+|バイナリ|1-d|REG_BINARY レジストリ値の種類。|
+|dword|pbm-2| REG_DWORD のレジストリ値の種類。|
+|dwordLittleEndian|1/3| REG_DWORD_LITTLE_ENDIAN レジストリ値の種類。|
+|dて dbigエンディアン|2/4| REG_DWORD_BIG_ENDIAN レジストリ値の種類。|
+|expandsz|5| REG_EXPAND_SZ レジストリ値の種類。|
+|link|シックス| REG_LINK レジストリ値の種類。|
+|multisz|7| REG_MULTI_SZ レジストリ値の種類。|
+|none|~| REG_NONE レジストリ値の種類。|
+|qword|i-9| REG_QWORD レジストリ値の種類。|
+|qwordlittleEndian|個| REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
+|sz|#| REG_SZ レジストリ値の種類。|
+
+### <a name="alertseverity-values"></a>alertseverity 値
+
+通知の重要度を列挙します。
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|.0|重要度が不明です。|
+|だけ|1-d|重要度は情報のみです。|
+|低さ|pbm-2| 重要度は低くなります。|
+|medium|1/3| 重要度は中程度です。|
+|高額|2/4| 重要度は high です。|
+
+### <a name="alertstatus-values"></a>alertstatus の値
+
+アラートライフサイクル状態 (ステージ) の可能な値。
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|.0|状態が不明です。|
+|newalert|個| 通知は新規です。|
+|inProgress|1280|通知が進行中です。|
+|解析|31|アラートが解決されます。|
+
+### <a name="emailrole-values"></a>emailrole 値
+電子メールの役割に指定できる値。
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|.0|不明な役割。|
+|sender|1-d|電子メールの送信者。|
+|recipient|pbm-2|電子メールの受信者。|
+
+### <a name="logontype-values"></a>logontype の値
+
+ユーザーのサインイン方法に指定できる値。
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|-1|わかり.|
+|対話的|.0|ログオンは対話的です。|
+|remoteinteractive|1-d| ログオンはリモート対話型です。|
+|lan|pbm-2| ログオンはネットワークです。|
+|batch|1/3| ログオンはバッチです。|
+|service|2/4| ログオンはサービスです。|
+
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType の値
+
+Windows 定義ごとに、ユーザーアカウントの種類 (グループメンバーシップ) に指定できる値。
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|-1|わかり.|
+|standard|.0|標準ユーザーグループのメンバ。|
+|power|1-d| Power Users グループのメンバー。|
+|者|pbm-2| Administrators グループのメンバー。|

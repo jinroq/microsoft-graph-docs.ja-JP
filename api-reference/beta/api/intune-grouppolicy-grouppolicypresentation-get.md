@@ -1,23 +1,23 @@
 ---
-title: GroupPolicyPresentation を取得します。
-description: GroupPolicyPresentation オブジェクトのプロパティと関係を参照してください。
-localization_priority: Normal
+title: groupPolicyPresentation を取得する
+description: groupPolicyPresentation オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1f7711700b79dabd28a9abccfab39c9ade7a572
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d2ee1cdf3a693ea24a798a34063c6969ad02ab9d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428905"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149687"
 ---
-# <a name="get-grouppolicypresentation"></a>GroupPolicyPresentation を取得します。
+# <a name="get-grouppolicypresentation"></a>groupPolicyPresentation を取得する
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)オブジェクトのプロパティと関係を参照してください。
+[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
@@ -45,13 +45,13 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
