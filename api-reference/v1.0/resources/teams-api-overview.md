@@ -36,7 +36,7 @@ ms.locfileid: "27947499"
 
 <span data-ttu-id="4aeba-131">チームを持つ任意のグループには、「チーム」が含まれている**resourceProvisioningOptions**プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="4aeba-131">Any group that has a team has a **resourceProvisioningOptions** property that contains "Team".</span></span> 
 
-><span data-ttu-id="4aeba-132">**注:\*\*\*\*Group.resourceProvisioningOptions**プロパティを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="4aeba-132">**Note:** The **Group.resourceProvisioningOptions** property can be changed.</span></span>
+><span data-ttu-id="4aeba-132">**注:** **Group.resourceProvisioningOptions**プロパティを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="4aeba-132">**Note:** The **Group.resourceProvisioningOptions** property can be changed.</span></span>
 <span data-ttu-id="4aeba-133">追加またはそのコレクションから「チーム」を削除します。それ以外の場合、すべてのチームの一覧を表示すると誤った結果が得られます。</span><span class="sxs-lookup"><span data-stu-id="4aeba-133">Do not add or remove "Team" from that collection; otherwise, you'll get incorrect results when you list all teams.</span></span>
 
 <span data-ttu-id="4aeba-134">チームとグループの違いを API レベルでは、次のように。</span><span class="sxs-lookup"><span data-stu-id="4aeba-134">The following are the differences at the API level between teams and groups:</span></span>

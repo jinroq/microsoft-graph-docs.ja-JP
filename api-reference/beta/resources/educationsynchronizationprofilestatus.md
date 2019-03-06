@@ -17,7 +17,7 @@ ms.locfileid: "29523541"
 
 <span data-ttu-id="715ce-104">学校のデータ[の同期プロファイル](educationsynchronizationprofile.md)の同期の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="715ce-104">Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md).</span></span> 
 
-> <span data-ttu-id="715ce-105">**注:\*\*\*\*EducationSynchronizationProfileStatus**への更新はバック グラウンドで同期処理の非同期の性質のため遅れる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="715ce-105">**Note:** Updates to the **educationSynchronizationProfileStatus** might be delayed due to the asynchronous nature of background sync processing.</span></span>
+> <span data-ttu-id="715ce-105">**注:** **EducationSynchronizationProfileStatus**への更新はバック グラウンドで同期処理の非同期の性質のため遅れる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="715ce-105">**Note:** Updates to the **educationSynchronizationProfileStatus** might be delayed due to the asynchronous nature of background sync processing.</span></span>
 
 ## <a name="methods"></a><span data-ttu-id="715ce-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="715ce-106">Methods</span></span>
 

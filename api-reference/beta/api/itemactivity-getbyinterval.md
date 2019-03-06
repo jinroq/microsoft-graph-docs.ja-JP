@@ -17,7 +17,7 @@ ms.locfileid: "29516456"
 
 <span data-ttu-id="6ec5b-103">このリソース内の指定した時間間隔で行われた活動の[itemActivityStats][]を取得します。</span><span class="sxs-lookup"><span data-stu-id="6ec5b-103">Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.</span></span>
 
-><span data-ttu-id="6ec5b-104">**注:\*\*\*\*ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="6ec5b-104">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
+><span data-ttu-id="6ec5b-104">**注:** **ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="6ec5b-104">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
 
 <span data-ttu-id="6ec5b-105">分析の集計は、すべてのアクション タイプにできない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6ec5b-105">Analytics aggregates might not be available for all action types.</span></span>
 

@@ -17,7 +17,7 @@ ms.locfileid: "29513607"
 
 <span data-ttu-id="64b72-105">リソース エンティティの学校データ プロファイルの同期をカスタマイズするための設定を提供します。</span><span class="sxs-lookup"><span data-stu-id="64b72-105">Provides settings for customizing the school data profile synchronization of the resource entities.</span></span> <span data-ttu-id="64b72-106">同期されているすべてのエンティティには、カスタマイズを適用できます。</span><span class="sxs-lookup"><span data-stu-id="64b72-106">The customization can be applied to all the entities being synchronized.</span></span> 
 
-><span data-ttu-id="64b72-107">**注:\*\*\*\*SynchronizationStartDate**プロパティは、 **StudentEnrollment**のエンティティにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="64b72-107">**Note:** The **synchronizationStartDate** property only applies to the **StudentEnrollment** entity.</span></span>
+><span data-ttu-id="64b72-107">**注:** **SynchronizationStartDate**プロパティは、 **StudentEnrollment**のエンティティにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="64b72-107">**Note:** The **synchronizationStartDate** property only applies to the **StudentEnrollment** entity.</span></span>
 
 ## <a name="properties"></a><span data-ttu-id="64b72-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="64b72-108">Properties</span></span>
 

@@ -16,7 +16,7 @@ ms.locfileid: "27986076"
 
 <span data-ttu-id="d0dbf-105">有効期間の長い埋め込みリンクを取得する場合は、 [createLink][] API を使用してください。</span><span class="sxs-lookup"><span data-stu-id="d0dbf-105">If you want to obtain long-lived embeddable links, use the [createLink][] API instead.</span></span>
 
-> <span data-ttu-id="d0dbf-106">**注:\*\*\*\*プレビュー**の動作は、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。</span><span class="sxs-lookup"><span data-stu-id="d0dbf-106">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
+> <span data-ttu-id="d0dbf-106">**注:** **プレビュー**の動作は、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。</span><span class="sxs-lookup"><span data-stu-id="d0dbf-106">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [createLink]: driveitem-createlink.md
 

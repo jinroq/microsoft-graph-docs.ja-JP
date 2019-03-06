@@ -19,7 +19,7 @@ ms.locfileid: "29516260"
 <span data-ttu-id="d954a-104">**ItemAnalytics**リソースの利用状況の統計 (stats) を取得する便利な方法では`allTime`と`lastSevenDays`。</span><span class="sxs-lookup"><span data-stu-id="d954a-104">The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.</span></span>
 <span data-ttu-id="d954a-105">ユーザー設定の時刻の範囲または間隔では、 [getActivitiesByInterval][] API を使用します。</span><span class="sxs-lookup"><span data-stu-id="d954a-105">For a custom time range or interval, use the [getActivitiesByInterval][] API.</span></span>
 
-><span data-ttu-id="d954a-106">**注:\*\*\*\*ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="d954a-106">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
+><span data-ttu-id="d954a-106">**注:** **ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="d954a-106">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md

@@ -19,7 +19,7 @@ ms.locfileid: "29514965"
 
 <span data-ttu-id="d5014-105">間隔またはユーザー設定の時刻の範囲の上で分析を取得するために、 [getActivitiesByInterval][] API を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="d5014-105">You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.</span></span>
 
-><span data-ttu-id="d5014-106">**注:\*\*\*\*ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5014-106">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
+><span data-ttu-id="d5014-106">**注:** **ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5014-106">**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).</span></span>
 
 ## <a name="json-representation"></a><span data-ttu-id="d5014-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d5014-107">JSON representation</span></span>
 
