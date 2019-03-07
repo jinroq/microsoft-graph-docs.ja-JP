@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056967"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458632"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -50,12 +50,6 @@ ms.locfileid: "30056967"
 新しいチームはリストに含まれます。
 古いチームの一部には、**resourceProvisioningOptions** プロパティが存在しないものがあります。このプロパティには "Team" が含まれており、新しく作成され、Microsoft Teams 内でアクセスされたチームには設定されます。
 将来的には、Microsoft Teams で開かれたことのない既存のチームに対しても、**resourceProvisioningOptions** が設定される予定です。
-
-### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>アプリケーションのアクセス許可を使用したアプリケーションのインストールとアンインストール
-
-アプリケーションのアクセス許可を使用してチームからアプリをアンインストールすると、アプリが正常にアンインストールされた場合でも API は 500 エラー コードを返します。
-
-アプリケーションのアクセス許可を使用してチームに対しアプリのインストール、更新、アンインストールを行っても、監査ログ イベントは記録されません。
 
 ## <a name="groups"></a>グループ
 

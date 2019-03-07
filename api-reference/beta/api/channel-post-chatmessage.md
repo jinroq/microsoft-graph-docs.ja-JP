@@ -1,21 +1,21 @@
 ---
-title: チャネルでメッセージを作成します。
-description: 指定されたチャネルでは、新しいメッセージを作成します。
+title: チャネルでメッセージを送信する
+description: 指定したチャネルで新しいメッセージを送信します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 891181c8797563fac6afb7862a27bd8b49628b5f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039564"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458639"
 ---
-# <a name="create-a-message-in-a-channel"></a>チャネルでメッセージを作成します。
+# <a name="send-a-message-to-a-channel"></a>チャネルへのメッセージの送信
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[チャネル](../resources/channel.md)では、新しい[メッセージ](../resources/chatmessage.md)を作成します。
+指定した[チャネル](../resources/channel.md)で新しい[メッセージ](../resources/chatmessage.md)を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "30039564"
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|委任 (個人用 Microsoft アカウント) | サポートされません。    |
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -31,17 +31,20 @@ ms.locfileid: "30039564"
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文に、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON の形式を指定します。 Body プロパティだけでは、必須、その他のプロパティは省略可能です。
+要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 body プロパティのみが必須で、その他のプロパティはオプションです。
+
+> 注: 添付ファイルと画像を使用したメッセージの送信はサポートされていません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`が作成された[メッセージ](../resources/chatmessage.md)で応答コード。
+成功した場合、この`201 Created`メソッドは作成された[メッセージ](../resources/chatmessage.md)で応答コードを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -114,7 +117,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

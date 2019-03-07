@@ -4,20 +4,18 @@ description: 指定したチームからアプリをアンインストールし�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070821"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458667"
 ---
 # <a name="delete-app-from-team"></a>チームからアプリを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した[チーム](../resources/team.md)から[アプリ](../resources/teamsappinstallation.md)をアンインストールします。
-
->**注:** アプリケーションのアクセス許可を使用している場合は、既知の問題が発生します。 詳細については、「[既知の問題](/graph/known-issues)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -57,7 +55,7 @@ DELETE /teams/{id}/installedApps/{id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>応答
-応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "ignored",
   "truncated": true,
