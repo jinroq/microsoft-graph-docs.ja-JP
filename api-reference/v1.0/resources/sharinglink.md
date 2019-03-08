@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 02a4c0251a5484edc7ba5e07095f44043c269ae5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863554"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481427"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink リソースの種類
 
@@ -39,17 +39,18 @@ ms.locfileid: "27863554"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型          | 説明
+| プロパティ    | 種類          | 説明
 |:------------|:--------------|:-------------------------------------
 | application | [identity][]  | リンクが関連付けられているアプリケーションです。
 | type        | String        | 作成されたリンクの種類。
-| scope       | String        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
+| scope       | String
+        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
 | webHtml     | String        | `embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。
-| webUrl      | String        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
+| webUrl      | 文字列        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
 
 [Identity]: identity.md
 
-## <a name="type-options"></a>タイプ オプション
+## <a name="type-options"></a>種類のオプション
 
 この表は、**type** プロパティの可能な値を定義します。
 
@@ -59,12 +60,12 @@ ms.locfileid: "27863554"
 | `edit`  | `write` | 読み取り/書き込みのアクセスを許可する、編集共有リンクです。
 | `embed` | `read`  | ホスト Web ページにコンテンツを埋め込むために使用できる、表示専用共有リンクです。 埋め込みリンクは、OneDrive for Business または SharePoint では使用できません。
 
-## <a name="scope-options"></a>スコープ オプション
+## <a name="scope-options"></a>範囲オプション
 
 | 値          | 説明
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | リンクを持つユーザーは、サインインすることがなく、アクセスを持ちます。 これには、組織の外部ユーザーが含まれます。
-| `organization` | アクセス権を取得するのには、組織 (テナント) に署名されたすべてのユーザーのリンクを使用できます。 ビジネスと SharePoint の OneDrive でのみ使用できます。
+| `anonymous`    | リンクを持つすべてのユーザーが、サインインを必要とせずにアクセスできます。 これには、組織外のユーザーが含まれることがあります。
+| `organization` | 組織 (テナント) にサインインしているユーザーは、リンクを使用してアクセス権を取得することができます。 OneDrive for business と SharePoint でのみ使用できます。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528936"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481161"
 ---
-# <a name="columndefinition-resource-type"></a>columnDefinition リソースの種類
+# <a name="columndefinition-resource-type"></a>columndefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="json-representation"></a>JSON 表記
 
-ColumnDefinition リソースの JSON 表現は、ここで。
+以下は、columndefinition リソースの JSON 表記です。
 
 <!--{
   "blockType": "resource",
@@ -57,17 +57,17 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 
 列には、さまざまな種類のデータを保持できます。
 次のプロパティは、列に保持されるデータの種類と、そのデータに関する追加の設定を示します。
-タイプに関連するプロパティ (ブール値、計算された、選択、通貨、日時、検索、番号、personOrGroup、テキスト) は相互に排他的な--列のみが指定されているそれらの 1 つです。
+型に関連するプロパティ (boolean、演算、choice、currency、dateTime、lookup、number、個人、グループ、テキスト) は相互に排他的です。1つの列に指定できるのは1つだけです。
 
-| プロパティ名           | 型    | 説明
+| プロパティ名           | 種類    | 説明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
 | **description**         | string  | 列に関するユーザー向けの説明。
 | **displayName**         | string  | 列を示すユーザー向けの名前。
-| **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
-| **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
+| **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
+| **hidden**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。
 | **id**                  | string  | 列の一意識別子。
-| **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
+| **indexed**             | ブール値 | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
 | **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
 | **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
 | **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
@@ -77,14 +77,14 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 | **currency**      | [currencyColumn][]      | この列には通貨値が格納されます。
 | **dateTime**      | [dateTimeColumn][]      | この列には日時の値が格納されます。
 | **defaultValue**  | [defaultColumnValue][]  | この列の既定値です。
-| 位置情報   | [geolocationColumn][]   | この列は、地理位置情報を格納します。
+| **地理位置情報**   | [geolocationcolumn][]   | この列には、地理位置情報が格納されます。
 | **lookup**        | [lookupColumn][]        | この列のデータは、サイト内の別のソースから検索されます。
 | **number**        | [numberColumn][]        | この列には数値が格納されます。
 | **personOrGroup** | [personOrGroupColumn][] | この列にはユーザーまたはグループの値が格納されます。
 | **text**          | [textColumn][]          | この列にはテキスト値が格納されます。
 
->注: これらのプロパティは SharePoint の **SPFieldType** 列挙体に対応しています。
-最も一般的なフィールドの種類は上記の表に表示されるときにこのベータ版の API がまだないです。
+>**注:** これらのプロパティは、SharePoint の[SPFieldType][]列挙に対応しています。
+最も一般的なフィールドの種類は上記の表で表されていますが、このベータ版 API にはまだ不足しています。
 そのような場合、どの列タイプ ファセットも入力されず、基本的なプロパティだけが列に含まれます。
 
 ## <a name="remarks"></a>備考
@@ -99,7 +99,7 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
-[geolocationColumn]: geolocationcolumn.md
+[geolocationcolumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

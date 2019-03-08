@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Image
+title: イメージ
 localization_priority: Normal
-ms.openlocfilehash: 588f5185cba3012ce3dce77a9707aa23be2bf0cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513929"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482400"
 ---
 # <a name="image-resource-type"></a>イメージ リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "29513929"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型  | 説明                                |
+| プロパティ   | 種類  | 説明                                |
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | 省略可能。イメージの高さ (ピクセル単位)。読み取り専用です。 |
 | **width**  | Int32 | 省略可能。イメージの幅 (ピクセル単位)。読み取り専用です。  |

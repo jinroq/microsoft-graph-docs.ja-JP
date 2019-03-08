@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: daee18357e3f19f646a816070ca41a660f7b7ed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810949"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481133"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem リソースの種類
 
@@ -50,29 +50,29 @@ ms.locfileid: "27810949"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型              | 説明                                                                            |
+| プロパティ             | 種類              | 説明                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | ドライブの一意識別子。読み取り専用。                                         |
+| id                   | 文字列            | ドライブの一意識別子。読み取り専用。                                         |
 | createdBy            | [identitySet][]   | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。        |
 | createdDateTime      | dateTimeOffset    | アイテム作成の日時。読み取り専用です。                                             |
-| 説明          | String            | ユーザーに表示されている項目の説明を提供します。 省略可能。                             |
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| 説明          | String            | ユーザーに表示されるアイテムの説明を提供します。 省略可能。                             |
+| eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。 |
 | lastModifiedDateTime | dateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。                                   |
-| name                 | 文字列            | アイテムの名前。読み取り/書き込み。                                                      |
+| name                 | string            | アイテムの名前。読み取り/書き込み。                                                      |
 | parentReference      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。                              |
 | webUrl               | string (URL)      | ブラウザーでリソースを表示するための URL。読み取り専用です。                              |
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ       | 型     | 説明
+| リレーションシップ       | 種類     | 説明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | アイテムを作成したユーザーの ID です。 読み取り専用です。
+| createdByUser      | [ユーザー][] | アイテムを作成したユーザーの ID です。 値の取得のみ可能です。
 | lastModifiedByUser | [user][] | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
+[ユーザー]: user.md
 
 ## <a name="remarks"></a>備考
 

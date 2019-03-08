@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: パスを使用した SharePoint サイトの取得
+title: パスで SharePoint サイトを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c81e025f8cee7acfc4eb9761d2168c200d0d4d5a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 574b6537fd218b2337f63f5966b267aa60f0f458
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508805"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481091"
 ---
 # <a name="get-a-site-resource-by-path"></a>パスを使用したサイト リソースの取得
 
@@ -25,7 +25,7 @@ ms.locfileid: "29508805"
 * サイト コレクションのホスト名 (contoso.sharepoint.com)
 * サーバーのホスト名を基準にしたサイトのパス。
 
-予約済みのサイト識別子 `root` もあります。これは次に示すように、常にターゲットのルート サイトを参照します。
+予約済みのサイト識別子 `root` もあり、これは次のように、ターゲットのルート サイトを常に参照します。
 
 * `/sites/root`:テナントのルート サイト。
 * `/groups/{group-id}/sites/root`:グループのチーム サイト。

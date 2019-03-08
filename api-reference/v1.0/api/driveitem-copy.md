@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーをコピーする
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a4a20a98badcf96848f5317d5625dc1b05750223
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961989"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481392"
 ---
 # <a name="copy-a-driveitem"></a>DriveItem をコピーする
 
@@ -46,7 +46,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 | 名前            | 値                                          | 説明                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | 省略可能。コピーが作成される親アイテムへの参照。                                         |
-| name            | 文字列                                         | 省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。    |
+| name            | string                                         | 省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。    |
 
 **注:** _parentReference_ には、ターゲット フォルダーの `driveId` と `id` パラメーターを含める必要があります。
 
@@ -81,8 +81,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-`Location` ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。
-この情報を使用して、[コピーがいつ終了したかを判断する](/graph/long-running-actions-overview)ことができます。
+`Location` ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。 この情報を使用して、[コピーがいつ終了したかを判断する](/graph/long-running-actions-overview)ことができます。
 
 ### <a name="remarks"></a>備考
 

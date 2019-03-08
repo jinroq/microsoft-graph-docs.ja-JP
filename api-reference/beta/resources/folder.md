@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Folder
+title: フォルダー
 localization_priority: Normal
-ms.openlocfilehash: af22487f017830481af6f39e113b80009f2e567f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b78e6038a8f8f9a91883dd29faeebe3d5db3ca04
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512753"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481217"
 ---
 # <a name="folder-resource-type"></a>Folder リソース型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**フォルダー**リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。**フォルダー**ファセットが null 以外の [**DriveItems**](driveitem.md) は、他の DriveItems のコンテナーです。
+**フォルダー**リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。**フォルダー**ファセットが null 以外の **[DriveItems](driveitem.md)** は、他の DriveItems のコンテナーです。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -38,7 +38,7 @@ ms.locfileid: "29512753"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型           | 説明
+| プロパティ       | 種類           | 説明
 |:---------------|:---------------|:-------------------------------------------
 | **childCount** | Int64          | このコンテナーの中に含まれる子の数。
 | **view**       | [folderView][] | フォルダーに推奨されるビューを定義するプロパティのコレクション。

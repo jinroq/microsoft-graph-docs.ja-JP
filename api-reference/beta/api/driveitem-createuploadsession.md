@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 再開可能なファイル アップロード
+title: 再開可能なファイルアップロード
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525340"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482393"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
+# <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズの大きなファイルをアップロードする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "29525340"
 
 ## <a name="create-an-upload-session"></a>アップロード セッションを作成する
 
-大きなファイルのアップロードを開始するには、アプリはまず新しいアップロード セッションを要求する必要があります。
-これは、完全なファイルがアップロードされるまで、ファイルのバイト数が保存される場所の一時的な保存場所を作成します。
-ファイルの最後のバイトがアップロードされた後は、アップロード セッションが完了し、最終的なファイルがコピー先のフォルダーに表示されています。
-明示的に設定することにより、アップロードを完了する要求を行うまで、宛先のファイルの最後の作成を延期できます代わりに、`deferCommit`要求の引数のプロパティです。
+サイズが大きいファイルのアップロードを開始するには、アプリがまず新しいアップロード セッションを要求する必要があります。
+これにより、完全なファイルがアップロードされるまでファイルのバイトが保存される、一時的な保存場所が作成されます。
+ファイルの最後のバイトがアップロードされると、アップロード セッションは完了し、最終的なファイルがアップロード先のフォルダーに表示されます。
+または、要求の引数にプロパティを`deferCommit`設定することによって、アップロードの完了要求を明示的に行うまで、移行先でのファイルの最終的な作成を遅延させることができます。
 
 ### <a name="http-request"></a>HTTP 要求
 
@@ -55,9 +55,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>要求本文
 
 要求の本文は必要ありません。
-ただし、アップロードされているファイルに関する追加データを提供する要求の本文内のプロパティと、アップロード操作のセマンティクスをカスタマイズするを指定できます。
+ただし、要求本文でプロパティを指定して、アップロードされるファイルに関する追加データを提供したり、アップロード操作のセマンティクスをカスタマイズしたりすることができます。
 
-などの`item`プロパティは、次のパラメーターを設定することができます。<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+たとえば、 `item`プロパティで次のパラメーターを設定できます。<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -66,7 +66,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 }
 ```
 
-次の使用例が動作を制御するは、ファイル名は既に使用され、場合も、明示的な終了の要求が行われるまでは、最終的なファイルを作成できませんする必要があります。
+次の例では、filename が既に取得されている場合の動作を制御し、明示的な完了要求が行われるまで最終的なファイルを作成しないように指定しています。
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -82,21 +82,21 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 名前       | 値 | 説明                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がアイテムの現在の etag に一致しない場合には、`412 Precondition Failed` エラー応答が返されます。 |
+| *if-match* | etag  | この要求ヘッダーが含まれていて、指定された etag (または ctag) がアイテムの現在の`412 Precondition Failed` etag に一致しない場合は、エラー応答が返されます。 |
 
 ## <a name="parameters"></a>パラメーター
 
-| パラメーター            | 型                          | サポートのメモ
+| パラメーター            | 型                          | 説明
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | driveItemUploadableProperties | アップロードされているファイルに関するデータ
-| deferCommit          | ブール値                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
+| item                 | ドライブ itemuploadableproperties | アップロードされるファイルに関するデータ
+| deferCommit          | ブール型                       | true に設定されている場合、コピー先でのファイルの最終作成では明示的な要求が必要になります。 OneDrive for business でのみ使用できます。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
 | プロパティ             | 種類               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
-| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| description          | String             | ユーザーに表示されるアイテムの説明を提供します。 読み取り/書き込み。 OneDrive Personal のみ
+| name                 | 文字列             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 
 ### <a name="request"></a>要求
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 ファイル、またはファイルの一部をアップロードするために、アプリは **createUploadSession** 応答で受け取った **uploadUrl** 値への PUT 要求を出します。
 どの要求の最大バイト数も 60 MiB 未満である限り、ファイル全体をアップロードすることも、ファイルをいくつかのバイト範囲に分割することも可能です。
 
-ファイルのフラグメントは、順に順番にアップロードする必要があります。
+ファイルのフラグメントは、順番にアップロードする必要があります。
 誤った順序でアップロードすると、エラーが発生します。
 
 **注:** アプリがファイルを複数のバイト範囲に分割する場合、各バイト範囲のサイズは 320 KiB (327,680 バイト) の倍数である**必要があります**。 320 KiB で均等に分割できないフラグメント サイズを使用した場合、一部のファイルのコミット中にエラーになります。
@@ -213,10 +213,10 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>ファイルの完成
 
-場合`deferCommit`は false または設定を解除すると、ファイルの最後のバイトの範囲はアップロード URL に配置すると、アップロードが自動的に入力し、します。
-場合`deferCommit`が true の場合、アップロードをアップロードする最終的な POST 要求を明示的に完了する必要がありますアップロード URL をファイルの最後のバイトの範囲を配置すると後、に長さ 0 のコンテンツの url。
+が`deferCommit` false または unset の場合は、ファイルの最後のバイト範囲がアップロード URL に格納されると、アップロードが自動的に完了します。
+が`deferCommit` true の場合は、ファイルの最後のバイト範囲がアップロード url に配置された後に、長さがゼロのコンテンツを含むアップロード url への最終 POST 要求によってアップロードが明示的に完了する必要があります。
 
-アップロードが完了したら、サーバー要求に応答、最後に、`HTTP 201 Created`または`HTTP 200 OK`。
+アップロードが完了すると、サーバーは、 `HTTP 201 Created`または`HTTP 200 OK`の最後の要求に応答します。
 また、応答本文には、完成したファイルを表す **driveItem** の既定のプロパティ セットも含まれます。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->

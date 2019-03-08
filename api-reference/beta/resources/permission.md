@@ -1,26 +1,26 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Permission
+title: アクセス許可
 localization_priority: Normal
-ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518850"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482078"
 ---
-# <a name="permission-resource-type"></a>Permission リソース型
+# <a name="permission-resource-type"></a>permission リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
+**permission**リソースは、[ドライブ項目](driveitem.md)リソースに対して付与された共有アクセス許可に関する情報を提供します。
 
 共有アクセス許可にはさまざまなフォームがあります。
-**permission** リソースは、これらの異なるフォームをリソースのファセットを通じて表します。
+**permission**リソースは、リソースのファセットを使用して、これらのさまざまなフォームを表します。
 
->**注:** ビジネスと SharePoint のドキュメント ライブラリの OneDrive では、 **inheritedFrom**プロパティは返されません。
+>**注:** OneDrive for business および SharePoint のドキュメントライブラリは、 **inheritedfrom**プロパティを返しません。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -60,20 +60,20 @@ ms.locfileid: "29518850"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型                        | 説明
+| プロパティ            | 種類                        | 説明
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
 | grantedTo           | [IdentitySet][]             | ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。
-| grantedToIdentities | コレクション ([IdentitySet][]) | リンクの種類のアクセス許可のアクセス許可の付与先ユーザーの詳細です。 読み取り専用です。
+| grantedToIdentities | コレクション (id[セット][]) | リンクの種類のアクセス許可では、アクセス許可が付与されたユーザーの詳細。 読み取り専用。
 | invitation          | [SharingInvitation][]       | このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。
 | inheritedFrom       | [ItemReference][]           | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link                | [SharingLink][]             | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles               | Collection(String)          | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId             | String                      | **[共有][] API** 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
-| expirationDateTime  | DateTimeOffset              | Yyyy の形式で MM の DateTimeOffset の ddTHH:mm:ssZ は、アクセス許可の有効期限を示します。 DateTime.MinValue を示しますがこのアクセス許可の有効期限が設定されていません。 省略可能。
-| HasPassword         | ブール値                     | これは、応答でのみ表示されてパスワードがこのアクセス許可の設定があるかどうかを示します。 オプションおよび読み取り専用であり、OneDrive 個人のみです。
+| shareId             | String                      | 共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。 値の取得のみ可能です。
+| expirationDateTime  | DateTimeOffset              | yyyy-mm-yyyy-mm-ddthh: mm: ssz の形式は、アクセス許可の有効期限を示します。 MinValue は、このアクセス許可に有効期限が設定されていないことを示します。 省略可能。
+| hasPassword         | ブール型                     | これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。 省略可能で、読み取り専用で、OneDrive 個人用のみです。
 
-### <a name="roles-enumeration-values"></a>ロールの列挙値
+### <a name="roles-enumeration-values"></a>Roles 列挙値
 
 | 値        | 詳細                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -84,24 +84,24 @@ ms.locfileid: "29518850"
 
 permission リソースは、_ファセット_ を使用して、リソースによって表されるアクセス許可の種類に関する情報を提供します。
 
-共有リンクには、アイテムにアクセスするために必要な一意のトークンが含まれています。
+共有リンクには、アイテムへのアクセスに必要な一意のトークンが含まれています。
 
 [**招待**][SharingInvitation] ファセットを持つアクセス許可は、特定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。
 
 ## <a name="sharing-links"></a>共有リンク
 
-[**リンク**][SharingLink]のファセットは、項目を作成したリンクを共有にアクセスを許可します。
-これらは、最も一般的な種類のアクセス許可です。
-共有リンクでは、ファイルまたはフォルダーへのアクセスに使用できる一意な URL を提供します。
-それらは、さまざまな方法でアクセスを許可するを設定できます。
-[CreateLink][] API を使用するには、組織にサインインしてすべてのユーザーに対して機能するリンクを作成するなど、サインインすることがなく、すべてのユーザーに適合するリンクを作成することができます。
-[招待][]API を使用するか、会社にいるかどうかは、特定のユーザーに対してのみ機能するリンクを作成します。
+[**リンク**][SharingLink] ファセットのあるアクセス許可は、項目上に作成された共有リンクを表します。
+最も一般的なアクセス許可の種類を次に示します。
+共有リンクは、ファイルまたはフォルダーへのアクセスに使用できる一意の URL を提供します。
+さまざまな方法でアクセスを許可するように設定できます。
+たとえば、 [createlink][] API を使用して、組織にサインインしているユーザーに対して機能するリンクを作成したり、サインインを必要とせずにすべてのユーザーに対して機能するリンクを作成したりできます。
+[invite][] API を使用すると、社内にいるかどうかに関係なく、特定のユーザーに対してのみ機能するリンクを作成することができます。
 
-リンクを共有するためのいくつかの例を次に示します。
+共有リンクの例を次に示します。
 
 ### <a name="view-link"></a>表示リンク
 
-このビューのリンクは、リンクを使用してすべてのユーザーに読み取り専用アクセスを提供します。
+このビューリンクは、リンクを持つすべてのユーザーに読み取り専用アクセスを提供します。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -122,7 +122,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ### <a name="edit-link"></a>編集リンク
 
-この [編集] リンクは、リンクを使用して組織内のすべてのユーザーに読み取りおよび書き込みアクセスを提供します。
+この編集リンクは、リンクを使用して組織内のすべてのユーザーに読み取り/書き込みアクセスを提供します。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -141,9 +141,9 @@ permission リソースは、_ファセット_ を使用して、リソースに
 }
 ```
 
-### <a name="specific-people-link"></a>特定の人のリンク
+### <a name="specific-people-link"></a>特定の人物リンク
 
-このリンクで特定のユーザーに読み取りおよび書き込みアクセスを提供する、`grantedToIdentities`コレクションです。
+このリンクにより、 `grantedToIdentities`コレクション内の特定のユーザーに対する読み取りおよび書き込みアクセス権が提供されます。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -176,8 +176,8 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ## <a name="sharing-invitations"></a>共有への招待
 
-[招待][]API によって送信されたアクセス許可は、[招待][SharingInvitation]ファセットの追加情報があります。
-招待状は、既知のアカウントに一致しない電子メール アドレスに送信された、招待は、償還、最初にユーザーがリンクをクリックして、サインインが行われるまで、 **grantedTo**プロパティが設定できません。
+[invite][] API によって送信されるアクセス許可には、[招待][sharinginvitation]ファセットに追加情報が含まれている場合があります。
+招待状が既知のアカウントに一致しない電子メールアドレスに送信された場合、招待が引き換えられるまで、 **grantedTo**プロパティは設定されません。これは、ユーザーが最初にリンクをクリックしてサインインするときに発生します。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -223,8 +223,8 @@ permission リソースは、_ファセット_ を使用して、リソースに
 |:---------------------------------------------------------|:-----------------------
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を取得する](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [[作成] リンク][createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [人を招待][招待]                                  | `POST /drive/items/{item-id}/invite`
+| [リンクの作成][createlink]                                | `POST /drive/items/{item-id}/createLink`
+| [ユーザーを招待]する[invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
@@ -232,7 +232,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 [createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[招待]: ../api/driveitem-invite.md
+[全員]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
 [共有 API]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
