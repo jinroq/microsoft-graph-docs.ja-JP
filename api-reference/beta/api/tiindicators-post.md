@@ -4,30 +4,30 @@ description: 新しい tiindicator を作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366981"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481441"
 ---
-# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="05892-103">脅威インテリジェンス指標の作成</span><span class="sxs-lookup"><span data-stu-id="05892-103">Create threat intelligence indicator</span></span>
+# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="44642-103">脅威インテリジェンス指標の作成</span><span class="sxs-lookup"><span data-stu-id="44642-103">Create threat intelligence indicator</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="05892-104">新しい[tiindicator](../resources/tiindicator.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="05892-104">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
+<span data-ttu-id="44642-104">新しい[tiindicator](../resources/tiindicator.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="44642-104">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="05892-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="05892-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="44642-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="44642-105">Permissions</span></span>
 
-<span data-ttu-id="05892-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05892-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44642-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44642-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="05892-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="05892-108">Permission type</span></span>                        | <span data-ttu-id="05892-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="05892-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="44642-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="44642-108">Permission type</span></span>                        | <span data-ttu-id="44642-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="44642-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="05892-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="05892-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="05892-111">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="05892-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
-| <span data-ttu-id="05892-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="05892-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05892-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05892-113">Not supported.</span></span> |
-| <span data-ttu-id="05892-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="05892-114">Application</span></span>                            | <span data-ttu-id="05892-115">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="05892-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="44642-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="44642-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="44642-111">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="44642-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
+| <span data-ttu-id="44642-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="44642-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44642-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="44642-113">Not supported.</span></span> |
+| <span data-ttu-id="44642-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="44642-114">Application</span></span>                            | <span data-ttu-id="44642-115">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="44642-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="05892-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="05892-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44642-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="44642-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "30366981"
 POST /security/tiIndicators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="05892-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05892-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="44642-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="44642-117">Request headers</span></span>
 
-| <span data-ttu-id="05892-118">名前</span><span class="sxs-lookup"><span data-stu-id="05892-118">Name</span></span>          | <span data-ttu-id="05892-119">説明</span><span class="sxs-lookup"><span data-stu-id="05892-119">Description</span></span>   |
+| <span data-ttu-id="44642-118">名前</span><span class="sxs-lookup"><span data-stu-id="44642-118">Name</span></span>          | <span data-ttu-id="44642-119">説明</span><span class="sxs-lookup"><span data-stu-id="44642-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="05892-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="05892-120">Authorization</span></span> | <span data-ttu-id="05892-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="05892-121">Bearer {code}</span></span> |
+| <span data-ttu-id="44642-120">承認</span><span class="sxs-lookup"><span data-stu-id="44642-120">Authorization</span></span> | <span data-ttu-id="44642-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="44642-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="05892-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="05892-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="44642-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="44642-122">Request body</span></span>
 
-<span data-ttu-id="05892-123">要求本文で、観測可能なものが少なくとも1つ含まれる[tiindicator](../resources/tiindicator.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="05892-123">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one observable.</span></span>
+<span data-ttu-id="44642-123">要求本文で、少なくとも1つの[メール](../resources/tiindicator.md#indicator-observables---email)、[ファイル](../resources/tiindicator.md#indicator-observables---file)、または観測可能な[ネットワーク](../resources/tiindicator.md#indicator-observables---network)を含む[tiindicator](../resources/tiindicator.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="44642-123">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable.</span></span>
 
-## <a name="response"></a><span data-ttu-id="05892-124">応答</span><span class="sxs-lookup"><span data-stu-id="05892-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="44642-124">応答</span><span class="sxs-lookup"><span data-stu-id="44642-124">Response</span></span>
 
-<span data-ttu-id="05892-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[tiindicator](../resources/tiindicator.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="05892-125">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
+<span data-ttu-id="44642-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[tiindicator](../resources/tiindicator.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="44642-125">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="05892-126">例</span><span class="sxs-lookup"><span data-stu-id="05892-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="44642-126">例</span><span class="sxs-lookup"><span data-stu-id="44642-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="05892-127">要求</span><span class="sxs-lookup"><span data-stu-id="05892-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="44642-127">要求</span><span class="sxs-lookup"><span data-stu-id="44642-127">Request</span></span>
 
-<span data-ttu-id="05892-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05892-128">The following is an example of the request.</span></span>
+<span data-ttu-id="44642-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="44642-128">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_tiindicator_from_security"
@@ -82,12 +82,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="05892-129">応答</span><span class="sxs-lookup"><span data-stu-id="05892-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="44642-129">応答</span><span class="sxs-lookup"><span data-stu-id="44642-129">Response</span></span>
 
-<span data-ttu-id="05892-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05892-130">The following is an example of the response.</span></span>
+<span data-ttu-id="44642-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="44642-130">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="05892-131">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="05892-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="05892-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="05892-132">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="44642-131">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="44642-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="44642-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="44642-132">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

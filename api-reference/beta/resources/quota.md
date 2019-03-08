@@ -1,25 +1,25 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Quota
+title: クォータ
 localization_priority: Normal
-ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525487"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480307"
 ---
-# <a name="quota-resource-type"></a><span data-ttu-id="00415-102">Quota リソース型</span><span class="sxs-lookup"><span data-stu-id="00415-102">quota resource type</span></span>
+# <a name="quota-resource-type"></a><span data-ttu-id="4c0df-102">クォータリソースの種類</span><span class="sxs-lookup"><span data-stu-id="4c0df-102">quota resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00415-103">**クォータ** リソースは、[ドライブ](drive.md) リソースの領域の制約に関する詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="00415-103">The **quota** resource provides details about space constrains on a [drive](drive.md) resource.</span></span>
+<span data-ttu-id="4c0df-103">**クォータ**リソースは、[ドライブ](drive.md)リソースの領域の制約に関する詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="4c0df-103">The **quota** resource provides details about space constrains on a [drive](drive.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="00415-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="00415-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4c0df-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4c0df-104">JSON representation</span></span>
 
-<span data-ttu-id="00415-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="00415-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4c0df-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,25 +40,25 @@ ms.locfileid: "29525487"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="00415-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="00415-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4c0df-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4c0df-106">Properties</span></span>
 
-| <span data-ttu-id="00415-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="00415-107">Property name</span></span> | <span data-ttu-id="00415-108">種類</span><span class="sxs-lookup"><span data-stu-id="00415-108">Type</span></span>   | <span data-ttu-id="00415-109">説明</span><span class="sxs-lookup"><span data-stu-id="00415-109">Description</span></span>                                                                 |
+| <span data-ttu-id="4c0df-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="4c0df-107">Property name</span></span> | <span data-ttu-id="4c0df-108">種類</span><span class="sxs-lookup"><span data-stu-id="4c0df-108">Type</span></span>   | <span data-ttu-id="4c0df-109">説明</span><span class="sxs-lookup"><span data-stu-id="4c0df-109">Description</span></span>                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| <span data-ttu-id="00415-110">total</span><span class="sxs-lookup"><span data-stu-id="00415-110">total</span></span>         | <span data-ttu-id="00415-111">Int64</span><span class="sxs-lookup"><span data-stu-id="00415-111">Int64</span></span>  | <span data-ttu-id="00415-p101">許可されている記憶域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="00415-p101">Total allowed storage space, in bytes. Read-only.</span></span>                           |
-| <span data-ttu-id="00415-114">used</span><span class="sxs-lookup"><span data-stu-id="00415-114">used</span></span>          | <span data-ttu-id="00415-115">Int64</span><span class="sxs-lookup"><span data-stu-id="00415-115">Int64</span></span>  | <span data-ttu-id="00415-p102">使用領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="00415-p102">Total space used, in bytes. Read-only.</span></span>                                      |
-| <span data-ttu-id="00415-118">remaining</span><span class="sxs-lookup"><span data-stu-id="00415-118">remaining</span></span>     | <span data-ttu-id="00415-119">Int64</span><span class="sxs-lookup"><span data-stu-id="00415-119">Int64</span></span>  | <span data-ttu-id="00415-p103">クォータ制限に達するまでの残りの領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="00415-p103">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
-| <span data-ttu-id="00415-122">deleted</span><span class="sxs-lookup"><span data-stu-id="00415-122">deleted</span></span>       | <span data-ttu-id="00415-123">Int64</span><span class="sxs-lookup"><span data-stu-id="00415-123">Int64</span></span>  | <span data-ttu-id="00415-p104">ごみ箱内のファイルによって消費されている領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="00415-p104">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
-| <span data-ttu-id="00415-126">state</span><span class="sxs-lookup"><span data-stu-id="00415-126">state</span></span>         | <span data-ttu-id="00415-127">string</span><span class="sxs-lookup"><span data-stu-id="00415-127">string</span></span> | <span data-ttu-id="00415-p105">記憶域の状態を示す列挙値。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="00415-p105">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
-| <span data-ttu-id="00415-130">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="00415-130">storagePlanInformation</span></span>  | [<span data-ttu-id="00415-131">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="00415-131">storagePlanInformation</span></span>](storageplaninformation.md) | <span data-ttu-id="00415-132">ドライブの記憶域のクォータの計画について説明します。</span><span class="sxs-lookup"><span data-stu-id="00415-132">Information about the drive's storage quota plans.</span></span> <span data-ttu-id="00415-133">で個人の OneDrive です。</span><span class="sxs-lookup"><span data-stu-id="00415-133">Only in Personal OneDrive.</span></span>|
+| <span data-ttu-id="4c0df-110">total</span><span class="sxs-lookup"><span data-stu-id="4c0df-110">total</span></span>         | <span data-ttu-id="4c0df-111">Int64</span><span class="sxs-lookup"><span data-stu-id="4c0df-111">Int64</span></span>  | <span data-ttu-id="4c0df-p101">許可されている記憶域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p101">Total allowed storage space, in bytes. Read-only.</span></span>                           |
+| <span data-ttu-id="4c0df-114">used</span><span class="sxs-lookup"><span data-stu-id="4c0df-114">used</span></span>          | <span data-ttu-id="4c0df-115">Int64</span><span class="sxs-lookup"><span data-stu-id="4c0df-115">Int64</span></span>  | <span data-ttu-id="4c0df-p102">使用領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p102">Total space used, in bytes. Read-only.</span></span>                                      |
+| <span data-ttu-id="4c0df-118">remaining</span><span class="sxs-lookup"><span data-stu-id="4c0df-118">remaining</span></span>     | <span data-ttu-id="4c0df-119">Int64</span><span class="sxs-lookup"><span data-stu-id="4c0df-119">Int64</span></span>  | <span data-ttu-id="4c0df-p103">クォータ制限に達するまでの残りの領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p103">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
+| <span data-ttu-id="4c0df-122">deleted</span><span class="sxs-lookup"><span data-stu-id="4c0df-122">deleted</span></span>       | <span data-ttu-id="4c0df-123">Int64</span><span class="sxs-lookup"><span data-stu-id="4c0df-123">Int64</span></span>  | <span data-ttu-id="4c0df-p104">ごみ箱内のファイルによって消費されている領域の合計 (バイト単位)。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p104">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
+| <span data-ttu-id="4c0df-126">state</span><span class="sxs-lookup"><span data-stu-id="4c0df-126">state</span></span>         | <span data-ttu-id="4c0df-127">string</span><span class="sxs-lookup"><span data-stu-id="4c0df-127">string</span></span> | <span data-ttu-id="4c0df-p105">記憶域の状態を示す列挙値。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p105">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
+| <span data-ttu-id="4c0df-130">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="4c0df-130">storagePlanInformation</span></span>  | [<span data-ttu-id="4c0df-131">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="4c0df-131">storagePlanInformation</span></span>](storageplaninformation.md) | <span data-ttu-id="4c0df-132">ドライブの記憶域クォータプランに関する情報。</span><span class="sxs-lookup"><span data-stu-id="4c0df-132">Information about the drive's storage quota plans.</span></span> <span data-ttu-id="4c0df-133">個人用の OneDrive のみ</span><span class="sxs-lookup"><span data-stu-id="4c0df-133">Only in Personal OneDrive.</span></span>|
 
-### <a name="state-enumeration-values"></a><span data-ttu-id="00415-134">状態の列挙値</span><span class="sxs-lookup"><span data-stu-id="00415-134">State enumeration values</span></span>
+### <a name="state-enumeration-values"></a><span data-ttu-id="4c0df-134">状態列挙値</span><span class="sxs-lookup"><span data-stu-id="4c0df-134">State enumeration values</span></span>
 
-| <span data-ttu-id="00415-135">値</span><span class="sxs-lookup"><span data-stu-id="00415-135">Value</span></span>      | <span data-ttu-id="00415-136">説明</span><span class="sxs-lookup"><span data-stu-id="00415-136">Description</span></span>                                                                                                                                                                 |
+| <span data-ttu-id="4c0df-135">値</span><span class="sxs-lookup"><span data-stu-id="4c0df-135">Value</span></span>      | <span data-ttu-id="4c0df-136">説明</span><span class="sxs-lookup"><span data-stu-id="4c0df-136">Description</span></span>                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `normal`   | <span data-ttu-id="00415-137">ドライブに十分なクォータが残っています。</span><span class="sxs-lookup"><span data-stu-id="00415-137">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
-| `nearing`  | <span data-ttu-id="00415-138">残りのクォータは、クォータ領域の合計の 10% 未満です。</span><span class="sxs-lookup"><span data-stu-id="00415-138">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
-| `critical` | <span data-ttu-id="00415-139">残りのクォータは、クォータ領域の合計の 1% 未満です。</span><span class="sxs-lookup"><span data-stu-id="00415-139">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
-| `exceeded` | <span data-ttu-id="00415-p107">クォータ使用量が、クォータの合計を超えています。クォータの合計を下回るか、追加の記憶領域を購入するまで、新しいファイルまたはフォルダーをドライブに追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="00415-p107">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
+| `normal`   | <span data-ttu-id="4c0df-137">ドライブに十分なクォータが残っています。</span><span class="sxs-lookup"><span data-stu-id="4c0df-137">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
+| `nearing`  | <span data-ttu-id="4c0df-138">残りのクォータは、クォータ領域の合計の 10% 未満です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-138">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
+| `critical` | <span data-ttu-id="4c0df-139">残りのクォータは、クォータ領域の合計の 1% 未満です。</span><span class="sxs-lookup"><span data-stu-id="4c0df-139">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
+| `exceeded` | <span data-ttu-id="4c0df-p107">クォータ使用量が、クォータの合計を超えています。クォータの合計を下回るか、追加の記憶領域を購入するまで、新しいファイルまたはフォルダーをドライブに追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="4c0df-p107">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
 
 <!--
 {

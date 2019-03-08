@@ -1,34 +1,34 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 旧バージョンの SharePoint リスト アイテムを復元する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ef3b5848b6a6f60bf0515f914e87383e0a6f66bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 20cf0460aa679fc40a4bb11d0887bc4946ddcd74
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511556"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482085"
 ---
-# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="c3752-102">旧バージョンのリスト アイテムを復元する</span><span class="sxs-lookup"><span data-stu-id="c3752-102">Restore a previous version of a ListItem</span></span>
+# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="ecf60-102">旧バージョンのリスト アイテムを復元する</span><span class="sxs-lookup"><span data-stu-id="ecf60-102">Restore a previous version of a ListItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c3752-103">旧バージョンのリスト アイテムを現在のバージョンに復元します。</span><span class="sxs-lookup"><span data-stu-id="c3752-103">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="c3752-104">旧バージョンのコンテンツを持つ新しいバージョンを作成します。しかし、アイテムの既存のバージョンはすべて保持されます。</span><span class="sxs-lookup"><span data-stu-id="c3752-104">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
+<span data-ttu-id="ecf60-103">旧バージョンのリスト アイテムを現在のバージョンに復元します。</span><span class="sxs-lookup"><span data-stu-id="ecf60-103">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="ecf60-104">旧バージョンのコンテンツを持つ新しいバージョンを作成します。しかし、アイテムの既存のバージョンはすべて保持されます。</span><span class="sxs-lookup"><span data-stu-id="ecf60-104">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c3752-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c3752-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ecf60-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ecf60-105">Permissions</span></span>
 
-<span data-ttu-id="c3752-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c3752-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ecf60-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecf60-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="c3752-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c3752-108">Permission type</span></span>             |         <span data-ttu-id="c3752-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c3752-109">Permissions (from least to most privileged)</span></span>          |
+|            <span data-ttu-id="ecf60-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ecf60-108">Permission type</span></span>             |         <span data-ttu-id="ecf60-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ecf60-109">Permissions (from least to most privileged)</span></span>          |
 | :------------------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="c3752-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c3752-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c3752-111">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="c3752-111">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
-| <span data-ttu-id="c3752-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c3752-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3752-113">該当なし</span><span class="sxs-lookup"><span data-stu-id="c3752-113">n/a</span></span>                                                          |
-| <span data-ttu-id="c3752-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c3752-114">Application</span></span>                            | <span data-ttu-id="c3752-115">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="c3752-115">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="ecf60-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ecf60-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ecf60-111">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="ecf60-111">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="ecf60-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ecf60-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecf60-113">該当なし</span><span class="sxs-lookup"><span data-stu-id="ecf60-113">n/a</span></span>                                                          |
+| <span data-ttu-id="ecf60-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ecf60-114">Application</span></span>                            | <span data-ttu-id="ecf60-115">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="ecf60-115">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c3752-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c3752-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ecf60-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ecf60-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,13 +37,13 @@ POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-### <a name="request-body"></a><span data-ttu-id="c3752-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="c3752-117">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="ecf60-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="ecf60-117">Request body</span></span>
 
-<span data-ttu-id="c3752-118">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="c3752-118">No request body is required.</span></span>
+<span data-ttu-id="ecf60-118">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="ecf60-118">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c3752-119">例</span><span class="sxs-lookup"><span data-stu-id="c3752-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ecf60-119">例</span><span class="sxs-lookup"><span data-stu-id="ecf60-119">Example</span></span>
 
-<span data-ttu-id="c3752-120">この例では、`{item-id}` と `{version-id}` で識別されるリスト アイテムのバージョンを復元します。</span><span class="sxs-lookup"><span data-stu-id="c3752-120">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
+<span data-ttu-id="ecf60-120">この例では、`{item-id}` と `{version-id}` で識別されるリスト アイテムのバージョンを復元します。</span><span class="sxs-lookup"><span data-stu-id="ecf60-120">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -51,9 +51,9 @@ POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/rest
 POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-## <a name="response"></a><span data-ttu-id="c3752-121">応答</span><span class="sxs-lookup"><span data-stu-id="c3752-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ecf60-121">応答</span><span class="sxs-lookup"><span data-stu-id="ecf60-121">Response</span></span>
 
-<span data-ttu-id="c3752-122">成功すると、API 呼び出しは `204 No content` を返します。</span><span class="sxs-lookup"><span data-stu-id="c3752-122">If successful, the API call returns a `204 No content`.</span></span>
+<span data-ttu-id="ecf60-122">成功すると、API 呼び出しは `204 No content` を返します。</span><span class="sxs-lookup"><span data-stu-id="ecf60-122">If successful, the API call returns a `204 No content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 

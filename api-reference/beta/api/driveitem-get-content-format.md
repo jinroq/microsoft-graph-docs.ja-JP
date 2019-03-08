@@ -1,31 +1,31 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 他の形式に変換する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8d65b7604c2ec17d4225c9cb887cbbfad2223009
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526306"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481826"
 ---
-# <a name="download-a-file-in-another-format"></a><span data-ttu-id="8e8f4-102">別の形式でファイルをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="8e8f4-102">Download a file in another format</span></span>
+# <a name="download-a-file-in-another-format"></a><span data-ttu-id="efbad-102">別の形式でファイルをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="efbad-102">Download a file in another format</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8e8f4-103">この API を使用して、アイテムのコンテンツを特定の形式で取得します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-103">Use this API to retrieve the contents of an item in a specific format.</span></span>
-<span data-ttu-id="8e8f4-104">すべてのファイルがすべての形式に変換できるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-104">Not all files can be converted into all formats.</span></span>
+<span data-ttu-id="efbad-103">この API を使用して、アイテムのコンテンツを特定の形式で取得します。</span><span class="sxs-lookup"><span data-stu-id="efbad-103">Use this API to retrieve the contents of an item in a specific format.</span></span>
+<span data-ttu-id="efbad-104">すべてのファイルがすべての形式に変換できるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="efbad-104">Not all files can be converted into all formats.</span></span>
 
-<span data-ttu-id="8e8f4-105">元の形式でアイテムをダウンロードするには、[アイテムの内容をダウンロードする](driveitem-get-content.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-105">To download the item in its original format, see [download an item's contents](driveitem-get-content.md).</span></span>
+<span data-ttu-id="efbad-105">アイテムを元の形式でダウンロードするには、「[アイテムのコンテンツをダウンロード](driveitem-get-content.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="efbad-105">To download the item in its original format, see [download an item's contents](driveitem-get-content.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8e8f4-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="8e8f4-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="efbad-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="efbad-106">Prerequisites</span></span>
 
-<span data-ttu-id="8e8f4-107">この API を呼び出すには、ユーザーがアプリケーションに対して、アプリが変換するファイルへの読み取りアクセス権を付与している必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-107">To call this API, the user must have granted the application read access to the file the app wishes to convert.</span></span>
+<span data-ttu-id="efbad-107">この API を呼び出すには、ユーザーがアプリケーションに対して、アプリが変換するファイルへの読み取りアクセス権を付与している必要があります。</span><span class="sxs-lookup"><span data-stu-id="efbad-107">To call this API, the user must have granted the application read access to the file the app wishes to convert.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8e8f4-108">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8e8f4-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efbad-108">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="efbad-108">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,29 +34,29 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="8e8f4-109">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8e8f4-109">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="efbad-109">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="efbad-109">Query parameters</span></span>
 
-| <span data-ttu-id="8e8f4-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8e8f4-110">Parameter</span></span>      | <span data-ttu-id="8e8f4-111">型</span><span class="sxs-lookup"><span data-stu-id="8e8f4-111">Type</span></span>  | <span data-ttu-id="8e8f4-112">説明</span><span class="sxs-lookup"><span data-stu-id="8e8f4-112">Description</span></span>                                                    |
+| <span data-ttu-id="efbad-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="efbad-110">Parameter</span></span>      | <span data-ttu-id="efbad-111">型</span><span class="sxs-lookup"><span data-stu-id="efbad-111">Type</span></span>  | <span data-ttu-id="efbad-112">説明</span><span class="sxs-lookup"><span data-stu-id="efbad-112">Description</span></span>                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| <span data-ttu-id="8e8f4-113">_format_</span><span class="sxs-lookup"><span data-stu-id="8e8f4-113">_format_</span></span>  | <span data-ttu-id="8e8f4-114">string</span><span class="sxs-lookup"><span data-stu-id="8e8f4-114">string</span></span> | <span data-ttu-id="8e8f4-115">アイテムのコンテンツをダウンロードする形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-115">Specify the format the item's content should be downloaded as.</span></span> |
+| <span data-ttu-id="efbad-113">_format_</span><span class="sxs-lookup"><span data-stu-id="efbad-113">_format_</span></span>  | <span data-ttu-id="efbad-114">string</span><span class="sxs-lookup"><span data-stu-id="efbad-114">string</span></span> | <span data-ttu-id="efbad-115">アイテムのコンテンツをダウンロードする形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="efbad-115">Specify the format the item's content should be downloaded as.</span></span> |
 
 
-<span data-ttu-id="8e8f4-116">次の値は、 **format**パラメーターに有効です。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-116">The following values are valid for the **format** parameter:</span></span>
+<span data-ttu-id="efbad-116">**format**パラメーターには、次の値が有効です。</span><span class="sxs-lookup"><span data-stu-id="efbad-116">The following values are valid for the **format** parameter:</span></span>
 
-| <span data-ttu-id="8e8f4-117">値</span><span class="sxs-lookup"><span data-stu-id="8e8f4-117">Value</span></span> | <span data-ttu-id="8e8f4-118">説明</span><span class="sxs-lookup"><span data-stu-id="8e8f4-118">Description</span></span>                        | <span data-ttu-id="8e8f4-119">サポートされているソースの拡張子</span><span class="sxs-lookup"><span data-stu-id="8e8f4-119">Supported source extensions</span></span>
+| <span data-ttu-id="efbad-117">値</span><span class="sxs-lookup"><span data-stu-id="efbad-117">Value</span></span> | <span data-ttu-id="efbad-118">説明</span><span class="sxs-lookup"><span data-stu-id="efbad-118">Description</span></span>                        | <span data-ttu-id="efbad-119">サポートされているソースの拡張子</span><span class="sxs-lookup"><span data-stu-id="efbad-119">Supported source extensions</span></span>
 |:------|:-----------------------------------|---------------------------------
-| <span data-ttu-id="8e8f4-120">glb</span><span class="sxs-lookup"><span data-stu-id="8e8f4-120">glb</span></span>   | <span data-ttu-id="8e8f4-121">GLB の形式にアイテムを変換します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-121">Converts the item into GLB format</span></span>  | <span data-ttu-id="8e8f4-122">クール、fbx、obj、プライ、stl、3mf</span><span class="sxs-lookup"><span data-stu-id="8e8f4-122">cool, fbx, obj, ply, stl, 3mf</span></span>
-| <span data-ttu-id="8e8f4-123">html</span><span class="sxs-lookup"><span data-stu-id="8e8f4-123">html</span></span>  | <span data-ttu-id="8e8f4-124">項目を HTML 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-124">Converts the item into HTML format</span></span> | <span data-ttu-id="8e8f4-125">eml, md, メッセージ</span><span class="sxs-lookup"><span data-stu-id="8e8f4-125">eml, md, msg</span></span>
-| <span data-ttu-id="8e8f4-126">.jpg</span><span class="sxs-lookup"><span data-stu-id="8e8f4-126">jpg</span></span>   | <span data-ttu-id="8e8f4-127">アイテムを JPG 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-127">Converts the item into JPG format</span></span>  | <span data-ttu-id="8e8f4-128">3 g 2、3 gp、3gp2、3 gpp、3mf、ai、arw、asf、avi、bas、bash、bat、bmp、c、cbl、cmd、冷却、cpp、cr2、crw、cs、css、csv、cur、dcm、dcm30、dic、dicm、dicom、dng、doc、docx、dwg、eml、epi、eps、epsf、epsi、epub 形式、erf、fbx、fppx、gif、glb、h、hcp、heic、heif、htm、html、ico、アイコン、java、欠落、jpeg、jpg、js、json、キー、ログ、m2ts、m4a、m4v、値下げ、md、mef、mov、ビデオ、mp3、mp4、mp4v、mrw、msg、mts、nef、nrw、番号、obj、odp、密接に関連、ogg、orf、ページ、pano、pdf、pef、php、pict、pl、プライ、png、ポット、potm、potx、pps、ppsx、ppsxm、ppt、pptm、pptx、ps、ps1、psb、psd、py、生の、rb、rtf 形式、rw1、rw2、sh では、スケッチ、sql、sr2、stl、tif、tiff、ts、txt、vb、webm、wma、wmv、xaml、xbm、xcf、xd、xml、xpm、yaml、yml</span><span class="sxs-lookup"><span data-stu-id="8e8f4-128">3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml</span></span>
-| <span data-ttu-id="8e8f4-129">PDF</span><span class="sxs-lookup"><span data-stu-id="8e8f4-129">pdf</span></span>   | <span data-ttu-id="8e8f4-130">アイテムを PDF 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-130">Converts the item into PDF format</span></span>  | <span data-ttu-id="8e8f4-131">doc、docx、epub 形式、eml、htm、html、md、メッセージ、odp、ods、密接に関連、pps、ppsx、ppt、pptx、rtf 形式、tif、tiff、xls、xlsm、xlsx</span><span class="sxs-lookup"><span data-stu-id="8e8f4-131">doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx</span></span>
+| <span data-ttu-id="efbad-120">glb</span><span class="sxs-lookup"><span data-stu-id="efbad-120">glb</span></span>   | <span data-ttu-id="efbad-121">アイテムを GLB 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="efbad-121">Converts the item into GLB format</span></span>  | <span data-ttu-id="efbad-122">クール、fbx、obj、プライ、stl、3mf</span><span class="sxs-lookup"><span data-stu-id="efbad-122">cool, fbx, obj, ply, stl, 3mf</span></span>
+| <span data-ttu-id="efbad-123">Html</span><span class="sxs-lookup"><span data-stu-id="efbad-123">html</span></span>  | <span data-ttu-id="efbad-124">アイテムを HTML 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="efbad-124">Converts the item into HTML format</span></span> | <span data-ttu-id="efbad-125">eml、md、msg</span><span class="sxs-lookup"><span data-stu-id="efbad-125">eml, md, msg</span></span>
+| <span data-ttu-id="efbad-126">.jpg</span><span class="sxs-lookup"><span data-stu-id="efbad-126">jpg</span></span>   | <span data-ttu-id="efbad-127">項目を JPG 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="efbad-127">Converts the item into JPG format</span></span>  | <span data-ttu-id="efbad-128">3g2、3gp、3g2、3gpp、3mf、ai、arw、asf、avi、bas、bash、bat、bmp、c、cbl、cmd、クール、cpp、cr2、crw、cs、css、csv、dcm30、dcm、、.dic、dicm、dicom、dng、doc、.docx、dwg、eml、epi、.eps、epsf、epsi、epub、glb、h、および、heic、heic、htm、html、.ico、icon、java、jfif、jpeg、jpg、js、json、key、log、m2ts、m4a、m4v、markdown、md、mef、mov、movie、、mp4、mp4v、mrw、msg、mts、nef、nrw、ogg、obj、、、、pef、、、pict、、、php、pict、pl、プライ、png、.pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、.pptx、ps、ps1、psb、psd、py、raw、、rtf、rw1、rw2、sh、sketch、sql、sr2、、、、ts、txt、vb、webm、wma、wmv、xaml、xbm、xcf、xd、xml、xpm、yaml、yml</span><span class="sxs-lookup"><span data-stu-id="efbad-128">3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml</span></span>
+| <span data-ttu-id="efbad-129">文書</span><span class="sxs-lookup"><span data-stu-id="efbad-129">pdf</span></span>   | <span data-ttu-id="efbad-130">アイテムを PDF 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="efbad-130">Converts the item into PDF format</span></span>  | <span data-ttu-id="efbad-131">doc、.docx、epub、eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、.pptx、rtf、tif、tiff、xls、.xlsm、.xlsx</span><span class="sxs-lookup"><span data-stu-id="efbad-131">doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="8e8f4-132">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8e8f4-132">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="efbad-132">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="efbad-132">Optional request headers</span></span>
 
-| <span data-ttu-id="8e8f4-133">名前</span><span class="sxs-lookup"><span data-stu-id="8e8f4-133">Name</span></span>            | <span data-ttu-id="8e8f4-134">値</span><span class="sxs-lookup"><span data-stu-id="8e8f4-134">Value</span></span>   | <span data-ttu-id="8e8f4-135">説明</span><span class="sxs-lookup"><span data-stu-id="8e8f4-135">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="efbad-133">名前</span><span class="sxs-lookup"><span data-stu-id="efbad-133">Name</span></span>            | <span data-ttu-id="efbad-134">値</span><span class="sxs-lookup"><span data-stu-id="efbad-134">Value</span></span>   | <span data-ttu-id="efbad-135">説明</span><span class="sxs-lookup"><span data-stu-id="efbad-135">Description</span></span>                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8e8f4-136">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="8e8f4-136">_if-none-match_</span></span> | <span data-ttu-id="8e8f4-137">String</span><span class="sxs-lookup"><span data-stu-id="8e8f4-137">String</span></span>  | <span data-ttu-id="8e8f4-138">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-138">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="efbad-136">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="efbad-136">_if-none-match_</span></span> | <span data-ttu-id="efbad-137">String</span><span class="sxs-lookup"><span data-stu-id="efbad-137">String</span></span>  | <span data-ttu-id="efbad-138">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="efbad-138">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="8e8f4-139">例</span><span class="sxs-lookup"><span data-stu-id="8e8f4-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="efbad-139">例</span><span class="sxs-lookup"><span data-stu-id="efbad-139">Example</span></span>
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
@@ -64,13 +64,13 @@ GET /drive/root:/{path and filename}:/content?format={format}
 GET /drive/items/{item-id}/content?format={format}
 ```
 
-## <a name="response"></a><span data-ttu-id="8e8f4-140">応答</span><span class="sxs-lookup"><span data-stu-id="8e8f4-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="efbad-140">応答</span><span class="sxs-lookup"><span data-stu-id="efbad-140">Response</span></span>
 
-<span data-ttu-id="8e8f4-141">変換されたファイルの事前認証されたダウンロード URL にリダイレクトする、`302 Found` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-141">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.</span></span>
+<span data-ttu-id="efbad-141">変換されたファイルの事前認証されたダウンロード URL にリダイレクトする、`302 Found` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="efbad-141">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.</span></span>
 
-<span data-ttu-id="8e8f4-142">変換されたファイルをダウンロードするには、アプリが応答の `Location` ヘッダーに従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-142">To download the converted file, your app must follow the `Location` header in the response.</span></span>
+<span data-ttu-id="efbad-142">変換されたファイルをダウンロードするには、アプリが応答の `Location` ヘッダーに従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="efbad-142">To download the converted file, your app must follow the `Location` header in the response.</span></span>
 
-<span data-ttu-id="8e8f4-143">事前認証された URL は、短期間 (数分) のみ有効で、アクセスのために `Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-143">Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.</span></span>
+<span data-ttu-id="efbad-143">事前認証された URL は、短期間 (数分) のみ有効で、アクセスのために `Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="efbad-143">Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
@@ -79,9 +79,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="8e8f4-144">エラー応答</span><span class="sxs-lookup"><span data-stu-id="8e8f4-144">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="efbad-144">エラー応答</span><span class="sxs-lookup"><span data-stu-id="efbad-144">Error responses</span></span>
 
-<span data-ttu-id="8e8f4-145">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8e8f4-145">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
+<span data-ttu-id="efbad-145">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="efbad-145">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

@@ -1,36 +1,37 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: キーワードで SharePoint サイトを検索する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 16dae8ceab07c2902d1bdd17fa2b9dc045ffd021
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524185"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480755"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="4bf19-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="4bf19-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="33d99-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="33d99-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4bf19-103">SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。</span><span class="sxs-lookup"><span data-stu-id="4bf19-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="33d99-103">SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。</span><span class="sxs-lookup"><span data-stu-id="33d99-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
+[サイト]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="4bf19-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4bf19-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="33d99-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="33d99-105">Permissions</span></span>
 
-<span data-ttu-id="4bf19-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4bf19-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33d99-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33d99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4bf19-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4bf19-108">Permission type</span></span>                        | <span data-ttu-id="4bf19-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4bf19-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="33d99-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="33d99-108">Permission type</span></span>                        | <span data-ttu-id="33d99-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="33d99-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="4bf19-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4bf19-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="4bf19-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4bf19-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="4bf19-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4bf19-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4bf19-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4bf19-113">Not supported.</span></span>
-|<span data-ttu-id="4bf19-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4bf19-114">Application</span></span>                            | <span data-ttu-id="4bf19-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4bf19-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="33d99-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="33d99-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="33d99-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33d99-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="33d99-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="33d99-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33d99-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33d99-113">Not supported.</span></span>
+|<span data-ttu-id="33d99-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="33d99-114">Application</span></span>                            | <span data-ttu-id="33d99-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33d99-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4bf19-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4bf19-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33d99-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="33d99-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -38,7 +39,7 @@ ms.locfileid: "29524185"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="4bf19-117">応答</span><span class="sxs-lookup"><span data-stu-id="4bf19-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="33d99-117">応答</span><span class="sxs-lookup"><span data-stu-id="33d99-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
