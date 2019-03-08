@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: アクセス許可の取得
 localization_priority: Normal
-ms.openlocfilehash: 4d893724af2c695597f0d81d5ceb0649c30ad7b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3c0d8c9a00a098e83ec0ff7bd4282546fe7d94c1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864135"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481350"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を取得する
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524122"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480629"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
@@ -48,9 +48,9 @@ ms.locfileid: "29524122"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                          | 説明                                                      |
+| プロパティ | 種類                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | アクセスされている共有の一意識別子。              |
+| id       | 文字列型 (String)                        | アクセスされている共有の一意識別子。              |
 | name     | String                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
@@ -61,7 +61,7 @@ ms.locfileid: "29524122"
 | **driveItem**     | [**driveItem**][driveItem] | 基になる **driveItem** にアクセスするために使用
 | **list**          | [**list**][list]           | 基になる **list** にアクセスするために使用
 | **listItem**      | [**listItem**][listItem]   | 基になる **listItem** にアクセスするために使用
-| **permission**    | アクセス許可 | 基になっている共有リンクを表す**アクセス許可**にアクセスするために使用
+| **permission**    | [**権**][permission] | 基になる共有リンクを表す**アクセス許可**へのアクセスに使用されます。
 | **site**          | [**site**][site]           | 基になる **site** にアクセスするために使用
 
 または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。

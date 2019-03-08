@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: フォルダーの内容を一覧表示する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972482"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481049"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -55,7 +55,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="list-children-in-the-root-of-the-current-users-drive"></a>現在のユーザーのドライブのルートの子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -66,7 +66,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>既知の ID を持つ DriveItem の子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -84,8 +84,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>応答
 
-成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。
-子のコレクションは、[driveItem][item-resource] リソースで構成されます。
+成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。 子コレクションは、[driveItem][item-resource] リソースで構成されます。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ドライブを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518171"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481287"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
@@ -60,9 +60,9 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメーター名 | 値  | 説明                                       |
+| パラメータ名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | string | 必須です。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -78,9 +78,9 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメーター名 | 値  | 説明                                       |
+| パラメータ名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | string | 必須です。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -94,7 +94,7 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメーター名 | 値  | 説明                                       |
+| パラメータ名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
@@ -112,7 +112,7 @@ GET /drives/{driveId}
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメーター名 | 値  | 説明                                       |
+| パラメータ名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 

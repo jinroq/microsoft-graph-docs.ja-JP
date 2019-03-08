@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 新しいフォルダーを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: a81d8fe2c7511b4fe971ccdf114883088bea65b3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760847"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482323"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>ドライブに新しいフォルダーを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を、指定された親アイテムやパスと共に[ドライブ](../resources/drive.md)内に作成します。
+新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を、親アイテムやパスを指定して[ドライブ](../resources/drive.md)に作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -53,7 +53,7 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 ### <a name="request"></a>要求
 
 以下は、サインイン ユーザーの OneDrive のルート フォルダーに新しいフォルダーを作成する要求の例です。
-使用されている `@microsoft.graph.conflictBehavior` プロパティは、アイテムが同じ名前ですでに存在する場合に、サービスはフォルダーを作成する際にフォルダーの新しい名前を選択する必要があることを示します。
+使用されている `@microsoft.graph.conflictBehavior` プロパティは、同じ名前のアイテムが既に存在する場合に、サービスはフォルダーを作成する際にフォルダーの新しい名前を選択する必要があることを示します。
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します新しく作成したフォルダーの[DriveItem]と[item-resource]リソースです。
+成功した場合、このメソッドは新しく作成されたフォルダーを [DriveItem][item-resource] リソースとして返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

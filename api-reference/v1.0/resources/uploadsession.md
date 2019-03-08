@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: fc03a25a790786c6d25d160a8b7f867c726dfc1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e97a6396f39db690be8a1cfe235bb21592da4e0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860705"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481553"
 ---
 # <a name="uploadsession-resource"></a>UploadSession リソース
 
@@ -36,7 +36,7 @@ ms.locfileid: "27860705"
 ## <a name="properties"></a>プロパティ
 
 
-| プロパティ       | 型              |説明
+| プロパティ       | 種類              |説明
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | アップロード セッションの有効期限が切れる日時の UTC 表示。この有効期限に達する前に、完全なファイルをアップロードする必要があります。
 | nextExpectedRanges | String collection | サーバーのファイルに足りないバイト範囲のコレクションです。これらの範囲は 0 インデックスが作成されており、「開始-終了」形式のものです (例、「0-26」でファイルの最初の 27 バイトを示す)。

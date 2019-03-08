@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 特殊フォルダーを取得する
+title: 特別なフォルダーを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fb7afa57093cf4ab1587654c840098deeceb0c24
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514594"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481301"
 ---
 # <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
 
@@ -57,7 +57,7 @@ GET /me/drive/special/{name}
 
 ### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための `$expand` および `$select` [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="response"></a>応答
 

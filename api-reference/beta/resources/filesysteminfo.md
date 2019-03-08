@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: e2dfac79f5c7d511cab11c076d697940a01f4c7c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 65bbd2e371c856a6ffbd2c55ecba88c1635ce41c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524696"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480286"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo ファセット
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-FileSystemInfo リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
+**FileSystemInfo** リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
 
 これは、[driveItem][item-resource] リソースの fileSystemInfo プロパティで使用できます。
 
@@ -39,15 +39,15 @@ FileSystemInfo リソースには、アイテムのローカル バージョン�
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                 | 型           | 説明                                                                                                          |
+| プロパティ                 | 種類           | 説明                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | クライアントでのファイルの作成日時 (UTC)。                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。最近使用したファイル一覧でのみ使用可能です。 |
+| **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。 [最近使用したファイル一覧](../api/drive-recent.md)でのみ使用可能です。 |
 | **lastModifiedDateTime** | DateTimeOffset | クライアントでファイルを最後に変更した日時 (UTC)。                                                        |
 
 ## <a name="notes"></a>メモ
 
-createdDateTime と lastModifiedDateTime の値は、DriveItem リソースの同じプロパティとは異なります。DriveItem リソースの値は、サービスにより認識された作成日時と更新日時です。FileSystemInfo リソースで保存されている値は、クライアントによって指定されています。
+**createdDateTime** と **lastModifiedDateTime** の値は、[DriveItem](driveitem.md) リソースの同じプロパティとは異なります。DriveItem リソースの値は、サービスにより認識された作成日時と更新日時です。**FileSystemInfo** リソースで保存されている値は、クライアントによって指定されています。
 
 たとえば、ファイルがデバイス上で月曜日に作成されたものの、火曜日までアップロードされなかった場合、ファイルをアップロードするクライアントは、`fileSystemInfo` ファセットに作成日である月曜日が含まれるように書き込む必要があります。アイテムのメタデータを取得すると、アイテムの作成日には火曜日が示されますが、`fileSystemInfo` ファセットには元の作成日である月曜日が表示されます。
 

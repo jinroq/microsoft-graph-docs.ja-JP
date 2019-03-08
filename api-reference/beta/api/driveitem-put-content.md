@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: サイズの小さいファイルをアップロードする
+title: 小さなファイルのアップロード
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 408e88cc3fa670c525b9e994e82fbb652489dd9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508077"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482274"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>DriveItem の内容をアップロードまたは置換する
 
@@ -108,7 +108,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。
+成功した場合、このメソッドは、応答本文で新しく作成したファイルの [driveItem][item-resource] リソースを返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

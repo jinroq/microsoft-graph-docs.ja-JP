@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a6798b57b0988d46cad939276c0bc9a6bbfc44c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88b12ebbe56a3e57b441581ba319734edbe9e5c5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519928"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482141"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 
@@ -106,7 +106,7 @@ Content-type: application/json
 実際の呼び出しでは、既定のプロパティが返されます。
 
 [list]: ../resources/list.md
-[サイト]: ../resources/site.md
+[site]: ../resources/site.md
 
 <!--
 {

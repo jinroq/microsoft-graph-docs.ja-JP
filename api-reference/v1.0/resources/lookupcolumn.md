@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 41e643019d842a365c333efa3c3a6861c51a7fc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: dbb2fe0f651a269d69b880d18748b27a5b6f457c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892101"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480356"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "27892101"
 
 | プロパティ名             | 種類    | 説明
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | ソースから複数の値を選択できるかどうかを示します。
+| **allowMultipleValues**   | ブール値 | ソースから複数の値を選択できるかどうかを示します。
 | **allowUnlimitedLength**  | boolean | 列の値が標準の 255 文字の制限を超えることができるかどうかを示します。
 | **columnName**            | string  | 検索元の列の名前。
 | **listId**                | string  | 検索元リストの一意識別子。

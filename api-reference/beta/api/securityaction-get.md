@@ -1,17 +1,17 @@
 ---
-title: セキュリティアクションの取得
+title: Get securityAction
 description: securityAction オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 336a8a73d0ec161f26dd3fcbd36caf86097108f5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 7bcad2d3249b0ac7c5bd08d3d61742e7dc5166d6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366918"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482253"
 ---
-# <a name="get-security-action"></a>セキュリティアクションの取得
+# <a name="get-securityaction"></a>Get securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /security/securityActions/{id}
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| 承認 | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: d064253cfad141d5879afb52451ca28fa2aeca67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860880"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480839"
 ---
 # <a name="textcolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -34,8 +34,8 @@ ms.locfileid: "27860880"
 
 | プロパティ名                   | 種類    | 説明
 |:--------------------------------|:--------|:---------------------------------
-| **allowMultipleLines**          | ブール | 複数行のテキストを許可するかどうか。
-| **appendChangesToExistingText** | ブール | この列への更新が既存のテキストを置き換えるか、または追加するか。
+| **allowMultipleLines**          | ブール値 | 複数行のテキストを許可するかどうか。
+| **appendChangesToExistingText** | ブール値 | この列への更新が既存のテキストを置き換えるか、または追加するか。
 | **linesForEditing**             | int32   | テキスト ボックスのサイズ。
 | **maxLength**                   | int32   | 値に使用できる最大文字数。
 | **textType**                    | string  | 格納されているテキストの種類。 `plain` または `richText` のいずれかでなければなりません。

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 009dcf77492d8ec77230413dc628076ef0d557fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0f3acc102762cc1243d8be8362149df1d33717dc
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523394"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482043"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation リソースの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "29523394"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名  | 型                          | 説明                                                                                                                   |
+| プロパティ名  | 種類                          | 説明                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | String                        | 共有への招待の受信者について指定された電子メール アドレス。読み取り専用です。                                          |
 | invitedBy      | [identitySet](identityset.md) | このアクセス許可を作成した招待状を送信したユーザーに関する情報を提供します (その情報が利用可能な場合)。読み取り専用です。 |

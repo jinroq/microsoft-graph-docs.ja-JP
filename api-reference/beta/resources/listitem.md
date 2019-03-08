@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517443"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480881"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
@@ -28,18 +28,18 @@ ms.locfileid: "29517443"
 |:-------------------------------|:------------------------
 | [取得][]                        | GET /items/{item-id}
 | [列の値の取得][取得]       | GET /items/{item-id}?expand=fields
-| [分析を取得します。][]              | GET/items/{アイテム id}/分析
-| [間隔によってアクティビティを取得します。][] | GET/items/{アイテム id}/getActivitiesByInterval
+| [分析を取得する][]              | アイテムを取得する (英語)
+| [間隔でアクティビティを取得する][] | /items/{item-id}/getActivitiesByInterval を取得する
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [列の値の更新][更新] | PATCH /items/{item-id}/fields
 
 [取得]: ../api/listitem-get.md
-[分析を取得します。]: ../api/itemanalytics-get.md
-[間隔によってアクティビティを取得します。]: ../api/itemactivity-getbyinterval.md
-[Create]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[分析を取得する]: ../api/itemanalytics-get.md
+[間隔でアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
+[作成]: ../api/listitem-create.md
+[削除]: ../api/listitem-delete.md
 [更新]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>JSON 表記
@@ -83,19 +83,19 @@ ms.locfileid: "29517443"
 
 **listItem** リソースには以下のプロパティがあります。
 
-| プロパティ名 | 型                | 説明
+| プロパティ名 | 種類                | 説明
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | このリスト アイテムのコンテンツ タイプ
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | 型              | 説明
+| プロパティ名        | 種類              | 説明
 |:---------------------|:------------------|:----------------------------------
-| id                   | 文字列            | アイテムの一意識別子。読み取り専用です。
+| id                   | string            | アイテムの一意識別子。読み取り専用です。
 | name                 | string            | アイテムの名前/タイトル。
-| createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
+| createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 値の取得のみ可能です。
 | createdDateTime      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
-| 説明          | string            | アイテムの説明テキストです。
+| description          | string            | アイテムの説明テキストです。
 | eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
@@ -110,10 +110,10 @@ ms.locfileid: "29517443"
 | リレーションシップ名 | 種類                           | 説明
 |:------------------|:-------------------------------|:-------------------------------
 | アクティビティ        | [itemActivity][] コレクション    | このアイテムに対して行われた最近のアクティビティのリストです。
-| 分析         | [itemAnalytics][]リソース     | この項目に対して行われた活動の表示について分析します。
+| 分析         | [itemanalytics][]リソース     | このアイテムに対して行われたビューアクティビティに関する分析。
 | driveItem         | [driveItem][]                  | ドキュメント ライブラリの場合、**driveItem** リレーションシップは listItem を **[driveItem][]** として公開します。
 | fields            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
-| versions          | [listItemVersion][]コレクション | リスト項目の以前のバージョンの一覧です。
+| 最新          | [listitemversion][]コレクション | リストアイテムの以前のバージョンのリスト。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -121,9 +121,9 @@ ms.locfileid: "29517443"
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemActivity]: itemactivity.md
-[itemAnalytics]: itemanalytics.md
+[itemanalytics]: itemanalytics.md
 [itemReference]: itemreference.md
-[リスト]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

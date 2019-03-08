@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルをリンクで共有する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526222"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480503"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -49,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 要求本文はアプリケーションが要求する共有リンクのプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
-|   名前    |  型  |                                 説明                                  |
+|   名前    |  種類  |                                 説明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
 | **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |
@@ -211,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 * 組織に既定の有効期限ポリシーが適用されている場合を除き、このアクションを使用して作成されたリンクに期限はありません。
 * リンクはそのアイテムの共有アクセス許可に表示され、アイテムの所有者はそれを削除できます。

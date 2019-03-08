@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: サムネイル
+title: Thumbnail
 localization_priority: Normal
-ms.openlocfilehash: 05fcb6ec4b0821a4243692aab9c15419eb2f630d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 485714109005415d4a2c98fbbf2befb50ca991d0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529755"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481756"
 ---
 # <a name="thumbnail-resource-type"></a>サムネイル リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "29529755"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 型   | 説明                                                                                                                 |
+| プロパティ     | 種類   | 説明                                                                                                                 |
 | :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
 | height       | Int32  | サムネイルの高さ (ピクセル単位)。                                                                                     |
 | sourceItemId | String | サムネイルを提供したアイテムの一意識別子。フォルダーのサムネイルが要求された場合にのみ利用可能です。 |
@@ -50,7 +50,7 @@ ms.locfileid: "29529755"
 
 ## <a name="relationships"></a>関係
 
-| 名前    | 型   | 説明                           |
+| 名前    | 種類   | 説明                           |
 | :------ | :----- | :------------------------------------ |
 | content | Stream | サムネイルのコンテンツ ストリーム。 |
 

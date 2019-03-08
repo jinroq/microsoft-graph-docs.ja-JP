@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルをリンクで共有する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e80e27860216227e80780f637daedf0cc8b095b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923041"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480692"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -47,7 +47,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 要求本文はアプリケーションが要求する共有リンクのプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
-|   名前    |  型  |                                 説明                                  |
+|   名前    |  種類  |                                 説明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
 | **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |
@@ -70,8 +70,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 値          | 説明
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | リンクを持つユーザーは、サインインすることがなく、アクセスを持ちます。 これには、組織の外部ユーザーが含まれます。 管理者が匿名のリンクのサポートを無効にすることがあります。
-| `organization` | アクセス権を取得するのには、組織 (テナント) に署名されたすべてのユーザーのリンクを使用できます。 ビジネスと SharePoint の OneDrive でのみ使用できます。
+| `anonymous`    | リンクを持つすべてのユーザーが、サインインを必要とせずにアクセスできます。 これには、組織外のユーザーが含まれることがあります。 匿名リンクのサポートは、管理者によって無効にされている場合があります。
+| `organization` | 組織 (テナント) にサインインしているユーザーは、リンクを使用してアクセス権を取得することができます。 OneDrive for business と SharePoint でのみ使用できます。
 
 
 ## <a name="response"></a>応答
@@ -210,7 +210,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 * 組織に既定の有効期限ポリシーが適用されている場合を除き、このアクションを使用して作成されたリンクに期限はありません。
 * リンクはそのアイテムの共有アクセス許可に表示され、アイテムの所有者はそれを削除できます。

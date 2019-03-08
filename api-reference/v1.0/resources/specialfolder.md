@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: 4c1facae90ea8981b1e83087d11e2d81a0354617
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d30c1169d859bdb9299744b92efc6ab737c20851
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820098"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482113"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "27820098"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 型   | 説明                                                            |
+| プロパティ  | 種類   | 説明                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | `/drive/special` コレクション内のこの項目の一意識別子 |
 
@@ -49,11 +49,11 @@ ms.locfileid: "27820098"
 
 以下は OneDrive Personal および OneDrive for Business で利用可能な特殊なフォルダーです。
 
-| 名前        | フォルダー ID    | 説明                                                              |
+| Name        | フォルダー ID    | 説明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | App Root    | `approot`    | そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内 |
 | Camera Roll | `cameraroll` | カメラ ロールのバックアップ フォルダー。OneDrive for Business では利用不可です。   |
-| ドキュメント   | `documents`  | ドキュメント フォルダーです。                                                    |
+| Documents   | `documents`  | ドキュメント フォルダーです。                                                    |
 | Music       | `music`      | ミュージック フォルダーです。OneDrive for Business では利用不可です。                |
 | Photos      | `photos`     | フォト フォルダーです。                                                       |
 

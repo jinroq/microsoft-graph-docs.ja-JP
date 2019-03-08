@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5317cee9288bb4a78b66d497b4a4b58f945c9198
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 114dd5d9ee96ef4f89f246a3a2ad5c74847f074b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529020"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482330"
 ---
 # <a name="delete-a-driveitem"></a>DriveItem を削除する
 
@@ -42,7 +42,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                                                       |
+| 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 

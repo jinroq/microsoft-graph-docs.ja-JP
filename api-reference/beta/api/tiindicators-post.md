@@ -4,12 +4,12 @@ description: 新しい tiindicator を作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366981"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481441"
 ---
 # <a name="create-threat-intelligence-indicator"></a>脅威インテリジェンス指標の作成
 
@@ -39,11 +39,11 @@ POST /security/tiIndicators
 
 | 名前          | 説明   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| 承認 | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、観測可能なものが少なくとも1つ含まれる[tiindicator](../resources/tiindicator.md)オブジェクトの JSON 表記を指定します。
+要求本文で、少なくとも1つの[メール](../resources/tiindicator.md#indicator-observables---email)、[ファイル](../resources/tiindicator.md#indicator-observables---file)、または観測可能な[ネットワーク](../resources/tiindicator.md#indicator-observables---network)を含む[tiindicator](../resources/tiindicator.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 

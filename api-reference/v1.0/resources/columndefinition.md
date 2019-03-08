@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 598a781c25dd9271be84eb3dfc16b1e5ff439298
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862882"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481882"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition リソース
 
@@ -59,10 +59,10 @@ ms.locfileid: "27862882"
 | **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
 | **description**         | string  | 列に関するユーザー向けの説明。
 | **displayName**         | string  | 列を示すユーザー向けの名前。
-| **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
-| **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
+| **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
+| **hidden**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。
 | **id**                  | string  | 列の一意識別子。
-| **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
+| **indexed**             | ブール値 | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
 | **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
 | **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
 | **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
@@ -85,7 +85,7 @@ ms.locfileid: "27862882"
 | **text**          | [textColumn][]          | この列にはテキスト値が格納されます。
 
 注: これらのプロパティは SharePoint の [SPFieldType][] 列挙体に対応しています。
-中、最も一般的な種類のフィールドは、上は、この API がまだないです。
+最も一般的なフィールドの種類は上記のとおりですが、この API はまだ一部不足しています。
 そのような場合、どの列タイプ ファセットも入力されず、基本的なプロパティだけが列に含まれます。
 
 ## <a name="remarks"></a>備考

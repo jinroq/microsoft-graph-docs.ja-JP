@@ -1,21 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 13eb7ff286467a7acfef85f58ea59763a13d9801
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9c57c9909e223659a8d9af557522183e532e7678
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514335"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481322"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-remoteItem リソースは、driveItem が別のドライブに存在するアイテムを参照することを示します。このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
+**remoteItem** リソースは、[**driveItem**](driveitem.md) が別のドライブに存在するアイテムを参照することを示します。
+このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
 
 非 null の **remoteItem** ファセットを持つ [**DriveItems**](driveitem.md)は、共有された、ユーザーの OneDrive に追加された、あるいは異質な項目のコレクション (検索結果など) から返される項目上にあるリソースです。
 
@@ -52,13 +53,13 @@ remoteItem リソースは、driveItem が別のドライブに存在するア�
 
 | プロパティ名        | 種類                                | 説明                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdBy            | [IdentitySet](identityset.md)       | その項目を作成したユーザー、デバイス、およびアプリケーションの ID。読み取り専用。                                                                                  |
+| createdBy            | [IdentitySet](identityset.md)       | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                  |
 | createdDateTime      | Timestamp                           | 項目作成の日付と時刻。読み取り専用。                                                                                                                        |
 | file                 | [File](file.md)                     | リモート項目がファイルであることを示します。読み取り専用。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | ローカル ファイル システムからのリモート項目についての情報。読み取り専用。                                                                                          |
 | folder               | [Folder](folder.md)                 | リモート項目がフォルダーであることを示します。読み取り専用。                                                                                                            |
-| id                   | String                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
-| lastModifiedBy       | [IdentitySet](identityset.md)       | 最後にその項目を修正したユーザー、デバイス、およびアプリケーションの ID。読み取り専用。                                                                            |
+| id                   | 文字列型 (String)                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
+| lastModifiedBy       | [IdentitySet](identityset.md)       | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                            |
 | lastModifiedDateTime | Timestamp                           | アイテムが最後に変更された日時。読み取り専用。                                                                                                              |
 | name                 | String                              | 省略可能。リモート項目のファイル名です。読み取り専用。                                                                                                                 |
 | package              | [Package](package.md)               | 存在する場合、この項目がフォルダーやファイルではなくパッケージであることを示します。パッケージは、一部のコンテキストでのファイルのように、他のコンテキストではフォルダーのように扱われます。読み取り専用。 |
@@ -66,7 +67,7 @@ remoteItem リソースは、driveItem が別のドライブに存在するア�
 | shared               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | OneDrive for Business と SharePoint 間の相互運用を、項目識別子の完全なセットと共に提供します。読み取り専用。                                          |
 | size                 | Int64                               | リモート項目のサイズです。読み取り専用です。                                                                                                                               |
-| webDavUrl            | Url                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
+| webDavUrl            | URL                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
 | webUrl               | URL                                 | ブラウザーでリソースを表示するための URL。読み取り専用。                                                                                                         |
 
 ## <a name="remarks"></a>備考

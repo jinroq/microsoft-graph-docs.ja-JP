@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルを検索する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ce18912b0fd116f13e2bd32d999dd852d6cc5182
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528222"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481377"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
+# <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItem を検索する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

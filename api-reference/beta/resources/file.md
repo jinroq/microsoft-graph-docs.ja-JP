@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: File
+title: ファイル
 localization_priority: Normal
-ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528418"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480410"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "29528418"
 
 **ファイル** リソースは、ファイル関連のデータ項目を 1 つの構造にグループ化します。
 
-DriveItem に null 以外のファイル ファセットがある場合は、項目はファイルを表します。他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含むコンテンツ関係があります。
+[**DriveItem**](driveitem.md) に null 以外の**ファイル** ファセットがある場合は、項目はファイルを表します。他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含む**コンテンツ**関係があります。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -38,7 +38,7 @@ DriveItem に null 以外のファイル ファセットがある場合は、項
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                    | 説明                                                                                                                                      |
+| プロパティ | 種類                    | 説明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | hashes   | [HashesType](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
 | mimeType | string                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |

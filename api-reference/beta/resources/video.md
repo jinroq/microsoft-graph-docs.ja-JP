@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: ビデオ
 localization_priority: Normal
-ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508546"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481595"
 ---
 # <a name="video-resource-type"></a>ビデオ リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "29508546"
 
 **ビデオ** リソースは、ビデオ関連のデータ項目を 1 つの構造にグループ化します。
 
-DriveItem に null 以外のビデオ ファセットがある場合は、項目はビデオ ファイルを表します。ビデオ リソースのプロパティは、ファイルからメタデータを抽出することにより設定されます。
+[**DriveItem**](driveitem.md) に null 以外の**ビデオ** ファセットがある場合は、項目はビデオ ファイルを表します。**ビデオ** リソースのプロパティは、ファイルからメタデータを抽出することにより設定されます。
 
 ## <a name="json-representation"></a>JSON 表記
 

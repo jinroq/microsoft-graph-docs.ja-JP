@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アイテムにアクセスするために招待状を送信する
+title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976962"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480741"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
-の**DriveItem**の共有への招待を送信します。
-共有への招待は、受信者へのアクセス許可を提供し、オプションで[リンクを共有][]して電子メールを送信します。
+**ドライブ項目**の共有への招待を送信します。
+共有への招待では、受信者にアクセス許可が与えられ、必要に応じて[共有リンク][]を使用して電子メールを送信します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -62,13 +62,13 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | Recipients       | Collection([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
 | message          | String                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
-| requireSignIn    | Boolean                        | 招待の受信者は、共有アイテムを表示するのにはサインインする必要かどうかを指定します。
-| sendInvitation   | Boolean                        | True の場合、[リンクを共有する][]は、受信者に送信されます。 それ以外の場合、通知を送信せずに直接アクセス許可が与えられます。
-| roles            | Collection(String)             | 共有への招待の受信者に許可するロールを指定します。
+| requireSignIn    | ブール型                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。
+| sendInvitation   | ブール値                        | true の場合、[共有リンク][]は受信者に送信されます。 それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。
+| roles            | Collection(String)             | 共有への招待の受信者に付与する役割を指定します。
 
 ## <a name="example"></a>例
 
-次の使用例は、共同作業中のファイルについてのメッセージには、"ryan@contoso.com"の電子メール アドレスを持つユーザーに共有への招待を送信します。
+この例では、電子メールアドレスが "ryan@contoso.com" のユーザーに、共同作業中のファイルに関するメッセージを含む共有への招待を送信します。
 この招待により、Ryan にはファイルへの読み取り/書き込みアクセス権が付与されます。
 
 ### <a name="http-request"></a>HTTP 要求
@@ -136,7 +136,7 @@ Content-type: application/json
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[リンクの共有]: ../resources/permission.md#sharing-links
+[共有リンク]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

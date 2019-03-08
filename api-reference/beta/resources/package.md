@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Package
+title: パッケージ
 localization_priority: Normal
-ms.openlocfilehash: 67e82faa3f51eeae71c2dcb22ecb7a973e2070bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bcfc1a1e754286566c8b24b9b00c7f2eb0721316
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516603"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482386"
 ---
 # <a name="package-resource-type"></a>Package リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "29516603"
 
 **Package** リソースは、DriveItem が「パッケージ」内で最上位項目であること、または個別の項目ではなくコレクションとして扱うべき項目のコレクションであることを示します。
 
-OneNote のノートブックはパッケージの一例です。ノートブックがその内容を表すファイルとフォルダーで構成されているのに対し、ノートブックを表す最上位アイテムは、これが特別な扱いを必要とするデータのコレクションであることをクライアントに示す **Package** ファセットを持ちます。
+OneNote のノートブックはパッケージの一例です。ノートブックがその内容を表すファイルとフォルダーで構成されているのに対し、ノートブックを表す最上位項目は、これが特別な扱いを必要とするデータのコレクションであることをクライアントに示す **package** ファセットを持ちます。
 
 **package** ファセットを持つ DriveItems は、**folder** や **file** ファセットを含みませんが、**folder** ファセットを持つ項目に概念的に類似しています。
 
@@ -30,7 +30,7 @@ OneNote のノートブックはパッケージの一例です。ノートブッ
 }
 ```
 
-| プロパティ名 | 型   | 説明                                                                                                                                                                      |
+| プロパティ名 | 種類   | 説明                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **type**      | string | パッケージのタイプを指定する文字列です。`oneNote` が唯一の現在定義されている値であるとしても、他のパッケージ タイプが返されるものと考え、それぞれに応じた扱いをする必要があります。 |
 

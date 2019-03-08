@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
-ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509582"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482309"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -39,7 +39,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 | パラメーター名                 | 値    | 説明                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| **shareIdOrEncodedSharingUrl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
+| **sharingidorencodedsharingurl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
 
 ### <a name="encoding-sharing-urls"></a>共有 URL をエンコードする
 
@@ -59,18 +59,18 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前       | 型   | 説明                                                    |
+| 名前       | 種類   | 説明                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | 省略可能。 いずれかに設定、`prefer`の下の値が記載されています。  |
+| **Prefer** | string | 省略可能。 以下に記載され`prefer`ている値の1つに設定します。  |
 
-### <a name="prefer-header-values"></a>ヘッダーの値を使用します。
+### <a name="prefer-header-values"></a>ヘッダー値を優先する
 
-| Name                          | 説明                                                                                             |
+| 名前                          | 説明                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | **ShareIdOrEncodedSharingUrl**が共有リンクの場合は、呼び出し元に付与アイテムへのアクセスを永続的な    |
-| redeemSharingLinkIfNecessary  | のみがこの要求の間に与えられる保証へのアクセスが redeemSharingLink と同じ |
+| redeemSharingLink             | 共有リンク**** の場合は、発信者に、アイテムへの永続的なアクセス権を付与します。    |
+| redeemSharingLinkIfNecessary  | redeemSharingLink と同じですが、この要求の期間だけアクセスが許可されることが保証されます。 |
 
-redeemSharingLink する必要がありますに相当する呼び出し元に移動するリンクを共有 (共有のジェスチャの受け入れ)、ブラウザー、redeemSharingLinkIfNecessary がシナリオの目的が単にリンクのピークを意図したものメタデータです。
+redeemSharingLink は、発信者と同等であると考えて、共有リンクに移動します (共有ジェスチャに同意します)。 redeemSharingLinkIfNecessary は、リンクの場所を単にピークすることを目的としたシナリオに対して使用されます。metadata.
 
 ## <a name="response"></a>応答
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 6e20df0cf50a7fc2648f5df97fcfe84e83992d99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826195"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481728"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
@@ -45,9 +45,9 @@ ms.locfileid: "27826195"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                          | 説明                                                      |
+| プロパティ | 種類                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | アクセスされている共有の一意識別子。              |
+| id       | 文字列型 (String)                        | アクセスされている共有の一意識別子。              |
 | name     | String                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
@@ -65,7 +65,7 @@ ms.locfileid: "27826195"
 | リレーションシップ名 | 種類                         | 説明
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
-| **root**          | [**driveItem**][driveItem]   | 基になる**driveItem**にアクセスするために使用されます。 推奨--を使用して`driveItem`代わりにします。
+| **root**          | [**driveItem**][driveItem]   | 基になる**ドライブ項目**へのアクセスに使用されます。 非推奨-- `driveItem`代わりに使用します。
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -74,7 +74,7 @@ ms.locfileid: "27826195"
 
 ## <a name="methods"></a>メソッド
 
-| Method                                  | REST パス                |
+| メソッド                                  | REST パス                |
 | :-------------------------------------- | :----------------------- |
 | [共有アイテムを取得する](../api/shares-get.md) | `GET /shares/{share-id}` |
 

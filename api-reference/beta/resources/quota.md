@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Quota
+title: クォータ
 localization_priority: Normal
-ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525487"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480307"
 ---
-# <a name="quota-resource-type"></a>Quota リソース型
+# <a name="quota-resource-type"></a>クォータリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**クォータ** リソースは、[ドライブ](drive.md) リソースの領域の制約に関する詳細を提供します。
+**クォータ**リソースは、[ドライブ](drive.md)リソースの領域の制約に関する詳細を提供します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -49,9 +49,9 @@ ms.locfileid: "29525487"
 | remaining     | Int64  | クォータ制限に達するまでの残りの領域の合計 (バイト単位)。読み取り専用です。 |
 | deleted       | Int64  | ごみ箱内のファイルによって消費されている領域の合計 (バイト単位)。読み取り専用です。      |
 | state         | string | 記憶域の状態を示す列挙値。読み取り専用です。 |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | ドライブの記憶域のクォータの計画について説明します。 で個人の OneDrive です。|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | ドライブの記憶域クォータプランに関する情報。 個人用の OneDrive のみ|
 
-### <a name="state-enumeration-values"></a>状態の列挙値
+### <a name="state-enumeration-values"></a>状態列挙値
 
 | 値      | 説明                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

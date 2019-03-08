@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735587"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480489"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -50,9 +50,9 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター   | 型  | サポートのメモ                                                                                                                          |
+| パラメーター   | 型  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
+| token  | string | 省略可能。 指定しない場合、階層の現在の状態を列挙します。 `latest` の場合、最後のデルタ トークンを使用して、空の応答本文を返します。 一つ前のデルタ トークンの場合は、そのトークン以降の新しい状態を返します。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -208,22 +208,22 @@ Content-type: application/json
 * アイテムの `parentReference` プロパティには**パス**の値は含まれません。これは、フォルダー名を変更しても**デルタ**からそのフォルダーの子孫が返されることはないためです。**差分を使用する場合、アイテムは必ず ID で追跡する必要があります**。
 * OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、ドライブ内の他のフォルダーではサポートされません。
 
-* 次の表に示すように、デルタのクエリは操作とサービスの種類に応じて、いくつかの DriveItem プロパティを返しません。
+* デルタ クエリは、次の表に示す通り、操作とサービスの種類によって、一部の DriveItem プロパティを返しません。
 
     **OneDrive for Business**
     
-    | 操作の種類 | デルタ ・ クエリを省略するとプロパティ |
+    | 操作の種類 | デルタ クエリに省略されるプロパティ |
     |---------|----------|
-    | 作成変更 | `ctag`, `lastModifiedBy` |
+    | 作成/変更 | `ctag`, `lastModifiedBy` |
     | Delete | `ctag`, `lastModifiedBy`, `name` |
 
 
-    **OneDrive (消費者)**
+    **OneDrive (コンシューマー向け)**
     
-    | 操作の種類 | デルタ ・ クエリを省略するとプロパティ |
+    | 操作の種類 | デルタ クエリに省略されるプロパティ |
     |---------|----------|
-    | 作成変更 | 該当なし |
-    | Delete | `ctag`, `size` |
+    | 作成/変更 | 該当なし |
+    | 削除 | `ctag`, `size` |
 
 ## <a name="error-responses"></a>エラー応答
 

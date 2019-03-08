@@ -1,17 +1,17 @@
 ---
-title: tiindicator の更新
+title: Update tiIndicator
 description: tiindicator オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 3c7ec883be4d84efa028362438660ade38e23689
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: ad5b61f7a353fe9fbd2514bb82e129a0ca262310
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367086"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481280"
 ---
-# <a name="update-tiindicator"></a>tiindicator の更新
+# <a name="update-tiindicator"></a>Update tiIndicator
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,32 +39,34 @@ PATCH /security/tiIndicators/{id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization | ベアラー {コード} が**必要です** |
+| 承認 | ベアラー {コード} が**必要です** |
 |Prefer | 戻り値 = 表現 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
-|action|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 使用可能な値は、`unknown`、`allow`、`block`、`alert` です。|
-|activitygroupnames|String コレクション|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
-|additionalinformation|String|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
+|アクション|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 可能な値は、`unknown`、`allow`、`block`、`alert` です。|
+|activitygroupnames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
+|additionalinformation|String
+|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
 |説明|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
-|diamondModel|string|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
-|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
+|diamondModel|[diamondModel](#diamondModel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
+|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`2014-01-01T00:00:00Z` のようになります。|
 |externalId|String|インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。|
-|isActive|Boolean|システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
-|"出てきたチェイン"|String コレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
-|knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
-|lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
-|悪意のある refrefamilynames|String コレクション|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
-|「いいえ veonly」|Boolean|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は false です。|
+|isActive|ブール型|システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
+|"出てきたチェイン"|[](#killChain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
+|knownfalse 陽性|String
+|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
+|lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
+|悪意のある refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
+|「いいえ veonly」|ブール型|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。|
 |重大度|Int32|インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。|
 |tags|String コレクション|任意のタグ/キーワードを格納する文字列の JSON 配列。|
-|tlpLevel|string| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。|
+|tlpLevel|[tlpLevel](#tlpLevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。|
 
 ### <a name="diamondmodel-values"></a>diamondModel の値
 
@@ -83,7 +85,7 @@ PATCH /security/tiIndicators/{id}
 |:-------|:------------|
 |アクション|"目的に対するアクション" を表します。 攻撃者が侵害されたシステムを活用して、分散型サービス拒否攻撃などの処理を実行している。|
 |基準|侵害されたシステムの操作によって制御されるチャネルを表します。|
-|配信|悪用コードを (例: USB、電子メール、web サイトなどの) 被害に分配するプロセス。|
+|Delivery|悪用コードを (例: USB、電子メール、web サイトなどの) 被害に分配するプロセス。|
 |活用|脆弱性を利用するエクスプロイトコード (例: コードの実行)。|
 |インストール|脆弱性が悪用された後にマルウェアをインストールする。|
 |予備|マークは、今後の攻撃で使用されるアクティビティグループの情報の証拠です。|
@@ -95,7 +97,7 @@ PATCH /security/tiIndicators/{id}
 
 | 値 | 説明 |
 |:-------|:------------|
-|白| 共有スコープ: 無制限。 インジケーターは無制限に共有できます。制限はありません。|
+|ホワイト| 共有スコープ: 無制限。 インジケーターは無制限に共有できます。制限はありません。|
 |緑| 共有スコープ: コミュニティ。 インジケーターはセキュリティコミュニティと共有できます。|
 |黄色い| 共有スコープ: 制限されています。 これは、インジケーターの既定の設定であり、共有を脅威インテリジェンスを実装するサービスとサービスオペレーターだけに限定し、共有を制限します。2) システムの動作がインジケーターと同じであるお客様。|
 |赤| 共有スコープ: Personal。 これらのインジケーターは、本人でのみ直接共有されるようになっています。 通常は、指定された制限によって tlp 赤のインジケーターは取り込まれたされません。 tlp 赤のインジケーターが送信され**** た場合は、"いいえ" の`True`プロパティをに設定する必要があります。 |
@@ -110,7 +112,7 @@ PATCH /security/tiIndicators/{id}
 
 ### <a name="example-1-request-without-prefer-header"></a>例 1: 希望するヘッダーのない要求
 
-### <a name="request"></a>要求
+#### <a name="request"></a>要求
 
 ヘッダーの`Prefer`ない要求の例を次に示します。
 <!-- {
@@ -127,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 応答の例を次に示します。
 
@@ -143,7 +145,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーを使用した要求
 
-### <a name="request"></a>要求
+#### <a name="request"></a>要求
 
 `Prefer`ヘッダーを含む要求の例を次に示します。
 
@@ -164,7 +166,7 @@ Prefer: return=representation
 }
 ```
 
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 応答の例を次に示します。
 

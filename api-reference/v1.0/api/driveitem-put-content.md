@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: サイズの小さいファイルをアップロードする
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 30899a94783018580227e0d753169bf391ac081d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991546"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481511"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>DriveItem の内容をアップロードまたは置換する
 
@@ -28,7 +28,7 @@ ms.locfileid: "27991546"
 |委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    |
 |アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All |
 
-## <a name="http-request-to-replace-an-existing-item"></a>HTTP 要求 (既存アイテムを置換する)
+## <a name="http-request-to-replace-an-existing-item"></a>HTTP 要求 (既存アイテムを置換する場合)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a>HTTP 要求 (新しいファイルをアップロードする)
+## <a name="http-request-to-upload-a-new-file"></a>HTTP 要求 (新しいファイルをアップロードする場合)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -58,11 +58,11 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは新しく作成された、または更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
+成功した場合、このメソッドは、新しく作成されたファイルまたは更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
 ## <a name="example-upload-a-new-file"></a>例 (新しいファイルのアップロード)
 
-この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、 サインインしたユーザーのドライブにある FolderA 下の FileB.txt という名前のファイルにアップロードします。
+この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、 サインインしたユーザーのドライブの FolderA の下の FileB.txt という名前のファイルにアップロードします。
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -75,7 +75,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答本文で新しく作成したファイルの [driveItem][item-resource] リソースを返します。
+成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: 2b254568ec97bb5bce49e1143dbb83a183fade11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 01b9860284f87ea31a969055fe2bfc7da624d3b6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824172"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482008"
 ---
 # <a name="folderview-resource-type"></a>FolderView リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "27824172"
 
 _sortBy_ プロパティを使用すると、**viewType** ファセットを優先するアプリケーションで、アイテムの並べ替え順序を制御できます。
 
-### <a name="sortby-options"></a>並べ替えオプション
+### <a name="sortby-options"></a>sortBy オプション
 
 **sortBy** プロパティに定義されている値は次のとおりです。
 
@@ -54,7 +54,7 @@ _sortBy_ プロパティを使用すると、**viewType** ファセットを優�
 | `sequence`               | アイテムは、ユーザーによって指定されたカスタム順序で並びます。
 
 
-### <a name="sortorder-options"></a>並べ替え順序オプション
+### <a name="sortorder-options"></a>ソート順序オプション
 
 **sortOrder** プロパティに定義されている値は次のとおりです。
 

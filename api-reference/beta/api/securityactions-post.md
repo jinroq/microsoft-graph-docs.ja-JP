@@ -1,17 +1,17 @@
 ---
-title: セキュリティアクションの作成
-description: 新しいセキュリティアクションオブジェクトを作成します。
+title: Create securityAction
+description: 新しい securityAction オブジェクトを作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366890"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482015"
 ---
-# <a name="create-security-action"></a>セキュリティアクションの作成
+# <a name="create-securityaction"></a>Create securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ POST /security/securityActions
 
 | 名前          | 説明   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| 承認 | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 

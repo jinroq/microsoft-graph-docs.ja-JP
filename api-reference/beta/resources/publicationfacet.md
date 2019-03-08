@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: publicationFacet
+title: PublicationFacet
 localization_priority: Normal
-ms.openlocfilehash: f0887e7ce17a357961c0ee2b19d86388425e82b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 66e12c3240d1cade57d377e43403b33102fe166e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513859"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482064"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet リソースの種類
 
@@ -34,10 +34,11 @@ ms.locfileid: "29513859"
 
 ## <a name="properties"></a>プロパティ
 
-|   プロパティ    |  型  | 説明 |
+|   プロパティ    |  種類  | 説明 |
 | :------------ | :----- | :---------- |
-| **level**     | String | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
-| **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 読み取り専用です。  |
+| **level**     | String
+ | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
+| **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 値の取得のみ可能です。  |
 
 
 <!--

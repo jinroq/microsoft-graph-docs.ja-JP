@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 63178fc9add3d097b7e8aaf0c5c2a697a91eaeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807022"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482197"
 ---
-# <a name="identityset-resource-type"></a>identitySet リソースの種類
+# <a name="identityset-resource-type"></a>id セットリソースの種類
 
 **IdentitySet** リソースは、[ID](identity.md) リソースのキー付きコレクションです。_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている ID のセットを表すために使用されます。
 
@@ -47,16 +47,16 @@ ms.locfileid: "27807022"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型                    | 説明                                             |
+| プロパティ    | 種類                    | 説明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identity](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。  |
 | デバイス      | [Identity](identity.md) | 省略可能。このアクションに関連付けられているデバイス。       |
-| phone       | [identity](identity.md) | 省略可能。 このアクションに関連付けられている電話番号です。 |
+| phone       | [identity](identity.md) | 省略可能。 このアクションに関連付けられている電話番号。 |
 | user        | [Identity](identity.md) | 省略可能。このアクションに関連付けられているユーザー。         |
 
 ## <a name="remarks"></a>注釈 
 
-**IdentitySet**リソースの使用率の[呼び出し](call.md)を参照してください。
+「[呼び出し](call.md)を使用したリソースの**設定**」を参照してください。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
-ms.openlocfilehash: 33b12ea8e530fd862619c9c20e77a76989efb619
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04504b5257dfc49ad14cbee1f645120dc31a3387
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507699"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480300"
 ---
 # <a name="shared-resource-type"></a>Shared リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Shared リソースは、DriveItem が他のユーザーと共有されていることを示します。リソースは、項目がどのように共有されているかに関する情報を含んでいます。
+**Shared** リソースは、DriveItem が他のユーザーと共有されていることを示します。リソースは、項目がどのように共有されているかに関する情報を含んでいます。
 
 [**Driveitem**](driveitem.md) が null でない **shared** ファセットを持つ場合、項目は共有されています。
 
@@ -38,10 +38,10 @@ Shared リソースは、DriveItem が他のユーザーと共有されている
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型                          | 説明
+| プロパティ       | 種類                          | 説明
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | 共有項目の所有者の ID。読み取り専用。
-| scope          | 文字列                        | `anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用です。
+| scope          | String                        | `anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用。
 | sharedBy       | [identitySet](identityset.md) | 項目を共有するユーザーの ID。読み取り専用です。
 | sharedDateTime | DateTimeOffset                | 項目が共有された UTC 日時。読み取り専用です。
 

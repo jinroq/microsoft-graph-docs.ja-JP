@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
-ms.openlocfilehash: 3ed0023e80457598bd80b068156b60a5ace4984b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: abe6fc277f94eb1f66f50f25b894bc41fd038a9b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830486"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480209"
 ---
-# <a name="hashes-resource-type"></a>ハッシュ リソースの種類
+# <a name="hashes-resource-type"></a>Hashes リソース型
 
  **ハッシュ** リソースは、利用可能なハッシュをアイテムの 1 つの構造にグループ化します。
 
@@ -38,13 +38,15 @@ ms.locfileid: "27830486"
 
 | プロパティ         | 種類   | 説明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
-| **crc32Hash**    | String | リトルエンディアン (ある場合) 内のファイルの CRC32 の値です。 読み取り専用です。            |
+| **sha1Hash**     | String
+ | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
+| **crc32Hash**    | String
+ | リトルエンディアン内のファイルの CRC32 値 (使用可能な場合)。 読み取り専用。            |
 | **quickXorHash** | String | ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。 |
 
 **注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 OneDrive for Business および SharePoint Server 2016 では、**sha1Hash** と **crc32Hash** は利用できません。
 

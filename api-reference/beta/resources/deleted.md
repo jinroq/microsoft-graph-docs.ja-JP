@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: de832eb4ecdf36081b00b94679dcafe9b94fe007
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06fe9835ef4b31d7a48bad955b17872142a94b2d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529440"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480783"
 ---
 # <a name="deleted-facet"></a>Deleted ファセット
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-削除済みリソースは、アイテムが削除されたことを示します。このバージョンの API では、リソースの値が存在する (null 以外である) ことは、ファイルが削除されたことを示します。null (または存在しない) 値は、ファイルが削除されていないことを示します。
+**削除済み**リソースは、アイテムが削除されたことを示します。このバージョンの API では、リソースの値が存在する (null 以外である) ことは、ファイルが削除されたことを示します。null (または存在しない) 値は、ファイルが削除されていないことを示します。
 
 変更の追跡と削除済みアイテムの検出の詳細については、「[アイテムの変更を表示する](../api/driveitem-delta.md)」を参照してください。
 
@@ -37,7 +37,7 @@ ms.locfileid: "29529440"
 ```
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型   | 説明                               |
+| プロパティ | 種類   | 説明                               |
 |:---------|:-------|:------------------------------------------|
 | state    | String | 削除されたアイテムの状態を表します。 |
 

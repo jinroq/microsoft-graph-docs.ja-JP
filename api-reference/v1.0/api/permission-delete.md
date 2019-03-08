@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アイテムへのアクセスの削除
+title: アイテムへのアクセスを削除する
 localization_priority: Normal
-ms.openlocfilehash: 4f22082c8f9ce540d3c1c1188c8f9c5ff06ab525
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d29b6e274d8fe64e87c011e35745cf1907fd1b9f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810025"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481070"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を削除する
 
@@ -44,7 +44,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | 文字列 | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
+| if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
 ## <a name="response"></a>応答
 

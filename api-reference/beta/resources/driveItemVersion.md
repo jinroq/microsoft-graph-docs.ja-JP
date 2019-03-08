@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 3be7cd044b65eccd2370a2848258b415c5e70b00
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642024"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482365"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -55,9 +55,9 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
+| **id**                   | string                                               | バージョンの ID。 値の取得のみ可能です。                                       |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 値の取得のみ可能です。        |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 値の取得のみ可能です。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 | **size**                 | Int64                                                | アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。  |
 

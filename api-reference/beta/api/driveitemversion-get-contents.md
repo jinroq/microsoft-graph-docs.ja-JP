@@ -1,24 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 以前のバージョンをダウンロードします。
+title: 以前のバージョンをダウンロードする
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528019"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481483"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>DriveItemVersion リソースのコンテンツをダウンロードする (プレビュー)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[DriveItem](../resources/driveitem.md) の特定のバージョンのコンテンツを取得します。 
+特定のバージョンの[ドライブ項目](../resources/driveitem.md)の内容を取得します。 
 
->**注:** 現在のバージョンのコンテンツを取得することはサポートされていません。 [DriveItem コンテンツのエンドポイント](driveitem-get-content.md)を使用できます。
+>**注:** 現在のバージョンのコンテンツを取得することはサポートされていません。 代わりに、[ドライブアイテムコンテンツエンドポイント](driveitem-get-content.md)を使用してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -79,7 +79,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive は、ファイルの旧バージョンの完全なメタデータを保持しません。
 
-アプリは、ファイルの利用可能なバージョンの一覧を取得、特定のバージョンに関する情報を提供する[driveItemVersion](../resources/driveitemversion.md)リソースが返されます。
+アプリでファイルの利用可能なバージョンの一覧を取得すると、特定のバージョンに関する情報を提供する、 [drive itemversion](../resources/driveitemversion.md)リソースが返されます。
 
 <!--
 {

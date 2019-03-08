@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: ba72b813e0c68c3942a63b111e75298d7da3d68b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a21c6d8fb8808f41d6b343f4bdfb2d63c0531a9e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512697"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482211"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "29512697"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                      | 説明                                                                       |
+| プロパティ | 種類                      | 説明                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
 | id       | String                    | アイテム内の ID。読み取り専用です。                                                |
 | large    | [Thumbnail](thumbnail.md) | 1920 x 1920 にスケーリングされたサムネイル。                                                     |

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アイテムにアクセスするために招待状を送信する
+title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d5afd0a7a23465ffc6e69e1ac7873769c6622b2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cc88297c1848e9b66195f9a07ac96167d096a762
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510044"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481210"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -63,7 +63,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | Recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | アクセスおよび共有の招待状を受信する、受信者のコレクション。                                            |
 | message          | String                                          | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。 |
-| requireSignIn    | ブール値                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
+| requireSignIn    | ブール型                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
 | sendInvitation   | ブール値                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
 | roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: ビデオ
 localization_priority: Normal
-ms.openlocfilehash: 0e26804991128363780ed4336849486c92fc5a07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: deba8cccb5f0ab80ca03395ef9f798719d542b8d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889258"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480804"
 ---
 # <a name="video-resource-type"></a>ビデオ リソースの種類
 
@@ -53,7 +53,7 @@ ms.locfileid: "27889258"
 | **bitrate**               | Int32  | 1 秒あたりのビデオのビット レート (ビット単位)。
 | **duration**              | Int64  | ファイルの継続時間 (ミリ秒単位)。
 | **fourCC**                | string | ビデオ形式の「4 文字コード」名。
-| **フレーム レート**             | double | ビデオのフレーム レート。
+| **frameRate**             | double | ビデオのフレーム レート。
 | **height**                | Int32  | ビデオの高さ (ピクセル単位)。
 | **width**                 | Int32  | ビデオの幅 (ピクセル単位)。
 

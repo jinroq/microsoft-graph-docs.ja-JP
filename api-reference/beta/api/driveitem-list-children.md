@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: フォルダーの内容を一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5d31d39b393725c325a75b6a8ba7e52516938b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513131"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482190"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -86,8 +86,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>応答
 
-成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。
-子のコレクションは、[driveItem][item-resource] リソースで構成されます。
+成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。 子コレクションは、[driveItem][item-resource] リソースで構成されます。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

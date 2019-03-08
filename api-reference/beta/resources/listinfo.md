@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1f94bf51169a6b056e010386f88d859aeaf41b9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5b3618610a803f86852a95ed1cb662f98cfb6e3f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512375"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482134"
 ---
 # <a name="listinfo-resource"></a>ListInfo リソース
 
@@ -43,7 +43,7 @@ ms.locfileid: "29512375"
 
 | プロパティ名           | 種類    | 説明
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | `true` である場合、このリストのコンテンツ タイプが有効であることを示します。
+| **contentTypesEnabled** | ブール型 | `true` である場合、このリストのコンテンツ タイプが有効であることを示します。
 | **hidden**              | Boolean | `true` である場合、リストが通常 SharePoint ユーザー エクスペリエンスに表示されないことを示します。
 | **template**            | String  | リストの作成に使用される基本リスト テンプレートを表す列挙値。 代入可能な値は `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` などです。
 

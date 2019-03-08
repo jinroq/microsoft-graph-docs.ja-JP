@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: ea6298428062aa537ec25945aed339738f432762
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ba650ccbe307ba286cf2182bda35a21f3c675114
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820847"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480174"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "27820847"
 | **displayAs**      | string             | UX での値の表示方法です。 `default`、`friendly`、`standard` のいずれかでなければなりません。 詳細については、後述します。 指定しない場合、`default` として扱われます。
 | **format**         | string             | 値を日付のみで表示するか、日付と時刻で表示するかを示します。 `dateOnly` または `dateTime` のいずれかでなければなりません。
 
-## <a name="displayas-options"></a>DisplayAs オプション
+## <a name="displayas-options"></a>displayas オプション
 
 | 値        | 説明
 |:-------------|:--------------------------------------------------------------

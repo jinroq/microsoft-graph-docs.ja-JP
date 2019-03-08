@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アクセス許可を変更する
+title: 共有アクセス許可の変更
 localization_priority: Normal
-ms.openlocfilehash: 0c12e42852d15dcd1cce7b18e8416ffc8d114299
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528880"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480727"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -43,7 +43,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                                                       |
+| 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
@@ -51,10 +51,10 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 要求本文で、更新する関連フィールドの値を指定します。
 
-要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。
+要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   | 説明                   |
+| プロパティ     | 種類   | 説明                   |
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | アクセス許可の種類の配列。 |
 

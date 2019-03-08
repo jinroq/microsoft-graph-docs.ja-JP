@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Hashes
+title: 方向性
 localization_priority: Normal
-ms.openlocfilehash: 551b09cee9fa662d357ee763b67ce78bea03425f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: be7d3b27b1ef22976dc93ea5aecbc2a64031e8b4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514846"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480118"
 ---
 # <a name="hashes-resource-type"></a>Hashes リソース型
 
@@ -39,10 +39,12 @@ ms.locfileid: "29514846"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ         | 型   | 説明                                                       |
+| プロパティ         | 種類   | 説明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
-| **crc32Hash**    | String | ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。            |
+| **sha1Hash**     | String
+ | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
+| **crc32Hash**    | String
+ | ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。            |
 | **quickXorHash** | String | ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。 |
 
 **注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。

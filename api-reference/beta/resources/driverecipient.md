@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ecf3e600cc943d0c82da38928d8018e6c654fb4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47a080b4f81645cfe5098ec8391d58cf07fca466
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525802"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482344"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient リソース
 
@@ -37,7 +37,8 @@ ms.locfileid: "29525802"
 
 | プロパティ名 | 種類   | 説明                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | 受信者が関連付けられた電子メール アドレスを設定している場合は、受信者の電子メール アドレスです。                  |
+| email         | String
+ | 受信者が関連付けられた電子メール アドレスを設定している場合は、受信者の電子メール アドレスです。                  |
 | alias         | String | 電子メール アドレスが使用できない場合は、ドメイン オブジェクトのエイリアス (セキュリティ グループなど) です。 |
 | objectId      | String | ディレクトリ内の受信者の一意識別子。                                               |
 
