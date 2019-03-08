@@ -2,12 +2,12 @@
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 localization_priority: Priority
-ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735580"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458660"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -23,6 +23,9 @@ ms.locfileid: "29735580"
 |[チャネル メッセージを取得する](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | チャネルからのルート メッセージを 1 件取得します。|
 |[メッセージへの返信を一覧表示する](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) コレクション| チャネル内のメッセージへの返信すべての一覧を取得します。|
 |[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
+|[チャネル内でメッセージを送信する](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| チャネル内で新しい最上位レベルのメッセージを作成します。|
+|[チャネル内のメッセージに返信する](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内の既存メッセージに返信します。|
+
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

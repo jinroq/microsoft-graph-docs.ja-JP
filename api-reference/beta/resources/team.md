@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745546"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458681"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -39,6 +39,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |[アプリをチームに追加する](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | アプリをチームに追加 (インストール) します。|
 |[チャネルにタブを追加する](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | タブをチームのチャネルに追加 (インストール) します。|
 |[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [チャネルのメッセージを取得する](../api/channel-list-messages.md) |
+|[チャネル メッセージを送信する](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [メッセージをチャネルに送信する](../api/channel-post-chatmessage.md) |
 
 ## <a name="properties"></a>プロパティ
 
@@ -64,7 +65,7 @@ Microsoft Teams のチームは、[チャネル](channel.md) のコレクショ�
 |apps|[teamsApp](teamsapp.md) コレクション| (現在不使用) このチームにインストールされているアプリ。|
 |channels|[channel](channel.md) コレクション|チームに関連付けられているチャネルとメッセージのコレクション。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) コレクション|このチームにインストールされているアプリ。|
-|owners|[user](user.md)| このチームの所有者の一覧。 |
+|owners|[user](user.md)| このチームの所有者の一覧。 現時点では、アプリケーションのアクセス許可を使用してチームを作成するときに、必ず 1 つの所有者を指定してください。 ユーザー委任アクセス許可を使用するときには、所有者を指定できません (現在のユーザーが所有者になります)。 所有者は、UPN ではなくオブジェクト ID (GUID) として指定する必要があります。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
 |template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
 
