@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API を使用して Microsoft �
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: c5fe32fcc4004b37b61d43c5479a445b7c4fbcec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939071"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376422"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph セキュリティ API の概要
 
@@ -21,11 +21,17 @@ Microsoft Graph セキュリティ API を使用して Microsoft のセキュリ
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する理由
 
-[Microsoft Graph セキュリティ API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) を使用すると、Microsoft および Microsoft パートナーのさまざまなセキュリティ製品やサービスと簡単に接続できます。 これにより、それらのソリューションの実現がさらに容易になり、その価値も高まります。
+[Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) を使用すると、Microsoft とパートナーのセキュリティ ソリューションとの接続を簡単に行えるようになります。 これにより、それらのソリューションの実現がさらに容易になり、その価値も高まります。 要件に応じて、次のいずれかの方法を使用することにより、Microsoft Graph Security API に簡単に接続できます。
+
+- [コードを記述](https://aka.ms/graphsecuritysdk) – C#、Java、NodeJS などの[コード サンプル](https://aka.ms/graphsecurityapicode)を見つけます。
+- [スクリプトを使用して接続](https://aka.ms/graphsecuritypowershellsampleblog) – [PowerShell サンプル](https://aka.ms/graphsecuritypowershellsample)を見つけます。
+- [ワークフローとプレイブックにドラッグ アンド ドロップ](https://aka.ms/graphsecurityconnectorsblogpost) – [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/)、[PowerApps](https://powerapps.microsoft.com/) 用の [Microsoft Graph セキュリティ コネクタ](https://aka.ms/graphsecurityconnectors)を使用します。
+- [レポートとダッシュ ボードにデータを取得する](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – [Power BI 用の Microsoft Graph セキュリティ コネクタ](https://aka.ms/graphsecuritypowerbiconnectordoc)を使用します。
+- [Jupyter ノートブックを使用して接続](https://jupyter.org/) – [Jupyter ノートブック サンプル](https://aka.ms/graphsecurityjupyternotebooks)を検索します。  
 
 ### <a name="unify-and-standardize-alert-tracking"></a>警告追跡の統合と標準化
 
-1 回のコードの記述で Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、すべてのソリューション間で警告の状態と割り当ての同期を維持します。 また、[Azure Monitor](https://docs.microsoft.com/ja-JP/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) を使用して、Spluk や IBM QRadar などのセキュリティ情報およびイベント管理 (SIEM) ソリューションに警告をストリーミングすることができます。 SIEM とセキュリティ API エンティティとの統合の詳細については、「[SIEM との統合](security-siemintegration.md)」を参照してください。
+1 回接続すれば、Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、すべてのソリューション間で警告の状態と割り当ての同期を維持します。 また、[Azure Monitor](https://docs.microsoft.com/ja-JP/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) を使用して、Spluk や IBM QRadar などのセキュリティ情報およびイベント管理 (SIEM) ソリューションに警告をストリーミングすることができます。 SIEM とセキュリティ API エンティティとの統合の詳細については、「[SIEM との統合](security-siemintegration.md)」を参照してください。
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>セキュリティの警告を関連付け、脅威の予防と対処を向上させる
 
@@ -39,6 +45,22 @@ Microsoft Graph セキュリティ API を使用して Microsoft のセキュリ
 
 関連するセキュリティ関連インベントリ (ユーザー、ホスト、アプリなど) を深く掘り下げ、Microsoft Graph の他のプロバイダー (Azure AD、Microsoft Intune、Office 365) からの組織コンテキストを追加することにより、ビジネス コンテキストとセキュリティ コンテキストをまとめて、脅威への対応を向上させます。
 
+### <a name="automate-security-workflows-and-reporting"></a>セキュリティ ワークフローとレポート作成を自動化
+
+セキュリティ管理、監視、調査を自動化し、運用効率と応答時間を向上させます。 Microsoft Graph セキュリティをレポートとダッシュ ボードに統合することによって、より深い分析情報とコンテキストが得られます。
+
+### <a name="get-deep-insights-to-train-security-solutions"></a>深い分析情報を取得し、セキュリティ ソリューションをトレーニングする
+
+組織で実行されている異なるセキュリティ製品にわたるデータを視覚化し、セキュリティに関するより深い分析情報を取得します。 データから学習し、セキュリティ ソリューションをトレーニングする機会を発見してください。 スキーマはピボット分析の対象となる複数のプロパティを提供し、セキュリティ データを使用して豊富な予備的なデータセットをビルドします。
+
+### <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>Microsoft のセキュリティ ソリューション (プレビュー) で、自分の脅威インテリジェンスを活用する
+
+脅威インジケーターを Microsoft のセキュリティ ソリューションに自動的に送信し、`alert`、`block`、`allow` アクションを有効にします。 Microsoft Graph Security API を直接使用するか、最新の脅威インテリジェンス プラットフォームとの統合を活用します。
+
+### <a name="act-quickly-in-response-to-new-threats-preview"></a>新たな脅威に対してすばやく対応する (プレビュー)
+
+新たな脅威に対して迅速な防御アクション (ファイル、URL、ドメイン、IP アドレスをブロックする操作など) をセキュリティ ツールおよびワークフロー内から行えるようにします。
+
 ### <a name="proactively-manage-security-risks-preview"></a>セキュリティ リスクをプロアクティブに管理 (プレビュー)
 
 Microsoft Secure Score (プレビュー) を使用すると、組織のセキュリティ ニーズを視覚化して、セキュリティの強化方法に関する提案を受け取り、それを導入した後に見られるスコアの向上を予測することができます。 経時的な進捗状況を簡単に計測し、スコアの向上につながる特定の変更について分析情報を取得できます。
@@ -49,9 +71,9 @@ Microsoft Secure Score (プレビュー) を使用すると、組織のセキュ
 
 |**領域**     | **メリット**|
 |:---------------|:---------|
-|**マネージド セキュリティ サービス プロバイダー (MSSP)**|<ul><li>セキュリティ運用ツールとサービスの効率的な統合。</li> <li>展開および保守の時間と労力の削減。</li> <li>MSSP ユーザーにより多くの価値を提供。</li></ul>|
+|**マネージド セキュリティ サービス プロバイダー (MSSP)**|<ul><li>セキュリティ運用ツール、ワークフロー、レポート作成の効率的な統合。</li> <li>展開および保守の時間と労力の削減。</li> <li>脅威に対するアクションを実行する、警告への自動応答。</li> <li>MSSP ユーザーにより多くの価値を提供。</li></ul>|
 |**SIEM と IT リスク管理ソリューション**|<ul><li>Microsoft のセキュリティ ソリューションおよびエコシステム パートナーとのスムーズな統合。</li> <li>豊富な警告メタデータ。</li> <li>警告の関連付けの向上。</li></ul>|
-|**アプリケーション** <br>(脅威インテリジェンス、モバイル、クラウド、IoT、不正検出、ID とアクセス、リスクとコンプライアンス、ファイアウォールなど)|<ul><li>さまざまなセキュリティ ソリューション全体で統合された脅威の管理と予防、リスク管理。</li> <li>Microsoft Graph を通じて公開される警告、インベントリ、構成、アクション。</li> <li>Microsoft Graph 対応ソリューションのクイック統合。</li></ul>|
+|**アプリケーション** <br>(脅威インテリジェンス、モバイル、クラウド、IoT、不正検出、ID とアクセス、リスクとコンプライアンス、ファイアウォールなど)|<ul><li>さまざまなセキュリティ ソリューション全体で統合された脅威の管理と予防、リスク管理。</li> <li>Microsoft Graph を通じて公開される警告、アクション、顧客の脅威インテリジェンス。</li> <li>Microsoft Graph 対応ソリューションのクイック統合。</li> <li>他のセキュリティ ソリューションをトレーニングするための深いセキュリティ分析情報の取得。</li> </ul>|
 
 ## <a name="api-reference"></a>API リファレンス
 このサービスの API リファレンスが必要な場合
