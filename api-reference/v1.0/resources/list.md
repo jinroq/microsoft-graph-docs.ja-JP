@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984389"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481406"
 ---
-# <a name="list-resource"></a>list リソース
+# <a name="list-resource"></a>List リソース
 
 **list** リソースは [site][] 内のリストを表します。
 このリソースには、テンプレートとフィールドの定義を含め、リストの最上位レベルのプロパティが含まれています。
@@ -87,22 +87,22 @@ list リソースで使用可能なタスクを次に示します。
 
 **list** リソースには以下のプロパティがあります。
 
-| プロパティ名    | Type                             | 説明
+| プロパティ名    | 種類                             | 説明
 |:-----------------|:---------------------------------|:---------------------------
-| **displayName**  | 文字列                           | リストの表示可能なタイトルです。
+| **displayName**  | string                           | リストの表示可能なタイトルです。
 | **list**         | [listInfo][]                     | リストに関する追加の詳細を示します。
 | **system**       | [systemFacet][]                  | 存在する場合は、これがシステム管理のリストであることを示しています。 読み取り専用です。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名            | Type              | 説明
+| プロパティ名            | 種類              | 説明
 |:-------------------------|:------------------|:------------------------------
 | **id**                   | string            | アイテムの一意識別子。読み取り専用です。
-| **name**                 | 文字列            | アイテムの名前。
+| **name**                 | string            | アイテムの名前。
 | **createdBy**            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
 | **createdDateTime**      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
-| **説明**          | 文字列            | アイテムの説明テキストです。
-| **eTag**                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| **説明**          | string            | アイテムの説明テキストです。
+| **eTag**                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | **lastModifiedBy**       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | **lastModifiedDateTime** | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
 | **parentReference**      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。
@@ -117,7 +117,7 @@ list リソースで使用可能なタスクを次に示します。
 |:------------------|:---------------------------------|:----------------------
 | **ドライブ**         | [drive][]                        | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
 | **items**         | Collection([listItem][])         | リストに含まれているすべてのアイテム。
-| **columns**       | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
+| **列**       | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
 | **contentTypes**  | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
 
 [baseItem]: baseitem.md
@@ -130,7 +130,7 @@ list リソースで使用可能なタスクを次に示します。
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [sharepointIds]: sharepointids.md
-[site]: site.md
+[サイト]: site.md
 [systemFacet]: systemfacet.md
 
 <!-- {

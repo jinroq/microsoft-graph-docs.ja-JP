@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937013"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482092"
 ---
 # <a name="site-resource"></a>Site リソース
 
@@ -85,15 +85,15 @@ ms.locfileid: "27937013"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名            | 型                                | 説明                                                                                    |
+| プロパティ名            | 種類                                | 説明                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | アイテムの一意識別子。読み取り専用です。                                                  |
 | **createdDateTime**      | DateTimeOffset                      | アイテムが作成された日時。読み取り専用です。                                             |
-| **説明**          | 文字列                              | サイトの説明テキスト。                                                             |
-| **displayName**          | 文字列                              | サイトの完全なタイトル。読み取り専用です。                                                        |
-| **eTag**                 | 文字列                              | アイテムの ETag。読み取り専用です。                                                                  |
+| **説明**          | string                              | サイトの説明テキスト。                                                             |
+| **displayName**          | string                              | サイトの完全なタイトル。読み取り専用です。                                                        |
+| **eTag**                 | string                              | アイテムの ETag。読み取り専用です。                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | アイテムが最後に変更された日時。読み取り専用です。                                       |
-| **name**                 | 文字列                              | アイテムの名前/タイトル。                                                                  |
+| **name**                 | string                              | アイテムの名前/タイトル。                                                                  |
 | **root**                 | [root](root.md)                     | 存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。 |
@@ -118,7 +118,7 @@ ms.locfileid: "27937013"
 [ドライブ]: drive.md
 [identitySet]: identityset.md
 [list]: list.md
-[site]: site.md
+[サイト]: site.md
 [onenote]: onenote.md
 
 <!-- {

@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Site
+title: サイト
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d2fbdcb870d86efb983de1e3ba75154b6e15f619
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952350"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481861"
 ---
-# <a name="site-resource-type"></a>サイト リソースの種類
+# <a name="site-resource-type"></a>サイトのリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**サイト** リソースは、メタデータと SharePoint サイトのリレーションシップを提供します。
+**サイト** リソースは、SharePoint サイトのメタデータとリレーションシップを提供します。
 
 ## <a name="methods"></a>メソッド
 
@@ -26,34 +26,34 @@ ms.locfileid: "27952350"
 | [サイトを取得する][]                   | GET /sites/{site-id}
 | [パスを使用してサイトを取得する][]           | GET /sites/{hostname}:/{site-path}
 | [グループのサイトを取得する][]       | GET /groups/{group-id}/sites/root
-| [分析を取得します。][]              | GET/sites/{サイト id}/分析
-| [間隔によってアクティビティを取得します。][] | GET/sites/{サイト id}/getActivitiesByInterval
-| [List pages][]                 | GET/sites/{サイト id} ページ/
-| [ルート サイトの一覧][]            | GET/sites ですか? フィルター = null と選択のルート ne = siteCollection、webUrl
+| [分析を取得する][]              | GET /sites/{site-id}/analytics
+| [間隔によりアクティビティを取得する][] | GET /sites/{site-id}/getActivitiesByInterval
+| [ページを一覧表示する][]                 | GET /sites/{site-id}/pages
+| [ルート サイトを一覧表示する][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [サイトを検索する][]           | GET /sites?search={query}
 
 [サイトを取得する]: ../api/site-get.md
 [ルート サイトを取得する]: ../api/site-get.md
 [パスを使用してサイトを取得する]: ../api/site-getbypath.md
 [グループのサイトを取得する]: ../api/site-get.md
-[分析を取得します。]: ../api/itemanalytics-get.md
-[間隔によってアクティビティを取得します。]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/sitepage-list.md
-[ルート サイトの一覧]: ../api/site-list.md
+[分析を取得する]: ../api/itemanalytics-get.md
+[間隔によりアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
+[ページを一覧表示する]: ../api/sitepage-list.md
+[ルート サイトを一覧表示する]: ../api/site-list.md
 [サイトを検索する]: ../api/site-search.md
 
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名            | Type               | 説明
+| プロパティ名            | 種類               | 説明
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | アイテムの一意識別子。読み取り専用です。
 | **createdDateTime**      | DateTimeOffset     | アイテムが作成された日時。読み取り専用です。
-| **説明**          | 文字列             | サイトの説明テキスト。
-| **eTag**                 | 文字列             | アイテムの ETag。読み取り専用です。                                                                  |
-| **displayName**          | 文字列             | サイトの完全なタイトル。読み取り専用です。
+| **説明**          | string             | サイトの説明テキスト。
+| **eTag**                 | string             | アイテムの ETag。読み取り専用です。                                                                  |
+| **displayName**          | string             | サイトの完全なタイトル。読み取り専用です。
 | **lastModifiedDateTime** | DateTimeOffset     | アイテムが最後に変更された日時。読み取り専用です。
-| **name**                 | 文字列             | アイテムの名前/タイトル。
+| **name**                 | string             | アイテムの名前/タイトル。
 | **root**                 | [root][]           | 存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。
 | **sharepointIds**        | [sharepointIds][]  | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
 | **siteCollection**       | [siteCollection][] | サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。
@@ -63,25 +63,25 @@ ms.locfileid: "27952350"
 
 | リレーションシップ名 | 種類                             | 説明
 |:------------------|:---------------------------------|:----------------------
-| **分析**     | [itemAnalytics][]リソース       | このサイトで行われた活動の表示について分析します。
-| **columns**       | Collection([columnDefinition][]) | このサイトのすべてのリストで再利用可能なコラム定義のコレクションです。
+| **analytics**     | [itemAnalytics][] リソース       | このサイトで行われたビュー アクティビティに関する分析。
+| **列**       | Collection([columnDefinition][]) | このサイトのすべてのリストで再利用可能なコラム定義のコレクションです。
 | **contentTypes**  | Collection([contentType][])      | このサイトに定義されたコンテンツ タイプのコレクションです。
 | **drive**         | [ドライブ][]                        | このサイトの既定ドライブ (ドキュメント ライブラリ)。
 | **ドライブ**        | Collection([drive][])            | このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。
 | **アイテム**         | Collection([baseItem][])         | このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。
 | **lists**         | Collection([list][])             | このサイトにあるリストのコレクションです。
-| **ページ**         | コレクション ([sitePage][])         | このサイトのサイト ページのリスト内のページのコレクションです。
+| **pages**         | Collection([sitePage][])         | このサイトにある SitePages リストのページのコレクション。
 | **sites**         | Collection([サイト][])             | このサイトの下のサブサイトのコレクション。
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
-[ドライブ]: drive.md
+[drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[リスト]: list.md
+[list]: list.md
 [sitePage]: sitepage.md
-[ルート]: root.md
+[root]: root.md
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
@@ -135,11 +135,18 @@ ms.locfileid: "27952350"
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

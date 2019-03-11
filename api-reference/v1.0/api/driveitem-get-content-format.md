@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 他の形式に変換する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d33e03df0abcc9417c0fe5bc241e654185bd4313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978551"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481854"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 
 この API を使用して、アイテムのコンテンツを特定の形式で取得します。
 すべてのファイルがすべての形式に変換できるわけではありません。
 
-元の形式でアイテムをダウンロードするには、[アイテムの内容をダウンロードする](driveitem-get-content.md)を参照してください。
+アイテムを元の形式でダウンロードするには、「[アイテムのコンテンツをダウンロードする](driveitem-get-content.md)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -36,12 +36,12 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | パラメーター      | 型  | 説明                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | 文字列 | アイテムのコンテンツをダウンロードする形式を指定します。 |
+| _format_  | string | アイテムのコンテンツをダウンロードする形式を指定します。 |
 
 
-### <a name="format-options"></a>書式のオプション
+### <a name="format-options"></a>形式のオプション
 
-次の値は、 **format**パラメーターに有効です。
+**format** パラメーターには次の値を指定できます。
 
 | 形式の値 | 説明                        | サポートされているソースの拡張子
 |:-------------|:-----------------------------------|----------------------------

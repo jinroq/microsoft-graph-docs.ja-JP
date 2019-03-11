@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルをダウンロードする
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 963d9cb2b80fa51f6b4b09d1316505672d876965
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927962"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481609"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>DriveItem のコンテンツをダウンロードする
 
@@ -61,7 +61,7 @@ GET /me/drive/items/{item-id}/content
 ファイルの事前認証されたダウンロード URL にリダイレクトする、`302 Found` 応答を返します。これは、DriveItem の `@microsoft.graph.downloadUrl` プロパティを通じて使用可能な URL と同じものです。
 
 ファイルのコンテンツをダウンロードするには、アプリケーションで応答の `Location` ヘッダーに従う必要があります。
-302 リダイレクトしてファイルのダウンロードを直ちに開始多くの HTTP クライアント ライブラリは自動的に次の。
+多くの HTTP クライアント ライブラリは、自動的に 302 リダイレクションに従い、即座にファイルのダウンロードを開始します。
 
 事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、ダウンロードのために `Authorization` ヘッダーを必要としません。
 

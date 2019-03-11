@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルを検索する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976906"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481021"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
 
 クエリと一致するアイテムを対象にアイテムの階層を検索します。
-フォルダー階層内、ドライブ全体、または現在のユーザーと共有されるファイル内で検索できます。
+フォルダー階層内、ドライブ全体、現在のユーザーと共有されるファイル内で検索できます。
 
 ## <a name="permissions"></a>アクセス許可
 

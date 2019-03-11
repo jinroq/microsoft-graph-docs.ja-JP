@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 65668c0d6c0f84ef08e4f7cf8c700ae3f1b33369
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986909"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482421"
 ---
-# <a name="driveitem-resource-type"></a>DriveItem リソースの種類
+# <a name="driveitem-resource-type"></a>DriveItem リソース型
 
 **driveItem** リソースは、ドライブに格納されているファイル、フォルダーなどのアイテムを表します。OneDrive および SharePoint 内のすべてのファイル システム オブジェクトが、**driveItem** リソースとして返されます。
 
@@ -23,7 +23,7 @@ ms.locfileid: "27986909"
 
 **DriveItem** リソースには、driveItem の ID および機能に関するデータを提供するプロパティとしてモデル化されたファセットがあります。例:
 
-* フォルダーには、[**フォルダー ファセット **][folder] があります
+* フォルダーには、[**フォルダー ファセット **][folder] があります。
 * ファイルには、[**ファイル ファセット **][file] があります。
 * 画像には[**画像ファセット **][image] とそのファイル ファセットがあります。
 * カメラで撮影した画像 (写真) には[**写真ファセット **][photo] があります。写真ファセットは、アイテムを写真として識別し、撮影日時と撮影デバイスのプロパティを提供します。
@@ -105,11 +105,11 @@ ms.locfileid: "27986909"
 | createdDateTime      | DateTimeOffset     | アイテム作成の日時。読み取り専用です。
 | cTag                 | String             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
 | deleted              | [deleted][]        | アイテムの削除状態に関する情報。読み取り専用です。
-| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| description          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
 | eTag                 | String             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
 | file                 | [file][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
-| folder               | [folder][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
+| folder               | [フォルダー][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
 | id                   | String             | ドライブ内のアイテムの一意識別子。読み取り専用です。
 | image                | [image][]          | 画像のメタデータ (アイテムが画像である場合)。読み取り専用です。
 | lastModifiedBy       | [identitySet][]    | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
@@ -123,7 +123,7 @@ ms.locfileid: "27986909"
 | remoteItem           | [remoteItem][]     | リモート アイテムのデータ (現在アクセス中のドライブ以外のドライブから共有されているアイテムの場合)。読み取り専用です。
 | root                 | [root][]           | このプロパティが null ではない場合は、driveItem がドライブで最上位の driveItem であることを示します。
 | searchResult         | [searchResult][]   | 検索のメタデータ (検索結果に由来するアイテムの場合)。読み取り専用です。
-| shared               | [shared][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
+| 共有               | [shared][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
 | sharepointIds        | [sharepointIds][]  | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
 | size                 | Int64              | アイテムのサイズ (バイト単位)。読み取り専用です。
 | specialFolder        | [specialFolder][]  | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。
@@ -140,21 +140,21 @@ ms.locfileid: "27986909"
 | children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
-| listItem           | [listItem][]                | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用です。 Null 許容型。
-| permissions        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
+| listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用です。 Null 許容型。
+| アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
 | thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
-| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用です。 Null 許容型。
-| ブック           | [workbook][]                | ファイルは、Excel のスプレッドシートには、ブックのワークシートの内容を操作する API にアクセスします。 Null 許容型。
+| versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型。
+| workbook           | [workbook][]                | Excel スプレッドシートであるファイルの場合、スプレッドシートのコンテンツを操作するためにブックの API にアクセスします。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
 インスタンスの属性は、動作が特殊なプロパティです。これらのプロパティは一時的なものであり、a) サービスの動作を定義するか、b) 短期的なプロパティの値 (有効期限を持つアイテムのダウンロード URL など) を提供します。
 
-| プロパティ名                     | Type   | 説明
+| プロパティ名                     | 種類   | 説明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | 文字列 | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
-| @microsoft.graph.downloadUrl      | 文字列 | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
-| @microsoft.graph.sourceUrl        | 文字列 | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
+| @microsoft.graph.conflictBehavior | string | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
+| @microsoft.graph.downloadUrl      | string | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
+| @microsoft.graph.sourceUrl        | string | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
 
 **注:**@microsoft.graph.downloadUrl の値は短時間限定の URL であるため、キャッシュすることはできません。URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
 
@@ -164,7 +164,7 @@ ms.locfileid: "27986909"
 |:---------------------------------------------------------|:------------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [子を一覧表示する](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [バージョンの一覧表示](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
+| [バージョンを一覧表示する](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [アイテムを作成する](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
 | [アイテムを更新する](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [コンテンツをアップロードする](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
@@ -180,11 +180,11 @@ ms.locfileid: "27986909"
 | [アクセス許可を追加する](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を削除する](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [アイテムのプレビュー][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [アイテムをプレビューする][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OneDrive for Business または SharePoint のドキュメント ライブラリでは、**driveItem** に[フォルダー][] ファセットがある場合、**cTag** プロパティは返されません。
 
@@ -196,7 +196,7 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[以前のバージョンを取得します。]: ../api/driveitem-list-versions.md
+[以前のバージョンの取得]: ../api/driveitem-list-versions.md
 [サムネイルの取得]: ../api/driveitem-list-thumbnails.md
 [identitySet]: identityset.md
 [image]: image.md
@@ -213,9 +213,9 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
 [thumbnailSet]: thumbnailset.md
-[video]: video.md
+[ビデオ]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[ユーザー]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

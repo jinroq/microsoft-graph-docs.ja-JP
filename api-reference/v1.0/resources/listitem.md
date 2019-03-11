@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3823c53bffce783714a78dfc910299e9ea976d77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921396"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481616"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
@@ -81,13 +81,13 @@ ms.locfileid: "27921396"
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | 型              | 説明
+| プロパティ名        | 種類              | 説明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | 文字列            | アイテムの一意識別子。読み取り専用です。
-| name                 | 文字列            | アイテムの名前/タイトル。
+| id                   | string            | アイテムの一意識別子。読み取り専用です。
+| name                 | string            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
 | createdDateTime      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
-| description          | 文字列            | アイテムの説明テキストです。
+| description          | string            | アイテムの説明テキストです。
 | eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
@@ -102,8 +102,8 @@ ms.locfileid: "27921396"
 | リレーションシップ名 | 種類                           | 説明
 |:------------------|:-------------------------------|:-------------------------------
 | driveItem         | [driveItem][]                  | ドキュメント ライブラリの場合、**driveItem** リレーションシップは listItem を **[driveItem][]** として公開します。
-| fields            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
-| versions          | [listItemVersion][]コレクション | リスト項目の以前のバージョンの一覧です。
+| フィールド            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
+| versions          | [listItemVersion][] コレクション | リスト アイテムの以前のバージョンのリスト。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -111,7 +111,7 @@ ms.locfileid: "27921396"
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[リスト]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

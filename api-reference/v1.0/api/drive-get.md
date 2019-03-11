@@ -1,20 +1,20 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ドライブを取得する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: aaa670111b61fe0ecd1c111e5fd3be650d115435
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 78d31fb584d345a401fddefac37399093c2d084b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978677"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480447"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
-[Drive](../resources/drive.md) リソースのプロパティとリレーションシップを取得します。
+[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。
 
 ドライブとは、OneDrive または SharePoint のドキュメント ライブラリなど、ファイル システムの最上位コンテナーです。
 
@@ -60,7 +60,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | 文字列 | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -78,7 +78,7 @@ GET /groups/{groupId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | 文字列 | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -94,7 +94,7 @@ GET /sites/{siteId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | 文字列 | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
+| _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
 ## <a name="get-a-drive-by-id"></a>ID によりドライブを取得する
 
@@ -112,7 +112,7 @@ GET /drives/{drive-id}
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | 文字列 | 必須。 要求されるドライブの識別子。 |
+| _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 

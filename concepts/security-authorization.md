@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API からアクセスできる�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947086"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480426"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>承認と Microsoft Graph セキュリティ API
 
@@ -78,7 +78,15 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 3. 新しいアプリケーションの登録ページで **[プラットフォームの追加]** > **[Web]** を選択します。 **[リダイレクト URL]** フィールドにリダイレクト URL を入力します。
 4. **[Microsoft Graph のアクセス許可]** セクションの **[委任されたアクセス許可]** で、**[追加]** を選択します。 ダイアログ ボックスで、必要なアクセス許可を選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
-    >Microsoft Graph セキュリティ API では、GET クエリに SecurityEvents.Read.All スコープ、PATCH/POST クエリに SecurityEvents.ReadWrite.All スコープが必要です。
+    >**注:** Microsoft Graph Security API では、GET クエリに *.Read.All スコープ、PATCH/POST/DELETE クエリに *.ReadWrite.All スコープが必要です。
+
+    |アクセス許可 | エンティティ | サポートされている要求 |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (プレビュー) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (プレビュー) | GET、POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (プレビュー)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (プレビュー) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (プレビュー)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (プレビュー) | GET、POST、PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (プレビュー) | GET、POST、PATCH、DELETE|
 
 5. **[保存]** を選択します。
 
