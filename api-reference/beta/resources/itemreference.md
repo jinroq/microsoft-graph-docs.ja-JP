@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: eb97c2c638d6a8f1679fa1a1b604249108888e76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859466"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482281"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference リソースの種類
 
@@ -43,7 +43,7 @@ ms.locfileid: "27859466"
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | アイテムを含むドライブ インスタンスの一意識別子。読み取り専用です。
 | driveType     | String            | ドライブの種類を表します。 値については [drive][] リソースを参照してください。
-| id            | String            | ドライブ内のアイテムの一意識別子。読み取り専用です。
+| id            | 文字列型 (String)            | ドライブ内のアイテムの一意識別子。読み取り専用です。
 | name          | String            | 参照中のアイテムの名前。読み取り専用です。
 | path          | String            | アイテムへの移動に使用可能なパス。読み取り専用です。
 | shareId       | String            | [共有][] API 経由でアクセスできる共有リソースの一意識別子。

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アクセス許可を変更する
+title: 共有アクセス許可の変更
 localization_priority: Normal
-ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b2c3c41c9feecf7b2874ffdcc468593b6eeb7444
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825341"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482071"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -43,18 +43,18 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | 文字列 | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
+| if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新する関連フィールドの値を指定します。
 
-要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。
+要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ | 種類              | 説明                   |
+| プロパティ | 型              | 説明                   |
 |:---------|:------------------|:------------------------------|
-| roles    | String コレクション | アクセス許可の種類の配列。 |
+| roles    | String collection | アクセス許可の種類の配列。 |
 
 ## <a name="response"></a>応答
 

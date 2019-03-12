@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーのサムネイルを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990594"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482176"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 
@@ -70,8 +70,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 このアイテムの使用可能な **thumbnailSets** の配列が返されます。 ドライブにあるすべてのアイテムは、0 個以上のサムネイルを保持できます。
 
-**注:** _select_ クエリ文字列パラメーターを使用すると、**ThumbnailSet** で返されるサムネイルのサイズを制御できます。
-たとえば、`/thumbnails?select=medium` では、中サイズのサムネイルのみを取得します。
+**注:**_select_ クエリ文字列パラメーターを使用すると、**ThumbnailSet** で返されるサムネイルのサイズを制御できます。 たとえば、`/thumbnails?select=medium` では、中サイズのサムネイルのみを取得します。
 
 
 ### <a name="response"></a>応答
@@ -108,7 +107,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| 名前         | 型   | 説明                                                                              |
+| 名前         | 種類   | 説明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 参照されるアイテムの一意識別子。                                           |
 | **thumb-id** | number | サムネイルのインデックス (通常 0-4)。 カスタム サムネイルがある場合は、そのインデックスは 0 になります。 |
@@ -206,15 +205,15 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-options"></a>サイズ オプション
+## <a name="size-options"></a>サイズオプション
 
 次の表で、使用可能なサムネイルのサイズを定義します。サムネイルの任意のサイズを要求できますが、定義済みの値が存在する可能性が高く、値は即時に返されます。
 
-| 名前           | 解像度  | 縦横比 | 説明                                                          |
+| 名前           | 解決方法  | 縦横比 | 説明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | Original     | 圧縮率の高い小さなサムネイルは、正方形にトリミングされます。 |
 | `medium`       | 176 longest | Original     | OneDrive の Web ビューの標準的なアイテムのサイズにトリミングされます。         |
-| `large`        | 800 longest | Original     | サムネイルの長辺が 800 ピクセルになるよう、サイズ変更されます。               |
+| `large`        | 800 longest | 元の比率     | サムネイルの長辺が 800 ピクセルになるよう、サイズ変更されます。               |
 | `smallSquare`  | 96x96       | 正方形にトリミング  | 小さな正方形のサムネイル                                               |
 | `mediumSquare` | 176x176     | 正方形にトリミング  | 小さな正方形のサムネイル                                               |
 | `largeSquare`  | 800x800     | 正方形にトリミング  | 大きな正方形のサムネイル                                               |
