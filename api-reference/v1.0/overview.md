@@ -2,12 +2,12 @@
 title: Microsoft Graph REST API v1.0 リファレンス
 description: v1.0 エンドポイント用の Microsoft Graph REST API リファレンスへようこそ。
 localization_priority: Priority
-ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
+ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829076"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30546010"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API v1.0 リファレンス
 
@@ -52,5 +52,3 @@ Microsoft Graph では、単一の Microsoft Graph REST エンドポイントで
 Microsoft Graph に追加したい API や機能がある場合 新しい機能のリクエストを [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632) に投稿してください。
 
 既存の Microsoft Graph API に対するフィードバックがある場合 [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues) から連絡してください。
-
-ご質問または Microsof を使用してコードのヘルプについて
