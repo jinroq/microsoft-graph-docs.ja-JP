@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
-ms.openlocfilehash: 988a4d6dcd1b04b34c5d2d03aca404b0a570922f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834168"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482225"
 ---
-# <a name="permission-resource-type"></a>permission リソースの種類
+# <a name="permission-resource-type"></a>Permission リソース型
 
-**permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
+**Permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
 
 共有アクセス許可にはさまざまなフォームがあります。
-**permission** リソースは、これらの異なるフォームをリソースのファセットを通じて表します。
+**Permission** リソースは、これらのさまざまなフォームをリソースのファセットを通じて表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -57,7 +57,9 @@ ms.locfileid: "27834168"
 | inheritedFrom | [ItemReference](itemreference.md)         | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link          | [SharingLink][]                           | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles         | Collection of String                      | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId       | String                                    | [**共有** API](../api/shares-get.md) 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
+| shareId       | String                                    | 
+            [
+            **共有** API](../api/shares-get.md) 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
 
 permission リソースは、_ファセット_ を使用して、リソースによって表されるアクセス許可の種類に関する情報を提供します。
 
@@ -78,8 +80,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 | `sp.member` | SharePoint および OneDrive for Business の場合、これはメンバー ロールを表します。      |
 
 ## <a name="sharing-links"></a>共有リンク
-最も一般的なアクセス許可の種類は、共有リンクです。
-共有リンクは、共有されるリソースと、そのリソースへのアクセスを実現する認証トークンの両方を含む一意の URL を提供します。 ユーザーは、共有リンクによって共有されるコンテンツにアクセスするために、サインインする必要がありません。 ユーザーは、コンテンツへの読み取り専用アクセス権を付与するリンク、またはコンテンツへの書き込み可能なアクセス権を付与するリンクを共有できます。
+最も一般的なアクセス許可の種類は、共有リンクです。 共有リンクは、共有されるリソースと、そのリソースへのアクセスを実現する認証トークンの両方を含む一意の URL を提供します。 ユーザーは、共有リンクによって共有されるコンテンツにアクセスするために、サインインする必要がありません。 ユーザーは、コンテンツへの読み取り専用アクセス権を付与するリンク、またはコンテンツへの書き込み可能なアクセス権を付与するリンクを共有できます。
 
 ### <a name="view-link"></a>表示リンク
 表示リンクでは、項目への読み取り専用アクセスを提供します。
@@ -116,8 +117,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 ```
 
 ### <a name="sharing-invitation"></a>共有の招待
-共有リンクの作成に加えて、電子メール アドレスでユーザーを招待できます。
-このシナリオでは、ユーザーの電子メールに送信される招待状がアクセス許可によって作成されます。
+共有リンクの作成に加えて、電子メール アドレスでユーザーを招待できます。 このシナリオでは、ユーザーの電子メールに送信される招待状がアクセス許可によって作成されます。
 
 #### <a name="invitation-to-an-email-address"></a>電子メール アドレスへの招待状
 アカウントが一致していないユーザーに電子メール アドレスでアクセス許可が送信された場合、**grantedTo** プロパティは、招待状が引き換えられるまで設定されません。招待状の引き換えは、ユーザーが初めてリンクをクリックしてサインインしたときに発生します。

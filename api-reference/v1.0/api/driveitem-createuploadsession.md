@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 21a6ed64e22e6a8fa7460418de4461adf36e0c4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942480"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482239"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>要求本文
 
 要求の本文は必要ありません。
-ただし、指定することができます、`item`にアップロードされているファイルに関する追加データを提供する、要求の本文のプロパティです。
+ただし、要求本文に `item` プロパティを指定し、アップロードされているファイルに関する追加データを提供できます。
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
@@ -81,11 +81,11 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類               | 説明
+| プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| description          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
-| 名前                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 
 ### <a name="request"></a>要求
 
@@ -127,10 +127,10 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>アップロード セッションにバイトをアップロードする
 
-ファイル、またはファイルの一部をアップロードするために、アプリは **createUploadSession** 応答で受け取った **uploadUrl** 値への PUT 要求を出します。
+ファイル、またはファイルの一部をアップロードするために、アプリは **createUploadSession** 応答で受け取った **uploadUrl** の値に PUT 要求を行います。
 どの要求の最大バイト数も 60 MiB 未満である限り、ファイル全体をアップロードすることも、ファイルをいくつかのバイト範囲に分割することも可能です。
 
-ファイルのフラグメントは、順に順番にアップロードする必要があります。
+分割されたファイルのフラグメントは順番にアップロードされる必要があります。
 誤った順序でアップロードすると、エラーが発生します。
 
 **注:** アプリがファイルを複数のバイト範囲に分割する場合、各バイト範囲のサイズは 320 KiB (327,680 バイト) の倍数である**必要があります**。 320 KiB で均等に分割できないフラグメント サイズを使用した場合、一部のファイルのコミット中にエラーになります。
@@ -153,7 +153,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**重要:** アプリは、**Content-Range** ヘッダーで指定されるファイル サイズ合計をすべての要求で同じに設定する必要があります。
+**重要:****Content-Range** ヘッダーで指定されたファイル サイズの合計は、すべての要求で同じである必要があります。
 異なるファイル サイズのバイト範囲が宣言された場合、要求は失敗します。
 
 ### <a name="response"></a>応答
@@ -173,7 +173,7 @@ Content-Type: application/json
 ```
 
 アプリは **nextExpectedRanges** の値を使用して、次のバイト範囲の開始点を判断できます。
-サーバーがまだ受信していないファイル部分を示す、複数の範囲指定が表示されることがあります。 これは、中断された転送を再開する必要があり、クライアント側にとってサービスの状態が不明な場合に便利です。
+サーバーがまだ受信していないファイルの部分を示す、複数の指定範囲が表示されることがあります。 これは、中断された転送を再開する必要があり、クライアント側でサービスの状態が不明な場合に便利です。
 
 常に以下のベスト プラクティスに従って、バイト範囲のサイズを決定してください。 アップロードするバイト範囲の正しいサイズの範囲を **nextExpectedRanges** が返すことを想定しないでください。
 **nextExpectedRanges** プロパティは、まだ受信されていないファイルの範囲を示します。アプリによるファイル アップロード方法のパターンを示すものではありません。
@@ -203,7 +203,7 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>ファイルの完成
 
 ファイルの最後のバイト範囲が受信されると、サーバーは `HTTP 201 Created` または `HTTP 200 OK` の応答を返します。
-また、応答本文には、完成したファイルを表す **driveItem** の既定のプロパティ セットも含まれます。
+応答本文には完全なファイルを表す **driveItem** の既定のプロパティ セットも含まれます。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
@@ -310,10 +310,10 @@ Content-Type: application/json
 ファイルの最後のバイト範囲がアップロードされるときに、エラーが発生する可能性があります。 この原因として、名前の競合またはクォータ制限の超過が考えられます。
 アップロード セッションは有効期限が切れるまで保持されるので、アプリはアップロード セッションを明示的にコミットすることで、アップロードを回復することができます。
 
-アプリでアップロード セッションを明示的にコミットするには、アップロード セッションのコミット時に使用される新しい **driveItem** リソースを使って PUT 要求を出す必要があります。
+アプリでアップロード セッションを明示的にコミットするには、アップロード セッションのコミット時に使用される新しい **driveItem** リソースを使って PUT 要求を送信する必要があります。
 この新しい要求により、元のアップロード エラーの原因となったエラーが修正されるはずです。
 
-既存のアップロード セッションをアプリでコミットすることを示すために、アップロード セッション URL の値を指定する `@microsoft.graph.sourceUrl` プロパティを PUT 要求に含める必要があります。
+既存のアップロード セッションをアプリでコミットすることを示すために、アップロード セッション URL の値を指定した `@microsoft.graph.sourceUrl` プロパティを PUT 要求に含める必要があります。
 
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
@@ -329,7 +329,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**注:** この呼び出しでは、想定どおりに `@microsoft.graph.conflictBehavior` ヘッダーと `if-match` ヘッダーを使用できます。
+**注:** この呼び出しでは、期待どおりに `@microsoft.graph.conflictBehavior` と `if-match` ヘッダーを使用できます。
 
 ### <a name="response"></a>応答
 
@@ -358,9 +358,9 @@ Content-Type: application/json
   * `504 Gateway Timeout`
 * アップロード要求を再開または再試行するときに 5xx サーバー エラーが返された場合には、指数近似バックオフを使用します。
 * その他のエラーの場合は指数近似バックオフは使わず、再試行回数を制限する必要があります。
-* 再開可能なアップロードの実行中に発生した `404 Not Found` エラーに対処するには、アップロード全体を最初からやり直します。 これは、アップロード セッションがもはや存在しなくなったことを示します。
+* 再開可能なアップロードを実行中の `404 Not Found` エラーは、アップロード全体を最初からやり直して処理します。 これは、アップロード セッションがもはや存在しなくなったことを示します。
 * 10 MiB (10,485,760 バイト) を超えるサイズのファイルには、再開可能なファイル転送を使用します。
-* 安定した高速接続で最適なバイト範囲サイズは 10 MiB です。 より低速な、または信頼性の低い接続では、フラグメント サイズをより小さくした方が良い結果を得られます。 推奨されるフラグメント サイズは、5～10 MiB です。
+* 安定した高速接続で最適なバイト範囲サイズは 10 MiB です。 より低速な、または信頼性の低い接続では、フラグメント サイズをより小さくした方が良い結果を得られます。 推奨されるフラグメント サイズは、5 から 10 MiB です。
 * 320 KiB (327,680 バイト) の倍数のバイト範囲サイズを使用してください。 320 KiB の倍数ではないフラグメント サイズを使用した場合、最後のバイト範囲をアップロードした後に、サイズの大きなファイルの転送が失敗する可能性があります。
 
 ## <a name="error-responses"></a>エラー応答

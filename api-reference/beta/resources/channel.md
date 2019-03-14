@@ -1,52 +1,52 @@
 ---
-title: チャネル リソースの種類
-description: 'チャネルは、チーム内での chatMessages のコレクションです。 '
+title: チャネルのリソースの種類
+description: 'チャネルは、チーム内の chatMessages のコレクションです。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d58a3e0b867a675e378fa126108331fd5b27856c
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952329"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994469"
 ---
-# <a name="channel-resource-type"></a>チャネル リソースの種類
+# <a name="channel-resource-type"></a>チャネルのリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-チャネルは、[チーム](../resources/team.md)内での[chatMessages](chatmessage.md)のコレクションです。 チャネルでは、トピックとチーム内での議論の論理的分離を表します。 例としては、「金曜日チーム ランチ」のチャネルとチャネルの「アーキテクチャの説明」にあります。
+チャネルは、[チーム](../resources/team.md)内の [chatMessages](chatmessage.md) のコレクションです。 チャネルは 1 つのトピック、つまりチーム内でのディスカッションの論理的分離を表します。 たとえば、「Friday Team Lunch (金曜日のチーム ランチ)」チャネルや「Architecture Discussion (アーキテクチャに関するディスカッション)」チャネルなどです。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チャネルのリスト](../api/channel-list.md) | [チャネル](channel.md)コレクション | このチームでは、チャネルの一覧を取得します。|
-|[チャネルを作成します。](../api/channel-post.md) | [チャネル](channel.md) | 表示名と説明を含めることで、新しいチャネルを作成します。|
-|[チャネルを取得します。](../api/channel-get.md) | [チャネル](channel.md) | チャネルのプロパティと関係を参照してください。|
-|[チャネルを更新します。](../api/channel-patch.md) | [チャネル](channel.md) | チャネルのプロパティを更新します。|
-|[チャネルを削除します。](../api/channel-delete.md) | なし | チャネルを削除します。|
-|[リストからチャネルのメッセージ](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルでメッセージを取得します。 |
-|[チャットのスレッドを作成します。](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md)コレクション| 指定したチャンネルでのチャットのスレッドを作成します。|
+|[チャネルを一覧表示する](../api/channel-list.md) | [channel](channel.md) コレクション | このチーム内のチャネルの一覧を取得します。|
+|[チャネルを作成する](../api/channel-post.md) | [channel](channel.md) | 表示名と説明を指定して新しいチャネルを作成します。|
+|[チャネルを取得する](../api/channel-get.md) | [channel](channel.md) | チャネルのプロパティとリレーションシップを読み取ります。|
+|[チャネルを更新する](../api/channel-patch.md) | [channel](channel.md) | チャネルのプロパティを更新します。|
+|[チャネルを削除する](../api/channel-delete.md) | なし | チャネルを削除します。|
+|[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルのメッセージを取得します。 |
+|[チャネル メッセージを送信する](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [メッセージをチャネルに送信する](../api/channel-post-chatmessage.md) |
+
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String|チャネルの省略可能な説明です。|
-|displayName|String|チャネルの名前は、マイクロソフトのチーム内のユーザーに表示されます。|
-|id|String|チャネルの一意の識別子です。 読み取り専用です。|
-|isFavoriteByDefault|ブール型|かどうかチャネルが自動的にマークされます 'お気に入り' チームのすべてのメンバーの。 既定値: `false`。|
-|email|ブール型| チャネルにメッセージを送信する電子メール アドレスです。 読み取り専用です。|
-|webUrl|String|ハイパーリンクは、マイクロソフトのチーム内のチャネルに移動します。 これは、マイクロソフトのチームでチャネルを右クリックし、チャネルを取得] リンクを選択するときに表示される URL です。 この URL は、非透過 blob として扱われます、解析されない必要があります。 読み取り専用です。|
+|description|String|チャネルの説明テキストです (省略可能)。|
+|displayName|String|Microsoft Teams でユーザーに対して表示されるチャネルの名前。|
+|id|String|チャネルの一意の識別子。 読み取り専用です。|
+|isFavoriteByDefault|Boolean|チームのメンバー全員に対してチャネルを「お気に入り」として自動的にマークするかどうか。 既定値: `false`。|
+|email|Boolean| チャネルにメッセージを送信するときのメール アドレス。 読み取り専用です。|
+|webUrl|String|Microsoft Teams のチャネルに移動するハイパーリンク。 これは、Microsoft Teams でチャネルを右クリックし、[チームへのリンクを取得] を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 読み取り専用です。|
 
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md)コレクション|チャネル内のすべてのメッセージのコレクションです。 ナビゲーション プロパティです。 Null 許容型。 現在この API のみの読み取りをサポートしていますは、ついに手書きのメッセージも。|
-|chatThreads|[chatThread](chatthread.md)コレクション|(これは、段階的に廃止のメッセージ プロパティを優先して) chatThreads は、新規メッセージの作成ができないメッセージの読み取りをサポートしています。 ChatThreads は、ナビゲーション プロパティで、null 値です。|
-|タブ|[teamsTab](../resources/teamstab.md)コレクション|チャネル内のすべてのタブのコレクションです。 ナビゲーション プロパティです。|
+|messages|[chatMessage](chatmessage.md) コレクション|チャネル内のすべてのメッセージのコレクションです。 ナビゲーションのプロパティです。 Null 許容型です。 現在この API では読み取りだけがサポートされていますが、最終的にはメッセージの作成もサポートされる予定です。|
+|tabs|[teamsTab](../resources/teamstab.md) コレクション|チャネル内のすべてのタブのコレクションです。 ナビゲーションのプロパティです。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,7 +56,7 @@ ms.locfileid: "27952329"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "chatthreads"
+    "messages"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
@@ -74,10 +74,15 @@ ms.locfileid: "27952329"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "channel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/channel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

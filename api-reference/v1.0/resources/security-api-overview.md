@@ -1,75 +1,99 @@
 ---
-title: Microsoft Graph セキュリティ API を使用する
-description: Microsoft グラフ セキュリティ API は、統一されたインタ フェースとマイクロソフトとエコシステムのパートナーからのセキュリティ ソリューションと統合するためにスキーマを提供します。 これは、セキュリティ ・ オペレーションを合理化し、サイバー脅威の増加が防御よりのお客様を支援します。 Microsoft グラフ セキュリティ API は、集約された応答を取得するすべての onboarded セキュリティ プロバイダーにクエリを発行するフェデレーション セキュリティ集約サービスとして使用できます。 Microsoft グラフ セキュリティ API を使用してアプリケーションを構築します。
+title: Microsoft Graph Security API を使用する
+description: Microsoft Graph Security API には、Microsoft とエコシステム パートナーのセキュリティ ソリューションを統合するための統一されたインターフェイスとスキーマが備わっています。 これにより、お客様は、増加するサイバー脅威に対するセキュリティ操作と優れた防御を効率的に行うことができます。 Security API をフェデレーション セキュリティ集約サービスとして使用することにより、オンボードのセキュリティ プロバイダーすべてに対してクエリを発行し、回答の集約情報を得ることができます。 Microsoft Graph Security API を使用して以下の処理を行うアプリケーションを構築できます。
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7e693bdfb71f41597d77f40ce8c4ac5490d4ef06
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d0d4b68d6b16cc30c93157e1cc90afb4cf72cfae
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977879"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376429"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する
+# <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
-Microsoft グラフ セキュリティ API は、統一されたインタ フェースとマイクロソフトとエコシステムのパートナーからのセキュリティ ソリューションと統合するためにスキーマを提供します。 これは、セキュリティ ・ オペレーションを合理化し、サイバー脅威の増加が防御よりのお客様を支援します。 Microsoft グラフ セキュリティ API は、集約された応答を取得するすべての onboarded セキュリティ プロバイダーにクエリを発行するフェデレーション セキュリティ集約サービスとして使用できます。 Microsoft グラフ セキュリティ API を使用してアプリケーションを構築します。
+Microsoft Graph Security API には、Microsoft とエコシステム パートナーのセキュリティ ソリューションを統合するための統一されたインターフェイスとスキーマが備わっています。 これにより、お客様は、増加するサイバー脅威に対するセキュリティ操作と優れた防御を効率的に行うことができます。 Microsoft Graph Security API は、すべての稼働中のセキュリティ プロバイダーへのクエリを統合し対応を集計します。 Microsoft Graph Security API を使用して以下の処理を行うアプリケーションを構築できます。
 
-- 統合し、複数のソースからのセキュリティの警告の相関関係
-- 調査を通知するためにコンテキストのデータのロックを解除します。
-- 効率のセキュリティ ・ オペレーションを自動化します。
-- プロアクティブ リスク管理を有効にするセキュリティ ・ データの可視性を提供します。
+- 複数のソースからのセキュリティの警告を統合し、関連付ける
+- コンテキスト データをロック解除し、調査について通知する
+- セキュリティ タスク、ビジネス プロセス、ワークフロー、レポート作成を自動化する
+- Microsoft 製品に対してカスタマイズされた検出の脅威インジケーターを送信する
+- 新たな脅威に対応するアクションを呼び出す
+- 予防的なリスク管理を可能にするため、セキュリティ データを可視化する
 
-Microsoft グラフ セキュリティ API には、次のキーのエンティティが含まれています。
+Microsoft Graph Security API には以下の主要なエンティティが含まれています。
 
 ## <a name="alerts"></a>アラート
 
-通知は、マイクロソフトまたはパートナーのセキュリティ ・ ソリューションが既に特定し、アクションの通知フラグが設定されているお客様のテナント内で潜在的なセキュリティ上の問題です。 Microsoft グラフのセキュリティの[警告](alert.md)のエンティティとを統合し、すべての統合されたソリューションのセキュリティの問題を合理化できます。 これは、アプリケーションのアラートおよび脅威の保護とレスポンスを向上させるためにコンテキストを関連付けることもできます。 これらは、インシデントの解決方法を調査の時間と時間を減らすことでセキュリティの運用効率をアンロックします。 アラートの更新機能により、さまざまなセキュリティ製品およびサービスの[アラート](alert.md)のエンティティを更新することによって、Microsoft グラフ セキュリティ API と統合されている間、特定のアラートの状態を同期できます。
+アラートは、Microsoft またはパートナーのセキュリティ ソリューションが識別し、アクションまたは通知のためのフラグが設定された、お客様のテナント内における潜在的なセキュリティ問題です。 Microsoft Graph Security [アラート](alert.md) エンティティを使用すると、統合されたすべてのソリューション内のセキュリティ問題の管理を統一して合理化できます。 これにより、アプリケーション側でも、アラートとコンテキストを関連付け、脅威保護や対応能力を向上できます。 アラート更新機能を利用すると、[アラート](alert.md) エンティティを更新することによって Microsoft Graph Security API に統合される各種セキュリティ製品とサービスにおいて特定のアラート状態を同期できます。
 
-グラフのセキュリティに統合されたソリューションの Microsoft 次のセキュリティ プロバイダーからのアラートが表示されます。
+次のプロバイダーからのアラートは、Microsoft Graph Security API を使って利用できます。 GET アラート、PATCH アラート (更新プログラムは Microsoft Graph Security API で利用できますが、プロバイダーの管理操作環境では公開されない)、サブスクライブ (webhooks 経由) のサポート状況を次の表に示します。
 
-- [Azure のセキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Azure Active Directory Id の保護](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [マイクロソフト クラウド アプリケーションのセキュリティ](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Windows Defender の脅威保護の詳細](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Azure の情報の保護](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**(プレビュー)**
-- Microsoft Intune **(プライベート プレビュー)**
-- Office 365 は **(準備中)**
-- Azure の脅威保護の詳細 **(準備中)**
-- パートナー ・ ソリューション、パロアルトのネットワーク ・ アプリケーション ・ フレームワーク
-
-> **注:** 新しいプロバイダーは、Microsoft のグラフのセキュリティ エコシステムの契約時では継続的にします。
+| セキュリティ プロバイダー | <p align="center">GET アラート</p>| <p align="center">PATCH アラート</p>| <p align="center">アラートへのサブスクライブ</p>|
+|:------------------|:---------|:-----------|:------------------|
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Office 365 <ul><li> [Default](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ja-JP/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(プレビュー)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(プレビュー)**| <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+> **注:** Microsoft Graph Security エコシステムに新しいプロバイダーが継続的に加わっています。 新しいプロバイダーにサポートを要請したり、既存のプロバイダーからのサポートを拡張したりするよう要請するには、[Microsoft Graph セキュリティ GitHub リポジトリに問題についてのファイルを登録](https://github.com/microsoftgraph/security-api-solutions/issues/new)します。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース
 
-以下は、Microsoft グラフ セキュリティ API を使用するための最も一般的な要求の一部です。
+Microsoft Graph Security API の操作で最も一般的な要求の一部を以下に取り上げます。
 
-| **ユース ケース**   | **REST リソース** | **グラフのエクスプ ローラーで試してみよう** |
+| **ユース ケース**   | **REST リソース** | **Graph エクスプローラーで試す** |
 |:---------------|:--------|:----------|
-| 警告の一覧表示 | [警告の一覧表示](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| アラートを更新します。 | [警告の更新](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| アラートを一覧表示する | [アラートの一覧表示](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| アラートを更新する | [警告の更新](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 
-購読して、Microsoft のグラフのセキュリティ エンティティの更新に関する通知を受け取るには、Graph [webhooks](/graph/webhooks)を使用できます。
+Microsoft Graph [webhook](/graph/webhooks) を使用すると、Microsoft Graph Security エンティティの更新に関する通知をサブスクライブして受信できます。
 
 ## <a name="resources"></a>リソース
 
-コードされ、これらの Microsoft グラフ セキュリティ API のサンプル。
+コードを作成し、以下の Microsoft Graph Security API サンプルに投稿できます。
 
-- [サンプルの ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python のサンプル](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) のサンプル](https://github.com/microsoftgraph/nodejs-security-sample)
+- [ASP.NET (C#) サンプル](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python サンプル](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript) サンプル](https://github.com/microsoftgraph/nodejs-security-sample)
 
-コミュニティに参加します。
+以下のコミュニティに参加できます。
 
-- [テクニカル コミュニティに参加します。](https://aka.ms/graphsecuritycommunity)
-- [StackOverflow を説明します。](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+- [技術コミュニティに参加する](https://aka.ms/graphsecuritycommunity)
+- [StackOverflow についてディスカッションする](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
 ## <a name="next-steps"></a>次のステップ
 
-Microsoft グラフ セキュリティ API は、Microsoft およびパートナーからのさまざまなセキュリティ ソリューションと連携するための新しい方法を開くことができます。 開始する次の手順に従います。
+Microsoft Graph Security API は、Microsoft およびパートナーの各種セキュリティ ソリューションを活用するための新しい手段となります。 以下の手順に従って開始しましょう。
 
-- [アラート](alert.md)にドリル ・ ダウンします。
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 [**サンプル クエリ**] は、**多くのサンプルを表示する**を選択し、セキュリティ カテゴリを**オン**に設定します。
-- エンティティの変更[をサブスクライブして、受信通知](/graph/webhooks)を実行してください。
+- [アラート](alert.md)にドリルダウンします。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 **[サンプル クエリ]** で、**[サンプルをさらに表示]** を選択してセキュリティ カテゴリを **[オン]** に設定します。
+- エンティティ変更時の[通知のサブスクライブと受信](/graph/webhooks)を試します。
 
 さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+以下の Microsoft Graph Security API サンプルに、[コードを作成して投稿します](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md)。
+
+- [ASP.NET (C#) サンプル](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python サンプル](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript) サンプル](https://github.com/microsoftgraph/nodejs-security-sample)
+- [PowerShell サンプル](https://aka.ms/graphsecuritypowershellsample)
+- [その他のサンプルまたは新しいサンプルの投稿](https://aka.ms/graphsecurityapicode)
+
+Microsoft Graph Security API に接続するその他のオプション調べます。
+
+- [Logic Apps、Flow、PowerApps 用の Microsoft Graph セキュリティ コネクタ](https://aka.ms/graphsecurityconnectors)
+- [Power BI 用の Microsoft Graph セキュリティ コネクタ](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Jupyter ノートブックのサンプル](https://aka.ms/graphsecurityjupyternotebooks)
+
+以下のコミュニティに参加できます。
+
+- [技術コミュニティに参加する](https://aka.ms/graphsecuritycommunity)
+- [StackOverflow についてディスカッションする](https://stackoverflow.com/questions/tagged/microsoft-graph-security)

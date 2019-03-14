@@ -4,12 +4,12 @@ description: Microsoft Teams は、Office 365 のチャットベースのワー�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f101560bf716fcb3455346f7d6a3e01912e5451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7e902300a52773a7a177ee590b49c1cb615f7e2f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523177"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994434"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Microsoft Graph API を使用して Microsoft Teams で作業する
 
@@ -27,8 +27,8 @@ Microsoft Teams は、Office 365 のチャットベースのワークスペー�
 |[teamsTab](../resources/teamstab.md) |[一覧表示](../api/teamstab-list.md)、[作成](../api/teamstab-add.md)、[読み取り](../api/teamstab-get.md)、[更新](../api/teamstab-update.md)、[削除](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[一覧表示](../api/teamsapp-list.md)、[公開](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[削除](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [一覧表示](../api/teamsappinstallation-list.md)、[インストール](../api/teamsappinstallation-add.md)、[アップグレード](../api/teamsappinstallation-delete.md)、[削除](../api/teamsappinstallation-delete.md) |
-| (プレビュー) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) および [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [一覧表示](/graph/api/channel-list-messages?view=graph-rest-beta)、[作成](/graph/api/channel-post-chatthreads?view=graph-rest-beta)、[読み取り](/graph/api/channel-get-message?view=graph-rest-beta) |
-| (プレビュー) [call](/graph/api/resources/call?view=graph-rest-beta) | [応答](/graph/api/call-answer?view=graph-rest-beta)、[拒否](/graph/api/call-reject?view=graph-rest-beta)、[リダイレクト](/graph/api/call-redirect?view=graph-rest-beta)、[ミュート](/graph/api/call-mute?view=graph-rest-beta)、[ミュート解除](/graph/api/call-unmute?view=graph-rest-beta)、[メタデータ更新](/graph/api/call-updatemetadata?view=graph-rest-beta)、[画面共有の役割の変更](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[参加者の一覧表示](/graph/api/call-list-participants?view=graph-rest-beta)、[参加者の招待](/graph/api/participant-invite?view=graph-rest-beta)、[すべての参加者のミュート](/graph/api/participant-muteall?view=graph-rest-beta) |
+| [chatMessage](../resources/chatmessage.md) (プレビュー)| [一覧表示](../api/channel-list-messages.md)、[送信](../api/channel-post-chatmessage.md)、[読み取り](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [call](/graph/api/resources/call?view=graph-rest-beta) (プレビュー) | [応答](/graph/api/call-answer?view=graph-rest-beta)、[拒否](/graph/api/call-reject?view=graph-rest-beta)、[リダイレクト](/graph/api/call-redirect?view=graph-rest-beta)、[ミュート](/graph/api/call-mute?view=graph-rest-beta)、[ミュート解除](/graph/api/call-unmute?view=graph-rest-beta)、[メタデータ更新](/graph/api/call-updatemetadata?view=graph-rest-beta)、[画面共有の役割の変更](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[参加者の一覧表示](/graph/api/call-list-participants?view=graph-rest-beta)、[参加者の招待](/graph/api/participant-invite?view=graph-rest-beta)、[すべての参加者のミュート](/graph/api/participant-muteall?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>チームとグループ
 
@@ -41,7 +41,7 @@ Microsoft Graph では、Microsoft Teams は [group](../resources/group.md) リ�
 
 チームとグループの API レベルでの違いを以下に示します。
 
-- 常設チャットは、Microsoft Teams でのみ使用できます。 この機能は、[channel](../resources/channel.md)、[chatThread](../resources/chatthread.md)、および [chatMessage](../resources/chatmessage.md) リソースにより階層的に表されます。
+- 常設チャットは、Microsoft Teams でのみ使用できます。 この機能は、[channel](../resources/channel.md) および [chatMessage](../resources/chatmessage.md) リソースにより階層的に表されます。
 - グループ会話は、Office 365 グループでのみ使用できます。 この機能は、[channel](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md)、および [post](../resources/post.md) リソースにより階層的に表されます。 
 - 「[参加チームの一覧表示](../api/user-list-joinedteams.md)」メソッドは Microsoft Teams のみに適用されます。
 - [通話とオンライン会議の API](./calls-api-overview.md) は Microsoft Teams のみに適用されます。
