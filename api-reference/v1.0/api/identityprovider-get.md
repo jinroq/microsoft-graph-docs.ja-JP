@@ -50,7 +50,7 @@ GET /identityProviders/{id}
 
 ## <a name="example"></a>例
 
-次の例では、特定の** identityProvider ** を取得します。
+次の例では、特定の**identityProvider** を取得します。
 
 ##### <a name="request"></a>要求
 

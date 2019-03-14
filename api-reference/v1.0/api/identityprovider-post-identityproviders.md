@@ -58,7 +58,7 @@ POST /identityProviders
 
 ## <a name="example"></a>例
 
-次の例では、**identityProvider ** を作成します。
+次の例では、**identityProvider** を作成します。
 
 ##### <a name="request"></a>要求
 

@@ -50,7 +50,7 @@ DELETE /identityProviders/{id}
 
 ## <a name="example"></a>例
 
-次の例では、** identityProvider ** を削除します。
+次の例では、**identityProvider** を削除します。
 
 ##### <a name="request"></a>要求
 

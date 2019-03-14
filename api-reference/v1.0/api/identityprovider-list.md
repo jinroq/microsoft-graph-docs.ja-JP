@@ -50,7 +50,7 @@ GET /identityProviders
 
 ## <a name="example"></a>例
 
-次の例では、すべての ** identityProvider ** を取得します。
+次の例では、すべての **identityProvider** を取得します。
 
 ##### <a name="request"></a>要求
 
