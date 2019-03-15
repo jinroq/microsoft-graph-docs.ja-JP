@@ -1,39 +1,40 @@
 ---
 title: iPv6Range リソースの種類
-description: Intune は、複数のワークフローをサポートする Microsoft グラフ API の iPv6Range リソースについて説明します。
+description: IPv6 範囲の定義。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35b0401d3557a6afc84a27a2f47d35e17a3229a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 6b54782b1851ea800b548f02b34f60da3a3236a3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396351"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571537"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-IP V6 の範囲
+IPv6 範囲の定義。
+
 
 [ipRange](../resources/intune-shared-iprange.md) からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|lowerAddress|文字列|低い番号の IP アドレス|
-|upperAddress|文字列|高い番号の IP アドレス|
+|lowerAddress|String|小さいアドレス。|
+|upperAddress|文字列型 (String)|上住所|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
@@ -44,6 +45,7 @@ IP V6 の範囲
   "upperAddress": "String"
 }
 ```
+
 
 
 

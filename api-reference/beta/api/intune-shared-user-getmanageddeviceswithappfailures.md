@@ -4,12 +4,12 @@ description: エラーが発生したアプリを含むデバイスの一覧を�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 44296ba60db476bd7c407ea4fbbc727ffca465ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d2eb6d2aee7a3cada990b0e2782c27f8e6984d54
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172213"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571152"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>getManagedDevicesWithAppFailures 関数
 
@@ -19,7 +19,7 @@ ms.locfileid: "30172213"
 
 エラーが発生したアプリを含むデバイスの一覧を取得します
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,14 +40,14 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、この関数は `200 OK` 応答コードと、応答本文で String コレクションを返します。
+成功した場合、この関数は `200 OK` 応答コードと、応答本文で文字列コレクションを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求

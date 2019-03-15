@@ -1,15 +1,15 @@
 ---
 title: ioslobappプロビジョニング構成リソースの種類
-description: このトピックでは、IOS Lob アプリプロビジョニング構成リソースが公開する、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
+description: このトピックでは、iOS Lob アプリプロビジョニング構成リソースが公開する、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ab481571cce9bd986b31d12c41705f8fb48558b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 128ef2c4b6e7bfabc98478a8249c3494701072b0
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151038"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570991"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>ioslobappプロビジョニング構成リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "30151038"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このトピックでは、IOS Lob アプリプロビジョニング構成リソースが公開する、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
+このトピックでは、iOS Lob アプリプロビジョニング構成リソースが公開する、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
@@ -27,22 +27,23 @@ ms.locfileid: "30151038"
 |[ioslobappプロビジョニング構成を作成する](../api/intune-apps-ioslobappprovisioningconfiguration-create.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|新しい[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを作成します。|
 |[ioslobappプロビジョニング構成の削除](../api/intune-apps-ioslobappprovisioningconfiguration-delete.md)|なし|[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)を削除します。|
 |[ioslobappプロビジョニング構成の更新](../api/intune-apps-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトのプロパティを更新します。|
-|[assign action](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |expirationDateTime|DateTimeOffset|オプションのプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロードファイル名 (*. mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|
+|roleScopeTagIds|String collection|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|文字列|デバイス構成について管理者が提供した説明です。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|description|String|デバイス構成について管理者が提供した説明です。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)コレクション|関連付けられているグループの割り当て。|
@@ -65,6 +66,9 @@ ms.locfileid: "30151038"
   "expirationDateTime": "String (timestamp)",
   "payloadFileName": "String",
   "payload": "binary",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",

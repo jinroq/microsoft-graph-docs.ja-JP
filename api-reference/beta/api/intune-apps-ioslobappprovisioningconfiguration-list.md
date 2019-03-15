@@ -4,12 +4,12 @@ description: ioslobappプロビジョニング構成オブジェクトのプロ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3a336c1b6f3a5b060ac221287d19987b2eab0ae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9694dae09ea265dad39626887ef73db773a5de42
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157016"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571838"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>ioslobappプロビジョニング構成を一覧表示する
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningCo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 632
 
 {
   "value": [
@@ -72,6 +72,9 @@ Content-Length: 558
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "payloadFileName": "Payload File Name value",
       "payload": "cGF5bG9hZA==",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

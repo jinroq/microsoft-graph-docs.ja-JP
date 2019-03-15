@@ -4,12 +4,12 @@ description: アプリの種類の基本クラス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0487fa24ecd2d27817349b68063cf606a2401944
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4cccd1b5e7ec7ca16aeb76b87fc31d90e92e7dcd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170477"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572083"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>windowskioskdesktopapp リソースの種類
 
@@ -27,7 +27,8 @@ ms.locfileid: "30170477"
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承された開始レイアウトのアプリタイルサイズ。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
 |name|String|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたアプリのフレンドリ名を表します。|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されるアプリの種類。 使用可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されるアプリの種類。 可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
+|autoLaunch|Boolean|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたマルチアプリキオスクモードでアプリを自動起動することを許可します。|
 |path|String|デスクトップアプリのパスの定義|
 |desktopapplicationid|String|アプリの desktopapplicationid を定義する|
 |desktopapplicationlinkpath|String|アプリの desktopapplicationlinkpath を定義する|
@@ -48,6 +49,7 @@ ms.locfileid: "30170477"
   "startLayoutTileSize": "String",
   "name": "String",
   "appType": "String",
+  "autoLaunch": true,
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"

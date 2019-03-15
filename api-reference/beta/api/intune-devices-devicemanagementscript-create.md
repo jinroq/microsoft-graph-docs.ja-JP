@@ -4,12 +4,12 @@ description: 新しい devicemanagementscript オブジェクトを作成しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40472e27f1ba900121c5c7927ec5d15f27582c99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f7a27fef1e3487bf39a0140bad51c7ecae7e21a5
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173620"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570761"
 ---
 # <a name="create-devicemanagementscript"></a>devicemanagementscript の作成
 
@@ -40,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,17 +50,17 @@ POST /deviceManagement/deviceManagementScripts
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイス管理スクリプトの一意識別子。|
+|id|String|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
-|説明|文字列|デバイス管理スクリプトの省略可能な説明です。|
+|description|String|デバイス管理スクリプトの省略可能な説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
-|scriptcontent|Binary|スクリプトの内容。|
+|scriptcontent|バイナリ|スクリプトの内容。|
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|デバイス管理スクリプトが最後に変更された日付と時刻。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理スクリプトを実行する実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String コレクション|この powershellscript インスタンスの範囲タグ id のリスト。|
+|roleScopeTagIds|String collection|この powershellscript インスタンスの範囲タグ id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 

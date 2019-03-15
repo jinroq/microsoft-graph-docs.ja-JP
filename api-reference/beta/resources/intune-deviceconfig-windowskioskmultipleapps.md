@@ -4,12 +4,12 @@ description: キオスク構成でのマルチモードアプリの構成を識�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2d2ff38e3b07920f474d9e3894bbd1f8855e277
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c657300cf3ca00482b85b7983f28b4df3135c97d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162021"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570844"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowskiosk多重アプリリソースの種類
 
@@ -27,6 +27,7 @@ ms.locfileid: "30162021"
 |:---|:---|:---|
 |apps|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)コレクション|[スタート] メニューから起動できる Windows ストアアプリは次のとおりです。 このコレクションには、最大128個の要素を含めることができます。|
 |showtaskbar バー|Boolean|この設定では、管理者がタスクバーを表示するかどうかを指定できます。|
+|allowAccessToDownloadsFolder|Boolean|この設定では、エクスプローラーの [ダウンロード] フォルダーにアクセスできます。|
 |disallowDesktopApps|Boolean|この設定は、デスクトップアプリが許可されていることを示します。 既定値は true です。|
 |startMenuLayoutXml|Binary|管理者が既定の開始レイアウトを上書きし、ユーザーがそれを変更できないようにします。レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML はバイナリ形式である必要があります。|
 
@@ -49,12 +50,14 @@ ms.locfileid: "30162021"
       "startLayoutTileSize": "String",
       "name": "String",
       "appType": "String",
+      "autoLaunch": true,
       "appUserModelId": "String",
       "appId": "String",
       "containedAppId": "String"
     }
   ],
   "showTaskBar": true,
+  "allowAccessToDownloadsFolder": true,
   "disallowDesktopApps": true,
   "startMenuLayoutXml": "binary"
 }

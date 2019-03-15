@@ -4,12 +4,12 @@ description: officeSuiteApp オブジェクトのプロパティとリレーシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4d0d7172c29c9385b0772f551d4c817bac8da4b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5ba39d5f0f6139104380b8e0cc7c9b8145b6fd7d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150100"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571530"
 ---
 # <a name="list-officesuiteapps"></a>リスト officeSuiteApps
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1977
+Content-Length: 2001
 
 {
   "value": [
@@ -108,6 +108,7 @@ Content-Length: 1977
         "powerPoint": true,
         "publisher": true,
         "sharePointDesigner": true,
+        "teams": true,
         "visio": true,
         "word": true
       },

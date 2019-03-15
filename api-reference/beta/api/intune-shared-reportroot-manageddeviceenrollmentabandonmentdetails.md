@@ -4,22 +4,22 @@ description: 登録 abandonment 詳細レポートのメタデータ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5721e0cb5e466ba684fa1e73572a1ecf87a398b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 67cc5e74b70849df502ea5f00c39e37ed9c55c38
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141063"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571278"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 関数
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 登録 abandonment 詳細レポートのメタデータ
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -51,7 +51,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |:---|:---|:---|
 |skip|Int32|まだ文書化されていません|
 |top|Int32|まだ文書化されていません|
-|filter|String|まだ文書化されていません|
+|フィルター|String|まだ文書化されていません|
 |skipToken|String|まだ文書化されていません|
 
 

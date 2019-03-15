@@ -4,12 +4,12 @@ description: androidmanagedstoreapp オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30192b1329d643f66184aea4dfdd0e603fe5d65a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4396aa3167be86158bf319382a9e5a016640446
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170771"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571880"
 ---
 # <a name="list-androidmanagedstoreapps"></a>androidmanagedstoreapps のリスト
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1202
+Content-Length: 1236
 
 {
   "value": [
@@ -95,7 +95,8 @@ Content-Length: 1202
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
-      "appStoreUrl": "https://example.com/appStoreUrl/"
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "supportsOemConfig": true
     }
   ]
 }

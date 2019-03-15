@@ -4,12 +4,12 @@ description: このトピックでは、sharedPCConfiguration リソースによ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69bae063082a49bb46b6bdc0e6e3364cbd2a83e5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a3e24f0325c25804709004cac7c1e421c709cb88
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152634"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571047"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration リソース タイプ
 
@@ -34,33 +34,34 @@ ms.locfileid: "30152634"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|共有の PC 上でアカウントを管理する方法を指定します。 disableAccountManager が false の場合にのみ適用されます。|
-|allowedAccounts|[sharedpcallowedaccounttype](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 可能な値は `notConfigured`、`guest`、`domain` です。|
-|localStorage|[購入](../resources/intune-shared-enablement.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
-|allowLocalStorage|ブール値|共有の PC でローカル ストレージを許可するかどうかを指定します。|
-|setaccountmanager|[購入](../resources/intune-shared-enablement.md)|共有 PC モードのアカウント マネージャーを無効にします。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
-|disableAccountManager|ブール値|共有 PC モードのアカウント マネージャーを無効にします。|
-|setEduPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 教育環境ポリシーを有効/無効にするか、構成しないかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|allowedAccounts|[sharedpcallowedaccounttype](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 使用可能な値は、`notConfigured`、`guest`、`domain` です。|
+|localStorage|[購入](../resources/intune-shared-enablement.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|allowLocalStorage|Boolean|共有の PC でローカル ストレージを許可するかどうかを指定します。|
+|setaccountmanager|[購入](../resources/intune-shared-enablement.md)|共有 PC モードのアカウント マネージャーを無効にします。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|disableAccountManager|Boolean|共有 PC モードのアカウント マネージャーを無効にします。|
+|setEduPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 教育環境ポリシーを有効/無効にするか、構成しないかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disableEduPolicies|Boolean|既定の共有 PC 教育環境ポリシーを無効にするかどうかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。|
-|setpowerpolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 電源ポリシーを有効または無効にするかどうかを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
-|disablePowerPolicies|ブール値|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
-|signInOnResume|[購入](../resources/intune-shared-enablement.md)|デバイスがスリープモードから復帰したときに毎回サインインする必要があることを指定します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|setpowerpolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 電源ポリシーを有効または無効にするかどうかを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|disablePowerPolicies|Boolean|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
+|signInOnResume|[購入](../resources/intune-shared-enablement.md)|デバイスがスリープモードから復帰したときに毎回サインインする必要があることを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disableSignInOnResume|Boolean|デバイスがスリープ モードから再開するたびにサインインを求める設定を無効にします。|
-|enabled|Boolean|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
+|enabled|ブール型 (Boolean)|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
 |idleTimeBeforeSleepInSeconds|Int32|PC がスリープ状態になるまでにデバイスがアイドル状態を続ける時間を秒単位で指定します。 この値を 0 に設定すると、スリープ タイムアウトは発生しなくなります。|
 |kioskAppDisplayName|String|SetKioskAppUserModelId で指定されたアプリを起動するサインイン画面に表示されるアカウントの表示テキストを指定します。 KioskAppUserModelId が設定されている場合にのみ適用されます。|
 |kioskAppUserModelId|String|割り当てられたアクセスで使用するアプリのアプリケーション ユーザー モデル ID を指定します。|
 |maintenanceStartTime|TimeOfDay|毎日のメンテナンス時間の開始時刻を指定します。|
+|fastfirstsignin|[購入](../resources/intune-shared-enablement.md)|管理者以外の新しい Azure AD アカウントを事前に構成された候補ローカルアカウントに自動的に接続するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -114,7 +115,8 @@ ms.locfileid: "30152634"
   "idleTimeBeforeSleepInSeconds": 1024,
   "kioskAppDisplayName": "String",
   "kioskAppUserModelId": "String",
-  "maintenanceStartTime": "String (time of day)"
+  "maintenanceStartTime": "String (time of day)",
+  "fastFirstSignIn": "String"
 }
 ```
 

@@ -4,16 +4,16 @@ description: deviceCategory オブジェクトのプロパティとリレーシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b62523d4a17571c0ff6931b8ee462f21b4a1daa4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c94c845ed067fe91766b7423d1fdb53dd58a8aeb
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174539"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571908"
 ---
 # <a name="get-devicecategory"></a>deviceCategory の取得
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
@@ -21,7 +21,7 @@ ms.locfileid: "30174539"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -61,7 +61,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCa
 
 ### <a name="response"></a>応答
 
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
+以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
 
 ``` http
 HTTP/1.1 200 OK

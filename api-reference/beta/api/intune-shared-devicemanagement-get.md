@@ -1,17 +1,17 @@
 ---
-title: deviceManagement の取得
+title: Get deviceManagement
 description: deviceManagement オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a74718ee1f05b27c58b3515c29a0190428107314
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e4a07c2645686722c59e45f039aacb9dc3627a5d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156498"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570620"
 ---
-# <a name="get-devicemanagement"></a>deviceManagement の取得
+# <a name="get-devicemanagement"></a>Get deviceManagement
 
 > **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
@@ -21,7 +21,7 @@ ms.locfileid: "30156498"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 | アクセス&nbsp;許可&nbsp;の種類&nbsp;(ワークフロー別) | アクセス許可 (特権の大きいものから小さいものへ) |
 |:---|:---|
@@ -32,12 +32,12 @@ ms.locfileid: "30156498"
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
-| &nbsp;&nbsp; **リモートアクセス** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **リモート アクセス** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **リモートアシスタンス** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **通信経費管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **トラブルシューティング** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
@@ -63,7 +63,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文

@@ -4,12 +4,12 @@ description: windowsAutopilotDeviceIdentity オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8d1afaa0b810d2559daa358c9d7af0895e5ac2d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e6aaba99e2526b139fd06fa047ec36828ef24a6
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159522"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570788"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>windowsAutopilotDeviceIdentity の更新
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |deploymentprofileの状態|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows 自動操縦デバイスのプロファイル割り当て状態。 可能な値は、`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed` です。|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当て Windows 自動操縦デバイスの詳細な状態。 使用可能な値は、`none`、`hardwareRequirementsNotMet` です。|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当て Windows 自動操縦デバイスの詳細な状態。 可能な値は、`none`、`hardwareRequirementsNotMet` です。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|プロファイル Windows 自動操縦デバイスの時間を設定します。|
 |orderIdentifier|String|Windows 自動操縦デバイスの注文識別子です。|
 |purchaseOrderIdentifier|String|Windows 自動操縦デバイスの注文 id。|
@@ -61,10 +61,15 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
 |manufacturer|String|Windows 自動操縦デバイスの Oem メーカー。|
 |model|String|Windows 自動操縦デバイスのモデル名です。|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自動操縦デバイスの Intune 登録状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自動操縦デバイスの Intune 登録状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
 |lastContactedDateTime|DateTimeOffset|Intune 前回の接続 Windows 自動操縦デバイスの日時。|
 |addressableusername|String|アドレス指定可能なユーザー名。|
-|userPrincipalName|文字列|ユーザープリンシパル名。|
+|userPrincipalName|String|ユーザープリンシパル名。|
+|resourceName|String|リソース名。|
+|skuNumber|String|SKU 番号|
+|systemfamily|String|システムファミリ|
+|azureActiveDirectoryDeviceId|String|AAD デバイス ID|
+|manageddeviceid|String|管理対象デバイス ID|
 
 
 
@@ -78,7 +83,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 755
+Content-length: 1001
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -94,7 +99,12 @@ Content-length: 755
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -103,7 +113,7 @@ Content-length: 755
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 804
+Content-Length: 1050
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -120,7 +130,12 @@ Content-Length: 804
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 

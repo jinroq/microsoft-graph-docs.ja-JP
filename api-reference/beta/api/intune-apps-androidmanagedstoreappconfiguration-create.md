@@ -4,12 +4,12 @@ description: 新しい androidmanagedstoreappconfiguration オブジェクトを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f83097929793df891a17ceb1de5c08892fa32c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e97ef467a0e615d8da1995fce20fa4a2c00e986
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169462"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571957"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>androidmanagedstoreappconfiguration の作成
 
@@ -40,7 +40,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,17 +50,18 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|id|文字列型 (String)|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |roleScopeTagIds|String collection|このアプリ構成エンティティのスコープタグのリスト。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|description|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |displayName|String|デバイス構成について管理者が指定した名前。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |version|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |packageId|String|Android エンタープライズアプリ構成パッケージ id。|
 |payloadJson|String|Android エンタープライズアプリ構成 JSON ペイロード。|
 |permissionactions|[androidpermissionaction](../resources/intune-apps-androidpermissionaction.md)コレクション|Android アプリのアクセス許可と、それに対応するアクセス許可アクションのリスト。|
+|appsupportsoemconfig|Boolean|この AppConfig が oemconfig ポリシーであるかどうか。|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 559
+Content-length: 592
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -95,7 +96,8 @@ Content-length: 559
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 
@@ -104,7 +106,7 @@ Content-length: 559
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 764
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -128,7 +130,8 @@ Content-Length: 731
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

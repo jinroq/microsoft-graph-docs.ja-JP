@@ -4,12 +4,12 @@ description: depMacOSEnrollmentProfile オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e922e192cfeeb172805d252f1e690c79fdbaa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 06b366394ce089836fa1047733a9406b021c8998
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166914"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571250"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>depMacOSEnrollmentProfile を取得する
 
@@ -43,7 +43,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1187
+Content-Length: 1266
 
 {
   "value": {
@@ -97,7 +97,9 @@ Content-Length: 1187
     "privacyPaneDisabled": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
-    "iCloudDiagnosticsDisabled": true
+    "iCloudDiagnosticsDisabled": true,
+    "iCloudStorageDisabled": true,
+    "chooseYourLockScreenDisabled": true
   }
 }
 ```

@@ -4,12 +4,12 @@ description: Win32 アプリを検出するためのファイルまたはフォ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8145e6196b6537eec4142d4412a11234913df7c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afa4bd087d5b703da41f7fa44b74b3e9e16e80a3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157513"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570705"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection リソースの種類
 
@@ -28,8 +28,8 @@ Win32 アプリを検出するためのファイルまたはフォルダーの�
 |path|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーのパス|
 |fileorfoldername|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前|
 |check32BitOn64System|Boolean|このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 使用可能な値: `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`。|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|file または dセラの検出の演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
+|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 可能な値は `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB` です。|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|ファイルまたはフォルダーの検出のための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|ファイルまたはフォルダーの検出値|
 
 ## <a name="relationships"></a>リレーションシップ

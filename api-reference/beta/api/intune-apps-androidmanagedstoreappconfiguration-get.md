@@ -4,12 +4,12 @@ description: androidmanagedstoreappconfiguration オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3094e9e446238e4a229fee32680e5caa4d2998b0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b884077e602d02b6302c8ba36a7339e82e761d53
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173137"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571600"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>androidmanagedstoreappconfiguration の取得
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 794
+Content-Length: 829
 
 {
   "value": {
@@ -90,7 +90,8 @@ Content-Length: 794
         "permission": "Permission value",
         "action": "autoGrant"
       }
-    ]
+    ],
+    "appSupportsOemConfig": true
   }
 }
 ```

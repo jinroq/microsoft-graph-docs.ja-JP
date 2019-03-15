@@ -4,12 +4,12 @@ description: Android エンタープライズモバイルアプリ構成のプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55f864e79e621fb5cdabfce53c5421e7d21e60cb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e31c949c74a392f7593041f6168f36c9b717550d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155308"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572146"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidmanagedstoreappconfiguration リソースの種類
 
@@ -34,19 +34,20 @@ Android エンタープライズモバイルアプリ構成のプロパティ、
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|id|文字列型 (String)|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |roleScopeTagIds|String collection|このアプリ構成エンティティのスコープタグのリスト。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|description|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |displayName|String|デバイス構成について管理者が指定した名前。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |version|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |packageId|String|Android エンタープライズアプリ構成パッケージ id。|
 |payloadJson|String|Android エンタープライズアプリ構成 JSON ペイロード。|
 |permissionactions|[androidpermissionaction](../resources/intune-apps-androidpermissionaction.md)コレクション|Android アプリのアクセス許可と、それに対応するアクセス許可アクションのリスト。|
+|appsupportsoemconfig|Boolean|この AppConfig が oemconfig ポリシーであるかどうか。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) コレクション|アプリ構成のグループ割り当てのリストです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
@@ -86,7 +87,8 @@ Android エンタープライズモバイルアプリ構成のプロパティ、
       "permission": "String",
       "action": "String"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

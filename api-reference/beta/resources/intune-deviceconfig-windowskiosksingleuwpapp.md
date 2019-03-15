@@ -4,12 +4,12 @@ description: キオスクの構成の UWP アプリ情報を識別するため�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 804dd2f34416eecb956b322a0f178daaf39b2418
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d0a3b56c7bc9856b98708b63c247479e6ccf9c9b
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142043"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571159"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>windowsKioskSingleUWPApp リソースの種類
 
@@ -45,6 +45,7 @@ ms.locfileid: "30142043"
     "startLayoutTileSize": "String",
     "name": "String",
     "appType": "String",
+    "autoLaunch": true,
     "appUserModelId": "String",
     "appId": "String",
     "containedAppId": "String"

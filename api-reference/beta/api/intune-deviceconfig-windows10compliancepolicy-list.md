@@ -4,12 +4,12 @@ description: windows10CompliancePolicy オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b00291d66849c579c7e7760a7c541477c934c617
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bd129844c40cd6a62162b34d38a91c31fc80998
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158339"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570732"
 ---
 # <a name="list-windows10compliancepolicies"></a>windows10CompliancePolicies のリスト
 
@@ -40,7 +40,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2059
+Content-Length: 2087
 
 {
   "value": [
@@ -113,7 +113,8 @@ Content-Length: 2059
       ],
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
-      "configurationManagerComplianceRequired": true
+      "configurationManagerComplianceRequired": true,
+      "tpmRequired": true
     }
   ]
 }

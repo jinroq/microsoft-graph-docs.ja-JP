@@ -4,12 +4,12 @@ description: user オブジェクトのプロパティとリレーションシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 27fed236cf7c4e6ae46b107437d04c31fb3b0e4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 82d2505bb2bc776af6421b64e79bfbf8f7d46b72
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152781"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570963"
 ---
 # <a name="get-user"></a>ユーザーを取得する
 
@@ -21,7 +21,7 @@ ms.locfileid: "30152781"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。  特定のアクセス許可は、コンテキストによって異なります。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -51,7 +51,7 @@ GET /users/{usersId}
 
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文

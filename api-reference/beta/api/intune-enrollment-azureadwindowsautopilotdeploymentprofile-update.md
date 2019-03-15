@@ -4,12 +4,12 @@ description: azureADWindowsAutopilotDeploymentProfile オブジェクトのプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1c7d8ca7fec97d687bc359bd9137ef368ce585f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 019525727a3c9e7365d5b934831ceac795acfb47
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144276"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570907"
 ---
 # <a name="update-azureadwindowsautopilotdeploymentprofile"></a>azureADWindowsAutopilotDeploymentProfile の更新
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,17 +52,18 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルキー|
+|id|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルキー|
 |displayName|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの名前|
-|説明|文字列|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの説明|
+|description|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの説明|
 |language|String|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承したデバイスで構成されている言語|
 |createdDateTime|DateTimeOffset|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの作成時刻|
 |lastModifiedDateTime|DateTimeOffset|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルの最終更新日時|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承された、すぐに使える状態設定|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承された登録の状態画面の設定|
-|extractHardwareHash|ブール値|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルのハードウェアハッシュ抽出|
+|extractHardwareHash|Boolean|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されたプロファイルのハードウェアハッシュ抽出|
 |deviceNameTemplate|String|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
-|enableホワイトグローブ|ブール値|プロファイルの自動操縦白の手袋を有効にします。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|このプロファイルを適用できる自動操縦デバイスの種類。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されます。 可能な値は、`windowsPc`、`surfaceHub2` です。|
+|enableホワイトグローブ|Boolean|プロファイルの自動操縦白の手袋を有効にします。 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
 
 
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}
 Content-type: application/json
-Content-length: 1065
+Content-length: 1097
 
 {
   "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
@@ -104,6 +105,7 @@ Content-length: 1065
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "Device Name Template value",
+  "deviceType": "surfaceHub2",
   "enableWhiteGlove": true
 }
 ```
@@ -113,7 +115,7 @@ Content-length: 1065
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1237
+Content-Length: 1269
 
 {
   "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
@@ -144,6 +146,7 @@ Content-Length: 1237
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "Device Name Template value",
+  "deviceType": "surfaceHub2",
   "enableWhiteGlove": true
 }
 ```

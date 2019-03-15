@@ -4,12 +4,12 @@ description: deviceManagement オブジェクトのプロパティを更新し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a71212652d789b08a8cb496b6b98c18b12d3e9c7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141217"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571054"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
@@ -21,7 +21,7 @@ ms.locfileid: "30141217"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 アクセス許可は、ワークフローによって異なることに注意してください。
 
@@ -34,12 +34,12 @@ ms.locfileid: "30141217"
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **役割ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **リモートアクセス** | DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **役割ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **リモート アクセス** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **リモートアシスタンス** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **通信経費管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
@@ -60,7 +60,7 @@ PATCH /deviceManagement
 
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -74,7 +74,7 @@ PATCH /deviceManagement
 |id|String|デバイスの一意識別子。|
 |**デバイス構成**|
 |int未指定 eaccountid|GUID|指定したテナントの Intune アカウント ID|
-|legacyPcManangementEnabled|ブール値|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティは読み取りのみ可能です。|
+|legacyPcManangementEnabled|Boolean|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。|
 |maximumdeptokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
@@ -83,7 +83,7 @@ PATCH /deviceManagement
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|
 |subscriptionState|[devicemanagementsubscriptionstate](../resources/intune-devices-devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
-|講読|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 使用可能な値: `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
+|講読|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 可能な値は `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB` です。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows デバイスのマルウェアの概要。|
 |**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
@@ -132,7 +132,7 @@ Content-length: 751
 
 以下は、応答の例です。 
 
-注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 返されるプロパティは、ワークフローおよびコンテキストによって異なります。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 返されるプロパティは、ワークフローおよびコンテキストによって異なります。
 
 ``` http
 HTTP/1.1 200 OK

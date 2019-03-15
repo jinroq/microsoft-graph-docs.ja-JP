@@ -4,12 +4,12 @@ description: defaultManagedAppProtection オブジェクトのプロパティと
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4668da99102e14706a1651a0fe70f1ae33f4d6d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0018977ec7ba74a8ae4a89c5682af9c37edc4957
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157555"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570676"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3574
+Content-Length: 3902
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 3574
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+    "allowedOutboundClipboardSharingExceptionLength": 14,
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -151,7 +152,11 @@ Content-Length: 3574
     "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
-    "protectInboundDataFromUnknownSources": true
+    "protectInboundDataFromUnknownSources": true,
+    "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+    "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+    "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
   }
 }
 ```

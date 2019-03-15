@@ -4,12 +4,12 @@ description: 新しい windowskioskconfiguration オブジェクトを作成し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd32b23626c027cfc4a9cdac60b5a5a4a6c37973
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 237bf64f2ccb90304bb03f0e7ab9b7b5ed9197c0
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160747"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572153"
 ---
 # <a name="create-windowskioskconfiguration"></a>windowskioskconfiguration の作成
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -51,24 +51,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |kioskProfiles|[windowskioskprofile](../resources/intune-deviceconfig-windowskioskprofile.md)コレクション|このポリシー設定を使用すると、キオスクの構成のキオスクプロファイルの一覧を定義できます。 このコレクションには、最大3つの要素を含めることができます。|
 |kioskBrowserDefaultUrl|String|ブラウザーが起動時に移動する既定の URL を指定します。|
-|kioskBrowserEnableHomeButton|ブール値|キオスクブラウザーの [ホーム] ボタンを有効にします。 既定では、[ホーム] ボタンは無効になっています。|
-|kioskBrowserEnableNavigationButtons|ブール値|キオスクブラウザーのナビゲーションボタン (前方/後方) を有効にします。 既定では、ナビゲーションボタンは無効になっています。|
-|kioskBrowserEnableEndSessionButton|ブール値|キオスクブラウザーの [セッションの終了] ボタンを有効にします。 既定では、[セッションの終了] ボタンは無効になっています。|
+|kioskBrowserEnableHomeButton|Boolean|キオスクブラウザーの [ホーム] ボタンを有効にします。 既定では、[ホーム] ボタンは無効になっています。|
+|kioskBrowserEnableNavigationButtons|Boolean|キオスクブラウザーのナビゲーションボタン (前方/後方) を有効にします。 既定では、ナビゲーションボタンは無効になっています。|
+|kioskBrowserEnableEndSessionButton|Boolean|キオスクブラウザーの [セッションの終了] ボタンを有効にします。 既定では、[セッションの終了] ボタンは無効になっています。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|キオスクブラウザーが新しい状態で再起動するまで、セッションがアイドル状態になっている時間 (分) を指定します。  有効な値は1-1440 です。 有効な値は 1 ~ 1440|
 |kioskBrowserBlockedURLs|String collection|キオスクブラウザーが移動しない url を指定する|
 |kioskBrowserBlockedUrlExceptions|String collection|キオスクブラウザーでの移動が許可されている url を指定する|
-|edgeKioskEnablePublicBrowsing|ブール値|Microsoft Edge ブラウザーのパブリックブラウズキオスクモードを有効にします。 既定値は false です。|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|前回のユーザーアクティビティから、Microsoft Edge キオスクがリセットされるまでの時間を分単位で指定します。  有効な値は0-1440 です。 既定値は 5 です。 0はリセットしないことを示します。 有効な値は 0 ~ 1440|
+|edgeKioskEnablePublicBrowsing|Boolean|Microsoft Edge ブラウザーのパブリックブラウズキオスクモードを有効にします。 既定値は false です。|
 
 
 
@@ -82,7 +81,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1719
+Content-length: 1753
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -106,12 +105,14 @@ Content-length: 1719
             "startLayoutTileSize": "small",
             "name": "Name value",
             "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -133,8 +134,7 @@ Content-length: 1719
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true,
-  "edgeKioskResetAfterIdleTimeInMinutes": 4
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 
@@ -143,7 +143,7 @@ Content-length: 1719
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1891
+Content-Length: 1925
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -170,12 +170,14 @@ Content-Length: 1891
             "startLayoutTileSize": "small",
             "name": "Name value",
             "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -197,8 +199,7 @@ Content-Length: 1891
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true,
-  "edgeKioskResetAfterIdleTimeInMinutes": 4
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 

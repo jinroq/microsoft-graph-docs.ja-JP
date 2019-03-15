@@ -4,12 +4,12 @@ description: azureADWindowsAutopilotDeploymentProfile オブジェクトのプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0fcdd0b9558fc0c7c225c85514ab9854b8b93c7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ff7614253e98abc88c22307b8ea8e105f3c73c4
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156841"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570795"
 ---
 # <a name="get-azureadwindowsautopilotdeploymentprofile"></a>azureADWindowsAutopilotDeploymentProfile を取得する
 
@@ -45,7 +45,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1314
+Content-Length: 1348
 
 {
   "value": {
@@ -99,6 +99,7 @@ Content-Length: 1314
     },
     "extractHardwareHash": true,
     "deviceNameTemplate": "Device Name Template value",
+    "deviceType": "surfaceHub2",
     "enableWhiteGlove": true
   }
 }
