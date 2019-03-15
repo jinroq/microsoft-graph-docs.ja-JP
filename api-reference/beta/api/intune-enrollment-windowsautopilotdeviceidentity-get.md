@@ -4,31 +4,31 @@ description: windowsAutopilotDeviceIdentity オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529a458e14acf6e5187ec47b039afde7de8a6254
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 44e13cbabf00aee00246bc3a3819888239f6bae0
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151577"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571845"
 ---
-# <a name="get-windowsautopilotdeviceidentity"></a><span data-ttu-id="5c496-103">windowsAutopilotDeviceIdentity を取得する</span><span class="sxs-lookup"><span data-stu-id="5c496-103">Get windowsAutopilotDeviceIdentity</span></span>
+# <a name="get-windowsautopilotdeviceidentity"></a><span data-ttu-id="1f308-103">windowsAutopilotDeviceIdentity を取得する</span><span class="sxs-lookup"><span data-stu-id="1f308-103">Get windowsAutopilotDeviceIdentity</span></span>
 
-> <span data-ttu-id="5c496-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c496-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1f308-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f308-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5c496-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c496-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1f308-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1f308-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5c496-106">[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="5c496-106">Read properties and relationships of the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.</span></span>
+<span data-ttu-id="1f308-106">[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="1f308-106">Read properties and relationships of the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5c496-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="5c496-107">Prerequisites</span></span>
-<span data-ttu-id="5c496-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c496-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1f308-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="1f308-107">Prerequisites</span></span>
+<span data-ttu-id="1f308-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f308-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="5c496-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5c496-110">Permission type</span></span>|<span data-ttu-id="5c496-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="5c496-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1f308-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1f308-110">Permission type</span></span>|<span data-ttu-id="1f308-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1f308-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c496-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5c496-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5c496-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="5c496-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="5c496-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5c496-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5c496-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c496-115">Not supported.</span></span>|
-|<span data-ttu-id="5c496-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5c496-116">Application</span></span>|<span data-ttu-id="5c496-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c496-117">Not supported.</span></span>|
+|<span data-ttu-id="1f308-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1f308-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1f308-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f308-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="1f308-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1f308-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1f308-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f308-115">Not supported.</span></span>|
+|<span data-ttu-id="1f308-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1f308-116">Application</span></span>|<span data-ttu-id="1f308-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f308-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5c496-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5c496-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1f308-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1f308-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5c496-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5c496-119">Optional query parameters</span></span>
-<span data-ttu-id="5c496-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5c496-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1f308-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1f308-119">Optional query parameters</span></span>
+<span data-ttu-id="1f308-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1f308-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5c496-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5c496-121">Request headers</span></span>
-|<span data-ttu-id="5c496-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5c496-122">Header</span></span>|<span data-ttu-id="5c496-123">値</span><span class="sxs-lookup"><span data-stu-id="5c496-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1f308-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1f308-121">Request headers</span></span>
+|<span data-ttu-id="1f308-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1f308-122">Header</span></span>|<span data-ttu-id="1f308-123">値</span><span class="sxs-lookup"><span data-stu-id="1f308-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c496-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c496-124">Authorization</span></span>|<span data-ttu-id="5c496-125">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="5c496-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5c496-126">承諾</span><span class="sxs-lookup"><span data-stu-id="5c496-126">Accept</span></span>|<span data-ttu-id="5c496-127">application/json</span><span class="sxs-lookup"><span data-stu-id="5c496-127">application/json</span></span>|
+|<span data-ttu-id="1f308-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f308-124">Authorization</span></span>|<span data-ttu-id="1f308-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="1f308-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1f308-126">承諾</span><span class="sxs-lookup"><span data-stu-id="1f308-126">Accept</span></span>|<span data-ttu-id="1f308-127">application/json</span><span class="sxs-lookup"><span data-stu-id="1f308-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5c496-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="5c496-128">Request body</span></span>
-<span data-ttu-id="5c496-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5c496-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1f308-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="1f308-128">Request body</span></span>
+<span data-ttu-id="1f308-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1f308-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5c496-130">応答</span><span class="sxs-lookup"><span data-stu-id="5c496-130">Response</span></span>
-<span data-ttu-id="5c496-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5c496-131">If successful, this method returns a `200 OK` response code and [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1f308-130">応答</span><span class="sxs-lookup"><span data-stu-id="1f308-130">Response</span></span>
+<span data-ttu-id="1f308-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1f308-131">If successful, this method returns a `200 OK` response code and [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c496-132">例</span><span class="sxs-lookup"><span data-stu-id="5c496-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1f308-132">例</span><span class="sxs-lookup"><span data-stu-id="1f308-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5c496-133">要求</span><span class="sxs-lookup"><span data-stu-id="5c496-133">Request</span></span>
-<span data-ttu-id="5c496-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5c496-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1f308-133">要求</span><span class="sxs-lookup"><span data-stu-id="1f308-133">Request</span></span>
+<span data-ttu-id="1f308-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1f308-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}
 ```
 
-### <a name="response"></a><span data-ttu-id="5c496-135">応答</span><span class="sxs-lookup"><span data-stu-id="5c496-135">Response</span></span>
-<span data-ttu-id="5c496-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5c496-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1f308-135">応答</span><span class="sxs-lookup"><span data-stu-id="1f308-135">Response</span></span>
+<span data-ttu-id="1f308-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1f308-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 1109
 
 {
   "value": {
@@ -84,7 +84,12 @@ Content-Length: 853
     "enrollmentState": "enrolled",
     "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
     "addressableUserName": "Addressable User Name value",
-    "userPrincipalName": "User Principal Name value"
+    "userPrincipalName": "User Principal Name value",
+    "resourceName": "Resource Name value",
+    "skuNumber": "Sku Number value",
+    "systemFamily": "System Family value",
+    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```
