@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.openlocfilehash: f22796c779e93217cb28da29c333b4ab27e4d5c2
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212397"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458709"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -16,21 +16,37 @@ ms.locfileid: "30212397"
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
-## <a name="february-2019"></a>2019 年 2 月
+## <a name="march-2019"></a>2019 年 3 月
 
-### <a name="onenote"></a>OneNote
+### <a name="directory-apis"></a>Directory API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加        | ベータ版および v1.0 | [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) メソッドを追加しました。 |
+| 追加 | v1.0 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-1.0) リソースに追加。|
+| 追加 | ベータ版および v1.0 | 追加の **complianceExpirationDateTime**、**profileType** と **systemLabels** のプロパティを[デバイス](/graph/api/resources/device?view=graph-rest-1.0)リソースに追加。|
+| 追加 | ベータ版および v1.0 | **isResourceAccount** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースに追加。|
+
+## <a name="february-2019"></a>2019 年 2 月
+
+### <a name="dynamics-365-business-central-api"></a>Dynamics 365 Business Central API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版          | Dynamics 365 Business Central の財務 API を追加しました。 詳細については、[財務 API のリファレンス](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0)を参照してください。|
+
+
+## <a name="february-2019"></a>2019 年 2 月
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|追加 |ベータ版および v1.0| **createdDateTime** プロパティを [organization](/graph/api/resources/organization?view=graph-rest-v1.0) に追加します。|
-|追加 | v1.0 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) を追加しました。|
-|変更 |ベータ版および v1.0| 書き込み可能になるように、[user](/graph/api/resources/user?view=graph-rest-v1.0) リソースの **companyName** プロパティを更新しました。|
+| 追加 | v1.0 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-1.0) を追加します。 |
+| 追加 | ベータ版および v1.0 | **createdDateTime** プロパティを [organization](/graph/api/resources/organization?view=graph-rest-1.0) に追加します。 |
+| 変更 | ベータ版および v1.0 | 書き込み可能になるように、[user](/graph/api/resources/user?view=graph-rest-1.0) リソースの **companyName** プロパティを更新しました。 |
+| 変更 | ベータ版 | [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) の種類には以前は派生型で使用可能だったものの、現在はサポートされていないプロパティが含まれています。 |
+| 削除 | ベータ版 | 次の派生型はすでにサポートされておらず、削除されました:**targetResourceDevice**、**targetResourceDirectory**、**targetResourceGroup**、**targetResourcePolicy**、**targetResourceRole**、**targetResourceServicePrincipal**、**targetResourceUser**、**targetResourceOther**。 |
+| 追加 |ベータ版 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-beta) リソースに追加してください。|
 
 ### <a name="education-apis"></a>教育機関 API
 
@@ -66,10 +82,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版および v1.0| **internalId** プロパティを[チーム](/graph/api/resources/team?view=graph-rest-v1.0)のリソースに追加しました。|
 |追加 |ベータ版および v1.0| Word、Excel、PowerPoint、PDF、およびドキュメント ライブラリの[タブ](teams-configuring-builtin-tabs.md)の設定に対するサポートを追加しました。 |
-|追加 |ベータ版| [チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API を導入しました。 |
+|追加 |ベータ版| [チャネルへのメッセージの送信](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API を導入しました。 |
 |追加 |ベータ版| [チャネル内のメッセージへの返信](/graph/api/channel-post-messagereply?view=graph-rest-beta) API を導入しました。 |
 |削除 |ベータ版| POST /teams/{id}/channels/{id}/chatThreads API は削除されました。 代わりに[チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta)を使用してください。 |
 |追加 |ベータ版 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
+
+### <a name="onenote"></a>OneNote
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版および v1.0 | [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) メソッドを追加しました。 |
 
 ### <a name="outlook-calendar"></a>Outlook カレンダー
 
@@ -85,6 +107,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 | ベータ版 | **order** プロパティを [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) に追加しました |
 |削除 | ベータ版 | 次の複合型を削除しました。 <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
+### <a name="security-apis"></a>セキュリティ API
+
+| **変更の種類** | **バージョン** | **説明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版       | 脅威インテリジェンス (TI) インジケーター API を [セキュリティ API](/graph/api/resources/security-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[tiindicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (および関連するエンティティ)<br/> [Get tiIndicator](/graph/api/tiindicator-get?view=graph-rest-beta)<br/>[Create tiIndicator](/graph/api/tiindicators-post?view=graph-rest-beta)<br/>[List tiIndicators](/graph/api/tiindicators-list?view=graph-rest-beta)<br/>[Update tiIndicator](/graph/api/tiindicator-update?view=graph-rest-beta) <br/>[Delete tiIndicator](/graph/api/tiindicator-delete?view=graph-rest-beta) <br/>[deleteTiIndicators](/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) <br/>[deleteTiIndicatorsByExternalId](/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) <br/>[submitTiIndicators](/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) <br/>[updateTiIndicators](/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)|
+| 追加        | ベータ版       | セキュリティ アクション API を [セキュリティ API](/graph/api/resources/security-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[securityAction](/graph/api/resources/securityaction?view=graph-rest-beta) (および関連するエンティティ)<br/> [Get securityAction](/graph/api/securityaction-get?view=graph-rest-beta)<br/>[Create securityAction](/graph/api/securityactions-post?view=graph-rest-beta)<br/>[List securityAction](/graph/api/securityactions-list?view=graph-rest-beta)<br/>[Cancel securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
+| 追加        | ベータ版        | 新しい複合型 [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) コレクションをアラートに導入しました。 </br>1 つの要求で複数のアラートを更新する [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) 機能を追加しました。 |
 
 ## <a name="january-2019"></a>2019 年 1 月
 
@@ -93,12 +122,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |v1.0|新しいリソースの種類である [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) エンティティと、[作成](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0)、[一覧表示](/graph/api/identityprovider-list?view=graph-rest-v1.0)、[取得](/graph/api/identityprovider-get?view=graph-rest-v1.0)、[更新](/graph/api/identityprovider-update?view=graph-rest-v1.0)、[削除](/graph/api/identityprovider-delete?view=graph-rest-v1.0)の各操作を導入しました。|
-
-### <a name="reports-apis"></a>レポート API
-
-| **変更の種類** | **バージョン** | **説明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 追加        | ベータ版  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティテに追加しました。|
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -144,14 +167,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |ベータ版| EducationStandard、educationClass、educationProfessionalLearningCommunity、educationStaff、unknownFutureValue を [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) 列挙値に追加しました。|
 
+### <a name="reports-apis"></a>レポート API
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
+
 ## <a name="december-2018"></a>2018 年 12 月
-
-### <a name="security-apis"></a>セキュリティ API
-
-| **変更の種類** | **バージョン** | **説明**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta) という新しい複合型を導入しました。|
-| 追加        | ベータ版        | [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta) という新しい複合型を導入しました。|
 
 ### <a name="data-policy-api"></a>データ ポリシー API
 
@@ -205,6 +227,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 削除 | ベータ版 | [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) エンティティの `roleAssignmentStartDateTime` プロパティを削除しました。|
 | 削除 | ベータ版 | [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) エンティティの `roleAssignmentEndDateTime` プロパティを削除しました。|
 
+### <a name="security-apis"></a>セキュリティ API
+
+| **変更の種類** | **バージョン** | **説明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta) という新しい複合型を導入しました。|
+| 追加        | ベータ版        | [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta) という新しい複合型を導入しました。|
+
 ## <a name="november-2018"></a>2018 年 11 月
 
 ### <a name="data-policy-operations-api"></a>データ ポリシー操作 API
@@ -212,6 +241,18 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta) に新しい **progress** プロパティを追加しました。 これは、操作の進捗状況を指定します。
+
+### <a name="directory-apis"></a>ディレクトリ API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | [ドメイン](/graph/api/resources/domain?view=graph-rest-1.0)に [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0) アクションを追加しました。|
+| 追加 | ベータ版 | transitiveMembers という新しいメソッドを[グループ](/graph/api/group-list-transitivemembers?view=graph-rest-beta)に追加しました。 このメソッドでは、入れ子になったメンバーを含むメンバーのフラット リストが返されます。|
+| 追加 | ベータ版 | [ユーザー](/graph/api/user-list-transitivemembersof?view=graph-rest-beta)、[グループ](/graph/api/group-list-transitivemembersof?view=graph-rest-beta)、[デバイス](/graph/api/device-list-transitivemembersof?view=graph-rest-beta)、および[サービス プリンシパル](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta)に transitiveMemberOf という新しいメソッドを追加しました。|
+| 追加 | ベータ版 | デバイスのダイレクト [メンバーシップ](/graph/api/device-list-members?view=graph-rest-beta)を取得する memberOf メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
+| 追加 | ベータ版 | **faxNumber**、**onPremisesDistinguishedName**、および **otherMails[ という新しいプロパティを](/graph/api/resources/user?view=graph-rest-beta)ユーザー**に追加しました。|
+| 追加 | ベータ版 | **forceChangePasswordNextSignInWithMfa** プロパティを [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-beta) 複合型に追加しました。|
+| 追加    | ベータ版 | 'externalUserState' および 'externalUserStateChangeDateTime' プロパティを [user](/graph/api/resources/user?view=graph-rest-beta) オブジェクトに追加しました。|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -248,27 +289,11 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |ベータ版| teamsAppDistributionMethod という新しい列挙メンバーを導入しました。|
 |追加 |ベータ版| [/teams/{id}/installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) にアプリのアップグレードという新しいアクションを導入しました。 |
 
-### <a name="directory-apis"></a>ディレクトリ API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | v1.0 | [ドメイン](/graph/api/resources/domain?view=graph-rest-1.0)に [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0) アクションを追加しました。|
-| 追加 | ベータ版 | transitiveMembers という新しいメソッドを[グループ](/graph/api/group-list-transitivemembers?view=graph-rest-beta)に追加しました。 このメソッドでは、入れ子になったメンバーを含むメンバーのフラット リストが返されます。|
-| 追加 | ベータ版 | [ユーザー](/graph/api/user-list-transitivemembersof?view=graph-rest-beta)、[グループ](/graph/api/group-list-transitivemembersof?view=graph-rest-beta)、[デバイス](/graph/api/device-list-transitivemembersof?view=graph-rest-beta)、および[サービス プリンシパル](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta)に transitiveMemberOf という新しいメソッドを追加しました。|
-| 追加 | ベータ版 | デバイスのダイレクト [メンバーシップ](/graph/api/device-list-members?view=graph-rest-beta)を取得する memberOf メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
-| 追加 | ベータ版 | **faxNumber**、**onPremisesDistinguishedName**、および **otherMails[ という新しいプロパティを](/graph/api/resources/user?view=graph-rest-beta)ユーザー**に追加しました。|
-| 追加 | ベータ版 | **forceChangePasswordNextSignInWithMfa** プロパティを [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-beta) 複合型に追加しました。|
-
 ### <a name="reports-apis"></a>レポート API
 
 | 変更の種類 | バージョン                                    | 説明                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | 追加    | 21Vianet によって運営されている Microsoft Graph China のベータ版 | 以下の API を追加しました。<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta)。 |
-
-### <a name="directory-apis"></a>ディレクトリ API
-| 変更の種類 | バージョン                                    | 説明                              |
-| :---------- | :----------------------------------------- | :--------------------------------------- |
-| 追加    | ベータ版 | 'externalUserState' および 'externalUserStateChangeDateTime' プロパティを [user](/graph/api/resources/user?view=graph-rest-beta) オブジェクトに追加しました。|
 
 ## <a name="october-2018"></a>2018 年 10 月
 
@@ -356,15 +381,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta) 複合型に **lastUpdateDateTime** プロパティを追加しました|
 |追加|ベータ版|[windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta) 複合型に **lastUpdateDateTime** プロパティを追加しました|
 
-### <a name="privileged-identity-management-apis"></a>特権 ID 管理 API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 変更 | ベータ版 | [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta) エンティティを変更します。|
-| 追加 | ベータ版 | [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) エンティティ、および次のメソッドとアクションを追加しました。<br> [リスト](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [作成](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [キャンセル](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
-| 追加 | ベータ版 | [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta) の[更新](/graph/api/privilegedrolesettings-update?view=graph-rest-beta)を追加しました|
-| 削除 |ベータ版| [自分でロールの割り当てをアクティブにする](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)を廃止しました。|
-
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -376,6 +392,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 削除         | v1.0        | これはドキュメントに対する修正です。[contact](/graph/api/resources/contact?view=graph-rest-1.0) エンティティのトピックから **flag** プロパティを削除しました。 このプロパティが **contact** エンティティで使用可能になったことはありません。|
+
+### <a name="privileged-identity-management-apis"></a>特権 ID 管理 API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 変更 | ベータ版 | [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta) エンティティを変更します。|
+| 追加 | ベータ版 | [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) エンティティ、および次のメソッドとアクションを追加しました。<br> [リスト](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [作成](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [キャンセル](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
+| 追加 | ベータ版 | [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta) の[更新](/graph/api/privilegedrolesettings-update?view=graph-rest-beta)を追加しました|
+| 削除 |ベータ版| [自分でロールの割り当てをアクティブにする](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)を廃止しました。|
 
 ### <a name="reports-apis"></a>レポート API
 | 変更の種類 | バージョン | 説明                              |
@@ -468,29 +493,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |削除|ベータ版| [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta) から isBlocks および installedState プロパティを削除しました。|
 |変更| ベータ版 | [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta) のコンテキスト プロパティの名前が distributionMethod に変更されました。|
 
-### <a name="outlook-mail"></a>Outlook メール
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加        | v1.0 およびベータ版 | メッセージの作成時に、[message](/graph/api/resources/message?view=graph-rest-1.0) エンティティの **internetMessageHeaders** プロパティを書き込めるようになりました。 |
-
-
-### <a name="project-rome-notifications-api"></a>Project Rome 通知 API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加          | ベータ版        | [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) というリソースの種類を追加しました。 |
-| 追加          | ベータ版        | [通知の作成と発行] (/graph/api/projectrome_notification_post?view=graph-rest-beta) API を追加しました。|
-
-### <a name="security-apis"></a>セキュリティ API
-
-| **変更の種類** | **バージョン** | **説明**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| 追加        | ベータ版        | [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) という新しい複合型を導入しました |
-
-
-
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
 
 | **変更の種類** | **バージョン** | **説明**                          |
@@ -521,6 +523,28 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) 複合型に **location** プロパティを追加しました |
 | 追加        | v1.0        | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) エンティティに **preview** アクションを追加しました |
 | 追加        | v1.0        | [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) 複合型を追加しました |
+
+### <a name="outlook-mail"></a>Outlook メール
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | v1.0 およびベータ版 | メッセージの作成時に、[message](/graph/api/resources/message?view=graph-rest-1.0) エンティティの **internetMessageHeaders** プロパティを書き込めるようになりました。 |
+
+
+### <a name="project-rome-notifications-api"></a>Project Rome 通知 API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加          | ベータ版        | [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) というリソースの種類を追加しました。 |
+| 追加          | ベータ版        | [通知の作成と発行] (/graph/api/projectrome_notification_post?view=graph-rest-beta) API を追加しました。|
+
+### <a name="security-apis"></a>セキュリティ API
+
+| **変更の種類** | **バージョン** | **説明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| 追加        | ベータ版        | [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) という新しい複合型を導入しました |
+
 
 ## <a name="august-2018"></a>2018 年 8 月
 
@@ -665,6 +689,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="july-2018"></a>2018 年 7 月
 
+### <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 変更          | ベータ版        | [application](/graph/api/resources/application?view=graph-rest-beta) API と [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) API は、プレビュー (ベータ版) で更新されます。 最初の一連の変更は、2018 年 7 月 16 日に適用されます。 変更には、プロパティの名前変更と再構築が含まれます。 既存のプロパティのほとんどは、変更が完了するまで使用可能になりません。 新しいプロパティがいくつか追加される予定です。 変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
+
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -677,18 +707,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[チャネル メッセージ取得 API](/graph/api/channel-get-message?view=graph-rest-beta) が追加されました |
 |追加|ベータ版|[全メッセージ返信取得 API](/graph/api/channel-list-messagereplies?view=graph-rest-beta) が追加されました |
 |追加|ベータ版|[メッセージへの返信取得 API](/graph/api/channel-get-messagereply?view=graph-rest-beta) が追加されました |
-
-### <a name="synchronization-apis"></a>同期 API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta) に **progress** プロパティが追加され、クライアントでの同期ジョブの進行状況の監視が許可されるようになりました。|
-
-### <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 変更          | ベータ版        | [application](/graph/api/resources/application?view=graph-rest-beta) API と [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) API は、プレビュー (ベータ版) で更新されます。 最初の一連の変更は、2018 年 7 月 16 日に適用されます。 変更には、プロパティの名前変更と再構築が含まれます。 既存のプロパティのほとんどは、変更が完了するまで使用可能になりません。 新しいプロパティがいくつか追加される予定です。 変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -723,7 +741,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |ベータ版 | 複合型 [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta) が追加されました。 |
 |変更 | ベータ版 | [contact](/graph/api/resources/contact?view=graph-rest-beta) の **emailAddresses** プロパティの型を **typedEmailAddress** インスタンスのコレクションに変更しました。|
 
-### <a name="webhooks"></a>Webhooks
+### <a name="synchronization-apis"></a>同期 API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta) に **progress** プロパティが追加され、クライアントでの同期ジョブの進行状況の監視が許可されるようになりました。|
+
+### <a name="webhooks"></a>Webhook
 | 変更の種類 | バージョン | 説明                              |
 |:------------|:--------|:-----------------------------------------|
 | 重大な変更 | ベータ版および v1.0 | ドライブ ルート項目の [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [サブスクリプション有効期限の最大長](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type) を 3 日に短縮。 |
@@ -731,18 +755,18 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="june-2018"></a>2018 年 6 月
 
-### <a name="identity-and-access-apis"></a>ID およびアクセス API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta) に[アクセスの確認](/graph/api/resources/accessreviews-root?view=graph-rest-beta)機能が追加されました。 |
-
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | すべて | クライアント アプリによるアプリケーションおよびサービス プリンシパルの作成、読み取り、更新、削除を許可する新しいアプリケーション アクセス許可 _Application.ReadWrite.All_ および _Application.ReadWrite.OwnedBy_ ([アクセス許可のトピック](permissions-reference.md#application-resource-permissions)を参照)。 |
-| 追加 | v1.0 | [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに、**ageGroup**、**legalAgeGroupClassification**、および **ConsentRequiredForMinor** プロパティを追加しました
+| 追加 | v1.0 | [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに、**ageGroup**、**legalAgeGroupClassification**、および **ConsentRequiredForMinor** プロパティが追加されました
+
+### <a name="identity-and-access-apis"></a>ID およびアクセス API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta) に[アクセスの確認](/graph/api/resources/accessreviews-root?view=graph-rest-beta)機能が追加されました。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -820,6 +844,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="may-2018"></a>2018 年 5 月
 
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 変更           | ベータ版          | 意味をより的確に反映するために、[subscription](/graph/api/resources/subscription?view=graph-rest-beta) エンティティの **creatorUserId** プロパティの名前を **creatorId** に変更しました。 |
+
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -842,7 +872,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加        | v1.0 およびベータ版 | [post](/graph/api/resources/post?view=graph-rest-1.0) エンティティに **importance** プロパティを追加しました。 |
+| 追加        | v1.0 およびベータ版 | [post](/graph/api/resources/post?view=graph-rest-1.0) エンティティに **importance** プロパティが追加されました。 |
+
+### <a name="insights-api"></a>Insights API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版          | [settings](/graph/api/resources/user-settings?view=graph-rest-beta) エンティティと次の CRUD メソッドを追加しました。 <br> [Get](/graph/api/user-get-settings?view=graph-rest-beta) <br> [Update](/graph/api/user-update-settings?view=graph-rest-beta) |
 
 ### <a name="microsoft-bookings-api"></a>Microsoft Bookings API
 
@@ -903,19 +939,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |削除|ベータ版|[androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta) 列挙型から **paloAltoGlobalProtect** メンバーを削除しました|
 |追加|ベータ版|[androidUsernameSource](/graph/api/resources/intune-deviceconfig-androidusernamesource?view=graph-rest-beta) 列挙型に **samAccountName** および **primarySmtpAddress** メンバーを追加しました|
 |削除|ベータ版|[androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta) 列挙型から **paloAltoGlobalProtect** メンバーを削除しました|
-|追加|ベータ版|[windows10VpnConnectionType](/graph/api/resources/intune-deviceconfig-windows10vpnconnectiontype?view=graph-rest-beta) 列挙型から **paloAltoGlobalProtect** メンバーを削除しました|
-
-### <a name="insights-api"></a>Insights API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加        | ベータ版          | [settings](/graph/api/resources/user-settings?view=graph-rest-beta) エンティティと次の CRUD メソッドを追加しました。 <br> [Get](/graph/api/user-get-settings?view=graph-rest-beta) <br> [Update](/graph/api/user-update-settings?view=graph-rest-beta) |
-
-### <a name="azure-ad-apis"></a>Azure AD API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 変更           | ベータ版          | 意味をより的確に反映するために、[subscription](/graph/api/resources/subscription?view=graph-rest-beta) エンティティの **creatorUserId** プロパティの名前を **creatorId** に変更しました。 |
+|追加|ベータ版|[windows10VpnConnectionType](/graph/api/resources/intune-deviceconfig-windows10vpnconnectiontype?view=graph-rest-beta) 列挙型に **paloAltoGlobalProtect** メンバーが追加されました|
 
 ## <a name="april-2018"></a>2018 年 4 月
 
@@ -984,7 +1008,20 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta) 列挙型に **paloAltoGlobalProtect** メンバーを追加しました|
 |追加|ベータ版|[androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta) 列挙型に **paloAltoGlobalProtect** メンバーを追加しました|
 |追加|ベータ版|[appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta) 列挙型に **paloAltoGlobalProtect** メンバーを追加しました|
-|追加|ベータ版|[policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta) 列挙型に **androidWorkProfile** メンバーを追加しました|
+|追加|ベータ版|[policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta) 列挙型に **androidWorkProfile** メンバーが追加されました|
+
+### <a name="microsoft-teams"></a>Microsoft Teams
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しい [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta) エンティティを追加しました。|
+|追加|ベータ版|新しい [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta) エンティティを追加しました。|
+|追加|ベータ版|新しい [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta) エンティティを追加しました。|
+|追加|ベータ版|新しい [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta) エンティティを追加しました。|
+|追加|ベータ版|新しい[チャネルの削除](/graph/api/channel-delete?view=graph-rest-beta)操作を追加しました。|
+|追加|ベータ版|新しい[チャネルのパッチ適用](/graph/api/channel-patch?view=graph-rest-beta)操作を追加しました。|
+|追加|ベータ版|[team](/graph/api/resources/team?view=graph-rest-beta) リソースに新たに webUrl プロパティを追加しました。|
+|変更|ベータ版|[channel](/graph/api/resources/channel?view=graph-rest-beta) エンティティへのパスを更新しました。|
 
 ### <a name="outlook-calendar"></a>Outlook カレンダー
 
@@ -1030,20 +1067,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 | v1.0 | 次の新しい複合型を追加しました。 <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
 
-### <a name="microsoft-teams"></a>Microsoft Teams
-
-|変更の種類|バージョン|説明|
-|:---|:---|:---|
-|追加|ベータ版|新しい [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta) エンティティを追加しました。|
-|追加|ベータ版|新しい [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta) エンティティを追加しました。|
-|追加|ベータ版|新しい [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta) エンティティを追加しました。|
-|追加|ベータ版|新しい [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta) エンティティを追加しました。|
-|追加|ベータ版|新しい[チャネルの削除](/graph/api/channel-delete?view=graph-rest-beta)操作を追加しました。|
-|追加|ベータ版|新しい[チャネルのパッチ適用](/graph/api/channel-patch?view=graph-rest-beta)操作を追加しました。|
-|追加|ベータ版|[team](/graph/api/resources/team?view=graph-rest-beta) リソースに新たに webUrl プロパティを追加しました。|
-|変更|ベータ版|[channel](/graph/api/resources/channel?view=graph-rest-beta) エンティティへのパスを更新しました。|
-
-
 ### <a name="project-rome-apis"></a>Project Rome API
 
 | **変更の種類** | **バージョン** | **説明**                          |
@@ -1076,13 +1099,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="march-2018"></a>2018 年 3 月
 
-### <a name="data-policy-operations"></a>データ ポリシー操作
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | 新しいエンティティ [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta) を追加しました。 これは、追跡のために送信されたデータ ポリシー操作を表します。
-| 追加        | ベータ版        | [users](/graph/api/resources/users?view=graph-rest-beta) に [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) アクションを追加しました。 このアクションは、Microsoft がユーザー用に保存している個人データをエクスポートするためのデータ ポリシー操作要求を送信します。 |
-
 ### <a name="activityfeedservice-apis"></a>ActivityFeedService API
 
 | **変更の種類** | **バージョン** | **説明**              |
@@ -1104,6 +1120,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |変更|ベータ版|[サブスクリプション](/graph/api/resources/subscription?view=graph-rest-beta) リソースに **applicationID** および **creatorUserID** プロパティを追加しました。 |
 |変更|ベータ版|[サブスクリプション](/graph/api/resources/subscription?view=graph-rest-beta) エンティティに[一覧表示](/graph/api/subscription-list?view=graph-rest-beta)操作を追加しました。 |
 
+### <a name="data-policy-operations"></a>データ ポリシー操作
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | 新しいエンティティ [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta) を追加しました。 これは、追跡のために送信されたデータ ポリシー操作を表します。
+| 追加        | ベータ版        | [users](/graph/api/resources/users?view=graph-rest-beta) に [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) アクションを追加しました。 このアクションは、Microsoft がユーザー用に保存している個人データをエクスポートするためのデータ ポリシー操作要求を送信します。 |
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -1119,12 +1141,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 |変更|v1.0|[Excel Table](/graph/api/resources/table?view=graph-rest-1.0) エンティティに **legacyId** プロパティを追加しました。 これには任意の Excel テーブルに対して定数となる数値識別子（文字列データ型）が含まれています。 これは、アプリケーションが古いバージョンの Excel クライアント アプリケーションで使用している従来の識別子に依存していた場合は、追加のメタデータとして提供されます。 注: `id` と `legacyId` プロパティはアプリケーションで符号化文字列値として処理し、その他の型に解析すべきではありません。 |
 
-### <a name="reports-apis"></a>レポート API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|追加|ベータ版|[sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta) エンティティに **siteId** プロパティが追加されました。|
-
 ### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
 
 | **変更の種類** | **バージョン** | **説明**                          |
@@ -1133,14 +1149,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0        | グループのライフサイクル ポリシーに、次の API を追加しました: [Create](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0)、[List](/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0)、[Get](/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0)、[Update](/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0)、[Delete](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0)、[Add group](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0)、[Remove group](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0) |
 | 追加        | v1.0        | [group](/graph/api/resources/group?view=graph-rest-1.0) に [List groupLifecylePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) 関数を追加しました。 |
 | 変更 | v1.0 | [group](/graph/api/resources/group?view=graph-rest-1.0) に renewedDateTime プロパティと [renew](/graph/api/group-renew?view=graph-rest-1.0) を追加しました |
-
-### <a name="terms-of-use"></a>利用規約
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | [agreement](/graph/api/resources/agreement?view=graph-rest-beta) と [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta) リソースを追加しました。 |
-| 追加        | ベータ版        | 次の [agreement](/graph/api/resources/agreement?view=graph-rest-beta) のAPI を追加しました: [Create](/graph/api/greement-post-agreements?view=graph-rest-beta), [List](/graph/api/agreement-list?view=graph-rest-beta), [Get](/graph/api/agreement-get?view=graph-rest-beta), [Update](/graph/api/agreement-update?view=graph-rest-beta), [Delete](/graph/api/agreement-delete?view=graph-rest-beta)。 |
-| 追加        | ベータ版        | [user](/graph/api/resources/user?view=graph-rest-beta) リソースに [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta) リレーションシップを追加しました。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -1224,6 +1232,19 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) 複合型に <b>lastRecordedDateTime</b> プロパティを追加しました |
 |追加|ベータ版|[driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) エンティティに [preview](/graph/api/driveitem-preview?view=graph-rest-beta) アクションを追加しました |
 
+### <a name="reports-apis"></a>レポート API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|追加|ベータ版|[sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta) エンティティに **siteId** プロパティを追加しました。|
+
+### <a name="terms-of-use"></a>利用規約
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [agreement](/graph/api/resources/agreement?view=graph-rest-beta) と [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta) リソースを追加しました。 |
+| 追加        | ベータ版        | 次の [agreement](/graph/api/resources/agreement?view=graph-rest-beta) のAPI を追加しました: [Create](/graph/api/greement-post-agreements?view=graph-rest-beta), [List](/graph/api/agreement-list?view=graph-rest-beta), [Get](/graph/api/agreement-get?view=graph-rest-beta), [Update](/graph/api/agreement-update?view=graph-rest-beta), [Delete](/graph/api/agreement-delete?view=graph-rest-beta)。 |
+| 追加        | ベータ版        | [user](/graph/api/resources/user?view=graph-rest-beta) リソースに [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta) リレーションシップを追加しました。 |
 
 ## <a name="february-2018"></a>2018 年 2 月
 
@@ -1279,18 +1300,18 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="january-2018"></a>2018 年 1 月
 
-### <a name="json-batching"></a>JSON バッチ処理
-
-|変更の種類|バージョン|説明|
-|:---|:---|:---|
-|追加|v1.0|[JSON バッチ処理](json-batching.md)のサポートを追加しました。 内部要求の制限を 20 に設定しました。|
-|変更|ベータ版|[JSON バッチ処理](json-batching.md)の内部要求の制限を 5 から 20 に増加しました。|
-
 ### <a name="education-apis"></a>教育機関 API
 
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|[名簿 API](/graph/api/resources/education-overview?view=graph-rest-beta) の他のナビゲーション プロパティを追加し、フィルター処理のサポートを改善しました。|
+
+### <a name="json-batching"></a>JSON バッチ処理
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|v1.0|[JSON バッチ処理](json-batching.md)のサポートを追加しました。 内部要求の制限を 20 に設定しました。|
+|変更|ベータ版|[JSON バッチ処理](json-batching.md)の内部要求の制限を 5 から 20 に増やしました。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|

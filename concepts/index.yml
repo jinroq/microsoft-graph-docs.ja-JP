@@ -1,0 +1,176 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: b893fc83f7ca7552b4decbac3dc37fd0441b7043
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657918"
+documentType: LandingData
+title: Microsoft Graph ドキュメント
+metadata:
+  title: Microsoft Graph ドキュメント
+  description: Microsoft Graph を使用して、数百万ユーザーのデータを操作する組織やコンシューマー向けのアプリを構築する方法を説明します。
+  services: active-directory
+  author: CelesteDG
+  manager: mtillman
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 12/13/2018
+  ms.author: celested
+abstract:
+  description: Microsoft Graph では、何百万ものユーザーのデータを扱う組織やコンシューマー向けのアプリを構築するために使用できる統合プログラミングモデルが提供されています。 Microsoft Graph REST api を使用して、Azure Active Directory、Office 365 サービス、Enterprise Mobility and Security services、Windows 10 services、Dynamics 365 などのデータにアクセスできます。 Microsoft Graph api の使用方法の詳細については、ドキュメントを参照してください。
+  aside:
+    image:
+      alt: 
+      height: 110
+      src: ./images/index/whatsnew-video.png
+      width: 250
+    title: Microsoft Graph の新機能 (12:39)
+    href: https://www.youtube.com/watch?v=3X10r2VVLCg
+    width: 250
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/overview
+      html: <p>Microsoft Graph とその機能の詳細については、こちらを参照してください。</p>
+      image:
+        src: ./images/index/i_get-started.svg
+      title: Microsoft Graph の概要
+    - href: /graph/overview-major-services
+      html: <p>Microsoft Graph で利用できる主要なサービスと機能について理解を深める。</p>
+      image:
+        src: ./images/index/i_overview.svg
+      title: サービスと機能
+    - href: https://developer.microsoft.com/graph/graph-explorer/
+      html: <p>Microsoft Graph に対して要求を送信し、応答を表示します。</p>
+      image:
+        src: ./images/index/i_queries.svg
+      title: Graph エクスプローラー
+    - href: /graph/use-the-api
+      html: <p>microsoft Graph API を使用して microsoft クラウドサービスリソースにアクセスする方法について説明します。</p>
+      image:
+        src: ./images/index/i_code-edit.svg
+      title: API の使用
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+      html: <p>Microsoft Graph REST API v2.0 を使用して、実際の運用ニーズに対応します。</p>
+      image:
+        src: ./images/index/i_api-reference.svg
+      title: Microsoft Graph REST API v1.0
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+      html: <p>Microsoft Graph ベータ版エンドポイントを試してみてください。</p>
+      image:
+        src: ./images/index/i_api.svg
+      title: Microsoft Graph REST API ベータ版
+- title: サポートされるプラットフォーム
+  items:
+  - type: paragraph
+    text: sdk を検索して、microsoft graph の基本的な概念や、microsoft graph を使用してデータにアクセスする簡単なアプリを作成する方法を含む、プラットフォーム固有のステップバイステップのトレーニングを行います。
+  - type: table
+    style: dataMatrix
+    columns:
+    - image:
+        src: ./images/index/logo_android.svg
+      title: Android
+    - image:
+        src: ./images/index/angular_solidBlack.svg
+      title: Angular
+    - image:
+        src: ./images/index/logo_NET.svg
+      title: ASP.NET
+    - image:
+        src: ./images/index/logo_ios.svg
+      title: iOS
+    - image:
+        src: ./images/index/logo_java.svg
+      title: .java
+    - image:
+        src: ./images/index/logo_js.svg
+      title: JavaScript
+    - image:
+        src: ./images/index/logo_nodejs.svg
+      title: Node.js
+    - image:
+        src: ./images/index/logo_php.svg
+      title: PHP
+    - image:
+        src: ./images/index/logo_python.svg
+      title: Python
+    - image:
+        src: ./images/index/logo_ruby.svg
+      title: Ruby
+    - image:
+        src: ./images/index/logo_windows.svg
+      title: UWP
+    - image:
+        src: ./images/index/logo_xamarin.svg
+      title: Xamarin
+    rows:
+    - title: クイックスタート
+      values:
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
+      - href: 
+      - href: 
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
+    - title: チュートリアル
+      values:
+      - href: 
+      - href: /tutorials/angular
+      - href: /tutorials/aspnet
+      - href: 
+      - href: 
+      - href: 
+      - href: /tutorials/node
+      - href: /tutorials/php
+      - href: /tutorials/python
+      - href: /tutorials/ruby
+      - href: /tutorials/uwp
+      - href: 
+    - title: xdk
+      values:
+      - href: https://github.com/microsoftgraph/msgraph-sdk-android
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://github.com/microsoftgraph/msgraph-sdk-objc
+      - href: https://github.com/microsoftgraph/msgraph-sdk-java
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-php
+      - href: 
+      - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+- title: リソース
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/changelog
+      html: <p>microsoft graph で変更された機能 (v1.0 とベータ版のエンドポイントの microsoft graph api を含む) について説明します。</p>
+      image:
+        src: ./images/index/i_backlog.svg
+      title: 変更ログ
+    - href: https://developer.microsoft.com/graph/blogs/
+      html: <p>最新のニュースや更新プログラムについては、ブログを参照してください。</p>
+      image:
+        src: ./images/index/i_blog.svg
+      title: Microsoft Graph ブログ
+    - href: /graph/known-issues
+      html: <p>Microsoft Graph の既知の問題について説明します。</p>
+      image:
+        src: ./images/index/i_investigate.svg
+      title: 既知の問題
