@@ -1,6 +1,8 @@
 name: Graph のドキュメント
 metadata: {}
 items:
+  - name: Microsoft Graph ドキュメント
+    href: index.yml
   - name: Microsoft Graph の概要
     href: overview.md
     expanded: true
@@ -96,6 +98,9 @@ items:
           - name: ファイル
             href: onedrive-concept-overview.md
             displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          - name: Financials (プレビュー)
+            href: dynamics-business-central-concept-overview.md
+            displayname: 'Dynamics, Dynamics 365 Business Central'
           - name: ID とアクセス
             href: azuread-identity-access-management-concept-overview.md
             displaName: 'Azure AD, Microsoft identity platform'
@@ -166,6 +171,8 @@ items:
                     href: security-splunk-siemintegration.md
                   - name: QRadar
                     href: security-qradar-siemintegration.md
+              - name: パートナーの機会
+                href: security-partner-overview.md
           - name: サイトとリスト
             href: sharepoint-concept-overview.md
             displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
