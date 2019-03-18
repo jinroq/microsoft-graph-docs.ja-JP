@@ -4,12 +4,12 @@ description: Microsoft Graph Security API には、Microsoft とエコシステ�
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d0d4b68d6b16cc30c93157e1cc90afb4cf72cfae
-ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
+ms.openlocfilehash: bd208067c2194766bb5f3d93d0caa21be086dca0
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30376429"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644266"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
@@ -34,7 +34,7 @@ Microsoft Graph Security API には以下の主要なエンティティが含ま
 |:------------------|:---------|:-----------|:------------------|
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |Office 365 <ul><li> [Default](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ja-JP/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |

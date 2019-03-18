@@ -2,12 +2,12 @@
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 localization_priority: Priority
-ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458660"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644322"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -31,22 +31,22 @@ ms.locfileid: "30458660"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。 メッセージの一意の ID。|
-|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID |
-|from|[identitySet](identityset.md)| メッセージの送信者の詳細|
-|etag| string | メッセージのバージョン番号 |
-|messageType|String|メッセージの種類。現在サポートされている値: message、chatEvent、Typing|
-|createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ|
-|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ|
+|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID。 |
+|from|[identitySet](identityset.md)| 読み取り専用です。 メッセージの送信者の詳細。|
+|etag| string | メッセージのバージョン番号。 |
+|messageType|String|メッセージの種類。現在サポートされている値は message、chatEvent、Typing。|
+|createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ。|
+|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ。|
 |deleted|Boolean|メッセージが削除済み (回復可能) かどうかを示します。|
-|deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージ削除時のタイムスタンプ |
-|subject|string|メッセージの件名。 省略可能|
+|deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージ削除時のタイムスタンプ。 |
+|subject|string|メッセージの件名。 省略可能。|
 |body|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 既定ではプレーンテキストを返しますが、クエリ パラメーターの一部としてアプリケーションで HTML を選択できます|
 |summary|string|プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト|
-|mentions|[chatMessageMention](chatmention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています|
-|importance| string | メッセージの重要度: 通常、高|
+|mentions|[chatMessageMention](chatmention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています。|
+|importance| string | メッセージの重要度: 通常、高。|
 |reactions| [chatMessageReaction](chatreaction.md) コレクション | このメッセージに対する反応 (例: いいね!)|
 |locale|string|クライアントに設定されたメッセージのロケール|
-|attachments|[chatMessageAttachment](chatattachment.md) コレクション |添付ファイル|
+|attachments|[chatMessageAttachment](chatattachment.md) コレクション |添付ファイル。 添付ファイルは現在読み取り専用です。添付ファイルの送信はサポートされていません。 |
 
 
 ## <a name="json-representation"></a>JSON 表記
