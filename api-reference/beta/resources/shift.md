@@ -4,12 +4,12 @@ description: shift は、スケジュールのスケジュールされた作業�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c392bfb4a1691ab99d852febdda27cdf1c3b8044
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657897"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676969"
 ---
 # <a name="shift-resource-type"></a>shift リソースの種類
 
@@ -21,23 +21,23 @@ ms.locfileid: "30657897"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[shift を作成する](../api/schedule-post-shifts.md) | [制](shift.md) | 新しい`shift`を作成します。|
+|[shift を作成する](../api/schedule-post-shifts.md) | [制](shift.md) | 新しい `shift` を作成します。|
 |[シフトの一覧表示](../api/schedule-list-shifts.md) | [shift](shift.md)コレクション | このスケジュール内の`shifts`のリストを取得します。|
-|[shift を取得する](../api/shift-get.md) | [制](shift.md) | ID `shift`で取得します。|
-|[shift を置換する](../api/shift-put.md) | [制](shift.md) | を`shift`置き換えます。|
+|[shift を取得する](../api/shift-get.md) | [制](shift.md) | ID で `shift` を取得します。|
+|[shift を置換する](../api/shift-put.md) | [制](shift.md) | `shift` を置き換えます。|
 |[shift を削除する](../api/shift-delete.md) | なし | スケジュールから`shift`を削除します。|
 
 ## <a name="properties"></a>プロパティ
-|名前          |型           |説明                                                                                                                                      |
+|名前          |種類           |説明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id            |`string`      |の ID `shift`。|
+| id            |`string`      |`shift` の ID。|
 | userId            |`string`      |に割り当てられているユーザー `shift`の ID。 必須。 |
 | schedulingGroupId         |`string`      |`shift`が含まれるスケジュールグループの ID。 必須。 |
-| sharedshift   |`[shiftItem](shiftitem.md)`  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須。 |
-| draftShift        |`[shiftItem](shiftitem.md)`        |この`shift`の下書きバージョンは、マネージャーが表示できます。 必須。 |
-| createdDateTime       |`DateTimeOffset`        |最初に作成さ`shift`れたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
-| lastModifiedDateTime      |`DateTimeOffset`        |最後に更新され`shift`たタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |最後に更新`shift`した id。|
+| sharedshift   |[佐々木](shiftitem.md)  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須。 |
+| draftShift        |[佐々木](shiftitem.md)        |この`shift`の下書きバージョンは、マネージャーが表示できます。 必須。 |
+| createdDateTime       |`DateTimeOffset`        |最初に作成さ`shift`れたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| lastModifiedDateTime      |`DateTimeOffset`        |最後に更新され`shift`たタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |この `shift` を最後に更新した ID。|
 
 ## <a name="json-representation"></a>JSON 表記
 
