@@ -1,44 +1,44 @@
 ---
-title: チャネル リソースの種類
-description: 'チャネルは、チーム内でのメッセージのコレクションです。 '
+title: チャネルのリソースの種類
+description: 'チャネルは、チーム内のメッセージのコレクションです。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2bebf78e4ad31047289bff77e681c34d92a94abf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163715"
 ---
-# <a name="channel-resource-type"></a>チャネル リソースの種類
+# <a name="channel-resource-type"></a>チャネルのリソースの種類
 
 
 
-チャネルは、[チーム](../resources/team.md)内でのメッセージのコレクションです。 チャネルでは、トピックとチーム内での議論の論理的分離を表します。 例としては、「金曜日チーム ランチ」のチャネルとチャネルの「アーキテクチャの説明」にあります。
+チャネルは、[チーム](../resources/team.md)内のメッセージのコレクションです。 チャネルは 1 つのトピック、つまりチーム内でのディスカッションの論理的分離を表します。 たとえば、「Friday Team Lunch (金曜日のチーム ランチ)」チャネルや「Architecture Discussion (アーキテクチャに関するディスカッション)」チャネルなどです。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チャネルのリスト](../api/channel-list.md) | [チャネル](channel.md)コレクション | このチームでは、チャネルの一覧を取得します。|
-|[チャネルを作成します。](../api/channel-post.md) | [チャネル](channel.md) | 表示名と説明を含めることで、新しいチャネルを作成します。|
-|[チャネルを取得します。](../api/channel-get.md) | [チャネル](channel.md) | チャネルのプロパティと関係を参照してください。|
-|[チャネルを更新します。](../api/channel-patch.md) | [チャネル](channel.md) | チャネルのプロパティを更新します。|
-|[チャネルを削除します。](../api/channel-delete.md) | なし | チャネルを削除します。|
+|[チャネルを一覧表示する](../api/channel-list.md) | [channel](channel.md) コレクション | このチーム内のチャネルの一覧を取得します。|
+|[チャネルを作成する](../api/channel-post.md) | [channel](channel.md) | 表示名と説明を指定して新しいチャネルを作成します。|
+|[チャネルを取得する](../api/channel-get.md) | [channel](channel.md) | チャネルのプロパティとリレーションシップを読み取ります。|
+|[チャネルを更新する](../api/channel-patch.md) | [channel](channel.md) | チャネルのプロパティを更新します。|
+|[チャネルを削除する](../api/channel-delete.md) | なし | チャネルを削除します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String|チャネルの省略可能な説明です。|
-|displayName|String|チャネルの名前は、マイクロソフトのチーム内のユーザーに表示されます。|
-|id|String|チャネルの一意の識別子です。 読み取り専用です。|
+|description|String|チャネルの説明テキストです (省略可能)。|
+|displayName|String|Microsoft Teams でユーザーに対して表示されるチャネルの名前。|
+|id|String|チャネルの一意の識別子。 読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|タブ|[teamsTab](../resources/teamstab.md)コレクション|チャネル内のすべてのタブのコレクションです。 ナビゲーション プロパティです。|
+|tabs|[teamsTab](../resources/teamstab.md) コレクション|チャネル内のすべてのタブのコレクションです。 ナビゲーションのプロパティです。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,9 +47,6 @@ ms.locfileid: "27986349"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "chatthreads"
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->
@@ -58,7 +55,7 @@ ms.locfileid: "27986349"
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```

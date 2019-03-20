@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b9d3def25d4039b1c5c7efd520671333c69ae55
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057079"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379557"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -105,6 +105,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
+|isResourceAccount|Boolean| ユーザーがリソース アカウントの場合は **true**、それ以外の場合は **false**。 Null 値は **false** とみなされます。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |legalAgeGroupClassification|String| エンタープライズ アプリケーションで使用され、ユーザーの法的年齢グループを示します。 このプロパティは読み取り専用であり、`ageGroup` プロパティと `consentProvidedForMinor` プロパティに基づいて計算されます。 使用できる値: `null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult`、および `adult`。 詳細については、「[法的年齢グループ プロパティの定義](#legal-age-group-property-definitions)」を参照してください。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) コレクション|このユーザーへのライセンス割り当ての状態です。 読み取り専用です。|
@@ -283,6 +284,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

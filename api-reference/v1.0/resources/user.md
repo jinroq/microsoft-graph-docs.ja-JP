@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 735ed7688dec1ef8cd79d9590981d0c3793ea996
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 3d102e28bc04b6a2c2f8635e28f94e591c003bf5
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745567"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379536"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -92,6 +92,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |imAddresses|String collection|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
+|isResourceAccount|Boolean| ユーザーがリソース アカウントの場合は **true**、それ以外の場合は **false**。 Null 値は **false** とみなされます。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |legalAgeGroupClassification|String| エンタープライズ アプリケーションで使用され、ユーザーの法的年齢グループを示します。 このプロパティは読み取り専用であり、`ageGroup` プロパティと `consentProvidedForMinor` プロパティに基づいて計算されます。 使用できる値: `null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult`、および `adult`。 詳細については、「[法的年齢グループ プロパティの定義](#legal-age-group-property-definitions)」を参照してください。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) コレクション|このユーザーへのライセンス割り当ての状態です。 読み取り専用です。|
@@ -388,6 +389,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "id": "string (identifier)",
   "imAddresses": ["string"],
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
