@@ -4,16 +4,16 @@ description: テナント組織のデバイスを登録する Intune エンド�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149834"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572391"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して会社所有のデバイスを登録する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -49,6 +49,7 @@ ms.locfileid: "30149834"
 - [Windows Autopilot 展開プロファイル](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Windows AutoPilot Deployment プロファイルの割り当て](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows AutoPilot デバイス ID](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows 自動操縦デバイスの種類](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot プロファイルの割り当ての状態の詳細](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows Autopilot プロファイルの割り当ての状態](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot の設定](intune-enrollment-windowsautopilotsettings.md)

@@ -4,12 +4,12 @@ description: 新しい ioslobappプロビジョニング構成オブジェクト
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08a3cb70d7fc10274e44550d83da252710d9ec9d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ab8f4c807e07fec07d798ec64fdb5a52ab9e0211
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171527"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572272"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>ioslobappプロビジョニング構成を作成する
 
@@ -40,7 +40,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,13 +50,14 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |expirationDateTime|DateTimeOffset|オプションのプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロードファイル名 (*. mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|
+|roleScopeTagIds|String collection|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|文字列|デバイス構成について管理者が提供した説明です。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|description|String|デバイス構成について管理者が提供した説明です。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
 
@@ -72,13 +73,16 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
-Content-length: 313
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7
@@ -90,7 +94,7 @@ Content-length: 313
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
@@ -98,6 +102,9 @@ Content-Length: 485
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

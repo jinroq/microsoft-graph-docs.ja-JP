@@ -4,12 +4,12 @@ description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f40ec6beb11ed6a299c23b6da905466a47fc5e9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b324e952c91cf95c361ef277b428f0ed0ae5f26e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153712"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572426"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
@@ -21,7 +21,7 @@ ms.locfileid: "30153712"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCategories
 
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**obboarding ボード**|
-|説明|String|デバイス カテゴリに関するオプションの説明。|
+|description|String|デバイス カテゴリに関するオプションの説明。|
 |displayName|String|デバイス カテゴリの表示名。|
 
 ## <a name="response"></a>応答

@@ -4,12 +4,12 @@ description: アプリの種類の基本クラス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dbaf8dfd7f2cd488de37378f934ca3f31daedd6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a247c3f02dc64657ec9cd297d8fff5d8591549cd
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147328"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572538"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp リソースの種類
 
@@ -27,7 +27,8 @@ ms.locfileid: "30147328"
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承された開始レイアウトのアプリタイルサイズ。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
 |name|String|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたアプリのフレンドリ名を表します。|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されるアプリの種類。 使用可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されるアプリの種類。 可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
+|autoLaunch|Boolean|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたマルチアプリキオスクモードでアプリを自動起動することを許可します。|
 |appUserModelId|String|これは、キオスクモードでの使用が可能になる唯一のアプリケーションユーザーモデル ID (AUMID) です。|
 |appId|String|これは、キオスクの構成と同じ割り当てに移行する Intune アプリを参照します。|
 |containedAppId|String|これは、Intune アプリからの含まれているアプリを参照します。|
@@ -48,6 +49,7 @@ ms.locfileid: "30147328"
   "startLayoutTileSize": "String",
   "name": "String",
   "appType": "String",
+  "autoLaunch": true,
   "appUserModelId": "String",
   "appId": "String",
   "containedAppId": "String"

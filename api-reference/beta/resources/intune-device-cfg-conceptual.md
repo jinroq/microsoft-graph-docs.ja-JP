@@ -4,16 +4,16 @@ description: テナント組織のデバイスの構成を定義する Intune �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40439a32cb9f078d483113cfee8949cd6f288d71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159270"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572440"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -22,7 +22,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 次の Graph リソースを使用して、Intune でのデバイスの設定と機能を管理できます。
 
 - [管理者により構成されたデバイスのコンプライアンス状態](intune-deviceconfig-administratorconfigureddevicecompliancestate.md)
-- [高度な BitLocker 状態](intune-deviceconfig-advancedbitlockerstate.md)
+- [Advanced BitLocker の状態](intune-deviceconfig-advancedbitlockerstate.md)
 - [Advanced Threat Protection オンボード デバイス設定の状態](intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)
 - [Advanced Threat Protection オンボード状態の概要](intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)
 - [AirPrint 先](intune-deviceconfig-airprintdestination.md)
@@ -61,7 +61,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Android 一般デバイス構成](intune-deviceconfig-androidgeneraldeviceconfiguration.md)
 - [Android のインポートした PFX 証明書のプロファイル](intune-deviceconfig-androidimportedpfxcertificateprofile.md)
 - [Android Keyguard 機能](intune-deviceconfig-androidkeyguardfeature.md)
-- [Android OMA cp 構成](intune-deviceconfig-androidomacpconfiguration.md)
+- [Android OMA cp の構成](intune-deviceconfig-androidomacpconfiguration.md)
 - [Android PKCS 証明書のプロファイル](intune-deviceconfig-androidpkcscertificateprofile.md)
 - [Android に必要なパスワードの種類](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Android SCEP 証明書のプロファイル](intune-deviceconfig-androidscepcertificateprofile.md)
@@ -125,24 +125,23 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Defender サンプルの送信を促す](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Defender 保護の種類](intune-deviceconfig-defenderprotectiontype.md)
 - [Defender スキャンの種類](intune-deviceconfig-defenderscantype.md)
-- [Defender スケジュール スキャン日](intune-deviceconfig-defenderschedulescanday.md)
 - [Defender セキュリティ センター IT 連絡先の表示タイプ](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Defender セキュリティ センター アプリからの通知の種類](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Defender 送信サンプルの同意のタイプ](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
 - [Defender 脅威アクション](intune-deviceconfig-defenderthreataction.md)
-- [配信の最適化の帯域幅](intune-deviceconfig-deliveryoptimizationbandwidth.md)
-- [配信の最適化の帯域幅絶対](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
-- [配信最適化の帯域幅の営業時間の制限](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
-- [配信の最適化の帯域幅の時間 (パーセント)](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
-- [配信の最適化の帯域幅の割合](intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md)
-- [配信の最適化グループ id のカスタム](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
-- [配信の最適化グループ id オプションの種類](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
-- [配信の最適化グループ id ソース](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
-- [配信の最適化グループ id ソースのオプション](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
-- [配信の最適化の最大キャッシュサイズ](intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
-- [配信の最適化最大キャッシュサイズ (絶対的)](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
-- [配信の最適化の最大キャッシュサイズの割合](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
-- [配信の最適化はオプションによるピア選択を制限する](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
+- [配信最適化 (帯域幅)](intune-deviceconfig-deliveryoptimizationbandwidth.md)
+- [配信最適化 (絶対帯域幅)](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
+- [配信最適化 (帯域幅の勤務時間制限)](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
+- [配信最適化 (帯域幅の時間の割合)](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
+- [配信最適化 (帯域幅の割合)](intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md)
+- [配信最適化 (グループ ID カスタム)](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
+- [配信最適化 (グループ ID オプションの種類)](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
+- [配信最適化 (グループ ID ソース)](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
+- [配信最適化 (グループ ID ソース オプション)](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
+- [配信最適化 (最大キャッシュ サイズ)](intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
+- [配信最適化 (絶対最大キャッシュ サイズ)](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
+- [配信最適化 (最大キャッシュ サイズの割合)](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
+- [配信最適化 (オプション別のピアの選択の制限)](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
 - [派生の資格情報プロバイダーの種類](intune-deviceconfig-derivedcredentialprovidertype.md)
 - [デバイス コンプライアンス アクションの項目](intune-deviceconfig-devicecomplianceactionitem.md)
 - [デバイス コンプライアンス アクションの種類](intune-deviceconfig-devicecomplianceactiontype.md)
@@ -176,7 +175,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [デバイスの脅威保護レベル](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [デバイスの種類](intune-deviceconfig-devicetypes.md)
 - [診断データの送信モード](intune-deviceconfig-diagnosticdatasubmissionmode.md)
-- [DMA ガードデバイス列挙ポリシーの種類](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
+- [DMA ガードのデバイス列挙ポリシーの種類](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [ドメイン名のソース](intune-deviceconfig-domainnamesource.md)
 - [EAP 高速構成](intune-deviceconfig-eapfastconfiguration.md)
 - [EAP の種類](intune-deviceconfig-eaptype.md)
@@ -188,7 +187,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Edge のホーム ボタンでスタート ページをロードする](intune-deviceconfig-edgehomebuttonloadsstartpage.md)
 - [Edge のホーム ボタンでカスタム URLを開く](intune-deviceconfig-edgehomebuttonopenscustomurl.md)
 - [Edge のホーム ボタンで新しいタブを開く](intune-deviceconfig-edgehomebuttonopensnewtab.md)
-- [エッジキオスクモードの制限の種類](intune-deviceconfig-edgekioskmoderestrictiontype.md)
+- [Edge のキオスク モード制限の種類](intune-deviceconfig-edgekioskmoderestrictiontype.md)
 - [Edge でオプションを開く](intune-deviceconfig-edgeopenoptions.md)
 - [Edge の検索エンジン](intune-deviceconfig-edgesearchengine.md)
 - [Edge の検索エンジン ベース](intune-deviceconfig-edgesearchenginebase.md)
@@ -199,8 +198,8 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [エディション アップグレード ライセンスの種類](intune-deviceconfig-editionupgradelicensetype.md)
 - [メールの同期継続時間](intune-deviceconfig-emailsyncduration.md)
 - [メールの同期スケジュール](intune-deviceconfig-emailsyncschedule.md)
-- [暗号化の準備状態](intune-deviceconfig-encryptionreadinessstate.md)
-- [暗号化レポートポリシーの詳細](intune-deviceconfig-encryptionreportpolicydetails.md)
+- [暗号化の対応状態](intune-deviceconfig-encryptionreadinessstate.md)
+- [暗号化レポート ポリシーの詳細](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [暗号化の状態](intune-deviceconfig-encryptionstate.md)
 - [拡張キーの使用](intune-deviceconfig-extendedkeyusage.md)
 - [ファイアウォール証明書失効リスト確認方法の種類](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
@@ -299,7 +298,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [macOS VPN 構成](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 構成](intune-deviceconfig-macoswificonfiguration.md)
 - [管理対象デバイス証明書の状態](intune-deviceconfig-manageddevicecertificatestate.md)
-- [管理されたデバイスの暗号化の状態](intune-deviceconfig-manageddeviceencryptionstate.md)
+- [管理対象デバイスの暗号化の状態](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [管理対象デバイスの報告されたアプリ](intune-deviceconfig-manageddevicereportedapp.md)
 - [メディア コンテンツのレーティング、オーストラリア](intune-deviceconfig-mediacontentratingaustralia.md)
 - [メディア コンテンツのレーティング、カナダ](intune-deviceconfig-mediacontentratingcanada.md)
@@ -432,6 +431,12 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows 配信最適化の構成](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 配信最適化モード](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows ファイアウォール ネットワーク プロファイル](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Windows ファイアウォールの規則](intune-deviceconfig-windowsfirewallrule.md)
+- [Windows ファイアウォール規則のインターフェイスの種類](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Windows ファイアウォール規則のネットワークプロファイルの種類](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Windows ファイアウォール規則のトラフィック方向の種類](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Windows health monitoring の構成](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Windows health monitoring スコープ](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Windows ID 保護の構成](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows のキオスクの Active Directory グループ](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows のキオスクのアプリ ベース](intune-deviceconfig-windowskioskappbase.md)
@@ -471,6 +476,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows Update for Business 構成](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Windows Update for Business アップデートの週](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Windows Update インストール スケジュールのタイプ](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Windows update 通知の表示オプション](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows Update のスケジュール済みインストール](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows Update の状態](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows Update の種類](intune-deviceconfig-windowsupdatetype.md)

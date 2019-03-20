@@ -4,12 +4,12 @@ description: アプリの種類の基本クラス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0247febfbeebe7fc047df4bb14a9d421b79bf01
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b86921fcdaa11b37b985184dfbc645c2a193bfdb
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572307"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowskioskappbase リソースの種類
 
@@ -25,8 +25,9 @@ ms.locfileid: "30145298"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|開始レイアウトのアプリタイルのサイズ。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
 |name|String|アプリのフレンドリ名を表します。|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|アプリの種類。 可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
+|autoLaunch|Boolean|アプリをマルチアプリキオスクモードで自動起動できるようにする|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -41,7 +42,8 @@ ms.locfileid: "30145298"
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
   "name": "String",
-  "appType": "String"
+  "appType": "String",
+  "autoLaunch": true
 }
 ```
 

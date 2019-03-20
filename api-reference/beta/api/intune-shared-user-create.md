@@ -4,12 +4,12 @@ description: 新しいユーザー オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e60d00ec008ca255459440e6d2bb888a2195f6af
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f46fbbc365e52ae9e46db9f6c05c3c8e8eeddc92
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141441"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572258"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -21,7 +21,7 @@ ms.locfileid: "30141441"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,7 +47,7 @@ POST /users
 
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -86,7 +86,7 @@ Content-length: 46
 
 ### <a name="response"></a>応答
 
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
+以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
 
 ``` http
 HTTP/1.1 201 Created

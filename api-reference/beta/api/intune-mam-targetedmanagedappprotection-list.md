@@ -4,12 +4,12 @@ description: targetedManagedAppProtection オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20ce919ab57120dd1c05926f52fc1427426c4bab
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0a663a022d9542543959f4b77084421028b2db5c
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30138991"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572524"
 ---
 # <a name="list-targetedmanagedappprotections"></a>targetedManagedAppProtections のリスト
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2180
+Content-Length: 2241
 
 {
   "value": [
@@ -112,6 +112,7 @@ Content-Length: 2180
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }

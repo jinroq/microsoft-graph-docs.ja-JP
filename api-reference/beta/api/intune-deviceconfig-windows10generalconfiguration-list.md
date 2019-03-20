@@ -4,12 +4,12 @@ description: windows10GeneralConfiguration オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d43b1f21095e713ec46aa14056a70f080d84b76c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 97c6c3bc9d499891425928fe9dac64c3ab5f4f3a
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146411"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572377"
 ---
 # <a name="list-windows10generalconfigurations"></a>windows10GeneralConfigurations のリスト
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14803
+Content-Length: 14999
 
 {
   "value": [
@@ -89,6 +89,7 @@ Content-Length: 14803
       "enableAutomaticRedeployment": true,
       "microsoftAccountSignInAssistantSettings": "disabled",
       "authenticationAllowSecondaryDevice": true,
+      "authenticationWebSignIn": "enabled",
       "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
       "cryptographyAllowFipsAlgorithmPolicy": true,
       "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -229,7 +230,6 @@ Content-Length: 14803
       "defenderCloudExtendedTimeout": 12,
       "defenderCloudExtendedTimeoutInSeconds": 5,
       "defenderBlockOnAccessProtection": true,
-      "defenderScheduleScanDay": "monday",
       "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
@@ -249,6 +249,7 @@ Content-Length: 14803
       "passwordMinimumAgeInDays": 8,
       "privacyAdvertisingId": "blocked",
       "privacyAutoAcceptPairingAndConsentPrompts": true,
+      "privacyDisableLaunchExperience": true,
       "privacyBlockInputPersonalization": true,
       "privacyBlockPublishUserActivities": true,
       "privacyBlockActivityFeed": true,
@@ -382,7 +383,10 @@ Content-Length: 14803
       "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
       "appManagementMSIAllowUserControlOverInstall": true,
       "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-      "dataProtectionBlockDirectMemoryAccess": true
+      "dataProtectionBlockDirectMemoryAccess": true,
+      "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+        "App Management Package Family Names To Launch After Log On value"
+      ]
     }
   ]
 }

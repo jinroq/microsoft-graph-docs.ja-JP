@@ -4,16 +4,16 @@ description: テナント組織のモバイルアプリ管理 (MAM) に関連す
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150401"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572328"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -25,6 +25,8 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 
 - [Android 管理対象アプリの保護](intune-mam-androidmanagedappprotection.md)
 - [Android 管理対象アプリの登録](intune-mam-androidmanagedappregistration.md)
+- [Android 管理対象アプリのセーフティネットアプリの検証の種類](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android 管理対象アプリのセーフティネットデバイスの構成証明の種類](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android モバイル アプリ ID](intune-mam-androidmobileappidentifier.md)
 - [アプリ管理レベル](intune-mam-appmanagementlevel.md)
 - [アプリケーションの種類](intune-wip-applicationtype.md)

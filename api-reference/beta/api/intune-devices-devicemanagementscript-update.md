@@ -4,12 +4,12 @@ description: devicemanagementscript オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fafb11f61f6e98eba90de9054550e673b6d6cbdd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 02c64f6ad5ba9fe81ef71c49197aedd204ffdce4
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141791"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572545"
 ---
 # <a name="update-devicemanagementscript"></a>devicemanagementscript の更新
 
@@ -40,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,18 +50,18 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイス管理スクリプトの一意識別子。|
+|id|String|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
-|説明|文字列|デバイス管理スクリプトの省略可能な説明です。|
+|description|String|デバイス管理スクリプトの省略可能な説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
-|scriptcontent|Binary|スクリプトの内容。|
+|scriptcontent|バイナリ|スクリプトの内容。|
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|デバイス管理スクリプトが最後に変更された日付と時刻。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理スクリプトを実行する実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|ブール値|スクリプト署名をチェックする必要があるかどうかを示します。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
+|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
 |roleScopeTagIds|String collection|この powershellscript インスタンスの範囲タグ id のリスト。|
-|runAs32Bit|ブール値|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
+|runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 
 
