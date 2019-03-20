@@ -2154,6 +2154,10 @@ items:
           href: api/intune-enrollment-importeddeviceidentity-update.md
         - name: importDeviceIdentityList アクション
           href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+        - name: searchExistingIdentities アクション
+          href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+        - name: searchExistingIdentities アクション
+          href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
       - name: インポートしたデバイス ID の結果
         href: resources/intune-enrollment-importeddeviceidentityresult.md
         items:
@@ -2246,6 +2250,12 @@ items:
           href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
         - name: unassignUserFromDevice アクション
           href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+        - name: assignResourceAccountToDevice アクション
+          href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+        - name: unassignResourceAccountFromDevice アクション
+          href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+      - name: Windows AutoPilot デバイスの種類
+        href: resources/intune-enrollment-windowsautopilotdevicetype.md
       - name: Windows Autopilot プロファイルの割り当ての状態の詳細
         href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
       - name: Windows Autopilot プロファイルの割り当ての状態
@@ -2958,8 +2968,6 @@ items:
         href: resources/intune-deviceconfig-defenderprotectiontype.md
       - name: Defender スキャンの種類
         href: resources/intune-deviceconfig-defenderscantype.md
-      - name: Defender スケジュール スキャン日
-        href: resources/intune-deviceconfig-defenderschedulescanday.md
       - name: Defender セキュリティ センター IT 連絡先の表示タイプ
         href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
       - name: Defender セキュリティ センター アプリからの通知の種類
@@ -4667,6 +4675,29 @@ items:
         href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
       - name: Windows ファイアウォール ネットワーク プロファイル
         href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+      - name: Windows ファイアウォール規則
+        href: resources/intune-deviceconfig-windowsfirewallrule.md
+      - name: Windows ファイアウォール規則のインターフェイスの種類
+        href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+      - name: Windows ファイアウォール規則のネットワーク プロファイルの種類
+        href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+      - name: Windows ファイアウォール規則のトラフィックの方向の種類
+        href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+      - name: Windows 正常性の監視の構成
+        href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+        items:
+        - name: 一覧表示する
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+        - name: 取得
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+        - name: 作成
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+        - name: 削除
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+      - name: Windows 正常性の監視スコープ
+        href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
       - name: Windows ID 保護の構成
         href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
         items:
@@ -4886,6 +4917,8 @@ items:
         href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
       - name: Windows Update インストール スケジュールのタイプ
         href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+      - name: Windows Update の通知の表示オプション
+        href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
       - name: Windows Update のスケジュール済みインストール
         href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
       - name: Windows Update の状態
@@ -5616,7 +5649,7 @@ items:
           href: api/intune-devices-windowsprotectionstate-get.md
         - name: 更新
           href: api/intune-devices-windowsprotectionstate-update.md
-    - name: モバイル アプリの管理
+    - name: モバイル アプリの管理 (MAM)
       href: resources/intune-mam-conceptual.md
       items:
       - name: Android 管理対象アプリの保護
@@ -5641,6 +5674,10 @@ items:
           href: api/intune-mam-androidmanagedappregistration-get.md
         - name: 作成
           href: api/intune-mam-androidmanagedappregistration-create.md
+      - name: Android 管理対象アプリのセーフティ ネットのアプリ認証の種類
+        href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+      - name: Android 管理対象アプリのセーフティ ネットのデバイス構成証明の種類
+        href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
       - name: Android モバイル アプリ ID
         href: resources/intune-mam-androidmobileappidentifier.md
       - name: アプリ管理レベル
@@ -6189,7 +6226,7 @@ items:
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
       - name: ビジネス向け Windows Hello 暗証番号 (PIN) の使用
         href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-    - name: 役割ベースのアクセス制御
+    - name: 役割ベースのアクセス制御 (RBAC)
       href: /resources/intune-rbac-conceptual.md
       items:
       - name: デバイスおよびアプリ管理の割り当てられた役割の詳細
@@ -8399,6 +8436,67 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
+    - name: スケジュール
+      href: resources/schedule.md
+      items:
+      - name: 作成または置換
+        href: api/team-put-schedule.md
+      - name: 取得
+        href: api/schedule-get.md
+      - name: 共有
+        href: api/schedule-share.md
+    - name: グループのスケジューリング
+      href: resources/schedulinggroup.md
+      items:
+      - name: 作成
+        href: api/schedule-post-schedulinggroups.md
+      - name: 一覧表示する
+        href: api/schedule-list-schedulinggroups.md
+      - name: 取得
+        href: api/schedulinggroup-get.md
+      - name: 置換
+        href: api/schedulinggroup-put.md
+      - name: 削除
+        href: api/schedulinggroup-delete.md
+    - name: シフト
+      href: resources/shift.md
+      items:
+      - name: 作成
+        href: api/schedule-post-shifts.md
+      - name: 一覧表示する
+        href: api/schedule-list-shifts.md
+      - name: 取得
+        href: api/shift-get.md
+      - name: 置換
+        href: api/shift-put.md
+      - name: 削除
+        href: api/shift-delete.md
+    - name: 休暇
+      href: resources/timeoff.md
+      items:
+      - name: 作成
+        href: api/schedule-post-timesoff.md
+      - name: 一覧表示する
+        href: api/schedule-list-timesoff.md
+      - name: 取得
+        href: api/timeoff-get.md
+      - name: 置換
+        href: api/timeoff-put.md
+      - name: 削除
+        href: api/timeoff-delete.md
+    - name: 休暇の理由
+      href: resources/timeoffreason.md
+      items:
+      - name: 作成
+        href: api/schedule-post-timeoffreasons.md
+      - name: 一覧表示する
+        href: api/schedule-list-timeoffreasons.md
+      - name: 取得
+        href: api/timeoffreason-get.md
+      - name: 置換
+        href: api/timeoffreason-put.md
+      - name: 削除
+        href: api/timeoffreason-delete.md
     - name: ドライブ
       href: resources/drive.md
       items:
@@ -8679,9 +8777,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: f8e523c9607558df8b287e684f4bfef9505ff617
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 8f241db6c350664573899b4c25bd2fefb55d7f1b
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458695"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572559"
