@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f22796c779e93217cb28da29c333b4ab27e4d5c2
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458709"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571425"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -18,7 +18,39 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="march-2019"></a>2019 年 3 月
 
-### <a name="directory-apis"></a>Directory API
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい列挙型を追加しました。<br/>[androidManagedAppSafetyNetAppsVerificationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetappsverificationtype?view=graph-rest-beta)<br/>[androidManagedAppSafetyNetDeviceAttestationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype?view=graph-rest-beta)<br/>[windowsAutopilotDeviceType](/graph/api/resources/intune-enrollment-windowsautopilotdevicetype?view=graph-rest-beta)<br/>[windowsFirewallRuleInterfaceTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallruleinterfacetypes?view=graph-rest-beta)<br/>[windowsFirewallRuleNetworkProfileTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes?view=graph-rest-beta)<br/>[windowsFirewallRuleTrafficDirectionType](/graph/api/resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype?view=graph-rest-beta)<br/>[windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)<br/>[windowsUpdateNotificationDisplayOption](/graph/api/resources/intune-deviceconfig-windowsupdatenotificationdisplayoption?view=graph-rest-beta)<br/>|
+|追加|ベータ版|[importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) コレクションに [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) アクションを追加しました |
+|追加|ベータ版|[windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) に [assignResourceAccountToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice?view=graph-rest-beta) アクションを追加しました |
+|追加|ベータ版|[windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) に [unassignResourceAccountFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice?view=graph-rest-beta) アクションを追加しました |
+|削除|ベータ版|次の列挙型を削除しました。<br/>**defenderScheduleScanDay**<br/>|
+|追加|ベータ版|[androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) エンティティに **requiredAndroidSafetyNetDeviceAttestationType**、**appActionIfAndroidSafetyNetDeviceAttestationFailed**、**requiredAndroidSafetyNetAppsVerificationType**、および **appActionIfAndroidSafetyNetAppsVerificationFailed** プロパティを追加しました|
+|追加|ベータ版|[androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp?view=graph-rest-beta) エンティティに **supportsOemConfig** プロパティを追加しました|
+|追加|ベータ版|[androidManagedStoreAppConfiguration](/graph/api/resources/intune-apps-androidmanagedstoreappconfiguration?view=graph-rest-beta) エンティティに **appSupportsOemConfig** プロパティを追加しました|
+|追加|ベータ版|[defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) エンティティに **requiredAndroidSafetyNetDeviceAttestationType**、**appActionIfAndroidSafetyNetDeviceAttestationFailed**、**requiredAndroidSafetyNetAppsVerificationType**、および **appActionIfAndroidSafetyNetAppsVerificationFailed** プロパティを追加しました|
+|追加|ベータ版|[depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) エンティティに、**iCloudStorageDisabled** プロパティと **chooseYourLockScreenDisabled** プロパティを追加しました|
+|追加|ベータ版|[iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) エンティティに **roleScopeTagIds** プロパティを追加しました|
+|追加|ベータ版|[managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) エンティティに **allowedOutboundClipboardSharingExceptionLength** プロパティを追加しました|
+|追加|ベータ版|[sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta) エンティティに **fastFirstSignIn** プロパティを追加しました|
+|追加|ベータ版|[windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) エンティティに **tpmRequired** プロパティを追加しました|
+|追加|ベータ版|[windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) エンティティに **firewallRules** プロパティを追加しました|
+|追加|ベータ版|[windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) エンティティに、**authenticationWebSignIn**、**privacyDisableLaunchExperience**、および **appManagementPackageFamilyNamesToLaunchAfterLogOn** プロパティを追加しました|
+|削除|ベータ版|[windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) エンティティから **defenderScheduleScanDay** プロパティを削除しました|
+|追加|ベータ版|[windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) エンティティに **deviceType** プロパティを追加しました|
+|追加|ベータ版|[windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) エンティティに、**resourceName**、**skuNumber**、**systemFamily**、**azureActiveDirectoryDeviceId**、および **managedDeviceId** プロパティを追加しました|
+|削除|ベータ版|[windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta) エンティティから **edgeKioskResetAfterIdleTimeInMinutes** プロパティを削除しました|
+|追加|ベータ版|[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) エンティティに **userWindowsUpdateScanAccess** プロパティと **updateNotificationLevel** プロパティを追加しました|
+|追加|ベータ版|[excludedApps](/graph/api/resources/intune-apps-excludedapps?view=graph-rest-beta) 複合型に **teams** プロパティを追加しました|
+|追加|ベータ版|[windowsKioskAppBase](/graph/api/resources/intune-deviceconfig-windowskioskappbase?view=graph-rest-beta) 複合型に **autoLaunch** プロパティを追加しました|
+|追加|ベータ版|[windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta) 複合型に **allowAccessToDownloadsFolder** プロパティを追加しました|
+|追加|ベータ版|[androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta) 列挙型に **lowSecurityBiometric** メンバーを追加しました|
+|追加|ベータ版|[managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta) 列挙型に、**androidBootloaderUnlocked** および **androidFactoryRomModified** メンバーを追加しました|
+
+### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -398,7 +430,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 変更 | ベータ版 | [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta) エンティティを変更します。|
-| 追加 | ベータ版 | [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) エンティティ、および次のメソッドとアクションを追加しました。<br> [リスト](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [作成](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [キャンセル](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
+| 追加 | ベータ版 | [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) エンティティ、および次のメソッドとアクションを追加しました。<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [作成](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [キャンセル](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
 | 追加 | ベータ版 | [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta) の[更新](/graph/api/privilegedrolesettings-update?view=graph-rest-beta)を追加しました|
 | 削除 |ベータ版| [自分でロールの割り当てをアクティブにする](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)を廃止しました。|
 
