@@ -1,29 +1,29 @@
 ---
 title: 'ノートブック: getNotebookFromWebUrl'
-description: プロパティと URL パスを使用してノートブックのオブジェクトの関係を取得します。
+description: URL パスを使用して、ノートブックオブジェクトのプロパティとリレーションシップを取得します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 226cbd70343feaf8fe5404aac6077f9b2438aba8
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b5067f50b1e03c124af8323709fc7b3f70af871b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29982070"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789649"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>ノートブック: getNotebookFromWebUrl
 
-[!ベータ版についての免責事項を含める]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-URL パスを使用して、プロパティと、[ノートブック](../resources/notebook.md)のオブジェクトの関係を取得します。
+URL パスを使用して、[ノートブック](../resources/notebook.md)オブジェクトのプロパティとリレーションシップを取得します。
 
-場所は、Office 365、グループのノート、または Office 365 で SharePoint サイトでホストされているチームのノート パソコンのユーザーのノートブックを指定できます。
+この場所は、office 365、グループノートブック、または office 365 上の SharePoint サイトでホストされるチームノートブックのユーザーノートブックであることができます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -35,21 +35,21 @@ POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
 POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、ノートブックを取得する完全な URL パスの JSON 表現を指定します。
+要求本文で、取得するノートブックへの完全な URL パスの JSON 表記を指定します。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | 取得するためにノートブックの URL パスです。 含めることも、"onenote:"プレフィックス。|
+| `webUrl`     |`String`     | 取得するノートブックの URL パス。 また、"onenote:" というプレフィックスを含めることもできます。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [notebook](../resources/notebook.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[notebook](../resources/notebook.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

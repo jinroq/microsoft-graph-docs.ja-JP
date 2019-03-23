@@ -1,21 +1,21 @@
 ---
-title: チャネル内のメッセージに返信します。
-description: チャネル内の既存のメッセージに返信します。
+title: チャネル内のメッセージに返信する
+description: チャネル内の既存メッセージに返信します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 700180a6cfc328a62237f3dfffe663bb6c57a24e
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 15e1bfffe7d7634092937a0605debfd5294b142b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039566"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789677"
 ---
-# <a name="reply-to-a-message-in-a-channel"></a>チャネル内のメッセージに返信します。
+# <a name="reply-to-a-message-in-a-channel"></a>チャネル内のメッセージに返信する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[チャネル](../resources/channel.md)で[メッセージ](../resources/chatmessage.md)に返信を作成します。
+指定した[チャネル](../resources/channel.md)内の[メッセージ](../resources/chatmessage.md)に対する新しい返信を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -32,16 +32,16 @@ ms.locfileid: "30039566"
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文に、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON の形式を指定します。 Body プロパティだけでは、必須、その他のプロパティは省略可能です。
+要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 body プロパティのみが必須で、その他のプロパティはオプションです。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`が作成された[メッセージ](../resources/chatmessage.md)で応答コード。
+成功した場合、この`201 Created`メソッドは作成された[メッセージ](../resources/chatmessage.md)で応答コードを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -51,7 +51,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {

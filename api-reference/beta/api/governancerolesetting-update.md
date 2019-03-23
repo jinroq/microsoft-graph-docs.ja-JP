@@ -1,30 +1,30 @@
 ---
-title: GovernanceRoleSetting を更新します。
-description: GovernanceRoleSetting のプロパティを更新します。
+title: governanceRoleSetting の更新
+description: governanceRoleSetting のプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509330"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789621"
 ---
-# <a name="update-governancerolesetting"></a>GovernanceRoleSetting を更新します。
+# <a name="update-governancerolesetting"></a>governanceRoleSetting の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[GovernanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。
+[governanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** この API では、依頼者の少なくとも 1 つある必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
+>**注:** また、この API では、リクエスターがリソースに`Active`対して少なくと`owner`も`user access administrator`1 つの管理者ロールの割り当て (または) を持っている必要があります。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -39,28 +39,28 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>要求本文
-要求の本体を更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。 
+要求本文で、更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。 
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|管理者対象のロール割り当てを追加しようとするときに評価されるルールの設定。|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|直接的なメンバーの役割の割り当てを追加する際に管理者に評価されるルールの設定。|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|ユーザーが対象のロール割り当てを追加するときに評価されるルールの設定。 サポートされていない`pimforazurerbac`ここでは、シナリオと、将来のシナリオで使用可能な場合があります。|
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|ユーザーが彼の役割の割り当てを有効にしようとした場合に評価されるルールの設定。|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|管理者が対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。|
+|adminmembersettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|管理者が直接メンバーの役割の割り当てを追加しようとしたときに評価されるルールの設定。|
+|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|ユーザーが対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。 これは、現在の`pimforazurerbac`シナリオではサポートされておらず、今後のシナリオで利用できる場合があります。|
+|usermembersettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|ユーザーが役割の割り当てをアクティブ化しようとしたときに評価されるルールの設定。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。 
 
 ### <a name="error-codes"></a>エラー コード
-この API では、標準の HTTP エラー コードを返します。 さらに、次のカスタム エラー コードを返します。
+この API は、標準の HTTP エラーコードを返します。 さらに、次のカスタムエラーコードが返されます。
 
 |エラー コード     | エラー メッセージ         | 詳細             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。
-| 400 BadRequest| InvalidRoleSetting    | 要求の本文に記載されている[governanceRuleSettings](../resources/governancerulesetting.md)の値が有効ではありません。
+| 400 badrequest| RoleSettingNotFound   | [governanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。
+| 400 badrequest| invalidrolesetting    | 要求本文で指定された[governanceRuleSettings](../resources/governancerulesetting.md)値が無効です。
 
 ## <a name="example"></a>例 
-この例では、サブスクリプション Wingtip toys 社の商品にカスタム ロール 3 のロール設定を更新します。
+この例では、サブスクリプションの Wingtip Toys-製品のカスタムロール3のロール設定を更新します。
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",

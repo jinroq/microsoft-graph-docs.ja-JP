@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共有アクセス許可の変更
 localization_priority: Normal
-ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fceffc8cc530e1beec9062aea6552d1dcc825c1e
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480727"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789663"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -56,7 +56,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | プロパティ     | 種類   | 説明                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | アクセス許可の種類の配列。 |
+| **roles**    | String collection | アクセス許可の種類の配列。 |
 
 ## <a name="response"></a>応答
 

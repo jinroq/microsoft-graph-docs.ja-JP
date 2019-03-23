@@ -1,28 +1,28 @@
 ---
-title: PrivilegedRoleSettings を更新します。
-description: 役割の設定を特定の役割の設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
+title: privilegedRoleSettings の更新
+description: 指定した役割設定の役割設定を更新します。 privilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: f416656362c5be0ccdaa2b3aaa7812511e357875
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641121"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789607"
 ---
-# <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings を更新します。
+# <a name="update-privilegedrolesettings"></a>privilegedRoleSettings の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-役割の設定を特定の役割の設定を更新します。 [PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。
+指定した役割設定の役割設定を更新します。 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** 依頼者は、次のロールのいずれかの必要があります: ロールの権限を持つ管理者、グローバル管理者、セキュリティ管理者、またはセキュリティのリーダーです。 
+>**注:** 要求者は、特権ロール管理者、全体管理者、セキュリティ管理者、またはセキュリティ閲覧者のいずれかの役割を持っている必要があります。 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -38,29 +38,29 @@ PUT /privilegedRoles/{id}/settings
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトの JSON 表記を指定します。
 
-役割の設定を更新するときは指定するプロパティを次の表に一覧します。
+次の表に、役割の設定を更新するときに指定できるプロパティを示します。
 
 |プロパティ|型|説明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|ロールが有効な場合の期間です。 必須です。|
-|id|string|ロールの設定の一意の識別子です。 読み取り専用です。 必須です。|
-|isMfaOnElevationConfigurable|ブール値|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。 必須です。|
-|lastGlobalAdmin|Boolean|内部使用のみ。|
-|maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。 必須です。|
-|mfaOnElevation|Boolean|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。 必須です。|
-|minElevationDuration|duration|アクティブ化されたロールの最小の期間です。 必須です。|
-|notificationToUserOnElevation|Boolean|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。 必須です。|
-|ticketingInfoOnElevation|Boolean|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。 必須です。|
-|approvalOnElevation|Boolean|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。 必須です。|
-|approverIds|配列|承認 Id、ライセンス認証の必要な場合は承認の一覧です。|
+|elevationDuration|duration|役割がアクティブ化される期間。 必須。|
+|id|string|ロール設定の一意の識別子。 読み取り専用です。 必須。|
+|isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。 必須。|
+|lastglobaladmin|ブール型|内部使用のみ。|
+|maxelavationduration|duration|アクティブ化されたロールの最大期間。 必須。|
+|mfaonelevation|ブール型|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須。|
+|minElevationDuration|duration|アクティブ化されたロールの最小期間。 必須。|
+|notificationToUserOnElevation|ブール型|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須。|
+|ticketingInfoOnElevation|ブール型|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須。|
+|approvalonelevation|ブール型|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須。|
+|承認の検証 ds|String collection|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

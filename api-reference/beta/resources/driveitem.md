@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9fa2f5cb9d40b0f8f12a5d1a6709eb03bf2975ba
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481490"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789642"
 ---
 # <a name="driveitem-resource-type"></a>drive item リソースの種類
 
@@ -20,12 +20,12 @@ ms.locfileid: "30481490"
 
 **driveItem** リソースのアドレス指定には、主に 2 つの方法があります。
 
-* **** を使用した、`drive/items/{item-id}` 一意識別子による方法
+* `drive/items/{item-id}` を使用した、**driveItem** 一意識別子による方法
 * `/drive/root:/path/to/file` を使用した、ファイル システム パスによる方法
 
 **DriveItem** リソースには、driveItem の ID および機能に関するデータを提供するプロパティとしてモデル化されたファセットがあります。例:
 
-* フォルダーには、[**フォルダー ファセット **][folder] があります
+* フォルダーには、[**フォルダー ファセット **][folder] があります。
 * ファイルには、[**ファイル ファセット **][file] があります。
 * 画像には[**画像ファセット **][image] とそのファイル ファセットがあります。
 * カメラで撮影した画像 (写真) には[**写真ファセット **][photo] があります。写真ファセットは、アイテムを写真として識別し、撮影日時と撮影デバイスのプロパティを提供します。
@@ -49,6 +49,7 @@ ms.locfileid: "30481490"
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -72,11 +73,13 @@ ms.locfileid: "30481490"
 
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "content": { "@odata.type": "Edm.Stream" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -98,17 +101,16 @@ ms.locfileid: "30481490"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類               | 説明
+| プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
+| content              | Stream             | コンテンツのストリーム (アイテムがファイルを表す場合)。
 | createdBy            | [identitySet][]    | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | createdDateTime      | DateTimeOffset     | アイテム作成の日時。読み取り専用です。
-| cTag                 | String
-             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
+| cTag                 | String             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
 | deleted              | [deleted][]        | アイテムの削除状態に関する情報。読み取り専用です。
 | description          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
-| eTag                 | String
-             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
+| eTag                 | String             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
 | file                 | [file][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
 | folder               | [フォルダー][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
@@ -117,8 +119,7 @@ ms.locfileid: "30481490"
 | lastModifiedBy       | [identitySet][]    | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset     | アイテムが最後に変更された日時。読み取り専用です。
 | location             | [geoCoordinates][] | 場所のメタデータ (アイテムに場所データが含まれている場合)。読み取り専用です。
-| name                 | String
-             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 | package              | [package][]        | これがある場合、アイテムはフォルダーやファイルではなく、パッケージです。パッケージは、コンテキスト次第で、ファイルとして、あるいはフォルダーとして扱われます。読み取り専用です。
 | parentReference      | [itemReference][]  | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。
 | 写真                | [photo][]          | 写真のメタデータ (アイテムが写真である場合)。読み取り専用です。
@@ -132,22 +133,25 @@ ms.locfileid: "30481490"
 | specialFolder        | [specialFolder][]  | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。
 | video                | [video][]          | ビデオのメタデータ (アイテムがビデオである場合)。読み取り専用です。
 | webDavUrl            | String             | アイテムの WebDAV 互換性のある URL。
-| webUrl               | 文字列             | ブラウザーでリソースを表示するための URL。読み取り専用です。
+| webUrl               | String             | ブラウザーでリソースを表示するための URL。読み取り専用です。
 
 **注:** eTag プロパティと cTag プロパティは、コンテナー (フォルダー) 上での機能が異なります。cTag 値は、フォルダーのいずれかの子孫のコンテンツまたはメタデータが変更されると変更されます。eTag 値は、子孫から派生したプロパティ (**childCount** や **lastModifiedDateTime** など) 以外のフォルダーのプロパティが変更されたときにのみ、変更されます。
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ       | 種類                            | 説明
-|:-------------------|:--------------------------------|:--------------------------
-| アクティビティ         | [itemActivity][] コレクション     | このアイテムに対して行われた最近のアクティビティのリストです。
-| 分析          | [itemanalytics][]リソース      | このアイテムに対して行われたビューアクティビティに関する分析。
-| content            | Stream                          | コンテンツのストリーム (アイテムがファイルを表す場合)。
-| children           | driveitem コレクション            | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
-| listItem           | [listItem][]                    | SharePoint のドライブの場合は、関連付けられているドキュメントライブラリのリストアイテム。 読み取り専用。 Null 許容型。
-| アクセス許可        | [permission][] コレクション       | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
-| thumbnails         | [thumbnailSet][] コレクション     | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページを参照してください。読み取り専用です。Null 許容型。
-| 最新           | [drive itemversion][]コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[以前のバージョンを取得][]する」を参照してください。 読み取り専用です。 Null 許容型。
+| リレーションシップ       | 型                        | 説明
+|:-------------------|:----------------------------|:--------------------------
+| アクティビティ         | [itemActivity][] コレクション | このアイテムに対して行われた最近のアクティビティのリストです。
+| analytics          | [itemAnalytics][] リソース  | このアイテムに対して行われたビューアクティビティに関する分析。
+| children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
+| createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
+| lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
+| listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用。 Null 許容型。
+| アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
+| 講読      | [subscription][]コレクション | アイテムのサブスクリプションのセット。 ドライブのルートでのみサポートされています。
+| thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
+| versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型。
+| workbook           | [workbook][]                | Excel スプレッドシートであるファイルの場合、スプレッドシートのコンテンツを操作するためにブックの API にアクセスします。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
@@ -160,16 +164,17 @@ ms.locfileid: "30481490"
 | @microsoft.graph.sourceUrl        | string | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
 
 **注:**@microsoft.graph.downloadUrl の値は短時間限定の URL であるため、キャッシュすることはできません。
-URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。 ユーザーのファイルアクセス許可を削除しても、その URL はすぐに無効になることはありません。
+URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
+ユーザーのファイルアクセス許可を削除しても、その URL はすぐに無効になることはありません。
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                                   | REST パス
+| Method                                                   | REST パス
 |:---------------------------------------------------------|:------------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [アクティビティを一覧表示する](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
 | [分析を取得する][]                                        | `GET /drive/items/{item-id}/analytics`
-| [間隔でアクティビティを取得する][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
+| [間隔によりアクティビティを取得する][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [子を一覧表示する](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [バージョンを一覧表示する](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [アイテムを作成する](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
@@ -188,13 +193,13 @@ URL は短い期間 (1 時間) だけ使用でき、その後は無効になり�
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を削除する](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [WebSocket チャネルの取得][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [アイテムのプレビュー][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [アイテムをプレビューする][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [分析を取得する]: ../api/itemanalytics-get.md
-[間隔でアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
+[間隔によりアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OneDrive for Business または SharePoint のドキュメント ライブラリでは、**driveItem** に[フォルダー][] ファセットがある場合、**cTag** プロパティは返されません。
 
@@ -212,7 +217,7 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md
-[itemanalytics]: itemanalytics.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
@@ -226,9 +231,11 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
-[video]: video.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[ビデオ]: video.md
+[workbook]: workbook.md
+[ユーザー]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

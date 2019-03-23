@@ -4,12 +4,12 @@ description: tiindicator オブジェクトのプロパティを更新します�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ad5b61f7a353fe9fbd2514bb82e129a0ca262310
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 55613e3c13695a502b43c127c1164d2adf9f6534
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481280"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789670"
 ---
 # <a name="update-tiindicator"></a>Update tiIndicator
 
@@ -23,9 +23,9 @@ ms.locfileid: "30481280"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | ThreatIndicators application.readwrite.ownedby |
+| 委任 (職場または学校のアカウント)     | ThreatIndicators.ReadWrite.OwnedBy |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | ThreatIndicators application.readwrite.ownedby |
+| アプリケーション                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -39,34 +39,32 @@ PATCH /security/tiIndicators/{id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| 承認 | ベアラー {コード} が**必要です** |
+| Authorization | ベアラー {コード} が**必要です** |
 |Prefer | 戻り値 = 表現 |
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |アクション|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 可能な値は、`unknown`、`allow`、`block`、`alert` です。|
 |activitygroupnames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
-|additionalinformation|String
-|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
+|additionalinformation|String|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
-|説明|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
-|diamondModel|[diamondModel](#diamondModel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
+|description|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
+|diamondModel|[diamondModel](#diamondmodel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
 |expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`2014-01-01T00:00:00Z` のようになります。|
 |externalId|String|インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。|
 |isActive|ブール型|システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
-|"出てきたチェイン"|[](#killChain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
-|knownfalse 陽性|String
-|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
+|"出てきたチェイン"|[](#killchain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
+|knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
 |lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
 |悪意のある refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
 |「いいえ veonly」|ブール型|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。|
 |重大度|Int32|インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。|
 |tags|String コレクション|任意のタグ/キーワードを格納する文字列の JSON 配列。|
-|tlpLevel|[tlpLevel](#tlpLevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。|
+|tlpLevel|[tlpLevel](#tlplevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。|
 
 ### <a name="diamondmodel-values"></a>diamondModel の値
 

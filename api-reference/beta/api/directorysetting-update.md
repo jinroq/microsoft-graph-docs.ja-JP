@@ -1,23 +1,23 @@
 ---
-title: ディレクトリの設定を更新します。
-description: 特定のディレクトリの設定オブジェクトのプロパティを更新します。
+title: ディレクトリ設定を更新する
+description: 特定のディレクトリ設定オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baaf6994f7052155173dd58b2c6b021939dc7ba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529097"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789614"
 ---
-# <a name="update-a-directory-setting"></a>ディレクトリの設定を更新します。
+# <a name="update-a-directory-setting"></a>ディレクトリ設定を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のディレクトリの設定オブジェクトのプロパティを更新します。
+特定のディレクトリ設定オブジェクトのプロパティを更新します。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 バージョンの名前は*groupSettings を更新*します。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンが、 *groupsettings を更新*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,7 +29,8 @@ ms.locfileid: "29529097"
 |アプリケーション | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->テナント全体を更新または、特定の設定をグループ化します。
+<!-- { "blockType": "ignored" } -->
+テナント全体またはグループ固有の設定を更新します。
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
@@ -44,7 +45,7 @@ PATCH /groups/{id}/settings/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| values | settingValue | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
+| values | [settingvalue](../resources/settingvalue.md)コレクション | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
 
 ## <a name="response"></a>応答
 

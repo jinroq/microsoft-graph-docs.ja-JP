@@ -1,21 +1,21 @@
 ---
-title: Orgcontact を更新します。
-description: Orgcontact オブジェクトのプロパティを更新します。
+title: orgcontact への更新
+description: orgcontact へオブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517884"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789635"
 ---
-# <a name="update-orgcontact"></a>Orgcontact を更新します。
+# <a name="update-orgcontact"></a>orgcontact への更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Orgcontact オブジェクトのプロパティを更新します。
+orgcontact へオブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,19 +31,19 @@ Orgcontact オブジェクトのプロパティを更新します。
 PATCH /contacts/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|ブール値||
+|onPremisesSyncEnabled|Boolean||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -56,12 +56,12 @@ PATCH /contacts/{id}
 |proxyAddresses|String||
 |state|文字列型 (String)||
 |streetAddress|String||
-|surname|文字列||
-|businessPhones|String||
+|surname|String||
+|businessPhones|String collection||
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[orgContact](../resources/orgcontact.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[orgcontact](../resources/orgcontact.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
