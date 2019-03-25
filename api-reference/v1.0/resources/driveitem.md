@@ -5,14 +5,14 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482421"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789628"
 ---
-# <a name="driveitem-resource-type"></a>DriveItem リソース型
+# <a name="driveitem-resource-type"></a>driveItem リソース型
 
 **driveItem** リソースは、ドライブに格納されているファイル、フォルダーなどのアイテムを表します。OneDrive および SharePoint 内のすべてのファイル システム オブジェクトが、**driveItem** リソースとして返されます。
 
@@ -74,6 +74,7 @@ ms.locfileid: "30482421"
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -142,6 +143,7 @@ ms.locfileid: "30482421"
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
 | listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用です。 Null 許容型。
 | アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
+| subscriptions      | [subscription][] コレクション | アイテムのサブスクリプションのセット。 ドライブのルートでのみサポートされています。
 | thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
 | versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型。
 | workbook           | [workbook][]                | Excel スプレッドシートであるファイルの場合、スプレッドシートのコンテンツを操作するためにブックの API にアクセスします。 Null 許容型。
@@ -156,7 +158,9 @@ ms.locfileid: "30482421"
 | @microsoft.graph.downloadUrl      | string | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
 | @microsoft.graph.sourceUrl        | string | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
 
-**注:**@microsoft.graph.downloadUrl の値は短時間限定の URL であるため、キャッシュすることはできません。URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
+**注:**@microsoft.graph.downloadUrl の値は短時間限定の URL であるため、キャッシュすることはできません。
+URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
+ユーザーのファイルへのアクセス許可を削除しても、すぐに URL が無効にならない場合があります。
 
 ## <a name="methods"></a>メソッド
 
@@ -180,6 +184,7 @@ ms.locfileid: "30482421"
 | [アクセス許可を追加する](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を削除する](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [WebSocket チャネルを取得する][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [アイテムをプレビューする][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
@@ -198,6 +203,7 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [folder]: folder.md
 [以前のバージョンの取得]: ../api/driveitem-list-versions.md
 [サムネイルの取得]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemReference]: itemreference.md
@@ -212,6 +218,7 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [ビデオ]: video.md
 [workbook]: workbook.md

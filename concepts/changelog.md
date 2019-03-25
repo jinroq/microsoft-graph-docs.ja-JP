@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 058b9c292690cce0d0a0462b82f73baf6618d74b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571425"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789691"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,14 @@ ms.locfileid: "30571425"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="march-2019"></a>2019 年 3 月
+
+### <a name="directory-apis"></a>Directory API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-1.0) リソースに追加。|
+| 追加 | ベータ版および v1.0 | 追加の **complianceExpirationDateTime**、**profileType** と **systemLabels** のプロパティを[デバイス](/graph/api/resources/device?view=graph-rest-1.0)リソースに追加。|
+| 追加 | ベータ版および v1.0 | **isResourceAccount** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースに追加。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|
@@ -50,13 +58,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta) 列挙型に **lowSecurityBiometric** メンバーを追加しました|
 |追加|ベータ版|[managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta) 列挙型に、**androidBootloaderUnlocked** および **androidFactoryRomModified** メンバーを追加しました|
 
-### <a name="directory-apis"></a>ディレクトリ API
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | v1.0 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-1.0) リソースに追加。|
-| 追加 | ベータ版および v1.0 | 追加の **complianceExpirationDateTime**、**profileType** と **systemLabels** のプロパティを[デバイス](/graph/api/resources/device?view=graph-rest-1.0)リソースに追加。|
-| 追加 | ベータ版および v1.0 | **isResourceAccount** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースに追加。|
+| 追加 | ベータ版 | [schedule](/api-reference/beta/resources/schedule.md)、[schedulingGroup](/api-reference/beta/resources/schedulinggroup.md)、[shift](/api-reference/beta/resources/shift.md)、[timeOffReason](/api-reference/beta/resources/timeoffreason.md)、[timeOff](/api-reference/beta/resources/timeoff.md) のリソースと関連するメソッドを追加しました。 |
+
+### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0        | [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) エンティティに **subscriptions** ナビゲーション プロパティを追加しました |
 
 ## <a name="february-2019"></a>2019 年 2 月
 
@@ -66,6 +78,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加        | ベータ版          | Dynamics 365 Business Central の財務 API を追加しました。 詳細については、[財務 API のリファレンス](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0)を参照してください。|
 
+### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset 型に **expirationDateTime** プロパティを追加しました。 |
+| 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) 文字列型に **password** プロパティを追加しました。 |
 
 ## <a name="february-2019"></a>2019 年 2 月
 
