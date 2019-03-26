@@ -1,27 +1,47 @@
 ---
 title: educationAssignmentIndividualRecipient リソースの種類
-description: 'Assignment.assignTo プロパティ内で使用します。 個々 の受信者リストを設定すると、選択したクラスには、 '
+description: 'プロパティへの割り当ての中で使用されます。 個別の受信者一覧に設定すると、クラス内の学生が選択されます。 '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: de04344aae43160f5fe601c7ec4bf05337400f60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 736345901faeeb4d3fab4d417752b684f1e19307
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522491"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799992"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="17d1f-104">educationAssignmentIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="17d1f-104">educationAssignmentIndividualRecipient resource type</span></span>
+# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="6db99-104">educationAssignmentIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6db99-104">educationAssignmentIndividualRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17d1f-105">[Assignment.assignTo](educationassignment.md)プロパティ内で使用します。</span><span class="sxs-lookup"><span data-stu-id="17d1f-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="17d1f-106">個々 の受信者リストを設定すると、クラス内で選択した受講者が表示されます送信オブジェクト割り当てを発行するとします。</span><span class="sxs-lookup"><span data-stu-id="17d1f-106">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="6db99-105">プロパティへの[割り当て](educationassignment.md)の中で使用されます。</span><span class="sxs-lookup"><span data-stu-id="6db99-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="6db99-106">個別の受信者一覧に設定した場合、クラス内の学生は、割り当てが発行されたときに送信オブジェクトを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="6db99-106">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="17d1f-107">このリソースは、 [educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。</span><span class="sxs-lookup"><span data-stu-id="17d1f-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="6db99-107">このリソースは[educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。</span><span class="sxs-lookup"><span data-stu-id="6db99-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="17d1f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="17d1f-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6db99-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6db99-108">Properties</span></span>
+| <span data-ttu-id="6db99-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6db99-109">Property</span></span>     | <span data-ttu-id="6db99-110">型</span><span class="sxs-lookup"><span data-stu-id="6db99-110">Type</span></span>   |<span data-ttu-id="6db99-111">説明</span><span class="sxs-lookup"><span data-stu-id="6db99-111">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="6db99-112">recipients</span><span class="sxs-lookup"><span data-stu-id="6db99-112">recipients</span></span>|<span data-ttu-id="6db99-113">String collection</span><span class="sxs-lookup"><span data-stu-id="6db99-113">String collection</span></span>|<span data-ttu-id="6db99-114">受信者の id のコレクション。</span><span class="sxs-lookup"><span data-stu-id="6db99-114">A collection of ids of the recipients.</span></span>|
 
-<span data-ttu-id="17d1f-109">なし。</span><span class="sxs-lookup"><span data-stu-id="17d1f-109">None.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6db99-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6db99-115">JSON representation</span></span>
+
+<span data-ttu-id="6db99-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6db99-116">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationAssignmentIndividualRecipient"
+}-->
+
+```json
+{
+  "recipients": ["String"]
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
