@@ -2,12 +2,12 @@
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 localization_priority: Priority
-ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644322"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799999"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -38,8 +38,7 @@ ms.locfileid: "30644322"
 |createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ。|
 |lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ。|
 |deleted|Boolean|メッセージが削除済み (回復可能) かどうかを示します。|
-|deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージ削除時のタイムスタンプ。 |
-|subject|string|メッセージの件名。 省略可能。|
+|deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージが削除された時間のタイムスタンプ、または削除されていない場合は Null です。 |
 |body|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 既定ではプレーンテキストを返しますが、クエリ パラメーターの一部としてアプリケーションで HTML を選択できます|
 |summary|string|プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト|
 |mentions|[chatMessageMention](chatmention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています。|
@@ -78,7 +77,6 @@ ms.locfileid: "30644322"
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},

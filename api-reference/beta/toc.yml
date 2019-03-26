@@ -6532,6 +6532,10 @@ items:
         href: api/educationclass-list-assignments.md
       - name: 割り当てを作成する
         href: api/educationclass-post-assignments.md
+      - name: カテゴリを一覧表示する
+        href: api/educationclass-list-categories.md
+      - name: カテゴリを作成する
+        href: api/educationclass-post-category.md
     - name: ユーザー
       href: resources/educationuser.md
       items:
@@ -6570,6 +6574,19 @@ items:
         href: api/educationassignment-list-submissions.md
       - name: リソース フォルダーの URL を取得する
         href: api/educationassignment-getresourcesfolderurl.md
+      - name: カテゴリを一覧表示する
+        href: api/educationassignment-list-categories.md
+      - name: カテゴリの追加
+        href: api/educationassignment-add-categories.md
+      - name: カテゴリを削除する
+        href: api/educationassignment-remove-category.md
+    - name: カテゴリ
+      href: resources/educationcategory.md
+      items:
+      - name: カテゴリを取得する
+        href: api/educationcategory-get.md
+      - name: カテゴリを削除する
+        href: api/educationcategory-delete.md
     - name: 申請
       href: resources/educationsubmission.md
       items:
@@ -8777,9 +8794,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 8f241db6c350664573899b4c25bd2fefb55d7f1b
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 81326f042b8107993f5d35865899849ed4de2856
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572559"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800020"
