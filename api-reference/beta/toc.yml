@@ -101,6 +101,8 @@ items:
         href: api/user-reminderview.md
       - name: 空き時間スケジュールを取得する
         href: api/calendar-getschedule.md
+      - name: 会議の日時を検索する
+        href: api/user-findmeetingtimes.md
       - name: 会議室一覧を検索する
         href: api/user-findroomlists.md
       - name: 会議室を検索する
@@ -585,10 +587,10 @@ items:
         href: api/calendar-list-events.md
       - name: イベントを作成する
         href: api/calendar-post-events.md
-      - name: 会議の日時を検索する
-        href: api/user-findmeetingtimes.md
       - name: 空き時間スケジュールを取得する
         href: api/calendar-getschedule.md
+      - name: 会議の日時を検索する
+        href: api/user-findmeetingtimes.md
       - name: 会議室一覧を検索する
         href: api/user-findroomlists.md
       - name: 会議室を検索する
@@ -5380,7 +5382,7 @@ items:
         items:
         - name: リスト
           href: api/intune-fencing-managementcondition-list.md
-        - name: 取得
+        - name: Get
           href: api/intune-fencing-managementcondition-get.md
         - name: getManagementConditionsForPlatform
           href: api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md
@@ -8794,9 +8796,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 81326f042b8107993f5d35865899849ed4de2856
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.openlocfilehash: 515779ef8410fb8a55478fc7ea3bae2ab211d306
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800020"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869506"
