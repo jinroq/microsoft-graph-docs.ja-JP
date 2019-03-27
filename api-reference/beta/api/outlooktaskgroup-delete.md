@@ -1,51 +1,51 @@
 ---
-title: OutlookTaskGroup を削除します。
-description: 指定した outlookTaskGroup を削除します。
+title: outlooktaskgroup の削除
+description: 指定した outlooktaskgroup を削除します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b0ec96b876429a8a000da6754db7f39b7f84546f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cfe3c88adf821ca8a5643cdafd5719b5fbb4d40e
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528992"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869436"
 ---
-# <a name="delete-outlooktaskgroup"></a><span data-ttu-id="6b956-103">OutlookTaskGroup を削除します。</span><span class="sxs-lookup"><span data-stu-id="6b956-103">Delete outlookTaskGroup</span></span>
+# <a name="delete-outlooktaskgroup"></a><span data-ttu-id="6891c-103">outlooktaskgroup の削除</span><span class="sxs-lookup"><span data-stu-id="6891c-103">Delete outlookTaskGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b956-104">指定した[outlookTaskGroup](../resources/outlooktaskgroup.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="6b956-104">Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="6b956-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6b956-105">Permissions</span></span>
-<span data-ttu-id="6b956-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b956-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6891c-104">指定した[outlooktaskgroup](../resources/outlooktaskgroup.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="6891c-104">Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6891c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6891c-105">Permissions</span></span>
+<span data-ttu-id="6891c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6891c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b956-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6b956-108">Permission type</span></span>      | <span data-ttu-id="6b956-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6b956-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6891c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6891c-108">Permission type</span></span>      | <span data-ttu-id="6891c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6891c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b956-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6b956-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6b956-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b956-111">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="6b956-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6b956-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b956-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b956-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="6b956-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6b956-114">Application</span></span> | <span data-ttu-id="6b956-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6b956-115">Not supported.</span></span> |
+|<span data-ttu-id="6891c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6891c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6891c-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6891c-111">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="6891c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6891c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6891c-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6891c-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="6891c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6891c-114">Application</span></span> | <span data-ttu-id="6891c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6891c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b956-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6b956-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6891c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6891c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskGroups/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
-
 ```
-## <a name="request-headers"></a><span data-ttu-id="6b956-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6b956-117">Request headers</span></span>
-| <span data-ttu-id="6b956-118">名前</span><span class="sxs-lookup"><span data-stu-id="6b956-118">Name</span></span>       | <span data-ttu-id="6b956-119">説明</span><span class="sxs-lookup"><span data-stu-id="6b956-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6891c-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6891c-117">Request headers</span></span>
+| <span data-ttu-id="6891c-118">名前</span><span class="sxs-lookup"><span data-stu-id="6891c-118">Name</span></span>       | <span data-ttu-id="6891c-119">説明</span><span class="sxs-lookup"><span data-stu-id="6891c-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6b956-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b956-120">Authorization</span></span>  | <span data-ttu-id="6b956-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6b956-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6891c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6891c-120">Authorization</span></span>  | <span data-ttu-id="6891c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6891c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6b956-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="6b956-123">Request body</span></span>
-<span data-ttu-id="6b956-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6b956-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6891c-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="6891c-123">Request body</span></span>
+<span data-ttu-id="6891c-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6891c-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b956-125">応答</span><span class="sxs-lookup"><span data-stu-id="6b956-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6891c-125">応答</span><span class="sxs-lookup"><span data-stu-id="6891c-125">Response</span></span>
 
-<span data-ttu-id="6b956-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="6b956-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="6891c-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="6891c-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6b956-128">例</span><span class="sxs-lookup"><span data-stu-id="6b956-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6b956-129">要求</span><span class="sxs-lookup"><span data-stu-id="6b956-129">Request</span></span>
-<span data-ttu-id="6b956-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6b956-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6891c-128">例</span><span class="sxs-lookup"><span data-stu-id="6891c-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6891c-129">要求</span><span class="sxs-lookup"><span data-stu-id="6891c-129">Request</span></span>
+<span data-ttu-id="6891c-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6891c-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktaskgroup"
@@ -53,8 +53,8 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups('AAMkADIyAAAhrbe-AAA=')
 ```
-##### <a name="response"></a><span data-ttu-id="6b956-131">応答</span><span class="sxs-lookup"><span data-stu-id="6b956-131">Response</span></span>
-<span data-ttu-id="6b956-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="6b956-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6891c-131">応答</span><span class="sxs-lookup"><span data-stu-id="6891c-131">Response</span></span>
+<span data-ttu-id="6891c-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="6891c-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

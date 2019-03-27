@@ -1,55 +1,56 @@
 ---
-title: Outlooktaskgroup を更新します。
-description: Outlook のタスク グループの書き込み可能なプロパティを更新します。
+title: outlooktaskgroup を更新する
+description: Outlook タスクグループの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516393"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869485"
 ---
-# <a name="update-outlooktaskgroup"></a><span data-ttu-id="e95fd-103">Outlooktaskgroup を更新します。</span><span class="sxs-lookup"><span data-stu-id="e95fd-103">Update outlooktaskgroup</span></span>
+# <a name="update-outlooktaskgroup"></a><span data-ttu-id="382cd-103">outlooktaskgroup を更新する</span><span class="sxs-lookup"><span data-stu-id="382cd-103">Update outlooktaskgroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e95fd-104">Outlook のタスク グループの書き込み可能なプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="e95fd-104">Update the writable properties of an Outlook task group.</span></span>
+<span data-ttu-id="382cd-104">Outlook タスクグループの書き込み可能なプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="382cd-104">Update the writable properties of an Outlook task group.</span></span>
 
-<span data-ttu-id="e95fd-105">既定のタスク グループの名前である "マイ タスク" を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="e95fd-105">Note that you cannot modify the name of the default task group, "My Tasks".</span></span>
-## <a name="permissions"></a><span data-ttu-id="e95fd-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e95fd-106">Permissions</span></span>
-<span data-ttu-id="e95fd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e95fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="382cd-105">既定のタスクグループの名前 ([自分のタスク]) は変更できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="382cd-105">Note that you cannot modify the name of the default task group, "My Tasks".</span></span>
+## <a name="permissions"></a><span data-ttu-id="382cd-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="382cd-106">Permissions</span></span>
+<span data-ttu-id="382cd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="382cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e95fd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e95fd-109">Permission type</span></span>      | <span data-ttu-id="e95fd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e95fd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="382cd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="382cd-109">Permission type</span></span>      | <span data-ttu-id="382cd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="382cd-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e95fd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e95fd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e95fd-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e95fd-112">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="e95fd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e95fd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e95fd-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e95fd-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="e95fd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e95fd-115">Application</span></span> | <span data-ttu-id="e95fd-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e95fd-116">Not supported.</span></span> |
+|<span data-ttu-id="382cd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="382cd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="382cd-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="382cd-112">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="382cd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="382cd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="382cd-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="382cd-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="382cd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="382cd-115">Application</span></span> | <span data-ttu-id="382cd-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="382cd-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e95fd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e95fd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="382cd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="382cd-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="e95fd-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e95fd-118">Optional request headers</span></span>
-| <span data-ttu-id="e95fd-119">名前</span><span class="sxs-lookup"><span data-stu-id="e95fd-119">Name</span></span>       | <span data-ttu-id="e95fd-120">説明</span><span class="sxs-lookup"><span data-stu-id="e95fd-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="382cd-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="382cd-118">Optional request headers</span></span>
+| <span data-ttu-id="382cd-119">名前</span><span class="sxs-lookup"><span data-stu-id="382cd-119">Name</span></span>       | <span data-ttu-id="382cd-120">説明</span><span class="sxs-lookup"><span data-stu-id="382cd-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e95fd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e95fd-121">Authorization</span></span>  | <span data-ttu-id="e95fd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e95fd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="382cd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="382cd-121">Authorization</span></span>  | <span data-ttu-id="382cd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="382cd-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e95fd-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="e95fd-124">Request body</span></span>
-<span data-ttu-id="e95fd-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="e95fd-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="382cd-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="382cd-124">Request body</span></span>
+<span data-ttu-id="382cd-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="382cd-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e95fd-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e95fd-128">Property</span></span>     | <span data-ttu-id="e95fd-129">型</span><span class="sxs-lookup"><span data-stu-id="e95fd-129">Type</span></span>   |<span data-ttu-id="e95fd-130">説明</span><span class="sxs-lookup"><span data-stu-id="e95fd-130">Description</span></span>|
+| <span data-ttu-id="382cd-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="382cd-128">Property</span></span>     | <span data-ttu-id="382cd-129">型</span><span class="sxs-lookup"><span data-stu-id="382cd-129">Type</span></span>   |<span data-ttu-id="382cd-130">説明</span><span class="sxs-lookup"><span data-stu-id="382cd-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e95fd-131">name</span><span class="sxs-lookup"><span data-stu-id="e95fd-131">name</span></span>|<span data-ttu-id="e95fd-132">String</span><span class="sxs-lookup"><span data-stu-id="e95fd-132">String</span></span>|<span data-ttu-id="e95fd-133">タスク グループの名前。</span><span class="sxs-lookup"><span data-stu-id="e95fd-133">The name of the task group.</span></span>|
+|<span data-ttu-id="382cd-131">name</span><span class="sxs-lookup"><span data-stu-id="382cd-131">name</span></span>|<span data-ttu-id="382cd-132">String</span><span class="sxs-lookup"><span data-stu-id="382cd-132">String</span></span>|<span data-ttu-id="382cd-133">タスク グループの名前。</span><span class="sxs-lookup"><span data-stu-id="382cd-133">The name of the task group.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e95fd-134">応答</span><span class="sxs-lookup"><span data-stu-id="e95fd-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="382cd-134">応答</span><span class="sxs-lookup"><span data-stu-id="382cd-134">Response</span></span>
 
-<span data-ttu-id="e95fd-135">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[outlookTaskGroup](../resources/outlooktaskgroup.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="e95fd-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e95fd-136">例</span><span class="sxs-lookup"><span data-stu-id="e95fd-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e95fd-137">要求</span><span class="sxs-lookup"><span data-stu-id="e95fd-137">Request</span></span>
-<span data-ttu-id="e95fd-138">次の例では、タスク グループの名前を "Personal Tasks" に変更します。</span><span class="sxs-lookup"><span data-stu-id="e95fd-138">The following example changes the name of a task group to "Personal Tasks".</span></span> 
+<span data-ttu-id="382cd-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="382cd-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="382cd-136">例</span><span class="sxs-lookup"><span data-stu-id="382cd-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="382cd-137">要求</span><span class="sxs-lookup"><span data-stu-id="382cd-137">Request</span></span>
+<span data-ttu-id="382cd-138">次の例では、タスク グループの名前を "Personal Tasks" に変更します。</span><span class="sxs-lookup"><span data-stu-id="382cd-138">The following example changes the name of a task group to "Personal Tasks".</span></span> 
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskgroup"
@@ -64,8 +65,8 @@ Content-length: 28
   "name": "Personal Tasks",
 }
 ```
-##### <a name="response"></a><span data-ttu-id="e95fd-139">応答</span><span class="sxs-lookup"><span data-stu-id="e95fd-139">Response</span></span>
-<span data-ttu-id="e95fd-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e95fd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="382cd-139">応答</span><span class="sxs-lookup"><span data-stu-id="382cd-139">Response</span></span>
+<span data-ttu-id="382cd-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="382cd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
