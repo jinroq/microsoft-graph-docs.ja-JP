@@ -1,21 +1,21 @@
 ---
-title: リスト taskFolders
-description: 特定の outlookTaskGroup では、Outlook の仕事フォルダーを取得します。
+title: taskfolders を一覧表示する
+description: 特定の outlooktaskgroup 内の Outlook タスクフォルダーを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 16a3463a7cdc4a3bc4efd401c7ca1a8932c82b7c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c639fb0fe8e1ae010c3f5dbfb6b9c85c34009f00
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508287"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869465"
 ---
-# <a name="list-taskfolders"></a>リスト taskFolders
+# <a name="list-taskfolders"></a>taskfolders を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の[outlookTaskGroup](../resources/outlooktaskgroup.md)では、Outlook の仕事フォルダーを取得します。
+特定の[outlooktaskgroup](../resources/outlooktaskgroup.md)内の Outlook タスクフォルダーを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -28,6 +28,7 @@ ms.locfileid: "29508287"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -43,7 +44,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

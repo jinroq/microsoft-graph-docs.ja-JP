@@ -1,17 +1,17 @@
 ---
-title: calendarGroups を一覧表示する　
+title: List calendarGroups
 description: ユーザーの予定表グループを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bee7f5484673d411c7f199c527431e98966620ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 706bb810b0dcd9615443c477437350a020166be5
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517114"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869345"
 ---
-# <a name="list-calendargroups"></a>calendarGroups を一覧表示する　
+# <a name="list-calendargroups"></a>List calendarGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,6 +28,7 @@ ms.locfileid: "29517114"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター

@@ -1,21 +1,21 @@
 ---
-title: TaskGroups のリスト
-description: ユーザーのメールボックス内のすべての Outlook のタスク グループを取得します。
+title: taskgroups を一覧表示する
+description: ユーザーのメールボックス内のすべての Outlook タスクグループを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba8e0982fabcc9a82ae3ba2ec3b9f34b1655932b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b3ebf2896ff8805280c23680915e54f9a094a7c8
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511094"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869359"
 ---
-# <a name="list-taskgroups"></a>TaskGroups のリスト
+# <a name="list-taskgroups"></a>taskgroups を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのメールボックス内のすべての Outlook のタスク グループを取得します。
+ユーザーのメールボックス内のすべての Outlook タスクグループを取得します。
 
 応答には常に、既定のタスク グループ `My Tasks` およびメールボックス内に作成されたその他のタスク グループが含まれます。
 ## <a name="permissions"></a>アクセス許可
@@ -30,6 +30,7 @@ ms.locfileid: "29511094"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -45,7 +46,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[outlookTaskGroup](../resources/outlooktaskgroup.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

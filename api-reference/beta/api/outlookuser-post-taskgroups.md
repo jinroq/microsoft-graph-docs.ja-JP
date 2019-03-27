@@ -1,21 +1,21 @@
 ---
-title: OutlookTaskGroup を作成します。
-description: ユーザーのメールボックスに Outlook のタスク グループを作成します。
+title: outlooktaskgroup の作成
+description: ユーザーのメールボックスに Outlook のタスクグループを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516008"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869261"
 ---
-# <a name="create-outlooktaskgroup"></a>OutlookTaskGroup を作成します。
+# <a name="create-outlooktaskgroup"></a>outlooktaskgroup の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのメールボックスに Outlook のタスク グループを作成します。
+ユーザーのメールボックスに Outlook のタスクグループを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -28,8 +28,8 @@ ms.locfileid: "29516008"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
@@ -37,11 +37,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [outlookTaskGroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[outlookTaskGroup](../resources/outlooktaskgroup.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -59,7 +59,7 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-要求の本文には、 [outlookTaskGroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

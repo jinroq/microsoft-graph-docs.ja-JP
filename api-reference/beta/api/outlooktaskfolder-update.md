@@ -1,23 +1,23 @@
 ---
-title: Outlooktaskfolder を更新します。
-description: Outlook の仕事フォルダーの書き込み可能なプロパティを更新します。
+title: outlooktaskfolder を更新する
+description: Outlook タスクフォルダーの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 83b75fb2588f58480e51e4e548bfd5d05b7f941b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530161"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869408"
 ---
-# <a name="update-outlooktaskfolder"></a>Outlooktaskfolder を更新します。
+# <a name="update-outlooktaskfolder"></a>outlooktaskfolder を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook の仕事フォルダーの書き込み可能なプロパティを更新します。
+Outlook タスクフォルダーの書き込み可能なプロパティを更新します。
 
-既定の作業フォルダーのタスク」の**name**プロパティの値を変更することはできません。
+既定のタスクフォルダー "Tasks" の " **name/名前**" プロパティの値を変更することはできません。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -30,6 +30,8 @@ Outlook の仕事フォルダーの書き込み可能なプロパティを更新
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -47,10 +49,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例に指定したタスク フォルダーの名前を変更する`Charity work`。
+次の例では、指定したタスクフォルダーの`Charity work`名前をに変更します。
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"

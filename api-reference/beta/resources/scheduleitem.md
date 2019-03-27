@@ -1,29 +1,29 @@
 ---
-title: scheduleItem のリソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+title: scheduleitem リソースの種類
+description: ユーザーの既定の予定表にある実際のイベントに対応するユーザーの空き時間情報を示すアイテム。 この項目は、リソースにも適用されます。
 localization_priority: Normal
-ms.openlocfilehash: ed6b7441996cdf00b33be03f70afb888cc9bb251
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511353"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869310"
 ---
-# <a name="scheduleitem-resource-type"></a>scheduleItem のリソースの種類
+# <a name="scheduleitem-resource-type"></a>scheduleitem リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-ユーザーの既定の予定表に、実際のイベントに対応するユーザーの可用性を説明する項目です。 リソースも同様にこの項目が適用されます。
+ユーザーの既定の予定表にある実際のイベントに対応するユーザーの空き時間情報を示すアイテム。 この項目は、リソース (会議室または備品) にも適用されます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|end |[dateTimeTimeZone](datetimetimezone.md) |日付、時刻、およびタイム ゾーンに対応するイベントが終了します。 |
-|IsPrivate |ブール値 |対応するイベントの重大度。 イベントが設定されている場合は true。`private`は false、それ以外の場合。 |
-|location |String | 場所の対応するイベントが保持されているから参加します。 省略可能。|
-|start |[dateTimeTimeZone](datetimetimezone.md) |日付、時刻、およびタイム ゾーンに対応するイベントが開始します。 |
-|status |String | ユーザーまたは対応するイベントの中にリソースの可用性の状態です。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。 |
-|subject |String | 対応するイベントの件名の行です。 省略可能。|
+|end |[dateTimeTimeZone](datetimetimezone.md) |対応するイベントが終了する日付、時刻、タイムゾーン。 |
+|isPrivate |Boolean |対応するイベントの感度。 イベントがマーク`private`されている場合は True、それ以外の場合は false。 省略可能。 |
+|location |String | 対応するイベントが保持または参加している場所。 省略可能。|
+|start |[dateTimeTimeZone](datetimetimezone.md) |対応するイベントが開始する日付、時刻、タイムゾーン。 |
+|status |freeBusyStatus | 対応するイベント中のユーザーまたはリソースの空き時間状態。 使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。 |
+|subject |String | 対応するイベントの件名行。 省略可能。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -33,7 +33,9 @@ ms.locfileid: "29511353"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "isPrivate",
+    "location",
+    "subject"
   ],
   "@odata.type": "microsoft.graph.scheduleItem"
 }-->

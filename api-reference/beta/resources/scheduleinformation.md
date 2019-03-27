@@ -1,28 +1,28 @@
 ---
-title: scheduleInformation リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+title: scheduleinformation リソースの種類
+description: '指定した期間のユーザー、配布リスト、またはリソースの空き時間情報を表します。 '
 localization_priority: Normal
-ms.openlocfilehash: e84505ee2f30a5b7b52e9d5b589b8bb24d9a4c95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6c809b9cf600d9b620164f253d2a37e57a0f5d4d
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521909"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869492"
 ---
-# <a name="scheduleinformation-resource-type"></a>scheduleInformation リソースの種類
+# <a name="scheduleinformation-resource-type"></a>scheduleinformation リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-指定された期間内のユーザー、配布リスト、またはリソースの可用性を表します。
+指定した期間のユーザー、配布リスト、またはリソース (会議室または備品) の空き時間情報を表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|availabilityView |String |マージされたビュー内のすべての項目の数を表す`scheduleItems`。 ビューは、時間帯で構成されています。 各時間帯の可用性で示されます。:`0`無料 = `1`= 仮の予定、 `2`= ビジー状態か、`3`外出中 = `4`= の別の場所で作業します。|
-|エラー |[freeBusyError](freebusyerror.md) |エラー情報が、ユーザー、配布リスト、またはリソースの可用性を取得しようとしていますから。 |
-|scheduleId |String |ユーザー、配布リスト、または**scheduleInformation**のインスタンスを識別する、リソースの SMTP アドレスです。 |
-|scheduleItems |[scheduleItem](scheduleitem.md)コレクション |ユーザーまたはリソースの可用性を説明する項目が含まれています。 |
-|workingHours |[workingHours](workinghours.md) |ユーザーが働く曜日と、特定のタイムゾーンの時間。 これらは、ユーザーの[mailboxSettings](mailboxsettings.md)の一部として設定されています。|
+|availabilityView |String |のすべてのアイテムの利用可能時間のマージさ`scheduleItems`れたビューを表します。 ビューは、時間帯で構成されます。 各時間帯の可用性は、次の`0`ように表示`1`されます`2`。 = free `3`、= 仮設、= `4`busy、out 不在、または他の場所で動作します。|
+|エラー |[freeBusyError](freebusyerror.md) |ユーザー、配布リスト、またはリソースの空き時間情報を取得しようとしたエラー情報。 |
+|scheduleId |String |**scheduleinformation**のインスタンスを識別する、ユーザー、配布リスト、またはリソースの SMTP アドレス。 |
+|scheduleitems |[scheduleitem](scheduleitem.md)コレクション |ユーザーまたはリソースの空き時間情報を示す項目を含みます。 |
+|workingHours |[workingHours](workinghours.md) |ユーザーが働く曜日と、特定のタイムゾーンの時間。 これらは、ユーザーの[mailboxSettings](mailboxsettings.md)の一部として設定されます。|
 
 
 ## <a name="json-representation"></a>JSON 表記

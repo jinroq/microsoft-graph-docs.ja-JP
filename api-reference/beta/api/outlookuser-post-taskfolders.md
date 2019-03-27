@@ -1,21 +1,21 @@
 ---
-title: OutlookTaskFolder を作成します。
-description: 既定のタスク グループにタスク フォルダーを作成 (`My Tasks`) ユーザーのメールボックスの。
+title: outlooktaskfolder の作成
+description: ユーザーのメールボックスの既定のタスクグループ (`My Tasks`) にタスクフォルダーを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 81c77d96b4d7c66cfbc7dde3481a7bfaa8cd6c5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 16f54dffc1ff2fff71a22658a2418be99fde7353
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514447"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869373"
 ---
-# <a name="create-outlooktaskfolder"></a>OutlookTaskFolder を作成します。
+# <a name="create-outlooktaskfolder"></a>outlooktaskfolder の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既定のタスク グループにタスク フォルダーを作成 (`My Tasks`) ユーザーのメールボックスの。
+ユーザーのメールボックスの既定のタスクグループ (`My Tasks`) にタスクフォルダーを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,8 +29,8 @@ ms.locfileid: "29514447"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskFolders
-
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
@@ -38,15 +38,15 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[outlookTaskFolder](../resources/outlooktaskfolder.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例は、既定のタスク グループでボランティアをという名前のタスク フォルダーを作成 (`My Tasks`) ユーザーのメールボックスの。
+次の例では、ユーザーのメールボックスの既定のタスクグループ`My Tasks`() に、「ボランティア」というタスクフォルダーを作成します。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlookuser"
@@ -60,7 +60,7 @@ Content-length: 60
   "name": "Volunteer"
 }
 ```
-要求の本文には、 [outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

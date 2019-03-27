@@ -1,23 +1,23 @@
 ---
-title: Outlooktaskgroup を更新します。
-description: Outlook のタスク グループの書き込み可能なプロパティを更新します。
+title: outlooktaskgroup を更新する
+description: Outlook タスクグループの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516393"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869485"
 ---
-# <a name="update-outlooktaskgroup"></a>Outlooktaskgroup を更新します。
+# <a name="update-outlooktaskgroup"></a>outlooktaskgroup を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook のタスク グループの書き込み可能なプロパティを更新します。
+Outlook タスクグループの書き込み可能なプロパティを更新します。
 
-既定のタスク グループの名前である "マイ タスク" を変更することはできません。
+既定のタスクグループの名前 ([自分のタスク]) は変更できないことに注意してください。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -30,6 +30,7 @@ Outlook のタスク グループの書き込み可能なプロパティを更�
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
@@ -46,7 +47,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[outlookTaskGroup](../resources/outlooktaskgroup.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 次の例では、タスク グループの名前を "Personal Tasks" に変更します。 

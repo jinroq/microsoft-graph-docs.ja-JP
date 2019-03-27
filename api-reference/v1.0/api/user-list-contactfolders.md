@@ -1,17 +1,17 @@
 ---
-title: contactFolders を一覧表示する　
+title: List contactFolders
 description: サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 827c56766325ef574d1a81c6997bbef1259ec692
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 61e30ea91e820235987efd2cff43595b179f6b95
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969374"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869282"
 ---
-# <a name="list-contactfolders"></a>contactFolders を一覧表示する　
+# <a name="list-contactfolders"></a>List contactFolders
 
 サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -26,6 +26,7 @@ ms.locfileid: "27969374"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター

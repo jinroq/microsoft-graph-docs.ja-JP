@@ -1,25 +1,25 @@
 ---
-title: OutlookTask を作成します。
-description: デフォルトのタスク グループに Outlook のタスクを作成する (`My Tasks`) と既定の作業フォルダー (`Tasks`) ユーザーのメールボックスにします。
+title: outlooktask の作成
+description: ユーザーのメールボックスの既定のタスクグループ (`My Tasks`) および既定のタスクフォルダー`Tasks`() に Outlook のタスクを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 935732e14f7e467e3094d4a5a2f82d2922020569
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4de57847638ef98347a7561291d12486468428ee
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520992"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869457"
 ---
-# <a name="create-outlooktask"></a>OutlookTask を作成します。
+# <a name="create-outlooktask"></a>outlooktask の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-デフォルトのタスク グループに Outlook のタスクを作成する (`My Tasks`) と既定の作業フォルダー (`Tasks`) ユーザーのメールボックスにします。
+ユーザーのメールボックスの既定のタスクグループ (`My Tasks`) および既定のタスクフォルダー`Tasks`() に Outlook のタスクを作成します。
 
-POST メソッドは常に**させる**と、要求の本文では、 **dueDateTime**の時刻部分を無視し、指定されたタイム ゾーンで午前 0 時を常に時間を想定しています。
+POST メソッドは、要求本文の**startDateTime**および**dueDateTime**の時間部分を常に無視し、指定されたタイムゾーンで常に深夜になる時刻を想定します。
 
-既定では、この操作 (と取得、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone`
+既定では、この操作 (およびタスクの取得、パッチ、[完了](../api/outlooktask-complete.md)) は、日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -33,24 +33,25 @@ POST メソッドは常に**させる**と、要求の本文では、 **dueDateT
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/tasks
 POST /users/{id|userPrincipalName}/outlook/tasks
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。|
+| 優先: outlook.timezone | 応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [outlookTask](../resources/outlooktask.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[outlookTask](../resources/outlooktask.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例を使用して、`Prefer: outlook.timezone`ヘッダー。 タスクを作成**させる**と**dueDateTime**東部標準時 (EST) で表されますが含まれています、`Prefer`ヘッダーの太平洋標準時 (PST) です。
+次の例は、 `Prefer: outlook.timezone`ヘッダーの使用方法を示しています。 この例では、タスクを作成し、 **startDateTime**と**dueDateTime**を東部標準時 (EST) で表し`Prefer` 、太平洋標準時 (PST) のヘッダーを含みます。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -74,11 +75,11 @@ Content-length: 276
   }
 }
 ```
-要求の本文には、 [outlookTask](../resources/outlooktask.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
-POST メソッドでは、**示す**および要求の本文では、 **dueDateTime**の時刻部分は無視され、指定されたタイム ゾーン (EST) の午前 0 時を常に時間を想定しています。
+POST メソッドは、要求本文の**startDateTime**および**dueDateTime**の時間部分を無視し、指定されたタイムゾーン (EST) で常に午前0時になる時間を想定します。
 
-`Prefer` ヘッダーでは PST が指定されているため、POST メソッドは応答内のすべての日付関連プロパティを PST で表記します。特に、StartDateTime および DueDateTime プロパティでは、POST メソッドは EST の午前 0 時を PST に変換し、応答ではそれらを PST で返します。
+`Prefer` ヘッダーでは PST が指定されているため、POST メソッドは応答内のすべての日付関連プロパティを PST で表記します。 特に、 **startDateTime**プロパティと**dueDateTime**プロパティの場合、POST メソッドは EST の午前0時を pst に変換し、それらを応答で pst で返します。
 
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

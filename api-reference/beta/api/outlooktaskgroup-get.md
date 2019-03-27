@@ -1,21 +1,21 @@
 ---
-title: OutlookTaskGroup を取得します。
-description: プロパティと指定した Outlook のタスク グループの関係を取得します。
+title: outlooktaskgroup の取得
+description: 指定された Outlook タスクグループのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d113c913be669df4735c902f261b0ce3f77c67c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b4f260d1ae19cca26720a59f68125caac3b5a846
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513096"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869401"
 ---
-# <a name="get-outlooktaskgroup"></a>OutlookTaskGroup を取得します。
+# <a name="get-outlooktaskgroup"></a>outlooktaskgroup の取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと指定した Outlook のタスク グループの関係を取得します。
+指定された Outlook タスクグループのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -28,6 +28,7 @@ ms.locfileid: "29513096"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -43,7 +44,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[outlookTaskGroup](../resources/outlooktaskgroup.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

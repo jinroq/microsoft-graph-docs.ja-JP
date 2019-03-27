@@ -4,12 +4,12 @@ description: この API を使用して、ユーザーのメールボックス�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09f8f35ce890356ac39d691d600b2450055befb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b5d439b6b91c697bac41224c028ac07e11412fc4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521917"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869352"
 ---
 # <a name="create-mailfolder"></a>MailFolder を作成する
 
@@ -28,6 +28,7 @@ ms.locfileid: "29521917"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="request-headers"></a>要求ヘッダー

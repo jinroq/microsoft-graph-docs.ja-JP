@@ -1,21 +1,21 @@
 ---
-title: mailFolders を一覧表示する　
-description: サインインしているユーザーのメールボックス内のすべてのメール フォルダーを取得します。
+title: mailFolders を一覧表示する
+description: サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8de6fa03cb0f7b6a85e2055d060101e598265b43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64b96620d30188c720beaae4875712b1dc8d8e37
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509932"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869296"
 ---
-# <a name="list-mailfolders"></a>mailFolders を一覧表示する　
+# <a name="list-mailfolders"></a>mailFolders を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインインしているユーザーのメールボックス内のすべてのメール フォルダーを取得します。
+サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,6 +29,7 @@ ms.locfileid: "29509932"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター

@@ -4,12 +4,12 @@ description: 要求本文に指定されたメッセージを送信します。�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afa50b466bd7a90af4fedbdad4c5f7c5b4627b8c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517212"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869429"
 ---
 # <a name="send-mail"></a>メールを送信する
 
@@ -17,10 +17,10 @@ ms.locfileid: "29517212"
 
 要求本文に指定されたメッセージを送信します。メッセージは、既定で [送信済みアイテム] フォルダーに保存されます。
 
-同じ**sendMail**のアクションの呼び出しで次の操作を実行できます。
+同じ**sendMail**アクション呼び出しでは、次の操作を実行できます。
 
 - [添付ファイル](../resources/attachment.md)を含める
-- [説明](../resources/mention.md)を使用して、新しいメッセージに別のユーザーを呼び出す
+- 別のユーザーを新しいメッセージで呼び出すには、[メンション](../resources/mention.md)を使用します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,6 +35,7 @@ ms.locfileid: "29517212"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -48,13 +49,13 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|送信するメッセージです。必須。|
+|メッセージ|[Message](../resources/message.md)|送信するメッセージです。必須。|
 |SaveToSentItems|ブール値|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。|
 
-**言及**を使用して新しいメッセージに別のユーザーを呼び出す場合は。
+新しいメッセージで別のユーザーを呼び出すために、**メンション**を使用する場合は、次のようにします。
 
-- 要求の本文で必要な**toRecipients**プロパティ**を示して**プロパティ、および任意の書き込み可能なメッセージ プロパティが含まれます。
-- **紹介**プロパティにそれぞれ記載されている、**記載されている**プロパティを指定する必要があります。
+- 要求本文に、必要な**torecipients**プロパティ、**メンション**プロパティ、および任意の書き込み可能なメッセージプロパティを含めます。
+- **メンション**プロパティの各メンションに対して、**説明**されているプロパティを指定する必要があります。
 
 ## <a name="response"></a>応答
 
@@ -63,7 +64,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request-1"></a>要求 1
-ここで、作成し、その場でメッセージを送信する要求の例です。
+ここでは、メッセージを作成してその場で送信する要求の例を示します。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -111,7 +112,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>要求 2
-次の例では、彼女のブースにサインインしているユーザーがメッセージを示しています。 メッセージには、Dana Swope の他のユーザーの参照も含まれています。
+次の例は、サインインしているユーザーが Samantha ブースにメッセージを表示しています。 このメッセージには、別のユーザーの Dana Swope も含まれています。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -155,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>要求 3
-次の例では、カスタムのインターネット メッセージ ヘッダーを持つメッセージを作成し、メッセージを送信します。
+次の例では、カスタムのインターネットメッセージヘッダーを含むメッセージを作成し、メッセージを送信します。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

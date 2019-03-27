@@ -1,17 +1,17 @@
 ---
-title: contactFolders を一覧表示する　
+title: List contactFolders
 description: サインインしているユーザーのメールボックス内のすべての連絡先フォルダーを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5f0a485c3c134b6627fce5d3b8f04c26dee503e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4aca24e167f1d9f1bfe3529e44665347a5e1cdbd
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523282"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869268"
 ---
-# <a name="list-contactfolders"></a>contactFolders を一覧表示する　
+# <a name="list-contactfolders"></a>List contactFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,6 +29,7 @@ ms.locfileid: "29523282"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター

@@ -1,25 +1,25 @@
 ---
 title: List tasks
-description: 指定したフォルダーに Outlook のすべてのタスクを取得します。
+description: 指定したフォルダー内のすべての Outlook タスクを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dfcd1438d55a22654c5601bc55827d0dedbdc6b2
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: a1769c83dc84e70ed051f5d1d284d00de7c71ae4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967264"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869471"
 ---
 # <a name="list-tasks"></a>タスクを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定したフォルダーに Outlook のすべてのタスクを取得します。
+指定したフォルダー内のすべての Outlook タスクを取得します。
 
-既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。  使用することができます、 `Prefer: outlook.timezone` UTC 以外のタイム ゾーンで表される応答ですべての日付に関連するプロパティを持つヘッダーを要求します。 1 つのタスクを取得する[例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)を参照してください。 複数のタスクを取得するには、同様にヘッダーを適用することができます。
+既定では、この操作 (および POST、PATCH、および[完了](../api/outlooktask-complete.md)タスク操作) は、日付関連プロパティを UTC で返します。  `Prefer: outlook.timezone`要求ヘッダーを使用すると、応答内のすべての日付関連プロパティを UTC 以外のタイムゾーンで表されたものにすることができます。 1つのタスクを取得する[例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)を参照してください。 同じようにヘッダーを適用して、複数のタスクを取得することができます。
 
-タスク グループが複数のグループでは特定のタスク、[タスク グループ内のすべての作業フォルダーを取得する](outlooktaskgroup-list-taskfolders.md)最初に、すべてのタスクを取得し、これらのタスク フォルダーにタスクを取得する場合。
+複数のタスクグループがあり、特定のタスクグループ内のすべてのタスクを取得する場合は、最初に[そのタスクグループ内のすべてのタスクフォルダーを取得](outlooktaskgroup-list-taskfolders.md)し、次に各タスクフォルダー内のタスクを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -33,6 +33,8 @@ ms.locfileid: "29967264"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -43,14 +45,14 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。|
+| 優先: outlook.timezone | 応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[outlookTask](../resources/outlooktask.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
