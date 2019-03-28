@@ -1,12 +1,12 @@
 ---
 title: 列挙値
 description: Microsoft Graph 列挙値
-ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057051"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936326"
 ---
 ### <a name="contactrelationship-values"></a>contactrelationship 値
 
@@ -29,18 +29,6 @@ ms.locfileid: "30057051"
 | iana
 
 
-### <a name="availabilitystatus-values"></a>availabilityStatus の値
-
-| 値
-|:-------------------------
-| 不明
-| 増やし
-| 一時的
-| 多忙
-| oof  
-| workingElsewhere
-
-
 ### <a name="freebusystatus-values"></a>freeBusyStatus の値
 
 | メンバー            |値
@@ -51,16 +39,6 @@ ms.locfileid: "30057051"
 | oof               | 1/3
 | workingElsewhere  | 2/4
 | 不明           | -1
-
-
-### <a name="addresstype-values"></a>addressType の値
-
-| 値
-|:-------------------------
-| 不明 
-| コール
-| 出張 
-| も
 
 
 ### <a name="physicaladdresstype-values"></a>physicaladdresstype の値
@@ -79,16 +57,16 @@ ms.locfileid: "30057051"
 |:-------------------------
 | 必須
 | 省略可能
-| リソース
+| resource
 
 
 ### <a name="externalaudiencescope-values"></a>externalaudiencescope 値
 
 | 値
 |:-------------------------
-| none
+| なし
 | contactsOnly
-| all
+| すべての
 
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus の値
@@ -121,11 +99,11 @@ ms.locfileid: "30057051"
 
 | メンバー     | 値
 |:-----------|:----------
-| 削除          | pbm-2
+| と          | pbm-2
 | deletionFailed    | 1/3
 | プロビジョニングが失敗しました | 5
 | 準備済み        | シックス
-| 準備       | 7
+| プロビジョン       | 7
 | unknownfuturevalue という | ~
 
 
@@ -174,7 +152,7 @@ ms.locfileid: "30057051"
 
 | 値
 |:-------------------------
-| 標準
+| ノーマル
 | personal
 | 機密性
 | 機密
@@ -185,7 +163,7 @@ ms.locfileid: "30057051"
 | 値
 |:-------------------------
 | 低さ
-| 標準
+| ノーマル
 | 高額
 
 
@@ -194,7 +172,7 @@ ms.locfileid: "30057051"
 |:---------------------
 | student
 | teacher
-| none
+| なし
 | unknownfuturevalue という
 
 
@@ -202,7 +180,7 @@ ms.locfileid: "30057051"
 
 | 値
 |:-----------------
-| none
+| なし
 | meetingRequest
 | 中止
 | 承諾
@@ -233,8 +211,8 @@ ms.locfileid: "30057051"
 |:-------------------------
 | devicedefault
 | 尺
-| modal
-| none
+| ポップアップ
+| なし
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason の値
 
@@ -242,7 +220,7 @@ ms.locfileid: "30057051"
 |:-------------
 | 不明
 | 認証
-| 承認
+| 手続き
 | accountvalidation
 | uservalidation
 | devicenotsupported
@@ -257,7 +235,7 @@ ms.locfileid: "30057051"
 | 値
 |:---------
 | text
-| html
+| Html
 
 
 ### <a name="locationtype-values"></a>locationType の値
@@ -273,7 +251,7 @@ ms.locfileid: "30057051"
 | ホテル
 | レストラン
 | localbusiness
-| "postaladdress
+| PostalAddress
 
 ### <a name="locationuniqueidtype-values"></a>locationUniqueIdType の値
 
@@ -295,7 +273,7 @@ ms.locfileid: "30057051"
 | 交換
 | フォローアップ
 | 注意
-| 転送
+| 前方
 | noResponseNecessary
 | 読み込む
 | 返信
@@ -308,7 +286,7 @@ ms.locfileid: "30057051"
 | メンバー      | 値
 |:------------|:------------
 | Owner       | .0
-| Contributor (投稿者) | 1-d
+| 共同作成者 | 1-d
 | Reader      | pbm-2
 | なし        | -1
 
@@ -353,7 +331,7 @@ ms.locfileid: "30057051"
 | ホーム fax
 | businessfax
 | otherFax
-| 携帯
+| pager
 | オン
 
 
@@ -364,7 +342,7 @@ ms.locfileid: "30057051"
 | 自動
 | nopreview
 | checklist
-| 説明
+| description
 | reference
 
 
@@ -436,10 +414,10 @@ ms.locfileid: "30057051"
 
 | 値
 |:-------------------------
-| none
+| なし
 | organizer
 | tentativelyAccepted
-| accepted
+| 受け
 | 同意
 | notresponded
 
@@ -469,7 +447,7 @@ ms.locfileid: "30057051"
 
 | メンバー   |値    
 |:---------|:--------
-| none     | -1      
+| なし     | -1      
 | preset0  | .0       
 | preset1  | 1-d       
 | preset2  | pbm-2       
@@ -589,7 +567,7 @@ ms.locfileid: "30057051"
 |expandsz|5| REG_EXPAND_SZ レジストリ値の種類。|
 |link|シックス| REG_LINK レジストリ値の種類。|
 |multisz|7| REG_MULTI_SZ レジストリ値の種類。|
-|none|~| REG_NONE レジストリ値の種類。|
+|なし|~| REG_NONE レジストリ値の種類。|
 |qword|i-9| REG_QWORD レジストリ値の種類。|
 |qwordlittleEndian|個| REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
 |sz|#| REG_SZ レジストリ値の種類。|
@@ -625,7 +603,7 @@ ms.locfileid: "30057051"
 |:---|:---|:---|
 |不明|.0|不明な役割。|
 |sender|1-d|電子メールの送信者。|
-|recipient|pbm-2|電子メールの受信者。|
+|受信者|pbm-2|電子メールの受信者。|
 
 ### <a name="logontype-values"></a>logontype の値
 

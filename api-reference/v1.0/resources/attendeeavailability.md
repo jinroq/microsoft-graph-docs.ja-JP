@@ -1,17 +1,19 @@
 ---
 title: attendeeAvailability リソースの種類
-description: 出席者の種類と空き時間情報。
+description: 出席者の空き時間。
 localization_priority: Normal
-ms.openlocfilehash: a6dee994fc5eb3786fc1a432adcb9333bdb56ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834749"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936249"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability リソースの種類
 
-出席者の種類と空き時間情報。
+出席者の空き時間。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,10 +35,10 @@ ms.locfileid: "27834749"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|出席者の種類 - 人、またはリソースのいずれか、さらに人である場合は、必須かどうか。|
-|availability|freeBusyStatus| 出席者の空き時間の状態。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
+|attendee|[attendeeBase](attendeebase.md)|出席者の電子メールアドレスと種類。個人またはリソースのいずれかを指定します。また、必要かどうかは、ユーザーの場合はオプションです。|
+|availability|freeBusyStatus| 出席者の空き時間の状態。 使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

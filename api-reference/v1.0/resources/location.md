@@ -2,12 +2,14 @@
 title: Location リソースの種類
 description: イベントの場所の情報を表します。
 localization_priority: Normal
-ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879801"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936277"
 ---
 # <a name="location-resource-type"></a>Location リソースの種類
 
@@ -23,15 +25,15 @@ ms.locfileid: "27879801"
 | Outlook のユーザー インターフェイス | **locationType** | 以下のいずれか: <ul><li>プレーン テキストとして入力された場所の場合は `default`。</li><li>Outlook の会議室リストで提供された会議室の場合は `conferenceRoom`。</li><li>Bing Autosuggest または Bing ローカル検索による場所の場合は、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` のいずれか。</li></ul> |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 種類   | 説明                                                     |
+| プロパティ  | 型   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |
 | displayName  | String | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所のメール アドレス (省略可能)。              |
 | locationUri | String | 場所を表す URI (省略可能)。 |
-| locationType | locationType | 場所の種類。 可能な値: `default`、 `conferenceRoom`、 `homeAddress`、 `businessAddress`、`geoCoordinates`、 `streetAddress`、 `hotel`、 `restaurant`、 `localBusiness`、 `postalAddress`。 読み取り専用。|
-| uniqueId | String | 内部使用のみ。|
+| locationType | locationType | 場所の種類。 使用可能な値は`default`、 `conferenceRoom`、 `homeAddress` `businessAddress``geoCoordinates` `streetAddress` `hotel` `restaurant`、、、、、、、 `postalAddress`、です。 `localBusiness` 読み取り専用。|
+| uniqueId | String | 内部使用のために用意されています。|
 | uniqueIdType | locationUniqueIdType | 内部使用のみ。 |
 
 ## <a name="json-representation"></a>JSON 表記

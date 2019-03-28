@@ -4,12 +4,12 @@ description: 会議の場所に関して、クライアントが表明してい�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 7063eb0a7aa437b51a2bfecb482012771297f766
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057002"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936256"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "30057002"
 
 会議の場所に関して、クライアントが表明している条件です。
 
-[locationDataModel](locationdatamodel.md)から派生します。
+[location](location.md) から派生します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -38,19 +38,25 @@ ms.locfileid: "30057002"
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string"
+  "locationType": "string",
+  "locationUri": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |
-| displayName  | 文字列 | 場所に関連付けられた名前。                       |
-| locationEmailAddress | String | 場所のメール アドレス (省略可能)。 |
+| displayName  | String | 場所に関連付けられた名前。                       |
+| locationEmailAddress | String | 場所の電子メール アドレス (省略可能)。 |
+| locationType | locationType | 場所の種類。 可能な値は、`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` です。 読み取り専用。|
 | locationUri | String | 場所を表す URI (省略可能)。 |
-| resolveAvailability | Boolean | true に設定されているときに指定したリソースがビジー状態である場合は、[findMeetingTimes](../api/user-findmeetingtimes.md) は空いている別のリソースを検索します。false に設定されているときに指定したリソースがビジー状態である場合は、**findMeetingTimes** はリソースが空いているかどうかを確認しないで、ユーザーのキャッシュでトップにランク付けられているリソースを返します。既定値は true です。 |
+| resolveavailability | Boolean | true に設定されているときに指定したリソースがビジー状態である場合は、[findMeetingTimes](../api/user-findmeetingtimes.md) は空いている別のリソースを検索します。false に設定されているときに指定したリソースがビジー状態である場合は、**findMeetingTimes** はリソースが空いているかどうかを確認しないで、ユーザーのキャッシュでトップにランク付けられているリソースを返します。既定値は true です。 |
+| uniqueId | String | 内部使用のみ。|
+| uniqueIdType | String | 内部使用のみ。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

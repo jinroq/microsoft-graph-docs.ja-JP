@@ -2,16 +2,18 @@
 title: timeSlot リソースの種類
 description: 期間です。
 localization_priority: Normal
-ms.openlocfilehash: e01b8d0f34a21eb18bc92e8bcc4e1b8365541d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7b09ae7f1c60a8348e9f22b856c65f326432e408
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860565"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936242"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot リソースの種類
 
-期間です。
+会議の時間帯を表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,10 +35,10 @@ ms.locfileid: "27860565"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|期間の開始時間。|
-|start|[dateTimeTimeZone](datetimetimezone.md)|期間の終了時間。|
+|end|[dateTimeTimeZone](datetimetimezone.md)|期間が始まる日付、時刻、タイムゾーン。 |
+|start|[dateTimeTimeZone](datetimetimezone.md)|期間が終了する日付、時刻、タイムゾーン。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
