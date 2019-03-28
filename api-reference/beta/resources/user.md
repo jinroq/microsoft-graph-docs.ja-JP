@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379557"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936319"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -63,7 +63,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|出席者の空き時間情報、場所、または時間の制約に基づいて、集まる時間と場所を見つけます。|
+|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|出席者の空き時間情報、場所、または時間の制約に基づいて、集まる時間と場所を見つけます。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) コレクション | テナントで定義された部屋の一覧を取得します。|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) コレクション | ユーザーのテナント内、または特定の部屋の一覧内のすべての会議室を取得します。 |
 |[getMailTips](../api/user-getmailtips.md)|[mailTips](mailtips.md) コレクション|サインイン中のユーザーが利用できる、1 人または複数の受信者に対してのメール ヒントを返します。 |

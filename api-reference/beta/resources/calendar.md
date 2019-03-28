@@ -4,12 +4,12 @@ description: イベントのコンテナーである予定表です。 ユーザ
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 97232646b2485d244373feb0be9d87365af38247
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: e74e97245189a6b4b2559466eea8c776e5ff4f03
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057037"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936305"
 ---
 # <a name="calendar-resource-type"></a>calendar リソース型
 
@@ -35,8 +35,8 @@ ms.locfileid: "30057037"
 |[calendarView を一覧表示する](../api/calendar-list-calendarview.md) |[event](event.md) コレクション| ユーザーの標準として設定されている予定表 `(../me/calendarview)` または特定の予定表から、時間範囲で定義したカレンダー ビューのイベントの発生、例外、および単一インスタンスを取得します。|
 |[イベントを一覧表示する](../api/calendar-list-events.md) |[event](event.md) コレクション| 予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
 |[イベントを作成する](../api/calendar-post-events.md) |[event](event.md)| 既定または指定の予定表に新しいイベントを作成します。|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[findMeetingTimesResponse](findmeetingtimesresponse.md) |開催者と出席者の空き時間、および時間や場所の制約に基づいて、会議の時間と場所を提案します。 |
-|[getSchedule (プレビュー)](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) コレクション|指定した期間について、ユーザー、配布リスト、またはリソースのコレクションの空き時間情報を取得します。 |
+|[getSchedule](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) コレクション|指定した期間について、ユーザー、配布リスト、またはリソースのコレクションの空き時間情報を取得します。 |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |開催者と出席者の空き時間、および時間や場所の制約に基づいて、会議の時間と場所を提案します。 |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |新規または既存の予定表に、1 つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つ予定表を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む予定表を取得します。 |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | 新規または既存の予定表に、1 つ以上の複数値の拡張プロパティを作成します。  |
