@@ -48,16 +48,16 @@ items:
     - name: スキーマ拡張機能の使用 (例)
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
     displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
-  - name: リソース
-    items:
-    - name: ベスト プラクティス
-      href: /graph/best-practices-concept?toc=./ref/toc.json
-    - name: 既知の問題
-      href: /graph/known-issues?toc=./ref/toc.json
-    - name: 変更ログ
-      href: /graph/changelog?toc=./ref/toc.json
-    - name: エラー
-      href: /graph/errors?toc=./ref/toc.json
+- name: リソース
+  items:
+  - name: ベスト プラクティス
+    href: /graph/best-practices-concept?toc=./ref/toc.json
+  - name: 既知の問題
+    href: /graph/known-issues?toc=./ref/toc.json
+  - name: 変更ログ
+    href: /graph/changelog?toc=./ref/toc.json
+  - name: エラー
+    href: /graph/errors?toc=./ref/toc.json
 - name: 参照
   href: overview.md
   items:
@@ -8796,9 +8796,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 515779ef8410fb8a55478fc7ea3bae2ab211d306
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 13cbcec3d464f0b60f7a9f275c174af9fde87bae
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869506"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936347"
