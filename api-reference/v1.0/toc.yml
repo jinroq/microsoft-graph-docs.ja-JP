@@ -48,16 +48,16 @@ items:
     - name: スキーマ拡張機能の使用 (例)
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
     displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-  - name: リソース
-    items:
-    - name: ベスト プラクティス
-      href: /graph/best-practices-concept?toc=./ref/toc.json
-    - name: 既知の問題
-      href: /graph/known-issues?toc=./ref/toc.json
-    - name: 変更ログ
-      href: /graph/changelog?toc=./ref/toc.json
-    - name: エラー
-      href: /graph/errors?toc=./ref/toc.json
+- name: リソース
+  items:
+  - name: ベスト プラクティス
+    href: /graph/best-practices-concept?toc=./ref/toc.json
+  - name: 既知の問題
+    href: /graph/known-issues?toc=./ref/toc.json
+  - name: 変更ログ
+    href: /graph/changelog?toc=./ref/toc.json
+  - name: エラー
+    href: /graph/errors?toc=./ref/toc.json
 - name: 参照
   href: overview.md
   items:
@@ -99,6 +99,8 @@ items:
         href: api/user-list-calendarview.md
       - name: 通知ビュー
         href: api/user-reminderview.md
+      - name: 空き時間スケジュールを取得する
+        href: api/calendar-getschedule.md
       - name: 会議の日時を検索する
         href: api/user-findmeetingtimes.md
     - name: 連絡先
@@ -534,6 +536,8 @@ items:
         href: api/calendar-post-events.md
       - name: 通知ビュー
         href: api/user-reminderview.md
+      - name: 空き時間スケジュールを取得する
+        href: api/calendar-getschedule.md
       - name: 会議の日時を検索する
         href: api/user-findmeetingtimes.md
     - name: 予定表ビュー
@@ -4158,9 +4162,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 0ef10175d057f1e31a49259ad2cea04fcda8f906
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7a5fa770963c7ac4742ead0a68b6a5beac742539
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258899"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936340"
