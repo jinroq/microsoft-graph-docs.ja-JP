@@ -4,12 +4,12 @@ description: 新しい windowsInformationProtectionAppLearningSummary オブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 165664c3977ede205c406da712d5a331ff9de7c7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5721e88ac59dfcfa4e7c0bd6faa5393feea0b464
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174658"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976401"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174658"
 新しい [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,7 +52,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 |:---|:---|:---|
 |id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
 |applicationName|String|アプリケーション名|
-|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 使用可能な値は、`universal`、`desktop` です。|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
 

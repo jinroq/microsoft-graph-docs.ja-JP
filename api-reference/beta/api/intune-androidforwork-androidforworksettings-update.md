@@ -4,12 +4,12 @@ description: androidForWorkSettings オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65550bc588eb5fb0f4d2f11ac785d458e8821a7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 658744008af023fc2ad419aedc7a369f1ffbcb9f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170792"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976744"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170792"
 [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/androidForWorkSettings
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,21 +50,21 @@ PATCH /deviceManagement/androidForWorkSettings
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|Android for Work 設定の識別子|
-|bindStatus|[androidforwork bindstatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 使用可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
+|id|String|Android for Work の設定の識別子|
+|bindStatus|[androidforwork bindstatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
-|lastAppSyncStatus|[androidforwork syncstatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|最後のアプリケーションの同期結果。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|String|エンタープライズを作成した所有者 UPN|
-|ownerOrganizationName|String|Android for Work の配布準備時に使用される組織名|
-|lastModifiedDateTime|DateTimeOffset|Android for Work 設定の最終変更時刻|
-|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Android for Work デバイス管理にデバイスを登録できるユーザーを示します。 使用可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
-|targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceownermanagementenabled|ブール値|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
+|lastAppSyncStatus|[androidforwork syncstatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|最後のアプリケーションの同期結果。 可能な値は `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none` です。|
+|ownerUserPrincipalName|String|エンタープライズを作成した所有者の UPN|
+|ownerOrganizationName|String|Android for Work のオンボーディング時に使用される組織名|
+|lastModifiedDateTime|DateTimeOffset|Android for Work の設定の最終変更時刻|
+|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Android for Work デバイス管理にデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
+|targetGroupIds|String コレクション|enrollmentTarget が「Targeted」に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
+|deviceownermanagementenabled|Boolean|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、更新された [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) オブジェクトを応答本文で返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[androidforwork settings](../resources/intune-androidforwork-androidforworksettings.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

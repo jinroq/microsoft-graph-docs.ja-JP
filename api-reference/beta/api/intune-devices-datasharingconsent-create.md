@@ -4,12 +4,12 @@ description: 新しい dataSharingConsent オブジェクトを作成します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167110"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978081"
 ---
 # <a name="create-datasharingconsent"></a>dataSharingConsent を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167110"
 新しい[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -53,7 +53,7 @@ POST /deviceManagement/dataSharingConsents
 |id|String|データ共有の同意 Id|
 |servicedisplayname|String|サービスワークフローの表示名|
 |termsUrl|String|データ共有の同意の TermsUrl|
-|granted|ブール値|データ共有の同意の付与された状態|
+|granted|Boolean|データ共有の同意の付与された状態|
 |grantDateTime|DateTimeOffset|このアカウントに対して同意が与えられた時間|
 |grantedByUpn|String|このアカウントに同意を付与したユーザーの Upn|
 |grantedByUserId|String|このアカウントに同意を付与したユーザーの UserId|

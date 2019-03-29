@@ -4,12 +4,12 @@ description: 新しい sideLoadingKey オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afaae9fca5d6f459b94e5a6e7a7818d9426a0b6f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5a4a2e715e0255048a6ec13cbf3261bbacb80f3f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142953"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977290"
 ---
 # <a name="create-sideloadingkey"></a>sideLoadingKey を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142953"
 新しい[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -53,7 +53,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |id|String|サイドローディングキーの一意 Id。|
 |value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
 |displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
-|説明|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
+|description|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
 |totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
 |lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
