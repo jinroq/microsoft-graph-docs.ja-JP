@@ -4,12 +4,12 @@ description: 新しいユーザー オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f46fbbc365e52ae9e46db9f6c05c3c8e8eeddc92
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8f8cf0fb067c5a9cac80308f49fe07af122c1b47
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572258"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965320"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572258"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: cartToClassAssociation オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e616dd51136f93e62a5eb751863fd7b97218374c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 09e83b523145f79d610b1299d61fafc5d0a03b02
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144444"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964480"
 ---
 # <a name="update-carttoclassassociation"></a>cartToClassAssociation の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144444"
 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,12 +50,12 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |version|Int32|CartToClassAssociation のバージョン。|
-|displayName|String|デバイス構成について管理者が指定した名前。|
-|説明|String|CartToClassAssociation の管理者提供の説明。|
+|displayName|String|管理者が指定した、デバイス構成の名前。|
+|description|String|CartToClassAssociation の管理者提供の説明。|
 |devicecartids|String collection|クラスに関連付けられるデバイスカートの識別子。|
 |classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
 

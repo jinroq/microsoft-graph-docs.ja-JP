@@ -4,12 +4,12 @@ description: 新しい androiddeviceowner一般の devic/デバイスオブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cd38922bd7daa8f3e805208fe7c70d6d4abe777
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: f82410f562d76f370e32863ed636cd3306cd4990
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571943"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964179"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>androiddeviceowner一般の devic/デバイスの作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571943"
 新しい[androiddeviceowner一般の devic/デバイス](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

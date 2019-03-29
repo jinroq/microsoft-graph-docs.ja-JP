@@ -4,12 +4,12 @@ description: windows10VpnConfiguration オブジェクトのプロパティを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eecee9385c46de3138e09b02a8c6eb77fe799cd6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea2d9ef423e6cf5bfe6bcca19b5ef205a77e2aa4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156890"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963633"
 ---
 # <a name="update-windows10vpnconfiguration"></a>windows10VpnConfiguration の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156890"
 [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,34 +52,34 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |connectionName|String|ユーザーに表示される接続名。 [windowsvpnconfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)から継承します|
-|サーバー|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)コレクション|ネットワーク上の VPN サーバーの一覧。 エンドユーザーがこれらのネットワークの場所にアクセスできることを確認します。 このコレクションには、最大で 500 個の要素を含めることができます。 [windowsvpnconfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)から継承します|
+|サーバ|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)コレクション|ネットワーク上の VPN サーバーの一覧。 エンドユーザーがこれらのネットワークの場所にアクセスできることを確認します。 このコレクションには、最大で 500 個の要素を含めることができます。 [windowsvpnconfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)から継承します|
 |customXml|Binary|VPN 接続を構成するカスタム XML コマンド。 (UTF8 でエンコードされたバイト配列)[windowsvpnconfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)から継承します|
-|profiletarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|プロファイルのターゲットの種類。 可能な値は `user`、`device`、`autoPilotDevice` です。|
+|profiletarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|プロファイルのターゲットの種類。 使用可能な値は、`user`、`device`、`autoPilotDevice` です。|
 |connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|接続の種類。 可能な値は、`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`、`automatic`、`ikEv2`、`l2tp`、`pptp`、`citrix`、`paloAltoGlobalProtect` です。|
-|enablesplittunneling|ブール値|分割トンネリングを有効にします。|
-|enablealwayson|ブール値|Always On モードを有効にします。|
-|enableDeviceTunnel|ブール値|デバイストンネルを有効にします。|
-|enablednsregistration|ブール値|内部 DNS での IP アドレス登録を有効にします。|
+|enablesplittunneling|Boolean|分割トンネリングを有効にします。|
+|enablealwayson|Boolean|Always On モードを有効にします。|
+|enableDeviceTunnel|Boolean|デバイストンネルを有効にします。|
+|enablednsregistration|Boolean|内部 DNS での IP アドレス登録を有効にします。|
 |dnssuffixes|String collection|dns の検索一覧に追加する dns サフィックスを指定して、短い名前を適切にルーティングします。|
-|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|認証方法。 可能な値は `certificate`、`usernameAndPassword`、`customEapXml` です。|
-|rememberusercredentials|ブール値|ユーザーの資格情報を記憶します。|
-|enableConditionalAccess|ブール値|条件付きアクセスを有効にします。|
-|enableSingleSignOnWithAlternateCertificate|ブール値|代替証明書を使用してシングルサインオン (SSO) を有効にします。|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|認証方法。 使用可能な値は、`certificate`、`usernameAndPassword`、`customEapXml` です。|
+|rememberusercredentials|Boolean|ユーザーの資格情報を記憶します。|
+|enableConditionalAccess|Boolean|条件付きアクセスを有効にします。|
+|enableSingleSignOnWithAlternateCertificate|Boolean|代替証明書を使用してシングルサインオン (SSO) を有効にします。|
 |singleSignOnEku|[extendedkeyusage](../resources/intune-deviceconfig-extendedkeyusage.md)|シングルサインオンの拡張キー使用法 (EKU)。|
 |singleSignOnIssuerHash|String|シングルサインオン発行者ハッシュ。|
 |eapxml|Binary|拡張認証プロトコル (EAP) XML。 (UTF8 でエンコードされたバイト配列)|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|プロキシサーバー。|
 |associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)コレクション|関連付けられているアプリ。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|onlyAssociatedAppsCanUseConnection|ブール値|関連付けられているアプリのみが接続 (アプリごとの VPN) を使用できます。|
+|onlyAssociatedAppsCanUseConnection|Boolean|関連付けられているアプリのみが接続 (アプリごとの VPN) を使用できます。|
 |windowsinformationprotectiondomain|String|この接続に関連付ける Windows Information Protection (WIP) ドメイン。|
 |trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)コレクション|トラフィックルール。 このコレクションには、最大で 1000 個の要素を含めることができます。|
 |返信|[vpnroute](../resources/intune-deviceconfig-vpnroute.md)コレクション|ルート (サードパーティプロバイダーの場合はオプション)。 このコレクションには、最大で 1000 個の要素を含めることができます。|

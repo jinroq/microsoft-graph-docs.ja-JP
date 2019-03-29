@@ -1,17 +1,17 @@
 ---
-title: 割り当て resourceaccounttodevice アクション
+title: assignResourceAccountToDevice アクション
 description: リソースアカウントを自動操縦デバイスに割り当てます。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e46f12d33e26f15a87746720bfd1b418d4f21878
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 587ef8cdd0b3c61edf4076c04c1d01e87b917dc9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631602"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962926"
 ---
-# <a name="assignresourceaccounttodevice-action"></a>割り当て resourceaccounttodevice アクション
+# <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice アクション
 
 > **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631602"
 リソースアカウントを自動操縦デバイスに割り当てます。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: deviceAppManagement オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7a7bc478dc4a9a59b067b5acb3688c0bb0793d9f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570823"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963514"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -21,7 +21,7 @@ ms.locfileid: "30570823"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  適切なアクセス許可は、ワークフローによって異なることに注意してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  適切なアクセス許可は、ワークフローによって異なることに注意してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
