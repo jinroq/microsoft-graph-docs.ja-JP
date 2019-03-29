@@ -4,31 +4,31 @@ description: 新しい appLogCollectionRequest オブジェクトを作成しま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08a6c3943d669363b3667266d1b6e6013e501570
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144997"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968645"
 ---
-# <a name="create-applogcollectionrequest"></a><span data-ttu-id="38bd6-103">appLogCollectionRequest を作成する</span><span class="sxs-lookup"><span data-stu-id="38bd6-103">Create appLogCollectionRequest</span></span>
+# <a name="create-applogcollectionrequest"></a><span data-ttu-id="40407-103">appLogCollectionRequest を作成する</span><span class="sxs-lookup"><span data-stu-id="40407-103">Create appLogCollectionRequest</span></span>
 
-> <span data-ttu-id="38bd6-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="38bd6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="40407-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40407-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="38bd6-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="38bd6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="40407-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="40407-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="38bd6-106">新しい[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="38bd6-106">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
+<span data-ttu-id="40407-106">新しい[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="40407-106">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="38bd6-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="38bd6-107">Prerequisites</span></span>
-<span data-ttu-id="38bd6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38bd6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="40407-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="40407-107">Prerequisites</span></span>
+<span data-ttu-id="40407-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40407-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="38bd6-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="38bd6-110">Permission type</span></span>|<span data-ttu-id="38bd6-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="38bd6-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="40407-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="40407-110">Permission type</span></span>|<span data-ttu-id="40407-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="40407-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="38bd6-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="38bd6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="38bd6-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38bd6-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="38bd6-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="38bd6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="38bd6-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="38bd6-115">Not supported.</span></span>|
-|<span data-ttu-id="38bd6-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38bd6-116">Application</span></span>|<span data-ttu-id="38bd6-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="38bd6-117">Not supported.</span></span>|
+|<span data-ttu-id="40407-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="40407-112">Delegated (work or school account)</span></span>|<span data-ttu-id="40407-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="40407-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="40407-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="40407-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="40407-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40407-115">Not supported.</span></span>|
+|<span data-ttu-id="40407-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="40407-116">Application</span></span>|<span data-ttu-id="40407-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40407-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="38bd6-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="38bd6-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40407-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="40407-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "30144997"
 POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="38bd6-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="38bd6-119">Request headers</span></span>
-|<span data-ttu-id="38bd6-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="38bd6-120">Header</span></span>|<span data-ttu-id="38bd6-121">値</span><span class="sxs-lookup"><span data-stu-id="38bd6-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="40407-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40407-119">Request headers</span></span>
+|<span data-ttu-id="40407-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40407-120">Header</span></span>|<span data-ttu-id="40407-121">値</span><span class="sxs-lookup"><span data-stu-id="40407-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="38bd6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="38bd6-122">Authorization</span></span>|<span data-ttu-id="38bd6-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="38bd6-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="38bd6-124">承諾</span><span class="sxs-lookup"><span data-stu-id="38bd6-124">Accept</span></span>|<span data-ttu-id="38bd6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="38bd6-125">application/json</span></span>|
+|<span data-ttu-id="40407-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="40407-122">Authorization</span></span>|<span data-ttu-id="40407-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="40407-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="40407-124">承諾</span><span class="sxs-lookup"><span data-stu-id="40407-124">Accept</span></span>|<span data-ttu-id="40407-125">application/json</span><span class="sxs-lookup"><span data-stu-id="40407-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="38bd6-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="38bd6-126">Request body</span></span>
-<span data-ttu-id="38bd6-127">要求本文で、appLogCollectionRequest オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="38bd6-127">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40407-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="40407-126">Request body</span></span>
+<span data-ttu-id="40407-127">要求本文で、appLogCollectionRequest オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="40407-127">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
 
-<span data-ttu-id="38bd6-128">次の表に、appLogCollectionRequest の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="38bd6-128">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
+<span data-ttu-id="40407-128">次の表に、appLogCollectionRequest の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="40407-128">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
 
-|<span data-ttu-id="38bd6-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="38bd6-129">Property</span></span>|<span data-ttu-id="38bd6-130">型</span><span class="sxs-lookup"><span data-stu-id="38bd6-130">Type</span></span>|<span data-ttu-id="38bd6-131">説明</span><span class="sxs-lookup"><span data-stu-id="38bd6-131">Description</span></span>|
+|<span data-ttu-id="40407-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="40407-129">Property</span></span>|<span data-ttu-id="40407-130">型</span><span class="sxs-lookup"><span data-stu-id="40407-130">Type</span></span>|<span data-ttu-id="40407-131">説明</span><span class="sxs-lookup"><span data-stu-id="40407-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="38bd6-132">id</span><span class="sxs-lookup"><span data-stu-id="38bd6-132">id</span></span>|<span data-ttu-id="38bd6-133">String</span><span class="sxs-lookup"><span data-stu-id="38bd6-133">String</span></span>|<span data-ttu-id="38bd6-134">一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="38bd6-134">The unique Identifier.</span></span> <span data-ttu-id="38bd6-135">これは userId_DeviceId_AppId id です。</span><span class="sxs-lookup"><span data-stu-id="38bd6-135">This is userId_DeviceId_AppId id.</span></span>|
-|<span data-ttu-id="38bd6-136">status</span><span class="sxs-lookup"><span data-stu-id="38bd6-136">status</span></span>|[<span data-ttu-id="38bd6-137">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="38bd6-137">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="38bd6-138">ログのアップロードの状態。</span><span class="sxs-lookup"><span data-stu-id="38bd6-138">Log upload status.</span></span> <span data-ttu-id="38bd6-139">可能な値は `pending`、`completed`、`failed` です。</span><span class="sxs-lookup"><span data-stu-id="38bd6-139">Possible values are: `pending`, `completed`, `failed`.</span></span>|
-|<span data-ttu-id="38bd6-140">errorMessage</span><span class="sxs-lookup"><span data-stu-id="38bd6-140">errorMessage</span></span>|<span data-ttu-id="38bd6-141">String</span><span class="sxs-lookup"><span data-stu-id="38bd6-141">String</span></span>|<span data-ttu-id="38bd6-142">アップロードプロセス中にエラーメッセージが表示される場合</span><span class="sxs-lookup"><span data-stu-id="38bd6-142">Error message if any during the upload process</span></span>|
-|<span data-ttu-id="38bd6-143">customlogfolders</span><span class="sxs-lookup"><span data-stu-id="38bd6-143">customLogFolders</span></span>|<span data-ttu-id="38bd6-144">String collection</span><span class="sxs-lookup"><span data-stu-id="38bd6-144">String collection</span></span>|<span data-ttu-id="38bd6-145">ログフォルダーの一覧。</span><span class="sxs-lookup"><span data-stu-id="38bd6-145">List of log folders.</span></span> |
-|<span data-ttu-id="38bd6-146">CompletedDateTime</span><span class="sxs-lookup"><span data-stu-id="38bd6-146">completedDateTime</span></span>|<span data-ttu-id="38bd6-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="38bd6-147">DateTimeOffset</span></span>|<span data-ttu-id="38bd6-148">アップロードログ要求がターミナル状態に達した時刻</span><span class="sxs-lookup"><span data-stu-id="38bd6-148">Time at which the upload log request reached a terminal state</span></span>|
+|<span data-ttu-id="40407-132">id</span><span class="sxs-lookup"><span data-stu-id="40407-132">id</span></span>|<span data-ttu-id="40407-133">String</span><span class="sxs-lookup"><span data-stu-id="40407-133">String</span></span>|<span data-ttu-id="40407-134">一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="40407-134">The unique Identifier.</span></span> <span data-ttu-id="40407-135">これは userId_DeviceId_AppId id です。</span><span class="sxs-lookup"><span data-stu-id="40407-135">This is userId_DeviceId_AppId id.</span></span>|
+|<span data-ttu-id="40407-136">status</span><span class="sxs-lookup"><span data-stu-id="40407-136">status</span></span>|[<span data-ttu-id="40407-137">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="40407-137">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="40407-138">ログのアップロードの状態。</span><span class="sxs-lookup"><span data-stu-id="40407-138">Log upload status.</span></span> <span data-ttu-id="40407-139">使用可能な値は、`pending`、`completed`、`failed` です。</span><span class="sxs-lookup"><span data-stu-id="40407-139">Possible values are: `pending`, `completed`, `failed`.</span></span>|
+|<span data-ttu-id="40407-140">errorMessage</span><span class="sxs-lookup"><span data-stu-id="40407-140">errorMessage</span></span>|<span data-ttu-id="40407-141">String</span><span class="sxs-lookup"><span data-stu-id="40407-141">String</span></span>|<span data-ttu-id="40407-142">アップロードプロセス中にエラーメッセージが表示される場合</span><span class="sxs-lookup"><span data-stu-id="40407-142">Error message if any during the upload process</span></span>|
+|<span data-ttu-id="40407-143">customlogfolders</span><span class="sxs-lookup"><span data-stu-id="40407-143">customLogFolders</span></span>|<span data-ttu-id="40407-144">String collection</span><span class="sxs-lookup"><span data-stu-id="40407-144">String collection</span></span>|<span data-ttu-id="40407-145">ログフォルダーの一覧。</span><span class="sxs-lookup"><span data-stu-id="40407-145">List of log folders.</span></span> |
+|<span data-ttu-id="40407-146">CompletedDateTime</span><span class="sxs-lookup"><span data-stu-id="40407-146">completedDateTime</span></span>|<span data-ttu-id="40407-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="40407-147">DateTimeOffset</span></span>|<span data-ttu-id="40407-148">アップロードログ要求がターミナル状態に達した時刻</span><span class="sxs-lookup"><span data-stu-id="40407-148">Time at which the upload log request reached a terminal state</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="38bd6-149">応答</span><span class="sxs-lookup"><span data-stu-id="38bd6-149">Response</span></span>
-<span data-ttu-id="38bd6-150">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="38bd6-150">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="40407-149">応答</span><span class="sxs-lookup"><span data-stu-id="40407-149">Response</span></span>
+<span data-ttu-id="40407-150">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="40407-150">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="38bd6-151">例</span><span class="sxs-lookup"><span data-stu-id="38bd6-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40407-151">例</span><span class="sxs-lookup"><span data-stu-id="40407-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="38bd6-152">要求</span><span class="sxs-lookup"><span data-stu-id="38bd6-152">Request</span></span>
-<span data-ttu-id="38bd6-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="38bd6-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="40407-152">要求</span><span class="sxs-lookup"><span data-stu-id="40407-152">Request</span></span>
+<span data-ttu-id="40407-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="40407-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 257
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="38bd6-154">応答</span><span class="sxs-lookup"><span data-stu-id="38bd6-154">Response</span></span>
-<span data-ttu-id="38bd6-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="38bd6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="40407-154">応答</span><span class="sxs-lookup"><span data-stu-id="40407-154">Response</span></span>
+<span data-ttu-id="40407-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="40407-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

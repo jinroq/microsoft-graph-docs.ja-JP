@@ -4,29 +4,29 @@ description: localizedNotificationMessage を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0a9a7b6cd795fa3e989a27539640e05a7ad909f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 47df5ab32e3e80d4ab3666784a29c9d2b078a82d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263099"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969597"
 ---
-# <a name="delete-localizednotificationmessage"></a><span data-ttu-id="098a9-103">Delete localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="098a9-103">Delete localizedNotificationMessage</span></span>
+# <a name="delete-localizednotificationmessage"></a><span data-ttu-id="04dca-103">Delete localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="04dca-103">Delete localizedNotificationMessage</span></span>
 
-> <span data-ttu-id="098a9-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="098a9-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="04dca-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="04dca-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="098a9-105">[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="098a9-105">Deletes a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span></span>
+<span data-ttu-id="04dca-105">[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="04dca-105">Deletes a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="098a9-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="098a9-106">Prerequisites</span></span>
-<span data-ttu-id="098a9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="098a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="04dca-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="04dca-106">Prerequisites</span></span>
+<span data-ttu-id="04dca-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04dca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="098a9-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="098a9-109">Permission type</span></span>|<span data-ttu-id="098a9-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="098a9-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="04dca-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="04dca-109">Permission type</span></span>|<span data-ttu-id="04dca-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="04dca-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="098a9-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="098a9-111">Delegated (work or school account)</span></span>|<span data-ttu-id="098a9-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="098a9-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="098a9-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="098a9-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="098a9-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="098a9-114">Not supported.</span></span>|
-|<span data-ttu-id="098a9-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="098a9-115">Application</span></span>|<span data-ttu-id="098a9-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="098a9-116">Not supported.</span></span>|
+|<span data-ttu-id="04dca-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="04dca-111">Delegated (work or school account)</span></span>|<span data-ttu-id="04dca-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04dca-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="04dca-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="04dca-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="04dca-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="04dca-114">Not supported.</span></span>|
+|<span data-ttu-id="04dca-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="04dca-115">Application</span></span>|<span data-ttu-id="04dca-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="04dca-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="098a9-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="098a9-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="04dca-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="04dca-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,28 +35,28 @@ ms.locfileid: "30263099"
 DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="098a9-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="098a9-118">Request headers</span></span>
-|<span data-ttu-id="098a9-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="098a9-119">Header</span></span>|<span data-ttu-id="098a9-120">値</span><span class="sxs-lookup"><span data-stu-id="098a9-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="04dca-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="04dca-118">Request headers</span></span>
+|<span data-ttu-id="04dca-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="04dca-119">Header</span></span>|<span data-ttu-id="04dca-120">値</span><span class="sxs-lookup"><span data-stu-id="04dca-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="098a9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="098a9-121">Authorization</span></span>|<span data-ttu-id="098a9-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="098a9-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="098a9-123">承諾</span><span class="sxs-lookup"><span data-stu-id="098a9-123">Accept</span></span>|<span data-ttu-id="098a9-124">application/json</span><span class="sxs-lookup"><span data-stu-id="098a9-124">application/json</span></span>|
+|<span data-ttu-id="04dca-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="04dca-121">Authorization</span></span>|<span data-ttu-id="04dca-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="04dca-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="04dca-123">承諾</span><span class="sxs-lookup"><span data-stu-id="04dca-123">Accept</span></span>|<span data-ttu-id="04dca-124">application/json</span><span class="sxs-lookup"><span data-stu-id="04dca-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="098a9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="098a9-125">Request body</span></span>
-<span data-ttu-id="098a9-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="098a9-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="04dca-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="04dca-125">Request body</span></span>
+<span data-ttu-id="04dca-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="04dca-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="098a9-127">応答</span><span class="sxs-lookup"><span data-stu-id="098a9-127">Response</span></span>
-<span data-ttu-id="098a9-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="098a9-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="04dca-127">応答</span><span class="sxs-lookup"><span data-stu-id="04dca-127">Response</span></span>
+<span data-ttu-id="04dca-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="04dca-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="098a9-129">例</span><span class="sxs-lookup"><span data-stu-id="098a9-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="04dca-129">例</span><span class="sxs-lookup"><span data-stu-id="04dca-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="098a9-130">要求</span><span class="sxs-lookup"><span data-stu-id="098a9-130">Request</span></span>
-<span data-ttu-id="098a9-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="098a9-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="04dca-130">要求</span><span class="sxs-lookup"><span data-stu-id="04dca-130">Request</span></span>
+<span data-ttu-id="04dca-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="04dca-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-### <a name="response"></a><span data-ttu-id="098a9-132">応答</span><span class="sxs-lookup"><span data-stu-id="098a9-132">Response</span></span>
-<span data-ttu-id="098a9-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="098a9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="04dca-132">応答</span><span class="sxs-lookup"><span data-stu-id="04dca-132">Response</span></span>
+<span data-ttu-id="04dca-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="04dca-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
