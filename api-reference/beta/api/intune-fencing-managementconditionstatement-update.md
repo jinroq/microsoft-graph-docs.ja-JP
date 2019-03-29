@@ -4,12 +4,12 @@ description: managementconditionstatement オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 933d3f7c60f78b5ea6f115f6388881a434ef3484
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c2211d202ddc875a0da24d9f0d5bbe959f092ae
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151899"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969408"
 ---
 # <a name="update-managementconditionstatement"></a>managementconditionstatement の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151899"
 [managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -51,11 +51,11 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
+|id|String|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
 |displayName|String|管理条件ステートメントの管理者定義の名前。|
-|説明|String|管理条件ステートメントの管理者定義の説明。|
+|description|String|管理条件ステートメントの管理者定義の説明。|
 |createdDateTime|DateTimeOffset|管理条件ステートメントが作成された時刻。 サービス側を生成しました。|
-|変更された日時|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
+|modifiedDateTime|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
 |式|[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
 |eTag|String|管理条件ステートメントの ETag。 サービス側を更新しました。|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。

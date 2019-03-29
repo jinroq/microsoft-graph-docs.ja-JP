@@ -4,12 +4,12 @@ description: grouppolicydefinitionfile オブジェクトのプロパティを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e204382f9237428b30362f7464264f732e13541a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e82a9236f5d062a497eaa25a7fbcd31624d67082
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169413"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970556"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>grouppolicydefinitionfile の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169413"
 [grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,11 +52,11 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
-|説明|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は empty です。|
+|description|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
 |languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
 |targetprefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
-|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 使用可能な値は、`admxBacked`、`admxIngested` です。|
+|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 

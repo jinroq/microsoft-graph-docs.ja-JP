@@ -4,12 +4,12 @@ description: 新しい telecomExpenseManagementPartner オブジェクトを作�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d53ecb03ca1a4dbb8fe2a099e168d85084c2362f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 262df87456cfbea20409d4ff41566b18d896431e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149855"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970045"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149855"
 新しい [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,9 +52,9 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |:---|:---|:---|
 |id|文字列|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
-|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者は、このパネルで TEM サービスを構成できます。|
+|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを示します。|
+|enabled|ブール型 (Boolean)|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 
