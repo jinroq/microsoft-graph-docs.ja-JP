@@ -1,7 +1,7 @@
 ### YamlMime:YamlDocument
 ms.openlocfilehash: 2ff7e9f52c7f8671bd2246bedc9ac213bff0c859
 ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2019
 ms.locfileid: "30693695"
@@ -9,7 +9,7 @@ documentType: LandingData
 title: Microsoft Graph ドキュメント
 metadata:
   title: Microsoft Graph ドキュメント
-  description: Microsoft Graph を使用して、数百万ユーザーのデータを操作する組織やコンシューマー向けのアプリを構築する方法を説明します。
+  description: Microsoft Graph を使用して、数百万ものユーザーのデータを扱う組織やコンシューマーに向けたアプリを作成する方法について説明します。
   services: active-directory
   author: CelesteDG
   manager: mtillman
@@ -19,7 +19,7 @@ metadata:
   ms.date: 03/20/2019
   ms.author: celested
 abstract:
-  description: Microsoft Graph では、何百万ものユーザーのデータを扱う組織やコンシューマー向けのアプリを構築するために使用できる統合プログラミングモデルが提供されています。 Microsoft Graph REST api を使用して、Azure Active Directory、Office 365 サービス、Enterprise Mobility and Security services、Windows 10 services、Dynamics 365 などのデータにアクセスできます。 Microsoft Graph api の使用方法の詳細については、ドキュメントを参照してください。
+  description: Microsoft Graph は、数百万ものユーザーのデータを扱う組織やコンシューマーに向けたアプリを作成できる、統一されたプログラマビリティ モデルを提供します。 Microsoft Graph REST API を使用すると、Azure Active Directory、Office 365 サービス、Enterprise Mobility and Security サービス、Windows 10 サービス、Dynamics 365 などにあるデータにアクセスできます。 Microsoft Graph API の使用方法の詳細については、ドキュメントを参照してください。
   aside:
     image:
       alt: 
@@ -37,39 +37,39 @@ sections:
     columns: 3
     items:
     - href: /graph/overview
-      html: <p>Microsoft Graph を使用してできることについて説明し、いくつかの一般的な API ユースケースを示します。</p>
+      html: <p>Microsoft Graph でできることについて説明し、一般的な API のユースケースを示します。</p>
       image:
         src: ./images/index/i_get-started.svg
       title: Microsoft Graph の概要
     - href: /graph/overview-major-services
-      html: <p>Microsoft Graph で利用できる主要なサービスと機能について理解を深める。</p>
+      html: <p>Microsoft Graph で利用できる主要なサービスと機能について詳しく理解してください。</p>
       image:
         src: ./images/index/i_overview.svg
       title: サービスと機能
     - href: https://developer.microsoft.com/graph/graph-explorer/
-      html: <p>Microsoft Graph に対して要求を送信し、応答を表示します。</p>
+      html: <p>Microsoft Graph API に要求を送信して、応答を確認してください。</p>
       image:
         src: ./images/index/i_queries.svg
       title: Graph エクスプローラー
     - href: /graph/use-the-api
-      html: <p>microsoft Graph API を使用して microsoft クラウドサービスリソースにアクセスする方法について説明します。</p>
+      html: <p>Microsoft Cloud のサービス リソースにアクセスするために、Microsoft Graph API の使用を開始する方法について説明します。</p>
       image:
         src: ./images/index/i_code-edit.svg
       title: API の使用
     - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-      html: <p>Microsoft Graph REST API v2.0 を使用して、実際の運用ニーズに対応します。</p>
+      html: <p>Microsoft Graph REST API v1.0 を使用して、実際の運用上のニーズに対応できます。</p>
       image:
         src: ./images/index/i_api-reference.svg
       title: Microsoft Graph REST API v1.0
     - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-      html: <p>Microsoft Graph ベータ版エンドポイントを試してみてください。</p>
+      html: <p>Microsoft Graph ベータ版のエンドポイントを試用してください。</p>
       image:
         src: ./images/index/i_api.svg
       title: Microsoft Graph REST API ベータ版
 - title: サポートされるプラットフォーム
   items:
   - type: paragraph
-    text: sdk を検索して、microsoft graph の基本的な概念や、microsoft graph を使用してデータにアクセスする簡単なアプリを作成する方法を含む、プラットフォーム固有のステップバイステップのトレーニングを行います。
+    text: プラットフォーム固有の SDK を見つけてステップバイステップ トレーニングを実習してください。このトレーニングでは、Azure AD 認証を使用して Microsoft Graph によってデータにアクセスするシンプルなアプリの作成方法など、基本的な Microsoft Graph の概念について紹介します。
   - type: table
     style: dataMatrix
     columns:
@@ -87,7 +87,7 @@ sections:
       title: iOS
     - image:
         src: ./images/index/logo_java.svg
-      title: .java
+      title: Java
     - image:
         src: ./images/index/logo_js.svg
       title: JavaScript
@@ -138,7 +138,7 @@ sections:
       - href: /graph/tutorials/ruby
       - href: /graph/tutorials/uwp
       - href: 
-    - title: xdk
+    - title: SDK
       values:
       - href: https://github.com/microsoftgraph/msgraph-sdk-android
       - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
@@ -152,7 +152,7 @@ sections:
       - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
       - href: https://www.nuget.org/packages/Microsoft.Graph
       - href: https://www.nuget.org/packages/Microsoft.Graph
-- title: リソース
+- title: 関連情報
   items:
   - type: list
     style: cards
@@ -160,12 +160,12 @@ sections:
     columns: 3
     items:
     - href: /graph/changelog
-      html: <p>Microsoft Graph API の v1.0 バージョンとベータ版で変更された機能について説明します。</p>
+      html: <p>Microsoft Graph API の v1.0 とベータ版の変更内容について説明します。</p>
       image:
         src: ./images/index/i_backlog.svg
       title: 変更ログ
     - href: https://developer.microsoft.com/graph/blogs/
-      html: <p>ブログを読んで、新しい api に関する最新ニュースを入手したり、変更内容を壊すことができます。</p>
+      html: <p>新しい API や大幅な変更など、最新ニュースについてはブログを参照してください。</p>
       image:
         src: ./images/index/i_blog.svg
       title: Microsoft Graph ブログ
