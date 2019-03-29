@@ -4,12 +4,12 @@ description: 新しい devicemanagementscriptdevicestate オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93bd605b64b652346fbcba03e0fc2952ad6dfaa4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e3fd22420a0350f4b52b6fa569458edf1a9449a3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175081"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973902"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>devicemanagementscriptdevicestate の作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175081"
 新しい[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
-|runstate|[runstate](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は `unknown`、`success`、`fail` です。|
+|runstate|[runstate](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 使用可能な値は、`unknown`、`success`、`fail` です。|
 |resultmessage|String|実行出力の詳細。|
 |laststateupdatedatetime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|

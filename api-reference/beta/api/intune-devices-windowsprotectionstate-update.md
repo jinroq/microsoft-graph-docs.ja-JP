@@ -4,12 +4,12 @@ description: windowsprotectionstate オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143821"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973888"
 ---
 # <a name="update-windowsprotectionstate"></a>windowsprotectionstate の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143821"
 [windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,15 +52,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
-|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか、または使用できない|
-|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|ブール値|リアルタイム保護が有効になっているかどうか。|
-|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効になっているかどうか。|
-|quickscanoverdue 超過|ブール値|クイックスキャンの期限が過ぎたかどうか。|
-|fullscanoverdue|ブール値|完全スキャンの期限が過ぎたかどうか。|
-|signatureupdateoverdue|ブール値|署名が古くなっているかどうか|
-|rebootRequired|ブール値|再起動が必要かどうか|
-|fullscanrequired|ブール値|フルスキャンが必要かどうか。|
+|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか、または使用できない|
+|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 可能な値は `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical` です。|
+|realTimeProtectionEnabled|Boolean|リアルタイム保護が有効になっているかどうか。|
+|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効になっているかどうか。|
+|quickscanoverdue 超過|Boolean|クイックスキャンの期限が過ぎたかどうか。|
+|fullscanoverdue|Boolean|完全スキャンの期限が過ぎたかどうか。|
+|signatureupdateoverdue|Boolean|署名が古くなっているかどうか|
+|rebootRequired|Boolean|再起動が必要かどうか|
+|fullscanrequired|Boolean|フルスキャンが必要かどうか。|
 |engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
 |signatureversion|String|現在のマルウェア定義バージョン|
 |antiMalwareVersion|String|現在のマルウェア対策バージョン|
