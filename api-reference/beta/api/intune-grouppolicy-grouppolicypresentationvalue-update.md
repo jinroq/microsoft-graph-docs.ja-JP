@@ -4,31 +4,31 @@ description: grouppolicypresentationvalue オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b4ce9b5c515a6e765e1e87cceca3dd98358c57d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf476988493577d750f3a249bf684d3c5db9a47f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152095"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983653"
 ---
-# <a name="update-grouppolicypresentationvalue"></a><span data-ttu-id="dd229-103">grouppolicypresentationvalue の更新</span><span class="sxs-lookup"><span data-stu-id="dd229-103">Update groupPolicyPresentationValue</span></span>
+# <a name="update-grouppolicypresentationvalue"></a><span data-ttu-id="c7998-103">grouppolicypresentationvalue の更新</span><span class="sxs-lookup"><span data-stu-id="c7998-103">Update groupPolicyPresentationValue</span></span>
 
-> <span data-ttu-id="dd229-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd229-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c7998-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7998-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dd229-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="dd229-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c7998-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c7998-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dd229-106">[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="dd229-106">Update the properties of a [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object.</span></span>
+<span data-ttu-id="c7998-106">[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c7998-106">Update the properties of a [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dd229-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="dd229-107">Prerequisites</span></span>
-<span data-ttu-id="dd229-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dd229-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c7998-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="c7998-107">Prerequisites</span></span>
+<span data-ttu-id="c7998-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c7998-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dd229-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dd229-110">Permission type</span></span>|<span data-ttu-id="dd229-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="dd229-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c7998-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c7998-110">Permission type</span></span>|<span data-ttu-id="c7998-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="c7998-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dd229-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dd229-112">Delegated (work or school account)</span></span>|<span data-ttu-id="dd229-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dd229-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="dd229-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dd229-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dd229-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd229-115">Not supported.</span></span>|
-|<span data-ttu-id="dd229-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dd229-116">Application</span></span>|<span data-ttu-id="dd229-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd229-117">Not supported.</span></span>|
+|<span data-ttu-id="c7998-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c7998-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c7998-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7998-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="c7998-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c7998-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7998-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7998-115">Not supported.</span></span>|
+|<span data-ttu-id="c7998-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c7998-116">Application</span></span>|<span data-ttu-id="c7998-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7998-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dd229-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dd229-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7998-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c7998-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "30152095"
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dd229-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dd229-119">Request headers</span></span>
-|<span data-ttu-id="dd229-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dd229-120">Header</span></span>|<span data-ttu-id="dd229-121">値</span><span class="sxs-lookup"><span data-stu-id="dd229-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c7998-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c7998-119">Request headers</span></span>
+|<span data-ttu-id="c7998-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c7998-120">Header</span></span>|<span data-ttu-id="c7998-121">値</span><span class="sxs-lookup"><span data-stu-id="c7998-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dd229-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd229-122">Authorization</span></span>|<span data-ttu-id="dd229-123">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="dd229-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dd229-124">承諾</span><span class="sxs-lookup"><span data-stu-id="dd229-124">Accept</span></span>|<span data-ttu-id="dd229-125">application/json</span><span class="sxs-lookup"><span data-stu-id="dd229-125">application/json</span></span>|
+|<span data-ttu-id="c7998-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7998-122">Authorization</span></span>|<span data-ttu-id="c7998-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="c7998-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c7998-124">承諾</span><span class="sxs-lookup"><span data-stu-id="c7998-124">Accept</span></span>|<span data-ttu-id="c7998-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c7998-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dd229-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="dd229-126">Request body</span></span>
-<span data-ttu-id="dd229-127">要求本文で、 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="dd229-127">In the request body, supply a JSON representation for the [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7998-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c7998-126">Request body</span></span>
+<span data-ttu-id="c7998-127">要求本文で、 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c7998-127">In the request body, supply a JSON representation for the [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object.</span></span>
 
-<span data-ttu-id="dd229-128">次の表に、 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="dd229-128">The following table shows the properties that are required when you create the [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md).</span></span>
+<span data-ttu-id="c7998-128">次の表に、 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="c7998-128">The following table shows the properties that are required when you create the [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md).</span></span>
 
-|<span data-ttu-id="dd229-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dd229-129">Property</span></span>|<span data-ttu-id="dd229-130">型</span><span class="sxs-lookup"><span data-stu-id="dd229-130">Type</span></span>|<span data-ttu-id="dd229-131">説明</span><span class="sxs-lookup"><span data-stu-id="dd229-131">Description</span></span>|
+|<span data-ttu-id="c7998-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c7998-129">Property</span></span>|<span data-ttu-id="c7998-130">型</span><span class="sxs-lookup"><span data-stu-id="c7998-130">Type</span></span>|<span data-ttu-id="c7998-131">説明</span><span class="sxs-lookup"><span data-stu-id="c7998-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dd229-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="dd229-132">lastModifiedDateTime</span></span>|<span data-ttu-id="dd229-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dd229-133">DateTimeOffset</span></span>|<span data-ttu-id="dd229-134">オブジェクトが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="dd229-134">The date and time the object was last modified.</span></span>|
-|<span data-ttu-id="dd229-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="dd229-135">createdDateTime</span></span>|<span data-ttu-id="dd229-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dd229-136">DateTimeOffset</span></span>|<span data-ttu-id="dd229-137">オブジェクトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="dd229-137">The date and time the object was created.</span></span>|
-|<span data-ttu-id="dd229-138">id</span><span class="sxs-lookup"><span data-stu-id="dd229-138">id</span></span>|<span data-ttu-id="dd229-139">String</span><span class="sxs-lookup"><span data-stu-id="dd229-139">String</span></span>|<span data-ttu-id="dd229-140">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="dd229-140">Key of the entity.</span></span>|
+|<span data-ttu-id="c7998-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c7998-132">lastModifiedDateTime</span></span>|<span data-ttu-id="c7998-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c7998-133">DateTimeOffset</span></span>|<span data-ttu-id="c7998-134">オブジェクトが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="c7998-134">The date and time the object was last modified.</span></span>|
+|<span data-ttu-id="c7998-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="c7998-135">createdDateTime</span></span>|<span data-ttu-id="c7998-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c7998-136">DateTimeOffset</span></span>|<span data-ttu-id="c7998-137">オブジェクトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="c7998-137">The date and time the object was created.</span></span>|
+|<span data-ttu-id="c7998-138">id</span><span class="sxs-lookup"><span data-stu-id="c7998-138">id</span></span>|<span data-ttu-id="c7998-139">String</span><span class="sxs-lookup"><span data-stu-id="c7998-139">String</span></span>|<span data-ttu-id="c7998-140">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="c7998-140">Key of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="dd229-141">応答</span><span class="sxs-lookup"><span data-stu-id="dd229-141">Response</span></span>
-<span data-ttu-id="dd229-142">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dd229-142">If successful, this method returns a `200 OK` response code and an updated [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c7998-141">応答</span><span class="sxs-lookup"><span data-stu-id="c7998-141">Response</span></span>
+<span data-ttu-id="c7998-142">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c7998-142">If successful, this method returns a `200 OK` response code and an updated [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dd229-143">例</span><span class="sxs-lookup"><span data-stu-id="dd229-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c7998-143">例</span><span class="sxs-lookup"><span data-stu-id="c7998-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dd229-144">要求</span><span class="sxs-lookup"><span data-stu-id="dd229-144">Request</span></span>
-<span data-ttu-id="dd229-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dd229-145">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c7998-144">要求</span><span class="sxs-lookup"><span data-stu-id="c7998-144">Request</span></span>
+<span data-ttu-id="c7998-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c7998-145">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}
 Content-type: application/json
@@ -73,8 +73,8 @@ Content-length: 70
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="dd229-146">応答</span><span class="sxs-lookup"><span data-stu-id="dd229-146">Response</span></span>
-<span data-ttu-id="dd229-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dd229-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c7998-146">応答</span><span class="sxs-lookup"><span data-stu-id="c7998-146">Response</span></span>
+<span data-ttu-id="c7998-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c7998-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
