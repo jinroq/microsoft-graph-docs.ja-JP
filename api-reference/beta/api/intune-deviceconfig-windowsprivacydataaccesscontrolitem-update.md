@@ -4,12 +4,12 @@ description: windowsPrivacyDataAccessControlItem オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e380085a91a7e02ce729d28888a563932c54be17
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8f865b3349662309e4bb4821e4911289df579d9b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166123"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984318"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>windowsPrivacyDataAccessControlItem の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166123"
 [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,8 +50,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|WindowsPrivacyDataAccessControlItem のキー。|
-|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|これは、指定されたアプリケーションに割り当てられるプライバシーデータカテゴリのアクセスレベルを示します。 使用可能な値は、`notConfigured`、`forceAllow`、`forceDeny`、`userInControl` です。|
+|id|String|WindowsPrivacyDataAccessControlItem のキー。|
+|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|これは、指定されたアプリケーションに割り当てられるプライバシーデータカテゴリのアクセスレベルを示します。 可能な値は、`notConfigured`、`forceAllow`、`forceDeny`、`userInControl` です。|
 |引数 datacategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|これは、特定のアクセス制御が適用されるプライバシーデータカテゴリを示します。 可能な値: `notConfigured`、 `accountInfo` `appsRunInBackground` `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone`、、、、、、、、、、、、 `motion` `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices`.|
 |app・パッケージ efamilyname|String|Windows アプリのパッケージファミリ名。 設定すると、指定したアプリケーションにアクセスレベルが適用されます。|
 |appDisplayName|String|Windows アプリのパッケージファミリ名。 設定すると、指定したアプリケーションにアクセスレベルが適用されます。|

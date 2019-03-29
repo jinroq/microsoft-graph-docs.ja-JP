@@ -4,12 +4,12 @@ description: 現在認証されているユーザーの割り当て済みのロ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9326f490721f032b38f5fcb64d1cad12602ff76f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c8d1618aeece15fc482d0d850f8938d45cb53edd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570781"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981371"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 関数
 
@@ -19,7 +19,7 @@ ms.locfileid: "30570781"
 
 現在認証されているユーザーの割り当て済みのロール定義と役割の割り当てを取得します。
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

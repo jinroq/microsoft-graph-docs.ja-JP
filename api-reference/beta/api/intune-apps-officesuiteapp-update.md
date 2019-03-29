@@ -4,12 +4,12 @@ description: officeSuiteApp オブジェクトのプロパティを更新しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6e8837741c7376d7f0c33740a0ed6420adf7c89
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 90ca5b6c3c00f04f4120a7102b7f52a3255df263
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572202"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976996"
 ---
 # <a name="update-officesuiteapp"></a>officeSuiteApp の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572202"
 [officeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -80,7 +80,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |shouldUninstallOlderVersionsOfOffice|Boolean|Office365 アプリスイートがデバイスに展開されている場合に、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
 |targetVersion|String|デバイスに展開されたままにする必要がある、Office365 アプリスイートの特定のターゲットバージョンを表すプロパティ。|
 |updateversion|String|Office365 アプリスイートで特定のターゲットバージョンが利用可能な更新バージョンを表すプロパティ。|
-|officeConfigurationXml|バイナリ|Office ProPlus アプリに指定できる XML 構成ファイルを表すプロパティ。 他のすべてのプロパティより優先されます。 指定した場合、XML 構成ファイルを使用してアプリが作成されます。|
+|officeConfigurationXml|Binary|Office ProPlus アプリに指定できる XML 構成ファイルを表すプロパティ。 他のすべてのプロパティより優先されます。 指定した場合、XML 構成ファイルを使用してアプリが作成されます。|
 
 
 

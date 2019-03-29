@@ -1,15 +1,15 @@
 ---
 title: VPPトークンの更新
-description: vppToken オブジェクトのプロパティを更新します。
+description: VPPトークン オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdfe0a7a668fed803b77afb47a0b24baccd37554
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: ff48f683c9ac5a31d115a92856d2870bdd0d870d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251847"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982148"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251847"
 [VPPトークン](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>必要条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +38,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -48,16 +48,16 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
-|organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 使用可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
-|appleId|String|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
-|expirationDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンの有効期限。|
-|lastSyncDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
-|token|String|Apple Volume Purchase Program からダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
-|lastModifiedDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンに関連付けられている最終変更日時。|
-|state|[vpptokenstate](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
-|lastSyncStatus|[vpptokensyncstatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
+|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|organizationName|String|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
+|appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
+|expirationDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンの有効期限。|
+|lastSyncDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
+|token|String|Apple ボリューム購入プログラムからダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
+|lastModifiedDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンに関連付けられている最終変更日時。|
+|state|[vpptokenstate](../resources/intune-onboarding-vpptokenstate.md)|Apple ボリューム購入プログラムのトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
+|lastSyncStatus|[vpptokensyncstatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple ボリューム購入プログラム トークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
 |automaticallyUpdateApps|Boolean|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|文字列|VPP トークンのアプリを自動で更新するかどうか。|
 
