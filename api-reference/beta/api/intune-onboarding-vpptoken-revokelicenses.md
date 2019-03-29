@@ -4,12 +4,12 @@ description: 特定の appleVolumePurchaseProgramToken に関連付けられて�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e65597289e0c4c273a1de41e736ab871bb5c3188
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5094711ad545c24fff27716e7a33bd5acafc7dac
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144570"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980965"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses アクション
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144570"
 特定の appleVolumePurchaseProgramToken に関連付けられているライセンスを取り消す
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,7 +50,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|notifymanageddevices|ブール値|まだ文書化されていません|
+|notifymanageddevices|ブール型 (Boolean)|まだ文書化されていません|
 
 
 
