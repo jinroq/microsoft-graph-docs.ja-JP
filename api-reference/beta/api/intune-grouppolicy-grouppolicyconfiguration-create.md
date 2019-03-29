@@ -4,12 +4,12 @@ description: 新しい grouppolicyconfiguration オブジェクトを作成し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 307c12d5b91759618c01f9fa219f50779394a0bf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ec6bbb8353c8f39ed5249fca909b8387d9cb2104
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174714"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973307"
 ---
 # <a name="create-grouppolicyconfiguration"></a>grouppolicyconfiguration の作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174714"
 新しい[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/groupPolicyConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,7 +52,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
 |displayName|String|ユーザーが指定した resource オブジェクトの名前。|
-|説明|String|ユーザーが指定した resource オブジェクトの説明。|
+|description|String|ユーザーが指定した resource オブジェクトの説明。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 

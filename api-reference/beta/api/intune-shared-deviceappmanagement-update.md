@@ -4,12 +4,12 @@ description: deviceAppManagement オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3afda42d9ffc0989f98d0a9c36debb5ee54e597a
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 6067640d883e771d79e925fd0bcf87c2857c2c0c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967903"
 ---
 # <a name="update-deviceappmanagement"></a>Update deviceAppManagement
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572468"
 
 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  適切なアクセス許可は、ワークフローによって異なることに注意してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  適切なアクセス許可は、ワークフローによって異なることに注意してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
