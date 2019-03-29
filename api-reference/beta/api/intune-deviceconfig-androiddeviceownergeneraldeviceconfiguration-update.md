@@ -4,12 +4,12 @@ description: androiddeviceownerのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1991fbfcef9ce55b12536c0b78c4f1d58937c033
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: a1af234832c874c69892c4676cf7d990a7b7f5ac
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571558"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967875"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>androiddeviceowner一般の devic/デバイスの更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571558"
 [androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)プロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: 新しいしましたオブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b38fe9bd6d418823cb2e94aa3fc8ac161ce471c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2fea367f3a4978d02a117edc6de5ebc70466000c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175116"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962877"
 ---
 # <a name="create-enrollmentprofile"></a>しましたを作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175116"
 新しい[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,11 +52,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
-|説明|String|プロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルにユーザー認証が必要かどうかを示します|
+|description|String|プロファイルの説明|
+|requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
 |configurationendpointurl|String|登録に使用する構成エンドポイント url|
-|enableAuthenticationViaCompanyPortal|ブール値|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|ブール値|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
+|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
 
 

@@ -4,12 +4,12 @@ description: macOSGeneralDeviceConfiguration オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3626c77a3f1cb0d1bfd2a3a2aa13f19c2af958b9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cfa8e6c9e27e00288a0d3712b098eecf9ebc03f8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966699"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>macOSGeneralDeviceConfiguration の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160950"
 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,54 +52,54 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|CompliantAppsList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|CompliantAppsList 内にあるリスト。 使用可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |emailInDomainSuffixes|String コレクション|これらの文字列のいずれかに一致するサフィックスがないメール アドレスは、ドメイン外と見なされます。|
 |passwordBlockSimple|Boolean|単純なパスワードを禁止します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。|
 |passwordMinimumCharacterSetCount|Int32|パスワードが含まなければならない文字セットの数。 有効な値は 0 から 4 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。|
-|passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間。|
+|passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでに必要な非アクティブ時間 (分)。|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでに必要な非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。|
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
-|keychainBlockCloudSync|ブール値|iCloud のキーチェーン同期がブロックされるかどうかを示します (macOS 10.12 以降)。|
-|airPrintBlocked|ブール値|放映印刷をブロックするかどうかを示します (macOS 10.12 以降)。|
-|airPrintForceTrustedTLS|ブール値|TLS 印刷通信 (macOS 10.13 以降) に対して信頼できる証明書が必要かどうかを示します。|
-|airPrintBlockiBeaconDiscovery|ブール値|放映された印刷プリンターの ibeacon 検出をブロックするかどうかを示します。 これにより、ネットワークトラフィック (macOS 10.3 以降) のフィッシングからの、誤った放送印刷の Bluetooth ビーコンを防ぐことができます。|
+|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
+|keychainBlockCloudSync|Boolean|iCloud のキーチェーン同期がブロックされるかどうかを示します (macOS 10.12 以降)。|
+|airPrintBlocked|Boolean|放映印刷をブロックするかどうかを示します (macOS 10.12 以降)。|
+|airPrintForceTrustedTLS|Boolean|TLS 印刷通信 (macOS 10.13 以降) に対して信頼できる証明書が必要かどうかを示します。|
+|airPrintBlockiBeaconDiscovery|Boolean|放映された印刷プリンターの ibeacon 検出をブロックするかどうかを示します。 これにより、ネットワークトラフィック (macOS 10.3 以降) のフィッシングからの、誤った放送印刷の Bluetooth ビーコンを防ぐことができます。|
 |safariBlockAutofill|Boolean|ユーザーによる Safari での自動入力の使用を禁止するかどうかを示します。|
-|cameraBlocked|ブール値|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。|
-|iTunesBlockMusicService|ブール値|ミュージックサービスを禁止するかどうかを示し、ミュージックアプリをクラシックモードに戻すかどうかを指定します。|
+|cameraBlocked|Boolean|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。|
+|iTunesBlockMusicService|Boolean|ミュージックサービスを禁止するかどうかを示し、ミュージックアプリをクラシックモードに戻すかどうかを指定します。|
 |spotlightBlockInternetResults|Boolean|スポットライトがインターネット検索の結果を返すことを禁止するかどうかを示します。|
-|keyboardBlockDictation|ブール値|ユーザーがディクテーション入力を使用することを禁止するかどうかを示します。|
-|definitionLookupBlocked|ブール値|定義の参照をブロックするかどうかを示します。|
-|appleWatchBlockAutoUnlock|ブール値|ユーザーが Apple Watch で Mac のロックを解除することを禁止するかどうかを示します。|
-|itunesblockfilesharing|ブール値|iTunes を使用してファイルを転送することを禁止するかどうかを示します。|
-|iCloudBlockDocumentSync|ブール値|iCloud のドキュメントの同期を禁止するかどうかを示します。|
-|iCloudBlockMail|ブール値|iCloud がメールの同期を禁止するかどうかを示します。|
-|iCloudBlockAddressBook|ブール値|iCloud が連絡先を同期することを禁止するかどうかを示します。|
-|iCloudBlockCalendar|ブール値|iCloud が予定表を同期することを禁止するかどうかを示します。|
-|iCloudBlockReminders|ブール値|iCloud がリマインダーの同期を禁止するかどうかを示します。|
-|iCloudBlockBookmarks|ブール値|ブックマークの同期を禁止するかどうかを示します。|
-|iCloudBlockNotes|ブール値|iCloud がノートの同期を禁止するかどうかを示します。|
-|airDropBlocked|ブール値|放映降下を許可するかどうかを示します。|
-|passwordblockmodification|ブール値|パスコードの変更を許可するかどうかを示します。|
-|passwordBlockFingerprintUnlock|ブール値|指紋によるロック解除を禁止するかどうかを示します。|
-|passwordblockautofill フィル|ブール値|パスワードのオートフィル機能を禁止するかどうかを示します。|
-|passwordBlockProximityRequests|ブール値|近くのデバイスからのパスワードを要求することを禁止するかどうかを示します。|
-|passwordblockエア drop共有|ブール値|放映されたパスワード機能を使用してパスワードを共有することを禁止するかどうかを示します。|
+|keyboardBlockDictation|Boolean|ユーザーがディクテーション入力を使用することを禁止するかどうかを示します。|
+|definitionLookupBlocked|Boolean|定義の参照をブロックするかどうかを示します。|
+|appleWatchBlockAutoUnlock|Boolean|ユーザーが Apple Watch で Mac のロックを解除することを禁止するかどうかを示します。|
+|itunesblockfilesharing|Boolean|iTunes を使用してファイルを転送することを禁止するかどうかを示します。|
+|iCloudBlockDocumentSync|Boolean|iCloud のドキュメントの同期を禁止するかどうかを示します。|
+|iCloudBlockMail|Boolean|iCloud がメールの同期を禁止するかどうかを示します。|
+|iCloudBlockAddressBook|Boolean|iCloud が連絡先を同期することを禁止するかどうかを示します。|
+|iCloudBlockCalendar|Boolean|iCloud が予定表を同期することを禁止するかどうかを示します。|
+|iCloudBlockReminders|Boolean|iCloud がリマインダーの同期を禁止するかどうかを示します。|
+|iCloudBlockBookmarks|Boolean|ブックマークの同期を禁止するかどうかを示します。|
+|iCloudBlockNotes|Boolean|iCloud がノートの同期を禁止するかどうかを示します。|
+|airDropBlocked|Boolean|放映降下を許可するかどうかを示します。|
+|passwordblockmodification|Boolean|パスコードの変更を許可するかどうかを示します。|
+|passwordBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
+|passwordblockautofill フィル|Boolean|パスワードのオートフィル機能を禁止するかどうかを示します。|
+|passwordBlockProximityRequests|Boolean|近くのデバイスからのパスワードを要求することを禁止するかどうかを示します。|
+|passwordblockエア drop共有|Boolean|放映されたパスワード機能を使用してパスワードを共有することを禁止するかどうかを示します。|
 |softwareUpdatesEnforcedDelayInDays|Int32|監視対象デバイスに対してソフトウェア更新プログラムが delyed される日数を設定します。 有効な値は 0 から 90 までです|
-|ソフトウェアの更新 force延期|ブール値|デバイスが監視モードのときに、ユーザーのソフトウェア更新プログラムの表示を延期するかどうかを示します。|
-|contentcachingblocked|ブール値|コンテンツのキャッシュを許可するかどうかを示します。|
+|ソフトウェアの更新 force延期|Boolean|デバイスが監視モードのときに、ユーザーのソフトウェア更新プログラムの表示を延期するかどうかを示します。|
+|contentcachingblocked|Boolean|コンテンツのキャッシュを許可するかどうかを示します。|
 
 
 

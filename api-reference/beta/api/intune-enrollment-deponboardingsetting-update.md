@@ -4,12 +4,12 @@ description: deponboardingsetting オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ddb018277ba6b91d6fe7a19c9165090397127e9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c882957b8fb44e1df539e98dec96e2c457fe854b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141490"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968239"
 ---
 # <a name="update-deponboardingsetting"></a>deponboardingsetting の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141490"
 [deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -58,11 +58,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
 |shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は `none`、`dep`、`appleSchoolManager` です。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
