@@ -4,12 +4,12 @@ description: 新しい windows10EnrollmentCompletionPageConfiguration オブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0018e99738e09317835af3fe79505c9723c5e6a5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9751c71cee378eabe3bbbf065e2e5ba3e0cdd337
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957032"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>windows10EnrollmentCompletionPageConfiguration を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140293"
 新しい[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,20 +50,20 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
+|id|String|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|description|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showinstallationprogress|ブール値|ユーザーにインストールの進行状況を表示または非表示にする|
-|blockdevicesetupretrybyuser|ブール値|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
-|allowdeviceresetoninstallfailure|ブール値|インストール失敗時にデバイスのリセットを許可またはブロックする|
-|allowlogcollectiononinstallfailure|ブール値|インストール失敗時にログ収集を許可またはブロックする|
+|showinstallationprogress|Boolean|ユーザーにインストールの進行状況を表示または非表示にする|
+|blockdevicesetupretrybyuser|Boolean|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
+|allowdeviceresetoninstallfailure|Boolean|インストール失敗時にデバイスのリセットを許可またはブロックする|
+|allowlogcollectiononinstallfailure|Boolean|インストール失敗時にログ収集を許可またはブロックする|
 |customerrormessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
-|allowdeviceuseoninstallfailure|ブール値|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
+|allowdeviceuseoninstallfailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
 |selectedMobileAppIds|String collection|インストールの状態を追跡するために選択されたアプリケーション|
 
 

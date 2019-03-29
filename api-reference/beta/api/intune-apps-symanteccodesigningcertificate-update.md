@@ -4,12 +4,12 @@ description: symantecCodeSigningCertificate オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26a56296956c3955808a308989a0ca8ded5d4ae5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56c665a75d594d2f1ad0e28c3800348f0fbde9c3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168755"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957529"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>symantecCodeSigningCertificate の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168755"
 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,9 +52,9 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |content|Binary|Windows Symantec コード署名証明書が生データ形式で表示されます。|
-|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
+|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
 |password|String|.pfx ファイルに必要なパスワードを指定します。|
-|subjectName|String|証明書のサブジェクト名。|
+|subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
 |issuerName|String|証明書の発行者名。|
 |会社|String|証明書の発行者の値。|

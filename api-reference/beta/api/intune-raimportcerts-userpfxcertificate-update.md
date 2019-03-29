@@ -4,12 +4,12 @@ description: userPFXCertificate オブジェクトのプロパティを更新し
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 139d7f3523510728195e5e6f7b725c5fdb05f94a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a7fb9d717520dcf8f780d4891fbaa03144c551f2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158409"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959083"
 ---
 # <a name="update-userpfxcertificate"></a>userPFXCertificate の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158409"
 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |expirationDateTime|DateTimeOffset|証明書の有効期限の日付/時刻。|
 |プロバイダー|String|この blob を暗号化するために使用される暗号化プロバイダー。|
 |keyName|String|blob の暗号化に使用された (プロバイダー内の) キーの名前。|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 可能な値は `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512` です。|
 |encryptedPfxBlob|Binary|暗号化された PFX blob。|
 |encryptedPfxPassword|String|暗号化された PFX パスワード。|
 |createdDateTime|DateTimeOffset|この PFX 証明書がインポートされた日付/時刻です。|

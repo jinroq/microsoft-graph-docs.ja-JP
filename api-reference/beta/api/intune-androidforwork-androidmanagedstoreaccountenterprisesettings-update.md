@@ -4,12 +4,12 @@ description: androidmanagedstoreaccountenterprisesettings オブジェクトの�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d7a131c98fa5a175435df01837a674eb4fbe747
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2fa5d3d4187ce462c0d3e4875d2a77b60d7e66bb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139719"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960588"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>androidmanagedstoreaccountenterprisesettings の更新
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139719"
 [androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -51,17 +51,17 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|Android ストアアカウントのエンタープライズ設定識別子|
-|bindStatus|[androidmanagedstoreaccountbindstatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 使用可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
+|bindStatus|[androidmanagedstoreaccountbindstatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
-|lastAppSyncStatus|[androidmanagedstoreaccountappsyncstatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|最後のアプリケーションの同期結果。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|String|エンタープライズを作成した所有者 UPN|
+|lastAppSyncStatus|[androidmanagedstoreaccountappsyncstatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|最後のアプリケーションの同期結果。 可能な値は `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none` です。|
+|ownerUserPrincipalName|String|エンタープライズを作成した所有者の UPN|
 |ownerOrganizationName|String|Android Enterprise のオンボード時に使用される組織名|
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
-|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズデバイス管理にデバイスを登録できるユーザーを示します。 使用可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
-|targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceownermanagementenabled|ブール値|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズデバイス管理にデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
+|targetGroupIds|String コレクション|enrollmentTarget が「Targeted」に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
+|deviceownermanagementenabled|Boolean|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
 |会社コード|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)コレクション|androidmanagedstoreaccountenterprisesettings の会社コード|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|ブール値|androidmanagedstoreaccountenterprisesettings の会社コード|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|androidmanagedstoreaccountenterprisesettings の会社コード|
 
 
 

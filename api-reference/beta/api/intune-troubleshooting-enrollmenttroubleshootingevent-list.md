@@ -4,12 +4,12 @@ description: enrollmentTroubleshootingEvent オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfc06e4b2ed179a189a9756d254f0fcd0b999004
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e0fbe2d03a96af0dfe28fe08ce9bdd7e3a06f6c5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30176906"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960518"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>enrollmentTroubleshootingEvent のリスト
 
@@ -20,7 +20,7 @@ ms.locfileid: "30176906"
 [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

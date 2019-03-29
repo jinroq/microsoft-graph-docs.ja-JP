@@ -4,12 +4,12 @@ description: 新しい androidManagedAppProtection オブジェクトを作成�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b70c633cc0ae5e2b37a5f53a40557ba50d4bc9bf
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c7ab4a09499046d099c695c106959ed0d895f2fa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571635"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30956752"
 ---
 # <a name="create-androidmanagedappprotection"></a>Create androidManagedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571635"
 新しい [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

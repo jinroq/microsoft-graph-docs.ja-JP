@@ -4,12 +4,12 @@ description: 新しい deviceConfigurationConflictSummary オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f11731ba86c6ada7474cf3b854d30ec0653e736
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2e59946ce8e252daedc13cae4800eece4fdd8bd4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143205"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960686"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>deviceConfigurationConflictSummary を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143205"
 新しい[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |:---|:---|:---|
 |競合する devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
 |id|String|競合しているポリシーのセットの id。 この id は、アンダースコアで区切られた辞書順で競合しているすべてのポリシーの id です。|
-|contributingSettings|String コレクション|指定されたポリシーと競合する設定のセット|
+|contributingSettings|String collection|指定されたポリシーと競合する設定のセット|
 |deviceCheckinsImpacted|Int32|競合するポリシーと設定によって影響を受けるチェックインの数|
 
 

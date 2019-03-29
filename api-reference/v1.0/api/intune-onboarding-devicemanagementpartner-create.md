@@ -4,12 +4,12 @@ description: 新しい deviceManagementPartner オブジェクトを作成しま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a9e8cd5f1f2582fd0cfdad67761c2b89f9ec617
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 34de40589542e74a8f2fec5347c12a3d32637e16
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263246"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959993"
 ---
 # <a name="create-devicemanagementpartner"></a>deviceManagementPartner の作成
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263246"
 新しい [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +38,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -48,13 +48,13 @@ POST /deviceManagement/deviceManagementPartners
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティの Id|
+|id|String|エンティティの Id|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|
-|partnerState|[devicemanagementpartnertenantstate](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態。 使用可能な値: `unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|パートナーアプリの種類。 可能な値は `unknown`、`singleTenantApp`、`multiTenantApp` です。|
+|partnerState|[devicemanagementpartnertenantstate](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態。 可能な値は `unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive` です。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|パートナーアプリの種類。 使用可能な値は、`unknown`、`singleTenantApp`、`multiTenantApp` です。|
 |singleTenantAppId|String|パートナーのシングル テナントのアプリ ID|
 |displayName|String|パートナー表示名|
-|isConfigured|Boolean|デバイス管理パートナーが構成されているかどうかを指定します|
+|isConfigured|ブール型 (Boolean)|デバイス管理パートナーが構成されているかどうかを指定します|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|パートナー デバイスが削除されるときの日時 (UTC)|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|パートナー デバイスが準拠していないとマークされる日時 (UTC)|
 

@@ -1,26 +1,26 @@
 ---
-title: MobileAppTroubleshootingEvent を更新します。
-description: Intune は、複数のワークフローをサポートする Microsoft グラフ API の更新プログラム mobileAppTroubleshootingEvent のメソッドについて説明します。
+title: mobileAppTroubleshootingEvent の更新
+description: 複数のワークフローをサポートする Microsoft Graph API for Intune の Update mobileAppTroubleshootingEvent メソッドについて説明します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 10bf103a3e796cb5a9e84f1c87ff0571c0bbf551
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 05163b0251690c990454e671ebab6aaf26fa02ad
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430423"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957480"
 ---
-# <a name="update-mobileapptroubleshootingevent"></a>MobileAppTroubleshootingEvent を更新します。
+# <a name="update-mobileapptroubleshootingevent"></a>mobileAppTroubleshootingEvent の更新
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[MobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトのプロパティを更新します。
+[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -43,30 +43,30 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求の本文に[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトの JSON 表記を指定します。
 
-[MobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)を作成するときに必要なプロパティを次の表に示します。
+次の表に、 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |**トラブルシューティング**|
-|について|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティング イベントに関する追加情報を提供する文字列キーと文字列値のペアのセットです。|
-|applicationId|文字列型 (String)|Intune アプリケーション識別子です。|
-|correlationId|String|サービスでエラーのトレースに使用される ID です。 |
-|eventDateTime|DateTimeOffset|イベントが発生した時刻です。 |
-|eventName|String|トラブルシューティング イベントに対応するイベントの名前です。 省略可能。|
-|履歴|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)コレクション|Intune モバイル アプリケーションが履歴アイテムをトラブルシューティングします。|
+|additionalinformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
+|applicationId|String|Intune アプリケーション識別子。|
+|correlationId|String|サービスのエラーをトレースするために使用される ID。 |
+|eventDateTime|DateTimeOffset|イベントが発生した時刻。 |
+|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能。|
+|履歴|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)コレクション|Intune モバイルアプリケーションのトラブルシューティングの履歴項目。|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
-|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクトです。 |
+|トラブルシューティングのエラーの詳細|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクト。 |
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -4,12 +4,12 @@ description: 新しい managedDeviceCertificateState オブジェクトを作成
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65d4f145fd70787004b915caeaab9d042ff661ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 032005b88f248ec68781fb08d84295d22aa7610a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174054"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959034"
 ---
 # <a name="create-manageddevicecertificatestate"></a>managedDeviceCertificateState を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174054"
 新しい[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -66,12 +66,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|String|エンティティのキー。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスプラットフォーム。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
-|certificatekeyusage|[keyusages](../resources/intune-deviceconfig-keyusages.md)|キー使用法。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は `days`、`months`、`years` です。|
+|certificatekeyusage|[keyusages](../resources/intune-deviceconfig-keyusages.md)|キー使用法。 可能な値は、`keyEncipherment`、`digitalSignature` です。|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 使用可能な値は、`days`、`months`、`years` です。|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|発行状態。 可能な値: `unknown`、 `challengeIssued` `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending`、、、、、、、、、、、、 `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificatekeystorageprovider|[keystorageprovideroption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キーストレージプロバイダー。 使用可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
+|certificatekeystorageprovider|[keystorageprovideroption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キーストレージプロバイダー。 可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|サブジェクト名の形式。 可能な値は、`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId` です。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|サブジェクトの別名形式。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|状態を取り消します。 可能な値は、`none`、`pending`、`issued`、`failed`、`revoked` です。|
@@ -81,7 +81,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |certificateExpirationDateTime|DateTimeOffset|証明書の有効期限|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|証明書の発行状態の最終変更|
 |lastCertificateStateChangeDateTime|DateTimeOffset|証明書の発行状態の最終変更|
-|certificateissuer|String|会社|
+|certificateissuer|String|発行者|
 |certificateThumbprint|String|拇印|
 |certificateSerialNumber|String|シリアル番号|
 |certificateKeyLength|Int32|キーの長さ|

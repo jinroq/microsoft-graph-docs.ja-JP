@@ -4,12 +4,12 @@ description: 新しい manageddeviceencryptionstate オブジェクトを作成�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 859f8fff57b90e86421b7720cc48c6cc979fce40
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fd0a2310f7f7ead0fd59e8f1b6ca66e8811667bb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177904"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960791"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>manageddeviceencryptionstate の作成
 
@@ -20,7 +20,7 @@ ms.locfileid: "30177904"
 新しい[manageddeviceencryptionstate](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,14 +50,14 @@ POST /deviceManagement/managedDeviceEncryptionStates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userPrincipalName|文字列|ユーザー名|
+|id|文字列型 (String)|エンティティのキー。|
+|userPrincipalName|String|ユーザー名|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|デバイスのオペレーティングシステムのバージョン|
 |tpmSpecificationVersion|String|デバイス TPM のバージョン|
-|deviceName|String|デバイス名|
-|encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|暗号化の準備状態。 使用可能な値は、`notReady`、`ready` です。|
-|encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 使用可能な値は、`notEncrypted`、`encrypted` です。|
+|deviceName|String|[デバイス名]|
+|encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|暗号化の準備状態。 可能な値は、`notReady`、`ready` です。|
+|encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 可能な値は、`notEncrypted`、`encrypted` です。|
 |encryptionpolicysettingstate|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |advanced bitlockerstates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|高度な BitLocker 状態。 可能な値は`success`、 `noUserConsent`、 `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected` `networkError`、、 `fixedDriveNotEncrypted`、、、、、、、、です。 `recoveryKeyBackupFailed` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable` `tpmNotReady`|
 |policydetails|[encryptionreportpolicydetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)コレクション|ポリシーの詳細|
