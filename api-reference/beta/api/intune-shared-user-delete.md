@@ -4,12 +4,12 @@ description: user を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: acfdd4343f699f9db9aadee10d15be927f7bd105
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: ecf07bf080a76e6f1fce515d41090be214e7a514
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571124"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986636"
 ---
 # <a name="delete-user"></a>ユーザーを削除する
 
@@ -19,7 +19,7 @@ ms.locfileid: "30571124"
 
 [user](../resources/intune-shared-user.md) を削除します。
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

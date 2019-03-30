@@ -1,17 +1,17 @@
 ---
-title: resourceaccountfromdevice アクションの未割り当て
+title: unassignResourceAccountFromDevice アクション
 description: 自動操縦デバイスからリソースアカウントを割り当てないようにします。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ada22dab5e17d64315496ee9e0d7da25a5223740
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: fb79c58f20a0bcbca12e9211458765991defe8d3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631590"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986468"
 ---
-# <a name="unassignresourceaccountfromdevice-action"></a>resourceaccountfromdevice アクションの未割り当て
+# <a name="unassignresourceaccountfromdevice-action"></a>unassignResourceAccountFromDevice アクション
 
 > **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631590"
 自動操縦デバイスからリソースアカウントを割り当てないようにします。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
