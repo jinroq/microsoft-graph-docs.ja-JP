@@ -1,23 +1,23 @@
 ---
-title: RiskyUsers を取得します。
-description: プロパティと、 **riskyUsers**オブジェクトの関係を取得します。
+title: riskyUsers を取得する
+description: '**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。'
 localization_priority: Normal
 author: cloudhandler
-ms.prod: security
-ms.openlocfilehash: 586e76cd57e720741c6a63bc00374cd0973a1cf3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b65135fcd1ad77304b98f18fa595154aee984910
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642346"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003714"
 ---
-# <a name="get-riskyusers"></a>RiskyUsers を取得します。
+# <a name="get-riskyusers"></a>riskyUsers を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 **riskyUsers**オブジェクトの関係を取得します。
+**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。
 
-> **注:** この API には、Azure AD プレミアム P2 ライセンスが必要です。
+>**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -39,20 +39,20 @@ GET /riskyUsers/{query}
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| Workbook-Session-Id  | 変更を保存するかどうかを決定するブックセッション ID。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[riskyUser](../resources/riskyuser.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskyUser](../resources/riskyUser.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "get_riskyuser"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/{id}
@@ -70,6 +70,7 @@ HTTP/1.1 200 OK
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
+  "isProcessing": true,
   "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
@@ -81,15 +82,11 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
+

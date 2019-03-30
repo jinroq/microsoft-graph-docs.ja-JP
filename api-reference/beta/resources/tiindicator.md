@@ -4,12 +4,12 @@ description: 脅威インテリジェンス (TI) インジケーターは、悪�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f5374d42fb2601bfa5529de998778530a3b15d01
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482267"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988862"
 ---
 # <a name="tiindicator-resource-type"></a>tiindicator リソースの種類
 
@@ -27,7 +27,7 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 | [Create tiIndicator](../api/tiindicators-post.md) | [tiindicator](tiindicator.md) | tiindicator コレクションへの投稿によって、新しい tiindicator を作成します。 |
 | [List tiIndicators](../api/tiindicators-list.md) | [tiindicator](tiindicator.md)コレクション | tiindicator オブジェクトのコレクションを取得します。 |
 | [Update](../api/tiindicator-update.md) | [tiindicator](tiindicator.md) | tiindicator オブジェクトを更新します。 |
-| [Delete](../api/tiindicator-delete.md) | なし | tiindicator オブジェクトを削除します。 |
+| [削除する](../api/tiindicator-delete.md) | なし | tiindicator オブジェクトを削除します。 |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|なし| 複数の tiindicator オブジェクトを削除します。|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|なし| `externalId`プロパティによって複数の tiindicator オブジェクトを削除します。|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiindicator](tiindicator.md)コレクション|tiindicators コレクションを投稿して、新しい tiindicators を作成します。|
@@ -35,111 +35,82 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |アクション|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 可能な値は、`unknown`、`allow`、`block`、`alert` です。 **必須です。**|
 |activitygroupnames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
-|additionalinformation|String
-|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
-|azureTenantId|String
-| インジケーターが取り込まれたのときに、システムによってスタンプされます。 送信クライアントの Azure Active Directory テナント id。 **必須です。**|
+|additionalinformation|String|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
+|azureTenantId|String| インジケーターが取り込まれたのときに、システムによってスタンプされます。 送信クライアントの Azure Active Directory テナント id。 **必須です。**|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
-|説明|String| インジケーターで表される脅威の簡単な説明 (100 文字以内)。 **必須です。**|
-|diamondModel|[diamondModel](#diamondModel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
+|description|String| インジケーターで表される脅威の簡単な説明 (100 文字以内)。 **必須です。**|
+|diamondModel|[diamondModel](#diamondmodel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
 |expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 **必須です。**|
 |externalId|String| インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。 |
-|id|String
-|インジケーターが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 値の取得のみ可能です。|
+|id|String|インジケーターが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 読み取り専用です。|
 |ingestedDateTime|DateTimeOffset| インジケーターが取り込まれたのときに、システムによってスタンプされます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|isActive|ブール型| システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
-|"出てきたチェイン"|[](#killChain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「次を参照してください」を参照してください。 |
-|knownfalse 陽性|String
-|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
+|isActive|Boolean| システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
+|"出てきたチェイン"|[](#killchain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「次を参照してください」を参照してください。 |
+|knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
 |lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |悪意のある refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
-|「いいえ veonly」|ブール型 |エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。 |
+|「いいえ veonly」|Boolean |エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。 |
 |重大度|Int32| インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。 |
 |tags|String コレクション|任意のタグ/キーワードを格納する文字列の JSON 配列。 |
-|targetproduct|String
-|インジケーターを適用する1つのセキュリティ製品を表す文字列型 (string) の値を指定します。 指定できる値は`Azure Sentinel`次のとおりです。 **必須**|
-|threatType|[threatType](#threatType-values)| 各インジケーターには、有効なインジケーターの脅威の種類が含まれている必要があります。 使用可能な値は、`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList` です。 **必須です。** |
-|tlpLevel|[tlpLevel](#tlpLevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。 **必須です。**|
+|targetproduct|String|インジケーターを適用する1つのセキュリティ製品を表す文字列型 (string) の値を指定します。 指定できる値は`Azure Sentinel`次のとおりです。 **Required**|
+|threatType|[threatType](#threattype-values)| 各インジケーターには、有効なインジケーターの脅威の種類が含まれている必要があります。 使用可能な値は、`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList` です。 **必須です。** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。 **必須です。**|
 
 ### <a name="indicator-observables---email"></a>インジケーター Observables-電子メール
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|emailencoding|String
-|電子メールで使用されるテキストエンコードの種類。|
-|emaillanguage|String
-|電子メールの言語。|
-|emailrecipient|String
-|受信者の電子メールアドレス。|
-|emailSenderAddress|String
-|attacker& # 124; 犠牲者の電子メールアドレス。|
-|emailsendername|String
-|attacker& # 124; 犠牲者の表示名。|
-|emailsourcedomain|String
-|電子メールで使用されるドメイン。|
-|emailSourceIpAddress|String
-|電子メールの送信元 IP アドレス。|
-|emailSubject|String
-|電子メールの件名。|
-|emailxmailer|String
-|電子メールで使用される X メーラの値。|
+|emailencoding|String|電子メールで使用されるテキストエンコードの種類。|
+|emaillanguage|String|電子メールの言語。|
+|emailrecipient|String|受信者の電子メールアドレス。|
+|emailSenderAddress|String|attacker& # 124; 犠牲者の電子メールアドレス。|
+|emailsendername|String|attacker& # 124; 犠牲者の表示名。|
+|emailsourcedomain|String|電子メールで使用されるドメイン。|
+|emailSourceIpAddress|String|電子メールの送信元 IP アドレス。|
+|emailSubject|String|電子メールの件名。|
+|emailxmailer|String|電子メールで使用される X メーラの値。|
 
 ### <a name="indicator-observables---file"></a>インジケーター Observables-ファイル
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|ファイルがコンパイルされた日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| ファイルが作成された日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |fileHashType|string| filehashvalue に格納されているハッシュの種類。 可能な値は、`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph` です。|
-|filehashvalue|String
-| ファイルハッシュ値。|
-|filemutexname|String
-| ファイルベースの検出で使用されるミューテックス名。|
+|filehashvalue|String| ファイルハッシュ値。|
+|filemutexname|String| ファイルベースの検出で使用されるミューテックス名。|
 |fileName|String|マークがファイルベースの場合は、ファイルの名前。 複数のファイル名をコンマで区切ることができます。 |
-|filepacker|String
-|対象のファイルをビルドするために使用される packer。|
-|パス|String
-|危険を示しているファイルのパス。 Windows または * nix スタイルパスの場合があります。|
+|filepacker|String|対象のファイルをビルドするために使用される packer。|
+|パス|String|危険を示しているファイルのパス。 Windows または * nix スタイルパスの場合があります。|
 |fileSize|Int64|ファイルのサイズ (バイト単位)。|
-|fileType|String
-| ファイルの種類の説明テキスト。 たとえば、「Word 文書」や「バイナリ」などです。|
+|fileType|String| ファイルの種類の説明テキスト。 たとえば、「Word 文書」や「バイナリ」などです。|
 
 ### <a name="indicator-observables---network"></a>インジケーター Observables-ネットワーク
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |domainName|String|このインジケーターに関連付けられているドメイン名。 topleveldomain の形式にする必要があります (たとえば、baddomain.domain.net)。|
-|networkCidrBlock|String
-| このインジケーターで参照されているネットワークの CIDR ブロック表記表現。 送信元と送信先を識別できない場合にのみ使用します。 |
+|networkCidrBlock|String| このインジケーターで参照されているネットワークの CIDR ブロック表記表現。 送信元と送信先を識別できない場合にのみ使用します。 |
 |networkdestinationasn|Int32|インジケーターで参照されているネットワークの宛先自律システム識別子。|
-|networkDestinationCidrBlock|String
-|このインジケーターに含まれる、宛先ネットワークの CIDR ブロック表記表現。|
-|networkDestinationIPv4|String
-|IPv4 IP アドレスの宛先。|
-|networkDestinationIPv6|String
-|IPv6 IP アドレスの宛先。|
+|networkDestinationCidrBlock|String|このインジケーターに含まれる、宛先ネットワークの CIDR ブロック表記表現。|
+|networkDestinationIPv4|String|IPv4 IP アドレスの宛先。|
+|networkDestinationIPv6|String|IPv6 IP アドレスの宛先。|
 |networkdestinationport|Int32|TCP ポートの宛先。|
-|networkIPv4|String
-| IPv4 IP アドレス。 送信元と送信先を識別できない場合にのみ使用します。 |
-|networkIPv6|String
-| IPv6 IP アドレス。 送信元と送信先を識別できない場合にのみ使用します。 |
+|networkIPv4|String| IPv4 IP アドレス。 送信元と送信先を識別できない場合にのみ使用します。 |
+|networkIPv6|String| IPv6 IP アドレス。 送信元と送信先を識別できない場合にのみ使用します。 |
 |networkport|Int32| TCP ポート。 送信元と送信先を識別できない場合にのみ使用します。 |
 |networkprotocol|Int32|IPv4 ヘッダーの protocol フィールドの10進表現。|
 |networksourceasn|Int32|インジケーターで参照されているネットワークの送信元の自律システム識別子。|
-|networksourc要素 drblock|String
-|このインジケーターに表示されるソースネットワークの CIDR ブロック表記|
-|networkSourceIPv4|String
-|IPv4 IP アドレスソース。|
-|networkSourceIPv6|String
-|IPv6 IP アドレスソース。|
+|networksourc要素 drblock|String|このインジケーターに表示されるソースネットワークの CIDR ブロック表記|
+|networkSourceIPv4|String|IPv4 IP アドレスソース。|
+|networkSourceIPv6|String|IPv6 IP アドレスソース。|
 |networksourceport|Int32|TCP ポートのソース。|
 |url|String|Uniform resource Locator。 この URL は、RFC 1738 に準拠している必要があります。|
-|userAgent|String
-|危険を示している可能性がある web 要求のユーザーエージェント文字列。|
+|userAgent|String|危険を示している可能性がある web 要求のユーザーエージェント文字列。|
 
 ### <a name="diamondmodel-values"></a>diamondModel の値
 
@@ -174,7 +145,7 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 |Darknet|インジケーターは、Darknet ノード/ネットワークのものです。
 |DDoS|アクティブまたは今後の DDoS キャンペーンに関連する指標。|
 |MaliciousUrl|マルウェアに対して提供されている URL。|
-|ウェア|悪意のあるファイルやファイルを説明するインジケーター。|
+|マルウェア|悪意のあるファイルやファイルを説明するインジケーター。|
 |フィッシング|フィッシングキャンペーンに関連するインジケーター。|
 |プロキシ|インジケーターは、プロキシサービスのことです。|
 |私用|望ましくない可能性があるアプリケーション。|

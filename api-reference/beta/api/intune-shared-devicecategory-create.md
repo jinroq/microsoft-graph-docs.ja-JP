@@ -4,12 +4,12 @@ description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b324e952c91cf95c361ef277b428f0ed0ae5f26e
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572426"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987903"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572426"
 
 ## <a name="prerequisites"></a>前提条件
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

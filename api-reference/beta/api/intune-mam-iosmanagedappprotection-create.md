@@ -4,12 +4,12 @@ description: 新しい iosManagedAppProtection オブジェクトを作成しま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1663b38dbbeb0a0d042a4ceffd6c36a94c15e71d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: f017bc7cabe4189fd7591ef07cf76f37ec073dee
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572566"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988442"
 ---
 # <a name="create-iosmanagedappprotection"></a>Create iosManagedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572566"
 新しい [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

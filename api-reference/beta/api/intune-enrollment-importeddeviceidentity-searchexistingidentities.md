@@ -1,17 +1,17 @@
 ---
-title: searchexistingidentities アクション
+title: searchExistingIdentities アクション
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d8917d7a19f7a0186fe85e88aea4db65124b599
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: a9e9bdfaaf071962120852776481e7c5c072580a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631576"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987553"
 ---
-# <a name="searchexistingidentities-action"></a>searchexistingidentities アクション
+# <a name="searchexistingidentities-action"></a>searchExistingIdentities アクション
 
 > **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631576"
 まだ文書化されていません
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

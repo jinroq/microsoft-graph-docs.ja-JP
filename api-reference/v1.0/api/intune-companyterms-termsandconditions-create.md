@@ -4,12 +4,12 @@ description: 新しい termsAndConditions オブジェクトを作成します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff711b887c012d795b5c2f5757ba22f2d8a79de5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 29310b8d9f36f74059fa7acbfebb2f3d1ec44ffd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251721"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988701"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251721"
 新しい [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -38,7 +38,7 @@ POST /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -48,12 +48,12 @@ POST /deviceManagement/termsAndConditions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|T&C ポリシーの一意識別子。|
+|id|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|説明|文字列型 (String)|管理者が提供した T&C ポリシーの説明。|
-|タイトル|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|description|String|管理者が提供した T&C ポリシーの説明。|
+|title|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |version|Int32|条件の現行バージョンを示す整数。 管理者が条件を変更し、修正された T&C ポリシーをユーザーが再承諾するように求める場合に増分されます。|

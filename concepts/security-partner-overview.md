@@ -4,12 +4,12 @@ description: 'この記事では、Microsoft Graph セキュリティ API によ
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f584e58c957e92ee4e61a6a12e333fc659428c48
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367156"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003700"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Microsoft Graph セキュリティ API との提携–テクノロジパートナーの機会
 
@@ -61,9 +61,8 @@ Microsoft Graph セキュリティ API と統合することにより、次の3�
 
 - 複数のプロバイダーからのアラートを集約して、インシデントを作成します。
 - 警告の優先度設定と応答に関する追加のコンテキストにアクセスします。
-
-通知を管理するシステム間でアラートの状態を同期させます。 </br>
-セキュリティに関する姿勢と推奨事項を、セキュリティで保護されたスコアで改善する方法についての可視性を高めることができます。
+- 通知を管理するシステム間でアラートの状態を同期させます。
+- セキュリティに関する姿勢と推奨事項を、セキュリティで保護されたスコアで改善する方法についての可視性を高めることができます。
 
 ### <a name="share-threat-intelligence-to-enable-custom-detections"></a>脅威インテリジェンスを共有して、カスタムの検出を有効にする
 
@@ -79,10 +78,10 @@ Microsoft Graph セキュリティ API は、2つの主要な統合パスを通�
 
 サポートされているエンティティ:
 
-- **通知**は、生のログデータやその他の uncorrelated 情報ではなく、"セキュリティに影響を与える" ということです。 [詳細を参照](https://aka.ms/graphsecurityalerts)してください。
-- **脅威指標**(侵害または IoCs のインジケーターとも呼ばれます) は、悪意のあるファイル、url、ドメイン、IP アドレスなど、既知の脅威に関するデータを表します。 お客様は、内部の脅威に関する情報を収集するか、脅威インテリジェンスコミュニティ、ライセンスフィード、その他のソースから指標を取得することで、指標を生成することができます。 [詳細を参照](https://aka.ms/graphsecuritytiindicators)してください。
-- **セキュリティアクション**により、テクノロジパートナーは、グラフを介して機能機能を公開できます。  たとえば、使用しているセキュリティソリューションで ip アドレスをブロックする機能がサポートされている場合は、「block IP」をグラフの機能として公開できます。 その他のグラフセキュリティ API 製品は、グラフを使用してアクションを呼び出すことができます。 [詳細を参照](https://aka.ms/graphsecurityaction)してください。
-- **セキュリティで保護されたスコア** [詳細を参照](https://aka.ms/graphsecurescore)してください。
+- **通知**は、生のログデータやその他の uncorrelated 情報ではなく、"セキュリティに影響を与える" ということです。 詳細については、[こちらを参照してください](https://aka.ms/graphsecurityalerts)。
+- **脅威指標**(侵害または IoCs のインジケーターとも呼ばれます) は、悪意のあるファイル、url、ドメイン、IP アドレスなど、既知の脅威に関するデータを表します。 お客様は、内部の脅威に関する情報を収集するか、脅威インテリジェンスコミュニティ、ライセンスフィード、その他のソースから指標を取得することで、指標を生成することができます。 詳細については、[こちらを参照してください](https://aka.ms/graphsecuritytiindicators)。
+- **セキュリティアクション**により、テクノロジパートナーは、グラフを介して機能機能を公開できます。  たとえば、使用しているセキュリティソリューションで ip アドレスをブロックする機能がサポートされている場合は、「block IP」をグラフの機能として公開できます。 その他のグラフセキュリティ API 製品は、グラフを使用してアクションを呼び出すことができます。 詳細については、[こちらを参照してください](https://aka.ms/graphsecurityaction)。
+- **セキュリティで保護されたスコア** 詳細については、[こちらを参照してください](https://aka.ms/graphsecurescore)。
 
 ### <a name="integrate-your-application-with-the-microsoft-graph-security-api"></a>アプリケーションを Microsoft Graph セキュリティ API と統合する
 
@@ -103,7 +102,7 @@ microsoft graph セキュリティプロバイダーは、基本的には、micr
 
 プロバイダーシナリオは広範に変化しています。 合わせのオンボードプロセスは、まず、関連するシナリオを特定します。 シナリオが合意されたら、ドキュメント、サンプルコードおよび開発環境を使用して、Microsoft Graph セキュリティプロバイダーの開発をサポートすることができます。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 
 ### <a name="onboarding-guides-and-technical-documentation"></a>オンボードガイドと技術ドキュメント
 

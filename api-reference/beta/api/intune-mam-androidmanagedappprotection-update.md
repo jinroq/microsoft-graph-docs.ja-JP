@@ -5,12 +5,12 @@ description: androidManagedAppProtection オブジェクトのプロパティを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75d9b20c98f9e19160e0b51a0da4fe8ba7da50a7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 23b36b2dcb39b6c25cc4c85512f07bdda7799f81
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571614"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989359"
 ---
 # <a name="update-androidmanagedappprotection"></a>androidManagedAppProtection の更新
 
@@ -22,7 +22,7 @@ ms.locfileid: "30571614"
 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

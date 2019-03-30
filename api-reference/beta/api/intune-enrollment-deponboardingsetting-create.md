@@ -4,12 +4,12 @@ description: 新しい depon掲示設定オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7eab98e4549e1aa1f0e97258c51e1063b85f4f85
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164387"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989520"
 ---
 # <a name="create-deponboardingsetting"></a>depon掲示の設定を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164387"
 新しい[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -58,11 +58,11 @@ POST /deviceManagement/depOnboardingSettings
 |lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
 |shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は `none`、`dep`、`appleSchoolManager` です。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
