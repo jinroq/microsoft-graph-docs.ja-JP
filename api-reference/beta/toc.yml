@@ -7261,8 +7261,12 @@ items:
         items:
         - name: リスト
           href: api/riskyusers-list.md
-        - name: 取得
+        - name: Get
           href: api/riskyusers-get.md
+        - name: 侵害ありと確認する
+          href: api/riskyusers-confirmcompromised.md
+        - name: 無視
+          href: api/riskyusers-dismiss.md
     - name: ID プロバイダー
       href: resources/identityprovider.md
       items:
@@ -8796,9 +8800,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 13cbcec3d464f0b60f7a9f275c174af9fde87bae
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.openlocfilehash: 7cb0dba94a4110464b4dbcb1a798f4cb5f0ecabf
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936347"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003749"
