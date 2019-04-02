@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 058b9c292690cce0d0a0462b82f73baf6618d74b
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.openlocfilehash: d1281b954ce02e239b7b03ec4b5b460577506c41
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789691"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003763"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,14 +17,35 @@ ms.locfileid: "30789691"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="march-2019"></a>2019 年 3 月
+### <a name="risky-users-api"></a>リスクの高いユーザーの API
 
-### <a name="directory-apis"></a>Directory API
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版| 導入された[riskyUsers が侵害された事を確認する](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta)方法で、管理者は Azure AD Identity Protection によりユーザーが侵害されていることを確認することができます。 |
+|追加 |ベータ版| 導入された[riskyUsers を無視する](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta)方法で、管理者は Azure Active Directory Identity Protection によりリスクの高いユーザーを無視することができます。 |
+|追加 |ベータ版| 導入された**isProcessing**プロパティ[riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta)リソースです。 |
+
+### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | v1.0 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-1.0) リソースに追加。|
 | 追加 | ベータ版および v1.0 | 追加の **complianceExpirationDateTime**、**profileType** と **systemLabels** のプロパティを[デバイス](/graph/api/resources/device?view=graph-rest-1.0)リソースに追加。|
 | 追加 | ベータ版および v1.0 | **isResourceAccount** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースに追加。|
+
+### <a name="dynamics-365-business-central-api"></a>Dynamics 365 Business Central の API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版          | Dynamics 365 Business Central の財務 API を追加しました。 詳細については、[財務 API のリファレンス](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0)を参照してください。|
+
+### <a name="education-apis"></a>教育機関 API
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | 新しい [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) リソースを追加します。|
+| 追加 | ベータ版 | API を追加して、[educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) と [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) の [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) リソースを管理します。|
+| 追加 | ベータ版 | 新しい [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta) リソースを追加します。|
+| 追加 | ベータ版 | [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) リソースに **recipients** プロパティを追加します。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|
@@ -62,6 +83,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|削除 |ベータ版| [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) から **deleted** プロパティを削除しました。 代わりに **deletedDateTime** を使用します。 |
 | 追加 | ベータ版 | [schedule](/api-reference/beta/resources/schedule.md)、[schedulingGroup](/api-reference/beta/resources/schedulinggroup.md)、[shift](/api-reference/beta/resources/shift.md)、[timeOffReason](/api-reference/beta/resources/timeoffreason.md)、[timeOff](/api-reference/beta/resources/timeoff.md) のリソースと関連するメソッドを追加しました。 |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
@@ -69,21 +91,22 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0        | [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) エンティティに **subscriptions** ナビゲーション プロパティを追加しました |
-
-## <a name="february-2019"></a>2019 年 2 月
-
-### <a name="dynamics-365-business-central-api"></a>Dynamics 365 Business Central API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加        | ベータ版          | Dynamics 365 Business Central の財務 API を追加しました。 詳細については、[財務 API のリファレンス](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0)を参照してください。|
-
-### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset 型に **expirationDateTime** プロパティを追加しました。 |
 | 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) 文字列型に **password** プロパティを追加しました。 |
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 | v1.0 | [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) アクション、および [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0)、[scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) 複合型が追加され、[ユーザーの空き時間情報、配布リスト、および一定期間のリソースの取得](outlook-get-free-busy-schedule.md)がサポートされるようになりました。 |
+|変更 | ベータ版 | [2019 年 2 月](#february-2019)に文書化された [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) に関連する種類の変更をロールバックしました。 特定の変更は、次の行に一覧表示されます。|
+|変更 | ベータ版 | 次の [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) のパラメーターのデータ型を変更しました。 <br>**attendees**: **attendeeDataModel** から [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta) に戻す <br>**locationConstraint**: **locationConstraints** から [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) に戻す <br> **timeConstraint**: **findMeetingTimesTimeConstraints** から [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) に戻す|
+|変更 | ベータ版 | **findMeetingTimes** の戻り値の型を **findMeetingTimesResponse** から [meetingTimeSuggestionsResult](/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta) に戻しました |
+|変更 | ベータ版 | [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) の基本型を **locationDataModel** から [location](/graph/api/resources/location?view=graph-rest-beta) に戻しました |
+|変更 | ベータ版 | 次の [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) のプロパティのデータ型を変更しました。 <br> **attendeeAvailability**: **attendeeAvailabilityDataModel** のコレクションから [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) のコレクションに戻す <br> **locations**: **locationDataModel** のコレクションから[location](/graph/api/resources/location?view=graph-rest-beta) のコレクションに戻す <br> **meetingTimeSlot**: **meetingTimeSlotDataModel** から [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) に戻す <br> **organizerAvailability**: **availabilityStatus** から **freeBusyStatus** に戻す |
+|削除 | ベータ版 | 複合型: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
+|削除 | ベータ版 | 列挙型: <br> **addressType** <br> **availabilityStatus** |
+|追加 | ベータ版 | 次の複合型を復元しました。 <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
+
 
 ## <a name="february-2019"></a>2019 年 2 月
 
@@ -97,6 +120,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 変更 | ベータ版 | [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) の種類には以前は派生型で使用可能だったものの、現在はサポートされていないプロパティが含まれています。 |
 | 削除 | ベータ版 | 次の派生型はすでにサポートされておらず、削除されました:**targetResourceDevice**、**targetResourceDirectory**、**targetResourceGroup**、**targetResourcePolicy**、**targetResourceRole**、**targetResourceServicePrincipal**、**targetResourceUser**、**targetResourceOther**。 |
 | 追加 |ベータ版 | **passwordNotificationWindowInDays** と **passwordValidityPeriodInDays** プロパティを[ドメイン](/graph/api/resources/domain?view=graph-rest-beta) リソースに追加してください。|
+
+### <a name="dynamics-365-business-central-api"></a>Dynamics 365 Business Central の API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | ベータ版          | Dynamics 365 Business Central の財務 API を追加しました。 詳細については、[財務 API のリファレンス](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0)を参照してください。|
 
 ### <a name="education-apis"></a>教育機関 API
 
@@ -136,6 +165,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |ベータ版| [チャネル内のメッセージへの返信](/graph/api/channel-post-messagereply?view=graph-rest-beta) API を導入しました。 |
 |削除 |ベータ版| POST /teams/{id}/channels/{id}/chatThreads API は削除されました。 代わりに[チャネル内のメッセージの作成](/graph/api/channel-post-chatmessage?view=graph-rest-beta)を使用してください。 |
 |追加 |ベータ版 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
+
+### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset 型に **expirationDateTime** プロパティを追加しました。 |
+| 追加        | ベータ版        | [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) 文字列型に **password** プロパティを追加しました。 |
 
 ### <a name="onenote"></a>OneNote
 
@@ -630,7 +666,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 ||
 |追加|ベータ版|以下の新しいエンティティを追加しました。<br/>[advancedThreatProtectionOnboardingDeviceSettingState](/graph/api/resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate?view=graph-rest-beta)<br/>[advancedThreatProtectionOnboardingStateSummary](/graph/api/resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary?view=graph-rest-beta)<br/>[depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/>[depEnrollmentProfile](/graph/api/resources/intune-enrollment-depenrollmentprofile?view=graph-rest-beta)<br/>[depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile?view=graph-rest-beta)<br/>[depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta)<br/>[enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta)<br/>[importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta)<br/>[importedAppleDeviceIdentityResult](/graph/api/resources/intune-enrollment-importedappledeviceidentityresult?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta)<br/>[roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)<br/>[windowsIdentityProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta)<br/>|
 |追加|ベータ版|以下の新しい複合型を追加しました。<br/>[configurationManagerClientHealthState](/graph/api/resources/intune-devices-configurationmanagerclienthealthstate?view=graph-rest-beta)<br/>[customSubjectAlternativeName](/graph/api/resources/intune-deviceconfig-customsubjectalternativename?view=graph-rest-beta)<br/>[deviceManagementUserRightsLocalUserOrGroup](/graph/api/resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup?view=graph-rest-beta)<br/>[deviceManagementUserRightsSetting](/graph/api/resources/intune-deviceconfig-devicemanagementuserrightssetting?view=graph-rest-beta)<br/>[managementCertificateWithThumbprint](/graph/api/resources/intune-enrollment-managementcertificatewiththumbprint?view=graph-rest-beta)<br/>[mobileAppSupportedDeviceType](/graph/api/resources/intune-troubleshooting-mobileappsupporteddevicetype?view=graph-rest-beta)<br/>[osVersionCount](/graph/api/resources/intune-devices-osversioncount?view=graph-rest-beta)<br/>[windowsMalwareCategoryCount](/graph/api/resources/intune-devices-windowsmalwarecategorycount?view=graph-rest-beta)<br/>[windowsMalwareExecutionStateCount](/graph/api/resources/intune-devices-windowsmalwareexecutionstatecount?view=graph-rest-beta)<br/>[windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta)<br/>[windowsMalwareOverview](/graph/api/resources/intune-devices-windowsmalwareoverview?view=graph-rest-beta)<br/>[windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta)<br/>|
-|追加|ベータ版|以下の新しい列挙型を追加しました。<br/>[configurationManagerClientState](/graph/api/resources/intune-devices-configurationmanagerclientstate?view=graph-rest-beta)<br/>[depTokenType](/graph/api/resources/intune-enrollment-deptokentype?view=graph-rest-beta)<br/>[discoverySource](/graph/api/resources/intune-enrollment-discoverysource?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus?view=graph-rest-beta)<br/>[iTunesPairingMode](/graph/api/resources/intune-enrollment-itunespairingmode?view=graph-rest-beta)<br/>[lanManagerAuthenticationLevel](/graph/api/resources/intune-deviceconfig-lanmanagerauthenticationlevel?view=graph-rest-beta)<br/>[localSecurityOptionsMinimumSessionSecurity](/graph/api/resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity?view=graph-rest-beta)<br/>[resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/>[vpnProviderType](/graph/api/resources/intune-deviceconfig-vpnprovidertype?view=graph-rest-beta)<br/>[windowsMalwareThreatState](/graph/api/resources/intune-devices-windowsmalwarethreatstate?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい列挙型を追加しました。<br/>[configurationManagerClientState](/graph/api/resources/intune-devices-configurationmanagerclientstate?view=graph-rest-beta)<br/>[depTokenType](/graph/api/resources/intune-enrollment-deptokentype?view=graph-rest-beta)<br/>[discoverySource](/graph/api/resources/intune-enrollment-discoverysource?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus?view=graph-rest-beta)<br/>[iTunesPairingMode](/graph/api/resources/intune-enrollment-itunespairingmode?view=graph-rest-beta)<br/>[lanManagerAuthenticationLevel](/graph/api/resources/intune-deviceconfig-lanmanagerauthenticationlevel?view=graph-rest-beta)<br/>[localSecurityOptionsMinimumSessionSecurity](/graph/api/resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity?view=graph-rest-beta)<br/>[resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/>[vpnProviderType](/graph/api/resources/intune-deviceconfig-vpnprovidertype?view=graph-rest-beta)<br/>[windowsMalwareThreatState](/graph/api/resources/intune-devices-windowsmalwarethreatstate?view=graph-rest-beta)<br/>|
 |追加|ベータ版|[depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) に [uploadDepToken](/graph/api/intune-enrollment-deponboardingsetting-uploaddeptoken?view=graph-rest-beta) アクションを追加しました |
 |追加|ベータ版|[depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) に [syncWithAppleDeviceEnrollmentProgram](/graph/api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram?view=graph-rest-beta) アクションを追加しました |
 |追加|ベータ版|[enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta) に [setDefaultProfile](/graph/api/intune-enrollment-enrollmentprofile-setdefaultprofile?view=graph-rest-beta) アクションを追加しました |
