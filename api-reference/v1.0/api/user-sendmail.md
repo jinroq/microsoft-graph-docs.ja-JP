@@ -4,12 +4,12 @@ description: 要求本文に指定されたメッセージを送信します。�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 542c36f4d52c461b5a423d9a7fb93a06b94b9b70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f08bb8969ee05384f4de0fec90883bb216df19cc
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975807"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869317"
 ---
 # <a name="send-mail"></a>メールを送信する
 
@@ -30,6 +30,7 @@ ms.locfileid: "27975807"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -41,10 +42,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|message|[メッセージ](../resources/message.md)|送信するメッセージです。必須。|
-|saveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
+|メッセージ​​|[Message](../resources/message.md)|送信するメッセージです。必須。|
+|SaveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -99,7 +100,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の例では、カスタムのインターネット メッセージ ヘッダーを持つメッセージを作成し、メッセージを送信します。
+次の例では、カスタムのインターネット メッセージ ヘッダーでメッセージを作成し、送信します。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
