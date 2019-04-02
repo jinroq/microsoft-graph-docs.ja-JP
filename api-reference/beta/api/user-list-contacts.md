@@ -2,14 +2,14 @@
 title: 連絡先を一覧表示する
 description: ユーザーのメールボックス内の連絡先を取得します。
 localization_priority: Normal
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8c444a818b933196ddc46ae0d12d64355656bd7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510912"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026011"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
@@ -17,10 +17,10 @@ ms.locfileid: "29510912"
 
 ユーザーのメールボックス内の連絡先を取得します。
 
-アプリケーションが別のユーザーの連絡先フォルダーに連絡先を入手するための 2 つのシナリオがあります。
+アプリが別のユーザーの連絡先フォルダー内の連絡先を取得するには、次の2つのシナリオがあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに1人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーがそのユーザーとの連絡先フォルダーを共有しているか、または、そのユーザーに対してアクセスを委任されている。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -53,16 +53,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-使用することができます、`$filter`の電子メール アドレスに基づいて、連絡先をフィルターするクエリのパラメーター。
+`$filter`クエリパラメーターを使用して、電子メールアドレスに基づいて連絡先をフィルター処理できます。
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-注使用することができます`$filter`、`any`と`eq`演算子、 **emailAddresses**コレクション内のインスタンスの**アドレス**サブ プロパティのみにします。 **名前**または他のサブの**emailAddresses**インスタンスのプロパティにフィルターを適用することはできずするその他の演算子を適用したり、機能を持つ`filter`、次のように`ne`、`le`と`startswith()`。
+、 `$filter` `any`、、およびオペレーターは`eq` 、 **emailaddresses**コレクション内のインスタンスの**address**サブプロパティに対してのみ使用できる点に注意してください。 つまり、**電子メールアドレス**の`filter`インスタンスの**名前**またはその他のサブプロパティに対してフィルターを適用することはできません`startswith()`。また、、、などの`ne`他`le`の演算子や関数を適用することもできません。
 
-全般については、`$filter`クエリのパラメーターで、 [OData クエリのパラメーター](/graph/query-parameters)を参照してください。
+`$filter`クエリパラメーターの一般的な情報については、「 [OData クエリパラメーター](/graph/query-parameters)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -74,10 +74,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文[にお問い合わせください](../resources/contact.md)のオブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[contact](../resources/contact.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例では、サインインしているユーザーの連絡先の**表示名**と**emailAddresses**プロパティを取得します。
+次の例では、サインインしているユーザーの連絡先の**displayName**と**emailaddresses**のプロパティを取得します。
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
