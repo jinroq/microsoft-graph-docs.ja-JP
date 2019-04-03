@@ -1,27 +1,27 @@
 ---
 title: 連絡先を一覧表示する
-description: サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。
-author: dkershaw10
+description: サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f0f7fd86987e3d2923d8ea81a8ca7fbf87900b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3c648e753c3959d3b22072edbd4b796d0f8c154b
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984137"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026025"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
-サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。
+サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。
 
-アプリケーションが別のユーザーの連絡先フォルダーに連絡先を入手するための 2 つのシナリオがあります。
+アプリが別のユーザーの連絡先フォルダーから連絡先を取得できるシナリオは2つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーとコンタクトフォルダーを共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
 
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -51,16 +51,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-使用することができます、`$filter`の電子メール アドレスに基づいて、連絡先をフィルターするクエリのパラメーター。
+たとえば、`$filter` クエリ パラメーターを使って、メール アドレスに基づいて連絡先をフィルターすることができます。
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-注使用することができます`$filter`、`any`と`eq`演算子、 **emailAddresses**コレクション内のインスタンスの**アドレス**サブ プロパティのみにします。 **名前**または他のサブの**emailAddresses**インスタンスのプロパティにフィルターを適用することはできずするその他の演算子を適用したり、機能を持つ`filter`、次のように`ne`、`le`と`startswith()`。
+`$filter`、`any`そして`eq`演算子を使用できるのは**emailAddresses**コレクションの**address**サブプロパティのみなので注意が必要です 。 すなわち、**氏名** または**emailAddresses**の 1 つのインスタンスの他のサブ プロパティでフィルター抽出することはできませんし、`filter` 以下のような `ne`, `le`や `startswith()`その他の演算子や関数を適用したりすることはできません。
 
-全般については、`$filter`クエリのパラメーターで、 [OData クエリのパラメーター](/graph/query-parameters)を参照してください。
+`$filter`クエリのパラメーターの一般的な情報については、[OData クエリ パラメーター](/graph/query-parameters)を参照してください。
 
 
 
