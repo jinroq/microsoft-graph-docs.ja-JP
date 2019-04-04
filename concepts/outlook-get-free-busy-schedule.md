@@ -1,21 +1,21 @@
 ---
-title: ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)
+title: ユーザーとリソースの空き時間スケジュールを取得する
 description: 職場または学校の環境で一般的なシナリオとして、ユーザーが会議に出席できる時間を確認する場合や、ある期間内にチーム、部屋、または備品の空き時間情報を参照する場合があります。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657387"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869198"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)
+# <a name="get-freebusy-schedule-of-users-and-resources"></a>ユーザーとリソースの空き時間スケジュールを取得する
 
 職場または学校の環境で一般的なシナリオとして、ユーザーが会議に出席できる時間を確認する場合や、ある期間内にチーム、部屋、または備品の空き時間情報を参照する場合があります。
 
-[getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) アクションを使用すると、特定の期間について 1 つ以上のエンティティ (ユーザー、配布リスト、またはリソース) の空き時間情報を取得できます。 
+[getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) アクションを使用すると、特定の期間について 1 つ以上のエンティティ (ユーザー、配布リスト、またはリソース) の空き時間情報を取得できます。 
 
 ## <a name="example"></a>例
 
@@ -26,7 +26,7 @@ ms.locfileid: "30657387"
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -57,14 +57,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
             "scheduleId":"AlexW@contoso.OnMicrosoft.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -76,7 +75,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -135,7 +133,7 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 
 既定では、各時間帯の長さは 30 分です。 この例では、**availabilityViewInterval** プロパティを使用して時間帯を 15 分にカスタマイズしています。
 
-## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>getSchedule と findMeetingTimes の違い
+## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>getSchedule と findMeetingTimes の違い
 
 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) アクションは、指定されたユーザーとリソースの空き時間情報と稼働時間を両方読み取るという点で **getSchedule** と似ています。 2 つのアクションは、いくつかの主要な点で異なります。
 
@@ -149,7 +147,7 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 
 [予定の予約の合理化](findmeetingtimes-example.md)に依存するシナリオに適しています。
 
-**getSchedule** では、要求された各予定表の指定された期間の中で、既存のイベントの空き時間情報が単純に返され、その期間の残りの時間は空き時間と見なされます。 シナリオを完了するには、このデータを利用するビジネス ロジックをさらに適用します。
+**getSchedule**では、要求された各予定表の指定された期間の中で、既存のイベントの空き時間情報が単純に返され、その期間の残りの時間は空き時間と見なされます。 シナリオを完了するには、このデータを利用するビジネス ロジックをさらに適用します。
 
 ### <a name="app-only-support"></a>アプリ専用のサポート
 
@@ -157,23 +155,29 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 
 **getSchedule** は、委任シナリオとアプリ専用シナリオの両方をサポートします。 後者の場合、管理者は、サインインしているユーザーがいなくても、すべての予定表にアプリがアクセスすることに同意します。
 
+### <a name="permissions"></a>アクセス許可
+**findmeetingtimes**で必要な最低限の権限は Calendars.Read.Shared です。
+
+**getSchedule**で必要な最低限の権限は Calendar.Read です。 
 
 ### <a name="version-support"></a>バージョンのサポート
 
-**findmeetingtimes** は、すべてのアプリで一般的に利用できます。 
-
-**getSchedule** は、現在は[プレビュー状態](versioning-and-support.md#beta-version)で利用できます。そのため、運用環境アプリでは使用できません。
+**findmeetingtimes** と **getSchedule** は、両方とも通常運用環境で使用可能で適切です。
 
 
-## <a name="permissions"></a>アクセス許可
-空き時間情報を取得するために必要な最低限の特権のアクセス許可は Calendar.Read です。 アプリのシナリオによっては、サインインしているユーザーまたは管理者が同意することができます。
-**getSchedule** は、要求されたエンティティの空き時間情報と稼働時間以外にも、次の条件を満たす場合に、イベントの件名と場所を返すことができます。
+## <a name="event-data-returned"></a>返されるイベント データ
+アプリケーション用の**getSchedule**で空き時間情報を取得するために必要な最低限の特権のアクセス許可は Calendar.Read です。 アプリのシナリオによっては、サインインしているユーザーまたは管理者が同意することができます。
+
+同意済みのアクセス許可があると、アプリケーションで Outlook を通じて要求されたユーザーのカレンダーに**getSchedule**を使用することができ、要求されたユーザーは**getSchedule**が返すイベント データを制御します。 
+
+たとえば、**getSchedule**は要求されたユーザーの空き時間状況と稼働時間を返すことも、**件名**、**場所**、および提供されたイベントの**isPrivate**プロパティを返すこともできます。
 
 - イベントの秘密度レベルが低く (`normal` または `personal`)、さらに次の条件の 1 つ以上が適用される場合:
 
-- 要求されたユーザーの予定表の設定では、組織内のすべてのユーザーがタイトルと場所を表示できます
-- 要求されたユーザーの予定表は、サインインしたユーザーと共有されています
-- サインインしたユーザーは、要求されたユーザーと同じ組織の管理者です。
+   - 要求されたユーザーの予定表の設定は、サインインしているユーザーに件名と場所を表示します。
+   - 要求されたユーザーの予定表は、サインインしたユーザーと共有されています
+
+これらの条件は、サインインしているユーザーが組織の管理者かどうかにかかわらず適用されます。 要求されたユーザーは、返されるイベント データを制御します。
 
 ## <a name="time-zone-representation"></a>タイム ゾーン表現
 既定では、返されるスケジュール項目の開始時刻と終了時刻は UTC で表されます。 `Prefer` ヘッダーを使用して、お使いのアプリに適したタイム ゾーンを指定することができます。 次に例を示します。 
@@ -187,6 +191,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 - **getSchedule** では、一度に最大 20 エンティティの空き時間情報を検索することができます。 この制限は、個別にまたは配布リストのメンバーとして識別されるユーザー数、およびリソース数にも適用されます。
 - 検索する期間は 42 日未満である必要があります。
 - 指定されたユーザーまたはリソースを **getSchedule** で識別できない場合は、単一のスケジュール項目が返され、エラーが示されます。 
+
 
 ## <a name="see-also"></a>関連項目
 - [アクセス許可リファレンス](permissions-reference.md#calendars-permissions)
