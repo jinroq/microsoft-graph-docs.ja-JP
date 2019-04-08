@@ -3,12 +3,12 @@ title: クエリ パラメーターを使用して応答をカスタマイズす
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 749415c25e03e3c29cdfb4b48ff66c562de0b84a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
+ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818915"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479910"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>クエリ パラメーターを使用して応答をカスタマイズする
 
@@ -30,7 +30,7 @@ Microsoft Graph API 操作は、次の OData のシステム クエリ オプシ
 | [$filter](#filter-parameter)       | 結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | 指定したメディア形式で結果を返します。|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | 検索条件に基づいて結果を返します。現在、**messages** と **person** のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | 検索条件に基づいて結果を返します。 現在**メッセージ**と**個人の**コレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて手動で結果をページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | 結果のページ サイズを設定します。 |[`/users?$top=2`][top-example]
@@ -58,6 +58,14 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
+### <a name="escaping-single-quotes"></a>一重引用符のエスケープ
+
+一重引用符を使用する依頼の場合、いずれかのパラメーター値にも一重引用符が含まれている場合は、それらを二重エスケープにする必要があります。 そうでないと、無効な構文とみなされ、依頼が失敗します。 この例では、文字列値の `let''s meet for lunch?` では一重引用符がエスケープされています。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
+```
+
 ## <a name="count-parameter"></a>count パラメーター
 
 `$count` クエリ パラメーターを使用し、Microsoft Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。 
@@ -68,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
+[Graph エクスプローラーで試します](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
 >**注:** `$count` は、[user](/graph/api/resources/user?view=graph-rest-1.0) や [group](/graph/api/resources/group?view=graph-rest-1.0) のコレクションのような、[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) から派生したリソースのコレクションに対してはサポートされていません。
@@ -85,7 +93,7 @@ Microsoft Graph リソースの多くは、宣言されているリソースの�
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+[Graph エクスプローラーで試します](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 いくつかのリソース コレクションで、`$select` パラメーターを追加すれば、展開されたリソースで返されるプロパティを指定することもできます。次の使用例は前の例と同じクエリを実行しますが、[`$select`](#select-parameter) ステートメントを使用して、展開されている子項目に返されるプロパティを **id** プロパティと **name** プロパティに限定します。
 
@@ -169,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+[Graph エクスプローラーで試します](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 昇順または降順で結果を並べ替えるには、`asc` または `desc` のいずれかをスペースで区切ってフィールド名の後に追加します。たとえば `?$orderby=name%20desc` のようにします。
 
@@ -179,7 +187,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+[Graph エクスプローラーで試します](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 $filter を指定した場合は、サーバーで結果の並べ替え順序が考慮されます。 `$orderby` と `$filter` の両方を使用する場合、サーバーでは常に `$filter` の結果の並べ替え順序が考慮されるため、`$filter` 内のプロパティを他のプロパティよりも先に `$orderby` 内に配置して、`$filter` パラメーターに現れる順序で並べる必要があります。 
 
@@ -189,7 +197,7 @@ $filter を指定した場合は、サーバーで結果の並べ替え順序が
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Graph エクスプローラーで試します](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **注:** [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)や[グループ](/graph/api/resources/group?view=graph-rest-1.0)のような、[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) から派生した Azure AD リソースの場合、`$orderby` 式と `$filter` 式を結合することはできません。 
 
@@ -218,31 +226,30 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 | 検索可能な電子メール プロパティ                | 説明 | 例 
 |:-------------------------|:------------|:---------|
-| **attachment**           | 電子メール メッセージに添付されているファイルの名前。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **添付**           | 電子メール メッセージに添付されているファイルの名前。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
 | **bcc**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **bcc** フィールド。|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | 電子メール メッセージの本文。|[`me/messages?$search="body:excitement"`][search-body-example]
+| **本文**           | 電子メール メッセージの本文。|[`me/messages?$search="body:excitement"`][search-body-example]
 | **cc**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **cc** フィールド。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの送信者。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **差出人**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの送信者。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
 | **hasAttachment** | 電子メール メッセージに添付ファイルがあり、そのファイルがインラインの添付ファイルでない場合は true、そうでない場合は false。 |[`me/messages?$search="hasAttachments=true"`][search-from-example]
-| **importance**           | 送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。 使用可能な値: `low`、`medium`、`high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | メッセージの種類。 使用可能な値: `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks`、`voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **from**、**to**、**cc**、**bcc** フィールド。|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | 電子メール メッセージが受信者によって受信された日付。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to**、**cc**、**bcc** フィールド。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | 送信者によって電子メール メッセージが送信された日付。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | アイテムのサイズ (バイト数)。|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | 電子メール メッセージの件名行に含まれるテキスト。 .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to** フィールド。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+| **重要度**           | 送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。 使用可能な値: `low`、`medium`、`high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **種類**           | メッセージの種類。 使用可能な値: `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks`、`voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **参加者**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **from**、**to**、**cc**、**bcc** フィールド。|[`me/messages?$search="participants:danas"`][search-part-example]
+| **受信済み**           | 電子メール メッセージが受信者によって受信された日付。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **受信者**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to**、**cc**、**bcc** フィールド。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **送信済み**           | 送信者によって電子メール メッセージが送信された日付。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **サイズ**           | アイテムのサイズ (バイト数)。|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **件名**           | 電子メール メッセージの件名行に含まれるテキスト。 。|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **宛先**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to** フィールド。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
 
 
 検索可能な電子メール プロパティ、KQL 構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
 
 - [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 
