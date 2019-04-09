@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 8e7a64e5762808691c4997c83b112a17c9667d47
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31013132"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560102"
 ---
 # <a name="dismiss-riskyusers"></a>riskyUsers を閉じる
 
@@ -18,7 +18,7 @@ ms.locfileid: "31013132"
 
 >**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
-**riskyUsers**オブジェクトのリスクを無視します。 このアクションは、対象ユーザーのリスクレベルを [なし] に設定します。
+**riskyUser**オブジェクトのリスクを無視します。 このアクションは、対象ユーザーのリスクレベルを [なし] に設定します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -46,7 +46,7 @@ POST /riskyUsers/dismiss
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 NoContent` 応答コードを返します。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -56,8 +56,8 @@ POST /riskyUsers/dismiss
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+Content-Type: application/json
 
-Request Body
 {
   "userIds": [
     "04487ee0-f4f6-4e7f-8999-facc5a30e232",
@@ -69,11 +69,10 @@ Request Body
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

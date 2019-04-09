@@ -1,21 +1,21 @@
 ---
 title: リスト riskyUsers
-description: '**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。'
+description: '**riskyUser**オブジェクトのコレクションのプロパティとリレーションシップを取得します。'
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a902daf00f80470e1ac9a83a287eac507d55e171
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: ff134f0d0b03a30a11800de25f6692362541fd0e
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003728"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559865"
 ---
 # <a name="list-riskyusers"></a>リスト riskyUsers
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。
+**riskyUser**オブジェクトのコレクションのプロパティとリレーションシップを取得します。
 
 >**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
@@ -31,7 +31,7 @@ ms.locfileid: "31003728"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは`$filter` 、クエリ応答をカスタマイズするためにサポートされています。 このトピックの後半の例を参照してください。 
@@ -46,10 +46,11 @@ GET /riskyUsers/{query}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskyUser](../resources/riskyUser.md)オブジェクトのコレクションを返します。
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[identityRiskEvent](../resources/identityriskevent.md)オブジェクトを返します。
 ## <a name="examples"></a>例
-#### <a name="example-1-list-risky-users"></a>例 1: リスクの高いユーザーの一覧を表示する
+### <a name="example-1-list-risky-users"></a>例 1: リスクの高いユーザーの一覧を表示する
+#### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -58,68 +59,75 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-
+#### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-  "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-  "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isProcessing": true,
-  "isDeleted": "true",
-  "riskDetail": "adminConfirmedSigninCompromised",
-  "riskLevel": "high",
-  "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+    "value":[
+        {
+            "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+            "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
+            "isGuest": true,
+            "isProcessing": true,
+            "isDeleted": true,
+            "riskDetail": "adminConfirmedSigninCompromised",
+            "riskLevel": "high",
+            "riskState": "atRisk",
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com"
+        }
+    ]
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List riskyUsers",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-#### <a name="example-2-list-risky-users-and-filter-the-results"></a>例 2: 危険性のあるユーザーを一覧表示し、結果をフィルター処理する
+### <a name="example-2-list-risky-users-and-filter-the-results"></a>例 2: 危険性のあるユーザーを一覧表示し、結果をフィルター処理する
+#### <a name="request"></a>要求
 次の例は、を使用`$filter`して、集計リスクレベルが Medium である riskyUser のコレクションを取得する方法を示しています。
+
 <!-- {
   "blockType": "request",
-  "name": "list_riskyusers"
-}-->
+  "name": "list_filter_riskyusers"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
+#### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-      "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-      "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-      "isGuest": false,
-      "isProcessing": true,
-      "isDeleted": false,
-      "riskDetail": "none",
-      "riskLevel": "medium",
-      "riskState": "atRisk",
-      "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com",
-      }
-    }
+    "value": [
+        {
+            "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+            "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
+            "isGuest": false,
+            "isProcessing": true,
+            "isDeleted": false,
+            "riskDetail": "none",
+            "riskLevel": "medium",
+            "riskState": "atRisk",
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com",
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

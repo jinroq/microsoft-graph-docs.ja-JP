@@ -2,12 +2,12 @@
 title: privilegedRoleSettings の更新
 description: 指定した役割設定の役割設定を更新します。 privilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: f416656362c5be0ccdaa2b3aaa7812511e357875
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.openlocfilehash: 779b0d4cd61672c90c103ebb2545cb75324273fd
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789607"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560116"
 ---
 # <a name="update-privilegedrolesettings"></a>privilegedRoleSettings の更新
 
@@ -45,16 +45,16 @@ PUT /privilegedRoles/{id}/settings
 |プロパティ|型|説明|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|役割がアクティブ化される期間。 必須。|
-|id|string|ロール設定の一意の識別子。 読み取り専用です。 必須。|
-|isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。 必須。|
-|lastglobaladmin|ブール型|内部使用のみ。|
-|maxelavationduration|duration|アクティブ化されたロールの最大期間。 必須。|
-|mfaonelevation|ブール型|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須。|
-|minElevationDuration|duration|アクティブ化されたロールの最小期間。 必須。|
-|notificationToUserOnElevation|ブール型|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須。|
-|ticketingInfoOnElevation|ブール型|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須。|
-|approvalonelevation|ブール型|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須。|
-|承認の検証 ds|String collection|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
+|id|string|ロール設定の一意の識別子。 読み取り専用です。 必須です。|
+|isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。 必須です。|
+|lastglobaladmin|Boolean|内部使用のみ。|
+|maxelavationduration|duration|アクティブ化されたロールの最大期間。 必須です。|
+|mfaonelevation|Boolean|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須です。|
+|minElevationDuration|duration|アクティブ化されたロールの最小期間。 必須です。|
+|notificationToUserOnElevation|Boolean|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須です。|
+|ticketingInfoOnElevation|Boolean|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須です。|
+|approvalonelevation|Boolean|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須です。|
+|承認の検証 ds|String コレクション|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
 
 ## <a name="response"></a>応答
 
@@ -88,7 +88,10 @@ Content-type: application/json
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```

@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: ドライブ項目のフォローを取り消します
+title: フォロー取り消しドライブ項目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 064ab2d5ad86df5341a0f2f5a46fe7c227ff35fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 730bb02dda88f41bcac734b3ba282ad324267860
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513110"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560109"
 ---
-# <a name="unfollow-drive-item"></a>ドライブ項目のフォローを取り消します
+# <a name="unfollow-drive-item"></a>フォロー取り消しドライブ項目
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[DriveItem](../resources/driveitem.md)のフォローを取り消します。
+[ドライブ](../resources/driveitem.md)のフォローを取り消します。
 
->**注:** 以下の項目には、[以下の項目](driveitem-follow.md)を参照してください。
+>**注:** アイテムをフォローするには、「[アイテムをフォロー](driveitem-follow.md)する」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -44,25 +44,26 @@ DELETE /users/{user-id}/drive/following/{item-id}
 
 ## <a name="response"></a>応答
 
-成功すると、API 呼び出しは `204 No Content` を返します。
-
-<!-- { "blockType": "response" } -->
-
-```http
-HTTP/1.1 204 No Content
-```
+成功すると、API 呼び出しは `204 No Content` を返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
-
-次の使用例で識別される項目を unfollows `{item-id}`。
+### <a name="request"></a>要求
+以下は、要求の例です。
+この例では、で識別さ`{item-id}`れるアイテムのフォローを取り消します。
 
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
 DELETE /me/drive/following/{item-id}
 ```
-
-
+### <a name="response"></a>応答
+<!-- { 
+    "blockType": "response", 
+    "truncated": true 
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!--
 {
   "type": "#page.annotation",

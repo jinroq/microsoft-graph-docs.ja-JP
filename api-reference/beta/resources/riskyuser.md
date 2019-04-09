@@ -4,12 +4,12 @@ description: 危険にさらされている Azure AD ユーザーを表します
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3265ea40903ca2c5c10272f5df280bd3715af366
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003721"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559983"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
@@ -25,24 +25,30 @@ ms.locfileid: "31003721"
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyUser.md) |リスクの高いユーザーとそのプロパティを一覧表示します。|
-|[riskyUsers を取得する](../api/riskyusers-get.md) | [riskyUsers](riskyUser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
-|[riskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|危険なユーザーが侵害されていることを確認します。|
-|[riskyUsers を閉じる](../api/riskyusers-dismiss.md)|危険なユーザーのリスクを無視します。|
+|[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md)コレクション|リスクの高いユーザーとそのプロパティを一覧表示します。|
+|[riskyUser を取得する](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
+|[riskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|なし |危険なユーザーが侵害されていることを確認します。|
+|[riskyUsers を閉じる](../api/riskyusers-dismiss.md)|なし | 危険なユーザーのリスクを無視します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |`id`|`string`|危険にさらされているユーザーの一意の id|
-|`isDeleted`|`bool`|ユーザーが削除されるかどうかを示します。 可能な値は`true`、です。`false`|
+|`isDeleted`|`bool`|ユーザーが削除されるかどうかを示します。 可能な値は`true`、です。 `false`|
 |`isGuest`|`bool`|ユーザーがゲストユーザーであるかどうかを示します。 可能な値は、`true`、`false` です。 True の場合は、ユーザーの id がテナントの外部にある場合に考慮します。 このユーザーは、Azure AD、MSA、またはサードパーティの id プロバイダーで id を持つ B2B または B2C ユーザーの場合があります。 False 場合は、ユーザーの id がテナントの内側にある場合|
 |`isProcessing`|`bool`|ユーザーの危険な状態がバックエンドによって処理されていることを示します。|
-|`risk`|[さらさ](risk.md)|危険ユーザーの状態|
 |`riskLastUpdatedDateTime`|`datetime`|危険性のあるユーザーが最後に更新された日時|
+|`riskLevel`|`riskLevel`| 使用可能な値は、low、medium、high、hidden、none、unknownfuturevalue というです。  |
+|`riskState`|`riskState`| 使用可能な値は、none、confirmedSafe、修復済み、atrisk、unknownfuturevalue というです。  |
+|`riskDetail`|`riskDetail`| 使用可能な値は、none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、unknownfuturevalue という。  |
 |`userDisplayName`|`string`|危険ユーザーの表示名|
 |`userPrincipalName`|`string`|危険ユーザープリンシパル名|
 
+## <a name="relationships"></a>リレーションシップ
+| リレーションシップ | 型   |説明|
+|:---------------|:--------|:----------|
+|履歴|[riskyUserHistoryItem](riskyuserhistoryitem.md)コレクション| |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -53,17 +59,19 @@ ms.locfileid: "31003721"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
 {
- "id": "string",
+"id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
-"risk": {"@odata.type": "microsoft.graph.risk"},
+"riskDetail":  "string",
+"riskLevel":  "string",
+"riskState":  "string",
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }

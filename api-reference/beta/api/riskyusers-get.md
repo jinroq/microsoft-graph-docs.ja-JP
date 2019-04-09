@@ -1,21 +1,21 @@
 ---
-title: riskyUsers を取得する
-description: '**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。'
+title: riskyUser を取得する
+description: '**riskyUser**オブジェクトのプロパティとリレーションシップを取得します。'
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b65135fcd1ad77304b98f18fa595154aee984910
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 6ad7c9853b4f00850e77f3bc70e0136abfec3064
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003714"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559858"
 ---
-# <a name="get-riskyusers"></a>riskyUsers を取得する
+# <a name="get-riskyuser"></a>riskyUser を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**riskyUsers**オブジェクトのプロパティとリレーションシップを取得します。
+**riskyUser**オブジェクトのプロパティとリレーションシップを取得します。
 
 >**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
@@ -31,7 +31,7 @@ ms.locfileid: "31003714"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers/{id}
 ```
 
 
@@ -52,31 +52,34 @@ GET /riskyUsers/{query}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
+  "isGuest": true,
   "isProcessing": true,
-  "isDeleted": "true",
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
 }
 ```
 
