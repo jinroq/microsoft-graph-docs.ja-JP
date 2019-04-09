@@ -4,16 +4,16 @@ description: テナント組織の管理デバイスを定義する Intune エ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a25be51643e87d644f37c08c9382fd203d45f5b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170589"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518568"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -50,19 +50,51 @@ ms.locfileid: "30170589"
 - [Device Guard セキュリティ ハードウェア要件の状態に基づく仮想化](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [Device Guard セキュリティ状態に基づく仮想化](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [デバイスの正常性構成証明の状態](intune-devices-devicehealthattestationstate.md)
+- [デバイス管理の抽象複雑な設定の定義](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
+- [デバイス管理の抽象複雑な設定インスタンス](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
+- [デバイス管理のブール設定インスタンス](intune-deviceintent-devicemanagementbooleansettinginstance.md)
+- [デバイス管理コレクション設定の定義](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
+- [デバイス管理コレクション設定インスタンス](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [デバイス管理の複合設定の定義](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
+- [デバイス管理の複合設定インスタンス](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
+- [デバイス管理の制約](intune-deviceintent-devicemanagementconstraint.md)
+- [Device management enum 制約](intune-deviceintent-devicemanagementenumconstraint.md)
+- [デバイス管理の列挙値](intune-deviceintent-devicemanagementenumvalue.md)
 - [デバイスの管理 Exchange アクセス状態](intune-devices-devicemanagementexchangeaccessstate.md)
 - [デバイスの管理 Exchange アクセス状態理由](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [デバイス管理の整数設定インスタンス](intune-deviceintent-devicemanagementintegersettinginstance.md)
+- [デバイス管理の目的](intune-deviceintent-devicemanagementintent.md)
+- [デバイス管理のインテントの割り当て](intune-deviceintent-devicemanagementintentassignment.md)
+- [デバイス管理の目的デバイス設定状態の概要](intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
+- [デバイス管理のインテントデバイスの状態](intune-deviceintent-devicemanagementintentdevicestate.md)
+- [デバイス管理の目的デバイス状態の概要](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
+- [デバイス管理の意図の設定カテゴリ](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [デバイス管理の目的のユーザー状態](intune-deviceintent-devicemanagementintentuserstate.md)
+- [デバイス管理の目的ユーザー状態の概要](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [デバイスの管理スクリプト](intune-devices-devicemanagementscript.md)
 - [デバイス管理スクリプトの割り当て](intune-devices-devicemanagementscriptassignment.md)
 - [デバイス管理スクリプト デバイスの状態](intune-devices-devicemanagementscriptdevicestate.md)
 - [デバイス管理スクリプトのグループの割り当て](intune-devices-devicemanagementscriptgroupassignment.md)
 - [デバイス管理スクリプトの実行の要約](intune-devices-devicemanagementscriptrunsummary.md)
 - [デバイス管理スクリプト ユーザーの状態](intune-devices-devicemanagementscriptuserstate.md)
+- [デバイス管理の設定 boolean 制約](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
+- [デバイス管理設定のカテゴリ](intune-deviceintent-devicemanagementsettingcategory.md)
+- [デバイス管理設定の定義](intune-deviceintent-devicemanagementsettingdefinition.md)
+- [デバイス管理の設定の依存関係](intune-deviceintent-devicemanagementsettingdependency.md)
+- [デバイス管理設定インスタンス](intune-deviceintent-devicemanagementsettinginstance.md)
+- [デバイス管理設定整数制約](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [デバイス管理設定 regex 制約](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [デバイス管理の設定文字列の長さ制約](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
+- [デバイス管理の設定 xml 制約](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
+- [デバイス管理文字列設定インスタンス](intune-deviceintent-devicemanagementstringsettinginstance.md)
 - [デバイス管理サブスクリプションの状態](intune-devices-devicemanagementsubscriptionstate.md)
 - [デバイス管理サブスクリプション](intune-devices-devicemanagementsubscriptions.md)
+- [デバイス管理テンプレート](intune-deviceintent-devicemanagementtemplate.md)
+- [デバイス管理テンプレート設定のカテゴリ](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
 - [デバイス管理のトラブルシューティング エラーの詳細](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [デバイス管理のトラブルシューティング エラーのリソース](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [デバイス管理のトラブルシューティング イベント](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
+- [デバイス manangement 目的値の種類](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [デバイスのオペレーティング システムの概要](intune-devices-deviceoperatingsystemsummary.md)
 - [デバイス保護の概要](intune-devices-deviceprotectionoverview.md)
 - [デバイスの登録状態](intune-devices-deviceregistrationstate.md)
@@ -120,15 +152,21 @@ ms.locfileid: "30170589"
 - [パスコードのリセット アクションの結果](intune-devices-resetpasscodeactionresult.md)
 - [Apple VPP ライセンスのアクションの結果の取り消し](intune-devices-revokeapplevpplicensesactionresult.md)
 - [実行スケジュール](intune-devices-runschedule.md)
+- [セキュリティベースラインコンプライアンスの状態](intune-deviceintent-securitybaselinecompliancestate.md)
+- [セキュリティベースラインデバイスの状態](intune-deviceintent-securitybaselinedevicestate.md)
+- [セキュリティベースライン設定の状態](intune-deviceintent-securitybaselinesettingstate.md)
+- [セキュリティベースラインの状態](intune-deviceintent-securitybaselinestate.md)
+- [セキュリティベースラインの状態の概要](intune-deviceintent-securitybaselinestatesummary.md)
+- [セキュリティベースラインテンプレート](intune-deviceintent-securitybaselinetemplate.md)
 - [共有 Apple デバイス ユーザー](intune-devices-sharedappledeviceuser.md)
 - [単項管理条件式](intune-fencing-unarymanagementconditionexpression.md)
 - [単項管理条件式演算子の種類](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
-- [Windows のデバイス アカウントのアクション パラメーターの更新](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Windows デバイス アカウントのアクション パラメーターの更新](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [変数管理条件式](intune-fencing-variablemanagementconditionexpression.md)
-- [Windows Defender のスキャン アクションの結果](intune-devices-windowsdefenderscanactionresult.md)
+- [Windows defender のスキャン アクションの結果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows のデバイス アカウント](intune-devices-windowsdeviceaccount.md)
 - [Windows のデバイス AD アカウント](intune-devices-windowsdeviceadaccount.md)
-- [Windows のデバイス Azure AD アカウント](intune-devices-windowsdeviceazureadaccount.md)
+- [Windows デバイス Azure AD アカウント](intune-devices-windowsdeviceazureadaccount.md)
 - [Windows デバイス正常性状態](intune-devices-windowsdevicehealthstate.md)
 - [Windows デバイス マルウェアの状態](intune-devices-windowsdevicemalwarestate.md)
 - [Windows マルウェア カテゴリ](intune-devices-windowsmalwarecategory.md)

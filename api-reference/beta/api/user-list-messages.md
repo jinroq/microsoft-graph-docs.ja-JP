@@ -4,12 +4,12 @@ description: 'サインイン中のユーザーのメールボックス内のメ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 828dac4a345eaba3bb902ba5d96dec4852501033
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523569"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518533"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -17,23 +17,23 @@ ms.locfileid: "29523569"
 
 サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。 
 
-具体的には、メッセージにフィルターを適用し、のみが含まれるもの、[説明](../resources/mention.md)サインイン中のユーザーの取得できます。
+特に、メッセージに対してフィルター処理を行い、サインインしているユーザーの[メンション](../resources/mention.md)を含むメッセージのみを取得することができます。
 
-既定では、注意してください、`GET /me/messages`操作**に関する**プロパティを返しません。 使用して、 `$expand` [メッセージに記載されているそれぞれの詳細情報を検索](../api/message-get.md#request-2)するパラメーター クエリを実行します。
+既定では、操作に`GET /me/messages`よって**メンション**プロパティは返されないことに注意してください。 `$expand` [メッセージ内の各メンションの詳細を検索](../api/message-get.md#request-2)するには、クエリパラメーターを使用します。
 
-2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーにメッセージを取得する場所です。
+アプリが別のユーザーのメールフォルダーでメッセージを取得できるシナリオは2つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに1人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーがそのユーザーとのメールフォルダーを共有しているか、または、そのユーザーに対してアクセスを委任されている。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
 
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    |
+|委任 (職場または学校のアカウント) | メール readbasic、mail. 読み取り、ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | メール readbasic、mail. 読み取り、ReadWrite    |
 |アプリケーション | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -54,7 +54,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-**説明**のユーザーは、ユーザーのメールボックス内には、すべてのメッセージを取得します。
+ユーザーのメールボックス内のすべてのメッセージを取得するに**** は、次のようにします。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-使用することができます、 `$filter` 、サインイン中のユーザーに言及するこれらのメッセージを取得するための**mentionsPreview**プロパティにパラメーター クエリを実行します。
+`$filter` **mentionsPreview**プロパティの query パラメーターを使用すると、サインインしているユーザーを言及するメッセージを取得できます。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -78,13 +78,13 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[メッセージ](../resources/message.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[message](../resources/message.md)オブジェクトのコレクションを返します。
 
 この要求の既定のページ サイズは、メッセージ 10 個です。 
 
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-最初の例では、サインインしているユーザーのメールボックスに上位 10 個のメッセージを取得します。
+最初の例では、サインインしているユーザーのメールボックス内の上位10個のメッセージを取得します。
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -124,9 +124,9 @@ Content-length: 317
 
 
 ##### <a name="request-2"></a>要求 2
-次の例では、ユーザーに言及しているサインインしているユーザーのメールボックス内のすべてのメッセージをフィルター処理します。 使用して`$select`の応答メッセージごとのプロパティのサブセットを返す。 
+次の例では、サインインしているユーザーのメールボックス内のすべてのメッセージに対して、ユーザーに言及するメッセージをフィルター処理します。 を使用`$select`して、応答内の各メッセージのプロパティのサブセットを返します。 
 
-例には、URL のクエリ パラメーターの文字列内のスペース文字のエンコードも組み込まれています。
+この例では、クエリパラメーター文字列にスペース文字の URL エンコーディングも組み込まれています。
 <!-- {
   "blockType": "request",
   "name": "get_messages_with_mentions"
@@ -187,7 +187,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>要求 3
-3 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式で各メッセージの**本文**および**uniqueBody**プロパティを取得します。
+3番目の例では、 `Prefer: outlook.body-content-type="text"`ヘッダーを使用して、各メッセージの**本文**および**uniqueBody**プロパティをテキスト形式で取得する方法を示します。
 <!-- {
   "blockType": "request",
   "name": "get_messages_in_text"

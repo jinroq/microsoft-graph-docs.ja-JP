@@ -4,12 +4,12 @@ description: 'deviceManagement リソースは、次のようなワークフロ�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 23ea35468bbff4010b5ed089b086fbb6cd7a9845
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163029"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518541"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
@@ -24,12 +24,13 @@ deviceManagement リソースは、次のようなワークフローに従って
 - 会社の使用条件 
 - 会社の登録プロファイル
 - デバイス構成の設定
+- デバイスのインテント設定
 - デバイスの管理
 - 電子 SIM (ESIM)
 - フェンス
 - 通知
 - オンボードポリシー、設定、詳細
-- リモートアクセス
+- リモート アクセス
 - リモートアシスタンスパートナー
 - 役割ベースのアクセス制御 (RBAC) ポリシー
 - 通信マネージャー se 管理パートナー
@@ -39,14 +40,14 @@ deviceManagement リソースは、次のようなワークフローに従って
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[deviceManagement の取得](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[deviceManagement の更新](../api/intune-shared-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。|
 |**デバイス構成**|
 |[enableLegacyPcManagement アクション](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|なし|まだ文書化されていません|
 |**デバイスの管理**|
 |[sendCustomNotificationToCompanyPortal アクション](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|なし|まだ文書化されていません|
 |**オンボーディング**|
-|[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|まだ文書化されていません|
+|[verifyWindowsEnrollmentAutoDiscovery 関数](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|ブール型 (Boolean)|まだ文書化されていません|
 |**役割ベースのアクセス制御 (RBAC)**|
 |[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
 |[getRoleScopeTagsByIds 関数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[ロール copetag](../resources/intune-rbac-rolescopetag.md)コレクション|まだ文書化されていません|
@@ -59,7 +60,7 @@ deviceManagement リソースは、次のようなワークフローに従って
 |id|String|デバイスに関連付けられている一意の識別子。|
 |**デバイス構成**|
 |int未指定 eaccountid|Guid|指定したテナントの Intune アカウント ID|
-|legacyPcManangementEnabled|Boolean|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティは読み取りのみ可能です。|
+|legacyPcManangementEnabled|Boolean|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。|
 |maximumdeptokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
@@ -68,7 +69,7 @@ deviceManagement リソースは、次のようなワークフローに従って
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|
 |subscriptionState|[devicemanagementsubscriptionstate](../resources/intune-devices-devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
-|講読|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 使用可能な値: `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
+|subscriptions|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 可能な値は `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB` です。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows デバイスのマルウェアの概要。|
 |**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
@@ -105,6 +106,11 @@ deviceManagement リソースは、次のようなワークフローに従って
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) コレクション|このアカウントにおける、iOS ソフトウェアの更新のインストール状態です。|
 |conditionalaccesssettings|[ndesconnector](../resources/intune-deviceconfig-ndesconnector.md)コレクション|このアカウントの Ndes コネクタのコレクション。|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|ソフトウェア更新状態の概要です。|
+|**デバイスの目的**|
+|意図的|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)コレクション|デバイス管理の目的|
+|settingdefinitions|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)コレクション|デバイス管理の目的の設定の定義|
+|テンプレート|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)コレクション|利用可能なテンプレート|
+|categories|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)コレクション|利用可能なカテゴリ|
 |**デバイスの管理**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple プッシュ通知証明書。|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)コレクション|データ共有同意。|
@@ -138,7 +144,7 @@ deviceManagement リソースは、次のようなワークフローに従って
 |exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)コレクション|プレミスの Exchange の一覧は、テナントによって構成されたポリシーです。|
 |exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|オンプレミスの Exchange へのモバイルデバイスのアクセスを制御するポリシー|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) コレクション|テナントによって構成されている、モバイルの脅威保護コネクタのリスト。|
-|**リモートアクセス**|
+|**リモート アクセス**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)コレクション|ユーザーに関連付けられている PFX 証明書のコレクション。|
 |**リモートアシスタンス**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) コレクション|リモート アシスタンス パートナー。|

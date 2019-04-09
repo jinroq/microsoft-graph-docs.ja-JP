@@ -1,28 +1,28 @@
 ---
 title: メッセージを取得する
-description: プロパティと、メッセージ オブジェクトの関係を取得します。
+description: message オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e5f7b8c73ac9e121a1f0cbe1bf4200326d2d4e29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643200"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518519"
 ---
 # <a name="get-message"></a>メッセージを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、[メッセージ](../resources/message.md)オブジェクトの関係を取得します。
+[message](../resources/message.md)オブジェクトのプロパティとリレーションシップを取得します。
 
-たとえば、メッセージを取得し、メッセージ内にある、[説明](../resources/mention.md)のすべてのインスタンスを展開できます。
+たとえば、メッセージを取得して、メッセージ内のすべての[言及](../resources/mention.md)インスタンスを展開することができます。
 
-2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーにメッセージを取得する場所です。
+アプリが別のユーザーのメールフォルダーでメッセージを取得できるシナリオは2つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに1人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーがそのユーザーとのメールフォルダーを共有しているか、または、そのユーザーに対してアクセスを委任されている。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**メッセージ** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
@@ -32,13 +32,14 @@ ms.locfileid: "29643200"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Mail.Read    |
-|委任 (個人用 Microsoft アカウント) | Mail.Read    |
+|委任 (職場または学校のアカウント) | メール readbasic、mail。    |
+|委任 (個人用 Microsoft アカウント) | メール readbasic、mail。    |
 |アプリケーション | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 要求
 
-指定したメッセージを取得するには。<!-- { "blockType": "ignored" } -->
+指定したメッセージを取得するには:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -46,7 +47,8 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-メッセージを取得し、メッセージ内のすべての記述を展開します。<!-- { "blockType": "ignored" } -->
+メッセージを取得して、メッセージ内のすべてのメンションを展開するには、次のようにします。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
@@ -57,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-使用することができます、 `$expand` 、**紹介**ナビゲーション プロパティにメッセージのそれぞれの[説明](../resources/mention.md)の詳細を含むメッセージを取得するクエリ パラメーターを展開します。
+**メンション**ナビゲーションプロパティ`$expand`のクエリパラメーターを使用すると、展開されたメッセージ内の各[メンション](../resources/mention.md)の詳細を含むメッセージを取得できます。
 
 
 
@@ -75,7 +77,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-最初の例では、指定されたメッセージを取得します。 返される本文の適切な形式を指定する任意のヘッダーは指定しません。
+最初の例では、指定されたメッセージを取得します。 返される本文の形式を示すヘッダーは指定されていません。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -85,8 +87,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### <a name="response-1"></a>応答 1
-以下は、応答の例です。 **本文**および**uniqueBody**プロパティは、既定の HTML 形式で返されます。
-注: ここに示す応答オブジェクトは、簡潔にするため切り捨てられます。 実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。 **body**プロパティと**uniqueBody**プロパティは、既定の HTML 形式で返されます。
+注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +117,7 @@ Content-length: 523
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の例では、サインイン中のユーザーとは、Dana Swope です。 Dana のメールボックス内の指定されたメッセージですべての記述の詳細を取得する例を示しています。
+次の例では、サインインしているユーザーは Dana Swope です。 この例では、Dana のメールボックス内の指定されたメッセージ内のすべてのメンションの詳細を取得します。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -225,7 +227,7 @@ Content-length: 2248
 
 ##### <a name="request-3"></a>要求 3
 
-3 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式の**本文**と指定されたメッセージの**uniqueBody**を取得します。
+3番目の例では、 `Prefer: outlook.body-content-type="text"`ヘッダーを使用して、指定したメッセージの**本文**と**uniqueBody**をテキスト形式で取得する方法を示します。
 
 <!-- {
   "blockType": "request",
@@ -240,7 +242,7 @@ Prefer: outlook.body-content-type="text"
 
 ##### <a name="response-3"></a>応答 3
 
-以下は、応答の例です。 注: 応答が含まれています、`Preference-Applied: outlook.body-content-type`ヘッダーを確認するのには、`Prefer: outlook.body-content-type`要求ヘッダー。
+以下は、応答の例です。 注: 応答には、 `Preference-Applied: outlook.body-content-type` `Prefer: outlook.body-content-type`要求ヘッダーを認識するためのヘッダーが含まれています。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,7 +273,7 @@ Content-length: 1550
 
 ##### <a name="request-4"></a>要求 4
 
-4 番目の例では、特定のメッセージのインターネット メッセージ ヘッダーを取得する方法を示します。  
+4番目の例は、特定のメッセージのインターネットメッセージヘッダーを取得する方法を示しています。  
 
 <!-- {
   "blockType": "request",
@@ -285,7 +287,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=interne
 
 ##### <a name="response-4"></a>応答 4
 
-以下は、応答の例です。 注: わかりやすくするための応答オブジェクト内のインターネット メッセージ ヘッダーの数が削減されました。
+以下は、応答の例です。 注: 簡潔にするために、response オブジェクトのインターネットメッセージヘッダーの数は短縮されています。
 
 <!-- {
   "blockType": "response",
@@ -330,7 +332,7 @@ Content-type: application/json
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
+- [スキーマ拡張機能を使用したグループへのカスタムデータの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

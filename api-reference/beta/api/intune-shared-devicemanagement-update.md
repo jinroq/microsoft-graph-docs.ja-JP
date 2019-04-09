@@ -4,12 +4,12 @@ description: deviceManagement オブジェクトのプロパティを更新し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e0dc83489ede464eb9da000acb8db4e6af13f8d2
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960406"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518526"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
@@ -32,6 +32,7 @@ ms.locfileid: "30960406"
 | &nbsp; &nbsp; **監査** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **会社の用語** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **デバイスの目的** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
