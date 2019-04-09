@@ -4,12 +4,12 @@ description: 指定した期間について、ユーザー、配布リスト、�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 24e58a1e11bac8e9707aad17db43543862cfe486
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926614"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518512"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -20,9 +20,9 @@ ms.locfileid: "30926614"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendar.Read、Calendar.ReadWrite    |
+|委任 (職場または学校のアカウント) | Calendars.Read、Calendars.ReadWrite    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション | Calendar.Read、Calendar.ReadWrite |
+|アプリケーション | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

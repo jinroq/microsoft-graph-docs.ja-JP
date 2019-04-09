@@ -4,27 +4,27 @@ description: 指定した期間について、ユーザー、配布リスト、�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 48283f7e81a1faea34d91dec72906b71361c816a
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 7634997b58ec2bb65df1b3914c541fc57c5c37f9
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869380"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518554"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した期間について、ユーザー、配布リスト、またはリソース (会議室または備品) のコレクションの空き時間情報を取得します。
+指定された期間のユーザー、配布リスト、またはリソース（部屋または備品）のコレクションの空き時間情報を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendar.Read、Calendar.ReadWrite    |
+|委任 (職場または学校のアカウント) | Calendars.Read、Calendars.ReadWrite    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション | Calendar.Read、Calendar.ReadWrite |
+|アプリケーション | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
