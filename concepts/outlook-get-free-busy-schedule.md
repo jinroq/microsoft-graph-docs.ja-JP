@@ -4,12 +4,12 @@ description: 職場または学校の環境で一般的なシナリオとして�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869198"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518498"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>ユーザーとリソースの空き時間スケジュールを取得する
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 Alex の空き時間スケジュールと勤務時間以外に、**getSchedule** は **availabilityView** も返します。これは、その日の Alex の空き時間情報の結合されたビューです。 結合されたビューは、その日を対象とする時間帯で構成された文字列であり、各時間帯は次の規則を使用して Alex の空き時間情報を示します。 
 
-- `0`= 空き時間
+- `0`= 空き時間空き
 - `1`= 仮の予定
 - `2`= ビジー
 - `3`= 外出中
@@ -158,7 +158,7 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 ### <a name="permissions"></a>アクセス許可
 **findmeetingtimes**で必要な最低限の権限は Calendars.Read.Shared です。
 
-**getSchedule**で必要な最低限の権限は Calendar.Read です。 
+**getSchedule** で必要な最低限の権限は Calendars.Read です。 
 
 ### <a name="version-support"></a>バージョンのサポート
 
@@ -166,7 +166,7 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 
 
 ## <a name="event-data-returned"></a>返されるイベント データ
-アプリケーション用の**getSchedule**で空き時間情報を取得するために必要な最低限の特権のアクセス許可は Calendar.Read です。 アプリのシナリオによっては、サインインしているユーザーまたは管理者が同意することができます。
+アプリケーション用の **getSchedule** で空き時間情報を取得するために必要な最低限の特権のアクセス許可は Calendars.Read です。 アプリのシナリオによっては、サインインしているユーザーまたは管理者が同意することができます。
 
 同意済みのアクセス許可があると、アプリケーションで Outlook を通じて要求されたユーザーのカレンダーに**getSchedule**を使用することができ、要求されたユーザーは**getSchedule**が返すイベント データを制御します。 
 
