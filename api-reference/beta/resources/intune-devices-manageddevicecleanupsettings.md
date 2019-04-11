@@ -4,12 +4,12 @@ description: 管理者がデバイスをクリーンアップする必要があ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76abaf4cb06156881a530d50e3322e649eedde51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0d7e91d632860e47275cda158acf4d816c64e835
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148483"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804558"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>managedDeviceCleanupSettings リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30148483"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|deviceinactivitybeforeretirementindays|String|デバイスが Intune に接続していない場合の日数。|
+|deviceinactivitybeforeretirementindays|文字列|デバイスが Intune に接続していない場合の日数。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -40,6 +40,7 @@ ms.locfileid: "30148483"
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
+
 
 
 

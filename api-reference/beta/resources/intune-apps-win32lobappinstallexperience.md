@@ -4,12 +4,12 @@ description: Win32 アプリのインストール環境のプロパティが含�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01402384c2628e1f53a854fa35097415181aaa20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 544825542cd178d53e3aa0a9be5373f1a9f49675
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174948"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804628"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>win32LobAppInstallExperience リソースの種類
 
@@ -40,6 +40,7 @@ Win32 アプリのインストール環境のプロパティが含まれてい�
   "runAsAccount": "String"
 }
 ```
+
 
 
 

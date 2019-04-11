@@ -4,12 +4,12 @@ description: PEAP が選択された eap の種類である場合の認証に使
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cdc16835777acbd937a4afdeb9739eedba92632
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f642ecae06f36f6b6c9a6b3cc6a4196c5f8c4ec4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142218"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801366"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>none apauthenticationmethodforpeap 列挙型
 
@@ -24,6 +24,7 @@ PEAP が選択された eap の種類である場合の認証に使用する eap
 |:---|:---|:---|
 |none|.0|なし|
 |microsoftChapVersionTwo|1-d|Microsoft chap バージョン 2 (ms-chap v2)。|
+
 
 
 

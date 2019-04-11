@@ -4,12 +4,12 @@ description: 新しい sideLoadingKey オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a4a2e715e0255048a6ec13cbf3261bbacb80f3f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 24f2c970182322bc47b333137d7ea94b61e9726f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977290"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803151"
 ---
 # <a name="create-sideloadingkey"></a>sideLoadingKey を作成する
 
@@ -50,12 +50,12 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|サイドローディングキーの一意 Id。|
+|id|文字列|サイドローディングキーの一意 Id。|
 |value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
 |displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
-|description|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
+|説明|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
 |totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
-|lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
+|lastUpdatedDateTime|文字列|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

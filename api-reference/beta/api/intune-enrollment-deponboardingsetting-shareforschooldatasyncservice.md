@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c4e60ba095e84ee896345df22eb35fbabd65fec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 46af6faf0fb7ea4d391cb566ec7cd9771eac0acb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969457"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801716"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>shareForSchoolDataSyncService アクション
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

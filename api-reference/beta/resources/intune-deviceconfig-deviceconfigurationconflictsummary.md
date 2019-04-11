@@ -4,12 +4,12 @@ description: 一連のデバイス構成ポリシーの競合の概要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50ff4b013f19badbfd510a9b84f8beae4adb621c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75c2e4e0375797340cf53cbe73d5d3f2fe1a0332
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175228"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802570"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>deviceConfigurationConflictSummary リソースの種類
 
@@ -64,6 +64,7 @@ ms.locfileid: "30175228"
   "deviceCheckinsImpacted": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 目的のユーザー状態を表すエンティティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67d8a11816132d0867987c80325f100d5e9a1ecd
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 5dddc3585d6a99f8ad1613a01a796c34128c5d4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524331"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802927"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>devicemanagementintentuserstate リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31524331"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementintentuserstates のリスト](../api/intune-deviceintent-devicemanagementintentuserstate-list.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)コレクション|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementintentuserstate の取得](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementintentuserstate の作成](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|新しい[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。|
+|[devicemanagementintentuserstate の取得](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementintentuserstate の作成](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|新しい[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。|
 |[devicemanagementintentuserstate の削除](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|なし|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)を削除します。|
-|[devicemanagementintentuserstate の更新](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementintentuserstate の更新](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -60,8 +60,6 @@ ms.locfileid: "31524331"
   "state": "String"
 }
 ```
-
-
 
 
 

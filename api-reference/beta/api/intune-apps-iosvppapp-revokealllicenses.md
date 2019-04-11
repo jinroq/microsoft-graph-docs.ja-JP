@@ -4,12 +4,12 @@ description: 指定したアプリに割り当てられたすべての iOS VPP �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65829fa75efefa23d30e2e9628c4c1066eef4e91
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 708065bb16fa5435aada4e888d95f489df4924a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800330"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses アクション
 
@@ -79,6 +79,7 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

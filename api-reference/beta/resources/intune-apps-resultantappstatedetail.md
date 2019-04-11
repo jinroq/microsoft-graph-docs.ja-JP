@@ -4,12 +4,12 @@ description: 列挙アプリケーションが特定のインストール状態�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d6b7e6a665229d02033cd1c0c25469a83dfc37d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf9a2bb6a27bde43cd0467a106af8f593aaf02a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167215"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801541"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultの appstatedetail 列挙型
 
@@ -23,9 +23,18 @@ ms.locfileid: "30167215"
 |メンバー|値|説明|
 |:---|:---|:---|
 |noadditionaldetails|.0|追加の詳細情報は利用できません。|
+|dependencyFailedToInstall|1-d|1つ以上のアプリケーションの依存関係をインストールできませんでした。|
+|dependencywithの要件が満たされていません|pbm-2|1つ以上のアプリケーションの依存関係に、満たされていない要件があります。|
+|dependencyPendingReboot|1/3|1つまたは複数のアプリケーションの依存関係が、インストールを完了するには、デバイスの再起動が必要です。|
+|dependencywithautoinstalldisabled|2/4|1つまたは複数のアプリケーションの依存関係が、自動的にインストールされないように構成されている。|
 |参照 installerrorcode|2000|アプリケーションをインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|
+|autoinstalldisabled|3000|アプリケーションは自動的にインストールされないように構成されています。|
 |未確認のエラーを参照|4000|アプリケーションをアンインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|
 |pendingreboot|5000|アプリケーションのインストールを完了するには、デバイスを再起動する必要があります。|
+|の依存関係|5001|1つまたは複数のアプリケーションの依存関係がインストールされています。|
+|powerShellScriptRequirementNotMet|-1013|PowerShell スクリプトの要件のルールが満たされていません|
+|registryRequirementNotMet|-1012|レジストリ要件のルールが満たされていません|
+|fileSystemRequirementNotMet|-1011|ファイルシステム要件のルールが満たされていません|
 |platformnotapplicable|-1006|アプリケーションはこのプラットフォームには適用できません。 (IOS を対象とした Android アプリなど)|
 |minimumcpuspeednotmet れている|-1005|ターゲットデバイスの CPU 速度が構成されている最小値を下回っています。|
 |minimumlogicalprocessorcountnotmet れた|-1004|ターゲットデバイス上の論理プロセッサ数が構成されている最小値を下回っています。|
@@ -33,6 +42,7 @@ ms.locfileid: "30167215"
 |minimumOsVersionNotMet|-1002|ターゲットデバイスの OS のバージョンが、構成されている最小値を下回っています。|
 |minimumdiskん enot満たさ|-1001|ターゲットデバイスの使用可能なディスク領域が構成されている最小値を下回っています。|
 |プロセッサアーキテクチャ (該当する場合)|-1000|デバイスアーキテクチャ (x86/amd64 など) は、アプリケーションには適用されません。|
+
 
 
 

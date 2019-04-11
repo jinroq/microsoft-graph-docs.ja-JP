@@ -4,12 +4,12 @@ description: 特定のテナントに属するデバイスで開始されたリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c06f7472addff7c475eeeb8ac3f1a26cc7ea78bc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 70a4a95019db6ca3025d0090981ca6563d335ffe
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165878"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804264"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteactionaudit リソースの種類
 
@@ -34,11 +34,11 @@ ms.locfileid: "30165878"
 |id|String|レポート Id。|
 |deviceDisplayName|String|Intune デバイス名。|
 |userName|文字列型 (String)|\[非\]推奨 initiatedbyuserprincipalname を代わりに使用してください。|
-|initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
-|action|[remoteaction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
+|initiatedByUserPrincipalName|文字列|デバイスのアクションを開始したユーザーの形式は UPN です。|
+|アクション|[remoteaction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
 |requestdatetime|DateTimeOffset|アクションが発行された日時 (UTC)。|
-|deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
-|deviceIMEI|String|デバイスの IMEI。|
+|deviceOwnerUserPrincipalName|文字列|デバイス所有者の Upn。|
+|deviceIMEI|文字列|デバイスの IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -66,6 +66,7 @@ ms.locfileid: "30165878"
   "actionState": "String"
 }
 ```
+
 
 
 

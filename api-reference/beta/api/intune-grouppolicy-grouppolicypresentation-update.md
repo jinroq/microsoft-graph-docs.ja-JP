@@ -4,12 +4,12 @@ description: groupPolicyPresentation オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44da489c3cdf124b434ba35d52d39d63dba54209
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 39905eabb6b0e8435771a775cf31f5dc4a432e4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986979"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804460"
 ---
 # <a name="update-grouppolicypresentation"></a>groupPolicyPresentation の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -89,6 +89,7 @@ Content-Length: 205
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: advancedThreatProtectionOnboardingDeviceSettingState を削除し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e1ea0efa00feb2de2f80a167f494227fd92ece9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 82d6d9796866557419a31f341194233baa5976de
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982498"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802822"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>advancedThreatProtectionOnboardingDeviceSettingState の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 独自のデバイス (byod) Windows デバイスのデバイス登
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d4403ae2e4629a330fadd5136530d66c8a7d7f2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 552fbcc9e27eb94937d2aa2488e573b0d932bab2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161678"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803326"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration リソースの種類
 
@@ -27,17 +27,17 @@ ms.locfileid: "30161678"
 |[windowsInformationProtectionDeviceRegistration を作成する](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|新しい[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトを作成します。|
 |[windowsInformationProtectionDeviceRegistration の削除](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|なし|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)を削除します。|
 |[windowsInformationProtectionDeviceRegistration の更新](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。|
-|[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|なし|まだ文書化されていません|
+|[ワイプ アクション](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
-|deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
+|deviceRegistrationId|文字列|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
 |deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
-|deviceMacAddress|String|デバイスの Mac アドレス。|
+|deviceMacAddress|文字列|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -63,6 +63,7 @@ ms.locfileid: "30161678"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

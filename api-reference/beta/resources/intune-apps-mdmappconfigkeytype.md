@@ -4,12 +4,12 @@ description: アプリ構成キーの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 220e3ebf0bb9482b64c894025f233404769bff8c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea0fa95f79e3378b785001c80682c3188b094427
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145221"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802969"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30145221"
 |realtype|pbm-2|まだ文書化されていません|
 |booleanType|1/3|まだ文書化されていません|
 |tokenType|2/4|まだ文書化されていません|
+
 
 
 

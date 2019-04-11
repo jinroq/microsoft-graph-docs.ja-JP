@@ -4,12 +4,12 @@ description: iosUpdateConfiguration オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cf8cfce47708727270ca536d20a62813473da6c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9cace40b755dd48564cef285af995684667352ac
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989548"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803858"
 ---
 # <a name="get-iosupdateconfiguration"></a>Get iosUpdateConfiguration
 
@@ -93,6 +93,7 @@ Content-Length: 711
   }
 }
 ```
+
 
 
 

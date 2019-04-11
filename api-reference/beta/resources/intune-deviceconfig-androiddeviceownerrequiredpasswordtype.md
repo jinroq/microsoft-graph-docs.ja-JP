@@ -4,12 +4,12 @@ description: Android デバイスの所有者ポリシーに必要なパスワ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 376e33edac921f6771d76a45622a58bca3076c5c
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: e8c575b1b39592eb8191e358563abb6d6bd834e7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572335"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802353"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androiddeviceownerrequiredpasswordtype 列挙型
 
@@ -30,6 +30,7 @@ Android デバイスの所有者ポリシーに必要なパスワードの種類
 |文字|5|少なくとも英数字のパスワード|
 |alphanumericWithSymbols|シックス|記号を含む、少なくとも英数字。|
 |lowsecuritybiometric 認証|7|低セキュリティ生体認証ベースのパスワードが必要です。|
+
 
 
 

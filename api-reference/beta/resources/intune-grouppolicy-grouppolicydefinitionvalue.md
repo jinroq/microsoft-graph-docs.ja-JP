@@ -4,12 +4,12 @@ description: 定義値エンティティは、1つのグループポリシー定
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e822cb4ce46a0fa9492f7624904588fd1b10a7c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2aa0eef1b4921d1b364486b9af254fba2a8322c0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142617"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800995"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>grouppolicydefinitionvalue リソースの種類
 
@@ -32,8 +32,8 @@ ms.locfileid: "30142617"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
-|enabled|Boolean|関連付けられたグループポリシー定義を有効または無効にします。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値の構成方法を指定します。 これは、ポリシーとして、または設定することができます。 使用可能な値は、`policy`、`preference` です。|
+|enabled|ブール型 (Boolean)|関連付けられたグループポリシー定義を有効または無効にします。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|値の構成方法を指定します。 これは、ポリシーとして、または設定することができます。 可能な値は、`policy`、`preference` です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -61,6 +61,7 @@ ms.locfileid: "30142617"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

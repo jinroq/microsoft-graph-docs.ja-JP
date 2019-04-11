@@ -4,12 +4,12 @@ description: 新しい deviceManagementExchangeConnector オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51b95ac0724aecc27694ba7f7c0226810754d02f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e6961c5a4279e69fb264abe7ed0fd4d960226c12
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964970"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803795"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の作成
 
@@ -53,12 +53,12 @@ POST /deviceManagement/exchangeConnectors
 |id|String|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
-|primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
-|serverName|String|Exchange サーバーの名前。|
-|コネクタ servername|String|Exchange Connector をホストするサーバーの名前。|
+|primarySmtpAddress|文字列|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
+|serverName|文字列|Exchange サーバーの名前。|
+|コネクタ servername|文字列|Exchange Connector をホストするサーバーの名前。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
-|version|String|ExchangeConnectorAgent のバージョン|
-|exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|
+|version|文字列|ExchangeConnectorAgent のバージョン|
+|exchangeAlias|文字列|Exchange Server に割り当てられているエイリアス。|
 |exchangeOrganization|String|Exchange Server に対する Exchange 組織|
 
 
@@ -110,6 +110,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

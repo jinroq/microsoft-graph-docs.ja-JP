@@ -4,12 +4,12 @@ description: deponboardingsetting オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26da9a253a9e15c3d7e1b0c52c802d7e33d8db9a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 933cd6c2ed0e11f1230f532499cb21483f5c25ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973321"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800169"
 ---
 # <a name="get-deponboardingsetting"></a>depon掲示の設定を取得する
 
@@ -88,6 +88,7 @@ Content-Length: 740
   }
 }
 ```
+
 
 
 

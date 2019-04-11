@@ -4,12 +4,12 @@ description: グループへの Mac VPP モバイルアプリの割り当てに�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 102869101b577eadb40eb4a3146c45e422d9c24a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b55e203e58197d4b3e29d4a6a8567769d9196e0c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150982"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803228"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>macosvppapp割り当て設定リソースの種類
 
@@ -43,6 +43,7 @@ ms.locfileid: "30150982"
   "useDeviceLicensing": true
 }
 ```
+
 
 
 

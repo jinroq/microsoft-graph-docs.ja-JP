@@ -4,12 +4,12 @@ description: このエンティティには、ブランド化プロファイル�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 956cf652167714270dfcaf348523db236fb62941
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 731d20cff9e0504422161c00c641cf8535ef8ae0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151395"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801204"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment リソースの種類
 
@@ -54,6 +54,7 @@ ms.locfileid: "30151395"
   }
 }
 ```
+
 
 
 

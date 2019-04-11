@@ -4,12 +4,12 @@ description: モバイルアプリのトラブルシューティングイベン�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a93b88f850e2fa220903362375774d8a6dded59c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160502"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802493"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "30160502"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。|
-|runstate|[runstate](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は `unknown`、`success`、`fail` です。|
+|runstate|[runstate](../resources/intune-shared-runstate.md)|アイテムの状態。 使用可能な値は、`unknown`、`success`、`fail` です。|
 |errorCode|String|失敗のエラーコード。エラーがない場合は空です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -47,7 +47,6 @@ ms.locfileid: "30160502"
   "errorCode": "String"
 }
 ```
-
 
 
 

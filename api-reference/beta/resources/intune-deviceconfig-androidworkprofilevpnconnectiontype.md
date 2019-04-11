@@ -4,12 +4,12 @@ description: Android ワークプロファイル VPN 接続の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0601ab517543ee30de2ac884313d6ccb3737e842
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4d860650d254e610b371620b168562bef96179c9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803991"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidwork profilevpnconnectiontype 列挙型
 
@@ -29,6 +29,7 @@ Android ワークプロファイル VPN 接続の種類。
 |checkPointCapsuleVpn|2/4|[カプセル接続] VPN をチェックします。|
 |社|5|社|
 |paloAltoGlobalProtect|シックス|Palo Alto Networks globalprotect。|
+
 
 
 

@@ -4,12 +4,12 @@ description: depMacOSEnrollmentProfile オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5266489799fd4e07a63d47957fb0b1e34e781c1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3e8cf635bb2108238f372a4434a88432831faa9c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970437"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801695"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>リスト depMacOSEnrollmentProfiles
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1342
+Content-Length: 1401
 
 {
   "value": [
@@ -93,6 +93,7 @@ Content-Length: 1342
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
+      "deviceNameTemplate": "Device Name Template value",
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -102,6 +103,7 @@ Content-Length: 1342
   ]
 }
 ```
+
 
 
 

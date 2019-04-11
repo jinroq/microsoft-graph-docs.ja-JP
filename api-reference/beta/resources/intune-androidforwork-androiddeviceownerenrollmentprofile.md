@@ -4,12 +4,12 @@ description: Google のクラウド管理を使用して COSU デバイスを登
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd22f0686a39dbd4531bb4228f5ed1ecca27b6bd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e528d067f457fc441a2d5c6f880971bc79360992
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164415"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800085"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile リソースの種類
 
@@ -27,19 +27,19 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |[androidDeviceOwnerEnrollmentProfile を作成する](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|新しい[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトを作成します。|
 |[androidDeviceOwnerEnrollmentProfile の削除](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|なし|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)を削除します。|
 |[androidDeviceOwnerEnrollmentProfile の更新](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトのプロパティを更新します。|
-|[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|なし|まだ文書化されていません|
-|[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
+|[revokeToken アクション](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|なし|まだ文書化されていません|
+|[createToken アクション](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|accountId|String|登録プロファイルが属するテナント GUID。|
-|id|文字列|登録プロファイル用の一意な GUID。|
+|accountId|文字列|登録プロファイルが属するテナント GUID。|
+|id|文字列|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|説明|文字列|登録プロファイルの説明。|
+|説明|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
-|tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
+|tokenValue|文字列|この登録プロファイル用に最後に作成されたトークンの値。|
 |tokenの日付/時刻|DateTimeOffset|最後に作成されたトークンが作成された日時。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
@@ -78,6 +78,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
   }
 }
 ```
+
 
 
 

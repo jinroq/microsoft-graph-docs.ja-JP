@@ -4,12 +4,12 @@ description: 新規にvppTokenオブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31717a52cf66fdd0c4d2eff0717250a131540e9f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 189ba6e9ee465d5f0916254c22303ff445fda868
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964424"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802633"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 
@@ -51,9 +51,9 @@ POST /deviceAppManagement/vppTokens
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
-|organizationName|String|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
+|organizationName|文字列|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
-|appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
+|appleId|文字列|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンの有効期限。|
 |lastSyncDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
 |token|String|Apple ボリューム購入プログラムからダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
@@ -65,9 +65,9 @@ POST /deviceAppManagement/vppTokens
 |countryOrRegion|文字列|VPP トークンのアプリを自動で更新するかどうか。|
 |dataSharingConsentGranted|Boolean|Apple volume purchase program でのデータ共有に対して付与される同意。|
 |displayName|String|管理者が指定したトークンのフレンドリ名。|
-|msrtcsip-locationname|String|Apple VPP から返されるトークンの場所。|
+|msrtcsip-locationname|文字列|Apple VPP から返されるトークンの場所。|
 |claimtokenmanagementfromexternalmdm|Boolean|管理者の同意を得て、外部 MDM からのトークン管理を許可します。|
-|roleScopeTagIds|String collection|このエンティティに割り当てられているロールスコープタグ id。|
+|roleScopeTagIds|String コレクション|このエンティティに割り当てられているロールスコープタグ id。|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

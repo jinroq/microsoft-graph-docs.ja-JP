@@ -4,12 +4,12 @@ description: デバイスのブックのインストール要約のプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52d08d00bfbc26e0b72ddf53404eff8d55bb72b9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4eec97cd82224af5e74577a8d9ed9f378534263a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151241"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804397"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
@@ -23,7 +23,7 @@ ms.locfileid: "30151241"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[Get eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
+|[eBookInstallSummary の更新](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -59,6 +59,7 @@ ms.locfileid: "30151241"
   "notInstalledUserCount": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: devicemanagementsettingdefinition オブジェクトのプロパテ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d349fd80a65020e03b691305bb2e968ec5407db5
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f11167524956ff3eddc9a5508fb30fdd81e2aa73
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522574"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801457"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>devicemanagementsettingdefinition の更新
 
@@ -142,8 +142,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 

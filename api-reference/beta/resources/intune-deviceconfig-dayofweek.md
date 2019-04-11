@@ -4,12 +4,12 @@ description: 曜日の指定可能な値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d618fe7a91ef52777cff272858079c1fedd5739
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dd630bcdd5230abf1e22ad4ccf820551b89a36f2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152067"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803074"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30152067"
 |火曜日|2/4|木曜日|
 |金曜日|5|金曜日|
 |土日|シックス|土曜日|
+
 
 
 

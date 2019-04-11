@@ -4,12 +4,12 @@ description: グループへの iOS VPP 電子ブックの割り当てに使用�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 329069f0bbda62e0edd6f03b95856c382d4c0983
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afb12268093011b4ede842b78c5a8618e80e5a2b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150296"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801121"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "30150296"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[iosVppEBookAssignments のリスト](../api/intune-books-iosvppebookassignment-list.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) コレクション|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[iosVppEBookAssignment の取得](../api/intune-books-iosvppebookassignment-get.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get iosVppEBookAssignment](../api/intune-books-iosvppebookassignment-get.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[iosVppEBookAssignment の作成](../api/intune-books-iosvppebookassignment-create.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|新しい [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトを作成します。|
 |[iosVppEBookAssignment の削除](../api/intune-books-iosvppebookassignment-delete.md)|なし|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) を削除します。|
 |[iosVppEBookAssignment の更新](../api/intune-books-iosvppebookassignment-update.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) のプロパティを更新します。|
@@ -59,6 +59,7 @@ ms.locfileid: "30150296"
   "installIntent": "String"
 }
 ```
+
 
 
 

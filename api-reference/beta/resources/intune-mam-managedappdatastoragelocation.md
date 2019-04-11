@@ -4,12 +4,12 @@ description: 管理対象アプリがデータを保存できる可能性があ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd1031027f1a2d7c21acff4781484be79f7183fb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 368ef15ff29e8b3fc611965f67af984879d523f2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148550"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802941"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedappdatastoragelocation 列挙型
 
@@ -22,9 +22,10 @@ ms.locfileid: "30148550"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|onedrive forbusiness|1-d|OneDrive for business|
+|onedrive forbusiness|1-d|OneDrive for Business|
 |sharePoint|pbm-2|SharePoint|
 |localStorage|シックス|デバイス上のローカルストレージ|
+
 
 
 

@@ -4,12 +4,12 @@ description: デバイスの MDM モバイルアプリ構成状態のプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d693aafa6bf5f8c9ea7a328ee2c55c526d88601
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7933404f3e40117dfb04318c93df3fc48df6e594
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151682"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802997"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus リソースの種類
 
@@ -32,14 +32,14 @@ ms.locfileid: "30151682"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
-|userName|String|レポートされているユーザー名|
+|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
+|userName|文字列型 (String)|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|
 |platform|Int32|レポートされているデバイスのプラットフォーム|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|文字列型 (String)|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -66,6 +66,7 @@ ms.locfileid: "30151682"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

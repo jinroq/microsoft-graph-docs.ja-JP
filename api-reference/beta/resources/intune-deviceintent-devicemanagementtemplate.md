@@ -4,12 +4,12 @@ description: デバイス設定の定義済みコレクションを表すエン�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cf144ed30a017dc1f3ae84fc481568adc0d0d09
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522518"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801877"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>devicemanagementtemplate リソースの種類
 
@@ -23,11 +23,11 @@ ms.locfileid: "31522518"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementtemplates を一覧表示する](../api/intune-deviceintent-devicemanagementtemplate-list.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)コレクション|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementtemplate の取得](../api/intune-deviceintent-devicemanagementtemplate-get.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementtemplate の作成](../api/intune-deviceintent-devicemanagementtemplate-create.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|新しい[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトを作成します。|
+|[devicemanagementtemplate の取得](../api/intune-deviceintent-devicemanagementtemplate-get.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementtemplate の作成](../api/intune-deviceintent-devicemanagementtemplate-create.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|新しい[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトを作成します。|
 |[devicemanagementtemplate の削除](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|なし|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)を削除します。|
-|[devicemanagementtemplate の更新](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティを更新します。|
-|[createInstance アクション](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)|まだ文書化されていません|
+|[devicemanagementtemplate の更新](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティを更新します。|
+|[createInstance アクション](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -58,8 +58,6 @@ ms.locfileid: "31522518"
   "description": "String"
 }
 ```
-
-
 
 
 

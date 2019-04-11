@@ -4,12 +4,12 @@ description: Windows ファイアウォールのプロファイルのポリシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae504c8224be18766da49108a3b80c5aecb48b71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc9bd95aeb80cc149e3b3827c0c3b41b36c88f83
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149778"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801730"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 
@@ -22,7 +22,7 @@ Windows ファイアウォールのプロファイルのポリシーです。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|firewallEnabled|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ネットワークプロファイルに対するファイアウォールと高度なセキュリティの適用を許可またはブロックするようにホストデバイスを構成します。 可能な値は `notConfigured`、`blocked`、`allowed` です。|
+|firewallEnabled|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ネットワークプロファイルに対するファイアウォールと高度なセキュリティの適用を許可またはブロックするようにホストデバイスを構成します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |stealthModeRequired|Boolean|サーバーがステルスモードで動作することを許可します。 StealthModeRequired と StealthModeBlocked の両方が true の場合、StealthModeBlocked は優先されます。|
 |stealthModeBlocked|Boolean|サーバーがステルスモードで動作しないようにします。 StealthModeRequired と StealthModeBlocked の両方が true の場合、StealthModeBlocked は優先されます。|
 |incomingTrafficRequired|Boolean|他のポリシー設定に従って着信トラフィックを許可するようにファイアウォールを構成します。 IncomingTrafficRequired と IncomingTrafficBlocked の両方が true の場合、IncomingTrafficBlocked は優先されます。|
@@ -84,6 +84,7 @@ Windows ファイアウォールのプロファイルのポリシーです。
   "policyRulesFromGroupPolicyNotMerged": true
 }
 ```
+
 
 
 

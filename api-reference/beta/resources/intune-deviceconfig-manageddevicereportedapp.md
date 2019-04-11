@@ -4,12 +4,12 @@ description: レポート用のアプリケーションデータ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3e1cd99974259835859cf8a2fc6a9f197c09d4d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b243cbc5c3c06de6af3e2e0f1263b589edf86f48
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166270"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801170"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>manageddevicereportedapp リソースの種類
 
@@ -40,6 +40,7 @@ ms.locfileid: "30166270"
   "appId": "String"
 }
 ```
+
 
 
 

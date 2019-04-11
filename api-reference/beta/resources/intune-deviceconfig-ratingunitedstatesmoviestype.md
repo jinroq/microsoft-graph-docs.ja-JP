@@ -4,12 +4,12 @@ description: 米国での映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 804110ee07c85a1ca68f259e8b4ae9a206f5f29b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801436"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30152739"
 |parentalGuidance13|2/4|PG13 では、いくつかの素材が13の子に対して不適切な場合があります。|
 |しか|5|R、17の下の閲覧者には、親または成人のガーディアンが必要です|
 |保護者|シックス|NC17、大人のみ|
+
 
 
 

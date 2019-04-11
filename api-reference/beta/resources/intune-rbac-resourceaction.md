@@ -1,15 +1,15 @@
 ---
 title: resourceAction リソースの種類
-description: まだ文書化されていません
+description: リソースに対して許可され、許可されていないアクションのセット。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d229a6d4d8b514cbf092efb224ff09dfb0c78ad4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157625"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803907"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction リソースの種類
 
@@ -17,15 +17,15 @@ ms.locfileid: "30157625"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+リソースに対して許可され、許可されていないアクションのセット。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|allowedResourceActions|String コレクション|許可されるアクション|
-|notAllowedResourceActions|文字列コレクション|許可されていないアクション|
+|allowedResourceActions|文字列コレクション|許可されるアクション|
+|notAllowedResourceActions|文字列コレクション|許可されていないアクション。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "30157625"
   ]
 }
 ```
+
 
 
 

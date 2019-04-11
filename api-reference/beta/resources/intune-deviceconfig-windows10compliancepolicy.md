@@ -4,12 +4,12 @@ description: このクラスには、Windows 10 のコンプライアンス設�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd6b02332eb56a7f52cd16c678fd5f0702d5a0a0
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 3f9f53d5cf1ea9f89aae477a121cd183ec32c773
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572356"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801313"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy リソース タイプ
 
@@ -25,19 +25,19 @@ ms.locfileid: "30572356"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List windows10CompliancePolicies](../api/intune-deviceconfig-windows10compliancepolicy-list.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) コレクション|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[windows10CompliancePolicies のリスト](../api/intune-deviceconfig-windows10compliancepolicy-list.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) コレクション|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-get.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-create.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|新しい [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトを作成します。|
+|[windows10CompliancePolicy の作成](../api/intune-deviceconfig-windows10compliancepolicy-create.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|新しい [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトを作成します。|
 |[Delete windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-delete.md)|なし|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) を削除します。|
-|[Update windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-update.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトのプロパティを更新します。|
+|[windows10CompliancePolicy の更新](../api/intune-deviceconfig-windows10compliancepolicy-update.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -51,9 +51,9 @@ ms.locfileid: "30572356"
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |requireHealthyDeviceReport|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
-|osMinimumVersion|String|Windows 10 の最小バージョン。|
+|osMinimumVersion|文字列|Windows 10 の最小バージョン。|
 |osMaximumVersion|文字列型 (String)|Windows 10 の最大バージョン。|
-|mobileOsMinimumVersion|String|Windows Phone の最小バージョン。|
+|mobileOsMinimumVersion|文字列|Windows Phone の最小バージョン。|
 |mobileOsMaximumVersion|String|Windows Phone の最大バージョン。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (早期起動マルウェア対策ドライバーが有効である) ことを要求します。|
 |bitLockerEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (BitLocker が有効である) ことを要求します。|
@@ -62,7 +62,7 @@ ms.locfileid: "30572356"
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
 |activeFirewallRequired|Boolean|Windows デバイスでアクティブなファイアウォールが必要です。|
 |defenderenabled|Boolean|windows デバイスで windows Defender マルウェア対策を必須にする。|
-|defenderversion|String|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
+|defenderversion|文字列|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
 |signatureOutOfDate|Boolean|windows デバイスで windows Defender マルウェア対策の署名が最新の状態になっていることを要求します。|
 |rtpenabled|Boolean|windows デバイスで windows Defender マルウェア対策のリアルタイム保護を必要とします。|
 |antivirusRequired|Boolean|windows Decurity Center に登録されているウイルス対策ソリューション (Symantec、Windows Defender など) を必要とします。|
@@ -71,9 +71,8 @@ ms.locfileid: "30572356"
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|デバイスの脅威保護で、コンプライアンス違反を報告するために最低限必要となるリスクレベル。 可能な値は `unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |configurationManagerComplianceRequired|Boolean|Intune コンプライアンスの状態を考慮に入れて SCCM コンプライアンスの状態を考慮する必要があります。|
-|tpmRequired|Boolean|トラステッドプラットフォームモジュール (TPM) が存在することを要求します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) コレクション|このルールのスケジュール済みのアクションのリスト ([deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承)|
@@ -140,10 +139,10 @@ ms.locfileid: "30572356"
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
+
 
 
 

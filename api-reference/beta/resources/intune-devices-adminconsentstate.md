@@ -4,12 +4,12 @@ description: 管理者の同意状態。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8932c12b16196db3554df2e8d949247090e3dd28
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c8a86e8cf427669777c8bd89edd81653449ac8ed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164030"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800302"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminconstate state 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30164030"
 |notConfigured|.0|管理者がアイテムを構成しませんでした|
 |granted|1-d|管理者付与のアイテム|
 |notgranted|pbm-2|管理者がアイテムを付与することはできません|
+
 
 
 

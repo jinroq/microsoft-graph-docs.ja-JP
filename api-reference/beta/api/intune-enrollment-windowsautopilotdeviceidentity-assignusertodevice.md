@@ -4,12 +4,12 @@ description: ユーザーを自動操縦装置に割り当てます。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3a1dcfee91b93b9c0fcf3bdf1e5bdf25b387c24
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f655dd107e0a6c17ef772951ee1c146686059bf5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967826"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803361"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice アクション
 
@@ -80,6 +80,7 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 550ba33f81db9fb38f6d19f3b756a67d7c3b9aa1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03f028dffe4db6a2e43a90d708bc16c61615a6a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158717"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804453"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate リソースの種類
 
@@ -30,12 +30,12 @@ ms.locfileid: "30158717"
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |content|Binary|Windows Symantec コード署名証明書が生データ形式で表示されます。|
-|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
+|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
 |password|String|.pfx ファイルに必要なパスワードを指定します。|
-|subjectName|String|証明書のサブジェクト名。|
+|subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
-|issuerName|String|証明書の発行者名。|
-|会社|String|証明書の発行者の値。|
+|issuerName|文字列|証明書の発行者名。|
+|会社|文字列|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploaddatetime|DateTimeOffset|Symantec cert としての CodeSigning cert の種類。|
 
@@ -65,6 +65,7 @@ ms.locfileid: "30158717"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

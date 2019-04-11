@@ -4,12 +4,12 @@ description: windowsUniversalAppXContainedApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3bbc7c82e86a97180b96cb421fa8a593e3bed73
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cdafd5c9d80d6001533925d1c8f3e4188283fae9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977584"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803494"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>windowsUniversalAppXContainedApp の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Win32 アプリを検出するためのファイルまたはフォ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afa4bd087d5b703da41f7fa44b74b3e9e16e80a3
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: e899a9caa5e4f21292ec56c5595bc77d3b68bcc2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570705"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803249"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection リソースの種類
 
@@ -26,11 +26,11 @@ Win32 アプリを検出するためのファイルまたはフォルダーの�
 |プロパティ|型|説明|
 |:---|:---|:---|
 |path|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーのパス|
-|fileorfoldername|String|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前|
+|fileorfoldername|文字列|Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前|
 |check32BitOn64System|Boolean|このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 可能な値は `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB` です。|
+|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 可能な値は、`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`、`doesNotExist` です。|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|ファイルまたはフォルダーの検出のための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
-|detectionValue|String|ファイルまたはフォルダーの検出値|
+|detectionValue|文字列|ファイルまたはフォルダーの検出値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -53,6 +53,7 @@ Win32 アプリを検出するためのファイルまたはフォルダーの�
   "detectionValue": "String"
 }
 ```
+
 
 
 

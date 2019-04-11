@@ -4,12 +4,12 @@ description: 複合設定の定義を表すエンティティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47302a9f751662bdb8b51e70a9686ce9e8870062
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a73dfc03e07860efb025af722577c6557f8094bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524065"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804516"
 ---
 # <a name="devicemanagementcomplexsettingdefinition-resource-type"></a>devicemanagementcomplexsettingdefinition リソースの種類
 
@@ -26,10 +26,10 @@ ms.locfileid: "31524065"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementcomplexsettingdefinitions のリスト](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)コレクション|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementcomplexsettingdefinition の取得](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementcomplexsettingdefinition の作成](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|新しい[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトを作成します。|
+|[devicemanagementcomplexsettingdefinition の取得](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md)|[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementcomplexsettingdefinition の作成](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md)|[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|新しい[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトを作成します。|
 |[devicemanagementcomplexsettingdefinition の削除](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md)|なし|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)を削除します。|
-|[devicemanagementcomplexsettingdefinition の更新](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementcomplexsettingdefinition の更新](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md)|[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -89,8 +89,6 @@ ms.locfileid: "31524065"
   ]
 }
 ```
-
-
 
 
 

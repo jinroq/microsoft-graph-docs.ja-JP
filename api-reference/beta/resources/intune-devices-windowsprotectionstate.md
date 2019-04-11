@@ -4,12 +4,12 @@ description: デバイス保護状態エンティティ。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebf798a41e5cbab27fab849cdead8a288a782e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ecdc3ab743502ff4aef78fa8923248399ce16f4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148315"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803102"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsprotectionstate リソースの種類
 
@@ -29,22 +29,22 @@ ms.locfileid: "30148315"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
-|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか、または使用できない|
-|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|ブール値|リアルタイム保護が有効になっているかどうか。|
-|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効になっているかどうか。|
-|quickscanoverdue 超過|ブール値|クイックスキャンの期限が過ぎたかどうか。|
-|fullscanoverdue|ブール値|完全スキャンの期限が過ぎたかどうか。|
-|signatureupdateoverdue|ブール値|署名が古くなっているかどうか|
-|rebootRequired|ブール値|再起動が必要かどうか|
-|fullscanrequired|ブール値|フルスキャンが必要かどうか。|
-|engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
-|signatureversion|String|現在のマルウェア定義バージョン|
-|antiMalwareVersion|String|現在のマルウェア対策バージョン|
+|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか、または使用できない|
+|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 可能な値は `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical` です。|
+|realTimeProtectionEnabled|Boolean|リアルタイム保護が有効になっているかどうか。|
+|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効になっているかどうか。|
+|quickscanoverdue 超過|Boolean|クイックスキャンの期限が過ぎたかどうか。|
+|fullscanoverdue|Boolean|完全スキャンの期限が過ぎたかどうか。|
+|signatureupdateoverdue|Boolean|署名が古くなっているかどうか|
+|rebootRequired|Boolean|再起動が必要かどうか|
+|fullscanrequired|Boolean|フルスキャンが必要かどうか。|
+|engineVersion|文字列|現在のエンドポイント保護エンジンのバージョン|
+|signatureversion|文字列|現在のマルウェア定義バージョン|
+|antiMalwareVersion|文字列|現在のマルウェア対策バージョン|
 |lastquickscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
 |lastfullscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
-|lastquickscansignatureversion|String|最終クイックスキャン署名バージョン|
-|lastfullscansignatureversion|String|前回のフルスキャン署名バージョン|
+|lastquickscansignatureversion|文字列|最終クイックスキャン署名バージョン|
+|lastfullscansignatureversion|文字列|前回のフルスキャン署名バージョン|
 |lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -83,6 +83,7 @@ ms.locfileid: "30148315"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

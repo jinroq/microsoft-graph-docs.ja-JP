@@ -4,12 +4,12 @@ description: '[ホーム] ボタンを表示します。[ホーム] ボタンを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a721699d932cd3874d38d3f55e628ff0110c7f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc84f8eabbb1db68a48cdc940a522aba18479ff9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167075"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802556"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>edgeHomeButtonLoadsStartPage リソースの種類
 
@@ -41,6 +41,7 @@ ms.locfileid: "30167075"
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
+
 
 
 

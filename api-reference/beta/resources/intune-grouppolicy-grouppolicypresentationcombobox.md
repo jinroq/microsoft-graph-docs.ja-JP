@@ -4,12 +4,12 @@ description: admx comboBox 要素と admx テキスト要素を表します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 024e0203bb03a5d60c822d155706245c74070d85
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83355dfc472945b0dd647622860d6304b01d716f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175067"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801072"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>grouppolicypresentationcombobox リソースの種類
 
@@ -34,11 +34,11 @@ admx comboBox 要素と admx テキスト要素を表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|defaultValue|文字列|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は empty です。|
-|助言|String コレクション|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は empty です。|
+|defaultValue|文字列|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
+|助言|String コレクション|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
 |必須|Boolean|パラメーターに値を指定する必要があるかどうかを指定します。 既定値は false です。|
 |maxLength|Int64|パラメーターのテキスト文字の最大数を指定する符号なし整数。 既定値は1023です。|
 
@@ -69,6 +69,7 @@ admx comboBox 要素と admx テキスト要素を表します。
   "maxLength": 1024
 }
 ```
+
 
 
 
