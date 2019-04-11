@@ -4,12 +4,12 @@ description: 共有の Apple デバイスのアクションの結果からユー
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 368a7acc2fd90e79b3ed1361220dd70f722cd217
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 90dec4f79d44d4441d23bdba649ddeb3caa311a7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173242"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776816"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30173242"
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
+|startDateTime|DateTimeOffset|アクションが開始された時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承。|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
 |userPrincipalName|String|削除するユーザーのユーザー プリンシパル名|
 
@@ -51,6 +51,7 @@ ms.locfileid: "30173242"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

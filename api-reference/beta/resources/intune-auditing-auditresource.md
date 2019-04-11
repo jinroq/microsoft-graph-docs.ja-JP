@@ -4,12 +4,12 @@ description: 監査のリソースのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f22ace5fa4c381584325ffc8434f0e09faaaaeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 20c39cc5138be5c731bc34b1e13f8536e7581c40
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156015"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775962"
 ---
 # <a name="auditresource-resource-type"></a>auditResource リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "30156015"
 |:---|:---|:---|
 |displayName|String|表示名。|
 |modifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) コレクション|変更されたプロパティの一覧。|
-|type|文字列|監査のリソースの種類。|
+|type|String|監査のリソースの種類。|
 |resourceId|文字列型 (String)|監査のリソースの ID。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -53,6 +53,7 @@ ms.locfileid: "30156015"
   "resourceId": "String"
 }
 ```
+
 
 
 

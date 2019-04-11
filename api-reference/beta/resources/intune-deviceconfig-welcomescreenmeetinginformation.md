@@ -4,12 +4,12 @@ description: ウェルカム画面の会議情報に指定できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 296b2e90542c9042e04c4153e9314872b530c451
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8b967a654bfda0a0afe44496654412496984e356
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158374"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775864"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30158374"
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
 |shoのガントチャート izerandtimeonly|1-d|開催者と時間のみを表示します。|
 |shoのガントチャート izerandtimeandsubject|pbm-2|開催者、時間、および件名を表示する (個人の会議の場合は、件名が非表示)。|
+
 
 
 

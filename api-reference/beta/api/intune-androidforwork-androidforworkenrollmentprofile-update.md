@@ -4,12 +4,12 @@ description: androidForWorkEnrollmentProfile オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e276325bfc67651ec71cde49fef3705b77567911
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b2bbb90bda3e9e3306fc71be5ce38d6605f0d306
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972103"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776886"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile の更新
 
@@ -50,13 +50,13 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|accountId|String|登録プロファイルが属するテナント GUID。|
-|id|String|登録プロファイルの一意の GUID。|
+|accountId|文字列|登録プロファイルが属するテナント GUID。|
+|id|文字列|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|description|String|登録プロファイルの説明。|
+|説明|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
-|tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
+|tokenValue|文字列|この登録プロファイル用に最後に作成されたトークンの値。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
 |qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
@@ -119,6 +119,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f07965ce3929a74d6596ed708cc7045437921a7a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: edb921a12ca932f5c10d22120a065fb46f2bb8d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775746"
 ---
 # <a name="platform-enum-type"></a>プラットフォーム列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30148175"
 |ws|1/3|Windows デバイスプラットフォーム|
 |windowsMobile|2/4|windowsmobile デバイスプラットフォーム|
 |macOS|5|Mac デバイスプラットフォーム|
+
 
 
 

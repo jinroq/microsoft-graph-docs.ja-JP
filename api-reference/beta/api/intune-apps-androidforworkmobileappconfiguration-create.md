@@ -4,12 +4,12 @@ description: 新しい androidForWorkMobileAppConfiguration オブジェクト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15a8fb8d1b1485eae922bf302dd76fcc786a6fd3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 12a04a83dcee91e67716aa6f44a4ec0245acd33e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958649"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775528"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>androidForWorkMobileAppConfiguration を作成する
 
@@ -52,14 +52,14 @@ POST /deviceAppManagement/mobileAppConfigurations
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
-|roleScopeTagIds|String collection|このアプリ構成エンティティのスコープタグのリスト。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|roleScopeTagIds|String コレクション|このアプリ構成エンティティのスコープタグのリスト。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
-|description|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|説明|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |displayName|String|デバイス構成について管理者が指定した名前。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |version|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |packageId|String|Android For Work アプリの構成パッケージ id。|
-|payloadJson|String|Android For Work アプリ構成 JSON ペイロード。|
+|payloadJson|文字列|Android For Work アプリ構成 JSON ペイロード。|
 |permissionactions|[androidpermissionaction](../resources/intune-apps-androidpermissionaction.md)コレクション|Android アプリのアクセス許可と、それに対応するアクセス許可アクションのリスト。|
 
 
@@ -131,6 +131,7 @@ Content-Length: 732
   ]
 }
 ```
+
 
 
 

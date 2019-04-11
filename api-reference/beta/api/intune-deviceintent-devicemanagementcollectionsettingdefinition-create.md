@@ -4,12 +4,12 @@ description: 新しい devicemanagementcollectionsettingdefinition オブジェ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9f484bf5bfccd0600b735d2f826a742784e87ca
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2367ebc5206ee64fe3b2fe2fd266bef26fe08f6f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522567"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776830"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>devicemanagementcollectionsettingdefinition の作成
 
@@ -145,8 +145,6 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
-
 
 
 

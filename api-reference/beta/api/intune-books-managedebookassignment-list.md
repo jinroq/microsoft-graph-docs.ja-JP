@@ -4,12 +4,12 @@ description: managedEBookAssignment オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed2fdff885f57dd38690844a2f9a09e26177e775
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 48ca17df2ee55648ff0cda65a561a7220d0e50b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980958"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774891"
 ---
 # <a name="list-managedebookassignments"></a>managedEBookAssignments のリスト
 
@@ -77,6 +77,7 @@ Content-Length: 300
   ]
 }
 ```
+
 
 
 

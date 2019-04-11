@@ -4,12 +4,12 @@ description: 帯域幅の営業時間とパーセンテージの種類
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba15df46075e5cbea1a2eab8a798c333f4a60ae6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1115029cd7106f19a2a8a706540278a5282ca18d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178116"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776256"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>deliveryOptimizationBandwidthBusinessHoursLimit リソースの種類
 
@@ -46,6 +46,7 @@ ms.locfileid: "30178116"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
 
 
 

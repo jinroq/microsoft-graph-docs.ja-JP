@@ -4,12 +4,12 @@ description: intuneBrandingProfile オブジェクトのプロパティを更新
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8a805e8878dbd41493c550647ed9e038c320b13
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976660"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776977"
 ---
 # <a name="update-intunebrandingprofile"></a>intuneBrandingProfile の更新
 
@@ -51,18 +51,18 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|プロファイルキー|
-|profileName|String|プロファイルの名前|
-|profiledescription|String|プロファイルの説明|
+|profileName|文字列|プロファイルの名前|
+|profiledescription|文字列|プロファイルの説明|
 |isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|String|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|文字列|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
 |showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
@@ -172,6 +172,7 @@ Content-Length: 1377
   }
 }
 ```
+
 
 
 

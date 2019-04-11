@@ -4,12 +4,12 @@ description: Windows 情報保護用デスクトップ アプリ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f911c48f9d22b080b36c4596db1a18b30d1cc55e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e77b05ce608eb57a8b84c8c0da6434b8ca411ab
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775787"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp リソースの種類
 
@@ -25,13 +25,13 @@ Windows 情報保護用デスクトップ アプリ
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|アプリの表示名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
-|説明|文字列|アプリの説明。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
+|displayName|String|アプリの表示名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
+|説明|String|アプリの説明。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
 |publisherName|String|[windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) から継承される発行元名|
-|productName|String|製品名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
+|productName|文字列|製品名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
 |denied|ブール型 (Boolean)|true の場合、アプリは拒否された保護または除外です。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
-|binaryName|String|バイナリの名前。|
-|binaryVersionLow|String|下位のバイナリ バージョン。|
+|binaryName|文字列|バイナリの名前。|
+|binaryVersionLow|文字列|下位のバイナリ バージョン。|
 |binaryVersionHigh|文字列型 (String)|上位のバイナリ バージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -57,6 +57,7 @@ Windows 情報保護用デスクトップ アプリ
   "binaryVersionHigh": "String"
 }
 ```
+
 
 
 

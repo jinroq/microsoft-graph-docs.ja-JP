@@ -4,12 +4,12 @@ description: 新しい iosGeneralDeviceConfiguration オブジェクトを作成
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f24f0eaac3758640770879bcbc442ad60fa246c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e97b15f484511d3bbf333014ed6804e603a0cf09
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776543"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
@@ -53,10 +53,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountBlockModification|Boolean|デバイスが監視モードのときに、アカウントの変更を許可するかどうかを示します。|
@@ -141,7 +141,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |kioskModeBlockVolumeButtons|Boolean|キオスク モード中にボリューム ボタンをブロックするかどうかを示します。|
 |kioskModeAllowZoomSettings|Boolean|キオスク モード時のズーム設定へのアクセスを許可するかどうかを示します。|
 |kioskModeAppStoreUrl|String|キオスク モード用に使用するアプリへの、App Store 内の URL。 KioskModeManagedAppId が不明な場合に使用します。|
-|kioskModeBuiltInAppId|String|キオスクモード用に使用する組み込みアプリの ID。 KioskModeManagedAppId および KioskModeAppStoreUrl が設定されていない場合に使用します。|
+|kioskModeBuiltInAppId|文字列|キオスクモード用に使用する組み込みアプリの ID。 KioskModeManagedAppId および KioskModeAppStoreUrl が設定されていない場合に使用します。|
 |kioskModeRequireAssistiveTouch|Boolean|キオスク モード時に Assistive Touch が必要かどうかを示します。|
 |kioskModeRequireColorInversion|Boolean|キオスク モード時に色反転が必要かどうかを示します。|
 |kioskModeRequireMonoAudio|Boolean|キオスク モード時にモノラル オーディオが必要かどうかを示します。|
@@ -185,7 +185,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |safariBlockPopups|Boolean|Safari 内でポップアップをブロックするかどうかを示します。|
 |safariBlocked|Boolean|ユーザーによる Safari の使用を禁止するかどうかを示します。|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Safari の Cookie の設定。 可能な値は、`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways` です。|
-|safariManagedDomains|String collection|ここに記載されているパターンに一致する URL は管理対象と見なされます。|
+|safariManagedDomains|String コレクション|ここに記載されているパターンに一致する URL は管理対象と見なされます。|
 |safariPasswordAutoFillDomains|String コレクション|ユーザーは、ここに記載されているパターンに一致する URL からのみ、パスワードを Safari に保存できます。 監視モードのデバイスに適用されます (iOS 9.3 以降)。|
 |safariRequireFraudWarning|Boolean|Safari での不正行為の警告を必要とするかどうかを示します。|
 |screenCaptureBlocked|Boolean|ユーザーがスクリーンショットを撮ることを禁止するかどうかを示します。|
@@ -749,6 +749,7 @@ Content-Length: 9277
   "contactsAllowUnmanagedToManagedRead": true
 }
 ```
+
 
 
 

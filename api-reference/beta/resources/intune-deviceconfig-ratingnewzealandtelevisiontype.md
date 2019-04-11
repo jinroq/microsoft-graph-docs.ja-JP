@@ -4,12 +4,12 @@ description: 新しいニュージーランドのテレビコンテンツの評�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f1ccdf774fb9eac565410318cd892e5a47c9dcb2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144598"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776263"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30144598"
 |元帳|pbm-2|G 分類は、14の下の子に悪影響を与える可能性がある材料を除外します。|
 |parentalguidance|1/3|pgr 分類は、親とガーディアンによる、若い閲覧者の監督を促進します。|
 |保護者|2/4|AO 分類は、子には適していません|
+
 
 
 

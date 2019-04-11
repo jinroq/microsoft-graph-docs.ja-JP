@@ -4,12 +4,12 @@ description: deviceConfigurationConflictSummary オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfe4b4d9925b64e35a5e79fad5f1f124350a1ee4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a86283e088a4ef28beb1c0139d3650877ed0d651
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989240"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775122"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>deviceConfigurationConflictSummary の更新
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |:---|:---|:---|
 |競合する devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
 |id|String|競合しているポリシーのセットの id。 この id は、アンダースコアで区切られた辞書順で競合しているすべてのポリシーの id です。|
-|contributingSettings|String collection|指定されたポリシーと競合する設定のセット|
+|contributingSettings|String コレクション|指定されたポリシーと競合する設定のセット|
 |deviceCheckinsImpacted|Int32|競合するポリシーと設定によって影響を受けるチェックインの数|
 
 
@@ -108,6 +108,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: encryptionreadinessstate 列挙型
-description: 暗号化の準備状態
+description: 暗号化の対応状態
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14aee643f6b0887d7f764aa43402e45668e8c9ba
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 45ececca88487d7191e3e3469e3ca16b4e602ea2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178002"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775094"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>encryptionreadinessstate 列挙型
 
@@ -17,13 +17,14 @@ ms.locfileid: "30178002"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-暗号化の準備状態
+暗号化の対応状態
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
 |notready|.0|使用不可能|
 |しだい|1-d|準備完了|
+
 
 
 

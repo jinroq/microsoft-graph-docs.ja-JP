@@ -4,12 +4,12 @@ description: userInstallStateSummary オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c0259bc827d3b8afa8d104353d511a837e8609b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 90c7edec0a2a8b93d12da9ea10d00426b060097e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971620"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777138"
 ---
 # <a name="list-userinstallstatesummaries"></a>userInstallStateSummaries のリスト
 
@@ -77,6 +77,7 @@ Content-Length: 295
   ]
 }
 ```
+
 
 
 

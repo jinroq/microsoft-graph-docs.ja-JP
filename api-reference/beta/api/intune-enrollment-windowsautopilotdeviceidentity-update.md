@@ -4,12 +4,12 @@ description: windowsAutopilotDeviceIdentity オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4132ebc9d93eae71712b04479c1139e1942a9979
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8ed1e8159b91aed11cc631e26aa02d79dbb4cce4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958733"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775906"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>windowsAutopilotDeviceIdentity の更新
 
@@ -55,21 +55,22 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |deploymentprofileの状態|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows 自動操縦デバイスのプロファイル割り当て状態。 可能な値は、`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed` です。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当て Windows 自動操縦デバイスの詳細な状態。 可能な値は、`none`、`hardwareRequirementsNotMet` です。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|プロファイル Windows 自動操縦デバイスの時間を設定します。|
-|orderIdentifier|String|Windows 自動操縦デバイスの注文識別子です。|
-|purchaseOrderIdentifier|String|Windows 自動操縦デバイスの注文 id。|
-|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
+|orderIdentifier|文字列|Windows 自動操縦デバイスの注文識別子-非推奨|
+|grouptag|文字列|Windows 自動操縦デバイスのグループタグ。|
+|purchaseOrderIdentifier|文字列|Windows 自動操縦デバイスの注文 id。|
+|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|manufacturer|String|Windows 自動操縦デバイスの Oem メーカー。|
-|model|String|Windows 自動操縦デバイスのモデル名です。|
+|manufacturer|文字列|Windows 自動操縦デバイスの Oem メーカー。|
+|model|文字列|Windows 自動操縦デバイスのモデル名です。|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自動操縦デバイスの Intune 登録状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
 |lastContactedDateTime|DateTimeOffset|Intune 前回の接続 Windows 自動操縦デバイスの日時。|
-|addressableusername|String|アドレス指定可能なユーザー名。|
+|addressableusername|文字列|アドレス指定可能なユーザー名。|
 |userPrincipalName|String|ユーザープリンシパル名。|
 |resourceName|String|リソース名。|
-|skuNumber|String|SKU 番号|
-|systemfamily|String|システムファミリ|
-|azureActiveDirectoryDeviceId|String|AAD デバイス ID|
-|manageddeviceid|String|管理対象デバイス ID|
+|skuNumber|文字列|SKU 番号|
+|systemfamily|文字列|システムファミリ|
+|azureActiveDirectoryDeviceId|文字列|AAD デバイス ID|
+|manageddeviceid|文字列|管理対象デバイス ID|
 
 
 
@@ -83,7 +84,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 1001
+Content-length: 1035
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -91,6 +92,7 @@ Content-length: 1001
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -113,7 +115,7 @@ Content-length: 1001
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1084
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -122,6 +124,7 @@ Content-Length: 1050
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -138,6 +141,7 @@ Content-Length: 1050
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

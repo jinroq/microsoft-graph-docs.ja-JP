@@ -4,12 +4,12 @@ description: circularGeofenceManagementCondition オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 651bd899e100d9ece72059f69685a42b0101cfea
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fa9c306ad3e79967223af5c55a628c84c34978b4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967203"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776571"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>circularGeofenceManagementCondition の更新
 
@@ -51,10 +51,10 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|uniqueName|文字列|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |displayName|String|管理条件の管理者定義の名前。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|description|String|管理条件の管理者定義の説明。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|説明|String|管理条件の管理者定義の説明。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側を生成しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |modifiedDateTime|DateTimeOffset|管理条件が最後に変更された時刻。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |eTag|String|管理条件の ETag。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
@@ -116,6 +116,7 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

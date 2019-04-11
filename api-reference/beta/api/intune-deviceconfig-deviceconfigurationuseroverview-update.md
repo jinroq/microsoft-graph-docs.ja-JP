@@ -4,12 +4,12 @@ description: deviceConfigurationUserOverview オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc846f276c87ed242c561dff923f111aff53d416
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b736598a6624545fe315a9dcb601b08359ddf658
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973377"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775171"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>deviceConfigurationUserOverview の更新
 
@@ -115,6 +115,7 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
+
 
 
 

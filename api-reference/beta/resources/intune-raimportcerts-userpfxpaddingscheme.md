@@ -4,12 +4,12 @@ description: 暗号化プロバイダーで使用される埋め込み方式の�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b90edec7aa6d6051fbe2e4e9cb53c38752750239
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175382"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776277"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userpfxps/スキーム列挙型
 
@@ -28,7 +28,6 @@ ms.locfileid: "30175382"
 |oaepSha256|1/3|まだ文書化されていません|
 |oaepSha384|2/4|まだ文書化されていません|
 |oaepSha512|5|まだ文書化されていません|
-
 
 
 

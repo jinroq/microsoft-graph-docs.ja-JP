@@ -4,12 +4,12 @@ description: androidmanagedstoreappconfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26ee85abe0f2ab9c841b1705007eb8936a61022f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 25d49b8837956b2b5c59992229976bf5ed083a35
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977990"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776760"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>androidmanagedstoreappconfiguration の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

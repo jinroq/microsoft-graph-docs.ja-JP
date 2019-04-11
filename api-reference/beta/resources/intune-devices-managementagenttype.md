@@ -4,12 +4,12 @@ description: 管理エージェントの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8a40b8d6951c13da49766430fdd7fb303cbba0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172542"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775304"
 ---
 # <a name="managementagenttype-enum-type"></a>managementagenttype 列挙型
 
@@ -34,6 +34,7 @@ ms.locfileid: "30172542"
 |jamf|32|デバイス属性は、Jamf から取得されます。|
 |googleCloudDevicePolicyController|64|デバイスは Google の CloudDPC によって管理されています。|
 |microsoft365ManagedMdm|258|このデバイスは、Microsoft 365 によって Intune によって管理されます。|
+
 
 
 
