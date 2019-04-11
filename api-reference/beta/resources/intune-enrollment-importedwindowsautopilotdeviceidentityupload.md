@@ -4,12 +4,12 @@ description: アップロードを使用して windows 自動操縦デバイス�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ab6152a4347a7694e1ca6995fa683bda29b7206
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5267125b660e2700f31b7ff06e678bf9e1649e0c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169637"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786365"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>importedWindowsAutopilotDeviceIdentityUpload リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30169637"
 |[importedWindowsAutopilotDeviceIdentityUpload を作成する](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|新しい[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを作成します。|
 |[importedWindowsAutopilotDeviceIdentityUpload の削除](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md)|なし|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)を削除します。|
 |[importedWindowsAutopilotDeviceIdentityUpload の更新](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトのプロパティを更新します。|
-|[autopilotDeviceStream 関数](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|自動操縦装置ストリームを使用して、アップロード要求を作成します。|
+|[autopilotDeviceStream 関数](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|文字列|自動操縦装置ストリームを使用して、アップロード要求を作成します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -36,7 +36,7 @@ ms.locfileid: "30169637"
 |createdDateTimeUtc|DateTimeOffset|エンティティが作成された日時。|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|アップロードの状態。 可能な値は、`noUpload`、`pending`、`complete`、`error` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) コレクション|このアップロードの一部としてのすべての自動操縦デバイスのコレクションです。|
@@ -57,6 +57,7 @@ ms.locfileid: "30169637"
   "status": "String"
 }
 ```
+
 
 
 

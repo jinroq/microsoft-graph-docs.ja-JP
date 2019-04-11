@@ -4,12 +4,12 @@ description: OMA 設定の Base64 定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f6eae88e7158d5fd8d09caadda9fee6778182a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 33488e3b6500056c0f183d5e219e5f5ec489c178
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166648"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787072"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 リソースの種類
 
@@ -51,6 +51,7 @@ OMA 設定の Base64 定義。
   "value": "String"
 }
 ```
+
 
 
 

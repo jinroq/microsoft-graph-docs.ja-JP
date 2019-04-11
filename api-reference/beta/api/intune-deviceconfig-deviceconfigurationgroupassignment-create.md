@@ -4,12 +4,12 @@ description: 新しい deviceConfigurationGroupAssignment オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dc2a7895e33c8d9ecf0b5bc0a47e202dfed0b69
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f1c7edbe6e646647ffa9887ae49a16539c451e20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981742"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785728"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>deviceConfigurationGroupAssignment を作成する
 
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|targetgroupid|String|デバイス構成を対象としている AAD グループの Id。|
+|targetgroupid|文字列|デバイス構成を対象としている AAD グループの Id。|
 |excludeGroup|Boolean|このグループを除外する必要があるかどうかを示します。 グループが含まれる既定値|
 
 
@@ -97,6 +97,7 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
 
 
 

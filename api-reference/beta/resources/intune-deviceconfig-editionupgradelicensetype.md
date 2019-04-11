@@ -4,12 +4,12 @@ description: エディションアップグレードライセンスの種類
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab47ffc46dbaecd833830d797c8b341688b8dbec
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d39e625d24d6ab8486bc281be957ef8728d4403b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155784"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786099"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30155784"
 |productKey|.0|プロダクトキーの種類|
 |licensefile|1-d|ライセンスファイルの種類|
 |notConfigured|pbm-2|NotConfigured|
+
 
 
 

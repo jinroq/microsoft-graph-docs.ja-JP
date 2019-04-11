@@ -4,12 +4,12 @@ description: Win32 アプリを検出するための PowerShell スクリプト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ca55a55ea17dcd032204dcb786ea07a9801f4674
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168524"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785644"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection リソースの種類
 
@@ -25,9 +25,9 @@ Win32 アプリを検出するための PowerShell スクリプトのプロパ�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enforceSignatureCheck|ブール値|署名チェックを適用するかどうかを示す値|
-|runAs32Bit|ブール値|このスクリプトを32ビットとして実行する必要があるかどうかを示す値。|
-|scriptcontent|String|Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容|
+|enforceSignatureCheck|Boolean|署名チェックを適用するかどうかを示す値|
+|runAs32Bit|Boolean|このスクリプトを32ビットとして実行する必要があるかどうかを示す値。|
+|scriptcontent|文字列|Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -47,6 +47,7 @@ Win32 アプリを検出するための PowerShell スクリプトのプロパ�
   "scriptContent": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: notificationMessageTemplate オブジェクトのプロパティを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 398a2738ae7f6c71a85ff565ae0bb5b4290e3918
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4054a9fb11621ba9d8c08ae1e5d63dbb2adcf215
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974497"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786407"
 ---
 # <a name="update-notificationmessagetemplate"></a>notificationMessageTemplate の更新
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 372
   ]
 }
 ```
+
 
 
 

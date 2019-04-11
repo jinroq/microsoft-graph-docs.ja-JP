@@ -4,12 +4,12 @@ description: defendersecurityセンター itcontactdisplay に指定できる値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9a91b83f14226cd3272939deb99139e312b1689
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3baa7b83679a94b67fdccc6172eb81c7b616a9b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170036"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789480"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defendersecurityセンター itcontactdisplaytype 列挙型
 
@@ -22,10 +22,11 @@ defendersecurityセンター itcontactdisplay に指定できる値
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|.0|未構成|
+|notConfigured|.0|Not Configured|
 |displayinappandinnotifications|1-d|アプリと通知に表示|
 |displayonlyinapp|pbm-2|アプリにのみ表示する|
 |displayonlyinnotifications|1/3|通知にのみ表示する|
+
 
 
 

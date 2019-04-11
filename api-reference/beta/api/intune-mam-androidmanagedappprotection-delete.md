@@ -4,12 +4,12 @@ description: androidManagedAppProtection を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4dc32cf19e303f11fb9e00ec0a652d7b2189a680
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 61e22ea3df086d6baf910592bf9982ee5e868d50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981763"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788045"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Delete androidManagedAppProtection
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

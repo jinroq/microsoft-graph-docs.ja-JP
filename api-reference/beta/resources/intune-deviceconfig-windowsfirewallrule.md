@@ -4,12 +4,12 @@ description: Windows ファイアウォールを介したトラフィックを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3753eeade1dce32e4332becd7575710a2f6ea1a
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 77df7da501aee80b534accbe4c0d33dcf0e8df63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631575"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788318"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule リソースの種類
 
@@ -23,14 +23,14 @@ Windows ファイアウォールを介したトラフィックを制御するル
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ルールの表示名。 一意である必要はありません。|
-|description|String|ルールの説明。|
-|パッケージ efamilyname|String|ファイアウォールルールの影響を受ける Microsoft Store アプリケーションのパッケージファミリー名。|
-|パス|String|ファイアウォールルールの影響を受けるアプリの完全なファイルパス。|
+|説明|String|ルールの説明。|
+|パッケージ efamilyname|文字列|ファイアウォールルールの影響を受ける Microsoft Store アプリケーションのパッケージファミリー名。|
+|パス|文字列|ファイアウォールルールの影響を受けるアプリの完全なファイルパス。|
 |serviceName|String|アプリケーションではなく、サービスがトラフィックを送受信している場合に使用される名前。|
 |プロトコール|Int32|0-255 IP プロトコルを表す番号 (TCP = 6、UDP = 17)。 指定しない場合、既定値は All です。 有効な値は 0 ~ 255|
-|localPortRanges|String collection|ローカルポート範囲のリスト。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
-|remotePortRanges|String collection|リモートポート範囲の一覧。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
-|localaddressranges|String collection|ルールでカバーされているローカルアドレスのリスト。 有効なトークンは次のとおりです。
+|localPortRanges|String コレクション|ローカルポート範囲のリスト。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
+|remotePortRanges|String コレクション|リモートポート範囲の一覧。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
+|localaddressranges|String コレクション|ルールでカバーされているローカルアドレスのリスト。 有効なトークンは次のとおりです。
 - "*" はローカルアドレスを示します。 指定する場合は、このトークンのみが含まれている必要があります。
 - サブネットは、サブネットマスクまたはネットワークプレフィックス表記のどちらかを使用して指定できます。 サブネットマスクもネットワークプレフィックスも指定されていない場合、サブネットマスクは既定で255.255.255.255 になります。
 - 有効な IPv6 アドレス。
@@ -91,6 +91,7 @@ Windows ファイアウォールを介したトラフィックを制御するル
   "localUserAuthorizations": "String"
 }
 ```
+
 
 
 

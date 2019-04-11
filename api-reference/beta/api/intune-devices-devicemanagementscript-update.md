@@ -4,12 +4,12 @@ description: devicemanagementscript オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a46d2fe4d138d6edcefa6d5f633afc54926336e2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aac5c1592dd9e18f791f93829192dc9bfe2125f3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962583"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785805"
 ---
 # <a name="update-devicemanagementscript"></a>devicemanagementscript の更新
 
@@ -50,9 +50,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプトの一意識別子。|
+|id|文字列|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
-|description|String|デバイス管理スクリプトの省略可能な説明です。|
+|説明|String|デバイス管理スクリプトの省略可能な説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
 |scriptcontent|Binary|スクリプトの内容。|
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日付と時刻。|
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String collection|この powershellscript インスタンスの範囲タグ id のリスト。|
+|roleScopeTagIds|String コレクション|この powershellscript インスタンスの範囲タグ id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 
@@ -122,6 +122,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

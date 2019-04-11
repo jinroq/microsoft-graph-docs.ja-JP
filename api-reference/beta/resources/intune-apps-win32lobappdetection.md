@@ -4,12 +4,12 @@ description: Win32 アプリを検出するための基本クラス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01dd31307cacce3a2123516d21e9667ca22e5861
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 88a7e0d332def91fb9308058a48e9ba30c0cfa81
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172528"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787541"
 ---
 # <a name="win32lobappdetection-resource-type"></a>win32LobAppDetection リソースの種類
 
@@ -38,6 +38,7 @@ Win32 アプリを検出するための基本クラス
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
+
 
 
 

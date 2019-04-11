@@ -4,12 +4,12 @@ description: 月の週に更新プログラムのインストールをスケジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f06f63672a704d1d69ae62b353b025b8b78e063
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2b9e1a65902a6ebf78c122eb06d6a4ba70e63e7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147027"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788213"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30147027"
 |thirdWeek|2/4|月の第3週目に更新プログラムのインストールをスケジュールする|
 |4分の1週|~|月の第4週に更新プログラムのインストールをスケジュールする|
 |全週|約|月の毎週、更新プログラムのインストールをスケジュールする|
+
 
 
 

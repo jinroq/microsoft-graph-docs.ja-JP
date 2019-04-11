@@ -4,12 +4,12 @@ description: Windows Defender の最後のスキャン結果
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 094880247ee2612d0066bb44aa6f6bb581f7efe5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b54feb06e18e0ea772ab69e2ed3bd138564cfc08
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148644"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789011"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult リソースの種類
 
@@ -27,7 +27,7 @@ Windows Defender の最後のスキャン結果
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
+|startDateTime|DateTimeOffset|アクションが開始された時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承。|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承|
 |scanType|文字列型 (String)|スキャンの種類。フル スキャンまたはクイック スキャン|
 
@@ -51,6 +51,7 @@ Windows Defender の最後のスキャン結果
   "scanType": "String"
 }
 ```
+
 
 
 

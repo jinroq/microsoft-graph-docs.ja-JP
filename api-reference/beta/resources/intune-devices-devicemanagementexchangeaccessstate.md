@@ -4,12 +4,12 @@ description: デバイスの Exchange アクセス状態。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15b0dd7b99d8395b7c66171969bad1cb79bce0b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c3cbe04dee84418d43dc610253522174caad9b2f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159585"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788493"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>devicemanagementexchangeaccessstate 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30159585"
 |れる|pbm-2|デバイスが Exchange にアクセスできる|
 |ブロック|1/3|Exchange でデバイスがブロックされている|
 |隔離|2/4|Exchange でのデバイスの検疫|
+
 
 
 

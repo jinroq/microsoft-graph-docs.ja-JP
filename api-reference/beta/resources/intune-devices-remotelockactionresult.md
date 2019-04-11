@@ -4,12 +4,12 @@ description: ロック解除するためのピンが含まれるアクション�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f90cbc46ca4bc9476ad5d9386581385ae7354261
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b16a99c793d60de04201fc057a58da122c83fd6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159025"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788521"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30159025"
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
+|startDateTime|DateTimeOffset|アクションが開始された時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承。|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承|
 |unlockPin|文字列型 (String)|クライアントをロック解除するためのピン|
 
@@ -51,6 +51,7 @@ ms.locfileid: "30159025"
   "unlockPin": "String"
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: beginOnboarding アクション
-description: まだ文書化されていません
+description: オンボードを開始する要求。  適切な TeamViewer アカウント情報と組み合わせる必要があります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6548edc23599760e4c4419f32edcf4052fbce7c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 36fa3b2d27bbcad94ad2427c5a248a3ae5360fc8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976373"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789872"
 ---
 # <a name="beginonboarding-action"></a>beginOnboarding アクション
 
@@ -17,7 +17,7 @@ ms.locfileid: "30976373"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+オンボードを開始する要求。  適切な TeamViewer アカウント情報と組み合わせる必要があります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

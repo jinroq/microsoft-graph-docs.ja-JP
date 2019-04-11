@@ -4,12 +4,12 @@ description: termsAndConditionsAssignment エンティティは、特定の使�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 309136805a6d5e41a5aee8e20cc80b6d7665ef66
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9b6bff777bfaf093d1148a584cc8524069304b70
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156064"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788485"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment リソース タイプ
 
@@ -22,11 +22,11 @@ termsAndConditionsAssignment エンティティは、特定の使用条件 (T&C)
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List termsAndConditionsAssignments](../api/intune-companyterms-termsandconditionsassignment-list.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) コレクション|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get termsAndConditionsAssignment](../api/intune-companyterms-termsandconditionsassignment-get.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create termsAndConditionsAssignment](../api/intune-companyterms-termsandconditionsassignment-create.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|新しい [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトを作成します。|
-|[Delete termsAndConditionsAssignment](../api/intune-companyterms-termsandconditionsassignment-delete.md)|なし|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) を削除します。|
-|[Update termsAndConditionsAssignment](../api/intune-companyterms-termsandconditionsassignment-update.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティを更新します。|
+|[termsAndConditionsAssignments のリスト](../api/intune-companyterms-termsandconditionsassignment-list.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) コレクション|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[termsAndConditionsAssignment の取得](../api/intune-companyterms-termsandconditionsassignment-get.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[termsAndConditionsAssignment の作成](../api/intune-companyterms-termsandconditionsassignment-create.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|新しい [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトを作成します。|
+|[termsAndConditionsAssignment の削除](../api/intune-companyterms-termsandconditionsassignment-delete.md)|なし|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) を削除します。|
+|[termsAndConditionsAssignment の更新](../api/intune-companyterms-termsandconditionsassignment-update.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -54,6 +54,7 @@ termsAndConditionsAssignment エンティティは、特定の使用条件 (T&C)
   }
 }
 ```
+
 
 
 

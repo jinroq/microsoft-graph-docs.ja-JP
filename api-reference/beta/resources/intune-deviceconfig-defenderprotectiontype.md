@@ -4,12 +4,12 @@ description: Defender 保護の可能な値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5cd5446aad528b6b4949ad0761351c936f2881e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0a1de3ecd75278db7bcea152deda3bfd48ccd85d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139446"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789585"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderprotectiontype 列挙型
 
@@ -25,6 +25,7 @@ Defender 保護の可能な値
 |自分のもの|.0|デバイスの既定値。意図的ではありません。|
 |使う|1-d|機能をブロックする。|
 |auditmode|pbm-2|機能を有効にし、ログを生成します。|
+
 
 
 

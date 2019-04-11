@@ -4,12 +4,12 @@ description: 新しい remoteAssistancePartner オブジェクトを作成しま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11db25c139f0c1897b65887aa9c428a5069032ef
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7abb090d5bee7eca61b2481d0d396f9b8ade39f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785098"
 ---
 # <a name="create-remoteassistancepartner"></a>remoteAssistancePartner の作成
 
@@ -53,7 +53,7 @@ POST /deviceManagement/remoteAssistancePartners
 |id|String|パートナーの一意識別子。|
 |displayName|String|パートナーの表示名。|
 |onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. 使用可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|現在の TeamViewer connector の状態のわかりやすい説明。 使用可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 
@@ -95,6 +95,7 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: mobileAppInstallStatus オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe31b91c8091d96b44ff0ea9435a3588068919de
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a2cb7b3acedd1e036972380002eaf8795b1a35ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969478"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787002"
 ---
 # <a name="update-mobileappinstallstatus"></a>mobileAppInstallStatus の更新
 
@@ -52,18 +52,18 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceName|String|[デバイス名]|
-|deviceId|String|デバイス ID|
+|deviceName|文字列|[デバイス名]|
+|deviceId|文字列|デバイス ID|
 |lastSyncDateTime|DateTimeOffset|最終同期日時|
 |mobileAppInstallStatusValue|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
-|installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 使用可能な値は、`noAdditionalDetails`、`seeInstallErrorCode`、`seeUninstallErrorCode`、`pendingReboot`、`platformNotApplicable`、`minimumCpuSpeedNotMet`、`minimumLogicalProcessorCountNotMet`、`minimumPhysicalMemoryNotMet`、`minimumOsVersionNotMet`、`minimumDiskSpaceNotMet`、`processorArchitectureNotApplicable` です。|
+|installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|インストールまたはアンインストールの失敗のエラーコード。|
-|osVersion|String|OS のバージョン|
-|osDescription|String|OS の説明|
+|osVersion|文字列|OS のバージョン|
+|osDescription|文字列|OS の説明|
 |userName|String|デバイスのユーザー名|
 |userPrincipalName|String|ユーザー プリンシパル名|
-|displayversion|String|アプリケーションの人間の読み取り可能なバージョン|
+|displayversion|文字列|アプリケーションの人間の読み取り可能なバージョン|
 
 
 
@@ -77,7 +77,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
 Content-type: application/json
-Content-length: 549
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -86,7 +86,7 @@ Content-length: 549
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
+  "installStateDetail": "dependencyFailedToInstall",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -101,7 +101,7 @@ Content-length: 549
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 598
+Content-Length: 604
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -111,7 +111,7 @@ Content-Length: 598
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
+  "installStateDetail": "dependencyFailedToInstall",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -120,6 +120,7 @@ Content-Length: 598
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

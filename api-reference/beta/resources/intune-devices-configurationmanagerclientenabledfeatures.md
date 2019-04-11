@@ -4,12 +4,12 @@ description: 構成マネージャーのクライアントに対応した機能
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed376bc616c26f1ad6e8a3ea06d3898c051e8d0b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7a90b7f0009b4d9bd617b781338ceee3de2f432c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148777"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787926"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures リソースの種類
 
@@ -54,6 +54,7 @@ ms.locfileid: "30148777"
   "officeApps": true
 }
 ```
+
 
 
 

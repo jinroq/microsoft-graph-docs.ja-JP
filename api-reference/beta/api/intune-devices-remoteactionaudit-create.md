@@ -4,12 +4,12 @@ description: 新しい remoteactionaudit オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ce034699478a3e670590e64beea240e0b24e1f9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 820f6acd0d5959eb0c75e2bc0a272ca3ec3e5cf8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971550"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788465"
 ---
 # <a name="create-remoteactionaudit"></a>remoteactionaudit の作成
 
@@ -53,11 +53,11 @@ POST /deviceManagement/remoteActionAudits
 |id|String|レポート Id。|
 |deviceDisplayName|String|Intune デバイス名。|
 |userName|文字列型 (String)|\[非\]推奨 initiatedbyuserprincipalname を代わりに使用してください。|
-|initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
+|initiatedByUserPrincipalName|文字列|デバイスのアクションを開始したユーザーの形式は UPN です。|
 |アクション|[remoteaction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
 |requestdatetime|DateTimeOffset|アクションが発行された日時 (UTC)。|
-|deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
-|deviceIMEI|String|デバイスの IMEI。|
+|deviceOwnerUserPrincipalName|文字列|デバイス所有者の Upn。|
+|deviceIMEI|文字列|デバイスの IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 
 
@@ -107,6 +107,7 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: bitlockerrecoveryinformationtype 型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea36ffe652d9e881dc0b41af49a01a36c14460ec
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e46dfbecf3c8018cbf0d73dc61721046c43e5b8a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162441"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789760"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>bitlockerrecoveryinformationtype 列挙型
 
@@ -24,6 +24,7 @@ bitlockerrecoveryinformationtype 型
 |:---|:---|:---|
 |passwordandkey|1-d|回復パスワードとキーパッケージを保存します。|
 |passwordonly|pbm-2|回復パスワードのみを保存します。|
+
 
 
 

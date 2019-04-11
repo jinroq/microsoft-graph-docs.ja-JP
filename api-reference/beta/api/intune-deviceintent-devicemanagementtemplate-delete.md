@@ -4,12 +4,12 @@ description: devicemanagementtemplate を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d943a9c84c5538dd6af84eccb1617d371d1e12a8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: d4c36d8d1f0283c22fca2a690b2c19f4d67861da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522448"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788241"
 ---
 # <a name="delete-devicemanagementtemplate"></a>devicemanagementtemplate の削除
 
@@ -62,8 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Intune 経由で管理または事前登録されるデバイス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 274c0000dbdae3b886241d628f4d03e944b61d5d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a2233c1dea3dfc8992becf1a12c8e99f1938020a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162511"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787891"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice リソース タイプ
 
@@ -23,40 +23,41 @@ Intune 経由で管理または事前登録されるデバイス
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|[managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|[managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティを更新します。|
+|[managedDevice の更新
+](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|[managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティを更新します。|
 |[executeAction アクション](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|まだ文書化されていません|
 |[enableLostMode アクション](../api/intune-devices-manageddevice-enablelostmode.md)|なし|削除モードを有効にする|
 |[playLostModeSound アクション](../api/intune-devices-manageddevice-playlostmodesound.md)|なし|リモート ロック|
 |[setDeviceName アクション](../api/intune-devices-manageddevice-setdevicename.md)|なし|デバイスのデバイス名を設定します。|
-|[retire action](../api/intune-devices-manageddevice-retire.md)|なし|デバイスを破棄します|
-|[wipe action](../api/intune-devices-manageddevice-wipe.md)|なし|デバイスをワイプします|
-|[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|なし|パスコードをリセットします|
-|[remoteLock action](../api/intune-devices-manageddevice-remotelock.md)|なし|リモート ロック|
-|[requestRemoteAssistance action](../api/intune-devices-manageddevice-requestremoteassistance.md)|なし|リモート アシスタンスを要求します|
-|[disableLostMode action](../api/intune-devices-manageddevice-disablelostmode.md)|なし|紛失モードを無効化します|
-|[locateDevice action](../api/intune-devices-manageddevice-locatedevice.md)|なし|デバイスを検索します|
-|[bypassActivationLock action](../api/intune-devices-manageddevice-bypassactivationlock.md)|なし|アクティベーション ロックをバイパスします|
-|[rebootNow action](../api/intune-devices-manageddevice-rebootnow.md)|なし|デバイスを再起動します|
-|[shutDown action](../api/intune-devices-manageddevice-shutdown.md)|なし|デバイスをシャットダウンします|
-|[recoverPasscode action](../api/intune-devices-manageddevice-recoverpasscode.md)|なし|パスコードを回復します|
-|[cleanWindowsDevice action](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|なし|Windows デバイスをクリーンにします|
-|[logoutSharedAppleDeviceActiveUser action](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|なし|共有の Apple デバイスのアクティブなユーザーをログアウトします|
-|[deleteUserFromSharedAppleDevice action](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|なし|共有の Apple デバイスからユーザーを削除します|
-|[syncDevice action](../api/intune-devices-manageddevice-syncdevice.md)|なし|まだ文書化されていません|
-|[windowsDefenderScan action](../api/intune-devices-manageddevice-windowsdefenderscan.md)|なし|まだ文書化されていません|
-|[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|なし|まだ文書化されていません|
-|[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|なし|まだ文書化されていません|
+|[retire アクション](../api/intune-devices-manageddevice-retire.md)|なし|デバイスを破棄します|
+|[ワイプ アクション](../api/intune-devices-manageddevice-wipe.md)|なし|デバイスをワイプします|
+|[resetPasscode アクション](../api/intune-devices-manageddevice-resetpasscode.md)|なし|パスコードをリセットします|
+|[remoteLock アクション](../api/intune-devices-manageddevice-remotelock.md)|なし|リモート ロック|
+|[requestRemoteAssistance アクション](../api/intune-devices-manageddevice-requestremoteassistance.md)|なし|リモート アシスタンスを要求します|
+|[disableLostMode アクション](../api/intune-devices-manageddevice-disablelostmode.md)|なし|紛失モードを無効化します|
+|[locateDevice アクション](../api/intune-devices-manageddevice-locatedevice.md)|なし|デバイスを検索します|
+|[bypassActivationLock アクション](../api/intune-devices-manageddevice-bypassactivationlock.md)|なし|アクティベーション ロックをバイパスします|
+|[rebootNow アクション](../api/intune-devices-manageddevice-rebootnow.md)|なし|デバイスを再起動します|
+|[shutDown action アクション](../api/intune-devices-manageddevice-shutdown.md)|なし|デバイスをシャットダウンします|
+|[recoverPasscode アクション](../api/intune-devices-manageddevice-recoverpasscode.md)|なし|パスコードを回復します|
+|[cleanWindowsDevice アクション](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|なし|Windows デバイスをクリーンにします|
+|[logoutSharedAppleDeviceActiveUser アクション](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|なし|共有の Apple デバイスのアクティブなユーザーをログアウトします|
+|[deleteUserFromSharedAppleDevice アクション](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|なし|共有の Apple デバイスからユーザーを削除します|
+|[syncDevice アクション](../api/intune-devices-manageddevice-syncdevice.md)|なし|まだ文書化されていません|
+|[windowsDefenderScan アクション](../api/intune-devices-manageddevice-windowsdefenderscan.md)|なし|まだ文書化されていません|
+|[windowsDefenderUpdateSignatures アクション](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|なし|まだ文書化されていません|
+|[updateWindowsDeviceAccount アクション](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|なし|まだ文書化されていません|
 |[revokeAppleVppLicenses アクション](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|なし|デバイスのすべての Apple Vpp ライセンスを取り消す|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイスの一意識別子|
+|id|String|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードワードの詳細。  記憶領域、製造元、シリアル番号などの情報が含まれます。|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 可能な値は `unknown`、`company`、`personal` です。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 可能な値は `unknown`、`company`、`personal` です。|
+|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。|
 |managementstate|[managementstate](../resources/intune-devices-managementstate.md)|デバイスの管理状態。 可能な値は、`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered` です。|
 |enrolledDateTime|DateTimeOffset|デバイスの登録時刻。|
@@ -65,20 +66,20 @@ Intune 経由で管理または事前登録されるデバイス
 |operatingSystem|文字列|デバイスのオペレーティング システム。 Windows、iOS など。|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
-|jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。|
+|jailBroken|文字列|デバイスが脱獄またはルート化されているかどうかを示します。|
 |managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は`eas`、 `mdm`、 `easMdm` `intuneClient` `easIntuneClient` `configurationManagerClient` `jamf` `googleCloudDevicePolicyController`、、、、、、、、、 `microsoft365ManagedMdm`、、です。 `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`|
-|osVersion|文字列型 (String)|デバイスのオペレーティング システムのバージョン。|
-|easActivated|ブール値|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
-|easDeviceId|String|デバイスの Exchange ActiveSync の ID。|
+|osVersion|文字列|デバイスのオペレーティング システムのバージョン。|
+|easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
+|easDeviceId|文字列|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
-|aadRegistered|ブール値|Azure Active Directory が登録されているデバイスかどうかを示します。|
-|azureADRegistered|ブール値|Azure Active Directory が登録されているデバイスかどうかを示します。|
+|aadRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
+|azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
-|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|失われたモードが有効か無効かを示します。 使用可能な値は、`disabled`、`enabled` です。|
-|activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。|
-|emailAddress|String|デバイスに関連付けられているユーザーの電子メール|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
-|azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
+|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|失われたモードが有効か無効かを示します。 可能な値は、`disabled`、`enabled` です。|
+|activationLockBypassCode|文字列|デバイスのアクティベーション ロックをバイパスするためのコード。|
+|emailAddress|文字列|デバイスに関連付けられているユーザーの電子メール|
+|azureActiveDirectoryDeviceId|文字列|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
+|azureADDeviceId|文字列|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|デバイスの登録状態。 可能な値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown` です。|
 |deviceCategoryDisplayName|String|デバイス カテゴリの表示名|
 |isSupervised|Boolean|デバイスの管理状況|
@@ -86,39 +87,39 @@ Intune 経由で管理または事前登録されるデバイス
 |exchangeAccessState|[devicemanagementexchangeaccessstate](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。
  可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
-|remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
-|remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
+|remoteAssistanceSessionUrl|文字列|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
+|remoteAssistanceSessionErrorDetails|文字列|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
 |isEncrypted|Boolean|デバイスの暗号化の状態|
-|userPrincipalName|文字列|デバイスのユーザー プリンシパル名。|
-|model|String|デバイスのモデル|
-|manufacturer|String|デバイスのメーカー|
-|imei|String|IMEI|
+|userPrincipalName|String|デバイスのユーザー プリンシパル名。|
+|model|文字列|デバイスのモデル|
+|manufacturer|文字列|デバイスのメーカー|
+|imei|文字列|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が経過する DateTime|
-|serialNumber|String|シリアル番号|
-|phoneNumber|String|デバイスの電話番号|
-|androidSecurityPatchLevel|String|Android セキュリティ パッチのレベル|
-|userDisplayName|String|ユーザーの表示名|
+|serialNumber|文字列|シリアル番号|
+|phoneNumber|文字列|デバイスの電話番号|
+|androidSecurityPatchLevel|文字列|Android セキュリティ パッチのレベル|
+|userDisplayName|文字列|ユーザーの表示名|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr クライアント対応機能
 |
-|wiFiMacAddress|String|Wi-Fi MAC|
+|wiFiMacAddress|文字列|Wi-Fi MAC|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|デバイスの正常性構成証明の状態。|
-|subscriberCarrier|String|サブスクライバー通信事業者|
-|meid|String|MEID|
+|subscriberCarrier|文字列|サブスクライバー通信事業者|
+|meid|文字列|MEID|
 |totalStorageSpaceInBytes|Int64|記憶域の合計 (バイト)|
 |freeStorageSpaceInBytes|Int64|空き記憶域 (バイト)|
 |managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。|
 |partnerReportedThreatState|[manageddevicepartnerreportedhealthstate](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|デバイスの最後にログオンしたユーザーを示します|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|preferMdmOverGroupPolicy の設定が設定された DateTime を報告します。  設定すると、競合がある場合に Intune MDM 設定がグループポリシー設定を上書きします。 読み取り専用です。|
-|autopilotEnrolled|ブール値|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。|
-|requireUserEnrollmentApproval|ブール値|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。|
+|autopilotEnrolled|Boolean|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。|
+|requireUserEnrollmentApproval|Boolean|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。|
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限を報告する|
-|iccid|String|ic カード識別子。 SIM カードの一意の識別番号です。|
-|udid|String|iOS および macOS デバイスの一意のデバイス識別子。|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ id のリスト。|
+|iccid|文字列|ic カード識別子。 SIM カードの一意の識別番号です。|
+|udid|文字列|iOS および macOS デバイスの一意のデバイス識別子。|
+|roleScopeTagIds|String コレクション|このデバイスインスタンスの範囲タグ id のリスト。|
 |windowsactivemalwarecount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
-|notes|String|IT 管理者によって作成されたデバイスのメモ|
+|notes|文字列|IT 管理者によって作成されたデバイスのメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されるデバイスに対してのみ有効です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -127,6 +128,7 @@ Intune 経由で管理または事前登録されるデバイス
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) コレクション|デバイスに現在インストールされているすべてのアプリケーション|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|デバイス カテゴリ|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|デバイス保護の状態。|
+|users|[user](../resources/intune-shared-user.md) コレクション|管理対象デバイスに関連付けられているプライマリユーザー。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -305,6 +307,7 @@ Intune 経由で管理または事前登録されるデバイス
   }
 }
 ```
+
 
 
 

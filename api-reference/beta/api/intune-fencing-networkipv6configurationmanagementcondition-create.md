@@ -4,12 +4,12 @@ description: 新しい networkIPv6ConfigurationManagementCondition オブジェ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dee9ff40118cb52d51c53204332b859e0bb0bba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d20721c1f92e3d710abe24df2304cd2bec431084
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966146"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788514"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>networkIPv6ConfigurationManagementCondition を作成する
 
@@ -51,18 +51,18 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|uniqueName|文字列|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |displayName|String|管理条件の管理者定義の名前。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|description|String|管理条件の管理者定義の説明。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|説明|String|管理条件の管理者定義の説明。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側を生成しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |modifiedDateTime|DateTimeOffset|管理条件が最後に変更された時刻。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |eTag|String|管理条件の ETag。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
-|ipV6Prefix|String|接続先の IPv6 サブネット。 例: 2001 年: db8::/32|
-|ipV6Gateway|String|IPv6 ゲートウェイアドレス。 例: 2001 年: db8:: 1|
-|ipV6DNSServerList|String collection|アダプターに対して構成された IPv6 DNS サーバー。|
-|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV6Prefix|文字列|接続先の IPv6 サブネット。 例: 2001 年: db8::/32|
+|ipV6Gateway|文字列|IPv6 ゲートウェイアドレス。 例: 2001 年: db8:: 1|
+|ipV6DNSServerList|String コレクション|アダプターに対して構成された IPv6 DNS サーバー。|
+|dnsSuffixList|String コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

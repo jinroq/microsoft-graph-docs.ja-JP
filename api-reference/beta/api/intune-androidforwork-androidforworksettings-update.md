@@ -4,12 +4,12 @@ description: androidForWorkSettings オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 658744008af023fc2ad419aedc7a369f1ffbcb9f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7f71d9087b457189d3796306e0585981c0e58855
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976744"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785147"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/androidForWorkSettings
 |bindStatus|[androidforwork bindstatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google EMM API を使用して、テナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
 |lastAppSyncStatus|[androidforwork syncstatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|最後のアプリケーションの同期結果。 可能な値は `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none` です。|
-|ownerUserPrincipalName|String|エンタープライズを作成した所有者の UPN|
+|ownerUserPrincipalName|文字列|エンタープライズを作成した所有者の UPN|
 |ownerOrganizationName|String|Android for Work のオンボーディング時に使用される組織名|
 |lastModifiedDateTime|DateTimeOffset|Android for Work の設定の最終変更時刻|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Android for Work デバイス管理にデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
@@ -113,6 +113,7 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
+
 
 
 

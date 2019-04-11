@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c39958a2af3f755e5ee7671559daf1c95c89517
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 91cbfb4bba360ca11558e8dd0c01cf8a854a9c5e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983324"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788696"
 ---
 # <a name="createdownloadurl-action"></a>createDownloadUrl アクション
 
@@ -73,6 +73,7 @@ Content-Length: 239
   }
 }
 ```
+
 
 
 

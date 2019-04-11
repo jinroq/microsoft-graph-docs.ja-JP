@@ -4,12 +4,12 @@ description: オペレーティングシステムのバージョンの範囲。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 521f7d0b0ec4ddab728ed3b95c27acf21695b0d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 80b0afb706a71ef8e0e3d4877fa7d0df822fe1d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148609"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788122"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange リソースの種類
 
@@ -22,9 +22,9 @@ ms.locfileid: "30148609"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|説明|String|この範囲の説明 (例: 有効な1702ビルド)|
-|lowestversion|String|この範囲に含まれている最小の包括バージョン。|
-|highestVersion|String|この範囲に含まれている最も高い包括バージョン。|
+|description|String|この範囲の説明 (例: 有効な1702ビルド)|
+|lowestversion|文字列|この範囲に含まれている最小の包括バージョン。|
+|highestVersion|文字列|この範囲に含まれている最も高い包括バージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -44,6 +44,7 @@ ms.locfileid: "30148609"
   "highestVersion": "String"
 }
 ```
+
 
 
 

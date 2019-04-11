@@ -4,12 +4,12 @@ description: ピア配布の配信最適化モード
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a4b0860e05d20ea480f9c91264033f7a9eb41a0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3872b7c09c8934e95725565b83cc195d9b9d8da5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149169"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785294"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30149169"
 |httpwithinternetpeering リング|2/4|インターネットピアリングとの HTTP ブレンディング|
 |simpledownload|99|ピアリングのない簡易ダウンロードモード|
 |bypassMode|100|バイパスモード。 配信の最適化を使用せず、代わりにビットを使用する|
+
 
 
 

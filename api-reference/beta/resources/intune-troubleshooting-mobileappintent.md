@@ -4,12 +4,12 @@ description: デバイス上のモバイルアプリの状態を示します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1df0b41636668e0ebcc38dfb6b399a73551658d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 472fd157ed26b8b446e272d37baa135584cbbe0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171044"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785917"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 列挙型
 
@@ -23,13 +23,12 @@ ms.locfileid: "30171044"
 |メンバー|値|説明|
 |:---|:---|:---|
 |使用可能|.0|Available|
-|notavailable|1-d|利用不可|
+|notavailable|1-d|インストールしない|
 |requiredinstall|pbm-2|必要なインストール|
 |requireduninstall|1/3|必要なアンインストール|
 |requiredandのインストール|2/4|requiredandのインストール|
 |登録がありません。|5|登録がありません。|
-|削除|シックス|削除|
-
+|削除|シックス|除外|
 
 
 

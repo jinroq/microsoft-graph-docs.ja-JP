@@ -4,12 +4,12 @@ description: PFX インポートオプション。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e4933386599e7d99494d2972734653569854e89
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 831a0137e7aac53d26e51e30d867ef99996f56b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150597"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789109"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 列挙型
 
@@ -25,8 +25,9 @@ PFX インポートオプション。
 |未定義|1-d|未定義|
 |smimeEncryption|pbm-2|SmimeEncryption|
 |smimeSigning|1/3|SmimeSigning|
-|仮想|2/4|仮想|
+|仮想|2/4|VPN|
 |wi-fi|5|wi-fi|
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f95f5515e86af1fb08ab950f5d3f49cf1afb93b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0edb1fd209f6ed1fd339c131fa418597df75ff05
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160313"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787982"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>windowsUpdateInstallScheduleType リソースの種類
 
@@ -38,6 +38,7 @@ ms.locfileid: "30160313"
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
 
 
 

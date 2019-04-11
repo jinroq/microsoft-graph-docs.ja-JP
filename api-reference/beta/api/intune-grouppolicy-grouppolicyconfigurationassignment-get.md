@@ -4,12 +4,12 @@ description: grouppolicyconfigurationassignment オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b08561e82843b20fcf27d960d1eafd4b0799186
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fbf3a894cdd084f743d8cf33c45d8a8b2358a40d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983709"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786568"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>grouppolicyconfigurationassignment の取得
 
@@ -78,6 +78,7 @@ Content-Length: 318
   }
 }
 ```
+
 
 
 

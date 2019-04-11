@@ -4,12 +4,12 @@ description: Intune のアプリの単一カテゴリのプロパティが含ま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 190fc435cbcfb1ad262e93f86bec84de989f9194
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 60d7468f5b353b120081d99d315ce1719bef7d4c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140566"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789410"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory リソースの種類
 
@@ -23,9 +23,9 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[mobileAppCategories のリスト](../api/intune-apps-mobileappcategory-list.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[mobileAppCategory の取得](../api/intune-apps-mobileappcategory-get.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get mobileAppCategory](../api/intune-apps-mobileappcategory-get.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[mobileAppCategory の作成](../api/intune-apps-mobileappcategory-create.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|新しい [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトを作成します。|
-|[mobileAppCategory の削除](../api/intune-apps-mobileappcategory-delete.md)|なし|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) を削除します。|
+|[Delete mobileAppCategory](../api/intune-apps-mobileappcategory-delete.md)|なし|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) を削除します。|
 |[mobileAppCategory の更新](../api/intune-apps-mobileappcategory-update.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
@@ -54,6 +54,7 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

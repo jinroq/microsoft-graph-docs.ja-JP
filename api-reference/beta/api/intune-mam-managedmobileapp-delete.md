@@ -4,12 +4,12 @@ description: managedMobileApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 012486a4be8856c37f5170a6df220663f58c73d5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f30b88d481300132b156d637d90d8192c5921ea0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975624"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788101"
 ---
 # <a name="delete-managedmobileapp"></a>managedMobileApp の削除
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

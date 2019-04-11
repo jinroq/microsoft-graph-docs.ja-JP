@@ -4,12 +4,12 @@ description: 自動更新分類に使用できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e29c231afae24133283c7919770735b18a227f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143142"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785539"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30143142"
 |recommendedAndImportant|1-d|推奨され、重要です。|
 |important|pbm-2|大事な。|
 |none|1/3|なし。|
+
 
 
 

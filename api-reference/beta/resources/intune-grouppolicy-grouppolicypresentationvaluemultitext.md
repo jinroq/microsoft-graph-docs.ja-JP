@@ -4,12 +4,12 @@ description: エンティティは、ポリシー定義の複数行テキスト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fef2f1564f67cc3fce4e294e2d1b356f5d414ff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a96a57ec89783d1ed1f06b1edc5d0a1f5e88068
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162252"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788717"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30162252"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|values|String collection|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
+|values|String コレクション|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -64,6 +64,7 @@ ms.locfileid: "30162252"
   ]
 }
 ```
+
 
 
 

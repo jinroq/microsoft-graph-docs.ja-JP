@@ -4,12 +4,12 @@ description: 新しい termsAndConditionsGroupAssignment オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95f5b9f065175918f0508378372274f6f2947539
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c390ed0d3d5fce21cc69adfe513169833d8f4a43
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787513"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>termsAndConditionsGroupAssignment を作成する
 
@@ -51,7 +51,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
-|targetgroupid|String|T&C ポリシーが割り当てられているグループの一意識別子。|
+|targetgroupid|文字列|T&C ポリシーが割り当てられているグループの一意識別子。|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

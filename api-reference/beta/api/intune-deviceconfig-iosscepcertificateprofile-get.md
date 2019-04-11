@@ -4,12 +4,12 @@ description: iosscepcertificateprofile オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b81f861f4f11c6de3a68d228c7e7f2dabfddd61c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e57f40b1b44cb1695bff04d2ed4eff630db0eceb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988883"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788829"
 ---
 # <a name="get-iosscepcertificateprofile"></a>iosscepcertificateprofile の取得
 
@@ -112,6 +112,7 @@ Content-Length: 1426
   }
 }
 ```
+
 
 
 

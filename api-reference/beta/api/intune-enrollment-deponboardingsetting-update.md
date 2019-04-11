@@ -4,12 +4,12 @@ description: deponboardingsetting オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c882957b8fb44e1df539e98dec96e2c457fe854b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968239"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787877"
 ---
 # <a name="update-deponboardingsetting"></a>deponboardingsetting の更新
 
@@ -59,10 +59,10 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
-|tokenName|String|Dep トークンのフレンドリ名|
+|tokenName|文字列|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

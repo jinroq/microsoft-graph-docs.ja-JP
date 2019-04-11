@@ -4,12 +4,12 @@ description: スタートレイアウトの Windows アプリのタイルサイ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 498cb8f38eeb4f4223655156e2d6ef5f178140a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173942"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785749"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30173942"
 |medium|pbm-2|中規模2x2|
 |全般|1/3|ワイド4x2|
 |large|2/4|大きな4x4。|
+
 
 
 

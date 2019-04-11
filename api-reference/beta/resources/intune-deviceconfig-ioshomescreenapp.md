@@ -4,12 +4,12 @@ description: ホーム画面上のアプリのアイコンを表します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: faaa2bfa7ac0d4a25eeb4452349250ceb3d80524
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b6e4934565255e364012eedb54044b37281c1641
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163176"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786582"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp リソースの種類
 
@@ -45,6 +45,7 @@ ms.locfileid: "30163176"
   "bundleID": "String"
 }
 ```
+
 
 
 

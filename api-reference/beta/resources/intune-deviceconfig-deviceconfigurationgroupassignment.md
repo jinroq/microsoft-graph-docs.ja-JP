@@ -4,12 +4,12 @@ description: デバイス構成グループの割り当て。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2daa30edbfecc73fcc8daee766b1aae723110e59
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1805cb29e8920876d8a340c9379d7b3200c4c779
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172381"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789165"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment リソースの種類
 
@@ -32,8 +32,8 @@ ms.locfileid: "30172381"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|targetgroupid|String|デバイス構成を対象としている AAD グループの Id。|
-|excludeGroup|ブール値|このグループを除外する必要があるかどうかを示します。 グループが含まれる既定値|
+|targetgroupid|文字列|デバイス構成を対象としている AAD グループの Id。|
+|excludeGroup|Boolean|このグループを除外する必要があるかどうかを示します。 グループが含まれる既定値|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -56,6 +56,7 @@ ms.locfileid: "30172381"
   "excludeGroup": true
 }
 ```
+
 
 
 

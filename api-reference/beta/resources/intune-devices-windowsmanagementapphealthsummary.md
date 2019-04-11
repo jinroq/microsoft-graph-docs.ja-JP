@@ -4,12 +4,12 @@ description: Windows 管理アプリの正常性の概要のプロパティが�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f62f5967702143149176cecd2513478256ead6d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aea7f113d144ca876b301acc3b303ac0f7072bc4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172059"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789256"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>windowsManagementAppHealthSummary リソースの種類
 
@@ -53,6 +53,7 @@ Windows 管理アプリの正常性の概要のプロパティが含まれてい
   "unknownDeviceCount": 1024
 }
 ```
+
 
 
 

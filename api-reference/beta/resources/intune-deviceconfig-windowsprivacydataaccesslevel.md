@@ -4,12 +4,12 @@ description: 特定の Windows プライバシーデータカテゴリへのア�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2cdf124d3da6bf2c08954365a87ae0a97b05267
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 10486899094cf275cb3fb9254114d92cb7d12388
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159067"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788108"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30159067"
 |forceallow|1-d|アプリは、指定されたプライバシーデータにアクセスできるようになります。|
 |forcedeny|pbm-2|アプリは、指定されたプライバシーデータにアクセスすることを拒否されます。|
 |userincontrol|1/3|アプリが指定されたプライバシーデータにアクセスしようとすると、ユーザーにメッセージが表示されます。|
+
 
 
 

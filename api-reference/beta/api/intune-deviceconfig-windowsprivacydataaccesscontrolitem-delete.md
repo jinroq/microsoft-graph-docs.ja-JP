@@ -4,12 +4,12 @@ description: windowsPrivacyDataAccessControlItem を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64faf89c947a593f4edb5883c042d9768e496728
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1640f27e237baaa009fe4ac8afc554e5807fa576
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979124"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787107"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>windowsPrivacyDataAccessControlItem の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

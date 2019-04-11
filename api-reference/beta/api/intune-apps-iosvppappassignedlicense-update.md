@@ -4,12 +4,12 @@ description: iosVppAppAssignedLicense オブジェクトのプロパティを更
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 424890d52291bb53932954f55427f1b4c84afb4f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5df0eb8e0b973f00d3fac70bfebd26da029cc7eb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972299"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786750"
 ---
 # <a name="update-iosvppappassignedlicense"></a>iosVppAppAssignedLicense の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|String|ユーザーの電子メールアドレス。|
+|userEmailAddress|文字列|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
 |userName|文字列型 (String)|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
@@ -95,6 +95,7 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

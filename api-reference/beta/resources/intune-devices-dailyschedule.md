@@ -4,12 +4,12 @@ description: 定期的なデバイス管理スクリプトの日単位の実行�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 310d9a4dbd995dfc162591547a40ace8c596f54b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dd2b226255f433b4f82d042b6389830143515033
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152662"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788073"
 ---
 # <a name="dailyschedule-resource-type"></a>dailySchedule リソースの種類
 
@@ -43,6 +43,7 @@ ms.locfileid: "30152662"
   "interval": 1024
 }
 ```
+
 
 
 

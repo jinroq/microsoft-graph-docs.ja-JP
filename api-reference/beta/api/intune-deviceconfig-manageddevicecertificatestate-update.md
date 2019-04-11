@@ -4,12 +4,12 @@ description: managedDeviceCertificateState オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8a8756adb4ef548175723bc6238797f89ede944
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 336eca53d4eac1898519de61559cd6b3561c60d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987567"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785455"
 ---
 # <a name="update-manageddevicecertificatestate"></a>managedDeviceCertificateState の更新
 
@@ -75,20 +75,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|サブジェクト名の形式。 可能な値は、`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId` です。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|サブジェクトの別名形式。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|状態を取り消します。 可能な値は、`none`、`pending`、`issued`、`failed`、`revoked` です。|
-|certificateprofiledisplayname|String|証明書プロファイルの表示名|
+|certificateprofiledisplayname|文字列|証明書プロファイルの表示名|
 |deviceDisplayName|String|デバイスの表示名|
 |userDisplayName|String|ユーザーの表示名|
 |certificateExpirationDateTime|DateTimeOffset|証明書の有効期限|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|証明書の発行状態の最終変更|
 |lastCertificateStateChangeDateTime|DateTimeOffset|証明書の発行状態の最終変更|
-|certificateissuer|String|発行者|
-|certificateThumbprint|String|拇印|
-|certificateSerialNumber|String|シリアル番号|
+|certificateissuer|文字列|発行者|
+|certificateThumbprint|文字列|拇印|
+|certificateSerialNumber|文字列|シリアル番号|
 |certificateKeyLength|Int32|キーの長さ|
-|certificateEnhancedKeyUsage|String|拡張キーの使用|
+|certificateEnhancedKeyUsage|文字列|拡張キーの使用|
 |certificateValidityPeriod|Int32|有効期間|
-|certificateSubjectNameFormatString|String|カスタムサブジェクト名の形式のサブジェクト名の書式指定文字列|
-|certificateSubjectAlternativeNameFormatString|String|カスタム書式のサブジェクトの別名書式文字列|
+|certificateSubjectNameFormatString|文字列|カスタムサブジェクト名の形式のサブジェクト名の書式指定文字列|
+|certificateSubjectAlternativeNameFormatString|文字列|カスタム書式のサブジェクトの別名書式文字列|
 |certificateIssuanceDateTime|DateTimeOffset|発行日|
 |certificateerrorcode|Int32|エラー コード|
 
@@ -171,6 +171,7 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
 
 
 

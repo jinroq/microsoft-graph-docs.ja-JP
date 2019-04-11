@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b10d498edd03850a52aa09ba29e352a143a77c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: af5236ebf464300584525fbaebae271133134b0a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163442"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786575"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30163442"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|日本向けに選択されている映画のレーティング。 使用可能な値: `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
+|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|日本向けに選択されている映画のレーティング。 可能な値は `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18` です。|
 |tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|日本向けに選択されているテレビのレーティング。 可能な値は、`allAllowed`、`allBlocked`、`explicitAllowed` です。|
 
 ## <a name="relationships"></a>関係
@@ -42,6 +42,7 @@ ms.locfileid: "30163442"
   "tvRating": "String"
 }
 ```
+
 
 
 

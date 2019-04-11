@@ -4,12 +4,12 @@ description: 特定のデバイスに関する、デバイスのコンプライ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d8ebb3daa8eb039b2b95efd840dd525a32ea304
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 22fe0611d4ad583200032b8721076184f168d3c2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786176"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 
@@ -24,24 +24,24 @@ ms.locfileid: "30152060"
 |:---|:---|:---|
 |[List deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) コレクション|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-get.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-create.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|新しい [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトを作成します。|
-|[Delete deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-delete.md)|なし|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) を削除します。|
-|[Update deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-update.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。|
+|[deviceComplianceSettingState の作成](../api/intune-deviceconfig-devicecompliancesettingstate-create.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|新しい [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトを作成します。|
+|[deviceComplianceSettingState の削除](../api/intune-deviceconfig-devicecompliancesettingstate-delete.md)|なし|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) を削除します。|
+|[deviceComplianceSettingState の更新](../api/intune-deviceconfig-devicecompliancesettingstate-update.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|setting|String|設定のクラス名とプロパティ名。|
-|settingName|String|レポートされている設定名。|
-|deviceId|String|レポートされているデバイス ID。|
-|deviceName|String|レポートされているデバイス名。|
-|userId|String|レポートされているユーザー ID|
+|setting|文字列|設定のクラス名とプロパティ名。|
+|settingName|文字列|レポートされている設定名。|
+|deviceId|文字列|レポートされているデバイス ID。|
+|deviceName|文字列|レポートされているデバイス名。|
+|userId|文字列|レポートされているユーザー ID|
 |userEmail|String|レポートされているユーザーのメール アドレス。|
-|userName|String|レポートされているユーザー名|
+|userName|文字列|レポートされているユーザー名|
 |userPrincipalName|String|レポートされているユーザーの PrincipalName|
-|deviceModel|String|レポートされているデバイス モデル|
+|deviceModel|文字列|レポートされているデバイス モデル|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
@@ -74,6 +74,7 @@ ms.locfileid: "30152060"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

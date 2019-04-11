@@ -4,12 +4,12 @@ description: admx checkBox 要素と admx boolean 要素を表します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d50f04b39490f48d2efa316d8f2825ed9ee31461
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ba86365b83f3f6f961c2907eb4041ed15ce252a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160642"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788136"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>grouppolicypresentationcheckbox リソースの種類
 
@@ -34,10 +34,10 @@ admx checkBox 要素と admx boolean 要素を表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|defaultchecked|ブール値|チェックボックスの既定値。 既定値は false です。|
+|defaultchecked|Boolean|チェックボックスの既定値。 既定値は false です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -61,6 +61,7 @@ admx checkBox 要素と admx boolean 要素を表します。
   "defaultChecked": true
 }
 ```
+
 
 
 

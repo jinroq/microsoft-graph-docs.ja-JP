@@ -4,12 +4,12 @@ description: 新しい deviceManagementIntentDeviceSettingStateSummary オブジ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9223cd47bf6c837acf06c2daa185c5675d6f3c8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 4bfe4c44bdd0ec2a68e58c3a881dbe00ae1b7f5e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522805"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787604"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>deviceManagementIntentDeviceSettingStateSummary を作成する
 
@@ -104,8 +104,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
-
 
 
 

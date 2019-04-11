@@ -4,12 +4,12 @@ description: intuneBrand には、会社のポータル アプリケーション
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167383"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788297"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
@@ -23,19 +23,20 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|String|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|文字列|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色が明るいポータル サイト アプリに表示されるロゴ画像。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色が暗いポータル サイト アプリに表示されるロゴ画像。|
 |showNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|[compnay ポータルアプリのランディングページに表示されるカスタマイズされた画像]|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
+|customprivacymessage|文字列|カスタムプライバシーメッセージ。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -82,9 +83,11 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
     "type": "String",
     "value": "binary"
   },
+  "customPrivacyMessage": "String",
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 
