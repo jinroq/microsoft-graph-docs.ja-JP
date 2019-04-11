@@ -4,31 +4,31 @@ description: embeddedSIMActivationCodePoolAssignment を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8af0a3fd2920c39e9cebcaf8496be8d92625879d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2b0b84a06b4d7fc182b7f5e16ee5b70373c65b87
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985845"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788955"
 ---
-# <a name="delete-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="3a7eb-103">embeddedSIMActivationCodePoolAssignment の削除</span><span class="sxs-lookup"><span data-stu-id="3a7eb-103">Delete embeddedSIMActivationCodePoolAssignment</span></span>
+# <a name="delete-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="0b147-103">embeddedSIMActivationCodePoolAssignment の削除</span><span class="sxs-lookup"><span data-stu-id="0b147-103">Delete embeddedSIMActivationCodePoolAssignment</span></span>
 
-> <span data-ttu-id="3a7eb-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0b147-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b147-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3a7eb-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0b147-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0b147-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3a7eb-106">[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-106">Deletes a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md).</span></span>
+<span data-ttu-id="0b147-106">[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="0b147-106">Deletes a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3a7eb-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="3a7eb-107">Prerequisites</span></span>
-<span data-ttu-id="3a7eb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0b147-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0b147-107">Prerequisites</span></span>
+<span data-ttu-id="0b147-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b147-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3a7eb-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3a7eb-110">Permission type</span></span>|<span data-ttu-id="3a7eb-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="3a7eb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0b147-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0b147-110">Permission type</span></span>|<span data-ttu-id="0b147-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0b147-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3a7eb-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3a7eb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3a7eb-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a7eb-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="3a7eb-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3a7eb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a7eb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-115">Not supported.</span></span>|
-|<span data-ttu-id="3a7eb-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3a7eb-116">Application</span></span>|<span data-ttu-id="3a7eb-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-117">Not supported.</span></span>|
+|<span data-ttu-id="0b147-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0b147-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0b147-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b147-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="0b147-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0b147-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0b147-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b147-115">Not supported.</span></span>|
+|<span data-ttu-id="0b147-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0b147-116">Application</span></span>|<span data-ttu-id="0b147-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b147-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3a7eb-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3a7eb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b147-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0b147-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,32 @@ ms.locfileid: "30985845"
 DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3a7eb-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3a7eb-119">Request headers</span></span>
-|<span data-ttu-id="3a7eb-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3a7eb-120">Header</span></span>|<span data-ttu-id="3a7eb-121">値</span><span class="sxs-lookup"><span data-stu-id="3a7eb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0b147-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0b147-119">Request headers</span></span>
+|<span data-ttu-id="0b147-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0b147-120">Header</span></span>|<span data-ttu-id="0b147-121">値</span><span class="sxs-lookup"><span data-stu-id="0b147-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3a7eb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a7eb-122">Authorization</span></span>|<span data-ttu-id="3a7eb-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3a7eb-124">承諾</span><span class="sxs-lookup"><span data-stu-id="3a7eb-124">Accept</span></span>|<span data-ttu-id="3a7eb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3a7eb-125">application/json</span></span>|
+|<span data-ttu-id="0b147-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b147-122">Authorization</span></span>|<span data-ttu-id="0b147-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0b147-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0b147-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0b147-124">Accept</span></span>|<span data-ttu-id="0b147-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0b147-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3a7eb-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="3a7eb-126">Request body</span></span>
-<span data-ttu-id="3a7eb-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b147-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0b147-126">Request body</span></span>
+<span data-ttu-id="0b147-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0b147-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3a7eb-128">応答</span><span class="sxs-lookup"><span data-stu-id="3a7eb-128">Response</span></span>
-<span data-ttu-id="3a7eb-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="0b147-128">応答</span><span class="sxs-lookup"><span data-stu-id="0b147-128">Response</span></span>
+<span data-ttu-id="0b147-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="0b147-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3a7eb-130">例</span><span class="sxs-lookup"><span data-stu-id="3a7eb-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0b147-130">例</span><span class="sxs-lookup"><span data-stu-id="0b147-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3a7eb-131">要求</span><span class="sxs-lookup"><span data-stu-id="3a7eb-131">Request</span></span>
-<span data-ttu-id="3a7eb-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0b147-131">要求</span><span class="sxs-lookup"><span data-stu-id="0b147-131">Request</span></span>
+<span data-ttu-id="0b147-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0b147-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="3a7eb-133">応答</span><span class="sxs-lookup"><span data-stu-id="3a7eb-133">Response</span></span>
-<span data-ttu-id="3a7eb-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3a7eb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0b147-133">応答</span><span class="sxs-lookup"><span data-stu-id="0b147-133">Response</span></span>
+<span data-ttu-id="0b147-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0b147-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
