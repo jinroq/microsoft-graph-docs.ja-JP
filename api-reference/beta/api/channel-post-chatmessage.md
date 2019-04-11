@@ -4,12 +4,12 @@ description: 指定したチャネルで新しいメッセージを送信しま�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56834a628465fc5721e0dc7ef7eb5e05065dccbc
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.openlocfilehash: c0ee2535cf9e47b08e1eb44d8fa9b07fb078c2bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751551"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799658"
 ---
 # <a name="send-a-message-to-a-channel"></a>メッセージをチャネルに送信する
 
@@ -296,6 +296,10 @@ Content-length: 160
     "reactions": []
 }
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [カードリファレンス](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: エンティティがサポートされていない理由の説明�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ebdb6eb91dd64c1605288cc0cb1260f8fe7440a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 660f73774025a065565fb72ca74c9674a4159fc0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148469"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795059"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30148469"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|message|String|エンティティがサポートされていない理由を説明するメッセージ。|
-|propertyName|String|メッセージが元のエンティティの特定のプロパティに関連付けられている場合は、そのプロパティの名前。|
+|メッセージ​​|String|エンティティがサポートされていない理由を説明するメッセージ。|
+|propertyName|文字列|メッセージが元のエンティティの特定のプロパティに関連付けられている場合は、そのプロパティの名前。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,6 +42,7 @@ ms.locfileid: "30148469"
   "propertyName": "String"
 }
 ```
+
 
 
 

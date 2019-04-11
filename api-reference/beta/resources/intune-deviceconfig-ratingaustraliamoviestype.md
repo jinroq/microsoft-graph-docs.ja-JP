@@ -4,12 +4,12 @@ description: オーストラリアでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 438b255970d42bfb0ef63018e87fcbcdfe62b163
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162665"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797852"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30162665"
 |度|2/4|M 分類は15以下の閲覧者には推奨されません|
 |agesAbove15|5|MA15 + 分類は15以下の閲覧者には適していません|
 |agesAbove18|シックス|R18 + 分類が18の閲覧者には適していません|
+
 
 
 

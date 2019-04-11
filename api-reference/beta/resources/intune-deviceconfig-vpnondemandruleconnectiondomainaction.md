@@ -4,12 +4,12 @@ description: VPN のオンデマンドルールの接続ドメインアクショ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9063b38df7c4c94d1cdef737e458b001f5afe20b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 864abbe321aa40388f2cd87d31178ac31ea4a5cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146768"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799560"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 列挙型
 
@@ -24,6 +24,7 @@ VPN のオンデマンドルールの接続ドメインアクション。
 |:---|:---|:---|
 |/必要|.0|必要に応じて接続します。|
 |neverConnect|1-d|接続しない|
+
 
 
 

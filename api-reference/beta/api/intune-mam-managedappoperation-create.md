@@ -4,12 +4,12 @@ description: 新しい managedAppOperation オブジェクトを作成します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18e8d0edda508f2cb5383f2a2c53bea1574920e6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 994af667aadc990760d64c2f4334fc6d21eefcb9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966139"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797271"
 ---
 # <a name="create-managedappoperation"></a>managedAppOperation の作成
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
 |state|String|操作の現在の状態。|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|文字列型 (String)|エンティティのバージョン。|
 
 
@@ -94,6 +94,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

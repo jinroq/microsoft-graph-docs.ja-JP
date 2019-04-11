@@ -4,12 +4,12 @@ description: enterpriseCodeSigningCertificate オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3820c47b4aa87ecbeed4b5c6e5a5520e5126e3a1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cc97e3cceada031747dbbc32b40e0c9b6b8c31e6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798846"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>enterpriseCodeSigningCertificate の更新
 
@@ -55,8 +55,8 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
-|issuerName|String|証明書の発行者名。|
-|会社|String|証明書の発行者の値。|
+|issuerName|文字列|証明書の発行者名。|
+|会社|文字列|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploaddatetime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 
@@ -107,6 +107,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

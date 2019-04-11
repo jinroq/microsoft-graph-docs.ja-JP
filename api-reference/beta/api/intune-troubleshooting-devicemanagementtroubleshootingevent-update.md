@@ -4,12 +4,12 @@ description: deviceManagementTroubleshootingEvent オブジェクトのプロパ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed610df826b8e4982ae4846ae05beb708afac19a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2374a8a749acf0bb8f1082a2b7f8083736a14e46
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967693"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798139"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |eventDateTime|DateTimeOffset|イベントが発生した時刻。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 |トラブルシューティングのエラーの詳細|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクト。|
-|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能なフィールドです。|
+|eventName|文字列|トラブルシューティングイベントに対応するイベント名。 省略可能なフィールドです。|
 |additionalinformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット|
 
 
@@ -136,7 +136,6 @@ Content-Length: 901
   ]
 }
 ```
-
 
 
 

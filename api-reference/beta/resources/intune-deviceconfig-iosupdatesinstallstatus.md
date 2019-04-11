@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b4fdd0e857976d6e9721c3f50e9af6f7960454c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1e9b1b3584436ac62c48fe84340834f849558d4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797915"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosupん installstatus 列挙型
 
@@ -26,7 +26,7 @@ ms.locfileid: "30173060"
 |使用可能|1-d|まだ文書化されていません|
 |アイドル|pbm-2|まだ文書化されていません|
 |不明|1/3|まだ文書化されていません|
-|ダウンロード|-2016330712|まだ文書化されていません|
+|すれ|-2016330712|まだ文書化されていません|
 |downloadfailed|-2016330711|まだ文書化されていません|
 |downloadRequiresComputer|-2016330710|まだ文書化されていません|
 |downloadInsufficientSpace|-2016330709|まだ文書化されていません|
@@ -39,6 +39,7 @@ ms.locfileid: "30173060"
 |installfailed|-2016330702|まだ文書化されていません|
 |notSupportedOperation|-2016330701|まだ文書化されていません|
 |sharedDeviceUserLoggedInError|-2016330699|まだ文書化されていません|
+
 
 
 

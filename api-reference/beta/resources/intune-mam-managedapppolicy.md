@@ -4,12 +4,12 @@ description: ManagedAppPolicy リソースは、プラットフォーム特有�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e98735a03583fef25fc460c6f989a5a7edf9b44
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 610012b216a0fe924af3cd4f08fb3928e504454b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144024"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798860"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy リソースの種類
 
@@ -22,7 +22,7 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) コレクション|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedAppPolicies のリスト](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) コレクション|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[targetApps アクション](../api/intune-mam-managedapppolicy-targetapps.md)|なし|まだ文書化されていません|
 
@@ -33,7 +33,7 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 |説明|String|ポリシーの説明。|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 |id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
@@ -62,6 +62,7 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
   "version": "String"
 }
 ```
+
 
 
 

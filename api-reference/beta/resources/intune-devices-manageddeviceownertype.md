@@ -4,12 +4,12 @@ description: デバイスの所有者の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17f85b01ac2fb1dc54edf21e22cd4dd8aa883eb7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 21ee6fa9a64dfb0891282ff79363ed1ca8f57bdd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796417"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 列挙型
 
@@ -23,8 +23,9 @@ ms.locfileid: "30153943"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|わかり.|
-|company|1-d|会社によって所有されます。|
+|会社|1-d|会社によって所有されます。|
 |personal|pbm-2|ユーザーによって所有されます。|
+
 
 
 

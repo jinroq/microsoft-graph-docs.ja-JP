@@ -4,12 +4,12 @@ description: Android for Work アプリケーションのカスタム構成ス�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0de75506419ea0e403c7f55af07459514abb408c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 086da317eedc908ea44a7ec0d1b9140bbe0534b4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147734"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795192"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem リソース タイプ
 
@@ -22,9 +22,9 @@ Android for Work アプリケーションのカスタム構成スキーマ内の
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|schemaItemKey|String|アイテムを識別するためにアプリケーションが使用する一意のキー|
+|schemaItemKey|文字列|アイテムを識別するためにアプリケーションが使用する一意のキー|
 |displayName|String|人間が判読できる名前|
-|説明|文字列|アプリケーション内でアイテムが制御する内容の説明|
+|説明|String|アプリケーション内でアイテムが制御する内容の説明|
 |defaultBoolValue|Boolean|アプリの開発者が指定している場合、ブール型のアイテムの既定値|
 |defaultIntValue|Int32|アプリの開発者が指定している場合、整数型のアイテムの既定値|
 |defaultStringValue|String|アプリの開発者が指定している場合、文字列型のアイテムの既定値|
@@ -64,6 +64,7 @@ Android for Work アプリケーションのカスタム構成スキーマ内の
   ]
 }
 ```
+
 
 
 

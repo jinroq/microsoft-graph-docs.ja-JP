@@ -4,12 +4,12 @@ description: このエンティティにはデータが含まれており、こ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3eae52bbb19eaca46c74d275ae7da3d16050a50e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144703"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799917"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -27,27 +27,27 @@ ms.locfileid: "30144703"
 |[intuneBrandingProfile を作成する](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。|
 |[intuneBrandingProfile の削除](../api/intune-wip-intunebrandingprofile-delete.md)|なし|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を削除します。|
 |[intuneBrandingProfile の更新](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
-|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
+|[アクションの割り当て](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|プロファイルキー|
-|profileName|String|プロファイルの名前|
-|profiledescription|String|プロファイルの説明|
-|isdefaultprofile|ブール値|既定でプロファイルが使用されているかどうかを示します。|
+|id|String|プロファイルキー|
+|profileName|文字列|プロファイルの名前|
+|profiledescription|文字列|プロファイルの説明|
+|isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|String|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|文字列|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
@@ -108,6 +108,7 @@ ms.locfileid: "30144703"
   }
 }
 ```
+
 
 
 

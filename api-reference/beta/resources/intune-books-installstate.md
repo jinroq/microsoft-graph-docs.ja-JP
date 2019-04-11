@@ -4,12 +4,12 @@ description: インストール状態の値を指定できます。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0554df30b4d7165c0164749730e2584af6cc35fd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 25b731f79ed78b7eb4f52a38eaa53a5b49e3df80
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158213"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798706"
 ---
 # <a name="installstate-enum-type"></a>installstate 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30158213"
 |notinstalled|1/3|インストールされていません。|
 |アンインストールの失敗|2/4|アンインストールに失敗しました。|
 |不明|5|わかり.|
+
 
 
 

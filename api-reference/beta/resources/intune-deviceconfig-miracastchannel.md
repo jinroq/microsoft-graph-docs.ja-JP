@@ -4,12 +4,12 @@ description: Miracast チャネルに指定できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0527aac2e78c7abdbc9f816f2a16d549f781947e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e352bd96e5bef9d5400d7b148f1ca0b72a95acd3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148875"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796095"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 列挙型
 
@@ -27,11 +27,11 @@ Miracast チャネルに指定できる値。
 |two|pbm-2|2つ.|
 |three|1/3|選ん.|
 |four|2/4|本.|
-|5 つ|5|つま.|
-|6 つ|シックス|本.|
-|7 つ|7|階層.|
-|8 つ|~|~.|
-|9 つ|i-9|9.|
+|five|5|つま.|
+|本|シックス|本.|
+|階層|7|階層.|
+|~|~|~.|
+|9|i-9|9.|
 |9|個|9.|
 |eleven|#|Eleven.|
 |thirtySix|36|36|
@@ -39,14 +39,11 @@ Miracast チャネルに指定できる値。
 |fortyfour|44|44|
 |fortyEight|48|48|
 |oneHundredFortyNine|149|OneHundredForty-9。|
-|oneHundredFiftyThree| 
-153 
-|OneHundredFifty-3。|
-|oneHundredFiftySeven| 
-157 
-|OneHundredFifty-7。|
+|oneHundredFiftyThree|153|OneHundredFifty-3。|
+|oneHundredFiftySeven|157|OneHundredFifty-7。|
 |oneHundredSixtyOne|161|OneHundredSixty-1。|
 |oneHundredSixtyFive|165|OneHundredSixty-5。|
+
 
 
 

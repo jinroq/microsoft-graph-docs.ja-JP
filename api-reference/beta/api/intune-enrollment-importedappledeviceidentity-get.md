@@ -4,12 +4,12 @@ description: importedAppleDeviceIdentity オブジェクトのプロパティと
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb380846bffb5cbb60ae217f34605ef04bce1f7b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0440f58971807224488b05d758b805c6573229d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962996"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797061"
 ---
 # <a name="get-importedappledeviceidentity"></a>importedAppleDeviceIdentity を取得する
 
@@ -84,6 +84,7 @@ Content-Length: 648
   }
 }
 ```
+
 
 
 

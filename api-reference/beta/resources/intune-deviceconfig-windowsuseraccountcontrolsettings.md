@@ -4,12 +4,12 @@ description: Windows ユーザーアカウント制御設定に指定できる�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8302566eea465ec4477a01845778ab2d7ddee9fe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b63fe44abfb0a06e5978d78e49c392c08122e38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146712"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795787"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 列挙型
 
@@ -27,6 +27,7 @@ Windows ユーザーアカウント制御設定に指定できる値。
 |notifyonappchanges|pbm-2|アプリの変更について通知します。|
 |notifyonappのすべての非追加暗転|1/3|デスクトップを暗転せずに、アプリの変更について通知します。|
 |neverNotify|2/4|通知しません。|
+
 
 
 

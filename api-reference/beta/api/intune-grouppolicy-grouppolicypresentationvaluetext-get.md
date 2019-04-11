@@ -4,12 +4,12 @@ description: groupPolicyPresentationValueText オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38f6a390887ef78025371ee01bd83507607cd51f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ba8c66012870735987cc92e4218dc242ab7d7bda
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989191"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799896"
 ---
 # <a name="get-grouppolicypresentationvaluetext"></a>groupPolicyPresentationValueText を取得する
 
@@ -77,6 +77,7 @@ Content-Length: 302
   }
 }
 ```
+
 
 
 

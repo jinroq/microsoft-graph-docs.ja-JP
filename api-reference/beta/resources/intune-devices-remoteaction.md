@@ -4,12 +4,12 @@ description: リモートアクション Intune がサポートしています�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4eb232f53ecb6b857e1a762ac0bef59c9ca246a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4d7835ac9ecc1c9e7df7724032a97d31d7d99069
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174875"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799441"
 ---
 # <a name="remoteaction-enum-type"></a>remoteaction 列挙型
 
@@ -41,6 +41,7 @@ ms.locfileid: "30174875"
 |updatedeviceaccount|16|ユーザーがデバイス上のアカウントを更新するアクションを開始します。|
 |自動再展開|インチ|ユーザーがデバイスを自動化して再展開するアクションを開始する|
 |シャット|個|ユーザーがデバイスをシャットダウンするアクションを開始します。|
+
 
 
 

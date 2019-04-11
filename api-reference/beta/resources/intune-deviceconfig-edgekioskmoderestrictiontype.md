@@ -4,12 +4,12 @@ description: Microsoft Edge の設定がキオスクモードに基づいて制�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0dcd1d30895acbdecf9d9cc706ee14b7907f14f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74b03555456c058411c9a50c7392f29fe60d3aed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177960"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799546"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 列挙型
 
@@ -27,6 +27,7 @@ Microsoft Edge の設定がキオスクモードに基づいて制限される�
 |normalmode|pbm-2|標準モード (完全版の Microsoft Edge)。|
 |publicた singsingleapp|1/3|単一アプリモードでのパブリックブラウズ。|
 |publicbrowsingmultiapp|2/4|マルチアプリモードでのパブリックブラウズ (inPrivate)。|
+
 
 
 

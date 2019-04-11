@@ -1,15 +1,15 @@
 ---
 title: disconnect アクション
-description: まだ文書化されていません
+description: アクティブな TeamViewer connector を削除する要求
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b07297796f4da30421e5d9eaf8ffdcce2d46efdd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dda674128dc42690ec5385cf5e2ac350f9284fc1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970143"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795409"
 ---
 # <a name="disconnect-action"></a>切断アクション
 
@@ -17,7 +17,7 @@ ms.locfileid: "30970143"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+アクティブな TeamViewer connector を削除する要求
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

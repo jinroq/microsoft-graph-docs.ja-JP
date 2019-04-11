@@ -4,12 +4,12 @@ description: devicemanagementcollectionsettingdefinition を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 691e380afe7d2867482c6f7dfef28c2b302b26c9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 85973c5408c9e4faacd4cddcdf08250724692009
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522322"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797033"
 ---
 # <a name="delete-devicemanagementcollectionsettingdefinition"></a>devicemanagementcollectionsettingdefinition の削除
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

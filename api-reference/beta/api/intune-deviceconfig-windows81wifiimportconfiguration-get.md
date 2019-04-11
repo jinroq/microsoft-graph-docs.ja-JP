@@ -4,12 +4,12 @@ description: windows81WifiImportConfiguration オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3954fc2bfb415eff2dfcf038ffd4c044276adce
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f2203c4b49cfef16a35d8fa40c3d330609135af7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963822"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796662"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>windows81WifiImportConfiguration を取得する
 
@@ -88,6 +88,7 @@ Content-Length: 600
   }
 }
 ```
+
 
 
 

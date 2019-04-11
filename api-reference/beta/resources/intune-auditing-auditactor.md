@@ -4,12 +4,12 @@ description: 監査アクターのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b748eaea907bc2f763bb5567d7963c33b31bddd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 77150c7a2b883acc6857cd0866459fb9423dfa6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141126"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798748"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
@@ -24,12 +24,12 @@ ms.locfileid: "30141126"
 |:---|:---|:---|
 |type|String|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
-|applicationId|String|AAD アプリケーション ID。|
-|applicationDisplayName|String|アプリケーションの名前。|
-|userPrincipalName|文字列|ユーザー プリンシパル名 (UPN)。|
-|servicePrincipalName|String|サービス プリンシパル名 (SPN)。|
+|applicationId|文字列|AAD アプリケーション ID。|
+|applicationDisplayName|文字列|アプリケーションの名前。|
+|userPrincipalName|String|ユーザー プリンシパル名 (UPN)。|
+|servicePrincipalName|文字列|サービス プリンシパル名 (SPN)。|
 |ipAddress|String|IPAddress。|
-|userId|String|ユーザー ID。|
+|userId|文字列型 (String)|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -56,6 +56,7 @@ ms.locfileid: "30141126"
   "userId": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: グループポリシーファイルまたは定義の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 728b60f72e7686a992ea660a0510208b9ac83eff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b1f38b6185b1a65a7480219741b8771f613fcfd1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168720"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796039"
 ---
 # <a name="grouppolicytype-enum-type"></a>groupPolicyType 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30168720"
 |:---|:---|:---|
 |の復元|.0|ポリシー構成サービスプロバイダー (CSP) に組み込まれているグループポリシー管理用テンプレート。|
 |admxIngested|1-d|ポリシー構成サービスプロバイダー (CSP) を使用してインストールされたグループポリシー管理用テンプレート。|
+
 
 
 

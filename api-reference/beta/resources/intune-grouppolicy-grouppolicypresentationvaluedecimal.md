@@ -4,12 +4,12 @@ description: エンティティは、ポリシー定義の10進テキストボ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ba15c9875b45ce9f250aabb2cbffc8cceea81f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e260c1f554667429e5086c1f5c9eb603bd098f56
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163701"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799168"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>groupPolicyPresentationValueDecimal リソースの種類
 
@@ -62,6 +62,7 @@ ms.locfileid: "30163701"
   "value": 1024
 }
 ```
+
 
 
 

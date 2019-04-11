@@ -4,12 +4,12 @@ description: カスタムグループ id の種類
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3b00920d0ead3df5fe694e110825615f449ef4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d4f369c9a3b62480549f19d4a7c1d7b1d0bb196
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177974"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796592"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>deliveryOptimizationGroupIdCustom リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "30177974"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|groupidcustom|String|デバイスが属する任意のグループ ID を指定します。|
+|groupidcustom|文字列|デバイスが属する任意のグループ ID を指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -43,6 +43,7 @@ ms.locfileid: "30177974"
   "groupIdCustom": "String"
 }
 ```
+
 
 
 

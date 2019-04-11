@@ -4,12 +4,12 @@ description: Windows10SecureAssessment configurationaccount で許可されて�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6698086b3da16466e9069781312e15ccd7c80c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4fa14d90465ed9278fd20362800d5d111de62950
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795010"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 列挙型
 
@@ -22,9 +22,10 @@ Windows10SecureAssessment configurationaccount で許可されているアカウ
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|azureADAccount|.0|Azure AD アカウントが AzureAD\username@tenant.com の形式であることを示します。|
-|domainaccount|1-d|ドメインアカウントが domain\user または user@domain.com の形式であることを示します。|
+|azureADAccount|.0|Azure AD アカウントがのAzureAD\username@tenant.com形式であることを示します。|
+|domainaccount|1-d|ドメインアカウントが domain\user またはuser@domain.comの形式であることを示します。|
 |localaccount|pbm-2|ユーザー名の形式でローカルアカウントを示します。|
+
 
 
 

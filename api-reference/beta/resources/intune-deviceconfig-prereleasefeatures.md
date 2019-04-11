@@ -4,12 +4,12 @@ description: プレリリース機能に使用できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d9cc6e2960858f68deb440362961c38eae39287
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b22e12d5c27db40cfdab07c54fda28239a3d08d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144689"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797572"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30144689"
 |settingsonly|1-d|Settings の事前リリース機能のみ。|
 |settingsAndExperimentations|pbm-2|設定と experimentations プレリリース機能。|
 |notAllowed|1/3|プレリリース機能は許可されていません。|
+
 
 
 

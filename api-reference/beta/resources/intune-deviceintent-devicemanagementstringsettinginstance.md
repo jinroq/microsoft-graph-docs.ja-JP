@@ -4,12 +4,12 @@ description: 文字列値を表す設定インスタンス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ea58c6fdb4a8ad3a2a68ead7044943093c22bb1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 3297085a905934792de2d371f295b467ad9a8e44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522546"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794947"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>devicemanagementstringsettinginstance リソースの種類
 
@@ -26,10 +26,10 @@ ms.locfileid: "31522546"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementstringsettinginstances を一覧表示する](../api/intune-deviceintent-devicemanagementstringsettinginstance-list.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)コレクション|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementstringsettinginstance を取得する](../api/intune-deviceintent-devicemanagementstringsettinginstance-get.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementstringsettinginstance の作成](../api/intune-deviceintent-devicemanagementstringsettinginstance-create.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|新しい[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトを作成します。|
+|[devicemanagementstringsettinginstance を取得する](../api/intune-deviceintent-devicemanagementstringsettinginstance-get.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementstringsettinginstance の作成](../api/intune-deviceintent-devicemanagementstringsettinginstance-create.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|新しい[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトを作成します。|
 |[devicemanagementstringsettinginstance の削除](../api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md)|なし|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)を削除します。|
-|[devicemanagementstringsettinginstance の更新](../api/intune-deviceintent-devicemanagementstringsettinginstance-update.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementstringsettinginstance の更新](../api/intune-deviceintent-devicemanagementstringsettinginstance-update.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -59,8 +59,6 @@ ms.locfileid: "31522546"
   "value": "String"
 }
 ```
-
-
 
 
 

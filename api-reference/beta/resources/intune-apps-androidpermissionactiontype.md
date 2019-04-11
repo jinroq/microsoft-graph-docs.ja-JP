@@ -4,12 +4,12 @@ description: アプリが危険なアクセス許可を要求したときに実�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32e275ffc6fd3f6fd5faf4d44e594d19e599310a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c832add0d338a18ca098feae80ba54d1cc07032
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168594"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795206"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>androidpermissionactiontype 列挙型
 
@@ -22,9 +22,10 @@ ms.locfileid: "30168594"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|Prompt|.0|まだ文書化されていません|
+|音声ガイダンス|.0|まだ文書化されていません|
 |autogrant|1-d|まだ文書化されていません|
 |autodeny|pbm-2|まだ文書化されていません|
+
 
 
 

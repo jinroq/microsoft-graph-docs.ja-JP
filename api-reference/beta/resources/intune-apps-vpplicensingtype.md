@@ -4,12 +4,12 @@ description: iOS Volume-Purchase Program (VPP) ライセンスの種類のプロ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f09ca9a8f891b90563ebad2cff74775f4c6fb7c2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2f4966b6608bcd96720c4260191388979e811061
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168398"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796466"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType リソースの種類
 
@@ -22,9 +22,9 @@ iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|supportuserlicensing|ブール値|プログラムがユーザー ライセンスの種類をサポートするかどうか。|
+|supportuserlicensing|Boolean|プログラムがユーザー ライセンスの種類をサポートするかどうか。|
 |supportdevicelicenel|ブール型 (Boolean)|プログラムがデバイス ライセンスの種類をサポートするかどうか。|
-|supportsUserLicensing|ブール値|プログラムがユーザー ライセンスの種類をサポートするかどうか。|
+|supportsUserLicensing|Boolean|プログラムがユーザー ライセンスの種類をサポートするかどうか。|
 |supportsDeviceLicensing|ブール型 (Boolean)|プログラムがデバイス ライセンスの種類をサポートするかどうか。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -46,6 +46,7 @@ iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが�
   "supportsDeviceLicensing": true
 }
 ```
+
 
 
 

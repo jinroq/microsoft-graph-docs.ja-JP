@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c9b6134760cc29907c9eaee226f9210b125db04
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cffcb94283b25e0771ba836458392adb081e9411
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972278"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795101"
 ---
 # <a name="sync-action"></a>同期アクション
 
@@ -77,6 +77,7 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

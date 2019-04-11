@@ -4,12 +4,12 @@ description: 組織のアプリ保護と構成の状態を表します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cc9f6596e9d9361a8c211809bf0f621fe36bcd4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6df9c36f15e3e20389dfc46d306b896c3fe77b5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153159"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799147"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus リソースの種類
 
@@ -22,14 +22,14 @@ ms.locfileid: "30153159"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List managedAppStatuses](../api/intune-mam-managedappstatus-list.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) コレクション|[managedAppStatus](../resources/intune-mam-managedappstatus.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedAppStatuses のリスト](../api/intune-mam-managedappstatus-list.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) コレクション|[managedAppStatus](../resources/intune-mam-managedappstatus.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get managedAppStatus](../api/intune-mam-managedappstatus-get.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|進捗レポートのフレンドリ名。|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -51,6 +51,7 @@ ms.locfileid: "30153159"
   "version": "String"
 }
 ```
+
 
 
 

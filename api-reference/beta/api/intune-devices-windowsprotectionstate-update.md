@@ -4,12 +4,12 @@ description: windowsprotectionstate オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b53e93f09be2b091ffe3e6a30cd109feb55c8d8a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973888"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797404"
 ---
 # <a name="update-windowsprotectionstate"></a>windowsprotectionstate の更新
 
@@ -61,13 +61,13 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |signatureupdateoverdue|Boolean|署名が古くなっているかどうか|
 |rebootRequired|Boolean|再起動が必要かどうか|
 |fullscanrequired|Boolean|フルスキャンが必要かどうか。|
-|engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
-|signatureversion|String|現在のマルウェア定義バージョン|
-|antiMalwareVersion|String|現在のマルウェア対策バージョン|
+|engineVersion|文字列|現在のエンドポイント保護エンジンのバージョン|
+|signatureversion|文字列|現在のマルウェア定義バージョン|
+|antiMalwareVersion|文字列|現在のマルウェア対策バージョン|
 |lastquickscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
 |lastfullscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
-|lastquickscansignatureversion|String|最終クイックスキャン署名バージョン|
-|lastfullscansignatureversion|String|前回のフルスキャン署名バージョン|
+|lastquickscansignatureversion|文字列|最終クイックスキャン署名バージョン|
+|lastfullscansignatureversion|文字列|前回のフルスキャン署名バージョン|
 |lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
 
@@ -135,6 +135,7 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

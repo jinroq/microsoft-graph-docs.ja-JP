@@ -4,12 +4,12 @@ description: AppLocker アプリケーションコントロールタイプの可
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22d108dd3bad90341031d1e965948a9daa59efa1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4fab692743e0e76b37e81ff88e7a4d464c96e17
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141357"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799497"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType 列挙型
 
@@ -27,6 +27,7 @@ AppLocker アプリケーションコントロールタイプの可能な値
 |auditComponentsAndStoreApps|pbm-2|Windows コンポーネントおよびストアアプリを監査します。|
 |enforceComponentsStoreAppsAndSmartlocker|1/3|Windows コンポーネント、ストアアプリ、およびスマートロッカーを適用します。|
 |auditComponentsStoreAppsAndSmartlocker|2/4|Windows コンポーネント、ストアアプリ、およびスマートロッカーを監査します。|
+
 
 
 

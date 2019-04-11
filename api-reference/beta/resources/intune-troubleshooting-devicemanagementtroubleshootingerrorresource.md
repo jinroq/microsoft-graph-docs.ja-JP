@@ -4,12 +4,12 @@ description: 'オブジェクト: トラブルシューティング情報への�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25d97a6d085b9f1b7e0b1ab73361be3ac7ae74d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5905f62a1da0329db1b311ae586cdb64517a2b5d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155560"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796543"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>devicemanagementのトラブルシューティング errorresource リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30155560"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |text|String|まだ文書化されていません|
-|link|String|web リソースへのリンク。 次のいずれかのフォーマッタを含めることができます。 {{UPN}}、{{deviceguid}}、{{userguid}}|
+|link|文字列|web リソースへのリンク。 次のいずれかのフォーマッタを含めることができます。 {{UPN}}、{{deviceguid}}、{{userguid}}|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,7 +42,6 @@ ms.locfileid: "30155560"
   "link": "String"
 }
 ```
-
 
 
 

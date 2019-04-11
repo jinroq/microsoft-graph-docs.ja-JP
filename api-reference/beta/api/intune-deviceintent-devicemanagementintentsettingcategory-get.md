@@ -4,12 +4,12 @@ description: devicemanagementintentsettingcategory オブジェクトのプロ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 79bfceede3dd2c3a433e0599b42283f9a62f0fc4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a1be017bd1d56e3501cbac86551c48b7a1cb7d6a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522469"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795612"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>devicemanagementintentsettingcategory の取得
 
@@ -75,8 +75,6 @@ Content-Length: 193
   }
 }
 ```
-
-
 
 
 

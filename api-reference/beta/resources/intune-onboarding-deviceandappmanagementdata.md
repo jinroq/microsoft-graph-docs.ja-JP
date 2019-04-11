@@ -4,12 +4,12 @@ description: エクスポートされたデータ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3b91b0186b2263a936cabe02bd533a550a24748
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154853"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795710"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>deviceandappmanagementdata リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30154853"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|content|ストリーム|まだ文書化されていません|
+|content|Stream|まだ文書化されていません|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -40,6 +40,7 @@ ms.locfileid: "30154853"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

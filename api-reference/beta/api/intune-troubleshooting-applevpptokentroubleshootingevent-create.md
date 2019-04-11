@@ -4,12 +4,12 @@ description: 新しいりんご evpptokenのトラブルシューティングイ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ad90df79aac080a2fbcfaab920e476c1162768e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e136b7a3a1fc43792a521e0b15678936b3d74641
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972040"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799623"
 ---
 # <a name="create-applevpptokentroubleshootingevent"></a>「りんご evpptokenトラブルシューティングイベントを作成する」
 
@@ -54,9 +54,9 @@ POST /deviceManagement/troubleshootingEvents
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |トラブルシューティングのエラーの詳細|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクト。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
-|eventName|String|トラブルシューティングイベントに対応するイベント名。 [devicemanagementトラブルシューティングイベント](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されるオプションフィールドです|
+|eventName|文字列|トラブルシューティングイベントに対応するイベント名。 [devicemanagementトラブルシューティングイベント](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されるオプションフィールドです|
 |additionalinformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|[devicemanagementトラブルシューティングイベント](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されたトラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
-|tokenid|String|Apple volume purchase program のトークン識別子です。|
+|tokenid|文字列|Apple volume purchase program のトークン識別子です。|
 
 
 
@@ -139,7 +139,6 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
 
 
 

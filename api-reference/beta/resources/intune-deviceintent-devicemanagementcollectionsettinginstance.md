@@ -4,12 +4,12 @@ description: 値のコレクションを表す設定インスタンス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31ce38adb753354c319a27e55cad8aa8a1e6024e
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 673268ce6679ea0dea393de4949cc005fa03c832
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524548"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799084"
 ---
 # <a name="devicemanagementcollectionsettinginstance-resource-type"></a>devicemanagementcollectionsettinginstance リソースの種類
 
@@ -26,10 +26,10 @@ ms.locfileid: "31524548"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementcollectionsettinginstances を一覧表示する](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)コレクション|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementcollectionsettinginstance を取得する](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementcollectionsettinginstance の作成](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|新しい[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトを作成します。|
+|[devicemanagementcollectionsettinginstance を取得する](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md)|[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementcollectionsettinginstance の作成](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md)|[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|新しい[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトを作成します。|
 |[devicemanagementcollectionsettinginstance の削除](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md)|なし|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)を削除します。|
-|[devicemanagementcollectionsettinginstance の更新](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementcollectionsettinginstance の更新](../api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md)|[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)|[devicemanagementcollectionsettinginstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -59,8 +59,6 @@ ms.locfileid: "31524548"
   "valueJson": "String"
 }
 ```
-
-
 
 
 

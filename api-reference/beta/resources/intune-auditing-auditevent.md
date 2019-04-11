@@ -4,12 +4,12 @@ description: 監査イベントのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fd9971b5b6ddce9b3a826ff569d1925ef9cff97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c6004db55f25f92261de8fd6ee2a5418928e9a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153677"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798524"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent リソース タイプ
 
@@ -22,25 +22,25 @@ ms.locfileid: "30153677"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List auditEvents](../api/intune-auditing-auditevent-list.md)|[auditEvent](../resources/intune-auditing-auditevent.md) コレクション|[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[auditEvents のリスト](../api/intune-auditing-auditevent-list.md)|[auditEvent](../resources/intune-auditing-auditevent.md) コレクション|[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get auditEvent](../api/intune-auditing-auditevent-get.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|新しい [auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトを作成します。|
+|[auditEvent の作成](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|新しい [auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトを作成します。|
 |[Delete auditEvent](../api/intune-auditing-auditevent-delete.md)|なし|[auditEvent](../resources/intune-auditing-auditevent.md) を削除します。|
-|[Update auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティを更新します。|
+|[auditEvent の更新](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティを更新します。|
 |[getAuditCategories function](../api/intune-auditing-auditevent-getauditcategories.md)|String コレクション|まだ文書化されていません|
-|[getAuditActivityTypes function](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String コレクション|まだ文書化されていません|
+|[getAuditActivityTypes 関数](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|displayName|文字列型 (String)|イベントの表示名。|
-|componentName|String|コンポーネント名。|
+|id|文字列型 (String)|エンティティのキー。|
+|displayName|String|イベントの表示名。|
+|componentName|文字列|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
-|activity|String|わかりやすいアクティビティの名前。|
+|activity|文字列|わかりやすいアクティビティの名前。|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時 (UTC)。|
-|activityType|String|実行されたアクティビティの種類。|
-|activityOperationType|String|アクティビティの HTTP 操作の種類。|
+|activityType|文字列|実行されたアクティビティの種類。|
+|activityOperationType|文字列|アクティビティの HTTP 操作の種類。|
 |activityResult|String|アクティビティの結果。|
 |correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) コレクション|変更中のリソースです。|
@@ -101,6 +101,7 @@ ms.locfileid: "30153677"
   "category": "String"
 }
 ```
+
 
 
 

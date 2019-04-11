@@ -4,12 +4,12 @@ description: 管理対象アプリについてアプリケーションデータ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47396f32ed23234c5fe758a29b6e97ee3602234f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 962e759e83b08baf7fc150e07dc84ed7146feb0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159081"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799532"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30159081"
 |afterdevicerestart|1-d|アプリのデータは、デバイスの再起動時に暗号化されます。|
 |whenDeviceLockedExceptOpenFiles|pbm-2|このポリシーに関連付けられたアプリデータは、開いているファイル内のデータを除き、デバイスがロックされたときに暗号化されます。|
 |whendevicelocked|1/3|デバイスがロックされている場合、このポリシーに関連付けられているアプリデータは暗号化されます。|
+
 
 
 

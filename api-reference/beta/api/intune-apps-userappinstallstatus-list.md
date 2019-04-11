@@ -4,12 +4,12 @@ description: userappinstallstatus オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84d2f7e1a4211bc717a57c5f80e774f5aa66c405
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 775d6680abb6f5620b1941dc14ee15720757fe26
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980293"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797187"
 ---
 # <a name="list-userappinstallstatuses"></a>userappinstallstatuses 状態を一覧表示する
 
@@ -78,6 +78,7 @@ Content-Length: 349
   ]
 }
 ```
+
 
 
 

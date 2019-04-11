@@ -4,12 +4,12 @@ description: microsoftStoreForBusinessContainedApp オブジェクトのプロ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645910272847fa075d34a6739258187b38acb8b6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 20526c67ba34a2e508b625f8bc2fafeb9ba0b2eb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988260"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798594"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>microsoftStoreForBusinessContainedApp の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
-|appUserModelId|String|microsoft storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
+|appUserModelId|文字列|microsoft storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
 
 
 
@@ -88,6 +88,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: グループポリシー定義の追加オプションを表示す�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d6abbcde241059a15969236b3ab7bcb0825d67d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166879"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797243"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>groupPolicyPresentation リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "30166879"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -53,6 +53,7 @@ ms.locfileid: "30166879"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

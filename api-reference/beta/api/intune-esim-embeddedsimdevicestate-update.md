@@ -4,12 +4,12 @@ description: embeddedSIMDeviceState オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8307ebc185a6543b706befc433b7e26b17702b38
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1fbf7679467e228531bb7bc57eb9e11f5a2c9eff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981980"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797761"
 ---
 # <a name="update-embeddedsimdevicestate"></a>embeddedSIMDeviceState の更新
 
@@ -54,11 +54,11 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |createdDateTime|DateTimeOffset|埋め込み SIM デバイスの状態が作成された時刻。 サービス側を生成しました。|
 |modifiedDateTime|DateTimeOffset|埋め込み SIM デバイスの状態が最後に変更された時刻。 サービス側を更新しました。|
 |lastSyncDateTime|DateTimeOffset|埋め込まれた SIM デバイスが最後にチェックインされた時刻。 サービス側を更新しました。|
-|universalIntegratedCircuitCardIdentifier|String|プロファイルが展開されるハードウェアを識別するユニバーサル統合回路カード識別子 (UICCID)。|
-|deviceName|String|サブスクリプションが準備されたデバイス名 (デスクトップの例: JOE)|
-|userName|String|サブスクリプションが準備されたユーザー名 (joe@contoso.com など)|
+|universalIntegratedCircuitCardIdentifier|文字列|プロファイルが展開されるハードウェアを識別するユニバーサル統合回路カード識別子 (UICCID)。|
+|deviceName|文字列|サブスクリプションが準備されたデバイス名 (デスクトップの例: JOE)|
+|userName|String|サブスクリプションが準備されたユーザー名 (例:)joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイル操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
-|statedetails|String|プロビジョニング状態の文字列の説明。|
+|statedetails|文字列|プロビジョニング状態の文字列の説明。|
 
 
 
@@ -105,6 +105,7 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: パスコードのリセット アクションの結果
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f4090309cb059c1f8cddca77cb787ff69f54c7f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4f7d6c3c8f2d339fa499fe09b5b1981833b2f020
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172038"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797677"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30172038"
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
+|startDateTime|DateTimeOffset|アクションが開始された時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承。|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承|
 |passcode|文字列型 (String)|デバイス用に新たに生成されたパスコード |
 
@@ -51,6 +51,7 @@ ms.locfileid: "30172038"
   "passcode": "String"
 }
 ```
+
 
 
 

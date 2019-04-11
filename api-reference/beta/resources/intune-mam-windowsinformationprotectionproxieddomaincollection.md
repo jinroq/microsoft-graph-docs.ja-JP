@@ -4,12 +4,12 @@ description: Windows 情報保護のプロキシ化されたドメイン コレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c03eba4089fc984478854cd50b378c0f2d9b155
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cf20d0a0afb33732278b9c8f988b3008854b770
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143408"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799273"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection リソースの種類
 
@@ -22,7 +22,7 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|表示名|
+|displayName|String|表示名|
 |proxiedDomains|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|プロキシ化されたドメインのコレクション|
 
 ## <a name="relationships"></a>関係
@@ -48,6 +48,7 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
   ]
 }
 ```
+
 
 
 

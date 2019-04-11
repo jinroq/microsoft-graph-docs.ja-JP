@@ -4,12 +4,12 @@ description: エラーとその修復に関する詳細情報を含むオブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08ad43b717a5e08229054bc10aa81a0786f4e344
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6cfcbe0688836fa394237f1a25656540e401555f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142582"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796186"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>devicemanagementトラブルシューティングエラーの詳細リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "30142582"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |context|String|まだ文書化されていません|
-|failure|String|まだ文書化されていません|
-|failuredetails|String|問題の詳細な説明。|
-|修復|String|この問題を修復する方法の詳細な説明。|
-|resources|[devicemanagementのトラブルシューティング errorresource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|このエラーについての有用なドキュメントへのリンクを示します。|
+|エラー|String|まだ文書化されていません|
+|failuredetails|文字列|問題の詳細な説明。|
+|修復|文字列|この問題を修復する方法の詳細な説明。|
+|リソース|[devicemanagementのトラブルシューティング errorresource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|このエラーについての有用なドキュメントへのリンクを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -54,7 +54,6 @@ ms.locfileid: "30142582"
   ]
 }
 ```
-
 
 
 

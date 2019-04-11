@@ -4,12 +4,12 @@ description: windowsDefenderAdvancedThreatProtectionConfiguration オブジェ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f682deb3a67d91e047c2ae0d40911b8a25ba8c7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0d1c0318158323a8ef7d7cdbcba5fbb76ae1c76f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983897"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796305"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>windowsDefenderAdvancedThreatProtectionConfiguration の取得
 
@@ -92,6 +92,7 @@ Content-Length: 1057
   }
 }
 ```
+
 
 
 
