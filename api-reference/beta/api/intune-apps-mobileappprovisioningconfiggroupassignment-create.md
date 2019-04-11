@@ -4,12 +4,12 @@ description: 新しい mobileAppProvisioningConfigGroupAssignment オブジェ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f75fff6f87431f3a3303a56e8a3495cf3dae68b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 155dff65bae47b5486e49fcbf268da5ab453f701
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980979"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790341"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>mobileAppProvisioningConfigGroupAssignment を作成する
 
@@ -50,7 +50,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|targetgroupid|String|アプリのプロビジョニング構成を対象とする AAD グループの ID。|
+|targetgroupid|文字列|アプリのプロビジョニング構成を対象とする AAD グループの ID。|
 |id|String|エンティティのキー。|
 
 
@@ -86,6 +86,7 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
+
 
 
 

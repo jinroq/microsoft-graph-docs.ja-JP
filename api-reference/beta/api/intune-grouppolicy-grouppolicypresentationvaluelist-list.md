@@ -4,12 +4,12 @@ description: grouppolicypresentationvaluelist オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f73aaeea0201d32ac8b138659379cf1696c24e35
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 56cefa757c08e6084fc96009a86e6addc994d109
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790334"
 ---
 # <a name="list-grouppolicypresentationvaluelists"></a>grouppolicypresentationvaluelists のリスト
 
@@ -82,6 +82,7 @@ Content-Length: 471
   ]
 }
 ```
+
 
 
 

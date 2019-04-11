@@ -4,12 +4,12 @@ description: deviceManagementAbstractComplexSettingDefinition オブジェクト
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a01cd287d5616e8cdc1bc29a383e2fc5b9cb9db4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 8d3d1c0fa8b1277307f887d9e625a4c38b0c93dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522686"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790096"
 ---
 # <a name="update-devicemanagementabstractcomplexsettingdefinition"></a>deviceManagementAbstractComplexSettingDefinition の更新
 
@@ -149,8 +149,6 @@ Content-Length: 851
   ]
 }
 ```
-
-
 
 
 

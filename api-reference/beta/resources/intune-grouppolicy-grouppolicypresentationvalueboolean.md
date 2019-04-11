@@ -4,12 +4,12 @@ description: エンティティは、ポリシー定義のチェックボック�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f748937572acb4239c14aad93a6a383d354baf1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f47087424474ea142098292d82748aeb10d6af16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167306"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790852"
 ---
 # <a name="grouppolicypresentationvalueboolean-resource-type"></a>grouppolicypresentationvalueboolean リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30167306"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|value|Boolean|関連付けられたプレゼンテーションのブール値。|
+|value|ブール型 (Boolean)|関連付けられたプレゼンテーションのブール値。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -62,6 +62,7 @@ ms.locfileid: "30167306"
   "value": true
 }
 ```
+
 
 
 

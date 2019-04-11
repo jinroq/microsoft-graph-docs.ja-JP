@@ -4,12 +4,12 @@ description: 削除モードを有効にする
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c288c0a506185927dfa00eb0da4606740c2a8892
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 735ee2659c603b03718a0e0031973dd5addb21eb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973685"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791629"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode アクション
 
@@ -34,9 +34,9 @@ ms.locfileid: "30973685"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/enableLostMode
 POST /deviceManagement/managedDevices/{managedDeviceId}/enableLostMode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/enableLostMode
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/enableLostMode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/enableLostMode
 ```
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|message|String|まだ文書化されていません|
+|メッセージ​​|String|まだ文書化されていません|
 |phoneNumber|String|まだ文書化されていません|
 |フッター|String|まだ文書化されていません|
 
@@ -67,7 +67,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/enableLostMode
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/enableLostMode
 
 Content-type: application/json
 Content-length: 103
@@ -84,6 +84,7 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい userInstallStateSummary オブジェクトを作成しま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39313dc5fc67f26d4e81e3c759fa65aff108a3dd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 03f1809736e5dc8c37f749e515cf10f6d126395e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791720"
 ---
 # <a name="create-userinstallstatesummary"></a>userInstallStateSummary の作成
 
@@ -95,6 +95,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

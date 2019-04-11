@@ -4,12 +4,12 @@ description: Windows 情報保護の DataRecoveryCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74c480b8117f3d8dbf0ad8208bac09b63b113906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 272a1e5f7bf1df1c9e16b2239caeee94cc81f12d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156190"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790635"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate リソースの種類
 
@@ -46,6 +46,7 @@ Windows 情報保護の DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
+
 
 
 

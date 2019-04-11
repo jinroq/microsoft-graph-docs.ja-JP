@@ -4,12 +4,12 @@ description: アプリ登録に対して適用される操作を表します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fb8ad24a86822b657e4f0239f78ab8f08656ee4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 545cacaa5f5d4c065e681dea1604d0fa89036132
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162210"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790278"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation リソースの種類
 
@@ -22,11 +22,11 @@ ms.locfileid: "30162210"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List managedAppOperations](../api/intune-mam-managedappoperation-list.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) コレクション|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedAppOperations のリスト](../api/intune-mam-managedappoperation-list.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) コレクション|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get managedAppOperation](../api/intune-mam-managedappoperation-get.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create managedAppOperation](../api/intune-mam-managedappoperation-create.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|新しい [managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトを作成します。|
+|[managedAppOperation の作成](../api/intune-mam-managedappoperation-create.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|新しい [managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトを作成します。|
 |[Delete managedAppOperation](../api/intune-mam-managedappoperation-delete.md)|なし|[managedAppOperation](../resources/intune-mam-managedappoperation.md) を削除します。|
-|[Update managedAppOperation](../api/intune-mam-managedappoperation-update.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティを更新します。|
+|[managedAppOperation の更新](../api/intune-mam-managedappoperation-update.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -35,7 +35,7 @@ ms.locfileid: "30162210"
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
 |state|String|操作の現在の状態。|
 |id|文字列|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -58,6 +58,7 @@ ms.locfileid: "30162210"
   "version": "String"
 }
 ```
+
 
 
 

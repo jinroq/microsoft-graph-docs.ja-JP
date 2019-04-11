@@ -4,12 +4,12 @@ description: デバイス上のインストールの進行状況のセットア�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30671c76cb8cb21062fec66d2b7835bb5e8f3726
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 76dc0253f6c74ed81e65eeefb62b7196f1674aac
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158164"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791132"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>officeSuiteInstallProgressDisplayLevel 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30158164"
 |:---|:---|:---|
 |none|.0|まだ文書化されていません|
 |完全|1-d|まだ文書化されていません|
+
 
 
 

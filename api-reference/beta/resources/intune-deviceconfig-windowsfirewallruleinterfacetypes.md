@@ -4,12 +4,12 @@ description: ファイアウォール規則のインターフェイスの種類�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cbc7372f13962056deb976a5339648544227636
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 7196f3d59e92d26cb832063ce053d61fac2cb828
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631577"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791286"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 列挙型
 
@@ -23,9 +23,10 @@ ms.locfileid: "30631577"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|フラグは設定しません。|
-|リモート|1|リモートアクセスインターフェイスの種類。|
-|通信|2|ワイヤレスインターフェイスの種類。|
+|リモート|1-d|リモートアクセスインターフェイスの種類。|
+|通信|pbm-2|ワイヤレスインターフェイスの種類。|
 |ローカル|2/4|LAN インターフェイスの種類。|
+
 
 
 

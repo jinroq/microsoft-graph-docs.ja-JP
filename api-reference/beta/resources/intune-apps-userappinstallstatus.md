@@ -4,12 +4,12 @@ description: ユーザーのインストール状態のプロパティが含ま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4778728fbec389b276e5098ffa859f13ccb6a9e4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143961"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791118"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userappinstallstatus リソースの種類
 
@@ -63,6 +63,7 @@ ms.locfileid: "30143961"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

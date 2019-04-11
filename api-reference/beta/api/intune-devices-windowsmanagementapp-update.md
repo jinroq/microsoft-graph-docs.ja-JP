@@ -4,12 +4,12 @@ description: windowsmanagementapp オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b68af1276d24845e3bb90b5e7a6db38a09806aa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f4eb4787113d6172ee3523c463191dff0948f75d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962842"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790194"
 ---
 # <a name="update-windowsmanagementapp"></a>windowsmanagementapp の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|Windows management アプリの一意識別子|
-|プロパティ availableversion|String|Windows management アプリの利用可能なバージョン。|
+|プロパティ availableversion|文字列|Windows management アプリの利用可能なバージョン。|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
+
 
 
 

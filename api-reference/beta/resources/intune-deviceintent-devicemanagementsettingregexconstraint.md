@@ -4,12 +4,12 @@ description: 指定された RegEx パターンに対して設定の一致を強
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52369b5309768bd5530d176a7ccfbfabb1365b62
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 76bb80edaec0ccd53cc9f0923a7df7b1c595dc60
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792287"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>deviceManagementSettingRegexConstraint リソースの種類
 
@@ -43,8 +43,6 @@ ms.locfileid: "31522378"
   "regex": "String"
 }
 ```
-
-
 
 
 

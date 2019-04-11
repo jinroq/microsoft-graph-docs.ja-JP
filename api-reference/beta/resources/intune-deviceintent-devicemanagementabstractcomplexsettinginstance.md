@@ -4,12 +4,12 @@ description: 抽象設定の複雑な値を表す設定インスタンス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb835db6d1d97cb4a72e8b68e0a45e6bf33728aa
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ef69bbf34cb4f273f7c9caea529072b369266189
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524114"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792280"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>deviceManagementAbstractComplexSettingInstance リソースの種類
 
@@ -61,8 +61,6 @@ ms.locfileid: "31524114"
   "implementationId": "String"
 }
 ```
-
-
 
 
 

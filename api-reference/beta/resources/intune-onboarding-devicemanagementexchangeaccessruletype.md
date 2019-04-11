@@ -4,12 +4,12 @@ description: このアクセス規則が適用されるデバイスの種類を�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dfd4a71518996694482525b43955e80918d2552
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 65beba1c6a18d5da19407eb7d0aea90670d3b61a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164142"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792175"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>devicemanagementexchangeaccessruletype 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30164142"
 |:---|:---|:---|
 |製品|.0|デバイスのファミリ|
 |model|1-d|デバイスの特定のモデル|
+
 
 
 

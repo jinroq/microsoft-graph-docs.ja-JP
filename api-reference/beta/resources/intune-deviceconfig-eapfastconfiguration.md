@@ -4,12 +4,12 @@ description: eap-fast 構成で利用可能な設定。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7acf6ffbf7a93bc5002f7f81679fc789ab313e2f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173571"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790628"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapfastconfiguration 列挙型
 
@@ -26,6 +26,7 @@ eap-fast 構成で利用可能な設定。
 |useProtectedAccessCredential|1-d|保護されたアクセス資格情報 (PAC) を使用します。|
 |useProtectedAccessCredentialAndProvision|pbm-2|保護されたアクセス資格情報 (pac) を使用し、pac をプロビジョニングします。|
 |useProtectedAccessCredentialAndProvisionAnonymously|1/3|保護されたアクセス資格情報 (pac) を使用し、pac をプロビジョニングして、匿名で行います。|
+
 
 
 

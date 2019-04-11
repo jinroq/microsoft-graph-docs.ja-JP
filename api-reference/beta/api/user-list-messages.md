@@ -2,14 +2,14 @@
 title: メッセージを一覧表示する
 description: 'サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。 '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518533"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792189"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -17,7 +17,11 @@ ms.locfileid: "31518533"
 
 サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。 
 
-特に、メッセージに対してフィルター処理を行い、サインインしているユーザーの[メンション](../resources/mention.md)を含むメッセージのみを取得することができます。
+ページサイズとメールボックスのデータによっては、メールボックスからメッセージを取得すると、複数の要求が発生することがあります。 既定のページサイズは10個のメッセージです。 メッセージの次のページを取得するには、返される URL 全体`@odata.nextLink`を次のメッセージの取得要求に適用するだけです。 この URL には、最初の要求で指定されたすべてのクエリパラメーターが含まれています。 
+
+応答を操作するために`$skip` 、 `@odata.nextLink` URL から値を抽出しようとしないでください。 この API は、 `$skip`値を使用して、ユーザーのメールボックスで削除されたすべてのアイテムのカウントを保持し、メッセージタイプのアイテムのページを返します。 最初の応答でも、この`$skip`値がページサイズよりも大きくなる可能性があります。 詳細については、「[アプリで Microsoft Graph データをページングする](/graph/paging)」を参照してください。
+
+メッセージにフィルターを適用し、サインインしているユーザーの[メンション](../resources/mention.md)を含むメッセージのみを取得できます。
 
 既定では、操作に`GET /me/messages`よって**メンション**プロパティは返されないことに注意してください。 `$expand` [メッセージ内の各メンションの詳細を検索](../api/message-get.md#request-2)するには、クエリパラメーターを使用します。
 
@@ -80,20 +84,19 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[message](../resources/message.md)オブジェクトのコレクションを返します。
 
-この要求の既定のページ サイズは、メッセージ 10 個です。 
-
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-最初の例では、サインインしているユーザーのメールボックス内の上位10個のメッセージを取得します。
+最初の例では、サインインしているユーザーのメールボックス内の既定の上位10個のメッセージを取得します。 を使用`$select`して、応答内の各メッセージのプロパティのサブセットを返します。 
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages
+GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### <a name="response-1"></a>応答 1
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 メッセージの次のページを取得するには、で`@odata.nextLink`返される URL を後続の get 要求に適用します。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,28 +106,107 @@ GET https://graph.microsoft.com/beta/me/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "2016-10-19T10:37:00Z",
-      "sentDateTime": "2016-10-19T10:37:00Z",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessageRequest",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
 
 ##### <a name="request-2"></a>要求 2
-次の例では、サインインしているユーザーのメールボックス内のすべてのメッセージに対して、ユーザーに言及するメッセージをフィルター処理します。 を使用`$select`して、応答内の各メッセージのプロパティのサブセットを返します。 
+次の例では、サインインしているユーザーのメールボックス内のすべてのメッセージに対して、ユーザーに言及するメッセージをフィルター処理します。 また、を`$select`使用して、応答内の各メッセージのプロパティのサブセットを返します。 
 
 この例では、クエリパラメーター文字列にスペース文字の URL エンコーディングも組み込まれています。
 <!-- {

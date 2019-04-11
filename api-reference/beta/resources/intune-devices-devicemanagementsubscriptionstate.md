@@ -4,12 +4,12 @@ description: テナントのモバイル デバイス管理のサブスクリプ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 716e313ccd0c9c7827a11eba88e2388d50a3716e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 015768fb5150a64f13f3d34581a10b822712395c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141784"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791090"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>devicemanagementsubscriptionstate 列挙型
 
@@ -23,12 +23,13 @@ ms.locfileid: "30141784"
 |メンバー|値|説明|
 |:---|:---|:---|
 |対する|.0|Pending|
-|active|1-d|Active|
+|active|1-d|アクティブ|
 |warning|pbm-2|警告|
 |党|1/3|無効|
 |deleted|2/4|Deleted|
 |ブロック|5|Blocked|
 |lockedOut|~|LockedOut|
+
 
 
 

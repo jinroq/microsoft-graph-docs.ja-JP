@@ -4,12 +4,12 @@ description: admx textBox 要素と admx テキスト要素を表します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c90355aa9c355b586b060e0e37ddeab8467e5964
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 123858e95c43955e39b7dba680c67643f0afa3d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155581"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791328"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>grouppolicypresentationtextbox リソースの種類
 
@@ -34,11 +34,11 @@ admx textBox 要素と admx テキスト要素を表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|defaultValue|文字列|テキストボックスに表示されるローカライズされた既定の文字列。 既定値は empty です。|
-|必須|ブール値|テキストボックスに値を入力する必要があります。 既定値は false です。|
+|defaultValue|文字列|テキストボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
+|必須|Boolean|テキストボックスに値を入力する必要があります。 既定値は False です。|
 |maxLength|Int64|テキストの最大文字数を指定する符号なし整数。 既定値は1023です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -65,6 +65,7 @@ admx textBox 要素と admx テキスト要素を表します。
   "maxLength": 1024
 }
 ```
+
 
 
 

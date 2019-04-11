@@ -4,12 +4,12 @@ description: iOS Volume Purchase Program ライセンスの割り当て。 こ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3499f3cfb1b15c76dbd70ec1a0634367c3107f87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 162eaeebd8c678bf29b3b40729114f67d1325c86
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169336"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790376"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense リソースの種類
 
@@ -32,9 +32,9 @@ iOS Volume Purchase Program ライセンスの割り当て。 このクラスは
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|String|ユーザーの電子メールアドレス。|
+|userEmailAddress|文字列|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
-|userName|String|ユーザー名。|
+|userName|文字列型 (String)|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -58,6 +58,7 @@ iOS Volume Purchase Program ライセンスの割り当て。 このクラスは
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

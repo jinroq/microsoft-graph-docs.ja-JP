@@ -4,12 +4,12 @@ description: Google EMM API を使用したテナントの状態の同期
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db29d059d0e8b57c69bfe24a4ab9bdd07c58781f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 287793ad6752e64d4204947d3265abce397f5d37
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164317"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789935"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>androidmanagedstoreaccountappsyncstatus 列挙型
 
@@ -28,6 +28,7 @@ Google EMM API を使用したテナントの状態の同期
 |managementserviceerror|1/3|まだ文書化されていません|
 |unknownError|2/4|まだ文書化されていません|
 |none|5|まだ文書化されていません|
+
 
 
 

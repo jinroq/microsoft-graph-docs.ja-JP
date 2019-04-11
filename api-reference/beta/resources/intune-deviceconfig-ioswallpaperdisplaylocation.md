@@ -4,12 +4,12 @@ description: 壁紙の表示場所指定子の列挙型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d408a37c1f535aeb0e51cc50327f2897803093b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146628"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791412"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>ioswallpaperdisplaylocation 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30146628"
 |画面|1-d|構成済みの壁紙画像がロック画面に表示されます。|
 |homeScreen|pbm-2|構成済みの壁紙イメージは、ホーム (アイコン一覧) 画面に表示されます。|
 |lockAndHomeScreens|1/3|構成済みの壁紙画像は、ロック画面とホーム画面に表示されます。|
+
 
 
 

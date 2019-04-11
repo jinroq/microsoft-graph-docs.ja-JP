@@ -4,12 +4,12 @@ description: userPFXCertificate オブジェクトのプロパティとリレー
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95c69686157ab994b5ce9b1b27572621ba53194b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d885555158c8caf83fee11e51f29ea2433e76797
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960042"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790355"
 ---
 # <a name="list-userpfxcertificates"></a>リスト userPFXCertificates
 
@@ -85,7 +85,6 @@ Content-Length: 784
   ]
 }
 ```
-
 
 
 

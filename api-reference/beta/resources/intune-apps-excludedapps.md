@@ -4,12 +4,12 @@ description: 除外された Office365 アプリのプロパティが含まれ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dee0d5328f1f69c95159116bf913bc2abb959d7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: d90954bda8a5bd6c9bfdeb6af0d2946b48215d00
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571691"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791790"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps リソースの種類
 
@@ -66,6 +66,7 @@ ms.locfileid: "30571691"
   "word": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: デバイス管理スクリプトのユーザー実行状態のプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f2a0d24c76d0eb01e7a7edc889dae47ae5bc0fa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2476329a402e0d6a50594ab110e88da4b5f5ac1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144745"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792294"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>devicemanagementscriptuserstate リソースの種類
 
@@ -58,6 +58,7 @@ ms.locfileid: "30144745"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

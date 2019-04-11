@@ -4,12 +4,12 @@ description: windowsUniversalAppXContainedApp オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eeae30dd48689b2df656a5ea78139af01970c1b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ffc389f5b43132c21bfd0abfbfb7d45783e4ba75
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959160"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792315"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>windowsUniversalAppXContainedApp の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
-|appUserModelId|String|WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。|
+|appUserModelId|文字列|WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。|
 
 
 
@@ -88,6 +88,7 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

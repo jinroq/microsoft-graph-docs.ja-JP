@@ -4,12 +4,12 @@ description: グループにデバイス管理スクリプトを割り当てる�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27028d14289e3e0efdfa705d35d02d67d1fb1835
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e0e1d76760f9bc8d8f73f2e1fd15ab2a2d730ce0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154699"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790432"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>devicemanagementscriptgroupassignment リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "30154699"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|[デバイス管理スクリプト] グループ割り当てエンティティのキー。|
-|targetgroupid|String|スクリプトを対象としている Azure Active Directory グループの Id。|
+|targetgroupid|文字列|スクリプトを対象としている Azure Active Directory グループの Id。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -52,6 +52,7 @@ ms.locfileid: "30154699"
   "targetGroupId": "String"
 }
 ```
+
 
 
 
