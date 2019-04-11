@@ -4,31 +4,31 @@ description: devicemanagementscriptdevicestate オブジェクトのプロパテ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 185b41fec2856c84a8729877a7d993715b7de425
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1623fa762ff0089627e73eeae5e93dbc13f0a209
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958166"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803921"
 ---
-# <a name="update-devicemanagementscriptdevicestate"></a><span data-ttu-id="a5ff2-103">devicemanagementscriptdevicestate の更新</span><span class="sxs-lookup"><span data-stu-id="a5ff2-103">Update deviceManagementScriptDeviceState</span></span>
+# <a name="update-devicemanagementscriptdevicestate"></a><span data-ttu-id="a3040-103">devicemanagementscriptdevicestate の更新</span><span class="sxs-lookup"><span data-stu-id="a3040-103">Update deviceManagementScriptDeviceState</span></span>
 
-> <span data-ttu-id="a5ff2-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a3040-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3040-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a5ff2-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a3040-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3040-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a5ff2-106">[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-106">Update the properties of a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+<span data-ttu-id="a3040-106">[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a3040-106">Update the properties of a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a5ff2-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a5ff2-107">Prerequisites</span></span>
-<span data-ttu-id="a5ff2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a3040-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a3040-107">Prerequisites</span></span>
+<span data-ttu-id="a3040-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a3040-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5ff2-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a5ff2-110">Permission type</span></span>|<span data-ttu-id="a5ff2-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a5ff2-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a3040-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a3040-110">Permission type</span></span>|<span data-ttu-id="a3040-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a3040-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a5ff2-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a5ff2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a5ff2-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5ff2-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="a5ff2-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a5ff2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a5ff2-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-115">Not supported.</span></span>|
-|<span data-ttu-id="a5ff2-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a5ff2-116">Application</span></span>|<span data-ttu-id="a5ff2-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-117">Not supported.</span></span>|
+|<span data-ttu-id="a3040-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a3040-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a3040-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3040-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="a3040-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a3040-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3040-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3040-115">Not supported.</span></span>|
+|<span data-ttu-id="a3040-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a3040-116">Application</span></span>|<span data-ttu-id="a3040-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3040-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a5ff2-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a5ff2-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3040-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a3040-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a5ff2-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a5ff2-119">Request headers</span></span>
-|<span data-ttu-id="a5ff2-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a5ff2-120">Header</span></span>|<span data-ttu-id="a5ff2-121">値</span><span class="sxs-lookup"><span data-stu-id="a5ff2-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a3040-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3040-119">Request headers</span></span>
+|<span data-ttu-id="a3040-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3040-120">Header</span></span>|<span data-ttu-id="a3040-121">値</span><span class="sxs-lookup"><span data-stu-id="a3040-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a5ff2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5ff2-122">Authorization</span></span>|<span data-ttu-id="a5ff2-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a5ff2-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a5ff2-124">Accept</span></span>|<span data-ttu-id="a5ff2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a5ff2-125">application/json</span></span>|
+|<span data-ttu-id="a3040-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3040-122">Authorization</span></span>|<span data-ttu-id="a3040-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3040-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a3040-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a3040-124">Accept</span></span>|<span data-ttu-id="a3040-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a3040-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a5ff2-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a5ff2-126">Request body</span></span>
-<span data-ttu-id="a5ff2-127">要求本文で、 [devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-127">In the request body, supply a JSON representation for the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3040-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a3040-126">Request body</span></span>
+<span data-ttu-id="a3040-127">要求本文で、 [devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3040-127">In the request body, supply a JSON representation for the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-<span data-ttu-id="a5ff2-128">次の表に、 [devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-128">The following table shows the properties that are required when you create the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).</span></span>
+<span data-ttu-id="a3040-128">次の表に、 [devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a3040-128">The following table shows the properties that are required when you create the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).</span></span>
 
-|<span data-ttu-id="a5ff2-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a5ff2-129">Property</span></span>|<span data-ttu-id="a5ff2-130">型</span><span class="sxs-lookup"><span data-stu-id="a5ff2-130">Type</span></span>|<span data-ttu-id="a5ff2-131">説明</span><span class="sxs-lookup"><span data-stu-id="a5ff2-131">Description</span></span>|
+|<span data-ttu-id="a3040-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3040-129">Property</span></span>|<span data-ttu-id="a3040-130">型</span><span class="sxs-lookup"><span data-stu-id="a3040-130">Type</span></span>|<span data-ttu-id="a3040-131">説明</span><span class="sxs-lookup"><span data-stu-id="a3040-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a5ff2-132">id</span><span class="sxs-lookup"><span data-stu-id="a5ff2-132">id</span></span>|<span data-ttu-id="a5ff2-133">String</span><span class="sxs-lookup"><span data-stu-id="a5ff2-133">String</span></span>|<span data-ttu-id="a5ff2-134">デバイス管理スクリプトのデバイス状態エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-134">Key of the device management script device state entity.</span></span>|
-|<span data-ttu-id="a5ff2-135">runstate</span><span class="sxs-lookup"><span data-stu-id="a5ff2-135">runState</span></span>|[<span data-ttu-id="a5ff2-136">runstate</span><span class="sxs-lookup"><span data-stu-id="a5ff2-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="a5ff2-137">デバイス管理スクリプトの最新の実行の状態。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-137">State of latest run of the device management script.</span></span> <span data-ttu-id="a5ff2-138">使用可能な値は、`unknown`、`success`、`fail` です。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-138">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="a5ff2-139">resultmessage</span><span class="sxs-lookup"><span data-stu-id="a5ff2-139">resultMessage</span></span>|<span data-ttu-id="a5ff2-140">String</span><span class="sxs-lookup"><span data-stu-id="a5ff2-140">String</span></span>|<span data-ttu-id="a5ff2-141">実行出力の詳細。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-141">Details of execution output.</span></span>|
-|<span data-ttu-id="a5ff2-142">laststateupdatedatetime</span><span class="sxs-lookup"><span data-stu-id="a5ff2-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="a5ff2-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a5ff2-143">DateTimeOffset</span></span>|<span data-ttu-id="a5ff2-144">デバイス管理スクリプトが最後に実行された時刻。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-144">Latest time the device management script executes.</span></span>|
-|<span data-ttu-id="a5ff2-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="a5ff2-145">errorCode</span></span>|<span data-ttu-id="a5ff2-146">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ff2-146">Int32</span></span>|<span data-ttu-id="a5ff2-147">デバイス管理スクリプトの誤った実行に対応するエラーコード。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
-|<span data-ttu-id="a5ff2-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="a5ff2-148">errorDescription</span></span>|<span data-ttu-id="a5ff2-149">String</span><span class="sxs-lookup"><span data-stu-id="a5ff2-149">String</span></span>|<span data-ttu-id="a5ff2-150">デバイス管理スクリプトの誤った実行に対応するエラーの説明。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="a3040-132">id</span><span class="sxs-lookup"><span data-stu-id="a3040-132">id</span></span>|<span data-ttu-id="a3040-133">String</span><span class="sxs-lookup"><span data-stu-id="a3040-133">String</span></span>|<span data-ttu-id="a3040-134">デバイス管理スクリプトのデバイス状態エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="a3040-134">Key of the device management script device state entity.</span></span>|
+|<span data-ttu-id="a3040-135">runstate</span><span class="sxs-lookup"><span data-stu-id="a3040-135">runState</span></span>|[<span data-ttu-id="a3040-136">runstate</span><span class="sxs-lookup"><span data-stu-id="a3040-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="a3040-137">デバイス管理スクリプトの最新の実行の状態。</span><span class="sxs-lookup"><span data-stu-id="a3040-137">State of latest run of the device management script.</span></span> <span data-ttu-id="a3040-138">使用可能な値は、`unknown`、`success`、`fail` です。</span><span class="sxs-lookup"><span data-stu-id="a3040-138">Possible values are: `unknown`, `success`, `fail`.</span></span>|
+|<span data-ttu-id="a3040-139">resultmessage</span><span class="sxs-lookup"><span data-stu-id="a3040-139">resultMessage</span></span>|<span data-ttu-id="a3040-140">文字列</span><span class="sxs-lookup"><span data-stu-id="a3040-140">String</span></span>|<span data-ttu-id="a3040-141">実行出力の詳細。</span><span class="sxs-lookup"><span data-stu-id="a3040-141">Details of execution output.</span></span>|
+|<span data-ttu-id="a3040-142">laststateupdatedatetime</span><span class="sxs-lookup"><span data-stu-id="a3040-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="a3040-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a3040-143">DateTimeOffset</span></span>|<span data-ttu-id="a3040-144">デバイス管理スクリプトが最後に実行された時刻。</span><span class="sxs-lookup"><span data-stu-id="a3040-144">Latest time the device management script executes.</span></span>|
+|<span data-ttu-id="a3040-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="a3040-145">errorCode</span></span>|<span data-ttu-id="a3040-146">Int32</span><span class="sxs-lookup"><span data-stu-id="a3040-146">Int32</span></span>|<span data-ttu-id="a3040-147">デバイス管理スクリプトの誤った実行に対応するエラーコード。</span><span class="sxs-lookup"><span data-stu-id="a3040-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="a3040-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="a3040-148">errorDescription</span></span>|<span data-ttu-id="a3040-149">String</span><span class="sxs-lookup"><span data-stu-id="a3040-149">String</span></span>|<span data-ttu-id="a3040-150">デバイス管理スクリプトの誤った実行に対応するエラーの説明。</span><span class="sxs-lookup"><span data-stu-id="a3040-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a5ff2-151">応答</span><span class="sxs-lookup"><span data-stu-id="a5ff2-151">Response</span></span>
-<span data-ttu-id="a5ff2-152">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-152">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a3040-151">応答</span><span class="sxs-lookup"><span data-stu-id="a3040-151">Response</span></span>
+<span data-ttu-id="a3040-152">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a3040-152">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5ff2-153">例</span><span class="sxs-lookup"><span data-stu-id="a5ff2-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a3040-153">例</span><span class="sxs-lookup"><span data-stu-id="a3040-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a5ff2-154">要求</span><span class="sxs-lookup"><span data-stu-id="a5ff2-154">Request</span></span>
-<span data-ttu-id="a5ff2-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a3040-154">要求</span><span class="sxs-lookup"><span data-stu-id="a3040-154">Request</span></span>
+<span data-ttu-id="a3040-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a3040-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 281
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a5ff2-156">応答</span><span class="sxs-lookup"><span data-stu-id="a5ff2-156">Response</span></span>
-<span data-ttu-id="a5ff2-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a5ff2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a3040-156">応答</span><span class="sxs-lookup"><span data-stu-id="a3040-156">Response</span></span>
+<span data-ttu-id="a3040-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a3040-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -99,6 +99,7 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
 
 
 

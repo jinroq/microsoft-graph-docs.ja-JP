@@ -4,28 +4,29 @@ description: アカウントのための Android for Work デバイス管理対�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7287541a9862d2378a0af4aae49c50e1071067e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: af8fda49e5ae56ff7f6d9605fbc8553c018a72f0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167838"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803207"
 ---
-# <a name="androidforworkenrollmenttarget-enum-type"></a><span data-ttu-id="3cc2f-103">androidForWorkEnrollmentTarget 列挙型</span><span class="sxs-lookup"><span data-stu-id="3cc2f-103">androidForWorkEnrollmentTarget enum type</span></span>
+# <a name="androidforworkenrollmenttarget-enum-type"></a><span data-ttu-id="9c187-103">androidForWorkEnrollmentTarget 列挙型</span><span class="sxs-lookup"><span data-stu-id="9c187-103">androidForWorkEnrollmentTarget enum type</span></span>
 
-> <span data-ttu-id="3cc2f-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3cc2f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9c187-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9c187-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3cc2f-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3cc2f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9c187-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9c187-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3cc2f-106">アカウントのための Android for Work デバイス管理対象の種類</span><span class="sxs-lookup"><span data-stu-id="3cc2f-106">Android for Work device management targeting type for the account</span></span>
+<span data-ttu-id="9c187-106">アカウントのための Android for Work デバイス管理対象の種類</span><span class="sxs-lookup"><span data-stu-id="9c187-106">Android for Work device management targeting type for the account</span></span>
 
-## <a name="members"></a><span data-ttu-id="3cc2f-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="3cc2f-107">Members</span></span>
-|<span data-ttu-id="3cc2f-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="3cc2f-108">Member</span></span>|<span data-ttu-id="3cc2f-109">値</span><span class="sxs-lookup"><span data-stu-id="3cc2f-109">Value</span></span>|<span data-ttu-id="3cc2f-110">説明</span><span class="sxs-lookup"><span data-stu-id="3cc2f-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="9c187-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="9c187-107">Members</span></span>
+|<span data-ttu-id="9c187-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="9c187-108">Member</span></span>|<span data-ttu-id="9c187-109">値</span><span class="sxs-lookup"><span data-stu-id="9c187-109">Value</span></span>|<span data-ttu-id="9c187-110">説明</span><span class="sxs-lookup"><span data-stu-id="9c187-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3cc2f-111">none</span><span class="sxs-lookup"><span data-stu-id="3cc2f-111">none</span></span>|<span data-ttu-id="3cc2f-112">.0</span><span class="sxs-lookup"><span data-stu-id="3cc2f-112">0</span></span>|<span data-ttu-id="3cc2f-113">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3cc2f-113">Not yet documented</span></span>|
-|<span data-ttu-id="3cc2f-114">all</span><span class="sxs-lookup"><span data-stu-id="3cc2f-114">all</span></span>|<span data-ttu-id="3cc2f-115">1-d</span><span class="sxs-lookup"><span data-stu-id="3cc2f-115">1</span></span>|<span data-ttu-id="3cc2f-116">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3cc2f-116">Not yet documented</span></span>|
-|<span data-ttu-id="3cc2f-117">おり</span><span class="sxs-lookup"><span data-stu-id="3cc2f-117">targeted</span></span>|<span data-ttu-id="3cc2f-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="3cc2f-118">2</span></span>|<span data-ttu-id="3cc2f-119">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3cc2f-119">Not yet documented</span></span>|
-|<span data-ttu-id="3cc2f-120">targetedAsEnrollmentRestrictions</span><span class="sxs-lookup"><span data-stu-id="3cc2f-120">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="3cc2f-121">1/3</span><span class="sxs-lookup"><span data-stu-id="3cc2f-121">3</span></span>|<span data-ttu-id="3cc2f-122">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="3cc2f-122">Not yet documented</span></span>|
+|<span data-ttu-id="9c187-111">none</span><span class="sxs-lookup"><span data-stu-id="9c187-111">none</span></span>|<span data-ttu-id="9c187-112">.0</span><span class="sxs-lookup"><span data-stu-id="9c187-112">0</span></span>|<span data-ttu-id="9c187-113">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="9c187-113">Not yet documented</span></span>|
+|<span data-ttu-id="9c187-114">すべての</span><span class="sxs-lookup"><span data-stu-id="9c187-114">all</span></span>|<span data-ttu-id="9c187-115">1-d</span><span class="sxs-lookup"><span data-stu-id="9c187-115">1</span></span>|<span data-ttu-id="9c187-116">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="9c187-116">Not yet documented</span></span>|
+|<span data-ttu-id="9c187-117">おり</span><span class="sxs-lookup"><span data-stu-id="9c187-117">targeted</span></span>|<span data-ttu-id="9c187-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="9c187-118">2</span></span>|<span data-ttu-id="9c187-119">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="9c187-119">Not yet documented</span></span>|
+|<span data-ttu-id="9c187-120">targetedAsEnrollmentRestrictions</span><span class="sxs-lookup"><span data-stu-id="9c187-120">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="9c187-121">1/3</span><span class="sxs-lookup"><span data-stu-id="9c187-121">3</span></span>|<span data-ttu-id="9c187-122">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="9c187-122">Not yet documented</span></span>|
+
 
 
 

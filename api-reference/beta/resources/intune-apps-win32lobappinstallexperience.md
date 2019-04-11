@@ -4,31 +4,31 @@ description: Win32 アプリのインストール環境のプロパティが含�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01402384c2628e1f53a854fa35097415181aaa20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 544825542cd178d53e3aa0a9be5373f1a9f49675
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174948"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804628"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="e5760-103">win32LobAppInstallExperience リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e5760-103">win32LobAppInstallExperience resource type</span></span>
+# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="7f8dc-103">win32LobAppInstallExperience リソースの種類</span><span class="sxs-lookup"><span data-stu-id="7f8dc-103">win32LobAppInstallExperience resource type</span></span>
 
-> <span data-ttu-id="e5760-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e5760-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7f8dc-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e5760-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e5760-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7f8dc-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5760-106">Win32 アプリのインストール環境のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e5760-106">Contains installation experience properties for a Win32 App</span></span>
+<span data-ttu-id="7f8dc-106">Win32 アプリのインストール環境のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-106">Contains installation experience properties for a Win32 App</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e5760-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5760-107">Properties</span></span>
-|<span data-ttu-id="e5760-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5760-108">Property</span></span>|<span data-ttu-id="e5760-109">型</span><span class="sxs-lookup"><span data-stu-id="e5760-109">Type</span></span>|<span data-ttu-id="e5760-110">説明</span><span class="sxs-lookup"><span data-stu-id="e5760-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7f8dc-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7f8dc-107">Properties</span></span>
+|<span data-ttu-id="7f8dc-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7f8dc-108">Property</span></span>|<span data-ttu-id="7f8dc-109">型</span><span class="sxs-lookup"><span data-stu-id="7f8dc-109">Type</span></span>|<span data-ttu-id="7f8dc-110">説明</span><span class="sxs-lookup"><span data-stu-id="7f8dc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e5760-111">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="e5760-111">runAsAccount</span></span>|[<span data-ttu-id="e5760-112">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="e5760-112">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="e5760-113">アプリが実行されている実行コンテキストの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="e5760-113">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="e5760-114">可能な値: `system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="e5760-114">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="7f8dc-111">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="7f8dc-111">runAsAccount</span></span>|[<span data-ttu-id="7f8dc-112">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="7f8dc-112">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="7f8dc-113">アプリが実行されている実行コンテキストの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-113">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="7f8dc-114">可能な値: `system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-114">Possible values are: `system`, `user`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e5760-115">関係</span><span class="sxs-lookup"><span data-stu-id="e5760-115">Relationships</span></span>
-<span data-ttu-id="e5760-116">なし</span><span class="sxs-lookup"><span data-stu-id="e5760-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7f8dc-115">関係</span><span class="sxs-lookup"><span data-stu-id="7f8dc-115">Relationships</span></span>
+<span data-ttu-id="7f8dc-116">なし</span><span class="sxs-lookup"><span data-stu-id="7f8dc-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e5760-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e5760-117">JSON Representation</span></span>
-<span data-ttu-id="e5760-118">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e5760-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7f8dc-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7f8dc-117">JSON Representation</span></span>
+<span data-ttu-id="7f8dc-118">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="7f8dc-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppInstallExperience"
@@ -40,6 +40,7 @@ ms.locfileid: "30174948"
   "runAsAccount": "String"
 }
 ```
+
 
 
 
