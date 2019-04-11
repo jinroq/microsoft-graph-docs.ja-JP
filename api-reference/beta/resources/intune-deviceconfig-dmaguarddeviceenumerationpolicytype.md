@@ -4,27 +4,28 @@ description: DmaGuardDeviceEnumerationPolicy の可能な値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 512bf44d25629f4b1c88c2309c464e9d0f33f625
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f6910172ef4ab733b09d837dcc9a7196893402ab
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159711"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776648"
 ---
-# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a><span data-ttu-id="6a9bc-103">dmaGuardDeviceEnumerationPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="6a9bc-103">dmaGuardDeviceEnumerationPolicyType enum type</span></span>
+# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a><span data-ttu-id="df4fc-103">dmaGuardDeviceEnumerationPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="df4fc-103">dmaGuardDeviceEnumerationPolicyType enum type</span></span>
 
-> <span data-ttu-id="6a9bc-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="df4fc-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="df4fc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6a9bc-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="df4fc-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="df4fc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6a9bc-106">DmaGuardDeviceEnumerationPolicy の可能な値。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-106">Possible values of the DmaGuardDeviceEnumerationPolicy.</span></span>
+<span data-ttu-id="df4fc-106">DmaGuardDeviceEnumerationPolicy の可能な値。</span><span class="sxs-lookup"><span data-stu-id="df4fc-106">Possible values of the DmaGuardDeviceEnumerationPolicy.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6a9bc-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="6a9bc-107">Members</span></span>
-|<span data-ttu-id="6a9bc-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="6a9bc-108">Member</span></span>|<span data-ttu-id="6a9bc-109">値</span><span class="sxs-lookup"><span data-stu-id="6a9bc-109">Value</span></span>|<span data-ttu-id="6a9bc-110">説明</span><span class="sxs-lookup"><span data-stu-id="6a9bc-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="df4fc-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="df4fc-107">Members</span></span>
+|<span data-ttu-id="df4fc-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="df4fc-108">Member</span></span>|<span data-ttu-id="df4fc-109">値</span><span class="sxs-lookup"><span data-stu-id="df4fc-109">Value</span></span>|<span data-ttu-id="df4fc-110">説明</span><span class="sxs-lookup"><span data-stu-id="df4fc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6a9bc-111">devicedefault</span><span class="sxs-lookup"><span data-stu-id="6a9bc-111">deviceDefault</span></span>|<span data-ttu-id="6a9bc-112">.0</span><span class="sxs-lookup"><span data-stu-id="6a9bc-112">0</span></span>|<span data-ttu-id="6a9bc-113">既定値です。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-113">Default value.</span></span> <span data-ttu-id="6a9bc-114">DMA が再マッピングされているデバイス互換性のないドライバーは、ユーザーが画面をロック解除した後にのみ列挙されます。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-114">Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.</span></span>|
-|<span data-ttu-id="6a9bc-115">blockall</span><span class="sxs-lookup"><span data-stu-id="6a9bc-115">blockAll</span></span>|<span data-ttu-id="6a9bc-116">1-d</span><span class="sxs-lookup"><span data-stu-id="6a9bc-116">1</span></span>|<span data-ttu-id="6a9bc-117">dma がマッピングされていないデバイス互換性のないドライバーは、いつでも dma を開始して実行することはできません。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-117">Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.</span></span>|
-|<span data-ttu-id="6a9bc-118">allowAll</span><span class="sxs-lookup"><span data-stu-id="6a9bc-118">allowAll</span></span>|<span data-ttu-id="6a9bc-119">pbm-2</span><span class="sxs-lookup"><span data-stu-id="6a9bc-119">2</span></span>|<span data-ttu-id="6a9bc-120">すべての外部 DMA 対応 PCIe デバイスは、いつでも列挙されます。</span><span class="sxs-lookup"><span data-stu-id="6a9bc-120">All external DMA capable PCIe devices will be enumerated at any time.</span></span>|
+|<span data-ttu-id="df4fc-111">devicedefault</span><span class="sxs-lookup"><span data-stu-id="df4fc-111">deviceDefault</span></span>|<span data-ttu-id="df4fc-112">.0</span><span class="sxs-lookup"><span data-stu-id="df4fc-112">0</span></span>|<span data-ttu-id="df4fc-113">既定値です。</span><span class="sxs-lookup"><span data-stu-id="df4fc-113">Default value.</span></span> <span data-ttu-id="df4fc-114">DMA が再マッピングされているデバイス互換性のないドライバーは、ユーザーが画面をロック解除した後にのみ列挙されます。</span><span class="sxs-lookup"><span data-stu-id="df4fc-114">Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.</span></span>|
+|<span data-ttu-id="df4fc-115">blockall</span><span class="sxs-lookup"><span data-stu-id="df4fc-115">blockAll</span></span>|<span data-ttu-id="df4fc-116">1-d</span><span class="sxs-lookup"><span data-stu-id="df4fc-116">1</span></span>|<span data-ttu-id="df4fc-117">dma がマッピングされていないデバイス互換性のないドライバーは、いつでも dma を開始して実行することはできません。</span><span class="sxs-lookup"><span data-stu-id="df4fc-117">Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.</span></span>|
+|<span data-ttu-id="df4fc-118">allowAll</span><span class="sxs-lookup"><span data-stu-id="df4fc-118">allowAll</span></span>|<span data-ttu-id="df4fc-119">pbm-2</span><span class="sxs-lookup"><span data-stu-id="df4fc-119">2</span></span>|<span data-ttu-id="df4fc-120">すべての外部 DMA 対応 PCIe デバイスは、いつでも列挙されます。</span><span class="sxs-lookup"><span data-stu-id="df4fc-120">All external DMA capable PCIe devices will be enumerated at any time.</span></span>|
+
 
 
 
