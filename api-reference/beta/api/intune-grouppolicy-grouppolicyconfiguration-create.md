@@ -4,12 +4,12 @@ description: 新しい grouppolicyconfiguration オブジェクトを作成し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec6bbb8353c8f39ed5249fca909b8387d9cb2104
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cd0c63b1d8c8df449a68cbeb64f391adb659ae64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973307"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805370"
 ---
 # <a name="create-grouppolicyconfiguration"></a>grouppolicyconfiguration の作成
 
@@ -52,7 +52,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
 |displayName|String|ユーザーが指定した resource オブジェクトの名前。|
-|description|String|ユーザーが指定した resource オブジェクトの説明。|
+|説明|String|ユーザーが指定した resource オブジェクトの説明。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -93,6 +93,7 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

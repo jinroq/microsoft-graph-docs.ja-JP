@@ -4,12 +4,12 @@ description: Defender 攻撃面の削減ルールの可能な値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85e305b4798d29bc3d3b607ce031b72a10a3de80
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 29610eca9dbb157a5ce4d51bcb67fa479814d17d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169945"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807953"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 列挙型
 
@@ -25,6 +25,7 @@ Defender 攻撃面の削減ルールの可能な値
 |自分のもの|.0|デバイスの既定値。意図的ではありません。|
 |拒否|1-d|機能をブロックする。|
 |auditmode|pbm-2|機能は変更されませんが、ログは生成されません。|
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17314b5e37af0677c5e78dba9349695346b43d6a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 887a5d62ba08f4a2676955fe2b204ef9234b4e4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161083"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807897"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30161083"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[Get softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-update.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティを更新します。|
+|[softwareUpdateStatusSummary の取得](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[softwareUpdateStatusSummary の更新](../api/intune-deviceconfig-softwareupdatestatussummary-update.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -77,6 +77,7 @@ ms.locfileid: "30161083"
   "notApplicableUserCount": 1024
 }
 ```
+
 
 
 

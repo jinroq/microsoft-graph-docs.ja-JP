@@ -4,12 +4,12 @@ description: windowsPhone81ImportedPFXCertificateProfile オブジェクトの�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6843d3e0875683d79953257d1c2bc863f844c5e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 199263173cdc352c792df4906fb70dda0eb7c257
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964151"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806175"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>windowsPhone81ImportedPFXCertificateProfile を取得する
 
@@ -92,6 +92,7 @@ Content-Length: 818
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: mobileAppInstallStatus オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5153b022e6a15a4faa26fe70bb411cd2a17a4d62
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3eb35d826fff74b853ca7b5d7d4abc2e88c54248
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962261"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807526"
 ---
 # <a name="list-mobileappinstallstatuses"></a>リスト mobileAppInstallStatuses
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 687
+Content-Length: 693
 
 {
   "value": [
@@ -75,7 +75,7 @@ Content-Length: 687
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
       "mobileAppInstallStatusValue": "failed",
       "installState": "failed",
-      "installStateDetail": "seeInstallErrorCode",
+      "installStateDetail": "dependencyFailedToInstall",
       "errorCode": 9,
       "osVersion": "Os Version value",
       "osDescription": "Os Description value",
@@ -86,6 +86,7 @@ Content-Length: 687
   ]
 }
 ```
+
 
 
 

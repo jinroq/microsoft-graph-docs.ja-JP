@@ -4,12 +4,12 @@ description: VPN トラフィックルールが関連付けられているアプ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 85ca96848d22dcc726bc3e79bbbe3f8518964698
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140531"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806119"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 列挙型
 
@@ -25,6 +25,7 @@ VPN トラフィックルールが関連付けられているアプリの種類�
 |none|.0|トラフィックルールがアプリに関連付けられていません。|
 |コンピューター|1-d|トラフィックルールは、デスクトップアプリに関連付けられています。|
 |ユニバーサル|pbm-2|トラフィックルールはユニバーサルアプリに関連付けられています。|
+
 
 
 

@@ -4,16 +4,16 @@ description: テナント組織のアプリとそのポリシーを管理する 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b1e9fc7512c3778fc3cf54223769c8f6dbe0a017
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172220"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806567"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -27,7 +27,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Android 登録会社コード](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work アプリ](intune-apps-androidforworkapp.md)
 - [Android for Work アプリの構成スキーマ](intune-androidforwork-androidforworkappconfigurationschema.md)
-- [Android for Work アプリの構成スキーマ アイテム](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
+- [Android for Work アプリの構成スキーマ項目](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
 - [Android for Work アプリの構成スキーマ項目のデータ型](intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)
 - [Android for Work バインド ステータス](intune-androidforwork-androidforworkbindstatus.md)
 - [Android for Work 登録プロファイル](intune-androidforwork-androidforworkenrollmentprofile.md)
@@ -51,7 +51,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Android ストア アプリ](intune-apps-androidstoreapp.md)
 - [アプリの構成設定アイテム](intune-apps-appconfigurationsettingitem.md)
 - [証明書のステータス](intune-apps-certificatestatus.md)
-- [デバイスのインストール状態](intune-books-deviceinstallstate.md)
+- [デバイスのインストール状況](intune-books-deviceinstallstate.md)
 - [電子書籍のインストールの概要](intune-books-ebookinstallsummary.md)
 - [エンタープライズ コード署名証明書](intune-apps-enterprisecodesigningcertificate.md)
 - [除外されたアプリ](intune-apps-excludedapps.md)
@@ -73,7 +73,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [iOS VPP アプリの割り当ての設定](intune-apps-iosvppappassignmentsettings.md)
 - [iOS VPP アプリの失効ライセンスのアクションの結果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP の電子書籍](intune-books-iosvppebook.md)
-- [iOS VPP 電子書籍の割り当て](intune-books-iosvppebookassignment.md)
+- [iOS VPP 電子ブックの割り当て](intune-books-iosvppebookassignment.md)
 - [macOS LOB アプリ](intune-apps-macoslobapp.md)
 - [macOS LOB チャイルド アプリ](intune-apps-macoslobchildapp.md)
 - [最小構成の macOS オペレーティング システム](intune-apps-macosminimumoperatingsystem.md)
@@ -93,7 +93,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [管理対象デバイスのモバイル アプリ構成のユーザー状態](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
 - [管理対象デバイスのモバイル アプリ構成のユーザー要約](intune-apps-manageddevicemobileappconfigurationusersummary.md)
 - [管理対象の電子書籍](intune-books-managedebook.md)
-- [管理対象電子書籍の割り当て](intune-books-managedebookassignment.md)
+- [管理対象電子ブックの割り当て](intune-books-managedebookassignment.md)
 - [管理対象の電子書籍カテゴリ](intune-books-managedebookcategory.md)
 - [管理対象 iOS LOB アプリ](intune-apps-managedioslobapp.md)
 - [管理対象 iOS ストア アプリ](intune-apps-managediosstoreapp.md)
@@ -110,10 +110,14 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [モバイル アプリ コンテンツ](intune-apps-mobileappcontent.md)
 - [モバイル アプリ コンテンツ ファイル](intune-apps-mobileappcontentfile.md)
 - [モバイル アプリ コンテンツ ファイルのアップロード状態](intune-apps-mobileappcontentfileuploadstate.md)
+- [モバイルアプリの依存関係の種類](intune-apps-mobileappdependecytype.md)
+- [モバイルアプリの依存関係](intune-apps-mobileappdependency.md)
 - [モバイル アプリ インストール状態](intune-apps-mobileappinstallstatus.md)
 - [モバイル アプリ インストール概要](intune-apps-mobileappinstallsummary.md)
 - [モバイル アプリのプロビジョニング構成グループの割り当て](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [モバイル アプリの公開状態](intune-apps-mobileapppublishingstate.md)
+- [モバイルアプリの関係](intune-apps-mobileapprelationship.md)
+- [モバイルアプリのリレーションシップの状態](intune-apps-mobileapprelationshipstate.md)
 - [モバイル オフライン アプリ](intune-apps-mobilecontainedapp.md)
 - [モバイル LOB アプリ](intune-apps-mobilelobapp.md)
 - [Office クライアントのチェックイン状態](intune-cirrus-officeclientcheckinstatus.md)
@@ -132,21 +136,26 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [ユーザー アプリのインストール状態](intune-apps-userappinstallstatus.md)
 - [ユーザーのインストール状態の概要](intune-books-userinstallstatesummary.md)
 - [VPP ライセンスの種類](intune-apps-vpplicensingtype.md)
-- [Web アプリ](intune-apps-webapp.md)
+- [Web アプリケーション](intune-apps-webapp.md)
 - [Win32 LOB アプリ](intune-apps-win32lobapp.md)
 - [Win32 LOB アプリの割り当ての設定](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 LOB アプリの検出](intune-apps-win32lobappdetection.md)
 - [Win32 LOB アプリの検出演算子](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB アプリのファイル システム検出](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB アプリのファイル システム検出の種類](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB アプリケーションファイルシステムの要件](intune-apps-win32lobappfilesystemrequirement.md)
 - [Win32 LOB アプリのインストール エクスペリエンス](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB アプリの msi 情報](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB アプリの msi パッケージの種類](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB アプリの通知](intune-apps-win32lobappnotification.md)
 - [Win32 LOB アプリの PowerShell スクリプトの検出](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Win32 LOB アプリの電源シェルスクリプト検出の種類](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Win32 LOB アプリの電源シェルスクリプトの要件](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB アプリの製品コードの検出](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB アプリのレジストリの検出](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB アプリのレジストリの検出の種類](intune-apps-win32lobappregistrydetectiontype.md)
+- [Win32 LOB アプリのレジストリ要件](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB アプリの要件](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB アプリのリターン コード](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB アプリのリターン コードの種類](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)

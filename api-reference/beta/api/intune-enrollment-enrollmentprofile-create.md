@@ -4,12 +4,12 @@ description: 新しいしましたオブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fea367f3a4978d02a117edc6de5ebc70466000c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4c78d5076038b85140d31e0e9000dda99f9dddff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962877"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807596"
 ---
 # <a name="create-enrollmentprofile"></a>しましたを作成する
 
@@ -52,9 +52,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
-|description|String|プロファイルの説明|
+|説明|String|プロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
-|configurationendpointurl|String|登録に使用する構成エンドポイント url|
+|configurationendpointurl|文字列|登録に使用する構成エンドポイント url|
 |enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
@@ -101,6 +101,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

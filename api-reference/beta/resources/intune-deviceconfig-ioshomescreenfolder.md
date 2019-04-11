@@ -4,12 +4,12 @@ description: ホーム画面上のアプリのページが含まれるフォル�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8afb80b9130356671d80e5ec52f96bf74ed53d7e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9526e51b4fa69f0332922481c53648eb7d574c10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153740"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807743"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>iosHomeScreenFolder リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "30153740"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列型 (String)|アプリの名前。[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) から継承|
+|displayName|String|アプリの名前。[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) から継承|
 |pages|[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) コレクション|アプリケーションの種類にする必要がある、ホーム画面レイアウト アイコンで構成されるページ。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -57,6 +57,7 @@ ms.locfileid: "30153740"
   ]
 }
 ```
+
 
 
 

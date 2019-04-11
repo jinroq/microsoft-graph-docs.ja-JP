@@ -4,12 +4,12 @@ description: devicemanagementsettinginstance オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1e0113eee1d691eb89090cbe2a7345970ae88b8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 32b1adbfe5c8b073c9a13d71dc239fe369a54e04
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522483"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804985"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>devicemanagementsettinginstance を取得する
 
@@ -79,8 +79,6 @@ Content-Length: 227
   }
 }
 ```
-
-
 
 
 

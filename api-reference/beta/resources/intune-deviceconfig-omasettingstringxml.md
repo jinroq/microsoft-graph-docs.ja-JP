@@ -4,12 +4,12 @@ description: OMA 設定文字列の XML 定義です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 846ed1c9bb17065b82f2663e7f4276b34442f9bd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8dbc23845f62c5f2a70af9051efa732b3d3d8ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164534"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807372"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml リソースの種類
 
@@ -51,6 +51,7 @@ OMA 設定文字列の XML 定義です。
   "value": "binary"
 }
 ```
+
 
 
 

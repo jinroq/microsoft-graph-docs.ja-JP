@@ -4,12 +4,12 @@ description: locationmanagementcondition オブジェクトのプロパティと
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf2d101ab6d8f168a4ec999f73138398c983625a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6987f4fd130efa44ffcbfd45b8eb31d4263d7f79
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962002"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807806"
 ---
 # <a name="list-locationmanagementconditions"></a>locationmanagementconditions を一覧表示する
 
@@ -83,6 +83,7 @@ Content-Length: 512
   ]
 }
 ```
+
 
 
 

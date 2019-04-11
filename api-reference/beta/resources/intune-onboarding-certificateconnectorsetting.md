@@ -4,12 +4,12 @@ description: 証明書コネクタの設定。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fe154ed3150ae434f8068bc04a56dd6e5b48744
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168307"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806483"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting リソースの種類
 
@@ -24,9 +24,9 @@ ms.locfileid: "30168307"
 |:---|:---|:---|
 |status|Int32|証明書コネクタの状態|
 |certExpiryTime|DateTimeOffset|証明書の有効期限|
-|enrollmentError|String|証明書コネクタの登録エラー|
+|enrollmentError|文字列|証明書コネクタの登録エラー|
 |lastコネクタ接続時間|DateTimeOffset|証明書コネクタが前回接続された日時|
-|コネクタのバージョン|String|証明書コネクタのバージョン|
+|コネクタのバージョン|文字列|証明書コネクタのバージョン|
 |lastUploadVersion|Int64|最後にアップロードされた証明書コネクタのバージョン|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -50,6 +50,7 @@ ms.locfileid: "30168307"
   "lastUploadVersion": 1024
 }
 ```
+
 
 
 

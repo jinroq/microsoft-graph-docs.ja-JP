@@ -4,12 +4,12 @@ description: mobileAppAssignment オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14ee6a186a94a6c050250bd930e78e7f9e38bb3e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 245e18d690c17378ffb0218ae817a5973f922e88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964550"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806651"
 ---
 # <a name="update-mobileappassignment"></a>mobileAppAssignment の更新
 
@@ -100,6 +100,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

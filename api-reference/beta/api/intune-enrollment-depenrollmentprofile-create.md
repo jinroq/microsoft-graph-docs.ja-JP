@@ -4,12 +4,12 @@ description: 新しい depEnrollmentProfile オブジェクトを作成します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e264f746323bfab61a6475651a80b8496e10a533
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2ce46c8ff178b62f7b99f7bf454ccd29689fac1e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961596"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807071"
 ---
 # <a name="create-depenrollmentprofile"></a>depEnrollmentProfile を作成する
 
@@ -50,20 +50,20 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
+|id|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
 |displayName|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの名前|
-|description|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
+|説明|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
-|configurationendpointurl|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
+|configurationendpointurl|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
 |enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
 |isDefault|ブール型 (Boolean)|これが既定のプロファイルであるかどうかを示します|
 |supervisedModeEnabled|Boolean|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
-|supportdepartment|String|サポート部門の情報|
+|supportdepartment|文字列|サポート部門の情報|
 |pass codedisabled|Boolean|パスコードセットアップウィンドウが無効であるかどうかを示します|
 |ismandatory|Boolean|プロファイルが必須であるかどうかを示します|
 |locationdisabled|Boolean|場所サービスの設定ウィンドウが無効であるかどうかを示します|
-|supportPhoneNumber|String|サポート電話番号|
+|supportPhoneNumber|文字列|サポート電話番号|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|iTunes ペアリングモードを示します。 使用可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
 |profileRemovalDisabled|Boolean|プロファイルの削除オプションが無効になっているかどうかを示します|
 |managementcertificates|[managementcertificatewiththumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の管理証明書|
@@ -185,6 +185,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: しましたリソースは、事前登録を提供する必要が�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d8947864611ac2c0d26256a5d739d41b86c383f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: abc00f27ef65cdddfef30a06bef55a8fa44e488a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151178"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805524"
 ---
 # <a name="enrollmentprofile-resource-type"></a>しましたリソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "30151178"
 |[しましたの削除](../api/intune-enrollment-enrollmentprofile-delete.md)|なし|[しました](../resources/intune-enrollment-enrollmentprofile.md)を削除します。|
 |[しましたの更新](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティを更新します。|
 |[setDefaultProfile アクション](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|なし|まだ文書化されていません|
-|[exportmobileconfig 関数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|モバイル構成をエクスポートします。|
+|[exportmobileconfig 関数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|文字列|モバイル構成をエクスポートします。|
 |[updateDeviceProfileAssignment アクション](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
@@ -37,10 +37,10 @@ ms.locfileid: "30151178"
 |id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルにユーザー認証が必要かどうかを示します|
-|configurationendpointurl|String|登録に使用する構成エンドポイント url|
-|enableAuthenticationViaCompanyPortal|ブール値|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|ブール値|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
+|requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
+|configurationendpointurl|文字列|登録に使用する構成エンドポイント url|
+|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -65,6 +65,7 @@ ms.locfileid: "30151178"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

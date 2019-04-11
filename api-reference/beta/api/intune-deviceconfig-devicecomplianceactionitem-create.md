@@ -4,12 +4,12 @@ description: 新しい deviceComplianceActionItem オブジェクトを作成し
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b7bd39bb8def5404081dde1034e758de58340f0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cfbccac27a5c3adee6c972c1ae7ad2fa541b410a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976716"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807603"
 ---
 # <a name="create-devicecomplianceactionitem"></a>deviceComplianceActionItem の作成
 
@@ -99,6 +99,7 @@ Content-Length: 320
   ]
 }
 ```
+
 
 
 

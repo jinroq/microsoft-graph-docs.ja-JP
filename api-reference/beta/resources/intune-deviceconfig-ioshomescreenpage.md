@@ -4,12 +4,12 @@ description: ホーム画面上のアプリとフォルダーが含まれるペ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c958570caa81cff7add1e174cbb678fc68cecd87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2c726d751d81277a4f1b79a33606e1a2ec3eaede
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149540"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807561"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>iosHomeScreenPage リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30149540"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列型 (String)|ページの名前|
+|displayName|String|ページの名前|
 |アイコン|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) コレクション|特定ページに表示されるアプリとフォルダーの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -60,6 +60,7 @@ ms.locfileid: "30149540"
   ]
 }
 ```
+
 
 
 

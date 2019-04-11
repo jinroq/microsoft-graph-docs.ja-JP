@@ -4,12 +4,12 @@ description: MacOS Volume 購入プログラム (VPP) アプリのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c07be079c6a1ee29b693344887ea5d0db3099b5f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e900867886aae3828b78252fefde341b78786304
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140559"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807050"
 ---
 # <a name="macosvppapp-resource-type"></a>macOsVppApp リソースの種類
 
@@ -34,33 +34,34 @@ MacOS Volume 購入プログラム (VPP) アプリのプロパティと継承さ
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|文字列|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publisher|文字列型 (String)|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|publisher|文字列|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|privacyInformationUrl|String|プライバシーに関する声明の URL。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|informationUrl|String|詳細情報の URL。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|informationUrl|文字列|詳細情報の URL。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|owner|文字列|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|developer|文字列|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|notes|文字列|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は `notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 使用可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|dependentappcount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |usedLicenseCount|Int32|使用中の VPP ライセンスの数。|
 |totalLicenseCount|Int32|VPP ライセンスの総数。|
 |releaseDateTime|DateTimeOffset|VPP アプリケーションのリリースの日時。|
 |appStoreUrl|String|ストアの URL。|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|サポートされているライセンスの種類。|
-|vppTokenOrganizationName|文字列|Apple Volume Purchase Program のトークンに関連付けられている組織|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 使用可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
+|vppTokenOrganizationName|文字列|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |vppTokenAppleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
 |bundleId|文字列型 (String)|ID 名。|
-|vppTokenId|String|このアプリに関連付けられている VPP トークンの識別子。|
+|vppTokenId|文字列|このアプリに関連付けられている VPP トークンの識別子。|
 |revokeLicenseActionResults|[macOsVppAppRevokeLicensesActionResult](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)コレクション|このアプリでのライセンスの取り消しアクションの結果。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -71,6 +72,7 @@ MacOS Volume 購入プログラム (VPP) アプリのプロパティと継承さ
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|関連性|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)コレクション|このモバイルアプリのリレーションシップのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |assignedLicenses|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)コレクション|このアプリに割り当てられているライセンス。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -107,6 +109,7 @@ MacOS Volume 購入プログラム (VPP) アプリのプロパティと継承さ
   "roleScopeTagIds": [
     "String"
   ],
+  "dependentAppCount": 1024,
   "usedLicenseCount": 1024,
   "totalLicenseCount": 1024,
   "releaseDateTime": "String (timestamp)",
@@ -139,6 +142,7 @@ MacOS Volume 購入プログラム (VPP) アプリのプロパティと継承さ
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9328ccc8b3c6b7ce6af220d8f798497e00448a8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d1d2b608a285413e8ad4f7049d06982a06878450
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159277"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807169"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>mediaContentRatingNewZealand リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30159277"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|movieRating|[ratingNewZealandMoviesType](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|ニュージーランドで選択されている映画のレーティング。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove13`、`agesAbove15`、`agesAbove16`、`agesAbove18`、`restricted`、`agesAbove16Restricted` です。|
+|movieRating|[ratingNewZealandMoviesType](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|ニュージーランドで選択されている映画のレーティング。 使用可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove13`、`agesAbove15`、`agesAbove16`、`agesAbove18`、`restricted`、`agesAbove16Restricted` です。|
 |tvRating|[ratingNewZealandTelevisionType](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|ニュージーランド用に選択されているテレビのレーティング。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`adults` です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -42,6 +42,7 @@ ms.locfileid: "30159277"
   "tvRating": "String"
 }
 ```
+
 
 
 

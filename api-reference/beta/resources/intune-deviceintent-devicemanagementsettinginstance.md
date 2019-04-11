@@ -4,12 +4,12 @@ description: 設定インスタンスの基本型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9aef844dd4957b75b51f8d16014c2253b0253cc
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 49f97d47b5ff75e927a5637356476392047a2f8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523610"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807911"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>devicemanagementsettinginstance リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "31523610"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementsettinginstances を一覧表示する](../api/intune-deviceintent-devicemanagementsettinginstance-list.md)|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementsettinginstance を取得する](../api/intune-deviceintent-devicemanagementsettinginstance-get.md)|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementsettinginstance を取得する](../api/intune-deviceintent-devicemanagementsettinginstance-get.md)|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -51,8 +51,6 @@ ms.locfileid: "31523610"
   "valueJson": "String"
 }
 ```
-
-
 
 
 

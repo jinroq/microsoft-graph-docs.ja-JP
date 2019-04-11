@@ -4,12 +4,12 @@ description: androidForWorkPkcsCertificateProfile オブジェクトのプロパ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 058cb9ae0ba87aaf88b58f1bf4f3fe61bb458bbc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a2b0c108915c9af848aed5040cc39f14cd654e0e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977199"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806805"
 ---
 # <a name="update-androidforworkpkcscertificateprofile"></a>androidForWorkPkcsCertificateProfile の更新
 
@@ -54,10 +54,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |renewalThresholdPercentage|Int32|証明書の更新しきい値の割合。 [androidforwork certificateprofilebase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)から継承された有効な値 1 ~ 99|
@@ -65,11 +65,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateValidityPeriodValue|Int32|証明書の有効期間の値。 [androidforwork certificateprofilebase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)から継承します|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケール。 [androidforwork certificateprofilebase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)から継承します。 使用可能な値は、`days`、`months`、`years` です。|
 |extendedkeyusages|[extendedkeyusage](../resources/intune-deviceconfig-extendedkeyusage.md)コレクション|拡張キー使用法 (EKU) の設定。 このコレクションには、最大で 500 個の要素を含めることができます。 [androidforwork certificateprofilebase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)から継承します|
-|certificationAuthority|String|PKCS 証明機関|
-|certificationAuthorityName|String|PKCS 証明機関名|
-|certificatetemplatename|String|PKCS 証明書テンプレート名|
-|subjectAlternativeNameFormatString|String|AAD 属性を定義するカスタム文字列。|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|証明書のサブジェクトの別名の種類。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|証明書のサブジェクトの別名の種類。 [androidforwork certificateprofilebase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)から継承します。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
+|certificationAuthority|文字列|PKCS 証明機関|
+|certificationAuthorityName|文字列|PKCS 証明機関名|
+|certificatetemplatename|文字列|PKCS 証明書テンプレート名|
+|subjectAlternativeNameFormatString|文字列|AAD 属性を定義するカスタム文字列。|
 
 
 
@@ -105,11 +105,11 @@ Content-length: 965
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "subjectAlternativeNameType": "emailAddress"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
 
@@ -143,13 +143,14 @@ Content-Length: 1137
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "subjectAlternativeNameType": "emailAddress"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

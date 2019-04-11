@@ -4,12 +4,12 @@ description: ドイツでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5072b95d54b0640115f350d9e8de26e8ec23112
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139523"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807820"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30139523"
 |agesAbove12|2/4|Ab 12 Jahren、12才以上|
 |agesAbove16|5|Ab 16 Jahren、16才以上|
 |保護者|シックス|Ab 18 Jahren、大人のみ|
+
 
 
 

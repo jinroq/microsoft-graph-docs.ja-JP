@@ -4,12 +4,12 @@ description: depEnrollmentProfile リソースは、Apple Device enrollment prog
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ecc14dcd7cf2d171259c76592352ff13bb6ed1d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a4a365ee8a83820789ecdbf199df5997b6e683e0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166424"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806098"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile リソースの種類
 
@@ -38,17 +38,17 @@ depEnrollmentProfile リソースは、Apple Device enrollment program (DEP) 登
 |displayName|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの名前|
 |説明|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
-|configurationendpointurl|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
+|configurationendpointurl|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
 |enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
-|isDefault|Boolean|これが既定のプロファイルであるかどうかを示します|
+|isDefault|ブール型 (Boolean)|これが既定のプロファイルであるかどうかを示します|
 |supervisedModeEnabled|Boolean|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
-|supportdepartment|String|サポート部門の情報|
+|supportdepartment|文字列|サポート部門の情報|
 |pass codedisabled|Boolean|パスコードセットアップウィンドウが無効であるかどうかを示します|
 |ismandatory|Boolean|プロファイルが必須であるかどうかを示します|
 |locationdisabled|Boolean|場所サービスの設定ウィンドウが無効であるかどうかを示します|
-|supportPhoneNumber|String|サポート電話番号|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|iTunes ペアリングモードを示します。 可能な値は `disallow`、`allow`、`requiresCertificate` です。|
+|supportPhoneNumber|文字列|サポート電話番号|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|iTunes ペアリングモードを示します。 使用可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
 |profileRemovalDisabled|Boolean|プロファイルの削除オプションが無効になっているかどうかを示します|
 |managementcertificates|[managementcertificatewiththumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の管理証明書|
 |restoreblocked|Boolean|セットアップウィンドウの復元がブロックされているかどうかを示します|
@@ -119,6 +119,7 @@ depEnrollmentProfile リソースは、Apple Device enrollment program (DEP) 登
   "enableSharedIPad": true
 }
 ```
+
 
 
 

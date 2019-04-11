@@ -4,12 +4,12 @@ description: 特定のデバイスの ATP オンボード状態です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 488473f3bea28a6f12bd79fbe9d6e21d669eaad9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d976aa25694a6a1684e4ad104a6d6510591196b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171835"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807582"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState リソースの種類
 
@@ -33,15 +33,15 @@ ms.locfileid: "30171835"
 |:---|:---|:---|
 |id|String|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|setting|String|設定のクラス名とプロパティ名。|
-|settingName|String|レポートされている設定名。|
-|deviceId|String|レポートされているデバイス ID。|
-|deviceName|String|レポートされているデバイス名。|
-|userId|String|レポートされているユーザー ID|
+|setting|文字列|設定のクラス名とプロパティ名。|
+|settingName|文字列|レポートされている設定名。|
+|deviceId|文字列|レポートされているデバイス ID。|
+|deviceName|文字列|レポートされているデバイス名。|
+|userId|文字列|レポートされているユーザー ID|
 |userEmail|String|レポートされているユーザーのメール アドレス。|
-|userName|String|レポートされているユーザー名|
+|userName|文字列|レポートされているユーザー名|
 |userPrincipalName|String|レポートされているユーザーの PrincipalName|
-|deviceModel|String|レポートされているデバイス モデル|
+|deviceModel|文字列|レポートされているデバイス モデル|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
@@ -74,6 +74,7 @@ ms.locfileid: "30171835"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: RGB 色。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e58d4dfe1e75b4b37333e29858ce93d1383f75a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c5ca085d009f38a2879074d7ee95a78acddf0f4a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155679"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807722"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor リソースの種類
 
@@ -44,6 +44,7 @@ RGB 色。
   "b": 1024
 }
 ```
+
 
 
 

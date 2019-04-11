@@ -4,12 +4,12 @@ description: プラットフォーム固有の登録の制限
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eecbc405fd56d21f7be1c7b9bccd5254db89c8d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e8ba3306c5a4af4dfbb8b97e4d4794b917ebbf64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140601"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806455"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "30140601"
 |:---|:---|:---|
 |platformBlocked|Boolean|登録で対象プラットフォームをブロックします|
 |personalDeviceEnrollmentBlocked|ブール型 (Boolean)|個人所有のデバイスの登録をブロックします|
-|osMinimumVersion|String|サポートされる最小 OS バージョン|
+|osMinimumVersion|文字列|サポートされる最小 OS バージョン|
 |osMaximumVersion|文字列型 (String)|サポートされる最大 OS バージョン|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -46,6 +46,7 @@ ms.locfileid: "30140601"
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

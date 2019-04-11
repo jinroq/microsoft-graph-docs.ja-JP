@@ -4,12 +4,12 @@ description: deviceManagementAbstractComplexSettingInstance オブジェクト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04e9572f32ffcc6ffae226577bfdfa58ffb03f49
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: eb984cb76058fbb6dd8774ce177380e11569c521
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522763"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807246"
 ---
 # <a name="get-devicemanagementabstractcomplexsettinginstance"></a>deviceManagementAbstractComplexSettingInstance を取得する
 
@@ -80,8 +80,6 @@ Content-Length: 294
   }
 }
 ```
-
-
 
 
 

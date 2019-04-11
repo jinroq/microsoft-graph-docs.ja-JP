@@ -4,12 +4,12 @@ description: 新しい windowsInformationProtectionDeviceRegistration オブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f07481326f3766e8a9b1173fc07914bb301d6588
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cc076b2579dc0eaf3527abb3761198e5dfd14917
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985992"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807421"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>windowsInformationProtectionDeviceRegistration を作成する
 
@@ -52,10 +52,10 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
-|deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
+|deviceRegistrationId|文字列|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
 |deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
-|deviceMacAddress|String|デバイスの Mac アドレス。|
+|deviceMacAddress|文字列|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
 
@@ -101,6 +101,7 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: windows10EnrollmentCompletionPageConfiguration オブジェクト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 862ec01be1bd6b99351d9b01f16797ae4a376e75
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1f2916db923230af2cfa7738416e6c10db4fea8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981133"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806224"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>windows10EnrollmentCompletionPageConfiguration の更新
 
@@ -50,9 +50,9 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
+|id|文字列|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承された登録ステータスページの構成の Id|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|description|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
@@ -61,10 +61,10 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |blockdevicesetupretrybyuser|Boolean|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
 |allowdeviceresetoninstallfailure|Boolean|インストール失敗時にデバイスのリセットを許可またはブロックする|
 |allowlogcollectiononinstallfailure|Boolean|インストール失敗時にログ収集を許可またはブロックする|
-|customerrormessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
+|customerrormessage|文字列|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
 |allowdeviceuseoninstallfailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
-|selectedMobileAppIds|String collection|インストールの状態を追跡するために選択されたアプリケーション|
+|selectedMobileAppIds|String コレクション|インストールの状態を追跡するために選択されたアプリケーション|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 755
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: BitLocker リムーバブル ドライブ ポリシー。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e7e343fc32af61b38c1cd14cf1fba29de549e99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aef69dc1ac05b838d1bb6a17e17f8ebde27edc1a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149428"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805587"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy リソースの種類
 
@@ -44,6 +44,7 @@ BitLocker リムーバブル ドライブ ポリシー。
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
 
 
 

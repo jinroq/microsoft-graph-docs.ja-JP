@@ -4,12 +4,12 @@ description: VPN プロキシサーバー。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b8a452cdde7c4c360107a67396d8f5ce49d6eb1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c711f02dc0b4f7e44ff1bd54669ed9befb73e42a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145277"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807645"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer リソースの種類
 
@@ -22,9 +22,9 @@ VPN プロキシサーバー。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|自動構成 scripturl|String|プロキシの自動構成スクリプトの url。|
+|自動構成 scripturl|文字列|プロキシの自動構成スクリプトの url。|
 |address|String|連絡先.|
-|port|Int32|ポート. 有効な値は 0 ~ 65535|
+|ポート|Int32|ポート. 有効な値は 0 ~ 65535|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -44,6 +44,7 @@ VPN プロキシサーバー。
   "port": 1024
 }
 ```
+
 
 
 

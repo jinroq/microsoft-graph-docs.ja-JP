@@ -4,12 +4,12 @@ description: 指定した一連のアプリの詳細な管理設定を構成す�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d020ccbcd0e72b00ce33de1662e1a9e8d0bb50a
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 2a17ffdc3d9803fa166bd01105dc360e2bb62d92
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571138"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807197"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection リソース タイプ
 
@@ -25,22 +25,22 @@ ms.locfileid: "30571138"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List managedAppProtections](../api/intune-mam-managedappprotection-list.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) コレクション|[managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedAppProtections のリスト](../api/intune-mam-managedappprotection-list.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) コレクション|[managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get managedAppProtection](../api/intune-mam-managedappprotection-get.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[targetApps action](../api/intune-mam-managedappprotection-targetapps.md)|なし|まだ文書化されていません|
+|[targetApps アクション](../api/intune-mam-managedappprotection-targetapps.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|id|String|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。|
-|periodOnlineBeforeAccessCheck|期間|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。|
+|periodOfflineBeforeAccessCheck|Duration|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。|
+|periodOnlineBeforeAccessCheck|Duration|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。|
 |allowedInboundDataTransferSources|[managedappdatatransフェリーレベル](../resources/intune-mam-managedappdatatransferlevel.md)|データの転送が許可されたソース。 使用可能な値は、`allApps`、`managedApps`、`none` です。|
 |allowedOutboundDataTransferDestinations|[managedappdatatransフェリーレベル](../resources/intune-mam-managedappdatatransferlevel.md)|データの転送が許可された宛先。 可能な値は、`allApps`、`managedApps`、`none` です。|
 |organizationalCredentialsRequired|Boolean|アプリを使用するために組織の資格情報が必要かどうかを示します。|
@@ -49,7 +49,7 @@ ms.locfileid: "30571138"
 |deviceComplianceRequired|Boolean|デバイスの準拠が必要かどうかを示します。|
 |managedBrowserToOpenLinksRequired|Boolean|管理対象ブラウザー アプリでインターネット リンクを開く必要があるかどうかを示します。|
 |saveAsBlocked|Boolean|ユーザーが保護されたファイルのコピーを保存するために、[名前を付けて保存] メニュー項目を使用できるかどうかを示します。|
-|periodOfflineBeforeWipeIsEnforced|期間|アプリがインターネットから切断されている状態を維持できる時間数。この時間を過ぎると管理対象データはすべて消去されます。|
+|periodOfflineBeforeWipeIsEnforced|Duration|アプリがインターネットから切断されている状態を維持できる時間数。この時間を過ぎると管理対象データはすべて消去されます。|
 |pinRequired|Boolean|アプリ レベルの pin が必要かどうかを示します。|
 |maximumPinRetries|Int32|管理対象アプリがブロックまたはワイプされるまでの、正しくない pin の再試行回数の最大数。|
 |simplePinBlocked|Boolean|simplePin がブロックされるかどうかを示します。|
@@ -61,15 +61,15 @@ ms.locfileid: "30571138"
 |printBlocked|Boolean|管理対象アプリからの印刷を許可するかどうかを示します。|
 |fingerprintBlocked|Boolean|PinRequired が True に設定されている場合に、pin の代わりに指紋リーダーの使用を許可するかどうかを示します。|
 |disableAppPinIfDevicePinIsSet|Boolean|デバイスの pin が設定されている場合に、アプリの pin の使用が必要かどうかを示します。|
-|minimumRequiredOsVersion|String|OS のバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
-|minimumWarningOsVersion|String|OS のバージョンが、指定されたバージョンよりも小さい場合に、会社のデータへアクセスすると管理対象アプリに警告メッセージが表示されます。|
-|minimumRequiredAppVersion|String|アプリのバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
+|minimumRequiredOsVersion|文字列|OS のバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
+|minimumWarningOsVersion|文字列|OS のバージョンが、指定されたバージョンよりも小さい場合に、会社のデータへアクセスすると管理対象アプリに警告メッセージが表示されます。|
+|minimumRequiredAppVersion|文字列|アプリのバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
 |minimumWarningAppVersion|String|アプリのバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリに警告メッセージが表示されます。|
-|minimumWipeOsVersion|String|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。|
-|minimumwipeappversion|String|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。|
+|minimumWipeOsVersion|文字列|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。|
+|minimumwipeappversion|文字列|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|DeviceComplianceRequired が true に設定されている場合、デバイスがルートまたは脱獄のどちらかの場合に、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 使用可能な値は、`block`、`wipe`、`warn` です。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|正しくない pin の再試行回数の最大数に基づいて、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 使用可能な値は、`block`、`wipe`、`warn` です。|
-|pinRequiredInsteadOfBiometricTimeout|期間|非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分)|
+|pinRequiredInsteadOfBiometricTimeout|Duration|非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分)|
 |allowedoutboundクリップの sharingexceptionlength|Int32|組織データおよびアカウントから任意のアプリケーションに切り取りまたはコピーすることができる文字数を指定します。 この設定は、allowedoutboundクリップボードの sharinglevel 制限より優先されます。 既定値 ' 0 ' は、例外が許可されていないことを意味します。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -131,6 +131,7 @@ ms.locfileid: "30571138"
   "allowedOutboundClipboardSharingExceptionLength": 1024
 }
 ```
+
 
 
 

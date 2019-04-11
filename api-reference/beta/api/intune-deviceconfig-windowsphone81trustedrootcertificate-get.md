@@ -4,12 +4,12 @@ description: windowsPhone81TrustedRootCertificate オブジェクトのプロパ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3010664f93ca8063438a2c05ddea652248b72f72
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d79011c34c05abf770a4883e3a67e30c9f1f18bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987399"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806406"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>windowsPhone81TrustedRootCertificate を取得する
 
@@ -85,6 +85,7 @@ Content-Length: 591
   }
 }
 ```
+
 
 
 

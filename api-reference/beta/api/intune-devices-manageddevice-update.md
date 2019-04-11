@@ -5,12 +5,12 @@ description: managedDevice オブジェクトのプロパティを更新しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56c45659d3e644a80d97f92ff6fe6659c4038d58
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3c7a0b95ff0ec3b5ad7cdd574405ccd4887e08dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967938"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807309"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
@@ -36,9 +36,9 @@ ms.locfileid: "30967938"
 }
 -->
 ``` http
-PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |:---|:---|:---|
 |id|String|デバイスの一意識別子|
 |userId|文字列型 (String)|デバイスに関連付けられているユーザーの一意の識別子|
-|deviceName|String|デバイスの名前|
+|deviceName|文字列|デバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードワードの詳細。  記憶領域、製造元、シリアル番号などの情報が含まれます。|
 |ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
@@ -69,45 +69,45 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |operatingSystem|文字列|デバイスのオペレーティング システム。 Windows、iOS など。|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
-|jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。|
+|jailBroken|文字列|デバイスが脱獄またはルート化されているかどうかを示します。|
 |managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は`eas`、 `mdm`、 `easMdm` `intuneClient` `easIntuneClient` `configurationManagerClient` `jamf` `googleCloudDevicePolicyController`、、、、、、、、、 `microsoft365ManagedMdm`、、です。 `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`|
-|osVersion|String|デバイスのオペレーティング システムのバージョン。|
+|osVersion|文字列|デバイスのオペレーティング システムのバージョン。|
 |easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
-|easDeviceId|String|デバイスの Exchange ActiveSync の ID。|
+|easDeviceId|文字列|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
 |aadRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
 |azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|失われたモードが有効か無効かを示します。 可能な値は、`disabled`、`enabled` です。|
 |activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。|
-|emailAddress|String|デバイスに関連付けられているユーザーの電子メール|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
-|azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
+|emailAddress|文字列|デバイスに関連付けられているユーザーの電子メール|
+|azureActiveDirectoryDeviceId|文字列|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
+|azureADDeviceId|文字列|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|デバイスの登録状態。 可能な値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown` です。|
-|deviceCategoryDisplayName|String|デバイス カテゴリの表示名|
+|deviceCategoryDisplayName|文字列|デバイス カテゴリの表示名|
 |isSupervised|Boolean|デバイスの管理状況|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。|
 |exchangeAccessState|[devicemanagementexchangeaccessstate](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。
  可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
-|remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
-|remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
+|remoteAssistanceSessionUrl|文字列|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
+|remoteAssistanceSessionErrorDetails|文字列|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
 |isEncrypted|Boolean|デバイスの暗号化の状態|
 |userPrincipalName|String|デバイスのユーザー プリンシパル名。|
-|model|String|デバイスのモデル|
-|manufacturer|String|デバイスのメーカー|
-|imei|String|IMEI|
+|model|文字列|デバイスのモデル|
+|manufacturer|文字列|デバイスのメーカー|
+|imei|文字列|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が経過する DateTime|
-|serialNumber|String|シリアル番号|
-|phoneNumber|String|デバイスの電話番号|
-|androidSecurityPatchLevel|String|Android セキュリティ パッチのレベル|
-|userDisplayName|String|ユーザーの表示名|
+|serialNumber|文字列|シリアル番号|
+|phoneNumber|文字列|デバイスの電話番号|
+|androidSecurityPatchLevel|文字列|Android セキュリティ パッチのレベル|
+|userDisplayName|文字列|ユーザーの表示名|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr クライアント対応機能
 |
-|wiFiMacAddress|String|Wi-Fi MAC|
+|wiFiMacAddress|文字列|Wi-Fi MAC|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|デバイスの正常性構成証明の状態。|
-|subscriberCarrier|String|サブスクライバー通信事業者|
-|meid|String|MEID|
+|subscriberCarrier|文字列|サブスクライバー通信事業者|
+|meid|文字列|MEID|
 |totalStorageSpaceInBytes|Int64|記憶域の合計 (バイト)|
 |freeStorageSpaceInBytes|Int64|空き記憶域 (バイト)|
 |managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。|
@@ -117,9 +117,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |autopilotEnrolled|Boolean|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。|
 |requireUserEnrollmentApproval|Boolean|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。|
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限を報告する|
-|iccid|String|ic カード識別子。 SIM カードの一意の識別番号です。|
-|udid|String|iOS および macOS デバイスの一意のデバイス識別子。|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ id のリスト。|
+|iccid|文字列|ic カード識別子。 SIM カードの一意の識別番号です。|
+|udid|文字列|iOS および macOS デバイスの一意のデバイス識別子。|
+|roleScopeTagIds|String コレクション|このデバイスインスタンスの範囲タグ id のリスト。|
 |windowsactivemalwarecount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
 |notes|String|IT 管理者によって作成されたデバイスのメモ|
@@ -135,7 +135,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
 Content-length: 7224
 
@@ -482,6 +482,7 @@ Content-Length: 7273
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: windowsWifiConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83e76e8fa2d12f85b05f2f05cdf1a0d015b9c87a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8a4ca80255ade7953eae6252e1efcd20572afbc0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982764"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806259"
 ---
 # <a name="delete-windowswificonfiguration"></a>windowsWifiConfiguration の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

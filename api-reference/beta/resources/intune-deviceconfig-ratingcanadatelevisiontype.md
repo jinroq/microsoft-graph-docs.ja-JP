@@ -4,12 +4,12 @@ description: カナダでのテレビコンテンツの評価のラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bab12884cd87c18c5c303a075fc26033f188ffea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7fa3989f4fe1324f404a16603f357a81136e1d9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144521"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806973"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 列挙型
 
@@ -30,6 +30,7 @@ ms.locfileid: "30144521"
 |parentalguidance|5|PG、キッズのガイダンス|
 |agesAbove14|シックス|14以上の分類は、14才以上の閲覧者を対象としています。|
 |agesAbove18|7|18以上の分類は、18才以上の閲覧者を対象としています。|
+
 
 
 

@@ -4,12 +4,12 @@ description: windowsInformationProtectionDeviceRegistration オブジェクト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 144fc1dc4849a59c6c32063eb6de0ea8c56527cd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 66b39b98aadff87b6609b0a40dd416693e5631d7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972481"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806014"
 ---
 # <a name="list-windowsinformationprotectiondeviceregistrations"></a>リスト windowsInformationProtectionDeviceRegistrations
 
@@ -79,6 +79,7 @@ Content-Length: 480
   ]
 }
 ```
+
 
 
 

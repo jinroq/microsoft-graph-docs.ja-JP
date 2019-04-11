@@ -4,12 +4,12 @@ description: mobileThreatDefenseConnector オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0209ecfaab7b8a3cf24740c26cb8478f510805a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d200e182cd694343bd197d1c620eed520a364e5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971284"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807778"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の取得
 
@@ -87,6 +87,7 @@ Content-Length: 720
   }
 }
 ```
+
 
 
 

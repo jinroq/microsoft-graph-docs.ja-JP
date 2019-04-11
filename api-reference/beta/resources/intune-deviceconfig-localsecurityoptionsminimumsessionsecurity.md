@@ -4,12 +4,12 @@ description: localsecurityoptionsminimumsessionsecurity に指定できる値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe6007747aed1037a4dc3d5264bb432182a28c00
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a087c9d99164ce5c830b2d40022d7ddd99736547
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145347"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806399"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localsecurityoptionsminimumsessionsecurity 列挙型
 
@@ -26,6 +26,7 @@ localsecurityoptionsminimumsessionsecurity に指定できる値
 |requireNtmlV2SessionSecurity|1-d|LM & NTLM を送信する-ネゴシエートされる場合は NTLMv2 セッションセキュリティを使用する|
 |require128BitEncryption|pbm-2|LM & NTLM 応答のみを送信する|
 |ntlmV2And128BitEncryption|1/3|LM & NTLMv2 応答のみを送信する|
+
 
 
 

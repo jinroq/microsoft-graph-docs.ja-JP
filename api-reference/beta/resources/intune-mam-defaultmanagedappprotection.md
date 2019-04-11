@@ -4,12 +4,12 @@ description: TargetedManagedAppProtection ポリシーの対象とされてい�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db1d82cf03e9263f3af7c4aa1cd72fe4bb2b70ff
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 77c79db2cd385bf6323fade9ec8f353a4e46a9cb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572482"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806504"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection リソース タイプ
 
@@ -25,7 +25,7 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List defaultManagedAppProtections](../api/intune-mam-defaultmanagedappprotection-list.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) コレクション|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[defaultManagedAppProtections のリスト](../api/intune-mam-defaultmanagedappprotection-list.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) コレクション|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-get.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-create.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|新しい [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトを作成します。|
 |[Delete defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-delete.md)|なし|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) を削除します。|
@@ -35,14 +35,14 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|id|String|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|periodOnlineBeforeAccessCheck|期間|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|periodOfflineBeforeAccessCheck|Duration|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|periodOnlineBeforeAccessCheck|Duration|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |allowedInboundDataTransferSources|[managedappdatatransフェリーレベル](../resources/intune-mam-managedappdatatransferlevel.md)|データの転送が許可されたソース。 [managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 使用可能な値は、`allApps`、`managedApps`、`none` です。|
 |allowedOutboundDataTransferDestinations|[managedappdatatransフェリーレベル](../resources/intune-mam-managedappdatatransferlevel.md)|データの転送が許可された宛先。 [managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 可能な値は、`allApps`、`managedApps`、`none` です。|
 |organizationalCredentialsRequired|Boolean|アプリを使用するために組織の資格情報が必要かどうかを示します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
@@ -63,15 +63,15 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |printBlocked|Boolean|管理対象アプリからの印刷を許可するかどうかを示します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |fingerprintBlocked|Boolean|PinRequired が True に設定されている場合に、pin の代わりに指紋リーダーの使用を許可するかどうかを示します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |disableAppPinIfDevicePinIsSet|Boolean|デバイスの pin が設定されている場合に、アプリの pin の使用が必要かどうかを示します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|minimumRequiredOsVersion|String|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|minimumWarningOsVersion|String|OS のバージョンが、指定されたバージョンよりも小さい場合に、会社のデータへアクセスすると管理対象アプリに警告メッセージが表示されます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|minimumRequiredAppVersion|String|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|minimumRequiredOsVersion|文字列|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|minimumWarningOsVersion|文字列|OS のバージョンが、指定されたバージョンよりも小さい場合に、会社のデータへアクセスすると管理対象アプリに警告メッセージが表示されます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|minimumRequiredAppVersion|文字列|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |minimumWarningAppVersion|String|アプリのバージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリに警告メッセージが表示されます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|minimumWipeOsVersion|String|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
-|minimumwipeappversion|String|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|minimumWipeOsVersion|文字列|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|minimumwipeappversion|文字列|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|DeviceComplianceRequired が true に設定されている場合、デバイスがルートまたは脱獄のどちらかの場合に、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 [managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 使用可能な値は、`block`、`wipe`、`warn` です。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|正しくない pin の再試行回数の最大数に基づいて、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 [managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 使用可能な値は、`block`、`wipe`、`warn` です。|
-|pinRequiredInsteadOfBiometricTimeout|期間|[managedappprotection](../resources/intune-mam-managedappprotection.md)から継承された非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分単位)|
+|pinRequiredInsteadOfBiometricTimeout|Duration|[managedappprotection](../resources/intune-mam-managedappprotection.md)から継承された非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分単位)|
 |allowedoutboundクリップの sharingexceptionlength|Int32|組織データおよびアカウントから任意のアプリケーションに切り取りまたはコピーすることができる文字数を指定します。 この設定は、allowedoutboundクリップボードの sharinglevel 制限より優先されます。 既定値 ' 0 ' は、例外が許可されていないことを意味します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|管理対象アプリのデータに使用する暗号化の種類。 (iOS のみ)。 可能な値は、`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked` です。|
 |screenCaptureBlocked|Boolean|画面キャプチャがブロックされているかどうかを示します。 (Android のみ)|
@@ -80,16 +80,16 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |minimumRequiredSdkVersion|String|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。 (iOS のみ)|
 |customSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|このサービスで変更されずに、影響を受けるユーザーに送信される、文字列のキーと文字列の値のペアのセット|
 |deployedAppCount|Int32|現在のポリシーが配置されたアプリの数。|
-|minimumRequiredPatchVersion|String|ユーザーがアプリに安全にアクセスできるための、最も古い、必須の Android セキュリティ パッチのレベルを定義します。 (Android のみ)|
+|minimumRequiredPatchVersion|文字列|ユーザーがアプリに安全にアクセスできるための、最も古い、必須の Android セキュリティ パッチのレベルを定義します。 (Android のみ)|
 |minimumWarningPatchVersion|String|ユーザーがアプリに安全にアクセスできるための、最も古い、推奨の Android セキュリティ パッチのレベルを定義します。 (Android のみ)|
 |exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|このリストに含まれる iOS アプリはポリシーから除外され、管理対象アプリからデータを受信できるようになります。 (iOS のみ)|
 |exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|このリストの Android アプリパッケージは、ポリシーから除外され、管理対象アプリからデータを受信できるようになります。 (Android のみ)|
 |faceIdBlocked|Boolean|PinRequired が True に設定されている場合に、pin の代わりに FaceID の使用を許可するかどうかを示します。 (iOS のみ)|
-|minimumWipeSdkVersion|String|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
-|minimumWipePatchVersion|String|指定された値以下の Android セキュリティパッチレベルでは、管理対象アプリと関連会社のデータが消去されます。 (Android のみ)|
-|allowedIosDeviceModels|String|管理対象アプリが動作するために、文字列として許可されるデバイスモデルのセミコロンで区切られたリスト。 (iOS のみ)|
+|minimumWipeSdkVersion|文字列|バージョンが、指定されたバージョンよりも小さい場合に、管理対象アプリによる会社のデータへのアクセスをブロックします。|
+|minimumWipePatchVersion|文字列|指定された値以下の Android セキュリティパッチレベルでは、管理対象アプリと関連会社のデータが消去されます。 (Android のみ)|
+|allowedIosDeviceModels|文字列|管理対象アプリが動作するために、文字列として許可されるデバイスモデルのセミコロンで区切られたリスト。 (iOS のみ)|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|指定されたデバイスモデルが許可されていない場合は、ブロックまたはワイプのいずれかの管理対象アプリの動作を定義します。 (iOS のみ)。 使用可能な値は、`block`、`wipe`、`warn` です。|
-|allowedandroiddevicemanufacturers、|String|管理対象アプリが動作するために文字列として許可されるデバイスメーカーのセミコロンで区切られたリスト。 (Android のみ)|
+|allowedandroiddevicemanufacturers、|文字列|管理対象アプリが動作するために文字列として許可されるデバイスメーカーのセミコロンで区切られたリスト。 (Android のみ)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|指定されたデバイスの製造元が許可されていない場合は、ブロックまたはワイプのいずれかの管理対象アプリの動作を定義します。 (Android のみ)。 使用可能な値は、`block`、`wipe`、`warn` です。|
 |thirdPartyKeyboardsBlocked|Boolean|管理対象アプリへのアクセス時にサードパーティ製のキーボードを許可するかどうかを定義します。 (iOS のみ)|
 |filterOpenInToOnlyManagedApps|Boolean|管理対象アプリから、選択された共有ファイルの場所に対してオープンイン操作がサポートされているかどうかを定義します。 この設定は、allowedoutbounddatatrans小 DisableProtectionOfManagedOutboundOpenInData が managedapps に設定されていて、が False に設定されている場合にのみ適用されます。 (iOS のみ)|
@@ -100,7 +100,7 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|管理対象アプリを機能させるための Android の saf etynet アプリの検証要件を定義します。 可能な値は、`none`、`enabled` です。|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|指定した Android アプリの検証 requirment が失敗した場合に、警告またはブロックのいずれかの管理対象アプリの動作を定義します。 可能な値は、`block`、`wipe`、`warn` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) コレクション|ポリシーが配置されたアプリのリスト。|
@@ -206,6 +206,7 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
   "appActionIfAndroidSafetyNetAppsVerificationFailed": "String"
 }
 ```
+
 
 
 

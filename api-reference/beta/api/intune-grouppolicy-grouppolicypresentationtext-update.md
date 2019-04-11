@@ -4,12 +4,12 @@ description: grouppolicypresentationtext オブジェクトのプロパティを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bc14acab2d290e2716dba471d2c6d37d8c1ebe6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fe3d41371ca9ec27b2555ed18ec46519d47f3538
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967210"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807939"
 ---
 # <a name="update-grouppolicypresentationtext"></a>grouppolicypresentationtext の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 
@@ -89,6 +89,7 @@ Content-Length: 209
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

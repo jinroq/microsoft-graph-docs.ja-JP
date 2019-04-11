@@ -4,12 +4,12 @@ description: Apple VPN 接続の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53ed413b05e29a10cebf151c718e55c75de702c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9cbb3b3ba87a65d248da248bfe66abb426fdd764
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155602"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806021"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>りんご evpnconnectiontype 列挙型
 
@@ -36,6 +36,7 @@ Apple VPN 接続の種類。
 |f5Access2018|#|F5 キーを押してアクセス2018。|
 |citrixSso|個|Citrix Sso。|
 |paloAltoGlobalProtectV2|スリー|Palo Alto Networks globalprotect V2。|
+
 
 
 

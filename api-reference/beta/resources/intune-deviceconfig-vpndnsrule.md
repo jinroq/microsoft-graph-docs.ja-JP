@@ -4,12 +4,12 @@ description: VPN DNS ルールの定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 545c0dd8a84f19888452261e350a9b347061595c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158507"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805853"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpndnsrule リソースの種類
 
@@ -23,10 +23,10 @@ VPN DNS ルールの定義。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |name|String|拡張子.|
-|サーバー|String collection|サーバ.|
-|proxyserveruri|String|プロキシサーバーの Uri。|
-|autotrigger|ブール値|デバイスがこのドメインに接続されている場合は、自動的に VPN に接続します。既定値は False です。|
-|persistent|ブール値|VPN が接続されていない場合も、このルールをアクティブにします。既定値は False です。|
+|サーバ|String コレクション|サーバ.|
+|proxyserveruri|文字列|プロキシサーバーの Uri。|
+|autotrigger|Boolean|デバイスがこのドメインに接続されている場合は、自動的に VPN に接続します。既定値は False です。|
+|引き続き|Boolean|VPN が接続されていない場合も、このルールをアクティブにします。既定値は False です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -50,6 +50,7 @@ VPN DNS ルールの定義。
   "persistent": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: OnPrem Ndes コネクタを表すエンティティ。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a37cc86e72ba48a32988c8cdd034874e490a8c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146930"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806665"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesconnector リソースの種類
 
@@ -33,7 +33,7 @@ OnPrem Ndes コネクタを表すエンティティ。
 |:---|:---|:---|
 |id|String|NDES connector のキー。|
 |lastConnectionDateTime|DateTimeOffset|Ndes connector の最終接続時刻|
-|state|[ndesコネクタ状態](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes connector の状態。 可能な値は `none`、`active`、`inactive` です。|
+|state|[ndesコネクタ状態](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes connector の状態。 使用可能な値は、`none`、`active`、`inactive` です。|
 |displayName|String|Ndes connector のフレンドリ名。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -56,6 +56,7 @@ OnPrem Ndes コネクタを表すエンティティ。
   "displayName": "String"
 }
 ```
+
 
 
 

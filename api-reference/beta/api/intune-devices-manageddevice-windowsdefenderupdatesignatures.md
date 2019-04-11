@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9db9377d735557fda83108b6c6f34209d152303
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aa187522401587cf7a5ce6f66c67a301e3b6c5cb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983345"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806343"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>windowsDefenderUpdateSignatures アクション
 
@@ -34,9 +34,9 @@ ms.locfileid: "30983345"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 POST /deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsDefenderUpdateSignatures
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 ```
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 ```
 
 ### <a name="response"></a>応答
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

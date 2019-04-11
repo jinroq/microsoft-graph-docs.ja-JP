@@ -4,12 +4,12 @@ description: roleDefinition オブジェクトのプロパティを更新しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5716202d2b6e9ca29e7561c839055096e7a6da8b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e787c326a862b1d2bbbda50ed3106fdfdcf235ca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973314"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805888"
 ---
 # <a name="update-roledefinition"></a>roleDefinition の更新
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
-|description|String|ロールの定義の説明。|
+|説明|String|ロールの定義の説明。|
 |アクセス許可|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |isBuiltInRoleDefinition|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -181,6 +181,7 @@ Content-Length: 1256
   ]
 }
 ```
+
 
 
 

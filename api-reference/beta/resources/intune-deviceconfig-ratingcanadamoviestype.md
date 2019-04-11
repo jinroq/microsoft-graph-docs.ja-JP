@@ -4,12 +4,12 @@ description: カナダでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a1ebcc17e324cc617235761be499f56a1a17ffe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5772dd27419c7f2b638a08aed8ba62b4d4c7880f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142589"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807764"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30142589"
 |agesAbove14|2/4|14A の分類は、14才以上の閲覧者に適しています。|
 |agesAbove18|5|18a 分類は18またはそれ以前の閲覧者に適しています。|
 |しか|シックス|R 分類は18年以上に制限されています。|
+
 
 
 
