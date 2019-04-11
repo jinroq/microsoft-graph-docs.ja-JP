@@ -4,12 +4,12 @@ description: networkIPv4ConfigurationManagementCondition オブジェクトの�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bae6132a3b4d1bf44f36b22102b5facccceccbe7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 76d53c31da213cf3de1ca2f3b5fe32cc99b92d64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961638"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782115"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>リスト networkIPv4ConfigurationManagementConditions
 
@@ -92,6 +92,7 @@ Content-Length: 810
   ]
 }
 ```
+
 
 
 

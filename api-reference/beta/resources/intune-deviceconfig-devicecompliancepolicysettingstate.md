@@ -4,12 +4,12 @@ description: 特定のデバイスに関する、デバイス コンプライア
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0b98cc4809fb72bb7caf5fe55fe6e912fd00f9b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b6c204294190f2f585ad19f7cad4f68e2f7fcc03
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171499"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782206"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 
@@ -22,17 +22,17 @@ ms.locfileid: "30171499"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|setting|String|レポートされている設定値です。|
-|settingName|String|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|
-|instanceDisplayName|String|レポートされている設定インスタンスの名前です。|
+|setting|文字列|レポートされる設定値。|
+|settingName|文字列|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名|
+|instanceDisplayName|文字列|レポートされている設定インスタンスの名前です。|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |errorCode|Int64|設定のエラー コード|
-|errorDescription|String|エラーの説明|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
+|errorDescription|文字列|エラーの説明|
+|userId|文字列|UserId|
+|userName|文字列|UserName|
+|userEmail|文字列|UserEmail|
 |userPrincipalName|String|UserPrincipalName。|
-|ソース|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|投稿ポリシー|
+|sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|投稿ポリシー|
 |currentValue|String|デバイスに関する設定の現在の値|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -68,6 +68,7 @@ ms.locfileid: "30171499"
   "currentValue": "String"
 }
 ```
+
 
 
 

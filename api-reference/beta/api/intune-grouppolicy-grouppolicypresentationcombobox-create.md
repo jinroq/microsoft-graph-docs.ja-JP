@@ -4,12 +4,12 @@ description: 新しい grouppolicypresentationcombobox オブジェクトを作�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30952aa522378b3c8a881ddb6549e8a48946f493
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9ca375a771856f314563e2780128fc7d8aab3c88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975969"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782178"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>grouppolicypresentationcombobox の作成
 
@@ -50,11 +50,11 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|defaultValue|String|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
-|助言|String collection|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
+|defaultValue|文字列|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
+|助言|String コレクション|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
 |必須|Boolean|パラメーターに値を指定する必要があるかどうかを指定します。 既定値は false です。|
 |maxLength|Int64|パラメーターのテキスト文字の最大数を指定する符号なし整数。 既定値は1023です。|
 
@@ -104,6 +104,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

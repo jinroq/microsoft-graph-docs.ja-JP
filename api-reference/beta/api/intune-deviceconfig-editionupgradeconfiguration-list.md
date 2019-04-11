@@ -4,12 +4,12 @@ description: editionUpgradeConfiguration オブジェクトのプロパティと
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b5299998d932d4b810b288952774656f8362125
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d23905ca59a36f26fab1a3740e4b8a4c535072f2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987994"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780435"
 ---
 # <a name="list-editionupgradeconfigurations"></a>editionUpgradeConfigurations のリスト
 
@@ -88,6 +88,7 @@ Content-Length: 700
   ]
 }
 ```
+
 
 
 

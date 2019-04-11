@@ -4,12 +4,12 @@ description: 新しい auditEvent オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a11ca29ca4d251285ef4f6a1842b9d7174ee66f5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: db854a7a7331600ee33352010439936c59e90e08
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782710"
 ---
 # <a name="create-auditevent"></a>auditEvent の作成
 
@@ -52,12 +52,12 @@ POST /deviceManagement/auditEvents
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。|
 |displayName|String|イベントの表示名。|
-|componentName|String|コンポーネント名。|
+|componentName|文字列|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
-|activity|String|わかりやすいアクティビティの名前。|
+|activity|文字列|わかりやすいアクティビティの名前。|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時 (UTC)。|
-|activityType|String|実行されたアクティビティの種類。|
-|activityOperationType|String|アクティビティの HTTP 操作の種類。|
+|activityType|文字列|実行されたアクティビティの種類。|
+|activityOperationType|文字列|アクティビティの HTTP 操作の種類。|
 |activityResult|String|アクティビティの結果。|
 |correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) コレクション|変更中のリソースです。|
@@ -170,6 +170,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

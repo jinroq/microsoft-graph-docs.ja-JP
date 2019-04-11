@@ -4,12 +4,12 @@ description: デバイスの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1f70ebf9ab8e22512bdb6f1238bec7c4354582f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 604009d8a636a367203f9c9ced69aa22f40bfbc7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178172"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781037"
 ---
 # <a name="devicetypes-enum-type"></a>devicetypes 列挙型
 
@@ -44,6 +44,7 @@ ms.locfileid: "30178172"
 |blackberry|100|Blackberry.|
 |ヤシ|101|ヤシ.|
 |不明|255|デバイスの種類が不明であることを表します。|
+
 
 
 

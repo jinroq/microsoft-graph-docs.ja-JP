@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9f41444f1b101c1e3f7b219e917a53aa95c9d46
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fa6a896644e83be4acd55755baad9b9494ffee3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161384"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782472"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>windowsAutopilotSyncStatus 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30161384"
 |inProgress|1-d|同期が進行中|
 |せ|pbm-2|同期が完了しました。|
 |フェール|1/3|同期に失敗しました。|
+
 
 
 

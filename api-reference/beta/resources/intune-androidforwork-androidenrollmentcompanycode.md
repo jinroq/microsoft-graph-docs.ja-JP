@@ -4,12 +4,12 @@ description: トークン、Url、QR コードコンテンツなど、Google の
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0cd3ede4193ea3fdb33d33010349812150848e7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0422bf09d990c02c984b45fa144d6ae12661f718
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169343"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784440"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30169343"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enrollmentToken|String|ユーザーがデバイスを登録するために使用する登録トークン。|
-|qrCodeContent|String|トークン用の QR コードを生成するために使用された文字列。|
+|enrollmentToken|文字列|ユーザーがデバイスを登録するために使用する登録トークン。|
+|qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの生成された QR コード。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -48,6 +48,7 @@ ms.locfileid: "30169343"
   }
 }
 ```
+
 
 
 

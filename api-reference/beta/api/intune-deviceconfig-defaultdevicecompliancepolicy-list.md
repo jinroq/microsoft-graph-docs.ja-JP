@@ -4,12 +4,12 @@ description: defaultdevicecompliancepolicy オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2b85963745387dd531219dcc3ae57a55faa8144
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 925f64183324445dac0f7c5e66e850e8fd0b5e7f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961365"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781982"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>defaultdevicecompliancepolicies のリスト
 
@@ -81,6 +81,7 @@ Content-Length: 474
   ]
 }
 ```
+
 
 
 

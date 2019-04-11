@@ -4,12 +4,12 @@ description: OMA 設定の定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fab80ad06fb5654578f29b92e3b0f3aa9c09abdb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5d4c232f346e9966c72bcd60e0fd08af139db068
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143849"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783228"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting リソースの種類
 
@@ -24,7 +24,7 @@ OMA 設定の定義。
 |:---|:---|:---|
 |displayName|String|表示名。|
 |説明|String|説明。|
-|omaUri|文字列|OMA。|
+|omaUri|文字列型 (String)|OMA。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -44,6 +44,7 @@ OMA 設定の定義。
   "omaUri": "String"
 }
 ```
+
 
 
 

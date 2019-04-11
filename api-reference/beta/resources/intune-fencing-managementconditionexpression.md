@@ -4,12 +4,12 @@ description: 管理条件式は、評価時にブール値を生成する式で�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0329504c86beedbc8b04ec35c25f764ff2b3114c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1b102fe5d23a3a6dddadbf569ac9b15817a5947e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782507"
 ---
 # <a name="managementconditionexpression-resource-type"></a>managementconditionexpression リソースの種類
 
@@ -38,6 +38,7 @@ ms.locfileid: "30164653"
   "@odata.type": "#microsoft.graph.managementConditionExpression"
 }
 ```
+
 
 
 

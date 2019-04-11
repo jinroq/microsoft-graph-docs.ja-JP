@@ -4,12 +4,12 @@ description: テナント内のすべての管理されたデバイスへの割�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41683260279f996fefd1747ee4033fa6a585b6ea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 40ffbb9220897fe904fa9458d1f07ac134300fca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147069"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784811"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget リソースの種類
 
@@ -41,6 +41,7 @@ ms.locfileid: "30147069"
   "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
+
 
 
 

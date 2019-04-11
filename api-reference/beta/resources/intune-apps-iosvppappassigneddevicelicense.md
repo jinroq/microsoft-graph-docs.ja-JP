@@ -4,12 +4,12 @@ description: iOS Volume Purchase Program デバイスライセンスの割り当
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56e41bdabc8b6585fe5b003d28eaa4259046f662
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d9fec5bb85486d5bc73835e1b0b855c76da72994
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174623"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784748"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense リソースの種類
 
@@ -35,12 +35,12 @@ iOS Volume Purchase Program デバイスライセンスの割り当て。 この
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
-|userEmailAddress|String|ユーザーの電子メールアドレス。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userEmailAddress|文字列|ユーザーの電子メールアドレス。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
 |userId|String|ユーザー ID。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
-|userName|String|ユーザー名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
-|userPrincipalName|文字列|ユーザー プリンシパル名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
-|manageddeviceid|String|管理されているデバイス ID。|
-|deviceName|String|デバイス名。|
+|userName|文字列型 (String)|ユーザー名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|userPrincipalName|String|ユーザー プリンシパル名。 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承します。|
+|manageddeviceid|文字列|管理されているデバイス ID。|
+|deviceName|文字列|デバイス名。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -65,6 +65,7 @@ iOS Volume Purchase Program デバイスライセンスの割り当て。 この
   "deviceName": "String"
 }
 ```
+
 
 
 

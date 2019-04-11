@@ -4,12 +4,12 @@ description: Apple volume purchase program のトークンに関連付けられ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdb356d5103fc1c1dc07245d8552cb77b9383c8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dbc62b855035ebf68fefae3d628582b566804449
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159865"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781149"
 ---
 # <a name="vpptokenstate-enum-type"></a>vpptokenstate 列挙型
 
@@ -27,6 +27,7 @@ Apple volume purchase program のトークンに関連付けられている状�
 |終了|pbm-2|トークンの有効期限が切れています。|
 |無効です|1/3|トークンが無効です。|
 |assignedToExternalMDM|2/4|トークンは別の MDM サービスによって管理されています。|
+
 
 
 

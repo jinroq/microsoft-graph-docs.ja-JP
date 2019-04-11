@@ -4,12 +4,12 @@ description: アプリの発行状態を示します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ae8cdb97afb0b44acf268381c3cb128aaff9b7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e644264c1e72092be16063156708b45364b5097
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160166"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782752"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 列挙型
 
@@ -23,8 +23,9 @@ ms.locfileid: "30160166"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notpublished|.0|アプリはまだ公開されていません。|
-|処理|1-d|アプリは、サービス側の処理を保留しています。|
-|公開|pbm-2|アプリが発行されます。|
+|プロセッシング|1-d|アプリは、サービス側の処理を保留しています。|
+|済み|pbm-2|アプリが発行されます。|
+
 
 
 

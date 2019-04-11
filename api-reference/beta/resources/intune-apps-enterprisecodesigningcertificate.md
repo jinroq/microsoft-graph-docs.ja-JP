@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac5f5a901e147523e1da8d14d0d782603b02cdd7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 213915889ad575af61fcdda7ee7306c0b38370c5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157170"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781366"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate リソースの種類
 
@@ -33,11 +33,11 @@ ms.locfileid: "30157170"
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |content|Binary|未加工のデータ形式の Windows エンタープライズコード署名証明書。|
-|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
-|subjectName|String|証明書のサブジェクト名。|
+|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
+|subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
-|issuerName|String|証明書の発行者名。|
-|会社|String|証明書の発行者の値。|
+|issuerName|文字列|証明書の発行者名。|
+|会社|文字列|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploaddatetime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 
@@ -66,6 +66,7 @@ ms.locfileid: "30157170"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

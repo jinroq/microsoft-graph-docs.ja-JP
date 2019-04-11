@@ -4,12 +4,12 @@ description: 電子メール同期スケジュールに指定できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1da569d7050e88dd5eb41640bc2d8eaa602bb2b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174847"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781282"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailsyncschedule 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30174847"
 |thirtyMinutes|2/4|30分ごとに同期します。|
 |sixtyMinutes|5|60分ごとに同期します。|
 |basedOnMyUsage|シックス|自分の使用状況に基づいて同期します。|
+
 
 
 

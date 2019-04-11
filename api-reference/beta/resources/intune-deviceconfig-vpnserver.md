@@ -4,12 +4,12 @@ description: VPN サーバーの定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf45848059f7cbd74b408b4074b0ebc5c31b4e5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170463"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782836"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer リソースの種類
 
@@ -22,9 +22,9 @@ VPN サーバーの定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|説明|String|説明。|
+|description|String|説明。|
 |address|String|Address (IP アドレス、FQDN または URL)|
-|isdefaultserver|ブール値|既定のサーバー。|
+|isdefaultserver|Boolean|既定のサーバー。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -44,6 +44,7 @@ VPN サーバーの定義。
   "isDefaultServer": true
 }
 ```
+
 
 
 

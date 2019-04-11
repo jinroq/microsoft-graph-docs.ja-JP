@@ -4,12 +4,12 @@ description: 新しい iosUpdateDeviceStatus オブジェクトを作成しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 493c689e11f02d1b57c64796e40346e424b4efb0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 87afdbd29f05ec1c8fe1a36f3d5c13d841bd5730
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984185"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784130"
 ---
 # <a name="create-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の作成
 
@@ -52,12 +52,12 @@ POST /deviceManagement/iosUpdateStatuses
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |installStatus|[iosupの installstatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|ポリシー レポートのインストール状態。 可能な値は`success`、 `available`、 `idle` `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `sharedDeviceUserLoggedInError`、、 `installing`、、、、、、、、です。 `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation`|
-|osVersion|String|レポートされているデバイス バージョン。|
-|deviceId|String|レポートされているデバイス ID。|
+|osVersion|文字列|レポートされているデバイス バージョン。|
+|deviceId|文字列|レポートされているデバイス ID。|
 |userId|String|レポートされているユーザー ID。|
-|deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
+|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
 |userName|文字列型 (String)|レポートされているユーザー名|
-|deviceModel|String|レポートされているデバイス モデル|
+|deviceModel|文字列|レポートされているデバイス モデル|
 |platform|Int32|レポートされているデバイスのプラットフォーム|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
@@ -119,6 +119,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

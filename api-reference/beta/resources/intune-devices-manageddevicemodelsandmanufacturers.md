@@ -4,12 +4,12 @@ description: アカウントの管理対象デバイスのモデルと製造 mea
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfd8f068305bdae86a0acc9ef5f9113bb0d1c579
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99291829bfa672a9ade85a0a015061e4f6ec8e10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148301"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782563"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30148301"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|devicemodels|String collection|アカウント内の管理されたデバイスのモデルの一覧|
-|deviceManufacturers|String collection|アカウントで管理されているデバイスの製造元の一覧|
+|devicemodels|String コレクション|アカウント内の管理されたデバイスのモデルの一覧|
+|deviceManufacturers|String コレクション|アカウントで管理されているデバイスの製造元の一覧|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -46,6 +46,7 @@ ms.locfileid: "30148301"
   ]
 }
 ```
+
 
 
 

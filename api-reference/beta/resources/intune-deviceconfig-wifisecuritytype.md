@@ -4,12 +4,12 @@ description: wi-fi セキュリティの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c16265ecf9b4fa56536838dde1f4f1f757d8b1f9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9144a5761691b0a50e40370b1f4d2d08967f2c28
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159046"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780008"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 列挙型
 
@@ -28,6 +28,7 @@ wi-fi セキュリティの種類。
 |wep|1/3|WEP 暗号化。|
 |wpa2Personal|2/4|WPA2-個人用。|
 |wpa2Enterprise|5|WPA2-エンタープライズ。 エンタープライズオプションを構成するには、WindowsWifiEnterpriseEAPConfiguration type を使用する必要があります。|
+
 
 
 

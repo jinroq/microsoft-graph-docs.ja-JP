@@ -4,12 +4,12 @@ description: 新しい manageddeviceencryptionstate オブジェクトを作成�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd0a2310f7f7ead0fd59e8f1b6ca66e8811667bb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6edba4844d56f1c1f87ff146f547cd4b08699c84
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960791"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780820"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>manageddeviceencryptionstate の作成
 
@@ -54,8 +54,8 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |userPrincipalName|String|ユーザー名|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|デバイスのオペレーティングシステムのバージョン|
-|tpmSpecificationVersion|String|デバイス TPM のバージョン|
-|deviceName|String|[デバイス名]|
+|tpmSpecificationVersion|文字列|デバイス TPM のバージョン|
+|deviceName|文字列|[デバイス名]|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|暗号化の準備状態。 可能な値は、`notReady`、`ready` です。|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 可能な値は、`notEncrypted`、`encrypted` です。|
 |encryptionpolicysettingstate|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
@@ -125,6 +125,7 @@ Content-Length: 707
   ]
 }
 ```
+
 
 
 

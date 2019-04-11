@@ -4,12 +4,12 @@ description: 新しい grouppolicypresentationmultitextbox オブジェクトを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb72cebea71fff791f0b8f5be25abc353b17ee85
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5615488ce6b4e5a7e4d477192b19aedf047f4c22
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981623"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783333"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>grouppolicypresentationmultitextbox の作成
 
@@ -50,7 +50,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |必須|Boolean|テキストボックスに値を入力する必要があります。 既定値は False です。|
@@ -97,6 +97,7 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
+
 
 
 

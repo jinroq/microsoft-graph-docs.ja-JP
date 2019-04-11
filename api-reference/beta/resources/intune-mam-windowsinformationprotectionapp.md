@@ -4,12 +4,12 @@ description: Windows 情報保護用アプリ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2b8739fd045d4b8e6293164fc7e9b14154a475c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fb14092fa9f347e551a4871da69d9a3631b96e8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139285"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782045"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp リソースの種類
 
@@ -22,8 +22,8 @@ Windows 情報保護用アプリ
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|アプリの表示名。|
-|説明|文字列|アプリの説明。|
+|displayName|String|アプリの表示名。|
+|説明|String|アプリの説明。|
 |publisherName|String|発行元名|
 |productName|文字列型 (String)|製品名。|
 |denied|ブール型 (Boolean)|true の場合、アプリは拒否された保護または除外です。|
@@ -48,6 +48,7 @@ Windows 情報保護用アプリ
   "denied": true
 }
 ```
+
 
 
 

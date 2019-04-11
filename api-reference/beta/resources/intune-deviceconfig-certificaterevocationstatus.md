@@ -4,12 +4,12 @@ description: 証明書の失効状態。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c182cf2317f185108570116a283973d481f17ab2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5fd9a6cd34df322a057d16e3d803d8685f7cd173
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159445"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782808"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30159445"
 |発行|pbm-2|失効コマンドが発行されました。|
 |フェール|1/3|取り消しに失敗しました。|
 |破棄|2/4|破棄.|
+
 
 
 

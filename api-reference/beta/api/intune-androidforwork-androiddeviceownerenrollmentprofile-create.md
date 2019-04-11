@@ -4,12 +4,12 @@ description: 新しい androidDeviceOwnerEnrollmentProfile オブジェクトを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2034ac39671f5e949c93bc9e2b6468aa7895959
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7589c0842a30068035a1c423339d5df22e5fc1cb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984843"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783473"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>androidDeviceOwnerEnrollmentProfile を作成する
 
@@ -50,13 +50,13 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|accountId|String|登録プロファイルが属するテナント GUID。|
-|id|String|登録プロファイルの一意の GUID。|
+|accountId|文字列|登録プロファイルが属するテナント GUID。|
+|id|文字列|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|description|String|登録プロファイルの説明。|
+|説明|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
-|tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
+|tokenValue|文字列|この登録プロファイル用に最後に作成されたトークンの値。|
 |tokenの日付/時刻|DateTimeOffset|最後に作成されたトークンが作成された日時。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
@@ -122,6 +122,7 @@ Content-Length: 737
   }
 }
 ```
+
 
 
 

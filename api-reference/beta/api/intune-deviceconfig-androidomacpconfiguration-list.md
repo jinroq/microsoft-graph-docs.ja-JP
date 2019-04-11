@@ -4,12 +4,12 @@ description: androidOmaCpConfiguration オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0c6fd28c6dcc74935171504e67b700ed4ce0bb9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dc5eebea1dbe210693119c19c3e0231572da61a5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965810"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780960"
 ---
 # <a name="list-androidomacpconfigurations"></a>リスト androidOmaCpConfigurations
 
@@ -84,6 +84,7 @@ Content-Length: 559
   ]
 }
 ```
+
 
 
 

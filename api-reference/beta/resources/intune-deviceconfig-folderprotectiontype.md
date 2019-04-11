@@ -4,12 +4,12 @@ description: フォルダー保護の可能な値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0682f5bfbef65b982762e10a9425a8381d645d7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 741565678be1bfb533c4445c02c767f87fdfca05
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170337"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781086"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderprotectiontype 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30170337"
 |auditmode|pbm-2|機能を有効にし、ログを生成します。|
 |blockdiskmodification|1/3|信頼されていないアプリのディスクセクターへの書き込みをブロックする。|
 |auditdiskmodification|2/4|信頼されていないアプリがディスクセクターに書き込むときにログを生成します。|
+
 
 
 

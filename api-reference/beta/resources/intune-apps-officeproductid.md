@@ -4,12 +4,12 @@ description: office365 スイート sku を表す office365 ProductIds を指定
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0264b1f1f022d99aa433ef94936e0053ce086b9f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9785d6cd6f7ff4e7e310cc21b9719a4b31bb085a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158206"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782717"
 ---
 # <a name="officeproductid-enum-type"></a>officeproductid 列挙型
 
@@ -26,6 +26,7 @@ office365 スイート sku を表す office365 ProductIds を指定する列挙�
 |o365BusinessRetail|1-d|まだ文書化されていません|
 |visioProRetail|pbm-2|まだ文書化されていません|
 |projectProRetail|1/3|まだ文書化されていません|
+
 
 
 

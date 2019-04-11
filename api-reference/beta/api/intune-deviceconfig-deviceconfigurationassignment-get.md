@@ -4,12 +4,12 @@ description: deviceConfigurationAssignment オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 520827611c6e3636c82a8a74361811aafd0ca914
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d4107636965dd2e433423f1b6f4c8e1ebec3a2e6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982470"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784615"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Get deviceConfigurationAssignment
 
@@ -85,6 +85,7 @@ Content-Length: 247
   }
 }
 ```
+
 
 
 

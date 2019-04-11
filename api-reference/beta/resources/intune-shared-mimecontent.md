@@ -4,12 +4,12 @@ description: 汎用 MIME コンテンツのプロパティが含まれていま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f446983d5dfe101c89171baa776b32759726f279
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad580548e3f399a3c35d4f86e23eaab4dfa62979
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161657"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779994"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30161657"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |type|String|コンテンツ MIME の種類を示します。|
-|value|バイナリ|実際のコンテンツを含むバイト配列です。|
+|value|バイナリ型 (Binary)|実際のコンテンツを含むバイト配列です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,6 +42,7 @@ ms.locfileid: "30161657"
   "value": "binary"
 }
 ```
+
 
 
 

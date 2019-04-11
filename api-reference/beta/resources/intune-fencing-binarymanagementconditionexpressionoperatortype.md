@@ -4,12 +4,12 @@ description: 管理条件式に対してサポートされる二項演算子。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143807"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784706"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binarymanagementconditionexpression 演算子 type 列挙型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30143807"
 |メンバー|値|説明|
 |:---|:---|:---|
 |または|.0|オペランドが1つ以上 true の場合にのみ、オペランドのセットを true として評価します。|
-|and|1-d|オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
+|および|1-d|オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
+
 
 
 

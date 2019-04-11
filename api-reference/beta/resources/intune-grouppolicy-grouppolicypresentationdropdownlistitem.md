@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628d749446520a0925945dab1f200e1367804087
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bccbd186c3b63145473509bec4312ad0633fe535
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147965"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784144"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>grouppolicypresentationdropdownlistitem リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30147965"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ドロップダウンリストアイテムのローカライズされた表示名。|
-|value|文字列|ドロップダウンリストアイテムに関連付けられた値|
+|value|文字列型 (String)|ドロップダウンリストアイテムに関連付けられた値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,6 +42,7 @@ ms.locfileid: "30147965"
   "value": "String"
 }
 ```
+
 
 
 

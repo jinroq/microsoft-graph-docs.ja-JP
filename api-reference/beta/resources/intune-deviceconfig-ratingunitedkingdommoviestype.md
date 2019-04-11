@@ -4,12 +4,12 @@ description: 英国での映画の評価のラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4905a8f20b29f8b9eb9a1acaba8204e406c98290
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148119"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782899"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "30148119"
 |agesAbove12Cinema|シックス|12a、cinema リリースは、12年以上に適しています。|
 |agesAbove15|7|15年以前にのみ適切|
 |保護者|~|大人にのみ適している|
+
 
 
 

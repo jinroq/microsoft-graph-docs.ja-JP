@@ -4,12 +4,12 @@ description: managedAppProtection オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c94136fa97738cba84dd0d6edf3496974600b8d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fe63b012c226e300fb601a57babe2576e05f5536
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986874"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783200"
 ---
 # <a name="list-managedappprotections"></a>managedAppProtections のリスト
 
@@ -117,6 +117,7 @@ Content-Length: 2155
   ]
 }
 ```
+
 
 
 

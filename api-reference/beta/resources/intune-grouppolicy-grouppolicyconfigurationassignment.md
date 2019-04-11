@@ -4,12 +4,12 @@ description: グループポリシー構成割り当てエンティティは、1
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d928ff8d65eaf2fb766e579828e2ec7d9b56f05
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1f6fcd7ace912075189ec3e9b5a817181dd392a5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160838"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780393"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>grouppolicyconfigurationassignment リソースの種類
 
@@ -56,6 +56,7 @@ ms.locfileid: "30160838"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: localsecurityoptionsinformationshownonlockscreentype に指定で�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1709fe10b6e6992aba128da57cb77006633c6909
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 86f532ffa894cc7542600d4f37bd25172a22dfd4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156134"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781555"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localsecurityoptionsinformationshownonlockscreentype 列挙型
 
@@ -22,10 +22,11 @@ localsecurityoptionsinformationshownonlockscreentype に指定できる値
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|.0|未構成|
+|notConfigured|.0|Not Configured|
 |userDisplayNameDomainUser|1-d|ユーザーの表示名、ドメインおよびユーザー名|
 |userdisplaynameonly|pbm-2|ユーザーの表示名のみ|
 |displaydisplayuser|1/3|ユーザー情報を表示しない|
+
 
 
 

@@ -4,12 +4,12 @@ description: Apple デバイスのサブジェクト名形式オプション。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f58d1005e2b558e36572afffec1995c6b671e24
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8ba3861589dae07ce794366e30b1d9bc934cb9d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155595"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780351"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 列挙型
 
@@ -24,10 +24,11 @@ Apple デバイスのサブジェクト名形式オプション。
 |:---|:---|:---|
 |commonname|.0|共通名。|
 |commonnameasemail|1-d|電子メールとしての共通名。|
-|custom|pbm-2|カスタムサブジェクト名の形式。|
+|配色|pbm-2|カスタムサブジェクト名の形式。|
 |commonnamecommon電子メール|1/3|電子メールを含む共通名。|
 |commonnameasimei|5|IMEI としての共通名。|
 |commonnameasserialnumber|シックス|シリアル番号としての共通名。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 単項演算を使用して評価される管理条件式。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6554f62805bcd1d45f6db165367624434e794117
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164219"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783725"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>非 arymanagementconditionexpression リソースの種類
 
@@ -47,6 +47,7 @@ ms.locfileid: "30164219"
   }
 }
 ```
+
 
 
 

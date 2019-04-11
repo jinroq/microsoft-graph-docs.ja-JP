@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20ad1bab8d10f69d06b7a3126ef83aeaea92fdd0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9601dcc28cb38b4aea3dcde14cc1d4a59f3967d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151087"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782651"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>windowsdeviceusagetype 列挙型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30151087"
 |メンバー|値|説明|
 |:---|:---|:---|
 |singleUser|.0|単一ユーザーのデバイスの種類|
-|shared|1-d|共有デバイスの種類|
+|共有|1-d|共有デバイスの種類|
+
 
 
 

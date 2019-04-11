@@ -4,12 +4,12 @@ description: グループ id オプションの種類
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d54a98bef3b9c0e0517b426332b8d3223e904c8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cd541fd9ff3a91f40be1b6ccea67787cdad2567
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177855"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784867"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions リソースの種類
 
@@ -43,6 +43,7 @@ ms.locfileid: "30177855"
   "groupIdSourceOption": "String"
 }
 ```
+
 
 
 

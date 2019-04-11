@@ -4,12 +4,12 @@ description: 日本の映画の視聴制限ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f327bd9c3623cbe768e7a87ba8af416ae9b0e4e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3bc6d1f12d9a7eec2a2f88d483670d34cabe1349
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147643"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783277"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30147643"
 |parentalguidance|1/3|PG-12 の分類では、12の下のユーザーについての上位のガイダンスが要求されます。|
 |agesAbove15|2/4|R15 + 分類は、15才以上の閲覧者に適しています。|
 |agesAbove18|5|R18 + 分類は、18才以上の閲覧者に適しています。|
+
 
 
 

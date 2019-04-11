@@ -4,12 +4,12 @@ description: 新しいロール copetag オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbdc7089dc7f02fc49610e3feab07105a83c5984
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9c542d62ffb4f05de37569e45aae8bbcc90a1ac7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959454"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782612"
 ---
 # <a name="create-rolescopetag"></a>ロール copetag の作成
 
@@ -53,7 +53,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |:---|:---|:---|
 |id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールスコープタグの表示名またはフレンドリ名。|
-|description|String|役割の範囲タグの説明。|
+|説明|String|役割の範囲タグの説明。|
 
 
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

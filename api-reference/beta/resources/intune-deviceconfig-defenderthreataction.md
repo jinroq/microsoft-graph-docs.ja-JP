@@ -4,12 +4,12 @@ description: 検出されたマルウェアの脅威を処理する Defender の
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4849f369aa5dd04a68599050aa097b2ac63f5ef1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e16ea7734b61213286d15467701fa3512ebb7d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154783"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781135"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 列挙型
 
@@ -23,12 +23,13 @@ ms.locfileid: "30154783"
 |メンバー|値|説明|
 |:---|:---|:---|
 |devicedefault|.0|更新定義に基づいてアクションを適用します。|
-|クリーン|1-d|検出された脅威を除去します。|
+|汚れ|1-d|検出された脅威を除去します。|
 |済み|pbm-2|検出された脅威を検疫します。|
 |remove|1/3|検出された脅威を削除します。|
 |使う|2/4|検出された脅威を許可します。|
 |自分のもの|5|検出された脅威に対して実行するアクションをユーザーが決定できるようにします。|
 |拒否|シックス|検出された脅威をブロックします。|
+
 
 
 

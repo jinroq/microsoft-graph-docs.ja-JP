@@ -4,12 +4,12 @@ description: windows81VpnConfiguration オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5edea30066e21f30fffc95d7ee71d01bb7007b7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 88cd658fb27d6288c930d5dccbc3e996ddaa0ae1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976674"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784559"
 ---
 # <a name="list-windows81vpnconfigurations"></a>リスト windows81VpnConfigurations
 
@@ -105,6 +105,7 @@ Content-Length: 1352
   ]
 }
 ```
+
 
 
 

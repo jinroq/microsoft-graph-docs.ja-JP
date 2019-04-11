@@ -4,12 +4,12 @@ description: このプロファイルに構成を提供することで、iOS デ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a870ba0790a7f052cde4bb69269532880cc38fa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3c9a07790cbb04b547d73a77cbd349e49734796b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148189"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783382"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>iosvpnconfiguration リソースの種類
 
@@ -34,35 +34,35 @@ ms.locfileid: "30148189"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|connectionName|String|ユーザーに表示される接続名。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|connectionName|文字列|ユーザーに表示される接続名。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
 |connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|接続の種類。 [[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)から継承します。 可能な値は`ciscoAnyConnect`、 `pulseSecure`、 `f5EdgeClient` `dellSonicWallMobileConnect` `checkPointCapsuleVpn` `customVpn` `ciscoIPSec` `citrix` `paloAltoGlobalProtectV2`、、 `f5Access2018`、、、、、、、、、、、です。 `ciscoAnyConnectV2` `paloAltoGlobalProtect` `zscalerPrivateAccess` `citrixSso`|
-|logingroupordomain|String|接続の種類が Dell SonicWALL Mobile connection に設定されている場合のログイングループまたはドメイン。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|role|String|接続の種類がパルス Secure に設定されている場合の役割。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|領域|String|接続の種類がパルス Secure に設定されている場合の領域。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|logingroupordomain|文字列|接続の種類が Dell SonicWALL Mobile connection に設定されている場合のログイングループまたはドメイン。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|role|文字列|接続の種類がパルス Secure に設定されている場合の役割。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|領域|文字列|接続の種類がパルス Secure に設定されている場合の領域。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
 |server|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|ネットワーク上の VPN サーバー。 エンドユーザーがこのネットワークの場所にアクセスできることを確認します。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|識別子|String|接続の種類がカスタム vpn に設定されている場合に、VPN ベンダーによって提供される識別子。 例: Cisco anyconnect は、[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)から継承したフォームの識別子を使用しています。|
+|識別子|文字列|接続の種類がカスタム vpn に設定されている場合に、VPN ベンダーによって提供される識別子。 例: Cisco anyconnect は、[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)から継承したフォームの識別子を使用しています。|
 |customData|[keyvalue](../resources/intune-deviceconfig-keyvalue.md) コレクション|カスタムデータ接続の種類がカスタム VPN に設定されている場合。 このフィールドを使用して、Intune によってサポートされていないが、VPN ソリューションで利用可能な機能を有効にします。 これらのキーと値のペアを追加する方法については、VPN ベンダーに問い合わせてください。 このコレクションには、最大25個の要素を含めることができます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|カスタムデータ接続の種類がカスタム VPN に設定されている場合。 このフィールドを使用して、Intune によってサポートされていないが、VPN ソリューションで利用可能な機能を有効にします。 これらのキーと値のペアを追加する方法については、VPN ベンダーに問い合わせてください。 このコレクションには、最大25個の要素を含めることができます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|enablesplittunneling|ブール値|すべてのネットワークトラフィックを VPN 経由で送信します。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|authenticationMethod|[vpnauthenticationmethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|この VPN 接続の認証方法。 [[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)から継承します。 使用可能な値は、`certificate`、`usernameAndPassword` です。|
-|enableperapp|ブール値|この値を true に設定すると、エンドユーザーの iOS デバイス上でこの vpn 接続をトリガーできるアプリに後で関連付けることができるアプリごとの VPN ペイロードが作成されます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|saf aridomains|String collection|この VPN がアプリごとの設定が有効になっている場合の Safari ドメイン この vpn に関連付けられているアプリに加えて、ここで指定した Safari ドメインもこの vpn 接続をトリガーすることができます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|enablesplittunneling|Boolean|すべてのネットワークトラフィックを VPN 経由で送信します。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|authenticationMethod|[vpnauthenticationmethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|この VPN 接続の認証方法。 [[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)から継承します。 可能な値は、`certificate`、`usernameAndPassword` です。|
+|enableperapp|Boolean|この値を true に設定すると、エンドユーザーの iOS デバイス上でこの vpn 接続をトリガーできるアプリに後で関連付けることができるアプリごとの VPN ペイロードが作成されます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|saf aridomains|String コレクション|この VPN がアプリごとの設定が有効になっている場合の Safari ドメイン この vpn に関連付けられているアプリに加えて、ここで指定した Safari ドメインもこの vpn 接続をトリガーすることができます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md)コレクション|オンデマンドルール。 このコレクションには、最大で 500 個の要素を含めることができます。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|プロキシサーバー。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|optintodeviceidsharing|ブール値|ネットワークアクセス制御の検証時に使用するために、デバイスの Id をサードパーティの vpn クライアントに共有するオプトイン。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
-|providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|アプリごとの VPN のプロバイダーの種類。 可能な値は `notConfigured`、`appProxy`、`packetTunnel` です。|
-|userdomain に|String|Zscaler のみ。 Zscaler アプリでログインフィールドに事前設定するには、静的ドメインを入力します。 この指定を省略すると、代わりにユーザーの Azure Active Directory ドメインが使用されます。|
-|cloudname|ブール値|Zscaler のみ。 ユーザーが Zscaler アプリにサインインするまでネットワークトラフィックをブロックします。 "True" はトラフィックがブロックされることを意味します。|
-|cloudname|String|Zscaler のみ。 ユーザーが割り当てられている Zscaler cloud。|
-|excludeList|String collection|Zscaler のみ。 Zscaler クラウド経由で送信されないネットワークアドレスのリスト。|
+|optintodeviceidsharing|Boolean|ネットワークアクセス制御の検証時に使用するために、デバイスの Id をサードパーティの vpn クライアントに共有するオプトイン。 [りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)からの継承|
+|providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|アプリごとの VPN のプロバイダーの種類。 使用可能な値は、`notConfigured`、`appProxy`、`packetTunnel` です。|
+|userdomain に|文字列|Zscaler のみ。 Zscaler アプリでログインフィールドに事前設定するには、静的ドメインを入力します。 この指定を省略すると、代わりにユーザーの Azure Active Directory ドメインが使用されます。|
+|cloudname|Boolean|Zscaler のみ。 ユーザーが Zscaler アプリにサインインするまでネットワークトラフィックをブロックします。 "True" はトラフィックがブロックされることを意味します。|
+|cloudname|文字列|Zscaler のみ。 ユーザーが割り当てられている Zscaler cloud。|
+|excludeList|String コレクション|Zscaler のみ。 Zscaler クラウド経由で送信されないネットワークアドレスのリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -163,6 +163,7 @@ ms.locfileid: "30148189"
   ]
 }
 ```
+
 
 
 

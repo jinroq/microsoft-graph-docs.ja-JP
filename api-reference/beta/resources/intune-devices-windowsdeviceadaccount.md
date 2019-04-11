@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9120c7722f62924e4a4ad407b3aac2ba4064b358
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e0fc671703d9d68b908ec6ffa9ea3b1ce558a65
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140426"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784036"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "30140426"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|password|String|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
+|password|文字列|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
 |domainName|String|まだ文書化されていません|
 |userName|String|まだ文書化されていません|
 
@@ -47,6 +47,7 @@ ms.locfileid: "30140426"
   "userName": "String"
 }
 ```
+
 
 
 

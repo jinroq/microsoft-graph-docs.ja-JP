@@ -4,12 +4,12 @@ description: 管理者が管理対象アプリに Android の saf etynet デバ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fb425d885ebc56ddc26cbcf1c2b5331abfcfa77
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 170d652b285d624d775a7bf2a68e28af2f2e85d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784249"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>androidManagedAppSafetyNetAppsVerificationType 列挙型
 
@@ -22,8 +22,9 @@ ms.locfileid: "30631570"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|なし|.0|要件セットなし|
-|enabled|1|Android デバイスに、saf etynet Apps の検証が有効になっている必要がある|
+|none|.0|要件セットなし|
+|enabled|1-d|Android デバイスに、saf etynet Apps の検証が有効になっている必要がある|
+
 
 
 

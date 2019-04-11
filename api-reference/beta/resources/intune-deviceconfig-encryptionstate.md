@@ -4,12 +4,12 @@ description: 暗号化の状態
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c08c0095405c8bc91cf6ba70714a8dbc537072a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 35496094cb5b7b70f2c193b20e952b086213b10c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178179"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781597"
 ---
 # <a name="encryptionstate-enum-type"></a>encryptionstate 列挙型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30178179"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notencrypted|.0|暗号化されません|
-|encrypted|1-d|暗号化|
+|暗号化|1-d|暗号化|
+
 
 
 

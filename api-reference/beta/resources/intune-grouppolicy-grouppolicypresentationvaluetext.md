@@ -4,12 +4,12 @@ description: エンティティは、ポリシー定義のドロップダウン�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9af7b417f64787d0a9d4977f404d3e3ad97fc543
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 015d136db76ae7523a06e4dba10c2c7e5bc48187
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781674"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>groupPolicyPresentationValueText リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30171653"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|value|文字列|関連付けられたプレゼンテーションの文字列型 (string) の値を指定します。|
+|value|文字列型 (String)|関連付けられたプレゼンテーションの文字列型 (string) の値を指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -62,6 +62,7 @@ ms.locfileid: "30171653"
   "value": "String"
 }
 ```
+
 
 
 

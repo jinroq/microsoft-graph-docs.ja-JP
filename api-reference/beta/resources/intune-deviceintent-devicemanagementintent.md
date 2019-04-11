@@ -4,12 +4,12 @@ description: デバイスに設定を適用する目的を表すエンティテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909b071279b35c2ffec4c27b3431d25f7da8ac46
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524247"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780925"
 ---
 # <a name="devicemanagementintent-resource-type"></a>devicemanagementintent リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31524247"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementintents を一覧表示する](../api/intune-deviceintent-devicemanagementintent-list.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)コレクション|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementintent の取得](../api/intune-deviceintent-devicemanagementintent-get.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementintent の作成](../api/intune-deviceintent-devicemanagementintent-create.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)|新しい[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトを作成します。|
+|[devicemanagementintent の取得](../api/intune-deviceintent-devicemanagementintent-get.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementintent の作成](../api/intune-deviceintent-devicemanagementintent-create.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|新しい[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトを作成します。|
 |[devicemanagementintent の削除](../api/intune-deviceintent-devicemanagementintent-delete.md)|なし|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)を削除します。|
-|[devicemanagementintent の更新](../api/intune-deviceintent-devicemanagementintent-update.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementintent の更新](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティを更新します。|
 |[updatesettings アクション](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|なし|まだ文書化されていません|
 |[アクションの割り当て](../api/intune-deviceintent-devicemanagementintent-assign.md)|なし|まだ文書化されていません|
 
@@ -71,8 +71,6 @@ ms.locfileid: "31524247"
   "templateId": "String"
 }
 ```
-
-
 
 
 

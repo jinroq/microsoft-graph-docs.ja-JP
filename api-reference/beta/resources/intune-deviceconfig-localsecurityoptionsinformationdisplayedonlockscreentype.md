@@ -4,12 +4,12 @@ description: LocalSecurityOptionsInformationDisplayedOnLockScreen に指定で�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b44d24e5235251b5232ecb1bd5b2ab21059e32a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fd1946843efa7f5967014abd5b4e7a230fc39826
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166718"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779882"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 列挙型
 
@@ -22,10 +22,11 @@ LocalSecurityOptionsInformationDisplayedOnLockScreen に指定できる値
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|.0|未構成|
+|notConfigured|.0|Not Configured|
 |管理者|1-d|ユーザーの表示名、ドメインおよびユーザー名|
 |administratorsAndPowerUsers|pbm-2|ユーザーの表示名のみ|
 |administratorsAndInteractiveUsers|1/3|ユーザー情報を表示しない|
+
 
 
 

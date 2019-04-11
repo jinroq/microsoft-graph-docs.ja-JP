@@ -4,12 +4,12 @@ description: 埋め込まれた SIM のアクティブ化コードのさまざ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bdc3250605de7db7a3778d64b5e743a415de4c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a4970e08ff9b305aaf2aad4d82daf994d2010bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145424"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782962"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 列挙型
 
@@ -26,10 +26,11 @@ ms.locfileid: "30145424"
 |フェール|1-d|Intune サービスがこのプロファイルをデバイスに配信できなかったことを指定します。|
 |インストール|pbm-2|埋め込まれた SIM ライセンス認証コードがデバイスに割り当てられており、デバイスがトークンをインストールしていることを指定します。|
 |れる|1/3|埋め込まれた SIM ライセンス認証コードがターゲットデバイスに正常にインストールされたことを指定します。|
-|削除|2/4|Intune サービスがデバイスからプロファイルを削除しようとしていることを指定します。|
+|と|2/4|Intune サービスがデバイスからプロファイルを削除しようとしていることを指定します。|
 |エラー|5|このプロファイルにエラーがあることを指定します。|
 |deleted|シックス|プロファイルがデバイスから削除されることを指定します。|
 |removedbyuser|7|ユーザーがプロファイルをデバイスから削除することを指定します。|
+
 
 
 

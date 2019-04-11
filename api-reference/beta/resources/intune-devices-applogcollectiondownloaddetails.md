@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c581b6ffe1653c2962c03c8e6fe5d27d706882d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147755"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784741"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30147755"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|downloadUrl|String|完成した、完了した処理のための SAS Url をダウンロードする|
-|decryptionKey|String|DecryptionKey as string|
+|downloadUrl|文字列|完成した、完了した処理のための SAS Url をダウンロードする|
+|decryptionKey|文字列|DecryptionKey as string|
 |appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|コンテンツの DecryptionAlgorithm。 可能な値は`aes256`次のとおりです。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -44,6 +44,7 @@ ms.locfileid: "30147755"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
+
 
 
 

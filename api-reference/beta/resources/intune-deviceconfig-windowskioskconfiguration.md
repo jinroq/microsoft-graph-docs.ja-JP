@@ -4,12 +4,12 @@ description: このエンティティは、kiosk リソースが公開する宣�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63b9269086aa97b6be543abcc201288c00eba456
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 92cea089ea86e1ad56607442ac983d83c0c78e68
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784580"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowskioskconfiguration リソースの種類
 
@@ -36,23 +36,23 @@ ms.locfileid: "30572517"
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |kioskProfiles|[windowskioskprofile](../resources/intune-deviceconfig-windowskioskprofile.md)コレクション|このポリシー設定を使用すると、キオスクの構成のキオスクプロファイルの一覧を定義できます。 このコレクションには、最大3つの要素を含めることができます。|
-|kioskBrowserDefaultUrl|String|ブラウザーが起動時に移動する既定の URL を指定します。|
+|kioskBrowserDefaultUrl|文字列|ブラウザーが起動時に移動する既定の URL を指定します。|
 |kioskBrowserEnableHomeButton|Boolean|キオスクブラウザーの [ホーム] ボタンを有効にします。 既定では、[ホーム] ボタンは無効になっています。|
 |kioskBrowserEnableNavigationButtons|Boolean|キオスクブラウザーのナビゲーションボタン (前方/後方) を有効にします。 既定では、ナビゲーションボタンは無効になっています。|
 |kioskBrowserEnableEndSessionButton|Boolean|キオスクブラウザーの [セッションの終了] ボタンを有効にします。 既定では、[セッションの終了] ボタンは無効になっています。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|キオスクブラウザーが新しい状態で再起動するまで、セッションがアイドル状態になっている時間 (分) を指定します。  有効な値は1-1440 です。 有効な値は 1 ~ 1440|
-|kioskBrowserBlockedURLs|String collection|キオスクブラウザーが移動しない url を指定する|
-|kioskBrowserBlockedUrlExceptions|String collection|キオスクブラウザーでの移動が許可されている url を指定する|
+|kioskBrowserBlockedURLs|String コレクション|キオスクブラウザーが移動しない url を指定する|
+|kioskBrowserBlockedUrlExceptions|String コレクション|キオスクブラウザーでの移動が許可されている url を指定する|
 |edgeKioskEnablePublicBrowsing|Boolean|Microsoft Edge ブラウザーのパブリックブラウズキオスクモードを有効にします。 既定値は false です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -129,6 +129,7 @@ ms.locfileid: "30572517"
   "edgeKioskEnablePublicBrowsing": true
 }
 ```
+
 
 
 

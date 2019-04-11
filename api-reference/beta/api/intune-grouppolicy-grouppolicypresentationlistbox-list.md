@@ -4,12 +4,12 @@ description: grouppolicypresentationlistbox オブジェクトのプロパティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ac0dfd71ee5531bce650d0a7e4c00e7f57367c0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 36744bc759fb972423e98b209c1c006f59472c5d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983128"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784335"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>リスト grouppolicypresentationlistboxes ボックス
 
@@ -76,6 +76,7 @@ Content-Length: 291
   ]
 }
 ```
+
 
 
 

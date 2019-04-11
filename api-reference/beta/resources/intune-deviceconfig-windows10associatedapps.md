@@ -4,12 +4,12 @@ description: Windows 10 関連アプリケーションの定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95f0114bbd39e85c137da2a71b7640ba8051b6dc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 22adbc6be90718f95a574443c8bd2f96a55f2ee4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784643"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps リソースの種類
 
@@ -22,8 +22,8 @@ Windows 10 関連アプリケーションの定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|アプリケーションの種類。 使用可能な値は、`desktop`、`universal` です。|
-|識別子|String|識別子.|
+|appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|アプリケーションの種類。 可能な値は、`desktop`、`universal` です。|
+|識別子|文字列|識別子.|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,6 +42,7 @@ Windows 10 関連アプリケーションの定義。
   "identifier": "String"
 }
 ```
+
 
 
 
