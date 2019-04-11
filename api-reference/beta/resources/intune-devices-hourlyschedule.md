@@ -4,12 +4,12 @@ description: 定期的なデバイス管理スクリプトの時間単位の実�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb3eacf4e17ed1137ce78d21112c394a45423c6b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f86591326f2b4df8e887c657c05ad3d5021946e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173417"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778048"
 ---
 # <a name="hourlyschedule-resource-type"></a>時間のスケジュールリソースの種類
 
@@ -43,6 +43,7 @@ ms.locfileid: "30173417"
   "interval": 1024
 }
 ```
+
 
 
 

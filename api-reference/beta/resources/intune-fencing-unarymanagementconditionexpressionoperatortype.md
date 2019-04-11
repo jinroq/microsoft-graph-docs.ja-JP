@@ -4,12 +4,12 @@ description: 単項管理条件式でサポートされている演算子
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7cbf2e04fd7247cc061ef5ade114571d5e92dad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b62b0346967f24a85a8af1dd01296f98b9781c3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173319"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779847"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>アン arymanagementconditionexpression 演算子 type 列挙型
 
@@ -23,6 +23,7 @@ ms.locfileid: "30173319"
 |メンバー|値|説明|
 |:---|:---|:---|
 |not|.0|オペランドの評価を否定します。|
+
 
 
 

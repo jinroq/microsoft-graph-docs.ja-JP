@@ -4,12 +4,12 @@ description: Android VPN 接続の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 430ec2beaf0bdc4ff05fb077bf7d23c19a735495
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 584f2d7ca14c05c87542c500b16af74f4f96b129
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159956"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778923"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>androidvpnconnectiontype 列挙型
 
@@ -28,6 +28,7 @@ Android VPN 接続の種類。
 |dellSonicWallMobileConnect|1/3|Dell SonicWALL モバイル接続。|
 |checkPointCapsuleVpn|2/4|[カプセル接続] VPN をチェックします。|
 |社|5|社|
+
 
 
 

@@ -4,12 +4,12 @@ description: securityBaselineSettingState オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e427dd3de17fe48875043d6da0bc4ed970d7957
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 5954caa31cbb915df0713d412daf75e4291ebb6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522931"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778580"
 ---
 # <a name="list-securitybaselinesettingstates"></a>リスト securityBaselineSettingStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522931"
 [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|

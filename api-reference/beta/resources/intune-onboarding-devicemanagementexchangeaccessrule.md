@@ -4,12 +4,12 @@ description: Exchange のデバイスアクセスルール。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38b021bc2f0a4ffa19ca551c2621b08f21e8a35e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 832e11829300ccd1ac4e1d4e6b08acafb908f3b2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165780"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779826"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>devicemanagementexchangeaccessrule リソースの種類
 
@@ -46,6 +46,7 @@ Exchange のデバイスアクセスルール。
   "accessLevel": "String"
 }
 ```
+
 
 
 

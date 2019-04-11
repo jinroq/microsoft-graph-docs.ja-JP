@@ -4,12 +4,12 @@ description: 管理者が選択したインストールの目的に使用でき�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a6c000524d8179643b4a32d47ca05df9c7b32de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13436f259e254463874fe03217025380735e9b26
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161258"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777579"
 ---
 # <a name="installintent-enum-type"></a>installIntent 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30161258"
 |必須|1-d|インストールの目的が必要です。|
 |解除|pbm-2|インストールの目的をアンインストールします。|
 |登録なし|1/3|登録インストールの目的がなくても使用できます。|
+
 
 
 

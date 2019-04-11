@@ -4,12 +4,12 @@ description: MacOS アプリに必要な最小限のオペレーティングシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f6975690361c981d6b5aaf1d9dae959ad6f8be5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0b329947398d034d8b50922f278f0b55314ec0c9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169938"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778097"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem リソースの種類
 
@@ -22,13 +22,13 @@ MacOS アプリに必要な最小限のオペレーティングシステム。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v10_7|ブール値|Mac OS 10.7 以降。|
-|v10_8|ブール値|Mac OS 10.8 以降。|
-|v10_9|ブール値|Mac OS 10.9 以降。|
-|v10_10|ブール値|Mac OS 10.10 以降。|
-|v10_11|ブール値|Mac OS 10.11 以降。|
-|v10_12|ブール値|Mac OS 10.12 以降。|
-|v10_13|ブール値|Mac OS 10.13 以降。|
+|v10_7|Boolean|Mac OS 10.7 以降。|
+|v10_8|Boolean|Mac OS 10.8 以降。|
+|v10_9|Boolean|Mac OS 10.9 以降。|
+|v10_10|Boolean|Mac OS 10.10 以降。|
+|v10_11|Boolean|Mac OS 10.11 以降。|
+|v10_12|Boolean|Mac OS 10.12 以降。|
+|v10_13|Boolean|Mac OS 10.13 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -52,6 +52,7 @@ MacOS アプリに必要な最小限のオペレーティングシステム。
   "v10_13": true
 }
 ```
+
 
 
 

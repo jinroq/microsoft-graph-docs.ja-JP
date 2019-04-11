@@ -4,12 +4,12 @@ description: iOS デバイス機能構成のプロファイル。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888f71bd2344a7ab0e623b4442cbd6967f404b69
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9187292244f04e9e41cdb12b98b82e5f614634a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157674"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777677"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration リソースの種類
 
@@ -26,31 +26,31 @@ iOS デバイス機能構成のプロファイル。
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[iosDeviceFeaturesConfigurations のリスト](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) コレクション|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[iosDeviceFeaturesConfiguration の取得](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get iosDeviceFeaturesConfiguration](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[iosDeviceFeaturesConfiguration の作成](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md)|新しい [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトを作成します。|
 |[iosDeviceFeaturesConfiguration の削除](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-delete.md)|なし|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) を削除します。|
-|[iosDeviceFeaturesConfiguration の更新](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-update.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトのプロパティを更新します。|
+|[Update iosDeviceFeaturesConfiguration](../api/intune-deviceconfig-iosdevicefeaturesconfiguration-update.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md)|[iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |放映した print行先|[放映 printdestination](../resources/intune-deviceconfig-airprintdestination.md)コレクション|常に表示される必要がある、放映中の印刷プリンターの配列です。 このコレクションには、最大で 500 個の要素を含めることができます。 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)から継承します。|
-|assetTagTemplate|String|ログイン ウィンドウとロック画面に表示される、デバイスの資産タグ情報です。|
+|assetTagTemplate|文字列|ログイン ウィンドウとロック画面に表示される、デバイスの資産タグ情報です。|
 |contentFilterSettings|[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)|iOS Web コンテンツフィルターの設定、監視モードのみを取得または設定します。|
 |lockScreenFootnote|String|ログイン ウィンドウとロック画面に表示される脚注です。 IOS 9.3.1 以降で利用可能です。|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) コレクション|ホーム画面ドックに表示されるアプリとフォルダーのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) コレクション|ホーム画面上のページのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) コレクション|各バンドル ID ごとの通知設定。監視モードのデバイスにのみ (iOS 9.3 以降) 適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|受信デバイス上のアプリをスムーズに認証できるようにする Kerberos ログイン設定。|
-|wallpaperDisplayLocation|[ioswallpaperdisplaylocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|壁紙の表示場所の指定子。 使用可能な値は、`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens` です。|
+|wallpaperDisplayLocation|[ioswallpaperdisplaylocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|壁紙の表示場所の指定子。 可能な値は、`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens` です。|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|壁紙の画像は、PNG または JPEG 形式のいずれかである必要があります。 iOS 8 以降のバージョンの監視デバイスが必要です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -200,6 +200,7 @@ iOS デバイス機能構成のプロファイル。
   }
 }
 ```
+
 
 
 

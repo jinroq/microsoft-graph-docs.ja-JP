@@ -4,12 +4,12 @@ description: 自動操縦デバイスからリソースアカウントを割り�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb79c58f20a0bcbca12e9211458765991defe8d3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cb9919d7541a6f6283103d4be2ebb4391aa9397
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986468"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779231"
 ---
 # <a name="unassignresourceaccountfromdevice-action"></a>unassignResourceAccountFromDevice アクション
 
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

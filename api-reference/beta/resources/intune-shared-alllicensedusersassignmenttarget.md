@@ -4,12 +4,12 @@ description: テナント内のすべてのライセンス ユーザーへの割
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43628067ea4ecc1a5a7e4cea24721f96e05c5537
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 70dcc2609708db3feff79612e4067e47bda3142d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172493"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778832"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget リソースの種類
 
@@ -41,6 +41,7 @@ ms.locfileid: "30172493"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい deviceInstallState オブジェクトを作成します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa2402605f77d9d901c4941ded593e8c1d787040
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 16af56e2bf82b5e15d259229ae9a2416fa20e92c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986909"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778650"
 ---
 # <a name="create-deviceinstallstate"></a>deviceInstallState の作成
 
@@ -52,13 +52,13 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceName|String|デバイス名。|
-|deviceId|String|デバイス ID。|
+|deviceName|文字列|デバイス名。|
+|deviceId|文字列|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
 |installState|[installState](../resources/intune-books-installstate.md)|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|String|インストール失敗のエラー コード。|
-|osVersion|String|OS バージョン。|
-|osDescription|String|OS の説明。|
+|errorCode|文字列|インストール失敗のエラー コード。|
+|osVersion|文字列|OS バージョン。|
+|osDescription|文字列|OS の説明。|
 |userName|String|デバイスのユーザー名。|
 
 
@@ -108,6 +108,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: モバイル アプリを実行できる iOS デバイスの種類�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72cb6cc19b36c345e66230c7ac1d907c599dcce4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 121e297355d0d5734f7c4e23087bf14773c598c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161363"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778207"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30161363"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|iPad|ブール値|アプリを iPad で実行できるかどうか。|
+|iPad|Boolean|アプリを iPad で実行できるかどうか。|
 |iPhoneAndIPod|ブール型 (Boolean)|アプリを iPhone および iPod で実行できるかどうか。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -42,6 +42,7 @@ ms.locfileid: "30161363"
   "iPhoneAndIPod": true
 }
 ```
+
 
 
 

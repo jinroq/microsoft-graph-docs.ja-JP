@@ -4,12 +4,12 @@ description: iOS Web コンテンツフィルターの設定基本タイプを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440d85a8d3f07e61eb7936f31b01138ca6a74d53
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8b6edda75e538bcd9fa6efdf47a8c36909205409
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167628"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779609"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase リソースの種類
 
@@ -38,6 +38,7 @@ iOS Web コンテンツフィルターの設定基本タイプを表します。
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
+
 
 
 

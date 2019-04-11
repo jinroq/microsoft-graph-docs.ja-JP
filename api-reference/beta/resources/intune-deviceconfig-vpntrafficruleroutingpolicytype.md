@@ -4,12 +4,12 @@ description: VPN トラフィックルールのルーティングポリシーを
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a7c6121b9adc47d116a7b3321ca150a8d42449a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 360a7ea9ab46a9d482fd8e41c2d2a64041453e88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157345"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777782"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 列挙型
 
@@ -25,6 +25,7 @@ VPN トラフィックルールのルーティングポリシーを指定しま�
 |none|.0|ルーティングポリシーが指定されていません。|
 |splittunnel|1-d|指定したアプリのネットワークトラフィックは、VPN 経由でルーティングされます。|
 |forcetunnel|pbm-2|すべてのネットワークトラフィックは、VPN 経由でルーティングされます。|
+
 
 
 

@@ -4,12 +4,12 @@ description: windowsAutopilotSettings リソースは、windows device data sync
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b34d6edbed5bc98989ea70186b081d5c88a1c1b6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778090"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings リソースの種類
 
@@ -54,6 +54,7 @@ windowsAutopilotSettings リソースは、windows device data sync service と�
   "syncStatus": "String"
 }
 ```
+
 
 
 

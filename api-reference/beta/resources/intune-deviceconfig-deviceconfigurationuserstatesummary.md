@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 170b84d58d17bfbf8eea7d402c26b78019be3958
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3d6d79f4e36ae66aa871f08eaa69aaa2bcf39a76
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163022"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779371"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>deviceConfigurationUserStateSummary リソースの種類
 
@@ -61,6 +61,7 @@ ms.locfileid: "30163022"
   "conflictUserCount": 1024
 }
 ```
+
 
 
 

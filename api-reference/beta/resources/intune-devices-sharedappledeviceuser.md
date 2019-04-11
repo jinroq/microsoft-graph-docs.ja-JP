@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f737432597d4528d1a682cd15552230af0ae83e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 43bc64243cb330f0761c8ded3ab646a0cde4f926
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156505"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778006"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30156505"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |userPrincipalName|String|ユーザー名|
-|datatosync|ブール値|同期するデータ|
+|datatosync|Boolean|同期するデータ|
 |dataquota|Int64|データクォータ|
 |使用されるデータ|Int64|データクォータ|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30156505"
   "dataUsed": 1024
 }
 ```
+
 
 
 

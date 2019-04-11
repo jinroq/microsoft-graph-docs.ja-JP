@@ -4,12 +4,12 @@ description: 新しい deviceCompliancePolicySettingStateSummary オブジェク
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aac612b6a94a59ff17d12d5a328b5eac793e3e9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 45f8fcc08fb9b3b260ff6446c99948124777f327
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986552"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779119"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の作成
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|setting|String|設定のクラス名とプロパティ名。|
+|setting|文字列|設定のクラス名とプロパティ名。|
 |settingName|String|設定の名前。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームを設定します。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
@@ -113,6 +113,7 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

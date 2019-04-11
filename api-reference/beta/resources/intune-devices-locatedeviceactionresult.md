@@ -4,12 +4,12 @@ description: デバイスの検索アクションの結果
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f4c9e1dc914c8648df2924308942bd5f83204aa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f38422c419d4f50901cbc015b82ca51c470ddfe4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154118"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778993"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30154118"
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[deviceactionresult](../resources/intune-devices-deviceactionresult.md)から継承されるアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承)|
+|startDateTime|DateTimeOffset|アクションが開始された時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承。|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承|
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|デバイスの場所|
 
@@ -62,6 +62,7 @@ ms.locfileid: "30154118"
   }
 }
 ```
+
 
 
 

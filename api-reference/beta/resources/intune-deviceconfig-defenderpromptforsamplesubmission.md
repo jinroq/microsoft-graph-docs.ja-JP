@@ -4,12 +4,12 @@ description: ユーザーにサンプル送信のプロンプトを表示する�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eb469516dd4ae960ae351843df31f07ead90edf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c81fe62d7ed2696b233b8684c665f7cf8341fbcd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146341"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778377"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30146341"
 |promptBeforeSendingPersonalData|pbm-2|個人データを送信する前にメッセージを表示します。|
 |neverSendData|1/3|データを送信しません。|
 |sendalldataメッセージを表示しない|2/4|メッセージを表示せずにすべてのデータを送信します。|
+
 
 
 

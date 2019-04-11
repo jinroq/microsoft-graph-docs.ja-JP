@@ -4,12 +4,12 @@ description: ユーザーごとのデバイスごとの制限付きアプリ構�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8764d3d84ba0706f3769ef019def43cb080660d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 067b801d917435c1ff9d3722d078609f2c626baf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139915"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778083"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation リソースの種類
 
@@ -31,15 +31,15 @@ ms.locfileid: "30139915"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
+|id|String|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
 |userId|String|ユーザーの一意識別子。 Guid である必要があります|
-|userName|String|ユーザー名|
-|manageddeviceid|String|管理デバイスの一意識別子。 Guid である必要があります|
-|deviceName|String|デバイス名|
-|deviceConfigurationId|String|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
-|deviceConfigurationName|String|デバイス構成プロファイル名|
+|userName|文字列型 (String)|ユーザー名|
+|manageddeviceid|文字列|管理デバイスの一意識別子。 Guid である必要があります|
+|deviceName|文字列|[デバイス名]|
+|deviceConfigurationId|文字列|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
+|deviceConfigurationName|文字列|デバイス構成プロファイル名|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームの種類。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
-|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 使用可能な値は、`prohibitedApps`、`notApprovedApps` です。|
+|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 可能な値は、`prohibitedApps`、`notApprovedApps` です。|
 |restrictedApps|[manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -73,6 +73,7 @@ ms.locfileid: "30139915"
   ]
 }
 ```
+
 
 
 

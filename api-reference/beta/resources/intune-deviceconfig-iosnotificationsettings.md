@@ -4,12 +4,12 @@ description: 通知設定を記述するアイテムです。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2876146e7e20ad94a7356f623a5b2e17443a18f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d2fbc197f858b595bfe8572badddef9dadf6b3c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172703"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779644"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings リソース タイプ
 
@@ -22,10 +22,10 @@ ms.locfileid: "30172703"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|bundleID|String|これらの通知設定を適用するアプリのバンドル ID。|
+|bundleID|文字列型 (String)|これらの通知設定を適用するアプリのバンドル ID。|
 |appName|String|bundleID に関連するアプリケーション名。|
 |publisher|String|bundleID に関連するパブリッシャー。|
-|enabled|ブール型|通知がこのアプリで許可されているかどうかを示します。|
+|enabled|ブール型 (Boolean)|通知がこのアプリで許可されているかどうかを示します。|
 |showInNotificationCenter|Boolean|通知センターに通知を表示できるかどうかを示します。|
 |showOnLockScreen|Boolean|ロック画面に通知を表示できるかどうかを示します。|
 |alertType|[iosnotificationalerttype](../resources/intune-deviceconfig-iosnotificationalerttype.md)|このアプリの通知用の警告の種類を示します。 可能な値は、`deviceDefault`、`banner`、`modal`、`none` です。|
@@ -56,6 +56,7 @@ ms.locfileid: "30172703"
   "soundsEnabled": true
 }
 ```
+
 
 
 

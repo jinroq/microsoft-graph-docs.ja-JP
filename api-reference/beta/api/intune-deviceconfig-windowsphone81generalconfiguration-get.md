@@ -4,12 +4,12 @@ description: windowsPhone81GeneralConfiguration オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44ac993b268f1fb763095a7ff523211296982700
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 87bee64ee86bff2ec5e127455af47181e475eb54
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959538"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778496"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Get windowsPhone81GeneralConfiguration
 
@@ -122,6 +122,7 @@ Content-Length: 1840
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: DeliveryOptimizationGroupIdOptionsType 設定に指定できる値�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a210f8c38542181f6fe93c7f0410114e89379c6b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9823380e8c7e4ffef1c1aa913c9db0cf08ede888
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177946"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779616"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 列挙型
 
@@ -27,6 +27,7 @@ DeliveryOptimizationGroupIdOptionsType 設定に指定できる値。
 |認証 ateddomainsid|pbm-2|認証済みドメイン SID。|
 |dhcpuseroption|1/3|DHCP ユーザーオプション。|
 |dnsSuffix|2/4|DNS サフィックス。|
+
 
 
 

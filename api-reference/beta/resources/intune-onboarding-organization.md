@@ -4,12 +4,12 @@ description: organization リソースは、グローバル設定インスタン
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6de006bf465546fdb00769f5d3541a65a6b5580b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9806c1d263710ecaef2c04af89926e7568ad94da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167509"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778104"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -22,9 +22,9 @@ organization リソースは、グローバル設定インスタンスと、テ�
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List organizations](../api/intune-onboarding-organization-list.md)|[organization](../resources/intune-onboarding-organization.md) コレクション|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get organization](../api/intune-onboarding-organization-get.md)|[organization](../resources/intune-onboarding-organization.md)|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update organization](../api/intune-onboarding-organization-update.md)|[organization](../resources/intune-onboarding-organization.md)|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティを更新します。|
+|[organizations のリスト](../api/intune-onboarding-organization-list.md)|[organization](../resources/intune-onboarding-organization.md) コレクション|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[組織を取得する](../api/intune-onboarding-organization-get.md)|[組織](../resources/intune-onboarding-organization.md)|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[組織を更新する](../api/intune-onboarding-organization-update.md)|[組織](../resources/intune-onboarding-organization.md)|[organization](../resources/intune-onboarding-organization.md) オブジェクトのプロパティを更新します。|
 |[setMobileDeviceManagementAuthority アクション](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|モバイル デバイス管理権限の設定|
 
 ## <a name="properties"></a>プロパティ
@@ -61,6 +61,7 @@ organization リソースは、グローバル設定インスタンスと、テ�
   }
 }
 ```
+
 
 
 

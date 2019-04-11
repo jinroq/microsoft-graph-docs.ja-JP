@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72ed544a7b4f9e4ddf003104b191ee064b884f76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 42726817395296945fc593552ee50154fa34d332
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159011"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779770"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30159011"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|Device Directory Service (DDS) から報告されたデバイスの状態です。 可能な値は、`unknown`、`pending`、`partial`、`complete`、`error` です。|
-|deviceRegistrationId|String|正常に追加されたと Devce Directory Service (DDS) から報告されたデバイスの Devce Registration ID です。|
+|deviceRegistrationId|文字列|正常に追加されたと Devce Directory Service (DDS) から報告されたデバイスの Devce Registration ID です。|
 |deviceErrorCode|Int32|Device Directory Service (DDS) から報告されたデバイス エラー コードです。|
 |deviceErrorName|String|Device Directory Service (DDS) から報告されたデバイス エラー名です。|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30159011"
   "deviceErrorName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Windows 10 の登録ステータスページの構成
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f3245bdc6e2036d1fe53076a639c4697460e0b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7d8b60a1c2afcaccef95caef77f0bda6d3cd65a9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158731"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779854"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration リソースの種類
 
@@ -41,14 +41,14 @@ Windows 10 の登録ステータスページの構成
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showinstallationprogress|ブール値|ユーザーにインストールの進行状況を表示または非表示にする|
-|blockdevicesetupretrybyuser|ブール値|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
-|allowdeviceresetoninstallfailure|ブール値|インストール失敗時にデバイスのリセットを許可またはブロックする|
-|allowlogcollectiononinstallfailure|ブール値|インストール失敗時にログ収集を許可またはブロックする|
-|customerrormessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
+|showinstallationprogress|Boolean|ユーザーにインストールの進行状況を表示または非表示にする|
+|blockdevicesetupretrybyuser|Boolean|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
+|allowdeviceresetoninstallfailure|Boolean|インストール失敗時にデバイスのリセットを許可またはブロックする|
+|allowlogcollectiononinstallfailure|Boolean|インストール失敗時にログ収集を許可またはブロックする|
+|customerrormessage|文字列|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
-|allowdeviceuseoninstallfailure|ブール値|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
-|selectedMobileAppIds|String collection|インストールの状態を追跡するために選択されたアプリケーション|
+|allowdeviceuseoninstallfailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
+|selectedMobileAppIds|String コレクション|インストールの状態を追跡するために選択されたアプリケーション|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -85,6 +85,7 @@ Windows 10 の登録ステータスページの構成
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser に�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e740f5a7e70d4244a1b0216b4d8c9719b2d82304
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03a1a7130be5d4437825f7687c3988f99a6b383c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161209"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778139"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 列挙型
 
@@ -22,10 +22,11 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser に指定できる
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|.0|未構成|
+|notConfigured|.0|Not Configured|
 |管理者|1-d|管理者|
 |administratorsAndPowerUsers|pbm-2|管理者とパワーユーザー|
 |administratorsAndInteractiveUsers|1/3|管理者と対話ユーザー |
+
 
 
 

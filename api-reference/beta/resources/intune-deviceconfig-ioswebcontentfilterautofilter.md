@@ -4,12 +4,12 @@ description: '[ios Web コンテンツフィルターの設定] の種類を表�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74e281a4cbc08467730680b556e6e8026535ff3a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155665"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777929"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter リソースの種類
 
@@ -25,8 +25,8 @@ ms.locfileid: "30155665"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|allowedUrls|String collection|アクセスできる追加 url|
-|blockedUrls|String collection|アクセスのためにブロックされる追加 url|
+|allowedUrls|String コレクション|アクセスできる追加 url|
+|blockedUrls|String コレクション|アクセスのためにブロックされる追加 url|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -49,6 +49,7 @@ ms.locfileid: "30155665"
   ]
 }
 ```
+
 
 
 

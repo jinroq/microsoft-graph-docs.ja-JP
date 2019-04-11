@@ -4,12 +4,12 @@ description: telecomExpenseManagementPartner リソースは、特定の TEM サ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dac5531657a63b5f848ecfd9151d9964ccada598
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03334af2edff41a30da37e09685e0c47121ee1bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148140"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778160"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner リソースの種類
 
@@ -33,9 +33,9 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 |:---|:---|:---|
 |id|文字列|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
-|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者は、このパネルで TEM サービスを構成できます。|
+|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを示します。|
+|enabled|ブール型 (Boolean)|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -60,6 +60,7 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

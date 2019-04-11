@@ -4,12 +4,12 @@ description: windowsinformationprotectionwipepeaction オブジェクトのプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d966be5680688f1bbcedbdd2cad1133937d89a05
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e59eeb987e678764adcd5f4378f6bfdc5b4907e0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970640"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777607"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>windowsinformationprotectionwipeaction を更新する
 
@@ -52,10 +52,10 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targeteduserid|String|このワイプアクションの対象となる UserId。|
-|targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
-|targeteddevicename|String|対象のデバイス名。|
-|targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
+|targeteduserid|文字列|このワイプアクションの対象となる UserId。|
+|targetedDeviceRegistrationId|文字列|このワイプアクションの対象となる DeviceRegistrationId。|
+|targeteddevicename|文字列|対象のデバイス名。|
+|targetedDeviceMacAddress|文字列|対象デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
 
@@ -101,6 +101,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

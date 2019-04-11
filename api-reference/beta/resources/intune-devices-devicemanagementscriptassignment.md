@@ -4,12 +4,12 @@ description: グループにデバイス管理スクリプトを割り当てる�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7b3e777da3d50b7b044d0ebc406e95c65bdc892
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: def29ebd398b56514ad6c1e5897715b603429d4c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165381"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779147"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>deviceManagementScriptAssignment リソースの種類
 
@@ -54,6 +54,7 @@ ms.locfileid: "30165381"
   }
 }
 ```
+
 
 
 

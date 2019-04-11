@@ -4,12 +4,12 @@ description: DepEnrollmentBaseProfile リソースは、Apple Device enrollment 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5ad27470bb09313084feadcf468d83e58964532
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 69f0bb3647e5d12d0d441f06e7436626b0d29334
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143107"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779406"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile リソースの種類
 
@@ -34,28 +34,29 @@ DepEnrollmentBaseProfile リソースは、Apple Device enrollment program (DEP)
 |id|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
 |displayName|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの名前|
 |説明|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
-|configurationendpointurl|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
-|enableAuthenticationViaCompanyPortal|ブール値|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|ブール値|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
-|isDefault|ブール値|これが既定のプロファイルであるかどうかを示します|
-|supervisedModeEnabled|ブール値|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
-|supportdepartment|String|サポート部門の情報|
-|pass codedisabled|ブール値|パスコードセットアップウィンドウが無効であるかどうかを示します|
-|ismandatory|ブール値|プロファイルが必須であるかどうかを示します|
-|locationdisabled|ブール値|場所サービスの設定ウィンドウが無効であるかどうかを示します|
-|supportPhoneNumber|String|サポート電話番号|
-|profileRemovalDisabled|ブール値|プロファイルの削除オプションが無効になっているかどうかを示します|
-|restoreblocked|ブール値|セットアップウィンドウの復元がブロックされているかどうかを示します|
-|りんご eiddisabled|ブール値|Apple id のセットアップウィンドウが無効であるかどうかを示します|
-|termsAndConditionsDisabled|ブール値|[使用条件] セットアップウィンドウが無効かどうかを示します|
-|touchIdDisabled|ブール値|タッチ id のセットアップウィンドウが無効であるかどうかを示します|
-|applePayDisabled|ブール値|Apple の支払い設定ウィンドウが無効であるかどうかを示します|
-|zoomDisabled|ブール値|ズーム設定ウィンドウが無効であるかどうかを示します|
-|siridisabled|ブール値|siri セットアップウィンドウが無効であるかどうかを示します|
-|diagnosticsDisabled|ブール値|診断セットアップウィンドウが無効であるかどうかを示します|
-|displayToneSetupDisabled|ブール値|displaytone の設定画面が無効であるかどうかを示します|
-|privacyPaneDisabled|ブール値|プライバシー画面が無効であるかどうかを示します|
+|requiresUserAuthentication|Boolean|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
+|configurationendpointurl|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
+|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
+|isDefault|ブール型 (Boolean)|これが既定のプロファイルであるかどうかを示します|
+|supervisedModeEnabled|Boolean|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
+|supportdepartment|文字列|サポート部門の情報|
+|pass codedisabled|Boolean|パスコードセットアップウィンドウが無効であるかどうかを示します|
+|ismandatory|Boolean|プロファイルが必須であるかどうかを示します|
+|locationdisabled|Boolean|場所サービスの設定ウィンドウが無効であるかどうかを示します|
+|supportPhoneNumber|文字列|サポート電話番号|
+|profileRemovalDisabled|Boolean|プロファイルの削除オプションが無効になっているかどうかを示します|
+|restoreblocked|Boolean|セットアップウィンドウの復元がブロックされているかどうかを示します|
+|りんご eiddisabled|Boolean|Apple id のセットアップウィンドウが無効であるかどうかを示します|
+|termsAndConditionsDisabled|Boolean|[使用条件] セットアップウィンドウが無効かどうかを示します|
+|touchIdDisabled|Boolean|タッチ id のセットアップウィンドウが無効であるかどうかを示します|
+|applePayDisabled|Boolean|Apple の支払い設定ウィンドウが無効であるかどうかを示します|
+|zoomDisabled|Boolean|ズーム設定ウィンドウが無効であるかどうかを示します|
+|siridisabled|Boolean|siri セットアップウィンドウが無効であるかどうかを示します|
+|diagnosticsDisabled|Boolean|診断セットアップウィンドウが無効であるかどうかを示します|
+|displayToneSetupDisabled|Boolean|displaytone の設定画面が無効であるかどうかを示します|
+|privacyPaneDisabled|Boolean|プライバシー画面が無効であるかどうかを示します|
+|deviceNameTemplate|文字列|リテラルまたは名前のパターンを設定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -95,9 +96,11 @@ DepEnrollmentBaseProfile リソースは、Apple Device enrollment program (DEP)
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
-  "privacyPaneDisabled": true
+  "privacyPaneDisabled": true,
+  "deviceNameTemplate": "String"
 }
 ```
+
 
 
 

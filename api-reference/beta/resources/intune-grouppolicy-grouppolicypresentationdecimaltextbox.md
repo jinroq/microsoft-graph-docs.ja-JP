@@ -4,12 +4,12 @@ description: admx decimalTextBox 要素と admx の decimal 要素を表しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5ced3450144308aae2767ecca0438dc0914c04d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad67a1e0f862ff8fe62f063d77a9f0851789bcc7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160390"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778741"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox リソースの種類
 
@@ -34,13 +34,13 @@ admx decimalTextBox 要素と admx の decimal 要素を表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は empty です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |defaultValue|Int64|小数点のテキストボックスの初期値を指定する符号なし整数。 既定値は 1 です。|
-|スピン|ブール値|true の場合はスピンコントロールを作成します。それ以外の場合は、数値を入力するためのテキストボックスを作成します。 既定値は true です。|
+|スピン|Boolean|true の場合はスピンコントロールを作成します。それ以外の場合は、数値を入力するためのテキストボックスを作成します。 既定値は true です。|
 |spinstep|Int64|スピンコントロールの変更のインクリメントを指定する符号なし整数。 既定値は 1 です。|
-|必須|ブール値|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
+|必須|Boolean|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
 |minValue|Int64|最小許容値を指定する符号なし整数。 既定値は 0 です。|
 |maxValue|Int64|最大許容値を指定する符号なし整数。 既定値は9999です。|
 
@@ -71,6 +71,7 @@ admx decimalTextBox 要素と admx の decimal 要素を表します。
   "maxValue": 1024
 }
 ```
+
 
 
 

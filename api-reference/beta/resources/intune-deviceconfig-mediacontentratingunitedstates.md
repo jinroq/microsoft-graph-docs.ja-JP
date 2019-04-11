@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 130b74fa3cf0a5424f7ad816107b80101b9cee49
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 60208f2bace4826f06ff5a81f02bc087211d52a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161902"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777901"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates リソースの種類
 
@@ -42,6 +42,7 @@ ms.locfileid: "30161902"
   "tvRating": "String"
 }
 ```
+
 
 
 

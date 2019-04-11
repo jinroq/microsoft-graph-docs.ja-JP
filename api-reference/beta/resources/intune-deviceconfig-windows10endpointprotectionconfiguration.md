@@ -4,12 +4,12 @@ description: このトピックでは、Windows10EndpointProtectionConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4f034a6b35c1ae8bd8172a20c5da0ee2e818623
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c060011097779b9893bfad5b5ba22ead129b505f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571705"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778384"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration リソース タイプ
 
@@ -25,21 +25,21 @@ ms.locfileid: "30571705"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List windows10EndpointProtectionConfigurations](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) コレクション|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[windows10EndpointProtectionConfigurations のリスト](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) コレクション|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|新しい [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトを作成します。|
-|[Delete windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md)|なし|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) を削除します。|
-|[Update windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-update.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティを更新します。|
+|[windows10EndpointProtectionConfiguration の作成](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|新しい [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトを作成します。|
+|[windows10EndpointProtectionConfiguration の削除](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md)|なし|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) を削除します。|
+|[windows10EndpointProtectionConfiguration の更新](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-update.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|このポリシーは、外部 DMA 対応デバイスに対して追加のセキュリティを提供することを目的としています。 これにより、dma リマップ/デバイスメモリの分離とサンドボックスと互換性のない外部 DMA 対応デバイスの列挙を制御することができます。 このポリシーは、カーネル DMA 保護がサポートされていて、システムファームウェアによって有効になっている場合にのみ有効になります。 カーネル DMA 保護は、ポリシーまたはエンドユーザーによって制御できないプラットフォーム機能です。 これは、製造時にシステムによってサポートされる必要があります。 システムがカーネル dma 保護をサポートしているかどうかを確認するには、MSINFO32 の要約ページにある「kernel dma 保護」フィールドを確認してください。 使用可能な値は、`deviceDefault`、`blockAll`、`allowAll` です。|
@@ -81,9 +81,9 @@ ms.locfileid: "30571705"
 |localsecurityoptionsenableadministratoraccount|Boolean|ユーザーがこのコンピューターに新しい Microsoft アカウントを追加できないようにします。|
 |localsecurityoptionsblockremotelogonwithpassword|Boolean|パスワードで保護されていないローカルアカウントで、物理デバイス以外の場所からログオンできるようにします。既定値を有効にする|
 |localsecurityoptionsdisableアドミニストレーターアカウント|Boolean|ローカル管理者アカウントを有効にするか無効にするかを指定します。|
-|localsecurityoptionsadministratoraccountname|String|アカウント "Administrator" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localsecurityoptionsadministratoraccountname|文字列|アカウント "Administrator" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
 |localsecurityoptionsdisableguestaccount|Boolean|ゲストアカウントを有効にするか無効にするかを指定します。|
-|localsecurityoptionsguestaccountname|String|アカウント "Guest" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localsecurityoptionsguestaccountname|文字列|アカウント "Guest" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|ログインせずに、ポータブルコンピューターをアンドックできないようにします。|
 |localsecurityoptionsblockユーザーのドライバー|Boolean|共有プリンターへの接続の一部として、プリンタードライバーのインストールを管理者のみに制限します。|
 |localsecurityoptionsblockremoteop' aldrive access|Boolean|この設定を有効にすると、対話的にログオンしたユーザーのみが、cd-rom メディアにアクセスできます。|
@@ -93,11 +93,11 @@ ms.locfileid: "30571705"
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|ユーザーがログオンできるようにするには、CTRL + ALT + DEL キーを押しておく必要があります。|
 |localsecurityoption佐々木 delastsignedinuser|Boolean|このデバイスに最後にサインインしたユーザーのユーザー名を表示しません。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|資格情報を入力した後、デバイスのデスクトップが表示される前に、このデバイスにサインインしているユーザーのユーザー名を表示しません。|
-|localsecurityoptionslogonmessagetitle|String|ログインを試行するユーザーのメッセージのタイトルを設定します。|
-|localsecurityoptionslogonmessagetext|String|ログインを試行するユーザーのメッセージテキストを設定します。|
+|localsecurityoptionslogonmessagetitle|文字列|ログインを試行するユーザーのメッセージのタイトルを設定します。|
+|localsecurityoptionslogonmessagetext|文字列|ログインを試行するユーザーのメッセージテキストを設定します。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|オンライン id を使用するために、このデバイスへの PKU2U 認証要求をブロックします。|
 |localsecurityoptionsinformationshownonlockscreen|Boolean|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティの UI ヘルパーの boolean|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|既定のセキュリティ記述子定義言語文字列を編集して、ユーザーおよびグループに SAM へのリモート呼び出しを許可または拒否します。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|文字列|既定のセキュリティ記述子定義言語文字列を編集して、ユーザーおよびグループに SAM へのリモート呼び出しを許可または拒否します。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、クライアントは128ビット暗号化と NTLMv2 セッションセキュリティのいずれかまたは両方のネゴシエーションを要求できます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、サーバーで128ビット暗号化と NTLMv2 セッションセキュリティのどちらかまたは両方のネゴシエーションが要求されます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワークログオンに使用するチャレンジ/応答認証プロトコルを決定します。 可能な値は `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm` です。|
@@ -139,10 +139,10 @@ ms.locfileid: "30571705"
 |defenderSecurityCenterDisableSecureBootUI|Boolean|デバイスセキュリティの下でのセキュアブート領域の表示を無効にするために使用されます。|
 |defendersecurityセンター disableトラブルシューティング ui|Boolean|[デバイスのセキュリティ] の下にあるセキュリティプロセスのトラブルシューティングの表示を無効にするために使用されます。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|脆弱なファームウェアが検出された場合に、更新プログラムの TPM ファームウェアの表示を無効にするために使用されます。|
-|defendersecurityセンター組織 displayname|String|ユーザーに表示される会社名。|
-|defendersecurityセンター helpemail|String|ユーザーに表示される電子メールアドレス。|
-|defendersecurityセンター helpphone|String|ユーザーに表示される電話番号または Skype ID。|
-|defenderSecurityCenterHelpURL|String|ヘルプポータルの URL これは、ユーザーに表示されます。|
+|defendersecurityセンター組織 displayname|文字列|ユーザーに表示される会社名。|
+|defendersecurityセンター helpemail|文字列|ユーザーに表示される電子メールアドレス。|
+|defendersecurityセンター helpphone|文字列|ユーザーに表示される電話番号または Skype ID。|
+|defenderSecurityCenterHelpURL|文字列|ヘルプポータルの URL これは、ユーザーに表示されます。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|アプリの表示領域から表示する通知。 使用可能な値は、`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications` です。|
 |defendersecurityセンター itcontactdisplay|[defendersecurityセンター itcontactdisplaytype](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|エンドユーザーに対して IT の連絡先情報を表示する場所を構成します。 可能な値は、`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications` です。|
 |firewallBlockStatefulFTP|Boolean|デバイスへのステートフル FTP 接続をブロックします|
@@ -184,7 +184,7 @@ ms.locfileid: "30571705"
 |defenderemailcontentexecution|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行を電子メール (webmail/メールクライアント) から削除する必要があるかどうかを示す値。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defenderAdvancedRansomewareProtectionType|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|ranware に対して高度な保護を使用することを示す値。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defendergu/myfolderstype|[folderprotectiontype](../resources/intune-deviceconfig-folderprotectiontype.md)|保護されたフォルダーの動作を示す値。 可能な値は、`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification` です。|
-|defenderGuardedFoldersAllowedAppPaths|String collection|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
+|defenderGuardedFoldersAllowedAppPaths|String コレクション|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
 |defenderAdditionalGuardedFolders|String コレクション|保護されたフォルダーのリストに追加されるフォルダー パスのリスト|
 |defendernetworkprotectiontype|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|networkprotection の動作を示す値です。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defenderExploitProtectionXml|Binary|Exploit Protection の詳細に関する情報を含む XML コンテンツ。|
@@ -218,7 +218,7 @@ ms.locfileid: "30571705"
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker 固定ドライブポリシー。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker リムーバブル ドライブ ポリシー。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -896,6 +896,7 @@ ms.locfileid: "30571705"
   }
 }
 ```
+
 
 
 
