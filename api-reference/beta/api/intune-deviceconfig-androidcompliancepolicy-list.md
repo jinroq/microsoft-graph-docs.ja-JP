@@ -4,12 +4,12 @@ description: androidCompliancePolicy オブジェクトのプロパティとリ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbd2f2a86448c90c20a858844a5a74dc3ff76fe6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cbf4d7483ee4ed7ff114fce957cf57b2cb92d9ca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966685"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771553"
 ---
 # <a name="list-androidcompliancepolicies"></a>androidCompliancePolicies のリスト
 
@@ -113,6 +113,7 @@ Content-Length: 1961
   ]
 }
 ```
+
 
 
 

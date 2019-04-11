@@ -4,12 +4,12 @@ description: configurationusage リストの有効な値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfe34d8e0a6aa9b9f816cf19304af3a521fc654c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3554281a937f09db5592b3afc152550c814539fe
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156967"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774058"
 ---
 # <a name="configurationusage-enum-type"></a>configurationusage 列挙型
 
@@ -23,8 +23,9 @@ configurationusage リストの有効な値。
 |メンバー|値|説明|
 |:---|:---|:---|
 |ブロック|.0|許可され.|
-|必須|1-d|必須です。|
+|必須|1-d|必須。|
 |れる|pbm-2|省略可能。|
+
 
 
 

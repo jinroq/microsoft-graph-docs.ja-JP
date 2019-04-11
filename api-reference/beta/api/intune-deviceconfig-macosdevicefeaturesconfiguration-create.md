@@ -4,12 +4,12 @@ description: 新しい macOSDeviceFeaturesConfiguration オブジェクトを作
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65b535959a5c8b58bd945870395e83f18ce6d171
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: df5edc6fc28b4e4f9e242bd30cff38458e5edd42
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979362"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771419"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>macOSDeviceFeaturesConfiguration の作成
 
@@ -53,13 +53,31 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |放映した print行先|[放映 printdestination](../resources/intune-deviceconfig-airprintdestination.md)コレクション|常に表示される必要がある、放映中の印刷プリンターの配列です。 このコレクションには、最大で 500 個の要素を含めることができます。 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)から継承します。|
+|autoLaunchItems|[macoslaunchitem](../resources/intune-deviceconfig-macoslaunchitem.md)コレクション|ユーザーがログインしたときに起動するアプリケーション、ファイル、フォルダー、およびその他のアイテムのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|adminshoの stinfo|Boolean|ログインウィンドウに管理ホスト情報を表示するかどうかを指定します。|
+|loginwindowtext|文字列|ログインウィンドウに表示されるカスタムテキスト。|
+|authorizedUsersListHidden|Boolean|ログインウィンドウで [名前とパスワード] ダイアログを表示するか、ユーザーの一覧を表示するかを指定します。|
+|authorizedUsersListHideLocalUsers|Boolean|ログインウィンドウの承認済みユーザーの一覧に、ネットワークユーザーとシステムユーザーのみを表示するかどうかを指定します。|
+|authorizedUsersListHideMobileAccounts|Boolean|ログインウィンドウの承認されたユーザーの一覧でモバイルユーザーを非表示にするかどうかを指定します。|
+|authorizedUsersListIncludeNetworkUsers|Boolean|[ログイン] ウィンドウで、承認されたユーザーの一覧にネットワークユーザーを表示するかどうかを指定します。|
+|authorizedUsersListHideAdminUsers|Boolean|ログインウィンドウの承認されたユーザーの一覧で管理者ユーザーを非表示にするかどうかを指定します。|
+|authorizedUsersListShowOtherManagedUsers|Boolean|[ログイン] ウィンドウで、承認されたユーザーの一覧に他のユーザーを表示するかどうかを指定します。|
+|shutdowndisabled|Boolean|ログインウィンドウで [シャットダウン] ボタンの項目を非表示にするかどうかを指定します。|
+|restartDisabled|Boolean|ログインウィンドウで [再起動] ボタンの項目を非表示にするかどうかを指定します。|
+|sleepDisabled|Boolean|ログインウィンドウで [スリープ] メニュー項目を非表示にするかどうかを指定します。|
+|consoleaccessdisabled|Boolean|他のユーザーが ' >console> 特殊ユーザー名の使用を無視するかどうか。|
+|shutDownDisabledWhileLoggedIn|Boolean|ログインウィンドウの [シャットダウン] メニュー項目が、ユーザーのログイン中に無効になるかどうか。|
+|restartDisabledWhileLoggedIn|Boolean|ログインウィンドウの [再起動] メニュー項目が、ユーザーのログイン中に無効になるかどうか。|
+|powerOffDisabledWhileLoggedIn|Boolean|ログインウィンドウの [電源オフ] メニュー項目が、ユーザーのログイン中に無効になるかどうかを指定します。|
+|logOutDisabledWhileLoggedIn|Boolean|ログインウィンドウの [Log Out] メニュー項目が、ユーザーのログイン中に無効になるかどうかを指定します。|
+|screenlockdisableimmediate|Boolean|即時画面ロック機能を無効にするかどうかを指定します。|
 
 
 
@@ -73,7 +91,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 500
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -92,7 +110,31 @@ Content-length: 500
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
 
@@ -101,7 +143,7 @@ Content-length: 500
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 672
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -123,9 +165,34 @@ Content-Length: 672
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: VPN 接続の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5e0e3248315fc598d95ea3eb2bb46a6445a5968
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166711"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774142"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 列挙型
 
@@ -32,6 +32,7 @@ VPN 接続の種類。
 |pptp|7|PPTP.|
 |社|~|社.|
 |paloAltoGlobalProtect|i-9|Palo Alto Networks globalprotect。|
+
 
 
 

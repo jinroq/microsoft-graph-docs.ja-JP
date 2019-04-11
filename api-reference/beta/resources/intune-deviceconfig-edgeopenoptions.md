@@ -4,12 +4,12 @@ description: EdgeOpensWith 設定に指定できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d70b459cfc77637a6084af27396a51cc9db6be68
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fc4c39a5400b84d1718845b1f36f76be8d6df50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149225"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771384"
 ---
 # <a name="edgeopenoptions-enum-type"></a>edgeOpenOptions 列挙型
 
@@ -27,6 +27,7 @@ EdgeOpensWith 設定に指定できる値。
 |newtabpage|pbm-2|newtabpage。|
 |previousPages|1/3|PreviousPages。|
 |固有のページ|2/4|固有のページ|
+
 
 
 

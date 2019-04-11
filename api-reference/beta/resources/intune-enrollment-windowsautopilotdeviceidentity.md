@@ -4,12 +4,12 @@ description: windowsAutopilotDeviceIdentity リソースは、Windows 自動操�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eaa6f948354164debd73793524d047b1ba204fd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 5729c1b47a56f06ffd931df66b2c0ae1d76adc5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571439"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774730"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity リソースの種類
 
@@ -29,8 +29,8 @@ windowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
 |[windowsAutopilotDeviceIdentity の更新](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)オブジェクトのプロパティを更新します。|
 |[assignUserToDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|なし|ユーザーを自動操縦装置に割り当てます。|
 |[unassignUserFromDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|なし|ユーザーを自動操縦デバイスから割り当てないようにします。|
-|[割り当て resourceaccounttodevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|なし|リソースアカウントを自動操縦デバイスに割り当てます。|
-|[resourceaccountfromdevice アクションの未割り当て](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|なし|自動操縦デバイスからリソースアカウントを割り当てないようにします。|
+|[assignResourceAccountToDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|なし|リソースアカウントを自動操縦デバイスに割り当てます。|
+|[unassignResourceAccountFromDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|なし|自動操縦デバイスからリソースアカウントを割り当てないようにします。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -39,23 +39,24 @@ windowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
 |deploymentprofileの状態|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows 自動操縦デバイスのプロファイル割り当て状態。 可能な値は、`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed` です。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当て Windows 自動操縦デバイスの詳細な状態。 可能な値は、`none`、`hardwareRequirementsNotMet` です。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|プロファイル Windows 自動操縦デバイスの時間を設定します。|
-|orderIdentifier|String|Windows 自動操縦デバイスの注文識別子です。|
-|purchaseOrderIdentifier|String|Windows 自動操縦デバイスの注文 id。|
-|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
+|orderIdentifier|文字列|Windows 自動操縦デバイスの注文識別子-非推奨|
+|grouptag|文字列|Windows 自動操縦デバイスのグループタグ。|
+|purchaseOrderIdentifier|文字列|Windows 自動操縦デバイスの注文 id。|
+|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|manufacturer|String|Windows 自動操縦デバイスの Oem メーカー。|
-|model|String|Windows 自動操縦デバイスのモデル名です。|
+|manufacturer|文字列|Windows 自動操縦デバイスの Oem メーカー。|
+|model|文字列|Windows 自動操縦デバイスのモデル名です。|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自動操縦デバイスの Intune 登録状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
 |lastContactedDateTime|DateTimeOffset|Intune 前回の接続 Windows 自動操縦デバイスの日時。|
-|addressableusername|String|アドレス指定可能なユーザー名。|
+|addressableusername|文字列|アドレス指定可能なユーザー名。|
 |userPrincipalName|String|ユーザープリンシパル名。|
 |resourceName|String|リソース名。|
-|skuNumber|String|SKU 番号|
-|systemfamily|String|システムファミリ|
-|azureActiveDirectoryDeviceId|String|AAD デバイス ID|
-|manageddeviceid|String|管理対象デバイス ID|
+|skuNumber|文字列|SKU 番号|
+|systemfamily|文字列|システムファミリ|
+|azureActiveDirectoryDeviceId|文字列|AAD デバイス ID|
+|manageddeviceid|文字列|管理対象デバイス ID|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deploymentprofile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Windows 自動操縦デバイスに現在割り当てられている展開プロファイル。|
@@ -77,6 +78,7 @@ windowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
   "productKey": "String",
@@ -93,6 +95,7 @@ windowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
   "managedDeviceId": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exchange Active Sync 認証方法。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e60c1168ad1c0e35628822fa6b111ea4959c90c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 465370d47a38d4f4c234b724060f33ab4f89a723
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774352"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easauthenticationmethod enum 型
 
@@ -23,7 +23,8 @@ Exchange Active Sync 認証方法。
 |メンバー|値|説明|
 |:---|:---|:---|
 |usernameAndPassword|.0|ユーザー名とパスワードを使用して認証します。|
-|証明書|1-d|証明書を使用して認証します。|
+|certificate|1-d|証明書を使用して認証します。|
+
 
 
 

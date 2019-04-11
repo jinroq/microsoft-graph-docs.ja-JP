@@ -4,12 +4,12 @@ description: VPN トラフィックルールの定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd004341928260187518966e2356f59faff57898
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c22ead3b037ff18dbd9c1dedbf68b11f2b55a3bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771888"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule リソースの種類
 
@@ -29,9 +29,9 @@ VPN トラフィックルールの定義。
 |localaddressranges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|ローカルアドレス範囲。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |remoteaddressranges|[iPv4Range](../resources/intune-shared-ipv4range.md)コレクション|リモートアドレス範囲。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |appId|String|アプリ識別子。このトラフィックルールがアプリによってトリガーされた場合。|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|アプリの種類。このトラフィックルールがアプリによってトリガーされた場合。 可能な値は `none`、`desktop`、`universal` です。|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|アプリがトリガーされたときに、このルートに沿った分割トンネリングを有効にするかどうかを示します。 可能な値は `none`、`splitTunnel`、`forceTunnel` です。|
-|クレーム|String|このトラフィック規則に関連付けられているクレーム。|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|アプリの種類。このトラフィックルールがアプリによってトリガーされた場合。 使用可能な値は、`none`、`desktop`、`universal` です。|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|アプリがトリガーされたときに、このルートに沿った分割トンネリングを有効にするかどうかを示します。 使用可能な値は、`none`、`splitTunnel`、`forceTunnel` です。|
+|差出人|文字列|このトラフィック規則に関連付けられているクレーム。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -82,6 +82,7 @@ VPN トラフィックルールの定義。
   "claims": "String"
 }
 ```
+
 
 
 

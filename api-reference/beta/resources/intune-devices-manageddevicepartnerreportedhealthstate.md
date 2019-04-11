@@ -4,12 +4,12 @@ description: デバイス正常性 API の利用可能な状態
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60a3071094e2667b896401c6df29977f9923884c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 04ed30c087bb9f607f1579819d09def103658ca3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143772"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772483"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>manageddevicepartnerreportedhealthstate 列挙型
 
@@ -32,6 +32,7 @@ ms.locfileid: "30143772"
 |なかっ|7|モバイル脅威防御パートナーによってデバイスが応答しないと見なされます。 デバイスの正常性が不明です。|
 |セキュリティ|~|脅威の防御パートナーによってデバイスが侵害されたと見なされます。 これは、デバイスのアクティブな脅威またはリスクが、エンドユーザーによって簡単に修復できず、ユーザーが IT 管理者に連絡する必要があることを意味します。|
 |誤った|i-9|脅威の防御パートナーとの間でデバイスが正しく構成されていないと考えられます。 これは、脅威またはリスク分析が正常に機能するために必要なプロファイルまたは構成がデバイスにないことを意味します。そのため、脅威またはリスク分析を完了できません。|
+
 
 
 

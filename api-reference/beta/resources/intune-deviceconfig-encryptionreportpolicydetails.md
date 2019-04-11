@@ -4,12 +4,12 @@ description: 暗号化レポートのポリシーの詳細
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9232acd2a155169385956b9d20b3011c963090a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9c9903b54483fc6f77cd183abee0e54b10acf9cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177918"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771013"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>encryptionreportpolicydetails リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30177918"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|policyid|String|暗号化レポートのポリシー Id|
-|policyName|String|暗号化レポートのポリシー名|
+|policyid|文字列|暗号化レポートのポリシー Id|
+|policyName|文字列|暗号化レポートのポリシー名|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -42,6 +42,7 @@ ms.locfileid: "30177918"
   "policyName": "String"
 }
 ```
+
 
 
 

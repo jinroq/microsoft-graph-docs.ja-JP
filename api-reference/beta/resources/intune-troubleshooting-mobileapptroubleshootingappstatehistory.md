@@ -4,12 +4,12 @@ description: モバイルアプリのトラブルシューティングイベン�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd39115de207532b42d1554da54e154a5066eb76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75285b5dec8b3b3808f2e81a4655d9298d12d486
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150961"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772084"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30150961"
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|対象となった AAD セキュリティグループ id。 可能な値は、`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall` です。|
-|runstate|[runstate](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は `unknown`、`success`、`fail` です。|
+|runstate|[runstate](../resources/intune-shared-runstate.md)|アイテムの状態。 使用可能な値は、`unknown`、`success`、`fail` です。|
 |errorCode|String|失敗のエラーコード。エラーがない場合は空です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -49,7 +49,6 @@ ms.locfileid: "30150961"
   "errorCode": "String"
 }
 ```
-
 
 
 

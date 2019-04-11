@@ -4,12 +4,12 @@ description: ロールの定義リソースです。 ロールの定義は、Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba38f9293ce4a21d031a3c70e8d3bdbe5667f997
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fca5f91c5ca708f715b1438f2fe8508060e3b91c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173718"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772007"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition リソース タイプ
 
@@ -22,19 +22,19 @@ ms.locfileid: "30173718"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List roleDefinition](../api/intune-rbac-roledefinition-list.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) コレクション|[roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[roleDefinitions のリスト](../api/intune-rbac-roledefinition-list.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) コレクション|[roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|新しい [roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトを作成します。|
+|[roleDefinition の作成](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|新しい [roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトを作成します。|
 |[Delete roleDefinition](../api/intune-rbac-roledefinition-delete.md)|なし|[roleDefinition](../resources/intune-rbac-roledefinition.md) を削除します。|
-|[Update roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトのプロパティを更新します。|
+|[roleDefinition の更新](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|id|文字列型 (String)|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
 |説明|String|ロールの定義の説明。|
-|permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
+|アクセス許可|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |isBuiltInRoleDefinition|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
@@ -104,6 +104,7 @@ ms.locfileid: "30173718"
   ]
 }
 ```
+
 
 
 

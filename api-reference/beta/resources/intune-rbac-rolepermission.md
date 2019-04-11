@@ -1,15 +1,15 @@
 ---
 title: rolePermission リソースの種類
-description: まだ文書化されていません
+description: 各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する resourceactions のセットが含まれています。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b56df927cda3cbf98e7d736311aba2db5e53906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145382"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771265"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission リソースの種類
 
@@ -17,15 +17,15 @@ ms.locfileid: "30145382"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する resourceactions のセットが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|actions|文字列コレクション|許可されるアクション|
-|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) コレクション|アクション|
+|actions|String コレクション|許可されたアクション-非推奨|
+|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) コレクション|それぞれ許可され、許可されていないアクセス許可のセットが含まれているリソースアクション。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ ms.locfileid: "30145382"
   ]
 }
 ```
+
 
 
 

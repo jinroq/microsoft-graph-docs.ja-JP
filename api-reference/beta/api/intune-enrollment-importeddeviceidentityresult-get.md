@@ -4,12 +4,12 @@ description: importedDeviceIdentityResult オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b760a423669f109b55d7bd14a3f4bb7202cf36e3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ec3e2c0bc9f43118c872e806e94e6d2332bcaea7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968134"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770817"
 ---
 # <a name="get-importeddeviceidentityresult"></a>importedDeviceIdentityResult を取得する
 
@@ -83,6 +83,7 @@ Content-Length: 570
   }
 }
 ```
+
 
 
 

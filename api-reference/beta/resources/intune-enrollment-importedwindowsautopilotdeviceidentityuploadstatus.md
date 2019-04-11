@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2b91bb90b4f56bb90a63c26a5b91bcb17636f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2769e8b8af8588713fa87d15eee682d201bfb249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161237"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771433"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30161237"
 |対する|1-d|保留中の状態。|
 |complete|pbm-2|完全な状態。|
 |エラー|1/3|エラー状態。|
+
 
 
 

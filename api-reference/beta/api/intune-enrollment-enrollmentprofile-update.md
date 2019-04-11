@@ -4,12 +4,12 @@ description: しましたオブジェクトのプロパティを更新します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 222d8fbe049e7a66ecc0094f179e1dae6b187054
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 593c760b303ca87a3bc2ddc77571719379557562
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975043"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773827"
 ---
 # <a name="update-enrollmentprofile"></a>しましたの更新
 
@@ -52,9 +52,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
-|description|String|プロファイルの説明|
+|説明|String|プロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
-|configurationendpointurl|String|登録に使用する構成エンドポイント url|
+|configurationendpointurl|文字列|登録に使用する構成エンドポイント url|
 |enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
@@ -101,6 +101,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

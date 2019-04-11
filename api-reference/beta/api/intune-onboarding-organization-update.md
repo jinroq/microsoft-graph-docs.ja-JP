@@ -4,12 +4,12 @@ description: organization オブジェクトのプロパティを更新します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0263fc0ddf565da7c01ae8fbc6f9b20cbb405d5c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 26941e8a12b15bb5f27396c46c6ac2645497894f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983618"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770530"
 ---
 # <a name="update-organization"></a>組織を更新する
 
@@ -105,6 +105,7 @@ Content-Length: 541
   }
 }
 ```
+
 
 
 

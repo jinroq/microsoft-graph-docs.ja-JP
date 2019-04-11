@@ -4,12 +4,12 @@ description: importedDeviceIdentity リソースは、事前登録構成のた�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f5dcc3d7ef6cb59bffe1d7b8cfda958e76c3e35
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572104"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771944"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity リソースの種類
 
@@ -28,20 +28,20 @@ importedDeviceIdentity リソースは、事前登録構成のために事前に
 |[importedDeviceIdentity の削除](../api/intune-enrollment-importeddeviceidentity-delete.md)|なし|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)を削除します。|
 |[importedDeviceIdentity の更新](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)オブジェクトのプロパティを更新します。|
 |[importDeviceIdentityList アクション](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)コレクション|まだ文書化されていません|
-|[searchexistingidentities アクション](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)コレクション|まだ文書化されていません|
+|[searchExistingIdentities アクション](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|インポートされたデバイス id の id|
-|importedDeviceIdentifier|String|インポートされたデバイス識別子|
+|importedDeviceIdentifier|文字列|インポートされたデバイス識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイス id の種類。 使用可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最終更新日時|
 |createdDateTime|DateTimeOffset|デバイスの日時の作成日時|
 |lastContactedDateTime|DateTimeOffset|デバイスの最終連絡日時|
-|description|String|デバイスの説明|
+|説明|String|デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
-|platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
+|platform|[platform](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -68,6 +68,7 @@ importedDeviceIdentity リソースは、事前登録構成のために事前に
   "platform": "String"
 }
 ```
+
 
 
 

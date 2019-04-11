@@ -4,12 +4,12 @@ description: Microsoft Intune でのデバイスの管理状態。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05dc0db1ecbe88616ca36db82bad2081b4133e3f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174145"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772910"
 ---
 # <a name="managementstate-enum-type"></a>managementstate 列挙型
 
@@ -34,6 +34,7 @@ Microsoft Intune でのデバイスの管理状態。
 |wipeCanceled|i-9|このデバイスのワイプコマンドは取り消されました|
 |retireCanceled|個|このデバイスの廃棄コマンドは取り消されました|
 |た|#|デバイスが検出されますが、完全に登録されていません。|
+
 
 
 

@@ -4,12 +4,12 @@ description: グループポリシー構成エンティティには、1つまた
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 540da94d92f3056a6699b7112f3589f6da4b7144
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f9c925ba10b1dde26e51a64b912c33143d58def3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160754"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774443"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>grouppolicyconfiguration リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30160754"
 |[grouppolicyconfiguration の作成](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|新しい[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)オブジェクトを作成します。|
 |[grouppolicyconfiguration の削除](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|なし|[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)を削除します。|
 |[grouppolicyconfiguration を更新する](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)オブジェクトのプロパティを更新します。|
-|[assign action](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)コレクション|まだ文書化されていません|
+|[アクションの割り当て](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -62,6 +62,7 @@ ms.locfileid: "30160754"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: applePushNotificationCertificate オブジェクトのプロパテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c16718f06b3f321e3a63180a1ee5155cf39de5a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d87a60747fce6eb85cb50439eb14f14a207280d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981259"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772441"
 ---
 # <a name="update-applepushnotificationcertificate"></a>applePushNotificationCertificate の更新
 
@@ -51,12 +51,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|証明書の一意識別子|
-|appleIdentifier|String|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
+|appleIdentifier|文字列|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
 |expirationDateTime|DateTimeOffset|Apple プッシュ通知証明書の有効期限。|
-|certificateuploadstatus|String|証明書のアップロード状態。|
-|certificateUploadFailureReason|String|証明書のアップロードが失敗した理由。|
+|certificateuploadstatus|文字列|証明書のアップロード状態。|
+|certificateUploadFailureReason|文字列|証明書のアップロードが失敗した理由。|
 |certificate|String|まだ文書化されていません|
 
 
@@ -103,6 +103,7 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
+
 
 
 

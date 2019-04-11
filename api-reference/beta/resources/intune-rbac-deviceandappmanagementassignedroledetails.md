@@ -1,15 +1,15 @@
 ---
 title: deviceAndAppManagementAssignedRoleDetails リソースの種類
-description: まだ文書化されていません
+description: ユーザーに割り当てられた役割定義と役割の割り当てのセット。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eafacd349b5d315cb7a1149d7bcc7070700b7130
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 93f99cdc91d046b9ebf292bbd34f1bba39b494ac
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160075"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771405"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>deviceAndAppManagementAssignedRoleDetails リソースの種類
 
@@ -17,13 +17,13 @@ ms.locfileid: "30160075"
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+ユーザーに割り当てられた役割定義と役割の割り当てのセット。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roledefinitionids|String collection|ユーザーに割り当てられている表面化ロール定義のロール定義 id。|
-|roleAssignmentIds|String collection|ユーザーに割り当てられている表面化の役割の割り当ての役割割り当て id。|
+|roledefinitionids|String コレクション|ユーザーに割り当てられている表面化ロール定義のロール定義 id。|
+|roleAssignmentIds|String コレクション|ユーザーに割り当てられている表面化の役割の割り当ての役割割り当て id。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -46,6 +46,7 @@ ms.locfileid: "30160075"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exchange のデバイスクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffa5f9c9f54722711a2e38116c2f2a3e03a3171e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7ec9f0242521bf23b4ed5f1c9f002211d542e48c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149568"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774660"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>devicemanagementexchangedeviceclass リソースの種類
 
@@ -42,6 +42,7 @@ Exchange のデバイスクラス。
   "type": "String"
 }
 ```
+
 
 
 

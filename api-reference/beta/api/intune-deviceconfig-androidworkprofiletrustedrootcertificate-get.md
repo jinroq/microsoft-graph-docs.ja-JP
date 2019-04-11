@@ -4,12 +4,12 @@ description: androidwork profiletrustedrootcertificate オブジェクトのプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a7b26ccc38a8ea20aeb8d63beaf0f8450fa03cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f5aeb5b16e5cb58f7d2820df1af7960a26b7154d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977080"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773120"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>androidwork profiletrustedrootcertificate の取得
 
@@ -87,6 +87,7 @@ Content-Length: 595
   }
 }
 ```
+
 
 
 

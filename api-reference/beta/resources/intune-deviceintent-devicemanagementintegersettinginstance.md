@@ -4,12 +4,12 @@ description: 整数値を表す設定インスタンス
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 568a1d60572123424869f1ee98c3cb6bc600d36f
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a5987e74f4503a2f84e457a8d59d7219d941f600
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522553"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771475"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>devicemanagement整数 settinginstance リソースの種類
 
@@ -26,10 +26,10 @@ ms.locfileid: "31522553"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagement整数の settinginstances を一覧表示する](../api/intune-deviceintent-devicemanagementintegersettinginstance-list.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)コレクション|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagement整数 settinginstance を取得する](../api/intune-deviceintent-devicemanagementintegersettinginstance-get.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagement整数 settinginstance の作成](../api/intune-deviceintent-devicemanagementintegersettinginstance-create.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|新しい[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトを作成します。|
+|[devicemanagement整数 settinginstance を取得する](../api/intune-deviceintent-devicemanagementintegersettinginstance-get.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagement整数 settinginstance の作成](../api/intune-deviceintent-devicemanagementintegersettinginstance-create.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|新しい[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトを作成します。|
 |[devicemanagement整数 settinginstance の削除](../api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md)|なし|[devicemanagement整数の settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)を削除します。|
-|[devicemanagement整数 settinginstance の更新](../api/intune-deviceintent-devicemanagementintegersettinginstance-update.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティを更新します。|
+|[devicemanagement整数 settinginstance の更新](../api/intune-deviceintent-devicemanagementintegersettinginstance-update.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -59,8 +59,6 @@ ms.locfileid: "31522553"
   "value": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: ポリシーの Suppoorted プラットフォームの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f78d8b885f8468a550a0a6e5e9e5017bd9b258a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ae846552b736fccd34415459a08567eb82a0d347
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149505"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771321"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 列挙型
 
@@ -30,7 +30,8 @@ ms.locfileid: "30149505"
 |windows81AndLater|5|Windows 8.1 以降|
 |windows10AndLater|シックス|Windows 10 以降。|
 |androidWorkProfile|7|AndroidWorkProfile.|
-|all|100|すべてのプラットフォーム。|
+|すべての|100|すべてのプラットフォーム。|
+
 
 
 

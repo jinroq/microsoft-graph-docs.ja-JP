@@ -4,12 +4,12 @@ description: AAD グループへの Windows 自動操縦展開プロファイル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5147a3a7414c44d8b17345b97b54fdfc6a7f81c8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b9c5106393fa49f6d3260ee6cdfd57a9422a2d99
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151458"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771685"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>windowsAutopilotDeploymentProfileAssignment リソースの種類
 
@@ -54,6 +54,7 @@ AAD グループへの Windows 自動操縦展開プロファイルの割り当�
   }
 }
 ```
+
 
 
 

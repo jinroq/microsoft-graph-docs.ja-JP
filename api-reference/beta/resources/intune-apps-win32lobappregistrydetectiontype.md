@@ -4,12 +4,12 @@ description: サポートされているすべてのレジストリデータ検�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62028eefbfa85bceb669cbe8cc4bee8261d5837e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6c19d2dfa0c19be1d61178c25fdd04615d2f9dbd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158458"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774261"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType 列挙型
 
@@ -26,8 +26,9 @@ ms.locfileid: "30158458"
 |ある|1-d|指定されたレジストリキーまたは値が存在します。|
 |doesNotExist|pbm-2|指定したレジストリキーまたは値が存在しません。|
 |string|1/3|文字列型 (String) の値を指定します。|
-|integer|2/4|整数型 (Integer) の値です。|
-|version|5|バージョン値の種類。|
+|整数|2/4|整数型 (Integer) の値です。|
+|バージョン|5|バージョン値の種類。|
+
 
 
 

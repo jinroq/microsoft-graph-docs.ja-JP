@@ -4,12 +4,12 @@ description: deviceEnrollmentPlatformRestrictionsConfiguration を削除しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae388b2c1c78baa05ee019b2617a48148acdc3fc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ae130f29ffbf87b5fa820f55bfc0f9cd70fb13ca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964095"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772672"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>deviceEnrollmentPlatformRestrictionsConfiguration の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

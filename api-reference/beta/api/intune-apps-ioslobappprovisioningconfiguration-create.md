@@ -4,12 +4,12 @@ description: 新しい ioslobappプロビジョニング構成オブジェクト
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d8cf36c1e4fe957d05463df2dae4975f2d07fcb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968659"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772686"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>ioslobappプロビジョニング構成を作成する
 
@@ -54,9 +54,9 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |expirationDateTime|DateTimeOffset|オプションのプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロードファイル名 (*. mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|
-|roleScopeTagIds|String collection|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
+|roleScopeTagIds|String コレクション|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|description|String|デバイス構成について管理者が提供した説明です。|
+|説明|String|デバイス構成について管理者が提供した説明です。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
@@ -112,6 +112,7 @@ Content-Length: 547
   "version": 7
 }
 ```
+
 
 
 

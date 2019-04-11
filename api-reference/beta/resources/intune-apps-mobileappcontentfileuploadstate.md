@@ -4,12 +4,12 @@ description: アップロード要求の状態のプロパティが含まれて�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6bbda483d68690709c0e9bd084ecd407b10d479
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156099"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771231"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 列挙型
 
@@ -30,9 +30,7 @@ ms.locfileid: "30156099"
 |azurestorageurirequestpending|101|まだ文書化されていません|
 |azurestorageurirequestfailed|102|まだ文書化されていません|
 |azureStorageUriRequestTimedOut|103|まだ文書化されていません|
-|azureStorageUriRenewalSuccess| 
-200 
-|まだ文書化されていません|
+|azureStorageUriRenewalSuccess|200|まだ文書化されていません|
 |azureStorageUriRenewalPending|201|まだ文書化されていません|
 |azureStorageUriRenewalFailed|202|まだ文書化されていません|
 |azureStorageUriRenewalTimedOut|203|まだ文書化されていません|
@@ -40,6 +38,7 @@ ms.locfileid: "30156099"
 |commitfilepending|301|まだ文書化されていません|
 |commitfilefailed|302|まだ文書化されていません|
 |commitFileTimedOut|303|まだ文書化されていません|
+
 
 
 

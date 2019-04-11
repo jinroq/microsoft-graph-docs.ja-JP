@@ -4,12 +4,12 @@ description: Apple volume purchase program のトークンに関連付けられ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46de00423a08e7edc6f5ac9c62d1caf0165e1d94
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 59653a8df6c0fd08ffd0d8aa3081d58e56447a95
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170428"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772098"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vpptokensyncstatus 列挙型
 
@@ -26,6 +26,7 @@ Apple volume purchase program のトークンに関連付けられている同�
 |inProgress|1-d|前回の同期が進行中です。|
 |せ|pbm-2|前回の同期が正常に完了しました。|
 |フェール|1/3|前回の同期に失敗しました。|
+
 
 
 

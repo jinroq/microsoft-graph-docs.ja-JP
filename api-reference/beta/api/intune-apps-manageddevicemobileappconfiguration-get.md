@@ -4,12 +4,12 @@ description: managedDeviceMobileAppConfiguration オブジェクトのプロパ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efc1c1bfe263adcf9d559fc3985bfd766525ca9d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 943e4076e08f29c32d14feab6a5ed3bf07c55d73
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957802"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771972"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>managedDeviceMobileAppConfiguration の取得
 
@@ -85,6 +85,7 @@ Content-Length: 519
   }
 }
 ```
+
 
 
 

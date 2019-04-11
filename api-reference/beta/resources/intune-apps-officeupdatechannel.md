@@ -4,12 +4,12 @@ description: Office365 更新チャネルを指定する列挙体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62b91cc33ecce517015e7070caacd4dab8b9fbcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147860"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772112"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 列挙型
 
@@ -27,6 +27,7 @@ Office365 更新チャネルを指定する列挙体。
 |deferred|pbm-2|まだ文書化されていません|
 |firstReleaseCurrent|1/3|まだ文書化されていません|
 |firstReleaseDeferred|2/4|まだ文書化されていません|
+
 
 
 

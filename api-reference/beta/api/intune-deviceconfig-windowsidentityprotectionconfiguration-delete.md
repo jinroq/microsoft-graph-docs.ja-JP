@@ -4,12 +4,12 @@ description: windowsIdentityProtectionConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61510882a5d0fb4c06aa55fac566ac8bd1c995a6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b4655b8cd18b6fbcd8aec9e1dd5ba90715e54797
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966342"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774541"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>windowsIdentityProtectionConfiguration の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

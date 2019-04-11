@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199fe08b4eaf339f17fdb67bb6dbcc0243fd90f9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e0978367465fde92f9874e338a0de84da2a20403
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168335"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770936"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkmanageddeviceactionresult リソースの種類
 
@@ -22,10 +22,10 @@ ms.locfileid: "30168335"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|成功したデバイス|
-|失敗 deviceid|String collection|失敗したデバイス|
-|not見つかり deviceid|String collection|見つからないデバイス|
-|notsupporteddeviceids|String collection|サポートされていないデバイス|
+|successfulDeviceIds|String コレクション|成功したデバイス|
+|失敗 deviceid|String コレクション|失敗したデバイス|
+|not見つかり deviceid|String コレクション|見つからないデバイス|
+|notsupporteddeviceids|String コレクション|サポートされていないデバイス|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -54,6 +54,7 @@ ms.locfileid: "30168335"
   ]
 }
 ```
+
 
 
 

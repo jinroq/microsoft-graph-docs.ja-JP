@@ -4,12 +4,12 @@ description: 管理対象デバイスにインストールされている管理�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e2ace6b945799e8f21af08c3134598b86c05d88
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 01233111e74da95f84d0cbeb81e4675a5c6e049d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142435"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773197"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp リソースの種類
 
@@ -23,15 +23,15 @@ ms.locfileid: "30142435"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[detectedApps のリスト](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) コレクション|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[detectedApp の取得](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[detectedApp の作成](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|新しい [detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトを作成します。|
-|[detectedApp の削除](../api/intune-devices-detectedapp-delete.md)|なし|[detectedApp](../resources/intune-devices-detectedapp.md) を削除します。|
+|[Delete detectedApp](../api/intune-devices-detectedapp-delete.md)|なし|[detectedApp](../resources/intune-devices-detectedapp.md) を削除します。|
 |[detectedApp の更新](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
 |displayName|String|検出されたアプリケーションの名前。 読み取り専用|
 |version|String|検出されたアプリケーションのバージョン。 読み取り専用|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
@@ -60,6 +60,7 @@ ms.locfileid: "30142435"
   "deviceCount": 1024
 }
 ```
+
 
 
 

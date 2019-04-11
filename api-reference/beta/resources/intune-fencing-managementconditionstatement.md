@@ -4,12 +4,12 @@ description: 管理条件ステートメントは、含まれている管理条�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41b696ee92b3098ea06c55c923fb3058706414ce
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a90d17bd56a2fbb957bdde5ba8b159baeb3ae2e9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167474"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773533"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementconditionstatement リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30167474"
 |displayName|String|管理条件ステートメントの管理者定義の名前。|
 |説明|String|管理条件ステートメントの管理者定義の説明。|
 |createdDateTime|DateTimeOffset|管理条件ステートメントが作成された時刻。 サービス側を生成しました。|
-|変更された日時|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
+|modifiedDateTime|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
 |式|[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
 |eTag|String|管理条件ステートメントの ETag。 サービス側を更新しました。|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。
@@ -73,6 +73,7 @@ ms.locfileid: "30167474"
   ]
 }
 ```
+
 
 
 
