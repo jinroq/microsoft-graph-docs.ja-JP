@@ -4,12 +4,12 @@ description: アイルランドでの映画の定格ラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59659848237dd75eea69aa93fb07badfc2434563
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2fd2468b3f6a1d17dfd2e6dd4ee3d088848fdeeb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139460"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794814"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>ratingIrelandMoviesType 列挙型
 
@@ -30,6 +30,7 @@ ms.locfileid: "30139460"
 |agesAbove15|5|15A 分類は、15才以上の閲覧者に適しています。|
 |agesAbove16|シックス|16以上の16の分類は、16才以上の閲覧者に適しています。|
 |保護者|7|18分類、成人向けにのみ適している|
+
 
 
 

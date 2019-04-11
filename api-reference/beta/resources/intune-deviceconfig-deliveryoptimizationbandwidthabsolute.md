@@ -4,12 +4,12 @@ description: 帯域幅制限 (キロバイト/秒)。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9eca95ad33ced19e437e760663a73158aacc25d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 791748adb7620ed23082a597d2b62855467a5048
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178270"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794093"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute リソースの種類
 
@@ -47,6 +47,7 @@ ms.locfileid: "30178270"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
+
 
 
 

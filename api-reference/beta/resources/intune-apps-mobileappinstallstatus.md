@@ -4,12 +4,12 @@ description: デバイス用のモバイルアプリのインストール状態�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91dbe509db57153aa325ecf80c508d8ec47f69b7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e71ebce532cf53528439be34937395837549f39
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162364"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792427"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus リソースの種類
 
@@ -32,18 +32,18 @@ ms.locfileid: "30162364"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceName|String|デバイス名|
-|deviceId|String|デバイス ID|
+|deviceName|文字列|[デバイス名]|
+|deviceId|文字列|デバイス ID|
 |lastSyncDateTime|DateTimeOffset|最終同期日時|
 |mobileAppInstallStatusValue|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
-|installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値は、`noAdditionalDetails`、`seeInstallErrorCode`、`seeUninstallErrorCode`、`pendingReboot`、`platformNotApplicable`、`minimumCpuSpeedNotMet`、`minimumLogicalProcessorCountNotMet`、`minimumPhysicalMemoryNotMet`、`minimumOsVersionNotMet`、`minimumDiskSpaceNotMet`、`processorArchitectureNotApplicable` です。|
+|installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|インストールまたはアンインストールの失敗のエラーコード。|
-|osVersion|String|OS のバージョン|
-|osDescription|String|OS の説明|
+|osVersion|文字列|OS のバージョン|
+|osDescription|文字列|OS の説明|
 |userName|String|デバイスのユーザー名|
-|userPrincipalName|文字列|ユーザー プリンシパル名|
-|displayversion|String|アプリケーションの人間の読み取り可能なバージョン|
+|userPrincipalName|String|ユーザー プリンシパル名|
+|displayversion|文字列|アプリケーションの人間の読み取り可能なバージョン|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -76,6 +76,7 @@ ms.locfileid: "30162364"
   "displayVersion": "String"
 }
 ```
+
 
 
 

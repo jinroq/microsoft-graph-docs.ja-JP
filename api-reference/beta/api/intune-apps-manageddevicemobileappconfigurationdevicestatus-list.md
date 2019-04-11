@@ -4,12 +4,12 @@ description: managedDeviceMobileAppConfigurationDeviceStatus オブジェクト�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6289173d36419b629c663c182b4b1459a8ec8afb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 137b7a5a3e0dc956984348521053f06b594e240c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958908"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793064"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>リスト managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -82,6 +82,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

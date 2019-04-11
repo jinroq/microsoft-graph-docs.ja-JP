@@ -4,12 +4,12 @@ description: android アプリのアクセス許可と android のアクショ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fec33b2600e88e6a4dfae644c335d9652c20abe0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161573"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792966"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidpermissionaction リソースの種類
 
@@ -22,8 +22,8 @@ android アプリのアクセス許可と android のアクションとの間の
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|アクセス許可|String|android のアクセス許可文字列。公式の android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
-|action|[androidpermissionactiontype](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
+|権|文字列|android のアクセス許可文字列。公式の android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
+|アクション|[androidpermissionactiontype](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -42,6 +42,7 @@ android アプリのアクセス許可と android のアクションとの間の
   "action": "String"
 }
 ```
+
 
 
 

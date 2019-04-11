@@ -4,12 +4,12 @@ description: 設定カテゴリを表すエンティティ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c373ef2bfa72bf08e6259ece1166b4e10101789
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 6af038e31135a99e473f6b14638655af073e1602
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522504"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794821"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>devicemanagementsettingcategory リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31522504"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[devicemanagementsettingcategories を一覧表示する](../api/intune-deviceintent-devicemanagementsettingcategory-list.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)コレクション|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementsettingcategory の取得](../api/intune-deviceintent-devicemanagementsettingcategory-get.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementsettingcategory の作成](../api/intune-deviceintent-devicemanagementsettingcategory-create.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|新しい[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトを作成します。|
+|[devicemanagementsettingcategory の取得](../api/intune-deviceintent-devicemanagementsettingcategory-get.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[devicemanagementsettingcategory の作成](../api/intune-deviceintent-devicemanagementsettingcategory-create.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|新しい[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトを作成します。|
 |[devicemanagementsettingcategory の削除](../api/intune-deviceintent-devicemanagementsettingcategory-delete.md)|なし|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)を削除します。|
-|[devicemanagementsettingcategory の更新](../api/intune-deviceintent-devicemanagementsettingcategory-update.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティを更新します。|
+|[devicemanagementsettingcategory の更新](../api/intune-deviceintent-devicemanagementsettingcategory-update.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -54,8 +54,6 @@ ms.locfileid: "31522504"
   "displayName": "String"
 }
 ```
-
-
 
 
 

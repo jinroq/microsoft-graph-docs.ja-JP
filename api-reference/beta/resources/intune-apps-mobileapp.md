@@ -4,12 +4,12 @@ description: Intune モバイル アプリの基本プロパティを含む抽�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94481902b7038ab9de9c845c938aac9bc9d409b9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: abc2a8c0f905d69b613ef12bca308d1d0f72d69c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154923"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794835"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
@@ -23,31 +23,34 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[mobileApps のリスト](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[MobileApp の取得](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[アクションの割り当て](../api/intune-apps-mobileapp-assign.md)|なし|まだ文書化されていません|
 |[getMobileAppCount 関数](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|まだ文書化されていません|
 |[getTopMobileApps 関数](../api/intune-apps-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|まだ文書化されていません|
+|[updateRelationships アクション](../api/intune-apps-mobileapp-updaterelationships.md)|なし|まだ文書化されていません|
+|[getの appstates 関数](../api/intune-apps-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
-|説明|文字列|アプリの説明。|
-|publisher|文字列型 (String)|アプリの発行元。|
+|説明|String|アプリの説明。|
+|publisher|文字列|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
 |isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。|
-|privacyInformationUrl|String|プライバシーに関する声明の URL。|
-|informationUrl|String|詳細情報の URL。|
-|owner|String|アプリの所有者。|
-|developer|String|アプリの開発者。|
+|privacyInformationUrl|文字列|プライバシーに関する声明の URL。|
+|informationUrl|文字列|詳細情報の URL。|
+|owner|文字列|アプリの所有者。|
+|developer|文字列|アプリの開発者。|
 |notes|String|アプリ用のメモ。|
 |uploadState|Int32|アップロード状態。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。|
+|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。|
+|dependentappcount|Int32|子アプリが持つ依存関係の合計数。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -57,6 +60,7 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
 |userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
+|関連性|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)コレクション|このモバイルアプリのリレーションシップのリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -91,9 +95,11 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
   "isAssigned": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "dependentAppCount": 1024
 }
 ```
+
 
 
 

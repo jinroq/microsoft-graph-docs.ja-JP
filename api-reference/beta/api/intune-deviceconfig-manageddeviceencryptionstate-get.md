@@ -4,12 +4,12 @@ description: manageddeviceencryptionstate オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a34b285661196fe94846753a49ad02a2edd95b68
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b1ff745c06149aa767555a95983e0b131b4419a6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974532"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794919"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>manageddeviceencryptionstate の取得
 
@@ -90,6 +90,7 @@ Content-Length: 762
   }
 }
 ```
+
 
 
 

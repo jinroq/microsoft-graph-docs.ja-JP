@@ -4,12 +4,12 @@ description: androidPkcsCertificateProfile オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43e896c0e5eb3f5dc143bb62806a61ba1b7a0b41
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bdf613cacaa261aae09e743033c879a7dffa4f6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972789"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794681"
 ---
 # <a name="get-androidpkcscertificateprofile"></a>androidPkcsCertificateProfile を取得する
 
@@ -101,6 +101,7 @@ Content-Length: 1203
   }
 }
 ```
+
 
 
 

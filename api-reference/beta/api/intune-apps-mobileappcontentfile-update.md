@@ -4,12 +4,12 @@ description: mobileAppContentFile オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48140f636a2c7d599d33e569633ef531db371f4d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d76eb5603020b62e8d93b9074374e0785a1a2584
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970073"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792532"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 
@@ -115,6 +115,7 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: ファイルアクティビティの監視に使用できる値。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d04d7a34de9c08c12d17c994381683c160bef1c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2888484f90bb3389fa7b7b12c79ce386d1bfd2db
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152592"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794331"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defendermonitorfileactivity 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30152592"
 |monitorallfiles|pbm-2|すべてのファイルを監視します。|
 |monitorIncomingFilesOnly|1/3| 受信ファイルのみを監視します。|
 |monitorOutgoingFilesOnly|2/4|送信ファイルのみを監視します。|
+
 
 
 

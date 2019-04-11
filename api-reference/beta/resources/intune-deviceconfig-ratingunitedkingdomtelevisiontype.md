@@ -4,12 +4,12 @@ description: 英国でのテレビコンテンツの評価のラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f048c9b34cc7cebbfe5a6caa21d6499ad8b8f45
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 670e593b13c880f699d8ba3c0101d453f5a9bbd7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794786"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 列挙型
 
@@ -24,7 +24,8 @@ ms.locfileid: "30158570"
 |:---|:---|:---|
 |allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
 |allblocked|1-d|すべてのテレビ番組の内容を許可しない|
-|caution|pbm-2|警告メッセージを使用してテレビの内容を許可する|
+|レーティング|pbm-2|警告メッセージを使用してテレビの内容を許可する|
+
 
 
 

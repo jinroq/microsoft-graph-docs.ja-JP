@@ -4,12 +4,12 @@ description: 新しい windows10CompliancePolicy オブジェクトを作成し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9af661ab4397c8096b45bea8fdd199d2c78b0bd1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 64649c1028a0ed7c4beca8ceb41eb683c25c8a27
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973867"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793582"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy の作成
 
@@ -50,10 +50,10 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|description|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -67,9 +67,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |requireHealthyDeviceReport|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
-|osMinimumVersion|String|Windows 10 の最小バージョン。|
+|osMinimumVersion|文字列|Windows 10 の最小バージョン。|
 |osMaximumVersion|文字列型 (String)|Windows 10 の最大バージョン。|
-|mobileOsMinimumVersion|String|Windows Phone の最小バージョン。|
+|mobileOsMinimumVersion|文字列|Windows Phone の最小バージョン。|
 |mobileOsMaximumVersion|String|Windows Phone の最大バージョン。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (早期起動マルウェア対策ドライバーが有効である) ことを要求します。|
 |bitLockerEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (BitLocker が有効である) ことを要求します。|
@@ -78,7 +78,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
 |activeFirewallRequired|Boolean|Windows デバイスでアクティブなファイアウォールが必要です。|
 |defenderenabled|Boolean|windows デバイスで windows Defender マルウェア対策を必須にする。|
-|defenderversion|String|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
+|defenderversion|文字列|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
 |signatureOutOfDate|Boolean|windows デバイスで windows Defender マルウェア対策の署名が最新の状態になっていることを要求します。|
 |rtpenabled|Boolean|windows デバイスで windows Defender マルウェア対策のリアルタイム保護を必要とします。|
 |antivirusRequired|Boolean|windows Decurity Center に登録されているウイルス対策ソリューション (Symantec、Windows Defender など) を必要とします。|
@@ -87,7 +87,6 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|デバイスの脅威保護で、コンプライアンス違反を報告するために最低限必要となるリスクレベル。 可能な値は `unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |configurationManagerComplianceRequired|Boolean|Intune コンプライアンスの状態を考慮に入れて SCCM コンプライアンスの状態を考慮する必要があります。|
-|tpmRequired|Boolean|トラステッドプラットフォームモジュール (TPM) が存在することを要求します。|
 
 
 
@@ -101,7 +100,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1690
+Content-length: 1666
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -147,8 +146,7 @@ Content-length: 1690
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
 
@@ -157,7 +155,7 @@ Content-length: 1690
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1862
+Content-Length: 1838
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -206,10 +204,10 @@ Content-Length: 1862
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
+
 
 
 

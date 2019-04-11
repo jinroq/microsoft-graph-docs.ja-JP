@@ -4,12 +4,12 @@ description: 安全な検索のレベル (アダルトコンテンツのフィ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 196131eb11efad25a4b2fa541bf1b20d85dda33e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 564e641fcdc7e0d06d48666881fc3bcedfe3505c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140174"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794730"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30140174"
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
 |厳格|1-d|アダルトコンテンツに対する厳密で最高のフィルタリング。|
 |多く|pbm-2|成人向けコンテンツに対するフィルター処理を中程度にする (有効な検索結果はフィルター処理されません)。|
+
 
 
 

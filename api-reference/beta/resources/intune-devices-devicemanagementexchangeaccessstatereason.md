@@ -4,12 +4,12 @@ description: デバイスの Exchange アクセス状態の理由。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c788a08e09816683ed575898ee5f36cba241a8bf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dab2b0b39290568331a16473fd6eaf7286ce5df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794401"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 列挙型
 
@@ -38,6 +38,7 @@ ms.locfileid: "30175263"
 |azureADBlockDueToAccessPolicy|第|AAD アクセスポリシーによって無効にされたアクセス状態|
 |compromisedPassword|約|侵害されたパスワードによって取り消されたアクセス状態|
 |devicenotknownwithmanagedapp|16|管理対象アプリケーションのチャレンジによって取り消されたアクセス状態|
+
 
 
 

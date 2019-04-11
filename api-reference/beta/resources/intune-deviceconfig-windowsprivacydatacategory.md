@@ -4,12 +4,12 @@ description: プライバシーデータにアクセスするための Windows �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3097ed916ec9f215880caf46bcdc02616ce5d2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89f9f74c61888e9acbf40f8059444d41cef8afae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154454"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792917"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 列挙型
 
@@ -30,10 +30,10 @@ ms.locfileid: "30154454"
 |デジタル|5|アプリでユーザーのデバイス上のカメラにアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |contacts|シックス|アプリでユーザーの連絡先情報にアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |diagnosticsInfo|7|アプリで、実行中の他のアプリケーションに関する診断情報にアクセスできるようにします。 Windows 10 バージョン1703で追加されました。|
-|email|~|アプリで電子メールにアクセスして送信できるようにします。 Windows 10 バージョン 1607 で追加されました。|
+|メール|~|アプリで電子メールにアクセスして送信できるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |location|i-9|アプリで、デバイスユーザーの正確な場所データにアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |ジング|個|アプリでメッセージ、テキスト、または MMS を読み取りまたは送信できるようにします。 Windows 10 バージョン 1607 で追加されました。|
-|microphone|#|アプリでユーザーデバイスのマイクを使用できるようにします。 Windows 10 バージョン 1607 で追加されました。|
+|マイク|#|アプリでユーザーデバイスのマイクを使用できるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |描く|個|アプリで、デバイスユーザーに生成されたモーションデータを使用できるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |受け取る|スリー|アプリでユーザーの通知にアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
 |phone|第|アプリで電話データにアクセスし、電話をかけることができます。 Windows 10 バージョン 1607 で追加されました。|
@@ -41,6 +41,7 @@ ms.locfileid: "30154454"
 |tasks|16|アプリでタスクスケジューラにアクセスできるようにします。 Windows 10 バージョン1703で追加されました。|
 |syncwithdevices|インチ|アプリで、ユーザーのデバイスと明示的にペアリングされていないワイヤレスデバイスとの情報を自動的に共有および同期することができます。 Windows 10 バージョン 1607 で追加されました。|
 |trusteddevices|個|アプリが信頼されたデバイスにアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
+
 
 
 

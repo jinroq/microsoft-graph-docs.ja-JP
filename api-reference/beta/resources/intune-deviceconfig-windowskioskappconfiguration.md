@@ -4,12 +4,12 @@ description: キオスク構成のアプリケーション情報を識別する�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c17119ef3ae4b128cef89549385b1bd01bedfe9e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 60b179a01f6dd3ada5b0c0b93a9fb85b12a6f23b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175172"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792868"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowskioskappconfiguration リソースの種類
 
@@ -38,6 +38,7 @@ ms.locfileid: "30175172"
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c401509315535e163b3a32224ee3a91ac67a15
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 95ed870849faebec289cd59ba9d58eee67d27fd9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145151"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794051"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30145151"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|まだ文書化されていません|
-|passwordRotationEnabled|ブール値|まだ文書化されていません|
+|passwordRotationEnabled|ブール型 (Boolean)|まだ文書化されていません|
 |calendarSyncEnabled|ブール型 (Boolean)|まだ文書化されていません|
 |deviceAccountEmail|String|まだ文書化されていません|
 |exchangeServer|String|まだ文書化されていません|
@@ -53,6 +53,7 @@ ms.locfileid: "30145151"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: wi-fi 認証方法。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 530265fc23a3ae94470779fb2b830aa6c677fb18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e3bc52b5f12eb3cc57f6e0b9db8b93a22c2c4ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146719"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792728"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod 列挙型
 
@@ -22,8 +22,9 @@ wi-fi 認証方法。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|証明書|.0|認証には、id 証明書を使用します。|
+|certificate|.0|認証には、id 証明書を使用します。|
 |usernameAndPassword|1-d|認証にユーザー名とパスワードを使用します。|
+
 
 
 

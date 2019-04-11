@@ -4,12 +4,12 @@ description: デバイスの正常性の監視の範囲
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bcaabcd960502bebc7b4bc37fee5a9d5c7870193
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: b5b471c98137594d685702257e679d44e7c2c120
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631574"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793890"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>windowsHealthMonitoringScope 列挙型
 
@@ -23,8 +23,9 @@ ms.locfileid: "30631574"
 |メンバー|値|説明|
 |:---|:---|:---|
 |undefined|.0|Undefined|
-|healthMonitoring|1|windows デバイスの正常性の監視に関する基本的なイベント|
-|bootperformance|2|ブートパフォーマンスイベント|
+|healthMonitoring|1-d|windows デバイスの正常性の監視に関する基本的なイベント|
+|bootperformance|pbm-2|ブートパフォーマンスイベント|
+
 
 
 

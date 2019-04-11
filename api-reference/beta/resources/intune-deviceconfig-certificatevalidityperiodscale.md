@@ -4,12 +4,12 @@ description: 証明書の有効期間のオプション。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c573605a0aa91955b52ea65e62af1ff326545374
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d83dc982743222fe409a28595ea9caa1725620ec
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170064"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794275"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30170064"
 |分|.0|日数|
 |ヶ|1-d|月数|
 |今後|pbm-2|年数|
+
 
 
 

@@ -4,12 +4,12 @@ description: androidWorkProfileWiFiConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f174f68f97fcbe7810044f4106ecc86a5769114f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 932fbfbf8f6254fa8637666637509e5fc9821647
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987476"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792504"
 ---
 # <a name="delete-androidworkprofilewificonfiguration"></a>androidWorkProfileWiFiConfiguration の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
