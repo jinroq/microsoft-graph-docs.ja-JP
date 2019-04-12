@@ -4,17 +4,17 @@ description: 指定したタブのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9aff620ce98b729d428ff15f303025d20a21caa3
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 1a864e6d31caa07eaa9f30bfddc22b40659a277b
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967005"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824396"
 ---
 # <a name="update-tab"></a>タブを更新する
 
 
-指定した[タブ](../resources/teamstab.md)のプロパティを更新します。タブのコンテンツを構成するのには、これを使用できます。
+指定した[タブ](../resources/teamstab.md)のプロパティを更新します。これは、タブのコンテンツを構成するために使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -40,11 +40,11 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [tab](../resources/teamstab.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [tab](../resources/teamstab.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。
+成功した場合、このメソッドは `200 OK` 応答コードを返します。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -60,7 +60,7 @@ Content-length: 211
 ```
 #### <a name="response"></a>応答
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
