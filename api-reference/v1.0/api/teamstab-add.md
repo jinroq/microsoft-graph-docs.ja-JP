@@ -4,12 +4,12 @@ description: 'チーム内で指定されたチャネルにタブを追加 (ピ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: cebb4f48a81fb25f2b4836955e8f002b06c69258
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b0beb699a52c2981166245e72d4d1c2361ac914c
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967271"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824403"
 ---
 # <a name="add-tab-to-channel"></a>チャネルへのタブの追加
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 OK` 応答コードを返します。
+成功した場合、このメソッドは `201 Created` 応答コードを返します。
 
 ## <a name="example"></a>例
 
