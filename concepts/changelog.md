@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e3f559671f375450cf792fe4bf0f4530a4a759d2
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 958f51c4324385ad19aca7b1abfcd8c7789ea712
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518603"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782143"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,35 @@ ms.locfileid: "31518603"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="april-2019"></a>2019 年 4 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)<br/><br/>[macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)<br/><br/>[mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta)<br/><br/>[mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta)<br/><br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[macOSKernelExtension](/graph/api/resources/intune-deviceconfig-macoskernelextension?view=graph-rest-beta)<br/><br/>[macOSLaunchItem](/graph/api/resources/intune-deviceconfig-macoslaunchitem?view=graph-rest-beta)<br/><br/>[mobileAppRelationshipState](/graph/api/resources/intune-apps-mobileapprelationshipstate?view=graph-rest-beta)<br/><br/>[win32LobAppFileSystemRequirement](/graph/api/resources/intune-apps-win32lobappfilesystemrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptRequirement](/graph/api/resources/intune-apps-win32lobapppowershellscriptrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRegistryRequirement](/graph/api/resources/intune-apps-win32lobappregistryrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRequirement](/graph/api/resources/intune-apps-win32lobapprequirement?view=graph-rest-beta)<br/><br/>|
+|追加|ベータ版|新しい列挙型を追加しました。<br/>[androidDeviceOwnerPlayStoreMode](/graph/api/resources/intune-deviceconfig-androiddeviceownerplaystoremode?view=graph-rest-beta)<br/><br/>[mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptDetectionType](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetectiontype?view=graph-rest-beta)<br/><br/>|
+|追加|ベータ版|[ updateRelationships ](/graph/api/intune-apps-mobileapp-updaterelationships?view=graph-rest-beta)を追加しました。<br/> [ mobileApp ](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)に対するアクション<br/> |
+|追加|ベータ版|[ importedWindowsAutopilotDeviceIdentity ](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)に**import **アクションを追加しました。<br/> コレクション |
+|追加|ベータ版|[ getRelatedAppStates ](/graph/api/intune-apps-mobileapp-getrelatedappstates?view=graph-rest-beta)を追加しました。<br/> [mobileApp ](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)の機能<br/> |
+|追加|ベータ版|**kioskModeBluetoothConfigurationEnabled**, **kioskModeWiFiConfigurationEnabled**, **passwordMinimumLetterCharacters**, **passwordMinimumLowerCaseCharacters**, **passwordMinimumNonLetterCharacters**, **passwordMinimumNumericCharacters**, **passwordMinimumSymbolCharacters**, **passwordMinimumUpperCaseCharacters** および[androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)への**playStoreMode**プロパティを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ androidForWorkCertificateProfileBase ](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta)に** subjectAlternativeNameType **プロパティを追加しました。<br/> エンティティ|
+|削除|ベータ版|[ androidForWorkPkcsCertificateProfile ](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta)から** subjectAlternativeNameType **プロパティーを削除しました。<br/> エンティティ|
+|削除|ベータ版|[ androidForWorkScepCertificateProfile ](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta)から** subjectAlternativeNameType **プロパティーを削除しました。<br/> エンティティ|
+|追加|ベータ版|[ androidWorkProfileCertificateProfileBase ](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)に** subjectAlternativeNameType **プロパティを追加しました。<br/> エンティティ|
+|削除|ベータ版|[ androidWorkProfilePkcsCertificateProfile ](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)から** subjectAlternativeNameType **プロパティーを削除しました<br/> エンティティ|
+|削除|ベータ版|[ androidWorkProfileScepCertificateProfile ](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)から** subjectAlternativeNameType **プロパティーを削除しました。<br/> エンティティ|
+|追加|ベータ版|[ depEnrollmentBaseProfile ](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)に** deviceNameTemplate **プロパティーを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ importedWindowsAutopilotDeviceIdentity ](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)に** importId **プロパティーを追加しました。<br/> エンティティ|
+|追加|ベータ版|**autoLaunchItems**, **adminShowHostInfo**, **loginWindowText**, **authorizedUsersListHidden**, **authorizedUsersListHideLocalUsers**, **authorizedUsersListHideMobileAccounts**, **authorizedUsersListIncludeNetworkUsers**, **authorizedUsersListHideAdminUsers**, **authorizedUsersListShowOtherManagedUsers**, **shutDownDisabled**, **restartDisabled**, **sleepDisabled**, **consoleAccessDisabled**, **shutDownDisabledWhileLoggedIn**, **restartDisabledWhileLoggedIn**, **powerOffDisabledWhileLoggedIn**, **logOutDisabledWhileLoggedIn**および[macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)への**screenLockDisableImmediate**プロパティを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ mobileApp ](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)に** dependentAppCount **プロパティーを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ win32LobApp ](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta)に** requirementsRules **プロパティーを追加しました。<br/> エンティティ|
+|削除|ベータ版|[ windows10CompliancePolicy ](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)から** tpmRequired **プロパティーを削除しました。<br/> エンティティ|
+|追加|ベータ版|[ windowsAutopilotDeviceIdentity ](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta)に** groupTag **プロパティーを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ managedDevice ](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)に** users **ナビゲーションプロパティーを追加しました。<br/> エンティティ|
+|追加|ベータ版|[mobileApp ](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)に**relationships**ナビゲーションプロパティを追加しました。<br/> エンティティ|
+|追加|ベータ版|[ intuneBrand ](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)に** customPrivacyMessage **プロパティーを追加しました。<br/> 複合型|
+|追加|ベータ版|**dependencyFailedToInstall**, **dependencyWithRequirementsNotMet**, **dependencyPendingReboot**, **dependencyWithAutoInstallDisabled**, **autoInstallDisabled**, **installingDependencies**, **powerShellScriptRequirementNotMet**, **registryRequirementNotMet**および[resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)への **fileSystemRequirementNotMet**メンバーを追加しました。<br/> enum type|
+|追加|ベータ版|[ win32LobAppFileSystemDetectionType ](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta)に** doesNotExist **メンバーを追加しました。<br/> enum type|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|
@@ -1143,7 +1172,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加        | v1.0          | **locations** プロパティを [event](/graph/api/resources/event?view=graph-rest-1.0) エンティティに追加しました。これにより、出席者が複数の場所から出席できるイベントを開催できるようになりました。 |
 | 追加        | v1.0          | **locationType** プロパティを [location](/graph/api/resources/location?view=graph-rest-1.0) 複合型に追加しました。 |
-| 追加        | v1.0          | **uniqueId** および **uniqueIdType** プロパティを [location](/graph/api/resources/location?view=graph-rest-1.0) 複合型に追加しました。 これらのプロパティは、現時点では内部使用に限られます。 |
+| 追加        | v1.0          | **uniqueId** および **uniqueIdType** プロパティが [location](/graph/api/resources/location?view=graph-rest-1.0) 複合型に追加されました。 これらのプロパティは、現時点では内部使用に限られます。 |
 
 
 ### <a name="outlook-contacts"></a>Outlook の連絡先
@@ -2413,7 +2442,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:----------|:--------------|
-| 変更 | ベータ版 | **Sharepoint** のナビゲーション プロパティを削除しました。サイトは、**sites** ナビゲーション プロパティから直接アクセスできるようになりました。 <br/> **fieldDefinition** リソースを削除しました。これは既に **columnDefinition** に置き換えられています。 <br/> **siteCollectionId** および **siteId** プロパティを **site** から削除しました。代わりに **sharepointIds** を使用します。 <br/> **listItemId** プロパティを **listItem** から削除しました。代わりに **sharepointIds** を使用します。 <br/> **listItem** の **columnSet** プロパティの名前を **fields** に変更しました。 <br/> **site** リソースを、ID の一部に SharePoint ホスト名を使用するように変更しました。
+| 変更 | ベータ版 | **Sharepoint** のナビゲーション プロパティを削除しました。サイトは、**sites** ナビゲーション プロパティから直接アクセスできるようになりました。<br/> **fieldDefinition** リソースを削除しました。これは既に **columnDefinition** に置き換えられています。<br/> **siteCollectionId** および **siteId** プロパティを **site** から削除しました。代わりに **sharepointIds** を使用します。<br/> **listItemId** プロパティを **listItem** から削除しました。代わりに **sharepointIds** を使用します。<br/> **listItem** の **columnSet** プロパティの名前を **fields** に変更しました。 <br/> **site** リソースを、ID の一部に SharePoint ホスト名を使用するように変更しました。
 | 追加 | ベータ版 | **booleanColumn**、**calculatedColumn**、**choiceColumn**、**dateTimeColumn**、**lookupColumn**、**numberColumn**、**personOrGroupColumn**、および **textColumn** リソース型を追加しました。 <br/> **displayName** プロパティを **site** に追加しました。 <br/> **columns** ナビゲーション プロパティを **site** に追加しました。 <br/> **list** および **listItem** ナビゲーション プロパティを **sharedDriveItem** に追加しました。 <br/> **sharepointIds** プロパティを **list** と **listItem**、および **site** に追加しました。 <br/> **columnDefinition** リソース型を追加しました。
 
 
@@ -2618,7 +2647,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 変更          | v1.0 およびベータ版 | 「Office 365 のデータ拡張機能」というこれまでの名称が「オープン拡張機能」に変更されました。 |
-| 追加        | ベータ版          | [オープン拡張機能](extensibility-overview.md#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>グループ<br/>組織<br/>ユーザー<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility-open-users.md) |
+| 追加        | ベータ版          | [オープン拡張機能](extensibility-overview.md#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>group<br/>組織<br/>ユーザー<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility-open-users.md) |
 
 ### <a name="directory-apis"></a>ディレクトリ API
 

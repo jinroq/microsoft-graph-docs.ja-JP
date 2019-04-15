@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
-description: Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。 人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。 この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。
-ms.date: 12/04/2018
+description: 'Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 '
+ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 40c916de42cf8d3b56bf56ee07b3f1ae045a7557
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966980"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797145"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 
@@ -937,7 +937,7 @@ Content-type: application/json
 
 ### <a name="perform-a-fuzzy-search"></a>あいまい検索の実行
 
-検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。 次の検索ではすべて、このユーザー Tyler が検索結果として返されます。
+検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、表示名が "Tyler Lee"、電子メールアドレスtylerle@example.comが、サインインユーザーの**people**集団に属しているとします。 次の検索ではすべて、このユーザー、Tyler が検索結果として返されます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
@@ -946,3 +946,32 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+### <a name="working-with-feature-implementation"></a>機能の実装を扱う
+ 
+その人たちをプロフィール所有者のリストに出すためには、プロフィール所有者とその他の人との間に登録上の関係性がなければいけません。 次の図は、ユーザーA、他のユーザー（ユーザーB）との関係性の見出し、およびユーザー関係の一部分を示すパブリックプロファイルを示しています。
+
+![関係図構築のイメージ](images/working-with.png)
+ 
+以下は、登録関係の例です。
+
+- 組織図で接続されている個人：部長、直属の部下、同僚（同じマネージャーを共有） 
+- 30人未満の公開グループまたは配布リストのメンバー。 公開グループは、ディレクトリ内に利用可能なメンバーシップ一覧を持ちます。
+ 
+プロファイルの所有者が他のユーザーと通信していて、そのユーザーと組織図の接続やグループの共有などの登録上の関係がない場合、彼らが通信しているという事実は他のユーザーには見えません。
+
+人のランク付け、つまり、プロファイル所有者のページに表示される順序は、プロファイル所有者とリスト上の人物との間の公開および非公開のコミュニケーションによって決まります。
+ 
+非公開コミュニケーションの例は次のとおりです。
+- 相手の名前がTO行にあり、互いに電子メールを送信する場合
+- カレンダーの招待状に自分の名前を入れ、ユーザーを会議に招待する 
+ 
+公開インタラクションの例は以下のとおりです。
+- 公開グループの一員としての電子メールの送受信 
+- グループの一部として、または○○人以上が招待されている場所でユーザーを会議に招待する
+ 
+一覧は、ユーザーAが誰であるか（他のユーザーのページを見ている人）に基づいて変わることはありません。 一覧は、ユーザーB（プロファイル所有者）とユーザーC（プロファイル所有者リストに表示されている人）の間のインタラクションレベルによって決まります。
+ 
+ユーザーCが表示されるようにするには、プロファイル所有者が、そのユーザーが公開されている比較的小さなグループ/ DLに属している（つまり、メンバーシップリストがディレクトリで利用可能であるということ）必要があります。
+ 
+組織の外部の人は、プロファイル所有者のリストに表示されません。 電子メールを送ったり、会ったりするものの、同じ組織の一員ではない人は、[Working with]セクションには表示されません。

@@ -4,12 +4,12 @@ description: " Office 365 のエンタープライズ ノートブック"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 883833bccd4663be4d62cbbd46ce7f2a2a471b4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
+ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945035"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31751572"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Microsoft Graph によって OneNote コンテンツと構造を取得する
 
@@ -156,15 +156,13 @@ JSON 応答には、ページに含まれているものを特定するために
 
 ページの HTML コンテンツを取得する。
 
-`../pages/{page-id}/content[?includeIDs,preAuthenticated]`
+`../pages/{page-id}/content[?includeIDs]`
 
 (*[返される HTML コンテンツ](onenote-input-output-html.md)の詳細についてはリンク先をご覧ください*) 
 
 <br/>
 
 **includeIDs=true** クエリ文字列オプションを使用して、[ページを更新](onenote-update-page.md)するために使用する生成 ID を取得します。
-
-**preAuthenticated=true** クエリ文字列オプションを使用して、ページ上の[画像リソース](#image-or-other-file-resource)のパブリック URL を取得します。パブリック URL は 1 時間有効です。 
 
 
 
@@ -319,8 +317,6 @@ JSON 応答には、ページに含まれているものを特定するために
     type="application/pdf" ... />
 ```
 
-ページにある画像リソースへの事前認証された公開 URL を取得するには、[ページのコンテンツを取得する](#page-html-content)際にクエリ文字列に `preAuthenticated=true` を含めます (**例:**  `GET ../pages/{page-id}/content?preAuthenticated=true`)。 [出力 HTML](onenote-input-output-html.md#output-html-examples-for-images) に返されるパブリック URL は 1 時間有効です。 このフラグを設定していない場合、取得された画像は非公開で、またページのコンテンツの残りの部分と同様、それらを取得するために承認を必要とするため、ブラウザーで直接レンダリングすることはありません。 
-
 > **注:** リソースのコレクションの取得はサポートされていません。 
 
 ファイル リソースを取得する場合、**Accept** コンテンツ タイプを要求に含める必要はありません。
@@ -328,8 +324,8 @@ JSON 応答には、ページに含まれているものを特定するために
 GET 要求の詳細については、Microsoft Graph API REST リファレンスの中の次のリソースを参照してください。
 
 - [ページを取得する](/graph/api/page-get?view=graph-rest-1.0)
-- [Get section](/graph/api/section-get?view=graph-rest-1.0)
-- [Get sectionGroup](/graph/api/sectiongroup-get?view=graph-rest-1.0)
+- [セクションを取得する](/graph/api/section-get?view=graph-rest-1.0)
+- [sectionGroup を取得する](/graph/api/sectiongroup-get?view=graph-rest-1.0)
 - [ノートブックを取得する](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
@@ -341,7 +337,7 @@ GET 要求の詳細については、Microsoft Graph API REST リファレンス
 
 OneNote のエンティティおよび検索ページ コンテンツを照会して、必要な情報だけを取得することができます。 次の例は、Microsoft Graph への GET 要求で、[サポートされているクエリ文字列オプション](#supported-odata-query-string-options)を使用するいくつかの方法を示しています。 
 
-**次の点にご注意ください。**
+**次の点に注意してください。**
 
 - GET 要求はすべて、[サービス ルート URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) で始まります。 <br/><br/>**例**: `https://www.onenote.com/api/v1.0/me/notes` および `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
@@ -547,7 +543,7 @@ OneNote のエンティティおよび検索ページ コンテンツを照会�
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **注:** 既定のエントリ数を取得する pages に対する GET 要求 (つまり、**top** 式を指定しない要求) は、応答で次の 20 エントリを取得するために使用できる **@odata.nextLink** リンクを戻します。
+> **注:** 既定のエントリ数を取得する pages に対する GET 要求 (つまり、**top** 式を指定しない要求) は、応答で次の 20 エントリを取得するために使用できる **@odata.nextLink** リンクを返します。
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -560,7 +556,7 @@ Microsoft Graph に GET 要求を送信する場合、OData クエリ文字列�
  
 | クエリ オプション | 例と説明 |  
 |------|------|  
-| count | <p>`count=true`</p><p>コレクション内のエンティティのカウントです。この値は、応答の **@odata.count** プロパティで戻ります。</p> |  
+| count | <p>`count=true`</p><p>コレクション内のエンティティのカウントです。 この値は、応答の **@odata.count** プロパティで返されます。</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>応答でインラインを返すナビゲーション プロパティ。**expand** 式には次のプロパティがサポートされています。<br /> - ページ: **parentNotebook**、**parentSection**<br /> - セクション: **parentNotebook**、**parentSectionGroup**<br /> - セクション グループ: **sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - ノートブック: **sections**、**sectionGroups**</p><p>既定では、ページの GET 要求は **parentSection** を展開し、セクションの **id**、**name**、**self** の各プロパティを選択します。セクションとセクションのグループの既定の GET 要求は **parentNotebook** と **parentSectionGroup** の両方を展開し、親の **id**、**name**、**self** の各プロパティを選択します。</p><p>1 つのエンティティまたはコレクションに使用できます。<br />コンマを使用して複数のプロパティを区切ります。<br />プロパティ名では、大文字と小文字を区別します。</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>結果セットの入力に含めるかどうかを決めるブール式。サポートされている OData 演算子と関数:<br /> - 比較演算子: **eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 論理演算子: **and**、**or**、**not**<br /> - 文字列関数: **contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[プロパティ](#onenote-entity-properties)名と OData 文字列比較では大文字と小文字が区別されます。 文字列比較には OData **tolower** 関数を使用することをお勧めします。<br /><br />**例**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>並べ替え基準を示す[プロパティ](#onenote-entity-properties)です。オプションで、**asc** (既定) または **desc** 並べ替え順序を指定します。要求対象コレクション内のエンティティの任意のプロパティで並べ替えが可能です。</p><p>ノートブック、セクション グループ、セクションの既定の並べ替え順序は `name asc` で、ページの場合には `lastModifiedTime desc` (最新の変更ページが先頭になります)。</p><p>複数のプロパティはコンマで区切り、任意の順序で一覧表示します。 プロパティ名では、大文字と小文字を区別します。</p> |  
@@ -633,8 +629,8 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 プロパティとプロパティの種類の一覧については、Microsoft Graph API REST リファレンスの中の次のリソースを参照してください。
 
 - [ページを取得する](/graph/api/page-get?view=graph-rest-1.0)
-- [Get section](/graph/api/section-get?view=graph-rest-1.0)
-- [Get sectionGroup](/graph/api/sectiongroup-get?view=graph-rest-1.0)
+- [セクションを取得する](/graph/api/section-get?view=graph-rest-1.0)
+- [sectionGroup を取得する](/graph/api/sectiongroup-get?view=graph-rest-1.0)
 - [ノートブックを取得する](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
@@ -654,8 +650,8 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 | 要求データ | 説明 |  
 |------|------|  
 | プロトコル | すべての要求は SSL/TLS HTTPS プロトコルを使用します。 |  
-| 承認ヘッダー | <p>`Bearer {token}`。`{token}` は、登録済みアプリの有効な OAuth 2.0 アクセス トークンです。</p><p>これがないか、無効の場合、401 ステータス コードで要求は失敗します。「[認証とアクセス許可](permissions-reference.md)」を参照してください。</p> |  
-| Accept ヘッダー | <p> OneNote エンティティとエンティティ セットの場合、`application/json`</p><p> ページ コンテンツの場合、`text/html`</p> | 
+| 承認ヘッダー | <p>`Bearer {token}``{token}` は、登録済みアプリの有効な OAuth 2.0 アクセス トークンです。</p><p>これがないか、無効の場合、401 ステータス コードで要求は失敗します。「[認証とアクセス許可](permissions-reference.md)」を参照してください。</p> |  
+| Accept ヘッダー | <p> `application/json` OneNote エンティティとエンティティ セットの場合</p><p> `text/html` ページ コンテンツの場合</p> | 
 
 <br/>
 
@@ -663,7 +659,7 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 |------|------|  
 | 成功コード | 200 HTTP ステータス コード。 |  
 | 応答本文 | JSON 形式のエンティティまたはエンティティ セット、ページ HTML、またはファイル リソースのバイナリ データの OData 表現。  |  
-| エラー | 要求が失敗すると、API は応答本文の **@api.diagnostics** オブジェクトに[エラー](onenote-error-codes.md)を返します。 |  
+| エラー | 要求が失敗すると、API は応答本文の **@api.diagnostics** に[エラー](onenote-error-codes.md)を返します。 |  
 | X-CorrelationId ヘッダー | 要求を一意に識別する GUID。Microsoft サポートと問題のトラブルシューティングを行う際に、この値を Date ヘッダーの値とともに使用できます。 |  
 
 
@@ -703,5 +699,5 @@ OneNote のコンテンツまたは構造を取得するには、適切なアク
 - [OneNote ページの入出力 HTML](onenote-input-output-html.md)
 - [OneNote との統合](integrate-with-onenote.md)
 - [OneNote の開発者ブログ](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Stack Overflow 掲載の OneNote の開発に関する質問](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [スタック オーバーフローに関する OneNote の開発の質問](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub のリポジトリ](https://go.microsoft.com/fwlink/?LinkID=390178)  
