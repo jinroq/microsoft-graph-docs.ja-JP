@@ -1,41 +1,41 @@
 ---
 title: Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
-description: Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。 人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。 この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。
-ms.date: 12/04/2018
+description: 'Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 '
+ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 40c916de42cf8d3b56bf56ee07b3f1ae045a7557
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966980"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797145"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="5c38d-106">Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得</span><span class="sxs-lookup"><span data-stu-id="5c38d-106">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
+# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="95a6b-103">Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得</span><span class="sxs-lookup"><span data-stu-id="95a6b-103">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
 
-<span data-ttu-id="5c38d-p102">Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。People API は、電子メールの作成や会議の作成などのシナリオを選択するユーザーに特に便利です。たとえば、電子メール作成のシナリオで People API を使用できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p102">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
+<span data-ttu-id="95a6b-p101">Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。People API は、電子メールの作成や会議の作成などのシナリオを選択するユーザーに特に便利です。たとえば、電子メール作成のシナリオで People API を使用できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p101">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="5c38d-113">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c38d-113">Authorization</span></span>
+## <a name="authorization"></a><span data-ttu-id="95a6b-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="95a6b-110">Authorization</span></span>
 
-<span data-ttu-id="5c38d-114">Microsoft Graph で People API を呼び出すには、アプリに適切なアクセス許可が必要になります。</span><span class="sxs-lookup"><span data-stu-id="5c38d-114">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
+<span data-ttu-id="95a6b-111">Microsoft Graph で People API を呼び出すには、アプリに適切なアクセス許可が必要になります。</span><span class="sxs-lookup"><span data-stu-id="95a6b-111">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
 
-* <span data-ttu-id="5c38d-p103">People.Read - 一般的な People API の呼び出し (例: `https://graph.microsoft.com/v1.0/me/people/`) の作成に使用します。People.Read には、エンド ユーザーの同意が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p103">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
-* <span data-ttu-id="5c38d-117">People.Read.All - サインインしているユーザーの組織 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) の呼び出しで、特定のユーザーに最も関連性のあるユーザーを取得するために必要です。</span><span class="sxs-lookup"><span data-stu-id="5c38d-117">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls.</span></span> <span data-ttu-id="5c38d-118">People.Read.All には、管理者の同意が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c38d-118">People.Read.All requires admin consent.</span></span>
+* <span data-ttu-id="95a6b-p102">People.Read - 一般的な People API の呼び出し (例: `https://graph.microsoft.com/v1.0/me/people/`) の作成に使用します。People.Read には、エンド ユーザーの同意が必要です。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p102">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
+* <span data-ttu-id="95a6b-114">People.Read.All - サインインしているユーザーの組織 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) の呼び出しで、特定のユーザーに最も関連性のあるユーザーを取得するために必要です。</span><span class="sxs-lookup"><span data-stu-id="95a6b-114">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls.</span></span> <span data-ttu-id="95a6b-115">People.Read.All には、管理者の同意が必要です。</span><span class="sxs-lookup"><span data-stu-id="95a6b-115">People.Read.All requires admin consent.</span></span>
 
-## <a name="browse-people"></a><span data-ttu-id="5c38d-119">人物の参照</span><span class="sxs-lookup"><span data-stu-id="5c38d-119">Browse people</span></span>
+## <a name="browse-people"></a><span data-ttu-id="95a6b-116">人物の参照</span><span class="sxs-lookup"><span data-stu-id="95a6b-116">Browse people</span></span>
 
-<span data-ttu-id="5c38d-p105">このセクションの要求では、サインインしているユーザー (`/me`)、またはサインインしているユーザーの組織内の特定のユーザーと最も関連性の高い人物を取得します。これらの要求には People.Read または People.Read.All アクセス許可が必要です。既定では、応答ごとに 10 件のレコードが返されますが、これは *$top* クエリ パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p105">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
+<span data-ttu-id="95a6b-p104">このセクションの要求では、サインインしているユーザー (`/me`)、またはサインインしているユーザーの組織内の特定のユーザーと最も関連性の高い人物を取得します。これらの要求には People.Read または People.Read.All アクセス許可が必要です。既定では、応答ごとに 10 件のレコードが返されますが、これは *$top* クエリ パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p104">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
 
-### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="5c38d-123">関連する人物のコレクションの取得</span><span class="sxs-lookup"><span data-stu-id="5c38d-123">Get a collection of relevant people</span></span>
+### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="95a6b-120">関連する人物のコレクションの取得</span><span class="sxs-lookup"><span data-stu-id="95a6b-120">Get a collection of relevant people</span></span>
 
-<span data-ttu-id="5c38d-124">次に示す要求では、コミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップに基づいて、サインインしているユーザーに最も関連のある人物を取得します (`/me`)。</span><span class="sxs-lookup"><span data-stu-id="5c38d-124">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
+<span data-ttu-id="95a6b-121">次に示す要求では、コミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップに基づいて、サインインしているユーザーに最も関連のある人物を取得します (`/me`)。</span><span class="sxs-lookup"><span data-stu-id="95a6b-121">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-<span data-ttu-id="5c38d-p106">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* クエリ パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p106">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p105">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* クエリ パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p105">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -152,15 +152,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="5c38d-129">人物の続きのページの要求</span><span class="sxs-lookup"><span data-stu-id="5c38d-129">Request a subsequent page of people</span></span>
+### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="95a6b-126">人物の続きのページの要求</span><span class="sxs-lookup"><span data-stu-id="95a6b-126">Request a subsequent page of people</span></span>
 
-<span data-ttu-id="5c38d-p107">最初の応答に関連のある人物のリストを完全に含められない場合は、追加の情報ページを要求するために、*$top* と *$skip* を使用して 2 番目の要求を行うことができます。前の要求に追加情報が含まれている場合は、次の要求でサーバーから人物についての後続ページを取得します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p107">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
+<span data-ttu-id="95a6b-p106">最初の応答に関連のある人物のリストを完全に含められない場合は、追加の情報ページを要求するために、*$top* と *$skip* を使用して 2 番目の要求を行うことができます。前の要求に追加情報が含まれている場合は、次の要求でサーバーから人物についての後続ページを取得します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p106">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=3&$skip=10
 ```
 
-<span data-ttu-id="5c38d-p108">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* クエリ パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p108">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p107">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* クエリ パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p107">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -277,15 +277,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="sort-the-response"></a><span data-ttu-id="5c38d-136">応答の並べ替え</span><span class="sxs-lookup"><span data-stu-id="5c38d-136">Sort the response</span></span>
+### <a name="sort-the-response"></a><span data-ttu-id="95a6b-133">応答の並べ替え</span><span class="sxs-lookup"><span data-stu-id="95a6b-133">Sort the response</span></span>
 
-<span data-ttu-id="5c38d-p109">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。このクエリでは、自分に最も関連のある人物を選択し、その人物を **displayName** で並べ替えてから、最初の 10 人の人物を並べ替え済みのリストで返します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p109">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
+<span data-ttu-id="95a6b-p108">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。このクエリでは、自分に最も関連のある人物を選択し、その人物を **displayName** で並べ替えてから、最初の 10 人の人物を並べ替え済みのリストで返します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p108">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
-<span data-ttu-id="5c38d-p110">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。次の例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p110">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p109">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。次の例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p109">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -402,17 +402,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="5c38d-144">返される人物の数とフィールド数の変更</span><span class="sxs-lookup"><span data-stu-id="5c38d-144">Change the number of people and fields returned</span></span>
+### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="95a6b-141">返される人物の数とフィールド数の変更</span><span class="sxs-lookup"><span data-stu-id="95a6b-141">Change the number of people and fields returned</span></span>
 
-<span data-ttu-id="5c38d-145">応答で返される人物の数は、*$top* パラメーターを設定することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-145">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
+<span data-ttu-id="95a6b-142">応答で返される人物の数は、*$top* パラメーターを設定することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-142">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
 
-<span data-ttu-id="5c38d-p111">次に示す例では、`/me` に最も関連のある 1,000 人の人物を要求します。また、この要求では、人物の **displayName** のみを要求することで、サーバーから返されるデータの量も制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p111">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
+<span data-ttu-id="95a6b-p110">次に示す例では、`/me` に最も関連のある 1,000 人の人物を要求します。また、この要求では、人物の **displayName** のみを要求することで、サーバーから返されるデータの量も制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p110">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$Select=displayName
 ```
 
-<span data-ttu-id="5c38d-148">次の例は応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-148">The following example shows the response.</span></span>
+<span data-ttu-id="95a6b-145">次の例は応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-145">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -476,17 +476,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return"></a><span data-ttu-id="5c38d-149">返されるフィールドの選択</span><span class="sxs-lookup"><span data-stu-id="5c38d-149">Select the fields to return</span></span>
+### <a name="select-the-fields-to-return"></a><span data-ttu-id="95a6b-146">返されるフィールドの選択</span><span class="sxs-lookup"><span data-stu-id="95a6b-146">Select the fields to return</span></span>
 
-<span data-ttu-id="5c38d-p112">サーバーから返されるデータの量は、1 つ以上のフィールドを選択する *$select* パラメーターを使用することで制限できます。`@odata.id` フィールドは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p112">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
+<span data-ttu-id="95a6b-p111">サーバーから返されるデータの量は、1 つ以上のフィールドを選択する *$select* パラメーターを使用することで制限できます。`@odata.id` フィールドは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p111">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
 
-<span data-ttu-id="5c38d-152">次に示す例では、最も関連のある 10 人の人物の **displayName** と **scoredEmailAddresses** に応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-152">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
+<span data-ttu-id="95a6b-149">次に示す例では、最も関連のある 10 人の人物の **displayName** と **scoredEmailAddresses** に応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-149">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
-<span data-ttu-id="5c38d-p113">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p112">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p112">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -528,17 +528,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="5c38d-157">フィルターを使用した応答の制限</span><span class="sxs-lookup"><span data-stu-id="5c38d-157">Use a filter to limit the response</span></span>
+### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="95a6b-154">フィルターを使用した応答の制限</span><span class="sxs-lookup"><span data-stu-id="95a6b-154">Use a filter to limit the response</span></span>
 
-<span data-ttu-id="5c38d-158">*$filter* パラメーターを使用すると、指定した条件に等しいレコードを持つ人物のみに応答を制限できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-158">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
+<span data-ttu-id="95a6b-155">*$filter* パラメーターを使用すると、指定した条件に等しいレコードを持つ人物のみに応答を制限できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-155">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
 
-<span data-ttu-id="5c38d-159">次のクエリは、**class** として **person**、**subclass** として **organizationUser** が割り当てられている **personType** プロパティを持つ **person** インスタンスへの応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-159">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
+<span data-ttu-id="95a6b-156">次のクエリは、**class** として **person**、**subclass** として **organizationUser** が割り当てられている **personType** プロパティを持つ **person** インスタンスへの応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-156">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
-<span data-ttu-id="5c38d-p114">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p114">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p113">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -655,17 +655,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="5c38d-164">フィルター処理された応答で返されるフィールドを選択する</span><span class="sxs-lookup"><span data-stu-id="5c38d-164">Select the fields to return in a filtered response</span></span>
+### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="95a6b-161">フィルター処理された応答で返されるフィールドを選択する</span><span class="sxs-lookup"><span data-stu-id="95a6b-161">Select the fields to return in a filtered response</span></span>
 
-<span data-ttu-id="5c38d-165">*$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-165">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
+<span data-ttu-id="95a6b-162">*$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-162">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
 
-<span data-ttu-id="5c38d-p115">次の例では、指定した名前と等しい表示名を持つ人物の **displayName** と **scoredEmailAddresses** を取得します。この例では、表示名が "Lorrie Frye" と等しい人物のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p115">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
+<span data-ttu-id="95a6b-p114">次の例では、指定した名前と等しい表示名を持つ人物の **displayName** と **scoredEmailAddresses** を取得します。この例では、表示名が "Lorrie Frye" と等しい人物のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p114">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
 ```
 
-<span data-ttu-id="5c38d-168">次の例は応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-168">The following example shows the response.</span></span>
+<span data-ttu-id="95a6b-165">次の例は応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-165">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -687,17 +687,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="5c38d-169">他のユーザーの関連する人物の参照</span><span class="sxs-lookup"><span data-stu-id="5c38d-169">Browse another user’s relevant people</span></span>
+### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="95a6b-166">他のユーザーの関連する人物の参照</span><span class="sxs-lookup"><span data-stu-id="95a6b-166">Browse another user’s relevant people</span></span>
 
-<span data-ttu-id="5c38d-170">次の要求は、サインインしているユーザーの組織内の他の人物と最も関連のある人物を取得します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-170">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="5c38d-171">この要求には People.Read.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c38d-171">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="5c38d-172">上記のセクションで説明されているすべてのクエリ パラメーターに適用されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-172">All the query parameters described in the above sections apply as well.</span></span>
+<span data-ttu-id="95a6b-167">次の要求は、サインインしているユーザーの組織内の他の人物と最も関連のある人物を取得します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-167">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="95a6b-168">この要求には People.Read.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="95a6b-168">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="95a6b-169">上記のセクションで説明されているすべてのクエリ パラメーターに適用されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-169">All the query parameters described in the above sections apply as well.</span></span>
 
-<span data-ttu-id="5c38d-173">この例では、Roscoe Seidel の関連する人物が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-173">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
+<span data-ttu-id="95a6b-170">この例では、Roscoe Seidel の関連する人物が表示されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-170">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-<span data-ttu-id="5c38d-p117">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。次に示す例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p117">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p116">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。次に示す例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p116">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -814,21 +814,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="search-people"></a><span data-ttu-id="5c38d-178">人物の検索</span><span class="sxs-lookup"><span data-stu-id="5c38d-178">Search people</span></span>
+## <a name="search-people"></a><span data-ttu-id="95a6b-175">人物の検索</span><span class="sxs-lookup"><span data-stu-id="95a6b-175">Search people</span></span>
 
-<span data-ttu-id="5c38d-p118">このセクションの要求では、サインインしているユーザー (`/me`) とサインインしているユーザーの組織内の他のユーザーに関連する人物を検索できます。これらの要求には People.Read アクセス許可が必要です。ただし、他のユーザーに関連する人物を検索する場合は People.Read.All が必要です。既定では、応答ごとに 10 件のレコードが返されますが、これは *$top* パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p118">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
+<span data-ttu-id="95a6b-p117">このセクションの要求では、サインインしているユーザー (`/me`) とサインインしているユーザーの組織内の他のユーザーに関連する人物を検索できます。これらの要求には People.Read アクセス許可が必要です。ただし、他のユーザーに関連する人物を検索する場合は People.Read.All が必要です。既定では、応答ごとに 10 件のレコードが返されますが、これは *$top* パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p117">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
 
-### <a name="use-search-to-select-people"></a><span data-ttu-id="5c38d-182">検索による人物の選択</span><span class="sxs-lookup"><span data-stu-id="5c38d-182">Use search to select people</span></span>
+### <a name="use-search-to-select-people"></a><span data-ttu-id="95a6b-179">検索による人物の選択</span><span class="sxs-lookup"><span data-stu-id="95a6b-179">Use search to select people</span></span>
 
-<span data-ttu-id="5c38d-183">*$search* パラメーターを使用して、特定の条件セットを満たす人物を選びます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-183">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
+<span data-ttu-id="95a6b-180">*$search* パラメーターを使用して、特定の条件セットを満たす人物を選びます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-180">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
 
-<span data-ttu-id="5c38d-184">次の検索クエリは、**displayName** または \*emailAddress" に文字「j」で始まる単語がある、`/me` に関連する人物を返します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-184">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
+<span data-ttu-id="95a6b-181">次の検索クエリは、**displayName** または \*emailAddress" に文字「j」で始まる単語がある、`/me` に関連する人物を返します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-181">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-<span data-ttu-id="5c38d-p119">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="5c38d-p119">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="95a6b-p118">次の例は応答を示しています。既定では、各応答は 10 個のレコードを返します。これは *$top* パラメーターを使用して変更できます。この例では *$top* を使用して 3 つのレコードへの応答を制限しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-p118">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -935,9 +935,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="5c38d-189">あいまい検索の実行</span><span class="sxs-lookup"><span data-stu-id="5c38d-189">Perform a fuzzy search</span></span>
+### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="95a6b-186">あいまい検索の実行</span><span class="sxs-lookup"><span data-stu-id="95a6b-186">Perform a fuzzy search</span></span>
 
-<span data-ttu-id="5c38d-190">検索は、あいまい一致のアルゴリズムを実装します。</span><span class="sxs-lookup"><span data-stu-id="5c38d-190">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="5c38d-191">これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-191">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="5c38d-192">たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。</span><span class="sxs-lookup"><span data-stu-id="5c38d-192">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user.</span></span> <span data-ttu-id="5c38d-193">次の検索ではすべて、このユーザー Tyler が検索結果として返されます。</span><span class="sxs-lookup"><span data-stu-id="5c38d-193">All of the following searches will return this user Tyler as one of the results.</span></span>
+<span data-ttu-id="95a6b-187">検索は、あいまい一致のアルゴリズムを実装します。</span><span class="sxs-lookup"><span data-stu-id="95a6b-187">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="95a6b-188">これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-188">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="95a6b-189">たとえば、表示名が "Tyler Lee"、電子メールアドレスtylerle@example.comが、サインインユーザーの**people**集団に属しているとします。</span><span class="sxs-lookup"><span data-stu-id="95a6b-189">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the people collection of the signed-in user.</span></span> <span data-ttu-id="95a6b-190">次の検索ではすべて、このユーザー、Tyler が検索結果として返されます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-190">All of the following searches will return this user Tyler as one of the results.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
@@ -946,3 +946,32 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+### <a name="working-with-feature-implementation"></a><span data-ttu-id="95a6b-191">機能の実装を扱う</span><span class="sxs-lookup"><span data-stu-id="95a6b-191">Working with feature implementation</span></span>
+ 
+<span data-ttu-id="95a6b-192">その人たちをプロフィール所有者のリストに出すためには、プロフィール所有者とその他の人との間に登録上の関係性がなければいけません。</span><span class="sxs-lookup"><span data-stu-id="95a6b-192">There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list.</span></span> <span data-ttu-id="95a6b-193">次の図は、ユーザーA、他のユーザー（ユーザーB）との関係性の見出し、およびユーザー関係の一部分を示すパブリックプロファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="95a6b-193">The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.</span></span>
+
+![関係図構築のイメージ](images/working-with.png)
+ 
+<span data-ttu-id="95a6b-195">以下は、登録関係の例です。</span><span class="sxs-lookup"><span data-stu-id="95a6b-195">The following are examples of public relationships:</span></span>
+
+- <span data-ttu-id="95a6b-196">組織図で接続されている個人：部長、直属の部下、同僚（同じマネージャーを共有）</span><span class="sxs-lookup"><span data-stu-id="95a6b-196">Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager)</span></span> 
+- <span data-ttu-id="95a6b-197">30人未満の公開グループまたは配布リストのメンバー。</span><span class="sxs-lookup"><span data-stu-id="95a6b-197">Members of a public group or distribution list with fewer than 30 people.</span></span> <span data-ttu-id="95a6b-198">公開グループは、ディレクトリ内に利用可能なメンバーシップ一覧を持ちます。</span><span class="sxs-lookup"><span data-stu-id="95a6b-198">Public groups have membership lists that are available in the directory.</span></span>
+ 
+<span data-ttu-id="95a6b-199">プロファイルの所有者が他のユーザーと通信していて、そのユーザーと組織図の接続やグループの共有などの登録上の関係がない場合、彼らが通信しているという事実は他のユーザーには見えません。</span><span class="sxs-lookup"><span data-stu-id="95a6b-199">If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.</span></span>
+
+<span data-ttu-id="95a6b-200">人のランク付け、つまり、プロファイル所有者のページに表示される順序は、プロファイル所有者とリスト上の人物との間の公開および非公開のコミュニケーションによって決まります。</span><span class="sxs-lookup"><span data-stu-id="95a6b-200">The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.</span></span>
+ 
+<span data-ttu-id="95a6b-201">非公開コミュニケーションの例は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="95a6b-201">Examples of a communication break include:</span></span>
+- <span data-ttu-id="95a6b-202">相手の名前がTO行にあり、互いに電子メールを送信する場合</span><span class="sxs-lookup"><span data-stu-id="95a6b-202">Sending emails to each other where the name of the other person is in the TO line</span></span>
+- <span data-ttu-id="95a6b-203">カレンダーの招待状に自分の名前を入れ、ユーザーを会議に招待する</span><span class="sxs-lookup"><span data-stu-id="95a6b-203">Inviting users to meetings by including their name in the calendar invite</span></span> 
+ 
+<span data-ttu-id="95a6b-204">公開インタラクションの例は以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="95a6b-204">Examples of public interaction include:</span></span>
+- <span data-ttu-id="95a6b-205">公開グループの一員としての電子メールの送受信</span><span class="sxs-lookup"><span data-stu-id="95a6b-205">Sending or receiving emails to/from each other as part of a public group</span></span> 
+- <span data-ttu-id="95a6b-206">グループの一部として、または○○人以上が招待されている場所でユーザーを会議に招待する</span><span class="sxs-lookup"><span data-stu-id="95a6b-206">Inviting users to meetings as part of group, or where more than X people are invited</span></span>
+ 
+<span data-ttu-id="95a6b-207">一覧は、ユーザーAが誰であるか（他のユーザーのページを見ている人）に基づいて変わることはありません。</span><span class="sxs-lookup"><span data-stu-id="95a6b-207">The ranking doesn’t change based on who User A is (the person looking at someone else's page).</span></span> <span data-ttu-id="95a6b-208">一覧は、ユーザーB（プロファイル所有者）とユーザーC（プロファイル所有者リストに表示されている人）の間のインタラクションレベルによって決まります。</span><span class="sxs-lookup"><span data-stu-id="95a6b-208">The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).</span></span>
+ 
+<span data-ttu-id="95a6b-209">ユーザーCが表示されるようにするには、プロファイル所有者が、そのユーザーが公開されている比較的小さなグループ/ DLに属している（つまり、メンバーシップリストがディレクトリで利用可能であるということ）必要があります。</span><span class="sxs-lookup"><span data-stu-id="95a6b-209">In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).</span></span>
+ 
+<span data-ttu-id="95a6b-210">組織の外部の人は、プロファイル所有者のリストに表示されません。</span><span class="sxs-lookup"><span data-stu-id="95a6b-210">People external to the organization will not show on the profile owner's list.</span></span> <span data-ttu-id="95a6b-211">電子メールを送ったり、会ったりするものの、同じ組織の一員ではない人は、[Working with]セクションには表示されません。</span><span class="sxs-lookup"><span data-stu-id="95a6b-211">People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.</span></span>
