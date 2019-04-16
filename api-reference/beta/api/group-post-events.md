@@ -1,15 +1,15 @@
 ---
-title: イベントを作成する
+title: イベントの作成
 description: この API を使用して、新しいイベントを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 193cb6214d807c329d135f026f239bd6a36c236e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 978f156302380edc05df79ec3a53c1ab0f853f41
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529811"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889955"
 ---
 # <a name="create-event"></a>イベントを作成する
 
@@ -17,7 +17,7 @@ ms.locfileid: "29529811"
 
 この API を使用して、新しい[イベント](../resources/event.md)を作成します。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -79,7 +79,7 @@ Content-length: 285
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 285
 

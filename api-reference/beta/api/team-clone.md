@@ -1,35 +1,35 @@
 ---
-title: チームのクローンを作成します。
-description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成します。
+title: チームのクローンを作成する
+description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成されます。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5ef317d004e3355f9b40fc44232b7c594a3e45a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1495e00e2332ce6b963e654b8f5d63b2882c778d
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526166"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889962"
 ---
-# <a name="clone-a-team"></a>チームのクローンを作成します。
+# <a name="clone-a-team"></a>チームのクローンを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チーム](../resources/team.md)のコピーを作成します。 この操作では、対応する[グループ](../resources/group.md)のコピーも作成します。
-クローンを作成するチームのどの部分を指定できます。
+[チーム](../resources/team.md)のコピーを作成します。 この操作では、対応する[グループ](../resources/group.md)のコピーも作成されます。
+チームのどの部分を複製するかを指定できます。
 
-- **アプリケーション**・ チームにインストールされているアプリケーションをマイクロソフト チームのコピーです。 
-- **チャネル**は、チャネルの構造 (ただし、チャネル内のメッセージではない) をコピーします。
-- **メンバー** -メンバーをコピーし、グループの所有者です。
-- **設定**– は、キーのグループの設定と、チーム内のすべての設定をコピーします。
-- **タブ**– は、チャネル内のタブにコピーします。
+- **アプリ**-チームにインストールされている Microsoft Teams アプリをコピーします。 
+- **** チャネル–チャネル構造をコピーします (チャネル内のメッセージはコピーしません)。
+- **members** –グループのメンバーと所有者をコピーします。
+- **設定**–主要なグループ設定と共に、チーム内のすべての設定をコピーします。
+- **タブ**–チャネル内のタブをコピーします。
 
-タブがクローン化されると、未構成の状態に移動する:、マイクロソフト チームのタブ バーに表示され、構成] 画面で移動します] をクリックします。 (タブを開いた人がアプリケーションを構成するのにはアクセス許可を持たない場合が表示されるタブが構成されていないことを説明するメッセージです。)
+タブが複製されると、それらは未構成状態になります。これは、Microsoft Teams のタブバーに表示されます。これを最初に開いたときに、構成画面が表示されます。 (タブを開くユーザーがアプリを構成するためのアクセス許可を持っていない場合は、タブがまだ構成されていないことを示すメッセージが表示されます)。
 
-クローン作成は、時間のかかる操作です。
-投稿クローンが返されるは、「実行中」または「成功」または「失敗」を表示する[操作](../resources/teamsasyncoperation.md)を取得する必要があります。 ステータスが「動作していない」まで取得を続行してください。 取得の推奨される間隔は、5 秒間です。
+複製は、長時間実行される操作です。
+POST 複製が戻ると、"実行中" または "成功" または "失敗" のどちらであるかを確認するには、[操作](../resources/teamsasyncoperation.md)を取得する必要があります。 状態が "実行中" ではない状態になるまで、この操作を続行する必要があります。 推奨される遅延時間は、5秒です。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -55,17 +55,17 @@ POST /teams/{id}/clone
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|classification|文字列 (省略可能)|(低、中、または高のビジネス ・ インパクト) などのグループの分類について説明します。 このプロパティの有効値は、[テンプレートの定義](../resources/directorysettingtemplate.md)に基づいて、ClassificationList の[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類を指定しない場合、分類は、元のチームまたはグループからコピーされます。|
-|説明|文字列 (省略可能)|グループに関するオプションの説明。 このプロパティを指定しない場合、空白のままにします。|
+|classification|String (省略可能)|グループの分類 (低、中、高のビジネスへの影響など) を記述します。 このプロパティの有効な値は、[テンプレート定義](../resources/directorysettingtemplate.md)に基づいて ClassificationList[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類が指定されていない場合は、元のチーム/グループから分類がコピーされます。|
+|説明|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合に、表示名から計算されます。 既知の問題: 現在、このプロパティは無視されます。|
-|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンを作成する部品のコンマで区切られたリスト。 法的な部分は、「アプリケーション、タブ、設定、チャネル、メンバー"です。|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)(省略可能)| グループの可視性を指定します。 使用可能な値:**パブリック**、**プライベート**です。 可視性が指定されていない場合、元のチームまたはグループの表示と非表示がコピーされます。 **EducationClass**チームは、チームのクローンが作成されている場合、可視性パラメーターは無視されます、および新しいグループの表示/非表示を HiddenMembership に設定されます。|
+|mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合は、displayName から計算されます。 既知の問題: このプロパティは現在無視されています。|
+|partstoclone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドは、`202 Accepted`の場所で応答コード: ヘッダーの[処理](../resources/teamsasyncoperation.md)リソースを指します。
-操作が完了すると、処理リソースが送信されます作成したチームの id。
+成功した場合、このメソッドは`202 Accepted` 、 [operation](../resources/teamsasyncoperation.md)リソースをポイントする Location: ヘッダーを持つ応答コードを返します。
+操作が完了すると、作成されたチームの id が操作リソースに通知されます。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -96,7 +96,7 @@ Content-Type: application/json
 } -->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

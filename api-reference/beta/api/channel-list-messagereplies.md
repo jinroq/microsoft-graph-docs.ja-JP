@@ -1,28 +1,28 @@
 ---
-title: リストのチャネル メッセージの返信
-description: チームのチャネル内のメッセージの返信のすべてを一覧表示します。
+title: チャネルメッセージの返信を一覧表示する
+description: チームのチャネル内のメッセージのすべての返信を一覧表示します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4ac3b068e93e370ce981d478c87e573f248695c6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4ef844dc03b26e4f3184b138aa6f8a845453e0c7
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512298"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889976"
 ---
-# <a name="list-channel-message-replies"></a>リストのチャネル メッセージの返信
+# <a name="list-channel-message-replies"></a>チャネルメッセージの返信を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-チームの[チャネル](../resources/channel.md)内の[メッセージ](../resources/chatmessage.md)の返信のすべてを一覧表示します。
+チームの[チャネル](../resources/channel.md)内の[メッセージ](../resources/chatmessage.md)のすべての返信を一覧表示します。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の小さいものから大きいものへ)|
 |---------|-------------|
-|委任 (職場または学校のアカウント)|Group.Read.All,Group.ReadWrite.All|
+|委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
 |アプリケーション| サポートされていません。 |
 
@@ -32,8 +32,8 @@ ms.locfileid: "29512298"
 GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-[OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -44,7 +44,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[chatmessage](../resources/channel.md)オブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chatmessage](../resources/channel.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/repl
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +101,15 @@ Content-length: 201
         ],
         "mentions": [
             {
-                "type": "user",
                 "id": "id-value ",
-                "mentionText": "Test User"
+                "mentionText": "Test User",
+                "mentioned": {
+                "user": {
+                    "id": "id-value",
+                    "displayName: "string"
+                }
             }
+        }
         ],
         "importance": "normal",
         "reactions": [

@@ -1,25 +1,25 @@
 ---
-title: チームを unarchive します。
-description: アーカイブされたチームを復元します。 これは、メッセージを送信し、テナントとチームの設定に従いながら、チームを編集するユーザーの機能を復元します。 チームは、アーカイブの API を使用してアーカイブされます。
+title: チームを展開する
+description: アーカイブされたチームを復元します。 これにより、ユーザーがメッセージを送信したり、チームを編集したりできるようになります。テナントとチームの設定によって abiding ます。 Teams は、アーカイブ API を使用してアーカイブされます。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: d21eb7d3531b69e148c0d420217fc309e0ea99ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0c39cac6a61f09c0531f1c337ff01e1b3c077b67
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518136"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890039"
 ---
-# <a name="unarchive-team"></a>チームを unarchive します。
+# <a name="unarchive-team"></a>チームを展開する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アーカイブの[チーム](../resources/team.md)を復元します。 これは、メッセージを送信し、テナントとチームの設定に従いながら、チームを編集するユーザーの機能を復元します。 チームは、[アーカイブ](team-archive.md)の API を使用してアーカイブされます。
+アーカイブされた[チーム](../resources/team.md)を復元します。 これにより、ユーザーがメッセージを送信したり、チームを編集したりできるようになります。テナントとチームの設定によって abiding ます。 Teams は、[アーカイブ](team-archive.md)API を使用してアーカイブされます。
 
-Unarchiving は、非同期操作です。 チームは、非同期操作が完了すると正常に、この API からの応答の後に発生する可能性がありますが、アーカイブではありません。
+アーカイブの取り消しは、非同期操作です。 非同期操作が正常に完了すると、この API からの応答によって発生する可能性があるチームが unarchived れます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -28,7 +28,7 @@ Unarchiving は、非同期操作です。 チームは、非同期操作が完�
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>応答
 
-このメソッドを返すかどうかは、正常に起動は、unarchiving、`202 Accepted`応答コード。 応答が含まれても、`Location`ヘッダーで、チームの unarchiving を処理するために作成された[teamsAsyncOperation](../resources/teamsasyncoperation.md)の場所が含まれています。 この場所に GET 要求を行うことによって unarchiving の操作のステータスを確認してください。
+アーカイブが正常に開始されなかった場合、 `202 Accepted`このメソッドは応答コードを返します。 応答には、チームの`Location`アーカイブを処理するために作成された[teamsAsyncOperation](../resources/teamsasyncoperation.md)の場所を含むヘッダーも含まれます。 この場所に GET 要求を行うことによって、未アーカイブ操作の状態を確認します。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 応答の例を次に示します。
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

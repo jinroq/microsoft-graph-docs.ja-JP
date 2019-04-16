@@ -1,23 +1,23 @@
 ---
-title: ユーザーへの後方リンクの一覧
-description: グループ、ディレクトリの役割、およびユーザーの直接のメンバーでは管理の単位を取得します。 この操作は、推移的ではありません。
+title: ユーザーの所属を一覧表示する
+description: ユーザーが直接メンバーであるグループ、ディレクトリロール、および管理単位を取得します。 この操作は推移的ではありません。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7d7f1fa0636be0831c866c23ed133361dd24df3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41c436cfe2a83da00eadda94914c707e1c1aee62
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509708"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889913"
 ---
-# <a name="list-user-memberof"></a>ユーザーへの後方リンクの一覧
+# <a name="list-user-memberof"></a>ユーザーの所属を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループ、ディレクトリの役割、およびユーザーの直接のメンバーでは管理の単位を取得します。 この操作は、推移的ではありません。
+ユーザーが直接メンバーであるグループ、ディレクトリロール、および管理単位を取得します。 この操作は推移的ではありません。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,6 +31,8 @@ ms.locfileid: "29509708"
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 

@@ -1,12 +1,12 @@
 ---
 title: 国内クラウドの展開
 description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウドバージョンは、特定の国の地理的な境界内に限定され、ローカル担当者が運用している Microsoft エンタープライズクラウドサービスの物理的および論理的なネットワークの分離されたインスタンスです。
-ms.openlocfilehash: f04da510e46572140c70b0df89eefeac57974b00
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518505"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889906"
 ---
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 
@@ -70,9 +70,9 @@ Azure AD のアクセストークンと Microsoft Graph の詳細については
 | SharePoint| ✔ | ✔ | ✔ |
 | プランナー|✔ |✔ |✔ |
 | レポート  |➖| ✔ |➖|
-| Webhook  | ➖|✔* |✔* |
+| 変更通知 (webhooks)  | ➖|✔* |✔* |
 | デルタ クエリ | ➖ | ➖| ➖ |
-|ディレクトリ スキーマの拡張 |➖|➖|➖|
+| ディレクトリ スキーマの拡張 |➖|➖|➖|
 | オープン型の拡張機能|➖|➖|➖|
   
 次に示すその他の Microsoft Graph 機能は、(エンド`/beta`ポイントの) すべての国内クラウド展開で使用できます (記載されている場合を除く)。
@@ -80,6 +80,7 @@ Azure AD のアクセストークンと Microsoft Graph の詳細については
 * 組織の連絡先
 * アプリケーション
 * サービス プリンシパル
+* 変更通知 (webhooks)
 
 (*)Exchange および OneDrive サービスのみのサポートが制限されています。 Azure AD サービスはサポートされていません。 
 
