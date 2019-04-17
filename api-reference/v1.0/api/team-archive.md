@@ -1,28 +1,28 @@
 ---
-title: チームのアーカイブ
+title: チームをアーカイブする
 description: '指定されたチームをアーカイブします。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c7ac186eeb937b1dda0b1df4878260e61fe30b18
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: 28c1ea9d96d55587f95af85c9aba50a43fe08d60
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016640"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890025"
 ---
-# <a name="archive-team"></a>チームのアーカイブ
+# <a name="archive-team"></a>チームをアーカイブする
 
 
 
-指定された[チーム](../resources/team.md)をアーカイブします。 チームがアーカイブされると、ユーザーが不要になった送信、チーム内のすべてのチャネルのメッセージのようにチームの名前、説明、またはその他の設定を編集またはチームに一般にほとんどの変更を加えます。
-チームのメンバーシップの変更を続行できるようにします。
+指定された[チーム](../resources/team.md)をアーカイブします。 チームをアーカイブすると、ユーザーはチームのチャネルでメッセージを送信したり、いいねしたり、チームの名前、説明、またはその他の設定、通常、チームへの変更がほとんどできなくなります。
+チームへのメンバーシップの変更はそのまま許可されます。
 
-アーカイブは、非同期操作です。 チームは、非同期操作が完了すると正常に、この API からの応答の後に発生する可能性がありますが、アーカイブされます。
+アーカイブは非同期操作です。 非同期操作が正常に完了すると、チームがアーカイブされます。この API の応答に続いて発生する可能性があります。
 
-チームをアーカイブするには、チームや[グループ](../resources/group.md)に所有者が必要です。
+チームをアーカイブできるのは、チームと[グループ](../resources/group.md)が所有者の場合です。
 
-アーカイブ済みの状態からチームを復元するには、 [unarchive](team-unarchive.md)に API を使用します。
+アーカイブした状態からチームを復元するには、API を使用して[アーカイブを解除](team-unarchive.md)します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -33,7 +33,7 @@ ms.locfileid: "28016640"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -46,17 +46,17 @@ POST /teams/{id}/archive
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
-要求にすることがあります _(オプション)_ が含まれます、 `shouldSetSpoSiteReadOnlyForMembers` 、JSON 内のパラメーターの本文、次のようにします。
+次のように、リクエストでは_オプションで_ JSON の本文に`shouldSetSpoSiteReadOnlyForMembers`パラメーターを入力できます。
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-この省略可能なパラメーターでは、チーム メンバーのアクセス権をチームに関連付けられている Sharepoint Online サイトで読み取り専用に設定するかどうかを定義します。 False に設定するか、本文を省略することに、この手順をスキップしてされます。
+このオプションのパラメーターは、チーム メンバーのアクセス許可を、チームに関連付けられている Sharepoint Online サイトで読み取り専用に設定するかどうかを定義します。 False に設定したり、本文を完全に省略したりすると、この手順がスキップされます。
 
 ## <a name="response"></a>応答
 
-かどうかアーカイブが正常に開始しました、このメソッドが返されます、`202 Accepted`応答コード。 応答が含まれても、`Location`ヘッダーで、チームのアーカイブを処理するために作成された[teamsAsyncOperation](../resources/teamsasyncoperation.md)の場所が含まれています。 この場所に GET 要求を行うことによって、アーカイブ ・ オペレーションのステータスを確認します。
+アーカイブが正常に開始された場合、このメソッドは`202 Accepted`応答コードを返します。 応答には、チームのアーカイブを処理するのに作成された [teamsAsyncOperation](../resources/teamsasyncoperation.md) の場所を含む`Location`ヘッダーも含まれます。 この場所に GET 要求を作成して、アーカイブ操作の状態を確認します。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 応答の例を次に示します。
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

@@ -1,15 +1,15 @@
 ---
 title: memberOf を一覧表示する
-description: 'ユーザーがダイレクト メンバーになっているグループとディレクトリ ロールを取得します。 '
+description: 'ユーザーがダイレクト メンバーになっているグループとディレクトリの役割を取得します。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 389cbe5a62b75e9396077d9710c0b92a497e8bd0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 36a99730128fca385394121b75437cd807a2b400
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962528"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890011"
 ---
 # <a name="list-memberof"></a>memberOf を一覧表示する
 
@@ -27,10 +27,12 @@ ms.locfileid: "27962528"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。$filter はサポートされていません。 
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 $filter はサポートされていません。 
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |

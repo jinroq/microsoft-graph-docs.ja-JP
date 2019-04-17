@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.openlocfilehash: ee05a3c826924b606de599f2fbcadbebb963192f
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936319"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890018"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -139,6 +139,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
 |showInAddressList|Boolean|Outlook グローバル アドレス一覧にこのユーザーが含まれている必要がある場合は **true**、それ以外の場合は **false**。 設定されていない場合は、**true** として扱われます。 招待マネージャーから招待されたユーザーの場合、このプロパティは **false** に設定されます。|
+|signInSessionsValidFromDateTime|DateTimeOffset| この時点よりも前に発行された更新トークンとセッション トークン (セッション Cookie) はすべて無効であり、アプリケーションが無効な更新トークンまたはセッション トークンを使用して (Microsoft Graph などの API にアクセスする目的で) 代理アクセス トークンを取得しようとすると、エラーが発生します。  この状況が発生した場合、アプリケーションは承認エンドポイントに対してリクエストを発行して新しいトークンを取得する必要があります。 読み取り専用です。 [revokeSignInSessions](../api/user-revokesigninsessions.md) を使用して再設定します。|
 |skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|
@@ -205,7 +206,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |events|[event](event.md) コレクション|ユーザーのイベント。既定では、既定の予定表でイベントが表示されます。読み取り専用です。Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
-|insights|[insights](insights.md) コレクション| 読み取り専用です。Null 許容型。|
+|insights|[insights](insights.md) コレクション| 読み取り専用です。 Null 許容型。|
 |joinedGroups|[group](group.md) コレクション| 読み取り専用です。Null 許容型。|
 |mailFolders|[mailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|

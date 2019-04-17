@@ -1,15 +1,15 @@
 ---
 title: イベントを作成する
-description: この API を使用して、新しいイベントを作成します。
+description: このAPIを使用して新しいイベントを作成します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 1d264ec205d8f94027a8121253819c2613d1f4d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 194a24ac589cffa56a235a0bce39500f8cdd9d4e
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941122"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889948"
 ---
 # <a name="create-event"></a>イベントを作成する
 この API を使用して、新しい[イベント](../resources/event.md)を作成します。
@@ -77,7 +77,7 @@ Content-length: 285
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 285
 

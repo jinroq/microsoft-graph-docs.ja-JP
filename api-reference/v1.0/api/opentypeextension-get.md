@@ -3,12 +3,12 @@ title: オープン拡張機能を取得する
 description: 名前または完全修飾名で識別されたオープン拡張機能 (openTypeExtension オブジェクト) を取得します。
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: d3bc96577f86a7bc5d2006f42a03943363d70169
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ee5a8d8f5d98024055b4d28dd67281f8e2e6d453
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953232"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889941"
 ---
 # <a name="get-open-extension"></a>オープン拡張機能を取得する
 
@@ -24,19 +24,19 @@ ms.locfileid: "27953232"
 
 ## <a name="permissions"></a>アクセス許可
 
-拡張機能とアクセス許可が含まれるリソースによって委任された (アプリケーション) の種類を要求、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能を含むリソースおよび要求されたアクセス許可の種類（委任またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.Read.All | サポートされていません | Device.ReadWrite.All |
-| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | サポートされていません | Group.Read.All |
-| [グループ イベント](../resources/event.md) | Group.Read.All | 使用不可 | 使用不可 |
-| [グループの投稿](../resources/post.md) | Group.Read.All | サポートされていません | Group.Read.All |
+| [device](../resources/device.md) | Directory.Read.All | 非サポート | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
+| [グループ イベント](../resources/event.md) | Group.Read.All | サポート対象外 | 非サポート |
+| [グループの投稿](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | 使用不可 | 使用不可 |
+| [組織](../resources/organization.md) | User.Read | 非サポート | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [ユーザー](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 
 ## <a name="http-request"></a>HTTP 要求
@@ -63,7 +63,7 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>一致する拡張機能で展開された既知のリソース インスタンスを取得する 
 
-イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。応答には、リソース プロパティのほとんどが含まれています。
+イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。 応答には、リソース プロパティのほとんどが含まれています。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -101,10 +101,10 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 >**注:** 上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。
 
 ## <a name="path-parameters"></a>パス パラメーター
-|Parameter|Type|説明|
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|Id|文字列|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
-|extensionId|文字列|拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。|
+|ID|string|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
+|extensionId|string|拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。|
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -112,9 +112,9 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 |名前|値|説明|
 |:---------------|:--------|:-------|
-|$filter|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。|
-|$filter with **any** operator|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。|
-|$expand|文字列|リソース インスタンスを展開して、拡張情報を組み込みます。 |
+|$filter|string|**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。|
+|$filter with **any** operator|string|**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。|
+|$expand|string|リソース インスタンスを展開して、拡張情報を組み込みます。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
@@ -370,7 +370,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-####<a name="response-5"></a>応答 5
+#### <a name="response-5"></a>応答 5
 
 5 番目の例のこの応答では、**id** が `Com.Contoso.Referral` である拡張情報が含まれているメッセージがユーザーのメールボックスに 1 つだけ存在します。
 
