@@ -5,33 +5,33 @@ ms.date: 09/10/2017
 title: キーワードで SharePoint サイトを検索する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 156093c9d3b87f0a4e44f6928b36a8aa92a4ef4d
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480755"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904113"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="33d99-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="33d99-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="ded46-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="ded46-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="33d99-103">SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。</span><span class="sxs-lookup"><span data-stu-id="33d99-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="ded46-103">提供されたキーワードに一致する[サイト][]の SharePoint テナント全体を検索します。</span><span class="sxs-lookup"><span data-stu-id="ded46-103">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [サイト]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="33d99-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="33d99-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ded46-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ded46-105">Permissions</span></span>
 
-<span data-ttu-id="33d99-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33d99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ded46-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ded46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="33d99-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="33d99-108">Permission type</span></span>                        | <span data-ttu-id="33d99-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="33d99-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="ded46-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ded46-108">Permission type</span></span>                        | <span data-ttu-id="ded46-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ded46-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="33d99-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="33d99-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="33d99-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33d99-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="33d99-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="33d99-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33d99-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33d99-113">Not supported.</span></span>
-|<span data-ttu-id="33d99-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="33d99-114">Application</span></span>                            | <span data-ttu-id="33d99-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33d99-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="ded46-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ded46-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ded46-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ded46-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="ded46-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ded46-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ded46-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ded46-113">Not supported.</span></span>
+|<span data-ttu-id="ded46-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ded46-114">Application</span></span>                            | <span data-ttu-id="ded46-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ded46-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="33d99-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="33d99-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ded46-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ded46-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "30480755"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="33d99-117">応答</span><span class="sxs-lookup"><span data-stu-id="33d99-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ded46-117">応答</span><span class="sxs-lookup"><span data-stu-id="ded46-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -68,6 +68,7 @@ Content-type: application/json
   ]
 }
 ```
+><span data-ttu-id="ded46-118">**注:** 並べ替えに使用できる唯一のプロパティは、"**日付**1" です。</span><span class="sxs-lookup"><span data-stu-id="ded46-118">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="ded46-119">検索フィルターは、検索結果を取得するときに複数のプロパティを使用する自由なテキスト検索です。</span><span class="sxs-lookup"><span data-stu-id="ded46-119">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!--
 {
