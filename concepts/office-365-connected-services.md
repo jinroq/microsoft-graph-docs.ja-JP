@@ -4,12 +4,12 @@ description: Visual Studio の接続済みサービスを使い、アプリケ�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 66a967097e32d9321bfab44e8f648c6cabebc165
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c8a6336a45f6c67281c865c47e299715b5497d93
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571248"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904029"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Visual Studio 2017 での Microsoft Graph API を使った Office 365 サービスの呼び出し
 
@@ -33,7 +33,7 @@ Microsoft Graph のサービスを Visual Studio プロジェクトに追加す�
 
 1. ソリューション エクスプローラーで、[**接続済みサービス**] を選択し、[接続済みサービス] タブを開きます。 
 
-2. [**Microsoft Graph を使用して Office 365 サービスにアクセスする**] プロバイダーを選択します。ウィザードの手順に従います。次のアクセス許可を選択します (アクセス許可は後で変更することができます)。
+2. **Microsoft Graph で Office 365 サービスをアクセス** プロバイダーを選択します。 ウィザードに従います。 以下のアクセス許可を選択します (アクセス許可は後から変更できます)。
 
     - **File** API のアクセス許可は**ファイルへのフルアクセス許可**を設定します。
     - **Mail** API のアクセス許可は**ユーザーとしてのメールの送信**を設定します。

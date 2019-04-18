@@ -4,18 +4,18 @@ description: q = excelstarter)。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 234130a8fa56dfdc078c694069a9fe879140d27f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904071"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Microsoft Graph で Excel ブックにデータを書き込む
 
 Excel REST API は、情報を Excel ブックにアップロードするための、プラットフォームに依存しない簡単な手段を提供します。 このトピックでは、ASP.NET、Angular、および React の 3 種類の Web 開発フレームワークで、シンプルなデータ セットを Excel ブックに書き込む方法を示します。 このトピックで示されているサンプル コードは、[GitHub 上の Microsoft Graph Excel スターター サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter)で確認できます。
 
-> **注:** 3 つのサンプルのいずれも、データを **demo.xlxs** という名前の Excel ブックに書き込みます。 このブックが提供されているのは、それを自分の OneDrive にアップロードできるからですが、Microsoft Graph を使用することによっても、ファイルを OneDrive にアップロードできます。 いずれかのタイプのファイルをルート OneDrive フォルダーにアップロードするための REST 呼び出しに関する詳細は、[Microsoft Graph Excel REST API ASP.NET の予定リスト サンプル](https://github.com/microsoftgraph/aspnet-todo-rest-sample)を参照してください。
+> **注:** 3 つのサンプルのいずれも、データを **demo.xlsx** という名前の Excel ブックに書き込みます。 このブックが提供されているのは、それを自分の OneDrive にアップロードできるからですが、Microsoft Graph を使用することによっても、ファイルを OneDrive にアップロードできます。 いずれかのタイプのファイルをルート OneDrive フォルダーにアップロードするための REST 呼び出しに関する詳細は、[Microsoft Graph Excel REST API ASP.NET の予定リスト サンプル](https://github.com/microsoftgraph/aspnet-todo-rest-sample)を参照してください。
 
 3 つの Excel スターター サンプルのいずれも、実行内容は同じです: サインイン ユーザーの名前とアドレスを取得し、それら 2 つの情報を **demo.xlsx** ブックの新しい行に追加します。 サンプルに変更を加えることにより、追加する行を表す 2 次元配列に情報を追加するという方法で、シンプルな操作で行を追加することができます。
 

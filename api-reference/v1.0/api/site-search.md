@@ -2,19 +2,20 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: キーワードで SharePoint サイトを検索する
+title: サイトを検索する
+description: 提供されたキーワードに一致するサイトの SharePoint テナント全体を検索します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03e5a43c80ff5107f4e3aca514b1b411d71eb61d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 48a479df2f91dd4d60455a26c4e16f561ea88f83
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482120"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904120"
 ---
 # <a name="search-for-sites"></a>サイトを検索する
 
-SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。
+提供されたキーワードに一致する[サイト][]の SharePoint テナント全体を検索します。
 
 [サイト]: ../resources/site.md
 
@@ -65,6 +66,7 @@ Content-type: application/json
   ]
 }
 ```
+>**注:** 並べ替えに使用できる唯一のプロパティは、"**日付**1" です。 検索フィルターは、検索結果を取得するときに複数のプロパティを使用する自由なテキスト検索です。
 
 <!-- {
   "type": "#page.annotation",

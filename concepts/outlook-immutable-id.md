@@ -4,12 +4,12 @@ description: Outlook アイテム (メッセージ、イベント、連絡先、
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e88f4d457f76990dc3e6145ebf2730087ad2a74e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e0ddee215b7574e152fa5ffc574d218d5a2f811a
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961716"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904092"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Outlook リソースの不変 ID の取得
 
@@ -17,7 +17,7 @@ Outlook アイテム (メッセージ、イベント、連絡先、タスク) �
 
 > **重要:** 不変 ID は、Microsoft Graph のベータ版のみで使用できます。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 不変 ID は、Microsoft Graph のオプション機能です。 オプト インするには、アプリケーションから、API 要求に追加の HTTP ヘッダーを含めて送信する必要があります。
 

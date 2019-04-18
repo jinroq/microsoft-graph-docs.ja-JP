@@ -3,12 +3,12 @@ title: デルタ クエリを使用して、Microsoft Graph データの変更�
 description: デルタ クエリを使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、または削除されたエンティティを検出できます。Microsoft Graph アプリケーションはデルタ クエリを使用して、変更をローカル データ ストアと効率的に同期させることができます。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 77f5a4eae74e40655d858fb839697aca80851afb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904050"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 
@@ -49,7 +49,7 @@ ms.locfileid: "27823867"
 ユーザーとグループには、いくつかのクエリ パラメーターの使用に関する制限があります。
 
 - `$select` クエリ パラメーターが使用されている場合、パラメーターは、`$select` ステートメントで指定したプロパティまたはリレーションシップに関する変更のみを追跡することを、クライアントが優先していることを示します。選択されていないプロパティに変更が加えられた場合、そのプロパティが変更されたリソースは、後続の要求後のデルタ応答には表示されなくなります。
-- `$expand` は、ユーザーとグループのナビゲーション プロパティである `manager` および `members` についてのみサポートされます。
+- `$expand` は、それぞれのユーザーとグループのナビゲーション プロパティである `manager` および `members` についてのみサポートされます。
 
 - スコープ フィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。 たとえば、https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' の要求では、クエリ フィルターで指定された ID に一致するグループに加えられた変更が返されます。
 
@@ -91,7 +91,7 @@ ms.locfileid: "27823867"
 | ドライブの項目\* | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) リソースの[デルタ](/graph/api/driveitem-delta?view=graph-rest-1.0)関数 |
 | Planner の項目\*\* | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー) |
 
-> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、「[ドライブの変更履歴を記録する](/graph/api/item-delta?view=graph-rest-1.0)」を参照してください。
+> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。 ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。 現在の構文の詳細については、 「[ドライブの変更履歴を記録する](/graph/api/driveitem-delta?view=graph-rest-1.0)」を参照してください。
 
 > \*\* Planner リソースの使用パターンは、他のサポートされているリソースと似ていますが、若干の違いがあります。  詳細については、「[Planner の変更履歴を記録する](/graph/api/planneruser-list-delta?view=graph-rest-beta)」を参照してください。
 

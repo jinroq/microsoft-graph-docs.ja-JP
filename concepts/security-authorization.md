@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API からアクセスできる�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904043"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>承認と Microsoft Graph セキュリティ API
 
@@ -119,7 +119,7 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Azure AD のロールをユーザーに割り当てる
 
-アプリケーションにアクセス許可が付与されると、そのアプリケーションにアクセスできるすべてのユーザー (Azure AD テナントのメンバー) に、付与されたアクセス許可が与えられます。 機密性の高いセキュリティ データの保護を強化するため、Microsoft Graph セキュリティ API では、ユーザーに Azure AD の **[セキュリティ閲覧者]** ロールが割り当てられている必要があります。 詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles-azure-portal)」と「[Azure Active Directory でユーザーを管理者ロールに割り当てる](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-users-assign-role-azure-portal)」を参照してください。
+アプリケーションにアクセス許可が付与されると、そのアプリケーションにアクセスできるすべてのユーザー (Azure AD テナントのメンバー) に、付与されたアクセス許可が与えられます。 機密性の高いセキュリティ データの保護を強化するため、Microsoft Graph セキュリティ API では、ユーザーに Azure AD の **[セキュリティ閲覧者]** ロールが割り当てられている必要があります。 詳細については、「[管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles-azure-portal)」と「[ユーザーを管理者ロールに割り当てる](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-users-assign-role-azure-portal)」を参照してください。
 
 >**注:** この手順を実行するには、テナント管理者でなければなりません。
 
