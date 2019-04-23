@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: ac2d600e41d2d535b12122f99630d548082bbe46
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 4ec732fdc9e2a1c91ff6e5bb58c26e606272e641
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980957"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可リファレンス 
 Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリにサインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 
@@ -1012,6 +1012,30 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 * _Agreement.Read.All_: すべての利用規約の読み取り (`GET /beta/agreements`)
 * _Agreement.ReadWrite.All_: すべての利用規約の読み取りと書き込み (`POST /beta/agreements`)
 * _AgreementAcceptance.Read_: 利用規約に対するユーザー承認状態の読み取り (`GET /beta/me/agreementAcceptances`)
+
+より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
+## <a name="trust-framework-policy-permissions"></a>信頼フレームワーク ポリシーのアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | すべての信頼フレームワーク ポリシーの読み取り | サインインしているユーザーの代わりに、すべての信頼フレームワーク ポリシーをアプリで読み取れるようにします。 | はい | いいえ |
+| _Policy.ReadWrite.TrustFramework_ | 全ての信頼フレームワーク ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、アプリで信頼フレームワーク ポリシーの読み取りと書き込みを行えるようにします。 | はい | いいえ |
+
+### <a name="remarks"></a>注釈
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+次に示す使用法は、両方の委任されたアクセス許可に対して有効です。
+
+* _Policy.Read.All_: すべての信頼フレームワーク ポリシーの読み取り (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_: 全ての信頼フレームワーク ポリシーの読み取りと書き込み (`POST /beta/trustFramework/policies`)
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 

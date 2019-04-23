@@ -4,12 +4,12 @@ description: " Office 365 のエンタープライズ ノートブック"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: b2eee772a69270e8b88a8d998af27fa892df5eb1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e07c9e3d4ccc16c19c83950eda2fdc24107c4b79
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980922"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>OneNote ページに画像、ビデオ、ファイルを追加する
 
@@ -447,11 +447,13 @@ Content-Type: application/pdf
 
 ## <a name="size-limitations-for-post-pages-requests"></a>POST pages 要求のサイズの上限
 
-画像やファイルのデータを送信する場合は、これらの制限に注意してください: <!--TODO: check these-->
+画像やファイル データを送信する場合は、これらの制限に注意してください: <!--TODO: check these-->
 
-- 合計 POST サイズの上限は 70 MB までであり、画像、ファイル、その他のデータが含まれます。実際の上限はダウンストリームのエンコーディングに影響されるため、固定のバイト数の制限はありません。上限を超える要求は、信頼性の低い結果になる可能性があります。
+- Microsoft Graph REST API には、4 MB という要求の上限があります。 この値を超えると、”要求が大きすぎます (413)” というエラーメッセージとともに失敗します。 
 
-- 各データ部分の上限は、part ヘッダーを含めて 25 MB です。 上限を超えるデータ部分は、Microsoft Graph によって拒否されます。 
+- 基になる OneNote REST API の要求の上限はより高くなっていますが、Microsoft Graph API 経由でそれを利用することはできません。 
+  - 合計 POST サイズの上限は 70 MB までであり、画像、ファイル、その他のデータが含まれます。 実際の上限は、ダウンストリームのエンコーディングの影響を受けるため、固定のバイト数の上限はありません。 上限を超える要求は、信頼性の低い結果を生み出す可能性があります。
+  - 各データ部分の上限は、part ヘッダーを含めて 25 MB です。 上限を超えるデータ部分は、Microsoft Graph によって拒否されます。 
 
 - 1 ページあたりの画像の最大数は 150 です。`src="https://..."` 属性を使用する場合、API は上限を超えた **img** タグを無視します。
 
