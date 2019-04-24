@@ -1,45 +1,46 @@
 ---
-title: エクスポート governanceRoleAssignmentRequests
-description: 形式の governanceRoleAssignmentRequests のコレクションを取得する`application/octet-stream`、ブラウザーで .csv ファイルとして解析します。
+title: governanceRoleAssignmentRequests のエクスポート
+description: ブラウザーで .csv ファイルとして解析`application/octet-stream`できる形式で governanceRoleAssignmentRequests のコレクションを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 82c36f176dfed1a4a848c045ce3274e1152bb953
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457176"
 ---
-# <a name="export-governanceroleassignmentrequests"></a>エクスポート governanceRoleAssignmentRequests
+# <a name="export-governanceroleassignmentrequests"></a>governanceRoleAssignmentRequests のエクスポート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-形式の[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを取得する`application/octet-stream`、ブラウザーで .csv ファイルとして解析します。
+ブラウザーで .csv ファイル[](../resources/governanceroleassignmentrequest.md)として解析`application/octet-stream`できる形式で governanceRoleAssignmentRequests のコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->リソースの[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをエクスポートします。
+<!-- { "blockType": "ignored" } -->
+[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをリソースにエクスポートする
     
->**注:** だけでなく、アクセス許可のスコープは、この要求には、リソースに 1 つ以上のロールの割り当てを要求元が必要です。 
+>**注:** この要求では、アクセス許可スコープの他に、リソースに対して少なくとも1つの役割の割り当てが必要になります。 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-私の[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをエクスポートします。
+[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをエクスポートする
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -50,10 +51,10 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードとコンテンツの種類の`application/octet-stream`。
+成功した場合、このメソッド`200 OK`は応答コードと、型`application/octet-stream`のコンテンツを返します。
 
 ## <a name="example"></a>例
-この例では、サブスクリプションの Wingtip toys 社の商品で .csv ファイルとしてすべてのロールの割り当てを保存します。 
+この例では、すべての役割の割り当てを、Wingtip Toys のサブスクリプションの .csv ファイルとして保存します。 
 
 ##### <a name="request"></a>要求
 ```http

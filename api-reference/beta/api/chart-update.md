@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640267"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456606"
 ---
 # <a name="update-chart"></a>Update chart
 
@@ -43,7 +43,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
 |left|double|グラフの左側からワークシートの原点までの距離 (ポイント単位)。|
-|name|文字列| グラフ オブジェクトの名前を表します。|
+|name|string|グラフ オブジェクトの名前を表します。|
 |top|double|オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。|
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 

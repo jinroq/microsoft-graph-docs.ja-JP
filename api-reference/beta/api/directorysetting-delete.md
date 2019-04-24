@@ -1,23 +1,23 @@
 ---
-title: ディレクトリの設定を削除します。
-description: ディレクトリの設定を削除します。
+title: ディレクトリ設定を削除する
+description: ディレクトリ設定を削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c66335ec863460c9b2167e25a7e78850846e105c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515826"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454863"
 ---
-# <a name="delete-a-directory-setting"></a>ディレクトリの設定を削除します。
+# <a name="delete-a-directory-setting"></a>ディレクトリ設定を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリの設定を削除します。
+ディレクトリ設定を削除します。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 バージョンは、 *groupSettings を削除*するのには名前が変更されましたが。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、 *groupsettings を削除*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,7 +29,8 @@ ms.locfileid: "29515826"
 |アプリケーション | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->特定のテナント全体を削除するか、グループの設定
+<!-- { "blockType": "ignored" } -->
+特定のテナント全体またはグループ設定を削除する
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}

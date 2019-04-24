@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c5327c246c3a1dc58b0b1431fdff330cf7b6a732
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455080"
 ---
 # <a name="list-registeredusers"></a>registeredUsers を一覧表示する
 
@@ -24,7 +24,7 @@ ms.locfileid: "29526313"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All または Directory.ReadWrite.All または Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | directory.accessasuser.all またはすべて、またはすべてのディレクトリを読み取ることができます。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 

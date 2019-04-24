@@ -1,19 +1,19 @@
 ---
-title: ConnectorGroups を更新します。
-description: Connectorgroup オブジェクトのプロパティを更新します。
+title: コネクタグループの更新
+description: コネクタグループオブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: 9d6feec19552aeeebe51ba0fab07e805c6f4a2bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455766"
 ---
-# <a name="update-connectorgroups"></a>ConnectorGroups を更新します。
+# <a name="update-connectorgroups"></a>コネクタグループの更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Connectorgroup オブジェクトのプロパティを更新します。
+コネクタグループオブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,19 +31,19 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| 使用可能な値: `applicationProxy`。|
-|name|String|ConnectorGroup の名前です。|
+|connectorGroupType|string| 可能な値は`applicationProxy`次のとおりです。|
+|name|String|コネクタグループの名前を指定します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[connectorGroup](../resources/connectorgroup.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[コネクタグループ](../resources/connectorgroup.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

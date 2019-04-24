@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455850"
 ---
 # <a name="update-chartseries"></a>Update chartseries
 
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|グラフのデータ系列の名前を表します。|
+|name|string|グラフのデータ系列の名前を表します。|
 
 ## <a name="response"></a>応答
 

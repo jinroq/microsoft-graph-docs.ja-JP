@@ -1,23 +1,23 @@
 ---
-title: ディレクトリの設定を取得します。
-description: 特定のディレクトリの設定オブジェクトのプロパティを取得します。
+title: ディレクトリの設定を取得する
+description: 特定のディレクトリ設定オブジェクトのプロパティを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0ad7b0137e741ff6c6766980f121838ae00d8200
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525291"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454845"
 ---
-# <a name="get-a-directory-setting"></a>ディレクトリの設定を取得します。
+# <a name="get-a-directory-setting"></a>ディレクトリの設定を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のディレクトリの設定オブジェクトのプロパティを取得します。
+特定のディレクトリ設定オブジェクトのプロパティを取得します。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 バージョンの名前は*groupSettings を取得*します。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンが、 *groupsettings を取得*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,7 +29,8 @@ ms.locfileid: "29525291"
 |アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->特定のテナント全体を取得または設定をグループ化
+<!-- { "blockType": "ignored" } -->
+特定のテナント全体またはグループ設定を取得する
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
@@ -47,7 +48,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[directorySetting](../resources/directorysetting.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directorysetting](../resources/directorysetting.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

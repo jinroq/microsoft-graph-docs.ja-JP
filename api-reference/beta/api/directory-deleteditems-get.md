@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d77161c19807ab99b3c9c8771ea910d1d6e90e42
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514454"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455164"
 ---
 # <a name="get-deleted-item"></a>削除済みアイテムを取得する
 
@@ -22,8 +22,8 @@ ms.locfileid: "29514454"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* ユーザー: User.Read.All、User.ReadWrite.All、Directory.Read.All
-* グループ: Group.Read.All、Group.ReadWrite.All、Directory.Read.All
+* ユーザーの場合: ユーザー。すべて。すべてのユーザーに対して読み取り。
+* グループの場合は、すべてのディレクトリを取得します。すべてのグループを取得します。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /directory/deleteditems/{id}
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept  | application/json |
+| 承諾  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -57,7 +57,7 @@ GET /directory/deleteditems/{id}
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

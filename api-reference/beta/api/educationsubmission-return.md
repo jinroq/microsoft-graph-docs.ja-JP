@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: 戻る'
-description: この操作によって、評価とフィードバックを受講者に利用可能なこの送信に関連付けられています。
+title: 'educationSubmission: return'
+description: この操作によって、この送信に関連付けられている成績とフィードバックが学生に提供されます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: b1772788230b5220b3bdc6813b122d1158e26ab2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511241"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457544"
 ---
-# <a name="educationsubmission-return"></a>educationSubmission: 戻る
+# <a name="educationsubmission-return"></a>educationSubmission: return
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この操作によって、評価とフィードバックを受講者に利用可能なこの送信に関連付けられています。 これは「取得」から「送信」の提出書類のステータスが変更され、フィードバックを提供するか、グレーディングを行うことを示します。 このアクションは、先生によってのみ実行できます。
+この操作によって、この送信に関連付けられている成績とフィードバックが学生に提供されます。 これにより、送信の状態が "送信済み" から "取得済み" に変更され、フィードバックが提供されたこと、またはその処理が完了したことを示します。 このアクションは教師のみが実行できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 

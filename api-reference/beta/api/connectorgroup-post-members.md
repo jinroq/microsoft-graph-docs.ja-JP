@@ -1,19 +1,19 @@
 ---
-title: コネクタを connectorGroup に追加します。
-description: ConnectorGroup にコネクタを追加するのにには、この API を使用します。
+title: コネクタをコネクタグループに追加する
+description: コネクタをコネクタグループに追加するには、この API を使用します。
 localization_priority: Normal
 ms.openlocfilehash: 8df6fdda80007217164f8ae2f21a1d3f8d667d23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455927"
 ---
-# <a name="add-connector-to-connectorgroup"></a>コネクタを connectorGroup に追加します。
+# <a name="add-connector-to-connectorgroup"></a>コネクタをコネクタグループに追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ConnectorGroup にコネクタを追加するのにには、この API を使用します。
+コネクタをコネクタグループに追加するには、この API を使用します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,14 +31,14 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[コネクタ](../resources/connector.md)オブジェクトへのリンクの JSON の形式を指定します。
+要求本文で、[コネクタ](../resources/connector.md)オブジェクトへのリンクの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[コネクタ](../resources/connector.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[コネクタ](../resources/connector.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -56,7 +56,7 @@ Content-length: 104
   "@odata.id": "https://graph.microsoft.com/{ver}/connector/{id}"
 }
 ```
-要求の本文には、[コネクタ](../resources/connector.md)オブジェクトへのリンクの JSON の形式を指定します。
+要求本文で、[コネクタ](../resources/connector.md)オブジェクトへのリンクの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

@@ -1,19 +1,19 @@
 ---
-title: アプリケーションを作成します。
-description: 新しいアプリケーションを作成するのにには、この API を使用します。
+title: アプリケーションを作成する
+description: この API を使用して、新しいアプリケーションを作成します。
 localization_priority: Normal
 ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455941"
 ---
-# <a name="create-application"></a>アプリケーションを作成します。
+# <a name="create-application"></a>アプリケーションを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しいアプリケーションを作成するのにには、この API を使用します。
+この API を使用して、新しいアプリケーションを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -32,14 +32,14 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[アプリケーション](../resources/application.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [application](../resources/application.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[アプリケーション](../resources/application.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[application](../resources/application.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -57,7 +57,7 @@ Content-length: 329
   "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
 }
 ```
-要求の本文には、[アプリケーション](../resources/application.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [application](../resources/application.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

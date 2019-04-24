@@ -3,11 +3,11 @@ title: FormatProtection の取得
 description: formatprotection オブジェクトのプロパティと関係を読み取ります。
 localization_priority: Normal
 ms.openlocfilehash: 5b2f994eb411f366c321c2329893d485c2cec4b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527027"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457159"
 ---
 # <a name="get-formatprotection"></a>FormatProtection の取得
 

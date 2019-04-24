@@ -1,21 +1,21 @@
 ---
-title: 'directoryObject: デルタ'
-description: 'Get を新規作成、更新、または、次の種類のディレクトリ オブジェクトを削除: ユーザー、グループ、および 1 つのデルタのクエリで、組織の連絡先です。 詳細については変更の履歴を参照してください。'
+title: 'directoryobject: delta'
+description: 単一のデルタクエリで、次の種類の新規作成、更新、または削除されたディレクトリオブジェクトを取得します。ユーザー、グループ、組織の連絡先。 詳細については、「変更履歴」を参照してください。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455171"
 ---
-# <a name="directoryobject-delta"></a>directoryObject: デルタ
+# <a name="directoryobject-delta"></a>directoryobject: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get を新規作成、更新、または、次の種類のディレクトリ オブジェクトを削除:[ユーザー](../resources/user.md)、[グループ](../resources/group.md)および[組織の連絡先](../resources/orgcontact.md)を 1 つのデルタのクエリにします。 詳細については、[変更履歴の記録](/graph/delta-query-overview)を参照してください。
+単一のデルタクエリで、次の種類の新規作成、更新、または削除されたディレクトリオブジェクトを取得します。[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、[組織の連絡先](../resources/orgcontact.md)。 詳細については、「[変更履歴](/graph/delta-query-overview)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -29,7 +29,7 @@ Get を新規作成、更新、または、次の種類のディレクトリ オ
 
 ## <a name="http-request"></a>HTTP 要求
 
-変更の追跡を開始するには、directoryObjects リソースでデルタ関数を含む要求を行います。
+変更の追跡を開始するには、directoryobjects リソースにデルタ関数を含む要求を行います。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,23 +39,23 @@ GET /directoryObjects/delta
 
 ## <a name="query-parameters"></a>クエリ パラメーター
 
-変更を追跡する一連の 1 つまたは複数の**delta**関数の呼び出しが発生します。 任意のクエリ パラメーターを使用する場合 (以外の`$deltatoken`と`$skiptoken`)、**デルタ**の初期要求で指定する必要があります。 Microsoft Graph が自動的に任意指定のパラメーターをエンコードのトークンの部分に、`nextLink`または`deltaLink`の応答で提供される URL です。
+変更の追跡では、1回以上の**デルタ**関数呼び出しが発生します。 クエリパラメーター ( `$deltatoken`および`$skiptoken`以外) を使用する場合は、最初の**デルタ**要求で指定する必要があります。 Microsoft Graph は、指定されたパラメーターを、 `nextLink`応答で指定`deltaLink`されたまたは URL のトークン部分に自動的にエンコードします。
 
 必要なクエリ パラメーターを前もって 1 回指定しておくだけで済みます。
 
 その後の要求では、前の応答で得られた `nextLink` や `deltaLink` の URL をコピーして適用します。エンコード済みの必要なパラメーターがこの URL に既に含まれているためです。
 
-| クエリ パラメーター | 種類 |説明|
+| クエリ パラメーター | 型 |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数の `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
-このメソッドは、応答をカスタマイズするためのオプションの OData クエリ パラメーターをサポートします。
+このメソッドは、応答をカスタマイズするためのオプションの OData クエリパラメーターをサポートします。
 
-- 使用することができます`$filter`、特殊な`isOf`directoryObject から派生した型のサブセットをフィルター処理する演算子です。
-  - 使用して複数の式を組み合わせることができます、 `or`、1 つのデルタ クエリを複数の種類を追跡できるようにします。 詳細については、 [3 番目の例](#request-3)を参照してください。
+- 特別な`isOf`演算子`$filter`と共にを使用して、directoryobject から派生した型のサブセットをフィルター処理できます。
+  - を使用して複数の式`or`を組み合わせることができます。これにより、1つのデルタクエリで複数の種類を追跡できます。 詳細については、 [3 番目の例](#request-3)を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -63,7 +63,7 @@ GET /directoryObjects/delta
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | 返す最小 = <br><br>このヘッダーを指定する要求を使用すると、`deltaLink`最後のラウンド以降に変更されたオブジェクトのプロパティのみを返します。 省略可能。 |
+| Prefer | 戻り値 = 最小 <br><br>を`deltaLink`使用する要求でこのヘッダーを指定すると、最後のラウンド以降に変更されたオブジェクトプロパティのみが返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -71,41 +71,41 @@ GET /directoryObjects/delta
 
 ### <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答の本体で応答コードと[ユーザー](../resources/directoryobject.md)コレクションのオブジェクトです。 応答にも含まれています、`nextLink`の URL、または`deltaLink`URL です。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/directoryobject.md) コレクション オブジェクトを返します。 応答には、 `nextLink` url または`deltaLink` url も含まれます。
 
-- 場合、`nextLink`の URL が返されます。
-  - これは、他のページのセッションで取得するデータがあることを示します。 アプリケーションの継続を使用して要求を作成する、`nextLink`までの URL を`deltaLink`URL が応答に含まれています。
-  - 応答には、同じ一連最初のデルタ ・ クエリ要求のようにプロパティにはが含まれています。 これにより、デルタ ・ サイクルを開始するときに、オブジェクトのすべての現在の状態をキャプチャすることができます。
+- URL が`nextLink`返される場合は、次のようになります。
+  - これは、セッションで取得するデータのページが他にもあることを示しています。 アプリケーションは、応答に`nextLink` `deltaLink` url が含まれるまで、url を使用して要求を引き続き行います。
+  - 応答には、初期デルタクエリ要求と同じプロパティセットが含まれています。 これにより、デルタサイクルを開始するときに、オブジェクトの現在の完全な状態を取得できます。
 
-- 場合、`deltaLink`の URL が返されます。
-  - これは、返されるリソースの既存の状態に関するデータがあることを示します。 保存し、使用して、`deltaLink`について学習するための URL は次のラウンドでリソースを変更します。
-  - 指定の選択肢がある場合、`Prefer:return=minimal`時間以降に変更されたプロパティのみの応答の値に追加する、ヘッダー、`deltaLink`が発行されました。
+- URL が`deltaLink`返される場合は、次のようになります。
+  - これは、返されるリソースの既存の状態に関するデータがないことを示します。 `deltaLink` URL を保存して使用し、次のラウンドでのリソースの変更について学習します。
+  - `Prefer:return=minimal`ヘッダーを指定することもできます。これは、が発行`deltaLink`されてから変更されたプロパティのみを応答値に含めることを選択することです。
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>既定値: は、最初のデルタ ・ リクエストと同じプロパティを返す
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>Default: 初期デルタ要求と同じプロパティを返す
 
-既定では、要求を使用して、`deltaLink`または`nextLink`次のように最初のデルタ ・ クエリで選択したのと同じプロパティを返します。
+既定では、次の`deltaLink`方法`nextLink`で、を使用して、または初期デルタクエリで選択されたものと同じプロパティを返すことができます。
 
-- プロパティが変更された場合は、応答に新しい値が含まれます。 これには、null 値に設定されているプロパティが含まれます。
-- プロパティが変更されていない場合は、応答に古い値が含まれます。
-- プロパティの場合は、含まれませんの応答ですべての前に設定されています。
+- プロパティが変更されている場合、新しい値は応答に含まれます。 これには、null 値に設定されているプロパティが含まれます。
+- プロパティが変更されていない場合は、古い値が応答に含まれます。
+- プロパティが設定されていない場合は、応答には含まれません。
 
 
-> **注:** この現象に関して、応答を見ることはできませんプロパティを変更するかどうかどうかを確認します。 また、デルタの応答をすべてのプロパティ値が含まれているために大きくなる傾向があります。
+> **注:** この動作では、応答を見ることで、プロパティが変更されているかどうかを判断することはできません。 また、デルタ応答は、すべてのプロパティ値を含むため、サイズが大きくなる傾向があります。
 
-#### <a name="alternative-return-only-the-changed-properties"></a>: 別の方法が変更されたプロパティのみを返す
+#### <a name="alternative-return-only-the-changed-properties"></a>代替方法: 変更されたプロパティのみを返す
 
-オプションの要求ヘッダーでは - を追加する`prefer:return=minimal`の次の動作の結果します。
+オプションの要求ヘッダーを追加`prefer:return=minimal`する--次のような動作になります。
 
-- プロパティが変更された場合は、応答に新しい値が含まれます。 これには、null 値に設定されているプロパティが含まれます。
-- プロパティが変更されていない場合は、プロパティが含まれていない応答ですべての。 (既定の動作と異なります)
+- プロパティが変更されている場合、新しい値は応答に含まれます。 これには、null 値に設定されているプロパティが含まれます。
+- プロパティが変更されていない場合、プロパティは応答には含まれません。 (既定の動作とは異なります)。
 
-> **注:** ヘッダーを追加することができます、`deltaLink`デルタ ・ サイクルの時間内の任意の時点で要求します。 ヘッダーの応答に含まれるプロパティのセットにのみ影響し、デルタ ・ クエリを実行する方法には影響しません。
+> **注:** このヘッダーは、デルタサイクルの`deltaLink`任意の時点で要求に追加できます。 ヘッダーは、応答に含まれているプロパティのセットにのみ影響し、デルタクエリの実行方法には影響しません。
 
 ## <a name="example"></a>例
 
 ### <a name="request-1"></a>要求 1
 
-要求の例を次に示します。 ありません`$select`パラメーター、プロパティの既定のセットが追跡され、返されるようにします。
+要求の例を次に示します。 パラメーターがない`$select`ので、プロパティの既定のセットが追跡されて返されます。
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -117,9 +117,9 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>応答 1
 
-使用すると、次の応答の例では`deltaLink`クエリの初期化から取得します。 No`isOf`フィルターが使用されているため、directoryObject から派生したすべての型が返されます。
+次に、クエリの初期化で`deltaLink`取得した場合の応答の例を示します。 フィルター `isOf`は使用されていないので、directoryobject から派生したすべての型が返されます。
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -184,7 +184,7 @@ Content-type: application/json
 
 ### <a name="request-2"></a>要求 2
 
-次の使用例は、最小限に抑える別の応答の動作の使用を示しています。
+次の例は、代替の最小応答動作の使用法を示しています。
 <!-- {
   "blockType": "request",
   "name": "directoryObject_delta"
@@ -197,7 +197,7 @@ Prefer: return=minimal
 
 ### <a name="response-2"></a>応答 2
 
-使用すると、次の応答の例では`deltaLink`クエリの初期化から取得します。 実際に変更されたプロパティだけが返されますを注意してください。
+次に、クエリの初期化で`deltaLink`取得した場合の応答の例を示します。 メモ実際に変更されたプロパティのみが返されます。
 
 <!-- {
   "blockType": "response",
@@ -237,7 +237,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>要求 3
 
-次の例は、最初の要求を使用して、`isOf`のユーザーとグループのエンティティのみを除外する演算子。
+次の例では、 `isOf`演算子を使用して、ユーザーエンティティとグループエンティティのみを除外する最初の要求を示しています。
 <!-- {
   "blockType": "request",
   "name": "directoryobject_delta"
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 ### <a name="response-3"></a>応答 3
 
-使用すると、次の応答の例では`deltaLink`クエリの初期化から取得します。 ユーザーとグループのオブジェクトのみが返されることに注意してください。
+次に、クエリの初期化で`deltaLink`取得した場合の応答の例を示します。 ユーザーオブジェクトとグループオブジェクトのみが返されることに注意してください。
 
 <!-- {
   "blockType": "response",
@@ -298,8 +298,8 @@ Content-type: application/json
 }
 ```
 
-- [グラフ データの変更を追跡するためにデルタのクエリを使用します](/graph/delta-query-overview)。
-- [ユーザーの増分の変更を取得](/graph/delta-query-users)します。
+- [デルタクエリを使用して、Microsoft Graph データの変更を追跡](/graph/delta-query-overview)します。
+- [ユーザーに対する増分の変更を取得](/graph/delta-query-users)します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

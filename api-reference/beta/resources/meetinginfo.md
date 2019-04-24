@@ -1,27 +1,27 @@
 ---
-title: meetingInfo リソースの種類
-description: 会議の情報を作成または、ミーティングに参加するために指定します。
+title: 会議情報リソースの種類
+description: 会議を作成または参加するために指定された会議情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c1126a3408b8353e927b5653fe60dd4a89125051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509358"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457138"
 ---
-# <a name="meetinginfo-resource-type"></a>meetingInfo リソースの種類
+# <a name="meetinginfo-resource-type"></a>会議情報リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会議の情報を作成または、ミーティングに参加するために指定します。
+会議を作成または参加するために指定された会議情報。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | ブール値 |  |
+| allowConversationWithoutHost | ブール型 |  |
 
 ## <a name="json-representation"></a>JSON 表記
 

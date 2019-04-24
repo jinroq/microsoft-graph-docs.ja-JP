@@ -1,23 +1,23 @@
 ---
-title: ディレクトリ設定のテンプレートを取得します。
-description: ディレクトリ設定のテンプレートでは、テナント内で元の設定を作成する可能性があります設定のテンプレートを表します。 この操作には、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティの取得が可能します。
+title: ディレクトリ設定テンプレートを取得する
+description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c097d9919a52cde8559ead338f433b27a1e3e73d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454940"
 ---
-# <a name="get-a-directory-setting-template"></a>ディレクトリ設定のテンプレートを取得します。
+# <a name="get-a-directory-setting-template"></a>ディレクトリ設定テンプレートを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリ設定のテンプレートでは、テナント内で元の設定を作成する可能性があります設定のテンプレートを表します。 この操作には、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティの取得が可能します。
+ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 バージョンの名前は*groupSettingTemplate を取得*します。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、 *groupsettingtemplate を取得*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -46,7 +46,7 @@ GET /directorySettingTemplates/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[directorySettingTemplate](../resources/directorysettingtemplate.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directorysettingtemplate](../resources/directorysettingtemplate.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

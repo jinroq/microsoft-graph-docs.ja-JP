@@ -1,15 +1,15 @@
 ---
 title: ID のリストからディレクトリ オブジェクトを取得します。
-description: 選択 ' クエリ オプションはこの操作に使用できません。
+description: この操作に ` クエリ オプションは使用できません。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7c76335889f336af6098eb00740085b40614c1ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455178"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -54,8 +54,8 @@ POST /directoryObjects/getByIds
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String コレクション| 検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべてのディレクトリで定義されているリソースの種類が含まれています。 [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)から派生した任意のオブジェクトをコレクションに指定する場合があります。例:[ユーザー](/graph/api/resources/user?view=graph-rest-beta)、[グループ](/graph/api/resources/group?view=graph-rest-beta)、[デバイス](/graph/api/resources/device?view=graph-rest-beta)、およびようにします。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーへの参照を検索するのには、組織は、 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)を指定します。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべての[クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーの組織への参照を除いて、ディレクトリで定義されているリソースの種類が含まれています。 値は、大文字小文字を区別しません。|
+|ids|String collection| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
+|types|String collection| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) から派生する任意のオブジェクトをコレクションに指定できます。例: [user](/graph/api/resources/user?view=graph-rest-beta)、[group](/graph/api/resources/group?view=graph-rest-beta)、[device](/graph/api/resources/device?view=graph-rest-beta) など。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照を検索するには、[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を指定します。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります ([クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照をのぞく)。 値では、大文字と小文字は区別されません。|
 
 ## <a name="response"></a>応答
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",

@@ -1,32 +1,32 @@
 ---
-title: AccessReview を作成します。
-description: Azure AD のレビュー機能にアクセス、新しい accessReview オブジェクトを作成します。
+title: accessreview を作成する
+description: Azure AD access レビュー機能で、新しい accessreview オブジェクトを作成します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 669b11a8f3b52e867d6b3e803c9419968924928b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456823"
 ---
-# <a name="create-accessreview"></a>AccessReview を作成します。
+# <a name="create-accessreview"></a>accessreview を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、新しい[accessReview](../resources/accessreview.md)オブジェクトを作成します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、新しい[accessreview](../resources/accessreview.md)オブジェクトを作成します。
 
-この要求を行う前に呼び出し元には以前[業務フローのテンプレートの一覧を取得](businessflowtemplate-list.md)するにはの値を設定する`businessFlowTemplateId`要求に含める。
+この要求を行う前に、発信者は以前に[ビジネスフローテンプレートの一覧を取得](businessflowtemplate-list.md)して、の`businessFlowTemplateId`値を要求に含める必要があります。
 
-呼び出し元では、この要求を行った後[、デバッギングを作成](programcontrol-create.md)、アクセス確認をプログラムにリンクする必要があります。  
+この要求を行った後、呼び出し元は、プログラムにアクセスレビューをリンクするために[programcontrol を作成](programcontrol-create.md)する必要があります。  
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All、デバッギングを作成する後続の呼び出しで完全なシナリオを ProgramControl.ReadWrite.All する必要があり、 |
+|委任 (職場または学校のアカウント)     | programcontrol を使用して、次の方法でプログラムを完全に実行することにより、プログラムを作成することができます。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -38,38 +38,38 @@ POST /accessReviews
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [accessReview](../resources/accessreview.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
 
-次の表は、accessReview を作成するときに必要なプロパティを示します。
+次の表に、accessreview の作成時に必要なプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | アクセス確認の名前です。  |
-| `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
-| `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。   |
-| `description`             |`String`                                                        | 校閲者を表示する説明します。 |
-| `businessFlowTemplateId`  |`String`                                                        | ビジネス フロー テンプレート識別子の[businessFlowTemplate](../resources/businessflowtemplate.md)から取得します。  |
-| `reviewerType`            |`String`                                                        | リレーションシップの種類のいずれかの確認済みのオブジェクトのアクセス許可の校閲者の`self`、 `delegated`、または`entityOwners`。 | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス確認を作成するため、グループのメンバーシップなどのユーザーがアプリケーションの割り当てオブジェクトです。 | 
+| `displayName`             |`String`                                                        | アクセスレビュー名。  |
+| `startDateTime`           |`DateTimeOffset`                                                | レビューが開始される予定の日時。  これは、将来の日付である必要があります。   |
+| `endDateTime`             |`DateTimeOffset`                                                | レビューが終了する予定の日時。 これは、開始日よりも1日以上後でなければなりません。   |
+| `description`             |`String`                                                        | レビュー担当者に表示する説明。 |
+| `businessFlowTemplateId`  |`String`                                                        | [businessflowtemplate](../resources/businessflowtemplate.md)から取得したビジネスフローテンプレートの識別子。  |
+| `reviewerType`            |`String`                                                        | レビュー対象のオブジェクトのアクセス権に対するレビュー担当者の関係の種類`self`、 `delegated`いずれか`entityOwners`、または。 | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセスレビューが作成されるオブジェクト (グループのメンバーシップ、アプリケーションに対するユーザーの割り当てなど)。 | 
 
 
-指定された reviewerType に値が設定されている場合`delegated`、呼び出し元は含める必要がありますし、`reviewers`プロパティは、一連の校閲者に[割り当てられていません](../resources/useridentity.md)。
+指定した reviewerType に値`delegated`がある場合は、レビュー担当者にも`reviewers`プロパティが含まれている必要があります。これには、レビューアーの[useridentity](../resources/useridentity.md)のコレクションが含まれています。
 
-さらに、呼び出し元は、一連の定期的なレビューを作成するか、既定の確認動作を変更する設定を含めることができます。 具体的には、定期的なレビューを作成するには、呼び出し元する必要があります、 `accessReviewRecurrenceSettings` 、access 内で設定を確認します
+また、呼び出し元には、定期的なレビューのシリーズを作成したり、既定のレビュー動作から変更したりするための設定を含めることができます。 特に、定期的なレビューを作成するには、呼び出し元`accessReviewRecurrenceSettings`に、アクセスレビュー設定内にを含める必要があります。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201, Created`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。
+成功した場合、このメソッド`201, Created`は応答コードと、応答本文で[accessreview](../resources/accessreview.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
-これは、校閲者として、2 人のユーザーを明示的に指定する 1 回限り (定期ではない) アクセス確認を作成する例です。
+これは、1回限り (繰り返しではない) アクセスレビューを作成し、2人のユーザーをレビュー担当者として明示的に指定する例です。
 
 ##### <a name="request"></a>要求
-要求の本文には、 [accessReview](../resources/accessreview.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 40dfe68ec16415dbfa4abcbdb46da8cc9f89c961
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453235"
 ---
 # <a name="update-rangefont"></a>ｒangefont を更新する
 
@@ -39,18 +39,18 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
-|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
-|name|文字列|フォント名 (例: "Calibri")|
+|name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ|
-|underline|文字列|フォントに適用する下線の種類です。 可能な値: `None`、 `Single`、 `Double`、 `SingleAccountant`、 `DoubleAccountant`。|
+|underline|文字列|フォントに適用する下線の種類。 使用可能な値: `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookRangeFont](../resources/rangefont.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeFont](../resources/rangefont.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

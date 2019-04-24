@@ -1,21 +1,21 @@
 ---
 title: 'イベント: dismissReminder'
-description: ユーザーの予定表でイベントをトリガーされたアラームを閉じます。
+description: ユーザーの予定表のイベントに対してトリガーされたアラームを消します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 885a285e3c35f59b0fde76be5c84ae152a2ad13a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523051"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457509"
 ---
 # <a name="event-dismissreminder"></a>イベント: dismissReminder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー[の予定表](../resources/calendar.md)の[イベント](../resources/event.md)のトリガーされたアラームを閉じます。
+ユーザーの[予定表](../resources/calendar.md)の[イベント](../resources/event.md)に対してトリガーされたアラームを消します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

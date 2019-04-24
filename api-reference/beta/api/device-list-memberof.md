@@ -1,21 +1,19 @@
 ---
-title: デバイス グループを一覧表示
-description: このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
+title: デバイス グループを一覧表示する
+description: このデバイスが直接メンバーであるグループを取得します。 この操作は推移的ではありません。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8cd803fbb89f16488e29b0f6490fbe06eee8f6c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455258"
 ---
-# <a name="list-device-groups"></a>デバイス グループを一覧表示
+# <a name="list-device-groups"></a>デバイス グループを一覧表示する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
+このデバイスが直接メンバーであるグループを取得します。 この操作は推移的ではありません。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -57,7 +55,7 @@ GET /devices/{id}/memberOf
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
 ### <a name="response"></a>応答
@@ -95,8 +93,5 @@ Content-type: application/json
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-list-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }-->

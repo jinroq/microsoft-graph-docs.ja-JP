@@ -5,25 +5,25 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453589"
 ---
 # <a name="workbook-resource-type"></a>Workbook リソースタイプ
 
 Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
 
 ## <a name="properties"></a>プロパティ
-なし
+None
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[セッションを作成する](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |永続または非永続セッションを開始するために、ブック セッションを作成します。|
-|[セッションを閉じる](../api/workbook-closesession.md) | なし |既存のセッションを終了します。|
+|[セッションを閉じる](../api/workbook-closesession.md) | None |既存のセッションを終了します。|
 |[セッションを最新の情報に更新](../api/workbook-refreshsession.md) | なし |既存のセッションを更新します。|
 
 
@@ -31,14 +31,14 @@ Workbook は、ワークシート、テーブル、範囲などの関連する�
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |names|[NamedItem](nameditem.md) コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
-|テーブル|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
+|tables|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
 |worksheets|[Worksheet](worksheet.md) コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
 
 ## <a name="functions"></a>関数
 
-[Excel の関数](#functions):構文 `POST /workbook/functions/{function-name}` を使用し、また JSON オブジェクトを使用して本文の関数の引数を提供することでブック関数を呼び出します。関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。`null` の `error` 値は、関数の実行が成功したことを示します。 
+[Excel の関数](#functions):構文 `POST /workbook/functions/{function-name}` を使用し、また JSON オブジェクトを使用して本文の関数の引数を提供することでブック関数を呼び出します。関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。`error` の `null` 値は、関数の実行が成功したことを示します。 
 
-サポートされている関数の完全な一覧は、[こちら](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)です。特定のパラメーター名とデータ型については関数のシグネチャを参照してください。
+サポートされている関数の完全な一覧は、[こちら](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188) です。特定のパラメーター名とデータ型については関数のシグネチャを参照してください。
 
 _重要な注意点: _ 
 * 範囲入力パラメーターは、範囲のアドレス文字列ではなく、range オブジェクトを使用して提供されます。  

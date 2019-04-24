@@ -1,21 +1,21 @@
 ---
-title: EducationSynchronizationProfile を作成します。
-description: 'テナントの新しい学校のデータの同期プロファイルの要求を作成します。 プロファイルの状態を取得する状態を照会します。 '
+title: educationSynchronizationProfile を作成する
+description: 'テナントに新しい学校データ同期プロファイルの要求を作成します。 状態を照会して、プロファイルの状態を取得します。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: efc9b76405b57d0e47d645d0e7b00dc9425ba71b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457404"
 ---
-# <a name="create-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を作成します。
+# <a name="create-an-educationsynchronizationprofile"></a>educationSynchronizationProfile を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントの新しい学校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の要求を作成します。 プロファイルの状態を取得する[クエリ状態](educationsynchronizationprofilestatus-get.md)にします。 
+テナントに新しい学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の要求を作成します。 [状態を照会](educationsynchronizationprofilestatus-get.md)して、プロファイルの状態を取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "29520817"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -36,13 +36,13 @@ POST /synchronizationProfiles
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
-| Content-Type | string | application/json 必須です。 |
+| Content-Type | string | アプリケーション/json。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`202, Accepted`応答コードおよび応答の本文内の[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトです。
+成功した場合、このメソッド`202, Accepted`は応答コードと、応答本文で[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

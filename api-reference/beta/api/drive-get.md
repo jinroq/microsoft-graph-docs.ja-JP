@@ -3,20 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ドライブを取得する
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454744"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[Drive](../resources/drive.md) リソースのプロパティとリレーションシップを取得します。
+[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。
 
 ドライブとは、OneDrive または SharePoint のドキュメント ライブラリなど、ファイル システムの最上位コンテナーです。
 
@@ -38,7 +36,7 @@ ms.locfileid: "30481287"
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -52,7 +50,7 @@ GET /me/drive
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -60,9 +58,9 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメータ名 | 値  | 説明                                       |
+| パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | 必須です。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -70,7 +68,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -78,9 +76,9 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメータ名 | 値  | 説明                                       |
+| パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | 必須です。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -94,7 +92,7 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメータ名 | 値  | 説明                                       |
+| パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
@@ -107,12 +105,12 @@ GET /sites/{siteId}/drive
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| パラメータ名 | 値  | 説明                                       |
+| パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 
@@ -155,15 +153,18 @@ Content-type: application/json
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "Drives/Get drive",
   "suppressions": [
-    "Error: /api-reference/beta/api/drive-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+      "Warning: /api-reference/v1.0/api/drive-get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
+  "tocPath": "Drives/Get drive"
+} -->

@@ -1,21 +1,21 @@
 ---
-title: ディレクトリの役割] ボックスの一覧 scopedMembers
-description: ディレクトリの役割の scopedRoleMembership オブジェクトのリストを取得します。
+title: ディレクトリロールの scopedMembers を一覧表示する
+description: ディレクトリロールの scopedRoleMembership オブジェクトのリストを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ab6b68ac96e35249ef216266fafed76be68f40b7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454961"
 ---
-# <a name="list-scopedmembers-for-a-directory-role"></a>ディレクトリの役割] ボックスの一覧 scopedMembers
+# <a name="list-scopedmembers-for-a-directory-role"></a>ディレクトリロールの scopedMembers を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリの役割の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのリストを取得します。
+ディレクトリロールの[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -43,7 +43,7 @@ GET /directoryroles/{id}/scopedMembers
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

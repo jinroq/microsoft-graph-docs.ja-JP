@@ -1,27 +1,27 @@
 ---
 title: networkInterface リソースの種類
-description: このホストに関連付けられているネットワーク インターフェイス カード (NIC) を表します。
+description: このホストに関連付けられているネットワークインターフェイスカード (NIC) を表します。
 localization_priority: Normal
 ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457068"
 ---
 # <a name="networkinterface-resource-type"></a>networkInterface リソースの種類
 
-このホストに関連付けられているネットワーク インターフェイス カード (NIC) を表します。
+このホストに関連付けられているネットワークインターフェイスカード (NIC) を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|説明|String|NIC の説明 (イーサネット アダプターなどで、ワイヤレス LAN アダプターのローカル エリア接続 * <> # など。)。|
-|ipV4Address|String|この NIC に関連付けられている最後の IPv4 アドレス|
-|ipV6Address|String|最終公開 (別名) IPv6 グローバル アドレスこの NIC に関連付けられています。|
-|localIpV6Address|String|この NIC に関連付けられているローカルの (リンク ローカル アドレスまたはサイト ローカル) IPv6 アドレスを最後します。|
-|macAddress|String|このホスト上の NIC の MAC アドレスです。|
+|description|String|NIC の説明 (イーサネットアダプター、ワイヤレス LAN アダプターのローカルエリア接続 * < # > など)。|
+|ipV4Address|String|この NIC に関連付けられている最後の IPv4 アドレス。|
+|ipV6Address|String|この NIC に関連付けられている最後のパブリック (グローバル) IPv6 アドレス。|
+|localIpV6Address|String|この NIC に関連付けられている最後のローカル (リンクローカルまたはサイトローカル) IPv6 アドレス。|
+|macAddress|String|このホスト上の NIC の MAC アドレス。|
 
 ## <a name="json-representation"></a>JSON 表記
 

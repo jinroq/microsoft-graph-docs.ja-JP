@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
 ms.openlocfilehash: ccacb3626d982cc2cd08fe31ba443fadcdfaa315
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366761"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454224"
 ---
 # <a name="get-agedaccountsreceivable"></a>agedAccountsReceivable を取得する
 Dynamics 365 Business Central の、古くなった売掛金勘定レポートオブジェクトのプロパティと関係を取得します。

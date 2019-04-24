@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 95e7af555c1ac857272994dc634ed0dc9f1b0fad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951636"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453256"
 ---
 # <a name="range-intersection"></a>範囲:Intersection
 
@@ -40,9 +40,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|anotherRange|文字列|範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。|
+|anotherRange|string|範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。|
 
 ## <a name="response"></a>応答
 

@@ -6,11 +6,11 @@ title: ファイルをチェックアウトする
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454730"
 ---
 # <a name="check-out-a-driveitem-resource"></a>DriveItem リソースをチェックアウトする
 

@@ -1,21 +1,21 @@
 ---
 title: directoryRoleTemplates を一覧表示する
-description: directoryRoleTemplate オブジェクトのリストを取得します。
+description: directoryroletemplate オブジェクトのリストを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 842f243df4010c51dfd95f038c10cebdd5184691
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526264"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454757"
 ---
 # <a name="list-directoryroletemplates"></a>directoryRoleTemplates を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Directoryroletemplate オブジェクトのリストを取得します。
+directoryroletemplate オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

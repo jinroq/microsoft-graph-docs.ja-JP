@@ -1,19 +1,19 @@
 ---
 title: エンドポイントを取得する
-description: プロパティと、特定のエンドポイント オブジェクトの関係を取得します。
+description: 特定のエンドポイントオブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457469"
 ---
 # <a name="get-endpoint"></a>エンドポイントを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、特定の[エンドポイント](../resources/endpoint.md)オブジェクトの関係を取得します。
+特定の[エンドポイント](../resources/endpoint.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -37,14 +37,14 @@ GET /groups/{id}/endpoints/{id}
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。|
-| Content-Type   | アプリケーションまたは Json |
+| Content-Type   | Application/Json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[エンドポイント](../resources/endpoint.md)オブジェクト。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[エンドポイント](../resources/endpoint.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
@@ -56,7 +56,7 @@ GET /groups/{id}/endpoints/{id}
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

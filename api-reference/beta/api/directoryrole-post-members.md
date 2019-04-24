@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2db3f1d7d001dfde5ae92bec7b54ae2b0ccd162f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509442"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454837"
 ---
 # <a name="add-directory-role-member"></a>ディレクトリ ロールのメンバーを追加する
 
@@ -60,7 +60,7 @@ Content-length: 30
   }
 }
 ```
-要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。
+要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

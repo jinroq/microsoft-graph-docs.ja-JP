@@ -1,21 +1,21 @@
 ---
-title: synchronizationRule リソースの種類
-description: 同期する対象のオブジェクトを含む、同期エンジンと、方向の同期の実行方法を定義するソース ディレクトリからオブジェクトをコピー先のディレクトリ内のオブジェクトと一致する方法、および属性先のディレクトリにソースから同期されている場合は変換する必要があります。
+title: 同期規則リソースの種類
+description: 同期エンジンに対して同期を実行する方法を定義します。どのオブジェクトを同期するか、どの方向に、どのようにソースディレクトリのオブジェクトをターゲットディレクトリのオブジェクトと照合するか、どのように属性を使用するかを指定します。ソースとターゲットディレクトリの同期時に変換する必要があります。
 localization_priority: Normal
 ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517926"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453645"
 ---
-# <a name="synchronizationrule-resource-type"></a>synchronizationRule リソースの種類
+# <a name="synchronizationrule-resource-type"></a>同期規則リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期する対象のオブジェクトを含む、同期エンジンと、方向の同期の実行方法を定義するソース ディレクトリからオブジェクトをコピー先のディレクトリ内のオブジェクトと一致する方法、および属性先のディレクトリにソースから同期されている場合は変換する必要があります。
+同期エンジンに対して同期を実行する方法を定義します。どのオブジェクトを同期するか、どの方向に、どのようにソースディレクトリのオブジェクトをターゲットディレクトリのオブジェクトと照合するか、どのように属性を使用するかを指定します。ソースとターゲットディレクトリの同期時に変換する必要があります。
 
->**注:** 同期規則では、目的のディレクトリにソース ディレクトリからの一方向の同期を定義します。 ソースとターゲットのディレクトリは、ルールのプロパティの一部として定義されます。
+>**注:** 同期ルールは、ソースディレクトリからターゲットディレクトリへの一方向での同期を定義します。 ソースディレクトリとターゲットディレクトリは、ルールのプロパティの一部として定義されます。
 
 同期ルールは、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
 
@@ -23,14 +23,14 @@ ms.locfileid: "29517926"
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|Editable       |ブール値    |`true`場合は同期ルールをカスタマイズすることができます。`false`場合は、これは読み取り専用で、変更してはなりません。|
-|id             |String     |同期規則の識別子です。 同期エンジンによって認識される識別子の 1 つである必要があります。 ルールの識別子を参照して、API によって返される同期テンプレートをサポートします。|
-|metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md)コレクション |プロパティをさらに拡張します。 サポート チームによって明示的に指示しない限り、メタデータの値を変更できませんする必要があります。|
-|name           |String     |同期規則の名前を人間が判読できます。 null 許容ではありません。|
-|objectMappings |[objectMapping](synchronization-objectmapping.md)コレクション    |ルールでサポートされているオブジェクトのマッピングのコレクションです。 どのオブジェクトを同期する必要があります同期エンジンに指示します。|
-|priority       |整数    |[SynchronizationSchema](synchronization-synchronizationschema.md)でその他の規則を基準に優先順位です。 優先度番号が最も小さいルールが最初に処理されます。|
-|sourceDirectoryName       |String    |ソース ディレクトリの名前です。 [SynchronizationSchema](synchronization-synchronizationschema.md)でディレクトリの定義のいずれかに一致する必要があります。|
-|targetDirectoryName       |String    |コピー先のディレクトリの名前です。 [SynchronizationSchema](synchronization-synchronizationschema.md)でディレクトリの定義のいずれかに一致する必要があります。|
+|可能       |ブール型    |`true`同期ルールをカスタマイズできる場合は、`false`このルールは読み取り専用であり、変更する必要はありません。|
+|id             |String     |同期ルール識別子。 同期エンジンで認識される識別子のいずれかである必要があります。 サポートされているルール識別子は、API によって返される同期テンプレートにあります。|
+|metadata       |[stringkeystringvaluepair](synchronization-stringkeystringvaluepair.md)コレクション |追加の拡張機能のプロパティ。 サポートチームによって明示的に指示されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |ユーザーが読み取ることができる同期ルールの名前。 null 許容ではありません。|
+|objectmappings |[objectmapping](synchronization-objectmapping.md)コレクション    |ルールでサポートされているオブジェクトマッピングのコレクション。 同期するオブジェクトを同期エンジンに通知します。|
+|priority       |整数    |[同期スキーマ](synchronization-synchronizationschema.md)内の他のルールに対する優先度。 優先度が最も低いルールが最初に処理されます。|
+|sourceDirectoryName       |String    |ソースディレクトリの名前。 は、[同期スキーマ](synchronization-synchronizationschema.md)のディレクトリ定義のいずれかと一致している必要があります。|
+|targetDirectoryName       |String    |ターゲットディレクトリの名前。 は、[同期スキーマ](synchronization-synchronizationschema.md)のディレクトリ定義のいずれかと一致している必要があります。|
 
 ## <a name="json-representation"></a>JSON 表記
 

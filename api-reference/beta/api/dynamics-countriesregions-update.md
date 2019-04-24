@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 29677ac148a79b0a6aa8fd8b7650c0d9fa8d26e9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454154"
 ---
 # <a name="update-countriesregions"></a>countriesRegions の更新
 Dynamics 365 Business Central の国/地域オブジェクトのプロパティを更新します。

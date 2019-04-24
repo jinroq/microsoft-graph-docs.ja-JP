@@ -1,23 +1,23 @@
 ---
-title: Permissions
-description: '指定されたユーザーによって所有されている、最近削除したアイテムの一覧を取得します。  '
+title: アクセス許可
+description: '指定したユーザーが所有している最近削除されたアイテムのリストを取得します。  '
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455066"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a>**ユーザーによって所有されている削除済みのアイテムを一覧表示します。**
+# <a name="list-deleted-items-owned-by-a-user"></a>**ユーザーが所有する削除済みアイテムを一覧表示する**
 
-指定されたユーザーによって所有されている、最近削除したアイテムの一覧を取得します。  
+指定したユーザーが所有している最近削除されたアイテムのリストを取得します。  
 
-現在、削除されたリスト アイテムの機能はユーザーによって所有されているリソースを[グループ化](../resources/group.md)します。
+現時点では、削除済みアイテムのリスト機能は、ユーザーが所有する[グループ](../resources/group.md)リソースに対してのみサポートされています。
 
-これは、改ページ調整がサポートされていないこと、サービスの操作です。  API が ID で並べ替えて、ユーザーが所有する最大 1,000 の削除されたオブジェクトを返します。  ユーザーを所有するか 1,000 以上の削除済みオブジェクトの API には、nothing を返します。
+これは、サービスのアクションであり、改ページ処理をサポートしていないことを意味します。  API は、ユーザーが所有する最大1000の削除済みオブジェクトを ID で並べ替えて返します。  ユーザーが1000またはそれ以上の削除されたオブジェクトを所有している場合、API は nothing を返します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -37,7 +37,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| **Name**      | **説明**           |
+| **[名前]**      | **[説明]**           |
 | ------------- | ------------------------- |
 | Authorization | ベアラー {トークン}。必須。 |
 
@@ -50,16 +50,16 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-要求の本体には、次のパラメーターが必要です。
+要求本文には、次のパラメーターが必要です。
 
-| Parameter    | Type |説明|
+| パラメーター    | 型 |説明|
 |:---------------|:--------|:----------|
-|userId|String|所有者の ID です。|
-|type|String|返される所有しているオブジェクトの種類`Group`は、現在サポートされている値だけです。|
+|userId|String|所有者の ID。|
+|type|String|取得する、所有されているオブジェクトの種類。`Group`は現在、サポートされている唯一の値です。|
 
 ## <a name="response"></a>応答
 
-成功した要求を返す`200 OK`応答コードです。応答オブジェクトには、[ディレクトリ (削除済みアイテム)](../resources/directory.md)のプロパティが含まれています。
+成功した`200 OK`要求は応答コードを返します。response オブジェクトには、[ディレクトリ (削除済みアイテム)](../resources/directory.md)のプロパティが含まれています。
 
 ## <a name="example"></a>例
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>応答
 
-以下は、応答の例です。 注: この応答オブジェクトを簡潔にするためにあります。 サポートされているすべてのプロパティは、実際の呼び出しから返されます。
+以下は、応答の例です。 注: この応答オブジェクトは、簡潔にするために切り詰められている場合があります。 サポートされているすべてのプロパティは、実際の呼び出しから返されます。
 
 ``` http
 HTTP/1.1 200

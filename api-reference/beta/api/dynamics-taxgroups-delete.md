@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0de10e65843efbf06968273930c7835a5d4941a2
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458636"
 ---
 # <a name="delete-taxgroups"></a>taxGroups の削除
 Dynamics 365 Business Central から税グループオブジェクトを削除します。

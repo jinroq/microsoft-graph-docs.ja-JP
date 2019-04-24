@@ -1,28 +1,28 @@
 ---
-title: EducationSubmissionResource を削除します。
-description: 提出書類からリソースを削除します。 これは、受講者によってのみ実行できます。 リソースは、割り当てからコピーされた場合は、現在のコピーが削除された後、リソースの新しいコピーが作成されます。
+title: educationSubmissionResource の削除
+description: 提出物からリソースを削除します。 この操作は、学生だけが行うことができます。 リソースが割り当てからコピーされた場合は、現在のコピーが削除された後に、リソースの新しいコピーが作成されます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: a735cb1451e8d3eb8df13e6fa395c3e02393f451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457533"
 ---
-# <a name="delete-educationsubmissionresource"></a>EducationSubmissionResource を削除します。
+# <a name="delete-educationsubmissionresource"></a>educationSubmissionResource の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提出書類からリソースを削除します。 これは、受講者によってのみ実行できます。 リソースは、割り当てからコピーされた場合は、現在のコピーが削除された後、リソースの新しいコピーが作成されます。 これにより、リソースを元の状態に「リセット」することができます。 リソースは割り当てからコピーされませんでしたが、受講者から追加された、リソースが単に削除されます。
+提出物からリソースを削除します。 この操作は、学生だけが行うことができます。 リソースが割り当てからコピーされた場合は、現在のコピーが削除された後に、リソースの新しいコピーが作成されます。 これにより、リソースを元の状態に "リセット" することができます。 リソースが割り当てからコピーされていないが、学生から追加された場合は、リソースは単に削除されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 

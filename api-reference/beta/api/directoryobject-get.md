@@ -1,21 +1,21 @@
 ---
 title: directoryObject を取得する
-description: directoryObject オブジェクトのプロパティとリレーションシップを取得します。
+description: directoryobject オブジェクトのプロパティと関係を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6ab9543469d5ad9618c4cf2f476c33ba866ed08e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514412"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455073"
 ---
 # <a name="get-directoryobject"></a>directoryObject を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと directoryobject オブジェクトの関係を取得します。
+directoryobject オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480489"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454434"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 このメソッドでは、アプリがドライブおよびその子への変更履歴を時間の経過とともに記録できます。
 
@@ -77,7 +75,7 @@ DriveItem のコレクションのほか、応答には次のプロパティの�
 
 以下は最初の要求の例です。
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -125,7 +123,7 @@ Content-type: application/json
 
 以下は最初の要求後の要求の例です。
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -181,7 +179,7 @@ Content-type: application/json
 
 ### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -189,7 +187,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>応答
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -201,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 * 差分フィードは各変更を示すのではなく、各アイテムの最新の状態を示すものです。アイテムの名前が 2 回変更された場合、最新の名前で 1 回だけ表示されます。
 * 差分フィードには、さまざまな理由から同じアイテムが複数回表示される場合があります。その場合は最後に出現したものを使用する必要があります。
@@ -215,7 +213,7 @@ Content-type: application/json
     | 操作の種類 | デルタ クエリに省略されるプロパティ |
     |---------|----------|
     | 作成/変更 | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | 削除 | `ctag`, `lastModifiedBy`, `name` |
 
 
     **OneDrive (コンシューマー向け)**
@@ -232,15 +230,10 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Sync changes"
+} -->

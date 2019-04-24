@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 72a7e810f26b281158cc83c91627d6abf7982301
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517436"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455199"
 ---
 # <a name="list-deleted-items"></a>削除済みアイテムを一覧表示する
 
@@ -22,8 +22,8 @@ ms.locfileid: "29517436"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* ユーザー: User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.AccessAsUser.All
-* グループ: Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.AccessAsUser.All
+* user. all、directory.accessasuser.all、および all。すべてのユーザーの場合、すべてのユーザーが対象となります。
+* グループの場合は、すべての directory.accessasuser.all、およびすべてのディレクトリを取得します。すべてのグループについて、
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept  | application/json |
+| 承諾  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -60,7 +60,7 @@ GET /directory/deletedItems/microsoft.graph.user
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

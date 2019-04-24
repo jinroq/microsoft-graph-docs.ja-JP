@@ -1,36 +1,36 @@
 ---
 title: リスト governanceResources
-description: リクエスターは、アクセス権を持つ governanceResource のコレクションを取得します。
+description: 要求者がアクセスできる governanceResource のコレクションを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 998e18a0139f0cbe41901da935faee2f7f24e9eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525669"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457180"
 ---
 # <a name="list-governanceresources"></a>リスト governanceResources
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-リクエスターは、アクセス権を持つ[governanceResource](../resources/governanceresource.md)のコレクションを取得します。
+要求者がアクセスできる[governanceResource](../resources/governanceresource.md)のコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -40,10 +40,10 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[governanceResource](../resources/governanceresource.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[governanceResource](../resources/governanceresource.md)オブジェクトのコレクションを返します。
 ## <a name="examples"></a>例
 
-この例では、現在アクセスできるすべてのリソースが一覧表示されます。
+この例では、現在アクセスできるすべてのリソースを一覧表示します。
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

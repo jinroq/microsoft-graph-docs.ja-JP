@@ -1,53 +1,53 @@
 ---
-title: synchronizationSchema リソースの種類
-description: オブジェクトがどのようになるかを定義する同期し、同期する方法です。 同期スキーマには、特定の同期ジョブのセットアップ情報のほとんどが含まれています。 通常にするいくつかの属性のマッピングをカスタマイズするかを特定の条件を満たすオブジェクトのみを同期するスコープのフィルターを追加します。
+title: 同期スキーマリソースの種類
+description: 同期されるオブジェクトと、それらの同期方法を定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、属性マッピングの一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期するスコープフィルターを追加します。
 localization_priority: Normal
 ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515931"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453850"
 ---
-# <a name="synchronizationschema-resource-type"></a>synchronizationSchema リソースの種類
+# <a name="synchronizationschema-resource-type"></a>同期スキーマリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オブジェクトがどのようになるかを定義する同期し、同期する方法です。 同期スキーマには、特定の同期ジョブのセットアップ情報のほとんどが含まれています。 通常、[属性マッピング](synchronization-attributemapping.md)の一部をカスタマイズまたはを特定の条件を満たすオブジェクトのみを同期する[スコープのフィルター](synchronization-filter.md)が追加されます。
+同期されるオブジェクトと、それらの同期方法を定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、[属性マッピング](synchronization-attributemapping.md)の一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期する[スコープフィルター](synchronization-filter.md)を追加します。
 
-次のセクションでは、同期スキーマの高度なコンポーネントについて説明します。
+次のセクションでは、同期スキーマの高レベルのコンポーネントについて説明します。
 
-## <a name="directory-definitions"></a>ディレクトリの定義
+## <a name="directory-definitions"></a>ディレクトリ定義
 
-[ディレクトリの定義](synchronization-directorydefinition.md)では、ディレクトリとそのオブジェクトの同期エンジンに関する情報を提供します。 などのディレクトリの定義では、同期エンジンが指示、Azure AD ディレクトリが**ユーザー**と**グループ**、それらのオブジェクトとそれらの属性の型の属性はサポートされてをという名前のオブジェクトを持っています。 同期規則とオブジェクトのマッピングで使用する特定のオブジェクトと属性の順序でディレクトリの定義の一部として定義する必要があります。
+[ディレクトリ定義](synchronization-directorydefinition.md)は、ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 たとえば、ディレクトリ定義は、Azure AD ディレクトリに、**ユーザー**と**グループ**という名前のオブジェクトがあり、それらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類があることを同期エンジンに通知します。 同期ルール/オブジェクトマッピングで特定のオブジェクトおよび属性を使用するためには、それらをディレクトリ定義の一部として定義する必要があります。
 
 ## <a name="synchronization-rules"></a>同期ルール
 
-[同期ルール](synchronization-synchronizationrule.md)は、同期の設定の中核です。 同期を実行する方法、同期エンジンを定義する、どのようなオブジェクトを含む同期するか、ソース ディレクトリからオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法と、属性がどのようにする必要がありますか目的のディレクトリにソースから同期されている場合に変換されます。 
+[同期ルール](synchronization-synchronizationrule.md)は、同期のセットアップの中核となります。 同期を実行する方法、同期する必要のあるオブジェクト、ソースディレクトリのオブジェクトとターゲットディレクトリのオブジェクトとの比較、属性の適用方法など、同期エンジンを定義します。ソースからターゲットディレクトリへの同期時に変換されます。 
 
-## <a name="object-mappings"></a>オブジェクトのマッピング
+## <a name="object-mappings"></a>オブジェクトマッピング
 
-[オブジェクトのマッピング](synchronization-objectmapping.md)は、同期ルールの主な部分です。 どのように特定のオブジェクト同期する必要があるソースからターゲット ・ ディレクトリに各オブジェクトのマッピングを定義します。 マッピングがコピー先のディレクトリ内のオブジェクトのソース ディレクトリ内のオブジェクトの照合方法を定義する具体的には、どのような (ある場合) し、オブジェクトを提供するかどうか、オブジェクトの属性を変換する方法を決定するフィルターのスコープを使用する必要があります同期されているソースからコピー先のディレクトリにします。
+[オブジェクトマッピング](synchronization-objectmapping.md)は、同期ルールの主な部分です。 各オブジェクトマッピングは、指定されたオブジェクトをソースからターゲットディレクトリへ同期する方法を定義します。 特に、マッピングでは、ソースディレクトリ内のオブジェクトをターゲットディレクトリのオブジェクトと照合する方法、オブジェクトをプロビジョニングするかどうか、およびオブジェクト属性をどのように変換するかを決定するために使用するスコープフィルターを定義します。ソースからターゲットディレクトリに同期されている場合。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド        | 戻り値の型               | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[スキーマを取得します](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |**SynchronizationSchema**オブジェクトのプロパティと関係を参照してください。|
-|[スキーマを更新します。](../api/synchronization-synchronizationschema-update.md)    |なし   |同期スキーマを更新します。 |
-|[スキーマを削除します。](../api/synchronization-synchronizationschema-delete.md)    |なし   |スキーマを既定の構成にリセットする、カスタマイズされたスキーマを削除します。 |
-|[リスト フィルターの演算子](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)コレクション   |スコープ フィルターでサポートされているすべての演算子の一覧を表示します。 |
-|[リストの属性が関数のマッピング](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション   |属性マッピングの式でサポートされているすべての関数の一覧を表示します。 |
-|[属性マッピングの式を解析します。](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|[AttributeMappingSource に文字列を解析します。|(../resources/synchronization_attributemappingsource.md) オブジェクト。|
+|[スキーマを取得する](../api/synchronization-synchronizationschema-get.md)    |[同期スキーマ](synchronization-synchronizationschema.md)   |**同期スキーマ**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[スキーマを更新する](../api/synchronization-synchronizationschema-update.md)    |None   |同期スキーマを更新します。 |
+|[スキーマの削除](../api/synchronization-synchronizationschema-delete.md)    |None   |カスタマイズしたスキーマを削除し、スキーマを既定の構成にリセットします。 |
+|[リストフィルター演算子](../api/synchronization-synchronizationschema-filteroperators.md)    |[filter演算子スキーマ](../resources/synchronization-filteroperatorschema.md)コレクション   |スコープフィルターでサポートされているすべての演算子を一覧表示します。 |
+|[リスト属性マッピング関数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション   |属性マッピング式でサポートされているすべての関数を一覧表示します。 |
+|[解析属性マッピング式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseexpression response](synchronization-parseexpressionresponse.md)|文字列式を解析し、[attributeMappingSource|(../resources/synchronization_attributemappingsource.md) オブジェクト。|
 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|directories            |[directoryDefinition](synchronization-directorydefinition.md)コレクション   |ディレクトリおよび[synchronizationJob](synchronization-synchronizationjob.md)または[synchronizationTemplate](synchronization-synchronizationtemplate.md)の一部であるオブジェクトについて説明します。 |
-|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)コレクション   |[SynchronizationJob](synchronization-synchronizationjob.md)または[synchronizationTemplate](synchronization-synchronizationtemplate.md)、用に構成された同期規則のコレクション |
-|version                |String                             |スキーマ変更のたびに自動的に更新、スキーマのバージョン。|
+|移動            |[directorydefinition](synchronization-directorydefinition.md)コレクション   |[同期ジョブ](synchronization-synchronizationjob.md)または[同期のテンプレート](synchronization-synchronizationtemplate.md)の一部であるディレクトリとオブジェクトについて説明します。 |
+|同期規則   |[同期ルール](synchronization-synchronizationrule.md)のコレクション   |同期ジョブまたは同期[ジョブ](synchronization-synchronizationjob.md)[テンプレート](synchronization-synchronizationtemplate.md)用に構成されている同期ルールのコレクション。 |
+|version                |String                             |スキーマのバージョンは、すべてのスキーマ変更によって自動的に更新されます。|
 
 
 ## <a name="json-representation"></a>JSON 表記

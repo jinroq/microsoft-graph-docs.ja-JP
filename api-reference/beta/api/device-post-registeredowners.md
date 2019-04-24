@@ -5,15 +5,13 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 24c5c7977e8989bd4b790df3ec0629f61a654422
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455157"
 ---
 # <a name="create-registeredowner"></a>RegisteredOwner を作成する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーをデバイスの登録済み所有者として追加します。
 ## <a name="permissions"></a>アクセス許可
@@ -52,7 +50,7 @@ POST /devices/{id}/registeredOwners/$ref
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
+POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 Content-type: application/json
 Content-length: 30
 
@@ -61,7 +59,7 @@ Content-length: 30
   }
 }
 ```
-要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。
+要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -83,15 +81,10 @@ Content-length: 51
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create registeredOwner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-post-registeredowners.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

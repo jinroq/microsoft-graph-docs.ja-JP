@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b6b0bc325620a27d9383b4a12d5f3da970c0c267
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455283"
 ---
 # <a name="get-device"></a>デバイスを取得する
 
@@ -17,7 +17,7 @@ ms.locfileid: "29515973"
 
 デバイス オブジェクトのプロパティとリレーションシップを取得します。
 
-**デバイス**・ リソースは、[拡張機能](/graph/extensibility-overview)をサポートするため使用することも、 `GET` 、**デバイス**インスタンスのカスタム プロパティと拡張機能のデータを取得する操作です。
+**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、 `GET`操作を使用して、**デバイス**インスタンスでカスタムプロパティと拡張機能データを取得することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -85,7 +85,7 @@ Content-length: 322
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

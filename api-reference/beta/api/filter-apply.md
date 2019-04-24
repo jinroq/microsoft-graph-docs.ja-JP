@@ -3,11 +3,11 @@ title: 'フィルター: 適用'
 description: 指定した列に指定されたフィルター条件を適用します。
 localization_priority: Normal
 ms.openlocfilehash: 03afb7b3bbbf190abdffba888f4b01d5be04f980
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457166"
 ---
 # <a name="filter-apply"></a>フィルター: 適用
 

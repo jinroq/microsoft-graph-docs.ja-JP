@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456093"
 ---
 # <a name="update-chartlegend"></a>Update chartlegend
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
-|position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
+|position|string|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|
 |visible|ブール値|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答

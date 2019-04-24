@@ -1,22 +1,22 @@
 ---
 author: chackman
 ms.author: chackman
-title: 後にリストのアイテム
+title: フォローされたアイテムを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454807"
 ---
-# <a name="list-followed-items"></a>後にリストのアイテム
+# <a name="list-followed-items"></a>フォローされたアイテムを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインインしているユーザーが行っている[項目](../resources/driveitem.md)を一覧表示します。
-このコレクションには、アイテムを他のドライブへのアクセスがあるだけでなく、ユーザーのドライブにある項目が含まれています。
+サインインしているユーザーがフォローされている[アイテム](../resources/driveitem.md)を一覧表示します。
+このコレクションには、ユーザーのドライブにあるアイテムと、他のドライブとの間でアクセス可能なアイテムが含まれています。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -38,8 +38,8 @@ GET /me/drive/following
 
 ## <a name="response"></a>応答
 
-このメソッドでは、ドライブの所有者は、次の項目の[driveItem](../resources/driveitem.md)リソースのコレクションを返します。
-アイテムが見つからなかった場合、空のコレクションが返されます。
+このメソッドは、ドライブの所有者がフォローしているアイテムについて、drive [item](../resources/driveitem.md)リソースのコレクションを返します。
+アイテムが見つからない場合は、空のコレクションが返されます。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

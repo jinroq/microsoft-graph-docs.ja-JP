@@ -1,23 +1,21 @@
 ---
 title: ドメインを更新する
-description: ドメイン オブジェクトのプロパティを更新します。
+description: domain オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c221ee4ec889f77712417ca7fca1c6d7708881ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454870"
 ---
 # <a name="update-domain"></a>ドメインを更新する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+domain オブジェクトのプロパティを更新します。
 
-ドメイン オブジェクトのプロパティを更新します。
-
-> **重要:** 検証済みのドメインのみを更新できます。
+> **重要:** 確認済みのドメインのみを更新できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,21 +45,22 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、以前の値を維持するか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更された値のみを含めます。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。
+成功した場合、このメソッド`204 No Content`は応答コードを返しますが、応答本文は返しません。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/domains/contoso.com
+PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
 Content-type: application/json
 
 {
@@ -86,15 +85,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

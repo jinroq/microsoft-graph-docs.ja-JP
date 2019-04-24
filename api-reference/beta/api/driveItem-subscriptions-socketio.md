@@ -1,22 +1,22 @@
 ---
-title: Websocket のエンドポイントを取得します。
+title: websocket エンドポイントを取得する
 description: 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519795"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454569"
 ---
-# <a name="get-websocket-endpoint"></a>Websocket のエンドポイントを取得します。
+# <a name="get-websocket-endpoint"></a>websocket エンドポイントを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-[Socket.io][]を使用して[ドライブ][]の近くにあるリアルタイム変更通知を受信できます。
-Socket.io は、Websocket を使用している javascript のコードの一般的な通知ライブラリです。 詳細については、 [socket.io](https://socket.io)を参照してください。
+[socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。
+Socket.io は、websocket を利用する JavaScript の一般的な通知ライブラリです。 詳細については、「 [socket.io](https://socket.io)」を参照してください。
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
@@ -27,8 +27,8 @@ Socket.io は、Websocket を使用している javascript のコードの一般
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)
 |:---------------------------------------|:-------------------------------------------
-| 委任 (職場または学校のアカウント)     | Files.Read、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All
-| 委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite、Files.ReadWrite.All
+| 委任 (職場または学校のアカウント)     | ファイル。読み取り、ファイルの読み取り/書き込み。すべてのファイル。
+| 委任 (個人用 Microsoft アカウント) | ファイル。読み取り、ファイルの読み取り/書き込み。
 | アプリケーション                            | サポートされていません。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -53,7 +53,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[サブスクリプション](../resources/subscription.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[subscription](../resources/subscription.md)オブジェクトを返します。
 
 <!-- {
   "blockType": "response",
@@ -70,11 +70,11 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl`は、socket.io のエンドポイントの URL が返されます。
-Socket.io クライアントを使用してこれを使用するに、文字列を分割する、`/callback?`トークンです。
-前に文字列の中で`/callback?`socket.io のエンドポイントの URL は、後の文字列の中でライブラリを指定する必要がありますが、不透明なクエリ文字列です。
+返さ`notificationUrl`れるのは、socket.io エンドポイントの URL です。
+socket.io クライアントでこれを使用するには、 `/callback?`トークンの文字列を分割します。
+before `/callback?`文字列の部分は socket.io エンドポイント URL で、after 文字列の部分は、ライブラリに指定する必要がある非透過のクエリ文字列です。
 
-使用する方法の例を次の`notificationUrl`JavaScript で socket.io をします。
+次の例は、 `notificationUrl` JavaScript で with socket.io を使用する方法を示しています。
 
 ```javascript
 // this is the notificationUrl returned from this API

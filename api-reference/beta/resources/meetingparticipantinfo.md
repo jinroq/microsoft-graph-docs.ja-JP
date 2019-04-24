@@ -1,28 +1,28 @@
 ---
 title: meetingParticipantInfo リソースの種類
-description: 会議の参加者に関する情報です。
+description: 会議の参加者に関する情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457117"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会議の参加者に関する情報です。
+会議の参加者に関する情報。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型                          | 説明                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| identity       | [identitySet](identityset.md) | 参加者の識別情報です。 |
-| UPN            | String                        | 参加者のユーザー プリンシパル名です。  |
+| 独自性       | [identitySet](identityset.md) | 参加者の id 情報。 |
+| プリンシパル            | String                        | 参加者のユーザープリンシパル名。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

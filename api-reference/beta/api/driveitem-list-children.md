@@ -6,11 +6,11 @@ title: フォルダーの内容を一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482190"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454385"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="list-children-in-the-root-of-the-current-users-drive"></a>現在のユーザーのドライブのルートの子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
@@ -68,7 +68,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>既知の ID を持つ DriveItem の子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 

@@ -1,18 +1,18 @@
 ---
-title: DirectoryAudit を取得します。
-description: Azure Active Directory の特定の監査ログ項目を提供 (または取得)。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.
+title: directoryAudit を取得する
+description: 特定の Azure Active Directory 監査ログアイテムを提供 (または取得) します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455115"
 ---
-# <a name="get-directoryaudit"></a>DirectoryAudit を取得します。
-Azure Active Directory の特定の監査ログ項目を提供 (または取得)。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.
+# <a name="get-directoryaudit"></a>directoryAudit を取得する
+特定の Azure Active Directory 監査ログアイテムを提供 (または取得) します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ Azure Active Directory の特定の監査ログ項目を提供 (または取得)
 |委任 (個人用 Microsoft アカウント) | サポートされていません   |
 |アプリケーション | AuditLog.Read.All | 
 
-さらに、アプリケーションでは、Azure AD に[適切に登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)をする必要があります。
+また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +31,7 @@ Azure Active Directory の特定の監査ログ項目を提供 (または取得)
 GET /auditLogs/directoryAudits/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 これらのパラメーターを使用する方法については、 [OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を確認してください。
+このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[directoryAudit](../resources/directoryaudit.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directoryaudit](../resources/directoryaudit.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

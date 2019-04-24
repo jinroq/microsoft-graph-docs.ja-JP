@@ -1,24 +1,24 @@
 ---
-title: 'driveItem: プレビュー'
-description: このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
+title: 'ドライブアイテム: プレビュー'
+description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508539"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454371"
 ---
-# <a name="driveitem-preview"></a>driveItem: プレビュー
+# <a name="driveitem-preview"></a>ドライブアイテム: プレビュー
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
+このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
 
-有効期間の長い埋め込みリンクを取得する場合は、 [createLink][] API を使用してください。
+長時間の埋め込み可能なリンクを取得する場合は、代わりに[createlink][] API を使用します。
 
-> **注:****プレビュー**の動作は、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。
+> **注:** 現在、**プレビュー**アクションは SharePoint および OneDrive for business でのみ使用できます。
 
 [createLink]: driveitem-createlink.md
 
@@ -28,8 +28,8 @@ ms.locfileid: "29508539"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)
 |:---------------------------------------|:-------------------------------------------
-| 委任 (職場または学校のアカウント)     | Files.Read、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All
-| 委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite、Files.ReadWrite.All
+| 委任 (職場または学校のアカウント)     | ファイル。読み取り、ファイルの読み取り/書き込み。すべてのファイル。
+| 委任 (個人用 Microsoft アカウント) | ファイル。読み取り、ファイルの読み取り/書き込み。
 | アプリケーション                            | サポートされていません。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -47,16 +47,16 @@ POST /shares/{shareId}/driveItem/preview
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文では、アプリケーションが要求する埋め込み可能な URL のプロパティを定義します。
+要求の本文は、アプリケーションが要求している埋め込み可能な URL のプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
 |   名前      |  型         | 説明
 |:------------|:--------------|:-----------------------------------------------
-| ビューアー      | string        | 省略可能。 使用するアプリケーションをプレビューします。 `onedrive` や `office` などになります。 Null の場合、適切なビューアーが自動的に選択されます。
-| クロムレス  | boolean       | 省略可能。 場合`true`(既定値)、組み込みのビューのコントロールは含まれません。
-| AllowEdit   | boolean       | 省略可能。 場合`true`、埋め込まれた UI からファイルを編集することができます。
-| page        | 文字列と番号 | 省略可能。 該当する場合に、開始するドキュメントのページ数です。 将来使用する場合は、ZIP などのファイルの種類を文字列として指定します。
-| ズーム        | number        | 省略可能。 該当する場合に、開始するレベルを拡大します。
+| ビューアー      | string        | 省略可能。 使用するプレビューアプリ。 `onedrive` または `office`。 null の場合は、適切なビューアーが自動的に選択されます。
+| chromeless  | ブール値       | 省略可能。 If `true` (既定値) の場合、埋め込まれたビューにコントロールは含まれません。
+| allowEdit   | ブール値       | 省略可能。 の`true`場合は、埋め込み UI からファイルを編集できます。
+| page        | 文字列または数値 | 省略可能です。 開始するドキュメントのページ番号 (該当する場合)。 ZIP などのファイルの種類に関する今後のユースケースの文字列として指定されます。
+| ズーム        | number        | 省略可能です。 必要に応じて、開始するズームレベルを表示します。
 
 ## <a name="response"></a>応答
 
@@ -72,13 +72,13 @@ POST /shares/{shareId}/driveItem/preview
 
 | 名前           | 型   | 説明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
-| postUrl        | string | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
-| postParameters | string | PostUrl を使用する場合は、POST のパラメーター
+| getUrl         | string | HTTP GET (iframes など) を使用した埋め込みに適した URL
+| posturl        | string | HTTP POST (form post、JS など) を使用した埋め込みに適した URL
+| postparameters | string | posturl を使用する場合に含める POST パラメーター
 
-GetUrl、postUrl、またはその両方は、指定したオプションの埋め込みのサポートの現在の状態によって返される可能性があります。
+指定したオプションの embed サポートの現在の状態に応じて、getUrl、posturl、または both のどちらかが返される場合があります。
 
-として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 次に例を示します。
+postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -86,30 +86,29 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-### <a name="viewers"></a>ビューアー
+### <a name="viewers"></a>表示者
 
-**ビューアー**パラメーターには、次の値を指定します。
+**viewer**パラメーターには次の値を使用できます。
 
 | 種類の値 | 説明
 |:-----------|:----------------------------------------------------------------
-| Null
-     | ファイルを表示するための適切なアプリケーションを選択します。 使用するほとんどの場合、`onedrive`プレビューアーをファイルの種類によって異なる場合がありますが。
-| `onedrive` | ファイルをレンダリングするのにには、OneDrive 対応のアプリケーションを使用します。
-| `office`   | WAC (Office オンライン) を使用して、ファイルをレンダリングします。 Office ドキュメントに対してのみ有効です。
+| null     | ファイルをレンダリングするための適切なアプリを選択します。 ほとんどの場合、これは`onedrive`プレビューアーを使用しますが、ファイルの種類によって異なる場合があります。
+| `onedrive` | OneDrive プレビューアーアプリを使用して、ファイルをレンダリングします。
+| `office`   | WAC (Office online) を使用して、ファイルをレンダリングします。 Office ドキュメントに対してのみ有効です。
 
-### <a name="chrome-vs-chromeless"></a>クロムレスのクロム vs
+### <a name="chrome-vs-chromeless"></a>クロム vs chromeless
 
-場合`chromeless`が true の場合、プレビュー、ファイルの最小限のレンダリングになります。
-それ以外の場合、ドキュメント/ビューと対話するために表示されるその他のツールバーとボタンがある可能性があります。
+が`chromeless` true の場合、プレビューはファイルのベア・レンダリングとなります。
+それ以外の場合は、ドキュメント/ビューと対話するためのツールバー/ボタンが追加されている場合があります。
 
 ### <a name="viewedit"></a>表示/編集
 
-場合`allowEdit`が true の場合、埋め込まれたプレビューをユーザーの操作によって、ドキュメントを変更できます。
-この機能は、すべてのプレビューのアプリケーションまたはファイルの種類のできない場合があります。
+が`allowEdit` true の場合、ドキュメントは、埋め込みプレビューでユーザーが操作することで変更できます。
+この機能は、プレビューアプリやファイルの種類によっては使用できない場合があります。
 
 ### <a name="pagezoom"></a>ページ/ズーム
 
-`page`と`zoom`オプションは、すべてのプレビュー アプリケーションを使用できない場合がありますが、プレビューのアプリケーションをサポートしている場合に適用されます。
+および`page` `zoom`オプションは、すべてのプレビューアプリで使用できるわけではありませんが、プレビューアプリがサポートしている場合は適用されます。
 <!--
 {
   "type": "#page.annotation",

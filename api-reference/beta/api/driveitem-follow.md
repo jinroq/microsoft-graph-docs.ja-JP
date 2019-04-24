@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: 次のドライブのアイテム
+title: ドライブアイテムをフォローする
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0c8835593ed7203cc6239485f1dcd4f17f24fe7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518339"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454407"
 ---
-# <a name="follow-drive-item"></a>次のドライブのアイテム
+# <a name="follow-drive-item"></a>ドライブアイテムをフォローする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[driveItem](../resources/driveitem.md)に従います。
+[ドライブ項目](../resources/driveitem.md)をフォローします。
 
->**注:** アイテムのフォローを取り消し、[フォロー取り消しの項目](driveitem-unfollow.md)を参照してください。
+>**注:** アイテムのフォローを取り消したい場合は、「[アイテムをフォロー](driveitem-unfollow.md)取り消し」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,11 +47,11 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 ## <a name="response"></a>応答
 
-このメソッドでは、フォローされている項目については、 [DriveItem](../resources/driveitem.md)を返します。
+このメソッドは、フォローされているアイテムの[ドライブ項目](../resources/driveitem.md)を返します。
 
 ## <a name="example"></a>例
 
-次の使用例は次によって識別される項目は、 `{item-id}`。
+この例では、で`{item-id}`識別されるアイテムをフォローします。
 
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 

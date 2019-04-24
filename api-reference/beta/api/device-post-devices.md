@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455136"
 ---
 # <a name="create-device"></a>デバイスを作成する
 
@@ -40,7 +40,7 @@ POST /devices
 ## <a name="request-body"></a>要求本文
 要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。
 
-**デバイス**・ リソースは、[拡張機能](/graph/extensibility-overview)をサポートするため使用すること、`POST`操作し、作成時にデバイス インスタンスに独自のデータを持つカスタム プロパティを追加します。
+**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中に独自のデータを持つカスタムプロパティをデバイスインスタンスに追加することができます。
 
 ## <a name="response"></a>応答
 

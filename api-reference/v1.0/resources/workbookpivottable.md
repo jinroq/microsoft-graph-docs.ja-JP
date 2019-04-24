@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5f6360ce1eacc313f1bcc8a9f59b44b216a87b84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456865"
 ---
 # <a name="pivottable-resource-type"></a>ピボットテーブル リソースの種類
 
@@ -20,19 +20,19 @@ Excel のピボットテーブルを表します。
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[workbookPivotTable を取得する](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |worksheetprotection オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新](../api/workbookpivottable-refresh.md)|なし|ピボットテーブルを更新します。 |
+|[更新](../api/workbookpivottable-refresh.md)|None|ピボットテーブルを更新します。 |
 |[Refreshall](../api/workbookpivottable-refreshall.md)|なし|指定したワークシート内のすべてのテーブルを更新します。このアクションは、ピボットテーブルのコレクションでのみ使用できることに注意してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| ピボットテーブルの ID。 読み取り専用です。|
+|id|String| ピボットテーブルの ID。 読み取り専用です。|
 |name|String|ピボットテーブルの名前。    |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|ワークシート|[WorkbookWorksheet](worksheet.md)| 現在のピボットテーブルを含んでいるワークシート。読み取り専用。   |
+|worksheet|[WorkbookWorksheet](worksheet.md)| 現在のピボットテーブルを含んでいるワークシート。 読み取り専用です。   |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

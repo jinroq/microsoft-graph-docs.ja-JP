@@ -5,26 +5,26 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 45e4754fef0dd3a2f7a669e3b3b96692d117c8f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457131"
 ---
 # <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>mailboxUsageQuotaStatusMailboxCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 種類   |
+| プロパティ              | 型   |
 | :-------------------- | :----- |
-| reportRefreshDate     | 日付   |
-| underLimit            | Int64  |
-| warningIssued         | Int64  |
-| sendProhibited        | Int64  |
-| sendReceiveProhibited | Int64  |
-| 不確定         | Int64  |
+| reportrefreshdate     | 日付   |
+| 過小制限            | Int64  |
+| 警告の発行         | Int64  |
+| sendprohibited        | Int64  |
+| sendreceiveprohibited | Int64  |
+| 不特定         | Int64  |
 | reportDate            | 日付   |
-| reportPeriod          | String |
+| reportperiod          | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

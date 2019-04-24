@@ -3,12 +3,12 @@ title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980936"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
@@ -45,13 +45,17 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD リソースの制限
 
-Azure AD ベースのリソース (ユーザー、グループ) には一定の制限が適用され、超過するとエラーが発生する可能性があります。
+Azure AD ベースのリソース (ユーザー、グループ) には一定の制限が適用され、超過するとエラーが発生します。
+
+> **注:** これらの制限は、Azure AD 以外のサービスのリソースには適用されません。 たとえば、アプリは `message` または `event` リソースに対して、より多くのサブスクリプションを作成できます。これらは Microsoft Graph の一部として Exchange Online サービスでサポートされているものです。
 
 - 最大サブスクリプションのクォータ:
 
   - アプリあたり: 合計 50,000 サブスクリプション
   - テナントあたり: すべてのアプリで合計 1000 サブスクリプション
   - アプリとテナントの組み合わせ: 合計 100 サブスクリプション
+
+制限を超えると、サブスクリプションを作成しようとして、[エラー応答](errors.md) - `403 Forbidden` が発生します。 `message` プロパティは、どの制限が超過しているかを説明します。
 
 - Azure AD B2C テナントはサポートされていません。
 

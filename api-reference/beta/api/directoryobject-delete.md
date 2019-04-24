@@ -1,21 +1,21 @@
 ---
 title: directoryObject を削除する
-description: directoryObject を削除する
+description: directoryobject を削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 63e9d4574c505158171c93fd7ac9dc51678c7d2b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455094"
 ---
 # <a name="delete-directoryobject"></a>directoryObject を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-directoryObject を削除する
+directoryobject を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -26,7 +26,7 @@ directoryObject を削除する
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
-**注:** ユーザー、グループ、および連絡先は、ディレクトリ オブジェクトの種類です。 その結果、ユーザーを削除する場合は、次のアクセス許可ことができ、使用する必要があります: User.ReadWrite.All
+**注:** ユーザー、グループ、および連絡先は、ディレクトリ オブジェクトの種類です。 そのため、ユーザーを削除する必要がある場合は、次のアクセス許可を使用する必要があります。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

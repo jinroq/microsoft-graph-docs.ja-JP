@@ -1,28 +1,28 @@
 ---
-title: synchronizationProgress リソースの種類
-description: 完了するまで、synchronizationJob の進行状況を表します。
+title: 同期の進行状況リソースの種類
+description: 完了までの同期ジョブの進行状況を表します。
 localization_priority: Normal
 ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640071"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453958"
 ---
-# <a name="synchronizationprogress-resource-type"></a>synchronizationProgress リソースの種類
+# <a name="synchronizationprogress-resource-type"></a>同期の進行状況リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-完了するまでの[synchronizationJob](synchronization-synchronizationjob.md)の進行状況を表します。
+完了までの[同期ジョブ](synchronization-synchronizationjob.md)の進行状況を表します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                              | 型      | 説明    |
 |:--------------------------------------|:----------|:---------------|
-|completedUnits|Int32|分子の進行状況の比率です。既に処理された変更単位の数です。|
-|progressObservationDateTime|DateTimeOffset|分 UTC からのオフセットとしての進行状況の監視の時間です。|
-|totalUnits|Int32|分母の進行状況の比率です。変更の同期を実行する処理の単位数を示します。|
-|単位|String|単位のオプションの説明です。|
+|completedUnits|Int32|進行状況の比率の分子。既に処理されている変更の単位数。|
+|進行法|DateTimeOffset|進行状況の監視時間 (分単位で UTC からのオフセット)。|
+|totalunits|Int32|進行状況の比率の分母。同期を実行するために処理される変更の単位数。|
+|」|String|単位の説明 (省略可能)。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

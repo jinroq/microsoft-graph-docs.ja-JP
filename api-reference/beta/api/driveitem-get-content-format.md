@@ -6,11 +6,11 @@ title: 他の形式に変換する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481826"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454427"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 
@@ -19,7 +19,7 @@ ms.locfileid: "30481826"
 この API を使用して、アイテムのコンテンツを特定の形式で取得します。
 すべてのファイルがすべての形式に変換できるわけではありません。
 
-アイテムを元の形式でダウンロードするには、「[アイテムのコンテンツをダウンロード](driveitem-get-content.md)する」を参照してください。
+アイテムを元の形式でダウンロードするには、「[アイテムのコンテンツをダウンロードする](driveitem-get-content.md)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -41,14 +41,14 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | アイテムのコンテンツをダウンロードする形式を指定します。 |
 
 
-**format**パラメーターには、次の値が有効です。
+**format** パラメーターには次の値を指定できます。
 
 | 値 | 説明                        | サポートされているソースの拡張子
 |:------|:-----------------------------------|---------------------------------
 | glb   | アイテムを GLB 形式に変換します。  | クール、fbx、obj、プライ、stl、3mf
 | Html  | アイテムを HTML 形式に変換します。 | eml、md、msg
 | .jpg   | 項目を JPG 形式に変換します。  | 3g2、3gp、3g2、3gpp、3mf、ai、arw、asf、avi、bas、bash、bat、bmp、c、cbl、cmd、クール、cpp、cr2、crw、cs、css、csv、dcm30、dcm、、.dic、dicm、dicom、dng、doc、.docx、dwg、eml、epi、.eps、epsf、epsi、epub、glb、h、および、heic、heic、htm、html、.ico、icon、java、jfif、jpeg、jpg、js、json、key、log、m2ts、m4a、m4v、markdown、md、mef、mov、movie、、mp4、mp4v、mrw、msg、mts、nef、nrw、ogg、obj、、、、pef、、、pict、、、php、pict、pl、プライ、png、.pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、.pptx、ps、ps1、psb、psd、py、raw、、rtf、rw1、rw2、sh、sketch、sql、sr2、、、、ts、txt、vb、webm、wma、wmv、xaml、xbm、xcf、xd、xml、xpm、yaml、yml
-| 文書   | アイテムを PDF 形式に変換します。  | doc、.docx、epub、eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、.pptx、rtf、tif、tiff、xls、.xlsm、.xlsx
+| pdf   | アイテムを PDF 形式に変換します。  | doc、.docx、epub、eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、.pptx、rtf、tif、tiff、xls、.xlsm、.xlsx
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 

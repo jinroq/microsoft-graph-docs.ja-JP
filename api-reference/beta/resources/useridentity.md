@@ -1,36 +1,36 @@
 ---
-title: 型を割り当てられていません
-description: 'Azure AD のレビューにアクセスして、この型は、アクセス レビューのレビュー担当者の Azure AD ユーザー id を表します。  '
+title: useridentity の種類
+description: 'azure ad のアクセスレビューの場合、この種類は、アクセスレビューのレビュー担当者のための azure ad ユーザー id を表します。  '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ab8076c5ff24e20006b5a5569dacf4c45d987512
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529468"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453979"
 ---
-# <a name="useridentity-type"></a>型を割り当てられていません
+# <a name="useridentity-type"></a>useridentity の種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](accessreviews-root.md)をするは、この型は、アクセス レビューのレビュー担当者の Azure AD ユーザー id を表します。  
-Azure AD の監査ログのコンテキストでは、開始、または監査活動の影響を受けたユーザーの情報を表します。
+azure ad の[アクセス](accessreviews-root.md)レビューの場合、この種類は、アクセスレビューのレビュー担当者のための azure ad ユーザー id を表します。  
+Azure AD 監査ログのコンテキストでは、これは監査アクティビティの開始または影響を受けたユーザー情報を表します。
 
-このタイプは、[アイデンティティ](identity.md)を継承し、追加の 1 つのプロパティ、ユーザーのユーザー プリンシパル名を持ちます。
+この型は、 [identity](identity.md)から継承し、ユーザーのユーザープリンシパル名である1つの追加のプロパティを持ちます。
 
 ## <a name="methods"></a>メソッド
 
-なし  要求の本文にこの型のオブジェクトを含めますと[、accessReview を作成](../api/accessreview-create.md)します。
+なし。  [accessreview を作成](../api/accessreview-create.md)するときに、要求の本文にこの種類のオブジェクトを含めることができます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| `displayName` | `String` | Id の表示名です。 このできない可能性がある利用可能なまたは最新の状態に注意してください。    |
+| `displayName` | `String` | id の表示名。 これは、常に有効であったり、最新ではない場合があることに注意してください。    |
 | `id`          | `String` | ID の一意識別子。  |
-| `ipAddress`| `String`| アクティビティ (監査ログのみ) を実行するユーザーによって使用されるクライアントの IP アドレスを示します。|
-| `userPrincipalName`|`String` | ユーザーの userPrincipalName 属性です。 |
+| `ipAddress`| `String`| ユーザーがアクティビティを実行するときに使用するクライアント IP アドレスを示します (監査ログのみ)。|
+| `userPrincipalName`|`String` | ユーザーの userPrincipalName 属性。 |
 
 ## <a name="remarks"></a>注釈
 
@@ -44,13 +44,13 @@ Azure AD の監査ログのコンテキストでは、開始、または監査�
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[AccessReview のレビュー担当者を取得します。](../api/accessreview-listreviewers.md) |       コレクションを[割り当てられていません](useridentity.md)| AccessReview のレビュー担当者を取得します。 |
-|[AccessReview の校閲者を追加します。](../api/accessreview-addreviewer.md) |      なし。   |   AccessReview には、レビュー担当者を追加します。 |
-|[AccessReview のレビュー担当者を削除します。](../api/accessreview-removereviewer.md) | なし。  |   AccessReview からレビュー担当者を削除します。 |
+|[アクセスレビューのレビュー担当者を取得する](../api/accessreview-listreviewers.md) |       [useridentity](useridentity.md)コレクション| accessreview のレビュー担当者を取得します。 |
+|[accessreview レビュー担当者を追加する](../api/accessreview-addreviewer.md) |      なし。   |   閲覧者を accessreview に追加します。 |
+|[accessreview レビュー担当者を削除する](../api/accessreview-removereviewer.md) | なし。  |   accessreview からレビュー担当者を削除します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
-ここでは、型の JSON 表現です。
+この型の JSON 表記を次に示します。
 
 <!-- {
   "blockType": "resource",

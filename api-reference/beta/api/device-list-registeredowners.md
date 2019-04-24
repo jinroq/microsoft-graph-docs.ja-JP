@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4b9020c4fad74990a18023bdddd63ae3bd050998
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455276"
 ---
 # <a name="list-registeredowners"></a>registeredOwners を一覧表示する
 

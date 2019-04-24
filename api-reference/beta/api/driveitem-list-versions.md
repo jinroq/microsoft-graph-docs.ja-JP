@@ -1,18 +1,16 @@
 ---
-title: DriveItem のバージョンを一覧表示
+title: ドライブ項目のバージョンを一覧表示する
 description: OneDrive と SharePoint は、ファイルの履歴を保持するように構成できます。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b51982c9aff9f8be8c801b6f0e0fc16e9ff47852
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454343"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>DriveItem のバージョンを一覧表示
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="listing-versions-of-a-driveitem"></a>ドライブ項目のバージョンを一覧表示する
 
 OneDrive と SharePoint は、ファイルの履歴を保持するように構成できます。
 サービスと構成に応じて、各編集に対する新しいバージョンを作成することができます。ファイルが保存されるたびに作成するか、手動で作成するか、または全く作成しないこともできます。
@@ -53,7 +51,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
@@ -116,15 +114,10 @@ OneDrive は、ファイルの旧バージョンの完全なメタデータを�
 アプリがファイルの利用可能なバージョンのリストを取得すると、[DriveItemVersion](../resources/driveitemversion.md) リソースが返され、特定のバージョンに関する利用可能な情報が提供されます。
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Version history"
+} -->

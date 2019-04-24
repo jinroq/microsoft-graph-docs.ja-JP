@@ -1,26 +1,26 @@
 ---
-title: Web サイトのリソースの種類
-description: Web サイトを表します。
+title: web サイトリソースの種類
+description: web サイトを表します。
 localization_priority: Normal
 ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454045"
 ---
-# <a name="website-resource-type"></a>Web サイトのリソースの種類
+# <a name="website-resource-type"></a>web サイトリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Web サイトを表します。
+web サイトを表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |type|String| 可能な値は、`other`、`home`、`work`、`blog`、`profile` です。|
-|アドレス|string|Web サイトの URL。|
+|address|string|web サイトの URL。|
 |displayName|string|Web サイトの表示名。|
 
 ## <a name="json-representation"></a>JSON 表記

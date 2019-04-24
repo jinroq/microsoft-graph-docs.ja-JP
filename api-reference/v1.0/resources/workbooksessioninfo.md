@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 502781c4049c9451f5ed67ff97222abf4df462d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960274"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456837"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo リソース型
 
@@ -35,8 +35,8 @@ ms.locfileid: "27960274"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類  | 説明                               |
+| プロパティ | 型  | 説明                               |
 |:---------|:------|:------------------------------------------|
-| ID  | 文字列 | ブック セッションの ID。 |
-| persistChanges | ブール |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
+| id  | string | ブック セッションの ID。 |
+| persistChanges | ブール値 |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
 

@@ -1,30 +1,30 @@
 ---
-title: plannerFavoritePlanReference リソースの種類
-description: '**PlannerFavoritePlanReference**リソースは、ユーザーがお気に入りとしてマークされている plannerPlan への参照の repesents を入力します。 '
+title: プラン "お気に入り" プラン参照リソースの種類
+description: 'プラン [**参照**リソースの種類表す workbookconnection は、ユーザーによってお気に入りとしてマークされているプランへの参照を示します。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 77a931a882cc4b01725bd8ceb0ae6bcc721a9013
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518388"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457103"
 ---
-# <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference リソースの種類
+# <a name="plannerfavoriteplanreference-resource-type"></a>プラン "お気に入り" プラン参照リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerFavoritePlanReference**リソースは、ユーザーがお気に入りとしてマークされている[plannerPlan](plannerplan.md)への参照の repesents を入力します。 クライアントでは、 **plannerFavoritePlanReference**のエントリが削除する、ユーザーがアクセスできる不要になった、または別のタイトルで更新された**plannerPlans**を参照できるように注意してください。
+プラン [**参照**リソースの種類表す workbookconnection は、ユーザーによってお気に入りとしてマークされている[プラン](plannerplan.md)への参照を示します。 クライアントは、「 **** プラン」では、削除されたプラン、ユーザーがアクセスできなくなったプラン、または別のタイトルで更新された**プラン**を参照することができることに注意してください。
 
-クライアントは不一致がある場合にユーザーに通知し、エントリを常に最新の状態に保つことをお勧めします。
+クライアントは、相違点がある場合にユーザーに通知し、エントリを最新の状態に維持することをお勧めします。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](planner-order-hint-format.md)」で定義されています。|
-|planTitle|String|ユーザーは、お気に入りとしてマークされている時にプランのタイトルです。|
+|プランのタイトル|String|ユーザーがお気に入りとしてマークした時点でのプランのタイトル。|
 
 
 ## <a name="json-representation"></a>JSON 表記

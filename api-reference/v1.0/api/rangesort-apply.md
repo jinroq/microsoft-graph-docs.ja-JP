@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be024f3eacbb4e2d1178ec7b82a8e8ca604aff60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967106"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452707"
 ---
 # <a name="rangesort-apply"></a>RangeSort: 適用
 
@@ -40,13 +40,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
-|hasHeaders|ブール値|省略可能。範囲にヘッダーがあるかどうか。|
-|orientation|文字列|省略可能。 かどうか操作が行または列を並べ替え。  可能な値: `Rows`、 `Columns`。|
-|method|文字列|省略可能。 中国語の文字に使用される順序の指定方法です。  可能な値: `PinYin`、 `StrokeCount`。|
+|hasHeaders|boolean|省略可能。範囲にヘッダーがあるかどうか。|
+|orientation|string|省略可能。 操作が行と列のどちらの並べ替えかを示します。  使用可能な値は`Rows`、 `Columns`、です。|
+|method|string|省略可能。 中国語文字に使用される順序付けの方法です。  使用可能な値は`PinYin`、 `StrokeCount`、です。|
 
 ## <a name="response"></a>応答
 

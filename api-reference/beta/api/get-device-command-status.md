@@ -1,19 +1,19 @@
 ---
-title: デバイス コマンドのステータスを取得します。
-description: デバイス上には、コマンドのステータスを取得します。 ステータス コードの完全なリスト、actionStatus のリストを参照してください。
+title: デバイス コマンドの状態を取得する
+description: デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「actionstatus の一覧」を参照してください。
 localization_priority: Normal
 ms.openlocfilehash: ae5fe1f2b6b48c0a739911bd20370562e8540f18
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457152"
 ---
-# <a name="get-device-command-status"></a>デバイス コマンドのステータスを取得します。
+# <a name="get-device-command-status"></a>デバイス コマンドの状態を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-デバイス上には、コマンドのステータスを取得します。 ステータス コードの完全なリスト、 [actionStatus のリスト](#list-of-actionstatus)を参照してください。
+デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「 [actionstatus の一覧](#list-of-actionstatus)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -63,26 +63,26 @@ HTTP/1.1 200 OK
   }
 ```
 
-## <a name="list-of-actionstatus"></a>ActionStatus の一覧
+## <a name="list-of-actionstatus"></a>actionstatus の一覧
 
-- 要求、またはコマンドで作成された、処理を待機しています。
-- sentToTarget、またはターゲット ・ デバイスに送信されたコマンド/
-- 実行するとターゲット ・ デバイスは、コマンドの受信を確認し、実行しています。
-- 完了すると、コマンドの実行が完了しました
-- failedToSend、またはターゲット ・ デバイスにコマンドを送信するサービスが失敗したと
-- executionFailed、または、コマンドの実行に失敗しました
-- commandDropped、またはデバイスは ConnectedStandby の状態にある場合に、コマンドがクライアントによって削除/
-- 取り消すには、//コマンドのキャンセル
-- キャンセルする、またはコマンドをキャンセルすると
-- キャンセルするには、//、コマンドは取り消されました
-- 再試行、またはサービスがターゲットにコマンドを送信する再試行/
-- 有効期限が切れた、またはコマンドの処理の有効期限を超過すると
-- エラー、または内部またはコマンドの処理中にエラー
-- カスタム/カスタム/ステータス
+- 要求のコマンドが作成され、処理を待っています
+- 送信ターゲット、//コマンドがターゲットデバイスに送信されました
+- コマンドを実行中で、ターゲットデバイスの確認済み受信を実行中です。
+- 完了、//コマンドの実行が完了
+- 失敗/送信、//サービスがターゲットデバイスにコマンドを送信できませんでした
+- executionfailed、//コマンドの実行に失敗しました
+- デバイスが connectedstandby の状態にある場合、コマンドはクライアントによってドロップされています。
+- cancel、コマンドをキャンセルする
+- コマンドをキャンセルする、//キャンセルする
+- 取り消し済み//コマンドは取り消されました
+- 再試行、//サービスはターゲットへのコマンドの送信を再試行しています
+- 期限切れ、コマンド処理が有効期限を超過しました
+- エラー、コマンドの処理中に内部エラーが発生しました
+- カスタム/カスタム状態
 
 ## <a name="example"></a>例
 
-この例では、デバイスの ID とデバイスに発行されたコマンドの ID を必要があります。 GET を発行するときに ID が返されるデバイスの呼び出しの`/me/devices`の投稿を行うときに ID が返されるコマンドを呼び出すと`/me/devices/{id}/command`。
+この例では、デバイスの id と、デバイスに発行されたコマンドの id が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
 
 #### <a name="request"></a>要求
 
@@ -127,9 +127,9 @@ HTTP/1.1 200 OK
 ```
 
 
-## <a name="get-command-payload"></a>コマンドのペイロードを取得します。
+## <a name="get-command-payload"></a>コマンドペイロードの取得
 
-デバイス上の特定のアクションの応答の内容を取得します。 応答の内容は、データを再度実行するために、アプリケーション サービスを照会するときに使用されます。
+デバイス上の特定のアクションの応答ペイロードを取得します。 応答ペイロードは、アプリケーションサービスに対してクエリを実行してデータを返すときに使用されます。
 
 
 ### <a name="permissions"></a>アクセス許可
@@ -176,7 +176,7 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>例
 
-この例では、デバイスの ID とデバイスに発行されたコマンドの ID を必要があります。 に対して GET を発行するときに ID が返されるデバイスを呼び出す`/me/devices`の投稿を行うときに ID が返されるコマンドを呼び出すと`/me/devices/{id}/command`。
+この例では、デバイスの id と、デバイスに発行されたコマンドの id が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
 
 #### <a name="request"></a>要求
 

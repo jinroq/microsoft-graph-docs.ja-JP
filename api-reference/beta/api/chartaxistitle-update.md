@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6f8e1ba265246678bb930c1135fbf465147c1c7b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640533"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456573"
 ---
 # <a name="update-chartaxistitle"></a>Update chartaxistitle
 
@@ -43,7 +43,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|text|文字列|軸タイトルを表します。|
+|text|string|軸タイトルを表します。|
 |visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="response"></a>応答

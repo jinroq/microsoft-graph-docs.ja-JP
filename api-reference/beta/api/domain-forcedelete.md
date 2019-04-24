@@ -1,35 +1,35 @@
 ---
-title: 'ドメイン: forceDelete'
+title: 'ドメイン: forcedelete'
 description: 非同期操作を使用してドメインを削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 5a1a2b2510f0c79f2be4e70deb9efabc65f8dfc4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454933"
 ---
-# <a name="domain-forcedelete"></a>ドメイン: forceDelete
+# <a name="domain-forcedelete"></a>ドメイン: forcedelete
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 非同期操作を使用してドメインを削除します。
 
-次の操作は、この操作の一部として実行されます。
+この操作の一部として、次のアクションが実行されます。
 
-* UPN、EmailAddress、および削除されたドメインへの参照を持つユーザーのメタベースを変更します。
+* UPN、EmailAddress、および ProxyAddress のユーザーの名前を、削除されたドメインへの参照に変更します。
 
-* 削除したドメインへの参照を持つグループの電子メール アドレスの名前を変更します。
+* 削除されたドメインへの参照を使用して、グループの EmailAddress の名前を変更します。
 
-* 削除したドメインへの参照を持つアプリケーションの identifierUris の名前を変更します。
+* アプリケーションの identifieruris の名前を、削除されたドメインへの参照に変更します。
 
-* 名前を変更するオブジェクトの数が 1000 を超える場合は、エラーが返されます。
+* 名前を変更するオブジェクトの数が1000より大きい場合は、エラーが返されます。
 
-* マルチ テナント アプリケーションの名前を変更するアプリケーションのいずれかの場合は、エラーが返されます。
+* 名前を変更するアプリケーションのいずれかがマルチテナントアプリの場合は、エラーが返されます。
 
-ドメインの削除が完了すると、API の操作、削除されたドメインの HTTP 応答コード 404 が返されます。 ドメインの削除を確認するには、[ドメインを取得](domain-get.md)を実行できます。 ドメインが正常に削除された場合の応答で 404 の HTTP 応答コードが返されます。
+ドメイン削除の完了後、削除されたドメインの API 操作は 404 HTTP 応答コードを返します。 ドメインの削除を確認するには、 [get ドメイン](domain-get.md)を実行します。 ドメインが正常に削除された場合は、応答で 404 HTTP 応答コードが返されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -64,7 +64,7 @@ POST /domains/{id}/forceDelete
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|ブール値| 名前を変更したユーザー アカウントを無効にするオプションです。 ユーザー アカウントを無効にすると、ユーザーはサインインするのには使用できません。<br>*場合は true。*(デフォルト) - ユーザーがこの操作の一部として名前が変更されたアカウントが無効になります。<br>*False* - この操作の一部として名前を変更するユーザー アカウントは無効になっていません。 |
+|disableuseraccounts|ブール型| 名前の変更されたユーザーアカウントを無効にするオプション。 ユーザーアカウントが無効になっている場合、ユーザーはサインインすることができません。<br>*True*(既定値)-この操作の一部として名前が変更されたユーザーアカウントは無効になります。<br>*False* -この操作の一部として名前が変更されたユーザーアカウントは無効になりません。 |
 
 ## <a name="response"></a>応答
 

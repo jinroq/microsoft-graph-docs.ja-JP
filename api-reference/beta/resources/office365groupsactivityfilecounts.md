@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 89ac23b89730ec98515d6d0d3c06867e57b19ed1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457075"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>office365GroupsActivityFileCounts リソースの種類
 
@@ -17,11 +17,11 @@ ms.locfileid: "29575577"
 
 | プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | 日付   | コンテンツの最新の日付。          |
-| total             | Int64  | グループの SharePoint ドキュメント ライブラリ内のファイルの合計数です。 |
-| アクティブです            | Int64  | 、表示されたファイルの数は、編集、共有、またはグループの SharePoint ドキュメント ライブラリに同期します。 |
-| reportDate        | 日付   | グループの SharePoint サイトにアクティブだったファイルの数の日付です。 |
-| reportPeriod      | String | レポートの対象日数です。    |
+| reportrefreshdate | 日付   | コンテンツの最新の日付。          |
+| total             | Int64  | グループの SharePoint ドキュメントライブラリ内のファイルの合計数。 |
+| active            | Int64  | グループの SharePoint ドキュメントライブラリで表示、編集、共有、または同期されたファイルの数。 |
+| reportDate        | 日付   | グループの SharePoint サイトで数個のファイルがアクティブになった日付。 |
+| reportperiod      | String | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

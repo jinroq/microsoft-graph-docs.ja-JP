@@ -1,21 +1,21 @@
 ---
 title: メンバー グループをチェックする
-description: メンバーシップのグループ、およびそのリストから指定されたリスト内のそれらのグループを確認します。
+description: 指定したグループの一覧のメンバーシップを確認し、それらのグループをリストから返します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 53c89a6dd6fb0c16e0df7c6035ed0667c227787d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455192"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループ、およびそのリストからの指定されたリスト内のメンバーシップをそのグループのうち、指定したユーザー、グループ、サービス主体またはディレクトリ オブジェクトは、メンバーを確認します。 この関数は、推移的です。
+指定したグループの一覧のメンバーシップを確認し、指定されたユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーであるグループをリストから返します。 この関数は、推移的です。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -74,7 +74,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

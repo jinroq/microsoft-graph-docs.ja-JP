@@ -2,19 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 小さなファイルのアップロード
-localization_priority: Normal
+title: サイズの小さいファイルをアップロードする
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482274"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454399"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>DriveItem の内容をアップロードまたは置換する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 簡単なアップロード API を使用すると、新しいファイルの内容を提供したり、単一の API 呼び出しで既存のファイルの内容を更新したりすることができます。このメソッドは、サイズが 4MB までのファイルのみをサポートしています。
 
@@ -30,7 +28,7 @@ ms.locfileid: "30482274"
 |委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    |
 |アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All |
 
-## <a name="http-request-to-replace-an-existing-item"></a>HTTP 要求 (既存アイテムを置換する)
+## <a name="http-request-to-replace-an-existing-item"></a>HTTP 要求 (既存アイテムを置換する場合)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a>HTTP 要求 (新しいファイルをアップロードする)
+## <a name="http-request-to-upload-a-new-file"></a>HTTP 要求 (新しいファイルをアップロードする場合)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -60,11 +58,11 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは新しく作成された、または更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
+成功した場合、このメソッドは、新しく作成されたファイルまたは更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
 ## <a name="example-upload-a-new-file"></a>例 (新しいファイルのアップロード)
 
-この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、 サインインしたユーザーのドライブにある FolderA 下の FileB.txt という名前のファイルにアップロードします。
+この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、 サインインしたユーザーのドライブの FolderA の下の FileB.txt という名前のファイルにアップロードします。
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -77,7 +75,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答本文で新しく作成したファイルの [driveItem][item-resource] リソースを返します。
+成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,7 +106,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答本文で新しく作成したファイルの [driveItem][item-resource] リソースを返します。
+成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -131,14 +129,9 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "section": "documentation"
+} -->

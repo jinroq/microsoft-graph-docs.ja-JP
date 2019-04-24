@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b7b8719e0fe9506ba460c1ec98d5ceec51a95f10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949305"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452850"
 ---
 # <a name="create-rangeborder"></a>RangeBorder を作成する
 
@@ -38,11 +38,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -64,7 +64,7 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-要求の本文には、 [WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

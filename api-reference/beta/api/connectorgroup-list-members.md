@@ -1,19 +1,19 @@
 ---
 title: メンバーを一覧表示する
-description: ConnectorGroup に関連付けられているコネクタ オブジェクトのリストを取得します。
+description: コネクタグループに関連付けられているコネクタオブジェクトの一覧を取得します。
 localization_priority: Normal
 ms.openlocfilehash: 0a35e2645d017d6c0ff23121a5f592438e575798
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455892"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ConnectorGroup に関連付けられているコネクタ オブジェクトのリストを取得します。
+コネクタグループに関連付けられているコネクタオブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[コネクタ](../resources/connector.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[connector](../resources/connector.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -1,23 +1,23 @@
 ---
-title: リスト directorySettingTemplates
-description: テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。  この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。
+title: directorysettingtemplates を一覧表示する
+description: ディレクトリ設定テンプレートは、ディレクトリ設定のテンプレートのセットを表します。これは、テナント内でディレクトリ設定を作成して使用することができます。  この操作により、使用可能な directorysettingtemplates オブジェクトの一覧が取得されます。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1cd0112bd0d9f98f969832427d497d6e9ba2aa14
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530105"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454772"
 ---
-# <a name="list-directorysettingtemplates"></a>リスト directorySettingTemplates
+# <a name="list-directorysettingtemplates"></a>directorysettingtemplates を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。  この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。
+ディレクトリ設定テンプレートは、ディレクトリ設定のテンプレートのセットを表します。これは、テナント内でディレクトリ設定を作成して使用することができます。  この操作により、使用可能な directorysettingtemplates オブジェクトの一覧が取得されます。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 のバージョンは*groupSettingTemplate のリスト*に名前変更されました。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、" *groupsettingtemplate List*" という名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -46,7 +46,7 @@ GET /directorySettingTemplates
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[directorySettingTemplate](../resources/directorysettingtemplate.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directorysettingtemplate](../resources/directorysettingtemplate.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

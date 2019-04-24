@@ -1,5 +1,5 @@
 ---
-title: 会社を取得する
+title: 会社名を取得する
 description: Dynamics 365 Business Central の company オブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
@@ -7,13 +7,13 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 10c672052d98ac774082793445ed028bcc3e41b4
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454196"
 ---
-# <a name="get-companies"></a>会社を取得する
+# <a name="get-companies"></a>会社名を取得する
 Dynamics 365 Business Central の企業オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可

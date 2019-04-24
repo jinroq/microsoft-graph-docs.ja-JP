@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 89f309b53e44b0f2843145dd7c0f4d3ffa6d7f98
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805216"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453965"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>windowskioskdesktopapp リソースの種類
 
@@ -28,10 +28,10 @@ ms.locfileid: "31805216"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承された開始レイアウトのアプリタイルサイズ。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
 |name|String|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたアプリのフレンドリ名を表します。|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されるアプリの種類。 可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
-|autoLaunch|Boolean|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたマルチアプリキオスクモードでアプリを自動起動することを許可します。|
+|autoLaunch|ブール型|[windowskioskappbase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承されたマルチアプリキオスクモードでアプリを自動起動することを許可します。|
 |path|String|デスクトップアプリのパスの定義|
-|desktopapplicationid|文字列|アプリの desktopapplicationid を定義する|
-|desktopapplicationlinkpath|文字列|アプリの desktopapplicationlinkpath を定義する|
+|desktopapplicationid|String|アプリの desktopapplicationid を定義する|
+|desktopapplicationlinkpath|String|アプリの desktopapplicationlinkpath を定義する|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

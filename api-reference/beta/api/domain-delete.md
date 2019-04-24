@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b17d8fea23b48cae8ed3227952fb952297a9aaa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454898"
 ---
 # <a name="delete-domain"></a>ドメインを削除する
 
@@ -17,7 +17,7 @@ ms.locfileid: "29513208"
 
 テナントからドメインを削除します。
 
-> **重要な:** 削除されたドメインは、回復可能ではありません。
+> **重要:** 削除されたドメインは復元できません。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -66,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456851"
 ---
 # <a name="rangeview-resource-type"></a>rangeView リソースの種類
 RangeView は、親の範囲の表示されているセルのセットを表します。
@@ -34,7 +34,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |numberFormat|Json|指定したセルの Excel の数値書式コードを表します。読み取り専用です。 |
 |rowCount|Int32|表示されている行の数を返します。読み取り専用。  |
 |text|Json|指定した範囲のテキスト値。テキスト値は、セルの幅には依存しません。Excel UI で発生する # 記号による置換は、この API から返されるテキスト値には影響しません。読み取り専用です。    |
-|valueTypes|Json|各セルのデータの種類を表します。 読み取り専用です。 値を指定できます: 不明な空白、文字列、整数、ブール値、エラーでは 2 倍、です。 |
+|valueTypes|Json|各セルのデータの種類を表します。 値の取得のみ可能です。 使用可能な値は次のとおりです。 Unknown、Empty、String、Integer、Double、Boolean、Error。 |
 |values|Json|指定した範囲ビューの Raw 値を表します。返されるデータの型は、文字列、数値、ブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。   |
 
 ## <a name="relationships"></a>リレーションシップ

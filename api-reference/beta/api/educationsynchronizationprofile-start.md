@@ -1,23 +1,23 @@
 ---
-title: EducationSynchronizationProfile にファイルをアップロードした後に同期を開始します。
-description: テナントで特定の学校のデータの同期プロファイルをファイルのアップロードを確認します。 検証が成功した場合は、プロファイルの同期が開始されます。 それ以外の場合、エラーおよび警告の応答が含まれます。 応答にエラーが含まれている場合、同期は開始されません。 応答には、警告のみが含まれている場合、は、同期が開始されます。
+title: ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する
+description: テナント内の特定の school データ同期プロファイルにアップロードされたファイルを確認します。 検証に成功すると、プロファイルの同期が開始されます。 それ以外の場合、応答にはエラーと警告が含まれます。 応答にエラーが含まれている場合、同期は開始されません。 応答に警告のみが含まれている場合は、同期が開始されます。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 1447178e80d30058b415345aea83dce4390e6bcf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512354"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457441"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile にファイルをアップロードした後に同期を開始します。
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)にファイルがアップロードされたことを確認します。 検証が成功した場合は、プロファイルの同期が開始されます。 それ以外の場合、エラーおよび警告の応答が含まれます。 応答にエラーが含まれている場合、同期は開始されません。 応答には、警告のみが含まれている場合、は、同期が開始されます。
+テナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)にアップロードされたファイルを確認します。 検証に成功すると、プロファイルの同期が開始されます。 それ以外の場合、応答にはエラーと警告が含まれます。 応答にエラーが含まれている場合、同期は開始されません。 応答に警告のみが含まれている場合は、同期が開始されます。
 
-> **注:** データ プロバイダーが型[educationcsvdataprovider](../resources/educationcsvdataprovider.md)の場合にのみ、このメソッドを使用します。 また、プロファイルの状態プロパティは、開始する前に準備する必要があります。 State プロパティを確認するには、そのプロファイル オブジェクトをポーリングします。
+> **注:** このメソッドは、データプロバイダーの種類が[educationcsvdataprovider](../resources/educationcsvdataprovider.md)の場合にのみ使用します。 また、プロファイルの state プロパティを開始するには、事前に準備しておく必要があります。 プロファイルオブジェクトをポーリングして、その state プロパティを確認します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -25,7 +25,7 @@ ms.locfileid: "29512354"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -42,7 +42,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードを返します。 失敗した場合、返されます、 `400 Bad Request`。 応答には、エラーや警告が検出された場合、応答の本体の一部として[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)オブジェクトのコレクションが含まれています。
+成功した場合、このメソッドは `200 OK` 応答コードを返します。 失敗した場合は、 `400 Bad Request`を返します。 応答には、 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)オブジェクトのコレクションが応答本文の一部として含まれています (エラーまたは警告が検出された場合)。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",

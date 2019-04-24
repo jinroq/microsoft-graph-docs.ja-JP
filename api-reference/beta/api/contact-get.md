@@ -1,29 +1,29 @@
 ---
 title: 連絡先を取得する
-description: プロパティと関係の連絡先オブジェクトを取得します。
+description: 連絡先オブジェクトのプロパティと関係を取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455682"
 ---
 # <a name="get-contact"></a>連絡先を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと関係の連絡先オブジェクトを取得します。
+連絡先オブジェクトのプロパティと関係を取得します。
 
-2 つシナリオは、アプリケーションが別のユーザーの連絡先フォルダーに連絡先を取得する場所です。
+アプリでは、次の2つのシナリオを使用して、別のユーザーの連絡先フォルダーに連絡先を取得できます。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーとコンタクトフォルダーを共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
 
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -33,17 +33,18 @@ ms.locfileid: "29530119"
 |アプリケーション | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーのメールボックスにします。
+<!-- { "blockType": "ignored" } -->
+ユーザーのメールボックス内の[連絡先](../resources/contact.md)。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-[連絡先](../resources/contact.md)ユーザーの最上位レベル[contactFolder](../resources/contactfolder.md)からです。
+ユーザーのトップレベルの[contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-[contactFolder](../resources/mailfolder.md) の子フォルダー内に含まれる [連絡先](../resources/contact.md)。次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。
+[contactFolder](../resources/contact.md) の子フォルダー内に含まれる [連絡先](../resources/mailfolder.md)。  次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 |名前|値|説明|
 |:---------------|:--------|:-------|
-|$expand|文字列|展開して応答に含める関係を示すコンマ区切りのリスト。 サポートされている名前の[contact](../resources/contact.md)オブジェクトのリレーションシップのテーブルを参照してください。 |
+|$expand|string|展開して応答に含める関係を示すコンマ区切りのリスト。 サポートされて[](../resources/contact.md)いる名前については、「リレーションシップ」の表を参照してください。 |
 |$select|string|応答に含めるプロパティを示すコンマ区切りのリスト。|
 
 ## <a name="request-headers"></a>要求ヘッダー
