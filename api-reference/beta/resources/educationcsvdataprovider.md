@@ -1,31 +1,31 @@
 ---
 title: educationCsvDataProvider リソースの種類
-description: 'CSV ファイルは、入力ソースとは、学校のデータの同期プロファイルを設定するために使用します。  '
+description: 'CSV ファイルが入力ソースである場合に、学校データ同期プロファイルを設定するために使用されます。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507176"
 ---
-# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="42d09-103">educationCsvDataProvider リソースの種類</span><span class="sxs-lookup"><span data-stu-id="42d09-103">educationCsvDataProvider resource type</span></span>
+# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="49c4e-103">educationCsvDataProvider リソースの種類</span><span class="sxs-lookup"><span data-stu-id="49c4e-103">educationCsvDataProvider resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="42d09-104">CSV ファイルは、入力ソースとは、学校のデータの同期プロファイルを設定するために使用します。</span><span class="sxs-lookup"><span data-stu-id="42d09-104">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
+<span data-ttu-id="49c4e-104">CSV ファイルが入力ソースである場合に、学校データ同期プロファイルを設定するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="49c4e-104">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
 
-<span data-ttu-id="42d09-105">[EducationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。</span><span class="sxs-lookup"><span data-stu-id="42d09-105">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
+<span data-ttu-id="49c4e-105">[educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。</span><span class="sxs-lookup"><span data-stu-id="49c4e-105">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="42d09-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="42d09-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="49c4e-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="49c4e-106">Properties</span></span>
 
-| <span data-ttu-id="42d09-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="42d09-107">Property</span></span> | <span data-ttu-id="42d09-108">型</span><span class="sxs-lookup"><span data-stu-id="42d09-108">Type</span></span> | <span data-ttu-id="42d09-109">説明</span><span class="sxs-lookup"><span data-stu-id="42d09-109">Description</span></span> |
+| <span data-ttu-id="49c4e-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="49c4e-107">Property</span></span> | <span data-ttu-id="49c4e-108">型</span><span class="sxs-lookup"><span data-stu-id="49c4e-108">Type</span></span> | <span data-ttu-id="49c4e-109">説明</span><span class="sxs-lookup"><span data-stu-id="49c4e-109">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="42d09-110">**カスタマイズ**</span><span class="sxs-lookup"><span data-stu-id="42d09-110">**customizations**</span></span> | [<span data-ttu-id="42d09-111">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="42d09-111">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="42d09-112">同期プロファイルを適用するオプションのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="42d09-112">Optional customizations to be applied to the synchronization profile.</span></span>|
+| <span data-ttu-id="49c4e-110">**ユーザー**</span><span class="sxs-lookup"><span data-stu-id="49c4e-110">**customizations**</span></span> | [<span data-ttu-id="49c4e-111">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="49c4e-111">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="49c4e-112">同期プロファイルに適用されるオプションのカスタマイズ。</span><span class="sxs-lookup"><span data-stu-id="49c4e-112">Optional customizations to be applied to the synchronization profile.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="42d09-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="42d09-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="49c4e-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="49c4e-113">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",

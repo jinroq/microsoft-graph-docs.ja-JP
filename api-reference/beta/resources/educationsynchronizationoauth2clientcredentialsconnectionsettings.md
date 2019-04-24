@@ -1,32 +1,32 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings リソース
-description: OAuth2 クライアントの資格情報の付与は、データ プロバイダーへの接続に使用するが、プロファイルを設定するのにはこの接続の設定の種類を使用してください。
+description: OAuth2 クライアント資格情報の付与を使用してデータプロバイダーに接続する場合は、この接続設定の種類を使用してプロファイルを設定する必要があります。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 37121868793dd76aec2c3b48182e114348d21014
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507041"
 ---
-# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a><span data-ttu-id="7b5ed-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings リソース</span><span class="sxs-lookup"><span data-stu-id="7b5ed-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource</span></span>
+# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a><span data-ttu-id="71b9d-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings リソース</span><span class="sxs-lookup"><span data-stu-id="71b9d-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7b5ed-104">[OAuth2 クライアントの資格情報の付与](https://tools.ietf.org/html/rfc6749#section-4.4)は、データ プロバイダーへの接続に使用するが、プロファイルを設定するのにはこの接続の設定の種類を使用してください。</span><span class="sxs-lookup"><span data-stu-id="7b5ed-104">When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
+<span data-ttu-id="71b9d-104">[OAuth2 クライアント資格情報の付与](https://tools.ietf.org/html/rfc6749#section-4.4)を使用してデータプロバイダーに接続する場合は、この接続設定の種類を使用してプロファイルを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="71b9d-104">When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
 
-<span data-ttu-id="7b5ed-105">[EducationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)から派生します。</span><span class="sxs-lookup"><span data-stu-id="7b5ed-105">Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
+<span data-ttu-id="71b9d-105">[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)から派生します。</span><span class="sxs-lookup"><span data-stu-id="71b9d-105">Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7b5ed-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b5ed-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="71b9d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="71b9d-106">Properties</span></span>
 
-| <span data-ttu-id="7b5ed-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b5ed-107">Property</span></span> | <span data-ttu-id="7b5ed-108">型</span><span class="sxs-lookup"><span data-stu-id="7b5ed-108">Type</span></span> | <span data-ttu-id="7b5ed-109">説明</span><span class="sxs-lookup"><span data-stu-id="7b5ed-109">Description</span></span> |
+| <span data-ttu-id="71b9d-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="71b9d-107">Property</span></span> | <span data-ttu-id="71b9d-108">型</span><span class="sxs-lookup"><span data-stu-id="71b9d-108">Type</span></span> | <span data-ttu-id="71b9d-109">説明</span><span class="sxs-lookup"><span data-stu-id="71b9d-109">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="7b5ed-110">**tokenUrl**</span><span class="sxs-lookup"><span data-stu-id="7b5ed-110">**tokenUrl**</span></span> | <span data-ttu-id="7b5ed-111">String</span><span class="sxs-lookup"><span data-stu-id="7b5ed-111">String</span></span> | <span data-ttu-id="7b5ed-112">データ プロバイダーのアクセス トークンを取得する URL です。</span><span class="sxs-lookup"><span data-stu-id="7b5ed-112">The URL to get access tokens for the data provider.</span></span> |
-| <span data-ttu-id="7b5ed-113">**scope**</span><span class="sxs-lookup"><span data-stu-id="7b5ed-113">**scope**</span></span> | <span data-ttu-id="7b5ed-114">String</span><span class="sxs-lookup"><span data-stu-id="7b5ed-114">String</span></span> | <span data-ttu-id="7b5ed-115">[アクセス要求のスコープ](https://tools.ietf.org/html/rfc6749#section-3.3)です。</span><span class="sxs-lookup"><span data-stu-id="7b5ed-115">[The scope of the access request](https://tools.ietf.org/html/rfc6749#section-3.3).</span></span> |
+| <span data-ttu-id="71b9d-110">**tokenurl**</span><span class="sxs-lookup"><span data-stu-id="71b9d-110">**tokenUrl**</span></span> | <span data-ttu-id="71b9d-111">String</span><span class="sxs-lookup"><span data-stu-id="71b9d-111">String</span></span> | <span data-ttu-id="71b9d-112">データプロバイダーのアクセストークンを取得する URL。</span><span class="sxs-lookup"><span data-stu-id="71b9d-112">The URL to get access tokens for the data provider.</span></span> |
+| <span data-ttu-id="71b9d-113">**scope**</span><span class="sxs-lookup"><span data-stu-id="71b9d-113">**scope**</span></span> | <span data-ttu-id="71b9d-114">String</span><span class="sxs-lookup"><span data-stu-id="71b9d-114">String</span></span> | <span data-ttu-id="71b9d-115">[アクセス要求のスコープ](https://tools.ietf.org/html/rfc6749#section-3.3)。</span><span class="sxs-lookup"><span data-stu-id="71b9d-115">[The scope of the access request](https://tools.ietf.org/html/rfc6749#section-3.3).</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="7b5ed-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7b5ed-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="71b9d-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="71b9d-116">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"

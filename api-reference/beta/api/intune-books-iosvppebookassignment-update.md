@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 61cf121b89cd89a56c502fb92f58c4e8636a3652
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483237"
 ---
-# <a name="update-iosvppebookassignment"></a><span data-ttu-id="a3c05-103">iosVppEBookAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="a3c05-103">Update iosVppEBookAssignment</span></span>
+# <a name="update-iosvppebookassignment"></a><span data-ttu-id="11005-103">iosVppEBookAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="11005-103">Update iosVppEBookAssignment</span></span>
 
-> <span data-ttu-id="a3c05-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3c05-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="11005-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="11005-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a3c05-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3c05-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="11005-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="11005-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a3c05-106">[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a3c05-106">Update the properties of a [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
+<span data-ttu-id="11005-106">[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="11005-106">Update the properties of a [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a3c05-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a3c05-107">Prerequisites</span></span>
-<span data-ttu-id="a3c05-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a3c05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="11005-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="11005-107">Prerequisites</span></span>
+<span data-ttu-id="11005-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="11005-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3c05-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a3c05-110">Permission type</span></span>|<span data-ttu-id="a3c05-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a3c05-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="11005-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="11005-110">Permission type</span></span>|<span data-ttu-id="11005-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="11005-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3c05-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a3c05-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a3c05-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3c05-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a3c05-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a3c05-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3c05-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3c05-115">Not supported.</span></span>|
-|<span data-ttu-id="a3c05-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a3c05-116">Application</span></span>|<span data-ttu-id="a3c05-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3c05-117">Not supported.</span></span>|
+|<span data-ttu-id="11005-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="11005-112">Delegated (work or school account)</span></span>|<span data-ttu-id="11005-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11005-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="11005-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="11005-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="11005-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="11005-115">Not supported.</span></span>|
+|<span data-ttu-id="11005-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="11005-116">Application</span></span>|<span data-ttu-id="11005-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="11005-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a3c05-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a3c05-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="11005-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="11005-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "31805671"
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3c05-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3c05-119">Request headers</span></span>
-|<span data-ttu-id="a3c05-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3c05-120">Header</span></span>|<span data-ttu-id="a3c05-121">値</span><span class="sxs-lookup"><span data-stu-id="a3c05-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="11005-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="11005-119">Request headers</span></span>
+|<span data-ttu-id="11005-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="11005-120">Header</span></span>|<span data-ttu-id="11005-121">値</span><span class="sxs-lookup"><span data-stu-id="11005-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3c05-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3c05-122">Authorization</span></span>|<span data-ttu-id="a3c05-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3c05-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a3c05-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a3c05-124">Accept</span></span>|<span data-ttu-id="a3c05-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a3c05-125">application/json</span></span>|
+|<span data-ttu-id="11005-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="11005-122">Authorization</span></span>|<span data-ttu-id="11005-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="11005-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="11005-124">承諾</span><span class="sxs-lookup"><span data-stu-id="11005-124">Accept</span></span>|<span data-ttu-id="11005-125">application/json</span><span class="sxs-lookup"><span data-stu-id="11005-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a3c05-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a3c05-126">Request body</span></span>
-<span data-ttu-id="a3c05-127">要求本文で、[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3c05-127">In the request body, supply a JSON representation for the [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="11005-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="11005-126">Request body</span></span>
+<span data-ttu-id="11005-127">要求本文で、[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="11005-127">In the request body, supply a JSON representation for the [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
 
-<span data-ttu-id="a3c05-128">次の表に、[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a3c05-128">The following table shows the properties that are required when you create the [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).</span></span>
+<span data-ttu-id="11005-128">次の表に、[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="11005-128">The following table shows the properties that are required when you create the [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).</span></span>
 
-|<span data-ttu-id="a3c05-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3c05-129">Property</span></span>|<span data-ttu-id="a3c05-130">型</span><span class="sxs-lookup"><span data-stu-id="a3c05-130">Type</span></span>|<span data-ttu-id="a3c05-131">説明</span><span class="sxs-lookup"><span data-stu-id="a3c05-131">Description</span></span>|
+|<span data-ttu-id="11005-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="11005-129">Property</span></span>|<span data-ttu-id="11005-130">型</span><span class="sxs-lookup"><span data-stu-id="11005-130">Type</span></span>|<span data-ttu-id="11005-131">説明</span><span class="sxs-lookup"><span data-stu-id="11005-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a3c05-132">id</span><span class="sxs-lookup"><span data-stu-id="a3c05-132">id</span></span>|<span data-ttu-id="a3c05-133">String</span><span class="sxs-lookup"><span data-stu-id="a3c05-133">String</span></span>|<span data-ttu-id="a3c05-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="a3c05-134">Key of the entity.</span></span> <span data-ttu-id="a3c05-135">[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a3c05-135">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
-|<span data-ttu-id="a3c05-136">target</span><span class="sxs-lookup"><span data-stu-id="a3c05-136">target</span></span>|[<span data-ttu-id="a3c05-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a3c05-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="a3c05-138">電子ブックの割り当て先。</span><span class="sxs-lookup"><span data-stu-id="a3c05-138">The assignment target for eBook.</span></span> <span data-ttu-id="a3c05-139">[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a3c05-139">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
-|<span data-ttu-id="a3c05-140">installIntent</span><span class="sxs-lookup"><span data-stu-id="a3c05-140">installIntent</span></span>|[<span data-ttu-id="a3c05-141">installIntent</span><span class="sxs-lookup"><span data-stu-id="a3c05-141">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="a3c05-142">電子ブックのインストールの目的。</span><span class="sxs-lookup"><span data-stu-id="a3c05-142">The install intent for eBook.</span></span> <span data-ttu-id="a3c05-143">[managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="a3c05-143">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span> <span data-ttu-id="a3c05-144">可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。</span><span class="sxs-lookup"><span data-stu-id="a3c05-144">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
+|<span data-ttu-id="11005-132">id</span><span class="sxs-lookup"><span data-stu-id="11005-132">id</span></span>|<span data-ttu-id="11005-133">String</span><span class="sxs-lookup"><span data-stu-id="11005-133">String</span></span>|<span data-ttu-id="11005-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="11005-134">Key of the entity.</span></span> <span data-ttu-id="11005-135">[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="11005-135">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
+|<span data-ttu-id="11005-136">target</span><span class="sxs-lookup"><span data-stu-id="11005-136">target</span></span>|[<span data-ttu-id="11005-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="11005-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="11005-138">電子ブックの割り当て先。</span><span class="sxs-lookup"><span data-stu-id="11005-138">The assignment target for eBook.</span></span> <span data-ttu-id="11005-139">[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="11005-139">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
+|<span data-ttu-id="11005-140">installIntent</span><span class="sxs-lookup"><span data-stu-id="11005-140">installIntent</span></span>|[<span data-ttu-id="11005-141">installIntent</span><span class="sxs-lookup"><span data-stu-id="11005-141">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="11005-142">電子ブックのインストールの目的。</span><span class="sxs-lookup"><span data-stu-id="11005-142">The install intent for eBook.</span></span> <span data-ttu-id="11005-143">[managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="11005-143">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span> <span data-ttu-id="11005-144">可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。</span><span class="sxs-lookup"><span data-stu-id="11005-144">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a3c05-145">応答</span><span class="sxs-lookup"><span data-stu-id="a3c05-145">Response</span></span>
-<span data-ttu-id="a3c05-146">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a3c05-146">If successful, this method returns a `200 OK` response code and an updated [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="11005-145">応答</span><span class="sxs-lookup"><span data-stu-id="11005-145">Response</span></span>
+<span data-ttu-id="11005-146">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="11005-146">If successful, this method returns a `200 OK` response code and an updated [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a3c05-147">例</span><span class="sxs-lookup"><span data-stu-id="a3c05-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="11005-147">例</span><span class="sxs-lookup"><span data-stu-id="11005-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a3c05-148">要求</span><span class="sxs-lookup"><span data-stu-id="a3c05-148">Request</span></span>
-<span data-ttu-id="a3c05-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a3c05-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="11005-148">要求</span><span class="sxs-lookup"><span data-stu-id="11005-148">Request</span></span>
+<span data-ttu-id="11005-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="11005-149">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 Content-type: application/json
@@ -77,8 +77,8 @@ Content-length: 193
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a3c05-150">応答</span><span class="sxs-lookup"><span data-stu-id="a3c05-150">Response</span></span>
-<span data-ttu-id="a3c05-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a3c05-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="11005-150">応答</span><span class="sxs-lookup"><span data-stu-id="11005-150">Response</span></span>
+<span data-ttu-id="11005-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="11005-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

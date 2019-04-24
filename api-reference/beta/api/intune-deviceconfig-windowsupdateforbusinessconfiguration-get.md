@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2f7ace053c4d6089dfb750af1a48a17ff651dc8c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805412"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32511215"
 ---
-# <a name="get-windowsupdateforbusinessconfiguration"></a><span data-ttu-id="1bd39-103">Get windowsUpdateForBusinessConfiguration</span><span class="sxs-lookup"><span data-stu-id="1bd39-103">Get windowsUpdateForBusinessConfiguration</span></span>
+# <a name="get-windowsupdateforbusinessconfiguration"></a><span data-ttu-id="f0b34-103">Get windowsUpdateForBusinessConfiguration</span><span class="sxs-lookup"><span data-stu-id="f0b34-103">Get windowsUpdateForBusinessConfiguration</span></span>
 
-> <span data-ttu-id="1bd39-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bd39-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f0b34-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0b34-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1bd39-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1bd39-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f0b34-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0b34-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1bd39-106">[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="1bd39-106">Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.</span></span>
+<span data-ttu-id="f0b34-106">[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="f0b34-106">Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1bd39-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="1bd39-107">Prerequisites</span></span>
-<span data-ttu-id="1bd39-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1bd39-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f0b34-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="f0b34-107">Prerequisites</span></span>
+<span data-ttu-id="f0b34-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0b34-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1bd39-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1bd39-110">Permission type</span></span>|<span data-ttu-id="1bd39-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1bd39-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f0b34-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f0b34-110">Permission type</span></span>|<span data-ttu-id="f0b34-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="f0b34-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1bd39-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1bd39-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1bd39-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1bd39-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="1bd39-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1bd39-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1bd39-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bd39-115">Not supported.</span></span>|
-|<span data-ttu-id="1bd39-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1bd39-116">Application</span></span>|<span data-ttu-id="1bd39-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1bd39-117">Not supported.</span></span>|
+|<span data-ttu-id="f0b34-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f0b34-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f0b34-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f0b34-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="f0b34-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f0b34-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f0b34-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0b34-115">Not supported.</span></span>|
+|<span data-ttu-id="f0b34-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f0b34-116">Application</span></span>|<span data-ttu-id="f0b34-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0b34-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1bd39-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1bd39-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0b34-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f0b34-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1bd39-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1bd39-119">Optional query parameters</span></span>
-<span data-ttu-id="1bd39-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1bd39-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f0b34-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f0b34-119">Optional query parameters</span></span>
+<span data-ttu-id="f0b34-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f0b34-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1bd39-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1bd39-121">Request headers</span></span>
-|<span data-ttu-id="1bd39-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1bd39-122">Header</span></span>|<span data-ttu-id="1bd39-123">値</span><span class="sxs-lookup"><span data-stu-id="1bd39-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f0b34-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f0b34-121">Request headers</span></span>
+|<span data-ttu-id="f0b34-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f0b34-122">Header</span></span>|<span data-ttu-id="f0b34-123">値</span><span class="sxs-lookup"><span data-stu-id="f0b34-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1bd39-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1bd39-124">Authorization</span></span>|<span data-ttu-id="1bd39-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="1bd39-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1bd39-126">承諾</span><span class="sxs-lookup"><span data-stu-id="1bd39-126">Accept</span></span>|<span data-ttu-id="1bd39-127">application/json</span><span class="sxs-lookup"><span data-stu-id="1bd39-127">application/json</span></span>|
+|<span data-ttu-id="f0b34-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0b34-124">Authorization</span></span>|<span data-ttu-id="f0b34-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0b34-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f0b34-126">承諾</span><span class="sxs-lookup"><span data-stu-id="f0b34-126">Accept</span></span>|<span data-ttu-id="f0b34-127">application/json</span><span class="sxs-lookup"><span data-stu-id="f0b34-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1bd39-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="1bd39-128">Request body</span></span>
-<span data-ttu-id="1bd39-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1bd39-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f0b34-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="f0b34-128">Request body</span></span>
+<span data-ttu-id="f0b34-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f0b34-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1bd39-130">応答</span><span class="sxs-lookup"><span data-stu-id="1bd39-130">Response</span></span>
-<span data-ttu-id="1bd39-131">このメソッドが成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1bd39-131">If successful, this method returns a `200 OK` response code and [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f0b34-130">応答</span><span class="sxs-lookup"><span data-stu-id="f0b34-130">Response</span></span>
+<span data-ttu-id="f0b34-131">このメソッドが成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f0b34-131">If successful, this method returns a `200 OK` response code and [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1bd39-132">例</span><span class="sxs-lookup"><span data-stu-id="1bd39-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f0b34-132">例</span><span class="sxs-lookup"><span data-stu-id="f0b34-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1bd39-133">要求</span><span class="sxs-lookup"><span data-stu-id="1bd39-133">Request</span></span>
-<span data-ttu-id="1bd39-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1bd39-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f0b34-133">要求</span><span class="sxs-lookup"><span data-stu-id="f0b34-133">Request</span></span>
+<span data-ttu-id="f0b34-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f0b34-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="1bd39-135">応答</span><span class="sxs-lookup"><span data-stu-id="1bd39-135">Response</span></span>
-<span data-ttu-id="1bd39-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1bd39-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f0b34-135">応答</span><span class="sxs-lookup"><span data-stu-id="f0b34-135">Response</span></span>
+<span data-ttu-id="f0b34-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f0b34-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

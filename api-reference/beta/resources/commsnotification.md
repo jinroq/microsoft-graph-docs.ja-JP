@@ -1,33 +1,33 @@
 ---
-title: commsNotification リソースの種類
-description: 通信通知の変更を通知するためにサーバーによって提供される基本タイプです。
+title: commsnotification リソースの種類
+description: 通信サーバーによって公開され、変更を通知する通信通知の基本タイプ。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529517"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460675"
 ---
-# <a name="commsnotification-resource-type"></a><span data-ttu-id="5d061-103">commsNotification リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5d061-103">commsNotification resource type</span></span>
+# <a name="commsnotification-resource-type"></a><span data-ttu-id="ed2ae-103">commsnotification リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ed2ae-103">commsNotification resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5d061-104">通信通知の変更を通知するためにサーバーによって提供される基本タイプです。</span><span class="sxs-lookup"><span data-stu-id="5d061-104">Communications notification base type that is published by Communications servers to notify changes.</span></span>
+<span data-ttu-id="ed2ae-104">通信サーバーによって公開され、変更を通知する通信通知の基本タイプ。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-104">Communications notification base type that is published by Communications servers to notify changes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5d061-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5d061-105">Properties</span></span>
-| <span data-ttu-id="5d061-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5d061-106">Property</span></span>       | <span data-ttu-id="5d061-107">型</span><span class="sxs-lookup"><span data-stu-id="5d061-107">Type</span></span>    | <span data-ttu-id="5d061-108">説明</span><span class="sxs-lookup"><span data-stu-id="5d061-108">Description</span></span>                                                |
+## <a name="properties"></a><span data-ttu-id="ed2ae-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ed2ae-105">Properties</span></span>
+| <span data-ttu-id="ed2ae-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ed2ae-106">Property</span></span>       | <span data-ttu-id="ed2ae-107">型</span><span class="sxs-lookup"><span data-stu-id="ed2ae-107">Type</span></span>    | <span data-ttu-id="ed2ae-108">説明</span><span class="sxs-lookup"><span data-stu-id="ed2ae-108">Description</span></span>                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| <span data-ttu-id="5d061-109">changeType</span><span class="sxs-lookup"><span data-stu-id="5d061-109">changeType</span></span>     | <span data-ttu-id="5d061-110">String</span><span class="sxs-lookup"><span data-stu-id="5d061-110">String</span></span>  | <span data-ttu-id="5d061-111">可能な値は、`created`、`updated`、`deleted` です。</span><span class="sxs-lookup"><span data-stu-id="5d061-111">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
-| <span data-ttu-id="5d061-112">リソース</span><span class="sxs-lookup"><span data-stu-id="5d061-112">resource</span></span>       | <span data-ttu-id="5d061-113">String</span><span class="sxs-lookup"><span data-stu-id="5d061-113">String</span></span>  | <span data-ttu-id="5d061-114">変更されたリソースの URI。</span><span class="sxs-lookup"><span data-stu-id="5d061-114">URI of the resource that was changed.</span></span>                      |
+| <span data-ttu-id="ed2ae-109">changeType</span><span class="sxs-lookup"><span data-stu-id="ed2ae-109">changeType</span></span>     | <span data-ttu-id="ed2ae-110">String</span><span class="sxs-lookup"><span data-stu-id="ed2ae-110">String</span></span>  | <span data-ttu-id="ed2ae-111">使用可能な値は、`created`、`updated`、`deleted` です。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-111">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
+| <span data-ttu-id="ed2ae-112">リソース</span><span class="sxs-lookup"><span data-stu-id="ed2ae-112">resource</span></span>       | <span data-ttu-id="ed2ae-113">String</span><span class="sxs-lookup"><span data-stu-id="ed2ae-113">String</span></span>  | <span data-ttu-id="ed2ae-114">変更されたリソースの URI。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-114">URI of the resource that was changed.</span></span>                      |
 
-> <span data-ttu-id="5d061-115">**注:**`resourceData`は、追加のデータとして使用します。</span><span class="sxs-lookup"><span data-stu-id="5d061-115">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="5d061-116">エンティティまたは通知のパッケージ化された変更の数によって Collection(entity) をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="5d061-116">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
+> <span data-ttu-id="ed2ae-115">**注:**`resourceData`追加のデータとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-115">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="ed2ae-116">通知にパッケージ化された変更の数に応じて、エンティティまたはコレクション (エンティティ) です。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-116">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5d061-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5d061-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ed2ae-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ed2ae-117">JSON representation</span></span>
 
-<span data-ttu-id="5d061-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5d061-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ed2ae-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ed2ae-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
