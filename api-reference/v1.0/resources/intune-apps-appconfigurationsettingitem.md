@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 11ef3a964d166301c04c49730ac084b68e700b7c
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503591"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem リソースの種類
 

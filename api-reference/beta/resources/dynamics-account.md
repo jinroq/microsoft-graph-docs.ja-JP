@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 4252c20e9d11f67a6de40871b1649a165cbd787c
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365459"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507575"
 ---
 # <a name="accounts-resource-type"></a>accounts リソースの種類
 Dynamics 365 Business Central の account オブジェクトを表します。
@@ -25,7 +25,7 @@ Dynamics 365 Business Central の account オブジェクトを表します。
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|GUID|アカウントの一意の ID。|
+|id|GUID|アカウントの一意の ID。|
 |number|文字列、最大サイズ20|G/L アカウントの番号を指定します。|
 |displayName|文字列、最大サイズ50|G/L アカウントの名前を指定します。|
 |category|文字列、最大サイズ20|G/L アカウントのカテゴリを指定します。|

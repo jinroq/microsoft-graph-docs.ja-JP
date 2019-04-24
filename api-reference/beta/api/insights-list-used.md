@@ -1,21 +1,21 @@
 ---
-title: リストの使用
-description: ユーザーに使用されるファイルの一覧を返す計算の把握。
+title: 使用するリスト
+description: ユーザーが使用するファイルの一覧を返す、計算された洞察。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: e73536d5933d6293539eb00ba8cdc2e85ce5fa93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2341e41701a2b7306b9e0f1cb89a6b5df76b55ed
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526103"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500854"
 ---
-# <a name="list-used"></a>リストの使用
+# <a name="list-used"></a>使用するリスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーに使用されるファイルの一覧を返す計算の把握。
+ユーザーが使用するファイルの一覧を返す、計算された洞察。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -30,23 +30,23 @@ ms.locfileid: "29526103"
 ```http
 GET /me/insights/used
 ```
-'LastModifiedDateTime' で並べ替えられた結果が返されます他のユーザーのドキュメントの使用を要求して、'lastAccessedDateTime' は、'lastModifiedDateTime' に設定されています。
+他のユーザーの使用ドキュメントを要求すると、結果は ' lastModifiedDateTime ' で並べ替えられ、' lastAccessedDateTime ' は ' lastModifiedDateTime ' に設定されます。
 ```http
-GET /users/<id | userPrincipalName>/insights/used
+GET /users/{id | userPrincipalName}/insights/used
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-使用することができます、`$filter`アイテムのフィルターを使用するパラメーター クエリを実行します。 などは、型に基づいています。
+クエリパラメーターを使用`$filter`して、使用されているアイテムをフィルター処理できます。 たとえば、Type に基づいています。
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-コンテナーの種類に基づくか。
+またはコンテナーの種類に基づきます。
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-使用可能なコンテナーの種類と[resourceVisualization](../resources/insights-resourcevisualization.md)内でフィルターの種類を参照してください。
+利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -60,7 +60,7 @@ GET /users/<id | userPrincipalName>/insights/used
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体で[使用する](../resources/insights-used.md)項目の一覧です。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[使用され](../resources/insights-used.md)ている項目のリストを返します。
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
@@ -102,8 +102,8 @@ GET https://graph.microsoft.com/beta/me/insights/used
 }
 ```
 
-### <a name="expanding-resource"></a>リソースを展開します。
-使用の洞察によって参照されるリソースを展開します。
+### <a name="expanding-resource"></a>リソースの展開
+使用されている洞察で参照されているリソースを展開できます。
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
 ```

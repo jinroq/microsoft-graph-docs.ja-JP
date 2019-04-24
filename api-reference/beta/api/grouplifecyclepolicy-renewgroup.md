@@ -1,23 +1,23 @@
 ---
-title: 'groupLifecyclePolicy: renewGroup'
+title: 'groupLifecyclePolicy: renewgroup'
 description: グループの有効期限を更新します。 グループが更新されると、グループの有効期限はポリシーで定義された日数、延長されます。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 7eb0ef44a5e07c8c293ba804cc8ec31a8312576d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520873"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501852"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewgroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 グループの有効期限を更新します。 グループが更新されると、グループの有効期限はポリシーで定義された日数、延長されます。
 
-> **注:** V1.0 で[の要求を更新するグループ ・ リソースを使用](/graph/api/group-renew?view=graph-rest-1.0)します。
+> **注:** v 1.0 で[は、グループリソースを使用して更新要求を行い](/graph/api/group-renew?view=graph-rest-1.0)ます。
 
 ## <a name="permissions"></a>アクセス許可
 

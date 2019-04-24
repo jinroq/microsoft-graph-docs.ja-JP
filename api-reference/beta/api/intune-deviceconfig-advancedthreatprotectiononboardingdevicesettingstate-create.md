@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: baff48c2cd9c2a4cc4d28674b98856687a9f2db5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800631"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32482159"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>advancedThreatProtectionOnboardingDeviceSettingState を作成する
 
@@ -52,15 +52,15 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |:---|:---|:---|
 |id|String|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|setting|文字列|設定のクラス名とプロパティ名。|
-|settingName|文字列|レポートされている設定名。|
-|deviceId|文字列|レポートされているデバイス ID。|
-|deviceName|文字列|レポートされているデバイス名。|
-|userId|文字列|レポートされているユーザー ID|
+|setting|String|設定のクラス名とプロパティ名。|
+|settingName|String|レポートされている設定名。|
+|deviceId|String|レポートされているデバイス ID。|
+|deviceName|String|レポートされているデバイス名。|
+|userId|String|レポートされているユーザー ID|
 |userEmail|String|レポートされているユーザーのメール アドレス。|
-|userName|文字列|レポートされているユーザー名|
+|userName|String|レポートされているユーザー名|
 |userPrincipalName|String|レポートされているユーザーの PrincipalName|
-|deviceModel|文字列|レポートされているデバイス モデル|
+|deviceModel|String|レポートされているデバイス モデル|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 

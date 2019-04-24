@@ -5,16 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 5dd03644b91ad847b61350f48792afdaa087d59b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502065"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 
 
 拒否送信者リスト内のユーザーは、グループの会話に投稿できません (取得要求 URL で識別)。拒否送信者と承認送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
@@ -33,7 +30,6 @@ ms.locfileid: "29510800"
 ```http
 GET /groups/{id}/rejectedSenders
 ```
-
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
@@ -56,7 +52,7 @@ GET /groups/{id}/rejectedSenders
   "name": "get_rejectedsenders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/rejectedSenders
+GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 
 #### <a name="response"></a>応答
@@ -84,15 +80,10 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List rejectedSenders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-list-rejectedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

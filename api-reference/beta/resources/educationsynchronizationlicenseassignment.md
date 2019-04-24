@@ -1,28 +1,28 @@
 ---
 title: educationSynchronizationLicenseAssignment リソースの種類
-description: ユーザー アカウントに割り当てるにはライセンス情報を表します。 新しいユーザー アカウントを作成するときに、ライセンスの割り当てを設定するのには、リソースが使用されます。
+description: ユーザーアカウントに割り当てるライセンス情報を表します。 リソースは、新しいユーザーアカウントの作成時にライセンスの割り当てを設定するために使用されます。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: ce1ae196ba4f014a039e81713119b01fa69e6170
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507099"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー アカウントに割り当てるにはライセンス情報を表します。 新しいユーザー アカウントを作成するときに、ライセンスの割り当てを設定するのには、リソースが使用されます。
+ユーザーアカウントに割り当てるライセンス情報を表します。 リソースは、新しいユーザーアカウントの作成時にライセンスの割り当てを設定するために使用されます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| appliesTo | string | ライセンスを割り当てるにはユーザーのロールの種類です。 使用可能な値は、`student`、`teacher` です。         |
-| **skuIds** | 文字列のコレクション |  割り当てるライセンスの SKU 識別子を表します。        |
+| **appliesTo** | string | ライセンスに割り当てるユーザーの役割の種類。 可能な値は、`student`、`teacher` です。         |
+| **skuids** | 文字列のコレクション |  割り当てるライセンスの SKU 識別子を表します。        |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

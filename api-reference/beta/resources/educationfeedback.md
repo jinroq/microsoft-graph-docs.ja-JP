@@ -1,29 +1,29 @@
 ---
 title: educationFeedback リソースの種類
-description: 学生に教師からのフィードバックです。 このプロパティは、両方のテキスト部分に、人とのフィードバックを表します。
+description: 教師から学生へのフィードバック。 このプロパティは、フィードバックのテキスト部分と who の両方を表します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 90e55b20b371d04bc3c6d45bb84fe6bf42157a2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507141"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-学生に教師からのフィードバックです。 このプロパティは、両方のテキスト部分に、人とのフィードバックを表します。
+教師から学生へのフィードバック。 このプロパティは、フィードバックのテキスト部分と who の両方を表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|feedbackBy|[identitySet](identityset.md)|フィードバックを作成したユーザー。|
-|feedbackDateTime|DateTimeOffset|フィードバックが与えられた瞬間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|text|[itemBody](itembody.md)|フィードバック。|
+|フィードバック|[identitySet](identityset.md)|フィードバックを作成したユーザー。|
+|フィードバック datetime|DateTimeOffset|フィードバックが提供された時点の時間。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|text|[itemBody](itembody.md)|フィードバック.|
 
 ## <a name="json-representation"></a>JSON 表記
 

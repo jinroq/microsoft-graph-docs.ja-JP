@@ -3,22 +3,20 @@ title: エンティティ リソースの種類
 description: なし
 localization_priority: Normal
 ms.openlocfilehash: e1dd9a8d66dd326076c8a7dd534c2210f53d06e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506707"
 ---
 # <a name="entity-resource-type"></a>エンティティ リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 ## <a name="properties"></a>プロパティ
-| プロパティ | 型  | 説明 |
-|:---------|:------|:------------|
-|id        |String | 読み取り専用です。  |
+| プロパティ     | 型   |説明|
+|:---------------|:--------|:----------|
+|id|String| 読み取り専用です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -34,23 +32,20 @@ ms.locfileid: "29509120"
   ],
   "@odata.type": "microsoft.graph.entity"
 }-->
+
 ```json
 {
   "id": "string (identifier)"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "entity resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/entity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

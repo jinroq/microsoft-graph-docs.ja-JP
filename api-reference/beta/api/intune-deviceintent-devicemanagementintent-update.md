@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c6cf31f6b4e0ee8eeaf88b9421587e52d6b4b2f1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508310"
 ---
 # <a name="update-devicemanagementintent"></a>devicemanagementintent の更新
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|インテント ID|
+|id|String|インテント ID|
 |displayName|String|ユーザーが指定した表示名|
 |説明|String|ユーザーが指定した説明|
 |isAssigned|Boolean|目的がユーザーに割り当てられているかどうかを表します。|
 |lastModifiedDateTime|DateTimeOffset|目的が最後に変更された日時|
-|templateId|文字列|この目的が作成されたテンプレートの ID (存在する場合)|
+|templateId|String|この目的が作成されたテンプレートの ID (存在する場合)|
 
 
 

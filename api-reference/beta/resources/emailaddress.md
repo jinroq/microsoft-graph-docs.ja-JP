@@ -1,27 +1,27 @@
 ---
 title: emailAddress リソースの種類
-description: 名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。
+description: エンティティインスタンスの名前と SMTP アドレスを表します。たとえば、メッセージ受信者や予定表の所有者になります。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: bc1f00ab09ac71f4f3cd9eb1aff8163a537ce257
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506728"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。
+エンティティインスタンスの名前と SMTP アドレスを表します。たとえば、メッセージ受信者や予定表の所有者になります。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|address|String|エンティティ インスタンスの電子メール アドレスです。|
-|name|String|エンティティ インスタンスの表示名。|
+|address|String|エンティティインスタンスの電子メールアドレス。|
+|name|String|エンティティインスタンスの表示名。|
 
 ## <a name="json-representation"></a>JSON 表記
 

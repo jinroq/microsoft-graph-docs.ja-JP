@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: e37e84b1e0744dacc7c9cc37cefea1e9deac859a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502178"
 ---
 # <a name="create-conversation"></a>会話を作成する
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b21b002e7cae3f3b52967cb320caa43e67c10a9d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774849"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495324"
 ---
 # <a name="create-macosvppappassignedlicense"></a>macOsVppAppAssignedLicense を作成する
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|文字列|ユーザーの電子メールアドレス。|
+|userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
 |userName|文字列型 (String)|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|

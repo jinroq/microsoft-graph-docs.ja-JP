@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6cd85a33da06395314fc30836ba6f28de00c98ba
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32496528"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>enterpriseCodeSigningCertificate を作成する
 
@@ -55,8 +55,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
-|issuerName|文字列|証明書の発行者名。|
-|会社|文字列|証明書の発行者の値。|
+|issuerName|String|証明書の発行者名。|
+|会社|String|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploaddatetime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 

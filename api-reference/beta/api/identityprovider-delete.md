@@ -1,19 +1,19 @@
 ---
-title: IdentityProvider を削除します。
+title: identityProvider を削除する
 description: 既存の identityProvider を削除します。
 localization_priority: Normal
 ms.openlocfilehash: bb64f10b656697ab2cf611dd9be0468c295b15e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514356"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501589"
 ---
-# <a name="delete-identityprovider"></a>IdentityProvider を削除します。
+# <a name="delete-identityprovider"></a>identityProvider を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の[identityProvider](../resources/identityprovider.md)を削除します。
+既存の [identityProvider](../resources/identityprovider.md) を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29514356"
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
-職場または学校のアカウントは、テナントのグローバル ・ アドミニストレーターである必要があります。
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -50,7 +50,7 @@ DELETE /identityProviders/{id}
 
 ## <a name="example"></a>例
 
-次の使用例は、 **identityProvider**を削除します。
+次の例では、**identityProvider** を削除します。
 
 ##### <a name="request"></a>要求
 

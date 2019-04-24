@@ -1,24 +1,24 @@
 ---
 title: educationAssignmentRecipient リソースの種類
-description: '**Assignments.assignTo**プロパティ内で使用されます。 このスーパークラスが抽象でありすることはできません。'
+description: プロパティへの割り当てで使用され**ます。** このスーパークラスは abstract であるため、
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507323"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>educationAssignmentRecipient リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Assignments.assignTo**プロパティ内で使用されます。 このスーパークラスが抽象であり、この値への代入のプロパティを設定することはできません。 このスーパークラスでは、割り当ての割り当てのユーザーに割り当てを発行するときを表します。
+プロパティへの割り当てで使用され**ます。** このスーパークラスは abstract であるため、この値に割り当てのプロパティを設定することはできません。 このスーパークラスは、割り当てが発行されたときに割り当てられるユーザーを表します。
 
 
-[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)リソースは、このスーパークラスのサブクラスです。
+[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)リソースは、このスーパークラスのサブクラスです。
 
 ## <a name="properties"></a>プロパティ
 なし。

@@ -1,25 +1,25 @@
 ---
 title: modifiedProperty リソースの種類
-description: Azure の AD の古い値とすべてのリソースの新しい値を持つすべての変更されたプロパティを示します
+description: 変更された Azure AD のリソースについて、古い値と新しい値を持つすべての変更されたプロパティを示します。
 localization_priority: Normal
 ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844456"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506237"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty リソースの種類
-Azure の AD の古い値とすべてのリソースの新しい値を持つすべての変更されたプロパティを示します
+変更された Azure AD のリソースについて、古い値と新しい値を持つすべての変更されたプロパティを示します。
 
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|String|変更されたターゲットの属性のプロパティ名を示します。|
+|displayName|String|変更されたターゲット属性のプロパティ名を示します。|
 |newValue|文字列型 (String)|これらの更新された値を示します。|
-|oldValue|文字列型 (String)|(更新) する前にプロパティの以前の値を示します。|
+|oldValue|String|プロパティの以前の値 (更新前) を示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,29 +1,29 @@
 ---
 title: educationIdentityMatchingConfiguration リソースの種類
-description: 学校のデータのプロファイルの id を一致させるための設定を定義します。 これらの id には、生徒と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリで更新されます。
+description: 学校データプロファイル id を照合するための設定を定義します。 これらの id には、学生と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリ内で更新されます。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: f8712cedf6cd8bd748b8bc29a17bea0779bbe253
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507119"
 ---
 ## <a name="educationidentitymatchingconfiguration-resource-type"></a>educationIdentityMatchingConfiguration リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-学校のデータのプロファイルの id を一致させるための設定を定義します。 これらの id には、生徒と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリで更新されます。
+学校データプロファイル id を照合するための設定を定義します。 これらの id には、学生と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリ内で更新されます。
 
-> **注:** このリソースが選択されている場合は、ユーザーは作成されません。
+> **注:** このリソースが選択されている場合、ユーザーは作成されません。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **matchingOptions** | [microsoft.graph.educationIdentityMatchingOptions](educationidentitymatchingoptions.md)コレクション | ユーザー アカウントを更新するユーザーを一意に識別に使用するオプションの間のマッピングです。 |
+| **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md)コレクション | ユーザーアカウントと、更新するユーザーを一意に識別するために使用するオプションとの間のマッピング。 |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

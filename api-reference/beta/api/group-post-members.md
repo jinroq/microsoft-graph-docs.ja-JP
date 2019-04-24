@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: ac21262858137074ed92978f0ab6530052fcc2de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515679"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502174"
 ---
 # <a name="add-member"></a>メンバーを追加する
 
@@ -61,7 +61,7 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-要求の本文に指定の JSON 表現、`id`の[directoryObject](../resources/directoryobject.md)、[ユーザー](../resources/user.md)、または[グループ](../resources/group.md)のオブジェクトを追加します。
+要求本文で、追加する[directoryobject](../resources/directoryobject.md)、 [user](../resources/user.md)、 `id`または[group](../resources/group.md)オブジェクトの JSON 表記を指定します。
 
 #### <a name="response"></a>応答
 応答の例を次に示します。

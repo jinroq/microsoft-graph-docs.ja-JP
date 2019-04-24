@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488779"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>symantecCodeSigningCertificate の更新
 
@@ -56,8 +56,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |password|String|.pfx ファイルに必要なパスワードを指定します。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
-|issuerName|文字列|証明書の発行者名。|
-|会社|文字列|証明書の発行者の値。|
+|issuerName|String|証明書の発行者名。|
+|会社|String|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploaddatetime|DateTimeOffset|Symantec cert としての CodeSigning cert の種類。|
 

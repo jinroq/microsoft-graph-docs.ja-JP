@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
 ms.openlocfilehash: 65bbd2e371c856a6ffbd2c55ecba88c1635ce41c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480286"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506343"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo ファセット
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **FileSystemInfo** リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
 
@@ -39,7 +37,7 @@ ms.locfileid: "30480286"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                 | 種類           | 説明                                                                                                          |
+| プロパティ                 | 型           | 説明                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | クライアントでのファイルの作成日時 (UTC)。                                                              |
 | **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。 [最近使用したファイル一覧](../api/drive-recent.md)でのみ使用可能です。 |
@@ -63,15 +61,10 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

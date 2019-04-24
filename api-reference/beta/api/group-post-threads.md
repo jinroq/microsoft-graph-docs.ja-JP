@@ -5,16 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: f320c465cee26ef5a91a821cd70b605f4056a9f3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502142"
 ---
 # <a name="create-conversation-thread"></a>会話スレッドを作成する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 最初にスレッドを作成して、新しいグループ会話を開始します。 
 
 グループには、新しい会話、会話スレッド、および投稿が作成されます。[スレッドに返信](conversationthread-reply.md) または [投稿に返信](post-reply.md) を使い、そのスレッドへの投稿を続けます。
@@ -55,7 +52,7 @@ POST /groups/{id}/threads
   "name": "create_conversationthread_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads
 Content-type: application/json
 
 {
@@ -74,7 +71,6 @@ Content-type: application/json
   }]
 }
 ```
-
 #### <a name="response"></a>応答
 応答の例を次に示します。
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
@@ -99,7 +95,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -116,15 +112,10 @@ Content-length: 419
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-post-threads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

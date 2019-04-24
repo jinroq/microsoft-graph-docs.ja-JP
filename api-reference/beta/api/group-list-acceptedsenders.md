@@ -5,16 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 210d7ddde215cfbbe52ad28e4c07168cfb17ff28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520929"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502387"
 ---
 # <a name="list-acceptedsenders"></a>acceptedSenders のリスト化
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。
 
 承諾済み送信者リスト内のユーザーは、グループの会話を投稿することができます (要求取得 URL で識別)。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
@@ -33,7 +30,6 @@ ms.locfileid: "29520929"
 ```http
 GET /groups/{id}/acceptedSenders
 ```
-
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
@@ -56,7 +52,7 @@ GET /groups/{id}/acceptedSenders
   "name": "get_acceptedsenders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
+GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 
 #### <a name="response"></a>応答
@@ -84,15 +80,10 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List acceptedSenders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-list-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

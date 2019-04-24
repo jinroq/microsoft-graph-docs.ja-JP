@@ -1,21 +1,21 @@
 ---
 title: 'グループ: subscribeByMail'
-description: このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。Office 365 のグループのみをサポートします。
+description: このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。 Office 365 グループのみをサポートします。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0a334daa005947099da324aab31ccc2a1da6b6e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501963"
 ---
 # <a name="group-subscribebymail"></a>グループ: subscribeByMail
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このメソッドを呼び出すと、そのグループ内のこのグループは、新規投稿、イベント、およびファイルに関する電子メール通知を受信する現在のユーザーが有効になります。 Office 365 グループのみをサポートします。
+このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。 Office 365 グループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

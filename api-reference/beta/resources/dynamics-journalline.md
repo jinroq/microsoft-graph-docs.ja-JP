@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 7a6841bcc2f893f8ca794e7d8e6aeafbcd4e48ca
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507295"
 ---
 # <a name="journallines-resource-type"></a>journalLines リソースの種類
 Dynamics 365 Business Central のジャーナルの行を表します。
@@ -23,14 +23,14 @@ Dynamics 365 Business Central のジャーナルの行を表します。
 |[journalLines を取得する](../api/dynamics-journalline-get.md)      |journalLines|仕訳帳明細行を取得します。   |
 |[Post journalLines](../api/dynamics-create-journalline.md)  |journalLines|仕訳帳明細行を作成します。|
 |[Patch journalLines](../api/dynamics-journalline-update.md) |journalLines|仕訳帳明細行を更新します。|
-|[journalLines の削除](../api/dynamics-journalline-delete.md)|none        |仕訳帳明細行を削除します。|
+|[journalLines の削除](../api/dynamics-journalline-delete.md)|なし        |仕訳帳明細行を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ             | 型                   |説明                                                        |
 |:---------------------|:-----------------------|:------------------------------------------------------------------|
-|ID                    |GUID                    |仕訳帳明細行の一意の ID。 編集不可。                   |
+|id                    |GUID                    |仕訳帳明細行の一意の ID。 編集できません。                   |
 |journalDisplayName    |文字列、最大サイズ10 |この行が属するジャーナルの表示名。 読み取り専用です。|
-|lineNumber            |integer                 |仕訳帳明細行の番号。                                    |
+|lineNumber            |整数                 |仕訳帳明細行の番号。                                    |
 |accountId             |GUID                    |仕訳帳明細行が関連付けられているアカウントの一意の ID。  |
 |accountnumber         |文字列、最大サイズ20 |仕訳帳明細行が関連付けられているアカウントの番号。     |
 |postingdate           |日付                    |仕訳帳明細行が転記される日付。                          |
@@ -39,7 +39,7 @@ Dynamics 365 Business Central のジャーナルの行を表します。
 |値                |decimal                 |仕訳帳明細行を構成する合計金額 (VAT を含む) を指定します。|
 |説明           |文字列、最大サイズ50 |ユーザーまたは autocreated によって提供される、仕訳帳明細行の説明。|
 |コメント               |文字列、最大サイズ250|ユーザーが仕訳帳明細行に対して指定したコメント。                      |
-|lastModifiedDateTime  |datetime                |履歴明細行が変更された最後の datetime。 読み取り専用です。        |
+|lastModifiedDateTime  |datetime                |履歴明細行が変更された最後の datetime。 読み取り専用。        |
 
 ## <a name="relationships"></a>リレーションシップ
 ジャーナル明細行は、ジャーナルのサブページです。 直接アクセスすることはできません。

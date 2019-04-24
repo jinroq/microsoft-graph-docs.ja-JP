@@ -1,29 +1,29 @@
 ---
 title: governanceSubject リソースの種類
-description: ユーザー、グループ、および権限を持つユーザー情報管理 (PIM) では管理されているサービス ・ プリンシパルを表します。
+description: 特権 id 管理 (PIM) で管理されているユーザー、グループ、およびサービスプリンシパルを表します。
 localization_priority: Normal
 ms.openlocfilehash: a83825a147429c81b3e83b2f2fb384672d2f527e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519165"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506435"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー、グループ、および権限を持つユーザー情報管理 (PIM) では管理されているサービス ・ プリンシパルを表します。
+特権 id 管理 (PIM) で管理されているユーザー、グループ、およびサービスプリンシパルを表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型       |説明|
 |:----------|:----------|:----------|
-|id         |String     | サブジェクトの id です。|
-|type       |String     |サブジェクトの種類。 値は、 ``User``、``Group``と``ServicePrincipal``。|
-|displayName|String     |件名の表示名です。|
-|email      |String     |ユーザーのサブジェクトの電子メール アドレスです。 件名は、他の種類では、空であるか。|
-|principalName|String   |ユーザーのサブジェクトのプリンシパルの名前です。 件名は、他の種類では、空であるか。|
+|id         |String     | 件名の id。|
+|type       |String     |件名の種類。 この値は、 ``User``、 ``Group``、と``ServicePrincipal``することができます。|
+|displayName|String     |件名の表示名。|
+|email      |String     |ユーザーの件名の電子メールアドレス。 件名が他の種類の場合は、空になります。|
+|principalName|String   |ユーザーの件名のプリンシパル名。 件名が他の種類の場合は、空になります。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

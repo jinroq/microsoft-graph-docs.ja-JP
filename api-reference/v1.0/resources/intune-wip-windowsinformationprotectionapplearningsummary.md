@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4149d585c187e8ec9c1f8f1f58aa1d646ba4a298
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257744"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585126"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary リソースの種類
 
@@ -31,7 +31,7 @@ Windows 情報保護アプリの学習概要エンティティ。
 |:---|:---|:---|
 |id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
 |applicationName|String|アプリケーション名|
-|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 使用可能な値は、`universal`、`desktop` です。|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
 ## <a name="relationships"></a>リレーションシップ

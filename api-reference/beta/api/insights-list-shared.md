@@ -1,21 +1,21 @@
 ---
 title: 共有リスト
-description: ユーザーと共有されているファイルの一覧を返す計算の把握。
+description: ユーザーと共有されるファイルの一覧を返す、計算された洞察。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 009d9f65b5403139235e5f9afa932ebbe54ff9d4
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500386"
 ---
 # <a name="list-shared"></a>共有リスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーと共有されているファイルの一覧を返す計算の把握。
+ユーザーと共有されるファイルの一覧を返す、計算された洞察。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -30,25 +30,25 @@ ms.locfileid: "29517352"
 ```http
 GET /me/insights/shared
 ```
-ユーザー id の要求または 'userPrincipalName' のだけがアクセスできるは、ユーザーが、他のユーザーではありません。
+' user id ' または ' userPrincipalName ' を持つ要求は、ユーザーのみがアクセスでき、他のユーザーはアクセスできません。
 ```http
-GET /users/<id | userPrincipalName>/insights/shared
+GET /users/{id | userPrincipalName}/insights/shared
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-使用することができます、`$filter`の共有項目をフィルター処理するパラメーター クエリを実行します。 などは、型に基づいています。
+クエリパラメーターを使用`$filter`して、共有アイテムをフィルター処理できます。 たとえば、Type に基づいています。
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-使用可能なコンテナーの種類と[resourceVisualization](../resources/insights-resourcevisualization.md)内でフィルターの種類を参照してください。
+利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
-特定のユーザーによって共有されているファイルを取得することもできます。 指定することなどにより、`lastshared/sharedby/address`プロパティ。
+特定のユーザーによって共有されているファイルを取得することもできます。 たとえば、次のように`lastshared/sharedby/address`プロパティを指定します。
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-[SharingDetail](../resources/insights-sharingdetail.md)複合型を参照してください。
+[sharingdetail](../resources/insights-sharingdetail.md)複合型を参照してください。
 
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -62,7 +62,7 @@ GET /users/<id | userPrincipalName>/insights/shared
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[共有](../resources/insights-shared.md)の項目の一覧です。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[共有](../resources/insights-shared.md)アイテムのリストを返します。
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
@@ -111,8 +111,8 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 }
 ```
 
-### <a name="expanding-resource"></a>リソースを展開します。
-共有洞察によって参照されるリソースを展開します。
+### <a name="expanding-resource"></a>リソースの展開
+共有された洞察で参照されているリソースは展開できます。
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```

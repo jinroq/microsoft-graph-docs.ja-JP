@@ -1,19 +1,19 @@
 ---
-title: IdentityProvider を取得します。
-description: 既存の identityProvider のプロパティを取得します。
+title: identityProvider を入手する
+description: '既存の identityprovider.readwrite.all: のプロパティを取得します。'
 localization_priority: Normal
 ms.openlocfilehash: 8315c43bcd99b9ea96b408cd2feb61a59369e4c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501348"
 ---
-# <a name="get-identityprovider"></a>IdentityProvider を取得します。
+# <a name="get-identityprovider"></a>identityProvider を入手する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の[identityProvider](../resources/identityprovider.md)のプロパティを取得します。
+既存の [identityProvider](../resources/identityprovider.md) のプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29523072"
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
-職場または学校のアカウントは、テナントのグローバル ・ アドミニストレーターである必要があります。
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -46,11 +46,11 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[identityProvider](../resources/identityprovider.md)の JSON 形式です。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文の [identityProvider](../resources/identityprovider.md) の JSON 表現を返します。
 
 ## <a name="example"></a>例
 
-次の例では、特定の**identityProvider**を取得します。
+次の例では、特定の**identityProvider** を取得します。
 
 ##### <a name="request"></a>要求
 

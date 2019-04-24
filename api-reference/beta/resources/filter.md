@@ -3,11 +3,11 @@ title: フィルター リソースの種類
 description: テーブルの列のフィルター処理を管理します。
 localization_priority: Normal
 ms.openlocfilehash: 6adc4e378b47bcb134a640e77bf54c32a35b3be2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506421"
 ---
 # <a name="filter-resource-type"></a>フィルター リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "29518892"
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |criteria|[FilterCriteria](filtercriteria.md)|指定した列に現在適用されているフィルターです。読み取り専用です。|

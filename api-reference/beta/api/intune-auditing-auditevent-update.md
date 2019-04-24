@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cfe4e0dce5b85738ccf586ef3b739268badb3cc7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776767"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32484077"
 ---
 # <a name="update-auditevent"></a>auditEvent の更新
 
@@ -52,12 +52,12 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。|
 |displayName|String|イベントの表示名。|
-|componentName|文字列|コンポーネント名。|
+|componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
-|activity|文字列|わかりやすいアクティビティの名前。|
+|activity|String|わかりやすいアクティビティの名前。|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時 (UTC)。|
-|activityType|文字列|実行されたアクティビティの種類。|
-|activityOperationType|文字列|アクティビティの HTTP 操作の種類。|
+|activityType|String|実行されたアクティビティの種類。|
+|activityOperationType|String|アクティビティの HTTP 操作の種類。|
 |activityResult|String|アクティビティの結果。|
 |correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) コレクション|変更中のリソースです。|

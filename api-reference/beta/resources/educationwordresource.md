@@ -1,27 +1,27 @@
 ---
 title: educationWordResource リソースの種類
-description: 'EducationResource のサブクラスです。 これは、Word ドキュメント リソースです。 関連付けられている**fileResource**ディレクトリに Word ファイルをアップロードする必要があります、 '
+description: 'educationResource のサブクラス。 これは Word ドキュメントリソースです。 Word ファイルは、に関連付けられた**fileResource**ディレクトリにアップロードする必要があります。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9d92b993ab920a894590346bf5fde0ff86c73e8d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506700"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)のサブクラスです。 これは、Word ドキュメント リソースです。 Word ファイルを送信または割り当てに関連付けられている**fileResource**ディレクトリにアップロードする必要があります。
+[educationResource](educationresource.md)のサブクラス。 これは Word ドキュメントリソースです。 Word ファイルは、割り当てまたは送信に関連付けられている**fileResource**ディレクトリにアップロードする必要があります。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|FileURL|String|ディスク上のファイルの場所です。|
+|fileUrl|String|ディスク上のファイルの場所。|
 
 ## <a name="json-representation"></a>JSON 表記
 

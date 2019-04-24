@@ -3,26 +3,26 @@ title: fileSecurityState リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 ms.openlocfilehash: 485addfda2707c8848c44c839f9593378943f327
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526957"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506409"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アラートに関連するファイル (プロセスではない) に関する情報が含まれています。
+通知に関連するファイル (プロセスではない) に関する情報が含まれます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|複合型の暗号化などの場所に依存したファイルのハッシュが含まれています。|
-|name|String|ファイルの名前 (パス) です。|
-|path|String|ファイルとイメージ ファイルのファイルの完全パスです。|
-|riskScore|String|プロバイダー生成された計算されるリスクの警告ファイルのスコアです。 0 - 1 パーセントに相当する値の範囲をお勧めします。|
+|fileHash|[fileHash](filehash.md)|ファイルハッシュを含む複合型 (暗号化と場所に依存)。|
+|name|String|ファイル名 (パスなし)。|
+|path|String|ファイル/イメージファイルの完全なファイルパス。|
+|riskScore|String|通知ファイルのプロバイダーが生成/計算したリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

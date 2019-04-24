@@ -3,11 +3,11 @@ title: アイコンを取得する
 description: アイコン オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 ms.openlocfilehash: c93dd68136c66499da752204b7e16d1f21da428a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501575"
 ---
 # <a name="get-icon"></a>アイコンを取得する
 

@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: イメージ
 localization_priority: Normal
 ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482400"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506332"
 ---
 # <a name="image-resource-type"></a>イメージ リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **イメージ** リソースは、イメージ関連のプロパティを 1 つの構造にグループ化します。[**DriveItem**](driveitem.md) に null 以外の**イメージ** ファセットがある場合は、アイテムはビットマップ イメージを表します。
 
@@ -31,7 +29,7 @@ ms.locfileid: "30482400"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類  | 説明                                |
+| プロパティ   | 型  | 説明                                |
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | 省略可能。イメージの高さ (ピクセル単位)。読み取り専用です。 |
 | **width**  | Int32 | 省略可能。イメージの幅 (ピクセル単位)。読み取り専用です。  |
@@ -43,15 +41,10 @@ OneDrive for Business では、このリソースは、ファイル拡張子に�
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/image.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/Image"
+} -->

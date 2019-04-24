@@ -1,27 +1,27 @@
 ---
 title: educationSubmissionIndividualRecipient リソースの種類
-description: '提出書類がクラス内の個人に割り当てられていることを示す educationSubmissionRecipient のサブクラスです。  '
+description: 'educationSubmissionRecipient のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8660ec569362d8170d15de86073c0ef59c9ec0a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507061"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提出書類がクラス内の個人に割り当てられていることを示す[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスです。  
+[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|userId|String|提出書類が割り当てられているユーザーのユーザー ID です。|
+|userId|String|提出物が割り当てられているユーザーのユーザー ID。|
 
 ## <a name="json-representation"></a>JSON 表記
 

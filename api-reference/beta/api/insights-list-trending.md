@@ -1,21 +1,21 @@
 ---
-title: リストのトレンド分析
-description: ユーザーのトレンド分析項目の一覧を返す計算の把握。
+title: 人気上昇中を一覧表示する
+description: ユーザーの周囲のアイテムのリストを返す、計算された洞察。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 512dcdfb8a94a2a90c47c4005298537d1d83f137
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525109"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500826"
 ---
-# <a name="list-trending"></a>リストのトレンド分析
+# <a name="list-trending"></a>人気上昇中を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのトレンド分析項目の一覧を返す計算の把握。
+ユーザーの周囲のアイテムのリストを返す、計算された洞察。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -36,15 +36,15 @@ GET /users/{id | userPrincipalName}/insights/trending
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-使用することができます、`$filter`トレンドのアイテムをフィルターするパラメーター クエリを実行します。 などは、型に基づいています。
+クエリパラメーターを使用`$filter`して、傾向分析項目をフィルター処理できます。 たとえば、Type に基づいています。
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-コンテナーの種類に基づくか。
+またはコンテナーの種類に基づきます。
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-使用可能なコンテナーの種類と[resourceVisualization](../resources/insights-resourcevisualization.md)内でフィルターの種類を参照してください。
+利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[トレンド分析](../resources/insights-trending.md)の項目の一覧です。 各項目には、時にアイテムを表示するための視覚エフェクトのプロパティが含まれています。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[傾向](../resources/insights-trending.md)項目のリストを返します。 各アイテムには、アイテムを表示するための視覚エフェクトプロパティが含まれています。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
@@ -67,7 +67,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
 #### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。 ページの下部にある、例の切り捨てられていない応答を参照してください。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。 ページの下部にある、切り捨てられていない応答の例を参照してください。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -98,8 +98,8 @@ Content-length: 801
 }
 ```
 
-### <a name="expanding-resource"></a>リソースを展開します。
-トレンドの把握によって参照されるリソースを展開します。
+### <a name="expanding-resource"></a>リソースの展開
+傾向分析によって参照されているリソースを展開できます。
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending/{id}/resource
 ```

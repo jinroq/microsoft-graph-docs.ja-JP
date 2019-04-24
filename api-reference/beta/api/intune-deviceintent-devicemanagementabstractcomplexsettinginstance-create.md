@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 754ea0cfa4b8c79f77b4cc22731d3b3b341e266b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779280"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32510697"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>deviceManagementAbstractComplexSettingInstance を作成する
 
@@ -54,9 +54,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された設定インスタンス ID|
-|definitionId|文字列|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承されたこのインスタンスの設定定義の ID|
-|valuejson|文字列|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された値の JSON 表現|
-|implementationId|文字列|この複合設定の選択された実装の定義 ID|
+|definitionId|String|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承されたこのインスタンスの設定定義の ID|
+|valuejson|String|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された値の JSON 表現|
+|implementationId|String|この複合設定の選択された実装の定義 ID|
 
 
 

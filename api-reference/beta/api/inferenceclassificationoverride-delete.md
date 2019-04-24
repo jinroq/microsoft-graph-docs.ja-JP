@@ -1,19 +1,19 @@
 ---
 title: inferenceClassificationOverride を削除する
-description: その ID で指定された受信トレイの中心のオーバーライドを削除します。
+description: ID で指定された優先受信トレイの上書きを削除します。
 localization_priority: Normal
 ms.openlocfilehash: 16298ebb02b0540272c0c858abf5b16759de824d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513831"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501064"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>inferenceClassificationOverride を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-その ID で指定された[受信トレイの中心](../resources/manage-focused-inbox.md)のオーバーライドを削除します。
+ID で指定された[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

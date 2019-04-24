@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 36fd043be3cef36951f7651d625f4a93d3b5f8cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505460"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts リソースの種類
 
@@ -17,22 +17,22 @@ ms.locfileid: "29573894"
 
 | プロパティ                 | 型   | 説明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | 日付   | コンテンツの最新の日付。          |
-| exchangeActive           | Int64  | Exchange 上のアクティブ ユーザーの数です。 読み取りし、電子メールを送信できるユーザーは、アクティブなユーザーと見なされます。 |
-| exchangeInactive         | Int64  | Exchange 上のアクティブでないユーザーの数です。 |
-| oneDriveActive           | Int64  | OneDrive のアクティブなユーザーの数です。 表示または編集したファイルを内部または外部でファイルを共有またはファイルを同期するユーザーは、アクティブなユーザーと見なされます。 |
-| oneDriveInactive         | Int64  | OneDrive 上のアクティブでないユーザーの数です。 |
-| sharePointActive         | Int64  | SharePoint のアクティブなユーザーの数です。 表示または編集したファイルをファイルを社内で共有または外部で、ファイルを同期または SharePoint ページを表示したすべてのユーザーは、アクティブなユーザーと見なされます。 |
-| sharePointInactive       | Int64  | SharePoint でアクティブでないユーザーの数です。 |
-| skypeForBusinessActive   | Int64  | Skype のビジネス上のアクティブ ユーザーの数です。 整理または会議に参加またはピア ツー ピア セッションに参加しているユーザーは、アクティブなユーザーと見なされます。 |
-| skypeForBusinessInactive | Int64  | Skype のビジネス上のアクティブでないユーザーの数です。 |
-| yammerActive             | Int64  | Yammer のアクティブなユーザーの数です。 投稿、読み取り、またはメッセージのようなユーザーは、アクティブなユーザーと見なされます。 |
-| yammerInactive           | Int64  | Yammer にアクティブでないユーザーの数です。  |
-| teamsActive              | Int64  | マイクロソフトのチームのアクティブなユーザーの数です。 チームのチャネルでメッセージを投稿、プライベート チャットのセッションにメッセージを送信、または会議や通話に参加したユーザーは、アクティブなユーザーと見なされます。 |
-| teamsInactive            | Int64  | マイクロソフト チームのアクティブでないユーザーの数です。     |
-| office365Active          | Int64  | Office 365 のアクティブなユーザーの数です。   |
-| office365Inactive        | Int64  | Office 365 で使用頻度の低いユーザーの数です。     |
-| reportPeriod             | String | レポートの対象日数です。    |
+| reportrefreshdate        | Date   | コンテンツの最新の日付。          |
+| exchangeactive           | Int64  | Exchange 上のアクティブなユーザーの数。 電子メールを読んだり、送信したりできるユーザーは、アクティブなユーザーであると見なされます。 |
+| exchangeinactive         | Int64  | Exchange 上の非アクティブなユーザーの数。 |
+| onedrive active           | Int64  | OneDrive 上のアクティブなユーザーの数。 ファイルを表示または編集したユーザー、内部または外部の共有ファイル、または同期したファイルは、アクティブなユーザーと見なされます。 |
+| onedrive 非アクティブ         | Int64  | OneDrive 上の非アクティブなユーザーの数。 |
+| sharepointactive         | Int64  | SharePoint 上のアクティブなユーザーの数。 ファイルを表示または編集したユーザー、内部または外部の共有ファイル、同期したファイル、または SharePoint ページを表示したユーザーは、アクティブなユーザーであると見なされます。 |
+| sharepointinactive       | Int64  | SharePoint 上の非アクティブなユーザーの数。 |
+| skypeforbusinessactive   | Int64  | Skype for business 上のアクティブなユーザーの数。 電話会議に参加している、またはピアツーピアセッションに参加しているユーザーは、アクティブなユーザーと見なされます。 |
+| skypeforbusinessinactive | Int64  | Skype for business で使用されていないユーザーの数。 |
+| yammerActive             | Int64  | Yammer のアクティブなユーザーの数。 メッセージを投稿、閲覧、またはそのようにすることができるユーザーは、アクティブなユーザーと見なされます。 |
+| yammerInactive           | Int64  | Yammer の非アクティブユーザーの数。  |
+| teamsactive              | Int64  | Microsoft Teams のアクティブなユーザーの数。 チームチャネルでメッセージを投稿したユーザー、プライベートチャットセッションでメッセージを送信したユーザー、または会議または通話に参加したユーザーは、アクティブなユーザーであると見なされます。 |
+| teamsinactive            | Int64  | Microsoft Teams の非アクティブなユーザーの数。     |
+| office365Active          | Int64  | Office 365 上のアクティブユーザーの数。   |
+| office365Inactive        | Int64  | Office 365 の非アクティブなユーザーの数。     |
+| reportperiod             | String | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

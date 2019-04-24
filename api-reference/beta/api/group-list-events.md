@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: c02318a8c7a8c7a8ffc7562d4a807fa06fae47a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502439"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 

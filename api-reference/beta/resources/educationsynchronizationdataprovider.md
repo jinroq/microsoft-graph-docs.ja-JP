@@ -1,34 +1,34 @@
 ---
 title: educationSynchronizationDataProvider リソースの種類
-description: 'ソース SIS のスキーマを表します。 これにより、受信データを Azure Active Directory (AD の Azure) スキーマにマップする方法を把握するシステムです。 '
+description: 'ソース SIS スキーマを表します。 これにより、システムは、受信データを azure Active Directory (azure AD) スキーマにマップする方法を知ることができます。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: f592e75a3a6df1728839494ee41ac28065450d60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515497"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507040"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>educationSynchronizationDataProvider リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ソース SIS のスキーマを表します。 これにより、受信データを Azure Active Directory (AD の Azure) スキーマにマップする方法を把握するシステムです。
+ソース SIS スキーマを表します。 これにより、システムは、受信データを azure Active Directory (azure AD) スキーマにマップする方法を知ることができます。
 
-> **注:** この複合型は抽象です。 特定の種類の一覧のデータ プロバイダーを参照してください。
+> **注:** この複合型は抽象型です。 記載されている特定の種類のデータプロバイダーを参照してください。
 
 ## <a name="derived-types"></a>派生型
 | 型 | 説明 |
 |:-|:-|:-|
-| [educationcsvdataprovider](educationcsvdataprovider.md) | 入力ソースとして CSV ファイルを使用します。 |
-| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | 入力ソースとして PowerSchool を使用します。 |
-| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | 入力ソースとして、OneRoster API を使用します。 |
+| [educationcsvdataprovider](educationcsvdataprovider.md) | 入力ソースとして CSV ファイルで使用されます。 |
+| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | 入力ソースとして powerschool を使用します。 |
+| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | 入力ソースとして OneRoster API で使用されます。 |
 
 ## <a name="properties"></a>プロパティ
 
-この型でのプロパティはありません。
+この種類のプロパティは公開されません。
 <!--
 {
   "type": "#page.annotation",

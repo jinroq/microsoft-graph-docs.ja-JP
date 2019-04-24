@@ -5,15 +5,13 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7634997b58ec2bb65df1b3914c541fc57c5c37f9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461683"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定された期間のユーザー、配布リスト、またはリソース（部屋または備品）のコレクションの空き時間情報を取得します。
 
@@ -62,7 +60,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -93,7 +91,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
             "scheduleId": "adelev@contoso.onmicrosoft.com",
@@ -234,9 +232,6 @@ Content-type: application/json
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-getschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

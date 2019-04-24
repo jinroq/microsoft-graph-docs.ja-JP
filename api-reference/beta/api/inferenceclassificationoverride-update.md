@@ -1,19 +1,19 @@
 ---
-title: inferenceClassificationOverride を更新する
-description: '重点を置いて [受信トレイ] の [ **classifyAs** ] フィールドの変更は、指定されたオーバーライドします。 '
+title: inferenceClassificationOverride の更新
+description: '指定どおり**** に優先受信トレイの設定の [分類] フィールドを変更します。 '
 localization_priority: Normal
 ms.openlocfilehash: 0cb3eab7f8a4efece8099ca8f65577d8a06b18d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500847"
 ---
-# <a name="update-inferenceclassificationoverride"></a>inferenceClassificationOverride を更新する
+# <a name="update-inferenceclassificationoverride"></a>inferenceClassificationOverride の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-変更の[受信トレイの中心](../resources/manage-focused-inbox.md)の**classifyAs**フィールドは、指定されたオーバーライドします。 
+指定どおり**** に優先[受信トレイ](../resources/manage-focused-inbox.md)の設定の [分類] フィールドを変更します。 
 
 [InferenceClassicationOverride](../resources/inferenceclassificationoverride.md) インスタンスのその他のフィールドの変更には、PATCH を使用できません。 
 

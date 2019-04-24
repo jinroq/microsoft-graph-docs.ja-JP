@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507302"
 ---
 # <a name="journal-resource-type"></a>履歴リソースの種類
 Dynamics 365 Business Central のジャーナルを表します。
@@ -20,15 +20,15 @@ Dynamics 365 Business Central のジャーナルを表します。
 
 | メソッド                                            |戻り値の型|説明    |
 |:--------------------------------------------------|:----------|:--------------|
-|[ジャーナルを取得する](../api/dynamics-journal-get.md)      |雑誌    |ジャーナルを取得します。   |
+|[仕訳帳を取得する](../api/dynamics-journal-get.md)      |雑誌    |ジャーナルを取得します。   |
 |[仕訳帳の投稿](../api/dynamics-create-journal.md)  |雑誌    |仕訳帳を作成します。|
 |[Patch ジャーナル](../api/dynamics-journal-update.md) |雑誌    |仕訳帳を更新します。|
-|[ジャーナルの削除](../api/dynamics-journal-delete.md)|none       |仕訳帳を削除します。|
+|[仕訳帳を削除する](../api/dynamics-journal-delete.md)|なし       |仕訳帳を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ           | 型                  |説明                                           |
 |:-------------------|:----------------------|:-----------------------------------------------------|
-|ID                  |GUID                   |ジャーナルの一意の ID。 編集不可。           |
+|id                  |GUID                   |ジャーナルの一意の ID。 編集できません。           |
 |code                |文字列、最大サイズ10| ジャーナルのコード。                             |
 |displayName         |文字列、最大サイズ50| 仕訳帳の表示名。                     |
 |lastModifiedDateTime|datetime               |ジャーナルが変更された最後の datetime。 読み取り専用です。|

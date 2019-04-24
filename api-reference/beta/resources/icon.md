@@ -3,11 +3,11 @@ title: アイコン リソースの種類
 description: セルのアイコンを表します。
 localization_priority: Normal
 ms.openlocfilehash: c15ee02d1c6830cbb5246826665d0353b7e999b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516302"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506412"
 ---
 # <a name="icon-resource-type"></a>アイコン リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "29516302"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|アイコンを取得する | [Icon](icon.md) |アイコン オブジェクトのプロパティと関係を読み取ります。|
+|[アイコンを取得する](../api/icon-get.md) | [Icon](icon.md) |アイコン オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/icon-update.md) | [Icon](icon.md)  |アイコン オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ

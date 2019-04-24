@@ -1,21 +1,21 @@
 ---
-title: リスト グループの推移的な memberOf
-description: グループとグループのメンバーである管理の単位を取得します。  この操作では、推移的では、このグループの入れ子にされたメンバーであるすべてのグループにも含まれます。 ユーザーの Office 365 のグループを取得するとは異なり、グループのすべての種類を返しますこれだけではなく Office 365 のグループです。
+title: リストグループ推移的な memberOf
+description: グループのメンバーであるグループおよび管理単位を取得します。  この操作は推移的で、このグループがネストされたメンバーであるすべてのグループも含みます。 ユーザーの office 365 グループを取得する場合とは異なり、office 365 グループだけでなく、すべての種類のグループを返します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 95d191973a327e6b3e1b0c7e692e0d581744e0ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502152"
 ---
-# <a name="list-group-transitive-memberof"></a>リスト グループの推移的な memberOf
+# <a name="list-group-transitive-memberof"></a>リストグループ推移的な memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループとグループのメンバーである管理の単位を取得します。  この操作では、推移的では、このグループの入れ子にされたメンバーであるすべてのグループにも含まれます。 ユーザーの Office 365 のグループを取得するとは異なり、グループのすべての種類を返しますこれだけではなく Office 365 のグループです。
+グループのメンバーであるグループおよび管理単位を取得します。  この操作は推移的で、このグループがネストされたメンバーであるすべてのグループも含みます。 ユーザーの office 365 グループを取得する場合とは異なり、office 365 グループだけでなく、すべての種類のグループを返します。
 
 ## <a name="permissions"></a>アクセス許可
 

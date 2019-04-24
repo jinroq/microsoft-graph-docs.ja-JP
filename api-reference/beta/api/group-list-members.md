@@ -1,21 +1,21 @@
 ---
-title: グループ メンバーの一覧
-description: グループの直接メンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、デバイス、サービス ・ プリンシパル、およびその他のグループを持つことができます。 この操作は、推移的ではありません。
+title: グループメンバーを一覧表示する
+description: グループの直接メンバーの一覧を取得します。 グループには、ユーザー、連絡先、デバイス、サービスプリンシパル、およびその他のグループをメンバーとして含めることができます。 この操作は推移的ではありません。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640890"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502100"
 ---
-# <a name="list-group-members"></a>グループ メンバーの一覧
+# <a name="list-group-members"></a>グループメンバーを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループの直接メンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、デバイス、サービス ・ プリンシパル、およびその他のグループを持つことができます。 この操作は、推移的ではありません。
+グループの直接メンバーの一覧を取得します。 グループには、ユーザー、連絡先、デバイス、サービスプリンシパル、およびその他のグループをメンバーとして含めることができます。 この操作は推移的ではありません。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,11 +23,11 @@ ms.locfileid: "29640890"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.AccessAsUser.All、User.ReadBasic.All、User.Read.All    |
+|委任 (職場または学校のアカウント) | directory.accessasuser.all。 all、user. all、all、all、all、all、user. all    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、User.Read.All |
+|アプリケーション | ディレクトリ。すべてのユーザーを取得します。 |
 
-> 注: 非表示のメンバーシップのグループのメンバーを列挙するには、Member.Read.Hidden アクセス許可が必要です。
+> 注: 非表示のメンバーシップグループのメンバーを一覧表示するには、"hidden" アクセス許可が必要です。
  
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

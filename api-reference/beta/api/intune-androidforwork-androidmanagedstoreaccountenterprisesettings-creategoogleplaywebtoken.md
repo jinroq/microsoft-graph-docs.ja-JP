@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ef4d99a7a36b7fbe56ca588044ee14534371c7a3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776837"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32498208"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken アクション
 
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|parenturi|文字列|コンポーネントをホストしているページの https パス。|
+|parenturi|String|コンポーネントをホストしているページの https パス。|
 
 
 

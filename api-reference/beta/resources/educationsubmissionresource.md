@@ -1,36 +1,36 @@
 ---
 title: educationSubmissionResource リソースの種類
-description: '提出書類に使用するリソースのラッパーです。 ラッパーは、この課題からコピーされた場合、割り当てリソースにポインターを追加します。  '
+description: '提出物で使用するためにリソースをラップするラッパー。 ラッパーは、割り当てからコピーされた場合、割り当てリソースへのポインターを追加します。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: ef231de49d3871ec877c279b4e77585343e1a85e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507078"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提出書類に使用するリソースのラッパーです。 ラッパーは、この課題からコピーされた場合、割り当てリソースにポインターを追加します。  
+提出物で使用するためにリソースをラップするラッパー。 ラッパーは、割り当てからコピーされた場合、割り当てリソースへのポインターを追加します。  
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[EducationSubmissionResource を取得します。](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |**EducationSubmissionResource**オブジェクトのプロパティと関係を参照してください。|
-|[Delete](../api/educationsubmissionresource-delete.md) | なし |**EducationSubmissionResource**オブジェクトを削除します。 |
+|[educationSubmissionResource を取得する](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |**educationSubmissionResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[削除する](../api/educationsubmissionresource-delete.md) | なし |**educationSubmissionResource**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|このリソースのコピー元の割り当てへのポインター。 これが null の場合、受講者は、リソースをアップロードします。|
+|割り当て resourceurl|String|このリソースがコピーされた割り当てへのポインター。 この値が null の場合、学生はリソースをアップロードしました。|
 |id|String| 読み取り専用です。|
-|リソース|[educationResource](educationresource.md)|Resource オブジェクト|
+|リソース|[educationResource](educationresource.md)|Resource オブジェクト。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

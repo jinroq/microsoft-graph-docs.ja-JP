@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: db17537de2cd002a16b2c0306d4e4c9304010e44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503675"
 ---
 # <a name="range-usedrange"></a>範囲:UsedRange
 
@@ -81,7 +81,7 @@ Content-length: 169
 }
 ```
 
-オプションを指定する例を次のとおりです`valuesOnly`のパラメーターです。
+省略可能`valuesOnly`なパラメーターを指定する例を次に示します。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

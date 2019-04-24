@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: b6f50ba3046a402f2b8729529675653286808459
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365487"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507267"
 ---
 # <a name="countriesregions-resource-type"></a>countriesRegions リソースの種類
 countriesRegions オブジェクトを Dynamics 365 Business Central で表します。これは、アドレスの一部です。
@@ -23,16 +23,16 @@ countriesRegions オブジェクトを Dynamics 365 Business Central で表し�
 |[countriesRegions を取得する](../api/dynamics-countriesregions-get.md)      |countriesRegions|国/地域を取得します。   |
 |[Post countriesRegions](../api/dynamics-create-countriesregions.md)  |countriesRegions|国/地域を作成します。|
 |[Patch countriesRegions](../api/dynamics-countriesregions-update.md) |countriesRegions|国/地域を更新します。|
-|[countriesRegions の削除](../api/dynamics-countriesregions-delete.md)|none            |国/地域を削除します。|
+|[countriesRegions の削除](../api/dynamics-countriesregions-delete.md)|なし            |国/地域を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型       |説明                                                  |
 |:---------------|:-----------|:------------------------------------------------------------|
-|ID              |GUID        |国/地域の一意の ID。 編集不可。           |
-|code            |文字列      |国/地域のコードを指定します。                    |
+|id              |GUID        |国/地域の一意の ID。 編集できません。           |
+|code            |string      |国/地域のコードを指定します。                    |
 |displayName     |string      |国/地域の表示名を指定します。            |
 |addressformat   |string      |外部向けドキュメントに表示されるアドレスの形式を指定します。 住所形式を国/地域コードにリンクして、その国/地域コードを含むカードまたはドキュメントに基づく外部向けのドキュメントで、指定されたアドレス形式を使用するようにします。|
-|lastModifiedDateTime|datetime|国/地域が変更された最後の datetime。 読み取り専用です。|  
+|lastModifiedDateTime|datetime|国/地域が変更された最後の datetime。 読み取り専用。|  
 
 
 ## <a name="relationships"></a>リレーションシップ

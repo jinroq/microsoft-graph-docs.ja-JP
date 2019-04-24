@@ -1,29 +1,29 @@
 ---
 title: educationFileSynchronizationVerificationMessage リソースの種類
-description: CSV ベースの学校のデータのプロファイルの同期を開始する要求への応答としてクライアントに返されるエラーを表します。 リソースの検証エラーが含まれます。 ユーザーは Azure Active Directory (AD の Azure) との同期を要求を再起動する前にソース データを修正する必要があります。
+description: CSV ベースの学校データプロファイルの同期を開始する要求に対する応答としてクライアントに返されるエラーを表します。 リソースには、検証結果のエラーが含まれています。 azure Active Directory (azure AD) と同期するには、要求を再起動する前に、ソースデータを修正する必要があります。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529895"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507132"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-CSV ベースの学校のデータのプロファイルの[同期の開始](../api/educationsynchronizationprofile-start.md)を要求への応答としてクライアントに返されるエラーを表します。 リソースの検証エラーが含まれます。 ユーザーは Azure Active Directory (AD の Azure) との同期を要求を再起動する前にソース データを修正する必要があります。
+CSV ベースの学校データプロファイルの[同期を開始](../api/educationsynchronizationprofile-start.md)する要求に対する応答としてクライアントに返されるエラーを表します。 リソースには、検証結果のエラーが含まれています。 azure Active Directory (azure AD) と同期するには、要求を再起動する前に、ソースデータを修正する必要があります。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **type** | string | メッセージの種類です。 可能な値は、`error`、`warning`、`information` です。 | 
-| **filename** | string | エラーを含むソース ファイルです。 |
-| **description** | string | メッセージの種類に関する詳細な情報。 |
+| **type** | string | メッセージの種類。 使用可能な値は、`error`、`warning`、`information` です。 | 
+| **filename** | string | エラーを含むソースファイル。 |
+| **説明** | string | メッセージの種類に関する詳細情報。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

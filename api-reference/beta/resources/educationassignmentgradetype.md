@@ -1,23 +1,23 @@
 ---
 title: educationAssignmentGradeType リソースの種類
-description: 割り当てに採点する方式を表します。 **Assignments.grading**プロパティ内で使用されます。
+description: 割り当てが採点される方法を表します。 これは、 **assignments**プロパティ内で使用されます。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 68809d88574f0ba01d6e2fafac2f60ea4229112c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507281"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-割り当てに採点する方式を表します。 **Assignments.grading**プロパティ内で使用されます。
+割り当てが採点される方法を表します。 これは、 **assignments**プロパティ内で使用されます。
 
-このスーパークラスは、割り当てプロパティで直接使用できません。 グレードの割り当てに複数の異なる方法では、それが存在します。
+このスーパークラスは、assignment プロパティで直接使用することはできません。 これは、複数の異なる方法で割り当てられるようにするために存在します。
 
 
 ## <a name="properties"></a>プロパティ

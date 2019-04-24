@@ -1,30 +1,30 @@
 ---
-title: GovernanceRoleDefinition を取得します。
-description: プロパティと、governanceRoleDefinition の関係を取得します。
+title: governanceRoleDefinition を取得する
+description: governanceRoleDefinition のプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: e6a057816a8e07a355941f272325c30078327ab9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503056"
 ---
-# <a name="get-governanceroledefinition"></a>GovernanceRoleDefinition を取得します。
+# <a name="get-governanceroledefinition"></a>governanceRoleDefinition を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 [governanceRoleDefinition](../resources/governanceroledefinition.md)の関係を取得します。
+[governanceRoleDefinition](../resources/governanceroledefinition.md)のプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
-以外にも、アクセス許可のスコープは、この API には、 [governanceRoleDefinition](../resources/governanceroledefinition.md)が属するリソースに 1 つ以上のロールの割り当てを要求元が必要です。
+この API は、アクセス許可のスコープに加えて、 [governanceRoleDefinition](../resources/governanceroledefinition.md)が属しているリソースに対して少なくとも1つの役割の割り当てを要求する必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -32,8 +32,8 @@ ms.locfileid: "29511927"
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポート**しません**。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](/graph/query-parameters)をサポートし**ていません**。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -44,9 +44,9 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[governanceRoleDefinition](../resources/governanceroledefinition.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[governanceRoleDefinition](../resources/governanceroledefinition.md)オブジェクトを返します。
 ## <a name="example"></a>例
-次の使用例は、サブスクリプション Wingtip Toys の本番環境で DNS ゾーンの共同作成者の役割定義の詳細を取得する方法を示します。
+この例では、サブスクリプション Wingtip Toys-生産のロール定義 DNS ゾーン共同作成者の詳細を取得する方法を示します。
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"

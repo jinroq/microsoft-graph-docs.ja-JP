@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 836f2c647fd9894a7d39bba80e5f15f3f11ef81f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255865"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502737"
 ---
 # <a name="delete-group"></a>グループを削除する
 
@@ -17,7 +17,7 @@ ms.locfileid: "30255865"
 
 グループを削除します。  
 
-削除すると、Office 365 グループが一時コンテナーに移動され、30日以内に復元できるようになります。  その時間が過ぎると、完全に削除されます。  詳細については、「 [deletedItems](../resources/directory.md)」を参照してください。  これは、Office 365 グループにのみ適用されます。
+削除すると、Office 365 グループが一時コンテナーに移動され、30日以内に復元できるようになります。  それ以降、これらのユーザーは完全に削除されます。  詳細については、「[deletedItems](../resources/directory.md)」を参照してください。  これは、Office 365 グループにのみ適用されます。
 
 ## <a name="permissions"></a>アクセス許可
 

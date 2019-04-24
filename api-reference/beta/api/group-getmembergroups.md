@@ -1,15 +1,15 @@
 ---
 title: 'グループ: getMemberGroups'
-description: 指定されたグループがメンバーであるすべてのグループを返します。チェックは推移的であり、グループが直接メンバーであるグループのみを返す memberOf ナビゲーション プロパティの読み取りとは異なります。
+description: 指定されたグループがメンバーであるすべてのグループを返します。 チェックは推移的であり、グループが直接メンバーであるグループのみを返す memberOf ナビゲーション プロパティの読み取りとは異なります。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502426"
 ---
 # <a name="group-getmembergroups"></a>グループ: getMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "29529244"
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
 | アプリケーション                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 使用して、`Group.Read.All`のアクセス許可エラーが返されます。 これは既知のバグです。
+> **注:** この API には、 `Directory.Read.All`現在アクセス許可以上が必要です。 `Group.Read.All`アクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 

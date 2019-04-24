@@ -1,21 +1,21 @@
 ---
 title: リスト identityRiskEvents
-description: Identityriskevent オブジェクトのリストを取得します。
+description: identityriskevent オブジェクトのリストを取得します。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: a5f6bf6936cda127fdc10970182d05e036a321c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528943"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501355"
 ---
 # <a name="list-identityriskevents"></a>リスト identityRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Identityriskevent オブジェクトのリストを取得します。
+identityriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -41,7 +41,7 @@ GET /identityRiskEvents
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[identityRiskEvent](../resources/identityriskevent.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[identityRiskEvent](../resources/identityriskevent.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

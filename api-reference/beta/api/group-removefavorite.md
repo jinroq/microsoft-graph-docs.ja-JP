@@ -5,16 +5,13 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 4fad30c2cff494739e759567332e89a3d630954a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502072"
 ---
 # <a name="group-removefavorite"></a>グループ: removeFavorite
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -31,7 +28,6 @@ ms.locfileid: "29517338"
 ```http
 POST /groups/{id}/removeFavorite
 ```
-
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -52,15 +48,13 @@ POST /groups/{id}/removeFavorite
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
+POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -68,15 +62,10 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "group: removeFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-removefavorite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

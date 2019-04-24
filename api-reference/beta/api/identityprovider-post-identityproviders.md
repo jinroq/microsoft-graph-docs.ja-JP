@@ -1,19 +1,19 @@
 ---
-title: IdentityProvider を作成します。
-description: 新しい identityProvider を作成するには、表示名、identityProvider の種類、クライアント ID とクライアント シークレットを指定します。
+title: identityProvider を作成する
+description: 表示名、identityProvider の種類、クライアント ID、クライアント シークレットを指定して、新しい  identityProvider  を作成します。
 localization_priority: Normal
 ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514650"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501274"
 ---
-# <a name="create-identityprovider"></a>IdentityProvider を作成します。
+# <a name="create-identityprovider"></a>identityProvider を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい[identityProvider](../resources/identityprovider.md)を作成するには、表示名、identityProvider の種類、クライアント ID とクライアント シークレットを指定します。
+表示名、identityProvider の種類、クライアント ID、クライアント シークレットを指定して、新しい [ identityProvider ](../resources/identityprovider.md) を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29514650"
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
-職場または学校のアカウントは、テナントのグローバル ・ アドミニストレーターである必要があります。
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -43,22 +43,22 @@ POST /identityProviders
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、 [identityProvider](../resources/identityprovider.md)オブジェクトの JSON 表現を提供します。 次の表に記載されているすべてのプロパティは、必要があります。
+要求本文で、[identityProvider](../resources/identityprovider.md) オブジェクトの JSON 表記を提供します。 次の表に示す、すべてのプロパティが必要です。
 
 |プロパティ|型|説明|
 |:---------------|:--------|:----------|
-|clientId|String|アプリケーションのクライアント ID。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアント ID です。|
-|client_secret|String|アプリケーションのクライアントの機密情報です。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアントの機密情報です。|
-|name|String|Id プロバイダーの表示名。|
-|type|String|Id プロバイダーの種類。 次の値のいずれかを指定する必要があります。 <ul><li/>Microsoft<li/>Google<li/>アマゾン<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|String|アプリケーションのクライアント ID。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント ID です。|
+|clientSecret|String|アプリケーションでのクライアント シークレット。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント シークレットです。|
+|name|String|ID プロバイダーの表示名。|
+|type|String|ID プロバイダーの型。 次のいずれかの値であることが必要です。 <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[identityProvider](../resources/identityprovider.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [identityProvider](../resources/identityprovider.md) オブジェクトを返します。 失敗した場合、`4xx` エラーが詳細情報とともに返されます。
 
 ## <a name="example"></a>例
 
-次の使用例は、 **identityProvider**を作成します。
+次の例では、**identityProvider** を作成します。
 
 ##### <a name="request"></a>要求
 
