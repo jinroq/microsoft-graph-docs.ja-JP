@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 46b8b8eb12c2ac6e69b7d9b6b26bec98c77c8e4b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483643"
 ---
 # <a name="update-deviceinstallstate"></a>deviceInstallState の更新
 
@@ -52,13 +52,13 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceName|文字列|デバイス名。|
-|deviceId|文字列|デバイス ID。|
+|deviceName|String|デバイス名。|
+|deviceId|String|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
 |installState|[installState](../resources/intune-books-installstate.md)|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|文字列|インストール失敗のエラー コード。|
-|osVersion|文字列|OS バージョン。|
-|osDescription|文字列|OS の説明。|
+|errorCode|String|インストール失敗のエラー コード。|
+|osVersion|String|OS バージョン。|
+|osDescription|String|OS の説明。|
 |userName|String|デバイスのユーザー名。|
 
 

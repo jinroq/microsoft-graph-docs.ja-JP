@@ -1,29 +1,29 @@
 ---
-title: chatInfo リソースの種類
-description: マイクロソフトのチーム内のメッセージについて説明します。
+title: chatinfo リソースの種類
+description: Microsoft Teams のメッセージに関する情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3c1414d10a262280bcf0d3a307fc0c71aed2fbde
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507664"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461074"
 ---
-# <a name="chatinfo-resource-type"></a>chatInfo リソースの種類
+# <a name="chatinfo-resource-type"></a>chatinfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-マイクロソフトのチーム内のメッセージについて説明します。
+Microsoft Teams のメッセージに関する情報。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型    | 説明|
 |:--------------------|:--------|:-----------|
-| message_id           | String  | マイクロソフト チームのチャネルでのメッセージの一意の識別子です。 |
-| replyChainMessageId | String  | 返信メッセージの ID です。 |
-| スレッド Id            | String  | マイクロソフトのチームでのスレッドの一意の識別子です。 |
+| messageId           | String  | Microsoft Teams チャネル内のメッセージの一意識別子。 |
+| replyChainMessageId | String  | 返信メッセージの ID。 |
+| id            | String  | Microsoft Teams のスレッドの一意識別子。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

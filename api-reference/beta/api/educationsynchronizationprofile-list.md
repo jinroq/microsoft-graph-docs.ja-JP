@@ -1,29 +1,29 @@
 ---
 title: リスト educationSynchronizationProfiles
-description: テナントの学校のデータの同期プロファイルのコレクションを取得します。
+description: テナント内の学校データ同期プロファイルのコレクションを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457465"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>リスト educationSynchronizationProfiles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントの学校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)のコレクションを取得します。
+テナント内の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)のコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:-----------|:----------|
-| 委任 (職場または学校のアカウント) | EduAdministration.Read、EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+| 委任 (職場または学校のアカウント) | EduAdministration、EduAdministration |
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -32,8 +32,8 @@ ms.locfileid: "29509554"
 GET /synchronizationProfiles
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています: $filter、$orderby、$top、$skip、および $count。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするために、次の[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています。 $filter、$orderby、$top、$skip、$count。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -43,7 +43,7 @@ GET /synchronizationProfiles
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

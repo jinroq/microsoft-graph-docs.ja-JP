@@ -1,19 +1,19 @@
 ---
-title: AppRoleAssignment を削除します。
-description: AppRoleAssignment を削除します。
+title: appRoleAssignment を削除する
+description: approleassignment を削除します。
 localization_priority: Normal
 ms.openlocfilehash: 1c9855e05de9aa1773bb9de5f1c5e7f17c51df9a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458966"
 ---
-# <a name="delete-approleassignment"></a>AppRoleAssignment を削除します。
+# <a name="delete-approleassignment"></a>appRoleAssignment を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-AppRoleAssignment を削除します。
+approleassignment を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

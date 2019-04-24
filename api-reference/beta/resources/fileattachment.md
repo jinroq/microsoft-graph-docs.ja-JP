@@ -1,19 +1,19 @@
 ---
 title: fileAttachment リソースの種類
-description: イベントに関連付けられているテキスト ファイルまたは Word 文書) などのファイル
+description: イベントに添付されたファイル (テキストファイルや Word 文書など)
 localization_priority: Normal
 ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644092"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506369"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-(テキスト ファイルなどの Word 文書)、[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)の添付ファイルです。 **ContentBytes**プロパティには、base64 でエンコードされたファイルの内容が含まれています。  
+[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されたファイル (テキストファイルや Word 文書など)。 **contentbytes**プロパティには、ファイルの base64 でエンコードされたコンテンツが含まれています。  
 
 添付ファイルを作成する場合は、要求本文に以下が含まれます。
 
@@ -27,7 +27,7 @@ ms.locfileid: "29644092"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[取得](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
+|[削除する](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -37,7 +37,7 @@ ms.locfileid: "29644092"
 |contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。|
-|isInline|Boolean|インライン添付ファイルの場合、true に設定します。|
+|isInline|ブール値|インライン添付ファイルの場合、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。|
 |name|String|埋め込み添付ファイルを表すアイコンの下に表示されるテキストを表す名前。これは、実際のファイル名にする必要はありません。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|

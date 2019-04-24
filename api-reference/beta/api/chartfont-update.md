@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456514"
 ---
 # <a name="update-chartfont"></a>Update chartfont
 
@@ -44,9 +44,9 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
-|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
-|name|文字列|フォント名 (例: "Calibri")|
+|name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ (例: 11)|
 |underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
 

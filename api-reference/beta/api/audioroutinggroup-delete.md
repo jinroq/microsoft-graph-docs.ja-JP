@@ -1,17 +1,17 @@
 ---
-title: オーディオのルーティング グループを削除します。
-description: 指定されたオーディオのルーティング グループを削除します。
+title: 音声ルーティング グループを削除する
+description: 指定したオーディオルーティンググループを削除します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c0e5c0cd58c867f7c69a3ac5d4f99a11af223ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511444"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459354"
 ---
-# <a name="delete-audio-routing-group"></a>オーディオのルーティング グループを削除します。
+# <a name="delete-audio-routing-group"></a>音声ルーティング グループを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29511444"
 | :-------------- | :------------------------------------------- |
 | 委任 (職場または学校のアカウント)     | サポート対象外        |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外        |
-| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

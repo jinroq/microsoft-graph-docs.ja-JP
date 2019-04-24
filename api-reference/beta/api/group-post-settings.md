@@ -1,21 +1,21 @@
 ---
-title: ディレクトリ設定は、グループを作成します。
-description: グループの新しいディレクトリの設定を作成するのにには、この API を使用します。
+title: グループにディレクトリ設定を作成する
+description: この API を使用して、グループの新しいディレクトリ設定を作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 3ba33de148e34ce80c0a709a6a1b5faf99d5f32d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515847"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502095"
 ---
-# <a name="create-a-directory-setting-on-groups"></a>ディレクトリ設定は、グループを作成します。
+# <a name="create-a-directory-setting-on-groups"></a>グループにディレクトリ設定を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループの新しいディレクトリの設定を作成するのにには、この API を使用します。
+この API を使用して、グループの新しいディレクトリ設定を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -36,11 +36,11 @@ POST /groups/{id}/settings
 | Authorization  | ベアラー <token>。 必須|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [directorySetting](../resources/directorysetting.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[directorySetting](../resources/directorysetting.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[directorysetting](../resources/directorysetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -67,7 +67,7 @@ Content-length: 222
   }
 }
 ```
-要求の本文には、 [directorySetting](../resources/directorysetting.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

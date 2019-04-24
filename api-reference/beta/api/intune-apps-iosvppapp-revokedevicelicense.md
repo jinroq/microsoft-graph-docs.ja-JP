@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e0dcb1481a4c0a19205952d8d1994d65648cc1e9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790663"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495611"
 ---
 # <a name="revokedevicelicense-action"></a>revokeDeviceLicense アクション
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|manageddeviceid|文字列|割り当てられたアプリライセンスのうち、失効されるユーザーの DeviceId|
+|manageddeviceid|String|割り当てられたアプリライセンスのうち、失効されるユーザーの DeviceId|
 |notifymanageddevices|Boolean|失効通知をデバイスに送信する必要があるかどうかを示すブール値|
 
 

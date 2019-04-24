@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 方向性
 localization_priority: Normal
 ms.openlocfilehash: be7d3b27b1ef22976dc93ea5aecbc2a64031e8b4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480118"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506350"
 ---
 # <a name="hashes-resource-type"></a>Hashes リソース型
 
@@ -39,12 +39,10 @@ ms.locfileid: "30480118"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ         | 種類   | 説明                                                       |
+| プロパティ         | 型   | 説明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String
- | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
-| **crc32Hash**    | String
- | ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。            |
+| **sha1Hash**     | String | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
+| **crc32Hash**    | String | ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。            |
 | **quickXorHash** | String | ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。 |
 
 **注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。

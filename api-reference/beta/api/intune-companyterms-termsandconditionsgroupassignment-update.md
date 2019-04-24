@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 650477e810035039cdc9513ac41a387539fb761c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32482173"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>termsAndConditionsGroupAssignment の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
-|targetgroupid|文字列|T&C ポリシーが割り当てられているグループの一意識別子。|
+|targetgroupid|String|T&C ポリシーが割り当てられているグループの一意識別子。|
 
 
 

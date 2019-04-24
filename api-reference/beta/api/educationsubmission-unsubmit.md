@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: unsubmit'
-description: 'アクション起動された後、割り当ての送信時に、受講生受講者が要求していることを示します。 この操作は、受講者のみ取得できます。 '
+title: 'educationSubmission: 未送信'
+description: '学生が、入力された後に割り当ての提出を作業したいと指定するアクション。 このアクションは、受講者のみが実行できます。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e8ce4c5d4bf68dca22f686a1b3647c67d7836bed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513509"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457446"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
+# <a name="educationsubmission-unsubmit"></a>educationSubmission: 未送信
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アクション起動された後、割り当ての送信時に、受講生受講者が要求していることを示します。 この操作は、受講者のみ取得できます。 「送信」からの提出書類のステータスを変更すると、「処理中」にこのされます。 送信中に、すべてのリソースからコピーされます submittedResources workingResources バケットにします。 先生はグレーディングの作業中のリソースの一覧を見ています。
+学生が、入力された後に割り当ての提出を作業したいと指定するアクション。 このアクションは、受講者のみが実行できます。 これにより、送信の状態が "送信済み" から "作業" に変更されます。 送信プロセス中に、すべてのリソースが submittedresources から workingResources バケットにコピーされます。 教師は、[作業中のリソース] リストを調べて、注目を求めます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 

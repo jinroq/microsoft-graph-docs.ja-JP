@@ -1,19 +1,19 @@
 ---
-title: 契約を更新します。
-description: 契約オブジェクトのプロパティを更新します。
+title: 契約を更新する
+description: アグリーメントオブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: fc6e4718a026f78a6e892dc13095492099b654cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459319"
 ---
-# <a name="update-agreement"></a>契約を更新します。
+# <a name="update-agreement"></a>契約を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[契約](../resources/agreement.md)オブジェクトのプロパティを更新します。
+[アグリーメント](../resources/agreement.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,18 +31,18 @@ PATCH /agreements/<id>
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|displayName|String|契約書の名前を表示します。|
-|isViewingBeforeAcceptanceRequired|ブール値|ユーザーはあるかどうかを展開し、受け入れる前に契約書を表示します。|
+|displayName|String|アグリーメントの表示名。|
+|isViewingBeforeAcceptanceRequired|Boolean|ユーザーが同意する前に、契約を展開して表示する必要があるかどうか。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体で[契約](../resources/agreement.md)の更新されたオブジェクト。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[アグリーメント](../resources/agreement.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {

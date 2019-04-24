@@ -1,23 +1,23 @@
 ---
-title: EducationSynchronizationProfile の同期をリセットします。
-description: テナントで特定の学校のデータの同期プロファイルの同期をリセットします。
+title: educationSynchronizationProfile の同期をリセットする
+description: テナント内の特定の学校データ同期プロファイルの同期をリセットします。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 502eb8d7afdc61926a024b7ddfbac5383a146622
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520411"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457504"
 ---
-# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期をリセットします。
+# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>educationSynchronizationProfile の同期をリセットする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の同期をリセットします。
+テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期をリセットします。
 
-> **注:** 再起動するのには同期は、この操作が行われます。 検出されたエラーは削除されます。 Azure Active Directory (AD の Azure) からのデータは削除されません。 
+> **注:** この操作を行うと、同期が再開されます。 発生したエラーは削除されます。 azure Active Directory (azure AD) からデータが削除されることはありません。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -25,7 +25,7 @@ ms.locfileid: "29520411"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 ##### <a name="response"></a>応答
 
-応答の本体がありません。
+応答本文はありません。
 
 <!-- {
   "blockType": "response",

@@ -1,30 +1,30 @@
 ---
-title: ボックスの一覧の送信
-description: この割り当てに関連付けられているすべての提出書類の一覧を表示します。 教師は、学生はそれらに関連付けられている送信しか取得中に、すべての提出書類を取得できます。
+title: 送信の一覧表示
+description: この割り当てに関連付けられているすべての送信を一覧表示します。 教師は、すべての送信を取得できますが、学生は自分が関連付けられている発信のみを取得できます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 47088cb7a4290827ce75e35d3ac705b31addefac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510639"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458251"
 ---
-# <a name="list-submissions"></a>ボックスの一覧の送信
+# <a name="list-submissions"></a>送信の一覧表示
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この割り当てに関連付けられているすべての提出書類の一覧を表示します。 教師は、学生はそれらに関連付けられている送信しか取得中に、すべての提出書類を取得できます。
+この割り当てに関連付けられているすべての送信を一覧表示します。 教師は、すべての送信を取得できますが、学生は自分が関連付けられている発信のみを取得できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | サポートされていません。 | 
+|アプリケーション | サポートされません。 | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[educationSubmission](../resources/educationsubmission.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSubmission](../resources/educationsubmission.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "ignored",

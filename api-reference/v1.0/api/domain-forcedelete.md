@@ -1,33 +1,33 @@
 ---
-title: 強制的にドメインの削除
-description: 非同期実行時間の長い操作を使用してドメインを削除します。
+title: 強制的にドメインを削除する
+description: 非同期の長時間実行操作を使用してドメインを削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467506"
 ---
-# <a name="force-domain-deletion"></a>強制的にドメインの削除
+# <a name="force-domain-deletion"></a>強制的にドメインを削除する
 
-非同期実行時間の長い操作を使用してドメインを削除します。
+非同期の長時間実行操作を使用してドメインを削除します。
 
-次の操作は、この操作の一部として実行されます。
+この操作の一部として、次のアクションが実行されます。
 
-* 更新、 `userPrincipalName`、 `mail`、および`proxyAddresses`のプロパティ`users`初期 onmicrosoft.com ドメインを使用する削除されたドメインへの参照にします。
+* 最初の`userPrincipalName`onmicrosoft.com `mail`ドメインを`proxyAddresses`使用する`users`ために、削除されたドメインへの参照で、、、およびのプロパティを更新します。
 
-* 更新、`mail`の`groups`初期 onmicrosoft.com ドメインを使用する削除されたドメインへの参照にします。
+* の`mail` `groups`プロパティを、削除されたドメインへの参照で更新して、最初の onmicrosoft.com ドメインを使用します。
 
-* 更新、`identifierUris`の`applications`初期 onmicrosoft.com ドメインを使用する削除されたドメインへの参照にします。
+* の`identifierUris` `applications`プロパティを、削除されたドメインへの参照で更新して、最初の onmicrosoft.com ドメインを使用します。
 
-* 名前を変更するオブジェクトの数が 1000 を超える場合は、エラーが返されます。
+* 名前を変更するオブジェクトの数が1000より大きい場合は、エラーが返されます。
 
-* 1 つの場合の`applications`は、マルチ テナント アプリケーションの名前を変更するのには、エラーが返されます。
+* 名前`applications`を変更する1つのがマルチテナントアプリの場合は、エラーが返されます。
 
-ドメインの削除が完了すると、削除されたドメインの API 操作は HTTP 404 ステータス コードを返します。 ドメインの削除を確認するには、[ドメインの取得](domain-get.md)の操作を行うことができます。
+ドメイン削除の完了後、削除されたドメインの API 操作は HTTP 404 状態コードを返します。 ドメインの削除を確認するには、ドメインの[取得](domain-get.md)操作を実行します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -62,11 +62,11 @@ POST /domains/{id}/forceDelete
 
 | パラメーター | 型 | 説明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 名前を変更するユーザー アカウントを無効にするオプションです。 ユーザー アカウントを無効にすると、ユーザーはサインインするのには使用できません。 場合**は true**に設定、`users`この操作の一部が無効にするたびに更新します。  既定値は**true**です。 |
+|`disableUserAccounts`|`Boolean`| 名前が変更されたユーザーアカウントを無効にするオプション。 ユーザーアカウントが無効になっている場合、ユーザーはサインインすることができません。 **true**に設定すると`users` 、この操作の一部として更新されたものは無効になります。  既定値は **true** です。 |
 
 ## <a name="response-body"></a>応答本文
 
-かどうかは成功すると、このメソッドを返します`HTTP/1.1 204 OK`ステータス コードです。
+成功した場合、この`HTTP/1.1 204 OK`メソッドは状態コードを返します。
 
 ## <a name="example"></a>例
 

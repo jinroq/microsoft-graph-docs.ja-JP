@@ -1,25 +1,25 @@
 ---
-title: cloudAppSecurityState リソースの種類
-description: ステートフル (destinationServiceName、destinationServiceIp) は、クラウド アプリケーションについてを説明します。
+title: cloudappsecuritystate リソースの種類
+description: クラウドアプリケーション (destinationservicename、destinationserviceip) に関するステートフルな情報を含みます。
 localization_priority: Normal
 ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460661"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState リソースの種類
+# <a name="cloudappsecuritystate-resource-type"></a>cloudappsecuritystate リソースの種類
 
-ステートフル (destinationServiceName、destinationServiceIp) は、クラウド アプリケーションについてを説明します。
+クラウドアプリケーション (destinationservicename、destinationserviceip) に関するステートフルな情報を含みます。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|クラウド アプリケーションやサービスへの接続の宛先の IP アドレス。|
-|destinationServiceName|String|クラウド アプリケーションとサービスの名前 (たとえば「Salesforce」、「ドロップ ボックス」など)。|
-|riskScore|String|プロバイダーによって生成されると計算されるリスク スコア クラウド アプリケーションとサービスのです。 0 - 1 パーセントに相当する値の範囲をお勧めします。|
+|destinationserviceip|String|クラウドアプリケーション/サービスへの接続の宛先 IP アドレス。|
+|destinationservicename|String|クラウドアプリケーション/サービス名 ("Salesforce"、"DropBox" など)。|
+|riskScore|String|プロバイダーが生成/計算する、クラウドアプリケーション/サービスのリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,28 +1,28 @@
 ---
 title: serviceHostedMediaConfig リソースの種類
-description: ServiceHostedMediaConfig 型です。
+description: serviceHostedMediaConfig の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642227"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463282"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ServiceHostedMediaConfig 型です。
+serviceHostedMediaConfig の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                    | 型                                                        | 説明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md)コレクション                        | 事前に取得するのにはメディアの一覧です。                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | オーディオの既定のグループから、自己の参加者を削除します。 |
+| prefetchmedia               | [mediaInfo](mediainfo.md)コレクション                        | 事前にフェッチするメディアのリスト。                   |
+| removefromdefaultaudiogroup | Boolean                                                     | 既定のオーディオグループから自分の参加者を削除します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

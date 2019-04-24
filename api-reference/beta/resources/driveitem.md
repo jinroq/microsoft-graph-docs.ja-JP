@@ -6,13 +6,13 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789642"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507582"
 ---
-# <a name="driveitem-resource-type"></a>drive item リソースの種類
+# <a name="driveitem-resource-type"></a>driveItem リソース型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -148,7 +148,7 @@ ms.locfileid: "30789642"
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
 | listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用。 Null 許容型。
 | アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
-| 講読      | [subscription][]コレクション | アイテムのサブスクリプションのセット。 ドライブのルートでのみサポートされています。
+| subscriptions      | [subscription][] コレクション | アイテムのサブスクリプションのセット。 ドライブのルートでのみサポートされています。
 | thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
 | versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型。
 | workbook           | [workbook][]                | Excel スプレッドシートであるファイルの場合、スプレッドシートのコンテンツを操作するためにブックの API にアクセスします。 Null 許容型。
@@ -165,7 +165,7 @@ ms.locfileid: "30789642"
 
 **注:**@microsoft.graph.downloadUrl の値は短時間限定の URL であるため、キャッシュすることはできません。
 URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
-ユーザーのファイルアクセス許可を削除しても、その URL はすぐに無効になることはありません。
+ユーザーのファイルへのアクセス許可を削除しても、すぐに URL が無効にならない場合があります。
 
 ## <a name="methods"></a>メソッド
 
@@ -192,7 +192,7 @@ URL は短い期間 (1 時間) だけ使用でき、その後は無効になり�
 | [アクセス許可を追加する](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を削除する](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [WebSocket チャネルの取得][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
+| [WebSocket チャネルを取得する][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [アイテムをプレビューする][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md

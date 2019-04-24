@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4443a2924b60333d34830fee77f802df7e8aead3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793827"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471589"
 ---
 # <a name="update-carttoclassassociation"></a>cartToClassAssociation の更新
 
@@ -56,8 +56,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|管理者が指定した、デバイス構成の名前。|
 |説明|String|CartToClassAssociation の管理者提供の説明。|
-|devicecartids|String コレクション|クラスに関連付けられるデバイスカートの識別子。|
-|classroomIds|String コレクション|デバイスカートに関連付ける教室の識別子。|
+|devicecartids|String collection|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
 
 
 

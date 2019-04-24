@@ -1,27 +1,27 @@
 ---
 title: educationOneNoteResource リソースの種類
-description: 'EducationResource のサブクラスです。 これは、OneNote のページの場所を表します。  '
+description: 'educationResource のサブクラス。 OneNote ページの場所を表します。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521419"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507197"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)のサブクラスです。 これは、OneNote のページの場所を表します。  
+[educationResource](educationresource.md)のサブクラス。 OneNote ページの場所を表します。  
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|pageUrl|String|OneNote のページに Microsoft のグラフの URL です。|
-|sectionName|String|ディストリビューションにコピーする必要がありますにコピーされたセクションの名前です。|
+|pageUrl|String|OneNote のページへの Microsoft Graph の URL。|
+|sectionName|String|配布先のセクション名を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

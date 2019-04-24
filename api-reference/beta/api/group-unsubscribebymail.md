@@ -1,21 +1,21 @@
 ---
 title: 'グループ: unsubscribeByMail'
-description: 'このメソッドを呼び出すと、そのグループ内の新規投稿、イベント、およびファイルには、このグループの電子メール通知を受信する現在のユーザーが無効になります。 Office 365 グループのみをサポートします。 '
+description: 'このメソッドを呼び出すと、現在のユーザーは、そのグループの新しい投稿、イベント、およびファイルに関するこのグループの電子メール通知を受信することを無効にします。 Office 365 グループに対してのみサポートされています。 '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: f7790ad68a99e13454add6db9a9e80229ab21254
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501999"
 ---
 # <a name="group-unsubscribebymail"></a>グループ: unsubscribeByMail
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このメソッドを呼び出すと、そのグループ内の新規投稿、イベント、およびファイルには、このグループの電子メール通知を受信する現在のユーザーが無効になります。 Office 365 グループのみをサポートします。 
+このメソッドを呼び出すと、現在のユーザーは、そのグループの新しい投稿、イベント、およびファイルに関するこのグループの電子メール通知を受信することを無効にします。 Office 365 グループに対してのみサポートされています。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

@@ -1,28 +1,28 @@
 ---
 title: educationOrganization リソースの種類
-description: '教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。  '
+description: '教育機関内の異なる組織の種類間で共通性をモデル化するために使用される抽象エンティティ。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507181"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。  
+教育機関内の異なる組織の種類間で共通性をモデル化するために使用される抽象エンティティ。  
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String| 組織の説明です。|
-|displayName|String| 組織の表示名です。|
-|externalSource|string| この組織が作成されたソースです。 可能な値は、`sis`、`manual`、`unknownFutureValue` です。|
+|description|String| 組織の説明。|
+|displayName|String| 組織の表示名。|
+|externalSource|string| この組織の作成元のソース。 可能な値は、`sis`、`manual`、`unknownFutureValue` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし。

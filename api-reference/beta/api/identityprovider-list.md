@@ -1,19 +1,19 @@
 ---
-title: リスト identityProviders
-description: ディレクトリ内のすべての identityProviders を取得します。
+title: identityProvider を一覧表示する
+description: すべての identityProvider ディレクトリ内で取得します。
 localization_priority: Normal
 ms.openlocfilehash: 4226e6f091527d2df8bfb544327ec2e49f2b890c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529734"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501330"
 ---
-# <a name="list-identityproviders"></a>リスト identityProviders
+# <a name="list-identityproviders"></a>identityProvider を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリ内のすべての[identityProviders](../resources/identityprovider.md)を取得します。
+すべての [identityProvider](../resources/identityprovider.md) ディレクトリ内で取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29529734"
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
-職場または学校のアカウントは、テナントのグローバル ・ アドミニストレーターである必要があります。
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -46,11 +46,11 @@ GET /identityProviders
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に JSON 形式で[identityProviders](../resources/identityprovider.md)のコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、JSON 表現の [identityProvider](../resources/identityprovider.md) のコレクションを応答本文で返します。
 
 ## <a name="example"></a>例
 
-次の例では、すべての**identityProvider**を取得します。
+次の例では、すべての **identityProvider** を取得します。
 
 ##### <a name="request"></a>要求
 

@@ -1,54 +1,55 @@
 ---
 title: リスト governanceRoleAssignmentRequests
-description: 'GovernanceRoleAssignmentRequests のコレクションを取得します。 '
+description: 'governanceRoleAssignmentRequests のコレクションを取得します。 '
 localization_priority: Normal
 ms.openlocfilehash: 5ad26ef352eae93e9c804cfb62f5d00df12e32ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515462"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503279"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>リスト governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[GovernanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを取得します。 
+[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->リソースの[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)の一覧を表示します。
+<!-- { "blockType": "ignored" } -->
+リソース上の[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを一覧表示します。
     
->**注:** 以外にも、アクセス許可のスコープは、要求には、リソースに 1 つ以上のロールの割り当てを要求元が必要です。
+>**注:** 要求では、アクセス許可のスコープの他に、リソースに対して少なくとも1つの役割の割り当てが必要になります。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-私の[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)の一覧を表示します。
+採鉱所の[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを一覧表示します。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-保留中の管理者の決定事項を[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)の一覧を表示します。
+管理者による決定を保留している[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを一覧表示します。
     
->**注:** この要求だけでなく、アクセス許可のスコープに少なくとも 1 つのリクエスターが必要です`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
+>**注:** この要求では、アクセス許可スコープに加えて、リソースに対し`Active`て少なくとも`owner` 1 `user access administrator`つの管理者の役割の割り当て (または) をリクエスターが必要とします。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -59,14 +60,14 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-管理者は、サブスクリプション Wingtip toys 社の商品の保留中の役割の割り当て要求を照会します。
+管理者は、サブスクリプション Wingtip Toys-生産に対する保留中の役割の割り当て要求を照会します。
 ##### <a name="request"></a>要求
 
 ```http
@@ -75,7 +76,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

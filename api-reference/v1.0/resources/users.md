@@ -5,13 +5,13 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bfd7778d3fdc9675880b98a356dd690c4b1eaec8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456886"
 ---
-# <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーとの作業
+# <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーの操作
 
 Microsoft Graph を使用し、ユーザー達、他のユーザーやグループとの関係、彼らのメール、予定表、およびファイルに基づいて、魅力的なアプリケーション体験を構築することができます。
 
@@ -39,7 +39,7 @@ Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) に
 
 |プロパティ |説明 |
 |:----------|:-------------|
-|ID | ユーザーの一意の識別子。|
+|id | ユーザーの一意の識別子。|
 |businessPhones | ユーザーの電話番号。|
 |displayName | アドレス帳に表示されるユーザーの名前。|
 |givenName| ユーザーの名。 |

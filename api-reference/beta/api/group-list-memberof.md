@@ -1,23 +1,23 @@
 ---
-title: グループへの後方リンクの一覧
-description: グループとグループの直接メンバーである管理の単位を取得します。
+title: リストグループの memberOf
+description: グループが直接メンバーであるグループおよび管理単位を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ecf127e7cc4af4aada3d75ef6415a242b0a9411b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502122"
 ---
-# <a name="list-group-memberof"></a>グループへの後方リンクの一覧
+# <a name="list-group-memberof"></a>リストグループの memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループとグループの直接メンバーである管理の単位を取得します。
+グループが直接メンバーであるグループおよび管理単位を取得します。
 
-この操作は推移的ではありません。ユーザーの Office 365 のグループ取得と異なり、これは Office 365 のグループだけでなく、すべての種類のグループを返します。 
+この操作は推移的ではありません。 ユーザーの office 365 グループを取得する場合とは異なり、office 365 グループだけでなく、すべての種類のグループを返します。 
 
 ## <a name="permissions"></a>アクセス許可
 

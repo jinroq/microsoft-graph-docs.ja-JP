@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520502"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455584"
 ---
 # <a name="update-contactfolder"></a>Update contactfolder
 
@@ -42,9 +42,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|文字列型 (String)|フォルダーの表示名。|
-|parentFolderId|String|フォルダーの親フォルダーの ID。|
-|WellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
+|displayName|String|フォルダーの表示名。|
+|parentFolderId|文字列|フォルダーの親フォルダーの ID。|
+|wellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。 現在、認識されている連絡先フォルダーは `contacts` のみです。|
 
 ## <a name="response"></a>応答
 

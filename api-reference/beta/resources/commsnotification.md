@@ -1,29 +1,29 @@
 ---
-title: commsNotification リソースの種類
-description: 通信通知の変更を通知するためにサーバーによって提供される基本タイプです。
+title: commsnotification リソースの種類
+description: 通信サーバーによって公開され、変更を通知する通信通知の基本タイプ。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529517"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460675"
 ---
-# <a name="commsnotification-resource-type"></a>commsNotification リソースの種類
+# <a name="commsnotification-resource-type"></a>commsnotification リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通信通知の変更を通知するためにサーバーによって提供される基本タイプです。
+通信サーバーによって公開され、変更を通知する通信通知の基本タイプ。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    | 説明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | 可能な値は、`created`、`updated`、`deleted` です。      |
+| changeType     | String  | 使用可能な値は、`created`、`updated`、`deleted` です。      |
 | リソース       | String  | 変更されたリソースの URI。                      |
 
-> **注:**`resourceData`は、追加のデータとして使用します。 エンティティまたは通知のパッケージ化された変更の数によって Collection(entity) をお勧めします。
+> **注:**`resourceData`追加のデータとして使用できます。 通知にパッケージ化された変更の数に応じて、エンティティまたはコレクション (エンティティ) です。
 
 ## <a name="json-representation"></a>JSON 表記
 

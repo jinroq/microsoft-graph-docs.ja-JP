@@ -1,30 +1,30 @@
 ---
-title: 'directoryObject: validateProperties'
-description: Office 365 のグループの表示名やメールのニックネームは、命名ポリシーに準拠している場合を検証します。  クライアントは、API を使用して場合は、表示名を確認または、Office 365 のグループ**を作成**する前に、メールのニックネームが無効です。 既存のグループのプロパティを検証するためには、グループの validateProperties 関数を使用します。
+title: 'directoryobject: validateproperties'
+description: Office 365 グループの表示名またはメールニックネームが名前付けポリシーに準拠しているかどうかを検証します。  クライアントは API を使用して、Office 365 グループを**作成**する前に、表示名またはメールニックネームが有効かどうかを判断します。 既存のグループのプロパティを検証するには、グループに対して validateproperties 関数を使用します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 515acb022150d091e7dcbbdecc1fb1adef849a88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455052"
 ---
-# <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
+# <a name="directoryobject-validateproperties"></a>directoryobject: validateproperties
 
-Office 365 のグループの表示名やメールのニックネームは、命名ポリシーに準拠している場合を検証します。  クライアントは、API を使用して場合は、表示名を確認または、Office 365 のグループ**を作成**する前に、メールのニックネームが無効です。 既存のグループのプロパティを検証するためには、グループの[validateProperties 関数](group-validateproperties.md)を使用します。
+Office 365 グループの表示名またはメールニックネームが名前付けポリシーに準拠しているかどうかを検証します。  クライアントは API を使用して、Office 365 グループを**作成**する前に、表示名またはメールニックネームが有効かどうかを判断します。 既存のグループのプロパティを検証するには、グループに対して[validateproperties 関数](group-validateproperties.md)を使用します。
 
-表示名とメールのニックネームのプロパティには、次の検証が実行されます。 
-1. プリフィックスおよびサフィックスの名前付けポリシーを検証します。
-2. 禁止された単語をカスタム ポリシーを検証します。
-3. 検証、メールのニックネームが一意では
+[表示名] および [メールニックネーム] プロパティに対して、次の検証が実行されます。 
+1. プレフィックスとサフィックスの名前付けポリシーを検証する
+2. カスタムの禁止単語のポリシーを検証する
+3. メールニックネームが一意であることを確認する
 
-この API は、最初のエラーが発生しましたを返します。 1 つまたは複数のプロパティには、複数の検証が失敗した場合、最初の検証エラーのプロパティだけが返されます。 ただし、メールのニックネームと表示名の両方を検証し、検証エラーのコレクションが表示される場合は、プレフィックスとサフィックスの名前付けポリシーを検証しているだけです。
+この API は、最初のエラーが発生したことを返します。 1つ以上のプロパティが複数の検証に失敗した場合、最初の検証に失敗したプロパティのみが返されます。 ただし、プレフィックスとサフィックスの名前付けポリシーのみを検証する場合は、メールニックネームと表示名の両方を検証し、検証エラーのコレクションを受信することができます。
 
-## <a name="prerequisites"></a>必須条件
+## <a name="prerequisites"></a>前提条件
 
-この API を実行するために次の**アクセス許可**が必要です: *Group.Read.All*
+この API を実行するには、次の** **アクセス許可**が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -42,24 +42,24 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`唯一サポートされているエンティティの種類です。 |
-|displayName|String| 検証グループの表示名。 プロパティは、個別に必要ではありません。 ただし、少なくとも 1 つのプロパティ (表示名または mailNickname) は、必要があります。 |
-|mailNickname|String| 検証するためにグループのメール ニックネーム。 プロパティは、個別に必要ではありません。 ただし、少なくとも 1 つのプロパティ (表示名または mailNickname) は、必要があります。 |
-|onBehalfOfUserId|Guid| API を呼び出すときに偽装するユーザーのオブジェクト ID です。 検証の結果は、onBehalfOfUserId の属性とロールのです。 |
+|entityType|String| `Group`は、サポートされている唯一のエンティティの種類です。 |
+|displayName|String| 検証するグループの表示名。 プロパティが個別に必要ではありません。 ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。 |
+|mailNickname|String| 検証するグループのメールニックネーム。 プロパティが個別に必要ではありません。 ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。 |
+|onBehalfOfUserId|Guid| API を呼び出すときに偽装するユーザーのオブジェクト ID。 検証結果は、onBehalfOfUserId の属性とロールに対して行われます。 |
 
 ## <a name="response"></a>応答
 
-正常終了した場合、検証エラーは、メソッドを返します`204 No Content`応答コード。 応答本体には何もは返されません。
+成功した場合、検証エラーがない場合、メソッド`204 No Content`は応答コードを返します。 応答本文には何も返されません。
 
-メソッドを返すかどうか、要求が有効でない`400 Bad Request`応答コード。 応答本体には、無効な要求に関する詳細情報をエラー メッセージが返されます。
+要求が無効である場合、メソッドは`400 Bad Request`応答コードを返します。 無効な要求に関する詳細を含むエラーメッセージが応答本文で返されます。
 
-メソッドを返すかどうかは検証エラーがある場合、`422 Unprocessable Entity`応答コード。 応答本体には、エラー メッセージとエラーの詳細情報のコレクションが返されます。
+検証エラーが発生した場合、メソッドは`422 Unprocessable Entity`応答コードを返します。 エラーメッセージとエラーの詳細のコレクションが応答本文で返されます。
 
 ## <a name="examples"></a>例
 
-これは、検証が成功した要求の例です。
+これは、正常な検証要求の例です。
 
 ### <a name="request"></a>要求
 <!-- {
@@ -88,7 +88,7 @@ Content-length: 164
 HTTP/1.1 204 No Content
 ```
 
-これは、要求の妥当性確認エラーの例です。
+これは、検証エラーが発生した要求の例です。
 
 ### <a name="request"></a>要求
 ```http

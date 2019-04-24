@@ -1,21 +1,21 @@
 ---
-title: オーバーライドを一覧表示する
-description: ユーザーが常に特定の方法で特定の差出人からのメッセージを分類するのには設定している受信トレイの中心のオーバーライドを取得します。
+title: リストのオーバーライド
+description: 特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した優先受信トレイの上書きを取得します。
 localization_priority: Normal
 ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501281"
 ---
-# <a name="list-overrides"></a>オーバーライドを一覧表示する
+# <a name="list-overrides"></a>リストのオーバーライド
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーが常に特定の方法で特定の差出人からのメッセージを分類するのには設定している[受信トレイの中心](../resources/manage-focused-inbox.md)のオーバーライドを取得します。
+特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを取得します。
 
-それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。最初は、ユーザーにはオーバーライドはありません。
+それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。 最初は、ユーザーにはオーバーライドはありません。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -42,7 +42,7 @@ GET /users/{id}/inferenceClassification/overrides
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[inferenceClassificationOverride](../resources/inferenceclassificationoverride.md)オブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

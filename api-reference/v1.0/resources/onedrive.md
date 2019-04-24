@@ -4,11 +4,11 @@ description: Microsoft Graph を使用して、OneDrive、OneDrive for Business�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 89798778fff0297ffce607d1546a177dd90d357e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462922"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Microsoft Graph でのファイルの作業
 

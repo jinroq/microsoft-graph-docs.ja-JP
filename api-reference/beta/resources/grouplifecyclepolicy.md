@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: c69a54ef5323b1e3d171135d4b1b0231b6834c79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970242"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506357"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy リソース タイプ
 
@@ -25,11 +25,11 @@ Office 365 グループのライフサイクル ポリシーを表します。 �
 |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | なし | groupLifecyclePolicy オブジェクトを削除します。 |
 |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|なし| ライフ サイクル ポリシーにグループを追加します。 |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|なし| ライフ サイクル ポリシーからグループを削除します。 |
-|[グループを更新します。](../api/grouplifecyclepolicy-renewgroup.md)|なし| グループの有効期限を更新します。 |
+|[グループを更新する](../api/grouplifecyclepolicy-renewgroup.md)|なし| グループの有効期限を更新します。 |
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| 所有者のいないグループに対して通知を送信する電子メール アドレスのリスト 電子メール アドレスをセミコロンで区切って、複数の電子メール アドレスを定義することができます。 |
 |groupLifetimeInDays|Int32| グループの有効期限が切れ、更新が必要になるまでの日数。 更新されると、グループの有効期限は定義された日数、延長されます。 |

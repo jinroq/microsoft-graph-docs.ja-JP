@@ -1,23 +1,23 @@
 ---
 title: 'イベント: 転送'
-description: 'この操作により、開催者または転送するように会議のイベントの参加者、 '
+description: 'このアクションにより、会議イベントの開催者または出席者が '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510387"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464343"
 ---
 # <a name="event-forward"></a>イベント: 転送
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このアクションにより、会議のイベントの開催者または出席者が、新しい受信者に会議出席依頼を転送することができます。 
+このアクションにより、会議[イベント](../resources/event.md)の開催者または出席者は、新しい受信者に会議出席依頼を転送することができます。 
 
-会議イベントは、出席者の Office 365 のメールボックスから別の受信者に転送されます、このアクションも、転送の構成内容の変更を通知するためにメッセージを送信し、会議イベントの開催者のコピーに受信者を追加します。 Outlook.com アカウントから転送するときは、この利便性を利用できません。
+会議イベントが出席者の Office 365 メールボックスから別の受信者に転送された場合、この操作を行うと、転送先を開催者に通知するメッセージも送信され、受信者は会議イベントの開催者のコピーに追加されます。 この利便性は、Outlook.com アカウントから転送する場合には使用できません。
 
 
 ## <a name="permissions"></a>アクセス許可

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6896149b9b9f90f8099600372d3d03627ae4bebe
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796704"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32510907"
 ---
 # <a name="create-windowswificonfiguration"></a>windowsWifiConfiguration を作成する
 
@@ -53,24 +53,24 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|preSharedKey|文字列|これは、WPA 個人用 wi-fi ネットワークの事前共有キーです。|
+|preSharedKey|String|これは、WPA 個人用 wi-fi ネットワークの事前共有キーです。|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Wifi セキュリティの種類を指定します。 可能な値は `open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise` です。|
 |meteredconnectionlimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|wifi 接続の従量制課金接続制限の種類を指定します。 使用可能な値は、`unrestricted`、`fixed`、`variable` です。|
-|ssid|文字列|wifi 接続の SSID を指定します。|
-|networkname|文字列|ネットワーク構成名を指定します。|
+|ssid|String|wifi 接続の SSID を指定します。|
+|networkname|String|ネットワーク構成名を指定します。|
 |connectautomatically に|Boolean|範囲内で wifi 接続を自動的に接続するかどうかを指定します。|
 |connecttopreferrednetwork|Boolean|この接続に既に接続されている場合に、wifi 接続がより優先度の高いネットワークに接続するかどうかを指定します。  connectautomatically 自動的に true になる必要があります。|
 |connectWhenNetworkNameIsHidden|Boolean|SSID がブロードキャストされていない場合でも、wifi 接続が自動的に接続するかどうかを指定します。|
 |proxysetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|wi-fi 構成のプロキシ設定を指定します。 使用可能な値は、`none`、`manual`、`automatic` です。|
-|proxymanualaddress|文字列|プロキシサーバーの IP アドレスを指定します。|
+|proxymanualaddress|String|プロキシサーバーの IP アドレスを指定します。|
 |proxymanualport|Int32|プロキシサーバーのポートを指定します。|
-|proxyAutomaticConfigurationUrl|文字列|プロキシサーバー構成スクリプトの URL を指定します。|
+|proxyAutomaticConfigurationUrl|String|プロキシサーバー構成スクリプトの URL を指定します。|
 |forcefipscompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。|
 
 

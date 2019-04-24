@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787653"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508373"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>devicemanagementintentdevicestate の更新
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |deviceDisplayName|String|レポートされているデバイス名|
 |lastReportedDateTime|DateTimeOffset|インテントレポートの最終更新日時|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|目的のデバイス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
-|deviceId|文字列|レポートされているデバイス id|
+|deviceId|String|レポートされているデバイス id|
 
 
 

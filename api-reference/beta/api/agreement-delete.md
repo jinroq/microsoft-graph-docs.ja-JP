@@ -1,19 +1,19 @@
 ---
-title: 契約を削除します。
-description: 契約オブジェクトを削除します。
+title: 契約を削除する
+description: アグリーメントオブジェクトを削除します。
 localization_priority: Normal
 ms.openlocfilehash: 95766f28e5456c1b4f410de65ae12dccd881727e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459550"
 ---
-# <a name="delete-agreement"></a>契約を削除します。
+# <a name="delete-agreement"></a>契約を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[契約](../resources/agreement.md)オブジェクトを削除します。
+[アグリーメント](../resources/agreement.md)オブジェクトを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,7 +31,7 @@ DELETE /agreements/<id>
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

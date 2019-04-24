@@ -1,27 +1,27 @@
 ---
-title: Bookingappointment を更新します。
-description: 指定された bookingbusiness で、bookingAppointment オブジェクトのプロパティを更新します。
+title: bookingappointment の更新
+description: 指定した bookingappointment の bookingappointment オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: cde8a309e3544f5ed5cdf84f7c50d33e95084526
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462425"
 ---
-# <a name="update-bookingappointment"></a>Bookingappointment を更新します。
+# <a name="update-bookingappointment"></a>bookingappointment の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[bookingbusiness](../resources/bookingbusiness.md)で、 [bookingAppointment](../resources/bookingappointment.md)オブジェクトのプロパティを更新します。
+指定した[bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  bookingsappointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -40,39 +40,39 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|予定を予約する、 [bookingCustomer](../resources/bookingcustomer.md)の SMTP アドレスです。|
-|customerId|String|この予定の[bookingCustomer](../resources/bookingcustomer.md)の ID です。 ID が指定されていない場合、予定を作成するとき、新しい**bookingCustomer**オブジェクトが作成されます。 1 回に設定する必要があります **[得意先コード]** 不変です。|
-|customerLocation|[location](../resources/location.md)|予定を予約する、 [bookingCustomer](../resources/bookingcustomer.md)の場所の情報を表します。|
-|様|String|お客様の名前です。|
-|customerNotes|String|この予定に関連付けられている顧客からのノート。 その ID ではこの**bookingAppointment**を表示する場合のみ値を取得することができます。 <br> 最初に顧客との新しい予定を作成する場合にのみ、このプロパティを設定することができます。 その後も、 **[得意先コード]** で表される顧客からの値が計算されます。|
-|customerPhone|String|お客様の電話番号です。|
-|duration|Duration|[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表される、予定の長さです。 |
-|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|日付、時刻、およびタイム ゾーンの予定を終了します。|
-|invoiceAmount|倍精度浮動小数点数|請求書の請求金額です。|
-|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|日付、時刻、および請求書のこの予定のタイム ゾーンです。|
+|customerEmailAddress|String|予定を予約している[bookingcustomer](../resources/bookingcustomer.md)の SMTP アドレス。|
+|id|String|この予定の[bookingcustomer](../resources/bookingcustomer.md)の ID。 予定の作成時に ID が指定されていない場合は、新しい**bookingcustomer**オブジェクトが作成されます。 設定すると、 **customerId**を不変にすることを考慮する必要があります。|
+|顧客の所在地|[location](../resources/location.md)|予定を予約している[bookingcustomer](../resources/bookingcustomer.md)の場所情報を表します。|
+|おける|String|顧客の名前を指定します。|
+|顧客メモ|String|この予定に関連付けられている顧客からのメモ。 ID でこの**bookingappointment**を読み取る場合にのみ、値を取得できます。 <br> このプロパティは、最初に新しい顧客を使用して予定を作成するときにのみ設定できます。 その時点で、その値は**customerId**で表される顧客から計算されます。|
+|顧客電話|String|お客様の電話番号。|
+|duration|期間|「文字形式」で示されて[](https://www.iso.org/iso-8601-date-and-time-format.html)いる予定の長さ。 |
+|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|予定が終了する日付、時刻、タイムゾーン。|
+|invoiceAmount|倍精度浮動小数点数|請求書の請求金額。|
+|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|この予定の請求書の日付、時刻、タイムゾーン。|
 |invoiceId|String|請求書の ID。|
-|invoiceStatus|string| 請求書の状態です。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
-|invoiceUrl|String|Microsoft の予約で請求書の URL です。|
-|optOutOfCustomerEmail|ブール値|True は、この予定の[bookingCustomer](../resources/bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
-|事後バッファリング|Duration|クリーンアップ、例として、予定が終了した後に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。 |
-|事前バッファリング|Duration|例として、準備のため、予定の開始前に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|
-|Price|倍精度浮動小数点数|指定された[bookingService](../resources/bookingservice.md)の予定の正規の価格です。|
-|priceType|string| サービスの価格設定構造の柔軟性を提供するように設定します。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
-|Reminders|[bookingReminder](../resources/bookingreminder.md)コレクション|この予定に送信される顧客の事前通知のコレクションです。 その ID ではこの**bookingAppointment**を読み取るときにのみ、このプロパティの値があります。|
-|selfServiceAppointmentId|String|予定が作成された場合 [スケジュール] ページで、お客様が直接にではなく、お客様の代わりにスタッフのメンバーでは、予定の他の追跡 ID。|
-|serviceId|String|[BookingService](../resources/bookingservice.md)の ID は、この予定に関連付けられています。|
-|serviceLocation|[location](../resources/location.md)|サービスの配信場所です。|
-|serviceName|String|**BookingService**の名前は、この予定に関連付けられています。<br>新しい予定を作成するとき、このプロパティは省略可能です。 指定されていない場合は、 **serviceId**プロパティにより、予定に関連付けられたサービスから計算されます。|
-|serviceNotes|String|の[bookingStaffMember](../resources/bookingstaffmember.md)からのノート。 その ID ではこの**bookingAppointment**を読み取るときにのみ、このプロパティの値があります。|
-|staffMemberIds|String コレクション|この予定にスケジュールされている各[bookingStaffMember](../resources/bookingstaffmember.md)の ID です。|
-|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|日付、時刻、およびタイム ゾーンの予定の開始をします。|
+|invoiceStatus|string| 請求書の状態。 可能な値は `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective` です。|
+|invoiceUrl|String|Microsoft 予約の請求書の URL。|
+|optOutOfCustomerEmail|Boolean|True は、この予定の[bookingcustomer](../resources/bookingcustomer.md)が、この予定の確認を受信したくないことを示します。|
+|postbuffer|期間|予定が終了した後に、クリーンアップのために確保する時間の長さを例として示します。 この値は、" [](https://www.iso.org/iso-8601-date-and-time-format.html) /" という形式で表されます。 |
+|prebuffer|期間|準備のために予定が開始されるまでの時間を例として示します。 この値は、" [](https://www.iso.org/iso-8601-date-and-time-format.html) /" という形式で表されます。|
+|代金|倍精度浮動小数点数|指定した[bookingservice](../resources/bookingservice.md)の予定に対する正規の価格。|
+|priceType|string| サービスの価格構造を柔軟に提供するための設定。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
+|isp|[bookingreminder](../resources/bookingreminder.md)コレクション|この予定に対して送信された顧客のアラームのコレクションです。 このプロパティの値は、この**bookingappointment**を ID で読み取る場合にのみ使用できます。|
+|selfServiceAppointmentId|String|顧客に代わってスタッフメンバーではなく、顧客が [スケジュール] ページで直接作成された予定の場合は、予定の追加の追跡 ID。|
+|serviceId|String|この予定に関連付けられている[bookingservice](../resources/bookingservice.md)の ID です。|
+|serviceLocation|[location](../resources/location.md)|サービスが配信される場所。|
+|serviceName|String|この予定に関連付けられている**bookingservice**の名前です。<br>新しい予定を作成するときは、このプロパティは省略可能です。 指定しない場合、 **serviceId**プロパティによって、予定に関連付けられているサービスから計算されます。|
+|serviceNotes|String|[bookingStaffMember](../resources/bookingstaffmember.md)からのメモ。 このプロパティの値は、この**bookingappointment**を ID で読み取る場合にのみ使用できます。|
+|staffMemberIds|String collection|この予定でスケジュールされている各[bookingStaffMember](../resources/bookingstaffmember.md)の ID。|
+|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|予定が開始する日付、時刻、タイムゾーン。|
 
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例では、サービスが、1 日の日付を変更し、請求書の日付を更新します。
+次の例では、サービスの日付を日単位に変更し、請求日も更新しました。
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment"

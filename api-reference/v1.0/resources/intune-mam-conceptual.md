@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 85c002b9b9a8271b47209ca11bb27eb2885815a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465553"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
@@ -34,15 +34,15 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [IPv6 の範囲](intune-mam-ipv6range.md)
 - [JSON](intune-mam-json.md)
 - [キー/値のペア](intune-mam-keyvaluepair.md)
-- [アプリケーションのクリップボード共有機能レベルの管理](intune-mam-managedappclipboardsharinglevel.md)
+- [管理対象アプリのクリップボード共有レベル](intune-mam-managedappclipboardsharinglevel.md)
 - [管理対象アプリの構成](intune-mam-managedappconfiguration.md)
-- [アプリケーション データの暗号化の種類を管理](intune-mam-managedappdataencryptiontype.md)
-- [管理されているアプリケーション データの格納場所](intune-mam-managedappdatastoragelocation.md)
-- [管理されているアプリケーション データの転送レベル](intune-mam-managedappdatatransferlevel.md)
+- [管理対象アプリのデータの暗号化種類](intune-mam-managedappdataencryptiontype.md)
+- [管理対象アプリのデータの保存場所](intune-mam-managedappdatastoragelocation.md)
+- [管理対象アプリのデータ転送レベル](intune-mam-managedappdatatransferlevel.md)
 - [管理対象アプリの診断状態](intune-mam-managedappdiagnosticstatus.md)
-- [マネージ アプリケーションのフラグを設定した理由](intune-mam-managedappflaggedreason.md)
+- [管理対象アプリのフラグ付き理由](intune-mam-managedappflaggedreason.md)
 - [管理対象アプリの操作](intune-mam-managedappoperation.md)
-- [暗証番号 (pin) のマネージ アプリケーションの文字セット](intune-mam-managedapppincharacterset.md)
+- [管理対象アプリの暗証番号 (PIN) 文字セット](intune-mam-managedapppincharacterset.md)
 - [管理対象アプリ ポリシー](intune-mam-managedapppolicy.md)
 - [管理対象アプリ ポリシーの展開の概要](intune-mam-managedapppolicydeploymentsummary.md)
 - [アプリごとの管理対象アプリ ポリシーの展開の概要](intune-mam-managedapppolicydeploymentsummaryperapp.md)
@@ -63,10 +63,10 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Windows 情報保護アプリの Locker ファイル](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows 情報保護のデータ回復証明書](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows 情報保護のデスクトップ アプリ](intune-mam-windowsinformationprotectiondesktopapp.md)
-- [Windows 情報保護の適用レベル](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Windows 情報保護の実施レベル](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows 情報保護の IP 範囲のコレクション](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows 情報保護のネットワークの学習概要](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
-- [Windows 情報保護暗証番号 (pin) の文字の要件](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
+- [Windows 情報保護暗証番号 (PIN) の文字の要件](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
 - [Windows 情報保護ポリシー](intune-mam-windowsinformationprotectionpolicy.md)
 - [Windows 情報保護のプロキシ化されたドメイン コレクション](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows 情報保護のリソース コレクション](intune-mam-windowsinformationprotectionresourcecollection.md)

@@ -1,21 +1,21 @@
 ---
-title: '呼び出す: ミュートを解除'
-description: 自体のミュートを解除するアプリケーションを使用できます。
+title: '通話: ミュート解除'
+description: アプリケーションで自分自身のミュートを解除します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4fce2bb622a7780fde9b95b64969b234a53e3be3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462410"
 ---
-# <a name="call-unmute"></a>呼び出す: ミュートを解除
+# <a name="call-unmute"></a>通話: ミュート解除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-自体のミュートを解除するアプリケーションを使用できます。
+アプリケーションで自分自身のミュートを解除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/unmute
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|ClientContext|String|クライアントのコンテキスト。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[commsOperation](../resources/commsoperation.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

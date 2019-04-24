@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 049c860be95e2f4f4b83848d8d8be6b3dd0ed9c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502162"
 ---
 # <a name="add-group-owner"></a>グループ所有者の追加
 
@@ -17,7 +17,7 @@ ms.locfileid: "29517170"
 
 グループ所有者にユーザーを追加します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。
 
->**重要な:** グループの所有者を更新すると、グループのチームを作成した、マイクロソフトのチームとの同期に所有者には、最大で 2 時間がかかります。 また、- たとえば、プランナーの計画を作成するので、チームで変更を加えることができる所有者所有者も必要があります、グループまたはチームのメンバーとして追加します。 
+>**重要:** グループの所有者を更新し、グループのチームを作成した場合、所有者が Microsoft Teams と同期するには最大2時間かかることがあります。 また、たとえばプランナープランを作成して所有者がチーム内で変更できるようにする場合は、グループ/チームメンバーとして所有者を追加する必要もあります。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

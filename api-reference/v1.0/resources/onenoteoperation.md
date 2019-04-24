@@ -1,28 +1,31 @@
 ---
 title: onenoteOperation リソースの種類
-description: OneNote の特定の長時間操作の状態。
+description: 長時間実行されている特定の OneNote 操作の状態。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: eaab313e9399e6e8724d5096b7ac29ec315889ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977466"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462663"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation リソースの種類
 
-OneNote の特定の長時間操作の状態。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+長時間実行されている特定の OneNote 操作の状態。
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.operation",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -40,16 +43,16 @@ OneNote の特定の長時間操作の状態。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |操作の開始時刻です。|
-|error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|
-|ID|文字列|操作 ID です。読み取り専用です。|
-|lastActionDateTime| DateTimeOffset |操作の最後の操作の時間です。|
-|resourceId|文字列|リソース ID。|
-|resourceLocation|文字列|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
-|status|文字列|操作の現在の状態: `notstarted`、`running`、`completed`、`failed` |
-|percentComplete|文字列|操作がまだ `running` の状態の場合の操作達成率。
+|createdDateTime| DateTimeOffset |操作の開始時刻。|
+|error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されたエラー。|
+|ID|string|操作 id。読み取り専用です。|
+|lastactiondatetime| DateTimeOffset |操作の最後の操作の時刻。|
+|resourceId|string|リソース id。|
+|resourceLocation|string|オブジェクトのリソース URI。 たとえば、コピーされたページまたはセクションのリソース URI。 |
+|status|string|操作の現在の状態: `notstarted`、 `running` `completed`、、`failed` |
+|percentComplete|string|操作がまだ状態の`running`場合の操作達成率。
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -59,14 +62,19 @@ OneNote の特定の長時間操作の状態。
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[操作の取得](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |操作の現在の状態を取得します。 |
+|[操作を取得する](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |操作の状態を取得します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onenoteOperation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenoteoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

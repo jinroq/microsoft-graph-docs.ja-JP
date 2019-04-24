@@ -1,21 +1,21 @@
 ---
-title: '電話: changeScreenSharingRole'
-description: 起動し、画面の呼び出しでの共有を停止します。 この API を使用して、通話や会議の参加者と画面の内容を共有するアプリケーションを許可します。
+title: call://///////の役割
+description: 通話中に画面共有を開始および停止します。 この API は、アプリケーションが、通話または会議の参加者と画面の内容を共有できるようにするために使用されます。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f0bdd9a4c8e900d9a1ec5f7801fa959ebdaae1e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514734"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461284"
 ---
-# <a name="call-changescreensharingrole"></a>電話: changeScreenSharingRole
+# <a name="call-changescreensharingrole"></a>call://///////の役割
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-起動し、画面の呼び出しでの共有を停止します。 この API を使用して、通話や会議の参加者と画面の内容を共有するアプリケーションを許可します。
+通話中に画面共有を開始および停止します。 この API は、アプリケーションが、通話または会議の参加者と画面の内容を共有できるようにするために使用されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|role|String|使用可能な値: 'ビューアー'、'共有'|
+|role|String|使用可能な値は次のとおりです。 ' Viewer '、' 共有 '|
 
 ## <a name="response"></a>応答
-応答コードを返します。
+応答`202 Accepted`コードを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 91f0162402b8c87042fab622710d314f27d6f4e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523513"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507155"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot リソースの種類
 
@@ -34,9 +34,9 @@ ms.locfileid: "29523513"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) コレクション| 読み取り専用。Null 許容型。|
-|me|[educationUser](educationuser.md)| 読み取り専用。Null 許容型。|
-|schools|[educationSchool](educationschool.md) コレクション| 読み取り専用。Null 許容型。|
+|classes|[educationClass](educationclass.md) コレクション| 読み取り専用です。 Null 許容型。|
+|me|[educationUser](educationuser.md)| 読み取り専用です。 Null 許容型。|
+|schools|[educationSchool](educationschool.md) コレクション| 読み取り専用です。 Null 許容型。|
 |users|[educationUser](educationuser.md) コレクション| 読み取り専用。Null 許容型。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

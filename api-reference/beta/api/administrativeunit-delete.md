@@ -1,21 +1,21 @@
 ---
-title: AdministrativeUnit を削除します。
-description: AdministrativeUnit を削除します。
+title: administrativeUnit の削除
+description: administrativeUnit を削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4dff40e4ce881624dc5498d68c7490617b8596fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459459"
 ---
-# <a name="delete-administrativeunit"></a>AdministrativeUnit を削除します。
+# <a name="delete-administrativeunit"></a>administrativeUnit の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[AdministrativeUnit](../resources/administrativeunit.md)を削除します。
+[administrativeUnit](../resources/administrativeunit.md)を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

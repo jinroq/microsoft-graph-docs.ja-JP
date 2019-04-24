@@ -1,26 +1,26 @@
 ---
-title: plannerPlanContextDetails リソースの種類
-description: '**PlannerPlanContextDetails**リソースには、plannerPlanContext に関する追加情報が含まれています。'
+title: プラン、contextdetails リソースの種類
+description: 「 **plan the contextdetails** resource」には、プランのコンテキストに関する追加情報が含まれています。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 025e5b1623333d0235ae83e061e30247a3d130f6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505950"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a>plannerPlanContextDetails リソースの種類
+# <a name="plannerplancontextdetails-resource-type"></a>プラン、contextdetails リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlanContextDetails**リソースには、 [plannerPlanContext](plannerplancontext.md)に関する追加情報が含まれています。
+「 **plan the contextdetails** resource」には、プランの[コンテキスト](plannerplancontext.md)に関する追加情報が含まれています。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|url|String|関連付けられた[plannerPlanContext](plannerplancontext.md)によって表されるユーザー エクスペリエンスの URL です。 |
+|url|String|関連する[プランのコンテキスト](plannerplancontext.md)によって表されるユーザーの作業の URL。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

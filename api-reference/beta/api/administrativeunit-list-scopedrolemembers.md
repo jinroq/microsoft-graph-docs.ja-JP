@@ -1,21 +1,21 @@
 ---
 title: リスト scopedRoleMembers
-description: ScopedRoleMembership リソースの一覧を取得します。
+description: scopedRoleMembership リソースのリストを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4254723a4902772cf45b1af024058a32192bc8fb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459641"
 ---
 # <a name="list-scopedrolemembers"></a>リスト scopedRoleMembers
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ScopedRoleMembership](../resources/scopedrolemembership.md)リソースの一覧を取得します。
+[scopedRoleMembership](../resources/scopedrolemembership.md)リソースのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -44,7 +44,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

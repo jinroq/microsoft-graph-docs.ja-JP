@@ -1,30 +1,30 @@
 ---
-title: GovernanceRoleAssignmentRequests を更新します。
-description: 管理者が意思決定を更新するを有効にする (`AdminApproved`または`AdminDenied`) の状態にある governanceRoleAssignmentRequests の`PendingAdminDecision`。
+title: governanceRoleAssignmentRequests の更新
+description: 管理者が、の`AdminApproved` `AdminDenied` `PendingAdminDecision`状態にある governanceRoleAssignmentRequests 上の意思決定 (または) を更新できるようにします。
 localization_priority: Normal
 ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643263"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503057"
 ---
-# <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests を更新します。
+# <a name="update-governanceroleassignmentrequests"></a>governanceRoleAssignmentRequests の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理者が意思決定を更新するを有効にする (`AdminApproved`または`AdminDenied`) の状態にある[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)の`PendingAdminDecision`。
+管理者が`AdminApproved` 、の`AdminDenied` `PendingAdminDecision`状態にある[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)上の意思決定 (または) を更新できるようにします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** この API では、依頼者の少なくとも 1 つある必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`) [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属しているリソースにします。 
+>**注:** この API では、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属しているリソース`Active`に対して、要求者が少なくとも1つの管理者ロールの割り当て`owner` `user access administrator`を持っている必要があります。 
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -40,14 +40,14 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター      |型                   |必須 |説明|
+|パラメーター      |Type                   |必須 |説明|
 |:-------------|:----------------------|:--------|:----------|
-|理由        |String                 |✓        |彼の意思決定の管理者によって提供されている理由です。|
-|意思決定        |String                 |✓        |役割の割り当て要求の管理者の意思決定します。 として値を更新する必要があります`AdminApproved`または`AdminDenied`。|
-|スケジュール      |[governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュールです。 状態の`AdminApproved`、これは必須です。|
-|assignmentState      |String|         | 割り当て、および値の状態は、`Eligible`または`Active`。 意思決定の`AdminApproved`、これは必須です。 |
+|したがっ        |String                 |✓        |管理者によって決定された理由。|
+|条件        |String                 |✓        |管理者は、役割の割り当て要求を決定します。 値をまたは`AdminApproved` `AdminDenied`として更新する必要があります。|
+|スケジューリング      |[governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュール。 の`AdminApproved`状態については、が必要です。|
+|割り当ての状態      |String|         | 代入の状態で、値はまたは`Eligible` `Active`で指定できます。 について`AdminApproved`は、必須です。 |
 ### <a name="response"></a>応答
-このメソッドは、要求の状態にあるにのみ適用できます`PendingAdminDecision`。
+このメソッドは、の`PendingAdminDecision`状態にある要求にのみ適用できます。
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 

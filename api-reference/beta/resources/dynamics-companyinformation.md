@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0f8671cbade11cc9db6bf797c39eb17acf286ef7
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365914"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507274"
 ---
 # <a name="companyinformation-resource-type"></a>会社情報リソースの種類
 Dynamics 365 Business Central の現在の会社に対して指定されている情報 (名前、住所、電子メールアドレス、web サイトのアドレスなど) を表します。
@@ -27,7 +27,7 @@ Dynamics 365 Business Central の現在の会社に対して指定されてい�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型      |説明                           |
 |:-------------|:--------|:-------------------------------------|
-|ID            |GUID|会社の一意の ID。 編集不可。|
+|id            |GUID|会社の一意の ID。 編集できません。|
 |displayName   |string   |会社の表示名。           |
 |address       |[ナビゲーション."postaladdress](../resources/dynamics-complextypes.md)|会社の住所。 詳細については、「複合型」を参照してください。|
 |phoneNumber   |string   |会社の電話番号。       |
@@ -40,7 +40,7 @@ Dynamics 365 Business Central の現在の会社に対して指定されてい�
 |おける      |string   |会社が属している業界。  |
 |表       |stream   |会社のロゴ。 読み取り専用です。          |
 |businessProfileId|string|財務会社にリンクされているビジネスプロファイル ID。 読み取り専用です。|
-|lastModifiedDateTime|datetime|会社が変更された最後の日付です。 読み取り専用です。|  
+|lastModifiedDateTime|datetime|会社が変更された最後の日付です。 読み取り専用。|  
 
 
 ## <a name="relationships"></a>リレーションシップ

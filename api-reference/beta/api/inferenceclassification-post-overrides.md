@@ -1,19 +1,19 @@
 ---
 title: inferenceClassificationOverride を作成する
-description: 'SMTP アドレスによって識別される送信者の受信トレイの中心の上書きを作成します。 その SMTP アドレスからのメッセージは一貫して分類します。 '
+description: 'SMTP アドレスによって識別される送信者の優先受信トレイの上書きを作成します。 その SMTP アドレスからの今後のメッセージは一貫して分類されます。 '
 localization_priority: Normal
 ms.openlocfilehash: 234972bea59343a13d9104bbe222edf4be526987
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501295"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-SMTP アドレスによって識別される送信者の[受信トレイの中心](../resources/manage-focused-inbox.md)の上書きを作成します。 今後からのメッセージは SMTP アドレスが一貫して分類されているオーバーライドで指定しました。
+SMTP アドレスによって識別される送信者の[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを作成します。 この SMTP アドレスからの将来のメッセージは、オーバーライドで指定されたとおり一貫して分類されます。
 
 **メモ**
 
