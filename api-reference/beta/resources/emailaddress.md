@@ -1,31 +1,31 @@
 ---
 title: emailAddress リソースの種類
-description: 名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。
+description: エンティティインスタンスの名前と SMTP アドレスを表します。たとえば、メッセージ受信者や予定表の所有者になります。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: bc1f00ab09ac71f4f3cd9eb1aff8163a537ce257
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506728"
 ---
-# <a name="emailaddress-resource-type"></a><span data-ttu-id="13e66-103">emailAddress リソースの種類</span><span class="sxs-lookup"><span data-stu-id="13e66-103">emailAddress resource type</span></span>
+# <a name="emailaddress-resource-type"></a><span data-ttu-id="5ded9-103">emailAddress リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5ded9-103">emailAddress resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="13e66-104">名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。</span><span class="sxs-lookup"><span data-stu-id="13e66-104">Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner.</span></span>
+<span data-ttu-id="5ded9-104">エンティティインスタンスの名前と SMTP アドレスを表します。たとえば、メッセージ受信者や予定表の所有者になります。</span><span class="sxs-lookup"><span data-stu-id="5ded9-104">Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="13e66-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="13e66-105">Properties</span></span>
-| <span data-ttu-id="13e66-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="13e66-106">Property</span></span>     | <span data-ttu-id="13e66-107">型</span><span class="sxs-lookup"><span data-stu-id="13e66-107">Type</span></span>   |<span data-ttu-id="13e66-108">説明</span><span class="sxs-lookup"><span data-stu-id="13e66-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ded9-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5ded9-105">Properties</span></span>
+| <span data-ttu-id="5ded9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5ded9-106">Property</span></span>     | <span data-ttu-id="5ded9-107">型</span><span class="sxs-lookup"><span data-stu-id="5ded9-107">Type</span></span>   |<span data-ttu-id="5ded9-108">説明</span><span class="sxs-lookup"><span data-stu-id="5ded9-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="13e66-109">address</span><span class="sxs-lookup"><span data-stu-id="13e66-109">address</span></span>|<span data-ttu-id="13e66-110">String</span><span class="sxs-lookup"><span data-stu-id="13e66-110">String</span></span>|<span data-ttu-id="13e66-111">エンティティ インスタンスの電子メール アドレスです。</span><span class="sxs-lookup"><span data-stu-id="13e66-111">The email address of an entity instance.</span></span>|
-|<span data-ttu-id="13e66-112">name</span><span class="sxs-lookup"><span data-stu-id="13e66-112">name</span></span>|<span data-ttu-id="13e66-113">String</span><span class="sxs-lookup"><span data-stu-id="13e66-113">String</span></span>|<span data-ttu-id="13e66-114">エンティティ インスタンスの表示名。</span><span class="sxs-lookup"><span data-stu-id="13e66-114">The display name of an entity instance.</span></span>|
+|<span data-ttu-id="5ded9-109">address</span><span class="sxs-lookup"><span data-stu-id="5ded9-109">address</span></span>|<span data-ttu-id="5ded9-110">String</span><span class="sxs-lookup"><span data-stu-id="5ded9-110">String</span></span>|<span data-ttu-id="5ded9-111">エンティティインスタンスの電子メールアドレス。</span><span class="sxs-lookup"><span data-stu-id="5ded9-111">The email address of an entity instance.</span></span>|
+|<span data-ttu-id="5ded9-112">name</span><span class="sxs-lookup"><span data-stu-id="5ded9-112">name</span></span>|<span data-ttu-id="5ded9-113">String</span><span class="sxs-lookup"><span data-stu-id="5ded9-113">String</span></span>|<span data-ttu-id="5ded9-114">エンティティインスタンスの表示名。</span><span class="sxs-lookup"><span data-stu-id="5ded9-114">The display name of an entity instance.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="13e66-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="13e66-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ded9-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5ded9-115">JSON representation</span></span>
 
-<span data-ttu-id="13e66-116">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="13e66-116">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="5ded9-116">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="5ded9-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

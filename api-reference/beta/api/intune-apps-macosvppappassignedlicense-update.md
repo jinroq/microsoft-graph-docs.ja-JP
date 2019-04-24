@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 816de40dd2efadb47fad8ed93415499f1fb5342a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495464"
 ---
-# <a name="update-macosvppappassignedlicense"></a><span data-ttu-id="4aac5-103">macOsVppAppAssignedLicense の更新</span><span class="sxs-lookup"><span data-stu-id="4aac5-103">Update macOsVppAppAssignedLicense</span></span>
+# <a name="update-macosvppappassignedlicense"></a><span data-ttu-id="4fa0a-103">macOsVppAppAssignedLicense の更新</span><span class="sxs-lookup"><span data-stu-id="4fa0a-103">Update macOsVppAppAssignedLicense</span></span>
 
-> <span data-ttu-id="4aac5-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4aac5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4fa0a-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4aac5-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4aac5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4fa0a-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4aac5-106">[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4aac5-106">Update the properties of a [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object.</span></span>
+<span data-ttu-id="4fa0a-106">[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-106">Update the properties of a [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4aac5-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="4aac5-107">Prerequisites</span></span>
-<span data-ttu-id="4aac5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4aac5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4fa0a-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="4fa0a-107">Prerequisites</span></span>
+<span data-ttu-id="4fa0a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4aac5-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4aac5-110">Permission type</span></span>|<span data-ttu-id="4aac5-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="4aac5-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4fa0a-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4fa0a-110">Permission type</span></span>|<span data-ttu-id="4fa0a-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="4fa0a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4aac5-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4aac5-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4aac5-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4aac5-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4aac5-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4aac5-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4aac5-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4aac5-115">Not supported.</span></span>|
-|<span data-ttu-id="4aac5-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4aac5-116">Application</span></span>|<span data-ttu-id="4aac5-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4aac5-117">Not supported.</span></span>|
+|<span data-ttu-id="4fa0a-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4fa0a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4fa0a-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fa0a-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4fa0a-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4fa0a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4fa0a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-115">Not supported.</span></span>|
+|<span data-ttu-id="4fa0a-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4fa0a-116">Application</span></span>|<span data-ttu-id="4fa0a-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4aac5-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4aac5-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4fa0a-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4fa0a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "31773918"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4aac5-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4aac5-119">Request headers</span></span>
-|<span data-ttu-id="4aac5-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4aac5-120">Header</span></span>|<span data-ttu-id="4aac5-121">値</span><span class="sxs-lookup"><span data-stu-id="4aac5-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4fa0a-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4fa0a-119">Request headers</span></span>
+|<span data-ttu-id="4fa0a-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4fa0a-120">Header</span></span>|<span data-ttu-id="4fa0a-121">値</span><span class="sxs-lookup"><span data-stu-id="4fa0a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4aac5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4aac5-122">Authorization</span></span>|<span data-ttu-id="4aac5-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="4aac5-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4aac5-124">承諾</span><span class="sxs-lookup"><span data-stu-id="4aac5-124">Accept</span></span>|<span data-ttu-id="4aac5-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4aac5-125">application/json</span></span>|
+|<span data-ttu-id="4fa0a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4fa0a-122">Authorization</span></span>|<span data-ttu-id="4fa0a-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4fa0a-124">承諾</span><span class="sxs-lookup"><span data-stu-id="4fa0a-124">Accept</span></span>|<span data-ttu-id="4fa0a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4fa0a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4aac5-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4aac5-126">Request body</span></span>
-<span data-ttu-id="4aac5-127">要求本文で、 [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4aac5-127">In the request body, supply a JSON representation for the [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4fa0a-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4fa0a-126">Request body</span></span>
+<span data-ttu-id="4fa0a-127">要求本文で、 [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-127">In the request body, supply a JSON representation for the [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object.</span></span>
 
-<span data-ttu-id="4aac5-128">次の表に、 [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="4aac5-128">The following table shows the properties that are required when you create the [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).</span></span>
+<span data-ttu-id="4fa0a-128">次の表に、 [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-128">The following table shows the properties that are required when you create the [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).</span></span>
 
-|<span data-ttu-id="4aac5-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4aac5-129">Property</span></span>|<span data-ttu-id="4aac5-130">型</span><span class="sxs-lookup"><span data-stu-id="4aac5-130">Type</span></span>|<span data-ttu-id="4aac5-131">説明</span><span class="sxs-lookup"><span data-stu-id="4aac5-131">Description</span></span>|
+|<span data-ttu-id="4fa0a-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4fa0a-129">Property</span></span>|<span data-ttu-id="4fa0a-130">型</span><span class="sxs-lookup"><span data-stu-id="4fa0a-130">Type</span></span>|<span data-ttu-id="4fa0a-131">説明</span><span class="sxs-lookup"><span data-stu-id="4fa0a-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4aac5-132">id</span><span class="sxs-lookup"><span data-stu-id="4aac5-132">id</span></span>|<span data-ttu-id="4aac5-133">String</span><span class="sxs-lookup"><span data-stu-id="4aac5-133">String</span></span>|<span data-ttu-id="4aac5-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="4aac5-134">Key of the entity.</span></span>|
-|<span data-ttu-id="4aac5-135">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="4aac5-135">userEmailAddress</span></span>|<span data-ttu-id="4aac5-136">文字列</span><span class="sxs-lookup"><span data-stu-id="4aac5-136">String</span></span>|<span data-ttu-id="4aac5-137">ユーザーの電子メールアドレス。</span><span class="sxs-lookup"><span data-stu-id="4aac5-137">The user email address.</span></span>|
-|<span data-ttu-id="4aac5-138">userId</span><span class="sxs-lookup"><span data-stu-id="4aac5-138">userId</span></span>|<span data-ttu-id="4aac5-139">String</span><span class="sxs-lookup"><span data-stu-id="4aac5-139">String</span></span>|<span data-ttu-id="4aac5-140">ユーザー ID。</span><span class="sxs-lookup"><span data-stu-id="4aac5-140">The user ID.</span></span>|
-|<span data-ttu-id="4aac5-141">userName</span><span class="sxs-lookup"><span data-stu-id="4aac5-141">userName</span></span>|<span data-ttu-id="4aac5-142">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="4aac5-142">String</span></span>|<span data-ttu-id="4aac5-143">ユーザー名。</span><span class="sxs-lookup"><span data-stu-id="4aac5-143">The user name.</span></span>|
-|<span data-ttu-id="4aac5-144">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4aac5-144">userPrincipalName</span></span>|<span data-ttu-id="4aac5-145">String</span><span class="sxs-lookup"><span data-stu-id="4aac5-145">String</span></span>|<span data-ttu-id="4aac5-146">ユーザー プリンシパル名。</span><span class="sxs-lookup"><span data-stu-id="4aac5-146">The user principal name.</span></span>|
+|<span data-ttu-id="4fa0a-132">id</span><span class="sxs-lookup"><span data-stu-id="4fa0a-132">id</span></span>|<span data-ttu-id="4fa0a-133">String</span><span class="sxs-lookup"><span data-stu-id="4fa0a-133">String</span></span>|<span data-ttu-id="4fa0a-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-134">Key of the entity.</span></span>|
+|<span data-ttu-id="4fa0a-135">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="4fa0a-135">userEmailAddress</span></span>|<span data-ttu-id="4fa0a-136">String</span><span class="sxs-lookup"><span data-stu-id="4fa0a-136">String</span></span>|<span data-ttu-id="4fa0a-137">ユーザーの電子メールアドレス。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-137">The user email address.</span></span>|
+|<span data-ttu-id="4fa0a-138">userId</span><span class="sxs-lookup"><span data-stu-id="4fa0a-138">userId</span></span>|<span data-ttu-id="4fa0a-139">String</span><span class="sxs-lookup"><span data-stu-id="4fa0a-139">String</span></span>|<span data-ttu-id="4fa0a-140">ユーザー ID。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-140">The user ID.</span></span>|
+|<span data-ttu-id="4fa0a-141">userName</span><span class="sxs-lookup"><span data-stu-id="4fa0a-141">userName</span></span>|<span data-ttu-id="4fa0a-142">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="4fa0a-142">String</span></span>|<span data-ttu-id="4fa0a-143">ユーザー名。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-143">The user name.</span></span>|
+|<span data-ttu-id="4fa0a-144">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4fa0a-144">userPrincipalName</span></span>|<span data-ttu-id="4fa0a-145">String</span><span class="sxs-lookup"><span data-stu-id="4fa0a-145">String</span></span>|<span data-ttu-id="4fa0a-146">ユーザー プリンシパル名。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-146">The user principal name.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4aac5-147">応答</span><span class="sxs-lookup"><span data-stu-id="4aac5-147">Response</span></span>
-<span data-ttu-id="4aac5-148">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4aac5-148">If successful, this method returns a `200 OK` response code and an updated [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4fa0a-147">応答</span><span class="sxs-lookup"><span data-stu-id="4fa0a-147">Response</span></span>
+<span data-ttu-id="4fa0a-148">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-148">If successful, this method returns a `200 OK` response code and an updated [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4aac5-149">例</span><span class="sxs-lookup"><span data-stu-id="4aac5-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4fa0a-149">例</span><span class="sxs-lookup"><span data-stu-id="4fa0a-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4aac5-150">要求</span><span class="sxs-lookup"><span data-stu-id="4aac5-150">Request</span></span>
-<span data-ttu-id="4aac5-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4aac5-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4fa0a-150">要求</span><span class="sxs-lookup"><span data-stu-id="4fa0a-150">Request</span></span>
+<span data-ttu-id="4fa0a-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
 Content-type: application/json
@@ -79,8 +79,8 @@ Content-length: 236
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4aac5-152">応答</span><span class="sxs-lookup"><span data-stu-id="4aac5-152">Response</span></span>
-<span data-ttu-id="4aac5-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4aac5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4fa0a-152">応答</span><span class="sxs-lookup"><span data-stu-id="4fa0a-152">Response</span></span>
+<span data-ttu-id="4fa0a-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4fa0a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

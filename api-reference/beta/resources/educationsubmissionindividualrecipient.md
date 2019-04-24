@@ -1,31 +1,31 @@
 ---
 title: educationSubmissionIndividualRecipient リソースの種類
-description: '提出書類がクラス内の個人に割り当てられていることを示す educationSubmissionRecipient のサブクラスです。  '
+description: 'educationSubmissionRecipient のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8660ec569362d8170d15de86073c0ef59c9ec0a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507061"
 ---
-# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="ce845-103">educationSubmissionIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ce845-103">educationSubmissionIndividualRecipient resource type</span></span>
+# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="6be15-103">educationSubmissionIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6be15-103">educationSubmissionIndividualRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce845-104">提出書類がクラス内の個人に割り当てられていることを示す[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスです。</span><span class="sxs-lookup"><span data-stu-id="ce845-104">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
+<span data-ttu-id="6be15-104">[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。</span><span class="sxs-lookup"><span data-stu-id="6be15-104">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="ce845-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ce845-105">Properties</span></span>
-| <span data-ttu-id="ce845-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ce845-106">Property</span></span>     | <span data-ttu-id="ce845-107">型</span><span class="sxs-lookup"><span data-stu-id="ce845-107">Type</span></span>   |<span data-ttu-id="ce845-108">説明</span><span class="sxs-lookup"><span data-stu-id="ce845-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6be15-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6be15-105">Properties</span></span>
+| <span data-ttu-id="6be15-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6be15-106">Property</span></span>     | <span data-ttu-id="6be15-107">型</span><span class="sxs-lookup"><span data-stu-id="6be15-107">Type</span></span>   |<span data-ttu-id="6be15-108">説明</span><span class="sxs-lookup"><span data-stu-id="6be15-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ce845-109">userId</span><span class="sxs-lookup"><span data-stu-id="ce845-109">userId</span></span>|<span data-ttu-id="ce845-110">String</span><span class="sxs-lookup"><span data-stu-id="ce845-110">String</span></span>|<span data-ttu-id="ce845-111">提出書類が割り当てられているユーザーのユーザー ID です。</span><span class="sxs-lookup"><span data-stu-id="ce845-111">User ID of the user to whom the submission is assigned.</span></span>|
+|<span data-ttu-id="6be15-109">userId</span><span class="sxs-lookup"><span data-stu-id="6be15-109">userId</span></span>|<span data-ttu-id="6be15-110">String</span><span class="sxs-lookup"><span data-stu-id="6be15-110">String</span></span>|<span data-ttu-id="6be15-111">提出物が割り当てられているユーザーのユーザー ID。</span><span class="sxs-lookup"><span data-stu-id="6be15-111">User ID of the user to whom the submission is assigned.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ce845-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ce845-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6be15-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6be15-112">JSON representation</span></span>
 
-<span data-ttu-id="ce845-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ce845-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6be15-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6be15-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

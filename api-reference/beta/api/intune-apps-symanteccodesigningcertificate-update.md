@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488779"
 ---
-# <a name="update-symanteccodesigningcertificate"></a><span data-ttu-id="d79d7-103">symantecCodeSigningCertificate の更新</span><span class="sxs-lookup"><span data-stu-id="d79d7-103">Update symantecCodeSigningCertificate</span></span>
+# <a name="update-symanteccodesigningcertificate"></a><span data-ttu-id="326fb-103">symantecCodeSigningCertificate の更新</span><span class="sxs-lookup"><span data-stu-id="326fb-103">Update symantecCodeSigningCertificate</span></span>
 
-> <span data-ttu-id="d79d7-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d79d7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="326fb-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="326fb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d79d7-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d79d7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="326fb-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="326fb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d79d7-106">[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="d79d7-106">Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
+<span data-ttu-id="326fb-106">[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="326fb-106">Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d79d7-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="d79d7-107">Prerequisites</span></span>
-<span data-ttu-id="d79d7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d79d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="326fb-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="326fb-107">Prerequisites</span></span>
+<span data-ttu-id="326fb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="326fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d79d7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d79d7-110">Permission type</span></span>|<span data-ttu-id="d79d7-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d79d7-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="326fb-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="326fb-110">Permission type</span></span>|<span data-ttu-id="326fb-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="326fb-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d79d7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d79d7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d79d7-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d79d7-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="d79d7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d79d7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d79d7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d79d7-115">Not supported.</span></span>|
-|<span data-ttu-id="d79d7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d79d7-116">Application</span></span>|<span data-ttu-id="d79d7-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d79d7-117">Not supported.</span></span>|
+|<span data-ttu-id="326fb-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="326fb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="326fb-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="326fb-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="326fb-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="326fb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="326fb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="326fb-115">Not supported.</span></span>|
+|<span data-ttu-id="326fb-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="326fb-116">Application</span></span>|<span data-ttu-id="326fb-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="326fb-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d79d7-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d79d7-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="326fb-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="326fb-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,39 +37,39 @@ ms.locfileid: "31792686"
 PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d79d7-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d79d7-119">Request headers</span></span>
-|<span data-ttu-id="d79d7-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d79d7-120">Header</span></span>|<span data-ttu-id="d79d7-121">値</span><span class="sxs-lookup"><span data-stu-id="d79d7-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="326fb-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="326fb-119">Request headers</span></span>
+|<span data-ttu-id="326fb-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="326fb-120">Header</span></span>|<span data-ttu-id="326fb-121">値</span><span class="sxs-lookup"><span data-stu-id="326fb-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d79d7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d79d7-122">Authorization</span></span>|<span data-ttu-id="d79d7-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="d79d7-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d79d7-124">承諾</span><span class="sxs-lookup"><span data-stu-id="d79d7-124">Accept</span></span>|<span data-ttu-id="d79d7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d79d7-125">application/json</span></span>|
+|<span data-ttu-id="326fb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="326fb-122">Authorization</span></span>|<span data-ttu-id="326fb-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="326fb-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="326fb-124">承諾</span><span class="sxs-lookup"><span data-stu-id="326fb-124">Accept</span></span>|<span data-ttu-id="326fb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="326fb-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d79d7-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="d79d7-126">Request body</span></span>
-<span data-ttu-id="d79d7-127">要求本文で、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d79d7-127">In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="326fb-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="326fb-126">Request body</span></span>
+<span data-ttu-id="326fb-127">要求本文で、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="326fb-127">In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
 
-<span data-ttu-id="d79d7-128">次の表に、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="d79d7-128">The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span></span>
+<span data-ttu-id="326fb-128">次の表に、 [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="326fb-128">The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span></span>
 
-|<span data-ttu-id="d79d7-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d79d7-129">Property</span></span>|<span data-ttu-id="d79d7-130">型</span><span class="sxs-lookup"><span data-stu-id="d79d7-130">Type</span></span>|<span data-ttu-id="d79d7-131">説明</span><span class="sxs-lookup"><span data-stu-id="d79d7-131">Description</span></span>|
+|<span data-ttu-id="326fb-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="326fb-129">Property</span></span>|<span data-ttu-id="326fb-130">型</span><span class="sxs-lookup"><span data-stu-id="326fb-130">Type</span></span>|<span data-ttu-id="326fb-131">説明</span><span class="sxs-lookup"><span data-stu-id="326fb-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d79d7-132">id</span><span class="sxs-lookup"><span data-stu-id="d79d7-132">id</span></span>|<span data-ttu-id="d79d7-133">String</span><span class="sxs-lookup"><span data-stu-id="d79d7-133">String</span></span>|<span data-ttu-id="d79d7-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="d79d7-134">The key of the entity.</span></span>|
-|<span data-ttu-id="d79d7-135">content</span><span class="sxs-lookup"><span data-stu-id="d79d7-135">content</span></span>|<span data-ttu-id="d79d7-136">Binary</span><span class="sxs-lookup"><span data-stu-id="d79d7-136">Binary</span></span>|<span data-ttu-id="d79d7-137">Windows Symantec コード署名証明書が生データ形式で表示されます。</span><span class="sxs-lookup"><span data-stu-id="d79d7-137">The Windows Symantec Code-Signing Certificate in the raw data format.</span></span>|
-|<span data-ttu-id="d79d7-138">status</span><span class="sxs-lookup"><span data-stu-id="d79d7-138">status</span></span>|[<span data-ttu-id="d79d7-139">certificatestatus</span><span class="sxs-lookup"><span data-stu-id="d79d7-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="d79d7-140">証明書の状態がプロビジョニングされているか、プロビジョニングされていません。</span><span class="sxs-lookup"><span data-stu-id="d79d7-140">The Cert Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="d79d7-141">可能な値は、`notProvisioned`、`provisioned` です。</span><span class="sxs-lookup"><span data-stu-id="d79d7-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
-|<span data-ttu-id="d79d7-142">password</span><span class="sxs-lookup"><span data-stu-id="d79d7-142">password</span></span>|<span data-ttu-id="d79d7-143">String</span><span class="sxs-lookup"><span data-stu-id="d79d7-143">String</span></span>|<span data-ttu-id="d79d7-144">.pfx ファイルに必要なパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="d79d7-144">The Password required for .pfx file.</span></span>|
-|<span data-ttu-id="d79d7-145">subjectName</span><span class="sxs-lookup"><span data-stu-id="d79d7-145">subjectName</span></span>|<span data-ttu-id="d79d7-146">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="d79d7-146">String</span></span>|<span data-ttu-id="d79d7-147">証明書のサブジェクト名。</span><span class="sxs-lookup"><span data-stu-id="d79d7-147">The Subject Name for the cert.</span></span>|
-|<span data-ttu-id="d79d7-148">subject</span><span class="sxs-lookup"><span data-stu-id="d79d7-148">subject</span></span>|<span data-ttu-id="d79d7-149">String</span><span class="sxs-lookup"><span data-stu-id="d79d7-149">String</span></span>|<span data-ttu-id="d79d7-150">証明書のサブジェクトの値。</span><span class="sxs-lookup"><span data-stu-id="d79d7-150">The Subject value for the cert.</span></span>|
-|<span data-ttu-id="d79d7-151">issuerName</span><span class="sxs-lookup"><span data-stu-id="d79d7-151">issuerName</span></span>|<span data-ttu-id="d79d7-152">文字列</span><span class="sxs-lookup"><span data-stu-id="d79d7-152">String</span></span>|<span data-ttu-id="d79d7-153">証明書の発行者名。</span><span class="sxs-lookup"><span data-stu-id="d79d7-153">The Issuer Name for the cert.</span></span>|
-|<span data-ttu-id="d79d7-154">会社</span><span class="sxs-lookup"><span data-stu-id="d79d7-154">issuer</span></span>|<span data-ttu-id="d79d7-155">文字列</span><span class="sxs-lookup"><span data-stu-id="d79d7-155">String</span></span>|<span data-ttu-id="d79d7-156">証明書の発行者の値。</span><span class="sxs-lookup"><span data-stu-id="d79d7-156">The Issuer value for the cert.</span></span>|
-|<span data-ttu-id="d79d7-157">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="d79d7-157">expirationDateTime</span></span>|<span data-ttu-id="d79d7-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d79d7-158">DateTimeOffset</span></span>|<span data-ttu-id="d79d7-159">証明書の有効期限。</span><span class="sxs-lookup"><span data-stu-id="d79d7-159">The Cert Expiration Date.</span></span>|
-|<span data-ttu-id="d79d7-160">uploaddatetime</span><span class="sxs-lookup"><span data-stu-id="d79d7-160">uploadDateTime</span></span>|<span data-ttu-id="d79d7-161">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d79d7-161">DateTimeOffset</span></span>|<span data-ttu-id="d79d7-162">Symantec cert としての CodeSigning cert の種類。</span><span class="sxs-lookup"><span data-stu-id="d79d7-162">The Type of the CodeSigning Cert as Symantec Cert.</span></span>|
+|<span data-ttu-id="326fb-132">id</span><span class="sxs-lookup"><span data-stu-id="326fb-132">id</span></span>|<span data-ttu-id="326fb-133">String</span><span class="sxs-lookup"><span data-stu-id="326fb-133">String</span></span>|<span data-ttu-id="326fb-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="326fb-134">The key of the entity.</span></span>|
+|<span data-ttu-id="326fb-135">content</span><span class="sxs-lookup"><span data-stu-id="326fb-135">content</span></span>|<span data-ttu-id="326fb-136">Binary</span><span class="sxs-lookup"><span data-stu-id="326fb-136">Binary</span></span>|<span data-ttu-id="326fb-137">Windows Symantec コード署名証明書が生データ形式で表示されます。</span><span class="sxs-lookup"><span data-stu-id="326fb-137">The Windows Symantec Code-Signing Certificate in the raw data format.</span></span>|
+|<span data-ttu-id="326fb-138">status</span><span class="sxs-lookup"><span data-stu-id="326fb-138">status</span></span>|[<span data-ttu-id="326fb-139">certificatestatus</span><span class="sxs-lookup"><span data-stu-id="326fb-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="326fb-140">証明書の状態がプロビジョニングされているか、プロビジョニングされていません。</span><span class="sxs-lookup"><span data-stu-id="326fb-140">The Cert Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="326fb-141">可能な値は、`notProvisioned`、`provisioned` です。</span><span class="sxs-lookup"><span data-stu-id="326fb-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
+|<span data-ttu-id="326fb-142">password</span><span class="sxs-lookup"><span data-stu-id="326fb-142">password</span></span>|<span data-ttu-id="326fb-143">String</span><span class="sxs-lookup"><span data-stu-id="326fb-143">String</span></span>|<span data-ttu-id="326fb-144">.pfx ファイルに必要なパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="326fb-144">The Password required for .pfx file.</span></span>|
+|<span data-ttu-id="326fb-145">subjectName</span><span class="sxs-lookup"><span data-stu-id="326fb-145">subjectName</span></span>|<span data-ttu-id="326fb-146">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="326fb-146">String</span></span>|<span data-ttu-id="326fb-147">証明書のサブジェクト名。</span><span class="sxs-lookup"><span data-stu-id="326fb-147">The Subject Name for the cert.</span></span>|
+|<span data-ttu-id="326fb-148">subject</span><span class="sxs-lookup"><span data-stu-id="326fb-148">subject</span></span>|<span data-ttu-id="326fb-149">String</span><span class="sxs-lookup"><span data-stu-id="326fb-149">String</span></span>|<span data-ttu-id="326fb-150">証明書のサブジェクトの値。</span><span class="sxs-lookup"><span data-stu-id="326fb-150">The Subject value for the cert.</span></span>|
+|<span data-ttu-id="326fb-151">issuerName</span><span class="sxs-lookup"><span data-stu-id="326fb-151">issuerName</span></span>|<span data-ttu-id="326fb-152">String</span><span class="sxs-lookup"><span data-stu-id="326fb-152">String</span></span>|<span data-ttu-id="326fb-153">証明書の発行者名。</span><span class="sxs-lookup"><span data-stu-id="326fb-153">The Issuer Name for the cert.</span></span>|
+|<span data-ttu-id="326fb-154">会社</span><span class="sxs-lookup"><span data-stu-id="326fb-154">issuer</span></span>|<span data-ttu-id="326fb-155">String</span><span class="sxs-lookup"><span data-stu-id="326fb-155">String</span></span>|<span data-ttu-id="326fb-156">証明書の発行者の値。</span><span class="sxs-lookup"><span data-stu-id="326fb-156">The Issuer value for the cert.</span></span>|
+|<span data-ttu-id="326fb-157">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="326fb-157">expirationDateTime</span></span>|<span data-ttu-id="326fb-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="326fb-158">DateTimeOffset</span></span>|<span data-ttu-id="326fb-159">証明書の有効期限。</span><span class="sxs-lookup"><span data-stu-id="326fb-159">The Cert Expiration Date.</span></span>|
+|<span data-ttu-id="326fb-160">uploaddatetime</span><span class="sxs-lookup"><span data-stu-id="326fb-160">uploadDateTime</span></span>|<span data-ttu-id="326fb-161">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="326fb-161">DateTimeOffset</span></span>|<span data-ttu-id="326fb-162">Symantec cert としての CodeSigning cert の種類。</span><span class="sxs-lookup"><span data-stu-id="326fb-162">The Type of the CodeSigning Cert as Symantec Cert.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d79d7-163">応答</span><span class="sxs-lookup"><span data-stu-id="d79d7-163">Response</span></span>
-<span data-ttu-id="d79d7-164">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d79d7-164">If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="326fb-163">応答</span><span class="sxs-lookup"><span data-stu-id="326fb-163">Response</span></span>
+<span data-ttu-id="326fb-164">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="326fb-164">If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d79d7-165">例</span><span class="sxs-lookup"><span data-stu-id="d79d7-165">Example</span></span>
+## <a name="example"></a><span data-ttu-id="326fb-165">例</span><span class="sxs-lookup"><span data-stu-id="326fb-165">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d79d7-166">要求</span><span class="sxs-lookup"><span data-stu-id="d79d7-166">Request</span></span>
-<span data-ttu-id="d79d7-167">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d79d7-167">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="326fb-166">要求</span><span class="sxs-lookup"><span data-stu-id="326fb-166">Request</span></span>
+<span data-ttu-id="326fb-167">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="326fb-167">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/symantecCodeSigningCertificate
 Content-type: application/json
@@ -89,8 +89,8 @@ Content-length: 421
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d79d7-168">応答</span><span class="sxs-lookup"><span data-stu-id="d79d7-168">Response</span></span>
-<span data-ttu-id="d79d7-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d79d7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="326fb-168">応答</span><span class="sxs-lookup"><span data-stu-id="326fb-168">Response</span></span>
+<span data-ttu-id="326fb-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="326fb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

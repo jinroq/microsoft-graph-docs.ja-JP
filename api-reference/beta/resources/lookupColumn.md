@@ -5,21 +5,21 @@ ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506230"
 ---
-# <a name="lookupcolumn-resource-type"></a><span data-ttu-id="17ace-102">LookupColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="17ace-102">LookupColumn resource type</span></span>
+# <a name="lookupcolumn-resource-type"></a><span data-ttu-id="84086-102">LookupColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="84086-102">LookupColumn resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17ace-103">[columnDefinition](columndefinition.md) リソースの **lookupColumn** は、列の値がサイト内の別のソースから検索されることを示します。</span><span class="sxs-lookup"><span data-stu-id="17ace-103">The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.</span></span>
+<span data-ttu-id="84086-103">[columnDefinition](columndefinition.md) リソースの **lookupColumn** は、列の値がサイト内の別のソースから検索されることを示します。</span><span class="sxs-lookup"><span data-stu-id="84086-103">The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="17ace-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="17ace-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="84086-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="84086-104">JSON representation</span></span>
 
-<span data-ttu-id="17ace-105">以下は、**lookupColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="17ace-105">Here is a JSON representation of a **lookupColumn** resource.</span></span>
+<span data-ttu-id="84086-105">以下は、**lookupColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="84086-105">Here is a JSON representation of a **lookupColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.lookupColumn" } -->
 
 ```json
@@ -32,15 +32,15 @@ ms.locfileid: "30480797"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="17ace-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="17ace-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="84086-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="84086-106">Properties</span></span>
 
-| <span data-ttu-id="17ace-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="17ace-107">Property name</span></span>             | <span data-ttu-id="17ace-108">種類</span><span class="sxs-lookup"><span data-stu-id="17ace-108">Type</span></span>    | <span data-ttu-id="17ace-109">説明</span><span class="sxs-lookup"><span data-stu-id="17ace-109">Description</span></span>
+| <span data-ttu-id="84086-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="84086-107">Property name</span></span>             | <span data-ttu-id="84086-108">種類</span><span class="sxs-lookup"><span data-stu-id="84086-108">Type</span></span>    | <span data-ttu-id="84086-109">説明</span><span class="sxs-lookup"><span data-stu-id="84086-109">Description</span></span>
 |:--------------------------|:--------|:---------------------------------------
-| <span data-ttu-id="17ace-110">**allowMultipleValues**</span><span class="sxs-lookup"><span data-stu-id="17ace-110">**allowMultipleValues**</span></span>   | <span data-ttu-id="17ace-111">ブール値</span><span class="sxs-lookup"><span data-stu-id="17ace-111">boolean</span></span> | <span data-ttu-id="17ace-112">ソースから複数の値を選択できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="17ace-112">Indicates whether multiple values can be selected from the source.</span></span>
-| <span data-ttu-id="17ace-113">**allowUnlimitedLength**</span><span class="sxs-lookup"><span data-stu-id="17ace-113">**allowUnlimitedLength**</span></span>  | <span data-ttu-id="17ace-114">boolean</span><span class="sxs-lookup"><span data-stu-id="17ace-114">boolean</span></span> | <span data-ttu-id="17ace-115">列の値が標準の 255 文字の制限を超えることができるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="17ace-115">Indicates whether values in the column should be able to exceed the standard limit of 255 characters.</span></span>
-| <span data-ttu-id="17ace-116">**columnName**</span><span class="sxs-lookup"><span data-stu-id="17ace-116">**columnName**</span></span>            | <span data-ttu-id="17ace-117">string</span><span class="sxs-lookup"><span data-stu-id="17ace-117">string</span></span>  | <span data-ttu-id="17ace-118">検索元の列の名前。</span><span class="sxs-lookup"><span data-stu-id="17ace-118">The name of the lookup source column.</span></span>
-| <span data-ttu-id="17ace-119">**listId**</span><span class="sxs-lookup"><span data-stu-id="17ace-119">**listId**</span></span>                | <span data-ttu-id="17ace-120">string</span><span class="sxs-lookup"><span data-stu-id="17ace-120">string</span></span>  | <span data-ttu-id="17ace-121">検索元リストの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="17ace-121">The unique identifier of the lookup source list.</span></span>
-| <span data-ttu-id="17ace-122">**primaryLookupColumnId**</span><span class="sxs-lookup"><span data-stu-id="17ace-122">**primaryLookupColumnId**</span></span> | <span data-ttu-id="17ace-123">string</span><span class="sxs-lookup"><span data-stu-id="17ace-123">string</span></span>  | <span data-ttu-id="17ace-124">指定されている場合、この列は*セカンダリ ルックアップ*であり、*プライマリ ルックアップ*によって検索されたリスト項目から、新たに追加されたフィールドを取り出します。</span><span class="sxs-lookup"><span data-stu-id="17ace-124">If specified, this column is a *secondary lookup*, pulling an additional field from the list item looked up by the *primary lookup*.</span></span> <span data-ttu-id="17ace-125">*プライマリ*によって検索されたリスト項目を、ここで指定された列のソースとして使用します。</span><span class="sxs-lookup"><span data-stu-id="17ace-125">Use the list item looked up by the *primary* as the source for the column named here.</span></span>
+| <span data-ttu-id="84086-110">**allowMultipleValues**</span><span class="sxs-lookup"><span data-stu-id="84086-110">**allowMultipleValues**</span></span>   | <span data-ttu-id="84086-111">ブール値</span><span class="sxs-lookup"><span data-stu-id="84086-111">boolean</span></span> | <span data-ttu-id="84086-112">ソースから複数の値を選択できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="84086-112">Indicates whether multiple values can be selected from the source.</span></span>
+| <span data-ttu-id="84086-113">**allowUnlimitedLength**</span><span class="sxs-lookup"><span data-stu-id="84086-113">**allowUnlimitedLength**</span></span>  | <span data-ttu-id="84086-114">boolean</span><span class="sxs-lookup"><span data-stu-id="84086-114">boolean</span></span> | <span data-ttu-id="84086-115">列の値が標準の 255 文字の制限を超えることができるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="84086-115">Indicates whether values in the column should be able to exceed the standard limit of 255 characters.</span></span>
+| <span data-ttu-id="84086-116">**columnName**</span><span class="sxs-lookup"><span data-stu-id="84086-116">**columnName**</span></span>            | <span data-ttu-id="84086-117">string</span><span class="sxs-lookup"><span data-stu-id="84086-117">string</span></span>  | <span data-ttu-id="84086-118">検索元の列の名前。</span><span class="sxs-lookup"><span data-stu-id="84086-118">The name of the lookup source column.</span></span>
+| <span data-ttu-id="84086-119">**listId**</span><span class="sxs-lookup"><span data-stu-id="84086-119">**listId**</span></span>                | <span data-ttu-id="84086-120">string</span><span class="sxs-lookup"><span data-stu-id="84086-120">string</span></span>  | <span data-ttu-id="84086-121">検索元リストの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="84086-121">The unique identifier of the lookup source list.</span></span>
+| <span data-ttu-id="84086-122">**primaryLookupColumnId**</span><span class="sxs-lookup"><span data-stu-id="84086-122">**primaryLookupColumnId**</span></span> | <span data-ttu-id="84086-123">string</span><span class="sxs-lookup"><span data-stu-id="84086-123">string</span></span>  | <span data-ttu-id="84086-124">指定されている場合、この列は*セカンダリ ルックアップ*であり、*プライマリ ルックアップ*によって検索されたリスト項目から、新たに追加されたフィールドを取り出します。</span><span class="sxs-lookup"><span data-stu-id="84086-124">If specified, this column is a *secondary lookup*, pulling an additional field from the list item looked up by the *primary lookup*.</span></span> <span data-ttu-id="84086-125">*プライマリ*によって検索されたリスト項目を、ここで指定された列のソースとして使用します。</span><span class="sxs-lookup"><span data-stu-id="84086-125">Use the list item looked up by the *primary* as the source for the column named here.</span></span>
 
 <!--
 {
