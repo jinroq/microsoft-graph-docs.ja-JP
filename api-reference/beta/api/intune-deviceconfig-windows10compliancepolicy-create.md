@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 64649c1028a0ed7c4beca8ceb41eb683c25c8a27
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32517877"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy の作成
 
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -67,9 +67,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |requireHealthyDeviceReport|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
-|osMinimumVersion|文字列|Windows 10 の最小バージョン。|
+|osMinimumVersion|String|Windows 10 の最小バージョン。|
 |osMaximumVersion|文字列型 (String)|Windows 10 の最大バージョン。|
-|mobileOsMinimumVersion|文字列|Windows Phone の最小バージョン。|
+|mobileOsMinimumVersion|String|Windows Phone の最小バージョン。|
 |mobileOsMaximumVersion|String|Windows Phone の最大バージョン。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (早期起動マルウェア対策ドライバーが有効である) ことを要求します。|
 |bitLockerEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (BitLocker が有効である) ことを要求します。|
@@ -78,7 +78,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
 |activeFirewallRequired|Boolean|Windows デバイスでアクティブなファイアウォールが必要です。|
 |defenderenabled|Boolean|windows デバイスで windows Defender マルウェア対策を必須にする。|
-|defenderversion|文字列|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
+|defenderversion|String|windows デバイスで windows Defender マルウェア対策の最小バージョンが必要です。|
 |signatureOutOfDate|Boolean|windows デバイスで windows Defender マルウェア対策の署名が最新の状態になっていることを要求します。|
 |rtpenabled|Boolean|windows デバイスで windows Defender マルウェア対策のリアルタイム保護を必要とします。|
 |antivirusRequired|Boolean|windows Decurity Center に登録されているウイルス対策ソリューション (Symantec、Windows Defender など) を必要とします。|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 706ef0d5ea87796c951d2fcb8c7357643fba7afb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146775"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522588"
 ---
 # <a name="runstate-enum-type"></a>runstate 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "30146775"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な結果です。|
-|success|1-d|スクリプトは正常に実行されます。|
-|失敗|pbm-2|スクリプトの実行に失敗しました。|
+|success|1 |スクリプトは正常に実行されます。|
+|fail|2 |スクリプトの実行に失敗しました。|
 
 
 

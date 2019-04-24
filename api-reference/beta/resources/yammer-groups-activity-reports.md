@@ -1,27 +1,27 @@
 ---
 title: Yammer グループ アクティビティ レポート
-description: 組織で Yammer グループの活動の洞察を獲得でき、Yammer グループの数が表示されるを参照してください作成され、使用されます。
+description: 組織内の yammer グループのアクティビティについての洞察を得て、作成され、使用されている yammer グループの数を確認できます。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 07ec3db93088dd00af1b8595e5d059fc2cede774
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522028"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer グループ アクティビティ レポート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-組織で Yammer グループの活動の洞察を獲得でき、Yammer グループの数が表示されるを参照してください作成され、使用されます。
+組織内の yammer グループのアクティビティについての洞察を得て、作成され、使用されている yammer グループの数を確認できます。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Yammer グループ アクティビティ](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)」を参照してください。
 
 ## <a name="reports"></a>レポート
 
-| 関数                                 | CSV の戻り値の型 | JSON の戻り値の型                         | 説明                              |
+| 関数                                 | CSV 戻り値の型 | JSON 戻り値の種類                         | 説明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [グループの詳細を取得する](../api/reportroot-getyammergroupsactivitydetail.md) | Stream          | [yammerGroupsActivityDetail](../resources/yammergroupsactivitydetail.md) | グループ別の Yammer グループ アクティビティに関する詳細を取得します。 |
 | [グループの数を取得する](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Stream          | [yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md) | 存在したグループ、およびグループ会話アクティビティを含んだグループの合計数を取得します。 |

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52ad6af4a58265d2812111a0b1e51ef971d1e4e9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32516589"
 ---
 # <a name="update-windows10generalconfiguration"></a>Update windows10GeneralConfiguration
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -66,22 +66,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |authenticationallowsecondarydevice|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Microsoft アカウントサインインアシスタント (wlidsvc) NT サービスを制御します。 可能な値は、`notConfigured`、`disabled` です。|
 |authenticationallowsecondarydevice|Boolean|Windows でセカンダリ認証デバイスを使用できるようにします。|
 |authenticationwebsignin|[購入](../resources/intune-shared-enablement.md)|Web 資格情報プロバイダーを有効にするかどうかを示します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|authenticationPreferredAzureADTenantDomainName|文字列|Azure AD テナント内の使用可能なドメイン間で優先ドメインを指定します。|
+|authenticationPreferredAzureADTenantDomainName|String|Azure AD テナント内の使用可能なドメイン間で優先ドメインを指定します。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|連邦情報処理規格 (FIPS) ポリシーを許可または禁止するかどうかを指定します。|
-|displayAppListWithGdiDPIScalingTurnedOn|String コレクション|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
-|displayAppListWithGdiDPIScalingTurnedOff|String コレクション|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
-|enterpriseCloudPrintDiscoveryEndPoint|文字列|クラウド プリンターを検出するエンドポイント。|
-|enterpriseCloudPrintOAuthAuthority|文字列|OAuth トークンを取得するための認証エンドポイント。|
-|enterpriseCloudPrintOAuthClientIdentifier|文字列|OAuth 認証機関から OAuth トークンを取得することを承認されているクライアント アプリケーションの GUID。|
-|enterpriseCloudPrintResourceIdentifier|文字列|Azure Portal で構成されている印刷サービスの OAuth リソース URI。|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
+|enterpriseCloudPrintDiscoveryEndPoint|String|クラウド プリンターを検出するエンドポイント。|
+|enterpriseCloudPrintOAuthAuthority|String|OAuth トークンを取得するための認証エンドポイント。|
+|enterpriseCloudPrintOAuthClientIdentifier|String|OAuth 認証機関から OAuth トークンを取得することを承認されているクライアント アプリケーションの GUID。|
+|enterpriseCloudPrintResourceIdentifier|String|Azure Portal で構成されている印刷サービスの OAuth リソース URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|検出エンドポイントからクエリを実行する必要があるプリンターの最大数。 これはモバイルのみでの設定です。 有効な値は 1 から 65535 までです|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
 |experienceDoNotSyncBrowserSettings|[browsersyncsetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Microsoft Edge ブラウザーの設定の同期を許可または禁止します。 デバイス間の同期を禁止し、ユーザーによる上書きを許可する IT 管理者のオプション。 使用可能な値は、`notConfigured`、`blockedWithUserOverride`、`blocked` です。|
 |messagingblocksync|Boolean|テキストメッセージのバックアップと復元、およびメッセージングのすべてをブロックするかどうかを示します。|
 |messagingblockmms|Boolean|デバイス上の MMS 送受信機能をブロックするかどうかを示します。|
 |messagingBlockRichCommunicationServices|Boolean|デバイスで RCS の送受信機能を禁止するかどうかを示します。|
-|printerNames|String コレクション|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
-|プリンター defaultname|文字列|インストールされているプリンターの名前 (ネットワークホスト名)。|
+|printerNames|String collection|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
+|プリンター defaultname|String|インストールされているプリンターの名前 (ネットワークホスト名)。|
 |プリンターブロックの追加|Boolean|ユーザーがプリンター設定から追加のプリンターをインストールできないようにします。|
 |searchBlockDiacritics|Boolean|検索で分音記号を使用できるかどうかを指定します。|
 |searchDisableAutoLanguageDetection|Boolean|コンテンツとプロパティのインデックスを作成するときに、自動言語検出を使用するかどうかを指定します。|
@@ -96,13 +96,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|デバイスが Azure AD に参加しているときに、OOBE 中に自動デバイス暗号化を許可するかどうかを指定します (デスクトップのみ)。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|診断データと利用統計情報データ (Watson など) の送信をデバイスに許可する値を取得または設定します。 可能な値は、`userDefined`、`none`、`basic`、`enhanced`、`full` です。|
 |oneDriveDisableFileSync|Boolean|アプリや機能から OneDrive 上のファイルを操作することを IT 管理者が禁止できるかどうかを示す値を取得または設定します。|
-|systemTelemetryProxyServer|文字列|接続されたユーザーエクスペリエンスとテレメトリ要求を転送するためのプロキシサーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを取得または設定します。|
+|systemTelemetryProxyServer|String|接続されたユーザーエクスペリエンスとテレメトリ要求を転送するためのプロキシサーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを取得または設定します。|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Microsoft 365 Analytics に送信されるテレメトリデータの種類 (none、intranet、internet など) を指定します。 可能な値は、`notConfigured`、`intranet`、`internet`、`intranetAndInternet` です。|
 |inkWorkspaceAccess|[inkaccesssetting](../resources/intune-deviceconfig-inkaccesssetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |inkWorkspaceAccessState|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |inkWorkspaceBlockSuggestedApps|Boolean|インクワークスペースに推奨されるアプリ候補を表示するかどうかを指定します。|
 |smartScreenEnableAppInstallControl|Boolean|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
-|personalizationDesktopImageUrl|文字列|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
+|personalizationDesktopImageUrl|String|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |personalizationLockScreenImageUrl|String|ダウンロードしてロック画面画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはロック画面画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |bluetoothAllowedServices|String コレクション|許可されている Bluetooth サービスおよびプロファイルの一覧を 16 進形式の文字列として指定します。|
 |bluetoothBlockAdvertising|Boolean|ユーザーが Bluetooth 広告を使用することを禁止するかどうか。|
@@ -125,14 +125,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeDisableFirstRunPage|Boolean|Microsoft Edge の初回使用時に表示される Microsoft の Web ページを禁止します。 このポリシーでは、ゼロ エミッション構成に登録している企業などが、このページの表示を禁止できます。|
 |edgeBlockLiveTileDataCollection|Boolean|ユーザーが Microsoft Edge からスタートにサイトをピン留めしたときに、ライブ タイルを作成するために Microsoft が情報を収集することを禁止します。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Internet Explorer と Microsoft Edge の間でお気に入りの同期を有効にします。 お気に入りの追加、削除、変更、順序変更が、ブラウザー間で共有されます。|
-|edgeFavoritesListLocation|文字列|準備するお気に入りの一覧の場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
+|edgeFavoritesListLocation|String|準備するお気に入りの一覧の場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
 |edgeBlockEditFavorites|Boolean|ユーザーがお気に入りを変更することを禁止するかどうかを示します。|
-|edgeNewTabPageURL|文字列|新しいタブが作成されたときに開かれるページを指定します。|
+|edgeNewTabPageURL|String|新しいタブが作成されたときに開かれるページを指定します。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|[ホーム] ボタンを非表示にし、既定の開始ページを読み込むか、新しいタブページを読み込むか、またはカスタム URL を読み込みます。|
 |edgeHomeButtonConfigurationEnabled|Boolean|ホームボタンの構成を有効にします。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|開始時に開くページの種類を指定します。 可能な値は、`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages` です。|
 |edgeBlockSideloadingExtensions|Boolean|ユーザーが拡張機能をサイドロードできるかどうかを示します。|
-|edgeRequiredExtensionPackageFamilyNames|String コレクション|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
+|edgeRequiredExtensionPackageFamilyNames|String collection|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
 |edgeBlockPrinting|Boolean|印刷を許可またはブロックするようにエッジを構成します。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|[お気に入り] バーを常に表示または非表示に設定するかどうかを指定する値を取得または設定します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
 |edgeBlockSavingHistory|Boolean|閲覧履歴を保存できるようにエッジを構成するか、閲覧履歴を保存しないようにします。|
@@ -152,8 +152,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|検疫済みのマルウェアを削除するまでの日数。 有効な値は 0 から 90 までです|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|検出されたマルウェアに対する Defender のアクションを脅威レベルごとに取得または設定します。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender がシステムをスキャンする曜日。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
-|defenderFilesAndFoldersToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
-|defenderFileExtensionsToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイル拡張子。|
+|defenderFilesAndFoldersToExclude|String collection|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
+|defenderFileExtensionsToExclude|String collection|スキャンとリアルタイム保護から除外するファイル拡張子。|
 |defenderScanMaxCpu|Int32|スキャン中の最大 CPU 使用率。 有効な値は 0 から 100 までです|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|ファイル アクティビティを監視する値。 可能な値は、`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly` です。|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 使用可能な値は、`deviceDefault`、`block`、`audit` です。|
@@ -255,7 +255,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |windowsSpotlightConfigureOnLockScreen|[windowsスポットライト enablementsettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|スポットライトの種類を指定します。 使用可能な値は、`notConfigured`、`disabled`、`enabled` です。|
 |networkProxyApplySettingsDeviceWide|Boolean|オンに設定すると、プロキシの設定がデバイスのすべてのプロセスとアカウントに適用されます。 それ以外の場合は、MDM に登録されているユーザー アカウントに適用されます。|
 |networkProxyDisableAutoDetect|Boolean|設定の自動検出を無効にします。 有効にした場合、システムはプロキシ自動構成 (PAC) スクリプトへのパスを検索します。|
-|networkProxyAutomaticConfigurationUrl|文字列|使用するプロキシ自動構成 (PAC) スクリプトのアドレス。|
+|networkProxyAutomaticConfigurationUrl|String|使用するプロキシ自動構成 (PAC) スクリプトのアドレス。|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|プロキシ サーバーの設定を手動で指定します。|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Microsoft アカウントに関連付けられていない電子メール アカウントをユーザーがデバイスに追加できないようにするかどうかを示します。|
 |antiTheftModeBlocked|Boolean|ユーザーが盗難防止モードの設定を選択することを禁止するかどうかを示します (Windows 10 Mobile のみ)。|
@@ -274,7 +274,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|イントラネットトラフィックをエッジから Internet Explorer に切り替えるかどうかを示します。 注: このプロパティの名前は誤解されています。このプロパティは現在使用されていません。代わりに EdgeSendIntranetTrafficToInternetExplorer を使用してください。|
 |edgeSendIntranetTrafficToInternetExplorer|Boolean|イントラネットトラフィックをエッジから Internet Explorer に切り替えるかどうかを示します。|
 |edgeRequireSmartScreen|Boolean|スマート スクリーン フィルターの使用をユーザーに要求するかどうかを示します。|
-|edgeEnterpriseModeSiteListLocation|文字列|エンタープライズ モードのサイト リストの場所を示します。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
+|edgeEnterpriseModeSiteListLocation|String|エンタープライズ モードのサイト リストの場所を示します。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
 |edgeFirstRunUrl|String|Edge ブラウザーを初めて開いたときに最初に実行される URL です。|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定できるようにします。 AllowSearchEngineCustomization ポリシーが設定されていない場合、ユーザーは上書きして既定の検索エンジンを変更することができます。|
 |edgeHomepageUrls|String コレクション|MDM に登録されているデバイスの Edge ブラウザーに表示されるホームページの URL の一覧です。|
@@ -325,7 +325,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |appmanagementmsiallowusercontroloverinstall|Boolean|このポリシー設定では、通常、システム管理者のみが使用できるインストールオプションをユーザーが変更することができます。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|このポリシー設定は、システムにプログラムをインストールするときに、管理者特権でのアクセス許可を使用するように Windows インストーラーに指示します。|
 |dataprotectionblockdirectmemoryaccess|Boolean|このポリシー設定を使用すると、ユーザーが Windows にログインしない限り、ホットプラグ可能な PCI 下流ポートすべてのダイレクトメモリアクセス (DMA) をブロックすることができます。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String コレクション|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
 
 
 

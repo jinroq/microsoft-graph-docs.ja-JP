@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d4b472fbac98b8b38ce8f97e8be87d788b288d27
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32518144"
 ---
 # <a name="update-restrictedappsviolation"></a>restrictedAppsViolation の更新
 
@@ -53,10 +53,10 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |id|String|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
 |userId|String|ユーザーの一意識別子。 Guid である必要があります|
 |userName|文字列型 (String)|ユーザー名|
-|manageddeviceid|文字列|管理デバイスの一意識別子。 Guid である必要があります|
-|deviceName|文字列|[デバイス名]|
-|deviceConfigurationId|文字列|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
-|deviceConfigurationName|文字列|デバイス構成プロファイル名|
+|manageddeviceid|String|管理デバイスの一意識別子。 Guid である必要があります|
+|deviceName|String|[デバイス名]|
+|deviceConfigurationId|String|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
+|deviceConfigurationName|String|デバイス構成プロファイル名|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームの種類。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 可能な値は、`prohibitedApps`、`notApprovedApps` です。|
 |restrictedApps|[manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|

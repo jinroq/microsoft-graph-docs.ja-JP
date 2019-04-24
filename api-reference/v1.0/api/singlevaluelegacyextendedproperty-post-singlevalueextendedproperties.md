@@ -3,11 +3,11 @@ title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
 localization_priority: Normal
 ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520824"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "27819867"
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-リソースに応じて、[拡張プロパティを作成するアクセス許可が委任された (アプリケーション) を要求を入力、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、拡張プロパティを作成しているリソースと、要求したアクセス許可の種類 (委任またはアプリケーション) によって、次の表で指定されているアクセス許可が最低限必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
@@ -39,9 +39,9 @@ ms.locfileid: "27819867"
 | [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| グループ [event](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| グループ [post](../resources/post.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | 非サポート | 非サポート |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | 非サポート | 非サポート |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | 非サポート | 非サポート |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
@@ -119,13 +119,13 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>要求本文
 
-リソース インスタンスの **singleValueExtendedProperties** コレクション プロパティに、各 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
+リソース インスタンスの [singleValueExtendedProperties](../resources/singlevaluelegacyextendedproperty.md) コレクション プロパティに、各 **singleValueLegacyExtendedProperty** オブジェクトの JSON 本文を指定します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:-----|:-----|:-----|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) コレクション| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
 |id|String|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
-|value|文字列|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
+|value|string|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
 
 _新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **singleValueExtendedProperties**コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。
 
@@ -150,7 +150,7 @@ _新しい_リソース インスタンスに拡張プロパティを作成す�
 
 最初の例では、同じ POST 操作で新しいイベントと単一値の拡張プロパティを作成します。新しいイベントに通常含めるプロパティとは別に、1 つの単一値の拡張プロパティを含む **singleValueExtendedProperties** コレクションを要求の本文に含め、そのプロパティは次のようにします。
 - **id** は、プロパティの型を `String` (GUID) として指定し、`Fun` という名前のプロパティとして指定します。
-- **value** は、`Fun` プロパティの値として `Food` を指定します。 
+- **value** は、`Food` プロパティの値として `Fun` を指定します。 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -191,7 +191,7 @@ Content-Type: application/json
 
 ##### <a name="response-1"></a>応答 1
 
-[イベントのみの作成](../api/user-post-events.md)からの応答と同様に、`HTTP 201 Created` 応答コードによって正常な応答が示され、応答の本文に新しいイベントが含まれます。応答には、新しく作成された拡張プロパティは含まれません。
+`HTTP 201 Created`からの応答と同様に、[](../api/user-post-events.md) 応答コードによって正常な応答が示され、応答の本文に新しいイベントが含まれます。応答には、新しく作成された拡張プロパティは含まれません。
 
 新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているイベントを取得](../api/singlevaluelegacyextendedproperty-get.md)します。
 
@@ -202,7 +202,7 @@ Content-Type: application/json
 
 2 番目の例では、指定した既存のメッセージに 1 つの単一値の拡張プロパティを作成します。拡張プロパティは、**singleValueExtendedProperties** 配列内の唯一の要素です。要求本文には、拡張プロパティに関する次のものが含まれています。
 - **id** は、プロパティの型を `String` (GUID) として指定し、`Color` という名前のプロパティとして指定します。
-- **value** は、`Color` プロパティの値として `Green` を指定します。
+- **value** は、`Green` プロパティの値として `Color` を指定します。
 
 <!-- { "blockType": "ignored" } -->
 ```http

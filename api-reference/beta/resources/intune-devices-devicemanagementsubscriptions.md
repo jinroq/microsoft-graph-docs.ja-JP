@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785063"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522420"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>devicemanagementsubscriptions 列挙型
 
@@ -22,12 +22,12 @@ ms.locfileid: "31785063"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|None|
-|intune|1-d|Microsoft Intune サブスクリプション|
-|office|pbm-2|Office365 サブスクリプション|
-|intアン epremium|2/4|Microsoft Intune Premium サブスクリプション|
-|intune_EDU|~|教育機関向け Microsoft Intune サブスクリプション|
-|intune_SMB|16|小規模企業向けの Microsoft Intune サブスクリプション|
+|なし|.0|None|
+|intune|1 |Microsoft Intune サブスクリプション|
+|office|2 |Office365 サブスクリプション|
+|intアン epremium|4 |Microsoft Intune Premium サブスクリプション|
+|intune_EDU|8 |教育機関向け Microsoft Intune サブスクリプション|
+|intune_SMB|16 |小規模企業向けの Microsoft Intune サブスクリプション|
 
 
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 69fda9b0a49c59a86a17e9a41eb89159085d857e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963760"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520243"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply　
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
-|method|文字列|省略可能。 中国語の文字に使用される順序の指定方法です。  可能な値: `PinYin`、 `StrokeCount`。|
+|method|string|省略可能。 中国語文字に使用される順序付けの方法です。  使用可能な値は`PinYin`、 `StrokeCount`、です。|
 
 ## <a name="response"></a>応答
 

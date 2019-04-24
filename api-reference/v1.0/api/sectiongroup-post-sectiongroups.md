@@ -5,13 +5,15 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: a05e61934c8043c0c6a94c6e0785c0e93e4a3e19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520929"
 ---
 # <a name="create-sectiongroup"></a>sectionGroup を作成する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定されたセクション グループに新しい[セクション グループ](../resources/sectiongroup.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
@@ -32,7 +34,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
 POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -54,7 +56,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
   "name": "create_sectiongroup_from_sectiongroup"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sectionGroups
+POST https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
@@ -67,7 +69,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -95,10 +97,15 @@ Content-length: 305
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sectiongroup-post-sectiongroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

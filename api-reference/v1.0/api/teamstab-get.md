@@ -1,21 +1,21 @@
 ---
 title: タブを取得する
-description: 'プロパティと指定したタブの関係を取得します。 '
+description: '指定したタブのプロパティとリレーションシップを取得します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1513893907d6448287f2541ffdc4617ab94ef455
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522238"
 ---
 # <a name="get-tab"></a>タブを取得する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-プロパティと、指定した[タブ](../resources/teamstab.md)の関係を取得します。 
+指定した[タブ](../resources/teamstab.md)のプロパティとリレーションシップを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,7 +35,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、$select をサポートし、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。
+このメソッドは、応答をカスタマイズするための $select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -47,12 +47,12 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[tab](../resources/teamstab.md)オブジェクト。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[tab](../resources/teamstab.md)オブジェクトを返します。
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
 要求の例を次に示します。
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -90,6 +90,9 @@ Content-length: 401
   "description": "Get a channel tab",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

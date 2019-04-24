@@ -1,19 +1,19 @@
 ---
 title: セクションを作成する
-description: 指定されたセクション グループには、新しい onenoteSection を作成します。
+description: 指定したセクショングループに新しい onenoteSection を作成します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 91ed02c363de0fc39af594e2e0932e4c4ad605bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520908"
 ---
 # <a name="create-section"></a>セクションを作成する
 
-指定されたセクション グループには、新しい[onenoteSection](../resources/section.md)を作成します。
+指定したセクショングループに新しい[onenoteSection](../resources/section.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -32,7 +32,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sections
 POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -44,7 +44,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[onenoteSection](../resources/section.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onenoteSection](../resources/section.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

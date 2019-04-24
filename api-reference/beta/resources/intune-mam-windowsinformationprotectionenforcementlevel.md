@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ac5a360bebfc60dbaf4315be5e4e189f91c1f2b8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522140"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 列挙型
 
@@ -23,9 +23,9 @@ WIP 保護適用レベルに指定できる値
 |メンバー|値|説明|
 |:---|:---|:---|
 |noprotection|.0|保護の適用なし|
-|encryptAndAuditOnly|1-d|暗号化と監査のみ|
-|encryptAuditAndPrompt|pbm-2|暗号化、監査、および確認|
-|encryptAuditAndBlock|1/3|暗号化、監査、ブロック|
+|encryptAndAuditOnly|1 |暗号化と監査のみ|
+|encryptAuditAndPrompt|2 |暗号化、監査、および確認|
+|encryptAuditAndBlock|3 |暗号化、監査、ブロック|
 
 
 

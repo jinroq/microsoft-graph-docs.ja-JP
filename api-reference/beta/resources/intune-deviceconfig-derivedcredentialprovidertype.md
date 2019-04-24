@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e5477763723da5433550d9d96613caf82ff08f78
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522455"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31794443"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|派生した資格情報プロバイダーが構成されていません。|
-|entrustdatacard|1-d|Entrust|
-|purebred|pbm-2|Purebred 情報システムエージェンシー。|
-|xTec|1/3|Xtec-AuthentX|
-|intercede|2/4|Intercede。|
+|entrustdatacard|1 |Entrust|
+|purebred|2 |Purebred 情報システムエージェンシー。|
+|xTec|3 |Xtec-AuthentX|
+|intercede|4 |Intercede。|
 
 
 

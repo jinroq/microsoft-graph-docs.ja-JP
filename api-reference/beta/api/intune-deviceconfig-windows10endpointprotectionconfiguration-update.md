@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 101433d2fc51f4a3eb1f1b896cc65c7e6ee3c7a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793512"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32516617"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の更新
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -99,9 +99,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |localsecurityoptionsenableadministratoraccount|Boolean|ユーザーがこのコンピューターに新しい Microsoft アカウントを追加できないようにします。|
 |localsecurityoptionsblockremotelogonwithpassword|Boolean|パスワードで保護されていないローカルアカウントで、物理デバイス以外の場所からログオンできるようにします。既定値を有効にする|
 |localsecurityoptionsdisableアドミニストレーターアカウント|Boolean|ローカル管理者アカウントを有効にするか無効にするかを指定します。|
-|localsecurityoptionsadministratoraccountname|文字列|アカウント "Administrator" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localsecurityoptionsadministratoraccountname|String|アカウント "Administrator" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
 |localsecurityoptionsdisableguestaccount|Boolean|ゲストアカウントを有効にするか無効にするかを指定します。|
-|localsecurityoptionsguestaccountname|文字列|アカウント "Guest" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
+|localsecurityoptionsguestaccountname|String|アカウント "Guest" のセキュリティ識別子 (SID) に関連付けられる別のアカウント名を定義します。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|ログインせずに、ポータブルコンピューターをアンドックできないようにします。|
 |localsecurityoptionsblockユーザーのドライバー|Boolean|共有プリンターへの接続の一部として、プリンタードライバーのインストールを管理者のみに制限します。|
 |localsecurityoptionsblockremoteop' aldrive access|Boolean|この設定を有効にすると、対話的にログオンしたユーザーのみが、cd-rom メディアにアクセスできます。|
@@ -111,11 +111,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|ユーザーがログオンできるようにするには、CTRL + ALT + DEL キーを押しておく必要があります。|
 |localsecurityoption佐々木 delastsignedinuser|Boolean|このデバイスに最後にサインインしたユーザーのユーザー名を表示しません。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|資格情報を入力した後、デバイスのデスクトップが表示される前に、このデバイスにサインインしているユーザーのユーザー名を表示しません。|
-|localsecurityoptionslogonmessagetitle|文字列|ログインを試行するユーザーのメッセージのタイトルを設定します。|
-|localsecurityoptionslogonmessagetext|文字列|ログインを試行するユーザーのメッセージテキストを設定します。|
+|localsecurityoptionslogonmessagetitle|String|ログインを試行するユーザーのメッセージのタイトルを設定します。|
+|localsecurityoptionslogonmessagetext|String|ログインを試行するユーザーのメッセージテキストを設定します。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|オンライン id を使用するために、このデバイスへの PKU2U 認証要求をブロックします。|
 |localsecurityoptionsinformationshownonlockscreen|Boolean|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティの UI ヘルパーの boolean|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|文字列|既定のセキュリティ記述子定義言語文字列を編集して、ユーザーおよびグループに SAM へのリモート呼び出しを許可または拒否します。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|既定のセキュリティ記述子定義言語文字列を編集して、ユーザーおよびグループに SAM へのリモート呼び出しを許可または拒否します。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、クライアントは128ビット暗号化と NTLMv2 セッションセキュリティのいずれかまたは両方のネゴシエーションを要求できます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定を使用すると、サーバーで128ビット暗号化と NTLMv2 セッションセキュリティのどちらかまたは両方のネゴシエーションが要求されます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワークログオンに使用するチャレンジ/応答認証プロトコルを決定します。 可能な値は `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm` です。|
@@ -157,10 +157,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterDisableSecureBootUI|Boolean|デバイスセキュリティの下でのセキュアブート領域の表示を無効にするために使用されます。|
 |defendersecurityセンター disableトラブルシューティング ui|Boolean|[デバイスのセキュリティ] の下にあるセキュリティプロセスのトラブルシューティングの表示を無効にするために使用されます。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|脆弱なファームウェアが検出された場合に、更新プログラムの TPM ファームウェアの表示を無効にするために使用されます。|
-|defendersecurityセンター組織 displayname|文字列|ユーザーに表示される会社名。|
-|defendersecurityセンター helpemail|文字列|ユーザーに表示される電子メールアドレス。|
-|defendersecurityセンター helpphone|文字列|ユーザーに表示される電話番号または Skype ID。|
-|defenderSecurityCenterHelpURL|文字列|ヘルプポータルの URL これは、ユーザーに表示されます。|
+|defendersecurityセンター組織 displayname|String|ユーザーに表示される会社名。|
+|defendersecurityセンター helpemail|String|ユーザーに表示される電子メールアドレス。|
+|defendersecurityセンター helpphone|String|ユーザーに表示される電話番号または Skype ID。|
+|defenderSecurityCenterHelpURL|String|ヘルプポータルの URL これは、ユーザーに表示されます。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|アプリの表示領域から表示する通知。 使用可能な値は、`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications` です。|
 |defendersecurityセンター itcontactdisplay|[defendersecurityセンター itcontactdisplaytype](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|エンドユーザーに対して IT の連絡先情報を表示する場所を構成します。 可能な値は、`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications` です。|
 |firewallBlockStatefulFTP|Boolean|デバイスへのステートフル FTP 接続をブロックします|
@@ -202,7 +202,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderemailcontentexecution|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行を電子メール (webmail/メールクライアント) から削除する必要があるかどうかを示す値。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defenderAdvancedRansomewareProtectionType|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|ranware に対して高度な保護を使用することを示す値。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defendergu/myfolderstype|[folderprotectiontype](../resources/intune-deviceconfig-folderprotectiontype.md)|保護されたフォルダーの動作を示す値。 可能な値は、`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification` です。|
-|defenderGuardedFoldersAllowedAppPaths|String コレクション|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
+|defenderGuardedFoldersAllowedAppPaths|String collection|保護されたフォルダーへのアクセスが許可されている exe へのパスのリスト|
 |defenderAdditionalGuardedFolders|String コレクション|保護されたフォルダーのリストに追加されるフォルダー パスのリスト|
 |defendernetworkprotectiontype|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|networkprotection の動作を示す値です。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
 |defenderExploitProtectionXml|Binary|Exploit Protection の詳細に関する情報を含む XML コンテンツ。|

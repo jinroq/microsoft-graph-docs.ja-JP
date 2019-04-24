@@ -1,32 +1,32 @@
 ---
-title: plannerPlanContext リソースの種類
-description: '**PlannerPlanContext**リソースでは、プランナーの外部のユーザー エクスペリエンスの plannerPlan との関係を表します。 プランナーでプランは、その経験のコンテキストで作業を追跡するために、マイクロソフトのチームなど、他の経験で提示されることができます。'
+title: プラン "context/プラン" コンテキストリソースの種類
+description: '**plan by コンテキスト**リソースは、Planner の外部のユーザー環境に対するプランの関係を表します。 Planner のプランは、Microsoft Teams などの他のエクスペリエンスで提示して、そのエクスペリエンスのコンテキストで作業を追跡することができます。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 76260b51bc6f77acf6fac22e80bd676edd8b8e11
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522161"
 ---
-# <a name="plannerplancontext-resource-type"></a>plannerPlanContext リソースの種類
+# <a name="plannerplancontext-resource-type"></a>プラン "context/プラン" コンテキストリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlanContext**リソースでは、計画外のユーザー エクスペリエンスには、 [plannerPlan](plannerplan.md)との関係を表します。 プランナーでプランは、その経験のコンテキストで作業を追跡するために、マイクロソフトのチームなど、他の経験で提示されることができます。
-**PlannerPlanContext**エントリの reresents の経験は、 **ownerAppId**プロパティに基づいて識別できます。
- - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346: コンテキストのエントリは、マイクロソフトのチームに属しています。
- - 00000003-0000-0ff1-ce00-000000000000: コンテキスト項目が SharePoint に所属します。
+**plan by コンテキスト**リソースは、Planner の外部のユーザー環境に対する[プラン](plannerplan.md)の関係を表します。 Planner のプランは、Microsoft Teams などの他のエクスペリエンスで提示して、そのエクスペリエンスのコンテキストで作業を追跡することができます。
+**プランのコンテキスト**エントリ再生機能は、 **ownerappid**プロパティに基づいて識別できます。
+ - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346: コンテキストエントリは Microsoft Teams に属しています。
+ - 00000003-0000-0ff1-ce00-000000000000: コンテキストエントリは SharePoint に属しています。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|associationType|String|Null 許容型。 [PlannerPlan](plannerplan.md)とアプリケーション間の関連のアプリケーションで定義されている型。 アプリケーションは、同じ[plannerPlan](plannerplan.md)を別の種類の関係を追跡するためにこの情報を使用できます。|
-|createdDateTime|DateTimeOffset|読み取り専用です。 日付と時刻**plannerPlanContext**が作成されました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|displayNameSegments|String コレクション|外部環境の名前のセグメントです。 セグメントでは、リレーションシップを表示するには、他のアプリケーションを可能にする階層構造を表します。|
-|ownerAppId|String|読み取り専用です。 **PlannerPlanContext**を作成するアプリケーションの ID です。|
+|associationType|String|Null 許容型。 アプリケーションで定義された、[プラン](plannerplan.md)とアプリの間の関連付けの種類。 アプリはこの情報を使用して、同じ[プラン](plannerplan.md)の異なる種類のリレーションシップを追跡できます。|
+|createdDateTime|DateTimeOffset|読み取り専用。 **プラン**が作成された日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|displaynamesegments|String collection|外部環境の名前のセグメント。 セグメントは、他のアプリがリレーションシップを表示できる階層構造を表します。|
+|ownerappid|String|読み取り専用です。 **プランのコンテキスト**を作成したアプリの ID です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
