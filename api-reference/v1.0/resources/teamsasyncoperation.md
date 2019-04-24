@@ -1,42 +1,42 @@
 ---
 title: teamsAsyncOperation リソースの種類
-description: 'マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。 '
+description: 'Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462257"
 ---
-# <a name="teamsasyncoperation-resource-type"></a><span data-ttu-id="a8669-103">teamsAsyncOperation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a8669-103">teamsAsyncOperation resource type</span></span>
+# <a name="teamsasyncoperation-resource-type"></a><span data-ttu-id="a504f-103">teamsAsyncOperation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a504f-103">teamsAsyncOperation resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<span data-ttu-id="a504f-104">Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。</span><span class="sxs-lookup"><span data-stu-id="a504f-104">A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request.</span></span> <span data-ttu-id="a504f-105">これらの操作は、送信元の要求の時間内に実行するのに時間がかかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="a504f-105">These operations are long-running or too expensive to complete within the timeframe of their originating request.</span></span>
 
-<span data-ttu-id="a8669-104">マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。</span><span class="sxs-lookup"><span data-stu-id="a8669-104">A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request.</span></span> <span data-ttu-id="a8669-105">これらの操作は、実行時間の長い、または、最初の要求の時間枠で完了するのにはコストが高すぎます。</span><span class="sxs-lookup"><span data-stu-id="a8669-105">These operations are long-running or too expensive to complete within the timeframe of their originating request.</span></span>
+<span data-ttu-id="a504f-106">async 操作が開始されると、メソッドは202の受け入れられた応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="a504f-106">When an async operation is initiated, the method returns a 202 Accepted response code.</span></span> <span data-ttu-id="a504f-107">また、応答には、teamsAsyncOperation の場所が含まれている場所のヘッダーも含まれます。</span><span class="sxs-lookup"><span data-stu-id="a504f-107">The response will also contain a Location header, which contains the location of the teamsAsyncOperation.</span></span> <span data-ttu-id="a504f-108">この場所に GET 要求を行うことによって、操作の状態を定期的にチェックします。チェックの間、>30 秒間待機します。</span><span class="sxs-lookup"><span data-stu-id="a504f-108">Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks.</span></span>
+<span data-ttu-id="a504f-109">要求が正常に完了すると、状態は "succeeded" になり、targetresourcelocation は作成/変更されたリソースを参照するようになります。</span><span class="sxs-lookup"><span data-stu-id="a504f-109">When the request completes successfully, the status will be "succeeded" and the targetResourceLocation will point to the created/modified resource.</span></span>
 
-<span data-ttu-id="a8669-106">非同期操作が開始されると、メソッドは、202 の承諾済みの応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="a8669-106">When an async operation is initiated, the method returns a 202 Accepted response code.</span></span> <span data-ttu-id="a8669-107">応答は、teamsAsyncOperation の場所を含む場所のヘッダーも格納されます。</span><span class="sxs-lookup"><span data-stu-id="a8669-107">The response will also contain a Location header, which contains the location of the teamsAsyncOperation.</span></span> <span data-ttu-id="a8669-108">この場所に GET 要求を行うことによって、オペレーションのステータスを定期的にチェックします。待機 > 30 秒間隔でチェックします。</span><span class="sxs-lookup"><span data-stu-id="a8669-108">Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks.</span></span>
-<span data-ttu-id="a8669-109">要求が正常に完了したら、状態は、"成功し、targetResourceLocation が作成/変更したリソースを指します。</span><span class="sxs-lookup"><span data-stu-id="a8669-109">When the request completes successfully, the status will be "succeeded" and the targetResourceLocation will point to the created/modified resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="a504f-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a504f-110">Properties</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a8669-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a8669-110">Properties</span></span>
-
-| <span data-ttu-id="a8669-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a8669-111">Property</span></span> | <span data-ttu-id="a8669-112">種類</span><span class="sxs-lookup"><span data-stu-id="a8669-112">Type</span></span>   | <span data-ttu-id="a8669-113">説明</span><span class="sxs-lookup"><span data-stu-id="a8669-113">Description</span></span> |
+| <span data-ttu-id="a504f-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a504f-111">Property</span></span> | <span data-ttu-id="a504f-112">型</span><span class="sxs-lookup"><span data-stu-id="a504f-112">Type</span></span>   | <span data-ttu-id="a504f-113">説明</span><span class="sxs-lookup"><span data-stu-id="a504f-113">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a8669-114">ID</span><span class="sxs-lookup"><span data-stu-id="a8669-114">id</span></span>|<span data-ttu-id="a8669-115">文字列</span><span class="sxs-lookup"><span data-stu-id="a8669-115">string</span></span> |<span data-ttu-id="a8669-116">操作の一意の id です。</span><span class="sxs-lookup"><span data-stu-id="a8669-116">Unique operation id.</span></span>|
-|<span data-ttu-id="a8669-117">入力</span><span class="sxs-lookup"><span data-stu-id="a8669-117">operationType</span></span>|[<span data-ttu-id="a8669-118">teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="a8669-118">teamsAsyncOperationType</span></span>](teamsasyncoperationtype.md) |<span data-ttu-id="a8669-119">説明している操作の種類を表します。</span><span class="sxs-lookup"><span data-stu-id="a8669-119">Denotes which type of operation is being described.</span></span>|
-|<span data-ttu-id="a8669-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a8669-120">createdDateTime</span></span>|<span data-ttu-id="a8669-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a8669-121">DateTimeOffset</span></span> |<span data-ttu-id="a8669-122">操作が作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="a8669-122">Time when the operation was created.</span></span>|
-|<span data-ttu-id="a8669-123">status</span><span class="sxs-lookup"><span data-stu-id="a8669-123">status</span></span>|[<span data-ttu-id="a8669-124">teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="a8669-124">teamsAsyncOperationStatus</span></span>](teamsasyncoperationstatus.md)| <span data-ttu-id="a8669-125">操作の状態です。</span><span class="sxs-lookup"><span data-stu-id="a8669-125">Operation status.</span></span>|
-|<span data-ttu-id="a8669-126">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="a8669-126">lastActionDateTime</span></span>|<span data-ttu-id="a8669-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a8669-127">DateTimeOffset</span></span> |<span data-ttu-id="a8669-128">非同期操作が最後に更新された時間です。</span><span class="sxs-lookup"><span data-stu-id="a8669-128">Time when the async operation was last updated.</span></span>|
-|<span data-ttu-id="a8669-129">attemptsCount</span><span class="sxs-lookup"><span data-stu-id="a8669-129">attemptsCount</span></span>|<span data-ttu-id="a8669-130">Int32</span><span class="sxs-lookup"><span data-stu-id="a8669-130">Int32</span></span>|<span data-ttu-id="a8669-131">成功または失敗にマークされる前に操作が試行された回数です。</span><span class="sxs-lookup"><span data-stu-id="a8669-131">Number of times the operation was attempted before being marked successful or failed.</span></span>|
-|<span data-ttu-id="a8669-132">targetResourceId</span><span class="sxs-lookup"><span data-stu-id="a8669-132">targetResourceId</span></span>|<span data-ttu-id="a8669-133">guid</span><span class="sxs-lookup"><span data-stu-id="a8669-133">guid</span></span> |<span data-ttu-id="a8669-134">作成または[チーム](../resources/team.md)では通常、この非同期操作を受けて変更されたオブジェクトの ID です。</span><span class="sxs-lookup"><span data-stu-id="a8669-134">The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).</span></span>|
-|<span data-ttu-id="a8669-135">targetResourceLocation</span><span class="sxs-lookup"><span data-stu-id="a8669-135">targetResourceLocation</span></span>|<span data-ttu-id="a8669-136">文字列</span><span class="sxs-lookup"><span data-stu-id="a8669-136">string</span></span>|<span data-ttu-id="a8669-137">作成または、この非同期操作を受けて変更されたオブジェクトの位置。</span><span class="sxs-lookup"><span data-stu-id="a8669-137">The location of the object that's created or modified as result of this async operation.</span></span> <span data-ttu-id="a8669-138">この URL は非透過値として扱われます、そのコンポーネントのパスには解析されませんする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8669-138">This URL should be treated as an opaque value and not parsed into its component paths.</span></span>|
-|<span data-ttu-id="a8669-139">エラー</span><span class="sxs-lookup"><span data-stu-id="a8669-139">error</span></span>|[<span data-ttu-id="a8669-140">operationError</span><span class="sxs-lookup"><span data-stu-id="a8669-140">operationError</span></span>](operationerror.md)|<span data-ttu-id="a8669-141">非同期操作が失敗の原因となるすべてのエラーです。</span><span class="sxs-lookup"><span data-stu-id="a8669-141">Any error that causes the async operation to fail.</span></span>|
+|<span data-ttu-id="a504f-114">ID</span><span class="sxs-lookup"><span data-stu-id="a504f-114">id</span></span>|<span data-ttu-id="a504f-115">string</span><span class="sxs-lookup"><span data-stu-id="a504f-115">string</span></span> |<span data-ttu-id="a504f-116">一意の操作 id。</span><span class="sxs-lookup"><span data-stu-id="a504f-116">Unique operation id.</span></span>|
+|<span data-ttu-id="a504f-117">operationType</span><span class="sxs-lookup"><span data-stu-id="a504f-117">operationType</span></span>|[<span data-ttu-id="a504f-118">teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="a504f-118">teamsAsyncOperationType</span></span>](teamsasyncoperationtype.md) |<span data-ttu-id="a504f-119">説明されている操作の種類を示します。</span><span class="sxs-lookup"><span data-stu-id="a504f-119">Denotes which type of operation is being described.</span></span>|
+|<span data-ttu-id="a504f-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a504f-120">createdDateTime</span></span>|<span data-ttu-id="a504f-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a504f-121">DateTimeOffset</span></span> |<span data-ttu-id="a504f-122">操作が作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="a504f-122">Time when the operation was created.</span></span>|
+|<span data-ttu-id="a504f-123">status</span><span class="sxs-lookup"><span data-stu-id="a504f-123">status</span></span>|[<span data-ttu-id="a504f-124">teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="a504f-124">teamsAsyncOperationStatus</span></span>](teamsasyncoperationstatus.md)| <span data-ttu-id="a504f-125">操作の状態。</span><span class="sxs-lookup"><span data-stu-id="a504f-125">Operation status.</span></span>|
+|<span data-ttu-id="a504f-126">lastactiondatetime</span><span class="sxs-lookup"><span data-stu-id="a504f-126">lastActionDateTime</span></span>|<span data-ttu-id="a504f-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a504f-127">DateTimeOffset</span></span> |<span data-ttu-id="a504f-128">async 操作が最後に更新された時刻。</span><span class="sxs-lookup"><span data-stu-id="a504f-128">Time when the async operation was last updated.</span></span>|
+|<span data-ttu-id="a504f-129">attemptsCount</span><span class="sxs-lookup"><span data-stu-id="a504f-129">attemptsCount</span></span>|<span data-ttu-id="a504f-130">Int32</span><span class="sxs-lookup"><span data-stu-id="a504f-130">Int32</span></span>|<span data-ttu-id="a504f-131">操作が成功したか失敗したかがマークされるまでの、操作が試行された回数。</span><span class="sxs-lookup"><span data-stu-id="a504f-131">Number of times the operation was attempted before being marked successful or failed.</span></span>|
+|<span data-ttu-id="a504f-132">targetresourceid</span><span class="sxs-lookup"><span data-stu-id="a504f-132">targetResourceId</span></span>|<span data-ttu-id="a504f-133">guid</span><span class="sxs-lookup"><span data-stu-id="a504f-133">guid</span></span> |<span data-ttu-id="a504f-134">この非同期操作の結果として作成または変更されるオブジェクトの ID (通常は[チーム](../resources/team.md))。</span><span class="sxs-lookup"><span data-stu-id="a504f-134">The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).</span></span>|
+|<span data-ttu-id="a504f-135">targetresourcelocation</span><span class="sxs-lookup"><span data-stu-id="a504f-135">targetResourceLocation</span></span>|<span data-ttu-id="a504f-136">string</span><span class="sxs-lookup"><span data-stu-id="a504f-136">string</span></span>|<span data-ttu-id="a504f-137">この非同期操作の結果として作成または変更されたオブジェクトの場所。</span><span class="sxs-lookup"><span data-stu-id="a504f-137">The location of the object that's created or modified as result of this async operation.</span></span> <span data-ttu-id="a504f-138">この URL は、不透明な値として扱われ、そのコンポーネントのパスに解析されることはありません。</span><span class="sxs-lookup"><span data-stu-id="a504f-138">This URL should be treated as an opaque value and not parsed into its component paths.</span></span>|
+|<span data-ttu-id="a504f-139">error</span><span class="sxs-lookup"><span data-stu-id="a504f-139">error</span></span>|[<span data-ttu-id="a504f-140">operationerror</span><span class="sxs-lookup"><span data-stu-id="a504f-140">operationError</span></span>](operationerror.md)|<span data-ttu-id="a504f-141">非同期操作が失敗する原因となるエラー。</span><span class="sxs-lookup"><span data-stu-id="a504f-141">Any error that causes the async operation to fail.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a8669-142">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a8669-142">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a504f-142">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a504f-142">JSON representation</span></span>
 
-<span data-ttu-id="a8669-143">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a8669-143">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a504f-143">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a504f-143">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,10 +60,15 @@ ms.locfileid: "27963438"
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

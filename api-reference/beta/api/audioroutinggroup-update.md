@@ -1,59 +1,59 @@
 ---
-title: オーディオのルーティング グループを更新します。
-description: ソースと、audioRoutingGroup の受信機を変更します。
+title: 音声ルーティング グループを更新する
+description: audioRoutingGroup のソースとレシーバーを変更します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524675"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461036"
 ---
-# <a name="update-audio-routing-group"></a><span data-ttu-id="f60ac-103">オーディオのルーティング グループを更新します。</span><span class="sxs-lookup"><span data-stu-id="f60ac-103">Update audio routing group</span></span>
+# <a name="update-audio-routing-group"></a><span data-ttu-id="c30a2-103">音声ルーティング グループを更新する</span><span class="sxs-lookup"><span data-stu-id="c30a2-103">Update audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f60ac-104">ソースと、 [audioRoutingGroup](../resources/audioroutinggroup.md)の受信機を変更します。</span><span class="sxs-lookup"><span data-stu-id="f60ac-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="c30a2-104">[audioRoutingGroup](../resources/audioroutinggroup.md)のソースとレシーバーを変更します。</span><span class="sxs-lookup"><span data-stu-id="c30a2-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f60ac-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f60ac-105">Permissions</span></span>
-<span data-ttu-id="f60ac-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f60ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c30a2-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c30a2-105">Permissions</span></span>
+<span data-ttu-id="c30a2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c30a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f60ac-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f60ac-108">Permission type</span></span> | <span data-ttu-id="f60ac-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f60ac-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="c30a2-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c30a2-108">Permission type</span></span> | <span data-ttu-id="c30a2-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c30a2-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="f60ac-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f60ac-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f60ac-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="f60ac-111">Not Supported</span></span>                       |
-| <span data-ttu-id="f60ac-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f60ac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f60ac-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="f60ac-113">Not Supported</span></span>                       |
-| <span data-ttu-id="f60ac-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f60ac-114">Application</span></span>     | <span data-ttu-id="f60ac-115">Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="f60ac-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="c30a2-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c30a2-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c30a2-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c30a2-111">Not Supported</span></span>                       |
+| <span data-ttu-id="c30a2-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c30a2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c30a2-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c30a2-113">Not Supported</span></span>                       |
+| <span data-ttu-id="c30a2-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c30a2-114">Application</span></span>     | <span data-ttu-id="c30a2-115">joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="c30a2-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f60ac-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f60ac-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c30a2-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c30a2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f60ac-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f60ac-117">Request headers</span></span>
-| <span data-ttu-id="f60ac-118">名前</span><span class="sxs-lookup"><span data-stu-id="f60ac-118">Name</span></span>          | <span data-ttu-id="f60ac-119">説明</span><span class="sxs-lookup"><span data-stu-id="f60ac-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c30a2-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c30a2-117">Request headers</span></span>
+| <span data-ttu-id="c30a2-118">名前</span><span class="sxs-lookup"><span data-stu-id="c30a2-118">Name</span></span>          | <span data-ttu-id="c30a2-119">説明</span><span class="sxs-lookup"><span data-stu-id="c30a2-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f60ac-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f60ac-120">Authorization</span></span> | <span data-ttu-id="f60ac-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f60ac-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c30a2-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c30a2-120">Authorization</span></span> | <span data-ttu-id="c30a2-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c30a2-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f60ac-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="f60ac-123">Request body</span></span>
-<span data-ttu-id="f60ac-124">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="f60ac-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="f60ac-125">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="f60ac-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="f60ac-126">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="f60ac-126">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c30a2-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="c30a2-123">Request body</span></span>
+<span data-ttu-id="c30a2-124">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="c30a2-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="c30a2-125">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="c30a2-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="c30a2-126">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="c30a2-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f60ac-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f60ac-127">Property</span></span>       | <span data-ttu-id="f60ac-128">型</span><span class="sxs-lookup"><span data-stu-id="f60ac-128">Type</span></span>    |<span data-ttu-id="f60ac-129">説明</span><span class="sxs-lookup"><span data-stu-id="f60ac-129">Description</span></span>|
+| <span data-ttu-id="c30a2-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c30a2-127">Property</span></span>       | <span data-ttu-id="c30a2-128">型</span><span class="sxs-lookup"><span data-stu-id="c30a2-128">Type</span></span>    |<span data-ttu-id="c30a2-129">説明</span><span class="sxs-lookup"><span data-stu-id="c30a2-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f60ac-130">受信機</span><span class="sxs-lookup"><span data-stu-id="f60ac-130">receivers</span></span> | <span data-ttu-id="f60ac-131">String コレクション</span><span class="sxs-lookup"><span data-stu-id="f60ac-131">String collection</span></span> | <span data-ttu-id="f60ac-132">ターゲットの参加者、audioRoutingGroup。</span><span class="sxs-lookup"><span data-stu-id="f60ac-132">The target participants in the audioRoutingGroup.</span></span> |
-| <span data-ttu-id="f60ac-133">routingMode</span><span class="sxs-lookup"><span data-stu-id="f60ac-133">routingMode</span></span> | <span data-ttu-id="f60ac-134">String</span><span class="sxs-lookup"><span data-stu-id="f60ac-134">String</span></span> | <span data-ttu-id="f60ac-135">使用可能な値は、`oneToOne`、`multicast` です。</span><span class="sxs-lookup"><span data-stu-id="f60ac-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
-| <span data-ttu-id="f60ac-136">ソース</span><span class="sxs-lookup"><span data-stu-id="f60ac-136">sources</span></span> | <span data-ttu-id="f60ac-137">String コレクション</span><span class="sxs-lookup"><span data-stu-id="f60ac-137">String collection</span></span> | <span data-ttu-id="f60ac-138">AudioRoutingGroup のソースの構成要素です。</span><span class="sxs-lookup"><span data-stu-id="f60ac-138">The source participant in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="c30a2-130">配信</span><span class="sxs-lookup"><span data-stu-id="c30a2-130">receivers</span></span> | <span data-ttu-id="c30a2-131">String collection</span><span class="sxs-lookup"><span data-stu-id="c30a2-131">String collection</span></span> | <span data-ttu-id="c30a2-132">audioRoutingGroup の対象となる参加者。</span><span class="sxs-lookup"><span data-stu-id="c30a2-132">The target participants in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="c30a2-133">routingmode</span><span class="sxs-lookup"><span data-stu-id="c30a2-133">routingMode</span></span> | <span data-ttu-id="c30a2-134">String</span><span class="sxs-lookup"><span data-stu-id="c30a2-134">String</span></span> | <span data-ttu-id="c30a2-135">使用可能な値は、`oneToOne`、`multicast` です。</span><span class="sxs-lookup"><span data-stu-id="c30a2-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
+| <span data-ttu-id="c30a2-136">sources</span><span class="sxs-lookup"><span data-stu-id="c30a2-136">sources</span></span> | <span data-ttu-id="c30a2-137">String collection</span><span class="sxs-lookup"><span data-stu-id="c30a2-137">String collection</span></span> | <span data-ttu-id="c30a2-138">audioRoutingGroup のソース参加者。</span><span class="sxs-lookup"><span data-stu-id="c30a2-138">The source participant in the audioRoutingGroup.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f60ac-139">応答</span><span class="sxs-lookup"><span data-stu-id="f60ac-139">Response</span></span>
-<span data-ttu-id="f60ac-140">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f60ac-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c30a2-139">応答</span><span class="sxs-lookup"><span data-stu-id="c30a2-139">Response</span></span>
+<span data-ttu-id="c30a2-140">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c30a2-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f60ac-141">例</span><span class="sxs-lookup"><span data-stu-id="f60ac-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c30a2-141">例</span><span class="sxs-lookup"><span data-stu-id="c30a2-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f60ac-142">要求</span><span class="sxs-lookup"><span data-stu-id="f60ac-142">Request</span></span>
-<span data-ttu-id="f60ac-143">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="f60ac-143">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c30a2-142">要求</span><span class="sxs-lookup"><span data-stu-id="c30a2-142">Request</span></span>
+<span data-ttu-id="c30a2-143">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="c30a2-143">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -76,9 +76,9 @@ Content-Length: 233
   ]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="f60ac-144">応答</span><span class="sxs-lookup"><span data-stu-id="f60ac-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c30a2-144">応答</span><span class="sxs-lookup"><span data-stu-id="c30a2-144">Response</span></span>
 
-> <span data-ttu-id="f60ac-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f60ac-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c30a2-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c30a2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

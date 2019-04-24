@@ -1,32 +1,32 @@
 ---
-title: '電話: playPrompt'
-description: 呼び出しではプロンプトを再生します。
+title: '呼び出し: playprompt'
+description: 呼び出しでプロンプトを再生します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461235"
 ---
-# <a name="call-playprompt"></a><span data-ttu-id="15934-103">電話: playPrompt</span><span class="sxs-lookup"><span data-stu-id="15934-103">call: playPrompt</span></span>
+# <a name="call-playprompt"></a><span data-ttu-id="c2872-103">呼び出し: playprompt</span><span class="sxs-lookup"><span data-stu-id="c2872-103">call: playPrompt</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15934-104">呼び出しではプロンプトを再生します。</span><span class="sxs-lookup"><span data-stu-id="15934-104">Play a prompt in the call.</span></span>
+<span data-ttu-id="c2872-104">呼び出しでプロンプトを再生します。</span><span class="sxs-lookup"><span data-stu-id="c2872-104">Play a prompt in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="15934-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="15934-105">Permissions</span></span>
-<span data-ttu-id="15934-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15934-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c2872-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c2872-105">Permissions</span></span>
+<span data-ttu-id="c2872-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c2872-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="15934-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="15934-108">Permission type</span></span>                        | <span data-ttu-id="15934-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="15934-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c2872-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c2872-108">Permission type</span></span>                        | <span data-ttu-id="c2872-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c2872-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="15934-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="15934-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="15934-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="15934-111">Not Supported.</span></span>                               |
-| <span data-ttu-id="15934-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="15934-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15934-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="15934-113">Not Supported.</span></span>                               |
-| <span data-ttu-id="15934-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="15934-114">Application</span></span>                            | <span data-ttu-id="15934-115">なし。</span><span class="sxs-lookup"><span data-stu-id="15934-115">None.</span></span>                                        |
+| <span data-ttu-id="c2872-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c2872-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c2872-111">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="c2872-111">Not Supported.</span></span>                               |
+| <span data-ttu-id="c2872-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c2872-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2872-113">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="c2872-113">Not Supported.</span></span>                               |
+| <span data-ttu-id="c2872-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c2872-114">Application</span></span>                            | <span data-ttu-id="c2872-115">なし。</span><span class="sxs-lookup"><span data-stu-id="c2872-115">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="15934-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="15934-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2872-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c2872-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,27 +34,27 @@ POST /app/calls/{id}/playPrompt
 POST /applications/{id}/calls/{id}/playPrompt
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="15934-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15934-117">Request headers</span></span>
-| <span data-ttu-id="15934-118">名前</span><span class="sxs-lookup"><span data-stu-id="15934-118">Name</span></span>          | <span data-ttu-id="15934-119">説明</span><span class="sxs-lookup"><span data-stu-id="15934-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c2872-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c2872-117">Request headers</span></span>
+| <span data-ttu-id="c2872-118">名前</span><span class="sxs-lookup"><span data-stu-id="c2872-118">Name</span></span>          | <span data-ttu-id="c2872-119">説明</span><span class="sxs-lookup"><span data-stu-id="c2872-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="15934-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="15934-120">Authorization</span></span> | <span data-ttu-id="15934-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="15934-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c2872-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2872-120">Authorization</span></span> | <span data-ttu-id="c2872-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c2872-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="15934-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="15934-123">Request body</span></span>
-<span data-ttu-id="15934-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="15934-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c2872-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="c2872-123">Request body</span></span>
+<span data-ttu-id="c2872-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="c2872-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="15934-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="15934-125">Parameter</span></span>      | <span data-ttu-id="15934-126">型</span><span class="sxs-lookup"><span data-stu-id="15934-126">Type</span></span>    |<span data-ttu-id="15934-127">説明</span><span class="sxs-lookup"><span data-stu-id="15934-127">Description</span></span>|
+| <span data-ttu-id="c2872-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c2872-125">Parameter</span></span>      | <span data-ttu-id="c2872-126">型</span><span class="sxs-lookup"><span data-stu-id="c2872-126">Type</span></span>    |<span data-ttu-id="c2872-127">説明</span><span class="sxs-lookup"><span data-stu-id="c2872-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="15934-128">メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="15934-128">prompts</span></span>|<span data-ttu-id="15934-129">[プロンプト](../resources/prompt.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="15934-129">[prompt](../resources/prompt.md) collection</span></span>||
-|<span data-ttu-id="15934-130">ClientContext</span><span class="sxs-lookup"><span data-stu-id="15934-130">clientContext</span></span>|<span data-ttu-id="15934-131">String</span><span class="sxs-lookup"><span data-stu-id="15934-131">String</span></span>|<span data-ttu-id="15934-132">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="15934-132">The client context.</span></span>|
+|<span data-ttu-id="c2872-128">促し</span><span class="sxs-lookup"><span data-stu-id="c2872-128">prompts</span></span>|<span data-ttu-id="c2872-129">[prompt](../resources/prompt.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="c2872-129">[prompt](../resources/prompt.md) collection</span></span>||
+|<span data-ttu-id="c2872-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="c2872-130">clientContext</span></span>|<span data-ttu-id="c2872-131">String</span><span class="sxs-lookup"><span data-stu-id="c2872-131">String</span></span>|<span data-ttu-id="c2872-132">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="c2872-132">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="15934-133">応答</span><span class="sxs-lookup"><span data-stu-id="15934-133">Response</span></span>
-<span data-ttu-id="15934-134">かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[playPromptOperation](../resources/playPromptOperation.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="15934-134">If successful, this method returns `200 OK` response code and [playPromptOperation](../resources/playPromptOperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c2872-133">応答</span><span class="sxs-lookup"><span data-stu-id="c2872-133">Response</span></span>
+<span data-ttu-id="c2872-134">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[playPromptOperation](../resources/playPromptOperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c2872-134">If successful, this method returns `200 OK` response code and [playPromptOperation](../resources/playPromptOperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="15934-135">例</span><span class="sxs-lookup"><span data-stu-id="15934-135">Example</span></span>
-<span data-ttu-id="15934-136">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="15934-136">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="c2872-135">例</span><span class="sxs-lookup"><span data-stu-id="c2872-135">Example</span></span>
+<span data-ttu-id="c2872-136">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2872-136">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="15934-137">要求</span><span class="sxs-lookup"><span data-stu-id="15934-137">Request</span></span>
-<span data-ttu-id="15934-138">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="15934-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c2872-137">要求</span><span class="sxs-lookup"><span data-stu-id="c2872-137">Request</span></span>
+<span data-ttu-id="c2872-138">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2872-138">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -80,9 +80,9 @@ Content-Length: 166
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="15934-139">応答</span><span class="sxs-lookup"><span data-stu-id="15934-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c2872-139">応答</span><span class="sxs-lookup"><span data-stu-id="c2872-139">Response</span></span>
 
-> <span data-ttu-id="15934-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="15934-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c2872-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c2872-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="15934-142">通知の操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="15934-142">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="c2872-142">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="c2872-142">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

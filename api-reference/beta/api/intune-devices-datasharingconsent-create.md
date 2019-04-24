@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8a242d5c8058af72ba7c78cf3a613534db887c97
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466036"
 ---
-# <a name="create-datasharingconsent"></a><span data-ttu-id="1145e-103">dataSharingConsent を作成する</span><span class="sxs-lookup"><span data-stu-id="1145e-103">Create dataSharingConsent</span></span>
+# <a name="create-datasharingconsent"></a><span data-ttu-id="22f37-103">dataSharingConsent を作成する</span><span class="sxs-lookup"><span data-stu-id="22f37-103">Create dataSharingConsent</span></span>
 
-> <span data-ttu-id="1145e-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1145e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="22f37-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="22f37-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1145e-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1145e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="22f37-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="22f37-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1145e-106">新しい[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="1145e-106">Create a new [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
+<span data-ttu-id="22f37-106">新しい[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="22f37-106">Create a new [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1145e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="1145e-107">Prerequisites</span></span>
-<span data-ttu-id="1145e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1145e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="22f37-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="22f37-107">Prerequisites</span></span>
+<span data-ttu-id="22f37-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="22f37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1145e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1145e-110">Permission type</span></span>|<span data-ttu-id="1145e-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1145e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="22f37-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="22f37-110">Permission type</span></span>|<span data-ttu-id="22f37-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="22f37-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1145e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1145e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1145e-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1145e-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="1145e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1145e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1145e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1145e-115">Not supported.</span></span>|
-|<span data-ttu-id="1145e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1145e-116">Application</span></span>|<span data-ttu-id="1145e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1145e-117">Not supported.</span></span>|
+|<span data-ttu-id="22f37-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="22f37-112">Delegated (work or school account)</span></span>|<span data-ttu-id="22f37-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22f37-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="22f37-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="22f37-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22f37-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="22f37-115">Not supported.</span></span>|
+|<span data-ttu-id="22f37-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="22f37-116">Application</span></span>|<span data-ttu-id="22f37-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="22f37-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1145e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1145e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22f37-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="22f37-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,36 @@ ms.locfileid: "31774303"
 POST /deviceManagement/dataSharingConsents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1145e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1145e-119">Request headers</span></span>
-|<span data-ttu-id="1145e-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1145e-120">Header</span></span>|<span data-ttu-id="1145e-121">値</span><span class="sxs-lookup"><span data-stu-id="1145e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="22f37-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="22f37-119">Request headers</span></span>
+|<span data-ttu-id="22f37-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="22f37-120">Header</span></span>|<span data-ttu-id="22f37-121">値</span><span class="sxs-lookup"><span data-stu-id="22f37-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1145e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1145e-122">Authorization</span></span>|<span data-ttu-id="1145e-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="1145e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1145e-124">承諾</span><span class="sxs-lookup"><span data-stu-id="1145e-124">Accept</span></span>|<span data-ttu-id="1145e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1145e-125">application/json</span></span>|
+|<span data-ttu-id="22f37-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="22f37-122">Authorization</span></span>|<span data-ttu-id="22f37-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="22f37-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="22f37-124">承諾</span><span class="sxs-lookup"><span data-stu-id="22f37-124">Accept</span></span>|<span data-ttu-id="22f37-125">application/json</span><span class="sxs-lookup"><span data-stu-id="22f37-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1145e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="1145e-126">Request body</span></span>
-<span data-ttu-id="1145e-127">要求本文で、dataSharingConsent オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1145e-127">In the request body, supply a JSON representation for the dataSharingConsent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="22f37-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="22f37-126">Request body</span></span>
+<span data-ttu-id="22f37-127">要求本文で、dataSharingConsent オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="22f37-127">In the request body, supply a JSON representation for the dataSharingConsent object.</span></span>
 
-<span data-ttu-id="1145e-128">次の表に、dataSharingConsent の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="1145e-128">The following table shows the properties that are required when you create the dataSharingConsent.</span></span>
+<span data-ttu-id="22f37-128">次の表に、dataSharingConsent の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="22f37-128">The following table shows the properties that are required when you create the dataSharingConsent.</span></span>
 
-|<span data-ttu-id="1145e-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1145e-129">Property</span></span>|<span data-ttu-id="1145e-130">型</span><span class="sxs-lookup"><span data-stu-id="1145e-130">Type</span></span>|<span data-ttu-id="1145e-131">説明</span><span class="sxs-lookup"><span data-stu-id="1145e-131">Description</span></span>|
+|<span data-ttu-id="22f37-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="22f37-129">Property</span></span>|<span data-ttu-id="22f37-130">型</span><span class="sxs-lookup"><span data-stu-id="22f37-130">Type</span></span>|<span data-ttu-id="22f37-131">説明</span><span class="sxs-lookup"><span data-stu-id="22f37-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1145e-132">id</span><span class="sxs-lookup"><span data-stu-id="1145e-132">id</span></span>|<span data-ttu-id="1145e-133">String</span><span class="sxs-lookup"><span data-stu-id="1145e-133">String</span></span>|<span data-ttu-id="1145e-134">データ共有の同意 Id</span><span class="sxs-lookup"><span data-stu-id="1145e-134">The data sharing consent Id</span></span>|
-|<span data-ttu-id="1145e-135">servicedisplayname</span><span class="sxs-lookup"><span data-stu-id="1145e-135">serviceDisplayName</span></span>|<span data-ttu-id="1145e-136">文字列</span><span class="sxs-lookup"><span data-stu-id="1145e-136">String</span></span>|<span data-ttu-id="1145e-137">サービスワークフローの表示名</span><span class="sxs-lookup"><span data-stu-id="1145e-137">The display name of the service work flow</span></span>|
-|<span data-ttu-id="1145e-138">termsUrl</span><span class="sxs-lookup"><span data-stu-id="1145e-138">termsUrl</span></span>|<span data-ttu-id="1145e-139">文字列</span><span class="sxs-lookup"><span data-stu-id="1145e-139">String</span></span>|<span data-ttu-id="1145e-140">データ共有の同意の TermsUrl</span><span class="sxs-lookup"><span data-stu-id="1145e-140">The TermsUrl for the data sharing consent</span></span>|
-|<span data-ttu-id="1145e-141">granted</span><span class="sxs-lookup"><span data-stu-id="1145e-141">granted</span></span>|<span data-ttu-id="1145e-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="1145e-142">Boolean</span></span>|<span data-ttu-id="1145e-143">データ共有の同意の付与された状態</span><span class="sxs-lookup"><span data-stu-id="1145e-143">The granted state for the data sharing consent</span></span>|
-|<span data-ttu-id="1145e-144">grantDateTime</span><span class="sxs-lookup"><span data-stu-id="1145e-144">grantDateTime</span></span>|<span data-ttu-id="1145e-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1145e-145">DateTimeOffset</span></span>|<span data-ttu-id="1145e-146">このアカウントに対して同意が与えられた時間</span><span class="sxs-lookup"><span data-stu-id="1145e-146">The time consent was granted for this account</span></span>|
-|<span data-ttu-id="1145e-147">grantedByUpn</span><span class="sxs-lookup"><span data-stu-id="1145e-147">grantedByUpn</span></span>|<span data-ttu-id="1145e-148">文字列</span><span class="sxs-lookup"><span data-stu-id="1145e-148">String</span></span>|<span data-ttu-id="1145e-149">このアカウントに同意を付与したユーザーの Upn</span><span class="sxs-lookup"><span data-stu-id="1145e-149">The Upn of the user that granted consent for this account</span></span>|
-|<span data-ttu-id="1145e-150">grantedByUserId</span><span class="sxs-lookup"><span data-stu-id="1145e-150">grantedByUserId</span></span>|<span data-ttu-id="1145e-151">文字列</span><span class="sxs-lookup"><span data-stu-id="1145e-151">String</span></span>|<span data-ttu-id="1145e-152">このアカウントに同意を付与したユーザーの UserId</span><span class="sxs-lookup"><span data-stu-id="1145e-152">The UserId of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="22f37-132">id</span><span class="sxs-lookup"><span data-stu-id="22f37-132">id</span></span>|<span data-ttu-id="22f37-133">String</span><span class="sxs-lookup"><span data-stu-id="22f37-133">String</span></span>|<span data-ttu-id="22f37-134">データ共有の同意 Id</span><span class="sxs-lookup"><span data-stu-id="22f37-134">The data sharing consent Id</span></span>|
+|<span data-ttu-id="22f37-135">servicedisplayname</span><span class="sxs-lookup"><span data-stu-id="22f37-135">serviceDisplayName</span></span>|<span data-ttu-id="22f37-136">String</span><span class="sxs-lookup"><span data-stu-id="22f37-136">String</span></span>|<span data-ttu-id="22f37-137">サービスワークフローの表示名</span><span class="sxs-lookup"><span data-stu-id="22f37-137">The display name of the service work flow</span></span>|
+|<span data-ttu-id="22f37-138">termsUrl</span><span class="sxs-lookup"><span data-stu-id="22f37-138">termsUrl</span></span>|<span data-ttu-id="22f37-139">String</span><span class="sxs-lookup"><span data-stu-id="22f37-139">String</span></span>|<span data-ttu-id="22f37-140">データ共有の同意の TermsUrl</span><span class="sxs-lookup"><span data-stu-id="22f37-140">The TermsUrl for the data sharing consent</span></span>|
+|<span data-ttu-id="22f37-141">granted</span><span class="sxs-lookup"><span data-stu-id="22f37-141">granted</span></span>|<span data-ttu-id="22f37-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="22f37-142">Boolean</span></span>|<span data-ttu-id="22f37-143">データ共有の同意の付与された状態</span><span class="sxs-lookup"><span data-stu-id="22f37-143">The granted state for the data sharing consent</span></span>|
+|<span data-ttu-id="22f37-144">grantDateTime</span><span class="sxs-lookup"><span data-stu-id="22f37-144">grantDateTime</span></span>|<span data-ttu-id="22f37-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="22f37-145">DateTimeOffset</span></span>|<span data-ttu-id="22f37-146">このアカウントに対して同意が与えられた時間</span><span class="sxs-lookup"><span data-stu-id="22f37-146">The time consent was granted for this account</span></span>|
+|<span data-ttu-id="22f37-147">grantedByUpn</span><span class="sxs-lookup"><span data-stu-id="22f37-147">grantedByUpn</span></span>|<span data-ttu-id="22f37-148">String</span><span class="sxs-lookup"><span data-stu-id="22f37-148">String</span></span>|<span data-ttu-id="22f37-149">このアカウントに同意を付与したユーザーの Upn</span><span class="sxs-lookup"><span data-stu-id="22f37-149">The Upn of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="22f37-150">grantedByUserId</span><span class="sxs-lookup"><span data-stu-id="22f37-150">grantedByUserId</span></span>|<span data-ttu-id="22f37-151">String</span><span class="sxs-lookup"><span data-stu-id="22f37-151">String</span></span>|<span data-ttu-id="22f37-152">このアカウントに同意を付与したユーザーの UserId</span><span class="sxs-lookup"><span data-stu-id="22f37-152">The UserId of the user that granted consent for this account</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1145e-153">応答</span><span class="sxs-lookup"><span data-stu-id="1145e-153">Response</span></span>
-<span data-ttu-id="1145e-154">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1145e-154">If successful, this method returns a `201 Created` response code and a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="22f37-153">応答</span><span class="sxs-lookup"><span data-stu-id="22f37-153">Response</span></span>
+<span data-ttu-id="22f37-154">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="22f37-154">If successful, this method returns a `201 Created` response code and a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1145e-155">例</span><span class="sxs-lookup"><span data-stu-id="1145e-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="22f37-155">例</span><span class="sxs-lookup"><span data-stu-id="22f37-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1145e-156">要求</span><span class="sxs-lookup"><span data-stu-id="1145e-156">Request</span></span>
-<span data-ttu-id="1145e-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1145e-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="22f37-156">要求</span><span class="sxs-lookup"><span data-stu-id="22f37-156">Request</span></span>
+<span data-ttu-id="22f37-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="22f37-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 333
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1145e-158">応答</span><span class="sxs-lookup"><span data-stu-id="1145e-158">Response</span></span>
-<span data-ttu-id="1145e-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1145e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="22f37-158">応答</span><span class="sxs-lookup"><span data-stu-id="22f37-158">Response</span></span>
+<span data-ttu-id="22f37-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="22f37-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

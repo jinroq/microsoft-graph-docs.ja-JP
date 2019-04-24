@@ -1,52 +1,52 @@
 ---
-title: リストの割り当て
-description: クラスのすべてのユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティの名前空間は、呼び出し元が各クラスからの割り当てを要求することのではなく、1 回の呼び出しで、学生のすべての割り当てを検索できます。 クラスの名前空間内での割り当ての詳細な情報を取得するために必要な割り当ての一覧が含まれます。 割り当ての他のすべての操作は、クラスの名前空間を使用してください。
+title: 割り当てを一覧表示する
+description: すべてのクラスについて、ユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティ名前空間を使用すると、発信者は各クラスの割り当てを要求するのではなく、1回の呼び出しですべての学生の割り当てを検索できます。 割り当てリストには、クラス名前空間内の割り当ての詳細情報を取得するために必要な情報が含まれています。 割り当てに対する他のすべての操作では、クラスの名前空間を使用する必要があります。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e2e11eb94c07fc523d6d64143ffc3df401fd9906
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457412"
 ---
-# <a name="list-assignments"></a><span data-ttu-id="4528b-106">リストの割り当て</span><span class="sxs-lookup"><span data-stu-id="4528b-106">List assignments</span></span>
+# <a name="list-assignments"></a><span data-ttu-id="84311-106">割り当てを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="84311-106">List assignments</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4528b-107">クラスのすべてのユーザーに割り当てられている割り当ての一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="4528b-107">Returns a list of assignments assigned to a user for all classes.</span></span> <span data-ttu-id="4528b-108">このユーティリティの名前空間は、呼び出し元が各クラスからの割り当てを要求することのではなく、1 回の呼び出しで、学生のすべての割り当てを検索できます。</span><span class="sxs-lookup"><span data-stu-id="4528b-108">This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class.</span></span> <span data-ttu-id="4528b-109">クラスの名前空間内での割り当ての詳細な情報を取得するために必要な割り当ての一覧が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4528b-109">The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace.</span></span> <span data-ttu-id="4528b-110">割り当ての他のすべての操作は、クラスの名前空間を使用してください。</span><span class="sxs-lookup"><span data-stu-id="4528b-110">All other operations on the assignment should use the class namespace.</span></span>
+<span data-ttu-id="84311-107">すべてのクラスについて、ユーザーに割り当てられている割り当ての一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="84311-107">Returns a list of assignments assigned to a user for all classes.</span></span> <span data-ttu-id="84311-108">このユーティリティ名前空間を使用すると、発信者は各クラスの割り当てを要求するのではなく、1回の呼び出しですべての学生の割り当てを検索できます。</span><span class="sxs-lookup"><span data-stu-id="84311-108">This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class.</span></span> <span data-ttu-id="84311-109">割り当てリストには、クラス名前空間内の割り当ての詳細情報を取得するために必要な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="84311-109">The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace.</span></span> <span data-ttu-id="84311-110">割り当てに対する他のすべての操作では、クラスの名前空間を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="84311-110">All other operations on the assignment should use the class namespace.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4528b-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4528b-111">Permissions</span></span>
-<span data-ttu-id="4528b-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4528b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="84311-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="84311-111">Permissions</span></span>
+<span data-ttu-id="84311-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="84311-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4528b-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4528b-114">Permission type</span></span>      | <span data-ttu-id="4528b-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4528b-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="84311-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="84311-114">Permission type</span></span>      | <span data-ttu-id="84311-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="84311-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4528b-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4528b-116">Delegated (work or school account)</span></span> | <span data-ttu-id="4528b-117">EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4528b-117">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="4528b-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4528b-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4528b-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4528b-119">Not supported.</span></span>   |
-|<span data-ttu-id="4528b-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4528b-120">Application</span></span> | <span data-ttu-id="4528b-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4528b-121">Not supported.</span></span> | 
+|<span data-ttu-id="84311-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="84311-116">Delegated (work or school account)</span></span> | <span data-ttu-id="84311-117">EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本</span><span class="sxs-lookup"><span data-stu-id="84311-117">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="84311-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="84311-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="84311-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="84311-119">Not supported.</span></span>   |
+|<span data-ttu-id="84311-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="84311-120">Application</span></span> | <span data-ttu-id="84311-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="84311-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="4528b-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4528b-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="84311-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="84311-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4528b-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4528b-123">Optional query parameters</span></span>
-<span data-ttu-id="4528b-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4528b-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="84311-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="84311-123">Optional query parameters</span></span>
+<span data-ttu-id="84311-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="84311-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4528b-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4528b-125">Request headers</span></span>
-| <span data-ttu-id="4528b-126">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4528b-126">Header</span></span>       | <span data-ttu-id="4528b-127">値</span><span class="sxs-lookup"><span data-stu-id="4528b-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="84311-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="84311-125">Request headers</span></span>
+| <span data-ttu-id="84311-126">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="84311-126">Header</span></span>       | <span data-ttu-id="84311-127">値</span><span class="sxs-lookup"><span data-stu-id="84311-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4528b-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="4528b-128">Authorization</span></span>  | <span data-ttu-id="4528b-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4528b-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="84311-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="84311-128">Authorization</span></span>  | <span data-ttu-id="84311-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="84311-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4528b-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="4528b-131">Request body</span></span>
-<span data-ttu-id="4528b-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4528b-132">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="4528b-133">応答</span><span class="sxs-lookup"><span data-stu-id="4528b-133">Response</span></span>
-<span data-ttu-id="4528b-134">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="4528b-134">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4528b-135">例</span><span class="sxs-lookup"><span data-stu-id="4528b-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4528b-136">要求</span><span class="sxs-lookup"><span data-stu-id="4528b-136">Request</span></span>
-<span data-ttu-id="4528b-137">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4528b-137">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="84311-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="84311-131">Request body</span></span>
+<span data-ttu-id="84311-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="84311-132">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="84311-133">応答</span><span class="sxs-lookup"><span data-stu-id="84311-133">Response</span></span>
+<span data-ttu-id="84311-134">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="84311-134">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="84311-135">例</span><span class="sxs-lookup"><span data-stu-id="84311-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="84311-136">要求</span><span class="sxs-lookup"><span data-stu-id="84311-136">Request</span></span>
+<span data-ttu-id="84311-137">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="84311-137">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
@@ -54,10 +54,10 @@ GET /education/users/{id}/assignments
 ```http 
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
-##### <a name="response"></a><span data-ttu-id="4528b-138">応答</span><span class="sxs-lookup"><span data-stu-id="4528b-138">Response</span></span>
-<span data-ttu-id="4528b-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4528b-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="84311-138">応答</span><span class="sxs-lookup"><span data-stu-id="84311-138">Response</span></span>
+<span data-ttu-id="84311-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="84311-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="4528b-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="4528b-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="84311-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="84311-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",

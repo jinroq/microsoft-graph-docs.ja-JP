@@ -1,29 +1,29 @@
 ---
 title: onPremisesProvisioningError リソースの種類
-description: Azure Active Directory への設置型のディレクトリを同期するときは、ユーザーとグループのエンティティのディレクトリ同期のエラーを表します。
+description: オンプレミスのディレクトリを Azure Active directory と同期するときに、ユーザーエンティティおよびグループエンティティのディレクトリ同期エラーを表します。
 localization_priority: Normal
 ms.openlocfilehash: c8989a78dfb60a6c7c25a66a9f1e619dcbdca15d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462684"
 ---
-# <a name="onpremisesprovisioningerror-resource-type"></a><span data-ttu-id="84b31-103">onPremisesProvisioningError リソースの種類</span><span class="sxs-lookup"><span data-stu-id="84b31-103">onPremisesProvisioningError resource type</span></span>
+# <a name="onpremisesprovisioningerror-resource-type"></a><span data-ttu-id="05ba7-103">onPremisesProvisioningError リソースの種類</span><span class="sxs-lookup"><span data-stu-id="05ba7-103">onPremisesProvisioningError resource type</span></span>
 
-<span data-ttu-id="84b31-104">同期、オンプレミス Azure Active Directory へのディレクトリは、[ユーザー](user.md)と[グループ](group.md)のエンティティのディレクトリ同期のエラーを表します。</span><span class="sxs-lookup"><span data-stu-id="84b31-104">Represents directory synchronization errors for the [user](user.md) and [group](group.md) entities when synchronizing on-premises directories to Azure Active Directory.</span></span>
+<span data-ttu-id="05ba7-104">オンプレミスのディレクトリを Azure Active directory と同期するときに、[ユーザー](user.md)エンティティおよび[グループ](group.md)エンティティのディレクトリ同期エラーを表します。</span><span class="sxs-lookup"><span data-stu-id="05ba7-104">Represents directory synchronization errors for the [user](user.md) and [group](group.md) entities when synchronizing on-premises directories to Azure Active Directory.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="84b31-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="84b31-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="05ba7-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="05ba7-105">Properties</span></span>
 
-| <span data-ttu-id="84b31-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="84b31-106">Property</span></span> | <span data-ttu-id="84b31-107">種類</span><span class="sxs-lookup"><span data-stu-id="84b31-107">Type</span></span> | <span data-ttu-id="84b31-108">説明</span><span class="sxs-lookup"><span data-stu-id="84b31-108">Description</span></span> |
+| <span data-ttu-id="05ba7-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="05ba7-106">Property</span></span> | <span data-ttu-id="05ba7-107">型</span><span class="sxs-lookup"><span data-stu-id="05ba7-107">Type</span></span> | <span data-ttu-id="05ba7-108">説明</span><span class="sxs-lookup"><span data-stu-id="05ba7-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="84b31-109">category</span><span class="sxs-lookup"><span data-stu-id="84b31-109">category</span></span>|<span data-ttu-id="84b31-110">String</span><span class="sxs-lookup"><span data-stu-id="84b31-110">String</span></span>| <span data-ttu-id="84b31-111">プロビジョニングのエラーのカテゴリです。</span><span class="sxs-lookup"><span data-stu-id="84b31-111">Category of the provisioning error.</span></span> <span data-ttu-id="84b31-112">注意: 現時点が 1 つだけ使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="84b31-112">Note: Currently, there is only one possible value.</span></span> <span data-ttu-id="84b31-113">使用可能な値: *PropertyConflict* - は、プロパティの値が一意でないことを示します。</span><span class="sxs-lookup"><span data-stu-id="84b31-113">Possible value: *PropertyConflict* - indicates a property value is not unique.</span></span> <span data-ttu-id="84b31-114">その他のオブジェクトには、プロパティに対して同じ値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="84b31-114">Other objects contain the same value for the property.</span></span> |
-|<span data-ttu-id="84b31-115">occurredDateTime</span><span class="sxs-lookup"><span data-stu-id="84b31-115">occurredDateTime</span></span>|<span data-ttu-id="84b31-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="84b31-116">DateTimeOffset</span></span>| <span data-ttu-id="84b31-117">日付と時刻、エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="84b31-117">The date and time at which the error occurred.</span></span> |
-|<span data-ttu-id="84b31-118">propertyCausingError</span><span class="sxs-lookup"><span data-stu-id="84b31-118">propertyCausingError</span></span>|<span data-ttu-id="84b31-119">String</span><span class="sxs-lookup"><span data-stu-id="84b31-119">String</span></span>| <span data-ttu-id="84b31-120">エラーの原因でディレクトリのプロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="84b31-120">Name of the directory property causing the error.</span></span> <span data-ttu-id="84b31-121">現在使用可能な値: *UserPrincipalName*または*メタベース*</span><span class="sxs-lookup"><span data-stu-id="84b31-121">Current possible values: *UserPrincipalName* or *ProxyAddress*</span></span> |
-|<span data-ttu-id="84b31-122">value</span><span class="sxs-lookup"><span data-stu-id="84b31-122">value</span></span>|<span data-ttu-id="84b31-123">文字列</span><span class="sxs-lookup"><span data-stu-id="84b31-123">String</span></span>| <span data-ttu-id="84b31-124">エラーの原因で、プロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="84b31-124">Value of the property causing the error.</span></span> |
+|<span data-ttu-id="05ba7-109">category</span><span class="sxs-lookup"><span data-stu-id="05ba7-109">category</span></span>|<span data-ttu-id="05ba7-110">String</span><span class="sxs-lookup"><span data-stu-id="05ba7-110">String</span></span>| <span data-ttu-id="05ba7-111">プロビジョニングエラーのカテゴリ。</span><span class="sxs-lookup"><span data-stu-id="05ba7-111">Category of the provisioning error.</span></span> <span data-ttu-id="05ba7-112">注: 現時点では、可能な値は1つだけです。</span><span class="sxs-lookup"><span data-stu-id="05ba7-112">Note: Currently, there is only one possible value.</span></span> <span data-ttu-id="05ba7-113">可能な値: *propertyconflict* -プロパティ値が一意ではないことを示します。</span><span class="sxs-lookup"><span data-stu-id="05ba7-113">Possible value: *PropertyConflict* - indicates a property value is not unique.</span></span> <span data-ttu-id="05ba7-114">その他のオブジェクトには、プロパティと同じ値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="05ba7-114">Other objects contain the same value for the property.</span></span> |
+|<span data-ttu-id="05ba7-115">occurredDateTime</span><span class="sxs-lookup"><span data-stu-id="05ba7-115">occurredDateTime</span></span>|<span data-ttu-id="05ba7-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="05ba7-116">DateTimeOffset</span></span>| <span data-ttu-id="05ba7-117">エラーが発生した日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="05ba7-117">The date and time at which the error occurred.</span></span> |
+|<span data-ttu-id="05ba7-118">propertycain error</span><span class="sxs-lookup"><span data-stu-id="05ba7-118">propertyCausingError</span></span>|<span data-ttu-id="05ba7-119">String</span><span class="sxs-lookup"><span data-stu-id="05ba7-119">String</span></span>| <span data-ttu-id="05ba7-120">エラーを引き起こしたディレクトリプロパティの名前。</span><span class="sxs-lookup"><span data-stu-id="05ba7-120">Name of the directory property causing the error.</span></span> <span data-ttu-id="05ba7-121">現在使用可能な値: *UserPrincipalName*または*ProxyAddress*</span><span class="sxs-lookup"><span data-stu-id="05ba7-121">Current possible values: *UserPrincipalName* or *ProxyAddress*</span></span> |
+|<span data-ttu-id="05ba7-122">value</span><span class="sxs-lookup"><span data-stu-id="05ba7-122">value</span></span>|<span data-ttu-id="05ba7-123">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="05ba7-123">String</span></span>| <span data-ttu-id="05ba7-124">エラーが発生したプロパティの値。</span><span class="sxs-lookup"><span data-stu-id="05ba7-124">Value of the property causing the error.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="84b31-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="84b31-125">JSON representation</span></span>
-<span data-ttu-id="84b31-126">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="84b31-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="05ba7-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="05ba7-125">JSON representation</span></span>
+<span data-ttu-id="05ba7-126">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="05ba7-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

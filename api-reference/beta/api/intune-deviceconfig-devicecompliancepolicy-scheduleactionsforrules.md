@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9dd714fea92c7e152e3d9700d05869240a05ad78
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787065"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470539"
 ---
-# <a name="scheduleactionsforrules-action"></a><span data-ttu-id="42048-103">scheduleActionsForRules アクション</span><span class="sxs-lookup"><span data-stu-id="42048-103">scheduleActionsForRules action</span></span>
+# <a name="scheduleactionsforrules-action"></a><span data-ttu-id="96891-103">scheduleActionsForRules アクション</span><span class="sxs-lookup"><span data-stu-id="96891-103">scheduleActionsForRules action</span></span>
 
-> <span data-ttu-id="42048-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="42048-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="96891-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="96891-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="42048-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="42048-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="96891-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="96891-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="42048-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="42048-106">Not yet documented</span></span>
+<span data-ttu-id="96891-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="96891-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="42048-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="42048-107">Prerequisites</span></span>
-<span data-ttu-id="42048-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42048-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="96891-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="96891-107">Prerequisites</span></span>
+<span data-ttu-id="96891-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="96891-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="42048-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="42048-110">Permission type</span></span>|<span data-ttu-id="42048-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="42048-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="96891-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="96891-110">Permission type</span></span>|<span data-ttu-id="96891-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="96891-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="42048-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="42048-112">Delegated (work or school account)</span></span>|<span data-ttu-id="42048-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42048-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="42048-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="42048-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="42048-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="42048-115">Not supported.</span></span>|
-|<span data-ttu-id="42048-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="42048-116">Application</span></span>|<span data-ttu-id="42048-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="42048-117">Not supported.</span></span>|
+|<span data-ttu-id="96891-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="96891-112">Delegated (work or school account)</span></span>|<span data-ttu-id="96891-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96891-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="96891-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="96891-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="96891-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="96891-115">Not supported.</span></span>|
+|<span data-ttu-id="96891-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="96891-116">Application</span></span>|<span data-ttu-id="96891-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="96891-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="42048-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="42048-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96891-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="96891-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,30 +37,30 @@ ms.locfileid: "31787065"
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="42048-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="42048-119">Request headers</span></span>
-|<span data-ttu-id="42048-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="42048-120">Header</span></span>|<span data-ttu-id="42048-121">値</span><span class="sxs-lookup"><span data-stu-id="42048-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96891-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="96891-119">Request headers</span></span>
+|<span data-ttu-id="96891-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="96891-120">Header</span></span>|<span data-ttu-id="96891-121">値</span><span class="sxs-lookup"><span data-stu-id="96891-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="42048-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="42048-122">Authorization</span></span>|<span data-ttu-id="42048-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="42048-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="42048-124">承諾</span><span class="sxs-lookup"><span data-stu-id="42048-124">Accept</span></span>|<span data-ttu-id="42048-125">application/json</span><span class="sxs-lookup"><span data-stu-id="42048-125">application/json</span></span>|
+|<span data-ttu-id="96891-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="96891-122">Authorization</span></span>|<span data-ttu-id="96891-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="96891-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="96891-124">承諾</span><span class="sxs-lookup"><span data-stu-id="96891-124">Accept</span></span>|<span data-ttu-id="96891-125">application/json</span><span class="sxs-lookup"><span data-stu-id="96891-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="42048-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="42048-126">Request body</span></span>
-<span data-ttu-id="42048-127">要求本文で、パラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="42048-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96891-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="96891-126">Request body</span></span>
+<span data-ttu-id="96891-127">要求本文で、パラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="96891-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="42048-128">次の表に、このアクションで使用できるパラメーターを示します。</span><span class="sxs-lookup"><span data-stu-id="42048-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="96891-128">次の表に、このアクションで使用できるパラメーターを示します。</span><span class="sxs-lookup"><span data-stu-id="96891-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="42048-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="42048-129">Property</span></span>|<span data-ttu-id="42048-130">型</span><span class="sxs-lookup"><span data-stu-id="42048-130">Type</span></span>|<span data-ttu-id="42048-131">説明</span><span class="sxs-lookup"><span data-stu-id="42048-131">Description</span></span>|
+|<span data-ttu-id="96891-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="96891-129">Property</span></span>|<span data-ttu-id="96891-130">型</span><span class="sxs-lookup"><span data-stu-id="96891-130">Type</span></span>|<span data-ttu-id="96891-131">説明</span><span class="sxs-lookup"><span data-stu-id="96891-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="42048-132">deviceComplianceScheduledActionForRules</span><span class="sxs-lookup"><span data-stu-id="42048-132">deviceComplianceScheduledActionForRules</span></span>|<span data-ttu-id="42048-133">[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="42048-133">[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) collection</span></span>|<span data-ttu-id="42048-134">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="42048-134">Not yet documented</span></span>|
+|<span data-ttu-id="96891-132">deviceComplianceScheduledActionForRules</span><span class="sxs-lookup"><span data-stu-id="96891-132">deviceComplianceScheduledActionForRules</span></span>|<span data-ttu-id="96891-133">[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="96891-133">[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) collection</span></span>|<span data-ttu-id="96891-134">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="96891-134">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="42048-135">応答</span><span class="sxs-lookup"><span data-stu-id="42048-135">Response</span></span>
-<span data-ttu-id="42048-136">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="42048-136">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="96891-135">応答</span><span class="sxs-lookup"><span data-stu-id="96891-135">Response</span></span>
+<span data-ttu-id="96891-136">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="96891-136">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="42048-137">例</span><span class="sxs-lookup"><span data-stu-id="42048-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="96891-137">例</span><span class="sxs-lookup"><span data-stu-id="96891-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="42048-138">要求</span><span class="sxs-lookup"><span data-stu-id="42048-138">Request</span></span>
-<span data-ttu-id="42048-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="42048-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="96891-138">要求</span><span class="sxs-lookup"><span data-stu-id="96891-138">Request</span></span>
+<span data-ttu-id="96891-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="96891-139">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 
@@ -78,8 +78,8 @@ Content-length: 242
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="42048-140">応答</span><span class="sxs-lookup"><span data-stu-id="42048-140">Response</span></span>
-<span data-ttu-id="42048-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="42048-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="96891-140">応答</span><span class="sxs-lookup"><span data-stu-id="96891-140">Response</span></span>
+<span data-ttu-id="96891-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="96891-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bae35f74751e08211c1c943efa4690fbb6ae4b5b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782360"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32475383"
 ---
-# <a name="get-androidworkprofilecompliancepolicy"></a><span data-ttu-id="5c183-103">androidWorkProfileCompliancePolicy を取得する</span><span class="sxs-lookup"><span data-stu-id="5c183-103">Get androidWorkProfileCompliancePolicy</span></span>
+# <a name="get-androidworkprofilecompliancepolicy"></a><span data-ttu-id="bda77-103">androidWorkProfileCompliancePolicy を取得する</span><span class="sxs-lookup"><span data-stu-id="bda77-103">Get androidWorkProfileCompliancePolicy</span></span>
 
-> <span data-ttu-id="5c183-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c183-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bda77-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bda77-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5c183-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c183-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bda77-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="bda77-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5c183-106">[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="5c183-106">Read properties and relationships of the [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object.</span></span>
+<span data-ttu-id="bda77-106">[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="bda77-106">Read properties and relationships of the [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5c183-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="5c183-107">Prerequisites</span></span>
-<span data-ttu-id="5c183-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c183-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="bda77-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="bda77-107">Prerequisites</span></span>
+<span data-ttu-id="bda77-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bda77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5c183-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5c183-110">Permission type</span></span>|<span data-ttu-id="5c183-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="5c183-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="bda77-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bda77-110">Permission type</span></span>|<span data-ttu-id="bda77-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="bda77-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c183-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5c183-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5c183-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5c183-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="5c183-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5c183-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5c183-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c183-115">Not supported.</span></span>|
-|<span data-ttu-id="5c183-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5c183-116">Application</span></span>|<span data-ttu-id="5c183-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5c183-117">Not supported.</span></span>|
+|<span data-ttu-id="bda77-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bda77-112">Delegated (work or school account)</span></span>|<span data-ttu-id="bda77-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="bda77-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="bda77-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bda77-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bda77-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bda77-115">Not supported.</span></span>|
+|<span data-ttu-id="bda77-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bda77-116">Application</span></span>|<span data-ttu-id="bda77-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bda77-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5c183-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5c183-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bda77-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bda77-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "31782360"
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5c183-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5c183-119">Optional query parameters</span></span>
-<span data-ttu-id="5c183-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5c183-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bda77-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="bda77-119">Optional query parameters</span></span>
+<span data-ttu-id="bda77-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="bda77-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5c183-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5c183-121">Request headers</span></span>
-|<span data-ttu-id="5c183-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5c183-122">Header</span></span>|<span data-ttu-id="5c183-123">値</span><span class="sxs-lookup"><span data-stu-id="5c183-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bda77-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bda77-121">Request headers</span></span>
+|<span data-ttu-id="bda77-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bda77-122">Header</span></span>|<span data-ttu-id="bda77-123">値</span><span class="sxs-lookup"><span data-stu-id="bda77-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c183-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c183-124">Authorization</span></span>|<span data-ttu-id="5c183-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="5c183-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5c183-126">承諾</span><span class="sxs-lookup"><span data-stu-id="5c183-126">Accept</span></span>|<span data-ttu-id="5c183-127">application/json</span><span class="sxs-lookup"><span data-stu-id="5c183-127">application/json</span></span>|
+|<span data-ttu-id="bda77-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="bda77-124">Authorization</span></span>|<span data-ttu-id="bda77-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="bda77-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="bda77-126">承諾</span><span class="sxs-lookup"><span data-stu-id="bda77-126">Accept</span></span>|<span data-ttu-id="bda77-127">application/json</span><span class="sxs-lookup"><span data-stu-id="bda77-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5c183-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="5c183-128">Request body</span></span>
-<span data-ttu-id="5c183-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5c183-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bda77-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="bda77-128">Request body</span></span>
+<span data-ttu-id="bda77-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bda77-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5c183-130">応答</span><span class="sxs-lookup"><span data-stu-id="5c183-130">Response</span></span>
-<span data-ttu-id="5c183-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5c183-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bda77-130">応答</span><span class="sxs-lookup"><span data-stu-id="bda77-130">Response</span></span>
+<span data-ttu-id="bda77-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bda77-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c183-132">例</span><span class="sxs-lookup"><span data-stu-id="5c183-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bda77-132">例</span><span class="sxs-lookup"><span data-stu-id="bda77-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5c183-133">要求</span><span class="sxs-lookup"><span data-stu-id="5c183-133">Request</span></span>
-<span data-ttu-id="5c183-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5c183-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="bda77-133">要求</span><span class="sxs-lookup"><span data-stu-id="bda77-133">Request</span></span>
+<span data-ttu-id="bda77-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="bda77-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-### <a name="response"></a><span data-ttu-id="5c183-135">応答</span><span class="sxs-lookup"><span data-stu-id="5c183-135">Response</span></span>
-<span data-ttu-id="5c183-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5c183-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="bda77-135">応答</span><span class="sxs-lookup"><span data-stu-id="bda77-135">Response</span></span>
+<span data-ttu-id="bda77-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="bda77-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
