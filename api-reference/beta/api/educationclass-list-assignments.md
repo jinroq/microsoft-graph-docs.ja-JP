@@ -1,28 +1,28 @@
 ---
-title: リストの割り当て
-description: 割り当てオブジェクトのリストを取得します。 教師を許可して、クラスのすべての割り当てオブジェクトを参照してください。 受講者は、それらに割り当てられている割り当てだけを参照してください。
+title: 割り当てを一覧表示する
+description: assignment オブジェクトのリストを取得します。 教師は、クラスのすべての assignment オブジェクトを表示することができます。 受講者には、割り当てられている割り当てのみが表示されます。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 7cd47c61d4958d42ce099396147d421a6555041b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457873"
 ---
-# <a name="list-assignments"></a>リストの割り当て
+# <a name="list-assignments"></a>割り当てを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-割り当てオブジェクトのリストを取得します。 教師を許可して、クラスのすべての割り当てオブジェクトを参照してください。 受講者は、それらに割り当てられている割り当てだけを参照してください。
+assignment オブジェクトのリストを取得します。 教師は、クラスのすべての assignment オブジェクトを表示することができます。 受講者には、割り当てられている割り当てのみが表示されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite   |
+|委任 (職場または学校のアカウント) | EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

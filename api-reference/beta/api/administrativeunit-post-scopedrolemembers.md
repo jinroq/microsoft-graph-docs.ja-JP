@@ -1,21 +1,21 @@
 ---
-title: ScopedRoleMember を追加します。
-description: 新しい scopedRoleMembership を追加します。 注:*ユーザー アカウントの管理者*と*ヘルプ デスクの管理者*の役割のみ現在サポートされてスコープ ロールのメンバーシップ。
+title: scopedRoleMember を追加する
+description: '新しい scopedRoleMembership を追加します。 注: スコープ付きの役割メンバーシップでは、現在、*ユーザーアカウント管理*者と*ヘルプデスク管理者*ロールのみがサポートされています。'
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2f94c66bd804d2771987ee58539abdbe073abc03
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640358"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459270"
 ---
-# <a name="add-a-scopedrolemember"></a>ScopedRoleMember を追加します。
+# <a name="add-a-scopedrolemember"></a>scopedRoleMember を追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい[scopedRoleMembership](../resources/scopedrolemembership.md)を追加します。 注:*ユーザー アカウントの管理者*と*ヘルプ デスクの管理者*の役割のみ現在サポートされてスコープ ロールのメンバーシップ。
+新しい[scopedRoleMembership](../resources/scopedrolemembership.md)を追加します。 注: スコープ付きの役割メンバーシップでは、現在、*ユーザーアカウント管理*者と*ヘルプデスク管理者*ロールのみがサポートされています。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,11 +38,11 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 | Authorization  | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[scopedRoleMembership](../resources/scopedrolemembership.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -63,7 +63,7 @@ Content-length: 272
   }
 }
 ```
-要求の本文には、 [scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

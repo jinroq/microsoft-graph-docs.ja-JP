@@ -1,21 +1,21 @@
 ---
-title: 呼び出しを削除します。
-description: 削除またはアクティブな呼び出しを切断します。
+title: 通話の削除
+description: アクティブな通話を削除または切断します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ed4ae5c8fdd397541e015a31bc6ecee948f0ea0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461326"
 ---
-# <a name="delete-call"></a>呼び出しを削除します。
+# <a name="delete-call"></a>通話の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-削除またはアクティブな呼び出しを切断します。
+アクティブな通話を削除または切断します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,8 +23,8 @@ ms.locfileid: "29513236"
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ)                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | サポートされていません。                         |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                         |
+| 委任 (職場または学校のアカウント)     | サポートされません。                         |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                         |
 | アプリケーション                            | なし。                                  |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -70,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>通知の終了
+##### <a name="notification---terminating"></a>通知-終了
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>終了の通知-
+##### <a name="notification---terminated"></a>通知の終了
 
 ```http
 POST https://bot.contoso.com/api/calls

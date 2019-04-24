@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f3518dcc31bf703d3fe42e6bab15d5731d5beb5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463526"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment リソースの種類
 
@@ -32,7 +32,7 @@ termsAndConditionsGroupAssignment エンティティは、特定の使用条件 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
-|targetgroupid|文字列|T&C ポリシーが割り当てられているグループの一意識別子。|
+|targetgroupid|String|T&C ポリシーが割り当てられているグループの一意識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

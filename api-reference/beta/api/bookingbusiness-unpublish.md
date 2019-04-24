@@ -1,30 +1,30 @@
 ---
-title: 'bookingBusiness: 非公開'
-description: 外部の顧客に、利用できないこのビジネスでのスケジュールのページを加えます。
+title: 'bookingbusiness: 未発行'
+description: 外部のお客様がこの業務のスケジュール設定ページを使用できないようにします。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0b6c8122d37e5f6cdb1698b0d86295156e3481a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517527"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461844"
 ---
-# <a name="bookingbusiness-unpublish"></a>bookingBusiness: 非公開
+# <a name="bookingbusiness-unpublish"></a>bookingbusiness: 未発行
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-外部の顧客に、利用できないこのビジネスでのスケジュールのページを加えます。
+外部のお客様がこの業務のスケジュール設定ページを使用できないようにします。
 
-**IsPublished**プロパティを false、および**publicUrl**プロパティを null に設定します。
+**isPublished**プロパティを false に設定し、 **publicurl**プロパティを null に設定します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約。すべて   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -45,7 +45,7 @@ POST /bookingBusinesses/{id}/unpublish
 成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-次に、この API を呼び出す方法の例を示します。
+この API を呼び出す方法の例を次に示します。
 ##### <a name="request"></a>要求
 要求の例を次に示します。
 <!-- {

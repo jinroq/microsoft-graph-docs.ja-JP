@@ -1,21 +1,21 @@
 ---
-title: Administrativeunit を更新します。
-description: AdministrativeUnit オブジェクトのプロパティを更新します。
+title: administrativeunit の更新
+description: administrativeUnit オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f3c57f8784bf642df7944bc6295ebd4fadc0ba43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511157"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459282"
 ---
-# <a name="update-administrativeunit"></a>Administrativeunit を更新します。
+# <a name="update-administrativeunit"></a>administrativeunit の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[AdministrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティを更新します。
+[administrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -44,11 +44,11 @@ PATCH /administrativeUnits/{id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|説明|string|管理単位の説明です。|
-|displayName|string|管理単位の名前を表示します。|
-|visibility|文字列|管理単位の表示/非表示にします。 設定されていない場合、既定値はパブリックです。 "HiddenMembership"は、メンバー以外のメンバーのメンバーシップを非表示にするに設定することができます。|
+|description|string|管理単位の説明。|
+|displayName|string|管理単位の表示名。|
+|visibility|string|管理単位の可視性。 設定されていない場合、既定値は "public" です。 "HiddenMembership" に設定できます。これにより、メンバー以外のメンバーシップが非表示になります。|
 
-使用することができます**administrativeUnit**リソースでは、[拡張機能](/graph/extensibility-overview)をサポートするため、`PATCH`を追加、更新、または既存の**administrativeUnit**インスタンスで拡張機能のカスタム プロパティに独自のアプリケーション固有データを削除する操作です。
+**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**administrativeUnit**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
 
 ## <a name="response"></a>応答
 

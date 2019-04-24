@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1f404a4a344f6fddc9759da9808b7c5bec1bc7ef
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458524"
 ---
 # <a name="update-journallines"></a>journalLines の更新
 Dynamics 365 Business Central の journal 明細行オブジェクトのプロパティを更新します。

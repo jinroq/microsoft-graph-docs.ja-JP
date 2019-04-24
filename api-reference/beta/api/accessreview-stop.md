@@ -1,27 +1,27 @@
 ---
-title: AccessReview を停止します。
-description: Azure AD のレビュー機能にアクセス、現在アクティブな accessReview を停止します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  (定期的なアクセス確認が将来のインスタンスを開始しないように、更新のスケジュールされた終了日を変更するのには)。  アクセスの後、停止を確認、レビュー担当者は、入力を与えることが不要になったアクセス レビューの決定を適用することができます。
+title: accessreview を停止する
+description: Azure AD access レビュー機能で、現在アクティブな accessreview を停止します。  ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。  (定期的なアクセスレビューが今後のインスタンスを開始しないようにするには、それを更新して、スケジュールされた終了日を変更します)。  アクセスレビューが停止すると、レビュー担当者は入力を行うことができなくなり、アクセスレビューの決定を適用できるようになります。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 070f91faa411fcc6d98db419d1683a7fb6493859
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521839"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459488"
 ---
-# <a name="stop-accessreview"></a>AccessReview を停止します。
+# <a name="stop-accessreview"></a>accessreview を停止する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、現在アクティブな[accessReview](../resources/accessreview.md)を停止します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  (防ぐためのアクセス確認を定期的な[更新](accessreview-update.md)のスケジュールされた終了日を変更するのには、将来のインスタンスを開始)。  アクセスの後、停止を確認、レビュー担当者は、入力を与えることが不要になったアクセス レビューの決定を適用することができます。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、現在アクティブな[accessreview](../resources/accessreview.md)を停止します。  ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。  (定期的なアクセスレビューが今後のインスタンスを開始しないようにするには、[それを更新して](accessreview-update.md)、スケジュールされた終了日を変更します)。  アクセスレビューが停止すると、レビュー担当者は入力を行うことができなくなり、アクセスレビューの決定を適用できるようになります。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -33,7 +33,7 @@ POST /accessReviews('<id>')/stop()
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

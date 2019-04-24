@@ -1,21 +1,19 @@
 ---
 title: 'イベント: tentativelyAccept'
-description: ユーザーの予定表で指定したイベントを仮承諾します。
+description: ユーザーの予定表の指定のイベントを仮承諾します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: be841cfcb12a7f29ce681461ec7e57c023df773b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464056"
 ---
 # <a name="event-tentativelyaccept"></a>イベント: tentativelyAccept
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-ユーザー[の予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)を仮承諾します。
+ユーザーの[予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)を仮承諾します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -71,7 +69,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
   "name": "event_tentativelyaccept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
+POST https://graph.microsoft.com/v1.0/me/events/{id}/tentativelyAccept
 Content-type: application/json
 Content-length: 56
 
@@ -94,15 +92,10 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "event: tentativelyAccept",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-tentativelyaccept.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

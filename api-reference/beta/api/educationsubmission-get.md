@@ -1,30 +1,30 @@
 ---
-title: EducationSubmission を取得します。
-description: '特定の送信を取得します。 送信オブジェクトは、割り当ての受講者の作業を表します。 リソースに送信は、この作業が関連付けられています。 提出書類が割り当てられている学生だけを参照してくださいでき、提出書類を変更することができます。 教師には、すべての提出書類へのフル アクセスがあります。 '
+title: educationSubmission を取得する
+description: '特定の送信を取得します。 送信オブジェクトは、割り当てに対する学生の作業を表します。 送信に関連付けられているリソースは、この作業を表します。 提出物が割り当てられている受講者のみが、提出物を表示および変更できます。 教師は、すべての送信にフルアクセスできます。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d0542bec537b8317a46e98c215768f5228f9a07c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511955"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457651"
 ---
-# <a name="get-educationsubmission"></a>EducationSubmission を取得します。
+# <a name="get-educationsubmission"></a>educationSubmission を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の送信を取得します。 送信オブジェクトは、割り当ての受講者の作業を表します。 リソースに送信は、この作業が関連付けられています。 提出書類が割り当てられている学生だけを参照してくださいでき、提出書類を変更することができます。 教師には、すべての提出書類へのフル アクセスがあります。 
+特定の送信を取得します。 送信オブジェクトは、割り当てに対する学生の作業を表します。 送信に関連付けられているリソースは、この作業を表します。 提出物が割り当てられている受講者のみが、提出物を表示および変更できます。 教師は、すべての送信にフルアクセスできます。 
 
-グレードおよび教師からのフィードバックもこのオブジェクトの一部です。 教師だけでは、追加したり、成績やフィードバックを変更することができます。 受講者は表示されません、評価やご意見、割り当てが解除されるまで。 基本アクセス権は評価とフィードバックが含まれていないが、それ以外のすべては。
+教師からの評価とフィードバックも、このオブジェクトの一部です。 教師のみが、成績とフィードバックを追加または変更できます。 課題がリリースされるまで、学生には成績またはフィードバックは表示されません。 基本的なアクセス許可には、成績とフィードバックは含まれませんが、それ以外はすべて含まれます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
+|委任 (職場または学校のアカウント) |  EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本 |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[educationSubmission](../resources/educationsubmission.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSubmission](../resources/educationsubmission.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

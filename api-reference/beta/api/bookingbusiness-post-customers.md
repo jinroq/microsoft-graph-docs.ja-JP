@@ -1,27 +1,27 @@
 ---
-title: BookingCustomer を作成します。
-description: 新しい bookingCustomer オブジェクトを作成します。
+title: bookingcustomer の作成
+description: 新しい bookcustomer オブジェクトを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 4557d65edf4727659fdae94599c0796fc940ed1d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461796"
 ---
-# <a name="create-bookingcustomer"></a>BookingCustomer を作成します。
+# <a name="create-bookingcustomer"></a>bookingcustomer の作成
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい[bookingCustomer](../resources/bookingcustomer.md)オブジェクトを作成します。
+新しい[bookcustomer](../resources/bookingcustomer.md)オブジェクトを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  bookingsappointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -37,11 +37,11 @@ POST /bookingBusinesses/{id}/customers
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [bookingCustomer](../resources/bookingcustomer.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingcustomer](../resources/bookingcustomer.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`201, Created`、応答の本体で応答コードと[bookingCustomer](../resources/bookingcustomer.md)のオブジェクトです。
+成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[customer](../resources/bookingcustomer.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -60,7 +60,7 @@ Content-type: application/json
     "emailAddress": "jonis@relecloud.com"
 }
 ```
-要求の本文には、 [bookingCustomer](../resources/bookingcustomer.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingcustomer](../resources/bookingcustomer.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {

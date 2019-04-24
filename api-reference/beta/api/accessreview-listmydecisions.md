@@ -1,27 +1,27 @@
 ---
-title: マイ accessReview の決定事項を表示します。
-description: Azure AD アクセスのレビュー機能をレビュー担当者として、accessReview オブジェクトの呼び出し元のユーザーの意思決定を取得します。
+title: 自分の accessreview の決定事項を一覧表示する
+description: Azure AD access レビュー機能で、呼び出し元ユーザーの accessreview オブジェクトの決定をレビュー担当者として取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525326"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459452"
 ---
-# <a name="list-my-accessreview-decisions"></a>マイ accessReview の決定事項を表示します。
+# <a name="list-my-accessreview-decisions"></a>自分の accessreview の決定事項を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、レビュー担当者として、 [accessReview](../resources/accessreview.md)オブジェクトの呼び出し元のユーザーの意思決定を取得します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、呼び出し元ユーザーの[accessreview](../resources/accessreview.md)オブジェクトの決定をレビュー担当者として取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  サインインしているユーザーがこの特定のアクセス確認を読み取ることもできる必要があります。 |
+|委任 (職場または学校のアカウント)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  サインインしているユーザーは、この特定のアクセスレビューを読み取ることも許可されている必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -33,13 +33,13 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体を提供する必要がありません。
+要求本文を指定する必要はありません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200, OK`応答コードおよび呼び出し元のユーザーの割り当てのレビュー担当者の応答の本文に[accessReviewDecision](../resources/accessreviewdecision.md)オブジェクトの配列。
+成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[accessReviewDecision](../resources/accessreviewdecision.md)オブジェクトの配列を返します。これは、呼び出し元ユーザーが割り当てられた校閲者です。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -81,8 +81,8 @@ Content-type: application/json
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[AccessReview を取得します。](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  アクセス確認を取得します。 |
-|[リストの accessReview の決定](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    AccessReview のすべての意思決定を取得します。|
+|[accessreview を取得する](accessreview-get.md) |  [accessreview](../resources/accessreview.md) |  アクセスレビューを取得します。 |
+|[accessreview に関する決定事項を一覧表示する](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    accessreview のすべての決定事項を取得します。|
 
 
 <!--

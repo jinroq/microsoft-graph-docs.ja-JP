@@ -1,21 +1,21 @@
 ---
-title: '電話: subscribeToTone'
-description: (デュアル トーン多重周波数信号) DTMF を購読します。 これにより、ユーザーは、'プッシュホン' 電話のキーを押したときに通知することができます。
+title: '通話: subscribeToTone'
+description: DTMF (デュアルトーンマルチ周波数信号) をサブスクライブします。 これにより、ユーザーが ' プッシュホン ' 電話でキーを押したときに通知を受けることができます。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f3fe078965877204b767b689ace293c3d4f46a9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519445"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461264"
 ---
-# <a name="call-subscribetotone"></a>電話: subscribeToTone
+# <a name="call-subscribetotone"></a>通話: subscribeToTone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-(デュアル トーン多重周波数信号) DTMF を購読します。 これにより、ユーザーは、「プッシュホン」電話キーを押したときに通知することができます。
+DTMF (デュアルトーンマルチ周波数信号) をサブスクライブします。 これにより、ユーザーが "プッシュホン" 電話でキーを押したときに通知を受けることができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 | パラメーター      | 型    | 説明 |
 |:---------------|:--------|:------------|
-| ClientContext  | String  | クライアントのコンテキスト。 |
+| clientContext  | String  | クライアントコンテキスト。 |
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -82,7 +82,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls

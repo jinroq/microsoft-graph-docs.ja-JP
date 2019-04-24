@@ -3,11 +3,11 @@ title: NamedItem オブジェクトを更新する
 description: nameditem オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838711"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460884"
 ---
 # <a name="update-nameditem"></a>NamedItem オブジェクトを更新する
 
@@ -35,14 +35,14 @@ PATCH /workbook/names/{name}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|オブジェクトを表示するかどうかを指定します。|
-|comment|   文字列  |この名前に関連付けられているコメントを表します。|
+|comment|   string  |この名前に関連付けられているコメントを表します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

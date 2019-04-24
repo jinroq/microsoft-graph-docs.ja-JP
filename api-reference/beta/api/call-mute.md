@@ -1,29 +1,29 @@
 ---
-title: '呼び出す: ミュート'
-description: 自体を消すには、アプリケーションを使用できます。
+title: '通話: ミュート'
+description: アプリケーションが自分自身をミュートできるようにします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2f619cdc42ff914999ad8826ff31452ff82ea6a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461249"
 ---
-# <a name="call-mute"></a>呼び出す: ミュート
+# <a name="call-mute"></a>通話: ミュート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-自体を消すには、アプリケーションを使用できます。
+アプリケーションが自分自身をミュートできるようにします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | サポートされていません。                               |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                               |
+| 委任 (職場または学校のアカウント)     | サポートされません。                               |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                               |
 | アプリケーション                            | なし。                                        |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/mute
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|ClientContext|String|クライアントのコンテキスト。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[commsOperation](../resources/commsoperation.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

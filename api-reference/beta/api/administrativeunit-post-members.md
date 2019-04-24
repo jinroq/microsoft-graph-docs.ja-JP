@@ -1,21 +1,21 @@
 ---
 title: メンバーを追加する
-description: 管理単位に (ユーザーまたはグループ) のメンバーを追加するのにはこの API を使用します。
+description: この API を使用して、管理単位にメンバー (ユーザーまたはグループ) を追加します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459245"
 ---
 # <a name="add-a-member"></a>メンバーを追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理単位に (ユーザーまたはグループ) のメンバーを追加するのにはこの API を使用します。
+この API を使用して、管理単位にメンバー (ユーザーまたはグループ) を追加します。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -40,7 +40,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文に、[ユーザー](../resources/user.md)、[グループ](../resources/group.md)または追加するのには、 [directoryObject](../resources/directoryobject.md)の JSON の形式を指定します。
+要求本文で、追加する[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、または[directoryobject](../resources/directoryobject.md)の JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -60,7 +60,7 @@ Content-length: 109
 }
 
 ```
-要求の本文に指定の JSON 表現、`id`を追加する[ユーザー](../resources/user.md)または[グループ](../resources/group.md)のオブジェクトの。
+要求本文で、追加する[ユーザー](../resources/user.md)または[グループ](../resources/group.md)オブジェクト`id`の JSON 表記を指定します。
 
 ##### <a name="response"></a>応答
 以下は、応答の例です。

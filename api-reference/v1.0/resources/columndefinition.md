@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584853"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition リソース
 
@@ -57,7 +57,7 @@ ms.locfileid: "30481882"
 | プロパティ名           | 種類    | 説明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
-| **description**         | string  | 列に関するユーザー向けの説明。
+| **説明**         | string  | 列に関するユーザー向けの説明。
 | **displayName**         | string  | 列を示すユーザー向けの名前。
 | **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
 | **hidden**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。

@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: 送信'
-description: 学生が作業を行われ、割り当てで入稿する準備ができなことを示す動作です。 この操作は、受講者のみ取得できます。
+title: 'educationSubmission: 提出'
+description: 学生が作業を行い、割り当ての準備が整っていることを示すアクション。 このアクションは、受講者のみが実行できます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510772"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464727"
 ---
-# <a name="educationsubmission-submit"></a>educationSubmission: 送信
+# <a name="educationsubmission-submit"></a>educationSubmission: 提出
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-学生が作業を行われ、割り当てで入稿する準備ができなことを示す動作です。 この操作は、受講者のみ取得できます。 「処理中」に「送信」からの提出書類のステータスが変更されます。 送信中に、すべてのリソースは、submittedResources バケットにコピーされます。 先生はグレーディングの送信済みのリソースの一覧を見ています。
+学生が作業を行い、割り当ての準備が整っていることを示すアクション。 このアクションは、受講者のみが実行できます。 これにより、送信の状態が "作業" から "送信済み" に変更されます。 送信プロセス中に、すべてのリソースが submittedresources バケットにコピーされます。 教師は、お客様のために送信されたリソースの一覧を調べます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 

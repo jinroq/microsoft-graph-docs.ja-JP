@@ -1,27 +1,27 @@
 ---
-title: AccessReview を削除します。
-description: Azure AD のレビュー機能にアクセス、accessReview オブジェクトを削除します。
+title: accessreview の削除
+description: Azure AD access レビュー機能で、accessreview オブジェクトを削除します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 28848cc047306259248d0ba4663ab3eb3e964224
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527774"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456816"
 ---
-# <a name="delete-accessreview"></a>AccessReview を削除します。
+# <a name="delete-accessreview"></a>accessreview の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、 [accessReview](../resources/accessreview.md)オブジェクトを削除します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [accessreview](../resources/accessreview.md)オブジェクトを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All と、デバッギングを削除する呼び出しの完全なシナリオを ProgramControl.ReadWrite.All する必要があり、 |
+|委任 (職場または学校のアカウント)     | また、programcontrol を使用して完全なシナリオを実行する必要があります。また、programcontrol を削除する方法については、「プログラムを削除する」を参照してください。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -33,7 +33,7 @@ DELETE /accessReviews('<id>')
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

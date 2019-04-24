@@ -1,17 +1,17 @@
 ---
-title: '呼び出す: レコード'
+title: '通話: レコード'
 description: 通話を録音します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641905"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461298"
 ---
-# <a name="call-record"></a>呼び出す: レコード
+# <a name="call-record"></a>通話: レコード
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,18 +43,18 @@ POST /applications/{id}/calls/{id}/record
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|メッセージが表示されます。|[mediaprompt](../resources/mediaprompt.md)コレクション | レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。 ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。 |
-|bargeInAllowed|Boolean| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
-|initialSilenceTimeoutInSeconds | Int32| 最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。 プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。 |
-|maxSilenceTimeoutInSeconds|Int32| 無音部分の最大のタイムアウト (秒) です。|
-|maxRecordDurationInSeconds|Int32| 秒単位で最大のレコードの期間です。|
-|playBeep|Boolean| プロンプトを再生した後、ビープ音を再生します。|
-|streamWhileRecording|Boolean|True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。 |
-|stopTones|String コレクション|音の録音を終了するために指定を停止します。|
-|clientContext|String|クライアントのコンテキスト。|
+|促し|[mediaprompt](../resources/mediaprompt.md)コレクション | レコーディングの開始前に再生するプロンプトのコレクション (ある場合)。 ユーザーは、"playprompt" アクションを個別に指定するか、"record" の一部として指定することができます。ほとんどすべてのレコードはプロンプトで preceeded されます。 |
+|bargeinallowed|Boolean| ユーザーが選択肢を入力できるようにしてから、プロンプトを終了します。                                                                 |
+|initialSilenceTimeoutInSeconds | Int32| 操作を開始する前にレコード操作を開始するときに許容される最大初期無音 プロンプトを再生している場合は、プロンプトが終了した後、このタイマーが開始されます。 |
+|maxSilenceTimeoutInSeconds|Int32| 最大無音タイムアウト (秒単位)。|
+|maxRecordDurationInSeconds|Int32| 最大レコード期間 (秒単位)。|
+|再生のビープ音|Boolean| プロンプトを再生した後、ビープ音を鳴らします。|
+|streamWhileRecording|Boolean|true に設定すると、レコーディングが開始されるとすぐにリソースの場所が提供されます。 |
+|stoptones|String collection|録音を終了するために指定されたトーンを停止します。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -108,7 +108,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls

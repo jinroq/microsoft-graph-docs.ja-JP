@@ -1,21 +1,21 @@
 ---
-title: '呼び出す: リダイレクト'
-description: 着信呼び出しをリダイレクトします。
+title: 'call: redirect'
+description: 着信をリダイレクトします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461278"
 ---
-# <a name="call-redirect"></a>呼び出す: リダイレクト
+# <a name="call-redirect"></a>call: redirect
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-着信呼び出しをリダイレクトします。
+着信をリダイレクトします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,18 +43,18 @@ POST /applications/{id}/calls/{id}/redirect
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作のターゲットの参加者です。|
-|targetDisposition|String|使用可能な値は次のとおりです。`default`|
-|timeout|Int32|リダイレクト処理を秒単位でタイムアウトします。|
-|maskCallee|ブール値|呼び出し先をマスクするかどうかを示します。|
-|maskCaller|ブール値|呼び出し元をマスクするかどうかを示します。|
+|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作の対象となる参加者。|
+|targetdisposition ポジション|String|指定できる値は次のとおりです。`default`|
+|timeout|Int32|リダイレクト操作のタイムアウト (秒単位)。|
+|maskcallee 先|Boolean|呼び出し先をマスクするかどうかを示します。|
+|maskcaller|Boolean|発信者をマスクするかどうかを示します。|
 
 ## <a name="response"></a>応答
-応答コードを返します。
+応答`202 Accepted`コードを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="redirect-a-call"></a>呼び出しをリダイレクトします。
+### <a name="redirect-a-call"></a>通話をリダイレクトする
 
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
@@ -103,9 +103,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a>呼び出しを転送します。
+### <a name="forward-a-call"></a>通話を転送する
 
-##### <a name="notification---incoming"></a>通知の受信
+##### <a name="notification---incoming"></a>通知-受信
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -191,7 +191,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a>通知のリダイレクト
+##### <a name="notification---redirecting"></a>通知-リダイレクト
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -220,7 +220,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>終了の通知-
+##### <a name="notification---terminated"></a>通知の終了
 
 ```http
 POST https://bot.contoso.com/api/calls

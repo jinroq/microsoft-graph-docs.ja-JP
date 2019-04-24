@@ -1,29 +1,26 @@
 ---
 title: 予定表を取得する
-description: '予定表オブジェクトのプロパティと関係を取得します。 カレンダーには、ユーザーのいずれかを指定できます。 '
-localization_priority: Normal
+description: '予定表オブジェクトのプロパティと関係を取得します。 予定表は、ユーザーに対して1つにすることができます。 '
+localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 4f277fa6cd9621ddcf3a5374594ede7a2417334a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462089"
 ---
 # <a name="get-calendar"></a>予定表を取得する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 [予定表](../resources/calendar.md)オブジェクトのプロパティと関係を取得します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 
-アプリケーションが別のユーザーの予定表を入手するための 2 つのシナリオがあります。
+アプリが別のユーザーの予定表を取得するには、次の2つのシナリオがあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーと予定表を共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
 
-
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -33,7 +30,8 @@ ms.locfileid: "29520495"
 |アプリケーション | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーまたはグループの既定の[予定表](../resources/calendar.md)です。
+<!-- { "blockType": "ignored" } -->
+ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
@@ -68,15 +66,13 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar
+GET https://graph.microsoft.com/v1.0/me/calendar
 ```
-
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -89,38 +85,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
-    "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
     "id": "AAMkAGI2TGuLAAA=",
     "name": "Calendar",
     "color": "auto",
-    "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
     "canShare":true,
     "canViewPrivateItems":true,
-    "hexColor": "",
-    "isShared":false,
-    "isSharedWithMe":false,
     "canEdit":true,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
     }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,15 +1,15 @@
 ---
 title: outlookCategory リソースの種類
-description: ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 ユーザーが、マスター] ボックスの一覧でカテゴリを定義し、これらのユーザー定義の 1 つ以上を適用することができます。
+description: ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 ユーザーは、マスターリストでカテゴリを定義し、1つ以上のユーザー定義を適用できます。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 490ecaf2e6303cc943646dbed99b3202b8d57525
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953127"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462652"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "27953127"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|ユーザーのメールボックス内でカテゴリを識別する一意の名前。 カテゴリが作成された後に、この名前を変更することはできません。 読み取り専用。|
-|color|categoryColor|カテゴリを特徴付ける、あらかじめ設定された色の定数。定数は、事前定義された 25 種類の色のいずれか 1 つにマッピングされています。 次の注を参照してください。 |
+|color|カテゴリの色|カテゴリを特徴付ける、あらかじめ設定された色の定数。定数は、事前定義された 25 種類の色のいずれか 1 つにマッピングされています。 次の注を参照してください。 |
 
 > **注:** **color** に使用できる値は、あらかじめ設定されている `None`、`preset0`、`preset1` などの定数です。 設定済みの定数は、それぞれ 1 つの色にマッピングされています。ただし、実際の色は、カテゴリを表示する Outloook クライアントに依存します。 次の表に、設定済みの各定数に Outlook (デスクトップ クライアント) でマッピングされている色を記載します。 
 
@@ -85,7 +85,7 @@ ms.locfileid: "27953127"
 |[カテゴリの取得](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |指定した **outlookCategory** オブジェクトのプロパティとリレーションシップを取得します。|
 |[作成](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |ユーザーのマスター カテゴリ リスト内に **outlookCategory** オブジェクトを作成します。|
 |[更新](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |指定した **outlookCategory** オブジェクトの書き込み可能な **color** プロパティを更新します。 |
-|[削除](../api/outlookcategory-delete.md) | None |指定した **outlookCategory** オブジェクトを削除します。 |
+|[削除する](../api/outlookcategory-delete.md) | なし |指定した **outlookCategory** オブジェクトを削除します。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 84ca52db1321bc3a2fa356de50e1446f662e725b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465224"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary リソースの種類
 
@@ -30,8 +30,8 @@ ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべ
 |configurationDeployedUserCount|Int32|まだ文書化されていません|
 |lastRefreshTime|DateTimeOffset|まだ文書化されていません|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) コレクション|まだ文書化されていません|
-|id|文字列|エンティティのキー。|
-|version|文字列型 (String)|エンティティのバージョン。|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

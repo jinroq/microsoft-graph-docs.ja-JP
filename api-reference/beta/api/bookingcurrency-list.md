@@ -1,27 +1,27 @@
 ---
-title: リスト bookingCurrencies
-description: Microsoft 予約業務に利用可能な bookingCurrency のオブジェクトの一覧を取得します。
+title: bookingcurrencies のリスト
+description: Microsoft の予約ビジネスで使用できる bookingcurrency オブジェクトの一覧を取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: c29ad5780deac5e5e338052c72661f834e483054
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513222"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461753"
 ---
-# <a name="list-bookingcurrencies"></a>リスト bookingCurrencies
+# <a name="list-bookingcurrencies"></a>bookingcurrencies のリスト
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft 予約業務に利用可能な[bookingCurrency](../resources/bookingcurrency.md)のオブジェクトの一覧を取得します。
+Microsoft の予約ビジネスで使用できる[bookingcurrency](../resources/bookingcurrency.md)オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) | 予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -30,8 +30,8 @@ Microsoft 予約業務に利用可能な[bookingCurrency](../resources/bookingcu
 ```http
 GET /bookingCurrencies
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、$count、$filter、$select、$skip、$top など、応答をカスタマイズするために[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters) ($count、$filter、$select、$skip、$top を含む) をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -41,7 +41,7 @@ GET /bookingCurrencies
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingCurrency](../resources/bookingcurrency.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[bookingcurrency](../resources/bookingcurrency.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。
@@ -53,7 +53,7 @@ GET /bookingCurrencies
 GET https://graph.microsoft.com/beta/bookingCurrencies
 ```
 ##### <a name="response"></a>応答
-応答の例を次に示します。 注: ここに示す応答オブジェクトは、簡潔にするため切り捨てられます。 すべてのサポートされている通貨とプロパティは、実際の呼び出しから返されます。
+応答の例を次に示します。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 サポートされているすべての通貨およびプロパティは、実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

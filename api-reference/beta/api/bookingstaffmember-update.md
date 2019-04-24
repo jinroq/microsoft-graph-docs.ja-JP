@@ -1,27 +1,27 @@
 ---
-title: Bookingstaffmember を更新します。
-description: 指定された bookingbusiness で、bookingStaffMember のプロパティを更新します。
+title: bookingstaffmember の更新
+description: 指定した bookingbusiness の bookingStaffMember のプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461662"
 ---
-# <a name="update-bookingstaffmember"></a>Bookingstaffmember を更新します。
+# <a name="update-bookingstaffmember"></a>bookingstaffmember の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[bookingbusiness](../resources/bookingbusiness.md)では、 [bookingStaffMember](../resources/bookingstaffmember.md)のプロパティを更新します。
+指定した[bookingbusiness](../resources/bookingbusiness.md)の[bookingStaffMember](../resources/bookingstaffmember.md)のプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -40,19 +40,19 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|ブール値|True は、スタッフ メンバーが、Office 365 ユーザーの場合は、予約 API は**workingHours**プロパティと同様に Office 365 で、スタッフ メンバーの個人用予定表の可用性を決定します。 |
-|ColorIndex|Int32|スタッフ メンバーを表す色を識別します。 予約アプリケーションでは、**スタッフの詳細**ページでカラー パレットに色が対応しています。|
-|displayName|文字列|顧客に表示されるよう、スタッフ メンバーの名前です。|
-|emailAddress|String|スタッフ メンバーの電子メール アドレスです。 ビジネスとして同じ Office 365 テナントにまたは別の電子メール ドメインを指定できます。 **SendConfirmationsToOwner**プロパティが設定されている場合、この電子メール アドレスが使用されるビジネスのスケジュー リング ポリシーの場合は true です。|
-|role|string| ビジネスのスタッフの役割です。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
-|useBusinessHours|ブール値|True では、スタッフ メンバーの可用性は、ビジネスの**businessHours**プロパティによって決定されることを意味します。 False は、利用可能時間は、スタッフ メンバーの**workingHouse**プロパティの設定によって決定されますを意味します。|
-|workingHours|[bookingWorkHours](../resources/bookingworkhours.md)コレクション|スタッフ メンバーは、予約に使用される 1 週間の各日の時間の範囲です。|
+|availabilityIsAffectedByPersonalCalendar|Boolean|True は、スタッフメンバーが office 365 ユーザーの場合、予約 API は、office 365 のスタッフメンバーの個人用予定表と**workingHours**プロパティを使用して、可用性を判断します。 |
+|colorIndex|Int32|スタッフメンバーを表す色を識別します。 この色は、予約アプリの [**スタッフの詳細**] ページのカラーパレットに対応しています。|
+|displayName|String|スタッフメンバーの名前。顧客に表示されます。|
+|emailAddress|String|スタッフメンバーの電子メールアドレス。 これは、ビジネスと同じ Office 365 テナント内、または別の電子メールドメインに配置できます。 この電子メールアドレスは、ビジネスのスケジューリングポリシーで**sendConfirmationsToOwner**プロパティが true に設定されている場合に使用されます。|
+|role|string| 業務のスタッフメンバーの役割。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
+|useBusinessHours|Boolean|True は、スタッフメンバーの利用可能性がビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティによって決定されることを意味します。 False は、可用性がスタッフメンバーの**workingHouse**プロパティの設定によって決定されることを意味します。|
+|workingHours|[bookingwork hours](../resources/bookingworkhours.md)コレクション|スタッフメンバーが予約に使用できる各曜日の時間の範囲。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の使用例では、毎週月曜日にのスタッフ メンバーのスケジュールを変更します。
+次の例では、スタッフメンバーのスケジュールを変更して月曜日をオフにします。
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember"

@@ -1,36 +1,53 @@
 ---
 title: 添付ファイルを取得する
-description: プロパティとイベント、メッセージ、Outlook のタスク、または投稿に添付された添付ファイルの関係を参照してください。
+description: イベント、メッセージ、Outlook タスク、または投稿に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。
 localization_priority: Normal
-ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 53d0aad43a19073cfb7e366a2b1dc219c080f469
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459067"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付された添付ファイルの関係を参照してください。
+[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。
 
 添付ファイルは、次の種類のいずれかにできます。
 
 * ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。
-* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、またはメッセージ)。`$expand` を使用すると、その項目のプロパティをさらに取得できます。次の[例](#request-2)を参照してください。
+* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。 を使用`$expand`して、そのアイテムのプロパティをさらに取得することができます。 次の[例](#request-2)を参照してください。
 * ファイルへのリンク ([referenceAttachment](../resources/referenceattachment.md) リソース)。
 
 これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。
+
+### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>ファイルまたはアイテムの添付ファイルの生のコンテンツを取得する
+パスセグメント`/$value`を追加して、ファイルまたはアイテムの添付ファイルの生のコンテンツを取得することができます。 
+
+添付ファイルの場合、コンテンツタイプは、元のコンテンツタイプに基づいています。 次の[例](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)を参照してください。
+
+[連絡先](../resources/contact.md)、[イベント](../resources/event.md)、または[メッセージ](../resources/message.md)であるアイテムの添付ファイルの場合、返される生のコンテンツは MIME 形式です。
+
+| アイテムの添付ファイルの種類  | 返された生のコンテンツ |
+|:-----------|:----------|
+| **連絡先** | [vCard](http://www.faqs.org/rfcs/rfc2426.html)MIME 形式。 [例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)を参照してください。 |
+| **イベント** | iCal MIME 形式。 [例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)を参照してください。 |
+| **メッセージ** | MIME 形式。 [例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)を参照してください。 |
+
+参照添付ファイルの`$value`を取得しようとすると、HTTP 405 が返されます。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合: Mail.Read
-* イベントで添付ファイルにアクセスする場合: Calendars.Read
-* Outlook からのタスクの添付ファイルにアクセスする場合: Tasks.Read
-* グループの投稿の添付ファイルにアクセスする場合: Group.Read.All
+* メッセージの添付ファイルにアクセスする場合: Mail. 読み取り
+* イベントの添付ファイルにアクセスする場合: 予定表. 読み取り
+* Outlook のタスクで添付ファイルにアクセスする場合: tasks. 読み取り
+* グループの投稿で添付ファイルにアクセスする場合: グループの全員
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
@@ -38,49 +55,66 @@ ms.locfileid: "29641163"
 
 ## <a name="http-request"></a>HTTP 要求
 
-[イベント](../resources/event.md)の添付ファイルです。
+このセクションでは、添付ファイルをサポートする各エンティティ ([イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[post](../resources/post.md)) の HTTP GET 要求構文を示します。
+
+- 添付ファイルのプロパティとリレーションシップを取得するには、指定された[イベント](../resources/event.md)、 **** [メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[post](../resources/post.md)インスタンスに添付された添付ファイルコレクションにインデックスを付ける添付ファイル ID を指定します。
+- 添付ファイルがファイルまたは Outlook アイテム (連絡先、イベント、またはメッセージ) の場合は、パスセグメント`/$value`を要求 URL に追加することによって、添付ファイルの生のコンテンツをさらに取得できます。
+
+[イベント](../resources/event.md)の添付ファイル。
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+GET /me/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
+GET /me/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-ユーザーのメールボックスの最上位レベルの [mailFolder](../resources/mailfolder.md) に含まれている[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーのメールボックス内のトップレベルの[mailfolder](../resources/mailfolder.md)に含まれる[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
+GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイルです。  次の例は、入れ子のレベルを 1 つを示していますが、メッセージというように子の子であることができます。
+ユーザーのメールボックス内の[mailfolder](../resources/mailfolder.md)の子フォルダーに含まれる[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
+GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-[Outlook タスク](../resources/outlooktask.md)の添付ファイルです。
+前の例では、入れ子の1つのレベルを示していますが、メッセージは子の子に配置することもできます。
+
+[Outlook タスク](../resources/outlooktask.md)の添付ファイル:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/outlook/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/tasks/<id>/attachments/{id}
+GET /me/outlook/tasks/{id}/attachments/{id}
+GET /users/{id}/outlook/tasks/{id}/attachments/{id}
+GET /me/outlook/tasks/{id}/attachments/{id}/$value
+GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
 グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
@@ -89,6 +123,8 @@ GET /users/<id>/outlook/tasks/<id>/attachments/{id}
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
+GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -107,27 +143,35 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。
+成功した場合、GET メソッドは`200 OK`応答コードを返します。 
 
-## <a name="example-file-attachment"></a>例 (添付ファイル)
+添付ファイルのプロパティとリレーションシップを取得している場合は、応答本文に[attachment](../resources/attachment.md)オブジェクトが含まれています。
 
-### <a name="request"></a>要求
+ファイルまたはアイテムの添付ファイルの生のコンテンツを取得する場合、応答本文には添付ファイルの生の値が含まれています。
 
-以下は、イベントの添付ファイルを取得する要求の例です。
+## <a name="examples"></a>例
+
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a>例 1: 添付ファイルのプロパティを取得する
+
+#### <a name="request"></a>要求
+
+以下は、メッセージの添付ファイルのプロパティを取得する要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment"
+  "name": "get_file_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_file_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -135,40 +179,42 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "contentType": "contentType-value",
-  "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
-  "contentId": "null",
-  "lastModifiedDateTime": "2016-01-01T12:00:00Z",
-  "id": "id-value",
-  "isInline": false,
-  "name": "name-value",
-  "size": 99
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages('AAMkAGUzY5QKjAAA%3D')/attachments/$entity",
+    "@odata.type": "#microsoft.graph.fileAttachment",
+    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+    "lastModifiedDateTime": "2019-04-02T03:41:29Z",
+    "name": "Draft sales invoice template.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 13068,
+    "isInline": false,
+    "contentId": null,
+    "contentLocation": null,
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
 
-## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a>例 2: アイテムの添付ファイルのプロパティを取得する
 
-### <a name="request-1"></a>要求 1
+#### <a name="request"></a>要求
 
-最初の例は、メッセージの項目の添付ファイルを取得する方法を示しています。**itemAttachment** のプロパティが返されます。
+最初の例は、メッセージのアイテムの添付ファイルを取得する方法を示しています。 **itemattachment**のプロパティが返されます。
 <!-- {
   "blockType": "request",
-  "name": "get_item_attachment"
+  "name": "get_item_attachment",
+  "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-### <a name="response-1"></a>応答 1
-
+#### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -180,7 +226,7 @@ Content-type: application/json
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
   "@odata.type":"#microsoft.graph.itemAttachment",
-  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "id":"AAMkADA1M-CJKtzmnlcqVgqI=",
   "lastModifiedDateTime":"2017-07-21T00:20:34Z",
   "name":"Reminder - please bring laptop",
   "contentType":null,
@@ -189,22 +235,25 @@ Content-type: application/json
 }
 ```
 
-### <a name="request-2"></a>要求 2
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>例 3: メッセージに添付されたアイテムのプロパティを展開して取得する
+#### <a name="request"></a>要求
 
-次の例は、`$expand` を使用してメッセージに添付されている項目のプロパティを取得する方法を示しています。この例では、項目はメッセージであり、添付メッセージのプロパティも返されます。
+次の例は、を使用`$expand`して、メッセージに添付されているアイテム (イベント、メッセージ、Outlook タスク、または投稿) のプロパティを取得する方法を示しています。 この例では、アイテムがメッセージであることを示します。添付されたメッセージのプロパティも返されます。
 <!-- {
   "blockType": "request",
-  "name": "get_and_expand_item_attachment"
+  "name": "get_and_expand_item_attachment",
+  "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-### <a name="response-2"></a>応答 2
-
+#### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_and_expand_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -280,24 +329,26 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>例 4: 参照添付ファイルのプロパティを取得する
 
-### <a name="request"></a>要求
+#### <a name="request"></a>要求
 
 以下は、イベントの添付ファイルの参照を取得する要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "get_reference_attachment"
+  "name": "get_reference_attachment",
+  "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG=","AAMkAGE1Mg72tgf7hJp0PICVGCc0g="]
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-### <a name="response"></a>応答
-
+#### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_reference_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
@@ -323,6 +374,242 @@ Content-type: application/json
   "isFolder": true
 }
 ```
+
+
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>例 5: メッセージの添付ファイルの生の内容を取得する
+
+#### <a name="request"></a>要求
+
+メッセージに添付されている Word ファイルの生の内容を取得する要求の例を次に示します。
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
+```
+
+#### <a name="response"></a>応答
+以下は、応答の例です。 実際の応答本文には、ファイル添付の生バイトが含まれており、簡潔にするためにここで短縮されています。
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{Raw bytes of the file}
+```
+
+
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>例 6: メッセージの連絡先添付ファイルの MIME 生の内容を取得する
+
+#### <a name="request"></a>要求
+
+メッセージに添付されている連絡先アイテムの生のコンテンツを取得する要求の例を次に示します。 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_contact_attachment",
+  "sampleKeys": ["AAMkADI5MAAGjk2PxAAA=","AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
+```
+
+#### <a name="response"></a>応答
+以下は、応答の例です。 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_contact_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCARD
+PROFILE:VCARD
+VERSION:3.0
+MAILER:Microsoft Exchange
+PRODID:Microsoft Exchange
+FN:Alex Wilbur
+N:Wilbur;Alex;;;
+NOTE:Sunday\, June 10\, 2012 5:44 PM:\nGutter\, window cleaning\, pressure 
+ washing\, roof debris blowing\n
+ORG:Contoso;
+CLASS:PUBLIC
+ADR;TYPE=WORK,PREF:;;4567 Main St;Buffalo;NY;98052;United States of America
+LABEL;TYPE=WORK,PREF:4567 Main St\nBuffalo\, NY 98052
+ADR;TYPE=HOME:;;;;;;
+ADR;TYPE=POSTAL:;;;;;;
+TEL;TYPE=WORK:(425) 555-0100
+TITLE:
+X-MS-IMADDRESS:
+REV;VALUE=DATE-TIME:2019-04-09T02:13:31,161Z
+END:VCARD
+```
+
+
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>例 7: メッセージのイベント添付ファイルの MIME 生の内容を取得する
+
+#### <a name="request"></a>要求
+
+メッセージに添付されているイベントの生の内容を取得する要求の例を次に示します。 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "sampleKeys": ["AAMkADVIOAAA=","AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
+```
+
+#### <a name="response"></a>応答
+以下は、応答の例です。 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Adele Vance:MAILTO:adelev@contoso.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Adele Vance:MAILTO:adelev@contoso.com
+DESCRIPTION;LANGUAGE=en-US:\n
+UID:040000008200
+SUMMARY;LANGUAGE=en-US:Review Megan's docs
+DTSTART;TZID=Pacific Standard Time:20190409T140000
+DTEND;TZID=Pacific Standard Time:20190409T160000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20190409T211833Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:0
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+```
+
+
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>例 8: メッセージの会議出席依頼アイテムの添付ファイルの MIME 生の内容を取得する
+
+#### <a name="request"></a>要求
+
+メッセージに添付されている会議出席依頼の生の内容 ( [eventmessage](../resources/eventmessage.md)型の) を取得する要求の例を次に示します。 **eventmessage**エンティティは、**メッセージ**の種類に基づいています。
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_message_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKiAAA=","AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
+```
+
+#### <a name="response"></a>応答
+以下は、応答の例です。 
+
+応答本文には、 **eventmessage**添付ファイルが MIME 形式で含まれています。 **イベントメッセージ**の本文は、簡潔にするために切り詰められています。 完全なメッセージ本文は、実際の呼び出しから返されます。
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_message_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+From: Megan Bowen <MeganB@contoso.OnMicrosoft.com>
+To: Adele Vance <AdeleV@contoso.OnMicrosoft.com>
+Subject: Let's go for lunch
+Thread-Topic: Let's go for lunch
+Thread-Index: AdTPqxOmg4AXoJV960a1j5NrJCHYjA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Thu, 28 Feb 2019 21:17:58 +0000
+Message-ID:
+    <CY4PR2201MB1046E9C83FC42478EF4EE283C9750@CY4PR2201MB1046.namprd22.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/alternative;
+    boundary="_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_"
+MIME-Version: 1.0
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/plain; charset="us-ascii"
+
+Does mid month work for you?
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+</head>
+<body>
+Does mid month work for you?
+</body>
+</html>
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
+
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_--
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

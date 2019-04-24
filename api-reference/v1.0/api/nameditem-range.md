@@ -3,11 +3,11 @@ title: NamedItem:Range
 description: 名前に関連付けられている範囲オブジェクトを返します。名前付き項目の型が範囲でない場合、例外をスローします。
 localization_priority: Normal
 ms.openlocfilehash: 93b00c813c84d7013f23d6dbe30cd86640b4e880
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460864"
 ---
 # <a name="nameditem-range"></a>NamedItem:Range
 

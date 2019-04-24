@@ -1,30 +1,30 @@
 ---
 title: eventMessage の取得
-description: 展開 '**イベント**のパラメーター
+description: "**イベント**の expand ' パラメーター"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ffa2524939e5866bc74d255606a7a28297d691d2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464001"
 ---
 # <a name="get-eventmessage"></a>eventMessage の取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。 適用、 `$expand` 、出席者の予定表に関連する[イベント](../resources/event.md)を取得する**イベント**のナビゲーション プロパティのパラメーターです。
+[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。 出席者の`$expand`予定表にある関連[イベント](../resources/event.md)を取得するには、**イベント**ナビゲーションプロパティのパラメーターを適用します。
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a>イベント メッセージの本文を html 形式またはテキスト形式で取得します。
+### <a name="get-the-event-message-body-in-html-or-text-format"></a>HTML またはテキスト形式のイベントメッセージ本文を取得する
 
-イベント メッセージの本文は、html 形式またはテキスト形式で指定できます。
+イベントメッセージ本文は、HTML 形式またはテキスト形式で指定できます。
 
-使用することができます、`Prefer: outlook.body-content-type`の**本体**と**uniqueBody**のプロパティで、目的の形式を指定するのにはヘッダーが返されます、`GET`の要求。
+ヘッダーを使用し`GET`て、要求の**body**プロパティと**uniqueBody**プロパティで返される目的の形式を指定できます。 `Prefer: outlook.body-content-type`
 
-- 指定`Prefer: outlook.body-content-type="text"`テキスト形式で返されるイベント メッセージの本文を取得します。
-- 指定`Prefer: outlook.body-content-type="html"`、または、イベント メッセージの本文を HTML 形式で取得するのには、ヘッダーをスキップしています。
+- テキスト`Prefer: outlook.body-content-type="text"`形式で返されるイベントメッセージ本文を取得するように指定します。
+- イベント`Prefer: outlook.body-content-type="html"`メッセージの本文を HTML 形式で返すには、を指定するか、または単純にヘッダーをスキップします。
 
 いずれかのヘッダーを指定すると、応答には対応する `Preference-Applied` ヘッダーが確認として含まれます。
 

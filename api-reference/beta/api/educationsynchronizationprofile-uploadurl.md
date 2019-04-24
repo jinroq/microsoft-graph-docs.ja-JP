@@ -1,25 +1,25 @@
 ---
-title: 'educationSynchronizationProfile: uploadUrl'
-description: テナントで特定の学校のデータの同期プロファイルの Azure blob ストレージにソース ファイルをアップロードする共有アクセス署名 (SAS) を取得します。 SAS トークンには、1 時間の有効期限が。
+title: 'educationSynchronizationProfile: uploadurl'
+description: テナント内の特定の school データ同期プロファイルについて、ソースファイルを Azure blob ストレージにアップロードするための共有アクセス署名 (SAS) を取得します。 SAS トークンの有効期限は1時間です。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 74f37f5653147691c408cf83e3039920957352c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464699"
 ---
-# <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
+# <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadurl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の Azure blob ストレージにソース ファイルをアップロードするには、共有アクセス署名 (SAS) を取得します。 SAS トークンには、1 時間の有効期限が。
+テナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)について、ソースファイルを Azure blob ストレージにアップロードするための共有アクセス署名 (SAS) を取得します。 SAS トークンの有効期限は1時間です。
 
-アップロードのみの[CSV データ プロバイダー](../resources/educationcsvdataprovider.md)の URL が用意されています。
+アップロード URL は、 [CSV データプロバイダー](../resources/educationcsvdataprovider.md)に対してのみ提供されます。
 
-> **注:** SAS のトークンを使用して blob ストレージにアクセスするには、 [Azure ストレージの Sdk](https://github.com/search?q=org%3AAzure+azure-storage)または[AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy)を使用します。
+> **注:** SAS トークンを使用して blob ストレージにアクセスするには、 [Azure ストレージ sdk](https://github.com/search?q=org%3AAzure+azure-storage)または[azcopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy)を使用します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -27,7 +27,7 @@ ms.locfileid: "29511598"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -44,9 +44,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)の SA の URL です。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)の SAS URL を返します。
 
-かどうかは前の要求が処理中、このメソッドが返されます、 `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)のアップロードが現在ブロックされていることを示します。
+以前の要求がまだ処理されている場合、この`409 Conflict`メソッドは、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)に対してアップロードが現在ブロックされていることを示すを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

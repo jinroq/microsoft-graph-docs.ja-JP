@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: cb0b760bf58d9127d7cec97ac700fe04f6f7f481
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463139"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 アクティブ ユーザー レポート
 
@@ -21,5 +21,5 @@ Office 365 アクティブ ユーザー レポートを使用すると、組織�
 | 関数                                 | 戻り値の型 | 説明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [ユーザーの詳細を取得する](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Office 365 アクティブ ユーザーに関する詳細を取得します。 |
-| [ユーザーの数を取得する](../api/reportroot-getoffice365activeusercounts.md) | Stream      | レポート期間中の日ごとのアクティブ ユーザー数を製品別に取得します。 |
+| [ユーザーの数を取得する](../api/reportroot-getoffice365activeusercounts.md) | ストリーム      | レポート期間中の日ごとのアクティブ ユーザー数を製品別に取得します。 |
 | [サービスのユーザーの数を取得する](../api/reportroot-getoffice365servicesusercounts.md) | Stream      | アクティビティの種類とサービス別のユーザー数を取得します。 |

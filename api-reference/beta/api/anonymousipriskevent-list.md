@@ -1,19 +1,19 @@
 ---
 title: リスト anonymousIpRiskEvents
-description: Anonymousipriskevent オブジェクトのリストを取得します。
+description: anonymousipriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: c2927ae470441d581a0879e97e395ca7720035f4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516813"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459263"
 ---
 # <a name="list-anonymousipriskevents"></a>リスト anonymousIpRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Anonymousipriskevent オブジェクトのリストを取得します。
+anonymousipriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -40,7 +40,7 @@ GET /anonymousIpRiskEvents
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[anonymousIpRiskEvent](../resources/anonymousipriskevent.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[anonymousIpRiskEvent](../resources/anonymousipriskevent.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

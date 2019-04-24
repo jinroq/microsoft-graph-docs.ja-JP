@@ -1,28 +1,28 @@
 ---
-title: AccessReview を適用します。
-description: 'Azure AD のレビュー機能にアクセス、完成した accessReview の決定を適用します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  '
+title: accessreview を適用する
+description: 'Azure AD access レビュー機能で、完了した accessreview の決定を適用します。  ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。  '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9612f3bcb8a032ee32cd7b058d3f21950c9b120f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512214"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456879"
 ---
-# <a name="apply-accessreview"></a>AccessReview を適用します。
+# <a name="apply-accessreview"></a>accessreview を適用する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、完成した[accessReview](../resources/accessreview.md)の決定を適用します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、完了した[accessreview](../resources/accessreview.md)の決定を適用します。  ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。  
 
 
-アクセス確認が完了したら、いずれかの終了日に到達したか、または管理者が手動で停止しているし、自動適用ためにでしたように構成されて、確認のため、変更を適用する適用を呼び出すことができます。 適用が行われるまでアクセス権を削除するのには意思決定には表示されませんソース リソースをユーザーがインスタンスにそれらのグループ メンバーシップを保持します。 呼び出すことによって適用、レビューの結果は、グループまたはアプリケーションを更新することによって実装されています。 ユーザーのアクセスが拒否された場合、レビューに管理者は、この API を呼び出すときに、Azure の AD は、メンバーシップ、またはアプリケーションの割り当てを削除します。 
+終了日に達したか、管理者が手動で停止したためにアクセスレビューが終了し、レビューのために自動適用が構成されていない場合は、[適用] を呼び出して変更を適用できます。 適用が行われるまで、アクセス権を削除するための決定はソースリソースに表示されず、インスタンスのユーザーはグループメンバーシップを保持します。 [適用] を呼び出すと、レビューの結果が、グループまたはアプリケーションを更新することによって実装されます。 ユーザーのアクセスがレビューで拒否された場合、管理者がこの API を呼び出すと、Azure AD はそれらのメンバーシップまたはアプリケーション割り当てを削除します。 
 
-アクセス確認が終了したら、自動適用後に構成していたレビューのステータスが完了から、中間の状態が変更され、最後に適用の状態に変更されます。 ことは、数分後にアプリケーションまたはメンバーシップの割り当てをグループ化は、リソースから削除されている場合に、拒否されたユーザーを参照してください。
+アクセスレビューが完了し、自動適用が構成されると、レビューの状態は [完了] から [中間状態] に変わり、最後に [適用済みの状態] に変わります。 却下されたユーザーが存在する場合は、リソースグループのメンバーシップまたはアプリの割り当てから数分で削除されることを確認する必要があります。
 
-レビューを適用するか、適用を選択すると、構成されている自動設置ディレクトリ内から発信されたグループまたは動的グループに影響がありません。 設置型の作成元のグループを変更する場合は、結果をダウンロードし、そのディレクトリ内のグループの形式にこれらの変更を適用します。
+構成済みの自動適用レビュー、または [適用] を選択しても、オンプレミスディレクトリまたは動的グループで発生するグループには影響しません。 オンプレミスで発生したグループを変更する場合は、結果をダウンロードして、そのディレクトリ内のグループの表現にその変更を適用します。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -30,7 +30,7 @@ ms.locfileid: "29512214"
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -42,7 +42,7 @@ POST /accessReviews('<id>')/applyDecisions()
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -53,7 +53,7 @@ POST /accessReviews('<id>')/applyDecisions()
 
 ## <a name="see-also"></a>関連項目
 
-- [アクセス確認を実行する方法](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [アクセスレビューを完了する方法](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

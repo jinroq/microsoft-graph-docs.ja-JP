@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d454f5a58601cb3a8824393e017cd0acb16a0d9d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466246"
 ---
 # <a name="update-securitybaselinedevicestate"></a>securityBaselineDeviceState の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子|
-|manageddeviceid|文字列|Intune デバイス id|
+|manageddeviceid|String|Intune デバイス id|
 |deviceDisplayName|String|デバイスの表示名|
 |userPrincipalName|String|ユーザー プリンシパル名|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースラインコンプライアンスの状態。 可能な値は `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict` です。|

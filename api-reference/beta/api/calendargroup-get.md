@@ -1,21 +1,21 @@
 ---
 title: Get calendarGroup
-description: 予定表グループ オブジェクトのプロパティとリレーションシップを取得します。
+description: 予定表グループ オブジェクトのプロパティと関係を取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: c5eb48f208a9f4a6e8fa0b6c6268722501b16d52
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517660"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461417"
 ---
 # <a name="get-calendargroup"></a>Get calendarGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-予定表グループ オブジェクトのプロパティとリレーションシップを取得します。
+予定表グループ オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 

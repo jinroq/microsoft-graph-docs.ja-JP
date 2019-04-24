@@ -1,28 +1,28 @@
 ---
-title: Educationassignment を更新します。
-description: 割り当てオブジェクトを更新します。 クラスの先生だけは、これを実行できます。 割り当ての状態を変更するのには、修正プログラムの要求を使用できないことに注意してください。 発行アクションを使用すると、割り当ての状態を変更します。
+title: educationassignment の更新
+description: assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、発行アクションを使用します。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458167"
 ---
-# <a name="update-educationassignment"></a>Educationassignment を更新します。
+# <a name="update-educationassignment"></a>educationassignment の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-割り当てオブジェクトを更新します。 クラスの先生だけは、これを実行できます。 割り当ての状態を変更するのには、修正プログラムの要求を使用できないことに注意してください。 [発行](../api/educationassignment-publish.md)アクションを使用すると、割り当ての状態を変更します。
+assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、[発行](../api/educationassignment-publish.md)アクションを使用します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -38,21 +38,21 @@ PATCH /education/classes/{id}/assignments/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|ブール値| かどうかの提出書類は、期限より後に送信できます。|
-|allowStudentsToAddResourcesToSubmission|ブール値| かどうか、受講生受講者は、提出書類にリソースを追加できます。 リソースの割り当て] ボックスの一覧から、提出書類の項目のみが付属しているかどうかを指定します。 |
-|assignDateTime|DateTimeOffset| 日付は受講者に割り当てを発行する必要があります。 |
-|assignTo|educationAssignmentRecipient| 割り当てを取得した受講者です。|
-|displayName|String| 割り当ての名前です。 |
-|dueDateTime|DateTimeOffset| 割り当ての日付が期限です。 |
-|グレーディング|educationAssignmentGradeType| どの割り当てが焼き付けるされます。|
-|手順|item.body| 割り当てと受講者に指示します。 |
+|allowLateSubmissions|Boolean| 期日後に提出を送信できるかどうか。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生が提出物にリソースを追加できるかどうか。 提出物のアイテムが割り当てリソースリストからのものだけであったかどうかを示しました。 |
+|割り当ての datetime|DateTimeOffset| 割り当てが学生に公開される日付。 |
+|への割り当て|educationAssignmentRecipient| 課題を受ける学生。|
+|displayName|String| 割り当ての名前を指定します。 |
+|dueDateTime|DateTimeOffset| 日付の割り当て期限です。 |
+|変化|educationAssignmentGradeType| 割り当てが採点される方法。|
+|手順|microsoft.outlookservices.itembody| 受講者に割り当てと共に提供される指示。 |
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[educationAssignment](../resources/educationassignment.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[educationAssignment](../resources/educationassignment.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。
@@ -77,7 +77,7 @@ Content-length: 279
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "response",

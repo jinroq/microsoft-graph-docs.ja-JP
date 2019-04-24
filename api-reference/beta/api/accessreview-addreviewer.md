@@ -1,21 +1,21 @@
 ---
-title: AccessReview の校閲者を追加します。
-description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として他のユーザーを追加するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
+title: accessreview レビュー担当者を追加する
+description: 'Azure AD access レビュー機能で、既存の accessreview オブジェクトを更新して、別のユーザーをレビュー担当者として追加します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1a526451330321c7fbbfd1d5287dd5ad892eee84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516365"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456858"
 ---
-# <a name="add-accessreview-reviewer"></a>AccessReview の校閲者を追加します。
+# <a name="add-accessreview-reviewer"></a>accessreview レビュー担当者を追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、レビュー担当者として他のユーザーを追加するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[accessreview](../resources/accessreview.md)オブジェクトを更新して、別のユーザーをレビュー担当者として追加します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -23,7 +23,7 @@ ms.locfileid: "29516365"
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -35,27 +35,27 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、校閲者となるユーザーの ID の JSON 表現を指定します。
+要求本文で、レビュー担当者になるユーザーの ID の JSON 表記を指定します。
 
-次の表は、accessReview を更新するときに指定できるプロパティを示しています。
+次の表に、accessreview の更新時に提供できるプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-| `id`             |`String`                                                        | ユーザー id。  |
+| `id`             |`String`                                                        | ユーザー ID。  |
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201, Created`応答コード。
+成功した場合、このメソッド`201, Created`は応答コードを返します。
 
 ## <a name="example"></a>例
 
-これは、1 回限り (繰り返し発生しない) のアクセス確認をその他の校閲者の更新の例です。
+これは、追加のレビュー担当者との1回限り (定期的でない) アクセスレビューを更新する例です。
 
 ##### <a name="request"></a>要求
-要求の本文に、JSON 形式のユーザー オブジェクトの id を指定します。
+要求本文で、ユーザーオブジェクトの id の JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",

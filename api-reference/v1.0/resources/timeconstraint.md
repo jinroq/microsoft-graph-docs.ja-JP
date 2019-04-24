@@ -1,17 +1,17 @@
 ---
 title: timeConstraint リソースの種類
-description: 指定したアクティビティの性質と空き時間帯に従って、会議の日時の候補を、特定の時間と曜日に限定します。
+description: 指定されたアクティビティの性質および開いている時間帯に従って、会議時間の提案を特定の時間と曜日に制限します。
 localization_priority: Normal
 ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815093"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456958"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint リソースの種類
 
-指定したアクティビティの性質と空き時間帯に従って、会議の日時の候補を、特定の時間と曜日に限定します。
+指定されたアクティビティの性質および開いている時間帯に従って、会議時間の提案を特定の時間と曜日に制限します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,9 +33,9 @@ ms.locfileid: "27815093"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|オプションは、アクティビティの性質です。 可能な値: `work`、 `personal`、 `unrestricted`、または`unknown`。|
+|activityDomain|activityDomain|活動の性質です (省略可能)。 使用可能な値は`work`、 `personal`、 `unrestricted`、、 `unknown`またはです。|
 |timeslots|[timeSlot](timeslot.md) コレクション|期間の配列。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

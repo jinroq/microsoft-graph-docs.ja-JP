@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460941"
 ---
 # <a name="chart-resource-type"></a>グラフ リソースの種類
 
@@ -25,26 +25,26 @@ ms.locfileid: "29643235"
 |[Get Chart](../api/chart-get.md) | [Chart](chart.md) |グラフ オブジェクトのプロパティと関係を読み取ります。|
 |[ChartSeries を作成する](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| データ系列のコレクションに投稿して、新しい ChartSeries を作成します。|
 |[データ系列を一覧表示する](../api/chart-list-series.md) |[ChartSeries](chartseries.md) コレクション| ChartSeries オブジェクトのコレクションを取得します。|
-|[更新する](../api/chart-update.md) | [Chart](chart.md)   |グラフ オブジェクトを更新します。 |
+|[Update](../api/chart-update.md) | [Chart](chart.md)   |グラフ オブジェクトを更新します。 |
 |[Image](../api/chart-image.md)|Base64 でエンコードされた文字列の画像|指定したサイズに合わせてグラフを拡大・縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。|
 |[削除する](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
 |[Setdata](../api/chart-setdata.md)|なし|グラフの元データをリセットします。|
 |[Setposition](../api/chart-setposition.md)|なし|ワークシート上のセルを基準にしてグラフを配置します。|
 |[List](../api/chart-list.md) | [Chart](chart.md) コレクション |グラフ オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|コレクション内の位置に基づいて、グラフを取得します。|
+|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|コレクション内での位置を基にグラフを取得します。|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|新しいグラフを作成します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
-|id|文字列|コレクション内での位置を基にグラフを取得します。読み取り専用です。|
+|ID|string|コレクション内での位置を基にグラフを取得します。読み取り専用です。|
 |left|double|グラフの左側からワークシートの原点までの距離 (ポイント単位)。|
-|name|文字列| グラフ オブジェクトの名前を表します。|
+|name|string|グラフ オブジェクトの名前を表します。|
 |top|double|オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。|
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|グラフの軸を表します。値の取得のみ可能です。|
@@ -52,7 +52,7 @@ ms.locfileid: "29643235"
 |format|[ChartAreaFormat](chartareaformat.md)|グラフ領域の書式設定プロパティをカプセル化します。値の取得のみ可能です。|
 |legend|[ChartLegend](chartlegend.md)|グラフの凡例を表します。値の取得のみ可能です。|
 |series|[ChartSeries](chartseries.md) コレクション|グラフの 1 つのデータ系列またはデータ系列のコレクションを表します。値の取得のみ可能です。|
-|役職|[ChartTitle](charttitle.md)|指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。値の取得のみ可能です。|
+|title|[ChartTitle](charttitle.md)|指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。値の取得のみ可能です。|
 |worksheet|[Worksheet](worksheet.md)|現在のグラフを含んでいるワークシート。読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記

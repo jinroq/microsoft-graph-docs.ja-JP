@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: f16c858f7e8c9d85dbe8252bde0a791bc325514c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464014"
 ---
 # <a name="application-calculate"></a>アプリケーション: 計算
 
@@ -41,7 +41,7 @@ POST /workbook/application/calculate
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|calculationType|文字列|使用する計算の種類を指定します。  可能な値は、`Recalculate`、`Full`、`FullRebuild` です。|
+|calculationType|string|使用する計算の種類を指定します。  可能な値は、`Recalculate`、`Full`、`FullRebuild` です。|
 
 ## <a name="response"></a>応答
 

@@ -1,23 +1,25 @@
 ---
-title: plannerAppliedCategories リソースの種類
-description: '**AppliedCategoriesCollection**リソースは、タスクに適用されている項目 (またはラベル) のコレクションを表します。 PlannerTask オブジェクトの一部です。'
+title: プランリソースの種類
+description: /**コレクション**リソースは、タスクに適用されているカテゴリ (またはラベル) のコレクションを表します。 このメソッドは、プランのタスクオブジェクトに含まれています。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 604cf63d922ab59e038b5ccb8ea3b48a707a9bc0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981603"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462348"
 ---
-# <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories リソースの種類
+# <a name="plannerappliedcategories-resource-type"></a>プランリソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**AppliedCategoriesCollection** リソースは、タスクに適用されているカテゴリ (またはラベル) のコレクションを表します。これは [plannerTask](plannertask.md) オブジェクトの一部です。最大 6 つのカテゴリをタスクに適用できます。カテゴリの説明 (`category1`、`category2` など) は、[計画の詳細](plannerplandetails.md)オブジェクトの一部です。これはオープン型です。
+/**コレクション**リソースは、タスクに適用されているカテゴリ (またはラベル) のコレクションを表します。 このメソッドは、[プランのタスク](plannertask.md)オブジェクトに含まれています。
+1つのタスクには最大6つのカテゴリを適用できます。 カテゴリの説明 ( `category1` `category2`など) は、 [plan details](plannerplandetails.md)オブジェクトの一部です。 これはオープン型です。
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。ただし、この場合クライアントは、対応するカテゴリがタスクに適用される際に、`category1`、`category2`、`category3`、`category4`、`category5` および/または `category6` を、`true` ブール値が設定されたプロパティとして指定する必要があります。以下に例を示します。これらが適用されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。 
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは、対応するカテゴリ`category1`が`category2`タスク`category3`に`category4`適用`category5`されるとき`category6`に`true`ブール値で、、、、および/またはをプロパティとしてプロパティとして提供する必要があります。 例を以下に示します。 このプロパティが適用されていない場合、プロパティの値を`false` boolean に設定すると、プロパティが自動的に削除されます。 
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -25,8 +27,9 @@ ms.locfileid: "27981603"
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerAppliedCategories"
 }-->
 
@@ -48,10 +51,15 @@ ms.locfileid: "27981603"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerAppliedCategories resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerappliedcategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

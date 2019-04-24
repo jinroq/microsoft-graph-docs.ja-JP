@@ -1,25 +1,25 @@
 ---
-title: リスト bookingBusinesses
-description: テナントの作成された bookingbusiness オブジェクトのコレクションを取得します。
+title: bookingbusinesses のリスト
+description: テナント用に作成された bookingbusiness オブジェクトのコレクションを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 8018b8ac7f9d2e5f74e4233dbc36c2a6faa2d9a8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523156"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461801"
 ---
-# <a name="list-bookingbusinesses"></a>リスト bookingBusinesses
+# <a name="list-bookingbusinesses"></a>bookingbusinesses のリスト
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントの作成された[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのコレクションを取得します。
+テナント用に作成された[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのコレクションを取得します。
 
-この操作には、コレクション内の**id**と予約の各企業の**表示名**だけが返されます。 パフォーマンスに関する考慮事項、その他のプロパティは返されません。 [GET](bookingbusiness-get.md)操作でその**id**を指定することによって、予約のビジネスの他のプロパティを取得できます。
+この操作では、コレクション内の各予約業務の**id**と**displayName**のみが返されます。 パフォーマンスに関する考慮事項として、他のプロパティは返されません。 [get](bookingbusiness-get.md)操作でその**id**を指定することにより、予約ビジネスのその他のプロパティを取得できます。
 
-照会することも予約企業内の文字列を指定することにより、`query`は、テナントの企業間で一致するサブスト リングのパラメーターです。 次の[例](#request-2)を参照してください。
+テナントのビジネス間で部分文字列の一致を実行するため`query`に、パラメーターに文字列を指定して、予約企業を照会することもできます。 次の[例](#request-2)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -27,7 +27,7 @@ ms.locfileid: "29523156"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -39,7 +39,7 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-このメソッドもサポートしています、`query`パラメーターの文字列値を受け取ります。 このパラメーターは、指定した文字列に一致する複数の企業に取得結果を制限します。 次[の使用例](#request-2)を表示できます。
+このメソッドは、文字列`query`型 (string) の値を受け取るパラメーターもサポートしています。 このパラメーターは、指定した文字列に一致する企業に対して GET 結果を制限します。 次の[例](#request-2)を参照してください。
 
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -50,10 +50,10 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingBusiness](../resources/bookingbusiness.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-テナントの記帳業務を取得する例を次にします。
+次の例では、テナント内の予約企業を取得します。
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
@@ -90,7 +90,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>要求 2
-使用する方法の例を次の`query`、テナントの 1 つまたは複数の一致する受注企業を取得するパラメーターです。
+次の例は、 `query`パラメーターを使用して、テナント内の1つ以上の一致する予約企業を取得する方法を示しています。
 <!-- {
   "blockType": "request",
   "name": "query_bookingbusinesses"

@@ -1,30 +1,30 @@
 ---
-title: 登録 governanceResource
-description: PIM では、アンマネージの governanceResource オブジェクトを登録します。
+title: governanceResource の登録
+description: PIM に管理されていない governanceResource オブジェクトを登録します。
 localization_priority: Normal
 ms.openlocfilehash: f65c8b5884f08377967d3418bade0d5fc70c2063
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463951"
 ---
-# <a name="register-governanceresource"></a>登録 governanceResource
+# <a name="register-governanceresource"></a>governanceResource の登録
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特権 Id 管理では、アンマネージ[governanceResource](../resources/governanceresource.md)オブジェクトを登録します。
+管理されていない[governanceResource](../resources/governanceresource.md)オブジェクトを特権 id 管理に登録します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** この API には、依頼者にあるリソースに 1 つ以上のアクティブなロールの割り当てが必要です。
+>**注:** この API では、要求者がリソースに対して少なくとも1つのアクティブなロール割り当てを持っている必要もあります。
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
+|委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
+|アプリケーション | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -32,8 +32,8 @@ ms.locfileid: "29519046"
 POST /privilegedAccess/azureResources/resources/register
 ```
 
-### <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッド**のみ**をサポートしている、`$select`と`$expand`の応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)です。
+### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッド**** は、応答`$select`を`$expand`カスタマイズするためのおよび[OData クエリパラメーター](/graph/query-parameters)のみをサポートしています。
 
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -43,15 +43,15 @@ POST /privilegedAccess/azureResources/resources/register
 
 ### <a name="request-body"></a>要求本文
 
-|パラメーター      |型                 |必須 |説明|
+|パラメーター      |Type                 |必須 |説明|
 |:-------------|:----------------------|:--------|:----------|
-|externalId    |String                 |✓        |PIM に登録されるリソースの externalId です。|
+|externalId    |String                 |✓        |PIM に登録するリソースの externalid。|
 
 ### <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答します。
+成功した場合、このメソッド`200 OK`は応答を返します。
 
 ### <a name="example"></a>例
-この例では、Azure のサブスクリプション Wingtip toys 社の商品を登録する方法を示します。
+この例では、Azure サブスクリプションの Wingtip Toys-生産を登録する方法を示します。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

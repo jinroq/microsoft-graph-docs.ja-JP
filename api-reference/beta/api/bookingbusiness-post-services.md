@@ -1,27 +1,27 @@
 ---
-title: BookingService を作成します。
-description: 指定された bookingbusiness の新しい bookingService を作成します。
+title: bookingservice の作成
+description: 指定した bookingservice の新しい bookingservice を作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 50501ac1dd79b41b9e970f870964fffaace2f8da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461776"
 ---
-# <a name="create-bookingservice"></a>BookingService を作成します。
+# <a name="create-bookingservice"></a>bookingservice の作成
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[bookingbusiness](../resources/bookingbusiness.md)用の新しい[bookingService](../resources/bookingservice.md)を作成します。
+指定した[bookingservice](../resources/bookingbusiness.md)の新しい[bookingservice](../resources/bookingservice.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -37,11 +37,11 @@ POST /bookingBusinesses/{id}/services
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [bookingService](../resources/bookingservice.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`201, Created`、応答の本体で応答コードと[bookingService](../resources/bookingservice.md)のオブジェクトです。
+成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingservice](../resources/bookingservice.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -114,7 +114,7 @@ Content-type: application/json
     ]
 }
 ```
-要求の本文には、 [bookingService](../resources/bookingservice.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {

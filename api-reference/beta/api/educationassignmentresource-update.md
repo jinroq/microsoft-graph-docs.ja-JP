@@ -1,28 +1,28 @@
 ---
-title: EducationAssignmentResource を更新します。
-description: '割り当てに関連付けられているリソースのプロパティを更新します。 クラスで教師だけでは、割り当てリソースのオブジェクトを変更できます。  '
+title: educationAssignmentResource の更新
+description: '割り当てに関連付けられているリソースのプロパティを更新します。 クラス内の教師のみが、割り当てリソースオブジェクトを変更できます。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457957"
 ---
-# <a name="update-educationassignmentresource"></a>EducationAssignmentResource を更新します。
+# <a name="update-educationassignmentresource"></a>educationAssignmentResource の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-割り当てに関連付けられているリソースのプロパティを更新します。 クラスで教師だけでは、割り当てリソースのオブジェクトを変更できます。  
+割り当てに関連付けられているリソースのプロパティを更新します。 クラス内の教師のみが、割り当てリソースオブジェクトを変更できます。  
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -38,15 +38,15 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|ブール値| 割り当てを発行する際、このリソースを各受講者用のリソース オブジェクトにコピーかどうかを示します。|
-|リソース|educationResource| Resource オブジェクト |
+|distributeForStudentWork|Boolean| 割り当てが発行されたときに、各学生のリソースオブジェクトにこのリソースをコピーする必要があるかどうかを示します。|
+|リソース|educationResource| Resource オブジェクト。 |
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。
@@ -66,7 +66,7 @@ Content-length: 822
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 
 
 <!-- {

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455700"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -26,7 +26,8 @@ ms.locfileid: "29528208"
 |アプリケーション | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーの既定の[contactFolder](../resources/contactfolder.md)からです。
+<!-- { "blockType": "ignored" } -->
+ユーザーの既定の[contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ PATCH /users/{id | userPrincipalName}/contacts/{id}
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-[にお問い合わせください](../resources/contact.md) [contactFolder](../resources/mailfolder.md)の子フォルダーに含まれています。  次の例は、入れ子のレベルを 1 つを示していますが、連絡先を子の子でというように配置できます。
+[contactFolder](../resources/contact.md) の子フォルダー内に含まれる [連絡先](../resources/mailfolder.md)。  次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。
 ```http
 PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -58,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String||
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|文字列型 (String)|連絡先の表示名。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、更新操作の表示名としてです。|
+|displayName|文字列型 (String)|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)コレクション|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |gender |String |連絡先の性別。 |
@@ -74,25 +75,25 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |parentFolderId|String|連絡先の親フォルダーの ID。|
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |phones |[phone](../resources/phone.md) コレクション |自宅電話、携帯電話、勤務先電話など、連絡先に関連付けられた電話番号。 |
-|postalAddresses |[PhysicalAddress](../resources/physicaladdress.md) コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
-|profession|String|連絡先の専門的職業。|
+|postalAddresses |[physicalAddress](../resources/physicaladdress.md)コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
+|profession|文字列|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|姓|文字列|連絡先の姓。|
-|タイトル|String|連絡先の肩書。|
+|surname|String|連絡先の姓。|
+|title|String|連絡先の肩書。|
 |websites |[website](../resources/website.md) コレクション|連絡先に関連付けられた Web サイト。 |
-|WeddingAnniversary |日付 |連絡先の結婚記念日。 |
+|weddinganniversary 日 |日付 |連絡先の結婚記念日。 |
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
-|yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
 
-使用することができます**お問い合わせください**リソースは、[拡張機能](/graph/extensibility-overview)をサポートするため、`PATCH`を追加、更新、または既存の**連絡先**のインスタンスで拡張機能のカスタム プロパティに独自のアプリケーション固有データを削除する操作です。
+**contact**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**連絡先**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文のオブジェクトの更新に[お問い合わせください](../resources/contact.md)。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[連絡先](../resources/contact.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例では、指定した連絡先の個人用の電子メール アドレスを更新します。
+次の使用例は、指定された連絡先の個人用電子メールアドレスを更新します。
 <!-- {
   "blockType": "request",
   "name": "update_contact"

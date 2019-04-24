@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1ca407ab560f70ae0d65252e397705cb878e0f52
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522939"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457761"
 ---
 # <a name="update-educationclass-properties"></a>educationclass プロパティを更新する
 
@@ -38,14 +38,15 @@ PATCH /education/classes/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String| クラスの説明。|
+|description|String| クラスの説明。|
 |displayName|String| クラスの名前。|
 |mailNickname|String| 機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。 |
-<!-- Please verify the revised description here. -->| classCode |文字列 |クラスの学校で使用されるコードです |。| externalId |文字列 |同期中のシステムからのクラスの ID です。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 使用可能な値: `sis`、`manual`、`enum_sentinel`.|
+<!-- Please verify the revised description here. -->
+|classCode|String| 学校が使用するクラス コード。| |externalId|String| 同期システムからのクラスの ID。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 使用可能な値: `sis`、`manual`、`enum_sentinel`.|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationClass](../resources/educationclass.md) オブジェクトを返します。

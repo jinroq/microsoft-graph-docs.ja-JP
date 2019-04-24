@@ -1,21 +1,21 @@
 ---
 title: 連絡先を一覧表示する
-description: サインインしているユーザーのメールボックス内のすべての連絡先を取得する (.../me/contacts) か、指定された連絡先フォルダーから取得します。
+description: サインインしているユーザーのメールボックス内のすべての連絡先を取得する (. ../me/contacts) か、指定した連絡先フォルダーから取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b3e5ee2ad13e454c0ab118b1a5b14509c9b33fbd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529209"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455703"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインインしているユーザーのメールボックス内のすべての連絡先を取得する (.../me/contacts) か、指定された連絡先フォルダーから取得します。
+サインインしているユーザーのメールボックス内のすべての連絡先を取得する (. ../me/contacts) か、指定した連絡先フォルダーから取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

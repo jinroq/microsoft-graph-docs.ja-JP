@@ -3,11 +3,11 @@ title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
 ms.openlocfilehash: eab6116768523d021577bef345151c3e62681fe5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460880"
 ---
 # <a name="add-named-item"></a>名前付きアイテムの追加
 
@@ -38,15 +38,15 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|名前付きの項目の名前。|
+|name|string|名前付きの項目の名前。|
 |reference|Json|名前が参照する数式または範囲。|
-|comment|文字列|名前付きアイテムに関連付けられているコメント。|
+|comment|string|名前付きアイテムに関連付けられているコメント。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookNamedItem](../resources/nameditem.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。
 
 
 ## <a name="example"></a>例

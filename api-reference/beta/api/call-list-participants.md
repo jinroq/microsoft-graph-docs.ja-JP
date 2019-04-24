@@ -1,21 +1,21 @@
 ---
 title: 参加者を一覧表示する
-description: 呼び出し内の構成要素のオブジェクトの一覧を取得します。
+description: 呼び出し内の参加者のオブジェクトのリストを取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461277"
 ---
 # <a name="list-participants"></a>参加者を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出し内の構成要素のオブジェクトの一覧を取得します。
+呼び出し内の参加者のオブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -38,7 +38,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[構成要素](../resources/participant.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[参加者](../resources/participant.md)オブジェクトのコレクションを返します。
 
 ## <a name="examples"></a>例
 

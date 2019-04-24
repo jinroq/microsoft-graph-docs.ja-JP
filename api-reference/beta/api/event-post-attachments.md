@@ -1,15 +1,15 @@
 ---
 title: 添付ファイルを追加する
-description: イベントの添付ファイルを追加するのにには、この API を使用します。 そこから
+description: 添付ファイルをイベントに追加する場合に、この API を使用します。 存在するため
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ece15b579bae9e439eb9303c8b594631ce9b9b31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464025"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -176,8 +176,8 @@ Content-length: 162
 
 ### <a name="request"></a>要求
 
-ここでは、既存のイベントへの参照の添付ファイルを追加する要求の例です。
-添付ファイルは、OneDrive 上のフォルダーをポイントします。
+以下は、既存のイベントに参照添付ファイルを追加する要求の例です。
+添付ファイルは、OneDrive 上のフォルダーを指します。
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_event",
@@ -201,7 +201,7 @@ Content-length: 319
 
 ### <a name="response"></a>応答
 
-ここでは、完全な応答の例です。
+完全な応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true,

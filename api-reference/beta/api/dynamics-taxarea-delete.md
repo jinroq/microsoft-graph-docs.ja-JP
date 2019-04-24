@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 631f043819d45ded32f4a79cf68e644221f2a4aa
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458314"
 ---
 # <a name="delete-taxareas"></a>taxAreas の削除
 Dynamics 365 Business Central から税エリアオブジェクトを削除します。

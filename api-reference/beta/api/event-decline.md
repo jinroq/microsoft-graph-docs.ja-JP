@@ -1,21 +1,21 @@
 ---
 title: 'イベント: 辞退'
-description: ユーザーの予定表で指定したイベントへの招待を辞退します。
+description: ユーザーの予定表の指定のイベントに対する詳細を辞退します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 27b29221c741c9aca9e42009d437b2559224d832
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464523"
 ---
 # <a name="event-decline"></a>イベント: 辞退
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー[の予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)への招待を辞退します。
+ユーザーの[予定表](../resources/calendar.md)の指定した[イベント](../resources/event.md)への招待を辞退します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

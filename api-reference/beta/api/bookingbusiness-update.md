@@ -1,27 +1,27 @@
 ---
-title: Bookingbusiness を更新します。
-description: BookingBusiness オブジェクトのプロパティを更新します。
+title: bookingbusiness の更新
+description: bookingbusiness オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: dba24dafef030ae53fc83fb06d1cc7b99ed71e81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461627"
 ---
-# <a name="update-bookingbusiness"></a>Bookingbusiness を更新します。
+# <a name="update-bookingbusiness"></a>bookingbusiness の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[BookingBusiness](../resources/bookingbusiness.md)オブジェクトのプロパティを更新します。
+[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -40,21 +40,21 @@ PATCH /bookingBusinesses/<id>
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|ビジネスの住所。|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md)コレクション|ビジネスの操作の時間です。|
-|businessType|String|ビジネスの種類。|
-|defaultCurrencyIso|String|ビジネスが Microsoft 予約上で動作する通貨コード。|
-|displayName|String|ビジネス顧客とやり取りするための名前です。|
-|email|String|ビジネスの電子メール アドレスです。|
-|phone|String|ビジネスの電話番号です。|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|このビジネスでの予約を作成する方法を指定します。|
-|websiteUrl|String|ビジネスの web サイトの URL です。|
+|address|[physicalAddress](../resources/physicaladdress.md)|会社の住所。|
+|microsoft.rtc.rgs.management.writablesettings.businesshours|[bookingwork hours](../resources/bookingworkhours.md)コレクション|業務の運営時間。|
+|businessType|String|業務の種類。|
+|defaultCurrencyIso|String|Microsoft の予約で勤務している通貨のコード。|
+|displayName|String|顧客とのインターフェイスとなる企業の名前。|
+|email|String|ビジネスの電子メールアドレス。|
+|phone|String|会社の電話番号。|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|このビジネスに対して予約を作成する方法を指定します。|
+|webSiteUrl|String|ビジネス web サイトの URL。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の使用例は、ビジネスの電子メール アドレスおよびビジネス既定の予約の時間帯を 1 時間に変更し、最大で 30 日間の予約を進めるには、ポリシーのスケジュール設定を更新します。
+次の例では、ビジネスの電子メールアドレスとスケジューリングポリシーを更新し、勤務先の既定の予約時間帯を1時間に変更してから30日以内に予約を進めます。
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness"

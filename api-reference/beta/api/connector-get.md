@@ -1,19 +1,19 @@
 ---
-title: コネクタを取得します。
-description: コネクタ オブジェクトのプロパティを取得します。
+title: コネクタの取得
+description: コネクタオブジェクトのプロパティを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 00813ad399190c764ba6c2d8607fa4e97a32b094
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525410"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455787"
 ---
-# <a name="get-connector"></a>コネクタを取得します。
+# <a name="get-connector"></a>コネクタの取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-コネクタ オブジェクトのプロパティを取得します。
+コネクタオブジェクトのプロパティを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/members/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[コネクタ](../resources/connector.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[コネクタ](../resources/connector.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

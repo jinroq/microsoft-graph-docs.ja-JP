@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1623fa762ff0089627e73eeae5e93dbc13f0a209
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465784"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>devicemanagementscriptdevicestate の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
 |runstate|[runstate](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 使用可能な値は、`unknown`、`success`、`fail` です。|
-|resultmessage|文字列|実行出力の詳細。|
+|resultmessage|String|実行出力の詳細。|
 |laststateupdatedatetime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|
 |errorDescription|String|デバイス管理スクリプトの誤った実行に対応するエラーの説明。|

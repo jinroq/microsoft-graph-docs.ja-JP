@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 4a1caaa7d81540f6a90052b13f04d7d3e5bf77da
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463566"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -26,19 +26,19 @@ ms.locfileid: "29690918"
 |[List schools](../api/educationuser-list-schools.md) |[educationSchool](educationschool.md) コレクション| ユーザーがメンバーになっている **educationSchool** オブジェクトのコレクションを取得します。|
 |[Get user](../api/educationuser-get-user.md) |[user](user.md)| この **educationUser** に対応する単純なディレクトリ **user** を取得します。|
 |[Update](../api/educationuser-update.md) | [educationUser](educationuser.md)   |**educationUser** オブジェクトを更新します。 |
-|[Delete](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
+|[削除する](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
-|businessPhones|String コレクション|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
+|businessPhones|String collection|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |createdBy|[identitySet](identityset.md)| ユーザーを作成したエンティティ。 |
-|部署|String|ユーザーが働いている部門の名前。$filter をサポートします。|
+|department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|文字列型 (String)|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
-|externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値: `sis`、 `manual`、 `unkownFutureValue`。|
+|externalSource|`educationExternalSource`| このユーザーが作成された場所。 使用可能な値: `sis`、`manual`、`unkownFutureValue`。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。 読み取り専用。 $filter をサポートします。|
@@ -49,9 +49,9 @@ ms.locfileid: "29690918"
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。 この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。 "DisablePasswordExpiration" を指定することもできます。 2 つを一緒に指定できます。例: "DisablePasswordExpiration、DisableStrongPassword"。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |preferredLanguage|String|ユーザーが設定する言語。 ISO 639-1 コードに従う必要があります。例: "en-US"。|
-|primaryRole|educationUserRole| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 可能な値: `student`、 `teacher`、 `unknownFutureValue`。 $filter をサポートします。|
+|primaryRole|educationUserRole| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`unknownFutureValue`。 $filter をサポートします。|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
-|relatedContacts|[relatedContact](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセットです。  この省略可能なプロパティは、$select 句で指定する必要があり、個々 のユーザーに対してのみ取得できます。|
+|その他の連絡先|その他の[連絡先](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセット。  このオプションのプロパティは $select 句で指定する必要があり、個々のユーザーに対してのみ取得できます。|
 |residenceAddress|[physicalAddress](physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |student|[educationStudent](educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
@@ -65,8 +65,8 @@ ms.locfileid: "29690918"
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) コレクション| ユーザーが属しているクラス。 Null 許容型。|
 |schools|[educationSchool](educationschool.md) コレクション| ユーザーが属している学校。 Null 許容型。|
-|assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| ユーザーの割り当ての一覧です。 Null 許容型。|
-|user|[user](user.md)| ディレクトリ ユーザーがこのユーザーに対応します。|
+|assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| ユーザーの割り当てのリスト。 Null 許容型。|
+|user|[ユーザー](user.md)| このユーザーに対応するディレクトリユーザー。|
 
 >**メモ:**  **educationassignment** リソースは /beta ベータ版のリソースです。 このリソースを使用する場合は、[変更ログ](/graph/changelog)を定期的に確認してください。 Microsoft Graph API リソースが /v1.0 エンドポイントにリリースされると、リリースは変更ログに記録されます。 アプリが **educationassignment** リソースを使用する場合は、次のコード ブロックに示すように、基本要求 URL を宣言する必要があります。  
 ```JavaScript

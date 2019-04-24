@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a3cba546ba0d2d815ee95838b4ea32fbf39372d1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465364"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "30262973"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

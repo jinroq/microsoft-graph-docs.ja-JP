@@ -1,21 +1,21 @@
 ---
-title: EducationSynchronizationProfile の同期を再開します。
-description: テナントで特定の学校のデータの同期プロファイルの同期を再開します。
+title: educationSynchronizationProfile での同期の再開
+description: テナント内の特定の学校データ同期プロファイルの同期を再開します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 50ffcb4ceab401a3041ecb69baa1de0409be94a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464848"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期を再開します。
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>educationSynchronizationProfile での同期の再開
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の同期を再開します。
+テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期を再開します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "29513257"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -55,7 +55,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 ##### <a name="response"></a>応答
 
-応答の本体がありません。
+応答本文はありません。
 
 <!-- {
   "blockType": "response",

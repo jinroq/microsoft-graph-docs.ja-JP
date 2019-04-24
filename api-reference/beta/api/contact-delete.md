@@ -1,21 +1,21 @@
 ---
 title: 連絡先を削除する
-description: 連絡先を削除する
+description: 連絡先を削除します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: be83bb8f655190d2da6aace13def579e371ef024
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455738"
 ---
 # <a name="delete-contact"></a>連絡先を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-連絡先を削除する
+連絡先を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -26,7 +26,8 @@ ms.locfileid: "29514769"
 |アプリケーション | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーの既定の[contactFolder](../resources/contactfolder.md)からです。
+<!-- { "blockType": "ignored" } -->
+ユーザーの既定の[contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
 ```http
 DELETE /me/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/contacts/{id}
 DELETE /me/contactFolders/{id}/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-[にお問い合わせください](../resources/contact.md) [contactFolder](../resources/mailfolder.md)の子フォルダーに含まれています。  次の例は、入れ子のレベルを 1 つを示していますが、連絡先を子の子でというように配置できます。
+[contactFolder](../resources/contact.md) の子フォルダー内に含まれる [連絡先](../resources/mailfolder.md)。  次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。
 ```http
 DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}

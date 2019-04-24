@@ -1,17 +1,17 @@
 ---
-title: オーディオのルーティング グループを作成します。
+title: 音声ルーティング グループを作成する
 description: 新しい**audioRoutingGroup**を作成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc0e2a3463229762b3a641f33f77f2df8d506aa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461221"
 ---
-# <a name="create-audio-routing-group"></a>オーディオのルーティング グループを作成します。
+# <a name="create-audio-routing-group"></a>音声ルーティング グループを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29522862"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポートされていません。                               |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                               |
-| アプリケーション                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション                            | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -39,14 +39,14 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 | Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[audioRoutingGroup](../resources/audioroutinggroup.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>例 1: 1 対 1 のオーディオ ルーティング グループ
+### <a name="example-1-one-to-one-audio-routing-group"></a>例 1: 1 対1の音声ルーティンググループ
 
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
@@ -72,7 +72,7 @@ Content-Length: 233
 }
 ```
 
-要求の本文には、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。
 
 ##### <a name="response"></a>応答
 
@@ -130,7 +130,7 @@ Content-Length: 233
 }
 ```
 
-要求の本文には、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。
 
 ##### <a name="response"></a>応答
 

@@ -1,23 +1,23 @@
 ---
-title: Get administrativeUnit
-description: プロパティと administrativeUnit オブジェクトの関係を取得します。
+title: administrativeUnit を取得する
+description: administrativeUnit オブジェクトのプロパティとリレーションシップを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 588d116d546503fa8db6c8ba56c5d0e328a10b8a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521608"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459487"
 ---
-# <a name="get-administrativeunit"></a>Get administrativeUnit
+# <a name="get-administrativeunit"></a>administrativeUnit を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと[administrativeUnit](../resources/administrativeunit.md)オブジェクトの関係を取得します。
+[administrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティとリレーションシップを取得します。
 
-**AdministrativeUnit**リソースでは、[拡張機能](/graph/extensibility-overview)をサポートするため使用することも、 `GET` **administrativeUnit**インスタンスのカスタム プロパティと拡張機能のデータを取得する操作です。
+**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、 `GET`この操作を使用して、 **administrativeUnit**インスタンスでカスタムプロパティと拡張機能データを取得することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /administrativeUnits/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[administrativeUnit](../resources/administrativeunit.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[administrativeUnit](../resources/administrativeunit.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

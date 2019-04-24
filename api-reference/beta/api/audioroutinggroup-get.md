@@ -1,21 +1,21 @@
 ---
-title: オーディオのルーティング グループを取得します。
-description: プロパティと audioRoutingGroup オブジェクトの関係を取得します。
+title: 音声ルーティング グループを取得する
+description: audioRoutingGroup オブジェクトのプロパティとリレーションシップを取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 810a27c91c5a31a970f7b279d774d12bf049210d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524038"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459039"
 ---
-# <a name="get-audio-routing-group"></a>オーディオのルーティング グループを取得します。
+# <a name="get-audio-routing-group"></a>音声ルーティング グループを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの関係を取得します。
+[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "29524038"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                               |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                               |
-| アプリケーション                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション                            | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -33,8 +33,8 @@ GET /app/calls/{id}/audioRoutingGroups/{id}
 GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -45,7 +45,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

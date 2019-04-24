@@ -1,21 +1,21 @@
 ---
 title: メンバーを一覧表示する
-description: この API を使用して、メンバーを取得する] ボックスの一覧 (ユーザーおよびグループ) の管理単位です。
+description: この API を使用して、管理単位でメンバーリスト (ユーザーとグループ) を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: aa8d70d72c5d55cac0ff8aea66d3c56b4e9f80ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459506"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、メンバーを取得する] ボックスの一覧 (ユーザーおよびグループ) の管理単位です。
+この API を使用して、管理単位でメンバーリスト (ユーザーとグループ) を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -27,7 +27,7 @@ ms.locfileid: "29517856"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 
-> 注: 非表示のメンバーシップの管理単位のメンバーを列挙するには、Member.Read.Hidden アクセス許可が必要です。
+> 注: 管理単位の非表示のメンバーシップのメンバーを一覧表示するには、"hidden" アクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -45,11 +45,11 @@ GET /administrativeUnits/{id}/members/$ref
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体で[ユーザー](../resources/user.md)または[グループ](../resources/group.md)のオブジェクトのコレクションです。  代わりに、配置する場合は、`$ref`の応答には要求の最後のコレクションが含まれて`@odata.id`メンバーへのリンクと Url です。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ユーザー](../resources/user.md)オブジェクトまたは[グループ](../resources/group.md)オブジェクトのコレクションを返します。  代わりに、要求の最後`$ref`にを置くと、応答にはメンバーへのリンク/url `@odata.id`のコレクションが含まれます。
 
 ## <a name="examples"></a>例
-##### <a name="list-member-objects"></a>メンバー オブジェクトのリスト
-次のような要求には、ユーザーおよびグループのコレクションを取得、管理単位のメンバーが表示されます。
+##### <a name="list-member-objects"></a>メンバーオブジェクトを一覧表示する
+次の要求は、管理単位のメンバーを一覧表示し、ユーザーまたはグループのコレクションを返します。
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -82,8 +82,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="list-member-references"></a>リストのメンバーの参照
-次のような要求には、メンバーの参照のコレクションを取得、管理単位が一覧表示`@odata.id`メンバーへの参照。
+##### <a name="list-member-references"></a>リストメンバーの参照
+次の要求では、管理単位のメンバ参照がリストされ、メンバー `@odata.id`への参照のコレクションが返されます。
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```

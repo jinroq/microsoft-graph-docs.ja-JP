@@ -1,27 +1,27 @@
 ---
-title: BookingCustomer を取得します。
-description: プロパティと、bookingCustomer オブジェクトの関係を取得します。
+title: bookingcustomer を取得する
+description: bookingcustomer オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 34497c35dd4bd0e46764b8c025c93570b8332713
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519067"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462019"
 ---
-# <a name="get-bookingcustomer"></a>BookingCustomer を取得します。
+# <a name="get-bookingcustomer"></a>bookingcustomer を取得する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 [bookingCustomer](../resources/bookingcustomer.md)オブジェクトの関係を取得します。
+[bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -41,7 +41,7 @@ GET /bookingBusinesses/{id}/customers/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[bookingCustomer](../resources/bookingcustomer.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[bookingcustomer](../resources/bookingcustomer.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

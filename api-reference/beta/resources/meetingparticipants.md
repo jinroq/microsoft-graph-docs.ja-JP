@@ -1,21 +1,21 @@
 ---
-title: meetingParticipants リソースの種類
-description: 会議の参加者です。
+title: 会議参加者リソースの種類
+description: 会議の参加者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463825"
 ---
-# <a name="meetingparticipants-resource-type"></a>meetingParticipants リソースの種類
+# <a name="meetingparticipants-resource-type"></a>会議参加者リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会議の参加者です。
+会議の参加者。
 
 ## <a name="properties"></a>プロパティ
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777929"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460416"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter リソースの種類
 
@@ -25,8 +25,8 @@ ms.locfileid: "31777929"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|allowedUrls|String コレクション|アクセスできる追加 url|
-|blockedUrls|String コレクション|アクセスのためにブロックされる追加 url|
+|allowedUrls|String collection|アクセスできる追加 url|
+|blockedUrls|String collection|アクセスのためにブロックされる追加 url|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

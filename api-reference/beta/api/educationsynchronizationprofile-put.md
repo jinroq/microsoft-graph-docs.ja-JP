@@ -1,21 +1,21 @@
 ---
-title: EducationSynchronizationProfile を更新します。
-description: テナント内の既存校のデータの同期プロファイルのプロパティを更新します。
+title: educationSynchronizationProfile を更新する
+description: テナント内の既存の school data 同期プロファイルのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464720"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を更新します。
+# <a name="update-an-educationsynchronizationprofile"></a>educationSynchronizationProfile を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内の既存校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)のプロパティを更新します。
+テナント内の既存の school data[同期プロファイル](../resources/educationsynchronizationprofile.md)のプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "29510576"
 | アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|委任 (個人 Microsoft アカウント|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -39,10 +39,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Required. |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [synchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[同期プロファイル](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`202, Accepted`応答コードおよび応答の本文に[synchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトです。
+成功した場合、このメソッド`202, Accepted`は応答コードと、応答本文で[同期プロファイル](../resources/educationsynchronizationprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -101,7 +101,7 @@ Content-type: application/json
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

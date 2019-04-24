@@ -1,21 +1,21 @@
 ---
-title: '呼び出す: 回答'
-description: 着信呼び出しに応答します。
+title: '通話: 応答'
+description: 着信に応答します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530049"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461323"
 ---
-# <a name="call-answer"></a>呼び出す: 回答
+# <a name="call-answer"></a>通話: 応答
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-着信呼び出しに応答します。
+着信に応答します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,12 +43,12 @@ POST /applications/{id}/calls/{id}/answer
 
 | パラメーター        | 型                                     |説明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |コールバックまたはサブスクリプションの ID をコールバックが配信されます。 Required                                                               |
-|acceptedModalities|String コレクション                         |一覧には、様相がそのまま使用します。 使用可能な値: `unknown`、 `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`。 Required |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|メディアの構成です。 Required                                                                                                            |
+|callbackUri       |String                                    |コールバック時のコールバック ID またはサブスクリプション ID。 要する                                                               |
+|acceptedModalities|String collection                         |accept モダリティのリスト。 使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。 要する |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|メディア構成。 要する                                                                                                            |
 
 ## <a name="response"></a>応答
-このメソッドを返します`202 Accepted`応答コード。
+このメソッドは`202 Accepted`応答コードを返します。
 
 ## <a name="examples"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -89,9 +89,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a>サービスがホストされているメディアを使用して VOIP 通話に応答します。
+### <a name="answer-voip-call-with-service-hosted-media"></a>サービスホストされたメディアを使用した VOIP 通話への応答
 
-##### <a name="notification---incoming"></a>通知の受信
+##### <a name="notification---incoming"></a>通知-受信
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -197,7 +197,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>通知を確立します。
+##### <a name="notification---establishing"></a>通知-確立中
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知の設定
+##### <a name="notification---established"></a>通知-確立済み
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -255,9 +255,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a>アプリケーションがホストされているメディアを使用して VOIP 通話に応答します。
+### <a name="answer-voip-call-with-application-hosted-media"></a>アプリケーションでホストされているメディアを使用した VOIP 通話への応答
 
-##### <a name="notification---incoming"></a>通知の受信
+##### <a name="notification---incoming"></a>通知-受信
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -341,7 +341,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>通知を確立します。
+##### <a name="notification---establishing"></a>通知-確立中
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -370,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知の設定
+##### <a name="notification---established"></a>通知-確立済み
 
 ```http
 POST https://bot.contoso.com/api/calls

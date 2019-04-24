@@ -1,29 +1,29 @@
 ---
 title: call を取得する
-description: プロパティと、呼び出しオブジェクトの関係を取得します。
+description: call オブジェクトのプロパティとリレーションシップを取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640344"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461291"
 ---
 # <a name="get-call"></a>call を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、呼び出しオブジェクトの関係を取得します。
+call オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ)                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | サポートされていません。                         |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                         |
+| 委任 (職場または学校のアカウント)     | サポートされません。                         |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                         |
 | アプリケーション                            | なし。                                  |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -45,7 +45,7 @@ GET /applications/{id}/calls/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードと応答の本文[を呼び出す](../resources/call.md)オブジェクト。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[call](../resources/call.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

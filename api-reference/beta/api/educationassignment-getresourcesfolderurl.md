@@ -1,29 +1,29 @@
 ---
 title: 'educationAssignment: getResourcesFolderUrl'
-description: 'この関数は、すべてのファイルベースのリソース (Word、Excel、およびなど) をアップロードする必要があります OneDrive の URL を返します。  '
+description: 'この関数は、すべてのファイルベースのリソース (Word、Excel など) をアップロードする必要がある OneDrive の URL を返します。  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43bef729d2cf37561d0742ebb3adfb21fe4f486e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512032"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464654"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この関数は、すべてのファイルベースのリソース (Word、Excel、およびなど) をアップロードする必要があります OneDrive の URL を返します。  
-ファイルをリソースとして追加するためにこのフォルダーに配置する必要があることに注意してください。 クラスの先生だけでは、アップロードするファイルを確認できます。 
+この関数は、すべてのファイルベースのリソース (Word、Excel など) をアップロードする必要がある OneDrive の URL を返します。  
+リソースとして追加するためには、ファイルをこのフォルダーに配置する必要がありますのでご注意ください。 クラス内の教師のみが、アップロードするファイルを決定できます。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadBasic、EduAssignments.Read  |
+|委任 (職場または学校のアカウント) |  EduAssignments (basic、EduAssignments)  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -41,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 Ok` 応答コードを返します。 本体ですべてのファイル ・ ベースのリソースが格納されるフォルダーの OneDrive の URL が含まれます。
+成功した場合、このメソッドは `200 Ok` 応答コードを返します。 本文には、すべてのファイルベースのリソースを格納するフォルダーの OneDrive URL が含まれています。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

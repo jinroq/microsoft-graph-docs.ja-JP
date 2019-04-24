@@ -1,21 +1,21 @@
 ---
-title: '呼び出す: 転送'
-description: アクティブな呼び出しを転送します。
+title: '通話: 転送'
+description: アクティブな通話を転送します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516253"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462432"
 ---
-# <a name="call-transfer"></a>呼び出す: 転送
+# <a name="call-transfer"></a>通話: 転送
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アクティブな呼び出しを転送します。
+アクティブな通話を転送します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,15 +43,15 @@ POST /applications/{id}/calls/{id}/transfer
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送の対象である構成要素です。|
-|ClientContext|String|クライアントのコンテキスト。|
+|transfertarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送先の参加者です。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-応答コードを返します。
+応答`202 Accepted`コードを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a>ユーザーの関与なしに直接、電話を転送します。
+### <a name="transfer-call-directly-with-no-user-involvement"></a>ユーザーが関与せずに直接通話を転送する
 
 次の例は、この API を呼び出す方法を示しています。
 
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>通知を転送します。
+##### <a name="notification---transferring"></a>通知-転送
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>通知の転送を許可
+##### <a name="notification---transfer-accepted"></a>通知-転送が承認されました
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>終了の通知-
+##### <a name="notification---terminated"></a>通知の終了
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a>提案型の転送
+### <a name="consultative-transfer"></a>提案転送
 
 ##### <a name="request"></a>要求
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>通知を転送します。
+##### <a name="notification---transferring"></a>通知-転送
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>通知の転送を許可
+##### <a name="notification---transfer-accepted"></a>通知-転送が承認されました
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>終了の通知-
+##### <a name="notification---terminated"></a>通知の終了
 
 ```http
 POST https://bot.contoso.com/api/calls

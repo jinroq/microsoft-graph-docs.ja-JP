@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f4317ac80e7ff6273b809eb747da745f5cf5edb6
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254388"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464555"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>iosHomeScreenPage リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "30254388"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列型 (String)|ページの名前|
+|displayName|String|ページの名前|
 |アイコン|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) コレクション|特定ページに表示されるアプリとフォルダーの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ

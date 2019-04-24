@@ -1,21 +1,21 @@
 ---
 title: メンバーを削除する
-description: 管理単位からメンバー (ユーザーまたはグループ) を削除するのにはこの API を使用します。
+description: この API を使用して、管理単位からメンバ (ユーザーまたはグループ) を削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 29ea8aa11850909c9e7122c55dc6c686ae9135a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459501"
 ---
 # <a name="remove-a-member"></a>メンバーを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理単位からメンバー (ユーザーまたはグループ) を削除するのにはこの API を使用します。
+この API を使用して、管理単位からメンバ (ユーザーまたはグループ) を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -46,7 +46,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。 次の例では、id1 は、ターゲットの管理単位の id を表します、id2 属性は、対象の管理単位から削除するには、メンバー ユーザーまたはグループの一意の識別子を表します。 
+以下は、要求の例です。 次の例では、id1 はターゲット管理単位の識別子を表し、id2 は、targetted 管理単位から削除されるメンバーユーザーまたはグループの一意識別子を表します。 
 
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref

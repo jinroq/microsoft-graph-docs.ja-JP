@@ -1,19 +1,19 @@
 ---
 title: onenoteEntityBaseModel リソース
-description: これは、OneNote のエンティティの基本型です。
+description: これは、OneNote エンティティの基本型です。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 53ed86ae22f3ac9fccdef98e56382cd9440e71e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462614"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel リソース
 
-これは、OneNote のエンティティの基本型です。
+これは、OneNote エンティティの基本型です。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -36,9 +36,9 @@ ms.locfileid: "27923132"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|self|String|ページに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
+|self|String|ページに関する詳細を取得できるエンドポイント。 値の取得のみ可能です。|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

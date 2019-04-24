@@ -1,28 +1,28 @@
 ---
-title: 予約予定表ビューを一覧表示します。
-description: BookingBusiness は、指定した日付範囲内に発生するのには、bookingAppointment オブジェクトのコレクションを取得します。
+title: List Bookings calendarView
+description: 指定された日付範囲内に発生する、bookingappointment の bookingappointment オブジェクトのコレクションを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 39b96e089d035ffd21155064252e36fd07a0a6c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461781"
 ---
-# <a name="list-bookings-calendarview"></a>予約予定表ビューを一覧表示します。
+# <a name="list-bookings-calendarview"></a>List Bookings calendarView
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[BookingBusiness](../resources/bookingbusiness.md)、指定した日付範囲内に発生するのには、 [bookingAppointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。
+指定された日付範囲内に発生する、 [bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -42,14 +42,14 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|開始|DateTimeOffset|時間範囲の開始日時は UTC、または UTC からのオフセットとしての ISO 8601 形式で表されます。 など、2018 年 1 月 1 日に UTC 午前 0 時が、これのようになります。: '2018-01-01T00:00:00Z'、PST で同時には次のように、:' 2017-12-31T16:00:00-08:00 ' です。|
-|end|DateTimeOffset|時間範囲の終了日時は UTC、または UTC からのオフセットとしての ISO 8601 形式で表されます。 例では、3 am UTC、2018 年 1 月 1日には次のように: '2018-01-01T03:00:00Z'、PST で同時には次のように、:' 2017-12-31T19:00:00-08時 00分 ' です。|
+|開始|DateTimeOffset|ISO 8601 形式で表される時間範囲の開始日時を utc または utc からのオフセットで指定します。 たとえば、2018年1月1日午前0時 (UTC) は次のようになります。 ' 2018-01-01t00:00: 00z '、PST の同じ時刻は次のようになります。 ' 2017-12-31t16:00:00-08:00 '。|
+|end|DateTimeOffset|ISO 8601 形式で表される時間範囲の終了日時 (utc または utc からのオフセット)。 たとえば、3月1日の午前0時 (UTC) では、2018は次のようになります。 ' 2018-01-01t03:00: 00z '、PST の同じ時刻は ' 2017-12-31t19:00:00-08:00 ' のようになります。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200, OK`、応答の本体で応答コードと[bookingAppointment](../resources/bookingappointment.md)コレクションのオブジェクトです。
+成功した場合、この`200, OK`メソッドは応答コードと、応答本文で[bookingappointment](../resources/bookingappointment.md)コレクションオブジェクトを返します。
 
 ## <a name="example"></a>例
-次に、この API を呼び出す方法の例を示します。
+この API を呼び出す方法の例を次に示します。
 ##### <a name="request"></a>要求
 要求の例を次に示します。
 <!-- {

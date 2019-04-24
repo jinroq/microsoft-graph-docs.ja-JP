@@ -1,27 +1,27 @@
 ---
-title: BookingAppointment を作成します。
-description: 指定された bookingbusiness の新しい bookingAppointment を作成します。
+title: bookingappointment の作成
+description: 指定した bookingappointment の新しいブックを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a6573215d28950944dfed05a0e4dcb441cdf1fda
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461823"
 ---
-# <a name="create-bookingappointment"></a>BookingAppointment を作成します。
+# <a name="create-bookingappointment"></a>bookingappointment の作成
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[bookingbusiness](../resources/bookingbusiness.md)用の新しい[bookingAppointment](../resources/bookingappointment.md)を作成します。
+指定した[bookingappointment](../resources/bookingbusiness.md)の新しい[ブック](../resources/bookingappointment.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  bookingsappointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -37,15 +37,15 @@ POST /bookingBusinesses/{id}/appointments
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [bookingAppointment](../resources/bookingappointment.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingappointment](../resources/bookingappointment.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`201, Created`、応答の本体で応答コードと[bookingAppointment](../resources/bookingappointment.md)のオブジェクトです。
+成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingappointment](../resources/bookingappointment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求の例を次に示します。 この予定には、特定のスタッフ メンバーが予約は行いません。
+要求の例を次に示します。 この予定には、特定のスタッフメンバーの予約は含まれません。
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
@@ -161,7 +161,7 @@ Content-type: application/json
     }
 }
 ```
-要求の本文には、 [bookingAppointment](../resources/bookingappointment.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingappointment](../resources/bookingappointment.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {

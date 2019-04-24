@@ -1,23 +1,25 @@
 ---
 title: plannerChecklistItems リソースの種類
-description: '**plannerChecklistItemCollection** リソースは、タスクのチェックリスト項目のコレクションを表します。これは、オープン型です。タスクの詳細オブジェクトの一部です。プロパティ/値の組の値は、checklistItem オブジェクトです。'
+description: '**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、checklistitem オブジェクトです。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 17c1d8c0529e0d85ebc784d25c2dc284f1775c0f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982702"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462285"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems リソースの種類
 
-**plannerChecklistItemCollection** リソースは、タスクのチェックリスト項目のコレクションを表します。これは、オープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[checklistItem](plannerchecklistitem.md) オブジェクトです。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 [タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。 プロパティと値のペアの値は、 [checklistitem](plannerchecklistitem.md)オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは **GUID** をプロパティとして指定し、その値は [checklistItem](plannerchecklistitem.md) オブジェクトでなければなりません。以下に例を示します。チェックリストの項目を削除するには、プロパティの値を `null` に設定します。
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは**guid**をプロパティとして提供し、それらの値は[checklistitem](plannerchecklistitem.md)オブジェクトである必要があります。 例を以下に示します。 チェックリストの項目を削除するには、プロパティの値をに`null`設定します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -25,8 +27,9 @@ ms.locfileid: "27982702"
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -42,7 +45,7 @@ ms.locfileid: "27982702"
   }
 }
 ```
-// 例
+例
 
 ```json
 {
@@ -78,10 +81,15 @@ ms.locfileid: "27982702"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerChecklistItems resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerchecklistitems.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

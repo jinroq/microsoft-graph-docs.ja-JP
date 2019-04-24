@@ -1,30 +1,30 @@
 ---
-title: EducationAssignment を削除します。
-description: 既存の割り当てを削除します。 クラス内での教師だけでは、割り当てを削除できます。
+title: educationAssignment の削除
+description: 既存の割り当てを削除します。 割り当てを削除できるのは、クラス内の教師だけです。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 2356330a75558ea88b94c9266fb2d4a387e87b59
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464741"
 ---
-# <a name="delete-educationassignment"></a>EducationAssignment を削除します。
+# <a name="delete-educationassignment"></a>educationAssignment の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の割り当てを削除します。 クラス内での教師だけでは、割り当てを削除できます。
+既存の割り当てを削除します。 割り当てを削除できるのは、クラス内の教師だけです。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)| EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
-|委任 (個人用 Microsoft アカウント) |   サポートされていません。 |
-|アプリケーション | サポートされていません。  | 
+|委任 (職場または学校のアカウント)| EduAssignments の読み取り/書き込みの EduAssignments |
+|委任 (個人用 Microsoft アカウント) |   サポートされません。 |
+|アプリケーション | サポートされません。  | 
 
 ## <a name="http-request"></a>HTTP 要求
 

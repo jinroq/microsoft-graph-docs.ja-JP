@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: f2822387ef0d202aa7f24c16f4ce8b1257bfa3ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457752"
 ---
 # <a name="add-a-student"></a>生徒を追加する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 クラスにメンバーを追加します。
 
@@ -24,7 +22,7 @@ ms.locfileid: "29521013"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  サポートされていません。  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | EduRoster.ReadWrite.All と Member.Read.Hidden | 
+|アプリケーション | eduroster.readbasic の正の値を取得します。 | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -52,12 +50,12 @@ POST /education/classes/{id}/members/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11011/members/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
 Content-type: application/json
 Content-length: 56
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/education/users/13015"
+  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"
 }
 ```
 
@@ -76,15 +74,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-post-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,43 +1,43 @@
 ---
 title: teamsAppInstallation リソースの種類
-description: 'チームでインストールする teamsApp です。 '
+description: 'チームにインストールされている teamsapp。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 153b131cd24709995d7215b1cf568a8565f42a80
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c98f1b927c319eb1d81573fd9dc43e1baad86a39
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929481"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462355"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation リソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-[TeamsApp](teamsapp.md) [チーム](team.md)にインストールされています。 アプリケーションの一部である任意のボットにアプリケーションが追加されるすべてのチームの一員となります。
+[チーム](team.md)にインストールされている[teamsapp](teamsapp.md) 。 アプリの一部である bot は、アプリが追加されるチームの一部になります。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[リスト アプリケーション](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | チームでインストールされているアプリケーションを一覧表示します。|
-|[アプリを追加します。](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | (インストール) を追加するチームにアプリです。|
-|[アプリを抹消します。](../api/teamsappinstallation-delete.md) | なし | 削除 (アンインストール)、チームからのアプリケーションです。|
-|[アプリケーションをアップグレードします。](../api/teamsappinstallation-delete.md) | なし | アプリケーションの最新バージョンにアップグレードします。|
+|[アプリを一覧表示する](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | チームにインストールされているアプリを一覧表示します。|
+|[アプリの追加](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | アプリをチームに追加 (インストール) します。|
+|[アプリの削除](../api/teamsappinstallation-delete.md) | なし | チームからアプリを削除 (アンインストール) します。|
+|[アプリをアップグレードする](../api/teamsappinstallation-upgrade.md) | なし | 最新バージョンのアプリにアップグレードします。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類     | 説明 |
+| プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | 文字列   | 一意の id (チームの appid とは異なる)。 |
+| ID                  | string   | 一意の id (teams appid ではない)。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ   | 型    | 説明 |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md)| インストールされているアプリケーションです。 |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| このバージョンのアプリケーションの詳細。 |
+|teamsApp|[teamsApp](teamsapp.md)| インストールされているアプリ。 |
+|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| このバージョンのアプリの詳細。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -62,11 +62,16 @@ ms.locfileid: "27929481"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsappinstallation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

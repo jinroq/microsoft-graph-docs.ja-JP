@@ -1,21 +1,21 @@
 ---
 title: commsOperation リソースの種類
-description: 特定の実行時間の長い操作のステータス。
+description: 長時間実行されている特定の操作の状態。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642206"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460598"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の実行時間の長い操作のステータス。
+長時間実行されている特定の操作の状態。
 
 ## <a name="methods"></a>メソッド
 なし
@@ -24,14 +24,14 @@ ms.locfileid: "29642206"
 
 | プロパティ           | 型                        | 説明                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | クライアントのコンテキスト。                                                             |
-| createdDateTime    | DateTimeOffset              | 操作の開始時刻です。                                                |
-| id                 | String                      | 操作 ID です。読み取り専用です。 サーバーによって生成されます。                                  |
-| lastActionDateTime | DateTimeOffset              | 操作の最後の操作の時間です。                                   |
+| clientContext      | String                      | クライアントコンテキスト。                                                             |
+| createdDateTime    | DateTimeOffset              | 操作の開始時刻。                                                |
+| id                 | String                      | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
+| lastactiondatetime | DateTimeOffset              | 操作の最後の操作の時刻。                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                            |
-| status             | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
+| status             | String                      | 可能な値は、`notStarted`、`running`、`completed`、`failed` です。 読み取り専用です。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

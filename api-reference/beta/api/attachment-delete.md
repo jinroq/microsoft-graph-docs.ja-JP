@@ -1,28 +1,28 @@
 ---
 title: 添付ファイルを削除する
-description: カレンダー イベント、メッセージ、Outlook のタスク、または投稿の添付ファイルを削除します。
+description: 予定表イベント、メッセージ、Outlook タスク、または投稿から添付ファイルを削除します。
 localization_priority: Normal
 ms.openlocfilehash: 5bb24fc97a2f99dbb0fbec77e2de941f770c27fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510898"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458972"
 ---
 # <a name="delete-attachment"></a>添付ファイルを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-カレンダー[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)の添付ファイルを削除します。
+予定表[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)から添付ファイルを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合:Mail.ReadWrite。
-* イベントの添付ファイルにアクセスする場合:Calendars.ReadWrite。
-* Outlook からのタスクの添付ファイルにアクセスする場合: Tasks.ReadWrite
-* グループの投稿の添付ファイルにアクセスする場合: Group.ReadWrite.All
+* メッセージの添付ファイルにアクセスする場合: メールの書き込み
+* イベントの添付ファイルにアクセスする場合: 「カレンダー」
+* Outlook のタスクで添付ファイルにアクセスする場合: タスク: ReadWrite
+* グループの投稿で添付ファイルにアクセスする場合: 「すべて」
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -30,7 +30,7 @@ ms.locfileid: "29510898"
 
 ## <a name="http-request"></a>HTTP 要求
 
-[イベント](../resources/event.md)の添付ファイルです。
+[イベント](../resources/event.md)の添付ファイル。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -59,14 +59,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
+ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。<!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-[Outlook タスク](../resources/outlooktask.md)の添付ファイルです。
+[Outlook タスク](../resources/outlooktask.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 
 ```http

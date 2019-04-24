@@ -1,21 +1,19 @@
 ---
-title: 警告の一覧表示
-description: オブジェクトのアラートの一覧を取得します。
-localization_priority: Normal
+title: アラートを一覧表示する
+description: alert オブジェクトの一覧を取得します。
 author: preetikr
+localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459214"
 ---
-# <a name="list-alerts"></a>警告の一覧表示
+# <a name="list-alerts"></a>アラートを一覧表示する
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-オブジェクトの[アラート](../resources/alert.md)の一覧を取得します。
+[alert](../resources/alert.md)オブジェクトの一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,9 +21,9 @@ ms.locfileid: "29524381"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All  |
+|委任 (職場または学校のアカウント) |  securityevents. all、securityevents、ReadWrite  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
+|アプリケーション | securityevents. all、securityevents、ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -39,34 +37,34 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための以下の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために、次の[OData クエリパラメーター](/graph/query-parameters)をサポートしています。
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`セキュリティ API の各プロバイダーから集計の上位の結果を返します。
+- `$top`は、各セキュリティ API プロバイダーから集約された上位の結果を返します。  
 
-OData を使用する別のプロパティ セットを返すには、`$select`する**警告**のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
+代替プロパティセットを返すには、OData `$select`クエリパラメーターを使用して、必要な**警告**プロパティのセットを指定します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを取得するには、クエリ`$select=assignedTo,category,severity`に以下を追加します。
 
-> **注:**`$top` 1000 の警告との組み合わせの制限が`$top`  +  `$skip` 6000 のアラートを超えることはできません。 などの`/security/alerts?$top=10&$skip=5990`を返します、`200 OK`応答コードの場合が、`/security/alerts?$top=10&$skip=5991`を返します、`400 Bad Request`応答コード。  詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+> **注:**`$top`には1000警告の制限があり、の`$top`  +  `$skip`組み合わせは6000通知を超えることはできません。 たとえば、 `/security/alerts?$top=10&$skip=5990`は`200 OK`応答コード`/security/alerts?$top=10&$skip=5991`を返しますが、応答コードを`400 Bad Request`返します。  詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 
-このメソッドには、要求本文を指定しません。 要求の本体は無視されます。
+このメソッドには、要求本文を指定しません。 要求本文は無視されます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の**通知**オブジェクトのコレクションです。 2 xx または 404 以外のステータス コードは、プロバイダーから返された場合、またはプロバイダーがタイムアウトすると、応答がある場合、`206 Partial Content`警告ヘッダー内のプロバイダーの応答のステータス コード。 詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトのコレクションを返します。 2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。 詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="example"></a>例
 
@@ -79,7 +77,7 @@ OData を使用する別のプロパティ セットを返すには、`$select`�
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/alerts
+GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
 ### <a name="response"></a>応答
@@ -114,15 +112,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

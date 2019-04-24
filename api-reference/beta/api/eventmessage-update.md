@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 160fbf70f243174265fc6e4e54feabb8042bd450
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463962"
 ---
 # <a name="update-eventmessage"></a>eventMessage の更新
 
@@ -46,10 +46,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|メッセージに関連付けられたカテゴリ。|
 |importance|String|メッセージの重要度です。可能な値は、`Low`、`Normal`、`High` です。|
-|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。このプロパティを調整するには、イベントの **StartDateTime** および **EndDateTime** プロパティの調整も必要になります。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isAllDay |ブール型 (Boolean)|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントの**startDateTime**および**enddatetime**プロパティの調整も必要です。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 
 ## <a name="response"></a>応答
 

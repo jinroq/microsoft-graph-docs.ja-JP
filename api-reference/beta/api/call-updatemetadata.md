@@ -1,21 +1,21 @@
 ---
-title: '電話: updateMetadata'
-description: 呼び出しに関連付けられているアプリケーションのメタデータを更新します。
+title: '通話: updateMetadata'
+description: 呼び出しに関連付けられているメタデータを更新します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b3dade26dde72acd796cc3751df136fde4a4bbea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463496"
 ---
-# <a name="call-updatemetadata"></a>電話: updateMetadata
+# <a name="call-updatemetadata"></a>通話: updateMetadata
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出しに関連付けられているアプリケーションのメタデータを更新します。
+呼び出しに関連付けられているメタデータを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "29507986"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                               |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                               |
-| アプリケーション     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | JoinGroupCallsasGuest が呼び出されます。すべての呼び出し、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|metadata|String|名簿にある参加者が提供するデータの blob です。|
-|ClientContext|String|クライアントのコンテキスト。|
+|metadata|String|参加者が名簿に提供するデータの blob。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

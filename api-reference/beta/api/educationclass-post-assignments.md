@@ -1,28 +1,28 @@
 ---
-title: EducationAssignment を作成します。
-description: '新しい割り当てを作成します。 クラスで教師だけでは、割り当てを作成できます。 割り当ては、エントリの公開が呼び出されるまで、受講者は、割り当てが表示されないことを意味する下書きの状態で起動します。  '
+title: educationAssignment を作成する
+description: '新しい割り当てを作成します。 クラス内の教師のみが、割り当てを作成できます。 割り当ては下書き状態で開始します。これは、発行が呼び出されるまで、学生に割り当てが表示されないことを意味します。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: bac79b8f85eb6141b5159ac5dc7acbf067bf571c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457803"
 ---
-# <a name="create-educationassignment"></a>EducationAssignment を作成します。
+# <a name="create-educationassignment"></a>educationAssignment を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい割り当てを作成します。 クラスで教師だけでは、割り当てを作成できます。 割り当ては、エントリの公開が呼び出されるまで、受講者は、割り当てが表示されないことを意味する下書きの状態で起動します。  
+新しい割り当てを作成します。 クラス内の教師のみが、割り当てを作成できます。 割り当ては下書き状態で開始します。これは、発行が呼び出されるまで、学生に割り当てが表示されないことを意味します。  
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -39,11 +39,11 @@ POST /education/classes/{id}/assignments
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [educationAssignment](../resources/educationassignment.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [educationAssignment](../resources/educationassignment.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文内の[educationAssignment](../resources/educationassignment.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[educationAssignment](../resources/educationassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -75,7 +75,7 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-要求の本文には、 [educationAssignment](../resources/educationassignment.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [educationAssignment](../resources/educationassignment.md)オブジェクトの JSON 表記を指定します。
 
 ##### <a name="response"></a>応答
 応答の例を次に示します。 

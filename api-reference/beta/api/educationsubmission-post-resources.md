@@ -1,28 +1,28 @@
 ---
-title: EducationSubmissionResource を作成します。
-description: 'リソースを [リソース] リストに追加します。 このアクションは、この送信が割り当てられている受講者にのみ実行できます。 **AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。 呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。 ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。 '
+title: educationSubmissionResource を作成する
+description: 'リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **allowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464780"
 ---
-# <a name="create-educationsubmissionresource"></a>EducationSubmissionResource を作成します。
+# <a name="create-educationsubmissionresource"></a>educationSubmissionResource を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-リソースを [リソース] リストに追加します。 このアクションは、この送信が割り当てられている受講者にのみ実行できます。 **AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。 呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。 ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。 
+リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **allowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -39,11 +39,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文内の[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
