@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 90c2c8a25602ac2a2c4197c916b9ce14e03b8e6d
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365354"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458615"
 ---
 # <a name="create-vendors"></a>仕入先を作成する
 Dynamics 365 Business Central でベンダーオブジェクトを作成します。

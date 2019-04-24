@@ -1,19 +1,19 @@
 ---
-title: 契約書を作成します。
-description: 契約の新しいオブジェクトを作成します。
+title: 契約を作成する
+description: 新しいアグリーメントオブジェクトを作成します。
 localization_priority: Normal
 ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514426"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459231"
 ---
-# <a name="create-agreement"></a>契約書を作成します。
+# <a name="create-agreement"></a>契約を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[契約](../resources/agreement.md)の新しいオブジェクトを作成します。
+新しい[アグリーメント](../resources/agreement.md)オブジェクトを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,28 +31,28 @@ POST /agreements
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[許可書](../resources/agreement.md)オブジェクトを JSON 表現したものを指定します。
+要求本文で、[アグリーメント](../resources/agreement.md)オブジェクトの JSON 表記を指定します。
 
 次の表に、ユーザーの作成時に必要になるプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|displayName|String|契約書の名前を表示します。|
-|isViewingBeforeAcceptanceRequired|ブール値|ユーザーを展開し、受け入れる前に契約書を表示するかどうかを示します。|
-|ファイルまたはファイル名|String|契約ファイル (TOU.pdf など) の名前です。|
-|ファイル/isDefault|ブール値|クライアント基本設定と一致する、カルチャの場合、既定の契約書ファイルはかどうかを示します。 ファイルの [なし] は、既定として設定された、1 つ目は既定値として扱われます。|
-|ファイルと言語|String|形式 languagecode2 の国と regioncode2 の契約書ファイルのカルチャです。 languagecode2 は、小文字の ISO 639-1 から派生した 2 文字コードです。 国/regioncode2 では、ISO 3166 から派生し、通常は、2 つの大文字、または BCP 47 言語タグ (たとえば、EN-US)。|
-|ファイル、構造体、データ fileData|Binary|PDF ドキュメントの使用条件を表すデータです。|
+|displayName|String|アグリーメントの表示名。|
+|isViewingBeforeAcceptanceRequired|Boolean|ユーザーが同意する前に、契約を展開して表示する必要があるかどうかを示します。|
+|ファイル/ファイル名|String|アグリーメントファイルの名前 (たとえば、「お持ちの形式」)。|
+|ファイル/isDefault|Boolean|クライアントの優先度に一致するカルチャがない場合に、これが既定のアグリーメントファイルであるかどうかを示します。 ファイルが既定として設定されていない場合は、最初のファイルが既定として扱われます。|
+|ファイル/言語|String|languagecode2-country/regioncode2 という形式の、アグリーメントファイルのカルチャ。 languagecode2 は、ISO 639-1 から派生した、小文字の2文字のコードです。 country/regioncode2 は ISO 3166 から派生し、通常は2つの大文字または BCP-47 language タグ (例: en-us) で構成されます。|
+|ファイル/fileData/データ|Binary|PDF ドキュメントの使用条件を表すデータ。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `201, Created` 、応答の本体で応答コードおよび[契約](../resources/agreement.md)のオブジェクトです。
+成功した場合、このメソッド`201, Created`は応答コードと、応答本文で[アグリーメント](../resources/agreement.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求の本文には、[許可書](../resources/agreement.md)オブジェクトを JSON 表現したものを指定します。
+要求本文で、[アグリーメント](../resources/agreement.md)オブジェクトの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",

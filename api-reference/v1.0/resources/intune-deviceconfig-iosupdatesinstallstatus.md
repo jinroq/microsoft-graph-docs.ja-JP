@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0cb94689fb4345fec41cd584b3b636ffbdeea325
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264142"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584762"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosupん installstatus 列挙型
 
@@ -24,7 +24,7 @@ ms.locfileid: "30264142"
 |使用可能|1-d|まだ文書化されていません|
 |アイドル|pbm-2|まだ文書化されていません|
 |不明|1/3|まだ文書化されていません|
-|ダウンロード|-2016330712|まだ文書化されていません|
+|すれ|-2016330712|まだ文書化されていません|
 |downloadfailed|-2016330711|まだ文書化されていません|
 |downloadRequiresComputer|-2016330710|まだ文書化されていません|
 |downloadInsufficientSpace|-2016330709|まだ文書化されていません|

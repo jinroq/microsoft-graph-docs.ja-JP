@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e27ed10158c7ff9f664f005b816868d2eb6a173d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254094"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463447"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration リソース タイプ
 
@@ -32,19 +32,19 @@ ms.locfileid: "30254094"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |azureOperationalInsightsBlockTelemetry|Boolean|Azure Operational Insights をブロックするかどうかを示します。|
 |azureOperationalInsightsWorkspaceId|String|Azure Operational Insights のワークスペース ID。|
 |azureOperationalInsightsWorkspaceKey|String|Azure Operational Insights のワークスペース キー。|
 |connectAppBlockAutoLaunch|Boolean|投影を開始するたびに、接続アプリを自動的に起動するかどうかを指定します。|
 |maintenanceWindowBlocked|Boolean|デバイス更新のメンテナンス ウィンドウの設定をブロックするかどうかを示します。|
-|maintenanceWindowDurationInHours|Int32|デバイス更新のためのメンテナンス ウインドウの期間。 有効な値は 0 から 5 までです|
-|maintenanceWindowStartTime|TimeOfDay|デバイス更新のためのメンテナンス ウィンドウの開始時刻。|
+|maintenanceWindowDurationInHours|Int32|デバイス更新のためのメンテナンス期間の長さ (時間)。 有効な値は 0 から 5 までです|
+|maintenanceWindowStartTime|TimeOfDay|デバイス更新のためのメンテナンス期間の開始時刻。|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|チャネル。 可能な値は、`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive` です。|
 |miracastBlocked|Boolean|ワイヤレス投影をブロックするかどうかを示します。|
 |miracastRequirePin|Boolean|ワイヤレス投影の pin が必要かどうかを示します。|
@@ -59,7 +59,7 @@ ms.locfileid: "30254094"
 |welcomeScreenBackgroundImageUrl|String|ようこそ画面の背景画像の URL。 URL は HTTPS プロトコルを使用し、PNG 画像を返す必要があります。|
 |welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune-deviceconfig-welcomescreenmeetinginformation.md)|表示される、ようこそ画面の会議情報。 可能な値は、`userDefined`、`showOrganizerAndTimeOnly`、`showOrganizerAndTimeAndSubject` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

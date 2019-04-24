@@ -1,32 +1,32 @@
 ---
 title: plannerBucketTaskBoardTaskFormat リソースの種類
-description: '**plannerBucketTaskBoardTaskFormat** リソースは、タスク ボードのバケット ビューでタスクを正しく表示するための情報を示します (ビューは割り当てられているバケット内のタスクごとに整理されます)。各 task にはそれぞれ **plannerBucketTaskBoardTaskFormat** オブジェクトが 1 つ関連付けられています。'
+description: '**plannerBucketTaskBoardTaskFormat**リソースは、タスクボードのバケットビューでタスクを正しくレンダリングするために使用される情報を表します (割り当てられているバケット内のタスク別に整理されたビュー)。 各タスクには、1つの**plannerBucketTaskBoardTaskFormat**オブジェクトが関連付けられています。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 4982b0b539412058d6d598893b698f12d88bd671
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986223"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462243"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat リソースの種類
 
-**plannerBucketTaskBoardTaskFormat** リソースは、タスク ボードのバケット ビューでタスクを正しく表示するための情報を示します (ビューは割り当てられているバケット内のタスクごとに整理されます)。各 [task](plannertask.md) にはそれぞれ **plannerBucketTaskBoardTaskFormat** オブジェクトが 1 つ関連付けられています。
+**plannerBucketTaskBoardTaskFormat**リソースは、タスクボードのバケットビューでタスクを正しくレンダリングするために使用される情報を表します (割り当てられているバケット内のタスク別に整理されたビュー)。 各[タスク](plannertask.md)には、1つの**plannerBucketTaskBoardTaskFormat**オブジェクトが関連付けられています。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[plannerBucketTaskBoardTaskFormat の取得](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |**plannerBucketTaskBoardTaskFormat** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |**plannerBucketTaskBoardTaskFormat** オブジェクトを更新します。 |
+|[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |**plannerBucketTaskBoardTaskFormat**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |**plannerBucketTaskBoardTaskFormat**オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| 読み取り専用です。 リソースの ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
+|id|String| 読み取り専用です。 リソースの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](planner-identifiers-disclaimer.md)はサービスによって行われます。|
 |orderHint|String|タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 
 ## <a name="relationships"></a>リレーションシップ

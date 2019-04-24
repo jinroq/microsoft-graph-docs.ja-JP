@@ -1,19 +1,19 @@
 ---
-title: リスト契約
-description: 契約オブジェクトのリストを取得します。
+title: 契約を一覧表示する
+description: アグリーメントオブジェクトの一覧を取得します。
 localization_priority: Normal
 ms.openlocfilehash: 82674e81b6b059ffafedf3b9c15c19e90438dc28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459203"
 ---
-# <a name="list-agreements"></a>リスト契約
+# <a name="list-agreements"></a>契約を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[契約](../resources/agreement.md)オブジェクトのリストを取得します。
+[アグリーメント](../resources/agreement.md)オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -36,12 +36,12 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[許可書](../resources/agreement.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[アグリーメント](../resources/agreement.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {

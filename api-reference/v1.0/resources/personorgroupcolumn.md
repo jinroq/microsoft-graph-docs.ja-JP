@@ -5,11 +5,11 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985452"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462474"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "27985452"
 | **displayAs**              | string  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
 | **chooseFromType**         | string  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
 
-## <a name="displayas-options"></a>DisplayAs オプション
+## <a name="displayas-options"></a>displayas オプション
 
 | DisplayAs 値               | 説明
 |:------------------------------|:-----------------------

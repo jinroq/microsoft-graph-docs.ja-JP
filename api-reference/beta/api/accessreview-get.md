@@ -1,32 +1,32 @@
 ---
-title: AccessReview を取得します。
-description: 'Azure AD のレビュー機能にアクセス、accessReview オブジェクトを取得します。  '
+title: accessreview を取得する
+description: 'Azure AD access レビュー機能で、accessreview オブジェクトを取得します。  '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 26551f27fdf328865509cd02011f3ee2344f5e82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458769"
 ---
-# <a name="get-accessreview"></a>AccessReview を取得します。
+# <a name="get-accessreview"></a>accessreview を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、 [accessReview](../resources/accessreview.md)オブジェクトを取得します。  
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [accessreview](../resources/accessreview.md)オブジェクトを取得します。  
 
-アクセス レビューのレビュー担当者を取得するには、 [accessReview の校閲者の一覧](accessreview-listreviewers.md)API を使用します。 アクセス レビューの決定を取得するには、 [] ボックスの一覧 accessReview の意思決定](accessreview-listdecisions.md)の API、または[私の accessReview の決定事項を表示](accessreview-listmydecisions.md)API を使用します。
+アクセスレビューのレビュー担当者を取得するには、 [list accessreview レビューアー](accessreview-listreviewers.md) API を使用します。 アクセスレビューの決定を取得するには、「[リストアクセスレビュー決定](accessreview-listdecisions.md)api」、または「 [my accessreview review 決定](accessreview-listmydecisions.md)api の一覧」を使用します。
 
-定期的なアクセス確認の場合を使用して、`instances`までは、アクセス確認のインスタンスを現在および将来の[accessReview](../resources/accessreview.md)コレクションを取得するために関係します。
+これが定期的なアクセスレビューである場合は、 `instances`リレーションシップを使用して、アクセスレビューの過去、現在、および今後のインスタンスの[accessreview](../resources/accessreview.md)コレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  サインインしているユーザーは、ディレクトリの役割をアクセスのレビューを読むことを許可またはアクセスのレビューのレビュー担当者として割り当てられている必要があります。 |
+|委任 (職場または学校のアカウント)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  また、サインインしているユーザーは、アクセスレビューを読み取ることを許可するか、またはアクセスレビューのレビュー担当者として割り当てられるディレクトリロールにする必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -38,13 +38,13 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体を提供する必要がありません。
+要求本文を指定する必要はありません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200, OK`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。
+成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[accessreview](../resources/accessreview.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -103,11 +103,11 @@ Content-type: application/json
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[AccessReview を作成します。](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  新しい accessReview を作成します。 |
-|[リスト programControls](programcontrol-list.md) | [デバッギング](../resources/programcontrol.md)コレクション | テナント内の programControls を一覧表示します。 |
-|[AccessReview の校閲者の一覧](accessreview-listreviewers.md) |     コレクションを[割り当てられていません](../resources/useridentity.md)|    AccessReview のレビュー担当者を取得します。 |
-|[リストの accessReview の決定](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    AccessReview の決定を取得します。|
-|[マイ accessReview の決定事項を表示します。](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    参照者、accessReview の自分の意思決定を取得します。|
+|[accessreview を作成する](accessreview-create.md) |    [accessreview](../resources/accessreview.md) |  新しい accessreview を作成します。 |
+|[programcontrols のリスト](programcontrol-list.md) | [programcontrol](../resources/programcontrol.md)コレクション | テナント内の programcontrols を一覧表示します。 |
+|[accessreview レビュー担当者のリスト](accessreview-listreviewers.md) |     [useridentity](../resources/useridentity.md)コレクション|    accessreview のレビュー担当者を取得します。 |
+|[accessreview に関する決定事項を一覧表示する](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    accessreview の決定事項を取得します。|
+|[自分の accessreview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessreview の決定事項を取得します。|
 
 
 <!--

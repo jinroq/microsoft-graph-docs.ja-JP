@@ -1,19 +1,19 @@
 ---
 title: ドメインを取得する
-description: ドメイン オブジェクトのプロパティとリレーションシップを取得します。
+description: ドメインオブジェクトのプロパティと関係を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 93139514ae66b4af4c6ade8de8f068050b985451
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927357"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467212"
 ---
 # <a name="get-domain"></a>ドメインを取得する
 
-ドメイン オブジェクトのプロパティとリレーションシップを取得します。
+ドメインオブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -51,7 +51,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domain](../resources/domain.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[domain](../resources/domain.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
@@ -64,7 +64,7 @@ GET /domains/{id}
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

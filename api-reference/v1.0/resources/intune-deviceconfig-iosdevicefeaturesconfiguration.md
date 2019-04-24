@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a60e212ace529d737c2f3e686861a503b96254f3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584695"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration リソースの種類
 
@@ -32,16 +32,16 @@ iOS デバイス機能構成のプロファイル。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |assetTagTemplate|String|ログイン ウィンドウとロック画面に表示される、デバイスの資産タグ情報です。|
 |lockScreenFootnote|String|ログイン ウィンドウとロック画面に表示される脚注です。 IOS 9.3.1 以降で利用可能です。|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) コレクション|ホーム画面ドックに表示されるアプリとフォルダーのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) コレクション|ホーム画面上のページのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) コレクション|ホーム画面上のページのリスト。 このコレクションには、最大 500 個の要素を含めることができます。|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) コレクション|各バンドル ID ごとの通知設定。監視モードのデバイスにのみ (iOS 9.3 以降) 適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ

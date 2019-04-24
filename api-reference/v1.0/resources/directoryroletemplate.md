@@ -1,15 +1,15 @@
 ---
 title: directoryRoleTemplate リソース型
-description: 'ディレクトリの役割のテンプレートを表します。 ロール テンプレート ディレクトリは、ディレクトリの役割 (directoryRole) のプロパティ値を指定します。 テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。 ディレクトリのロールの読み取りや、そのメンバーにする必要があります最初でアクティブにするテナントです。 会社の管理者のディレクトリの役割のみが既定でアクティブにします。 POST 要求を送信するその他の利用可能なディレクトリの役割を有効にするのには、`/directoryRoles`の要求の**roleTemplateId**パラメーターで指定されたディレクトリの役割の基になるディレクトリ ロール テンプレートの ID を持つエンドポイントです。 この要求の完了時に読み取りとディレクトリのロールにメンバーを割り当てるし、開始できます。 **注**: このロールに、ユーザー ディレクトリのディレクトリの役割のテンプレートが公開されています。 ユーザー ディレクトリの役割は、暗黙の型がクライアントのディレクトリに表示されていません。 テナントのすべてのユーザーは、インフラストラクチャによって、このロールに割り当てられます。 ロールが既にアクティブになっています。 このテンプレートを使用しません。'
+description: ディレクトリ ロール テンプレートを表します。 ディレクトリ ロール テンプレートでは、ディレクトリ ロール (directoryRole) のプロパティ値を指定します。 テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の使用可能なディレクトリロールをアクティブ化するには`/directoryRoles` 、要求の**roleTemplateId**パラメーターでディレクトリロールが指定されているディレクトリロールテンプレートの ID を使用して、POST 要求をエンドポイントに送信します。 この ID は、要求の roleTemplateId パラメーターで指定したディレクトリ ロールに基づきます。 この要求が正常に完了すると、ディレクトリ ロールの読み取りや、ディレクトリ ロールへのメンバーの追加ができるようになります。**注**:ディレクトリ ロール テンプレートは、ユーザー (Users) ディレクトリ ロールに公開されます。 ユーザー ディレクトリ ロールは、暗黙的であり、ディレクトリ クライアントには表示されません。 テナント内のすべてのユーザーは、インフラストラクチャによって、このロールに割り当てられます。 このロールは、あらかじめアクティブ化されています。 このテンプレートは、使用しないでください。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 57dec43699ba75c7e936fa02dbdf09df74dd06ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585392"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate リソース型
 
@@ -21,12 +21,12 @@ ms.locfileid: "27966994"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[Get directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |directoryRoleTemplate オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[directoryRoleTemplate を一覧表示する](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) コレクション |directoryRoleTemplate オブジェクトのリストを取得します|
+|[List directoryRoleTemplate](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) コレクション |directoryRoleTemplate オブジェクトのリストを取得します|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String|ディレクトリ ロールに設定する説明。読み取り専用。|
+|description|String|ディレクトリ ロールに設定する説明。読み取り専用。|
 |displayName|String|ディレクトリ ロールに設定する表示名。読み取り専用。 |
 |id|String|テンプレートの一意識別子。[directoryObject](directoryobject.md) から継承されます。POST 要求の **roleTemplateId** プロパティにディレクトリ ロール テンプレートの **id** を指定して、テナントの [directoryRole](directoryrole.md) をアクティブ化します。キーであり、Null は許容されません。読み取り専用。|
 

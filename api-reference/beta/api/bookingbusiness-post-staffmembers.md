@@ -1,27 +1,27 @@
 ---
-title: BookingStaffMember を作成します。
-description: 指定された bookingbusiness で、新しいスタッフのメンバーを作成します。
+title: bookingStaffMember を作成する
+description: 指定した bookingbusiness に新しいスタッフメンバーを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: f3f13f30f646da8bf0fc8e32075002c0e591e902
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461655"
 ---
-# <a name="create-bookingstaffmember"></a>BookingStaffMember を作成します。
+# <a name="create-bookingstaffmember"></a>bookingStaffMember を作成する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[bookingbusiness](../resources/bookingbusiness.md)で、新しい[スタッフのメンバー](../resources/bookingstaffmember.md)を作成します。
+指定した[bookingbusiness](../resources/bookingbusiness.md)に新しい[スタッフメンバー](../resources/bookingstaffmember.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -37,15 +37,15 @@ POST /bookingBusinesses/{id}/staffMembers
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表現を指定します。 次のプロパティを含める必要があります。
+要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。 次のプロパティを含める必要があります。
 
 - **displayName**
 - **emailAddress**
-- **役割**
+- **役職**
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`201, Created`、応答の本体で応答コードと[bookingStaffMember](../resources/bookingstaffmember.md)のオブジェクトです。
+成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -137,7 +137,7 @@ Content-length: 309
     ]
 }
 ```
-要求の本文には、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {

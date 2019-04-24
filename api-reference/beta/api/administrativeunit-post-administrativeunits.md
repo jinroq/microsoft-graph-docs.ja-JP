@@ -1,21 +1,21 @@
 ---
-title: AdministrativeUnit を作成します。
-description: この API を使用すると、新しい administrativeUnit を作成します。
+title: administrativeUnit を作成する
+description: この API を使用して、新しい administrativeUnit を作成します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 999f65db5c50ae012cf10242100523b2f6d0c4ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509687"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459306"
 ---
-# <a name="create-administrativeunit"></a>AdministrativeUnit を作成します。
+# <a name="create-administrativeunit"></a>administrativeUnit を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用すると、新しい[administrativeUnit](../resources/administrativeunit.md)を作成します。
+この API を使用して、新しい[administrativeUnit](../resources/administrativeunit.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -37,13 +37,13 @@ POST /administrativeUnits
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。
 
-使用することができます**administrativeUnit**リソースでは、[拡張機能](/graph/extensibility-overview)をサポートするため、`POST`操作管理単位に作成時に実際のデータにカスタム プロパティを追加するとします。
+**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、独自のデータを作成するときにカスタムプロパティを管理単位に追加することができます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[administrativeUnit](../resources/administrativeunit.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[administrativeUnit](../resources/administrativeunit.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -63,7 +63,7 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-要求の本文には、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

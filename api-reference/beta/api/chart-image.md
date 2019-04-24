@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642843"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456536"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -60,8 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
-<!-- { "blockType": "ignored" } -->
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

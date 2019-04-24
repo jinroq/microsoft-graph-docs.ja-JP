@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: リコール'
-description: '受講者が提出書類を取り戻すしようとしたことを示します。 このアクションは、学生によってのみ実行できます。 '
+title: 'educationSubmission: 呼び戻し'
+description: '学生が提出を希望していることを示します。 この操作は、学生のみが行うことができます。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0be94d2888223ca31e37b71e490c4a9fdc28b7d0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457631"
 ---
-# <a name="educationsubmission-recall"></a>educationSubmission: リコール
+# <a name="educationsubmission-recall"></a>educationSubmission: 呼び戻し
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-受講者が提出書類を取り戻すしようとしたことを示します。 このアクションは、学生によってのみ実行できます。 「送信」からの提出書類のステータスを変更すると、「処理中」に戻るには。
+学生が提出を希望していることを示します。 この操作は、学生のみが行うことができます。 送信の状態は "送信済み" から "作業" に変更されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません  |
 |アプリケーション |サポートされていません。  | 
 

@@ -5,15 +5,13 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: c7af59ec2198609ef1efaf12b87b89f0d251df01
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515077"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464787"
 ---
 # <a name="list-classes"></a>クラスをリストする
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 クラス オブジェクトのリストを取得します。 委任されたトークンを使用した場合、メンバーは自分のクラスに関する情報以外を参照できません。 
 
@@ -54,7 +52,7 @@ GET /education/users/{id}/classes
   "name": "get_classes"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/me/classes
+GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -96,15 +94,10 @@ Content-length: 277
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List classes",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationuser-list-classes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

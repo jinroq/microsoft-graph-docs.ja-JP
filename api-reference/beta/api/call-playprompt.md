@@ -1,29 +1,29 @@
 ---
-title: '電話: playPrompt'
-description: 呼び出しではプロンプトを再生します。
+title: '呼び出し: playprompt'
+description: 呼び出しでプロンプトを再生します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461235"
 ---
-# <a name="call-playprompt"></a>電話: playPrompt
+# <a name="call-playprompt"></a>呼び出し: playprompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出しではプロンプトを再生します。
+呼び出しでプロンプトを再生します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | サポートされていません。                               |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                               |
+| 委任 (職場または学校のアカウント)     | サポートされません。                               |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                               |
 | アプリケーション                            | なし。                                        |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -44,11 +44,11 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|メッセージが表示されます。|[プロンプト](../resources/prompt.md)コレクション||
-|ClientContext|String|クライアントのコンテキスト。|
+|促し|[prompt](../resources/prompt.md)コレクション||
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[playPromptOperation](../resources/playPromptOperation.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[playPromptOperation](../resources/playPromptOperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 49a4e16e6f24ebac22c760cf11e63c220181d0b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457486"
 ---
 # <a name="get-event"></a>イベントを取得する
 
@@ -17,12 +17,12 @@ ms.locfileid: "29509085"
 
 指定した[イベント](../resources/event.md) オブジェクトのプロパティとリレーションシップを取得します。
 
-2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。
+アプリが別のユーザーの予定表でイベントを取得するには、次の2つのシナリオがあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーと予定表を共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
 
-**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
+**event** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**event** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
 
 ### <a name="support-various-time-zones"></a>さまざまなタイム ゾーンをサポートします。
@@ -87,9 +87,9 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 最初の例では、指定されたイベントを取得します。以下のものを指定します。
 
 - 太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。 
-- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。
+- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターを使用しないと、すべてのイベント プロパティが返されます。
 
-要求が指定されていません、`Prefer: outlook.body-content-type`ヘッダーが返されたイベントの本文の特定の形式を指定します。 
+要求では、返されたイベント本体の具体的な形式を示す `Prefer: outlook.body-content-type` ヘッダーを指定しません。 
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>応答 1
-以下は、応答の例です。 なし`Prefer: outlook.body-content-type`ヘッダーが指定されている**body**プロパティで返される既定の HTML 形式です。 
+以下は、応答の例です。 `Prefer: outlook.body-content-type` ヘッダーが指定されていないため、**body** プロパティが既定の HTML 形式で返されます。 
 
 <!-- {
   "blockType": "response",
@@ -178,9 +178,9 @@ Content-length: 1928
 ```
 
 ##### <a name="request-2"></a>要求 2
-2 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式で指定されたイベントの**body**プロパティを取得します。
+2番目の例では、 `Prefer: outlook.body-content-type="text"`ヘッダーを使用して、指定したイベントの**body**プロパティをテキスト形式で取得する方法を示します。
 
-要求を使用しても、`$select`固有のプロパティを取得するパラメーター クエリを実行します。 なし、`$select`パラメーターでは、すべてのイベント プロパティが表示されます。
+この要求も、`$select` クエリ パラメーターを使用して特定のプロパティを返します。 `$select` パラメーターを使用しないと、すべてのイベント プロパティが返されます。
 
 <!-- {
   "blockType": "request",
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=s
 Prefer: outlook.body-content-type="text"
 ```
 ##### <a name="response-2"></a>応答 2
-以下は、応答の例です。 **Body**プロパティは、テキスト形式で返されます。 
+以下は、応答の例です。 **body** プロパティがテキスト形式で返されます。 
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Content-length: 636
 
 ##### <a name="request-3"></a>要求 3
 
-複数の場所を指定するイベントを取得する 3 番目の例を示しています。 この要求では、特定のプロパティを返すように `$select` クエリ パラメーターを指定しています。 
+3つ目の例では、複数の場所を指定するイベントを取得します。 この要求では、特定のプロパティを返すように `$select` クエリ パラメーターを指定しています。 
 
 <!-- {
   "blockType": "request",
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=s
 ##### <a name="response-3"></a>応答 3
 以下は、応答の例です。 **locations** プロパティには、イベントを開催する 3 つの場所の詳細が含まれています。 
 
-要求を指定しないため、`Prefer: outlook.timezone`または`Prefer: outlook.body-content-type`デフォルト UTC タイム ゾーンは、ヘッダー、**開始**と**終了**のプロパティが表示され、本文が HTML 形式の既定では。  
+要求で`Prefer: outlook.timezone`はまたは`Prefer: outlook.body-content-type`ヘッダーが指定されていないため、 **start**および**end**プロパティは既定の UTC タイムゾーンで表示され、本文は既定の HTML 形式になります。  
 
 <!-- {
   "blockType": "response",
@@ -337,7 +337,7 @@ Content-length: 1992
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

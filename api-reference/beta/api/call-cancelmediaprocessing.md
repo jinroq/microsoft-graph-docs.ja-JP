@@ -1,29 +1,29 @@
 ---
-title: '電話: cancelMediaProcessing'
-description: キャンセル メディアのすべての処理中、PlayPrompt、またはレコードの操作。
+title: '通話: cancelmediaprocessing'
+description: すべての進行中の再生プロンプトまたはレコード操作のメディア処理をキャンセルします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 77c35cb0cfeaea6ebb2e623b32b1fa3c70f65777
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461311"
 ---
-# <a name="call-cancelmediaprocessing"></a>電話: cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>通話: cancelmediaprocessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-キャンセル メディアのすべての処理中、PlayPrompt、またはレコードの操作。
+すべての進行中の再生プロンプトまたはレコード操作のメディア処理をキャンセルします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | サポートされていません。                              |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                              |
+| 委任 (職場または学校のアカウント)     | サポートされません。                              |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                              |
 | アプリケーション                            | なし。                                       |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 | パラメーター      | 型    | 説明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | ブール値 | 操作または現在のすべてを停止するかどうかを示すフラグです。 |
-| ClientContext  | String  | クライアントのコンテキスト。                                            |
+| すべての            | Boolean | すべての操作または現在の終了を停止するかどうかを示すフラグ。 |
+| clientContext  | String  | クライアントコンテキスト。                                            |
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -84,7 +84,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,21 +1,21 @@
 ---
 title: 通話の作成
-description: 新しい呼び出しを作成します。
+description: 新しい通話を作成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643574"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459053"
 ---
 # <a name="create-call"></a>通話の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい呼び出しを作成します。
+新しい通話を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,9 +24,9 @@ ms.locfileid: "29643574"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                                                                           |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                                                                           |
-| アプリケーション                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
+| アプリケーション                            | JoinGroupCallsasGuest。すべての呼び出しを呼び出します。すべてを呼び出します。すべての呼び出しは、initiategroupcalls を呼び出します。 |
 
-> **注:** アプリケーションがホストされているメディアを使用して呼び出し、上記の表に記載されているアクセス許可のいずれかで Calls.AccessMedia.All のアクセス許可が必要です。
+> **注:** アプリホスト型メディアを使用した通話の場合は、上記の表に記載されているいずれかのアクセス許可を持つすべてのアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -41,18 +41,18 @@ POST /applications/{id}/calls
 | Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体[を呼び出す](../resources/call.md)オブジェクトの JSON の形式を指定します。
+要求本文で、[呼び出し](../resources/call.md)オブジェクトの JSON 表記を指定します。
 
-> **注:** プロパティとしてマーク`Server generated`を処理するときに無視されます`POST`の`app/calls`。
+> **注:** と`Server generated`マークされたプロパティは`POST` 、 `app/calls`を処理するときに無視されます。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードと応答の本文[を呼び出す](../resources/call.md)オブジェクト。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[call](../resources/call.md)オブジェクトを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>サービスがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>サービスホストメディアを使用したピアツーピア VOIP 通話の作成
 
-> **注:** この呼び出しでは、Calls.Initiate.All アクセス許可が必要です。
+> **注:** この呼び出しには、呼び出しが必要です。
 
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>通知を確立します。
+##### <a name="notification---establishing"></a>通知-確立中
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -188,7 +188,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a>通知の設定
+##### <a name="notification---established"></a>通知-確立済み
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -217,9 +217,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>アプリケーションがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>アプリケーションでホストされているメディアを使用したピアツーピア VOIP 通話の作成
 
-> 注: 必要な権限を Calls.Initiate.All と Calls.AccessMedia.All。
+> 注: 呼び出しが必要です。すべてのアクセス許可を呼び出します。
 
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
@@ -268,9 +268,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a>サービスがホストされているメディアを使用して呼び出しのグループを作成します。
+### <a name="create-group-call-with-service-hosted-media"></a>サービスホストメディアを使用してグループ通話を作成する
 
-> **注:** この例では、Calls.InitiateGroupCalls.All と Calls.AccessMedia.All のアクセス許可が必要です。
+> **注:** この例では、呼び出しを必要とします。すべてのアクセス許可があります。
 
 ##### <a name="request"></a>要求
 
@@ -334,9 +334,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a>サービスがホストされているメディアを使用してプライベートな会議に参加します。
+### <a name="join-private-meeting-with-service-hosted-media"></a>サービスホストされたメディアを使用したプライベート会議への参加
 
-> **注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。
+> **注:** この例では、発着信権呼び出しが必要です。
 
 ##### <a name="request"></a>要求
 
@@ -390,9 +390,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>サービスがホストされているメディアを使用してチャネルの会議に参加します。
+### <a name="join-channel-meeting-with-service-hosted-media"></a>サービスでホストされているメディアを使用したチャネル会議への参加
 
-> **注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。
+> **注:** この例では、発着信権呼び出しが必要です。
 
 ##### <a name="request"></a>要求
 
@@ -447,9 +447,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>サービスがホストされているメディアを使用してゲストとしてチャネルの会議に参加します。
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>サービスによってホストされるメディアを使用して、ゲストとしてチャネル会議に参加する
 
-> **注:** この例では、Calls.JoinGroupCallsAsGuest.All アクセス許可が必要です。
+> **注:** この例では、JoinGroupCallsAsGuest アクセス許可が必要です。
 
 ##### <a name="request"></a>要求
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3ee4ad9af831d033aee1ac6e54469e5b591e88a5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781331"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32479324"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>androidForWorkCompliancePolicy の更新
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
-|osMinimumVersion|文字列|Android の最小バージョン。|
+|osMinimumVersion|String|Android の最小バージョン。|
 |osMaximumVersion|文字列型 (String)|Android の最大バージョン。|
 |minAndroidSecurityPatchLevel|String|Android セキュリティ パッチの最小レベル。|
 |storageRequireEncryption|Boolean|Android デバイスでの暗号化を要求します。|

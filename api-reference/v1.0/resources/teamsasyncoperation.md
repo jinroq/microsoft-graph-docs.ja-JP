@@ -1,38 +1,38 @@
 ---
 title: teamsAsyncOperation リソースの種類
-description: 'マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。 '
+description: 'Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462257"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation リソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。 これらの操作は、送信元の要求の時間内に実行するのに時間がかかる場合があります。
 
-マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。 これらの操作は、実行時間の長い、または、最初の要求の時間枠で完了するのにはコストが高すぎます。
-
-非同期操作が開始されると、メソッドは、202 の承諾済みの応答コードを返します。 応答は、teamsAsyncOperation の場所を含む場所のヘッダーも格納されます。 この場所に GET 要求を行うことによって、オペレーションのステータスを定期的にチェックします。待機 > 30 秒間隔でチェックします。
-要求が正常に完了したら、状態は、"成功し、targetResourceLocation が作成/変更したリソースを指します。
+async 操作が開始されると、メソッドは202の受け入れられた応答コードを返します。 また、応答には、teamsAsyncOperation の場所が含まれている場所のヘッダーも含まれます。 この場所に GET 要求を行うことによって、操作の状態を定期的にチェックします。チェックの間、>30 秒間待機します。
+要求が正常に完了すると、状態は "succeeded" になり、targetresourcelocation は作成/変更されたリソースを参照するようになります。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類   | 説明 |
+| プロパティ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|ID|文字列 |操作の一意の id です。|
-|入力|[teamsAsyncOperationType](teamsasyncoperationtype.md) |説明している操作の種類を表します。|
+|ID|string |一意の操作 id。|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |説明されている操作の種類を示します。|
 |createdDateTime|DateTimeOffset |操作が作成された時刻。|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作の状態です。|
-|lastActionDateTime|DateTimeOffset |非同期操作が最後に更新された時間です。|
-|attemptsCount|Int32|成功または失敗にマークされる前に操作が試行された回数です。|
-|targetResourceId|guid |作成または[チーム](../resources/team.md)では通常、この非同期操作を受けて変更されたオブジェクトの ID です。|
-|targetResourceLocation|文字列|作成または、この非同期操作を受けて変更されたオブジェクトの位置。 この URL は非透過値として扱われます、そのコンポーネントのパスには解析されませんする必要があります。|
-|エラー|[operationError](operationerror.md)|非同期操作が失敗の原因となるすべてのエラーです。|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作の状態。|
+|lastactiondatetime|DateTimeOffset |async 操作が最後に更新された時刻。|
+|attemptsCount|Int32|操作が成功したか失敗したかがマークされるまでの、操作が試行された回数。|
+|targetresourceid|guid |この非同期操作の結果として作成または変更されるオブジェクトの ID (通常は[チーム](../resources/team.md))。|
+|targetresourcelocation|string|この非同期操作の結果として作成または変更されたオブジェクトの場所。 この URL は、不透明な値として扱われ、そのコンポーネントのパスに解析されることはありません。|
+|error|[operationerror](operationerror.md)|非同期操作が失敗する原因となるエラー。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -60,10 +60,15 @@ ms.locfileid: "27963438"
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

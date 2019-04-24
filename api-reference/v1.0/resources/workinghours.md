@@ -3,11 +3,11 @@ title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
 ms.openlocfilehash: b221b6f4f1fe8dee7fc7a043993f0d0cd3ea5b7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463818"
 ---
 # <a name="workinghours-resource-type"></a>workingHours リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "27805244"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | daysOfWeek | dayOfWeek コレクション | ユーザーが働く曜日。 |
 | startTime | Edm.TimeOfDay | ユーザーの始業時間。 |

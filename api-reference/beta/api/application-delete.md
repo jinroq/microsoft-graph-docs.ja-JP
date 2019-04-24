@@ -1,17 +1,17 @@
 ---
-title: アプリケーションを削除します。
+title: アプリケーションを削除する
 description: アプリケーションを削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7db745e77125049a8a2e2c225c35c888e594451a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459229"
 ---
-# <a name="delete-application"></a>アプリケーションを削除します。
+# <a name="delete-application"></a>アプリケーションを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29508441"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Application.ReadWrite.OwnedBy、Application.ReadWrite.All |
+|アプリケーション | application.readwrite.ownedby、アプリケーションの読み取り/書き込み。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

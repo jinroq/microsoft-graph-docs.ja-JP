@@ -1,17 +1,19 @@
 ---
-title: タイムスタンプのリソースの種類
-description: 時間のポイントの日付と時刻情報です。
+title: timeStamp リソースの種類
+description: 特定の時点の日付と時刻の情報。
 localization_priority: Normal
 ms.openlocfilehash: c63b3bba93f4b108a8eb9943d3fc2a1b2961f06c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456970"
 ---
-# <a name="timestamp-resource-type"></a>タイムスタンプのリソースの種類
+# <a name="timestamp-resource-type"></a>timeStamp リソースの種類
 
-時間のポイントの日付と時刻情報です。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+特定の時点の日付と時刻の情報。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -34,18 +36,23 @@ ms.locfileid: "27888803"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 種類    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |date|日付|タイムスタンプの日付部分。|
 |time|TimeOfDay|タイムスタンプの時刻部分。|
-|timeZone|String|タイムスタンプは、世界中の 24 の前後の領域の 1 つのタイム ゾーンの部分です。|
+|timeZone|String|タイムスタンプのタイムゾーン部分。世界中の24の前後の地域の1つです。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "timeStamp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/timestamp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

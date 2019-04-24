@@ -1,28 +1,28 @@
 ---
-title: リストの割り当て
-description: クラスのすべてのユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティの名前空間は、呼び出し元が各クラスからの割り当てを要求することのではなく、1 回の呼び出しで、学生のすべての割り当てを検索できます。 クラスの名前空間内での割り当ての詳細な情報を取得するために必要な割り当ての一覧が含まれます。 割り当ての他のすべての操作は、クラスの名前空間を使用してください。
+title: 割り当てを一覧表示する
+description: すべてのクラスについて、ユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティ名前空間を使用すると、発信者は各クラスの割り当てを要求するのではなく、1回の呼び出しですべての学生の割り当てを検索できます。 割り当てリストには、クラス名前空間内の割り当ての詳細情報を取得するために必要な情報が含まれています。 割り当てに対する他のすべての操作では、クラスの名前空間を使用する必要があります。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e2e11eb94c07fc523d6d64143ffc3df401fd9906
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457412"
 ---
-# <a name="list-assignments"></a>リストの割り当て
+# <a name="list-assignments"></a>割り当てを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-クラスのすべてのユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティの名前空間は、呼び出し元が各クラスからの割り当てを要求することのではなく、1 回の呼び出しで、学生のすべての割り当てを検索できます。 クラスの名前空間内での割り当ての詳細な情報を取得するために必要な割り当ての一覧が含まれます。 割り当ての他のすべての操作は、クラスの名前空間を使用してください。
+すべてのクラスについて、ユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティ名前空間を使用すると、発信者は各クラスの割り当てを要求するのではなく、1回の呼び出しですべての学生の割り当てを検索できます。 割り当てリストには、クラス名前空間内の割り当ての詳細情報を取得するために必要な情報が含まれています。 割り当てに対する他のすべての操作では、クラスの名前空間を使用する必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) | EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。 | 
 
@@ -43,7 +43,7 @@ GET /education/users/{id}/assignments
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationAssignment](../resources/educationassignment.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

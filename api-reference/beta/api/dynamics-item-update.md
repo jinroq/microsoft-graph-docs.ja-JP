@@ -1,5 +1,5 @@
 ---
-title: アイテムを更新する
+title: アイテムの更新
 description: Dynamics 365 Business Central のアイテムオブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
@@ -7,13 +7,13 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c82d17aa57ab6535660f7264ca0b96e4d8128bc1
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458349"
 ---
-# <a name="update-items"></a>アイテムを更新する
+# <a name="update-items"></a>アイテムの更新
 Dynamics 365 Business Central のアイテムオブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -37,7 +37,7 @@ PATCH /financials/companies('{id}')/items('{id}')
 |ヘッダー       |値                    |
 |-------------|-------------------------|
 |Authorization|ベアラー {トークン}。必須。|
-|Content-Type |アプリケーション/json。        |
+|Content-Type |application/json.        |
 |If-Match     |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**アイテム**の現在のタグと一致しない場合、**アイテム**は更新されません。 |
 
 ## <a name="request-body"></a>要求本文

@@ -1,21 +1,21 @@
 ---
-title: アプリケーションを取得します。
-description: プロパティとアプリケーションのオブジェクトの関係を取得します。
+title: アプリケーションを取得する
+description: application オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 024e2cde999e90b1f361e7f67ca28ddd71078824
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522925"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463996"
 ---
-# <a name="get-application"></a>アプリケーションを取得します。
+# <a name="get-application"></a>アプリケーションを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティとアプリケーションのオブジェクトの関係を取得します。
+application オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -43,7 +43,7 @@ GET /workbook/application
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体にある[アプリケーション](../resources/application.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Application](../resources/application.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -1,21 +1,21 @@
 ---
-title: AccessReview のレビュー担当者を削除します。
-description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として、ユーザーを削除するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
+title: accessreview レビュー担当者を削除する
+description: 'Azure AD access レビュー機能で、既存の accessreview オブジェクトを更新して、ユーザーを校閲者として削除します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d3b6ea0fecb6b9179f40fa185aa770a743776eaa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523128"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459432"
 ---
-# <a name="remove-accessreview-reviewer"></a>AccessReview のレビュー担当者を削除します。
+# <a name="remove-accessreview-reviewer"></a>accessreview レビュー担当者を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、レビュー担当者として、ユーザーを削除するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[accessreview](../resources/accessreview.md)オブジェクトを更新して、ユーザーを校閲者として削除します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -23,7 +23,7 @@ ms.locfileid: "29523128"
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -35,22 +35,22 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体を提供する必要がありません。
+要求本文を指定する必要はありません。
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは、200 シリーズの応答コードを返します。
+成功した場合、このメソッドは200シリーズの応答コードを返します。
 
 ## <a name="example"></a>例
 
-これは、不要なのレビュー担当者を削除するのには 1 回限り (繰り返し発生しない) アクセス レビューの更新の例です。
+これは、不要なレビューを削除するために、1回限り (定期的でない) アクセスレビューを更新する例です。
 
 
 ##### <a name="request"></a>要求
-要求の URL では、accessReview オブジェクトの id と、ユーザー オブジェクトの id を指定します。
+要求 URL で、accessreview オブジェクトの id と、ユーザーオブジェクトの id を指定します。
 
 <!-- {
   "blockType": "request",

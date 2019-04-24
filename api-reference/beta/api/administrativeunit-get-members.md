@@ -1,21 +1,21 @@
 ---
-title: メンバーを取得します。
-description: 管理単位で特定のメンバー (ユーザーまたはグループ) を取得するのにには、この API を使用します。
+title: メンバーを取得する
+description: この API を使用して、管理単位で特定のメンバー (ユーザーまたはグループ) を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 67067d0e465aab61449a42cd833f9e6ce07fcd12
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526796"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459631"
 ---
-# <a name="get-a-member"></a>メンバーを取得します。
+# <a name="get-a-member"></a>メンバーを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理単位で特定のメンバー (ユーザーまたはグループ) を取得するのにには、この API を使用します。
+この API を使用して、管理単位で特定のメンバー (ユーザーまたはグループ) を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に、[ユーザー](../resources/user.md)または[グループ](../resources/group.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ユーザー](../resources/user.md)または[グループ](../resources/group.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>応答
-ここでは、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+次に、その一例を示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 ```http
 HTTP/1.1 200 OK

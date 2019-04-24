@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b2e3ee8c4d2d29139cba0d094f6a755f026b652a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32469517"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus の作成
 
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
+|deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|文字列型 (String)|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|
 |platform|Int32|レポートされているデバイスのプラットフォーム|

@@ -6,17 +6,19 @@ title: SharePoint リストからエントリを削除する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: e5f6fa9e893178e824c4c432d6669638779e5358
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480699"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464632"
 ---
 # <a name="delete-an-item-from-a-list"></a>リストからアイテムを削除する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [list][] からアイテムを削除します。
 
-[list]: ../resources/list.md
+[リスト]: ../resources/list.md
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -35,7 +37,7 @@ ms.locfileid: "30480699"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
@@ -50,10 +52,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>例
 
-<!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="response"></a>応答
@@ -66,10 +68,15 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Delete"
-} -->
+  "tocPath": "ListItem/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

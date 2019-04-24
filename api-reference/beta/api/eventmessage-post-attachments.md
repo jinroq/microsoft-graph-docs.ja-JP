@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 504b3daccc5e1313ee56d23a87b2d25eb62abae9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463984"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -76,7 +76,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

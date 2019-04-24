@@ -1,21 +1,21 @@
 ---
-title: '呼び出す: 元に戻す'
-description: 着信呼び出しを拒否します。
+title: '通話: 拒否'
+description: 着信を拒否します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b42ebee208431cd0a02be291d07f580d98c87a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516190"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461320"
 ---
-# <a name="call-reject"></a>呼び出す: 元に戻す
+# <a name="call-reject"></a>通話: 拒否
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-着信呼び出しを拒否します。
+着信を拒否します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|理由|String|却下の理由です。|
+|したがっ|String|拒否理由。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
@@ -55,7 +55,7 @@ Returns `202 Accepted` response code
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
 
-##### <a name="notification---incoming"></a>通知の受信
+##### <a name="notification---incoming"></a>通知-受信
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -137,7 +137,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>通知の削除
+##### <a name="notification---deleted"></a>通知-削除済み
 
 ```http
 POST https://bot.contoso.com/api/calls

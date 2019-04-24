@@ -1,28 +1,28 @@
 ---
-title: EducationSynchronizationErrors を取得します。
-description: '検証中に、テナントの特定の学校のデータの同期プロファイルの同期中に発生したエラーを取得します。 '
+title: educationSynchronizationErrors を取得する
+description: '検証中に生成されたエラー、またはテナント内の特定の school データ同期プロファイルの同期中に発生したエラーを取得します。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425128"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464273"
 ---
-# <a name="get-educationsynchronizationerrors"></a>EducationSynchronizationErrors を取得します。
+# <a name="get-educationsynchronizationerrors"></a>educationSynchronizationErrors を取得する
 
-検証中に、テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の同期中に発生したエラーを取得します。 
+検証中に生成されたエラー、またはテナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期中に発生したエラーを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:-----------|:------|
-| 委任 (職場または学校のアカウント) | EduAdministration.Read、EduAdministration.ReadWrite |
-|(個人用の Microsoft アカウントを委任します。|サポートされていません。|
-|アプリケーション| EduAdministration.Read.All、EduAdministration.ReadWrite.All |
+| 委任 (職場または学校のアカウント) | EduAdministration、EduAdministration |
+|委任 (個人 Microsoft アカウント|サポートされていません。|
+|アプリケーション| EduAdministration、EduAdministration のいずれかを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ ms.locfileid: "29425128"
 GET /synchronizationProfiles/{id}/errors
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています: $filter、$orderby、$top、$skip、および $count。
+このメソッドは、応答をカスタマイズするために、次の[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています。 $filter、$orderby、$top、$skip、$count。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -40,7 +40,7 @@ GET /synchronizationProfiles/{id}/errors
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[同期エラー](../resources/educationsynchronizationerror.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[同期エラー](../resources/educationsynchronizationerror.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

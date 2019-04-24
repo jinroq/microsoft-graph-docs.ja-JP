@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fa86724affd94d3eaaf6584ce3e70dc8266a5f00
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584811"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent リソース タイプ
 
@@ -31,8 +31,8 @@ ms.locfileid: "30251630"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|displayName|文字列型 (String)|イベントの表示名。|
+|id|文字列型 (String)|エンティティのキー。|
+|displayName|String|イベントの表示名。|
 |componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
 |activity|String|わかりやすいアクティビティの名前。|

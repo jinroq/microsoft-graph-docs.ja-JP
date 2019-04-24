@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 45f8fcc08fb9b3b260ff6446c99948124777f327
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470483"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の作成
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|setting|文字列|設定のクラス名とプロパティ名。|
+|setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|設定の名前。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームを設定します。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |unknownDeviceCount|Int32|不明なデバイスの数|

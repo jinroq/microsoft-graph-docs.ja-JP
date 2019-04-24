@@ -1,25 +1,25 @@
 ---
-title: ディレクトリの設定を作成します。
-description: DirectorySettingTemplates で利用可能なテンプレートに基づいて、新しい設定を作成するのにには、この API を使用します。 テナント レベルまたはオブジェクト レベルでこれらの設定ができます (現在のグループに対してのみ)。 テンプレートで定義されているすべての設定の作成の要求に settingValues を入力してください。 グループに固有の設定のみの設定を制御するグループのメンバーは、ゲスト ユーザーを招待できるかどうかを設定できます。 ゲスト ユーザーをグループに追加することが一般的に使用できるとは、この動作が適用されます。
+title: ディレクトリ設定を作成する
+description: この API を使用して、directorysettingtemplates で利用可能なテンプレートに基づいて新しい設定を作成します。 これらの設定は、テナントレベルまたはオブジェクトレベルで行うことができます (現在はグループに対してのみ)。 作成要求では、テンプレートで定義されているすべての設定の settingvalues を指定する必要があります。 グループ固有の設定では、グループのメンバーがゲストユーザーを招待できるかどうかを制御する設定のみが可能です。 これは、グループにゲストユーザーを追加する機能が一般に利用可能になったときに、この動作を制御します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f74c449f02726adc4ba0993f450a8a4351ec8f2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520754"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454891"
 ---
-# <a name="create-a-directory-setting"></a>ディレクトリの設定を作成します。
+# <a name="create-a-directory-setting"></a>ディレクトリ設定を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-DirectorySettingTemplates で利用可能なテンプレートに基づいて、新しい設定を作成するのにには、この API を使用します。 テナント レベルまたはオブジェクト レベルでこれらの設定ができます (現在のグループに対してのみ)。 テンプレートで定義されているすべての設定の作成の要求に settingValues を入力してください。 グループに固有の設定のみの設定を制御するグループのメンバーは、ゲスト ユーザーを招待できるかどうかを設定できます。 ゲスト ユーザーをグループに追加することが一般的に使用できるとは、この動作が適用されます。
+この API を使用して、directorysettingtemplates で利用可能なテンプレートに基づいて新しい設定を作成します。 これらの設定は、テナントレベルまたはオブジェクトレベルで行うことができます (現在はグループに対してのみ)。 作成要求では、テンプレートで定義されているすべての設定の settingvalues を指定する必要があります。 グループ固有の設定では、グループのメンバーがゲストユーザーを招待できるかどうかを制御する設定のみが可能です。 これは、グループにゲストユーザーを追加する機能が一般に利用可能になったときに、この動作を制御します。
 
-> **注**: この API の/beta バージョンは、のみのグループに適用されます。 この API の/v1.0 バージョン*を作成する groupSettings*の名前は。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンが、 *groupsettings を作成*する名前に変更されました。
 
-テンプレートとベータ版でサポートしているプロパティのリストは、 [directorySettingTemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)を使用します。 ( [GroupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)を呼び出す v1.0 のエンドポイントに対して)。
+テンプレートと、ベータ版でサポートされているプロパティの一覧については、 [directorysettingtemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)を使用してください。 (v2.0 エンドポイントの場合は、[ [groupsettingtemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)] を呼び出します)。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -43,11 +43,11 @@ POST /groups/{id}/settings
 | Authorization  | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [directorySetting](../resources/directorysetting.md)オブジェクトの JSON 表現を指定します。  ただし、設定の表示名が設定に基づいて参照設定テンプレート名を。
+要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。  ただし、設定の表示名は、参照される設定テンプレート名に基づいて設定されます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[directorySetting](../resources/directorysetting.md)のオブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[directorysetting](../resources/directorysetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -71,7 +71,7 @@ Content-length: 222
   ]
 }
 ```
-要求の本文には、 [directorySetting](../resources/directorysetting.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

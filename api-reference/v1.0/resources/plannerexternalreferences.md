@@ -1,23 +1,23 @@
 ---
-title: plannerExternalReferences リソースの種類
-description: '**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。タスクの詳細オブジェクトの一部です。プロパティ/値の組の値は、externalReference オブジェクトです。'
+title: プランリソースの種類
+description: "\" **plan/外部参照**\" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、externalreference オブジェクトです。"
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 8048a8a412935cc69e805a1d7c77ff8b1fbf5f7c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462306"
 ---
-# <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences リソースの種類
+# <a name="plannerexternalreferences-resource-type"></a>プランリソースの種類
 
-**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[externalReference](plannerexternalreference.md) オブジェクトです。
+" **plan/外部参照**" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 [タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。 プロパティと値のペアの値は、 [externalreference](plannerexternalreference.md)オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。この例では、プロパティとその値を [externalReference](plannerexternalreference.md) オブジェクトにする必要があるため、クライアントは **HTTP/HTTPS** プロトコルに基づいて **有効な URL** を指定する必要があります。OData に基づき、オープン型のプロパティ名には、`.`、`:`、`%` の文字を含めることができないため、エンコードする必要があります。以下に例を示します。参照を削除するには、プロパティの値を `null` に設定します。
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは**HTTP/HTTPS**プロトコルに基づいた**有効な url**をプロパティとして提供する必要があり、それらの値は[externalreference](plannerexternalreference.md)オブジェクトである必要があります。 OData に基づいて、オープン型のプロパティ名に次の文字を`.`含める`:`こと`%`はできません。つまり、をエンコードする必要があります。 例を以下に示します。 参照を削除するには、プロパティの値をに`null`設定します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -44,7 +44,7 @@ ms.locfileid: "27974659"
 }
 ```
 
-// 例
+例
 
 ```json
 {

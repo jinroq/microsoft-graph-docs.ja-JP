@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: bbc7265346b3c9f99d0bf5ab4678b107050806e7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978775"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585259"
 ---
 # <a name="get-rule"></a>ルールを取得する
 
@@ -22,7 +22,7 @@ ms.locfileid: "27978775"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | MailboxSettings.Read    |
+|委任 (職場または学校のアカウント) | MailboxSettings.Read    |
 |委任 (個人用 Microsoft アカウント) | MailboxSettings.Read    |
 |アプリケーション | MailboxSettings.Read |
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ##### <a name="response"></a>応答
 以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。 
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

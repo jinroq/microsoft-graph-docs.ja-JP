@@ -1,21 +1,21 @@
 ---
 title: アプリケーションを更新する
-description: アプリケーション オブジェクトのプロパティを更新します。
+description: application オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459382"
 ---
 # <a name="update-application"></a>アプリケーションを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アプリケーション オブジェクトのプロパティを更新します。
+application オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -24,7 +24,7 @@ ms.locfileid: "29642829"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Application.ReadWrite.OwnedBy、Application.ReadWrite.All |
+|アプリケーション | application.readwrite.ownedby、アプリケーションの読み取り/書き込み。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -41,27 +41,27 @@ PATCH /applications/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| アプリケーションは、パブリック クライアントとして動作できるかどうかを指定します。 たとえば、モバイル デバイスで実行されているインストール済みのアプリケーションです。 既定値は *false* です。 |
+|allowPublicClient|Boolean| アプリケーションがパブリッククライアントとして動作するかどうかを指定します。 たとえば、モバイルデバイスで実行中のアプリケーションがインストールされている場合です。 既定値は *false* です。 |
 |api|[api](../resources/api.md)| API アプリケーションの設定を指定します。 |
-|appRoles|[appRole](../resources/approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容型ではありません。|
-|applicationAliases|String コレクション| アプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)」を参照してください。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容型ではありません。 |
+|appRoles|[appRole](../resources/approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容ではありません。|
+|applicationAliases|String collection| アプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)」を参照してください。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容ではありません。 |
 |createdDateTime|DateTimeOffset| アプリケーションが登録された日付と時刻です。 |
 |deletedDateTime|DateTimeOffset| アプリケーションが削除された日付と時刻です。 |
 |displayName|String|アプリケーションの表示名。 |
-|id|String|アプリケーションの一意の識別子です。 [directoryObject](../resources/directoryobject.md) から継承されます。 キー。 null 許容型ではありません。 読み取り専用です。 |
+|id|String|アプリケーションの一意の識別子です。 [directoryObject](../resources/directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。 |
 |info|[informationalUrl](../resources/informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 | デスクトップやモバイル デバイスなど、インストールされているクライアントの設定を指定します。 |
 |keyCredentials|[keyCredential](../resources/keycredential.md) コレクション|アプリケーションに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。 |
-|logo|Stream|アプリケーションのメイン ロゴです。 null 許容型ではありません。 |
-|orgRestrictions|String コレクション| 組織 tenantIds をアプリケーションに制限されます。  コレクションが空の場合は、アプリケーションは、マルチ テナント型 (制限されていないです)。 コレクションには、tenantIds が含まれている、アプリケーションは、コレクション内の組織の tenantIds に制限されます。 他のテナントがアプリケーションが登録されている tenantId ではありませんを指定すると、アプリケーションの tenantId が間接的に含まれていることを意味します。 |
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容型ではありません。|
-|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)コレクション| アプリケーションと暗黙的な同意を要求されたアクセス許可の一覧です。 管理者がアプリケーションに同意を提供する必要があります。 preAuthorizedApplications では、ユーザーが要求されたアクセス許可に同意するものは必要ありません。 PreAuthorizedApplications に記載されているアクセス許可では、ユーザーの同意は必要ありません。 ただし、preAuthorizedApplications に記載されていない追加の要求されたアクセス許可は、ユーザーの同意を必要とします。 |
+|logo|Stream|アプリケーションのメイン ロゴです。 null 許容ではありません。 |
+|orgRestrictions|String collection| アプリケーションが制限されている組織の整理された ds。  コレクションが空の場合、アプリケーションはマルチテナント (制限なし) です。 コレクションに保持されている ds がある場合、アプリケーションはコレクション内の整理された ds に制限されます。 アプリケーションが登録されている tenantid を指定せずに他のテナントを指定すると、アプリケーション自体の tenantid が間接的に含まれていることを意味します。 |
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。|
+|preauthorizedapplications|[preauthorizedapplication](../resources/preauthorizedapplication.md)コレクション| アプリケーションおよび暗黙的同意の要求されたアクセス許可を一覧表示します。 管理者はアプリケーションに同意を得る必要があります。 preauthorizedapplications では、ユーザーが要求されたアクセス許可に同意する必要はありません。 preauthorizedapplications にリストされているアクセス許可は、ユーザーの同意を必要としません。 ただし、preauthorizedapplications に表示されていない追加の要求されたアクセス許可には、ユーザーの同意が必要です。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) コレクション|このアプリケーションがアクセスする必要があるリソース、およびそのリソースで必要な OAuth アクセス許可の範囲とアプリケーション ロールのセットを指定します。 必要なリソースへのアクセスに対するこの事前構成によって、同意エクスペリエンスが促進されます。 null 許容型ではありません。|
 |tags|String コレクション| アプリケーションを分類および識別するために使用できるカスタム文字列です。 |
 |web|[web](../resources/web.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`204 No Content`応答コードは、戻り値も、応答の本体で、です。
+成功した場合、このメソッド`204 No Content`は応答コードを返し、応答本文では何も返しません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -1,35 +1,35 @@
 ---
-title: Bookingservice を更新します。
-description: 指定された bookingbusiness で、bookingService オブジェクトのプロパティを更新します。
+title: bookingservice を更新する
+description: 指定した bookingservice の bookingservice オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461634"
 ---
-# <a name="update-bookingservice"></a>Bookingservice を更新します。
+# <a name="update-bookingservice"></a>bookingservice を更新する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[bookingbusiness](../resources/bookingbusiness.md)で、 [bookingService](../resources/bookingservice.md)オブジェクトのプロパティを更新します。
+指定した[bookingservice](../resources/bookingbusiness.md)の[bookingservice](../resources/bookingservice.md)オブジェクトのプロパティを更新します。
 
-サービスをカスタマイズすることができます例を次に示します。
+以下に、サービスに対してカスタマイズできる例をいくつか示します。
 - Price
-- 予定の標準的な長さ
+- 予定の通常の長さ
 - Reminders
-- バッファーを設定する前にまたはサービス終了するたび
-- 予約を取り消すには、最低限の通知などのパラメーターの[ポリシーのスケジュールを設定](../resources/bookingschedulingpolicy.md)し、お客様が予定の特定のスタッフのメンバーを選択するかどうか。
+- サービスの実行前または完了後にセットアップする任意の時間バッファー
+- 予約またはキャンセルするための最小限の通知や、ユーザーが予定に対して特定のスタッフメンバーを選択できるかどうかの[スケジュールポリシー](../resources/bookingschedulingpolicy.md)パラメーター。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -48,27 +48,27 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration|日、時間、分、秒単位の数値で表される、サービスの既定の長さです。 たとえば、P11D23H59M59.999999999999S です。 |
-|defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所です。|
-|defaultPrice|倍精度浮動小数点数|サービスの既定通貨の価格です。|
-|defaultPriceType|string|サービスの既定の方法に請求されます。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
-|defaultReminders|[bookingReminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対するアラームの既定値を設定します。 その ID ではこの**bookingService**を読み取るときにのみ、このプロパティの値があります。|
-|説明|文字列|サービスの説明です。|
-|displayName|String|サービスの名前です。|
-|emailAddress|String|電子メール アドレス:  |
-|id|文字列| 読み取り専用です。|
-|isHiddenFromCustomers|ブール値|True は、このサービスは予約のお客様に利用できないことを意味します。|
+|defaultduration|期間|サービスの既定の長さ。日数、時間、分、および秒で表されます。 たとえば、p11d23h59m 59.999999999999 s のようになります。 |
+|defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所。|
+|既定の価格|倍精度浮動小数点数|サービスの既定の通貨料金。|
+|defaultPriceType|string|サービスの既定の課金方法。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
+|defaultreminders|[bookingreminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**bookingservice**を ID で読み取る場合にのみ使用できます。|
+|説明|String|サービスのテキストの説明。|
+|displayName|String|サービス名。|
+|emailAddress|String|電子メールアドレス|
+|id|String| 読み取り専用です。|
+|isHiddenFromCustomers|Boolean|True は、このサービスを予約にお客様が利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
-|事後バッファリング|Duration|このサービスの予定の後のバッファーに時間が終了して、次の前に顧客の予定が予約できます。|
-|事前バッファリング|Duration|このサービスに対する予定を開始する前に、バッファーに格納する時間です。|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定するポリシーのセットです。|
-|staffMemberIds|String コレクション|このサービスを提供している[スタッフのメンバー](../resources/bookingstaffmember.md)を表します。 |
+|postbuffer|期間|このサービスの予定が終了してから、次の顧客の予定が予約されるまでの時間。|
+|prebuffer|期間|このサービスの予定を開始できるようになるまでの時間。|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定する一連のポリシー。|
+|staffMemberIds|String collection|このサービスを提供する[スタッフメンバー](../resources/bookingstaffmember.md)を表します。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の例では、指定されたサービスの期間を更新します。
+次の使用例は、指定されたサービスの期間を更新します。
 <!-- {
   "blockType": "request",
   "name": "update_bookingservice"

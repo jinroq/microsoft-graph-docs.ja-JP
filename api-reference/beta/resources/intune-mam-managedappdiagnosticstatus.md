@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 588338589d90ad54db43810d5fd45541cea483eb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800652"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459124"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "31800652"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|validationName|文字列|検証のフレンドリ名|
+|validationName|String|検証のフレンドリ名|
 |state|String|操作の状態|
 |mitigationInstruction|文字列型 (String)|検証の失敗を減らすための方法に関する説明|
 

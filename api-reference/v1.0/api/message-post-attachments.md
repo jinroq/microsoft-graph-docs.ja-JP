@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 8a55331752eb435400b19b02760d974dea972a3e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463685"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -36,7 +36,8 @@ ms.locfileid: "27954989"
 |アプリケーション | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments

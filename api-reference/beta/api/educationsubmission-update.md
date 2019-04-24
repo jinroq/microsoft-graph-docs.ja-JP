@@ -1,21 +1,21 @@
 ---
-title: Educationsubmission を更新します。
-description: 評価とフィードバックを提出書類に追加します。 教師だけでは、この操作を実行できます。 基本アクセス権はグレードのプロパティへのアクセス権がないと、評価やご意見を書き込むことができませんので注意してください。 このアクションでは、グレードと、受講生受講者へのフィードバックは解放されません。 教師では、受講者に返される成績データの明示的な解放アクションを実行する必要があります。
+title: educationsubmission の更新
+description: 提出物にグレードとフィードバックを追加します。 この操作を実行できるのは教師だけです。 基本アクセス許可には、学年プロパティへのアクセス権がないため、グレードまたはフィードバックに書き込めないことに注意してください。 この操作では、学年とフィードバックが生徒にリリースされることはありません。 教師は、成績データが学生に返されるように、明示的な release アクションを受ける必要があります。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c420d2c6e512d8fed0d713340fea482b0888ca1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464851"
 ---
-# <a name="update-educationsubmission"></a>Educationsubmission を更新します。
+# <a name="update-educationsubmission"></a>educationsubmission の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-評価とフィードバックを提出書類に追加します。 教師だけでは、この操作を実行できます。 基本アクセス権はグレードのプロパティへのアクセス権がないと、評価やご意見を書き込むことができませんので注意してください。 このアクションでは、グレードと、受講生受講者へのフィードバックは解放されません。 教師では、受講者に返される成績データの明示的な解放アクションを実行する必要があります。
+提出物にグレードとフィードバックを追加します。 この操作を実行できるのは教師だけです。 基本アクセス許可には、学年プロパティへのアクセス権がないため、グレードまたはフィードバックに書き込めないことに注意してください。 この操作では、学年とフィードバックが生徒にリリースされることはありません。 教師は、成績データが学生に返されるように、明示的な release アクションを受ける必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -37,7 +37,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 <!-- Provide the property descriptions. -->
 
@@ -47,7 +47,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 |grade|educationAssignmentGrade||
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[educationSubmission](../resources/educationsubmission.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[educationSubmission](../resources/educationsubmission.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

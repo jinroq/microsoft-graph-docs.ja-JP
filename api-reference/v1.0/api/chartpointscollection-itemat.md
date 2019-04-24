@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 91537f67a050d17484c7425eff342049df205df0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463503"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -44,7 +44,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/item
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookChartPoint](../resources/chartpoint.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookChartPoint](../resources/chartpoint.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

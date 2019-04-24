@@ -1,17 +1,17 @@
 ---
-title: Get administrativeUnit
+title: administrativeUnit を取得する
 description: この**educationSchool**に対応する単純なディレクトリ**administrativeUnit**を取得します。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 47dd3b5543f7f10385529aef56e99537abc2f524
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457695"
 ---
-# <a name="get-administrativeunit"></a>Get administrativeUnit
+# <a name="get-administrativeunit"></a>administrativeUnit を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ GET /education/schools/{id}/administrativeUnit
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[administrativeUnit](../resources/administrativeunit.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[administrativeUnit](../resources/administrativeunit.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

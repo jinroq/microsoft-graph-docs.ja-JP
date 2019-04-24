@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460997"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries リソースの種類
 
@@ -25,16 +25,16 @@ ms.locfileid: "29643116"
 |[Get ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |chartSeries オブジェクトのプロパティと関係を読み取ります。|
 |[ChartPoints を作成する](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| ポイント コレクションに投稿して、新しい ChartPoints を作成します。|
 |[ポイントを一覧表示する](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) コレクション| ChartPoints オブジェクトのコレクションを取得します。|
-|[更新する](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |ChartSeries オブジェクトを更新します。 |
+|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |ChartSeries オブジェクトを更新します。 |
 |[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) コレクション |chartSeries オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|グラフのデータ系列の名前を表します。|
+|name|string|グラフのデータ系列の名前を表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|

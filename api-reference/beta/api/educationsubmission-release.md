@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: リリース'
-description: " グレーディングが行われることを示します。 このアクションは、先生によってのみ実行できます。"
+title: 'educationSubmission: release'
+description: " を指定します。 このアクションは教師のみが実行できます。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: fb8d9ce6646cb7055f2edb4cc56c7d9784d96915
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464498"
 ---
-# <a name="educationsubmission-release"></a>educationSubmission: リリース
+# <a name="educationsubmission-release"></a>educationSubmission: release
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この操作によって、評価とフィードバックを受講者に利用可能なこの送信に関連付けられています。 これは、提出書類の状態を「送信」から「リリース済」に変更し、グレーディングが行われることを示します。 このアクションは、先生によってのみ実行できます。
+この操作によって、この送信に関連付けられている成績とフィードバックが学生に提供されます。 これにより、送信の状態が "送信済み" から "リリース済み" に変更され、変更が行われたことが示されます。 このアクションは教師のみが実行できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
+|委任 (職場または学校のアカウント) |  EduAssignments の読み取り/書き込みの EduAssignments   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 

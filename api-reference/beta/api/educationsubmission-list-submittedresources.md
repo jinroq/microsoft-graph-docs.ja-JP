@@ -1,28 +1,28 @@
 ---
-title: リスト submittedResources
-description: グレーディングを正式に提出したリソースの一覧を表示します。 提出書類を所有している受講生受講者は、割り当てを再実行せず、提出済みのリストを変更できません。 これは実際のリソースのラッパーであり、このリソースは割り当てからコピーされた場合、実際の割り当てのリソースに戻るポインターを含めることができます。
+title: submittedresources を一覧表示する
+description: 正式に提出されたリソースを一覧表示します。 提出物を所有する学生は、割り当てを再送信せずに、送信されたリストを変更することはできません。 これは、実際のリソースに関するラッパーであり、リソースが割り当てからコピーされた場合は、実際の割り当てリソースへのポインターを格納できます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 021b167ae6991ce1ac799dcec4da21ac452fddb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507776"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457672"
 ---
-# <a name="list-submittedresources"></a>リスト submittedResources
+# <a name="list-submittedresources"></a>submittedresources を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グレーディングを正式に提出したリソースの一覧を表示します。 提出書類を所有している受講生受講者は、割り当てを再実行せず、提出済みのリストを変更できません。 これは実際のリソースのラッパーであり、このリソースは割り当てからコピーされた場合、実際の割り当てのリソースに戻るポインターを含めることができます。
+正式に提出されたリソースを一覧表示します。 提出物を所有する学生は、割り当てを再送信せずに、送信されたリストを変更することはできません。 これは、実際のリソースに関するラッパーであり、リソースが割り当てからコピーされた場合は、実際の割り当てリソースへのポインターを格納できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
+|委任 (職場または学校のアカウント) |  EduAssignments、EduAssignments、EduAssignments、および EduAssignments の読み取り/書き込みの基本  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | サポートされていません。 | 
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

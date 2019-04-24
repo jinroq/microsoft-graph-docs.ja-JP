@@ -1,25 +1,25 @@
 ---
 title: verifiedDomain リソースの種類
-description: テナントのドメインを指定します。組織 エンティティの **VerifiedDomains** プロパティは、**VerifiedDomain** のコレクションです。
+description: テナントのドメインを指定します。 組織エンティティの**verifiedDomains**プロパティは、 **VerifiedDomain**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 6eb6490ce8dac29f2617b7873230fad7c7b5c536
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876497"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456907"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain リソースの種類
 
-テナントのドメインを指定します。[組織](organization.md) エンティティの **VerifiedDomains** プロパティは、**VerifiedDomain** のコレクションです。
+テナントのドメインを指定します。 [組織](organization.md)エンティティの**verifiedDomains**プロパティは、 **VerifiedDomain**のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilities|String|「電子メール」、「OfficeCommunicationsOnline」など。|
-|isDefault|Boolean|                これがテナントに関連付けられている既定のドメインの場合は **true**、それ以外の場合は **false**。            |
-|isInitial|Boolean|これがテナントに関連付けられている初期ドメインの場合は **true**、それ以外の場合は **false**。|
+|isDefault|ブール型 (Boolean)|                これがテナントに関連付けられている既定のドメインの場合は **true**、それ以外の場合は **false**。            |
+|isinitial|ブール値|これがテナントに関連付けられている初期ドメインの場合は **true**、それ以外の場合は **false**。|
 |name|String|ドメイン名。「contoso.onmicrosoft.com」など。|
 |type|String|「管理対象」など。|
 

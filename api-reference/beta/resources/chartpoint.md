@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460920"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "29641968"
 |:---------------|:--------|:----------|
 |value|object|グラフのポイントの値を返します。値の取得のみ可能です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|

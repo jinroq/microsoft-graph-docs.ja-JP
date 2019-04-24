@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c89b36f7b9587a99d280de789dcaa753442591e9
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465238"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "30253499"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
-|id|文字列|エンティティのキー。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
+|id|String|エンティティのキー。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
 |content|[Json](../resources/intune-mam-json.md)|進捗レポートの内容。|
 

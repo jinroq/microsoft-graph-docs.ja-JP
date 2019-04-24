@@ -1,21 +1,21 @@
 ---
-title: オーディオのルーティング グループを更新します。
-description: ソースと、audioRoutingGroup の受信機を変更します。
+title: 音声ルーティング グループを更新する
+description: audioRoutingGroup のソースとレシーバーを変更します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524675"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461036"
 ---
-# <a name="update-audio-routing-group"></a>オーディオのルーティング グループを更新します。
+# <a name="update-audio-routing-group"></a>音声ルーティング グループを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ソースと、 [audioRoutingGroup](../resources/audioroutinggroup.md)の受信機を変更します。
+[audioRoutingGroup](../resources/audioroutinggroup.md)のソースとレシーバーを変更します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "29524675"
 | :-------------- | :--------------------------------------------------------- |
 | 委任 (職場または学校のアカウント)     | サポート対象外                       |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                       |
-| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -39,16 +39,16 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
-| 受信機 | String コレクション | ターゲットの参加者、audioRoutingGroup。 |
-| routingMode | String | 使用可能な値は、`oneToOne`、`multicast` です。 |
-| ソース | String コレクション | AudioRoutingGroup のソースの構成要素です。 |
+| 配信 | String collection | audioRoutingGroup の対象となる参加者。 |
+| routingmode | String | 使用可能な値は、`oneToOne`、`multicast` です。 |
+| sources | String collection | audioRoutingGroup のソース参加者。 |
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

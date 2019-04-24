@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: eada35069ab748b93f115ee9639ecb755c19345a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365557"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458531"
 ---
 # <a name="update-customerpayments"></a>顧客の支払いを更新する
 Dynamics 365 Business Central の customer 支払いオブジェクトのプロパティを更新します。

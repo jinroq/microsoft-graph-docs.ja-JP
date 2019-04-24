@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 683a290806f9a70f97bda4aa9429a64578fbcd97
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463559"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "27916363"
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生の生年月日。|
 |externalId|String| ソース システムの学生の ID。|
-|gender|educationGender| 可能な値: `female`、 `male`、 `other`、 `unknownFutureValue`。|
+|gender|educationGender| 使用可能な値は`female`、 `male`、 `other`、 `unknownFutureValue`、です。|
 |grade|String|学生の現在の学年。|
 |graduationYear|String| 学生が学校から卒業する年。|
 |studentNumber|String| 学生番号。|

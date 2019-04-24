@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4615eee600df5a8fd837074a809fa3c4df3384ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804635"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32472331"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>androidWorkProfileWiFiConfiguration を取得する
 

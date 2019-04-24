@@ -1,19 +1,19 @@
 ---
-title: アプリケーション一覧
-description: ConnectorGroup に関連付けられているアプリケーション オブジェクトのリストを取得します。
+title: アプリケーションを一覧表示する
+description: コネクタグループに関連付けられているアプリケーションオブジェクトの一覧を取得します。
 localization_priority: Normal
 ms.openlocfilehash: 47be81d4f154d87865113fa02b04a58151545507
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519361"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455759"
 ---
-# <a name="list-applications"></a>アプリケーション一覧
+# <a name="list-applications"></a>アプリケーションを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ConnectorGroup に関連付けられているアプリケーション オブジェクトのリストを取得します。
+コネクタグループに関連付けられているアプリケーションオブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer  必須|
+| Authorization  | ベアラー. 必須|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[アプリケーション](../resources/application.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[application](../resources/application.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

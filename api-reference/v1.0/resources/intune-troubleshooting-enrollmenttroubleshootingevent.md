@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fb1f0764753a576c9e6b1a10112f23257fe339e0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250370"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584790"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>enrollmentTroubleshootingEvent リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "30250370"
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |operatingSystem|文字列|オペレーティング システム。|
 |osVersion|String|OS バージョン。|
-|userId|String|デバイスを登録しようとするユーザーの識別子。|
+|userId|文字列型 (String)|デバイスを登録しようとするユーザーの識別子。|
 |deviceId|String|Azure AD デバイス識別子。|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|高レベルのエラー カテゴリ。 可能な値は、`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment` です。|

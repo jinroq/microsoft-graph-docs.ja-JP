@@ -1,19 +1,19 @@
 ---
-title: domainNameReferences の一覧表示
-description: ドメインへの参照付きの directoryObject の一覧を取得します。返されるリストには、ドメインに依存するすべてのディレクトリ オブジェクトが含まれます。
+title: リスト domainNameReferences
+description: ドメインへの参照を使用して、directoryobject の一覧を取得します。 返される一覧には、ドメインに依存しているすべてのディレクトリオブジェクトが含まれています。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4b9846f1a24b393609494542cf1785ec511f5b49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963662"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467275"
 ---
-# <a name="list-domainnamereferences"></a>domainNameReferences の一覧表示
+# <a name="list-domainnamereferences"></a>リスト domainNameReferences
 
-ドメインへの参照付きの [directoryObject](../resources/directoryobject.md) の一覧を取得します。返されるリストには、ドメインに依存するすべてのディレクトリ オブジェクトが含まれます。
+ドメインへの参照を使用して、 [directoryobject](../resources/directoryobject.md)の一覧を取得します。 返される一覧には、ドメインに依存しているすべてのディレクトリオブジェクトが含まれています。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

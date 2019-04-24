@@ -1,15 +1,15 @@
 ---
 title: 予定表を更新する
-description: '予定表オブジェクトのプロパティを更新します。 カレンダーには、ユーザーのいずれかを指定できます。 '
+description: '予定表オブジェクトのプロパティを更新します。 予定表は、ユーザーに対して1つにすることができます。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2fb6ea839d6565c379c2d9af55920bd0166a7fb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508476"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461725"
 ---
 # <a name="update-calendar"></a>予定表を更新する
 
@@ -26,7 +26,8 @@ ms.locfileid: "29508476"
 |アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーまたはグループの既定の[予定表](../resources/calendar.md)です。
+<!-- { "blockType": "ignored" } -->
+ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
@@ -57,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|String|UI で予定表を他の予定表から区別するための配色テーマを指定します。プロパティ値は次のとおりです。薄い青=0、薄い緑=1、薄いオレンジ=2、薄い灰色=3、薄い黄=4、薄い青緑=5、薄いピンク=6、薄い茶色=7、薄い赤=8、最大色=9、自動=-1|
-|IsDefaultCalendar|Boolean|この予定表がユーザーの既定の予定表であれば True、そうでなければ False。|
+|isDefaultCalendar|Boolean|この予定表がユーザーの既定の予定表であれば True、そうでなければ False。|
 |name|String|予定表の名前。|
 
 ## <a name="response"></a>応答

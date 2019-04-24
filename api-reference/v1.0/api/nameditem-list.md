@@ -3,11 +3,11 @@ title: NamedItemCollection の一覧表示
 description: nameditem オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 12646162cb326d8a6db5c082b44ecc3706024e28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832698"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461179"
 ---
 # <a name="list-nameditemcollection"></a>NamedItemCollection の一覧表示
 
@@ -40,7 +40,7 @@ GET /workbook/names
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[WorkbookNamedItem](../resources/nameditem.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[WorkbookNamedItem](../resources/nameditem.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

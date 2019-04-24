@@ -1,25 +1,23 @@
 ---
-title: plannerExternalReferences リソースの種類
-description: '**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。タスクの詳細オブジェクトの一部です。プロパティ/値の組の値は、externalReference オブジェクトです。'
+title: プランリソースの種類
+description: "\" **plan/外部参照**\" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、externalreference オブジェクトです。"
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 23ebd270bd97455ad09d67870c5fbb8fc37cd051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461228"
 ---
-# <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences リソースの種類
+# <a name="plannerexternalreferences-resource-type"></a>プランリソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[externalReference](plannerexternalreference.md) オブジェクトです。
+" **plan/外部参照**" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 [タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。 プロパティと値のペアの値は、 [externalreference](plannerexternalreference.md)オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。この例では、プロパティとその値を [externalReference](plannerexternalreference.md) オブジェクトにする必要があるため、クライアントは **HTTP/HTTPS** プロトコルに基づいて **有効な URL** を指定する必要があります。OData に基づき、オープン型のプロパティ名には、`.`、`:`、`%` の文字を含めることができないため、エンコードする必要があります。以下に例を示します。参照を削除するには、プロパティの値を `null` に設定します。
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは**HTTP/HTTPS**プロトコルに基づいた**有効な url**をプロパティとして提供する必要があり、それらの値は[externalreference](plannerexternalreference.md)オブジェクトである必要があります。 OData に基づいて、オープン型のプロパティ名に次の文字を`.`含める`:`こと`%`はできません。つまり、をエンコードする必要があります。 例を以下に示します。 参照を削除するには、プロパティの値をに`null`設定します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -27,9 +25,8 @@ ms.locfileid: "29516288"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerExternalReferences"
 }-->
 
@@ -47,7 +44,7 @@ ms.locfileid: "29516288"
 }
 ```
 
-// 例
+例
 
 ```json
 {
@@ -70,15 +67,10 @@ ms.locfileid: "29516288"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerExternalReferences resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerexternalreferences.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

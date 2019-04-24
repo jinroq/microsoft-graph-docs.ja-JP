@@ -1,23 +1,23 @@
 ---
-title: AccessReview を更新します。
-description: Azure AD アクセスのレビュー機能では、1 つまたは複数のプロパティを変更するのには既存の accessReview オブジェクトを更新します。
+title: accessreview を更新する
+description: Azure AD access レビュー機能で、既存の accessreview オブジェクトを更新して、そのプロパティの1つ以上を変更します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1256ccdabea8eb5c0c0ffb3365e0c87276999236
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459445"
 ---
-# <a name="update-accessreview"></a>AccessReview を更新します。
+# <a name="update-accessreview"></a>accessreview を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、1 つまたは複数のプロパティを変更するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[accessreview](../resources/accessreview.md)オブジェクトを更新して、そのプロパティの1つ以上を変更します。
 
-レビュー担当者やレビューの決定を変更するのには、この API は想定されていません。  レビュー担当者を変更するには、 [addReviewer](accessreview-addreviewer.md)または[removeReviewer](accessreview-removereviewer.md) Api を使用します。  すでに開始された 1 回限りのレビュー、または定期的なレビューの既に起動インスタンスを停止するには、初期の段階では、[停止する](accessreview-stop.md)API を使用します。 ターゲット ・ グループ、またはアプリケーションのアクセス権の決定を適用するには、[適用](accessreview-apply.md)API を使用します。 
+この API は、レビュー担当者またはレビューの決定を変更するためのものではありません。  レビュー担当者を変更するには、 [addreviewer](accessreview-addreviewer.md)または[removereviewer](accessreview-removereviewer.md) api を使用します。  既に開始した1回限りのレビュー、または定期的なレビューの事前に開始されているインスタンスを停止するには、 [stop](accessreview-stop.md) API を使用します。 目的のグループまたはアプリのアクセス権に決定を適用するには、[API の[適用](accessreview-apply.md)] を使用します。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -25,7 +25,7 @@ ms.locfileid: "29524367"
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -37,31 +37,31 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文に、JSON 形式の[accessReview](../resources/accessreview.md)オブジェクトのパラメーターを指定します。
+要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトのパラメーターの JSON 表記を指定します。
 
-次の表は、accessReview を更新するときに指定できるプロパティを示しています。
+次の表に、accessreview の更新時に提供できるプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | アクセス確認の名前です。  |
-| `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
-| `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。   |
-| `description`             |`String`                                                        | 校閲者を表示する説明します。 |
+| `displayName`             |`String`                                                        | アクセスレビュー名。  |
+| `startDateTime`           |`DateTimeOffset`                                                | レビューが開始される予定の日時。  これは、将来の日付である必要があります。   |
+| `endDateTime`             |`DateTimeOffset`                                                | レビューが終了する予定の日時。 これは、開始日よりも1日以上後でなければなりません。   |
+| `description`             |`String`                                                        | レビュー担当者に表示する説明。 |
 
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`204, Accepted`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。
+成功した場合、このメソッド`204, Accepted`は応答コードと、応答本文で[accessreview](../resources/accessreview.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
-これは、1 回限り (繰り返し発生しない) のアクセス確認の更新の例です。
+これは、1回限り (定期的でない) アクセスレビューを更新する例です。
 
 ##### <a name="request"></a>要求
-要求の本文には、 [accessReview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表現を指定します。
+要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",

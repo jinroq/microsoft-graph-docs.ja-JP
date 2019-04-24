@@ -3,11 +3,11 @@ title: NamedItem を取得する
 description: nameditem オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 ms.openlocfilehash: ee9ce271ebf6ad687324d2ba9d378ae7151460cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867194"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460906"
 ---
 # <a name="get-nameditem"></a>NamedItem を取得する
 
@@ -40,7 +40,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookNamedItem](../resources/nameditem.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

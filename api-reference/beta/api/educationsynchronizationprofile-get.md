@@ -1,30 +1,30 @@
 ---
-title: EducationSynchronizationProfile を取得します。
-description: 識別子に基づくテナントの学校のデータの同期プロファイルを取得します。
+title: educationSynchronizationProfile を取得する
+description: 識別子に基づいて、テナント内の学校データ同期プロファイルを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 47757956db9e93bb13f4167ef330c7b79d7851b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530182"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464716"
 ---
-# <a name="get-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を取得します。
+# <a name="get-an-educationsynchronizationprofile"></a>educationSynchronizationProfile を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-識別子に基づくテナントの学校のデータ[同期プロファイル](../resources/educationsynchronizationprofile.md)を取得します。
+識別子に基づいて、テナント内の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:-----------|:----------|
-| 委任 (職場または学校のアカウント) | EduAdministration.Read、EduAdministration.ReadWrite |
-|委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション| EduAdministration.Read.All、EduAdministration.ReadWrite.All |
+| 委任 (職場または学校のアカウント) | EduAdministration、EduAdministration |
+|委任 (個人 Microsoft アカウント|サポートされていません。|
+|アプリケーション| EduAdministration、EduAdministration のいずれかを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /synchronizationProfiles/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

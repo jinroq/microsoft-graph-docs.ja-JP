@@ -1,27 +1,27 @@
 ---
-title: BookingService を削除します。
-description: 指定された bookingbusiness で、bookingService オブジェクトを削除します。
+title: bookingservice の削除
+description: 指定した bookingservice の bookingservice オブジェクトを削除します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a541796fbfa500cc6d99205598042818b4aa47ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517037"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461669"
 ---
-# <a name="delete-bookingservice"></a>BookingService を削除します。
+# <a name="delete-bookingservice"></a>bookingservice の削除
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[bookingbusiness](../resources/bookingbusiness.md)で、 [bookingService](../resources/bookingservice.md)オブジェクトを削除します。
+指定した[bookingservice](../resources/bookingbusiness.md)の[bookingservice](../resources/bookingservice.md)オブジェクトを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) |  予約します。すべての予約   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 

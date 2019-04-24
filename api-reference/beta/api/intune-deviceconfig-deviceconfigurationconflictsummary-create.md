@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 801d403745bea8fa3e4b962a0892ced2129bd92f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782150"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32469552"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>deviceConfigurationConflictSummary を作成する
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |:---|:---|:---|
 |競合する devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
 |id|String|競合しているポリシーのセットの id。 この id は、アンダースコアで区切られた辞書順で競合しているすべてのポリシーの id です。|
-|contributingSettings|String コレクション|指定されたポリシーと競合する設定のセット|
+|contributingSettings|String collection|指定されたポリシーと競合する設定のセット|
 |deviceCheckinsImpacted|Int32|競合するポリシーと設定によって影響を受けるチェックインの数|
 
 

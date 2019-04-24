@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: ae49192b349f39b091ecaa1706099e5f10782432
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517100"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464825"
 ---
 # <a name="update-educationuser-properties"></a>educationUser プロパティを更新する
 
@@ -38,18 +38,18 @@ PATCH /education/users/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| 文字列型 (String)| ユーザーの表示名|
 |givenName| String | 名 |
 |middleName| String | ユーザーのミドル ネーム|
-|surname| 文字列 | ユーザーの姓|
+|surname| String | ユーザーの姓|
 |mail| String| メール アドレス|
 |mobilePhone| String | ユーザーの携帯電話番号 |
-|externalSource|string| 可能な値は、`sis`、`manual`、`enum_sentinel` です。|
-|externalSource|string| このユーザーが作成された場所。  可能な値は、`sis`、`manual`、`enum_sentinel` です。|
+|externalSource|string| 使用可能な値は、`sis`、`manual`、`enum_sentinel` です。|
+|externalSource|string| このユーザーが作成された場所。  使用可能な値は、`sis`、`manual`、`enum_sentinel` です。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーのメール アドレス。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |primaryRole|string| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。|

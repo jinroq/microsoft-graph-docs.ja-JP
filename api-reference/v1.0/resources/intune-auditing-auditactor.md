@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584706"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
@@ -24,10 +24,10 @@ ms.locfileid: "30254458"
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
 |applicationId|String|AAD アプリケーション ID。|
 |applicationDisplayName|String|アプリケーションの名前。|
-|userPrincipalName|文字列|ユーザー プリンシパル名 (UPN)。|
+|userPrincipalName|String|ユーザー プリンシパル名 (UPN)。|
 |servicePrincipalName|String|サービス プリンシパル名 (SPN)。|
 |ipAddress|String|IPAddress。|
-|userId|String|ユーザー ID。|
+|userId|文字列型 (String)|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
