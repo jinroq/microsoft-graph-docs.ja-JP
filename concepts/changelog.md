@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c99c3eb7cb7b1085e2609b460545c111537aeefe
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31981069"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,12 @@ ms.locfileid: "31889990"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="april-2019"></a>2019 年 4 月
+### <a name="azure-ad-b2c-apis"></a>Azure AD B2C APIs
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 |新しいリソースタイプ[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)が導入されました。 このリソースタイプは、[作成](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[一覧表示](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[取得](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、 [更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)、および[削除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)の操作をサポートしています。|
+
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -267,7 +273,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="january-2019"></a>2019 年 1 月
 
-### <a name="azure-ad-apis"></a>Azure AD API
+### <a name="azure-ad-b2c-apis"></a>Azure AD B2C APIs
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1009,7 +1015,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="education-api"></a>教育機関 API
 
-| **変更の種類** | **Version**   | **説明**                          |
+| **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 変更          | v1.0 およびベータ版 | アプリ専用のトークンを使用して [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) エンティティで **Members** コレクションを読み込む、または更新するには、スコープ **Members.Read.Hidden** が必要になりました。 |
 |変更           |ベータ版           |[educationsubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta) の status プロパティの **educationSubmissionStatus** タイプで使用できる値を更新しました。|
@@ -2646,7 +2652,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | Microsoft Graph を、[スキーマ拡張機能](extensibility-overview.md#schema-extensions)を使用してアプリケーション データによって拡張します。これは、次のリソースでサポートされています。<br/>管理単位<br/>予定表イベント<br/>デバイス<br/>グループ<br/>メッセージ<br/>組織<br/>個人用連絡先<br/>投稿<br/>ユーザー<br/>次の例を参照してください。<br/>[スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](extensibility-schema-groups.md) |
+| 追加        | ベータ版        | Microsoft Graph を、[スキーマ拡張機能](extensibility-overview.md#schema-extensions)を使用してアプリケーション データによって拡張します。これは、次のリソースでサポートされています。<br/>管理単位<br/>予定表イベント<br/>デバイス<br/>グループ<br/>message<br/>組織<br/>個人用連絡先<br/>投稿<br/>ユーザー<br/>次の例を参照してください。<br/>[スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](extensibility-schema-groups.md) |
 | 追加        | ベータ版        | 検証済みの .com バニティ ドメインを必要とせずに、スキーマ拡張機能の定義を作成する別の方法が提供されました。詳しくは、[スキーマ拡張機能](extensibility-overview.md#schema-extensions)を参照してください。 |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>オープン拡張機能を使用して Microsoft Graph にカスタム データを追加する
