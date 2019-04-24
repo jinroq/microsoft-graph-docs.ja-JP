@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 8ff4df803272ef4c3d3ec8f07d553fe7abddbb65
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162777"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483251"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>windowsOfficeClientSecurityConfiguration の更新
 
@@ -40,7 +40,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,7 +50,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|office クライアント構成ポリシーの Id。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|id|String|office クライアント構成ポリシーの Id。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |policypayload|Stream|ポリシー設定 JSON 文字列 (バイナリ形式) では、ユーザーがこれらの値を変更することはできません。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |説明|String|管理者が提供する office クライアント構成ポリシーの説明。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|

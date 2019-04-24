@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bc9e512419110c610397e4655022f00249d4b3cb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792077"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488905"
 ---
 # <a name="create-mobileappinstallstatus"></a>mobileAppInstallStatus を作成する
 
@@ -52,18 +52,18 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|deviceName|文字列|[デバイス名]|
-|deviceId|文字列|デバイス ID|
+|deviceName|String|[デバイス名]|
+|deviceId|String|デバイス ID|
 |lastSyncDateTime|DateTimeOffset|最終同期日時|
 |mobileAppInstallStatusValue|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|インストールまたはアンインストールの失敗のエラーコード。|
-|osVersion|文字列|OS のバージョン|
-|osDescription|文字列|OS の説明|
+|osVersion|String|OS のバージョン|
+|osDescription|String|OS の説明|
 |userName|String|デバイスのユーザー名|
 |userPrincipalName|String|ユーザー プリンシパル名|
-|displayversion|文字列|アプリケーションの人間の読み取り可能なバージョン|
+|displayversion|String|アプリケーションの人間の読み取り可能なバージョン|
 
 
 

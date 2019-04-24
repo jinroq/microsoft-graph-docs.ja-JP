@@ -1,27 +1,27 @@
 ---
-title: Bookingcustomer を更新します。
-description: BookingCustomer オブジェクトのプロパティを更新します。
+title: bookingcustomer を更新する
+description: bookingcustomer オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 90de81666335c1825e1d134f9b898ee4b6561664
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461732"
 ---
-# <a name="update-bookingcustomer"></a>Bookingcustomer を更新します。
+# <a name="update-bookingcustomer"></a>bookingcustomer を更新する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[BookingCustomer](../resources/bookingcustomer.md)オブジェクトのプロパティを更新します。
+[bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委任 (職場または学校のアカウント) | bookingsappointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -40,11 +40,11 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|文字列|顧客の名前。|
-|emailAddress|String|お客様の SMTP アドレスです。|
+|displayName|String|顧客の名前。|
+|emailAddress|String|顧客の SMTP アドレス。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[bookingCustomer](../resources/bookingcustomer.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[bookingcustomer](../resources/bookingcustomer.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8648fb92953ef8ece7be672e746bffbb63393859
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31808963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489451"
 ---
 # <a name="update-mobileappdependency"></a>mobileAppDependency の更新
 
@@ -51,8 +51,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|リレーションシップエンティティ id。[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
-|targetId|文字列|ターゲットの子モバイルアプリのアプリ id。[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
-|targetdisplayname|文字列|ターゲットの子モバイルアプリの表示名。 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
+|targetId|String|ターゲットの子モバイルアプリのアプリ id。[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
+|targetdisplayname|String|ターゲットの子モバイルアプリの表示名。 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
 |dependencytype|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|親アプリと子アプリ間の依存関係の種類。 可能な値は、`detect`、`autoInstall` です。|
 |dependentappcount|Int32|子アプリが持つ依存関係の合計数。|
 

@@ -1,19 +1,19 @@
 ---
 title: ChartTitle リソースの種類
-description: グラフのグラフ タイトル オブジェクトを表します。
+description: グラフのグラフ タイトルのオブジェクトを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f6c843e24839b51da67bda5ed3484a32c868ae54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986916"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584992"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle リソースの種類
 
-グラフのグラフ タイトル オブジェクトを表します。
+グラフのグラフ タイトルのオブジェクトを表します。
 
 
 ## <a name="methods"></a>メソッド
@@ -24,16 +24,16 @@ ms.locfileid: "27986916"
 |[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
-|text|文字列|グラフのタイトルのテキストを表します。|
+|text|string|グラフのタイトルのテキストを表します。|
 |visible|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|塗りつぶしとフォントの書式設定を含む、グラフタイトルの書式設定を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0d3c69d3e8ef7951fceefba875dbab2d9949db59
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365676"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458426"
 ---
 # <a name="update-customers"></a>顧客を更新する
 Dynamics 365 Business Central の customer オブジェクトのプロパティを更新します。
@@ -37,7 +37,7 @@ PATCH /financials/companies('{id}')/customers('{id}')
 |ヘッダー         |値                     |
 |---------------|--------------------------|
 |Authorization  |ベアラー {トークン}。必須。 |
-|Content-Type   |アプリケーション/json。         |
+|Content-Type   |application/json.         |
 |If-Match       |必須です。 この要求ヘッダーが含まれており、指定された eTag が**お客様**の現在のタグと一致しない場合、**お客様**は更新されません。 |
 
 ## <a name="request-body"></a>要求本文

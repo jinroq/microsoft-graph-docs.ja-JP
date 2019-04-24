@@ -1,15 +1,15 @@
 ---
-title: licenseDetails リソースの種類
+title: licensedetails リソースの種類
 description: ユーザーに割り当てられているライセンスに関する情報が含まれています。
 localization_priority: Normal
 ms.openlocfilehash: 4495e85b45f6fcfda4f37e467e9cdc5393787dc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585189"
 ---
-# <a name="licensedetails-resource-type"></a>licenseDetails リソースの種類
+# <a name="licensedetails-resource-type"></a>licensedetails リソースの種類
 
 ユーザーに割り当てられているライセンスに関する情報が含まれています。
 
@@ -17,17 +17,17 @@ ms.locfileid: "27843023"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) | licenseDetails コレクション |ユーザーの licenseDetails オブジェクトの一覧を取得します。|
+|[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) | licenseDetails コレクション |ユーザーの licensedetails オブジェクトの一覧を取得します。|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|String| ライセンス詳細オブジェクトの一意識別子。読み取り専用。キー。null 許容ではありません。 |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション| ライセンスが割り当てられたサービス プランに関する情報。読み取り専用。null 許容ではありません。 |
-|skuId|Guid| サービス SKU の一意識別子 (GUID)。関連する [SubscribedSku](subscribedsku.md) オブジェクトの skuId プロパティと同じです。読み取り専用 |
-|skuPartNumber|String| 一意の SKU 表示名です。関連する [SubscribedSku](subscribedsku.md) オブジェクトの skuPartNumber と同じです。例: "AAD_Premium"。読み取り専用 |
+|id|String| ライセンス詳細オブジェクトの一意識別子。 読み取り専用、キー、null 許容ではない |
+|serviceplans|[servicePlanInfo](serviceplaninfo.md) コレクション| ライセンスで割り当てられているサービスプランに関する情報。 読み取り専用で、null 許容ではない |
+|skuId|Guid| サービス SKU の一意識別子 (GUID)。 関連する[SubscribedSku](subscribedsku.md)オブジェクトの skuId プロパティと同じです。 読み取り専用 |
+|skupartnumber|String| 一意の SKU 表示名。 関連する[SubscribedSku](subscribedsku.md)オブジェクトの skupartnumber と等しい。例: "AAD_Premium"。 読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

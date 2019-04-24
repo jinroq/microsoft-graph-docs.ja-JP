@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 写真
 localization_priority: Normal
 ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462446"
 ---
 # <a name="photo-resource-type"></a>写真リソースの種類
 
@@ -38,11 +38,10 @@ ms.locfileid: "30480979"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                | 種類           | 説明
+| プロパティ                | 型           | 説明
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | 写真の撮影日時を表します。読み取り専用です。
-| **cameraMake**          | String
-         | カメラの製造元。読み取り専用です。
+| **cameraMake**          | String         | カメラの製造元。読み取り専用です。
 | **cameraModel**         | String         | カメラのモデル。読み取り専用です。
 | **fNumber**             | 倍精度浮動小数点数         | カメラの絞り値。読み取り専用です。
 | **exposureDenominator** | 倍精度浮動小数点数         | カメラの露出時間の分数の分母。読み取り専用です。
