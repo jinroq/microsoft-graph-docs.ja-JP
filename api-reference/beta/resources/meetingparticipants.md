@@ -1,32 +1,32 @@
 ---
-title: meetingParticipants リソースの種類
-description: 会議の参加者です。
+title: 会議参加者リソースの種類
+description: 会議の参加者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463825"
 ---
-# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="d547c-103">meetingParticipants リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d547c-103">meetingParticipants resource type</span></span>
+# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="f0e93-103">会議参加者リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f0e93-103">meetingParticipants resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d547c-104">会議の参加者です。</span><span class="sxs-lookup"><span data-stu-id="d547c-104">Participants in a meeting.</span></span>
+<span data-ttu-id="f0e93-104">会議の参加者。</span><span class="sxs-lookup"><span data-stu-id="f0e93-104">Participants in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d547c-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d547c-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f0e93-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0e93-105">Properties</span></span>
 
-| <span data-ttu-id="d547c-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d547c-106">Property</span></span>       | <span data-ttu-id="d547c-107">型</span><span class="sxs-lookup"><span data-stu-id="d547c-107">Type</span></span>    | <span data-ttu-id="d547c-108">説明</span><span class="sxs-lookup"><span data-stu-id="d547c-108">Description</span></span>|
+| <span data-ttu-id="f0e93-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0e93-106">Property</span></span>       | <span data-ttu-id="f0e93-107">型</span><span class="sxs-lookup"><span data-stu-id="f0e93-107">Type</span></span>    | <span data-ttu-id="f0e93-108">説明</span><span class="sxs-lookup"><span data-stu-id="f0e93-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d547c-109">attendees</span><span class="sxs-lookup"><span data-stu-id="d547c-109">attendees</span></span> | <span data-ttu-id="d547c-110">[meetingParticipantInfo](meetingparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="d547c-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
-| <span data-ttu-id="d547c-111">organizer</span><span class="sxs-lookup"><span data-stu-id="d547c-111">organizer</span></span> | [<span data-ttu-id="d547c-112">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="d547c-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
+| <span data-ttu-id="f0e93-109">attendees</span><span class="sxs-lookup"><span data-stu-id="f0e93-109">attendees</span></span> | <span data-ttu-id="f0e93-110">[meetingParticipantInfo](meetingparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="f0e93-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
+| <span data-ttu-id="f0e93-111">organizer</span><span class="sxs-lookup"><span data-stu-id="f0e93-111">organizer</span></span> | [<span data-ttu-id="f0e93-112">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="f0e93-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
 
-## <a name="json-representation"></a><span data-ttu-id="d547c-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d547c-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0e93-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f0e93-113">JSON representation</span></span>
 
-<span data-ttu-id="d547c-114">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d547c-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f0e93-114">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f0e93-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -7,59 +7,59 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 631f043819d45ded32f4a79cf68e644221f2a4aa
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458314"
 ---
-# <a name="delete-taxareas"></a><span data-ttu-id="c6320-103">taxAreas の削除</span><span class="sxs-lookup"><span data-stu-id="c6320-103">Delete taxAreas</span></span>
-<span data-ttu-id="c6320-104">Dynamics 365 Business Central から税エリアオブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="c6320-104">Delete a tax area object from Dynamics 365 Business Central.</span></span>
+# <a name="delete-taxareas"></a><span data-ttu-id="789bc-103">taxAreas の削除</span><span class="sxs-lookup"><span data-stu-id="789bc-103">Delete taxAreas</span></span>
+<span data-ttu-id="789bc-104">Dynamics 365 Business Central から税エリアオブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="789bc-104">Delete a tax area object from Dynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c6320-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c6320-105">Permissions</span></span>
-<span data-ttu-id="c6320-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6320-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="789bc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="789bc-105">Permissions</span></span>
+<span data-ttu-id="789bc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="789bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6320-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c6320-108">Permission type</span></span> |<span data-ttu-id="c6320-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c6320-109">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="789bc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="789bc-108">Permission type</span></span> |<span data-ttu-id="789bc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="789bc-109">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="c6320-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c6320-110">Delegated (work or school account)</span></span>|<span data-ttu-id="c6320-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6320-111">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="c6320-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="c6320-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="c6320-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c6320-113">Not supported.</span></span>|
-|<span data-ttu-id="c6320-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c6320-114">Application</span></span>|<span data-ttu-id="c6320-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6320-115">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="789bc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="789bc-110">Delegated (work or school account)</span></span>|<span data-ttu-id="789bc-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="789bc-111">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="789bc-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="789bc-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="789bc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="789bc-113">Not supported.</span></span>|
+|<span data-ttu-id="789bc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="789bc-114">Application</span></span>|<span data-ttu-id="789bc-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="789bc-115">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c6320-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c6320-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="789bc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="789bc-116">HTTP request</span></span>
 ```
 DELETE /financials/companies('{id}')/taxAreas('{id}')
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c6320-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c6320-117">Optional query parameters</span></span>
-<span data-ttu-id="c6320-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c6320-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="789bc-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="789bc-117">Optional query parameters</span></span>
+<span data-ttu-id="789bc-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="789bc-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c6320-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6320-119">Request headers</span></span>
-|<span data-ttu-id="c6320-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6320-120">Header</span></span>|<span data-ttu-id="c6320-121">値</span><span class="sxs-lookup"><span data-stu-id="c6320-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="789bc-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="789bc-119">Request headers</span></span>
+|<span data-ttu-id="789bc-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="789bc-120">Header</span></span>|<span data-ttu-id="789bc-121">値</span><span class="sxs-lookup"><span data-stu-id="789bc-121">Value</span></span>|
 |------|-----|
-|<span data-ttu-id="c6320-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6320-122">Authorization</span></span>  |<span data-ttu-id="c6320-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c6320-p102">Bearer {token}. Required.</span></span> |
-|<span data-ttu-id="c6320-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="c6320-125">If-Match</span></span>       |<span data-ttu-id="c6320-126">必須です。</span><span class="sxs-lookup"><span data-stu-id="c6320-126">Required.</span></span> <span data-ttu-id="c6320-127">この要求ヘッダーが含まれていて、指定された eTag が**taxAreas**の現在のタグと一致しない場合、 **taxAreas**は更新されません。</span><span class="sxs-lookup"><span data-stu-id="c6320-127">When this request header is included and the eTag provided does not match the current tag on the **taxAreas**, the **taxAreas** will not be updated.</span></span> |
+|<span data-ttu-id="789bc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="789bc-122">Authorization</span></span>  |<span data-ttu-id="789bc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="789bc-p102">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="789bc-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="789bc-125">If-Match</span></span>       |<span data-ttu-id="789bc-126">必須です。</span><span class="sxs-lookup"><span data-stu-id="789bc-126">Required.</span></span> <span data-ttu-id="789bc-127">この要求ヘッダーが含まれていて、指定された eTag が**taxAreas**の現在のタグと一致しない場合、 **taxAreas**は更新されません。</span><span class="sxs-lookup"><span data-stu-id="789bc-127">When this request header is included and the eTag provided does not match the current tag on the **taxAreas**, the **taxAreas** will not be updated.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c6320-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="c6320-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="789bc-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="789bc-128">Request body</span></span>
 
-<span data-ttu-id="c6320-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c6320-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="789bc-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="789bc-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6320-130">応答</span><span class="sxs-lookup"><span data-stu-id="c6320-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="789bc-130">応答</span><span class="sxs-lookup"><span data-stu-id="789bc-130">Response</span></span>
 
-<span data-ttu-id="c6320-p104">成功した場合、このメソッドは ```204 No Content``` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c6320-p104">If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="789bc-p104">成功した場合、このメソッドは ```204 No Content``` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="789bc-p104">If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c6320-133">例</span><span class="sxs-lookup"><span data-stu-id="c6320-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="789bc-133">例</span><span class="sxs-lookup"><span data-stu-id="789bc-133">Example</span></span>
 
-<span data-ttu-id="c6320-134">**要求**</span><span class="sxs-lookup"><span data-stu-id="c6320-134">**Request**</span></span>
+<span data-ttu-id="789bc-134">**要求**</span><span class="sxs-lookup"><span data-stu-id="789bc-134">**Request**</span></span>
 
-<span data-ttu-id="c6320-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c6320-135">Here is an example of the request.</span></span>
+<span data-ttu-id="789bc-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="789bc-135">Here is an example of the request.</span></span>
 
 ```json
 DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
 ```
 
-<span data-ttu-id="c6320-136">**応答**</span><span class="sxs-lookup"><span data-stu-id="c6320-136">**Response**</span></span> 
+<span data-ttu-id="789bc-136">**応答**</span><span class="sxs-lookup"><span data-stu-id="789bc-136">**Response**</span></span> 
 
-<span data-ttu-id="c6320-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c6320-137">Here is an example of the response.</span></span> 
+<span data-ttu-id="789bc-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="789bc-137">Here is an example of the response.</span></span> 
 
 ```json
 HTTP/1.1 204 No Content

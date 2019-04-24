@@ -5,34 +5,34 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3a2c16d37d2ca86d7cafbb4047ee0bcea1ee4bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585049"
 ---
-# <a name="charttitleformat-resource-type"></a><span data-ttu-id="6a9e1-103">ChartTitleFormat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6a9e1-103">ChartTitleFormat resource type</span></span>
+# <a name="charttitleformat-resource-type"></a><span data-ttu-id="f3c3b-103">ChartTitleFormat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f3c3b-103">ChartTitleFormat resource type</span></span>
 
-<span data-ttu-id="6a9e1-104">グラフ タイトルの書式設定プロパティをカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="6a9e1-104">Encapsulates the format properties for the chart title.</span></span>
+<span data-ttu-id="f3c3b-104">グラフ タイトルの書式設定プロパティをカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="f3c3b-104">Encapsulates the format properties for the chart title.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="6a9e1-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="6a9e1-105">Methods</span></span>
-<span data-ttu-id="6a9e1-106">なし</span><span class="sxs-lookup"><span data-stu-id="6a9e1-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="f3c3b-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="f3c3b-105">Methods</span></span>
+<span data-ttu-id="f3c3b-106">なし</span><span class="sxs-lookup"><span data-stu-id="f3c3b-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6a9e1-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6a9e1-107">Properties</span></span>
-<span data-ttu-id="6a9e1-108">なし</span><span class="sxs-lookup"><span data-stu-id="6a9e1-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="f3c3b-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f3c3b-107">Properties</span></span>
+<span data-ttu-id="f3c3b-108">なし</span><span class="sxs-lookup"><span data-stu-id="f3c3b-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="6a9e1-109">関係</span><span class="sxs-lookup"><span data-stu-id="6a9e1-109">Relationships</span></span>
-| <span data-ttu-id="6a9e1-110">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="6a9e1-110">Relationship</span></span> | <span data-ttu-id="6a9e1-111">型</span><span class="sxs-lookup"><span data-stu-id="6a9e1-111">Type</span></span>   |<span data-ttu-id="6a9e1-112">説明</span><span class="sxs-lookup"><span data-stu-id="6a9e1-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="f3c3b-109">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="f3c3b-109">Relationships</span></span>
+| <span data-ttu-id="f3c3b-110">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="f3c3b-110">Relationship</span></span> | <span data-ttu-id="f3c3b-111">型</span><span class="sxs-lookup"><span data-stu-id="f3c3b-111">Type</span></span>   |<span data-ttu-id="f3c3b-112">説明</span><span class="sxs-lookup"><span data-stu-id="f3c3b-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6a9e1-113">fill</span><span class="sxs-lookup"><span data-stu-id="6a9e1-113">fill</span></span>|[<span data-ttu-id="6a9e1-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="6a9e1-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="6a9e1-p101">背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="6a9e1-p101">Represents the fill format of an object, which includes background formatting information. Read-only.</span></span>|
-|<span data-ttu-id="6a9e1-117">font</span><span class="sxs-lookup"><span data-stu-id="6a9e1-117">font</span></span>|[<span data-ttu-id="6a9e1-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="6a9e1-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="6a9e1-p102">現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="6a9e1-p102">Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.</span></span>|
+|<span data-ttu-id="f3c3b-113">fill</span><span class="sxs-lookup"><span data-stu-id="f3c3b-113">fill</span></span>|[<span data-ttu-id="f3c3b-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="f3c3b-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="f3c3b-p101">背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="f3c3b-p101">Represents the fill format of an object, which includes background formatting information. Read-only.</span></span>|
+|<span data-ttu-id="f3c3b-117">font</span><span class="sxs-lookup"><span data-stu-id="f3c3b-117">font</span></span>|[<span data-ttu-id="f3c3b-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="f3c3b-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="f3c3b-119">現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。</span><span class="sxs-lookup"><span data-stu-id="f3c3b-119">Represents the font attributes (font name, font size, color, etc.) for the current object.</span></span> <span data-ttu-id="f3c3b-120">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="f3c3b-120">Read-only.</span></span>|
 
 
 
-## <a name="json-representation"></a><span data-ttu-id="6a9e1-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6a9e1-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3c3b-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f3c3b-121">JSON representation</span></span>
 
-<span data-ttu-id="6a9e1-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="6a9e1-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f3c3b-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f3c3b-122">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

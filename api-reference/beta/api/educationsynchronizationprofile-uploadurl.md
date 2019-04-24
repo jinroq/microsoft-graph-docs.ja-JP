@@ -1,56 +1,56 @@
 ---
-title: 'educationSynchronizationProfile: uploadUrl'
-description: テナントで特定の学校のデータの同期プロファイルの Azure blob ストレージにソース ファイルをアップロードする共有アクセス署名 (SAS) を取得します。 SAS トークンには、1 時間の有効期限が。
+title: 'educationSynchronizationProfile: uploadurl'
+description: テナント内の特定の school データ同期プロファイルについて、ソースファイルを Azure blob ストレージにアップロードするための共有アクセス署名 (SAS) を取得します。 SAS トークンの有効期限は1時間です。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 74f37f5653147691c408cf83e3039920957352c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464699"
 ---
-# <a name="educationsynchronizationprofile-uploadurl"></a><span data-ttu-id="ce7ff-104">educationSynchronizationProfile: uploadUrl</span><span class="sxs-lookup"><span data-stu-id="ce7ff-104">educationSynchronizationProfile: uploadUrl</span></span>
+# <a name="educationsynchronizationprofile-uploadurl"></a><span data-ttu-id="61ebf-104">educationSynchronizationProfile: uploadurl</span><span class="sxs-lookup"><span data-stu-id="61ebf-104">educationSynchronizationProfile: uploadUrl</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce7ff-105">テナント内の特定の学校データ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の Azure blob ストレージにソース ファイルをアップロードするには、共有アクセス署名 (SAS) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-105">Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="ce7ff-106">SAS トークンには、1 時間の有効期限が。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-106">The SAS token has a validity of one hour.</span></span>
+<span data-ttu-id="61ebf-105">テナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)について、ソースファイルを Azure blob ストレージにアップロードするための共有アクセス署名 (SAS) を取得します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-105">Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="61ebf-106">SAS トークンの有効期限は1時間です。</span><span class="sxs-lookup"><span data-stu-id="61ebf-106">The SAS token has a validity of one hour.</span></span>
 
-<span data-ttu-id="ce7ff-107">アップロードのみの[CSV データ プロバイダー](../resources/educationcsvdataprovider.md)の URL が用意されています。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-107">The upload URL is provided only for the [CSV data provider](../resources/educationcsvdataprovider.md).</span></span>
+<span data-ttu-id="61ebf-107">アップロード URL は、 [CSV データプロバイダー](../resources/educationcsvdataprovider.md)に対してのみ提供されます。</span><span class="sxs-lookup"><span data-stu-id="61ebf-107">The upload URL is provided only for the [CSV data provider](../resources/educationcsvdataprovider.md).</span></span>
 
-> <span data-ttu-id="ce7ff-108">**注:** SAS のトークンを使用して blob ストレージにアクセスするには、 [Azure ストレージの Sdk](https://github.com/search?q=org%3AAzure+azure-storage)または[AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy)を使用します。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-108">**Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).</span></span>
+> <span data-ttu-id="61ebf-108">**注:** SAS トークンを使用して blob ストレージにアクセスするには、 [Azure ストレージ sdk](https://github.com/search?q=org%3AAzure+azure-storage)または[azcopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy)を使用します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-108">**Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ce7ff-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ce7ff-109">Permissions</span></span>
-<span data-ttu-id="ce7ff-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="61ebf-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="61ebf-109">Permissions</span></span>
+<span data-ttu-id="61ebf-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="61ebf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ce7ff-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ce7ff-112">Permission type</span></span> | <span data-ttu-id="ce7ff-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ce7ff-113">Permissions</span></span> |
+| <span data-ttu-id="61ebf-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="61ebf-112">Permission type</span></span> | <span data-ttu-id="61ebf-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="61ebf-113">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="ce7ff-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ce7ff-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ce7ff-115">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce7ff-115">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="ce7ff-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ce7ff-116">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="ce7ff-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-117">Not supported.</span></span>|
-|<span data-ttu-id="ce7ff-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ce7ff-118">Application</span></span>|<span data-ttu-id="ce7ff-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-119">Not supported.</span></span>|
+| <span data-ttu-id="61ebf-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="61ebf-114">Delegated (work or school account)</span></span> | <span data-ttu-id="61ebf-115">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61ebf-115">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="61ebf-116">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="61ebf-116">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="61ebf-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="61ebf-117">Not supported.</span></span>|
+|<span data-ttu-id="61ebf-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="61ebf-118">Application</span></span>|<span data-ttu-id="61ebf-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="61ebf-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ce7ff-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ce7ff-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61ebf-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="61ebf-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /synchronizationProfiles/{id}/uploadUrl
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ce7ff-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ce7ff-121">Request headers</span></span>
-| <span data-ttu-id="ce7ff-122">名前</span><span class="sxs-lookup"><span data-stu-id="ce7ff-122">Name</span></span>       | <span data-ttu-id="ce7ff-123">型</span><span class="sxs-lookup"><span data-stu-id="ce7ff-123">Type</span></span> | <span data-ttu-id="ce7ff-124">説明</span><span class="sxs-lookup"><span data-stu-id="ce7ff-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="61ebf-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="61ebf-121">Request headers</span></span>
+| <span data-ttu-id="61ebf-122">名前</span><span class="sxs-lookup"><span data-stu-id="61ebf-122">Name</span></span>       | <span data-ttu-id="61ebf-123">型</span><span class="sxs-lookup"><span data-stu-id="61ebf-123">Type</span></span> | <span data-ttu-id="61ebf-124">説明</span><span class="sxs-lookup"><span data-stu-id="61ebf-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ce7ff-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce7ff-125">Authorization</span></span>  | <span data-ttu-id="ce7ff-126">string</span><span class="sxs-lookup"><span data-stu-id="ce7ff-126">string</span></span>  | <span data-ttu-id="ce7ff-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="61ebf-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="61ebf-125">Authorization</span></span>  | <span data-ttu-id="61ebf-126">string</span><span class="sxs-lookup"><span data-stu-id="61ebf-126">string</span></span>  | <span data-ttu-id="61ebf-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="61ebf-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ce7ff-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="ce7ff-129">Request body</span></span>
-<span data-ttu-id="ce7ff-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="ce7ff-131">応答</span><span class="sxs-lookup"><span data-stu-id="ce7ff-131">Response</span></span>
-<span data-ttu-id="ce7ff-132">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)の SA の URL です。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-132">If successful, this method returns a `200 OK` response code and a SAS URL for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="61ebf-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="61ebf-129">Request body</span></span>
+<span data-ttu-id="61ebf-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="61ebf-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="61ebf-131">応答</span><span class="sxs-lookup"><span data-stu-id="61ebf-131">Response</span></span>
+<span data-ttu-id="61ebf-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)の SAS URL を返します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-132">If successful, this method returns a `200 OK` response code and a SAS URL for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.</span></span>
 
-<span data-ttu-id="ce7ff-133">かどうかは前の要求が処理中、このメソッドが返されます、 `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)のアップロードが現在ブロックされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-133">If a previous request is still being processed, this method returns a `409 Conflict` indicating that the upload is presently blocked for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).</span></span>
+<span data-ttu-id="61ebf-133">以前の要求がまだ処理されている場合、この`409 Conflict`メソッドは、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)に対してアップロードが現在ブロックされていることを示すを返します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-133">If a previous request is still being processed, this method returns a `409 Conflict` indicating that the upload is presently blocked for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce7ff-134">例</span><span class="sxs-lookup"><span data-stu-id="ce7ff-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ce7ff-135">要求</span><span class="sxs-lookup"><span data-stu-id="ce7ff-135">Request</span></span>
-<span data-ttu-id="ce7ff-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="61ebf-134">例</span><span class="sxs-lookup"><span data-stu-id="61ebf-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="61ebf-135">要求</span><span class="sxs-lookup"><span data-stu-id="61ebf-135">Request</span></span>
+<span data-ttu-id="61ebf-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_uploadurl"
@@ -59,10 +59,10 @@ GET /synchronizationProfiles/{id}/uploadUrl
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uploadUrl
 ```
 
-##### <a name="response"></a><span data-ttu-id="ce7ff-137">応答</span><span class="sxs-lookup"><span data-stu-id="ce7ff-137">Response</span></span>
-<span data-ttu-id="ce7ff-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-138">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="61ebf-137">応答</span><span class="sxs-lookup"><span data-stu-id="61ebf-137">Response</span></span>
+<span data-ttu-id="61ebf-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="61ebf-138">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="ce7ff-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ce7ff-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="61ebf-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="61ebf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

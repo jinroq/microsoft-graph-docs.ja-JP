@@ -5,19 +5,19 @@ ms.date: 09/11/2017
 title: ChoiceColumn
 localization_priority: Normal
 ms.openlocfilehash: 1dddbd4cfa4f26ecc0fd79a430c9d7f725bebbf9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481105"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584997"
 ---
-# <a name="choicecolumn-resource-type"></a><span data-ttu-id="e6752-102">ChoiceColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e6752-102">ChoiceColumn resource type</span></span>
+# <a name="choicecolumn-resource-type"></a><span data-ttu-id="eab80-102">ChoiceColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="eab80-102">ChoiceColumn resource type</span></span>
 
-<span data-ttu-id="e6752-103">[columnDefinition ](columndefinition.md)リソースの\*\* choiceColumn \*\*は、選択肢のリストから列の値を選択できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e6752-103">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
+<span data-ttu-id="eab80-103">[columnDefinition ](columndefinition.md)リソースの\*\* choiceColumn \*\*は、選択肢のリストから列の値を選択できることを示します。</span><span class="sxs-lookup"><span data-stu-id="eab80-103">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e6752-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e6752-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eab80-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="eab80-104">JSON representation</span></span>
 
-<span data-ttu-id="e6752-105">以下は、**choiceColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e6752-105">Here is a JSON representation of a **choiceColumn** resource.</span></span>
+<span data-ttu-id="eab80-105">以下は、**choiceColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="eab80-105">Here is a JSON representation of a **choiceColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.choiceColumn" } -->
 
 ```json
@@ -28,13 +28,13 @@ ms.locfileid: "30481105"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="e6752-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6752-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="eab80-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="eab80-106">Properties</span></span>
 
-| <span data-ttu-id="e6752-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="e6752-107">Property name</span></span>      | <span data-ttu-id="e6752-108">種類</span><span class="sxs-lookup"><span data-stu-id="e6752-108">Type</span></span>               | <span data-ttu-id="e6752-109">説明</span><span class="sxs-lookup"><span data-stu-id="e6752-109">Description</span></span>
+| <span data-ttu-id="eab80-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="eab80-107">Property name</span></span>      | <span data-ttu-id="eab80-108">種類</span><span class="sxs-lookup"><span data-stu-id="eab80-108">Type</span></span>               | <span data-ttu-id="eab80-109">説明</span><span class="sxs-lookup"><span data-stu-id="eab80-109">Description</span></span>
 |:-------------------|:-------------------|:----------------------------------------------
-| <span data-ttu-id="e6752-110">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="e6752-110">**allowTextEntry**</span></span> | <span data-ttu-id="e6752-111">boolean</span><span class="sxs-lookup"><span data-stu-id="e6752-111">boolean</span></span>            | <span data-ttu-id="e6752-112">true の場合、設定された選択肢にないカスタム値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e6752-112">If true, allows custom values that aren't in the configured choices.</span></span>
-| <span data-ttu-id="e6752-113">**choices**</span><span class="sxs-lookup"><span data-stu-id="e6752-113">**choices**</span></span>        | <span data-ttu-id="e6752-114">collection(string)</span><span class="sxs-lookup"><span data-stu-id="e6752-114">collection(string)</span></span> | <span data-ttu-id="e6752-115">この列に使用可能な値のリスト。</span><span class="sxs-lookup"><span data-stu-id="e6752-115">The list of values available for this column.</span></span>
-| <span data-ttu-id="e6752-116">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="e6752-116">**displayAs**</span></span>      | <span data-ttu-id="e6752-117">string</span><span class="sxs-lookup"><span data-stu-id="e6752-117">string</span></span>             | <span data-ttu-id="e6752-118">UX での選択肢の表示方法。</span><span class="sxs-lookup"><span data-stu-id="e6752-118">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="e6752-119">`checkBoxes`、`dropDownMenu`、`radioButtons` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="e6752-119">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
+| <span data-ttu-id="eab80-110">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="eab80-110">**allowTextEntry**</span></span> | <span data-ttu-id="eab80-111">boolean</span><span class="sxs-lookup"><span data-stu-id="eab80-111">boolean</span></span>            | <span data-ttu-id="eab80-112">true の場合、設定された選択肢にないカスタム値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="eab80-112">If true, allows custom values that aren't in the configured choices.</span></span>
+| <span data-ttu-id="eab80-113">**choices**</span><span class="sxs-lookup"><span data-stu-id="eab80-113">**choices**</span></span>        | <span data-ttu-id="eab80-114">collection(string)</span><span class="sxs-lookup"><span data-stu-id="eab80-114">collection(string)</span></span> | <span data-ttu-id="eab80-115">この列に使用可能な値のリスト。</span><span class="sxs-lookup"><span data-stu-id="eab80-115">The list of values available for this column.</span></span>
+| <span data-ttu-id="eab80-116">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="eab80-116">**displayAs**</span></span>      | <span data-ttu-id="eab80-117">string</span><span class="sxs-lookup"><span data-stu-id="eab80-117">string</span></span>             | <span data-ttu-id="eab80-118">UX での選択肢の表示方法。</span><span class="sxs-lookup"><span data-stu-id="eab80-118">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="eab80-119">`checkBoxes`、`dropDownMenu`、`radioButtons` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="eab80-119">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
 
 
 <!-- {
