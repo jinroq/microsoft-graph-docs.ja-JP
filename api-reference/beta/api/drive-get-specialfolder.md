@@ -6,35 +6,33 @@ title: 特別なフォルダーを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454786"
 ---
-# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="121e4-102">名前で特殊フォルダーを取得する</span><span class="sxs-lookup"><span data-stu-id="121e4-102">Get a special folder by name</span></span>
+# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="509ca-102">名前で特殊フォルダーを取得する</span><span class="sxs-lookup"><span data-stu-id="509ca-102">Get a special folder by name</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="509ca-103">特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="509ca-103">Use the special collection to access a special folder by name.</span></span>
 
-<span data-ttu-id="121e4-103">特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="121e4-103">Use the special collection to access a special folder by name.</span></span>
+<span data-ttu-id="509ca-p101">特殊フォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、OneDrive の既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊フォルダーの名前が変更されたりドライブ内の別の場所に移動されたりした場合でも、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="509ca-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
 
-<span data-ttu-id="121e4-p101">特殊フォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、OneDrive の既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊フォルダーの名前が変更されたりドライブ内の別の場所に移動されたりした場合でも、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="121e4-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
+<span data-ttu-id="509ca-p102">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="509ca-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-<span data-ttu-id="121e4-p102">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="121e4-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+> <span data-ttu-id="509ca-108">**注:** 読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="509ca-108">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
 
-> <span data-ttu-id="121e4-108">**注:** 読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="121e4-108">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
+## <a name="permissions"></a><span data-ttu-id="509ca-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="509ca-109">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="121e4-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="121e4-109">Permissions</span></span>
+<span data-ttu-id="509ca-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="509ca-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="121e4-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="121e4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|            <span data-ttu-id="121e4-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="121e4-112">Permission type</span></span>             |                                           <span data-ttu-id="121e4-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="121e4-113">Permissions (from least to most privileged)</span></span>                                            |
+|            <span data-ttu-id="509ca-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="509ca-112">Permission type</span></span>             |                                           <span data-ttu-id="509ca-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="509ca-113">Permissions (from least to most privileged)</span></span>                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="121e4-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="121e4-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="121e4-115">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121e4-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
-| <span data-ttu-id="121e4-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="121e4-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="121e4-117">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121e4-117">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
-| <span data-ttu-id="121e4-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="121e4-118">Application</span></span>                            | <span data-ttu-id="121e4-119">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121e4-119">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
+| <span data-ttu-id="509ca-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="509ca-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="509ca-115">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="509ca-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="509ca-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="509ca-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="509ca-117">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="509ca-117">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+| <span data-ttu-id="509ca-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="509ca-118">Application</span></span>                            | <span data-ttu-id="509ca-119">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="509ca-119">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="121e4-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="121e4-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="509ca-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="509ca-120">HTTP Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
@@ -42,28 +40,28 @@ ms.locfileid: "30481301"
 GET /me/drive/special/{name}
 ```
 
-### <a name="special-folder-names"></a><span data-ttu-id="121e4-121">特殊フォルダー名</span><span class="sxs-lookup"><span data-stu-id="121e4-121">Special folder names</span></span>
+### <a name="special-folder-names"></a><span data-ttu-id="509ca-121">特殊フォルダー名</span><span class="sxs-lookup"><span data-stu-id="509ca-121">Special folder names</span></span>
 
-<span data-ttu-id="121e4-122">以下の特殊フォルダー名は、OneDrive および OneDrive for Business で使用できます。</span><span class="sxs-lookup"><span data-stu-id="121e4-122">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
+<span data-ttu-id="509ca-122">以下の特殊フォルダー名は、OneDrive および OneDrive for Business で使用できます。</span><span class="sxs-lookup"><span data-stu-id="509ca-122">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="121e4-123">名前</span><span class="sxs-lookup"><span data-stu-id="121e4-123">Name</span></span>        | <span data-ttu-id="121e4-124">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="121e4-124">Folder id</span></span>    | <span data-ttu-id="121e4-125">説明</span><span class="sxs-lookup"><span data-stu-id="121e4-125">Description</span></span>                                                              |
+| <span data-ttu-id="509ca-123">名前</span><span class="sxs-lookup"><span data-stu-id="509ca-123">Name</span></span>        | <span data-ttu-id="509ca-124">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="509ca-124">Folder id</span></span>    | <span data-ttu-id="509ca-125">説明</span><span class="sxs-lookup"><span data-stu-id="509ca-125">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="121e4-126">Documents</span><span class="sxs-lookup"><span data-stu-id="121e4-126">Documents</span></span>   | `documents`  | <span data-ttu-id="121e4-127">ドキュメント フォルダー。</span><span class="sxs-lookup"><span data-stu-id="121e4-127">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="121e4-128">Photos</span><span class="sxs-lookup"><span data-stu-id="121e4-128">Photos</span></span>      | `photos`     | <span data-ttu-id="121e4-129">フォト フォルダー。</span><span class="sxs-lookup"><span data-stu-id="121e4-129">The Photos folder.</span></span>                                                       |
-| <span data-ttu-id="121e4-130">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="121e4-130">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="121e4-131">カメラ ロールのバックアップ フォルダー。</span><span class="sxs-lookup"><span data-stu-id="121e4-131">The Camera Roll Backup folder.</span></span>                                           |
-| <span data-ttu-id="121e4-132">App Root</span><span class="sxs-lookup"><span data-stu-id="121e4-132">App Root</span></span>    | `approot`    | <span data-ttu-id="121e4-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="121e4-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="121e4-135">Music</span><span class="sxs-lookup"><span data-stu-id="121e4-135">Music</span></span>       | `music`      | <span data-ttu-id="121e4-136">ミュージック フォルダー。</span><span class="sxs-lookup"><span data-stu-id="121e4-136">The Music folder.</span></span>                                                        |
+| <span data-ttu-id="509ca-126">Documents</span><span class="sxs-lookup"><span data-stu-id="509ca-126">Documents</span></span>   | `documents`  | <span data-ttu-id="509ca-127">ドキュメント フォルダー。</span><span class="sxs-lookup"><span data-stu-id="509ca-127">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="509ca-128">Photos</span><span class="sxs-lookup"><span data-stu-id="509ca-128">Photos</span></span>      | `photos`     | <span data-ttu-id="509ca-129">フォト フォルダー。</span><span class="sxs-lookup"><span data-stu-id="509ca-129">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="509ca-130">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="509ca-130">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="509ca-131">カメラ ロールのバックアップ フォルダー。</span><span class="sxs-lookup"><span data-stu-id="509ca-131">The Camera Roll Backup folder.</span></span>                                           |
+| <span data-ttu-id="509ca-132">App Root</span><span class="sxs-lookup"><span data-stu-id="509ca-132">App Root</span></span>    | `approot`    | <span data-ttu-id="509ca-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="509ca-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="509ca-135">Music</span><span class="sxs-lookup"><span data-stu-id="509ca-135">Music</span></span>       | `music`      | <span data-ttu-id="509ca-136">ミュージック フォルダー。</span><span class="sxs-lookup"><span data-stu-id="509ca-136">The Music folder.</span></span>                                                        |
 
 
-### <a name="optional-query-parameters"></a><span data-ttu-id="121e4-137">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="121e4-137">Optional query parameters</span></span>
+### <a name="optional-query-parameters"></a><span data-ttu-id="509ca-137">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="509ca-137">Optional query parameters</span></span>
 
-<span data-ttu-id="121e4-138">このメソッドは、応答をカスタマイズするための `$expand` および `$select` [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="121e4-138">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="509ca-138">このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="509ca-138">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="121e4-139">応答</span><span class="sxs-lookup"><span data-stu-id="121e4-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="509ca-139">応答</span><span class="sxs-lookup"><span data-stu-id="509ca-139">Response</span></span>
 
-<span data-ttu-id="121e4-140">このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="121e4-140">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="509ca-140">このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="509ca-140">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-<span data-ttu-id="121e4-141">プロパティや driveItem 上のリレーションシップへの付加的な呼び出しを伴う、特殊フォルダーのインラインのアドレス指定のメソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="121e4-141">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
+<span data-ttu-id="509ca-141">プロパティや driveItem 上のリレーションシップへの付加的な呼び出しを伴う、特殊フォルダーのインラインのアドレス指定のメソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="509ca-141">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -81,19 +79,19 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="121e4-142">特殊フォルダーの子を取得します。</span><span class="sxs-lookup"><span data-stu-id="121e4-142">Get children of a special folder</span></span>
+## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="509ca-142">特殊フォルダーの子を取得します。</span><span class="sxs-lookup"><span data-stu-id="509ca-142">Get children of a special folder</span></span>
 
-<span data-ttu-id="121e4-143">特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](/graph/query-parameters) オプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="121e4-143">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
+<span data-ttu-id="509ca-143">特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](/graph/query-parameters) オプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="509ca-143">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="121e4-144">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="121e4-144">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="509ca-144">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="509ca-144">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
-### <a name="response"></a><span data-ttu-id="121e4-145">応答</span><span class="sxs-lookup"><span data-stu-id="121e4-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="509ca-145">応答</span><span class="sxs-lookup"><span data-stu-id="509ca-145">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -111,21 +109,16 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="121e4-146">備考</span><span class="sxs-lookup"><span data-stu-id="121e4-146">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="509ca-146">注釈</span><span class="sxs-lookup"><span data-stu-id="509ca-146">Remarks</span></span>
 
-> <span data-ttu-id="121e4-147">**注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。</span><span class="sxs-lookup"><span data-stu-id="121e4-147">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
+> <span data-ttu-id="509ca-147">**注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。</span><span class="sxs-lookup"><span data-stu-id="509ca-147">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
 
-<span data-ttu-id="121e4-148">アプリに読み取り専用アクセス許可が付与されている場合、特殊フォルダーまたは特殊フォルダーの子を取得する要求は、その特殊フォルダーが存在していないと、`404 Not Found` エラーまたは `403 Forbidden` エラーで失敗します。</span><span class="sxs-lookup"><span data-stu-id="121e4-148">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
+<span data-ttu-id="509ca-148">アプリに読み取り専用アクセス許可が付与されている場合、特殊フォルダーまたは特殊フォルダーの子を取得する要求は、その特殊フォルダーが存在していないと、`404 Not Found` エラーまたは `403 Forbidden` エラーで失敗します。</span><span class="sxs-lookup"><span data-stu-id="509ca-148">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-get-specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "OneDrive/Drive/Special folders"
+} -->

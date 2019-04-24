@@ -6,29 +6,29 @@ title: ファイルをチェックアウトする
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454730"
 ---
-# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="31461-102">DriveItem リソースをチェックアウトする</span><span class="sxs-lookup"><span data-stu-id="31461-102">Check-out a DriveItem resource</span></span>
+# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="f282e-102">DriveItem リソースをチェックアウトする</span><span class="sxs-lookup"><span data-stu-id="f282e-102">Check-out a DriveItem resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31461-103">driveItem リソースをチェックアウトして、他者がドキュメントを編集できないようにします。また、ドキュメントが[チェックイン](driveitem-checkin.md)されるまで、変更内容が表示されないようにします。</span><span class="sxs-lookup"><span data-stu-id="31461-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
+<span data-ttu-id="f282e-103">driveItem リソースをチェックアウトして、他者がドキュメントを編集できないようにします。また、ドキュメントが[チェックイン](driveitem-checkin.md)されるまで、変更内容が表示されないようにします。</span><span class="sxs-lookup"><span data-stu-id="f282e-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="31461-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="31461-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f282e-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f282e-104">Permissions</span></span>
 
-<span data-ttu-id="31461-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31461-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f282e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f282e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="31461-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="31461-107">Permission type</span></span>      | <span data-ttu-id="31461-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="31461-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f282e-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f282e-107">Permission type</span></span>      | <span data-ttu-id="f282e-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f282e-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="31461-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="31461-109">Delegated (work or school account)</span></span> | <span data-ttu-id="31461-110">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31461-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="31461-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="31461-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31461-112">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31461-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="31461-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="31461-113">Application</span></span> | <span data-ttu-id="31461-114">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31461-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f282e-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f282e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="f282e-110">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f282e-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f282e-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f282e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f282e-112">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f282e-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f282e-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f282e-113">Application</span></span> | <span data-ttu-id="f282e-114">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f282e-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="31461-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="31461-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f282e-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f282e-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,13 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/checkout
 POST /users/{userId}/drive/items/{itemId}/checkout
 ```
 
-### <a name="request-body"></a><span data-ttu-id="31461-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="31461-116">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="f282e-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="f282e-116">Request body</span></span>
 
-<span data-ttu-id="31461-117">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="31461-117">No request body is required.</span></span>
+<span data-ttu-id="f282e-117">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="f282e-117">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="31461-118">例</span><span class="sxs-lookup"><span data-stu-id="31461-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f282e-118">例</span><span class="sxs-lookup"><span data-stu-id="f282e-118">Example</span></span>
 
-<span data-ttu-id="31461-119">この例では、`{item-id}` で識別されるファイルをチェックアウトします。</span><span class="sxs-lookup"><span data-stu-id="31461-119">This example checks out a file identified by `{item-id}`.</span></span>
+<span data-ttu-id="f282e-119">この例では、`{item-id}` で識別されるファイルをチェックアウトします。</span><span class="sxs-lookup"><span data-stu-id="f282e-119">This example checks out a file identified by `{item-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "checkout-item", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -54,9 +54,9 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 POST /drives/{drive-id}/items/{item-id}/checkout
 ```
 
-## <a name="response"></a><span data-ttu-id="31461-120">応答</span><span class="sxs-lookup"><span data-stu-id="31461-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f282e-120">応答</span><span class="sxs-lookup"><span data-stu-id="f282e-120">Response</span></span>
 
-<span data-ttu-id="31461-121">成功すると、API 呼び出しは `204 No content` を返します。</span><span class="sxs-lookup"><span data-stu-id="31461-121">If successful, the API call returns a `204 No content`.</span></span>
+<span data-ttu-id="f282e-121">成功すると、API 呼び出しは `204 No content` を返します。</span><span class="sxs-lookup"><span data-stu-id="f282e-121">If successful, the API call returns a `204 No content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -64,7 +64,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 HTTP/1.1 204 No content
 ```
 
-### <a name="remarks"></a><span data-ttu-id="31461-122">備考</span><span class="sxs-lookup"><span data-stu-id="31461-122">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="f282e-122">備考</span><span class="sxs-lookup"><span data-stu-id="f282e-122">Remarks</span></span>
 
 
 [item-resource]: ../resources/driveitem.md

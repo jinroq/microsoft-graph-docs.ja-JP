@@ -5,49 +5,49 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42af211afb9f508e9033f3e77f2b1dd14aa484d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455185"
 ---
-# <a name="restore-deleted-item"></a><span data-ttu-id="f68a8-103">削除済みアイテムを復元する</span><span class="sxs-lookup"><span data-stu-id="f68a8-103">Restore deleted item</span></span>
+# <a name="restore-deleted-item"></a><span data-ttu-id="f42b3-103">削除済みアイテムを復元する</span><span class="sxs-lookup"><span data-stu-id="f42b3-103">Restore deleted item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f68a8-104">[[削除済みアイテム]](../resources/directory.md) から、最近削除されたアイテムを復元します。</span><span class="sxs-lookup"><span data-stu-id="f68a8-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
+<span data-ttu-id="f42b3-104">[[削除済みアイテム]](../resources/directory.md) から、最近削除されたアイテムを復元します。</span><span class="sxs-lookup"><span data-stu-id="f42b3-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
 
-<span data-ttu-id="f68a8-105">現在、[削除済みアイテム] 機能は [group](../resources/group.md) および [user](../resources/user.md) リソースに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="f68a8-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="f68a8-106">アイテムを誤って削除してしまった場合、そのアイテムを完全に復元できます。</span><span class="sxs-lookup"><span data-stu-id="f68a8-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
+<span data-ttu-id="f42b3-105">現在、[削除済みアイテム] 機能は [group](../resources/group.md) および [user](../resources/user.md) リソースに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="f42b3-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="f42b3-106">アイテムを誤って削除してしまった場合、そのアイテムを完全に復元できます。</span><span class="sxs-lookup"><span data-stu-id="f42b3-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
 
-<span data-ttu-id="f68a8-107">最近削除されたアイテムは、最大 30 日間、使用可能な状態に維持されます。</span><span class="sxs-lookup"><span data-stu-id="f68a8-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="f68a8-108">30 日が経過すると、アイテムは完全に削除されます。</span><span class="sxs-lookup"><span data-stu-id="f68a8-108">After 30 days, the item is permanently deleted.</span></span>
+<span data-ttu-id="f42b3-107">最近削除されたアイテムは、最大 30 日間、使用可能な状態に維持されます。</span><span class="sxs-lookup"><span data-stu-id="f42b3-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="f42b3-108">30 日が経過すると、アイテムは完全に削除されます。</span><span class="sxs-lookup"><span data-stu-id="f42b3-108">After 30 days, the item is permanently deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f68a8-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f68a8-109">Permissions</span></span>
-<span data-ttu-id="f68a8-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f68a8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f42b3-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f42b3-109">Permissions</span></span>
+<span data-ttu-id="f42b3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f42b3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="f68a8-112">ユーザー: User.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f68a8-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="f68a8-113">グループ: Group.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f68a8-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="f42b3-112">ユーザーの場合: directory.accessasuser.all、すべてのユーザー</span><span class="sxs-lookup"><span data-stu-id="f42b3-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="f42b3-113">グループの場合: directory.accessasuser.all、all、および all</span><span class="sxs-lookup"><span data-stu-id="f42b3-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f68a8-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f68a8-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f42b3-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f42b3-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f68a8-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f68a8-115">Request headers</span></span>
-| <span data-ttu-id="f68a8-116">名前</span><span class="sxs-lookup"><span data-stu-id="f68a8-116">Name</span></span>       | <span data-ttu-id="f68a8-117">説明</span><span class="sxs-lookup"><span data-stu-id="f68a8-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f42b3-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f42b3-115">Request headers</span></span>
+| <span data-ttu-id="f42b3-116">名前</span><span class="sxs-lookup"><span data-stu-id="f42b3-116">Name</span></span>       | <span data-ttu-id="f42b3-117">説明</span><span class="sxs-lookup"><span data-stu-id="f42b3-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f68a8-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="f68a8-118">Authorization</span></span>  | <span data-ttu-id="f68a8-119">ベアラー &lt;コード&gt; が*必要*</span><span class="sxs-lookup"><span data-stu-id="f68a8-119">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="f68a8-120">Accept</span><span class="sxs-lookup"><span data-stu-id="f68a8-120">Accept</span></span> | <span data-ttu-id="f68a8-121">application/json</span><span class="sxs-lookup"><span data-stu-id="f68a8-121">application/json</span></span> |
+| <span data-ttu-id="f42b3-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="f42b3-118">Authorization</span></span>  | <span data-ttu-id="f42b3-119">ベアラー &lt;コード&gt; が*必要*</span><span class="sxs-lookup"><span data-stu-id="f42b3-119">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="f42b3-120">承諾</span><span class="sxs-lookup"><span data-stu-id="f42b3-120">Accept</span></span> | <span data-ttu-id="f42b3-121">application/json</span><span class="sxs-lookup"><span data-stu-id="f42b3-121">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f68a8-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="f68a8-122">Request body</span></span>
-<span data-ttu-id="f68a8-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f68a8-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f42b3-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="f42b3-122">Request body</span></span>
+<span data-ttu-id="f42b3-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f42b3-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f68a8-124">応答</span><span class="sxs-lookup"><span data-stu-id="f68a8-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f42b3-124">応答</span><span class="sxs-lookup"><span data-stu-id="f42b3-124">Response</span></span>
 
-<span data-ttu-id="f68a8-125">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f68a8-125">If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="f42b3-125">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f42b3-125">If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f68a8-126">例</span><span class="sxs-lookup"><span data-stu-id="f68a8-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f68a8-127">要求</span><span class="sxs-lookup"><span data-stu-id="f68a8-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="f42b3-126">例</span><span class="sxs-lookup"><span data-stu-id="f42b3-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f42b3-127">要求</span><span class="sxs-lookup"><span data-stu-id="f42b3-127">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -56,9 +56,9 @@ POST /directory/deleteditems/{id}/restore
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
-<span data-ttu-id="f68a8-128">要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f68a8-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="f68a8-129">応答</span><span class="sxs-lookup"><span data-stu-id="f68a8-129">Response</span></span>
-<span data-ttu-id="f68a8-p104">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f68a8-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f42b3-128">要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f42b3-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="f42b3-129">応答</span><span class="sxs-lookup"><span data-stu-id="f42b3-129">Response</span></span>
+<span data-ttu-id="f42b3-p104">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f42b3-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
