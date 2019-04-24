@@ -5,27 +5,27 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6a0a5dd257636f2e90e1b5c1d2e46e6d24feef7b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523750"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a><span data-ttu-id="d5a12-103">androidWorkProfileCrossProfileDataSharingType 列挙型</span><span class="sxs-lookup"><span data-stu-id="d5a12-103">androidWorkProfileCrossProfileDataSharingType enum type</span></span>
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a><span data-ttu-id="2a118-103">androidWorkProfileCrossProfileDataSharingType 列挙型</span><span class="sxs-lookup"><span data-stu-id="2a118-103">androidWorkProfileCrossProfileDataSharingType enum type</span></span>
 
-> <span data-ttu-id="d5a12-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d5a12-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2a118-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2a118-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d5a12-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d5a12-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2a118-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2a118-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d5a12-106">Android 作業プロファイルクロスプロファイルデータ共有の種類。</span><span class="sxs-lookup"><span data-stu-id="d5a12-106">Android Work Profile cross profile data sharing type.</span></span>
+<span data-ttu-id="2a118-106">Android 作業プロファイルクロスプロファイルデータ共有の種類。</span><span class="sxs-lookup"><span data-stu-id="2a118-106">Android Work Profile cross profile data sharing type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d5a12-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="d5a12-107">Members</span></span>
-|<span data-ttu-id="d5a12-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="d5a12-108">Member</span></span>|<span data-ttu-id="d5a12-109">値</span><span class="sxs-lookup"><span data-stu-id="d5a12-109">Value</span></span>|<span data-ttu-id="d5a12-110">説明</span><span class="sxs-lookup"><span data-stu-id="d5a12-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="2a118-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="2a118-107">Members</span></span>
+|<span data-ttu-id="2a118-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="2a118-108">Member</span></span>|<span data-ttu-id="2a118-109">値</span><span class="sxs-lookup"><span data-stu-id="2a118-109">Value</span></span>|<span data-ttu-id="2a118-110">説明</span><span class="sxs-lookup"><span data-stu-id="2a118-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d5a12-111">devicedefault</span><span class="sxs-lookup"><span data-stu-id="d5a12-111">deviceDefault</span></span>|<span data-ttu-id="d5a12-112">.0</span><span class="sxs-lookup"><span data-stu-id="d5a12-112">0</span></span>|<span data-ttu-id="d5a12-113">デバイスの既定値。意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5a12-113">Device default value, no intent.</span></span>|
-|<span data-ttu-id="d5a12-114">preventAny</span><span class="sxs-lookup"><span data-stu-id="d5a12-114">preventAny</span></span>|<span data-ttu-id="d5a12-115">1-d</span><span class="sxs-lookup"><span data-stu-id="d5a12-115">1</span></span>|<span data-ttu-id="d5a12-116">共有を禁止します。</span><span class="sxs-lookup"><span data-stu-id="d5a12-116">Prevent any sharing.</span></span>|
-|<span data-ttu-id="d5a12-117">allowPersonalToWork</span><span class="sxs-lookup"><span data-stu-id="d5a12-117">allowPersonalToWork</span></span>|<span data-ttu-id="d5a12-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="d5a12-118">2</span></span>|<span data-ttu-id="d5a12-119">個人プロファイルから作業プロファイルへのデータ共有要求を許可します。</span><span class="sxs-lookup"><span data-stu-id="d5a12-119">Allow data sharing request from personal profile to work profile.</span></span>|
-|<span data-ttu-id="d5a12-120">noRestrictions</span><span class="sxs-lookup"><span data-stu-id="d5a12-120">noRestrictions</span></span>|<span data-ttu-id="d5a12-121">1/3</span><span class="sxs-lookup"><span data-stu-id="d5a12-121">3</span></span>|<span data-ttu-id="d5a12-122">共有の制限はありません。</span><span class="sxs-lookup"><span data-stu-id="d5a12-122">No restrictions on sharing.</span></span>|
+|<span data-ttu-id="2a118-111">devicedefault</span><span class="sxs-lookup"><span data-stu-id="2a118-111">deviceDefault</span></span>|<span data-ttu-id="2a118-112">.0</span><span class="sxs-lookup"><span data-stu-id="2a118-112">0</span></span>|<span data-ttu-id="2a118-113">デバイスの既定値。意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="2a118-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="2a118-114">preventAny</span><span class="sxs-lookup"><span data-stu-id="2a118-114">preventAny</span></span>|<span data-ttu-id="2a118-115">1 </span><span class="sxs-lookup"><span data-stu-id="2a118-115">1</span></span>|<span data-ttu-id="2a118-116">共有を禁止します。</span><span class="sxs-lookup"><span data-stu-id="2a118-116">Prevent any sharing.</span></span>|
+|<span data-ttu-id="2a118-117">allowPersonalToWork</span><span class="sxs-lookup"><span data-stu-id="2a118-117">allowPersonalToWork</span></span>|<span data-ttu-id="2a118-118">2 </span><span class="sxs-lookup"><span data-stu-id="2a118-118">2</span></span>|<span data-ttu-id="2a118-119">個人プロファイルから作業プロファイルへのデータ共有要求を許可します。</span><span class="sxs-lookup"><span data-stu-id="2a118-119">Allow data sharing request from personal profile to work profile.</span></span>|
+|<span data-ttu-id="2a118-120">noRestrictions</span><span class="sxs-lookup"><span data-stu-id="2a118-120">noRestrictions</span></span>|<span data-ttu-id="2a118-121">3 </span><span class="sxs-lookup"><span data-stu-id="2a118-121">3</span></span>|<span data-ttu-id="2a118-122">共有の制限はありません。</span><span class="sxs-lookup"><span data-stu-id="2a118-122">No restrictions on sharing.</span></span>|
 
 
 
