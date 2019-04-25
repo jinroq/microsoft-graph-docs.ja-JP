@@ -6,11 +6,11 @@ title: SharePoint サイトを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bc1f4e478b93472b683cd8249d55a98f751dfaa0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537320"
 ---
 # <a name="get-a-site-resource"></a>サイト リソースを取得する
 

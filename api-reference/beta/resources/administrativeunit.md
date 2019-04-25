@@ -1,46 +1,46 @@
 ---
 title: administrativeUnit リソースの種類
-description: 管理単位は、ユーザーとグループのディレクトリ オブジェクトの概念的なコンテナーを提供します。 管理単位を使用すると、企業の管理者はユーザーを管理する管理責任を委任できるようになりましたと、グループ内に含まれている、地域や部門の管理者に管理単位にスコープを設定しました。
+description: 管理単位は、ユーザーおよびグループのディレクトリオブジェクトの概念コンテナーを提供します。 管理単位を使用することで、会社の管理者は、管理単位に含まれるユーザーやグループを管理するための管理責任を、地域または部門の管理者に委任できるようになりました。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535781"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理単位は、ユーザーとグループのディレクトリ オブジェクトの概念的なコンテナーを提供します。 管理単位を使用すると、企業の管理者はユーザーを管理する管理責任を委任できるようになりましたと、グループ内に含まれている、地域や部門の管理者に管理単位にスコープを設定しました。
+管理単位は、ユーザーおよびグループのディレクトリオブジェクトの概念コンテナーを提供します。 管理単位を使用することで、会社の管理者は、管理単位に含まれるユーザーやグループを管理するための管理責任を、地域または部門の管理者に委任できるようになりました。
 
-例を見てみましょう。 -西海岸の部門および東海岸の事業部の 2 つの部門の構成が contoso 社の会社を想像してください。 ディレクトリの役割を contoso 社では、全体のテナントに適用されます。 Lee、contoso 社の企業の管理者は、管理責任を委任するスコープを設定して、西海岸事業部や東海岸の部門を希望しています。  Lee では、*西海岸の admistrative ユニット*を作成でき、西海岸のすべてのユーザーをこの管理単位に配置することができます。  同様に、Lee は、*東海岸の管理単位*を作成できます。  Lee は、他のユーザーに管理責任を委任することを開始できるようになりましたが、**スコープ**の新規の管理単位に彼が作成されます。 Lee は、*ヘルプデスク管理者*ロールの**スコープ**に*西海岸の管理単位*で Jennifer を配置します。  これにより、*西海岸の管理単位*でそれらのユーザーがいる場合にのみ、すべてのユーザーのパスワードをリセットするのには Jennifer。  同様に、Lee は、*ユーザー アカウントの管理者*ロールの**スコープ**に*東海岸の管理単位*でのデイブを配置します。  これにより、ユーザーの更新、ライセンスを割り当てるし、のみ場合は、*東海岸の管理単位*では、すべてのユーザーのパスワードをリセットする Dave。 ビデオについては、 [Azure Active Directory の管理単位の概要](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)を参照してください。
+1 つの例を見てみましょう。 Contoso Corp が2つの部署で構成されていると仮定します。たとえば、West 海岸部と東海岸部があります。 Contoso 社のディレクトリの役割は、テナント全体に適用されます。 Contoso 社の管理者である Lee は、管理責任を委任しようとしていますが、西海岸部または東海岸部に適用されます。  Lee は、*西海岸 admistrative ユニット*を作成し、すべての west 沿岸ユーザーをこの管理単位に配置できます。  同様に、Lee では、*東海岸管理ユニット*を作成できます。  Lee では、管理者の責任を他のユーザーに委任することはできますが、作成した新しい管理単位に**スコープ**を設定することができます。 Lee は、*ヘルプデスク管理者*の**** 役割を持つ Jennifer を*West Coast 管理単位*に配置します。  これにより、Jennifer はユーザーのパスワードをリセットすることができますが、それらのユーザーが*West Coast 管理単位*にいる場合に限られます。  同様に、Lee は、*東海岸管理単位*を対象**範囲**とする*ユーザーアカウント管理者*の役割で Dave を設定します。  これにより、Dave はユーザーの更新、ライセンスの割り当て、ユーザーのパスワードのリセットを行うことができます。ただし、ユーザーが*東海岸の管理単位*にいる場合に限ります。 ビデオの概要については、「 [Azure Active Directory の管理単位の概要」を](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)参照してください。
 
 このリソースでは、[拡張機能](/graph/extensibility-overview)を使用してカスタム プロパティに独自のデータを追加することができます。
 
-このトピックでは、宣言されたプロパティと、administrativeUnit のエンティティと同様に操作と administrativeUnits リソースを呼び出すことができる関数によって公開されているナビゲーション プロパティの説明を示します。
+このトピックでは、administrativeUnit エンティティによって公開される宣言されたプロパティとナビゲーションプロパティについて説明するほかに、group や directoryrole リソースで呼び出すことができる操作と関数についても説明します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[AdministrativeUnit を作成します。](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 新規の管理単位を作成します。|
-|[リスト administrativeUnits](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md)コレクション |AdministrativeUnits のすべてのプロパティを一覧表示します。|
-|[Get administrativeUnit](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |特定の administrativeUnit オブジェクトのプロパティと関係を参照してください。|
-|[AdminstrativeUnit を更新します。](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |AdministrativeUnit オブジェクトを更新します。 |
-|[AdminstrativeUnit を削除します。](../api/administrativeunit-delete.md) | なし |AdministrativeUnit オブジェクトを削除します。 |
-|[メンバーを追加する](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| (ユーザーまたはグループ) のメンバーを追加します。|
-|[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) コレクション| (ユーザーおよびグループ) のメンバーの一覧を取得します。|
-|[メンバーを取得します。](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
-|[メンバーを削除する](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除する|
-|[スコープ ロール メンバーを追加します。](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ ロールのメンバーを追加します。|
-|[スコープ ロールのメンバーの一覧](../api/administrativeunit-list-scopedrolemembers.md) |scopedRoleMembership コレクション| スコープ ロールの管理者の一覧を取得します。|
-|[スコープ ロールのメンバーを取得します。](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 特定のスコープにロールのメンバーを取得します。|
-|[スコープ ロール メンバーを削除します。](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ ロールのメンバーを削除します。|
+|[administrativeUnit を作成する](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 新しい管理単位を作成します。|
+|[リスト group や directoryrole](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md)コレクション |すべての group や directoryrole のプロパティを一覧表示します。|
+|[administrativeUnit を取得する](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |特定の administrativeUnit オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[adminstrativeUnit の更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |administrativeUnit オブジェクトを更新します。 |
+|[adminstrativeUnit の削除](../api/administrativeunit-delete.md) | なし |administrativeUnit オブジェクトを削除します。 |
+|[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| メンバー (ユーザーまたはグループ) を追加します。|
+|[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| (ユーザーおよびグループ) メンバーの一覧を取得します。|
+|[メンバーを取得する](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
+|[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
+|[スコープロールのメンバーを追加する](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ付きの役割メンバーを追加します。|
+|[スコープが指定された役割のメンバーを一覧表示する](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープが設定された役割の担当者の一覧を取得します。|
+|[スコープロールのメンバーを取得する](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 特定の範囲の役割メンバーを取得します。|
+|[スコープ指定された役割メンバーを削除する](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ指定された役割メンバーを削除します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
@@ -50,17 +50,17 @@ ms.locfileid: "29519746"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|string|管理単位のオプションの説明です。|
-|displayName|string|管理単位の名前を表示します。|
-|id|文字列|管理単位の一意の識別子です。 読み取り専用です。|
-|visibility|文字列|またはパブリック フォルダー管理の単位とそのメンバーが非表示かどうかを制御します。 HiddenMembership またはパブリックに設定できます。 ない場合、既定の動作のセット公開。 管理の単位のメンバーだけの HiddenMembership に設定すると、管理単位の他のメンバーが一覧表示できます。|
+|description|string|管理単位の説明 (オプション)。|
+|displayName|string|管理単位の表示名。|
+|id|string|管理単位の一意の識別子。 読み取り専用。|
+|visibility|string|管理単位とそのメンバーを非表示にするか、または公開するかを制御します。 HiddenMembership または Public に設定できます。 設定されていない場合、既定の動作はパブリックになります。 HiddenMembership に設定されている場合、管理単位のメンバーのみが、管理単位の他のメンバーを一覧表示できます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) コレクション|この管理単位に定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
-|members|[directoryObject](directoryobject.md) コレクション|ユーザーとグループがこの Adminsitrative ユニットのメンバーであります。 HTTP メソッド: 投稿 (メンバーの一覧) を取得 (メンバー) を追加 (メンバーの削除) を削除します。|
-|scopedRoleMembers|scopedRoleMembership コレクション| この管理単位のスコープにロールのメンバーです。  HTTP メソッド: 投稿 (リスト scopedRoleMemberships) を取得 (scopedRoleMembership)、追加 (削除 scopedRoleMembership) を削除します。 |
+|extensions|[extension](extension.md) コレクション|この管理単位に対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
+|members|[directoryObject](directoryobject.md) コレクション|この Adminsitrative Unit のメンバーであるユーザーとグループ。 HTTP メソッド: GET (メンバーの一覧)、POST (メンバーの追加)、削除 (メンバーの削除)。|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープ-この管理単位の役割メンバー。  HTTP メソッド: GET (list scopedRoleMemberships)、POST (add scopedRoleMembership)、DELETE (remove scopedRoleMembership)。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

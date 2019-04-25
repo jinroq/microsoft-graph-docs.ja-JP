@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b04688330ef817e26eace44b4924854210798dab
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534844"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>ndesコネクタ状態列挙型
 
@@ -22,9 +22,9 @@ Ndes connector の現在の状態。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|このコネクタの状態はまだ使用できません。|
-|active|1-d|Ndes connector が最近接続した|
-|未使用|pbm-2|Ndes connector の最近のアクティビティはありません|
+|なし|.0|このコネクタの状態はまだ使用できません。|
+|active|1 |Ndes connector が最近接続した|
+|未使用|2 |Ndes connector の最近のアクティビティはありません|
 
 
 

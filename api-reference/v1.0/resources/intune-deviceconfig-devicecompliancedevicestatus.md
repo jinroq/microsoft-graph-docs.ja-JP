@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e1ed715def8533f982f6d847f4c958534a9b5423
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534403"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>deviceComplianceDeviceStatus リソースの種類
 
@@ -31,12 +31,12 @@ ms.locfileid: "30263505"
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
-|userName|String|レポートされているユーザー名|
+|userName|文字列型 (String)|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|文字列型 (String)|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

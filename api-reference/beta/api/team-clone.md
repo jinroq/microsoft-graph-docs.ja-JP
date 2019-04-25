@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1495e00e2332ce6b963e654b8f5d63b2882c778d
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536910"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成する
 
@@ -29,7 +29,7 @@ ms.locfileid: "31889962"
 複製は、長時間実行される操作です。
 POST 複製が戻ると、"実行中" または "成功" または "失敗" のどちらであるかを確認するには、[操作](../resources/teamsasyncoperation.md)を取得する必要があります。 状態が "実行中" ではない状態になるまで、この操作を続行する必要があります。 推奨される遅延時間は、5秒です。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -56,7 +56,7 @@ POST /teams/{id}/clone
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |classification|String (省略可能)|グループの分類 (低、中、高のビジネスへの影響など) を記述します。 このプロパティの有効な値は、[テンプレート定義](../resources/directorysettingtemplate.md)に基づいて ClassificationList[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類が指定されていない場合は、元のチーム/グループから分類がコピーされます。|
-|説明|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
+|description|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合は、displayName から計算されます。 既知の問題: このプロパティは現在無視されています。|
 |partstoclone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|

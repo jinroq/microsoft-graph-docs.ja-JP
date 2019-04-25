@@ -1,17 +1,17 @@
 ---
 title: Get conversationThread
-description: 'グループに属している特定のスレッドを取得します。 親スレッドと、スレッドの両方を指定することができますか、 '
+description: 'グループに属している特定のスレッドを取得します。 親の会話とスレッドの両方を指定できます。または、 '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 3aa5df3ae37c25507fe23574b448a0c3beb3fcea
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566102"
 ---
-# <a name="get-conversationthread"></a>Get conversationThread
+# <a name="get-conversationthread"></a>conversationThread を取得する
 
 グループに属している特定のスレッドを取得します。親の会話とスレッドの両方を指定したり、親の会話を参照せずにスレッドを指定したりすることができます。 
 ## <a name="permissions"></a>アクセス許可
@@ -19,9 +19,9 @@ ms.locfileid: "27924896"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
+|委任 (職場または学校のアカウント) | グループ読み取り。すべてを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All、Group.Read.All |
+|アプリケーション | グループ読み取り。すべてを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

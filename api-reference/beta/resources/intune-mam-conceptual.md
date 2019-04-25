@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563981"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
@@ -25,8 +25,8 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 
 - [Android 管理対象アプリの保護](intune-mam-androidmanagedappprotection.md)
 - [Android 管理対象アプリの登録](intune-mam-androidmanagedappregistration.md)
-- [Android 管理対象アプリのセーフティネットアプリの検証の種類](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
-- [Android 管理対象アプリのセーフティネットデバイスの構成証明の種類](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Android 管理対象アプリのセーフティ ネットのアプリ認証の種類](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android 管理対象アプリのセーフティ ネットのデバイス構成証明の種類](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android モバイル アプリ ID](intune-mam-androidmobileappidentifier.md)
 - [アプリ管理レベル](intune-mam-appmanagementlevel.md)
 - [アプリケーションの種類](intune-wip-applicationtype.md)

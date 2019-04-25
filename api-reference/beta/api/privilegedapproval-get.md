@@ -1,26 +1,26 @@
 ---
-title: PrivilegedApproval を取得します。
-description: プロパティと privilegedapproval オブジェクトの関係を取得します。
+title: privilegedApproval を取得する
+description: privilegedapproval オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: c718c8d3c9382c5f8af9debf88fd6de5a55b461b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513621"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538664"
 ---
-# <a name="get-privilegedapproval"></a>PrivilegedApproval を取得します。
+# <a name="get-privilegedapproval"></a>privilegedApproval を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと privilegedapproval オブジェクトの関係を取得します。
+privilegedapproval オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All   |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -42,9 +42,9 @@ GET /privilegedApproval/<id>
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[privilegedApproval](../resources/privilegedapproval.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedApproval](../resources/privilegedapproval.md)オブジェクトを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

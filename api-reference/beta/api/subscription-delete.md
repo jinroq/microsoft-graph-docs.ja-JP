@@ -4,11 +4,11 @@ description: サブスクリプションを削除します。
 localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: 9fa5a60bbb00bb7d15ae14a0b76235a5629f2c42
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140454"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537154"
 ---
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
@@ -27,7 +27,7 @@ ms.locfileid: "30140454"
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
 |[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
-|[グループ会話](../resources/conversation.md) | Group.Read.All | 使用不可 | 使用不可 |
+|[グループ会話](../resources/conversation.md) | Group.Read.All | 非サポート | 非サポート |
 |[メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |[セキュリティの警告](../resources/alert.md) | SecurityEvents.ReadWrite.All | サポート対象外 | SecurityEvents.ReadWrite.All |
 |[ユーザー](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |

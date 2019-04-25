@@ -1,21 +1,21 @@
 ---
-title: チャネルからタブを削除します。
-description: '削除 (固定解除)、チーム内で指定されたチャネルのタブです。 '
+title: チャネルからタブを削除する
+description: 'チーム内の指定されたチャネルからタブを削除 (固定解除) します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 15bd882b5ca6f86eadd92ec2a62a44c60a660249
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516246"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537028"
 ---
-# <a name="delete-tab-from-channel"></a>チャネルからタブを削除します。
+# <a name="delete-tab-from-channel"></a>チャネルからタブを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-削除 (固定解除)[チーム](../resources/team.md)内で指定された[チャネル](../resources/channel.md)のタブです。 
+[チーム](../resources/team.md)内の指定された[チャネル](../resources/channel.md)からタブを削除 (固定解除) します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -26,7 +26,7 @@ ms.locfileid: "29516246"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

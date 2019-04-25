@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: c10372e332072eb69bfb605484695d950185e62c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930895"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534697"
 ---
 # <a name="refresh-session"></a>セッションを更新する
 
@@ -51,7 +51,7 @@ workbook-session-id: {session-id}
   "name": "refresh_excel_session"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/refreshSession
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/refreshSession
 Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
@@ -74,11 +74,3 @@ workbook-session-id ヘッダーが必要となることに注意してくださ
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
-      Request includes a non-standard header: workbook-session-id"
-  ]
-}-->

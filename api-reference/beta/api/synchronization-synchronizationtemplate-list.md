@@ -1,19 +1,19 @@
 ---
-title: 同期の既存のテンプレートを一覧表示します。
-description: 特定のアプリケーションまたはサービス ・ プリンシパルに関連付けられている同期テンプレートを一覧表示します。
+title: 既存の同期テンプレートを一覧表示する
+description: 特定のアプリケーションまたはサービスプリンシパルに関連付けられている同期テンプレートを一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: 309d1ddd6d702652b14e10895de10486a5d23783
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523632"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536972"
 ---
-# <a name="list-existing-synchronization-templates"></a>同期の既存のテンプレートを一覧表示します。
+# <a name="list-existing-synchronization-templates"></a>既存の同期テンプレートを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のアプリケーションまたはサービス ・ プリンシパルに関連付けられている同期テンプレートを一覧表示します。
+特定のアプリケーションまたはサービスプリンシパルに関連付けられている同期テンプレートを一覧表示します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,7 +43,7 @@ GET applications/{id}/synchronization/templates
 
 ### <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[同期テンプレート](../resources/synchronization-synchronizationtemplate.md)オブジェクトの acollection を返します。
 
 ### <a name="example"></a>例
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 ##### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

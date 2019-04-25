@@ -1,27 +1,27 @@
 ---
 title: アクセス許可
-description: '前にチームの Microsoft アプリケーションのカタログを発行したアプリケーションを更新します。 '
+description: '以前に Microsoft Teams アプリカタログに発行したアプリを更新します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2b9a16dc64557776eb6571ba3740249593684ba2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536854"
 ---
-# <a name="update-apps-published-to-your-organizations-app-catalog"></a>組織のアプリケーションのカタログに公開するアプリケーションを更新します。
+# <a name="update-apps-published-to-your-organizations-app-catalog"></a>組織のアプリカタログに発行されたアプリを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[アプリケーション](../resources/teamsapp.md)の更新プログラムは、以前マイクロソフト チーム アプリケーション カタログに公開します。 この API は、具体的には、組織のアプリケーション カタログ (テナント アプリケーション カタログ) に公開されたアプリケーションを更新します。 組織のアプリケーションのカタログを公開するには、指定`organization` [teamsCatalogApp](../resources/teamsapp.md)リソースで**distributionMethod**とします。
+以前に Microsoft Teams アプリカタログに発行した[アプリ](../resources/teamsapp.md)を更新します。 この API は、組織のアプリカタログ (テナントのアプリカタログ) に公開されたアプリを特に更新します。 組織のアプリカタログに発行するには、 `organization` teamsCatalogApp リソース**** の " [](../resources/teamsapp.md) " としてを指定します。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」を参照してください。
 
->**注:** グローバル管理者だけでは、この API を呼び出すことができます。
+>**注:** この API は、グローバル管理者のみが呼び出すことができます。
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)|
 |:----------------------------------     |:-------------|
@@ -44,9 +44,9 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>要求本文
 
-チーム Zip のマニフェスト ペイロード: チームのアプリケーションの zip 形式で圧縮ファイルは[、アプリケーション パッケージの作成を参照してください。](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+teams zip マニフェストペイロード: teams アプリケーション zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
 
->**注:** 更新するにはアプリケーションを参照するための[リストには、アプリケーションが公開されて](./teamsapp-list.md)呼び出しから返された ID を使用します。 Zip アプリケーション パッケージのマニフェストの ID を使用しません。
+>**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 zip アプリパッケージのマニフェストからの ID は使用しないでください。
 
 ## <a name="response"></a>応答
 
@@ -66,7 +66,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-チームのアプリケーションの zip ファイルは[アプリケーション パッケージ作成を参照していますください。](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+Teams アプリケーションの zip ファイルについては、 [「アプリパッケージの作成」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
 
 ### <a name="response"></a>応答
 

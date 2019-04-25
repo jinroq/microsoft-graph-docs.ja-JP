@@ -1,19 +1,19 @@
 ---
-title: Serviceprincipal を更新します。
-description: Serviceprincipal オブジェクトのプロパティを更新します。
+title: serviceprincipal を更新する
+description: serviceprincipal オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537531"
 ---
-# <a name="update-serviceprincipal"></a>Serviceprincipal を更新します。
+# <a name="update-serviceprincipal"></a>serviceprincipal を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Serviceprincipal オブジェクトのプロパティを更新します。
+serviceprincipal オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -21,7 +21,7 @@ Serviceprincipal オブジェクトのプロパティを更新します。
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Application.ReadWrite.OwnedBy、Application.ReadWrite.All |
+|アプリケーション | application.readwrite.ownedby、アプリケーションの読み取り/書き込み。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -41,25 +41,25 @@ PATCH /servicePrincipals/{id}
 |accountEnabled|Boolean|                サービス プリンシパルのアカウントが有効な場合は **true**。それ以外の場合は **false**。            |
 |appDisplayName|String|関連付けられているアプリケーションによって公開される表示名。|
 |appId|String|関連付けられたアプリケーションの一意の識別子 (その **appId** プロパティ)。|
-|appRoleAssignmentRequired|Boolean|Azure AD からアプリケーションにユーザー トークンまたはアクセス トークンが発行される前に、ユーザーまたはグループに対する **appRoleAssignment** が必要かどうかを指定します。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
-|appRoles|エンティティ|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 詳細についてはアプリケーション エンティティ**のノート**で**appRoles**プロパティの定義を参照してください: バージョン 1.5 が必要ですか、null を許容しません。            |
+|appRoleAssignmentRequired|Boolean|Azure AD からアプリケーションにユーザー トークンまたはアクセス トークンが発行される前に、ユーザーまたはグループに対する **appRoleAssignment** が必要かどうかを指定します。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
+|appRoles|approle|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 詳細については**** 、「アプリケーションエンティティ**メモ**: null 値ではなくバージョン1.5 またはそれ以降が必要」を参照してください。            |
 |displayName|String|サービス プリンシパルの表示名。|
 |errorUrl|String|            |
-|HomePage|String|関連付けられたアプリケーションのホーム ページの URL です。|
-|keyCredentials|keyCredential|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
+|HomePage|String|関連付けられているアプリケーションのホームページの URL。|
+|keyCredentials|keycredential|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
 |logoutUrl|String| Microsoft の承認サービスで、[フロント チャネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[バック チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウト プロトコルを使ってユーザーのログアウトするのに使う URL を指定します。 |
-|oauth2Permissions|oAuth2Permission|関連付けられているアプリケーションによって公開される OAuth 2.0 のアクセス許可。 さらに詳しい情報については、アプリケーション エンティティの **oauth2Permissions** プロパティの定義を参照してください。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
-|passwordCredentials|passwordCredential|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
-|preferredTokenSigningKeyThumbprint|String|内部使用専用に予約済みです。 このプロパティに書き込みしたり、依存したりしないでください。 将来のバージョンで削除される可能性があります。                            **メモ**: バージョン 1.5 以降が必要です。            |
-|publisherName|String|関連付けられたアプリケーションが指定されているテナントの表示名。|
+|oauth2Permissions|oAuth2Permission|関連付けられているアプリケーションによって公開される OAuth 2.0 のアクセス許可。 さらに詳しい情報については、アプリケーション エンティティの **oauth2Permissions** プロパティの定義を参照してください。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
+|passwordCredentials|passwordcredential|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
+|preferredTokenSigningKeyThumbprint|String|内部使用専用に予約済みです。 このプロパティに書き込みしたり、依存したりしないでください。 将来のバージョンで削除される可能性があります。                            **メモ**: バージョン1.5 以降が必要です。            |
+|publisherName|文字列型 (String)|関連付けられたアプリケーションが指定されているテナントの表示名。|
 |replyUrls|String|関連付けられたアプリケーションにサインインするためにユーザー トークンが送信される URL、または関連付けられたアプリケーションに対して OAuth 2.0 認証コードとアクセス トークンが送信されるリダイレクト URI。                            **注**: Null は許容されません。            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|関連するアプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://msdn.microsoft.com/library/azure/dn132633.aspx)」を参照してください。                            **メモ**: null を許容しない、 **any**演算子は、複数値を持つプロパティのフィルター式に必要な詳細については、[サポートされているクエリ、フィルター、およびページングのオプション](https://msdn.microsoft.com/library/azure/dn727074.aspx)を参照してください。            |
-|tags|String|                                        **注**: Null は許容されません。            |
+|servicePrincipalNames|String|関連するアプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://msdn.microsoft.com/library/azure/dn132633.aspx)」を参照してください。                            **メモ**: nullable ではない場合、複数値プロパティのフィルター式には**any**演算子が必要です。詳細については、「[サポートされているクエリ、フィルター、およびページングのオプション](https://msdn.microsoft.com/library/azure/dn727074.aspx)」を参照してください。            |
+|tags|文字列|                                        **注**: Null は許容されません。            |
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[servicePrincipal](../resources/serviceprincipal.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[serviceprincipal](../resources/serviceprincipal.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -1,19 +1,19 @@
 ---
-title: 契約書を取得する
-description: 契約オブジェクトのプロパティとリレーションシップを取得します。
+title: 契約の取得
+description: contract オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ba6ba3dd1e0dc631f5aeb61dd6d714e9d7a81bb6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566179"
 ---
-# <a name="get-contract"></a>契約書を取得する
+# <a name="get-contract"></a>契約の取得
 
-[契約](../resources/contract.md)オブジェクトのプロパティとリレーションシップを取得します。
+[contract](../resources/contract.md)オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -48,7 +48,7 @@ GET /contracts/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [Contract](../resources/contract.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Contract](../resources/contract.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

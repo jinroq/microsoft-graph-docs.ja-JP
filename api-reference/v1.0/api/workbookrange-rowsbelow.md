@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3b0f4add673d7bf6a8e976b037c39256e69be72d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534655"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -33,7 +33,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |count|Int32| 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。|
 
@@ -85,7 +85,7 @@ Content-length: 157
 }
 ```
 
-なしで呼び出された場合、 `count` 、パラメーター 1 つの行にこの関数の既定値です。
+`count`パラメーターを指定せずにこの関数を呼び出すと、既定で1つの行になります。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

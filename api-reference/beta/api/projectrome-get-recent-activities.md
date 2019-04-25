@@ -1,20 +1,18 @@
 ---
-title: ユーザーの最近の活動を取得します。
-description: " API です。 サービスはの最も最近の historyItems では、クエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。"
+title: 最近のユーザーアクティビティを取得する
+description: " トレース. サービスは最新の履歴項目を照会してから、関連するアクティビティを抽出します。 アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。 これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。 また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。"
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538449"
 ---
-# <a name="get-recent-user-activities"></a>ユーザーの最近の活動を取得します。
+# <a name="get-recent-user-activities"></a>最近のユーザーアクティビティを取得する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-特定のユーザーの最近の活動を取得します。 この OData の関数では、「最近使用した」の API と同様に動作して含まれているいくつか既定動作があります。 サービスは、最新の[historyItems](../resources/projectrome-historyitem.md)のクエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
+特定のユーザーの最近のアクティビティを取得します。 この OData 関数には、"最近使用された" API のように動作するようにするための既定の動作がいくつか含まれています。 サービスは最新の[履歴項目](../resources/projectrome-historyitem.md)を照会してから、関連するアクティビティを抽出します。 アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。 これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。 また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -34,15 +32,15 @@ ms.locfileid: "29643959"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするためにいくつかの[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリ パラメーターがサポートされています。
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリパラメーターがサポートされています。
 
-- $ は、 **historyItems**のナビゲーション プロパティを展開します。
+- **履歴項目**ナビゲーションプロパティの $expand。
 - ページ間でのアイテムの最大数を制限する $top。
-- **アクティビティ**または**historyItems**、展開されている場合のいずれかの**lastModifiedDateTime**プロパティで $filter。
+- **lastModifiedDateTime**プロパティを使用して、**アクティビティ**または**履歴アイテム**(展開されている場合) のどちらかを $filter します。
 
-URL エンコーディングを使用してクエリがサポートされているいくつかの例を次に示します。
+次に、URL エンコードでサポートされているクエリの例をいくつか示します。
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -60,11 +58,11 @@ URL エンコーディングを使用してクエリがサポートされてい�
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体を指定することはしません。
+要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、アプリケーションのユーザーの最近の活動を使用して応答コード。
+成功した場合、このメソッド`200 OK`は、アプリケーションのユーザーの最近のアクティビティで応答コードを返します。
 
 ## <a name="example"></a>例
 
@@ -73,12 +71,12 @@ URL エンコーディングを使用してクエリがサポートされてい�
 要求の例を次に示します。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_recent_activities"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/activities/recent
+GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
 
 ##### <a name="response"></a>応答
@@ -86,9 +84,9 @@ GET https://graph.microsoft.com/beta/me/activities/recent
 応答の例を次に示します。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "@odata.type": "Collection(microsoft.graph.userActivity)"
 } -->
 
 ```http
@@ -96,10 +94,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.userActivity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -109,7 +107,7 @@ Content-Type: application/json
             "attribution": {
               "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
+              "addImageQuery": false,
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
@@ -143,15 +141,24 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-get-recent-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Error: get_recent_activities/container/contentInfo:
+      Property 'contentInfo' is of type Custom but has no custom members.",
+
+    "Warning: get_recent_activities/container/visualElements/content/$schema:
+      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/body:
+      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/type:
+      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
+
+  ],
+  "tocPath": ""
+}-->

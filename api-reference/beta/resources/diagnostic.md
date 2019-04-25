@@ -1,19 +1,19 @@
 ---
-title: 診断のリソースの種類
-description: エラーまたは OneNote の操作のための警告について説明します。
+title: 診断リソースの種類
+description: OneNote の操作に関するエラーまたは警告に関する情報。
 localization_priority: Normal
 ms.openlocfilehash: ef495374f84e0df887198b38a5c8488987a59343
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535215"
 ---
-# <a name="diagnostic-resource-type"></a>診断のリソースの種類
+# <a name="diagnostic-resource-type"></a>診断リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-エラーまたは OneNote の操作のための警告について説明します。
+OneNote の操作に関するエラーまたは警告に関する情報。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -37,8 +37,8 @@ ms.locfileid: "29509505"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|message|String|エラーまたは警告の原因となった状態を示すメッセージです。|
-|url|文字列型 (String)|この問題は、ドキュメントをリンクします。|
+|メッセージ​​|String|エラーまたは警告を発生させた条件を説明するメッセージ。|
+|url|String|この問題に関するドキュメントへのリンク。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

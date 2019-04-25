@@ -1,26 +1,26 @@
 ---
-title: Privilegedapproval を更新します。
-description: Privilegedapproval オブジェクトのプロパティを更新します。
+title: privilegedapproval の更新
+description: privilegedapproval オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: cb108ca35b07138f84a9fd969bfe7c7241e9672e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524899"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538678"
 ---
-# <a name="update-privilegedapproval"></a>Privilegedapproval を更新します。
+# <a name="update-privilegedapproval"></a>privilegedapproval の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Privilegedapproval オブジェクトのプロパティを更新します。
+privilegedapproval オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -39,10 +39,10 @@ PATCH /privilegedApproval/<id>
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|approvalDuration|Duration||
-|approvalState|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
+|approvalduration|期間||
+|approvalstate|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
 |approvalType|String||
-|approverReason|String||
+|approverreason|String||
 |endDateTime|DateTimeOffset||
 |requestorReason|String||
 |roleId|String||
@@ -51,9 +51,9 @@ PATCH /privilegedApproval/<id>
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。
+成功した場合、このメソッド`204 No Content`は応答コードを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

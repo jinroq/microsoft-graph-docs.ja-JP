@@ -1,25 +1,25 @@
 ---
 title: リスト privilegedRoles
-description: PrivilegedRole オブジェクトのリストを取得します。
+description: privilegedRole オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: d954cedbaf4b164fe0649a3565ea0212d148c322
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538590"
 ---
 # <a name="list-privilegedroles"></a>リスト privilegedRoles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PrivilegedRole](../resources/privilegedrole.md)オブジェクトのリストを取得します。
+[privilegedRole](../resources/privilegedrole.md)オブジェクトのリストを取得します。
 
-クエリの結果をフィルターするには、標準の OData を使用して、 ``$filter`` 、Uri で表現します。
+クエリの結果をフィルター処理するには、uri 内``$filter``の標準の OData 式を使用します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは、次のロールのいずれかを持つ必要があります:_ロールの権限を持つ管理者_、_グローバル管理者_、_セキュリティ管理者_、または_セキュリティのリーダー_です。
+リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。
  
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -46,9 +46,9 @@ GET /privilegedRoles
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[privilegedRole](../resources/privilegedrole.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRole](../resources/privilegedrole.md)オブジェクトのコレクションを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

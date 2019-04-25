@@ -1,26 +1,26 @@
 ---
-title: 呼び出しでの IVR シナリオ
-description: Graph で呼び出し元の Api をサポートする対話型音声応答 (IVR) のシナリオは、次のように。
+title: 通話における IVR シナリオ
+description: 次に示す対話式音声応答 (IVR) シナリオでは、Microsoft Graph の呼び出し元 api がサポートしています。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: aed30bc5ad109dc3f21d381f4d6b04e087a779a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535569"
 ---
-# <a name="ivr-scenarios-in-calls"></a>呼び出しでの IVR シナリオ
+# <a name="ivr-scenarios-in-calls"></a>通話における IVR シナリオ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Graph で呼び出し元の Api をサポートする対話型音声応答 (IVR) のシナリオは、次のように。
+次に示す対話式音声応答 (IVR) シナリオでは、Microsoft Graph の呼び出し元 api がサポートしています。
 
-- オーディオ プロンプトを - たとえば、顧客サービス エージェントのキューに通話が開始するときに再生しています。
-- 記録などのオプションを使用してメッセージを耳にした後に通常は、呼び出し元のオーディオを記録します。
-- 購読トーン - たとえば、調、呼び出し元を選択すると、通常のオーディオ プロンプトを聞く後にどのような DTMF を知りたい場合。
-- プロセスである PlayPrompt またはレコードの操作をキャンセルする場合たとえば、メディア処理をキャンセルします。
+- 音声ガイダンスを再生する-たとえば、カスタマーサービスエージェントのキューに通話が配置された場合です。
+- record-たとえば、発信者の音声を録音する場合、通常は、オプションを含むプロンプトが表示された後に録音します。
+- [トーン] (たとえば、発信者が選択した DTMF トーンを知る必要がある場合)、通常は音声プロンプトを聞きます。
+- メディア処理をキャンセルします。たとえば、再生プロンプトや、処理中の可能性があるレコード操作を取り消す場合です。
 <!--
 {
   "type": "#page.annotation",

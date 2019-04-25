@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787877"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533263"
 ---
 # <a name="update-deponboardingsetting"></a>deponboardingsetting の更新
 
@@ -56,13 +56,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|サービスが利用されたとき。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune でサービスが最後に使用されたとき|
 |lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
-|shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
+|shareTokenWithSchoolDataSyncService|ブール値|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
-|tokenName|文字列|Dep トークンのフレンドリ名|
+|tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
-|dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|dataSharingConsentGranted|ブール値|Apple Dep サービスでのデータ共有に対して付与される同意|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 

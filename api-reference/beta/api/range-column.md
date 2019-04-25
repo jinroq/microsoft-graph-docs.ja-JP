@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 04724e43b5e26d89dcefc71c07a23051a6ed9719
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538491"
 ---
 # <a name="range-column"></a>範囲:列
 
@@ -44,7 +44,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|列|number|取得する範囲の列番号。0 を起点とする番号になります。|
+|column|number|取得する範囲の列番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

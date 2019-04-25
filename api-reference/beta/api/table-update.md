@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2b78603a261145e2047b5e16175143a3b3c591e1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641744"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536769"
 ---
 # <a name="update-table"></a>テーブルを更新する
 
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |name|string|テーブルの名前。|
 |showHeaders|ブール値|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|
 |showTotals|ブール値|集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。|
-|style|文字列|テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
+|style|string|テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
 
 ## <a name="response"></a>応答
 

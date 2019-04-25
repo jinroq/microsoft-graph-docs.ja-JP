@@ -1,15 +1,15 @@
 ---
-title: アドイン リソースの種類
+title: addIn リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535793"
 ---
-# <a name="addin-resource-type"></a>アドイン リソースの種類
+# <a name="addin-resource-type"></a>addIn リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "29643721"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|guid||
-|プロパティ|[keyValue](keyvalue.md)コレクション||
+|プロパティ|[keyvalue](keyvalue.md) コレクション||
 |type|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

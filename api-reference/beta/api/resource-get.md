@@ -1,28 +1,26 @@
 ---
 title: リソースを取得する
-description: ファイルまたは画像のリソース オブジェクトのバイナリ データを取得します。
+description: ファイルまたはイメージリソースオブジェクトのバイナリデータを取得します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 60cacbe737a475183a5d08457c149c6cb631c63f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509183"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537772"
 ---
 # <a name="get-resource"></a>リソースを取得する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-ファイルまたは画像の[リソース](../resources/resource.md) オブジェクトのバイナリ データを取得します。
+ファイルまたはイメージ[リソース](../resources/resource.md)オブジェクトのバイナリデータを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
-|委任 (個人用 Microsoft アカウント) | Notes.Read、Notes.ReadWrite    |
+|委任 (職場または学校のアカウント) | メモ読み取り、メモ書き込み、メモ (すべて)、メモ (すべて)    |
+|委任 (個人用 Microsoft アカウント) | メモ. 読み取り、メモ書き込み    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -44,9 +42,9 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で画像またはファイルのバイナリ データを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で画像またはファイルバイナリデータを返します。
 
-注:残りのページのコンテンツと同様、画像を取得するには承認が必要となるため、ブラウザーでは画像は直接表示されません。
+注: 画像はブラウザーで直接表示されません。これは、残りのページコンテンツのように、それらを取得するために承認を必要とするからです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -55,37 +53,28 @@ GET /sites/{id}/onenote/resources/{id}/content
   "name": "get_resource"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
+GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "Edm.Stream"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 
 ...binary data...
 ```
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.onenoteResource"
-} -->
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/resource-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

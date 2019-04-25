@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 4967fd5b84f1329836b6a3e3e5dc7ba7b08ee19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520621"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502114"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 
@@ -40,12 +40,14 @@ GET /groups
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。<!-- { "blockType": "ignored" } -->
+Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-次の例のように、OData クエリ オプション `$orderby` を使用して、組織内のグループを **displayName** 値で並べ替えることができます。<!-- { "blockType": "ignored" } -->
+OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```

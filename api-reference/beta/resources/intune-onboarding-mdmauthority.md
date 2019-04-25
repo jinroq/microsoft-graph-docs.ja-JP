@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74a73ef71035594e3d9600499791525fe67c9c71
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774702"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566522"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31774702"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明|
-|intune|1-d|Intune|
-|2012|pbm-2|2012|
-|office|1/3|office|
+|intune|1 |Intune|
+|2012|2 |2012|
+|office|3 |office|
 
 
 

@@ -1,40 +1,38 @@
 ---
 title: domainDnsSrvRecord リソースの種類
-description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。DomainDnsRecord エンティティから継承されます。
+description: テナント内の特定のドメインの DNS ゾーンファイルに追加される SRV レコードを表します。 domaindnsrecord エンティティから継承されます。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535026"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
+テナント内の特定のドメインの DNS ゾーンファイルに追加される SRV レコードを表します。 [domaindnsrecord](domaindnsrecord.md)エンティティから継承されます。
 
 ## <a name="methods"></a>メソッド
-このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
+このリソースへの直接クエリはサポートされていません。 ドメインサービスレコードを照会する方法については、「 [domain](domain.md) 」のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
-|isOptional|Boolean| False の場合、SRV レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|文字列| DNS ホストで SRV レコードの *name* プロパティを構成する場合に使用される値です。 |
-|nameTarget|String| DNS ホストで SRV レコードの *Target* プロパティを構成する場合に使用する値です。 |
-|port|Int32| DNS ホストで SRV レコードの *port* プロパティを構成する場合に使用する値です。 |
-|priority|Int32| DNS ホストで SRV レコードの *priority* プロパティを構成する場合に使用する値です。 |
-|protocol|String| DNS ホストで SRV レコードの *protocol* プロパティを構成する場合に使用する値です。 |
-|recordType|String|  DNS レコードの種類。この値は常に *Srv* です。キー |
-|service|String| DNS ホストで SRV レコードの *service* プロパティを構成する場合に使用する値です。 |
-|supportedService|String| Microsoft オンライン サービスまたはこの SRV レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
-|ttl|Int32| DNS ホストで SRV レコードの *Time to Live (TTL)* のプロパティを構成するときに使用する値です。null 許容ではありません |
-|weight|Int32| DNS ホストで SRV レコードの *weight* プロパティを構成する場合に使用する値です。 |
+|id|String| このエンティティに割り当てられている一意の識別子。 null 許容ではありません。読み取り専用です。|
+|isoptional|ブール値| false の場合、SRV レコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
+|label|String| DNS ホストで SRV レコードの*name*プロパティを構成する場合に使用される値です。 |
+|nametarget|String| DNS ホストで SRV レコードの*Target*プロパティを構成する場合に使用する値です。 |
+|ポート|Int32| DNS ホストで SRV レコードの*port*プロパティを構成する場合に使用する値です。 |
+|priority|Int32| DNS ホストで SRV レコードの*priority*プロパティを構成する場合に使用する値です。 |
+|プロトコール|String| DNS ホストで SRV レコードの*protocol*プロパティを構成する場合に使用する値です。 |
+|recordType|String|  DNS レコードの種類。 値は常に*Srv*です。 キー |
+|service|String| DNS ホストで SRV レコードの*service*プロパティを構成する場合に使用する値です。 |
+|supportedservice|String| この SRV レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune* |
+|ttl|Int32| DNS ホストで SRV レコードの*タイムツーリブ (ttl)* プロパティを構成する場合に使用する値です。 null 許容ではない |
+|weight|Int32| DNS ホストで SRV レコードの*weight*プロパティを構成する場合に使用する値です。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -45,6 +43,7 @@ ms.locfileid: "29524479"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -53,7 +52,6 @@ ms.locfileid: "29524479"
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -72,15 +70,10 @@ ms.locfileid: "29524479"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnssrvrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

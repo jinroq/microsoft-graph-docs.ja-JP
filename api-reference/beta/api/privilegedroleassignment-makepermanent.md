@@ -1,26 +1,26 @@
 ---
-title: 'privilegedRoleAssignment: makePermanent'
-description: として永続的な役割の割り当てを確認します。
+title: 'privilegedRoleAssignment: makepermanent'
+description: 役割の割り当てを永続的に設定します。
 localization_priority: Normal
 ms.openlocfilehash: 9c6334662cf8496262b49b14ceb3f51f7a4f8dbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511395"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538687"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
+# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makepermanent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-として永続的な役割の割り当てを確認します。
+役割の割り当てを永続的に設定します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-テナントは、PIM に登録する必要があります。 それ以外の場合、HTTP 403 アクセス不可のエラーが返されます。
+テナントは PIM に登録する必要があります。 それ以外の場合、HTTP 403 禁止のエラーが返されます。
 
-リクエスターでは、_ロールの権限を持つ管理者_のロールを持っている必要があります。 
+リクエスターは、特権の_役割管理者_の役割を持っている必要があります。 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|理由|string|省略可能。 この呼び出しを実行する理由です。|
-|ticketNumber|string|省略可能。 このアクションに関連付けられているチケットの数です。|
-|ticketSystem|string|省略可能。 チケット システムです。|
+|したがっ|string|省略可能。 この呼び出しを行う理由。|
+|ticketNumber|string|省略可能。 このアクションに関連付けられているチケット番号。|
+|ticketSystem|string|省略可能。 チケットシステム。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedRoleAssignment](../resources/privilegedroleassignment.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

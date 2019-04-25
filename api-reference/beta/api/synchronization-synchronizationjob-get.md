@@ -1,19 +1,19 @@
 ---
-title: SynchronizationJob を取得します。
-description: 既存の同期ジョブおよびそのプロパティを取得します。
+title: 同期ジョブを取得する
+description: 既存の同期ジョブとそのプロパティを取得します。
 localization_priority: Normal
 ms.openlocfilehash: bb7c61192b165e5d05c0bb3434488ed2ff7ee8c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521692"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537182"
 ---
-# <a name="get-synchronizationjob"></a>SynchronizationJob を取得します。
+# <a name="get-synchronizationjob"></a>同期ジョブを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の同期ジョブおよびそのプロパティを取得します。
+既存の同期ジョブとそのプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>応答
 
-成功した場合に返されます、`200 OK`応答本体には、 [synchronizationJob](../resources/synchronization-synchronizationjob.md)に対応します。
+成功した場合は`200 OK` 、応答本文で[同期ジョブ](../resources/synchronization-synchronizationjob.md)を伴う応答を返します。
 
 ## <a name="example"></a>例
 

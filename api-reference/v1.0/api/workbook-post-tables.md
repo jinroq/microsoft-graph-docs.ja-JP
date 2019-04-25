@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 220c0b1e9b21c609009616d75567c0469b276cd4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534739"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -40,12 +40,12 @@ POST /workbook/tables/{table-id}/add
 
 | パラメーター           | 型      |説明|
 |:---------------|:----------|:----------|
-| Address  | 文字列| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
+| Address  | string| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[WorkbookTable](../resources/table.md)オブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[WorkbookTable](../resources/table.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

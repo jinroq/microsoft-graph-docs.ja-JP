@@ -1,19 +1,19 @@
 ---
-title: SynchronizationTemplate を作成します。
-description: 特定のアプリケーション用の新しい同期テンプレートを作成します。
+title: 同期テンプレートの作成
+description: 指定したアプリケーションの新しい同期テンプレートを作成します。
 localization_priority: Normal
 ms.openlocfilehash: ce519b57766956b10d05b6b3745ca16f609b597c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509890"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536965"
 ---
-# <a name="create-synchronizationtemplate"></a>SynchronizationTemplate を作成します。
+# <a name="create-synchronizationtemplate"></a>同期テンプレートの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のアプリケーション用の新しい同期テンプレートを作成します。
+指定したアプリケーションの新しい同期テンプレートを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,11 +38,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)オブジェクトを作成するを指定します。 `id`、`applicationId`と`factoryTag`のプロパティが必要です。 いいえ`schema`に、テンプレートを使用して既定のスキーマが関連付けられているが、`factoryTag`プロパティが使われます。
+要求本文で、作成する[同期テンプレート](../resources/synchronization-synchronizationtemplate.md)オブジェクトを指定します。 `id`、 `applicationId`および`factoryTag`プロパティは必須です。 テンプレートに`schema`何も指定されていない場合は、 `factoryTag`プロパティに関連付けられている既定のスキーマが使用されます。
 
 ### <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[同期テンプレート](../resources/synchronization-synchronizationtemplate.md)オブジェクトを返します。
 
 ### <a name="example"></a>例
 
@@ -65,7 +65,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

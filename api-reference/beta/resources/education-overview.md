@@ -1,23 +1,23 @@
 ---
 title: Microsoft Graph での教育機関 API の操作
-description: 教育 graph Api では、Office 365 のリソースとは、学校、学生、教師、クラス、登録、および割り当てを含む、教育のシナリオに関連する情報を使用してデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
+description: Microsoft Graph の教育機関 api は、学校、学生、教師、クラス、登録、割り当てなどの教育シナリオに関連する情報を使用して、Office 365 のリソースとデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534872"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Microsoft Graph での教育機関 API の操作
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-教育 graph Api では、Office 365 のリソースとは、学校、学生、教師、クラス、登録、および割り当てを含む、教育のシナリオに関連する情報を使用してデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
+Microsoft Graph の教育機関 api は、学校、学生、教師、クラス、登録、割り当てなどの教育シナリオに関連する情報を使用して、Office 365 のリソースとデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
 
-教育には rostering リソースおよびマイクロソフトのチームで rostering および割り当てのサービスと対話するのに使用できる割り当てリソースに Api が含まれます。 学校名簿を管理し、受講生受講者の割り当てを自動化するのには、これらのリソースを使用できます。
+教育機関 api には、Microsoft Teams の名簿および assignment サービスと対話するために使用できる名簿リソースと割り当てリソースが含まれています。 これらのリソースを使用して、学校の名簿を管理し、学生の課題を自動化することができます。
 
 ## <a name="authorization"></a>認証
 
@@ -27,7 +27,7 @@ Microsoft Graph で教育機関 API を呼び出すために、アプリはア�
 
 Microsoft Graph の教育機関 API と統合されたアプリを展開するには、まず学校の IT 管理者が、アプリが要求するアクセス許可に同意する必要があります。 アクセス許可が変更にならない限り、この同意は一度だけ与えられる必要があります。 管理者が同意した後、アプリはテナント内のすべてのユーザーに対してプロビジョニングされます。
 
-同意ダイアログ ボックスをトリガーするには、次の REST 呼び出しを使用します。
+同意ダイアログボックスをトリガーするには、次の REST 呼び出しを使用します。
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
@@ -75,56 +75,56 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 <!-- Should you list delete scenarios here as well? -->
 
-## <a name="assignments"></a>割り当て 
+## <a name="assignments"></a>課題 
 
-割り当てに関連する教育の Api を使用するにはマイクロソフトのチームでの割り当てとを統合します。 教育を Office 365 で、マイクロソフトのチームでは、Api では、同じ教育に基づいており、ユース ケースでは、Api で行うことができます。 アプリでは、これらの Api を使用して、割り当てのライフ サイクル全体の割り当てと対話します。 
+割り当てに関連する教育機関 api を使用して、Microsoft Teams の割り当てと統合することができます。 教育機関向け office 365 の Microsoft Teams は同じ教育機関 api に基づいており、api を使用してできることについてのユースケースが提供されています。 アプリでは、これらの api を使用して、割り当てライフサイクルを通じて割り当てを操作できます。 
 
-割り当て Api は、次のキーのリソースを提供します。
+割り当て api は、次の主要なリソースを提供します。
 
-- [educationAssignment](educationassignment.md) - 割り当て API の主要なオブジェクトです。 タスクや、研究の一部として、クラスの受講生受講者またはチームのメンバーに割り当てられた作業時間の単位を表します。
-- [educationSubmission](educationsubmission.md) ・ リソースを表しますが、個人 (またはグループ) は、割り当てと関連付けられているグレードとその割り当てのためのフィードバックを送信します。
-- [educationResource](educationresource.md) - 学習オブジェクトを表しますは、割り当てられている、送信されています。 **EducationResource**では、 **educationAssignment**や、 **educationSubmission**に関連付けられています。
+- [educationAssignment](educationassignment.md) -割り当て API のコアオブジェクト。 学生またはチームのメンバーに割り当てられた、学習の一部としてクラス内の1つまたは複数の作業の単位を表します。
+- [educationSubmission](educationsubmission.md) -個人 (またはグループ) が割り当てに関して提出するリソース、およびその割り当てに関する関連する成績とフィードバックを表します。
+- [educationResource](educationresource.md) -割り当てまたは送信される learning オブジェクトを表します。 **educationResource**は、 **educationAssignment**または**educationSubmission**に関連付けられています。
 
-割り当て Api では、次のシナリオをサポートします。
+割り当て api は、次のシナリオをサポートします。
 
-- [割り当てを作成します。](../api/educationclass-post-assignments.md)
-- [割り当てを発行します。](../api/educationassignment-publish.md)
-- [割り当てリソースを作成します。](../api/educationassignment-post-resources.md)
-- [送信リソースを作成します。](../api/educationsubmission-post-resources.md)
-- [割り当てを送信します。](../api/educationsubmission-submit.md) 
-- [割り当てを unsubmit します。](../api/educationsubmission-unsubmit.md)   
-- [受講者の成績とフィードバックを返す](../api/educationsubmission-return.md) 
-- [割り当ての詳細を取得します。](../api/educationuser-list-assignments.md)
+- [割り当てを作成する](../api/educationclass-post-assignments.md)
+- [割り当てを発行する](../api/educationassignment-publish.md)
+- [割り当てリソースを作成する](../api/educationassignment-post-resources.md)
+- [送信リソースの作成](../api/educationsubmission-post-resources.md)
+- [割り当ての送信](../api/educationsubmission-submit.md) 
+- [未送信割り当て](../api/educationsubmission-unsubmit.md)   
+- [成績を取得し、学生にフィードバックを送る](../api/educationsubmission-return.md) 
+- [割り当ての詳細を取得する](../api/educationuser-list-assignments.md)
 
-割り当てに関連する教育の Api のいくつかの一般的な使用例を次に示します。
+割り当てに関連する教育機関 api の一般的なユースケースを次に示します。
 
-|使用例|説明|関連項目|
+|ユース ケース|説明|関連項目|
 |:-------|:----------|:-------|
-|割り当てを作成します|外部システムでは、クラスの割り当てを作成でき、割り当てのリソースに接続することができます。|[割り当てを作成します。](../api/educationassignment-post-resources.md)|
-|割り当て情報を読み取る|分析アプリケーションでは、割り当てと、受講生受講者の提出書類、日付や成績などに関する情報を取得できます。|[割り当てを取得します。](../api/educationassignment-get.md)|
-|受講者の提出書類を追跡します。|先生のダッシュ ボードに焼き付けることが必要な受講者からの提出書類の数を表示するアプリを提供します。|[送信リソース](educationsubmission.md)|
+|割り当ての作成|外部システムでは、クラスの割り当てを作成し、リソースを割り当てに割り当てることができます。|[割り当てを作成する](../api/educationassignment-post-resources.md)|
+|割り当て情報の読み取り|分析アプリケーションは、日付や成績など、割り当てと学生の送信に関する情報を取得できます。|[割り当てを取得する](../api/educationassignment-get.md)|
+|受講者の送信を追跡する|アプリは教師ダッシュボードを提供することができます。これは、学生からの、採点する必要がある送信の数を示します。|[提出リソース](educationsubmission.md)|
 
-## <a name="school-data-sync-management"></a>学校のデータの同期の管理
+## <a name="school-data-sync-management"></a>School data sync management
 
-[学校のデータの同期](https://sds.microsoft.com/)は、インポートして、Azure Active Directory (AD の Azure) と Office 365 の学生情報システムからの名簿データの同期のプロセスを自動化するのに役立ちます。 CSV ファイルまたはサポートされている API の SIS のコネクタのいずれかから同期を設定するのには、Microsoft Graph で学校のデータの同期管理の Api を使用できます。
+[School data Sync](https://sds.microsoft.com/)は、azure Active Directory (azure AD) と Office 365 を使用して、学生情報システムから名簿データをインポートおよび同期するプロセスを自動化するのに便利です。 Microsoft Graph の school data sync 管理 api を使用して、CSV ファイルまたはサポートされている SIS API コネクタから同期をセットアップすることができます。
 
-学校のデータは、管理 Api のサポートを次のシナリオを同期させます。
+school data sync 管理 api は、次のシナリオをサポートします。
 
-- [同期プロファイルのリスト](../api/educationsynchronizationprofile-list.md)
-- [同期プロファイルを取得します。](../api/educationsynchronizationprofile-get.md)
-- [同期プロファイルを作成します。](../api/educationsynchronizationprofile-post.md)
-- [同期プロファイルを削除します。](../api/educationsynchronizationprofile-delete.md)
-- [進行中の同期を一時停止します。](../api/educationsynchronizationprofile-pause.md)
-- [一時停止中の同期を再開します。](../api/educationsynchronizationprofile-resume.md)
-- [同期をリセットします。](../api/educationsynchronizationprofile-reset.md)
-- [アップロードされたファイルの同期を開始します。](../api/educationsynchronizationprofile-start.md) 
-- [アップロード先の URL を取得します。](../api/educationsynchronizationprofile-uploadurl.md)
-- [同期のステータスを取得します。](../api/educationsynchronizationprofilestatus-get.md)
-- [同期エラーが発生をします。](../api/educationsynchronizationerrors-get.md)
+- [同期プロファイルの一覧表示](../api/educationsynchronizationprofile-list.md)
+- [同期プロファイルを取得する](../api/educationsynchronizationprofile-get.md)
+- [同期プロファイルの作成](../api/educationsynchronizationprofile-post.md)
+- [同期プロファイルの削除](../api/educationsynchronizationprofile-delete.md)
+- [進行中の同期を一時停止する](../api/educationsynchronizationprofile-pause.md)
+- [一時停止した同期を再開する](../api/educationsynchronizationprofile-resume.md)
+- [同期をリセットする](../api/educationsynchronizationprofile-reset.md)
+- [アップロードしたファイルの同期を開始する](../api/educationsynchronizationprofile-start.md) 
+- [アップロード URL を取得する](../api/educationsynchronizationprofile-uploadurl.md)
+- [同期の状態を取得する](../api/educationsynchronizationprofilestatus-get.md)
+- [同期エラーを取得する](../api/educationsynchronizationerrors-get.md)
 
 
 ## <a name="next-steps"></a>次の手順
-Graph 教育 Api を使用すると、受講生受講者の割り当てと、学校の名簿にアクセスするための教育ソリューションを構築できます。 詳細情報
+Microsoft Graph エデュケーション api を使用して、学生の課題と学校の名簿にアクセスする教育ソリューションを構築します。 詳細情報
 
 - 自分のシナリオに最も役立つリソースと方法を検討する。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試す。

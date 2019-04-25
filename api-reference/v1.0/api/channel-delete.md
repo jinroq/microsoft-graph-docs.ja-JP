@@ -1,25 +1,25 @@
 ---
-title: チャネルを削除します。
+title: チャネルを削除する
 description: チャネルを削除します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 846aa0b00fc07a0a25e3eb3aae07bcccdbd936ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939680"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565598"
 ---
-# <a name="delete-channel"></a>チャネルを削除します。
+# <a name="delete-channel"></a>チャネルを削除する
 
 
 
 [チャネル](../resources/channel.md)を削除します。
 
-> **注**: アプリケーションのアクセス許可とこの API に関する既知の問題があります。 詳細についてはの[既知の問題点のリスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には、既知の問題があります。 詳細については、[既知の問題リスト](/graph/known-issues#application-permissions)を参照してください。
 
-> **注**: 削除されたチャネルのデータは引き続きチーム所有者が削除された回復のチャネルを許可するに数週間のために保存します。 その間、同一の表示名の新しいチャネルを作成できません可能性があります。
+> **注**: 削除されたチャネル内のデータは、チーム所有者が削除されたチャネルを回復できるように、数週間にわたって引き続き保存されます。 その間、同じ displayName で新しいチャネルを作成することはできません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -30,7 +30,7 @@ ms.locfileid: "27939680"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

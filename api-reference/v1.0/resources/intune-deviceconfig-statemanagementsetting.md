@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5af70df2d1a873a670d36f02e4da9005a4b6b866
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261664"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534522"
 ---
 # <a name="statemanagementsetting-enum-type"></a>statemanagementsetting 列挙型
 
@@ -21,8 +21,8 @@ ms.locfileid: "30261664"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|構成されていません。|
-|ブロック|1-d|ブロック.|
-|れる|pbm-2|れる.|
+|ブロック|1 |ブロック.|
+|れる|2 |れる.|
 
 
 

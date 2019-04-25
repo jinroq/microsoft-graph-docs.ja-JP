@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationJob: 一時停止'
-description: 同期を一時的に停止します。 ジョブの状態を含むすべての進捗が保持され、ジョブが開始の呼び出しが行われる場合停止した位置から続行されます。
+title: '同期ジョブ: 一時停止'
+description: 一時的に同期を停止します。 ジョブの状態を含むすべての進行状況が持続され、開始呼び出しが行われたときにジョブは中断したところから続行されます。
 localization_priority: Normal
 ms.openlocfilehash: 9f8cac05511b5efd17234ccf16b763999418bf2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537176"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob: 一時停止
+# <a name="synchronizationjob-pause"></a>同期ジョブ: 一時停止
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期を一時的に停止します。 ジョブの状態を含むすべての進捗が保持され、ジョブが[起動](../api/synchronization-synchronizationjob-start.md)の呼び出しが行われる場合停止した位置から続行されます。
+一時的に同期を停止します。 ジョブの状態を含むすべての進行状況が持続され、[開始](../api/synchronization-synchronizationjob-start.md)呼び出しが行われたときにジョブは中断したところから続行されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`204 No Content`応答します。 応答本体には何もは返されません。
+成功した場合は`204 No Content` 、応答を返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 

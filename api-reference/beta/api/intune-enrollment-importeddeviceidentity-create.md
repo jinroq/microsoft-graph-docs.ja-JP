@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0be79099f755963eb039bc4f280200fe346e99ec
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532899"
 ---
 # <a name="create-importeddeviceidentity"></a>importedDeviceIdentity を作成する
 
@@ -51,14 +51,14 @@ POST /deviceManagement/importedDeviceIdentities
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|インポートされたデバイス id の id|
-|importedDeviceIdentifier|文字列|インポートされたデバイス識別子|
+|importedDeviceIdentifier|String|インポートされたデバイス識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイス id の種類。 使用可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最終更新日時|
 |createdDateTime|DateTimeOffset|デバイスの日時の作成日時|
 |lastContactedDateTime|DateTimeOffset|デバイスの最終連絡日時|
-|説明|String|デバイスの説明|
+|description|String|デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
-|platform|[platform](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
+|platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
 
 
 

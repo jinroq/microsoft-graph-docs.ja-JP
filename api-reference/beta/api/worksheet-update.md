@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535788"
 ---
 # <a name="update-worksheet"></a>ワークシートを更新する
 
@@ -41,9 +41,9 @@ PATCH /workbook/worksheets/{id|name}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|ワークシートの表示名。|
+|name|string|ワークシートの表示名。|
 |position|int|0 を起点とした、ブック内のワークシートの位置。|
-|visibility|文字列|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
+|visibility|string|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
 
 ## <a name="response"></a>応答
 

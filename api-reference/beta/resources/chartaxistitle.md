@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535446"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 
@@ -23,15 +23,15 @@ ms.locfileid: "29644085"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
+|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|text|文字列|軸タイトルを表します。|
+|text|string|軸タイトルを表します。|
 |visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|

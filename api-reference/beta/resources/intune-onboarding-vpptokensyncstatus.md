@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 59653a8df6c0fd08ffd0d8aa3081d58e56447a95
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566375"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vpptokensyncstatus 列挙型
 
@@ -22,10 +22,10 @@ Apple volume purchase program のトークンに関連付けられている同�
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|既定の状態です。|
-|inProgress|1-d|前回の同期が進行中です。|
-|せ|pbm-2|前回の同期が正常に完了しました。|
-|フェール|1/3|前回の同期に失敗しました。|
+|なし|.0|既定の状態です。|
+|inProgress|1 |前回の同期が進行中です。|
+|せ|2 |前回の同期が正常に完了しました。|
+|フェール|3 |前回の同期に失敗しました。|
 
 
 

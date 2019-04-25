@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e556fd8619ef16b4212711511592de2b26e4772a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534774"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy リソース タイプ
 
@@ -28,10 +28,10 @@ ms.locfileid: "30255613"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|String|デバイス構成について管理者が提供した説明です。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|description|String|デバイス構成について管理者が提供した説明です。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
 

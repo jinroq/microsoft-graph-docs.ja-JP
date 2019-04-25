@@ -1,23 +1,23 @@
 ---
-title: 'section: copyToSectionGroup'
-description: 特定のセクション グループにセクションをコピーします。
+title: 'セクション: copytosectiongroup'
+description: 指定したセクショングループにセクションをコピーします。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 0b67f140871b6fa81c81f3e5ffceee492b62b3af
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537858"
 ---
-# <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
+# <a name="section-copytosectiongroup"></a>セクション: copytosectiongroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のセクション グループにセクションをコピーします。
+指定したセクショングループにセクションをコピーします。
 
-Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次に結果の操作エンドポイントをポーリングします。
+コピー操作では、非同期呼び出しパターンに従います。最初に copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,15 +43,15 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
-要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
+要求本文で、操作に必要なパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
-|siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
-|groupId|文字列|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
-|id|String|必須。目的のセクション グループの ID。 |
-|renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |
+|siteCollectionId|String|コピー先の SharePoint サイトの id。 Office 365 チームサイトにコピーする場合にのみ使用します。|
+|siteId|String|コピー先の SharePoint web の id です。 Office 365 チームサイトにコピーする場合にのみ使用します。|
+|groupId|文字列型 (String)|コピー先のグループの id。 Office 365 グループにコピーする場合にのみ使用します。|
+|id|String|必須。 コピー先のセクショングループの id を指定します。 |
+|renameAs|String|コピーするフィルターの名前を指定します。 Defaults to the name of the existing item. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -59,7 +59,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation-get.md)。
+成功した場合、このメソッド`202 Accepted`は応答コードと`Operation-Location`ヘッダーを返します。 操作の場所のエンドポイントをポーリングして、[コピー操作の状態を取得](onenoteoperation-get.md)します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

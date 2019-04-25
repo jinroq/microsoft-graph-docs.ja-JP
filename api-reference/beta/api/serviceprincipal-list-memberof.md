@@ -1,19 +1,19 @@
 ---
-title: ServicePrincipal への後方リンクの一覧
-description: このサービス ・ プリンシパルが直接のメンバーであるグループおよびディレクトリの役割を取得します。 この操作は、推移的ではありません。
+title: serviceprincipal memberOf のリスト
+description: このサービスプリンシパルが直接メンバになっているグループとディレクトリロールを取得します。 この操作は推移的ではありません。
 localization_priority: Normal
 ms.openlocfilehash: 84f82f632ef9c8f7e933d024f4d7df958415f140
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524206"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537472"
 ---
-# <a name="list-serviceprincipal-memberof"></a>ServicePrincipal への後方リンクの一覧
+# <a name="list-serviceprincipal-memberof"></a>serviceprincipal memberOf のリスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このサービス ・ プリンシパルが直接のメンバーであるグループおよびディレクトリの役割を取得します。 この操作は、推移的ではありません。
+このサービスプリンシパルが直接メンバになっているグループとディレクトリロールを取得します。 この操作は推移的ではありません。
 
 ## <a name="permissions"></a>アクセス許可
 

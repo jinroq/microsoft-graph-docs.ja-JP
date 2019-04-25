@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
-title: SharePoint サイトからページを削除します。
+title: SharePoint サイトからページを削除する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f855942288556fdf07e2b3af78408976c34eb052
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537115"
 ---
-# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>サイトのサイトのページのリストからページを削除します。
+# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>サイトのサイトページリストからページを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[サイト][]内のサイトのページ[] ボックスの一覧][]から、 [sitePage][]を削除します。
+[サイト][]のサイトページ[リスト][]から[sitepage][]を削除します。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -26,7 +26,7 @@ ms.locfileid: "29513026"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** アイテムを削除するには、ユーザーする必要がありますを与え、アプリケーションへの書き込みアクセスを削除する項目。
+>**注:** アイテムを削除するには、削除するアイテムへの書き込みアクセス権がユーザーに付与されている必要があります。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、この呼び出しが返されます、 `204 No Content` 、リソースが削除された取得するのには何もを使用する必要があることを示すために応答します。
+成功した場合、この呼び出し`204 No Content`は、リソースが削除され、戻り値がないことを示す応答を返します。
 
 ## <a name="example"></a>例
 

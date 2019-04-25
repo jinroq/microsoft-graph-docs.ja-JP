@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
 ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537455"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -59,7 +59,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前       | 種類   | 説明                                                    |
+| 名前       | 型   | 説明                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
 | **Prefer** | string | 省略可能。 以下に記載され`prefer`ている値の1つに設定します。  |
 

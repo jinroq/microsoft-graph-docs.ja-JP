@@ -1,24 +1,24 @@
 ---
 title: schemaExtension を更新する
-description: 指定された schemaExtension の定義に含まれるプロパティを更新します。
+description: 指定した schemaextension の定義のプロパティを更新します。
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: f457609af15716ef2ada3945132afd285fd2394c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515539"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537743"
 ---
 # <a name="update-schemaextension"></a>schemaExtension を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された [schemaExtension](../resources/schemaextension.md) の定義に含まれるプロパティを更新します。
+指定した[schemaextension](../resources/schemaextension.md)の定義のプロパティを更新します。
 
-この更新は、拡張機能の **targetTypes** プロパティに含まれるすべてのリソースに適用されます。これらのリソースは、[サポートしているリソースの種類](/graph/extensibility-overview#supported-resources)にあります。
+この更新は、拡張機能の**targettypes**プロパティに含まれるすべてのリソースに適用されます。 これらのリソースは、[サポート](/graph/extensibility-overview#supported-resources)されているリソースの種類の中にあります。
 
-スキーマ拡張機能を作成したアプリ (所有者アプリ) に限り、その拡張機能が **InDevelopment** か **Available** の状態である場合、拡張機能に対して付加的な更新を行うことができます。したがって、そのアプリは、定義からカスタム プロパティやターゲット リソースの種類を削除できません。ただし、このアプリで拡張機能の説明を変更することはできます。
+拡張機能が**indevelopment**または**Available** status にある場合は、スキーマ拡張機能 (所有者アプリ) を作成したアプリのみが拡張機能を追加で更新できます。 つまり、アプリでカスタムプロパティを削除したり、ターゲットリソースの種類を定義から削除したりすることはできません。 ただし、アプリで拡張機能の説明を変更することはできます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -51,10 +51,10 @@ PATCH /schemaExtensions/{id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|説明|String|スキーマ拡張機能の説明。|
-|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。付加的な変更のみが許可されます。 |
-|status|String|スキーマ拡張機能のライフサイクル状態。 作成時に初期状態は、 **InDevelopment**です。 状態遷移は、 **InDevelopment**を**使用可能**および**使用可能な****非推奨**です。|
-|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。|
+|description|String|スキーマ拡張機能の説明。|
+|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。 加法変更のみが許可されます。 |
+|status|String|スキーマ拡張機能のライフサイクル状態。 作成時の初期状態は**開発**中です。 可能な状態遷移は**開発**から**利用可能**であり、**廃止**から利用**可能**です。|
+|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。  加法変更のみが許可されます。|
 
 ## <a name="response"></a>応答
 

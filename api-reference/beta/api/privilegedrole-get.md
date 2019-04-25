@@ -1,24 +1,24 @@
 ---
-title: PrivilegedRole を取得します。
-description: 'プロパティと privilegedRole オブジェクトの関係を取得します。 '
+title: privilegedRole を取得する
+description: 'privilegedRole オブジェクトのプロパティとリレーションシップを取得します。 '
 localization_priority: Normal
 ms.openlocfilehash: 54fbf8bab03003a03f607bc540414190573a6158
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538589"
 ---
-# <a name="get-privilegedrole"></a>PrivilegedRole を取得します。
+# <a name="get-privilegedrole"></a>privilegedRole を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと[privilegedRole](../resources/privilegedrole.md)オブジェクトの関係を取得します。 
+[privilegedRole](../resources/privilegedrole.md)オブジェクトのプロパティとリレーションシップを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは、次のロールのいずれかを持つ必要があります:_ロールの権限を持つ管理者_、_グローバル管理者_、_セキュリティ管理者_、または_セキュリティのリーダー_です。
+リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。
  
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -46,9 +46,9 @@ GET /privilegedRoleAssignments/{id}/roleInfo
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[privilegedRole](../resources/privilegedrole.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRole](../resources/privilegedrole.md)オブジェクトを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

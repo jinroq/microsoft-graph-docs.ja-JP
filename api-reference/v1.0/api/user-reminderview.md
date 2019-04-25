@@ -5,14 +5,14 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7cfabb0595ed0787e3e7a96cc589526fddc8314f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564051"
 ---
 # <a name="user-reminderview"></a>user: reminderView
-内の指定した開始時刻と終了時刻、ユーザーの予定表のイベント通知の一覧を返します。 
+指定した開始時刻と終了時刻内の、ユーザーの予定表にあるイベントリマインダーの一覧を返します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -32,7 +32,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>関数パラメーター
 要求 URL に、次の関数パラメーターを値で指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |startDateTime|String|アラームを設定するイベントの開始日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|アラームを設定するイベントの終了日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|

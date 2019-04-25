@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 41c436cfe2a83da00eadda94914c707e1c1aee62
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889913"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536528"
 ---
 # <a name="list-user-memberof"></a>ユーザーの所属を一覧表示する
 
@@ -17,7 +17,7 @@ ms.locfileid: "31889913"
 
 ユーザーが直接メンバーであるグループ、ディレクトリロール、および管理単位を取得します。 この操作は推移的ではありません。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

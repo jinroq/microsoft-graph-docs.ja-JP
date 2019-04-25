@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 649fb5848a7c30908a87d8ea643aefa19ca5623e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535831"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | パラメーター       | 型|説明|
 |:---------------|:----------|:----------|
-| Address  | string| 範囲のアドレスです。API を次から呼び出す場合: `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| Address  | string| 範囲のアドレス。 `worksheets/{id|name}/tables/add` path からこの API を呼び出さない場合は、アドレスでシート名のプレフィックスをサポートする必要はありません。 ただし、これを`workbook/tables/add` path で呼び出している場合は、テーブルを作成する必要のあるシート名を指定します (例`sheet1!A1:D4`:)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答

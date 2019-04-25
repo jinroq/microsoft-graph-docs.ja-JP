@@ -1,21 +1,21 @@
 ---
 title: リスト recentPlans
-description: ユーザーが最近表示した plannerPlans の一覧を取得します。 PlannerUser リソースを更新することによって、最近表示した計画を更新できます。
+description: ユーザーが最近閲覧した plan プランの一覧を取得します。 プランのユーザーリソースを更新すると、最近表示されたプランを更新できます。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: b4a8e25a31ceb17f85aef139378fa3e3e9058ab4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538701"
 ---
 # <a name="list-recentplans"></a>リスト recentPlans
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーが最近表示した[plannerPlans](../resources/plannerplan.md)の一覧を取得します。 [PlannerUser リソースを更新](planneruser-update.md)することによって、最近表示した計画を更新できます。
+ユーザーが最近閲覧した[plan プラン](../resources/plannerplan.md)の一覧を取得します。 プラン[のユーザーリソースを更新](planneruser-update.md)すると、最近表示されたプランを更新できます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -35,12 +35,12 @@ GET /users/<id>/planner/recentPlans
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[plannerPlan](../resources/plannerplan.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[プラン](../resources/plannerplan.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

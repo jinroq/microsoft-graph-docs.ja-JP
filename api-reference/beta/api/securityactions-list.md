@@ -4,12 +4,12 @@ description: securityAction オブジェクトのリストを取得します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a161fd6113e6f29b061bd1dca9d2c4b16d7ee9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 93988de6a970df22350e8d0fc89126c8becfe493
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537588"
 ---
 # <a name="list-securityactions"></a>セキュリティアクションを一覧表示する
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482316"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | securityactions. all、securityactions. すべて |
+| 委任 (職場または学校のアカウント)     | サポートされていません。 |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 | アプリケーション                            | securityactions. all、securityactions. すべて |
 
@@ -35,7 +35,7 @@ ms.locfileid: "30482316"
 GET /security/securityActions
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための OData クエリパラメーターの一部をサポートしています。 一般的な情報については、「 [OData クエリパラメーター](/graph/query-parameters)」を参照してください。
 
@@ -43,7 +43,7 @@ GET /security/securityActions
 
 | 名前      |説明|
 |:----------|:----------|
-| 承認 | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 

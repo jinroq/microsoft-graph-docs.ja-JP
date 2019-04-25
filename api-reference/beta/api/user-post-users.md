@@ -1,22 +1,22 @@
 ---
 title: user の作成
-description: 新しいユーザーを作成するのにには、この API を使用します。
+description: この API を使用して、新しいユーザーを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: fe7fddb437684bbf038de39198b74be4fc5e1824
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642528"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536580"
 ---
-# <a name="create-user"></a>user の作成
+# <a name="create-user"></a>ユーザーを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しいユーザーを作成するのにには、この API を使用します。
-要求の本体には、作成するユーザーが含まれています。 最低限、ユーザーの必要なプロパティを指定する必要があります。 その他の書き込み可能なプロパティを指定することができます。
+この API を使用して、新しいユーザーを作成します。
+要求本文に、作成するユーザーを含めます。 少なくとも、ユーザーについての必須プロパティを指定する必要があります。 必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -51,7 +51,7 @@ POST /users
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |ユーザーのパスワード プロファイル。|
 |userPrincipalName |string |ユーザー プリンシパル名 (someuser@contoso.com)。|
 
-**ユーザー**のリソースは、[拡張機能](/graph/extensibility-overview)をサポートするため使用すること、`POST`操作し、作成時にユーザー インスタンスに独自のデータにカスタム プロパティを追加します。
+**ユーザー**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中にユーザーインスタンスにカスタムプロパティを追加することができます。
 
 ## <a name="response"></a>応答
 
@@ -89,7 +89,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

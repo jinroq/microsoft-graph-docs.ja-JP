@@ -1,25 +1,25 @@
 ---
 title: ユーザーのメールボックスの設定を取得する
-description: 'ユーザーの mailboxSettings を取得します。 (時に自動的にユーザーに通知する自動返信の設定が含まれます '
+description: 'ユーザーの mailboxSettings を取得します。 これには自動応答の設定が含まれます (ユーザーに自動通知する) '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 569a891e51d09c03467108c0a7ed012e04ba6352
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536568"
 ---
 # <a name="get-user-mailbox-settings"></a>ユーザーのメールボックスの設定を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーの[mailboxSettings](../resources/mailboxsettings.md)を取得します。 (自分の電子メールの受信時に自動的にユーザーに通知) の自動返信、ロケール (言語および国/地域)、タイム ゾーン、および作業時間の設定が含まれます。
+ユーザーの [mailboxSettings](../resources/mailboxsettings.md) を取得します。 これには、自動応答の設定 (電子メールの受信時にユーザーに自動的に通知される)、ロケール (言語と国/地域)、タイムゾーン、および稼働時間の設定が含まれます。
 
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
-タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 ユーザーを設定すると、[タイム ゾーンがサポートされている](outlookuser-supportedtimezones.md)ユーザーのメールボックス サーバーの管理者が設定することを選択します。 管理者は、Windows タイム ゾーンの形式または[インターネット割り当て番号機関 (IANA) タイム ゾーン](https://www.iana.org/time-zones)(Olson タイム ・ ゾーンとも呼ばれます) の形式でタイムゾーンを設定します。 既定値は Windows 形式です。 
+タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 ユーザーは、ユーザーのメールボックスサーバーに対して管理者が設定した、サポートされている[タイムゾーン](outlookuser-supportedtimezones.md)からそれを選択します。 管理者は、Windows タイムゾーン形式または[インターネット割り当て番号オーソリティ (IANA) タイムゾーン](https://www.iana.org/time-zones)(olson タイムゾーンとも呼ばれる) 形式でタイムゾーンを設定します。 既定値は Windows 形式です。 
 
 ユーザーの優先タイム ゾーンを取得するとき、そのタイム ゾーンは設定された形式で返されます。 タイム ゾーンを特定の形式 (Windows または IANA) にする場合は、最初に[メールボックス設定としてその形式の優先タイム ゾーンを更新](user-update-mailboxsettings.md)します。 その後は、その形式でタイム ゾーンを取得できるようになります。 または、アプリ内で形式変換を個別に管理することもできます。
 
@@ -33,13 +33,15 @@ ms.locfileid: "29510247"
 |アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーのすべてのメールボックスの設定を取得するには。<!-- { "blockType": "ignored" } -->
+ユーザーのすべてのメールボックス設定を取得するには、次のようにします。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
--自動返信の設定、ロケール、タイム ゾーン、または作業時間だけの特定の設定を取得するには。<!-- { "blockType": "ignored" } -->
+特定の設定を取得するには、自動応答の設定、ロケール、タイムゾーン、または稼働時間のみを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -84,7 +86,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
 ##### <a name="response-1"></a>応答 1
-応答には、サインイン中のユーザーのすべてのメールボックスの設定が含まれています。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+応答には、サインインしているユーザーのすべてのメールボックス設定が含まれます。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

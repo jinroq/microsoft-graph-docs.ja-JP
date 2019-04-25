@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b83df46bb238361be38cc68e45a11db0b8f6294e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800848"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565941"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>edgeSearchEngineBase リソースの種類
 
@@ -23,7 +23,7 @@ IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

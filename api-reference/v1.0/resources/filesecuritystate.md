@@ -1,26 +1,26 @@
 ---
 title: fileSecurityState リソースの種類
-description: アラートに関連するファイル (プロセスではない) に関する情報が含まれています。
+description: 通知に関連するファイル (プロセスではない) に関する情報が含まれます。
 localization_priority: Normal
 ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894097"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564793"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState リソースの種類
 
-アラートに関連するファイル (プロセスではない) に関する情報が含まれています。
+通知に関連するファイル (プロセスではない) に関する情報が含まれます。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類|説明|
+| プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|複合型の暗号化などの場所に依存したファイルのハッシュが含まれています。|
-|名前|String|ファイルの名前 (パス) です。|
-|path|String|ファイルとイメージ ファイルのファイルの完全パスです。|
-|riskScore|String|プロバイダー生成された計算されるリスクの警告ファイルのスコアです。 0 - 1 パーセントに相当する値の範囲をお勧めします。|
+|fileHash|[fileHash](filehash.md)|ファイルハッシュを含む複合型 (暗号化と場所に依存)。|
+|name|String|ファイル名 (パスなし)。|
+|path|String|ファイル/イメージファイルの完全なファイルパス。|
+|riskScore|String|通知ファイルのプロバイダーが生成/計算したリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

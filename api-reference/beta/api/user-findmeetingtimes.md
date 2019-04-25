@@ -1,25 +1,25 @@
 ---
 title: 'user: findMeetingTimes'
-description: 開催者と出席者の空き時間と、パラメーターとして指定された時間または場所の制限に基づいて、会議の時間と場所を提案します。
+description: パラメーターとして指定された開催者と出席者の空き時間、および時間または場所の制約に基づいて、会議の時間と場所を提案します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536539"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-開催者と出席者の空き時間と、パラメーターとして指定された時間または場所の制限に基づいて、会議の時間と場所を提案します。
+パラメーターとして指定された開催者と出席者の空き時間、および時間または場所の制約に基づいて、会議の時間と場所を提案します。
 
 **findMeetingTimes** が会議提案を返すことができない場合は、応答で、**emptySuggestionsReason** プロパティに理由が示されます。この値に基づいて、パラメーターをさらに調整して、**findMeetingTimes** を再度呼び出すことができます。
 
-会議の時間と場所を提案するために使用されるアルゴリズムは、時間の経過と共に微調整されます。 入力パラメーターとカレンダーデータが静的であるテスト環境などのシナリオでは、提案される結果が時間によって異なる可能性があることが予想されます。
+会議の時間と場所を提案するために使用されるアルゴリズムは、随時微調整されます。 入力パラメーターと予定表のデータが静的な状態のテスト環境のようなシナリオでは、提案される結果は時間の経過とともに変化する可能性があります。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -62,7 +62,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 |TimeConstraint の activityDomain 値|会議の時間の候補|
 |:-----|:-----|
-|作業| ユーザーの予定表の構成で定義された稼働時間 (ユーザーまたは管理者がカスタマイズできる) の範囲内で候補が提案されます。既定の稼働時間は、月曜日から金曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。**activityDomain** を指定しない場合、これが既定値です。 |
+|作業時間| ユーザーの予定表の構成で定義された稼働時間 (ユーザーまたは管理者がカスタマイズできる) の範囲内で候補が提案されます。既定の稼働時間は、月曜日から金曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。**activityDomain** を指定しない場合、これが既定値です。 |
 |personal| ユーザーの稼働時間の範囲内と、土曜日と日曜日の範囲内で候補が提案されます。既定では、月曜日から日曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。|
 |Unrestricted | 任意の曜日の任意の時刻から候補が提案されます。|
 |不明 | 将来的に使われなくなりますので、この値は使わないでください。現在の動作は、`work` と同じです。`work`、`personal` または `unrestricted` を使用するように、既存のコードを適宜変更します。|
@@ -115,7 +115,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 **findMeetingTimes** が任意の提案を返す場合は、**returnSuggestionReasons** パラメーターを設定することで、各提案の **SuggestionReason** プロパティの説明も取得できます。
 
-要求では、PST タイムゾーンの時刻が指定されていることに注意してください。 既定では、応答は会議時間の提案を UTC で返します。 PST を指定するのに、また応答の時間の値にも `Prefer: outlook.timezone` 要求ヘッダーを使うことができます。
+この要求では PST タイム ゾーンで時間を指定します。 既定では、UTC での会議の時間の候補を応答で返します。 PST を指定するのに、また応答の時間の値にも `Prefer: outlook.timezone` 要求ヘッダーを使うことができます。
 
 ##### <a name="request"></a>要求
 要求の例を次に示します。

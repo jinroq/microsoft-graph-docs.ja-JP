@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 40384682136c84ac957ee39bec3a2b2144e7a6a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787254"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534060"
 ---
 # <a name="update-depenrollmentprofile"></a>depEnrollmentProfile の更新
 
@@ -50,37 +50,37 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
+|id|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたオブジェクトの GUID|
 |displayName|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの名前|
-|説明|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
-|requiresUserAuthentication|Boolean|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
-|configurationendpointurl|文字列|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
-|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
+|description|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたプロファイルの説明|
+|requiresUserAuthentication|ブール値|プロファイルが[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承したユーザー認証を必要とするかどうかを示します。|
+|configurationendpointurl|String|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承された登録に使用する構成エンドポイント url|
+|enableAuthenticationViaCompanyPortal|ブール値|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。 [しました](../resources/intune-enrollment-enrollmentprofile.md)から継承します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|ブール値|[しました](../resources/intune-enrollment-enrollmentprofile.md)から継承されたセットアップアシスタントの登録済みデバイスで、会社のポータルが必要であることを示します。|
 |isDefault|ブール型 (Boolean)|これが既定のプロファイルであるかどうかを示します|
-|supervisedModeEnabled|Boolean|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
-|supportdepartment|文字列|サポート部門の情報|
-|pass codedisabled|Boolean|パスコードセットアップウィンドウが無効であるかどうかを示します|
-|ismandatory|Boolean|プロファイルが必須であるかどうかを示します|
-|locationdisabled|Boolean|場所サービスの設定ウィンドウが無効であるかどうかを示します|
-|supportPhoneNumber|文字列|サポート電話番号|
+|supervisedModeEnabled|ブール値|監視モード、有効にする場合は True、それ以外の場合は false。 詳細https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneについては、「」を参照してください。|
+|supportdepartment|String|サポート部門の情報|
+|pass codedisabled|ブール値|パスコードセットアップウィンドウが無効であるかどうかを示します|
+|ismandatory|ブール値|プロファイルが必須であるかどうかを示します|
+|locationdisabled|ブール値|場所サービスの設定ウィンドウが無効であるかどうかを示します|
+|supportPhoneNumber|String|サポート電話番号|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|iTunes ペアリングモードを示します。 使用可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
-|profileRemovalDisabled|Boolean|プロファイルの削除オプションが無効になっているかどうかを示します|
+|profileRemovalDisabled|ブール値|プロファイルの削除オプションが無効になっているかどうかを示します|
 |managementcertificates|[managementcertificatewiththumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の管理証明書|
-|restoreblocked|Boolean|セットアップウィンドウの復元がブロックされているかどうかを示します|
-|restoreFromAndroidDisabled|Boolean|Android からの復元が無効であるかどうかを示します|
-|りんご eiddisabled|Boolean|Apple id のセットアップウィンドウが無効であるかどうかを示します|
-|termsAndConditionsDisabled|Boolean|[使用条件] セットアップウィンドウが無効かどうかを示します|
-|touchIdDisabled|Boolean|タッチ id のセットアップウィンドウが無効であるかどうかを示します|
-|applePayDisabled|Boolean|Apple の支払い設定ウィンドウが無効であるかどうかを示します|
-|zoomDisabled|Boolean|ズーム設定ウィンドウが無効であるかどうかを示します|
-|siridisabled|Boolean|siri セットアップウィンドウが無効であるかどうかを示します|
-|diagnosticsDisabled|Boolean|診断セットアップウィンドウが無効であるかどうかを示します|
-|macosregistrationdisabled|Boolean|Mac OS 登録が無効であるかどうかを示します|
-|macOSFileVaultDisabled|Boolean|Mac OS ファイルボルトが無効であるかどうかを示します|
-|awaitDeviceConfiguredConfirmation|Boolean|構成済みの確認をデバイスが待機する必要があるかどうかを示します|
+|restoreblocked|ブール値|セットアップウィンドウの復元がブロックされているかどうかを示します|
+|restoreFromAndroidDisabled|ブール値|Android からの復元が無効であるかどうかを示します|
+|りんご eiddisabled|ブール値|Apple id のセットアップウィンドウが無効であるかどうかを示します|
+|termsAndConditionsDisabled|ブール値|[使用条件] セットアップウィンドウが無効かどうかを示します|
+|touchIdDisabled|ブール値|タッチ id のセットアップウィンドウが無効であるかどうかを示します|
+|applePayDisabled|ブール値|Apple の支払い設定ウィンドウが無効であるかどうかを示します|
+|zoomDisabled|ブール値|ズーム設定ウィンドウが無効であるかどうかを示します|
+|siridisabled|ブール値|siri セットアップウィンドウが無効であるかどうかを示します|
+|diagnosticsDisabled|ブール値|診断セットアップウィンドウが無効であるかどうかを示します|
+|macosregistrationdisabled|ブール値|Mac OS 登録が無効であるかどうかを示します|
+|macOSFileVaultDisabled|ブール値|Mac OS ファイルボルトが無効であるかどうかを示します|
+|awaitDeviceConfiguredConfirmation|ブール値|構成済みの確認をデバイスが待機する必要があるかどうかを示します|
 |sharedIPadMaximumUserCount|Int32|これにより、共有 iPad を使用できるユーザーの最大数が指定されます。 共有 iPad モードでのみ適用されます。|
-|enableSharedIPad|Boolean|これは、デバイスを、複数のユーザーシナリオを有効にするモードで登録するかどうかを示します。 共有 ipad にのみ適用されます。|
+|enableSharedIPad|ブール値|これは、デバイスを、複数のユーザーシナリオを有効にするモードで登録するかどうかを示します。 共有 ipad にのみ適用されます。|
 
 
 

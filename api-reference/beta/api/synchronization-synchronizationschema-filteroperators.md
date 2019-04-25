@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationSchema: filterOperators'
-description: スコープ フィルターでサポートされているすべての演算子の一覧を表示します。
+title: '同期スキーマ: filteroperators'
+description: スコープフィルターでサポートされているすべての演算子を一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641709"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537144"
 ---
-# <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
+# <a name="synchronizationschema-filteroperators"></a>同期スキーマ: filteroperators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[スコープ フィルター](../resources/synchronization-filter.md)でサポートされているすべての演算子の一覧を表示します。
+[スコープフィルター](../resources/synchronization-filter.md)でサポートされているすべての演算子を一覧表示します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,7 +44,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200, OK`応答コードおよび応答の本文の[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)コレクション オブジェクトです。
+成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[filter演算子スキーマ](../resources/synchronization-filteroperatorschema.md)コレクションオブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>応答
 応答の例を次に示します。
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",

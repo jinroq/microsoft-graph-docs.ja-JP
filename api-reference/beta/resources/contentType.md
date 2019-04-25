@@ -5,15 +5,13 @@ ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c90dd8889d07f903a7d3c79d9e4e5db3b9f2a30b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535418"
 ---
 # <a name="contenttype-resource-type"></a>ContentType リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **contentType** リソースは、SharePoint の_コンテンツ タイプ_を表します。
 コンテンツ タイプによって、[**list**][list] 内のすべての [**listItem**][listItem] に存在する必要のある列のセットを定義することができます。
@@ -24,7 +22,10 @@ ms.locfileid: "29522974"
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、**contentType** リソースの JSON 表記です。
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -47,15 +48,15 @@ ms.locfileid: "29522974"
 
 | プロパティ名     | 種類                 | 説明
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | アイテムの説明テキストです。
+| **説明**   | string               | アイテムの説明テキストです。
 | **group**         | string               | このコンテンツ タイプが属するグループの名前。 関連するコンテンツ タイプを整理するのに役立ちます。
-| **hidden**        | boolean              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
+| **hidden**        | ブール値              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
 | **id**            | string               | コンテンツ タイプの一意識別子。
 | **inheritedFrom** | [itemReference][]    | このコンテンツ タイプが、別のスコープ (サイトなど) から継承されている場合、そのコンテンツ タイプが定義されているアイテムへの参照を提供します。
 | **name**          | string               | コンテンツ タイプの名前。
 | **order**         | [contentTypeOrder][] | 選択 UI でコンテンツ タイプを表示する順番を指定します。
 | **parentId**      | string               | コンテンツ タイプの一意識別子。
-| **readOnly**      | boolean              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
+| **readOnly**      | ブール値              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
 | **sealed**        | boolean              | `true` である場合、ユーザーまたはプッシュダウン操作ではコンテンツ タイプを変更できません。 サイト コレクションの管理者だけがコンテンツ タイプのシールまたはシール解除ができます。
 
 ## <a name="relationships"></a>リレーションシップ
@@ -71,15 +72,10 @@ ms.locfileid: "29522974"
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contentType.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/ContentType"
+} -->

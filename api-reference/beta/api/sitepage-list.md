@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: サイト内のページを一覧表示します。
+title: サイト内のページを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537196"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを一覧表示します。
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトページリストのページを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サイトの[サイト][]内のサイトのページ[] ボックスの一覧][]から [サイト ページ] のコレクションを取得します。 (改ページ) では、サイト内のすべてのページが返されます。
+サイト[サイト][]のサイトページ[リスト][]から [sitepages] [] のコレクションを取得します。 サイト内のすべてのページが (改ページ付きで) 返されます。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52d1002c7a242f0aca203d84c4d7d16763e5debd
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534305"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderscantype 列挙型
 
@@ -21,9 +21,9 @@ ms.locfileid: "30254304"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|党|1-d|システムスキャンが無効になります。|
-|概要|pbm-2|クイックシステムスキャン。|
-|完全|1/3|完全なシステムスキャン。|
+|党|1 |システムスキャンが無効になります。|
+|概要|2 |クイックシステムスキャン。|
+|完全|3 |完全なシステムスキャン。|
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: DataPolicyOperation を取得します。
-description: DataPolicyOperation オブジェクトのプロパティを取得します。
+title: dataPolicyOperation を取得する
+description: dataPolicyOperation オブジェクトのプロパティを取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2f9c4608aaa8d951b5a5fed6b499643e5a4d63d0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565563"
 ---
-# <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得します。
+# <a name="get-datapolicyoperation"></a>dataPolicyOperation を取得する
 
-**DataPolicyOperation**オブジェクトのプロパティを取得します。
+**dataPolicyOperation**オブジェクトのプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  User.Export.All、User.Read.All  |
-|委任 (個人用 Microsoft アカウント) |  該当なし  |
-|アプリケーション | User.Export.All、User.Read.All | 
+|委任 (職場または学校のアカウント) |  すべてのユーザーをエクスポートします。  |
+|委任 (個人用 Microsoft アカウント) |  該当しない  |
+|アプリケーション | すべてのユーザーをエクスポートします。 | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[dataPolicyOperation](../resources/datapolicyoperation.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[dataPolicyOperation](../resources/datapolicyoperation.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {

@@ -1,15 +1,15 @@
 ---
 title: ユーザーのメールボックスの設定を更新する
-description: ユーザーのメールボックスの設定を 1 つ以上更新します。これには、自動応答 (電子メールの受信時に自動的にユーザーに通知)、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。
+description: ユーザーのメールボックスの 1 つ以上の設定を更新します。 これには、自動応答の設定 (電子メールの受信時にユーザーに自動的に通知される)、ロケール (言語と国/地域)、タイムゾーン、および稼働時間の設定が含まれます。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 90140a5c6f7822730b172dbc5a424c97b2fafc39
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516225"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536573"
 ---
 # <a name="update-user-mailbox-settings"></a>ユーザーのメールボックスの設定を更新する
 
@@ -21,7 +21,7 @@ ms.locfileid: "29516225"
 
 **注** メールボックス設定は作成または削除できません。
 
-ユーザーの優先タイム ゾーンを更新する場合、Windows または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式で指定することができます。 タイム ゾーンは次の[例 2](#request-2)に示すようにもさらにカスタマイズできます。
+ユーザーの優先タイム ゾーンを更新する場合、Windows または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式で指定することができます。 また、次の[例 2](#request-2)に示すように、タイムゾーンをさらにカスタマイズすることもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。 将来の日付の範囲だけにこのような通知を設定することができます。|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。 このような通知は、将来の日付範囲に対してのみ設定できます。|
 |language|[localeInfo](../resources/localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
 |timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
 |workingHours|[workingHours](../resources/workinghours.md)|ユーザーが働く時間、曜日、タイムゾーン。|

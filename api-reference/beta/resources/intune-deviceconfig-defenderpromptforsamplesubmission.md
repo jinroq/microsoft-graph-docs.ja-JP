@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c81fe62d7ed2696b233b8684c665f7cf8341fbcd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534781"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31778377"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|always プロンプト|1-d|常にプロンプトを表示します。|
-|promptBeforeSendingPersonalData|pbm-2|個人データを送信する前にメッセージを表示します。|
-|neverSendData|1/3|データを送信しません。|
-|sendalldataメッセージを表示しない|2/4|メッセージを表示せずにすべてのデータを送信します。|
+|always プロンプト|1 |常にプロンプトを表示します。|
+|promptBeforeSendingPersonalData|2 |個人データを送信する前にメッセージを表示します。|
+|neverSendData|3 |データを送信しません。|
+|sendalldataメッセージを表示しない|4 |メッセージを表示せずにすべてのデータを送信します。|
 
 
 

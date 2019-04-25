@@ -1,25 +1,25 @@
 ---
-title: プログラムを作成します。
-description: Azure AD のレビュー機能にアクセス、新しいプログラム オブジェクトを作成します。
+title: プログラムを作成する
+description: Azure AD access レビュー機能で、新しいプログラムオブジェクトを作成します。
 localization_priority: Normal
 ms.openlocfilehash: a6e9ab300cf44a2f3973c468679af7fa48262680
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538540"
 ---
-# <a name="create-program"></a>プログラムを作成します。
+# <a name="create-program"></a>プログラムを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、新しい[プログラム](../resources/program.md)オブジェクトを作成します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、新しい[プログラム](../resources/program.md)オブジェクトを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを作成することを許可するディレクトリの役割でもあります。 |
+|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを作成することを許可するディレクトリロールにある必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -31,25 +31,25 @@ POST /programs
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[プログラム](../resources/program.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[プログラム](../resources/program.md)オブジェクトの JSON 表記を指定します。
 
-プログラムを作成するときに必要なプロパティを次の表に示します。
+次の表に、プログラムの作成時に必要なプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-| `displayName`               |`String`                              |  プログラムの名前です。                   |
-| `description`               |`String`                              |  プログラムの説明です。           |
+| `displayName`               |`String`                              |  プログラムの名前を指定します。                   |
+| `description`               |`String`                              |  プログラムの説明。           |
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `201, Created` 、応答の本体で応答コードと[プログラム](../resources/program.md)のオブジェクトです。
+成功した場合、このメソッド`201, Created`は応答コードと、応答本文で[プログラム](../resources/program.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求の本文には、[プログラム](../resources/program.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[プログラム](../resources/program.md)オブジェクトの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",
@@ -87,10 +87,10 @@ Content-type: application/json
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[プログラムを一覧表示](program-list.md) | [プログラム](../resources/program.md)のコレクション|  すべてのプログラムのコレクションを取得します。|
-|[プログラムのリスト programControls](program-listcontrols.md) |     [デバッギング](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
-|[更新プログラム](program-update.md) |  [プログラム](../resources/program.md)| プログラムを更新します。|
-|[デバッギングを作成します。](programcontrol-create.md) |        [デバッギング](../resources/programcontrol.md)    |   デバッギングをプログラムに追加します。|
+|[プログラムの一覧表示](program-list.md) | [プログラム](../resources/program.md)コレクション|  すべてのプログラムのコレクションを取得します。|
+|[プログラムの programcontrols を一覧表示する](program-listcontrols.md) |     [programcontrol](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
+|[プログラムの更新](program-update.md) |  [アプリケーション](../resources/program.md)| プログラムを更新します。|
+|[programcontrol を作成する](programcontrol-create.md) |        [programcontrol](../resources/programcontrol.md)    |   プログラムに programcontrol を追加します。|
 
 <!--
 {

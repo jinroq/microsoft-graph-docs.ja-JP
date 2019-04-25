@@ -1,15 +1,15 @@
 ---
 title: checkMemberGroups
-description: グループの指定されたリスト内のメンバーシップを確認します。 リストから先のグループを返します。
+description: 指定したグループ一覧内のメンバーシップを確認します。 対象となるグループのリストからを返します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0d7452795cb0a8ffdf3a966a3e350a8634b2a7ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516897"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536803"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "29516897"
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                     |
 | アプリケーション                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 使用して、`User.Read.All`または`User.ReadWrite.All`のアクセス許可エラーが返されます。 これは既知のバグです。
+> **注:** この API には、 `Directory.Read.All`現在アクセス許可以上が必要です。 または`User.Read.All` `User.ReadWrite.All`のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 

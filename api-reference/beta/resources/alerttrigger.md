@@ -1,29 +1,29 @@
 ---
-title: alertTrigger リソースの種類
+title: alerttrigger リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: cda1dde9b22b9304fd412405758435be2f6143bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535699"
 ---
-# <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
+# <a name="alerttrigger-resource-type"></a>alerttrigger リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-(プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
+検出をトリガーしたプロパティに関する情報が含まれています (アラートエンティティにプロパティが存在します)。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|name|String|検出のトリガーとして機能するプロパティの名前です。|
-|type|String|解釈のキーと値のペアのプロパティの型。 たとえば、文字列、ブール値などです。|
-|value|文字列|検出のトリガーとして機能するプロパティの値です。|
+|name|String|検出トリガーとして機能するプロパティの名前。|
+|type|String|キーと値のペアで解釈するプロパティの型。 たとえば、String、Boolean、などです。|
+|value|文字列型 (String)|検出トリガーとして提供されるプロパティの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

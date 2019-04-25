@@ -1,19 +1,19 @@
 ---
 title: TableSort リソースの種類
-description: テーブル オブジェクトの並べ替え操作を管理します。
+description: Table オブジェクトの並べ替え操作を管理します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be607832be82b99853b4cd44cfa5b60449a2c432
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929474"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534515"
 ---
 # <a name="tablesort-resource-type"></a>TableSort リソースの種類
 
-テーブル オブジェクトの並べ替え操作を管理します。
+Table オブジェクトの並べ替え操作を管理します。
 
 
 ## <a name="methods"></a>メソッド
@@ -26,11 +26,11 @@ ms.locfileid: "27929474"
 |[Reapply](../api/tablesort-reapply.md)|なし|テーブルに、現在の並べ替えパラメーターを再適用します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|fields|[WorkbookSortField](sortfield.md)コレクション|テーブルの最後の並べ替えに使用する現在の条件を表します。読み取り専用です。|
+|fields|[WorkbookSortField](sortfield.md)コレクション|テーブルの最後の並べ替えに使用する現在の条件を表します。 読み取り専用です。|
 |matchCase|ブール値|大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。|
-|method|文字列|中国語の文字が最後にテーブルの並べ替えに使用するメソッドの順序を表します。 可能な値: `PinYin`、 `StrokeCount`。 読み取り専用です。|
+|method|string|テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。 使用可能な値は`PinYin`、 `StrokeCount`、です。 読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7979033ce520f0d29172a910f4935c428bee383f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538267"
 ---
 # <a name="rangesort-apply"></a>RangeSort: 適用
 
@@ -45,7 +45,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |fields|SortField|並べ替えに使用する条件の一覧。|
-|matchCase|boolean|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
+|matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
 |hasHeaders|boolean|省略可能。範囲にヘッダーがあるかどうか。|
 |orientation|string|省略可能。操作が行と列のどちらの並べ替えかを示します。可能な値は、`Rows`、`Columns` です。|
 |method|string|省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。|

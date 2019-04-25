@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1f9dc95cb141b923b9e9d34b6e9a0de4ab610fe5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532955"
 ---
 # <a name="create-importedappledeviceidentity"></a>importedAppleDeviceIdentity を作成する
 
@@ -52,15 +52,15 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|
-|requestedEnrollmentProfileId|文字列|登録プロファイル Id 管理者が次回の登録時にデバイスに適用する予定|
+|requestedEnrollmentProfileId|String|登録プロファイル Id 管理者が次回の登録時にデバイスに適用する予定|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録プロファイルがデバイスに割り当てられている|
 |isSupervised|Boolean|Apple デバイスが監視されているかどうかを示します。 詳細情報は次のとおりです。https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple デバイスの検出ソース。 使用可能な値は、`unknown`、`adminImport`、`deviceEnrollmentProgram` です。|
 |createdDateTime|DateTimeOffset|デバイスの日時の作成日時|
 |lastContactedDateTime|DateTimeOffset|デバイスの最終連絡日時|
-|説明|String|デバイスの説明|
+|description|String|デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
-|platform|[platform](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
+|platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 可能な値は `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS` です。|
 
 
 

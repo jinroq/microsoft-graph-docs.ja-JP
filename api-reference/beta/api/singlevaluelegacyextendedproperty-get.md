@@ -1,13 +1,13 @@
 ---
 title: singleValueLegacyExtendedProperty を取得する
-description: 特定の拡張プロパティ、またはリソースのインスタンスのコレクションに展開されている 1 つのリソースのインスタンスを取得します。
+description: 特定の拡張プロパティを使用して展開された単一のリソースインスタンス、またはリソースインスタンスのコレクションを取得できます。
 localization_priority: Normal
 ms.openlocfilehash: ead4881737f4431138d444ffe8df131c22c131fc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641408"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537329"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty を取得する
 
@@ -26,11 +26,11 @@ ms.locfileid: "29641408"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [イベント](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [メッセージ](../resources/message.md) 
 - [Outlook タスク](../resources/outlooktask.md)
-- [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)
+- [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
 次のグループ リソースもサポートされます。
 
@@ -41,21 +41,21 @@ ms.locfileid: "29641408"
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-拡張プロパティを受信するリソースに応じて、アクセス許可が委任された (アプリケーション) を要求を入力する、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、拡張プロパティの取得元のリソースと、要求したアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可が最低限必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| グループ [calendar](../resources/calendar.md) | Group.Read.All | 使用不可 | 使用不可 |
-| グループ [event](../resources/event.md) | Group.Read.All | 使用不可 | 使用不可 |
-| グループ [post](../resources/post.md) | Group.Read.All | サポートされていません | Group.Read.All |
+| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| グループ [calendar](../resources/calendar.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+| グループ [event](../resources/event.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+| グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポートされていません |
-| [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
+| [メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポート対象外 |
+| [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
 
 
 ## <a name="http-request"></a>HTTP 要求
@@ -63,43 +63,50 @@ ms.locfileid: "29641408"
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>フィルターと一致する拡張プロパティで展開されたリソース インスタンスを取得する
 **id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
-**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**MailFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**mailFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**イベント**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**カレンダー**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**calendar** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**連絡**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contact** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**ContactFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contactFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**OutlookTask**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktask**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -108,7 +115,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=si
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**OutlookTaskFolder**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktaskfolder**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -116,12 +124,14 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProp
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループ**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループの**投稿**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **post** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -129,46 +139,53 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>フィルターと一致する数値の拡張プロパティを含むリソース インスタンスを取得する
 
-フィルターと一致する数値の拡張プロパティを持つサポート対象リソースのインスタンスを取得します。 フィルターは **id** プロパティには `eq` 演算子を使用し、**value** プロパティには `eq`、`ne`、`ge`、`gt`、`le`、`lt` のいずれかの演算子を使用します。 Make を適用するかどうかを確認確かに適用する[URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)次の文字のフィルター文字列のコロン、スラッシュ、およびスペースです。
+フィルターと一致する数値の拡張プロパティを持つサポート対象リソースのインスタンスを取得します。 フィルターは **id** プロパティには `eq` 演算子を使用し、**value** プロパティには `eq`、`ne`、`ge`、`gt`、`le`、`lt` のいずれかの演算子を使用します。 必ず適用してください。フィルター文字列のコロン、スラッシュ、スペースで、次の文字に[URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。
 
 次の構文の行では、id に `eq` 演算子を使用し、プロパティ値にもう 1 つの `eq` 演算子を使用するフィルターを示しています。 **value** に対する `eq` 演算子は、数値に適用される別の演算子 (`ne`、`ge`、`gt`、`le`、`lt`) のいずれかと置き換えることができます。
 
-**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**MailFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**mailFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**予定表**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**calendar** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**連絡**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contact** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**ContactFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contactFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-**OutlookTask**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktask**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -177,7 +194,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleV
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**OutlookTaskFolder**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktaskfolder**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -185,12 +203,14 @@ GET /me/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedPropertie
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-グループの**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-グループの**投稿**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **post** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -201,7 +221,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 フィルターと一致する文字列型の拡張プロパティを含む **message** または **event** リソースのインスタンスを取得します。 フィルターは **id** プロパティには `eq` 演算子を使用し、**value** プロパティには `contains`、`startswith`、`eq`、`ne` のいずれかの演算子を使用します。 フィルター文字列内のコロン、スラッシュ、スペースに [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることをご確認ください。
 
 
-**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -220,7 +241,8 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -235,7 +257,8 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-グループの**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
@@ -247,7 +270,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 |**パラメーター**|**型**|**説明**|
 |:-----|:-----|:-----|
 |id_value|String|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
-|property_value |文字列|照合する拡張プロパティの値。 前述の「**HTTP 要求**」セクションに示した一覧で必要になります。 {property_value} が文字列ではない場合、`ep/value` を {property_value} と比較するときに、適切な Edm データ型に明示的にキャストしてください。 例については、以下の[要求 4](#request-4) を参照してください。 |
+|property_value |String|照合する拡張プロパティの値。 前述の「**HTTP 要求**」セクションに示した一覧で必要になります。 {property_value} が文字列ではない場合、`ep/value` を {property_value} と比較するときに、適切な Edm データ型に明示的にキャストしてください。 例については、以下の[要求 4](#request-4) を参照してください。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|

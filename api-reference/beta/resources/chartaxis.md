@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6cb780272887b6a9b637bbec24b68b37db93657e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535585"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "29640932"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |chartAxis オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -33,7 +33,7 @@ ms.locfileid: "29640932"
 |minimum|object|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minorUnit|object|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartAxisFormat](chartaxisformat.md)|グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。|

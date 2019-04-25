@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4f472714869d92bcaf2af148dd2f591c19c18425
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534732"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 

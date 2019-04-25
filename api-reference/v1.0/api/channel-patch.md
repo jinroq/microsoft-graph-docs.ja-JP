@@ -1,23 +1,23 @@
 ---
-title: パッチ チャネル
-description: 指定されたチャネルのプロパティを更新します。
+title: パッチチャネル
+description: 指定したチャネルのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4c3a03aaab52da62f56ca376035e56a9b8584832
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565577"
 ---
-# <a name="patch-channel"></a>パッチ チャネル
+# <a name="patch-channel"></a>パッチチャネル
 
 
 
-指定された[チャネル](../resources/channel.md)のプロパティを更新します。
+指定した[チャネル](../resources/channel.md)のプロパティを更新します。
 
-> **注**: アプリケーションのアクセス許可とこの API に関する既知の問題があります。 詳細についてはの[既知の問題点のリスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には、既知の問題があります。 詳細については、[既知の問題リスト](/graph/known-issues#application-permissions)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -28,7 +28,7 @@ ms.locfileid: "27984340"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[チャネル](../resources/channel.md)オブジェクトの JSON 表現を指定します。
+要求本文で、 [channel](../resources/channel.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 

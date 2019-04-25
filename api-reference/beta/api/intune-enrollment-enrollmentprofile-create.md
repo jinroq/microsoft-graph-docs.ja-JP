@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4c78d5076038b85140d31e0e9000dda99f9dddff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807596"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533123"
 ---
 # <a name="create-enrollmentprofile"></a>しましたを作成する
 
@@ -52,11 +52,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
-|説明|String|プロファイルの説明|
-|requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
-|configurationendpointurl|文字列|登録に使用する構成エンドポイント url|
-|enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
+|description|String|プロファイルの説明|
+|requiresUserAuthentication|ブール値|プロファイルにユーザー認証が必要かどうかを示します|
+|configurationendpointurl|String|登録に使用する構成エンドポイント url|
+|enableAuthenticationViaCompanyPortal|ブール値|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|ブール値|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
 
 

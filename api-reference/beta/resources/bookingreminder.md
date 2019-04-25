@@ -1,29 +1,29 @@
 ---
-title: bookingReminder リソースの種類
+title: bookingreminder リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535484"
 ---
-# <a name="bookingreminder-resource-type"></a>bookingReminder リソースの種類
+# <a name="bookingreminder-resource-type"></a>bookingreminder リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-電子メールの事前通知を送信する先を表します。
+電子メール通知を送信するタイミングと送信先を表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|message|String|アラームのメッセージです。|
-|Offset|Duration|アラームを送信する予定の開始までの時間の量。 それは、 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|
-|Recipients|String| Shouold を受信したユーザー、通知します。 可能な値は、`allAttendees`、`staff`、`customer` です。|
+|メッセージ​​|String|アラームのメッセージ。|
+|交互|期間|予定の開始時刻から事前通知を送信するまでの時間の長さ。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で示されています。|
+|受信者|String| shouold がアラームを受信する人物。 使用可能な値は、`allAttendees`、`staff`、`customer` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

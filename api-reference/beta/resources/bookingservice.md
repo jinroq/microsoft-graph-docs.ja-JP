@@ -1,50 +1,50 @@
 ---
-title: bookingService リソースの種類
+title: bookingservice リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535498"
 ---
-# <a name="bookingservice-resource-type"></a>bookingService リソースの種類
+# <a name="bookingservice-resource-type"></a>bookingservice リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-[BookingBusiness](bookingbusiness.md)サービス名、価格、通常このようなサービスを提供するスタッフなどによって提供される特定のサービスに関する情報を表します。
+通常はサービスを提供しているサービス名、価格、スタッフなど、 [bookingbusiness](bookingbusiness.md)によって提供される特定のサービスに関する情報を表します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[サービスの一覧](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md)コレクション | 指定された[bookingbusiness](../resources/bookingbusiness.md)では、 **bookingService**オブジェクトのリストを取得します。|
-|[BookingService を作成します。](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 指定した[bookingbusiness](../resources/bookingbusiness.md)用の**bookingService**を作成します。 |
-|[BookingService を取得します。](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |指定された[bookingbusiness](../resources/bookingbusiness.md)のプロパティと、 **bookingService**オブジェクトの関係を取得します。|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |指定された[bookingbusiness](../resources/bookingbusiness.md)で、 **bookingService**オブジェクトを更新します。 |
-|[Delete](../api/bookingservice-delete.md) | なし |指定された[bookingbusiness](../resources/bookingbusiness.md)で、 **bookingService**オブジェクトを削除します。 |
+|[サービスを一覧表示する](../api/bookingbusiness-list-services.md) | [bookingservice](bookingservice.md)コレクション | 指定した[bookingservice](../resources/bookingbusiness.md)の**bookingservice**オブジェクトのリストを取得します。|
+|[bookingservice の作成](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 指定した[bookingservice](../resources/bookingbusiness.md)の**bookingservice**を作成します。 |
+|[bookingservice を取得する](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |指定した[bookingservice](../resources/bookingbusiness.md)の**bookingservice**オブジェクトのプロパティとリレーションシップを取得します。|
+|[更新](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |指定した[bookingservice](../resources/bookingbusiness.md)の**bookingservice**オブジェクトを更新します。 |
+|[削除](../api/bookingservice-delete.md) | なし |指定した[bookingservice](../resources/bookingbusiness.md)の**bookingservice**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration|日、時間、分、秒単位の数値で表される、サービスの既定の長さです。 たとえば、P11D23H59M59.999999999999S です。 |
-|defaultLocation|[location](location.md)|サービスの既定の物理的な場所です。|
-|defaultPrice|倍精度浮動小数点数|サービスの既定通貨の価格です。|
-|defaultPriceType|string|サービスの既定の方法に請求されます。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
-|defaultReminders|[bookingReminder](bookingreminder.md)コレクション|このサービスの予定に対するアラームの既定値を設定します。 その ID ではこの**bookingService**を読み取るときにのみ、このプロパティの値があります。|
-|説明|文字列|サービスの説明です。|
-|displayName|String|サービスの名前です。|
-|emailAddress|String|電子メール アドレス:  |
-|id|文字列|GUID 形式で、そのサービスの ID です。 読み取り専用です。|
-|isHiddenFromCustomers|ブール値|True は、このサービスは予約のお客様に利用できないことを意味します。|
+|defaultduration|期間|サービスの既定の長さ。日数、時間、分、および秒で表されます。 たとえば、p11d23h59m 59.999999999999 s のようになります。 |
+|defaultLocation|[location](location.md)|サービスの既定の物理的な場所。|
+|既定の価格|倍精度浮動小数点数|サービスの既定の通貨料金。|
+|defaultPriceType|string|サービスの既定の課金方法。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
+|defaultreminders|[bookingreminder](bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**bookingservice**を ID で読み取る場合にのみ使用できます。|
+|description|String|サービスのテキストの説明。|
+|displayName|String|サービス名。|
+|emailAddress|String|電子メールアドレス|
+|id|String|GUID 形式の、そのサービスの ID。 読み取り専用。|
+|isHiddenFromCustomers|ブール値|True は、このサービスを予約にお客様が利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
-|事後バッファリング|Duration|このサービスの予定の後のバッファーに時間が終了して、次の前に顧客の予定が予約できます。|
-|事前バッファリング|Duration|このサービスに対する予定を開始する前に、バッファーに格納する時間です。|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定するポリシーのセットです。|
-|staffMemberIds|String コレクション|このサービスを提供している[スタッフのメンバー](bookingstaffmember.md)を表します。 |
+|postbuffer|期間|このサービスの予定が終了してから、次の顧客の予定が予約されるまでの時間。|
+|prebuffer|期間|このサービスの予定を開始できるようになるまでの時間。|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定する一連のポリシー。|
+|staffMemberIds|String collection|このサービスを提供する[スタッフメンバー](bookingstaffmember.md)を表します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

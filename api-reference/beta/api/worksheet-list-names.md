@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f215441d8248752ac94b6d311b998412ac154ebd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535866"
 ---
 # <a name="list-names"></a>名前を一覧表示する
 
@@ -21,8 +21,8 @@ ms.locfileid: "29641345"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Files.Read、Files.ReadWrite、Sites.Read.All    |
-|委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite    |
+|委任 (職場または学校のアカウント) | ファイル。読み取り、ファイルの読み取り/書き込み。    |
+|委任 (個人用 Microsoft アカウント) | ファイル。読み取り、ファイルの読み取り/書き込み    |
 |アプリケーション | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 要求

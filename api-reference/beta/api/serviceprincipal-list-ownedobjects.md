@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipals: ownedObjects を一覧表示'
-description: ServicePrincipal が所有するオブジェクトの一覧を取得します。  これには、アプリケーションまたはグループが含まれます。
+title: 'serviceprincipals: リスト ownedobjects。'
+description: serviceprincipal によって所有されているオブジェクトの一覧を取得します。  これには、アプリケーションまたはグループが含まれることがあります。
 localization_priority: Normal
 ms.openlocfilehash: 788ee23010825a657e8eb5664f11de1d2cf1b34a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537565"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: ownedObjects を一覧表示
+# <a name="serviceprincipals-list-ownedobjects"></a>serviceprincipals: リスト ownedobjects。
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ServicePrincipal が所有するオブジェクトの一覧を取得します。  これには、アプリケーションまたはグループが含まれます。
+serviceprincipal によって所有されているオブジェクトの一覧を取得します。  これには、アプリケーションまたはグループが含まれることがあります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

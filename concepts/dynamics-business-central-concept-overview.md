@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0602b02592bec5210f243f77654a52ba96e6746a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526154"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business Central API の概要 (プレビュー)
 Dynamics 365 business Central は、簡単に使用および適応できる、オールインワンのビジネス管理ソリューションであり、ビジネスへの接続と高度な意思決定を支援します。 これにより、ビジネスのエンドツーエンドのビューが提供され、財務を管理し、サプライチェーンを自動化してセキュリティで保護し、顧客サービスをさらに向上させ、プロジェクトを時間と予算の下に保持し、運用を最適化することができます。

@@ -5,23 +5,23 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5bab3c729795f70789c66b22899b412d5f6abdf0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566165"
 ---
 # <a name="get-contactfolder"></a>Get contactFolder
 
 連絡先フォルダー ID を使用して連絡先フォルダーを取得します。
 
-2 つシナリオは、アプリケーションが別のユーザーの連絡先フォルダーを取得する場所です。
+アプリで別のユーザーの連絡先フォルダーを取得するには、次の2つのシナリオがあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーとコンタクトフォルダーを共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
 
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
