@@ -1,44 +1,45 @@
 ---
-title: サイトを列挙します。
-description: 指定されたフィルター条件に一致し、オプションのクエリを実行している組織で利用できる [サイト] の一覧を表示します。
+title: サイトの列挙
+description: 指定したフィルター条件とクエリオプションに一致する組織内で利用可能な [sites] [] を一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545200"
 ---
-# <a name="enumerate-sites"></a><span data-ttu-id="b381a-103">サイトを列挙します。</span><span class="sxs-lookup"><span data-stu-id="b381a-103">Enumerate sites</span></span>
+# <a name="enumerate-sites"></a><span data-ttu-id="88d06-103">サイトの列挙</span><span class="sxs-lookup"><span data-stu-id="88d06-103">Enumerate sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b381a-104">指定されたフィルター条件に一致し、オプションのクエリを実行する組織で使用可能な[サイト][]を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b381a-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
+<span data-ttu-id="88d06-104">指定したフィルター条件とクエリオプションに一致する組織内の使用可能な[サイト][]を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="88d06-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
 
-<span data-ttu-id="b381a-105">次のクエリ オプションのみが現在サポートされています。</span><span class="sxs-lookup"><span data-stu-id="b381a-105">Only the following query options are currently supported:</span></span>
+<span data-ttu-id="88d06-105">次のクエリオプションのみが現在サポートされています。</span><span class="sxs-lookup"><span data-stu-id="88d06-105">Only the following query options are currently supported:</span></span>
 
-| <span data-ttu-id="b381a-106">フィルター ステートメント</span><span class="sxs-lookup"><span data-stu-id="b381a-106">Filter statement</span></span>             | <span data-ttu-id="b381a-107">SELECT ステートメント</span><span class="sxs-lookup"><span data-stu-id="b381a-107">Select statement</span></span>        | <span data-ttu-id="b381a-108">説明</span><span class="sxs-lookup"><span data-stu-id="b381a-108">Description</span></span>
+| <span data-ttu-id="88d06-106">Filter ステートメント</span><span class="sxs-lookup"><span data-stu-id="88d06-106">Filter statement</span></span>             | <span data-ttu-id="88d06-107">select ステートメント</span><span class="sxs-lookup"><span data-stu-id="88d06-107">Select statement</span></span>        | <span data-ttu-id="88d06-108">説明</span><span class="sxs-lookup"><span data-stu-id="88d06-108">Description</span></span>
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="b381a-109">組織内のすべてのルート レベルのサイト コレクションの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="b381a-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="b381a-110">各地域のホーム サイトを発見するのに便利です。</span><span class="sxs-lookup"><span data-stu-id="b381a-110">Useful for discovering the home site for each geography.</span></span>
+|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="88d06-109">組織内のすべてのルートレベルのサイトコレクションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="88d06-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="88d06-110">各地域のホームサイトを検出するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="88d06-110">Useful for discovering the home site for each geography.</span></span>
 
-<span data-ttu-id="b381a-111">さらに、特定のキーワードに一致するサイトを検索するのに 'と、サイト' のコレクションに対して**[検索][]** クエリを使用することがあります。</span><span class="sxs-lookup"><span data-stu-id="b381a-111">In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
+<span data-ttu-id="88d06-111">また、'/サイト ' コレクションに対して**[検索][]** クエリを使用して、特定のキーワードに一致するサイトを検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="88d06-111">In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
 
-[Search]: site-search.md
+[探す]: site-search.md
 [search]: site-search.md
+[サイト]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="b381a-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b381a-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="88d06-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="88d06-114">Permissions</span></span>
 
-<span data-ttu-id="b381a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b381a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="88d06-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88d06-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b381a-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b381a-117">Permission type</span></span>                        | <span data-ttu-id="b381a-118">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b381a-118">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="88d06-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="88d06-117">Permission type</span></span>                        | <span data-ttu-id="88d06-118">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="88d06-118">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="b381a-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b381a-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="b381a-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b381a-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="b381a-121">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b381a-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b381a-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b381a-122">Not supported.</span></span>
-|<span data-ttu-id="b381a-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b381a-123">Application</span></span>                            | <span data-ttu-id="b381a-124">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b381a-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="88d06-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="88d06-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="88d06-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d06-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="88d06-121">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="88d06-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88d06-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="88d06-122">Not supported.</span></span>
+|<span data-ttu-id="88d06-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="88d06-123">Application</span></span>                            | <span data-ttu-id="88d06-124">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d06-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b381a-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b381a-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88d06-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="88d06-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,9 +47,9 @@ ms.locfileid: "29520341"
 GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 ```
 
-## <a name="example"></a><span data-ttu-id="b381a-126">例</span><span class="sxs-lookup"><span data-stu-id="b381a-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="88d06-126">例</span><span class="sxs-lookup"><span data-stu-id="88d06-126">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b381a-127">要求</span><span class="sxs-lookup"><span data-stu-id="b381a-127">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88d06-127">要求</span><span class="sxs-lookup"><span data-stu-id="88d06-127">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
 
-#### <a name="response"></a><span data-ttu-id="b381a-128">応答</span><span class="sxs-lookup"><span data-stu-id="b381a-128">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88d06-128">応答</span><span class="sxs-lookup"><span data-stu-id="88d06-128">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

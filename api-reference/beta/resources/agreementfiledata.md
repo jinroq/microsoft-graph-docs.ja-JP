@@ -1,28 +1,28 @@
 ---
 title: agreementFileData リソースの種類
-description: Azure Active Directory の blob ファイルの使用許諾契約書の条項を (Azure AD) を表します。
+description: azure Active Directory (azure AD) 利用規約ファイルの blob を表します。
 localization_priority: Normal
 ms.openlocfilehash: bc0e7395875f64a3ee52e43b26da1a2df6276c9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517030"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544123"
 ---
-# <a name="agreementfiledata-resource-type"></a><span data-ttu-id="fc754-103">agreementFileData リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fc754-103">agreementFileData resource type</span></span>
+# <a name="agreementfiledata-resource-type"></a><span data-ttu-id="50369-103">agreementFileData リソースの種類</span><span class="sxs-lookup"><span data-stu-id="50369-103">agreementFileData resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fc754-104">Azure Active Directory の blob ファイルの使用許諾契約書の条項を (Azure AD) を表します。</span><span class="sxs-lookup"><span data-stu-id="fc754-104">Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file.</span></span>
+<span data-ttu-id="50369-104">azure Active Directory (azure AD) 利用規約ファイルの blob を表します。</span><span class="sxs-lookup"><span data-stu-id="50369-104">Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fc754-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fc754-105">Properties</span></span>
-| <span data-ttu-id="fc754-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="fc754-106">Method</span></span>       | <span data-ttu-id="fc754-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="fc754-107">Return Type</span></span> | <span data-ttu-id="fc754-108">説明</span><span class="sxs-lookup"><span data-stu-id="fc754-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="50369-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="50369-105">Properties</span></span>
+| <span data-ttu-id="50369-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="50369-106">Method</span></span>       | <span data-ttu-id="50369-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="50369-107">Return Type</span></span> | <span data-ttu-id="50369-108">説明</span><span class="sxs-lookup"><span data-stu-id="50369-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="fc754-109">data</span><span class="sxs-lookup"><span data-stu-id="fc754-109">data</span></span>|<span data-ttu-id="fc754-110">Binary</span><span class="sxs-lookup"><span data-stu-id="fc754-110">Binary</span></span>|<span data-ttu-id="fc754-111">PDF 文書の使用の条件を表すデータです。</span><span class="sxs-lookup"><span data-stu-id="fc754-111">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="fc754-112">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fc754-112">Read-only.</span></span>|
+|<span data-ttu-id="50369-109">data</span><span class="sxs-lookup"><span data-stu-id="50369-109">data</span></span>|<span data-ttu-id="50369-110">Binary</span><span class="sxs-lookup"><span data-stu-id="50369-110">Binary</span></span>|<span data-ttu-id="50369-111">使用条件を表すデータ。 PDF ドキュメント。</span><span class="sxs-lookup"><span data-stu-id="50369-111">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="50369-112">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="50369-112">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fc754-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fc754-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="50369-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="50369-113">JSON representation</span></span>
 
-<span data-ttu-id="fc754-114">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fc754-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="50369-114">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="50369-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

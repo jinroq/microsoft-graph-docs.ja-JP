@@ -3,28 +3,28 @@ title: 参加者リソースの種類
 description: イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
 localization_priority: Normal
 ms.openlocfilehash: 89c289a342bb0b761bed982f88d0f47470eaa237
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569418"
 ---
-# <a name="attendee-resource-type"></a><span data-ttu-id="edc30-104">参加者リソースの種類</span><span class="sxs-lookup"><span data-stu-id="edc30-104">attendee resource type</span></span>
+# <a name="attendee-resource-type"></a><span data-ttu-id="26212-104">参加者リソースの種類</span><span class="sxs-lookup"><span data-stu-id="26212-104">attendee resource type</span></span>
 
-<span data-ttu-id="edc30-105">イベントの参加者です。</span><span class="sxs-lookup"><span data-stu-id="edc30-105">An event attendee.</span></span> <span data-ttu-id="edc30-106">これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。</span><span class="sxs-lookup"><span data-stu-id="edc30-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
+<span data-ttu-id="26212-105">イベントの参加者です。</span><span class="sxs-lookup"><span data-stu-id="26212-105">An event attendee.</span></span> <span data-ttu-id="26212-106">これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。</span><span class="sxs-lookup"><span data-stu-id="26212-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
 
-<span data-ttu-id="edc30-107">[attendeeBase](attendeebase.md) から派生します。</span><span class="sxs-lookup"><span data-stu-id="edc30-107">Derived from [attendeeBase](attendeebase.md).</span></span>
+<span data-ttu-id="26212-107">[attendeeBase](attendeebase.md) から派生します。</span><span class="sxs-lookup"><span data-stu-id="26212-107">Derived from [attendeeBase](attendeebase.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="edc30-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edc30-108">Properties</span></span>
-| <span data-ttu-id="edc30-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edc30-109">Property</span></span>     | <span data-ttu-id="edc30-110">種類</span><span class="sxs-lookup"><span data-stu-id="edc30-110">Type</span></span>   |<span data-ttu-id="edc30-111">説明</span><span class="sxs-lookup"><span data-stu-id="edc30-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="26212-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26212-108">Properties</span></span>
+| <span data-ttu-id="26212-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26212-109">Property</span></span>     | <span data-ttu-id="26212-110">型</span><span class="sxs-lookup"><span data-stu-id="26212-110">Type</span></span>   |<span data-ttu-id="26212-111">説明</span><span class="sxs-lookup"><span data-stu-id="26212-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="edc30-112">status</span><span class="sxs-lookup"><span data-stu-id="edc30-112">status</span></span>|[<span data-ttu-id="edc30-113">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="edc30-113">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="edc30-114">イベントに対する参加者からの応答 (なし、承諾、辞退など) と応答が送信された日時。</span><span class="sxs-lookup"><span data-stu-id="edc30-114">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
-|<span data-ttu-id="edc30-115">type</span><span class="sxs-lookup"><span data-stu-id="edc30-115">type</span></span>|<span data-ttu-id="edc30-116">String</span><span class="sxs-lookup"><span data-stu-id="edc30-116">String</span></span>|<span data-ttu-id="edc30-117">参加者のタイプは、`required`、`optional`、`resource` です。</span><span class="sxs-lookup"><span data-stu-id="edc30-117">The attendee type: `required`, `optional`, `resource`.</span></span>|
-|<span data-ttu-id="edc30-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="edc30-118">emailAddress</span></span>|[<span data-ttu-id="edc30-119">emailAddress</span><span class="sxs-lookup"><span data-stu-id="edc30-119">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="edc30-120">参加者の名前と SMTP アドレスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="edc30-120">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="26212-112">status</span><span class="sxs-lookup"><span data-stu-id="26212-112">status</span></span>|[<span data-ttu-id="26212-113">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="26212-113">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="26212-114">イベントに対する参加者からの応答 (なし、承諾、辞退など) と応答が送信された日時。</span><span class="sxs-lookup"><span data-stu-id="26212-114">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
+|<span data-ttu-id="26212-115">type</span><span class="sxs-lookup"><span data-stu-id="26212-115">type</span></span>|<span data-ttu-id="26212-116">String</span><span class="sxs-lookup"><span data-stu-id="26212-116">String</span></span>|<span data-ttu-id="26212-117">参加者のタイプは、`required`、`optional`、`resource` です。</span><span class="sxs-lookup"><span data-stu-id="26212-117">The attendee type: `required`, `optional`, `resource`.</span></span>|
+|<span data-ttu-id="26212-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="26212-118">emailAddress</span></span>|[<span data-ttu-id="26212-119">emailAddress</span><span class="sxs-lookup"><span data-stu-id="26212-119">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="26212-120">参加者の名前と SMTP アドレスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="26212-120">Includes the name and SMTP address of the attendee.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="edc30-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="edc30-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26212-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="26212-121">JSON representation</span></span>
 
-<span data-ttu-id="edc30-122">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="edc30-122">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="26212-122">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="26212-122">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,30 +1,30 @@
 ---
 title: governanceRuleSetting リソースの種類
-description: ロールの設定で構成されたルールを表します。
+description: ロール設定が構成されているルールを表します。
 localization_priority: Normal
 ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547460"
 ---
-# <a name="governancerulesetting-resource-type"></a><span data-ttu-id="24c12-103">governanceRuleSetting リソースの種類</span><span class="sxs-lookup"><span data-stu-id="24c12-103">governanceRuleSetting resource type</span></span>
+# <a name="governancerulesetting-resource-type"></a><span data-ttu-id="777c8-103">governanceRuleSetting リソースの種類</span><span class="sxs-lookup"><span data-stu-id="777c8-103">governanceRuleSetting resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="24c12-104">ロールの設定で構成されたルールを表します。</span><span class="sxs-lookup"><span data-stu-id="24c12-104">Represents the rules that the role settings are composed of.</span></span>
+<span data-ttu-id="777c8-104">ロール設定が構成されているルールを表します。</span><span class="sxs-lookup"><span data-stu-id="777c8-104">Represents the rules that the role settings are composed of.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="24c12-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="24c12-105">Properties</span></span>
-|<span data-ttu-id="24c12-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="24c12-106">Property</span></span>      | <span data-ttu-id="24c12-107">型</span><span class="sxs-lookup"><span data-stu-id="24c12-107">Type</span></span>         |<span data-ttu-id="24c12-108">説明</span><span class="sxs-lookup"><span data-stu-id="24c12-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="777c8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="777c8-105">Properties</span></span>
+|<span data-ttu-id="777c8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="777c8-106">Property</span></span>      | <span data-ttu-id="777c8-107">型</span><span class="sxs-lookup"><span data-stu-id="777c8-107">Type</span></span>         |<span data-ttu-id="777c8-108">説明</span><span class="sxs-lookup"><span data-stu-id="777c8-108">Description</span></span>|
 |:-------------|:-------------|:----------|
-|<span data-ttu-id="24c12-109">ruleIdentifier</span><span class="sxs-lookup"><span data-stu-id="24c12-109">ruleIdentifier</span></span>|<span data-ttu-id="24c12-110">String</span><span class="sxs-lookup"><span data-stu-id="24c12-110">String</span></span>        |<span data-ttu-id="24c12-111">ルールの id です。</span><span class="sxs-lookup"><span data-stu-id="24c12-111">The id of the rule.</span></span> <span data-ttu-id="24c12-112">たとえば、``ExpirationRule``と``MfaRule``。</span><span class="sxs-lookup"><span data-stu-id="24c12-112">For example, ``ExpirationRule`` and ``MfaRule``.</span></span>|
-|<span data-ttu-id="24c12-113">setting</span><span class="sxs-lookup"><span data-stu-id="24c12-113">setting</span></span>       |<span data-ttu-id="24c12-114">String</span><span class="sxs-lookup"><span data-stu-id="24c12-114">String</span></span>        |<span data-ttu-id="24c12-115">ルールの設定をします。</span><span class="sxs-lookup"><span data-stu-id="24c12-115">The settings of the rule.</span></span> <span data-ttu-id="24c12-116">値は、Parameter_Name:Parameter_Value の形式でのペアの一覧を JSON 文字列です。</span><span class="sxs-lookup"><span data-stu-id="24c12-116">The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value.</span></span> <span data-ttu-id="24c12-117">たとえば、`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}` のように指定します。</span><span class="sxs-lookup"><span data-stu-id="24c12-117">For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span></span>|
+|<span data-ttu-id="777c8-109">ruleIdentifier</span><span class="sxs-lookup"><span data-stu-id="777c8-109">ruleIdentifier</span></span>|<span data-ttu-id="777c8-110">String</span><span class="sxs-lookup"><span data-stu-id="777c8-110">String</span></span>        |<span data-ttu-id="777c8-111">ルールの id。</span><span class="sxs-lookup"><span data-stu-id="777c8-111">The id of the rule.</span></span> <span data-ttu-id="777c8-112">たとえば、 ``ExpirationRule``と``MfaRule``のようになります。</span><span class="sxs-lookup"><span data-stu-id="777c8-112">For example, ``ExpirationRule`` and ``MfaRule``.</span></span>|
+|<span data-ttu-id="777c8-113">setting</span><span class="sxs-lookup"><span data-stu-id="777c8-113">setting</span></span>       |<span data-ttu-id="777c8-114">String</span><span class="sxs-lookup"><span data-stu-id="777c8-114">String</span></span>        |<span data-ttu-id="777c8-115">ルールの設定。</span><span class="sxs-lookup"><span data-stu-id="777c8-115">The settings of the rule.</span></span> <span data-ttu-id="777c8-116">この値は、Parameter_Name: Parameter_Value という形式のペアのリストを含む JSON 文字列です。</span><span class="sxs-lookup"><span data-stu-id="777c8-116">The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value.</span></span> <span data-ttu-id="777c8-117">たとえば、`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}` のように指定します。</span><span class="sxs-lookup"><span data-stu-id="777c8-117">For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="24c12-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="24c12-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="777c8-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="777c8-118">JSON representation</span></span>
 
-<span data-ttu-id="24c12-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="24c12-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="777c8-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="777c8-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,98 +1,105 @@
 ---
 title: multiValueLegacyExtendedProperty を取得する
-description: 展開 ' です。
+description: '[] を展開します。'
 localization_priority: Normal
 ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540262"
 ---
-# <a name="get-multivaluelegacyextendedproperty"></a><span data-ttu-id="10ff2-103">multiValueLegacyExtendedProperty を取得する</span><span class="sxs-lookup"><span data-stu-id="10ff2-103">Get multiValueLegacyExtendedProperty</span></span>
+# <a name="get-multivaluelegacyextendedproperty"></a><span data-ttu-id="ad622-103">multiValueLegacyExtendedProperty を取得する</span><span class="sxs-lookup"><span data-stu-id="ad622-103">Get multiValueLegacyExtendedProperty</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="10ff2-104">`$expand` を使用して、複数値の拡張プロパティを含むリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="10ff2-104">Get a resource instance that contains a multi-value extended property by using `$expand`.</span></span>
+<span data-ttu-id="ad622-104">`$expand` を使用して、複数値の拡張プロパティを含むリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ad622-104">Get a resource instance that contains a multi-value extended property by using `$expand`.</span></span>
 
-<span data-ttu-id="10ff2-105">クエリ パラメーター `$expand` を使用すると、指示された拡張プロパティで展開された特定のインスタンスを取得できます。</span><span class="sxs-lookup"><span data-stu-id="10ff2-105">Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended property.</span></span> <span data-ttu-id="10ff2-106">これは、現時点で、拡張プロパティを表す [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトを取得する唯一の方法です。</span><span class="sxs-lookup"><span data-stu-id="10ff2-106">This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object that represents an extended property.</span></span>
+<span data-ttu-id="ad622-105">クエリ パラメーター `$expand` を使用すると、指示された拡張プロパティで展開された特定のインスタンスを取得できます。</span><span class="sxs-lookup"><span data-stu-id="ad622-105">Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended property.</span></span> <span data-ttu-id="ad622-106">これは、現時点で、拡張プロパティを表す [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトを取得する唯一の方法です。</span><span class="sxs-lookup"><span data-stu-id="ad622-106">This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object that represents an extended property.</span></span>
 
-<span data-ttu-id="10ff2-107">次のユーザー リソースがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="10ff2-107">The following user resources are supported:</span></span>
+<span data-ttu-id="ad622-107">次のユーザー リソースがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="ad622-107">The following user resources are supported:</span></span>
 
-- [<span data-ttu-id="10ff2-108">calendar</span><span class="sxs-lookup"><span data-stu-id="10ff2-108">calendar</span></span>](../resources/calendar.md)
-- [<span data-ttu-id="10ff2-109">contact</span><span class="sxs-lookup"><span data-stu-id="10ff2-109">contact</span></span>](../resources/contact.md)
-- [<span data-ttu-id="10ff2-110">contactFolder</span><span class="sxs-lookup"><span data-stu-id="10ff2-110">contactFolder</span></span>](../resources/contactfolder.md) 
-- [<span data-ttu-id="10ff2-111">event</span><span class="sxs-lookup"><span data-stu-id="10ff2-111">event</span></span>](../resources/event.md)
-- [<span data-ttu-id="10ff2-112">mailFolder</span><span class="sxs-lookup"><span data-stu-id="10ff2-112">mailFolder</span></span>](../resources/mailfolder.md)
-- [<span data-ttu-id="10ff2-113">message</span><span class="sxs-lookup"><span data-stu-id="10ff2-113">message</span></span>](../resources/message.md) 
-- [<span data-ttu-id="10ff2-114">Outlook タスク</span><span class="sxs-lookup"><span data-stu-id="10ff2-114">Outlook task</span></span>](../resources/outlooktask.md)
-- [<span data-ttu-id="10ff2-115">Outlook の仕事フォルダー</span><span class="sxs-lookup"><span data-stu-id="10ff2-115">Outlook task folder</span></span>](../resources/outlooktaskfolder.md)
+- [<span data-ttu-id="ad622-108">calendar</span><span class="sxs-lookup"><span data-stu-id="ad622-108">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="ad622-109">contact</span><span class="sxs-lookup"><span data-stu-id="ad622-109">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="ad622-110">contactFolder</span><span class="sxs-lookup"><span data-stu-id="ad622-110">contactFolder</span></span>](../resources/contactfolder.md) 
+- [<span data-ttu-id="ad622-111">イベント</span><span class="sxs-lookup"><span data-stu-id="ad622-111">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="ad622-112">mailFolder</span><span class="sxs-lookup"><span data-stu-id="ad622-112">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="ad622-113">メッセージ</span><span class="sxs-lookup"><span data-stu-id="ad622-113">message</span></span>](../resources/message.md) 
+- [<span data-ttu-id="ad622-114">Outlook タスク</span><span class="sxs-lookup"><span data-stu-id="ad622-114">Outlook task</span></span>](../resources/outlooktask.md)
+- [<span data-ttu-id="ad622-115">Outlook タスク フォルダー</span><span class="sxs-lookup"><span data-stu-id="ad622-115">Outlook task folder</span></span>](../resources/outlooktaskfolder.md)
 
-<span data-ttu-id="10ff2-116">次のグループ リソースもサポートされます。</span><span class="sxs-lookup"><span data-stu-id="10ff2-116">As well as the following group resources:</span></span>
+<span data-ttu-id="ad622-116">次のグループ リソースもサポートされます。</span><span class="sxs-lookup"><span data-stu-id="ad622-116">As well as the following group resources:</span></span>
 
-- <span data-ttu-id="10ff2-117">グループ [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-117">group [calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="10ff2-118">グループ [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-118">group [event](../resources/event.md)</span></span>
-- <span data-ttu-id="10ff2-119">グループ [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-119">group [post](../resources/post.md)</span></span> 
+- <span data-ttu-id="ad622-117">グループ [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-117">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="ad622-118">グループ [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-118">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="ad622-119">グループ [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-119">group [post](../resources/post.md)</span></span> 
 
-<span data-ttu-id="10ff2-120">オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10ff2-120">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+<span data-ttu-id="ad622-120">オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad622-120">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10ff2-121">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="10ff2-121">Permissions</span></span>
-<span data-ttu-id="10ff2-122">拡張プロパティを受信するリソースに応じて、アクセス許可が委任された (アプリケーション) を要求を入力する、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。</span><span class="sxs-lookup"><span data-stu-id="10ff2-122">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="10ff2-123">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10ff2-123">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad622-121">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ad622-121">Permissions</span></span>
+<span data-ttu-id="ad622-122">この API を呼び出すには、拡張プロパティの取得元のリソースと、要求したアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可が最低限必要です。</span><span class="sxs-lookup"><span data-stu-id="ad622-122">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="ad622-123">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad622-123">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="10ff2-124">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="10ff2-124">Supported resource</span></span> | <span data-ttu-id="10ff2-125">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="10ff2-125">Delegated (work or school account)</span></span> | <span data-ttu-id="10ff2-126">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="10ff2-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10ff2-127">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="10ff2-127">Application</span></span> |
+| <span data-ttu-id="ad622-124">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="ad622-124">Supported resource</span></span> | <span data-ttu-id="ad622-125">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ad622-125">Delegated (work or school account)</span></span> | <span data-ttu-id="ad622-126">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ad622-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad622-127">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ad622-127">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="10ff2-128">calendar</span><span class="sxs-lookup"><span data-stu-id="10ff2-128">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="10ff2-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-129">Calendars.Read</span></span> | <span data-ttu-id="10ff2-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-130">Calendars.Read</span></span> | <span data-ttu-id="10ff2-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-131">Calendars.Read</span></span> |
-| [<span data-ttu-id="10ff2-132">連絡先</span><span class="sxs-lookup"><span data-stu-id="10ff2-132">contact</span></span>](../resources/contact.md) | <span data-ttu-id="10ff2-133">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-133">Contacts.Read</span></span> | <span data-ttu-id="10ff2-134">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-134">Contacts.Read</span></span> | <span data-ttu-id="10ff2-135">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-135">Contacts.Read</span></span> |
-| [<span data-ttu-id="10ff2-136">contactFolder</span><span class="sxs-lookup"><span data-stu-id="10ff2-136">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="10ff2-137">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-137">Contacts.Read</span></span> | <span data-ttu-id="10ff2-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-138">Contacts.Read</span></span> | <span data-ttu-id="10ff2-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-139">Contacts.Read</span></span> |
-| [<span data-ttu-id="10ff2-140">event</span><span class="sxs-lookup"><span data-stu-id="10ff2-140">event</span></span>](../resources/event.md) | <span data-ttu-id="10ff2-141">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-141">Calendars.Read</span></span> | <span data-ttu-id="10ff2-142">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-142">Calendars.Read</span></span> |  <span data-ttu-id="10ff2-143">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-143">Calendars.Read</span></span>|
-| <span data-ttu-id="10ff2-144">グループ [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-144">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="10ff2-145">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="10ff2-145">Group.Read.All</span></span> | <span data-ttu-id="10ff2-146">使用不可</span><span class="sxs-lookup"><span data-stu-id="10ff2-146">Not supported</span></span> | <span data-ttu-id="10ff2-147">使用不可</span><span class="sxs-lookup"><span data-stu-id="10ff2-147">Not supported</span></span> |
-| <span data-ttu-id="10ff2-148">グループ [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-148">group [event](../resources/event.md)</span></span> | <span data-ttu-id="10ff2-149">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="10ff2-149">Group.Read.All</span></span> | <span data-ttu-id="10ff2-150">使用不可</span><span class="sxs-lookup"><span data-stu-id="10ff2-150">Not supported</span></span> | <span data-ttu-id="10ff2-151">使用不可</span><span class="sxs-lookup"><span data-stu-id="10ff2-151">Not supported</span></span> |
-| <span data-ttu-id="10ff2-152">グループ [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="10ff2-152">group [post](../resources/post.md)</span></span> | <span data-ttu-id="10ff2-153">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="10ff2-153">Group.Read.All</span></span> | <span data-ttu-id="10ff2-154">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="10ff2-154">Not supported</span></span> | <span data-ttu-id="10ff2-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="10ff2-155">Group.Read.All</span></span> |
-| [<span data-ttu-id="10ff2-156">mailFolder</span><span class="sxs-lookup"><span data-stu-id="10ff2-156">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="10ff2-157">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-157">Mail.Read</span></span> | <span data-ttu-id="10ff2-158">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-158">Mail.Read</span></span> | <span data-ttu-id="10ff2-159">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-159">Mail.Read</span></span> |
-| [<span data-ttu-id="10ff2-160">message</span><span class="sxs-lookup"><span data-stu-id="10ff2-160">message</span></span>](../resources/message.md) | <span data-ttu-id="10ff2-161">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-161">Mail.Read</span></span> | <span data-ttu-id="10ff2-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-162">Mail.Read</span></span> | <span data-ttu-id="10ff2-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-163">Mail.Read</span></span> |
-| [<span data-ttu-id="10ff2-164">Outlook タスク</span><span class="sxs-lookup"><span data-stu-id="10ff2-164">Outlook task</span></span>](../resources/outlooktask.md) | <span data-ttu-id="10ff2-165">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-165">Tasks.Read</span></span> | <span data-ttu-id="10ff2-166">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-166">Tasks.Read</span></span> | <span data-ttu-id="10ff2-167">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="10ff2-167">Not supported</span></span> |
-| [<span data-ttu-id="10ff2-168">Outlook の仕事フォルダー</span><span class="sxs-lookup"><span data-stu-id="10ff2-168">Outlook task folder</span></span>](../resources/outlooktaskfolder.md) | <span data-ttu-id="10ff2-169">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-169">Tasks.Read</span></span> | <span data-ttu-id="10ff2-170">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10ff2-170">Tasks.Read</span></span> | <span data-ttu-id="10ff2-171">非サポート</span><span class="sxs-lookup"><span data-stu-id="10ff2-171">Not supported</span></span> |
+| [<span data-ttu-id="ad622-128">calendar</span><span class="sxs-lookup"><span data-stu-id="ad622-128">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="ad622-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-129">Calendars.Read</span></span> | <span data-ttu-id="ad622-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-130">Calendars.Read</span></span> | <span data-ttu-id="ad622-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-131">Calendars.Read</span></span> |
+| [<span data-ttu-id="ad622-132">連絡先</span><span class="sxs-lookup"><span data-stu-id="ad622-132">contact</span></span>](../resources/contact.md) | <span data-ttu-id="ad622-133">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-133">Contacts.Read</span></span> | <span data-ttu-id="ad622-134">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-134">Contacts.Read</span></span> | <span data-ttu-id="ad622-135">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-135">Contacts.Read</span></span> |
+| [<span data-ttu-id="ad622-136">contactFolder</span><span class="sxs-lookup"><span data-stu-id="ad622-136">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="ad622-137">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-137">Contacts.Read</span></span> | <span data-ttu-id="ad622-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-138">Contacts.Read</span></span> | <span data-ttu-id="ad622-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-139">Contacts.Read</span></span> |
+| [<span data-ttu-id="ad622-140">イベント</span><span class="sxs-lookup"><span data-stu-id="ad622-140">event</span></span>](../resources/event.md) | <span data-ttu-id="ad622-141">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-141">Calendars.Read</span></span> | <span data-ttu-id="ad622-142">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-142">Calendars.Read</span></span> |  <span data-ttu-id="ad622-143">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-143">Calendars.Read</span></span>|
+| <span data-ttu-id="ad622-144">グループ [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-144">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="ad622-145">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ad622-145">Group.Read.All</span></span> | <span data-ttu-id="ad622-146">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-146">Not supported</span></span> | <span data-ttu-id="ad622-147">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-147">Not supported</span></span> |
+| <span data-ttu-id="ad622-148">グループ [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-148">group [event](../resources/event.md)</span></span> | <span data-ttu-id="ad622-149">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ad622-149">Group.Read.All</span></span> | <span data-ttu-id="ad622-150">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-150">Not supported</span></span> | <span data-ttu-id="ad622-151">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-151">Not supported</span></span> |
+| <span data-ttu-id="ad622-152">グループ [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="ad622-152">group [post](../resources/post.md)</span></span> | <span data-ttu-id="ad622-153">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ad622-153">Group.Read.All</span></span> | <span data-ttu-id="ad622-154">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-154">Not supported</span></span> | <span data-ttu-id="ad622-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ad622-155">Group.Read.All</span></span> |
+| [<span data-ttu-id="ad622-156">mailFolder</span><span class="sxs-lookup"><span data-stu-id="ad622-156">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="ad622-157">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-157">Mail.Read</span></span> | <span data-ttu-id="ad622-158">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-158">Mail.Read</span></span> | <span data-ttu-id="ad622-159">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-159">Mail.Read</span></span> |
+| [<span data-ttu-id="ad622-160">メッセージ</span><span class="sxs-lookup"><span data-stu-id="ad622-160">message</span></span>](../resources/message.md) | <span data-ttu-id="ad622-161">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-161">Mail.Read</span></span> | <span data-ttu-id="ad622-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-162">Mail.Read</span></span> | <span data-ttu-id="ad622-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-163">Mail.Read</span></span> |
+| [<span data-ttu-id="ad622-164">Outlook タスク</span><span class="sxs-lookup"><span data-stu-id="ad622-164">Outlook task</span></span>](../resources/outlooktask.md) | <span data-ttu-id="ad622-165">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-165">Tasks.Read</span></span> | <span data-ttu-id="ad622-166">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-166">Tasks.Read</span></span> | <span data-ttu-id="ad622-167">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ad622-167">Not supported</span></span> |
+| [<span data-ttu-id="ad622-168">Outlook タスク フォルダー</span><span class="sxs-lookup"><span data-stu-id="ad622-168">Outlook task folder</span></span>](../resources/outlooktaskfolder.md) | <span data-ttu-id="ad622-169">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-169">Tasks.Read</span></span> | <span data-ttu-id="ad622-170">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ad622-170">Tasks.Read</span></span> | <span data-ttu-id="ad622-171">非サポート</span><span class="sxs-lookup"><span data-stu-id="ad622-171">Not supported</span></span> |
  
-## <a name="http-request"></a><span data-ttu-id="10ff2-172">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="10ff2-172">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad622-172">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ad622-172">HTTP request</span></span>
 
-<span data-ttu-id="10ff2-p103">**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="10ff2-p103">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
+<span data-ttu-id="ad622-p103">**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="ad622-p103">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
 
-<span data-ttu-id="10ff2-175">**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-175">Get a **message** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-175">**message** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-175">Get a **message** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="10ff2-176">**MailFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-176">Get a **mailFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-176">**mailFolder** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-176">Get a **mailFolder** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="10ff2-177">**イベント**インスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-177">Get an **event** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-177">**event** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-177">Get an **event** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="10ff2-178">**カレンダー**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-178">Get a **calendar** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-178">**calendar** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-178">Get a **calendar** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="10ff2-179">**連絡**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-179">Get a **contact** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-179">**contact** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-179">Get a **contact** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="10ff2-180">**ContactFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-180">Get a **contactFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-180">**contactFolder** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-180">Get a **contactFolder** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="10ff2-181">**OutlookTask**インスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-181">Get an **outlookTask** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-181">**outlooktask**インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ad622-181">Get an **outlookTask** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -101,7 +108,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="10ff2-182">**OutlookTaskFolder**インスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-182">Get an **outlookTaskFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-182">**outlooktaskfolder**インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ad622-182">Get an **outlookTaskFolder** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,49 +117,51 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="10ff2-183">グループ**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-183">Get a group **event** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-183">グループ **event** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-183">Get a group **event** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="10ff2-184">グループの**投稿**のインスタンスを取得します。<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="10ff2-184">Get a group **post** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="ad622-184">グループ **post** インスタンスの取得:</span><span class="sxs-lookup"><span data-stu-id="ad622-184">Get a group **post** instance:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="10ff2-185">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="10ff2-185">Path parameters</span></span>
-|<span data-ttu-id="10ff2-186">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="10ff2-186">**Parameter**</span></span>|<span data-ttu-id="10ff2-187">**型**</span><span class="sxs-lookup"><span data-stu-id="10ff2-187">**Type**</span></span>|<span data-ttu-id="10ff2-188">**説明**</span><span class="sxs-lookup"><span data-stu-id="10ff2-188">**Description**</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="ad622-185">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="ad622-185">Path parameters</span></span>
+|<span data-ttu-id="ad622-186">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="ad622-186">**Parameter**</span></span>|<span data-ttu-id="ad622-187">**型**</span><span class="sxs-lookup"><span data-stu-id="ad622-187">**Type**</span></span>|<span data-ttu-id="ad622-188">**説明**</span><span class="sxs-lookup"><span data-stu-id="ad622-188">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="10ff2-189">id_value</span><span class="sxs-lookup"><span data-stu-id="10ff2-189">id_value</span></span>|<span data-ttu-id="10ff2-190">String</span><span class="sxs-lookup"><span data-stu-id="10ff2-190">String</span></span>|<span data-ttu-id="10ff2-p104">照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。</span><span class="sxs-lookup"><span data-stu-id="10ff2-p104">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="ad622-189">id_value</span><span class="sxs-lookup"><span data-stu-id="ad622-189">id_value</span></span>|<span data-ttu-id="ad622-190">String</span><span class="sxs-lookup"><span data-stu-id="ad622-190">String</span></span>|<span data-ttu-id="ad622-p104">照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。</span><span class="sxs-lookup"><span data-stu-id="ad622-p104">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="10ff2-195">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="10ff2-195">Request headers</span></span>
-| <span data-ttu-id="10ff2-196">名前</span><span class="sxs-lookup"><span data-stu-id="10ff2-196">Name</span></span>      |<span data-ttu-id="10ff2-197">説明</span><span class="sxs-lookup"><span data-stu-id="10ff2-197">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad622-195">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ad622-195">Request headers</span></span>
+| <span data-ttu-id="ad622-196">名前</span><span class="sxs-lookup"><span data-stu-id="ad622-196">Name</span></span>      |<span data-ttu-id="ad622-197">説明</span><span class="sxs-lookup"><span data-stu-id="ad622-197">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="10ff2-198">Authorization</span><span class="sxs-lookup"><span data-stu-id="10ff2-198">Authorization</span></span>  | <span data-ttu-id="10ff2-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="10ff2-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ad622-198">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad622-198">Authorization</span></span>  | <span data-ttu-id="ad622-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ad622-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="10ff2-201">要求本文</span><span class="sxs-lookup"><span data-stu-id="10ff2-201">Request body</span></span>
-<span data-ttu-id="10ff2-202">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="10ff2-202">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad622-201">要求本文</span><span class="sxs-lookup"><span data-stu-id="ad622-201">Request body</span></span>
+<span data-ttu-id="ad622-202">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ad622-202">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10ff2-203">応答</span><span class="sxs-lookup"><span data-stu-id="10ff2-203">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad622-203">応答</span><span class="sxs-lookup"><span data-stu-id="ad622-203">Response</span></span>
 
-<span data-ttu-id="10ff2-204">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="10ff2-204">If successful, this method returns a `200 OK` response code.</span></span> 
+<span data-ttu-id="ad622-204">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ad622-204">If successful, this method returns a `200 OK` response code.</span></span> 
 
-<span data-ttu-id="10ff2-205">応答本文には、一致する [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトで展開された、要求したリソース インスタンスで表されるオブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="10ff2-205">The response body includes an object representing the requested resource instance, expanded with the matching [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.</span></span>
+<span data-ttu-id="ad622-205">応答本文には、一致する [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトで展開された、要求したリソース インスタンスで表されるオブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="ad622-205">The response body includes an object representing the requested resource instance, expanded with the matching [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10ff2-206">例</span><span class="sxs-lookup"><span data-stu-id="10ff2-206">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="10ff2-207">要求</span><span class="sxs-lookup"><span data-stu-id="10ff2-207">Request</span></span>
-<span data-ttu-id="10ff2-p106">この例では、複数値の拡張プロパティを含めることで指定されたイベントを取得して展開します。フィルターは、**id** が文字列 `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` と一致する拡張プロパティを返します (ここでは、読みやすくするため URL エンコードを削除しています)。</span><span class="sxs-lookup"><span data-stu-id="10ff2-p106">This example gets and expands the specified event by including a multi-value extended property. The filter returns the extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (with URL encoding removed here for ease of reading).</span></span>
+## <a name="example"></a><span data-ttu-id="ad622-206">例</span><span class="sxs-lookup"><span data-stu-id="ad622-206">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ad622-207">要求</span><span class="sxs-lookup"><span data-stu-id="ad622-207">Request</span></span>
+<span data-ttu-id="ad622-p106">この例では、複数値の拡張プロパティを含めることで指定されたイベントを取得して展開します。フィルターは、**id** が文字列 `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` と一致する拡張プロパティを返します (ここでは、読みやすくするため URL エンコードを削除しています)。</span><span class="sxs-lookup"><span data-stu-id="ad622-p106">This example gets and expands the specified event by including a multi-value extended property. The filter returns the extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (with URL encoding removed here for ease of reading).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
-##### <a name="response"></a><span data-ttu-id="10ff2-210">応答</span><span class="sxs-lookup"><span data-stu-id="10ff2-210">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ad622-210">応答</span><span class="sxs-lookup"><span data-stu-id="ad622-210">Response</span></span>
 
-<span data-ttu-id="10ff2-211">応答本文には、指定されたイベントのすべてのプロパティと、フィルターから返される拡張プロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="10ff2-211">The response body includes all the properties of the specified event and extended property returned from the filter.</span></span>
+<span data-ttu-id="ad622-211">応答本文には、指定されたイベントのすべてのプロパティと、フィルターから返される拡張プロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ad622-211">The response body includes all the properties of the specified event and extended property returned from the filter.</span></span>
 
-<span data-ttu-id="10ff2-p107">注:簡潔にするために、ここに示す**イベント** オブジェクトは切り詰められています。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="10ff2-p107">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ad622-p107">注:簡潔にするために、ここに示す**イベント** オブジェクトは切り詰められています。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ad622-p107">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http

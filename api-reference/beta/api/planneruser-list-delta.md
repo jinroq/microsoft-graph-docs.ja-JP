@@ -1,39 +1,39 @@
 ---
-title: 'プランナー: デルタ'
+title: 'Planner: delta'
 description: ユーザーが購読しているオブジェクトへの変更を取得します。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 772a5d487f48b1552707da45729a84c7fdf7da2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546835"
 ---
-# <a name="planner-delta"></a><span data-ttu-id="805e7-103">プランナー: デルタ</span><span class="sxs-lookup"><span data-stu-id="805e7-103">Planner: delta</span></span>
+# <a name="planner-delta"></a><span data-ttu-id="3af52-103">Planner: delta</span><span class="sxs-lookup"><span data-stu-id="3af52-103">Planner: delta</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="805e7-104">ユーザーは、[購読して](../resources/planner-overview.md#track-changes-using-delta-query)いるオブジェクトへの変更を取得します。</span><span class="sxs-lookup"><span data-stu-id="805e7-104">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
+<span data-ttu-id="3af52-104">ユーザーが[購読](../resources/planner-overview.md#track-changes-using-delta-query)しているオブジェクトへの変更を取得します。</span><span class="sxs-lookup"><span data-stu-id="3af52-104">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
 
-<span data-ttu-id="805e7-105">このメソッドは、時間の経過と共に計画内でユーザーをからアクセスできるオブジェクトに対する変更を追跡するアプリケーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="805e7-105">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
+<span data-ttu-id="3af52-105">このメソッドを使用すると、ユーザーが随時プランナー内からアクセスできるオブジェクトへの変更をアプリケーションで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="3af52-105">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
 
-<span data-ttu-id="805e7-106">このメソッドの戻り値には、プランナーからのオブジェクトの種類を hetergenous が含まれている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="805e7-106">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
+<span data-ttu-id="3af52-106">このメソッドの戻り値には、Planner からの異種の種類のオブジェクトが含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="3af52-106">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
 
-<span data-ttu-id="805e7-107">グラフ データの変更の追跡の詳細については、[グラフ データの変更を追跡するためにデルタのクエリを使用する](/graph/delta-query-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="805e7-107">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
+<span data-ttu-id="3af52-107">microsoft graph データでの変更履歴の追跡の詳細については、「 [microsoft graph のデータの変更を追跡するためにデルタクエリを使用する](/graph/delta-query-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3af52-107">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="805e7-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="805e7-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3af52-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3af52-108">Permissions</span></span>
 
-<span data-ttu-id="805e7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="805e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3af52-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3af52-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="805e7-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="805e7-111">Permission type</span></span>      | <span data-ttu-id="805e7-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="805e7-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3af52-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3af52-111">Permission type</span></span>      | <span data-ttu-id="3af52-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3af52-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="805e7-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="805e7-113">Delegated (work or school account)</span></span> | <span data-ttu-id="805e7-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="805e7-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="805e7-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="805e7-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="805e7-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="805e7-116">Not supported.</span></span>    |
-|<span data-ttu-id="805e7-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="805e7-117">Application</span></span> | <span data-ttu-id="805e7-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="805e7-118">Not supported.</span></span> |
+|<span data-ttu-id="3af52-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3af52-113">Delegated (work or school account)</span></span> | <span data-ttu-id="3af52-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3af52-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3af52-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3af52-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3af52-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3af52-116">Not supported.</span></span>    |
+|<span data-ttu-id="3af52-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3af52-117">Application</span></span> | <span data-ttu-id="3af52-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3af52-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="805e7-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="805e7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3af52-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3af52-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,33 +42,33 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-<span data-ttu-id="805e7-120">追加のクエリ パラメーターが (次のように`$select`、 `$expand`、または`$filter`) デルタ ・ クエリのプランナーの実装では現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="805e7-120">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
+<span data-ttu-id="3af52-120">プランナーのデルタクエリの実装で`$select`は`$expand`、追加`$filter`のクエリパラメーター (、、など) は現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3af52-120">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="805e7-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="805e7-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3af52-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3af52-121">Request headers</span></span>
 
-| <span data-ttu-id="805e7-122">名前</span><span class="sxs-lookup"><span data-stu-id="805e7-122">Name</span></span>           |<span data-ttu-id="805e7-123">説明</span><span class="sxs-lookup"><span data-stu-id="805e7-123">Description</span></span>                |
+| <span data-ttu-id="3af52-122">名前</span><span class="sxs-lookup"><span data-stu-id="3af52-122">Name</span></span>           |<span data-ttu-id="3af52-123">説明</span><span class="sxs-lookup"><span data-stu-id="3af52-123">Description</span></span>                |
 |:---------------|:--------------------------|
-| <span data-ttu-id="805e7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="805e7-124">Authorization</span></span>  | <span data-ttu-id="805e7-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="805e7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3af52-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3af52-124">Authorization</span></span>  | <span data-ttu-id="3af52-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3af52-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="805e7-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="805e7-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3af52-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="3af52-127">Request body</span></span>
 
-<span data-ttu-id="805e7-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="805e7-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3af52-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3af52-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="805e7-129">応答</span><span class="sxs-lookup"><span data-stu-id="805e7-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3af52-129">応答</span><span class="sxs-lookup"><span data-stu-id="3af52-129">Response</span></span>
 
-<span data-ttu-id="805e7-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体と差分同期のリンク先に移動内のオブジェクトに適用される変更の集まりです。</span><span class="sxs-lookup"><span data-stu-id="805e7-130">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
+<span data-ttu-id="3af52-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文のオブジェクトに適用される変更のコレクションと、それに続くデルタ同期リンクを返します。</span><span class="sxs-lookup"><span data-stu-id="3af52-130">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
 
-<span data-ttu-id="805e7-131">場合、`deltaLink`の呼び出し元の使用の形式が正しくありません、このエンドポイントが HTTP 400 を返すことです。</span><span class="sxs-lookup"><span data-stu-id="805e7-131">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
+<span data-ttu-id="3af52-131">発信者`deltaLink`が使用しているの形式が正しくない場合、このエンドポイントは HTTP 400 を返します。</span><span class="sxs-lookup"><span data-stu-id="3af52-131">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
 
-<span data-ttu-id="805e7-132">場合、`deltaLink`を呼び出し元の使用が古すぎるため、このエンドポイントは、HTTP 410 を返されます。</span><span class="sxs-lookup"><span data-stu-id="805e7-132">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
+<span data-ttu-id="3af52-132">呼び出し元`deltaLink`が使用しているが古すぎる場合、このエンドポイントは HTTP 410 を返します。</span><span class="sxs-lookup"><span data-stu-id="3af52-132">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
 
-<span data-ttu-id="805e7-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="805e7-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="3af52-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3af52-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="805e7-136">例</span><span class="sxs-lookup"><span data-stu-id="805e7-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3af52-136">例</span><span class="sxs-lookup"><span data-stu-id="3af52-136">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="805e7-137">要求</span><span class="sxs-lookup"><span data-stu-id="805e7-137">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="3af52-137">要求</span><span class="sxs-lookup"><span data-stu-id="3af52-137">Request</span></span>
 
-<span data-ttu-id="805e7-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="805e7-138">Here is an example of the request.</span></span>
+<span data-ttu-id="3af52-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3af52-138">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -79,10 +79,10 @@ GET /users/<id>/planner/all/delta
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
 
-##### <a name="response"></a><span data-ttu-id="805e7-139">応答</span><span class="sxs-lookup"><span data-stu-id="805e7-139">Response</span></span>
-<span data-ttu-id="805e7-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="805e7-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3af52-139">応答</span><span class="sxs-lookup"><span data-stu-id="3af52-139">Response</span></span>
+<span data-ttu-id="3af52-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3af52-140">Here is an example of the response.</span></span>
 
-><span data-ttu-id="805e7-141">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="805e7-141">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="805e7-142">変更されたすべてのプロパティは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="805e7-142">All the changed properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3af52-141">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="3af52-141">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="3af52-142">変更されたすべてのプロパティは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3af52-142">All the changed properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

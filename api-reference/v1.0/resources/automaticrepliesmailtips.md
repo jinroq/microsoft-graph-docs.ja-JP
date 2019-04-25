@@ -1,30 +1,30 @@
 ---
 title: automaticRepliesMailTips リソースの種類
-description: メールボックスに設定されているすべての自動返信のメール ヒントです。
+description: メールボックスに設定されている自動応答に関するメールヒント。
 localization_priority: Normal
 ms.openlocfilehash: bb477979b975996f70e4b8ac624befab7f254f46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569453"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="e5737-103">automaticRepliesMailTips リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e5737-103">automaticRepliesMailTips resource type</span></span>
+# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="57bdb-103">automaticRepliesMailTips リソースの種類</span><span class="sxs-lookup"><span data-stu-id="57bdb-103">automaticRepliesMailTips resource type</span></span>
 
 
-<span data-ttu-id="e5737-104">メールボックスに設定されているすべての自動返信の[メール ヒント](../resources/mailtips.md)にします。</span><span class="sxs-lookup"><span data-stu-id="e5737-104">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
+<span data-ttu-id="57bdb-104">メールボックスに設定されている自動応答に関する[メールヒント](../resources/mailtips.md)。</span><span class="sxs-lookup"><span data-stu-id="57bdb-104">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e5737-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5737-105">Properties</span></span>
-| <span data-ttu-id="e5737-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5737-106">Property</span></span>     | <span data-ttu-id="e5737-107">種類</span><span class="sxs-lookup"><span data-stu-id="e5737-107">Type</span></span>   |<span data-ttu-id="e5737-108">説明</span><span class="sxs-lookup"><span data-stu-id="e5737-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="57bdb-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="57bdb-105">Properties</span></span>
+| <span data-ttu-id="57bdb-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="57bdb-106">Property</span></span>     | <span data-ttu-id="57bdb-107">型</span><span class="sxs-lookup"><span data-stu-id="57bdb-107">Type</span></span>   |<span data-ttu-id="57bdb-108">説明</span><span class="sxs-lookup"><span data-stu-id="57bdb-108">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="e5737-109">message</span><span class="sxs-lookup"><span data-stu-id="e5737-109">message</span></span> | <span data-ttu-id="e5737-110">String</span><span class="sxs-lookup"><span data-stu-id="e5737-110">String</span></span> | <span data-ttu-id="e5737-111">自動応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="e5737-111">The automatic reply message.</span></span> |
-| <span data-ttu-id="e5737-112">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="e5737-112">messageLanguage</span></span> | [<span data-ttu-id="e5737-113">localeInfo</span><span class="sxs-lookup"><span data-stu-id="e5737-113">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="e5737-114">自動応答メッセージの言語。</span><span class="sxs-lookup"><span data-stu-id="e5737-114">The language that the automatic reply message is in.</span></span> |
-| <span data-ttu-id="e5737-115">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="e5737-115">scheduledEndTime</span></span> | [<span data-ttu-id="e5737-116">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e5737-116">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="e5737-117">自動応答を終了する日時。</span><span class="sxs-lookup"><span data-stu-id="e5737-117">The date and time that automatic replies are set to end.</span></span> |
-| <span data-ttu-id="e5737-118">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="e5737-118">scheduledStartTime</span></span> | [<span data-ttu-id="e5737-119">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e5737-119">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="e5737-120">自動応答を開始する日時。</span><span class="sxs-lookup"><span data-stu-id="e5737-120">The date and time that automatic replies are set to begin.</span></span> |
+| <span data-ttu-id="57bdb-109">メッセージ​​</span><span class="sxs-lookup"><span data-stu-id="57bdb-109">message</span></span> | <span data-ttu-id="57bdb-110">String</span><span class="sxs-lookup"><span data-stu-id="57bdb-110">String</span></span> | <span data-ttu-id="57bdb-111">自動応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="57bdb-111">The automatic reply message.</span></span> |
+| <span data-ttu-id="57bdb-112">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="57bdb-112">messageLanguage</span></span> | [<span data-ttu-id="57bdb-113">localeInfo</span><span class="sxs-lookup"><span data-stu-id="57bdb-113">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="57bdb-114">自動応答メッセージが含まれる言語。</span><span class="sxs-lookup"><span data-stu-id="57bdb-114">The language that the automatic reply message is in.</span></span> |
+| <span data-ttu-id="57bdb-115">scheduledendtime</span><span class="sxs-lookup"><span data-stu-id="57bdb-115">scheduledEndTime</span></span> | [<span data-ttu-id="57bdb-116">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="57bdb-116">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="57bdb-117">自動応答を終了する日付と時刻を指定します。</span><span class="sxs-lookup"><span data-stu-id="57bdb-117">The date and time that automatic replies are set to end.</span></span> |
+| <span data-ttu-id="57bdb-118">scheduledstarttime</span><span class="sxs-lookup"><span data-stu-id="57bdb-118">scheduledStartTime</span></span> | [<span data-ttu-id="57bdb-119">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="57bdb-119">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="57bdb-120">自動応答が開始される日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="57bdb-120">The date and time that automatic replies are set to begin.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="e5737-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e5737-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="57bdb-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="57bdb-121">JSON representation</span></span>
 
-<span data-ttu-id="e5737-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e5737-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="57bdb-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="57bdb-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

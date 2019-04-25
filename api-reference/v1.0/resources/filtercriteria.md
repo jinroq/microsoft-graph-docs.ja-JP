@@ -3,19 +3,19 @@ title: FilterCriteria リソースの種類
 description: 列に適用するフィルター条件を表します。
 localization_priority: Normal
 ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808569"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564303"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="9afff-103">FilterCriteria リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9afff-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="329d5-103">FilterCriteria リソースの種類</span><span class="sxs-lookup"><span data-stu-id="329d5-103">FilterCriteria resource type</span></span>
 
-<span data-ttu-id="9afff-104">列に適用するフィルター条件を表します。</span><span class="sxs-lookup"><span data-stu-id="9afff-104">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="329d5-104">列に適用するフィルター条件を表します。</span><span class="sxs-lookup"><span data-stu-id="329d5-104">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9afff-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9afff-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="329d5-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="329d5-105">JSON representation</span></span>
 
-<span data-ttu-id="9afff-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9afff-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="329d5-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="329d5-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
