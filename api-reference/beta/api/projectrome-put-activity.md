@@ -1,32 +1,30 @@
 ---
 title: アクティビティを作成または置換する
-description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
+description: アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、deep insert を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538485"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="2e7f7-104">アクティビティを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="2e7f7-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="a27f2-104">アクティビティを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="a27f2-104">Create or replace an activity</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="a27f2-105">アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。</span><span class="sxs-lookup"><span data-stu-id="a27f2-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="a27f2-106">ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、 [deep insert](#example-2-deep-insert)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a27f2-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
 
-<span data-ttu-id="2e7f7-105">新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="2e7f7-106">1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、[深い挿入](#example-2-deep-insert)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a27f2-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a27f2-107">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2e7f7-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2e7f7-107">Permissions</span></span>
+<span data-ttu-id="a27f2-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a27f2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="2e7f7-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-| <span data-ttu-id="2e7f7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2e7f7-110">Permission type</span></span>                        | <span data-ttu-id="2e7f7-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2e7f7-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a27f2-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a27f2-110">Permission type</span></span>                        | <span data-ttu-id="a27f2-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a27f2-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="2e7f7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2e7f7-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="2e7f7-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="2e7f7-113">UserActivity.ReadWrite.CreatedByApp</span></span> |
-| <span data-ttu-id="2e7f7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2e7f7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e7f7-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="2e7f7-115">UserActivity.ReadWrite.CreatedByApp</span></span> |
-| <span data-ttu-id="2e7f7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2e7f7-116">Application</span></span>                            | <span data-ttu-id="2e7f7-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-117">Not supported.</span></span>                      |
+| <span data-ttu-id="a27f2-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a27f2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a27f2-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a27f2-113">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="a27f2-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a27f2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a27f2-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a27f2-115">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="a27f2-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a27f2-116">Application</span></span>                            | <span data-ttu-id="a27f2-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a27f2-117">Not supported.</span></span>                      |
 
-## <a name="http-request"></a><span data-ttu-id="2e7f7-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2e7f7-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a27f2-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a27f2-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,29 +32,29 @@ ms.locfileid: "29967341"
 PUT /me/activities/{appActivityId}
 ```
 
-> <span data-ttu-id="2e7f7-119">**注:** URL に appActivityId を (RFC 2396 の予約文字は、16 進表現に変換する必要がありますを除くすべての文字) を URL セーフである必要がありますが、元の appActivityId は、URL セーフである必要はありません。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+> <span data-ttu-id="a27f2-119">**注:** url の appactivityid は、url セーフである必要があります (RFC 2396 の予約されていない文字を除くすべての文字を16進表記に変換する必要があります) が、元の appactivityid を url セーフにする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="a27f2-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2e7f7-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2e7f7-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a27f2-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a27f2-120">Request headers</span></span>
 
-| <span data-ttu-id="2e7f7-121">名前</span><span class="sxs-lookup"><span data-stu-id="2e7f7-121">Name</span></span>          | <span data-ttu-id="2e7f7-122">型</span><span class="sxs-lookup"><span data-stu-id="2e7f7-122">Type</span></span>   | <span data-ttu-id="2e7f7-123">説明</span><span class="sxs-lookup"><span data-stu-id="2e7f7-123">Description</span></span>               |
+| <span data-ttu-id="a27f2-121">名前</span><span class="sxs-lookup"><span data-stu-id="a27f2-121">Name</span></span>          | <span data-ttu-id="a27f2-122">型</span><span class="sxs-lookup"><span data-stu-id="a27f2-122">Type</span></span>   | <span data-ttu-id="a27f2-123">説明</span><span class="sxs-lookup"><span data-stu-id="a27f2-123">Description</span></span>               |
 |:--------------|:-------|:--------------------------|
-| <span data-ttu-id="2e7f7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e7f7-124">Authorization</span></span> | <span data-ttu-id="2e7f7-125">string</span><span class="sxs-lookup"><span data-stu-id="2e7f7-125">string</span></span> | <span data-ttu-id="2e7f7-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a27f2-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a27f2-124">Authorization</span></span> | <span data-ttu-id="a27f2-125">string</span><span class="sxs-lookup"><span data-stu-id="a27f2-125">string</span></span> | <span data-ttu-id="a27f2-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a27f2-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2e7f7-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="2e7f7-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a27f2-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="a27f2-128">Request body</span></span>
 
-<span data-ttu-id="2e7f7-129">要求の本文には、[アクティビティ](../resources/projectrome-activity.md)オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="a27f2-129">要求本文で、 [activity](../resources/projectrome-activity.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2e7f7-130">応答</span><span class="sxs-lookup"><span data-stu-id="2e7f7-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a27f2-130">応答</span><span class="sxs-lookup"><span data-stu-id="a27f2-130">Response</span></span>
 
-<span data-ttu-id="2e7f7-131">かどうかは成功すると、このメソッドが返されます、 `201 Created` 、活動が作成された場合の応答コードまたは`200 OK`アクティビティが表示された場合。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="a27f2-131">成功した場合、このメソッド`201 Created`は、アクティビティが作成された`200 OK`場合、またはアクティビティが置き換えられた場合に、応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2e7f7-132">例</span><span class="sxs-lookup"><span data-stu-id="2e7f7-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a27f2-132">例</span><span class="sxs-lookup"><span data-stu-id="a27f2-132">Examples</span></span>
 
-### <a name="example-1-create-an-activity"></a><span data-ttu-id="2e7f7-133">例 1: アクティビティを作成します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-133">Example 1: Create an activity</span></span>
+### <a name="example-1-create-an-activity"></a><span data-ttu-id="a27f2-133">例 1: アクティビティを作成する</span><span class="sxs-lookup"><span data-stu-id="a27f2-133">Example 1: Create an activity</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2e7f7-134">要求</span><span class="sxs-lookup"><span data-stu-id="2e7f7-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a27f2-134">要求</span><span class="sxs-lookup"><span data-stu-id="a27f2-134">Request</span></span>
 
-<span data-ttu-id="2e7f7-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-135">The following is an example of the request.</span></span>
+<span data-ttu-id="a27f2-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-135">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -64,7 +62,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -85,7 +83,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -106,14 +104,14 @@ Content-type: application/json
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="2e7f7-136">応答</span><span class="sxs-lookup"><span data-stu-id="2e7f7-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a27f2-136">応答</span><span class="sxs-lookup"><span data-stu-id="a27f2-136">Response</span></span>
 
-<span data-ttu-id="2e7f7-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-137">The following is an example of the response.</span></span>
+<span data-ttu-id="a27f2-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-137">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -162,13 +160,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a><span data-ttu-id="2e7f7-138">ディープ挿入の例 2:</span><span class="sxs-lookup"><span data-stu-id="2e7f7-138">Example 2: Deep insert</span></span>
+### <a name="example-2-deep-insert"></a><span data-ttu-id="a27f2-138">例 2: Deep insert</span><span class="sxs-lookup"><span data-stu-id="a27f2-138">Example 2: Deep insert</span></span>
 
-<span data-ttu-id="2e7f7-139">次の使用例は、1 つの要求で、新しいアクティビティとそのアクティビティの履歴項目を作成します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-139">This example creates a new activity and a history item for that activity in one request.</span></span>
+<span data-ttu-id="a27f2-139">この例では、1つの要求で、そのアクティビティの新しいアクティビティと履歴アイテムを作成します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-139">This example creates a new activity and a history item for that activity in one request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2e7f7-140">要求</span><span class="sxs-lookup"><span data-stu-id="2e7f7-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a27f2-140">要求</span><span class="sxs-lookup"><span data-stu-id="a27f2-140">Request</span></span>
 
-<span data-ttu-id="2e7f7-141">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-141">The following is an example of the request.</span></span>
+<span data-ttu-id="a27f2-141">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-141">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -176,7 +174,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -223,14 +221,14 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2e7f7-142">応答</span><span class="sxs-lookup"><span data-stu-id="2e7f7-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a27f2-142">応答</span><span class="sxs-lookup"><span data-stu-id="a27f2-142">Response</span></span>
 
-<span data-ttu-id="2e7f7-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2e7f7-143">The following is an example of the response.</span></span>
+<span data-ttu-id="a27f2-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a27f2-143">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -294,15 +292,10 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-put-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

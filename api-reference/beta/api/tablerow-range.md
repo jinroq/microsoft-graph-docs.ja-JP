@@ -5,49 +5,49 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: d2274f376b6a7d615aa280470ba94e277deb8c3a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508063"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536811"
 ---
-# <a name="tablerow-range"></a><span data-ttu-id="e0027-103">TableRow:Range</span><span class="sxs-lookup"><span data-stu-id="e0027-103">TableRow: Range</span></span>
+# <a name="tablerow-range"></a><span data-ttu-id="a9d51-103">TableRow:Range</span><span class="sxs-lookup"><span data-stu-id="a9d51-103">TableRow: Range</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e0027-104">行全体に関連付けられた範囲オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e0027-104">Returns the range object associated with the entire row.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e0027-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e0027-105">Permissions</span></span>
-<span data-ttu-id="e0027-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0027-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a9d51-104">行全体に関連付けられた範囲オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a9d51-104">Returns the range object associated with the entire row.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9d51-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a9d51-105">Permissions</span></span>
+<span data-ttu-id="a9d51-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a9d51-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e0027-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e0027-108">Permission type</span></span>      | <span data-ttu-id="e0027-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e0027-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a9d51-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a9d51-108">Permission type</span></span>      | <span data-ttu-id="a9d51-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a9d51-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e0027-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e0027-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e0027-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e0027-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e0027-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e0027-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0027-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e0027-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e0027-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e0027-114">Application</span></span> | <span data-ttu-id="e0027-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e0027-115">Not supported.</span></span> |
+|<span data-ttu-id="a9d51-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a9d51-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a9d51-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9d51-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a9d51-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a9d51-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9d51-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9d51-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a9d51-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a9d51-114">Application</span></span> | <span data-ttu-id="a9d51-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a9d51-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e0027-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e0027-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9d51-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a9d51-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows(<index>)/Range
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e0027-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e0027-117">Request headers</span></span>
-| <span data-ttu-id="e0027-118">名前</span><span class="sxs-lookup"><span data-stu-id="e0027-118">Name</span></span>       | <span data-ttu-id="e0027-119">説明</span><span class="sxs-lookup"><span data-stu-id="e0027-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a9d51-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a9d51-117">Request headers</span></span>
+| <span data-ttu-id="a9d51-118">名前</span><span class="sxs-lookup"><span data-stu-id="a9d51-118">Name</span></span>       | <span data-ttu-id="a9d51-119">説明</span><span class="sxs-lookup"><span data-stu-id="a9d51-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e0027-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0027-120">Authorization</span></span>  | <span data-ttu-id="e0027-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e0027-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e0027-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e0027-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e0027-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e0027-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a9d51-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a9d51-120">Authorization</span></span>  | <span data-ttu-id="a9d51-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a9d51-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a9d51-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a9d51-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a9d51-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="a9d51-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e0027-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e0027-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9d51-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a9d51-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="e0027-127">応答</span><span class="sxs-lookup"><span data-stu-id="e0027-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9d51-127">応答</span><span class="sxs-lookup"><span data-stu-id="a9d51-127">Response</span></span>
 
-<span data-ttu-id="e0027-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e0027-128">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="a9d51-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a9d51-128">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e0027-129">例</span><span class="sxs-lookup"><span data-stu-id="e0027-129">Example</span></span>
-<span data-ttu-id="e0027-130">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e0027-130">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e0027-131">要求</span><span class="sxs-lookup"><span data-stu-id="e0027-131">Request</span></span>
-<span data-ttu-id="e0027-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e0027-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a9d51-129">例</span><span class="sxs-lookup"><span data-stu-id="a9d51-129">Example</span></span>
+<span data-ttu-id="a9d51-130">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="a9d51-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a9d51-131">要求</span><span class="sxs-lookup"><span data-stu-id="a9d51-131">Request</span></span>
+<span data-ttu-id="a9d51-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a9d51-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablerow_range"
@@ -56,8 +56,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/Range
 ```
 
-##### <a name="response"></a><span data-ttu-id="e0027-133">応答</span><span class="sxs-lookup"><span data-stu-id="e0027-133">Response</span></span>
-<span data-ttu-id="e0027-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e0027-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a9d51-133">応答</span><span class="sxs-lookup"><span data-stu-id="a9d51-133">Response</span></span>
+<span data-ttu-id="a9d51-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a9d51-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
