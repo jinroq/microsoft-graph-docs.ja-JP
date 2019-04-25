@@ -1,19 +1,19 @@
 ---
 title: 添付ファイルを一覧表示する
-description: 添付ファイル オブジェクトのリストを取得します。
+description: attachment オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 138759ad46af5ee5050e0c8e625d81e893c69725
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584244"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
-添付ファイル オブジェクトのリストを取得します。
+attachment オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
