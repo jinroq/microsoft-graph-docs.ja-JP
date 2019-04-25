@@ -1,27 +1,27 @@
 ---
 title: governancePermission リソースの種類
-description: '特定の governanceResource に、governanceSubject を持つアクセス許可を表します。  '
+description: 'governanceSubject が特定の governanceResource に対して持つアクセス許可を表します。  '
 localization_priority: Normal
 ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547509"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の[governanceResource](../resources/governanceresource.md)に、 [governanceSubject](../resources/governancesubject.md)を持つアクセス許可を表します。  
+[governanceSubject](../resources/governancesubject.md)が特定の[governanceResource](../resources/governanceresource.md)に対して持つアクセス許可を表します。  
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|accessLevel|String|アクセス レベルです。 有効な値: ``None``、 ``UserRead``、``AdminRead``と``AdminReadWrite``。|
-|isActive|Boolean|指定する場合、リクエスターが、アクティブなロールの割り当てのアクセス レベルを持ちます。|
-|isEligible|Boolean|リクエスターは、対象となるロールの割り当てのアクセス レベルを指定します。|
+|accessLevel|String|アクセスレベル。 有効な値``None``は``UserRead``、 ``AdminRead``、、 ``AdminReadWrite``、です。|
+|isActive|ブール値|要求者がアクセスレベルに対してアクティブなロール割り当てを持っているかどうかを示します。|
+|isEligible|ブール値|要求者がアクセスレベルに対して適格な役割の割り当てを持っているかどうかを示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

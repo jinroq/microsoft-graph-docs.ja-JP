@@ -1,25 +1,25 @@
 ---
-title: プログラムを一覧表示
-description: Azure AD のレビュー機能にアクセス、プログラムのすべてのオブジェクトを一覧表示します。
+title: プログラムの一覧表示
+description: Azure AD access レビュー機能で、すべてのプログラムオブジェクトを一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: 71073f2469087e92b43823e89881406fb17a666b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538620"
 ---
-# <a name="list-programs"></a>プログラムを一覧表示
+# <a name="list-programs"></a>プログラムの一覧表示
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、[プログラム](../resources/program.md)のすべてのオブジェクトを一覧表示します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、すべての[プログラム](../resources/program.md)オブジェクトを一覧表示します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読むことを許可するディレクトリの役割でもあります。 |
+|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -31,13 +31,13 @@ GET /programs
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体を提供する必要がありません。
+要求本文を指定する必要はありません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200, OK`応答コードおよび応答の本体の[プログラム](../resources/program.md)のオブジェクトの配列。
+成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[プログラム](../resources/program.md)オブジェクトの配列を返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -83,7 +83,7 @@ Content-type: application/json
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[プログラムのリスト programControls](program-listcontrols.md) |     [デバッギング](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
+|[プログラムの programcontrols を一覧表示する](program-listcontrols.md) |     [programcontrol](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
 
 
 <!--
