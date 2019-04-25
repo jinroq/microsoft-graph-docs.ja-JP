@@ -5,32 +5,32 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 7bb4547fa96cfd1492e3a4a1e7e0c73a42c3aad0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253142"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576683"
 ---
-# <a name="get-user"></a><span data-ttu-id="58262-103">ユーザーを取得する</span><span class="sxs-lookup"><span data-stu-id="58262-103">Get user</span></span>
+# <a name="get-user"></a><span data-ttu-id="26a8a-103">ユーザーを取得する</span><span class="sxs-lookup"><span data-stu-id="26a8a-103">Get user</span></span>
 
-> <span data-ttu-id="58262-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="58262-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="26a8a-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="26a8a-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="58262-105">[user](../resources/intune-shared-user.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="58262-105">Read properties and relationships of the [user](../resources/intune-shared-user.md) object.</span></span>
+<span data-ttu-id="26a8a-105">[user](../resources/intune-shared-user.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="26a8a-105">Read properties and relationships of the [user](../resources/intune-shared-user.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="58262-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="58262-106">Prerequisites</span></span>
-<span data-ttu-id="58262-107">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="58262-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="58262-108">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58262-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="58262-109">特定のアクセス許可は、コンテキストによって異なります。</span><span class="sxs-lookup"><span data-stu-id="58262-109">The specific permission depends on the context.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="26a8a-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="26a8a-106">Prerequisites</span></span>
+<span data-ttu-id="26a8a-107">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="26a8a-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="26a8a-108">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26a8a-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="26a8a-109">特定のアクセス許可は、コンテキストによって異なります。</span><span class="sxs-lookup"><span data-stu-id="26a8a-109">The specific permission depends on the context.</span></span>
 
-|<span data-ttu-id="58262-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="58262-110">Permission type</span></span>|<span data-ttu-id="58262-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="58262-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="26a8a-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="26a8a-110">Permission type</span></span>|<span data-ttu-id="26a8a-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="26a8a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="58262-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="58262-112">Delegated (work or school account)</span></span>| <span data-ttu-id="58262-113">_コンテキストによって異なる_</span><span class="sxs-lookup"><span data-stu-id="58262-113">_varies by context_</span></span>|
-| <span data-ttu-id="58262-114">&nbsp;&nbsp;デバイスの管理</span><span class="sxs-lookup"><span data-stu-id="58262-114">&nbsp; &nbsp; Device management</span></span> | <span data-ttu-id="58262-115">DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="58262-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-| <span data-ttu-id="58262-116">&nbsp;&nbsp; MAM</span><span class="sxs-lookup"><span data-stu-id="58262-116">&nbsp; &nbsp; MAM</span></span> | <span data-ttu-id="58262-117">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="58262-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
-| <span data-ttu-id="58262-118">&nbsp;&nbsp;オンボード</span><span class="sxs-lookup"><span data-stu-id="58262-118">&nbsp; &nbsp; Onboarding</span></span> | <span data-ttu-id="58262-119">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="58262-119">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="58262-120">&nbsp;&nbsp;トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="58262-120">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="58262-121">DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="58262-121">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-|<span data-ttu-id="58262-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="58262-122">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="58262-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58262-123">Not supported.</span></span>|
-|<span data-ttu-id="58262-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="58262-124">Application</span></span>|<span data-ttu-id="58262-125">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58262-125">Not supported.</span></span>|
+|<span data-ttu-id="26a8a-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="26a8a-112">Delegated (work or school account)</span></span>| <span data-ttu-id="26a8a-113">_コンテキストによって異なる_</span><span class="sxs-lookup"><span data-stu-id="26a8a-113">_varies by context_</span></span>|
+| <span data-ttu-id="26a8a-114">&nbsp;&nbsp;デバイスの管理</span><span class="sxs-lookup"><span data-stu-id="26a8a-114">&nbsp; &nbsp; Device management</span></span> | <span data-ttu-id="26a8a-115">DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="26a8a-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+| <span data-ttu-id="26a8a-116">&nbsp;&nbsp; MAM</span><span class="sxs-lookup"><span data-stu-id="26a8a-116">&nbsp; &nbsp; MAM</span></span> | <span data-ttu-id="26a8a-117">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="26a8a-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
+| <span data-ttu-id="26a8a-118">&nbsp;&nbsp;オンボード</span><span class="sxs-lookup"><span data-stu-id="26a8a-118">&nbsp; &nbsp; Onboarding</span></span> | <span data-ttu-id="26a8a-119">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26a8a-119">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26a8a-120">&nbsp;&nbsp;トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="26a8a-120">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="26a8a-121">DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="26a8a-121">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+|<span data-ttu-id="26a8a-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="26a8a-122">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="26a8a-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26a8a-123">Not supported.</span></span>|
+|<span data-ttu-id="26a8a-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="26a8a-124">Application</span></span>|<span data-ttu-id="26a8a-125">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26a8a-125">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="58262-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="58262-126">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26a8a-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="26a8a-126">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ ms.locfileid: "30253142"
 GET /users/{usersId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="58262-127">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="58262-127">Optional query parameters</span></span>
-<span data-ttu-id="58262-128">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="58262-128">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="58262-129">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58262-129">Request headers</span></span>
-|<span data-ttu-id="58262-130">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58262-130">Header</span></span>|<span data-ttu-id="58262-131">値</span><span class="sxs-lookup"><span data-stu-id="58262-131">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="26a8a-127">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="26a8a-127">Optional query parameters</span></span>
+<span data-ttu-id="26a8a-128">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="26a8a-128">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="26a8a-129">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="26a8a-129">Request headers</span></span>
+|<span data-ttu-id="26a8a-130">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="26a8a-130">Header</span></span>|<span data-ttu-id="26a8a-131">値</span><span class="sxs-lookup"><span data-stu-id="26a8a-131">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="58262-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="58262-132">Authorization</span></span>|<span data-ttu-id="58262-133">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="58262-133">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="58262-134">承諾</span><span class="sxs-lookup"><span data-stu-id="58262-134">Accept</span></span>|<span data-ttu-id="58262-135">application/json</span><span class="sxs-lookup"><span data-stu-id="58262-135">application/json</span></span>|
+|<span data-ttu-id="26a8a-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="26a8a-132">Authorization</span></span>|<span data-ttu-id="26a8a-133">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="26a8a-133">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="26a8a-134">承諾</span><span class="sxs-lookup"><span data-stu-id="26a8a-134">Accept</span></span>|<span data-ttu-id="26a8a-135">application/json</span><span class="sxs-lookup"><span data-stu-id="26a8a-135">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="58262-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="58262-136">Request body</span></span>
-<span data-ttu-id="58262-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="58262-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26a8a-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="26a8a-136">Request body</span></span>
+<span data-ttu-id="26a8a-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="26a8a-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="58262-138">応答</span><span class="sxs-lookup"><span data-stu-id="58262-138">Response</span></span>
-<span data-ttu-id="58262-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/intune-shared-user.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="58262-139">If successful, this method returns a `200 OK` response code and [user](../resources/intune-shared-user.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="26a8a-138">応答</span><span class="sxs-lookup"><span data-stu-id="26a8a-138">Response</span></span>
+<span data-ttu-id="26a8a-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/intune-shared-user.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="26a8a-139">If successful, this method returns a `200 OK` response code and [user](../resources/intune-shared-user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="58262-140">例</span><span class="sxs-lookup"><span data-stu-id="58262-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="26a8a-140">例</span><span class="sxs-lookup"><span data-stu-id="26a8a-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="58262-141">要求</span><span class="sxs-lookup"><span data-stu-id="58262-141">Request</span></span>
-<span data-ttu-id="58262-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="58262-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="26a8a-141">要求</span><span class="sxs-lookup"><span data-stu-id="26a8a-141">Request</span></span>
+<span data-ttu-id="26a8a-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="26a8a-142">Here is an example of the request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}
 ```
 
-### <a name="response"></a><span data-ttu-id="58262-143">応答</span><span class="sxs-lookup"><span data-stu-id="58262-143">Response</span></span>
-<span data-ttu-id="58262-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="58262-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="26a8a-143">応答</span><span class="sxs-lookup"><span data-stu-id="26a8a-143">Response</span></span>
+<span data-ttu-id="26a8a-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="26a8a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 200 OK

@@ -1,30 +1,30 @@
 ---
-title: filterClause リソースの種類
-description: いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。
+title: filterclause リソースの種類
+description: 候補オブジェクトが満たす必要がある1つのアサーションを表し、(オブジェクト`true`がアサートを満たす) または`false` (オブジェクトはアサーションを満たしていない) のどちらかに評価されます。
 localization_priority: Normal
 ms.openlocfilehash: 62623cee5b2991acbe162561940adb1afd3574a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582039"
 ---
-# <a name="filterclause-resource-type"></a><span data-ttu-id="5b109-103">filterClause リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5b109-103">filterClause resource type</span></span>
+# <a name="filterclause-resource-type"></a><span data-ttu-id="1e97e-103">filterclause リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1e97e-103">filterClause resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5b109-104">いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。</span><span class="sxs-lookup"><span data-stu-id="5b109-104">Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).</span></span>
+<span data-ttu-id="1e97e-104">候補オブジェクトが満たす必要がある1つのアサーションを表し、(オブジェクト`true`がアサートを満たす) または`false` (オブジェクトはアサーションを満たしていない) のどちらかに評価されます。</span><span class="sxs-lookup"><span data-stu-id="1e97e-104">Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5b109-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b109-105">Properties</span></span>
-| <span data-ttu-id="5b109-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b109-106">Property</span></span>     | <span data-ttu-id="5b109-107">型</span><span class="sxs-lookup"><span data-stu-id="5b109-107">Type</span></span>   |<span data-ttu-id="5b109-108">説明</span><span class="sxs-lookup"><span data-stu-id="5b109-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1e97e-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1e97e-105">Properties</span></span>
+| <span data-ttu-id="1e97e-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1e97e-106">Property</span></span>     | <span data-ttu-id="1e97e-107">型</span><span class="sxs-lookup"><span data-stu-id="1e97e-107">Type</span></span>   |<span data-ttu-id="1e97e-108">説明</span><span class="sxs-lookup"><span data-stu-id="1e97e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5b109-109">operatorName</span><span class="sxs-lookup"><span data-stu-id="5b109-109">operatorName</span></span>|<span data-ttu-id="5b109-110">String</span><span class="sxs-lookup"><span data-stu-id="5b109-110">String</span></span>|<span data-ttu-id="5b109-111">ソースとターゲットのオペランドに適用する演算子の名前です。</span><span class="sxs-lookup"><span data-stu-id="5b109-111">Name of the operator to be applied to the source and target operands.</span></span> <span data-ttu-id="5b109-112">サポートされている演算子のいずれかをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b109-112">Must be one of the supported operators.</span></span> <span data-ttu-id="5b109-113">サポートされている演算子を検出することができます。</span><span class="sxs-lookup"><span data-stu-id="5b109-113">Supported operators can be discovered.</span></span>|
-|<span data-ttu-id="5b109-114">sourceOperandName</span><span class="sxs-lookup"><span data-stu-id="5b109-114">sourceOperandName</span></span>|<span data-ttu-id="5b109-115">String</span><span class="sxs-lookup"><span data-stu-id="5b109-115">String</span></span>|<span data-ttu-id="5b109-116">ソース オペランド (テスト中のオペランド) の名前です。</span><span class="sxs-lookup"><span data-stu-id="5b109-116">Name of source operand (the operand being tested).</span></span> <span data-ttu-id="5b109-117">ソース オペランドの名前は、ソース オブジェクトの属性の名前のいずれかに一致しなければなりません。</span><span class="sxs-lookup"><span data-stu-id="5b109-117">The source operand name must match one of the attribute names on the source object.</span></span>|
-|<span data-ttu-id="5b109-118">targetOperand</span><span class="sxs-lookup"><span data-stu-id="5b109-118">targetOperand</span></span>|[<span data-ttu-id="5b109-119">filterOperand</span><span class="sxs-lookup"><span data-stu-id="5b109-119">filterOperand</span></span>](synchronization-filteroperand.md)|<span data-ttu-id="5b109-120">ソース オペランドを比較する値です。</span><span class="sxs-lookup"><span data-stu-id="5b109-120">Values that the source operand will be tested against.</span></span>|
+|<span data-ttu-id="1e97e-109">オペレーター名</span><span class="sxs-lookup"><span data-stu-id="1e97e-109">operatorName</span></span>|<span data-ttu-id="1e97e-110">String</span><span class="sxs-lookup"><span data-stu-id="1e97e-110">String</span></span>|<span data-ttu-id="1e97e-111">ソースとターゲットのオペランドに適用される演算子の名前です。</span><span class="sxs-lookup"><span data-stu-id="1e97e-111">Name of the operator to be applied to the source and target operands.</span></span> <span data-ttu-id="1e97e-112">サポートされている演算子のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="1e97e-112">Must be one of the supported operators.</span></span> <span data-ttu-id="1e97e-113">サポートされている演算子を検出できます。</span><span class="sxs-lookup"><span data-stu-id="1e97e-113">Supported operators can be discovered.</span></span>|
+|<span data-ttu-id="1e97e-114">sourceoperandname</span><span class="sxs-lookup"><span data-stu-id="1e97e-114">sourceOperandName</span></span>|<span data-ttu-id="1e97e-115">String</span><span class="sxs-lookup"><span data-stu-id="1e97e-115">String</span></span>|<span data-ttu-id="1e97e-116">source オペランドの名前 (テストされているオペランド)。</span><span class="sxs-lookup"><span data-stu-id="1e97e-116">Name of source operand (the operand being tested).</span></span> <span data-ttu-id="1e97e-117">ソースのオペランド名は、ソースオブジェクトの属性名のいずれかと一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="1e97e-117">The source operand name must match one of the attribute names on the source object.</span></span>|
+|<span data-ttu-id="1e97e-118">targetoperand</span><span class="sxs-lookup"><span data-stu-id="1e97e-118">targetOperand</span></span>|[<span data-ttu-id="1e97e-119">filteroperand</span><span class="sxs-lookup"><span data-stu-id="1e97e-119">filterOperand</span></span>](synchronization-filteroperand.md)|<span data-ttu-id="1e97e-120">source オペランドのテスト対象となる値を指定します。</span><span class="sxs-lookup"><span data-stu-id="1e97e-120">Values that the source operand will be tested against.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5b109-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5b109-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1e97e-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1e97e-121">JSON representation</span></span>
 
-<span data-ttu-id="5b109-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5b109-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1e97e-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1e97e-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

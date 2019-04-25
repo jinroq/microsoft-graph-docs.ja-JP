@@ -1,28 +1,28 @@
 ---
 title: plannerUserIds リソースの種類
-description: '**PlannerUserIds**リソースは、plan を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、グループの計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。'
+description: '**plannerUserIds**リソースは、プランを共有しているユーザー id のリストを表します。 これはオープン型です。 Office 365 グループを使用している場合は、グループのメンバーシップを管理するグループの API を使用して、グループの計画を共有します。 このコレクションにグループの既存のメンバーを追加することもできます。ただし、グループが所有しているプランにアクセスするためには必要ありません。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33a1d6472f4c146d0875ec35fdee920652b7de39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576011"
 ---
-# <a name="planneruserids-resource-type"></a><span data-ttu-id="c4ea6-106">plannerUserIds リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c4ea6-106">plannerUserIds resource type</span></span>
+# <a name="planneruserids-resource-type"></a><span data-ttu-id="e2b9d-106">plannerUserIds リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e2b9d-106">plannerUserIds resource type</span></span>
 
-<span data-ttu-id="c4ea6-p102">**PlannerUserIds**リソースは、[plan](plannerplan.md) を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。</span><span class="sxs-lookup"><span data-stu-id="c4ea6-p102">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with. This is an Open Type. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
-
-
-## <a name="properties"></a><span data-ttu-id="c4ea6-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c4ea6-111">Properties</span></span>
-<span data-ttu-id="c4ea6-p103">クライアントは、オープン型のプロパティを定義できます。この例では、クライアントは、値が `true` ブール値となるプロパティとしてユーザー ID を指定する必要があります。ユーザー ID が共有されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="c4ea6-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
+<span data-ttu-id="e2b9d-107">**plannerUserIds**リソースは、[プラン](plannerplan.md)を共有しているユーザー id のリストを表します。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-107">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="e2b9d-108">これはオープン型です。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-108">This is an Open Type.</span></span> <span data-ttu-id="e2b9d-109">Office 365 グループを使用している場合は、グループのメンバーシップを管理するグループの API を使用して、グループ[の](group.md)計画を共有します。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-109">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="e2b9d-110">このコレクションにグループの既存のメンバーを追加することもできます。ただし、グループが所有しているプランにアクセスするためには必要ありません。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-110">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c4ea6-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c4ea6-115">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="e2b9d-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e2b9d-111">Properties</span></span>
+<span data-ttu-id="e2b9d-112">オープン型のプロパティは、クライアントで定義できます。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="e2b9d-113">この場合、クライアントは、値が`true`ブール値のプロパティとしてユーザー id を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-113">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="e2b9d-114">ユーザー id を共有しなくなった場合、プロパティの値を`false` boolean に設定することによってプロパティが自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="e2b9d-114">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 
-<span data-ttu-id="c4ea6-116">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="c4ea6-116">Here is a JSON representation of the resource</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="e2b9d-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e2b9d-115">JSON representation</span></span>
+
+<span data-ttu-id="e2b9d-116">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="e2b9d-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ ms.locfileid: "27966959"
 }
 ```
 
-<span data-ttu-id="c4ea6-117">// 例</span><span class="sxs-lookup"><span data-stu-id="c4ea6-117">// Example</span></span>
+<span data-ttu-id="e2b9d-117">例</span><span class="sxs-lookup"><span data-stu-id="e2b9d-117">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
