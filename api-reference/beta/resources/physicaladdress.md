@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: eb7bf1ee21a40517704f20176f5fbcf9ea2b276a
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056988"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573782"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress リソースの種類
 
@@ -19,16 +19,13 @@ ms.locfileid: "30056988"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|city|String
-|市区町村。|
+|city|String|市区町村。|
 |countryOrRegion|String|国または地域。自由形式の文字列値です。例: 「米国」。|
-|postalCode|String
-|郵便番号。|
-|postofficebox が|String
-|郵便局の私書箱番号。|
-|state|文字列型 (String)|都道府県。|
+|postalCode|String|郵便番号。|
+|postofficebox が|String|郵便局の私書箱番号。|
+|state|String|都道府県。|
 |street|String|番地。|
 |type|physicalAddressType|住所の種類。 使用可能な値は、`unknown`、`home`、`business`、`other` です。|
 

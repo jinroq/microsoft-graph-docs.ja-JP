@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573040"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission リソースの種類
 
@@ -22,10 +22,10 @@ ms.locfileid: "31771265"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|actions|String コレクション|許可されたアクション-非推奨|
+|actions|String collection|許可されたアクション-非推奨|
 |resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) コレクション|それぞれ許可され、許可されていないアクセス許可のセットが含まれているリソースアクション。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

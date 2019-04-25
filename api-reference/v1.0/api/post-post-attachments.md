@@ -1,15 +1,15 @@
 ---
 title: 添付ファイルを追加する
-description: 投稿に添付ファイルを追加するのにには、この API を使用します。 そこから
+description: 添付ファイルを投稿に追加する場合に、この API を使用します。 存在するため
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: b2b1c619e40fa915b079f97a6efb444981b28709
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576291"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -33,7 +33,8 @@ ms.locfileid: "27949634"
 |アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[転記](../resources/post.md)グループの[会話](../resources/conversation.md)に属している[スレッド](../resources/conversationthread.md)での添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments

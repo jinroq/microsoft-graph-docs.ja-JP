@@ -1,27 +1,27 @@
 ---
 title: domainState リソースの種類
-description: ドメイン上でスケジュールされている非同期操作の状態を表します。
+description: ドメインでスケジュールされた非同期操作の状態を表します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6a7741448b9c91be32f67f89cbafa5a579320083
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562780"
 ---
 # <a name="domainstate-resource-type"></a>domainState リソースの種類
 
-ドメイン上でスケジュールされている非同期操作の状態を表します。
+ドメインでスケジュールされた非同期操作の状態を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 | 説明 |
+| プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | 最後のアクティビティが発生したときのタイムスタンプ。値は、操作のスケジュール時、非同期タスクの開始時、操作の完了時に更新されます。 |
-| 操作​​ | String | 非同期操作の種類。値は、*ForceDelete* または *Verification* のいずれかです。 |
-| status | String | 操作の現在の状態。 <br> *Scheduled* - 操作はスケジュールされていますが、開始されていません。 <br> *InProgress* - タスクが開始され、実行中です。 <br> *Failed* - 操作が失敗しました。 |
+| lastactiondatetime | DateTimeOffset | 最後のアクティビティが発生したときのタイムスタンプ。 この値は、操作がスケジュールされたとき、非同期タスクが開始されたとき、および操作が完了したときに更新されます。 |
+| operation | String | 非同期操作の種類。 指定できる値は、 *forcedelete*または*ベリファイ*です |
+| status | String | 操作の現在の状態。 <br> *スケジュール*済み-操作はスケジュールされていますが、開始されていません。 <br> *InProgress* -タスクが開始され、進行中です。 <br> *失敗*-操作が失敗しました。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -1,26 +1,26 @@
 ---
-title: filterClause リソースの種類
-description: いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。
+title: filterclause リソースの種類
+description: 候補オブジェクトが満たす必要がある1つのアサーションを表し、(オブジェクト`true`がアサートを満たす) または`false` (オブジェクトはアサーションを満たしていない) のどちらかに評価されます。
 localization_priority: Normal
 ms.openlocfilehash: 62623cee5b2991acbe162561940adb1afd3574a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582039"
 ---
-# <a name="filterclause-resource-type"></a>filterClause リソースの種類
+# <a name="filterclause-resource-type"></a>filterclause リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。
+候補オブジェクトが満たす必要がある1つのアサーションを表し、(オブジェクト`true`がアサートを満たす) または`false` (オブジェクトはアサーションを満たしていない) のどちらかに評価されます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|operatorName|String|ソースとターゲットのオペランドに適用する演算子の名前です。 サポートされている演算子のいずれかをする必要があります。 サポートされている演算子を検出することができます。|
-|sourceOperandName|String|ソース オペランド (テスト中のオペランド) の名前です。 ソース オペランドの名前は、ソース オブジェクトの属性の名前のいずれかに一致しなければなりません。|
-|targetOperand|[filterOperand](synchronization-filteroperand.md)|ソース オペランドを比較する値です。|
+|オペレーター名|String|ソースとターゲットのオペランドに適用される演算子の名前です。 サポートされている演算子のいずれかである必要があります。 サポートされている演算子を検出できます。|
+|sourceoperandname|String|source オペランドの名前 (テストされているオペランド)。 ソースのオペランド名は、ソースオブジェクトの属性名のいずれかと一致している必要があります。|
+|targetoperand|[filteroperand](synchronization-filteroperand.md)|source オペランドのテスト対象となる値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

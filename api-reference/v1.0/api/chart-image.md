@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581686"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -42,9 +42,9 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|height|Int32|結果のイメージの高さ。 省略可能。|
-|width|Int32|結果のイメージの幅。 省略可能。|
-|fittingMode|文字列|メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」  可能な値: `Fit`、 `FitAndCenter`、 `Fill`。|
+|height|Int32|結果の画像の希望する高さ。 省略可能。|
+|width|Int32|結果の画像の希望する幅。 省略可能。|
+|fittingMode|string|指定した寸法 (高さと幅の両方が設定されている場合) にグラフを拡大または縮小するために使用されるメソッドです。  使用可能な値: `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>応答
 
@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

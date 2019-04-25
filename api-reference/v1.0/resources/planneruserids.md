@@ -1,23 +1,23 @@
 ---
 title: plannerUserIds リソースの種類
-description: '**PlannerUserIds**リソースは、plan を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、グループの計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。'
+description: '**plannerUserIds**リソースは、プランを共有しているユーザー id のリストを表します。 これはオープン型です。 Office 365 グループを使用している場合は、グループのメンバーシップを管理するグループの API を使用して、グループの計画を共有します。 このコレクションにグループの既存のメンバーを追加することもできます。ただし、グループが所有しているプランにアクセスするためには必要ありません。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33a1d6472f4c146d0875ec35fdee920652b7de39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576011"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds リソースの種類
 
-**PlannerUserIds**リソースは、[plan](plannerplan.md) を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。
+**plannerUserIds**リソースは、[プラン](plannerplan.md)を共有しているユーザー id のリストを表します。 これはオープン型です。 Office 365 グループを使用している場合は、グループのメンバーシップを管理するグループの API を使用して、グループ[の](group.md)計画を共有します。 このコレクションにグループの既存のメンバーを追加することもできます。ただし、グループが所有しているプランにアクセスするためには必要ありません。
 
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。この例では、クライアントは、値が `true` ブール値となるプロパティとしてユーザー ID を指定する必要があります。ユーザー ID が共有されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは、値が`true`ブール値のプロパティとしてユーザー id を提供する必要があります。 ユーザー id を共有しなくなった場合、プロパティの値を`false` boolean に設定することによってプロパティが自動的に削除されます。
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -37,7 +37,7 @@ ms.locfileid: "27966959"
 }
 ```
 
-// 例
+例
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

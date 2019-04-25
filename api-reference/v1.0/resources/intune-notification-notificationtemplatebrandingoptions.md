@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261895"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574510"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 列挙型
 
@@ -20,10 +20,10 @@ ms.locfileid: "30261895"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|ブランド化なし。|
-|includeCompanyLogo|1-d|会社のロゴを含めます。|
-|includeCompanyName|pbm-2|会社名を含めます。|
-|情報|2/4|連絡先情報を含めます。|
+|なし|.0|ブランド化なし。|
+|includeCompanyLogo|1 |会社のロゴを含めます。|
+|includeCompanyName|2 |会社名を含めます。|
+|情報|4 |連絡先情報を含めます。|
 
 
 

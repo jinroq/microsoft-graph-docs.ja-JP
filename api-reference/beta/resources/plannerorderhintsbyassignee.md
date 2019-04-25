@@ -1,24 +1,26 @@
 ---
 title: plannerOrderHintsByAssignee リソースの種類
-description: '**PlannerOrderHintsByAssignee**は、タスクの掲示板のビューに割り当てられているタスクの順序を示すために、plannerTask のリソースの割り当て先の命令のヒントを含むリソースです。'
+description: '**plannerOrderHintsByAssignee**は、タスクに割り当てられたタスクの順序を示すために、タスクリソースの担当者の注文ヒントを含むリソースです。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 27ef2c796c636e39ed6408c373cf0ac66c5572dd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575927"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerOrderHintsByAssignee** には、タスク ボードの [割り当て先ユーザー/グループ] ビューのタスクの順序を示す、[plannerTask](plannertask.md) リソースの担当者の[順序に関するヒント](planner-order-hint-format.md)が含まれます。この型はオープン型です。プロパティは、タスクに割り当てられているユーザーの ID で、値は順序のヒントです。
+**plannerOrderHintsByAssignee**は、タスクに割り当てられたタスクの順序を示すために、[タスク](plannertask.md)リソースの担当者の注文[ヒント](planner-order-hint-format.md)を含むリソースです。
+この型はオープン型です。 プロパティは、タスクに割り当てられたユーザーの id であり、値は order ヒントです。
 
 ## <a name="properties"></a>プロパティ
-クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは、タスクに割り当てられているユーザーの ID をプロパティ名として指定し、有効な[順序のヒント](planner-order-hint-format.md)を値として指定する必要があります。プロパティは、この型から削除できません。サービスは、含まれている [plannerTask](plannertask.md) の割り当てが更新されると、値を自動的に削除します
+オープン型のプロパティは、クライアントで定義できます。 この場合、クライアントは、タスクに割り当てられているユーザーの id をプロパティ名として指定し、有効な[順序ヒント](planner-order-hint-format.md)を値として指定する必要があります。
+プロパティをこの型から削除することはできません。 このサービスは、を含む[プランのタスク](plannertask.md)が更新されたときに、自動的に値を削除します。
 
 例:
 

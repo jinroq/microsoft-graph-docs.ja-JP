@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1b8beb971c0ca8051dcab716526e9dfb12007573
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807302"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573068"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31807302"
 |メンバー|値|説明|
 |:---|:---|:---|
 |未定義|.0|まだ文書化されていません|
-|smimeEncryption|1-d|まだ文書化されていません|
-|smimeSigning|pbm-2|まだ文書化されていません|
-|仮想|2/4|まだ文書化されていません|
-|wi-fi|~|まだ文書化されていません|
+|smimeEncryption|1 |まだ文書化されていません|
+|smimeSigning|2 |まだ文書化されていません|
+|仮想|4 |まだ文書化されていません|
+|wi-fi|8 |まだ文書化されていません|
 
 
 

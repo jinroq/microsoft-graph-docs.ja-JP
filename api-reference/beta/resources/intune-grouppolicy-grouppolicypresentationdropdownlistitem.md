@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bccbd186c3b63145473509bec4312ad0633fe535
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575759"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>grouppolicypresentationdropdownlistitem リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31784144"
 |displayName|String|ドロップダウンリストアイテムのローカライズされた表示名。|
 |value|文字列型 (String)|ドロップダウンリストアイテムに関連付けられた値|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 53ded2d60161d833f70a3b747e0ec35953d5bd39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937083"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573999"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 
@@ -17,12 +17,12 @@ ms.locfileid: "27937083"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|archiveFolder|文字列|ユーザーのアーカイブ フォルダーのフォルダー ID。|
+|archiveFolder|string|ユーザーのアーカイブ フォルダーのフォルダー ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。|
 |language|[localeInfo](localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
-|timeZone|文字列|ユーザーのメールボックスの既定のタイム ゾーン。|
+|timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
 |workingHours|[workingHours](workinghours.md)|ユーザーが働く曜日と、特定のタイムゾーンの時間。|
 
 ## <a name="json-representation"></a>JSON 表記

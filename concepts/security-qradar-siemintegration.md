@@ -5,11 +5,11 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: 83e631a4e276e06ac4f43366d95cde7a2f455777
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573503"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Azure Monitor を使った Microsoft Graph Security API の警告と IBM QRadar SIEM の統合
 

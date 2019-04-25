@@ -4,11 +4,11 @@ description: 要求本文内のプロパティでオープン拡張機能 (openT
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572571"
 ---
 # <a name="update-open-extension"></a>オープン拡張機能を更新する
 
@@ -21,17 +21,17 @@ ms.locfileid: "27986377"
 
 ## <a name="permissions"></a>アクセス許可
 
-拡張機能を作成したリソースとアクセス許可によって委任された (アプリケーション) の種類要求されると、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能が作成されたリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
-| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [グループ](../resources/group.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | 使用不可 | 使用不可 |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
@@ -59,8 +59,8 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>パス パラメーター
 |パラメーター|型|説明|
 |:-----|:-----|:-----|
-|ID|文字列|対応するコレクションのインスタンスの一意識別子。必須。|
-|extensionId|文字列|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
+|id|string|対応するコレクションのインスタンスの一意識別子。必須。|
+|extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
@@ -74,7 +74,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名前       | 値 |
 |:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
+| @odata.type | microsoft graph の opentypeextension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>応答
@@ -118,7 +118,7 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 
 要求の例と以下の要求本文を使用して、上記の拡張情報を次のように更新できます。
 - `companyName` を `Wingtip Toys` から `Wingtip Toys (USA)` に変更する
-- を `500050` から `500100` に変更する `500100`
+- `dealValue` を `500050` から `500100` に変更する
 - 新しいデータをカスタム プロパティ `updated` として追加する
 
 <!-- { "blockType": "ignored" } -->
@@ -161,7 +161,7 @@ Content-type: application/json
 
 #### <a name="request-2"></a>要求 2
 
-2 番目の例では、グループ投稿に含まれる拡張情報を更新する方法を示します。この拡張情報は、次の JSON ペイロード (`2015-07-03T13:04:00Z` の値が `expirationDate`) で最初に表されます。
+2 番目の例では、グループ投稿に含まれる拡張情報を更新する方法を示します。この拡張情報は、次の JSON ペイロード (`expirationDate` の値が `2015-07-03T13:04:00Z`) で最初に表されます。
 
 <!-- { "blockType": "ignored" } -->
 ```http

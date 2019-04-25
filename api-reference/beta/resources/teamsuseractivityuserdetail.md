@@ -1,38 +1,38 @@
 ---
-title: teamsUserActivityUserDetail リソースの種類
-description: リソースの JSON の representaion は、次のようにします。
+title: teamsuseractivityuserdetail リソースの種類
+description: 以下に、リソースの JSON 表記を示します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32b611ee9ec01b0339389256b8c8dff9eac99fa9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913430"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582907"
 ---
-# <a name="teamsuseractivityuserdetail-resource-type"></a>teamsUserActivityUserDetail リソースの種類
+# <a name="teamsuseractivityuserdetail-resource-type"></a>teamsuseractivityuserdetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                | 種類              |
+| プロパティ                | 型              |
 | :---------------------- | :---------------- |
-| reportRefreshDate       | 日付              |
+| reportrefreshdate       | Date              |
 | userPrincipalName       | String            |
-| lastActivityDate        | 日付              |
-| isDeleted               | ブール型           |
-| deletedDate             | 日付              |
-| assignedProducts        | String コレクション |
-| teamChatMessageCount    | Int64             |
+| lastactivitydate        | Date              |
+| isDeleted               | Boolean           |
+| deletedDate             | Date              |
+| assignedProducts        | String collection |
+| teamchatmessagecount    | Int64             |
 | privateChatMessageCount | Int64             |
-| callCount               | Int64             |
-| meetingCount            | Int64             |
-| hasOtherAction          | ブール型           |
-| reportPeriod            | String            |
+| callcount               | Int64             |
+| 会議数            | Int64             |
+| hasotheraction          | Boolean           |
+| reportperiod            | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 
-リソースの JSON の representaion は、次のようにします。
+以下に、リソースの JSON 表記を示します。
 
 <!-- {
   "blockType": "resource",

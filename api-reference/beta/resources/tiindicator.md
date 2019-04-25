@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582863"
 ---
 # <a name="tiindicator-resource-type"></a>tiindicator リソースの種類
 
@@ -26,8 +26,8 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 | [Get tiIndicator](../api/tiindicator-get.md) | [tiindicator](tiindicator.md) | tiindicator オブジェクトのプロパティとリレーションシップを読み取ります。 |
 | [Create tiIndicator](../api/tiindicators-post.md) | [tiindicator](tiindicator.md) | tiindicator コレクションへの投稿によって、新しい tiindicator を作成します。 |
 | [List tiIndicators](../api/tiindicators-list.md) | [tiindicator](tiindicator.md)コレクション | tiindicator オブジェクトのコレクションを取得します。 |
-| [Update](../api/tiindicator-update.md) | [tiindicator](tiindicator.md) | tiindicator オブジェクトを更新します。 |
-| [削除する](../api/tiindicator-delete.md) | なし | tiindicator オブジェクトを削除します。 |
+| [更新する](../api/tiindicator-update.md) | [tiindicator](tiindicator.md) | tiindicator オブジェクトを更新します。 |
+| [削除](../api/tiindicator-delete.md) | なし | tiindicator オブジェクトを削除します。 |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|なし| 複数の tiindicator オブジェクトを削除します。|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|なし| `externalId`プロパティによって複数の tiindicator オブジェクトを削除します。|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiindicator](tiindicator.md)コレクション|tiindicators コレクションを投稿して、新しい tiindicators を作成します。|
@@ -37,16 +37,16 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|アクション|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 可能な値は、`unknown`、`allow`、`block`、`alert` です。 **必須です。**|
+|action|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 使用可能な値は、`unknown`、`allow`、`block`、`alert` です。 **必須です。**|
 |activitygroupnames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
 |additionalinformation|String|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
 |azureTenantId|String| インジケーターが取り込まれたのときに、システムによってスタンプされます。 送信クライアントの Azure Active Directory テナント id。 **必須です。**|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
-|description|String| インジケーターで表される脅威の簡単な説明 (100 文字以内)。 **必須です。**|
+|説明|String| インジケーターで表される脅威の簡単な説明 (100 文字以内)。 **必須です。**|
 |diamondModel|[diamondModel](#diamondmodel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
-|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 **必須です。**|
+|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` **必須です。**|
 |externalId|String| インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。 |
-|id|String|インジケーターが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 読み取り専用です。|
+|id|String|インジケーターが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 読み取り専用。|
 |ingestedDateTime|DateTimeOffset| インジケーターが取り込まれたのときに、システムによってスタンプされます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
 |"出てきたチェイン"|[](#killchain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「次を参照してください」を参照してください。 |
@@ -56,7 +56,7 @@ tiindicators によっ**** てアップロードされた脅威指標は、組�
 |「いいえ veonly」|Boolean |エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。 |
 |重大度|Int32| インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。 |
 |tags|String コレクション|任意のタグ/キーワードを格納する文字列の JSON 配列。 |
-|targetproduct|String|インジケーターを適用する1つのセキュリティ製品を表す文字列型 (string) の値を指定します。 指定できる値は`Azure Sentinel`次のとおりです。 **Required**|
+|targetproduct|String|インジケーターを適用する1つのセキュリティ製品を表す文字列型 (string) の値を指定します。 指定できる値は`Azure Sentinel`次のとおりです。 **必須**|
 |threatType|[threatType](#threattype-values)| 各インジケーターには、有効なインジケーターの脅威の種類が含まれている必要があります。 使用可能な値は、`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList` です。 **必須です。** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。 **必須です。**|
 

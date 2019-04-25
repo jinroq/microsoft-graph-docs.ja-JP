@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 29ba1b9555d8e01b9a2f9bd80e476e1cf0ba5c7d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573089"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>deviceAndAppManagementRoleDefinition リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "31793540"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[deviceAndAppManagementRoleDefinitions のリスト](../api/intune-rbac-deviceandappmanagementroledefinition-list.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) コレクション|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get deviceAndAppManagementRoleDefinition](../api/intune-rbac-deviceandappmanagementroledefinition-get.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[deviceAndAppManagementRoleDefinition の取得](../api/intune-rbac-deviceandappmanagementroledefinition-get.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[deviceAndAppManagementRoleDefinition の作成](../api/intune-rbac-deviceandappmanagementroledefinition-create.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)|新しい [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトを作成します。|
 |[deviceAndAppManagementRoleDefinition の削除](../api/intune-rbac-deviceandappmanagementroledefinition-delete.md)|なし|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) の削除|
 |[deviceAndAppManagementRoleDefinition の更新](../api/intune-rbac-deviceandappmanagementroledefinition-update.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティを更新します。|
@@ -41,7 +41,7 @@ ms.locfileid: "31793540"
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |isBuiltInRoleDefinition|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

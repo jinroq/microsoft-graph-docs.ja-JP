@@ -1,18 +1,18 @@
 ---
-title: ユーザーの最近の活動を取得します。
-description: " API です。 サービスはの最も最近の historyItems では、クエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。"
+title: 最近のユーザーアクティビティを取得する
+description: " トレース. サービスは最新の履歴項目を照会してから、関連するアクティビティを抽出します。 アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。 これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。 また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。"
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: d7d119f5a80e86a47c8f61756cad99542d0b3b0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947841"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575339"
 ---
-# <a name="get-recent-user-activities"></a>ユーザーの最近の活動を取得します。
+# <a name="get-recent-user-activities"></a>最近のユーザーアクティビティを取得する
 
-特定のユーザーの最近の活動を取得します。 この OData の関数では、「最近使用した」の API と同様に動作して含まれているいくつか既定動作があります。 サービスは、最新の[historyItems](../resources/projectrome-historyitem.md)のクエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
+特定のユーザーの最近のアクティビティを取得します。 この OData 関数には、"最近使用された" API のように動作するようにするための既定の動作がいくつか含まれています。 サービスは最新の[履歴項目](../resources/projectrome-historyitem.md)を照会してから、関連するアクティビティを抽出します。 アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。 これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。 また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -32,15 +32,15 @@ ms.locfileid: "27947841"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするためにいくつかの[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリ パラメーターがサポートされています。
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリパラメーターがサポートされています。
 
-- $ は、 **historyItems**のナビゲーション プロパティを展開します。
+- **履歴項目**ナビゲーションプロパティの $expand。
 - ページ間でのアイテムの最大数を制限する $top。
-- **アクティビティ**または**historyItems**、展開されている場合のいずれかの**lastModifiedDateTime**プロパティで $filter。
+- **lastModifiedDateTime**プロパティを使用して、**アクティビティ**または**履歴アイテム**(展開されている場合) のどちらかを $filter します。
 
-URL エンコーディングを使用してクエリがサポートされているいくつかの例を次に示します。
+次に、URL エンコードでサポートされているクエリの例をいくつか示します。
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -52,17 +52,17 @@ URL エンコーディングを使用してクエリがサポートされてい�
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体を指定することはしません。
+要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、アプリケーションのユーザーの最近の活動を使用して応答コード。
+成功した場合、このメソッド`200 OK`は、アプリケーションのユーザーの最近のアクティビティで応答コードを返します。
 
 ## <a name="example"></a>例
 

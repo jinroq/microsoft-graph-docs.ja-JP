@@ -1,21 +1,21 @@
 ---
-title: チームでのアプリケーションの一覧
-description: 指定されたチームにインストールされているアプリケーションの一覧を取得します。
+title: チームのアプリを一覧表示する
+description: 指定したチームにインストールされているアプリのリストを取得します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3289f7abc80e20a11d38c9ab35a9961981b81dd1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 62ed898417e53b4ec88e4c620cfcc7b974731e48
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574828"
 ---
-# <a name="list-apps-in-team"></a>チームでのアプリケーションの一覧
+# <a name="list-apps-in-team"></a>チームのアプリを一覧表示する
 
 
 
-[アプリケーションのインストール](../resources/teamsappinstallation.md)を指定された[チーム](../resources/team.md)での一覧を取得します。
+指定した[チーム](../resources/team.md)に[インストールされているアプリ](../resources/teamsappinstallation.md)のリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "27985733"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | Group.Read.All、Group.ReadWrite.All    |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,9 +35,9 @@ ms.locfileid: "27985733"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
-このメソッドは、$filter、$select をサポートしていて、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。
+このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -51,7 +51,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[teamsApp](../resources/teamsapp.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[teamsapp](../resources/teamsapp.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -70,7 +70,7 @@ GET /teams/{id}/installedApps
 ### <a name="response"></a>応答
 
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>例--は、インストールされているアプリケーションの名前を取得します。
+## <a name="example----getting-the-names-of-the-installed-apps"></a>例--インストールされているアプリの名前を取得する
 
 ### <a name="request"></a>要求
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDe
 
 応答の例を次に示します。
 
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

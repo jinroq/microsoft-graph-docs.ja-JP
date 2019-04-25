@@ -1,17 +1,17 @@
 ---
-title: グループ設定の一覧表示
+title: グループ設定を一覧表示する
 description: グループ設定オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cb245c786ef1fbede3e305fd73df74eb574393c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 445e03aebe0743aaaf674e4ad458eb7b392186fb
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932365"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577841"
 ---
-# <a name="list-group-settings"></a>グループ設定の一覧表示
+# <a name="list-group-settings"></a>グループ設定を一覧表示する
 
 グループ設定オブジェクトのリストを取得します。
 
@@ -33,12 +33,12 @@ ms.locfileid: "27932365"
 
 ```http
 GET /groupSettings
-GET group/{id}/settings
+GET groups/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
-> 注: $filter はサポートされていません。
+>**注:** $filter はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前 | 説明 |
@@ -50,7 +50,7 @@ GET group/{id}/settings
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [groupSetting](../resources/groupsetting.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[groupsetting](../resources/groupsetting.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

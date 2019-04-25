@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53c806e250d6b201e6dfe49d90685c4144913182
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250405"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574076"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "30250405"
 |windowsCount|Int32|Windows デバイスの数です。|
 |unknownCount|Int32|不明なデバイスの数です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

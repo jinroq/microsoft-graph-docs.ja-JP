@@ -1,25 +1,25 @@
 ---
 title: ノートブックを取得する
-description: ノートブック オブジェクトのプロパティとリレーションシップを取得します。
+description: ノートブックオブジェクトのプロパティとリレーションシップを取得します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 01e8caa93703fd10e81cc82a23931ab426b0773c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925806"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575913"
 ---
 # <a name="get-notebook"></a>ノートブックを取得する
 
-[ノートブック](../resources/notebook.md) オブジェクトのプロパティとリレーションシップを取得します。
+[ノートブック](../resources/notebook.md)オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -31,13 +31,13 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
 GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための `select` および `expand` [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+このメソッドは、 `select`応答`expand`をカスタマイズするためのおよび[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-ノートブックの有効な `expand` 値は `sections` および `sectionGroups` です。
+ノートブック`expand`の有効な値`sections`は`sectionGroups`、とです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |
@@ -47,7 +47,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [notebook](../resources/notebook.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[notebook](../resources/notebook.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

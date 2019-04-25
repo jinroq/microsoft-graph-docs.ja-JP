@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575297"
 ---
 # <a name="range-cell"></a>範囲:セル
 
@@ -38,12 +38,12 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="path-parameters"></a>パス パラメーター
-パスでは、次のパラメーターを提供します。
+パスに、次のパラメーターを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |row|Int32|取得するセルの行番号。0 を起点とする番号になります。|
-|列|Int32|取得セルの列番号。0 を起点とする番号になります。|
+|column|Int32|取得セルの列番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

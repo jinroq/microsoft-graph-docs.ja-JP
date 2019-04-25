@@ -1,15 +1,15 @@
 ---
 title: 予定表を更新する
-description: '予定表オブジェクトのプロパティを更新します。 カレンダーには、ユーザーのいずれかを指定できます。 '
+description: '予定表オブジェクトのプロパティを更新します。 予定表は、ユーザーに対して1つにすることができます。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ad372b18397d24185c3e05daabe206fc3336f544
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580588"
 ---
 # <a name="update-calendar"></a>予定表を更新する
 
@@ -24,7 +24,8 @@ ms.locfileid: "27987833"
 |アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーまたはグループの既定の[予定表](../resources/calendar.md)です。
+<!-- { "blockType": "ignored" } -->
+ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar

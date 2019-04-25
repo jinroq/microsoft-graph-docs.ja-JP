@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3c3595687f21b5121272255857dc5daeae0e01c2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259697"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573383"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "30259697"
 |lastUpdateDateTime|DateTimeOffset|最終更新時刻|
 |configurationVersion|Int32|対象の概要に関するポリシーのバージョン|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

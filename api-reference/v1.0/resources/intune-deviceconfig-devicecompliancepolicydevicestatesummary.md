@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1c434009d1f34014a36e6871963051773aa2aab5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256876"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572445"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30256876"
 |errorDeviceCount|Int32|エラー デバイスの数|
 |conflictDeviceCount|Int32|競合デバイスの数|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

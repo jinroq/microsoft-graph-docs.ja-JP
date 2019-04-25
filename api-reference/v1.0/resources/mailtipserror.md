@@ -1,25 +1,25 @@
 ---
 title: mailTipsError リソースの種類
-description: 操作中に発生するエラーです。
+description: アクション中に発生するエラー。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934206"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574006"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError リソースの種類
 
-操作中に発生するエラーです。
+アクション中に発生するエラー。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:-----|:-----|:-----|
-| message | String | エラー メッセージ。 |
-| code | String | エラー コード。 |
+| メッセージ​​ | String | エラー メッセージ。 |
+| code | String | エラーコード。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

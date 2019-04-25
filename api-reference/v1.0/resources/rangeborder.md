@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9c32264311400951152f892e6f88d70645f47064
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947611"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579488"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder リソースの種類
 
@@ -23,18 +23,18 @@ ms.locfileid: "27947611"
 |[RangeBorder を取得する](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |rangeBorder オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |RangeBorder オブジェクトを更新します。 |
 |[List](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md)コレクション |rangeBorder オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。|
+|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|インデックスに基づいて border オブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
-|ID|文字列|枠線の識別子を表します。 可能な値: `EdgeTop`、 `EdgeBottom`、 `EdgeLeft`、 `EdgeRight`、 `InsideVertical`、 `InsideHorizontal`、 `DiagonalDown`、 `DiagonalUp`。 読み取り専用です。|
-|sideIndex|文字列|罫線の特定の側面を示す定数値です。 可能な値: `EdgeTop`、 `EdgeBottom`、 `EdgeLeft`、 `EdgeRight`、 `InsideVertical`、 `InsideHorizontal`、 `DiagonalDown`、 `DiagonalUp`。 読み取り専用です。|
-|style|文字列|境界線の線のスタイルを指定する線のスタイルの定数の 1 つです。 可能な値: `None`、 `Continuous`、 `Dash`、 `DashDot`、 `DashDotDot`、 `Dot`、 `Double`、 `SlantDashDot`。|
-|weight|文字列|範囲周辺の罫線の太さを指定します。 可能な値: `Hairline`、 `Thin`、 `Medium`、 `Thick`。|
+|id|string|罫線の識別子を表します。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用。|
+|sideindex|string|罫線の特定の辺を表す定数値。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用です。|
+|style|string|罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 使用可能な値は`None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、、 `SlantDashDot`、です。|
+|weight|string|範囲を取り囲む罫線の太さを指定します。 使用可能な値は`Hairline`、 `Thin`、 `Medium`、 `Thick`、です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

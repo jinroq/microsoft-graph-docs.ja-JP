@@ -1,17 +1,17 @@
 ---
-title: deviceManagement の取得
+title: Get deviceManagement
 description: deviceManagement オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250636"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576952"
 ---
-# <a name="get-devicemanagement"></a>deviceManagement の取得
+# <a name="get-devicemanagement"></a>Get deviceManagement
 
 > **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
@@ -54,7 +54,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文

@@ -1,18 +1,18 @@
 ---
-title: 作成するか、historyItem を置き換える
-description: 新規作成または既存のユーザー アクティビティの既存の履歴項目を置換します。
+title: 履歴アイテムを作成または置換する
+description: 既存のユーザーアクティビティに対して、既存の履歴アイテムを新規作成するか、置き換えます。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913003"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575332"
 ---
-# <a name="create-or-replace-a-historyitem"></a>作成するか、historyItem を置き換える
+# <a name="create-or-replace-a-historyitem"></a>履歴アイテムを作成または置換する
 
-新規作成または既存のユーザー アクティビティの既存の履歴項目を置換します。
+既存のユーザーアクティビティに対して、既存の履歴アイテムを新規作成するか、置き換えます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -37,17 +37,17 @@ Id は GUID である必要があります。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、 [historyItem](../resources/projectrome-historyitem.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[履歴アイテム](../resources/projectrome-historyitem.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `201 Created` 、historyItem が作成されている場合、応答コードまたは`200 OK`、historyItem を交換した場合。
+成功した場合、このメソッド`201 Created`は、履歴アイテムが作成された`200 OK`場合、または履歴アイテムが置き換えられた場合に、応答コードを返します。
 
 ## <a name="example"></a>例
 

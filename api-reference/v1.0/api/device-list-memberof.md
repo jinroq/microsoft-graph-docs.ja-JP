@@ -1,19 +1,19 @@
 ---
-title: デバイス グループを一覧表示
-description: このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
+title: デバイス グループを一覧表示する
+description: このデバイスが直接メンバーであるグループを取得します。 この操作は推移的ではありません。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1642b6ee758af5d2ab4004ea5b7a5293f33f7d01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583754"
 ---
-# <a name="list-device-groups"></a>デバイス グループを一覧表示
+# <a name="list-device-groups"></a>デバイス グループを一覧表示する
 
-このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
+このデバイスが直接メンバーであるグループを取得します。 この操作は推移的ではありません。
 
 ## <a name="permissions"></a>アクセス許可
 

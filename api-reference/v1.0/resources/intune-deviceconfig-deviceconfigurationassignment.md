@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 60fb4f0a782d9502f9e3da3f0a7da2389e937a7d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573418"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "30251427"
 |id|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

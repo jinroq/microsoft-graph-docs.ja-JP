@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 687f08a32347f18480523b5f06cf312131067370
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979663"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581003"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|文字列型 (String)|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
+|説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
 
 
 

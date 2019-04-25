@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1e4813ee72f7cccb109369ef12b884efe24e9563
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916405"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580071"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -38,15 +38,15 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|type|文字列|グラフの種類を表します。  可能な値: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100`、 `BarClustered`、 `BarStacked`、 `BarStacked100`、 `LineStacked`、 `LineStacked100`、 `LineMarkers`、 `LineMarkersStacked`、 `LineMarkersStacked100`、 `PieOfPie`、 `etc.`。|
+|type|string|グラフの種類を表します。  使用可能な値は`ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `PieOfPie` `etc.`、、、、、、、、、、、、です。 `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`|
 |sourceData|Json|データ ソースに対応する Range オブジェクトです。|
-|seriesBy|文字列|省略可能。 方法の列または行がグラフのデータ系列として使用されるかを指定します。  可能な値: `Auto`、 `Columns`、 `Rows`。|
+|seriesBy|string|省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。  使用可能な値: `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookChart](../resources/chart.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookChart](../resources/chart.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

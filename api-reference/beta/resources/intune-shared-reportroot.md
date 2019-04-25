@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: a2e41d9b17ca7acafa98dad65db5d2ff5ce30925
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572942"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "30151297"
 |:---|:---|:---|
 |id|String|このエンティティの一意識別子です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941602"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575227"
 ---
 # <a name="range-delete"></a>範囲: 削除
 
@@ -40,9 +40,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|<legacyBold>Shift</legacyBold>|文字列|セルをシフトする方向を指定します。  可能な値: `Up`、 `Left`。|
+|Shift|string|セルをシフトする方向を指定します。  使用可能な値は`Up`、 `Left`、です。|
 
 ## <a name="response"></a>応答
 

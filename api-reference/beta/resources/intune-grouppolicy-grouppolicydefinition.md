@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575773"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>grouppolicydefinition リソースの種類
 
@@ -30,9 +30,9 @@ ms.locfileid: "31802766"
 |:---|:---|:---|
 |classType|[grouppolicydefinitionclasstype](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|ポリシーを適用できるグループの種類を指定します。 可能な値は、`user`、`machine` です。|
 |displayName|String|ローカライズされたポリシー名。|
-|explainText|文字列|ポリシーに関連付けられたローカライズされた説明またはヘルプテキスト。 既定値は空白です。|
-|categoryPath|文字列|ポリシーのローカライズされた完全なカテゴリのパス。|
-|supportedOn|文字列|ポリシーによって影響を受けるオペレーティングシステムまたはアプリケーションのバージョンを指定するために使用されるローカライズされた文字列。|
+|explainText|String|ポリシーに関連付けられたローカライズされた説明またはヘルプテキスト。 既定値は空白です。|
+|categoryPath|String|ポリシーのローカライズされた完全なカテゴリのパス。|
+|supportedOn|String|ポリシーによって影響を受けるオペレーティングシステムまたはアプリケーションのバージョンを指定するために使用されるローカライズされた文字列。|
 |msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|

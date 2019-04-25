@@ -1,19 +1,19 @@
 ---
 title: 添付ファイルを一覧表示する
-description: 投稿に添付された添付ファイル オブジェクトのリストを取得します。
+description: 投稿に添付された Attachment オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 5000ed8f65c0dd982a341ceff5c125dada073290
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983500"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574286"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
-投稿に添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。
+投稿に添付された [Attachment](../resources/attachment.md) オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -24,7 +24,8 @@ ms.locfileid: "27983500"
 |アプリケーション | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[転記](../resources/post.md)グループの[会話](../resources/conversation.md)に属している[スレッド](../resources/conversationthread.md)での添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575122"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 列挙型
 
@@ -21,9 +21,9 @@ Android 作業プロファイル既定のアプリアクセス許可ポリシー
 |メンバー|値|説明|
 |:---|:---|:---|
 |devicedefault|.0|デバイスの既定値。意図的ではありません。|
-|・|1-d|・.|
-|autogrant|pbm-2|自動付与|
-|autodeny|1/3|自動拒否。|
+|音声ガイダンス|1 |・.|
+|autogrant|2 |自動付与|
+|autodeny|3 |自動拒否。|
 
 
 

@@ -1,25 +1,25 @@
 ---
 title: physicalOfficeAddress リソースの種類
-description: 連絡先やイベントなどのリソースの会社の住所を表します。
+description: 連絡先、イベントなどのリソースの勤務先住所を表します。
 localization_priority: Normal
 ms.openlocfilehash: bd4274e29b2ef0f9e7e8318528d18103be19fabc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817788"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573733"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress リソースの種類
 
-リソース、組織の連絡先などの会社の住所を表します。
+組織の連絡先などのリソースの勤務先住所を表します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |city|String|市区町村。|
 |countryOrRegion|String|国または地域。自由形式の文字列値です。例: 「米国」。|
-|officeLocation  | String | 組織の連絡先の数の建物や事務所などの場所を Office です。  |
+|officeLocation  | String | 組織の連絡先の建物やオフィス番号などのオフィスの場所。  |
 |postalCode|String|郵便番号。|
 |state|String|都道府県。|
 |street|String|番地。|

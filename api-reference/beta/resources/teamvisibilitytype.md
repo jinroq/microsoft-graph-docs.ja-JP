@@ -1,28 +1,28 @@
 ---
 title: Members
-description: 'チームの可視性を説明します。 '
+description: 'チームの可視性について説明します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 7e77fbd2667f8656a4c2f66046636ff73ac8891d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582942"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 列挙型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チーム](../resources/team.md)の可視性を説明します。 
+[チーム](../resources/team.md)の可視性について説明します。 
 
 ## <a name="members"></a>メンバー
 
 | メンバー | 値| 説明 |
 |:---------------|:--------|:----------|
-|Private|(0)|すべてのユーザー、チームを参照してくださいが、所有者のみがチームにユーザーを追加できます。|
-|public|-1|チームでだれでも参加できます。|
+|機密性|.0|チームはだれでも見ることができますが、ユーザーをチームに追加できるのは所有者のみです。|
+|public|1 |すべてのユーザーがチームに参加できます。|
 <!--
 {
   "type": "#page.annotation",

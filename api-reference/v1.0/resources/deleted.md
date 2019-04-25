@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
 ms.openlocfilehash: d52ca0a9815e46ebc11a653be381ac65f3cd209e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482183"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574625"
 ---
 # <a name="deleted-facet"></a>Deleted ファセット
 
@@ -35,7 +35,7 @@ ms.locfileid: "30482183"
 ```
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類   | 説明                               |
+| プロパティ | 型   | 説明                               |
 |:---------|:-------|:------------------------------------------|
 | state    | String | 削除されたアイテムの状態を表します。 |
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9e8f5ef8a4c7c55ead433b0aa0557ce5fca74ecc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953051"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575325"
 ---
 # <a name="range-boundingrect"></a>範囲:BoundingRect
 
@@ -42,7 +42,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|anotherRange|文字列|Range オブジェクト、アドレスまたは範囲名。|
+|anotherRange|string|Range オブジェクト、アドレスまたは範囲名。|
 
 ## <a name="response"></a>応答
 

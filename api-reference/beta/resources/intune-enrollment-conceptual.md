@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572391"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573922"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して会社所有のデバイスを登録する
 
@@ -49,7 +49,7 @@ ms.locfileid: "30572391"
 - [Windows Autopilot 展開プロファイル](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Windows AutoPilot Deployment プロファイルの割り当て](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows AutoPilot デバイス ID](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows 自動操縦デバイスの種類](intune-enrollment-windowsautopilotdevicetype.md)
+- [Windows AutoPilot デバイスの種類](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot プロファイルの割り当ての状態の詳細](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows Autopilot プロファイルの割り当ての状態](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot の設定](intune-enrollment-windowsautopilotsettings.md)

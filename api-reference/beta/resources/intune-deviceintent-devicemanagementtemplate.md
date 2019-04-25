@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801877"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575857"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>devicemanagementtemplate リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "31801877"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|テンプレート ID|
+|id|String|テンプレート ID|
 |displayName|String|テンプレートの表示名|
 |説明|String|テンプレートの説明|
 

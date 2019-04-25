@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 42d0ecbb7745346d5fc8d25fbc1aa595c8f1887f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573460"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "30264058"
 |activeHoursStart|TimeOfDay|アクティブ時間の開始|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

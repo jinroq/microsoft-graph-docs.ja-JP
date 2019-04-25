@@ -1,15 +1,15 @@
 ---
 title: 投稿を取得する
-description: '指定したスレッド内の投稿のプロパティと関係を取得します。 両方の親を指定することができます。 '
+description: '指定したスレッド内の投稿のプロパティと関係を取得します。 親の両方を指定できます。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 8e724a664e708503daf5b30afdec04cccbb2fee4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912940"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576305"
 ---
 # <a name="get-post"></a>投稿を取得する
 

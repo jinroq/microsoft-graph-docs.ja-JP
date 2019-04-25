@@ -1,37 +1,37 @@
 ---
 title: recordOperation リソースの種類
-description: RecordOperation 型
+description: recordOperation の種類
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563039"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RecordOperation 型
+recordOperation の種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                       | 型                        | 説明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | クライアントのコンテキスト。                                                                                                                               |
-| completionReason               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |
+| clientContext                  | String                      | クライアントコンテキスト。                                                                                                                               |
+| 「補完の理由」               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |
 | createdDateTime                | DateTimeOffset              | レコーディングが作成された時刻。                                                                                                          |
-| id                             | String                      | サーバー操作の id です。読み取り専用です。 サーバーによって生成されます。                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | 操作の最後の操作の時間です。                                                                                                     |
-| recordResourceAccessToken      | String                      | 記録を取得するために必要なアクセス トークンです。                                                                                              |
-| recordResourceLocation         | String                      | 記録が保存されている場所です。                                                                                                      |
+| id                             | String                      | サーバー操作 id。読み取り専用です。 サーバーによって生成されます。                                                                                             |
+| lastactiondatetime             | DateTimeOffset              | 操作の最後の操作の時刻。                                                                                                     |
+| recordResourceAccessToken      | String                      | レコーディングを取得するために必要なアクセストークン。                                                                                              |
+| recordresourcelocation         | String                      | レコーディングが配置されている場所。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報。  読み取り専用です。 サーバーによって生成されます。                                                                                             |
 | status                         | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 サーバーによって生成されます。                                                 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

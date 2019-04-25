@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f3d1b5132773bb0bf92f35c39b660726d7a1ef66
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261860"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575080"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationgu/blockクリップの sharingtype 列挙型
 
@@ -20,11 +20,11 @@ applicationgu/blockblocksharingsharingtype に指定できる値
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|notConfigured|.0|未構成|
-|blockboth|1-d|ホストからコンテナーへ、およびコンテナーからホストへのデータの共有をブロックするクリップボード|
-|blockhosttocontainer|pbm-2|データをホストからコンテナーに共有するためのクリップボードをブロックする|
-|blockContainerToHost|1/3|コンテナーからホストへのデータを共有するためのクリップボードをブロックする|
-|blocknone|2/4|データをホストからコンテナーにも、コンテナーからホストへも共有しないようにクリップボードをブロックする|
+|notConfigured|.0|Not Configured|
+|blockboth|1 |ホストからコンテナーへ、およびコンテナーからホストへのデータの共有をブロックするクリップボード|
+|blockhosttocontainer|2 |データをホストからコンテナーに共有するためのクリップボードをブロックする|
+|blockContainerToHost|3 |コンテナーからホストへのデータを共有するためのクリップボードをブロックする|
+|blocknone|4 |データをホストからコンテナーにも、コンテナーからホストへも共有しないようにクリップボードをブロックする|
 
 
 

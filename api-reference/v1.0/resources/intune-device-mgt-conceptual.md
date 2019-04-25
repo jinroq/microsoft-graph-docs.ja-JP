@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250069"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575234"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
@@ -43,7 +43,7 @@ ms.locfileid: "30250069"
 - [管理対象デバイスの概要](intune-devices-manageddeviceoverview.md)
 - [管理対象デバイスの所有者の種類](intune-devices-manageddeviceownertype.md)
 - [管理対象デバイスのパートナー正常性状態の報告](intune-devices-manageddevicepartnerreportedhealthstate.md)
-- [管理エージェントの種類](intune-devices-managementagenttype.md)
+- [管理エージェントのタイプ](intune-devices-managementagenttype.md)
 - [通知メッセージ テンプレート](intune-notification-notificationmessagetemplate.md)
 - [通知テンプレートのブランド化オプション](intune-notification-notificationtemplatebrandingoptions.md)
 - [リモート アシスタンス オンボード状態](intune-remoteassistance-remoteassistanceonboardingstatus.md)

@@ -1,13 +1,13 @@
 ---
 title: 優先受信トレイを管理する
-description: '重要なメッセージを表示することにより、フォーカスのある受信トレイ、 `Focused` 、受信トレイで受信トレイのメッセージの残りの部分のタブ、 `Other` ] タブ。分類システム '
+description: '優先受信トレイを使用すると、受信トレイ`Focused`のタブ内の重要なメッセージ、およびその他の受信トレイ`Other`メッセージをタブに表示できます。分類システム '
 localization_priority: Normal
 ms.openlocfilehash: b4c6ceca3248a03f814e42298c9892a1447dd2a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826727"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573985"
 ---
 # <a name="manage-focused-inbox"></a>優先受信トレイを管理する
 

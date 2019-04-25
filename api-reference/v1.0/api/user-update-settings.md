@@ -1,19 +1,19 @@
 ---
-title: 設定の更新
-description: '設定オブジェクトのプロパティを更新します。 '
+title: 設定を更新する
+description: 'settings オブジェクトのプロパティを更新します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be8ed27ecff80017cab56e1d3d20755cf68351cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb739ebe4266dc61246fd39f1b4f053ab08a5a75
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573572"
 ---
-# <a name="update-settings"></a>設定の更新
+# <a name="update-settings"></a>設定を更新する
 
-[設定](../resources/user-settings.md)オブジェクトのプロパティを更新します。 同じ組織内のユーザーは、優先順位または組織のポリシーに基づいて、異なる設定を持つことができます。 ユーザーの現在の設定を取得、[現在のユーザー設定](user-get-settings.md)を参照してください。 
+[settings](../resources/user-settings.md)オブジェクトのプロパティを更新します。 同じ組織内のユーザーは、そのユーザーの好みまたは組織のポリシーに基づいて設定を変えることができます。 ユーザーの現在の設定を取得するには、「[現在のユーザーの設定](user-get-settings.md)」を参照してください。 
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,20 +21,20 @@ ms.locfileid: "27980273"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | User.ReadWrite、User.ReadWrite.All   |
+|委任 (職場または学校のアカウント) | ユーザー読み取り/書き込みユーザー。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/settings
+PATCH /me/settings
 ```
 
-'UserPrincipalName' は、ユーザー、または User.ReadWrite.All のアクセス許可を持つユーザーがアクセス可能なや、ユーザー id が要求されます。 詳細については、[アクセス許可](/graph/permissions-reference)を参照してください。 
+' user id ' または ' userPrincipalName ' を持つ要求は、ユーザーまたはすべてのアクセス許可を持つユーザーのみがアクセスできます。 詳細については、「 [Permissions](/graph/permissions-reference)」を参照してください。 
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
+PATCH /users/{id | userPrincipalName}/settings/
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -50,13 +50,13 @@ PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|True を設定するには、 [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API およびユーザーの Office についてのドキュメントへのアクセスを無効にする代理人へのアクセスは無効にします。 Office 365 に表示されるコンテンツの関連性に影響を与えるも true に設定 - 候補のサイトでは、SharePoint のホームとビジネスの OneDrive の検索ビューの関連性の低い結果を表示するたとえば、します。 この設定は、 [Office の説明](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)でコントロールの状態を反映しています。|
+|contributionToContentDiscoveryDisabled|Boolean|true に設定[トレンド分析](/graph/api/resources/insights-trending?view=graph-rest-beta)API への代理人アクセスを無効にし、ユーザーの Office Delve でドキュメントへのアクセスを無効にします。 true に設定すると、Office 365 に表示されるコンテンツの関連性にも影響します。たとえば、SharePoint ホームのおすすめサイト、OneDrive for business の検出ビューには関連性の低い検索結果が表示されます。 この設定は、 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)のコントロールの状態を反映します。|
 
 ## <a name="example"></a>例 
 
 ##### <a name="request"></a>要求
 
-Delve のユーザーを無効にし、組織全体のコンテンツの関連性に関する彼の貢献度を無効にする方法について、例の要求は、ここで。
+次に、Delve からユーザーをオプトアウトして、組織全体のコンテンツの関連性に関する投稿を無効にする方法についての要求の例を示します。
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
@@ -85,10 +85,10 @@ Content-length: 72
 
 #### <a name="batch-request"></a>バッチ要求
 
-Delve から複数のユーザーを無効にし、バッチ要求を組織全体でのコンテンツの関連性のような貢献を無効にすることもできます。
-詳細については、 [JSON のバッチ処理](https://developer.microsoft.com/graph/docs/concepts/json_batching)を参照してください。
+また、Delve から複数のユーザーをオプトアウトし、バッチ要求によって組織全体のコンテンツ関連性に対する貢献を無効にすることもできます。
+詳細については、「 [JSON のバッチ](https://developer.microsoft.com/graph/docs/concepts/json_batching)処理」を参照してください。
 
-**重要**: だけで、[組織の管理](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US)役割グループのメンバーは、複数のユーザーを更新できます。 
+**重要**:[組織の管理](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US)役割グループのメンバーのみが複数のユーザーを更新できます。 
 
 
 

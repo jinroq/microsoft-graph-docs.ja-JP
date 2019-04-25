@@ -1,21 +1,21 @@
 ---
-title: personDataSource リソースの種類
-description: ディレクトリと Outlook の連絡先は、ユーザー データ ソースを表します。
+title: 個人データソースリソースの種類
+description: ユーザーデータの取得元 (ディレクトリ、Outlook の連絡先など) を表します。
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 431cd9163873305508d5244005e6fe0a80501771
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509092"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573758"
 ---
-# <a name="persondatasource-resource-type"></a>personDataSource リソースの種類
+# <a name="persondatasource-resource-type"></a>個人データソースリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリと Outlook の連絡先は、ユーザー データ ソースを表します。
+ユーザーデータの取得元 (ディレクトリ、Outlook の連絡先など) を表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -38,7 +38,7 @@ ms.locfileid: "29509092"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|type|String|データ ソースの種類です。|
+|type|String|データソースの種類を示します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

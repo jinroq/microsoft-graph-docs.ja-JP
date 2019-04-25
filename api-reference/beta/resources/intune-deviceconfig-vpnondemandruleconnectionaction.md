@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 08e39402a0ab6211c3feec53cf325530ea216c85
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561944"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>vpnOnDemandRuleConnectionAction 列挙型
 
@@ -23,9 +23,9 @@ VPN のオンデマンドルールの接続アクション。
 |メンバー|値|説明|
 |:---|:---|:---|
 |connect|.0|結び付ける.|
-|evaluateConnection|1-d|接続を評価します。|
-|フォント|pbm-2|フォント.|
-|disconnect|1/3|切り.|
+|evaluateConnection|1 |接続を評価します。|
+|フォント|2 |フォント.|
+|disconnect|3 |切り.|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4a96a57ec89783d1ed1f06b1edc5d0a1f5e88068
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575731"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "31788717"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|values|String コレクション|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
+|values|String collection|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

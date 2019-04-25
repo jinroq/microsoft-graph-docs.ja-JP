@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090b9bf476fcaa928f2c6358565ef86af627b8a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574646"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 
@@ -25,7 +25,7 @@ ms.locfileid: "27966987"
 |[削除済みアイテムの復元](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 最近削除されたアイテムを復元します。 |
 |[削除済みアイテムの一覧表示](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテムのリストを取得します。 |
 |[アイテムの完全削除](../api/directory-deleteditems-delete.md) | なし | アイテムを完全に削除します。 |
-|[ユーザーによって所有されている削除済みのアイテムを一覧表示します。](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) コレクション | ユーザーによって所有されているディレクトリの項目を一覧表示します。 |
+|[ユーザーが所有する削除済みアイテムを一覧表示する](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) コレクション | ユーザーが所有しているディレクトリアイテムを一覧表示します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

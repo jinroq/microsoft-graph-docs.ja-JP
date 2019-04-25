@@ -1,30 +1,30 @@
 ---
-title: teamMessagingSettings リソースの種類
-description: メッセージングを構成する設定は、チーム内の参照。
+title: teammessagingsettings リソースの種類
+description: チームでメッセージとメンションを構成する設定。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f8b643b752ab130433153e7a238a64d2960d6705
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573845"
 ---
-# <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings リソースの種類
+# <a name="teammessagingsettings-resource-type"></a>teammessagingsettings リソースの種類
 
 
 
-メッセージングを構成する設定は、[チーム](team.md)内の参照。
+[チーム](team.md)内のメッセージとメンションを構成するための設定。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|ブール型|場合 true の場合、ユーザーに設定するには、自分のメッセージを編集できます。|
-|allowUserDeleteMessages|ブール型|場合は true の場合、ユーザーに設定するには、そのメッセージを削除できます。|
-|allowOwnerDeleteMessages|ブール型|場合は true の場合、所有者に設定するには、任意のメッセージを削除できます。|
-|allowTeamMentions|ブール型|場合、参照投稿を許可する @team を true に設定します。|
-|allowChannelMentions|ブール型|場合、参照投稿を許可する @channel を true に設定します。|
+|allowusereditmessages|Boolean|true に設定されている場合、ユーザーは自分のメッセージを編集できます。|
+|allowUserDeleteMessages|Boolean|true に設定されている場合、ユーザーは自分のメッセージを削除できます。|
+|allowOwnerDeleteMessages|Boolean|true に設定されている場合、所有者は任意のメッセージを削除できます。|
+|allowteammentions ション|Boolean|true に設定すると @team メンションが許可されます。|
+|allowchannelmentions ション|Boolean|true に設定すると @channel メンションが許可されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

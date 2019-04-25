@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: ab4ad6a1a1b5647d2b3f1033d35adae7535812ef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577029"
 ---
 # <a name="get-devicecategory"></a>deviceCategory の取得
 
@@ -23,7 +23,7 @@ ms.locfileid: "30261006"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCa
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
+以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
 
 ``` http
 HTTP/1.1 200 OK

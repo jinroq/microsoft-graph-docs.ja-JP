@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: cfa126fea86c7edb302953efc3b88376f2d68a09
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574447"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "30162945"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの UUID。|
+|id|String|オブジェクトの UUID。|
 |**トラブルシューティング**|
 |additionalinformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|[devicemanagementトラブルシューティングイベント](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されたトラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
 |applicationId|String|Intune アプリケーション識別子。|

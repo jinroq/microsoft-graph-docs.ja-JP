@@ -1,25 +1,25 @@
 ---
-title: plannerFavoritePlanReferenceCollection リソースの種類
-description: " 値は、plannerFavoritePlanReference オブジェクトです。"
+title: プラン/お気に入りプラン referencecollection リソースの種類
+description: " この値は、\"プラン参照\" オブジェクトを示します。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c473d4101a1247420e641b532ea04dfbc1a26d2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519487"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572627"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection リソースの種類
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>プラン/お気に入りプラン referencecollection リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerFavoritePlanReferenceCollection**リソースでは、ユーザーがお気に入りとしてマークされている計画への参照のコレクションを表します。 このリソースは、オープン型であり、 [plannerUser](planneruser.md)オブジェクトの一部であります。 プロパティ名、プロパティ値のペアでは、対応する計画の ID をします。値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトです。
+**plan**は、ユーザーによってお気に入りとしてマークされているプランへの参照のコレクションを表します。 このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。 プロパティと値のペアのプロパティ名は、対応するプランの ID です。この値は、"[プラン参照](plannerfavoriteplanreference.md)" オブジェクトを示します。
 
 
 ## <a name="properties"></a>プロパティ
-このオープン型のプロパティを定義することができます。 プロパティ名は、 `id` [plannerPlan](plannerplan.md)リソースの値とその値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトをする必要があります。 お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。
+このオープン型のプロパティを定義できます。 プロパティ名は`id` 、plan リソースとその値を[プラン](plannerplan.md)にする必要が[](plannerfavoriteplanreference.md)あります。 [お気に入り] の一覧から項目を削除するには、プロパティの値`null`をに設定します。
 
 
 ## <a name="json-representation"></a>JSON 表記

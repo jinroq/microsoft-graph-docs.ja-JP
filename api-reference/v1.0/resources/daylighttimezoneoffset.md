@@ -3,11 +3,11 @@ title: daylightTimeZoneOffset リソースの種類
 description: タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。
 localization_priority: Normal
 ms.openlocfilehash: 740b6da9a934c1a30a382d46e64377f9a73ffaa1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574737"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset リソースの種類
 
@@ -24,11 +24,11 @@ ms.locfileid: "27811586"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | daylightBias | Edm.Int32 | 夏時間の協定世界時 (UTC) からの時間オフセットです。 この値は分単位です。  |
 | dayOccurrence | Edm.Int32 | 標準時から夏時間への切り替えが月の何番目の曜日に行われるかを表します。 |
-| dayOfWeek | 文字列 | 標準時から夏時間への切り替えが行われる曜日を表します。 |
+| dayOfWeek | string | 標準時から夏時間への切り替えが行われる曜日を表します。 |
 | month | Edm.Int32 | 標準時から夏時間への切り替えが行われる月を表します。 |
 | time | Edm.TimeOfDay | 標準時から夏時間への切り替えが行われる時刻を表します。 |
 | year | Edm.Int32 | 標準時から夏時間への切り替えが年に何回行われるかを表します。 たとえば、値 0 は年に 1 回を意味します。|

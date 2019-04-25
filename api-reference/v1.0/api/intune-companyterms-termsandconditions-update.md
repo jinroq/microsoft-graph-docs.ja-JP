@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 708d59565896bb7d4782c156dd4af3ff5599b82c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961211"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580234"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|description|String|管理者が提供した T&C ポリシーの説明。|
+|説明|String|管理者が提供した T&C ポリシーの説明。|
 |title|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|

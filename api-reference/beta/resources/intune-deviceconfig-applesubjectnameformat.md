@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8ba3861589dae07ce794366e30b1d9bc934cb9d9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562315"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 列挙型
 
@@ -23,11 +23,11 @@ Apple デバイスのサブジェクト名形式オプション。
 |メンバー|値|説明|
 |:---|:---|:---|
 |commonname|.0|共通名。|
-|commonnameasemail|1-d|電子メールとしての共通名。|
-|配色|pbm-2|カスタムサブジェクト名の形式。|
-|commonnamecommon電子メール|1/3|電子メールを含む共通名。|
-|commonnameasimei|5|IMEI としての共通名。|
-|commonnameasserialnumber|シックス|シリアル番号としての共通名。|
+|commonnameasemail|1 |電子メールとしての共通名。|
+|配色|2 |カスタムサブジェクト名の形式。|
+|commonnamecommon電子メール|3 |電子メールを含む共通名。|
+|commonnameasimei|5 |IMEI としての共通名。|
+|commonnameasserialnumber|6 |シリアル番号としての共通名。|
 
 
 

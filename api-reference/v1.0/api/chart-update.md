@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 03a375e874a06914f5da9039dad58079df1199a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572711"
 ---
 # <a name="update-chart"></a>Update chart
 
@@ -41,13 +41,13 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
 |left|double|グラフの左側からワークシートの原点までの距離 (ポイント単位)。|
-|name|文字列| グラフ オブジェクトの名前を表します。|
+|name|string|グラフ オブジェクトの名前を表します。|
 |top|double|オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。|
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChart](../resources/chart.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChart](../resources/chart.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

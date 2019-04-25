@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1db6b0d5d7376b5c71b3be5753a777477c3b3850
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575794"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>devicemanagementintentdevicestate リソースの種類
 
@@ -37,9 +37,9 @@ ms.locfileid: "31785763"
 |deviceDisplayName|String|レポートされているデバイス名|
 |lastReportedDateTime|DateTimeOffset|インテントレポートの最終更新日時|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|目的のデバイス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
-|deviceId|文字列|レポートされているデバイス id|
+|deviceId|String|レポートされているデバイス id|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -1,27 +1,27 @@
 ---
 title: typedEmailAddress リソースの種類
-description: 名前、電子メール アドレス、および連絡先の対応する電子メール アドレス タイプを表します。
+description: 連絡先の名前、電子メールアドレス、および対応する電子メールアドレスの種類を表します。
 localization_priority: Normal
 ms.openlocfilehash: 3b1230dabc1e49c6cb9220eea95f0c3b93053d96
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510709"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576459"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-名前、電子メール アドレス、および、対応する電子メール アドレスの種類[にお問い合わせください](contact.md)を表します。
+[連絡先](contact.md)の名前、電子メールアドレス、および対応する電子メールアドレスの種類を表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|address|String|連絡先の電子メール アドレスです。|
+|address|String|連絡先の電子メールアドレス。|
 |name|String|連絡先の表示名。|
-|type |String |電子メール アドレスの種類。 可能な値は、`unknown`、`work`、`personal`、`main`、`other` です。 既定値は、 `unknown`、つまり、**アドレス**が設定されていない特定の種類として。 |
-|otherLabel |String  |電子メール アドレスのカスタムの型を指定する**の種類**を設定`other`、 **otherLabel**を独自の文字列を割り当てるとします。 など、ボランティア活動の特定の電子メール アドレスを使用する場合があります。 **タイプ**を設定`other`、 **otherLabel**を次のように独自の文字列を設定して`Volunteer work`。 |
+|type |String |電子メールアドレスの種類。 可能な値は、`unknown`、`work`、`personal`、`main`、`other` です。 既定値はです`unknown`。これは、**アドレス**が特定の種類として設定されていないことを意味します。 |
+|otherlabel |String  |ユーザー設定の電子メールアドレスの種類を指定**** し、 `other`型をに設定して、ユーザー設定文字列に**otherlabel**を割り当てることができます。 たとえば、ボランティア活動に特定の電子メールアドレスを使用することができます。 **型**をに`other`設定し、 **otherlabel**をなどのカスタム文字列に`Volunteer work`設定します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

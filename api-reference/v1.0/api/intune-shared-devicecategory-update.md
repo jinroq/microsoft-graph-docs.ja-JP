@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576966"
 ---
 # <a name="update-devicecategory"></a>deviceCategory の更新
 
@@ -23,7 +23,7 @@ ms.locfileid: "30255179"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp;&nbsp; **オンボード**と <br> &nbsp;&nbsp; **デバイスの管理**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **オンボード**と <br> &nbsp; &nbsp; **デバイスの管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -40,7 +40,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -77,7 +77,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答プロパティは、状況に応じて異なります。
+以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答プロパティは、状況に応じて異なります。
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
