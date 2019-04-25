@@ -1,68 +1,68 @@
 ---
 title: Azure AD 同期 API の概要
-description: )、作成を自動化することにより、保守、および id の削除クラウド (ソフトウェア、サービス、または saas のどちらとして) アプリケーションをドロップ ボックス、セールス、ServiceNow などです。 使用できます同期 Api Graph でプログラムを使用して、id の同期を管理するのになど。
+description: ) を使用すると、削除、管理、およびクラウドでの id の作成、保守、および削除 (たとえば、サービスとしてのソフトウェア、または SaaS) アプリケーション (Dropbox、Salesforce、ServiceNow など) を自動化できます。 Microsoft Graph の同期 api を使用して、次のようなプログラムによって id 同期を管理できます。
 localization_priority: Normal
 ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523463"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同期 API の概要
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-(「プロビジョニング」とも呼ばれます)、azure Active Directory (AD の Azure) id の同期を使用すると、作成、保守、およびクラウド (SaaS サービスとしてのソフトウェア) の id の削除を自動化するアプリケーションをドロップ ボックス セールス ServiceNow、など。 使用できます同期 Api Graph でプログラムを使用して、id の同期を管理するのになど。
+azure Active Directory (azure AD) id 同期 ("プロビジョニング" とも呼ばれます) により、(サービスとしてのソフトウェア、または SaaS) アプリケーションとしての、クラウドでの id の作成、保守、削除を自動化できます (Dropbox、Salesforce、ServiceNow、その他。 Microsoft Graph の同期 api を使用して、次のようなプログラムによって id 同期を管理できます。
 
-- 作成、起動、および同期ジョブを停止します。
+- 同期ジョブの作成、開始、停止
 - ジョブの同期スキーマに変更を加える
-- 現在の同期状態を確認します。 
+- 現在の同期の状態を確認する 
 
-Azure AD での同期の詳細についてを参照してください。
+Azure AD での同期の詳細については、以下を参照してください。
 
-* [ユーザー プロビジョニングと Azure Active Directory を使用して、SaaS アプリケーションをプロビジョニング解除の自動化します。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Azure ポータル エンタープライズ アプリケーションのプロビジョニングのユーザー アカウントを管理します。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Azure Active Directory を使用した SaaS アプリケーションへのユーザープロビジョニングとプロビジョニング解除を自動化する](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
+* [Azure portal でエンタープライズアプリのユーザーアカウントプロビジョニングを管理する](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-サンプルのテナントや、独自のテナントでの[グラフのエクスプ ローラー](https://developer.microsoft.com/graph/graph-explorer)の API を試みることができます。
+サンプルテナントまたは独自のテナントで、 [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試すこともできます。
 
 ## <a name="synchronization-job"></a>同期ジョブ
 
-同期ジョブは、バック グラウンドで定期的に実行している、1 つのディレクトリと別のディレクトリにプッシュすることで変更をポーリングして同期を実行します。 同期ジョブは、テナントにアプリケーションの特定のインスタンスに固有では常にします。 同期ジョブの設定の一部として、ターゲット ディレクトリにオブジェクトを読み書きするための承認を与えると、ジョブの同期スキーマをカスタマイズする必要があります。
+同期ジョブは、バックグラウンドで定期的に実行して同期を実行し、1つのディレクトリに加えられた変更をポーリングして、別のディレクトリにプッシュします。 同期ジョブは、テナント内のアプリケーションの特定のインスタンスに対して常に固有です。 同期ジョブの設定の一部として、ターゲットディレクトリのオブジェクトの読み取りおよび書き込みの承認を付与し、ジョブの同期スキーマをカスタマイズする必要があります。
 
-詳細については、[同期ジョブ](synchronization-synchronizationjob.md)を参照してください。
+詳細については、「[同期ジョブ](synchronization-synchronizationjob.md)」を参照してください。
 
 ## <a name="synchronization-schema"></a>同期スキーマ
 
-同期スキーマで定義されるオブジェクトの同期し、同期する方法です。 同期スキーマには、特定の同期ジョブのセットアップ情報のほとんどが含まれています。 通常、[属性マッピング](synchronization-attributemapping.md)の一部をカスタマイズまたはを特定の条件を満たすオブジェクトのみを同期する[スコープのフィルター](synchronization-filter.md)が追加されます。
+同期スキーマは、どのオブジェクトが同期されるか、またどのように同期されるかを定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、[属性マッピング](synchronization-attributemapping.md)の一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期する[スコープフィルター](synchronization-filter.md)を追加します。
 
 同期スキーマには、次のコンポーネントが含まれています。
 
-- ディレクトリの定義
+- ディレクトリ定義
 - 同期ルール
-- オブジェクトのマッピング
+- オブジェクトマッピング
 
-詳細については、[同期スキーマ](synchronization-synchronizationschema.md)を参照してください。
+詳細については、「[同期スキーマ](synchronization-synchronizationschema.md)」を参照してください。
 
 ## <a name="synchronization-template"></a>同期テンプレート
 
-同期テンプレートは、特定のアプリケーションの構成済みの同期設定を提供します。 (最も重要なは、[同期スキーマ](synchronization-synchronizationschema.md)) は、これらの設定は、テンプレートに基づくすべての[同期ジョブ](synchronization-synchronizationjob.md)の既定で使用されます。 テンプレートは、アプリケーション開発者によって指定されます。
+同期テンプレートは、特定のアプリケーションに事前に構成された同期設定を提供します。 これらの設定 (最も重要なのは[同期スキーマ](synchronization-synchronizationschema.md)) は、テンプレートに基づくすべての[同期ジョブ](synchronization-synchronizationjob.md)に対して既定で使用されます。 テンプレートは、アプリケーション開発者によって指定されます。
 
-詳細については、[同期のテンプレート](synchronization-synchronizationtemplate.md)を参照してください。
+詳細については、「[同期テンプレート](synchronization-synchronizationtemplate.md)」を参照してください。
 
-## <a name="working-with-the-synchronization-api"></a>同期 API を使用します。
+## <a name="working-with-the-synchronization-api"></a>同期 API を使用する
 
-同期を使用する API の主要部分は[synchronizationJob](synchronization-synchronizationjob.md)と[synchronizationSchema](synchronization-synchronizationschema.md)のリソースにアクセスします。 [SynchronizationJob](synchronization-synchronizationjob.md)リソースを検索するには、同期ジョブが属するサービスのプリンシパル オブジェクトの ID を確認する必要があります。 次の例では、 **synchronizationJob**と**synchronizationSchema**のリソースを操作する方法を示します。
+同期 API の処理では、主に同期[ジョブ](synchronization-synchronizationjob.md)と同期[スキーマ](synchronization-synchronizationschema.md)リソースにアクセスします。 同期[ジョブ](synchronization-synchronizationjob.md)リソースを見つけるには、同期ジョブが属するサービスプリンシパルオブジェクトの ID を知る必要があります。 次の例は、**同期ジョブ**と**同期スキーマ**リソースを操作する方法を示しています。
 
 ### <a name="authorization"></a>Authorization
 
-Azure AD 同期 API では、OAuth 2.0 を使用して、承認のため。 API へのすべての要求を行う前に、アクセス トークンを取得する必要があります。 詳細については、 [Microsoft Graph を呼び出すための Get アクセス トークン](https://developer.microsoft.com/graph/docs/concepts/auth_overview)を参照してください。 同期リソースにアクセスするには、アプリケーションには、Directory.ReadWrite.All のアクセス許可が必要があります。 詳細については、[ディレクトリのアクセス許可](/graph/permissions-reference#directory-permissions)を参照してください。
+Azure AD 同期 API は、認証に OAuth 2.0 を使用します。 API に対して要求を行う前に、アクセストークンを取得する必要があります。 詳細については、「 [Microsoft Graph を呼び出すためのアクセストークンの取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)」を参照してください。 同期リソースにアクセスするには、アプリケーションにディレクトリの ReadWrite というアクセス許可が必要です。 詳細については、「[ディレクトリのアクセス許可](/graph/permissions-reference#directory-permissions)」を参照してください。
 
-### <a name="find-the-service-principal-object-by-display-name"></a>サービスのプリンシパル オブジェクトを表示名で検索します。
+### <a name="find-the-service-principal-object-by-display-name"></a>表示名でサービスプリンシパルオブジェクトを検索する
 
-次の例では、表示名でサービスのプリンシパル オブジェクトを検索する方法を示します。
+次の例は、表示名でサービスプリンシパルオブジェクトを検索する方法を示しています。
 
-要求 
+**要求** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -90,16 +90,18 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="find-the-service-principal-object-by-app-id"></a>アプリケーション id サービスのプリンシパル オブジェクトを検索します。
+### <a name="find-the-service-principal-object-by-app-id"></a>サービスプリンシパルオブジェクトをアプリ ID で検索する
 
-次の使用例は、アプリケーション id サービスのプリンシパル オブジェクトを検索する方法を示しています。
+次の例は、サービスプリンシパルオブジェクトをアプリ ID で検索する方法を示しています。
 
-要求
+**タキ** 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-応答
+**応答**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -113,17 +115,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="list-existing-synchronization-jobs"></a>既存の同期ジョブを一覧表示します。
+### <a name="list-existing-synchronization-jobs"></a>既存の同期ジョブを一覧表示する
 
-次の使用例は、既存の同期ジョブを一覧表示する方法を示しています。
+次の例は、既存の同期ジョブを一覧表示する方法を示しています。
 
-要求
+**要求**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-応答
+**応答**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -142,17 +146,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="get-synchronization-job-status"></a>同期ジョブのステータスを取得します。
-次の例では、同期ジョブのステータスを取得する方法を示します。
+### <a name="get-synchronization-job-status"></a>同期ジョブの状態を取得する
+次の例は、同期ジョブの状態を取得する方法を示しています。
 
-要求
+**要求**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-応答
+**応答**
+<!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
     {
@@ -167,15 +173,17 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
     }
 ```
 
-### <a name="get-synchronization-schema"></a>同期スキーマを取得します
-次の例では、同期スキーマを取得する方法を示します。
+### <a name="get-synchronization-schema"></a>同期スキーマを取得する
+次の例は、同期スキーマを取得する方法を示しています。
 
-要求
+**要求**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-応答
+**応答**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -185,8 +193,8 @@ HTTP/1.1 200 OK
 ```
 ## <a name="see-also"></a>関連項目
 
-* [ディレクトリの拡張属性を使用して同期を構成します。](../resources/synchronization-configure-with-directory-extension-attributes.md)
-* [カスタム ターゲットの属性を使用して同期を構成します。](../resources/synchronization-configure-with-custom-target-attributes.md)
+* [ディレクトリ拡張属性を使用して同期を構成する](../resources/synchronization-configure-with-directory-extension-attributes.md)
+* [カスタムターゲット属性を使用して同期を構成する](../resources/synchronization-configure-with-custom-target-attributes.md)
 
 
 

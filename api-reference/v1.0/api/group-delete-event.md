@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 21f8d0579d9e78f180711998e455d360fd68dcaa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524149"
 ---
 # <a name="delete-event"></a>イベントを削除する
 [event](../resources/event.md) オブジェクトを削除します。
@@ -31,7 +31,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

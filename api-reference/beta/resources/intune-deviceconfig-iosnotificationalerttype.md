@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52812ab1761687062a1051e4d10eb9390e07fa27
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777033"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521496"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosnotificationalerttype 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31777033"
 |メンバー|値|説明|
 |:---|:---|:---|
 |devicedefault|.0|デバイスの既定値。意図的ではありません。|
-|尺|1-d|尺.|
-|ポップアップ|pbm-2|ポップアップ.|
-|none|1/3|なし。|
+|尺|1 |尺.|
+|ポップアップ|2 |ポップアップ.|
+|なし|3 |なし。|
 
 
 

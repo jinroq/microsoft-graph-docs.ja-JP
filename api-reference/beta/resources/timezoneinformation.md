@@ -1,13 +1,13 @@
 ---
 title: timeZoneInformation リソースの種類
-description: タイム ゾーンを表します。 サポートされている形式は、Windows、およびインターネット割り当て番号機関 (IANA) はタイム ゾーン (Olson タイム ・ ゾーンとも呼ばれます)
+description: タイム ゾーンを表します。 サポートされる形式は、Windows、およびインターネットに割り当てられた電話番号 (IANA) タイムゾーン (olson タイムゾーンとも呼ばれます)
 localization_priority: Normal
 ms.openlocfilehash: a63721de7ed4e8c3f3b74ce5954a88ee71a95414
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526775"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523033"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation リソースの種類
 
@@ -18,7 +18,7 @@ ms.locfileid: "29526775"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|alias|string|タイム ゾーンの識別子。|
+|エイリアス|string|タイム ゾーンの識別子。|
 |displayName|string|タイム ゾーンを表す表示文字列。|
 
 ## <a name="json-representation"></a>JSON 表記

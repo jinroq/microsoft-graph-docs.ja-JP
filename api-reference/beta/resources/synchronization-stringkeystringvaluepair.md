@@ -1,25 +1,25 @@
 ---
-title: stringKeyStringValuePair リソースの種類
-description: キーが文字列、値は、文字列キーと値のペアを表します。
+title: stringkeystringvaluepair リソースの種類
+description: キーが文字列で、値が文字列であるキーと値のペアを表します。
 localization_priority: Normal
 ms.openlocfilehash: f91d63ee4b4d3b0328bbb6fbe58c74ec8f78c5b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520222"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526273"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair リソースの種類
+# <a name="stringkeystringvaluepair-resource-type"></a>stringkeystringvaluepair リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-キーが文字列、値は、文字列キーと値のペアを表します。
+キーが文字列で、値が文字列であるキーと値のペアを表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |Key|String|キー。|
-|value|文字列|値。|
+|value|文字列型 (String)|値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

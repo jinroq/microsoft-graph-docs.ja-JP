@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a6ea3a2e745049292979c45bd1a2af2137bd30b6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32530579"
 ---
 # <a name="create-grouppolicypresentationvaluemultitext"></a>groupPolicyPresentationValueMultiText を作成する
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|values|String コレクション|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
+|values|String collection|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
 
 
 

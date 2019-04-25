@@ -5,22 +5,22 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 44b97c7b18264e01c86b34bfd8265246f80ab031
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917868"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524546"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>mailboxUsageStorage リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ           | 種類   |
+| プロパティ           | 型   |
 | :----------------- | :----- |
-| reportRefreshDate  | 日付   |
-| storageUsedInBytes | Int64  |
-| reportDate         | 日付   |
-| reportPeriod       | String |
+| reportrefreshdate  | Date   |
+| storageused inbytes | Int64  |
+| reportDate         | Date   |
+| reportperiod       | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 12d0e424870d81b762e0e6d9b58df4a942055123
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521440"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31775563"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |allowedappslist プロパティ|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|このログインの使用が許可されているアプリ識別子のリスト。 このフィールドを省略した場合、ログインはデバイス上のすべてのアプリケーションに適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|allowedUrls|String コレクション|このログインを使用するために一致する必要がある HTTP url のリスト。 iOS 9.0 以降では、ワイルドカード文字を使用することができます。|
+|allowedUrls|String collection|このログインを使用するために一致する必要がある HTTP url のリスト。 iOS 9.0 以降では、ワイルドカード文字を使用することができます。|
 |displayName|String|受信側デバイスに表示されるログイン設定の表示名。|
-|kerberosPrincipalName|文字列|Kerberos プリンシパル名。 指定しない場合、プロファイルのインストール時にユーザーに対してプロンプトが表示されます。|
-|kerberosRealm|文字列|Kerberos 領域名。 大文字小文字を区別します。|
+|kerberosPrincipalName|String|Kerberos プリンシパル名。 指定しない場合、プロファイルのインストール時にユーザーに対してプロンプトが表示されます。|
+|kerberosRealm|String|Kerberos 領域名。 大文字小文字を区別します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

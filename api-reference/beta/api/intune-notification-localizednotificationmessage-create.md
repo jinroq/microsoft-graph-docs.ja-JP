@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5458605b4b4e58b27e65298f709121283fc91ecd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32529094"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage の作成
 
@@ -52,7 +52,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|locale|文字列|対象メッセージの送信先ロケール。|
+|locale|String|対象メッセージの送信先ロケール。|
 |subject|String|メッセージ テンプレートの件名。|
 |messageTemplate|String|メッセージ テンプレートのコンテンツ。|
 |isDefault|ブール型 (Boolean)|言語フォールバック用の既定ロケールかどうかを示すフラグ。 このフラグは設定のみ可能です。 設定解除するには、このプロパティを別のローカライズされた通知メッセージで有効にします。|

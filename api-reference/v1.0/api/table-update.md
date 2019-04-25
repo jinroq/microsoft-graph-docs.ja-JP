@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df975d13ddc97c0c6b592d02d61a978c5a0db732
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919814"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520488"
 ---
 # <a name="update-table"></a>テーブルを更新する
 
@@ -40,14 +40,14 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|テーブルの名前。|
+|name|string|テーブルの名前。|
 |showHeaders|ブール値|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|
 |showTotals|ブール値|集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。|
-|style|文字列|テーブル スタイルを表す定数の値です。 可能な値: TableStyleLight21、TableStyleMedium28、TableStyleStyleDark11 から TableStyleStyleDark1 から TableStyleMedium1 から TableStyleLight1。 カスタム ユーザー定義スタイル ブックの存在を指定することもできます。|
+|style|string|テーブル スタイルを表す定数値。 使用可能な値: TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookTable](../resources/table.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookTable](../resources/table.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

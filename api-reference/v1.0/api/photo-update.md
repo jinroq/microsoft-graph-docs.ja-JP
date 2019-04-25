@@ -3,13 +3,15 @@ title: 写真を更新する
 description: 写真オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: 80c866eab74307d3001887110e050aa438cdde9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521069"
 ---
 # <a name="update-photo"></a>写真を更新する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 写真オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -30,14 +32,14 @@ PATCH /drive/root/createdByUser/photo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 
 ## <a name="response"></a>応答
@@ -51,7 +53,7 @@ PATCH /drive/root/createdByUser/photo
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 Content-type: application/json
 Content-length: 53
 
@@ -82,10 +84,15 @@ Content-length: 53
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

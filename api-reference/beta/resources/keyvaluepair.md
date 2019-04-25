@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 86a5415c20721f717947238838341345ec9a4250
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366939"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522686"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "30366939"
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |name|String|キーと値のペアの名前|
-|value|文字列|キーと値のペアの値|
+|value|文字列型 (String)|キーと値のペアの値|
 
 ## <a name="json-representation"></a>JSON 表記
 

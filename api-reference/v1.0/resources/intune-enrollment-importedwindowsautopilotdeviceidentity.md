@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3e8c94b32193b6ef443b4a27333cd9525e236dab
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264016"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523386"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "30264016"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの GUID|
+|id|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
 |シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|

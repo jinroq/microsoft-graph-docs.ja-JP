@@ -4,11 +4,11 @@ description: アクティビティの利用で、それらの Microsoft エク�
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
-ms.sourcegitcommit: 889145f924d50e7fe6abf3f59261197826b532a1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29760861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521818"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Microsoft Graph のアクティビティ フィード API を使用してクロスデバイス エクスペリエンスを有効にする
 

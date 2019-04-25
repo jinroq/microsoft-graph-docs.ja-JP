@@ -1,27 +1,28 @@
 ---
-title: チャネルの一覧] タブ
-description: 'チーム内で指定されたチャネル内のタブの一覧を取得します。 '
+title: チャネル内のリストタブ
+description: 'チーム内の指定されたチャネルのタブのリストを取得します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521748"
 ---
-# <a name="list-tabs-in-channel"></a>チャネルの一覧] タブ
+# <a name="list-tabs-in-channel"></a>チャネル内のリストタブ
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チーム](../resources/team.md)内で指定された[チャネル](../resources/channel.md)で[のタブ](../resources/teamstab.md)のリストを取得します。 
+[チーム](../resources/team.md)内の指定された[チャネル](../resources/channel.md)の[タブ](../resources/teamstab.md)のリストを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
+|委任 (職場または学校のアカウント) | グループ読み取り。すべてを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 | アプリケーション                            | Group.Read.All、Group.ReadWrite.All         |
 
@@ -46,13 +47,13 @@ GET /teams/{id}/channels/{id}/tabs
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[タブ](../resources/teamstab.md)のオブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[tabs](../resources/teamstab.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
 要求の例を次に示します。
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>応答
@@ -104,6 +105,9 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

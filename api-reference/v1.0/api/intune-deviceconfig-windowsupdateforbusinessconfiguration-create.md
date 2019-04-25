@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d536c95687511f5ecd0987072a3e2d91152e2d71
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523673"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -57,12 +57,12 @@ POST /deviceManagement/deviceConfigurations
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|配信最適化モード。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|プレリリース機能。 可能な値は、`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed` です。|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自動更新モード。 可能な値は、`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl` です。|
-|microsoftUpdateServiceAllowed|Boolean|Microsoft Update サービスを許可します。|
-|driversExcluded|Boolean|Windows Update のドライバーを除外します。|
+|microsoftUpdateServiceAllowed|ブール値|Microsoft Update サービスを許可します。|
+|driversExcluded|ブール値|Windows Update のドライバーを除外します。|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|インストールのスケジュールです|
 |qualityUpdatesDeferralPeriodInDays|Int32|品質更新プログラムの実行をこの日数分延期します|
 |featureUpdatesDeferralPeriodInDays|Int32|機能更新プログラムの実行をこの日数分延期します|
-|qualityUpdatesPaused|Boolean|品質更新プログラムの実行を一時停止します|
+|qualityUpdatesPaused|ブール値|品質更新プログラムの実行を一時停止します|
 |featureUpdatesPaused|Boolean|機能更新プログラムの実行を一時停止します|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|品質更新プログラムの一時停止が終了する日時|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|機能更新プログラムの一時停止が終了する日時|

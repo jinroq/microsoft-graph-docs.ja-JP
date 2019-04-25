@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527183"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -27,7 +27,7 @@ ms.locfileid: "30963514"
 |:---|:---|
 | 委任 (職場または学校のアカウント) | |
 | &nbsp;&nbsp; **アプリ**、**ブック**、または**オンボード** | devicemanagementapps の、devicemanagementapps. readw すべて |
-| &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 

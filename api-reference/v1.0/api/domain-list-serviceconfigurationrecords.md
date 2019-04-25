@@ -1,21 +1,21 @@
 ---
-title: serviceConfigurationRecords の一覧表示
-description: ドメインのサービスを有効にするために必要な domainDnsRecord オブジェクトの一覧を取得します。
+title: リスト serviceConfigurationRecords
+description: ドメインのサービスを有効にするために必要な domaindnsrecord オブジェクトの一覧を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4237b0b0f1c7bddfe8572268a367207a2eeb1434
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917490"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520089"
 ---
-# <a name="list-serviceconfigurationrecords"></a>serviceConfigurationRecords の一覧表示
+# <a name="list-serviceconfigurationrecords"></a>リスト serviceConfigurationRecords
 
-ドメインのサービスを有効にするために必要な [domainDnsRecord](../resources/domaindnsrecord.md) オブジェクトの一覧を取得します。
+ドメインのサービスを有効にするために必要な[domaindnsrecord](../resources/domaindnsrecord.md)オブジェクトの一覧を取得します。
 
-返される一覧を使用して、ドメインのゾーン ファイルにレコードを追加します。この作業は、ドメイン レジストラーによって、または DNS サーバーの構成で行えます。
+返された一覧を使用して、ドメインのゾーンファイルにレコードを追加します。 この操作は、ドメインレジストラーまたは DNS サーバーの構成を使用して行うことができます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -51,7 +51,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domainDnsRecord](../resources/domaindnsrecord.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[domaindnsrecord](../resources/domaindnsrecord.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -64,7 +64,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

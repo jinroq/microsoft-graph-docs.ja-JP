@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29639945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523803"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection リソースの種類
 
@@ -27,14 +27,14 @@ ms.locfileid: "29639945"
 |[Unprotect](../api/worksheetprotection-unprotect.md)|なし|ワークシートの保護を解除します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |protected|ブール値|ワークシートが保護されているかどうかを示します。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
+|オプション|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 

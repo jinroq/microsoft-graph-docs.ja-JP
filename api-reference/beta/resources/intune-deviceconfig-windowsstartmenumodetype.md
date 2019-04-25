@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 03f4fcc1c16c09a4e510034a83c300733ac2767c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788003"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523680"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsstartmenumodetype 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31788003"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義。 既定値です。|
-|全|1-d|画面全体|
-|非全画面|pbm-2|非全画面表示|
+|全|1 |画面全体|
+|非全画面|2 |非全画面表示|
 
 
 

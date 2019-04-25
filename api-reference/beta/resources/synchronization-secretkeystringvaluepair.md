@@ -1,25 +1,25 @@
 ---
 title: synchronizationSecretKeyStringValuePair リソースの種類
-description: '1 つの秘密の値を表します。 '
+description: '1つのシークレット値を表します。 '
 localization_priority: Normal
 ms.openlocfilehash: a937063ea04bd3726932e423a065026d51b05aa4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523230"
 ---
 # <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>synchronizationSecretKeyStringValuePair リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-1 つの秘密の値を表します。 
+1つのシークレット値を表します。 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|Key|String| 使用可能な値: `None`、 `UserName`、 `Password`、 `SecretToken`、 `AppKey`、 `BaseAddress`、 `ClientIdentifier`、 `ClientSecret`、 `SingleSignOnType`、 `Sandbox`、 `Url`、 `Domain`、 `ConsumerKey`、 `ConsumerSecret`、 `TokenKey`、 `TokenExpiration`、 `Oauth2AccessToken`、 `Oauth2AccessTokenCreationTime`、 `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.|
-|value|文字列|シークレットの値です。|
+|Key|String| 可能な値: `None`、 `UserName` `Password` `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain`、、、、、、、、、、、、 `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.|
+|value|文字列型 (String)|シークレットの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

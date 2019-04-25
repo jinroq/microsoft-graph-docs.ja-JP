@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254570"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523883"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 
@@ -20,11 +20,11 @@ iOS モバイル アプリに必要な最小限のオペレーティング シ�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v8_0|Boolean|バージョン 8.0 以降。|
-|v9_0|Boolean|バージョン 9.0 以降。|
-|v10_0|Boolean|バージョン 10.0 以降。|
+|v8_0|ブール値|バージョン 8.0 以降。|
+|v9_0|ブール値|バージョン 9.0 以降。|
+|v10_0|ブール値|バージョン 10.0 以降。|
 |v11_0|ブール型 (Boolean)|バージョン 11.0 以降。|
-|v12_0|Boolean|バージョン12.0 以降。|
+|v12_0|ブール値|バージョン12.0 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

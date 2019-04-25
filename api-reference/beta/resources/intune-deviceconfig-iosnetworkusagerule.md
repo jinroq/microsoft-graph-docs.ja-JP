@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e91940e5d090cc64bd0d98fa5f644b72d7f3a0a7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521503"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "31779896"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |managedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|このルールが適用される管理対象アプリに関する情報です。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|cellularDataBlockWhenRoaming|Boolean|true に設定すると、ローミングの際、対応する管理対象アプリで携帯電話データを使用できなくなります。|
+|cellularDataBlockWhenRoaming|ブール型|true に設定すると、ローミングの際、対応する管理対象アプリで携帯電話データを使用できなくなります。|
 |cellularDataBlocked|Boolean|true に設定すると、いかなる場合でも、対応する管理対象アプリで携帯電話データを使用できなくなります。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,21 +1,21 @@
 ---
-title: アプリケーションをチームに追加します。
-description: 指定されたチームには、アプリケーションをインストールします。
+title: アプリをチームに追加する
+description: 指定したチームにアプリをインストールします。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8332204de2c75235720d7b2652d029e9f145f576
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1a241ebb9d39b26e12f59b6f8f08e71220d8021
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521895"
 ---
-# <a name="add-app-to-team"></a>アプリケーションをチームに追加します。
+# <a name="add-app-to-team"></a>アプリをチームに追加する
 
 
 
-指定された[チーム](../resources/team.md)には、[アプリケーション](../resources/teamsapp.md)をインストールします。
+指定した[チーム](../resources/team.md)に[アプリ](../resources/teamsapp.md)をインストールします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "27922376"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -39,9 +39,9 @@ POST /teams/{id}/installedApps
 
 ## <a name="request-body"></a>要求本文
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|teamsApp| [teamsApp](../resources/teamsapp.md) |追加するアプリケーションです。|
+|teamsApp| [teamsApp](../resources/teamsapp.md) |追加するアプリ。|
 
 
 ## <a name="response"></a>応答

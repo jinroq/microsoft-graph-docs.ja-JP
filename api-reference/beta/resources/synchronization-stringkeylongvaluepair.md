@@ -1,19 +1,19 @@
 ---
-title: stringKeyLongValuePair リソースの種類
-description: キーが文字列であり、値は、int64 型のキー/値ペアを表します。
+title: stringkeylongvaluepair リソースの種類
+description: キーが文字列で、値が Int64 であるキーと値のペアを表します。
 localization_priority: Normal
 ms.openlocfilehash: 97ca9f4f7b4079311a1ce6996fde0472c527e7f9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524541"
 ---
-# <a name="stringkeylongvaluepair-resource-type"></a>stringKeyLongValuePair リソースの種類
+# <a name="stringkeylongvaluepair-resource-type"></a>stringkeylongvaluepair リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-キーが文字列であり、値は、int64 型のキー/値ペアを表します。
+キーが文字列で、値が Int64 であるキーと値のペアを表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

@@ -1,15 +1,15 @@
 ---
 title: Intune を使用して会社所有のデバイスを登録する
-description: " (BYOD) のシナリオです。"
+description: " (byod) シナリオ。"
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 03c4775a3d5042a4d8b39821c257278798d59882
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966322"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523379"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して会社所有のデバイスを登録する
 
@@ -19,8 +19,8 @@ ms.locfileid: "27966322"
 
 次の Graph リソースを使用して、Intune での会社所有のデバイスを管理できます。
 
-- [インポートされた windows の自動操縦装置のデバイス id](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
-- [インポートされた windows 自動操縦装置のデバイス id のインポート状態](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
-- [インポートされた windows 自動操縦装置のアイデンティティの状態](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [インポートされた windows 自動操縦装置のデバイス識別情報のアップロード](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
-- [インポートされた windows 自動操縦装置のデバイス id アップロード状態](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+- [インポートした Windows AutoPilot デバイス ID](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [インポートした Windows AutoPilot デバイス ID のインポート状態](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
+- [インポートした Windows AutoPilot デバイス ID の状態](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
+- [インポートした Windows AutoPilot デバイス ID のアップロード](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
+- [インポートした Windows AutoPilot デバイス ID のアップロードの状態](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)

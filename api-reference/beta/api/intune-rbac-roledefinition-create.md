@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3949cf3dbeab5a9c6c1717d2103c574f532aad46
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772931"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527386"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 
@@ -52,12 +52,12 @@ POST /deviceManagement/roleDefinitions
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
-|説明|String|ロールの定義の説明。|
+|description|String|ロールの定義の説明。|
 |アクセス許可|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |isBuiltInRoleDefinition|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 

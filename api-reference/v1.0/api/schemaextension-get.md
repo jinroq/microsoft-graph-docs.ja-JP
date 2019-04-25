@@ -1,17 +1,17 @@
 ---
 title: schemaExtension を取得する
-description: 指定された schemaExtension 定義のプロパティを取得します。
+description: 指定された schemaextension 定義のプロパティを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 70a4fdc5e51a5965098a6b0331a31c200b553ec9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980315"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521034"
 ---
 # <a name="get-schemaextension"></a>schemaExtension を取得する
-指定された [schemaExtension](../resources/schemaextension.md) 定義のプロパティを取得します。
+指定された[schemaextension](../resources/schemaextension.md)定義のプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ GET /schemaExtensions/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[schemaextension](../resources/schemaextension.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

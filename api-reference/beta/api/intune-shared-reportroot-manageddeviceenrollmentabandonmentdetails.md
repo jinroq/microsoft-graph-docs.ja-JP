@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 30312706926293e24226801a7e0193b28d3d6f9c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527022"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 関数
 
@@ -51,7 +51,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |:---|:---|:---|
 |skip|Int32|まだ文書化されていません|
 |top|Int32|まだ文書化されていません|
-|フィルター|String|まだ文書化されていません|
+|filter|String|まだ文書化されていません|
 |skipToken|String|まだ文書化されていません|
 
 

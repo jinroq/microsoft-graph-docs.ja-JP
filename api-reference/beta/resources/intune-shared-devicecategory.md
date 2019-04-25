@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 75fb11ef3b734e6d5d0490be1abc3c5399433a70
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174553"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525321"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "30174553"
 |id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
-|説明|String|デバイス カテゴリに関するオプションの説明。|
+|description|String|デバイス カテゴリに関するオプションの説明。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

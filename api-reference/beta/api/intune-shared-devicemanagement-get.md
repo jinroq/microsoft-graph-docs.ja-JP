@@ -4,12 +4,12 @@ description: deviceManagement オブジェクトのプロパティとリレー�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 09563eeced6f557df2c2e40f126623f974cea2d7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ba39a49f02d6f6eb541786a46b0cb0fa761de18f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976506"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527085"
 ---
 # <a name="get-devicemanagement"></a>Get deviceManagement
 
@@ -30,18 +30,19 @@ ms.locfileid: "30976506"
 | &nbsp; &nbsp; **監査** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **会社の用語** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **デバイスの目的** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
 | &nbsp; &nbsp; **リモート アクセス** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **リモートアシスタンス** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **通信経費管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **トラブルシューティング** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; **Windows 情報保護** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
+| &nbsp; &nbsp; **Windows 情報保護** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。|
 | アプリケーション | サポートされていません。 |
 

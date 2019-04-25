@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760931"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521653"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得する
 Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。 

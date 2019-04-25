@@ -1,26 +1,26 @@
 ---
-title: referencedObject リソースの種類
-description: 同じディレクトリの定義で定義されている別のオブジェクトへの参照について説明します。
+title: referencedobject リソースの種類
+description: 同じディレクトリ定義で定義されている別のオブジェクトへの参照を記述します。
 localization_priority: Normal
 ms.openlocfilehash: dcec232335fdf3d447097ea1ae87fbc9ea676cfe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523246"
 ---
-# <a name="referencedobject-resource-type"></a>referencedObject リソースの種類
+# <a name="referencedobject-resource-type"></a>referencedobject リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同じ[ディレクトリの定義](synchronization-directorydefinition.md)で定義されている別のオブジェクトへの参照について説明します。
+同じ[ディレクトリ定義](synchronization-directorydefinition.md)で定義されている別のオブジェクトへの参照を記述します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                   | 型                      | 説明    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |String                     |参照先オブジェクトの名前です。 [ディレクトリの定義](synchronization-directorydefinition.md)内のオブジェクトのいずれかに一致する必要があります。|
-|referencedProperty          |String                     |現時点ではサポートされていません。 対象の値が、参照として使用されるが、参照されるオブジェクトのプロパティの名前です。|
+|referencedObjectName        |String                     |参照されるオブジェクトの名前を指定します。 [ディレクトリ定義](synchronization-directorydefinition.md)内のいずれかのオブジェクトと一致している必要があります。|
+|referencedproperty          |String                     |**現時点ではサポートされていません**。 参照されるオブジェクト内のプロパティの名前。その値は、参照として使用されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

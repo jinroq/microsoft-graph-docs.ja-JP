@@ -1,15 +1,15 @@
 ---
-title: synchronizationError リソースの種類
+title: 同期エラーリソースの種類
 description: 同期処理中に発生したエラーを表します。
 localization_priority: Normal
 ms.openlocfilehash: f37dca5b65a67eb36b2b6a130eee8feb692cd271
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525979"
 ---
-# <a name="synchronizationerror-resource-type"></a>synchronizationError リソースの種類
+# <a name="synchronizationerror-resource-type"></a>同期エラーリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "29513173"
 |:---------------|:--------|:----------|
 |code|String||
 |message|String||
-|tenantActionable|ブール値||
+|tenantactionable 可能|ブール値||
 
 ## <a name="json-representation"></a>JSON 表記
 

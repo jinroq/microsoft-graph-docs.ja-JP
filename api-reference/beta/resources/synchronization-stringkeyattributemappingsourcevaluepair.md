@@ -1,25 +1,26 @@
 ---
 title: stringKeyAttributeMappingSourceValuePair リソースの種類
-description: キーが文字列であり、値は、attributeMappingSource は、キー/値ペアを表します。
+description: キーが文字列で、値が attributeMappingSource であるキーと値のペアを表します。
 localization_priority: Normal
 ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516218"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523225"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>stringKeyAttributeMappingSourceValuePair リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-キーが文字列であり、値は、 [attributeMappingSource](synchronization-attributemappingsource.md)は、キー/値ペアを表します。
+キーが文字列で、値が[attributeMappingSource](synchronization-attributemappingsource.md)であるキーと値のペアを表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|Key|String|パラメーターの名前です。|
-|value|[attributeMappingSource](synchronization-attributemappingsource.md)|パラメーターの値です。|
+|Key|String
+|The name of the parameter.|
+|value|[attributeMappingSource](synchronization-attributemappingsource.md)|パラメーターの値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

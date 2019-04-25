@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5c02904a5a4cc4d0242c35e487d30f2b2ed6083a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32519999"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsmanagementapphealthstate リソースの種類
 
@@ -33,10 +33,10 @@ Windows management アプリの正常性状態エンティティ。
 |:---|:---|:---|
 |id|String|Windows management アプリの正常性状態の一意識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management アプリの正常性状態。 使用可能な値は、`unknown`、`healthy`、`unhealthy` です。|
-|バージョン|文字列|Windows management アプリがインストールされているバージョン。|
+|バージョン|String|Windows management アプリがインストールされているバージョン。|
 |lastCheckInDateTime|DateTimeOffset|Windows management アプリの最終チェックイン時刻。|
 |deviceName|String|Windows management アプリがインストールされているデバイスの名前。|
-|deviceosversion|文字列|windows 管理アプリがインストールされているデバイスの windows 10 OS バージョン。|
+|deviceosversion|String|windows 管理アプリがインストールされているデバイスの windows 10 OS バージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

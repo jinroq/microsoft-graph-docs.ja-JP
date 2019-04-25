@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 21ee6fa9a64dfb0891282ff79363ed1ca8f57bdd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521195"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31796417"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|わかり.|
-|会社|1-d|会社によって所有されます。|
-|personal|pbm-2|ユーザーによって所有されます。|
+|会社|1 |会社によって所有されます。|
+|personal|2 |ユーザーによって所有されます。|
 
 
 

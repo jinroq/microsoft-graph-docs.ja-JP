@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 05163b0251690c990454e671ebab6aaf26fa02ad
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527099"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>mobileAppTroubleshootingEvent の更新
 
@@ -25,7 +25,7 @@ ms.locfileid: "30957480"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-|&nbsp; &nbsp; **デバイスの管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp;&nbsp; **デバイスの管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **トラブルシューティング**|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|

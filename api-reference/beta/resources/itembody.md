@@ -3,11 +3,11 @@ title: itemBody リソースの種類
 description: メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。
 localization_priority: Normal
 ms.openlocfilehash: 1cf79f78caa7b2772bc44b99c6b9bdc526340a87
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523491"
 ---
 # <a name="itembody-resource-type"></a>itemBody リソースの種類
 

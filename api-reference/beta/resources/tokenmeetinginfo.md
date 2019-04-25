@@ -1,28 +1,28 @@
 ---
-title: tokenMeetingInfo リソースの種類
-description: TokenMeetingInfo 型です。
+title: token会議情報リソースの種類
+description: token会議情報の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642591"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523022"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo リソースの種類
+# <a name="tokenmeetinginfo-resource-type"></a>token会議情報リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TokenMeetingInfo 型です。
+token会議情報の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                     | 型    | 説明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
-| token                        | String  | 会議を結合またはアクティブにするトークンです。                                        |
+| allowConversationWithoutHost | ブール値 | 会話のホストが離れると、会話が続行できるかどうかを示します。 |
+| token                        | String  | ミーティングへの参加/アクティブ化のトークン。                                        |
 
 ## <a name="json-representation"></a>JSON 表記
 

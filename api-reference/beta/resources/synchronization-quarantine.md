@@ -1,28 +1,28 @@
 ---
-title: synchronizationQuarantine リソースの種類
-description: SynchronizationJob の検査の状態に関する情報を提供します。
+title: 同期検疫リソースの種類
+description: 同期ジョブの検疫状態に関する情報を提供します。
 localization_priority: Normal
 ms.openlocfilehash: 6d5d5c3cbe96eda6b39833287e8efb6e0771b19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523216"
 ---
-# <a name="synchronizationquarantine-resource-type"></a>synchronizationQuarantine リソースの種類
+# <a name="synchronizationquarantine-resource-type"></a>同期検疫リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[synchronizationJob](synchronization-synchronizationjob.md)の検査の状態に関する情報を提供します。
+[同期ジョブ](synchronization-synchronizationjob.md)の検疫状態に関する情報を提供します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|currentBegan|DateTimeOffset|日付と時刻の検査が最後に評価され、課されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|nextAttempt|DateTimeOffset|日付と時刻、次が再検査を評価しようとした場合に行われます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|理由|String|検疫が適用された理由を示すコードです。 可能な値は、`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException`、`Unknown` です。|
-|seriesBegan|DateTimeOffset|日付と時刻の検査が最初にこのシリーズ (シリーズを開始すると、検疫が最初に適用されると、隔離が解除されると、すぐにリセットされます) に課されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|seriesCount|Int64|このシリーズは、検査の回数が再評価し、左 (シリーズ開始と検査は、最初に適用されると、隔離が解除されると、すぐにリセットされます) では有効にします。|
+|currentbegan|DateTimeOffset|検疫が最後に評価および適用された日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|nextattempt|DateTimeOffset|検疫を再評価する次の試行が行われた日付と時刻です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|したがっ|String|検疫が適用された理由を示すコード。 可能な値は、`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException`、`Unknown` です。|
+|系列の開始|DateTimeOffset|このシリーズで最初に検疫が行われた日時です (一連の検疫が最初に実行されたときにシリーズが開始され、検疫がリフトされるとすぐにリセットされます)。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|系列数|Int64|このシリーズ内の回数再評価され、有効になっています (検疫が最初に行われたときにシリーズが開始され、検疫が解除されると直ちにリセットされます)。|
 
 ## <a name="json-representation"></a>JSON 表記
 

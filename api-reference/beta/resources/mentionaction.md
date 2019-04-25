@@ -6,11 +6,11 @@ title: MentionAction
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 9101ffed094fd78189b73eab511be88c8bf449de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523410"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction リソースの種類
 

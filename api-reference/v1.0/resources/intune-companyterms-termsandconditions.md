@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e9d4366ef5f9e72d6ea3e217fb71eb796bfa20cc
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523897"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions リソース タイプ
 
@@ -27,14 +27,14 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 |[Update termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列|T&C ポリシーの一意識別子。|
+|id|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|説明|文字列型 (String)|管理者が提供した T&C ポリシーの説明。|
-|タイトル|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|description|String|管理者が提供した T&C ポリシーの説明。|
+|title|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |version|Int32|条件の現行バージョンを示す整数。 管理者が使用条件を変更し、修正された T&C ポリシーを再承諾するようにユーザーに求めると、値が増加します。|

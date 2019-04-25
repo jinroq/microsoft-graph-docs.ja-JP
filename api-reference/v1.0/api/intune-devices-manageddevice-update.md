@@ -6,11 +6,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523960"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
@@ -64,10 +64,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。|
 |managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は、`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController` です。|
 |osVersion|String|デバイスのオペレーティング システムのバージョン。|
-|easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
+|easActivated|ブール値|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
 |easDeviceId|String|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
-|azureADRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
+|azureADRegistered|ブール値|Azure Active Directory が登録されているデバイスかどうかを示します。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|デバイスの登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
 |activationLockBypassCode|String|デバイスのアクティベーション ロックをバイパスするためのコード。|
 |emailAddress|String|デバイスに関連付けられているユーザーの電子メール|

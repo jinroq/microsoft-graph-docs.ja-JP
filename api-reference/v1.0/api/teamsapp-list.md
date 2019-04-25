@@ -1,26 +1,28 @@
 ---
-title: マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。
-description: 'マイクロソフト チーム アプリケーション カタログからアプリケーションを一覧表示します。 '
+title: Microsoft Teams アプリカタログから発行されたアプリを一覧表示する
+description: 'Microsoft Teams アプリカタログのアプリを一覧表示します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 884fd932acddb1352c48e82302a6c345fadf90b7
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521790"
 ---
-# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。
+# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Microsoft Teams アプリカタログから発行されたアプリを一覧表示する
 
-マイクロソフト チーム アプリケーション カタログから[アプリケーション](../resources/teamsapp.md)を一覧表示します。
-これには、組織のアプリケーション カタログ (テナント アプリケーション カタログ) からアプリケーションと同様に、マイクロソフトのチーム ・ ストアからのアプリが含まれます。 組織のアプリケーションのカタログのみからアプリケーションを取得するのには次のように指定します。 `Organization` [teamsCatalogApp](../resources/teamsapp.md)リソースで**distributionMethod**とします。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Microsoft Teams アプリカタログの[アプリ](../resources/teamsapp.md)を一覧表示します。
+これには、Microsoft Teams ストアからのアプリや、組織のアプリカタログ (テナントのアプリカタログ) からのアプリが含まれます。 組織のアプリカタログからアプリのみを取得するには`Organization` 、 [teamsCatalogApp](../resources/teamsapp.md)リソースの "の" として、を指定します。 ****
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions_reference)」を参照してください。
 
-> **注:** グローバル管理者だけでは、この API を呼び出すことができます。
+> **注:** この API は、グローバル管理者のみが呼び出すことができます。
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:------------------------------------|
@@ -50,22 +52,22 @@ GET /appCatalogs/teamsApps
 
 なし。
 
-> **注:** 任意の結果の一覧を短縮するための[teamsCatalogApp](../resources/teamsapp.md)オブジェクトのフィールドをフィルターできます。 次のフィルター操作のいずれかを使用することができます: 等しい、等しくない、またはではなく。
+> **注:**[teamsCatalogApp](../resources/teamsapp.md)オブジェクトの任意のフィールドでフィルター処理して、結果の一覧を短縮できます。 次のいずれかのフィルター操作を使用できます: equal、not equal、and、or not。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[teamsCatalogApp](../resources/teamsapp.md)オブジェクトの一覧です。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[teamsCatalogApp](../resources/teamsapp.md)オブジェクトのリストを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-list-all-applications"></a>例 1: すべてのアプリケーションを一覧表示します。
+### <a name="example-1-list-all-applications"></a>例 1: すべてのアプリケーションを一覧表示する
 
-次の例では、テナントに固有のすべてのアプリケーションが一覧表示されます。
+次の例では、テナント固有のすべてのアプリケーションを一覧表示します。
 
 #### <a name="request"></a>要求
 
 ```http
-GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -89,14 +91,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>例 2: 特定の ID を使用してアプリケーションを一覧表示します。
+### <a name="example-2-list-applications-with-a-given-id"></a>例 2: 指定された ID を持つアプリケーションを一覧表示する
 
-次の使用例は指定された ID を使用してアプリケーションを一覧表示します。
+次の例では、指定された ID を持つアプリケーションを一覧表示します。
 
 #### <a name="request"></a>要求
 
 ```http
-GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### <a name="response"></a>応答
@@ -117,3 +119,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

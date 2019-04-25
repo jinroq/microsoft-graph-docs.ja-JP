@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d7ef2b656fcf4bca020c7f1cc9f3e74881946413
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32528639"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の更新
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
-|enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|enabled|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|ブール型 (Boolean)|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|

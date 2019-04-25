@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0f93449f5fdebfce3388f20418174b03b91615d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524037"
 ---
 # <a name="remove-member"></a>メンバーを削除する
 この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。
@@ -30,7 +30,7 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -54,7 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dc1bdcacad4196b9903ebb41b40c6c86b81b317c
-ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30546003"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521741"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Microsoft Graph を呼び出すためのアクセス トークンの取得
 
@@ -184,7 +184,7 @@ Azure AD v2.0 エンドポイント:
 
 - 最も簡単な開始地点は、[Azure AD v2.0 エンドポイントのドキュメント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)です。この記事には、概要、プロトコルに関するドキュメント、および各種プラットフォームに対応している入門記事へのリンクが記載されています。これらすべてのリンクは、開発するアプリの種類ごとに編成されています。 
 - クライアントまたはサーバー認証ライブラリごとのサンプルについては、「[Azure Active Directory v2.0 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)」を参照してください。 
-- また、プラットフォームごとの Azure AD サンプルは、「[Azure のコード サンプル](https://azure.microsoft.com/resources/samples/?service=active-directory)」で見つかります。 注意: エンドポイントのバージョンを検索条件にすることはできません。 
+- また、プラットフォームごとの Azure AD サンプルは、「[Azure のコード サンプル](https://azure.microsoft.com/resources/samples/?service=active-directory)」で見つかります。注意: エンドポイントのバージョンを検索条件にすることはできません。 
 
 Azure AD エンドポイント:  
 

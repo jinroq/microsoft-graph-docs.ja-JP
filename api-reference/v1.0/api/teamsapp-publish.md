@@ -1,27 +1,27 @@
 ---
 title: アクセス許可
-description: 'マイクロソフト チーム アプリケーション カタログにアプリケーションを発行します。 '
+description: 'Microsoft Teams アプリカタログにアプリを発行します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016745"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521762"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a>アプリケーションを組織のアプリケーションのカタログに発行します。
+# <a name="publish-apps-to-your-organizations-app-catalog"></a>組織のアプリカタログにアプリを発行する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-マイクロソフト チーム アプリケーション カタログに[アプリケーション](../resources/teamsapp.md)を発行します。 この API が、アプリケーションを公開して、組織のカタログ (テナント アプリケーション カタログ) に具体的には、作成されたリソースがある`distributionMethod`  =  `organization`。
+Microsoft Teams アプリカタログに[アプリ](../resources/teamsapp.md)を発行します。 具体的には、この API は、アプリを組織のカタログ (テナントのアプリカタログ) に公開します。作成されたリソース`distributionMethod`  =  `organization`には、があります。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」を参照してください。
 
->**注:** グローバル管理者だけでは、この API を呼び出すことができます。 
+>**注:** この API は、グローバル管理者のみが呼び出すことができます。 
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)|
 |:----------------------------------     |:-------------|
@@ -44,25 +44,25 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-body"></a>要求本文
 
-チーム Zip のマニフェスト ペイロード。 チームのアプリケーションのファイルは[、アプリケーション パッケージの作成を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)zip 形式で圧縮します。 その組織の別のアプリケーションと同じマニフェスト ID を持つ組織のアプリケーションを作成することはできません。
+Teams の Zip マニフェストのペイロード。 Teams アプリケーションの zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。 その組織の別のアプリと同じマニフェスト ID を持つ組織に対してアプリを作成することはできません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードと[teamsCatalogApp](../resources/teamsapp.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、 [teamsCatalogApp](../resources/teamsapp.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
 ### <a name="request"></a>要求
 
 ```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
 
-マイクロソフト チームのアプリケーションの zip ファイルを作成する方法の詳細については、[作成されたアプリケーション パッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)を参照してください。 
+Microsoft Teams アプリケーション zip ファイルを作成する方法については、「[アプリパッケージを作成](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)する」を参照してください。 
 
 ### <a name="response"></a>応答
 
@@ -78,3 +78,11 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

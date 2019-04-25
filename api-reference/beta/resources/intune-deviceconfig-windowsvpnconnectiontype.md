@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 81ecec7ffb7913411c248a6d5c4c1225cb492de9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523617"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsvpnconnectiontype 列挙型
 
@@ -23,9 +23,9 @@ Windows VPN 接続の種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |pulseSecure|.0|パルスがセキュリティで保護されています。|
-|f5EdgeClient|1-d|F5 キーを押したエッジクライアント。|
-|dellSonicWallMobileConnect|pbm-2|Dell SonicWALL モバイル接続。|
-|checkPointCapsuleVpn|1/3|[カプセル接続] VPN をチェックします。|
+|f5EdgeClient|1 |F5 キーを押したエッジクライアント。|
+|dellSonicWallMobileConnect|2 |Dell SonicWALL モバイル接続。|
+|checkPointCapsuleVpn|3 |[カプセル接続] VPN をチェックします。|
 
 
 

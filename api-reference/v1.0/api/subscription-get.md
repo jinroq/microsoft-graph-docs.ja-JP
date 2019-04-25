@@ -1,16 +1,18 @@
 ---
 title: サブスクリプションを取得する
 description: サブスクリプションのプロパティとリレーションシップを取得します。
-localization_priority: Priority
+localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156470"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520635"
 ---
 # <a name="get-subscription"></a>サブスクリプションを取得する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サブスクリプションのプロパティとリレーションシップを取得します。
 
@@ -39,7 +41,6 @@ ms.locfileid: "30156470"
 
   - 対応するアプリケーション アクセス許可を使用して、テナントの_任意_のユーザーのフォルダーまたはメールボックス内にあるアイテムの変更をサブスクライブします。
   - Outlook 共有アクセス許可 (Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared、および対応する読み取り/書き込み) は使用しないでください。それらは、共有フォルダーまたは委任フォルダーにあるアイテムの変更通知のサブスクライブをサポート**していない**からです。
- 
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +57,7 @@ GET /subscriptions/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前       | 型 | 説明|
-|:-----------|:------|:----------|
+|:-----------|:-----|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
@@ -78,7 +79,7 @@ GET /subscriptions/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/{id}
+GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
 ##### <a name="response"></a>応答
@@ -109,10 +110,15 @@ Content-length: 252
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

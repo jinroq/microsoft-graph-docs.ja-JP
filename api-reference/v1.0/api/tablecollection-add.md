@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4b2523725c65f0b09e6f91296eacfcb9c75e2927
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520495"
 ---
 # <a name="tablecollection-add"></a>TableCollection: 追加
 
@@ -44,14 +44,14 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|address|文字列|データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。|
+|address|string|データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。|
 |hasHeaders|ブール値|インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookTable](../resources/table.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookTable](../resources/table.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

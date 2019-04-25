@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 54d8dc2e1c2c62d956502e48791ad55e0787de03
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32529171"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>windowsInformationProtectionDeviceRegistration の更新
 
@@ -52,10 +52,10 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
-|deviceRegistrationId|文字列|このデバイス登録レコードのデバイス識別子。|
+|deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
 |deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
-|deviceMacAddress|文字列|デバイスの Mac アドレス。|
+|deviceMacAddress|String|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 13436f259e254463874fe03217025380735e9b26
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525237"
 ---
 # <a name="installintent-enum-type"></a>installIntent 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31777579"
 |メンバー|値|説明|
 |:---|:---|:---|
 |使用可能|.0|利用可能なインストールの目的。|
-|必須|1-d|インストールの目的が必要です。|
-|解除|pbm-2|インストールの目的をアンインストールします。|
-|登録なし|1/3|登録インストールの目的がなくても使用できます。|
+|必須|1 |インストールの目的が必要です。|
+|解除|2 |インストールの目的をアンインストールします。|
+|登録なし|3 |登録インストールの目的がなくても使用できます。|
 
 
 

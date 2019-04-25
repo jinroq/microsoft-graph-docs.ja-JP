@@ -3,11 +3,11 @@ title: singleValueLegacyExtendedProperty リソースの種類
 description: '単一値が含まれる拡張プロパティ。 '
 localization_priority: Normal
 ms.openlocfilehash: 0d889756204853a525269f28cfdd3cc1b40be8a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523743"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "29512368"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | サポートされているリソース インスタンス:[メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)[にお問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook の仕事](../resources/outlooktask.md)または[Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)、ですが、グループに[投稿](../resources/post.md)がありません。 | サポートされているリソースの新しいインスタンスまたは既存のインスタンスに **singleValueLegacyExtendedProperty** を作成します。 |
-|[Get](../api/singlevaluelegacyextendedproperty-get.md) |([メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)[にお問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md) [Outlook の仕事](../resources/outlooktask.md)、 [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)、またはグループの[転記](../resources/post.md))、サポートされているリソースのインスタンスのコレクションの 1 つまたはまたは、このような 1 つのインスタンスは、 [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)オブジェクトを使用して展開します。 |`$expand` または `$filter` を使用して拡張プロパティでリソース インスタンスを取得します。|
+|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | サポートされているリソースインスタンス: [message](../resources/message.md)、 [mailfolder](../resources/mailfolder.md)、 [event](../resources/event.md)、 [calendar](../resources/calendar.md)、 [contact](../resources/contact.md)、 [contactfolder](../resources/contactfolder.md)、 [outlook の仕事](../resources/outlooktask.md)、または[outlook のタスクフォルダー](../resources/outlooktaskfolder.md)。ただし、グループの[投稿](../resources/post.md)は含まれません。 | サポートされているリソースの新しいインスタンスまたは既存のインスタンスに **singleValueLegacyExtendedProperty** を作成します。 |
+|[Get](../api/singlevaluelegacyextendedproperty-get.md) |サポートされているリソースインスタンス ([message](../resources/message.md)、 [mailfolder](../resources/mailfolder.md)、 [event](../resources/event.md)、 [calendar](../resources/calendar.md)、 [contact](../resources/contact.md)、 [contactfolder](../resources/contactfolder.md)、 [outlook タスク](../resources/outlooktask.md)、 [outlook タスクフォルダー](../resources/outlooktaskfolder.md)、またはグループ[投稿](../resources/post.md)) の1つまたは複数のコレクション。または、 [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)オブジェクトを使用して展開されたインスタンスが1つあります。 |`$expand` または `$filter` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 73cd3208b7729544d6fbd620a13ce295b39aff26
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780183"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523624"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31780183"
 |メンバー|値|説明|
 |:---|:---|:---|
 |upToDate|.0|保留中の更新はありません。保留中の再起動更新プログラムはありません。更新は失敗しています。|
-|pendinginstallation|1-d|承認されていない更新プログラムが含まれている保留中の更新プログラムがあります。 保留中の再起動更新はありません。更新は失敗しません。|
-|pendingreboot|pbm-2|再起動が必要な更新プログラムがあります。 失敗した更新はありません。|
-|フェール|1/3|デバイスにインストールできなかった更新プログラムがあります。|
+|pendinginstallation|1 |承認されていない更新プログラムが含まれている保留中の更新プログラムがあります。 保留中の再起動更新はありません。更新は失敗しません。|
+|pendingreboot|2 |再起動が必要な更新プログラムがあります。 失敗した更新はありません。|
+|フェール|3 |デバイスにインストールできなかった更新プログラムがあります。|
 
 
 

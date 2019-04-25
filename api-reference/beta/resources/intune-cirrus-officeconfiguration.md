@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 7e5c36a23be0ab32a14a08eaff297b832ba5274c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156050"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526360"
 ---
 # <a name="officeconfiguration-resource-type"></a>office/リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "30156050"
 |officeの変更の更新|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[オフィス](../resources/intune-cirrus-officeconfiguration.md)のプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |id|String|office 構成の Id。|
 |tenantcheckinstatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|office クライアントのチェックイン状態のリスト。|

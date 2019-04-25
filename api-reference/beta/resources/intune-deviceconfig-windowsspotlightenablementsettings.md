@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 64c0adffd21f6411b2ea86a29d7d5b72233924a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523666"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsスポットライト enablementsettings 列挙型
 
@@ -23,8 +23,8 @@ MDM で制御されるデバイス用に定義済みの既定の検索エンジ�
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|ロック画面のスポットライトが構成されていません|
-|党|1-d|ロック画面で Windows スポットライトを無効にする|
-|enabled|pbm-2|ロック画面で Windows スポットライトを有効にする|
+|党|1 |ロック画面で Windows スポットライトを無効にする|
+|enabled|2 |ロック画面で Windows スポットライトを有効にする|
 
 
 

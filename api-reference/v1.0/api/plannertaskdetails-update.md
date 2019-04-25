@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: cd9bf69fcb458c40c8506ccf2a7d401793e8fbef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525447"
 ---
 # <a name="update-plannertaskdetails"></a>Update plannertaskdetails
 
@@ -37,11 +37,11 @@ PATCH /planner/tasks/{id}/details
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|説明|String|タスクの説明|
-|previewType|文字列|タスクに表示されるプレビューの種類を設定します。 可能な値: `automatic`、 `noPreview`、 `checklist`、 `description`、 `reference`。 設定すると`automatic`、タスクを表示するアプリケーションで表示されているプレビューを選択します。|
+|description|String|タスクの説明|
+|previewType|string|タスクに表示されるプレビューの種類を設定します。 使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。 表示され`automatic`たプレビューに設定した場合は、タスクを表示するアプリによって選択されます。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
 ## <a name="response"></a>応答

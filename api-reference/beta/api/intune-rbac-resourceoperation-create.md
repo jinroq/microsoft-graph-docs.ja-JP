@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dd973fa12b4737322cd53d681bfea085731ffc60
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527561"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation の作成
 
@@ -51,11 +51,11 @@ POST /deviceManagement/resourceOperations
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|resource|文字列|この操作が属するリソースカテゴリ。|
+|リソース|String|この操作が属するリソースカテゴリ。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|文字列型 (String)|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
-|enabledforscopevalidation|Boolean|権限が役割の割り当てごとに定義されたスコープに対して検証されているかどうかを判断します。|
+|description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
+|enabledforscopevalidation|ブール値|権限が役割の割り当てごとに定義されたスコープに対して検証されているかどうかを判断します。|
 
 
 

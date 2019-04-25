@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f34e9f3d1ea725bec9e39a3437c2d9324a9e9763
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779749"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521328"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "31779749"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[iosUpdateDeviceStatuses のリスト](../api/intune-deviceconfig-iosupdatedevicestatus-list.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) コレクション|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get iosUpdateDeviceStatus](../api/intune-deviceconfig-iosupdatedevicestatus-get.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[iosUpdateDeviceStatus の取得](../api/intune-deviceconfig-iosupdatedevicestatus-get.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[iosUpdateDeviceStatus の作成](../api/intune-deviceconfig-iosupdatedevicestatus-create.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|新しい [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) オブジェクトを作成します。|
 |[iosUpdateDeviceStatus の削除](../api/intune-deviceconfig-iosupdatedevicestatus-delete.md)|なし|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) を削除します。|
 |[iosUpdateDeviceStatus の更新](../api/intune-deviceconfig-iosupdatedevicestatus-update.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)| [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) オブジェクトのプロパティを更新します。|
@@ -33,12 +33,12 @@ ms.locfileid: "31779749"
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |installStatus|[iosupの installstatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|ポリシー レポートのインストール状態。 可能な値は`success`、 `available`、 `idle` `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `sharedDeviceUserLoggedInError`、、 `installing`、、、、、、、、です。 `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation`|
-|osVersion|文字列|レポートされているデバイス バージョン。|
-|deviceId|文字列|レポートされているデバイス ID。|
+|osVersion|String|レポートされているデバイス バージョン。|
+|deviceId|String|レポートされているデバイス ID。|
 |userId|String|レポートされているユーザー ID。|
-|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
+|deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|文字列型 (String)|レポートされているユーザー名|
-|deviceModel|文字列|レポートされているデバイス モデル|
+|deviceModel|String|レポートされているデバイス モデル|
 |platform|Int32|レポートされているデバイスのプラットフォーム|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

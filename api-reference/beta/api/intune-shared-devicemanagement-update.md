@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: e0dc83489ede464eb9da000acb8db4e6af13f8d2
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527050"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
@@ -33,18 +33,18 @@ ms.locfileid: "31518526"
 | &nbsp; &nbsp; **会社の用語** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **デバイス構成** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **デバイスの目的** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **電子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **役割ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **リモート アクセス** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **リモートアシスタンス** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **通信経費管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **Windows 情報保護** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Windows 情報保護** | DeviceManagementApps.ReadWrite.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。|
 | アプリケーション | サポートされていません。 |
 
@@ -75,7 +75,7 @@ PATCH /deviceManagement
 |id|String|デバイスの一意識別子。|
 |**デバイス構成**|
 |int未指定 eaccountid|GUID|指定したテナントの Intune アカウント ID|
-|legacyPcManangementEnabled|Boolean|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。|
+|legacyPcManangementEnabled|ブール値|このアカウントの非 MDM で管理されているレガシー PC 管理を有効にするプロパティ。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。|
 |maximumdeptokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|

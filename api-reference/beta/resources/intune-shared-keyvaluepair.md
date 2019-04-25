@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5a8feecabeca3cfc916c0bd3ce1b87cab3a68809
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160796"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525244"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "30160796"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |name|String|キーと値のペアの名前|
-|value|文字列|キーと値のペアの値|
+|value|文字列型 (String)|キーと値のペアの値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

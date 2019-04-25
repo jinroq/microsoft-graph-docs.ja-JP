@@ -1,31 +1,31 @@
 ---
-title: Microsoft グラフ API を使用して、セキュリティ脅威の検出と保護 (プレビュー)
-description: セキュリティ上の脅威の巧妙化は、世界経済に影響を与えず、エスカレートし続けます。 企業があっても認識する前に長い間、破損がよく行われます。 ビルドまたはビルドの統合、複数のソースからのセキュリティの警告を関連付けると、ユーザーの識別情報を侵害する、通知、調査、および自動化するコンテキストのデータのロックを解除しようとする脅威を検出するセキュリティ ・ ソリューションを拡張する Microsoft Graph を使用することができます。セキュリティ ・ オペレーションによって効率が向上します。
+title: Microsoft Graph API を使用してセキュリティの脅威の検出と保護を行う (プレビュー)
+description: セキュリティ上の脅威の高度化が引き続きエスカレートされ、グローバル経済に影響を与えます。 損害は、多くの場合、組織が発見する前に長く行われます。 Microsoft Graph を使用すると、複数のソースからのセキュリティの警告を統合して関連付け、ユーザー id を侵害しようとする脅威を検出し、コンテキストデータのロックを解除して調査を通知し、自動化することができます。効率性向上のためのセキュリティ操作。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524464"
 ---
-# <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft グラフ API を使用して、セキュリティ脅威の検出と保護 (プレビュー)
+# <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft Graph API を使用してセキュリティの脅威の検出と保護を行う (プレビュー)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-セキュリティ上の脅威の巧妙化は、世界経済に影響を与えず、エスカレートし続けます。 企業があっても認識する前に長い間、破損がよく行われます。 ビルドまたはビルドの統合、複数のソースからのセキュリティの警告を関連付けると、ユーザーの識別情報を侵害する、通知、調査、および自動化するコンテキストのデータのロックを解除しようとする脅威を検出するセキュリティ ・ ソリューションを拡張する Microsoft Graph を使用することができます。セキュリティ ・ オペレーションによって効率が向上します。
+セキュリティ上の脅威の高度化が引き続きエスカレートされ、グローバル経済に影響を与えます。 損害は、多くの場合、組織が発見する前に長く行われます。 Microsoft Graph を使用すると、複数のソースからのセキュリティの警告を統合して関連付け、ユーザー id を侵害しようとする脅威を検出し、コンテキストデータのロックを解除して調査を通知し、自動化することができます。効率性向上のためのセキュリティ操作。
 
-インテリジェントなセキュリティのグラフをまとめてセキュリティ ・ インテリジェンス ・から Microsoft、セキュリティ運用センター、およびパートナーからの統合型セキュリティ ・ ソリューションのエコシステムを形成するために世界中。 機械学習、行動を監視して、クラウドのスケールを使用して、インテリジェントなセキュリティ グラフことができますより保護、検出、および迅速かつ包括的な脅威に対応します。 [セキュリティ API](security-api-overview.md)では、[インテリジェントなセキュリティのグラフ](https://www.microsoft.com/en-us/security/intelligence-security-api)、実践的な包括的なソリューションで支援するに接続します。
+インテリジェントセキュリティグラフは、Microsoft、セキュリティ運用センター、世界中のパートナーからのセキュリティインテリジェンスを一体化して、統合されたセキュリティソリューションのエコシステムを形成します。 インテリジェントなセキュリティグラフは、機械学習、行動監視、およびクラウドの規模を使用して、脅威を迅速かつ包括的に保護、検出、応答することができます。 [セキュリティ API](security-api-overview.md)は、[インテリジェントセキュリティグラフ](https://www.microsoft.com/en-us/security/intelligence-security-api)に接続して、実践的で包括的なソリューションを支援します。
 
-[アイデンティティ保護リスク イベント API](identityprotection-root.md)は、[アイデンティティ保護によるリスクの検出](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)にクエリを実行し、SIEM システムとセキュリティのアプリケーションでこれらのイベントを使用して、Azure AD プレミアム P1 と P2 のお客様に簡単にアクセスできます。
+[identity protection リスクイベント API](identityprotection-root.md)は、 [id 保護によってリスクの検出](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)を照会し、SIEM システムおよびセキュリティアプリケーションでそれらのイベントを使用するための、Azure AD Premium P1 と P2 のお客様への簡単なアクセスを提供します。
 
 ## <a name="see-also"></a>関連項目
 
 - [セキュリティ API を使用する理由](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
-- [セキュリティ API を使用して、インテリジェントなセキュリティの統合](security-api-overview.md)
-- 組織内の ID を保護するために Azure AD を使用する理由
+- [セキュリティ API を使用してインテリジェントセキュリティグラフと統合する](security-api-overview.md)
+- [Azure AD を使用して組織内の id を保護する理由](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Azure AD Identity Protection API を使用する](identityprotection-root.md)
 <!--
 {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74b03555456c058411c9a50c7392f29fe60d3aed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799546"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524513"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 列挙型
 
@@ -23,10 +23,10 @@ Microsoft Edge の設定がキオスクモードに基づいて制限される�
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|未構成 (無制限)。|
-|digitalSignage|1-d|シングルアプリモードでのインタラクティブ/デジタル信号。|
-|normalmode|pbm-2|標準モード (完全版の Microsoft Edge)。|
-|publicた singsingleapp|1/3|単一アプリモードでのパブリックブラウズ。|
-|publicbrowsingmultiapp|2/4|マルチアプリモードでのパブリックブラウズ (inPrivate)。|
+|digitalSignage|1 |シングルアプリモードでのインタラクティブ/デジタル信号。|
+|normalmode|2 |標準モード (完全版の Microsoft Edge)。|
+|publicた singsingleapp|3 |単一アプリモードでのパブリックブラウズ。|
+|publicbrowsingmultiapp|4 |マルチアプリモードでのパブリックブラウズ (inPrivate)。|
 
 
 

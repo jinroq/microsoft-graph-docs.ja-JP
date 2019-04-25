@@ -1,25 +1,25 @@
 ---
-title: synchronizationSchedule リソースの種類
-description: SynchronizationJob を実行するために使用するスケジュールを定義します。
+title: 同期スケジュールリソースの種類
+description: 同期ジョブの実行に使用されるスケジュールを定義します。
 localization_priority: Normal
 ms.openlocfilehash: 0e9714e4833c5586e54c8d812a0d72e41a513e5b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515588"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525965"
 ---
-# <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule リソースの種類
+# <a name="synchronizationschedule-resource-type"></a>同期スケジュールリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[synchronizationJob](synchronization-synchronizationjob.md)を実行するために使用するスケジュールを定義します。
+[同期ジョブ](synchronization-synchronizationjob.md)の実行に使用されるスケジュールを定義します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|有効期限|DateTimeOffset|日付と時刻がこのジョブの有効期限が切れます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|interval|Duration|同期のイテレーション間の間隔。|
+|nntp|DateTimeOffset|このジョブの有効期限が切れる日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|interval|期間|同期の反復間の間隔。|
 |state|String| 使用可能な値は、`Active`、`Disabled` です。|
 
 ## <a name="json-representation"></a>JSON 表記

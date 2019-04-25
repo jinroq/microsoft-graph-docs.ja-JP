@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5f4c6fbfcbefd88af31f2875cf33755b3be21e06
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773190"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525279"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 列挙型
 
@@ -23,12 +23,12 @@ ms.locfileid: "31773190"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な割り当て状態|
-|assignedInSync|1-d|Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの同期|
-|assignedOutOfSync|pbm-2|Intune で正常に割り当てられ、Windows 自動パイロットプログラムと同期されません|
-|assignedUnkownSyncState|1/3|Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの間で同期されているか、同期されていません|
-|notAssigned|2/4|未割り当て|
-|対する|5|保留中の割り当て|
-|フェール|シックス| 割り当て失敗|
+|assignedInSync|1 |Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの同期|
+|assignedOutOfSync|2 |Intune で正常に割り当てられ、Windows 自動パイロットプログラムと同期されません|
+|assignedUnkownSyncState|3 |Intune で正常に割り当てられ、Windows 自動パイロットプログラムとの間で同期されているか、同期されていません|
+|notAssigned|4 |未割り当て|
+|対する|5 |保留中の割り当て|
+|フェール|6 | 割り当て失敗|
 
 
 

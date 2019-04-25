@@ -1,21 +1,21 @@
 ---
-title: チームからアプリケーションを削除します。
-description: 指定されたチームからアプリケーションをアンインストールします。
+title: チームからアプリを削除する
+description: 指定したチームからアプリをアンインストールします。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 886c3d4c93403225a5e1cd258b3225cd52dc8c78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3416c430a5d033b57d5dcce61f17984cf30e0f38
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521825"
 ---
-# <a name="delete-app-from-team"></a>チームからアプリケーションを削除します。
+# <a name="delete-app-from-team"></a>チームからアプリを削除する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-指定された[チーム](../resources/team.md)から[アプリケーション](../resources/teamsappinstallation.md)をアンインストールします。
+指定した[チーム](../resources/team.md)から[アプリ](../resources/teamsappinstallation.md)をアンインストールします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "27965153"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ DELETE /teams/{id}/installedApps/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
@@ -67,10 +67,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsappinstallation-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

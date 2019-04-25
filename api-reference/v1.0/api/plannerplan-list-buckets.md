@@ -5,13 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: b47f456fdc66c29a5176b6476943c801cd14e3dd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976486"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525657"
 ---
 # <a name="list-buckets"></a>List buckets
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [plannerPlan](../resources/plannerplan.md) オブジェクトに含まれている **plannerbucket** オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -26,7 +28,7 @@ ms.locfileid: "27976486"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/{id}/buckets
+GET /planner/plans/<id>/buckets
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -50,7 +52,7 @@ GET /planner/plans/{id}/buckets
   "name": "get_buckets"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
+GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -81,10 +83,15 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List buckets",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/plannerplan-list-buckets.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

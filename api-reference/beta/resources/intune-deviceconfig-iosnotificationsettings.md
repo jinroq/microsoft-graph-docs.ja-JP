@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d2fbc197f858b595bfe8572badddef9dadf6b3c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521419"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings リソース タイプ
 
@@ -26,10 +26,10 @@ ms.locfileid: "31779644"
 |appName|String|bundleID に関連するアプリケーション名。|
 |publisher|String|bundleID に関連するパブリッシャー。|
 |enabled|ブール型 (Boolean)|通知がこのアプリで許可されているかどうかを示します。|
-|showInNotificationCenter|Boolean|通知センターに通知を表示できるかどうかを示します。|
-|showOnLockScreen|Boolean|ロック画面に通知を表示できるかどうかを示します。|
+|showInNotificationCenter|ブール型|通知センターに通知を表示できるかどうかを示します。|
+|showOnLockScreen|ブール型|ロック画面に通知を表示できるかどうかを示します。|
 |alertType|[iosnotificationalerttype](../resources/intune-deviceconfig-iosnotificationalerttype.md)|このアプリの通知用の警告の種類を示します。 可能な値は、`deviceDefault`、`banner`、`modal`、`none` です。|
-|badgesEnabled|Boolean|バッジがこのアプリで許可されているかどうかを示します。|
+|badgesEnabled|ブール型|バッジがこのアプリで許可されているかどうかを示します。|
 |soundsEnabled|Boolean|サウンドがこのアプリで許可されているかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ

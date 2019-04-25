@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c3670850bb0a9b3907b02c3e48d893b35ce7fcbb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527274"
 ---
 # <a name="update-rolescopetag"></a>ロール copetag の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |:---|:---|:---|
 |id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールスコープタグの表示名またはフレンドリ名。|
-|説明|String|役割の範囲タグの説明。|
+|description|String|役割の範囲タグの説明。|
 
 
 

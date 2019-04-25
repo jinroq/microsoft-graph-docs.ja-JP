@@ -1,25 +1,25 @@
 ---
 title: oneNoteIdentity リソースの種類
-description: '**準備中のサポート**'
+description: '**まもなくサポートが提供される**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642136"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525027"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**準備中のサポート**
+**まもなくサポートが提供される**
 
 OneNoteIdentity 型は、_ユーザー_の id を表します。
 
-[Id](identity.md)を使用してこの型をマージする将来的には、
+今後、この型は[Identity](identity.md)とマージされます。
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,7 +44,7 @@ OneNoteIdentity 型は、_ユーザー_の id を表します。
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|string|Id の表示名です。|
+|displayName|string|id の表示名。|
 |id|string|ID の一意識別子。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

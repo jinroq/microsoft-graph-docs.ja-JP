@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987602"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525566"
 ---
 # <a name="update-range"></a>範囲を更新する
 
@@ -39,7 +39,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnHidden|ブール値|現在の範囲のすべての列が非表示になっているかどうかを表します。|
 |formulas|Json|A1 スタイル表記の数式を表します。|

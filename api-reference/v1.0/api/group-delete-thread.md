@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 24e779b528391e82f452f7bbe3153e39a3975b93
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946757"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524880"
 ---
 # <a name="delete-conversation-thread"></a>会話スレッドを削除する
 [thread](../resources/conversationthread.md) オブジェクトを削除します。
@@ -30,7 +30,7 @@ DELETE /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

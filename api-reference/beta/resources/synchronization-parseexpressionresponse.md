@@ -1,28 +1,28 @@
 ---
-title: parseExpressionResponse リソースの種類
-description: '応答を表す、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)アクション。'
+title: parseexpression response リソースの種類
+description: '[同期スキーマ: parseexpression](../api/synchronization_synchronizationschema_parseexpression.md)アクションからの応答を表します。'
 localization_priority: Normal
 ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523435"
 ---
-# <a name="parseexpressionresponse-resource-type"></a>parseExpressionResponse リソースの種類
+# <a name="parseexpressionresponse-resource-type"></a>parseexpression response リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-応答を表す、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)アクション。
+[同期スキーマ: parseexpression](../api/synchronization_synchronizationschema_parseexpression.md)アクションからの応答を表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|エラー|odata.error|エラーの詳細、式の評価でエラーが発生する場合。|
-|evaluationResult|String コレクション|式の評価によって生成された値のコレクションです。|
-|evaluationSucceeded|Boolean|`true`場合は、評価が正常に完了しました。|
+|エラー|odata。エラー|エラーの詳細。式の評価結果でエラーが発生した場合。|
+|evaluationresult|String collection|式の評価によって生成された値のコレクション。|
+|evaluationsucceeded|ブール値|`true`評価が成功した場合。|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|解析された式を表す[attributeMappingSource](synchronization-attributemappingsource.md)オブジェクト。|
-|parsingSucceeded|Boolean|`true`場合は、式が正しく解析されました。|
+|parsingsucceeded|ブール値|`true`式が正常に解析された場合。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525230"
 ---
 # <a name="enablement-enum-type"></a>有効化列挙型
 
@@ -23,5 +23,5 @@ ms.locfileid: "30571236"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|デバイスの既定値。意図的ではありません。|
-|enabled|1|デバイスの設定を有効にします。|
-|党|2|デバイスの設定を無効にします。|
+|enabled|1 |デバイスの設定を有効にします。|
+|党|2 |デバイスの設定を無効にします。|

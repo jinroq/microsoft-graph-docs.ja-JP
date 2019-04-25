@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 2b03261fb833277e4cbff1ee0be09e8dc277a018
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961827"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526903"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "30961827"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp; &nbsp; **デバイスの管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
+| &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 

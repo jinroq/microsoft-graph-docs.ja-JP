@@ -1,21 +1,21 @@
 ---
-title: チャネルからタブを削除します。
-description: '削除 (固定解除)、チーム内で指定されたチャネルのタブです。 '
+title: チャネルからタブを削除する
+description: 'チーム内の指定されたチャネルからタブを削除 (固定解除) します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a5cb2334c250c63d0644c8fab3f97d35c481a515
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521777"
 ---
-# <a name="delete-tab-from-channel"></a>チャネルからタブを削除します。
+# <a name="delete-tab-from-channel"></a>チャネルからタブを削除する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-削除 (固定解除)[チーム](../resources/team.md)内で指定された[チャネル](../resources/channel.md)のタブです。 
+[チーム](../resources/team.md)内の指定された[チャネル](../resources/channel.md)からタブを削除 (固定解除) します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -54,7 +54,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
@@ -70,6 +70,9 @@ HTTP/1.1 204 No Content
   "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

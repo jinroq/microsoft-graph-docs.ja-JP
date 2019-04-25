@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bee92900d50e5813e12568ce9fd717b01deed590
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783018"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32531055"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>grouppolicypresentationdropdownlist の更新
 
@@ -51,12 +51,12 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|文字列|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |defaultitem|[grouppolicypresentationdropdownlistitem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|アイテムのリストの既定の選択を示すローカライズされた文字列値。|
 |items|[grouppolicypresentationdropdownlistitem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)コレクション|ローカライズされた表示名とそれに関連する値のセットを表します。|
-|必須|Boolean|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
+|必須|ブール値|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
 
 
 

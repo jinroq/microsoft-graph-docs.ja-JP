@@ -1,25 +1,27 @@
 ---
-title: Get sectionGroup
+title: sectionGroup の取得
 description: sectionGroup オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: d5b86daa6ad8fb9aaaed5b72d60e2fa5665a1648
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521013"
 ---
-# <a name="get-sectiongroup"></a>Get sectionGroup
+# <a name="get-sectiongroup"></a>sectionGroup の取得
 
-[sectionGroup](../resources/sectiongroup.md) オブジェクトのプロパティとリレーションシップを取得します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[sectionGroup](../resources/sectiongroup.md)オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -34,7 +36,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-既定のクエリが `parentNotebook` を展開し、`id`、`name`、`self` プロパティを選択します。セクション グループの有効な `expand` 値は、`parentNotebook` と `parentSectionGroup` です。
+既定のクエリは`parentNotebook` 、、 `id` `name`、および`self`プロパティを展開して選択します。 セクション`expand`グループの有効な値`parentNotebook`は`parentSectionGroup`、とです。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -56,14 +58,14 @@ GET /sites/{id}/onenote/sectionGroups/{id}
   "name": "get_sectiongroup"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
+GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -91,10 +93,15 @@ Content-length: 305
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get sectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sectiongroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

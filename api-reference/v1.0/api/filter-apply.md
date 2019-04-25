@@ -3,11 +3,11 @@ title: 'フィルター: 適用'
 description: 指定した列に指定されたフィルター条件を適用します。
 localization_priority: Normal
 ms.openlocfilehash: e7223c1b3d7cd75356c459f366c1a230eeb06e59
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524261"
 ---
 # <a name="filter-apply"></a>フィルター: 適用
 
@@ -36,7 +36,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |criteria|WorkbookFilterCriteria|適用する基準。|
 

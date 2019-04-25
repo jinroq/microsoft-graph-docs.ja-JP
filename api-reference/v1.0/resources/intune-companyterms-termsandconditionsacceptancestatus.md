@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3df5a81870729fba79519be4010c852aa6810f50
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251049"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523876"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus リソース タイプ
 
@@ -27,9 +27,9 @@ termsAndConditionsAcceptanceStatus エンティティは、特定のユーザー
 |[Update termsAndConditionsAcceptanceStatus](../api/intune-companyterms-termsandconditionsacceptancestatus-update.md)|[termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md)|[termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列|エンティティの一意識別子。|
+|id|String|エンティティの一意識別子。|
 |userDisplayName|String|エンティティによって承諾が示されているユーザーの表示名。|
 |acceptedVersion|Int32|ユーザーによって承諾された使用条件の最新バージョン番号。|
 |acceptedDateTime|DateTimeOffset|最後に使用条件がユーザーによって承諾された DateTime。|

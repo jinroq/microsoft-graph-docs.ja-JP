@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e39a8e869a688dc74ebcc18e4ef56fc16459013d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523442"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31777978"
 |applicationId|文字列型 (String)|MobieApp 識別子。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|モバイルアプリの目的。 可能な値は、`available`、`notAvailable`、`requiredInstall`、`requiredUninstall`、`requiredAndAvailableInstall`、`availableInstallWithoutEnrollment`、`exclude` です。|
-|displayversion|文字列|アプリケーションの人間の読み取り可能なバージョン|
+|displayversion|String|アプリケーションの人間の読み取り可能なバージョン|
 |installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|アプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |supporteddevicetypes|[mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)コレクション|アプリでサポートされているプラットフォーム。|
 
