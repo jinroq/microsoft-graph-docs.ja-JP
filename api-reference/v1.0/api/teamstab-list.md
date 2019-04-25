@@ -1,63 +1,64 @@
 ---
-title: チャネルの一覧] タブ
-description: 'チーム内で指定されたチャネル内のタブの一覧を取得します。 '
+title: チャネル内のリストタブ
+description: 'チーム内の指定されたチャネルのタブのリストを取得します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521748"
 ---
-# <a name="list-tabs-in-channel"></a><span data-ttu-id="2efaf-103">チャネルの一覧] タブ</span><span class="sxs-lookup"><span data-stu-id="2efaf-103">List tabs in channel</span></span>
+# <a name="list-tabs-in-channel"></a><span data-ttu-id="4951c-103">チャネル内のリストタブ</span><span class="sxs-lookup"><span data-stu-id="4951c-103">List tabs in channel</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2efaf-104">[チーム](../resources/team.md)内で指定された[チャネル](../resources/channel.md)で[のタブ](../resources/teamstab.md)のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="2efaf-104">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="4951c-104">[チーム](../resources/team.md)内の指定された[チャネル](../resources/channel.md)の[タブ](../resources/teamstab.md)のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="4951c-104">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="2efaf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2efaf-105">Permissions</span></span>
-<span data-ttu-id="2efaf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2efaf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4951c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4951c-105">Permissions</span></span>
+<span data-ttu-id="4951c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4951c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2efaf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2efaf-108">Permission type</span></span>      | <span data-ttu-id="2efaf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2efaf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4951c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4951c-108">Permission type</span></span>      | <span data-ttu-id="4951c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4951c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2efaf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2efaf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2efaf-111">Group.ReadWrite.All、Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="2efaf-111">Group.ReadWrite.All, Group.Read.All</span></span>    |
-|<span data-ttu-id="2efaf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2efaf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2efaf-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2efaf-113">Not supported.</span></span>    |
-| <span data-ttu-id="2efaf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2efaf-114">Application</span></span>                            | <span data-ttu-id="2efaf-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2efaf-115">Group.Read.All, Group.ReadWrite.All</span></span>         |
+|<span data-ttu-id="4951c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4951c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4951c-111">グループ読み取り。すべてを取得します。</span><span class="sxs-lookup"><span data-stu-id="4951c-111">Group.ReadWrite.All, Group.Read.All</span></span>    |
+|<span data-ttu-id="4951c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4951c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4951c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4951c-113">Not supported.</span></span>    |
+| <span data-ttu-id="4951c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4951c-114">Application</span></span>                            | <span data-ttu-id="4951c-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4951c-115">Group.Read.All, Group.ReadWrite.All</span></span>         |
 
-> <span data-ttu-id="2efaf-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2efaf-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2efaf-117">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2efaf-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="4951c-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4951c-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="4951c-117">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="4951c-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2efaf-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2efaf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4951c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4951c-118">HTTP request</span></span>
 
 ```http
 GET /teams/{id}/channels/{id}/tabs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2efaf-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="2efaf-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4951c-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4951c-119">Optional query parameters</span></span>
 
-<span data-ttu-id="2efaf-120">このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2efaf-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="4951c-120">このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4951c-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2efaf-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2efaf-121">Request headers</span></span>
-| <span data-ttu-id="2efaf-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2efaf-122">Header</span></span>       | <span data-ttu-id="2efaf-123">値</span><span class="sxs-lookup"><span data-stu-id="2efaf-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4951c-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4951c-121">Request headers</span></span>
+| <span data-ttu-id="4951c-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4951c-122">Header</span></span>       | <span data-ttu-id="4951c-123">値</span><span class="sxs-lookup"><span data-stu-id="4951c-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2efaf-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2efaf-124">Authorization</span></span>  | <span data-ttu-id="2efaf-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2efaf-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4951c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4951c-124">Authorization</span></span>  | <span data-ttu-id="4951c-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4951c-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2efaf-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="2efaf-127">Request body</span></span>
-<span data-ttu-id="2efaf-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2efaf-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4951c-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="4951c-127">Request body</span></span>
+<span data-ttu-id="4951c-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4951c-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2efaf-129">応答</span><span class="sxs-lookup"><span data-stu-id="2efaf-129">Response</span></span>
-<span data-ttu-id="2efaf-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[タブ](../resources/teamstab.md)のオブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="2efaf-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4951c-129">応答</span><span class="sxs-lookup"><span data-stu-id="4951c-129">Response</span></span>
+<span data-ttu-id="4951c-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[tabs](../resources/teamstab.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="4951c-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2efaf-131">例</span><span class="sxs-lookup"><span data-stu-id="2efaf-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="2efaf-132">要求</span><span class="sxs-lookup"><span data-stu-id="2efaf-132">Request</span></span>
-<span data-ttu-id="2efaf-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2efaf-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4951c-131">例</span><span class="sxs-lookup"><span data-stu-id="4951c-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="4951c-132">要求</span><span class="sxs-lookup"><span data-stu-id="4951c-132">Request</span></span>
+<span data-ttu-id="4951c-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4951c-133">The following is an example of the request.</span></span>
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
-#### <a name="response"></a><span data-ttu-id="2efaf-134">応答</span><span class="sxs-lookup"><span data-stu-id="2efaf-134">Response</span></span>
-<span data-ttu-id="2efaf-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2efaf-135">The following is an example of the response.</span></span>
-><span data-ttu-id="2efaf-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2efaf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="4951c-134">応答</span><span class="sxs-lookup"><span data-stu-id="4951c-134">Response</span></span>
+<span data-ttu-id="4951c-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4951c-135">The following is an example of the response.</span></span>
+><span data-ttu-id="4951c-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="4951c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -104,6 +105,9 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

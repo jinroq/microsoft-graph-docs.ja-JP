@@ -1,30 +1,30 @@
 ---
 title: mentionsPreview リソースの種類
-description: リソースのインスタンスで記載されているオブジェクトに関する情報を表します。
+description: リソースインスタンス内のメンションオブジェクトに関する情報を表します。
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 55eb69d9ef9f6c3686026f6d46a9c78cc4df167b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523486"
 ---
-# <a name="mentionspreview-resource-type"></a><span data-ttu-id="05bd0-103">mentionsPreview リソースの種類</span><span class="sxs-lookup"><span data-stu-id="05bd0-103">mentionsPreview resource type</span></span>
+# <a name="mentionspreview-resource-type"></a><span data-ttu-id="4bd13-103">mentionsPreview リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4bd13-103">mentionsPreview resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="05bd0-104">リソース インスタンス内のオブジェクトの[説明](../resources/mention.md)に関する情報を表します。</span><span class="sxs-lookup"><span data-stu-id="05bd0-104">Represents information about [mention](../resources/mention.md) objects in a resource instance.</span></span>
+<span data-ttu-id="4bd13-104">リソースインスタンス内の[メンション](../resources/mention.md)オブジェクトに関する情報を表します。</span><span class="sxs-lookup"><span data-stu-id="4bd13-104">Represents information about [mention](../resources/mention.md) objects in a resource instance.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="05bd0-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="05bd0-105">Properties</span></span>
-| <span data-ttu-id="05bd0-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="05bd0-106">Property</span></span>     | <span data-ttu-id="05bd0-107">型</span><span class="sxs-lookup"><span data-stu-id="05bd0-107">Type</span></span>   |<span data-ttu-id="05bd0-108">説明</span><span class="sxs-lookup"><span data-stu-id="05bd0-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4bd13-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4bd13-105">Properties</span></span>
+| <span data-ttu-id="4bd13-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4bd13-106">Property</span></span>     | <span data-ttu-id="4bd13-107">型</span><span class="sxs-lookup"><span data-stu-id="4bd13-107">Type</span></span>   |<span data-ttu-id="4bd13-108">説明</span><span class="sxs-lookup"><span data-stu-id="4bd13-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="05bd0-109">IsMentioned</span><span class="sxs-lookup"><span data-stu-id="05bd0-109">isMentioned</span></span> | <span data-ttu-id="05bd0-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="05bd0-110">Boolean</span></span> | <span data-ttu-id="05bd0-p101">ログインしているユーザーが親リソース インスタンスでメンションされている場合は true です。読み取り専用。フィルターがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="05bd0-p101">True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.</span></span> |
+| <span data-ttu-id="4bd13-109">説明</span><span class="sxs-lookup"><span data-stu-id="4bd13-109">isMentioned</span></span> | <span data-ttu-id="4bd13-110">ブール型</span><span class="sxs-lookup"><span data-stu-id="4bd13-110">Boolean</span></span> | <span data-ttu-id="4bd13-111">True の場合は、サインインしているユーザーが親リソースインスタンスで言及されます。</span><span class="sxs-lookup"><span data-stu-id="4bd13-111">True if the signed-in user is mentioned in the parent resource instance.</span></span> <span data-ttu-id="4bd13-112">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4bd13-112">Read-only.</span></span> <span data-ttu-id="4bd13-113">フィルターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="4bd13-113">Supports filter.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="05bd0-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="05bd0-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4bd13-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4bd13-114">JSON representation</span></span>
 
-<span data-ttu-id="05bd0-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="05bd0-115">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4bd13-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="4bd13-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

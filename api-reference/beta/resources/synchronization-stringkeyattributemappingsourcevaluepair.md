@@ -1,29 +1,30 @@
 ---
 title: stringKeyAttributeMappingSourceValuePair リソースの種類
-description: キーが文字列であり、値は、attributeMappingSource は、キー/値ペアを表します。
+description: キーが文字列で、値が attributeMappingSource であるキーと値のペアを表します。
 localization_priority: Normal
 ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516218"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523225"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="97601-103">stringKeyAttributeMappingSourceValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="97601-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="8baf6-103">stringKeyAttributeMappingSourceValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8baf6-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97601-104">キーが文字列であり、値は、 [attributeMappingSource](synchronization-attributemappingsource.md)は、キー/値ペアを表します。</span><span class="sxs-lookup"><span data-stu-id="97601-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="8baf6-104">キーが文字列で、値が[attributeMappingSource](synchronization-attributemappingsource.md)であるキーと値のペアを表します。</span><span class="sxs-lookup"><span data-stu-id="8baf6-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="97601-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97601-105">Properties</span></span>
-| <span data-ttu-id="97601-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97601-106">Property</span></span>     | <span data-ttu-id="97601-107">型</span><span class="sxs-lookup"><span data-stu-id="97601-107">Type</span></span>   |<span data-ttu-id="97601-108">説明</span><span class="sxs-lookup"><span data-stu-id="97601-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8baf6-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8baf6-105">Properties</span></span>
+| <span data-ttu-id="8baf6-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8baf6-106">Property</span></span>     | <span data-ttu-id="8baf6-107">型</span><span class="sxs-lookup"><span data-stu-id="8baf6-107">Type</span></span>   |<span data-ttu-id="8baf6-108">説明</span><span class="sxs-lookup"><span data-stu-id="8baf6-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="97601-109">Key</span><span class="sxs-lookup"><span data-stu-id="97601-109">key</span></span>|<span data-ttu-id="97601-110">String</span><span class="sxs-lookup"><span data-stu-id="97601-110">String</span></span>|<span data-ttu-id="97601-111">パラメーターの名前です。</span><span class="sxs-lookup"><span data-stu-id="97601-111">The name of the parameter.</span></span>|
-|<span data-ttu-id="97601-112">value</span><span class="sxs-lookup"><span data-stu-id="97601-112">value</span></span>|[<span data-ttu-id="97601-113">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="97601-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="97601-114">パラメーターの値です。</span><span class="sxs-lookup"><span data-stu-id="97601-114">The value of the parameter.</span></span>|
+|<span data-ttu-id="8baf6-109">Key</span><span class="sxs-lookup"><span data-stu-id="8baf6-109">key</span></span>|<span data-ttu-id="8baf6-110">String
+</span><span class="sxs-lookup"><span data-stu-id="8baf6-110">String</span></span>|<span data-ttu-id="8baf6-111">The name of the parameter.</span><span class="sxs-lookup"><span data-stu-id="8baf6-111">The name of the parameter.</span></span>|
+|<span data-ttu-id="8baf6-112">value</span><span class="sxs-lookup"><span data-stu-id="8baf6-112">value</span></span>|[<span data-ttu-id="8baf6-113">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="8baf6-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="8baf6-114">パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="8baf6-114">The value of the parameter.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="97601-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="97601-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8baf6-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8baf6-115">JSON representation</span></span>
 
-<span data-ttu-id="97601-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="97601-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8baf6-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8baf6-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

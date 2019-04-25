@@ -3,28 +3,28 @@ title: timeZoneBase リソースの種類
 description: タイム ゾーンの基本的な表現です。
 localization_priority: Normal
 ms.openlocfilehash: 9fc07961aaa475980309d8c843b613da8b42e448
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523015"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="212ba-103">timeZoneBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="212ba-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="e69d8-103">timeZoneBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e69d8-103">timeZoneBase resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="212ba-104">タイム ゾーンの基本的な表現です。</span><span class="sxs-lookup"><span data-stu-id="212ba-104">The basic representation of a time zone.</span></span>
+<span data-ttu-id="e69d8-104">タイム ゾーンの基本的な表現です。</span><span class="sxs-lookup"><span data-stu-id="e69d8-104">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="212ba-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="212ba-105">Properties</span></span>
-| <span data-ttu-id="212ba-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="212ba-106">Property</span></span>     | <span data-ttu-id="212ba-107">型</span><span class="sxs-lookup"><span data-stu-id="212ba-107">Type</span></span>   |<span data-ttu-id="212ba-108">説明</span><span class="sxs-lookup"><span data-stu-id="212ba-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e69d8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e69d8-105">Properties</span></span>
+| <span data-ttu-id="e69d8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e69d8-106">Property</span></span>     | <span data-ttu-id="e69d8-107">型</span><span class="sxs-lookup"><span data-stu-id="e69d8-107">Type</span></span>   |<span data-ttu-id="e69d8-108">説明</span><span class="sxs-lookup"><span data-stu-id="e69d8-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="212ba-109">name</span><span class="sxs-lookup"><span data-stu-id="212ba-109">name</span></span> | <span data-ttu-id="212ba-110">string</span><span class="sxs-lookup"><span data-stu-id="212ba-110">string</span></span> | <span data-ttu-id="212ba-111">タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="212ba-111">The name of a time zone.</span></span> <span data-ttu-id="212ba-112">標準的なタイム ゾーンの名前 ("ハワイ アリューシャン標準時" など) を使用することも、カスタム タイム ゾーンとして "カスタム タイム ゾーン" という名前を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="212ba-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="e69d8-109">name</span><span class="sxs-lookup"><span data-stu-id="e69d8-109">name</span></span> | <span data-ttu-id="e69d8-110">string</span><span class="sxs-lookup"><span data-stu-id="e69d8-110">string</span></span> | <span data-ttu-id="e69d8-111">タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="e69d8-111">The name of a time zone.</span></span> <span data-ttu-id="e69d8-112">標準的なタイム ゾーンの名前 ("ハワイ アリューシャン標準時" など) を使用することも、カスタム タイム ゾーンとして "カスタム タイム ゾーン" という名前を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="e69d8-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="212ba-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="212ba-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e69d8-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e69d8-113">JSON representation</span></span>
 
-<span data-ttu-id="212ba-114">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="212ba-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e69d8-114">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e69d8-114">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

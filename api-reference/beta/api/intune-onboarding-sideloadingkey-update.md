@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6eaab5e4fd2b12ce65c87304a47490447e6f3664
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527988"
 ---
-# <a name="update-sideloadingkey"></a><span data-ttu-id="a809f-103">sideLoadingKey の更新</span><span class="sxs-lookup"><span data-stu-id="a809f-103">Update sideLoadingKey</span></span>
+# <a name="update-sideloadingkey"></a><span data-ttu-id="fe691-103">sideLoadingKey の更新</span><span class="sxs-lookup"><span data-stu-id="fe691-103">Update sideLoadingKey</span></span>
 
-> <span data-ttu-id="a809f-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a809f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="fe691-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fe691-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a809f-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a809f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fe691-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="fe691-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a809f-106">[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a809f-106">Update the properties of a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
+<span data-ttu-id="fe691-106">[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="fe691-106">Update the properties of a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a809f-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a809f-107">Prerequisites</span></span>
-<span data-ttu-id="a809f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a809f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fe691-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="fe691-107">Prerequisites</span></span>
+<span data-ttu-id="fe691-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe691-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a809f-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a809f-110">Permission type</span></span>|<span data-ttu-id="a809f-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a809f-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fe691-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fe691-110">Permission type</span></span>|<span data-ttu-id="fe691-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="fe691-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a809f-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a809f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a809f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a809f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="a809f-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a809f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a809f-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a809f-115">Not supported.</span></span>|
-|<span data-ttu-id="a809f-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a809f-116">Application</span></span>|<span data-ttu-id="a809f-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a809f-117">Not supported.</span></span>|
+|<span data-ttu-id="fe691-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fe691-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fe691-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe691-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="fe691-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fe691-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fe691-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fe691-115">Not supported.</span></span>|
+|<span data-ttu-id="fe691-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fe691-116">Application</span></span>|<span data-ttu-id="fe691-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fe691-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a809f-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a809f-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fe691-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fe691-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "31807750"
 PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a809f-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a809f-119">Request headers</span></span>
-|<span data-ttu-id="a809f-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a809f-120">Header</span></span>|<span data-ttu-id="a809f-121">値</span><span class="sxs-lookup"><span data-stu-id="a809f-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fe691-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fe691-119">Request headers</span></span>
+|<span data-ttu-id="fe691-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fe691-120">Header</span></span>|<span data-ttu-id="fe691-121">値</span><span class="sxs-lookup"><span data-stu-id="fe691-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a809f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a809f-122">Authorization</span></span>|<span data-ttu-id="a809f-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a809f-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a809f-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a809f-124">Accept</span></span>|<span data-ttu-id="a809f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a809f-125">application/json</span></span>|
+|<span data-ttu-id="fe691-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe691-122">Authorization</span></span>|<span data-ttu-id="fe691-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="fe691-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fe691-124">承諾</span><span class="sxs-lookup"><span data-stu-id="fe691-124">Accept</span></span>|<span data-ttu-id="fe691-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fe691-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a809f-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a809f-126">Request body</span></span>
-<span data-ttu-id="a809f-127">要求本文で、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a809f-127">In the request body, supply a JSON representation for the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fe691-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="fe691-126">Request body</span></span>
+<span data-ttu-id="fe691-127">要求本文で、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fe691-127">In the request body, supply a JSON representation for the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
 
-<span data-ttu-id="a809f-128">次の表に、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a809f-128">The following table shows the properties that are required when you create the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span></span>
+<span data-ttu-id="fe691-128">次の表に、 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="fe691-128">The following table shows the properties that are required when you create the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span></span>
 
-|<span data-ttu-id="a809f-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a809f-129">Property</span></span>|<span data-ttu-id="a809f-130">型</span><span class="sxs-lookup"><span data-stu-id="a809f-130">Type</span></span>|<span data-ttu-id="a809f-131">説明</span><span class="sxs-lookup"><span data-stu-id="a809f-131">Description</span></span>|
+|<span data-ttu-id="fe691-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fe691-129">Property</span></span>|<span data-ttu-id="fe691-130">型</span><span class="sxs-lookup"><span data-stu-id="fe691-130">Type</span></span>|<span data-ttu-id="fe691-131">説明</span><span class="sxs-lookup"><span data-stu-id="fe691-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a809f-132">id</span><span class="sxs-lookup"><span data-stu-id="a809f-132">id</span></span>|<span data-ttu-id="a809f-133">文字列</span><span class="sxs-lookup"><span data-stu-id="a809f-133">String</span></span>|<span data-ttu-id="a809f-134">サイドローディングキーの一意 Id。</span><span class="sxs-lookup"><span data-stu-id="a809f-134">Side Loading Key Unique Id.</span></span>|
-|<span data-ttu-id="a809f-135">value</span><span class="sxs-lookup"><span data-stu-id="a809f-135">value</span></span>|<span data-ttu-id="a809f-136">文字列</span><span class="sxs-lookup"><span data-stu-id="a809f-136">String</span></span>|<span data-ttu-id="a809f-137">サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。</span><span class="sxs-lookup"><span data-stu-id="a809f-137">Side Loading Key Value, it is 5x5 value, seperated by hiphens.</span></span>|
-|<span data-ttu-id="a809f-138">displayName</span><span class="sxs-lookup"><span data-stu-id="a809f-138">displayName</span></span>|<span data-ttu-id="a809f-139">String</span><span class="sxs-lookup"><span data-stu-id="a809f-139">String</span></span>|<span data-ttu-id="a809f-140">ITPro 管理者に表示されるサイドローディングキー名。</span><span class="sxs-lookup"><span data-stu-id="a809f-140">Side Loading Key Name displayed to the ITPro Admins.</span></span>|
-|<span data-ttu-id="a809f-141">説明</span><span class="sxs-lookup"><span data-stu-id="a809f-141">description</span></span>|<span data-ttu-id="a809f-142">String</span><span class="sxs-lookup"><span data-stu-id="a809f-142">String</span></span>|<span data-ttu-id="a809f-143">ITPro 管理者に表示されるサイドローディングキーの説明。</span><span class="sxs-lookup"><span data-stu-id="a809f-143">Side Loading Key description displayed to the ITPro Admins..</span></span>|
-|<span data-ttu-id="a809f-144">totalactivation</span><span class="sxs-lookup"><span data-stu-id="a809f-144">totalActivation</span></span>|<span data-ttu-id="a809f-145">Int32</span><span class="sxs-lookup"><span data-stu-id="a809f-145">Int32</span></span>|<span data-ttu-id="a809f-146">ITPro 管理者に表示されるサイドローディングキーの合計です。</span><span class="sxs-lookup"><span data-stu-id="a809f-146">Side Loading Key Total Activation displayed to the ITPro Admins.</span></span>|
-|<span data-ttu-id="a809f-147">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="a809f-147">lastUpdatedDateTime</span></span>|<span data-ttu-id="a809f-148">文字列</span><span class="sxs-lookup"><span data-stu-id="a809f-148">String</span></span>|<span data-ttu-id="a809f-149">サイドローディングキー最終更新日が ITPro の管理者に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a809f-149">Side Loading Key Last Updated Date displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="fe691-132">id</span><span class="sxs-lookup"><span data-stu-id="fe691-132">id</span></span>|<span data-ttu-id="fe691-133">String</span><span class="sxs-lookup"><span data-stu-id="fe691-133">String</span></span>|<span data-ttu-id="fe691-134">サイドローディングキーの一意 Id。</span><span class="sxs-lookup"><span data-stu-id="fe691-134">Side Loading Key Unique Id.</span></span>|
+|<span data-ttu-id="fe691-135">value</span><span class="sxs-lookup"><span data-stu-id="fe691-135">value</span></span>|<span data-ttu-id="fe691-136">文字列</span><span class="sxs-lookup"><span data-stu-id="fe691-136">String</span></span>|<span data-ttu-id="fe691-137">サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。</span><span class="sxs-lookup"><span data-stu-id="fe691-137">Side Loading Key Value, it is 5x5 value, seperated by hiphens.</span></span>|
+|<span data-ttu-id="fe691-138">displayName</span><span class="sxs-lookup"><span data-stu-id="fe691-138">displayName</span></span>|<span data-ttu-id="fe691-139">String</span><span class="sxs-lookup"><span data-stu-id="fe691-139">String</span></span>|<span data-ttu-id="fe691-140">ITPro 管理者に表示されるサイドローディングキー名。</span><span class="sxs-lookup"><span data-stu-id="fe691-140">Side Loading Key Name displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="fe691-141">description</span><span class="sxs-lookup"><span data-stu-id="fe691-141">description</span></span>|<span data-ttu-id="fe691-142">String</span><span class="sxs-lookup"><span data-stu-id="fe691-142">String</span></span>|<span data-ttu-id="fe691-143">ITPro 管理者に表示されるサイドローディングキーの説明。</span><span class="sxs-lookup"><span data-stu-id="fe691-143">Side Loading Key description displayed to the ITPro Admins..</span></span>|
+|<span data-ttu-id="fe691-144">totalactivation</span><span class="sxs-lookup"><span data-stu-id="fe691-144">totalActivation</span></span>|<span data-ttu-id="fe691-145">Int32</span><span class="sxs-lookup"><span data-stu-id="fe691-145">Int32</span></span>|<span data-ttu-id="fe691-146">ITPro 管理者に表示されるサイドローディングキーの合計です。</span><span class="sxs-lookup"><span data-stu-id="fe691-146">Side Loading Key Total Activation displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="fe691-147">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="fe691-147">lastUpdatedDateTime</span></span>|<span data-ttu-id="fe691-148">String</span><span class="sxs-lookup"><span data-stu-id="fe691-148">String</span></span>|<span data-ttu-id="fe691-149">サイドローディングキー最終更新日が ITPro の管理者に表示されます。</span><span class="sxs-lookup"><span data-stu-id="fe691-149">Side Loading Key Last Updated Date displayed to the ITPro Admins.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a809f-150">応答</span><span class="sxs-lookup"><span data-stu-id="a809f-150">Response</span></span>
-<span data-ttu-id="a809f-151">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a809f-151">If successful, this method returns a `200 OK` response code and an updated [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fe691-150">応答</span><span class="sxs-lookup"><span data-stu-id="fe691-150">Response</span></span>
+<span data-ttu-id="fe691-151">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="fe691-151">If successful, this method returns a `200 OK` response code and an updated [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a809f-152">例</span><span class="sxs-lookup"><span data-stu-id="a809f-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fe691-152">例</span><span class="sxs-lookup"><span data-stu-id="fe691-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a809f-153">要求</span><span class="sxs-lookup"><span data-stu-id="a809f-153">Request</span></span>
-<span data-ttu-id="a809f-154">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a809f-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="fe691-153">要求</span><span class="sxs-lookup"><span data-stu-id="fe691-153">Request</span></span>
+<span data-ttu-id="fe691-154">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fe691-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 246
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a809f-155">応答</span><span class="sxs-lookup"><span data-stu-id="a809f-155">Response</span></span>
-<span data-ttu-id="a809f-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a809f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fe691-155">応答</span><span class="sxs-lookup"><span data-stu-id="fe691-155">Response</span></span>
+<span data-ttu-id="fe691-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fe691-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

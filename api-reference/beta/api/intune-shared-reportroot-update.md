@@ -5,31 +5,31 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 3127ca7804883c5e29fe91cf5e21bb15240a1314
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526951"
 ---
-# <a name="update-reportroot"></a><span data-ttu-id="6590c-103">reportRoot の更新</span><span class="sxs-lookup"><span data-stu-id="6590c-103">Update reportRoot</span></span>
+# <a name="update-reportroot"></a><span data-ttu-id="a1be3-103">reportRoot の更新</span><span class="sxs-lookup"><span data-stu-id="a1be3-103">Update reportRoot</span></span>
 
-> <span data-ttu-id="6590c-104">**重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6590c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6590c-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6590c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a1be3-104">**重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a1be3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a1be3-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a1be3-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6590c-106">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6590c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a1be3-106">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a1be3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6590c-107">[reportRoot](../resources/intune-shared-reportroot.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="6590c-107">Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6590c-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="6590c-108">Prerequisites</span></span>
-<span data-ttu-id="6590c-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6590c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a1be3-107">[reportRoot](../resources/intune-shared-reportroot.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a1be3-107">Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a1be3-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="a1be3-108">Prerequisites</span></span>
+<span data-ttu-id="a1be3-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a1be3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6590c-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6590c-111">Permission type</span></span>|<span data-ttu-id="6590c-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="6590c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a1be3-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a1be3-111">Permission type</span></span>|<span data-ttu-id="a1be3-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a1be3-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6590c-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6590c-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="6590c-114">&nbsp; &nbsp; **デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="6590c-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="6590c-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6590c-115">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-| <span data-ttu-id="6590c-116">&nbsp; &nbsp; **トラブルシューティング**</span><span class="sxs-lookup"><span data-stu-id="6590c-116">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="6590c-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6590c-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="6590c-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6590c-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6590c-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6590c-119">Not supported.</span></span>|
-|<span data-ttu-id="6590c-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6590c-120">Application</span></span>|<span data-ttu-id="6590c-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6590c-121">Not supported.</span></span>|
+|<span data-ttu-id="a1be3-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a1be3-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="a1be3-114">&nbsp; &nbsp; **デバイス構成**</span><span class="sxs-lookup"><span data-stu-id="a1be3-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="a1be3-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1be3-115">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+| <span data-ttu-id="a1be3-116">&nbsp; &nbsp; **トラブルシューティング**</span><span class="sxs-lookup"><span data-stu-id="a1be3-116">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="a1be3-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1be3-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="a1be3-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a1be3-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a1be3-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a1be3-119">Not supported.</span></span>|
+|<span data-ttu-id="a1be3-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a1be3-120">Application</span></span>|<span data-ttu-id="a1be3-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a1be3-121">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6590c-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6590c-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1be3-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a1be3-122">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,29 +38,29 @@ ms.locfileid: "30972810"
 PATCH /reports
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6590c-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6590c-123">Request headers</span></span>
-|<span data-ttu-id="6590c-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6590c-124">Header</span></span>|<span data-ttu-id="6590c-125">値</span><span class="sxs-lookup"><span data-stu-id="6590c-125">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a1be3-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a1be3-123">Request headers</span></span>
+|<span data-ttu-id="a1be3-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a1be3-124">Header</span></span>|<span data-ttu-id="a1be3-125">値</span><span class="sxs-lookup"><span data-stu-id="a1be3-125">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6590c-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6590c-126">Authorization</span></span>|<span data-ttu-id="6590c-127">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="6590c-127">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6590c-128">承諾</span><span class="sxs-lookup"><span data-stu-id="6590c-128">Accept</span></span>|<span data-ttu-id="6590c-129">application/json</span><span class="sxs-lookup"><span data-stu-id="6590c-129">application/json</span></span>|
+|<span data-ttu-id="a1be3-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1be3-126">Authorization</span></span>|<span data-ttu-id="a1be3-127">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a1be3-127">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a1be3-128">承諾</span><span class="sxs-lookup"><span data-stu-id="a1be3-128">Accept</span></span>|<span data-ttu-id="a1be3-129">application/json</span><span class="sxs-lookup"><span data-stu-id="a1be3-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6590c-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="6590c-130">Request body</span></span>
-<span data-ttu-id="6590c-131">要求本文で、[reportRoot](../resources/intune-shared-reportroot.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6590c-131">In the request body, supply a JSON representation for the [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a1be3-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="a1be3-130">Request body</span></span>
+<span data-ttu-id="a1be3-131">要求本文で、[reportRoot](../resources/intune-shared-reportroot.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a1be3-131">In the request body, supply a JSON representation for the [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
 
-<span data-ttu-id="6590c-132">次の表に、[reportRoot](../resources/intune-shared-reportroot.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="6590c-132">The following table shows the properties that are required when you create the [reportRoot](../resources/intune-shared-reportroot.md).</span></span>
+<span data-ttu-id="a1be3-132">次の表に、[reportRoot](../resources/intune-shared-reportroot.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a1be3-132">The following table shows the properties that are required when you create the [reportRoot](../resources/intune-shared-reportroot.md).</span></span>
 
-|<span data-ttu-id="6590c-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6590c-133">Property</span></span>|<span data-ttu-id="6590c-134">型</span><span class="sxs-lookup"><span data-stu-id="6590c-134">Type</span></span>|<span data-ttu-id="6590c-135">説明</span><span class="sxs-lookup"><span data-stu-id="6590c-135">Description</span></span>|
+|<span data-ttu-id="a1be3-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a1be3-133">Property</span></span>|<span data-ttu-id="a1be3-134">型</span><span class="sxs-lookup"><span data-stu-id="a1be3-134">Type</span></span>|<span data-ttu-id="a1be3-135">説明</span><span class="sxs-lookup"><span data-stu-id="a1be3-135">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6590c-136">id</span><span class="sxs-lookup"><span data-stu-id="6590c-136">id</span></span>|<span data-ttu-id="6590c-137">String</span><span class="sxs-lookup"><span data-stu-id="6590c-137">String</span></span>|<span data-ttu-id="6590c-138">このエンティティの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="6590c-138">The unique identifier for this entity.</span></span>|
+|<span data-ttu-id="a1be3-136">id</span><span class="sxs-lookup"><span data-stu-id="a1be3-136">id</span></span>|<span data-ttu-id="a1be3-137">String</span><span class="sxs-lookup"><span data-stu-id="a1be3-137">String</span></span>|<span data-ttu-id="a1be3-138">このエンティティの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="a1be3-138">The unique identifier for this entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6590c-139">応答</span><span class="sxs-lookup"><span data-stu-id="6590c-139">Response</span></span>
-<span data-ttu-id="6590c-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [reportRoot](../resources/intune-shared-reportroot.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6590c-140">If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a1be3-139">応答</span><span class="sxs-lookup"><span data-stu-id="a1be3-139">Response</span></span>
+<span data-ttu-id="a1be3-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [reportRoot](../resources/intune-shared-reportroot.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a1be3-140">If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6590c-141">例</span><span class="sxs-lookup"><span data-stu-id="6590c-141">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6590c-142">要求</span><span class="sxs-lookup"><span data-stu-id="6590c-142">Request</span></span>
-<span data-ttu-id="6590c-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6590c-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a1be3-141">例</span><span class="sxs-lookup"><span data-stu-id="a1be3-141">Example</span></span>
+### <a name="request"></a><span data-ttu-id="a1be3-142">要求</span><span class="sxs-lookup"><span data-stu-id="a1be3-142">Request</span></span>
+<span data-ttu-id="a1be3-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a1be3-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/reports
 Content-type: application/json
@@ -69,8 +69,8 @@ Content-length: 2
 {}
 ```
 
-### <a name="response"></a><span data-ttu-id="6590c-144">応答</span><span class="sxs-lookup"><span data-stu-id="6590c-144">Response</span></span>
-<span data-ttu-id="6590c-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6590c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a1be3-144">応答</span><span class="sxs-lookup"><span data-stu-id="a1be3-144">Response</span></span>
+<span data-ttu-id="a1be3-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a1be3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
