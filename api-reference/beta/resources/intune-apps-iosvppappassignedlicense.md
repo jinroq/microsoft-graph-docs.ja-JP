@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 162eaeebd8c678bf29b3b40729114f67d1325c86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552262"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense リソースの種類
 
@@ -32,7 +32,7 @@ iOS Volume Purchase Program ライセンスの割り当て。 このクラスは
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|文字列|ユーザーの電子メールアドレス。|
+|userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
 |userName|文字列型 (String)|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|

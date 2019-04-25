@@ -1,15 +1,15 @@
 ---
-title: SynchronizationSchema を取得します。
+title: 同期スキーマを取得する
 description: 指定された同期ジョブまたはテンプレートのスキーマを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 050357c94997ca7a45d9ca09bf164638072d1354
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537007"
 ---
-# <a name="get-synchronizationschema"></a>SynchronizationSchema を取得します。
+# <a name="get-synchronizationschema"></a>同期スキーマを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[synchronizationSchema](../resources/synchronization-synchronizationschema.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[同期スキーマ](../resources/synchronization-synchronizationschema.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>応答
 応答の例を次に示します。
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

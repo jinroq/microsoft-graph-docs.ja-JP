@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542889"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -36,10 +36,10 @@ ms.locfileid: "30800013"
 |[educationCategory を作成する](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | このクラスの新しい**educationCategory**を作成します。|
 |[カテゴリの一覧表示](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md)コレクション | このクラスに属する**educationCategory**オブジェクトのリストを取得します。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
-|[Delete](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
+|[削除](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id| String| クラスの一意の識別子。|
 |description|String| クラスの説明。|

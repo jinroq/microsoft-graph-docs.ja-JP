@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972587"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550435"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 
@@ -22,7 +22,7 @@ ms.locfileid: "27972587"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  EduRoster.ReadBasic  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません  |
-|アプリケーション | EduRoster.Read.All、EduRoster.ReadWrite.All と Member.Read.Hidden | 
+|アプリケーション | eduroster.readbasic、eduroster.readbasic、およびすべての正の値を取得します。 | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

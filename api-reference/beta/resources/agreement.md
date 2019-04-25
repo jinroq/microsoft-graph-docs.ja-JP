@@ -1,29 +1,29 @@
 ---
-title: 契約のリソースの種類
-description: テナントのカスタマイズ可能な使用許諾契約書が作成され、Azure Active Directory (AD の Azure) を使用して管理する条件を表します。 機能を管理、Azure Active Directory の使用条件に従って、シナリオを作成し、次のメソッドを使用できます。
+title: アグリーメントリソースの種類
+description: azure Active Directory (azure AD) で作成および管理されるテナントのカスタマイズ可能な利用規約を表します。 次のメソッドを使用すると、シナリオに従って、Azure Active Directory の使用条件の作成と管理を行うことができます。
 localization_priority: Normal
 ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535749"
 ---
-# <a name="agreement-resource-type"></a>契約のリソースの種類
+# <a name="agreement-resource-type"></a>アグリーメントリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントのカスタマイズ可能な使用許諾契約書が作成され、Azure Active Directory (AD の Azure) を使用して管理する条件を表します。 作成し、シナリオに基づく[Azure Active Directory の使用条件の機能](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)を管理するのには、次のメソッドを使用できます。
+azure Active Directory (azure AD) で作成および管理されるテナントのカスタマイズ可能な利用規約を表します。 次のメソッドを使用すると、シナリオに従って、 [Azure Active Directory の使用条件の](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)作成と管理を行うことができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型 | 説明 |
 |:-------------|:------------|:------------|
-| [契約書を作成します。](../api/agreement-post-agreements.md) | [契約](agreement.md) | 契約コレクションへの投稿には、新しい契約を作成します。 |
-| [リスト契約](../api/agreement-list.md) | [契約](agreement.md)コレクション | 契約オブジェクト コレクションを取得します。 |
-| [契約を取得します。](../api/agreement-get.md) | [契約](agreement.md) | 契約オブジェクトのプロパティと関係を参照してください。 |
-| [契約を更新します。](../api/agreement-update.md) | [契約](agreement.md) | 契約オブジェクトを更新します。 |
-| [契約を削除します。](../api/agreement-delete.md) | なし | 契約オブジェクトを削除します。 |
+| [契約の作成](../api/agreement-post-agreements.md) | [保証](agreement.md) | アグリーメントコレクションに投稿して、新しい契約を作成します。 |
+| [契約を一覧表示する](../api/agreement-list.md) | [アグリーメント](agreement.md)コレクション | アグリーメントオブジェクトのコレクションを取得します。 |
+| [契約を取得する](../api/agreement-get.md) | [保証](agreement.md) | アグリーメントオブジェクトのプロパティとリレーションシップを読み取ります。 |
+| [契約を更新する](../api/agreement-update.md) | [保証](agreement.md) | アグリーメントオブジェクトを更新します。 |
+| [契約を削除する](../api/agreement-delete.md) | なし | アグリーメントオブジェクトを削除します。 |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
@@ -32,14 +32,14 @@ ms.locfileid: "29513852"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|displayName|String|契約書の名前を表示します。|
+|displayName|String|アグリーメントの表示名。|
 |id|String| 読み取り専用です。|
-|isViewingBeforeAcceptanceRequired|ブール値|ユーザーを展開し、受け入れる前に契約書を表示するかどうかを示します。|
+|isViewingBeforeAcceptanceRequired|ブール値|ユーザーが同意する前に、契約を展開して表示する必要があるかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型        | 説明 |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md)コレクション|読み取り専用です。 Pdf は、本契約にリンクされています。|
+|files|[agreementFile](agreementfile.md)コレクション|読み取り専用。 このアグリーメントにリンクされている pdf。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 33f1167d7317f941ebfa79b372e9cf575c14989b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914158"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548503"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions リソースの種類
 
@@ -21,14 +21,14 @@ ms.locfileid: "27914158"
 |:---------------|:--------|:----------|
 | assignCategories | String コレクション | メッセージに割り当てられるカテゴリの一覧です。 |
 | copyToFolder | String | メッセージのコピー先のフォルダーの ID です。 |
-| delete | Boolean | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
-| forwardAsAttachmentTo | [recipient](recipient.md) コレクション | 添付ファイルとしてメッセージを転送する受信者の電子メール アドレスです。 |
+| delete | ブール値 | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
+| forwardAsAttachmentTo | [recipient](recipient.md) collection | 添付ファイルとしてメッセージを転送する受信者の電子メール アドレスです。 |
 | forwardTo | [recipient](recipient.md) コレクション | メッセージを転送する受信者の電子メール アドレスです。 |
-| markAsRead | Boolean | メッセージを開封済みにする必要があるかどうかを示します。 |
+| markAsRead | ブール値 | メッセージを開封済みにする必要があるかどうかを示します。 |
 | markImportance | importance | メッセージの重要度を設定します。使用可能な値は、`low`、`normal`、`high` です。 |
 | moveToFolder |  String| メッセージ移動先のフォルダーの ID です。 |
-| permanentDelete | Boolean | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
-| redirectTo | [recipient](recipient.md) collection | メッセージのリダイレクト先の電子メール アドレス。 |
+| permanentDelete | ブール値 | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
+| redirectTo | [recipient](recipient.md) collection | メッセージのリダイレクト先となる電子メールアドレス。 |
 | stopProcessingRules | Boolean | 後続のルールを評価する必要があるかどうかを示します。 |
 
 ## <a name="json-representation"></a>JSON 表記

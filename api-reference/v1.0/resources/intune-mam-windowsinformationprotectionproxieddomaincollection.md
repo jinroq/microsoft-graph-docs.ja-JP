@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 026a69dc7697a0b779d72dfcab1695cf8c219d83
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264331"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550561"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection リソースの種類
 
@@ -20,7 +20,7 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|表示名|
+|displayName|String|表示名|
 |proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) コレクション|プロキシ化されたドメインのコレクション|
 
 ## <a name="relationships"></a>関係

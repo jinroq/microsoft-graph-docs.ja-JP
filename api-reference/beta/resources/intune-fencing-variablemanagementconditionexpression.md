@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 548c0ffd27f76dacf5f88d9e783ce793e64cc434
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802759"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552890"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31802759"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|managementconditionid|文字列|式の評価に使用される管理条件 id。|
+|managementconditionid|String|式の評価に使用される管理条件 id。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

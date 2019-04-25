@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b506ff636cf2a44b466d531f60924cd7eaa2c7b3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775549"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550708"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>devicemanagementsettingdependency リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "31775549"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|definitionId|文字列|設定の設定定義 ID が依存している|
+|definitionId|String|設定の設定定義 ID が依存している|
 |式|[devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|依存関係設定値の制約のコレクション|
 
 ## <a name="relationships"></a>リレーションシップ

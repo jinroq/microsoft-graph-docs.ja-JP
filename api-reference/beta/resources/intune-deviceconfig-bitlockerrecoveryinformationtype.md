@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e46dfbecf3c8018cbf0d73dc61721046c43e5b8a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789760"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549437"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>bitlockerrecoveryinformationtype 列挙型
 
@@ -22,8 +22,8 @@ bitlockerrecoveryinformationtype 型
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|passwordandkey|1-d|回復パスワードとキーパッケージを保存します。|
-|passwordonly|pbm-2|回復パスワードのみを保存します。|
+|passwordandkey|1 |回復パスワードとキーパッケージを保存します。|
+|passwordonly|2 |回復パスワードのみを保存します。|
 
 
 

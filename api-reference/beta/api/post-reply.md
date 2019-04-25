@@ -1,15 +1,15 @@
 ---
 title: '投稿: 返信'
-description: 'グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。 指定できます。 '
+description: 'グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。 を指定できます。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: dfdc25b3e99c26d266631a331d7d58c73042e64b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511136"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538599"
 ---
 # <a name="post-reply"></a>投稿: 返信
 

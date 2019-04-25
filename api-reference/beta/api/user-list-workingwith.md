@@ -1,21 +1,21 @@
 ---
-title: リストの操作
-description: ユーザーが使用されているユーザーのリストの計算の把握。
+title: リスト workingWith
+description: ユーザーが作業しているユーザーのリストについて、計算された洞察。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ca5fdd4602d109d98002c0ef54fde5ad341e1903
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521622"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547693"
 ---
-# <a name="list-workingwith"></a>リストの操作
+# <a name="list-workingwith"></a>リスト workingWith
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーが使用されているユーザーのリストの計算の把握。
+ユーザーが作業しているユーザーのリストについて、計算された洞察。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答の本体で、200 OK 応答コードと[ユーザー](../resources/user.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッドは 200 OK 応答コードと、応答本文で[User](../resources/user.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

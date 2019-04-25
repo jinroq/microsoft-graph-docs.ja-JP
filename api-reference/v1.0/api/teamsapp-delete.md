@@ -1,27 +1,27 @@
 ---
 title: アクセス許可
-description: '組織のアプリケーション カタログ (テナント アプリケーション カタログ) からアプリケーションを削除します。 '
+description: '組織のアプリカタログ (テナントのアプリカタログ) からアプリを削除します。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 49a45bbd8062aeea0de2d82cfae0032990af65e7
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016682"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549014"
 ---
-# <a name="remove-an-app-from-your-organizations-app-catalog"></a>組織のアプリケーションのカタログからアプリケーションを削除します。
+# <a name="remove-an-app-from-your-organizations-app-catalog"></a>組織のアプリカタログからアプリを削除する
 
 
 
-組織のアプリケーション カタログ (テナント アプリケーション カタログ) から[アプリケーション](../resources/teamsapp.md)を削除します。 組織のアプリケーションのカタログからアプリケーションを削除するのには次のように指定します。 `organization` [teamsCatalogApp](../resources/teamsapp.md)リソースで**distributionMethod**とします。
+組織のアプリカタログ (テナントのアプリカタログ) から[アプリ](../resources/teamsapp.md)を削除します。 組織のアプリカタログからアプリを削除するには、 `organization` teamsCatalogApp リソース**** で、を " [](../resources/teamsapp.md) " として指定します。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」を参照してください。
 
->**注:** グローバル管理者だけでは、この API を呼び出すことができます。 
+>**注:** この API は、グローバル管理者のみが呼び出すことができます。 
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)|
 |:----------------------------------     |:-------------|
@@ -45,7 +45,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 なし。
 
->**注:** 更新するにはアプリケーションを参照するための[リストには、アプリケーションが公開されて](./teamsapp-list.md)呼び出しから返された ID を使用します。 Zip アプリケーション パッケージのマニフェストの ID を使用しません。
+>**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 zip アプリパッケージのマニフェストからの ID は使用しないでください。
 
 ## <a name="response"></a>応答
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 51815dffc0048ec88b81cbe6034a42e108e5b222
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550582"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range リソースの種類
 
@@ -25,7 +25,7 @@ IPv6 範囲の定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|lowerAddress|文字列|小さいアドレス。|
+|lowerAddress|String|小さいアドレス。|
 |upperAddress|文字列型 (String)|上住所|
 
 ## <a name="relationships"></a>リレーションシップ

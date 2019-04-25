@@ -1,17 +1,17 @@
 ---
-title: Create securityAction
+title: securityAction を作成する
 description: 新しい securityAction オブジェクトを作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 2d8b957df914225231623f0edbc633182393dff8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545595"
 ---
-# <a name="create-securityaction"></a>Create securityAction
+# <a name="create-securityaction"></a>securityAction を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +23,9 @@ ms.locfileid: "30482015"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | securityactions |
+| 委任 (職場または学校のアカウント)     | サポートされていません。 |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | securityactions |
+| アプリケーション                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -39,7 +39,7 @@ POST /security/securityActions
 
 | 名前          | 説明   |
 |:--------------|:--------------|
-| 承認 | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 

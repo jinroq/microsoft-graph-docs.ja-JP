@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3ddb69d3f01c816c592617cb75ed6f9b9877f856
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534487"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation リソースの種類
 
@@ -22,13 +22,13 @@ Win32 アプリ用の MSI アプリのプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|productCode|文字列|MSI 製品コード。|
+|productCode|String|MSI 製品コード。|
 |productVersion|String|MSI 製品バージョン。|
-|upgradeCode|文字列|MSI アップグレードコード。|
-|requiresReboot|Boolean|MSI アプリがインストールを完了するためにコンピューターを再起動する必要があるかどうか。|
+|upgradeCode|String|MSI アップグレードコード。|
+|requiresReboot|ブール値|MSI アプリがインストールを完了するためにコンピューターを再起動する必要があるかどうか。|
 |packagetype|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI パッケージの種類。 使用可能な値は、`perMachine`、`perUser`、`dualPurpose` です。|
 |productName|文字列型 (String)|MSI 製品名。|
-|publisher|文字列|MSI パブリッシャー。|
+|publisher|String|MSI パブリッシャー。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

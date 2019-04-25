@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: af1fe9a0b13aeb20a269b39bac8966bcc31508b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937419"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551373"
 ---
 # <a name="delete-calendar"></a>Delete calendar
 
@@ -24,7 +24,8 @@ ms.locfileid: "27937419"
 |アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->デフォルトの[calendarGroup](../resources/calendargroup.md)での既定の予定表以外のユーザーの[予定表](../resources/calendar.md)です。
+<!-- { "blockType": "ignored" } -->
+既定 [calendarGroup](../resources/calendargroup.md) 内の既定の予定表以外のユーザーの [予定表](../resources/calendar.md)。
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
@@ -38,7 +39,7 @@ DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前           |  種類    | 説明|
+| 名前           |  型    | 説明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | ベアラー {トークン}。必須。 |
 

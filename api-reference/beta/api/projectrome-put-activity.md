@@ -1,20 +1,18 @@
 ---
 title: アクティビティを作成または置換する
-description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
+description: アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、deep insert を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538485"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、[深い挿入](#example-2-deep-insert)を使用できます。
+アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、 [deep insert](#example-2-deep-insert)を使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -34,7 +32,7 @@ ms.locfileid: "29967341"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注:** URL に appActivityId を (RFC 2396 の予約文字は、16 進表現に変換する必要がありますを除くすべての文字) を URL セーフである必要がありますが、元の appActivityId は、URL セーフである必要はありません。
+> **注:** url の appactivityid は、url セーフである必要があります (RFC 2396 の予約されていない文字を除くすべての文字を16進表記に変換する必要があります) が、元の appactivityid を url セーフにする必要はありません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -44,15 +42,15 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、[アクティビティ](../resources/projectrome-activity.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [activity](../resources/projectrome-activity.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `201 Created` 、活動が作成された場合の応答コードまたは`200 OK`アクティビティが表示された場合。
+成功した場合、このメソッド`201 Created`は、アクティビティが作成された`200 OK`場合、またはアクティビティが置き換えられた場合に、応答コードを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-create-an-activity"></a>例 1: アクティビティを作成します。
+### <a name="example-1-create-an-activity"></a>例 1: アクティビティを作成する
 
 #### <a name="request"></a>要求
 
@@ -64,7 +62,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -85,7 +83,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -113,7 +111,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -162,9 +160,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a>ディープ挿入の例 2:
+### <a name="example-2-deep-insert"></a>例 2: Deep insert
 
-次の使用例は、1 つの要求で、新しいアクティビティとそのアクティビティの履歴項目を作成します。
+この例では、1つの要求で、そのアクティビティの新しいアクティビティと履歴アイテムを作成します。
 
 #### <a name="request"></a>要求
 
@@ -176,7 +174,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -230,7 +228,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -294,15 +292,10 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-put-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

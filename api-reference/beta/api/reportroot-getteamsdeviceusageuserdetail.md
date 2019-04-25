@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 06689e29143afbc318ad1c9e0866db7c6f7658ff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537785"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -23,7 +23,7 @@ ms.locfileid: "29573173"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -47,7 +47,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 
 > **注:** URL に期間または日付を設定する必要があります。
 
-このメソッドは、応答をカスタマイズするための `$format`、`$top`、`$skipToken` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、テキストまたは csv です。 ただし、出力の種類を指定する場合は、設定をテキストまたは csv またはアプリケーションまたは json OData $format クエリ パラメーターを使用することができます。
+このメソッドは、応答をカスタマイズするための `$format`、`$top`、`$skipToken` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、text/csv です。 ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -80,15 +80,15 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 
 ### <a name="json"></a>JSON
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**[teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[teamsdevice使い方 userdetail](../resources/teamsdeviceusageuserdetail.md)** オブジェクトを返します。
 
-この要求の既定のページ サイズは、2000 のアイテムです。
+この要求の既定のページサイズは2000アイテムです。
 
 ## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 
-次に、CSV を出力する例を示します。
+CSV を出力する例を次に示します。
 
 #### <a name="request"></a>要求
 
@@ -132,7 +132,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
 
 ### <a name="json"></a>JSON
 
-次に、JSON を取得する例を示します。
+次の例は、JSON を返します。
 
 #### <a name="request"></a>要求
 

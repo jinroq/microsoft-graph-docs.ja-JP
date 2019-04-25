@@ -1,19 +1,19 @@
 ---
-title: SynchronizationJob を再起動します。
-description: ディレクトリ内のすべてのオブジェクトを再処理することを強制する、同期ジョブを再起動します。 必要に応じて既存の同期の状態と以前のエラーをクリアします。
+title: 同期ジョブを再開します。
+description: 同期ジョブを再開して、ディレクトリ内のすべてのオブジェクトを強制的に再処理するようにします。 必要に応じて、既存の同期状態および以前のエラーをクリアします。
 localization_priority: Normal
 ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526726"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537100"
 ---
-# <a name="restart-synchronizationjob"></a>SynchronizationJob を再起動します。
+# <a name="restart-synchronizationjob"></a>同期ジョブを再開します。
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリ内のすべてのオブジェクトを再処理することを強制する、同期ジョブを再起動します。 必要に応じて既存の同期の状態と以前のエラーをクリアします。
+同期ジョブを再開して、ディレクトリ内のすべてのオブジェクトを強制的に再処理するようにします。 必要に応じて、既存の同期状態および以前のエラーをクリアします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,15 +38,15 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、次のパラメーターを使用して JSON オブジェクトを提供します。
+要求本文で、次のパラメーターを使用して JSON オブジェクトを指定します。
 
 | パラメーター     | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |条件を再起動します。|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |再起動の条件|
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`204 No Content`応答します。 応答本体には何もは返されません。
+成功した場合は`204 No Content` 、応答を返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 

@@ -1,26 +1,26 @@
 ---
-title: PrivilegedRoleAssignmentRequest を作成します。
-description: Privilegedroleassignmentrequest オブジェクトを作成します。
+title: privilegedRoleAssignmentRequest を作成する
+description: privilegedroleassignmentrequest オブジェクトを作成します。
 localization_priority: Normal
 ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538653"
 ---
-# <a name="create-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest を作成します。
+# <a name="create-privilegedroleassignmentrequest"></a>privilegedRoleAssignmentRequest を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトを作成します。
+[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -36,39 +36,39 @@ POST /privilegedRoleAssignmentRequests
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトの JSON 表現を指定します。 
+要求本文で、 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトの JSON 表記を指定します。 
 
 | プロパティ     | 型    |  説明|
 |:---------------|:--------|:----------|
-|roleId|String|ロールの ID です。 必須。|
-|type|String|表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。 必須です。|
-|assignmentState|String|割り当ての状態です。 値は、`Eligible`対象となる割り当ての`Active`が直接割り当てられている場合 -`Active`管理者、またはユーザーが対象となる割り当ての有効化します。 可能な値は、``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired` です。 必須です。|
-|理由|String|理由は、監査の役割の割り当て要求に指定して目的を確認する必要があります。|
-|スケジュール|[governanceSchedule](../resources/governanceschedule.md)|役割の割り当て要求のスケジュールです。|
+|roleId|String|ロールの ID。 必須。|
+|type|String|役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。「ユーザーを役割に追加する」。`UserAdd`: ユーザーが役割の割り当てを追加します。 必須です。|
+|割り当ての状態|String|割り当ての状態を指定します。 この値は、 `Eligible`管理者に`Active`よって直接割り当てら`Active`れている場合、またはユーザーによる資格のある割り当てに対してアクティブ化されている場合に、対象となる割り当てに使用できます。 使用可能な値は、``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired` です。 必須です。|
+|したがっ|String|監査およびレビューの目的で、役割の割り当て要求に対して理由を提供する必要があります。|
+|スケジューリング|[governanceSchedule](../resources/governanceschedule.md)|役割の割り当て要求のスケジュール。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)オブジェクトを返します。
 
 ### <a name="error-codes"></a>エラー コード
-この API 規格を取得する HTTP エラー コードです。 さらに、次の表に記載されているエラー コードを返すことです。
+この API は、その標準の HTTP エラーコードを返します。 また、次の表に示されているエラーコードを返すこともできます。
 
 |エラー コード     | エラー メッセージ              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | RoleAssignmentRequest プロパティが NULL をしました |
-| 400 BadRequest | RoleAssignmentRequest オブジェクトを逆シリアル化できません。 |
-| 400 BadRequest | RoleId は、必要があります。 |
-| 400 BadRequest | スケジュールの開始日は指定する必要があり、今よりも大きい必要があります。 |
-| 400 BadRequest | このユーザー、ロール、およびスケジュールの種類のスケジュールが既に存在します。 |
-| 400 BadRequest | 既に保留中の承認は、このユーザー、ロール、および承認の種類に存在します。 |
-| 400 BadRequest | リクエスターの理由はされていません。 |
-| 400 BadRequest | リクエスターの理由は、500 文字未満にする必要があります。 |
-| 400 BadRequest | 昇格期間は、0.5 の間で、{の設定} からである必要があります。 |
-| 400 BadRequest | スケジュールのアクティブ化と要求との間の重複があります。 |
-| 400 BadRequest | ロールが既にアクティブになっています。 |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting の情報は必要し、ライセンス認証プロセスで指定されていません。 |
-| 400 BadRequest | スケジュールのアクティブ化と要求との間の重複があります。 |
-| 403 許可されていません。 | 昇格時に、複数要素の認証が必要です。 |
-| 403 許可されていません。 | 昇格のため許可されていません。 |
+| 400 badrequest | role割り当て要求プロパティが NULL でした |
+| 400 badrequest | role割り当て要求オブジェクトをシリアル化解除できません。 |
+| 400 badrequest | RoleId が必要です。 |
+| 400 badrequest | スケジュールの開始日を指定する必要があります。これより大きい値を指定する必要があります。 |
+| 400 badrequest | このユーザー、役割、およびスケジュールの種類に対するスケジュールが既に存在します。 |
+| 400 badrequest | このユーザー、ロール、承認の種類に対して、保留中の承認が既に存在します。 |
+| 400 badrequest | 要求者の理由がありません。 |
+| 400 badrequest | 要求者の理由は、500文字未満である必要があります。 |
+| 400 badrequest | 昇格期間は0.5 と {from 設定} の間である必要があります。 |
+| 400 badrequest | スケジュールされたライセンス認証と要求の間に重複があります。 |
+| 400 badrequest | このロールは、あらかじめアクティブ化されています。 |
+| 400 badrequest | GenericElevateUserToRoleAssignments: Tickting 情報は必須であり、アクティブ化プロセスでは提供されていません。 |
+| 400 badrequest | スケジュールされたライセンス認証と要求の間に重複があります。 |
+| 403権限がありません | 昇格には多要素認証が必要です。 |
+| 403権限がありません | 昇格の代理人は許可されていません。 |
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

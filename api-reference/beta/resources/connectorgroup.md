@@ -1,15 +1,15 @@
 ---
-title: connectorGroup リソースの種類
+title: コネクタグループリソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: de405d2f0cbe0417271ab54e66c5c30073d8ee7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543393"
 ---
-# <a name="connectorgroup-resource-type"></a>connectorGroup リソースの種類
+# <a name="connectorgroup-resource-type"></a>コネクタグループリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,27 +17,27 @@ ms.locfileid: "29517499"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[ConnectorGroup を取得します。](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |ConnectorGroup オブジェクトのプロパティと関係を参照してください。|
-|[アプリケーションを作成します。](../api/connectorgroup-post-applications.md) |[application](application.md)| コネクタ グループにアプリケーションを関連付けるアプリケーションのコレクションへの投稿。|
-|[アプリケーション一覧](../api/connectorgroup-list-applications.md) |[アプリケーション](application.md)コレクション| 関連付けられているアプリケーション オブジェクトのコレクションを取得します。|
-|[コネクタを作成します。](../api/connectorgroup-post-members.md) |[Connector](connector.md)| 図形をグループ化するメンバーのコレクションへの投稿、コネクタを追加します。|
-|[メンバーを一覧表示する](../api/connectorgroup-list-members.md) |[コネクタ](connector.md)のコレクション| コネクタ オブジェクトのコレクションを取得します。|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |ConnectorGroup オブジェクトを更新します。 |
-|[Delete](../api/connectorgroup-delete.md) | なし |ConnectorGroup オブジェクトを削除します。 すべてのコネクタは、コネクタのグループを削除する前に削除をする必要があります。 |
+|[コネクタグループの取得](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |コネクタのグループオブジェクトのプロパティと関係を読み取ります。|
+|[アプリケーションを作成する](../api/connectorgroup-post-applications.md) |[アプリケーション](application.md)| アプリケーションコレクションへの投稿によって、アプリケーションをコネクタグループに関連付けます。|
+|[アプリケーションを一覧表示する](../api/connectorgroup-list-applications.md) |[アプリケーション](application.md)コレクション| 関連付けられているアプリケーションオブジェクトのコレクションを取得します。|
+|[コネクタを作成する](../api/connectorgroup-post-members.md) |[コネクター](connector.md)| members コレクションへの投稿によってコネクタをコネクタグループに追加します。|
+|[メンバーを一覧表示する](../api/connectorgroup-list-members.md) |[connector](connector.md)コレクション| コネクタオブジェクトのコレクションを取得します。|
+|[更新](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |コネクタグループオブジェクトを更新します。 |
+|[削除](../api/connectorgroup-delete.md) | なし |コネクタグループオブジェクトを削除します。 conector グループを削除する前に、すべてのコネクタを削除する必要があります。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| グループで使用するコネクタの種類です。 使用可能な値: `applicationProxy`。|
-|id|String| ConnectorGroup のオブジェクト id|
-|isDefault|ブール値| ConnectorGroup がコネクタの既定のグループであるかどうかを示します。 のみ、1 つのコネクタ グループはデフォルトの connectorGroup をすることができ、システムによって設定されます。|
-|name|String| ConnectorGroup に関連付けられている名前です。|
+|connectorGroupType|string| グループで使用されるコネクタの種類。 可能な値は`applicationProxy`次のとおりです。|
+|id|String| コネクタグループのオブジェクト id|
+|isDefault|ブール型 (Boolean)| コネクタグループが既定のコネクタグループであるかどうかを示します。 既定のコネクタグループにすることができ、システムによって設定されるのは、1つのコネクタグループのみです。|
+|name|String| コネクタグループに関連付けられている名前。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|アプリケーション|[アプリケーション](application.md)コレクション| 読み取り専用。Null 許容型。|
-|members|[コネクタ](connector.md)のコレクション| 読み取り専用です。Null 許容型。|
+|アプリケーション|[アプリケーション](application.md)コレクション| 読み取り専用。 Null 許容型。|
+|members|[connector](connector.md)コレクション| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

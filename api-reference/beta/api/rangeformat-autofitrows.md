@@ -1,15 +1,15 @@
 ---
 title: 'RangeFormat: autofitRows'
-description: 現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
+description: 現在の列のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a25fdd90f8bb0f7ad92aca5207c1529abc370a65
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517709"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546153"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 

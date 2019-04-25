@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458667"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536756"
 ---
 # <a name="delete-app-from-team"></a>チームからアプリを削除する
 
@@ -55,7 +55,7 @@ DELETE /teams/{id}/installedApps/{id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>応答
-応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

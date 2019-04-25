@@ -1,23 +1,23 @@
 ---
 title: page を作成する
-description: 既定のノートブックの既定のセクションで OneNote の新しいページを作成します。
+description: 既定のノートブックの既定のセクションに新しい OneNote ページを作成します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 799650628ae2436c2162adf2f1cbf692ee35d4f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983444"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562119"
 ---
-# <a name="create-page"></a>page を作成する
+# <a name="create-page"></a>ページを作成する
 
-既定のノートブックの既定のセクションで OneNote の新しいページを作成します。
+既定のノートブックの既定のセクションに新しい OneNote ページを作成します。
 
-既定のノートブックの別のセクションにページを作成する場合は、`sectionName` クエリ パラメーターを使用できます。例: `../onenote/pages?sectionName=My%20section`
+既定のノートブックの異なるセクションにページを作成するには、 `sectionName`クエリパラメーターを使用します。  例: `../onenote/pages?sectionName=My%20section`
 
-`POST /onenote/pages` の操作は、現在のユーザーの既定のノートブックでページを作成する場合のみに使用します。他のノートブックを対象とする場合は、[指定されたセクションでページを作成](../api/section-post-pages.md)できます。           
+この`POST /onenote/pages`操作は、現在のユーザーの既定のノートブックにページを作成するためにのみ使用されます。 他のノートブックを対象としている場合は、指定した[セクションにページを作成](../api/section-post-pages.md)できます。           
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -38,25 +38,25 @@ POST /sites/{id}/onenote/pages
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー  
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文には、ページの HTML コンテンツを指定します。
+要求本文で、ページの HTML コンテンツを指定します。
 
 本文には、要求本文に直接入力した HTML を含めることができます。または、例に示すようにマルチパート メッセージ形式を含めることもできます。バイナリ データを送信する場合は、マルチパート要求を送信する必要があります。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新規 [page](../resources/page.md) オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[page](../resources/page.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 
-`../onenote/pages` のパスで、`sectionName` クエリ パラメーターを使用して、特定のノートブックの指定したセクションにページを作成できます。例: `../onenote/pages?sectionName=My%20section`。セクションが存在しない (または名前が変更された) 場合、API は新しいセクションを作成します。
+`../onenote/pages`パスでは、 `sectionName`クエリパラメーターを使用して、既定のノートブックの特定のセクションにページを作成できます。 例: `../onenote/pages?sectionName=My%20section`。 セクションが存在しない (または名前が変更された) 場合、API は新しいセクションを作成します。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -99,8 +99,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。 注: ここに示す応答オブジェクトは、簡潔にするため切り捨てられます。 実際の呼び出しではすべてのプロパティが返されます。
-<!-- { "blockType": "ignored" } -->
+以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -1,23 +1,23 @@
 ---
 title: リスト privilegedRoleAssignments
-description: 組織のすべてのロールの割り当てに対応する、privilegedRoleAssignment オブジェクトの一覧を取得します。
+description: 組織のすべての役割の割り当てに対応する privilegedRoleAssignment オブジェクトの一覧を取得します。
 localization_priority: Normal
 ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516589"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538623"
 ---
 # <a name="list-privilegedroleassignments"></a>リスト privilegedRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-組織のすべてのロールの割り当てに対応する、 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの一覧を取得します。
+組織のすべての役割の割り当てに対応する[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは、次のロールのいずれかを持つ必要があります:_ロールの権限を持つ管理者_、_グローバル管理者_、_セキュリティ管理者_、または_セキュリティのリーダー_です。 
+リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ GET /privilegedRoleAssignments
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのコレクションを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="examples"></a>例
-### <a name="get-all-role-assignments"></a>すべてのロールの割り当てを取得します。
+### <a name="get-all-role-assignments"></a>すべての役割の割り当てを取得する
 ##### <a name="request"></a>要求
-次の使用例は、すべてのロールの割り当てを取得する要求を示しています。
+次の例は、すべての役割の割り当てを取得するための要求を示しています。
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -83,9 +83,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a>アクティブなロールの割り当てを取得します。
+### <a name="get-active-role-assignments"></a>アクティブな役割の割り当てを取得する
 ##### <a name="request"></a>要求 
-次の使用例は、クエリの有効なロールの割り当ての要求を示しています。
+次の例は、アクティブな役割の割り当てを照会する要求を示しています。
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -127,9 +127,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a>永続的な役割の割り当てを取得します。
+### <a name="get-permanent-role-assignments"></a>永続的な役割の割り当てを取得する
 ##### <a name="request"></a>要求 
-次の例では、クエリの永続的な役割の割り当ての要求、``expirationDateTime``の値は、 ``null``。
+次の例は、永続的な役割の割り当てを照会する``expirationDateTime``要求を``null``示しています。 value は次のとおりです。
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a>対象となる役割の割り当てを取得します。
+### <a name="get-eligible-role-assignments"></a>対象の役割の割り当てを取得する
 ##### <a name="request"></a>要求 
-次の使用例は、アクティブおよび非アクティブなものも含めて、クエリ対象のロールの割り当ての要求を示しています。
+次の例は、アクティブなものとアクティブでないものを含む、対象となる役割の割り当てを照会する要求を示しています。
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"

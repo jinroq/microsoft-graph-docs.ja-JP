@@ -4,45 +4,45 @@ description: Microsoft Graph リソース上のデータが変更されたとき
 localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: a8b8189780ac0b820551fb885adcf843c9ebe8f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545300"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-リスナーアプリケーションをサブスクライブして、要求された種類の変更が Microsoft Graph の指定したリソースに対して発生したときに通知を受信します。
+変更の要求された種類が Microsoft Graph の指定されたリソースに発生したときに通知を受信するため、リスナー アプリケーションに登録します。
 
 ## <a name="permissions"></a>アクセス許可
 
-サブスクリプションを作成するには、リソースに対する読み取りスコープが必要です。 たとえば、メッセージに関する通知を取得するには、アプリ`Mail.Read`にアクセス許可が必要です。 
+サブスクリプションを作成するにはリソースへの読み取りスコープが必要です。 たとえば、メッセージに関する通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。 
  
- リソースとアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+ 要求されたリソースとアクセス許可の種類 (委任またはアプリケーション) に応じて、以下の表で指定されているアクセス許可がこの API を呼び出すため必要な最小限の特権となります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | Application |
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 |[連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[ドライブ項目](../resources/driveitem.md)(ユーザーの個人用 OneDrive) | サポートされていません | Files.ReadWrite | サポートされていません |
-|[ドライブ項目](../resources/driveitem.md)(OneDrive for business) | Files.ReadWrite.All | サポートされていません | Files.ReadWrite.All |
-|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[group](../resources/group.md) | Group.Read.All | サポートされていません | Group.Read.All |
-|[グループ会話](../resources/conversation.md) | Group.Read.All | 使用不可 | 使用不可 |
-|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-|[セキュリティの警告](../resources/alert.md) | SecurityEvents.ReadWrite.All | サポートされていません | SecurityEvents.ReadWrite.All |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポート対象外 | Files.ReadWrite | サポート対象外 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
+|[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
+|[グループ会話](../resources/conversation.md) | Group.Read.All | 非サポート | 非サポート |
+|[メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[セキュリティの警告](../resources/alert.md) | SecurityEvents.ReadWrite.All | サポート対象外 | SecurityEvents.ReadWrite.All |
+|[ユーザー](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注:** OneDrive および Outlook アイテムのサブスクリプションには、追加の制限があります。 この制限は、サブスクリプションの作成と管理 (サブスクリプションの取得、更新、および削除) に適用されます。
+> **注:** OneDrive と Outlook のアイテムのサブスクリプションについては、追加の制限があります。 この制限は、サブスクリプションの作成および管理 (サブスクリプションの取得、更新、削除) に適用されます。
 
-- 個人用 OneDrive では、ルートフォルダーまたはそのドライブの任意のサブフォルダーを購読できます。 OneDrive for business では、ルートフォルダーのみをサブスクライブできます。 通知は、サブスクライブされたフォルダー、または、階層内の任意のファイル、フォルダー、またはその他の**ドライブのアイテム**インスタンスに対して、要求された種類の変更に対して送信されます。 個別のファイルなど、フォルダーではない**drive**または**drive アイテム**のインスタンスを購読することはできません。
+- 個人用 OneDrive では、そのドライブのルート フォルダーまたは任意のサブフォルダーにサブスクライブできます。 OneDrive for Business の場合、サブスクライブできるのはルート フォルダーだけです。 サブスクライブしたフォルダー、または階層内の任意のファイル、フォルダー、あるいは他の **driveItem** インスタンスに関する変更の要求された種類についての通知が送信されます。 **ドライブ**、または個々のファイルなどのフォルダーではない **driveItem** インスタンスをサブスクライブすることはできません。
 
-- Outlook では、委任されたアクセス許可は、サインインしているユーザーのメールボックス内のフォルダー内のアイテムのサブスクライブをサポートします。 つまり、委任されたアクセス許可のカレンダーを使用することはできません。別のユーザーのメールボックス内のイベントをサブスクライブするには、をお読みください。
-- Outlook の連絡先、イベント、または_共有フォルダーまたは委任_されたフォルダー内のメッセージの変更通知を購読するには、次のようにします。
+- Outlook における委任されたアクセス許可では、サインインしているユーザーのメールボックス内のフォルダーにあるアイテムのみをサブスクライブできます。 つまり、委任されたアクセス許可 Calendars.Read を使用して、別のユーザーのメールボックス内のイベントをサブスクライブすることなどはできません。
+- _共有または委任_フォルダーの Outlook 連絡先、イベント、メッセージの変更通知をサブスクライブするには、次のようにします。
 
-  - 対応するアプリケーションのアクセス許可を使用して、テナント内の_任意_のユーザーのフォルダーまたはメールボックス内のアイテムの変更をサブスクライブします。
-  - 共有または委任されたフォルダー内のアイテムの通知を変更するためのサブスクライブをサポートして**い**ないため、Outlook 共有のアクセス許可 (連絡先. 共有、読み取り/書き込み可能) を使用しないでください。
+  - 対応するアプリケーション アクセス許可を使用して、テナントの_任意_のユーザーのフォルダーまたはメールボックス内にあるアイテムの変更をサブスクライブします。
+  - Outlook 共有アクセス許可 (Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared、および対応する読み取り/書き込み) は使用しないでください。それらは、共有フォルダーまたは委任フォルダーにあるアイテムの変更通知のサブスクライブをサポート**していない**からです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -66,8 +66,8 @@ POST /subscriptions
 
 ##### <a name="request"></a>要求
 
-要求本文で、 [subscription](../resources/subscription.md)オブジェクトの JSON 表記を指定します。
-この`clientState`フィールドは省略可能です。
+要求本文で、[subscription](../resources/subscription.md) オブジェクトの JSON 表記を指定します。
+`clientState` フィールドは省略可能です。
 
 このサンプル要求は、現在サインインしているユーザーが受信した新着メールに関する通知のサブスクリプションを作成します。
 <!-- {
@@ -96,10 +96,10 @@ resource プロパティの有効な値は次のとおりです。
 |連絡先|me/contacts|
 |カレンダー|me/events|
 |ユーザー|users|
-|グループ|グループ|
+|グループ|groups|
 |会話|groups('*{id}*')/conversations|
 |ドライブ|me/drive/root|
-|セキュリティの警告|セキュリティ/アラートの $filter = 状態 eq ' 新規 '|
+|セキュリティの警告|security/alerts?$filter=status eq ‘New’|
 
 ##### <a name="response"></a>応答
 
@@ -130,7 +130,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知エンドポイントの検証
 
-「 `notificationUrl` [ユーザーデータの変更の通知を設定](/graph/webhooks#notification-endpoint-validation)する」の説明に従って、プロパティで指定されているサブスクリプション通知エンドポイントは、検証要求に応答できる必要があります。 検証が失敗した場合、サブスクリプションを作成する要求は、400不良要求エラーを返します。
+サブスクリプションの通知のエンドポイントは (`notificationUrl` プロパティで指定されている)、「[ユーザー データの変更に関する通知の設定](/graph/webhooks#notification-endpoint-validation)」での説明にあるように、検証依頼に応答できなければなりません。 検証に失敗した場合、サブスクリプションを作成する要求は「400 要求が正しくありません」というエラーを返します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1ed999914958578bfa4c39b99b27ff159827e207
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554157"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship リソースの種類
 
@@ -29,8 +29,8 @@ ms.locfileid: "31809270"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|リレーションシップエンティティ id。|
-|targetId|文字列|ターゲットの子モバイルアプリのアプリ id。|
-|targetdisplayname|文字列|ターゲットの子モバイルアプリの表示名。|
+|targetId|String|ターゲットの子モバイルアプリのアプリ id。|
+|targetdisplayname|String|ターゲットの子モバイルアプリの表示名。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

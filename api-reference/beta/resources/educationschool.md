@@ -1,23 +1,23 @@
 ---
 title: educationSchool リソースの種類
-description: '学校。 現時点で、**educationSchool** リソースは administrativeUnit リソースと一致していて、同じ ID を共有しています。  '
+description: '学校。 **educationSchool**リソースは現在、administrativeUnit リソースに対応しており、同じ ID を共有しています。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512543"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542943"
 ---
-# <a name="educationschool-resource-type"></a>educationSchool リソース タイプ
+# <a name="educationschool-resource-type"></a>educationSchool リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-学校。 現時点で、**educationSchool** リソースは [administrativeUnit](administrativeunit.md) リソースと一致していて、同じ ID を共有しています。  
+学校。 **educationSchool**リソースは現在、 [administrativeUnit](administrativeunit.md)リソースに対応しており、同じ ID を共有しています。  
 
-このリソースは、[educationOrganization](educationorganization.md) のサブタイプです。
+このリソースは[educationOrganization](educationorganization.md)のサブタイプです。
 
 
 
@@ -33,16 +33,16 @@ ms.locfileid: "29512543"
 |[Add user](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| **users** ナビゲーション プロパティを投稿することで、学校の新しい **educationUser** を追加します。|
 |[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) コレクション| **educationUser** オブジェクト コレクションを取得します。|
 |[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| **users** ナビゲーション プロパティによって、学校から **educationUser** を削除します。|
-|[Get administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| この **educationSchool** に対応する **administrativeUnit** を取得します。|
+|[administrativeUnit を取得する](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| この**educationSchool**に対応する**administrativeUnit**を取得します。|
 |[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md) |**educationSchool** オブジェクトを更新します。 |
-|[Delete](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
+|[削除](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|文字列|この学校の GUID。|
-|displayName| String| 学校の表示名。| 
-|説明| 文字列 | 学校の説明。| 
+|id|String|この学校の GUID。|
+|displayName| 文字列| 学校の表示名。| 
+|description| String | 学校の説明。| 
 |status| string| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|
 |externalSource| string| 読み取り専用。  使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
 |principalEmail| String| プリンシパルの電子メール アドレス。|

@@ -1,33 +1,33 @@
 ---
 title: securityVendorInformation リソースの種類
-description: " subProvider AppLocker を =)。"
+description: " subprovider = AppLocker)。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945938"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549700"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation リソースの種類
 
-セキュリティ製品やサービスの仕入先、プロバイダー、および subprovider の詳細が含まれています (たとえば、ベンダー = Microsoft; プロバイダー = Windows Defender の分析ツールです。 subProvider AppLocker を =)。
+セキュリティ製品/サービスベンダー、プロバイダ、およびサブプロバイダに関する詳細情報が含まれています (たとえば、ベンダー = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類|説明|
+| プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|プロバイダー |String|特定のプロバイダー (製品やサービスの仕入先会社ではありません)。たとえば、WindowsDefenderATP です。|
-|providerVersion|String|Subprovider、それが存在する場合は、アラートを生成したプロバイダーのバージョンです。 *Required*|
-|subProvider|String|特定の subprovider 下にあるプロバイダーを集約)。たとえば、WindowsDefenderATP.SmartScreen です。|
-|仕入先 |String|アラート ベンダー (マイクロソフトでは、Dell の FireEye など) の名前。 *Required*|
+|供給 |String|特定のプロバイダー (製品/サービス-ベンダー会社ではない)。たとえば、windowsdefenderatp のようになります。|
+|providerversion|String|通知を生成したプロバイダーまたはサブプロバイダのバージョン (存在する場合)。 *必須*|
+|subprovider|String|特定のサブプロバイダ (集計プロバイダーの場合)。たとえば、windowsdefenderatp。|
+|ベンダ |String|通知ベンダーの名前 (Microsoft、Dell、焼討アイなど)。 *必須*|
 
 
 ## <a name="json-representation"></a>JSON 表記
 
-次は、リソースの JSON 表現です。
+folllowing は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

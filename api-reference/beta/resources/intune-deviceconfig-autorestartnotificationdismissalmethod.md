@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5e9a6a6ca8be6f1aa950ce692242cbed2099beaf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549410"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31804159"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|未構成|
-|自動|1-d|Auto 棄却|
-|user|pbm-2|ユーザー棄却|
+|自動|1 |Auto 棄却|
+|user|2 |ユーザー棄却|
 
 
 

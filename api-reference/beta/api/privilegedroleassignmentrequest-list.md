@@ -1,28 +1,28 @@
 ---
 title: リスト privilegedRoleAssignmentRequests
-description: 'PrivilegedRoleAssignmentRequest のコレクションを取得します。 '
+description: 'privilegedRoleAssignmentRequest のコレクションを取得します。 '
 localization_priority: Normal
 ms.openlocfilehash: 06a6c66bcb566df0b6db5193bd753832bd9235a3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640729"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538611"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>リスト privilegedRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)のコレクションを取得します。 
+[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)のコレクションを取得します。 
 
-**注:** この依頼者、リソースの 1 つ以上のロールの割り当てが必要です。
+**注:** この依頼者は、リソースに対して少なくとも1つのロール割り当てを持っている必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.Read.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、directory.accessasuser.all のいずれかのディレクトリを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -33,7 +33,7 @@ GET /privilegedRoleAssignmentRequests
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -44,7 +44,7 @@ GET /privilegedRoleAssignmentRequests
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

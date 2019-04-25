@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: eaa2eae082c2b50f39b4a3ac2547ca5b0135381f
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537827"
 ---
 # <a name="schedule-share"></a>スケジュール: 共有
 
@@ -52,8 +52,8 @@ POST /teams/{teamId}/schedule/share
 
 |パラメーター                   |型           |説明  |
 |-----------------------|-------------------|--------------|
-| notifyteam            |`Boolean`             |チーム全体がこのアクションの通知を表示するかどうかを指定します。または、共有されていた交代が割り当てられた従業員のみを取得します。 必須。       |
-| startDateTime         |`DateTimeOffset`   |スケジュールの開始時刻を開始する時刻。 必須。   |
+| notifyteam            |`Boolean`             |チーム全体がこのアクションの通知を表示するかどうかを指定します。または、共有されていた交代が割り当てられた従業員のみを取得します。 必須です。       |
+| startDateTime         |`DateTimeOffset`   |スケジュールの開始時刻を開始する時刻。 必須です。   |
 | endDateTime           |`DateTimeOffset`   | スケジュールによる移動を終了するまでの終了時刻。   |
 
 ## <a name="response"></a>応答

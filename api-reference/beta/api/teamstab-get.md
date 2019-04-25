@@ -1,21 +1,21 @@
 ---
 title: タブを取得する
-description: 'プロパティと指定したタブの関係を取得します。 '
+description: '指定したタブのプロパティとリレーションシップを取得します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c8c860caa538699635a5b5d92595664b700124cd
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544604"
 ---
 # <a name="get-tab"></a>タブを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、指定した[タブ](../resources/teamstab.md)の関係を取得します。 
+指定した[タブ](../resources/teamstab.md)のプロパティとリレーションシップを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -33,9 +33,9 @@ ms.locfileid: "29967173"
 GET /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
-このメソッドは、$select をサポートし、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。
+このメソッドは、応答をカスタマイズするための $select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -47,7 +47,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[tab](../resources/teamstab.md)オブジェクト。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[tab](../resources/teamstab.md)オブジェクトを返します。
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
 要求の例を次に示します。

@@ -1,17 +1,17 @@
 ---
-title: リスト agreementAcceptances
+title: agreementAcceptances を一覧表示する
 description: ユーザーの agreementAcceptance オブジェクトのリストを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 22babc13c3b1db4cf143a35ab2119e97c43c822b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544281"
 ---
-# <a name="list-agreementacceptances"></a>リスト agreementAcceptances
+# <a name="list-agreementacceptances"></a>agreementAcceptances を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[agreementAcceptance](../resources/agreementacceptance.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[agreementAcceptance](../resources/agreementacceptance.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 58b45f092848be7198141a34a443471426be273b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547166"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementcertificatewiththumbprint リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "31773708"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|拇印|文字列|管理証明書の拇印|
+|拇印|String|管理証明書の拇印|
 |certificate|String|Base 64 エンコード済み管理証明書|
 
 ## <a name="relationships"></a>リレーションシップ

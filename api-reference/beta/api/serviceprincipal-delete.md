@@ -1,19 +1,19 @@
 ---
-title: ServicePrincipal を削除します。
-description: ServicePrincipal を削除します。
+title: serviceprincipal の削除
+description: serviceprincipal を削除します。
 localization_priority: Normal
 ms.openlocfilehash: 962b430043bd408438488f80a9409f65d7375f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528782"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537487"
 ---
-# <a name="delete-serviceprincipal"></a>ServicePrincipal を削除します。
+# <a name="delete-serviceprincipal"></a>serviceprincipal の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ServicePrincipal を削除します。
+serviceprincipal を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -21,7 +21,7 @@ ServicePrincipal を削除します。
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Application.ReadWrite.OwnedBy、Application.ReadWrite.All |
+|アプリケーション | application.readwrite.ownedby、アプリケーションの読み取り/書き込み。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -1,30 +1,30 @@
 ---
 title: Members
-description: TeamsApp の現在のインストール状態を説明します。
+description: teamsapp の現在のインストール状態を示します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 82e46faccd2a91a82ba4fb7352391f58a42c33a9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554017"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 列挙型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[teamsApp](teamsapp.md)の現在のインストール状態を説明します。
+[teamsapp](teamsapp.md)の現在のインストール状態を示します。
 
 ## <a name="members"></a>メンバー
 
 | メンバー | 値| 説明 |
 |:---------------|:--------|:----------|
-|notInstalled|(0)|チームには、アプリケーションはインストールされていません。|
-|Installed|-1|アプリケーションが正常にインストールします。|
-|installedAndHidden|-2|アプリケーションがインストールされているがビューから非表示にします。|
-|installedAndPermanent|-3|アプリケーションが完全にインストールされているしは削除できません。|
+|notinstalled|.0|アプリが team にインストールされていません。|
+|れる|1 |アプリは正常にインストールされています。|
+|windows、および非推奨|2 |アプリはインストールされますが、ビューからは非表示になります。|
+|windows viewer andパーマネント|3 |アプリは完全にインストールされており、削除することはできません。|
 <!--
 {
   "type": "#page.annotation",

@@ -1,17 +1,17 @@
 ---
-title: createdObjects を一覧表示する　
+title: List createdObjects
 description: ユーザーによって作成されたディレクトリ オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 022a09cbeabfdf5fc41dc182fac98f567e856d4b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517912"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536486"
 ---
-# <a name="list-createdobjects"></a>createdObjects を一覧表示する　
+# <a name="list-createdobjects"></a>List createdObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "29517912"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | directory.accessasuser.all、ユーザーの読み取り、書き込み、および読み取り。 all、すべてのディレクトリの読み取り、すべての書き込み、およびすべてのディレクトリを取得します。    |
 |委任 (個人用 Microsoft アカウント) | User.Read、User.ReadWrite    |
 |アプリケーション | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
