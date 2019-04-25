@@ -1,21 +1,21 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: 有効になっているユーザーとデスクトップやデバイスに Office のサブスクリプションをアクティブ化または共有のコンピューターの数を取得します。
+description: 有効になっているユーザーの数と、デスクトップまたはデバイスまたは共有コンピューターで Office サブスクリプションをアクティブ化したユーザーの数を取得します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9d9c42dac12fa1464f119a301b4205893b33ab96
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545969"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-有効になっているユーザーとデスクトップやデバイスに Office のサブスクリプションをアクティブ化または共有のコンピューターの数を取得します。
+有効になっているユーザーの数と、デスクトップまたはデバイスまたは共有コンピューターで Office サブスクリプションをアクティブ化したユーザーの数を取得します。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Microsoft Office ライセンス認証](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)」を参照してください。
 
@@ -25,7 +25,7 @@ ms.locfileid: "29573579"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -39,7 +39,7 @@ GET /reports/getOffice365ActivationsUserCounts
 
 ## <a name="query-parameters"></a>クエリ パラメーター
 
-このメソッドをサポートしている、 `$format` 、応答をカスタマイズするのには、 [OData クエリ パラメーター](/graph/query-parameters)です。 既定の出力の種類は、テキストまたは csv です。 ただし、出力の種類を指定する場合は、設定をテキストまたは csv またはアプリケーションまたは json OData $format クエリ パラメーターを使用することができます。
+このメソッドは、 `$format`応答をカスタマイズするための[OData クエリパラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、text/csv です。 ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -61,17 +61,17 @@ GET /reports/getOffice365ActivationsUserCounts
 - 製品の種類
 - 割り当て済み
 - アクティブ
-- 共有のコンピューターのライセンス認証
+- 共有コンピューターのライセンス認証
 
 ### <a name="json"></a>JSON
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の**[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** オブジェクトを返します。
 
 ## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 
-次に、CSV を出力する例を示します。
+CSV を出力する例を次に示します。
 
 #### <a name="request"></a>要求
 
@@ -115,7 +115,7 @@ Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 
 ### <a name="json"></a>JSON
 
-次に、JSON を取得する例を示します。
+次の例は、JSON を返します。
 
 #### <a name="request"></a>要求
 

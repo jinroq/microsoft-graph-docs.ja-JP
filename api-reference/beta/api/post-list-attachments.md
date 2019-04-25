@@ -1,21 +1,21 @@
 ---
 title: 添付ファイルを一覧表示する
-description: 投稿に添付された添付ファイル オブジェクトのリストを取得します。
+description: 投稿に添付された Attachment オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 910e269fb860ff21ecb80b8bcd247f9f9d43c947
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546816"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-投稿に添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。
+投稿に添付された [Attachment](../resources/attachment.md) オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -26,7 +26,8 @@ ms.locfileid: "29527013"
 |アプリケーション | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[転記](../resources/post.md)グループの[会話](../resources/conversation.md)に属している[スレッド](../resources/conversationthread.md)での添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -34,7 +35,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-$ を使用する具体的には、すべての投稿のプロパティの残りの部分と投稿の添付ファイルのインラインを含むようにクエリ パラメーターを展開します。 次に例を示します。
+特に、$expand クエリパラメーターを使用して、post のすべての添付ファイルを残りの post プロパティにインラインで含めることができます。 次に例を示します。
 
 ```
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments

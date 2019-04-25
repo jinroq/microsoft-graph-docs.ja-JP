@@ -1,19 +1,19 @@
 ---
 title: agreementAcceptance リソースの種類
-description: Azure Active Directory (Azure AD) の電源を使用して会社のカスタマイズ可能な条件の範囲内のユーザーの現在の状態を表します。
+description: azure Active Directory (azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
 localization_priority: Normal
 ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518871"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544063"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) の電源を使用して会社のカスタマイズ可能な条件の範囲内のユーザーの現在の状態を表します。
+azure Active Directory (azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
 
 <!--
 ## Methods
@@ -28,15 +28,15 @@ Azure Active Directory (Azure AD) の電源を使用して会社のカスタマ�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|agreementFileId|String|ユーザーによって承諾される契約書のファイルの ID です。|
-|agreementId|String|契約の ID です。|
-|id|文字列| 読み取り専用です。|
+|agreementFileId|String|ユーザーによって承認されたアグリーメントファイルの ID。|
+|agreementId|String|契約の ID。|
+|id|String| 読み取り専用です。|
 |recordedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|state|string| 使用可能な値は、`accepted`、`declined` です。|
-|userDisplayName|String|受け入れの記録時に、ユーザーの名前を表示します。|
-|userEmail|String|受け入れが記録された場合のユーザーの電子メール。|
-|userId|String|契約を承諾したユーザーの ID です。|
-|userPrincipalName|文字列|受け入れが記録された場合のユーザーの UPN。|
+|state|string| 可能な値は、`accepted`、`declined` です。|
+|userDisplayName|String|承諾が記録されたときのユーザーの表示名。|
+|userEmail|String|承諾が記録されたユーザーの電子メール。|
+|userId|String|契約書を受諾したユーザーの ID。|
+|userPrincipalName|String|承諾が記録されたユーザーの UPN。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,19 +1,19 @@
 ---
-title: アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
-description: アプリケーションまたはサービス ・ プリンシパルに割り当てられているポリシー オブジェクトを取得します。
+title: アプリケーションまたはサービスプリンシパルに割り当てられているポリシーの一覧
+description: アプリケーションまたはサービスプリンシパルに割り当てられているポリシーオブジェクトを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546781"
 ---
-# <a name="list-policies-assigned-to-application-or-service-principal"></a>アプリケーションまたはサービス ・ プリンシパルに割り当てられているリストのポリシー
+# <a name="list-policies-assigned-to-application-or-service-principal"></a>アプリケーションまたはサービスプリンシパルに割り当てられているポリシーの一覧
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アプリケーションまたはサービス ・ プリンシパルに割り当てられている[ポリシー](../resources/policy.md)オブジェクトを取得します。
+アプリケーションまたはサービスプリンシパルに割り当てられている[ポリシー](../resources/policy.md)オブジェクトを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -30,7 +30,7 @@ ms.locfileid: "29640015"
 GET /applications/{id}/policies
 ```
 
-> 注意: 要求で"id"は、アプリケーションまたはサービス ・ プリンシパル"appid"プロパティではなく"id"プロパティです。
+> 注: 要求の "id" は、"appid" プロパティではなく、アプリケーションまたはサービスプリンシパルの "id" プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -42,7 +42,7 @@ GET /applications/{id}/policies
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答の本体のコードと[ポリシー](../resources/policy.md)オブジェクトを応答します。 失敗した場合、`4xx`について、エラーが返されます。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[ポリシー](../resources/policy.md)オブジェクトを返します。 失敗した場合、`4xx` エラーが詳細情報とともに返されます。
 
 ## <a name="example"></a>例
 次の例では、アプリケーションに割り当てられているポリシーを取得します。

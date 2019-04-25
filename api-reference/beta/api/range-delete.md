@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9fbd9fab13e94d33f5254911730d3640414b01f3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546413"
 ---
 # <a name="range-delete"></a>範囲: 削除
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|<legacyBold>Shift</legacyBold>|文字列|セルをシフトする方向を指定します。可能な値は、`Up`、`Left` です。|
+|Shift|string|セルをシフトする方向を指定します。可能な値は、`Up`、`Left` です。|
 
 ## <a name="response"></a>応答
 

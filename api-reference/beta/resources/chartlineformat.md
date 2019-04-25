@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543811"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat リソースの種類
 
@@ -23,15 +23,15 @@ ms.locfileid: "29640582"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
 |[Clear](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|color|文字列|グラフの線の色を表す HTML カラー コード。|
+|color|string|グラフの線の色を表す HTML カラー コード。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2681d988035bd590e4f03ae8b2393d44bcb6d976
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869422"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539648"
 ---
 # <a name="list-tasks"></a>タスクを一覧表示する
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ##### <a name="response"></a>応答
 以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。
 
-注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

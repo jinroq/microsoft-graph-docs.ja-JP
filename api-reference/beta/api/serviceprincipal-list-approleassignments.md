@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipal: appRoleAssignments を一覧表示'
-description: Approleassignment オブジェクトのリストを取得します。
+title: 'serviceprincipal: approleassignments のリスト'
+description: approleassignment オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545285"
 ---
-# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: appRoleAssignments を一覧表示
+# <a name="serviceprincipal-list-approleassignments"></a>serviceprincipal: approleassignments のリスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Approleassignment オブジェクトのリストを取得します。
+approleassignment オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[appRoleAssignment](../resources/approleassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[approleassignment](../resources/approleassignment.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

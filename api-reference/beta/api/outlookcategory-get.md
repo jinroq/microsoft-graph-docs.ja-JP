@@ -5,15 +5,14 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 7529568b26c56258e63a8c1080c019aaf0f57e59
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520040"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539721"
 ---
 # <a name="get-outlook-category"></a>Outlook カテゴリを取得する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した [outlookCategory](../resources/outlookcategory.md) オブジェクトのプロパティとリレーションシップを取得します。
 
@@ -22,7 +21,7 @@ ms.locfileid: "29520040"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | MailboxSettings.Read    |
+|委任 (職場または学校のアカウント) | MailboxSettings.Read    |
 |委任 (個人用 Microsoft アカウント) | MailboxSettings.Read    |
 |アプリケーション | MailboxSettings.Read |
 
@@ -51,10 +50,11 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -70,7 +70,7 @@ Content-type: application/json
 Content-length: 249
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"de912e4d-c790-4da9-949c-ccd933aaa0f7",
   "displayName":"Yellow category",
   "color":"preset3"
@@ -84,7 +84,5 @@ Content-length: 249
   "description": "Get outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookcategory-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "tocPath": ""
 }-->

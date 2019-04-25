@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 45b6eec0ac5d9d8523999fae763acb653bfd3a56
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575455"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545843"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 
@@ -25,7 +25,7 @@ ms.locfileid: "29575455"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -49,7 +49,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 
 > **注:** URL に期間または日付を設定する必要があります。
 
-このメソッドは、応答をカスタマイズするための `$format`、`$top`、`$skipToken` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、テキストまたは csv です。 ただし、出力の種類を指定する場合は、設定をテキストまたは csv またはアプリケーションまたは json OData $format クエリ パラメーターを使用することができます。
+このメソッドは、応答をカスタマイズするための `$format`、`$top`、`$skipToken` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、text/csv です。 ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -94,7 +94,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 - 開催した会議の Microsoft のダイヤルイン/アウトの数
 - 開催した会議の Microsoft のダイヤルインの時間 (分)
 - 開催した会議の Microsoft からのダイヤルアウトの時間 (分)
-- 会議の参加した IM の数
+- 参加した会議の IM の数
 - 参加した会議のオーディオ/ビデオの数
 - 参加した会議のオーディオ/ビデオの時間 (分)
 - 参加した会議のアプリ共有の数
@@ -105,15 +105,15 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 
 ### <a name="json"></a>JSON
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[skypeforbusinessactivityuserdetail](../resources/skypeforbusinessactivityuserdetail.md)** オブジェクトを返します。
 
-この要求の既定のページ サイズは、アイテムは 200 個です。
+この要求の既定のページサイズは200アイテムです。
 
 ## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 
-次に、CSV を出力する例を示します。
+CSV を出力する例を次に示します。
 
 #### <a name="request"></a>要求
 
@@ -157,7 +157,7 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 
 ### <a name="json"></a>JSON
 
-次に、JSON を取得する例を示します。
+次の例は、JSON を返します。
 
 #### <a name="request"></a>要求
 

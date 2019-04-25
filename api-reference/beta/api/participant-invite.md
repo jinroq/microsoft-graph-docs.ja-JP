@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539479"
 ---
 # <a name="participant-invite"></a>参加者: 招待
 
@@ -24,7 +24,7 @@ ms.locfileid: "29510170"
 | :-------------- | :--------------------------------------------------------- |
 | 委任 (職場または学校のアカウント)     | サポート対象外                       |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                       |
-| アプリケーション     | Calls.InitiateGroupCalls.All                               |
+| アプリケーション     | initiategroupcalls を呼び出します。                               |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ POST /applications/{id}/calls/{id}/participants/invite
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
-|ClientContext|String|クライアントのコンテキスト。|
+|参加者|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="examples"></a>例
-次の例では、この API を呼び出す方法を示します。
+次の例は、この API を呼び出す方法を示しています。
 
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
@@ -99,7 +99,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>既存の P2P の会議に参加者を招待します。
+### <a name="invite-participants-in-existing-p2p-meeting"></a>既存の P2P 会議に参加者を招待する
 
 ##### <a name="request"></a>要求
 
@@ -142,7 +142,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -172,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>名簿の参加者の追加と更新の通知-
+##### <a name="notification---roster-updated-with-participant-added"></a>通知-参加者が追加されて更新された名簿
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -245,13 +245,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>既存の P2P の会議に参加者を招待します。
+### <a name="invite-participants-in-existing-p2p-meeting"></a>既存の P2P 会議に参加者を招待する
 
-この例では、既存の P2P 会議に[参加者を招待](../api/participant-invite.md)の E2E のフローの全体を示します。
+この例は、既存の P2P 会議で[参加者を招待](../api/participant-invite.md)するための完全な E2E フローを示しています。
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>サービスがホストされているメディアを使用して VOIP の着信呼び出しに応答
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>サービスホストメディアを使用した着信 VOIP 通話への応答
 
-##### <a name="notification---incoming"></a>通知の受信
+##### <a name="notification---incoming"></a>通知-受信
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -346,7 +346,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a>通知を確立します。
+##### <a name="notification---establishing"></a>通知-確立中
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -375,7 +375,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知の設定
+##### <a name="notification---established"></a>通知-確立済み
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -406,9 +406,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a>メディアのないチャネルの会議に参加します。
+### <a name="join-channel-meeting-without-media"></a>メディアを使用しないチャネル会議への参加
 
-> **重要**: メディアのネゴシエーションを避ける必要がありますボットのインスタンスは、転送を促進する目的でのみ参加している場合。  なく、追加することをお勧めしたがって、`requestedModalities`または`mediaConfig`。
+> **重要**: bot インスタンスが転送を容易にする目的でのみ参加している場合は、メディアネゴシエーションを回避する必要があります。  そのため、 `requestedModalities`または`mediaConfig`を使用せずに追加することをお勧めします。
 
 ##### <a name="request"></a>要求
 
@@ -453,7 +453,7 @@ HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a>通知を確立します。
+##### <a name="notification---establishing"></a>通知-確立中
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -483,7 +483,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知の設定
+##### <a name="notification---established"></a>通知-確立済み
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -513,7 +513,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a>初期の着信呼び出しからの参加者を招待します。
+### <a name="invite-participant-from-initial-incoming-call"></a>最初の着信呼び出しから参加者を招待する
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -552,7 +552,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -582,7 +582,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>名簿の参加者の追加と更新の通知-
+##### <a name="notification---roster-updated-with-participant-added"></a>通知-参加者が追加されて更新された名簿
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -655,7 +655,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a>通知 - P2P の元の呼び出しの終了
+##### <a name="notification---terminated-the-original-p2p-call"></a>通知-元の P2P 呼び出しを終了しました
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -685,7 +685,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>通知 - P2P の元の呼び出しを削除します。
+##### <a name="notification---deleted-the-original-p2p-call"></a>通知-元の P2P 呼び出しを削除しました
 
 ``` http
 POST https://bot.contoso.com/api/calls

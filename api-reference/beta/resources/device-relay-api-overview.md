@@ -1,25 +1,25 @@
 ---
 title: 関連項目
-description: '{これはデバイス リレー モジュールの API レベルの概要です。'
+description: '{これは、デバイスリレーモジュールの API レベルの概要です。}'
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f1f4946a5a4859095160f23884a2fbacdc238538
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524339"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543280"
 ---
-# <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>デバイス リレー API を使用して、複数のデバイス (プレビュー) ユーザーの経験を転送するには
+# <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>デバイスリレー API を使用して、デバイス間でユーザーの作業を転送する (プレビュー)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-{これはデバイス リレー モジュールの API レベルの概要です。
+{これは、デバイスリレーモジュールの API レベルの概要です。}
 
-{コンテンツではデバイスのリレー、個々 の API へのマッピングの使用例です。
+{コンテンツは、個々の API へのマッピングであるデバイスリレーのユースケースです。}
 
-{検索については「API リファレンス」の"CDK の「- https://microsoft.sharepoint.com/teams/OfficeDeveloperEducation/DevEdWiki/Guidance%20for%20Microsoft%20Graph%20concept%20topics.aspx - どのように動作が異なり、サービス ・ レベルの概要、情報のデバイス リレー概念 overview.md}。
+{この cdk 記事https://microsoft.sharepoint.com/teams/OfficeDeveloperEducation/DevEdWiki/Guidance%20for%20Microsoft%20Graph%20concept%20topics.aspxの「リファレンス」セクションの「API の概要」で、これがサービスレベルの概要でどのように異なるかについては、device-relay-concept-overview.md」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

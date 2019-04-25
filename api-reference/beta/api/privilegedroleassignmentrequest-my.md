@@ -1,26 +1,26 @@
 ---
-title: 'privilegedRoleAssignmentRequest: マイ'
-description: 依頼者の特権を持つ役割の割り当て要求を取得します。
+title: 'privilegedRoleAssignmentRequest: my'
+description: 要求者の特権の役割の割り当て要求を取得します。
 localization_priority: Normal
 ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643109"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546563"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: マイ
+# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-依頼者の特権を持つ役割の割り当て要求を取得します。
+要求者の特権の役割の割り当て要求を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.Read.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、directory.accessasuser.all のいずれかのディレクトリを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -41,7 +41,7 @@ POST /privilegedRoleAssignmentRequests/my
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)コレクションのオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)コレクションオブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

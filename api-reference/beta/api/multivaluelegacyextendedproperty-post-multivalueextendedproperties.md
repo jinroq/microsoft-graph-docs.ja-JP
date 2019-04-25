@@ -3,11 +3,11 @@ title: 複数値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。 '
 localization_priority: Normal
 ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540361"
 ---
 # <a name="create-multi-value-extended-property"></a>複数値の拡張プロパティを作成する
 
@@ -20,11 +20,11 @@ ms.locfileid: "29642255"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [イベント](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [メッセージ](../resources/message.md)
 - [Outlook タスク](../resources/outlooktask.md)
-- [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)
+- [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
 次のグループ リソースもサポートされます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "29642255"
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-リソースに応じて、[拡張プロパティを作成するアクセス許可が委任された (アプリケーション) を要求を入力、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、拡張プロパティを作成しているリソースと、要求したアクセス許可の種類 (委任またはアプリケーション) によって、次の表で指定されているアクセス許可が最低限必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
@@ -43,19 +43,19 @@ ms.locfileid: "29642255"
 | [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| グループ [event](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| グループ [post](../resources/post.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | サポートされていません |
-| [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | 非サポート |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | サポート対象外 |
+| [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | 非サポート |
 
 ## <a name="http-request"></a>HTTP 要求
 新規または既存のリソースのインスタンスに、拡張プロパティを作成できます。
 
-_新しい_リソースのインスタンスで 1 つまたは複数の拡張プロパティを作成、インスタンスを作成すると同じの残りの要求を使用して、要求の本文で、新しいリソースのインスタンス_と拡張プロパティ_のプロパティが含まれます。
-いくつかのリソースが 1 つ以上の方法での作成をサポートすることに注意してください。 [メッセージ](../resources/message.md)、 [mailFolder](../api/user-post-mailfolders.md)、[イベント](../api/user-post-events.md)、[予定表](../api/user-post-calendars.md)、[連絡先](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)を作成するための対応するトピックを参照してくださいこれらのリソースのインスタンスを作成する方法の詳細については、 [Outlook の仕事](../resources/outlooktask.md)、 [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)、[グループのイベント](../api/group-post-events.md)、および[グループの投稿](../resources/post.md)です。 
+1 つ以上の拡張プロパティを_新しい_リソースのインスタンスに作成するには、インスタンスの作成と同じ REST 要求を使用し、新しいリソース インスタンスのプロパティ_と拡張プロパティを_要求の本文に含めます。
+一部のリソースでは複数の作成方法がサポートされていますので、注意してください。 これらのリソースインスタンスを作成する方法の詳細については、「 [message](../resources/message.md), [mailfolder](../api/user-post-mailfolders.md), [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md), [contact](../api/user-post-contacts.md), [contactfolder](../api/user-post-contactfolders.md), [Outlook task](../resources/outlooktask.md), [」を作成するための対応するトピックを参照してください。Outlook のタスクフォルダー](../resources/outlooktaskfolder.md)、[グループイベント](../api/group-post-events.md)、および[グループ投稿](../resources/post.md)。 
  
 以下に要求の構文を示します。 
 
@@ -150,11 +150,11 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>要求本文
 
-リソース インスタンスの **multiValueExtendedProperties** コレクション プロパティに、各 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
+リソース インスタンスの [multiValueExtendedProperties](../resources/multivaluelegacyextendedproperty.md) コレクション プロパティに、各 **multiValueLegacyExtendedProperty** オブジェクトの JSON 本文を指定します。
 
 |**プロパティ**|**型**|**説明**|
 |:-----|:-----|:-----|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) コレクション| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
 |id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
 |value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
 
@@ -181,7 +181,7 @@ _新しい_グループ投稿に拡張プロパティを作成する場合、応
 最初の例では、すべて同じ POST 操作の新しいイベントで複数値の拡張プロパティを作成します。新しいイベントに通常含まれるプロパティとは別に、要求の本文に 1 つの拡張プロパティを含む **multiValueExtendedProperties** コレクションが含まれます。要求本文には、その複数値の拡張プロパティに関する次のものが含まれています。
 
 - **id** 指定された GUID と名前 `Recreation` の文字列の配列としてプロパティを指定します。 
-- **value** は、3 つの文字列値 `["Food", "Hiking", "Swimming"]` の配列として `Recreation` を指定します。
+- **value** は、3 つの文字列値 `Recreation` の配列として `["Food", "Hiking", "Swimming"]` を指定します。
  
 
 <!-- { "blockType": "ignored" } -->
@@ -230,7 +230,7 @@ Content-Type: application/json
 
 ##### <a name="response-1"></a>応答 1
 
-[イベントのみの作成](../api/user-post-events.md)からの応答と同様に、`HTTP 201 Created` 応答コードによって正常な応答が示され、応答の本文に新しいイベントが含まれます。応答には、新しく作成された拡張プロパティは含まれません。
+`HTTP 201 Created`からの応答と同様に、[](../api/user-post-events.md) 応答コードによって正常な応答が示され、応答の本文に新しいイベントが含まれます。応答には、新しく作成された拡張プロパティは含まれません。
 
 新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているイベントを取得](../api/multivaluelegacyextendedproperty-get.md)します。
 
@@ -242,7 +242,7 @@ Content-Type: application/json
 2 番目の例では、指定したメッセージに対して 1 つの複数値の拡張プロパティを作成します。拡張プロパティは、**multiValueExtendedProperties** コレクションの唯一の要素です。要求本文には、拡張プロパティに関する次のものが含まれています。
 
 - **id** 指定された GUID と名前 `Palette` を使って、文字列の配列としてプロパティを指定します。
-- **value** 3 つの文字列値 `["Green", "Aqua", "Blue"]` の配列として `Palette` を指定します。
+- **value** 3 つの文字列値 `Palette` の配列として `["Green", "Aqua", "Blue"]` を指定します。
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: af2cc42c2ee72f1a57a1e0f9402209c107e259f4
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967299"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540902"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -17,12 +17,12 @@ ms.locfileid: "29967299"
 
 メッセージ フォルダー オブジェクトのプロパティとリレーションシップを取得します。
 
-2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーを取得する場所です。
+アプリで別のユーザーのメールフォルダーを取得するには、次の2つのシナリオがあります。
 
 * アプリにアプリケーションのアクセス許可がある場合。または
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
+* あるユーザーからアプリに適切な代理[アクセス許可](#permissions)が与えられ、別のユーザーがそのユーザーとメール フォルダーを共有しているか、そのユーザーに代理アクセスを付与している場合。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-get-a-mail-folder"></a>例 1: メール フォルダーを取得します。
+### <a name="example-1-get-a-mail-folder"></a>例 1: メールフォルダーを取得する
 
 #### <a name="request"></a>要求
 
@@ -105,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-mail-search-folder"></a>例 2: は、[メール] 検索フォルダーを取得します。
+### <a name="example-2-get-a-mail-search-folder"></a>例 2: メール検索フォルダーを取得する
 
 #### <a name="request"></a>要求
 

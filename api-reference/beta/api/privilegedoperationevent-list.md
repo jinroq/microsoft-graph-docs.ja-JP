@@ -1,25 +1,25 @@
 ---
 title: リスト privilegedOperationEvents
-description: フィルター ' の式です。
+description: filter ' ' 式。
 localization_priority: Normal
 ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546604"
 ---
 # <a name="list-privilegedoperationevents"></a>リスト privilegedOperationEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ロールの操作の権限を持つ Id 管理によって生成される監査イベントを表す[privilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトの一覧を取得します。 監査イベントの詳細については、 [privilegedOperationEvent](../resources/privilegedoperationevent.md)を参照してください。 クエリの結果をフィルターするには、標準の OData を使用して、``$filter``式です。
+[privilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトのリストを取得します。これは、ロール操作の特権 id 管理によって生成される監査イベントを表します。 audit イベントの詳細については、「 [privilegedOperationEvent](../resources/privilegedoperationevent.md)」を参照してください。 クエリ結果をフィルター処理するには、標準``$filter``の OData 式を使用します。
 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは、次のロールのいずれかを持つ必要があります:_ロールの権限を持つ管理者_、_グローバル管理者_、_セキュリティ管理者_、または_セキュリティのリーダー_です。
+リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。
 
  
 
@@ -47,14 +47,14 @@ GET /privilegedOperationEvents
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[privilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトのコレクションを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="examples"></a>例
 
-### <a name="get-audit-events-for-role-assignment-operations"></a>ロールの割り当ての操作の監査イベントを取得します。
+### <a name="get-audit-events-for-role-assignment-operations"></a>役割の割り当て操作の監査イベントを取得する
 ##### <a name="request"></a>要求
-次の使用例は、ロールの割り当て操作の監査イベントを取得する要求を示しています。 この例では、``requestType``の値は、 ``Assign``。
+次の例は、役割の割り当て操作の監査イベントを取得するための要求を示しています。 この場合、 ``requestType``値は``Assign``です。
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -112,9 +112,9 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>自己の役割のアクティブ化および makePermanent の操作の監査イベントを取得します。
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>自己ロールライセンス認証の操作の監査イベントを取得し、永続的なものにする
 ##### <a name="request"></a>要求
-次の例では、自己の役割のアクティブ化および makePermanent の操作の監査イベントを取得する要求を示します。 この例では、``requestType``の値は、 ``Activate``。
+次の例は、自己ロールライセンス認証の操作の監査イベントを取得する要求と、makepermanent を示しています。 この場合、 ``requestType``値は``Activate``です。
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -173,9 +173,9 @@ Content-length: 547
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>ロール割り当ての非アクティブ化のイベントの監査を取得します。
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>役割の割り当ての非アクティブ化の監査イベントを取得する
 ##### <a name="request"></a>要求
-ロール割り当ての非アクティブ化のイベントの監査を取得する要求の例を次に示します。 この例では、``requestType``の値は、 ``Deactivate``。
+次の例は、役割の割り当ての非アクティブ化の監査イベントを取得する要求を示しています。 この場合、 ``requestType``値は``Deactivate``です。
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -216,9 +216,9 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>時間の範囲で作成される監査イベントを取得します。
+### <a name="get-audit-events-created-in-a-time-range"></a>時間範囲内に作成された監査イベントを取得する
 ##### <a name="request"></a>要求 
-時間の範囲で作成された監査イベントを取得する要求の例を次に示します。
+次の例は、時間範囲内に作成された監査イベントを取得するための要求を示しています。
 
 <!-- { "blockType": "request" } -->
 ```http

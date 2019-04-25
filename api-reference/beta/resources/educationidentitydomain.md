@@ -1,28 +1,28 @@
 ---
 title: educationIdentityDomain リソースの種類
-description: '教育のユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインのリソースは、ユーザー作成の構成の一部です。 '
+description: '教育ユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインリソースは、id 作成構成の一部です。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c6004d18897b8f8284c06a3b09830072148df87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543117"
 ---
 # <a name="educationidentitydomain-resource-type"></a>educationIdentityDomain リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-教育のユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインのリソースは、[作成時の id の構成](educationidentitycreationconfiguration.md)の一部です。 
+教育ユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインリソースは、 [id 作成構成](educationidentitycreationconfiguration.md)の一部です。 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| appliesTo | string |  ライセンスを割り当てるにはユーザーのロールの種類です。 使用可能な値は、`student`、`teacher` です。      |
-| **name** | string |  ユーザー アカウントのドメインを表します。         |
+| **appliesTo** | string |  ライセンスに割り当てるユーザーの役割の種類。 可能な値は、`student`、`teacher` です。      |
+| **name** | string |  ユーザーアカウントのドメインを表します。         |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

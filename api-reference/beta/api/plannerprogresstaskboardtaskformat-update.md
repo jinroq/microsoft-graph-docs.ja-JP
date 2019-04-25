@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: c48854ddc1f81c1ec0576cbd8e7072f49488ced0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546879"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Update plannerProgressTaskBoardTaskFormat
 
@@ -41,7 +41,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|orderHint|String|ヒントの値を使用してタスクの掲示板の進行状況のビューで、タスクを注文します。 [プランナーで使用する順序のヒント](../resources/planner-order-hint-format.md)の形式が定義されています。|
+|orderHint|String|タスクボードの進行状況ビューでタスクを順序付けするために使用されるヒントの値。 この形式は、 [Planner の order ヒントを使用し](../resources/planner-order-hint-format.md)て定義されます。|
 
 ## <a name="response"></a>応答
 

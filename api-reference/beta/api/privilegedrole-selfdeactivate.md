@@ -1,23 +1,23 @@
 ---
-title: 'privilegedRole: selfDeactivate'
-description: リクエスターに割り当てられているロールを非アクティブ化します。
+title: 'privilegedRole: selfdeactivate'
+description: リクエスターに割り当てられている役割を非アクティブ化します。
 localization_priority: Normal
 ms.openlocfilehash: 7175af64e7e36087bd048cd6e160393e2bf6377e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528691"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546571"
 ---
-# <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
+# <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfdeactivate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-リクエスターに割り当てられているロールを非アクティブ化します。
+リクエスターに割り当てられている役割を非アクティブ化します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは呼び出すことができますのみ```selfDeactivate```彼に割り当てられているロールです。 
+リクエスターは、自分に```selfDeactivate```割り当てられている役割に対してのみ呼び出すことができます。 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,7 +31,7 @@ ms.locfileid: "29528691"
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-注意してください``<id>``は、ターゲットのロールの id。
+これは``<id>`` 、ターゲットの役割 id であることに注意してください。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
@@ -42,9 +42,9 @@ POST /privilegedRoles/{id}/selfDeactivate
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedRoleAssignment](../resources/privilegedroleassignment.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求

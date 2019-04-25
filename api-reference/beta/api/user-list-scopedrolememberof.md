@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b6d458aa275b7405d25f60c8946e544b79bc7ac2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544212"
 ---
 # <a name="list-scopedadministratorof"></a>scopedAdministratorOf を一覧表示する
 
@@ -46,7 +46,7 @@ GET /users/{id}/scopedAdministratorOf
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[scopedRoleMembership](../resources/scopedrolemembership.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

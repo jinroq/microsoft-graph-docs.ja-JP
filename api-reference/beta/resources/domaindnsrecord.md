@@ -1,34 +1,32 @@
 ---
-title: domainDnsRecord リソースの種類
-description: テナント内の各ドメインでは、Microsoft オンライン サービスでドメインを使用できるようにするために、DNS レコードをそのドメインの DNS ゾーン ファイルに追加しなければならない場合があります。**DomainDnsRecord** エンティティはこのような DNS レコードの表示に使用されます。DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord、DomainDnsSrvRecord エンティティのベース エンティティ。
+title: domaindnsrecord リソースの種類
+description: テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの dns ゾーンファイルに dns レコードを追加することが必要になることがあります。 **domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord、および DomainDnsSrvRecord エンティティの基本エンティティ。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b7b04e65da67bc61e3f3b91ed3dae7cba70a3d27
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543155"
 ---
-# <a name="domaindnsrecord-resource-type"></a>domainDnsRecord リソースの種類
+# <a name="domaindnsrecord-resource-type"></a>domaindnsrecord リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-テナント内の各ドメインでは、Microsoft オンライン サービスでドメインを使用できるようにするために、DNS レコードをそのドメインの DNS ゾーン ファイルに追加しなければならない場合があります。**DomainDnsRecord** エンティティはこのような DNS レコードの表示に使用されます。[DomainDnsCnameRecord](domaindnscnamerecord.md)、[DomainDnsMxRecord](domaindnsmxrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md) エンティティのベース エンティティ。
+テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの dns ゾーンファイルに dns レコードを追加することが必要になることがあります。 **domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 [DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md) 、および[DomainDnsSrvRecord](domaindnssrvrecord.md)エンティティの基本エンティティ。
 
 ## <a name="methods"></a>メソッド
-このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
+このリソースへの直接クエリはサポートされていません。 ドメインサービスレコードを照会する方法については、「 [domain](domain.md) 」のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
-|isOptional|Boolean| False の場合、このレコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|文字列| DNS ホストで DNS レコードの名前を設定するときに使用する値。 |
-|recordType|String| このエンティティが表す DNS レコードの種類を示します。</br></br>値は次のいずれかを指定できます。*CName*、*Mx*、*Srv*、*Txt*</br></br>キー |
-|supportedService|String| Microsoft オンライン サービスまたはこの DNS レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*|
-|ttl|Int32| DNS ホストの DNS レコードの Time to Live (TTL) のプロパティを構成するときに使用する値です。null 許容ではありません |
+|id|String| このエンティティに割り当てられている一意の識別子。 null 許容ではありません。読み取り専用です。|
+|isoptional|ブール値| false の場合、このレコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
+|label|String| dns ホストで dns レコードの名前を構成するときに使用される値です。 |
+|recordType|String| このエンティティが表す DNS レコードの種類を示します。</br></br>この値には、 *CName*、 *Mx*、 *Srv*、 *Txt*のいずれかを指定できます。</br></br>キー |
+|supportedservice|String| この DNS レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune*|
+|ttl|Int32| dns ホストで dns レコードの time-to-live (ttl) プロパティを構成する場合に使用する値です。 null 許容ではない |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -38,6 +36,7 @@ ms.locfileid: "29519284"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -58,15 +57,10 @@ ms.locfileid: "29519284"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

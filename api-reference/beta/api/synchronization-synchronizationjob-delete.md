@@ -1,19 +1,19 @@
 ---
-title: SynchronizationJob を削除します。
-description: 同期ジョブを停止し、それに関連付けられているすべての状態を完全に削除します。 同期されたアカウントのままには。
+title: 同期ジョブの削除
+description: 同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。 同期されたアカウントは、そのまま残ります。
 localization_priority: Normal
 ms.openlocfilehash: 29083413c5b24a5ed07b671adfa048f58d437f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545223"
 ---
-# <a name="delete-synchronizationjob"></a>SynchronizationJob を削除します。
+# <a name="delete-synchronizationjob"></a>同期ジョブの削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期ジョブを停止し、それに関連付けられているすべての状態を完全に削除します。 同期されたアカウントのままには。
+同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。 同期されたアカウントは、そのまま残ります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`204 No Content`応答します。 応答本体には何もは返されません。
+成功した場合は`204 No Content` 、応答を返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 

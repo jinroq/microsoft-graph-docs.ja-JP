@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9601dcc28cb38b4aea3dcde14cc1d4a59f3967d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782651"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547054"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>windowsdeviceusagetype 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31782651"
 |メンバー|値|説明|
 |:---|:---|:---|
 |singleUser|.0|単一ユーザーのデバイスの種類|
-|共有|1-d|共有デバイスの種類|
+|共有|1 |共有デバイスの種類|
 
 
 

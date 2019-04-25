@@ -1,40 +1,40 @@
 ---
-title: directorySettingTemplate リソースの種類
-description: ディレクトリ設定のテンプレートでは、テナントの使用可能なシステム定義の設定を表します。 ディレクトリの設定は、使用可能な directorySettingTemplates と事前に設定された既定値から変更された値に基づいて作成できます。 ディレクトリ設定のテンプレートを作成、更新または削除することはできません。 これらの設定では、テナント全体の設定を表すことができますか、特定のエンティティの設定を表すことができます。  現在、使用可能な唯一のテンプレートは、Office グループに適用され、ユーザーのグループを作成またはグループのメンバーになることを組織外からのゲストを招待できるかどうかなどの設定が含まれます。
+title: directorysettingtemplate リソースの種類
+description: ディレクトリ設定テンプレートは、テナントで使用可能なシステム定義の設定を表します。 ディレクトリの設定は、使用可能な directorysettingtemplates に基づいて作成でき、値は事前設定の既定値から変更されます。 ディレクトリ設定テンプレートを作成、更新、または削除することはできません。 これらの設定は、テナント全体の設定、または特定のエンティティ設定を表すことができます。  現時点では、Office グループに適用できるテンプレートは、ユーザーがグループを作成できるかどうか、または組織外のゲストをグループのメンバーにすることができるかどうかなどの設定が含まれています。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 366817df422686a8db658f1cab1d5805c24c4f91
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543253"
 ---
-# <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate リソースの種類
+# <a name="directorysettingtemplate-resource-type"></a>directorysettingtemplate リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリ設定のテンプレートでは、テナントの使用可能なシステム定義の設定を表します。 [ディレクトリの設定](directorysetting.md)は、使用可能な directorySettingTemplates と事前に設定された既定値から変更された値に基づいて作成できます。 ディレクトリ設定のテンプレートを作成、更新または削除することはできません。 これらの設定では、テナント全体の設定を表すことができますか、特定のエンティティの設定を表すことができます。  現在、使用可能な唯一のテンプレートは、Office グループに適用され、ユーザーのグループを作成またはグループのメンバーになることを組織外からのゲストを招待できるかどうかなどの設定が含まれます。
+ディレクトリ設定テンプレートは、テナントで使用可能なシステム定義の設定を表します。 [ディレクトリの設定](directorysetting.md)は、使用可能な directorysettingtemplates に基づいて作成でき、値は事前設定の既定値から変更されます。 ディレクトリ設定テンプレートを作成、更新、または削除することはできません。 これらの設定は、テナント全体の設定、または特定のエンティティ設定を表すことができます。  現時点では、Office グループに適用できるテンプレートは、ユーザーがグループを作成できるかどうか、または組織外のゲストをグループのメンバーにすることができるかどうかなどの設定が含まれています。
 
-> **注**: directorySettingTemplate リソースの種類の/beta バージョンは、グループにのみ適用されます。 /V1.0 のバージョンは groupSettingTemplate に名前変更されました。
+> **注**: directorysettingtemplate リソースの種類の/ベータ版は、グループにのみ適用されます。 /v1.0 バージョンの名前が groupsettingtemplate に変更されました。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[DirectorySettingTemplate を取得します。](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |システム定義の directorySettingTemplate オブジェクトの 1 つの特定のプロパティを参照します。|
-|[リスト directorySettingTemplate](../api/directorysettingtemplate-list.md) | [DirectorySettingTemplate のコレクション](directorysettingtemplate.md) |すべてのシステム定義の directorySettingTemplate オブジェクトの一覧を表示します。|
+|[directorysettingtemplate の取得](../api/directorysettingtemplate-get.md) | [directorysettingtemplate](directorysettingtemplate.md) |システム定義の directorysettingtemplate オブジェクトのいずれか1つの特定のプロパティを読み取ります。|
+|[directorysettingtemplate の一覧表示](../api/directorysettingtemplate-list.md) | [directorysettingtemplate のコレクション](directorysettingtemplate.md) |システム定義の directorysettingtemplate オブジェクトをすべて一覧表示します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|string|テンプレートの説明です。 読み取り専用です。|
-|displayName|string|テンプレートの表示名です。 読み取り専用。 |
-|id|文字列| テンプレートの一意識別子です。読み取り専用です。|
-|値|[settingTemplateValue](settingtemplatevalue.md) コレクション| このテンプレートを構成する、一連の利用可能な設定、既定値、種類を一覧表示する settingTemplateValues のコレクションです。  読み取り専用です。 |
+|description|string|テンプレートの説明。 読み取り専用です。|
+|displayName|string|テンプレートの表示名。 読み取り専用。 |
+|id|string| テンプレートの一意識別子。 読み取り専用です。|
+|values|[settingtemplatevalue](settingtemplatevalue.md)コレクション| このテンプレートを構成する、使用可能な設定、既定値、および種類のセットを一覧表示する settingtemplatevalues のコレクションです。  読み取り専用。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

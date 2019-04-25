@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 3873351014ebb7dd9dfbea621e348d239dfc487f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529545"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546824"
 ---
 # <a name="update-plannertaskdetails"></a>Update plannertaskdetails
 
@@ -42,7 +42,7 @@ PATCH /planner/tasks/<id>/details
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|説明|String|タスクの説明|
+|description|String|タスクの説明|
 |previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。`automatic` に設定すると、タスクを表示しているアプリによって表示するプレビューが選択されます。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 

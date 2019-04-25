@@ -1,15 +1,15 @@
 ---
-title: ポリシーを更新します。
+title: ポリシーの更新
 description: 既存のポリシーのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515413"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538742"
 ---
-# <a name="update-policy"></a>ポリシーを更新します。
+# <a name="update-policy"></a>ポリシーの更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,27 +30,27 @@ ms.locfileid: "29515413"
 PATCH /policies/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | application/json  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、更新する必要があるパラメーターを使用して JSON オブジェクトを提供します。 次の表は、使用できるパラメーターを示します。
+要求本文で、更新する必要があるパラメーターを含む JSON オブジェクトを指定します。 次の表に、使用可能なパラメーターを示します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|definition|String|Stringified[ポリシー](../resources/policy.md)オブジェクトのバージョンです。|
-|displayName|String|ポリシーに独自の名前です。|
-|isOrganizationDefault|ブール値|既定でこのポリシーを適用するかどうかを指定します。|
-|type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy"にする必要があります。|
+|definition|String|文字列バージョンの[ポリシー](../resources/policy.md)オブジェクト。|
+|displayName|String|ポリシーのカスタム名。|
+|is組織既定|ブール値|このポリシーを既定で適用するかどうかを指定します。|
+|type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy" である必要があります。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。 失敗した場合、`4xx`について、エラーが返されます。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。 失敗した場合、`4xx` エラーが詳細情報とともに返されます。
 
 ## <a name="example"></a>例
-次の例では、トークンの有効期間ポリシーの定義を更新し、組織の既定値として設定します。
+次の例では、トークン有効期限ポリシーの定義を更新し、それを組織の既定値として設定します。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5376200bc2824d51dd1eec2a442b797836855fdb
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366925"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544520"
 ---
 # <a name="get-threat-intelligence-indicator"></a>脅威インテリジェンス指標の取得
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366925"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | ThreatIndicators application.readwrite.ownedby |
+| 委任 (職場または学校のアカウント)     | ThreatIndicators.ReadWrite.OwnedBy |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | ThreatIndicators application.readwrite.ownedby |
+| アプリケーション                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,7 +35,7 @@ ms.locfileid: "30366925"
 GET /security/tiIndicators/{id}
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための OData クエリパラメーターの一部をサポートしています。 一般的な情報については、「 [OData クエリパラメーター](/graph/query-parameters)」を参照してください。
 

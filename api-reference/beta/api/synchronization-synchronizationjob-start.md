@@ -1,19 +1,19 @@
 ---
-title: SynchronizationJob を開始します。
-description: 既存の同期ジョブを開始します。 ジョブが一時停止状態にある場合は、その一時停止された時点から変更の処理は続行されます。 ジョブは、検疫では、検疫の状態がクリアされます。
+title: 同期ジョブを開始する
+description: 既存の同期ジョブを開始します。 ジョブが一時停止状態の場合、一時停止していた時点からの変更の処理は続行されます。 ジョブが検疫されている場合、検疫の状態はクリアされます。
 localization_priority: Normal
 ms.openlocfilehash: 4648d9d3d889adf2cd7ec06e4fcf79b761c77132
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545299"
 ---
-# <a name="start-synchronizationjob"></a>SynchronizationJob を開始します。
+# <a name="start-synchronizationjob"></a>同期ジョブを開始する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の同期ジョブを開始します。 ジョブが一時停止状態にある場合は、その一時停止された時点から変更の処理は続行されます。 ジョブは、検疫では、検疫の状態がクリアされます。
+既存の同期ジョブを開始します。 ジョブが一時停止状態の場合、一時停止していた時点からの変更の処理は続行されます。 ジョブが検疫されている場合、検疫の状態はクリアされます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`204 No Content`応答します。 応答本体には何もは返されません。
+成功した場合は`204 No Content` 、応答を返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 

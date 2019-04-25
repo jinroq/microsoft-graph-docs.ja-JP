@@ -1,17 +1,17 @@
 ---
-title: schedulingGroup の削除
+title: Delete schedulingGroup
 description: isActive プロパティを設定して、schedulingGroup を非アクティブとしてマークする
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bb29270cdf246924f0c6a9293611bec82dac5cc3
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657715"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545629"
 ---
-# <a name="delete-schedulinggroup"></a>schedulingGroup の削除
+# <a name="delete-schedulinggroup"></a>Delete schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640211"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543703"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 
@@ -23,14 +23,14 @@ ms.locfileid: "29640211"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |chartGridlines オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
+|[Update](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|軸の目盛線を表示するか非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。値の取得のみ可能です。|

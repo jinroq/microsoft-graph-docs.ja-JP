@@ -6,15 +6,13 @@ title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 88b12ebbe56a3e57b441581ba319734edbe9e5c5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541025"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [site][] で新しい [list][] を作成します。
 
@@ -33,7 +31,7 @@ ms.locfileid: "30482141"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>要求本文
@@ -106,17 +104,12 @@ Content-type: application/json
 実際の呼び出しでは、既定のプロパティが返されます。
 
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[サイト]: ../resources/site.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create",
-  "suppressions": [
-    "Error: /api-reference/beta/api/list-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "List/Create"
+} -->

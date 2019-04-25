@@ -4,11 +4,11 @@ description: '指定されたリソースのインスタンスからオープン
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 6882cd1502221642e10c7e0fe7cbca5d43e543a5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539961"
 ---
 # <a name="delete-open-extension"></a>オープン拡張機能を削除する
 
@@ -18,17 +18,17 @@ ms.locfileid: "29512529"
 
 ## <a name="permissions"></a>アクセス許可
 
-拡張子を削除するリソース、およびアクセス許可によって委任された (アプリケーション) の種類を要求、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能を削除するリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
-| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [グループ](../resources/group.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | 使用不可 | 使用不可 |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 

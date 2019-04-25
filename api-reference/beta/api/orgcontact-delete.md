@@ -1,21 +1,21 @@
 ---
-title: OrgContact を削除します。
-description: OrgContact を削除します。
+title: orgcontact の削除
+description: orgcontact を削除します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8afaebd679cbf935b13cffeece2d272ca3c7ae40
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515770"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539856"
 ---
-# <a name="delete-orgcontact"></a>OrgContact を削除します。
+# <a name="delete-orgcontact"></a>orgcontact の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OrgContact を削除します。
+orgcontact を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

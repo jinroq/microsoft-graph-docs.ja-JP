@@ -1,13 +1,13 @@
 ---
 title: ProfilePhoto を更新する
-description: 署名を含むテナント内のユーザーの写真を更新するユーザー、または指定したグループ、または取引先担当者です。 そこから
+description: サインイン ユーザー、または指定されたグループあるいは連絡先を含むテナント内の任意のユーザーの写真を更新します。 存在するため
 localization_priority: Normal
 ms.openlocfilehash: f8191716471cba565b27ef316b5b13e3b32ecaff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546480"
 ---
 # <a name="update-profilephoto"></a>ProfilePhoto を更新する
 
@@ -17,18 +17,18 @@ ms.locfileid: "29521132"
 
 ベータ版では、この操作に PUT のみを使用します。
 
-> 注 ベータ版の写真更新操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
+> **注** ベータ版の写真更新操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | サインインしている**ユーザー**のプロフィールの写真。<br/>User.ReadWrite、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.ReadWrite |
+|委任 (職場または学校のアカウント)     | サインインしている**ユーザー**のプロファイル写真:<br/>ユーザー読み取り/書き込みユーザー。<br /><br />**group** リソースの場合:<br />Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.ReadWrite |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | **user** リソースの場合:<br/>User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.ReadWrite |
 
-> **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。詳細については、「[ユーザーなしでアクセスを取得する](/graph/auth-v2-service)」を参照してください。
+> **メモ**組織内のユーザーの写真を更新するには、アプリに、ユーザーの代わりに使用するのではなく、アプリケーションのすべてのアクセス許可を持ち、独自の id でこの API を呼び出す必要があります。 詳細については、「サインインして[いるユーザーなしでアクセスを取得](/graph/auth-v2-service)する」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -1,15 +1,15 @@
 ---
 title: 'WorksheetCollection: add'
-description: 上に .activate()。
+description: . を有効にします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0958f8f82502c92eff08ec80a7b116c1b0c4a5f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640841"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544062"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
+|name|string|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
 
 ## <a name="response"></a>応答
 
