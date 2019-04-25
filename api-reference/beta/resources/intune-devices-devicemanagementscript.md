@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578016"
 ---
 # <a name="devicemanagementscript-resource-type"></a>devicemanagementscript リソースの種類
 
@@ -27,12 +27,12 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
 |[devicemanagementscript の作成](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|新しい[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。|
 |[devicemanagementscript の削除](../api/intune-devices-devicemanagementscript-delete.md)|なし|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)を削除します。|
 |[devicemanagementscript の更新](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティを更新します。|
-|[アクションの割り当て](../api/intune-devices-devicemanagementscript-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-devices-devicemanagementscript-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイス管理スクリプトの一意識別子。|
+|id|String|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
 |説明|String|デバイス管理スクリプトの省略可能な説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
@@ -42,7 +42,7 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String コレクション|この powershellscript インスタンスの範囲タグ id のリスト。|
+|roleScopeTagIds|String collection|この powershellscript インスタンスの範囲タグ id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,31 +1,31 @@
 ---
-title: plannerChecklistItem リソースの種類
-description: '**PlannerChecklistItem**リソースはタスクのチェックリスト内の項目を表します。タスクのチェックリストは、checklistItems オブジェクトで表されます。'
+title: プラン、listitem リソースの種類
+description: '**plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、checklistItems オブジェクトによって表されます。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 87f7349e20245068a0a29a179ddb5505cd3be0ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579047"
 ---
-# <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem リソースの種類
+# <a name="plannerchecklistitem-resource-type"></a>プラン、listitem リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerChecklistItem**リソースはタスクのチェックリスト内の項目を表します。タスクのチェックリストは、[checklistItems オブジェクト](plannerchecklistitems.md)で表されます。
+**plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、 [checklistItems オブジェクト](plannerchecklistitems.md)によって表されます。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|isChecked|Boolean|項目がチェックされた場合は `true`、それ以外の場合は `false` です。|
-|lastModifiedBy|[identitySet](identityset.md)| 読み取り専用です。これを最後に変更したユーザーの ID。|
-|lastModifiedDateTime|DateTimeOffset|読み取り専用です。これを最後に変更した日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|orderHint|String|チェックリストでの項目の相対順序を設定するのに使用します。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
-|タイトル|String|チェックリスト項目のタイトル|
+|ischecked|Boolean|値は`true` 、アイテムがチェックされ`false`ているかどうかを示します。|
+|lastModifiedBy|[identitySet](identityset.md)| 読み取り専用。 これを最後に変更するユーザー ID。|
+|lastModifiedDateTime|DateTimeOffset|読み取り専用。 この時刻が最後に変更された日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|orderHint|String|チェックリストの項目の相対的な順序を設定するために使用します。 この形式は、[ここで](planner-order-hint-format.md)説明するように定義されています。|
+|title|String|チェックリストアイテムのタイトル|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

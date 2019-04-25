@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548204"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 
@@ -70,7 +70,7 @@ ms.locfileid: "29641555"
 
 | リレーションシップ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|calls           |[call](call.md) コレクション                  |読み取り専用。Null 許容型です。|
+|calls           |[call](call.md) コレクション                  |読み取り専用です。 Null 許容型。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| アプリケーションが Azure AD アプリケーション プロキシで使用している connectorGroup です。 Null 許容型です。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 読み取り専用です。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) コレクション|読み取り専用。Null 許容型です。|

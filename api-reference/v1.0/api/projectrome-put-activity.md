@@ -1,18 +1,18 @@
 ---
 title: アクティビティを作成または置換する
-description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
+description: アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、deep insert を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 3f0864d5bdd8e393a21df49ec3fade6930fdcbde
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967285"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575311"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
-新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、[深い挿入](#example-2-deep-insert)を使用できます。
+アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、 [deep insert](#example-2-deep-insert)を使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -32,7 +32,7 @@ ms.locfileid: "29967285"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注:** URL に appActivityId を (RFC 2396 の予約文字は、16 進表現に変換する必要がありますを除くすべての文字) を URL セーフである必要がありますが、元の appActivityId は、URL セーフである必要はありません。
+> **注:** url の appactivityid は、url セーフである必要があります (RFC 2396 の予約されていない文字を除くすべての文字を16進表記に変換する必要があります) が、元の appactivityid を url セーフにする必要はありません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -42,15 +42,15 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、[アクティビティ](../resources/projectrome-activity.md)オブジェクトの JSON の形式を指定します。
+要求本文で、 [activity](../resources/projectrome-activity.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `201 Created` 、活動が作成された場合の応答コードまたは`200 OK`アクティビティが表示された場合。
+成功した場合、このメソッド`201 Created`は、アクティビティが作成された`200 OK`場合、またはアクティビティが置き換えられた場合に、応答コードを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-create-an-activity"></a>例 1: アクティビティを作成します。
+### <a name="example-1-create-an-activity"></a>例 1: アクティビティを作成する
 
 #### <a name="request"></a>要求
 
@@ -160,9 +160,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a>ディープ挿入の例 2:
+### <a name="example-2-deep-insert"></a>例 2: Deep insert
 
-次の使用例は、1 つの要求で、新しいアクティビティとそのアクティビティの履歴項目を作成します。
+この例では、1つの要求で、そのアクティビティの新しいアクティビティと履歴アイテムを作成します。
 
 #### <a name="request"></a>要求
 

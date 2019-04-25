@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581451"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail リソースの種類
 
@@ -17,24 +17,24 @@ ms.locfileid: "29575119"
 
 | プロパティ                          | 型    | 説明                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
-| reportRefreshDate                 | 日付    | コンテンツの最新の日付。          |
-| groupDisplayName                  | String  | グループの表示名。           |
-| isDeleted                         | Boolean | このユーザーが削除されたか、またはソフトをされてかどうかを削除します。 |
-| ownerPrincipalName                | String  | グループの所有者のプリンシパル名です。          |
-| lastActivityDate                  | 日付    | 次のシナリオの最後のアクティビティの日付: グループのメールボックスに受信した電子メールです。ユーザーを表示、編集、共有、または SharePoint ドキュメント ライブラリ内のファイルの同期ユーザーが SharePoint ページを表示ユーザーは、投稿、読み取り、または、Yammer グループ内のメッセージを気に入られました。 |
-| groupType                         | String  | グループの種類。 使用可能な値:**パブリック**または**プライベート**です。 |
-| membercount プロパティ                       | Int64   | グループ メンバーの数です。                  |
-| externalMemberCount               | Int64   | グループ外部のメンバーの数です。         |
-| exchangeReceivedEmailCount        | Int64   | グループのメールボックスで受信した電子メールの数。 |
-| sharePointActiveFileCount         | Int64   | SharePoint グループのサイト内のアクティブなファイルの数です。 |
-| yammerPostedMessageCount          | Int64   | Yammer のグループに投稿されたメッセージの数です。 |
-| yammerReadMessageCount            | Int64   | Yammer グループでメッセージの数を読み取る。 |
-| yammerLikedMessageCount           | Int64   | Yammer グループに賛同のメッセージの数です。 |
-| exchangeMailboxTotalItemCount     | Int64   | グループ メールボックス内のアイテムの数です。 |
-| exchangeMailboxStorageUsedInBytes | Int64   | ・ ストレージ ・ グループのメールボックスのために使用します。   |
-| sharePointTotalFileCount          | Int64   | SharePoint グループのサイト内のファイルの合計数です。 |
-| sharePointSiteStorageUsedInBytes  | Int64   | ・ ストレージ ・ グループを SharePoint サイトで使用されます。 |
-| reportPeriod                      | String  | レポートの対象日数です。    |
+| reportrefreshdate                 | Date    | コンテンツの最新の日付。          |
+| groupdisplayname                  | String  | グループの表示名。           |
+| isDeleted                         | Boolean | このユーザーが削除されているか、または削除されているか。 |
+| ownerPrincipalName                | String  | グループ所有者のプリンシパル名。          |
+| lastactivitydate                  | Date    | 次のシナリオの最後のアクティビティの日付: グループメールが受信した電子メール。SharePoint ドキュメントライブラリでユーザーが表示、編集、共有、または同期されたファイル。ユーザーが SharePoint ページを表示した。Yammer グループ内のユーザー投稿、閲覧、またはいいねのメッセージ。 |
+| groupType                         | String  | グループの種類。 使用可能な値は、 **Public**または**Private**です。 |
+| memberCount                       | Int64   | グループメンバー数。                  |
+| externalMemberCount               | Int64   | グループの外部メンバー数。         |
+| exchangeReceivedEmailCount        | Int64   | グループメールボックスが受信したメールの数。 |
+| sharePointActiveFileCount         | Int64   | SharePoint グループサイト内のアクティブなファイルの数。 |
+| yammerPostedMessageCount          | Int64   | Yammer グループに投稿されたメッセージの数。 |
+| yammerReadMessageCount            | Int64   | Yammer グループで読み取られたメッセージの数。 |
+| yammerLikedMessageCount           | Int64   | Yammer グループに賛同されたメッセージの数。 |
+| exchangeMailboxTotalItemCount     | Int64   | グループメールボックス内のアイテムの数。 |
+| exchangeMailboxStorageUsedInBytes | Int64   | グループメールボックスで使用されている記憶域。   |
+| sharePointTotalFileCount          | Int64   | SharePoint グループサイト内のファイルの合計数。 |
+| sharepointsitestorageused inbytes  | Int64   | SharePoint グループサイトで使用される記憶域。 |
+| reportperiod                      | String  | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 72597fa1678110a40b9dd1a0ea6e6235625144ab
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657533"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582879"
 ---
 # <a name="timeoffreason-resource-type"></a>timeoffreason リソースの種類
 
@@ -21,22 +21,22 @@ ms.locfileid: "30657533"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[timeoffreason の作成](../api/schedule-post-timeoffreasons.md) | [timeoffreason](timeoffreason.md) | 新しい`timeOffReason`を作成します。|
-|[リスト timeoffreason](../api/schedule-list-timeoffreasons.md) | [timeoffreason](timeoffreason.md)コレクション | スケジュールに含まれる`timeOffReasons`のリストを取得します。|
-|[timeoffreason を取得する](../api/timeoffreason-get.md) | [timeoffreason](timeoffreason.md) | ID `timeOffReason`で取得します。|
-|[timeoffreason を置換する](../api/timeoffreason-put.md) | [timeoffreason](timeoffreason.md) | を`timeOffReason`置き換えます。|
-|[timeoffreason の削除](../api/timeoffreason-delete.md) | なし | 非`timeOffReason`アクティブとしてマークします。|
+|[timeoffreason の作成](../api/schedule-post-timeoffreasons.md) | [timeoffreason](timeoffreason.md) | 新しい `timeOffReason` を作成します。|
+|[リスト timeoffreason](../api/schedule-list-timeoffreasons.md) | [timeoffreason](timeoffreason.md)コレクション | スケジュール内の `timeOffReasons` のリストを取得します。|
+|[timeoffreason を取得する](../api/timeoffreason-get.md) | [timeoffreason](timeoffreason.md) | ID で `timeOffReason` を取得します。|
+|[timeoffreason を置換する](../api/timeoffreason-put.md) | [timeoffreason](timeoffreason.md) | `timeOffReason` を置き換えます。|
+|[timeoffreason の削除](../api/timeoffreason-delete.md) | なし | `timeOffReason` を非アクティブとしてマークします。|
 
 ## <a name="properties"></a>プロパティ
 |名前          |型           |説明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
-| id            |`string`      |の ID `timeOffReason`。|
-| displayName               | `string`                  | の名前`timeOffReason`。 必須。 |
-| icontype | `enum`   | サポートされているアイコンの種類: なし、故障]起動平面ファイヤな id;診察notworking;レコーダーjuryDuty;世界中カップ代わり天気予報付piggyBank;エサケーキtrafficCone;pin晴れ. 必須。 |
-| isActive          |`bool`      | 新しいエンティティを`timeOffReason`作成するとき、または既存のエンティティを更新するときに、を使用できるかどうかを示します。 必須。 |
-| createdDateTime       |`DateTimeOffset`        |これ`timeOffReason`が最初に作成されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
-| lastModifiedDateTime      |`DateTimeOffset`         |これ`timeOffReason`が最後に更新されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |最後に更新`timeOffReason`した id。|
+| id            |`string`      |`timeOffReason` の ID。|
+| displayName               | `string`                  | の名前`timeOffReason`。 必須です。 |
+| icontype | `enum`   | サポートされているアイコンの種類: なし、故障]起動平面ファイヤな id;診察notworking;レコーダーjuryDuty;世界中カップ代わり天気予報付piggyBank;エサケーキtrafficCone;pin晴れ. 必須です。 |
+| isActive          |`bool`      | 新しくエンティティを作成する場合や、既存のエンティティを更新する場合に `timeOffReason` を使用できるかどうかを示します。 必須。 |
+| createdDateTime       |`DateTimeOffset`        |これ`timeOffReason`が最初に作成されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| lastModifiedDateTime      |`DateTimeOffset`         |これ`timeOffReason`が最後に更新されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |この `timeOffReason` を最後に更新した ID。|
 
 ## <a name="json-representation"></a>JSON 表記
 

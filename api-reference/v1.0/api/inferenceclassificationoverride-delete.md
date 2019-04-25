@@ -1,13 +1,13 @@
 ---
 title: inferenceClassificationOverride を削除する
-description: その ID で指定されたオーバーライドを削除します。
+description: その ID で指定された上書きを削除します。
 localization_priority: Normal
 ms.openlocfilehash: 303593fd666d24e2d3a1b095898c9756afd850bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577603"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>inferenceClassificationOverride を削除する
 
@@ -28,7 +28,7 @@ DELETE /me/inferenceClassification/overrides/{id}
 DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

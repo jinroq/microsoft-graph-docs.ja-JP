@@ -1,21 +1,21 @@
 ---
 title: 添付ファイルを一覧表示する
-description: Outlook のタスクに関連付けられている添付ファイルのオブジェクトの一覧を取得します。
+description: Outlook タスクに添付された attachment オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 9d330f0a86b99bbd667ff1f32a5b5fc549dfc7f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539815"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook のタスクに関連付けられている[添付ファイル](../resources/attachment.md)のオブジェクトの一覧を取得します。
+Outlook タスクに添付された[attachment](../resources/attachment.md)オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[添付ファイル](../resources/attachment.md)のオブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[attachment](../resources/attachment.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 

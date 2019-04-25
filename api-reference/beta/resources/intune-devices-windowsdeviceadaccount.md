@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5e0fc671703d9d68b908ec6ffa9ea3b1ce558a65
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784036"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547152"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31784036"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|password|文字列|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
+|パスワード|String|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
 |domainName|String|まだ文書化されていません|
 |userName|String|まだ文書化されていません|
 

@@ -3,11 +3,11 @@ title: recurrencePattern リソースの種類
 description: '定期的なイベントを繰り返す頻度について説明します。 '
 localization_priority: Normal
 ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892184"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579388"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern リソースの種類
 
@@ -30,13 +30,13 @@ ms.locfileid: "27892184"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|イベントが発生する月の日付。 **type** が、`absoluteMonthly` または `absoluteYearly` の場合、必要です。 |
-|daysOfWeek|dayOfWeek コレクション|イベントが発生する曜日のコレクションです。 可能な値: `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
-|firstDayOfWeek|dayOfWeek|週の最初の曜日を指定します。 可能な値: `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
-|index|weekIndex|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 可能な値: `first`、 `second`、 `third`、 `fourth`、 `last`。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
-|interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須。 |
+|daysOfWeek|dayOfWeek コレクション|イベントが発生する曜日のコレクションです。 使用可能な値: `sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
+|firstDayOfWeek|dayOfWeek|週の最初の曜日を指定します。 使用可能な値: `sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
+|index|weekIndex|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 使用可能な値: `first`、`second`、`third`、`fourth`、`last`。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
+|interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須です。 |
 |month|Int32|イベントが発生する月。  これは、1 から 12 までの数字です。|
 |type|recurrencePatternType|定期的なパターンの種類は、`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly`、`relativeYearly` です。 必須。|
 

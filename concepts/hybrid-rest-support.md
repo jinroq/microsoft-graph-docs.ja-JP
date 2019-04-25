@@ -3,16 +3,15 @@ title: REST API を使用して Exchange ハイブリッド展開のメールボ
 description: Office 365 の一部として、Microsoft Graph は、Exchange Online のクラウドにある顧客メールボックスへのアクセスを常に提供してきました。
 localization_priority: Priority
 ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526175"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>REST API を使用して Exchange ハイブリッド展開のメールボックスにアクセスする (プレビュー)
 
-Microsoft Graph では、Office 365 の一部としての Exchange Online で、クラウドにある顧客メールボックスへのアクセスをずっと提供してきました。
-2016 年 9 月にリリースされた Exchange On-Premises サーバー用の Exchange 2016 Cumulative Update 3 (CU3) では、Office 365 との REST API の統合のサポートが追加されています。 アプリで v1.0 の[メール](/graph/api/resources/message?view=graph-rest-1.0)、[カレンダー](/graph/api/resources/calendar?view=graph-rest-1.0)、[連絡先](/graph/api/resources/contact?view=graph-rest-1.0) API を使用している場合、_ハイブリッド_展開で認証やアプリケーションのエクスペリエンスがシームレスとなり、展開が特定の[要件](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)を満たしていれば、メールボックスがオンプレミスとクラウドのどちらにあろうと関係なくなりました。 
+Microsoft Graph では、Office 365 の一部としての Exchange Online で、クラウドにある顧客メールボックスへのアクセスをずっと提供してきました。2016 年 9 月にリリースされた Exchange On-Premises サーバー用の Exchange 2016 Cumulative Update 3 (CU3) では、Office 365 との REST API の統合のサポートが追加されています。アプリで v1.0 の[メール](/graph/api/resources/message?view=graph-rest-1.0)、[予定表](/graph/api/resources/calendar?view=graph-rest-1.0)、または[連絡先](/graph/api/resources/contact?view=graph-rest-1.0) API を使用している場合、ハイブリッド展開で認証やアプリケーションのエクスペリエンスがシームレスとなり、展開が特定の[要件](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)を満たしていれば、メールボックスがオンプレミスとクラウドのどちらにあろうと関係なくなりました。 
 
 
 舞台裏では、ハイブリッド展開のオンプレミスのメールボックスに REST API 呼び出しがアクセスしようとしていることを Microsoft Graph が識別すると、Microsoft Graph は REST 要求をオンプレミスの REST エンドポイントに送り、エンドポイントがその要求を処理します。この検出により、REST API へのアクセスが可能になります。
@@ -21,7 +20,7 @@ Microsoft Graph では、Office 365 の一部としての Exchange Online で、
 
 >ハイブリッド展開のメールボックスでは、v1.0 のメール、予定表、連絡先 API のみを使用できます。[グループ](/graph/api/resources/group?view=graph-rest-1.0) API など、他の v1.0 API セットや、他のバージョンの API は使用できません。ハイブリッド展開でサポートされているセットに属さない API を使用しようとすると、次のエラー メッセージが表示されます。
 
->"このメールボックスの REST API は現在プレビュー段階です。 REST API (プレビュー) の詳細については、https://dev.outlook.com をご覧ください。"
+>"このメールボックスの REST API は現在プレビュー段階です。REST API (プレビュー) の詳細については、https://dev.outlook.com をご覧ください。"
 
 ## <a name="requirements-for-the-rest-api-to-work-in-hybrid-deployments"></a>ハイブリッド展開で REST API が作動する要件
 

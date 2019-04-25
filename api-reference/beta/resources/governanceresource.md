@@ -1,53 +1,53 @@
 ---
 title: governanceResource リソースの種類
-description: 特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
+description: 特権 id 管理 (PIM) によって管理される可能性があるリソースを表します。 Azure リソースの場合は、サブスクリプション、リソースグループ、仮想マシン、SQL データベースなどのリソースを使用できます。
 localization_priority: Normal
 ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547426"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
+特権 id 管理 (PIM) によって管理される可能性があるリソースを表します。 Azure リソースの場合は、サブスクリプション、リソースグループ、仮想マシン、SQL データベースなどのリソースを使用できます。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド          | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
-|[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)コレクション|リクエスターへのアクセス権を持つリソースの一覧を表示します。|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Id で指定されたリソースのエンティティのプロパティと関係を参照してください。|
-|[REGISTER](../api/governanceresource-register.md) | |アンマネージ Azure サブスクリプションまたは管理グループに PIM サービスを登録します。 |
+|[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)コレクション|要求者がアクセスできるリソースのコレクションを一覧表示します。|
+|[取得](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |id で指定されたリソースエンティティのプロパティとリレーションシップを読み取ります。|
+|[登録](../api/governanceresource-register.md) | |管理されていない Azure サブスクリプションまたは管理グループを PIM サービスに登録します。 |
 
-No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefinitions`ここではエンティティのセットです。
+`PATCH` `roleDefinitions`現時点では、entity set ではサポートされていません`POST` `PUT` `DELETE`
 
 ## <a name="properties"></a>プロパティ
 | プロパティ          |型         |説明|
 |:------------------|:----------|:----------|
-|id                 |String     |リソースの ID。 GUID 形式であります。|
-|externalId           |String   |外部システムで、元の id を表すリソースの外部の id です。 たとえば、サブスクリプション リソースの外部 id には、「サブスクリプション/c14ae696-5e0c-4e5d-88cc-bef6637737ac」ができます。 |
-|type               |String     |必須。 リソースの種類 たとえば、Azure のリソースの種類可能性があります「サブスクリプション」、「リソース グループ」、"Microsoft.Sql/server"など。|
+|id                 |String     |リソースの id。 GUID 形式です。|
+|externalId           |String   |外部システムの元の id を表す、リソースの外部 id。 たとえば、サブスクリプションリソースの外部 id は "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac" にすることができます。 |
+|type               |String     |必須。 リソースの種類。 たとえば、Azure リソースの場合、この型は "Subscription"、"ResourceGroup"、"Microsoft .sql/server" などになります。|
 |displayName        |String     |リソースの表示名。|
-|status             |文字列型 (String)     |特定のリソースの状態です。 たとえば、リソースをロックするかどうかを表すことが、(値: `Active` / `Locked`)。 メモ: このプロパティ拡張することが、将来的に複数のシナリオをサポートします。|
-|registeredDateTime|DateTimeOffset      |PIM にリソースを登録するときの日時を表します。|
-|registeredRoot|String      |PIM に登録されているリソースのルート スコープの externalId です。 ルート スコープには、親、親の親、または先祖の高いリソースができます。|
-|roleAssignmentCount|Int32      |省略可能。 特定のリソースに対するロールの割り当ての数です。 プロパティを取得するには、明示的に使用をしてください。`$select=roleAssignmentCount`クエリにします。|
-|roleDefinitionCount|Int32      |省略可能。 指定されたリソースの役割の定義の数です。 プロパティを取得するには、明示的に使用をしてください。`$select=roleDefinitionCount`クエリにします。|
-|permissions|[governancePermission](../resources/governancepermission.md)      |省略可能。 リソースへのアクセスの要求元の状態を表します。プロパティを取得するには、明示的に使用をしてください。`$select=permissions`クエリにします。|
+|status             |String     |指定されたリソースの状態。 たとえば、リソースがロックされているかどうかを表すことが`Active` / `Locked`できます (値:)。 注: 今後、このプロパティを拡張して、より多くのシナリオをサポートすることができます。|
+|registereddatetime|DateTimeOffset      |リソースが PIM に登録されている日時を表します。|
+|registeredroot|String      |PIM に登録されているリソースのルートスコープの externalid。 ルートスコープには、親、親、または上位の先祖リソースを指定できます。|
+|role割り当て数|Int32      |省略可能。 指定したリソースのロール割り当ての数。 プロパティを取得するには、クエリ`$select=roleAssignmentCount`で明示的にを使用してください。|
+|roledefinitioncount|Int32      |省略可能。 指定したリソースのロール定義の数。 プロパティを取得するには、クエリ`$select=roleDefinitionCount`で明示的にを使用してください。|
+|アクセス許可|[governancePermission](../resources/governancepermission.md)      |省略可能。 これは、リソースへの要求者のアクセスの状態を表します。プロパティを取得するには、クエリ`$select=permissions`で明示的にを使用してください。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ   | 型                                         |説明|
 |:---------------|:---------------------------------------------|:----------|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|リソースに対するロールの割り当てのコレクションです。|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|リソースのロール定義のコレクションです。|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースの役割の割り当て要求のコレクションです。|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロールの設定のコレクションです。|
-|Parent          |[governanceResource](../resources/governanceresource.md)           |読み取り専用です。 親リソースです。 `pimforazurerbac`シナリオでは、サブスクリプションに属しているリソースを表すことができます。|
+|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|リソースのロール割り当てのコレクション。|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|リソースのロール日のコレクション。|
+|rolerequests 要求 |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースに対する役割の割り当て要求のコレクション。|
+|rolesettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロール設定のコレクション。|
+|親行          |[governanceResource](../resources/governanceresource.md)           |読み取り専用。 親リソース。 シナリオ`pimforazurerbac`の場合は、リソースが属するサブスクリプションを表すことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

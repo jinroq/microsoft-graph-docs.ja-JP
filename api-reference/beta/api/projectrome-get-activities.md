@@ -1,20 +1,20 @@
 ---
-title: ユーザー ・ アクティビティを取得します。
-description: 特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
+title: ユーザーアクティビティを取得する
+description: 特定のユーザーのアクティビティを取得します。 **最近**の OData 関数とは異なり、履歴のないアクティビティは返されます。 アクセス許可 useractivity は、アプリケーションによって作成されたアクティビティのみが返されるように、応答に特別なフィルター処理を適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643462"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546333"
 ---
-# <a name="get-user-activities"></a>ユーザー ・ アクティビティを取得します。
+# <a name="get-user-activities"></a>ユーザーアクティビティを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
+特定のユーザーのアクティビティを取得します。 **最近**の OData 関数とは異なり、履歴のないアクティビティは返されます。 アクセス許可 useractivity は、アプリケーションによって作成されたアクティビティのみが返されるように、応答に特別なフィルター処理を適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **nextlink**プロパティを使用して改ページにします。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -34,15 +34,15 @@ ms.locfileid: "29643462"
 GET /me/activities
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするためにいくつかの[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリ パラメーターがサポートされています。
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリパラメーターがサポートされています。
 
-- $ は、 **historyItems**のナビゲーション プロパティを展開します。
+- **履歴項目**ナビゲーションプロパティの $expand。
 - ページ間でのアイテムの最大数を制限する $top。
-- **アクティビティ**または**historyItems**、展開されている場合のいずれかの**lastModifiedDateTime**プロパティで $filter。
+- **lastModifiedDateTime**プロパティを使用して、**アクティビティ**または**履歴アイテム**(展開されている場合) のどちらかを $filter します。
 
-次に、URL エンコードがサポートされているクエリの例を示します。
+次に、URL エンコードを使用してサポートされているクエリの例をいくつか示します。
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -60,11 +60,11 @@ GET /me/activities
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体がありません。
+要求本文がありません。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、アプリケーションのユーザーのアクティビティに応答コード。
+成功した場合、このメソッド`200 OK`はアプリケーションに対するユーザーのアクティビティと共に応答コードを返します。
 
 ## <a name="example"></a>例
 

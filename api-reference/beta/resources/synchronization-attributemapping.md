@@ -1,31 +1,31 @@
 ---
 title: attributeMapping リソースの種類
-description: 特定のターゲット属性の値が同期中にフローは方法を定義します。
+description: 特定のターゲット属性の値が同期中にどのように流れるかを定義します。
 localization_priority: Normal
 ms.openlocfilehash: 16235cce73a17b462f6f44aedf0c8759277983c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641877"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582113"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のターゲット属性の値が同期中にフローは方法を定義します。
+特定のターゲット属性の値が同期中にどのように流れるかを定義します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                  | 型                      | 説明    |
 |:--------------------------|:--------------------------|:---------------|
-|defaultValue               | 文字列                    |既定値に、 **source**プロパティが評価された場合に使用する`null`。 省略可能。|
-|exportMissingReferences    |String                     |内部使用のみ。|
-|flowBehavior               |attributeFlowBehavior      |この属性をターゲット ディレクトリにエクスポートするときを定義します。 使用可能な値:`FlowWhenChanged`と`FlowAlways`。 既定値は `FlowWhenChanged` です。 |
-|flowType                   |attributeFlowType          |ターゲット ディレクトリにこの属性を更新するときを定義します。 使用可能な値: `Always` (既定値)、 `ObjectAddOnly` (だけ新しいオブジェクトが作成された日時) `MultiValueAddOnly` (のみと変更は、値を追加する新しい複数値を持つ属性に)。 |
-|matchingPriority           |Int32                      |0 よりも大きい場合、は、ソースとターゲットのディレクトリ間でオブジェクトの最初の一致を実行するこの属性が使用されます。 同期エンジンは、優先度と一致する最初の最小値を持つ属性を使用して一致するオブジェクトを検索しようとしています。 かどうか、次に一致する優先順位を持つ属性を使用してために、一致が見つかったか、これ以上の一致する属性が残っているまでです。 一致する属性としては、e メールのような一意の値があると予想される属性だけを使用してください。|
-|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定義の値がどのようにする必要があります抽出 (変換)、ソース オブジェクトからです。 |
-|targetAttributeName        |String                     |対象のオブジェクトの属性の名前です。 |
+|defaultValue               | String                    |**source**プロパティがに`null`評価された場合に使用される既定値です。 省略可能。|
+|exportMissingReferences    |String                     |内部使用のために用意されています。|
+|flowbehavior               |attributeflowbehavior      |この属性をターゲットディレクトリにエクスポートするタイミングを定義します。 可能な値は`FlowWhenChanged` 、 `FlowAlways`とです。 既定値は `FlowWhenChanged` です。 |
+|flowtype                   |attributeflowtype          |この属性をターゲットディレクトリでいつ更新する必要があるかを定義します。 可能な値は`Always`次のとおりです`ObjectAddOnly` (既定値)。 (新しいオブジェクトが`MultiValueAddOnly`作成された場合のみ)、(変更によって新しい値が複数値属性に追加されている場合のみ)。 |
+|matchingPriority           |Int32                      |0より大きい場合は、この属性を使用して、ソースディレクトリとターゲットディレクトリの間でオブジェクトの初期一致を実行します。 同期エンジンは、一致する優先度の値が最も小さい属性を使用して、一致するオブジェクトを検索します。 見つからない場合は、次に一致する優先度の属性が使用され、一致が見つかるまで、またはそれ以上一致する属性が残っていないことを示します。 電子メールなどの一意の値を持つことが予想される属性のみを一致属性として使用する必要があります。|
+|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | ソースオブジェクトから値を抽出 (変換) する方法を定義します。 |
+|targetAttributeName        |String                     |ターゲットオブジェクトの属性の名前。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

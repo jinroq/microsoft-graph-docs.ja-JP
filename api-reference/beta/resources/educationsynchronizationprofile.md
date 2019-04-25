@@ -1,57 +1,57 @@
 ---
 title: educationSynchronizationProfile リソースの種類
-description: 教育エンティティと、ソース ディレクトリから Azure Active directory (AD の Azure) の名簿の情報を同期するために使用する構成のセットを表します。 このリソースは、学校のデータの同期で使用されるプログラムの表現を提供します。
+description: 教育機関のエンティティおよび名簿の情報をソースディレクトリから azure Active directory (azure AD) に同期するために使用される構成のセットを表します。 このリソースは、School Data Sync で使用されるプログラム的な表現を提供します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e1b81ff14aca2b0f81a7f50e01aed6281d03d14d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542875"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-教育エンティティと、ソース ディレクトリから Azure Active directory (AD の Azure) の名簿の情報を同期するために使用する構成のセットを表します。 このリソースは、[学校のデータの同期](https://sds.microsoft.com)で使用されるプログラムの表現を提供します。
+教育機関のエンティティおよび名簿の情報をソースディレクトリから azure Active directory (azure AD) に同期するために使用される構成のセットを表します。 このリソースは、 [School Data Sync](https://sds.microsoft.com)で使用されるプログラム的な表現を提供します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド | 戻り値の型 | 説明 |
 |:-|:-|:-|
-| [同期プロファイルのリスト](../api/educationsynchronizationprofile-list.md) | **educationSynchronizationProfile**コレクション | テナント内のすべての同期プロファイルの一覧を取得します。 |
-| [同期プロファイルを取得します。](../api/educationsynchronizationprofile-get.md) | **educationSynchronizationProfile** | プロファイル識別子を指定した特定のプロファイルを取得します。 |
-| [同期プロファイルを作成します。](../api/educationsynchronizationprofile-post.md) | なし | 新しい同期プロファイルを作成します。 |
-| [同期プロファイルを削除します。](../api/educationsynchronizationprofile-delete.md) | **educationSynchronizationProfile** | プロファイル識別子を指定した特定のプロファイルを削除します。 |
-| [進行中の同期を一時停止します。](../api/educationsynchronizationprofile-pause.md) | なし | 実行中の同期を一時停止します。 |
-| [一時停止中の同期を再開します。](../api/educationsynchronizationprofile-resume.md) | なし | 一時停止中の同期を再開します。 |
-| [同期をリセットします。](../api/educationsynchronizationprofile-reset.md) | なし | プロファイルの状態をリセットし、同期を再開します。 |
-| [アップロードされたファイルの同期を開始します。](../api/educationsynchronizationprofile-start.md) | [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md)コレクション| アップロードされたソース ファイルを確認し、同期を開始します。 データ プロバイダーが[educationCsvDataProvider](educationcsvdataprovider.md)が場合にのみ適用されます。 |
-| [アップロード先の URL を取得します。](../api/educationsynchronizationprofile-uploadurl.md) | string | CSV データ ファイルをアップロードするのには短時間の URL を返します。 データ プロバイダーが[educationCsvDataProvider](educationcsvdataprovider.md)が場合にのみ適用されます。 |
-| [同期のステータスを取得します。](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | 特定の同期プロファイルの状態を返します。 |
-| [同期エラーが発生をします。](../api/educationsynchronizationerrors-get.md) | [educationSynchronizationError](educationsynchronizationerror.md)コレクション| 同期処理中に生成されたすべてのエラーを取得します。 |
+| [同期プロファイルの一覧表示](../api/educationsynchronizationprofile-list.md) | **educationSynchronizationProfile**コレクション | テナント内のすべての同期プロファイルの一覧を取得します。 |
+| [同期プロファイルを取得する](../api/educationsynchronizationprofile-get.md) | **educationSynchronizationProfile** | プロファイル識別子を指定して、特定のプロファイルを取得します。 |
+| [同期プロファイルの作成](../api/educationsynchronizationprofile-post.md) | なし | 新しい同期プロファイルを作成します。 |
+| [同期プロファイルの削除](../api/educationsynchronizationprofile-delete.md) | **educationSynchronizationProfile** | プロファイル識別子を指定して、特定のプロファイルを削除します。 |
+| [進行中の同期を一時停止する](../api/educationsynchronizationprofile-pause.md) | なし | 進行中の同期を一時停止します。 |
+| [一時停止した同期を再開する](../api/educationsynchronizationprofile-resume.md) | なし | 一時停止した同期を再開します。 |
+| [同期をリセットする](../api/educationsynchronizationprofile-reset.md) | なし | プロファイルの状態をリセットし、同期を再開します。 |
+| [アップロードしたファイルの同期を開始する](../api/educationsynchronizationprofile-start.md) | [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md)コレクション| アップロードしたソースファイルを確認し、同期を開始します。 データプロバイダーが[educationCsvDataProvider](educationcsvdataprovider.md)の場合にのみ適用されます。 |
+| [アップロード URL を取得する](../api/educationsynchronizationprofile-uploadurl.md) | string | CSV データファイルをアップロードするための短時間の URL を返します。 データプロバイダーが[educationCsvDataProvider](educationcsvdataprovider.md)の場合にのみ適用されます。 |
+| [同期の状態を取得する](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | 特定の同期プロファイルの状態を返します。 |
+| [同期エラーを取得する](../api/educationsynchronizationerrors-get.md) | [educationSynchronizationError](educationsynchronizationerror.md)コレクション| 同期中に生成されたすべてのエラーを取得します。 |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **displayName** | string |  アイデンティティの同期の構成プロファイルの名前。         |
-| **データプロバイダー** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  プロファイルに使用するデータ プロバイダーです。         |
-| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | アイデンティティの[作成](educationidentitycreationconfiguration.md)時または[一致する](educationidentitymatchingconfiguration.md)構成です。        |
-| **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)コレクション|  セットアップ構成を使用します。        |
-| **state** | educationSynchronizationProfileState |  プロファイルの状態です。 可能な値は、`provisioning`、`provisioned`、`provisioningFailed`、`deleting`、`deletionFailed` です。          |
+| **displayName** | string |  id を同期するための構成プロファイルの名前。         |
+| **プロバイダー** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  プロファイルに使用されるデータプロバイダー。         |
+| **id の同期構成** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | id の[作成](educationidentitycreationconfiguration.md)または[一致する](educationidentitymatchingconfiguration.md)構成。        |
+| **licensestoassign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)コレクション|  ライセンスのセットアップ構成。        |
+| **state** | educationSynchronizationProfileState |  プロファイルの状態。 可能な値は、`provisioning`、`provisioned`、`provisioningFailed`、`deleting`、`deletionFailed` です。          |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
 | **errors** | [educationSynchronizationError](educationsynchronizationerror.md)コレクション| この同期プロファイルに関連付けられているすべてのエラー。 |
-| **profileStatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | 同期の状態です。 |
+| **profilestatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | 同期の状態。 |
 
 ## <a name="json-representation"></a>JSON 表記
-**EducationSynchronizationProfile**リソースの JSON の形式を次に示します。
+次に示すのは、 **educationSynchronizationProfile**リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",

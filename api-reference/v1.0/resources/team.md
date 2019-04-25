@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7c3dd42c25ce8c48722ab857f61e0c6a9a275581
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ff264052fd1a30c12935a3b7cf0d9e250597a434
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534452"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -73,9 +73,9 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "internalId": "19:...big.number...@thread.skype",
+  "internalId": "string",
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "string (URL)"
 }
 
 ```

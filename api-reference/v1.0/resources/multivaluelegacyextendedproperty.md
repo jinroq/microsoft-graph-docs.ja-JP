@@ -3,11 +3,11 @@ title: multiValueLegacyExtendedProperty リソースの種類
 description: 値のコレクションが含まれる拡張プロパティ。
 localization_priority: Normal
 ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827035"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580269"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty リソースの種類
 
@@ -20,12 +20,12 @@ ms.locfileid: "27827035"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | サポートされているリソース インスタンス: [メッセージ](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[連絡先](../resources/contact.md)、または [contactFolder](../resources/contactfolder.md)。グループ[投稿](../resources/post.md) はサポートされていませんので、ご注意ください。 | サポートされているリソースの新しいインスタンスまたは既存のインスタンスに **multiValueLegacyExtendedProperty** を作成します。 |
-|[Get](../api/multivaluelegacyextendedproperty-get.md) |[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) オブジェクトで拡張されたサポートされているリソースのインスタンス ([メッセージ](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[連絡先](../resources/contact.md)、[contactFolder](../resources/contactfolder.md)、またはグループ[投稿](../resources/post.md))。 |`$expand` を使用して拡張プロパティでリソース インスタンスを取得します。|
+|[Get](../api/multivaluelegacyextendedproperty-get.md) |[multiValueLegacyExtendedProperty](../resources/message.md) オブジェクトで拡張されたサポートされているリソースのインスタンス ([メッセージ](../resources/mailfolder.md)、[mailFolder](../resources/event.md)、[イベント](../resources/calendar.md)、[予定表](../resources/contact.md)、[連絡先](../resources/contactfolder.md)、[contactFolder](../resources/post.md)、またはグループ[投稿](multivaluelegacyextendedproperty.md))。 |`$expand` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|プロパティ識別子。読み取り専用です。|
+|id|string|プロパティ識別子。読み取り専用です。|
 |value|string collection|プロパティ値のコレクション。|
 
 ## <a name="relationships"></a>関係

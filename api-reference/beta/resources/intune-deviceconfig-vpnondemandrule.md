@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3209c91400b36adba772273cfa6768049adce448
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561930"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule リソースの種類
 
@@ -22,15 +22,15 @@ VPN のオンデマンドルールの定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ssid|String コレクション|ネットワークサービスセット識別子 (ssid)。|
-|dnssearchdomains|String コレクション|DNS 検索ドメイン。|
-|probeUrl|文字列|プローブする URL。 リダイレクトされていない (200 HTTP 状態コードを返す) この URL が正常に取得された場合、このルールは一致します。|
-|アクション|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. 可能な値は、`connect`、`evaluateConnection`、`ignore`、`disconnect` です。|
+|ssid|String collection|ネットワークサービスセット識別子 (ssid)。|
+|dnssearchdomains|String collection|DNS 検索ドメイン。|
+|probeUrl|String|プローブする URL。 リダイレクトされていない (200 HTTP 状態コードを返す) この URL が正常に取得された場合、このルールは一致します。|
+|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. 使用可能な値は、`connect`、`evaluateConnection`、`ignore`、`disconnect` です。|
 |domainaction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|ドメインアクション (アクションが接続を評価する場合にのみ該当)。 可能な値は、`connectIfNeeded`、`neverConnect` です。|
-|ドメイン|String コレクション|ドメイン (アクションが接続を評価する場合にのみ該当)。|
-|probeRequiredUrl|文字列|必要な Url をプローブします (アクションが接続を評価する場合にのみ適用され、必要に応じて、domainaction が connect である)。|
+|ドメイン|String collection|ドメイン (アクションが接続を評価する場合にのみ該当)。|
+|probeRequiredUrl|String|必要な Url をプローブします (アクションが接続を評価する場合にのみ適用され、必要に応じて、domainaction が connect である)。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

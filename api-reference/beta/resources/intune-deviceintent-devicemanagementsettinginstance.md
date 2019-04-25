@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 49f97d47b5ff75e927a5637356476392047a2f8c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550540"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>devicemanagementsettinginstance リソースの種類
 
@@ -29,8 +29,8 @@ ms.locfileid: "31807911"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|設定インスタンス ID|
-|definitionId|文字列|このインスタンスの設定定義の ID|
-|valuejson|文字列|値の JSON 表現|
+|definitionId|String|このインスタンスの設定定義の ID|
+|valuejson|String|値の JSON 表現|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

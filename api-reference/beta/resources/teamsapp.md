@@ -1,55 +1,55 @@
 ---
-title: teamsApp リソースの種類
-description: マイクロソフト チーム アプリケーション カタログのアプリケーションです。
+title: teamsapp リソースの種類
+description: Microsoft Teams アプリカタログのアプリ。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: fe60222ae6c5d8475722e18e69555df2d3892759
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529944"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553954"
 ---
-# <a name="teamsapp-resource-type"></a>teamsApp リソースの種類
+# <a name="teamsapp-resource-type"></a>teamsapp リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[マイクロソフト チーム](teams-api-overview.md)アプリケーション カタログのアプリケーションです。
+[Microsoft Teams](teams-api-overview.md)アプリカタログのアプリ。
 
-マイクロソフト チーム ストア内のこれらのアプリケーションを表示して、[チーム](team.md)が[チームに追加のアプリケーション](../api/teamsappinstallation-add.md)のメソッドを使用してこれらのアプリケーションをインストールすることができます。
+ユーザーは、これらのアプリを Microsoft teams ストアで表示できます。これらのアプリは、[[アプリをチームに追加する](../api/teamsappinstallation-add.md)] メソッドを使用して[Teams](team.md)にインストールできます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[公開されたアプリケーションの一覧を表示します。](../api/teamsapp-list.md) | [teamsApp](teamsapp.md)コレクション | マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。|
-|[アプリケーションを発行します。](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 組織のアプリケーションのカタログには、アプリケーションを発行します。|
-|[発行したアプリケーションを更新します。](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 組織のアプリケーションのカタログに公開されたアプリケーションを更新します。|
-|[発行したアプリケーションを削除します。](../api/teamsapp-delete.md) | なし | 発行したアプリケーションを組織のアプリケーションのカタログから削除します。|
+|[公開されたアプリの一覧を表示する](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) コレクション | Microsoft Teams アプリカタログから、公開されたアプリを一覧表示します。|
+|[アプリを発行する](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 組織のアプリカタログにアプリを発行します。|
+|[公開されたアプリを更新する](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 組織のアプリカタログで公開されているアプリを更新します。|
+|[公開されたアプリを削除する](../api/teamsapp-delete.md) | なし | 公開されたアプリを組織のアプリカタログから削除します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
-| id                  | 文字列   | カタログ アプリケーションの生成のアプリケーション ID を ([マイクロソフト チーム zip アプリケーション パッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)の開発者から提供された ID とは異なる。 |
-| externalId          | string   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログの ID です。 |
-| displayName                | string   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログのアプリケーションの名前。 |
-| distributionMethod  | teamsAppDistributionMethod     | アプリケーション配布の方法です。 |
+| id                  | string   | カタログアプリの生成されたアプリ id ( [Microsoft Teams zip アプリパッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)の開発者提供の id とは異なります)。 |
+| externalId          | string   | [Microsoft Teams zip アプリパッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)のアプリ開発者によって提供されるカタログの ID。 |
+| displayName                | string   | [Microsoft Teams zip アプリパッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)のアプリ開発者によって提供されるカタログアプリの名前です。 |
+| distributionMethod  | teamsAppDistributionMethod     | アプリの配布方法。 |
 
-### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 値
+### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod の値
 
-|Member|値|説明|
+|メンバー|値|説明|
 |:---|:---|:---|
-|Store|(0)| アプリケーションは、マイクロソフトのチームのアプリケーション ストアからのすべてのテナントに使用できます。|
-|組織|-1|アプリケーションは、このテナントでのみ使用可能です。|
-|sideloaded|-2|アプリケーションは、ユーザーまたはチームのみ使用可能です、インストールされているをします。|
+|ストア|.0| アプリは、Microsoft Teams アプリストアを介してすべてのテナントで利用できます。|
+|組織|1 |アプリはこのテナントでのみ使用できます。|
+|サイドロード|2 |アプリは、そのアプリがインストールされているユーザー/チームのみが利用できます。|
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型   | サポートのメモ |
+| リレーションシップ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md)コレクション| アプリケーションの各バージョンの詳細です。 |
+|appdefinitions|[teamsAppDefinition](teamsappdefinition.md)コレクション| アプリの各バージョンの詳細。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

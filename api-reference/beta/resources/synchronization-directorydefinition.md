@@ -1,32 +1,32 @@
 ---
-title: directoryDefinition リソースの種類
-description: ディレクトリとそのオブジェクトの同期エンジンに関する情報を提供します。 このリソースは、同期エンジンなどのディレクトリが**ユーザー**と**グループ**、それらのオブジェクトとそれらの属性の型の属性はサポートされてをという名前のオブジェクトを持っています。 同期化規則とオブジェクトのマッピングに参加するオブジェクトおよび属性の順序で、ディレクトリの定義の一部としてこれらに定義しなければなりません。
+title: directorydefinition リソースの種類
+description: ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。 オブジェクトと属性を同期ルールおよびオブジェクトマッピングに参加させるには、それらをディレクトリ定義の一部として定義する必要があります。
 localization_priority: Normal
 ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508126"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582067"
 ---
-# <a name="directorydefinition-resource-type"></a>directoryDefinition リソースの種類
+# <a name="directorydefinition-resource-type"></a>directorydefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリとそのオブジェクトの同期エンジンに関する情報を提供します。 このリソースは、同期エンジンなどのディレクトリが**ユーザー**と**グループ**、それらのオブジェクトとそれらの属性の型の属性はサポートされてをという名前のオブジェクトを持っています。 [同期化規則](synchronization-synchronizationrule.md)と[オブジェクトのマッピング](synchronization-objectmapping.md)に参加するオブジェクトおよび属性の順序で、ディレクトリの定義の一部としてこれらに定義しなければなりません。
+ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。 オブジェクトと属性を[同期ルール](synchronization-synchronizationrule.md)および[オブジェクトマッピング](synchronization-objectmapping.md)に参加させるには、それらをディレクトリ定義の一部として定義する必要があります。
 
-一般に、[同期のテンプレート](synchronization-synchronizationtemplate.md)の一部として提供されている既定の[スキーマの同期](synchronization-synchronizationschema.md)では、最も一般的に使用されるオブジェクトおよびそのディレクトリの属性を定義します。 ただし、ディレクトリでは、カスタム属性の追加をサポートする場合、独自のカスタム オブジェクトまたは属性の既定の定義を展開します。 詳細については、[カスタム属性を使用して同期を構成](synchronization-configure-with-custom-target-attributes.md)し、[ディレクトリの拡張属性を使用して構成の同期](synchronization-configure-with-directory-extension-attributes.md)を参照してください。
+通常、[同期テンプレート](synchronization-synchronizationtemplate.md)の一部として提供される既定の[同期スキーマ](synchronization-synchronizationschema.md)は、そのディレクトリに最もよく使用されるオブジェクトと属性を定義します。 ただし、ディレクトリでカスタム属性の追加がサポートされている場合は、独自のカスタムオブジェクトまたは属性を使用して、既定の定義を拡張することもできます。 詳細については、「[カスタム属性を使用して同期を構成する](synchronization-configure-with-custom-target-attributes.md)」および「 [configure synchronization with directory extension attributes](synchronization-configure-with-directory-extension-attributes.md)」を参照してください。
 
-ディレクトリの定義は、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
+ディレクトリ定義は、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|id           |String     |ディレクトリの識別子です。 null 許容ではありません。|
-|metadata       |metadataEntry コレクション    |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
-|name           |String     |ディレクトリの名前です。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容ではありません。|
-|オブジェクト        |[objectDefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|
+|id           |String     |ディレクトリ識別子。 null 許容ではありません。|
+|metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |ディレクトリの名前。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容ではありません。|
+|対象        |[objectdefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|
 
 ## <a name="json-representation"></a>JSON 表記
 

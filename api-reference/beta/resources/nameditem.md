@@ -3,11 +3,11 @@ title: NamedItem リソースの種類
 description: セルまたは値の範囲の定義済みの名前を表します。名前には、(以下の型に見られるような) プリミティブ名前付きオブジェクト、範囲オブジェクト、範囲への参照を設定できます。このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 localization_priority: Normal
 ms.openlocfilehash: 5dd093976b2c09ae93c608144c8d6c2b7d7161c2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649432"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581500"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem リソースの種類
 

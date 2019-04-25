@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
 ms.openlocfilehash: 485714109005415d4a2c98fbbf2befb50ca991d0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481756"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582874"
 ---
 # <a name="thumbnail-resource-type"></a>サムネイル リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "30481756"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類   | 説明                                                                                                                 |
+| プロパティ     | 型   | 説明                                                                                                                 |
 | :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
 | height       | Int32  | サムネイルの高さ (ピクセル単位)。                                                                                     |
 | sourceItemId | String | サムネイルを提供したアイテムの一意識別子。フォルダーのサムネイルが要求された場合にのみ利用可能です。 |
@@ -50,7 +50,7 @@ ms.locfileid: "30481756"
 
 ## <a name="relationships"></a>関係
 
-| 名前    | 種類   | 説明                           |
+| 名前    | 型   | 説明                           |
 | :------ | :----- | :------------------------------------ |
 | content | Stream | サムネイルのコンテンツ ストリーム。 |
 

@@ -2,23 +2,23 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: SitePageData
+title: sitepagedata
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583397"
 ---
-# <a name="sitepagedata-resource"></a>sitePageData リソース
+# <a name="sitepagedata-resource"></a>sitepagedata リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SitePageData**リソースでは、 [web パーツ][]のプロパティを表します。 これらのプロパティは、web パーツによって異なりますが、固定プロパティを持たない、OpenType。
+**sitepagedata**リソースは[webPart][]のプロパティを表します。 これらのプロパティは web パーツによって異なるため、これは固定プロパティを持たない OpenType です。
 
-[web パーツ]: webpart.md
+[パーツ]: webpart.md
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -34,7 +34,7 @@ ms.locfileid: "29644022"
 ```
 
 ## <a name="properties"></a>プロパティ
-このリソースには、固定プロパティはありませんが、OpenType は、web パーツを定義するために必要なすべてのプロパティを含みます。
+このリソースには固定されたプロパティはありませんが、web パーツを定義するために必要なすべてのプロパティを含む OpenType です。
 
 <!--
 {

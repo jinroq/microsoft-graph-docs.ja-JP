@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538848"
 ---
 # <a name="update-plannertask"></a>Update plannertask
 
@@ -44,13 +44,13 @@ PATCH /planner/tasks/<id>
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|タスクが適用されているカテゴリ。可能な値については、「[適用されるカテゴリ](../resources/plannerappliedcategories.md)」を参照してください。|
 |assigneePriority|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](../resources/planner-order-hint-format.md)の説明に従って定義されます。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|タスクが割り当てられているユーザーのセット。|
-|bucketId|String|バケット id は、タスクが属する。 バケットは、タスクが含まれるプランにする必要があります。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](../resources/tasks-identifiers-disclaimer.md)が行われます。 |
-|conversationThreadId|文字列|タスク内の会話のスレッド ID。これは、グループ内に作成された会話スレッド オブジェクトの ID です。|
+|bucketId|String|タスクが属するバケット id。 バケットは、タスクが存在している計画に含まれている必要があります。 28 文字長で、大文字と小文字の区別があります。 [書式検証](../resources/tasks-identifiers-disclaimer.md)はサービスによって行われます。 |
+|conversationThreadId|String|タスク内の会話のスレッド ID。これは、グループ内に作成された会話スレッド オブジェクトの ID です。|
 |dueDateTime|DateTimeOffset|タスクが期限切れになる日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](../resources/planner-order-hint-format.md)の説明に従って定義されます。|
 |percentComplete|Int32|タスクの完了の割合。`100` に設定すると、タスクが完了したと見なされます。 |
 |startDateTime|DateTimeOffset|タスクが開始される日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|タイトル|String|タスクのタイトル。|
+|title|String|タスクのタイトル。|
 
 ## <a name="response"></a>応答
 

@@ -6,11 +6,11 @@ title: SharePoint リスト内のレコードを更新する
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: f80f2607e953ba760893170366179f6751d9665d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541410"
 ---
 # <a name="update-an-item-in-a-list"></a>リスト内のアイテムを更新する
 

@@ -1,25 +1,25 @@
 ---
-title: デバッギングを削除します。
-description: Azure AD のレビュー機能にアクセス、デバッギング オブジェクトを削除します。  プログラムからのアクセス レビューのリンクを解除します。
+title: programcontrol の削除
+description: Azure AD access レビュー機能で、programcontrol オブジェクトを削除します。  これにより、プログラムからのアクセスレビューがリンク解除します。
 localization_priority: Normal
 ms.openlocfilehash: 7510dfe80f758a75f190402d3ae426138e60bbed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538558"
 ---
-# <a name="delete-programcontrol"></a>デバッギングを削除します。
+# <a name="delete-programcontrol"></a>programcontrol の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では、[デバッギング](../resources/programcontrol.md)オブジェクトを削除します。  プログラムからのアクセス レビューのリンクを解除します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [programcontrol](../resources/programcontrol.md)オブジェクトを削除します。  これにより、プログラムからのアクセスレビューがリンク解除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、ディレクトリの役割、デバッギングを削除することを許可する必要があります。 |
+|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  また、サインインしているユーザーは、programcontrol を削除することを許可するディレクトリロールにある必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -31,7 +31,7 @@ DELETE /programControls('<id>')
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

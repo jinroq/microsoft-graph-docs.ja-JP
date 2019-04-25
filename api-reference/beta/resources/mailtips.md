@@ -1,38 +1,38 @@
 ---
-title: リソースの種類のメール ヒント
-description: 'メッセージの作成中にユーザーに表示される、受信者に関する情報メッセージです。 たとえば、不在時のメッセージ '
+title: メールヒントリソースの種類
+description: 'メッセージの作成中にユーザーに対して表示される、受信者に関する情報メッセージ。 たとえば、不在時のメッセージ '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 11e64c09a90d130b7656d4e87770e6df3fb67408
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508413"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562617"
 ---
-# <a name="mailtips-resource-type"></a>リソースの種類のメール ヒント
+# <a name="mailtips-resource-type"></a>メールヒントリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メッセージの作成中にユーザーに表示される、受信者に関する情報メッセージです。 など、不在時のメッセージ、自動返信メッセージの受信者として。
+メッセージの作成中にユーザーに対して表示される、受信者に関する情報メッセージ。 たとえば、不在時のメッセージは、メッセージの受信者に対する自動応答として表示されます。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| AutomaticReplies | [AutomaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 受信者によって設定されている場合の自動応答に関するメールのヒント。 |
-| CustomMailTip | String | 受信者のメールボックスに設定可能なカスタム メールのヒント。 |
-| DeliveryRestricted| ブール値 | 受信者のメールボックスが制限されているかどうか。たとえば、送信者の定義済みリストからのメッセージのみを受け付ける、送信者の定義済みリストからのメッセージを拒否する、または認証された送信者からのメッセージのみを受信するなどです。 |
-| emailAddress | [emailAddress](../resources/emailaddress.md) | メールヒントを取得する受信者の電子メール アドレス。 |
-| エラー | [mailTipsError](../resources/mailtipserror.md) | [GetMailTips](../api/user-getmailtips.md) アクション中に発生するエラー。 |
-| ExternalMemberCount | Int32 | 受信者が配布リストの場合は外部メンバーの数です。 |
-| IsModerated |Boolean  | 受信者へのメッセージ送信に承認が必要かどうか。たとえば、受信者が大規模な配布リストであり、モデレーターが配布リストに送信されたメッセージを承認するようにセットアップされている場合、または受信者へのメッセージの送信に受信者の上司の承認を必要とする場合などです。 |
-| MailboxFull | ブール値 | 受信者のメールボックスのフル状態。 |
-| MaxMessageSize | Int32 | 受信者の組織またはメールボックスに対して構成されているメッセージの最大サイズ。 |
-| RecipientScope | String | 受信者のスコープ。 可能な値は、`none`、`internal`、`external`、`externalPartner`、`externalNonParther` です。 たとえば、管理者は、その「パートナー」になるように別の組織を設定できます。 スコープは、管理者が特定のスコープにアクセスできるようにする特定のメール ヒントを希望する場合に便利です。 送信者のメッセージが言葉使い、トーン、およびコンテンツに関する正しい判断を下すことを支援、組織になることを通知するに有用なもあります。|
-| RecipientSuggestions | [recipient](../resources/recipient.md) collection | 同じメッセージに表示される前のコンテキストに基づいて提案される受信者。 |
-| TotalMemberCount | Int32 | 受信者が配布リストの場合はメンバー数です。 |
+| 自動応答 | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 受信者によって設定されている場合、自動応答のメールヒント。 |
+| custommailtip | String | 受信者のメールボックスに設定できるカスタムメールヒント。 |
+| deliveryrestricted| Boolean | 受信者のメールボックスが制限されているかどうか。たとえば、事前に定義された送信者の一覧からのメッセージの受信、送信者の定義済みリストからのメッセージの拒否、認証済みの送信者からのメッセージの受信のみを行います。 |
+| emailAddress | [emailAddress](../resources/emailaddress.md) | メールヒントを取得する受信者の電子メールアドレス。 |
+| error | [mailTipsError](../resources/mailtipserror.md) | [getmailtips ヒント](../api/user-getmailtips.md)アクション中に発生するエラー。 |
+| externalMemberCount | Int32 | 受信者が配布リストの場合の外部メンバーの数。 |
+| ismoderated |Boolean  | 受信者にメッセージを送信するには承認が必要であるかどうか。 たとえば、受信者が大きな配布リストであり、その配布リストに送信されたメッセージを承認するようにモデレーターが設定されている場合、または受信者にメッセージを送信する場合は、受信者の上司の承認が必要です。 |
+| mailboxFull | Boolean | メールボックスのすべての受信者の状態。 |
+| maxMessageSize | Int32 | 受信者の組織またはメールボックスに対して構成された最大メッセージサイズ。 |
+| [受信者] スコープ | String | 受信者の範囲。 可能な値は、`none`、`internal`、`external`、`externalPartner`、`externalNonParther` です。 たとえば、管理者は別の組織を "パートナー" に設定することができます。 特定の範囲で特定のメールヒントにアクセスできるようにするには、スコープを使用すると便利です。 また、送信者に対して、メッセージが組織を離れていることを通知し、言葉、語調、およびコンテンツについての正しい判断を支援するためにも役立ちます。|
+| 受信者候補 | [recipient](../resources/recipient.md) collection | 同じメッセージに表示される以前のコンテキストに基づいて提案される受信者。 |
+| totalMemberCount | Int32 | 受信者が配布リストの場合のメンバー数。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

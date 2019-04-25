@@ -1,27 +1,27 @@
 ---
 title: educationPowerPointResource リソースの種類
-description: 'EducationResource のサブクラスです。 これは、PowerPoint のリソースです。 関連付けられている**fileResource**ディレクトリに、PowerPoint ファイルをアップロードする必要があります、 '
+description: 'educationResource のサブクラス。 これは PowerPoint リソースです。 PowerPoint ファイルは、に関連付けられた**fileResource**ディレクトリにアップロードする必要があります。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: b61f210ce0efde36b83632268e12d18d3b96b661
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512200"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542929"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)のサブクラスです。 これは、PowerPoint のリソースです。 送信または割り当てに関連付けられている**fileResource**ディレクトリには、PowerPoint ファイルをアップロードする必要があります。
+[educationResource](educationresource.md)のサブクラス。 これは PowerPoint リソースです。 PowerPoint ファイルは、割り当てまたは送信に関連付けられている**fileResource**ディレクトリにアップロードする必要があります。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|FileURL|String|ディスク上のファイルの場所です。|
+|fileUrl|String|ディスク上のファイルの場所。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,26 +1,26 @@
 ---
 title: signInLocation リソースの種類
-description: 市、州、および記号の発生場所からの国を提供します。
+description: サインインが行われた場所から、市区町村、都道府県、および国/地域を提供します。
 localization_priority: Normal
 ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839138"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551765"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation リソースの種類
-市、州、および記号の発生場所からの国を提供します。
+サインインが行われた場所から、市区町村、都道府県、および国/地域を提供します。
 
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|city|String|サインインが発生した場所の市区町村を提供します。 これは、サインインの活動からの緯度/経度情報を使用して計算されます。|
-|countryOrRegion|String|サインインが発生した場所 (2 文字のコード) の国コード情報を提供します。  これは、サインインの活動からの緯度/経度情報を使用して計算されます。|
-|geoCoordinates|[geoCoordinates](geocoordinates.md)|緯度、経度および高度の記号には、発生した場所を提供します。|
-|state|String|サインインが発生した場所の状態を提供します。 これは、サインインの活動からの緯度/経度情報を使用して計算されます。|
+|city|String|サインインが発生した都市を提供します。 これは、サインインアクティビティの緯度/経度情報を使用して計算されます。|
+|countryOrRegion|String|サインインが発生した国コード情報 (2 文字コード) を提供します。  これは、サインインアクティビティの緯度/経度情報を使用して計算されます。|
+|geoCoordinates|[geoCoordinates](geocoordinates.md)|サインインしたときの緯度、経度、高度を提供します。|
+|state|String|サインインが開始された状態を提供します。 これは、サインインアクティビティの緯度/経度情報を使用して計算されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

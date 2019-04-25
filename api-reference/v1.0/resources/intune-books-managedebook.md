@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534361"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook リソースの種類
 
@@ -27,9 +27,9 @@ ms.locfileid: "30253464"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |displayName|String|電子ブックの名前。|
-|説明|文字列|説明。|
+|description|文字列型 (String)|説明。|
 |publisher|String|発行元です。|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。|

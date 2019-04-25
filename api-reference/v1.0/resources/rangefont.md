@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 829b391d561aae63ae94972c55039acfdf4c48d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579523"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont リソースの種類
 
@@ -24,16 +24,16 @@ ms.locfileid: "27962297"
 |[Update](../api/rangefont-update.md) | [WorkbookRangeFont](rangefont.md)   |RangeFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
-|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
-|name|文字列|フォント名 (例: "Calibri")|
+|name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ|
-|underline|文字列|フォントに適用する下線の種類です。 可能な値: `None`、 `Single`、 `Double`、 `SingleAccountant`、 `DoubleAccountant`。|
+|underline|文字列|フォントに適用する下線の種類。 使用可能な値: `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

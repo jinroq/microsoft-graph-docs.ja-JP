@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: bbc51e4859b005c01b0f8d2cfb2db3ca902d60e2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572207"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581458"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts リソースの種類
 
@@ -17,16 +17,16 @@ ms.locfileid: "29572207"
 
 | プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | 日付   | コンテンツの最新の日付。          |
-| office365         | Int64  | Office 365 のアクティブ ユーザーの数です。 この数値には、Exchange、OneDrive、SharePoint、Skype のビジネス、Yammer、およびマイクロソフトのチームで作業中のすべてのユーザーが含まれます。 それぞれのプロパティの説明では、各製品のアクティブなユーザーの定義が表示されます。 |
-| 交換          | Int64  | Exchange 内のアクティブ ユーザーの数です。 読み取りし、電子メールを送信できるユーザーは、アクティブなユーザーと見なされます。 |
-| oneDrive          | Int64  | OneDrive でアクティブなユーザーの数です。 表示または編集したファイルを内部または外部でファイルを共有またはファイルを同期するユーザーは、アクティブなユーザーと見なされます。 |
-| sharePoint        | Int64  | SharePoint でのアクティブ ユーザーの数です。 表示または編集したファイルをファイルを社内で共有または外部で、ファイルを同期または SharePoint ページを表示したすべてのユーザーは、アクティブなユーザーと見なされます。 |
-| skypeForBusiness  | Int64  | Skype のビジネスでのアクティブ ユーザーの数です。 整理または会議に参加またはピア ツー ピア セッションに参加しているユーザーは、アクティブなユーザーと見なされます。 |
-| yammer            | Int64  | Yammer のアクティブ ユーザーの数です。 投稿、読み取り、またはメッセージのようなユーザーは、アクティブなユーザーと見なされます。 |
-| チーム             | Int64  | マイクロソフトのチームで作業中のユーザーの数です。 チームのチャネルでメッセージを投稿、プライベート チャットのセッションにメッセージを送信、または会議や通話に参加したユーザーは、アクティブなユーザーと見なされます。 |
-| reportDate        | 日付   | 複数のユーザーがアクティブだった日付。 |
-| reportPeriod      | String | レポートの対象日数です。    |
+| reportrefreshdate | Date   | コンテンツの最新の日付。          |
+| office         | Int64  | Office 365 でアクティブになっているユーザーの数。 この番号には、Exchange、OneDrive、SharePoint、Skype for business、Yammer、Microsoft Teams のすべてのアクティブユーザーが含まれます。 各製品のアクティブユーザーの定義については、それぞれのプロパティの説明を参照してください。 |
+| 変換          | Int64  | Exchange 内のアクティブなユーザーの数。 電子メールを読んだり、送信したりできるユーザーは、アクティブなユーザーであると見なされます。 |
+| スペース          | Int64  | OneDrive でアクティブになっているユーザーの数。 ファイルを表示または編集したユーザー、内部または外部の共有ファイル、または同期したファイルは、アクティブなユーザーと見なされます。 |
+| sharePoint        | Int64  | SharePoint のアクティブなユーザーの数。 ファイルを表示または編集したユーザー、内部または外部の共有ファイル、同期したファイル、または SharePoint ページを表示したユーザーは、アクティブなユーザーであると見なされます。 |
+| skypeForBusiness  | Int64  | Skype for business のアクティブなユーザーの数。 電話会議に参加している、またはピアツーピアセッションに参加しているユーザーは、アクティブなユーザーと見なされます。 |
+| yammer            | Int64  | Yammer のアクティブユーザーの数。 メッセージを投稿、閲覧、またはそのようにすることができるユーザーは、アクティブなユーザーと見なされます。 |
+| teams             | Int64  | Microsoft Teams のアクティブなユーザーの数。 チームチャネルでメッセージを投稿したユーザー、プライベートチャットセッションでメッセージを送信したユーザー、または会議または通話に参加したユーザーは、アクティブなユーザーであると見なされます。 |
+| reportDate        | Date   | ユーザー数がアクティブであった日付。 |
+| reportperiod      | String | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

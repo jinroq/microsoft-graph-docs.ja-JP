@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: フォルダー
 localization_priority: Normal
 ms.openlocfilehash: b78e6038a8f8f9a91883dd29faeebe3d5db3ca04
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481217"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547656"
 ---
 # <a name="folder-resource-type"></a>Folder リソース型
 
@@ -38,7 +38,7 @@ ms.locfileid: "30481217"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類           | 説明
+| プロパティ       | 型           | 説明
 |:---------------|:---------------|:-------------------------------------------
 | **childCount** | Int64          | このコンテナーの中に含まれる子の数。
 | **view**       | [folderView][] | フォルダーに推奨されるビューを定義するプロパティのコレクション。

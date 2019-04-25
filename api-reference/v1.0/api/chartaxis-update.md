@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2b5e7d208322edbb56b6a67a43d84cfa4ece5955
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580220"
 ---
 # <a name="update-chartaxis"></a>ChartAxis を更新する
 
@@ -39,7 +39,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|Json|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
@@ -48,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartAxis](../resources/chartaxis.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartAxis](../resources/chartaxis.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

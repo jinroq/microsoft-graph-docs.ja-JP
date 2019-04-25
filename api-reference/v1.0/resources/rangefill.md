@@ -1,19 +1,19 @@
 ---
 title: RangeFill リソースの種類
-description: 範囲オブジェクトの背景を表します。
+description: Range オブジェクトの背景を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579474"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill リソースの種類
 
-範囲オブジェクトの背景を表します。
+Range オブジェクトの背景を表します。
 
 
 ## <a name="methods"></a>メソッド
@@ -25,9 +25,9 @@ ms.locfileid: "27911820"
 |[Clear](../api/rangefill-clear.md)|なし|範囲の背景をリセットします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
+|color|string|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
 
 ## <a name="relationships"></a>関係
 なし

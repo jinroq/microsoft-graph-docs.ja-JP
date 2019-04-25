@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: aa59abfd2b60454a73472fc5283d3c7212ee48ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929047"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558203"
 ---
 # <a name="range-insert"></a>範囲: 挿入
 
@@ -40,9 +40,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|<legacyBold>Shift</legacyBold>|文字列|セルをシフトする方向を指定します。  可能な値: `Down`、 `Right`。|
+|Shift|string|セルをシフトする方向を指定します。  使用可能な値は`Down`、 `Right`、です。|
 
 ## <a name="response"></a>応答
 

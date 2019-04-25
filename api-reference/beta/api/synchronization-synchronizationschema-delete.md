@@ -1,19 +1,19 @@
 ---
-title: SynchronizationSchema を削除します。
-description: カスタマイズされたスキーマを削除し、スキーマがデフォルト設定にリセットします。 テンプレートのコンテキストでは、スキーマが削除されると、リセット、スキーマとテンプレートのいずれかに関連付けられた既定値に`factoryTag`。
+title: 同期スキーマの削除
+description: カスタマイズされたスキーマを削除し、スキーマを既定の構成にリセットします。 スキーマがテンプレートのコンテキストで削除されると、そのテンプレートに関連付けられている既定のスキーマにリセット`factoryTag`されます。
 localization_priority: Normal
 ms.openlocfilehash: cb4c6295fe962ea9570da19b9b6ee8190b2024f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545346"
 ---
-# <a name="delete-synchronizationschema"></a>SynchronizationSchema を削除します。
+# <a name="delete-synchronizationschema"></a>同期スキーマの削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-カスタマイズされたスキーマを削除し、スキーマがデフォルト設定にリセットします。 テンプレートのコンテキストでは、スキーマが削除されると、リセット、スキーマとテンプレートのいずれかに関連付けられた既定値に`factoryTag`。
+カスタマイズされたスキーマを削除し、スキーマを既定の構成にリセットします。 スキーマがテンプレートのコンテキストで削除されると、そのテンプレートに関連付けられている既定のスキーマにリセット`factoryTag`されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,7 +43,7 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 No Content` 応答コードを返します。 応答の本文に何もは返されません。
+成功した場合、このメソッドは `201 No Content` 応答コードを返します。 応答本文では何も返しません。
 
 ## <a name="example"></a>例
 

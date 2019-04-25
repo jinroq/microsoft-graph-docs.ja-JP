@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583796"
 ---
 # <a name="shift-resource-type"></a>shift リソースの種類
 
@@ -28,12 +28,12 @@ ms.locfileid: "30676969"
 |[shift を削除する](../api/shift-delete.md) | なし | スケジュールから`shift`を削除します。|
 
 ## <a name="properties"></a>プロパティ
-|名前          |種類           |説明                                                                                                                                      |
+|名前          |型           |説明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`shift` の ID。|
-| userId            |`string`      |に割り当てられているユーザー `shift`の ID。 必須。 |
-| schedulingGroupId         |`string`      |`shift`が含まれるスケジュールグループの ID。 必須。 |
-| sharedshift   |[佐々木](shiftitem.md)  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須。 |
+| userId            |`string`      |に割り当てられているユーザー `shift`の ID。 必須です。 |
+| schedulingGroupId         |`string`      |`shift`が含まれるスケジュールグループの ID。 必須です。 |
+| sharedshift   |[佐々木](shiftitem.md)  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須です。 |
 | draftShift        |[佐々木](shiftitem.md)        |この`shift`の下書きバージョンは、マネージャーが表示できます。 必須。 |
 | createdDateTime       |`DateTimeOffset`        |最初に作成さ`shift`れたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |最後に更新され`shift`たタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |

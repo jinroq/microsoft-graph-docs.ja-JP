@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 8166a9c07809ce5fbd5544ed0576582a43787e63
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582224"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -23,7 +23,7 @@ ms.locfileid: "29576053"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 

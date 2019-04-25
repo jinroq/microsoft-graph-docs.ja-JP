@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7b8f757d8131b40912b6e02ca402bb2f5aa622fc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961561"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561244"
 ---
 # <a name="create-roleassignment"></a>roleAssignment の作成
 
@@ -50,7 +50,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |:---|:---|:---|
 |id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。|
-|description|String|ロール割り当ての説明。|
+|説明|String|ロール割り当ての説明。|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。|
 
 

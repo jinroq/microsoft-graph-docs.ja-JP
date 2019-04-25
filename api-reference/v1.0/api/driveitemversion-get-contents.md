@@ -1,16 +1,16 @@
 ---
-title: DriveItemVersion リソースの内容をダウンロードします。
+title: '[ファイル] [ドライブ] [バージョン] リソースのコンテンツをダウンロードする'
 description: DriveItem の特定のバージョンのコンテンツを取得します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b6b1f8fbb840cba88f05cb30e2617ca23cb6ad1f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960841"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550449"
 ---
-# <a name="download-contents-of-a-driveitemversion-resource"></a>DriveItemVersion リソースの内容をダウンロードします。
+# <a name="download-contents-of-a-driveitemversion-resource"></a>[ファイル] [ドライブ] [バージョン] リソースのコンテンツをダウンロードする
 
 [DriveItem](../resources/driveitem.md) の特定のバージョンのコンテンツを取得します。
 

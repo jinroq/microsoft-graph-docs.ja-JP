@@ -1,29 +1,29 @@
 ---
 title: teamFunSettings リソースの種類
-description: Giphy、memes、およびチームのステッカーを構成する設定を使用します。
+description: チームでの Giphy、ミーム、およびステッカーの使用を構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc8d4cfa05f7bc6cbda9dfbf5d113370a1981ba5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583222"
 ---
 # <a name="teamfunsettings-resource-type"></a>teamFunSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Giphy、memes、および[チーム](team.md)のステッカーを構成する設定を使用します。
+[チーム](team.md)での giphy、memes、ステッカーの使用を構成するための設定。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowGiphy|ブール値|場合 true の場合、有効にする Giphy の使用を設定します。|
-|giphyContentRating|文字列 (列挙型)|コンテンツの規制を Giphy。 使用可能な値は、`moderate`、`strict` です。|
-|allowStickersAndMemes|ブール値|場合は true、ステッカー、memes など、ユーザーに設定します。|
-|allowCustomMemes|ブール値|場合に true を設定する、カスタムの memes を含むようにユーザーをできるようにする設定です。|
+|allowgiphy|Boolean|true に設定すると、giphy の使用が有効になります。|
+|giphyContentRating|String (enum)|giphy コンテンツの評価。 可能な値は、`moderate`、`strict` です。|
+|allowStickersAndMemes|Boolean|true に設定すると、ユーザーはステッカーと memes を含めることができます。|
+|allowcustommemes|Boolean|true に設定すると、ユーザーはカスタム memes 含めることができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

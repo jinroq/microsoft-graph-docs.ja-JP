@@ -1,19 +1,19 @@
 ---
 title: 'イベント: tentativelyAccept'
-description: ユーザーの予定表で指定したイベントを仮承諾します。
+description: ユーザーの予定表の指定のイベントを仮承諾します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 0ab714f4f80702dd99be0dde80c9caf307c5c14c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957677"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584328"
 ---
 # <a name="event-tentativelyaccept"></a>イベント: tentativelyAccept
 
-ユーザー[の予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)を仮承諾します。
+ユーザーの[予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)を仮承諾します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,7 +43,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -51,10 +51,10 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|sendResponse|ブール値|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

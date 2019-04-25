@@ -1,34 +1,34 @@
 ---
-title: objectMapping リソースの種類
-description: どのように特定のオブジェクト同期する必要があるソース ディレクトリからコピー先のディレクトリを定義します。 ソース ディレクトリ内のオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法を定義する具体的には、どのような (もしあれば) フィルターのスコープを使用するかどうかは、特定のオブジェクトを準備して、変換からのオブジェクトの属性がどのようにする必要がありますかを決定する必要があります先のディレクトリにソースです。
+title: objectmapping リソースの種類
+description: 特定のオブジェクトをソースディレクトリからターゲットディレクトリに同期する方法を定義します。 具体的には、ソースディレクトリ内のオブジェクトとターゲットディレクトリのオブジェクトとの照合方法を定義します。特定のオブジェクトをプロビジョニングするかどうか、およびオブジェクト属性をどのように変換するかを決定するために、どのような (もしあれば) スコープフィルターを使用するかを定義します。ソースディレクトリに移動します。
 localization_priority: Normal
 ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581759"
 ---
-# <a name="objectmapping-resource-type"></a>objectMapping リソースの種類
+# <a name="objectmapping-resource-type"></a>objectmapping リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-どのように特定のオブジェクト同期する必要があるソース ディレクトリからコピー先のディレクトリを定義します。 ソース ディレクトリ内のオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法を定義する具体的には、どのような (もしあれば) フィルターのスコープを使用するかどうかは、特定のオブジェクトを準備して、変換からのオブジェクトの属性がどのようにする必要がありますかを決定する必要があります先のディレクトリにソースです。
+特定のオブジェクトをソースディレクトリからターゲットディレクトリに同期する方法を定義します。 具体的には、ソースディレクトリ内のオブジェクトとターゲットディレクトリのオブジェクトとの照合方法を定義します。特定のオブジェクトをプロビジョニングするかどうか、およびオブジェクト属性をどのように変換するかを決定するために、どのような (もしあれば) スコープフィルターを使用するかを定義します。ソースディレクトリに移動します。
 
-オブジェクトのマッピングでは、[同期ルール](synchronization-synchronizationrule.md)の主な一部であるし、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
+オブジェクトマッピングは、同期[スキーマ](synchronization-synchronizationschema.md)の一部として更新される、[同期ルール](synchronization-synchronizationrule.md)の主な部分です。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性のマッピングは、ソース オブジェクトからターゲット オブジェクトとフローの方法にマップする属性を定義します。 元のソースの値の変換をサポートするために多くの機能を利用できます。|
-|enabled        |Boolean    |`true`、このオブジェクトのマッピングが同期中に処理されます。 `false`、このオブジェクトのマッピングはスキップされます。|
-|flowTypes      |objectFlowType    |どのフローの種類では、このオブジェクトのマッピングは有効です。 `Add`コピー先のディレクトリに新しいオブジェクトを作成`Update`、既存のオブジェクトを変更し、`Delete`既存のユーザーを deprovisions。 既定値は `Add, Update, Delete` です。 |
-|metadata       |metadataEntry コレクション    |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
-|name           |String     |オブジェクトのマッピングのわかりやすい名前です。|
-|scope          |[filter](synchronization-filter.md)     |特定のオブジェクトを準備する必要があるかどうかを決定する際に使用するフィルターを定義します。 たとえば、米国内にあるユーザーのみを提供する可能性があります。|
-|sourceObjectName           |String     |ソース ディレクトリ内のオブジェクトの名前です。 ソース[ディレクトリの定義](synchronization-directorydefinition.md)からオブジェクトの名前と一致する必要があります。|
-|targetObjectName           |String     |ターゲット ディレクトリ内のオブジェクトの名前です。 ターゲット[ディレクトリの定義](synchronization-directorydefinition.md)からオブジェクトの名前と一致する必要があります。|
+|attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性マッピングでは、ソースオブジェクトからターゲットオブジェクトにマップする属性、およびそれらのフローを指定します。 元のソースの値の変換をサポートするために、いくつかの関数を使用できます。|
+|enabled        |ブール型 (Boolean)    |の`true`場合、このオブジェクトのマッピングは同期中に処理されます。 の`false`場合、このオブジェクトのマッピングはスキップされます。|
+|flowtypes      |objectflowtype    |このオブジェクトマッピングに対して有効になるフローの種類。 `Add`ターゲットディレクトリに新しいオブジェクトを作成し`Update` 、既存のオブジェクトを`Delete`変更して、既存のユーザーをプロビジョニングします。 既定値は `Add, Update, Delete` です。 |
+|metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |オブジェクトマッピングの人フレンドリ名。|
+|scope          |[filter](synchronization-filter.md)     |特定のオブジェクトをプロビジョニングする必要があるかどうかを決定するときに使用するフィルターを定義します。 たとえば、US にあるユーザーのみをプロビジョニングする場合があります。|
+|sourceobjectname           |String     |ソースディレクトリ内のオブジェクトの名前。 ソース[ディレクトリ定義](synchronization-directorydefinition.md)のオブジェクト名と一致する必要があります。|
+|targetObjectName           |String     |ターゲットディレクトリ内のオブジェクトの名前。 ターゲット[ディレクトリ定義](synchronization-directorydefinition.md)のオブジェクト名と一致する必要があります。|
 
 ## <a name="json-representation"></a>JSON 表記
 

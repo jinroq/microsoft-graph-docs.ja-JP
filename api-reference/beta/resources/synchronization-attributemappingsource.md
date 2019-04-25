@@ -1,28 +1,28 @@
 ---
 title: attributeMappingSource リソースの種類
-description: '定義の値がどのようにする必要があります抽出 (変換)、ソース オブジェクトからです。 ソース オブジェクトの特定の属性から取得した単純な値であることなど、文字列の連結/抽出/交換のいくつかのソース属性に基づいたより複雑な式であることができます。 '
+description: 'ソースオブジェクトから値を抽出 (変換) する方法を定義します。 たとえば、ソースオブジェクトの特定の属性から取得した単純な値を指定することも、複数のソース属性に基づいて文字列の連結/抽出/置換を行うより複雑な式にすることもできます。 '
 localization_priority: Normal
 ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510408"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582165"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定義の値がどのようにする必要があります抽出 (変換)、ソース オブジェクトからです。 ソース オブジェクトの特定の属性から取得した単純な値であることなど、文字列の連結/抽出/交換のいくつかのソース属性に基づいたより複雑な式であることができます。 
+ソースオブジェクトから値を抽出 (変換) する方法を定義します。 たとえば、ソースオブジェクトの特定の属性から取得した単純な値を指定することも、複数のソース属性に基づいて文字列の連結/抽出/置換を行うより複雑な式にすることもできます。 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ              | 型                      | 説明               |
 |:----------------------|:--------------------------|:--------------------------|
-|式             |String                     |この**attributeMappingSource**オブジェクトの同等の式表現です。|
-|name                   |String                     |マッピングのソースの名前のパラメーター。 **型**のプロパティの値によって、関数の場合、基になる属性、または使用する定数の値の名前の名前できます。 |
-|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)コレクション | このオブジェクトは、関数を表している場合は、関数のパラメーターを一覧表示します。 パラメーターは、 **attributeMappingSource**オブジェクト自身であり、複雑な正規表現で構成されます。 **型**でない場合`Function`、このプロパティは null または空の配列になります。 |
-|type                   | String                    |この属性のマッピングのソースの型。 可能な値は、`Attribute`、`Constant`、`Function` です。 既定値は `Attribute` です。| 
+|式             |String                     |この**attributeMappingSource**オブジェクトの同等の式表現。|
+|name                   |String                     |マッピングソースの Name パラメーター。 **type**プロパティの値に応じて、関数の名前、source 属性の名前、または使用する定数値を指定できます。 |
+|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)コレクション | このオブジェクトが関数を表す場合は、関数パラメータを一覧表示します。 パラメータは、 **attributeMappingSource**オブジェクト自体で構成され、複雑な式を使用できます。 **type**がでは`Function`ない場合、このプロパティは null または空の配列になります。 |
+|type                   | String                    |この属性マッピングソースの種類。 可能な値は `Attribute`、`Constant`、`Function` です。 既定値は `Attribute` です。| 
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -47,7 +47,7 @@ ms.locfileid: "29510408"
 
 ## <a name="json-examples"></a>JSON の例
 
-単純な属性を属性のマッピング
+シンプルな属性から属性へのマッピング
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ ms.locfileid: "29510408"
 }
 ```
 
-ソース属性の最初の 8 文字を抽出する式
+source 属性から最初の8文字を抽出する式
 
 <!-- {
   "blockType": "resource",

@@ -1,15 +1,15 @@
 ---
 title: eventMessage の取得
-description: 出席者の予定表に関連するイベントを取得する**イベント**のナビゲーション プロパティのパラメーターを展開します。
+description: '**イベント**ナビゲーションプロパティの [パラメーター] を展開して、出席者の予定表にある関連イベントを取得します。'
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 53428679904ba41ce5a539d62eba2a48cce4eedc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956704"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584188"
 ---
 # <a name="get-eventmessage"></a>eventMessage の取得
 
@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

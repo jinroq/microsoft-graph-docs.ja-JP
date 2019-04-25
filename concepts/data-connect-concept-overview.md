@@ -5,11 +5,11 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.openlocfilehash: 8d12b35dfaa8b5a787d373c55ffbaafe2f69ac1f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526362"
 ---
 # <a name="overview-of-microsoft-graph-data-connect-preview"></a>Microsoft Graph データ接続の概要 (プレビュー)
 Microsoft Graph には、作業方法、コミュニケーション方法、共同作業方法、時間管理方法に関する情報を含む、従業員とその職場に関するリッチ データが含まれています。 Microsoft Graph データ接続によってこのデータが Microsoft Azure に移動されることで、ユーザーがこのデータの操作に最適な開発およびホスティング ツールを使用できるようになります。 これにより、Microsoft Graph データに対する完全なコントロールを維持したまま、生産性を向上させる、革新的な業界固有のアプリケーションを活用することができます。 Microsoft は、お客様が期待する、より安全なコントロールを提供しています。

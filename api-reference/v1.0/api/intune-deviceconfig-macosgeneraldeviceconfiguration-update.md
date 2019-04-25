@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: beb53ec72e112dd576657bf31d20891419783dde
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981791"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554752"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>macOSGeneralDeviceConfiguration の更新
 
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでに必要な非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。|
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
+|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e00b089d546dbb5a512d30e31c2828debd108ac3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578723"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount リソースの種類
 
@@ -22,9 +22,9 @@ ms.locfileid: "31804026"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|password|String|まだ文書化されていません|
+|パスワード|String|まだ文書化されていません|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

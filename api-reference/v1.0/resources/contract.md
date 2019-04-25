@@ -1,36 +1,36 @@
 ---
-title: コントラクト リソース型
-description: パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
+title: Contract リソースの種類
+description: パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: cbaa1655503796813f9cbd09c41647bacc40a94c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561433"
 ---
-# <a name="contract-resource-type"></a>コントラクト リソース型
-パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
+# <a name="contract-resource-type"></a>Contract リソースの種類
+パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
 
-> **重要:** パートナー テナントにのみ存在します。パートナー テナントとは、[Microsoft クラウド ソリューション プロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 Syndication、Microsoft Advisor パートナー プログラムのいずれかに含まれている、Microsoft パートナーに所属する Azure AD テナントです。
+> **重要:** パートナーテナントのみに存在します。 パートナーテナントは、microsoft の[クラウドソリューションプロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 シンジケート、または microsoft Advisor パートナープログラムの一部である microsoft パートナーに属する Azure AD テナントです。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[コントラクトを取得する](../api/contract-get.md) | コントラクト |特定のコントラクト オブジェクトのプロパティを参照します。 |
-|[コントラクトを一覧表示する](../api/contract-list.md) | コントラクト コレクション | パートナー テナントのコントラクトの一覧です。 |
+|[契約書を取得する](../api/contract-get.md) | 縮小 |特定の contract オブジェクトのプロパティを読み取ります。 |
+|[契約書を一覧表示する](../api/contract-list.md) | Contract コレクション | パートナーテナント内の契約のリスト。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ   | 種類 | 説明 |
+| プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|contractType|String|コントラクトの型。<br><br>使用可能な値は次のとおりです。<br> *SyndicationPartner* - この顧客に対し O365 と Intune を排他的に再販し管理するパートナーです。再販し、顧客をサポートします。<br> *BreadthPartner* - この顧客に対し管理上のサポートを提供する能力を備えたパートナーです。ただし、パートナーが顧客に再販売することは許されていません。<br>*ResellerPartner* - シンジケーション パートナーに類似していますが、テナントへの排他的アクセスを持たないパートナーです。シンジケーションの場合、顧客は Microsoft またはその他のパートナーから直接に追加のサブスクリプションを購入することはできません。|
-|customerId|Guid|このパートナーシップによって参照されるカスタマー テナントの一意識別子です。カスタマー テナントの組織リソースの ID プロパティに対応します。 |
-|defaultDomainName|String|カスタマー テナントの既定のドメイン名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの既定のドメイン名が変更された場合は、自動的には更新されません。|
-|displayName|String|カスタマー テナントの表示名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの表示名が変更された場合は、自動的には更新されません。|
-|id|String| パートナーシップの一意識別子です。キー、読み取り専用 |
+|contracttype|String|契約の種類。<br><br>使用可能な値は次のいずれかです。<br> *SyndicationPartner* -このお客様に対して O365 と Intune を排他的に resells して管理します。 これらのユーザーは、お客様を再販し、サポートしています。<br> *BreadthPartner* -パートナーは、このお客様に対して管理サポートを提供することができます。 ただし、パートナーはお客様に再販することは許可されていません。<br>*ResellerPartner* -シンジケートパートナーに似ていますが、パートナーがテナントへの排他的なアクセス権を持っていない点が異なります。 シンジケーションの場合、お客様は、Microsoft や他のパートナーから追加の直接サブスクリプションを購入することはできません。|
+|id|Guid|このパートナーシップによって参照される顧客のテナントの一意識別子。 顧客テナントの組織リソースの id プロパティに対応します。 |
+|defaultdomainname|String|顧客テナントの既定のドメイン名のコピー。 このコピーは、顧客とのパートナーシップが確立されたときに作成されます。 顧客のテナントの既定のドメイン名が変更されても、自動的には更新されません。|
+|displayName|String|顧客のテナントの表示名のコピー。 このコピーは、顧客とのパートナーシップが確立されたときに作成されます。 顧客のテナントの表示名が変更されても、自動的には更新されません。|
+|id|String| パートナーシップの一意識別子。 キー、読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

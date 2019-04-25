@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6b544d0390b10c3cf7d1f48fcf6684f8128cdf6b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548440"
 ---
 # <a name="useremailsource-enum-type"></a>useremailsource 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31791076"
 |メンバー|値|説明|
 |:---|:---|:---|
 |userPrincipalName|.0|ユーザープリンシパル名。|
-|primarySmtpAddress|1-d|プライマリ SMTP アドレス。|
+|primarySmtpAddress|1 |プライマリ SMTP アドレス。|
 
 
 

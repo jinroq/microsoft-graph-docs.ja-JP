@@ -1,27 +1,27 @@
 ---
-title: teamGuestSettings リソースの種類
-description: 来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。
+title: teamguestsettings リソースの種類
+description: ゲストがチームでチャネルを作成、更新、削除できるかどうかを構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554010"
 ---
-# <a name="teamguestsettings-resource-type"></a>teamGuestSettings リソースの種類
+# <a name="teamguestsettings-resource-type"></a>teamguestsettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-来園者が作成、更新、または[チーム](team.md)内のチャンネルを削除するかどうかを構成するのに設定します。
+ゲストが[チーム](team.md)内でチャネルを作成、更新、または削除できるかどうかを構成するための設定。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|ブール値|True の場合、来園者のセットを追加したりチャンネルを更新する場合。|
-|allowDeleteChannels|ブール値|場合は true を指定すると、来園者に設定するには、チャンネルを削除できます。|
+|allowCreateUpdateChannels|ブール値|true に設定すると、ゲストはチャネルを追加および更新できるようになります。|
+|allowDeleteChannels|ブール値|true に設定されている場合、ゲストはチャネルを削除できます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

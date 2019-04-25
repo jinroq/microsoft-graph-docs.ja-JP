@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fb8b8590fd59154fce31912d6275d23929a66f94
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552842"
 ---
 # <a name="update-ioscompliancepolicy"></a>iosCompliancePolicy の更新
 
@@ -54,18 +54,18 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|passcodeBlockSimple|Boolean|単純なパスコードを禁止するかどうかを示します。|
+|passcodeBlockSimple|ブール値|単純なパスコードを禁止するかどうかを示します。|
 |passcodeExpirationDays|Int32|パスコードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
 |passcodeMinimumLength|Int32|パスコードの最小の長さ。 有効な値は 4 から 14 までです|
 |passcodeMinutesOfInactivityBeforeLock|Int32|パスコードが要求されるまでの非アクティブ時間 (分)。|
 |passcodePreviousPasscodeBlockCount|Int32|ブロックする、以前のパスコードの数。 有効な値は 1 から 24 までです|
 |passcodeMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
 |passcodeRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
+|passcodeRequired|ブール値|パスコードを要求するかどうかを指定します。|
 |osMinimumVersion|String|最小の iOS バージョン。|
 |osMaximumVersion|String|最大の iOS バージョン。|
-|securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
-|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっている必要があります。|
+|securityBlockJailbrokenDevices|ブール値|デバイスの脱獄またはルート化を認めません。|
+|deviceThreatProtectionEnabled|ブール値|デバイスの脅威保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを示します。|
 

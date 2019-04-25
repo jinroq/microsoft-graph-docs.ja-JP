@@ -1,38 +1,38 @@
 ---
 title: teamsAsyncOperation リソースの種類
-description: 'マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。 '
+description: 'Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 61c26b0d594ccdbad8020557f60c6f6b23a83254
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513460"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581594"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-マイクロソフト チームの非同期操作は、操作を 1 つの API 要求の有効期間を超えてしまうことです。 これらの操作は、実行時間の長い、または、最初の要求の時間枠で完了するのにはコストが高すぎます。
+Microsoft Teams の非同期操作は、1つの API 要求の有効期間を transcends する操作です。 これらの操作は、送信元の要求の時間内に実行するのに時間がかかる場合があります。
 
-非同期操作が開始されると、メソッドは、202 の承諾済みの応答コードを返します。 応答は、teamsAsyncOperation の場所を含む場所のヘッダーも格納されます。 この場所に GET 要求を行うことによって、オペレーションのステータスを定期的にチェックします。チェックの間の >30 秒間を待ちます。
-要求が正常に完了したら、状態は、"成功し、targetResourceLocation が作成/変更したリソースを指します。
+async 操作が開始されると、メソッドは202の受け入れられた応答コードを返します。 また、応答には、teamsAsyncOperation の場所が含まれている場所のヘッダーも含まれます。 この場所に GET 要求を行うことによって、操作の状態を定期的にチェックします。チェックの間、>30 秒間待機します。
+要求が正常に完了すると、状態は "succeeded" になり、targetresourcelocation は作成/変更されたリソースを参照するようになります。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|id|string |操作の一意の id です。|
-|入力|[teamsAsyncOperationType](teamsasyncoperationtype.md) |説明している操作の種類を表します。|
+|id|string |一意の操作 id。|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |説明されている操作の種類を示します。|
 |createdDateTime|DateTimeOffset |操作が作成された時刻。|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作の状態です。|
-|lastActionDateTime|DateTimeOffset |非同期操作が最後に更新された時間です。|
-|attemptsCount|Int32|成功または失敗にマークされる前に操作が試行された回数です。|
-|targetResourceId|guid |作成または[チーム](../resources/team.md)では通常、この非同期操作を受けて変更されたオブジェクトの ID です。|
-|targetResourceLocation|string|作成または、この非同期操作を受けて変更されたオブジェクトの位置。 この URL は非透過値として扱われます、そのコンポーネントのパスには解析されませんする必要があります。|
-|エラー|[operationError](operationerror.md)|非同期操作が失敗の原因となるすべてのエラーです。|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作の状態。|
+|lastactiondatetime|DateTimeOffset |async 操作が最後に更新された時刻。|
+|attemptsCount|Int32|操作が成功したか失敗したかがマークされるまでの、操作が試行された回数。|
+|targetresourceid|guid |この非同期操作の結果として作成または変更されるオブジェクトの ID (通常は[チーム](../resources/team.md))。|
+|targetresourcelocation|string|この非同期操作の結果として作成または変更されたオブジェクトの場所。 この URL は、不透明な値として扱われ、そのコンポーネントのパスに解析されることはありません。|
+|error|[operationerror](operationerror.md)|非同期操作が失敗する原因となるエラー。|
 
 ## <a name="json-representation"></a>JSON 表記
 

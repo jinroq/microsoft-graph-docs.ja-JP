@@ -1,23 +1,23 @@
 ---
-title: リストの割り当て
-description: ロールに関連付けられている privilegedRoleAssignment オブジェクトのリストを取得します。 各 privilegedRoleAssignment は、ユーザーに役割の割り当てを表します。
+title: 割り当てを一覧表示する
+description: ロールに関連付けられている privilegedRoleAssignment オブジェクトのリストを取得します。 各 privilegedRoleAssignment は、ユーザーへの役割の割り当てを表します。
 localization_priority: Normal
 ms.openlocfilehash: f7dd2b94c5d3ac49a6a8c9183373801f76e27964
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546568"
 ---
-# <a name="list-assignments"></a>リストの割り当て
+# <a name="list-assignments"></a>割り当てを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ロールに関連付けられている[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのリストを取得します。 各[privilegedRoleAssignment](../resources/privilegedroleassignment.md)は、ユーザーに役割の割り当てを表します。
+ロールに関連付けられている[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのリストを取得します。 各[privilegedRoleAssignment](../resources/privilegedroleassignment.md)は、ユーザーへの役割の割り当てを表します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは、次のロールのいずれかを持つ必要があります:_ロールの権限を持つ管理者_、_グローバル管理者_、_セキュリティ管理者_、または_セキュリティのリーダー_です。
+リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。
  
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -32,7 +32,7 @@ ms.locfileid: "29508273"
 GET /privilegedRoles/{id}/assignments
 ```
 
-注意してください``<id>``は、ターゲットのロールの id。
+これは``<id>`` 、ターゲットの役割 id であることに注意してください。
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
@@ -46,9 +46,9 @@ GET /privilegedRoles/{id}/assignments
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトのコレクションを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

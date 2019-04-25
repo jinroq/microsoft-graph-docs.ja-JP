@@ -1,28 +1,28 @@
 ---
-title: settingTemplateValue リソースの種類
-description: 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
+title: settingtemplatevalue リソースの種類
+description: 設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 localization_priority: Normal
 ms.openlocfilehash: 80b640419eb2084888dcd6887ece54b4fd4bdf3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583680"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
+# <a name="settingtemplatevalue-resource-type"></a>settingtemplatevalue リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
+設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|defaultValue|string|設定の既定値です。 読み取り専用です。|
-|説明|string|設定の説明です。 読み取り専用。|
-|name|string|設定の名前。 読み取り専用です。|
-|type|string|設定の種類です。 読み取り専用です。|
+|defaultValue|string|設定の既定値。 読み取り専用です。|
+|説明|string|設定の説明。 値の取得のみ可能です。|
+|name|string|設定の名前。 読み取り専用。|
+|type|string|設定の種類。 読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 

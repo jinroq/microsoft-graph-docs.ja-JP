@@ -1,31 +1,31 @@
 ---
-title: mediaStream リソースの種類
-description: MediaStream 型です。
+title: mediastream リソースの種類
+description: mediastream の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4867675da3427beb790beb240cd7bc0b86f04317
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581580"
 ---
-# <a name="mediastream-resource-type"></a>mediaStream リソースの種類
+# <a name="mediastream-resource-type"></a>mediastream リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaStream 型です。
+mediastream の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ    | 型    | 説明                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Direction   | String  | 方向です。 使用可能な値は、 `inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
-| label       | String  | メディア ストリームのラベルです。                                                                                       |
-| MediaType   | String  | メディアは次のとおり入力します。 使用可能な値は、 `unknown`、 `audio`、 `video`、 `videoBasedScreenSharing`、 `data`。        |
-| serverMuted | ブール値 | サーバによってメディアがミュートされている場合。                                                                          |
-| SourceId    | String  | ソースの id。                                                                                                |
+| direction   | String  | 方向を示します。 使用可能な値`inactive`は`sendOnly` `receiveOnly`、、 `sendReceive`、です。                  |
+| label       | String  | メディアストリームのラベル。                                                                                       |
+| mediaType   | String  | メディアの種類。 使用可能な値`unknown`は`audio` `video` `videoBasedScreenSharing`、、、 `data`、です。        |
+| servermuted | Boolean | メディアがサーバーによってミュートされている場合。                                                                          |
+| sourceId    | String  | ソース ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表記
 

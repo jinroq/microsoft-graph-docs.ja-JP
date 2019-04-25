@@ -6,11 +6,11 @@ title: 特別なフォルダーを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482379"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551415"
 ---
 # <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
 
@@ -55,7 +55,7 @@ GET /me/drive/special/{name}
 
 ### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための `$expand` および `$select` [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="response"></a>応答
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 > **注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。
 

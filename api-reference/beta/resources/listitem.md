@@ -6,11 +6,11 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480881"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581639"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
@@ -29,15 +29,15 @@ ms.locfileid: "30480881"
 | [取得][]                        | GET /items/{item-id}
 | [列の値の取得][取得]       | GET /items/{item-id}?expand=fields
 | [分析を取得する][]              | アイテムを取得する (英語)
-| [間隔でアクティビティを取得する][] | /items/{item-id}/getActivitiesByInterval を取得する
-| [Create][]                     | POST /items
-| [Delete][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
+| [間隔によりアクティビティを取得する][] | /items/{item-id}/getActivitiesByInterval を取得する
+| [作成][]                     | POST /items
+| [削除][]                     | DELETE /items/{item-id}
+| [更新][]                     | PATCH /items/{item-id}
 | [列の値の更新][更新] | PATCH /items/{item-id}/fields
 
 [取得]: ../api/listitem-get.md
 [分析を取得する]: ../api/itemanalytics-get.md
-[間隔でアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
+[間隔によりアクティビティを取得する]: ../api/itemactivity-getbyinterval.md
 [作成]: ../api/listitem-create.md
 [削除]: ../api/listitem-delete.md
 [更新]: ../api/listitem-update.md
@@ -93,7 +93,7 @@ ms.locfileid: "30480881"
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | アイテムの一意識別子。読み取り専用です。
 | name                 | string            | アイテムの名前/タイトル。
-| createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 値の取得のみ可能です。
+| createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
 | createdDateTime      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
 | description          | string            | アイテムの説明テキストです。
 | eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
@@ -110,10 +110,10 @@ ms.locfileid: "30480881"
 | リレーションシップ名 | 種類                           | 説明
 |:------------------|:-------------------------------|:-------------------------------
 | アクティビティ        | [itemActivity][] コレクション    | このアイテムに対して行われた最近のアクティビティのリストです。
-| 分析         | [itemanalytics][]リソース     | このアイテムに対して行われたビューアクティビティに関する分析。
+| analytics         | [itemAnalytics][] リソース     | このアイテムに対して行われたビューアクティビティに関する分析。
 | driveItem         | [driveItem][]                  | ドキュメント ライブラリの場合、**driveItem** リレーションシップは listItem を **[driveItem][]** として公開します。
-| fields            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
-| 最新          | [listitemversion][]コレクション | リストアイテムの以前のバージョンのリスト。
+| フィールド            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
+| versions          | [listItemVersion][] コレクション | リスト アイテムの以前のバージョンのリスト。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -121,7 +121,7 @@ ms.locfileid: "30480881"
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemActivity]: itemactivity.md
-[itemanalytics]: itemanalytics.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
 [listItemVersion]: listitemversion.md

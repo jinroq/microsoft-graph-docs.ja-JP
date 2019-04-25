@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
 ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480545"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549595"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "30480545"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名  | 種類            | 説明
+| プロパティ名  | 型            | 説明
 |:---------------|:----------------|:------------------------------------------
 | email          | String          | 共有への招待の受信者について指定された電子メール アドレス。読み取り専用です。
 | invitedBy      | [identitySet][] | このアクセス許可を作成した招待状を送信したユーザーに関する情報を提供します (その情報が利用可能な場合)。読み取り専用です。

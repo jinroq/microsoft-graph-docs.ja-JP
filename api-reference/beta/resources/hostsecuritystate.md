@@ -1,33 +1,33 @@
 ---
-title: hostSecurityState リソースの種類
+title: hostsecuritystate リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 ms.openlocfilehash: d6f566a2bd42163c570fe837d2419057c62664bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526698"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547411"
 ---
-# <a name="hostsecuritystate-resource-type"></a>hostSecurityState リソースの種類
+# <a name="hostsecuritystate-resource-type"></a>hostsecuritystate リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ステートフルなホスト (デバイス、コンピューターを含む) について説明します。
+ホストに関するステートフルな情報を含みます (デバイス、コンピューターなどを含む)。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|fqdn|String|ホストの FQDN (完全修飾ドメイン名) (machine.company.com など)。|
-|isAzureAadJoined|ブール値|ホストが Azure Active Directory ドメイン サービスに参加しているドメインである場合は true。|
-|isAzureAadRegistered|ブール値|Azure Active Directory デバイスの登録 (BYOD - は、完全に管理されているデバイスの企業が) を持つホストが登録されている場合は true。|
-|isHybridAzureDomainJoined|ブール値|ホストが、オンプレミスの Active Directory ドメインに参加しているドメインである場合は true。|
-|あります。|String|ローカル ホスト名、DNS ドメインの名前を持たない。|
-|I-5.|String|ホストのオペレーティング ・ システムです。 (たとえば、Windows10、MacOS、RHEL など)。|
-|privateIpAddress|String|(ルーティングできない) プライベートの IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)参照) 時の警告です。|
-|publicIpAddress|String|公的にルーティング可能な IPv4 アドレスまたは IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)参照) 警告の時にします。|
-|riskScore|String|ホストのプロバイダーによって生成されると計算されるリスク ・ スコアです。  0 - 1 パーセントに相当する値の範囲をお勧めします。|
+|fqdn|String|ホストの FQDN (完全修飾ドメイン名) (たとえば、machine.company.com)。|
+|isAzureAadJoined|ブール値|ホストが Azure Active Directory ドメインサービスにドメインに参加している場合は True。|
+|isAzureAadRegistered|ブール値|ホストが Azure Active Directory デバイス登録 (byod devices、enterprise によって完全に管理されていない) に登録されている場合は、True。|
+|isHybridAzureDomainJoined|ブール値|ホストがオンプレミスの Active Directory ドメインに参加しているドメインである場合は True。|
+|netBiosName|String|DNS ドメイン名を除いたローカルホスト名。|
+|hp-ux|String|ホストオペレーティングシステム。 (たとえば、Windows10、MacOS、RHEL など)。|
+|privateIpAddress|String|プライベート (ルーティング可能ではない) IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照) 通知時。|
+|publicipaddress|String|通知時に公開ルーティング可能な IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照)。|
+|riskScore|String|プロバイダーが生成/計算するホストのリスクスコア。  推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

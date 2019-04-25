@@ -6,11 +6,11 @@ title: 旧バージョンのリスト アイテムを取得する - SharePoint A
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 88f442178d3e703c4861e3a6fe5746a7f0c5e8b8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482106"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541004"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>ListItemVersion リソースを取得する (プレビュー)
 

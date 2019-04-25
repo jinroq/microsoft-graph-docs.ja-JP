@@ -1,25 +1,25 @@
 ---
-title: カスタム ターゲットの属性を使用して同期を構成します。
-description: 同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。 呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。 Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。
+title: カスタムターゲット属性を使用して同期を構成する
+description: ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
 localization_priority: Normal
 ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582139"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a>カスタム ターゲットの属性を使用して同期を構成します。
+# <a name="configure-synchronization-with-custom-target-attributes"></a>カスタムターゲット属性を使用して同期を構成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。 呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。 Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。
+ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
 
-この資料では、 [Azure ポータル](https://portal.azure.com)を使ってアプリケーションの表示名がわかっている、テナントの同期をサポートするアプリケーションを既に追加されていると、Graph の認証トークンがあることを想定します。 認証トークンを取得する方法の詳細については、 [Microsoft Graph を呼び出すための Get アクセス トークン](https://developer.microsoft.com/graph/docs/concepts/auth_overview)を参照してください。
+この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。 認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。
 
-## <a name="find-the-service-principal-object-by-display-name"></a>サービスのプリンシパル オブジェクトを表示名で検索します。
+## <a name="find-the-service-principal-object-by-display-name"></a>表示名でサービスプリンシパルオブジェクトを検索する
 
-次の使用例は、Salesforce の表示名を持つサービスのプリンシパル オブジェクトを検索する方法を示します。
+次の例は、Salesforce という表示名を持つサービスプリンシパルオブジェクトを検索する方法を示しています。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -47,12 +47,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{servicePrincipalId}` 、 `167e33e9-f80e-490e-b4d8-698d4a80fb3e`。
+`{servicePrincipalId}`は`167e33e9-f80e-490e-b4d8-698d4a80fb3e`です。
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>サービス ・ プリンシパルのコンテキストの同期ジョブを一覧表示 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>サービスプリンシパルのコンテキストで同期ジョブを一覧表示する 
 
-次の使用例は、取得する方法を示します、`jobId`を使用する必要があります。 一般に、応答は、1 つのジョブを返します。
+次の例は、 `jobId`で使用する必要があるを取得する方法を示しています。 通常、応答は1つのジョブのみを返します。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -71,11 +71,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{jobId}` 、 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。
+`{jobId}`は`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`です。
 
 
-## <a name="get-the-synchronization-schema"></a>同期スキーマを取得します
-次の例では、同期スキーマを取得する方法を示します。
+## <a name="get-the-synchronization-schema"></a>同期スキーマを取得する
+次の例は、同期スキーマを取得する方法を示しています。
 
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -183,20 +183,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>OfficeCode 属性と属性間のマッピングの定義を追加します。
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>officeecode 属性の定義と属性間のマッピングを追加する
 
-(たとえば、[メモ帳では](https://notepad-plus-plus.org/) [JSON エディター オンライン](https://www.jsoneditoronline.org/)) は、任意のテキスト エディターを使用します。
+任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。
 
-1. [属性の定義](synchronization-attributedefinition.md)を追加、`officeCode`の属性です。 
+1. `officeCode`属性の[属性定義](synchronization-attributedefinition.md)を追加します。 
 
-    - [ディレクトリ] で名前 salesforce.com、およびオブジェクトの配列内のディレクトリを見つけ、1 つの名前付き**ユーザー**を検索します。
-    - 次の例に示すように名前と型を指定するボックスの一覧に新しい属性を追加します。
+    - [ディレクトリ] で、salesforce.com という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。
+    - 次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。
 
-2. 間の[属性のマッピング](synchronization-attributemapping.md)を追加`officeCode`と`extensionAttribute10`。
+2. `officeCode`と`extensionAttribute10`の間の[属性マッピング](synchronization-attributemapping.md)を追加します。
 
-    - [SynchronizationRules](synchronization-synchronizationrule.md)、[ソース ディレクトリとターゲット ディレクトリとして Salesforce.com と Azure AD を指定するルールを検索します (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`)。
-    - ルールの[objectMappings](synchronization-objectmapping.md)のユーザー間のマッピングを検索します (`"sourceObjectName": "User",   "targetObjectName": "User"`)。
-    - **ObjectMapping**の[attributeMappings](synchronization-attributemapping.md)配列の例を次に示すように、新しいエントリを追加します。
+    - [[同期ルール](synchronization-synchronizationrule.md)] で、ソースディレクトリとして Azure AD を指定するルールを見つけ、Salesforce.com をターゲット`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ディレクトリ () として指定します。
+    - ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。
+    - **オブジェクトマッピング**の[attributeMappings](synchronization-attributemapping.md)配列に、次の例に示すように、新しいエントリを追加します。
 
 ```json
 {  
@@ -246,9 +246,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="save-the-modified-synchronization-schema"></a>変更された同期スキーマを保存します。
+## <a name="save-the-modified-synchronization-schema"></a>変更した同期スキーマを保存する
 
-更新された同期スキーマを保存するときは、変更されていない部分を含む、スキーマ全体を含めることを確認します。 この要求は、既存のスキーマを提供するものに置き換えられます。
+更新された同期スキーマを保存する場合は、未変更のパーツを含むスキーマ全体を含めるようにしてください。 この要求は、既存のスキーマを、指定したスキーマで置き換えます。
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -261,7 +261,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-スキーマが正常に保存された場合は、同期ジョブの次回のイテレーションで、Azure の AD 内のすべてのアカウントを再処理を開始し、プロビジョニングされたすべてのアカウントに新しいマッピングが適用されます。
+スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。
 <!--
 {
   "type": "#page.annotation",

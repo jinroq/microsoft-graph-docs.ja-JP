@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: daa6f7a4802341347f364040504368dc96d75e33
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548321"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -39,7 +39,7 @@ Azure Active Directory ユーザー オブジェクトを表します。
 |[exportdeviceandappmanagementdata 関数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|まだ文書化されていません|
 |[getEffectiveDeviceEnrollmentConfigurations 関数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) コレクション|まだ文書化されていません|
 |**トラブルシューティング**|
-|[getManagedDevicesWithAppFailures 関数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String コレクション|エラーが発生したアプリが含まれているデバイスの一覧を取得します。|
+|[getManagedDevicesWithAppFailures 関数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|エラーが発生したアプリが含まれているデバイスの一覧を取得します。|
 
 
 ## <a name="properties"></a>プロパティ

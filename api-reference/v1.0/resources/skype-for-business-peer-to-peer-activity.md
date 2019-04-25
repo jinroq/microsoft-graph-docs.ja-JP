@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 395babe88a330ddbd037a23575b06ba1dfa8059f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555910"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business ピア ツー ピア アクティビティ レポート
 
@@ -21,7 +21,7 @@ Skype for Business ピア ツー ピア アクティビティ レポートを使
 
 | 関数                                 | 戻り値の型 | 説明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [アクティビティの数を取得する](../api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md) | Stream      | 組織内で実施されたセッションの数と種類について、使用傾向を取得します。 セッションの種類には IM、オーディオ、ビデオ、アプリケーション共有、ファイル転送があります。 |
+| [アクティビティの数を取得する](../api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md) | ストリーム      | 組織内で実施されたセッションの数と種類について、使用傾向を取得します。 セッションの種類には IM、オーディオ、ビデオ、アプリケーション共有、ファイル転送があります。 |
 | [ユーザーの数を取得する](../api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md) | Stream      | 組織内で実施されたピア ツー ピア セッションの一意のユーザー数と種類について、使用傾向を取得します。 ピア ツー ピア セッションでのセッションの種類には IM、オーディオ、ビデオ、アプリケーション共有、ファイル転送があります。 |
 | [時間 (分) を取得する](../api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md) | Stream      | 組織内で実施されたピア ツー ピア セッションの長さ (分数) と種類についての使用傾向を取得します。 セッションの種類には、オーディオとビデオが含まれます。 |
 

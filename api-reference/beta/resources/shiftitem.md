@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 7ff829ca0f43124404b4b99b048c9919368b6009
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583789"
 ---
 # <a name="shiftitem-resource-type"></a>"佐々木 ftitem" リソースの種類
 
@@ -22,8 +22,8 @@ ms.locfileid: "30657708"
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | notes               | `string`                  | のメモ`shiftItem`。      |
 | displayName               | `string`                  | の名前`shiftItem`。 |
-| startDateTime               | `DateTimeOffset`                  | の開始日時`shiftItem`。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 必須。 |
-| endDateTime               | `DateTimeOffset`                  | の終了日時`shiftItem`。 必須。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
+| startDateTime               | `DateTimeOffset`                  | の開始日時`shiftItem`。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 必須です。 |
+| endDateTime               | `DateTimeOffset`                  | の終了日時`shiftItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | theme | `enum`   |    |  |  | サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
 | アクティビティ    | `collection([shiftActivity](shiftactivity.md))`    | 従業員がいつ、どのような時間帯に勤務しているかを詳細に説明できる、シフトの増分部分。 たとえば、割り当て、またはスケジュールされた休憩またはランチ。 必須。 |
 

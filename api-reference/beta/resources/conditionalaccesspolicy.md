@@ -1,27 +1,27 @@
 ---
 title: conditionalAccessPolicy リソースの種類
-description: 対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーまたはポリシーに関連する属性を示します。
+description: 対応するサインインアクティビティによってトリガーされた条件付きアクセスポリシーまたはポリシーに関連する属性を示します。
 localization_priority: Normal
 ms.openlocfilehash: 7b043e739f84715fb02fbdbd25599e5cfccc284a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543372"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy リソースの種類
-対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーまたはポリシーに関連する属性を示します。
+対応するサインインアクティビティによってトリガーされた条件付きアクセスポリシーまたはポリシーに関連する属性を示します。
 
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|String|条件付きのアクセス ポリシーの名前 (例:「が必要な MFA の Salesforce」).|
-|enforcedGrantControls|String コレクション|条件付きアクセス ポリシーによって適用される許可のコントロールを参照 (例:「多要素認証を必要とする])。|
-|enforcedSessionControls|String コレクション|条件付きアクセス ポリシーによって適用されるセッションのコントロールを参照 (例:"適用アプリケーションのコントロールを必要とする])。|
-|id|String|条件付きのアクセス ポリシーの一意の GUID|
-|result|String| 起動された CA のポリシーの結果を示します。使用可能な値は次のとおりです。<br/> `success` <br/> `failure` <br/> `notApplied`・ ポリシーの条件が満たされなかったために、ポリシーが適用されていません。 <br/> `notEnabled`-これは、ポリシーが無効の状態のためです。|
+|displayName|String|条件付きアクセスポリシーの名前を参照します (例: "Salesforce の MFA が必要")。|
+|enforcedGrantControls|String collection|条件付きアクセスポリシーによって適用される grant コントロールを参照します (例: "多要素認証を必要とする")。|
+|enforcedSessionControls|String collection|条件付きアクセスポリシーによって適用されるセッションコントロールを参照します (例: "アプリ強制コントロールが必要です")。|
+|id|String|条件付きアクセスポリシーの一意の GUID|
+|result|String| トリガーされた CA ポリシーの結果を示します。可能な値は次のとおりです。<br/> `success` <br/> `failure` <br/> `notApplied`-ポリシー条件が満たされていないため、ポリシーは適用されません。 <br/> `notEnabled`-これは、ポリシーが無効な状態になっているためです。|
 
 ## <a name="json-representation"></a>JSON 表記
 

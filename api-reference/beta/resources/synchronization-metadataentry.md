@@ -1,25 +1,25 @@
 ---
-title: metadataEntry リソースの種類
-description: 特定のオブジェクトのメタデータ。
+title: metadataentry リソースの種類
+description: 指定したオブジェクトのメタデータ。
 localization_priority: Normal
 ms.openlocfilehash: a6b9170144917e4c7b66bb52c1efb17d93167ef0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581761"
 ---
-# <a name="metadataentry-resource-type"></a>metadataEntry リソースの種類
+# <a name="metadataentry-resource-type"></a>metadataentry リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のオブジェクトのメタデータ。
+指定したオブジェクトのメタデータ。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|Key|String|メタデータ プロパティの名前です。|
-|value|文字列|メタデータ プロパティの値です。|
+|Key|String|メタデータプロパティの名前。|
+|value|文字列型 (String)|メタデータプロパティの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

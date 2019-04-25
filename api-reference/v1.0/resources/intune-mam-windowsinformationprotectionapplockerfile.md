@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: df994cc8e4dcf698656f617ad2e5959a5ded3f83
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258745"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561468"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
@@ -32,7 +32,7 @@ Windows 情報保護 AppLocker ファイル
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
 |file|Binary|バイト配列のファイル|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

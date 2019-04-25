@@ -1,26 +1,26 @@
 ---
-title: plannerPlanContextCollection リソースの種類
-description: '**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。 このリソースは、オープン型であり、plannerPlan オブジェクトの一部であります。 プロパティと値のペアの値は、plannerPlanContext オブジェクトです。'
+title: プラン/プランコンテキストコレクションリソースの種類
+description: plan **** は、プランがリンクされている外部コンテキストのコレクションを表します。 このリソースはオープン型であり、plan オブジェクトの一部です。 プロパティと値のペアの値は、plan プロパティのコンテキストオブジェクトです。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581717"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection リソースの種類
+# <a name="plannerplancontextcollection-resource-type"></a>プラン/プランコンテキストコレクションリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。 このリソースは、オープン型であり、 [plannerPlan](plannerplan.md)オブジェクトの一部であります。 プロパティと値のペアの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトです。
+plan **** は、プランがリンクされている外部コンテキストのコレクションを表します。 このリソースはオープン型であり、 [plan](plannerplan.md)オブジェクトの一部です。 プロパティと値のペアの値は、plan プロパティの[コンテキスト](plannerplancontext.md)オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ
-このオープン型のプロパティを定義することができます。 プロパティの値はプロパティ名と外部のコンテキストを表す特徴的な識別子である必要があります。 プロパティの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトである必要があります。 OData の要件に基づき、オープン型のプロパティ名は次の文字を含めることはできません: `.`、 `:`、 `%`、 `@`。 これらの文字は、URL エンコーディングを使用してエンコードする必要があります。 お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。
+このオープン型のプロパティを定義できます。 プロパティの値は、プロパティ名として外部コンテキストを表す特徴的識別子にする必要があります。 プロパティの値は、 [context](plannerplancontext.md)オブジェクトをプランする必要があります。 OData 要件に基づいて、オープン型のプロパティ名に次の文字を`.`含める`:`こと`%`は`@`できません:、、、。 これらの文字は、URL エンコードを使用してエンコードする必要があります。 [お気に入り] の一覧から項目を削除するには、プロパティの値`null`をに設定します。
 
 ## <a name="json-representation"></a>JSON 表記
 

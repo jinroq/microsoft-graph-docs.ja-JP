@@ -1,19 +1,19 @@
 ---
 title: itemAttachment リソースの種類
-description: 連絡先、イベント、または別のイベントに関連付けられているメッセージ
+description: 別のイベントに添付されている連絡先、イベント、またはメッセージ
 localization_priority: Normal
 ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581105"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-連絡先、イベント、または他の[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されているメッセージです。  
+別の[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されている連絡先、イベント、またはメッセージ。  
 
 [添付ファイル](attachment.md)から派生します。
 
@@ -21,23 +21,23 @@ ms.locfileid: "29640421"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[削除する](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
+|[取得](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
+|[削除](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
-|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
+|isInline|ブール値|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
 |name|String|添付ファイルの表示名。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|添付されている連絡先、メッセージまたはイベントです。 ナビゲーション プロパティ。|
+|item|[OutlookItem](outlookitem.md)|添付された連絡先、メッセージ、またはイベント。 ナビゲーション プロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,15 +1,15 @@
 ---
-title: informationalUrl リソースの種類
+title: informationalurl リソースの種類
 description: アプリケーションの基本的なプロファイル情報です。
 localization_priority: Normal
 ms.openlocfilehash: 5085c144045631c530cbb66f5e1f27186a63b380
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548706"
 ---
-# <a name="informationalurl-resource-type"></a>informationalUrl リソースの種類
+# <a name="informationalurl-resource-type"></a>informationalurl リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,10 +19,10 @@ ms.locfileid: "29513649"
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|マーケティング|String| アプリケーションのマーケティングのページにリンクします。 たとえば、https://www.contoso.com/app/marketing のように指定します。 |
-|プライバシー|String| アプリケーションのプライバシーに関する声明へのリンクです。 たとえば、https://www.contoso.com/app/privacy のように指定します。 |
-|サポート|String| アプリケーションのサポートのページにリンクします。 たとえば、https://www.contoso.com/app/support のように指定します。 |
-|termsOfService|String| サービスのステートメントのアプリケーションの条件にリンクします。 たとえば、https://www.contoso.com/app/termsofservice のように指定します。 |
+|市場|String| アプリケーションの [マーケティング] ページにリンクします。 たとえば、https://www.contoso.com/app/marketing のように指定します。 |
+|秘密|String| アプリケーションのプライバシーに関する声明にリンクします。 たとえば、https://www.contoso.com/app/privacy のように指定します。 |
+|・|String| アプリケーションのサポートページにリンクします。 たとえば、https://www.contoso.com/app/support のように指定します。 |
+|termsOfService|String| アプリケーションのサービス条件ステートメントにリンクします。 たとえば、https://www.contoso.com/app/termsofservice のように指定します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

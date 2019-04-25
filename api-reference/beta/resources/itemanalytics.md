@@ -2,24 +2,24 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemAnalytics
+title: itemanalytics
 localization_priority: Normal
 ms.openlocfilehash: 72e7f4de752ec04fbc5ebd98655254e2597fa499
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514965"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581647"
 ---
-# <a name="itemanalytics-resource-type"></a>itemAnalytics リソースの種類
+# <a name="itemanalytics-resource-type"></a>itemanalytics リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**ItemAnalytics**リソースでは、アイテムに対して行われたアクティビティに関する分析を提供します。 このリソースは、現在 SharePoint およびビジネスのための OneDrive で使用可能なのみです。
+**itemanalytics**リソースは、アイテムに対して行われたアクティビティに分析を提供します。 このリソースは現在、SharePoint および OneDrive for business でのみ使用できます。
 
-間隔またはユーザー設定の時刻の範囲の上で分析を取得するために、 [getActivitiesByInterval][] API を使用することもできます。
+[getActivitiesByInterval][] API を使用して、カスタムの時間範囲または間隔で分析を取得することもできます。
 
->**注:****ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。
+>**注:****itemanalytics**リソースは、すべての[国内展開](/graph/deployments)でまだ使用できません。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -41,10 +41,10 @@ ms.locfileid: "29514965"
 
 | プロパティ      | 型                 | 説明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 分析で、アイテムの有効期間です。
-| lastSevenDays | [itemActivityStat][] | 過去 7 日間の分析。
+| alltime       | [itemactiv][] | アイテムの寿命を超えた分析。
+| lastSevenDays | [itemactiv][] | 過去7日間の分析。
 
-[itemActivityStat]: itemactivitystat.md
+[itemactiv]: itemactivitystat.md
 
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md

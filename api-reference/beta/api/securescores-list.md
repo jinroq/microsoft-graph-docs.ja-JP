@@ -1,19 +1,19 @@
 ---
 title: secureScores のリスト
-description: プロパティと、secureScores オブジェクトの関係を取得します。
+description: secureScores オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545471"
 ---
 # <a name="list-securescores"></a>secureScores のリスト
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 [secureScores](../resources/securescores.md)オブジェクトの関係を取得します。
+[secureScores](../resources/securescores.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,9 +21,9 @@ ms.locfileid: "29642962"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All。   |
+|委任 (職場または学校のアカウント) |  securityevents。 all、securityevents.。   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All。 |
+|アプリケーション | securityevents。 all、securityevents.。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,7 +37,7 @@ GET /security/secureScores
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -45,7 +45,7 @@ GET /security/secureScores
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**secureScores**オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**secureScores**オブジェクトを返します。
 
 ## <a name="example"></a>例
 

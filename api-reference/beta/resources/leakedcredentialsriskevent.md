@@ -1,45 +1,45 @@
 ---
 title: leakedCredentialsRiskEvent リソースの種類
-description: Azure Active ディレクトリ Id 保護野生のアカウントの資格情報が検出された場所で検出されたリスク イベントです。 リスク イベントの詳細については、Azure AD のアイデンティティ保護のマニュアルを参照しています。
+description: アカウントの資格情報がワイルドカードで検出された Azure Active Directory id 保護によって検出されたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
 ms.openlocfilehash: 0884da08195ffa2bee38c943d27b1d25aef02e49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581093"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory アイデンティティ保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)野生のアカウントの資格情報が検出された場所で検出されたリスク イベントです。 リスク イベントの詳細については、 [Azure AD のアイデンティティ保護のマニュアル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)を参照しています。
+アカウントの資格情報がワイルドカードで検出された[Azure Active Directory id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出されたリスクイベント。 リスクイベントに関する詳細な情報については、「 [Azure AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)」のドキュメントを参照してください。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[LeakedCredentialsRiskEvent を取得します。](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |LeakedCredentialsRiskEvent オブジェクトのプロパティと関係を参照してください。|
+|[leakedCredentialsRiskEvent を取得する](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |leakedCredentialsRiskEvent オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
-|createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
+|closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
+|createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
 |id|string| 読み取り専用|
-|riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|
+|riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
 |riskEventStatus|string| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
 |riskLevel|string| 使用可能な値: `low`、`medium`、`high`。|
 |riskEventType|string| リスクの種類|
-|userDisplayName|string| リスクのユーザーの名前|
-|userId|string| リスクのユーザーの id|
-|userPrincipalName|string| リスクのユーザーのユーザー プリンシパル名|
+|userDisplayName|string| リスクのあるユーザーの名前|
+|userId|string| リスクがあるユーザーの id|
+|userPrincipalName|string| リスクがあるユーザーのユーザープリンシパル名|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 読み取り専用です。Null 許容型。|
+|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

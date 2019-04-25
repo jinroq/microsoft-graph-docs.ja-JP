@@ -1,22 +1,22 @@
 ---
 title: " certificationControl リソースの種類"
-description: このリソースには、コンプライアンスが含まれている証明書のデータに関連付けられているスコアのコントロールをセキュリティで保護します。
+description: このリソースには、セキュリティで保護されたスコアコントロールに関連するコンプライアンス証明書データが含まれています。
 localization_priority: Normal
 ms.openlocfilehash: 6f8269a85a8d3cb032f3e58457df95f4dd432c11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810389"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535414"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl リソースの種類
 
-コンプライアンスを含む証明書のデータに関連付けられているスコアのコントロールをセキュリティで保護します。
+セキュリティで保護されたスコアコントロールに関連付けられたコンプライアンス証明書データを格納します。
 
-|プロパティ |種類 |説明 |
+|プロパティ |型 |説明 |
 |:--|:--|:--|
-|name | 文字列 | コントロールの名前を証明 |
-|url | 文字列 | Microsoft サービスの URL は、ポータルを信頼します。 |
+|name | string | 証明書制御名 |
+|url | string | Microsoft Service Trust Portal の URL |
 
 ## <a name="json-representation"></a>JSON 表記
 

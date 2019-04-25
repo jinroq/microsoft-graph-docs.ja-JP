@@ -1,19 +1,17 @@
 ---
 title: assignedLicense リソースの種類
-description: ユーザーに割り当てられているライセンスを表します。**ユーザー** エンティティの **assignedLicenses** プロパティは、assignedLicense のコレクションです。
+description: ユーザーに割り当てられているライセンスを表します。 user エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 2d9620ec33a296c09ced9bc9d8af8d6d032bb7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535656"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-ユーザーに割り当てられているライセンスを表します。[ユーザー](user.md) エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。
+ユーザーに割り当てられているライセンスを表します。 [user](user.md)エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -44,15 +42,10 @@ ms.locfileid: "29524920"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "assignedLicense resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/assignedlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

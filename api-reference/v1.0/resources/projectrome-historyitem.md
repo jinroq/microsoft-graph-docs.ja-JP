@@ -1,47 +1,47 @@
 ---
-title: historyItem リソースの種類
-description: アプリケーション内のアクティビティの履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
+title: 履歴項目リソースの種類
+description: アプリ内のアクティビティの履歴アイテムを表します。 ユーザーアクティビティは、テレビ番組、ドキュメント、ビデオゲームの現在のキャンペーンなど、アプリ内の単一の場所を表します。 ユーザーがそのアクティビティを使用すると、そのアクティビティの開始時刻と終了時刻を示す履歴項目として契約が取得されます。 ユーザーが時間をかけてそのアクティビティを再実行すると、1つのユーザーアクティビティに対して複数の履歴項目が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 029c17e09348977752f3ce5632740b2bdac64e46
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579679"
 ---
-# <a name="historyitem-resource-type"></a>historyItem リソースの種類
+# <a name="historyitem-resource-type"></a>履歴項目リソースの種類
 
-アプリケーション内の[アクティビティ](projectrome-activity.md)の履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
+アプリ内の[アクティビティ](projectrome-activity.md)の履歴アイテムを表します。 ユーザーアクティビティは、テレビ番組、ドキュメント、ビデオゲームの現在のキャンペーンなど、アプリ内の単一の場所を表します。 ユーザーがそのアクティビティを使用すると、そのアクティビティの開始時刻と終了時刻を示す履歴項目として契約が取得されます。 ユーザーが時間をかけてそのアクティビティを再実行すると、1つのユーザーアクティビティに対して複数の履歴項目が記録されます。
 
-アプリケーションは、セッションを作成するときは、ユーザー契約の期間を反映するように**アクティビティ**オブジェクトに**historyItem**オブジェクトを追加する必要があります。 ユーザーは、再活動と連携して、たびに、新しい**historyItem**がユーザーの活動を見越計上するアクティビティに追加されます。
+アプリでセッションを作成するときには、ユーザーの活動期間を反映するために、**履歴項目**オブジェクトを**activity**オブジェクトに追加する必要があります。 ユーザーがアクティビティを再実行するたびに、新しい**履歴アイテム**が、[見越計上] ユーザー契約に追加されます。
 
 ## <a name="methods"></a>メソッド
 
 |メソッド | 戻り値の型 | 説明|
 |:------|:------------|:-----------|
-|[作成または置換 historyItem](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | 作成するか、その活動 (アップサート) の既存の**historyItem**に置き換えられます。 ID は GUID である必要があります。|
-|[HistoryItem を削除します。](../api/projectrome-delete-historyitem.md) | 内容なし | そのアクティビティに指定された**historyItem**を削除します。|
+|[履歴項目を作成または置換する](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | そのアクティビティの既存の**履歴アイテム**を作成または置換します (upsert)。 ID は GUID である必要があります。|
+|[履歴項目を削除する](../api/projectrome-delete-historyitem.md) | No Content | そのアクティビティの指定した**履歴アイテム**を削除します。|
 
 ## <a name="properties"></a>プロパティ
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|status | status | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
-|userTimezone | String | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンです。 クロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|
-|createdDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが作成されたときの utc 日時。|
-|lastModifiedDateTime | DateTimeOffset | サーバーで設定します。 サーバー上にオブジェクトが変更されたときの utc 日時。|
-|id | String | 必須。 **HistoryItem**オブジェクトの GUID をクライアントに設定します。|
-|startedDateTime | DateTimeOffset | 必須。 **HistoryItem** (アクティビティ セッション) が開始されたときの UTC 日時。 タイムラインの履歴が必要です。|
-|lastActiveDateTime | DateTimeOffset | 省略可能。 **HistoryItem** (アクティビティ セッション) がアクティブまたは終了の null の場合、 **historyItem**の状態として理解された最後のときの UTC 日時は、継続中にする必要があります。|
-|expirationDateTime | DateTimeOffset | 省略可能。 **HistoryItem**がハード削除を行うときの UTC 日時。 クライアントによって設定できます。|
-|activeDurationSeconds | int | 省略可能。 アクティブなユーザーの活動の期間です。 指定されなかった場合、この**startedDateTime**と**lastActiveDateTime**から計算されます。|
+|status | status | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
+|usertimezone | String | 省略可能。 アクティビティの生成に使用されたユーザーのデバイスがアクティビティの作成時に配置されたタイムゾーン。 クロスプラットフォーム表現をサポートするために olson id として提供される値。|
+|createdDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上でオブジェクトが作成された日時 (UTC)。|
+|lastModifiedDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上のオブジェクトが変更された日時 (UTC)。|
+|id | String | 必須。 **履歴項目**オブジェクトのクライアントセット GUID。|
+|開始日時 | DateTimeOffset | 必須です。 **履歴アイテム**(アクティビティセッション) が開始された UTC の DateTime。 タイムライン履歴に必要です。|
+|lastactivedatetime | DateTimeOffset | 省略可能。 **履歴項目**(アクティビティセッション) が最後にアクティブまたは完了として認識された UTC の DateTime。 null の場合は、**履歴アイテム**の状態が進行中である必要があります。|
+|expirationDateTime | DateTimeOffset | 省略可能。 **履歴アイテム**がハード削除されるときの UTC DateTime。 クライアントによって設定できます。|
+|activeDurationSeconds | int | 省略可能。 アクティブなユーザー契約の期間。 指定しない場合、これは開始日**** と**lastactivedatetime**から計算されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 
 |リレーションシップ | 型 | 説明|
 |:------------|:-----|:-----------|
-|activity| [userActivity](../resources/projectrome-activity.md) | 省略可能。 受け取りますおよび抑制ソリューションです。ナビゲーション プロパティに関連する活動です。|
+|activity| [useractivity.readwrite.createdbyapp](../resources/projectrome-activity.md) | 省略可能。 NavigationProperty/コンテインメント;関連付けられたアクティビティへのナビゲーションプロパティ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

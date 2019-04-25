@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793561"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550547"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>devicemanagementsettingdefinition リソースの種類
 
@@ -31,13 +31,13 @@ ms.locfileid: "31793561"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|設定定義の ID|
+|id|String|設定定義の ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|値のデータ型。 可能な値は `integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex` です。|
 |displayName|String|設定の表示名|
-|isTopLevel|Boolean|設定が最上位レベルの場合は、コレクションまたは複雑な設定でラップする必要がなく構成できます。|
-|説明|String|設定の説明|
-|documentation url|文字列|ドキュメントを設定するための Url|
-|keywords|String コレクション|設定に関連付けられているキーワード|
+|isTopLevel|ブール値|設定が最上位レベルの場合は、コレクションまたは複雑な設定でラップする必要がなく構成できます。|
+|description|String|設定の説明|
+|documentation url|String|ドキュメントを設定するための Url|
+|keywords|String collection|設定に関連付けられているキーワード|
 |式|[devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|設定値の制約のコレクション|
 |ヲ|[devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|他の設定に対する依存関係のコレクション|
 

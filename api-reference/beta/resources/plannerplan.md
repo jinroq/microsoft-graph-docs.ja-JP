@@ -1,21 +1,21 @@
 ---
-title: plannerPlan リソースの種類
-description: '**PlannerPlan**リソースでは、Office 365 のプランを表します。 計画は、グループが所有することができ、plannerTasks のコレクションが含まれています。 PlannerBuckets のコレクションもあります。 各プラン オブジェクトには、計画の詳細を含めることができる詳細オブジェクトがあります。 グループ、計画、およびタスク間の関係の詳細については、プランナーを参照してください。'
+title: plan リソースの種類を計画する
+description: プラン**** リソースは、Office 365 のプランを表します。 プランは、グループが所有することができ、プランのタスクのコレクションが含まれています。 また、プランのコレクションを持つこともできます。 各プランオブジェクトには details オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、プラン、およびタスク間の関係の詳細については、「Planner」を参照してください。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: f37f6ea08f2951256e2d7f94cf9abad7e8ac60b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578870"
 ---
-# <a name="plannerplan-resource-type"></a>plannerPlan リソースの種類
+# <a name="plannerplan-resource-type"></a>plan リソースの種類を計画する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlan**リソースでは、Office 365 のプランを表します。 計画は、[グループ](group.md)が所有することができ、 [plannerTasks](plannertask.md)のコレクションが含まれています。 [PlannerBuckets](plannerbucket.md)のコレクションもあります。 各プラン オブジェクトには、計画の詳細を含めることができる[詳細](plannerplandetails.md)オブジェクトがあります。 グループ、計画、およびタスク間の関係の詳細については、[プランナー](planner-overview.md)を参照してください。
+プラン**** リソースは、Office 365 のプランを表します。 プランは、[グループ](group.md)が所有することができ、プランの[タスク](plannertask.md)のコレクションが含まれています。 また、[プラン](plannerbucket.md)のコレクションを持つこともできます。 各プランオブジェクトには[details](plannerplandetails.md)オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、プラン、およびタスク間の関係の詳細については、「 [Planner](planner-overview.md)」を参照してください。
 
 
 
@@ -23,27 +23,27 @@ ms.locfileid: "29529552"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|Get plannerPlan | [plannerPlan](plannerplan.md) |plannerPlan オブジェクトのプロパティとリレーションシップを読み取ります。|
-|List buckets |[plannerBucket](plannerbucket.md) コレクション| plannerBucket オブジェクト コレクションを取得します。|
-|[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
-|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |plannerPlan オブジェクトを更新します。 |
+|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |**plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[バケットをリストする](../api/plannerplan-list-buckets.md) |[プラン | バケット](plannerbucket.md)コレクション| **プラン**を取得するオブジェクトコレクション。|
+|[タスクを一覧表示する](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) コレクション| プランを取得する**タスク**オブジェクトコレクション。|
+|[更新する](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |**plan**オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|id|文字列| 読み取り専用です。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](tasks-identifiers-disclaimer.md)が行われます。|
-|owner|String|計画を所有する[グループ](group.md)の ID です。 このフィールドを設定する前に、有効なグループが存在する必要があります。 設定すると後、は、このプロパティを更新できません。|
-|タイトル|String|必須。計画のタイトル。|
-|createdBy|[identitySet](identityset.md)|読み取り専用です。計画を作成したユーザー。|
-|コンテキスト|[plannerPlanContextCollection](plannerplancontextcollection.md)| 読み取り専用です。 このプランが使用されている、追加のユーザー エクスペリエンスは、 [plannerPlanContext](plannerplancontext.md)のエントリとして表されます。|
+|id|String| 読み取り専用。 プランの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
+|owner|String|プランを所有する[グループ](group.md)の ID。 このフィールドを設定するためには、有効なグループが存在していなければなりません。 設定された後は、このプロパティは更新できません。|
+|title|String|必須。 計画のタイトル。|
+|createdBy|[identitySet](identityset.md)|読み取り専用。 プランを作成したユーザー。|
+|状況|[plannerPlanContextCollection](plannerplancontextcollection.md)| 読み取り専用。 このプランが使用される追加のユーザーエクスペリエンス。このプランは、[コンテキスト](plannerplancontext.md)エントリをプランとして表現します。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるバケットのコレクション。|
-|詳細|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用です。Null 許容型。計画に関する追加の詳細。|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるタスクのコレクション。|
+|buckets|[プラン | バケット](plannerbucket.md)コレクション| 読み取り専用。Null 許容型。計画に含まれるバケットのコレクション。|
+|details|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用。 Null 許容型。 計画に関する追加の詳細。|
+|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用。 Null 許容型。 計画に含まれるタスクのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 

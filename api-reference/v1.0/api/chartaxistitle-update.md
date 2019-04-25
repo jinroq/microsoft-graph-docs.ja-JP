@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a38e768904539c011a44ebc8b242a86f22ce43fb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932687"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580078"
 ---
 # <a name="update-chartaxistitle"></a>Update chartaxistitle
 
@@ -39,14 +39,14 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|text|文字列|軸タイトルを表します。|
+|text|string|軸タイトルを表します。|
 |visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartAxisTitle](../resources/chartaxistitle.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartAxisTitle](../resources/chartaxistitle.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551891"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31771231"
 |メンバー|値|説明|
 |:---|:---|:---|
 |success|.0|まだ文書化されていません|
-|transientError|1-d|まだ文書化されていません|
-|エラー|pbm-2|まだ文書化されていません|
-|不明|1/3|まだ文書化されていません|
+|transientError|1 |まだ文書化されていません|
+|error|2 |まだ文書化されていません|
+|不明|3 |まだ文書化されていません|
 |azurestorageurirequestsuccess|100|まだ文書化されていません|
 |azurestorageurirequestpending|101|まだ文書化されていません|
 |azurestorageurirequestfailed|102|まだ文書化されていません|

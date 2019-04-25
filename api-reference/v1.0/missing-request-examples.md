@@ -1,13 +1,13 @@
 ---
 title: (me) をシングルトンとして定義します。
-description: 値下げ-スキャナーを確認するのにはドキュメントに追加する必要があることは、します。
+description: Markdown を確認するためにドキュメントに追加する必要があるのは、次のような点です。
 localization_priority: Normal
 ms.openlocfilehash: da71bfcb25efbebdf4e6a111f23d8d16e3aca342
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842897"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569530"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>ヘルパー (ドキュメントに含まれていない例)
 

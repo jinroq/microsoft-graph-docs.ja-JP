@@ -1,30 +1,30 @@
 ---
-title: 'ユーザー: exportPersonalData'
-description: 組織のユーザーのデータをエクスポートするのには企業の管理者によって行われる、データ ポリシーの操作要求を送信します。
+title: 'ユーザー: exportpersonal data'
+description: 組織のユーザーのデータをエクスポートするために、会社の管理者によって行われたデータポリシー操作要求を送信します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7f112d065b75da7dc525e667df78b0264be37d55
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934192"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547901"
 ---
-# <a name="user-exportpersonaldata"></a>ユーザー: exportPersonalData
+# <a name="user-exportpersonaldata"></a>ユーザー: exportpersonal data
 
-組織のユーザーのデータをエクスポートするのには、企業の管理者によって行われた、データ ポリシーの操作要求を送信します。
+組織のユーザーのデータをエクスポートするために、会社の管理者によって行われたデータポリシー操作要求を送信します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  User.Export.All と User.Read.All  |
-|委任 (個人用 Microsoft アカウント) |  該当なし  |
-|アプリケーション | User.Export.All と User.Read.All |
+|委任 (職場または学校のアカウント) |  すべてのユーザーとユーザーの. すべてをエクスポートします。  |
+|委任 (個人用 Microsoft アカウント) |  該当しない  |
+|アプリケーション | すべてのユーザーとユーザーの. すべてをエクスポートします。 |
 
->**注:** エクスポートだけは企業の管理者、委任されたアクセス許可を使用するとします。
+>**注:** エクスポートは、委任されたアクセス許可を使用する場合にのみ、会社の管理者が実行できます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -40,17 +40,17 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明 |
+| パラメーター    | 型   |説明 |
 |:---------------|:--------|:----------|
-|storageLocation|String|これは、データをエクスポートする必要があります、Azure ストレージ アカウントに共有アクセス署名 (SA) の URL です。|
+|storagelocation|String|これは、データのエクスポート先となる Azure Storage アカウントの shared access signature (SAS) URL です。|
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `202 Accepted` 応答コードを返します。 応答本体には何もは返されません。 応答には、次のヘッダーが含まれています。
+成功した場合、このメソッドは `202 Accepted` 応答コードを返します。 応答本文には何も返されません。 応答には、次のヘッダーが含まれています。
 
 | 名前       | 説明 |
 |:---------------|:----------|
-| Location  | 要求のステータスを確認する URL です。 |
-| 再試行した後  | までの時間 (秒単位)。 要求のメーカーは、これを待つ必要があります後の状態をチェックする要求を送信します。 |
+| Location  | 要求の状態を確認するための URL。 |
+| 再試行-後  | 期間 (秒単位)。 要求を送信した後に、要求の状態を確認するための要求を送信する必要があります。 |
 
 
 ## <a name="example"></a>例

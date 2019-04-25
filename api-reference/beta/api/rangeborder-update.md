@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8b0aae47251aa9967501ce18d107cdd4c1b7ddd9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538304"
 ---
 # <a name="update-rangeborder"></a>rangeborder を更新する
 
@@ -45,7 +45,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
 |style|string|罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。可能な値は、`None`、`Continuous`、`Dash`、`DashDot`、`DashDotDot`、`Dot`、`Double`、`SlantDashDot` です。|
-|weight|文字列|範囲を取り囲む罫線の太さを指定します。可能な値は、`Hairline`、`Thin`、`Medium`、`Thick` です。|
+|weight|string|範囲を取り囲む罫線の太さを指定します。可能な値は、`Hairline`、`Thin`、`Medium`、`Thick` です。|
 
 ## <a name="response"></a>応答
 

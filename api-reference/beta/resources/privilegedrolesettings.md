@@ -1,43 +1,43 @@
 ---
 title: privilegedRoleSettings リソースの種類
-description: 特権を持つロールの設定を表します。
+description: 特権ロールの設定を表します。
 localization_priority: Normal
 ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563277"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特権を持つロールの設定を表します。
+特権ロールの設定を表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[PrivilegedRoleSettings を取得します。](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |PrivilegedRoleSettings オブジェクトのプロパティと関係を参照してください。|
-|[PrivilegedRoleSettings を更新します。](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |PrivilegedRoleSettings オブジェクトを更新します。|
+|[privilegedRoleSettings を取得する](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |privilegedRoleSettings オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[privilegedRoleSettings の更新](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |privilegedRoleSettings オブジェクトを更新します。|
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|ロールが有効な場合の期間です。|
-|id|string| ロールの設定の一意の識別子です。 読み取り専用です。|
-|isMfaOnElevationConfigurable|ブール値|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。|
-|lastGlobalAdmin|ブール値|内部エラーのみを使用します。|
-|maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。|
-|mfaOnElevation|ブール値|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。|
-|minElevationDuration|duration|アクティブ化されたロールの最低限の期間です。|
-|notificationToUserOnElevation|ブール値|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。|
-|ticketingInfoOnElevation|ブール値|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。|
-|approvalOnElevation|ブール値|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。|
-|approverIds|配列|承認 id、ライセンス認証の必要な場合は承認の一覧です。|
+|elevationDuration|duration|役割がアクティブ化される期間。|
+|id|string| ロール設定の一意の識別子。 読み取り専用。|
+|isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。|
+|lastglobaladmin|ブール値|内部でのみ使用されます。|
+|maxelavationduration|duration|アクティブ化されたロールの最大期間。|
+|mfaonelevation|ブール値|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。|
+|minElevationDuration|duration|アクティブ化されたロールの期間を最小化します。|
+|notificationToUserOnElevation|ブール値|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。|
+|ticketingInfoOnElevation|ブール値|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。|
+|approvalonelevation|ブール値|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。|
+|承認の検証 ds|配列|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

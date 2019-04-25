@@ -1,15 +1,15 @@
 ---
-title: 電話リソースの種類
+title: phone リソースの種類
 description: 電話番号を表します。
 localization_priority: Normal
 ms.openlocfilehash: a343d4e1d65126048a27ad723c86ae49eb2ed752
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573768"
 ---
-# <a name="phone-resource-type"></a>電話リソースの種類
+# <a name="phone-resource-type"></a>phone リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,8 +19,8 @@ ms.locfileid: "29527230"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|number|string|電話番号。|
-|種類|String|電話番号の種類。可能な値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。|
+|番号|string|電話番号。|
+|type|String|電話番号の種類。 可能な値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

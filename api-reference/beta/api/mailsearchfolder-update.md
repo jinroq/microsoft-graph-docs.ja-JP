@@ -1,21 +1,21 @@
 ---
-title: MailSearchFolder を更新します。
-description: MailSearchFolder オブジェクトの書き込み可能なプロパティを更新します。
+title: mailsearchfolder を更新する
+description: mailsearchfolder オブジェクトの書き込み可能なプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540610"
 ---
-# <a name="update-mailsearchfolder"></a>MailSearchFolder を更新します。
+# <a name="update-mailsearchfolder"></a>mailsearchfolder を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[MailSearchFolder](../resources/mailsearchfolder.md)オブジェクトの書き込み可能なプロパティを更新します。
+[mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトの書き込み可能なプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| displayName | String | [MailFolder](../resources/mailfolder.md)の表示名です。|
-| includeNestedFolders | ブール値 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
-| sourceFolderIDs | String コレクション | メールボックス フォルダーをマイニングする必要があります。 |
-| filterQuery | String | メッセージをフィルタ リングする OData クエリです。 |
+| displayName | String | [mailfolder](../resources/mailfolder.md)の表示名。|
+| includeNestedFolders | ブール値 | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
+| sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
+| filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [mailFolder](../resources/mailfolder.md) オブジェクトを返します。

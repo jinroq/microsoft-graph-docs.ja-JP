@@ -4,11 +4,11 @@ description: デルタ クエリでは、一連のデルタ関数呼び出しを
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 358af439fb69525b75dc2810f890a91dc54f2789
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526103"
 ---
 # <a name="get-incremental-changes-for-groups"></a>グループに対する増分の変更を取得する
 

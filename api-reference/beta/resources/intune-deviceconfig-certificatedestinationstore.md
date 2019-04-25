@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 36571d1cefbedfb0da37c018755356e3354ad777
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778944"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549413"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificatedestinationstore 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31778944"
 |メンバー|値|説明|
 |:---|:---|:---|
 |computercertstoreroot|.0|コンピューター証明書ストア-ルート。|
-|computercertstoreintermediate|1-d|コンピューター証明書ストア-中間。|
-|usercertstoreintermediate|pbm-2|ユーザー証明書ストア-中間。|
+|computercertstoreintermediate|1 |コンピューター証明書ストア-中間。|
+|usercertstoreintermediate|2 |ユーザー証明書ストア-中間。|
 
 
 

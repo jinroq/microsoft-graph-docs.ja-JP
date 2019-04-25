@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2d8a3bbd24f83dd635c6254b852a2ecd00660fe9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582417"
 ---
 # <a name="update-rangeborder"></a>rangeborder を更新する
 
@@ -39,15 +39,15 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideInd
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
-|style|文字列|境界線の線のスタイルを指定する線のスタイルの定数の 1 つです。 可能な値: `None`、 `Continuous`、 `Dash`、 `DashDot`、 `DashDotDot`、 `Dot`、 `Double`、 `SlantDashDot`。|
-|weight|文字列|範囲周辺の罫線の太さを指定します。 可能な値: `Hairline`、 `Thin`、 `Medium`、 `Thick`。|
+|style|string|罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 使用可能な値は`None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、、 `SlantDashDot`、です。|
+|weight|string|範囲を取り囲む罫線の太さを指定します。 使用可能な値は`Hairline`、 `Thin`、 `Medium`、 `Thick`、です。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

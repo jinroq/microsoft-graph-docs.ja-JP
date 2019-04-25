@@ -6,11 +6,11 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: c9f4c3dc54b9eee6cc1ab24058e3fe238fed89a3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480601"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584070"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds リソースの種類
 
@@ -44,7 +44,7 @@ ms.locfileid: "30480601"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ         | 種類         | 説明
+| プロパティ         | 型         | 説明
 |:-----------------|:-------------|:-------------------------------------------
 | listId           | string       | SharePoint 内にあるアイテムの一覧の一意識別子 (guid)。
 | listItemId       | string       | 含まれているリスト内にあるアイテムの整数の識別子。

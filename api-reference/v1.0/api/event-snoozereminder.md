@@ -1,19 +1,19 @@
 ---
 title: 'イベント: snoozeReminder'
-description: までは新しいユーザーの予定表にイベントのアラームを延期します。
+description: ユーザーの予定表にあるイベントのアラームを、新しい時刻まで延期します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932414"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584307"
 ---
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 
-までは新しいユーザー[の予定表](../resources/calendar.md)に[イベント](../resources/event.md)のアラームを延期します。
+ユーザーの[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)のアラームを、新しい時刻まで延期します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

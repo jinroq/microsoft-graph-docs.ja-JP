@@ -4,11 +4,11 @@ description: サポートするリソースの種類を拡張するために、s
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 446339abd7bc99879df3b6ac19dd6040ab16bf03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545658"
 ---
 # <a name="create-schemaextension"></a>schemaExtension の作成
 
@@ -45,12 +45,12 @@ POST /schemaExtensions
 ## <a name="request-body"></a>要求本文
 要求本文では、[schemaExtension](../resources/schemaextension.md) オブジェクトの JSON 表記を指定します。
 
-次の表は、スキーマの拡張機能を作成するときに使用できるプロパティを示します。
+次の表に、スキーマ拡張機能を作成するときに使用できるプロパティを示します。
 
 | パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|説明|文字列|スキーマ拡張機能の説明。|
-|id|文字列|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。 次に例 `contoso_mySchema` を示します。 注: 上位ドメイン `.com`、`.net`、`.gov`、`.edu`、`.org` の下では、検証済みのドメインのみがサポートされます。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
+|description|String|スキーマ拡張機能の説明。|
+|id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。 次に例 `contoso_mySchema` を示します。 注: 上位ドメイン `.com`、`.net`、`.gov`、`.edu`、`.org` の下では、検証済みのドメインのみがサポートされます。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
 |owner|String|(省略可能) スキーマ拡張機能の所有者であるアプリケーションの `appId` です。 このプロパティは作成時に指定して所有者を設定できます。  指定しない場合、呼び出し元のアプリケーションの `appId` が所有者として設定されます。 たとえば、Graph エクスプローラーを使用して新しいスキーマ拡張機能の定義を作成する場合は、所有者プロパティを指定する**必要があります**。 設定すると、このプロパティは読み取り専用で、変更することはできません。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。|
 |targetTypes|String collection|このスキーマ拡張機能の定義を適用できる、(スキーマ拡張機能をサポートしている) 一連の Microsoft Graph のリソースの種類。|

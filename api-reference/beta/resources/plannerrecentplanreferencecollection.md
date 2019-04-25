@@ -1,26 +1,26 @@
 ---
 title: plannerRecentPlanReferenceCollection リソースの種類
-description: '**PlannerRecentPlanReferenceCollection**リソースでは、ユーザーが最近表示されたプランへの参照のコレクションを表します。 このリソースは、オープン型であり、plannerUser オブジェクトの一部であります。 プロパティ名は、対応する計画の ID です。 プロパティと値のペアの値は、plannerRecentPlanReference オブジェクトです。'
+description: '**plannerRecentPlanReferenceCollection**リソースは、ユーザーが最近参照したプランへの参照のコレクションを表します。 このリソースはオープンタイプで、プランのユーザーオブジェクトの一部です。 プロパティ名は、対応するプランの ID です。 プロパティと値のペアの値は、plannerRecentPlanReference オブジェクトです。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e27375e3f2395b3528873d8b83f0b5aa6f48d52e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583180"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>plannerRecentPlanReferenceCollection リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerRecentPlanReferenceCollection**リソースでは、ユーザーが最近表示されたプランへの参照のコレクションを表します。 このリソースは、オープン型であり、 [plannerUser](planneruser.md)オブジェクトの一部であります。 プロパティ名は、対応する計画の ID です。 プロパティと値のペアの値は、 [plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトです。
-このコレクションに新しい参照を追加するがコレクションのサイズが事前に定義された最大値を超えたときに自動的に最も古いエントリを削除します。
+**plannerRecentPlanReferenceCollection**リソースは、ユーザーが最近参照したプランへの参照のコレクションを表します。 このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。 プロパティ名は、対応するプランの ID です。 プロパティと値のペアの値は、 [plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトです。
+このコレクションに新しい参照を追加すると、コレクションのサイズが事前に定義された最大値を超えると、最も古いエントリが自動的に削除されます。
 
 
 ## <a name="properties"></a>プロパティ
-このオープン型のプロパティを定義することができます。 プロパティ名は、 `id` [plannerPlan](plannerplan.md)リソースの値とその値は、 [plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトをする必要があります。 お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。
+このオープン型のプロパティを定義できます。 プロパティ名は、 `id` plan リソース[](plannerplan.md)およびその値が[plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトである必要があることを示す値です。 [お気に入り] の一覧から項目を削除するには、プロパティの値`null`をに設定します。
 
 
 ## <a name="json-representation"></a>JSON 表記

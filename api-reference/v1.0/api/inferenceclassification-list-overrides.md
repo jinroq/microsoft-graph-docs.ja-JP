@@ -1,19 +1,19 @@
 ---
-title: オーバーライドを一覧表示する
+title: リストのオーバーライド
 description: ユーザーが設定したオーバーライドを取得して、特定の送信者からのメッセージを常に一定の方法で分類します。
 localization_priority: Normal
 ms.openlocfilehash: ab8324ac892df570ed0d28fabb7b31f3280adcef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577617"
 ---
-# <a name="list-overrides"></a>オーバーライドを一覧表示する
+# <a name="list-overrides"></a>リストのオーバーライド
 
 ユーザーが設定したオーバーライドを取得して、特定の送信者からのメッセージを常に一定の方法で分類します。
 
-それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。最初は、ユーザーにはオーバーライドはありません。
+それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。 最初は、ユーザーにはオーバーライドはありません。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -31,7 +31,7 @@ GET /users/{id}/inferenceClassification/overrides
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

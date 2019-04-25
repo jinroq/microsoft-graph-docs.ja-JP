@@ -3,11 +3,11 @@ title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (**profilePhoto** プロパティ) を取得します。
 localization_priority: Priority
 ms.openlocfilehash: 55bdf01515f654eb1622703f9b846de840bc5611
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538568"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -72,7 +72,7 @@ GET /groups/{id}/photos/{size}
 
 |**パラメーター**|**型**|**説明**|
 |:-----|:-----|:-----|
-|サイズ  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: 48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504、648x648。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
+|size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: 48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504、648x648。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。

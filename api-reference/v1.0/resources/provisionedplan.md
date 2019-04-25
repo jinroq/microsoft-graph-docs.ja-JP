@@ -1,24 +1,24 @@
 ---
 title: provisionedPlan リソースの種類
-description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
+description: '**ユーザー** エンティティと組織エンティティの provisionedPlans プロパティは、**provisionedPlan** のコレクションです。'
 localization_priority: Normal
 ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831487"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579665"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
 
-[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
+**ユーザー** エンティティと[組織](user.md)エンティティの [provisionedPlans](organization.md) プロパティは、**provisionedPlan** のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
-|provisioningStatus|String|「成功」など。|
+|プロビジョニング状態|String|「成功」など。|
 |service|String|サービスの名前。「AccessControlS2S」など。|
 
 ## <a name="json-representation"></a>JSON 表記

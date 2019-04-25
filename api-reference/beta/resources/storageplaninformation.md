@@ -5,17 +5,17 @@ ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
 ms.openlocfilehash: 05140b3256e434449d663c4992e74298bbdedd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582115"
 ---
-# <a name="storageplaninformation-resource-type"></a>storagePlanInformation リソースの種類
+# <a name="storageplaninformation-resource-type"></a>storageplan 情報リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**StoragePlanInformation**リソースでは、ドライブの記憶域のクォータの計画に関する情報を提供します。
+**storageplan information**リソースは、ドライブの記憶域クォータプランに関する情報を提供します。
 
 ### <a name="json-representation"></a>JSON 表記
 
@@ -33,9 +33,9 @@ ms.locfileid: "29519235"
 ```
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名     | 型      | 説明                                                             |
+| プロパティ名     | 種類      | 説明                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | ブール値   | 高いストレージ クォータのプランが利用できることを示します。 読み取り専用です。 |
+| upgradeavailable  | Boolean   | 利用可能なストレージクォータプランが高であるかどうかを示します。 値の取得のみ可能です。 |
 
 
 <!--

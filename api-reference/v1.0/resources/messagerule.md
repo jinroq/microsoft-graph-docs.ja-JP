@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a1a1ed26b7f0e659af0b7aeebae7f6da456afddf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943481"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580290"
 ---
 # <a name="messagerule-resource-type"></a>messageRule リソースの種類
 
@@ -28,7 +28,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 該当するルール アクションをトリガーするために満たす必要のある条件。 |
 | displayName | String | ルールの表示名。 |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | ルールの例外条件。 |
-| hasError | Boolean | ルールがエラー状態かどうかを示します。 読み取り専用。 |
+| hasError | Boolean | ルールがエラー状態かどうかを示します。 読み取り専用です。 |
 | id |String|ルールの一意識別子。 読み取り専用。|
 | isEnabled | Boolean | メッセージに対するルールの適用が有効になっているかどうかを示します。 |
 | isReadOnly | Boolean | ルールが読み取り専用のため、ルールの REST API による変更や削除ができないことを示します。 |

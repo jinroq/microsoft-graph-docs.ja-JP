@@ -6,11 +6,11 @@ title: ファイルまたはフォルダーのサムネイルを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548076"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 
@@ -50,7 +50,7 @@ GET /sites/{site-id}/drive/items/{item-id}/thumbnails
 GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
@@ -107,7 +107,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| 名前         | 種類   | 説明                                                                              |
+| 名前         | 型   | 説明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 参照されるアイテムの一意識別子。                                           |
 | **thumb-id** | number | サムネイルのインデックス (通常 0-4)。 カスタム サムネイルがある場合は、そのインデックスは 0 になります。 |
@@ -209,7 +209,7 @@ Content-type: application/json
 
 次の表で、使用可能なサムネイルのサイズを定義します。サムネイルの任意のサイズを要求できますが、定義済みの値が存在する可能性が高く、値は即時に返されます。
 
-| 名前           | 解決方法  | 縦横比 | 説明                                                          |
+| 名前           | 解決策  | 縦横比 | 説明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | Original     | 圧縮率の高い小さなサムネイルは、正方形にトリミングされます。 |
 | `medium`       | 176 longest | Original     | OneDrive の Web ビューの標準的なアイテムのサイズにトリミングされます。         |

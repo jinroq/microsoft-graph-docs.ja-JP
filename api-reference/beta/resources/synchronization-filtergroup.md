@@ -1,25 +1,25 @@
 ---
-title: filterGroup リソースの種類
-description: スコープでオブジェクトが満たす必要がある句のセットを定義します。 オブジェクトは、グループのスコープ内と見なされます (グループが評価され、 `true`) にグループのすべての句が評価される場合にのみ`true`。
+title: filtergroup リソースの種類
+description: オブジェクトがスコープ内で考慮される必要がある一連の句を定義します。 グループのすべての句が評価される場合にのみ、グループの`true`スコープ内でオブジェクトが考慮され`true`ます (グループは評価されます)。
 localization_priority: Normal
 ms.openlocfilehash: b71bdf16d6639b5ecc8512565ccf56d592a0da58
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582032"
 ---
-# <a name="filtergroup-resource-type"></a>filterGroup リソースの種類
+# <a name="filtergroup-resource-type"></a>filtergroup リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-スコープでオブジェクトが満たす必要がある句のセットを定義します。 オブジェクトは、グループのスコープ内と見なされます (グループが評価され、 `true`) にグループのすべての句が評価される場合にのみ`true`。
+オブジェクトがスコープ内で考慮される必要がある一連の句を定義します。 グループのすべての句が評価される場合にのみ、グループの`true`スコープ内でオブジェクトが考慮され`true`ます (グループは評価されます)。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|句|[filterClause](synchronization-filterclause.md)コレクション|句 (条件) をこのグループのフィルターを適用します。 グループ内のすべての句は、フィルターのグループを評価するために満たす必要があります`true`。|
-|name|String|フィルター グループの名前を人間が判読できます。|
+|条項|[filterclause](synchronization-filterclause.md)コレクション|このグループのフィルター句 (条件)。 フィルターグループがに`true`評価されるように、グループ内のすべての句が満たされている必要があります。|
+|name|String|ユーザーが読み取ることができるフィルターグループの名前。|
 
 ## <a name="json-representation"></a>JSON 表記
 

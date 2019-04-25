@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7f452de7d002368c204cb57cc352ac9f9658609a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803844"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549560"
 ---
 # <a name="applistitem-resource-type"></a>appListItem リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "31803844"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |name|String|アプリケーション名|
-|発行元|文字列|アプリケーションの発行元|
+|発行元|String|アプリケーションの発行元|
 |appStoreUrl|String|アプリケーションのストア URL|
 |appId|文字列型 (String)|アプリケーションのアプリケーションまたはバンドルの識別子|
 

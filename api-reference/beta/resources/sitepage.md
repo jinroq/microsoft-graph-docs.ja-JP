@@ -2,45 +2,45 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: SitePage
+title: sitepage
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583404"
 ---
-# <a name="sitepage-resource"></a>sitePage リソース
+# <a name="sitepage-resource"></a>sitepage リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このリソースは、サイト ページの[一覧][]でページを表します。
-タイトル、レイアウト、および[web パーツ][]の s のコレクションが含まれています。
+このリソースは、sitepages[リスト][]のページを表します。
+これには、タイトル、レイアウト、および[webPart][]のコレクションが含まれています。
 
 ## <a name="tasks-on-a-page"></a>ページ上のタスク
 
-**SitePage**リソースの次のタスクを利用できます。
-以下のすべての例は、[サイト][]では、例えば: `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
+**sitepage**リソースでは、次のタスクを使用できます。
+以下のすべての例は、[サイト][]に関連し`https://graph.microsoft.com/{api-version}/sites/{site-id}`ています。例:。
 
 | 共通タスク                     | HTTP メソッド
 |:--------------------------------|:------------------------------
-| [List pages][]                  | /Pages を取得します。
-| [Get page][]                    | /Pages/{ページの id を取得します。
-| [Create][]                      | 投稿/pages
-| [削除する][]                      | /Pages/{ページの id を削除します。
-| [Publish][]                     | /Pages/{ページ id} の投稿し、公開
+| [List pages][]                  | ページを取得する
+| [ページを取得する][]                    | ページを取得する/ページ/{pagefrom id}
+| [作成][]                      | 投稿/ページ
+| [削除][]                      | 削除/ページ/{page¥ id}
+| [Publish][]                     | 投稿/ページ/_ page/発行
 
 [List pages]: ../api/sitepage-list.md
-[Get page]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[ページを取得する]: ../api/sitepage-get.md
+[作成]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
 [Publish]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>JSON 表記
 
-ここでは、 **sitePage**リソースの JSON 表現です。
+ここでは、 **sitepage**リソースの JSON 表記を示します。
 
 <!--{
   "blockType": "resource",
@@ -75,33 +75,33 @@ ms.locfileid: "29640659"
 
 ## <a name="properties"></a>プロパティ
 
-**SitePage**リソースでは、次のプロパティがあります。
+**sitepage**リソースには、次のプロパティがあります。
 
-| プロパティ名    | 型                         | 説明
+| プロパティ名    | 種類                         | 説明
 |:-----------------|:-----------------------------|:---------------------------
-| contentType      | [contentTypeInfo][]          | ページのコンテンツの種類です。
+| contentType      | [contentTypeInfo][]          | ページのコンテンツタイプ。
 
 ## <a name="page-content"></a>ページのコンテンツ
 
-**SitePage**リソースでは、次のコンテンツのフィールドがあります。
+**sitepage**リソースには、次のコンテンツフィールドがあります。
 
-| プロパティ名      | 型                       | 説明
+| プロパティ名      | 種類                       | 説明
 |:-------------------|:---------------------------|:---------------------------
-| タイトル              | 文字列                     | ページのタイトル。
-| pageLayout         | string                     | ページのページ レイアウトの名前。
-| web パーツ           | [web パーツ][]                | ページ上の web パーツです。
+| title              | string                     | ページのタイトル。
+| pageLayout         | string                     | ページのページレイアウトの名前を指定します。
+| パーツ           | [パーツ][]                | ページ上の web パーツ。
 
 ## <a name="authoring-metadata"></a>メタデータを作成する
 
-**SitePage**のリソースには、次の作成に関連するメタデータがあります。 PublishingState プロパティは、このようなチェック アウトされているか、公開の状態を作成するページに反映されます。
+**sitepage**リソースには、次の作成関連のメタデータがあります。 発行状態プロパティは、チェックアウトまたは発行されたページ作成状態を反映します。
 
-| プロパティ名          | 型                   | 説明
+| プロパティ名          | 種類                   | 説明
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | 発行のステータスと MM.mm バージョンのページです。
+| publishingState        | [publicationFacet][]   | ページの発行状態と MM.mm バージョン。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | 型              | 説明
+| プロパティ名        | 種類              | 説明
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | アイテムの一意識別子。読み取り専用です。
 | name                 | string            | アイテムの名前/タイトル。
@@ -114,19 +114,19 @@ ms.locfileid: "29640659"
 
 ## <a name="relationships"></a>リレーションシップ
 
-**SitePage**リソースには、他のリソースへのリレーションシップがありません。
+**sitepage**リソースには、他のリソースとの関係がありません。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[リスト]: list.md
+[list]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[サイト]: site.md
-[web パーツ]: webpart.md
+[site]: site.md
+[パーツ]: webpart.md
 
 <!--
 {

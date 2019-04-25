@@ -3,11 +3,11 @@ title: servicePrincipals を一覧表示する
 description: servicePrincipal オブジェクトの一覧を取得します。
 localization_priority: Normal
 ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545254"
 ---
 # <a name="list-serviceprincipals"></a>servicePrincipals を一覧表示する
 
@@ -47,7 +47,7 @@ GET /servicePrincipals
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[servicePrincipal](../resources/serviceprincipal.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[serviceprincipal](../resources/serviceprincipal.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 ```
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

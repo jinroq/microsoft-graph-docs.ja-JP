@@ -1,21 +1,21 @@
 ---
 title: resourceReference リソースの種類
-description: 複合型のプロパティ情報にはが含まれています。
+description: Insights のプロパティを含む複合型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642759"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549707"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-複合型のプロパティ[情報](insights.md)にはが含まれています。
+[Insights](insights.md)のプロパティを含む複合型。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,9 +33,9 @@ ms.locfileid: "29642759"
 
 | プロパティ      | 型      | 説明  |
 | ------------- |-----------| -------------|
-| webUrl        | String    | 参照先の項目に先行する URL です。 |
-| id            | String    | アイテムの一意の識別子です。           |
-| type          | String    | 文字列値"microsoft.graph.driveItem"など、アイテムの分類に使用できます。 |
+| webUrl        | String    | 参照されるアイテムにつながる URL。 |
+| id            | String    | アイテムの一意の識別子。           |
+| type          | String    | アイテムの分類に使用できる文字列値 ("microsoft....." など) |
 <!--
 {
   "type": "#page.annotation",

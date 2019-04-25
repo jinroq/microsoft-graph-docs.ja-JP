@@ -1,19 +1,19 @@
 ---
 title: 'イベント: 承諾'
-description: ユーザーの予定表で指定したイベントをそのまま使用します。
+description: ユーザーの予定表の指定のイベントを承諾します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5e89aa5cd934805fed9e8b08f93fed6d4e7cfe8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972566"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550008"
 ---
 # <a name="event-accept"></a>イベント: 承諾
 
-ユーザー[の予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)をそのまま使用します。
+ユーザーの[予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)を承諾します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|sendResponse|ブール値|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

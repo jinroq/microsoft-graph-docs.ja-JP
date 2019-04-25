@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c3e8784796577f08bf8c1f30a748513ff5e081c9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582774"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の更新
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。 使用可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
 |primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
 |serverName|String|Exchange サーバーの名前。|
 |コネクタ servername|String|Exchange Connector をホストするサーバーの名前。|

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538442"
 ---
 # <a name="update-range"></a>範囲を更新する
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f465297f437f3710f8c789d8683794b7c9d5fa5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773512"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547012"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings リソースの種類
 
@@ -22,12 +22,12 @@ ms.locfileid: "31773512"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|hideprivacysettings|Boolean|ユーザーのプライバシー設定を表示または非表示にする|
-|hideeula|Boolean|ユーザーに EULA を表示または非表示にする|
+|hideprivacysettings|ブール値|ユーザーのプライバシー設定を表示または非表示にする|
+|hideeula|ブール値|ユーザーに EULA を表示または非表示にする|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|ユーザーの種類。 可能な値は、`administrator`、`standard` です。|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD 参加認証の種類。 可能な値は、`singleUser`、`shared` です。|
-|skipキーボードの selectionpage|Boolean|設定されている場合は、言語と地域が設定されている場合は、キーボードの選択ページをスキップします。|
-|hideEscapeLink|Boolean|true に設定されている場合、ユーザーは別のアカウントを使用してサインインすることはできません (会社のサインイン時)。|
+|skipキーボードの selectionpage|ブール値|設定されている場合は、言語と地域が設定されている場合は、キーボードの選択ページをスキップします。|
+|hideEscapeLink|ブール値|true に設定されている場合、ユーザーは別のアカウントを使用してサインインすることはできません (会社のサインイン時)。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

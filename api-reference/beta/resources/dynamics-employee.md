@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 865da0c1e1256e2ba2a25902e37a00da9081eedf
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543064"
 ---
 # <a name="employees-resource-type"></a>employees リソースの種類
 Dynamics 365 Business Central の従業員を表します。
@@ -23,13 +23,13 @@ Dynamics 365 Business Central の従業員を表します。
 |[従業員の取得](../api/dynamics-employee-get.md)      |向け  |employee オブジェクトを取得します。   |
 |[従業員の投稿](../api/dynamics-create-employee.md)  |向け  |employee オブジェクトを作成します。|
 |[パッチの従業員](../api/dynamics-employee-update.md) |向け  |employee オブジェクトを更新します。|
-|[従業員を削除する](../api/dynamics-employee-delete.md)|none       |employee オブジェクトを削除します。|
+|[従業員を削除する](../api/dynamics-employee-delete.md)|なし       |employee オブジェクトを削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ           | 型   |説明                                            |
 |:-------------------|:-------|:------------------------------------------------------|
-|ID                  |GUID    |従業員 ID。 編集不可。                         |
-|number              |string  |従業員番号。 読み取り専用です。                        |
+|id                  |GUID    |従業員 ID。 編集できません。                         |
+|番号              |string  |従業員番号。 読み取り専用です。                        |
 |displayName         |string  |従業員の givenName + 姓。 読み取り専用です。           |
 |givenName           |string  |従業員の指定された名前。                        |
 |middleName          |string  |従業員のミドルネーム。                       |
@@ -45,7 +45,7 @@ Dynamics 365 Business Central の従業員を表します。
 |status              |string  |従業員の状態を指定します。 有効な値、非アクティブな値、または終了した値を指定します。|
 |birthDate           |日付    |従業員の生年月日を指定します。                |
 |表             |stream  |従業員の画像。 読み取り専用です。                       |
-|lastModifiedDateTime|datetime|従業員が最後に変更された日時。 読み取り専用です。|  
+|lastModifiedDateTime|datetime|従業員が最後に変更された日時。 読み取り専用。|  
 
 
 ## <a name="relationships"></a>リレーションシップ

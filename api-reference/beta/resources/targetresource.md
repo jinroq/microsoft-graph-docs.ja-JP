@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: azure-ad
 ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583110"
 ---
 # <a name="targetresource-resource-type"></a>targetResource リソースの種類
 
@@ -21,9 +21,9 @@ ms.locfileid: "30342290"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String|リソースの一意の ID を示します。|
-|displayName|String|リソースに対して定義されている表示名を示します。 通常、リソースの作成時に指定されます。|
+|displayName|文字列型 (String)|リソースに対して定義されている表示名を示します。 通常、リソースの作成時に指定されます。|
 |type|String|リソースの種類を表します。  値の例`Application`に`Group`は`ServicePrincipal`、、 `User`、、などがあります。|
-|userPrincipalName|文字列|**型**がに`User`設定されている場合、これにはアクションを開始したユーザー名が含まれます。`null`その他の種類の場合。|
+|userPrincipalName|String|**型**がに`User`設定されている場合、これにはアクションを開始したユーザー名が含まれます。`null`その他の種類の場合。|
 |groupType|String|**型**がに`Group`設定されている場合は、グループの種類を示します。|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md)コレクション|変更された各属性の名前、古い値、新しい値を示します。 プロパティの値は、操作の**種類**によって異なります。|
 

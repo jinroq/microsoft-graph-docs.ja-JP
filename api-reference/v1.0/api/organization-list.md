@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0fbd38f4d3c0e4ceec9f025e9822b635ce6a0d54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572564"
 ---
 # <a name="list-organization"></a>組織を一覧表示する
 
@@ -21,7 +21,7 @@ ms.locfileid: "27939162"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
+|委任 (職場または学校のアカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: c9c90ea56b1c0924ec91436733c99c67333b99d5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981715"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556670"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -25,7 +25,7 @@ Outlook クライアントを設定する際は、このサポートされてい
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.Read、User.ReadBasic.All    |
+|委任 (職場または学校のアカウント) | User.Read、User.ReadBasic.All    |
 |委任 (個人用 Microsoft アカウント) | User.Read    |
 |アプリケーション | User.Read.All |
 

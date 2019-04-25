@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 04797f0674ff824d2881ffdfa2500d3d3e7c79bc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989064"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582501"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の作成
 
@@ -50,7 +50,7 @@ POST /deviceManagement/roleAssignments
 |:---|:---|:---|
 |id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
-|description|String|ロール割り当ての説明。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
+|説明|String|ロール割り当ての説明。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |resourceScopes|String collection|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID です。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |members|String コレクション|ロール メンバーのセキュリティ グループの ID リスト。 Azure Active Directory の ID。|
 

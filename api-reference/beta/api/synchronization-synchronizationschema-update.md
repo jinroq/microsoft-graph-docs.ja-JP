@@ -1,19 +1,19 @@
 ---
-title: SynchronizationSchema を更新します。
-description: やテンプレートの特定のジョブ、同期スキーマを更新します。 このメソッドは、要求で提供されるもので、現在のスキーマを完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーション オブジェクトの呼び出しを確認します。 アプリケーションの所有者でなければなりません。
+title: 同期スキーマの更新
+description: 特定のジョブまたはテンプレートの同期スキーマを更新します。 このメソッドは、現在のスキーマを要求で指定されたものに完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーションオブジェクトに対して呼び出しを行います。 アプリケーションの所有者である必要があります。
 localization_priority: Normal
 ms.openlocfilehash: 13ee7d996b0e02834b77cd222380747c02d7fcc2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536958"
 ---
-# <a name="update-synchronizationschema"></a>SynchronizationSchema を更新します。
+# <a name="update-synchronizationschema"></a>同期スキーマの更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-やテンプレートの特定のジョブ、同期スキーマを更新します。 このメソッドは、要求で提供されるもので、現在のスキーマを完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーション オブジェクトの呼び出しを確認します。 アプリケーションの所有者でなければなりません。
+特定のジョブまたはテンプレートの同期スキーマを更新します。 このメソッドは、現在のスキーマを要求で指定されたものに完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーションオブジェクトに対して呼び出しを行います。 アプリケーションの所有者である必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -39,18 +39,18 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体では、既存のスキーマを置換する[synchronizationSchema](../resources/synchronization-synchronizationschema.md)オブジェクトを指定します。
+要求本文で、既存のスキーマを置換するための[同期スキーマ](../resources/synchronization-synchronizationschema.md)オブジェクトを指定します。
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`204 No Content`応答コード。 応答本体には何もは返されません。
+成功した場合は`204 No Content` 、応答コードを返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
 要求の例を次に示します。
 
->**注:** ここで示すように、要求オブジェクトは、読みやすさの短縮されます。 実際の呼び出しのすべてのプロパティを指定します。
+>**注:** ここに示す要求オブジェクトは読みやすいように短縮されています。 実際の呼び出しですべてのプロパティを指定します。
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"

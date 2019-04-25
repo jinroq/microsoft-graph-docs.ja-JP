@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582844"
 ---
 # <a name="timeoff-resource-type"></a>リソースの種類の timeoff
 
@@ -28,11 +28,11 @@ ms.locfileid: "30676990"
 |[timeoff の削除](../api/timeoff-delete.md) | なし | スケジュールから`timeOff`を削除します。|
 
 ## <a name="properties"></a>プロパティ
-|名前          |種類           |説明                                                                                                                                      |
+|名前          |型           |説明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOff` の ID。|
-| userId            |`string`      |に割り当てられているユーザー `timeOff`の ID。 必須。|
-| sharedtimeoff     |[timeoffitem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須。|
+| userId            |`string`      |に割り当てられているユーザー `timeOff`の ID。 必須です。|
+| sharedtimeoff     |[timeoffitem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須です。|
 | draftTimeOff      |[timeoffitem](timeoffitem.md)        |この`timeOff`の下書きバージョンは、マネージャーが表示できます。 必須。|
 | createdDateTime       |`DateTimeOffset`        |これ`timeOff`が最初に作成されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |これ`timeOff`が最後に更新されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: サイト内の SharePoint リストを一覧表示する
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540972"
 ---
 # <a name="enumerate-lists-in-a-site"></a>サイト内のリストを列挙する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [サイト][]の[リスト][]のコレクションを取得します。
 
@@ -34,17 +32,17 @@ ms.locfileid: "30480713"
 ## <a name="http-request"></a>HTTP 要求
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>例
 
 #### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>応答
@@ -88,15 +86,10 @@ Content-type: application/json
 
 [system]: ../resources/systemfacet.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/list-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Lists/Enumerate"
+} -->

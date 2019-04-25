@@ -1,50 +1,50 @@
 ---
-title: secureScoreControlProfiles リソースの種類
-description: コントロールのデータごとのテナントのセキュリティで保護されたスコアを表します。 既定では、テナントのすべてのコントロールを返し、個々 のコントロールを明示的に取得できます。
+title: securescorecontrolprofiles のリソースの種類
+description: テナントのセキュリティスコア (コントロールデータごと) を表します。 既定では、テナントのすべてのコントロールを返し、個々のコントロールを明示的に取得することができます。
 localization_priority: Normal
 ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641611"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549175"
 ---
-# <a name="securescorecontrolprofiles-resource-type"></a>secureScoreControlProfiles リソースの種類
+# <a name="securescorecontrolprofiles-resource-type"></a>securescorecontrolprofiles のリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-コントロールのデータごとのテナントのセキュリティで保護されたスコアを表します。 既定では、テナントのすべてのコントロールを返し、個々 のコントロールを明示的に取得できます。
+テナントのセキュリティスコア (コントロールデータごと) を表します。 既定では、テナントのすべてのコントロールを返し、個々のコントロールを明示的に取得することができます。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[secureScoreControlProfiles のリスト](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |プロパティと、secureScoreControlProfiles オブジェクトのメタデータを参照してください。|
+|[secureScoreControlProfiles のリスト](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |securescorecontrolprofiles のオブジェクトのプロパティとメタデータを読み取ります。|
 
 
 ## <a name="properties"></a>プロパティ
 
 |名前 |型 |説明 |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   テナントの GUID の文字列 id。  |
-|   controlName |   String  |   コントロールの名前です。 |
-|   タイトル   |   String  |   コントロールのタイトルです。   |
-| complianceInformation | [complianceInformation](complianceinformation.md)コレクション | 関連付けられているコンプライアンス情報の収集は、スコアのコントロールをセキュリティで保護します。 |
-|   controlCategory |   String  |   コントロールのアクションのカテゴリ (アカウント、データ、デバイス、アプリケーション、インフラストラクチャ) です。  |
-|   actionType  |   String  |   アクションの種類 (構成、レビュー、動作) を制御します。 |
-|   service |   String  |   (Exchange、Sharepoint、Azure AD) のコントロールを所有しているサービスです。 |
-|   maxScore |  String  |   現在では、指定した日付の最大のスコアを取得します。   |
-|   層 |  String  |   制御層 (コア、防御の深さ、高度な)。    |
-|   userImpact |    String  | コントロール (低、中、高) を実装するためのユーザーへの影響。    |
-|   implementationCost |    String  |   Implemmentating コントロール (低、中、高) のリソースのコストです。 |
-|   rank |  Int32   |   マイクロソフトのコントロールのレベルを調整します。   |
-|   脅威 |   文字列コレクション   |   コントロールを軽減する脅威の一覧 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、なりすましが行われる)。 |
-|   非推奨 |    Boolean |   コントロールで減価償却されるかどうかを示すためにフラグを設定します。   |
-|   改善計画 |   String  |   どのようなコントロールの説明は、改善に役立ちます。 |
-|   remediationImpact | String  |   改善のユーザーへの影響の説明です。 |
-|   actionUrl | String  |   URL は、コントロールが対象になることです。 |
-|   controlStateUpdates |   [secureScoreControlStateUpdate](securescorecontrolstateupdate.md)コレクション |    テナントには、コントロールとしてのマークを指定するフラグ (無視して、レビュー、サード ・ パーティ) ([更新](../api/securescorecontrolprofiles-update.md)がサポートされています)。 |
+|   azureTenantId   |   String  |   テナント ID の GUID 文字列。  |
+|   controlName |   String  |   コントロールの名前を指定します。 |
+|   title   |   String  |   コントロールのタイトルを指定します。   |
+| complianceInformation | [complianceInformation](complianceinformation.md)コレクション | セキュリティで保護されたスコアコントロールに関連付けられているコンプライアンス情報のコレクション |
+|   controlcategory |   String  |   コントロールアクションカテゴリ (アカウント、データ、デバイス、アプリ、インフラストラクチャ)。  |
+|   actionType  |   String  |   アクションの種類 (Config、Review、Behavior) を制御します。 |
+|   service |   String  |   コントロールを所有するサービス (Exchange、Sharepoint、Azure AD)。 |
+|   maxscore |  String  |   指定された日付における現在の取得最高スコア。   |
+|   層 |  String  |   Control 層 (コア、多層防御、詳細)    |
+|   userimpact |    String  | 制御を実装するユーザーへの影響 (低、中、高)。    |
+|   implementationCost |    String  |   implemmentating コントロールのリソースコスト (低、中、高)。 |
+|   rank |  Int32   |   Microsoft のスタックランキング。   |
+|   主 |   String コレクション   |   統制によって軽減される脅威のリスト (accountbreach、datadeletion、dataexのフィルター、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordcracking、phishingOrWhaling、スプーフィング)。 |
+|   予定 |    ブール値 |   コントロールが減価償却されているかどうかを示すフラグです。   |
+|   修復 |   String  |   修復に役立つコントロールの説明。 |
+|   remediationImpact | String  |   修復のユーザーへの影響についての説明。 |
+|   actionUrl | String  |   コントロールを actioned できる場所の URL。 |
+|   controlstateupdates |   [secureScoreControlStateUpdate](securescorecontrolstateupdate.md)コレクション |    テナントがコントロールをマークした場所を示すフラグ (ignore、thirdParty、レビュー済み) ([更新プログラム](../api/securescorecontrolprofiles-update.md)をサポート)。 |
 
 ## <a name="relationships"></a>リレーションシップ
 

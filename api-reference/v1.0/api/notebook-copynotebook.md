@@ -1,20 +1,20 @@
 ---
-title: 'notebook: copyNotebook'
-description: コピー先ドキュメント ライブラリの [ノートブック] フォルダーにノートブックをコピーします。フォルダーが存在しない場合は、そのフォルダーが作成されます。
+title: 'ノートブック: コピーノートブック'
+description: ノートブックを移動先ドキュメントライブラリのノートブックフォルダーにコピーします。 フォルダーが存在しない場合は作成されます。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: aa684dcaa01f2a8c16be1c75a7b973ee8adb8eea
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571731"
 ---
-# <a name="notebook-copynotebook"></a>notebook: copyNotebook
-コピー先ドキュメント ライブラリの [ノートブック] フォルダーにノートブックをコピーします。フォルダーが存在しない場合は、そのフォルダーが作成されます。
+# <a name="notebook-copynotebook"></a>ノートブック: コピーノートブック
+ノートブックを移動先ドキュメントライブラリのノートブックフォルダーにコピーします。 フォルダーが存在しない場合は作成されます。
 
-Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次に結果の操作エンドポイントをポーリングします。
+コピー操作では、非同期呼び出しパターンに従います。最初に copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -39,16 +39,16 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
-要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。パラメーターが必要ない場合は、空の要求本文を送信してもかまいません。
+要求本文で、操作に必要なパラメーターを含む JSON オブジェクトを指定します。 必要なものがない場合は、空の本文を送信してもかまいません。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
-|renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |
+|groupId|文字列型 (String)|コピー先のグループの id。 Office 365 グループにコピーする場合にのみ使用します。|
+|renameAs|String|コピーするフィルターの名前を指定します。 Defaults to the name of the existing item. |
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation-get.md)。
+成功した場合、このメソッド`202 Accepted`は応答コードと`Operation-Location`ヘッダーを返します。 操作の場所のエンドポイントをポーリングして、[コピー操作の状態を取得](onenoteoperation-get.md)します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

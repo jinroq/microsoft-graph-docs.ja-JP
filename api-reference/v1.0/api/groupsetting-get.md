@@ -1,19 +1,19 @@
 ---
-title: グループ設定の取得
-description: 特定のグループ設定オブジェクトのプロパティを取得します。
+title: グループ設定を取得する
+description: グループ設定オブジェクトの特定のプロパティを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d47441a66ab0b2ed3602a69f4a92a06050708f67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936502"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577834"
 ---
-# <a name="get-a-group-setting"></a>グループ設定の取得
+# <a name="get-a-group-setting"></a>グループ設定を取得する
 
-特定のグループ設定オブジェクトのプロパティを取得します。
+グループ設定オブジェクトの特定のプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -51,7 +51,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [groupSetting](../resources/groupsetting.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[groupsetting](../resources/groupsetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

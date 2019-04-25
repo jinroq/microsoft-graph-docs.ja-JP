@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c9f4c7dd24486c4c2d5ea09281008617c97d605f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552493"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>androidForWorkEnrollmentProfile リソース タイプ
 
@@ -22,24 +22,24 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[androidForWorkEnrollmentProfiles のリスト](../api/intune-androidforwork-androidforworkenrollmentprofile-list.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) コレクション|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidForWorkEnrollmentProfile の取得](../api/intune-androidforwork-androidforworkenrollmentprofile-get.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List androidForWorkEnrollmentProfiles](../api/intune-androidforwork-androidforworkenrollmentprofile-list.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) コレクション|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-get.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-create.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|新しい [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトを作成します。|
-|[androidForWorkEnrollmentProfile の削除](../api/intune-androidforwork-androidforworkenrollmentprofile-delete.md)|なし|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) を削除します。|
-|[androidForWorkEnrollmentProfile の更新](../api/intune-androidforwork-androidforworkenrollmentprofile-update.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティを更新します。|
-|[revokeToken アクション](../api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken.md)|なし|まだ文書化されていません|
-|[createToken アクション](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
+|[Delete androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-delete.md)|なし|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) を削除します。|
+|[Update androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-update.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティを更新します。|
+|[revokeToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken.md)|なし|まだ文書化されていません|
+|[createToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|accountId|文字列|登録プロファイルが属するテナント GUID。|
-|id|文字列|登録プロファイルの一意の GUID。|
+|accountId|String|登録プロファイルが属するテナント GUID。|
+|id|String|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|説明|String|登録プロファイルの説明。|
+|description|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
-|tokenValue|文字列|この登録プロファイル用に最後に作成されたトークンの値。|
+|tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
 |qrCodeContent|String|トークン用の QR コードを生成するために使用された文字列。|

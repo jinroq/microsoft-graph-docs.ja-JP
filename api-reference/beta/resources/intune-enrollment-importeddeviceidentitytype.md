@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c22866ea0a79bc620595024f8182c3d0aa3f198d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802262"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542138"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31802262"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|importedDeviceIdentityType の値が不明です。|
-|imei|1-d|デバイス id の種類は imei です。|
-|シリアル番号|pbm-2|デバイス id の種類はシリアル番号です。|
+|imei|1 |デバイス id の種類は imei です。|
+|シリアル番号|2 |デバイス id の種類はシリアル番号です。|
 
 
 

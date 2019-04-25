@@ -1,41 +1,41 @@
 ---
-title: bookingCustomer リソースの種類
+title: bookingcustomer リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: cd4991b28f1dee0ba647a7f95b70817beffbef95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522218"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543910"
 ---
-# <a name="bookingcustomer-resource-type"></a>bookingCustomer リソースの種類
+# <a name="bookingcustomer-resource-type"></a>bookingcustomer リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-の[bookingBsiness](bookingbusiness.md)の顧客を表します。
+[bookingBsiness](bookingbusiness.md)のお客様を表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[顧客のリスト](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md)コレクション | **BookingCustomer**オブジェクトのリストを取得します。 |
-|[BookingCustomer を作成します。](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | 新しい**bookingCustomer**オブジェクトを作成します。 |
-|[BookingCustomer を取得します。](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |プロパティと、 **bookingCustomer**オブジェクトの関係を参照してください。|
-|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |**BookingCustomer**オブジェクトを更新します。 |
-|[Delete](../api/bookingcustomer-delete.md) | なし |**BookingCustomer**オブジェクトを削除します。 |
+|[顧客を一覧表示する](../api/bookingbusiness-list-customers.md) | [bookingcustomer](bookingcustomer.md)コレクション | **bookingcustomer**オブジェクトのリストを取得します。 |
+|[bookingcustomer の作成](../api/bookingbusiness-post-customers.md) | [bookingcustomer](bookingcustomer.md) | 新しい**bookcustomer**オブジェクトを作成します。 |
+|[bookingcustomer を取得する](../api/bookingcustomer-get.md) | [bookingcustomer](bookingcustomer.md) |**bookingcustomer**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[更新](../api/bookingcustomer-update.md) | [bookingcustomer](bookingcustomer.md) |**bookingcustomer**オブジェクトを更新します。 |
+|[削除](../api/bookingcustomer-delete.md) | なし |**bookingcustomer**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|文字列型 (String)|顧客の名前。|
-|emailAddress|String|お客様の SMTP アドレスです。|
-|id|文字列| 顧客の ID です。 読み取り専用です。|
+|displayName|String|顧客の名前。|
+|emailAddress|String|顧客の SMTP アドレス。|
+|id|String| 顧客の ID。 読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3be91dd094258f0bf998521c058f1c62659fbcc8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794387"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581031"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 
@@ -23,27 +23,27 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedAppRegistrations のリスト](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) コレクション|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) コレクション|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) オブジェクトのプロパティとリレーションを読み取ります。|
-|[getUserIdsWithFlaggedAppRegistration 関数](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String コレクション|まだ文書化されていません|
+|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日付と時刻。|
-|applicationVersion|文字列|アプリのバージョン|
-|managementSdkVersion|文字列|アプリ管理の SDK バージョン|
-|platformVersion|文字列|オペレーティング システムのバージョン|
-|deviceType|文字列|ホスト デバイスの種類|
+|applicationVersion|String|アプリのバージョン|
+|managementSdkVersion|String|アプリ管理の SDK バージョン|
+|platformVersion|String|オペレーティング システムのバージョン|
+|deviceType|String|ホスト デバイスの種類|
 |deviceTag|String|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。|
 |deviceName|String|ホスト デバイスの名前|
-|manageddeviceid|文字列|ホストデバイスの管理デバイス識別子。 ホストデバイスが管理されている場合でも、値を空にすることができます。|
-|azureADDeviceId|文字列|ホストデバイスの Azure Active Directory デバイス識別子。 ホストデバイスが Azure Active Directory に登録されている場合でも、値を空にすることができます。|
-|deviceModel|文字列|現在のアプリ登録のデバイスモデル |
-|deviceManufacturer|文字列|現在のアプリ登録のデバイスの製造元 |
+|manageddeviceid|String|ホストデバイスの管理デバイス識別子。 ホストデバイスが管理されている場合でも、値を空にすることができます。|
+|azureADDeviceId|String|ホストデバイスの Azure Active Directory デバイス識別子。 ホストデバイスが Azure Active Directory に登録されている場合でも、値を空にすることができます。|
+|deviceModel|String|現在のアプリ登録のデバイスモデル |
+|deviceManufacturer|String|現在のアプリ登録のデバイスの製造元 |
 |flaggedReasons|[managedappflaggedreason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイスで実行されているアプリ|
-|userId|文字列|このアプリの登録が属するユーザー ID。|
+|userId|String|このアプリの登録が属するユーザー ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリ パッケージの識別子|
 |id|String|エンティティのキー。|
 |version|文字列型 (String)|エンティティのバージョン。|

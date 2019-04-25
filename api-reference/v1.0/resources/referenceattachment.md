@@ -3,11 +3,11 @@ title: referenceAttachment リソースの種類
 description: OneDrive for Business のクラウド ドライブまたは他のサポートされている保存場所にあり、イベント、メッセージ、または投稿にアタッチされているファイル (テキスト ファイルまたは Word 文書など) へのリンク。
 localization_priority: Normal
 ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853124"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579416"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -20,10 +20,10 @@ OneDrive for Business のクラウド ドライブまたは他のサポートさ
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[取得](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |referenceAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment-delete.md) | なし |referenceAttachment オブジェクトを削除します。 |
+|[削除](../api/attachment-delete.md) | なし |referenceAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。読み取り専用です。|
@@ -32,7 +32,7 @@ OneDrive for Business のクラウド ドライブまたは他のサポートさ
 |name|String|埋め込まれた添付ファイルを表すアイコンの下に表示されるテキスト。実際のファイル名である必要はありません。|
 |size|Int32|添付ファイルのメッセージに格納されているメタデータのサイズ (バイト単位)。 この値は実際のファイルのサイズを示すものではありません。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

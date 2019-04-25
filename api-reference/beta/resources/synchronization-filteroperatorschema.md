@@ -1,28 +1,28 @@
 ---
-title: filterOperatorSchema リソースの種類
-description: フィルターで使用できる演算子をについて説明します。
+title: filter演算子スキーマリソースの種類
+description: フィルターで使用できる演算子を記述します。
 localization_priority: Normal
 ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581738"
 ---
-# <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema リソースの種類
+# <a name="filteroperatorschema-resource-type"></a>filter演算子スキーマリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[フィルター](synchronization-filter.md)で使用できる演算子をについて説明します。
+[フィルター](synchronization-filter.md)で使用できる演算子を記述します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                   | 型                      | 説明    |
 |:---------------------------|:--------------------------|:---------------|
-|アリティ                       |String          |演算子のアリティ。 使用可能な値は、`Binary`、`Unary` です。 既定値は `Binary` です。|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |使用可能な値は、`All`、`Any` です。 複数値を持つ属性にのみ適用されます。 `All`すべての値が条件を満たす必要があることを意味します。 `Any`条件を満たすために、少なくとも 1 つの値が含まれていることを意味します。 既定値は `All` です。|
-|name                        |String                     |オペレーター名です。 |
-|supportedAttributeTypes     |String コレクション         |属性の型が演算子でサポートします。 可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。|
+|アリ                       |String          |演算子のアリティ。 可能な値は、`Binary`、`Unary` です。 既定値は `Binary` です。|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可能な値は、`All`、`Any` です。 複数値属性にのみ適用されます。 `All`すべての値が条件を満たす必要があることを意味します。 `Any`少なくとも1つの値が条件を満たす必要があることを意味します。 既定値は `All` です。|
+|name                        |String                     |オペレーター名。 |
+|supportedAttributeTypes     |String collection         |演算子でサポートされている属性の種類。 可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

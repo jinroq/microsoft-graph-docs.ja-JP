@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ca55a55ea17dcd032204dcb786ea07a9801f4674
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534501"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection リソースの種類
 
@@ -25,9 +25,9 @@ Win32 アプリを検出するための PowerShell スクリプトのプロパ�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enforceSignatureCheck|Boolean|署名チェックを適用するかどうかを示す値|
-|runAs32Bit|Boolean|このスクリプトを32ビットとして実行する必要があるかどうかを示す値。|
-|scriptcontent|文字列|Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容|
+|enforceSignatureCheck|ブール値|署名チェックを適用するかどうかを示す値|
+|runAs32Bit|ブール値|このスクリプトを32ビットとして実行する必要があるかどうかを示す値。|
+|scriptcontent|String|Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

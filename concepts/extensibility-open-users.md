@@ -4,11 +4,11 @@ description: '*オープン拡張機能*の使用方法について、具体例�
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867264"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526141"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>オープン拡張機能を使用してカスタム データをユーザーに追加する
 *オープン拡張機能*の使用方法について、具体例を使ってデモンストレーションします。 

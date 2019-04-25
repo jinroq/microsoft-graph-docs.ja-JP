@@ -1,19 +1,19 @@
 ---
-title: SynchronizationTemplate を更新します。
-description: 特定のアプリケーションに関連付けられている同期の (上書き) のテンプレートを更新します。
+title: 同期テンプレートの更新
+description: 特定のアプリケーションに関連付けられている同期テンプレートを更新 (上書き) します。
 localization_priority: Normal
 ms.openlocfilehash: 152186afd9f7b7cce2a04170de7148d454525d80
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536879"
 ---
-# <a name="update-synchronizationtemplate"></a>SynchronizationTemplate を更新します。
+# <a name="update-synchronizationtemplate"></a>同期テンプレートの更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のアプリケーションに関連付けられている同期の (上書き) のテンプレートを更新します。
+特定のアプリケーションに関連付けられている同期テンプレートを更新 (上書き) します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,7 +38,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、既存のテンプレートを置換する[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)オブジェクトを指定します。 すべてのプロパティが用意されていることを確認します。 不足しているプロパティが消去されます。
+要求本文で、既存のテンプレートを置き換える[同期テンプレート](../resources/synchronization-synchronizationtemplate.md)オブジェクトを指定します。 すべてのプロパティが指定されていることを確認してください。 不足しているプロパティは消去されます。
 
 ### <a name="response"></a>応答
 
@@ -49,7 +49,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>要求
 要求の例を次に示します。 
 
->**注:** ここで示すように、要求オブジェクトは、読みやすさの短縮されます。 実際の呼び出しですべてのプロパティが含まれます。
+>**注:** ここに示す要求オブジェクトは読みやすいように短縮されています。 実際の呼び出しですべてのプロパティを含めます。
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"

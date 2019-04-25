@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 535355d6be3f6b617d7eb293890aa05a517cfc3b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980350"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581283"
 ---
 # <a name="useractivationcounts-resource-type"></a>userActivationCounts リソースの種類
 
@@ -17,14 +17,14 @@ ms.locfileid: "27980350"
 
 | プロパティ          | 型   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | String | 「Office 365 用リソース"、「プロジェクト クライアント」など、製品の種類または"Office 365"の Visio Pro です。 |
-| lastActivatedDate | 日付   | 最新のアクティブ化の日付です。       |
-| windows           | Int64  | [Windows のライセンス認証の数です。 この数値には、任意の Windows コンピューターですべてのアクティブ化が含まれます。 |
-| Mac               | Int64  | Mac OS のライセンス認証の数です。          |
-| windows10Mobile   | Int64  | ライセンス認証カウント 10 の Windows のモバイルです。 |
-| ios               | Int64  | IOS のライセンス認証の数です。             |
-| android           | Int64  | Android デバイス上のアクティブ化の数。  |
-| activatedOnSharedComputer   | Boolean | ユーザーが共有する前にコンピューターに製品を使用する場合は true にします。 |
+| productType       | String | "office 365 ProPlus"、"Project Client"、"Visio Pro for Office 365" などの製品の種類。 |
+| lastactivateddate | Date   | 最新のライセンス認証の日付。       |
+| ws           | Int64  | Windows のアクティブ化回数。 この番号には、Windows コンピューターのすべてのライセンス認証が含まれます。 |
+| Mac               | Int64  | Mac OS のアクティブ化回数。          |
+| windows10Mobile   | Int64  | Windows 10 mobile のライセンス認証回数。 |
+| ios               | Int64  | iOS のアクティブ化回数。             |
+| android           | Int64  | Android デバイスのアクティブ化回数。  |
+| activatedOnSharedComputer   | Boolean | ユーザーが以前に共有コンピューターで製品を使用した場合は True。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

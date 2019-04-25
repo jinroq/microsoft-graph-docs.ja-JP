@@ -1,21 +1,21 @@
 ---
-title: ボックスの一覧ユーザーの推移的な memberOf
-description: グループ、ディレクトリのロールおよびメンバーであるユーザーの管理の単位を取得します。 この API 要求は、推移的なもすべてのグループの入れ子にされたメンバーを返します。
+title: ユーザー推移的な memberOf を一覧表示する
+description: ユーザーがメンバーになっているグループ、ディレクトリロール、および管理単位を取得します。 この API 要求は推移的なので、ユーザーがネストされたメンバーであるすべてのグループも返します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b0681196b994e9a0c88a2b2d05e25e3166a5242f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547726"
 ---
-# <a name="list-user-transitive-memberof"></a>ボックスの一覧ユーザーの推移的な memberOf
+# <a name="list-user-transitive-memberof"></a>ユーザー推移的な memberOf を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループ、ディレクトリのロールおよびメンバーであるユーザーの管理の単位を取得します。 この API 要求は、推移的なもすべてのグループの入れ子にされたメンバーを返します。
+ユーザーがメンバーになっているグループ、ディレクトリロール、および管理単位を取得します。 この API 要求は推移的なので、ユーザーがネストされたメンバーであるすべてのグループも返します。
 
 ## <a name="permissions"></a>アクセス許可
 

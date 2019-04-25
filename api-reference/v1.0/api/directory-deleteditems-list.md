@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 25012a2437dd24345aebdc57351dea1f4ae1cfa6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555137"
 ---
 # <a name="list-deleted-items"></a>削除済みアイテムを一覧表示する
 
@@ -32,7 +32,7 @@ ms.locfileid: "27924924"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
+|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
@@ -43,7 +43,7 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-この API は現在、削除済みアイテムからのグループ (microsoft.graph.group) またはユーザー (microsoft.graph.user) のオブジェクト タイプの取得をサポートしています。 タイムは、URI の必須部分として指定します。 GET/ディレクトリ/を呼び出す型のない deletedItems はサポートされません。
+この API は現在、削除済みアイテムからのグループ (microsoft.graph.group) またはユーザー (microsoft.graph.user) のオブジェクト タイプの取得をサポートしています。 タイムは、URI の必須部分として指定します。 型を指定せずに GET/directory/deletedItems を呼び出すことはサポートされていません。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
@@ -52,7 +52,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept  | application/json |
+| 承諾  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -71,7 +71,7 @@ GET /directory/deletedItems/microsoft.graph.user
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

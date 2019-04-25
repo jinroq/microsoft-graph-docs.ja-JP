@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548489"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 [conversationThread](conversationthread.md) エンティティ内の個々の投稿アイテムを表します。
@@ -49,16 +49,16 @@ ms.locfileid: "27982870"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
-|categories|String コレクション|投稿に関連付けられたカテゴリ。|
+|categories|String collection|投稿に関連付けられたカテゴリ。|
 |changeKey|String|投稿のバージョンを識別します。投稿を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |conversationId|String|会話の固有 ID です。読み取り専用。|
 |conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
 |createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
-|hasAttachments|ブール型|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
+|hasAttachments|ブール値|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
 |id|String| 読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|newParticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
+|newparticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
 |receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|送信者のアドレスが含まれます。送信者が指定されていない場合、送信者の値は認証済みユーザーのアドレスと見なされます。これが既定のプロパティです。|
 
@@ -67,7 +67,7 @@ ms.locfileid: "27982870"
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
 |extensions|[Extension](extension.md) コレクション|投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|inReplyTo|[post](post.md)| 読み取り専用。|
+|inreplyto|[post](post.md)| 読み取り専用。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 

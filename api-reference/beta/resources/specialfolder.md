@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
 ms.openlocfilehash: ff1bee4ce71bf76c94951d298f80db74609710e6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481546"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582277"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder リソースの種類
 
@@ -43,7 +43,7 @@ ms.locfileid: "30481546"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 種類   | 説明                                                            |
+| プロパティ  | 型   | 説明                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | `/drive/special` コレクション内のこの項目の一意識別子 |
 
@@ -51,7 +51,7 @@ ms.locfileid: "30481546"
 
 以下は OneDrive Personal および OneDrive for Business で利用可能な特殊なフォルダーです。
 
-| Name        | フォルダー ID    | 説明                                                              |
+| 名前        | フォルダー ID    | 説明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | App Root    | `approot`    | そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内 |
 | Camera Roll | `cameraroll` | カメラ ロールのバックアップ フォルダー。OneDrive for Business では利用不可です。   |

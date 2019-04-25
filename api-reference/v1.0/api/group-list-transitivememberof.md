@@ -1,19 +1,19 @@
 ---
-title: リスト グループの推移的な memberOf
-description: グループのメンバーであるグループを取得します。  この操作では、推移的では、このグループの入れ子にされたメンバーであるすべてのグループにも含まれます。 ユーザーの Office 365 のグループを取得するとは異なり、グループのすべての種類を返しますこれだけではなく Office 365 のグループです。
+title: リストグループ推移的な memberOf
+description: グループがメンバーであるグループを取得します。  この操作は推移的で、このグループがネストされたメンバーであるすべてのグループも含みます。 ユーザーの office 365 グループを取得する場合とは異なり、office 365 グループだけでなく、すべての種類のグループを返します。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 7134318471101309dcf8f2778106afa549e9aa62
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542019"
 ---
-# <a name="list-group-transitive-memberof"></a>リスト グループの推移的な memberOf
+# <a name="list-group-transitive-memberof"></a>リストグループ推移的な memberOf
 
-グループのメンバーであるグループを取得します。  この操作では、推移的では、このグループの入れ子にされたメンバーであるすべてのグループにも含まれます。 ユーザーの Office 365 のグループを取得するとは異なり、グループのすべての種類を返しますこれだけではなく Office 365 のグループです。
+グループがメンバーであるグループを取得します。  この操作は推移的で、このグループがネストされたメンバーであるすべてのグループも含みます。 ユーザーの office 365 グループを取得する場合とは異なり、office 365 グループだけでなく、すべての種類のグループを返します。
 
 ## <a name="permissions"></a>アクセス許可
 

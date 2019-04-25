@@ -1,17 +1,17 @@
 ---
-title: 'orgContact: directReports を一覧表示'
+title: 'orgcontact: リスト directreports'
 description: 連絡先の直属の部下を取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8912116ca3f9b7602841e7ec1963b7ed4259061d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523772"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539872"
 ---
-# <a name="orgcontact-list-directreports"></a>orgContact: directReports を一覧表示
+# <a name="orgcontact-list-directreports"></a>orgcontact: リスト directreports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

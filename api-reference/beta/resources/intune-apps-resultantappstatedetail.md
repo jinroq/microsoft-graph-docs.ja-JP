@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0bf9a2bb6a27bde43cd0467a106af8f593aaf02a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551842"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultの appstatedetail 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31801541"
 |メンバー|値|説明|
 |:---|:---|:---|
 |noadditionaldetails|.0|追加の詳細情報は利用できません。|
-|dependencyFailedToInstall|1-d|1つ以上のアプリケーションの依存関係をインストールできませんでした。|
-|dependencywithの要件が満たされていません|pbm-2|1つ以上のアプリケーションの依存関係に、満たされていない要件があります。|
-|dependencyPendingReboot|1/3|1つまたは複数のアプリケーションの依存関係が、インストールを完了するには、デバイスの再起動が必要です。|
-|dependencywithautoinstalldisabled|2/4|1つまたは複数のアプリケーションの依存関係が、自動的にインストールされないように構成されている。|
+|dependencyFailedToInstall|1 |1つ以上のアプリケーションの依存関係をインストールできませんでした。|
+|dependencywithの要件が満たされていません|2 |1つ以上のアプリケーションの依存関係に、満たされていない要件があります。|
+|dependencyPendingReboot|3 |1つまたは複数のアプリケーションの依存関係が、インストールを完了するには、デバイスの再起動が必要です。|
+|dependencywithautoinstalldisabled|4 |1つまたは複数のアプリケーションの依存関係が、自動的にインストールされないように構成されている。|
 |参照 installerrorcode|2000|アプリケーションをインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|
 |autoinstalldisabled|3000|アプリケーションは自動的にインストールされないように構成されています。|
 |未確認のエラーを参照|4000|アプリケーションをアンインストールできませんでした。 詳細については、「エラーコードプロパティ」を参照してください。|

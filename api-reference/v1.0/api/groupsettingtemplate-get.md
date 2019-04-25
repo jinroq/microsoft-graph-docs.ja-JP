@@ -1,15 +1,15 @@
 ---
 title: グループ設定テンプレートを取得する
-description: グループ設定テンプレートは、テナント内で作成できる設定に基づいた設定のテンプレートを表します。この操作により、利用可能な設定とその既定値を含む、groupSettingTemplate オブジェクトのプロパティを取得できるようになります。
+description: グループ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む groupsettingtemplate オブジェクトのプロパティを取得できるようになります。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577778"
 ---
 # <a name="get-a-group-setting-template"></a>グループ設定テンプレートを取得する
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

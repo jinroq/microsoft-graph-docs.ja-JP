@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3218a40ee1a735cef585866e1ca0c9f80ad95671
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556530"
 ---
 # <a name="airprintdestination-resource-type"></a>放映 printdestination リソースの種類
 
@@ -23,9 +23,9 @@ ms.locfileid: "31779973"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |ipAddress|String|放映される印刷先の IP アドレス。|
-|resourcePath|文字列|プリンターに関連付けられているリソースパス。 これは、(ipBonjour レコードの rp パラメーターに対応します。 例: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer|
+|resourcePath|String|プリンターに関連付けられているリソースパス。 これは、(ipBonjour レコードの rp パラメーターに対応します。 例: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer|
 |ポート|Int32|放映された印刷先のリスニングポート。 このキーが指定されていない場合、印刷時に既定のポートが使用されます。 iOS 11.0 以降で利用可能です。|
-|forcetls|Boolean|true の場合、放送印刷接続はトランスポート層セキュリティ (TLS) によって保護されます。 既定値は false です。 iOS 11.0 以降で利用可能です。|
+|forcetls|ブール値|true の場合、放送印刷接続はトランスポート層セキュリティ (TLS) によって保護されます。 既定値は false です。 iOS 11.0 以降で利用可能です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

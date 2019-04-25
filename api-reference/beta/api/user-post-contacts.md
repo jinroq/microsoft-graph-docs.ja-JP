@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dbac25f4cf86074876fd1be4f0632a5afdb08dc1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544089"
 ---
 # <a name="create-contact"></a>連絡先を作成する
 
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体での応答コードおよび[連絡先](../resources/contact.md)オブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[連絡先](../resources/contact.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

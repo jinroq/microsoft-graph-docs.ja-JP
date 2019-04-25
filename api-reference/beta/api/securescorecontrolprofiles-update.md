@@ -1,19 +1,19 @@
 ---
 title: secureScoreControlProfiles の更新
-description: 担当者や tenantNote などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な secureScoreControlProfiles プロパティを更新します。
+description: 任意の統合ソリューション内の編集可能な securescorecontrolprofiles のプロパティを更新して、担当者または tenantnote などのさまざまなプロパティを変更します。
 localization_priority: Normal
 ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642031"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545631"
 ---
 # <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**担当者**や**tenantNote**などのさまざまなプロパティを変更するのには統合されたソリューション内で編集可能な**secureScoreControlProfiles**プロパティを更新します。
+任意の統合ソリューション内の編集可能な**securescorecontrolprofiles の**プロパティを更新して、**担当者**または**tenantnote**などのさまざまなプロパティを変更します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,9 +21,9 @@ ms.locfileid: "29642031"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All。  |
+|委任 (職場または学校のアカウント) |   securityevents。  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.ReadWrite.All。 |
+|アプリケーション | securityevents。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,25 +37,25 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}。必須。|
-|Prefer | 返す = 表現します。 |
+| Authorization  | ベアラー {code}。 必須。|
+|Prefer | 戻り値 = 表現。 |
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 SecureScoreControlProfile に更新可能なフィールドを次の表に一覧します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する必要のある関連フィールドの値の JSON 表記を指定します。 次の表に、secureScoreControlProfile で更新できるフィールドを示します。 要求本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|assignedTo|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
-|tenantNote|String|(顧客管理) のコントロールのアナリストのコメントです。|
-|controlStateUpdates| String|アナリストは、コントロールの設定を優先します。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
+|assignedTo|String|トリアージ、実装、または修復のために、コントロールが割り当てられているアナリストの名前。|
+|tenantnote|String|コントロールに関するアナリストコメント (カスタマーコントロール管理向け)。|
+|controlstateupdates| String|コントロールに対するアナリスト主導の設定。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
 
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
-省略可能な要求ヘッダーが使用され、メソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[secureScoreControlProfiles](../resources/securescorecontrolprofiles.md)オブジェクトです。
+オプションの要求ヘッダーが使用されている場合、 `200 OK`メソッドは応答コードと、応答本文で更新された[securescorecontrolprofiles の](../resources/securescorecontrolprofiles.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

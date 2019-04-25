@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: リスト
+title: List
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581562"
 ---
-# <a name="list-resource"></a>list リソース
+# <a name="list-resource"></a>List リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -90,7 +90,7 @@ list リソースで使用可能なタスクを次に示します。
 | **contentTypes** | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
 | **displayName**  | string                           | リストの表示可能なタイトルです。
 | **list**         | [listInfo][]                     | リストに関する追加の詳細を示します。
-| **system**       | [systemFacet][]                  | 存在する場合は、これがシステム管理のリストであることを示しています。 値の取得のみ可能です。
+| **system**       | [systemFacet][]                  | 存在する場合は、これがシステム管理のリストであることを示しています。 読み取り専用。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
@@ -112,7 +112,7 @@ list リソースで使用可能なタスクを次に示します。
 | リレーションシップ名 | 種類                        | 説明
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | [itemActivity][] コレクション | このリスト内で行われた最近のアクティビティです。
-| **ドライブ**         | [ドライブ][]                   | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
+| **ドライブ**         | [drive][]                   | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
 | **items**         | Collection([listItem][])    | リストに含まれているすべてのアイテム。
 
 [baseItem]: baseitem.md
@@ -124,7 +124,7 @@ list リソースで使用可能なタスクを次に示します。
 [itemActivity]: itemactivity.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
-[site]: site.md
+[サイト]: site.md
 [systemFacet]: systemfacet.md
 
 <!--

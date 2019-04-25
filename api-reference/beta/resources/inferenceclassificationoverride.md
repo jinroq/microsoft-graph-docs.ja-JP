@@ -1,19 +1,19 @@
 ---
 title: inferenceClassificationOverride リソースの種類
-description: 特定の差出人からの着信メッセージを常時分類するためのユーザーのオーバーライドを表します。
+description: 特定の送信者からの受信メッセージを常に分類する方法についてのユーザーのオーバーライドを表します。
 localization_priority: Normal
 ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511801"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548734"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-どのように特定の送信者からメッセージを受信する必要があります常に分類される、[受信トレイの中心](manage-focused-inbox.md)のように、ユーザーのオーバーライドを表します。
+特定の送信者からの受信メッセージを常に[優先受信トレイ](manage-focused-inbox.md)として分類する方法に対するユーザーのオーバーライドを表します。
 
 
 ## <a name="methods"></a>メソッド
@@ -21,7 +21,7 @@ ms.locfileid: "29511801"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
+|[削除](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -30,7 +30,7 @@ ms.locfileid: "29511801"
 |id|string| オーバーライドの一意識別子。読み取り専用です。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|オーバーライドを作成する対象の差出人のメール アドレス情報。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

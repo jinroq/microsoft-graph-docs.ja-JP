@@ -3,11 +3,11 @@ title: 添付ファイルを削除する
 description: 予定表イベント、メール メッセージ、またはグループ投稿から添付ファイルを削除します。
 localization_priority: Normal
 ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816997"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551464"
 ---
 # <a name="delete-attachment"></a>添付ファイルを削除する
 
@@ -15,9 +15,9 @@ ms.locfileid: "27816997"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合: Mail.ReadWrite。
-* イベントで添付ファイルにアクセスする場合: Calendars.ReadWrite。
-* グループの投稿の添付ファイルにアクセスする場合: Group.ReadWrite.All。
+* メッセージ内の添付ファイルにアクセスする場合: 「メールの書き込み」。
+* イベントの添付ファイルにアクセスする場合: 「カレンダー」。
+* グループの投稿で添付ファイルにアクセスする場合: グループの場合。
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -66,8 +66,7 @@ DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイルです。  次の例は、入れ子のレベルを 1 つを示していますが、メッセージというように子の子であることができます。
-<!-- { "blockType": "ignored" } -->
+ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -79,7 +78,7 @@ DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

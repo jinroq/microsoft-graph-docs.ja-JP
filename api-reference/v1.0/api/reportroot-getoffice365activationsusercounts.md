@@ -1,19 +1,19 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: 有効になっているユーザーとデスクトップやデバイスに Office のサブスクリプションをアクティブ化または共有のコンピューターの数を取得します。
+description: 有効になっているユーザーの数と、デスクトップまたはデバイスまたは共有コンピューターで Office サブスクリプションをアクティブ化したユーザーの数を取得します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9a150911e9234cde7258acbeed7f825fb9db4c66
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582158"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
-有効になっているユーザーとデスクトップやデバイスに Office のサブスクリプションをアクティブ化または共有のコンピューターの数を取得します。
+有効になっているユーザーの数と、デスクトップまたはデバイスまたは共有コンピューターで Office サブスクリプションをアクティブ化したユーザーの数を取得します。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Microsoft Office ライセンス認証](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)」を参照してください。
 
@@ -23,7 +23,7 @@ ms.locfileid: "29576102"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -54,7 +54,7 @@ GET /reports/getOffice365ActivationsUserCounts
 - 製品の種類
 - 割り当て済み
 - アクティブ
-- 共有のコンピューターのライセンス認証
+- 共有コンピューターのライセンス認証
 
 ## <a name="example"></a>例
 

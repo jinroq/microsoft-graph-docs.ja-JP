@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6cf4d6ed75427dce527ced6cb64d0cdcb9afed99
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548167"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -36,7 +36,7 @@ ms.locfileid: "27949046"
 |[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | `$expand` を使用して、複数値の拡張プロパティを含む contactFolder を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |id|String|連絡先フォルダーの一意識別子。読み取り専用。|
@@ -45,8 +45,8 @@ ms.locfileid: "27949046"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|childFolders|[ContactFolder](contactfolder.md) コレクション|フォルダー内の子フォルダーのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|contacts|[Contact](contact.md) コレクション|フォルダー内の連絡先。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
+|childFolders|[ContactFolder](contactfolder.md) collection|フォルダー内の子フォルダーのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
+|contacts|[Contact](contact.md) collection|フォルダー内の連絡先。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| contactFolder に定義された、複数値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| contactFolder に定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
@@ -97,7 +97,7 @@ ms.locfileid: "27949046"
 ## <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](/graph/delta-query-overview)
-- [フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)
+- [フォルダー内のメッセージへの増分変更を取得する](/graph/delta-query-messages)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

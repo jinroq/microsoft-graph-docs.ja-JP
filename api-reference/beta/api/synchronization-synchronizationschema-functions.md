@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationSchema: 関数'
-description: 現在、attributeMappingSource でサポートされているすべての関数の一覧を表示します。
+title: '同期スキーマ: 関数'
+description: attributeMappingSource で現在サポートされているすべての関数を一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: edfdb169f9945759e062cf2c57d5f6f3b4c22f2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523415"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545269"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema: 関数
+# <a name="synchronizationschema-functions"></a>同期スキーマ: 関数
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[AttributeMappingSource](../resources/synchronization-attributemappingsource.md)で現在サポートされているすべての関数の一覧を表示します。
+[attributeMappingSource](../resources/synchronization-attributemappingsource.md)で現在サポートされているすべての関数を一覧表示します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,7 +44,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>応答
 応答の例を次に示します。
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 
 <!--
 {

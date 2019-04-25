@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dc7642b62d33ad2fe1b6cb9c0281f84ae74a6c26
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583670"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner リソースの種類
 
@@ -29,17 +29,17 @@ ms.locfileid: "30263554"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティの Id|
+|id|String|エンティティの Id|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|
 |partnerState|[devicemanagementpartnertenantstate](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態。 使用可能な値: `unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|パートナーアプリの種類。 可能な値は `unknown`、`singleTenantApp`、`multiTenantApp` です。|
 |singleTenantAppId|String|パートナーのシングル テナントのアプリ ID|
 |displayName|String|パートナー表示名|
-|isConfigured|Boolean|デバイス管理パートナーが構成されているかどうかを指定します|
+|isConfigured|ブール型 (Boolean)|デバイス管理パートナーが構成されているかどうかを指定します|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|パートナー デバイスが削除されるときの日時 (UTC)|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|パートナー デバイスが準拠していないとマークされるときの日時 (UTC)|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

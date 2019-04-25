@@ -1,23 +1,23 @@
 ---
-title: verificationDnsRecords を一覧表示する
-description: domainDnsRecord オブジェクトの一覧を取得します。
+title: リスト verificationDnsRecords
+description: domaindnsrecord オブジェクトの一覧を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e0339b9bf50551d9bcb10ad2c5c582beabc4c9b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927234"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551527"
 ---
-# <a name="list-verificationdnsrecords"></a>verificationDnsRecords を一覧表示する
+# <a name="list-verificationdnsrecords"></a>リスト verificationDnsRecords
 
-[domainDnsRecord](../resources/domaindnsrecord.md) オブジェクトの一覧を取得します。
+[domaindnsrecord](../resources/domaindnsrecord.md)オブジェクトの一覧を取得します。
 
-所有権を検証しないと、関連するドメインを Azure AD テナントで使用することはできません。ドメインの所有権を検証するには、ドメイン検証レコードを取得し、ドメインのゾーン ファイルに詳細を追加します。この作業は、ドメイン レジストラーによって、または DNS サーバーの構成で行えます。
+所有権が確認されるまで、Azure AD テナントと関連付けられているドメインを使用することはできません。 ドメインの所有権を確認するには、ドメインの検証レコードを取得し、ドメインのゾーンファイルに詳細を追加します。 この操作は、ドメインレジストラーまたは DNS サーバーの構成を使用して行うことができます。
 
-ルート ドメインには検証が必要です。たとえば、contoso.com には検証が必要です。ルート ドメインが検証されると、ルート ドメインのサブドメインが自動的に検証されます。たとえば、contoso.com が検証されると、subdomain.contoso.com が自動的に検証されます。
+ルートドメインは検証する必要があります。 たとえば、contoso.com は検証を必要とします。 ルートドメインが確認されると、ルートドメインのサブドメインが自動的に確認されます。 たとえば、contoso.com が確認されている場合、subdomain.contoso.com は自動的に確認されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -55,7 +55,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domainDnsRecord](../resources/domaindnsrecord.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[domaindnsrecord](../resources/domaindnsrecord.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecord
 
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

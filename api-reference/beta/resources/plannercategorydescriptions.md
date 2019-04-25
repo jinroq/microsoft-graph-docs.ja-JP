@@ -1,32 +1,32 @@
 ---
-title: plannerCategoryDescriptions リソースの種類
-description: '**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、計画の詳細オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 '
+title: プラン? カテゴリの説明リソースの種類
+description: 'プラン**** に対して定義されているカテゴリの説明的なラベルを表します。 プランの詳細オブジェクトに属します。 最大6つのカテゴリが定義されています。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33031dc3c688e1fefb34109cb0a4a303dbe1c183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579031"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions リソースの種類
+# <a name="plannercategorydescriptions-resource-type"></a>プラン? カテゴリの説明リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、[計画の詳細](plannerplandetails.md)オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 
+プラン**** に対して定義されているカテゴリの説明的なラベルを表します。 [プランの詳細](plannerplandetails.md)オブジェクトに属します。 最大6つのカテゴリが定義されています。 
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|category1|String|Category 1 に関連付けられているラベル|
-|category2|String|Category 2 に関連付けられているラベル|
-|category3|String|Category 3 に関連付けられているラベル|
+|category1|String|カテゴリ1に関連付けられているラベル|
+|category2|String|カテゴリ2に関連付けられているラベル|
+|category3|String|カテゴリ3に関連付けられているラベル|
 |category4|String|Category 4 に関連付けられているラベル|
-|category5|String|Category 5 に関連付けられているラベル|
-|category6|String|Category 6 に関連付けられているラベル|
+|category5|String|カテゴリ5に関連付けられているラベル|
+|category6|String|カテゴリ6に関連付けられているラベル|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

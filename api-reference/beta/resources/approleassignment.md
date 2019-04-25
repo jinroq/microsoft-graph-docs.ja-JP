@@ -3,11 +3,11 @@ title: appRoleAssignment リソースの種類
 description: ユーザーまたはグループがアプリケーションに割り当てられるときの記録に使用します。 この例では、ロールの割り当てにより、アプリケーション タイルが、ユーザー アプリケーションのアクセス パネル上に表示されます。 特定のロールで、リソース アプリケーションに別の (サービス プリンシパルとしてモデル化された) アプリケーションのアクセス権を付与する場合にも、このエンティティを使用できます。 ロールの割り当ての作成、読み取り、更新、削除ができます。
 localization_priority: Priority
 ms.openlocfilehash: 6255642f47f0e1454fb64440d4938605a2de5df4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640435"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535684"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment リソースの種類
 

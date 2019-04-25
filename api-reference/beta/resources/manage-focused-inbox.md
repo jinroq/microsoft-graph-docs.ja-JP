@@ -1,17 +1,15 @@
 ---
 title: 優先受信トレイを管理する
-description: '重要なメッセージを表示することにより、フォーカスのある受信トレイ、 `Focused` 、受信トレイで受信トレイのメッセージの残りの部分のタブ、 `Other` ] タブ。分類システム '
+description: '優先受信トレイを使用すると、受信トレイ`Focused`のタブ内の重要なメッセージ、およびその他の受信トレイ`Other`メッセージをタブに表示できます。分類システム '
 localization_priority: Normal
 ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562578"
 ---
 # <a name="manage-focused-inbox"></a>優先受信トレイを管理する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 優先受信トレイでは、受信トレイの `Focused` タブに重要メッセージを表示し、その他の受信トレイのメッセージを `Other` タブに表示します。システム主体の分類方法によって、既定の方法で受信トレイのメッセージが整理されます。ユーザー インターフェイスまたはプログラムを介して、時間の経過によってシステムを修正し、学習させることができます。使用頻度が増えるほど、システムは、受信したメッセージの重要性をより高い精度で予想できるようになります。
 
@@ -33,11 +31,3 @@ ms.locfileid: "29529251"
 [送信者のオーバーライドを作成する](../api/inferenceclassification-post-overrides.md) | [ユーザーのすべてのオーバーライドを一覧表示する](../api/inferenceclassification-list-overrides.md) |
 
 [送信者のオーバーライドを更新する](../api/inferenceclassificationoverride-update.md) | [送信者のオーバーライドを削除する](../api/inferenceclassificationoverride-delete.md) 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/manage-focused-inbox.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -1,32 +1,32 @@
 ---
-title: audioDuckingConfiguration リソースの種類
-description: ダック (その他のソースとの間でフェードアウト) の他のソースのためのパラメーター
+title: audioアヒルの構成リソースの種類
+description: 他のソースの ducking のパラメーター (他のソースの段階的なインおよび out)。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d61e4150250df25e020f45a65676d1c55c0e4c9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544132"
 ---
-# <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration リソースの種類
+# <a name="audioduckingconfiguration-resource-type"></a>audioアヒルの構成リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ダック (その他のソースとの間でフェードアウト) の他のソースのためのパラメーター
+他のソースの ducking のパラメーター (他のソースの段階的なインおよび out)。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型     | 説明                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
-| lowerLevel    | Int64    | % のソースを ducked されているときに元のボリューム。             |
-| rampActive    | Int64    | Ducked ソースの「フェードアウト」にかかる時間 (ミリ秒単位) の量。 |
-| rampInactive  | Int64    | Ducked ソースの「フェードイン」にかかる時間 (ミリ秒単位) の量。  |
-| upperLevel    | Int64    | % のソースは ducked されていないときに元のボリューム。         |
+| 下位レベル    | Int64    | ソースが処理されるときのソースの量 (パーセント)。             |
+| rampActive    | Int64    | 発行元が "フェードアウト" するまでにかかる時間 (ミリ秒)。 |
+| rampInactive  | Int64    | 発行元が "フェードイン" になるまでにかかる時間 (ミリ秒)。  |
+| upperLevel    | Int64    | ソースが発行されていない場合のソースの量 (パーセント)。         |
 
-> **注:** ランプの期間は、5,000 人以上のミリ秒になることはできません。
+> **注:** 傾斜時間は5000ミリ秒を超えることはできません。
 
 ## <a name="json-representation"></a>JSON 表記
 

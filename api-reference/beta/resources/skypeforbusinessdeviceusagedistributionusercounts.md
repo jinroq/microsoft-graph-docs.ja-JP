@@ -3,25 +3,25 @@ title: skypeForBusinessDeviceUsageDistributionUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.openlocfilehash: 3658bec2d99c5098b970e35240221dbf954beba6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884435"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581262"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>skypeForBusinessDeviceUsageDistributionUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   |
+| プロパティ          | 型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日付   |
-| windows           | Int64  |
+| reportrefreshdate | Date   |
+| ws           | Int64  |
 | windowsPhone      | Int64  |
-| androidPhone      | Int64  |
+| androidphone      | Int64  |
 | iPhone            | Int64  |
 | iPad              | Int64  |
-| reportPeriod      | String |
+| reportperiod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

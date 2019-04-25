@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5852e43e32b58a714e44dcbcad2a77e3f1999bf9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922936"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573376"
 ---
 # <a name="list-calendars"></a>予定表を一覧表示する
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前          | 種類   | 説明               |
+| 名前          | 型   | 説明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | ベアラー {トークン}。必須。 |
 

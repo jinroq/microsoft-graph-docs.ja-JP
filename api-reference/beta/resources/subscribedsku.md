@@ -1,15 +1,15 @@
 ---
 title: subscribedSku リソースの種類
-description: " 作成、更新、および削除はサポートされていません。 クエリのフィルター式はサポートされていません。 directoryObject から継承します。"
+description: " create、update、および delete はサポートされていません。 クエリのフィルター式はサポートされていません。 directoryObject から継承します。"
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090e6912ce2f337a8e30322c9b45161af73175cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582087"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku リソースの種類
 
@@ -21,22 +21,22 @@ ms.locfileid: "29522701"
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|subscribedSku を取得する | [subscribedSku](subscribedsku.md) |subscribedSku オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[subscribedSku を一覧表示する](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
+|[subscribedSku を取得する](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |subscribedSku オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[リスト subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |appliesTo|String| "User" や "Company" など。 |
-|capabilityStatus|String| 「有効」など。 |
+|capabilityStatus|String| たとえば、"有効" です。 |
 |consumedUnits|Int32| 割り当てられたライセンスの数。 |
-|id|String| 購読している SKU オブジェクトの一意識別子。キーであり、null 許容ではありません。 |
+|id|String| 購読している SKU オブジェクトの一意識別子。 キー。 null 許容ではありません。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| プリペイド ライセンスの数と状態に関する情報。 |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。null 許容ではありません |
+|serviceplans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。 null 許容ではない |
 |skuId|Guid| サービス SKU の一意識別子 (GUID)。 |
-|skuPartNumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
+|skupartnumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

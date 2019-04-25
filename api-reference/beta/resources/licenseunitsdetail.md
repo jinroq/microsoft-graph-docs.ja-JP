@@ -1,26 +1,26 @@
 ---
 title: licenseUnitsDetail リソースの種類
-description: subscribedSku エンティティの prepaidUnits のプロパティは、licenseUnitsDetail 型です。
+description: '**subscribedSku** エンティティの prepaidUnits のプロパティは、**licenseUnitsDetail** 型です。'
 localization_priority: Normal
 ms.openlocfilehash: a5eacb79dfca97b992e2f8584761aaa45beccd76
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581565"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[subscribedSku](subscribedsku.md) エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。
+**subscribedSku** エンティティの [prepaidUnits](subscribedsku.md) のプロパティは、**licenseUnitsDetail** 型です。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:-------------|:-----|:----------|
-|enabled|Int32| 有効になっている単位の数です。 |
-|suspended|Int32| 利用停止中の単位の数です。 |
-|warning|Int32| 警告ステータスのユニットの数です。 |
+|enabled|Int32| 有効になっている単位の数。 |
+|suspended|Int32| 中断されている単位の数。 |
+|warning|Int32| 警告状態にある単位数。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

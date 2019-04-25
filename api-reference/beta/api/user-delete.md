@@ -1,23 +1,23 @@
 ---
-title: ユーザーを削除する-Microsoft Graph API
-description: Microsoft Graph API (REST) のユーザーリソース (エンティティ) の delete メソッドについて説明します。
+title: ユーザーを削除する - Microsoft Graph API
+description: Microsoft Graph API (REST) のユーザー リソース (エンティティ) の削除方法について説明します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f7f8ed5b11930865d88ed7f01530c052c3e63738
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548146"
 ---
-# <a name="delete-a-user"></a>ユーザーの削除
+# <a name="delete-a-user"></a>ユーザーを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーを削除します。  
 
-削除すると、ユーザーリソースが一時コンテナーに移動され、30日以内に復元できるようになります。  その時間が過ぎると、完全に削除されます。  詳細については、「 [deletedItems](../resources/directory.md)」を参照してください。
+ユーザー リソースを削除すると、一時的なコンテナーに移動され、30 日以内であれば復元できます。  それ以降、これらのユーザーは完全に削除されます。  詳細については、「[deletedItems](../resources/directory.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "30253793"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | User.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | User.ReadWrite.All |
 

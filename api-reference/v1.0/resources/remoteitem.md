@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
 ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481126"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579339"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
 
@@ -57,17 +57,17 @@ ms.locfileid: "30481126"
 | file                 | [File](file.md)                     | リモート項目がファイルであることを示します。読み取り専用。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | ローカル ファイル システムからのリモート項目についての情報。読み取り専用。                                                                                          |
 | folder               | [Folder](folder.md)                 | リモート項目がフォルダーであることを示します。読み取り専用。                                                                                                            |
-| id                   | 文字列型 (String)                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
+| id                   | String                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                            |
-| lastModifiedDateTime | Timestamp                           | アイテムが最後に変更された日時。読み取り専用。                                                                                                              |
+| lastModifiedDateTime | Timestamp                           | アイテムが最後に変更された日時。読み取り専用です。                                                                                                              |
 | name                 | String                              | 省略可能。リモート項目のファイル名です。読み取り専用。                                                                                                                 |
-| package              | [Package](package.md)               | 存在する場合、この項目がフォルダーやファイルではなくパッケージであることを示します。パッケージは、一部のコンテキストでのファイルのように、他のコンテキストではフォルダーのように扱われます。読み取り専用。 |
+| package              | [Package](package.md)               | これがある場合、アイテムはフォルダーやファイルではなく、パッケージです。パッケージは、コンテキスト次第で、ファイルとして、あるいはフォルダーとして扱われます。読み取り専用です。 |
 | parentReference      | [ItemReference](itemreference.md)   | リモート項目の親のプロパティです。読み取り専用です。                                                                                                           |
-| shared               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                       |
+| 共有               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | OneDrive for Business と SharePoint 間の相互運用を、項目識別子の完全なセットと共に提供します。読み取り専用。                                          |
 | size                 | Int64                               | リモート項目のサイズです。読み取り専用。                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。                                                                     |
-| webDavUrl            | URL                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
+| webDavUrl            | Url                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
 | webUrl               | URL                                 | ブラウザーでリソースを表示するための URL。読み取り専用。                                                                                                         |
 
 [specialFolder]: specialfolder.md

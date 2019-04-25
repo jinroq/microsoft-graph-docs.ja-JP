@@ -1,24 +1,24 @@
 ---
-title: filterOperand リソースの種類
-description: オペランドの値のコレクションが含まれています。
+title: filteroperand リソースの種類
+description: オペランドの値のコレクションを格納します。
 localization_priority: Normal
 ms.openlocfilehash: ab62477889cc92954ed308c508e18a638cd59375
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581808"
 ---
-# <a name="filteroperand-resource-type"></a>filterOperand リソースの種類
+# <a name="filteroperand-resource-type"></a>filteroperand リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オペランドの値のコレクションが含まれています。
+オペランドの値のコレクションを格納します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|values|String コレクション|値のコレクションです。|
+|values|String collection|値のコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 

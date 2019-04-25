@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4e334f9938102731aea69108c757b863416486b9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785084"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556453"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 列挙型
 
@@ -23,8 +23,8 @@ Android デバイス所有者の wi-fi セキュリティの種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |開か|.0|開く (認証なし)。|
-|wep|1-d|WEP 暗号化。|
-|wpaPersonal|pbm-2|WPA-personal/WPA2-個人用。|
+|wep|1 |WEP 暗号化。|
+|wpaPersonal|2 |WPA-personal/WPA2-個人用。|
 
 
 

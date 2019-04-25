@@ -1,28 +1,28 @@
 ---
 title: attributeMappingParameterSchema リソースの種類
-description: AttributeMappingFunctionSchema で使用される 1 つのパラメーターについて説明します。
+description: attributeMappingFunctionSchema で使用される1つのパラメーターを記述します。
 localization_priority: Normal
 ms.openlocfilehash: bad88fc58dcc529f086a3e3870e0bb10a9d23329
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529951"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582228"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[AttributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)で使用される 1 つのパラメーターについて説明します。
+[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)で使用される1つのパラメーターを記述します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                   | 型                      | 説明    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |ブール値                   |複数回指定したパラメーターを提供することができます (などの文字列を複数の入力、`Concatenate(string,string,...)`関数)。 |
-|name                        |String                    |パラメーター名 |
-|必須                    |ブール値                   |`true`場合は、パラメーターが必要です。それ以外の場合`false`。 |
-|type                        |String                    |可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。 既定値は `String` です。|
+|allow多重オカレンス    |Boolean                   |指定されたパラメーターは、複数回指定できます (たとえば、 `Concatenate(string,string,...)`関数内の複数の入力文字列)。 |
+|name                        |String                    |パラメーター名。 |
+|必須                    |Boolean                   |`true`パラメーターが必要な場合は、それ`false`以外の場合は。 |
+|type                        |String                    |使用可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。 既定値は `String` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

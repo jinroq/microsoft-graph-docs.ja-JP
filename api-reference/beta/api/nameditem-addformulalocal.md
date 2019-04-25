@@ -3,11 +3,11 @@ title: 名前付きアイテム FormulaLocal の追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
 ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540165"
 ---
 # <a name="add-named-item-formulalocal"></a>名前付きアイテム FormulaLocal の追加
 ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。

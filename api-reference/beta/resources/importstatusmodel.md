@@ -1,15 +1,15 @@
 ---
-title: importStatusModel リソースの種類
+title: importstatusmodel リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: c3fe64245d0fbce98db3ba87c3c39694e998c7e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548538"
 ---
-# <a name="importstatusmodel-resource-type"></a>importStatusModel リソースの種類
+# <a name="importstatusmodel-resource-type"></a>importstatusmodel リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,11 +3,11 @@ title: servicePrincipal を取得する
 description: serviceprincipal オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Priority
 ms.openlocfilehash: 53f8755f11e7e8e71a3ab339e0f9cced7adec3d1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642836"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537464"
 ---
 # <a name="get-serviceprincipal"></a>servicePrincipal を取得する
 

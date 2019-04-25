@@ -1,29 +1,29 @@
 ---
 title: 'メッセージ: replyAll'
-description: 'コメントを指定して、更新可能なプロパティを変更することによって、メッセージの受信者全員に返信します。 '
+description: 'コメントを指定して、更新可能なプロパティを変更することにより、メッセージのすべての受信者に返信する '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 05f552676400196aed275c32020bcdf5211d0e31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528614"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540388"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-コメントを指定して、**更新可能なプロパティ**を変更することによってメッセージ受信者全員に返信し、全員に ReplyAll メソッドを使用します。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
+**replyAll**メソッドを使用して、コメントを指定し、返信のために更新可能なプロパティを変更することによって、メッセージのすべての受信者に返信します。 その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
 
-または、最初の[ドラフトの全員に返信メッセージを作成する](../api/message-createreplyall.md)コメントを含めるか、メッセージのプロパティ、および更新し、返信[を送信](../api/message-send.md)することができます。
+または、最初に[下書きの返信メッセージを作成](../api/message-createreplyall.md)してコメントを含めるか、メッセージのプロパティを更新してから、返信を[送信](../api/message-send.md)します。
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- **ReplyTo**プロパティが元のメッセージのインターネット メッセージ フォーマット ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに指定されている場合は、内の受信者に返信を送信する必要があります、  
-**replyTo**と**toRecipients**プロパティと**から**と**toRecipients**プロパティで受信者ではありません。 
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- 元のメッセージで**replyTo**プロパティが指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、受信者に返信を送信する必要があります。  
+**replyTo**プロパティ**** と torプロパティのプロパティ。これは、 **from**および**torの piの**各プロパティの受信者ではありません。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
-|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 

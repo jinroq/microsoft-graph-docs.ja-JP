@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 859428a352d3db6e7c5cbd0688878d3df672eaf5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577113"
 ---
 # <a name="update-iosvppebook"></a>iosVppEBook の更新
 
@@ -50,7 +50,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |:---|:---|:---|
 |id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|description|文字列型 (String)|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|説明|文字列型 (String)|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|

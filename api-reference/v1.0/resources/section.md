@@ -1,17 +1,17 @@
 ---
-title: section リソースの種類
-description: OneNote ノートブックのセクションです。セクションには、ページを含めることができます。
+title: セクションリソースの種類
+description: OneNote ノートブックのセクション。 セクションには、ページを含めることができます。
 localization_priority: Normal
 ms.openlocfilehash: f9cb5a8e3ddf9cf4a045103e4ecc7909653d797c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579158"
 ---
-# <a name="section-resource-type"></a>section リソースの種類
+# <a name="section-resource-type"></a>セクションリソースの種類
 
-OneNote ノートブックのセクションです。セクションには、ページを含めることができます。
+OneNote ノートブックのセクション。 セクションには、ページを含めることができます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -44,35 +44,35 @@ OneNote ノートブックのセクションです。セクションには、ペ
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
-|createdDateTime|DateTimeOffset|セクションが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|id|String|セクションの一意識別子。読み取り専用です。|
-|isDefault|ブール型|これがユーザーの既定のセクションであるかどうかを示します。読み取り専用です。|
+|createdDateTime|DateTimeOffset|セクションが作成された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
+|id|String|セクションの一意識別子。  読み取り専用。|
+|isDefault|ブール型 (Boolean)|これがユーザーの既定のセクションであるかどうかを示します。 読み取り専用。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
-|lastModifiedDateTime|DateTimeOffset|セクションが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|links|[SectionLinks](sectionlinks.md)|セクションを開くためのリンク。`oneNoteClientURL` リンクが OneNote のネイティブ クライアントでセクションを開きます (インストールされている場合)。`oneNoteWebURL` リンクでは、OneNote Online でセクションを開きます。|
+|lastModifiedDateTime|DateTimeOffset|セクションが最後に変更された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
+|リンク|[sectionlinks](sectionlinks.md)|セクションを開くためのリンク。 リンク`oneNoteClientURL`によって、OneNote native client のセクションがインストールされている場合は、そのセクションが開きます。 リンク`oneNoteWebURL`によって、OneNote Online のセクションが開きます。|
 |displayName|String|セクションの名前。 |
-|pagesUrl|String|セクション内のすべてのページに関する詳細情報を入手できる `pages` エンドポイント。読み取り専用です。|
-|self|String|セクションに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
+|pagesUrl|String|セクション`pages`内のすべてのページの詳細を取得できるエンドポイント。 読み取り専用。|
+|self|String|セクションに関する詳細を取得できるエンドポイント。 読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|pages|[OnenotePage](page.md)コレクション|セクション内のページのコレクションです。読み取り専用です。Null 許容型。|
-|parentNotebook|[Notebook](notebook.md)|セクションを含むノートブック。読み取り専用です。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|セクションを含むセクション グループ。読み取り専用です。|
+|ページ|[OnenotePage](page.md)コレクション|セクション内のページのコレクションです。  読み取り専用です。 Null 許容型。|
+|parentNotebook|[Notebook](notebook.md)|セクションを含むノートブック。  読み取り専用です。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|セクションを含むセクショングループ。  値の取得のみ可能です。|
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get section](../api/section-get.md) | [OnenoteSection](section.md) |セクションのプロパティとリレーションシップを読み取ります。|
-|[Create page](../api/section-post-pages.md) |[Page](page.md)| 指定されたセクションでページのコレクションに投稿してページを作成します。|
-|[List pages](../api/section-list-pages.md) |[Page](page.md) コレクション| 指定されたセクション内のページのコレクションを取得します。|
-|[copyToNotebook](../api/section-copytonotebook.md)|なし|特定のノートブックにセクションをコピーします。|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|なし|特定のセクション グループにセクションをコピーします。|
+|[セクションを取得する](../api/section-get.md) | [OnenoteSection](section.md) |セクションのプロパティとリレーションシップを読み取ります。|
+|[Create page](../api/section-post-pages.md) |[Page](page.md)| 指定したセクションの pages コレクションへの投稿によってページを作成します。|
+|[List pages](../api/section-list-pages.md) |[Page](page.md) collection| 指定したセクション内のページのコレクションを取得します。|
+|[copyToNotebook](../api/section-copytonotebook.md)|なし|セクションを特定のノートブックにコピーします。|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|なし|セクションを特定のセクショングループにコピーします。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

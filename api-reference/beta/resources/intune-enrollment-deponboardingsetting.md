@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 56f25c3e187671e0ba91f2d9124bf5f2d801e663
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573929"
 ---
 # <a name="deponboardingsetting-resource-type"></a>deponboardingsetting リソースの種類
 
@@ -27,7 +27,7 @@ deponboardingsetting は、Intune に利用されている Apple DEP サービ�
 |[depon掲示の設定を作成する](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|新しい[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。|
 |[depon掲示板の設定を削除する](../api/intune-enrollment-deponboardingsetting-delete.md)|なし|[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)を削除します。|
 |[deponboardingsetting の更新](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。|
-|[getencryptionpublickey 関数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|文字列|Apple device enrollment program トークンを暗号化するために使用する公開キーを取得する|
+|[getencryptionpublickey 関数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Apple device enrollment program トークンを暗号化するために使用する公開キーを取得する|
 |[uploadDepToken アクション](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|なし|新しいデバイス登録プログラムトークンをアップロードする|
 |[syncWithAppleDeviceEnrollmentProgram アクション](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|なし|Apple Device Enrollment program と Intune 間の同期|
 |[shareForSchoolDataSyncService アクション](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|なし|まだ文書化されていません|
@@ -44,11 +44,11 @@ deponboardingsetting は、Intune に利用されている Apple DEP サービ�
 |lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
 |shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
-|tokenName|文字列|Dep トークンのフレンドリ名|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は `none`、`dep`、`appleSchoolManager` です。|
+|tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535534"
 ---
 # <a name="call-resource-type"></a>call リソースの種類
 
@@ -83,9 +83,9 @@ ms.locfileid: "29642731"
 
 | リレーションシップ        | 型                                                 | 説明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用。Null 許容型です。                                                |
-| operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用。Null 許容型です。                                                |
-| participants        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用です。 Null 許容型。                                                |
+| operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用です。 Null 許容型。                                                |
+| 参加者        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
 
 ## <a name="json-representation"></a>JSON 表記
 

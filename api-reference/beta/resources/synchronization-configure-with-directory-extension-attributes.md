@@ -1,25 +1,25 @@
 ---
-title: ディレクトリの拡張属性を使用して同期を構成します。
-description: 'Azure Active Directory (AD の Azure) ディレクトリの拡張属性を含むように、同期のスキーマをカスタマイズすることができます。 この資料では、Salesforce の User.CommunityNickname の値を設定するのには、ディレクトリの拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用する方法について説明します。 このシナリオでは、Azure AD 接続する Azure AD に社内の Windows サーバーの Active Directory からディレクトリの拡張属性の数を提供するように設定があります。 '
+title: ディレクトリ拡張属性を使用して同期を構成する
+description: 'azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
 localization_priority: Normal
 ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582144"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a>ディレクトリの拡張属性を使用して同期を構成します。
+# <a name="configure-synchronization-with-directory-extension-attributes"></a>ディレクトリ拡張属性を使用して同期を構成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (AD の Azure) ディレクトリの拡張属性を含むように、同期のスキーマをカスタマイズすることができます。 この資料では、Salesforce の User.CommunityNickname の値を設定するのには、ディレクトリの拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用する方法について説明します。 このシナリオでは、Azure AD 接続する Azure AD に社内の Windows サーバーの Active Directory からディレクトリの拡張属性の数を提供するように設定があります。 
+azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。 
 
-この資料では、 [Azure ポータル](https://portal.azure.com)を使ってアプリケーションの表示名がわかっている、テナントの同期をサポートするアプリケーションを既に追加されていると、Graph の認証トークンがあることを想定します。 認証トークンを取得する方法の詳細については、 [Microsoft Graph を呼び出すための Get アクセス トークン](https://developer.microsoft.com/graph/docs/concepts/auth_overview)を参照してください。
+この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。 認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。
 
-## <a name="find-the-service-principal-object-by-display-name"></a>サービスのプリンシパル オブジェクトを表示名で検索します。
+## <a name="find-the-service-principal-object-by-display-name"></a>表示名でサービスプリンシパルオブジェクトを検索する
 
-次の使用例は、表示名が「Salesforce のサンド ボックス」のサービスのプリンシパル オブジェクトを検索する方法を示します。
+次の例は、"Salesforce Sandbox" という表示名を持つサービスプリンシパルオブジェクトを検索する方法を示しています。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -49,11 +49,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{servicePrincipalId}` 、 `60443998-8cf7-4e61-b05c-a53b658cb5e1`。
+`{servicePrincipalId}`は`60443998-8cf7-4e61-b05c-a53b658cb5e1`です。
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>サービス ・ プリンシパルのコンテキストの同期ジョブを一覧表示 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>サービスプリンシパルのコンテキストで同期ジョブを一覧表示する 
 
-次の使用例は、取得する方法を示します、`jobId`を使用する必要があります。 一般に、応答は、1 つのジョブを返します。
+次の例は、 `jobId`で使用する必要があるを取得する方法を示しています。 通常、応答は1つのジョブのみを返します。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -74,18 +74,18 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{jobId}` 、 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。
+`{jobId}`は`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`です。
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>必要があるディレクトリの拡張属性の名前を検索します。
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>必要なディレクトリ拡張属性の名前を検索する
 
-拡張属性の完全な名前を必要があります。 ( **Extension_9d98asdfl15980a_Nickname**のようになります)、完全な名前がわからない場合は、ディレクトリの拡張属性およびそのコンピューターを調査する方法については、次の情報を参照してください。 
+拡張子属性の完全な名前が必要です。 完全な名前 ( **extension_9d98asdfl15980a_Nickname**のように表示されるはずです) がわからない場合は、ディレクトリの拡張属性に関する以下の情報と、それらを検査する方法を参照してください。 
 
-* [カスタム プロパティを持つ Azure AD ディレクトリ スキーマを拡張します。](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [ディレクトリ スキーマの拡張機能 |グラフ API の概念](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [カスタムプロパティを使用して Azure AD ディレクトリスキーマを拡張する](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [ディレクトリスキーマの拡張機能 |Graph API の概念](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-## <a name="get-the-synchronization-schema"></a>同期スキーマを取得します
-次の例では、同期スキーマを取得する方法を示します。
+## <a name="get-the-synchronization-schema"></a>同期スキーマを取得する
+次の例は、同期スキーマを取得する方法を示しています。
 
 <!-- {
   "blockType": "request",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは、実際の呼び出しで返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -193,20 +193,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>ディレクトリの拡張機能の属性と属性間のマッピングの定義を追加します。
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>ディレクトリ拡張属性の定義を追加し、属性間のマッピングを追加する
 
-(たとえば、[メモ帳では](https://notepad-plus-plus.org/) [JSON エディター オンライン](https://www.jsoneditoronline.org/)) は、任意のテキスト エディターを使用します。
+任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。
 
-1. [属性の定義](synchronization-attributedefinition.md)を追加、`extension_9d98asdfl15980a_Nickname`の属性です。 
+1. `extension_9d98asdfl15980a_Nickname`属性の[属性定義](synchronization-attributedefinition.md)を追加します。 
 
-    - [ディレクトリ] で「Azure Active Directory」という名前ディレクトリを検索し、、オブジェクトの配列の 1 つの名前付き**ユーザー**を検索します。
-    - 次の例に示すように名前と型を指定するボックスの一覧に新しい属性を追加します。
+    - [ディレクトリ] で、"Azure Active directory" という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。
+    - 次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。
 
-2. Extension_9d98asdfl15980a_Nickname と CommunityNickname の間での[属性のマッピング](synchronization-attributemapping.md)を追加します。
+2. extension_9d98asdfl15980a_Nickname と CommunityNickname の間の[属性マッピング](synchronization-attributemapping.md)を追加します。
 
-    - [SynchronizationRules](synchronization-synchronizationrule.md)、[ソース ディレクトリとターゲット ディレクトリとして Salesforce.com Azure AD を指定するルールを検索します (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`)。
-    - ルールの[objectMappings](synchronization-objectmapping.md)のユーザー間のマッピングを検索します (`"sourceObjectName": "User",   "targetObjectName": "User"`)。
-    - **ObjectMapping**の[attributeMappings](synchronization-attributemapping.md)配列の例を次に示すように、新しいエントリを追加します。
+    - [[同期ルール](synchronization-synchronizationrule.md)] で、Azure AD をソースディレクトリとして指定するルールを見つけ、Salesforce.com を`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ターゲットディレクトリ () として指定します。
+    - ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。
+    - **オブジェクトマッピング**の[attributeMappings](synchronization-attributemapping.md)配列に、次の例に示すように、新しいエントリを追加します。
 
     ```json
     {
@@ -257,9 +257,9 @@ HTTP/1.1 200 OK
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a>変更された同期スキーマを保存します。
+## <a name="save-the-modified-synchronization-schema"></a>変更した同期スキーマを保存する
 
-更新された同期スキーマを保存するときは、変更されていない部分を含む、スキーマ全体を含めることを確認します。 この要求は、既存のスキーマを提供するものに置き換えられます。
+更新された同期スキーマを保存する場合は、未変更のパーツを含むスキーマ全体を含めるようにしてください。 この要求は、既存のスキーマを、指定したスキーマで置き換えます。
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -272,7 +272,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-スキーマが正常に保存された場合は、同期ジョブの次回のイテレーションで、Azure の AD 内のすべてのアカウントを再処理を開始し、プロビジョニングされたすべてのアカウントに新しいマッピングが適用されます。
+スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。
 <!--
 {
   "type": "#page.annotation",

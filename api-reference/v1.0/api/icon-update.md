@@ -3,11 +3,11 @@ title: アイコンを更新する
 description: アイコン オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: 250dc23e4e046d159be5f9c1d4eb2421d93a2c34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577785"
 ---
 # <a name="update-icon"></a>アイコンを更新する
 
@@ -36,10 +36,10 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |index|int|指定したセット内のアイコンのインデックスを表します。|
-|set|文字列|一部であるアイコンのセットを表します。 可能な値: `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray`、 `ThreeFlags`、 `ThreeTrafficLights1`、 `ThreeTrafficLights2`、 `ThreeSigns`、 `ThreeSymbols`、 `ThreeSymbols2`、 `FourArrows`、 `FourArrowsGray`、 `FourRedToBlack`、 `FourRating`、 `FourTrafficLights`、 `FiveArrows`、 `FiveArrowsGray`、 `FiveRating`、 `FiveQuarters`、 `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|アイコンがその一部であるセットを表します。 使用可能な値は`Invalid`次`ThreeArrows`の`ThreeArrowsGray`とおり`ThreeFlags`です`ThreeTrafficLights1`。 `ThreeTrafficLights2`、 `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveQuarters`、、、、、、、、、、、、 `ThreeStars` `FiveArrows` `FiveArrowsGray` `FiveRating`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="response"></a>応答
 

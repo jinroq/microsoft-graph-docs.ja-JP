@@ -4,24 +4,24 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 1c88cd75e1b38da87042b7b67388ef869c15ec38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950432"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584013"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>sharePointSiteUsageFileCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類   |
+| プロパティ          | 型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日付   |
-| ある          | String |
+| reportrefreshdate | Date   |
+| sitetype          | String |
 | total             | Int64  |
-| アクティブです            | Int64  |
-| reportDate        | 日付   |
-| reportPeriod      | String |
+| active            | Int64  |
+| reportDate        | Date   |
+| reportperiod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

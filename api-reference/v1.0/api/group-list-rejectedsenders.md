@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 14bf57133ad953d40c3cf39cca4cdf8c4f9f19f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986342"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550022"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
 このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

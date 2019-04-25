@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fec33b2600e88e6a4dfae644c335d9652c20abe0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792966"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552353"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidpermissionaction リソースの種類
 
@@ -22,8 +22,8 @@ android アプリのアクセス許可と android のアクションとの間の
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|権|文字列|android のアクセス許可文字列。公式の android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
-|アクション|[androidpermissionactiontype](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
+|権|String|android のアクセス許可文字列。公式の android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
+|action|[androidpermissionactiontype](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
 
 ## <a name="relationships"></a>関係
 なし

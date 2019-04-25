@@ -5,15 +5,13 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539021"
 ---
 # <a name="create-plannerplan"></a>Create plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、新しい **plannerPlan** を作成します。
 
@@ -44,7 +42,8 @@ POST /planner/plans
 
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。**plannerPlan** 所有者プロパティは、[group](../resources/group.md) オブジェクトの ID に設定する必要があります。
 
->**注:** 計画を作成しているユーザーは、計画を所有するグループのメンバーである必要があります。 [グループの作成](../api/group-post-groups.md)を使用して新しいグループを作成するときにいない追加されますグループにメンバーとして。 グループが作成されると、自分自身を追加メンバーとして[グループのメンバーの投稿](../api/group-post-members.md)を使用しています。
+>**注:** プランを作成するユーザーは、そのプランを所有するグループのメンバーである必要があります。 [[グループの作成](../api/group-post-groups.md)] を使用して新しいグループを作成した場合、メンバーとしてグループに追加されることはありません。 グループを作成したら、[グループ post メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
+
 
 ## <a name="response"></a>応答
 
@@ -57,12 +56,13 @@ POST /planner/plans
 ### <a name="request"></a>要求
 
 以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/planner/plans
+POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,6 +77,7 @@ Content-length: 381
 ### <a name="response"></a>応答
 
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,15 +106,10 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

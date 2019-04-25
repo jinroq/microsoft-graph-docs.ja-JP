@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 360a7ea9ab46a9d482fd8e41c2d2a64041453e88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777782"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555018"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 列挙型
 
@@ -22,9 +22,9 @@ VPN トラフィックルールのルーティングポリシーを指定しま�
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|ルーティングポリシーが指定されていません。|
-|splittunnel|1-d|指定したアプリのネットワークトラフィックは、VPN 経由でルーティングされます。|
-|forcetunnel|pbm-2|すべてのネットワークトラフィックは、VPN 経由でルーティングされます。|
+|なし|.0|ルーティングポリシーが指定されていません。|
+|splittunnel|1 |指定したアプリのネットワークトラフィックは、VPN 経由でルーティングされます。|
+|forcetunnel|2 |すべてのネットワークトラフィックは、VPN 経由でルーティングされます。|
 
 
 

@@ -4,11 +4,11 @@ description: デルタ クエリを使用すると、アプリケーションは
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904050"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526196"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 

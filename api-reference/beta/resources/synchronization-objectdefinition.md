@@ -1,27 +1,27 @@
 ---
-title: objectDefinition リソースの種類
-description: オブジェクトとその属性について説明します。 オブジェクトの定義は、directoryDefinition、synchronizationSchema の一部として更新の一部です。
+title: objectdefinition リソースの種類
+description: オブジェクトとその属性を記述します。 オブジェクト定義は directorydefinition の一部であり、同期スキーマの一部として更新されます。
 localization_priority: Normal
 ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581764"
 ---
-# <a name="objectdefinition-resource-type"></a>objectDefinition リソースの種類
+# <a name="objectdefinition-resource-type"></a>objectdefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オブジェクトとその属性について説明します。 オブジェクトの定義は、 [directoryDefinition](synchronization-directorydefinition.md)、 [synchronizationSchema](synchronization-synchronizationschema.md)の一部として更新の一部です。
+オブジェクトとその属性を記述します。 オブジェクト定義は[directorydefinition](synchronization-directorydefinition.md)の一部であり、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|属性     |[attributeDefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
-|metadata       |[metadataEntry](synchronization-metadataentry.md)コレクション   |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
-|name           |String     |オブジェクトの名前です。 ディレクトリの定義内で一意である必要があります。 null 許容ではありません。|
+|属性     |[attributedefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
+|metadata       |[metadataentry](synchronization-metadataentry.md)コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |オブジェクトの名前。 ディレクトリ定義内で一意である必要があります。 null 許容ではありません。|
 
 ## <a name="json-representation"></a>JSON 表記
 

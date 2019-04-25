@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581059"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference リソースの種類
 
@@ -71,5 +71,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

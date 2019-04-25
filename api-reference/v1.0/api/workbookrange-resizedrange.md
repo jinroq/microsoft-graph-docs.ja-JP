@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554647"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 現在の範囲オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) 範囲オブジェクトを取得します。
@@ -32,10 +32,10 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します|
-|deltaColumns|Int32|現在の範囲を基準にして、右下隅を拡張する列の数です。 範囲を拡張するのには正の数または負の数を減らしてを使用します。|
+|deltaColumns|Int32|現在の範囲を基準にして、右下隅を展開する列数を指定します。 範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|

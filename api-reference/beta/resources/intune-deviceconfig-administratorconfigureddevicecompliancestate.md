@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a6440720ba0d179511475180a3e8e052244f9842
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556513"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31773862"
 |メンバー|値|説明|
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|.0|他のコンプライアンスポリシーに基づいてコンプライアンスの状態を設定する|
-|互換性|1-d|準拠を準拠に設定する|
+|互換性|1 |準拠を準拠に設定する|
 
 
 

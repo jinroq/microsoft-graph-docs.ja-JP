@@ -1,19 +1,19 @@
 ---
-title: デバイスの推移的なグループを一覧表示
-description: メンバーであるデバイスのグループを取得します。 この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。
+title: デバイスの推移性のグループを一覧表示する
+description: デバイスがメンバーであるグループを取得します。 この API 要求は推移的なので、デバイスがのネストされたメンバーであるすべてのグループも返します。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: fbe7aee8066c56ad9f49dd2ad77fedfe0b75fbfc
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694497"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583642"
 ---
-# <a name="list-device-transitive-groups"></a>デバイスの推移的なグループを一覧表示
+# <a name="list-device-transitive-groups"></a>デバイスの推移性のグループを一覧表示する
 
-メンバーであるデバイスのグループを取得します。 この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。
+デバイスがメンバーであるグループを取得します。 この API 要求は推移的なので、デバイスがのネストされたメンバーであるすべてのグループも返します。
 
 ## <a name="permissions"></a>アクセス許可
 

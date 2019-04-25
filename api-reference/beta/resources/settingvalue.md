@@ -1,26 +1,26 @@
 ---
-title: settingValue リソースの種類
-description: 名前と値の組で表される設定。
+title: settingvalue リソースの種類
+description: 名前と値のペアで表される設定。
 localization_priority: Normal
 ms.openlocfilehash: aa30fd61c1498be08be4d87175d18015c58323ba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584106"
 ---
-# <a name="settingvalue-resource-type"></a>settingValue リソースの種類
+# <a name="settingvalue-resource-type"></a>settingvalue リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-名前と値の組で表される設定。
+名前と値のペアで表される設定。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|string|設定で定義された、directorySettingTemplate) の名前です。|
-|value|string|設定の値です。|
+|name|string|設定の名前 (directorysettingtemplate で定義されている)。|
+|value|string|設定の値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

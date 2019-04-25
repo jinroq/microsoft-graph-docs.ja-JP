@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31570363e19c40be18c2a0dc684539ecaa360f47
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547159"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31775185"
 |メンバー|値|説明|
 |:---|:---|:---|
 |禁止|.0|ペアリングは許可されていません|
-|使う|1-d|ペアリングの許可|
-|requiresCertificate|pbm-2|iTunes とペアにするために必要な証明書|
+|使う|1 |ペアリングの許可|
+|requiresCertificate|2 |iTunes とペアにするために必要な証明書|
 
 
 

@@ -1,16 +1,16 @@
 ---
-title: targetResourceApp リソースの種類
-description: 追加、更新または監査活動の一環として、管理者によって削除されたアプリケーション オブジェクトを示します。 TargetResource リソースから派生します。
+title: targetresourceapp リソースの種類
+description: 監査アクティビティの一部として管理者によって追加、更新、または削除されたアプリオブジェクトを示します。 targetResource リソースから派生します。
 localization_priority: Normal
 ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583117"
 ---
-# <a name="targetresourceapp-resource-type"></a>targetResourceApp リソースの種類
-追加、更新または監査活動の一環として、管理者によって削除されたアプリケーション オブジェクトを示します。 [TargetResource](targetresource.md)リソースから派生します。
+# <a name="targetresourceapp-resource-type"></a>targetresourceapp リソースの種類
+監査アクティビティの一部として管理者によって追加、更新、または削除されたアプリオブジェクトを示します。 [targetResource](targetresource.md)リソースから派生します。
 
 
 

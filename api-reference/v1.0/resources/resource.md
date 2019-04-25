@@ -1,19 +1,19 @@
 ---
 title: OneNoteResource リソースの種類
-description: 'イメージまたは OneNote のページ上の他のファイル リソースです。 '
+description: 'OneNote ページ上の画像またはその他のファイルリソース。 '
 localization_priority: Normal
 ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855105"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579325"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource リソースの種類
 
-イメージまたは OneNote のページ上の他のファイル リソースです。 
+OneNote ページ上の画像またはその他のファイルリソース。 
 
-リソースのバイナリ データは取得できますが、リソース オブジェクトまたはリソース コレクションの JSON 表記の取得はサポートされていません。
+リソースのバイナリデータを取得することはできますが、リソースオブジェクトまたはリソースコレクションの JSON 表記を取得することはサポートされていません。
 
 <!--{
   "blockType": "resource",
@@ -30,19 +30,19 @@ ms.locfileid: "27855105"
 }
 ```
 
-GET リクエストをリソースの `content` エンドポイントに送信することによって、特定のリソースのバイナリ データを取得します。
+特定のリソースのバイナリデータを取得するために、get 要求をリソースの`content`エンドポイントに送信します。
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-ファイルのリソース URI は、次のリクエストを使用して、ページの HTML コンテンツを取得するときに返されます。
+ファイルのリソース URI は、次の要求を使用してページの HTML コンテンツを取得したときに返されます。
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-ページ HTML では、`img` タグには、`data-fullres-src` 属性の元のイメージ リソースのエンドポイントと、`src` 属性の最適化されたイメージのエンドポイントが含まれます。
+ページ HTML の場合、 `img`タグには、 `data-fullres-src`属性内の元のイメージリソースのエンドポイントと、 `src`属性の最適化されたイメージが含まれています。
 ```
 <img 
     src="image-resource-url"  
@@ -51,7 +51,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object` タグ (PDF、DOCX、PNG などのファイルを表す) には、`data` 属性のファイル リソースのエンドポイントが含まれます。
+`object`タグ (PDF、.docx、PNG などのファイルを表す) には、 `data`属性のファイルリソースのエンドポイントが含まれています。
 
 ```
 <object
@@ -62,10 +62,10 @@ GET ../onenote/pages/{id}/content
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類            | 説明
+| プロパティ             | 型            | 説明
 |:---------------------|:----------------|:---------------------------------
-| content              | Stream          | コンテンツ ストリーム
-| contentUrl           | 文字列 (url)    | コンテンツをダウンロードするための URL
+| content              | Stream          | コンテンツストリーム
+| contentUrl           | String (url)    | コンテンツをダウンロードするための URL
 
 ## <a name="relationships"></a>リレーションシップ
 なし。
@@ -74,7 +74,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リソース バイナリ データの取得](../api/resource-get.md) | Stream |ファイルまたはイメージ リソースのバイナリ データを取得します。|
+|[リソースバイナリデータの取得](../api/resource-get.md) | Stream |ファイルまたはイメージリソースのバイナリデータを取得します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

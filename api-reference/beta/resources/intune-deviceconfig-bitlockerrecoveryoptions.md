@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5652add71ba19b1eba102a0579a787d7410d6c89
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549432"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitlockerrecoveryoptions リソースの種類
 
@@ -22,13 +22,13 @@ BitLocker 回復オプション。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|blockDataRecoveryAgent|Boolean|証明書ベースのデータ回復エージェントをブロックするかどうかを示します。|
+|blockDataRecoveryAgent|ブール値|証明書ベースのデータ回復エージェントをブロックするかどうかを示します。|
 |回復した ypasswordusage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|ユーザーが固定またはシステムディスク用に48桁の回復パスワードを生成することを許可または要求するかどうかを示します。 使用可能な値は、`blocked`、`required`、`allowed` です。|
 |recoverykeyusage|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|ユーザーが固定またはシステムディスクの256ビット回復キーを生成することを許可または要求するかどうかを示します。 使用可能な値は、`blocked`、`required`、`allowed` です。|
-|hideRecoveryOptions|Boolean|固定またはシステムディスクの BitLocker セットアップウィザードでの復元オプションの表示を許可するかどうかを示します。|
-|enableRecoveryInformationSaveToStore|Boolean|AD DS に BitLocker 回復情報を格納することを許可するかどうかを示します。|
-|recoveryinformationtostore|[bitLockerRecoveryinformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|AD DS に格納される BitLocker 回復情報の種類を構成します。 可能な値は、`passwordAndKey`、`passwordOnly` です。|
-|enablebitlockerafterrecoveryinformationtostore|Boolean|AD DS に回復情報が格納されるまで BitLocker を有効にするかどうかを示します。|
+|hideRecoveryOptions|ブール値|固定またはシステムディスクの BitLocker セットアップウィザードでの復元オプションの表示を許可するかどうかを示します。|
+|enableRecoveryInformationSaveToStore|ブール値|AD DS に BitLocker 回復情報を格納することを許可するかどうかを示します。|
+|recoveryinformationtostore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|AD DS に格納される BitLocker 回復情報の種類を構成します。 可能な値は、`passwordAndKey`、`passwordOnly` です。|
+|enablebitlockerafterrecoveryinformationtostore|ブール値|AD DS に回復情報が格納されるまで BitLocker を有効にするかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

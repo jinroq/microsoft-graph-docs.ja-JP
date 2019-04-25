@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bfe15398484dbcccdcbae876ea88c81268b8536c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775437"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552276"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult リソースの種類
 
@@ -22,8 +22,8 @@ MacOS Vpp アプリでのアクションの結果を定義します。 actionres
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|userId|文字列|アクションに関連付けられている UserId。|
-|manageddeviceid|文字列|アクションに関連付けられている DeviceId。|
+|userId|String|アクションに関連付けられている UserId。|
+|manageddeviceid|String|アクションに関連付けられている DeviceId。|
 |合計の合計数|Int32|取り消しが試行されたライセンスの数。|
 |failedLicensesCount|Int32|失効に失敗したライセンスの数。|
 |actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|失効ライセンスの処理の失敗の理由。 可能な値は、`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate` です。|
