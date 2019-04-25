@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 30f3bba1825a268d535d3c4b8305eec1c74ddb89
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562091"
 ---
 # <a name="list-tasks"></a>List tasks
 
@@ -28,7 +28,7 @@ ms.locfileid: "27933835"
 ```http
 GET /planner/tasks
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 このメソッドでは planId [フィルター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を指定する必要があります。
 
 ## <a name="request-headers"></a>要求ヘッダー

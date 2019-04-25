@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 94d286b88b32d0e86e70581c4d4b91f7408bde51
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583635"
 ---
 # <a name="create-registeredowner"></a>RegisteredOwner を作成する
 
@@ -31,7 +31,7 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -59,7 +59,7 @@ Content-length: 30
   }
 }
 ```
-要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。
+要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

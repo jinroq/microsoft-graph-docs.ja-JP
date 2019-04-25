@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f4b60c8ba43b96419e61fa0626dfcca05f23e0c2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561573"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の取得
 

@@ -1,30 +1,30 @@
 ---
 title: educationIdentityMatchingOptions リソースの種類
-description: ユーザー アカウントを一致させるためには、ソース プロパティとターゲット プロパティの間のマッピングを提供します。 元データ ソース プロパティが存在する必要があります。 ターゲット プロパティには、Azure Active Directory (AD の Azure) の有効なプロパティをする必要があります。
+description: ソースプロパティと、一致するユーザーアカウントのターゲットプロパティとの間のマッピングを提供します。 source プロパティはソースデータに存在する必要があります。 target プロパティは、azure Active Directory (azure AD) の有効なプロパティである必要があります。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 723a74cff1d5a660272d3456e9f54de8a54e21bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543243"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>educationIdentityMatchingOptions リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー アカウントを一致させるためには、ソース プロパティとターゲット プロパティの間のマッピングを提供します。 元データ ソース プロパティが存在する必要があります。 ターゲット プロパティには、Azure Active Directory (AD の Azure) の有効なプロパティをする必要があります。
+ソースプロパティと、一致するユーザーアカウントのターゲットプロパティとの間のマッピングを提供します。 source プロパティはソースデータに存在する必要があります。 target プロパティは、azure Active Directory (azure AD) の有効なプロパティである必要があります。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| appliesTo | string |  ライセンスを割り当てるにはユーザーのロールの種類です。 使用可能な値は、`student`、`teacher` です。      |
-| **sourcePropertyName** | string |  ソース データ内のフィールド名をする必要があります、ソース プロパティの名前。 このプロパティは、大文字小文字を区別します。        |
-| **targetPropertyName** | string |  Azure AD に有効なプロパティである必要がありますターゲット プロパティの名前です。 このプロパティは、大文字小文字を区別します。     |
-| **targetDomain** | string |  ターゲット条件に一致するソース プロパティを使用して、サフィックスをドメイン。 として null を指定した場合、source プロパティを使用してターゲット プロパティと一致します。        |
+| **appliesTo** | string |  ライセンスに割り当てるユーザーロールの種類。 可能な値は、`student`、`teacher` です。      |
+| **sourcepropertyname** | string |  source プロパティの名前です。ソースデータのフィールド名を指定する必要があります。 このプロパティは大文字と小文字を区別します。        |
+| **targetpropertyname** | string |  ターゲットプロパティの名前。これは、Azure AD の有効なプロパティである必要があります。 このプロパティは大文字と小文字を区別します。     |
+| **targetdomain** | string |  ターゲットに一致する source プロパティを持つ、ドメインのサフィックス。 null として指定された場合、source プロパティを使用してターゲットプロパティと照合します。        |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {
