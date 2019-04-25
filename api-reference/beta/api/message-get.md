@@ -4,12 +4,12 @@ description: message オブジェクトのプロパティとリレーション�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540493"
 ---
 # <a name="get-message"></a>メッセージを取得する
 
@@ -19,10 +19,12 @@ ms.locfileid: "31518519"
 
 たとえば、メッセージを取得して、メッセージ内のすべての[言及](../resources/mention.md)インスタンスを展開することができます。
 
+`$value`パラメーターを使用し[て、メッセージの MIME コンテンツを取得](/graph/outlook-get-mime-message)できます。
+
 アプリが別のユーザーのメールフォルダーでメッセージを取得できるシナリオは2つあります。
 
 * アプリにアプリケーションのアクセス許可がある場合。または
-* アプリに1人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーがそのユーザーとのメールフォルダーを共有しているか、または、そのユーザーに対してアクセスを委任されている。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
+* あるユーザーからアプリに適切な代理[アクセス許可](#permissions)が与えられ、別のユーザーがそのユーザーとメール フォルダーを共有しているか、そのユーザーに代理アクセスを付与している場合。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**メッセージ** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
@@ -47,6 +49,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+指定したメッセージの MIME コンテンツを取得するには、次のようにします。
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 メッセージを取得して、メッセージ内のすべてのメンションを展開するには、次のようにします。
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,9 +68,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
-**メンション**ナビゲーションプロパティ`$expand`のクエリパラメーターを使用すると、展開されたメッセージ内の各[メンション](../resources/mention.md)の詳細を含むメッセージを取得できます。
+`$value`パラメーターを使用して、メッセージの MIME コンテンツを取得します。
+
+展開さ`$expand`れたメッセージ内の各[メンション](../resources/mention.md)の詳細を含むメッセージを取得するには、**メンション**ナビゲーションプロパティのクエリパラメーターを使用します。
 
 
 
@@ -332,7 +345,7 @@ Content-type: application/json
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- [スキーマ拡張機能を使用したグループへのカスタムデータの追加 (プレビュー)](/graph/extensibility-schema-groups)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

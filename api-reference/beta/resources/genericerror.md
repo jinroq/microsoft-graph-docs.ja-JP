@@ -1,26 +1,26 @@
 ---
-title: genericError リソースの種類
-description: 汎用のエラーです。
+title: genericerror リソースの種類
+description: 汎用エラー。
 localization_priority: Normal
 ms.openlocfilehash: d3c7e9cd7ff7be635adfbf329170068cd944f0b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547499"
 ---
-# <a name="genericerror-resource-type"></a>genericError リソースの種類
+# <a name="genericerror-resource-type"></a>genericerror リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-汎用のエラーです。
+汎用エラー。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
-| message | String | エラー メッセージ。 |
-| code | String | エラー コード。 |
+| メッセージ​​ | String | エラー メッセージ。 |
+| code | String | エラーコード。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

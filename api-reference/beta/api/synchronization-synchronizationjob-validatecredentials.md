@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationJob: validateCredentials'
-description: 資格情報は、テナントの有効なことを検証します。
+title: '同期ジョブ: validateCredentials'
+description: テナントで資格情報が有効であることを検証します。
 localization_priority: Normal
 ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519004"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537140"
 ---
-# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
+# <a name="synchronizationjob-validatecredentials"></a>同期ジョブ: validateCredentials
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-資格情報は、テナントの有効なことを検証します。
+テナントで資格情報が有効であることを検証します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -40,11 +40,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|ブール値|`true`、`credentials`パラメーターは無視され、代わりに (存在する場合) には、以前に保存した資格情報が検証されます。 |
-|資格情報|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)コレクション|検証する資格情報。 無視する場合、`useSavedCredentials`のパラメーターは、 `true`。|
+|の場合は、資格情報|ブール値|の`true`場合、 `credentials`パラメーターは無視され、以前に保存された資格情報 (ある場合) が代わりに検証されます。 |
+|クリデンシャル|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)コレクション|検証する資格情報。 `useSavedCredentials`パラメーターがの場合は`true`無視されます。|
 
 ## <a name="response"></a>応答
-検証は成功を返します、`204, No Content`応答コード。 応答本体には何もは返されません。
+検証が成功した場合、このメソッド`204, No Content`は応答コードを返します。 応答本文には何も返されません。
 
 ## <a name="example"></a>例
 

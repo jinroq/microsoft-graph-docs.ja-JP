@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae846552b736fccd34415459a08567eb82a0d347
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566732"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 列挙型
 
@@ -23,13 +23,13 @@ ms.locfileid: "31771321"
 |メンバー|値|説明|
 |:---|:---|:---|
 |android|.0|Android.|
-|androidforwork|1-d|androidforwork。|
-|iOS|pbm-2|iOS.|
-|macOS|1/3|MacOS.|
-|windowsPhone81|2/4|WindowsPhone 8.1|
-|windows81AndLater|5|Windows 8.1 以降|
-|windows10AndLater|シックス|Windows 10 以降。|
-|androidWorkProfile|7|AndroidWorkProfile.|
+|androidforwork|1 |androidforwork。|
+|iOS|2 |iOS.|
+|macOS|3 |MacOS.|
+|windowsPhone81|4 |WindowsPhone 8.1|
+|windows81AndLater|5 |Windows 8.1 以降|
+|windows10AndLater|6 |Windows 10 以降。|
+|androidWorkProfile|7 |AndroidWorkProfile.|
 |すべての|100|すべてのプラットフォーム。|
 
 

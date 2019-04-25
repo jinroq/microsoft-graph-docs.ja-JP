@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: f140734b6e5fa3e6488b71dbe183a9e3d82fc795
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539753"
 ---
 # <a name="get-outlooktask"></a>outlookTask を取得する
 
@@ -17,7 +17,7 @@ ms.locfileid: "29967292"
 
 ユーザーのメールボックスにある Outlook タスクのプロパティとリレーションシップを取得します。
 
-既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
+既定では、この操作 (および POST、PATCH、および[完了](../api/outlooktask-complete.md)タスク操作) は、日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名前                     | 説明                                       |
 |:-------------------------|:--------------------------------------------------|
 | Authorization            | ベアラー {トークン}。必須。                         |
-| 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。 |
+| 優先: outlook.timezone | 応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -55,11 +55,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[outlookTask](../resources/outlooktask.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-get-an-outlook-task"></a>例 1: Outlook のタスクを取得します。
+### <a name="example-1-get-an-outlook-task"></a>例 1: Outlook のタスクを取得する
 
 #### <a name="request"></a>要求
 
@@ -124,11 +124,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>例 2: 太平洋標準時の日付と時刻のプロパティを使用して Outlook のタスクを取得します。
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>例 2: 太平洋標準時で日付と時刻のプロパティを使用して Outlook タスクを取得する
 
 #### <a name="request"></a>要求
 
-この例では、 `Prefer: outlook.timezone` API が太平洋標準時の応答で日付と時刻のプロパティを返すことを指定するヘッダー。
+この例では`Prefer: outlook.timezone` 、ヘッダーを使用して、API が太平洋標準時に応答で日付と時刻のプロパティを返すように指定します。
 
 <!-- {
   "blockType": "request",
@@ -142,9 +142,9 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>応答
 
-以下は、応答の例です。 指定の太平洋標準時では、応答内の日付と時刻のプロパティが返されます。
+以下は、応答の例です。 応答内の日付と時刻のプロパティは、指定された太平洋標準時に返されます。
 
-> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "response",

@@ -5,16 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: b3057a270aa2c503d96747e173cc54b13013ce6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585063"
 ---
 # <a name="add-group-owner"></a>グループ所有者の追加
 グループ所有者にユーザーを追加します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。
 
->**重要な:** グループの所有者を更新すると、グループのチームを作成した、マイクロソフトのチームとの同期に所有者には、最大で 2 時間がかかります。 また、- たとえば、プランナーの計画を作成するので、チームで変更を加えることができる所有者所有者も必要があります、グループまたはチームのメンバーとして追加します。 
+>**Important:** グループの所持者を更新しグループのチームを作成した場合、 Microsoft Teams と所有者が同期するまで最大で 2 時間かかります。 また、たとえば Planner プランを作成することによって所有者が Team で変更を加えられるようにしたい場合は、所有者もグループまたはチームのメンバーとして追加する必要があります。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -23,7 +23,7 @@ ms.locfileid: "27917994"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All と User.ReadWrite.All |
+|アプリケーション | Group.ReadWrite.All and User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ Content-length: 30
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869324"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567908"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 

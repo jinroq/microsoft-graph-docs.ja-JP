@@ -1,67 +1,67 @@
 ---
-title: bookingBusiness リソースの種類
+title: bookingbusiness リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543858"
 ---
-# <a name="bookingbusiness-resource-type"></a>bookingBusiness リソースの種類
+# <a name="bookingbusiness-resource-type"></a>bookingbusiness リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Microsoft 予約でビジネスを表します。 これは、Microsoft 予約 API 内の最上位オブジェクトです。 ビジネス情報や予定、顧客、サービス、スタッフなどの関連するビジネス オブジェクトが含まれています。
+Microsoft 予約のビジネスを表します。 これは、Microsoft の予約 API の最上位レベルのオブジェクトです。 これには、ビジネス情報と、予定、顧客、サービス、スタッフメンバーなどの関連するビジネスオブジェクトが含まれています。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リスト bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md)コレクション |テナント内には、bookingbusiness オブジェクトのコレクションを取得します。 |
-|[BookingBusiness を作成します。](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | 新しい Microsoft 予約ビジネスを作成します。 |
-|[BookingBusiness を取得します。](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |BookingBusiness オブジェクトのプロパティと関係を参照してください。|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |**BookingBusiness**オブジェクトのプロパティを更新します。 |
-|[Delete](../api/bookingbusiness-delete.md) | なし |**BookingBusiness**オブジェクトを削除します。 |
-|[BookingAppointment を作成します。](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| 予定のコレクションへの投稿には、新しい bookingAppointment を作成します。|
-|[リストの予定](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md)コレクション| BookingAppointment オブジェクトのコレクションを取得します。|
-|[BookingCustomer を作成します。](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| お客様のコレクションへの投稿には、新しい bookingCustomer を作成します。|
-|[顧客のリスト](../api/bookingbusiness-list-customers.md) |[bookingCustomer](bookingcustomer.md)コレクション| BookingCustomer オブジェクトのコレクションを取得します。|
-|[BookingService を作成します。](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| サービスのコレクションへの投稿には、新しい bookingService を作成します。|
-|[サービスの一覧](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md)コレクション| BookingService オブジェクトのコレクションを取得します。|
-|[BookingStaffMember を作成します。](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| StaffMembers コレクションへの投稿には、新しい bookingStaffMember を作成します。|
-|[リスト staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)コレクション| BookingStaffMember オブジェクトのコレクションを取得します。|
-|[calendarView を一覧表示する](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md)コレクション|指定した日付範囲内に発生する**bookingAppointment**オブジェクトのコレクションを取得します。|
-|[Publish](../api/bookingbusiness-publish.md)|なし|このビジネスのスケジュール ページを外部の顧客が使用できるようにします。 True の場合、およびスケジュールのページの URL を**publicUrl**プロパティに**isPublished**プロパティを設定します。|
-|[Unpublish](../api/bookingbusiness-unpublish.md)|なし| 外部の顧客に、利用できないこのビジネスでのスケジュールのページを加えます。 **IsPublished**プロパティを false、および**publicUrl**プロパティを null に設定します。|
+|[bookingbusinesses のリスト](../api/bookingbusiness-list.md) | [bookingbusiness](bookingbusiness.md)コレクション |テナント内の bookingbusiness オブジェクトのコレクションを取得します。 |
+|[bookingbusiness の作成](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | 新しい Microsoft 予約ビジネスを作成します。 |
+|[bookingbusiness の取得](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |bookingbusiness オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[更新](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |**bookingbusiness**オブジェクトのプロパティを更新します。 |
+|[削除](../api/bookingbusiness-delete.md) | なし |**bookingbusiness**オブジェクトを削除します。 |
+|[bookingappointment の作成](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| 予定のコレクションに投稿して、新しいブックを作成します。|
+|[予定を一覧表示する](../api/bookingbusiness-list-appointments.md) |[bookingappointment](bookingappointment.md)コレクション| bookingappointment オブジェクトコレクションを取得します。|
+|[bookingcustomer の作成](../api/bookingbusiness-post-customers.md) |[bookingcustomer](bookingcustomer.md)| customers コレクションへの投稿により、新しい書店の顧客を作成します。|
+|[顧客を一覧表示する](../api/bookingbusiness-list-customers.md) |[bookingcustomer](bookingcustomer.md)コレクション| bookingcustomer オブジェクトのコレクションを取得します。|
+|[bookingservice の作成](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| サービスコレクションへの投稿により、新しい bookingservice を作成します。|
+|[サービスを一覧表示する](../api/bookingbusiness-list-services.md) |[bookingservice](bookingservice.md)コレクション| bookingservice オブジェクトのコレクションを取得します。|
+|[bookingStaffMember を作成する](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| staffMembers コレクションへの投稿によって新しい bookingStaffMember を作成します。|
+|[リスト staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)コレクション| bookingStaffMember オブジェクトのコレクションを取得します。|
+|[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingappointment](bookingappointment.md)コレクション|指定した日付範囲内に発生する**bookingappointment**オブジェクトのコレクションを取得します。|
+|[publish](../api/bookingbusiness-publish.md)|なし|この業務の [スケジュール] ページを外部のお客様が利用できるようにします。 **isPublished**プロパティを true に、 **publicurl**プロパティを [スケジュール] ページの URL に設定します。|
+|[unpublish](../api/bookingbusiness-unpublish.md)|なし| 外部のお客様がこの業務のスケジュール設定ページを使用できないようにします。 **isPublished**プロパティを false に設定し、 **publicurl**プロパティを null に設定します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|ビジネスの住所。 **電話**と**webSiteUrl**と、**アドレス**のプロパティは、ビジネスのスケジュール ページのフッターに表示されます。|
-|businessHours|[bookingWorkHours](bookingworkhours.md)コレクション|ビジネスの操作の時間です。|
-|businessType|String|ビジネスの種類。|
-|defaultCurrencyIso|String|ビジネスが Microsoft 予約上で動作する通貨コード。|
-|displayName|String|ビジネスでは、お客様とのインターフェイスの名前。 ページをスケジューリングするビジネスの先頭にこの名前が表示されます。|
-|email|String|ビジネスの電子メール アドレスです。|
-|id|文字列|ビジネス用の一意なプログラム識別子です。 読み取り専用です。|
-|IsPublished|ブール値|スケジュール ページが可能となって外部の顧客にします。 このプロパティを設定するのにには、**公開**し、**非公開**のアクションを使用します。 読み取り専用です。|
-|phone|String|ビジネスの電話番号です。 **電話**は、**アドレス**と**webSiteUrl**とは、ビジネスのスケジュール ページのフッターに表示されます。|
-|publicUrl|String|ページ[を公開](../api/bookingbusiness-publish.md)するか[非公開](../api/bookingbusiness-unpublish.md)に設定されているスケジュールのページの URL です。 読み取り専用です。|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|このビジネスでの予約を作成する方法を指定します。|
-|websiteUrl|String|ビジネスの web サイトの URL です。 **アドレス**、**電話**、および、 **webSiteUrl**プロパティは、ビジネスのスケジュール] ページのフッターに表示されます。|
+|address|[physicalAddress](physicaladdress.md)|会社の住所。 **住所**プロパティは、 **phone**および**webSiteUrl**と共に、ビジネススケジュールページのフッターに表示されます。|
+|microsoft.rtc.rgs.management.writablesettings.businesshours|[bookingwork hours](bookingworkhours.md)コレクション|業務の運営時間。|
+|businessType|String|業務の種類。|
+|defaultCurrencyIso|String|Microsoft の予約で勤務している通貨のコード。|
+|displayName|String|顧客とのインターフェイスとなるビジネスの名前。 この名前は、[ビジネススケジュール] ページの上部に表示されます。|
+|email|String|ビジネスの電子メールアドレス。|
+|id|String|ビジネスの一意なプログラム id。 読み取り専用。|
+|isPublished|ブール値|[スケジュール] ページは、外部のお客様が利用できるようになっています。 **発行**および**未発行**アクションを使用して、このプロパティを設定します。 読み取り専用。|
+|phone|String|会社の電話番号。 [**電話**] プロパティは、[**住所**] および [ **webSiteUrl**] と共に、[ビジネススケジュール] ページのフッターに表示されます。|
+|publicurl|String|ページの公開または[発行](../api/bookingbusiness-publish.md)を[取り消し](../api/bookingbusiness-unpublish.md)た後に設定される、[スケジュール] ページの URL。 読み取り専用。|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|このビジネスに対して予約を作成する方法を指定します。|
+|webSiteUrl|String|ビジネス web サイトの URL。 **webSiteUrl**プロパティは、[**住所**, **phone**] と共に、[ビジネススケジュール] ページのフッターに表示されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|appointments|[bookingAppointment](bookingappointment.md)コレクション| このビジネスのすべての予定です。 読み取り専用です。 Null 許容型。|
-|calendarView|[bookingAppointment](bookingappointment.md)コレクション| このビジネスでは、指定した日付範囲内の予定のセット。 読み取り専用です。 Null 許容型。|
-|お客様|[bookingCustomer](bookingcustomer.md)コレクション| このビジネスのすべての顧客。 読み取り専用です。 Null 許容型。|
-|サービス|[bookingService](bookingservice.md)コレクション| このような企業で提供されているすべてのサービス。 読み取り専用です。 Null 許容型。|
-|staffMembers|[bookingStaffMember](bookingstaffmember.md)コレクション| すべてのスタッフはこのような企業にサービスを提供します。 読み取り専用です。 Null 許容型。|
+|予定|[bookingappointment](bookingappointment.md)コレクション| このビジネスのすべての予定。 読み取り専用。 Null 許容型。|
+|calendarView|[bookingappointment](bookingappointment.md)コレクション| 指定した日付範囲内の、このビジネスの一連の予定。 読み取り専用。 Null 許容型。|
+|ユーザー|[bookingcustomer](bookingcustomer.md)コレクション| このビジネスのすべてのお客様。 読み取り専用。 Null 許容型。|
+|サービス|[bookingservice](bookingservice.md)コレクション| このビジネスによって提供されるすべてのサービス。 読み取り専用。 Null 許容型。|
+|staffMembers|[bookingStaffMember](bookingstaffmember.md)コレクション| このビジネスのサービスを提供するすべてのスタッフメンバー。 読み取り専用。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

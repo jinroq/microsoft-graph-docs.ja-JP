@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: f04f892e3bcfe593ebd1d5a4ca04cf70f0dd38e7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538106"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -25,7 +25,7 @@ ms.locfileid: "29572809"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -45,7 +45,7 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
-このメソッドをサポートしている、 `$format` 、応答をカスタマイズするのには、 [OData クエリ パラメーター](/graph/query-parameters)です。 既定の出力の種類は、テキストまたは csv です。 ただし、出力の種類を指定する場合は、設定をテキストまたは csv またはアプリケーションまたは json OData $format クエリ パラメーターを使用することができます。
+このメソッドは、 `$format`応答をカスタマイズするための[OData クエリパラメーター](/graph/query-parameters)をサポートします。 既定の出力の種類は、text/csv です。 ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -76,11 +76,11 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 - Yammer 非アクティブ
 - Teams アクティブ
 - Teams 非アクティブ
-- Office 365 のアクティブな
-- Office 365 使用頻度の低い
+- Office 365 のアクティブ
+- Office 365 の非アクティブ
 - レポート期間
 
-21Vianet によって運営されて、Microsoft Graph 中国では、次の列はサポートされていません。
+次の列は、21vianet が運用している Microsoft graph 中国ではサポートされていません。
 
 - Yammer アクティブ
 - Yammer 非アクティブ
@@ -89,20 +89,20 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 
 ### <a name="json"></a>JSON
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の**[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトを返します。
 
-21Vianet によって運営されて、Microsoft Graph 中国では、 **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトでは、次のプロパティはサポートされていません。
+**[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトの次のプロパティは、21vianet が運用している Microsoft Graph の中国ではサポートされていません。
 
 - yammerActive
 - yammerInactive
-- teamsActive
-- teamsInactive
+- teamsactive
+- teamsinactive
 
 ## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 
-次に、CSV を出力する例を示します。
+CSV を出力する例を次に示します。
 
 #### <a name="request"></a>要求
 
@@ -146,7 +146,7 @@ Report Refresh Date,Exchange Active,Exchange Inactive,OneDrive Active,OneDrive I
 
 ### <a name="json"></a>JSON 
 
-次に、JSON を取得する例を示します。
+次の例は、JSON を返します。
 
 #### <a name="request"></a>要求
 

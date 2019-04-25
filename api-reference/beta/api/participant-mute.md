@@ -1,21 +1,21 @@
 ---
 title: '参加者: ミュート'
-description: 呼び出しで特定の参加者をミュートします。
+description: 通話で特定の参加者をミュートします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0fa4190ca6a3871c42af3c753cb3d9d48d320bd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539428"
 ---
 # <a name="participant-mute"></a>参加者: ミュート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出しで特定の参加者をミュートします。
+通話で特定の参加者をミュートします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|ClientContext|String|クライアントのコンテキスト。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[commsOperation](../resources/commsoperation.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -90,7 +90,7 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a>例: 特定の参加者をミュート
+## <a name="example---mute-specific-participant"></a>例-特定の参加者のミュート
 
 ##### <a name="request"></a>要求
 
@@ -127,7 +127,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>名簿の参加者がミュートされている更新の通知-
+##### <a name="notification---roster-updated-with-participant-muted"></a>通知-参加者がミュート状態で更新された名簿
 
 ```http
 POST https://bot.contoso.com/api/calls

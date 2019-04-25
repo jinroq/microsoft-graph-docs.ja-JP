@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 59e25d3155caf13cac5441e6553116c9a54ceac6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526684"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546364"
 ---
 # <a name="range-cell"></a>範囲:セル
 
@@ -44,8 +44,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|row|number|取得するセルの行番号。0 を起点とする番号になります。|
-|列|number|取得セルの列番号。0 を起点とする番号になります。|
+|row|番号|取得するセルの行番号。0 を起点とする番号になります。|
+|column|number|取得セルの列番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

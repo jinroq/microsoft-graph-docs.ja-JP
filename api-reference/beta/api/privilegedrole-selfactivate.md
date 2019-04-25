@@ -1,27 +1,27 @@
 ---
-title: 'privilegedRole: selfActivate'
-description: 依頼者に割り当てられているロールをアクティブにします。
+title: 'privilegedRole: selfactivate'
+description: 要求者に割り当てられている役割をアクティブ化します。
 localization_priority: Normal
 ms.openlocfilehash: e0197599373246853906b879c0f3d13e61a45244
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515070"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546592"
 ---
-# <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
+# <a name="privilegedrole-selfactivate"></a>privilegedRole: selfactivate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-依頼者に割り当てられているロールをアクティブにします。
+要求者に割り当てられている役割をアクティブ化します。
 
->**注:** 2018年 12 月の効果的なこの API は、サポートされていない、使用する必要があります。 [PrivilegedRoleAssignmentRequest の作成](privilegedroleassignmentrequest-post.md)を使用してください。
+>**注:** 2018年12月有効になると、この API はサポートされなくなり、使用されなくなります。 代わりに、 [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md)を使用します。
 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターは呼び出すことができますのみ```selfActivate```彼に割り当てられているロールです。
+リクエスターは、自分に```selfActivate```割り当てられている役割に対してのみ呼び出すことができます。
  
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -36,7 +36,7 @@ ms.locfileid: "29515070"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-注意してください``<id>``は、ターゲットのロールの id。
+これは``<id>`` 、ターゲットの役割 ID であることに注意してください。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
@@ -47,16 +47,16 @@ POST /privilegedRoles/{id}/selfActivate
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|理由|string|省略可能。 このロールのアクティブ化の理由について説明します。|
-|duration|string|省略可能。 有効な値である可能性があります```min```(最低限のライセンス認証の期間)、 ```default``` (アクティブ化の既定の期間、ロール)、または時間数は、ライセンス認証の手続きを指定する double 型の値です。 指定した期間をロールの設定をロールのアクティブ化の期間よりも長いことはできません。 |
-|ticketNumber|string|省略可能。 このロールのアクティブ化の追跡に使用されるチケットの数です。|
-|ticketSystem|string|省略可能。 チケット システムです。|
+|したがっ|string|省略可能。 この役割のライセンス認証の理由についての説明。|
+|duration|string|省略可能。 有効な値は```min``` 、(最小ライセンス認証の```default```期間)、(ロールの既定のライセンス認証の期間)、または倍精度の値を使用してライセンス認証の時間数を指定します。 指定した期間は、役割の設定から、役割のアクティブ化の期間より長くすることはできません。 |
+|ticketNumber|string|省略可能。 この役割のライセンス認証の追跡に使用されるチケット番号。|
+|ticketSystem|string|省略可能。 チケットシステム。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
 ##### <a name="request"></a>要求
@@ -81,7 +81,7 @@ Content-length: 142
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

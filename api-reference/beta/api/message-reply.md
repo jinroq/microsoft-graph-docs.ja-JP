@@ -1,28 +1,28 @@
 ---
 title: 'メッセージ: reply'
-description: 'メッセージの送信者に返信やコメントの追加、更新可能なすべて 1 つの**応答**の呼び出しでプロパティを変更します。 '
+description: '1 回の **reply** 呼び出しでメッセージ送信者に返信、コメントを追加、または更新可能なプロパティを変更します。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 6461d9735459ff9cf956820b00bb61a4d42d1ec0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540423"
 ---
 # <a name="message-reply"></a>メッセージ: reply
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-1 回の返信呼び出しでメッセージ送信者に返信、コメントを追加、または更新可能なプロパティを変更します。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
+1 回の reply 呼び出しでメッセージ送信者に返信、コメントを追加、または更新可能なプロパティを変更します。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
 
 または、最初に[下書きの返信メッセージを作成して](../api/message-createreply.md)コメントを含めるか、メッセージのプロパティを更新し、返信を[送信](../api/message-send.md)します。
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- **ReplyTo**プロパティが元のメッセージのインターネット メッセージ フォーマット ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに指定されている場合は、 **replyTo**で**の**プロパティで受信者ではなく受信者に返信を送信する必要があります。 
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- 元のメッセージで**replyto**プロパティが指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、 **from**プロパティで受信者ではなく、 **replyto**の受信者に返信を送信する必要があります。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
-|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 

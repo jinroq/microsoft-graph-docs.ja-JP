@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544088"
 ---
 # <a name="create-message"></a>メッセージを作成する
 
@@ -17,10 +17,10 @@ ms.locfileid: "29509750"
 
 この API を使用して、新しいメッセージの下書きを作成します。下書きを任意のフォルダーに作成し、必要に応じて送信前に更新できます。[下書き] フォルダーに保存するには、/messages ショートカットを使用します。
 
-同じ**POST**呼び出しで下書きを作成中に次の操作を実行できます。
+同じ**POST**呼び出しで下書きを作成する際に、次のことを行うことができます。
 
 - [添付ファイル](../resources/attachment.md)を含める 
-- [説明](../resources/mention.md)を使用して、新しいメッセージに別のユーザーを呼び出す
+- 別のユーザーを新しいメッセージで呼び出すには、[メンション](../resources/mention.md)を使用します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -46,22 +46,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文に、[メッセージ](../resources/message.md)オブジェクトの JSON の形式を指定します。
+要求本文で、[メッセージ](../resources/message.md)オブジェクトの JSON 表記を指定します。
 
-**言及**を使用して新しいメッセージに別のユーザーを呼び出す場合は。
+新しいメッセージで別のユーザーを呼び出すために、**メンション**を使用する場合は、次のようにします。
 
-- 要求の本文で必要な**toRecipients**プロパティ**を示して**プロパティ、および任意の書き込み可能なメッセージ プロパティが含まれます。
-- **紹介**プロパティにそれぞれ記載されている、**記載されている**プロパティを指定する必要があります。
+- 要求本文に、必要な**torecipients**プロパティ、**メンション**プロパティ、および任意の書き込み可能なメッセージプロパティを含めます。
+- **メンション**プロパティの各メンションに対して、**説明**されているプロパティを指定する必要があります。
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにメッセージに追加することができます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[メッセージ](../resources/message.md)のオブジェクト。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[message](../resources/message.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-ここでは、新しいメッセージの下書きを作成する要求の例です。
+新しいメッセージの下書きを作成する要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -158,7 +158,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の例では、彼女のブースに Randi 就くで下書きのメールを示しています。 メッセージには、Dana Swope の他のユーザーの参照も含まれています。
+次の例では、randi という下書き電子メールを、Samantha ブースに示します。 このメッセージには、別のユーザーの Dana Swope も含まれています。
 
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
 <!-- {
@@ -252,7 +252,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-3"></a>要求 3
-次の使用例は、メッセージの下書きを作成するときにいくつかの顧客のインターネット メッセージ ヘッダーを追加します。
+次の例では、メッセージの下書きを作成するときに、いくつかの顧客インターネットメッセージヘッダーを追加します。
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -288,7 +288,7 @@ Content-type: application/json
 ```
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-3"></a>応答 3
-以下は、応答の例です。 注: インターネット メッセージのヘッダーは、POST 応答に既定では返されません。 ここに示す応答オブジェクトは、簡潔にするためもあります。 実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。 注: インターネットメッセージヘッダーは、POST 応答で既定では返されません。 ここに示す応答オブジェクトは、簡潔にするために切り詰められている場合もあります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -360,7 +360,7 @@ Content-type: application/json
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

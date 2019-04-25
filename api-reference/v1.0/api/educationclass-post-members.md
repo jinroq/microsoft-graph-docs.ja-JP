@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1999833036d4e1452cb45bedbd58a0e2d160df39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928018"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550456"
 ---
 # <a name="add-a-student"></a>生徒を追加する
 
@@ -22,7 +22,7 @@ ms.locfileid: "27928018"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  サポートされていません。  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | EduRoster.ReadWrite.All と Member.Read.Hidden | 
+|アプリケーション | eduroster.readbasic の正の値を取得します。 | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

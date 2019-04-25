@@ -4,16 +4,17 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547145"
 ---
 # <a name="identityset-resource-type"></a>id セットリソースの種類
 
-**IdentitySet** リソースは、[ID](identity.md) リソースのキー付きコレクションです。_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている ID のセットを表すために使用されます。
+identity **set**リソースは、 [id](identity.md)リソースのキー付きコレクションです。
+_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている id のセットを表すために使用されます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -25,6 +26,8 @@ ms.locfileid: "30482197"
   "optionalProperties": [
     "application",
     "applicationInstance",
+    "conversation",
+    "conversationIdentityType",
     "device",
     "encrypted",
     "guest",
@@ -35,22 +38,26 @@ ms.locfileid: "30482197"
 } -->
 ```json
 {
-  "application": {"@odata.type": "#microsoft.graph.identity"},
-  "applicationInstance": {"@odata.type": "#microsoft.graph.identity"},
-  "device": {"@odata.type": "#microsoft.graph.identity"},
-  "encrypted": {"@odata.type": "#microsoft.graph.identity"},
-  "guest": {"@odata.type": "#microsoft.graph.identity"},
-  "phone": {"@odata.type": "#microsoft.graph.identity"},
-  "user": {"@odata.type": "#microsoft.graph.identity"}
+  "application": {"@odata.type": "microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "microsoft.graph.identity"},
+  "conversation": {"@odata.type": "microsoft.graph.identity"},
+  "conversationIdentityType": {"@odata.type": "microsoft.graph.identity"},
+  "device": {"@odata.type": "microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "microsoft.graph.identity"},
+  "guest": {"@odata.type": "microsoft.graph.identity"},
+  "phone": {"@odata.type": "microsoft.graph.identity"},
+  "user": {"@odata.type": "microsoft.graph.identity"}
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 種類                    | 説明                                             |
+| プロパティ    | 型                    | 説明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [Identity](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。  |
-| デバイス      | [Identity](identity.md) | 省略可能。このアクションに関連付けられているデバイス。       |
+| application | [ID](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。  |
+| 会話| [Identity](identity.md) | 省略可能。 このアクションに関連付けられているチームまたはチャネル。       |
+| conversationIdentityType| [Identity](identity.md) | 省略可能。 **会話**プロパティがチームまたはチャネルを識別するかどうかを示します。|
+| デバイス      | [ID](identity.md) | 省略可能。このアクションに関連付けられているデバイス。       |
 | phone       | [identity](identity.md) | 省略可能。 このアクションに関連付けられている電話番号。 |
 | user        | [Identity](identity.md) | 省略可能。このアクションに関連付けられているユーザー。         |
 

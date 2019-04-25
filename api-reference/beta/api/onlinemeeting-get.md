@@ -1,24 +1,24 @@
 ---
-title: Get オンライン会議
-description: プロパティと**onlineMeeting**オブジェクトの関係を取得します。
+title: オンライン会議を取得する
+description: '**onlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ef45d73aef8124d962d05ea84117c93bac16f0a2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510653"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539937"
 ---
-# <a name="get-online-meeting"></a>Get オンライン会議
+# <a name="get-online-meeting"></a>オンライン会議を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと**onlineMeeting**オブジェクトの関係を取得します。
+**onlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。
 
-> **注:**`GET`メソッドは、 [VTC 会議 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)に制限します。雲-ビデオの相互運用機能のライセンス取得ユーザーと、このメソッドを使用して、ミーティングに参加する詳細を取得するには、これらの Id が生成されます。
-> 通常のフローでは、bot を使用できます、`joinURL`参照がないと、会議に参加する必要があります。
+> **注:** この`GET`メソッドは、 [vtc 会議 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)に制限されています。これらの id は、クラウドビデオ相互運用ライセンスユーザーを対象として生成され、このメソッドを使用して会議に参加するための詳細情報を取得します。
+> 通常のフローでは、 `joinURL` bot はを使用して会議に参加でき、参照は必要ありません。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -26,9 +26,9 @@ ms.locfileid: "29510653"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)           |
 |:---------------------------------------|:------------------------------------------------------|
-| 委任 (職場または学校のアカウント)     | サポートされていません。                                        |
-| 委任 (個人用 Microsoft アカウント) | サポートされていません。                                        |
-| アプリケーション                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
+| 委任 (職場または学校のアカウント)     | サポートされません。                                        |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                                        |
+| アプリケーション                            | OnlineMeetings、OnlineMeetings のいずれかを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -37,8 +37,8 @@ GET /app/onlineMeetings/{id}
 GET /applications/{id}/onlineMeetings/{id}
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -49,7 +49,7 @@ GET /applications/{id}/onlineMeetings/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[onlineMeeting](../resources/onlinemeeting.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[onlineMeeting](../resources/onlinemeeting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

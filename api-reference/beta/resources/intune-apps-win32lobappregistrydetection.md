@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8c249a21075a2d2647fbb0cbcc53bf7c541a155f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795269"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534480"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection リソースの種類
 
@@ -25,12 +25,12 @@ Win32 アプリを検出するためのレジストリプロパティが含ま�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|check32BitOn64System|Boolean|このレジストリパスが、64ビットシステムの32ビットアプリをチェックするためのものであるかどうかを示す値。|
-|キーパス|文字列|Win32 基幹業務 (LoB) アプリを検出するためのレジストリキーのパス|
-|valueName|文字列|レジストリ値の名前|
+|check32BitOn64System|ブール値|このレジストリパスが、64ビットシステムの32ビットアプリをチェックするためのものであるかどうかを示す値。|
+|キーパス|String|Win32 基幹業務 (LoB) アプリを検出するためのレジストリキーのパス|
+|valueName|String|レジストリ値の名前|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|レジストリデータ検出の種類。 可能な値は `notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version` です。|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|レジストリデータを検出するための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
-|detectionValue|文字列|レジストリの検出値|
+|detectionValue|String|レジストリの検出値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

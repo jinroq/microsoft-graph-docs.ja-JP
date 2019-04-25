@@ -1,43 +1,43 @@
 ---
 title: secureScores リソースの種類
-description: '上部 = n、n = のデータを取得する日数です。 '
+description: 'top = n、n は取得するデータの日数を指定します。 '
 localization_priority: Normal
 ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640183"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549203"
 ---
 # <a name="securescores-resource-type"></a>secureScores リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントとコントロール レベルでのデータのスコアの 1 日あたりのテナントのセキュリティで保護されたスコアを表します。 既定では、90 日間のデータを保持しています。 このデータの並べ替えに**createdDateTime**から最初に最新です。 これにより、ページの応答に $top を使用して = n、n = のデータを取得する日数です。 
+テナントとコントロールレベルでのスコアデータの1日あたりのテナントのセキュリティスコアを表します。 既定では、90日間のデータが保持されます。 このデータは、新しい**日付**から最も古い日付までの日付で並べ替えられます。 これにより、$top = n (n は取得するデータの日数) を使用して、応答をページに表示できます。 
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[secureScores のリスト](../api/securescores-list.md) | [secureScores](securescores.md) |プロパティと、secureScores オブジェクトのメタデータを参照してください。|
+|[secureScores のリスト](../api/securescores-list.md) | [secureScores](securescores.md) |secureScores オブジェクトのプロパティとメタデータを読み取ります。|
 
 
 ## <a name="properties"></a>プロパティ
-テナントのセキュリティのエンティティの型を含むプロパティ (日単位のスナップショット データ) のスコアです。
+テナントのセキュリティスコアのプロパティを含むエンティティ型 (毎日のスナップショットデータ)。
 
 |プロパティ |型 |説明 |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   テナントの GUID の文字列 id。  |
-|   createdDateTime |   DateTimeOffset  |   エンティティが作成されたときの日付。  |
-|   id  |   String  |   AzureTenantId_createdDateTime の組み合わせです。   |
-|   licensedUserCount   |   Int32   |   特定のテナントのユーザー数のライセンスを取得します。    |
-|   activeUserCount |   Int32   |   特定のテナントのアクティブなユーザー数です。  |
-|   currentScore    |   倍精度浮動小数点数  |   現在のテナントは、指定した日付のスコアを達成します。    |
-|   maxScore |  倍精度浮動小数点数  |   有効最大スコアを指定した日付のテナントです。    |
-|   enabledServices |   String コレクション   |   (たとえば、Exchange のオンライン、Skype、Sharepoint) テナントの Microsoft 提供のサービスです。   |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)コレクション    |さまざまなスコープ (業界では、座席で平均での平均値など) およびコントロールの分類 (識別情報、データ、デバイス、アプリケーション、インフラストラクチャ) のスコープ内での平均スコアです。 |
-|   controlScores | [controlScore](controlscore.md)コレクション  |   コントロールのセットのテナントのスコアが含まれています。   |
+|   azureTenantId   |   String  |   テナント ID の GUID 文字列。  |
+|   createdDateTime |   DateTimeOffset  |   エンティティが作成された日付。  |
+|   id  |   String  |   azureTenantId_createdDateTime の組み合わせ。   |
+|   licensedUserCount   |   Int32   |   指定したテナントのライセンスされたユーザーカウント。    |
+|   activeusercount |   Int32   |   指定したテナントのアクティブなユーザー数。  |
+|   currentscore    |   倍精度浮動小数点数  |   指定された日付における現在のテナントのスコア。    |
+|   maxscore |  倍精度浮動小数点数  |   指定した日付の有効なテナントの最大スコア。    |
+|   enabledservices |   String collection   |   テナントの Microsoft 提供のサービス (Exchange online、Skype、Sharepoint など)。   |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)コレクション    |範囲内の別のスコープ (たとえば、業種別平均、座席の平均)、コントロールカテゴリ (id、データ、デバイス、アプリ、インフラストラクチャ) の平均スコア。 |
+|   controlscores | [controlscore](controlscore.md)コレクション  |   一連のコントロールのテナントスコアを含みます。   |
 
 
 ## <a name="relationships"></a>リレーションシップ

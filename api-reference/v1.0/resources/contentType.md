@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561356"
 ---
 # <a name="contenttype-resource-type"></a>ContentType リソースの種類
 
@@ -48,15 +48,15 @@ ms.locfileid: "27876735"
 
 | プロパティ名     | 種類                 | 説明
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | アイテムの説明テキストです。
+| **説明**   | string               | アイテムの説明テキストです。
 | **group**         | string               | このコンテンツ タイプが属するグループの名前。 関連するコンテンツ タイプを整理するのに役立ちます。
-| **hidden**        | boolean              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
+| **hidden**        | ブール値              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
 | **id**            | string               | コンテンツ タイプの一意識別子。
 | **inheritedFrom** | [itemReference][]    | このコンテンツ タイプが、別のスコープ (サイトなど) から継承されている場合、そのコンテンツ タイプが定義されているアイテムへの参照を提供します。
 | **name**          | string               | コンテンツ タイプの名前。
 | **order**         | [contentTypeOrder][] | 選択 UI でコンテンツ タイプを表示する順番を指定します。
 | **parentId**      | string               | コンテンツ タイプの一意識別子。
-| **readOnly**      | boolean              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
+| **readOnly**      | ブール値              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
 | **sealed**        | boolean              | `true` である場合、ユーザーまたはプッシュダウン操作ではコンテンツ タイプを変更できません。 サイト コレクションの管理者だけがコンテンツ タイプのシールまたはシール解除ができます。
 
 ## <a name="relationships"></a>リレーションシップ

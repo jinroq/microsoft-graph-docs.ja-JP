@@ -1,24 +1,24 @@
 ---
 title: agreementFileData リソースの種類
-description: Azure Active Directory の blob ファイルの使用許諾契約書の条項を (Azure AD) を表します。
+description: azure Active Directory (azure AD) 利用規約ファイルの blob を表します。
 localization_priority: Normal
 ms.openlocfilehash: bc0e7395875f64a3ee52e43b26da1a2df6276c9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517030"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544123"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory の blob ファイルの使用許諾契約書の条項を (Azure AD) を表します。
+azure Active Directory (azure AD) 利用規約ファイルの blob を表します。
 
 ## <a name="properties"></a>プロパティ
 | メソッド       | 戻り値の型 | 説明 |
 |:-------------|:------------|:------------|
-|data|Binary|PDF 文書の使用の条件を表すデータです。 読み取り専用です。|
+|data|Binary|使用条件を表すデータ。 PDF ドキュメント。 読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 

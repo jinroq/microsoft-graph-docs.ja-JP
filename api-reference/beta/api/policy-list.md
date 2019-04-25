@@ -1,15 +1,15 @@
 ---
-title: リスト ポリシー
-description: ディレクトリ内のすべてのポリシー オブジェクトを取得します。
+title: リストポリシー
+description: ディレクトリ内のすべてのポリシーオブジェクトを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 292eb457b87629d0034b97b3c781d75adc0da4e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538711"
 ---
-# <a name="list-policies"></a>リスト ポリシー
+# <a name="list-policies"></a>リストポリシー
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ GET /policies
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答の本体のコードと[ポリシー](../resources/policy.md)オブジェクトを応答します。 それ以外の場合.
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[ポリシー](../resources/policy.md)オブジェクトを返します。 失敗した場合...
 
 ## <a name="example"></a>例
 次の例では、すべてのポリシーを取得します。

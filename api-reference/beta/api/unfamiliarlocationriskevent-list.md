@@ -1,19 +1,19 @@
 ---
 title: リスト unfamiliarLocationRiskEvents
-description: Unfamiliarlocationriskevent オブジェクトのリストを取得します。
+description: unfamiliarlocationriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 10a56b27cd29bb674dbbd97c522ac0b92671b7eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536798"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>リスト unfamiliarLocationRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unfamiliarlocationriskevent オブジェクトのリストを取得します。
+unfamiliarlocationriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -39,7 +39,7 @@ GET /unfamiliarLocationRiskEvents
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

@@ -1,26 +1,26 @@
 ---
 title: リソースを取得する
-description: ファイルまたは画像のリソース オブジェクトのバイナリ データを取得します。
+description: ファイルまたはイメージリソースオブジェクトのバイナリデータを取得します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 9937040d9e53213946df9eb31cf9136bcfda7c71
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946064"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568041"
 ---
 # <a name="get-resource"></a>リソースを取得する
 
-ファイルまたは画像の[リソース](../resources/resource.md) オブジェクトのバイナリ データを取得します。
+ファイルまたはイメージ[リソース](../resources/resource.md)オブジェクトのバイナリデータを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
-|委任 (個人用 Microsoft アカウント) | Notes.Read、Notes.ReadWrite    |
+|委任 (職場または学校のアカウント) | メモ読み取り、メモ書き込み、メモ (すべて)、メモ (すべて)    |
+|委任 (個人用 Microsoft アカウント) | メモ. 読み取り、メモ書き込み    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -42,9 +42,9 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で画像またはファイルのバイナリ データを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で画像またはファイルバイナリデータを返します。
 
-注:残りのページのコンテンツと同様、画像を取得するには承認が必要となるため、ブラウザーでは画像は直接表示されません。
+注: 画像はブラウザーで直接表示されません。これは、残りのページコンテンツのように、それらを取得するために承認を必要とするからです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

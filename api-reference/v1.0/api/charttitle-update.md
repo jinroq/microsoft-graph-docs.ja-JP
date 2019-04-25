@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 08feb358af9ee67dda6f7da37b10c9788b83a224
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566249"
 ---
 # <a name="update-charttitle"></a>charttitle オブジェクトを更新する
 
@@ -40,12 +40,12 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/title
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
-|text|文字列|グラフのタイトルのテキストを表します。|
+|text|string|グラフのタイトルのテキストを表します。|
 |visible|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartTitle](../resources/charttitle.md)オブジェクトを更新します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartTitle](../resources/charttitle.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

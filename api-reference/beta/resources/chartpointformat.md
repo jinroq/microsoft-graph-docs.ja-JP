@@ -1,21 +1,21 @@
 ---
 title: ChartPointFormat リソースの種類
-description: グラフのポイントの書式設定オブジェクトを表します。
+description: グラフのポイントのオブジェクトの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: da06bd0e399d095f525d5feaeb47b2d27d281cbc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543827"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グラフのポイントの書式設定オブジェクトを表します。
+グラフのポイントのオブジェクトの書式設定を表します。
 
 
 ## <a name="methods"></a>メソッド
@@ -24,7 +24,7 @@ ms.locfileid: "29642990"
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|グラフの塗りつぶしの書式を表します。これには背景の書式設定情報などがあります。値の取得のみ可能です。|

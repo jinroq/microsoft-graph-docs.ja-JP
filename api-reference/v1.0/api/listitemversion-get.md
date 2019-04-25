@@ -1,16 +1,16 @@
 ---
-title: ListItemVersion リソースを取得します。
+title: listitemversion リソースを取得する
 description: ListItem の特定のバージョンのメタデータを取得します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3e45cf260a9f526a7309c63791ed2cb6b8196e45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541396"
 ---
-# <a name="get-a-listitemversion-resource"></a>ListItemVersion リソースを取得します。
+# <a name="get-a-listitemversion-resource"></a>listitemversion リソースを取得する
 
 [ListItem](../resources/listitem.md) の特定のバージョンのメタデータを取得します。
 

@@ -1,13 +1,13 @@
 ---
 title: multiValueLegacyExtendedProperty を取得する
-description: 展開 ' です。
+description: '[] を展開します。'
 localization_priority: Normal
 ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540262"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
@@ -22,11 +22,11 @@ ms.locfileid: "29641086"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [イベント](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [メッセージ](../resources/message.md) 
 - [Outlook タスク](../resources/outlooktask.md)
-- [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)
+- [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
 次のグループ リソースもサポートされます。
 
@@ -37,62 +37,69 @@ ms.locfileid: "29641086"
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-拡張プロパティを受信するリソースに応じて、アクセス許可が委任された (アプリケーション) を要求を入力する、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、拡張プロパティの取得元のリソースと、要求したアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可が最低限必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| グループ [calendar](../resources/calendar.md) | Group.Read.All | 使用不可 | 使用不可 |
-| グループ [event](../resources/event.md) | Group.Read.All | 使用不可 | 使用不可 |
-| グループ [post](../resources/post.md) | Group.Read.All | サポートされていません | Group.Read.All |
+| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| グループ [calendar](../resources/calendar.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+| グループ [event](../resources/event.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+| グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポートされていません |
-| [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
+| [メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポート対象外 |
+| [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
  
 ## <a name="http-request"></a>HTTP 要求
 
 **id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
-**メッセージ**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**MailFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**mailFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**イベント**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**カレンダー**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**calendar** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**連絡**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contact** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**ContactFolder**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**contactFolder** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**OutlookTask**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktask**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -101,7 +108,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**OutlookTaskFolder**インスタンスを取得します。<!-- { "blockType": "ignored" } -->
+**outlooktaskfolder**インスタンスを取得します。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,12 +117,14 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループ**イベント**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループの**投稿**のインスタンスを取得します。<!-- { "blockType": "ignored" } -->
+グループ **post** インスタンスの取得:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')

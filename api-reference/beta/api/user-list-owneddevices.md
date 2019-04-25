@@ -1,17 +1,17 @@
 ---
-title: ownedDevices を一覧表示する
+title: LownedDevices を一覧表示する
 description: ユーザーが所有しているデバイスの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8c9ba8f48eb62b73408f956badb53560f3e9550b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528299"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544334"
 ---
-# <a name="list-owneddevices"></a>ownedDevices を一覧表示する
+# <a name="list-owneddevices"></a>LownedDevices を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

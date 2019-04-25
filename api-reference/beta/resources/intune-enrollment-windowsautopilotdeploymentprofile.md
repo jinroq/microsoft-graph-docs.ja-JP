@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3f82d48422ecff99f106d4a62b07ac8532cb546c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546998"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile リソースの種類
 
@@ -23,23 +23,23 @@ Windows 自動操縦展開プロファイル
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[windowsAutopilotDeploymentProfile を取得する](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[アクションの割り当て](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|プロファイルキー|
+|id|String|プロファイルキー|
 |displayName|String|プロファイルの名前|
-|説明|String|プロファイルの説明|
+|description|String|プロファイルの説明|
 |language|String|デバイスで構成されている言語|
 |createdDateTime|DateTimeOffset|プロファイルの作成時刻|
 |lastModifiedDateTime|DateTimeOffset|プロファイルの最終変更日時|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|不在時の環境設定|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|登録の状態画面の設定|
-|extractHardwareHash|Boolean|プロファイルのハードウェアハッシュ抽出|
-|deviceNameTemplate|文字列|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。|
+|extractHardwareHash|ブール値|プロファイルのハードウェアハッシュ抽出|
+|deviceNameTemplate|String|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|このプロファイルを適用できる自動操縦デバイスの種類。 可能な値は、`windowsPc`、`surfaceHub2` です。|
-|enableホワイトグローブ|Boolean|プロファイルの自動操縦白の手袋を有効にします。|
+|enableホワイトグローブ|ブール値|プロファイルの自動操縦白の手袋を有効にします。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

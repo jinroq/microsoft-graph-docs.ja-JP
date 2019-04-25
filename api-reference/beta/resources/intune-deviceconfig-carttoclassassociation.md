@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b756e4b9f5bd00a812eba65948c415a5f0719c20
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793099"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549546"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation リソースの種類
 
@@ -36,9 +36,9 @@ ms.locfileid: "31793099"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|管理者が指定した、デバイス構成の名前。|
-|説明|String|CartToClassAssociation の管理者提供の説明。|
-|devicecartids|String コレクション|クラスに関連付けられるデバイスカートの識別子。|
-|classroomIds|String コレクション|デバイスカートに関連付ける教室の識別子。|
+|description|String|CartToClassAssociation の管理者提供の説明。|
+|devicecartids|String collection|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

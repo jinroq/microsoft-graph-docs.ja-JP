@@ -1,31 +1,31 @@
 ---
-title: サイトを列挙します。
-description: 指定されたフィルター条件に一致し、オプションのクエリを実行している組織で利用できる [サイト] の一覧を表示します。
+title: サイトの列挙
+description: 指定したフィルター条件とクエリオプションに一致する組織内で利用可能な [sites] [] を一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545200"
 ---
-# <a name="enumerate-sites"></a>サイトを列挙します。
+# <a name="enumerate-sites"></a>サイトの列挙
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定されたフィルター条件に一致し、オプションのクエリを実行する組織で使用可能な[サイト][]を一覧表示します。
+指定したフィルター条件とクエリオプションに一致する組織内の使用可能な[サイト][]を一覧表示します。
 
-次のクエリ オプションのみが現在サポートされています。
+次のクエリオプションのみが現在サポートされています。
 
-| フィルター ステートメント             | SELECT ステートメント        | 説明
+| Filter ステートメント             | select ステートメント        | 説明
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | 組織内のすべてのルート レベルのサイト コレクションの一覧を表示します。 各地域のホーム サイトを発見するのに便利です。
+|`siteCollection/root ne null` | `siteCollection,webUrl` | 組織内のすべてのルートレベルのサイトコレクションを一覧表示します。 各地域のホームサイトを検出するのに役立ちます。
 
-さらに、特定のキーワードに一致するサイトを検索するのに 'と、サイト' のコレクションに対して**[検索][]** クエリを使用することがあります。
+また、'/サイト ' コレクションに対して**[検索][]** クエリを使用して、特定のキーワードに一致するサイトを検索することもできます。
 
-[Search]: site-search.md
-[sites]: ../resources/site.md
+[探す]: site-search.md
+[サイト]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
 

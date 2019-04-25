@@ -6,11 +6,11 @@ title: ファイルをリンクで共有する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480692"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548314"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -210,7 +210,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 * 組織に既定の有効期限ポリシーが適用されている場合を除き、このアクションを使用して作成されたリンクに期限はありません。
 * リンクはそのアイテムの共有アクセス許可に表示され、アイテムの所有者はそれを削除できます。

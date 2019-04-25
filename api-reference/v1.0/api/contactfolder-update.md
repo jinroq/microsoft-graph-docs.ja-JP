@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 39a0869757fe42fd4502b194b84c3fe3e3edad68
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566109"
 ---
 # <a name="update-contactfolder"></a>Update contactfolder
 
@@ -38,7 +38,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|

@@ -3,11 +3,11 @@ title: privilegedRoleSettings の更新
 description: 指定した役割設定の役割設定を更新します。 privilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
 ms.openlocfilehash: 779b0d4cd61672c90c103ebb2545cb75324273fd
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31560116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538663"
 ---
 # <a name="update-privilegedrolesettings"></a>privilegedRoleSettings の更新
 
@@ -45,16 +45,16 @@ PUT /privilegedRoles/{id}/settings
 |プロパティ|型|説明|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|役割がアクティブ化される期間。 必須。|
-|id|string|ロール設定の一意の識別子。 読み取り専用です。 必須です。|
+|id|string|ロール設定の一意の識別子。 読み取り専用。 必須です。|
 |isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。 必須です。|
-|lastglobaladmin|Boolean|内部使用のみ。|
+|lastglobaladmin|ブール値|内部使用のみ。|
 |maxelavationduration|duration|アクティブ化されたロールの最大期間。 必須です。|
-|mfaonelevation|Boolean|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須です。|
+|mfaonelevation|ブール値|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須です。|
 |minElevationDuration|duration|アクティブ化されたロールの最小期間。 必須です。|
-|notificationToUserOnElevation|Boolean|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須です。|
-|ticketingInfoOnElevation|Boolean|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須です。|
-|approvalonelevation|Boolean|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須です。|
-|承認の検証 ds|String コレクション|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
+|notificationToUserOnElevation|ブール値|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須です。|
+|ticketingInfoOnElevation|ブール値|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須です。|
+|approvalonelevation|ブール値|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須です。|
+|承認の検証 ds|String collection|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
 
 ## <a name="response"></a>応答
 

@@ -1,25 +1,25 @@
 ---
-title: プログラムのリスト programControls
-description: Azure AD にアクセスが機能を確認し、すべてのデバッギング オブジェクト、特定のプログラムにリンクされています。
+title: プログラムの programcontrols を一覧表示する
+description: Azure AD access レビュー機能で、特定のプログラムにリンクされているすべての programcontrol オブジェクトを一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508266"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546445"
 ---
-# <a name="list-programcontrols-of-a-program"></a>プログラムのリスト programControls
+# <a name="list-programcontrols-of-a-program"></a>プログラムの programcontrols を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、すべての[デバッギング](../resources/programcontrol.md)オブジェクト、特定のプログラムにリンクされている一覧を表示します。
+Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、特定のプログラムにリンクされているすべての[programcontrol](../resources/programcontrol.md)オブジェクトを一覧表示します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読むことを許可するディレクトリの役割でもあります。 |
+|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -31,13 +31,13 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
-| Authorization | string | ベアラー トークン 必須です。 |
+| Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体を提供する必要がありません。
+要求本文を指定する必要はありません。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200, OK`応答コードおよび応答の本文の[デバッギング](../resources/programcontrol.md)オブジェクトの配列。
+成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[programcontrol](../resources/programcontrol.md)オブジェクトの配列を返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

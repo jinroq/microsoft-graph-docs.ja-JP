@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1eb9643fc1b4c8c4ec858fd00b0a65a40c225307
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551723"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31791265"
 |メンバー|値|説明|
 |:---|:---|:---|
 |拒否|.0|アプリと、ブロックされる対応会社のデータ|
-|ふき|1-d|消去するアプリと対応する会社のデータ|
-|示す|pbm-2|警告対象のアプリと対応するユーザー|
+|ふき|1 |消去するアプリと対応する会社のデータ|
+|示す|2 |警告対象のアプリと対応するユーザー|
 
 
 

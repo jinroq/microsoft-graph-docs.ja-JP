@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: abc2a8c0f905d69b613ef12bca308d1d0f72d69c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552304"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
@@ -23,7 +23,7 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[mobileApps のリスト](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[MobileApp の取得](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[アクションの割り当て](../api/intune-apps-mobileapp-assign.md)|なし|まだ文書化されていません|
 |[getMobileAppCount 関数](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|まだ文書化されていません|
 |[getTopMobileApps 関数](../api/intune-apps-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|まだ文書化されていません|
@@ -35,21 +35,21 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
-|説明|String|アプリの説明。|
-|publisher|文字列|アプリの発行元。|
+|description|String|アプリの説明。|
+|publisher|String|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
 |isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。|
-|informationUrl|文字列|詳細情報の URL。|
-|owner|文字列|アプリの所有者。|
-|developer|文字列|アプリの開発者。|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。|
+|informationUrl|String|詳細情報の URL。|
+|owner|String|アプリの所有者。|
+|developer|String|アプリの開発者。|
 |notes|String|アプリ用のメモ。|
 |uploadState|Int32|アップロード状態。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。|
-|roleScopeTagIds|String コレクション|このモバイルアプリの範囲タグ id のリスト。|
+|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。|
 |dependentappcount|Int32|子アプリが持つ依存関係の合計数。|
 
 ## <a name="relationships"></a>リレーションシップ

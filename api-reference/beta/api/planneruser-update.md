@@ -1,21 +1,21 @@
 ---
-title: PlannerUser を更新します。
-description: PlannerUser オブジェクトのプロパティを更新します。 追加またはユーザーのお気に入りのプランの一覧からプランを削除するこの操作を使用することができ、ユーザーを計画することを示すには、最近表示しました。
+title: プランのユーザーを更新する
+description: プランのユーザーオブジェクトのプロパティを更新します。 この操作を使用して、ユーザーのお気に入りのプランの一覧からプランを追加または削除したり、ユーザーが最近表示したプランを示したりすることができます。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 95c631d39fb650dea0b87871bdd10d92a3ab31eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538757"
 ---
-# <a name="update-planneruser"></a>PlannerUser を更新します。
+# <a name="update-planneruser"></a>プランのユーザーを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PlannerUser](../resources/planneruser.md)オブジェクトのプロパティを更新します。 追加またはユーザーのお気に入りのプランの一覧からプランを削除するこの操作を使用することができ、ユーザーを計画することを示すには、最近表示しました。
+[プランのユーザー](../resources/planneruser.md)オブジェクトのプロパティを更新します。 この操作を使用して、ユーザーのお気に入りのプランの一覧からプランを追加または削除したり、ユーザーが最近表示したプランを示したりすることができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -34,25 +34,25 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}。必須。|
-| If-Match  | 最後の既知の ETag 値を更新する**plannerUser**のです。 必須です。|
+| Authorization  | ベアラー {code}。 必須です。|
+| If-Match  | 更新する**プラン**の最後の既知の ETag 値。 必須です。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|ユーザーは、お気に入りとしてマークする計画への参照が含まれているコレクションに変更します。|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|ユーザーが最近閲覧した計画への参照を含むコレクションを変更します。|
+|お気に入りプランの参照|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|ユーザーがお気に入りとしてマークしたプランへの参照が含まれているコレクションに対する変更。|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|ユーザーが最近表示したプランへの参照が含まれているコレクションに対する変更。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[plannerUser](../resources/planneruser.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[プランのユーザー](../resources/planneruser.md)オブジェクトを返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求の例を次に示します。 この要求では、ユーザーのために ID「jd8S5gOaFk2S8aWCIAJz42QAAxtD」と「次のリリースの説明」プランを追加し、お気に入りプラン一覧から ID が"L7RmQAGX2q-7oTB5aMIAE2rVo-1N"計画を削除します。
-計画"jd8S5gOaFk2S8aWCIAJz42QAAxtD"の最後の表示時間も更新されます。
+要求の例を次に示します。 この要求は、"jd8S5gOaFk2S8aWCIAJz42QAAxtD" という id を持つプラン "次のリリースディスカッション" をユーザーのお気に入りとして追加し、"7oTB5aMIAE2rVo-1n-L7RmQAGX2q" という id のプランを [お気に入りのプラン] の一覧から削除します。
+また、"jd8S5gOaFk2S8aWCIAJz42QAAxtD" プランの最終ビュー時刻も更新します。
 <!-- {
   "blockType": "ignored",
   "name": "update_planneruser"

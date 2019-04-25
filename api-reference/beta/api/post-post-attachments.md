@@ -1,15 +1,15 @@
 ---
 title: 添付ファイルを追加する
-description: 投稿に添付ファイルを追加するのにには、この API を使用します。 そこから
+description: 添付ファイルを投稿に追加する場合に、この API を使用します。 存在するため
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4349673b5400674394db33540f09a407a0a6af33
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538739"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -35,7 +35,8 @@ ms.locfileid: "29527893"
 |アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[転記](../resources/post.md)グループの[会話](../resources/conversation.md)に属している[スレッド](../resources/conversationthread.md)での添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -141,8 +142,8 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
 
 ##### <a name="request"></a>要求
-ここでは、既存の投稿の添付ファイル、参照を追加する要求の例です。
-添付ファイルは、OneDrive 上のフォルダーをポイントします。
+既存の投稿に参照添付ファイルを追加する要求の例を次に示します。
+添付ファイルは、OneDrive 上のフォルダーを指します。
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_post",
@@ -165,7 +166,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>応答
-ここでは、完全な応答の例です。
+完全な応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true,

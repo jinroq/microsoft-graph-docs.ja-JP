@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566340"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31803907"
 |allowedResourceActions|文字列コレクション|許可されるアクション|
 |notAllowedResourceActions|文字列コレクション|許可されていないアクション。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539023"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Update plannerAssignedToTaskBoardTaskFormat
 
@@ -41,8 +41,8 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|担当者、タスク掲示板のビューでタスクを注文するために使用するヒントのディクショナリ。 タスクが割り当てられているユーザーの 1 つは、各エントリのキーと値は、order ヒントです。 各値の形式が定義されている [プランナー] の [順序のヒントを使用して (../resources/planner_order_hint_format.md)。|
-|unassignedOrderHint|String|すべてのユーザーにタスクが割り当てられていない場合、または orderHintsByAssignee の辞書は、タスクのユーザーの order ヒントを提供していない場合、担当者の作業掲示板のビューでタスクを注文するために使用するヒントの値が割り当てられます。 [プランナーで使用する順序のヒント](../resources/planner-order-hint-format.md)の形式が定義されています。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|タスクボードの担当者ビューでタスクの順序付けに使用されるヒントの辞書。 各エントリのキーは、タスクが割り当てられているユーザーの1人で、値は order ヒントです。 各値の形式は、[プランナーの order ヒントを使用して定義されています (../resources/プラン (英語) (英語)。|
+|unassignedOrderHint|String|タスクが他のユーザーに割り当てられていない場合、または orderHintsByAssignee 辞書がタスクを割り当てられているユーザーのための order ヒントを提供していない場合に、タスクボードの担当者ビューでタスクを順序付けるために使用されるヒント値。 この形式は、 [Planner の order ヒントを使用し](../resources/planner-order-hint-format.md)て定義されます。|
 
 ## <a name="response"></a>応答
 

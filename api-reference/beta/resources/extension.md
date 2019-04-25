@@ -3,15 +3,13 @@ title: 拡張子リソースの種類
 description: OData v4 のオープン型 openTypeExtension をサポートする抽象型。
 localization_priority: Normal
 ms.openlocfilehash: b261ceeff4639b8a602edbb411b34ab19d46ea8e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542637"
 ---
 # <a name="extension-resource-type"></a>拡張子リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 OData v4 のオープン型 [openTypeExtension](opentypeextension.md) をサポートする抽象型。
 
@@ -20,7 +18,10 @@ OData v4 のオープン型 [openTypeExtension](opentypeextension.md) をサポ�
 以下は、リソースの JSON 表記です
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -38,7 +39,7 @@ OData v4 のオープン型 [openTypeExtension](opentypeextension.md) をサポ�
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -49,15 +50,10 @@ OData v4 のオープン型 [openTypeExtension](opentypeextension.md) をサポ�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "extension resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

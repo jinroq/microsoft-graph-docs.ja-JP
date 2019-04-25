@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: ファイル
+title: File
 localization_priority: Normal
 ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480410"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547635"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "30480410"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類                    | 説明                                                                                                                                      |
+| プロパティ | 型                    | 説明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | hashes   | [HashesType](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
 | mimeType | string                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |

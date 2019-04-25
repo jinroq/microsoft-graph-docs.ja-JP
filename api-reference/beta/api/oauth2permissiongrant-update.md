@@ -1,19 +1,19 @@
 ---
-title: OAuth2PermissionGrant を更新します。
-description: OAuth2PermissionGrant オブジェクトのプロパティを更新します。
+title: oAuth2PermissionGrant の更新
+description: oAuth2PermissionGrant オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: fb990c56b4d7ae62ac35935a91d69688b96bff28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540206"
 ---
-# <a name="update-oauth2permissiongrant"></a>OAuth2PermissionGrant を更新します。
+# <a name="update-oauth2permissiongrant"></a>oAuth2PermissionGrant の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OAuth2PermissionGrant オブジェクトのプロパティを更新します。
+oAuth2PermissionGrant オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -43,7 +43,7 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|scope|String| OAuth 2.0 のアクセス トークンには、リソース アプリケーションが期待するスコープの要求の値を指定します。 |
+|scope|String| OAuth 2.0 アクセストークンでリソースアプリケーションが想定するスコープ要求の値を指定します。 |
 
 ## <a name="response"></a>応答
 

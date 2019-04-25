@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 0ba81a39718b290e1408589e2f4a540f323a93dc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936824"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565451"
 ---
 # <a name="message-copy"></a>メッセージ: copy
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 | ヘッダー | 値 |
 |:-------|:------|
 | Authorization | `Bearer {token}`. 必須。 |
-| Content-Type | `application/json`. 必須。 |
+| Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -49,11 +49,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-|destinationId|String|移動先のフォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
+|destinationId|String|宛先フォルダーの ID、または既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[メッセージ](../resources/message.md)リソース。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[メッセージ](../resources/message.md)リソースを返します。
 
 ## <a name="example"></a>例
 
@@ -80,7 +80,7 @@ Content-length: 44
 
 以下は、応答の例です。
 
-> **注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

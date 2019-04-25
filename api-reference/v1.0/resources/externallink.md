@@ -1,17 +1,17 @@
 ---
-title: externalLink リソースの種類
-description: OneNote のページまたはノートブックを開く URL です。
+title: externallink リソースの種類
+description: OneNote のページまたはノートブックを開く url。
 localization_priority: Normal
 ms.openlocfilehash: 8151a0579ccbc0f151fba4cba1bfc8391ccfe123
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565059"
 ---
-# <a name="externallink-resource-type"></a>externalLink リソースの種類
+# <a name="externallink-resource-type"></a>externallink リソースの種類
 
-OneNote のページまたはノートブックを開く URL です。
+OneNote のページまたはノートブックを開く url。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -32,9 +32,9 @@ OneNote のページまたはノートブックを開く URL です。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|href|String|そのリンクの URL です。|
+|href|String|リンクの url。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

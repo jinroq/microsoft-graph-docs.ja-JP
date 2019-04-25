@@ -1,19 +1,19 @@
 ---
-title: 推移的なメンバーのグループ一覧
-description: グループのメンバーの一覧を取得します。 グループがメンバーとしては、ユーザー、デバイス、およびその他のグループを持つことができます。 この操作は推移的もすべての入れ子にされたメンバーの一覧を返します。
+title: グループ推移性のメンバーを一覧表示する
+description: グループのメンバーの一覧を取得します。 グループには、ユーザー、デバイス、およびその他のグループをメンバーとして含めることができます。 この操作は推移的であり、入れ子にされたすべてのメンバーのフラットな一覧も返します。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: dd6417916a7d1e2f79735db3dce4f1c3465d6577
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534711"
 ---
-# <a name="list-group-transitive-members"></a>推移的なメンバーのグループ一覧
+# <a name="list-group-transitive-members"></a>グループ推移性のメンバーを一覧表示する
 
-グループのメンバーの一覧を取得します。 グループがメンバーとしては、ユーザー、デバイス、およびその他のグループを持つことができます。 この操作は推移的もすべての入れ子にされたメンバーの一覧を返します。
+グループのメンバーの一覧を取得します。 グループには、ユーザー、デバイス、およびその他のグループをメンバーとして含めることができます。 この操作は推移的であり、入れ子にされたすべてのメンバーのフラットな一覧も返します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,11 +21,11 @@ ms.locfileid: "29694504"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.AccessAsUser.All、User.ReadBasic.All、User.Read.All    |
+|委任 (職場または学校のアカウント) | directory.accessasuser.all。 all、user. all、all、all、all、all、user. all    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、User.Read.All |
+|アプリケーション | ディレクトリ。すべてのユーザーを取得します。 |
 
->**注:** 非表示のメンバーシップのグループのメンバーを列挙するには、Member.Read.Hidden アクセス許可が必要です。
+>**注:** 非表示のメンバーシップグループのメンバーを一覧表示するには、"hidden" アクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 

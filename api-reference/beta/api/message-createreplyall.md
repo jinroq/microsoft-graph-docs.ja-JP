@@ -1,15 +1,15 @@
 ---
 title: 'メッセージ: createReplyAll'
-description: 'コメントを含めるか、メッセージのプロパティを更新するすべての返信メッセージの下書きを作成します。 '
+description: '全員に返信メッセージの下書きを作成してコメントを含めるか、メッセージのプロパティを更新します。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540528"
 ---
 # <a name="message-createreplyall"></a>メッセージ: createReplyAll
 
@@ -19,9 +19,9 @@ ms.locfileid: "29528579"
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- **ReplyTo**プロパティが元のメッセージのインターネット メッセージ フォーマット ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに指定されている場合は、内の受信者に返信を送信する必要があります、  
-**replyTo**と**toRecipients**プロパティと**から**と**toRecipients**プロパティで受信者ではありません。 
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- 元のメッセージで**replyTo**プロパティが指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、受信者に返信を送信する必要があります。  
+**replyTo**プロパティ**** と torプロパティのプロパティ。これは、 **from**および**torの piの**各プロパティの受信者ではありません。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -53,14 +53,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
-|message|[message](../resources/message.md)|全員に返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|全員に返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-次の例では、1 回の **CreateReplyAll** 呼び出しで全員に返信する下書きを作成し、添付ファイルをコメントに追加します。
+次の例では、全員に返信する下書きを作成し、1つの**createreplyall**呼び出しで添付ファイルとコメントをすべて追加します。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {

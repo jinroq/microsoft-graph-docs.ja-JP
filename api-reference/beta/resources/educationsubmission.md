@@ -1,60 +1,60 @@
 ---
 title: educationSubmission リソースの種類
-description: 提出書類は、割り当てによって所有されます。 提出書類は、リソースを表しますが、個人 (またはグループ) および有効にするに割り当て、グレードとフィードバックが返されます。
+description: 提出物は、割り当てによって所有されます。 提出は、個人 (またはグループ) が割り当てに対して有効になるリソースと、返される成績/フィードバックを表します。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521426"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542900"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提出書類は、割り当てによって所有されます。 提出書類は、リソースを表しますが、個人 (またはグループ) および有効にするに割り当て、グレードとフィードバックが返されます。
-割り当てを発行する際の提出書類が自動的に作成します。 提出書類は、2 つのリソースのリストを所有しています。 リソースでは、送信済みのリソースがアクティブになっている受講者がリソースを表すときに、領域を使用するユーザ/グループを表します。  
+提出物は、割り当てによって所有されます。 提出は、個人 (またはグループ) が割り当てに対して有効になるリソースと、返される成績/フィードバックを表します。
+割り当てが発行されると、提出物は自動的に作成されます。 送信では、2つのリソースリストが所有されています。 リソースは、送信されたリソースが、学生が積極的に有効にしたリソースを表している間、ユーザー/グループの作業領域を表します。  
 
->**注:** 状態は読み取り専用およびオブジェクトがアクションを使用してワークフローを移動します。 
+>**注:** 状態は読み取り専用で、オブジェクトはアクションによってワークフローを通じて移動されます。 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[EducationSubmission を取得します。](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |**EducationSubmission**オブジェクトのプロパティと関係を参照してください。|
-|[ボックスの一覧のリソース](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **EducationSubmissionResource**オブジェクトのコレクションを取得します。|
-|[リスト submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **EducationSubmissionResource**オブジェクトのコレクションを取得します。|
-|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |**EducationSubmission**オブジェクトを更新します。 |
-|[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教師は、生徒に成績とフィードバックを表示できることを示す戻り値を使用します。|
-|[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|受講者にするには、割り当ての使用を送信します。 これは、グレーディングの**submittedResources**フォルダーにリソースをコピーし、ステータスを更新します。|
-|[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|受講者は、作業から提出された提出書類の状態に移動するのには、unsubmit を使用します。 これは、グレーディングの**workingResources**フォルダーにリソースをコピーし、ステータスを更新します。|
+|[educationSubmission を取得する](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |**educationSubmission**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[リソースを一覧表示する](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **educationSubmissionResource**オブジェクトのコレクションを取得します。|
+|[submittedresources を一覧表示する](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **educationSubmissionResource**オブジェクトのコレクションを取得します。|
+|[更新](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |**educationSubmission**オブジェクトを更新します。 |
+|[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教師は、return を使用して、成績/フィードバックを学生に表示できることを示します。|
+|[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生は、submit を使用して割り当てを有効にします。 これにより、リソースが [対象] の [ **submittedresources** ] フォルダーにコピーされ、状態が更新されます。|
+|[送信取り消し](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生は、未送信を使用して、提出物の状態を送信前から作業に移行します。 これにより、リソースが**workingResources**フォルダーにコピーされて、状況を更新して更新します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|feedback|[educationFeedback](educationfeedback.md)|受講者に、先生のノートを保存する [フィードバック] プロパティを保持します。|
-|grade|[educationAssignmentGrade](educationassignmentgrade.md)|教師は、この送信に割り当てられますグレード情報を保持するには。|
-|id|String| 読み取り専用。|
-|Recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|この提出書類に割り当てられました。|
-|releasedBy|[identitySet](identityset.md)|リリースには、この送信のステータスを移動したユーザーです。|
-|releasedDateTime|DateTimeOffset|提出書類がリリースされた時点での瞬間。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|返す|[identitySet](identityset.md)|返されるには、この送信のステータスを移動したユーザーです。|
-|returnedDateTime|DateTimeOffset|提出書類が返された瞬間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|String|この送信のためのリソースのすべてのファイル、フォルダーを格納する必要があります。|
+|feedback|[educationFeedback](educationfeedback.md)|教師のメモを生徒に返すフィードバックプロパティを保持します。|
+|grade|[educationAssignmentGrade](educationassignmentgrade.md)|教師がこの送信に割り当てる成績情報を保持します。|
+|id|String| 読み取り専用です。|
+|受信者|[educationSubmissionRecipient](educationsubmissionrecipient.md)|この提出物が割り当てられるユーザー。|
+|releasedby|[identitySet](identityset.md)|この提出の状態をリリース済みに移動したユーザー。|
+|releaseddatetime|DateTimeOffset|提出物がいつリリースされたかを示します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|returnedBy|[identitySet](identityset.md)|この提出の状態を取得したユーザー。|
+|returnedDateTime|DateTimeOffset|送信が返された瞬間の時間。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|resourcesFolderUrl|String|この送信のすべてのファイルリソースを格納する必要があるフォルダーです。|
 |status|string| 読み取り専用。 使用可能な値: `working`、`submitted`、`released`、`returned`。|
-|submittedBy|[identitySet](identityset.md)|送信済みの状態に、リソースを移動したユーザーです。|
-|submittedDateTime|DateTimeOffset|提出書類を提出済みの状態に移動したときの時点です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|unsubmittedBy|[identitySet](identityset.md)|リソースを移動したユーザーからは、作業の状態に送信します。|
-|unsubmittedDateTime|DateTimeOffset|移動するとき、提出書類がから送信、正常な状態に瞬間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|submittedby|[identitySet](identityset.md)|リソースを送信済み状態に移行したユーザー。|
+|submitteddatetime|DateTimeOffset|提出された状態に提出された時点の状態。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|未提出者|[identitySet](identityset.md)|提出されたリソースを作業中の状態に移行したユーザー。|
+|非 submitteddatetime|DateTimeOffset|提出物が送信されてから作業中の状態に移行した時点の状態です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|resources|[educationSubmissionResource](educationsubmissionresource.md)コレクション| Null 許容型。|
-|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)コレクション| 読み取り専用です。Null 許容型。|
+|リソース|[educationSubmissionResource](educationsubmissionresource.md)コレクション| Null 許容型。|
+|submittedresources|[educationSubmissionResource](educationsubmissionresource.md)コレクション| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

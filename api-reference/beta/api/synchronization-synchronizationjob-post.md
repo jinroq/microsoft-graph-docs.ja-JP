@@ -1,19 +1,19 @@
 ---
-title: SynchronizationJob を作成します。
-description: 既定同期スキーマに新しい同期ジョブを作成します。 ジョブが無効の状態で作成されます。 呼び出し同期を開始するジョブを開始します。
+title: 同期ジョブの作成
+description: 既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 start ジョブを呼び出して同期を開始します。
 localization_priority: Normal
 ms.openlocfilehash: f41ebe87d8ca935a355c37ea53d1c7bd62b1652e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507916"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545237"
 ---
-# <a name="create-synchronizationjob"></a>SynchronizationJob を作成します。
+# <a name="create-synchronizationjob"></a>同期ジョブの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既定同期スキーマに新しい同期ジョブを作成します。 ジョブが無効の状態で作成されます。 同期を開始する[ジョブを開始する](synchronization-synchronizationjob-start.md)を呼び出します。
+既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 [start ジョブ](synchronization-synchronizationjob-start.md)を呼び出して同期を開始します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,11 +38,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、 [synchronizationJob](../resources/synchronization-synchronizationjob.md)オブジェクトを作成するのに JSON 形式を指定します。 唯一必要なプロパティは、 `templateId`。 `templateId`プロパティで、このアプリケーション、およびサービス プリンシパル用に作成されたテンプレートのいずれかと一致する必要があります。 使用可能なテンプレートを検索するには、[リスト テンプレート](synchronization-synchronizationtemplate-list.md)を使用します。
+要求本文で、作成する[同期ジョブ](../resources/synchronization-synchronizationjob.md)オブジェクトの JSON 表記を指定します。 唯一必要なプロパティは`templateId`です。 この`templateId`プロパティは、このアプリケーション/サービスプリンシパルに対して作成されたテンプレートのいずれかと一致している必要があります。 利用可能なテンプレートを検索するには、[[リストテンプレート](synchronization-synchronizationtemplate-list.md)] を使用します。
 
 ## <a name="response"></a>応答
 
-正常終了した場合、`201 Created`応答コードおよび応答の本文に[synchronizationJob](../resources/synchronization-synchronizationjob.md)オブジェクトです。
+成功した場合は`201 Created` 、応答コードと、応答本文で[同期ジョブ](../resources/synchronization-synchronizationjob.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6d0a69c10f1f0075caee48276bdbc37f6d616f22
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549553"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting リソースの種類
 
@@ -21,8 +21,8 @@ OMA 設定の定義。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|表示名。|
-|説明|String|説明。|
-|omaUri|文字列|OMA。|
+|description|String|説明。|
+|omaUri|文字列型 (String)|OMA。|
 
 ## <a name="relationships"></a>関係
 なし

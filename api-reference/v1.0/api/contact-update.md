@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927906"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566152"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -24,7 +24,8 @@ ms.locfileid: "27927906"
 |アプリケーション | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーの既定の[contactFolder](../resources/contactfolder.md)からです。
+<!-- { "blockType": "ignored" } -->
+ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -48,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |assistantName|String|連絡先のアシスタントの名前。|
 |birthday|DateTimeOffset|連絡先の誕生日です。|
@@ -59,13 +60,13 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|連絡先の子供の名前。|
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|String|連絡先の表示名。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、更新操作の表示名としてです。|
+|displayName|文字列型 (String)|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |generation|String|連絡先の世代。|
 |givenName|String|連絡先の名。|
 |homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|連絡先の自宅住所。|
-|homePhones|String コレクション|連絡先の自宅の電話番号。|
+|homePhones|String collection|連絡先の自宅の電話番号。|
 |imAddresses|String|連絡先のインスタント メッセージング (IM) アドレス。|
 |initials|String|連絡先のイニシャル。|
 |jobTitle|String|連絡先の役職。|
@@ -79,11 +80,11 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|姓|String|連絡先の姓。|
-|タイトル|String|連絡先の肩書。|
+|surname|文字列|連絡先の姓。|
+|title|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
-|yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
 
 ## <a name="response"></a>応答
 

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d0467ed9ac03a1607d575b6eac5f6b3330b68c3c
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542963"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -28,19 +28,19 @@ ms.locfileid: "29690932"
 |[List schools](../api/educationuser-list-schools.md) |[educationSchool](educationschool.md) コレクション| ユーザーがメンバーになっている **educationSchool** オブジェクトのコレクションを取得します。|
 |[Get user](../api/educationuser-get-user.md) |[user](user.md)| この **educationUser** に対応する単純なディレクトリ **user** を取得します。|
 |[Update](../api/educationuser-update.md) | [educationUser](educationuser.md)   |**educationUser** オブジェクトを更新します。 |
-|[Delete](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
+|[削除](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
-|businessPhones|String コレクション|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
+|businessPhones|String collection|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |createdBy|[identitySet](identityset.md)| ユーザーを作成したエンティティ。 |
-|部署|String|ユーザーが働いている部門の名前。$filter をサポートします。|
+|department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|文字列型 (String)|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
-|externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値は `sis`、`manual`、`unkownFutureValue` です。|
+|externalSource|`educationExternalSource`| このユーザーが作成された場所。 使用可能な値は、`sis`、`manual`、`unkownFutureValue` です。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。 読み取り専用。 $filter をサポートします。|
@@ -54,7 +54,7 @@ ms.locfileid: "29690932"
 |primaryRole|string| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。 $filter をサポートします。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md)コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
 |residenceAddress|[physicalAddress](physicaladdress.md)| ユーザーが在住している場所のアドレス。|
-|relatedContacts|[relatedContact](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセットです。  この省略可能なプロパティは、$select 句で指定する必要があり、個々 のユーザーに対してのみ取得できます。|
+|その他の連絡先|その他の[連絡先](relatedcontact.md)コレクション|ユーザーに関連する連絡先のセット。  このオプションのプロパティは $select 句で指定する必要があり、個々のユーザーに対してのみ取得できます。|
 |student|[educationStudent](educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
 |teacher|[educationTeacher](educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|

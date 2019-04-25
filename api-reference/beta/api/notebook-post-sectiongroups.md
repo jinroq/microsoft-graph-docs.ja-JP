@@ -1,21 +1,19 @@
 ---
 title: sectionGroup を作成する
-description: 指定されたノートブックで新しいセクション グループを作成します。
+description: 指定したノートブックに新しいセクショングループを作成します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 998aa16ecf269c072a80bdc8b6e6d28ea9c572fa
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540269"
 ---
 # <a name="create-sectiongroup"></a>sectionGroup を作成する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-指定されたノートブックで新しい[セクション グループ](../resources/sectiongroup.md)を作成します。
+指定したノートブックに新しい[セクショングループ](../resources/sectiongroup.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -46,7 +44,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [sectionGroup](../resources/sectiongroup.md) オブジェクトを返します。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[sectionGroup](../resources/sectiongroup.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -56,7 +54,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
+POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
@@ -70,7 +68,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -81,7 +79,6 @@ Content-length: 305
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "displayName": "name-value",
-  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "createdBy": {
     "user": {
       "id": "id-value",
@@ -99,15 +96,10 @@ Content-length: 305
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/notebook-post-sectiongroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

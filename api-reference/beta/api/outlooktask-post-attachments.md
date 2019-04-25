@@ -1,21 +1,21 @@
 ---
-title: 添付ファイルを作成する
-description: OutlookTask の添付ファイルを追加するのにには、この API を使用します。
+title: 添付ファイルの作成
+description: この API を使用して、outlooktask に添付ファイルを追加します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ae6c420c9c0ccf10df4d2d62a27f4b8c0d857c32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539834"
 ---
 # <a name="create-attachment"></a>添付ファイルを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[添付ファイル](../resources/attachment.md)を[outlookTask](../resources/outlooktask.md)に追加するのにには、この API を使用します。
+この API を使用して、 [outlooktask](../resources/outlooktask.md)に[添付ファイル](../resources/attachment.md)を追加します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type | エンティティの本文内のデータの種類を表す文字列。 必須です。 |
+| Content-Type | エンティティの本文に含まれるデータの種類を表す文字列。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 

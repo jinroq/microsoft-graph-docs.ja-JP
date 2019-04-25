@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e352bd96e5bef9d5400d7b148f1ca0b72a95acd3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796095"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541403"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 列挙型
 
@@ -23,17 +23,17 @@ Miracast チャネルに指定できる値。
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|one|1-d|枚.|
-|two|pbm-2|2つ.|
-|three|1/3|選ん.|
-|four|2/4|本.|
-|five|5|つま.|
-|本|シックス|本.|
-|階層|7|階層.|
-|~|~|~.|
-|9|i-9|9.|
-|9|個|9.|
-|eleven|#|Eleven.|
+|one|1 |枚.|
+|two|2 |2つ.|
+|three|3 |選ん.|
+|four|4 |本.|
+|five|5 |つま.|
+|本|6 |本.|
+|階層|7 |階層.|
+|~|8 |~.|
+|9|9 |9.|
+|9|10  |9.|
+|eleven|11 |Eleven.|
 |thirtySix|36|36|
 |40|40|40|
 |fortyfour|44|44|

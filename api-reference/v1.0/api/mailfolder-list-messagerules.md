@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1026f66efc6e20881be0daac3f419d5a8258051e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941357"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565570"
 ---
 # <a name="list-rules"></a>ルールを一覧表示する
 
@@ -20,7 +20,7 @@ ms.locfileid: "27941357"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | MailboxSettings.Read    |
+|委任 (職場または学校のアカウント) | MailboxSettings.Read    |
 |委任 (個人用 Microsoft アカウント) | MailboxSettings.Read    |
 |アプリケーション | MailboxSettings.Read |
 
@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

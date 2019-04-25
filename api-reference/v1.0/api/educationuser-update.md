@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c93ecd601e941cd68f0b6f8d668775e7de3feef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550043"
 ---
 # <a name="update-educationuser-properties"></a>educationUser プロパティを更新する
 
@@ -36,21 +36,21 @@ PATCH /education/users/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName| String| ユーザーの表示名|
+|displayName| 文字列型 (String)| ユーザーの表示名|
 |givenName| String | 名 |
 |middleName| String | ユーザーのミドル ネーム|
 |surname| String | ユーザーの姓|
 |mail| String| メール アドレス|
 |mobilePhone| String | ユーザーの携帯電話番号 |
-|externalSource|文字列| 可能な値: `sis`、 `manual`、 `enum_sentinel`。|
-|externalSource|文字列| このユーザーが作成された場所。  可能な値: `sis`、 `manual`、 `enum_sentinel`。|
+|externalSource|string| 使用可能な値: `sis`、`manual`、`enum_sentinel`。|
+|externalSource|string| このユーザーが作成された場所。  使用可能な値: `sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーのメール アドレス。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーが在住している場所のアドレス。|
-|primaryRole|文字列| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 可能な値: `student`、 `teacher`、 `enum_sentinel`。|
+|primaryRole|string| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |teacher|[educationTeacher](../resources/educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|
 

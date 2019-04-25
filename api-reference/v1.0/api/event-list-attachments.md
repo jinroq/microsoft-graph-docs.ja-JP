@@ -1,19 +1,19 @@
 ---
 title: 添付ファイルを一覧表示する
-description: イベントに添付された添付ファイル オブジェクトのリストを取得します。
+description: イベントに添付された Attachment オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 2323cc525af1c01c674ac088c65938186749b051
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561461"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
-イベントに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。
+イベントに添付された [Attachment](../resources/attachment.md) オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -24,7 +24,7 @@ ms.locfileid: "27965930"
 |アプリケーション | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーの既定の[予定表](../resources/calendar.md)に[イベント](../resources/event.md)の添付ファイルです。
+ユーザーの既定の[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)の添付ファイル。
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -64,7 +64,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

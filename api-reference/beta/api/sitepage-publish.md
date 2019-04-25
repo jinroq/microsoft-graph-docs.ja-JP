@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/10/2018
-title: '[発行] ページ'
+title: ページの発行
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 5a00a69542c2b59b1b268433b08656c87d194feb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507531"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545240"
 ---
-# <a name="sitepage-publish"></a>sitePage: 発行
+# <a name="sitepage-publish"></a>サイトページ: 発行
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ページのバージョンをすべてのユーザーが使用可能にする[sitePage][]リソースの最新バージョンを公開します。 ページがチェック アウトされている場合は、ページをチェックインし、公開します。 この API の呼び出し元ページがチェック アウトされた場合ページが自動的にチェックインし、公開します。
+[sitepage][]リソースの最新バージョンを発行します。これにより、すべてのユーザーがページのバージョンを使用できるようになります。 ページがチェックアウトされている場合は、ページをチェックインして発行します。 ページがこの API の呼び出し元にチェックアウトされている場合、ページは自動的にチェックインされてから発行されます。
 
 [sitePage]: ../resources/sitepage.md
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/pages/{pageId}/publish
 
 ## <a name="request-body"></a>要求本文
 
-このメッセージには、要求の本体がありません。 送信の要求の本文は無視されます。
+このメッセージには、要求本文がありません。 送信された要求本文は無視されます。
 
 ## <a name="response"></a>応答
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869429"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536468"
 ---
 # <a name="send-mail"></a>メールを送信する
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/sendMail
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |メッセージ|[Message](../resources/message.md)|送信するメッセージです。必須。|
-|SaveToSentItems|ブール値|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。|
+|SaveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。|
 
 新しいメッセージで別のユーザーを呼び出すために、**メンション**を使用する場合は、次のようにします。
 
@@ -156,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>要求 3
-次の例では、カスタムのインターネットメッセージヘッダーを含むメッセージを作成し、メッセージを送信します。
+次の例では、カスタムのインターネット メッセージ ヘッダーでメッセージを作成し、送信します。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

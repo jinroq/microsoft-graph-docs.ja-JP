@@ -1,29 +1,29 @@
 ---
 title: 'メッセージ: forward'
-description: 'メッセージを転送する、コメントを追加または更新可能なプロパティを変更します。  '
+description: 'メッセージを転送する、コメントを追加する、または更新可能なプロパティを変更する  '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ed3d51c28e6fe0404b5cb26fb17f6d8ed3bba212
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540480"
 ---
 # <a name="message-forward"></a>メッセージ: forward
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メッセージを転送する、コメントを追加または更新可能なプロパティを変更します。  
-1 つ**前方**にすべてを呼び出します。 メッセージは、送信済みアイテム フォルダーに保存されます。
+メッセージを転送する、コメントを追加する、または更新可能なプロパティを変更する  
+すべて1回の**転送**呼び出し。 メッセージは [送信済みアイテム] フォルダーに保存されます。
 
 または、最初に[下書きの転送メッセージを作成して](../api/message-createforward.md)コメントを含めるか、メッセージのプロパティを更新し、転送メッセージを[送信](../api/message-send.md)します。
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- `toRecipients` パラメーター、または `message` パラメーターの **ToRecipients** プロパティを指定する必要があります。両方を指定するか、どちらも指定しないと、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- パラメーターを指定するか`toRecipients` 、 `message`パラメーターの**トーラス**プロパティを指定する必要があります。 両方を指定するか、どちらも指定しないと、「HTTP 400 要求が正しくありません」というエラーが返されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -55,14 +55,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |toRecipients|[recipient](../resources/recipient.md) collection|受信者の一覧です。|
-|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-次の例では、**IsDeliveryReceiptRequested** プロパティを true に設定し、コメントを追加してメッセージを転送します。
+次の例では、 **isDeliveryReceiptRequested**プロパティを true に設定し、コメントを追加してメッセージを転送します。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {

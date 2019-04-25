@@ -5,11 +5,11 @@ ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
 ms.openlocfilehash: 56a2c230c53c4b5bd50e8c123dd69eedec67a141
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543863"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion リソースの種類
 
@@ -36,9 +36,9 @@ ms.locfileid: "30480671"
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 値の取得のみ可能です。                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用。        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 値の取得のみ可能です。                 |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 
 

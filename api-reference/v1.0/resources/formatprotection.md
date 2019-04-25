@@ -3,11 +3,11 @@ title: FormatProtection リソースの種類
 description: 範囲オブジェクトの書式保護を表します。
 localization_priority: Normal
 ms.openlocfilehash: e4c32c8be8f6ef3aeaaf763ee88998bcbe235503
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876777"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542054"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection リソースの種類
 
@@ -22,9 +22,9 @@ ms.locfileid: "27876777"
 |[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |FormatProtection オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|formulaHidden|ブール値|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
+|formulaHidden|boolean|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
 |locked|ブール値|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
 
 ## <a name="relationships"></a>リレーションシップ

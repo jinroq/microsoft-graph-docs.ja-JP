@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780925"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541858"
 ---
 # <a name="devicemanagementintent-resource-type"></a>devicemanagementintent リソースの種類
 
@@ -28,17 +28,17 @@ ms.locfileid: "31780925"
 |[devicemanagementintent の削除](../api/intune-deviceintent-devicemanagementintent-delete.md)|なし|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)を削除します。|
 |[devicemanagementintent の更新](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトのプロパティを更新します。|
 |[updatesettings アクション](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|なし|まだ文書化されていません|
-|[アクションの割り当て](../api/intune-deviceintent-devicemanagementintent-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-deviceintent-devicemanagementintent-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|インテント ID|
+|id|String|インテント ID|
 |displayName|String|ユーザーが指定した表示名|
-|説明|String|ユーザーが指定した説明|
+|description|String|ユーザーが指定した説明|
 |isAssigned|Boolean|目的がユーザーに割り当てられているかどうかを表します。|
 |lastModifiedDateTime|DateTimeOffset|目的が最後に変更された日時|
-|templateId|文字列|この目的が作成されたテンプレートの ID (存在する場合)|
+|templateId|String|この目的が作成されたテンプレートの ID (存在する場合)|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

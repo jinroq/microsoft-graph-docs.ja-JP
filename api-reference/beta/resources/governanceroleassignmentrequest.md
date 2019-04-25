@@ -1,55 +1,55 @@
 ---
 title: governanceRoleAssignmentRequest リソースの種類
-description: Privilegd Id 管理の役割の割り当て操作の要求を表します。
+description: Privilegd Identity Management での役割の割り当て操作の要求を表します。
 localization_priority: Normal
 ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642066"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547455"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Privilegd Id 管理の役割の割り当て操作の要求を表します。
+Privilegd Identity Management での役割の割り当て操作の要求を表します。
 
-`governanceRoleAssignmentRequest`チケット モデルのエンティティはロールの割り当てのライフ サイクルを管理するために使用されます。 ・繰り返し schduling、承認のゲートを直接公開するのと比較した場合のように実装を有効にする柔軟性も提供してユーザーや管理者などの意図と意思決定を表す`POST`、 `PUT`、および`DELETE`の操作`governanceRoleAssignment`。
+`governanceRoleAssignmentRequest`は、役割の割り当てのライフサイクルを管理するために使用される、チケットモデル化されたエンティティです。 ユーザーと管理者の意図または決定を表しており、直接公開`POST`、 `PUT`および`DELETE`操作と比較して、定期的な schduling、承認ゲートなどの実装を可能にする柔軟性も提供します。オン`governanceRoleAssignment`にします。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド          |戻り値の型  |説明|
 |:------------|:--------|:--------|
-|[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|ID で指定されたロールの割り当て要求を取得します。  
-|[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースの役割の割り当て要求を取得します。|
-|[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|既存または新しい役割の割り当てのライフ サイクルを管理するために要求を作成します。|
-|[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |保留中の役割の割り当て要求をキャンセルします。|
-|[更新する](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|管理者は、要求の状態の場合に要求の決定を更新`PendingAdminDecision`。|
+|[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|ID で指定された役割の割り当て要求を取得します。  
+|[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースに対して役割の割り当て要求を取得します。|
+|[作成](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|既存または新しい役割の割り当てのライフサイクルを管理するための要求を作成します。|
+|[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |保留中の役割の割り当て要求を取り消します。|
+|[更新](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|要求がの`PendingAdminDecision`状態にある場合、管理者は要求に関する決定を更新します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ                  | 型          |説明|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |役割の割り当て要求の id。|
-|resourceId                 |String         |必須。 役割の割り当て要求に関連付けられているリソースの id です。|
-|roleDefinitionId           |String         |必須。 役割の割り当て要求に関連付けられている役割の定義の id です。|
-|subjectId                  |String         |必須。 役割の割り当て要求に関連付けられているサブジェクトの id です。|
-|type                       |String         |必須。 表す、ロールの割り当ての操作の種類です。 値は、します。 <ul><li>`AdminAdd`: 管理者の役割にユーザーまたはグループを割り当てる</li><li>`UserAdd`: ユーザーが対象の割り当てを有効化します。</li><li> `AdminUpdate`: 管理者は、既存のロールの割り当てを変更します。</li><li>`AdminRemove`: 管理者の役割からユーザーまたはグループを削除します。<li>`UserRemove`: ユーザーは、作業中の割り当てを非アクティブ化します。<li>`UserExtend`: ユーザーが、有効期限切れの割り当てを拡張する要求します。</li><li>`AdminExtend`: 管理者は、期限切れの割り当てを拡張します。</li><li>`UserRenew`: ユーザーの要求が期限切れの割り当てを更新するには</li><li>`AdminRenew`: 管理者は、期限切れの割り当てを拡張します。</li></ul>|
-|assignmentState|String  |必須。 割り当ての状態です。 値は、します。 <ul><li> `Eligible`対象となる割り当ての</li><li> `Active`-直接割り当てられている場合`Active`管理者、またはユーザーが対象となる割り当ての有効化します。</li></ul>|
-|requestedDateTime          |DateTimeOffset |読み取り専用です。 要求は、時間を作成します。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|スケジュール                   |[governanceSchedule](governanceschedule.md)|役割の割り当て要求のスケジュール オブジェクトです。|
-|理由                     |String         |ユーザーおよび管理者によって提供されるメッセージが必要な理由についての要求を作成するとします。|
-|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |役割の割り当て要求のステータス。|
-|linkedEligibleRoleAssignmentId|String        |Id を表すロールのアクティブ化の要求の場合は、`eligible assignment`で参照されます。値は、それ以外の場合、 `null`。 |
+|resourceId                 |String         |必須。 役割の割り当て要求が関連付けられているリソースの id。|
+|roleDefinitionId           |String         |必須。 役割の割り当て要求が関連付けられているロール定義の id。|
+|subjectId                  |String         |必須。 役割の割り当て要求が関連付けられているサブジェクトの id。|
+|type                       |String         |必須。 役割の割り当てに対する操作の種類を表します。 値には、 <ul><li>`AdminAdd`: ユーザー/グループを役割に割り当てる。</li><li>`UserAdd`: ユーザーが適格な割り当てをアクティブにします。</li><li> `AdminUpdate`: 既存の役割の割り当ての変更を行う</li><li>`AdminRemove`: [ユーザーまたはグループを役割から削除する]。<li>`UserRemove`: ユーザーはアクティブな割り当てを無効にします。<li>`UserExtend`: ユーザーが期限切れの割り当てを拡張するよう要求します。</li><li>`AdminExtend`: 管理者は期限切れの割り当てを拡張します。</li><li>`UserRenew`: ユーザーは、期限切れの割り当ての更新を要求します。</li><li>`AdminRenew`: 管理者は期限切れの割り当てを拡張します。</li></ul>|
+|割り当ての状態|String  |必須。 割り当ての状態を指定します。 値には、 <ul><li> `Eligible`適格な割り当ての場合</li><li> `Active`-管理者によって`Active`直接割り当てられている場合、またはユーザーによる資格のある割り当てでアクティブ化されている場合。</li></ul>|
+|requesteddatetime          |DateTimeOffset |読み取り専用。 要求の作成時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|スケジューリング                   |[governanceSchedule](governanceschedule.md)|役割の割り当て要求の schedule オブジェクト。|
+|したがっ                     |String         |必要な理由についての要求を作成するときに、ユーザーと管理者によって提供されるメッセージ。|
+|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |役割の割り当て要求の状態。|
+|linkedEligibleRoleAssignmentId|String        |これが役割のアクティブ化要求である場合は、参照`eligible assignment`されているの id を表します。それ以外の場合、 `null`値はです。 |
 
 
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型                                |説明|
 |:-------------|:----------------------------------|:----------|
-|リソース      |[governanceResource](../resources/governanceresource.md)            |読み取り専用です。 要求することを目的とするリソースです。 |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|読み取り専用です。 役割の定義を要求することを目的とします。 |
-|subject       |[governanceSubject](../resources/governancesubject.md)|読み取り専用です。 ユーザ/グループのプリンシパルです。|
+|リソース      |[governanceResource](../resources/governanceresource.md)            |読み取り専用。 要求が目的とするリソース。 |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|読み取り専用。 要求が目的としているロール定義。 |
+|subject       |[governanceSubject](../resources/governancesubject.md)|読み取り専用。 ユーザー/グループプリンシパル。|
 
 ### <a name="json-representation"></a>JSON 表記
 

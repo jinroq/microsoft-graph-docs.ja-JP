@@ -1,19 +1,19 @@
 ---
 title: secureScoreControlProfiles のリスト
-description: プロパティと、secureScoreControlProfiles オブジェクトの関係を取得します。
+description: securescorecontrolprofiles のオブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545634"
 ---
 # <a name="list-securescorecontrolprofiles"></a>secureScoreControlProfiles のリスト
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md)オブジェクトの関係を取得します。
+[securescorecontrolprofiles の](../resources/securescorecontrolprofiles.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,9 +21,9 @@ ms.locfileid: "29644029"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All。   |
+|委任 (職場または学校のアカウント) |  securityevents。 all、securityevents.。   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All。 |
+|アプリケーション | securityevents。 all、securityevents.。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,7 +37,7 @@ GET /security/secureScoreControlProfiles
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -45,7 +45,7 @@ GET /security/secureScoreControlProfiles
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**secureScoreControlProfiles**オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**securescorecontrolprofiles の**オブジェクトを返します。
 
 ## <a name="example"></a>例
 

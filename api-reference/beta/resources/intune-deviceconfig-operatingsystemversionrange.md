@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 80b0afb706a71ef8e0e3d4877fa7d0df822fe1d6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566753"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31788122"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |description|String|この範囲の説明 (例: 有効な1702ビルド)|
-|lowestversion|文字列|この範囲に含まれている最小の包括バージョン。|
-|highestVersion|文字列|この範囲に含まれている最も高い包括バージョン。|
+|lowestversion|String|この範囲に含まれている最小の包括バージョン。|
+|highestVersion|String|この範囲に含まれている最も高い包括バージョン。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

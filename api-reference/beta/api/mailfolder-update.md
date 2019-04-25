@@ -1,21 +1,21 @@
 ---
-title: MailFolder を更新する
-description: mailFolder オブジェクトのプロパティを更新します。
+title: mailfolder の更新
+description: mailfolder オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 63642678a58271bd0c0218879bf22504842c11e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540643"
 ---
-# <a name="update-mailfolder"></a>MailFolder を更新する
+# <a name="update-mailfolder"></a>mailfolder の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mailFolder オブジェクトのプロパティを更新します。
+[mailfolder](../resources/mailfolder.md)オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

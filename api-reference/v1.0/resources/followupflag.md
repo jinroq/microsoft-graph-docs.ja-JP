@@ -1,21 +1,21 @@
 ---
 title: followupFlag リソースの種類
-description: 'ユーザーが後でフォローするためのアイテムにフラグを設定できます。 '
+description: 'ユーザーが後でフォローアップできるように、アイテムにフラグを設定することができます。 '
 localization_priority: Normal
 ms.openlocfilehash: 60d2e40a10c3ba5b2af9aa798b84aadaebedd57a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541998"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag リソースの種類
 
 
-ユーザーが後でフォローするためのアイテムにフラグを設定できます。 
+ユーザーが後でフォローアップできるように、アイテムにフラグを設定することができます。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |CompletedDateTime|[dateTimeTimeZone](datetimetimezone.md)|フォローアップが終了した日時。|
 |dueDateTime|**dateTimeTimeZone**|フォローアップが終了する予定の日時。|

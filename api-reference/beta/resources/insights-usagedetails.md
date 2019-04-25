@@ -1,21 +1,21 @@
 ---
-title: usageDetails リソースの種類
-description: 複合型を使用する項目のプロパティが含まれています。 リソースが最後にアクセスしたときに情報 (表示)、ユーザーが (編集) を変更します。
+title: 種類の詳細リソースの種類
+description: 使用されているアイテムのプロパティを含む複合型。 ユーザーによってリソースが最後にアクセス (表示) され、変更 (編集) された日時に関する情報。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641527"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551296"
 ---
-# <a name="usagedetails-resource-type"></a>usageDetails リソースの種類
+# <a name="usagedetails-resource-type"></a>種類の詳細リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-複合型が[使用されている](insights-used.md)アイテムのプロパティが含まれています。 リソースが最後にアクセスしたときに情報 (表示)、ユーザーが (編集) を変更します。
+[使用され](insights-used.md)ているアイテムのプロパティを含む複合型。 ユーザーによってリソースが最後にアクセス (表示) され、変更 (編集) された日時に関する情報。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -32,8 +32,8 @@ ms.locfileid: "29641527"
 
 | プロパティ              | 型          | 説明  |
 | -------------         |---------------| -------------|
-| lastAccessedDateTime                  | DateTimeOffset        | 日付と時刻、リソースは、ユーザーが最後にアクセスしました。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z` 読み取り専用です。                      |
-| lastModifiedDateTime              | DateTimeOffset        | 日付と時刻、ユーザーによってリソースが最後に修正されました。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z` 読み取り専用です。       |
+| lastAccessedDateTime                  | DateTimeOffset        | リソースが最後にユーザーによってアクセスされた日付と時刻。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z` 読み取り専用です。                      |
+| lastModifiedDateTime              | DateTimeOffset        | ユーザーによってリソースが最後に変更された日付と時刻。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z` 読み取り専用です。       |
 <!--
 {
   "type": "#page.annotation",

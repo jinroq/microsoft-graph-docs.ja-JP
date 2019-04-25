@@ -1,23 +1,23 @@
 ---
 title: リスト trendingAround
-description: ユーザーの周りのトレンド分析項目の一覧を返す計算の把握。
+description: ユーザーの周囲でのアイテムのリストを返す、計算された洞察。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 625ae9d66ce1b891ebdba3209d92bd0e88b06a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507629"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544205"
 ---
 # <a name="list-trendingaround"></a>リスト trendingAround
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーの周りのトレンド分析項目の一覧を返す計算の把握。
+ユーザーの周囲でのアイテムのリストを返す、計算された洞察。
 
-**注:** この API は廃止し、[トレンド分析の API](../resources/insights-trending.md)に置き換えられます。
+**注:** この api は非推奨になり、[トレンド api](../resources/insights-trending.md)に置き換えられます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -49,7 +49,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答の本体で、200 OK 応答コードと[driveItem](../resources/driveitem.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッドは、応答本文で 200 OK 応答コードと、[ハードアイテム](../resources/driveitem.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

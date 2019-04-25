@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8b0a2ad0755e3658be7e640a192b5c4622a14ee6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546991"
 ---
 # <a name="windowsusertype-enum-type"></a>windowsUserType 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31784923"
 |メンバー|値|説明|
 |:---|:---|:---|
 |者|.0|まだ文書化されていません|
-|standard|1-d|まだ文書化されていません|
+|standard|1 |まだ文書化されていません|
 
 
 

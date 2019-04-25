@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 272b4d091cd728f095e0002dee7e06c68884d6a8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567523"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "30251119"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|password|文字列型 (String)|まだ文書化されていない、[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
-|userPrincipalName|文字列|まだ文書化されていません|
+|パスワード|String|まだ文書化されていない、[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
+|userPrincipalName|String|まだ文書化されていません|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

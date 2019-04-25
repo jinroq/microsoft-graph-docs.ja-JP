@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642696"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547131"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
@@ -21,34 +21,34 @@ ms.locfileid: "29642696"
 
 **既知のフォルダー名**
 
-Outlook では、既定でユーザー用の特定のフォルダーを作成します。 対応するフォルダーの**id**値を使用して、利便性のため、代わりにこれらのフォルダーにアクセスするときに既知のフォルダー名を次の表からを使用できます。 たとえば、次のクエリを使用して、既知の名前を使用して、[下書き] フォルダーを取得できます。
+Outlook では、既定でユーザー用の特定のフォルダーを作成します。 このようなフォルダーにアクセスする場合は、対応するフォルダー **id**値を使用する代わりに、以下の表にある、既知のフォルダー名を使用することもできます。 たとえば、次のクエリを使用して、既知の名前を使用して [下書き] フォルダーを取得できます。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-既知の名前は、上記のクエリは、常に付けの方法に関係なく、ユーザーの [下書き] フォルダーを返しますので、ユーザーのメールボックスのロケールに関係なく動作します。
+既知の名前は、ユーザーのメールボックスのロケールに関係なく動作するので、上記のクエリは、名前の指定に関係なく、常にユーザーの [下書き] フォルダーを返します。
 
 | 既知のフォルダー名 | 説明 |
 |:-----------------------|:------------|
-| アーカイブ | アーカイブ フォルダーのメッセージは、サポートしている Outlook クライアントで One_Click のアーカイブ機能を使用する場合に送信されます。 **注:** これは Exchange のメールボックスのアーカイブの機能は、オンラインの場合と同じです。 |
-| 散乱 | 整理フォルダーの優先順位の低いメッセージは、整理機能を使用するときに移動されます。 |
-| 競合 | メールボックスにある競合アイテムを含むフォルダーです。 |
-| conversationhistory | (これを行うには、Skype が構成されている) 場合に、Skype が IM の会話を保存するフォルダーです。 |
-| deleteditems | フォルダーのアイテムは、削除するときに移動されます。 |
-| 下書き | 未送信のメッセージを格納するフォルダー。 |
-| [受信トレイ] | [受信トレイ] フォルダーです。 |
-| junkemail | 迷惑メールのフォルダーです。 |
-| localfailures | ローカル クライアント上に存在するが、サーバーにアップロードできませんでしたアイテムを含むフォルダーです。 |
-| msgfolderroot | 「インフォメーション ストアの最上位」のフォルダーです。 このフォルダーは、受信トレイなど、通常のメール クライアントで表示されているフォルダーの親フォルダーです。 |
-| [送信トレイ] します。 | [送信トレイ] フォルダーです。 |
-| recoverableitemsdeletions | ソフト削除済みアイテムを含むフォルダー: 削除済みアイテム フォルダーから、または shift キーを押して削除 + では、Outlook を削除します。 このフォルダーが、Outlook 電子メール クライアントに表示されないが、エンド ・ ユーザーを操作できます Outlook または Outlook web 上で**サーバーから削除済みアイテムの回復**機能を使用します。 |
-| スケジュール済み | IOS は、Outlook のスケジュール機能を使用して受信トレイに表示されるようにスケジュールされているメッセージを含むフォルダーです。 |
-| 使用して | ユーザーのメールボックスで定義されているすべての検索フォルダーの親フォルダーです。 |
-| 送信済みアイテム | 送信済みアイテム フォルダーです。 |
-| serverfailures | サーバー上に存在するが、ローカル クライアントを同期できませんでしたアイテムを含むフォルダーです。 |
-| syncissues | Outlook で作成された同期ログを格納するフォルダー。 |
+| ・ | アーカイブフォルダーのメッセージは、それをサポートする Outlook クライアントで One_Click アーカイブ機能を使用するときに送信されます。 **注:** これは、Exchange online のアーカイブメールボックス機能と同じではありません。 |
+| 整頓 | 低優先メール機能フォルダー低優先度のメッセージは、低優先メール機能を使用している場合に移動されます。 |
+| 解消 | メールボックス内の競合するアイテムを含むフォルダー。 |
+| conversationhistory | skype が IM 会話を保存するフォルダー (skype が設定されている場合)。 |
+| deleteditems | フォルダーアイテムは、削除されたときに移動されます。 |
+| 未公開 | 未送信メッセージを含むフォルダー。 |
+| ボックス | 受信トレイフォルダー。 |
+| junkemail | 迷惑メールフォルダー。 |
+| localfailures | ローカルクライアント上に存在するが、サーバーにアップロードできないアイテムを含むフォルダー。 |
+| msgfolderroot | "インフォメーションストアのトップ" フォルダー このフォルダーは、受信トレイなど、通常のメールクライアントに表示されるフォルダーの親フォルダーです。 |
+| 送信トレイ | 送信トレイフォルダー。 |
+| recoverableitemsdeletions | 削除済みアイテムフォルダーから削除された、または Outlook で shift + del キーを押して削除されたアイテムを含むフォルダー。 このフォルダーは、outlook 電子メールクライアントでは表示されませんが、エンドユーザーは、outlook または web 上の outlook の [**サーバーからの削除済みアイテムを復元**する] 機能を使用して操作できます。 |
+| スケジュール済み | iOS 版 Outlook のスケジュール機能を使用して、受信トレイに再表示するようにスケジュールされたメッセージを含むフォルダー。 |
+| searchfolders | ユーザーのメールボックスに定義されているすべての検索フォルダーの親フォルダーです。 |
+| sentitems | 送信済みアイテムフォルダー。 |
+| serverfailures | サーバー上に存在するが、ローカルクライアントに同期できなかったアイテムを含むフォルダー。 |
+| syncissues 問題 | Outlook によって作成された同期ログが格納されているフォルダー。 |
 
 ## <a name="methods"></a>メソッド
 
@@ -57,7 +57,7 @@ GET /me/mailFolders/drafts
 |[mailFolder の取得](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |mailFolder オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[MailFolder の作成](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| childFolders コレクションへの投稿により、現在の mailFolder 下に新しい mailFolder を作成します。|
 |[childFolders を一覧表示する](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md) コレクション| 指定したフォルダーの下のフォルダー コレクションを取得します。`.../me/MailFolders` ショートカットを使用すると、最上位フォルダーのコレクションを取得して、別のフォルダーに移動することができます。|
-|[メッセージの作成](../api/mailfolder-post-messages.md) |[message](message.md)| メッセージ コレクションへの投稿により、現在の mailFolder に新しいメッセージを作成します。|
+|[メッセージの作成](../api/mailfolder-post-messages.md) |[メッセージ](message.md)| メッセージ コレクションへの投稿により、現在の mailFolder に新しいメッセージを作成します。|
 |[List messages](../api/mailfolder-list-messages.md) |[message](message.md) コレクション| サインインしているユーザーのメールボックス内のすべてのメッセージや、メールボックス内の指定したフォルダー内のメッセージを取得します。|
 |[更新する](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|指定した mailFolder オブジェクトを更新します。 |
 |[削除](../api/mailfolder-delete.md) | なし |指定した mailFolder オブジェクトを削除します。 |
@@ -76,22 +76,22 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
 |displayName|String|mailFolder の表示名。|
-|id|String|MailFolder の一意の識別子です。|
+|id|String|mailfolder の一意の識別子。|
 |parentFolderId|String|mailFolder の親 mailFolder の一意識別子。|
 |totalItemCount|Int32|mailFolder に含まれるアイテムの数|
 |unreadItemCount|Int32|mailFolder 内で未読としてマークされているアイテムの数。|
-|wellKnownName|String|フォルダーの既知のフォルダーの名前です。 可能な値は、上記に一覧表示されます。 Outlook で作成された既定のフォルダーには、このプロパティは設定のみです。 その他のフォルダーでは、このプロパティは**null**です。|
+|wellKnownName|String|フォルダーの既知のフォルダー名。 指定できる値は、上記のとおりです。 このプロパティは、Outlook によって作成された既定のフォルダーに対してのみ設定されます。 その他のフォルダーの場合、このプロパティは**null**になります。|
 
-**アイテム数を効率的に取得する**
+**アイテム数の効率的な取得**
 
-`TotalItemCount`と`UnreadItemCount`フォルダーのプロパティを使用すると、簡単にフォルダー内のアイテムの読み取りの数を計算します。
+フォルダー `TotalItemCount`の`UnreadItemCount`プロパティとプロパティを使用すると、フォルダー内の閲覧アイテムの数を簡単に計算できます。
 これにより、大幅な遅延が発生する可能性がある次のようなクエリを回避できます。
 
 ```http
 https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Outlook のメール フォルダーにアイテムの 1 つ以上の種類を含めることができます、受信トレイを含めることができますたとえば、会議出席依頼アイテムがメール アイテムとは異なる。 `TotalItemCount``UnreadItemCount`の項目の種類に関係なく、[メール] フォルダーにアイテムが含まれます。
+Outlook のメールフォルダーには、複数の種類のアイテムを含めることができます。たとえば、受信トレイには、メールアイテムとは異なる会議出席依頼アイテムを含めることができます。 `TotalItemCount`アイテム`UnreadItemCount`の種類に関係なく、メールフォルダーにアイテムを追加します。
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -99,7 +99,7 @@ Outlook のメール フォルダーにアイテムの 1 つ以上の種類を�
 |:-------------|:-----|:------------|
 |childFolders|[MailFolder](mailfolder.md) コレクション|mailFolder 内の子フォルダーのコレクション。|
 |messageRules | [messageRule](messagerule.md) コレクション | ユーザーの受信トレイ フォルダーに適用されるルールのコレクション。 |
-|messages|[Message](message.md) コレクション|mailFolder 内のメッセージのコレクション。|
+|messages|[Message](message.md) collection|mailFolder 内のメッセージのコレクション。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
@@ -140,7 +140,7 @@ Outlook のメール フォルダーにアイテムの 1 つ以上の種類を�
 ## <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](/graph/delta-query-overview)
-- [フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)
+- [フォルダー内のメッセージへの増分変更を取得する](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

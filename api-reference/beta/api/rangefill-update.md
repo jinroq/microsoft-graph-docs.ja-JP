@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 87214cf944c5f0aadd26189dcdfba6383cb6cb65
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546248"
 ---
 # <a name="update-rangefill"></a>rangefill オブジェクトを更新する
 
@@ -43,7 +43,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
+|color|string|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
 
 ## <a name="response"></a>応答
 

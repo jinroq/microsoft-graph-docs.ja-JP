@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
-title: SharePoint サイトに新しいページを作成します。
+title: SharePoint サイトで新しいページを作成する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545343"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを作成します。
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトページリストにページを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[サイト][]のサイトのページ[] ボックスの一覧][]で、新しい[sitePage][]を作成します。
+[サイト][]の [サイトページ[] リスト][]に新しいサイト[ページ][]を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -38,11 +38,11 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体を作成する[sitePage][]リソースの JSON 表現を指定します。
+要求本文で、作成する[sitepage][]リソースの JSON 表記を指定します。
 
 ## <a name="example"></a>例
 
-次の例では、新しいページを作成する方法を示します。
+次の例は、新しいページを作成する方法を示しています。
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、作成されたページの応答の本体で、 [sitePage][]を返します。
+成功した場合、このメソッドは作成されたページの応答本文で[sitepage][]を返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

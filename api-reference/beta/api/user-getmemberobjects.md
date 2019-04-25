@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 219e996bdf9b796cdd6a000b988e0f2ac73023ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509988"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536551"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects　
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。|
+|securityEnabledOnly|ブール値|ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。|
 
 ## <a name="response"></a>応答
 

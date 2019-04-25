@@ -1,17 +1,17 @@
 ---
-title: 'orgContact: checkMemberGroups'
-description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
+title: 'orgcontact: checkmembergroups'
+description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ef9345a1879789a3f96a3eb6b2bbe4d636c75ddc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523786"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539864"
 ---
-# <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
+# <a name="orgcontact-checkmembergroups"></a>orgcontact: checkmembergroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

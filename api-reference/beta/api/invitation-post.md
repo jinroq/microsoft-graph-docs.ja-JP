@@ -1,19 +1,17 @@
 ---
 title: 招待状の作成
-description: この API を使用して、新しい 招待状 を作成します。招待状によって外部ユーザーが組織に追加されます。
-localization_priority: Normal
+description: この API を使用して、新しい 招待状 を作成します。 招待状によって外部ユーザーが組織に追加されます。
+localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 92bf3929fa4f736be3c6956f20aff6965291a876
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541326"
 ---
 # <a name="create-invitation"></a>招待状の作成
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、新しい [招待状](../resources/invitation.md) を作成します。招待状によって外部ユーザーが組織に追加されます。
 
@@ -65,7 +63,7 @@ POST /invitations
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/invitations
+POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -80,7 +78,7 @@ Content-length: 551
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -107,14 +105,14 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
-<!--
-{
+
+<!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/api/invitation-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
   ]
-}
--->
+}-->

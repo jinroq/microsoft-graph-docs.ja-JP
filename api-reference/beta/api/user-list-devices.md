@@ -1,21 +1,21 @@
 ---
-title: ユーザー デバイスの一覧表示
-description: プロジェクト ローマの機能をサポートしているユーザーのデバイスの一覧を取得します。 または、アプリケーションを起動またはアプリケーションにデータを送信する機能が含まれます。 した後に GET 呼び出しを行うし、デバイスが、デバイスにコマンドを送信するデバイスの ID を渡します。
+title: ユーザー デバイスを一覧表示する
+description: プロジェクトローマ機能をサポートするユーザーデバイスのリストを取得します。 これには、アプリを起動したり、アプリケーションに対してデータを送信したりする機能が含まれます。 [自分/デバイスで呼び出しを実行した後、デバイスにコマンドを送信するには、デバイスの ID] を渡します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544291"
 ---
-# <a name="list-user-devices"></a>ユーザー デバイスの一覧表示
+# <a name="list-user-devices"></a>ユーザー デバイスを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロジェクト ローマの機能をサポートしているユーザーのデバイスの一覧を取得します。 または、アプリケーションを起動またはアプリケーションにデータを送信する機能が含まれます。 した後に GET 呼び出しを行うし、デバイスがデバイスに[コマンドを送信](send-device-command.md)するデバイスの ID を渡します。
+プロジェクトローマ機能をサポートするユーザーデバイスのリストを取得します。 これには、アプリを起動したり、アプリケーションに対してデータを送信したりする機能が含まれます。 [自分/デバイスで呼び出しを実行した後、デバイスに[コマンドを送信](send-device-command.md)するには、デバイスの ID] を渡します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -48,7 +48,7 @@ GET me/devices
 
 ## <a name="response"></a>応答
 
-成功した場合に、このメソッドは、応答本体に 200 応答コードとユーザーのデバイスのプロパティを返します。
+成功した場合、このメソッドは応答本文で200応答コードとユーザーデバイスプロパティを返します。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>例
-この例では、ユーザーのデバイスの一覧を返します。 コマンドを使用してをデバイスに`me/devices/{id}/command`、返されたデバイスの ID を取得する必要があります。
+この例では、ユーザーのデバイスの一覧を返します。 を使用して`me/devices/{id}/command`デバイスのコマンドを実行するには、返されるデバイスの ID を取得する必要があります。
 
 #### <a name="request"></a>要求
 

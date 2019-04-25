@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 63e468b651b84279ede824796a1ff63acd50c2ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524591"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546390"
 ---
 # <a name="range-clear"></a>範囲: クリア
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|applyTo|文字列|省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。|
+|applyTo|string|省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。|
 
 ## <a name="response"></a>応答
 

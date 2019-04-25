@@ -1,21 +1,21 @@
 ---
-title: OutlookTask を削除します。
-description: ユーザーのメールボックスに指定された Outlook タスクを削除します。
+title: outlooktask の削除
+description: ユーザーのメールボックス内の指定された Outlook タスクを削除します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 45660f5bb4a2c74fccb5b618dc30f7d331f558bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517975"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539761"
 ---
-# <a name="delete-outlooktask"></a>OutlookTask を削除します。
+# <a name="delete-outlooktask"></a>outlooktask の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのメールボックスに指定された Outlook タスクを削除します。
+ユーザーのメールボックス内の指定された Outlook タスクを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 

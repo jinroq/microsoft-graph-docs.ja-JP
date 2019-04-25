@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: イメージ
 localization_priority: Normal
 ms.openlocfilehash: 67d8a836ce89732ffd1fd6cb51fe5d8690e073e9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480825"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567565"
 ---
 # <a name="image-resource-type"></a>イメージ リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "30480825"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類  | 説明                                |
+| プロパティ   | 型  | 説明                                |
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | 省略可能。イメージの高さ (ピクセル単位)。読み取り専用です。 |
 | **width**  | Int32 | 省略可能。イメージの幅 (ピクセル単位)。読み取り専用です。  |

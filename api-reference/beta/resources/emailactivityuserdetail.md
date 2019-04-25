@@ -1,33 +1,33 @@
 ---
-title: emailActivityUserDetail リソースの種類
+title: emailactivityuserdetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b871bf5dbaedd961fad09bf97be868f46e7430a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938308"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542833"
 ---
-# <a name="emailactivityuserdetail-resource-type"></a>emailActivityUserDetail リソースの種類
+# <a name="emailactivityuserdetail-resource-type"></a>emailactivityuserdetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 種類              |
+| プロパティ          | 型              |
 | :---------------- | :---------------- |
-| reportRefreshDate | 日付              |
+| reportrefreshdate | Date              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | ブール型           |
-| deletedDate       | 日付              |
-| lastActivityDate  | 日付              |
-| sendCount         | Int64             |
+| isDeleted         | ブール値           |
+| deletedDate       | Date              |
+| lastactivitydate  | Date              |
+| sendcount         | Int64             |
 | receiveCount      | Int64             |
-| readCount         | Int64             |
-| assignedProducts  | String コレクション |
-| reportPeriod      | String            |
+| readcount         | Int64             |
+| assignedProducts  | String collection |
+| reportperiod      | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

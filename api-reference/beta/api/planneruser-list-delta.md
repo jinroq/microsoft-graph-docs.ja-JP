@@ -1,27 +1,27 @@
 ---
-title: 'プランナー: デルタ'
+title: 'Planner: delta'
 description: ユーザーが購読しているオブジェクトへの変更を取得します。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 772a5d487f48b1552707da45729a84c7fdf7da2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546835"
 ---
-# <a name="planner-delta"></a>プランナー: デルタ
+# <a name="planner-delta"></a>Planner: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーは、[購読して](../resources/planner-overview.md#track-changes-using-delta-query)いるオブジェクトへの変更を取得します。
+ユーザーが[購読](../resources/planner-overview.md#track-changes-using-delta-query)しているオブジェクトへの変更を取得します。
 
-このメソッドは、時間の経過と共に計画内でユーザーをからアクセスできるオブジェクトに対する変更を追跡するアプリケーションを使用します。
+このメソッドを使用すると、ユーザーが随時プランナー内からアクセスできるオブジェクトへの変更をアプリケーションで追跡できます。
 
-このメソッドの戻り値には、プランナーからのオブジェクトの種類を hetergenous が含まれている可能性があります。
+このメソッドの戻り値には、Planner からの異種の種類のオブジェクトが含まれている場合があります。
 
-グラフ データの変更の追跡の詳細については、[グラフ データの変更を追跡するためにデルタのクエリを使用する](/graph/delta-query-overview)を参照してください。
+microsoft graph データでの変更履歴の追跡の詳細については、「 [microsoft graph のデータの変更を追跡するためにデルタクエリを使用する](/graph/delta-query-overview)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -42,7 +42,7 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-追加のクエリ パラメーターが (次のように`$select`、 `$expand`、または`$filter`) デルタ ・ クエリのプランナーの実装では現在サポートされていません。
+プランナーのデルタクエリの実装で`$select`は`$expand`、追加`$filter`のクエリパラメーター (、、など) は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -56,11 +56,11 @@ GET /users/<id>/planner/all/delta
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体と差分同期のリンク先に移動内のオブジェクトに適用される変更の集まりです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文のオブジェクトに適用される変更のコレクションと、それに続くデルタ同期リンクを返します。
 
-場合、`deltaLink`の呼び出し元の使用の形式が正しくありません、このエンドポイントが HTTP 400 を返すことです。
+発信者`deltaLink`が使用しているの形式が正しくない場合、このエンドポイントは HTTP 400 を返します。
 
-場合、`deltaLink`を呼び出し元の使用が古すぎるため、このエンドポイントは、HTTP 410 を返されます。
+呼び出し元`deltaLink`が使用しているが古すぎる場合、このエンドポイントは HTTP 410 を返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 

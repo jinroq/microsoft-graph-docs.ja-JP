@@ -1,27 +1,27 @@
 ---
 title: educationLinkResource リソースの種類
-description: EducationResource のサブクラスです。 このリソースは、リンクとは必要なデータに関連付けられていないことです。
+description: educationResource のサブクラス。 このリソースはリンクであり、それに関連付けられている追加のデータはありません。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 09e7c7c5070d6f8f288dbf18d6fb9ce81b456092
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542881"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)のサブクラスです。 このリソースは、リンクとは必要なデータに関連付けられていないことです。
+[educationResource](educationresource.md)のサブクラス。 このリソースはリンクであり、それに関連付けられている追加のデータはありません。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|link|String|リソースへの URL です。|
+|link|String|リソースへの URL。|
 
 ## <a name="json-representation"></a>JSON 表記
 

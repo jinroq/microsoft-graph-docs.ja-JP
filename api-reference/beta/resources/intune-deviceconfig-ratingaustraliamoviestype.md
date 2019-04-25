@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 438b255970d42bfb0ef63018e87fcbcdfe62b163
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566739"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 列挙型
 
@@ -23,12 +23,12 @@ ms.locfileid: "31797852"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
-|allblocked|1-d|任意の映画コンテンツを許可しない|
-|元帳|pbm-2|G 分類は、すべてのユーザーに適しています。|
-|parentalguidance|1/3|この PG は、親またはガーディアンからのガイダンスを含む15未満のビューアーを推奨します。|
-|度|2/4|M 分類は15以下の閲覧者には推奨されません|
-|agesAbove15|5|MA15 + 分類は15以下の閲覧者には適していません|
-|agesAbove18|シックス|R18 + 分類が18の閲覧者には適していません|
+|allblocked|1 |任意の映画コンテンツを許可しない|
+|元帳|2 |G 分類は、すべてのユーザーに適しています。|
+|parentalguidance|3 |この PG は、親またはガーディアンからのガイダンスを含む15未満のビューアーを推奨します。|
+|度|4 |M 分類は15以下の閲覧者には推奨されません|
+|agesAbove15|5 |MA15 + 分類は15以下の閲覧者には適していません|
+|agesAbove18|6 |R18 + 分類が18の閲覧者には適していません|
 
 
 

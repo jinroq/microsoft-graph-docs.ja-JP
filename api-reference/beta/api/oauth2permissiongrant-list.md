@@ -1,19 +1,19 @@
 ---
 title: oauth2PermissionGrants を一覧表示する
-description: Oauth2PermissionGrant オブジェクトのリストを取得します。
+description: oauth2PermissionGrant オブジェクトのリストを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540199"
 ---
 # <a name="list-oauth2permissiongrants"></a>oauth2PermissionGrants を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Oauth2PermissionGrant オブジェクトのリストを取得します。
+oauth2PermissionGrant オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -44,7 +44,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,19 +1,19 @@
 ---
-title: 'privilegedRoleAssignment: マイ'
-description: 要求側の特権を持つ役割の割り当てを取得します。
+title: 'privilegedRoleAssignment: my'
+description: 要求者の特権の役割の割り当てを取得します。
 localization_priority: Normal
 ms.openlocfilehash: fe3f0486d7c5f011abbac60deed831b798802aef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546558"
 ---
-# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: マイ
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要求側の特権を持つ役割の割り当てを取得します。
+要求者の特権の役割の割り当てを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -39,7 +39,7 @@ GET /privilegedRoleAssignments/my
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedRoleAssignment](../resources/privilegedroleassignment.md)コレクションのオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)コレクションオブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

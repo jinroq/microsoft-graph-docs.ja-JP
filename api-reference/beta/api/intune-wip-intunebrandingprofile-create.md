@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e92ad91bd5d981e987fb6d5abfd32494f6ce54de
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805517"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541805"
 ---
 # <a name="create-intunebrandingprofile"></a>intuneBrandingProfile を作成する
 
@@ -51,21 +51,21 @@ POST /deviceManagement/intuneBrandingProfiles
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|プロファイルキー|
-|profileName|文字列|プロファイルの名前|
-|profiledescription|文字列|プロファイルの説明|
-|isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
+|profileName|String|プロファイルの名前|
+|profiledescription|String|プロファイルの説明|
+|isdefaultprofile|ブール値|既定でプロファイルが使用されているかどうかを示します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|文字列|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|String|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cf8aeb73080ea16d89ec4b1473a7c44f25b4306a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566431"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vpptokenactionresult リソースの種類
 
@@ -27,7 +27,7 @@ Apple volume purchase program トークンを使用して実行されたアク�
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

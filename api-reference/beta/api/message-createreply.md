@@ -1,15 +1,15 @@
 ---
 title: 'メッセージ: createReply'
-description: 'コメントを含めるか、メッセージ ・ プロパティの更新への返信メッセージの下書きを作成します。 '
+description: '返信メッセージの下書きを作成してコメントを含めるか、メッセージのプロパティを更新する '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 112db29116625da1c154783eee840c7a69b5ebfc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540556"
 ---
 # <a name="message-createreply"></a>メッセージ: createReply
 
@@ -19,8 +19,8 @@ ms.locfileid: "29526838"
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- **ReplyTo** が元のメッセージに指定されている場合、インターネット メッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、**From** の受信者ではなく、**ReplyTo** の受信者に返信する必要があります。 
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- **replyto**が元のメッセージで指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、 **from**の受信者ではなく、 **replyto**の受信者に返信を送信する必要があります。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
-|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 

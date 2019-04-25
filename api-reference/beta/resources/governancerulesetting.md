@@ -1,26 +1,26 @@
 ---
 title: governanceRuleSetting リソースの種類
-description: ロールの設定で構成されたルールを表します。
+description: ロール設定が構成されているルールを表します。
 localization_priority: Normal
 ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547460"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ロールの設定で構成されたルールを表します。
+ロール設定が構成されているルールを表します。
 
 
 ## <a name="properties"></a>プロパティ
 |プロパティ      | 型         |説明|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |ルールの id です。 たとえば、``ExpirationRule``と``MfaRule``。|
-|setting       |String        |ルールの設定をします。 値は、Parameter_Name:Parameter_Value の形式でのペアの一覧を JSON 文字列です。 たとえば、`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}` のように指定します。|
+|ruleIdentifier|String        |ルールの id。 たとえば、 ``ExpirationRule``と``MfaRule``のようになります。|
+|setting       |String        |ルールの設定。 この値は、Parameter_Name: Parameter_Value という形式のペアのリストを含む JSON 文字列です。 たとえば、`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}` のように指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

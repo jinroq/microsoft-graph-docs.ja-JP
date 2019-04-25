@@ -1,27 +1,27 @@
 ---
 title: educationSynchronizationOAuth1ConnectionSettings リソース
-description: データ プロバイダーへの接続に使用する OAuth1 がある場合は、プロファイルを設定するのにはこの接続の設定の種類を使用してください。
+description: OAuth1 を使用してデータプロバイダーに接続する場合は、この接続設定の種類を使用してプロファイルを設定する必要があります。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 71e45033c022061b72c1ea0be815ff3e0b611475
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516673"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542823"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>educationSynchronizationOAuth1ConnectionSettings リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-データ プロバイダーへの接続に使用する OAuth1 がある場合は、プロファイルを設定するのにはこの接続の設定の種類を使用してください。
+OAuth1 を使用してデータプロバイダーに接続する場合は、この接続設定の種類を使用してプロファイルを設定する必要があります。
 
-[Microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)から派生します。
+[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)から派生します。
 
 ## <a name="properties"></a>プロパティ
 
-この型では、追加のプロパティは公開されません。
+この種類では、追加のプロパティは公開されていません。
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

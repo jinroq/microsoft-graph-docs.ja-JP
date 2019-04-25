@@ -1,23 +1,23 @@
 ---
 title: educationAssignmentClassRecipient リソースの種類
-description: 'Assignment.assignTo プロパティ内で使用します。 クラスの受信者に設定すると、クラスのすべての受講者用のします。 '
+description: 'プロパティへの割り当ての中で使用されます。 class recipient に設定すると、クラスのすべての学生が '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 4aa7e19c3f71f074bf9ed9b4910e6862d31f20b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543114"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>educationAssignmentClassRecipient リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Assignment.assignTo](educationassignment.md)プロパティ内で使用します。 クラスの受信者に設定すると、クラス内の各受講者が表示されます送信オブジェクト割り当てを発行するとします。
+プロパティへの[割り当て](educationassignment.md)の中で使用されます。 class recipient に設定すると、クラスのすべての学生は、割り当てが発行されたときに送信オブジェクトを受け取ります。
 
-このリソースは、 [educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。
+このリソースは[educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。
 
 ## <a name="properties"></a>プロパティ
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b22e12d5c27db40cfdab07c54fda28239a3d08d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797572"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566725"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31797572"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|settingsonly|1-d|Settings の事前リリース機能のみ。|
-|settingsAndExperimentations|pbm-2|設定と experimentations プレリリース機能。|
-|notAllowed|1/3|プレリリース機能は許可されていません。|
+|settingsonly|1 |Settings の事前リリース機能のみ。|
+|settingsAndExperimentations|2 |設定と experimentations プレリリース機能。|
+|notAllowed|3 |プレリリース機能は許可されていません。|
 
 
 

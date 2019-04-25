@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543080"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Microsoft Graph で Dynamics 365 Business Central API を使用する
 microsoft Graph を使用して、microsoft Dynamics 365 Business Central と web サービスまたは SaaS ソリューションとの接続と統合を行うことができます。 microsoft Graph を使用すると、microsoft Dynamics 365 Business Central data へのアクセスを許可し、シームレスに統合するアプリを作成できます。
@@ -23,7 +23,7 @@ Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Centr
 Dynamics 365 Business Central API を使用すると、1つのエンドポイントを介して接続および統合されたアプリを使用して、ビジネスデータの読み取りと変更を行うことができます。 たとえば、API を使用して[顧客](../resources/dynamics-customer.md)や[ベンダー](../resources/dynamics-vendor.md)の情報にアクセスしたり、[支払いの延滞を表示](../resources/dynamics-agedaccountspayable.md)したりします。
 
 ## <a name="next-steps"></a>次の手順
-Dynamics 365 Business Central API は、ユーザーと連携するための新しい方法を開くことができます。 詳細については、以下を参照してください。
+Dynamics 365 Business Central API は、ユーザーと連携するための新しい方法を開くことができます。 詳細については、次のトピックを参照してください。
 
 + [Dynamics 365 Business Central の概要](/graph/dynamics-business-central-concept-overview)
 + [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)をお試しください。

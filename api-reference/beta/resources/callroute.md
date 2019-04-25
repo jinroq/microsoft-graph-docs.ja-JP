@@ -1,29 +1,29 @@
 ---
-title: callRoute リソースの種類
-description: CallRoute 型です。
+title: callroute リソースの種類
+description: callroute の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cfa470c4d3a03655221cab1f29baa60d00a8cf6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512802"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543839"
 ---
-# <a name="callroute-resource-type"></a>callRoute リソースの種類
+# <a name="callroute-resource-type"></a>callroute リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-CallRoute 型です。
+callroute の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型                          | 説明                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| Final               | [identitySet](identityset.md) | この id は、呼び出しを解決しました。               |
-| Original            | [identitySet](identityset.md) | 呼び出しで使用されていた id です。           |
-| routingType         | String                        | 可能な値は、`forwarded`、`lookup`、`selfFork` です。  |
+| 最終的な               | [identitySet](identityset.md) | 呼び出しで解決された id。               |
+| 翻訳元            | [identitySet](identityset.md) | 最初に呼び出しで使用された id。           |
+| routingtype         | String                        | 使用可能な値は、`forwarded`、`lookup`、`selfFork` です。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

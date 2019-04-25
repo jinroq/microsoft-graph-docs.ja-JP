@@ -1,21 +1,21 @@
 ---
-title: PlannerUser を取得します。
-description: 'プロパティと、plannerUser オブジェクトの関係を取得します。 返されるプロパティは、ユーザーのお気に入りのプランが含まれ、計画が最近閲覧しました。 '
+title: プランのユーザーを取得する
+description: 'プランユーザーオブジェクトのプロパティとリレーションシップを取得します。 返されるプロパティには、ユーザーのお気に入りのプランと最近表示されたプランが含まれます。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 0ac20564183c36d26440b4532a39413dff47bfb6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546809"
 ---
-# <a name="get-planneruser"></a>PlannerUser を取得します。
+# <a name="get-planneruser"></a>プランのユーザーを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、 [plannerUser](../resources/planneruser.md)オブジェクトの関係を取得します。 返されるプロパティは、ユーザーのお気に入りのプランが含まれ、計画が最近閲覧しました。 
+[プランユーザー](../resources/planneruser.md)オブジェクトのプロパティとリレーションシップを取得します。 返されるプロパティには、ユーザーのお気に入りのプランと最近表示されたプランが含まれます。 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -35,12 +35,12 @@ GET /users/<id>/planner
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[plannerUser](../resources/planneruser.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[プランのユーザー](../resources/planneruser.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

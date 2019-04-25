@@ -1,21 +1,21 @@
 ---
-title: 'synchronizationSchema: parseExpression'
+title: '同期スキーマ: parseexpression'
 description: '(../resources/synchronization_attributemappingsource.md) オブジェクト。 '
 localization_priority: Normal
 ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522967"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545368"
 ---
-# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
+# <a name="synchronizationschema-parseexpression"></a>同期スキーマ: parseexpression
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された文字列式を解析する [attributeMappingSource | (../resources/synchronization_attributemappingsource.md) オブジェクト。 
+指定した文字列式を解析します [attributeMappingSource | (../resources/synchronization_attributemappingsource.md) オブジェクト。 
 
-式の詳細については、 [Azure Active Directory 内の属性のマッピングの式の記述](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)を参照してください。
+式の詳細については、「 [Azure Active Directory での属性マッピングの式の書き込み](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,11 +44,11 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |式               |String               |解析する式を指定します。|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|に対して式を評価するためにデータ オブジェクトをテストします。 省略可能。|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |この式にマップされる属性の定義。 省略可能。|
+|testinputobject          |[式 inputobject](../resources/synchronization-expressioninputobject.md)|式を評価するためのテストデータオブジェクト。 省略可能。|
+|targetattributedefinition|[attributedefinition](../resources/synchronization-attributedefinition.md) |この式にマップされる属性の定義。 省略可能。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[parseexpression response](../resources/synchronization-parseexpressionresponse.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

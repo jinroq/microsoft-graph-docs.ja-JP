@@ -1,37 +1,37 @@
 ---
 title: calendarGroup リソースの種類
-description: ユーザーの予定表のグループです。
+description: ユーザーカレンダーのグループ。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5b75ebf253276876129859be7d37ecb6748fc0d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949627"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569404"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
-ユーザーの予定表のグループです。
+ユーザーカレンダーのグループ。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド                                                      | 戻り値の型                        | 説明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
-| [予定表グループを一覧表示する](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) collection | ユーザーの予定表グループを取得します。                               |
+| [予定表グループを一覧表示する](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) コレクション | ユーザーの予定表グループを取得します。                               |
 | [予定表グループを作成する](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 新しい予定表グループを作成します。                                  |
 | [予定表グループを取得する](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 予定表グループ オブジェクトのプロパティと関係を読み取ります。 |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | calendarGroup オブジェクトを更新します。                                  |
-| [Delete](../api/calendargroup-delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
-| [予定表を一覧表示する](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 予定表グループ内の予定表を一覧表示する                           |
+| [削除](../api/calendargroup-delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
+| [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 予定表グループ内の予定表を一覧表示する                           |
 | [予定表を作成する](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | 予定表グループに新しい予定表を作成します。                    |
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 種類   | 説明                                                                                                                                                                                               |
+| プロパティ  | 型   | 説明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 名前      | String | グループの名前。                                                                                                                                                                                           |
+| name      | String | グループの名前。                                                                                                                                                                                           |
 | changeKey | String | 予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。 |
 | classId   | Guid   | クラス識別子。読み取り専用です。                                                                                                                                                                          |
 | id        | String | グループの一意識別子。読み取り専用です。                                                                                                                                                                 |
@@ -40,7 +40,7 @@ ms.locfileid: "27949627"
 
 | リレーションシップ | 型                               | 説明                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
-| 予定表    | [Calendar](calendar.md) collection | 予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用です。Null 許容型。 |
+| calendars    | [Calendar](calendar.md) collection | 予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用です。Null 許容型。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

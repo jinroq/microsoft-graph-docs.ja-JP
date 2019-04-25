@@ -1,36 +1,36 @@
 ---
 title: オープン拡張機能を作成する
-description: オープン拡張機能 (openTypeExtension オブジェクト) を作成し、カスタム プロパティを追加
+description: オープン拡張機能 (opentypeextension オブジェクト) を作成し、カスタムプロパティを追加する
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642710"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539957"
 ---
 # <a name="create-open-extension"></a>オープン拡張機能を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md)オブジェクト) を作成し、新規または既存のインスタンスは、サポートされているリソースのカスタム プロパティを追加します。
+オープン拡張機能 ([opentypeextension](../resources/opentypeextension.md)オブジェクト) を作成し、サポートされているリソースの新規または既存のインスタンスにカスタムプロパティを追加します。
 
-> **注:** Outlook のリソースを開いている拡張機能を作成する場合は、 [openTypeExtension のリソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)の**Outlook に固有の考慮事項**を参照してください。
+> **注:** outlook のリソースにオープン拡張機能を作成する場合は、「 [opentypeextension リソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)に**関する outlook 固有の考慮事項**」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-拡張機能を作成するリソースとアクセス許可によって委任された (アプリケーション) の種類を要求、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能を作成しているリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
-| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [グループ](../resources/group.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | 使用不可 | 使用不可 |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
@@ -38,7 +38,7 @@ ms.locfileid: "29642710"
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>新規のリソース インスタンスに拡張機能を作成する
 
-インスタンスを作成するために使用同じ残りの要求を使用します。
+インスタンスを作成するために使用するのと同じ REST 要求を使用します。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,13 +49,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注:** この構文は、サポートされているリソースのインスタンスを作成する一般的な方法を示しています。 これらのリソースのインスタンスを作成することを可能にするその他のすべてのポスト構文には、同様の方法でに開いている拡張機能の作成がサポートされています。
+>**注:** この構文は、サポートされているリソースインスタンスを作成する一般的な方法を示しています。 これらのリソースインスタンスを作成できる他のすべての POST 構文では、同様の方法でオープン拡張機能の作成がサポートされています。
 
-要求本文に、新規のリソース インスタンスのプロパティおよび_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
+要求本文に、新規のリソース インスタンスのプロパティおよび[拡張機能](#request-body)を含める方法については、_要求本文_のセクションをご覧ください。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>既存のリソース インスタンスに拡張機能を作成する
 
-要求でリソース インスタンスを識別し、**extensions** ナビゲーション プロパティで `POST` を行います。
+要求でリソース インスタンスを識別し、`POST` ナビゲーション プロパティで **** を行います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +71,9 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注:** この構文は、その中の拡張機能を作成するために、リソースのインスタンスを識別する一般的な方法を示しています。 同様の方法で開いている拡張機能を作成するこれらのリソースのインスタンスを識別することができるその他のすべての構文をサポートします。
+>**注:** この構文は、拡張機能を作成するために、リソースインスタンスを識別する一般的な方法を示しています。 これらのリソースインスタンスを識別できる他のすべての構文では、同様の方法でオープン拡張機能の作成がサポートされています。
 
-要求本文に_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
+要求本文に[拡張機能](#request-body)を含める方法については、_要求本文_のセクションをご覧ください。
 
 ## <a name="path-parameters"></a>パス パラメーター
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>要求本文
 
-次の必要な名前/値ペアとその他のカスタム データの[openTypeExtension](../resources/opentypeextension.md)の場合、JSON の本体を提供します。 JSON ペイロード内のデータは、プリミティブ型か、プリミティブ型の配列にすることができます。
+次の必須の名前と値のペアと追加のカスタムデータを使用して、 [opentypeextension](../resources/opentypeextension.md)の JSON 本文を指定します。 JSON ペイロード内のデータは、プリミティブ型か、プリミティブ型の配列にすることができます。
 
 | 名前       | 値 |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | Microsoft Graph の opentypeextension |
 | extensionName | %unique_string% |
 
 _新しい_リソース インスタンスに拡張機能を作成するときは、新しい **openTypeExtension** オブジェクトに加えて、関連するプロパティの JSON 表現を指定して、このようなリソース インスタンスを作成します。
@@ -105,8 +105,8 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 
 応答コードは、操作によって `201 Created` または `202 Accepted` になります。
 
-リソース インスタンスを作成するために使用同じ操作を使用して拡張機能を作成する操作は、同じ操作を使用して、拡張子のないリソースのインスタンスを作成するときに返される応答コードを返します。
-として一覧表示されている[上](#create-an-extension-in-a-new-resource-instance)インスタンスを作成するための対応するトピックを参照してください。
+リソースインスタンスの作成に使用したのと同じ操作を使用して拡張機能を作成すると、操作を使用して拡張機能なしでリソースインスタンスを作成したときに返されるものと同じ応答コードが返されます。
+それぞれ対応するインスタンスの作成については[上記](#create-an-extension-in-a-new-resource-instance)のトピックをご覧ください。
 
 ### <a name="response-body"></a>応答本文
 
@@ -127,7 +127,7 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 
   - 型 `Microsoft.Graph.OpenTypeExtension`。
   - 拡張情報名 "Com.Contoso.Referral"。
-  - JSON ペイロード内の 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`と`dealValue`。
+  - JSON ペイロードに3つのカスタムプロパティとして保存さ`companyName`れる`expirationDate`追加データ`dealValue`:、、。
 
 <!-- {
   "blockType": "request",
@@ -169,7 +169,7 @@ POST https://graph.microsoft.com/beta/me/messages
 - 要求で指定されている既定のプロパティ **extensionName**。
 - 要求で指定されている、3 つのカスタム プロパティとして格納されるカスタム データ。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "response",

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
 ms.openlocfilehash: 369068dd48b9173032542303e3fd9831d25e6e9e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567572"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet リソースの種類
 
@@ -32,10 +32,10 @@ ms.locfileid: "30480293"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 種類                    | 説明                                            |
+| プロパティ    | 型                    | 説明                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identity](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。 |
-| デバイス      | [Identity](identity.md) | 省略可能。このアクションに関連付けられているデバイス。      |
+| application | [ID](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。 |
+| デバイス      | [ID](identity.md) | 省略可能。このアクションに関連付けられているデバイス。      |
 | user        | [Identity](identity.md) | 省略可能。このアクションに関連付けられているユーザー。        |
 
 ## <a name="remarks"></a>注釈 

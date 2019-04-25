@@ -3,11 +3,11 @@ title: api リソースの種類
 description: Web API アプリケーションの設定を指定します。
 localization_priority: Normal
 ms.openlocfilehash: 9d9259911464feb545b97a9eb8585723a9c3e20e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521447"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535692"
 ---
 # <a name="api-resource-type"></a>api リソースの種類
 
@@ -19,8 +19,8 @@ Web API アプリケーションの設定を指定します。
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|requestedAccessTokenVersion|Int32| API の現在のリソースに許可されたアクセス トークンのバージョンを指定します。 使用可能な値は、1 または 2 です。  |
-|oauth2PermissionScopes|[permissionScope](permissionscope.md)コレクション| Web アプリケーションの API (リソース) をクライアント アプリケーションに公開する OAuth 2.0 のアクセス許可のスコープのコレクション。 同意の中には、クライアント アプリケーションにこれらのアクセス許可のスコープを付与する可能性があります。 |
+|requestedAccessTokenVersion|Int32| 現在の API リソースに対して承認されたアクセストークンのバージョンを指定します。 可能な値は1または2です。  |
+|oauth2PermissionScopes|[permissionscope](permissionscope.md)コレクション| web API (リソース) アプリケーションがクライアントアプリケーションに公開する OAuth 2.0 アクセス許可スコープのコレクション。 これらのアクセス許可スコープは、同意時にクライアントアプリケーションに付与されることがあります。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

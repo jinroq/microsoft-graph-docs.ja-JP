@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 49475f15520f02cc36bb1bf37af9a5849a8ee245
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544678"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiindicator: deletetiindicators
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366960"
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | ThreatIndicators application.readwrite.ownedby |
+| 委任 (職場または学校のアカウント)     | ThreatIndicators.ReadWrite.OwnedBy |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | ThreatIndicators application.readwrite.ownedby |
+| アプリケーション                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | パラメーター    | 型        | 説明 |
 |:-------------|:------------|:------------|
-|value|String コレクション| 削除する tiindicator `id`s のコレクションです。 |
+|value|String collection| 削除する tiindicator `id`s のコレクションです。 |
 
 ## <a name="response"></a>応答
 

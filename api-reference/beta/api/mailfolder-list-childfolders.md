@@ -1,21 +1,21 @@
 ---
 title: childFolders を一覧表示する
-description: '指定したフォルダーの下のフォルダーのコレクションを取得します。 使用することができます、 `.../me/MailFolders` 、最上位レベルを取得するショートカット '
+description: '指定したフォルダーの下のフォルダー コレクションを取得します。 `.../me/MailFolders`ショートカットを使用してトップレベルを取得できます。 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 96dec9ca1ba6dbd8e50e8eb978756a98657d2c9d
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540880"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定したフォルダーの下のフォルダーのコレクションを取得します。`.../me/MailFolders` ショートカットを使用して、最上位フォルダーのコレクションを取得して、別のフォルダーに移動することができます。
+指定したフォルダーの下のフォルダー コレクションを取得します。`.../me/MailFolders` ショートカットを使用すると、最上位フォルダーのコレクションを取得して、別のフォルダーに移動することができます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="examples"></a>例
 
-### <a name="example-1-list-mail-folders"></a>例 1: メール フォルダーの一覧
+### <a name="example-1-list-mail-folders"></a>例 1: メールフォルダーを一覧表示する
 
 #### <a name="request"></a>要求
 
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>例 2: メール] 検索フォルダーを一覧表示します。
+### <a name="example-2-list-mail-search-folders"></a>例 2: メール検索フォルダーを一覧表示する
 
 #### <a name="request"></a>要求
 

@@ -1,36 +1,36 @@
 ---
 title: educationSynchronizationConnectionSettings リソースの種類
-description: 'プロバイダー接続の設定を表します。 これにより、Api のプロバイダーに接続する方法を把握するシステムです。 '
+description: 'プロバイダー接続の設定を表します。 これにより、システムはプロバイダ api への接続方法を知ることができます。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: f6af6851e1e9d327b05c9ca1c7ed5929335a6e17
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542992"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロバイダー接続の設定を表します。 これにより、Api のプロバイダーに接続する方法を把握するシステムです。 
+プロバイダー接続の設定を表します。 これにより、システムはプロバイダ api への接続方法を知ることができます。 
 
-> **注:** この複合型は抽象です。 特定の種類の接続設定のリストを参照してください。
+> **注:** この複合型は抽象型です。 一覧にある特定の種類の接続設定を参照してください。
 
 ## <a name="derived-types"></a>派生型
 | 型 | 説明 | 
 |:-|:-|
-| [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | OAuth1 接続の設定を提供するのにには、この型を使用します。 |
-| [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | OAuth2 クライアントの資格情報の付与の接続の設定を提供するのにには、この型を使用します。 |
+| [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | この型を使用して、OAuth1 の接続設定を提供します。 |
+| [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | この種類を使用して、OAuth2 クライアント資格情報の付与に接続設定を提供します。 |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **clientId** | String |  クライアント ID をプロバイダーに接続するために使用します。 |
-| client_secret | String |  プロバイダーへの接続を認証するためにクライアント シークレット。 |
+| **clientId** | String |  プロバイダーへの接続に使用されるクライアント ID。 |
+| **clientSecret** | String |  プロバイダーへの接続を認証するクライアントシークレット。 |
 <!--
 {
   "type": "#page.annotation",

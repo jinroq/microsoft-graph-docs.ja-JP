@@ -1,24 +1,24 @@
 ---
-title: fileHash リソースの種類
-description: ステートフルな暗号化などの場所に依存したファイルのハッシュについてを説明します。
+title: filehash リソースの種類
+description: ファイルハッシュ (暗号化と場所に依存) に関するステートフルな情報を含みます。
 localization_priority: Normal
 ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876770"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564772"
 ---
-# <a name="filehash-resource-type"></a>fileHash リソースの種類
+# <a name="filehash-resource-type"></a>filehash リソースの種類
 
-ステートフルな暗号化などの場所に依存したファイルのハッシュについてを説明します。
+ファイルハッシュ (暗号化と場所に依存) に関するステートフルな情報を含みます。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|hashType|fileHashType|ファイル ハッシュ タイプを入力します。 可能な値は、`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256` です。|
-|して|String|ファイル ハッシュの値です。|
+|hashtype|fileHashType|ファイルハッシュの種類。 可能な値は、`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256` です。|
+|hashvalue|String|ファイルハッシュの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

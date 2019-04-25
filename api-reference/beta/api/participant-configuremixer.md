@@ -1,21 +1,21 @@
 ---
 title: '参加者: configureMixer'
-description: 通話の参加者に別のオーディオを混合する方法を構成します。
+description: マルチパーティの会話で、さまざまな参加者に対して音声を混在させる方法を構成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0be23ec4c9e7835c919328655e89880003546472
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539475"
 ---
 # <a name="participant-configuremixer"></a>参加者: configureMixer
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通話の参加者に別のオーディオを混合する方法を構成します。
+マルチパーティの会話で、さまざまな参加者に対して音声を混在させる方法を構成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "29530042"
 | :-------------- | :------------------------------------------ |
 | 委任 (職場または学校のアカウント)     | サポート対象外        |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外        |
-| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)コレクション| ミキサーの設定は、オーディオの参加者が指定されているのをレベルです。|
-|ClientContext|String|クライアントのコンテキスト。|
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)コレクション| 特定の音声参加者のミキサーレベルの構成。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。
+この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -102,7 +102,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知の操作が完了しました
+##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,27 +1,27 @@
 ---
 title: governanceRoleAssignmentRequestStatus リソースの種類
-description: GovernanceRoleAssignmentRequest の状態を表します。
+description: governanceRoleAssignmentRequest の状態を表します。
 localization_priority: Normal
 ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547433"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の状態を表します。
+[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の状態を表します。
 
 
 ## <a name="properties"></a>プロパティ
 プロパティ       | 型 |説明|
 |:----|:-------------|:-----|
-|status |String| 役割の割り当て要求のステータス。 値は、`InProgress`または`Closed`。|
-|副状態 |String| 役割の割り当て要求のサブ状態です。 値は、 `Accepted`、 `PendingEvaluation`、 `Granted`、 `Denied`、 `PendingProvisioning`、 `Provisioned`、 `PendingRevocation`、 `Revoked`、 `Canceled`、 `Failed`、 `PendingApprovalProvisioning`、 `PendingApproval`、 `FailedAsResourceIsLocked`、 `PendingAdminDecision`、 `AdminApproved`、 `AdminDenied`、`TimedOut`と`ProvisioningStarted`。|
-|statusDetails       |[keyValue](../resources/keyvalue.md)コレクション| 役割の割り当て要求の状態の詳細。 別のルールの評価の結果を表します。 |
+|status |String| 役割の割り当て要求の状態。 値には、 `InProgress`また`Closed`はを指定できます。|
+|サブ |String| 役割の割り当て要求のサブ状態。 値には、 `Accepted`、 `PendingEvaluation`、 `Granted`、 `Denied`、 `PendingProvisioning`、 `Provisioned`、 `PendingRevocation`、 `Revoked`、 `Canceled`、 `Failed`、 `PendingApprovalProvisioning`、 `PendingApproval`、 `FailedAsResourceIsLocked`、 `PendingAdminDecision`、、、 `TimedOut`、、 `ProvisioningStarted`の各値を指定`AdminApproved` `AdminDenied`できます。|
+|statusdetails       |[keyvalue](../resources/keyvalue.md) コレクション| 役割の割り当て要求の状態の詳細。 さまざまなルールの評価結果を表します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

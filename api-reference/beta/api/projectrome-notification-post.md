@@ -1,19 +1,19 @@
 ---
-title: 作成し、通知を送信します。
-description: '作成し、Microsoft Graph を使用してユーザーを対象とする通知を送信します。 通知は、フィード ストア、Microsoft Graph の通知に格納され、ユーザーがサインインしてデバイスのすべてのエンドポイント上のすべてのアプリケーション クライアントに送信されます。  '
+title: 通知を作成し送信する
+description: 'Microsoft Graph を使用してユーザーを対象にした通知を作成し、送信します。 通知は Microsoft Graph 通知フィードストアに格納され、ユーザーがサインインしているすべてのデバイスエンドポイント上のすべてのアプリクライアントに送信されます。  '
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528446"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546399"
 ---
-# <a name="create-and-send-a-notification"></a>作成し、通知を送信します。
+# <a name="create-and-send-a-notification"></a>通知を作成し送信する
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作成し、Microsoft Graph を使用してユーザーを対象とする通知を送信します。 通知は、フィード ストア、Microsoft Graph の通知に格納され、ユーザーがサインインしてデバイスのすべてのエンドポイント上のすべてのアプリケーション クライアントに送信されます。  
+Microsoft Graph を使用してユーザーを対象にした通知を作成し、送信します。 通知は Microsoft Graph 通知フィードストアに格納され、ユーザーがサインインしているすべてのデバイスエンドポイント上のすべてのアプリクライアントに送信されます。  
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -32,12 +32,12 @@ POST /me/notifications/
 ## <a name="request-headers"></a>要求ヘッダー
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|Authorization | string |承認ヘッダーを使用して、呼び出し元の関係者の資格情報を渡します。 ベアラー トークン 必須です。 |
+|Authorization | string |認証ヘッダーは、呼び出し元の資格情報を渡すために使用されます。 ベアラー {token}。 必須です。 |
 ## <a name="request-body"></a>要求本文
-要求の本文には、[通知](../resources/projectrome-notification.md)オブジェクトの JSON の形式を指定します。
+要求本文で、[通知](../resources/projectrome-notification.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、 `201 Created` 、通知が正常に作成され保存されていることを示す応答コード。 
+成功した場合、このメソッド`201 Created`は通知が正常に作成され、保存されたことを示す応答コードを返します。 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
 要求の例を次に示します。

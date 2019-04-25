@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 698d021e6038694442e5b3a6f4b3eff2a50e9943
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792126"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566459"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey リソースの種類
 
@@ -31,14 +31,14 @@ SideLoadingKey エンティティは、テナントの基幹業務アプリを i
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|サイドローディングキーの一意 Id。|
+|id|String|サイドローディングキーの一意 Id。|
 |value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
 |displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
 |説明|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
 |totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
-|lastUpdatedDateTime|文字列|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
+|lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

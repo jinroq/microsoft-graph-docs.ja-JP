@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566368"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userpfxps/スキーム列挙型
 
@@ -22,12 +22,12 @@ ms.locfileid: "31776277"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|まだ文書化されていません|
-|pkcs1|1-d|まだ文書化されていません|
-|oaepSha1|pbm-2|まだ文書化されていません|
-|oaepSha256|1/3|まだ文書化されていません|
-|oaepSha384|2/4|まだ文書化されていません|
-|oaepSha512|5|まだ文書化されていません|
+|なし|.0|まだ文書化されていません|
+|pkcs1|1 |まだ文書化されていません|
+|oaepSha1|2 |まだ文書化されていません|
+|oaepSha256|3 |まだ文書化されていません|
+|oaepSha384|4 |まだ文書化されていません|
+|oaepSha512|5 |まだ文書化されていません|
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: リスト favoritePlans
-description: ユーザーがお気に入りとしてマークされている plannerPlans の一覧を取得します。 お気に入りとして計画をマークするには、plannerUser リソースを更新します。
+title: お気に入りのプランを一覧表示する
+description: ユーザーによってお気に入りとしてマークされているプランの一覧を取得します。 プランをお気に入りとしてマークするには、プランのユーザーリソースを更新します。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c189b3a3a7ed6d36272c05e9614fd6d0327600d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519123"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538723"
 ---
-# <a name="list-favoriteplans"></a>リスト favoritePlans
+# <a name="list-favoriteplans"></a>お気に入りのプランを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーがお気に入りとしてマークされている[plannerPlans](../resources/plannerplan.md)の一覧を取得します。 お気に入りとして計画をマークするには、 [plannerUser リソースを更新](planneruser-update.md)します。
+ユーザーによってお気に入りとしてマークされている[プラン](../resources/plannerplan.md)の一覧を取得します。 プランをお気に入りとしてマークするには、プランの[ユーザーリソースを更新](planneruser-update.md)します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -38,12 +38,12 @@ GET /users/<id>/planner/favoritePlans
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[plannerPlan](../resources/plannerplan.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[プラン](../resources/plannerplan.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 要求の例を次に示します。

@@ -1,26 +1,26 @@
 ---
 title: automaticRepliesMailTips リソースの種類
-description: メールボックスに設定されているすべての自動返信のメール ヒントです。
+description: メールボックスに設定されている自動応答に関するメールヒント。
 localization_priority: Normal
 ms.openlocfilehash: bb477979b975996f70e4b8ac624befab7f254f46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569453"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips リソースの種類
 
 
-メールボックスに設定されているすべての自動返信の[メール ヒント](../resources/mailtips.md)にします。
+メールボックスに設定されている自動応答に関する[メールヒント](../resources/mailtips.md)。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:-----|:-----|:-----|
-| message | String | 自動応答メッセージ。 |
-| messageLanguage | [localeInfo](../resources/localeinfo.md) | 自動応答メッセージの言語。 |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自動応答を終了する日時。 |
-| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自動応答を開始する日時。 |
+| メッセージ​​ | String | 自動応答メッセージ。 |
+| messageLanguage | [localeInfo](../resources/localeinfo.md) | 自動応答メッセージが含まれる言語。 |
+| scheduledendtime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自動応答を終了する日付と時刻を指定します。 |
+| scheduledstarttime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自動応答が開始される日付と時刻。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

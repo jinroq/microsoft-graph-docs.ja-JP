@@ -1,21 +1,21 @@
 ---
 title: 'ユーザー: translateExchangeIds'
-description: 形式との間、Outlook に関連するリソースの識別子を変換します。
+description: Outlook 関連リソースの ID の形式を変換します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643616"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536499"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-形式との間、Outlook に関連するリソースの識別子を変換します。
+Outlook 関連リソースの ID の形式を変換します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,8 +23,8 @@ ms.locfileid: "29643616"
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:----------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント) | User.ReadBasic、User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| 委任 (個人用 Microsoft アカウント) | User.ReadBasic、User.Read、User.ReadWrite |
+| 委任 (職場または学校のアカウント) | ユーザー. readbasic、user. 読み取り、ユーザー. 読み取り/書き込み。すべてのユーザー。すべてのユーザーに対して。 |
+| 委任 (個人用 Microsoft アカウント) | ユーザー. readbasic、user. 読み取り/書き込み |
 | アプリケーション | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -46,34 +46,34 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-| inputIds | Edm.String コレクション | 変換識別子のコレクションです。 コレクション内のすべての識別子は、同じソース ID の種類を持つ必要があり、同じメールボックス内のアイテムにする必要があります。 このコレクションの最大サイズは、1000 の文字列です。 |
-| sourceIdType | exchangeIdFormat | ID の種類の識別子の`InputIds`のパラメーターです。 |
-| targetIdType | exchangeIdFormat | 要求された ID の種類に変換します。 |
+| inputIds | Edm コレクション | 変換する識別子のコレクション。 コレクション内のすべての識別子のソース ID の種類は同じである必要があり、同じメールボックス内のアイテムである必要があります。 このコレクションの最大サイズは1000文字列です。 |
+| sourceIdType | exchangeIdFormat | `InputIds`パラメーターの識別子の id の種類。 |
+| targetIdType | exchangeIdFormat | 変換先となる要求された ID の種類。 |
 
-### <a name="exchangeidformat-values"></a>exchangeIdFormat 値
+### <a name="exchangeidformat-values"></a>exchangeIdFormat の値
 
 | 値 | 説明 |
 |:-------|:------------|
-| エントリ Id | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
-| ewsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
-| immutableEntryId | バイナリ MAPI と互換性のある変更不可能な ID 形式です。 |
-| restId | Microsoft Graph で使用される既定の ID 形式です。 |
-| restImmutableEntryId | Microsoft Graph で使用される ID の変更不可能な形式です。 |
+| entryId | MAPI クライアントによって使用されるバイナリエントリ ID 形式。 |
+| ewsId | Exchange Web サービスクライアントによって使用される ID 形式。 |
+| immutableEntryId | バイナリ MAPI 互換の不変 ID 形式。 |
+| restId | Microsoft Graph で使用される既定の ID 形式。 |
+| restImmutableEntryId | Microsoft Graph で使用される不変の ID 形式。 |
 
-バイナリ フォーマット (`entryId`と`immutableEntryId`) は、base64 でエンコードされた URL セーフであります。 URL safeness は、base64 エンコードのバイナリ データの次のように変更することによって実装されます。
+バイナリ形式 (`entryId`および`immutableEntryId`) は、URL セーフな base64 でエンコードされます。 URL-safeness は、バイナリデータの base64 エンコードを次のように変更することによって実装されます。
 
-- 交換`+`で`-`
-- 交換`/`で`_`
-- 末尾の埋め込み文字を削除する (`=`)
-- 示す数のスペース文字は元の文字列の末尾に整数値を追加する (`0`、 `1`、または`2`)
+- 置換`+`後`-`
+- 置換`/`後`_`
+- 末尾のパディング文字を削除`=`する ()
+- 文字列の末尾に、元の文字の数 (`0`、 `1`、、または`2`) を示す整数を追加します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[convertIdResult](../resources/convertidresult.md)のコレクションです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[convertIdResult](../resources/convertidresult.md)コレクションを返します。
 
 ## <a name="example"></a>例
 
-次の使用例は、REST API の通常の形式から、複数の識別子を変換する方法を示しています (`restId`) に残りの部分の変更不可能な形式 (`restImmutableEntryId`)。
+次の例は、複数の識別子を標準の rest API 形式 (`restId`) から不変形式 (`restImmutableEntryId`) に変換する方法を示しています。
 
 ### <a name="request"></a>要求
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>応答
 
-応答の例を次のとおりです。
+応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.convertIdResult",

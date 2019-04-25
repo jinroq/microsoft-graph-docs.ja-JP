@@ -1,31 +1,31 @@
 ---
-title: deviceDetail リソースの種類
-description: サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが管理される Azure の AD の場合は、デバイスのブラウザーおよび OS の情報などの情報に含まれています。
+title: devicedetail リソースの種類
+description: サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが Azure AD で管理されている場合、デバイスブラウザーや OS 情報などの情報が含まれます。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 18d55e397cf6c892cd37aea930d446c630017a92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971362"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543171"
 ---
-# <a name="devicedetail-resource-type"></a>deviceDetail リソースの種類
-サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが管理される Azure の AD の場合は、デバイスのブラウザーおよび OS の情報などの情報に含まれています。
+# <a name="devicedetail-resource-type"></a>devicedetail リソースの種類
+サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが Azure AD で管理されている場合、デバイスブラウザーや OS 情報などの情報が含まれます。
 
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ブラウザー|String|使用のブラウザー情報の署名に。|
-|deviceId|String|署名に使用するデバイスの UniqueID を意味します。|
-|displayName|String|署名に使用するデバイスの名前を参照します。|
-|isCompliant|Boolean|デバイスが準拠しているかどうかどうかを示します。|
-|isManaged|Boolean|か、デバイスが管理されていることを示します。|
-|operatingSystem|String|OS の名前と署名に使用されるバージョンを示します。|
-|trustType|String|署名付きのデバイスは、ワークプ レースに参加して、AzureAD に参加して、ドメインに参加しているかどうかに関する情報を示します。 |
+|ブラウザー|String|サインインに使用するのブラウザー情報を示します。|
+|deviceId|String|サインインに使用されているデバイスの UniqueID を参照します。|
+|displayName|String|サインインに使用されているデバイスの名前を表します。|
+|isCompliant|ブール値|デバイスが準拠しているかどうかを示します。|
+|isManaged|ブール値|デバイスが管理されているかどうかを示します。|
+|operatingSystem|String|サインインに使用される OS の名前とバージョンを示します。|
+|trustType|文字列|サインインしているデバイスが Workplace join、AzureAD join、ドメイン参加しているかどうかについての情報を示します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

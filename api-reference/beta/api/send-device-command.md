@@ -1,19 +1,19 @@
 ---
-title: デバイス コマンドを送信します。
-description: 'この API は、Microsoft アカウントに関連付けられているデバイスのコマンドをプロジェクトのローマの機能を使用します。 GET の呼び出しを実行した後は`me/devices`、デバイスにコマンドを実行するデバイスの ID を渡します。 コマンドの 2 つの種類がサポートされている: LaunchURI と AppServices。 LaunchURI を使用している場合は、*型*と*ペイロード*のパラメーターを指定します。 AppService 呼び出しに指定します '
+title: デバイス コマンドを送信する
+description: 'この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 launchuri と appservices という2種類のコマンドがサポートされています。 launchuri を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 '
 localization_priority: Normal
 ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537530"
 ---
-# <a name="send-device-command"></a>デバイス コマンドを送信します。
+# <a name="send-device-command"></a>デバイス コマンドを送信する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API は、Microsoft アカウントに関連付けられているデバイスのコマンドをプロジェクトのローマの機能を使用します。 GET の呼び出しを実行した後は`me/devices`、デバイスにコマンドを実行するデバイスの ID を渡します。 コマンドの 2 つの種類がサポートされている: LaunchURI と AppServices。 LaunchURI を使用している場合は、*型*と*ペイロード*のパラメーターを指定します。 AppService 呼び出しには、*型*、*ペイロード*、 *packageFamilyName*、および*appServiceName*パラメーターを指定します。
+この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 launchuri と appservices という2種類のコマンドがサポートされています。 launchuri を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 *type*、 *payload*、 *efamilyname*、 *appservicename*の各パラメーターを指定します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -44,7 +44,7 @@ POST me/devices/{id}/commands
 
 ## <a name="request-body"></a>要求本文
 
-要求の本文には、コマンドのプロパティの JSON 表現を指定します。
+要求本文で、コマンドプロパティの JSON 表記を指定します。
 
 ```json
 {
@@ -76,23 +76,23 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Command Properties 
+## <a name="command-properties"></a>コマンドのプロパティ 
 
-|**Name**|**型**|**説明**|
+|**名前**|**Type**|**説明**|
 |:----|:------|:------|
-|payload | microsoft.graph.json| ペイロードのアプリケーション サービスに送信するか、デバイスの URI を起動します。 |
-|responsePayload | microsoft.graph.json| ペイロードは、ターゲット ・ デバイスから返されます。 |
-|postBackURI | String | 投稿は、更新の後続の通知を送信する URI をバックアップします。 |
-|packageFamilyName | String | Windows のアプリケーションのパッケージ ファミリ名。 |
-|appServiceName | String | 対象のアプリケーションで定義されているアプリケーション サービスの名前です。 場合は、アプリケーション サービスを起動する必要があります。 |
-|type| String | LaunchURI または AppService です。 |
+|payload | microsoft graph| アプリサービスに送信するペイロード、またはデバイスで URI を起動するためのペイロード。 |
+|responsepayload | microsoft graph| ターゲットデバイスから返されたペイロード。 |
+|postBackURI | String | 今後の更新通知を送信するための URI をポストバックします。 |
+|パッケージ efamilyname | String | Windows パッケージファミリアプリケーションの名前。 |
+|appservicename | String | ターゲットアプリケーションによって定義された app service の名前です。 app service を開始する場合に必要です。 |
+|type| String | launchuri または AppService。 |
 |id| String | デバイスに送信されたコマンドの ID。 |
-|actionStatus | String | コマンドの[ステータス](get-device-command-status.md)です。 |
-|エラー| String| ターゲット アプリケーションからの要求に関連付けられているエラーです。 |
+|actionstatus | String | コマンドの[状態](get-device-command-status.md)を示します。 |
+|error| String| ターゲットアプリケーションからの要求に関連付けられているエラー。 |
 
-## <a name="launch-uri-example"></a>URI の使用例を起動します。
+## <a name="launch-uri-example"></a>開始 URI の例
 
-LaunchURI 要求の例を次のとおりです。URI またはターゲット ・ デバイス上のアプリケーションが起動されます。 URI またはアプリケーションを起動するには、デバイスの ID を使用して投稿を発行します (GET の呼び出しを行うから取得した`me/devices`)。 *型*パラメーターを*LaunchURI*に設定し、URI 値を指定して次のようにhttps://bing.com。
+ここでは、launchuri 要求の例を示します。ターゲットデバイス上の URI またはアプリケーションを起動します。 URI またはアプリを起動するには、デバイスの ID を使用して POST を発行します (GET 呼び出し`me/devices`の実行によって取得されます)。 *型*パラメーターを*launchuri*に設定し、などの URI 値をhttps://bing.com指定します。
 
 #### <a name="request"></a>要求
 
@@ -144,11 +144,11 @@ HTTP/1.1 201 OK
 ```
 
 
-## <a name="app-service-example"></a>アプリケーション サービスの例
+## <a name="app-service-example"></a>App service の例
 
-ここでは、デバイスで、アプリケーションのサービスのクエリの例です。 アプリケーション サービスを使用するデバイスの id を使用して POST 呼び出しを行う必要があります (GET の呼び出しを行うから取得した`me/devices`)。 次の例を使用するには、ターゲット ・ デバイスに[ローマのアプリケーション](https://aka.ms/romanapp)をインストールしてください。
+ここでは、デバイス上の app service に対してクエリを実行する例を示します。 アプリサービスを使用するには、デバイスの id を使用して POST 呼び出しを行う必要があります (GET `me/devices`呼び出しの実行によって取得)。 次の例を使用するには、ターゲットデバイスに[ローマアプリ](https://aka.ms/romanapp)をインストールする必要があります。
 
-呼び出しでは、いくつかの追加プロパティを設定する必要があります。 *型*は、 *AppService*に設定する必要があります。、 *AppServiceName*は、アプリケーションで定義されているアプリケーション サービスの名前に設定する必要があります。、 *PackageFamilyName*は、アプリケーション マニフェスト、および*ペイロード*で定義されているパッケージのファミリ名を設定する必要があります。キーと呼び出し先のアプリケーション サービスの値を保持します。
+呼び出しでは、いくつかの追加プロパティを設定する必要があります。 *Type*を*AppService*に設定する必要があります。 *appservicename*は、アプリケーションで定義されている app service ** の名前に設定する必要があります。また、アプリマニフェストで定義されているパッケージファミリー名と*ペイロード*に設定する必要があります。ターゲットアプリケーション内で呼び出すサービスのキーと値を保持します。
 
 #### <a name="request"></a>要求
 

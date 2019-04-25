@@ -1,28 +1,28 @@
 ---
 title: educationAssignmentPointsGradeType リソースの種類
-description: '**Assignments.grading**プロパティと共に使用します。 これは、educationAssignmentGradeType のサブクラスです。'
+description: '**assignments**プロパティと組み合わせて使用します。 これは、educationAssignmentGradeType のサブクラスです。'
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 567bff38f8a20456dffffdd91775a1e32852fe20
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543120"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Assignments.grading**プロパティと共に使用します。 これは、 [educationAssignmentGradeType](educationassignmentgradetype.md)のサブクラスです。
+**assignments**プロパティと組み合わせて使用します。 これは、 [educationAssignmentGradeType](educationassignmentgradetype.md)のサブクラスです。
 
-これは、割り当てが焼き付けるし、この作業項目に各受講者が達成できるポイントの最大数を格納することを示します。 割り当てに設定すると、送信するたびに、各受講者用のポイントを格納するために関連付けられている[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)プロパティが表示されます。
+これは、割り当てが採点され、各学生がこの作業項目に対して達成できる最大ポイント数を格納することを示します。 割り当てに対してこのプロパティを設定すると、各学生のポイントの保存用に、各送信に関連付けられている[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)プロパティが取得されます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|maxPoints|単精度浮動小数点型 (Single)| 最大は、この割り当ての可能性を指しています。  |
+|maxpoints|1 行| この割り当てで可能な最大ポイント。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

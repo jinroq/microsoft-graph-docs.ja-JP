@@ -1,19 +1,19 @@
 ---
-title: リスト servicePrincipal 推移的な所属するグループ
-description: このサービス主体のメンバーであるグループおよびディレクトリの役割を取得します。 この操作では、推移的では、このサービス ・ プリンシパルには、入れ子にされたメンバーのすべてのグループが含まれます。
+title: serviceprincipal 推移的な memberOf のリスト
+description: このサービスプリンシパルがメンバーになっているグループとディレクトリロールを取得します。 この操作は推移的で、このサービスプリンシパルがネストされたメンバーであるすべてのグループが含まれます。
 localization_priority: Normal
 ms.openlocfilehash: 4588f5ea4c6190b3743988c1d97bfd5caacbfaa4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526229"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545150"
 ---
-# <a name="list-serviceprincipal-transitive-memberof"></a>リスト servicePrincipal 推移的な所属するグループ
+# <a name="list-serviceprincipal-transitive-memberof"></a>serviceprincipal 推移的な memberOf のリスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このサービス主体のメンバーであるグループおよびディレクトリの役割を取得します。 この操作では、推移的では、このサービス ・ プリンシパルには、入れ子にされたメンバーのすべてのグループが含まれます。
+このサービスプリンシパルがメンバーになっているグループとディレクトリロールを取得します。 この操作は推移的で、このサービスプリンシパルがネストされたメンバーであるすべてのグループが含まれます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

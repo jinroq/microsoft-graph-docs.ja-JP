@@ -1,25 +1,25 @@
 ---
 title: " averageComparativeScore リソースの種類"
-description: このリソースには、さまざまなスコープ (業界 (縦)、会社の座席のサイズというように、平均での平均値など) および (識別情報、データ、デバイス、アプリケーション、インフラストラクチャ) のコントロールの分類でさまざまなさまざまなデータが含まれています。
+description: このリソースには、さまざまな範囲 (たとえば、業種別の平均、企業の座席サイズ別の平均)、コントロールカテゴリ (id、データ、デバイス、アプリ、インフラストラクチャ) に基づいて、さまざまなスコアが含まれています。
 localization_priority: Normal
 ms.openlocfilehash: c32c1349edd70e80c1bf0fb12a36bd07e06ed39f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834595"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535439"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>averageComparativeScore リソースの種類
 
-このリソースには、さまざまなスコープ (業界 (縦)、会社の座席のサイズというように、平均での平均値など) および (識別情報、データ、デバイス、アプリケーション、インフラストラクチャ) のコントロールの分類でさまざまなさまざまなデータが含まれています。
+このリソースには、さまざまな範囲 (たとえば、業種別の平均、企業の座席サイズ別の平均)、コントロールカテゴリ (id、データ、デバイス、アプリ、インフラストラクチャ) に基づいて、さまざまなスコアが含まれています。
 
-|プロパティ |種類 |説明 |
+|プロパティ |型 |説明 |
 |:--|:--|:--|
-|   単位   |   String  |   範囲の種類 (、AllTenants、合計座席数、IndustryTypes)。  |
-|   averageScore    |   倍精度浮動小数点数  | 指定された基準内での平均スコアです。 |
-|   deviceScore |   倍精度浮動小数点数  | 指定された基準内での平均スコアです。 |
-|   dataScore   |   倍精度浮動小数点数  | 指定された基準内での平均スコアです。 |
-|   identityScore   |   倍精度浮動小数点数  | 指定された基準内での平均スコアです。 |
+|   だけ   |   String  |   範囲の種類 (alltenants、totalseats、IndustryTypes)。  |
+|   averageScore    |   倍精度浮動小数点数  | 指定された基準内の平均スコア。 |
+|   デバイスコア |   倍精度浮動小数点数  | 指定された基準内の平均スコア。 |
+|   datascore   |   倍精度浮動小数点数  | 指定された基準内の平均スコア。 |
+|   「id」   |   倍精度浮動小数点数  | 指定された基準内の平均スコア。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

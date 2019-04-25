@@ -1,26 +1,26 @@
 ---
-title: settingTemplateValue リソースの種類
-description: 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
+title: settingtemplatevalue リソースの種類
+description: 設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 localization_priority: Normal
 ms.openlocfilehash: 0cb3376177e3a4efcae54a591a083914db6b56d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549693"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
+# <a name="settingtemplatevalue-resource-type"></a>settingtemplatevalue リソースの種類
 
-設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
+設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 
 ### <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|defaultValue|文字列| 設定の既定値です。 |
-|説明|文字列| 設定の説明です。 |
-|名前|String| 設定の名前です。 |
-|種類|文字列| 設定の種類です。 |
+|defaultValue|String| 設定の既定値。 |
+|description|String| 設定の説明。 |
+|name|String| 設定の名前。 |
+|type|String| 設定の種類。 |
 
 ### <a name="json-representation"></a>JSON 表記
 

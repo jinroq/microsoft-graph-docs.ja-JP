@@ -5,15 +5,13 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540906"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 mailFolder とその内容を別の mailFolder にコピーします。
 
@@ -37,10 +35,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須です。 |
+| Authorization | `Bearer {token}`. 必須。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -49,18 +46,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-|destinationId|String|フォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
+|destinationId|String|フォルダー ID、またはよく知られているフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文の[mailFolder](../resources/mailfolder.md)リソース。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[mailfolder](../resources/mailfolder.md)リソースを返します。
 
 ## <a name="example"></a>例
 
 以下は、この API を呼び出す方法の例です。
 
 ##### <a name="request"></a>要求
-
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -68,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -82,7 +78,6 @@ Content-length: 44
 以下は、応答の例です。
 
 > **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,15 +101,10 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

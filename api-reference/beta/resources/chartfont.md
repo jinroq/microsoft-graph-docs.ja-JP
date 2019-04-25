@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543728"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont リソースの種類
 
@@ -23,15 +23,15 @@ ms.locfileid: "29641170"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |chartFont オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |ChartFont オブジェクトを更新します。 |
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |ChartFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
-|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
-|name|文字列|フォント名 (例: "Calibri")|
+|name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ (例: 11)|
 |underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
 

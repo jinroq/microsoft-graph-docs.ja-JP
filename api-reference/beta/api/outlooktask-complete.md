@@ -1,27 +1,27 @@
 ---
-title: 'outlookTask: 完全な'
-description: '現在の日付に**completedDateTime**プロパティを設定する Outlook のタスクを完了します。 '
+title: 'outlooktask: 完了'
+description: '**completedDateTime**プロパティを現在の日付に設定する Outlook のタスクを完了します。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: de3d47d59b89f8bbef42b8b17a9099ecf9e80c98
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539906"
 ---
-# <a name="outlooktask-complete"></a>outlookTask: 完全な
+# <a name="outlooktask-complete"></a>outlooktask: 完了
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-現在の日付に**completedDateTime**プロパティと**状態**プロパティを設定する Outlook のタスクを完了`completed`。
+**completedDateTime**プロパティを現在の日付に設定し、 **status**プロパティをに`completed`設定する Outlook のタスクを完了します。
 
-応答では、定期的にタスクを実行している場合、シリーズでは、完了したタスクとデータ系列の次のタスクは、タスクのコレクションが含まれます。
+一連のタスクを定期的に実行している場合、返信には、タスクのコレクションには、データ系列の完了したタスクと、一連の次のタスクが含まれます。
 
-**CompletedDateTime**プロパティは、タスクが完了すると、日付を表します。 **CompletedDateTime**の時刻部分は、UTC の午前 0 時に既定で設定されています。
+**completedDateTime**プロパティは、タスクが終了した日付を表します。 **completedDateTime**の時間部分は、既定で UTC の午前0時に設定されます。
 
-既定では、この操作 (および投稿、取得、および更新プログラムのタスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone`
+既定では、この操作 (および POST、GET、および PATCH タスクの操作) は、日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。|
+| 優先: outlook.timezone | 応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -55,11 +55,11 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[outlookTask](../resources/outlooktask.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
-次の例では、指定したタスクを終了に設定します。 太平洋標準時 (PST) で指定します`Prefer: outlook.timezone`ヘッダー。
+次の例では、指定したタスクを終了に設定します。 `Prefer: outlook.timezone`ヘッダーに太平洋標準時 (PST) を指定します。
 
 ### <a name="request"></a>要求
 
@@ -76,9 +76,9 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>応答
 
-以下は、応答の例です。 PST では、 **completedDateTime**と他の日付に関連するプロパティに、応答が表されます。
+以下は、応答の例です。 応答内の**completedDateTime**およびその他の日付関連プロパティは、PST で表されます。
 
-> 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

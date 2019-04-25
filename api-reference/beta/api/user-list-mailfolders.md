@@ -1,17 +1,17 @@
 ---
-title: mailFolders を一覧表示する
+title: mailFolders を一覧表示する　
 description: サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 64b96620d30188c720beaae4875712b1dc8d8e37
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544330"
 ---
-# <a name="list-mailfolders"></a>mailFolders を一覧表示する
+# <a name="list-mailfolders"></a>mailFolders を一覧表示する　
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

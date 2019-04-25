@@ -1,21 +1,21 @@
 ---
 title: 'メッセージ: move'
-description: メッセージをフォルダーに移動します。 これは、先のフォルダーにメッセージの新しいコピーを作成し、元のメッセージを削除します。
+description: メッセージをフォルダーに移動します。 これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: efe2bcf262ef91b4684bc812fa19bdbe52f12564
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540482"
 ---
 # <a name="message-move"></a>メッセージ: move
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メッセージをフォルダーに移動します。 これは、先のフォルダーにメッセージの新しいコピーを作成し、元のメッセージを削除します。
+メッセージをフォルダーに移動します。 これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須です。 |
+| Authorization | `Bearer {token}`. 必須。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|DestinationId|String|移動先のフォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
+|DestinationId|String|宛先フォルダーの ID、または既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[メッセージ](../resources/message.md)リソース。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[メッセージ](../resources/message.md)リソースを返します。
 
 ## <a name="example"></a>例
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ##### <a name="request"></a>要求
 
-次のような要求の既知のフォルダー名で識別される、[削除済みアイテム フォルダーに指定したメッセージを移動する`deleteditems`。
+次の要求は、指定されたメッセージを、既知のフォルダー名`deleteditems`で識別される削除済みアイテムフォルダーに移動します。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],

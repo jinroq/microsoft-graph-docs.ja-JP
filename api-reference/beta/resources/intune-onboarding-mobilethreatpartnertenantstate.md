@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566487"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31772294"
 |メンバー|値|説明|
 |:---|:---|:---|
 |無効|.0|パートナーは利用できません。|
-|使用可能|1-d|パートナーが利用できます。|
-|enabled|pbm-2|パートナーが有効になっている。|
-|なかっ|1/3|パートナーが応答していません。|
+|使用可能|1 |パートナーが利用できます。|
+|enabled|2 |パートナーが有効になっている。|
+|なかっ|3 |パートナーが応答していません。|
 
 
 

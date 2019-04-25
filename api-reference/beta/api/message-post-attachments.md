@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 56693a04d6f0579d043b4d745fe53ae61536b82e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510093"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540465"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -25,7 +25,7 @@ ms.locfileid: "29510093"
 
 これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
 
-既存のメッセージに添付ファイルを追加するには、添付ファイルのコレクションへの投稿または新しいメッセージをされている[ドラフト](../api/user-post-messages.md)、または[作成され実行時に送信](../api/user-sendmail.md)します。
+添付ファイルを既存のメッセージに追加するには、添付ファイルのコレクションに投稿するか、[ドラフト](../api/user-post-messages.md)されている新しいメッセージに投稿するか、その[場で作成して送信](../api/user-sendmail.md)する必要があります。
 
 現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
 ## <a name="permissions"></a>アクセス許可
@@ -38,7 +38,8 @@ ms.locfileid: "29510093"
 |アプリケーション | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -64,7 +65,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文の[添付](../resources/attachment.md)オブジェクト。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[Attachment](../resources/attachment.md)オブジェクトを返します。
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)
 
@@ -174,8 +175,8 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
 
 ##### <a name="request"></a>要求
-ここでは、既存のメッセージの添付ファイル、参照を追加する要求の例です。
-添付ファイルは、OneDrive 上のフォルダーをポイントします。
+既存のメッセージに参照添付ファイルを追加する要求の例を次に示します。
+添付ファイルは、OneDrive 上のフォルダーを指します。
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
@@ -198,7 +199,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>応答
-ここでは、完全な応答の例です。
+完全な応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true,

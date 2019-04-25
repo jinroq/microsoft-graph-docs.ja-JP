@@ -1,21 +1,21 @@
 ---
-title: MailFolder を作成する
-description: この API を使用して、新しい子 mailFolder を作成します。
+title: Create mailFolder
+description: この API を使用して、新しい子 mailfolder を作成します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 92c57b5336eb60377915a4abc64b070b28bb98ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516491"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540668"
 ---
-# <a name="create-mailfolder"></a>MailFolder の作成
+# <a name="create-mailfolder"></a>Create mailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、新しい子 mailFolder を作成します。
+この API を使用して、新しい子[mailfolder](../resources/mailfolder.md)を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -36,13 +36,13 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-フォルダー ID の場合、またはよく知られているフォルダー名とクエリの URL では、親フォルダーを指定します。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
+クエリの URL 内の親フォルダーをフォルダー ID または既知のフォルダー名として指定します。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須です。 |
+| Authorization | `Bearer {token}`. 必須。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[mailFolder](../resources/mailfolder.md)オブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[mailfolder](../resources/mailfolder.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

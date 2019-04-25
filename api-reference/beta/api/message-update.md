@@ -5,17 +5,17 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 4b3c54e85c96524305fdba32525e277dd15508ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540328"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-message オブジェクトのプロパティを更新します。
+メッセージ オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -39,28 +39,28 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。 次のプロパティを更新できます。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。 次のプロパティを更新できます。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|メッセージの BCC 受信者。 |
-|body|ItemBody|メッセージの本文。 isdraft = true の場合にのみ更新できます。|
+|bccRecipients|受信者|メッセージの BCC 受信者。 |
+|body|ItemBody|メッセージの本文。 isDraft = true の場合にのみ更新可能です。|
 |categories|String collection|メッセージに関連付けられたカテゴリ。|
-|ccRecipients|Recipient collection|メッセージの CC 受信者。 |
+|ccRecipients|受信者コレクション|メッセージの CC 受信者。 |
 |flag|[followUpFlag](../resources/followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
-|from|Recipient|メッセージのメールボックス所有者と送信者。 使用する実際のメールボックスに対応している必要があります。 |
+|from|受信者|メッセージのメールボックス所有者と送信者。 実際に使用されているメールボックスに対応している必要があります。 |
 |importance|String|メッセージの重要度です。可能な値は、`Low`、`Normal`、`High` です。|
 |inferenceClassification | String | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類です。使用可能な値: `focused` または `other`。 |
-|internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 isdraft = true の場合にのみ更新できます。|
+|internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 isDraft = true の場合にのみ更新可能です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、複数値の拡張プロパティのコレクション。 Null 許容型。|
-|replyTo|Recipient collection|返信時に使用される電子メール アドレス。 isdraft = true の場合にのみ更新できます。|
-|sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 [共有メールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、または[代理人](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するときに更新できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。 Null 許容型。|
-|subject|String|メッセージの件名。 isdraft = true の場合にのみ更新できます。|
-|toRecipients|Recipient collection|メッセージの To 受信者。 |
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、複数値の拡張プロパティのコレクション。 Null 許容型です。|
+|replyTo|受信者コレクション|返信時に使用される電子メール アドレス。 isDraft = true の場合にのみ更新可能です。|
+|sender|受信者|メッセージを生成するために実際に使用されるアカウント。 [共有メールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときに、更新可能です。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。 Null 許容型です。|
+|subject|String|メッセージの件名。 isDraft = true の場合にのみ更新可能です。|
+|toRecipients|受信者コレクション|メッセージの宛先受信者。 |
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**メッセージ** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。
 

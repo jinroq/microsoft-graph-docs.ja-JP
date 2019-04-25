@@ -5,17 +5,17 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090be61f98ecd8f55a5e1a9edfe45bf7b39f23de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526845"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539764"
 ---
 # <a name="update-organization"></a>組織を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-現在認証されている組織のプロパティを更新します。 この例では、 `organization` 、1 つのレコードの集合として定義されている要求の**ID**を指定する必要がありますので。  **ID**は、組織の**tenantId**とも呼ばれます。
+現在認証されている組織のプロパティを更新します。 この例では`organization` 、は、1つのレコードのコレクションとして定義されているため、要求でその**ID**を指定する必要があります。  **ID**は、組織の**tenantId**とも呼ばれます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,13 +47,13 @@ PATCH /organization/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String コレクション|                                        **注**: Null は許容されません。            |
+|marketingNotificationEmails|String collection|                                        **注**: Null は許容されません。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String コレクション||
-|technicalNotificationMails|String コレクション|                                        **注**: Null は許容されません。            |
+|technicalNotificationMails|String collection|                                        **注**: Null は許容されません。            |
 
-使用することが**組織**のリソースは、[拡張機能](/graph/extensibility-overview)をサポートするため、`PATCH`を追加、更新、または**組織**の既存のインスタンスで拡張機能のカスタム プロパティに独自のアプリケーション固有データを削除する操作です。
+**組織**リソースが[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、この操作を使用して、既存の**組織**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除できます。
 
 ## <a name="response"></a>応答
 

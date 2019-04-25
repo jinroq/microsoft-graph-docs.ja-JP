@@ -1,27 +1,27 @@
 ---
 title: convertIdResult リソースの種類
-description: TranslateExchangeIds 関数によって実行される ID 形式変換の結果です。
+description: translateExchangeIds 関数によって実行される ID 形式変換の結果。
 localization_priority: Normal
 ms.openlocfilehash: db28172d009ee8a8a39b7e02733d893dc20a81e5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535392"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[TranslateExchangeIds](../api/user-translateexchangeids.md)関数によって実行される ID 形式変換の結果です。
+[translateExchangeIds](../api/user-translateexchangeids.md)関数によって実行される ID 形式変換の結果。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
-| SourceId | String | 変換された識別子です。 この値は、元、変換されていない識別子です。 |
-| targetId | String | 変換後の識別子です。 この値は、変換が失敗した場合ではありません。 |
-| ErrorDetails | [genericError](genericerror.md) | 変換エラーの原因を示すエラー オブジェクトです。 この値は、変換が成功した場合ではありません。 |
+| sourceId | String | 変換された識別子。 この値は、元の、変換されていない識別子です。 |
+| targetId | String | 変換された識別子。 変換が失敗した場合、この値は表示されません。 |
+| errorDetails | [genericerror](genericerror.md) | 変換エラーの理由を示す error オブジェクト。 この値は、変換に成功した場合は表示されません。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

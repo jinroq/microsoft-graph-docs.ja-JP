@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
-ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544359"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
@@ -17,13 +17,13 @@ ms.locfileid: "31026011"
 
 ユーザーのメールボックス内の連絡先を取得します。
 
-アプリが別のユーザーの連絡先フォルダー内の連絡先を取得するには、次の2つのシナリオがあります。
+アプリが別のユーザーの連絡先フォルダーから連絡先を取得できるシナリオは2つあります。
 
 * アプリにアプリケーションのアクセス許可がある場合。または
-* アプリに1人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーがそのユーザーとの連絡先フォルダーを共有しているか、または、そのユーザーに対してアクセスを委任されている。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーとコンタクトフォルダーを共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。
 
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -53,16 +53,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-`$filter`クエリパラメーターを使用して、電子メールアドレスに基づいて連絡先をフィルター処理できます。
+たとえば、`$filter` クエリ パラメーターを使って、メール アドレスに基づいて連絡先をフィルターすることができます。
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-、 `$filter` `any`、、およびオペレーターは`eq` 、 **emailaddresses**コレクション内のインスタンスの**address**サブプロパティに対してのみ使用できる点に注意してください。 つまり、**電子メールアドレス**の`filter`インスタンスの**名前**またはその他のサブプロパティに対してフィルターを適用することはできません`startswith()`。また、、、などの`ne`他`le`の演算子や関数を適用することもできません。
+`$filter`、`any`そして`eq`演算子を使用できるのは**emailAddresses**コレクションの**address**サブプロパティのみなので注意が必要です 。 すなわち、**氏名** または**emailAddresses**の 1 つのインスタンスの他のサブ プロパティでフィルター抽出することはできませんし、`filter` 以下のような `ne`, `le`や `startswith()`その他の演算子や関数を適用したりすることはできません。
 
-`$filter`クエリパラメーターの一般的な情報については、「 [OData クエリパラメーター](/graph/query-parameters)」を参照してください。
+`$filter`クエリのパラメーターの一般的な情報については、[OData クエリ パラメーター](/graph/query-parameters)を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |

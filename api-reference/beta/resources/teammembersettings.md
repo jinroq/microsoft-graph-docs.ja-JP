@@ -1,30 +1,30 @@
 ---
-title: teamMemberSettings リソースの種類
-description: など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、チームにボットを追加します。
+title: teammembersettings リソースの種類
+description: メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: e6fae4d81ac005c1830d5bed9e05a4675e1a8ad0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522645"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558042"
 ---
-# <a name="teammembersettings-resource-type"></a>teamMemberSettings リソースの種類
+# <a name="teammembersettings-resource-type"></a>teammembersettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、[チーム](team.md)にボットを追加します。
+[チーム](team.md)内で、メンバーが特定のアクション (チャネルの作成、ボットの追加など) を実行できるかどうかを構成するための設定。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|ブール値|True の場合、メンバー セットを追加したりチャンネルを更新する場合。|
-|allowDeleteChannels|ブール値|場合は true の場合、メンバーに設定するには、チャンネルを削除できます。|
-|allowAddRemoveApps|ブール値|場合は true の場合、メンバー セットは、追加し、アプリケーションを削除できます。|
-|allowCreateUpdateRemoveTabs|ブール値|場合は true の場合、メンバー セットを追加、更新、およびタブを削除します。 |
-|allowCreateUpdateRemoveConnectors|ブール値|場合は true の場合、メンバー セットを追加、更新、およびコネクタを削除します。|
+|allowCreateUpdateChannels|ブール値|true に設定されている場合、メンバーはチャネルを追加および更新できます。|
+|allowDeleteChannels|ブール値|true に設定されている場合、メンバーはチャネルを削除できます。|
+|allowaddremoveapps|ブール値|true に設定すると、メンバーはアプリを追加および削除できるようになります。|
+|allowCreateUpdateRemoveTabs|ブール値|true に設定されている場合、メンバーはタブの追加、更新、および削除を行うことができます。 |
+|allowCreateUpdateRemoveConnectors|ブール値|true に設定されている場合、メンバーはコネクタの追加、更新、および削除を行うことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

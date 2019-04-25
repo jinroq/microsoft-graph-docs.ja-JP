@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0313fb5912d8cc9e12319fafac518becfee105a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539828"
 ---
 # <a name="get-organization"></a>組織を取得する
 
@@ -17,7 +17,7 @@ ms.locfileid: "29520082"
 
 現在認証されている組織のプロパティとリレーションシップを取得します。
 
-**組織**のリソースは、[拡張機能](/graph/extensibility-overview)をサポートするため使用することも、 `GET` **組織**インスタンスのカスタム プロパティと拡張機能のデータを取得する操作です。
+**組織**のリソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`GET` 、この操作を使用して、**組織**のインスタンスでカスタムプロパティと拡張機能データを取得することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "29520082"
 
 |アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.Read、Directory.Read.All |
+|委任 (職場または学校のアカウント) | User. 読み取り、ディレクトリ |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション | Directory.Read.All |
 

@@ -1,19 +1,19 @@
 ---
-title: アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
-description: 割り当てられている指定されたポリシーを使用して、アプリケーションとサービスのプリンシパル オブジェクトを取得します。
+title: 特定のポリシーが割り当てられたアプリケーションとサービスプリンシパルを一覧表示する
+description: 指定したポリシーが割り当てられているアプリケーションおよびサービスプリンシパルオブジェクトを取得します。
 localization_priority: Normal
 ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538754"
 ---
-# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
+# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>特定のポリシーが割り当てられたアプリケーションとサービスプリンシパルを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-割り当てられている指定されたポリシーを使用して、[アプリケーション](../resources/application.md)と[サービス ・ プリンシパル](../resources/serviceprincipal.md)オブジェクトを取得します。
+指定したポリシーが割り当てられている[アプリケーション](../resources/application.md)および[サービスプリンシパル](../resources/serviceprincipal.md)オブジェクトを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -39,10 +39,10 @@ GET /policies/{id}/appliesTo
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答本体に応答コードおよび[アプリケーション](../resources/application.md)と[サービス ・ プリンシパル](../resources/serviceprincipal.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[アプリケーション](../resources/application.md)と[サービスプリンシパル](../resources/serviceprincipal.md)オブジェクトを返します。 失敗した場合、`4xx` エラーが詳細情報とともに返されます。
 
 ## <a name="example"></a>例
-次の使用例は、割り当てられている特定のポリシーを使用して、アプリケーションとサービス ・ プリンシパルを取得します。
+次の例では、特定のポリシーが割り当てられたアプリケーションとサービスプリンシパルを取得します。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

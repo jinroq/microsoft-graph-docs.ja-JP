@@ -1,15 +1,15 @@
 ---
 title: 投稿を取得する
-description: '指定したスレッド内の投稿のプロパティと関係を取得します。 両方の親を指定することができます。 '
+description: '指定したスレッド内の投稿のプロパティと関係を取得します。 親の両方を指定できます。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 0d786734aa59d0048b077d4fa7eae08857da2753
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538715"
 ---
 # <a name="get-post"></a>投稿を取得する
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
-- スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

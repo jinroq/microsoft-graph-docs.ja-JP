@@ -1,21 +1,21 @@
 ---
-title: MailSearchFolder を作成します。
-description: 指定されたユーザーのメールボックスに新しい mailSearchFolder を作成するのにには、この API を使用します。
+title: mailsearchfolder を作成する
+description: この API を使用して、指定したユーザーのメールボックスに新しい mailsearchfolder を作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540645"
 ---
-# <a name="create-mailsearchfolder"></a>MailSearchFolder を作成します。
+# <a name="create-mailsearchfolder"></a>mailsearchfolder を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定されたユーザーのメールボックスに新しい[mailSearchFolder](../resources/mailsearchfolder.md)を作成するのにには、この API を使用します。
+この API を使用して、指定したユーザーのメールボックスに新しい[mailsearchfolder](../resources/mailsearchfolder.md)を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -36,13 +36,13 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-フォルダー ID の場合、またはよく知られているフォルダー名とクエリの URL では、親フォルダーを指定します。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
+クエリの URL 内の親フォルダーをフォルダー ID または既知のフォルダー名として指定します。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須です。 |
+| Authorization | `Bearer {token}`. 必須。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -51,15 +51,15 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-| @odata.type | String | 作成するフォルダーの種類。 "Microsoft.graph.mailSearchFolder"に設定します。 |
+| @odata.type | String | 作成するフォルダーの種類を指定します。 "..." フォルダーに設定します。 |
 | displayName | String | 新しいフォルダーの表示名です。|
-| includeNestedFolders | ブール値 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
-| sourceFolderIDs | String コレクション | メールボックス フォルダーをマイニングする必要があります。 |
-| filterQuery | String | メッセージをフィルタ リングする OData クエリです。 |
+| includeNestedFolders | ブール値 | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
+| sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
+| filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[mailSearchFolder](../resources/mailsearchfolder.md)オブジェクトです。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

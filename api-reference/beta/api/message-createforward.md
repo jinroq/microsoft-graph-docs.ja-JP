@@ -1,27 +1,27 @@
 ---
 title: 'メッセージ: createForward'
-description: 'コメントを含めるまたはメッセージ プロパティを更新するメッセージを転送の下書きを作成します。  '
+description: '下書きの転送メッセージを作成してコメントを含めるか、メッセージのプロパティを更新します。  '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 2c750ac0dd8f6a6226161701950bd879025f9641
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540543"
 ---
 # <a name="message-createforward"></a>メッセージ: createForward
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-コメントを含めるまたはメッセージ プロパティを更新するメッセージを転送の下書きを作成します。  
-すべてで 1 つの**createForward**を呼び出します。 [下書きメッセージ[を送信](../api/message-send.md)することができます。
+下書きの転送メッセージを作成してコメントを含めるか、メッセージのプロパティを更新します。  
+1つの**createforward**呼び出し内のすべて。 その後、下書きメッセージを[送信](../api/message-send.md)できます。
 
 **注**
 
-- コメントまたは `message` パラメーターの **Body** プロパティを指定できます。両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
-- `toRecipients` パラメーター、または `message` パラメーターの **ToRecipients** プロパティを指定する必要があります。両方を指定するか、どちらも指定しないと、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- パラメーターには、comment または body プロパティのいずれかを指定できます。 **** `message` 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
+- パラメーターを指定するか`toRecipients` 、 `message`パラメーターの**トーラス**プロパティを指定する必要があります。 両方を指定するか、どちらも指定しないと、「HTTP 400 要求が正しくありません」というエラーが返されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |toRecipients|[recipient](../resources/recipient.md) collection|受信者の一覧です。|
-|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[メッセージ](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 

@@ -1,31 +1,31 @@
 ---
-title: audioConferencing リソースの種類
-description: OnlineMeeting には、電話アクセス情報を表します。
+title: audioconferencing リソースの種類
+description: onlineMeeting の電話アクセス情報を表します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb822f2049d84f9a2460370f05d5dfc85c347f15
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535562"
 ---
-# <a name="audioconferencing-resource-type"></a>audioConferencing リソースの種類
+# <a name="audioconferencing-resource-type"></a>audioconferencing リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[OnlineMeeting](onlinemeeting.md)には、電話アクセス情報を表します。
+[onlineMeeting](onlinemeeting.md)の電話アクセス情報を表します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型    | 説明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | ダイヤルイン情報を含む外部からアクセス可能な web ページの URL です。 |
-| leaderPasscode      | String  | オーディオ会議プロバイダーへの接続に必要なリーダーのパスワードです。      |
-| participantPasscode | String  | オーディオ会議プロバイダーへの接続に必要な参加者のパスワードです。 |
-| tollFreeNumber      | String  | オーディオ会議プロバイダーに接続する無料電話番号です。              |
-| tollNumber          | String  | オーディオ会議プロバイダーに接続する有料電話番号です。                   |
+| ダイヤルイン url           | String  | 外部からアクセス可能な web ページへの URL。ダイヤルイン情報が含まれています。 |
+| leaderPasscode      | String  | 電話会議プロバイダーに接続するために必要なリーダーパスワード。      |
+| participantPasscode | String  | 音声会議プロバイダーに接続するために必要な、参加者のパスワード。 |
+| tollFreeNumber      | String  | 音声会議プロバイダーに接続するための無料電話番号。              |
+| tollNumber          | String  | 音声会議プロバイダーに接続する有料電話番号。                   |
 
 ## <a name="json-representation"></a>JSON 表記
 

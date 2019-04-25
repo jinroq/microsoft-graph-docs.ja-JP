@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: eea520e6024bb050001461fb5ada5c90ea2b2125
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541186"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail リソースの種類
 
@@ -17,17 +17,17 @@ ms.locfileid: "29575829"
 
 | プロパティ          | 型              |
 | :---------------- | :---------------- |
-| reportRefreshDate | 日付              |
+| reportrefreshdate | Date              |
 | userPrincipalName | String            |
 | displayName       | String            |
 | userState         | String            |
-| stateChangeDate   | 日付              |
-| lastActivityDate  | 日付              |
+| stateChangeDate   | Date              |
+| lastactivitydate  | Date              |
 | postedCount       | Int64             |
-| readCount         | Int64             |
-| likedCount        | Int64             |
-| assignedProducts  | String コレクション |
-| reportPeriod      | String            |
+| readcount         | Int64             |
+| dcount        | Int64             |
+| assignedProducts  | String collection |
+| reportperiod      | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981470"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555249"
 ---
 # <a name="update-onenote-page-content"></a>OneNote ページ コンテンツを更新する
 
@@ -166,11 +166,11 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 | body<br /> (ページの最初の div をターゲットとする) | いいえ | **はい** | いいえ |  
 | div<br /> ([絶対配置](onenote-abs-pos.md)) | いいえ | **はい** | いいえ |  
 | div<br /> (div 内) | **はい**<br/>(id のみ) | **はい** | **はい** |   
-| img、object<br /> (div 内) | **はい** | いいえ | **はい** |   
+| img、object<br /> (div 内) | **はい** | no | **はい** |   
 | ol、ul | **はい**<br/>(id のみ) | **はい** | **はい** |   
 | table | **はい**<br/>(id のみ) | いいえ | **はい** |   
 | p、li、h1-h6 | **はい**<br/>(id のみ) | いいえ | **はい** |   
-| title | **はい** | いいえ | いいえ |  
+| title | **はい** | いいえ | no |  
  
 <br/>
 
@@ -371,7 +371,7 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 
 #### <a name="request-with-text-content-only"></a>テキスト コンテンツのみの要求
 
-次の例では、PATCH 要求でコンテンツ タイプとして **application/json** が使用されています。 コンテンツにバイナリ データが含まれていない場合は、この形式を使用できます。
+次の例では、PATCH 要求でコンテンツ タイプとして **application/json** が使用されています。 コンテンツにバイナリ データが含まれていないとき、この形式を使用できます。
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content

@@ -1,29 +1,29 @@
 ---
 title: educationExcelResource リソースの種類
-description: 'EducationResource のサブクラスです。 この種類のリソースでは、Excel ドキュメントを表します。  '
+description: 'educationResource のサブクラス。 このリソースの種類は、Excel ドキュメントを表します。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 14d7823f166ca12d202a6561bc9fe7b158ab7476
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542824"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)のサブクラスです。 この種類のリソースでは、Excel ドキュメントを表します。  
+[educationResource](educationresource.md)のサブクラス。 このリソースの種類は、Excel ドキュメントを表します。  
  
->**注:** Excel ファイルは、このリソースが所属する割り当てまたは提出書類のオブジェクトに関連付けられているリソースのフォルダーにする必要があります。
+>**注:** Excel ファイルは、このリソースが属する assignment または送信オブジェクトに関連付けられたリソースフォルダーにある必要があります。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|FileURL|String|Excel ファイルのオブジェクトへのポインター。|
+|fileUrl|String|Excel ファイルオブジェクトへのポインター。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: aa26a34013ddd20925c7063595d5d57980e0c516
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977641"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550057"
 ---
 # <a name="update-educationschool-properties"></a>educationschool プロパティを更新する
 
@@ -36,12 +36,12 @@ PATCH /education/schools/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
-|説明| String | 学校の説明| 
+|description| String | 学校の説明| 
 |principalEmail| String| プリンシパルの電子メール アドレス|
 |principalName| String | プリンシパルの名前|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |

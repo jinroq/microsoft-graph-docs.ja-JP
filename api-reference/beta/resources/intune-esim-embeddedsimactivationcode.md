@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c44b685c46b300ced8d81d61de9308648c69eacc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787632"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547033"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode リソースの種類
 
@@ -22,11 +22,11 @@ ms.locfileid: "31787632"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|文字列|携帯電話会社が提供する、この組み込み SIM アクティブ化コードの ic カード識別子 (ICCID)。
+|integratedCircuitCardIdentifier|String|携帯電話会社が提供する、この組み込み SIM アクティブ化コードの ic カード識別子 (ICCID)。
 入力は、次の正規表現に一致して\[いる\]{19}\[必要\]があります。 ' ^ 0-9 0-9 ? $ '。|
-|matchingIdentifier|文字列|gsma Association MatchingIdentifier (MatchingID) セクション4.1 で指定されているように、()。
+|matchingIdentifier|String|gsma Association MatchingIdentifier (MatchingID) セクション4.1 で指定されているように、()。
 入力は、次の正規表現に一致する必要\[があります: ' ^ zA\-\]-Z0-9 * $ '。|
-|smdpPlusServerAddress|文字列|GSM Association SPG .22 RSP Technical 仕様で指定されているとおりに、SM-DP + サーバーの完全修飾ドメイン名。
+|smdpPlusServerAddress|String|GSM Association SPG .22 RSP Technical 仕様で指定されているとおりに、SM-DP + サーバーの完全修飾ドメイン名。
 入力は、次の正規表現に一致している\[必要があります: ' ^\](zA-\[Z0-\]9 +)\.*) +\[a-zA-Z\]{2,}$ '。|
 
 ## <a name="relationships"></a>リレーションシップ

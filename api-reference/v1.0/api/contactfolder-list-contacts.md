@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: bc7cc37eaefbd84e9fea8d4cbb1e888b5c445d1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566193"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 

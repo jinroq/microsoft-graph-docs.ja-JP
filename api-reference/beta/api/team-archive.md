@@ -1,30 +1,30 @@
 ---
 title: チームをアーカイブする
-description: '指定したチームをアーカイブします。 '
+description: '指定されたチームをアーカイブします。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a009dc7214627575b00b2537875e5561b0515d32
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544635"
 ---
 # <a name="archive-team"></a>チームをアーカイブする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[チーム](../resources/team.md)をアーカイブします。 チームがアーカイブされている場合、ユーザーはチーム内のチャネルでメッセージを送信したり、チームの名前、説明、その他の設定を編集したり、通常はチームにほとんど変更を加えたりすることができなくなります。
-チームに対するメンバーシップの変更は引き続き許可されます。
+指定された[チーム](../resources/team.md)をアーカイブします。 チームをアーカイブすると、ユーザーはチームのチャネルでメッセージを送信したり、いいねしたり、チームの名前、説明、またはその他の設定、通常、チームへの変更がほとんどできなくなります。
+チームへのメンバーシップの変更はそのまま許可されます。
 
-アーカイブは、非同期操作です。 非同期操作が正常に完了すると、この API からの応答によって発生する可能性があるチームがアーカイブされます。
+アーカイブは非同期操作です。 非同期操作が正常に完了すると、チームがアーカイブされます。この API の応答に続いて発生する可能性があります。
 
-チームをアーカイブするためには、チームと[グループ](../resources/group.md)に所有者が必要です。
+チームをアーカイブできるのは、チームと[グループ](../resources/group.md)が所有者の場合です。
 
-チームをアーカイブされた状態から復元するには、API を使用して[アーカイブ](team-unarchive.md)を解除します。
+アーカイブした状態からチームを復元するには、API を使用して[アーカイブを解除](team-unarchive.md)します。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -46,17 +46,17 @@ POST /teams/{id}/archive
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
-要求では、必要に_応じ_て、 `shouldSetSpoSiteReadOnlyForMembers`次のように JSON 本文にパラメーターを含めることができます。
+次のように、リクエストでは_オプションで_ JSON の本文に`shouldSetSpoSiteReadOnlyForMembers`パラメーターを入力できます。
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-このオプションのパラメーターは、チームに関連付けられた Sharepoint Online サイトでチームメンバーのアクセス許可を読み取り専用に設定するかどうかを定義します。 false に設定するか、または本文を完全に省略すると、この手順はスキップされます。
+このオプションのパラメーターは、チーム メンバーのアクセス許可を、チームに関連付けられている Sharepoint Online サイトで読み取り専用に設定するかどうかを定義します。 False に設定したり、本文を完全に省略したりすると、この手順がスキップされます。
 
 ## <a name="response"></a>応答
 
-アーカイブが正常に開始された場合、 `202 Accepted`このメソッドは応答コードを返します。 応答には、チームの`Location`アーカイブを処理するために作成された[teamsAsyncOperation](../resources/teamsasyncoperation.md)の場所を含むヘッダーも含まれます。 この場所に GET 要求を行うことによって、アーカイブ操作の状態を確認します。
+アーカイブが正常に開始された場合、このメソッドは`202 Accepted`応答コードを返します。 応答には、チームのアーカイブを処理するのに作成された [teamsAsyncOperation](../resources/teamsasyncoperation.md) の場所を含む`Location`ヘッダーも含まれます。 この場所に GET 要求を作成して、アーカイブ操作の状態を確認します。
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求

@@ -1,15 +1,15 @@
 ---
 title: educationTeacher リソースの種類
-description: ユーザーの primaryRole が  の場合に存在する educationUser に追加される、その他の情報。
+description: ユーザーの primaryRole が `teacher` の場合に存在する educationUser に追加される、その他の情報。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 17019d5ff5c2bc9614e934ef66d63e459371469a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542940"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher リソースの種類
 

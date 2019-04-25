@@ -1,13 +1,13 @@
 ---
 title: internetMessageHeader リソースの種類
-description: '提供する、RFC5322 で定義されている、インターネット メッセージのヘッダーを表すキーと値のペア '
+description: 'RFC5322 で定義されているように、インターネットメッセージヘッダーを表すキーと値のペア。 '
 localization_priority: Normal
 ms.openlocfilehash: 2a8dd616ffe8417a5064c0a98976d512b1279704
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567516"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader リソースの種類
 
@@ -18,10 +18,10 @@ ms.locfileid: "27892352"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|キーと値のペアの、キーの部分を表します。|
-|value|文字列|キーと値のペアの、値の部分を表します。|
+|name|string|キーと値のペアの、キーの部分を表します。|
+|value|string|キーと値のペアの、値の部分を表します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

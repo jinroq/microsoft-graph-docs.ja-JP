@@ -3,25 +3,43 @@ title: chatMessageMention リソースの種類
 description: 'chatmessage エンティティ内のメンションを表します。 メンションは、ユーザー、チーム、ボット、またはチャネルにすることができます。 '
 localization_priority: Normal
 author: nkramer
-ms.openlocfilehash: 5d7304325e48c87bfd75b57bf49585f66a77b262
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7dc2948821bee244e3ccde6e134a7ac2a201ad63
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889997"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543687"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[chatmessage](chatmessage.md)エンティティ内のメンションを表します。 メンションは、ユーザー、チーム、ボット、またはチャネルにすることができます。 
+[chatmessage](chatmessage.md)エンティティ内のメンションを表します。 メンションは、[ユーザー](user.md)、[チーム](team.md)、ボット、または[チャネル](channel.md)にすることができます。 
+
+1つまたは複数のメンションを含む**chatmessage**オブジェクトでは、メッセージ本文の**コンテンツ**プロパティは、HTML でチャットメッセージを表します。 各メンションの**mentionText**を HTML `at`要素で囲みます。属性は`id` 、メンションの**id**プロパティに対応しています。
+
+一例として、チャットメッセージには2つのメンションが含まれており、それぞれに "Megan" と "Alex" という説明文があります。 body**コンテンツ**プロパティは、 `at` 2 つのメンションの要素を次のように指定します。
+
+``` json
+"body": {
+    "contentType": "html",
+    "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
+}
+```
+
+**コンテンツ**プロパティの最初のメンションには、0 `id`の HTML 属性があります。 これは、 **chatMessageMention**の最初のインスタンスの**id**プロパティに対応します。これは0でもあります。
+
+2番目のメン`id`ションの属性は1で、2番目のインスタンスの**id**プロパティと一致します。1は1です。
+
+この例の詳細については、「 [List channel message リプライ](../api/channel-list-messagereplies.md#example)」を参照してください。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|int|記載されているエンティティのインデックス。 メッセージ本文の<at id="index">タグと一致します。|
-|mentionText|string|メンションを表すために使用される文字列。 たとえば、ユーザーの表示名、チーム名などです。|
-|明記|[identitySet](identityset.md)|前述したエンティティ (ユーザー、アプリケーション、チーム、またはチャネル)。|
+|id|Int32|指定した**chatmessage**で言及されているエンティティのインデックスです。 メッセージ本文の対応する`<at id="{index}">`タグの {index} 値と一致します。|
+|mentionText|string|メンションを表すために使用される文字列。 たとえば、ユーザーの表示名、チーム名。|
+|明記|[identitySet](identityset.md)|前述したエンティティ (ユーザー、アプリケーション、チーム、またはチャネル)。  @mentioned されたチャネルまたはチームの場合は、チーム/チャネルの ID を提供する**会話**プロパティと、チームまたはチャネルのいずれかを表す**conversationIdentityType**プロパティが含まれます。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -35,9 +53,9 @@ ms.locfileid: "31889997"
 
 ```json
 {
-  "id": "number",
+  "id": 1024,
   "mentionText": "string",
-  "mentioned": "microsoft.graph.identitySet"
+  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
  }
 
 ```

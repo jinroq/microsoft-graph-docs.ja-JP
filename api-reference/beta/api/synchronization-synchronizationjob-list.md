@@ -1,19 +1,19 @@
 ---
-title: 同期ジョブを一覧表示
-description: 特定のアプリケーションのインスタンス (サービス主体) の既存のジョブを一覧表示します。
+title: 同期ジョブを一覧表示する
+description: 特定のアプリケーションインスタンス (サービスプリンシパル) の既存のジョブを一覧表示します。
 localization_priority: Normal
 ms.openlocfilehash: 265b1f5a32239173154ef51077d59f3104ad03b3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545143"
 ---
-# <a name="list-synchronization-jobs"></a>同期ジョブを一覧表示
+# <a name="list-synchronization-jobs"></a>同期ジョブを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のアプリケーションのインスタンス (サービス主体) の既存のジョブを一覧表示します。
+特定のアプリケーションインスタンス (サービスプリンシパル) の既存のジョブを一覧表示します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[synchronizationJob](../resources/synchronization-synchronizationjob.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[同期ジョブ](../resources/synchronization-synchronizationjob.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 

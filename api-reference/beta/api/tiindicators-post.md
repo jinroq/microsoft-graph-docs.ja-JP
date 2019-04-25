@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537019"
 ---
 # <a name="create-threat-intelligence-indicator"></a>脅威インテリジェンス指標の作成
 
@@ -23,9 +23,9 @@ ms.locfileid: "30481441"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント)     | ThreatIndicators application.readwrite.ownedby  |
+| 委任 (職場または学校のアカウント)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | ThreatIndicators application.readwrite.ownedby |
+| アプリケーション                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -39,7 +39,7 @@ POST /security/tiIndicators
 
 | 名前          | 説明   |
 |:--------------|:--------------|
-| 承認 | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 

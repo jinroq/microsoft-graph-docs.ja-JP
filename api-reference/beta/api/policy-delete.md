@@ -1,15 +1,15 @@
 ---
-title: ポリシーを削除します。
+title: ポリシーの削除
 description: ポリシーを削除します。
 localization_priority: Normal
 ms.openlocfilehash: e4e5f5372e2904e1f74bc25224e3d2b1ce7ba154
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520439"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538731"
 ---
-# <a name="delete-policy"></a>ポリシーを削除します。
+# <a name="delete-policy"></a>ポリシーの削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ DELETE /policies/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。 それ以外の場合.
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。 失敗した場合...
 
 ## <a name="example"></a>例
 次の例では、ポリシーを削除します。

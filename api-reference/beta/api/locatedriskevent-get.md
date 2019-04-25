@@ -1,19 +1,19 @@
 ---
-title: LocatedRiskEvent を取得します。
-description: プロパティと、locatedriskevent オブジェクトの関係を取得します。
+title: locatedRiskEvent を取得する
+description: locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 ms.openlocfilehash: aee63e3f9cbb90f839d3eaebf5ec37b2f5b53042
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509232"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540892"
 ---
-# <a name="get-locatedriskevent"></a>LocatedRiskEvent を取得します。
+# <a name="get-locatedriskevent"></a>locatedRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティと、locatedriskevent オブジェクトの関係を取得します。
+locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -40,7 +40,7 @@ GET /locatedRiskEvents/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[locatedRiskEvent](../resources/locatedriskevent.md)のオブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[locatedRiskEvent](../resources/locatedriskevent.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

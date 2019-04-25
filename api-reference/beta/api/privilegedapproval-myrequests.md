@@ -1,19 +1,19 @@
 ---
-title: 'privilegedApproval: myRequests'
-description: 要求側の承認の要求を取得します。
+title: 'privilegedApproval: myrequests'
+description: 要求者の承認要求を取得します。
 localization_priority: Normal
 ms.openlocfilehash: 9fcbdab424c98633a8f543875b9b7c2275894df0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546669"
 ---
-# <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
+# <a name="privilegedapproval-myrequests"></a>privilegedApproval: myrequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要求側の承認の要求を取得します。
+要求者の承認要求を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -40,9 +40,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedApproval](../resources/privilegedapproval.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedApproval](../resources/privilegedapproval.md)オブジェクトを返します。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

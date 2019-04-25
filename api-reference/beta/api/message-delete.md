@@ -1,25 +1,25 @@
 ---
 title: メッセージを削除する
-description: 指定したユーザーのメールボックス内のメッセージを削除または、メッセージの関連付けを削除します。
+description: 指定したユーザーのメールボックス内のメッセージを削除するか、メッセージの関係を削除します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1237ba7e4aa5ab0439af9f07902705e7b4061374
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513544"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540549"
 ---
 # <a name="delete-message"></a>メッセージを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定したユーザーのメールボックス内のメッセージを削除または、メッセージの関連付けを削除します。
+指定したユーザーのメールボックス内のメッセージを削除するか、メッセージの関係を削除します。
 
-たとえば、メッセージで指定したユーザーの特定の[言及 @](../resources/mention.md)を削除できます。
+たとえば、メッセージ内の指定されたユーザーの特定の[@](../resources/mention.md)を削除することができます。
 
->**メモ**回復可能なアイテムの削除フォルダー内のアイテムを削除できない場合があります ([よく知られているフォルダー名](../resources/mailfolder.md)で表される`recoverableitemsdeletions`)。 詳細については、[削除済みアイテムの保存期間](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)と[削除済みアイテムのクリーンアップ](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)を参照してください。
+>**メモ**回復可能なアイテム削除フォルダー ([既知のフォルダー名](../resources/mailfolder.md) `recoverableitemsdeletions`で表される) のアイテムを削除できない場合があります。 詳細については、「[削除済みアイテムの保存期間](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)」および「[削除済みアイテムのクリーンアップ](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -32,7 +32,8 @@ ms.locfileid: "29513544"
 
 ## <a name="http-request"></a>HTTP 要求
 
-指定したメッセージを削除します。<!-- { "blockType": "ignored" } -->
+指定したメッセージを削除するには
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}
@@ -40,7 +41,8 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-特定[説明](../resources/mention.md)メッセージを削除します。<!-- { "blockType": "ignored" } -->
+メッセージ内の特定の[メンション](../resources/mention.md)を削除するには、次のようにします。
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/mentions/{id}
@@ -81,7 +83,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の使用例は、特定**説明**で指定されたメッセージを削除します。
+次の例では、指定されたメッセージ内の特定の**メンション**を削除します。
 <!-- {
   "blockType": "request",
   "name": "delete_mention_in_message"

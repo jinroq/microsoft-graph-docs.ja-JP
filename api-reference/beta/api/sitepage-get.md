@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: サイトのページを取得します。
+title: サイト内のページを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640547"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545284"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを取得します。
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトページリストのページを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[サイト][]のサイトのページ[] ボックスの一覧][]での[sitePage][]のメタデータを返します。
+[サイト][]のサイトページ[リスト][]内の[sitepage][]のメタデータを返します。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ac83234187caa22c6ddf19ab07d5d0791348c5e3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802976"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570625"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 列挙型
 
@@ -22,8 +22,8 @@ ms.locfileid: "31802976"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|まだ文書化されていません|
-|omitSilverlightPolicyReferences|1-d|まだ文書化されていません|
+|なし|.0|まだ文書化されていません|
+|omitSilverlightPolicyReferences|1 |まだ文書化されていません|
 
 
 

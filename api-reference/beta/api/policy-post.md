@@ -1,21 +1,21 @@
 ---
-title: ポリシーを作成します。
-description: 表示名、ポリシーの種類、およびポリシーの説明を指定することにより、新しいポリシー オブジェクトを作成します。
+title: ポリシーの作成
+description: 表示名、ポリシーの種類、およびポリシーの説明を指定して、新しいポリシーオブジェクトを作成します。
 localization_priority: Normal
 ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527697"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546844"
 ---
-# <a name="create-policy"></a>ポリシーを作成します。
+# <a name="create-policy"></a>ポリシーの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示名、ポリシーの種類、およびポリシーの説明を指定することにより、新しい[ポリシー](../resources/policy.md)オブジェクトを作成します。
+表示名、ポリシーの種類、およびポリシーの説明を指定して、新しい[ポリシー](../resources/policy.md)オブジェクトを作成します。
 
->注: ポリシーの詳細が保存される前に検証されます。 検証が合格しなかった場合、400 正しくない要求が返されます。
+>注: ポリシーの詳細は、保存される前に検証されます。 検証に合格しない場合は、400不良要求が返されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -32,28 +32,28 @@ ms.locfileid: "29527697"
 POST /policies
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | application/json  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[ポリシー](../resources/policy.md)オブジェクトの JSON 表現を提供します。
+要求本文で、 [policy](../resources/policy.md)オブジェクトの JSON 表記を指定します。
 
-ポリシーを作成するときに必要なプロパティを次の表に示します。
+次の表に、ポリシーの作成時に必要なプロパティを示します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|definition|String|[ポリシー](../resources/policy.md)オブジェクトの文字列形式。|
-|displayName|String|ポリシーに独自の名前です。|
-|type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy"にする必要があります。|
+|definition|String|[ポリシー](../resources/policy.md)オブジェクトの文字列バージョン。|
+|displayName|String|ポリシーのカスタム名。|
+|type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy" である必要があります。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`応答本体に応答コードおよび[ポリシー](../resources/policy.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。  
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[ポリシー](../resources/policy.md)オブジェクトを返します。 失敗した場合、`4xx` エラーが詳細情報とともに返されます。  
 
 ## <a name="example"></a>例
-次の使用例は、新しいトークンの有効期間ポリシーを作成します。 文字列定義のパラメーターは二重引用符をエスケープしたことを確認します。
+次の例では、新しいトークンの有効期間ポリシーを作成します。 文字列定義パラメーターには二重引用符がエスケープされていることに注意してください。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

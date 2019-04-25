@@ -1,23 +1,23 @@
 ---
-title: PrivilegedRoleAssignment を削除します。
-description: PrivilegedRoleAssignment を削除します。
+title: privilegedRoleAssignment の削除
+description: privilegedRoleAssignment を削除します。
 localization_priority: Normal
 ms.openlocfilehash: 2b98509457d7e26b4b65d42840f04550429bcc95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546601"
 ---
-# <a name="delete-privilegedroleassignment"></a>PrivilegedRoleAssignment を削除します。
+# <a name="delete-privilegedroleassignment"></a>privilegedRoleAssignment の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PrivilegedRoleAssignment](../resources/privilegedroleassignment.md)を削除します。
+[privilegedRoleAssignment](../resources/privilegedroleassignment.md)を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-リクエスターでは、_ロールの権限を持つ管理者_のロールを持っている必要があります。
+リクエスターは、特権の_役割管理者_の役割を持っている必要があります。
  
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -32,7 +32,7 @@ ms.locfileid: "29526747"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-注意してください``<id>``'userId_roleId'、Azure AD ユーザーの id の GUID の文字列は、ユーザー Id、roleId は、Azure の管理者ロールの id の GUID の文字列の形式にします。
+ここで``<id>`` 、は ' userId_roleId ' の形式になっています。ここで、userId は azure AD ユーザー id の guid 文字列で、roleId は azure 管理者の役割 id の guid 文字列です。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
@@ -46,7 +46,7 @@ DELETE /privilegedRoleAssignments/{id}
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
-テナントの PIM を登録する必要があることに注意してください。 それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。
+テナントが PIM に登録されている必要があることに注意してください。 それ以外の場合、HTTP 403 の禁止状態コードが返されます。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

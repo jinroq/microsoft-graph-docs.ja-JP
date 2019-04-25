@@ -1,13 +1,13 @@
 ---
 title: automaticRepliesSetting リソースの種類
-description: 'メッセージを受信したメールの送信者に自動的に通知する設定を構成します '
+description: '受信メールの送信者にメッセージを自動的に通知するための構成設定 '
 localization_priority: Normal
 ms.openlocfilehash: 81fb16a9124c60f43887150917f132579aa4f163
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821407"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569425"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting リソースの種類
 
@@ -15,14 +15,14 @@ ms.locfileid: "27821407"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|externalAudience|externalAudienceScope| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。 可能な値: `none`、 `contactsOnly`、 `all`。|
-|externalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
-|internalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
+|externalAudience|externalAudienceScope| **Status** が **** または `AlwaysEnabled` の場合に、`Scheduled` を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。 使用可能な値: `none`、`contactsOnly`、`all`。|
+|externalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
+|internalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を終了する日時。 |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を開始する日時。|
-|status|automaticRepliesStatus|自動応答の構成状態です。 可能な値: `disabled`、 `alwaysEnabled`、 `scheduled`。|
+|status|automaticRepliesStatus|自動応答の構成状態。 使用可能な値: `disabled`、`alwaysEnabled`、`scheduled`。|
 
 ## <a name="json-representation"></a>JSON 表記
 

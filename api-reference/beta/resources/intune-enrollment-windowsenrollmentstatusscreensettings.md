@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 18c947bbfc7e11ba4acef967171f77a7806b3509
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547026"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings リソースの種類
 
@@ -22,13 +22,13 @@ ms.locfileid: "31772798"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|hideinstallationprogress 進行状況|Boolean|ユーザーにインストールの進行状況を表示または非表示にする|
-|allowdeviceusebeforeprofileandappinstallcomplete|Boolean|プロファイルとアプリのインストールが完了する前にユーザーがデバイスを使用することを許可またはブロックする|
-|blockdevicesetupretrybyuser|Boolean|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
-|allowlogcollectiononinstallfailure|Boolean|インストール失敗時にログ収集を許可またはブロックする|
-|customerrormessage|文字列|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
+|hideinstallationprogress 進行状況|ブール値|ユーザーにインストールの進行状況を表示または非表示にする|
+|allowdeviceusebeforeprofileandappinstallcomplete|ブール値|プロファイルとアプリのインストールが完了する前にユーザーがデバイスを使用することを許可またはブロックする|
+|blockdevicesetupretrybyuser|ブール値|ユーザーがインストールエラー時にセットアップを再試行できるようにする|
+|allowlogcollectiononinstallfailure|ブール値|インストール失敗時にログ収集を許可またはブロックする|
+|customerrormessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
-|allowdeviceuseoninstallfailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
+|allowdeviceuseoninstallfailure|ブール値|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

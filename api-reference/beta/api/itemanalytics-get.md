@@ -2,24 +2,24 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: 分析を取得します。
+title: 分析を取得する
 localization_priority: Normal
 ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516260"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541046"
 ---
-# <a name="get-analytics"></a>分析を取得します。
+# <a name="get-analytics"></a>分析を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このリソースに行われたビューの[itemAnalytics][]を取得します。
-**ItemAnalytics**リソースの利用状況の統計 (stats) を取得する便利な方法では`allTime`と`lastSevenDays`。
-ユーザー設定の時刻の範囲または間隔では、 [getActivitiesByInterval][] API を使用します。
+このリソースの下で行われたビューに関する[itemanalytics][]を取得します。
+**itemanalytics**リソースは、およびのアクティビティの`allTime`統計を取得する便利な`lastSevenDays`方法です。
+ユーザー設定の時間範囲または間隔の場合は、 [getActivitiesByInterval][] API を使用します。
 
->**注:****ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。
+>**注:****itemanalytics**リソースは、すべての[国内展開](/graph/deployments)でまだ使用できません。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md

@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: DeleteAction
 localization_priority: Normal
 ms.openlocfilehash: 5e3b7cbf752d3ddb2c4b7bde3981d2a443028b92
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543248"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "29512620"
 | プロパティ名 | 種類   | 説明
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | 削除されたアイテムの名前。
-| objectType    | string | `File`または`Folder`に削除された項目の種類に依存します。
+| objectType    | string | `File`また`Folder`は、削除されたアイテムの種類によって異なります。
 
 ## <a name="remarks"></a>備考
 

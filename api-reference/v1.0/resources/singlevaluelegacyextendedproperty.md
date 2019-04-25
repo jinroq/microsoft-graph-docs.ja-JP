@@ -3,11 +3,11 @@ title: singleValueLegacyExtendedProperty リソースの種類
 description: '単一値が含まれる拡張プロパティ。 '
 localization_priority: Normal
 ms.openlocfilehash: f865da1a8a4211ac99a70881b2851b38b8e72727
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549644"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty リソースの種類
 
@@ -24,10 +24,10 @@ ms.locfileid: "27894230"
 |[Get](../api/singlevaluelegacyextendedproperty-get.md) |サポートされているリソースのインスタンス ([メッセージ](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[連絡先](../resources/contact.md)、[contactFolder](../resources/contactfolder.md)、またはグループ[投稿](../resources/post.md)) のいずれか、またはそれらのコレクション、あるいは [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) オブジェクトで拡張されているインスタンスなどのいずれか。 |`$expand` または `$filter` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|プロパティの識別に使用されるプロパティ ID。読み取り専用です。|
-|value|文字列|プロパティ値。|
+|id|string|プロパティの識別に使用されるプロパティ ID。読み取り専用です。|
+|value|string|プロパティ値。|
 
 ## <a name="relationships"></a>関係
 なし

@@ -1,21 +1,21 @@
 ---
 title: セクションを作成する
-description: 指定されたセクション グループに新しいセクションを作成します。
+description: 指定したセクショングループに新しいセクションを作成します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 25c66aa1b1db1f40e3cd9d2b9902288f36ccd766
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510506"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537574"
 ---
-# <a name="create-section"></a>section を作成する
+# <a name="create-section"></a>セクションを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定されたセクション グループに新しい[セクション](../resources/section.md)を作成します。
+指定したセクショングループに新しい[セクション](../resources/section.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

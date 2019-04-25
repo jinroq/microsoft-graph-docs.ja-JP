@@ -1,46 +1,46 @@
 ---
 title: audioRoutingGroup リソースの種類
-description: オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
+description: 音声ルーティンググループでは、複数の参加者の間のプライベートオーディオルートをマルチパーティの会話に格納します。 Source は参加者であり、受信者はマルチパーティの会話の他の参加者のサブセットです。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643172"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544002"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
+音声ルーティンググループでは、複数の参加者の間のプライベートオーディオルートをマルチパーティの会話に格納します。 Source は参加者であり、受信者はマルチパーティの会話の他の参加者のサブセットです。
 
-> **注:**[ConfigureMixer](../api/participant-configuremixer.md)は、任意のルートを伴わないのすべての呼び出し元と受信者間の組み合わせのボリューム レベルを設定するためです。
+> **注:**[ConfigureMixer](../api/participant-configuremixer.md)には、すべてのルートは含まれません。送信元と受信側の組み合わせにボリュームレベルを設定するための呼び出し全体に対して使用されます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド                                                  | 戻り値の型                               | 説明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [AudioRoutingGroup を取得します。](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | AudioRoutingGroup オブジェクトのプロパティと関係を参照してください。|
-| [更新する](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者リストを更新します。                       |
-| [削除する](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
+| [audioRoutingGroup を取得する](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | audioRoutingGroup オブジェクトのプロパティとリレーションシップを読み取ります。|
+| [更新](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者の一覧を更新します。                       |
+| [削除](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオルーティンググループを削除します。              |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | String            | 読み取り専用です。 サーバーによって生成されます。                                         |
-| 受信機     | 文字列コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |
-| routingMode   | String            | ルーティング グループのモードです。  使用可能な値は、`oneToOne`、`multicast` です。   |
-| ソース       | 文字列コレクション | ソースの構成要素の id の一覧です。                                      |
+| 配信     | String コレクション | 受信側参加者 id のリスト。                                   |
+| routingmode   | String            | ルーティンググループモード。  可能な値は、`oneToOne`、`multicast` です。   |
+| sources       | String コレクション | ソース参加者 id のリスト。                                      |
 
-> **注:** ルーティング モードでは、送信元と受信機の制限を決定します。 次のルーティング グループのみがサポートされています。
-> - `oneToOne`-ソースと受信機に 1 つだけの参加者がそれぞれが含まれています。
-> - `multicast`-ソース 1 人の参加者が複数の受信機があります。 受信者リストを更新する可能性があります。
+> **注:** ルーティングモードは、送信元と受信者に対する制限を決定します。 次のルーティンググループのみがサポートされています。
+> - `oneToOne`-ソースと受信者には、それぞれ1人の参加者のみが含まれます。
+> - `multicast`-ソースには1つの参加者がいますが、複数の受信者がいます。 受信者の一覧が更新された可能性があります。
 
-> **注:** 多くのオーディオ ルーティング グループ (参加者ごとの bot など) を作成する場合は、4 最上位の優先度の高いスピーカーのオーディオのみが転送されます。 カスタマイズされたオーディオのルーティング グループを使用しても意味のスピーカーがおさまるように、メインのミキサーでない場合は、本人聞こえない bot でこのスピーカーと、bot のためだけのオーディオのプライベート グループがある場合でもします。
+> **注:** 多数のオーディオルーティンググループ (参加者ごとに bot など) を作成する場合は、上位4台の主要なスピーカーのオーディオのみが転送されます。 カスタマイズされたオーディオルーティンググループを使用している場合でも、メインミキサーでスピーカーの音量が十分でない場合は、このスピーカーと bot のみに専用のオーディオグループがある場合でも、そのユーザーは bot によって聞くことはできません。
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,38 +1,38 @@
 ---
-title: emailAppUsageUserDetail リソースの種類
+title: emailapp使い方 userdetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1ebc99f25bf0b16343f48686496c1dbd7d329e65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542840"
 ---
-# <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail リソースの種類
+# <a name="emailappusageuserdetail-resource-type"></a>emailapp使い方 userdetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型              |
 | :---------------- | :---------------- |
-| reportRefreshDate | 日付              |
+| reportrefreshdate | Date              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | Boolean           |
-| deletedDate       | 日付              |
-| lastActivityDate  | 日付              |
-| mailForMac        | String コレクション |
-| outlookForMac     | String コレクション |
-| outlookForWindows | String コレクション |
-| outlookForMobile  | String コレクション |
-| otherForMobile    | String コレクション |
-| outlookForWeb     | String コレクション |
-| pop3App           | String コレクション |
-| imap4App          | String コレクション |
-| smtpApp           | String コレクション |
-| reportPeriod      | String            |
+| isDeleted         | ブール値           |
+| deletedDate       | Date              |
+| lastactivitydate  | Date              |
+| mailformac        | String collection |
+| outlookformac     | String collection |
+| outlookforwindows | String collection |
+| outlookformobile  | String collection |
+| otherformobile    | String collection |
+| outlookforweb     | String collection |
+| pop3App           | String collection |
+| imap4App          | String collection |
+| smtpApp           | String collection |
+| reportperiod      | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

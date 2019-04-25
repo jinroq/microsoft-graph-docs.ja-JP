@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364578"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535801"
 ---
 # <a name="alert-resource-type"></a>alert リソースの種類
 
@@ -36,29 +36,29 @@ Microsoft またはパートナーのセキュリティソリューションが�
 |assignedTo|String|アラートが割り当てられているアナリストの名前。トリアージ、調査、または修復 ([更新](../api/alert-update.md)をサポート)。|
 |azuresubscriptionid|String|azure サブスクリプション ID。このアラートが azure リソースに関連している場合に表示されます。|
 |azureTenantId |String|Azure Active Directory テナント ID。 必須です。 |
-|category|String|アラートのカテゴリ (例: credentialtheft、ランサムウェアなど)。|
+|category|文字列|アラートのカテゴリ (例: credentialtheft、ランサムウェアなど)。|
 |closeddatetime|DateTimeOffset|通知が終了した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014年1月1日の午前0時は、次`'2014-01-01T00:00:00Z'`のように表示されます ([更新プログラム](../api/alert-update.md)をサポート)。|
 |cloudappstates|[cloudappsecuritystate](cloudappsecuritystate.md)コレクション|このアラートに関連するクラウドアプリケーション/s に関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
-|comments|String コレクション|お客様からの警告に関するコメント (顧客の警告管理) ([更新プログラム](../api/alert-update.md)をサポート)。|
+|コメント|String collection|お客様からの警告に関するコメント (顧客の警告管理) ([更新プログラム](../api/alert-update.md)をサポート)。|
 |confidence|Int32|検出ロジックの信頼性 (1-100 間の割合)。|
 |createdDateTime |DateTimeOffset|通知プロバイダによって通知が作成された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 必須です。|
-|説明|文字列|通知の説明。|
-|detectionIds|String コレクション|このアラートエンティティに関連する警告のセット (各警告は、別のレコードとして SIEM にプッシュされます)。|
+|description|String|通知の説明。|
+|detectionIds|String collection|このアラートエンティティに関連する警告のセット (各警告は、別のレコードとして SIEM にプッシュされます)。|
 |eventDateTime |DateTimeOffset|トリガーとして処理されたイベントが発生した時点でアラートが発生した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 必須です。|
-|feedback|alertFeedback|アラートに関するアナリストのフィードバック。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 ([更新プログラム](../api/alert-update.md)のサポート)|
+|feedback|alertFeedback|アラートに関するアナリストのフィードバック。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 ([更新プログラム](../api/alert-update.md)のサポート)|
 |fileStates|[fileSecurityState](filesecuritystate.md)コレクション|このアラートに関連するファイルに関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
 |履歴の状態|[alertHistoryState](alerthistorystate.md)コレクション| **alertHistoryStates**のコレクション。通知に対して行われたすべての更新の監査ログを構成します。 |
 |hoststates|[hostsecuritystate](hostsecuritystate.md)コレクション|このアラートに関連するホストに関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
-|id |文字列|プロバイダー生成の GUID/一意識別子。 読み取り専用です。 必須です。|
+|id |String|プロバイダー生成の GUID/一意識別子。 読み取り専用。 必須です。|
 |lastModifiedDateTime|DateTimeOffset|通知エンティティが最後に変更された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |malwareStates|[malwareState](malwarestate.md)コレクション|このアラートに関連するマルウェアに関する脅威インテリジェンス。|
 |networkconnections|[networkConnection](networkconnection.md)コレクション|このアラートに関連するネットワーク接続に関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
 |工程|[プロセス](process.md)コレクション|このアラートに関連するプロセスまたはプロセスに関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
-|recommendedActions|String コレクション|通知の結果として実行されるベンダー/プロバイダー推奨アクション (たとえば、enforce2FA、再イメージ化されたホスト)。|
+|recommendedActions|String collection|通知の結果として実行されるベンダー/プロバイダー推奨アクション (たとえば、enforce2FA、再イメージ化されたホスト)。|
 |registrykeystates|[registrykeystate](registrykeystate.md)コレクション|このアラートに関連するレジストリキーに関する、プロバイダーによって生成されるセキュリティ関連のステートフル情報。|
 |重大度 |alertSeverity|アラート重大度-ベンダー/プロバイダーによって設定されます。 可能な値は、`unknown`、`informational`、`low`、`medium`、`high` です。 必須です。|
-|sourceMaterials|String コレクション|アラートに関連するソース素材へのハイパーリンク (uri)。たとえば、通知やログ検索用のプロバイダーのユーザーインターフェイスなど。|
-|status |alertStatus|アラートのライフサイクル状態 (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。 ([更新プログラム](../api/alert-update.md)をサポート)。 必須です。|
+|sourceMaterials|String collection|アラートに関連するソース素材へのハイパーリンク (uri)。たとえば、通知やログ検索用のプロバイダーのユーザーインターフェイスなど。|
+|status |alertStatus|アラートのライフサイクル状態 (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。 ([更新プログラム](../api/alert-update.md)をサポート)。 必須です。|
 |tags|String コレクション|通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"hva"、"のこぎり" など)。([更新プログラム](../api/alert-update.md)をサポート)。|
 |title |String|通知のタイトル。 必須です。|
 |ログオフ|[alerttrigger](alerttrigger.md)コレクション|アラートをトリガーした特定のプロパティに関するセキュリティ関連の情報 (アラートに表示されるプロパティ)。 通知には、複数のユーザー、ホスト、ファイル、ip アドレスに関する情報が含まれることがあります。 このフィールドは、アラート生成をトリガーしたプロパティを示します。|

@@ -1,65 +1,65 @@
 ---
 title: accessReviewDecision リソースの種類
-description: Azure AD にアクセス確認機能を`accessReviewDecision`、Azure AD アクセス確認意思決定の特定のエンティティへのアクセスを表します。  アクセス レビューの場合、または定期的なアクセス確認のインスタンスの中であり、1 つ`accessReviewDecision`確認済みのユーザー 1 人あたり。  などの 2 つのゲストと 1 つ、ゲスト、メンバー、および、アクセス レビュー来園者のグループがある場合は、そのグループのアクセス確認意思決定の 2 つのオブジェクトがありますし。  校閲者が自分の意思決定を変更または別の校閲者が、それらをオーバーライドする場合、`accessReviewDecision`を更新します。
+description: azure ad access レビュー機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9642c8a51e4e9efe1a1748243b0e24aeff07cfa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517401"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535777"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReviewDecision` 、Azure AD アクセス確認意思決定の特定のエンティティへのアクセスを表します。  アクセス レビューの場合、または定期的なアクセス確認のインスタンスの中であり、1 つ`accessReviewDecision`確認済みのユーザー 1 人あたり。  などの 2 つのゲストと 1 つ、ゲスト、メンバー、および、アクセス レビュー来園者のグループがある場合は、そのグループのアクセス確認意思決定の 2 つのオブジェクトがありますし。  校閲者が自分の意思決定を変更または別の校閲者が、それらをオーバーライドする場合、`accessReviewDecision`を更新します。
+azure ad [access レビュー](accessreviews-root.md)機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
 
 
 ## <a name="methods"></a>メソッド
 
-なし  この型のオブジェクトが自動的に作成機能とアクセス確認の初期化、削除することはできません。  それらは、[意思決定](../api/accessreview-listdecisions.md)と[mydecisions](../api/accessreview-listmydecisions.md)の関係を使用して、アクセスの確認から取得できます。
+なし。  この種類のオブジェクトは、アクセスレビューの初期化時にフィーチャーによって自動的に作成され、削除することはできません。  これらは、[決定](../api/accessreview-listdecisions.md)と[mydecisions](../api/accessreview-listmydecisions.md)の関係を使用して、アクセスレビューから取得できます。
 
 ## <a name="properties"></a>プロパティ
 
-次の表は、この型のオブジェクトの基本プロパティを示しています。 
+この表は、この種類のオブジェクトの基本プロパティを示しています。 
 
 | プロパティ                        | 型                         | 説明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `id`                            |`String`                      | アクセス レビュー内での意思決定の id です。                                                                                     |
-| `accessReviewId`                |`String`                      | アクセス レビューの機能によって生成された id です。                                                                                       |
-| `reviewedBy`                    |%__UserIdentity__%| 校閲者の id です。                                                                                       |
-| `reviewedDate`                  |`DateTimeOffset`              | 日付と時刻の最新のレビューにアクセス権が指定されました。                                                                         |
-| `reviewResult`                  |`String`                      | レビューの結果です。                                                                                    |
-| `justification`                 |`String`                      | 校閲者のビジネス ・ ジャスティフィケーションを提供された場合。                                                                         |
-| `appliedBy`                     |%__UserIdentity__%| レビューの完了時、結果を手動で適用されていた場合、意思決定を適用したユーザーのユーザー id です。                                                           |
-| `appliedDateTime`               |`DateTimeOffset`              | 日付と時刻確認の意思決定が適用されています。                                                          |
-| `applyResult`                   |`String`                      | いずれかの意思決定を適用した結果`NotApplied`、 `Success`、 `Failed`、`NotFound`または`NotSupported`。                      |
-| `accessRecommendation`          |`String`                      | 機能で生成された推奨事項のいずれかの校閲者に示すように`Approve`、`Deny`または`NotAvailable`。 |
+| `id`                            |`String`                      | アクセスレビュー内での決定の id。                                                                                     |
+| `accessReviewId`                |`String`                      | アクセスレビューのフィーチャー生成された id。                                                                                       |
+| `reviewedBy`                    |[userIdentity](useridentity.md)| レビュー担当者の id。                                                                                       |
+| `reviewedDate`                  |`DateTimeOffset`              | このアクセス権に関する最新のレビューが提供された日付と時刻。                                                                         |
+| `reviewResult`                  |`String`                      | レビューの結果。                                                                                    |
+| `justification`                 |`String`                      | レビュー担当者の業務上の理由 (指定されている場合)。                                                                         |
+| `appliedBy`                     |[userIdentity](useridentity.md)| レビューの完了時に、結果が手動で適用された場合、決定を適用したユーザーのユーザー id。                                                           |
+| `appliedDateTime`               |`DateTimeOffset`              | レビューの決定が適用された日時。                                                          |
+| `applyResult`                   |`String`                      | 決定を適用した結果、、、 `NotApplied` `NotFound`また`Success`は`Failed` `NotSupported`のいずれか。                      |
+| `accessRecommendation`          |`String`                      | レビュー担当者、 `Approve` `Deny`またはまたは`NotAvailable`のいずれかに表示される、機能で生成された推奨事項。 |
 
 
-さらに、追加のプロパティが決定されているアクセス権を持つオブジェクトのオブジェクトの種類によって表示されます。  たとえば、アクセス確認の意思決定が特定のユーザーのグループ メンバーシップ、またはアプリケーションへのアクセスの場合は、これらのプロパティを使用した可能性があるかのアクセスを削除するユーザーが識別されます。
+さらに、決定されたアクセスを所有しているオブジェクトのオブジェクトの種類に応じて、追加のプロパティが存在する場合があります。  たとえば、アクセスレビューの決定が特定のユーザーのグループメンバーシップまたはアプリケーションアクセスである場合、アクセスを削除する可能性があるユーザーが次のプロパティを使用して識別されます。
 
 | プロパティ                        | 型                         | 説明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `userId`                            |`String`                      | アクセス権が確認されたユーザーの id です。                                                                                    |
-| `userDisplayName`                            |`String`                      | アクセス権が確認されたユーザーの表示名。                                                                                     |
-| `userPrincipalName`                            |`String`                      | アクセス権が確認されたユーザーのユーザー プリンシパル名です。                                                                                     |
+| `userId`                            |`String`                      | アクセスがレビューされたユーザーの id。                                                                                    |
+| `userDisplayName`                            |`String`                      | アクセスがレビューされたユーザーの表示名。                                                                                     |
+| `userPrincipalName`                            |`String`                      | アクセスがレビューされたユーザーのユーザープリンシパル名。                                                                                     |
 
 
 
 ## <a name="relationships"></a>リレーションシップ
 
-なし。  この型のオブジェクトは、 [accessReview](accessreview.md)オブジェクトの[mydecisions](../api/accessreview-listmydecisions.md)の[意思決定](../api/accessreview-listdecisions.md)との関係を使用してアクセス確認から取得できます。
+なし。  この型のオブジェクトは、 [accessreview](accessreview.md)オブジェクトの[決定事項](../api/accessreview-listdecisions.md)と[mydecisions](../api/accessreview-listmydecisions.md)関係を使用して、アクセスレビューから取得できます。
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リストの accessReview の決定](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| AccessReview の決定を取得します。|
-|[マイ accessReview の決定事項を表示します。](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| 参照者、accessReview の自分の意思決定を取得します。|
+|[accessreview に関する決定事項を一覧表示する](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| accessreview の決定事項を取得します。|
+|[自分の accessreview の決定事項を一覧表示する](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| レビュー担当者として、accessreview の決定事項を取得します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

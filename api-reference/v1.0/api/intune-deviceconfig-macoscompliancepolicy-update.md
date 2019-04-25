@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 922b63ba99ae17505e36a861c6d12a4b6a195c8c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549861"
 ---
 # <a name="update-macoscompliancepolicy"></a>macOSCompliancePolicy の更新
 
@@ -54,8 +54,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
-|passwordBlockSimple|Boolean|単純なパスワードをブロックするかどうかを示します。|
+|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
+|passwordBlockSimple|ブール値|単純なパスワードをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 14 までです|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
@@ -65,12 +65,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |osMinimumVersion|String|最小 os バージョン。|
 |osMaximumVersion|String|最大 os バージョン。|
 |systemIntegrityProtectionEnabled|Boolean|デバイスでシステム整合性の保護が有効になっている必要があります。|
-|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
+|deviceThreatProtectionEnabled|ブール値|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
-|firewallEnabled|Boolean|ファイアウォールを有効にするかどうかを指定します。|
-|firewallBlockAllIncoming|Boolean|[着信接続をすべてブロックする] オプションに対応しています。|
-|firewallEnableStealthMode|Boolean|[ステルスモードを有効にする] に相当します。|
+|firewallEnabled|ブール値|ファイアウォールを有効にするかどうかを指定します。|
+|firewallBlockAllIncoming|ブール値|[着信接続をすべてブロックする] オプションに対応しています。|
+|firewallEnableStealthMode|ブール値|[ステルスモードを有効にする] に相当します。|
 
 
 

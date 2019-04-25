@@ -6,11 +6,11 @@ title: ファイルへのアクセス権を持つユーザーを一覧表示す�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 1157aaafbcebe784acef9c08ff3987a0921ef833
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548136"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 
@@ -47,13 +47,13 @@ GET /sites/{siteId}/drive/items/{itemId}/permissions
 GET /users/{userId}/drive/items/{itemId}/permissions
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 種類   | 説明                                                                                                                                     |
+| 名前          | 型   | 説明                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | string | この要求ヘッダーが含まれている場合、指定された etag がアイテムの現在の etag に一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
 

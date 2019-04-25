@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565871"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 
@@ -45,14 +45,14 @@ ms.locfileid: "30260992"
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は `allowed`、`required`、`disallowed` です。|
 |state|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
-|securityDeviceRequired|Boolean|まだ文書化されていません|
-|unlockWithBiometricsEnabled|Boolean|まだ文書化されていません|
-|remotePassportEnabled|Boolean|まだ文書化されていません|
+|securityDeviceRequired|ブール型 (Boolean)|まだ文書化されていません|
+|unlockWithBiometricsEnabled|ブール型 (Boolean)|まだ文書化されていません|
+|remotePassportEnabled|ブール型 (Boolean)|まだ文書化されていません|
 |pinPreviousBlockCount|Int32|まだ文書化されていません|
 |pinExpirationInDays|Int32|まだ文書化されていません|
 |enhancedBiometricsState|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) からの継承|

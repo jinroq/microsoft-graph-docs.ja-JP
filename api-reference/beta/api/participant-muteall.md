@@ -1,21 +1,21 @@
 ---
-title: '参加者: muteAll'
-description: 呼び出しのすべての参加者をミュートします。
+title: '参加者: muteall'
+description: 通話ですべての参加者をミュートします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522834"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539373"
 ---
-# <a name="participant-muteall"></a>参加者: muteAll
+# <a name="participant-muteall"></a>参加者: muteall
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-呼び出しのすべての参加者をミュートします。
+通話ですべての参加者をミュートします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|participants|String コレクション|参加者をミュートします。|
-|ClientContext|String|クライアントのコンテキスト。|
+|参加者|String collection|ミュートする参加者。|
+|clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[commsOperation](../resources/commsoperation.md)のオブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。

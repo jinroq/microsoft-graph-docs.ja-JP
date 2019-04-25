@@ -1,19 +1,19 @@
 ---
-title: 添付ファイル リソースの種類
-description: イベントに関連するコンテンツを追加します。
+title: attachment リソース型
+description: 関連するコンテンツをイベントに追加できます。
 localization_priority: Normal
 ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535582"
 ---
-# <a name="attachment-resource-type"></a>添付ファイル リソースの種類
+# <a name="attachment-resource-type"></a>attachment リソース型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または添付ファイルの形式での[投稿](../resources/post.md)に関連するコンテンツを追加できます。
+添付ファイルの形式で、関連するコンテンツを[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に追加できます。
 
 **attachment** は、次の派生型の添付ファイルの基本リソースです。
 
@@ -27,16 +27,16 @@ ms.locfileid: "29643151"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[添付ファイルを取得する](../api/attachment-get.md) | [attachment](attachment.md) |プロパティとイベント、メッセージ、Outlook のタスク、または投稿に添付された添付ファイルの関係を参照してください。|
+|[添付ファイルを取得する](../api/attachment-get.md) | [attachment](attachment.md) |イベント、メッセージ、Outlook タスク、または投稿に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。|
 |[イベントに添付ファイルを追加する](../api/event-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルをイベントに追加します。|
 |[メッセージに添付ファイルを追加する](../api/message-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルをメッセージに追加します。|
-|[Outlook のタスクに添付ファイルを追加します。](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルを Outlook のタスクを追加します。|
+|[Outlook タスクに添付ファイルを追加する](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Outlook タスクにファイル、アイテム、またはリンクの添付ファイルを追加します。|
 |[投稿に添付ファイルを追加する](../api/post-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルを投稿に追加します。|
 |[イベントの添付ファイルを一覧表示する](../api/event-list-attachments.md) | [attachment](attachment.md) コレクション | イベントの添付ファイルの一覧を取得します。 |
 |[メッセージの添付ファイルを一覧表示する](../api/message-list-attachments.md) | [attachment](attachment.md) コレクション | メッセージの添付ファイルの一覧を取得します。 |
-|[Outlook の仕事リストの添付ファイル](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) コレクション | Outlook のタスクの添付ファイルの一覧を取得します。 |
+|[Outlook タスクの添付ファイルを一覧表示する](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) コレクション | Outlook タスクの添付ファイルの一覧を取得します。 |
 |[投稿の添付ファイルを一覧表示する](../api/post-list-attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |
-|[削除](../api/attachment-delete.md) | なし |イベント、メッセージ、Outlook のタスク、または投稿の添付ファイルを削除します。 |
+|[削除](../api/attachment-delete.md) | なし |イベント、メッセージ、Outlook タスク、または投稿の添付ファイルを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
@@ -45,8 +45,8 @@ ms.locfileid: "29643151"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
-|id|String| 読み取り専用。|
-|isInline|Boolean|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
+|id|String| 読み取り専用です。|
+|isInline|ブール値|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |name|String|添付ファイルの表示名。実際のファイル名である必要はありません。|
 |size|Int32|添付ファイルの長さ (バイト単位)。|

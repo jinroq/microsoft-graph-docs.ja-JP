@@ -1,27 +1,27 @@
 ---
-title: bookingWorkHours リソースの種類
+title: bookingwork hours リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 9a51fb9d4f97dde2e3b50d9a19481eeab31483d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535492"
 ---
-# <a name="bookingworkhours-resource-type"></a>bookingWorkHours リソースの種類
+# <a name="bookingworkhours-resource-type"></a>bookingwork hours リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-[BookingBusiness](bookingbusiness.md)または[bookingStaffMember](bookingstaffmember.md)の週の 1 日の稼働時間のセットを表します。
+1週間の稼働時間のセットを表します。これは、 [bookingbusiness](bookingbusiness.md)または[bookingStaffMember](bookingstaffmember.md)に対して使用されます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|Day|String| このインスタンスで表される曜日。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
-|Timeslots|[bookingWorkTimeSlot](bookingworktimeslot.md)コレクション|1 日中に開始/終了時刻の一覧です。|
+|日勤|String| このインスタンスで表される曜日。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
+|timeSlots|[bookingwork timesロット](bookingworktimeslot.md)コレクション|1日の開始/終了時刻のリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 

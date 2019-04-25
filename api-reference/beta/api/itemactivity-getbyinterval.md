@@ -2,26 +2,26 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: 間隔によって項目のアクティビティの統計 (stats) を取得します。
+title: 間隔ごとにアイテムアクティビティの統計情報を取得する
 localization_priority: Normal
 ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516456"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541312"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>間隔によって項目のアクティビティの統計 (stats) を取得します。
+# <a name="get-item-activity-stats-by-interval"></a>間隔ごとにアイテムアクティビティの統計情報を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このリソース内の指定した時間間隔で行われた活動の[itemActivityStats][]を取得します。
+このリソースの下で、指定された期間内に行われたアクティビティの[itemactivitystats][]を取得します。
 
->**注:****ItemAnalytics**リソースはまだすべての[国内展開](/graph/deployments)で使用可能ではありません。
+>**注:****itemanalytics**リソースは、すべての[国内展開](/graph/deployments)でまだ使用できません。
 
-分析の集計は、すべてのアクション タイプにできない可能性があります。
+分析集約は、すべてのアクションの種類では使用できない場合があります。
 
-[itemActivityStats]: ../resources/itemactivitystat.md
+[itemactivitystats]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,9 +47,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | パラメーター      | 型               | 説明
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | 文字列 (タイムスタンプ) | 集計の活動に使用される開始時刻。
-| endDateTime    | 文字列 (タイムスタンプ) | 集計の活動に使用される終了時間です。
-| interval       | string             | 集計間隔です。
+| startDateTime  | string (タイムスタンプ) | アクティビティを集計する開始時刻。
+| endDateTime    | string (タイムスタンプ) | アクティビティを集約する終了時刻。
+| interval       | string             | 集約間隔。
 
 ## <a name="example"></a>例
 

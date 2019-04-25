@@ -1,27 +1,27 @@
 ---
 title: Get conversation
-description: 会話オブジェクトのプロパティとリレーションシップを取得します。
+description: 会話オブジェクトのプロパティと関係を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 174d5a5b5309348de5ebf01d38445d032d9e31ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566137"
 ---
-# <a name="get-conversation"></a>Get conversation
+# <a name="get-conversation"></a>会話を取得する
 
-会話オブジェクトのプロパティとリレーションシップを取得します。
+会話オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
+|委任 (職場または学校のアカウント) | グループ読み取り。すべてを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All、Group.Read.All |
+|アプリケーション | グループ読み取り。すべてを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

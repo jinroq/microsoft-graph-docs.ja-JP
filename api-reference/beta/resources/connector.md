@@ -1,15 +1,15 @@
 ---
-title: コネクタ リソースの種類
+title: コネクタリソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535537"
 ---
-# <a name="connector-resource-type"></a>コネクタ リソースの種類
+# <a name="connector-resource-type"></a>コネクタリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,21 +24,21 @@ ms.locfileid: "29525732"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[コネクタを取得します。](../api/connector-get.md) | [Connector](connector.md) |コネクタ オブジェクトのプロパティと関係を参照してください。|
-|[memberOf を一覧表示する](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md)コレクション| コネクタに関連付けられている connectorGroup オブジェクトを取得します。|
+|[コネクタの取得](../api/connector-get.md) | [コネクター](connector.md) |コネクタオブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List memberOf](../api/connector-list-memberof.md) |[コネクタグループ](connectorgroup.md)コレクション| コネクタに関連付けられているコネクタグループオブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|externalIp|String|コネクタ コンピューターのサービスによって検出されたと外部の IP アドレスです。 読み取り専用|
-|id|String| コネクタのオブジェクト id です。 <BR>読み取り専用です。|
-|マシン名|String| コネクタが実行されているマシンの名前です。 <BR>読み取り専用|
-|status|string| コネクタの状態を示します。 使用可能な値は、`active`、`inactive` です。 読み取り専用 |
+|externalip|String|コネクタコンピューターのサービスによって検出された外部 IP アドレス。 読み取り専用|
+|id|String| コネクタのオブジェクト id。 <BR>読み取り専用。|
+|マシン|String| コネクタが実行されているコンピューターの名前。 <BR>読み取り専用|
+|status|string| コネクタの状態を示します。 可能な値は、`active`、`inactive` です。 読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|memberOf|[connectorGroup](connectorgroup.md)コレクション| 接続がのメンバーである connectorGroup。<br>読み取り専用です。 |
+|memberOf|[コネクタグループ](connectorgroup.md)コレクション| 接続がメンバーであるコネクタグループ。<br>読み取り専用。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
