@@ -5,11 +5,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 92ba48a7ad55b6a7dff28ccc1547769c149e378b
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543089"
 ---
 # <a name="dimensions-resource-type"></a>Dimensions リソースの種類
 Dynamics 365 Business Central のディメンションを表します。
@@ -23,7 +23,7 @@ Dynamics 365 Business Central のディメンションを表します。
 ## <a name="properties"></a>プロパティ
 | プロパティ           | 型                  |説明               |
 |:-------------------|:----------------------|:-------------------------|
-|ID                  |GUID                   |アイテムの一意の ID です。|
+|id                  |GUID                   |アイテムの一意の ID です。|
 |code                |文字列、最大サイズ20|次元コード。       |
 |displayName         |string                 |ディメンションの名前を指定します。 この名前は、ディメンションが使用される場所に表示されます。|
 |lastModifiedDateTime|datetime               |ディメンションが変更された最後の datetime。|  

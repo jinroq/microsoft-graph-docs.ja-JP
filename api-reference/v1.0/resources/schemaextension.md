@@ -4,11 +4,11 @@ description: 'スキーマの拡張機能を使用すると、拡張するスキ
 localization_priority: Priority
 author: dkershaw10
 ms.openlocfilehash: 64c9fa09b83af23604bf8a6e550533b259f1b0a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961457"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579227"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
@@ -40,12 +40,12 @@ ms.locfileid: "27961457"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|String|スキーマ拡張機能の説明。|
+|description|String|スキーマ拡張機能の説明。|
 |id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
 |owner|String|スキーマ拡張機能の所有者であるアプリケーションの `appId` です。 このプロパティは作成時に指定して所有者を設定できます。  指定しない場合、呼び出し元のアプリケーションの `appId` が所有者として設定されます。 どちらの場合も、サインインしたユーザーがアプリケーションの所有者でなければなりません。 設定すると、このプロパティは読み取り専用で、変更することはできません。| 
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティ名と種類のコレクション。|
-|status|String|スキーマ拡張機能のライフサイクル状態。考えられる状態は、**InDevelopment**、**Available**、および **Deprecated** です。作成時に自動で **InDevelopment** に設定されます。考えられる状態遷移と動作の詳細については、「[スキーマ拡張機能](/graph/extensibility-overview#schema-extensions)」をご覧ください。|
-|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。**contact**、**device**、**event**、**group**、**message**、**organization**、**post**、**user** のいずれかから選択します。|
+|status|String|スキーマ拡張機能のライフサイクル状態。 考えられる状態は、**InDevelopment**、**Available**、および **Deprecated** です。 作成時に自動で **InDevelopment** に設定されます。 考えられる状態遷移と動作の詳細については、「[スキーマ拡張機能](/graph/extensibility-overview#schema-extensions)」をご覧ください。|
+|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。 **contact**、**device**、**event**、**group**、**message**、**organization**、**post**、**user** のいずれかから選択します。|
 
 ## <a name="json-representation"></a>JSON 表記
 
