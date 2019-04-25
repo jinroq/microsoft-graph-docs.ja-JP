@@ -1,31 +1,31 @@
 ---
 title: governancePermission リソースの種類
-description: '特定の governanceResource に、governanceSubject を持つアクセス許可を表します。  '
+description: 'governanceSubject が特定の governanceResource に対して持つアクセス許可を表します。  '
 localization_priority: Normal
 ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547509"
 ---
-# <a name="governancepermission-resource-type"></a><span data-ttu-id="e5a03-103">governancePermission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e5a03-103">governancePermission resource type</span></span>
+# <a name="governancepermission-resource-type"></a><span data-ttu-id="cbf59-103">governancePermission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cbf59-103">governancePermission resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5a03-104">特定の[governanceResource](../resources/governanceresource.md)に、 [governanceSubject](../resources/governancesubject.md)を持つアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="e5a03-104">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
+<span data-ttu-id="cbf59-104">[governanceSubject](../resources/governancesubject.md)が特定の[governanceResource](../resources/governanceresource.md)に対して持つアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="cbf59-104">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="e5a03-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5a03-105">Properties</span></span>
-| <span data-ttu-id="e5a03-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5a03-106">Property</span></span>     | <span data-ttu-id="e5a03-107">型</span><span class="sxs-lookup"><span data-stu-id="e5a03-107">Type</span></span>   |<span data-ttu-id="e5a03-108">説明</span><span class="sxs-lookup"><span data-stu-id="e5a03-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cbf59-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cbf59-105">Properties</span></span>
+| <span data-ttu-id="cbf59-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cbf59-106">Property</span></span>     | <span data-ttu-id="cbf59-107">型</span><span class="sxs-lookup"><span data-stu-id="cbf59-107">Type</span></span>   |<span data-ttu-id="cbf59-108">説明</span><span class="sxs-lookup"><span data-stu-id="cbf59-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5a03-109">accessLevel</span><span class="sxs-lookup"><span data-stu-id="e5a03-109">accessLevel</span></span>|<span data-ttu-id="e5a03-110">String</span><span class="sxs-lookup"><span data-stu-id="e5a03-110">String</span></span>|<span data-ttu-id="e5a03-111">アクセス レベルです。</span><span class="sxs-lookup"><span data-stu-id="e5a03-111">The access level.</span></span> <span data-ttu-id="e5a03-112">有効な値: ``None``、 ``UserRead``、``AdminRead``と``AdminReadWrite``。</span><span class="sxs-lookup"><span data-stu-id="e5a03-112">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
-|<span data-ttu-id="e5a03-113">isActive</span><span class="sxs-lookup"><span data-stu-id="e5a03-113">isActive</span></span>|<span data-ttu-id="e5a03-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="e5a03-114">Boolean</span></span>|<span data-ttu-id="e5a03-115">指定する場合、リクエスターが、アクティブなロールの割り当てのアクセス レベルを持ちます。</span><span class="sxs-lookup"><span data-stu-id="e5a03-115">Indicate if the the requestor has any active role assignment for the access level.</span></span>|
-|<span data-ttu-id="e5a03-116">isEligible</span><span class="sxs-lookup"><span data-stu-id="e5a03-116">isEligible</span></span>|<span data-ttu-id="e5a03-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="e5a03-117">Boolean</span></span>|<span data-ttu-id="e5a03-118">リクエスターは、対象となるロールの割り当てのアクセス レベルを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5a03-118">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
+|<span data-ttu-id="cbf59-109">accessLevel</span><span class="sxs-lookup"><span data-stu-id="cbf59-109">accessLevel</span></span>|<span data-ttu-id="cbf59-110">String</span><span class="sxs-lookup"><span data-stu-id="cbf59-110">String</span></span>|<span data-ttu-id="cbf59-111">アクセスレベル。</span><span class="sxs-lookup"><span data-stu-id="cbf59-111">The access level.</span></span> <span data-ttu-id="cbf59-112">有効な値``None``は``UserRead``、 ``AdminRead``、、 ``AdminReadWrite``、です。</span><span class="sxs-lookup"><span data-stu-id="cbf59-112">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
+|<span data-ttu-id="cbf59-113">isActive</span><span class="sxs-lookup"><span data-stu-id="cbf59-113">isActive</span></span>|<span data-ttu-id="cbf59-114">ブール値</span><span class="sxs-lookup"><span data-stu-id="cbf59-114">Boolean</span></span>|<span data-ttu-id="cbf59-115">要求者がアクセスレベルに対してアクティブなロール割り当てを持っているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="cbf59-115">Indicate if the the requestor has any active role assignment for the access level.</span></span>|
+|<span data-ttu-id="cbf59-116">isEligible</span><span class="sxs-lookup"><span data-stu-id="cbf59-116">isEligible</span></span>|<span data-ttu-id="cbf59-117">ブール値</span><span class="sxs-lookup"><span data-stu-id="cbf59-117">Boolean</span></span>|<span data-ttu-id="cbf59-118">要求者がアクセスレベルに対して適格な役割の割り当てを持っているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="cbf59-118">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e5a03-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e5a03-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cbf59-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="cbf59-119">JSON representation</span></span>
 
-<span data-ttu-id="e5a03-120">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e5a03-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cbf59-120">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="cbf59-120">Here is a JSON representation of the resource.</span></span>
 
 ```json
 {

@@ -2,22 +2,22 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActionStat
+title: itemactionstat
 localization_priority: Normal
 ms.openlocfilehash: 39209671b63b991a8fb3ccf1c830c8557fce27c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509638"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569985"
 ---
-# <a name="itemactionstat-resource-type"></a><span data-ttu-id="dfc78-102">itemActionStat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dfc78-102">itemActionStat resource type</span></span>
+# <a name="itemactionstat-resource-type"></a><span data-ttu-id="8b84c-102">itemactionstat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8b84c-102">itemActionStat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dfc78-103">**ItemActionStat**リソースでは、集計の詳細については、期間内にアクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="dfc78-103">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
+<span data-ttu-id="8b84c-103">**itemactionstat**リソースは、一定期間にわたるアクションについての集約された詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="8b84c-103">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dfc78-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dfc78-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8b84c-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8b84c-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,12 +32,12 @@ ms.locfileid: "29509638"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="dfc78-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfc78-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8b84c-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b84c-105">Properties</span></span>
 
-| <span data-ttu-id="dfc78-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dfc78-106">Property</span></span>    | <span data-ttu-id="dfc78-107">型</span><span class="sxs-lookup"><span data-stu-id="dfc78-107">Type</span></span>  | <span data-ttu-id="dfc78-108">説明</span><span class="sxs-lookup"><span data-stu-id="dfc78-108">Description</span></span>
+| <span data-ttu-id="8b84c-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b84c-106">Property</span></span>    | <span data-ttu-id="8b84c-107">型</span><span class="sxs-lookup"><span data-stu-id="8b84c-107">Type</span></span>  | <span data-ttu-id="8b84c-108">説明</span><span class="sxs-lookup"><span data-stu-id="8b84c-108">Description</span></span>
 |:------------|:------|:-------------------------------------------------------
-| <span data-ttu-id="dfc78-109">actionCount</span><span class="sxs-lookup"><span data-stu-id="dfc78-109">actionCount</span></span> | <span data-ttu-id="dfc78-110">Int32</span><span class="sxs-lookup"><span data-stu-id="dfc78-110">Int32</span></span> | <span data-ttu-id="dfc78-111">アクションが発生した回数です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-111">The number of times the action took place.</span></span> <span data-ttu-id="dfc78-112">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-112">Read-only.</span></span>
-| <span data-ttu-id="dfc78-113">actorCount</span><span class="sxs-lookup"><span data-stu-id="dfc78-113">actorCount</span></span>  | <span data-ttu-id="dfc78-114">Int32</span><span class="sxs-lookup"><span data-stu-id="dfc78-114">Int32</span></span> | <span data-ttu-id="dfc78-115">アクションを実行する異なるアクターの数です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-115">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="dfc78-116">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dfc78-116">Read-only.</span></span>
+| <span data-ttu-id="8b84c-109">actioncount</span><span class="sxs-lookup"><span data-stu-id="8b84c-109">actionCount</span></span> | <span data-ttu-id="8b84c-110">Int32</span><span class="sxs-lookup"><span data-stu-id="8b84c-110">Int32</span></span> | <span data-ttu-id="8b84c-111">アクションが行われた回数。</span><span class="sxs-lookup"><span data-stu-id="8b84c-111">The number of times the action took place.</span></span> <span data-ttu-id="8b84c-112">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="8b84c-112">Read-only.</span></span>
+| <span data-ttu-id="8b84c-113">actorCount</span><span class="sxs-lookup"><span data-stu-id="8b84c-113">actorCount</span></span>  | <span data-ttu-id="8b84c-114">Int32</span><span class="sxs-lookup"><span data-stu-id="8b84c-114">Int32</span></span> | <span data-ttu-id="8b84c-115">アクションを実行した個別のアクターの数。</span><span class="sxs-lookup"><span data-stu-id="8b84c-115">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="8b84c-116">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="8b84c-116">Read-only.</span></span>
 
 <!--
 {
