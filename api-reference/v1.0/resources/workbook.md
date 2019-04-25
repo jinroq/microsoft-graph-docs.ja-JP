@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: b4f0a439db5cc430e558f2d43215cb1c5c0f7779
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456872"
 ---
 # <a name="workbook-resource-type"></a>Workbook リソースタイプ
 
@@ -49,15 +49,15 @@ Workbook は、ワークシート、テーブル、範囲などの関連する�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|names|[WorkbookNamedItem](nameditem.md)コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
-|テーブル|[WorkbookTable](table.md)コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
-|worksheets|[WorkbookWorksheet](worksheet.md)コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
+|names|[WorkbookNamedItem](nameditem.md) コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
+|テーブル|[WorkbookTable](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
+|worksheets|[WorkbookWorksheet](worksheet.md) コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
 
 ## <a name="functions"></a>関数
 
 [Excel の関数](#functions):構文 `POST /workbook/functions/{function-name}` を使用し、また JSON オブジェクトを使用して本文の関数の引数を提供することでブック関数を呼び出します。関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。`null` の `error` 値は、関数の実行が成功したことを示します。 
 
-サポートされている関数の完全な一覧は、[こちら](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)です。特定のパラメーター名とデータ型については関数のシグネチャを参照してください。
+サポートされている関数の完全な一覧は、[こちら](https://support.office.com/ja-JP/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188) です。特定のパラメーター名とデータ型については関数のシグネチャを参照してください。
 
 _重要な注意点: _ 
 * 範囲入力パラメーターは、範囲のアドレス文字列ではなく、range オブジェクトを使用して提供されます。  
@@ -76,7 +76,7 @@ Excel スプレッドシートで、`vlookup` 関数は次の引数を取りま�
 
 =VLOOKUP(<参照値>, <参照値を含む範囲>, <戻り値を含む範囲内の列番号>, <近似一致には TRUE、完全一致には FALSE をオプションで指定>)
 
-([VLOOKUP Excel 関数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)についてのドキュメントを参照してください。)
+([VLOOKUP Excel 関数](https://support.office.com/ja-JP/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)についてのドキュメントを参照してください。)
 
 次の例では、Excel REST API で `vlookup` 関数を呼び出し、これらのパラメーターを渡す方法を示しています。
 
@@ -119,7 +119,7 @@ Excel スプレッドシートでは、`median` 関数は 1 つ以上の入力�
 
 =MEDIAN(A2:A6)
 
-([MEDIAN Excel 関数](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)についてのドキュメントを参照してください。)
+([MEDIAN Excel 関数](https://support.office.com/ja-JP/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)についてのドキュメントを参照してください。)
 
 次の例では、Excel REST API で `median` 関数と 1 つ以上の入力範囲を呼び出す方法を示しています。 
 
