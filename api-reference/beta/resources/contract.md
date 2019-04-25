@@ -1,53 +1,51 @@
 ---
-title: コントラクト リソース型
-description: パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
+title: Contract リソースの種類
+description: パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6309dfc370d414ccb66065fe4048d7cece51f018
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535432"
 ---
-# <a name="contract-resource-type"></a><span data-ttu-id="2e3f6-103">コントラクト リソース型</span><span class="sxs-lookup"><span data-stu-id="2e3f6-103">Contract resource type</span></span>
+# <a name="contract-resource-type"></a><span data-ttu-id="a42c4-103">Contract リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a42c4-103">Contract resource type</span></span>
+<span data-ttu-id="a42c4-104">パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。</span><span class="sxs-lookup"><span data-stu-id="a42c4-104">Represents an existing partnership that the partner tenant has with a customer tenant.</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> <span data-ttu-id="a42c4-105">**重要:** パートナーテナントのみに存在します。</span><span class="sxs-lookup"><span data-stu-id="a42c4-105">**Important:** Exists in partner tenants only.</span></span> <span data-ttu-id="a42c4-106">パートナーテナントは、microsoft の[クラウドソリューションプロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 シンジケート、または microsoft Advisor パートナープログラムの一部である microsoft パートナーに属する Azure AD テナントです。</span><span class="sxs-lookup"><span data-stu-id="a42c4-106">Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.</span></span>
 
-<span data-ttu-id="2e3f6-104">パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-104">Represents an existing partnership that the partner tenant has with a customer tenant.</span></span>
+## <a name="methods"></a><span data-ttu-id="a42c4-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="a42c4-107">Methods</span></span>
 
-> <span data-ttu-id="2e3f6-p101">**重要:** パートナー テナントにのみ存在します。パートナー テナントとは、[Microsoft クラウド ソリューション プロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 Syndication、Microsoft Advisor パートナー プログラムのいずれかに含まれている、Microsoft パートナーに所属する Azure AD テナントです。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p101">**Important:** Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.</span></span>
-
-## <a name="methods"></a><span data-ttu-id="2e3f6-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="2e3f6-107">Methods</span></span>
-
-| <span data-ttu-id="2e3f6-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="2e3f6-108">Method</span></span>   | <span data-ttu-id="2e3f6-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="2e3f6-109">Return Type</span></span> | <span data-ttu-id="2e3f6-110">説明</span><span class="sxs-lookup"><span data-stu-id="2e3f6-110">Description</span></span> |
+| <span data-ttu-id="a42c4-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="a42c4-108">Method</span></span>   | <span data-ttu-id="a42c4-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="a42c4-109">Return Type</span></span> | <span data-ttu-id="a42c4-110">説明</span><span class="sxs-lookup"><span data-stu-id="a42c4-110">Description</span></span> |
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="2e3f6-111">コントラクトを取得する</span><span class="sxs-lookup"><span data-stu-id="2e3f6-111">Get contract</span></span>](../api/contract-get.md) | <span data-ttu-id="2e3f6-112">コントラクト</span><span class="sxs-lookup"><span data-stu-id="2e3f6-112">Contract</span></span> |<span data-ttu-id="2e3f6-113">特定のコントラクト オブジェクトのプロパティを参照します。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-113">Read properties of a specific contract object.</span></span> |
-|[<span data-ttu-id="2e3f6-114">コントラクトを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="2e3f6-114">List contracts</span></span>](../api/contract-list.md) | <span data-ttu-id="2e3f6-115">コントラクト コレクション</span><span class="sxs-lookup"><span data-stu-id="2e3f6-115">Contract collection</span></span> | <span data-ttu-id="2e3f6-116">パートナー テナントのコントラクトの一覧です。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-116">List of contracts in the partner tenant.</span></span> |
+|[<span data-ttu-id="a42c4-111">契約書を取得する</span><span class="sxs-lookup"><span data-stu-id="a42c4-111">Get contract</span></span>](../api/contract-get.md) | <span data-ttu-id="a42c4-112">縮小</span><span class="sxs-lookup"><span data-stu-id="a42c4-112">Contract</span></span> |<span data-ttu-id="a42c4-113">特定の contract オブジェクトのプロパティを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="a42c4-113">Read properties of a specific contract object.</span></span> |
+|[<span data-ttu-id="a42c4-114">契約書を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="a42c4-114">List contracts</span></span>](../api/contract-list.md) | <span data-ttu-id="a42c4-115">Contract コレクション</span><span class="sxs-lookup"><span data-stu-id="a42c4-115">Contract collection</span></span> | <span data-ttu-id="a42c4-116">パートナーテナント内の契約のリスト。</span><span class="sxs-lookup"><span data-stu-id="a42c4-116">List of contracts in the partner tenant.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="2e3f6-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e3f6-117">Properties</span></span>
-| <span data-ttu-id="2e3f6-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e3f6-118">Property</span></span>   | <span data-ttu-id="2e3f6-119">型</span><span class="sxs-lookup"><span data-stu-id="2e3f6-119">Type</span></span> | <span data-ttu-id="2e3f6-120">説明</span><span class="sxs-lookup"><span data-stu-id="2e3f6-120">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="a42c4-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a42c4-117">Properties</span></span>
+| <span data-ttu-id="a42c4-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a42c4-118">Property</span></span>   | <span data-ttu-id="a42c4-119">型</span><span class="sxs-lookup"><span data-stu-id="a42c4-119">Type</span></span> | <span data-ttu-id="a42c4-120">説明</span><span class="sxs-lookup"><span data-stu-id="a42c4-120">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2e3f6-121">contractType</span><span class="sxs-lookup"><span data-stu-id="2e3f6-121">contractType</span></span>|<span data-ttu-id="2e3f6-122">String</span><span class="sxs-lookup"><span data-stu-id="2e3f6-122">String</span></span>|<span data-ttu-id="2e3f6-123">コントラクトの型。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-123">Type of contract.</span></span><br><br><span data-ttu-id="2e3f6-124">使用可能な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-124">Possible values are:</span></span><br> <span data-ttu-id="2e3f6-p102">*SyndicationPartner* - この顧客に対し O365 と Intune を排他的に再販し管理するパートナーです。再販し、顧客をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p102">*SyndicationPartner* - Partner that exclusively resells and manages O365 and Intune for this customer. They resell and support their customers.</span></span><br> <span data-ttu-id="2e3f6-p103">*BreadthPartner* - この顧客に対し管理上のサポートを提供する能力を備えたパートナーです。ただし、パートナーが顧客に再販売することは許されていません。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p103">*BreadthPartner* - Partner has the ability to provide administrative support for this customer. However, the partner is not allowed to resell to the customer.</span></span><br><span data-ttu-id="2e3f6-p104">*ResellerPartner* - シンジケーション パートナーに類似していますが、テナントへの排他的アクセスを持たないパートナーです。シンジケーションの場合、顧客は Microsoft またはその他のパートナーから直接に追加のサブスクリプションを購入することはできません。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p104">*ResellerPartner* - Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant. In the syndication case, the customer cannot buy additional direct subscriptions from Microsoft or from other partners.</span></span>|
-|<span data-ttu-id="2e3f6-131">customerId</span><span class="sxs-lookup"><span data-stu-id="2e3f6-131">customerId</span></span>|<span data-ttu-id="2e3f6-132">Guid</span><span class="sxs-lookup"><span data-stu-id="2e3f6-132">Guid</span></span>|<span data-ttu-id="2e3f6-p105">このパートナーシップによって参照されるカスタマー テナントの一意識別子です。カスタマー テナントの組織リソースの ID プロパティに対応します。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p105">The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource.</span></span> |
-|<span data-ttu-id="2e3f6-135">defaultDomainName</span><span class="sxs-lookup"><span data-stu-id="2e3f6-135">defaultDomainName</span></span>|<span data-ttu-id="2e3f6-136">String</span><span class="sxs-lookup"><span data-stu-id="2e3f6-136">String</span></span>|<span data-ttu-id="2e3f6-p106">カスタマー テナントの既定のドメイン名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの既定のドメイン名が変更された場合は、自動的には更新されません。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p106">A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.</span></span>|
-|<span data-ttu-id="2e3f6-140">displayName</span><span class="sxs-lookup"><span data-stu-id="2e3f6-140">displayName</span></span>|<span data-ttu-id="2e3f6-141">String</span><span class="sxs-lookup"><span data-stu-id="2e3f6-141">String</span></span>|<span data-ttu-id="2e3f6-p107">カスタマー テナントの表示名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの表示名が変更された場合は、自動的には更新されません。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p107">A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.</span></span>|
-|<span data-ttu-id="2e3f6-145">id</span><span class="sxs-lookup"><span data-stu-id="2e3f6-145">id</span></span>|<span data-ttu-id="2e3f6-146">String</span><span class="sxs-lookup"><span data-stu-id="2e3f6-146">String</span></span>| <span data-ttu-id="2e3f6-p108">パートナーシップの一意識別子です。キー、読み取り専用</span><span class="sxs-lookup"><span data-stu-id="2e3f6-p108">The unique identifier for the partnership. Key, read-only</span></span> |
+|<span data-ttu-id="a42c4-121">contracttype</span><span class="sxs-lookup"><span data-stu-id="a42c4-121">contractType</span></span>|<span data-ttu-id="a42c4-122">String</span><span class="sxs-lookup"><span data-stu-id="a42c4-122">String</span></span>|<span data-ttu-id="a42c4-123">契約の種類。</span><span class="sxs-lookup"><span data-stu-id="a42c4-123">Type of contract.</span></span><br><br><span data-ttu-id="a42c4-124">使用可能な値は次のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="a42c4-124">Possible values are:</span></span><br> <span data-ttu-id="a42c4-125">*SyndicationPartner* -このお客様に対して O365 と Intune を排他的に resells して管理します。</span><span class="sxs-lookup"><span data-stu-id="a42c4-125">*SyndicationPartner* - Partner that exclusively resells and manages O365 and Intune for this customer.</span></span> <span data-ttu-id="a42c4-126">これらのユーザーは、お客様を再販し、サポートしています。</span><span class="sxs-lookup"><span data-stu-id="a42c4-126">They resell and support their customers.</span></span><br> <span data-ttu-id="a42c4-127">*BreadthPartner* -パートナーは、このお客様に対して管理サポートを提供することができます。</span><span class="sxs-lookup"><span data-stu-id="a42c4-127">*BreadthPartner* - Partner has the ability to provide administrative support for this customer.</span></span> <span data-ttu-id="a42c4-128">ただし、パートナーはお客様に再販することは許可されていません。</span><span class="sxs-lookup"><span data-stu-id="a42c4-128">However, the partner is not allowed to resell to the customer.</span></span><br><span data-ttu-id="a42c4-129">*ResellerPartner* -シンジケートパートナーに似ていますが、パートナーがテナントへの排他的なアクセス権を持っていない点が異なります。</span><span class="sxs-lookup"><span data-stu-id="a42c4-129">*ResellerPartner* - Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant.</span></span> <span data-ttu-id="a42c4-130">シンジケーションの場合、お客様は、Microsoft や他のパートナーから追加の直接サブスクリプションを購入することはできません。</span><span class="sxs-lookup"><span data-stu-id="a42c4-130">In the syndication case, the customer cannot buy additional direct subscriptions from Microsoft or from other partners.</span></span>|
+|<span data-ttu-id="a42c4-131">id</span><span class="sxs-lookup"><span data-stu-id="a42c4-131">customerId</span></span>|<span data-ttu-id="a42c4-132">Guid</span><span class="sxs-lookup"><span data-stu-id="a42c4-132">Guid</span></span>|<span data-ttu-id="a42c4-133">このパートナーシップによって参照される顧客のテナントの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="a42c4-133">The unique identifier for the customer tenant referenced by this partnership.</span></span> <span data-ttu-id="a42c4-134">顧客テナントの組織リソースの id プロパティに対応します。</span><span class="sxs-lookup"><span data-stu-id="a42c4-134">Corresponds to the id property of the customer tenant's organization resource.</span></span> |
+|<span data-ttu-id="a42c4-135">defaultdomainname</span><span class="sxs-lookup"><span data-stu-id="a42c4-135">defaultDomainName</span></span>|<span data-ttu-id="a42c4-136">String</span><span class="sxs-lookup"><span data-stu-id="a42c4-136">String</span></span>|<span data-ttu-id="a42c4-137">顧客テナントの既定のドメイン名のコピー。</span><span class="sxs-lookup"><span data-stu-id="a42c4-137">A copy of the customer tenant's default domain name.</span></span> <span data-ttu-id="a42c4-138">このコピーは、顧客とのパートナーシップが確立されたときに作成されます。</span><span class="sxs-lookup"><span data-stu-id="a42c4-138">The copy is made when the partnership with the customer is established.</span></span> <span data-ttu-id="a42c4-139">顧客のテナントの既定のドメイン名が変更されても、自動的には更新されません。</span><span class="sxs-lookup"><span data-stu-id="a42c4-139">It is not automatically updated if the customer tenant's default domain name changes.</span></span>|
+|<span data-ttu-id="a42c4-140">displayName</span><span class="sxs-lookup"><span data-stu-id="a42c4-140">displayName</span></span>|<span data-ttu-id="a42c4-141">String</span><span class="sxs-lookup"><span data-stu-id="a42c4-141">String</span></span>|<span data-ttu-id="a42c4-142">顧客のテナントの表示名のコピー。</span><span class="sxs-lookup"><span data-stu-id="a42c4-142">A copy of the customer tenant's display name.</span></span> <span data-ttu-id="a42c4-143">このコピーは、顧客とのパートナーシップが確立されたときに作成されます。</span><span class="sxs-lookup"><span data-stu-id="a42c4-143">The copy is made when the partnership with the customer is established.</span></span> <span data-ttu-id="a42c4-144">顧客のテナントの表示名が変更されても、自動的には更新されません。</span><span class="sxs-lookup"><span data-stu-id="a42c4-144">It is not automatically updated if the customer tenant's display name changes.</span></span>|
+|<span data-ttu-id="a42c4-145">id</span><span class="sxs-lookup"><span data-stu-id="a42c4-145">id</span></span>|<span data-ttu-id="a42c4-146">String</span><span class="sxs-lookup"><span data-stu-id="a42c4-146">String</span></span>| <span data-ttu-id="a42c4-147">パートナーシップの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="a42c4-147">The unique identifier for the partnership.</span></span> <span data-ttu-id="a42c4-148">キー、読み取り専用</span><span class="sxs-lookup"><span data-stu-id="a42c4-148">Key, read-only</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="2e3f6-149">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="2e3f6-149">Relationships</span></span>
-<span data-ttu-id="2e3f6-150">なし</span><span class="sxs-lookup"><span data-stu-id="2e3f6-150">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a42c4-149">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a42c4-149">Relationships</span></span>
+<span data-ttu-id="a42c4-150">なし</span><span class="sxs-lookup"><span data-stu-id="a42c4-150">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="2e3f6-151">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2e3f6-151">JSON representation</span></span>
-<span data-ttu-id="2e3f6-152">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2e3f6-152">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a42c4-151">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a42c4-151">JSON representation</span></span>
+<span data-ttu-id="a42c4-152">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a42c4-152">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Contract"
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.contract"
 }-->
 
 ```json
@@ -63,15 +61,10 @@ ms.locfileid: "29509701"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Contract resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contract.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

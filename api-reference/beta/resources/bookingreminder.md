@@ -1,33 +1,33 @@
 ---
-title: bookingReminder リソースの種類
+title: bookingreminder リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535484"
 ---
-# <a name="bookingreminder-resource-type"></a><span data-ttu-id="6c471-104">bookingReminder リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6c471-104">bookingReminder resource type</span></span>
+# <a name="bookingreminder-resource-type"></a><span data-ttu-id="c1d53-104">bookingreminder リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c1d53-104">bookingReminder resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="6c471-105">電子メールの事前通知を送信する先を表します。</span><span class="sxs-lookup"><span data-stu-id="6c471-105">Represents when and to whom to send an email reminder.</span></span>
+<span data-ttu-id="c1d53-105">電子メール通知を送信するタイミングと送信先を表します。</span><span class="sxs-lookup"><span data-stu-id="c1d53-105">Represents when and to whom to send an email reminder.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6c471-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6c471-106">Properties</span></span>
-| <span data-ttu-id="6c471-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6c471-107">Property</span></span>     | <span data-ttu-id="6c471-108">型</span><span class="sxs-lookup"><span data-stu-id="6c471-108">Type</span></span>   |<span data-ttu-id="6c471-109">説明</span><span class="sxs-lookup"><span data-stu-id="6c471-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c1d53-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c1d53-106">Properties</span></span>
+| <span data-ttu-id="c1d53-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c1d53-107">Property</span></span>     | <span data-ttu-id="c1d53-108">型</span><span class="sxs-lookup"><span data-stu-id="c1d53-108">Type</span></span>   |<span data-ttu-id="c1d53-109">説明</span><span class="sxs-lookup"><span data-stu-id="c1d53-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6c471-110">message</span><span class="sxs-lookup"><span data-stu-id="6c471-110">message</span></span>|<span data-ttu-id="6c471-111">String</span><span class="sxs-lookup"><span data-stu-id="6c471-111">String</span></span>|<span data-ttu-id="6c471-112">アラームのメッセージです。</span><span class="sxs-lookup"><span data-stu-id="6c471-112">The message in the reminder.</span></span>|
-|<span data-ttu-id="6c471-113">Offset</span><span class="sxs-lookup"><span data-stu-id="6c471-113">offset</span></span>|<span data-ttu-id="6c471-114">Duration</span><span class="sxs-lookup"><span data-stu-id="6c471-114">Duration</span></span>|<span data-ttu-id="6c471-115">アラームを送信する予定の開始までの時間の量。</span><span class="sxs-lookup"><span data-stu-id="6c471-115">The amount of time before the start of an appointment that the reminder should be sent.</span></span> <span data-ttu-id="6c471-116">それは、 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。</span><span class="sxs-lookup"><span data-stu-id="6c471-116">It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
-|<span data-ttu-id="6c471-117">Recipients</span><span class="sxs-lookup"><span data-stu-id="6c471-117">recipients</span></span>|<span data-ttu-id="6c471-118">String</span><span class="sxs-lookup"><span data-stu-id="6c471-118">String</span></span>| <span data-ttu-id="6c471-119">Shouold を受信したユーザー、通知します。</span><span class="sxs-lookup"><span data-stu-id="6c471-119">The persons who shouold receive the reminder.</span></span> <span data-ttu-id="6c471-120">可能な値は、`allAttendees`、`staff`、`customer` です。</span><span class="sxs-lookup"><span data-stu-id="6c471-120">Possible values are: `allAttendees`, `staff`, `customer`.</span></span>|
+|<span data-ttu-id="c1d53-110">メッセージ​​</span><span class="sxs-lookup"><span data-stu-id="c1d53-110">message</span></span>|<span data-ttu-id="c1d53-111">String</span><span class="sxs-lookup"><span data-stu-id="c1d53-111">String</span></span>|<span data-ttu-id="c1d53-112">アラームのメッセージ。</span><span class="sxs-lookup"><span data-stu-id="c1d53-112">The message in the reminder.</span></span>|
+|<span data-ttu-id="c1d53-113">交互</span><span class="sxs-lookup"><span data-stu-id="c1d53-113">offset</span></span>|<span data-ttu-id="c1d53-114">期間</span><span class="sxs-lookup"><span data-stu-id="c1d53-114">Duration</span></span>|<span data-ttu-id="c1d53-115">予定の開始時刻から事前通知を送信するまでの時間の長さ。</span><span class="sxs-lookup"><span data-stu-id="c1d53-115">The amount of time before the start of an appointment that the reminder should be sent.</span></span> <span data-ttu-id="c1d53-116">[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で示されています。</span><span class="sxs-lookup"><span data-stu-id="c1d53-116">It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
+|<span data-ttu-id="c1d53-117">受信者</span><span class="sxs-lookup"><span data-stu-id="c1d53-117">recipients</span></span>|<span data-ttu-id="c1d53-118">String</span><span class="sxs-lookup"><span data-stu-id="c1d53-118">String</span></span>| <span data-ttu-id="c1d53-119">shouold がアラームを受信する人物。</span><span class="sxs-lookup"><span data-stu-id="c1d53-119">The persons who shouold receive the reminder.</span></span> <span data-ttu-id="c1d53-120">使用可能な値は、`allAttendees`、`staff`、`customer` です。</span><span class="sxs-lookup"><span data-stu-id="c1d53-120">Possible values are: `allAttendees`, `staff`, `customer`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6c471-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6c471-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c1d53-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c1d53-121">JSON representation</span></span>
 
-<span data-ttu-id="6c471-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6c471-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c1d53-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c1d53-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

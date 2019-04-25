@@ -1,33 +1,33 @@
 ---
 title: audioSourceLevel リソースの種類
-description: その他のソース レベルの構成。
+description: 他のソースのレベルの構成。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c91a4c57b283f7669b2be22bba5de5d958b437ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535596"
 ---
-# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="0d2f8-103">audioSourceLevel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0d2f8-103">audioSourceLevel resource type</span></span>
+# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="ab95f-103">audioSourceLevel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ab95f-103">audioSourceLevel resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d2f8-104">その他のソース レベルの構成。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-104">Level configuration for other sources.</span></span>
+<span data-ttu-id="ab95f-104">他のソースのレベルの構成。</span><span class="sxs-lookup"><span data-stu-id="ab95f-104">Level configuration for other sources.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0d2f8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d2f8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ab95f-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ab95f-105">Properties</span></span>
 
-| <span data-ttu-id="0d2f8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d2f8-106">Property</span></span>               | <span data-ttu-id="0d2f8-107">型</span><span class="sxs-lookup"><span data-stu-id="0d2f8-107">Type</span></span>    | <span data-ttu-id="0d2f8-108">説明</span><span class="sxs-lookup"><span data-stu-id="0d2f8-108">Description</span></span>                                                                                         |
+| <span data-ttu-id="ab95f-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ab95f-106">Property</span></span>               | <span data-ttu-id="ab95f-107">型</span><span class="sxs-lookup"><span data-stu-id="ab95f-107">Type</span></span>    | <span data-ttu-id="ab95f-108">説明</span><span class="sxs-lookup"><span data-stu-id="ab95f-108">Description</span></span>                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="0d2f8-109">duckOthers</span><span class="sxs-lookup"><span data-stu-id="0d2f8-109">duckOthers</span></span>             | <span data-ttu-id="0d2f8-110">ブール値</span><span class="sxs-lookup"><span data-stu-id="0d2f8-110">Boolean</span></span> | <span data-ttu-id="0d2f8-111">Duck のアクティブなときに他のソースには、このソースを有効にします。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="0d2f8-112">レベルをかわす、true に設定を設定する場合。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-112">If set to true, ducking level has to be set.</span></span>|
-| <span data-ttu-id="0d2f8-113">level</span><span class="sxs-lookup"><span data-stu-id="0d2f8-113">level</span></span>                  | <span data-ttu-id="0d2f8-114">Int64</span><span class="sxs-lookup"><span data-stu-id="0d2f8-114">Int64</span></span>   | <span data-ttu-id="0d2f8-115">場合に、ソースのレベルをかわす`duckOthers`に設定されて`true`。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
-| <span data-ttu-id="0d2f8-116">参加者</span><span class="sxs-lookup"><span data-stu-id="0d2f8-116">participant</span></span>            | <span data-ttu-id="0d2f8-117">String</span><span class="sxs-lookup"><span data-stu-id="0d2f8-117">String</span></span>  | <span data-ttu-id="0d2f8-118">ソースの参加者オーディオ ストリームです。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-118">The source participant audio stream.</span></span>                                                                |
+| <span data-ttu-id="ab95f-109">その他のウィ氏</span><span class="sxs-lookup"><span data-stu-id="ab95f-109">duckOthers</span></span>             | <span data-ttu-id="ab95f-110">ブール値</span><span class="sxs-lookup"><span data-stu-id="ab95f-110">Boolean</span></span> | <span data-ttu-id="ab95f-111">このソースが、アクティブな他のソースをアヒルに使用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ab95f-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="ab95f-112">true に設定する場合は、ducking level を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab95f-112">If set to true, ducking level has to be set.</span></span>|
+| <span data-ttu-id="ab95f-113">level</span><span class="sxs-lookup"><span data-stu-id="ab95f-113">level</span></span>                  | <span data-ttu-id="ab95f-114">Int64</span><span class="sxs-lookup"><span data-stu-id="ab95f-114">Int64</span></span>   | <span data-ttu-id="ab95f-115">Ducking がに`true`設定され`duckOthers`ている場合のソースのレベル。</span><span class="sxs-lookup"><span data-stu-id="ab95f-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
+| <span data-ttu-id="ab95f-116">積極的</span><span class="sxs-lookup"><span data-stu-id="ab95f-116">participant</span></span>            | <span data-ttu-id="ab95f-117">String</span><span class="sxs-lookup"><span data-stu-id="ab95f-117">String</span></span>  | <span data-ttu-id="ab95f-118">ソース参加者のオーディオストリーム。</span><span class="sxs-lookup"><span data-stu-id="ab95f-118">The source participant audio stream.</span></span>                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="0d2f8-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0d2f8-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ab95f-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ab95f-119">JSON representation</span></span>
 
-<span data-ttu-id="0d2f8-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0d2f8-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ab95f-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ab95f-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

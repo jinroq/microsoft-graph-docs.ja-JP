@@ -1,31 +1,31 @@
 ---
-title: commsNotifications リソースの種類
-description: 通信サーバーによって 1 つのバッチで複数の通知を送信するための通知の一覧です。
+title: commsnotifications リソースの種類
+description: 複数の通知を1つのバッチで送信するために通信サーバーによって使用される通知の一覧。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2d002b74bffe0911e2ba1fef4eed324b52ebcc49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535517"
 ---
-# <a name="commsnotifications-resource-type"></a><span data-ttu-id="edcf5-103">commsNotifications リソースの種類</span><span class="sxs-lookup"><span data-stu-id="edcf5-103">commsNotifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="c0add-103">commsnotifications リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c0add-103">commsNotifications resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="edcf5-104">通信サーバーによって 1 つのバッチで複数の通知を送信するための通知の一覧です。</span><span class="sxs-lookup"><span data-stu-id="edcf5-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
+<span data-ttu-id="c0add-104">複数の通知を1つのバッチで送信するために通信サーバーによって使用される通知の一覧。</span><span class="sxs-lookup"><span data-stu-id="c0add-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="edcf5-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edcf5-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c0add-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c0add-105">Properties</span></span>
 
-| <span data-ttu-id="edcf5-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edcf5-106">Property</span></span>       | <span data-ttu-id="edcf5-107">型</span><span class="sxs-lookup"><span data-stu-id="edcf5-107">Type</span></span>                                                 | <span data-ttu-id="edcf5-108">説明</span><span class="sxs-lookup"><span data-stu-id="edcf5-108">Description</span></span>                                   |
+| <span data-ttu-id="c0add-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c0add-106">Property</span></span>       | <span data-ttu-id="c0add-107">型</span><span class="sxs-lookup"><span data-stu-id="c0add-107">Type</span></span>                                                 | <span data-ttu-id="c0add-108">説明</span><span class="sxs-lookup"><span data-stu-id="c0add-108">Description</span></span>                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| <span data-ttu-id="edcf5-109">value</span><span class="sxs-lookup"><span data-stu-id="edcf5-109">value</span></span>          | <span data-ttu-id="edcf5-110">[commsNotification](commsnotification.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="edcf5-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="edcf5-111">リソースに変更を通知します。</span><span class="sxs-lookup"><span data-stu-id="edcf5-111">The notification of a change in the resource.</span></span> |
+| <span data-ttu-id="c0add-109">value</span><span class="sxs-lookup"><span data-stu-id="c0add-109">value</span></span>          | <span data-ttu-id="c0add-110">[commsnotification](commsnotification.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="c0add-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="c0add-111">リソースの変更の通知。</span><span class="sxs-lookup"><span data-stu-id="c0add-111">The notification of a change in the resource.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="edcf5-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="edcf5-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c0add-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c0add-112">JSON representation</span></span>
 
-<span data-ttu-id="edcf5-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="edcf5-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c0add-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c0add-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

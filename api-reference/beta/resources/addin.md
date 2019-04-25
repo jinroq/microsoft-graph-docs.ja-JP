@@ -1,21 +1,21 @@
 ---
-title: アドイン リソースの種類
+title: addIn リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535793"
 ---
-# <a name="addin-resource-type"></a><span data-ttu-id="e8fc9-103">アドイン リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e8fc9-103">addIn resource type</span></span>
+# <a name="addin-resource-type"></a><span data-ttu-id="5b087-103">addIn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5b087-103">addIn resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="e8fc9-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e8fc9-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5b087-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5b087-104">JSON representation</span></span>
 
-<span data-ttu-id="e8fc9-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e8fc9-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5b087-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="5b087-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,12 +33,12 @@ ms.locfileid: "29643721"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="e8fc9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8fc9-106">Properties</span></span>
-| <span data-ttu-id="e8fc9-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8fc9-107">Property</span></span>     | <span data-ttu-id="e8fc9-108">型</span><span class="sxs-lookup"><span data-stu-id="e8fc9-108">Type</span></span>   |<span data-ttu-id="e8fc9-109">説明</span><span class="sxs-lookup"><span data-stu-id="e8fc9-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5b087-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b087-106">Properties</span></span>
+| <span data-ttu-id="5b087-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b087-107">Property</span></span>     | <span data-ttu-id="5b087-108">型</span><span class="sxs-lookup"><span data-stu-id="5b087-108">Type</span></span>   |<span data-ttu-id="5b087-109">説明</span><span class="sxs-lookup"><span data-stu-id="5b087-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e8fc9-110">id</span><span class="sxs-lookup"><span data-stu-id="e8fc9-110">id</span></span>|<span data-ttu-id="e8fc9-111">guid</span><span class="sxs-lookup"><span data-stu-id="e8fc9-111">guid</span></span>||
-|<span data-ttu-id="e8fc9-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8fc9-112">properties</span></span>|<span data-ttu-id="e8fc9-113">[keyValue](keyvalue.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="e8fc9-113">[keyValue](keyvalue.md) collection</span></span>||
-|<span data-ttu-id="e8fc9-114">type</span><span class="sxs-lookup"><span data-stu-id="e8fc9-114">type</span></span>|<span data-ttu-id="e8fc9-115">string</span><span class="sxs-lookup"><span data-stu-id="e8fc9-115">string</span></span>||
+|<span data-ttu-id="5b087-110">id</span><span class="sxs-lookup"><span data-stu-id="5b087-110">id</span></span>|<span data-ttu-id="5b087-111">guid</span><span class="sxs-lookup"><span data-stu-id="5b087-111">guid</span></span>||
+|<span data-ttu-id="5b087-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b087-112">properties</span></span>|<span data-ttu-id="5b087-113">[keyvalue](keyvalue.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="5b087-113">[keyValue](keyvalue.md) collection</span></span>||
+|<span data-ttu-id="5b087-114">type</span><span class="sxs-lookup"><span data-stu-id="5b087-114">type</span></span>|<span data-ttu-id="5b087-115">string</span><span class="sxs-lookup"><span data-stu-id="5b087-115">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
