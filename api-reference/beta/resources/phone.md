@@ -1,30 +1,30 @@
 ---
-title: 電話リソースの種類
+title: phone リソースの種類
 description: 電話番号を表します。
 localization_priority: Normal
 ms.openlocfilehash: a343d4e1d65126048a27ad723c86ae49eb2ed752
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573768"
 ---
-# <a name="phone-resource-type"></a><span data-ttu-id="95fbb-103">電話リソースの種類</span><span class="sxs-lookup"><span data-stu-id="95fbb-103">phone resource type</span></span>
+# <a name="phone-resource-type"></a><span data-ttu-id="5a8c9-103">phone リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5a8c9-103">phone resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95fbb-104">電話番号を表します。</span><span class="sxs-lookup"><span data-stu-id="95fbb-104">Represents a phone number.</span></span>
+<span data-ttu-id="5a8c9-104">電話番号を表します。</span><span class="sxs-lookup"><span data-stu-id="5a8c9-104">Represents a phone number.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="95fbb-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="95fbb-105">Properties</span></span>
-| <span data-ttu-id="95fbb-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="95fbb-106">Property</span></span>     | <span data-ttu-id="95fbb-107">型</span><span class="sxs-lookup"><span data-stu-id="95fbb-107">Type</span></span>   |<span data-ttu-id="95fbb-108">説明</span><span class="sxs-lookup"><span data-stu-id="95fbb-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5a8c9-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5a8c9-105">Properties</span></span>
+| <span data-ttu-id="5a8c9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5a8c9-106">Property</span></span>     | <span data-ttu-id="5a8c9-107">型</span><span class="sxs-lookup"><span data-stu-id="5a8c9-107">Type</span></span>   |<span data-ttu-id="5a8c9-108">説明</span><span class="sxs-lookup"><span data-stu-id="5a8c9-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="95fbb-109">number</span><span class="sxs-lookup"><span data-stu-id="95fbb-109">number</span></span>|<span data-ttu-id="95fbb-110">string</span><span class="sxs-lookup"><span data-stu-id="95fbb-110">string</span></span>|<span data-ttu-id="95fbb-111">電話番号。</span><span class="sxs-lookup"><span data-stu-id="95fbb-111">The phone number.</span></span>|
-|<span data-ttu-id="95fbb-112">種類</span><span class="sxs-lookup"><span data-stu-id="95fbb-112">type</span></span>|<span data-ttu-id="95fbb-113">String</span><span class="sxs-lookup"><span data-stu-id="95fbb-113">String</span></span>|<span data-ttu-id="95fbb-p101">電話番号の種類。可能な値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。</span><span class="sxs-lookup"><span data-stu-id="95fbb-p101">The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="5a8c9-109">番号</span><span class="sxs-lookup"><span data-stu-id="5a8c9-109">number</span></span>|<span data-ttu-id="5a8c9-110">string</span><span class="sxs-lookup"><span data-stu-id="5a8c9-110">string</span></span>|<span data-ttu-id="5a8c9-111">電話番号。</span><span class="sxs-lookup"><span data-stu-id="5a8c9-111">The phone number.</span></span>|
+|<span data-ttu-id="5a8c9-112">type</span><span class="sxs-lookup"><span data-stu-id="5a8c9-112">type</span></span>|<span data-ttu-id="5a8c9-113">String</span><span class="sxs-lookup"><span data-stu-id="5a8c9-113">String</span></span>|<span data-ttu-id="5a8c9-p101">電話番号の種類。 可能な値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。</span><span class="sxs-lookup"><span data-stu-id="5a8c9-p101">The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="95fbb-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="95fbb-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5a8c9-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5a8c9-116">JSON representation</span></span>
 
-<span data-ttu-id="95fbb-117">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="95fbb-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5a8c9-117">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="5a8c9-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

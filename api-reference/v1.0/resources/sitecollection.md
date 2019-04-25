@@ -6,21 +6,21 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 006f239acdecb2fb93ecf1d70e25a42b056b9283
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552783"
 ---
-# <a name="sitecollection-resource"></a><span data-ttu-id="d5951-102">SiteCollection リソース</span><span class="sxs-lookup"><span data-stu-id="d5951-102">SiteCollection resource</span></span>
+# <a name="sitecollection-resource"></a><span data-ttu-id="b92fb-102">SiteCollection リソース</span><span class="sxs-lookup"><span data-stu-id="b92fb-102">SiteCollection resource</span></span>
 
-<span data-ttu-id="d5951-103">**siteCollection** リソースは、サイト コレクションの詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="d5951-103">The **siteCollection** resource provides more information about a site collection.</span></span>
+<span data-ttu-id="b92fb-103">**siteCollection** リソースは、サイト コレクションの詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="b92fb-103">The **siteCollection** resource provides more information about a site collection.</span></span>
 
-<span data-ttu-id="d5951-104">[**サイト**](site.md) リソースが null ではない **siteCollection** プロパティを持つ場合、そのサイトはサイト コレクションのルート サイトです。</span><span class="sxs-lookup"><span data-stu-id="d5951-104">If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.</span></span>
+<span data-ttu-id="b92fb-104">[**サイト**](site.md) リソースが null ではない **siteCollection** プロパティを持つ場合、そのサイトはサイト コレクションのルート サイトです。</span><span class="sxs-lookup"><span data-stu-id="b92fb-104">If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d5951-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d5951-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b92fb-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b92fb-105">JSON representation</span></span>
 
-<span data-ttu-id="d5951-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d5951-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b92fb-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b92fb-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,12 +36,12 @@ ms.locfileid: "30480195"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d5951-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d5951-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b92fb-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b92fb-107">Properties</span></span>
 
-| <span data-ttu-id="d5951-108">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="d5951-108">Property name</span></span>        | <span data-ttu-id="d5951-109">種類</span><span class="sxs-lookup"><span data-stu-id="d5951-109">Type</span></span>     | <span data-ttu-id="d5951-110">説明</span><span class="sxs-lookup"><span data-stu-id="d5951-110">Description</span></span>
+| <span data-ttu-id="b92fb-108">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="b92fb-108">Property name</span></span>        | <span data-ttu-id="b92fb-109">種類</span><span class="sxs-lookup"><span data-stu-id="b92fb-109">Type</span></span>     | <span data-ttu-id="b92fb-110">説明</span><span class="sxs-lookup"><span data-stu-id="b92fb-110">Description</span></span>
 |:---------------------|:---------|:---------------------------------------------------
-| <span data-ttu-id="d5951-111">**hostname**</span><span class="sxs-lookup"><span data-stu-id="d5951-111">**hostname**</span></span>         | <span data-ttu-id="d5951-112">string</span><span class="sxs-lookup"><span data-stu-id="d5951-112">string</span></span>   | <span data-ttu-id="d5951-p101">サイト コレクションのホスト名です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="d5951-p101">The hostname for the site collection. Read-only.</span></span>
-| <span data-ttu-id="d5951-115">**root**</span><span class="sxs-lookup"><span data-stu-id="d5951-115">**root**</span></span>             | <span data-ttu-id="d5951-116">[root][]</span><span class="sxs-lookup"><span data-stu-id="d5951-116">[root][]</span></span> | <span data-ttu-id="d5951-117">存在する場合は、これが SharePoint のルートサイトコレクションであることを示します。</span><span class="sxs-lookup"><span data-stu-id="d5951-117">If present, indicates that this is a root site collection in SharePoint.</span></span> <span data-ttu-id="d5951-118">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="d5951-118">Read-only.</span></span>
+| <span data-ttu-id="b92fb-111">**hostname**</span><span class="sxs-lookup"><span data-stu-id="b92fb-111">**hostname**</span></span>         | <span data-ttu-id="b92fb-112">string</span><span class="sxs-lookup"><span data-stu-id="b92fb-112">string</span></span>   | <span data-ttu-id="b92fb-p101">サイト コレクションのホスト名です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b92fb-p101">The hostname for the site collection. Read-only.</span></span>
+| <span data-ttu-id="b92fb-115">**root**</span><span class="sxs-lookup"><span data-stu-id="b92fb-115">**root**</span></span>             | <span data-ttu-id="b92fb-116">[root][]</span><span class="sxs-lookup"><span data-stu-id="b92fb-116">[root][]</span></span> | <span data-ttu-id="b92fb-117">存在する場合は、これが SharePoint のルートサイトコレクションであることを示します。</span><span class="sxs-lookup"><span data-stu-id="b92fb-117">If present, indicates that this is a root site collection in SharePoint.</span></span> <span data-ttu-id="b92fb-118">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b92fb-118">Read-only.</span></span>
 
 [root]: root.md
 

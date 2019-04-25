@@ -1,33 +1,33 @@
 ---
 title: teamFunSettings リソースの種類
-description: Giphy、memes、およびチームのステッカーを構成する設定を使用します。
+description: チームでの Giphy、ミーム、およびステッカーの使用を構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc8d4cfa05f7bc6cbda9dfbf5d113370a1981ba5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583222"
 ---
-# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="35d58-103">teamFunSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="35d58-103">teamFunSettings resource type</span></span>
+# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="8591f-103">teamFunSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8591f-103">teamFunSettings resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35d58-104">Giphy、memes、および[チーム](team.md)のステッカーを構成する設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="35d58-104">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
+<span data-ttu-id="8591f-104">[チーム](team.md)での giphy、memes、ステッカーの使用を構成するための設定。</span><span class="sxs-lookup"><span data-stu-id="8591f-104">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="35d58-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="35d58-105">Properties</span></span>
-| <span data-ttu-id="35d58-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="35d58-106">Property</span></span>     | <span data-ttu-id="35d58-107">型</span><span class="sxs-lookup"><span data-stu-id="35d58-107">Type</span></span>   |<span data-ttu-id="35d58-108">説明</span><span class="sxs-lookup"><span data-stu-id="35d58-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8591f-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8591f-105">Properties</span></span>
+| <span data-ttu-id="8591f-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8591f-106">Property</span></span>     | <span data-ttu-id="8591f-107">型</span><span class="sxs-lookup"><span data-stu-id="8591f-107">Type</span></span>   |<span data-ttu-id="8591f-108">説明</span><span class="sxs-lookup"><span data-stu-id="8591f-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="35d58-109">allowGiphy</span><span class="sxs-lookup"><span data-stu-id="35d58-109">allowGiphy</span></span>|<span data-ttu-id="35d58-110">ブール値</span><span class="sxs-lookup"><span data-stu-id="35d58-110">Boolean</span></span>|<span data-ttu-id="35d58-111">場合 true の場合、有効にする Giphy の使用を設定します。</span><span class="sxs-lookup"><span data-stu-id="35d58-111">If set to true, enables Giphy use.</span></span>|
-|<span data-ttu-id="35d58-112">giphyContentRating</span><span class="sxs-lookup"><span data-stu-id="35d58-112">giphyContentRating</span></span>|<span data-ttu-id="35d58-113">文字列 (列挙型)</span><span class="sxs-lookup"><span data-stu-id="35d58-113">String (enum)</span></span>|<span data-ttu-id="35d58-114">コンテンツの規制を Giphy。</span><span class="sxs-lookup"><span data-stu-id="35d58-114">Giphy content rating.</span></span> <span data-ttu-id="35d58-115">使用可能な値は、`moderate`、`strict` です。</span><span class="sxs-lookup"><span data-stu-id="35d58-115">Possible values are: `moderate`, `strict`.</span></span>|
-|<span data-ttu-id="35d58-116">allowStickersAndMemes</span><span class="sxs-lookup"><span data-stu-id="35d58-116">allowStickersAndMemes</span></span>|<span data-ttu-id="35d58-117">ブール値</span><span class="sxs-lookup"><span data-stu-id="35d58-117">Boolean</span></span>|<span data-ttu-id="35d58-118">場合は true、ステッカー、memes など、ユーザーに設定します。</span><span class="sxs-lookup"><span data-stu-id="35d58-118">If set to true, enables users to include stickers and memes.</span></span>|
-|<span data-ttu-id="35d58-119">allowCustomMemes</span><span class="sxs-lookup"><span data-stu-id="35d58-119">allowCustomMemes</span></span>|<span data-ttu-id="35d58-120">ブール値</span><span class="sxs-lookup"><span data-stu-id="35d58-120">Boolean</span></span>|<span data-ttu-id="35d58-121">場合に true を設定する、カスタムの memes を含むようにユーザーをできるようにする設定です。</span><span class="sxs-lookup"><span data-stu-id="35d58-121">If set to true, enables users to include custom memes.</span></span>|
+|<span data-ttu-id="8591f-109">allowgiphy</span><span class="sxs-lookup"><span data-stu-id="8591f-109">allowGiphy</span></span>|<span data-ttu-id="8591f-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="8591f-110">Boolean</span></span>|<span data-ttu-id="8591f-111">true に設定すると、giphy の使用が有効になります。</span><span class="sxs-lookup"><span data-stu-id="8591f-111">If set to true, enables Giphy use.</span></span>|
+|<span data-ttu-id="8591f-112">giphyContentRating</span><span class="sxs-lookup"><span data-stu-id="8591f-112">giphyContentRating</span></span>|<span data-ttu-id="8591f-113">String (enum)</span><span class="sxs-lookup"><span data-stu-id="8591f-113">String (enum)</span></span>|<span data-ttu-id="8591f-114">giphy コンテンツの評価。</span><span class="sxs-lookup"><span data-stu-id="8591f-114">Giphy content rating.</span></span> <span data-ttu-id="8591f-115">可能な値は、`moderate`、`strict` です。</span><span class="sxs-lookup"><span data-stu-id="8591f-115">Possible values are: `moderate`, `strict`.</span></span>|
+|<span data-ttu-id="8591f-116">allowStickersAndMemes</span><span class="sxs-lookup"><span data-stu-id="8591f-116">allowStickersAndMemes</span></span>|<span data-ttu-id="8591f-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="8591f-117">Boolean</span></span>|<span data-ttu-id="8591f-118">true に設定すると、ユーザーはステッカーと memes を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="8591f-118">If set to true, enables users to include stickers and memes.</span></span>|
+|<span data-ttu-id="8591f-119">allowcustommemes</span><span class="sxs-lookup"><span data-stu-id="8591f-119">allowCustomMemes</span></span>|<span data-ttu-id="8591f-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="8591f-120">Boolean</span></span>|<span data-ttu-id="8591f-121">true に設定すると、ユーザーはカスタム memes 含めることができます。</span><span class="sxs-lookup"><span data-stu-id="8591f-121">If set to true, enables users to include custom memes.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="35d58-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="35d58-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8591f-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8591f-122">JSON representation</span></span>
 
-<span data-ttu-id="35d58-123">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="35d58-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8591f-123">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8591f-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

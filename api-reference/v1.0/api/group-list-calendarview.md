@@ -1,60 +1,60 @@
 ---
 title: calendarView を一覧表示する
-description: 時間範囲で定義されている予定表ビューで出現する、例外、およびイベントの 1 つのインスタンスを取得します。
+description: 時間範囲で定義された予定表ビューのイベントの発生、例外、および単一インスタンスを取得する
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956466"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583593"
 ---
-# <a name="list-calendarview"></a><span data-ttu-id="01afd-103">calendarView を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="01afd-103">List calendarView</span></span>
-<span data-ttu-id="01afd-104">グループの既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="01afd-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
+# <a name="list-calendarview"></a><span data-ttu-id="23f92-103">calendarView を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="23f92-103">List calendarView</span></span>
+<span data-ttu-id="23f92-104">グループの既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="23f92-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01afd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="01afd-105">Permissions</span></span>
-<span data-ttu-id="01afd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="01afd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="23f92-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="23f92-105">Permissions</span></span>
+<span data-ttu-id="23f92-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23f92-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="01afd-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="01afd-108">Permission type</span></span>      | <span data-ttu-id="01afd-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="01afd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="23f92-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="23f92-108">Permission type</span></span>      | <span data-ttu-id="23f92-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="23f92-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="01afd-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="01afd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="01afd-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01afd-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="01afd-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="01afd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01afd-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="01afd-113">Not supported.</span></span>    |
-|<span data-ttu-id="01afd-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="01afd-114">Application</span></span> | <span data-ttu-id="01afd-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="01afd-115">Not supported.</span></span> |
+|<span data-ttu-id="23f92-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="23f92-110">Delegated (work or school account)</span></span> | <span data-ttu-id="23f92-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23f92-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="23f92-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="23f92-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23f92-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="23f92-113">Not supported.</span></span>    |
+|<span data-ttu-id="23f92-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="23f92-114">Application</span></span> | <span data-ttu-id="23f92-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="23f92-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="01afd-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="01afd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23f92-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="23f92-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="01afd-117">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="01afd-117">Query parameters</span></span>
-<span data-ttu-id="01afd-118">要求 URL に、次の必須のクエリ パラメーターを値で指定します。</span><span class="sxs-lookup"><span data-stu-id="01afd-118">In the request URL, provide the following required query parameters with values.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="23f92-117">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="23f92-117">Query parameters</span></span>
+<span data-ttu-id="23f92-118">要求 URL に、次の必須のクエリ パラメーターを値で指定します。</span><span class="sxs-lookup"><span data-stu-id="23f92-118">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="01afd-119">パラメーター</span><span class="sxs-lookup"><span data-stu-id="01afd-119">Parameter</span></span>    | <span data-ttu-id="01afd-120">Type</span><span class="sxs-lookup"><span data-stu-id="01afd-120">Type</span></span>   |<span data-ttu-id="01afd-121">説明</span><span class="sxs-lookup"><span data-stu-id="01afd-121">Description</span></span>|
+| <span data-ttu-id="23f92-119">パラメーター</span><span class="sxs-lookup"><span data-stu-id="23f92-119">Parameter</span></span>    | <span data-ttu-id="23f92-120">型</span><span class="sxs-lookup"><span data-stu-id="23f92-120">Type</span></span>   |<span data-ttu-id="23f92-121">説明</span><span class="sxs-lookup"><span data-stu-id="23f92-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="01afd-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="01afd-122">startDateTime</span></span>|<span data-ttu-id="01afd-123">String</span><span class="sxs-lookup"><span data-stu-id="01afd-123">String</span></span>|<span data-ttu-id="01afd-p102">時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。</span><span class="sxs-lookup"><span data-stu-id="01afd-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="01afd-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="01afd-126">endDateTime</span></span>|<span data-ttu-id="01afd-127">String</span><span class="sxs-lookup"><span data-stu-id="01afd-127">String</span></span>|<span data-ttu-id="01afd-p103">時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。</span><span class="sxs-lookup"><span data-stu-id="01afd-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="23f92-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="23f92-122">startDateTime</span></span>|<span data-ttu-id="23f92-123">String</span><span class="sxs-lookup"><span data-stu-id="23f92-123">String</span></span>|<span data-ttu-id="23f92-p102">時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。</span><span class="sxs-lookup"><span data-stu-id="23f92-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="23f92-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="23f92-126">endDateTime</span></span>|<span data-ttu-id="23f92-127">String</span><span class="sxs-lookup"><span data-stu-id="23f92-127">String</span></span>|<span data-ttu-id="23f92-p103">時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。</span><span class="sxs-lookup"><span data-stu-id="23f92-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-<span data-ttu-id="01afd-130">また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)もサポートします。</span><span class="sxs-lookup"><span data-stu-id="01afd-130">This method also supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="23f92-130">また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)もサポートします。</span><span class="sxs-lookup"><span data-stu-id="23f92-130">This method also supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="01afd-131">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="01afd-131">Request headers</span></span>
-| <span data-ttu-id="01afd-132">名前</span><span class="sxs-lookup"><span data-stu-id="01afd-132">Name</span></span>       | <span data-ttu-id="01afd-133">種類</span><span class="sxs-lookup"><span data-stu-id="01afd-133">Type</span></span> | <span data-ttu-id="01afd-134">説明</span><span class="sxs-lookup"><span data-stu-id="01afd-134">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="23f92-131">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="23f92-131">Request headers</span></span>
+| <span data-ttu-id="23f92-132">名前</span><span class="sxs-lookup"><span data-stu-id="23f92-132">Name</span></span>       | <span data-ttu-id="23f92-133">型</span><span class="sxs-lookup"><span data-stu-id="23f92-133">Type</span></span> | <span data-ttu-id="23f92-134">説明</span><span class="sxs-lookup"><span data-stu-id="23f92-134">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="01afd-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="01afd-135">Authorization</span></span>  | <span data-ttu-id="01afd-136">string</span><span class="sxs-lookup"><span data-stu-id="01afd-136">string</span></span> | <span data-ttu-id="01afd-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="01afd-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="01afd-139">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="01afd-139">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="01afd-140">文字列</span><span class="sxs-lookup"><span data-stu-id="01afd-140">string</span></span> | <span data-ttu-id="01afd-141">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="01afd-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="01afd-142">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="01afd-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="01afd-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="01afd-143">Optional.</span></span> |
-| <span data-ttu-id="01afd-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="01afd-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="01afd-145">文字列</span><span class="sxs-lookup"><span data-stu-id="01afd-145">string</span></span> | <span data-ttu-id="01afd-146">**body** プロパティが返されるときの形式です。</span><span class="sxs-lookup"><span data-stu-id="01afd-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="01afd-147">値は、"text" または "html" になります。</span><span class="sxs-lookup"><span data-stu-id="01afd-147">Values can be "text" or "html".</span></span> <span data-ttu-id="01afd-148">この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。</span><span class="sxs-lookup"><span data-stu-id="01afd-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="01afd-149">このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="01afd-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="01afd-150">省略可能。</span><span class="sxs-lookup"><span data-stu-id="01afd-150">Optional.</span></span> |
+| <span data-ttu-id="23f92-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="23f92-135">Authorization</span></span>  | <span data-ttu-id="23f92-136">string</span><span class="sxs-lookup"><span data-stu-id="23f92-136">string</span></span> | <span data-ttu-id="23f92-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="23f92-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="23f92-139">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="23f92-139">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="23f92-140">string</span><span class="sxs-lookup"><span data-stu-id="23f92-140">string</span></span> | <span data-ttu-id="23f92-141">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="23f92-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="23f92-142">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="23f92-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="23f92-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="23f92-143">Optional.</span></span> |
+| <span data-ttu-id="23f92-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="23f92-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="23f92-145">string</span><span class="sxs-lookup"><span data-stu-id="23f92-145">string</span></span> | <span data-ttu-id="23f92-146">**body** プロパティが返されるときの形式です。</span><span class="sxs-lookup"><span data-stu-id="23f92-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="23f92-147">値は、"text" または "html" になります。</span><span class="sxs-lookup"><span data-stu-id="23f92-147">Values can be "text" or "html".</span></span> <span data-ttu-id="23f92-148">この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。</span><span class="sxs-lookup"><span data-stu-id="23f92-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="23f92-149">このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="23f92-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="23f92-150">省略可能。</span><span class="sxs-lookup"><span data-stu-id="23f92-150">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="01afd-151">要求本文</span><span class="sxs-lookup"><span data-stu-id="01afd-151">Request body</span></span>
-<span data-ttu-id="01afd-152">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="01afd-152">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="23f92-151">要求本文</span><span class="sxs-lookup"><span data-stu-id="23f92-151">Request body</span></span>
+<span data-ttu-id="23f92-152">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="23f92-152">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="01afd-153">応答</span><span class="sxs-lookup"><span data-stu-id="01afd-153">Response</span></span>
-<span data-ttu-id="01afd-154">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [event](../resources/event.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="01afd-154">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="23f92-153">応答</span><span class="sxs-lookup"><span data-stu-id="23f92-153">Response</span></span>
+<span data-ttu-id="23f92-154">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [event](../resources/event.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="23f92-154">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01afd-155">例</span><span class="sxs-lookup"><span data-stu-id="01afd-155">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="01afd-156">要求</span><span class="sxs-lookup"><span data-stu-id="01afd-156">Request</span></span>
-<span data-ttu-id="01afd-157">次の例では、イベントの本文をテキスト形式で返すよう要求します。</span><span class="sxs-lookup"><span data-stu-id="01afd-157">The following example requests event bodies to be returned in text format.</span></span>
+## <a name="example"></a><span data-ttu-id="23f92-155">例</span><span class="sxs-lookup"><span data-stu-id="23f92-155">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="23f92-156">要求</span><span class="sxs-lookup"><span data-stu-id="23f92-156">Request</span></span>
+<span data-ttu-id="23f92-157">次の例では、イベントの本文をテキスト形式で返すよう要求します。</span><span class="sxs-lookup"><span data-stu-id="23f92-157">The following example requests event bodies to be returned in text format.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
@@ -65,9 +65,9 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 Prefer: outlook.body-content-type="text"
 ```
 
-#### <a name="response"></a><span data-ttu-id="01afd-158">応答</span><span class="sxs-lookup"><span data-stu-id="01afd-158">Response</span></span>
-<span data-ttu-id="01afd-159">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="01afd-159">The following is an example of the response.</span></span>
-><span data-ttu-id="01afd-160">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="01afd-160">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="01afd-161">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="01afd-161">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="23f92-158">応答</span><span class="sxs-lookup"><span data-stu-id="23f92-158">Response</span></span>
+<span data-ttu-id="23f92-159">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="23f92-159">The following is an example of the response.</span></span>
+><span data-ttu-id="23f92-160">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="23f92-160">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="23f92-161">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="23f92-161">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

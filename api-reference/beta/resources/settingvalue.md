@@ -1,30 +1,30 @@
 ---
-title: settingValue リソースの種類
-description: 名前と値の組で表される設定。
+title: settingvalue リソースの種類
+description: 名前と値のペアで表される設定。
 localization_priority: Normal
 ms.openlocfilehash: aa30fd61c1498be08be4d87175d18015c58323ba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584106"
 ---
-# <a name="settingvalue-resource-type"></a><span data-ttu-id="74bdf-103">settingValue リソースの種類</span><span class="sxs-lookup"><span data-stu-id="74bdf-103">settingValue resource type</span></span>
+# <a name="settingvalue-resource-type"></a><span data-ttu-id="94f03-103">settingvalue リソースの種類</span><span class="sxs-lookup"><span data-stu-id="94f03-103">settingValue resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="74bdf-104">名前と値の組で表される設定。</span><span class="sxs-lookup"><span data-stu-id="74bdf-104">A setting represented by a name/value pair.</span></span>
+<span data-ttu-id="94f03-104">名前と値のペアで表される設定。</span><span class="sxs-lookup"><span data-stu-id="94f03-104">A setting represented by a name/value pair.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="74bdf-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="74bdf-105">Properties</span></span>
-| <span data-ttu-id="74bdf-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="74bdf-106">Property</span></span>     | <span data-ttu-id="74bdf-107">型</span><span class="sxs-lookup"><span data-stu-id="74bdf-107">Type</span></span>   |<span data-ttu-id="74bdf-108">説明</span><span class="sxs-lookup"><span data-stu-id="74bdf-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="94f03-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="94f03-105">Properties</span></span>
+| <span data-ttu-id="94f03-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="94f03-106">Property</span></span>     | <span data-ttu-id="94f03-107">型</span><span class="sxs-lookup"><span data-stu-id="94f03-107">Type</span></span>   |<span data-ttu-id="94f03-108">説明</span><span class="sxs-lookup"><span data-stu-id="94f03-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="74bdf-109">name</span><span class="sxs-lookup"><span data-stu-id="74bdf-109">name</span></span>|<span data-ttu-id="74bdf-110">string</span><span class="sxs-lookup"><span data-stu-id="74bdf-110">string</span></span>|<span data-ttu-id="74bdf-111">設定で定義された、directorySettingTemplate) の名前です。</span><span class="sxs-lookup"><span data-stu-id="74bdf-111">Name of the setting (as defined by the directorySettingTemplate).</span></span>|
-|<span data-ttu-id="74bdf-112">value</span><span class="sxs-lookup"><span data-stu-id="74bdf-112">value</span></span>|<span data-ttu-id="74bdf-113">string</span><span class="sxs-lookup"><span data-stu-id="74bdf-113">string</span></span>|<span data-ttu-id="74bdf-114">設定の値です。</span><span class="sxs-lookup"><span data-stu-id="74bdf-114">Value of the setting.</span></span>|
+|<span data-ttu-id="94f03-109">name</span><span class="sxs-lookup"><span data-stu-id="94f03-109">name</span></span>|<span data-ttu-id="94f03-110">string</span><span class="sxs-lookup"><span data-stu-id="94f03-110">string</span></span>|<span data-ttu-id="94f03-111">設定の名前 (directorysettingtemplate で定義されている)。</span><span class="sxs-lookup"><span data-stu-id="94f03-111">Name of the setting (as defined by the directorySettingTemplate).</span></span>|
+|<span data-ttu-id="94f03-112">value</span><span class="sxs-lookup"><span data-stu-id="94f03-112">value</span></span>|<span data-ttu-id="94f03-113">string</span><span class="sxs-lookup"><span data-stu-id="94f03-113">string</span></span>|<span data-ttu-id="94f03-114">設定の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="94f03-114">Value of the setting.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="74bdf-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="74bdf-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="94f03-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="94f03-115">JSON representation</span></span>
 
-<span data-ttu-id="74bdf-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="74bdf-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="94f03-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="94f03-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,25 +1,25 @@
 ---
-title: カスタム ターゲットの属性を使用して同期を構成します。
-description: 同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。 呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。 Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。
+title: カスタムターゲット属性を使用して同期を構成する
+description: ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
 localization_priority: Normal
 ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582139"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a><span data-ttu-id="f99d9-105">カスタム ターゲットの属性を使用して同期を構成します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-105">Configure synchronization with custom target attributes</span></span>
+# <a name="configure-synchronization-with-custom-target-attributes"></a><span data-ttu-id="764a8-105">カスタムターゲット属性を使用して同期を構成する</span><span class="sxs-lookup"><span data-stu-id="764a8-105">Configure synchronization with custom target attributes</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f99d9-106">同期対象のディレクトリで定義されているカスタム属性を含むようにスキーマをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="f99d9-106">You can customize your synchronization schema to include custom attributes that are defined in the target directory.</span></span> <span data-ttu-id="f99d9-107">呼ばれる新しいフィールドを追加することによって、Salesforce のサブスクリプションをカスタマイズする方法を説明`officeCode`。</span><span class="sxs-lookup"><span data-stu-id="f99d9-107">This article describes how to customize a Salesforce subscription by adding a new field called `officeCode`.</span></span> <span data-ttu-id="f99d9-108">Salesforce、Azure Active Directory (AD の Azure) からの同期を設定して、ユーザーごとに設定するが、`officeCode`から値を持つフィールドでは、Salesforce、 `extensionAttribute10` Azure AD フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f99d9-108">You set up synchronization from Azure Active Directory (Azure AD) to Salesforce, and for each user, you will populate the `officeCode` field in Salesforce with the value from the `extensionAttribute10` field in Azure AD.</span></span>
+<span data-ttu-id="764a8-106">ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="764a8-106">You can customize your synchronization schema to include custom attributes that are defined in the target directory.</span></span> <span data-ttu-id="764a8-107">この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="764a8-107">This article describes how to customize a Salesforce subscription by adding a new field called `officeCode`.</span></span> <span data-ttu-id="764a8-108">azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。</span><span class="sxs-lookup"><span data-stu-id="764a8-108">You set up synchronization from Azure Active Directory (Azure AD) to Salesforce, and for each user, you will populate the `officeCode` field in Salesforce with the value from the `extensionAttribute10` field in Azure AD.</span></span>
 
-<span data-ttu-id="f99d9-109">この資料では、 [Azure ポータル](https://portal.azure.com)を使ってアプリケーションの表示名がわかっている、テナントの同期をサポートするアプリケーションを既に追加されていると、Graph の認証トークンがあることを想定します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="f99d9-110">認証トークンを取得する方法の詳細については、 [Microsoft Graph を呼び出すための Get アクセス トークン](https://developer.microsoft.com/graph/docs/concepts/auth_overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f99d9-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
+<span data-ttu-id="764a8-109">この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="764a8-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="764a8-110">認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="764a8-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
 
-## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="f99d9-111">サービスのプリンシパル オブジェクトを表示名で検索します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-111">Find the service principal object by display name</span></span>
+## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="764a8-111">表示名でサービスプリンシパルオブジェクトを検索する</span><span class="sxs-lookup"><span data-stu-id="764a8-111">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="f99d9-112">次の使用例は、Salesforce の表示名を持つサービスのプリンシパル オブジェクトを検索する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-112">The following example shows how to find a service principal object with the display name Salesforce.</span></span>
+<span data-ttu-id="764a8-112">次の例は、Salesforce という表示名を持つサービスプリンシパルオブジェクトを検索する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="764a8-112">The following example shows how to find a service principal object with the display name Salesforce.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -47,12 +47,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="f99d9-113">`{servicePrincipalId}` 、 `167e33e9-f80e-490e-b4d8-698d4a80fb3e`。</span><span class="sxs-lookup"><span data-stu-id="f99d9-113">The `{servicePrincipalId}` is `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.</span></span>
+<span data-ttu-id="764a8-113">`{servicePrincipalId}`は`167e33e9-f80e-490e-b4d8-698d4a80fb3e`です。</span><span class="sxs-lookup"><span data-stu-id="764a8-113">The `{servicePrincipalId}` is `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.</span></span>
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="f99d9-114">サービス ・ プリンシパルのコンテキストの同期ジョブを一覧表示</span><span class="sxs-lookup"><span data-stu-id="f99d9-114">List synchronization jobs in the context of the service principal</span></span> 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="764a8-114">サービスプリンシパルのコンテキストで同期ジョブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="764a8-114">List synchronization jobs in the context of the service principal</span></span> 
 
-<span data-ttu-id="f99d9-115">次の使用例は、取得する方法を示します、`jobId`を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f99d9-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="f99d9-116">一般に、応答は、1 つのジョブを返します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-116">Generally, the response returns only one job.</span></span>
+<span data-ttu-id="764a8-115">次の例は、 `jobId`で使用する必要があるを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="764a8-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="764a8-116">通常、応答は1つのジョブのみを返します。</span><span class="sxs-lookup"><span data-stu-id="764a8-116">Generally, the response returns only one job.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -71,11 +71,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="f99d9-117">`{jobId}` 、 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。</span><span class="sxs-lookup"><span data-stu-id="f99d9-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
+<span data-ttu-id="764a8-117">`{jobId}`は`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`です。</span><span class="sxs-lookup"><span data-stu-id="764a8-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
 
 
-## <a name="get-the-synchronization-schema"></a><span data-ttu-id="f99d9-118">同期スキーマを取得します</span><span class="sxs-lookup"><span data-stu-id="f99d9-118">Get the synchronization schema</span></span>
-<span data-ttu-id="f99d9-119">次の例では、同期スキーマを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-119">The following example shows how to get the synchronization schema.</span></span>
+## <a name="get-the-synchronization-schema"></a><span data-ttu-id="764a8-118">同期スキーマを取得する</span><span class="sxs-lookup"><span data-stu-id="764a8-118">Get the synchronization schema</span></span>
+<span data-ttu-id="764a8-119">次の例は、同期スキーマを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="764a8-119">The following example shows how to get the synchronization schema.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
-><span data-ttu-id="f99d9-120">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f99d9-120">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f99d9-121">すべてのプロパティは、実際の呼び出しで返されます。</span><span class="sxs-lookup"><span data-stu-id="f99d9-121">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="764a8-120">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="764a8-120">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="764a8-121">実際の呼び出しでは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="764a8-121">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -183,20 +183,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a><span data-ttu-id="f99d9-122">OfficeCode 属性と属性間のマッピングの定義を追加します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-122">Add a definition for the officeCode attribute and a mapping between attributes</span></span>
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a><span data-ttu-id="764a8-122">officeecode 属性の定義と属性間のマッピングを追加する</span><span class="sxs-lookup"><span data-stu-id="764a8-122">Add a definition for the officeCode attribute and a mapping between attributes</span></span>
 
-<span data-ttu-id="f99d9-123">(たとえば、[メモ帳では](https://notepad-plus-plus.org/) [JSON エディター オンライン](https://www.jsoneditoronline.org/)) は、任意のテキスト エディターを使用します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-123">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
+<span data-ttu-id="764a8-123">任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="764a8-123">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
 
-1. <span data-ttu-id="f99d9-124">[属性の定義](synchronization-attributedefinition.md)を追加、`officeCode`の属性です。</span><span class="sxs-lookup"><span data-stu-id="f99d9-124">Add an [attribute definition](synchronization-attributedefinition.md) for the `officeCode` attribute.</span></span> 
+1. <span data-ttu-id="764a8-124">`officeCode`属性の[属性定義](synchronization-attributedefinition.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="764a8-124">Add an [attribute definition](synchronization-attributedefinition.md) for the `officeCode` attribute.</span></span> 
 
-    - <span data-ttu-id="f99d9-125">[ディレクトリ] で名前 salesforce.com、およびオブジェクトの配列内のディレクトリを見つけ、1 つの名前付き**ユーザー**を検索します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-125">Under directories, find the directory with the name salesforce.com, and in the object's array, find the one named **User**.</span></span>
-    - <span data-ttu-id="f99d9-126">次の例に示すように名前と型を指定するボックスの一覧に新しい属性を追加します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-126">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
+    - <span data-ttu-id="764a8-125">[ディレクトリ] で、salesforce.com という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。</span><span class="sxs-lookup"><span data-stu-id="764a8-125">Under directories, find the directory with the name salesforce.com, and in the object's array, find the one named **User**.</span></span>
+    - <span data-ttu-id="764a8-126">次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="764a8-126">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
 
-2. <span data-ttu-id="f99d9-127">間の[属性のマッピング](synchronization-attributemapping.md)を追加`officeCode`と`extensionAttribute10`。</span><span class="sxs-lookup"><span data-stu-id="f99d9-127">Add an [attribute mapping](synchronization-attributemapping.md) between `officeCode` and `extensionAttribute10`.</span></span>
+2. <span data-ttu-id="764a8-127">`officeCode`と`extensionAttribute10`の間の[属性マッピング](synchronization-attributemapping.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="764a8-127">Add an [attribute mapping](synchronization-attributemapping.md) between `officeCode` and `extensionAttribute10`.</span></span>
 
-    - <span data-ttu-id="f99d9-128">[SynchronizationRules](synchronization-synchronizationrule.md)、[ソース ディレクトリとターゲット ディレクトリとして Salesforce.com と Azure AD を指定するルールを検索します (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`)。</span><span class="sxs-lookup"><span data-stu-id="f99d9-128">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
-    - <span data-ttu-id="f99d9-129">ルールの[objectMappings](synchronization-objectmapping.md)のユーザー間のマッピングを検索します (`"sourceObjectName": "User",   "targetObjectName": "User"`)。</span><span class="sxs-lookup"><span data-stu-id="f99d9-129">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
-    - <span data-ttu-id="f99d9-130">**ObjectMapping**の[attributeMappings](synchronization-attributemapping.md)配列の例を次に示すように、新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-130">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
+    - <span data-ttu-id="764a8-128">[[同期ルール](synchronization-synchronizationrule.md)] で、ソースディレクトリとして Azure AD を指定するルールを見つけ、Salesforce.com をターゲット`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ディレクトリ () として指定します。</span><span class="sxs-lookup"><span data-stu-id="764a8-128">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
+    - <span data-ttu-id="764a8-129">ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。</span><span class="sxs-lookup"><span data-stu-id="764a8-129">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
+    - <span data-ttu-id="764a8-130">**オブジェクトマッピング**の[attributeMappings](synchronization-attributemapping.md)配列に、次の例に示すように、新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="764a8-130">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
 
 ```json
 {  
@@ -246,9 +246,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="f99d9-131">変更された同期スキーマを保存します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-131">Save the modified synchronization schema</span></span>
+## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="764a8-131">変更した同期スキーマを保存する</span><span class="sxs-lookup"><span data-stu-id="764a8-131">Save the modified synchronization schema</span></span>
 
-<span data-ttu-id="f99d9-132">更新された同期スキーマを保存するときは、変更されていない部分を含む、スキーマ全体を含めることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f99d9-132">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="f99d9-133">この要求は、既存のスキーマを提供するものに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="f99d9-133">This request will replace the existing schema with the one that you provide.</span></span>
+<span data-ttu-id="764a8-132">更新された同期スキーマを保存する場合は、未変更のパーツを含むスキーマ全体を含めるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="764a8-132">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="764a8-133">この要求は、既存のスキーマを、指定したスキーマで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="764a8-133">This request will replace the existing schema with the one that you provide.</span></span>
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -261,7 +261,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-<span data-ttu-id="f99d9-134">スキーマが正常に保存された場合は、同期ジョブの次回のイテレーションで、Azure の AD 内のすべてのアカウントを再処理を開始し、プロビジョニングされたすべてのアカウントに新しいマッピングが適用されます。</span><span class="sxs-lookup"><span data-stu-id="f99d9-134">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
+<span data-ttu-id="764a8-134">スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="764a8-134">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
 <!--
 {
   "type": "#page.annotation",

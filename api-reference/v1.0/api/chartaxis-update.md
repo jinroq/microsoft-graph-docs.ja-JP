@@ -5,53 +5,53 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2b5e7d208322edbb56b6a67a43d84cfa4ece5955
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580220"
 ---
-# <a name="update-chartaxis"></a><span data-ttu-id="c5d8a-103">ChartAxis を更新する</span><span class="sxs-lookup"><span data-stu-id="c5d8a-103">Update chartaxis</span></span>
+# <a name="update-chartaxis"></a><span data-ttu-id="fd1c4-103">ChartAxis を更新する</span><span class="sxs-lookup"><span data-stu-id="fd1c4-103">Update chartaxis</span></span>
 
-<span data-ttu-id="c5d8a-104">chartaxis オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-104">Update the properties of chartaxis object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c5d8a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c5d8a-105">Permissions</span></span>
-<span data-ttu-id="c5d8a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd1c4-104">chartaxis オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-104">Update the properties of chartaxis object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd1c4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fd1c4-105">Permissions</span></span>
+<span data-ttu-id="fd1c4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c5d8a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c5d8a-108">Permission type</span></span>      | <span data-ttu-id="c5d8a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c5d8a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd1c4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fd1c4-108">Permission type</span></span>      | <span data-ttu-id="fd1c4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fd1c4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c5d8a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c5d8a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c5d8a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c5d8a-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c5d8a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c5d8a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5d8a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-113">Not supported.</span></span>    |
-|<span data-ttu-id="c5d8a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c5d8a-114">Application</span></span> | <span data-ttu-id="c5d8a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-115">Not supported.</span></span> |
+|<span data-ttu-id="fd1c4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fd1c4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fd1c4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd1c4-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fd1c4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fd1c4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd1c4-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-113">Not supported.</span></span>    |
+|<span data-ttu-id="fd1c4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fd1c4-114">Application</span></span> | <span data-ttu-id="fd1c4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c5d8a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c5d8a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd1c4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fd1c4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="c5d8a-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c5d8a-117">Optional request headers</span></span>
-| <span data-ttu-id="c5d8a-118">名前</span><span class="sxs-lookup"><span data-stu-id="c5d8a-118">Name</span></span>       | <span data-ttu-id="c5d8a-119">説明</span><span class="sxs-lookup"><span data-stu-id="c5d8a-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="fd1c4-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fd1c4-117">Optional request headers</span></span>
+| <span data-ttu-id="fd1c4-118">名前</span><span class="sxs-lookup"><span data-stu-id="fd1c4-118">Name</span></span>       | <span data-ttu-id="fd1c4-119">説明</span><span class="sxs-lookup"><span data-stu-id="fd1c4-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="c5d8a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5d8a-120">Authorization</span></span>  | <span data-ttu-id="c5d8a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c5d8a-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c5d8a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c5d8a-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="fd1c4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd1c4-120">Authorization</span></span>  | <span data-ttu-id="fd1c4-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fd1c4-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fd1c4-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="fd1c4-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c5d8a-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c5d8a-126">Request body</span></span>
-<span data-ttu-id="c5d8a-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd1c4-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="fd1c4-126">Request body</span></span>
+<span data-ttu-id="fd1c4-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c5d8a-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c5d8a-130">Property</span></span>     | <span data-ttu-id="c5d8a-131">種類</span><span class="sxs-lookup"><span data-stu-id="c5d8a-131">Type</span></span>   |<span data-ttu-id="c5d8a-132">説明</span><span class="sxs-lookup"><span data-stu-id="c5d8a-132">Description</span></span>|
+| <span data-ttu-id="fd1c4-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fd1c4-130">Property</span></span>     | <span data-ttu-id="fd1c4-131">型</span><span class="sxs-lookup"><span data-stu-id="fd1c4-131">Type</span></span>   |<span data-ttu-id="fd1c4-132">説明</span><span class="sxs-lookup"><span data-stu-id="fd1c4-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c5d8a-133">majorUnit</span><span class="sxs-lookup"><span data-stu-id="c5d8a-133">majorUnit</span></span>|<span data-ttu-id="c5d8a-134">Json</span><span class="sxs-lookup"><span data-stu-id="c5d8a-134">Json</span></span>|<span data-ttu-id="c5d8a-p105">2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p105">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
-|<span data-ttu-id="c5d8a-138">maximum</span><span class="sxs-lookup"><span data-stu-id="c5d8a-138">maximum</span></span>|<span data-ttu-id="c5d8a-139">Json</span><span class="sxs-lookup"><span data-stu-id="c5d8a-139">Json</span></span>|<span data-ttu-id="c5d8a-p106">数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p106">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
-|<span data-ttu-id="c5d8a-143">minimum</span><span class="sxs-lookup"><span data-stu-id="c5d8a-143">minimum</span></span>|<span data-ttu-id="c5d8a-144">Json</span><span class="sxs-lookup"><span data-stu-id="c5d8a-144">Json</span></span>|<span data-ttu-id="c5d8a-p107">数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p107">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
-|<span data-ttu-id="c5d8a-148">minorUnit</span><span class="sxs-lookup"><span data-stu-id="c5d8a-148">minorUnit</span></span>|<span data-ttu-id="c5d8a-149">Json</span><span class="sxs-lookup"><span data-stu-id="c5d8a-149">Json</span></span>|<span data-ttu-id="c5d8a-p108">2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p108">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
+|<span data-ttu-id="fd1c4-133">majorUnit</span><span class="sxs-lookup"><span data-stu-id="fd1c4-133">majorUnit</span></span>|<span data-ttu-id="fd1c4-134">Json</span><span class="sxs-lookup"><span data-stu-id="fd1c4-134">Json</span></span>|<span data-ttu-id="fd1c4-p105">2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p105">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="fd1c4-138">maximum</span><span class="sxs-lookup"><span data-stu-id="fd1c4-138">maximum</span></span>|<span data-ttu-id="fd1c4-139">Json</span><span class="sxs-lookup"><span data-stu-id="fd1c4-139">Json</span></span>|<span data-ttu-id="fd1c4-p106">数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p106">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="fd1c4-143">minimum</span><span class="sxs-lookup"><span data-stu-id="fd1c4-143">minimum</span></span>|<span data-ttu-id="fd1c4-144">Json</span><span class="sxs-lookup"><span data-stu-id="fd1c4-144">Json</span></span>|<span data-ttu-id="fd1c4-p107">数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p107">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="fd1c4-148">minorUnit</span><span class="sxs-lookup"><span data-stu-id="fd1c4-148">minorUnit</span></span>|<span data-ttu-id="fd1c4-149">Json</span><span class="sxs-lookup"><span data-stu-id="fd1c4-149">Json</span></span>|<span data-ttu-id="fd1c4-p108">2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p108">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c5d8a-153">応答</span><span class="sxs-lookup"><span data-stu-id="c5d8a-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd1c4-153">応答</span><span class="sxs-lookup"><span data-stu-id="fd1c4-153">Response</span></span>
 
-<span data-ttu-id="c5d8a-154">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartAxis](../resources/chartaxis.md)オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-154">If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxis](../resources/chartaxis.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c5d8a-155">例</span><span class="sxs-lookup"><span data-stu-id="c5d8a-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c5d8a-156">要求</span><span class="sxs-lookup"><span data-stu-id="c5d8a-156">Request</span></span>
-<span data-ttu-id="c5d8a-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-157">Here is an example of the request.</span></span>
+<span data-ttu-id="fd1c4-154">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartAxis](../resources/chartaxis.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-154">If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxis](../resources/chartaxis.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fd1c4-155">例</span><span class="sxs-lookup"><span data-stu-id="fd1c4-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fd1c4-156">要求</span><span class="sxs-lookup"><span data-stu-id="fd1c4-156">Request</span></span>
+<span data-ttu-id="fd1c4-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-157">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartaxis"
@@ -70,8 +70,8 @@ Content-length: 64
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="c5d8a-158">応答</span><span class="sxs-lookup"><span data-stu-id="c5d8a-158">Response</span></span>
-<span data-ttu-id="c5d8a-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c5d8a-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fd1c4-158">応答</span><span class="sxs-lookup"><span data-stu-id="fd1c4-158">Response</span></span>
+<span data-ttu-id="fd1c4-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fd1c4-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

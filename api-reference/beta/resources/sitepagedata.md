@@ -2,26 +2,26 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: SitePageData
+title: sitepagedata
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583397"
 ---
-# <a name="sitepagedata-resource"></a><span data-ttu-id="a44e4-102">sitePageData リソース</span><span class="sxs-lookup"><span data-stu-id="a44e4-102">sitePageData resource</span></span>
+# <a name="sitepagedata-resource"></a><span data-ttu-id="06178-102">sitepagedata リソース</span><span class="sxs-lookup"><span data-stu-id="06178-102">sitePageData resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a44e4-103">**SitePageData**リソースでは、 [web パーツ][]のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="a44e4-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="a44e4-104">これらのプロパティは、web パーツによって異なりますが、固定プロパティを持たない、OpenType。</span><span class="sxs-lookup"><span data-stu-id="a44e4-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
+<span data-ttu-id="06178-103">**sitepagedata**リソースは[webPart][]のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="06178-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="06178-104">これらのプロパティは web パーツによって異なるため、これは固定プロパティを持たない OpenType です。</span><span class="sxs-lookup"><span data-stu-id="06178-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
 
-[web パーツ]: webpart.md
+[パーツ]: webpart.md
 [webPart]: webpart.md
 
-## <a name="json-representation"></a><span data-ttu-id="a44e4-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a44e4-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="06178-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="06178-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,8 +34,8 @@ ms.locfileid: "29644022"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="a44e4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a44e4-107">Properties</span></span>
-<span data-ttu-id="a44e4-108">このリソースには、固定プロパティはありませんが、OpenType は、web パーツを定義するために必要なすべてのプロパティを含みます。</span><span class="sxs-lookup"><span data-stu-id="a44e4-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
+## <a name="properties"></a><span data-ttu-id="06178-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="06178-107">Properties</span></span>
+<span data-ttu-id="06178-108">このリソースには固定されたプロパティはありませんが、web パーツを定義するために必要なすべてのプロパティを含む OpenType です。</span><span class="sxs-lookup"><span data-stu-id="06178-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
 
 <!--
 {

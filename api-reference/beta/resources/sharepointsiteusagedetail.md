@@ -1,39 +1,39 @@
 ---
-title: sharePointSiteUsageDetail リソースの種類
+title: sharepointsiteの詳細リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: e0827f6b6b991136198fc174e01e7d0e1f91c259
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959910"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583999"
 ---
-# <a name="sharepointsiteusagedetail-resource-type"></a><span data-ttu-id="925d5-103">sharePointSiteUsageDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="925d5-103">sharePointSiteUsageDetail resource type</span></span>
+# <a name="sharepointsiteusagedetail-resource-type"></a><span data-ttu-id="bcf26-103">sharepointsiteの詳細リソースの種類</span><span class="sxs-lookup"><span data-stu-id="bcf26-103">sharePointSiteUsageDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="925d5-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="925d5-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bcf26-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bcf26-104">Properties</span></span>
 
-| <span data-ttu-id="925d5-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="925d5-105">Property</span></span>                | <span data-ttu-id="925d5-106">種類</span><span class="sxs-lookup"><span data-stu-id="925d5-106">Type</span></span>    |
+| <span data-ttu-id="bcf26-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bcf26-105">Property</span></span>                | <span data-ttu-id="bcf26-106">型</span><span class="sxs-lookup"><span data-stu-id="bcf26-106">Type</span></span>    |
 | :---------------------- | :------ |
-| <span data-ttu-id="925d5-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="925d5-107">reportRefreshDate</span></span>       | <span data-ttu-id="925d5-108">日付</span><span class="sxs-lookup"><span data-stu-id="925d5-108">Date</span></span>    |
-| <span data-ttu-id="925d5-109">siteId</span><span class="sxs-lookup"><span data-stu-id="925d5-109">siteId</span></span>                  | <span data-ttu-id="925d5-110">Guid</span><span class="sxs-lookup"><span data-stu-id="925d5-110">Guid</span></span>  |
-| <span data-ttu-id="925d5-111">siteUrl</span><span class="sxs-lookup"><span data-stu-id="925d5-111">siteUrl</span></span>                 | <span data-ttu-id="925d5-112">String</span><span class="sxs-lookup"><span data-stu-id="925d5-112">String</span></span>  |
-| <span data-ttu-id="925d5-113">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="925d5-113">ownerDisplayName</span></span>        | <span data-ttu-id="925d5-114">String</span><span class="sxs-lookup"><span data-stu-id="925d5-114">String</span></span>  |
-| <span data-ttu-id="925d5-115">isDeleted</span><span class="sxs-lookup"><span data-stu-id="925d5-115">isDeleted</span></span>               | <span data-ttu-id="925d5-116">ブール型</span><span class="sxs-lookup"><span data-stu-id="925d5-116">Boolean</span></span> |
-| <span data-ttu-id="925d5-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="925d5-117">lastActivityDate</span></span>        | <span data-ttu-id="925d5-118">日付</span><span class="sxs-lookup"><span data-stu-id="925d5-118">Date</span></span>    |
-| <span data-ttu-id="925d5-119">fileCount</span><span class="sxs-lookup"><span data-stu-id="925d5-119">fileCount</span></span>               | <span data-ttu-id="925d5-120">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-120">Int64</span></span>   |
-| <span data-ttu-id="925d5-121">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="925d5-121">activeFileCount</span></span>         | <span data-ttu-id="925d5-122">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-122">Int64</span></span>   |
-| <span data-ttu-id="925d5-123">pageViewCount</span><span class="sxs-lookup"><span data-stu-id="925d5-123">pageViewCount</span></span>           | <span data-ttu-id="925d5-124">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-124">Int64</span></span>   |
-| <span data-ttu-id="925d5-125">visitedPageCount</span><span class="sxs-lookup"><span data-stu-id="925d5-125">visitedPageCount</span></span>        | <span data-ttu-id="925d5-126">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-126">Int64</span></span>   |
-| <span data-ttu-id="925d5-127">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="925d5-127">storageUsedInBytes</span></span>      | <span data-ttu-id="925d5-128">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-128">Int64</span></span>   |
-| <span data-ttu-id="925d5-129">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="925d5-129">storageAllocatedInBytes</span></span> | <span data-ttu-id="925d5-130">Int64</span><span class="sxs-lookup"><span data-stu-id="925d5-130">Int64</span></span>   |
-| <span data-ttu-id="925d5-131">rootWebTemplate</span><span class="sxs-lookup"><span data-stu-id="925d5-131">rootWebTemplate</span></span>         | <span data-ttu-id="925d5-132">String</span><span class="sxs-lookup"><span data-stu-id="925d5-132">String</span></span>  |
-| <span data-ttu-id="925d5-133">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="925d5-133">reportPeriod</span></span>            | <span data-ttu-id="925d5-134">String</span><span class="sxs-lookup"><span data-stu-id="925d5-134">String</span></span>  |
+| <span data-ttu-id="bcf26-107">reportrefreshdate</span><span class="sxs-lookup"><span data-stu-id="bcf26-107">reportRefreshDate</span></span>       | <span data-ttu-id="bcf26-108">Date</span><span class="sxs-lookup"><span data-stu-id="bcf26-108">Date</span></span>    |
+| <span data-ttu-id="bcf26-109">siteId</span><span class="sxs-lookup"><span data-stu-id="bcf26-109">siteId</span></span>                  | <span data-ttu-id="bcf26-110">Guid</span><span class="sxs-lookup"><span data-stu-id="bcf26-110">Guid</span></span>  |
+| <span data-ttu-id="bcf26-111">siteUrl</span><span class="sxs-lookup"><span data-stu-id="bcf26-111">siteUrl</span></span>                 | <span data-ttu-id="bcf26-112">String</span><span class="sxs-lookup"><span data-stu-id="bcf26-112">String</span></span>  |
+| <span data-ttu-id="bcf26-113">ownerdisplayname</span><span class="sxs-lookup"><span data-stu-id="bcf26-113">ownerDisplayName</span></span>        | <span data-ttu-id="bcf26-114">String</span><span class="sxs-lookup"><span data-stu-id="bcf26-114">String</span></span>  |
+| <span data-ttu-id="bcf26-115">isDeleted</span><span class="sxs-lookup"><span data-stu-id="bcf26-115">isDeleted</span></span>               | <span data-ttu-id="bcf26-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="bcf26-116">Boolean</span></span> |
+| <span data-ttu-id="bcf26-117">lastactivitydate</span><span class="sxs-lookup"><span data-stu-id="bcf26-117">lastActivityDate</span></span>        | <span data-ttu-id="bcf26-118">Date</span><span class="sxs-lookup"><span data-stu-id="bcf26-118">Date</span></span>    |
+| <span data-ttu-id="bcf26-119">fileCount</span><span class="sxs-lookup"><span data-stu-id="bcf26-119">fileCount</span></span>               | <span data-ttu-id="bcf26-120">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-120">Int64</span></span>   |
+| <span data-ttu-id="bcf26-121">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="bcf26-121">activeFileCount</span></span>         | <span data-ttu-id="bcf26-122">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-122">Int64</span></span>   |
+| <span data-ttu-id="bcf26-123">pageviewcount</span><span class="sxs-lookup"><span data-stu-id="bcf26-123">pageViewCount</span></span>           | <span data-ttu-id="bcf26-124">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-124">Int64</span></span>   |
+| <span data-ttu-id="bcf26-125">visitedPageCount</span><span class="sxs-lookup"><span data-stu-id="bcf26-125">visitedPageCount</span></span>        | <span data-ttu-id="bcf26-126">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-126">Int64</span></span>   |
+| <span data-ttu-id="bcf26-127">storageused inbytes</span><span class="sxs-lookup"><span data-stu-id="bcf26-127">storageUsedInBytes</span></span>      | <span data-ttu-id="bcf26-128">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-128">Int64</span></span>   |
+| <span data-ttu-id="bcf26-129">storageallocatedinbytes</span><span class="sxs-lookup"><span data-stu-id="bcf26-129">storageAllocatedInBytes</span></span> | <span data-ttu-id="bcf26-130">Int64</span><span class="sxs-lookup"><span data-stu-id="bcf26-130">Int64</span></span>   |
+| <span data-ttu-id="bcf26-131">rootwebtemplate</span><span class="sxs-lookup"><span data-stu-id="bcf26-131">rootWebTemplate</span></span>         | <span data-ttu-id="bcf26-132">String</span><span class="sxs-lookup"><span data-stu-id="bcf26-132">String</span></span>  |
+| <span data-ttu-id="bcf26-133">reportperiod</span><span class="sxs-lookup"><span data-stu-id="bcf26-133">reportPeriod</span></span>            | <span data-ttu-id="bcf26-134">String</span><span class="sxs-lookup"><span data-stu-id="bcf26-134">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="925d5-135">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="925d5-135">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bcf26-135">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bcf26-135">JSON representation</span></span>
 
-<span data-ttu-id="925d5-136">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="925d5-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bcf26-136">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="bcf26-136">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

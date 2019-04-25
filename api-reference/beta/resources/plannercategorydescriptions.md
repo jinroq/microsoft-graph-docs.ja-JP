@@ -1,35 +1,35 @@
 ---
-title: plannerCategoryDescriptions リソースの種類
-description: '**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、計画の詳細オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 '
+title: プラン? カテゴリの説明リソースの種類
+description: 'プラン**** に対して定義されているカテゴリの説明的なラベルを表します。 プランの詳細オブジェクトに属します。 最大6つのカテゴリが定義されています。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33031dc3c688e1fefb34109cb0a4a303dbe1c183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579031"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="def65-105">plannerCategoryDescriptions リソースの種類</span><span class="sxs-lookup"><span data-stu-id="def65-105">plannerCategoryDescriptions resource type</span></span>
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="d85f0-105">プラン? カテゴリの説明リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d85f0-105">plannerCategoryDescriptions resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="def65-p102">**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、[計画の詳細](plannerplandetails.md)オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。</span><span class="sxs-lookup"><span data-stu-id="def65-p102">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined.</span></span> 
+<span data-ttu-id="d85f0-106">プラン\*\*\*\* に対して定義されているカテゴリの説明的なラベルを表します。</span><span class="sxs-lookup"><span data-stu-id="d85f0-106">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="d85f0-107">[プランの詳細](plannerplandetails.md)オブジェクトに属します。</span><span class="sxs-lookup"><span data-stu-id="d85f0-107">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="d85f0-108">最大6つのカテゴリが定義されています。</span><span class="sxs-lookup"><span data-stu-id="d85f0-108">There can be up to 6 categories defined.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="def65-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="def65-109">Properties</span></span>
-| <span data-ttu-id="def65-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="def65-110">Property</span></span>     | <span data-ttu-id="def65-111">型</span><span class="sxs-lookup"><span data-stu-id="def65-111">Type</span></span>   |<span data-ttu-id="def65-112">説明</span><span class="sxs-lookup"><span data-stu-id="def65-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d85f0-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d85f0-109">Properties</span></span>
+| <span data-ttu-id="d85f0-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d85f0-110">Property</span></span>     | <span data-ttu-id="d85f0-111">型</span><span class="sxs-lookup"><span data-stu-id="d85f0-111">Type</span></span>   |<span data-ttu-id="d85f0-112">説明</span><span class="sxs-lookup"><span data-stu-id="d85f0-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="def65-113">category1</span><span class="sxs-lookup"><span data-stu-id="def65-113">category1</span></span>|<span data-ttu-id="def65-114">String</span><span class="sxs-lookup"><span data-stu-id="def65-114">String</span></span>|<span data-ttu-id="def65-115">Category 1 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-115">The label associated with Category 1</span></span>|
-|<span data-ttu-id="def65-116">category2</span><span class="sxs-lookup"><span data-stu-id="def65-116">category2</span></span>|<span data-ttu-id="def65-117">String</span><span class="sxs-lookup"><span data-stu-id="def65-117">String</span></span>|<span data-ttu-id="def65-118">Category 2 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-118">The label associated with Category 2</span></span>|
-|<span data-ttu-id="def65-119">category3</span><span class="sxs-lookup"><span data-stu-id="def65-119">category3</span></span>|<span data-ttu-id="def65-120">String</span><span class="sxs-lookup"><span data-stu-id="def65-120">String</span></span>|<span data-ttu-id="def65-121">Category 3 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-121">The label associated with Category 3</span></span>|
-|<span data-ttu-id="def65-122">category4</span><span class="sxs-lookup"><span data-stu-id="def65-122">category4</span></span>|<span data-ttu-id="def65-123">String</span><span class="sxs-lookup"><span data-stu-id="def65-123">String</span></span>|<span data-ttu-id="def65-124">Category 4 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-124">The label associated with Category 4</span></span>|
-|<span data-ttu-id="def65-125">category5</span><span class="sxs-lookup"><span data-stu-id="def65-125">category5</span></span>|<span data-ttu-id="def65-126">String</span><span class="sxs-lookup"><span data-stu-id="def65-126">String</span></span>|<span data-ttu-id="def65-127">Category 5 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-127">The label associated with Category 5</span></span>|
-|<span data-ttu-id="def65-128">category6</span><span class="sxs-lookup"><span data-stu-id="def65-128">category6</span></span>|<span data-ttu-id="def65-129">String</span><span class="sxs-lookup"><span data-stu-id="def65-129">String</span></span>|<span data-ttu-id="def65-130">Category 6 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="def65-130">The label associated with Category 6</span></span>|
+|<span data-ttu-id="d85f0-113">category1</span><span class="sxs-lookup"><span data-stu-id="d85f0-113">category1</span></span>|<span data-ttu-id="d85f0-114">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-114">String</span></span>|<span data-ttu-id="d85f0-115">カテゴリ1に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-115">The label associated with Category 1</span></span>|
+|<span data-ttu-id="d85f0-116">category2</span><span class="sxs-lookup"><span data-stu-id="d85f0-116">category2</span></span>|<span data-ttu-id="d85f0-117">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-117">String</span></span>|<span data-ttu-id="d85f0-118">カテゴリ2に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-118">The label associated with Category 2</span></span>|
+|<span data-ttu-id="d85f0-119">category3</span><span class="sxs-lookup"><span data-stu-id="d85f0-119">category3</span></span>|<span data-ttu-id="d85f0-120">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-120">String</span></span>|<span data-ttu-id="d85f0-121">カテゴリ3に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-121">The label associated with Category 3</span></span>|
+|<span data-ttu-id="d85f0-122">category4</span><span class="sxs-lookup"><span data-stu-id="d85f0-122">category4</span></span>|<span data-ttu-id="d85f0-123">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-123">String</span></span>|<span data-ttu-id="d85f0-124">Category 4 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-124">The label associated with Category 4</span></span>|
+|<span data-ttu-id="d85f0-125">category5</span><span class="sxs-lookup"><span data-stu-id="d85f0-125">category5</span></span>|<span data-ttu-id="d85f0-126">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-126">String</span></span>|<span data-ttu-id="d85f0-127">カテゴリ5に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-127">The label associated with Category 5</span></span>|
+|<span data-ttu-id="d85f0-128">category6</span><span class="sxs-lookup"><span data-stu-id="d85f0-128">category6</span></span>|<span data-ttu-id="d85f0-129">String</span><span class="sxs-lookup"><span data-stu-id="d85f0-129">String</span></span>|<span data-ttu-id="d85f0-130">カテゴリ6に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="d85f0-130">The label associated with Category 6</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="def65-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="def65-131">JSON representation</span></span>
-<span data-ttu-id="def65-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="def65-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d85f0-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d85f0-131">JSON representation</span></span>
+<span data-ttu-id="d85f0-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d85f0-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

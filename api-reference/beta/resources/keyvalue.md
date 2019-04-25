@@ -3,19 +3,19 @@ title: keyValue リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
 ms.openlocfilehash: 4223df85f9f120ba6477480f943d65a2511b6f2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528530"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581096"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="ccc0a-103">keyValue リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ccc0a-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="0890b-103">keyValue リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0890b-103">keyValue resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="ccc0a-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ccc0a-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0890b-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0890b-104">JSON representation</span></span>
 
-<span data-ttu-id="ccc0a-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="ccc0a-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0890b-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="0890b-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,11 +32,11 @@ ms.locfileid: "29528530"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="ccc0a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ccc0a-106">Properties</span></span>
-| <span data-ttu-id="ccc0a-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ccc0a-107">Property</span></span>     | <span data-ttu-id="ccc0a-108">型</span><span class="sxs-lookup"><span data-stu-id="ccc0a-108">Type</span></span>   |<span data-ttu-id="ccc0a-109">説明</span><span class="sxs-lookup"><span data-stu-id="ccc0a-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0890b-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0890b-106">Properties</span></span>
+| <span data-ttu-id="0890b-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0890b-107">Property</span></span>     | <span data-ttu-id="0890b-108">型</span><span class="sxs-lookup"><span data-stu-id="0890b-108">Type</span></span>   |<span data-ttu-id="0890b-109">説明</span><span class="sxs-lookup"><span data-stu-id="0890b-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ccc0a-110">Key</span><span class="sxs-lookup"><span data-stu-id="ccc0a-110">key</span></span>|<span data-ttu-id="ccc0a-111">文字列</span><span class="sxs-lookup"><span data-stu-id="ccc0a-111">string</span></span>||
-|<span data-ttu-id="ccc0a-112">value</span><span class="sxs-lookup"><span data-stu-id="ccc0a-112">value</span></span>|<span data-ttu-id="ccc0a-113">string</span><span class="sxs-lookup"><span data-stu-id="ccc0a-113">string</span></span>||
+|<span data-ttu-id="0890b-110">Key</span><span class="sxs-lookup"><span data-stu-id="0890b-110">key</span></span>|<span data-ttu-id="0890b-111">string</span><span class="sxs-lookup"><span data-stu-id="0890b-111">string</span></span>||
+|<span data-ttu-id="0890b-112">value</span><span class="sxs-lookup"><span data-stu-id="0890b-112">value</span></span>|<span data-ttu-id="0890b-113">string</span><span class="sxs-lookup"><span data-stu-id="0890b-113">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

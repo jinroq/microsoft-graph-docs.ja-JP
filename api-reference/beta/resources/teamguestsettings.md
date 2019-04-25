@@ -1,31 +1,31 @@
 ---
-title: teamGuestSettings リソースの種類
-description: 来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。
+title: teamguestsettings リソースの種類
+description: ゲストがチームでチャネルを作成、更新、削除できるかどうかを構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554010"
 ---
-# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="5cb15-103">teamGuestSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5cb15-103">teamGuestSettings resource type</span></span>
+# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="10f4a-103">teamguestsettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="10f4a-103">teamGuestSettings resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5cb15-104">来園者が作成、更新、または[チーム](team.md)内のチャンネルを削除するかどうかを構成するのに設定します。</span><span class="sxs-lookup"><span data-stu-id="5cb15-104">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
+<span data-ttu-id="10f4a-104">ゲストが[チーム](team.md)内でチャネルを作成、更新、または削除できるかどうかを構成するための設定。</span><span class="sxs-lookup"><span data-stu-id="10f4a-104">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5cb15-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5cb15-105">Properties</span></span>
-| <span data-ttu-id="5cb15-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5cb15-106">Property</span></span>     | <span data-ttu-id="5cb15-107">型</span><span class="sxs-lookup"><span data-stu-id="5cb15-107">Type</span></span>   |<span data-ttu-id="5cb15-108">説明</span><span class="sxs-lookup"><span data-stu-id="5cb15-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="10f4a-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="10f4a-105">Properties</span></span>
+| <span data-ttu-id="10f4a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="10f4a-106">Property</span></span>     | <span data-ttu-id="10f4a-107">型</span><span class="sxs-lookup"><span data-stu-id="10f4a-107">Type</span></span>   |<span data-ttu-id="10f4a-108">説明</span><span class="sxs-lookup"><span data-stu-id="10f4a-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5cb15-109">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="5cb15-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="5cb15-110">ブール値</span><span class="sxs-lookup"><span data-stu-id="5cb15-110">Boolean</span></span>|<span data-ttu-id="5cb15-111">True の場合、来園者のセットを追加したりチャンネルを更新する場合。</span><span class="sxs-lookup"><span data-stu-id="5cb15-111">If set to true, guests can add and update channels.</span></span>|
-|<span data-ttu-id="5cb15-112">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="5cb15-112">allowDeleteChannels</span></span>|<span data-ttu-id="5cb15-113">ブール値</span><span class="sxs-lookup"><span data-stu-id="5cb15-113">Boolean</span></span>|<span data-ttu-id="5cb15-114">場合は true を指定すると、来園者に設定するには、チャンネルを削除できます。</span><span class="sxs-lookup"><span data-stu-id="5cb15-114">If set to true, guests can delete channels.</span></span>|
+|<span data-ttu-id="10f4a-109">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="10f4a-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="10f4a-110">ブール値</span><span class="sxs-lookup"><span data-stu-id="10f4a-110">Boolean</span></span>|<span data-ttu-id="10f4a-111">true に設定すると、ゲストはチャネルを追加および更新できるようになります。</span><span class="sxs-lookup"><span data-stu-id="10f4a-111">If set to true, guests can add and update channels.</span></span>|
+|<span data-ttu-id="10f4a-112">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="10f4a-112">allowDeleteChannels</span></span>|<span data-ttu-id="10f4a-113">ブール値</span><span class="sxs-lookup"><span data-stu-id="10f4a-113">Boolean</span></span>|<span data-ttu-id="10f4a-114">true に設定されている場合、ゲストはチャネルを削除できます。</span><span class="sxs-lookup"><span data-stu-id="10f4a-114">If set to true, guests can delete channels.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5cb15-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5cb15-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="10f4a-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="10f4a-115">JSON representation</span></span>
 
-<span data-ttu-id="5cb15-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5cb15-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="10f4a-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="10f4a-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

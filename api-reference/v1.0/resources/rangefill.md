@@ -1,41 +1,41 @@
 ---
 title: RangeFill リソースの種類
-description: 範囲オブジェクトの背景を表します。
+description: Range オブジェクトの背景を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579474"
 ---
-# <a name="rangefill-resource-type"></a><span data-ttu-id="c8a93-103">RangeFill リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c8a93-103">RangeFill resource type</span></span>
+# <a name="rangefill-resource-type"></a><span data-ttu-id="84b67-103">RangeFill リソースの種類</span><span class="sxs-lookup"><span data-stu-id="84b67-103">RangeFill resource type</span></span>
 
-<span data-ttu-id="c8a93-104">範囲オブジェクトの背景を表します。</span><span class="sxs-lookup"><span data-stu-id="c8a93-104">Represents the background of a range object.</span></span>
+<span data-ttu-id="84b67-104">Range オブジェクトの背景を表します。</span><span class="sxs-lookup"><span data-stu-id="84b67-104">Represents the background of a range object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="c8a93-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="c8a93-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="84b67-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="84b67-105">Methods</span></span>
 
-| <span data-ttu-id="c8a93-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="c8a93-106">Method</span></span>           | <span data-ttu-id="c8a93-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="c8a93-107">Return Type</span></span>    |<span data-ttu-id="c8a93-108">説明</span><span class="sxs-lookup"><span data-stu-id="c8a93-108">Description</span></span>|
+| <span data-ttu-id="84b67-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="84b67-106">Method</span></span>           | <span data-ttu-id="84b67-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="84b67-107">Return Type</span></span>    |<span data-ttu-id="84b67-108">説明</span><span class="sxs-lookup"><span data-stu-id="84b67-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c8a93-109">RangeFill を取得する</span><span class="sxs-lookup"><span data-stu-id="c8a93-109">Get RangeFill</span></span>](../api/rangefill-get.md) | [<span data-ttu-id="c8a93-110">WorkbookRangeFill</span><span class="sxs-lookup"><span data-stu-id="c8a93-110">WorkbookRangeFill</span></span>](rangefill.md) |<span data-ttu-id="c8a93-111">rangeFill オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="c8a93-111">Read properties and relationships of rangeFill object.</span></span>|
-|[<span data-ttu-id="c8a93-112">Update</span><span class="sxs-lookup"><span data-stu-id="c8a93-112">Update</span></span>](../api/rangefill-update.md) | [<span data-ttu-id="c8a93-113">WorkbookRangeFill</span><span class="sxs-lookup"><span data-stu-id="c8a93-113">WorkbookRangeFill</span></span>](rangefill.md)   |<span data-ttu-id="c8a93-114">RangeFill オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="c8a93-114">Update RangeFill object.</span></span> |
-|[<span data-ttu-id="c8a93-115">Clear</span><span class="sxs-lookup"><span data-stu-id="c8a93-115">Clear</span></span>](../api/rangefill-clear.md)|<span data-ttu-id="c8a93-116">なし</span><span class="sxs-lookup"><span data-stu-id="c8a93-116">None</span></span>|<span data-ttu-id="c8a93-117">範囲の背景をリセットします。</span><span class="sxs-lookup"><span data-stu-id="c8a93-117">Resets the range background.</span></span>|
+|[<span data-ttu-id="84b67-109">RangeFill を取得する</span><span class="sxs-lookup"><span data-stu-id="84b67-109">Get RangeFill</span></span>](../api/rangefill-get.md) | [<span data-ttu-id="84b67-110">WorkbookRangeFill</span><span class="sxs-lookup"><span data-stu-id="84b67-110">WorkbookRangeFill</span></span>](rangefill.md) |<span data-ttu-id="84b67-111">rangeFill オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="84b67-111">Read properties and relationships of rangeFill object.</span></span>|
+|[<span data-ttu-id="84b67-112">Update</span><span class="sxs-lookup"><span data-stu-id="84b67-112">Update</span></span>](../api/rangefill-update.md) | [<span data-ttu-id="84b67-113">WorkbookRangeFill</span><span class="sxs-lookup"><span data-stu-id="84b67-113">WorkbookRangeFill</span></span>](rangefill.md)   |<span data-ttu-id="84b67-114">RangeFill オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="84b67-114">Update RangeFill object.</span></span> |
+|[<span data-ttu-id="84b67-115">Clear</span><span class="sxs-lookup"><span data-stu-id="84b67-115">Clear</span></span>](../api/rangefill-clear.md)|<span data-ttu-id="84b67-116">なし</span><span class="sxs-lookup"><span data-stu-id="84b67-116">None</span></span>|<span data-ttu-id="84b67-117">範囲の背景をリセットします。</span><span class="sxs-lookup"><span data-stu-id="84b67-117">Resets the range background.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c8a93-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c8a93-118">Properties</span></span>
-| <span data-ttu-id="c8a93-119">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c8a93-119">Property</span></span>     | <span data-ttu-id="c8a93-120">種類</span><span class="sxs-lookup"><span data-stu-id="c8a93-120">Type</span></span>   |<span data-ttu-id="c8a93-121">説明</span><span class="sxs-lookup"><span data-stu-id="c8a93-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="84b67-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="84b67-118">Properties</span></span>
+| <span data-ttu-id="84b67-119">プロパティ</span><span class="sxs-lookup"><span data-stu-id="84b67-119">Property</span></span>     | <span data-ttu-id="84b67-120">型</span><span class="sxs-lookup"><span data-stu-id="84b67-120">Type</span></span>   |<span data-ttu-id="84b67-121">説明</span><span class="sxs-lookup"><span data-stu-id="84b67-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c8a93-122">color</span><span class="sxs-lookup"><span data-stu-id="c8a93-122">color</span></span>|<span data-ttu-id="c8a93-123">文字列</span><span class="sxs-lookup"><span data-stu-id="c8a93-123">string</span></span>|<span data-ttu-id="c8a93-124">枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")</span><span class="sxs-lookup"><span data-stu-id="c8a93-124">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")</span></span>|
+|<span data-ttu-id="84b67-122">color</span><span class="sxs-lookup"><span data-stu-id="84b67-122">color</span></span>|<span data-ttu-id="84b67-123">string</span><span class="sxs-lookup"><span data-stu-id="84b67-123">string</span></span>|<span data-ttu-id="84b67-124">枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")</span><span class="sxs-lookup"><span data-stu-id="84b67-124">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c8a93-125">関係</span><span class="sxs-lookup"><span data-stu-id="c8a93-125">Relationships</span></span>
-<span data-ttu-id="c8a93-126">なし</span><span class="sxs-lookup"><span data-stu-id="c8a93-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="84b67-125">関係</span><span class="sxs-lookup"><span data-stu-id="84b67-125">Relationships</span></span>
+<span data-ttu-id="84b67-126">なし</span><span class="sxs-lookup"><span data-stu-id="84b67-126">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c8a93-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c8a93-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="84b67-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="84b67-127">JSON representation</span></span>
 
-<span data-ttu-id="c8a93-128">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="c8a93-128">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="84b67-128">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="84b67-128">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

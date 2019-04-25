@@ -1,21 +1,21 @@
 ---
-title: targetResourceApp リソースの種類
-description: 追加、更新または監査活動の一環として、管理者によって削除されたアプリケーション オブジェクトを示します。 TargetResource リソースから派生します。
+title: targetresourceapp リソースの種類
+description: 監査アクティビティの一部として管理者によって追加、更新、または削除されたアプリオブジェクトを示します。 targetResource リソースから派生します。
 localization_priority: Normal
 ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583117"
 ---
-# <a name="targetresourceapp-resource-type"></a><span data-ttu-id="1a5d6-104">targetResourceApp リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1a5d6-104">targetResourceApp resource type</span></span>
-<span data-ttu-id="1a5d6-105">追加、更新または監査活動の一環として、管理者によって削除されたアプリケーション オブジェクトを示します。</span><span class="sxs-lookup"><span data-stu-id="1a5d6-105">Indicates the app object that was added, updated or deleted by admins as part of audit activity.</span></span> <span data-ttu-id="1a5d6-106">[TargetResource](targetresource.md)リソースから派生します。</span><span class="sxs-lookup"><span data-stu-id="1a5d6-106">Derived from the [targetResource](targetresource.md) resource.</span></span>
+# <a name="targetresourceapp-resource-type"></a><span data-ttu-id="489eb-104">targetresourceapp リソースの種類</span><span class="sxs-lookup"><span data-stu-id="489eb-104">targetResourceApp resource type</span></span>
+<span data-ttu-id="489eb-105">監査アクティビティの一部として管理者によって追加、更新、または削除されたアプリオブジェクトを示します。</span><span class="sxs-lookup"><span data-stu-id="489eb-105">Indicates the app object that was added, updated or deleted by admins as part of audit activity.</span></span> <span data-ttu-id="489eb-106">[targetResource](targetresource.md)リソースから派生します。</span><span class="sxs-lookup"><span data-stu-id="489eb-106">Derived from the [targetResource](targetresource.md) resource.</span></span>
 
 
 
-## <a name="properties"></a><span data-ttu-id="1a5d6-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1a5d6-107">Properties</span></span>
-<span data-ttu-id="1a5d6-108">なし</span><span class="sxs-lookup"><span data-stu-id="1a5d6-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="489eb-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="489eb-107">Properties</span></span>
+<span data-ttu-id="489eb-108">なし</span><span class="sxs-lookup"><span data-stu-id="489eb-108">None</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

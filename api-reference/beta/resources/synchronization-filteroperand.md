@@ -1,28 +1,28 @@
 ---
-title: filterOperand リソースの種類
-description: オペランドの値のコレクションが含まれています。
+title: filteroperand リソースの種類
+description: オペランドの値のコレクションを格納します。
 localization_priority: Normal
 ms.openlocfilehash: ab62477889cc92954ed308c508e18a638cd59375
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581808"
 ---
-# <a name="filteroperand-resource-type"></a><span data-ttu-id="edb20-103">filterOperand リソースの種類</span><span class="sxs-lookup"><span data-stu-id="edb20-103">filterOperand resource type</span></span>
+# <a name="filteroperand-resource-type"></a><span data-ttu-id="6a12d-103">filteroperand リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6a12d-103">filterOperand resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="edb20-104">オペランドの値のコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="edb20-104">Contains a collection of values for the operand.</span></span>
+<span data-ttu-id="6a12d-104">オペランドの値のコレクションを格納します。</span><span class="sxs-lookup"><span data-stu-id="6a12d-104">Contains a collection of values for the operand.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="edb20-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edb20-105">Properties</span></span>
-| <span data-ttu-id="edb20-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="edb20-106">Property</span></span>     | <span data-ttu-id="edb20-107">型</span><span class="sxs-lookup"><span data-stu-id="edb20-107">Type</span></span>   |<span data-ttu-id="edb20-108">説明</span><span class="sxs-lookup"><span data-stu-id="edb20-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6a12d-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6a12d-105">Properties</span></span>
+| <span data-ttu-id="6a12d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6a12d-106">Property</span></span>     | <span data-ttu-id="6a12d-107">型</span><span class="sxs-lookup"><span data-stu-id="6a12d-107">Type</span></span>   |<span data-ttu-id="6a12d-108">説明</span><span class="sxs-lookup"><span data-stu-id="6a12d-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="edb20-109">values</span><span class="sxs-lookup"><span data-stu-id="edb20-109">values</span></span>|<span data-ttu-id="edb20-110">String コレクション</span><span class="sxs-lookup"><span data-stu-id="edb20-110">String collection</span></span>|<span data-ttu-id="edb20-111">値のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="edb20-111">Collection of values.</span></span>|
+|<span data-ttu-id="6a12d-109">values</span><span class="sxs-lookup"><span data-stu-id="6a12d-109">values</span></span>|<span data-ttu-id="6a12d-110">String collection</span><span class="sxs-lookup"><span data-stu-id="6a12d-110">String collection</span></span>|<span data-ttu-id="6a12d-111">値のコレクション。</span><span class="sxs-lookup"><span data-stu-id="6a12d-111">Collection of values.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="edb20-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="edb20-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a12d-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6a12d-112">JSON representation</span></span>
 
-<span data-ttu-id="edb20-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="edb20-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6a12d-113">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6a12d-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

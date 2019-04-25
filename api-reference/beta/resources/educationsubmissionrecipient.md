@@ -1,25 +1,25 @@
 ---
 title: educationSubmissionRecipient リソースの種類
-description: 提出書類の割り当て先のユーザーの別のセットを表す抽象クラスです。 使用可能な値には、個人またはグループが含まれます。 **Submission.recipient**プロパティ内で使用されます。
+description: 提出物を割り当てることができるユーザーの異なるセットを表す抽象クラス。 使用可能な値には、個人またはグループが含まれます。 これは、**送信側**のプロパティ内で使用されます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516876"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542882"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="8b773-105">educationSubmissionRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8b773-105">educationSubmissionRecipient resource type</span></span>
+# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="cc57c-105">educationSubmissionRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cc57c-105">educationSubmissionRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b773-106">提出書類の割り当て先のユーザーの別のセットを表す抽象クラスです。</span><span class="sxs-lookup"><span data-stu-id="8b773-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="8b773-107">使用可能な値には、個人またはグループが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8b773-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="8b773-108">**Submission.recipient**プロパティ内で使用されます。</span><span class="sxs-lookup"><span data-stu-id="8b773-108">This is used within the **submission.recipient** property.</span></span>
+<span data-ttu-id="cc57c-106">提出物を割り当てることができるユーザーの異なるセットを表す抽象クラス。</span><span class="sxs-lookup"><span data-stu-id="cc57c-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="cc57c-107">使用可能な値には、個人またはグループが含まれます。</span><span class="sxs-lookup"><span data-stu-id="cc57c-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="cc57c-108">これは、**送信側**のプロパティ内で使用されます。</span><span class="sxs-lookup"><span data-stu-id="cc57c-108">This is used within the **submission.recipient** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="8b773-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b773-109">Properties</span></span>
-<span data-ttu-id="8b773-110">なし。</span><span class="sxs-lookup"><span data-stu-id="8b773-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="cc57c-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cc57c-109">Properties</span></span>
+<span data-ttu-id="cc57c-110">なし。</span><span class="sxs-lookup"><span data-stu-id="cc57c-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",

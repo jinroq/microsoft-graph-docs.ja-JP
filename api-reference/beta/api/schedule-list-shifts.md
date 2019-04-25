@@ -5,30 +5,30 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1250ac0d05636d83602412c912bff604938a317a
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657778"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545493"
 ---
-# <a name="list-shifts"></a><span data-ttu-id="43ba8-103">シフトの一覧表示</span><span class="sxs-lookup"><span data-stu-id="43ba8-103">List shifts</span></span>
+# <a name="list-shifts"></a><span data-ttu-id="0a0b0-103">シフトの一覧表示</span><span class="sxs-lookup"><span data-stu-id="0a0b0-103">List shifts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="43ba8-104">[スケジュール](../resources/schedule.md)に含まれる[シフト](../resources/shift.md)インスタンスの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="43ba8-104">Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="0a0b0-104">[スケジュール](../resources/schedule.md)に含まれる[シフト](../resources/shift.md)インスタンスの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-104">Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="43ba8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="43ba8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0a0b0-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0a0b0-105">Permissions</span></span>
 
-<span data-ttu-id="43ba8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="43ba8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0a0b0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="43ba8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="43ba8-108">Permission type</span></span>      | <span data-ttu-id="43ba8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="43ba8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0a0b0-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0a0b0-108">Permission type</span></span>      | <span data-ttu-id="0a0b0-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0a0b0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="43ba8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="43ba8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="43ba8-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43ba8-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="43ba8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="43ba8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43ba8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="43ba8-113">Not supported.</span></span>    |
-|<span data-ttu-id="43ba8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="43ba8-114">Application</span></span> | <span data-ttu-id="43ba8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="43ba8-115">Not supported.</span></span> |
+|<span data-ttu-id="0a0b0-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0a0b0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0a0b0-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a0b0-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0a0b0-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0a0b0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0a0b0-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-113">Not supported.</span></span>    |
+|<span data-ttu-id="0a0b0-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0a0b0-114">Application</span></span> | <span data-ttu-id="0a0b0-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-115">Not supported.</span></span> |
 
-> <span data-ttu-id="43ba8-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="43ba8-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="43ba8-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="43ba8-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="0a0b0-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="0a0b0-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="43ba8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="43ba8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a0b0-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0a0b0-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +36,28 @@ ms.locfileid: "30657778"
 GET /teams/{teamId}/schedule/shifts
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="43ba8-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="43ba8-119">Optional query parameters</span></span>
-<span data-ttu-id="43ba8-120">このメソッドは、応答をカスタマイズするための $filter [OData クエリパラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="43ba8-120">This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0a0b0-119">省略可能なクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a0b0-119">Optional query parameters</span></span>
+<span data-ttu-id="0a0b0-120">このメソッドは、応答をカスタマイズするための $filter [OData クエリパラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-120">This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="43ba8-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="43ba8-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0a0b0-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0a0b0-121">Request headers</span></span>
 
-| <span data-ttu-id="43ba8-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="43ba8-122">Header</span></span>       | <span data-ttu-id="43ba8-123">値</span><span class="sxs-lookup"><span data-stu-id="43ba8-123">Value</span></span> |
+| <span data-ttu-id="0a0b0-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0a0b0-122">Header</span></span>       | <span data-ttu-id="0a0b0-123">値</span><span class="sxs-lookup"><span data-stu-id="0a0b0-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="43ba8-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="43ba8-124">Authorization</span></span>  | <span data-ttu-id="43ba8-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="43ba8-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="43ba8-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="43ba8-127">Content-Type</span></span>  | <span data-ttu-id="43ba8-128">application/json</span><span class="sxs-lookup"><span data-stu-id="43ba8-128">application/json</span></span>  |
+| <span data-ttu-id="0a0b0-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a0b0-124">Authorization</span></span>  | <span data-ttu-id="0a0b0-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0a0b0-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0a0b0-127">Content-Type</span></span>  | <span data-ttu-id="0a0b0-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0a0b0-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="43ba8-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="43ba8-129">Request body</span></span>
-<span data-ttu-id="43ba8-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="43ba8-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a0b0-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="0a0b0-129">Request body</span></span>
+<span data-ttu-id="0a0b0-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="43ba8-131">応答</span><span class="sxs-lookup"><span data-stu-id="43ba8-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0a0b0-131">応答</span><span class="sxs-lookup"><span data-stu-id="0a0b0-131">Response</span></span>
 
-<span data-ttu-id="43ba8-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="43ba8-132">If successful, this method returns a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.</span></span>
+<span data-ttu-id="0a0b0-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-132">If successful, this method returns a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43ba8-133">例</span><span class="sxs-lookup"><span data-stu-id="43ba8-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a0b0-133">例</span><span class="sxs-lookup"><span data-stu-id="0a0b0-133">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="43ba8-134">要求</span><span class="sxs-lookup"><span data-stu-id="43ba8-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0a0b0-134">要求</span><span class="sxs-lookup"><span data-stu-id="0a0b0-134">Request</span></span>
 
-<span data-ttu-id="43ba8-135">次に示すのは、共有バージョンを持つすべての**shift**オブジェクトを取得する要求の例です。2019年3月11日から18月11日までの下書きバージョンを取得します。</span><span class="sxs-lookup"><span data-stu-id="43ba8-135">The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.</span></span>
+<span data-ttu-id="0a0b0-135">次に示すのは、共有バージョンを持つすべての**shift**オブジェクトを取得する要求の例です。2019年3月11日から18月11日までの下書きバージョンを取得します。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-135">The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-list-shifts"
@@ -66,11 +66,11 @@ GET /teams/{teamId}/schedule/shifts
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z
 ```
 
-#### <a name="response"></a><span data-ttu-id="43ba8-136">応答</span><span class="sxs-lookup"><span data-stu-id="43ba8-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0a0b0-136">応答</span><span class="sxs-lookup"><span data-stu-id="0a0b0-136">Response</span></span>
 
-<span data-ttu-id="43ba8-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="43ba8-137">The following is an example of the response.</span></span> 
+<span data-ttu-id="0a0b0-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="43ba8-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="43ba8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="0a0b0-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="0a0b0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

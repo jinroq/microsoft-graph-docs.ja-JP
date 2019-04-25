@@ -1,19 +1,19 @@
 ---
 title: OneNoteResource リソースの種類
-description: 'イメージまたは OneNote のページ上の他のファイル リソースです。 '
+description: 'OneNote ページ上の画像またはその他のファイルリソース。 '
 localization_priority: Normal
 ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855105"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579325"
 ---
-# <a name="onenoteresource-resource-type"></a><span data-ttu-id="f7c6f-103">OneNoteResource リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f7c6f-103">OneNoteResource resource type</span></span>
+# <a name="onenoteresource-resource-type"></a><span data-ttu-id="25c3d-103">OneNoteResource リソースの種類</span><span class="sxs-lookup"><span data-stu-id="25c3d-103">OneNoteResource resource type</span></span>
 
-<span data-ttu-id="f7c6f-104">イメージまたは OneNote のページ上の他のファイル リソースです。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-104">An image or other file resource on a OneNote page.</span></span> 
+<span data-ttu-id="25c3d-104">OneNote ページ上の画像またはその他のファイルリソース。</span><span class="sxs-lookup"><span data-stu-id="25c3d-104">An image or other file resource on a OneNote page.</span></span> 
 
-<span data-ttu-id="f7c6f-105">リソースのバイナリ データは取得できますが、リソース オブジェクトまたはリソース コレクションの JSON 表記の取得はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-105">You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.</span></span>
+<span data-ttu-id="25c3d-105">リソースのバイナリデータを取得することはできますが、リソースオブジェクトまたはリソースコレクションの JSON 表記を取得することはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="25c3d-105">You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -30,19 +30,19 @@ ms.locfileid: "27855105"
 }
 ```
 
-<span data-ttu-id="f7c6f-106">GET リクエストをリソースの `content` エンドポイントに送信することによって、特定のリソースのバイナリ データを取得します。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-106">Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:</span></span>
+<span data-ttu-id="25c3d-106">特定のリソースのバイナリデータを取得するために、get 要求をリソースの`content`エンドポイントに送信します。</span><span class="sxs-lookup"><span data-stu-id="25c3d-106">Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:</span></span>
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-<span data-ttu-id="f7c6f-107">ファイルのリソース URI は、次のリクエストを使用して、ページの HTML コンテンツを取得するときに返されます。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-107">The file's resource URI is returned when you get a page's HTML content using the following request:</span></span>
+<span data-ttu-id="25c3d-107">ファイルのリソース URI は、次の要求を使用してページの HTML コンテンツを取得したときに返されます。</span><span class="sxs-lookup"><span data-stu-id="25c3d-107">The file's resource URI is returned when you get a page's HTML content using the following request:</span></span>
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-<span data-ttu-id="f7c6f-108">ページ HTML では、`img` タグには、`data-fullres-src` 属性の元のイメージ リソースのエンドポイントと、`src` 属性の最適化されたイメージのエンドポイントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-108">In the page HTML, an `img` tag includes endpoints for the original image resource in the `data-fullres-src` attribute and the optimized image in the `src` attribute:</span></span>
+<span data-ttu-id="25c3d-108">ページ HTML の場合、 `img`タグには、 `data-fullres-src`属性内の元のイメージリソースのエンドポイントと、 `src`属性の最適化されたイメージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="25c3d-108">In the page HTML, an `img` tag includes endpoints for the original image resource in the `data-fullres-src` attribute and the optimized image in the `src` attribute:</span></span>
 ```
 <img 
     src="image-resource-url"  
@@ -51,7 +51,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-<span data-ttu-id="f7c6f-109">`object` タグ (PDF、DOCX、PNG などのファイルを表す) には、`data` 属性のファイル リソースのエンドポイントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-109">An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the endpoint for the file resource in the `data` attribute:</span></span>
+<span data-ttu-id="25c3d-109">`object`タグ (PDF、.docx、PNG などのファイルを表す) には、 `data`属性のファイルリソースのエンドポイントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="25c3d-109">An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the endpoint for the file resource in the `data` attribute:</span></span>
 
 ```
 <object
@@ -60,21 +60,21 @@ GET ../onenote/pages/{id}/content
     type="media-type" ... />
 ```
 
-## <a name="properties"></a><span data-ttu-id="f7c6f-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7c6f-110">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="25c3d-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="25c3d-110">Properties</span></span>
 
-| <span data-ttu-id="f7c6f-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7c6f-111">Property</span></span>             | <span data-ttu-id="f7c6f-112">種類</span><span class="sxs-lookup"><span data-stu-id="f7c6f-112">Type</span></span>            | <span data-ttu-id="f7c6f-113">説明</span><span class="sxs-lookup"><span data-stu-id="f7c6f-113">Description</span></span>
+| <span data-ttu-id="25c3d-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="25c3d-111">Property</span></span>             | <span data-ttu-id="25c3d-112">型</span><span class="sxs-lookup"><span data-stu-id="25c3d-112">Type</span></span>            | <span data-ttu-id="25c3d-113">説明</span><span class="sxs-lookup"><span data-stu-id="25c3d-113">Description</span></span>
 |:---------------------|:----------------|:---------------------------------
-| <span data-ttu-id="f7c6f-114">content</span><span class="sxs-lookup"><span data-stu-id="f7c6f-114">content</span></span>              | <span data-ttu-id="f7c6f-115">Stream</span><span class="sxs-lookup"><span data-stu-id="f7c6f-115">Stream</span></span>          | <span data-ttu-id="f7c6f-116">コンテンツ ストリーム</span><span class="sxs-lookup"><span data-stu-id="f7c6f-116">The content stream</span></span>
-| <span data-ttu-id="f7c6f-117">contentUrl</span><span class="sxs-lookup"><span data-stu-id="f7c6f-117">contentUrl</span></span>           | <span data-ttu-id="f7c6f-118">文字列 (url)</span><span class="sxs-lookup"><span data-stu-id="f7c6f-118">String (url)</span></span>    | <span data-ttu-id="f7c6f-119">コンテンツをダウンロードするための URL</span><span class="sxs-lookup"><span data-stu-id="f7c6f-119">The URL for downloading the content</span></span>
+| <span data-ttu-id="25c3d-114">content</span><span class="sxs-lookup"><span data-stu-id="25c3d-114">content</span></span>              | <span data-ttu-id="25c3d-115">Stream</span><span class="sxs-lookup"><span data-stu-id="25c3d-115">Stream</span></span>          | <span data-ttu-id="25c3d-116">コンテンツストリーム</span><span class="sxs-lookup"><span data-stu-id="25c3d-116">The content stream</span></span>
+| <span data-ttu-id="25c3d-117">contentUrl</span><span class="sxs-lookup"><span data-stu-id="25c3d-117">contentUrl</span></span>           | <span data-ttu-id="25c3d-118">String (url)</span><span class="sxs-lookup"><span data-stu-id="25c3d-118">String (url)</span></span>    | <span data-ttu-id="25c3d-119">コンテンツをダウンロードするための URL</span><span class="sxs-lookup"><span data-stu-id="25c3d-119">The URL for downloading the content</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="f7c6f-120">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="f7c6f-120">Relationships</span></span>
-<span data-ttu-id="f7c6f-121">なし。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-121">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="25c3d-120">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="25c3d-120">Relationships</span></span>
+<span data-ttu-id="25c3d-121">なし。</span><span class="sxs-lookup"><span data-stu-id="25c3d-121">None.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="f7c6f-122">メソッド</span><span class="sxs-lookup"><span data-stu-id="f7c6f-122">Methods</span></span>
-| <span data-ttu-id="f7c6f-123">メソッド</span><span class="sxs-lookup"><span data-stu-id="f7c6f-123">Method</span></span>           | <span data-ttu-id="f7c6f-124">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="f7c6f-124">Return Type</span></span>    |<span data-ttu-id="f7c6f-125">説明</span><span class="sxs-lookup"><span data-stu-id="f7c6f-125">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="25c3d-122">メソッド</span><span class="sxs-lookup"><span data-stu-id="25c3d-122">Methods</span></span>
+| <span data-ttu-id="25c3d-123">メソッド</span><span class="sxs-lookup"><span data-stu-id="25c3d-123">Method</span></span>           | <span data-ttu-id="25c3d-124">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="25c3d-124">Return Type</span></span>    |<span data-ttu-id="25c3d-125">説明</span><span class="sxs-lookup"><span data-stu-id="25c3d-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="f7c6f-126">リソース バイナリ データの取得</span><span class="sxs-lookup"><span data-stu-id="f7c6f-126">Get resource binary data</span></span>](../api/resource-get.md) | <span data-ttu-id="f7c6f-127">Stream</span><span class="sxs-lookup"><span data-stu-id="f7c6f-127">Stream</span></span> |<span data-ttu-id="f7c6f-128">ファイルまたはイメージ リソースのバイナリ データを取得します。</span><span class="sxs-lookup"><span data-stu-id="f7c6f-128">Retrieve the binary data of a file or image resource.</span></span>|
+|[<span data-ttu-id="25c3d-126">リソースバイナリデータの取得</span><span class="sxs-lookup"><span data-stu-id="25c3d-126">Get resource binary data</span></span>](../api/resource-get.md) | <span data-ttu-id="25c3d-127">Stream</span><span class="sxs-lookup"><span data-stu-id="25c3d-127">Stream</span></span> |<span data-ttu-id="25c3d-128">ファイルまたはイメージリソースのバイナリデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="25c3d-128">Retrieve the binary data of a file or image resource.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

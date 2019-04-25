@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a0a11e0d070cfa0faeb8048a44a3d75c036c12f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579889"
 ---
-# <a name="update-auditevent"></a><span data-ttu-id="44274-103">auditEvent の更新</span><span class="sxs-lookup"><span data-stu-id="44274-103">Update auditEvent</span></span>
+# <a name="update-auditevent"></a><span data-ttu-id="d035d-103">auditEvent の更新</span><span class="sxs-lookup"><span data-stu-id="d035d-103">Update auditEvent</span></span>
 
-> <span data-ttu-id="44274-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="44274-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d035d-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d035d-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="44274-105">[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="44274-105">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+<span data-ttu-id="d035d-105">[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="d035d-105">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="44274-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="44274-106">Prerequisites</span></span>
-<span data-ttu-id="44274-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44274-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d035d-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="d035d-106">Prerequisites</span></span>
+<span data-ttu-id="d035d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d035d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44274-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="44274-109">Permission type</span></span>|<span data-ttu-id="44274-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="44274-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d035d-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d035d-109">Permission type</span></span>|<span data-ttu-id="d035d-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d035d-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="44274-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="44274-111">Delegated (work or school account)</span></span>|<span data-ttu-id="44274-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44274-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="44274-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="44274-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="44274-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="44274-114">Not supported.</span></span>|
-|<span data-ttu-id="44274-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="44274-115">Application</span></span>|<span data-ttu-id="44274-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="44274-116">Not supported.</span></span>|
+|<span data-ttu-id="d035d-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d035d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d035d-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d035d-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="d035d-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d035d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d035d-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d035d-114">Not supported.</span></span>|
+|<span data-ttu-id="d035d-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d035d-115">Application</span></span>|<span data-ttu-id="d035d-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d035d-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="44274-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="44274-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d035d-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d035d-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,41 +35,41 @@ ms.locfileid: "30966237"
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="44274-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="44274-118">Request headers</span></span>
-|<span data-ttu-id="44274-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="44274-119">Header</span></span>|<span data-ttu-id="44274-120">値</span><span class="sxs-lookup"><span data-stu-id="44274-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d035d-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d035d-118">Request headers</span></span>
+|<span data-ttu-id="d035d-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d035d-119">Header</span></span>|<span data-ttu-id="d035d-120">値</span><span class="sxs-lookup"><span data-stu-id="d035d-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="44274-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="44274-121">Authorization</span></span>|<span data-ttu-id="44274-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="44274-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="44274-123">承諾</span><span class="sxs-lookup"><span data-stu-id="44274-123">Accept</span></span>|<span data-ttu-id="44274-124">application/json</span><span class="sxs-lookup"><span data-stu-id="44274-124">application/json</span></span>|
+|<span data-ttu-id="d035d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d035d-121">Authorization</span></span>|<span data-ttu-id="d035d-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="d035d-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d035d-123">承諾</span><span class="sxs-lookup"><span data-stu-id="d035d-123">Accept</span></span>|<span data-ttu-id="d035d-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d035d-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="44274-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="44274-125">Request body</span></span>
-<span data-ttu-id="44274-126">要求本文で、[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="44274-126">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d035d-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="d035d-125">Request body</span></span>
+<span data-ttu-id="d035d-126">要求本文で、[auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d035d-126">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-<span data-ttu-id="44274-127">次の表に、[auditEvent](../resources/intune-auditing-auditevent.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="44274-127">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
+<span data-ttu-id="d035d-127">次の表に、[auditEvent](../resources/intune-auditing-auditevent.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="d035d-127">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
 
-|<span data-ttu-id="44274-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="44274-128">Property</span></span>|<span data-ttu-id="44274-129">型</span><span class="sxs-lookup"><span data-stu-id="44274-129">Type</span></span>|<span data-ttu-id="44274-130">説明</span><span class="sxs-lookup"><span data-stu-id="44274-130">Description</span></span>|
+|<span data-ttu-id="d035d-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d035d-128">Property</span></span>|<span data-ttu-id="d035d-129">型</span><span class="sxs-lookup"><span data-stu-id="d035d-129">Type</span></span>|<span data-ttu-id="d035d-130">説明</span><span class="sxs-lookup"><span data-stu-id="d035d-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="44274-131">id</span><span class="sxs-lookup"><span data-stu-id="44274-131">id</span></span>|<span data-ttu-id="44274-132">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="44274-132">String</span></span>|<span data-ttu-id="44274-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="44274-133">Key of the entity.</span></span>|
-|<span data-ttu-id="44274-134">displayName</span><span class="sxs-lookup"><span data-stu-id="44274-134">displayName</span></span>|<span data-ttu-id="44274-135">String</span><span class="sxs-lookup"><span data-stu-id="44274-135">String</span></span>|<span data-ttu-id="44274-136">イベントの表示名。</span><span class="sxs-lookup"><span data-stu-id="44274-136">Event display name.</span></span>|
-|<span data-ttu-id="44274-137">componentName</span><span class="sxs-lookup"><span data-stu-id="44274-137">componentName</span></span>|<span data-ttu-id="44274-138">String</span><span class="sxs-lookup"><span data-stu-id="44274-138">String</span></span>|<span data-ttu-id="44274-139">コンポーネント名。</span><span class="sxs-lookup"><span data-stu-id="44274-139">Component name.</span></span>|
-|<span data-ttu-id="44274-140">actor</span><span class="sxs-lookup"><span data-stu-id="44274-140">actor</span></span>|[<span data-ttu-id="44274-141">auditActor</span><span class="sxs-lookup"><span data-stu-id="44274-141">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="44274-142">監査イベントに関連付けられている AAD ユーザーとアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="44274-142">AAD user and application that are associated with the audit event.</span></span>|
-|<span data-ttu-id="44274-143">activity</span><span class="sxs-lookup"><span data-stu-id="44274-143">activity</span></span>|<span data-ttu-id="44274-144">String</span><span class="sxs-lookup"><span data-stu-id="44274-144">String</span></span>|<span data-ttu-id="44274-145">わかりやすいアクティビティの名前。</span><span class="sxs-lookup"><span data-stu-id="44274-145">Friendly name of the activity.</span></span>|
-|<span data-ttu-id="44274-146">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="44274-146">activityDateTime</span></span>|<span data-ttu-id="44274-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44274-147">DateTimeOffset</span></span>|<span data-ttu-id="44274-148">アクティビティが実行された日時 (UTC)。</span><span class="sxs-lookup"><span data-stu-id="44274-148">The date time in UTC when the activity was performed.</span></span>|
-|<span data-ttu-id="44274-149">activityType</span><span class="sxs-lookup"><span data-stu-id="44274-149">activityType</span></span>|<span data-ttu-id="44274-150">String</span><span class="sxs-lookup"><span data-stu-id="44274-150">String</span></span>|<span data-ttu-id="44274-151">実行されたアクティビティの種類。</span><span class="sxs-lookup"><span data-stu-id="44274-151">The type of activity that was being performed.</span></span>|
-|<span data-ttu-id="44274-152">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="44274-152">activityOperationType</span></span>|<span data-ttu-id="44274-153">String</span><span class="sxs-lookup"><span data-stu-id="44274-153">String</span></span>|<span data-ttu-id="44274-154">アクティビティの HTTP 操作の種類。</span><span class="sxs-lookup"><span data-stu-id="44274-154">The HTTP operation type of the activity.</span></span>|
-|<span data-ttu-id="44274-155">activityResult</span><span class="sxs-lookup"><span data-stu-id="44274-155">activityResult</span></span>|<span data-ttu-id="44274-156">String</span><span class="sxs-lookup"><span data-stu-id="44274-156">String</span></span>|<span data-ttu-id="44274-157">アクティビティの結果。</span><span class="sxs-lookup"><span data-stu-id="44274-157">The result of the activity.</span></span>|
-|<span data-ttu-id="44274-158">correlationId</span><span class="sxs-lookup"><span data-stu-id="44274-158">correlationId</span></span>|<span data-ttu-id="44274-159">Guid</span><span class="sxs-lookup"><span data-stu-id="44274-159">Guid</span></span>|<span data-ttu-id="44274-160">システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。</span><span class="sxs-lookup"><span data-stu-id="44274-160">The client request Id that is used to correlate activity within the system.</span></span>|
-|<span data-ttu-id="44274-161">resources</span><span class="sxs-lookup"><span data-stu-id="44274-161">resources</span></span>|<span data-ttu-id="44274-162">[auditResource](../resources/intune-auditing-auditresource.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="44274-162">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="44274-163">変更中のリソースです。</span><span class="sxs-lookup"><span data-stu-id="44274-163">Resources being modified.</span></span>|
-|<span data-ttu-id="44274-164">category</span><span class="sxs-lookup"><span data-stu-id="44274-164">category</span></span>|<span data-ttu-id="44274-165">String</span><span class="sxs-lookup"><span data-stu-id="44274-165">String</span></span>|<span data-ttu-id="44274-166">監査のカテゴリです。</span><span class="sxs-lookup"><span data-stu-id="44274-166">Audit category.</span></span>|
+|<span data-ttu-id="d035d-131">id</span><span class="sxs-lookup"><span data-stu-id="d035d-131">id</span></span>|<span data-ttu-id="d035d-132">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="d035d-132">String</span></span>|<span data-ttu-id="d035d-133">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="d035d-133">Key of the entity.</span></span>|
+|<span data-ttu-id="d035d-134">displayName</span><span class="sxs-lookup"><span data-stu-id="d035d-134">displayName</span></span>|<span data-ttu-id="d035d-135">String</span><span class="sxs-lookup"><span data-stu-id="d035d-135">String</span></span>|<span data-ttu-id="d035d-136">イベントの表示名。</span><span class="sxs-lookup"><span data-stu-id="d035d-136">Event display name.</span></span>|
+|<span data-ttu-id="d035d-137">componentName</span><span class="sxs-lookup"><span data-stu-id="d035d-137">componentName</span></span>|<span data-ttu-id="d035d-138">String</span><span class="sxs-lookup"><span data-stu-id="d035d-138">String</span></span>|<span data-ttu-id="d035d-139">コンポーネント名。</span><span class="sxs-lookup"><span data-stu-id="d035d-139">Component name.</span></span>|
+|<span data-ttu-id="d035d-140">actor</span><span class="sxs-lookup"><span data-stu-id="d035d-140">actor</span></span>|[<span data-ttu-id="d035d-141">auditActor</span><span class="sxs-lookup"><span data-stu-id="d035d-141">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="d035d-142">監査イベントに関連付けられている AAD ユーザーとアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="d035d-142">AAD user and application that are associated with the audit event.</span></span>|
+|<span data-ttu-id="d035d-143">activity</span><span class="sxs-lookup"><span data-stu-id="d035d-143">activity</span></span>|<span data-ttu-id="d035d-144">String</span><span class="sxs-lookup"><span data-stu-id="d035d-144">String</span></span>|<span data-ttu-id="d035d-145">わかりやすいアクティビティの名前。</span><span class="sxs-lookup"><span data-stu-id="d035d-145">Friendly name of the activity.</span></span>|
+|<span data-ttu-id="d035d-146">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="d035d-146">activityDateTime</span></span>|<span data-ttu-id="d035d-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d035d-147">DateTimeOffset</span></span>|<span data-ttu-id="d035d-148">アクティビティが実行された日時 (UTC)。</span><span class="sxs-lookup"><span data-stu-id="d035d-148">The date time in UTC when the activity was performed.</span></span>|
+|<span data-ttu-id="d035d-149">activityType</span><span class="sxs-lookup"><span data-stu-id="d035d-149">activityType</span></span>|<span data-ttu-id="d035d-150">String</span><span class="sxs-lookup"><span data-stu-id="d035d-150">String</span></span>|<span data-ttu-id="d035d-151">実行されたアクティビティの種類。</span><span class="sxs-lookup"><span data-stu-id="d035d-151">The type of activity that was being performed.</span></span>|
+|<span data-ttu-id="d035d-152">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="d035d-152">activityOperationType</span></span>|<span data-ttu-id="d035d-153">String</span><span class="sxs-lookup"><span data-stu-id="d035d-153">String</span></span>|<span data-ttu-id="d035d-154">アクティビティの HTTP 操作の種類。</span><span class="sxs-lookup"><span data-stu-id="d035d-154">The HTTP operation type of the activity.</span></span>|
+|<span data-ttu-id="d035d-155">activityResult</span><span class="sxs-lookup"><span data-stu-id="d035d-155">activityResult</span></span>|<span data-ttu-id="d035d-156">String</span><span class="sxs-lookup"><span data-stu-id="d035d-156">String</span></span>|<span data-ttu-id="d035d-157">アクティビティの結果。</span><span class="sxs-lookup"><span data-stu-id="d035d-157">The result of the activity.</span></span>|
+|<span data-ttu-id="d035d-158">correlationId</span><span class="sxs-lookup"><span data-stu-id="d035d-158">correlationId</span></span>|<span data-ttu-id="d035d-159">Guid</span><span class="sxs-lookup"><span data-stu-id="d035d-159">Guid</span></span>|<span data-ttu-id="d035d-160">システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。</span><span class="sxs-lookup"><span data-stu-id="d035d-160">The client request Id that is used to correlate activity within the system.</span></span>|
+|<span data-ttu-id="d035d-161">resources</span><span class="sxs-lookup"><span data-stu-id="d035d-161">resources</span></span>|<span data-ttu-id="d035d-162">[auditResource](../resources/intune-auditing-auditresource.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="d035d-162">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="d035d-163">変更中のリソースです。</span><span class="sxs-lookup"><span data-stu-id="d035d-163">Resources being modified.</span></span>|
+|<span data-ttu-id="d035d-164">category</span><span class="sxs-lookup"><span data-stu-id="d035d-164">category</span></span>|<span data-ttu-id="d035d-165">String</span><span class="sxs-lookup"><span data-stu-id="d035d-165">String</span></span>|<span data-ttu-id="d035d-166">監査のカテゴリです。</span><span class="sxs-lookup"><span data-stu-id="d035d-166">Audit category.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="44274-167">応答</span><span class="sxs-lookup"><span data-stu-id="44274-167">Response</span></span>
-<span data-ttu-id="44274-168">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="44274-168">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d035d-167">応答</span><span class="sxs-lookup"><span data-stu-id="d035d-167">Response</span></span>
+<span data-ttu-id="d035d-168">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="d035d-168">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="44274-169">例</span><span class="sxs-lookup"><span data-stu-id="44274-169">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d035d-169">例</span><span class="sxs-lookup"><span data-stu-id="d035d-169">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="44274-170">要求</span><span class="sxs-lookup"><span data-stu-id="44274-170">Request</span></span>
-<span data-ttu-id="44274-171">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="44274-171">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d035d-170">要求</span><span class="sxs-lookup"><span data-stu-id="d035d-170">Request</span></span>
+<span data-ttu-id="d035d-171">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d035d-171">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
@@ -118,8 +118,8 @@ Content-length: 1390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="44274-172">応答</span><span class="sxs-lookup"><span data-stu-id="44274-172">Response</span></span>
-<span data-ttu-id="44274-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="44274-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d035d-172">応答</span><span class="sxs-lookup"><span data-stu-id="d035d-172">Response</span></span>
+<span data-ttu-id="d035d-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d035d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
