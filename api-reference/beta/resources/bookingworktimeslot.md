@@ -1,32 +1,32 @@
 ---
-title: bookingWorkTimeSlot リソースの種類
+title: bookingwork timesロットリソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a193843617d5acc7e18d8a06993a1629b80762be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543713"
 ---
-# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="b07c5-104">bookingWorkTimeSlot リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b07c5-104">bookingWorkTimeSlot resource type</span></span>
+# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="40b64-104">bookingwork timesロットリソースの種類</span><span class="sxs-lookup"><span data-stu-id="40b64-104">bookingWorkTimeSlot resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="b07c5-105">作業の開始と終了時間です。</span><span class="sxs-lookup"><span data-stu-id="b07c5-105">The start and end times for work.</span></span>
+<span data-ttu-id="40b64-105">作業の開始時刻と終了時刻。</span><span class="sxs-lookup"><span data-stu-id="40b64-105">The start and end times for work.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b07c5-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b07c5-106">Properties</span></span>
-| <span data-ttu-id="b07c5-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b07c5-107">Property</span></span>     | <span data-ttu-id="b07c5-108">型</span><span class="sxs-lookup"><span data-stu-id="b07c5-108">Type</span></span>   |<span data-ttu-id="b07c5-109">説明</span><span class="sxs-lookup"><span data-stu-id="b07c5-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="40b64-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="40b64-106">Properties</span></span>
+| <span data-ttu-id="40b64-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="40b64-107">Property</span></span>     | <span data-ttu-id="40b64-108">型</span><span class="sxs-lookup"><span data-stu-id="40b64-108">Type</span></span>   |<span data-ttu-id="40b64-109">説明</span><span class="sxs-lookup"><span data-stu-id="40b64-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b07c5-110">end</span><span class="sxs-lookup"><span data-stu-id="b07c5-110">end</span></span>|<span data-ttu-id="b07c5-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b07c5-111">TimeOfDay</span></span>|<span data-ttu-id="b07c5-112">起動時に動作する 1 日の時間。</span><span class="sxs-lookup"><span data-stu-id="b07c5-112">The time of the day that work starts.</span></span> <span data-ttu-id="b07c5-113">たとえば、08:00:00.0000000 です。</span><span class="sxs-lookup"><span data-stu-id="b07c5-113">For example, 08:00:00.0000000.</span></span>|
-|<span data-ttu-id="b07c5-114">開始</span><span class="sxs-lookup"><span data-stu-id="b07c5-114">start</span></span>|<span data-ttu-id="b07c5-115">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b07c5-115">TimeOfDay</span></span>|<span data-ttu-id="b07c5-116">1 日の時間が停止するを作業です。</span><span class="sxs-lookup"><span data-stu-id="b07c5-116">The time of the day that work stops.</span></span> <span data-ttu-id="b07c5-117">たとえば、17:00:00.0000000 です。</span><span class="sxs-lookup"><span data-stu-id="b07c5-117">For example, 17:00:00.0000000.</span></span>|
+|<span data-ttu-id="40b64-110">end</span><span class="sxs-lookup"><span data-stu-id="40b64-110">end</span></span>|<span data-ttu-id="40b64-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="40b64-111">TimeOfDay</span></span>|<span data-ttu-id="40b64-112">作業を開始する時刻。</span><span class="sxs-lookup"><span data-stu-id="40b64-112">The time of the day that work starts.</span></span> <span data-ttu-id="40b64-113">たとえば、08:00: 00.0000000 のようになります。</span><span class="sxs-lookup"><span data-stu-id="40b64-113">For example, 08:00:00.0000000.</span></span>|
+|<span data-ttu-id="40b64-114">開始</span><span class="sxs-lookup"><span data-stu-id="40b64-114">start</span></span>|<span data-ttu-id="40b64-115">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="40b64-115">TimeOfDay</span></span>|<span data-ttu-id="40b64-116">作業が停止する時間。</span><span class="sxs-lookup"><span data-stu-id="40b64-116">The time of the day that work stops.</span></span> <span data-ttu-id="40b64-117">たとえば、17:00: 00.0000000 となります。</span><span class="sxs-lookup"><span data-stu-id="40b64-117">For example, 17:00:00.0000000.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b07c5-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b07c5-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="40b64-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="40b64-118">JSON representation</span></span>
 
-<span data-ttu-id="b07c5-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b07c5-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="40b64-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40b64-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,53 +1,53 @@
 ---
-title: SynchronizationJob を削除します。
-description: 同期ジョブを停止し、それに関連付けられているすべての状態を完全に削除します。 同期されたアカウントのままには。
+title: 同期ジョブの削除
+description: 同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。 同期されたアカウントは、そのまま残ります。
 localization_priority: Normal
 ms.openlocfilehash: 29083413c5b24a5ed07b671adfa048f58d437f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545223"
 ---
-# <a name="delete-synchronizationjob"></a><span data-ttu-id="da104-104">SynchronizationJob を削除します。</span><span class="sxs-lookup"><span data-stu-id="da104-104">Delete synchronizationJob</span></span>
+# <a name="delete-synchronizationjob"></a><span data-ttu-id="d2a64-104">同期ジョブの削除</span><span class="sxs-lookup"><span data-stu-id="d2a64-104">Delete synchronizationJob</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da104-105">同期ジョブを停止し、それに関連付けられているすべての状態を完全に削除します。</span><span class="sxs-lookup"><span data-stu-id="da104-105">Stop the synchronization job, and permanently delete all the state associated with it.</span></span> <span data-ttu-id="da104-106">同期されたアカウントのままには。</span><span class="sxs-lookup"><span data-stu-id="da104-106">Synchronized accounts are left as-is.</span></span>
+<span data-ttu-id="d2a64-105">同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。</span><span class="sxs-lookup"><span data-stu-id="d2a64-105">Stop the synchronization job, and permanently delete all the state associated with it.</span></span> <span data-ttu-id="d2a64-106">同期されたアカウントは、そのまま残ります。</span><span class="sxs-lookup"><span data-stu-id="d2a64-106">Synchronized accounts are left as-is.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da104-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="da104-107">Permissions</span></span>
-<span data-ttu-id="da104-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="da104-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2a64-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d2a64-107">Permissions</span></span>
+<span data-ttu-id="d2a64-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d2a64-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da104-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="da104-110">Permission type</span></span>                        | <span data-ttu-id="da104-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="da104-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d2a64-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d2a64-110">Permission type</span></span>                        | <span data-ttu-id="d2a64-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d2a64-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da104-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="da104-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="da104-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da104-113">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="da104-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="da104-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="da104-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="da104-115">Not supported.</span></span>  |
-|<span data-ttu-id="da104-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="da104-116">Application</span></span>                            |<span data-ttu-id="da104-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="da104-117">Not supported.</span></span> | 
+|<span data-ttu-id="d2a64-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d2a64-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="d2a64-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2a64-113">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d2a64-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d2a64-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d2a64-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d2a64-115">Not supported.</span></span>  |
+|<span data-ttu-id="d2a64-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d2a64-116">Application</span></span>                            |<span data-ttu-id="d2a64-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d2a64-117">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="da104-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="da104-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2a64-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d2a64-118">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da104-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="da104-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d2a64-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2a64-119">Request headers</span></span>
 
-| <span data-ttu-id="da104-120">名前</span><span class="sxs-lookup"><span data-stu-id="da104-120">Name</span></span>           | <span data-ttu-id="da104-121">型</span><span class="sxs-lookup"><span data-stu-id="da104-121">Type</span></span>    | <span data-ttu-id="da104-122">説明</span><span class="sxs-lookup"><span data-stu-id="da104-122">Description</span></span>|
+| <span data-ttu-id="d2a64-120">名前</span><span class="sxs-lookup"><span data-stu-id="d2a64-120">Name</span></span>           | <span data-ttu-id="d2a64-121">型</span><span class="sxs-lookup"><span data-stu-id="d2a64-121">Type</span></span>    | <span data-ttu-id="d2a64-122">説明</span><span class="sxs-lookup"><span data-stu-id="d2a64-122">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="da104-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="da104-123">Authorization</span></span>  | <span data-ttu-id="da104-124">string</span><span class="sxs-lookup"><span data-stu-id="da104-124">string</span></span>  | <span data-ttu-id="da104-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="da104-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d2a64-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2a64-123">Authorization</span></span>  | <span data-ttu-id="d2a64-124">string</span><span class="sxs-lookup"><span data-stu-id="d2a64-124">string</span></span>  | <span data-ttu-id="d2a64-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d2a64-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da104-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="da104-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2a64-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="d2a64-127">Request body</span></span>
 
-<span data-ttu-id="da104-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="da104-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d2a64-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d2a64-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da104-129">応答</span><span class="sxs-lookup"><span data-stu-id="da104-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2a64-129">応答</span><span class="sxs-lookup"><span data-stu-id="d2a64-129">Response</span></span>
 
-<span data-ttu-id="da104-130">正常終了した場合、`204 No Content`応答します。</span><span class="sxs-lookup"><span data-stu-id="da104-130">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="da104-131">応答本体には何もは返されません。</span><span class="sxs-lookup"><span data-stu-id="da104-131">It does not return anything in the response body.</span></span>
+<span data-ttu-id="d2a64-130">成功した場合は`204 No Content` 、応答を返します。</span><span class="sxs-lookup"><span data-stu-id="d2a64-130">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="d2a64-131">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="d2a64-131">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da104-132">例</span><span class="sxs-lookup"><span data-stu-id="da104-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d2a64-132">例</span><span class="sxs-lookup"><span data-stu-id="d2a64-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="da104-133">要求</span><span class="sxs-lookup"><span data-stu-id="da104-133">Request</span></span>
-<span data-ttu-id="da104-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="da104-134">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d2a64-133">要求</span><span class="sxs-lookup"><span data-stu-id="d2a64-133">Request</span></span>
+<span data-ttu-id="d2a64-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d2a64-134">The following is an example of a request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_synchronizationjob"
@@ -56,8 +56,8 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 
-##### <a name="response"></a><span data-ttu-id="da104-135">応答</span><span class="sxs-lookup"><span data-stu-id="da104-135">Response</span></span>
-<span data-ttu-id="da104-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="da104-136">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d2a64-135">応答</span><span class="sxs-lookup"><span data-stu-id="d2a64-135">Response</span></span>
+<span data-ttu-id="d2a64-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d2a64-136">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

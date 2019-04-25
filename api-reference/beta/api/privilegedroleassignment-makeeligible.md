@@ -1,53 +1,53 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
-description: 対象となるように、役割の割り当てを確認します。 ロールの割り当ては、呼び出しの前に対象が既にいる場合は、何も行われません。 ロールの割り当ては、永続的なリクエスターは、ターゲットのユーザーと異なる場合は、ロールの割り当てができるようになり、ロールはターゲット ユーザーの非アクティブ化します。 リクエスターは、ターゲット ユーザーと役割は、セキュリティ管理者、またはロールの権限を持つ管理者を既定の有効期限を持つロールがアクティブになります。
+description: 役割の割り当てを対象として設定します。 呼び出し前に役割の割り当てが既に適用されている場合は、何も行われません。 役割の割り当てが永続的で、要求元がターゲットユーザーと異なる場合は、役割の割り当てが対象となり、その役割は対象ユーザーに対して無効になります。 リクエスターが対象ユーザーで、役割がセキュリティ管理者または特権の役割管理者である場合、役割は既定の有効期限を使用してアクティブ化されます。
 localization_priority: Normal
 ms.openlocfilehash: 54260da3f69819a1f7a351e072f8af851f0e3d3a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546599"
 ---
-# <a name="privilegedroleassignment-makeeligible"></a><span data-ttu-id="cab78-106">privilegedRoleAssignment: makeEligible</span><span class="sxs-lookup"><span data-stu-id="cab78-106">privilegedRoleAssignment: makeEligible</span></span>
+# <a name="privilegedroleassignment-makeeligible"></a><span data-ttu-id="257b2-106">privilegedRoleAssignment: makeEligible</span><span class="sxs-lookup"><span data-stu-id="257b2-106">privilegedRoleAssignment: makeEligible</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cab78-107">対象となるように、役割の割り当てを確認します。</span><span class="sxs-lookup"><span data-stu-id="cab78-107">Make the role assignment as eligible.</span></span> <span data-ttu-id="cab78-108">ロールの割り当ては、呼び出しの前に対象が既にいる場合は、何も行われません。</span><span class="sxs-lookup"><span data-stu-id="cab78-108">If the role assignment is already eligible before the call, it does nothing.</span></span> <span data-ttu-id="cab78-109">ロールの割り当ては、永続的なリクエスターは、ターゲットのユーザーと異なる場合は、ロールの割り当てができるようになり、ロールはターゲット ユーザーの非アクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="cab78-109">If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user.</span></span> <span data-ttu-id="cab78-110">リクエスターは、ターゲット ユーザーと役割は、セキュリティ管理者、またはロールの権限を持つ管理者を既定の有効期限を持つロールがアクティブになります。</span><span class="sxs-lookup"><span data-stu-id="cab78-110">If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.</span></span>
+<span data-ttu-id="257b2-107">役割の割り当てを対象として設定します。</span><span class="sxs-lookup"><span data-stu-id="257b2-107">Make the role assignment as eligible.</span></span> <span data-ttu-id="257b2-108">呼び出し前に役割の割り当てが既に適用されている場合は、何も行われません。</span><span class="sxs-lookup"><span data-stu-id="257b2-108">If the role assignment is already eligible before the call, it does nothing.</span></span> <span data-ttu-id="257b2-109">役割の割り当てが永続的で、要求元がターゲットユーザーと異なる場合は、役割の割り当てが対象となり、その役割は対象ユーザーに対して無効になります。</span><span class="sxs-lookup"><span data-stu-id="257b2-109">If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user.</span></span> <span data-ttu-id="257b2-110">リクエスターが対象ユーザーで、役割がセキュリティ管理者または特権の役割管理者である場合、役割は既定の有効期限を使用してアクティブ化されます。</span><span class="sxs-lookup"><span data-stu-id="257b2-110">If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cab78-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cab78-111">Permissions</span></span>
-<span data-ttu-id="cab78-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cab78-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="257b2-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="257b2-111">Permissions</span></span>
+<span data-ttu-id="257b2-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="257b2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="cab78-114">リクエスターでは、_ロールの権限を持つ管理者_のロールを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cab78-114">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
+<span data-ttu-id="257b2-114">リクエスターは、特権の_役割管理者_の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="257b2-114">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
 
-|<span data-ttu-id="cab78-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cab78-115">Permission type</span></span>      | <span data-ttu-id="cab78-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cab78-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="257b2-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="257b2-115">Permission type</span></span>      | <span data-ttu-id="257b2-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="257b2-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cab78-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cab78-117">Delegated (work or school account)</span></span> | <span data-ttu-id="cab78-118">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cab78-118">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cab78-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cab78-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cab78-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cab78-120">Not supported.</span></span>    |
-|<span data-ttu-id="cab78-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cab78-121">Application</span></span> | <span data-ttu-id="cab78-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cab78-122">Not supported.</span></span> |
+|<span data-ttu-id="257b2-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="257b2-117">Delegated (work or school account)</span></span> | <span data-ttu-id="257b2-118">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="257b2-118">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="257b2-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="257b2-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="257b2-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="257b2-120">Not supported.</span></span>    |
+|<span data-ttu-id="257b2-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="257b2-121">Application</span></span> | <span data-ttu-id="257b2-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="257b2-122">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cab78-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cab78-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="257b2-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="257b2-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments/{id}/makeEligible
 ```
-## <a name="request-headers"></a><span data-ttu-id="cab78-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cab78-124">Request headers</span></span>
-| <span data-ttu-id="cab78-125">名前</span><span class="sxs-lookup"><span data-stu-id="cab78-125">Name</span></span>       | <span data-ttu-id="cab78-126">説明</span><span class="sxs-lookup"><span data-stu-id="cab78-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="257b2-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="257b2-124">Request headers</span></span>
+| <span data-ttu-id="257b2-125">名前</span><span class="sxs-lookup"><span data-stu-id="257b2-125">Name</span></span>       | <span data-ttu-id="257b2-126">説明</span><span class="sxs-lookup"><span data-stu-id="257b2-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cab78-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="cab78-127">Authorization</span></span>  | <span data-ttu-id="cab78-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cab78-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="257b2-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="257b2-127">Authorization</span></span>  | <span data-ttu-id="257b2-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="257b2-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cab78-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="cab78-130">Request body</span></span>
-<span data-ttu-id="cab78-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cab78-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="257b2-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="257b2-130">Request body</span></span>
+<span data-ttu-id="257b2-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="257b2-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cab78-132">応答</span><span class="sxs-lookup"><span data-stu-id="cab78-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="257b2-132">応答</span><span class="sxs-lookup"><span data-stu-id="257b2-132">Response</span></span>
 
-<span data-ttu-id="cab78-133">かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[privilegedRoleAssignment](../resources/privilegedroleassignment.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="cab78-133">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="257b2-133">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="257b2-133">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-<span data-ttu-id="cab78-134">テナントの PIM を登録する必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cab78-134">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="cab78-135">それ以外の場合、HTTP 403 アクセス不可の状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="cab78-135">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="cab78-136">例</span><span class="sxs-lookup"><span data-stu-id="cab78-136">Example</span></span>
-<span data-ttu-id="cab78-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="cab78-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="cab78-138">要求</span><span class="sxs-lookup"><span data-stu-id="cab78-138">Request</span></span>
-<span data-ttu-id="cab78-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cab78-139">Here is an example of the request.</span></span>
+<span data-ttu-id="257b2-134">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="257b2-134">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="257b2-135">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="257b2-135">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="257b2-136">例</span><span class="sxs-lookup"><span data-stu-id="257b2-136">Example</span></span>
+<span data-ttu-id="257b2-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="257b2-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="257b2-138">要求</span><span class="sxs-lookup"><span data-stu-id="257b2-138">Request</span></span>
+<span data-ttu-id="257b2-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="257b2-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignment_makeeligible"
@@ -56,8 +56,8 @@ POST /privilegedRoleAssignments/{id}/makeEligible
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligible
 ```
 
-##### <a name="response"></a><span data-ttu-id="cab78-140">応答</span><span class="sxs-lookup"><span data-stu-id="cab78-140">Response</span></span>
-<span data-ttu-id="cab78-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cab78-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="257b2-140">応答</span><span class="sxs-lookup"><span data-stu-id="257b2-140">Response</span></span>
+<span data-ttu-id="257b2-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="257b2-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

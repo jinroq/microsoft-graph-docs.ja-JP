@@ -1,30 +1,30 @@
 ---
 title: educationIdentityDomain リソースの種類
-description: '教育のユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインのリソースは、ユーザー作成の構成の一部です。 '
+description: '教育ユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。 ドメインリソースは、id 作成構成の一部です。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c6004d18897b8f8284c06a3b09830072148df87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543117"
 ---
-# <a name="educationidentitydomain-resource-type"></a><span data-ttu-id="8ee7d-104">educationIdentityDomain リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8ee7d-104">educationIdentityDomain resource type</span></span>
+# <a name="educationidentitydomain-resource-type"></a><span data-ttu-id="90b53-104">educationIdentityDomain リソースの種類</span><span class="sxs-lookup"><span data-stu-id="90b53-104">educationIdentityDomain resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8ee7d-105">教育のユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。</span><span class="sxs-lookup"><span data-stu-id="8ee7d-105">Represents the mapping between an education user type and the domain the user's account belongs to.</span></span> <span data-ttu-id="8ee7d-106">ドメインのリソースは、[作成時の id の構成](educationidentitycreationconfiguration.md)の一部です。</span><span class="sxs-lookup"><span data-stu-id="8ee7d-106">The domain resource is part of the [identity creation configuration](educationidentitycreationconfiguration.md).</span></span> 
+<span data-ttu-id="90b53-105">教育ユーザーの種類とユーザーのアカウントが属するドメインとの間のマッピングを表します。</span><span class="sxs-lookup"><span data-stu-id="90b53-105">Represents the mapping between an education user type and the domain the user's account belongs to.</span></span> <span data-ttu-id="90b53-106">ドメインリソースは、 [id 作成構成](educationidentitycreationconfiguration.md)の一部です。</span><span class="sxs-lookup"><span data-stu-id="90b53-106">The domain resource is part of the [identity creation configuration](educationidentitycreationconfiguration.md).</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="8ee7d-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8ee7d-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="90b53-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="90b53-107">Properties</span></span>
 
-| <span data-ttu-id="8ee7d-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8ee7d-108">Property</span></span> | <span data-ttu-id="8ee7d-109">型</span><span class="sxs-lookup"><span data-stu-id="8ee7d-109">Type</span></span> | <span data-ttu-id="8ee7d-110">説明</span><span class="sxs-lookup"><span data-stu-id="8ee7d-110">Description</span></span> |
+| <span data-ttu-id="90b53-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="90b53-108">Property</span></span> | <span data-ttu-id="90b53-109">型</span><span class="sxs-lookup"><span data-stu-id="90b53-109">Type</span></span> | <span data-ttu-id="90b53-110">説明</span><span class="sxs-lookup"><span data-stu-id="90b53-110">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="8ee7d-111">appliesTo</span><span class="sxs-lookup"><span data-stu-id="8ee7d-111">**appliesTo**</span></span> | <span data-ttu-id="8ee7d-112">string</span><span class="sxs-lookup"><span data-stu-id="8ee7d-112">string</span></span> |  <span data-ttu-id="8ee7d-113">ライセンスを割り当てるにはユーザーのロールの種類です。</span><span class="sxs-lookup"><span data-stu-id="8ee7d-113">The user role type to assign to license.</span></span> <span data-ttu-id="8ee7d-114">使用可能な値は、`student`、`teacher` です。</span><span class="sxs-lookup"><span data-stu-id="8ee7d-114">Possible values are: `student`, `teacher`.</span></span>      |
-| <span data-ttu-id="8ee7d-115">**name**</span><span class="sxs-lookup"><span data-stu-id="8ee7d-115">**name**</span></span> | <span data-ttu-id="8ee7d-116">string</span><span class="sxs-lookup"><span data-stu-id="8ee7d-116">string</span></span> |  <span data-ttu-id="8ee7d-117">ユーザー アカウントのドメインを表します。</span><span class="sxs-lookup"><span data-stu-id="8ee7d-117">Represents the domain for the user account.</span></span>         |
+| <span data-ttu-id="90b53-111">**appliesTo**</span><span class="sxs-lookup"><span data-stu-id="90b53-111">**appliesTo**</span></span> | <span data-ttu-id="90b53-112">string</span><span class="sxs-lookup"><span data-stu-id="90b53-112">string</span></span> |  <span data-ttu-id="90b53-113">ライセンスに割り当てるユーザーの役割の種類。</span><span class="sxs-lookup"><span data-stu-id="90b53-113">The user role type to assign to license.</span></span> <span data-ttu-id="90b53-114">可能な値は、`student`、`teacher` です。</span><span class="sxs-lookup"><span data-stu-id="90b53-114">Possible values are: `student`, `teacher`.</span></span>      |
+| <span data-ttu-id="90b53-115">**name**</span><span class="sxs-lookup"><span data-stu-id="90b53-115">**name**</span></span> | <span data-ttu-id="90b53-116">string</span><span class="sxs-lookup"><span data-stu-id="90b53-116">string</span></span> |  <span data-ttu-id="90b53-117">ユーザーアカウントのドメインを表します。</span><span class="sxs-lookup"><span data-stu-id="90b53-117">Represents the domain for the user account.</span></span>         |
 
-## <a name="json-representation"></a><span data-ttu-id="8ee7d-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8ee7d-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="90b53-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="90b53-118">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
