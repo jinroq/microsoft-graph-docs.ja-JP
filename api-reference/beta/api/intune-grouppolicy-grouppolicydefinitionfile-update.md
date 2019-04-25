@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 040b484a5e4f959fd6e4bbd35f2f08e66910d30c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32531461"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>grouppolicydefinitionfile の更新
 
@@ -52,10 +52,10 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
-|説明|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
-|languageCodes|String コレクション|ADMX ファイルでサポートされている言語コード。|
-|targetprefix|文字列|ADMX ファイル内の名前空間を参照する論理名を指定します。|
-|targetNamespace|文字列|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
+|description|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
+|languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
+|targetprefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
+|targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
 |msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|

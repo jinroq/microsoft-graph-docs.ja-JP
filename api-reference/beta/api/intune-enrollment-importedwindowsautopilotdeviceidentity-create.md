@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774765"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532724"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
@@ -53,9 +53,9 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
-|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
+|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|のようにします。|文字列|Windows 自動操縦デバイスのインポート Id。|
+|のようにします。|String|Windows 自動操縦デバイスのインポート Id。|
 |hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 

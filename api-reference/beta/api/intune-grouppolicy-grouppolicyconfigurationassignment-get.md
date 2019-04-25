@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fbf3a894cdd084f743d8cf33c45d8a8b2358a40d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532003"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>grouppolicyconfigurationassignment の取得
 

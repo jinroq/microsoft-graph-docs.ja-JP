@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c1fe0f7195007eaf937b1d6d82b20f1978136559
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805776"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532549"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>windowsAutopilotDeviceIdentity を作成する
 
@@ -55,22 +55,22 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |deploymentprofileの状態|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows 自動操縦デバイスのプロファイル割り当て状態。 可能な値は、`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed` です。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当て Windows 自動操縦デバイスの詳細な状態。 可能な値は、`none`、`hardwareRequirementsNotMet` です。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|プロファイル Windows 自動操縦デバイスの時間を設定します。|
-|orderIdentifier|文字列|Windows 自動操縦デバイスの注文識別子-非推奨|
-|grouptag|文字列|Windows 自動操縦デバイスのグループタグ。|
-|purchaseOrderIdentifier|文字列|Windows 自動操縦デバイスの注文 id。|
-|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
+|orderIdentifier|String|Windows 自動操縦デバイスの注文識別子-非推奨|
+|grouptag|String|Windows 自動操縦デバイスのグループタグ。|
+|purchaseOrderIdentifier|String|Windows 自動操縦デバイスの注文 id。|
+|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|manufacturer|文字列|Windows 自動操縦デバイスの Oem メーカー。|
-|model|文字列|Windows 自動操縦デバイスのモデル名です。|
+|manufacturer|String|Windows 自動操縦デバイスの Oem メーカー。|
+|model|String|Windows 自動操縦デバイスのモデル名です。|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自動操縦デバイスの Intune 登録状態。 可能な値は `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked` です。|
 |lastContactedDateTime|DateTimeOffset|Intune 前回の接続 Windows 自動操縦デバイスの日時。|
-|addressableusername|文字列|アドレス指定可能なユーザー名。|
+|addressableusername|String|アドレス指定可能なユーザー名。|
 |userPrincipalName|String|ユーザープリンシパル名。|
 |resourceName|String|リソース名。|
-|skuNumber|文字列|SKU 番号|
-|systemfamily|文字列|システムファミリ|
-|azureActiveDirectoryDeviceId|文字列|AAD デバイス ID|
-|manageddeviceid|文字列|管理対象デバイス ID|
+|skuNumber|String|SKU 番号|
+|systemfamily|String|システムファミリ|
+|azureActiveDirectoryDeviceId|String|AAD デバイス ID|
+|manageddeviceid|String|管理対象デバイス ID|
 
 
 
