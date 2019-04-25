@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 040b484a5e4f959fd6e4bbd35f2f08e66910d30c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32531461"
 ---
-# <a name="update-grouppolicydefinitionfile"></a><span data-ttu-id="bfb12-103">grouppolicydefinitionfile の更新</span><span class="sxs-lookup"><span data-stu-id="bfb12-103">Update groupPolicyDefinitionFile</span></span>
+# <a name="update-grouppolicydefinitionfile"></a><span data-ttu-id="1eaef-103">grouppolicydefinitionfile の更新</span><span class="sxs-lookup"><span data-stu-id="1eaef-103">Update groupPolicyDefinitionFile</span></span>
 
-> <span data-ttu-id="bfb12-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bfb12-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1eaef-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1eaef-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bfb12-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="bfb12-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1eaef-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1eaef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bfb12-106">[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-106">Update the properties of a [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object.</span></span>
+<span data-ttu-id="1eaef-106">[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-106">Update the properties of a [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bfb12-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="bfb12-107">Prerequisites</span></span>
-<span data-ttu-id="bfb12-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bfb12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1eaef-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="1eaef-107">Prerequisites</span></span>
+<span data-ttu-id="1eaef-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1eaef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bfb12-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bfb12-110">Permission type</span></span>|<span data-ttu-id="bfb12-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="bfb12-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1eaef-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1eaef-110">Permission type</span></span>|<span data-ttu-id="1eaef-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1eaef-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bfb12-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bfb12-112">Delegated (work or school account)</span></span>|<span data-ttu-id="bfb12-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bfb12-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="bfb12-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bfb12-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bfb12-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bfb12-115">Not supported.</span></span>|
-|<span data-ttu-id="bfb12-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bfb12-116">Application</span></span>|<span data-ttu-id="bfb12-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bfb12-117">Not supported.</span></span>|
+|<span data-ttu-id="1eaef-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1eaef-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1eaef-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1eaef-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="1eaef-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1eaef-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1eaef-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1eaef-115">Not supported.</span></span>|
+|<span data-ttu-id="1eaef-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1eaef-116">Application</span></span>|<span data-ttu-id="1eaef-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1eaef-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bfb12-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bfb12-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1eaef-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1eaef-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,37 +38,37 @@ PATCH /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bfb12-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bfb12-119">Request headers</span></span>
-|<span data-ttu-id="bfb12-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bfb12-120">Header</span></span>|<span data-ttu-id="bfb12-121">値</span><span class="sxs-lookup"><span data-stu-id="bfb12-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1eaef-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1eaef-119">Request headers</span></span>
+|<span data-ttu-id="1eaef-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1eaef-120">Header</span></span>|<span data-ttu-id="1eaef-121">値</span><span class="sxs-lookup"><span data-stu-id="1eaef-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bfb12-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfb12-122">Authorization</span></span>|<span data-ttu-id="bfb12-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="bfb12-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bfb12-124">承諾</span><span class="sxs-lookup"><span data-stu-id="bfb12-124">Accept</span></span>|<span data-ttu-id="bfb12-125">application/json</span><span class="sxs-lookup"><span data-stu-id="bfb12-125">application/json</span></span>|
+|<span data-ttu-id="1eaef-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1eaef-122">Authorization</span></span>|<span data-ttu-id="1eaef-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="1eaef-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1eaef-124">承諾</span><span class="sxs-lookup"><span data-stu-id="1eaef-124">Accept</span></span>|<span data-ttu-id="1eaef-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1eaef-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bfb12-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="bfb12-126">Request body</span></span>
-<span data-ttu-id="bfb12-127">要求本文で、 [grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-127">In the request body, supply a JSON representation for the [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1eaef-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="1eaef-126">Request body</span></span>
+<span data-ttu-id="1eaef-127">要求本文で、 [grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-127">In the request body, supply a JSON representation for the [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object.</span></span>
 
-<span data-ttu-id="bfb12-128">次の表に、 [grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-128">The following table shows the properties that are required when you create the [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).</span></span>
+<span data-ttu-id="1eaef-128">次の表に、 [grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-128">The following table shows the properties that are required when you create the [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).</span></span>
 
-|<span data-ttu-id="bfb12-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bfb12-129">Property</span></span>|<span data-ttu-id="bfb12-130">型</span><span class="sxs-lookup"><span data-stu-id="bfb12-130">Type</span></span>|<span data-ttu-id="bfb12-131">説明</span><span class="sxs-lookup"><span data-stu-id="bfb12-131">Description</span></span>|
+|<span data-ttu-id="1eaef-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1eaef-129">Property</span></span>|<span data-ttu-id="1eaef-130">型</span><span class="sxs-lookup"><span data-stu-id="1eaef-130">Type</span></span>|<span data-ttu-id="1eaef-131">説明</span><span class="sxs-lookup"><span data-stu-id="1eaef-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bfb12-132">displayName</span><span class="sxs-lookup"><span data-stu-id="bfb12-132">displayName</span></span>|<span data-ttu-id="bfb12-133">String</span><span class="sxs-lookup"><span data-stu-id="bfb12-133">String</span></span>|<span data-ttu-id="bfb12-134">ADMX ファイルのローカライズされたフレンドリ名。</span><span class="sxs-lookup"><span data-stu-id="bfb12-134">The localized friendly name of the ADMX file.</span></span>|
-|<span data-ttu-id="bfb12-135">説明</span><span class="sxs-lookup"><span data-stu-id="bfb12-135">description</span></span>|<span data-ttu-id="bfb12-136">String</span><span class="sxs-lookup"><span data-stu-id="bfb12-136">String</span></span>|<span data-ttu-id="bfb12-137">ADMX ファイルのポリシー設定のローカライズされた説明。</span><span class="sxs-lookup"><span data-stu-id="bfb12-137">The localized description of the policy settings in the ADMX file.</span></span> <span data-ttu-id="bfb12-138">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="bfb12-138">The default value is empty.</span></span>|
-|<span data-ttu-id="bfb12-139">languageCodes</span><span class="sxs-lookup"><span data-stu-id="bfb12-139">languageCodes</span></span>|<span data-ttu-id="bfb12-140">String コレクション</span><span class="sxs-lookup"><span data-stu-id="bfb12-140">String collection</span></span>|<span data-ttu-id="bfb12-141">ADMX ファイルでサポートされている言語コード。</span><span class="sxs-lookup"><span data-stu-id="bfb12-141">The supported language codes for the ADMX file.</span></span>|
-|<span data-ttu-id="bfb12-142">targetprefix</span><span class="sxs-lookup"><span data-stu-id="bfb12-142">targetPrefix</span></span>|<span data-ttu-id="bfb12-143">文字列</span><span class="sxs-lookup"><span data-stu-id="bfb12-143">String</span></span>|<span data-ttu-id="bfb12-144">ADMX ファイル内の名前空間を参照する論理名を指定します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-144">Specifies the logical name that refers to the namespace within the ADMX file.</span></span>|
-|<span data-ttu-id="bfb12-145">targetNamespace</span><span class="sxs-lookup"><span data-stu-id="bfb12-145">targetNamespace</span></span>|<span data-ttu-id="bfb12-146">文字列</span><span class="sxs-lookup"><span data-stu-id="bfb12-146">String</span></span>|<span data-ttu-id="bfb12-147">ADMX ファイル内の名前空間を識別するために使用する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-147">Specifies the URI used to identify the namespace within the ADMX file.</span></span>|
-|<span data-ttu-id="bfb12-148">msrtcsip-policytype</span><span class="sxs-lookup"><span data-stu-id="bfb12-148">policyType</span></span>|[<span data-ttu-id="bfb12-149">groupPolicyType</span><span class="sxs-lookup"><span data-stu-id="bfb12-149">groupPolicyType</span></span>](../resources/intune-grouppolicy-grouppolicytype.md)|<span data-ttu-id="bfb12-150">グループポリシーの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-150">Specifies the type of group policy.</span></span> <span data-ttu-id="bfb12-151">可能な値は、`admxBacked`、`admxIngested` です。</span><span class="sxs-lookup"><span data-stu-id="bfb12-151">Possible values are: `admxBacked`, `admxIngested`.</span></span>|
-|<span data-ttu-id="bfb12-152">id</span><span class="sxs-lookup"><span data-stu-id="bfb12-152">id</span></span>|<span data-ttu-id="bfb12-153">String</span><span class="sxs-lookup"><span data-stu-id="bfb12-153">String</span></span>|<span data-ttu-id="bfb12-154">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="bfb12-154">Key of the entity.</span></span>|
-|<span data-ttu-id="bfb12-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="bfb12-155">lastModifiedDateTime</span></span>|<span data-ttu-id="bfb12-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bfb12-156">DateTimeOffset</span></span>|<span data-ttu-id="bfb12-157">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="bfb12-157">The date and time the entity was last modified.</span></span>|
+|<span data-ttu-id="1eaef-132">displayName</span><span class="sxs-lookup"><span data-stu-id="1eaef-132">displayName</span></span>|<span data-ttu-id="1eaef-133">String</span><span class="sxs-lookup"><span data-stu-id="1eaef-133">String</span></span>|<span data-ttu-id="1eaef-134">ADMX ファイルのローカライズされたフレンドリ名。</span><span class="sxs-lookup"><span data-stu-id="1eaef-134">The localized friendly name of the ADMX file.</span></span>|
+|<span data-ttu-id="1eaef-135">description</span><span class="sxs-lookup"><span data-stu-id="1eaef-135">description</span></span>|<span data-ttu-id="1eaef-136">String</span><span class="sxs-lookup"><span data-stu-id="1eaef-136">String</span></span>|<span data-ttu-id="1eaef-137">ADMX ファイルのポリシー設定のローカライズされた説明。</span><span class="sxs-lookup"><span data-stu-id="1eaef-137">The localized description of the policy settings in the ADMX file.</span></span> <span data-ttu-id="1eaef-138">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="1eaef-138">The default value is empty.</span></span>|
+|<span data-ttu-id="1eaef-139">languageCodes</span><span class="sxs-lookup"><span data-stu-id="1eaef-139">languageCodes</span></span>|<span data-ttu-id="1eaef-140">String collection</span><span class="sxs-lookup"><span data-stu-id="1eaef-140">String collection</span></span>|<span data-ttu-id="1eaef-141">ADMX ファイルでサポートされている言語コード。</span><span class="sxs-lookup"><span data-stu-id="1eaef-141">The supported language codes for the ADMX file.</span></span>|
+|<span data-ttu-id="1eaef-142">targetprefix</span><span class="sxs-lookup"><span data-stu-id="1eaef-142">targetPrefix</span></span>|<span data-ttu-id="1eaef-143">String</span><span class="sxs-lookup"><span data-stu-id="1eaef-143">String</span></span>|<span data-ttu-id="1eaef-144">ADMX ファイル内の名前空間を参照する論理名を指定します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-144">Specifies the logical name that refers to the namespace within the ADMX file.</span></span>|
+|<span data-ttu-id="1eaef-145">targetNamespace</span><span class="sxs-lookup"><span data-stu-id="1eaef-145">targetNamespace</span></span>|<span data-ttu-id="1eaef-146">String</span><span class="sxs-lookup"><span data-stu-id="1eaef-146">String</span></span>|<span data-ttu-id="1eaef-147">ADMX ファイル内の名前空間を識別するために使用する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-147">Specifies the URI used to identify the namespace within the ADMX file.</span></span>|
+|<span data-ttu-id="1eaef-148">msrtcsip-policytype</span><span class="sxs-lookup"><span data-stu-id="1eaef-148">policyType</span></span>|[<span data-ttu-id="1eaef-149">groupPolicyType</span><span class="sxs-lookup"><span data-stu-id="1eaef-149">groupPolicyType</span></span>](../resources/intune-grouppolicy-grouppolicytype.md)|<span data-ttu-id="1eaef-150">グループポリシーの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-150">Specifies the type of group policy.</span></span> <span data-ttu-id="1eaef-151">可能な値は、`admxBacked`、`admxIngested` です。</span><span class="sxs-lookup"><span data-stu-id="1eaef-151">Possible values are: `admxBacked`, `admxIngested`.</span></span>|
+|<span data-ttu-id="1eaef-152">id</span><span class="sxs-lookup"><span data-stu-id="1eaef-152">id</span></span>|<span data-ttu-id="1eaef-153">String</span><span class="sxs-lookup"><span data-stu-id="1eaef-153">String</span></span>|<span data-ttu-id="1eaef-154">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="1eaef-154">Key of the entity.</span></span>|
+|<span data-ttu-id="1eaef-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1eaef-155">lastModifiedDateTime</span></span>|<span data-ttu-id="1eaef-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1eaef-156">DateTimeOffset</span></span>|<span data-ttu-id="1eaef-157">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="1eaef-157">The date and time the entity was last modified.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="bfb12-158">応答</span><span class="sxs-lookup"><span data-stu-id="bfb12-158">Response</span></span>
-<span data-ttu-id="bfb12-159">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bfb12-159">If successful, this method returns a `200 OK` response code and an updated [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1eaef-158">応答</span><span class="sxs-lookup"><span data-stu-id="1eaef-158">Response</span></span>
+<span data-ttu-id="1eaef-159">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1eaef-159">If successful, this method returns a `200 OK` response code and an updated [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bfb12-160">例</span><span class="sxs-lookup"><span data-stu-id="bfb12-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1eaef-160">例</span><span class="sxs-lookup"><span data-stu-id="1eaef-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bfb12-161">要求</span><span class="sxs-lookup"><span data-stu-id="bfb12-161">Request</span></span>
-<span data-ttu-id="bfb12-162">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="bfb12-162">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1eaef-161">要求</span><span class="sxs-lookup"><span data-stu-id="1eaef-161">Request</span></span>
+<span data-ttu-id="1eaef-162">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1eaef-162">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 325
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bfb12-163">応答</span><span class="sxs-lookup"><span data-stu-id="bfb12-163">Response</span></span>
-<span data-ttu-id="bfb12-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="bfb12-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1eaef-163">応答</span><span class="sxs-lookup"><span data-stu-id="1eaef-163">Response</span></span>
+<span data-ttu-id="1eaef-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1eaef-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
