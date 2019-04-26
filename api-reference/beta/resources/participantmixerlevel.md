@@ -1,34 +1,34 @@
 ---
 title: participantMixerLevel リソースの種類
-description: 特定の参加者のオーディオのをレベルをミキサーの設定
+description: 特定の音声参加者のミキサーレベルの構成
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568609"
 ---
-# <a name="participantmixerlevel-resource-type"></a><span data-ttu-id="43498-103">participantMixerLevel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="43498-103">participantMixerLevel resource type</span></span>
+# <a name="participantmixerlevel-resource-type"></a><span data-ttu-id="77549-103">participantMixerLevel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="77549-103">participantMixerLevel resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="43498-104">特定の参加者のオーディオのをレベルをミキサーの設定</span><span class="sxs-lookup"><span data-stu-id="43498-104">Configuration of mixer levels for given audio participant</span></span>
+<span data-ttu-id="77549-104">特定の音声参加者のミキサーレベルの構成</span><span class="sxs-lookup"><span data-stu-id="77549-104">Configuration of mixer levels for given audio participant</span></span>
 
-## <a name="properties"></a><span data-ttu-id="43498-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="43498-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="77549-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="77549-105">Properties</span></span>
 
-| <span data-ttu-id="43498-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="43498-106">Property</span></span>               | <span data-ttu-id="43498-107">型</span><span class="sxs-lookup"><span data-stu-id="43498-107">Type</span></span>                                                      | <span data-ttu-id="43498-108">説明</span><span class="sxs-lookup"><span data-stu-id="43498-108">Description</span></span>                                                                                         |
+| <span data-ttu-id="77549-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="77549-106">Property</span></span>               | <span data-ttu-id="77549-107">型</span><span class="sxs-lookup"><span data-stu-id="77549-107">Type</span></span>                                                      | <span data-ttu-id="77549-108">説明</span><span class="sxs-lookup"><span data-stu-id="77549-108">Description</span></span>                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="43498-109">ダック</span><span class="sxs-lookup"><span data-stu-id="43498-109">ducking</span></span>                | [<span data-ttu-id="43498-110">audioDuckingConfiguration</span><span class="sxs-lookup"><span data-stu-id="43498-110">audioDuckingConfiguration</span></span>](audioduckingconfiguration.md) | <span data-ttu-id="43498-111">ダック (段階的に導入と出力) のこの partipant の他のソースのカスタム ミックスの構成です。</span><span class="sxs-lookup"><span data-stu-id="43498-111">Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.</span></span>       |
-| <span data-ttu-id="43498-112">exclusiveMode</span><span class="sxs-lookup"><span data-stu-id="43498-112">exclusiveMode</span></span>          | <span data-ttu-id="43498-113">ブール値</span><span class="sxs-lookup"><span data-stu-id="43498-113">boolean</span></span>                                                   | <span data-ttu-id="43498-114">かどうか、ミックスから明示的なソース レベルのないソースを削除してください。</span><span class="sxs-lookup"><span data-stu-id="43498-114">Whether sources without explicit source level should be removed from the mix.</span></span>                       |
-| <span data-ttu-id="43498-115">参加者</span><span class="sxs-lookup"><span data-stu-id="43498-115">participant</span></span>            | <span data-ttu-id="43498-116">String</span><span class="sxs-lookup"><span data-stu-id="43498-116">String</span></span>                                                    | <span data-ttu-id="43498-117">ミキサーが構成されている構成要素です。</span><span class="sxs-lookup"><span data-stu-id="43498-117">The participant for whom the mixer is being configured.</span></span>                                             |
-| <span data-ttu-id="43498-118">sourceLevels</span><span class="sxs-lookup"><span data-stu-id="43498-118">sourceLevels</span></span>           | <span data-ttu-id="43498-119">[audioSourceLevel](audiosourcelevel.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="43498-119">[audioSourceLevel](audiosourcelevel.md) collection</span></span>        | <span data-ttu-id="43498-120">その他のソース レベルの構成。</span><span class="sxs-lookup"><span data-stu-id="43498-120">Level configuration for other sources.</span></span>                                                              |
+| <span data-ttu-id="77549-109">ducking</span><span class="sxs-lookup"><span data-stu-id="77549-109">ducking</span></span>                | [<span data-ttu-id="77549-110">audioアヒルの構成</span><span class="sxs-lookup"><span data-stu-id="77549-110">audioDuckingConfiguration</span></span>](audioduckingconfiguration.md) | <span data-ttu-id="77549-111">この partipant カスタムミックスの他のソースの ducking (段階的なインとアウト) の構成。</span><span class="sxs-lookup"><span data-stu-id="77549-111">Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.</span></span>       |
+| <span data-ttu-id="77549-112">exclusiveMode</span><span class="sxs-lookup"><span data-stu-id="77549-112">exclusiveMode</span></span>          | <span data-ttu-id="77549-113">ブール値</span><span class="sxs-lookup"><span data-stu-id="77549-113">boolean</span></span>                                                   | <span data-ttu-id="77549-114">明示的なソースレベルを持たないソースをミックスから削除する必要があるかどうか。</span><span class="sxs-lookup"><span data-stu-id="77549-114">Whether sources without explicit source level should be removed from the mix.</span></span>                       |
+| <span data-ttu-id="77549-115">積極的</span><span class="sxs-lookup"><span data-stu-id="77549-115">participant</span></span>            | <span data-ttu-id="77549-116">String</span><span class="sxs-lookup"><span data-stu-id="77549-116">String</span></span>                                                    | <span data-ttu-id="77549-117">ミキサーを構成する参加者。</span><span class="sxs-lookup"><span data-stu-id="77549-117">The participant for whom the mixer is being configured.</span></span>                                             |
+| <span data-ttu-id="77549-118">sourceLevels</span><span class="sxs-lookup"><span data-stu-id="77549-118">sourceLevels</span></span>           | <span data-ttu-id="77549-119">[audioSourceLevel](audiosourcelevel.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="77549-119">[audioSourceLevel](audiosourcelevel.md) collection</span></span>        | <span data-ttu-id="77549-120">他のソースのレベルの構成。</span><span class="sxs-lookup"><span data-stu-id="77549-120">Level configuration for other sources.</span></span>                                                              |
 
-## <a name="json-representation"></a><span data-ttu-id="43498-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="43498-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="77549-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="77549-121">JSON representation</span></span>
 
-<span data-ttu-id="43498-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="43498-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="77549-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="77549-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -46,7 +46,7 @@ ms.locfileid: "29643833"
 }
 ```
 
-## <a name="example---mixer-level"></a><span data-ttu-id="43498-123">ミキサー レベルの使用例</span><span class="sxs-lookup"><span data-stu-id="43498-123">Example - Mixer level</span></span>
+## <a name="example---mixer-level"></a><span data-ttu-id="77549-123">例-ミキサーレベル</span><span class="sxs-lookup"><span data-stu-id="77549-123">Example - Mixer level</span></span>
 
 <!-- {
   "blockType": "example",

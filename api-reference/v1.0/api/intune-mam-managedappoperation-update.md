@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52ff91c1db2d20a484b7bf1f8bde282007ea9485
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570968"
 ---
-# <a name="update-managedappoperation"></a><span data-ttu-id="7b1af-103">managedAppOperation の更新</span><span class="sxs-lookup"><span data-stu-id="7b1af-103">Update managedAppOperation</span></span>
+# <a name="update-managedappoperation"></a><span data-ttu-id="25fdc-103">managedAppOperation の更新</span><span class="sxs-lookup"><span data-stu-id="25fdc-103">Update managedAppOperation</span></span>
 
-> <span data-ttu-id="7b1af-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7b1af-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="25fdc-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="25fdc-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7b1af-105">[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="7b1af-105">Update the properties of a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
+<span data-ttu-id="25fdc-105">[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="25fdc-105">Update the properties of a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7b1af-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="7b1af-106">Prerequisites</span></span>
-<span data-ttu-id="7b1af-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b1af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="25fdc-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="25fdc-106">Prerequisites</span></span>
+<span data-ttu-id="25fdc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="25fdc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7b1af-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7b1af-109">Permission type</span></span>|<span data-ttu-id="7b1af-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="7b1af-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="25fdc-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="25fdc-109">Permission type</span></span>|<span data-ttu-id="25fdc-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="25fdc-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7b1af-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7b1af-111">Delegated (work or school account)</span></span>|<span data-ttu-id="7b1af-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b1af-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="7b1af-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7b1af-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7b1af-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7b1af-114">Not supported.</span></span>|
-|<span data-ttu-id="7b1af-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7b1af-115">Application</span></span>|<span data-ttu-id="7b1af-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7b1af-116">Not supported.</span></span>|
+|<span data-ttu-id="25fdc-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="25fdc-111">Delegated (work or school account)</span></span>|<span data-ttu-id="25fdc-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25fdc-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="25fdc-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="25fdc-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="25fdc-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="25fdc-114">Not supported.</span></span>|
+|<span data-ttu-id="25fdc-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="25fdc-115">Application</span></span>|<span data-ttu-id="25fdc-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="25fdc-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7b1af-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7b1af-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25fdc-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="25fdc-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,34 +35,34 @@ ms.locfileid: "30978473"
 PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7b1af-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7b1af-118">Request headers</span></span>
-|<span data-ttu-id="7b1af-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7b1af-119">Header</span></span>|<span data-ttu-id="7b1af-120">値</span><span class="sxs-lookup"><span data-stu-id="7b1af-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="25fdc-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="25fdc-118">Request headers</span></span>
+|<span data-ttu-id="25fdc-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="25fdc-119">Header</span></span>|<span data-ttu-id="25fdc-120">値</span><span class="sxs-lookup"><span data-stu-id="25fdc-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7b1af-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b1af-121">Authorization</span></span>|<span data-ttu-id="7b1af-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="7b1af-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7b1af-123">承諾</span><span class="sxs-lookup"><span data-stu-id="7b1af-123">Accept</span></span>|<span data-ttu-id="7b1af-124">application/json</span><span class="sxs-lookup"><span data-stu-id="7b1af-124">application/json</span></span>|
+|<span data-ttu-id="25fdc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="25fdc-121">Authorization</span></span>|<span data-ttu-id="25fdc-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="25fdc-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="25fdc-123">承諾</span><span class="sxs-lookup"><span data-stu-id="25fdc-123">Accept</span></span>|<span data-ttu-id="25fdc-124">application/json</span><span class="sxs-lookup"><span data-stu-id="25fdc-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7b1af-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="7b1af-125">Request body</span></span>
-<span data-ttu-id="7b1af-126">要求本文で、[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7b1af-126">In the request body, supply a JSON representation for the [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="25fdc-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="25fdc-125">Request body</span></span>
+<span data-ttu-id="25fdc-126">要求本文で、[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="25fdc-126">In the request body, supply a JSON representation for the [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
 
-<span data-ttu-id="7b1af-127">次の表に、[managedAppOperation](../resources/intune-mam-managedappoperation.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="7b1af-127">The following table shows the properties that are required when you create the [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
+<span data-ttu-id="25fdc-127">次の表に、[managedAppOperation](../resources/intune-mam-managedappoperation.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="25fdc-127">The following table shows the properties that are required when you create the [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
 
-|<span data-ttu-id="7b1af-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b1af-128">Property</span></span>|<span data-ttu-id="7b1af-129">型</span><span class="sxs-lookup"><span data-stu-id="7b1af-129">Type</span></span>|<span data-ttu-id="7b1af-130">説明</span><span class="sxs-lookup"><span data-stu-id="7b1af-130">Description</span></span>|
+|<span data-ttu-id="25fdc-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="25fdc-128">Property</span></span>|<span data-ttu-id="25fdc-129">型</span><span class="sxs-lookup"><span data-stu-id="25fdc-129">Type</span></span>|<span data-ttu-id="25fdc-130">説明</span><span class="sxs-lookup"><span data-stu-id="25fdc-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7b1af-131">displayName</span><span class="sxs-lookup"><span data-stu-id="7b1af-131">displayName</span></span>|<span data-ttu-id="7b1af-132">String</span><span class="sxs-lookup"><span data-stu-id="7b1af-132">String</span></span>|<span data-ttu-id="7b1af-133">操作名。</span><span class="sxs-lookup"><span data-stu-id="7b1af-133">The operation name.</span></span>|
-|<span data-ttu-id="7b1af-134">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7b1af-134">lastModifiedDateTime</span></span>|<span data-ttu-id="7b1af-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7b1af-135">DateTimeOffset</span></span>|<span data-ttu-id="7b1af-136">アプリ操作が変更された最終時刻。</span><span class="sxs-lookup"><span data-stu-id="7b1af-136">The last time the app operation was modified.</span></span>|
-|<span data-ttu-id="7b1af-137">state</span><span class="sxs-lookup"><span data-stu-id="7b1af-137">state</span></span>|<span data-ttu-id="7b1af-138">String</span><span class="sxs-lookup"><span data-stu-id="7b1af-138">String</span></span>|<span data-ttu-id="7b1af-139">操作の現在の状態。</span><span class="sxs-lookup"><span data-stu-id="7b1af-139">The current state of the operation</span></span>|
-|<span data-ttu-id="7b1af-140">id</span><span class="sxs-lookup"><span data-stu-id="7b1af-140">id</span></span>|<span data-ttu-id="7b1af-141">String</span><span class="sxs-lookup"><span data-stu-id="7b1af-141">String</span></span>|<span data-ttu-id="7b1af-142">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="7b1af-142">Key of the entity.</span></span>|
-|<span data-ttu-id="7b1af-143">version</span><span class="sxs-lookup"><span data-stu-id="7b1af-143">version</span></span>|<span data-ttu-id="7b1af-144">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="7b1af-144">String</span></span>|<span data-ttu-id="7b1af-145">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="7b1af-145">Version of the entity.</span></span>|
+|<span data-ttu-id="25fdc-131">displayName</span><span class="sxs-lookup"><span data-stu-id="25fdc-131">displayName</span></span>|<span data-ttu-id="25fdc-132">String</span><span class="sxs-lookup"><span data-stu-id="25fdc-132">String</span></span>|<span data-ttu-id="25fdc-133">操作名。</span><span class="sxs-lookup"><span data-stu-id="25fdc-133">The operation name.</span></span>|
+|<span data-ttu-id="25fdc-134">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="25fdc-134">lastModifiedDateTime</span></span>|<span data-ttu-id="25fdc-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="25fdc-135">DateTimeOffset</span></span>|<span data-ttu-id="25fdc-136">アプリ操作が変更された最終時刻。</span><span class="sxs-lookup"><span data-stu-id="25fdc-136">The last time the app operation was modified.</span></span>|
+|<span data-ttu-id="25fdc-137">state</span><span class="sxs-lookup"><span data-stu-id="25fdc-137">state</span></span>|<span data-ttu-id="25fdc-138">String</span><span class="sxs-lookup"><span data-stu-id="25fdc-138">String</span></span>|<span data-ttu-id="25fdc-139">操作の現在の状態。</span><span class="sxs-lookup"><span data-stu-id="25fdc-139">The current state of the operation</span></span>|
+|<span data-ttu-id="25fdc-140">id</span><span class="sxs-lookup"><span data-stu-id="25fdc-140">id</span></span>|<span data-ttu-id="25fdc-141">String</span><span class="sxs-lookup"><span data-stu-id="25fdc-141">String</span></span>|<span data-ttu-id="25fdc-142">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="25fdc-142">Key of the entity.</span></span>|
+|<span data-ttu-id="25fdc-143">version</span><span class="sxs-lookup"><span data-stu-id="25fdc-143">version</span></span>|<span data-ttu-id="25fdc-144">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="25fdc-144">String</span></span>|<span data-ttu-id="25fdc-145">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="25fdc-145">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7b1af-146">応答</span><span class="sxs-lookup"><span data-stu-id="7b1af-146">Response</span></span>
-<span data-ttu-id="7b1af-147">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7b1af-147">If successful, this method returns a `200 OK` response code and an updated [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="25fdc-146">応答</span><span class="sxs-lookup"><span data-stu-id="25fdc-146">Response</span></span>
+<span data-ttu-id="25fdc-147">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="25fdc-147">If successful, this method returns a `200 OK` response code and an updated [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7b1af-148">例</span><span class="sxs-lookup"><span data-stu-id="7b1af-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25fdc-148">例</span><span class="sxs-lookup"><span data-stu-id="25fdc-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7b1af-149">要求</span><span class="sxs-lookup"><span data-stu-id="7b1af-149">Request</span></span>
-<span data-ttu-id="7b1af-150">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7b1af-150">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="25fdc-149">要求</span><span class="sxs-lookup"><span data-stu-id="25fdc-149">Request</span></span>
+<span data-ttu-id="25fdc-150">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="25fdc-150">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 159
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7b1af-151">応答</span><span class="sxs-lookup"><span data-stu-id="7b1af-151">Response</span></span>
-<span data-ttu-id="7b1af-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7b1af-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="25fdc-151">応答</span><span class="sxs-lookup"><span data-stu-id="25fdc-151">Response</span></span>
+<span data-ttu-id="25fdc-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="25fdc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
