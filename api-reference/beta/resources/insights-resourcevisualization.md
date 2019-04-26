@@ -4,23 +4,29 @@ description: Insights のプロパティを含む複合型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550738"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333567"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourcevisualization リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Insights](insights.md)のプロパティを含む複合型。
+[insights](officegraphinsights.md)のプロパティを含む複合型。
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
   "title": "string",
@@ -57,7 +63,7 @@ ms.locfileid: "32550738"
 -   InfoPath
 -   Visio
 -   Publisher
--   プロジェクト
+-   Project
 -   Access
 -   メール
 -   .csv
@@ -77,21 +83,13 @@ ms.locfileid: "32550738"
 クエリの例:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>containerType プロパティの値
-サポートされている種類は、[洞察](insights.md)がファイルを返すコンテナーによって異なる場合があります。 たとえば、[共有](insights-shared.md)された洞察のみが、' DropBox '、' Box '、' gdrive ' からファイルを返します。
+サポートされている種類は、 [officegraphinsights](officegraphinsights.md)がファイルを返すコンテナーによって異なる場合があります。 たとえば、"DropBox"、"Box"、および "gdrive" からファイルを取得するのは、 [sharepoint](insights-shared.md)のファイルです。
 
 -   onedrive business
--   サイト
+-   Site
 -   メール
 -   DropBox
 -   検索ボックス
 -   gdrive
 
 クエリの例:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -2,12 +2,12 @@
 title: recurrenceRange リソースの種類
 description: '定期的なイベントを繰り返す期間について説明します。 '
 localization_priority: Normal
-ms.openlocfilehash: cee5a06d8f76264cd7c98924c532c8f864cab87d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f20d8b134f4b1e0f338b615dd3129a17d585ca94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563108"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343893"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32563108"
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|endDate|Date|定期的なパターンの適用を停止する日付。 イベントの定期的なパターンによっては、最後に会議が発生するのは、この日付にならない可能性があります。 **type** が `endDate` の場合、必要です。|
+|endDate|日付|定期的なパターンの適用を停止する日付。 イベントの定期的なパターンによっては、最後に会議が発生するのは、この日付にならない可能性があります。 **type** が `endDate` の場合、必要です。|
 |numberOfOccurrences|Int32|イベントを繰り返す回数を指定します。 必須です。**type** が `numbered` の場合、正の値である必要があります。|
 |recurrenceTimeZone|String |**startDate** プロパティと **endDate** プロパティのタイム ゾーン。 省略可能。 指定されていない場合は、イベントのタイム ゾーンが使用されます。|
 |startDate|Date|定期的なパターンの適用を開始する日付。 イベントの定期的なパターンによっては、最初に会議が発生するのは、この日付以降になる場合があります。 定期的な[イベント](event.md)の **start** プロパティと同じ値である必要があります。 必須。|
@@ -69,8 +69,7 @@ ms.locfileid: "32563108"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |",
-    "Error: /api-reference/beta/resources/recurrencerange.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ]
 }
 -->

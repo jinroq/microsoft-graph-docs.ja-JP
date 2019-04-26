@@ -2,12 +2,12 @@
 title: privilegedOperationEvent リソースの種類
 description: 管理者が特権のある役割を管理する、ユーザーが自分の役割をアクティブにし、ユーザーがその役割を非アクティブ化するなどの役割操作について特権 id 管理によって生成される監査イベントを表します。
 localization_priority: Normal
-ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7a7cdb31289dc0cdd31c843d18138676d518eb3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563679"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344288"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "32563679"
 |additionalinformation|string|イベントに関する人の詳細な読み取り情報。|
 |日付/時刻 (datetime)|dateTimeOffset|イベントが作成された時刻を示します。|
 |expirationDateTime|dateTimeOffset|これは、requestType が "Activate" の場合にのみ使用され、役割のアクティブ化の有効期限を示します。|
-|id|string|privilegedOperationEvent の一意識別子。 読み取り専用。|
+|id|string|privilegedOperationEvent の一意識別子。 読み取り専用です。|
 |referencekey|string|ロールライセンス認証時のインシデント/要求チケット番号。 この値は、ロールのライセンス認証時にチケット番号が提供されている場合にのみ表示されます。|
 |referenceSystem|string|tole アクティブ化の間に提供されたインシデント/要求のチケットのシステム。 この値は、チケットシステムが役割のライセンス認証時に提供された場合にのみ表示されます。|
 |requestType|string|要求操作の種類。 requestType の値は、( ```Assign```役割の割り当て)、 ```Activate``` ```Unassign``` (役割のアクティブ化)、(役割の割り当て```Deactivate```の削除)、( ```ScanAlersNow```役割の非アクティブ化) ```DismissAlert``` 、(スキャンセキュリティの警告```FixAlertItem``` )、(セキュリティの警告を無視する) の各値にすることができます (セキュリティを修正します)。アラートの問題) ```AccessReview_Review``` 、(アクセスレビューを確認する```AccessReview_Create``` )、(アクセスレビューを更新```AccessReview_Update```する)、(アクセスレビューを削除```AccessReview_Delete```する) を参照してください。|
@@ -41,7 +41,7 @@ ms.locfileid: "32563679"
 |usermail|string|ユーザーの電子メール。|
 |userName|string|ユーザーの表示名。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -71,7 +71,9 @@ ms.locfileid: "32563679"
   "tenantId": "string",
   "userId": "string",
   "userMail": "string",
-  "userName": "string"
+  "userName": "string",
+  "referenceKey": "string",
+  "referenceSystem": "string"
 }
 
 ```
@@ -85,8 +87,6 @@ ms.locfileid: "32563679"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedoperationevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

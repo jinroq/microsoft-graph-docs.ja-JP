@@ -4,12 +4,12 @@ description: スケジュール内のメンバーの論理グループ (通常�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 644a9492e47979241ccab3f0e69eb90407eb2647
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb8ed65991d87780b6250841df8bdbdb089b7992
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562953"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343463"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "32562953"
 | UserIds       | `collection(string)`    |  `schedulingGroup` のメンバーであるユーザー ID のリスト。 必須。 |
 | createdDateTime       |`DateTimeOffset`        |この `schedulingGroup` が最初に作成されたときのタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |この `schedulingGroup` の最終更新日のタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |この `schedulingGroup` を最後に更新した ID。|
+| lastModifiedBy        | [identitySet](identityset.md) |この `schedulingGroup` を最後に更新した ID。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -45,29 +45,19 @@ ms.locfileid: "32562953"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.schedulingGroup",
+  "baseType": "microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
-  "createdDateTime": "2019-03-12T22:10:38.242Z",
-  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-  "displayName": "Cashiers",
+  "id": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
   "isActive": true,
-  "userIds": [
-    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-  ],
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "userIds": ["String (identifier)"],
+  "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
 }
 ```
 
@@ -81,8 +71,6 @@ ms.locfileid: "32562953"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedulinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

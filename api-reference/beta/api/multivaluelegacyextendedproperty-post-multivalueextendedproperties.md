@@ -2,12 +2,12 @@
 title: 複数値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fdf3b1a53bfc07623463015eb734382fede698d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540361"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338349"
 ---
 # <a name="create-multi-value-extended-property"></a>複数値の拡張プロパティを作成する
 
@@ -22,7 +22,7 @@ ms.locfileid: "32540361"
 - [contactFolder](../resources/contactfolder.md) 
 - [イベント](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [メッセージ](../resources/message.md)
+- [message](../resources/message.md)
 - [Outlook タスク](../resources/outlooktask.md)
 - [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
@@ -43,12 +43,12 @@ ms.locfileid: "32540361"
 | [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
-| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
-| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | サポート対象外 |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | サポートされていません |
 | [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | 非サポート |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -277,9 +277,7 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 
