@@ -4,12 +4,12 @@ description: Azure AD access レビュー機能で、新しい accessreview オ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 669b11a8f3b52e867d6b3e803c9419968924928b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 16ce9861e77db27e216913bb3e7cb5bfbbf202b0
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456823"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299592"
 ---
 # <a name="create-accessreview"></a>accessreview を作成する
 
@@ -26,9 +26,12 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | programcontrol を使用して、次の方法でプログラムを完全に実行することにより、プログラムを作成することができます。 |
+|委任 (職場または学校のアカウント)     | accessreview すべて |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
+
+また、呼び出し元は、アクセスレビューを作成した後、プログラムの[制御](../resources/programcontrol.md)を作成できるようにするために、プログラムによる制御が必要になります。
+さらに、サインインしているユーザーも、アクセスレビューを作成することを許可するディレクトリロールにある必要があります。  詳細については、「[アクセスレビュー](../resources/accessreviews-root.md)の役割とアクセス許可の要件」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -57,6 +60,8 @@ POST /accessReviews
 
 
 指定した reviewerType に値`delegated`がある場合は、レビュー担当者にも`reviewers`プロパティが含まれている必要があります。これには、レビューアーの[useridentity](../resources/useridentity.md)のコレクションが含まれています。
+
+アプリが、サインインしているユーザーなしでこの API を呼び出している場合は、発信者にも**createdBy**プロパティが含まれている必要があります。この値は、レビューの作成者として識別されるユーザーの[useridentity](../resources/useridentity.md)です。
 
 また、呼び出し元には、定期的なレビューのシリーズを作成したり、既定のレビュー動作から変更したりするための設定を含めることができます。 特に、定期的なレビューを作成するには、呼び出し元`accessReviewRecurrenceSettings`に、アクセスレビュー設定内にを含める必要があります。
 
@@ -150,8 +155,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

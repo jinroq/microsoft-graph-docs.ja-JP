@@ -3,11 +3,11 @@ title: recurrencePattern リソースの種類
 description: 定期的なイベントを繰り返す頻度について説明します。
 localization_priority: Normal
 ms.openlocfilehash: 4798ce7fc33fd6dec7aec1b8c333ae66c917e373
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512263"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563034"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "29512263"
 |daysOfWeek|String collection|イベントが発生する曜日のコレクションです。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
 |firstDayOfWeek|String|週の最初の曜日。 使用可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
 |index|String|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 使用可能な値は、`first`、`second`、`third`、`fourth`、`last` です。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
-|interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須。 |
+|interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須です。 |
 |month|Int32|イベントが発生する月。  これは、1 から 12 までの数字です。|
 |type|String|定期的なパターンの種類は、`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly`、`relativeYearly` です。 必須。|
 
@@ -76,8 +76,6 @@ ms.locfileid: "29512263"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recurrencepattern.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

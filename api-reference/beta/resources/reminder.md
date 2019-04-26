@@ -1,30 +1,30 @@
 ---
 title: アラーム リソースの種類
-description: ユーザーの予定表でイベントを通知します。
+description: ユーザーの予定表のイベントのアラーム。
 localization_priority: Normal
 ms.openlocfilehash: 88d9cb4f30f60819a606b3b1f3573d16860d9a00
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521034"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563165"
 ---
 # <a name="reminder-resource-type"></a>アラーム リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー[の予定表](calendar.md)の[イベント](event.md)を通知します。
+ユーザーの[予定表](calendar.md)の[イベント](event.md)のアラーム。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|アラームのバージョンを識別します。アラームを変更するたびに **changeKey** も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|eventEndTime|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。|
-|eventId|String|イベントの一意の ID。読み取り専用です。|
-|eventLocation|[Location](location.md)|イベントの場所。|
-|eventStartTime|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
-|eventSubject|String|イベントの件名行のテキスト。|
-|eventWebLink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Web 上の Outlook のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
+|eventendtime|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。|
+|イベント|String|イベントの一意の ID。読み取り専用です。|
+|eventlocation|[Location](location.md)|イベントの場所。|
+|eventstarttime|[DateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
+|eventsubject|String|イベントの件名行のテキスト。|
+|eventweblink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Web 上の Outlook のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|アラームの発生を設定する日付、時刻、タイムゾーン。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -62,8 +62,6 @@ ms.locfileid: "29521034"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/reminder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

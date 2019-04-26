@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 840a28595e1ce812368d2e7907ce56eee88245df
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562259"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>deviceManangementIntentValueType 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31799133"
 |メンバー|値|説明|
 |:---|:---|:---|
 |整数|.0|設定値は整数です。|
-|ブール値|1-d|設定値はブール型 (boolean) です。|
-|string|pbm-2|設定値は文字列です。|
-|複合的|1/3|設定値は複雑なオブジェクトです。|
-|コレクション|2/4|設定値はコレクションです。|
-|abstractComplex|5|設定値は抽象型の複雑なオブジェクトです。|
+|ブール値|1 |設定値はブール型 (boolean) です。|
+|string|2 |設定値は文字列です。|
+|複合的|3 |設定値は複雑なオブジェクトです。|
+|コレクション|4 |設定値はコレクションです。|
+|abstractComplex|5 |設定値は抽象型の複雑なオブジェクトです。|
 
 
 

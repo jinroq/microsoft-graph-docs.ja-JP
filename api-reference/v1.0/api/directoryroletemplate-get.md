@@ -1,19 +1,21 @@
 ---
 title: directoryRoleTemplate を取得する
-description: directoryroletemplate オブジェクトのプロパティとリレーションシップを取得します。
+description: directoryroletemplate オブジェクトのプロパティと関係を取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d66cf5f4d8784eeee5d4f84dd4eaa3616bafa5a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922607"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562427"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate を取得する
 
-directoryroletemplate オブジェクトのプロパティとリレーションシップを取得します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+directoryroletemplate オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -32,7 +34,7 @@ GET /directoryRoleTemplates/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -50,7 +52,7 @@ GET /directoryRoleTemplates/{id}
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -73,10 +75,13 @@ Content-length: 98
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

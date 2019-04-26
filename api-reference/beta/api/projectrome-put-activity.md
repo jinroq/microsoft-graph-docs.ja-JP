@@ -12,6 +12,8 @@ ms.locfileid: "32538485"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、 [deep insert](#example-2-deep-insert)を使用できます。
 
 ## <a name="permissions"></a>アクセス許可
@@ -62,7 +64,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -83,7 +85,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": false
+      "addImageQuery": "false"
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -111,7 +113,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -174,7 +176,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -228,7 +230,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -292,10 +294,13 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

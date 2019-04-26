@@ -1,27 +1,27 @@
 ---
-title: mediaPrompt リソースの種類
-description: MediaPrompt 型です。
+title: mediaprompt リソースの種類
+description: mediaprompt の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b87af39d6d6ac4879aba44573b920a43d4f92145
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562596"
 ---
-# <a name="mediaprompt-resource-type"></a>mediaPrompt リソースの種類
+# <a name="mediaprompt-resource-type"></a>mediaprompt リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaPrompt 型です。
+mediaprompt の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ    | 型                      | 説明                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| Loop        | Int32                     | ループ カウントです。 値 0 は、無限にループすることを示します。 既定値は、 `1`。 |
+| for        | Int32                     | ループカウント。 0は無限にループすることを示します。 既定値は `1` です。 |
 | mediaInfo   | [mediaInfo](mediainfo.md) | メディア情報                                                           |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -68,8 +68,6 @@ MediaPrompt 型です。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediaprompt.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

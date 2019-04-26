@@ -1,38 +1,38 @@
 ---
-title: 'Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには '
-description: 'ローマのプロジェクトは、アプリケーション開発者は、デバイス間の優れたエクスペリエンスを構築できるプラットフォームを構築するのにはマイクロソフトの方針です。 ローマのプロジェクトは、同じ Microsoft を使用してユーザーがサインイン アカウントの機能、またはアカウントの学校とは、さまざまなサービスとクライアントのエンドポイントを接続する別の機能を有効にします。 これにより、デバイスではなく、ユーザーの作業の中心は、デバイス間およびプラットフォーム間でのエクスペリエンスを実装することができます。 '
+title: 'Microsoft Graph API を使用してプロジェクトローマを操作する '
+description: 'プロジェクトローマは、アプリ開発者が強力なクロスデバイスエクスペリエンスを構築できるようにするプラットフォームを構築するための Microsoft イニシアティブです。 プロジェクトローマは、ユーザーが同じ Microsoft アカウントまたは職場または学校のアカウントでサインインしたときに、さまざまなサービスとクライアントエンドポイントを接続するさまざまな機能を有効にします。 これにより、デバイスではなくユーザーのタスクを中心としたクロスデバイスとクロスプラットフォームのエクスペリエンスを実装できます。 '
 localization_priority: Normal
 ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563395"
 ---
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには 
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft Graph API を使用してプロジェクトローマを操作する 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ローマのプロジェクト](https://developer.microsoft.com/en-us/windows/project-rome)は、アプリケーション開発者は、デバイス間の優れたエクスペリエンスを構築できるプラットフォームを構築するのにはマイクロソフトの方針です。 ローマのプロジェクトは、同じ Microsoft を使用してユーザーがサインイン アカウントの機能、またはアカウントの学校とは、さまざまなサービスとクライアントのエンドポイントを接続する別の機能を有効にします。 これにより、デバイスではなく、ユーザーの作業の中心は、デバイス間およびプラットフォーム間でのエクスペリエンスを実装することができます。 
+[プロジェクトローマ](https://developer.microsoft.com/en-us/windows/project-rome)は、アプリ開発者が強力なクロスデバイスエクスペリエンスを構築できるようにするプラットフォームを構築するための Microsoft イニシアティブです。 プロジェクトローマは、ユーザーが同じ Microsoft アカウントまたは職場または学校のアカウントでサインインしたときに、さまざまなサービスとクライアントエンドポイントを接続するさまざまな機能を有効にします。 これにより、デバイスではなくユーザーのタスクを中心としたクロスデバイスとクロスプラットフォームのエクスペリエンスを実装できます。 
 
-3 つの主要なローマのプロジェクト機能は、デバイス間のすばらしい経験を有効にするための Microsoft Graph では公開: 活動、デバイス、および通知します。 
+Microsoft Graph では、主に3つの主要なプロジェクトローマ機能が提供されています。これにより、大量のクロスデバイスエクスペリエンスを有効にすることができます。アクティビティ、デバイス、および通知。 
 
-## <a name="activities"></a>アクティビティ
+## <a name="activities"></a>活アクティビティ
 
-Graph での活動、アプリを使用してドライブのユーザーの活動をデバイスやプラットフォーム間で、できます。 活動は、ユーザーの契約のユニットであるため、3 つのコンポーネントで構成されています。
+Microsoft Graph のアクティビティを使用すると、デバイスやプラットフォームを越えてユーザーがアプリを使用できるようになります。 アクティビティはユーザー契約の単位であり、3つのコンポーネントで構成されます。
 
-- 緊密なリンク
-- 視覚的に表現
-- 活動の内容を説明するコンテンツのメタデータを使用して、[https://schema.org/](https://schema.org/)のボキャブラリを共有
+- ディープリンク
+- 視覚的な表現
+- [https://schema.org/](https://schema.org/)共有ボキャブラリを使用して、アクティビティを記述するコンテンツメタデータ
 
-アプリケーションによってセッションが作成されると、ユーザーの活動の期間を反映するようにアクティビティを履歴項目が追加されます。 ユーザーは、アクティビティに reengages、たびに、新しい履歴項目がユーザーの活動を見越計上するアクティビティに追加されます。
+アプリケーションによってセッションが作成されると、ユーザーの活動期間を反映するために履歴項目がアクティビティに追加されます。 ユーザーがアクティビティを再実行するたびに、新しい履歴アイテムが、[見越計上] ユーザー契約のアクティビティに追加されます。
 
-アプリケーションは、ユーザーのアクティビティ オブジェクトを公開して、ときにオブジェクトが表示されますいくつかの新しい UI の外観になります。たとえば、Cortana の通知をクリックします。 アクティビティ オブジェクトでは、豊富なメタデータを (適切なコンテキストで表示するアクティビティを許可する) と ([アダプティブ ・ カード](https://adaptivecards.io/)のマークアップを使用して)、豊富なビジュアルの両方を指定できます。
+アプリケーションがユーザーアクティビティオブジェクトを公開すると、そのオブジェクトが Windows の新しい UI サーフェスの一部に表示されます。たとえば、Cortana の通知とタイムラインです。 アクティビティオブジェクトでは、リッチメタデータ (アクティビティを正しいコンテキストで表示できるようにする) とリッチビジュアル ([アダプティブカード](https://adaptivecards.io/)マークアップを使用) の両方を指定できます。
 
-作成し、ユーザーのアクティビティを取得するのには次の Microsoft グラフ Api を使用できます。
+ユーザーアクティビティを作成および取得するには、次の Microsoft Graph api を使用できます。
 
-- [活動の作成または](../api/projectrome-put-activity.md)
-- [アクティビティを取得します。](../api/projectrome-get-activities.md)
+- [アクティビティを作成または置換する](../api/projectrome-put-activity.md)
+- [アクティビティを取得する](../api/projectrome-get-activities.md)
 - [最近のアクティビティを取得する](../api/projectrome-get-recent-activities.md)
 - [アクティビティを削除する](../api/projectrome-delete-activity.md)
 - [履歴項目を作成または置換する](../api/projectrome-put-historyitem.md)
@@ -40,33 +40,25 @@ Graph での活動、アプリを使用してドライブのユーザーの活�
 
 ## <a name="devices"></a>デバイス
 
-Microsoft Graph では、プロジェクト ローマの Api を使用することができます。
+Microsoft Graph では、次のように Project ローマ api を使用できます。
 
-- 検出し、ユーザーのデバイスへの接続
-- これらのデバイスにアプリケーションをリモートで起動します。
-- それらのデバイスのアプリケーションにメッセージを送信します。
+- ユーザーのデバイスを検出して接続する
+- これらのデバイスでアプリをリモートで起動する
+- これらのデバイス上のアプリにメッセージを送信する
 
-これらの api では、1 つのデバイスを越える豊富なエクスペリエンスを作成するアプリケーションを構築できます。 たとえば、大きな画面で起動するアプリケーションを拡張できます。 または別のユーザーのデバイスのアプリのコンパニオンの経験を作成できます。
+これらの api を使用して、単一のデバイスを超えする豊富なエクスペリエンスを作成するアプリを構築できます。 たとえば、大きい画面で起動するようにアプリを拡張することができます。 または、別のユーザーのデバイス上にあるアプリに対してコンパニオン環境を作成することもできます。
 
-他の Windows デバイスと通信するために、次の Microsoft グラフ Api を使用できます。
+次の Microsoft Graph api を使用して、他の Windows デバイスと通信できます。
 
-- [ユーザーのデバイスを一覧表示します。](../api/user-list-devices.md)
-- [デバイスにコマンドを送信します。](../api/send-device-command.md)
-- [コマンドのステータスを取得します。](../api/get-device-command-status.md)
+- [ユーザーのデバイスを一覧表示する](../api/user-list-devices.md)
+- [デバイスにコマンドを送信する](../api/send-device-command.md)
+- [コマンドの状態を取得する](../api/get-device-command-status.md)
 
 ## <a name="notifications"></a>通知
 
-Graph で通知 Api を使用するには上に同じユーザーが署名されている複数のエンドポイント経由で通知を配布します。 デバイス アドレスとチャネルを心配するのではなく通知を転記するときは、ユーザーを直接対象できます。 この方法では、デバイスを中心とした方法ではなく、人間を中心とした、右の通知シナリオを設計することに集中できます。 
+Microsoft Graph の通知 api を使用して、同じユーザーがサインインしている複数のエンドポイント間で通知を配信することができます。 通知を投稿する際に、デバイスのアドレスやチャネルについて心配する代わりに、ユーザーを直接対象にすることができます。 このようにすると、デバイス中心ではなく、人中心の通知シナリオの設計に集中できます。 
 
-通知の生データ、または直接視覚的に通知を発行できます。 生データの通知が配信されると、デバイスのエンドポイントを受信し、通知を管理する[クライアント SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph の通知、Windows SDK のプロジェクト ローマの SDK の iOS および Android) を使用できます。 デバイスのエンドポイントに直接視覚的に通知を配信すると、プラットフォーム固有のネイティブの通知をユーザーに表示します。 
+生データ通知または直接的な視覚的通知を発行できます。 生データ通知がデバイスエンドポイントに配信されると、[クライアント SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notification sdk for Windows、iOS 用 Project ローマ sdk) を使用して通知を受信し、管理することができます。 ダイレクトビジュアル通知がデバイスエンドポイントに配信されるときに、プラットフォーム固有のネイティブ通知がユーザーに表示されます。 
 
-詳細については、[作成し通知の送信](../api/projectrome-notification-post.md)を参照してください。
+詳細については、「[通知の作成と送信](../api/projectrome-notification-post.md)」を参照してください。
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

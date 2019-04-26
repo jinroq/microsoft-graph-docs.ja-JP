@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 194d34f734825cbac3e98c7aa959e4433f7262ff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562539"
 ---
 # <a name="androidusernamesource-enum-type"></a>androidUsernameSource 列挙型
 
@@ -23,9 +23,9 @@ Android ユーザー名ソース。
 |メンバー|値|説明|
 |:---|:---|:---|
 |username|.0|ユーザー名。|
-|userPrincipalName|1-d|ユーザー プリンシパル名。|
-|samAccountName|pbm-2|ユーザー sam のアカウント名。|
-|primarySmtpAddress|1/3|プライマリ SMTP アドレス。|
+|userPrincipalName|1 |ユーザー プリンシパル名。|
+|samAccountName|2 |ユーザー sam のアカウント名。|
+|primarySmtpAddress|3 |プライマリ SMTP アドレス。|
 
 
 

@@ -1,15 +1,15 @@
 ---
 author: VinodRavichandran
 ms.date: 09/10/2017
-title: Audio
+title: オーディオ
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8265850a6194938cc3547d081c71256bb2aa9251
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990307"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569341"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 
@@ -51,11 +51,11 @@ ms.locfileid: "27990307"
 | **bitrate**           | Int64   | kbps 単位で表されるビットレート。                                           |
 | **composers**         | string  | オーディオ ファイルの作曲者の名前。                          |
 | **copyright**         | string  | オーディオ ファイルの著作権情報。                            |
-| **disc**              | Int16 型   | このオーディオ ファイルの元のディスクの番号。                    |
-| **discCount**         | Int16 型   | このアルバムの合計ディスク数。                             |
+| **disc**              | Int16   | このオーディオ ファイルの元のディスクの番号。                    |
+| **discCount**         | Int16   | このアルバムの合計ディスク数。                             |
 | **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
 | **genre**             | string  | このオーディオ ファイルのジャンル。                                        |
-| **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
+| **hasDrm**            | ブール値 | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
 | **isVariableBitrate** | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
 | **title**             | string  | オーディオ ファイルのタイトル。                                         |
 | **track**             | Int32   | このオーディオ ファイルの元のディスクでのトラック番号。    |

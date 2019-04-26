@@ -1,15 +1,15 @@
 ---
 title: 'グループ: checkMemberGroups'
-description: グループの指定されたリスト内のメンバーシップを確認します。 リストから先のグループを返します。
+description: 指定したグループ一覧内のメンバーシップを確認します。 リストからそのグループを返します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8abac44bf6c97e0ebbd8235ec246f19f0c73e920
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524184"
 ---
 # <a name="group-checkmembergroups"></a>グループ: checkMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "27932120"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | 委任 (職場または学校のアカウント)     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
-| アプリケーション                            | _Group.Read.All_Directory.Read.All。 Directory.ReadWrite.All                               |
+| アプリケーション                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 使用して、`Group.Read.All`のアクセス許可エラーが返されます。 これは既知のバグです。
+> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `Group.Read.All`のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -49,7 +49,7 @@ POST /groups/{id}/checkMemberGroups
 
 | パラメーター | 型              | 説明           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | String コレクション | グループ ID の配列 |
+| groupIds  | String collection | グループ ID の配列 |
 
 ## <a name="response"></a>応答
 

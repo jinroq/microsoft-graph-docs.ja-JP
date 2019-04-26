@@ -1,60 +1,61 @@
 ---
-title: Microsoft グラフ セキュリティ API のエラー応答
-description: セキュリティ api には、Microsoft のグラフのエラーは、標準の HTTP 206 部分的なコンテンツのステータス コードを使用して返され、警告ヘッダーを経由して配信。
+title: Microsoft Graph セキュリティ API のエラー応答
+description: Microsoft Graph セキュリティ API のエラーは、標準の HTTP 206 の部分的なコンテンツ状態コードを使用して返され、警告ヘッダーによって配信されます。
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 52b7c375bd3e0c6a367f1150a21bb96ef84437ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560754"
 ---
-# <a name="microsoft-graph-security-api-error-responses"></a>Microsoft グラフ セキュリティ API のエラー応答
+# <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph セキュリティ API のエラー応答
 
-セキュリティ api には、Microsoft のグラフのエラーは、標準の HTTP 206 部分的なコンテンツのステータス コードを使用して返され、警告ヘッダーを経由して配信。
+Microsoft Graph セキュリティ API のエラーは、標準の HTTP 206 の部分的なコンテンツ状態コードを使用して返され、警告ヘッダーによって配信されます。
 
 ## <a name="errors"></a>エラー
 
-Microsoft グラフ セキュリティ API は、すべてのデータ プロバイダーから複数の応答を受信するフェデレーション サービスです。 Microsoft グラフ セキュリティ API が HTTP エラーを受信したを送信します戻る警告ヘッダーで次の形式。<!-- { "blockType": "ignored" } -->
+Microsoft Graph セキュリティ API は、すべてのデータプロバイダーから複数の応答を受け取るフェデレーションサービスです。 Microsoft Graph セキュリティ API で HTTP エラーが受信されると、次の形式の警告ヘッダーが返されます。
+<!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-この警告ヘッダーはデータ プロバイダーの 1 つ以外の 2 xx または 404 エラー コードが返されるときにクライアントにのみ送信されます。 例:
+この警告ヘッダーは、いずれかのデータプロバイダーが2xx または404以外のエラーコードを返した場合にのみクライアントに返されます。 次に例を示します。
 
-- HttpStatusCode.Forbidden (403) は、リソースへのアクセスが与えられていない場合に返される可能性があります。
-- プロバイダーがタイムアウトになった場合は、警告ヘッダーの HttpStatusCode.GatewayTimeout (504) が返されます。
-- 内部プロバイダ エラーが発生した場合、HttpStatusCode.InternalServerError (500) は、warning ヘッダーで使用されます。
+- リソースへのアクセス許可が付与されていない場合、httpstatuscode (403) が返されることがあります。
+- プロバイダーがタイムアウトになると、httpstatuscode (504) が警告ヘッダーに返されます。
+- 内部プロバイダエラーが発生した場合は、httpstatuscode エラー (500) が警告ヘッダーで使用されます。
 
-データ プロバイダーに 2 xx または 404 が返される場合に表示されませんの警告ヘッダーのこれらのコードが成功した場合に期待どおりになっているか、それぞれのデータが見つからない場合。 フェデレートされたシステムでは、何度もデータだけがわかっている 1 つまたはいくつか、すべてではなくプロバイダーと、404 が見つかりませんが考えられます。
+データプロバイダーが2xx または404を返した場合は、これらのコードが正常に終了したか、またはデータが検出されなかった場合は、警告ヘッダーに表示されません。 フェデレーションシステムでは、404が見つからない場合は、1つまたはいくつかのプロバイダーのみがデータを認識できる回数である必要があります。
 
 ## <a name="example"></a>例
 
-ユーザーが求める`security/alerts/{alert_id}`。
+ユーザーが要求`security/alerts/{alert_id}`します。
 
     Provider 1: 404 (provider does not have a record of this alert ID)
     Provider 2: 504 (provider timed out)
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-404 と 200 の両方が必要な条件であるため warning ヘッダーは、次の含まれています。
+404と200の両方が想定される条件であるため、警告ヘッダーには次の内容が含まれています。
 
 ```HTTP
 Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **注:** 各 HTTP ヘッダーは、ユーザーは警告ヘッダーを列挙し、すべての項目をチェックするために、サブ項目のコレクションです。
+> **注:** 各 HTTP ヘッダーはサブアイテムのコレクションであるため、ユーザーは警告ヘッダーを列挙してすべてのアイテムをチェックできます。
 
 ## <a name="constraints"></a>制約
 
-`$top` OData クエリ パラメーターには、1000 の警告との組み合わせの制限`$top`  +  `$skip` OData クエリのパラメーターは、警告が 6000 を超えることはできません。 などの`/security/alerts?$top=10&$skip=5990`を返します、`200 OK`応答コードの場合が、`/security/alerts?$top=10&$skip=5991`を返します、`400 Bad Request`応答コード。
+`$top` odata クエリパラメーターには、1000通知の制限があり、odata クエリ`$top`  +  `$skip`パラメーターの組み合わせは、6000通知を超えることはできません。 たとえば、 `/security/alerts?$top=10&$skip=5990`は`200 OK`応答コード`/security/alerts?$top=10&$skip=5991`を返しますが、応答コードを`400 Bad Request`返します。
 
-回避制限値については、使用する、`$filter`で OData クエリのパラメーター、 `eventDateTime` Microsoft グラフ セキュリティ API から通知のエンティティを使用して`?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}`(6000th) の最後の警告で、日時の値を置き換えることです。 範囲を設定することも、 `eventDateTime`。たとえば、 *alerts?$ フィルター = eventDateTime **gt** 2018-11-**11**T00:00:00.000Z & eventDateTime **lt** 2018-11-**12**T00:00:00.000Z*
+この制限の回避策は、 `$filter` OData クエリパラメーターを Microsoft Graph セキュリティ API の`eventDateTime` alert エンティティので使用し、dateTime 値を`?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}`最後 (6000th) 通知で置き換えることです。 また、 `eventDateTime`の範囲を設定することもできます。たとえば、 *alerts? $ filter = eventdatetime **gt** 2018-11-**11**T00:00: 00.000 z_amp_eventdatetime **lt** 2018-11-**12**T00:00: 00.000 z*
 
 ## <a name="see-also"></a>関連項目
 
-認証に問題がある場合は、[承認、および Microsoft のグラフのセキュリティ API](/graph/security-authorization)を参照してください。
+承認の問題が発生している場合は、「 [authorization and the Microsoft Graph Security API](/graph/security-authorization)」を参照してください。

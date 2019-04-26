@@ -4,11 +4,11 @@ description: 'サブスクリプションは、Microsoft Graph 上のデータ�
 localization_priority: Priority
 author: piotrci
 ms.openlocfilehash: db3a536395f327115af69f769f37c823013ec7fa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563701"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 

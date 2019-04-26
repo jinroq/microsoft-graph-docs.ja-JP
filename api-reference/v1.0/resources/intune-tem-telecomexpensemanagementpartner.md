@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0d300fb881576932350eb60a6b441fa3087e6e5e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260194"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571808"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner リソースの種類
 
@@ -31,12 +31,12 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 |:---|:---|:---|
 |id|文字列|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
-|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者は、このパネルで TEM サービスを構成できます。|
+|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを示します。|
+|enabled|ブール型 (Boolean)|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3e47f4d20cb843b62928c6c66e468d00f5a4f743
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795997"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561916"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnprovidertype 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31795997"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|トンネルトラフィックは明示的に構成されていません。|
-|appproxy|1-d|アプリケーション層でのトンネルトラフィック。|
-|packettunnel|pbm-2|IP 層でのトンネルトラフィック。|
+|appproxy|1 |アプリケーション層でのトンネルトラフィック。|
+|packettunnel|2 |IP 層でのトンネルトラフィック。|
 
 
 

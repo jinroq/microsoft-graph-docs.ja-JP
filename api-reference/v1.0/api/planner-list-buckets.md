@@ -5,13 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 5a5115b7afffebcf663b01c3836ba718d896098e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958223"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562077"
 ---
 # <a name="list-buckets"></a>List buckets
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerbucket** オブジェクトのリストを取得します。
 
@@ -29,7 +31,7 @@ ms.locfileid: "27958223"
 ```http
 GET /planner/buckets
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 このメソッドでは planId [フィルター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を指定する必要があります。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -53,7 +55,7 @@ GET /planner/buckets
   "name": "get_buckets"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/buckets
+GET https://graph.microsoft.com/beta/planner/buckets
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -83,10 +85,13 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List buckets",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5895c85590eb18e4dcd87751090923918e5eb6e9
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560776"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 列挙型
 
@@ -21,11 +21,11 @@ ms.locfileid: "30256582"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
-|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
-|agesAbove10|pbm-2|10未満の子供には-10 の分類は推奨されません|
-|agesAbove12|1/3|12での子の場合、-12 分類は推奨されません|
-|agesAbove16|2/4|16未満の子供には-16 の分類は推奨されません|
-|agesAbove18|5|18才未満では、-18 分類は推奨されません|
+|allblocked|1 |すべてのテレビ番組の内容を許可しない|
+|agesAbove10|2 |10未満の子供には-10 の分類は推奨されません|
+|agesAbove12|3 |12での子の場合、-12 分類は推奨されません|
+|agesAbove16|4 |16未満の子供には-16 の分類は推奨されません|
+|agesAbove18|5 |18才未満では、-18 分類は推奨されません|
 
 
 

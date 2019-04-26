@@ -13,6 +13,8 @@ ms.locfileid: "32563144"
 ---
 # <a name="root-resource-type"></a>Root リソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 **Root** ファセットは、オブジェクトが階層内の最上位であることを示します。
 このファセットに値が存在する (null ではない) ことで、オブジェクトがルートであることを示します。
 null (または存在しない) 値は、オブジェクトがルートでないことを示します。
@@ -33,8 +35,11 @@ null (または存在しない) 値は、オブジェクトがルートでない
 **ルート** リソースにはプロパティがありません。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root"
-} -->
+  "tocPath": "Facets/Root",
+  "suppressions": []
+}
+-->

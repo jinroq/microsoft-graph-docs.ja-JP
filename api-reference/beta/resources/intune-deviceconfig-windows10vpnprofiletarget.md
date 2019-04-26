@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 602316620aa076107436abdc39c97ea0dcb270d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787611"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571990"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget 列挙型
 
@@ -23,8 +23,8 @@ Windows 10 VPN プロファイルのターゲットの種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |user|.0|ユーザーを対象とした VPN プロファイル。|
-|デバイス|1-d|デバイス対象の VPN プロファイル。|
-|autoPilotDevice|pbm-2|自動操縦デバイスの対象となる VPN プロファイル。|
+|デバイス|1 |デバイス対象の VPN プロファイル。|
+|autoPilotDevice|2 |自動操縦デバイスの対象となる VPN プロファイル。|
 
 
 

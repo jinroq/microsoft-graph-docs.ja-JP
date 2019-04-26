@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f92a933cc7b38ac713722a42809b2fe7f44c516f
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869289"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571325"
 ---
 # <a name="list-mailfolders"></a>mailFolders を一覧表示する　
 

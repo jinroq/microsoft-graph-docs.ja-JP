@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8d9060c28744bae52d4690bf75487e298d58d2a1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571717"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
@@ -23,10 +23,10 @@ iOS EDU の信頼されたルートおよび PFX 証明書。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |trustedRootCertificate|Binary|信頼されたルート証明書。|
-|certfilename|文字列|UI に表示されるファイル名。|
-|certificationAuthority|文字列|PKCS 証明機関。|
-|certificationAuthorityName|文字列|PKCS 証明機関名。|
-|certificatetemplatename|文字列|PKCS 証明書テンプレート名。|
+|certfilename|String|UI に表示されるファイル名。|
+|certificationAuthority|String|PKCS 証明機関。|
+|certificationAuthorityName|String|PKCS 証明機関名。|
+|certificatetemplatename|String|PKCS 証明書テンプレート名。|
 |renewalThresholdPercentage|Int32|証明書の更新しきい値の割合。 有効な値は 1 ~ 99|
 |certificateValidityPeriodValue|Int32|証明書の有効期間の値。|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケール。 可能な値は、`days`、`months`、`years` です。|

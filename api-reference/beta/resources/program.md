@@ -1,38 +1,38 @@
 ---
-title: プログラムのリソースの種類
-description: 'Azure AD にアクセスが機能を確認、プログラムは、プログラムのコントロールを保持しているコンテナーです。 テナントは、1 つまたは複数のプログラムを持つことができます。  各コントロールは、アクセス確認をプログラムにリンク、関連のアクセスを見つけやすくすることを確認します。  '
+title: program リソースの種類
+description: 'Azure AD access のレビュー機能であるプログラムは、プログラムコントロールを保持するコンテナーです。 テナントには、1つ以上のプログラムを含めることができます。  各コントロールは、アクセスレビューをプログラムにリンクして、関連するアクセスレビューを簡単に見つけられるようにします。  '
 localization_priority: Normal
 ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515189"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563411"
 ---
-# <a name="program-resource-type"></a>プログラムのリソースの種類
+# <a name="program-resource-type"></a>program リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログラムは、プログラムのコントロールを保持している、コンテナーです。 テナントは、1 つまたは複数のプログラムを持つことができます。  各コントロールは、アクセス確認をプログラムにリンク、関連のアクセスを見つけやすくすることを確認します。  
+Azure AD access の[レビュー](accessreviews-root.md)機能であるプログラムは、プログラムコントロールを保持するコンテナーです。 テナントには、1つ以上のプログラムを含めることができます。  各コントロールは、アクセスレビューをプログラムにリンクして、関連するアクセスレビューを簡単に見つけられるようにします。  
 
-各テナントが上に直行し、Azure AD がアクセスのレビューには 1 つのプログラムでは、 `Default program`。  グローバル管理者は、コンプライアンス ・ イニシアティブを表現するなど、その他のプログラムを作成できます。 
+boarded Azure AD アクセスレビューを持つ各テナントには、 `Default program`1 つのプログラムがあります。  グローバル管理者は、コンプライアンスイニシアチブを表すなど、追加のプログラムを作成できます。 
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[プログラムを作成します。](../api/program-create.md) |   [プログラム](program.md)   |   新しいプログラムを作成します。|
-|[プログラムを削除します。](../api/program-delete.md) |   なし。   |   プログラムを削除します。|
-|[プログラムを一覧表示](../api/program-list.md) |  [プログラム](program.md)のコレクション|   すべてのプログラムのコレクションを取得します。|
-|[プログラムのリスト programControls](../api/program-listcontrols.md) |      [デバッギング](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
-|[更新プログラム](../api/program-update.md) |   [プログラム](program.md)|  プログラムを更新します。|
+|[プログラムを作成する](../api/program-create.md) |   [アプリケーション](program.md)   |   新しいプログラムを作成します。|
+|[プログラムの削除](../api/program-delete.md) |   なし。   |   プログラムを削除します。|
+|[プログラムの一覧表示](../api/program-list.md) |  [プログラム](program.md)コレクション|   すべてのプログラムのコレクションを取得します。|
+|[プログラムの programcontrols を一覧表示する](../api/program-listcontrols.md) |      [programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
+|[プログラムの更新](../api/program-update.md) |   [アプリケーション](program.md)|  プログラムを更新します。|
 
 ## <a name="permissions"></a>アクセス許可
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | ProgramControl.Read.All、ProgramControl.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol. |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -40,14 +40,14 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  プログラムの機能に割り当てられる識別子です。                    |
-| `displayName`               |`String`                              |  プログラムの名前です。  必要なを作成します。                  |
-| `description`               |`String`                              |  プログラムの説明です。           |
+| `id`                        |`String`                              |  プログラムの機能割り当て識別子。                    |
+| `displayName`               |`String`                              |  プログラムの名前を指定します。  作成時に必要です。                  |
+| `description`               |`String`                              |  プログラムの説明。           |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-| `controls`                  |[デバッギング](programcontrol.md) | プログラムに関連付けられているコントロール。 |
+| `controls`                  |[programcontrol](programcontrol.md) | プログラムに関連付けられているコントロール。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

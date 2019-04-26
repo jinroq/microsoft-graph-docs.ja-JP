@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: cec39a64f7405d13efacb1080c5d6c1482dceabb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562161"
 ---
 # <a name="create-section"></a>セクションを作成する
 
@@ -44,7 +44,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[onenoteSection](../resources/section.md)オブジェクトです。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onenoteSection](../resources/section.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

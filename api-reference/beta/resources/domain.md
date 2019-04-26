@@ -1,82 +1,83 @@
 ---
-title: ドメイン リソースの種類
+title: ドメインリソースの種類
 description: テナントに関連付けられているドメインを表します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6b349920f0849ec18b0d5e70fda0bcb16c41e63c
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342332"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535258"
 ---
-# <a name="domain-resource-type"></a>ドメイン リソースの種類
+# <a name="domain-resource-type"></a>ドメインリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントに関連付けられているドメインを表します。
 
-ドメイン操作を使用して、テナントにドメインを関連付け、ドメインの所有権を確認し、サポートされているサービスを構成します。ドメイン操作によって Office 365 などのサービスのドメインの関連付けを自動化するレジストラーを有効にします。たとえば、ドメインのサインアップの一部として、レジストラーは電子メール、Web サイト、認証などのバニティ ドメインを有効化することができます。
+ドメインの操作を使用して、ドメインをテナントに関連付け、ドメインの所有権を確認し、サポートされているサービスを構成します。  ドメインの操作により、Office 365 などのサービスのドメインの関連付けを登録するためのレジストラーを有効にできます。 たとえば、ドメインのサインアップの一環として、レジストラーは、電子メール、web サイト、認証などのバニティドメインを有効にすることができます。
 
-ドメインをテナントに関連付ける方法：
+ドメインをテナントに関連付けるには、次のようにします。
 
-1. ドメインをテナントに[関連付ける](../api/domain-post-domains.md)。
+1. ドメインをテナントに[関連付け](../api/domain-post-domains.md)ます。
 
-2. ドメインの検証レコードを[取得する](../api/domain-list-verificationdnsrecords.md)。ドメイン レジストラーまたは DNS サーバー構成を使用して、検証レコードの詳細情報をドメインのゾーン ファイルに追加します。
+2. ドメイン検証レコードを[取得](../api/domain-list-verificationdnsrecords.md)します。 ドメインレジストラーまたは DNS サーバー構成を使用して、ドメインのゾーンファイルに検証レコードの詳細を追加します。
 
-3. ドメインの所有権を[検証する](../api/domain-verify.md)。ドメインを確認し、*isVerified* プロパティを *true* に設定します。
+3. ドメインの所有権[を確認](../api/domain-verify.md)します。 これにより、ドメインが確認さ** れ、isverified プロパティが*true*に設定されます。
 
-4. ドメインと共に使用する、サポートされているサービスを[指定する](../api/domain-update.md)。
+4. ドメインでの使用を計画しているサービスを[示し](../api/domain-update.md)ます。
 
-5. ドメイン向けのサービスを有効にするのに必要なレコードの一覧を取得して、サポートされているサービスを[構成する](../api/domain-list-serviceconfigurationrecords.md)。ドメイン レジストラーまたは DNS サーバー構成を使用して、構成レコードの詳細情報をドメインのゾーン ファイルに追加します。
+5. ドメインのサービスを有効にするために必要なレコードの一覧を取得して、サポートされているサービスを[構成](../api/domain-list-serviceconfigurationrecords.md)します。 ドメインレジストラーまたは DNS サーバー構成を使用して、ドメインのゾーンファイルに構成レコードの詳細を追加します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
-|[Get domain](../api/domain-get.md) | [domain](domain.md) | ドメイン オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create domain](../api/domain-post-domains.md) | [domain](domain.md) | テナントにドメインを追加します。 |
-|[List domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| ドメインへの参照付きのディレクトリ オブジェクトの一覧を取得します。|
-|[List serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  ドメイン構成のためドメインの DNS レコードの一覧を取得します。|
-|[List verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  ドメイン検証のためドメインの DNS レコードの一覧を取得します。|
-|[Update domain](../api/domain-update.md) | [domain](domain.md) |ドメインを更新します|
-|[Delete domain](../api/domain-delete.md) | なし |ドメインを削除します。|
+|[ドメインを取得する](../api/domain-get.md) | [domain](domain.md) | ドメインオブジェクトのプロパティとリレーションシップを読み取ります。|
+|[ドメインを作成する](../api/domain-post-domains.md) | [domain](domain.md) | テナントにドメインを追加します。 |
+|[リスト domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| ドメインへの参照を使用して、ディレクトリオブジェクトの一覧を取得します。|
+|[リスト serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン構成のドメイン DNS レコードの一覧を取得します。|
+|[リスト verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン検証のドメイン DNS レコードの一覧を取得します。|
+|[ドメインを更新する](../api/domain-update.md) | [domain](domain.md) |ドメインを更新します。|
+|[ドメインを削除する](../api/domain-delete.md) | なし |ドメインを削除します。|
 |[forcedelete ドメイン](../api/domain-forcedelete.md)|なし|非同期操作を使用してドメインを削除します。|
-|[Verify domain](../api/domain-verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
+|[ドメインを確認する](../api/domain-verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| ドメインに対して構成されている認証の種類を示します。値は、*Managed* または *Federated* のいずれかです。<br> *Managed* の場合、Azure AD がユーザー認証を実行するクラウド管理のドメインを表します。<br>*Federated* の場合、Active Directory フェデレーション サービスを経由したテナントのオンプレミスの Active Directory のように、認証が ID プロバイダーとフェデレーションを行うことを表します。null 許容ではありません |
-|availabilityStatus|String| [確認](../api/domain-verify.md)操作を使用する場合を除き、このプロパティは常に null です。[確認](../api/domain-verify.md)操作を使用する場合、応答で**ドメイン** エンティティが返されます。応答内の、**ドメイン** エンティティの **availabilityStatus** プロパティは、*AvailableImmediately* または *EmailVerifiedDomainTakeoverScheduled* のいずれかです。|
-|id|String| ドメインの完全修飾名です。キー、不変、Null 許容ではない、一意 |
-|isAdminManaged|Boolean| ドメインの DNS レコードの管理が Office 365 に委任されている場合、プロパティの値は false です。それ以外の場合、値は true です。null 許容ではありません |
-|isDefault|ブール型| ユーザーの作成に使用する既定のドメインの場合は true です。会社ごとに 1 つだけの既定のドメインがあります。null 許容ではありません |
-|isInitial|ブール値| Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインがある場合は true です。会社ごとに 1 つだけの初期ドメインがあります。null 許容ではありません |
-|isRoot|Boolean| ドメインが検証済みのルート ドメインである場合は true です。それ以外に、ドメインがサブドメインまたは未確認である場合は false です。null 許容ではありません |
-|isVerified|Boolean| そのドメインが、ドメイン所有権の確認を完了している場合は true です。null 許容ではありません |
+|authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、active directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 null 許容ではない |
+|availabilityStatus|String| [verify](../api/domain-verify.md)アクションが使用される場合を除き、このプロパティは常に null になります。 [verify](../api/domain-verify.md)アクションを使用すると、応答で**ドメイン**エンティティが返されます。 応答内の**ドメイン**エンティティの**availabilityStatus**プロパティは、*すぐに*、または*EmailVerifiedDomainTakeoverScheduled*でもかまいません。|
+|id|String| ドメインの完全修飾名。 キー、不変、null 許容ではない、unique |
+|isadminmanaged|ブール値| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 null 許容ではない |
+|isDefault|ブール型 (Boolean)| これがユーザーの作成に使用される既定のドメインの場合は True。 会社ごとに既定のドメインが1つだけ存在します。 null 許容ではない |
+|isinitial|ブール値| True は、Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインの場合です。 会社ごとに1つの初期ドメインのみが存在します。 null 許容ではない |
+|isRoot|ブール値| ドメインが確認されたルートドメインの場合は True。 それ以外の場合は、ドメインがサブドメインまたは未確認の場合は false。 null 許容ではない |
+|isverified|ブール値| ドメインの所有権の確認が完了した場合は True。 null 許容ではない |
 |passwordNotificationWindowInDays|Int32|ユーザーがパスワードの有効期限が切れると通知を受信するまでの日数を指定します。 このプロパティが設定されていない場合は、既定値の14日が使用されます。|
 |passwordValidityPeriodInDays|Int32| パスワードを変更するまでの有効期間を指定します。 このプロパティが設定されていない場合は、既定値の90日が使用されます。 |
-|supportedServices|String collection| ドメインに割り当てられている機能です。<br><br>0、1 または次の値を含めることができます。*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。*Email*、*OfficeCommunicationsOnline*、*Yammer*<br>null 許容ではありません|
-|state|[domainState](domainstate.md)| ドメインのためにスケジュールされている非同期操作の状態です。 |
+|supportedservices|String collection| ドメインに割り当てられている機能。<br><br>0、1または次の値を含めることができます。 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、 *sharepointpublic*、*orgidauthentication*、 *Yammer*、 *Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。 *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>null 許容ではない|
+|state|[domainState](domainstate.md)| ドメインに対してスケジュールされた非同期操作の状態。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
-検証レコードやサービス構成のレコードなど、ディレクトリ内のドメインと他のオブジェクト間のリレーションシップは、ナビゲーション プロパティを介して公開されます。要求でこれらのナビゲーション プロパティを対象にすれば、そのリレーションシップを読み取ることができます。
+確認レコードやサービス構成レコードなど、ディレクトリ内のドメインとその他のオブジェクトとの関係は、ナビゲーションプロパティを通じて公開されます。 これらのリレーションシップは、要求でこれらのナビゲーションプロパティを対象にして確認できます。
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| 読み取り専用、Null 許容型|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| ドメインを Microsoft Online Services で使用する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコードです。<br>読み取り専用、Null 許容型 |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| 顧客が Azure AD のドメイン所有権の確認を完了する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコード。<br>読み取り専用、Null 許容型|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| 読み取り専用、null 許容|
+|serviceConfigurationRecords|[domaindnsrecord](domaindnsrecord.md)コレクション| dns レコードユーザーが Microsoft Online services で使用できるようになる前に、ドメインの dns ゾーンファイルに追加されます。<br>読み取り専用、null 許容 |
+|verificationDnsRecords|[domaindnsrecord](domaindnsrecord.md)コレクション| お客様が Azure AD を使用してドメインの所有権の確認を完了する前に、お客様がドメインの dns ゾーンファイルに追加する dns レコード。<br>読み取り専用、null 許容|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -110,8 +111,6 @@ ms.locfileid: "30342332"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domain.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

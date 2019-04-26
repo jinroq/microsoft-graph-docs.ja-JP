@@ -1,19 +1,19 @@
 ---
-title: requiredResourceAccess リソースの種類
-description: OAuth 2.0 のためのアクセス許可のスコープおよびアプリケーションへのアクセスを必要とする指定したリソース] の下のアプリケーション ロールのセットを指定します。 指定された OAuth 2.0 のアクセス許可の範囲を ( **requiredResourceAccess**コレクション) をクライアント アプリケーションで、要求することがリソースのアプリケーションを呼び出すことです。 アプリケーション エンティティの**requiredResourceAccess**プロパティは、 **ReqiredResourceAccess**のコレクションです。
+title: requiredresourceaccess リソースの種類
+description: アプリケーションがアクセスを必要とする、指定されたリソースの下にある OAuth 2.0 アクセス許可スコープおよびアプリロールのセットを指定します。 指定された OAuth 2.0 アクセス許可のスコープは、リソースアプリケーションを呼び出すときに、( **requiredresourceaccess**コレクションを通じて) クライアントアプリケーションによって要求されることがあります。 application エンティティの**requiredresourceaccess**プロパティは、 **ReqiredResourceAccess**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: a2c7e337bbe441275f395c2333b8cee918e6b9da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563176"
 ---
-# <a name="requiredresourceaccess-resource-type"></a>requiredResourceAccess リソースの種類
+# <a name="requiredresourceaccess-resource-type"></a>requiredresourceaccess リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OAuth 2.0 のためのアクセス許可のスコープおよびアプリケーションへのアクセスを必要とする指定したリソース] の下のアプリケーション ロールのセットを指定します。 指定された OAuth 2.0 のアクセス許可の範囲を ( **requiredResourceAccess**コレクション) をクライアント アプリケーションで、要求することがリソースのアプリケーションを呼び出すことです。 [アプリケーション](application.md)エンティティの**requiredResourceAccess**プロパティは、 **ReqiredResourceAccess**のコレクションです。
+アプリケーションがアクセスを必要とする、指定されたリソースの下にある OAuth 2.0 アクセス許可スコープおよびアプリロールのセットを指定します。 指定された OAuth 2.0 アクセス許可のスコープは、リソースアプリケーションを呼び出すときに、( **requiredresourceaccess**コレクションを通じて) クライアントアプリケーションによって要求されることがあります。 [application](application.md)エンティティの**requiredresourceaccess**プロパティは、 **ReqiredResourceAccess**のコレクションです。
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,8 +38,8 @@ OAuth 2.0 のためのアクセス許可のスコープおよびアプリケー�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|resourceAccess|[ResourceAccess](resourceaccess.md)コレクション|OAuth2.0 アクセス許可のスコープと、指定したリソースからアプリケーションを必要とするアプリケーション ロールの一覧です。|
-|resourceAppId|String|アプリケーションへのアクセスに必要なリソースの一意の識別子です。  ターゲット リソースのアプリケーションで宣言されている**appId**に等しい場合があります。|
+|resourceAccess|[resourceaccess](resourceaccess.md)コレクション|指定されたリソースからアプリケーションが必要とする oauth 2.0 のアクセス許可スコープとアプリの役割の一覧。|
+|resourceappid|String|アプリケーションがアクセスする必要があるリソースの一意識別子。  これは、ターゲットリソースアプリケーションで宣言されている**appId**と同じである必要があります。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -50,8 +50,6 @@ OAuth 2.0 のためのアクセス許可のスコープおよびアプリケー�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/requiredresourceaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

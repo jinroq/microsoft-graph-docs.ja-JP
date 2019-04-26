@@ -5,11 +5,11 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563175"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "31559983"
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |`id`|`string`|危険にさらされているユーザーの一意の id|
-|`isDeleted`|`bool`|ユーザーが削除されるかどうかを示します。 可能な値は`true`、です。 `false`|
+|`isDeleted`|`bool`|ユーザーが削除されるかどうかを示します。 可能な値は`true`、です。`false`|
 |`isGuest`|`bool`|ユーザーがゲストユーザーであるかどうかを示します。 可能な値は、`true`、`false` です。 True の場合は、ユーザーの id がテナントの外部にある場合に考慮します。 このユーザーは、Azure AD、MSA、またはサードパーティの id プロバイダーで id を持つ B2B または B2C ユーザーの場合があります。 False 場合は、ユーザーの id がテナントの内側にある場合|
 |`isProcessing`|`bool`|ユーザーの危険な状態がバックエンドによって処理されていることを示します。|
 |`riskLastUpdatedDateTime`|`datetime`|危険性のあるユーザーが最後に更新された日時|

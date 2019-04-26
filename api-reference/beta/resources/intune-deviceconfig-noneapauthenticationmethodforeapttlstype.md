@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2a69ea80f23b2671dfd58fee87573d6e2614b360
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797460"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554416"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>none apauthenticationmethod_ apttlstype 列挙型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31797460"
 |メンバー|値|説明|
 |:---|:---|:---|
 |アン encryptedpassword|.0|暗号化されていないパスワード (PAP)。|
-|challengeHandshakeAuthenticationProtocol|1-d|チャレンジハンドシェイク認証プロトコル (CHAP)。|
-|microsoft chap|pbm-2| Microsoft chap (ms-chap)。|
-|microsoftChapVersionTwo|1/3|Microsoft chap バージョン 2 (ms-chap v2)。|
+|challengeHandshakeAuthenticationProtocol|1 |チャレンジハンドシェイク認証プロトコル (CHAP)。|
+|microsoft chap|2 | Microsoft chap (ms-chap)。|
+|microsoftChapVersionTwo|3 |Microsoft chap バージョン 2 (ms-chap v2)。|
 
 
 

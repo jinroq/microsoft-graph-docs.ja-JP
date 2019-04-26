@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ba2998e1312d24fe6f86420cea883e6039f813a4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570660"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "31771797"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|デバイスの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|文字列|最小 OS バージョン|
-|最大化 umoper/systemversion|文字列|最大 OS バージョン|
+|minimumOperatingSystemVersion|String|最小 OS バージョン|
+|最大化 umoper/systemversion|String|最大 OS バージョン|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

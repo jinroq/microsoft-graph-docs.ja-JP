@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d67b64a0464bde51d48f3b8c693a1a3d8a1bc449
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807827"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561958"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnauthenticationmethod 列挙型
 
@@ -23,7 +23,7 @@ VPN 認証方法。
 |メンバー|値|説明|
 |:---|:---|:---|
 |certificate|.0|証明書を使用して認証します。|
-|usernameAndPassword|1-d|認証にユーザー名とパスワードを使用します。|
+|usernameAndPassword|1 |認証にユーザー名とパスワードを使用します。|
 
 
 

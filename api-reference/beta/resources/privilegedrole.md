@@ -1,43 +1,43 @@
 ---
 title: privilegedRole リソースの種類
-description: 次のように、Azure AD 管理者の役割を表します:**グローバル ・ アドミニストレーター、課金管理者、サービス管理者、ユーザー管理者、管理者のパスワード**などです。
+description: Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス管理者、ユーザー管理者、パスワード管理者**など) を表します。
 localization_priority: Normal
 ms.openlocfilehash: 131999f52a583400b018e98d2319118f69ca87e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563428"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-次のように、Azure AD 管理者の役割を表します:**グローバル ・ アドミニストレーター、課金管理者、サービス管理者、ユーザー管理者、管理者のパスワード**などです。
+Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス管理者、ユーザー管理者、パスワード管理者**など) を表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[PrivilegedRole オブジェクトのリスト](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md)コレクション|PrivilegedRole のコレクションを取得します。|
-|[PrivilegedRole を取得します。](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |PrivilegedRole オブジェクトのプロパティと関係を参照してください。|
-|[リストの割り当て](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| このロールの割り当てオブジェクトのコレクションを取得します。|
-|[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当て済みのロールをアクティブにします。|
-|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当て済みのロールを非アクティブ化します。|
+|[privilegedRole オブジェクトを一覧表示する](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md)コレクション|privilegedRole のコレクションを取得します。|
+|[privilegedRole を取得する](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |privilegedRole オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[割り当てを一覧表示する](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| このロールの割り当てオブジェクトのコレクションを取得します。|
+|[selfactivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割をアクティブ化します。|
+|[selfdeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割を非アクティブ化します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|文字列|管理者の役割の一意の識別子です。 GUID の文字列し、特定の役割の Azure AD からロール テンプレートの id と同じ値を持ちます。 読み取り専用です。|
-|name|string|ロール名です。|
+|id|string|管理者の役割の一意識別子。 これは GUID 文字列であり、指定された役割に対して Azure AD からのロールテンプレート id と同じ値を持ちます。 値の取得のみ可能です。|
+|name|string|役割名。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| このロールの割り当て。 読み取り専用です。 Null 許容型。|
-|設定|[privilegedRoleSettings](privilegedrolesettings.md)| このロールの設定をします。 読み取り専用です。 Null 許容型。|
-|Summary|[privilegedRoleSummary](privilegedrolesummary.md)| この役割の概要情報です。 読み取り専用です。 Null 許容型。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| この役割の割り当て。 読み取り専用。 Null 許容型。|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| この役割の設定。 読み取り専用。 Null 許容型。|
+|summary|[privilegedRoleSummary](privilegedrolesummary.md)| このロールの概要情報。 読み取り専用。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -48,6 +48,8 @@ ms.locfileid: "29513747"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRole"
 }-->
 
@@ -68,8 +70,6 @@ ms.locfileid: "29513747"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

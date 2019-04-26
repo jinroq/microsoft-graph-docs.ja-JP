@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c83a8725a0048a622ed88ec8265be76c30e46cc0
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657855"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582882"
 ---
 # <a name="timeoffitem-resource-type"></a>timeoffitem リソースの種類
 
@@ -20,9 +20,9 @@ ms.locfileid: "30657855"
 ## <a name="properties"></a>プロパティ
 | プロパティ                         | 型                    | 説明                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeoff理由 id               | `string`                  | `timeOffReason`のの ID `timeOffItem`。 必須。     |
-| startDateTime               | `DateTimeOffset`                  | の開始日時`timeOffItem`。 必須。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
-| endDateTime               | `DateTimeOffset`                  | の終了日時`timeOffItem`。 必須。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014年1月1日午前0時 (UTC) は次のようになります。 ' 2014-01-01t00:00: 00z ' のようになります。 |
+| timeoff理由 id               | `string`                  | `timeOffReason`のの ID `timeOffItem`。 必須です。     |
+| startDateTime               | `DateTimeOffset`                  | の開始日時`timeOffItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| endDateTime               | `DateTimeOffset`                  | の終了日時`timeOffItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | theme | `enum`   | サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
 
 ## <a name="json-representation"></a>JSON 表記

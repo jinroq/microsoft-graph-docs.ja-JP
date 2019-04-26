@@ -1,19 +1,21 @@
 ---
 title: sectionGroup を作成する
-description: 指定されたノートブックで新しいセクション グループを作成します。
+description: 指定したノートブックに新しいセクショングループを作成します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 31a0f13c30682e491016b6dce4675b8159b8d897
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562140"
 ---
 # <a name="create-sectiongroup"></a>sectionGroup を作成する
 
-指定されたノートブックで新しい[セクション グループ](../resources/sectiongroup.md)を作成します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+指定したノートブックに新しい[セクショングループ](../resources/sectiongroup.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -32,7 +34,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
 POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -44,7 +46,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [sectionGroup](../resources/sectiongroup.md) オブジェクトを返します。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[sectionGroup](../resources/sectiongroup.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -54,7 +56,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
@@ -79,6 +81,7 @@ Content-length: 305
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "displayName": "name-value",
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "createdBy": {
     "user": {
       "id": "id-value",
@@ -96,10 +99,13 @@ Content-length: 305
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

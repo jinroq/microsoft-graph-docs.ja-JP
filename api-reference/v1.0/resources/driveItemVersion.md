@@ -1,14 +1,14 @@
 ---
 title: DriveItemVersion リソースの種類
-description: '**DriveItemVersion**リソースは、DriveItem の特定のバージョンを表します。'
+description: '**drive itemversion**リソースは、ドライブ項目の特定のバージョンを表します。'
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562686"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -55,14 +55,14 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="properties"></a>プロパティ
 
-|      プロパティ名       |                         型                         |                               説明                               |
+|      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 | **size**                 | Int64                                                | アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。  |
-| **content**              | ストリーム                                               | 項目のこのバージョンのコンテンツ ストリーム。                        |
+| **content**              | ストリーム                                               | アイテムのこのバージョンのコンテンツストリーム。                        |
 
 <!-- {
   "type": "#page.annotation",

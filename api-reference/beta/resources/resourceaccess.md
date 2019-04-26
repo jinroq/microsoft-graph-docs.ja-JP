@@ -1,19 +1,19 @@
 ---
-title: resourceAccess リソースの種類
-description: OAuth 2.0 のためのアクセス許可のスコープまたはアプリケーションを必要とするアプリケーションの役割を指定します。 RequiredResourceAccess 型の**resourceAccess**プロパティは、 **ResourceAccess**のコレクションです。
+title: resourceaccess リソースの種類
+description: アプリケーションに必要な OAuth 2.0 アクセス許可スコープまたはアプリの役割を指定します。 requiredresourceaccess 型の**resourceaccess**プロパティは、 **resourceaccess**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 1e741aa49e56b304c265a5fd701fdac37feb29dd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563056"
 ---
-# <a name="resourceaccess-resource-type"></a>resourceAccess リソースの種類
+# <a name="resourceaccess-resource-type"></a>resourceaccess リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OAuth 2.0 のためのアクセス許可のスコープまたはアプリケーションを必要とするアプリケーションの役割を指定します。 [RequiredResourceAccess](requiredresourceaccess.md)型の**resourceAccess**プロパティは、 **ResourceAccess**のコレクションです。
+アプリケーションに必要な OAuth 2.0 アクセス許可スコープまたはアプリの役割を指定します。 [requiredresourceaccess](requiredresourceaccess.md)型の**resourceaccess**プロパティは、 **resourceaccess**のコレクションです。
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,8 +38,8 @@ OAuth 2.0 のためのアクセス許可のスコープまたはアプリケー�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|Guid|リソースのアプリケーションを公開する[oAuth2Permission](oauth2permission.md)または[エンティティ](approle.md)のインスタンスの 1 つの一意の識別子です。|
-|type|String|[OAuth2Permission](oauth2permission.md)または[エンティティ](approle.md)の**id**プロパティを参照するかどうかを指定します。 使用可能な値は、「スコープ」または「ロール」です。|
+|id|Guid|リソースアプリケーションが公開する[oAuth2Permission](oauth2permission.md)または[approle](approle.md)インスタンスの1つの一意識別子。|
+|type|String|**id**プロパティが[oAuth2Permission](oauth2permission.md)または[approle](approle.md)のどちらを参照するかを指定します。 可能な値は、"scope" または "role" です。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -50,8 +50,6 @@ OAuth 2.0 のためのアクセス許可のスコープまたはアプリケー�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/resourceaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

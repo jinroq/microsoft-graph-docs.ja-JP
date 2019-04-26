@@ -1,19 +1,19 @@
 ---
 title: directoryRoleTemplates を一覧表示する
-description: directoryRoleTemplate オブジェクトのリストを取得します。
+description: directoryRoleTemplate オブジェクトのリストを取得します
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0e52cb3a32c54833395722f0368d01cb49965402
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562532"
 ---
 # <a name="list-directoryroletemplates"></a>directoryRoleTemplates を一覧表示する
 
-directoryRoleTemplate オブジェクトのリストを取得します。
+directoryRoleTemplate オブジェクトのリストを取得します
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -34,7 +34,7 @@ GET /directoryRoleTemplates
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -55,7 +55,7 @@ GET /directoryRoleTemplates
 GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

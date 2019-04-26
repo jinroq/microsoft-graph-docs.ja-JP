@@ -1,27 +1,27 @@
 ---
-title: alertTrigger リソースの種類
-description: (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
+title: alerttrigger リソースの種類
+description: 検出をトリガーしたプロパティに関する情報が含まれています (アラートエンティティにプロパティが存在します)。
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991259"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569467"
 ---
-# <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
+# <a name="alerttrigger-resource-type"></a>alerttrigger リソースの種類
 
-(プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
+検出をトリガーしたプロパティに関する情報が含まれています (アラートエンティティにプロパティが存在します)。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類|説明|
+| プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|名前|String|検出のトリガーとして機能するプロパティの名前です。|
-|type|String|解釈のキーと値のペアのプロパティの型。 たとえば、文字列、ブール値などです。|
-|value|文字列|検出のトリガーとして機能するプロパティの値です。|
+|name|String|検出トリガーとして機能するプロパティの名前。|
+|type|String|キーと値のペアで解釈するプロパティの型。 たとえば、String、Boolean、などです。|
+|value|文字列型 (String)|検出トリガーとして提供されるプロパティの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 

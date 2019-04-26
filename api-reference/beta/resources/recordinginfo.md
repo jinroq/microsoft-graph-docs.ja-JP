@@ -1,28 +1,28 @@
 ---
 title: recordingInfo リソースの種類
-description: 参加者の情報を記録します。
+description: 参加者に関する情報を記録します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6025259bafdcff78c3c7dbfa19aa39f5f6648f84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525676"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563141"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-参加者の情報を記録します。
+参加者に関する情報を記録します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| initiatedBy | [participantInfo](participantinfo.md) | レコーディングを開始した参加者です。 |
-| status | String | 可能な値は、`recordingCapable`、`notRecording`、`startedRecording` です。 |
+| initiatedBy | [participantInfo](participantinfo.md) | レコーディングを開始した参加者。 |
+| status | String | 可能な値は `recordingCapable`、`notRecording`、`startedRecording` です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -51,8 +51,6 @@ ms.locfileid: "29525676"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recordinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

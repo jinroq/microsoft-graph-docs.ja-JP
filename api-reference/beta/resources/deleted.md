@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
 ms.openlocfilehash: 06fe9835ef4b31d7a48bad955b17872142a94b2d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535287"
 ---
 # <a name="deleted-facet"></a>Deleted ファセット
 
@@ -37,7 +37,7 @@ ms.locfileid: "30480783"
 ```
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類   | 説明                               |
+| プロパティ | 型   | 説明                               |
 |:---------|:-------|:------------------------------------------|
 | state    | String | 削除されたアイテムの状態を表します。 |
 
@@ -55,8 +55,6 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
   "keywords": "deleted,delete,item,facet",
   "section": "documentation",
   "tocPath": "Facets/Deleted",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/deleted.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

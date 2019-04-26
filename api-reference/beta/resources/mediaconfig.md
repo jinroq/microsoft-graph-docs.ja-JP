@@ -1,27 +1,27 @@
 ---
 title: mediaConfig リソースの種類
-description: メディア構成は、呼び出しに接続するために使用します。
+description: 通話への接続に使用されるメディア構成。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642619"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562553"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メディア構成は、呼び出しに接続するために使用します。
+通話への接続に使用されるメディア構成。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removefromdefaultaudiogroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -31,7 +31,8 @@ ms.locfileid: "29642619"
   "blockType": "resource",
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
-  ],
+   ],
+  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ ms.locfileid: "29642619"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,21 +1,21 @@
 ---
 title: sectionGroup リソースの種類
-description: OneNote ノートブックのセクション グループ。セクション グループには、セクションとセクション グループを含めることができます。
+description: OneNote ノートブックのセクショングループ。 セクショングループには、セクションとセクショングループを含めることができます。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562889"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OneNote ノートブックのセクション グループ。セクション グループには、セクションとセクション グループを含めることができます。
+OneNote ノートブックのセクショングループ。 セクショングループには、セクションとセクショングループを含めることができます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -50,32 +50,32 @@ OneNote ノートブックのセクション グループ。セクション グ�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
-|createdDateTime|DateTimeOffset|セクション グループが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|id|String|セクション グループの一意識別子。読み取り専用です。|
+|createdDateTime|DateTimeOffset|セクション グループが作成された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
+|id|String|セクション グループの一意識別子。 読み取り専用。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
-|lastModifiedDateTime|DateTimeOffset|セクション グループが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
+|lastModifiedDateTime|DateTimeOffset|セクション グループが最後に変更された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
 |displayName|String|セクション グループの名前。|
-|sectionGroupsUrl|String|セクション グループ内のすべてのセクション グループを返す `sectionGroups` ナビゲーション プロパティの URL。読み取り専用です。|
-|sectionsUrl|String|セクション グループ内のすべてのセクションを返す `sections` ナビゲーション プロパティの URL。読み取り専用です。|
-|self|String|セクション グループに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
+|sectionグループ url|String|`sectionGroups`ナビゲーションプロパティの URL。セクショングループ内のすべてのセクショングループを返します。 読み取り専用。|
+|sectionsUrl|String|`sections`ナビゲーションプロパティの URL。セクショングループ内のすべてのセクションを返します。 読み取り専用。|
+|self|String|セクション グループに関する詳細を取得できるエンドポイント。 読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|セクション グループを含むノートブック。読み取り専用です。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|セクション グループを含むセクション グループ。読み取り専用です。|
-|sectionGroups|[SectionGroup](sectiongroup.md) コレクション|セクション内のセクション グループ。読み取り専用です。Null 許容型。|
-|sections|[Section](section.md) コレクション|セクション グループ内のセクション。読み取り専用です。Null 許容型。|
+|parentNotebook|[Notebook](notebook.md)|セクショングループを含むノートブック。 読み取り専用です。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|セクショングループを含むセクショングループ。 読み取り専用。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|セクション内のセクショングループ。 読み取り専用。 Null 許容型。|
+|セクション|[Section](section.md)コレクション|セクショングループ内のセクション。 読み取り専用。 Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get section group](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |セクション グループのプロパティとリレーションシップを読み取ります。|
-|[Create section group](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 指定したセクション グループで sectionGroup コレクションに投稿してセクション グループを作成します。|
-|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) コレクション| 指定されたセクション グループ内のセクション グループのコレクションを取得します。|
-|[Create section](../api/sectiongroup-post-sections.md) |[Section](section.md)| 指定されたセクション グループでセクションのコレクションを投稿してセクションを作成します。|
-|[List sections](../api/sectiongroup-list-sections.md) |[Section](section.md) コレクション| 指定されたセクション グループ内のセクションのコレクションを取得します。|
+|[セクション グループを取得する](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |セクショングループのプロパティとリレーションシップを読み取ります。|
+|[セクション グループを作成する](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 指定したセクショングループの sectiongroups コレクションに投稿して、セクショングループを作成します。|
+|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 指定したセクショングループ内のセクショングループのコレクションを取得します。|
+|[セクションを作成する](../api/sectiongroup-post-sections.md) |[Section](section.md)| 指定したセクショングループ内の sections コレクションに投稿してセクションを作成します。|
+|[List sections](../api/sectiongroup-list-sections.md) |[Section](section.md)コレクション| 指定したセクショングループ内のセクションのコレクションを取得します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

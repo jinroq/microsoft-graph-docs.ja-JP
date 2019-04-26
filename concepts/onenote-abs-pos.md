@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981169"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560934"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>OneNote ページで絶対位置を指定した要素を作成する
 
@@ -21,17 +21,17 @@ OneNote ページの本文には、直接の子要素 `div`、`img`、`object` �
 
 次に示すように、`data-absolute-enabled` 属性および [`style`](#supported-css-style-attributes) 属性を使用して、ページ上に絶対配置要素を作成します。
 
-- body 要素は、`data-absolute-enabled="true"` を指定する必要があります。省略したり `false` に設定したりすると、API によって作成される `_default` 絶対配置 div の内側にすべての本文のコンテンツが表示され、すべての位置設定が無視されます。
+- body 要素は、`data-absolute-enabled="true"` を指定する必要があります。 省略したり `false` に設定したりすると、API によって作成される `_default` 絶対配置 div の内側にすべての本文のコンテンツが表示され、すべての位置設定が無視されます。
 
 - `div`、`img`、および `object` 要素のみが絶対配置要素になります。 
 
 - 絶対配置要素は、`style="position:absolute"` を指定する必要があります。
 
-- 絶対配置要素は、`body` 要素の直接の子にする必要があります。body の直接の子要素が絶対配置でない `div`、`img`、または `object` 要素の場合は、絶対配置の `_default` div の内側に静的コンテンツとして表示されます。
+- 絶対配置要素は、`body` 要素の直接の子にする必要があります。 body の直接の子要素が絶対配置でない `div`、`img`、または `object` 要素の場合は、絶対配置の `_default` div の内側に静的コンテンツとして表示されます。
 
 - 絶対配置要素は、指定された上と左の座標 (開始位置 0:0 を基準とした、タイトル領域の上部でページの左隅) に配置されます。
 
-- 絶対配置要素が top または left の座標を省略していると、不足している座標には既定値の `top:120px` または `left:48px` が設定されます。これらの既定の座標は、title エリアの直下の位置を指定します。座標を省略すると、複数の要素の上部が積み重なることがある点に注意してください。
+- 絶対配置要素が top または left の座標を省略していると、不足している座標には既定値の `top:120px` または `left:48px` が設定されます。 これらの既定の座標は、title エリアの直下の位置を指定します。 座標を省略すると、複数の要素の上部が積み重なることがある点に注意してください。
 
 - 絶対配置要素は、入れ子状態にしたり、定位置要素を含めたりすることはできません。API は、絶対配置の div 内の入れ子型の要素で指定された位置設定をすべて無視し、絶対配置の親 div 内の入れ子型のコンテンツを表示するとともに、応答の **api.diagnostics** プロパティで警告を返します。
 
@@ -99,7 +99,7 @@ OneNote API は入力 HTML を評価し、OneNote によりサポートされる
 
 ![絶対配置の div とイメージのある結果のページ](images/abs-pos.png)
 
-入力 HTML から変更された、作用していない入れ子になった div に注意してください。API は div のコンテンツを保持しますが、`<div>` タグは破棄します。これは、div は意味情報 (`data-id` など) を定義しないためです。
+入力 HTML から変更された、作用していない入れ子になった div に注意してください。 API は div のコンテンツを保持しますが、`<div>` タグは破棄します。これは、div は意味情報 (`data-id` など) を定義しないためです。
 
 OneNote API が入力 HTML と出力 HTML を処理する方法の詳細については、「[OneNote ページの入力 HTML と出力 HTML](onenote-input-output-html.md)」を参照してください。
 
@@ -115,12 +115,12 @@ OneNote API が入力 HTML と出力 HTML を処理する方法の詳細につ�
 
 | 属性 | サポートされる要素 | 説明 |  
 |:------|:------|:------|  
-| top | div、img、object | 要素の上部境界線の Y 軸座標 (ピクセル単位のみ)。既定は 120 ピクセル。<br/><br/>例: `top:140px` |  
-| left |  div、img、object  | 要素の左境界線の X 軸座標 (ピクセル単位のみ)。既定は 48 ピクセル。<br/><br/>例: `left:95px` |  
+| top | div、img、object | 要素の上部境界線の Y 軸座標 (ピクセル単位のみ)。 既定は 120 ピクセル。<br/><br/>例: `top:140px` |  
+| left |  div、img、object  | 要素の左境界線の X 軸座標 (ピクセル単位のみ)。 既定は 48 ピクセル。<br/><br/>例: `left:95px` |  
 | width |  div、img  | 要素の幅 (ピクセル単位のみ)。<br/><br/>例: `width:480px` |  
-| height | img | 要素の高さ (ピクセル単位のみ)div の場合、高さは実行時に計算されるため、指定された高さの値は無視されます。<br/><br/>例: `height:665px` |  
+| height | img | 要素の高さ (ピクセル単位のみ) div の場合、高さは実行時に計算されるため、指定された高さの値は無視されます。<br/><br/>例: `height:665px` |  
  
-その他の位置属性、たとえば `z-index` などは無視されます。絶対配置の画像には、`data-render-src` または `src` のいずれかを使用できます。
+その他の位置属性 (`z-index` など) は無視されます。 絶対配置のイメージは、`data-render-src` または `src` のいずれかを使用できます。
 
 
 <a name="request-response-info"></a>

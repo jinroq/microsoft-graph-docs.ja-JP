@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563491"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -41,7 +41,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |sourceData|Json|データ ソースに対応する Range オブジェクトです。|
-|seriesBy|文字列|省略可能。 方法の列または行がグラフのデータ系列として使用されるかを指定します。 次のいずれか: 自動 (既定)、行、列です。  可能な値: `Auto`、 `Columns`、 `Rows`。|
+|seriesBy|string|省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 Auto (既定)、行、列のいずれかをすることができます。  使用可能な値: `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>応答
 

@@ -5,13 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ba5d98796807be0ad1bb6eb58bb55fd8eb00fb84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561818"
 ---
 # <a name="create-acceptedsender"></a>AcceptedSender の作成
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 AcceptedSender リストに新しいユーザーやグループを追加します。
 
 `@odata.id` 内のユーザーやグループを要求の本文で指定します。承諾済み送信者リスト内のユーザーは、グループに会話を投稿できません。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
@@ -49,12 +52,12 @@ POST /groups/{id}/acceptedSenders/$ref
   "name": "create_acceptedsender"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
+POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
 
@@ -70,10 +73,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

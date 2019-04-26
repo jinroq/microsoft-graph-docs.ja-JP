@@ -1,15 +1,15 @@
 ---
 title: securityVendorInformation リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364585"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583248"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation リソースの種類
 
@@ -22,9 +22,9 @@ ms.locfileid: "30364585"
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |供給 |String|特定のプロバイダー (製品/サービス-ベンダー会社ではない)。たとえば、windowsdefenderatp のようになります。|
-|providerversion|String|通知を生成したプロバイダーまたはサブプロバイダのバージョン (存在する場合)。 **Required**|
+|providerversion|String|通知を生成したプロバイダーまたはサブプロバイダのバージョン (存在する場合)。 **必須**|
 |subprovider|String|特定のサブプロバイダ (集計プロバイダーの場合)。たとえば、windowsdefenderatp。|
-|ベンダ |String|通知ベンダーの名前 (Microsoft、Dell、焼討アイなど)。 **Required**|
+|ベンダ |String|通知ベンダーの名前 (Microsoft、Dell、焼討アイなど)。 **必須**|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -56,8 +56,6 @@ folllowing は、リソースの JSON 表記です。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securityvendorinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

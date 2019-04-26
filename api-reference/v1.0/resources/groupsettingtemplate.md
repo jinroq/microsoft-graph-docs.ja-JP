@@ -1,35 +1,35 @@
 ---
-title: groupSettingTemplate リソースの種類
-description: グループ設定テンプレートは、テナントが使用できるシステム定義の設定を表します。グループ設定は、使用可能な **groupSettingTemplates** に基づいて作成することができ、値は事前設定された既定値から変更することができます。グループ設定テンプレートの作成、更新、削除はできません。これらの設定は、テナント全体の設定または特定のグループ設定を表すことができます。現時点では、利用可能なテンプレートは Office 365 グループのみに適用され、そこでユーザーがグループを作成したり、組織外からゲストをグループのメンバーに招待できるかどうかなどの設定をすることができます。
+title: groupsettingtemplate リソースの種類
+description: グループ設定テンプレートは、テナントで使用可能なシステム定義の設定を表します。 使用可能な**groupsettingtemplates**に基づいてグループ設定を作成し、既定の既定値から変更された値を作成できます。 グループ設定テンプレートを作成、更新、または削除することはできません。 これらの設定は、テナント全体の設定、または特定のグループ設定を表すことができます。 現時点では、使用可能なテンプレートは Office 365 グループにのみ適用され、グループのメンバーになるようにユーザーがグループを作成できるかどうか、または組織外からゲストを招待するかどうかなどの設定を含めることができます。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2b9b95303b72bc111f045010e71459f541e9a9b8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570793"
 ---
-# <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate リソースの種類
+# <a name="groupsettingtemplate-resource-type"></a>groupsettingtemplate リソースの種類
 
-グループ設定テンプレートは、テナントが使用できるシステム定義の設定を表します。[グループ設定](groupsetting.md)は、使用可能な **groupSettingTemplates** に基づいて作成することができ、値は事前設定された既定値から変更することができます。グループ設定テンプレートの作成、更新、削除はできません。これらの設定は、テナント全体の設定または特定のグループ設定を表すことができます。現時点では、利用可能なテンプレートは Office 365 グループのみに適用され、そこでユーザーがグループを作成したり、組織外からゲストをグループのメンバーに招待できるかどうかなどの設定をすることができます。
+グループ設定テンプレートは、テナントで使用可能なシステム定義の設定を表します。 使用可能な**groupsettingtemplates**に基づいて[グループ設定](groupsetting.md)を作成し、既定の既定値から変更された値を作成できます。 グループ設定テンプレートを作成、更新、または削除することはできません。 これらの設定は、テナント全体の設定、または特定のグループ設定を表すことができます。 現時点では、使用可能なテンプレートは Office 365 グループにのみ適用され、グループのメンバーになるようにユーザーがグループを作成できるかどうか、または組織外からゲストを招待するかどうかなどの設定を含めることができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[groupSettingTemplate の取得](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | システムで定義された groupSettingTemplate オブジェクトの特定のプロパティを読み込みます。 |
-|[groupSettingTemplate のリスト](../api/groupsettingtemplate-list.md) | [GroupSettingTemplate のコレクション](groupsettingtemplate.md) |システムで定義された groupSettingTemplate オブジェクトをすべて一覧表示します。|
+|[groupsettingtemplate の取得](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | システム定義のいずれかの groupsettingtemplate オブジェクトの特定のプロパティを読み取ります。 |
+|[groupsettingtemplate の一覧表示](../api/groupsettingtemplate-list.md) | [groupsettingtemplate のコレクション](groupsettingtemplate.md) |システム定義のすべての groupsettingtemplate オブジェクトを一覧表示します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|説明|文字列| テンプレートの説明です。 |
-|displayName|文字列| テンプレートの表示名です。 |
-|id|文字列| テンプレートの一意識別子です。読み取り専用です。|
-|値|[settingTemplateValue](settingtemplatevalue.md) コレクション| このテンプレートを構成する、一連の利用可能な設定、既定値、種類を一覧表示する settingTemplateValues のコレクションです。 |
+|description|String| テンプレートの説明。 |
+|displayName|String| テンプレートの表示名。 |
+|id|String| テンプレートの一意識別子。 読み取り専用です。|
+|values|[settingtemplatevalue](settingtemplatevalue.md)コレクション| このテンプレートを構成する、使用可能な設定、既定値、および種類のセットを一覧表示する settingtemplatevalues のコレクションです。 |
 
 ## <a name="relationships"></a>リレーションシップ
 

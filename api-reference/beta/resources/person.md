@@ -1,21 +1,21 @@
 ---
 title: person リソースの種類
-description: メール、連絡先、ソーシャル ネットワークの間でのユーザーに関する情報を集計します。 ユーザーは、個人用の連絡先、ソーシャル ネットワー キングの連絡先、組織のディレクトリ、およびユーザーの最新の通信 (電子メール、Skype など) を使用できます。
+description: メール、連絡先、ソーシャルネットワークにわたる個人に関する情報の集約。 ユーザーは、ローカルの連絡先、ソーシャルネットワーキングからの連絡先、組織のディレクトリ、および最近のコミュニケーション (電子メールや Skype など) の人物であることができます。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561475"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メール、連絡先、ソーシャル ネットワークの間でのユーザーに関する情報を集計します。 ユーザーは、個人用の連絡先、ソーシャル ネットワー キングの連絡先、組織のディレクトリ、およびユーザーの最新の通信 (電子メール、Skype など) を使用できます。
+メール、連絡先、ソーシャルネットワークにわたる個人に関する情報の集約。 ユーザーは、ローカルの連絡先、ソーシャルネットワーキングからの連絡先、組織のディレクトリ、および最近のコミュニケーション (電子メールや Skype など) の人物であることができます。
 
 ## <a name="methods"></a>メソッド
 
@@ -31,20 +31,20 @@ ms.locfileid: "29512403"
 |companyName|string|人物の会社名。|
 |department|string|人物の部署。|
 |displayName|string|人物の表示名。|
-|emailAddresses|[rankedEmailAddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
+|emailAddresses|[rankedemailaddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
 |givenName|string|人物に指定された名前。|
-|id|文字列|人物の一意の識別子。読み取り専用です。|
-|isFavorite|boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
-|MailboxType|string|相手の電子メール アドレスで表されるメールボックスの種類です。|
+|id|string|個人の一意識別子。 読み取り専用です。|
+|isFavorite|ブール値|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
+|mailboxType|string|ユーザーの電子メールアドレスによって表されるメールボックスの種類。|
 |officeLocation|string|人物のオフィスの所在地。|
 |personNotes|string|ユーザーがこの人物について記入した自由形式のメモ。|
-|personType|string|配布リストなど、ユーザーの種類。|
+|personType|string|ユーザーの種類 (例: 配布リスト)。|
 |phones|[phone](phone.md) コレクション|人物の電話番号。|
 |postalAddresses|[location](location.md) コレクション|人物のアドレス。|
 |profession|string|人物の職業。|
-|ソース|[personDataSource](persondatasource.md)コレクション|ソース ユーザー データからのもの、たとえば、ディレクトリ、または Outlook の連絡先です。|
+|sources|[個人データソース](persondatasource.md)コレクション|ユーザーデータの取得元となるソース (ディレクトリまたは Outlook 連絡先など)。|
 |surname|string|人物の姓。|
-|タイトル|文字列|人のタイトルです。|
+|title|string|個人の役職。|
 |userPrincipalName|string|人物のユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) に基づいた、個人のインターネット スタイルのログイン名です。規則では、これは個人の電子メール名にマップされる必要があります。一般的な書式は alias@domain になります。|
 |websites|[website](website.md) コレクション|人物の Web サイト。|
 |yomiCompany|string|人物の会社の日本名の読み仮名。|
@@ -101,8 +101,6 @@ ms.locfileid: "29512403"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

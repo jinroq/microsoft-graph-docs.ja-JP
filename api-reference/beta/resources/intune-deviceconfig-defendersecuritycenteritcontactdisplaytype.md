@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3baa7b83679a94b67fdccc6172eb81c7b616a9b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563715"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defendersecurityセンター itcontactdisplaytype 列挙型
 
@@ -23,9 +23,9 @@ defendersecurityセンター itcontactdisplay に指定できる値
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|Not Configured|
-|displayinappandinnotifications|1-d|アプリと通知に表示|
-|displayonlyinapp|pbm-2|アプリにのみ表示する|
-|displayonlyinnotifications|1/3|通知にのみ表示する|
+|displayinappandinnotifications|1 |アプリと通知に表示|
+|displayonlyinapp|2 |アプリにのみ表示する|
+|displayonlyinnotifications|3 |通知にのみ表示する|
 
 
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 96ececfce4800560b1f2ae625d12e67d10f3f325
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965776"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521805"
 ---
 # <a name="assignlicense"></a>assignLicense
 ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense コレクション|追加するライセンスを指定する [assignedLicense](../resources/assignedlicense.md) オブジェクトのコレクションです。[assignedLicense](../resources/assignedlicense.md) オブジェクト上で **disabledPlans** プロパティを設定すると、ライセンスに関連付けられたプランを無効にできます。|
+|addLicenses|AssignedLicense collection|追加するライセンスを指定する [assignedLicense](../resources/assignedlicense.md) オブジェクトのコレクションです。[assignedLicense](../resources/assignedlicense.md) オブジェクト上で **disabledPlans** プロパティを設定すると、ライセンスに関連付けられたプランを無効にできます。|
 |removeLicenses|Guid コレクション|削除するライセンスを識別する GUID のコレクションです。|
 
 ## <a name="response"></a>応答

@@ -1,42 +1,42 @@
 ---
-title: ネットワーク接続リソースの種類
+title: networkConnection リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
 localization_priority: Normal
 ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643588"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570723"
 ---
-# <a name="networkconnection-resource-type"></a>ネットワーク接続リソースの種類
+# <a name="networkconnection-resource-type"></a>networkConnection リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-アラートに関連するネットワーク接続に関するステートフルな情報が含まれています。
+通知に関連するネットワーク接続に関するステートフルな情報を含みます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|applicationName|String|ネットワーク接続 (たとえば、Facebook、SMTP など) を管理するアプリケーションの名前です。|
-|destinationAddress|String|宛先 IP アドレス (ネットワーク接続)。|
-|destinationDomain|String|リンク先の URL のリンク先のドメイン部分です。 (たとえば ' www.contoso.com')。|
-|destinationPort|String|宛先ポート (ネットワーク接続)。|
-|destinationUrl|String|ネットワークの接続の URL または URI 文字列のパラメーターを除外します。 (たとえば ' www.contoso.com/products/default.html')|
-|direction|connectionDirection|ネットワーク接続の方向です。 可能な値は、`unknown`、`inbound`、`outbound` です。|
-|domainRegisteredDateTime|DateTimeOffset|移行先のドメインが登録された日付です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|localDnsName|String|ローカル DNS 名前解決などの場合に 'ホスト' ファイルが改ざんされて)、ホストのローカル DNS キャッシュに表示されています。|
-|natDestinationAddress|String|ネットワーク アドレス変換の宛先 IP アドレスを示します。|
-|natDestinationPort|String|ネットワーク アドレス変換の送信先のポートを示します。|
-|natSourceAddress|String|ネットワーク アドレス変換の送信元 IP アドレスです。|
-|natSourcePort|String|ネットワーク アドレス変換のソース ポートです。|
-|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|ネットワーク プロトコルです。 使用可能な値: `unknown`、 `ip`、 `icmp`、 `igmp`、 `ggp`、 `ipv4`、 `tcp`、 `pup`、 `udp`、 `idp`、 `ipv6`、 `ipv6RoutingHeader`、 `ipv6FragmentHeader`、 `ipSecEncapsulatingSecurityPayload`、 `ipSecAuthenticationHeader`、 `icmpV6`、 `ipv6NoNextHeader`、 `ipv6DestinationOptions`、 `nd`, `raw`, `ipx`, `spx`, `spxII`.|
-|riskScore|String|プロバイダー生成された計算されるスコアのネットワーク接続の可能性があります。 0 - 1 パーセントに相当する値の範囲をお勧めします。|
-|発信元アドレス|String|(ネットワーク接続) の IP アドレスをソース (つまり原点)。|
-|sourcePort|String|(ネットワーク接続) の IP ポートをソース (つまり原点)。|
-|status|connectionStatus|ネットワーク接続の状態です。 可能な値は、`unknown`、`attempted`、`succeeded`、`blocked`、`failed` です。|
-|urlParameters|String|リンク先の URL のパラメーター (サフィックス) にします。|
+|applicationName|String|ネットワーク接続を管理しているアプリケーションの名前 (例: Facebook、SMTP など)。|
+|destinationaddress|String|宛先 IP アドレス (ネットワーク接続の場合)。|
+|destinationdomain|String|宛先 URL の宛先ドメイン部分。 (' www.contoso.com ' など)。|
+|destinationport|String|宛先ポート (ネットワーク接続の場合)。|
+|destinationurl|String|ネットワーク接続 URL/URI 文字列。パラメーターを除外します。 (' www.contoso.com/products/default.html ' など)|
+|direction|connectionDirection|ネットワーク接続の方向。 可能な値は `unknown`、`inbound`、`outbound` です。|
+|domainregistereddatetime|DateTimeOffset|宛先ドメインが登録された日付。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|localDnsName|String|ホストのローカル dns キャッシュに表示されるローカル dns 名解決方法 (たとえば、' hosts ' ファイルが改ざんされた場合)。|
+|natDestinationAddress|String|ネットワークアドレス変換先 IP アドレス。|
+|natDestinationPort|String|ネットワークアドレス変換先ポート。|
+|natSourceAddress|String|ネットワークアドレス変換の送信元 IP アドレス。|
+|natSourcePort|String|ネットワークアドレス変換元ポート。|
+|プロトコール|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|ネットワークプロトコル。 可能な値: `unknown`、 `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader`、、、、、、、、、、、、 `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|riskScore|String|プロバイダーが生成/計算したネットワーク接続のリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
+|sourceaddress|String|ソース (起点) IP アドレス (ネットワーク接続の場合)。|
+|sourceport|String|ソース (起点) IP ポート (ネットワーク接続の場合)。|
+|status|connectionStatus|ネットワーク接続の状態。 可能な値は、`unknown`、`attempted`、`succeeded`、`blocked`、`failed` です。|
+|urlparameters|String|宛先 URL のパラメーター (サフィックス)。|
 
 ## <a name="json-representation"></a>JSON 表記
 
