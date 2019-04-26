@@ -1,28 +1,28 @@
 ---
-title: synchronizationTemplate リソースの種類
-description: " すべてのユーザーは、同期スキーマを含む、既定の設定を表示するテンプレートを取得できます。"
+title: 同期テンプレートリソースの種類
+description: " すべてのユーザーがテンプレートを取得して、同期スキーマを含む既定の設定を確認できます。"
 localization_priority: Normal
 ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561209"
 ---
-# <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate リソースの種類
+# <a name="synchronizationtemplate-resource-type"></a>同期テンプレートリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のアプリケーションの構成済みの同期設定を提供します。 これらの設定は、テンプレートに基づくすべての[同期ジョブ](synchronization-synchronizationjob.md)の既定で使用されます。 アプリケーション開発者は、テンプレートを指定します。すべてのユーザーは、[同期スキーマ](synchronization-synchronizationschema.md)を含む、既定の設定を表示するテンプレートを取得できます。
+特定のアプリケーションに事前に構成された同期設定を提供します。 これらの設定は、テンプレートに基づくすべての[同期ジョブ](synchronization-synchronizationjob.md)に対して既定で使用されます。 アプリケーション開発者は、テンプレートを指定します。すべてのユーザーがテンプレートを取得して、[同期スキーマ](synchronization-synchronizationschema.md)を含む既定の設定を確認できます。
 
-アプリケーションは、複数のテンプレートを提供し、既定のテンプレートを指定できます。 関心のアプリケーションの複数のテンプレートがある場合は、お客様のニーズに最も適したどちらかを決定するアプリケーション固有のガイダンスをシークします。
+アプリケーションに対して複数のテンプレートを提供し、既定のテンプレートを指定することができます。 目的のアプリケーションで複数のテンプレートが使用可能な場合は、アプリケーション固有のガイダンスを検索して、ニーズに最適なものを決定します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド        | 戻り値の型               | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)コレクション  |アプリケーションまたはアプリケーションのインスタンス (サービス主体) の使用可能なテンプレートの一覧を表示します。|
-|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |プロパティと**synchronizationTemplate**オブジェクトの関係を参照してください。|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |[同期テンプレート](synchronization-synchronizationtemplate.md)のコレクション  |アプリケーションまたはアプリケーションインスタンス (サービスプリンシパル) に対して使用可能なテンプレートを一覧表示します。|
+|[取得](../api/synchronization-synchronizationtemplate-get.md)      |[同期テンプレート](synchronization-synchronizationtemplate.md)   |**同期テンプレート**オブジェクトのプロパティとリレーションシップを読み取ります。|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -32,18 +32,18 @@ ms.locfileid: "29516554"
 
 | プロパティ      | 型                      | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |文字列                     |テンプレートの一意の識別子です。|
-|applicationId  |文字列型 (String)                     |このテンプレートが属するアプリケーションの識別子です。|
-|既定値です。        |ブール値                    |`true`場合は、アプリケーションの既定の設定をするのには、このテンプレートをお勧めします。|
-|説明    |String                     |テンプレートの説明です。|
-|検出可能   |String                     |`true`このテンプレートは、アプリケーションのインスタンス (サービス主体) の使用可能なテンプレートのコレクションに表示されます。 場合、|
-|factoryTag     |String                     |同期エンジンでサポートされている既知の工場出荷時のタグの 1 つです。 **FactoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンを指示します。|
-|metadata       |metadataEntry コレクション   |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
+|id             |String                     |一意のテンプレート識別子。|
+|applicationId  |String                     |このテンプレートが属しているアプリケーションの識別子。|
+|既定値です。        |ブール値                    |`true`このテンプレートをアプリケーションの既定として使用することをお勧めします。|
+|description    |String                     |テンプレートの説明。|
+|発見   |String                     |`true`このテンプレートをアプリケーションインスタンス (サービスプリンシパル) で使用可能なテンプレートのコレクションに表示する必要がある場合。|
+|factoryTag     |String                     |同期エンジンでサポートされている、既知の出荷済みのタグの1つ。 **factoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンに通知します。|
+|metadata       |metadataentry コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ      | 型      |説明|
 |:------------------|:----------|:----------|
-|スキーマ             |[synchronizationSchema](synchronization-synchronizationschema.md)     |このテンプレートに基づいて、ジョブの既定の同期スキーマです。|
+|スキーマ             |[同期スキーマ](synchronization-synchronizationschema.md)     |このテンプレートに基づくジョブの既定の同期スキーマ。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -54,6 +54,7 @@ ms.locfileid: "29516554"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronizationTemplate"
 }-->
 
@@ -80,8 +81,6 @@ ms.locfileid: "29516554"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

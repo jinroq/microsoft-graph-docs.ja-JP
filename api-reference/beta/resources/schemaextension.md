@@ -4,11 +4,11 @@ description: 'スキーマの拡張機能を使用すると、拡張するスキ
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 90acbfb0e7a6b031303ae3286f1a5ed366a2a8c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562959"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
@@ -23,8 +23,8 @@ ms.locfileid: "29523856"
  - [device](device.md)
  - ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
  - Office 365 グループの [post](post.md)
- - [group](group.md)
- - [message](message.md) 
+ - [グループ](group.md)
+ - [メッセージ](message.md) 
  - [organization](organization.md)
  - [user](user.md)
 
@@ -35,20 +35,20 @@ ms.locfileid: "29523856"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension |スキーマ拡張機能の定義を作成します。|
-|[List](../api/schemaextension-list.md) | schemaExtension |Avaialbe schemaExtension の定義とそのプロパティを一覧表示します。|
+|[List](../api/schemaextension-list.md) | schemaExtension |avaialbe schemaextension 日とそのプロパティを一覧表示します。|
 |[Get](../api/schemaextension-get.md) | schemaExtension |特定の schemaExtension 定義のプロパティを読み取ります。|
 |[Update](../api/schemaextension-update.md) | schemaExtension   |schemaExtension 定義を更新します。 |
-|[Delete](../api/schemaextension-delete.md) | なし |schemaExtension 定義を削除します。 |
+|[削除](../api/schemaextension-delete.md) | なし |schemaExtension 定義を削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|説明|文字列|スキーマ拡張機能の説明。|
-|id|文字列|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
+|description|String|スキーマ拡張機能の説明。|
+|id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
 |owner|String|スキーマ拡張機能の所有者であるアプリケーションの `appId` です。 このプロパティは作成時に指定して所有者を設定できます。  指定しない場合、呼び出し元のアプリケーションの `appId` が所有者として設定されます。 どちらの場合も、サインインしたユーザーがアプリケーションの所有者でなければなりません。 設定すると、このプロパティは読み取り専用で、変更することはできません。|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティ名と種類のコレクション。|
-|status|文字列型 (String)|スキーマ拡張機能のライフサイクル状態。考えられる状態は、**InDevelopment**、**Available**、および **Deprecated** です。作成時に自動で **InDevelopment** に設定されます。考えられる状態遷移と動作の詳細については、「[スキーマ拡張機能](/graph/extensibility-overview#schema-extensions)」をご覧ください。|
-|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。 **AdministrativeUnit****にお問い合わせください**、**デバイス**、**イベント**、**グループ**、**メッセージ**、**組織**、**投稿**、または**ユーザー**から選択します。|
+|status|String|スキーマ拡張機能のライフサイクル状態。 考えられる状態は、**InDevelopment**、**Available**、および **Deprecated** です。 作成時に自動で **InDevelopment** に設定されます。 考えられる状態遷移と動作の詳細については、「[スキーマ拡張機能](/graph/extensibility-overview#schema-extensions)」をご覧ください。|
+|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。 **administrativeUnit**、**連絡先**、**デバイス**、**イベント**、**グループ**、**メッセージ**、**組織**、**投稿**、**ユーザー**のいずれかを選択します。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -83,8 +83,6 @@ ms.locfileid: "29523856"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schemaextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

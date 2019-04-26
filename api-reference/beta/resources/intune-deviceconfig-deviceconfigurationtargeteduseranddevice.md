@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b2ddd31671f8cd277dbc7390c8c561189b6c0e3f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567264"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice リソースの種類
 
@@ -22,14 +22,14 @@ ms.locfileid: "31773001"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|deviceId|文字列|チェックイン内のデバイスの id。|
-|deviceName|文字列|チェックイン内のデバイスの名前。|
+|deviceId|String|チェックイン内のデバイスの id。|
+|deviceName|String|チェックイン内のデバイスの名前。|
 |userId|String|チェックイン内のユーザーの id。|
-|userDisplayName|文字列|チェックイン内のユーザーの表示名|
+|userDisplayName|String|チェックイン内のユーザーの表示名|
 |userPrincipalName|String|チェックイン内のユーザーの UPN。|
 |lastCheckinDateTime|DateTimeOffset|このユーザー/デバイスのペアの最終チェックイン時刻。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800400"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561181"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook リソースの種類
 
@@ -22,23 +22,23 @@ ms.locfileid: "31800400"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedEBooks のリスト](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) コレクション|[managedEBook](../resources/intune-books-managedebook.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|[managedEBook](../resources/intune-books-managedebook.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[managedEBook のリスト](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) コレクション|[managedEBook](../resources/intune-books-managedebook.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedEBook の取得](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|[managedEBook](../resources/intune-books-managedebook.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[アクションの割り当て](../api/intune-books-managedebook-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |displayName|String|電子ブックの名前。|
-|説明|文字列型 (String)|説明。|
+|description|文字列型 (String)|説明。|
 |publisher|String|発行元です。|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。|
 |informationUrl|String|詳細情報の URL。|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
