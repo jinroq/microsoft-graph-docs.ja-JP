@@ -4,12 +4,12 @@ description: チームのチャネル内のメッセージのすべての返信�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c3c681c820f4cc855105ec1605be920a98a1430
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 377d574a037010e4a441406506af4764784145e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456459"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328106"
 ---
 # <a name="list-channel-message-replies"></a>チャネルメッセージの返信を一覧表示する
 
@@ -36,7 +36,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-[$top](/graph/query-parameters#top-parameter)クエリパラメーターを使用して、応答あたりのアイテム数を制御できます。 その他の[OData クエリパラメーター](/graph/query-parameters)は現在サポートされていません。
+[$top](/graph/query-parameters#top-parameter)クエリ パラメーターで応答ごとのアイテム数を制御することができます。 その他の[OData クエリ パラメーター](/graph/query-parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -196,8 +196,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messagereplies.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

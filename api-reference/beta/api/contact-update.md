@@ -4,12 +4,12 @@ description: 連絡先オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0aedb4b4e07409af0ae8c47c4393f4532f91660
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455700"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327493"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -59,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String||
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|文字列型 (String)|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
+|displayName|文字列|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)コレクション|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |gender |String |連絡先の性別。 |
@@ -76,9 +76,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |phones |[phone](../resources/phone.md) コレクション |自宅電話、携帯電話、勤務先電話など、連絡先に関連付けられた電話番号。 |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md)コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
-|profession|文字列|連絡先の専門的職業。|
+|profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|surname|String|連絡先の姓。|
+|surname|文字列|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |websites |[website](../resources/website.md) コレクション|連絡先に関連付けられた Web サイト。 |
 |weddinganniversary 日 |日付 |連絡先の結婚記念日。 |
@@ -219,8 +219,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

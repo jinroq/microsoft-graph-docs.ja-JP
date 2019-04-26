@@ -1,15 +1,15 @@
 ---
-title: Update chartfont
-description: chartfont オブジェクトのプロパティを更新します。
+title: workbookChartFont の更新
+description: workbookChartFont オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1228a49815419a077fd6999a400f4d720b6724f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456514"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327752"
 ---
 # <a name="update-chartfont"></a>Update chartfont
 
@@ -28,9 +28,9 @@ chartfont オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
@@ -43,7 +43,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bold|ブール値|フォントの太字の状態を表します。|
+|bold|boolean|フォントの太字の状態を表します。|
 |color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
 |name|string|フォント名 (例: "Calibri")|
@@ -52,7 +52,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartFont](../resources/chartfont.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookChartFont](../resources/workbookchartfont.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -61,7 +61,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -79,7 +79,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -105,8 +105,6 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

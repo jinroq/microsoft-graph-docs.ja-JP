@@ -4,16 +4,16 @@ description: 指定したチームにインストールされているアプリ�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 957c2593e714c215a1697c2f03b53ef95cb72603
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544580"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330271"
 ---
 # <a name="list-apps-in-team"></a>チームのアプリを一覧表示する
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した[チーム](../resources/team.md)に[インストールされているアプリ](../resources/teamsappinstallation.md)のリストを取得します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32544580"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All    |
+|アプリケーション | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,7 +35,7 @@ ms.locfileid: "32544580"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
@@ -64,7 +64,7 @@ GET /teams/{id}/installedApps
 }-->
 
 ```http
-GET /teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>応答
@@ -103,7 +103,7 @@ Content-length: 55
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>応答
@@ -158,10 +158,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List owners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

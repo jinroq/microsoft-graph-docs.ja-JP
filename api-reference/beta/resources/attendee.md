@@ -2,14 +2,16 @@
 title: 参加者リソースの種類
 description: イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
 localization_priority: Normal
-ms.openlocfilehash: d50b6756c7d0077ec95f10988d06fa2ff81631fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12512ea274e549cacba364fb394a3346e6bfee56
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544086"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328622"
 ---
 # <a name="attendee-resource-type"></a>参加者リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
 
@@ -28,7 +30,6 @@ ms.locfileid: "32544086"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],
@@ -47,10 +48,13 @@ ms.locfileid: "32544086"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attendee resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

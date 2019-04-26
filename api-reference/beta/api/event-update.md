@@ -4,12 +4,12 @@ description: event オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec274fb0e850a3a18b3722e27bbe394986459cbb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464035"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329807"
 ---
 # <a name="update-event"></a>イベントを更新する
 
@@ -61,13 +61,13 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | end|DateTimeTimeZone|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。 EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。 EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
 | importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
 | isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
-| isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
-| location|場所|イベントの場所。|
+| isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+| location|Location|イベントの場所。|
 |locations|[Location](../resources/location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 | recurrence|PatternedRecurrence|イベントの繰り返しパターン。|
 | reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-| responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
-| sensitivity|文字列| 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
+| responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
+| sensitivity|文字列| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 | showAs|String|表示するステータス。 可能な値は`free` 、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。|
 | 開始|DateTimeTimeZone|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。 EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。 StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
 | subject|String|イベントの件名行のテキスト。|
@@ -153,8 +153,6 @@ Content-length: 285
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

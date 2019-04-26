@@ -1,15 +1,15 @@
 ---
 title: bookingStaffMember リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 72130f46dc67d4491f9855706528ee5894b8352f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d7461137c1a67d163d750b05fa056a17071561f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543762"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328296"
 ---
 # <a name="bookingstaffmember-resource-type"></a>bookingStaffMember リソースの種類
 
@@ -32,19 +32,19 @@ ms.locfileid: "32543762"
 |[スタッフメンバーを一覧表示する](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md)コレクション | 指定した[bookingbusiness](../resources/bookingbusiness.md)の**bookingStaffMember**オブジェクトのリストを取得します。 |
 |[bookingstaff を作成する](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md)コレクション | 指定した[bookingbusiness](../resources/bookingbusiness.md)で新しい**bookingStaffMember**を作成します。 |
 |[bookingStaffMember を取得する](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |指定した[bookingbusiness](../resources/bookingbusiness.md)の**bookingStaffMember**のプロパティとリレーションシップを取得します。|
-|[更新](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |指定した[bookingbusiness](../resources/bookingbusiness.md)の**bookingStaffMember**のプロパティを更新します。|
-|[削除](../api/bookingstaffmember-delete.md) | なし |指定した[bookingbusiness](../resources/bookingbusiness.md)のスタッフメンバーを削除します。 |
+|[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |指定した[bookingbusiness](../resources/bookingbusiness.md)の**bookingStaffMember**のプロパティを更新します。|
+|[Delete](../api/bookingstaffmember-delete.md) | なし |指定した[bookingbusiness](../resources/bookingbusiness.md)のスタッフメンバーを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|ブール値|True は、スタッフメンバーが office 365 ユーザーの場合、予約 API は、予約を行う前に office 365 の個人用予定表でスタッフメンバーの利用可能性を確認します。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True は、スタッフメンバーが office 365 ユーザーの場合、予約 API は、予約を行う前に office 365 の個人用予定表でスタッフメンバーの利用可能性を確認します。 |
 |colorIndex|Int32|スタッフメンバーを表す色を識別します。 この色は、予約アプリの [**スタッフの詳細**] ページのカラーパレットに対応しています。|
 |displayName|String|スタッフメンバーの名前。顧客に表示されます。 必須です。|
 |emailAddress|String|スタッフメンバーの電子メールアドレス。 これは、ビジネスと同じ Office 365 テナント内、または別の電子メールドメインに配置できます。 この電子メールアドレスは、ビジネスのスケジューリングポリシーで**sendConfirmationsToOwner**プロパティが true に設定されている場合に使用できます。 必須。|
 |id|String| GUID 形式のスタッフメンバーの ID。 読み取り専用。|
-|role|string| 業務のスタッフメンバーの役割。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。 必須です。|
-|useBusinessHours|ブール値|True は、スタッフメンバーの可用性が、ビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティで指定されていることを意味します。 False は、可用性がスタッフメンバーの**workingHours**プロパティの設定によって決定されることを意味します。|
+|role|string| 業務のスタッフメンバーの役割。 使用可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。 必須です。|
+|useBusinessHours|Boolean|True は、スタッフメンバーの可用性が、ビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティで指定されていることを意味します。 False は、可用性がスタッフメンバーの**workingHours**プロパティの設定によって決定されることを意味します。|
 |workingHours|[bookingwork hours](bookingworkhours.md)コレクション|スタッフメンバーが予約に使用できる各曜日の時間の範囲。 既定では、ビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティと同じになるように初期化されます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -86,8 +86,6 @@ ms.locfileid: "32543762"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingstaffmember.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

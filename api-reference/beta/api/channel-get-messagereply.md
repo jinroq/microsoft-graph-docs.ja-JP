@@ -4,12 +4,12 @@ description: チームのチャネル内のメッセージに対して1回の返
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 991adbdef3ded60726d3e3531507547db918b1cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c502ec85f56f251cc010fe665511af00528d459f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456662"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328114"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>チャネルメッセージへの返信を取得する
 
@@ -18,6 +18,7 @@ ms.locfileid: "32456662"
 チームの[チャネル](../resources/channel.md)内の[メッセージ](../resources/chatmessage.md)に対して1回の返信を取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の小さいものから大きいものへ)|
@@ -27,26 +28,34 @@ ms.locfileid: "32456662"
 |アプリケーション| サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chatmessage](../resources/chatmessage.md) オブジェクトのコレクションを返します。
+
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[chatmessage](../resources/chatmessage.md)オブジェクトを返します。
+
 ## <a name="example"></a>例
+
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -141,8 +150,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-get-messagereply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

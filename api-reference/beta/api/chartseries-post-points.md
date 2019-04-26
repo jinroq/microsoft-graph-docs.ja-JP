@@ -4,18 +4,18 @@ description: この API を使用して、新しい ChartPoints を作成しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c9575770bdd93a411daa3ea664cd859476a115c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5862556bee8ad8cc5fa3ed5cf23b30cdbed818c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456025"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327761"
 ---
-# <a name="create-chartpoints"></a>Create ChartPoints
+# <a name="create-chartpoint"></a>chartpoint を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、新しい ChartPoints を作成します。
+この API を使用して、新しい chartpoint を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -28,7 +28,7 @@ ms.locfileid: "32456025"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[ChartPoints](../resources/chartpoint.md) オブジェクトの JSON 表記を指定します。
+要求本文で、 [workbookChartPoint](../resources/workbookchartpoint.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [ChartPoints](../resources/chartpoint.md) オブジェクトを返します。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[workbookChartPoint](../resources/workbookchartpoint.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -52,20 +52,20 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 Content-type: application/json
 Content-length: 3
 
 {
 }
 ```
-要求本文で、[ChartPoints](../resources/chartpoint.md) オブジェクトの JSON 表記を指定します。
+要求本文で、 [workbookChartPoint](../resources/workbookchartpoint.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -85,8 +85,6 @@ Content-length: 3
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartseries-post-points.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

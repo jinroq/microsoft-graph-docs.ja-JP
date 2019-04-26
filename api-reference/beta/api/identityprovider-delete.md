@@ -2,12 +2,12 @@
 title: identityProvider を削除する
 description: 既存の identityProvider を削除します。
 localization_priority: Normal
-ms.openlocfilehash: bb64f10b656697ab2cf611dd9be0468c295b15e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 512d7b1094af967c10cb5ddf6eb2c9178d9d8ad7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501589"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328556"
 ---
 # <a name="delete-identityprovider"></a>identityProvider を削除する
 
@@ -81,8 +81,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

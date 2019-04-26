@@ -1,15 +1,15 @@
 ---
 title: bookingappointment リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c5868788159f0602c1f8a263138c7ce9107c2c94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535523"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328232"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingappointment リソースの種類
 
@@ -25,8 +25,8 @@ Microsoft の予約ビジネスによって提供される、一連のスタッ�
 |[予定を一覧表示する](../api/bookingbusiness-list-appointments.md) |  [bookingappointment](bookingappointment.md)コレクション | 指定した[bookingappointment](../resources/bookingbusiness.md)の**bookingappointment**オブジェクトのリストを取得します。 |
 |[bookingappointment の作成](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | 指定した[bookingappointment](../resources/bookingbusiness.md)の新しい**ブック**を作成します。 |
 |[bookingappointment を取得する](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |**bookingappointment**オブジェクトのプロパティと関係を読み取ります。|
-|[更新](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |**bookingappointment**オブジェクトを更新します。 |
-|[削除](../api/bookingappointment-delete.md) | なし |**bookingappointment**オブジェクトを削除します。 |
+|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |**bookingappointment**オブジェクトを更新します。 |
+|[Delete](../api/bookingappointment-delete.md) | なし |**bookingappointment**オブジェクトを削除します。 |
 |[Cancel](../api/bookingappointment-cancel.md)|なし| **bookingappointment**オブジェクトを取り消します。|
 
 ## <a name="properties"></a>プロパティ
@@ -40,16 +40,16 @@ Microsoft の予約ビジネスによって提供される、一連のスタッ�
 |顧客電話|String|お客様の電話番号。|
 |duration|期間|「文字形式」で示されて[](https://www.iso.org/iso-8601-date-and-time-format.html)いる予定の長さ。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|予定が終了する日付、時刻、タイムゾーン。|
-|id|String| **bookingappointment**の ID。 読み取り専用。|
-|invoiceAmount|倍精度浮動小数点数|請求書の請求金額。|
+|id|String| **bookingappointment**の ID。 読み取り専用です。|
+|invoiceAmount|2 行分|請求書の請求金額。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|この予定の請求書の日付、時刻、タイムゾーン。|
 |invoiceId|String|請求書の ID。|
-|invoiceStatus|string| 請求書の状態。 可能な値は `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective` です。|
+|invoiceStatus|string| 請求書の状態。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft 予約の請求書の URL。|
-|optOutOfCustomerEmail|ブール値|True は、この予定の[bookingcustomer](bookingcustomer.md)が、この予定の確認を受信したくないことを示します。|
+|optOutOfCustomerEmail|Boolean|True は、この予定の[bookingcustomer](bookingcustomer.md)が、この予定の確認を受信したくないことを示します。|
 |postbuffer|期間|予定が終了した後に、クリーンアップのために確保する時間の長さを例として示します。 この値は、" [](https://www.iso.org/iso-8601-date-and-time-format.html) /" という形式で表されます。 |
 |prebuffer|期間|準備のために予定が開始されるまでの時間を例として示します。 この値は、" [](https://www.iso.org/iso-8601-date-and-time-format.html) /" という形式で表されます。|
-|代金|倍精度浮動小数点数|指定した[bookingservice](bookingservice.md)の予定に対する正規の価格。|
+|代金|2 行分|指定した[bookingservice](bookingservice.md)の予定に対する正規の価格。|
 |priceType|string| サービスの価格構造を柔軟に提供するための設定。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
 |isp|[bookingreminder](bookingreminder.md)コレクション|この予定に対して送信された顧客のアラームのコレクションです。 このプロパティの値は、この**bookingappointment**を ID で読み取る場合にのみ使用できます。|
 |selfServiceAppointmentId|String|顧客に代わってスタッフメンバーではなく、顧客が [スケジュール] ページで直接作成された予定の場合は、予定の追加の追跡 ID。|
@@ -118,8 +118,6 @@ Microsoft の予約ビジネスによって提供される、一連のスタッ�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingappointment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

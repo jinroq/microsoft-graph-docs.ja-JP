@@ -2,12 +2,12 @@
 title: agreementFile リソースの種類
 description: テナントが azure Active Directory (azure AD) を使用して管理する、カスタマイズ可能な使用許諾契約書ファイルを表します。 このファイルには、アグリーメントファイルのメタデータが含まれます (たとえば、名前、言語、および既定のファイルであるかどうか)。
 localization_priority: Normal
-ms.openlocfilehash: 446173e83d32af96f938cbee15964ea204a62f7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b914feecfc91d71c525711f725bf4a533d44a6b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535754"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328619"
 ---
 # <a name="agreementfile-resource-type"></a>agreementFile リソースの種類
 
@@ -28,11 +28,11 @@ ms.locfileid: "32535754"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|使用条件を表すデータ。 PDF ドキュメント。 読み取り専用。|
+|fileData|[agreementFileData](agreementfiledata.md)|使用条件を表すデータ。 PDF ドキュメント。 読み取り専用です。|
 |fileName|文字列型 (String)|アグリーメントファイルの名前 (たとえば、「お持ちの形式」)。 読み取り専用です。|
 |id|String|読み取り専用です。|
-|isDefault|ブール型 (Boolean)|クライアントの優先度に一致するカルチャがない場合に、これが既定のアグリーメントファイルであるかどうかを示します。 ファイルが既定として設定されていない場合は、最初のファイルが既定として扱われます。 読み取り専用。|
-|language|String|languagecode2-country/regioncode2 という形式の、アグリーメントファイルのカルチャ。 languagecode2 は、ISO 639-1 から派生した、小文字の2文字のコードです。 country/regioncode2 は ISO 3166 から派生し、通常は2つの大文字または BCP-47 language タグ (例: en-us) で構成されます。 読み取り専用。|
+|isDefault|ブール型 (Boolean)|クライアントの優先度に一致するカルチャがない場合に、これが既定のアグリーメントファイルであるかどうかを示します。 ファイルが既定として設定されていない場合は、最初のファイルが既定として扱われます。 読み取り専用です。|
+|language|String|languagecode2-country/regioncode2 という形式の、アグリーメントファイルのカルチャ。 languagecode2 は、ISO 639-1 から派生した、小文字の2文字のコードです。 country/regioncode2 は ISO 3166 から派生し、通常は2つの大文字または BCP-47 language タグ (例: en-us) で構成されます。 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 なし。
@@ -70,8 +70,6 @@ ms.locfileid: "32535754"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreementfile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

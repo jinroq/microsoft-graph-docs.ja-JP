@@ -4,14 +4,16 @@ description: この API を使用して、ユーザーの上司を割り当て�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4148eb1748680458500dc5a625e6b297e0ca5099
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 777e086a99af68e39b093115502809784e604ec2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536524"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329801"
 ---
 # <a name="assign-a-manager"></a>上司を割り当てる
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、ユーザーの上司を割り当てます。
 > 注:直属の部下を割り当てることはできません。代わりにこの API を使用します。
@@ -72,10 +74,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create member",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

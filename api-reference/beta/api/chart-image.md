@@ -4,12 +4,12 @@ description: 指定したサイズに合わせてグラフを拡大、縮小す�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e82f0600cb43ba515bfb8bee9ecde90e645ea062
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456536"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328141"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -28,7 +28,7 @@ ms.locfileid: "32456536"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET /workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingMode='fit')
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -42,7 +42,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|height|number|省略可能。結果の画像の希望する高さ。|
+|height|番号|省略可能。結果の画像の希望する高さ。|
 |width|number|省略可能。結果の画像の希望する幅。|
 |fittingMode|string|省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。可能な値は、`Fit`、`FitAndCenter`、`Fill` です。|
 
@@ -56,7 +56,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 以下は、要求の例です。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>応答
@@ -92,8 +92,6 @@ HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image 
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chart-image.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

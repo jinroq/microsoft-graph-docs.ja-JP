@@ -1,18 +1,18 @@
 ---
 title: rejectedSenders の一覧表示
-description: 'このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 '
+description: 'このグループの拒否された送信者の一覧に含まれるユーザーまたはグループの一覧を取得します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 5dd03644b91ad847b61350f48792afdaa087d59b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ddabeccd5e09c035eabf0c280fde54bc6db628f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502065"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329591"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
-このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 
+このグループの拒否された送信者の一覧に含まれるユーザーまたはグループの一覧を取得します。 
 
 拒否送信者リスト内のユーザーは、グループの会話に投稿できません (取得要求 URL で識別)。拒否送信者と承認送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
 

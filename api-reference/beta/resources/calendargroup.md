@@ -4,14 +4,16 @@ description: ユーザーカレンダーのグループ。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2503fd7c113b8b55ba090fbc9504145e12596d4e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543776"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328270"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーカレンダーのグループ。
 
@@ -23,7 +25,7 @@ ms.locfileid: "32543776"
 | [予定表グループを作成する](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 新しい予定表グループを作成します。                                  |
 | [予定表グループを取得する](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 予定表グループ オブジェクトのプロパティと関係を読み取ります。 |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | calendarGroup オブジェクトを更新します。                                  |
-| [削除](../api/calendargroup-delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
+| [Delete](../api/calendargroup-delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
 | [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 予定表グループ内の予定表を一覧表示する                           |
 | [予定表を作成する](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | 予定表グループに新しい予定表を作成します。                    |
 
@@ -46,25 +48,13 @@ ms.locfileid: "32543776"
 
 以下は、リソースの JSON 表記です
 
-<!--{
+<!-- {
   "blockType": "resource",
   "optionalProperties": [
     "calendars"
   ],
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.calendarGroup",
-  "@odata.annotations": [
-    {
-      "property": "calendars",
-      "capabilities": {
-        "changeTracking": false,
-        "expandable": false,
-        "navigability": "single",
-        "searchable": false
-      }
-    }
-  ]
+  "@odata.type": "microsoft.graph.calendarGroup"
 }-->
 
 ```json
@@ -79,10 +69,13 @@ ms.locfileid: "32543776"
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendarGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

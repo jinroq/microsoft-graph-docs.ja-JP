@@ -2,12 +2,12 @@
 title: approle リソースの種類
 description: 別のアプリケーションを呼び出しているクライアントアプリケーションによって要求されるか、または指定されたアプリケーションロールのユーザーまたはグループにアプリケーションを割り当てるために使用される可能性があるアプリケーションロールを表します。 serviceprincipal エンティティおよび application エンティティの**approles**プロパティは、 **approles**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ff9c2195b8a1abe52ff505c1a01c86244e332c7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535705"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328523"
 ---
 # <a name="approle-resource-type"></a>approle リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "32535705"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approle"
+  "@odata.type": "microsoft.graph.appRole"
 }-->
 
 ```json
@@ -60,8 +60,6 @@ ms.locfileid: "32535705"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/approle.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

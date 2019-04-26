@@ -3,12 +3,12 @@ title: サイトの列挙
 description: 指定したフィルター条件とクエリオプションに一致する組織内で利用可能な [sites] [] を一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0bcf6023779178ea2c5d8e6ccb24adafad4bb7d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545200"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330120"
 ---
 # <a name="enumerate-sites"></a>サイトの列挙
 
@@ -24,7 +24,7 @@ ms.locfileid: "32545200"
 
 また、'/サイト ' コレクションに対して**[検索][]** クエリを使用して、特定のキーワードに一致するサイトを検索することもできます。
 
-[探す]: site-search.md
+[search]: site-search.md
 [サイト]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
@@ -98,8 +98,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": [
-    "Error: /api-reference/beta/api/site-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

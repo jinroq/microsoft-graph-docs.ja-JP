@@ -4,14 +4,17 @@ description: rejectedSender リストに新しいユーザーやグループを�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 12e3cab10c75a35e0abb0a1efe43b1c9d2adbf3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d1f22c5a14a9d08204532217d61665659acc979a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502186"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328564"
 ---
 # <a name="create-rejectedsender"></a>rejectedSender の作成
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 rejectedSender リストに新しいユーザーやグループを追加します。
 
 `@odata.id` 内のユーザーやグループを要求の本文で指定します。拒否送信者リスト内のユーザーは、グループの会話に投稿できません (POST 要求 URL で識別)。拒否送信者と承認送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
@@ -30,6 +33,7 @@ rejectedSender リストに新しいユーザーやグループを追加しま�
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -46,17 +50,18 @@ POST /groups/{id}/rejectedSenders/$ref
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_rejectedsender"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
+POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
+
 #### <a name="response"></a>応答
 応答の例を次に示します。
 <!-- {
@@ -69,10 +74,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,17 +1,17 @@
 ---
-title: Get ChartFont
-description: chartfont オブジェクトのプロパティと関係を取得します。
+title: workbookChartFont を取得する
+description: workbookChartFont オブジェクトのプロパティとリレーションシップを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3440b4c01988cfad6af10e40a36da6551f5ec854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f43d445ec195d80dfc40405d5e75d1cf7675f58
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456655"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327740"
 ---
-# <a name="get-chartfont"></a>Get ChartFont
+# <a name="get-workbookchartfont"></a>workbookChartFont を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +28,9 @@ chartfont オブジェクトのプロパティと関係を取得します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartFont](../resources/chartfont.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookChartFont](../resources/workbookchartfont.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -55,14 +55,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
   "name": "get_chartfont"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,8 +88,6 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartfont-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
