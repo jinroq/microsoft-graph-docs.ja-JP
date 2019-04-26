@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556425"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
@@ -147,31 +147,31 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [派生の資格情報プロバイダーの種類](intune-deviceconfig-derivedcredentialprovidertype.md)
 - [デバイス コンプライアンス アクションの項目](intune-deviceconfig-devicecomplianceactionitem.md)
 - [デバイス コンプライアンス アクションの種類](intune-deviceconfig-devicecomplianceactiontype.md)
-- [デバイス コンプライアンスのデバイス概要](intune-deviceconfig-devicecompliancedeviceoverview.md)
-- [デバイス コンプライアンス デバイス状態](intune-deviceconfig-devicecompliancedevicestatus.md)
+- [デバイス コンプライアンスのデバイスの概要](intune-deviceconfig-devicecompliancedeviceoverview.md)
+- [デバイス コンプライアンスのデバイスの状態](intune-deviceconfig-devicecompliancedevicestatus.md)
 - [デバイス コンプライアンス ポリシー](intune-deviceconfig-devicecompliancepolicy.md)
 - [デバイス コンプライアンス ポリシーの割り当て](intune-deviceconfig-devicecompliancepolicyassignment.md)
-- [デバイス コンプライアンス ポリシー デバイスの状態の要約](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
-- [デバイス コンプライアンス ポリシー設定の状態](intune-deviceconfig-devicecompliancepolicysettingstate.md)
-- [デバイス コンプライアンス ポリシー設定の状態の要約](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
-- [デバイス コンプライアンスのルールごとのスケジュール済みアクション](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
+- [デバイス コンプライアンス ポリシーのデバイス状態の要約](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
+- [デバイス コンプライアンス ポリシーの設定状態](intune-deviceconfig-devicecompliancepolicysettingstate.md)
+- [デバイス コンプライアンス ポリシーの設定状態の要約](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
+- [デバイス コンプライアンスのルールに関するスケジュール済みアクション](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
 - [デバイス コンプライアンスの設定状態](intune-deviceconfig-devicecompliancesettingstate.md)
-- [デバイス コンプライアンスのユーザー概要](intune-deviceconfig-devicecomplianceuseroverview.md)
-- [デバイス コンプライアンスのユーザー状態](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [デバイス コンプライアンスのユーザーの概要](intune-deviceconfig-devicecomplianceuseroverview.md)
+- [デバイス コンプライアンスのユーザーの状態](intune-deviceconfig-devicecomplianceuserstatus.md)
 - [デバイス構成](intune-deviceconfig-deviceconfiguration.md)
 - [デバイス構成の割り当て](intune-deviceconfig-deviceconfigurationassignment.md)
 - [デバイス構成の競合の概要](intune-deviceconfig-deviceconfigurationconflictsummary.md)
-- [デバイス構成のデバイス概要](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
-- [デバイス構成のデバイス状態要約](intune-deviceconfig-deviceconfigurationdevicestatesummary.md)
-- [デバイス構成のデバイス状態](intune-deviceconfig-deviceconfigurationdevicestatus.md)
+- [デバイス構成のデバイスの概要](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
+- [デバイス構成のデバイス状態の要約](intune-deviceconfig-deviceconfigurationdevicestatesummary.md)
+- [デバイス構成のデバイスの状態](intune-deviceconfig-deviceconfigurationdevicestatus.md)
 - [デバイス構成のグループ割り当て](intune-deviceconfig-deviceconfigurationgroupassignment.md)
 - [デバイス構成の設定状態](intune-deviceconfig-deviceconfigurationsettingstate.md)
 - [デバイス構成の対象ユーザーとデバイス](intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md)
-- [デバイス構成のユーザー概要](intune-deviceconfig-deviceconfigurationuseroverview.md)
+- [デバイス構成のユーザーの概要](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [デバイス構成のユーザー状態の概要](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
-- [デバイス構成ユーザー状態](intune-deviceconfig-deviceconfigurationuserstatus.md)
+- [デバイス構成のユーザーの状態](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device Guard ローカル システム機関資格情報の保護の種類](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
-- [デバイス管理構成](intune-deviceconfig-devicemanagementsettings.md)
+- [デバイス管理設定](intune-deviceconfig-devicemanagementsettings.md)
 - [デバイス管理のユーザー権限のローカル ユーザーまたはグループ](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [デバイス管理のユーザー権限](intune-deviceconfig-devicemanagementuserrightssetting.md)
 - [デバイスの脅威保護レベル](intune-deviceconfig-devicethreatprotectionlevel.md)
@@ -265,7 +265,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [iOS のシングル サインオンの設定](intune-deviceconfig-iossinglesignonsettings.md)
 - [iOS 信頼済みルート証明書](intune-deviceconfig-iostrustedrootcertificate.md)
 - [iOS 更新構成](intune-deviceconfig-iosupdateconfiguration.md)
-- [更新された iOS デバイスの状態](intune-deviceconfig-iosupdatedevicestatus.md)
+- [iOS 更新デバイスの状態](intune-deviceconfig-iosupdatedevicestatus.md)
 - [iOS の更新プログラムのインストール状態](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [iOS VPN 構成](intune-deviceconfig-iosvpnconfiguration.md)
 - [iOS 壁紙の表示場所](intune-deviceconfig-ioswallpaperdisplaylocation.md)
@@ -359,14 +359,14 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [安全性評価アカウント タイプ](intune-deviceconfig-secureassessmentaccounttype.md)
 - [サービス開始方法の種類](intune-deviceconfig-servicestarttype.md)
 - [ソースの設定](intune-deviceconfig-settingsource.md)
-- [状態デバイス設定要約](intune-deviceconfig-settingstatedevicesummary.md)
+- [設定状態とデバイスの要約](intune-deviceconfig-settingstatedevicesummary.md)
 - [共有 PC アカウントの削除ポリシーの種類](intune-deviceconfig-sharedpcaccountdeletionpolicytype.md)
 - [共有 PC アカウント マネージャー ポリシー](intune-deviceconfig-sharedpcaccountmanagerpolicy.md)
 - [共有 PC が許可するアカウント タイプ](intune-deviceconfig-sharedpcallowedaccounttype.md)
 - [共有 PC 構成](intune-deviceconfig-sharedpcconfiguration.md)
 - [サインイン アシスタンスのオプション](intune-deviceconfig-signinassistantoptions.md)
 - [サイトのセキュリティ レベル](intune-deviceconfig-sitesecuritylevel.md)
-- [ソフトウェア更新ステータス要約](intune-deviceconfig-softwareupdatestatussummary.md)
+- [ソフトウェア更新状態の要約](intune-deviceconfig-softwareupdatestatussummary.md)
 - [状態管理の設定](intune-deviceconfig-statemanagementsetting.md)
 - [件名の別名タイプ](intune-deviceconfig-subjectalternativenametype.md)
 - [件名の形式](intune-deviceconfig-subjectnameformat.md)
@@ -406,7 +406,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows 10 カスタム構成](intune-deviceconfig-windows10customconfiguration.md)
 - [Windows 10 EAS 電子メール プロファイルの構成](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Windows 10 エディションの種類](intune-deviceconfig-windows10editiontype.md)
-- [Windows 10 Endpoint Protection の構成](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
+- [Windows 10 Endpoint Protection 構成](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
 - [Windows 10 Enterprise モダン アプリの管理構成](intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md)
 - [Windows 10 一般構成](intune-deviceconfig-windows10generalconfiguration.md)
 - [Windows 10 のインポートした PFX 証明書のプロファイル](intune-deviceconfig-windows10importedpfxcertificateprofile.md)

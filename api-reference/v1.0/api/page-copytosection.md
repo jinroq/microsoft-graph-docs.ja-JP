@@ -1,20 +1,20 @@
 ---
-title: 'page: copyToSection'
-description: 特定のセクションにページをコピーします。
+title: 'page: copytosection'
+description: ページを特定のセクションにコピーします。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: b09c47ab7dbaec7b7dd63d134cdefae1260d9e8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556663"
 ---
-# <a name="page-copytosection"></a>page: copyToSection
-特定のセクションにページをコピーします。
+# <a name="page-copytosection"></a>page: copytosection
+ページを特定のセクションにコピーします。
 
-Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次に結果の操作エンドポイントをポーリングします。
+コピー操作では、非同期呼び出しパターンに従います。最初に copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -33,22 +33,22 @@ POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
 POST /groups/{id}/onenote/pages/{id}/copyToSection
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
-要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
+要求本文で、操作に必要なパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
-|id|String|必須。コピー先セクションの ID です。|
+|groupId|文字列型 (String)|コピー先のグループの id。 Office 365 グループにコピーする場合にのみ使用します。|
+|id|String|必須。 コピー先のセクションの id。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation-get.md)。
+成功した場合、このメソッド`202 Accepted`は応答コードと`Operation-Location`ヘッダーを返します。 操作の場所のエンドポイントをポーリングして、[コピー操作の状態を取得](onenoteoperation-get.md)します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4646ebc07865cadda7005e25b4b30a2547a41f8b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781604"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552186"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration リソースの種類
 
@@ -24,16 +24,16 @@ ms.locfileid: "31781604"
 |:---|:---|:---|
 |[managedDeviceMobileAppConfigurations のリスト](../api/intune-apps-manageddevicemobileappconfiguration-list.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) コレクション|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[managedDeviceMobileAppConfiguration の取得](../api/intune-apps-manageddevicemobileappconfiguration-get.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[アクションの割り当て](../api/intune-apps-manageddevicemobileappconfiguration-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-apps-manageddevicemobileappconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。|
 |targetedMobileApps|String コレクション|関連するアプリです。|
-|roleScopeTagIds|String コレクション|このアプリ構成エンティティのスコープタグのリスト。|
+|roleScopeTagIds|String collection|このアプリ構成エンティティのスコープタグのリスト。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|String|デバイス構成について管理者が提供した説明です。|
+|description|String|デバイス構成について管理者が提供した説明です。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|

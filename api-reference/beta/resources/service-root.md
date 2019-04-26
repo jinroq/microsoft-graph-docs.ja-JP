@@ -1,13 +1,13 @@
 ---
 title: サービス ルート
-description: '2015-10-25 14時 57分: 30 UTC: _gt'
+description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
 ms.openlocfilehash: 5e9c464c50dcbef7a03ca3a2fc2b0aaac40fbb30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554892"
 ---
 # <a name="service-root"></a>サービス ルート
 
@@ -32,9 +32,9 @@ ms.locfileid: "29524311"
 |[subscribedSku を一覧表示する](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |SubscribedSku オブジェクトのコレクションを取得します。 |
 |[ユーザーを作成する](../api/user-post-users.md) |[user](user.md)| ユーザー コレクションに投稿して、新しいグループを作成します。|
 |[ユーザーを一覧表示する](../api/user-list.md) | [user](user.md) コレクション |ユーザー オブジェクトのコレクションを取得します。 |
-|[ConnectorGroup を作成します。](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|ConnectorGroups コレクションへの投稿には、新しい connectorGroup を作成します。|
-|[リスト connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md)コレクション |ConnectorGroup オブジェクトのコレクションを取得します。 |
-|[一覧コネクタ](../api/connector-list.md) | [コネクタ](connector.md)のコレクション |コネクタ オブジェクトのコレクションを取得します。 |
+|[コネクタグループの作成](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|コネクタに投稿して、新しいコネクタグループを作成します。|
+|[コネクタグループの一覧表示](../api/connectorgroup-list.md) | [コネクタグループ](connectorgroup.md)コレクション |コネクタグループオブジェクトのコレクションを取得します。 |
+|[リストコネクタ](../api/connector-list.md) | [connector](connector.md)コレクション |コネクタオブジェクトのコレクションを取得します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

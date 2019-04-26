@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 08aebdff58d8cd58cadd58ac15bc5a8d61a74f51
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803445"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554192"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>androidforwork syncstatus 列挙型
 
@@ -23,11 +23,11 @@ Google EMM API を使用したテナントの状態の同期
 |メンバー|値|説明|
 |:---|:---|:---|
 |success|.0|まだ文書化されていません|
-|credentialsNotValid|1-d|まだ文書化されていません|
-|androidforwork apierror|pbm-2|まだ文書化されていません|
-|managementserviceerror|1/3|まだ文書化されていません|
-|unknownError|2/4|まだ文書化されていません|
-|none|5|まだ文書化されていません|
+|credentialsNotValid|1 |まだ文書化されていません|
+|androidforwork apierror|2 |まだ文書化されていません|
+|managementserviceerror|3 |まだ文書化されていません|
+|unknownError|4 |まだ文書化されていません|
+|なし|5 |まだ文書化されていません|
 
 
 

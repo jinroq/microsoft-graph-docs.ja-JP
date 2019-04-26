@@ -1,30 +1,30 @@
 ---
 title: participantMixerLevel リソースの種類
-description: 特定の参加者のオーディオのをレベルをミキサーの設定
+description: 特定の音声参加者のミキサーレベルの構成
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568609"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の参加者のオーディオのをレベルをミキサーの設定
+特定の音声参加者のミキサーレベルの構成
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ               | 型                                                      | 説明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ダック                | [audioDuckingConfiguration](audioduckingconfiguration.md) | ダック (段階的に導入と出力) のこの partipant の他のソースのカスタム ミックスの構成です。       |
-| exclusiveMode          | ブール値                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |
-| 参加者            | String                                                    | ミキサーが構成されている構成要素です。                                             |
-| sourceLevels           | [audioSourceLevel](audiosourcelevel.md)コレクション        | その他のソース レベルの構成。                                                              |
+| ducking                | [audioアヒルの構成](audioduckingconfiguration.md) | この partipant カスタムミックスの他のソースの ducking (段階的なインとアウト) の構成。       |
+| exclusiveMode          | ブール値                                                   | 明示的なソースレベルを持たないソースをミックスから削除する必要があるかどうか。                       |
+| 積極的            | String                                                    | ミキサーを構成する参加者。                                             |
+| sourceLevels           | [audioSourceLevel](audiosourcelevel.md)コレクション        | 他のソースのレベルの構成。                                                              |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,7 +46,7 @@ ms.locfileid: "29643833"
 }
 ```
 
-## <a name="example---mixer-level"></a>ミキサー レベルの使用例
+## <a name="example---mixer-level"></a>例-ミキサーレベル
 
 <!-- {
   "blockType": "example",

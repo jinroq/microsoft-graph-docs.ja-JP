@@ -1,28 +1,28 @@
 ---
-title: organizerMeetingInfo リソースの種類
-description: 会議については、会議の開催者を含みます。
+title: 組織の情報リソースの種類
+description: 会議の開催者を含むミーティング情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641996"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568588"
 ---
-# <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo リソースの種類
+# <a name="organizermeetinginfo-resource-type"></a>組織の情報リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会議については、会議の開催者を含みます。
+会議の開催者を含むミーティング情報。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                     | 型                          | 説明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
-| organizer                    | [identitySet](identityset.md) | 開催者は Azure Active Directory アイデンティティであります。  |
+| allowConversationWithoutHost | Boolean                       | 会話のホストが離れると、会話が続行できるかどうかを示します。 |
+| organizer                    | [identitySet](identityset.md) | 開催者 Azure Active Directory の id。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,33 +1,33 @@
 ---
-title: permissionScope リソースの種類
-description: OAuth 2.0 を表しますは、アクセス許可のスコープを委任します。 (Application オブジェクトの**requiredResourceAccess**コレクション) をクライアント アプリケーションで、委任されたアクセス許可のスコープを要求することが指定された OAuth 2.0 リソース アプリケーションを呼び出すときにします。 ServicePrincipal エンティティおよびアプリケーション エンティティの**oauth2Permissions**プロパティは、 **OAuth2Permission**のコレクションです。
+title: permissionscope リソースの種類
+description: OAuth 2.0 委任されたアクセス許可スコープを表します。 指定した OAuth 2.0 委任されたアクセス許可スコープは、リソースアプリケーションを呼び出すときに (Application オブジェクトの**requiredresourceaccess**コレクションを通じて) クライアントアプリケーションによって要求されることがあります。 serviceprincipal エンティティおよび Application エンティティの**oauth2Permissions**プロパティは、 **OAuth2Permission**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 00629a6e123ef19290d3c1bd4797e4bab3ce95c0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568181"
 ---
-# <a name="permissionscope-resource-type"></a>permissionScope リソースの種類
+# <a name="permissionscope-resource-type"></a>permissionscope リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OAuth 2.0 を表しますは、アクセス許可のスコープを委任します。 ( [Application](application.md)オブジェクトの**requiredResourceAccess**コレクション) をクライアント アプリケーションで、委任されたアクセス許可のスコープを要求することが指定された OAuth 2.0 リソース アプリケーションを呼び出すときにします。 [ServicePrincipal](serviceprincipal.md)エンティティおよび[アプリケーション](application.md)エンティティの**oauth2Permissions**プロパティは、 **OAuth2Permission**のコレクションです。
+OAuth 2.0 委任されたアクセス許可スコープを表します。 指定した OAuth 2.0 委任されたアクセス許可スコープは、リソースアプリケーションを呼び出すときに ( [Application](application.md)オブジェクトの**requiredresourceaccess**コレクションを通じて) クライアントアプリケーションによって要求されることがあります。 [serviceprincipal](serviceprincipal.md)エンティティおよび[Application](application.md)エンティティの**oauth2Permissions**プロパティは、 **OAuth2Permission**のコレクションです。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|adminConsentDescription|String| 管理者同意し、アプリケーションの割り当てのエクスペリエンスに表示されるアクセス許可のヘルプ テキストです。 |
-|adminConsentDisplayName|String| 管理者同意し、アプリケーションの割り当ての経験で表示されるアクセス許可の名前を表示します。 |
-|ID|Guid| Oauth2Permissions コレクション内の一意のスコープ権限識別子です。 |
-|isEnabled|Boolean| を作成またはアクセス許可を更新するとき、このプロパティは**true** (既定値) に設定する必要があります。 アクセス許可を削除するには、このプロパティを**false**に設定最初する必要があります。 その時点で、後続の呼び出しでアクセス許可が削除されます。 |
-|始点|String| 内部で使用します。 |
-|type|String| 、エンドユーザーがこのスコープの権限に同意するかどうか、または企業の管理者によって、に同意する必要があります、テナント全体のアクセス許可があるかどうかを指定します。 使用可能な値は、*ユーザー*または*管理者*です。 |
-|userConsentDescription|String| エンドユーザーの同意に表示されるアクセス許可のヘルプ テキストです。 |
-|userConsentDisplayName|String| エンドユーザーの同意で表示されるアクセス許可の名前を表示します。 |
-|value|文字列| スコープの値は、OAuth 2.0 のアクセス トークンにリソース アプリケーションが予想されることを要求します。 |
+|admincon/説明|String| 管理者の同意とアプリの割り当てエクスペリエンスに表示されるアクセス許可ヘルプテキスト。 |
+|admincon/表示 displayname|String| 管理者の同意とアプリの割り当てエクスペリエンスに表示されるアクセス許可の表示名。 |
+|id|Guid| oauth2Permissions コレクション内の一意のスコープアクセス許可識別子。 |
+|isEnabled|Boolean| アクセス許可を作成または更新する場合は、このプロパティを**true**に設定する必要があります (これは既定値です)。 権限を削除するには、最初にこのプロパティを**false**に設定する必要があります。 その時点で、以降の呼び出しでは、アクセス許可が削除されることがあります。 |
+|戻す|String| 内部使用用。 |
+|type|String| この範囲のアクセス許可をエンドユーザーが同意することができるかどうか、または会社の管理者が同意する必要があるテナント全体のアクセス許可であるかどうかを指定します。 使用可能な値は、*ユーザー*または*管理者*です。 |
+|usercondescription の説明|String| エンドユーザーの同意に表示されるアクセス許可ヘルプテキスト。 |
+|usercon使い方 displayname|String| エンドユーザーの同意に表示されるアクセス許可の表示名。 |
+|value|文字列型 (String)| OAuth 2.0 アクセストークンで想定されるリソースアプリケーションのスコープ要求の値。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

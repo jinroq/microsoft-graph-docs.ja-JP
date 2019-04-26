@@ -1,55 +1,55 @@
 ---
 title: teamsApp リソースの種類
-description: マイクロソフト チーム アプリケーション カタログのアプリケーションです。
+description: Microsoft Teams アプリカタログの一つ。
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2493b7f6adee51e5c5622585055cbd3cf2778656
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937447"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462271"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp リソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[Microsoft Teams](teams-api-overview.md)アプリカタログの一つ。
 
-[マイクロソフト チーム](teams-api-overview.md)アプリケーション カタログのアプリケーションです。
-
-マイクロソフト チーム ストア内のこれらのアプリケーションを表示して、[チーム](team.md)が[チームに追加のアプリケーション](../api/teamsappinstallation-add.md)のメソッドを使用してこれらのアプリケーションをインストールすることができます。
+ユーザーはMicrosoft Teams Storeでこれらのアプリを見ることができ、これらのアプリを[Teams へのアプリを追加](../api/teamsappinstallation-add.md)方法を使用して[teams](team.md) にインストールすることができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[公開されたアプリケーションの一覧を表示します。](../api/teamsapp-list.md) | [teamsApp](teamsapp.md)コレクション | マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。|
-|[アプリケーションを発行します。](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 組織のアプリケーションのカタログには、アプリケーションを発行します。|
-|[発行したアプリケーションを更新します。](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 組織のアプリケーションのカタログに公開されたアプリケーションを更新します。|
-|[発行したアプリケーションを削除します。](../api/teamsapp-delete.md) | なし | 発行したアプリケーションを組織のアプリケーションのカタログから削除します。|
+|[公開アプリ をリストする](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) コレクション | Microsoft Teams アプリ カタログから公開されたアプリの一覧を表示します。|
+|[アプリを発行します。](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | アプリを組織のアプリ カタログに発行します。|
+|[公開済みのアプリを更新します。](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 組織のアプリ カタログに発行したアプリを更新します。|
+|[公開済みのアプリを削除します。](../api/teamsapp-delete.md) | なし | 組織のアプリ カタログに発行したアプリを削除します。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類     | 説明 |
+| プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | 文字列   | カタログ アプリケーションの生成のアプリケーション ID を ([マイクロソフト チーム zip アプリケーション パッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)の開発者から提供された ID とは異なる。 |
-| externalId          | 文字列   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログの ID です。 |
-| displayName                | string   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログのアプリケーションの名前。 |
-| distributionMethod  | teamsAppDistributionMethod     | アプリケーション配布の方法です。 |
+| id                  | string   | カタログアプリによって生成されたアプリID（[Microsoft Teams zipアプリパッケージ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/apps/apps-package)内の開発者提供のIDとは異なります）。 |
+| 外部ID          | 文字列   | アプリ開発者が[Microsoft Teams zipアプリパッケージ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/apps/apps-package)で提供しているカタログのID。 |
+| displayName                | string   | アプリ開発者が[Microsoft Teams zipアプリパッケージ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/apps/apps-package)で提供しているカタログアプリの名前。 |
+| distributionMethod  | teamsAppDistributionMethod     | アプリの配布の方法です。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
-|ストア|0| アプリケーションは、マイクロソフトのチームのアプリケーション ストアからのすべてのテナントに使用できます。|
-|組織|1|アプリケーションは、このテナントでのみ使用可能です。|
-|sideloaded|2|アプリケーションは、ユーザーまたはチームのみ使用可能です、インストールされているをします。|
+|店|0| このアプリは、Microsoft Teamsアプリストアを通じてすべてのテナントに利用可能です。|
+|組織|1|アプリは、このテナントでのみ使用できます。|
+|sideloaded|2|アプリはそれがインストールされているユーザー/チームにのみ利用可能です。|
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   | 説明 |
 |:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md)コレクション| アプリケーションの各バージョンの詳細です。 |
+|appDefinitions|[teamsAppDefinition](teamsappdefinition.md)コレクション| アプリの各バージョンの詳細。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -76,11 +76,16 @@ ms.locfileid: "27937447"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

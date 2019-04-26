@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3eae52bbb19eaca46c74d275ae7da3d16050a50e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570083"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -27,24 +27,24 @@ ms.locfileid: "31799917"
 |[intuneBrandingProfile を作成する](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。|
 |[intuneBrandingProfile の削除](../api/intune-wip-intunebrandingprofile-delete.md)|なし|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を削除します。|
 |[intuneBrandingProfile の更新](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
-|[アクションの割り当て](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|プロファイルキー|
-|profileName|文字列|プロファイルの名前|
-|profiledescription|文字列|プロファイルの説明|
+|profileName|String|プロファイルの名前|
+|profiledescription|String|プロファイルの説明|
 |isdefaultprofile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|文字列|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|String|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
 |showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|

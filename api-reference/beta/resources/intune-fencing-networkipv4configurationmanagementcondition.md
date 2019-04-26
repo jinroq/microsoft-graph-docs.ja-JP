@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4f7d1e87f8e779eadc4a6089a91fc802591c6b58
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568788"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition リソースの種類
 
@@ -34,19 +34,19 @@ ms.locfileid: "31782276"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|uniqueName|文字列|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|id|String|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
+|uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |displayName|String|管理条件の管理者定義の名前。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |説明|String|管理条件の管理者定義の説明。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側を生成しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |modifiedDateTime|DateTimeOffset|管理条件が最後に変更された時刻。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |eTag|String|管理条件の ETag。 サービス側を更新しました。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|ipV4Prefix|文字列|接続先の IPv4 サブネット。 例: 10.0.0.0/8|
-|ipV4Gateway|文字列|IPv4 ゲートウェイアドレス。 例: 10.0.0.0|
-|ipV4DHCPServer|文字列|アダプターの DHCP サーバーの IPv4 アドレス。|
-|ipV4DNSServerList|String コレクション|アダプターに対して構成されている IPv4 DNS サーバー。|
-|dnsSuffixList|String コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV4Prefix|String|接続先の IPv4 サブネット。 例: 10.0.0.0/8|
+|ipV4Gateway|String|IPv4 ゲートウェイアドレス。 例: 10.0.0.0|
+|ipV4DHCPServer|String|アダプターの DHCP サーバーの IPv4 アドレス。|
+|ipV4DNSServerList|String collection|アダプターに対して構成されている IPv4 DNS サーバー。|
+|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

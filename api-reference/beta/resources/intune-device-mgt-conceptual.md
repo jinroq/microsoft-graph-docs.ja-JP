@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556436"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
@@ -161,12 +161,12 @@ ms.locfileid: "31518568"
 - [共有 Apple デバイス ユーザー](intune-devices-sharedappledeviceuser.md)
 - [単項管理条件式](intune-fencing-unarymanagementconditionexpression.md)
 - [単項管理条件式演算子の種類](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
-- [Windows デバイス アカウントのアクション パラメーターの更新](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Windows のデバイス アカウントのアクション パラメーターの更新](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [変数管理条件式](intune-fencing-variablemanagementconditionexpression.md)
-- [Windows defender のスキャン アクションの結果](intune-devices-windowsdefenderscanactionresult.md)
+- [Windows Defender のスキャン アクションの結果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows のデバイス アカウント](intune-devices-windowsdeviceaccount.md)
 - [Windows のデバイス AD アカウント](intune-devices-windowsdeviceadaccount.md)
-- [Windows デバイス Azure AD アカウント](intune-devices-windowsdeviceazureadaccount.md)
+- [Windows のデバイス Azure AD アカウント](intune-devices-windowsdeviceazureadaccount.md)
 - [Windows デバイス正常性状態](intune-devices-windowsdevicehealthstate.md)
 - [Windows デバイス マルウェアの状態](intune-devices-windowsdevicemalwarestate.md)
 - [Windows マルウェア カテゴリ](intune-devices-windowsmalwarecategory.md)

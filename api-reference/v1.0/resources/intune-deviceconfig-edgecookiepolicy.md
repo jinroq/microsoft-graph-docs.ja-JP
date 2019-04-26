@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f11514978e187d87d9f8fae2990925ec8ea3f193
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566004"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 列挙型
 
@@ -21,9 +21,9 @@ Microsoft Edge で許可する cookie を指定するための値。
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザーがを設定できるようにします。|
-|使う|1-d|使う.|
-|blockThirdParty|pbm-2|サードパーティの cookie のみをブロックします。|
-|blockall|1/3|すべての cookie をブロックします。|
+|使う|1 |使う.|
+|blockThirdParty|2 |サードパーティの cookie のみをブロックします。|
+|blockall|3 |すべての cookie をブロックします。|
 
 
 

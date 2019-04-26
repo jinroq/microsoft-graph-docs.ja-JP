@@ -5,11 +5,11 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f251853704edd644f615ab986cc3188608fbbe05
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567558"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider リソース タイプ
 
@@ -37,7 +37,7 @@ Azure AD テナントで ID プロバイダーを構成すると、今後の B2B
 |プロパティ|型|必須|Nullable|説明|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|String|はい|いいえ|アプリケーションのクライアント ID。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント ID です。|
-|ClientSecret|String|はい|いいえ|アプリケーションでのクライアント シークレット。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント シークレットです。 これは、書き込み専用です。 読み取り操作を行うと、"\*\*\*\*" が返されます。|
+|clientSecret|String|はい|いいえ|アプリケーションでのクライアント シークレット。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント シークレットです。 これは、書き込み専用です。 読み取り操作を行うと、"\*\*\*\*" が返されます。|
 |id|String|いいえ|いいえ|ID プロバイダーの ID。|
 |name|String|いいえ|いいえ|ID プロバイダーの表示名。|
 |type|String|はい|いいえ|ID プロバイダーの型。 B2C シナリオでは、この型は次の値である必要があります。 <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>B2B シナリオでは、値は Google である必要があります。|

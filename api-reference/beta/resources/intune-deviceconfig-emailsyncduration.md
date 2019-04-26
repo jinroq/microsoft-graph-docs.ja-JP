@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f66f3abc888205c66745906da0a8803c18b4522
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779189"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556215"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailsyncduration 列挙型
 
@@ -23,12 +23,12 @@ ms.locfileid: "31779189"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|oneday|1-d|1日分のメールを同期します。|
-|threeDays|pbm-2|3日間のメールを同期します。|
-|oneWeek|1/3|電子メールの1週間を同期します。|
-|2週間|2/4|2週間のメールを同期します。|
-|オンライン|5|1か月分のメールを同期します。|
-|無制限|シックス|電子メールの期間を無制限に同期します。|
+|oneday|1 |1日分のメールを同期します。|
+|threeDays|2 |3日間のメールを同期します。|
+|oneWeek|3 |電子メールの1週間を同期します。|
+|2週間|4 |2週間のメールを同期します。|
+|オンライン|5 |1か月分のメールを同期します。|
+|無制限|6 |電子メールの期間を無制限に同期します。|
 
 
 

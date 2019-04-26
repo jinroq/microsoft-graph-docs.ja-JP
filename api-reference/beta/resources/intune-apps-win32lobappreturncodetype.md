@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 441c0270bc6488a09fec02f1e1681e009b889918
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805209"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556894"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31805209"
 |メンバー|値|説明|
 |:---|:---|:---|
 |フェール|.0|フェール.|
-|success|1-d|完了.|
-|softReboot|pbm-2|Soft-再起動が必要です。|
-|ハードリブート|1/3|ハード再起動が必要です。|
-|み|2/4|再試行します。|
+|success|1 |完了.|
+|softReboot|2 |Soft-再起動が必要です。|
+|ハードリブート|3 |ハード再起動が必要です。|
+|み|4 |再試行します。|
 
 
 

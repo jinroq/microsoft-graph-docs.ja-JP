@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 741565678be1bfb533c4445c02c767f87fdfca05
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556089"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderprotectiontype 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31781086"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|デバイスの既定値。意図的ではありません。|
-|使う|1-d|機能をブロックする。|
-|auditmode|pbm-2|機能を有効にし、ログを生成します。|
-|blockdiskmodification|1/3|信頼されていないアプリのディスクセクターへの書き込みをブロックする。|
-|auditdiskmodification|2/4|信頼されていないアプリがディスクセクターに書き込むときにログを生成します。|
+|使う|1 |機能をブロックする。|
+|auditmode|2 |機能を有効にし、ログを生成します。|
+|blockdiskmodification|3 |信頼されていないアプリのディスクセクターへの書き込みをブロックする。|
+|auditdiskmodification|4 |信頼されていないアプリがディスクセクターに書き込むときにログを生成します。|
 
 
 

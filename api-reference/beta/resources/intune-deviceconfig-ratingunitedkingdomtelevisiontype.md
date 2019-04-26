@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 670e593b13c880f699d8ba3c0101d453f5a9bbd7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794786"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556902"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31794786"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
-|allblocked|1-d|すべてのテレビ番組の内容を許可しない|
-|レーティング|pbm-2|警告メッセージを使用してテレビの内容を許可する|
+|allblocked|1 |すべてのテレビ番組の内容を許可しない|
+|レーティング|2 |警告メッセージを使用してテレビの内容を許可する|
 
 
 

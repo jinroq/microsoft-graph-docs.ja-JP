@@ -5,11 +5,11 @@ localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
 ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570251"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Microsoft Graph API を呼び出す
 
@@ -269,7 +269,7 @@ content-length: 986
 ```
 
 ## <a name="call-actions-or-functions"></a>アクションまたは関数を呼び出す
-Microsoft Graph は、_アクション_および_関数_もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。 たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。
+Microsoft Graph は、_アクション_および_関数_もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>

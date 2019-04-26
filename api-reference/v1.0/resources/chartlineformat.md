@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9da0c29acf49d0e183a2ded4652fe0972f21bf76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569033"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat リソースの種類
 
@@ -25,9 +25,9 @@ ms.locfileid: "27925918"
 |[Clear](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|color|文字列|グラフの線の色を表す HTML カラー コード。|
+|color|string|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="relationships"></a>関係
 なし
