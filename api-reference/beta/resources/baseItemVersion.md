@@ -4,21 +4,21 @@ ms.author: JeremyKelley
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 56a2c230c53c4b5bd50e8c123dd69eedec67a141
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 735931e757297bd9846396d6f6c42988d8cb87fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543863"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328245"
 ---
-# <a name="baseitemversion-resource-type"></a><span data-ttu-id="dd385-102">BaseItemVersion リソースの種類</span><span class="sxs-lookup"><span data-stu-id="dd385-102">BaseItemVersion resource type</span></span>
+# <a name="baseitemversion-resource-type"></a><span data-ttu-id="8ce22-102">BaseItemVersion リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8ce22-102">BaseItemVersion resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dd385-103">**baseItemVersion** リソースは、アイテムまたはエンティティの旧バージョンを表します。</span><span class="sxs-lookup"><span data-stu-id="dd385-103">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
+<span data-ttu-id="8ce22-103">**baseItemVersion** リソースは、アイテムまたはエンティティの旧バージョンを表します。</span><span class="sxs-lookup"><span data-stu-id="8ce22-103">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="dd385-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="dd385-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8ce22-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8ce22-104">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
@@ -32,14 +32,14 @@ ms.locfileid: "32543863"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="dd385-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dd385-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8ce22-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8ce22-105">Properties</span></span>
 
-|      <span data-ttu-id="dd385-106">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="dd385-106">Property name</span></span>       |                         <span data-ttu-id="dd385-107">種類</span><span class="sxs-lookup"><span data-stu-id="dd385-107">Type</span></span>                         |                               <span data-ttu-id="dd385-108">説明</span><span class="sxs-lookup"><span data-stu-id="dd385-108">Description</span></span>                               |
+|      <span data-ttu-id="8ce22-106">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="8ce22-106">Property name</span></span>       |                         <span data-ttu-id="8ce22-107">種類</span><span class="sxs-lookup"><span data-stu-id="8ce22-107">Type</span></span>                         |                               <span data-ttu-id="8ce22-108">説明</span><span class="sxs-lookup"><span data-stu-id="8ce22-108">Description</span></span>                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| <span data-ttu-id="dd385-109">**id**</span><span class="sxs-lookup"><span data-stu-id="dd385-109">**id**</span></span>                   | <span data-ttu-id="dd385-110">string</span><span class="sxs-lookup"><span data-stu-id="dd385-110">string</span></span>                                               | <span data-ttu-id="dd385-111">バージョンの ID。</span><span class="sxs-lookup"><span data-stu-id="dd385-111">The ID of the version.</span></span> <span data-ttu-id="dd385-112">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="dd385-112">Read-only.</span></span>                                       |
-| <span data-ttu-id="dd385-113">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="dd385-113">**lastModifiedBy**</span></span>       | [<span data-ttu-id="dd385-114">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="dd385-114">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="dd385-115">最後にバージョンを変更したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="dd385-115">Identity of the user which last modified the version.</span></span> <span data-ttu-id="dd385-116">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dd385-116">Read-only.</span></span>        |
-| <span data-ttu-id="dd385-117">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="dd385-117">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="dd385-118">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dd385-118">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="dd385-119">バージョンが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="dd385-119">Date and time the version was last modified.</span></span> <span data-ttu-id="dd385-120">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="dd385-120">Read-only.</span></span>                 |
-| <span data-ttu-id="dd385-121">**publication**</span><span class="sxs-lookup"><span data-stu-id="dd385-121">**publication**</span></span>          | [<span data-ttu-id="dd385-122">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="dd385-122">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="dd385-123">特定のバージョンのパブリケーション ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="dd385-123">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="dd385-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="dd385-124">Read-only.</span></span> |
+| <span data-ttu-id="8ce22-109">**id**</span><span class="sxs-lookup"><span data-stu-id="8ce22-109">**id**</span></span>                   | <span data-ttu-id="8ce22-110">string</span><span class="sxs-lookup"><span data-stu-id="8ce22-110">string</span></span>                                               | <span data-ttu-id="8ce22-111">バージョンの ID。</span><span class="sxs-lookup"><span data-stu-id="8ce22-111">The ID of the version.</span></span> <span data-ttu-id="8ce22-112">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="8ce22-112">Read-only.</span></span>                                       |
+| <span data-ttu-id="8ce22-113">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="8ce22-113">**lastModifiedBy**</span></span>       | [<span data-ttu-id="8ce22-114">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="8ce22-114">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="8ce22-115">最後にバージョンを変更したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="8ce22-115">Identity of the user which last modified the version.</span></span> <span data-ttu-id="8ce22-116">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="8ce22-116">Read-only.</span></span>        |
+| <span data-ttu-id="8ce22-117">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="8ce22-117">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="8ce22-118">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8ce22-118">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="8ce22-119">バージョンが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="8ce22-119">Date and time the version was last modified.</span></span> <span data-ttu-id="8ce22-120">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="8ce22-120">Read-only.</span></span>                 |
+| <span data-ttu-id="8ce22-121">**publication**</span><span class="sxs-lookup"><span data-stu-id="8ce22-121">**publication**</span></span>          | [<span data-ttu-id="8ce22-122">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="8ce22-122">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="8ce22-123">特定のバージョンのパブリケーション ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="8ce22-123">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="8ce22-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="8ce22-124">Read-only.</span></span> |
 
 
 <!--
@@ -49,8 +49,6 @@ ms.locfileid: "32543863"
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
   "tocPath": "Facets/Version",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/baseItemVersion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,34 +5,34 @@ ms.date: 09/11/2017
 title: SharePoint リストからエントリを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 83a14c237b59c66c24bab2705520c84f3f0e090e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 36f0c67dada25128cd1a054c066c1d90ccfcbabb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540997"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333494"
 ---
-# <a name="delete-an-item-from-a-list"></a><span data-ttu-id="16e67-102">リストからアイテムを削除する</span><span class="sxs-lookup"><span data-stu-id="16e67-102">Delete an item from a list</span></span>
+# <a name="delete-an-item-from-a-list"></a><span data-ttu-id="25e15-102">リストからアイテムを削除する</span><span class="sxs-lookup"><span data-stu-id="25e15-102">Delete an item from a list</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16e67-103">[list][] からアイテムを削除します。</span><span class="sxs-lookup"><span data-stu-id="16e67-103">Removes an item from a [list][].</span></span>
+<span data-ttu-id="25e15-103">[list][] からアイテムを削除します。</span><span class="sxs-lookup"><span data-stu-id="25e15-103">Removes an item from a [list][].</span></span>
 
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="16e67-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="16e67-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="25e15-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="25e15-105">Permissions</span></span>
 
-<span data-ttu-id="16e67-106">アイテムを削除するには、削除するアイテムへの書き込みアクセス権がユーザーに付与されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="16e67-106">To delete an item, the user must have granted the application write access to the item to be deleted.</span></span>
+<span data-ttu-id="25e15-106">アイテムを削除するには、削除するアイテムへの書き込みアクセス権がユーザーに付与されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="25e15-106">To delete an item, the user must have granted the application write access to the item to be deleted.</span></span>
 
-<span data-ttu-id="16e67-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="16e67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="25e15-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="25e15-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="16e67-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="16e67-109">Permission type</span></span>      | <span data-ttu-id="16e67-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="16e67-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="25e15-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="25e15-109">Permission type</span></span>      | <span data-ttu-id="25e15-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="25e15-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="16e67-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="16e67-111">Delegated (work or school account)</span></span> | <span data-ttu-id="16e67-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16e67-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="16e67-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="16e67-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16e67-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="16e67-114">Not supported.</span></span>    |
-|<span data-ttu-id="16e67-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="16e67-115">Application</span></span> | <span data-ttu-id="16e67-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16e67-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="25e15-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="25e15-111">Delegated (work or school account)</span></span> | <span data-ttu-id="25e15-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25e15-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="25e15-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="25e15-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25e15-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="25e15-114">Not supported.</span></span>    |
+|<span data-ttu-id="25e15-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="25e15-115">Application</span></span> | <span data-ttu-id="25e15-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25e15-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="16e67-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="16e67-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25e15-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="25e15-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,17 +40,17 @@ ms.locfileid: "32540997"
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="16e67-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="16e67-118">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="25e15-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="25e15-118">Optional request headers</span></span>
 
-| <span data-ttu-id="16e67-119">名前</span><span class="sxs-lookup"><span data-stu-id="16e67-119">Name</span></span>       | <span data-ttu-id="16e67-120">値</span><span class="sxs-lookup"><span data-stu-id="16e67-120">Value</span></span> | <span data-ttu-id="16e67-121">説明</span><span class="sxs-lookup"><span data-stu-id="16e67-121">Description</span></span>
+| <span data-ttu-id="25e15-119">名前</span><span class="sxs-lookup"><span data-stu-id="25e15-119">Name</span></span>       | <span data-ttu-id="25e15-120">値</span><span class="sxs-lookup"><span data-stu-id="25e15-120">Value</span></span> | <span data-ttu-id="25e15-121">説明</span><span class="sxs-lookup"><span data-stu-id="25e15-121">Description</span></span>
 |:-----------|:------|:--------------------------------------------------------
-| <span data-ttu-id="16e67-122">_if-match_</span><span class="sxs-lookup"><span data-stu-id="16e67-122">_if-match_</span></span> | <span data-ttu-id="16e67-123">etag</span><span class="sxs-lookup"><span data-stu-id="16e67-123">etag</span></span>  | <span data-ttu-id="16e67-124">この要求ヘッダーが含まれていて、指定された eTag がアイテムの現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、アイテムは削除されません。</span><span class="sxs-lookup"><span data-stu-id="16e67-124">If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>
+| <span data-ttu-id="25e15-122">_if-match_</span><span class="sxs-lookup"><span data-stu-id="25e15-122">_if-match_</span></span> | <span data-ttu-id="25e15-123">etag</span><span class="sxs-lookup"><span data-stu-id="25e15-123">etag</span></span>  | <span data-ttu-id="25e15-124">この要求ヘッダーが含まれていて、指定された eTag がアイテムの現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、アイテムは削除されません。</span><span class="sxs-lookup"><span data-stu-id="25e15-124">If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="16e67-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="16e67-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="25e15-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="25e15-125">Request body</span></span>
 
-<span data-ttu-id="16e67-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="16e67-126">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="25e15-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="25e15-126">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16e67-127">例</span><span class="sxs-lookup"><span data-stu-id="16e67-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25e15-127">例</span><span class="sxs-lookup"><span data-stu-id="25e15-127">Example</span></span>
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
@@ -58,9 +58,9 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="16e67-128">応答</span><span class="sxs-lookup"><span data-stu-id="16e67-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="25e15-128">応答</span><span class="sxs-lookup"><span data-stu-id="25e15-128">Response</span></span>
 
-<span data-ttu-id="16e67-129">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="16e67-129">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
+<span data-ttu-id="25e15-129">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="25e15-129">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -75,8 +75,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Delete",
-  "suppressions": [
-    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

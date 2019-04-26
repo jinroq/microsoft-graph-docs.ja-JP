@@ -4,34 +4,34 @@ description: '返信メッセージの下書きを作成してコメントを含
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 112db29116625da1c154783eee840c7a69b5ebfc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0705e4cfdb8b5e7a1aee90dece01f351f840c4c1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540556"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338605"
 ---
-# <a name="message-createreply"></a><span data-ttu-id="f42dd-103">メッセージ: createReply</span><span class="sxs-lookup"><span data-stu-id="f42dd-103">message: createReply</span></span>
+# <a name="message-createreply"></a><span data-ttu-id="f09e6-103">メッセージ: createReply</span><span class="sxs-lookup"><span data-stu-id="f09e6-103">message: createReply</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f42dd-p101">1 回の createReply 呼び出しで下書きの返信メッセージを作成して、コメントを含めるかメッセージのプロパティを更新します。その後、下書きを 更新 または 送信 できます。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p101">Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="f09e6-p101">1 回の createReply 呼び出しで下書きの返信メッセージを作成して、コメントを含めるかメッセージのプロパティを更新します。その後、下書きを 更新 または 送信 できます。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p101">Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
 
-<span data-ttu-id="f42dd-106">**注**</span><span class="sxs-lookup"><span data-stu-id="f42dd-106">**Note**</span></span>
+<span data-ttu-id="f09e6-106">**注**</span><span class="sxs-lookup"><span data-stu-id="f09e6-106">**Note**</span></span>
 
-- <span data-ttu-id="f42dd-107">パラメーターには、comment または body プロパティのいずれかを指定できます。 \*\*\*\* `message`</span><span class="sxs-lookup"><span data-stu-id="f42dd-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="f42dd-108">両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="f42dd-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="f42dd-109">**replyto**が元のメッセージで指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、 **from**の受信者ではなく、 **replyto**の受信者に返信を送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f42dd-109">If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.</span></span> 
+- <span data-ttu-id="f09e6-107">パラメーターには、comment または body プロパティのいずれかを指定できます。 \*\*\*\* `message`</span><span class="sxs-lookup"><span data-stu-id="f09e6-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="f09e6-108">両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="f09e6-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="f09e6-109">**replyto**が元のメッセージで指定されている場合、インターネットメッセージ形式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに、 **from**の受信者ではなく、 **replyto**の受信者に返信を送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f09e6-109">If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f42dd-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f42dd-110">Permissions</span></span>
-<span data-ttu-id="f42dd-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f09e6-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f09e6-110">Permissions</span></span>
+<span data-ttu-id="f09e6-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f42dd-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f42dd-113">Permission type</span></span>      | <span data-ttu-id="f42dd-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f42dd-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f09e6-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f09e6-113">Permission type</span></span>      | <span data-ttu-id="f09e6-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f09e6-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f42dd-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f42dd-115">Delegated (work or school account)</span></span> | <span data-ttu-id="f42dd-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f42dd-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f42dd-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f42dd-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f42dd-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f42dd-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f42dd-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f42dd-119">Application</span></span> | <span data-ttu-id="f42dd-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f42dd-120">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="f09e6-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f09e6-115">Delegated (work or school account)</span></span> | <span data-ttu-id="f09e6-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f09e6-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="f09e6-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f09e6-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f09e6-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f09e6-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="f09e6-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f09e6-119">Application</span></span> | <span data-ttu-id="f09e6-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f09e6-120">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f42dd-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f42dd-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f09e6-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f09e6-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReply
@@ -39,28 +39,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReply
 POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
-## <a name="request-headers"></a><span data-ttu-id="f42dd-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f42dd-122">Request headers</span></span>
-| <span data-ttu-id="f42dd-123">名前</span><span class="sxs-lookup"><span data-stu-id="f42dd-123">Name</span></span>       | <span data-ttu-id="f42dd-124">型</span><span class="sxs-lookup"><span data-stu-id="f42dd-124">Type</span></span> | <span data-ttu-id="f42dd-125">説明</span><span class="sxs-lookup"><span data-stu-id="f42dd-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f09e6-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f09e6-122">Request headers</span></span>
+| <span data-ttu-id="f09e6-123">名前</span><span class="sxs-lookup"><span data-stu-id="f09e6-123">Name</span></span>       | <span data-ttu-id="f09e6-124">型</span><span class="sxs-lookup"><span data-stu-id="f09e6-124">Type</span></span> | <span data-ttu-id="f09e6-125">説明</span><span class="sxs-lookup"><span data-stu-id="f09e6-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f42dd-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f42dd-126">Authorization</span></span>  | <span data-ttu-id="f42dd-127">string</span><span class="sxs-lookup"><span data-stu-id="f42dd-127">string</span></span>  | <span data-ttu-id="f42dd-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f42dd-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f42dd-130">Content-Type</span></span> | <span data-ttu-id="f42dd-131">string</span><span class="sxs-lookup"><span data-stu-id="f42dd-131">string</span></span>  | <span data-ttu-id="f42dd-p105">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="f09e6-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f09e6-126">Authorization</span></span>  | <span data-ttu-id="f09e6-127">string</span><span class="sxs-lookup"><span data-stu-id="f09e6-127">string</span></span>  | <span data-ttu-id="f09e6-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f09e6-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f09e6-130">Content-Type</span></span> | <span data-ttu-id="f09e6-131">string</span><span class="sxs-lookup"><span data-stu-id="f09e6-131">string</span></span>  | <span data-ttu-id="f09e6-p105">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f42dd-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="f42dd-134">Request body</span></span>
-<span data-ttu-id="f42dd-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f42dd-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f09e6-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="f09e6-134">Request body</span></span>
+<span data-ttu-id="f09e6-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f09e6-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f42dd-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f42dd-136">Parameter</span></span>    | <span data-ttu-id="f42dd-137">型</span><span class="sxs-lookup"><span data-stu-id="f42dd-137">Type</span></span>   |<span data-ttu-id="f42dd-138">説明</span><span class="sxs-lookup"><span data-stu-id="f42dd-138">Description</span></span>|
+| <span data-ttu-id="f09e6-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f09e6-136">Parameter</span></span>    | <span data-ttu-id="f09e6-137">型</span><span class="sxs-lookup"><span data-stu-id="f09e6-137">Type</span></span>   |<span data-ttu-id="f09e6-138">説明</span><span class="sxs-lookup"><span data-stu-id="f09e6-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f42dd-139">comment</span><span class="sxs-lookup"><span data-stu-id="f42dd-139">comment</span></span>|<span data-ttu-id="f42dd-140">String</span><span class="sxs-lookup"><span data-stu-id="f42dd-140">String</span></span>|<span data-ttu-id="f42dd-p106">含めるコメントです。空の文字列にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p106">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="f42dd-143">message</span><span class="sxs-lookup"><span data-stu-id="f42dd-143">message</span></span>|[<span data-ttu-id="f42dd-144">メッセージ</span><span class="sxs-lookup"><span data-stu-id="f42dd-144">message</span></span>](../resources/message.md)|<span data-ttu-id="f42dd-145">返信メッセージで更新する書き込み可能なプロパティです。</span><span class="sxs-lookup"><span data-stu-id="f42dd-145">Any writeable properties to update in the reply message.</span></span>|
+|<span data-ttu-id="f09e6-139">comment</span><span class="sxs-lookup"><span data-stu-id="f09e6-139">comment</span></span>|<span data-ttu-id="f09e6-140">String</span><span class="sxs-lookup"><span data-stu-id="f09e6-140">String</span></span>|<span data-ttu-id="f09e6-p106">含めるコメントです。空の文字列にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p106">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="f09e6-143">メッセージ​​</span><span class="sxs-lookup"><span data-stu-id="f09e6-143">message</span></span>|[<span data-ttu-id="f09e6-144">message</span><span class="sxs-lookup"><span data-stu-id="f09e6-144">message</span></span>](../resources/message.md)|<span data-ttu-id="f09e6-145">返信メッセージで更新する書き込み可能なプロパティです。</span><span class="sxs-lookup"><span data-stu-id="f09e6-145">Any writeable properties to update in the reply message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f42dd-146">応答</span><span class="sxs-lookup"><span data-stu-id="f42dd-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f09e6-146">応答</span><span class="sxs-lookup"><span data-stu-id="f09e6-146">Response</span></span>
 
-<span data-ttu-id="f42dd-147">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f42dd-147">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="f09e6-147">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f09e6-147">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f42dd-148">例</span><span class="sxs-lookup"><span data-stu-id="f42dd-148">Example</span></span>
-<span data-ttu-id="f42dd-149">次の例では、下書きの返信を作成し、要求の本文にコメントと受信者を追加します。</span><span class="sxs-lookup"><span data-stu-id="f42dd-149">The following example creates a reply draft, adds a comment and a recipient in the request body.</span></span>
-##### <a name="request"></a><span data-ttu-id="f42dd-150">要求</span><span class="sxs-lookup"><span data-stu-id="f42dd-150">Request</span></span>
-<span data-ttu-id="f42dd-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f42dd-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f09e6-148">例</span><span class="sxs-lookup"><span data-stu-id="f09e6-148">Example</span></span>
+<span data-ttu-id="f09e6-149">次の例では、下書きの返信を作成し、要求の本文にコメントと受信者を追加します。</span><span class="sxs-lookup"><span data-stu-id="f09e6-149">The following example creates a reply draft, adds a comment and a recipient in the request body.</span></span>
+##### <a name="request"></a><span data-ttu-id="f09e6-150">要求</span><span class="sxs-lookup"><span data-stu-id="f09e6-150">Request</span></span>
+<span data-ttu-id="f09e6-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f09e6-151">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreply"
@@ -90,8 +90,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f42dd-152">応答</span><span class="sxs-lookup"><span data-stu-id="f42dd-152">Response</span></span>
-<span data-ttu-id="f42dd-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f42dd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f09e6-152">応答</span><span class="sxs-lookup"><span data-stu-id="f09e6-152">Response</span></span>
+<span data-ttu-id="f09e6-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f09e6-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,8 +144,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-createreply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

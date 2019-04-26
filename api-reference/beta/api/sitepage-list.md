@@ -5,54 +5,68 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8dea715a655dac4406ae57b928f97013564f951f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537196"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330672"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9e9e3-102">サイトのサイトページリストのページを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="9e9e3-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="fc8e4-102">サイトのサイトページリストのページを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="fc8e4-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9e9e3-103">サイト[サイト][]のサイトページ[リスト][]から [sitepages] [] のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="9e9e3-103">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="9e9e3-104">サイト内のすべてのページが (改ページ付きで) 返されます。</span><span class="sxs-lookup"><span data-stu-id="9e9e3-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="fc8e4-103">サイト[サイト][]のサイトページ[リスト][]から[sitepage][]オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="fc8e4-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="fc8e4-104">サイト内のすべてのページが (改ページ付きで) 返されます。</span><span class="sxs-lookup"><span data-stu-id="fc8e4-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9e9e3-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9e9e3-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc8e4-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fc8e4-108">Permissions</span></span>
 
-<span data-ttu-id="9e9e3-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9e9e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fc8e4-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc8e4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e9e3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9e9e3-110">Permission type</span></span>      | <span data-ttu-id="9e9e3-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9e9e3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc8e4-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fc8e4-111">Permission type</span></span>      | <span data-ttu-id="fc8e4-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fc8e4-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9e9e3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9e9e3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9e9e3-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e9e3-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9e9e3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9e9e3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e9e3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9e9e3-115">Not supported.</span></span>    |
-|<span data-ttu-id="9e9e3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9e9e3-116">Application</span></span> | <span data-ttu-id="9e9e3-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e9e3-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc8e4-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fc8e4-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fc8e4-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc8e4-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fc8e4-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fc8e4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc8e4-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fc8e4-116">Not supported.</span></span>    |
+|<span data-ttu-id="fc8e4-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fc8e4-117">Application</span></span> | <span data-ttu-id="fc8e4-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc8e4-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9e9e3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9e9e3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc8e4-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fc8e4-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="9e9e3-119">例</span><span class="sxs-lookup"><span data-stu-id="9e9e3-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fc8e4-120">例</span><span class="sxs-lookup"><span data-stu-id="fc8e4-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9e9e3-120">要求</span><span class="sxs-lookup"><span data-stu-id="9e9e3-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fc8e4-121">要求</span><span class="sxs-lookup"><span data-stu-id="fc8e4-121">Request</span></span>
 
-<!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- 
+{ 
+    "blockType": "request",
+    "name": "get-pages",
+    "scopes": "sites.read.all", 
+    "tags": "service.sharepoint"
+}
+-->
 
 ```http
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="9e9e3-121">応答</span><span class="sxs-lookup"><span data-stu-id="9e9e3-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fc8e4-122">応答</span><span class="sxs-lookup"><span data-stu-id="fc8e4-122">Response</span></span>
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
+<!-- 
+{ 
+    "blockType": "response",
+    "@odata.type": "microsoft.graph.sitePage",
+    "truncated": true,
+    "isCollection":true
+} 
+-->
 
 ```json
 HTTP/1.1 200 OK
@@ -62,7 +76,7 @@ Content-type: application/json
     "value": [
         {
             "id": "5",
-            "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4",
+            "eTag": "\"{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4\"",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",
             "webUrl": "SitePages/EventInstructions.aspx",
@@ -119,12 +133,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": { ... },
+                            "query": {  },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": { ... },
+                            "displayMaps": {  },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -134,8 +148,8 @@ Content-type: application/json
             ]
         },
         {
-            "id": 2,
-            "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
+            "id": "2",
+            "eTag": "\"{75bc70e2-6587-45be-8493-c99a956b2e05},7\"",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
@@ -225,8 +239,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

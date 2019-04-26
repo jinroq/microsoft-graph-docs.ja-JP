@@ -4,50 +4,50 @@ description: 現在テーブルにあるすべてのフィルターを再適用�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b687d3cbf89d68f89d7e854bb3d7171427d8e466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 762f815126277bec33e649b0b33133c794e037f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536874"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330620"
 ---
-# <a name="table-reapplyfilters"></a><span data-ttu-id="f1f98-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="f1f98-103">Table: reapplyFilters</span></span>
+# <a name="table-reapplyfilters"></a><span data-ttu-id="1da05-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="1da05-103">Table: reapplyFilters</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f1f98-104">現在テーブルにあるすべてのフィルターを再適用します。</span><span class="sxs-lookup"><span data-stu-id="f1f98-104">Reapplies all the filters currently on the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f1f98-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f1f98-105">Permissions</span></span>
-<span data-ttu-id="f1f98-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f1f98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1da05-104">現在テーブルにあるすべてのフィルターを再適用します。</span><span class="sxs-lookup"><span data-stu-id="1da05-104">Reapplies all the filters currently on the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1da05-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1da05-105">Permissions</span></span>
+<span data-ttu-id="1da05-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1da05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f1f98-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f1f98-108">Permission type</span></span>      | <span data-ttu-id="f1f98-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f1f98-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1da05-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1da05-108">Permission type</span></span>      | <span data-ttu-id="1da05-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1da05-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f1f98-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f1f98-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f1f98-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f1f98-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f1f98-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f1f98-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1f98-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f1f98-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f1f98-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f1f98-114">Application</span></span> | <span data-ttu-id="f1f98-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f1f98-115">Not supported.</span></span> |
+|<span data-ttu-id="1da05-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1da05-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1da05-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1da05-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1da05-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1da05-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1da05-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1da05-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1da05-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1da05-114">Application</span></span> | <span data-ttu-id="1da05-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1da05-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f1f98-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f1f98-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1da05-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1da05-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/reapplyFilters
 POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f1f98-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f1f98-117">Request headers</span></span>
-| <span data-ttu-id="f1f98-118">名前</span><span class="sxs-lookup"><span data-stu-id="f1f98-118">Name</span></span>       | <span data-ttu-id="f1f98-119">説明</span><span class="sxs-lookup"><span data-stu-id="f1f98-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1da05-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1da05-117">Request headers</span></span>
+| <span data-ttu-id="1da05-118">名前</span><span class="sxs-lookup"><span data-stu-id="1da05-118">Name</span></span>       | <span data-ttu-id="1da05-119">説明</span><span class="sxs-lookup"><span data-stu-id="1da05-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f1f98-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1f98-120">Authorization</span></span>  | <span data-ttu-id="f1f98-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f1f98-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f1f98-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f1f98-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f1f98-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="f1f98-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="1da05-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1da05-120">Authorization</span></span>  | <span data-ttu-id="1da05-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1da05-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1da05-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1da05-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1da05-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="1da05-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f1f98-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f1f98-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1da05-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="1da05-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="f1f98-127">応答</span><span class="sxs-lookup"><span data-stu-id="f1f98-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1da05-127">応答</span><span class="sxs-lookup"><span data-stu-id="1da05-127">Response</span></span>
 
-<span data-ttu-id="f1f98-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f1f98-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1da05-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1da05-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f1f98-130">例</span><span class="sxs-lookup"><span data-stu-id="f1f98-130">Example</span></span>
-<span data-ttu-id="f1f98-131">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="f1f98-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f1f98-132">要求</span><span class="sxs-lookup"><span data-stu-id="f1f98-132">Request</span></span>
-<span data-ttu-id="f1f98-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f1f98-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1da05-130">例</span><span class="sxs-lookup"><span data-stu-id="1da05-130">Example</span></span>
+<span data-ttu-id="1da05-131">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="1da05-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="1da05-132">要求</span><span class="sxs-lookup"><span data-stu-id="1da05-132">Request</span></span>
+<span data-ttu-id="1da05-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1da05-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "table_reapplyfilters"
@@ -56,8 +56,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
 
-##### <a name="response"></a><span data-ttu-id="f1f98-134">応答</span><span class="sxs-lookup"><span data-stu-id="f1f98-134">Response</span></span>
-<span data-ttu-id="f1f98-135">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f1f98-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="1da05-134">応答</span><span class="sxs-lookup"><span data-stu-id="1da05-134">Response</span></span>
+<span data-ttu-id="1da05-135">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1da05-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,8 +76,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/table-reapplyfilters.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,40 +1,40 @@
 ---
-title: オペレーション リソースの種類
-description: 実行時間の長い操作のステータス。
+title: operation リソースの種類
+description: 長時間実行されている操作の状態。
 localization_priority: Normal
-ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e1e0f7a886d460bc378fdc75041e17b997897e2d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520187"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341785"
 ---
-# <a name="operation-resource-type"></a><span data-ttu-id="e6c84-103">オペレーション リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e6c84-103">operation resource type</span></span>
+# <a name="operation-resource-type"></a><span data-ttu-id="e6f2e-103">operation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e6f2e-103">operation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e6c84-104">実行時間の長い操作のステータス。</span><span class="sxs-lookup"><span data-stu-id="e6c84-104">The status of a long-running operation.</span></span>
+<span data-ttu-id="e6f2e-104">長時間実行されている操作の状態。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-104">The status of a long-running operation.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e6c84-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="e6c84-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e6f2e-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="e6f2e-105">Methods</span></span>
 
-<span data-ttu-id="e6c84-106">なし</span><span class="sxs-lookup"><span data-stu-id="e6c84-106">None</span></span>
+<span data-ttu-id="e6f2e-106">なし</span><span class="sxs-lookup"><span data-stu-id="e6f2e-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e6c84-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6c84-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e6f2e-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6f2e-107">Properties</span></span>
 
-| <span data-ttu-id="e6c84-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6c84-108">Property</span></span>           | <span data-ttu-id="e6c84-109">型</span><span class="sxs-lookup"><span data-stu-id="e6c84-109">Type</span></span>            | <span data-ttu-id="e6c84-110">説明</span><span class="sxs-lookup"><span data-stu-id="e6c84-110">Description</span></span>                                                                     |
+| <span data-ttu-id="e6f2e-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6f2e-108">Property</span></span>           | <span data-ttu-id="e6f2e-109">型</span><span class="sxs-lookup"><span data-stu-id="e6f2e-109">Type</span></span>            | <span data-ttu-id="e6f2e-110">説明</span><span class="sxs-lookup"><span data-stu-id="e6f2e-110">Description</span></span>                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="e6c84-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="e6c84-111">createdDateTime</span></span>    | <span data-ttu-id="e6c84-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e6c84-112">DateTimeOffset</span></span>  | <span data-ttu-id="e6c84-113">操作の開始時刻です。</span><span class="sxs-lookup"><span data-stu-id="e6c84-113">The start time of the operation.</span></span>                                                |
-| <span data-ttu-id="e6c84-114">id</span><span class="sxs-lookup"><span data-stu-id="e6c84-114">id</span></span>                 | <span data-ttu-id="e6c84-115">String</span><span class="sxs-lookup"><span data-stu-id="e6c84-115">String</span></span>          | <span data-ttu-id="e6c84-116">操作 ID です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e6c84-116">The operation id. Read-only.</span></span> <span data-ttu-id="e6c84-117">サーバーを生成します。</span><span class="sxs-lookup"><span data-stu-id="e6c84-117">Server generated.</span></span>                                  |
-| <span data-ttu-id="e6c84-118">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="e6c84-118">lastActionDateTime</span></span> | <span data-ttu-id="e6c84-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e6c84-119">DateTimeOffset</span></span>  | <span data-ttu-id="e6c84-120">操作の最後の操作の時間です。</span><span class="sxs-lookup"><span data-stu-id="e6c84-120">The time of the last action of the operation.</span></span>                                   |
-| <span data-ttu-id="e6c84-121">status</span><span class="sxs-lookup"><span data-stu-id="e6c84-121">status</span></span>             | <span data-ttu-id="e6c84-122">String</span><span class="sxs-lookup"><span data-stu-id="e6c84-122">String</span></span>          | <span data-ttu-id="e6c84-123">使用可能な値: `notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="e6c84-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="e6c84-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e6c84-124">Read-only.</span></span> |
+| <span data-ttu-id="e6f2e-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="e6f2e-111">createdDateTime</span></span>    | <span data-ttu-id="e6f2e-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e6f2e-112">DateTimeOffset</span></span>  | <span data-ttu-id="e6f2e-113">操作の開始時刻。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-113">The start time of the operation.</span></span>                                                |
+| <span data-ttu-id="e6f2e-114">id</span><span class="sxs-lookup"><span data-stu-id="e6f2e-114">id</span></span>                 | <span data-ttu-id="e6f2e-115">String</span><span class="sxs-lookup"><span data-stu-id="e6f2e-115">String</span></span>          | <span data-ttu-id="e6f2e-116">操作 id。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-116">The operation id. Read-only.</span></span> <span data-ttu-id="e6f2e-117">サーバーによって生成されます。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-117">Server generated.</span></span>                                  |
+| <span data-ttu-id="e6f2e-118">lastactiondatetime</span><span class="sxs-lookup"><span data-stu-id="e6f2e-118">lastActionDateTime</span></span> | <span data-ttu-id="e6f2e-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e6f2e-119">DateTimeOffset</span></span>  | <span data-ttu-id="e6f2e-120">操作の最後の操作の時刻。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-120">The time of the last action of the operation.</span></span>                                   |
+| <span data-ttu-id="e6f2e-121">status</span><span class="sxs-lookup"><span data-stu-id="e6f2e-121">status</span></span>             | <span data-ttu-id="e6f2e-122">String</span><span class="sxs-lookup"><span data-stu-id="e6f2e-122">String</span></span>          | <span data-ttu-id="e6f2e-123">使用可能な値: `notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="e6f2e-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-124">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="e6c84-125">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="e6c84-125">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="e6f2e-125">関係</span><span class="sxs-lookup"><span data-stu-id="e6f2e-125">Relationships</span></span>
 
-<span data-ttu-id="e6c84-126">None</span><span class="sxs-lookup"><span data-stu-id="e6c84-126">None</span></span>
+<span data-ttu-id="e6f2e-126">なし</span><span class="sxs-lookup"><span data-stu-id="e6f2e-126">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e6c84-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e6c84-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e6f2e-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e6f2e-127">JSON representation</span></span>
 
-<span data-ttu-id="e6c84-128">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e6c84-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e6f2e-128">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e6f2e-128">The following is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -51,7 +51,7 @@ ms.locfileid: "29520187"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="e6c84-129">例</span><span class="sxs-lookup"><span data-stu-id="e6c84-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e6f2e-129">例</span><span class="sxs-lookup"><span data-stu-id="e6f2e-129">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -75,8 +75,6 @@ ms.locfileid: "29520187"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

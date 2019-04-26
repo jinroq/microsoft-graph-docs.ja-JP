@@ -4,29 +4,29 @@ description: ユーザーの primaryRole が `teacher` の場合に存在する 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 17019d5ff5c2bc9614e934ef66d63e459371469a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 092d8fb9d7c358114159428d676ab1a21ea9d091
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542940"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333884"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="3edbb-103">educationTeacher リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3edbb-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="2e316-103">educationTeacher リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2e316-103">educationTeacher resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3edbb-104">ユーザーの primaryRole が `teacher` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。</span><span class="sxs-lookup"><span data-stu-id="3edbb-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="2e316-104">ユーザーの primaryRole が `teacher` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。</span><span class="sxs-lookup"><span data-stu-id="2e316-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3edbb-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3edbb-105">Properties</span></span>
-| <span data-ttu-id="3edbb-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3edbb-106">Property</span></span>     | <span data-ttu-id="3edbb-107">型</span><span class="sxs-lookup"><span data-stu-id="3edbb-107">Type</span></span>   |<span data-ttu-id="3edbb-108">説明</span><span class="sxs-lookup"><span data-stu-id="3edbb-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2e316-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e316-105">Properties</span></span>
+| <span data-ttu-id="2e316-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e316-106">Property</span></span>     | <span data-ttu-id="2e316-107">型</span><span class="sxs-lookup"><span data-stu-id="2e316-107">Type</span></span>   |<span data-ttu-id="2e316-108">説明</span><span class="sxs-lookup"><span data-stu-id="2e316-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3edbb-109">externalId</span><span class="sxs-lookup"><span data-stu-id="3edbb-109">externalId</span></span>|<span data-ttu-id="3edbb-110">String</span><span class="sxs-lookup"><span data-stu-id="3edbb-110">String</span></span>| <span data-ttu-id="3edbb-111">ソース システムの教師の ID。</span><span class="sxs-lookup"><span data-stu-id="3edbb-111">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="3edbb-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="3edbb-112">teacherNumber</span></span>|<span data-ttu-id="3edbb-113">String</span><span class="sxs-lookup"><span data-stu-id="3edbb-113">String</span></span>|<span data-ttu-id="3edbb-114">教師の番号。</span><span class="sxs-lookup"><span data-stu-id="3edbb-114">Teacher number.</span></span>|
+|<span data-ttu-id="2e316-109">externalId</span><span class="sxs-lookup"><span data-stu-id="2e316-109">externalId</span></span>|<span data-ttu-id="2e316-110">String</span><span class="sxs-lookup"><span data-stu-id="2e316-110">String</span></span>| <span data-ttu-id="2e316-111">ソース システムの教師の ID。</span><span class="sxs-lookup"><span data-stu-id="2e316-111">ID of the teacher in the source system.</span></span>|
+|<span data-ttu-id="2e316-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="2e316-112">teacherNumber</span></span>|<span data-ttu-id="2e316-113">String</span><span class="sxs-lookup"><span data-stu-id="2e316-113">String</span></span>|<span data-ttu-id="2e316-114">教師の番号。</span><span class="sxs-lookup"><span data-stu-id="2e316-114">Teacher number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3edbb-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3edbb-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2e316-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2e316-115">JSON representation</span></span>
 
-<span data-ttu-id="3edbb-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3edbb-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2e316-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2e316-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,8 +53,6 @@ ms.locfileid: "32542940"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationteacher.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

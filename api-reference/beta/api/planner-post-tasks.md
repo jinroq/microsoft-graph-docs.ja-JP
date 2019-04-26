@@ -1,57 +1,59 @@
 ---
 title: Create plannerTask
 description: この API を使用して、新しい **plannerTask** を作成します。
-localization_priority: Priority
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f74e41e3c855fd6cf54019e2cfd13e36fce45b7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 400f40540370580b3d3af7a94368cdc9582d703e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538946"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332529"
 ---
-# <a name="create-plannertask"></a><span data-ttu-id="19863-103">Create plannerTask</span><span class="sxs-lookup"><span data-stu-id="19863-103">Create plannerTask</span></span>
+# <a name="create-plannertask"></a><span data-ttu-id="affbe-103">Create plannerTask</span><span class="sxs-lookup"><span data-stu-id="affbe-103">Create plannerTask</span></span>
 
-<span data-ttu-id="19863-104">この API を使用して、新しい **plannerTask** を作成します。</span><span class="sxs-lookup"><span data-stu-id="19863-104">Use this API to create a new **plannerTask**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="19863-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="19863-105">Permissions</span></span>
-<span data-ttu-id="19863-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19863-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="19863-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="19863-108">Permission type</span></span>      | <span data-ttu-id="19863-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="19863-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="affbe-104">この API を使用して、新しい **plannerTask** を作成します。</span><span class="sxs-lookup"><span data-stu-id="affbe-104">Use this API to create a new **plannerTask**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="affbe-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="affbe-105">Permissions</span></span>
+<span data-ttu-id="affbe-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="affbe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="affbe-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="affbe-108">Permission type</span></span>      | <span data-ttu-id="affbe-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="affbe-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="19863-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="19863-110">Delegated (work or school account)</span></span> | <span data-ttu-id="19863-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19863-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="19863-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="19863-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19863-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19863-113">Not supported.</span></span>    |
-|<span data-ttu-id="19863-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="19863-114">Application</span></span> | <span data-ttu-id="19863-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19863-115">Not supported.</span></span> |
+|<span data-ttu-id="affbe-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="affbe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="affbe-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="affbe-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="affbe-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="affbe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="affbe-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="affbe-113">Not supported.</span></span>    |
+|<span data-ttu-id="affbe-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="affbe-114">Application</span></span> | <span data-ttu-id="affbe-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="affbe-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="19863-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="19863-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="affbe-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="affbe-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="19863-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="19863-117">Request headers</span></span>
-| <span data-ttu-id="19863-118">名前</span><span class="sxs-lookup"><span data-stu-id="19863-118">Name</span></span>       | <span data-ttu-id="19863-119">説明</span><span class="sxs-lookup"><span data-stu-id="19863-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="affbe-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="affbe-117">Request headers</span></span>
+| <span data-ttu-id="affbe-118">名前</span><span class="sxs-lookup"><span data-stu-id="affbe-118">Name</span></span>       | <span data-ttu-id="affbe-119">説明</span><span class="sxs-lookup"><span data-stu-id="affbe-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="19863-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="19863-120">Authorization</span></span>  | <span data-ttu-id="19863-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="19863-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="affbe-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="affbe-120">Authorization</span></span>  | <span data-ttu-id="affbe-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="affbe-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="19863-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="19863-123">Request body</span></span>
-<span data-ttu-id="19863-p103">要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。**plannerTask** planId プロパティは、既存の [plannerPlan](../resources/plannerplan.md) オブジェクトの ID に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="19863-p103">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object. The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.</span></span>
+## <a name="request-body"></a><span data-ttu-id="affbe-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="affbe-123">Request body</span></span>
+<span data-ttu-id="affbe-p103">要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。**plannerTask** planId プロパティは、既存の [plannerPlan](../resources/plannerplan.md) オブジェクトの ID に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="affbe-p103">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object. The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.</span></span>
 
-## <a name="response"></a><span data-ttu-id="19863-126">応答</span><span class="sxs-lookup"><span data-stu-id="19863-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="affbe-126">応答</span><span class="sxs-lookup"><span data-stu-id="affbe-126">Response</span></span>
 
-<span data-ttu-id="19863-127">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [plannerTask](../resources/plannertask.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="19863-127">If successful, this method returns `201 Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.</span></span>
+<span data-ttu-id="affbe-127">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [plannerTask](../resources/plannertask.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="affbe-127">If successful, this method returns `201 Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.</span></span>
 
-<span data-ttu-id="19863-p104">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19863-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="affbe-p104">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="affbe-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="19863-131">例</span><span class="sxs-lookup"><span data-stu-id="19863-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="19863-132">要求</span><span class="sxs-lookup"><span data-stu-id="19863-132">Request</span></span>
-<span data-ttu-id="19863-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="19863-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="affbe-131">例</span><span class="sxs-lookup"><span data-stu-id="affbe-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="affbe-132">要求</span><span class="sxs-lookup"><span data-stu-id="affbe-132">Request</span></span>
+<span data-ttu-id="affbe-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="affbe-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/planner/tasks
+POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
 Content-length: 285
 
@@ -67,9 +69,9 @@ Content-length: 285
   },
 }
 ```
-<span data-ttu-id="19863-134">要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="19863-134">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="19863-135">応答</span><span class="sxs-lookup"><span data-stu-id="19863-135">Response</span></span>
-<span data-ttu-id="19863-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="19863-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="affbe-134">要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="affbe-134">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="affbe-135">応答</span><span class="sxs-lookup"><span data-stu-id="affbe-135">Response</span></span>
+<span data-ttu-id="affbe-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="affbe-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,10 +111,13 @@ Content-length: 677
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

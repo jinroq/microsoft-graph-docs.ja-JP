@@ -2,59 +2,61 @@
 title: プログラムの削除
 description: Azure AD access レビュー機能で、プログラムオブジェクトを削除します。
 localization_priority: Normal
-ms.openlocfilehash: 930367e6c61d354655e73fb7ece9c8776e15f34e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3839c552d7342bc00f5fdf8c26d45770c12ff17
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546409"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331981"
 ---
-# <a name="delete-program"></a><span data-ttu-id="8d20a-103">プログラムの削除</span><span class="sxs-lookup"><span data-stu-id="8d20a-103">Delete program</span></span>
+# <a name="delete-program"></a><span data-ttu-id="cf5dc-103">プログラムの削除</span><span class="sxs-lookup"><span data-stu-id="cf5dc-103">Delete program</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8d20a-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、[プログラム](../resources/program.md)オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="8d20a-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [program](../resources/program.md) object.</span></span>
+<span data-ttu-id="cf5dc-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、[プログラム](../resources/program.md)オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [program](../resources/program.md) object.</span></span>
 
-<span data-ttu-id="8d20a-105">まだ`programControl`リンクされているプログラムを削除しないでください。これらのアクセスレビューは、最初にプログラムから削除するか、別のプログラムにリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d20a-105">Do not delete a program which still has `programControl` linked to it, those access reviews should first be deleted or unlinked from the program and linked to a different program.</span></span>  <span data-ttu-id="8d20a-106">また、組み込みの既定のプログラムは削除できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8d20a-106">Also, please note that the built-in default program cannot be deleted.</span></span>
+<span data-ttu-id="cf5dc-105">まだ`programControl`リンクされているプログラムを削除しないでください。これらのアクセスレビューは、最初にプログラムから削除するか、別のプログラムにリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-105">Do not delete a program which still has `programControl` linked to it, those access reviews should first be deleted or unlinked from the program and linked to a different program.</span></span>  <span data-ttu-id="cf5dc-106">また、組み込みの既定のプログラムは削除できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-106">Also, please note that the built-in default program cannot be deleted.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="8d20a-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8d20a-107">Permissions</span></span>
-<span data-ttu-id="8d20a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d20a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cf5dc-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cf5dc-107">Permissions</span></span>
+<span data-ttu-id="cf5dc-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8d20a-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8d20a-110">Permission type</span></span>                        | <span data-ttu-id="8d20a-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8d20a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cf5dc-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cf5dc-110">Permission type</span></span>                        | <span data-ttu-id="cf5dc-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cf5dc-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8d20a-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8d20a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="8d20a-113">`ProgramControl.ReadWrite.All`.</span><span class="sxs-lookup"><span data-stu-id="8d20a-113"></span></span>  <span data-ttu-id="8d20a-114">サインインしているユーザーは、プログラムを作成することを許可するディレクトリロールにある必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d20a-114">The signed in user must also be in a directory role which permits them to create a program.</span></span> |
-|<span data-ttu-id="8d20a-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8d20a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d20a-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d20a-116">Not supported.</span></span> |
-|<span data-ttu-id="8d20a-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8d20a-117">Application</span></span>                            | <span data-ttu-id="8d20a-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d20a-118">Not supported.</span></span> |
+|<span data-ttu-id="cf5dc-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cf5dc-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="cf5dc-113">programcontrol</span><span class="sxs-lookup"><span data-stu-id="cf5dc-113">ProgramControl.ReadWrite.All</span></span>   |
+|<span data-ttu-id="cf5dc-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cf5dc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cf5dc-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-115">Not supported.</span></span> |
+|<span data-ttu-id="cf5dc-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cf5dc-116">Application</span></span>                            | <span data-ttu-id="cf5dc-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8d20a-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8d20a-119">HTTP request</span></span>
+<span data-ttu-id="cf5dc-118">サインインしているユーザーは、プログラムを作成することを許可するディレクトリロールにある必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-118">The signed in user must also be in a directory role that permits them to create a program.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="cf5dc-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cf5dc-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /programs('<id>')
 ```
-## <a name="request-headers"></a><span data-ttu-id="8d20a-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8d20a-120">Request headers</span></span>
-| <span data-ttu-id="8d20a-121">名前</span><span class="sxs-lookup"><span data-stu-id="8d20a-121">Name</span></span>         | <span data-ttu-id="8d20a-122">型</span><span class="sxs-lookup"><span data-stu-id="8d20a-122">Type</span></span>        | <span data-ttu-id="8d20a-123">説明</span><span class="sxs-lookup"><span data-stu-id="8d20a-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cf5dc-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cf5dc-120">Request headers</span></span>
+| <span data-ttu-id="cf5dc-121">名前</span><span class="sxs-lookup"><span data-stu-id="cf5dc-121">Name</span></span>         | <span data-ttu-id="cf5dc-122">型</span><span class="sxs-lookup"><span data-stu-id="cf5dc-122">Type</span></span>        | <span data-ttu-id="cf5dc-123">説明</span><span class="sxs-lookup"><span data-stu-id="cf5dc-123">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="8d20a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d20a-124">Authorization</span></span> | <span data-ttu-id="8d20a-125">string</span><span class="sxs-lookup"><span data-stu-id="8d20a-125">string</span></span> | <span data-ttu-id="8d20a-p104">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="8d20a-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="cf5dc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf5dc-124">Authorization</span></span> | <span data-ttu-id="cf5dc-125">string</span><span class="sxs-lookup"><span data-stu-id="cf5dc-125">string</span></span> | <span data-ttu-id="cf5dc-p103">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-p103">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8d20a-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="8d20a-128">Request body</span></span>
-<span data-ttu-id="8d20a-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8d20a-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cf5dc-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="cf5dc-128">Request body</span></span>
+<span data-ttu-id="cf5dc-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-129">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="8d20a-130">応答</span><span class="sxs-lookup"><span data-stu-id="8d20a-130">Response</span></span>
-<span data-ttu-id="8d20a-p105">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="8d20a-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cf5dc-130">応答</span><span class="sxs-lookup"><span data-stu-id="cf5dc-130">Response</span></span>
+<span data-ttu-id="cf5dc-p104">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-p104">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8d20a-133">例</span><span class="sxs-lookup"><span data-stu-id="8d20a-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8d20a-134">要求</span><span class="sxs-lookup"><span data-stu-id="8d20a-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="cf5dc-133">例</span><span class="sxs-lookup"><span data-stu-id="cf5dc-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cf5dc-134">要求</span><span class="sxs-lookup"><span data-stu-id="cf5dc-134">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_program"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
-##### <a name="response"></a><span data-ttu-id="8d20a-135">応答</span><span class="sxs-lookup"><span data-stu-id="8d20a-135">Response</span></span>
-><span data-ttu-id="8d20a-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="8d20a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cf5dc-135">応答</span><span class="sxs-lookup"><span data-stu-id="cf5dc-135">Response</span></span>
+><span data-ttu-id="cf5dc-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="cf5dc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -72,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

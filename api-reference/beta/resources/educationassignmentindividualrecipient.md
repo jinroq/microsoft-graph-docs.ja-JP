@@ -4,29 +4,29 @@ description: 'プロパティへの割り当ての中で使用されます。 �
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 736345901faeeb4d3fab4d417752b684f1e19307
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39d3fb4875412546cd6f182de05ad1779b05abdd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543015"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334418"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="cce3a-104">educationAssignmentIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cce3a-104">educationAssignmentIndividualRecipient resource type</span></span>
+# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="2568f-104">educationAssignmentIndividualRecipient リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2568f-104">educationAssignmentIndividualRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cce3a-105">プロパティへの[割り当て](educationassignment.md)の中で使用されます。</span><span class="sxs-lookup"><span data-stu-id="cce3a-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="cce3a-106">個別の受信者一覧に設定した場合、クラス内の学生は、割り当てが発行されたときに送信オブジェクトを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="cce3a-106">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="2568f-105">プロパティへの[割り当て](educationassignment.md)の中で使用されます。</span><span class="sxs-lookup"><span data-stu-id="2568f-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="2568f-106">個別の受信者一覧に設定した場合、クラス内の学生は、割り当てが発行されたときに送信オブジェクトを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="2568f-106">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="cce3a-107">このリソースは[educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。</span><span class="sxs-lookup"><span data-stu-id="cce3a-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="2568f-107">このリソースは[educationAssignmentRecipient](educationassignmentrecipient.md)のサブクラスです。</span><span class="sxs-lookup"><span data-stu-id="2568f-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cce3a-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cce3a-108">Properties</span></span>
-| <span data-ttu-id="cce3a-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cce3a-109">Property</span></span>     | <span data-ttu-id="cce3a-110">型</span><span class="sxs-lookup"><span data-stu-id="cce3a-110">Type</span></span>   |<span data-ttu-id="cce3a-111">説明</span><span class="sxs-lookup"><span data-stu-id="cce3a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2568f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2568f-108">Properties</span></span>
+| <span data-ttu-id="2568f-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2568f-109">Property</span></span>     | <span data-ttu-id="2568f-110">型</span><span class="sxs-lookup"><span data-stu-id="2568f-110">Type</span></span>   |<span data-ttu-id="2568f-111">説明</span><span class="sxs-lookup"><span data-stu-id="2568f-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cce3a-112">recipients</span><span class="sxs-lookup"><span data-stu-id="cce3a-112">recipients</span></span>|<span data-ttu-id="cce3a-113">String collection</span><span class="sxs-lookup"><span data-stu-id="cce3a-113">String collection</span></span>|<span data-ttu-id="cce3a-114">受信者の id のコレクション。</span><span class="sxs-lookup"><span data-stu-id="cce3a-114">A collection of ids of the recipients.</span></span>|
+|<span data-ttu-id="2568f-112">recipients</span><span class="sxs-lookup"><span data-stu-id="2568f-112">recipients</span></span>|<span data-ttu-id="2568f-113">String collection</span><span class="sxs-lookup"><span data-stu-id="2568f-113">String collection</span></span>|<span data-ttu-id="2568f-114">受信者の id のコレクション。</span><span class="sxs-lookup"><span data-stu-id="2568f-114">A collection of ids of the recipients.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cce3a-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="cce3a-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2568f-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2568f-115">JSON representation</span></span>
 
-<span data-ttu-id="cce3a-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cce3a-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2568f-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2568f-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,8 +52,6 @@ ms.locfileid: "32543015"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentindividualrecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

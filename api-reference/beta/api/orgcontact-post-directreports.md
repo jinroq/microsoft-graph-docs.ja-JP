@@ -4,48 +4,48 @@ description: この API を使用して、新しい directreport を作成しま
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 44a31857619100646536eb7e4ad68d51bade851a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72eb0b26bdfcfecde64bf26705fa16a5e8da2289
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539836"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338083"
 ---
-# <a name="create-directreport"></a><span data-ttu-id="f9abf-103">directreport の作成</span><span class="sxs-lookup"><span data-stu-id="f9abf-103">Create directReport</span></span>
+# <a name="create-directreport"></a><span data-ttu-id="763da-103">directreport の作成</span><span class="sxs-lookup"><span data-stu-id="763da-103">Create directReport</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9abf-104">この API を使用して、新しい directreport を作成します。</span><span class="sxs-lookup"><span data-stu-id="f9abf-104">Use this API to create a new directReport.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f9abf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f9abf-105">Permissions</span></span>
-<span data-ttu-id="f9abf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f9abf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="763da-104">この API を使用して、新しい directreport を作成します。</span><span class="sxs-lookup"><span data-stu-id="763da-104">Use this API to create a new directReport.</span></span>
+## <a name="permissions"></a><span data-ttu-id="763da-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="763da-105">Permissions</span></span>
+<span data-ttu-id="763da-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="763da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f9abf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f9abf-108">Permission type</span></span>      | <span data-ttu-id="f9abf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f9abf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="763da-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="763da-108">Permission type</span></span>      | <span data-ttu-id="763da-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="763da-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f9abf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f9abf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f9abf-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f9abf-111">Not supported.</span></span>    |
-|<span data-ttu-id="f9abf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f9abf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9abf-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f9abf-113">Not supported.</span></span>    |
-|<span data-ttu-id="f9abf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f9abf-114">Application</span></span> | <span data-ttu-id="f9abf-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f9abf-115">Not supported.</span></span> |
+|<span data-ttu-id="763da-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="763da-110">Delegated (work or school account)</span></span> | <span data-ttu-id="763da-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="763da-111">Not supported.</span></span>    |
+|<span data-ttu-id="763da-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="763da-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="763da-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="763da-113">Not supported.</span></span>    |
+|<span data-ttu-id="763da-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="763da-114">Application</span></span> | <span data-ttu-id="763da-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="763da-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9abf-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f9abf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="763da-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="763da-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/directReports
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f9abf-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f9abf-117">Request headers</span></span>
-| <span data-ttu-id="f9abf-118">名前</span><span class="sxs-lookup"><span data-stu-id="f9abf-118">Name</span></span>       | <span data-ttu-id="f9abf-119">型</span><span class="sxs-lookup"><span data-stu-id="f9abf-119">Type</span></span> | <span data-ttu-id="f9abf-120">説明</span><span class="sxs-lookup"><span data-stu-id="f9abf-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="763da-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="763da-117">Request headers</span></span>
+| <span data-ttu-id="763da-118">名前</span><span class="sxs-lookup"><span data-stu-id="763da-118">Name</span></span>       | <span data-ttu-id="763da-119">型</span><span class="sxs-lookup"><span data-stu-id="763da-119">Type</span></span> | <span data-ttu-id="763da-120">説明</span><span class="sxs-lookup"><span data-stu-id="763da-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f9abf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9abf-121">Authorization</span></span>  | <span data-ttu-id="f9abf-122">string</span><span class="sxs-lookup"><span data-stu-id="f9abf-122">string</span></span>  | <span data-ttu-id="f9abf-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f9abf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="763da-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="763da-121">Authorization</span></span>  | <span data-ttu-id="763da-122">string</span><span class="sxs-lookup"><span data-stu-id="763da-122">string</span></span>  | <span data-ttu-id="763da-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="763da-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9abf-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f9abf-125">Request body</span></span>
-<span data-ttu-id="f9abf-126">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f9abf-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="763da-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="763da-125">Request body</span></span>
+<span data-ttu-id="763da-126">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="763da-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9abf-127">応答</span><span class="sxs-lookup"><span data-stu-id="f9abf-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="763da-127">応答</span><span class="sxs-lookup"><span data-stu-id="763da-127">Response</span></span>
 
-<span data-ttu-id="f9abf-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f9abf-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="763da-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="763da-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9abf-129">例</span><span class="sxs-lookup"><span data-stu-id="f9abf-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f9abf-130">要求</span><span class="sxs-lookup"><span data-stu-id="f9abf-130">Request</span></span>
-<span data-ttu-id="f9abf-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f9abf-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="763da-129">例</span><span class="sxs-lookup"><span data-stu-id="763da-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="763da-130">要求</span><span class="sxs-lookup"><span data-stu-id="763da-130">Request</span></span>
+<span data-ttu-id="763da-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="763da-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_orgcontact"
@@ -60,9 +60,9 @@ Content-length: 30
   }
 }
 ```
-<span data-ttu-id="f9abf-132">要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f9abf-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="f9abf-133">応答</span><span class="sxs-lookup"><span data-stu-id="f9abf-133">Response</span></span>
-<span data-ttu-id="f9abf-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f9abf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="763da-132">要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="763da-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="763da-133">応答</span><span class="sxs-lookup"><span data-stu-id="763da-133">Response</span></span>
+<span data-ttu-id="763da-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="763da-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,8 +89,6 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/orgcontact-post-directreports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

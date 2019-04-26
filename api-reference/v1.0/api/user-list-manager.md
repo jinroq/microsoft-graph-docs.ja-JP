@@ -1,65 +1,59 @@
 ---
 title: 上司を一覧表示する
-description: ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
-localization_priority: Priority
+description: ユーザーの上司を取得します。 ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ae243f0fa4c8212cecebedc39ebfc2d5713d5689
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571318"
 ---
-# <a name="list-manager"></a><span data-ttu-id="46477-104">上司を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="46477-104">List manager</span></span>
+# <a name="list-manager"></a><span data-ttu-id="8eeef-104">上司を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="8eeef-104">List manager</span></span>
 
-<span data-ttu-id="46477-p102">ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。</span><span class="sxs-lookup"><span data-stu-id="46477-p102">Get user's manager. Returns the user or contact assigned as the user's manager.</span></span>
-## <a name="permissions"></a><span data-ttu-id="46477-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="46477-107">Permissions</span></span>
-<span data-ttu-id="46477-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="46477-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="46477-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="46477-110">Permission type</span></span>      | <span data-ttu-id="46477-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="46477-111">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="8eeef-105">ユーザーの上司を取得します。</span><span class="sxs-lookup"><span data-stu-id="8eeef-105">Get user's manager.</span></span> <span data-ttu-id="8eeef-106">ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。</span><span class="sxs-lookup"><span data-stu-id="8eeef-106">Returns the user or contact assigned as the user's manager.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8eeef-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8eeef-107">Permissions</span></span>
+<span data-ttu-id="8eeef-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8eeef-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8eeef-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8eeef-110">Permission type</span></span>      | <span data-ttu-id="8eeef-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8eeef-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="46477-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="46477-112">Delegated (work or school account)</span></span> | <span data-ttu-id="46477-113">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="46477-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="46477-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="46477-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46477-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="46477-115">Not supported.</span></span>    |
-|<span data-ttu-id="46477-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="46477-116">Application</span></span> | <span data-ttu-id="46477-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46477-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8eeef-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8eeef-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8eeef-113">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8eeef-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="8eeef-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8eeef-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8eeef-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8eeef-115">Not supported.</span></span>    |
+|<span data-ttu-id="8eeef-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8eeef-116">Application</span></span> | <span data-ttu-id="8eeef-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8eeef-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="46477-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="46477-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8eeef-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8eeef-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/manager
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="46477-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="46477-119">Optional query parameters</span></span>
-<span data-ttu-id="46477-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="46477-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="46477-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="46477-121">Request headers</span></span>
-| <span data-ttu-id="46477-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="46477-122">Header</span></span>       | <span data-ttu-id="46477-123">値</span><span class="sxs-lookup"><span data-stu-id="46477-123">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8eeef-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8eeef-119">Optional query parameters</span></span>
+<span data-ttu-id="8eeef-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8eeef-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8eeef-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8eeef-121">Request headers</span></span>
+| <span data-ttu-id="8eeef-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8eeef-122">Header</span></span>       | <span data-ttu-id="8eeef-123">値</span><span class="sxs-lookup"><span data-stu-id="8eeef-123">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="46477-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="46477-124">Authorization</span></span>  | <span data-ttu-id="46477-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="46477-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="46477-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="46477-127">Content-Type</span></span>   | <span data-ttu-id="46477-128">application/json</span><span class="sxs-lookup"><span data-stu-id="46477-128">application/json</span></span>  |
+| <span data-ttu-id="8eeef-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8eeef-124">Authorization</span></span>  | <span data-ttu-id="8eeef-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8eeef-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8eeef-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8eeef-127">Content-Type</span></span>   | <span data-ttu-id="8eeef-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8eeef-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="46477-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="46477-129">Request body</span></span>
-<span data-ttu-id="46477-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="46477-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8eeef-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="8eeef-129">Request body</span></span>
+<span data-ttu-id="8eeef-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8eeef-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="46477-131">応答</span><span class="sxs-lookup"><span data-stu-id="46477-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8eeef-131">応答</span><span class="sxs-lookup"><span data-stu-id="8eeef-131">Response</span></span>
 
-<span data-ttu-id="46477-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="46477-132">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="46477-133">例</span><span class="sxs-lookup"><span data-stu-id="46477-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="46477-134">要求</span><span class="sxs-lookup"><span data-stu-id="46477-134">Request</span></span>
-<span data-ttu-id="46477-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="46477-135">Here is an example of the request.</span></span>
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<span data-ttu-id="8eeef-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8eeef-132">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8eeef-133">例</span><span class="sxs-lookup"><span data-stu-id="8eeef-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8eeef-134">要求</span><span class="sxs-lookup"><span data-stu-id="8eeef-134">Request</span></span>
+<span data-ttu-id="8eeef-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8eeef-135">Here is an example of the request.</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a><span data-ttu-id="46477-136">応答</span><span class="sxs-lookup"><span data-stu-id="46477-136">Response</span></span>
-<span data-ttu-id="46477-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="46477-137">Here is an example of the response.</span></span>
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": false
-} -->
+##### <a name="response"></a><span data-ttu-id="8eeef-136">応答</span><span class="sxs-lookup"><span data-stu-id="8eeef-136">Response</span></span>
+<span data-ttu-id="8eeef-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8eeef-137">Here is an example of the response.</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,10 +80,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

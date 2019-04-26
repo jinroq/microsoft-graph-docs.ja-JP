@@ -4,55 +4,54 @@ description: 指定した outlooktaskgroup の下に Outlook のタスクフォ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d1c6621e16d548b24cba264cb0434c5ea5dbd290
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 59f6b6b2d12a68ded2cd22c8f859686f7b2fef20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539641"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337932"
 ---
-# <a name="create-outlooktaskfolder"></a><span data-ttu-id="6857e-103">outlooktaskfolder の作成</span><span class="sxs-lookup"><span data-stu-id="6857e-103">Create outlookTaskFolder</span></span>
+# <a name="create-outlooktaskfolder"></a><span data-ttu-id="ff2f4-103">outlooktaskfolder の作成</span><span class="sxs-lookup"><span data-stu-id="ff2f4-103">Create outlookTaskFolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6857e-104">指定した[outlooktaskgroup](../resources/outlooktaskgroup.md)の下に Outlook のタスクフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="6857e-104">Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="6857e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6857e-105">Permissions</span></span>
-<span data-ttu-id="6857e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6857e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ff2f4-104">指定した[outlooktaskgroup](../resources/outlooktaskgroup.md)の下に Outlook のタスクフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-104">Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff2f4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ff2f4-105">Permissions</span></span>
+<span data-ttu-id="ff2f4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6857e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6857e-108">Permission type</span></span>      | <span data-ttu-id="6857e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6857e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ff2f4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ff2f4-108">Permission type</span></span>      | <span data-ttu-id="ff2f4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ff2f4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6857e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6857e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6857e-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6857e-111">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="6857e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6857e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6857e-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6857e-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="6857e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6857e-114">Application</span></span> | <span data-ttu-id="6857e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6857e-115">Not supported.</span></span> |
+|<span data-ttu-id="ff2f4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ff2f4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ff2f4-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff2f4-111">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="ff2f4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ff2f4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff2f4-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff2f4-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="ff2f4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ff2f4-114">Application</span></span> | <span data-ttu-id="ff2f4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6857e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6857e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff2f4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ff2f4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/taskGroups/{id}/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
-## <a name="request-headers"></a><span data-ttu-id="6857e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6857e-117">Request headers</span></span>
-| <span data-ttu-id="6857e-118">名前</span><span class="sxs-lookup"><span data-stu-id="6857e-118">Name</span></span>       | <span data-ttu-id="6857e-119">説明</span><span class="sxs-lookup"><span data-stu-id="6857e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ff2f4-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff2f4-117">Request headers</span></span>
+| <span data-ttu-id="ff2f4-118">名前</span><span class="sxs-lookup"><span data-stu-id="ff2f4-118">Name</span></span>       | <span data-ttu-id="ff2f4-119">説明</span><span class="sxs-lookup"><span data-stu-id="ff2f4-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6857e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6857e-120">Authorization</span></span>  | <span data-ttu-id="6857e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6857e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ff2f4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff2f4-120">Authorization</span></span>  | <span data-ttu-id="ff2f4-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6857e-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="6857e-123">Request body</span></span>
-<span data-ttu-id="6857e-124">要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6857e-124">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ff2f4-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="ff2f4-123">Request body</span></span>
+<span data-ttu-id="ff2f4-124">要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-124">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6857e-125">応答</span><span class="sxs-lookup"><span data-stu-id="6857e-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ff2f4-125">応答</span><span class="sxs-lookup"><span data-stu-id="ff2f4-125">Response</span></span>
 
-<span data-ttu-id="6857e-126">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6857e-126">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+<span data-ttu-id="ff2f4-126">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-126">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6857e-127">例</span><span class="sxs-lookup"><span data-stu-id="6857e-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6857e-128">要求</span><span class="sxs-lookup"><span data-stu-id="6857e-128">Request</span></span>
-<span data-ttu-id="6857e-129">次の例では、指定し`Cooking`たタスクグループに、というタスクフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="6857e-129">The following example creates a task folder called `Cooking` in the specified task group.</span></span>
+## <a name="example"></a><span data-ttu-id="ff2f4-127">例</span><span class="sxs-lookup"><span data-stu-id="ff2f4-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ff2f4-128">要求</span><span class="sxs-lookup"><span data-stu-id="ff2f4-128">Request</span></span>
+<span data-ttu-id="ff2f4-129">次の例では、指定し`Cooking`たタスクグループに、というタスクフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-129">The following example creates a task folder called `Cooking` in the specified task group.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskgroups('AAMkADIyAAAhrbe-AAA')/taskfolders 
-
+POST https://graph.microsoft.com/beta/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders
 Content-type: application/json
 Content-length: 131
 
@@ -60,9 +59,9 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-<span data-ttu-id="6857e-130">要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6857e-130">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="6857e-131">応答</span><span class="sxs-lookup"><span data-stu-id="6857e-131">Response</span></span>
-<span data-ttu-id="6857e-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6857e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ff2f4-130">要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-130">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="ff2f4-131">応答</span><span class="sxs-lookup"><span data-stu-id="ff2f4-131">Response</span></span>
+<span data-ttu-id="ff2f4-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ff2f4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,8 +90,6 @@ Content-length: 151
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskgroup-post-taskfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

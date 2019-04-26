@@ -4,61 +4,63 @@ description: ユーザーに対してサポートされている (ユーザー�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7898bc48d436c0d4b71b9c911802ecc348592245
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac71510611a208efb370cda813f5404e9093daf6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539457"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337854"
 ---
-# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="df9d1-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="df9d1-103">outlookUser: supportedLanguages</span></span>
+# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="f5617-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="f5617-103">outlookUser: supportedLanguages</span></span>
 
-<span data-ttu-id="df9d1-104">ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) ロケールと言語のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="df9d1-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="df9d1-105">Outlook クライアントを設定する際は、このサポートされているリストから、優先する言語を選択します。</span><span class="sxs-lookup"><span data-stu-id="df9d1-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="df9d1-106">これにより、[ユーザーのメールボックス設定を取得](user-get-mailboxsettings.md)することによって、優先言語を取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="df9d1-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="f5617-104">ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) ロケールと言語のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="f5617-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+
+<span data-ttu-id="f5617-105">Outlook クライアントを設定する際は、このサポートされているリストから、優先する言語を選択します。</span><span class="sxs-lookup"><span data-stu-id="f5617-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="f5617-106">これにより、[ユーザーのメールボックス設定を取得](user-get-mailboxsettings.md)することによって、優先言語を取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="f5617-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="df9d1-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="df9d1-107">Permissions</span></span>
-<span data-ttu-id="df9d1-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="df9d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5617-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f5617-107">Permissions</span></span>
+<span data-ttu-id="f5617-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5617-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df9d1-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="df9d1-110">Permission type</span></span>      | <span data-ttu-id="df9d1-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="df9d1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f5617-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f5617-110">Permission type</span></span>      | <span data-ttu-id="f5617-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f5617-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df9d1-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="df9d1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="df9d1-113">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="df9d1-113">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="df9d1-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="df9d1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df9d1-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="df9d1-115">User.Read</span></span>    |
-|<span data-ttu-id="df9d1-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="df9d1-116">Application</span></span> | <span data-ttu-id="df9d1-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="df9d1-117">User.Read.All</span></span> |
+|<span data-ttu-id="f5617-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f5617-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f5617-113">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="f5617-113">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="f5617-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f5617-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5617-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="f5617-115">User.Read</span></span>    |
+|<span data-ttu-id="f5617-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f5617-116">Application</span></span> | <span data-ttu-id="f5617-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="f5617-117">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df9d1-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="df9d1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5617-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f5617-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
-## <a name="request-headers"></a><span data-ttu-id="df9d1-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="df9d1-119">Request headers</span></span>
-| <span data-ttu-id="df9d1-120">名前</span><span class="sxs-lookup"><span data-stu-id="df9d1-120">Name</span></span>       | <span data-ttu-id="df9d1-121">型</span><span class="sxs-lookup"><span data-stu-id="df9d1-121">Type</span></span> | <span data-ttu-id="df9d1-122">説明</span><span class="sxs-lookup"><span data-stu-id="df9d1-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f5617-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f5617-119">Request headers</span></span>
+| <span data-ttu-id="f5617-120">名前</span><span class="sxs-lookup"><span data-stu-id="f5617-120">Name</span></span>       | <span data-ttu-id="f5617-121">型</span><span class="sxs-lookup"><span data-stu-id="f5617-121">Type</span></span> | <span data-ttu-id="f5617-122">説明</span><span class="sxs-lookup"><span data-stu-id="f5617-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="df9d1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="df9d1-123">Authorization</span></span>  | <span data-ttu-id="df9d1-124">string</span><span class="sxs-lookup"><span data-stu-id="df9d1-124">string</span></span>  | <span data-ttu-id="df9d1-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="df9d1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f5617-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5617-123">Authorization</span></span>  | <span data-ttu-id="f5617-124">string</span><span class="sxs-lookup"><span data-stu-id="f5617-124">string</span></span>  | <span data-ttu-id="f5617-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f5617-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="df9d1-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="df9d1-127">Request body</span></span>
-<span data-ttu-id="df9d1-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="df9d1-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5617-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="f5617-127">Request body</span></span>
+<span data-ttu-id="f5617-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f5617-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="df9d1-129">応答</span><span class="sxs-lookup"><span data-stu-id="df9d1-129">Response</span></span>
-<span data-ttu-id="df9d1-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [localeInfo](../resources/localeinfo.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="df9d1-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f5617-129">応答</span><span class="sxs-lookup"><span data-stu-id="f5617-129">Response</span></span>
+<span data-ttu-id="f5617-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [localeInfo](../resources/localeinfo.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="f5617-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df9d1-131">例</span><span class="sxs-lookup"><span data-stu-id="df9d1-131">Example</span></span>
-<span data-ttu-id="df9d1-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="df9d1-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="df9d1-133">要求</span><span class="sxs-lookup"><span data-stu-id="df9d1-133">Request</span></span>
-<span data-ttu-id="df9d1-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="df9d1-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f5617-131">例</span><span class="sxs-lookup"><span data-stu-id="f5617-131">Example</span></span>
+<span data-ttu-id="f5617-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="f5617-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5617-133">要求</span><span class="sxs-lookup"><span data-stu-id="f5617-133">Request</span></span>
+<span data-ttu-id="f5617-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f5617-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
+GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
 
-##### <a name="response"></a><span data-ttu-id="df9d1-135">応答</span><span class="sxs-lookup"><span data-stu-id="df9d1-135">Response</span></span>
-<span data-ttu-id="df9d1-136">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="df9d1-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f5617-135">応答</span><span class="sxs-lookup"><span data-stu-id="f5617-135">Response</span></span>
+<span data-ttu-id="f5617-136">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f5617-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -70,7 +72,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.localeInfo)",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.localeInfo)",
   "value":[
     {
       "locale":"af-ZA",
@@ -90,10 +92,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: supportedLanguages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,31 +4,31 @@ description: スケジュールに含まれる timeoffreasons のリストを取
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f91fab2b2a0acdd095b6c46168bd9971b40b667d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78e2d91dd878c2ad4828ad5fdf25bc43e7b61dc8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545803"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331543"
 ---
-# <a name="list-timeoffreasons"></a><span data-ttu-id="2545d-103">timeoffreasons 理由を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="2545d-103">List timeOffReasons</span></span>
+# <a name="list-timeoffreasons"></a><span data-ttu-id="1adba-103">timeoffreasons 理由を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1adba-103">List timeOffReasons</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="2545d-104">[スケジュール](../resources/schedule.md)に含まれる[timeoffreasons](../resources/timeoffreason.md)のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="2545d-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="1adba-104">[スケジュール](../resources/schedule.md)に含まれる[timeoffreasons](../resources/timeoffreason.md)のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="1adba-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2545d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2545d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1adba-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1adba-105">Permissions</span></span>
 
-<span data-ttu-id="2545d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2545d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1adba-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1adba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2545d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2545d-108">Permission type</span></span>      | <span data-ttu-id="2545d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2545d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1adba-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1adba-108">Permission type</span></span>      | <span data-ttu-id="1adba-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1adba-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2545d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2545d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2545d-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2545d-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2545d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2545d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2545d-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2545d-113">Not supported.</span></span>    |
-|<span data-ttu-id="2545d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2545d-114">Application</span></span> | <span data-ttu-id="2545d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2545d-115">Not supported.</span></span> |
+|<span data-ttu-id="1adba-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1adba-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1adba-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1adba-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1adba-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1adba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1adba-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1adba-113">Not supported.</span></span>    |
+|<span data-ttu-id="1adba-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1adba-114">Application</span></span> | <span data-ttu-id="1adba-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1adba-115">Not supported.</span></span> |
 
-> <span data-ttu-id="2545d-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2545d-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2545d-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2545d-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="1adba-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1adba-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="1adba-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="1adba-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2545d-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2545d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1adba-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1adba-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,25 +36,25 @@ ms.locfileid: "32545803"
 GET /teams/{teamId}/schedule/timeOffReasons
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2545d-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2545d-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1adba-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1adba-119">Request headers</span></span>
 
-| <span data-ttu-id="2545d-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2545d-120">Header</span></span>       | <span data-ttu-id="2545d-121">値</span><span class="sxs-lookup"><span data-stu-id="2545d-121">Value</span></span> |
+| <span data-ttu-id="1adba-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1adba-120">Header</span></span>       | <span data-ttu-id="1adba-121">値</span><span class="sxs-lookup"><span data-stu-id="1adba-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2545d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2545d-122">Authorization</span></span>  | <span data-ttu-id="2545d-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2545d-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2545d-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2545d-125">Content-Type</span></span>  | <span data-ttu-id="2545d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2545d-126">application/json</span></span>  |
+| <span data-ttu-id="1adba-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1adba-122">Authorization</span></span>  | <span data-ttu-id="1adba-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1adba-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1adba-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1adba-125">Content-Type</span></span>  | <span data-ttu-id="1adba-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1adba-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2545d-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="2545d-127">Request body</span></span>
-<span data-ttu-id="2545d-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2545d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1adba-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="1adba-127">Request body</span></span>
+<span data-ttu-id="1adba-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1adba-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2545d-129">応答</span><span class="sxs-lookup"><span data-stu-id="2545d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1adba-129">応答</span><span class="sxs-lookup"><span data-stu-id="1adba-129">Response</span></span>
 
-<span data-ttu-id="2545d-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoffreason](../resources/timeoffreason.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="2545d-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
+<span data-ttu-id="1adba-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoffreason](../resources/timeoffreason.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="1adba-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2545d-131">例</span><span class="sxs-lookup"><span data-stu-id="2545d-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1adba-131">例</span><span class="sxs-lookup"><span data-stu-id="1adba-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2545d-132">要求</span><span class="sxs-lookup"><span data-stu-id="2545d-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1adba-132">要求</span><span class="sxs-lookup"><span data-stu-id="1adba-132">Request</span></span>
 
-<span data-ttu-id="2545d-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2545d-133">The following is an example of the request.</span></span>
+<span data-ttu-id="1adba-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1adba-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
@@ -63,15 +63,16 @@ GET /teams/{teamId}/schedule/timeOffReasons
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
 
-#### <a name="response"></a><span data-ttu-id="2545d-134">応答</span><span class="sxs-lookup"><span data-stu-id="2545d-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1adba-134">応答</span><span class="sxs-lookup"><span data-stu-id="1adba-134">Response</span></span>
 
-<span data-ttu-id="2545d-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2545d-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="1adba-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1adba-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="2545d-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2545d-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="1adba-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1adba-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOffReason"
+  "@odata.type": "microsoft.graph.timeOffReason",
+  "isCollection": true
 } -->
 
 ```http
@@ -111,8 +112,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-list-timeoffreasons.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

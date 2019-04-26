@@ -4,30 +4,30 @@ description: 用語。 これは学年度の指定された部分を示します
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b5cfe363922fe466eef7a7333ce81249311b4063
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e98bb1dc059439dfad927db033759ea54d240716
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506868"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340601"
 ---
-# <a name="educationterm-resource-type"></a><span data-ttu-id="95d63-105">educationTerm リソースの種類</span><span class="sxs-lookup"><span data-stu-id="95d63-105">educationTerm resource type</span></span>
+# <a name="educationterm-resource-type"></a><span data-ttu-id="d101f-105">educationTerm リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d101f-105">educationTerm resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95d63-106">用語。</span><span class="sxs-lookup"><span data-stu-id="95d63-106">A term.</span></span> <span data-ttu-id="95d63-107">これは学年度の指定された部分を示します。</span><span class="sxs-lookup"><span data-stu-id="95d63-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="95d63-108">[educationClass](educationclass.md) 内で使用します。</span><span class="sxs-lookup"><span data-stu-id="95d63-108">It is used within [educationClass](educationclass.md).</span></span>
+<span data-ttu-id="d101f-106">用語。</span><span class="sxs-lookup"><span data-stu-id="d101f-106">A term.</span></span> <span data-ttu-id="d101f-107">これは学年度の指定された部分を示します。</span><span class="sxs-lookup"><span data-stu-id="d101f-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="d101f-108">[educationClass](educationclass.md) 内で使用します。</span><span class="sxs-lookup"><span data-stu-id="d101f-108">It is used within [educationClass](educationclass.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="95d63-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="95d63-109">Properties</span></span>
-| <span data-ttu-id="95d63-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="95d63-110">Property</span></span>     | <span data-ttu-id="95d63-111">型</span><span class="sxs-lookup"><span data-stu-id="95d63-111">Type</span></span>   |<span data-ttu-id="95d63-112">説明</span><span class="sxs-lookup"><span data-stu-id="95d63-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d101f-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d101f-109">Properties</span></span>
+| <span data-ttu-id="d101f-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d101f-110">Property</span></span>     | <span data-ttu-id="d101f-111">型</span><span class="sxs-lookup"><span data-stu-id="d101f-111">Type</span></span>   |<span data-ttu-id="d101f-112">説明</span><span class="sxs-lookup"><span data-stu-id="d101f-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="95d63-113">displayName</span><span class="sxs-lookup"><span data-stu-id="95d63-113">displayName</span></span>| <span data-ttu-id="95d63-114">String</span><span class="sxs-lookup"><span data-stu-id="95d63-114">String</span></span>| <span data-ttu-id="95d63-115">用語の表示名。</span><span class="sxs-lookup"><span data-stu-id="95d63-115">Display name of the term.</span></span>| 
-|<span data-ttu-id="95d63-116">externalId</span><span class="sxs-lookup"><span data-stu-id="95d63-116">externalId</span></span>|<span data-ttu-id="95d63-117">String</span><span class="sxs-lookup"><span data-stu-id="95d63-117">String</span></span>| <span data-ttu-id="95d63-118">同期システム内の用語の ID。</span><span class="sxs-lookup"><span data-stu-id="95d63-118">ID of term in the syncing system.</span></span>|
-|<span data-ttu-id="95d63-119">startDate</span><span class="sxs-lookup"><span data-stu-id="95d63-119">startDate</span></span>|<span data-ttu-id="95d63-120">Date</span><span class="sxs-lookup"><span data-stu-id="95d63-120">Date</span></span>|<span data-ttu-id="95d63-121">用語の開始。</span><span class="sxs-lookup"><span data-stu-id="95d63-121">Start of the term.</span></span>|
-|<span data-ttu-id="95d63-122">endDate</span><span class="sxs-lookup"><span data-stu-id="95d63-122">endDate</span></span>|<span data-ttu-id="95d63-123">Date</span><span class="sxs-lookup"><span data-stu-id="95d63-123">Date</span></span>|<span data-ttu-id="95d63-124">用語の終了。</span><span class="sxs-lookup"><span data-stu-id="95d63-124">End of the term.</span></span>|
+|<span data-ttu-id="d101f-113">displayName</span><span class="sxs-lookup"><span data-stu-id="d101f-113">displayName</span></span>| <span data-ttu-id="d101f-114">String</span><span class="sxs-lookup"><span data-stu-id="d101f-114">String</span></span>| <span data-ttu-id="d101f-115">用語の表示名。</span><span class="sxs-lookup"><span data-stu-id="d101f-115">Display name of the term.</span></span>| 
+|<span data-ttu-id="d101f-116">externalId</span><span class="sxs-lookup"><span data-stu-id="d101f-116">externalId</span></span>|<span data-ttu-id="d101f-117">String</span><span class="sxs-lookup"><span data-stu-id="d101f-117">String</span></span>| <span data-ttu-id="d101f-118">同期システム内の用語の ID。</span><span class="sxs-lookup"><span data-stu-id="d101f-118">ID of term in the syncing system.</span></span>|
+|<span data-ttu-id="d101f-119">startDate</span><span class="sxs-lookup"><span data-stu-id="d101f-119">startDate</span></span>|<span data-ttu-id="d101f-120">Date</span><span class="sxs-lookup"><span data-stu-id="d101f-120">Date</span></span>|<span data-ttu-id="d101f-121">用語の開始。</span><span class="sxs-lookup"><span data-stu-id="d101f-121">Start of the term.</span></span>|
+|<span data-ttu-id="d101f-122">endDate</span><span class="sxs-lookup"><span data-stu-id="d101f-122">endDate</span></span>|<span data-ttu-id="d101f-123">Date</span><span class="sxs-lookup"><span data-stu-id="d101f-123">Date</span></span>|<span data-ttu-id="d101f-124">用語の終了。</span><span class="sxs-lookup"><span data-stu-id="d101f-124">End of the term.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="95d63-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="95d63-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d101f-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d101f-125">JSON representation</span></span>
 
-<span data-ttu-id="95d63-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="95d63-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d101f-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d101f-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,8 +55,6 @@ ms.locfileid: "32506868"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationterm.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
