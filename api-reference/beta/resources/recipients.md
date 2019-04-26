@@ -1,15 +1,15 @@
 ---
-title: 受信者のリソースの種類
+title: recipients リソースの種類
 description: 以下は、リソースの JSON 表記です
 localization_priority: Normal
 ms.openlocfilehash: 1ba4e8c88de3ba96e5e846cb5be8261562567ac3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507839"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563166"
 ---
-# <a name="recipients-resource-type"></a>受信者のリソースの種類
+# <a name="recipients-resource-type"></a>recipients リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "29507839"
 |alias|String||
 |email|String||
 |objectId|String||
-|permissionIdentityType|String||
+|permissionIdentityType|文字列型 (String)||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -51,8 +51,6 @@ ms.locfileid: "29507839"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recipients.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

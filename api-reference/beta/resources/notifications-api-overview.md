@@ -1,22 +1,22 @@
 ---
-title: 通知の REST API を使用して、Microsoft Graph で
-description: Graph API の通知を使用すると、ユーザーにプッシュ通知を送信します。 単に、通知を送信するユーザー アカウントをターゲットし、デバイスのすべてのエンドポイントへの通知の配布には、プラットフォームです。 API の通知の要求が実行アクセス許可を委任し、[通知のアクセス許可]( /graph/permissions_reference)を使用してユーザーの代理としていずれかの Microsoft アカウントを使用できるか、職場、学校のアカウントです。
+title: Microsoft Graph の REST API 通知を使用する
+description: プッシュ通知をユーザーに送信するには、Microsoft Graph の API 通知を使用できます。 ターゲットのユーザー アカウントに通知を送信し、プラットフォームはすべてのデバイスのエンドポイントに通知を配布します。 API 通知の要求は、ユーザーの代理アクセス権と [アクセス権許可の通知]( /graph/permissions_reference)を経由して、Microsoft アカウント、または職場 / 学校のアカウントのどちらでも使用することができます。
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 68a20b655eecea7d5afb82677178593b094a9cc3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2a4c23955e348159d2e17514d6041260f13cffba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931497"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458790"
 ---
-# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>通知の REST API を使用して、Microsoft Graph で
+# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Microsoft Graph の REST API 通知を使用する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Graph API の通知を使用すると、ユーザーにプッシュ通知を送信します。 単に、通知を送信するユーザー アカウントをターゲットし、デバイスのすべてのエンドポイントへの通知の配布には、プラットフォームです。 API の通知の要求が実行[アクセス許可を委任して](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)、[通知のアクセス許可]( /graph/permissions_reference)を使用してユーザーの代理としていずれかの Microsoft アカウントを使用できるか、職場、学校のアカウントです。
-このユーザーを中心とした通知の種類は、[通知](../resources/projectrome-notification.md)リソースで表されますされ、Microsoft Graph で格納されます。 アクセスおよび管理できる[プロジェクト ローマ SDK Api](https://github.com/Microsoft/project-rome)を通じて公開アプリケーションでします。 
+プッシュ通知をユーザーに送信するには、Microsoft Graph の API 通知を使用できます。 ターゲットのユーザー アカウントに通知を送信し、プラットフォームはすべてのデバイスのエンドポイントに通知を配布します。 API 通知の要求は、ユーザーの[代理アクセス権](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) と[アクセス権許可の通知]( /graph/permissions_reference)を経由して、Microsoft アカウント、または職場 / 学校のアカウントのどちらでも使用することができます。
+このユーザー中心の通知は[通知](../resources/projectrome-notification.md)リソースによって表示され、 Microsoft Graph で保存されています。 [Project Rome SDK APIs](https://github.com/Microsoft/project-rome)を経由する発行アプリケーションによってアクセスし管理することができます。 
 
-## <a name="next-steps"></a>次のステップ
-- [通知リソース](../resources/projectrome-notification.md)を参照してくださいし、やり取りを行い、ユーザーへの通知を作成します。 
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試す。
+## <a name="next-steps"></a>次の手順
+- [通知リソース](../resources/projectrome-notification.md) を参照し、ユーザーに通知を作成します。 
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。

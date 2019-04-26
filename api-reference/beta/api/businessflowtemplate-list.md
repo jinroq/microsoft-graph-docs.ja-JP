@@ -2,12 +2,12 @@
 title: businessflowtemplates を一覧表示する
 description: Azure AD access レビュー機能で、すべての businessflowtemplate オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 5b1d96330f808600c7f306ca85009bc5948a22f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d9755a8aefb8c9e9fc4348c2002141805847c5d
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461620"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299669"
 ---
 # <a name="list-businessflowtemplates"></a>businessflowtemplates を一覧表示する
 
@@ -19,9 +19,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  サインインしているユーザーは、アクセスレビューを読み取ることができるようにするために、ディレクトリロールにある必要があります。 |
+|委任 (職場または学校のアカウント)     | accessreview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | accessreview を参照してください。 |
+
+また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -101,8 +103,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

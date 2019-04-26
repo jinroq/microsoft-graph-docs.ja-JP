@@ -1,32 +1,32 @@
 ---
 title: attributeMappingFunctionSchema リソースの種類
-description: 同期中に値を変換するための属性のマップで使用できる関数について説明します。
+description: 同期時に値を変換するために属性マッピングで使用できる関数について説明します。
 localization_priority: Normal
 ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582094"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>attributeMappingFunctionSchema リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期中に値を変換するのには、[属性のマッピング](synchronization-attributemapping.md)で使用できる関数について説明します。
+同期時に値を変換するために[属性マッピング](synchronization-attributemapping.md)で使用できる関数について説明します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション|リストがサポートされている属性のマッピング関数。|
+|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション|サポートされている属性マッピング関数を一覧表示します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                   | 型                      | 説明    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |オペレーター名です。 |
-|parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)コレクション  |関数のパラメーターのコレクションです。|
+|name                        |String                    |オペレーター名。 |
+|parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)コレクション  |関数パラメータのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -57,8 +57,6 @@ ms.locfileid: "29511983"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributemappingfunctionschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

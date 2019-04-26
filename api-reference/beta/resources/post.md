@@ -1,21 +1,21 @@
 ---
 title: post リソース タイプ
-description: ConverstaionThread エンティティ内の個々 の投稿アイテムを表します。
+description: converstaionThread エンティティ内の個々の投稿アイテムを表します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643602"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563596"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ConverstaionThread](conversationthread.md)エンティティ内の個々 の投稿アイテムを表します。
+[converstaionThread](conversationthread.md)エンティティ内の個々の投稿アイテムを表します。
 
 投稿を明示的に作成できなくても、次のいずれかの方法で投稿を作成できます。
 
@@ -39,6 +39,8 @@ ms.locfileid: "29643602"
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.post"
 }-->
 
@@ -65,28 +67,28 @@ ms.locfileid: "29643602"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
-|categories|String コレクション|投稿に関連付けられたカテゴリ。 各カテゴリは、ユーザーが定義されている[outlookCategory](outlookcategory.md)の**表示名**のプロパティに対応します。|
+|categories|String collection|投稿に関連付けられたカテゴリ。 各カテゴリは、ユーザーに対して定義されている[outlookcategory](outlookcategory.md)の**displayName**プロパティに対応しています。|
 |changeKey|String|投稿のバージョンを識別します。投稿を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |conversationId|String|会話の固有 ID です。読み取り専用。|
 |conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
 |createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
 |hasAttachments|Boolean|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
-|id|String| 読み取り専用です。|
-|importance | String | グループのポストの重要性: `low`、 `normal`、 `high`。 |
+|id|String| 読み取り専用。|
+|importance | String | グループ投稿の重要度: `low`、 `normal`、。 `high` |
 |lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|newParticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
+|newparticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
 |receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|送信者のアドレスが含まれます。送信者が指定されていない場合、送信者の値は認証済みユーザーのアドレスと見なされます。これが既定のプロパティです。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) コレクション|投稿の[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
+|attachments|[Attachment](attachment.md) コレクション|投稿の[fileattachment](fileattachment.md)、 [itemattachment](itemattachment.md)、および[referenceattachment](referenceattachment.md)添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
 |extensions|[Extension](extension.md) コレクション|投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|inReplyTo|[Post](post.md)|[ConversationThread](conversationthread.md)でへこの投稿の返信は、以前の投稿です。 読み取り専用。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|inreplyto|[投稿](post.md)|この投稿が[conversationThread](conversationthread.md)内で返信する以前の投稿。 読み取り専用。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 
@@ -126,8 +128,6 @@ ms.locfileid: "29643602"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

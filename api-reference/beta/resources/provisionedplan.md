@@ -1,26 +1,26 @@
 ---
 title: provisionedPlan リソースの種類
-description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
+description: '**ユーザー** エンティティと組織エンティティの provisionedPlans プロパティは、**provisionedPlan** のコレクションです。'
 localization_priority: Normal
 ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563348"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
+**ユーザー** エンティティと[組織](user.md)エンティティの [provisionedPlans](organization.md) プロパティは、**provisionedPlan** のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
-|provisioningStatus|String|「成功」など。|
+|プロビジョニング状態|String|「成功」など。|
 |service|String|サービスの名前。「AccessControlS2S」など。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -32,7 +32,7 @@ ms.locfileid: "29643371"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ ms.locfileid: "29643371"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/provisionedplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

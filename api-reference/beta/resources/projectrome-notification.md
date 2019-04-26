@@ -1,51 +1,51 @@
 ---
 title: 通知リソースの種類
-description: '指定したユーザーを対象とするアプリケーション ・ サーバによって提供される通知を表します。 通知は、Microsoft Graph で格納され、ユーザーによって所有されている端点を別のデバイスに配布されます。 '
+description: '指定したユーザーを対象とするアプリサーバーによって発行される通知を表します。 通知は Microsoft Graph に格納され、ユーザーが所有する異なるデバイスエンドポイントに配布されます。 '
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509260"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563353"
 ---
 # <a name="notification-resource-type"></a>通知リソースの種類
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定したユーザーを対象とするアプリケーション ・ サーバによって提供される通知を表します。 通知は、Microsoft Graph で格納され、ユーザーによって所有されている端点を別のデバイスに配布されます。 
+指定したユーザーを対象とするアプリサーバーによって発行される通知を表します。 通知は Microsoft Graph に格納され、ユーザーが所有する異なるデバイスエンドポイントに配布されます。 
 
-通知には、Windows、Android、iOS プラットフォームを含む、オペレーティング システムによって解釈可能なメッセージ ボックスによる通知のペイロードを指定できます。 通常、視覚的に通知が生成される元のデータ ペイロードのコンテンツに対応する UI の – すべてのデバイスに、app のクライアントは、対応するユーザーを決定し、データ ペイロードに配信し、処理が発生することもできます。ローカルにします。 
+通知は、Windows、Android、iOS のプラットフォームを含む、オペレーティングシステムによって解釈可能な視覚的な通知のペイロードである場合があります。 また、アプリクライアントによって配信および処理されるデータペイロードを使用して、各デバイスで対応するユーザーの動作を決定します。通常は、生成された元のデータペイロードのコンテンツに対応するビジュアル通知 UI を示します。マシン. 
 
-ユーザーは、視覚的に通知の動作と、アプリケーション クライアントことができますし、SDK を使用クライアント側プロジェクト ローマを閉じるよう通知をマークすることによって、graph のフィード対応する通知の状態を更新します。 更新プログラムはアプリケーションのクライアント エンドポイントでは、配布して、クライアントこの変化に対応などの冗長な情報を見ることからユーザーを防ぐために通知を無視すれば。 後で (非表示としてマークされます) の後も期限切れ前に、アプリケーションのクライアントを同じ通知リソースにアクセスできる[プロジェクトのローマの SDK](https://github.com/Microsoft/project-rome)を使用して、通知の履歴とします。 
+ユーザーが視覚的な通知を処理すると、アプリクライアントはクライアント側のプロジェクトローマ SDK を使用して、通知を非表示としてマークするなど、Microsoft Graph で対応する通知フィードの状態を更新することができます。 その後、その更新は他のすべてのアプリクライアントエンドポイントに配布され、クライアントは、ユーザーが冗長情報を表示できないようにするために、その変更をそれに応じて処理します。 アプリクライアントは、 [Project ローマ SDK](https://github.com/Microsoft/project-rome)を介して、通知履歴として、(非表示とマークされた後でも) 有効期限が切れる前に、後で同じ通知リソースにアクセスできます。 
 
 ## <a name="methods"></a>メソッド
 |メソッド | 戻り値の型 | 説明|
 |:------|:------------|:-----------|
-|[通知を作成します。](../api/projectrome-notification-post.md) | NOTIFICATION |作成し、通知を送信します。 |
+|[通知の作成](../api/projectrome-notification-post.md) | [お知らせ](projectrome-notification.md) |通知を作成し、送信します。 |
 
 ## <a name="properties"></a>プロパティ
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-| targetHostName | String | 呼び出し元のサービスが特定のユーザーに対して、通知を投稿するのにはアプリケーションのホスト名を表します。 |
-| appNotificationId | String | 識別し、個々 の通知を対象に使用する通知のアプリケーション サーバで設定する一意の id。 |
-| expirationDateTime | DateTimeOffset | 有効期限の時刻を設定、ユーザーへの通知の上、時間は、通知 Graph フィード通知ストアから完全に削除され、通知履歴の一部ではありません。 最大値は、30 日間です。 |
-| payload | Edm.ComplexType、JSON オブジェクト | 提供され、この通知を受け取るアプリケーションのクライアントによって消費される raw またはビジュアルのユーザーの通知のデータ コンテンツです。 |
-| payload.rawContent | String | 提供され、この通知を受け取るアプリケーションのクライアントによって消費されることを示す生のユーザー通知の通知の内容です。 投稿の通知要求を有効にする Payload.RawContent と Payload.VisualContent の少なくとも 1 つ必要があります。 |
-| payload.visual | Edm.ComplexType、JSON オブジェクト | モバイル プラットフォームごとに通知のプラットフォームで使用され、ユーザーに表示する、ビジュアルなユーザー通知のビジュアルのコンテンツです。 投稿の通知要求を有効にするコンテンツと VisualContent の少なくとも 1 つ必要があります。 |
-| payload.visual.title | String | ビジュアルなユーザー通知のタイトル。 タイトルまたは本文のいずれかが必要です。 |
-| payload.visual.body | String | ビジュアルなユーザー通知の本文です。 タイトルまたは本文のいずれかが必要です。 |
-| displayTimeToLive | 整数型 (Int) | 時間 (秒) この通知の内容のままで各プラットフォームの通知のビューアーを設定します。 たとえば、通知が配信されると Windows のデバイスに、このプロパティの値に渡されます ToastNotification.ExpirationTime は、どのくらいの時間、トースト通知は常にユーザーの Windows アクション センターで決定します。 |
-| priority | EnumType | 生のユーザーの通知の優先順位を示します。 既定で優先度の高い視覚的な通知が送信されます。 有効な値は、最低額です。 |
-| GroupName | String | この通知が所属するグループの名前。 通知をグループ化するための開発者によって設定されます。 |
-| targetPolicy | Edm.ComplexType、JSON オブジェクト | ターゲット ポリシー オブジェクトは、さまざまなレベルの 2 つのエンドポイントの種類 (Windows、iOS および Android) の対象とする、および対象とする、(サブスクリプションの id によって識別される) 特定のエンドポイントに配信ポリシーを通知を処理します。 |
-| targetPolicy.platformTypes | Edm.ComplexType、コレクション (EnumType) | フィルター通知の配布を特定のプラットフォームまたはプラットフォームを使用します。 既定では、プッシュ エンドポイントのすべての種類 (iOS、ウィンドウ、および Android) が有効になります。 |
+| targetHostName | String | 指定されたユーザーについて、呼び出し元サービスが通知を投稿するアプリケーションのホスト名を表します。 |
+| appnotificationid | String | 通知のアプリサーバーによって設定された一意の id。個別の通知を識別して対象にします。 |
+| expirationDateTime | DateTimeOffset | ユーザー通知の UTC 有効期限を設定します。時間が経過すると、通知は Microsoft Graph 通知フィードストアから完全に削除され、通知履歴の一部ではなくなります。 最大値は30日です。 |
+| payload | Edm ComplexType、JSON オブジェクト | これは、この通知を受信するアプリクライアントによって配信および消費される生または視覚的なユーザー通知のデータの内容です。 |
+| ペイロードコンテンツ | String | この通知を受信するアプリクライアントによって配信および消費される生のユーザー通知の通知の内容。 POST 通知要求に対しては、少なくとも1つの content-type コンテンツとペイロードコンテンツが有効である必要があります。 |
+| ペイロード | Edm ComplexType、JSON オブジェクト | 各モバイルプラットフォームの通知プラットフォームによって使用され、ユーザーに対してレンダリングされる、ビジュアルユーザー通知のビジュアルコンテンツ。 POST 通知要求に対して、少なくとも1つのコンテンツおよび visualcontent が有効である必要があります。 |
+| ペイロード | String | ビジュアルユーザー通知のタイトル。 title または body のいずれかを指定する必要があります。 |
+| ペイロード | String | ビジュアルユーザー通知の本文。 title または body のいずれかを指定する必要があります。 |
+| displaytimetolive | しきい値 | この通知コンテンツを各プラットフォームの通知ビューアーに保持する時間 (秒単位) を設定します。 たとえば、windows デバイスに通知が配信されると、このプロパティの値が toastnotification に渡されます。この値によって、トースト通知がユーザーの Windows アクションセンターに保持される期間が決まります。 |
+| priority | EnumType | 生のユーザー通知の優先度を示します。 既定では、視覚通知は高優先度で送信されます。 有効な値は High と Low です。 |
+| groupName | String | この通知が属するグループの名前。 これは、通知をグループ化するための開発者によって設定されます。 |
+| targetpolicy | Edm ComplexType、JSON オブジェクト | ターゲットポリシーオブジェクトは、対象とする必要があるエンドポイントの種類 (Windows、iOS、および Android) と、対象とする必要がある特定のエンドポイント (サブスクリプション id で識別される) の2つの異なるレベルで通知配信ポリシーを処理します。 |
+| targetpolicy の種類 | Edm ComplexType、コレクション (EnumType) | 特定のプラットフォームまたはプラットフォームに対して通知配布をフィルター処理するために使用します。 既定では、すべてのプッシュエンドポイントの種類 (iOS、Windows、および Android) が有効になっています。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし。
 
 ## <a name="json-representation"></a>JSON 表記
-以下は、リソースの JSON 表現は、ターゲット ・ オペレーティング ・ システムに配信する直接視覚的に通知を発行するとき。
+次に示すのは、移行先のオペレーティングシステムに配信される直接の視覚的な通知を発行するときのリソースの JSON 表記です。
 
 ```json
 {   
@@ -72,7 +72,7 @@ ms.locfileid: "29509260"
 }
 ```
 
-次は JSON 表現です、リソースのアプリケーションのクライアントに配信される生データの通知を発行するとき。
+アプリクライアントに配信される生データ通知を発行するときの、リソースの JSON 表記を次に示します。
 ```json
 {   
   "targetHostName": "String",
@@ -93,11 +93,3 @@ ms.locfileid: "29509260"
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-notification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
