@@ -2,12 +2,12 @@
 title: objectmapping リソースの種類
 description: 特定のオブジェクトをソースディレクトリからターゲットディレクトリに同期する方法を定義します。 具体的には、ソースディレクトリ内のオブジェクトとターゲットディレクトリのオブジェクトとの照合方法を定義します。特定のオブジェクトをプロビジョニングするかどうか、およびオブジェクト属性をどのように変換するかを決定するために、どのような (もしあれば) スコープフィルターを使用するかを定義します。ソースディレクトリに移動します。
 localization_priority: Normal
-ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581759"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345589"
 ---
 # <a name="objectmapping-resource-type"></a>objectmapping リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "32581759"
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性マッピングでは、ソースオブジェクトからターゲットオブジェクトにマップする属性、およびそれらのフローを指定します。 元のソースの値の変換をサポートするために、いくつかの関数を使用できます。|
 |enabled        |ブール型 (Boolean)    |の`true`場合、このオブジェクトのマッピングは同期中に処理されます。 の`false`場合、このオブジェクトのマッピングはスキップされます。|
-|flowtypes      |objectflowtype    |このオブジェクトマッピングに対して有効になるフローの種類。 `Add`ターゲットディレクトリに新しいオブジェクトを作成し`Update` 、既存のオブジェクトを`Delete`変更して、既存のユーザーをプロビジョニングします。 既定値は `Add, Update, Delete` です。 |
+|flowtypes      |objectflowtypes    |このオブジェクトマッピングに対して有効になるフローの種類。 `Add`ターゲットディレクトリに新しいオブジェクトを作成し`Update` 、既存のオブジェクトを`Delete`変更して、既存のユーザーをプロビジョニングします。 既定値は `Add, Update, Delete` です。 |
 |metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
 |name           |String     |オブジェクトマッピングの人フレンドリ名。|
 |scope          |[filter](synchronization-filter.md)     |特定のオブジェクトをプロビジョニングする必要があるかどうかを決定するときに使用するフィルターを定義します。 たとえば、US にあるユーザーのみをプロビジョニングする場合があります。|
@@ -58,7 +58,7 @@ ms.locfileid: "32581759"
 ## <a name="json-example"></a>JSON の例
 
 <!-- {
-  "blockType": "resource",
+  "blockType": "example",
   "optionalProperties": [
 
   ],
@@ -355,8 +355,6 @@ ms.locfileid: "32581759"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

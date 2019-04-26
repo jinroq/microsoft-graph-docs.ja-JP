@@ -4,14 +4,16 @@ description: ブック セッションについての情報を提供します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3035574b92dfa703b926a81163efbb7f6eff764b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453284"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345782"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo リソース型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ブック セッションについての情報を提供します。
 
@@ -40,3 +42,15 @@ ms.locfileid: "32453284"
 | id  | string | ブック セッションの ID。 |
 | persistChanges | string |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "workbookSessionInfo resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

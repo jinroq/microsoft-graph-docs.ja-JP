@@ -2,12 +2,12 @@
 title: attributedefinition リソースの種類
 description: オブジェクトの属性を表します。
 localization_priority: Normal
-ms.openlocfilehash: f9268bf61fec397c53744c9999635ba159b047f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 04ee5ffb6cda3cc48f89a722caab3a4e46500379
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582086"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345640"
 ---
 # <a name="attributedefinition-resource-type"></a>attributedefinition リソースの種類
 
@@ -21,12 +21,12 @@ ms.locfileid: "32582086"
 |:--------------|:----------|:---------------|
 |位置         |Boolean    | `true`オブジェクトのアンカーとして属性を使用する必要があるかどうか。 アンカー属性には、オブジェクトを識別する一意の値を指定する必要があります。不変にする必要があります。 既定値は `false` です。 同期をサポートするには、オブジェクトの属性の1つだけをアンカーとして指定する必要があります。 |
 |ケース exact      |Boolean    |`true`この属性の値を大文字と小文字を区別して扱う必要がある場合。 この設定は、同期エンジンが属性の変更を検出する方法に影響します。|
-|metadata       |[metadataentry](../resources/synchronization-metadataentry.md)    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|metadata       |[metadataentry](../resources/synchronization-metadataentry.md)コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
 |複数値    |Boolean    |`true`属性に複数の値を設定できる場合。 既定値は `false` です。|
 |mutability     |String     |属性の変わり可能性。 可能な値は`ReadWrite`、 `ReadOnly`、 `Immutable`、 `WriteOnly`、です。 既定値は `ReadWrite` です。|
-|name           |String     |属性の名前。 オブジェクト定義内で一意である必要があります。 null 許容ではありません。|
+|name           |String     |属性の名前。 オブジェクト定義内で一意である必要があります。 null 許容型ではありません。|
 |必須       |Boolean    |`true`属性が必要かどうか。 必要な属性のいずれかが不足している場合は、オブジェクトを作成できません。 同期時に必須属性に値がない場合は、既定値が使用されます。 既定値が設定されていない場合は、同期によってエラーが記録されます。|
-|referencedopivot|[referencedobject](../resources/synchronization-referencedobject.md) |type の属性の場合は、参照されているオブジェクト`manager`を一覧表示`User`します (たとえば、属性が参照されるオブジェクトとしてリストになります)。 `reference`|
+|referencedopivot|[referencedobject](../resources/synchronization-referencedobject.md)コレクション |type の属性の場合は、参照されているオブジェクト`manager`を一覧表示`User`します (たとえば、属性が参照されるオブジェクトとしてリストになります)。 `reference`|
 |type           |String     |属性値の型。 使用可能な値は、`String`、`Integer`、`Reference`、`Binary`、`Boolean` です。 既定値は `String` です。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,8 +66,6 @@ ms.locfileid: "32582086"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributedefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

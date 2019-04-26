@@ -4,12 +4,12 @@ description: クラスのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1ca407ab560f70ae0d65252e397705cb878e0f52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e492a82636a0772d5d14b232ecdaa514abb03ed3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457761"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324831"
 ---
 # <a name="update-educationclass-properties"></a>educationclass プロパティを更新する
 
@@ -43,7 +43,7 @@ PATCH /education/classes/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |description|String| クラスの説明。|
-|displayName|String| クラスの名前。|
+|displayName|文字列| クラスの名前。|
 |mailNickname|String| 機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。 |
 <!-- Please verify the revised description here. -->
 |classCode|String| 学校が使用するクラス コード。| |externalId|String| 同期システムからのクラスの ID。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 使用可能な値: `sis`、`manual`、`enum_sentinel`.|
@@ -109,8 +109,6 @@ Content-length: 224
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

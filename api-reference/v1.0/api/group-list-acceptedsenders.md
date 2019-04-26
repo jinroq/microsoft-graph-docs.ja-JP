@@ -1,18 +1,18 @@
 ---
 title: acceptedSenders のリスト化
-description: このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。
+description: このグループの承認済み送信者リストに含まれるユーザーまたはグループの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a29fe42dc7a34939a41120caf03c59cc7662e5b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584720"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345667"
 ---
 # <a name="list-acceptedsenders"></a>acceptedSenders のリスト化
-このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。
+このグループの承認済み送信者リストに含まれるユーザーまたはグループの一覧を取得します。
 
 承諾済み送信者リスト内のユーザーは、グループの会話を投稿することができます (要求取得 URL で識別)。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
 

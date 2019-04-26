@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: ファイルへのアクセス権を持つユーザーを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6917cb17cc9b6c1f04a63d85b05cd5d7e543fa84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5886e45f903a5d4419617ff21fd00fb274a4868
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454392"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325349"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) の有効な共有アクセス許可を一覧表示します。
 
@@ -74,7 +76,7 @@ DriveItem の有効な共有アクセス許可は、次の 2 つのソースが�
 
 この例では、サインイン ユーザーのドライブ内のアイテムに対するアクセス許可のコレクションを取得します。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -140,10 +142,13 @@ DriveItem の **permissions** リレーションシップは、[DriveItem の取
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
-} -->
+  "tocPath": "Sharing/Permissions",
+  "suppressions": []
+}
+-->

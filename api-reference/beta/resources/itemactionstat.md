@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: itemactionstat
 localization_priority: Normal
-ms.openlocfilehash: 39209671b63b991a8fb3ccf1c830c8557fce27c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0e3bc3f217308d96eaadf6ab367431c7f1b8c3e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569985"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345450"
 ---
 # <a name="itemactionstat-resource-type"></a>itemactionstat リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "32569985"
 
 | プロパティ    | 型  | 説明
 |:------------|:------|:-------------------------------------------------------
-| actioncount | Int32 | アクションが行われた回数。 読み取り専用。
+| actioncount | Int32 | アクションが行われた回数。 読み取り専用です。
 | actorCount  | Int32 | アクションを実行した個別のアクターの数。 値の取得のみ可能です。
 
 <!--
@@ -46,8 +46,6 @@ ms.locfileid: "32569985"
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemActionStat",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactionstat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

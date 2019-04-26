@@ -4,12 +4,12 @@ description: ManagedAppEntity は、アプリ管理ワークフロー下にあ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc4754a190f19dab34ac417d2852ccc9e06ba9f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 559ce934cf669241d4bee1db4e740d7806020f94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465350"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345758"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 

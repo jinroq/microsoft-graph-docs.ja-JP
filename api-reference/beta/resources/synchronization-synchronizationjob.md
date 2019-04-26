@@ -2,12 +2,12 @@
 title: 同期ジョブリソースの種類
 description: バックグラウンドで定期的に実行して同期を実行し、1つのディレクトリに加えられた変更をポーリングして、別のディレクトリにプッシュします。 同期ジョブは、テナント内のアプリケーションの特定のインスタンスに対して常に固有です。 同期ジョブの設定の一部として、ターゲットディレクトリのオブジェクトの読み取りおよび書き込みの承認を付与し、ジョブの同期スキーマをカスタマイズする必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 43563de6e6ca88eac63b4f4b4bc4afd3fb78abc3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580660"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345692"
 ---
 # <a name="synchronizationjob-resource-type"></a>同期ジョブリソースの種類
 
@@ -21,11 +21,11 @@ ms.locfileid: "32580660"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[同期ジョブ](synchronization-synchronizationjob.md)のコレクション  |特定のアプリケーションインスタンス (サービスプリンシパル) の既存のジョブを一覧表示します。|
 |[同期ジョブを取得する](../api/synchronization-synchronizationjob-get.md) | [同期ジョブ](synchronization-synchronizationjob.md) |同期ジョブオブジェクトのプロパティとリレーションシップを読み取ります。|
-|[作成](../api/synchronization-synchronizationjob-post.md)         |[同期ジョブ](synchronization-synchronizationjob.md)   |指定したアプリケーションの新しいジョブを作成します。|
+|[Create](../api/synchronization-synchronizationjob-post.md)         |[同期ジョブ](synchronization-synchronizationjob.md)   |指定したアプリケーションの新しいジョブを作成します。|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |なし   |同期を開始します。 ジョブが一時停止状態である場合、ジョブが一時停止した時点から続行されます。 ジョブが検疫されている場合は、検疫の状態はクリアされます。|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |なし   |ジョブを強制的に開始し、ディレクトリ内のすべてのオブジェクトを再処理します。|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |なし   |一時的に同期を停止します。 ジョブの状態を含むすべての進行状況が持続され、[開始](../api/synchronization-synchronizationjob-start.md)呼び出しが行われたときにジョブは中断したところから続行されます。|
-|[削除](../api/synchronization-synchronizationjob-delete.md)        |なし   |同期を停止し、ジョブに関連付けられているすべての状態を完全に削除します。|
+|[Delete](../api/synchronization-synchronizationjob-delete.md)        |なし   |同期を停止し、ジョブに関連付けられているすべての状態を完全に削除します。|
 |[synchrnoizationSchema を取得する](../api/synchronization-synchronizationschema-get.md)    |[同期スキーマ](synchronization-synchronizationschema.md)   |ジョブの有効な同期スキーマを取得します。|
 |[synchroizationSchema の更新](../api/synchronization-synchronizationschema-update.md)    |なし   |ジョブの同期スキーマを更新します。 |
 |[資格情報を検証する](../api/synchronization-synchronizationjob-validatecredentials.md)|なし|ターゲットディレクトリに対して提供された資格情報をテストします。|
@@ -34,8 +34,8 @@ ms.locfileid: "32580660"
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|id             |String                     |一意の同期ジョブ識別子。 読み取り専用。|
-|スケジューリング       |[同期スケジュール](synchronization-synchronizationschedule.md)|ジョブを実行するために使用するスケジュール。 読み取り専用。|
+|id             |String                     |一意の同期ジョブ識別子。 読み取り専用です。|
+|スケジューリング       |[同期スケジュール](synchronization-synchronizationschedule.md)|ジョブを実行するために使用するスケジュール。 読み取り専用です。|
 |status         |[同期の状態](synchronization-synchronizationstatus.md)     |ジョブの状態。ジョブが最後に実行された日時、現在のジョブの状態、エラーが含まれます。|
 |templateId     |String    |このジョブの基になっている[同期テンプレート](synchronization-synchronizationtemplate.md)の識別子。|
 
@@ -53,6 +53,7 @@ ms.locfileid: "32580660"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronizationJob"
 }-->
 
@@ -75,8 +76,6 @@ ms.locfileid: "32580660"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

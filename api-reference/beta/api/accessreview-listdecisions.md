@@ -4,12 +4,12 @@ description: Azure AD access レビュー機能で、accessreview オブジェ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 123eeb46ba38937722e68bee6aaa001c86320106
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299641"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323728"
 ---
 # <a name="list-accessreview-decisions"></a>accessreview に関する決定事項を一覧表示する
 

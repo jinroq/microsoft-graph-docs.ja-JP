@@ -4,12 +4,12 @@ description: 指定されたグループがメンバーであるすべてのグ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e324e693f7e049f3a66c561b98815a05e7211c78
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502426"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321943"
 ---
 # <a name="group-getmembergroups"></a>グループ: getMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "32502426"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委任 (職場または学校のアカウント)     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
-| アプリケーション                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
-
-> **注:** この API には、 `Directory.Read.All`現在アクセス許可以上が必要です。 `Group.Read.All`アクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
+| アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -51,7 +49,7 @@ POST /groups/{id}/getMemberGroups
 
 | パラメーター           | 型    | 説明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | ブール値 | **false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。 |
+| securityEnabledOnly | Boolean | **false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。 |
 
 ## <a name="response"></a>応答
 
@@ -113,8 +111,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

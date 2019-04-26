@@ -4,16 +4,16 @@ description: Azure AD B2C 信頼フレームワークポリシーは、カスタ
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8b822f1b9788d0502c1376ed437593dfb96469ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3160ce5ec75c0b65def8aed44ad89032cd293dee
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522623"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345464"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustframeworkpolicy リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 [Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview)の[信頼フレームワーク](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)ポリシー ([カスタムポリシー](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)とも呼ばれます) を表します。 信頼フレームワークポリシーにより、ユーザー手順を完全に制御できるようになります。 次の場合に使用します。
 
@@ -43,7 +43,16 @@ ms.locfileid: "32522623"
 ## <a name="json-representation"></a>JSON 表記
 
 リソースの JSON 表記を次に示します。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "baseType":"microsoft.graph.entity",
+  "keyProperty":"id",
+  "isMediaEntity":true,
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
+}-->
 ```json
 {
    "id": "B2C_1A_Test"

@@ -2,14 +2,16 @@
 title: licensedetails リソースの種類
 description: ユーザーに割り当てられているライセンスに関する情報が含まれています。
 localization_priority: Normal
-ms.openlocfilehash: 7036904e20173f8fefb6f4f02bd2473289de96c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b977dcff67ac9dc03890a4f2182d8b1d974f314
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562679"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345304"
 ---
 # <a name="licensedetails-resource-type"></a>licensedetails リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーに割り当てられているライセンスに関する情報が含まれています。
 
@@ -29,7 +31,7 @@ ms.locfileid: "32562679"
 |skuId|Guid| サービス SKU の一意識別子 (GUID)。 関連する[SubscribedSku](subscribedsku.md)オブジェクトの skuId プロパティと同じです。 読み取り専用 |
 |skupartnumber|String| 一意の SKU 表示名。 関連する[SubscribedSku](subscribedsku.md)オブジェクトの skupartnumber と等しい。例: "AAD_Premium"。 読み取り専用 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -37,7 +39,6 @@ ms.locfileid: "32562679"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -56,10 +57,13 @@ ms.locfileid: "32562679"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "licenseDetails resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

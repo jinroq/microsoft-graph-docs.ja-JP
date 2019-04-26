@@ -4,14 +4,16 @@ description: テナントにドメインを追加します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f7c9677d4bd3dd7088f3b3d67c49fad6caa360e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 098c7a4088de2e8c80081b5435344bf2f91e0f23
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454849"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325909"
 ---
 # <a name="create-domain"></a>ドメインを作成する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントにドメインを追加します。
 
@@ -59,7 +61,7 @@ POST /domains
   "id": "create_domain_from_domains"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains
+POST https://graph.microsoft.com/beta/domains
 Content-type: application/json
 Content-length: 192
 
@@ -69,7 +71,7 @@ Content-length: 192
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,10 +95,13 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

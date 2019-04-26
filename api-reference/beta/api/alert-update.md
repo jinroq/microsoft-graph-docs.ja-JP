@@ -4,12 +4,12 @@ description: ソリューション間でアラートの状態と割り当てを�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459241"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322678"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -52,8 +52,8 @@ PATCH /security/alerts/{alert_id}
 |assignedTo|String|トリアージ、調査、または修復のためにアラートが割り当てられたアナリストの名前。|
 |closeddatetime|DateTimeOffset|通知が終了した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |コメント|String collection|アラートに関するアナリストのコメント (顧客の警告管理)。|
-|feedback|alertfeedback 列挙|アラートに関するアナリストのフィードバック。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
-|status|alertstatus 列挙型|アラートライフサイクルの状態 (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
+|feedback|alertfeedback 列挙|アラートに関するアナリストのフィードバック。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
+|status|alertstatus 列挙型|アラートライフサイクルの状態 (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
 |tags|String コレクション|通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"hva"、"のこぎり" など)。|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品/サービスのベンダー、プロバイダ、およびサブプロバイダに関する詳細を含む複合型 (たとえば、vendor = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **プロバイダーおよびベンダーフィールドは必須です。**|
 
@@ -144,7 +144,7 @@ Prefer: return=representation
 
 オプション`Prefer: return=representation`の要求ヘッダーを使用する場合の応答の例を次に示します。
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -174,8 +174,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

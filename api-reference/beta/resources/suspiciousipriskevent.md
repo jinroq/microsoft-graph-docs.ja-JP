@@ -2,12 +2,12 @@
 title: suspiciousIpRiskEvent リソースの種類
 description: 疑わしい IP アドレスからアカウントのサインインが試行された場合に、Azure Active Directory id 保護によって検出されたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: e144e1f631941076b5cee7cee20d90062564012a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5151c5526dc4d7d63ce6b230705497f67db88dd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582062"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345719"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>suspiciousIpRiskEvent リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32582062"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -41,7 +41,7 @@ ms.locfileid: "32582062"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -52,6 +52,7 @@ ms.locfileid: "32582062"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.suspiciousIpRiskEvent"
 }-->
 
@@ -68,7 +69,8 @@ ms.locfileid: "32582062"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +84,6 @@ ms.locfileid: "32582062"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/suspiciousipriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

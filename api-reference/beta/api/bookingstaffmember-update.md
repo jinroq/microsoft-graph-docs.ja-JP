@@ -4,12 +4,12 @@ description: 指定した bookingbusiness の bookingStaffMember のプロパテ
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4124a681332a91d2d909c141b54d412cae9bcc69
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461662"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322332"
 ---
 # <a name="update-bookingstaffmember"></a>bookingstaffmember の更新
 
@@ -44,7 +44,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 |colorIndex|Int32|スタッフメンバーを表す色を識別します。 この色は、予約アプリの [**スタッフの詳細**] ページのカラーパレットに対応しています。|
 |displayName|String|スタッフメンバーの名前。顧客に表示されます。|
 |emailAddress|String|スタッフメンバーの電子メールアドレス。 これは、ビジネスと同じ Office 365 テナント内、または別の電子メールドメインに配置できます。 この電子メールアドレスは、ビジネスのスケジューリングポリシーで**sendConfirmationsToOwner**プロパティが true に設定されている場合に使用されます。|
-|role|string| 業務のスタッフメンバーの役割。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
+|role|string| 業務のスタッフメンバーの役割。 使用可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
 |useBusinessHours|Boolean|True は、スタッフメンバーの利用可能性がビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティによって決定されることを意味します。 False は、可用性がスタッフメンバーの**workingHouse**プロパティの設定によって決定されることを意味します。|
 |workingHours|[bookingwork hours](../resources/bookingworkhours.md)コレクション|スタッフメンバーが予約に使用できる各曜日の時間の範囲。|
 
@@ -146,8 +146,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

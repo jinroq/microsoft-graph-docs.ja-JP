@@ -4,12 +4,12 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: itempreviewinfo-OneDrive API
 localization_priority: Normal
-ms.openlocfilehash: 469679e9baa016560f5a02425bc41d628a24dc2c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c43626292cd07ad14d27202255a499b413dbae63
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562868"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345513"
 ---
 # <a name="itempreviewinfo-resource-type"></a>itempreviewinfo リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "32562868"
 
 指定したオプションの現在の状態に応じて、getUrl、posturl、または both のどちらかが返される場合があります。
 
-postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
+postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 例:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

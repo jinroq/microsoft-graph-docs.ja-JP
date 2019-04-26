@@ -5,12 +5,12 @@ ms.date: 09/17/2017
 title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d9b06b54d12abddd3a1586a11b99f7c600ac4508
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56413ad243e5c6c2c2a7ae3a81dab50586f42db8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581606"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345243"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion リソースの種類
 
@@ -35,7 +35,7 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="json-representation"></a>JSON 表記
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
 ```json
 {
@@ -52,10 +52,10 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用。 |
+| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 
 
 ## <a name="relationships"></a>関係
@@ -74,8 +74,6 @@ listItemVersion リソースで使用可能なタスクを次に示します。
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
   "tocPath": "Facets/Version",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/listitemversion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 'Outlook のタスク (outlooktask オブジェクトのコレク�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d1299dda44cd698d0f6a1641f53557d2a7c8f342
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568605"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345577"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlooktaskfolder リソースの種類
 
@@ -27,8 +27,8 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 |[outlooktaskfolder の取得](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |指定された Outlook タスクフォルダーのプロパティとリレーションシップを取得します。|
 |[outlooktask の作成](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 指定したタスクフォルダーに Outlook のタスクを作成します。|
 |[タスクを一覧表示する](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) コレクション| 指定したフォルダー内のすべての Outlook タスクを取得します。|
-|[更新する](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Outlook タスクフォルダーの書き込み可能なプロパティを更新します。 |
-|[削除](../api/outlooktaskfolder-delete.md) | なし |指定された Outlook タスクフォルダーを削除します。|
+|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Outlook タスクフォルダーの書き込み可能なプロパティを更新します。 |
+|[Delete](../api/outlooktaskfolder-delete.md) | なし |指定された Outlook タスクフォルダーを削除します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |新規または既存の Outlook タスクフォルダーに、1つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つタスクフォルダーを取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | または`$expand` `$filter`を使用して、単一値の拡張プロパティを含む Outlook タスクフォルダーを取得します。 |
@@ -39,7 +39,7 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|
-|id|文字列型 (String)|ユーザーのメールボックス内で一意のタスクフォルダーの識別子。 読み取り専用。|
+|id|文字列型 (String)|ユーザーのメールボックス内で一意のタスクフォルダーの識別子。 読み取り専用です。|
 |isdefaultfolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
 |name|String|タスク フォルダーの名前。|
 |parentgroupkey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
@@ -47,9 +47,9 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|タスクフォルダーに対して定義されている複数値の拡張プロパティのコレクション。 読み取り専用。 Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|タスクフォルダーに対して定義されている単一値の拡張プロパティのコレクションです。 読み取り専用。 Null 許容型。|
-|tasks|[outlookTask](outlooktask.md) コレクション|対象タスク フォルダー内のタスク。 読み取り専用。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション|タスクフォルダーに対して定義されている複数値の拡張プロパティのコレクション。 読み取り専用です。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション|タスクフォルダーに対して定義されている単一値の拡張プロパティのコレクションです。 読み取り専用です。 Null 許容型。|
+|tasks|[outlookTask](outlooktask.md) コレクション|対象タスク フォルダー内のタスク。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -61,6 +61,8 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
     "singleValueExtendedProperties",
     "tasks"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTaskFolder"
 }-->
 
@@ -84,8 +86,6 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/outlooktaskfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

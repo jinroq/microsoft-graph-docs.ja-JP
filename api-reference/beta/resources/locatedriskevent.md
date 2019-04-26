@@ -2,12 +2,12 @@
 title: locatedRiskEvent リソースの種類
 description: 場所データに基づく Azure Active Directory id 保護によって検出されたリスクイベント。 存在するリスクイベントの種類は次のとおりです。
 localization_priority: Normal
-ms.openlocfilehash: 20fe76099c511483144b42e33fc260910debb5ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c7503c08700a0d7c2d2ad67e8868901bdb008e2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578153"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345371"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "32578153"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -46,7 +46,7 @@ ms.locfileid: "32578153"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -57,6 +57,9 @@ ms.locfileid: "32578153"
   "optionalProperties": [
 
   ],
+   "abstract": true,
+   "keyProperty": "id",
+   "baseType":"microsoft.graph.identityRiskEvent",
   "@odata.type": "microsoft.graph.locatedRiskEvent"
 }-->
 
@@ -73,7 +76,8 @@ ms.locfileid: "32578153"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -87,8 +91,6 @@ ms.locfileid: "32578153"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/locatedriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

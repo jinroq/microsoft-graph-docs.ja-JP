@@ -1,21 +1,21 @@
 ---
 title: rejectedSender の削除
-description: rejectedSenders リストからユーザーまたはグループを削除します。
+description: 拒否された送信者の一覧からユーザーまたはグループを削除します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c1fcc868b454d622dca79cf7f48dfaecf8023af
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502849"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323665"
 ---
 # <a name="remove-rejectedsender"></a>rejectedSender の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-rejectedSenders リストからユーザーまたはグループを削除します。
+指定したグループの拒否リストからユーザーまたはグループを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,7 +29,7 @@ rejectedSenders リストからユーザーまたはグループを削除しま�
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
+DELETE /groups/{id}/rejectedSenders/$ref?$id={id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -44,17 +44,35 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
+## <a name="examples"></a>例
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>例 1: グループの拒否された送信者の一覧からユーザーを削除します。
 #### <a name="request"></a>要求
-要求のいくつかの例を次に示します。
+
 <!-- {
   "blockType": "request",
-  "name": "remove_rejectedSender_from_group"
+  "name": "remove_user_from_rejectedsenderslist_of_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
+```
+#### <a name="response"></a>応答
+応答の例を次に示します。 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
-DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>例 2: グループの拒否された送信者の一覧からグループを削除します。
+#### <a name="request"></a>要求
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_rejectedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
 ```
 
 #### <a name="response"></a>応答
@@ -76,8 +94,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-rejectedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

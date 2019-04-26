@@ -4,12 +4,12 @@ description: ワークシート上のセルを基準にしてグラフを配置�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4e439356f2156a14bdbc906972c44f3c3299b05b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ebea1de385d3abf2d81d1172589a6135a689d9cb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456634"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327889"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -28,7 +28,7 @@ ms.locfileid: "32456634"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
+POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -58,7 +58,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
   "name": "chart_setposition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setPosition
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
 Content-type: application/json
 Content-length: 66
 
@@ -88,8 +88,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chart-setposition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

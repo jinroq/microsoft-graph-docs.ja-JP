@@ -5,12 +5,12 @@ ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 03b5f1007d8dbe6587da736cdf0ac0fdc1ed8a55
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453610"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345793"
 ---
 # <a name="webpart-resource"></a>webPart リソース
 
@@ -28,10 +28,8 @@ ms.locfileid: "32453610"
 
 ```json
 {
-  "type": "string (guid)",
-  "data": {
-    "instanceId": "string (guid) (optional)"
-  }
+  "type": "string (identifier)",
+  "data": {"@odata.type":"microsoft.graph.sitePageData"}
 }
 ```
 
@@ -39,12 +37,12 @@ ms.locfileid: "32453610"
 
 | プロパティ                | 型             | 説明
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | webPart の種類を指定する一意の識別子。 値の取得のみ可能です。
+| **type**                | String           | webPart の種類を指定する一意の識別子。 読み取り専用です。
 | **data**                | [sitepagedata][] | webpart に必要なプロパティ (webpart によって異なります)
 
 [sitepagedata]: sitepagedata.md
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Web パーツでは、**データ**の下に必要なプロパティを定義できます。
 
@@ -56,8 +54,6 @@ Web パーツでは、**データ**の下に必要なプロパティを定義で
   "keywords": "",
   "section": "documentation",
   "tocPath": "Control",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/webpart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

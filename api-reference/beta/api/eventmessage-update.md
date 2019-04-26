@@ -4,12 +4,12 @@ description: eventMessage オブジェクトのプロパティを更新します
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 160fbf70f243174265fc6e4e54feabb8042bd450
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7c22cfee9ad7378166ac619a770894b110c510f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463962"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325054"
 ---
 # <a name="update-eventmessage"></a>eventMessage の更新
 
@@ -46,10 +46,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|メッセージに関連付けられたカテゴリ。|
 |importance|String|メッセージの重要度です。可能な値は、`Low`、`Normal`、`High` です。|
-|isAllDay |ブール型 (Boolean)|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントの**startDateTime**および**enddatetime**プロパティの調整も必要です。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントの**startDateTime**および**enddatetime**プロパティの調整も必要です。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 
 ## <a name="response"></a>応答
 
@@ -105,8 +105,6 @@ Content-length: 248
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

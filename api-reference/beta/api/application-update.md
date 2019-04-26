@@ -4,12 +4,12 @@ description: application オブジェクトのプロパティを更新します�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c85608ad31d0d83607a49e06e2a46032e927bc4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459382"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322910"
 ---
 # <a name="update-application"></a>アプリケーションを更新する
 
@@ -42,22 +42,22 @@ PATCH /applications/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowPublicClient|Boolean| アプリケーションがパブリッククライアントとして動作するかどうかを指定します。 たとえば、モバイルデバイスで実行中のアプリケーションがインストールされている場合です。 既定値は *false* です。 |
-|api|[api](../resources/api.md)| API アプリケーションの設定を指定します。 |
-|appRoles|[appRole](../resources/approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容ではありません。|
-|applicationAliases|String collection| アプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)」を参照してください。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容ではありません。 |
+|api|[apiapplication](../resources/apiapplication.md)| API アプリケーションの設定を指定します。 |
+|appRoles|[appRole](../resources/approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容型ではありません。|
+|applicationAliases|String コレクション| アプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)」を参照してください。 複数値プロパティのフィルター式には *any* 演算子が必要です。 null 許容ではありません。 |
 |createdDateTime|DateTimeOffset| アプリケーションが登録された日付と時刻です。 |
 |deletedDateTime|DateTimeOffset| アプリケーションが削除された日付と時刻です。 |
 |displayName|String|アプリケーションの表示名。 |
 |id|String|アプリケーションの一意の識別子です。 [directoryObject](../resources/directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。 |
 |info|[informationalUrl](../resources/informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 | デスクトップやモバイル デバイスなど、インストールされているクライアントの設定を指定します。 |
 |keyCredentials|[keyCredential](../resources/keycredential.md) コレクション|アプリケーションに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。 |
-|logo|Stream|アプリケーションのメイン ロゴです。 null 許容ではありません。 |
-|orgRestrictions|String collection| アプリケーションが制限されている組織の整理された ds。  コレクションが空の場合、アプリケーションはマルチテナント (制限なし) です。 コレクションに保持されている ds がある場合、アプリケーションはコレクション内の整理された ds に制限されます。 アプリケーションが登録されている tenantid を指定せずに他のテナントを指定すると、アプリケーション自体の tenantid が間接的に含まれていることを意味します。 |
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。|
+|logo|Stream|アプリケーションのメイン ロゴです。 null 許容型ではありません。 |
+|orgRestrictions|String コレクション| アプリケーションが制限されている組織の整理された ds。  コレクションが空の場合、アプリケーションはマルチテナント (制限なし) です。 コレクションに保持されている ds がある場合、アプリケーションはコレクション内の整理された ds に制限されます。 アプリケーションが登録されている tenantid を指定せずに他のテナントを指定すると、アプリケーション自体の tenantid が間接的に含まれていることを意味します。 |
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容型ではありません。|
 |preauthorizedapplications|[preauthorizedapplication](../resources/preauthorizedapplication.md)コレクション| アプリケーションおよび暗黙的同意の要求されたアクセス許可を一覧表示します。 管理者はアプリケーションに同意を得る必要があります。 preauthorizedapplications では、ユーザーが要求されたアクセス許可に同意する必要はありません。 preauthorizedapplications にリストされているアクセス許可は、ユーザーの同意を必要としません。 ただし、preauthorizedapplications に表示されていない追加の要求されたアクセス許可には、ユーザーの同意が必要です。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) コレクション|このアプリケーションがアクセスする必要があるリソース、およびそのリソースで必要な OAuth アクセス許可の範囲とアプリケーション ロールのセットを指定します。 必要なリソースへのアクセスに対するこの事前構成によって、同意エクスペリエンスが促進されます。 null 許容型ではありません。|
 |tags|String コレクション| アプリケーションを分類および識別するために使用できるカスタム文字列です。 |
-|web|[web](../resources/web.md)| Web アプリケーションの設定を指定します。 |
+|web|[webApplication](../resources/webApplication.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="response"></a>応答
 
@@ -99,8 +99,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/application-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

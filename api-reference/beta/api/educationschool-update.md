@@ -4,14 +4,16 @@ description: 学校オブジェクトのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c7dd9cafe1238170599e802738d42bd287ebf47f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30d233bb2ec91721254307d124a30af65fa75e6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464769"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324719"
 ---
 # <a name="update-educationschool-properties"></a>educationschool プロパティを更新する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 学校オブジェクトのプロパティを更新します。
 
@@ -41,7 +43,7 @@ PATCH /education/schools/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
-|説明| String | 学校の説明| 
+|description| String | 学校の説明| 
 |principalEmail| String| プリンシパルの電子メール アドレス|
 |principalName| String | プリンシパルの名前|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |
@@ -64,7 +66,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
+PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
 
@@ -115,10 +117,13 @@ Content-length: 292
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

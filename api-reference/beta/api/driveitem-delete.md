@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 114dd5d9ee96ef4f89f246a3a2ad5c74847f074b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 565e4eb51dd9ed7d506377360fe06d5203c89eb2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454448"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325352"
 ---
 # <a name="delete-a-driveitem"></a>DriveItem を削除する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) を、ID またはパスを使用して削除します。このメソッドを使用して項目を削除すると、アイテムは完全に削除されず、ごみ箱に移動するだけであることに注意してください。
 
@@ -48,7 +50,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 以下は、この API を呼び出す方法の例です。
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
@@ -70,10 +72,13 @@ HTTP/1.1 204 No Content
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
-} -->
+  "tocPath": "Items/Delete",
+  "suppressions": []
+}
+-->

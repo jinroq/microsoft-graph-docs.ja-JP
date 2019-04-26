@@ -2,12 +2,12 @@
 title: コネクタグループの作成
 description: この API を使用して、新しいコネクタグループを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 233a80366c89b8cba31bd24e5d69b3a83fc20d1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90b3d0cdbdd02876e1dfaf3d6743f6dac2199202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455794"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327678"
 ---
 # <a name="create-connectorgroup"></a>コネクタグループの作成
 
@@ -89,8 +89,6 @@ Content-length: 119
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-post-connectorgroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: directoryroletemplate オブジェクトのプロパティと関係
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aca1a383f0b445d7bb5feafbba3aec052c9ebc89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f41b0fe0e23b6b5595a789a8d03b95a5c8ce6e5b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454905"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325923"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate を取得する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 directoryroletemplate オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -50,7 +52,7 @@ GET /directoryRoleTemplates/{id}
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -73,10 +75,13 @@ Content-length: 98
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
