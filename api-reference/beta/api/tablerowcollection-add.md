@@ -4,12 +4,12 @@ description: '表の末尾に行を追加します。 この api を使用して
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fbc4d8d3b0f5a1653bf4d022dfea8c68c5401d18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f268bc37eb3805e1e7acaf15beebe5fc24befe70
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544558"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330069"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add　
 
@@ -49,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|number|省略可能。新しい行の相対位置を指定します。null の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。|
-|values|(boolean、string、または number)|省略可能。 表の行の書式設定されていない値の2次元配列。|
+|values|(boolean または string または number) コレクション|省略可能。 表の行の書式設定されていない値の2次元配列。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [TableRow](../resources/tablerow.md) オブジェクトを返します。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[workbookTableRow](../resources/workbooktablerow.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 この例では、テーブルの最後に2行のデータが挿入されます。 
@@ -83,7 +83,7 @@ Content-length: 51
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -105,8 +105,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablerowcollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

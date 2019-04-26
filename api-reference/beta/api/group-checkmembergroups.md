@@ -1,15 +1,15 @@
 ---
 title: 'グループ: checkMemberGroups'
-description: 指定したグループ一覧内のメンバーシップを確認します。 対象となるグループのリストからを返します。
+description: 指定したグループ一覧内のメンバーシップを確認します。 リストからそのグループを返します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1815f187a25eaddbd3b1757fde5e7e4e9c74f650
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503109"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329649"
 ---
 # <a name="group-checkmembergroups"></a>グループ: checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "32503109"
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
 | アプリケーション                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** この API には、 `Directory.Read.All`現在アクセス許可以上が必要です。 `Group.Read.All`アクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
+> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `Group.Read.All`のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -51,7 +51,7 @@ POST /groups/{id}/checkMemberGroups
 
 | パラメーター | 型   | 説明           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String | グループ ID の配列 |
+| groupIds  | String collection | グループ ID の配列 |
 
 ## <a name="response"></a>応答
 
@@ -115,8 +115,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

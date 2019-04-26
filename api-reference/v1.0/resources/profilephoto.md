@@ -1,13 +1,13 @@
 ---
 title: profilePhoto リソースの種類
-description: Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。base 64 でエンコードされていないバイナリ データです。
+description: Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。 base 64 でエンコードされていないバイナリ データです。
 localization_priority: Priority
 ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579868"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto リソースの種類
 Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。base 64 でエンコードされていないバイナリ データです。
@@ -22,9 +22,9 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 |[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|読み取り専用です。|
+|id|string|読み取り専用です。|
 |height|int32|写真の高さ。読み取り専用です。|
 |width|int32|写真の幅。読み取り専用です。|
 

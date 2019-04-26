@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: オーディオ
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f526fc92c766f3ae91831d5026a31e3bd69b4b8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535593"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339103"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 
@@ -57,7 +57,7 @@ ms.locfileid: "32535593"
 | **discCount**         | Int32   | このアルバムの合計ディスク数。                             |
 | **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
 | **genre**             | string  | このオーディオ ファイルのジャンル。                                        |
-| **hasDrm**            | ブール値 | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
+| **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
 | **isVariableBitrate** | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
 | **title**             | string  | オーディオ ファイルのタイトル。                                         |
 | **track**             | Int32   | このオーディオ ファイルの元のディスクでのトラック番号。    |
@@ -77,8 +77,6 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
   "tocPath": "Facets/Audio",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

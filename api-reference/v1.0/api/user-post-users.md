@@ -1,15 +1,15 @@
 ---
 title: ユーザーを作成する
-description: 新しいユーザーを作成するのにには、この API を使用します。
+description: この API を使用して、新しいユーザーを作成します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 66499d47fc2458debc8d2c234738e6a7b0a18c64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 17d374a7b6e55b016f6dd46a4b58f1505e39abee
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945595"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564058"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -41,12 +41,12 @@ POST /users
 
 | パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|accountEnabled |ブール値 |アカウントが有効な場合は true。それ以外の場合は false。|
+|accountEnabled |boolean |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|
-|onPremisesImmutableId |文字列 |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
-|mailNickname |文字列 |ユーザーのメール エイリアス。|
+|onPremisesImmutableId |string |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
+|mailNickname |string |ユーザーのメール エイリアス。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |ユーザーのパスワード プロファイル。|
-|userPrincipalName |文字列 |ユーザー プリンシパル名 (someuser@contoso.com)。|
+|userPrincipalName |string |ユーザー プリンシパル名 (someuser@contoso.com)。|
 
 ## <a name="response"></a>応答
 
@@ -83,7 +83,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

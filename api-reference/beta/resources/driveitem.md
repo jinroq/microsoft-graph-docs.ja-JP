@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507582"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340696"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソース型
 
@@ -47,7 +47,7 @@ ms.locfileid: "32507582"
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
@@ -146,11 +146,11 @@ ms.locfileid: "32507582"
 | children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
-| listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用。 Null 許容型。
+| listItem           | [listItem][]                | SharePoint のドライブの場合は、関連付けられているドキュメント ライブラリのリスト アイテム。 読み取り専用。 Null 許容型です。
 | アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
 | subscriptions      | [subscription][] コレクション | アイテムのサブスクリプションのセット。 ドライブのルートでのみサポートされています。
 | thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
-| versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型。
+| versions           | [driveItemVersion][] コレクション | アイテムの以前のバージョンのリスト。 詳細については、「[バージョンの一覧表示][]」を参照してください。 読み取り専用です。 Null 許容型です。
 | workbook           | [workbook][]                | Excel スプレッドシートであるファイルの場合、スプレッドシートのコンテンツを操作するためにブックの API にアクセスします。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
@@ -250,8 +250,6 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
   "tocBookmarks": {
     "Resources/Item": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

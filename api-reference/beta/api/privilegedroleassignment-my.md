@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignment: my'
 description: 要求者の特権の役割の割り当てを取得します。
 localization_priority: Normal
-ms.openlocfilehash: fe3f0486d7c5f011abbac60deed831b798802aef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: acf03e62eff3195fb922a324a231e5d58f768b11
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546558"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337314"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
@@ -89,8 +89,6 @@ Content-length: 237
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignment-my.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: コネクタリソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5467d2a4625ad3813ff2777838db87be3ca5b713
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535537"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341220"
 ---
 # <a name="connector-resource-type"></a>コネクタリソースの種類
 
@@ -31,14 +31,14 @@ ms.locfileid: "32535537"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |externalip|String|コネクタコンピューターのサービスによって検出された外部 IP アドレス。 読み取り専用|
-|id|String| コネクタのオブジェクト id。 <BR>読み取り専用。|
+|id|String| コネクタのオブジェクト id。 <BR>読み取り専用です。|
 |マシン|String| コネクタが実行されているコンピューターの名前。 <BR>読み取り専用|
 |status|string| コネクタの状態を示します。 可能な値は、`active`、`inactive` です。 読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|memberOf|[コネクタグループ](connectorgroup.md)コレクション| 接続がメンバーであるコネクタグループ。<br>読み取り専用。 |
+|memberOf|[コネクタグループ](connectorgroup.md)コレクション| 接続がメンバーであるコネクタグループ。<br>読み取り専用です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,6 +46,7 @@ ms.locfileid: "32535537"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32535537"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/connector.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

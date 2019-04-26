@@ -2,12 +2,12 @@
 title: 同期タスク実行リソースの種類
 description: 同期ジョブの実行結果の概要を示します。
 localization_priority: Normal
-ms.openlocfilehash: 37a0fd57269cef6d3cb03c5cc5c38d3024fe198d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9008dd7d51a1d07be75c5b9bbad34d636fff74c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453864"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339826"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>同期タスク実行リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "32453864"
 |countImportedDeltas          |Int64  |インポートされたデルタ変更の数。|
 |countImportedReferenceDeltas |Int64  |参照変更に関連するインポートされたデルタ変更の数。|
 |error                        |[同期エラー](synchronization-synchronizationerror.md)|エラーが発生した場合は、詳細情報を含む**同期エラー**オブジェクトが格納されています。|
-|state                        |String |この実行の結果を要約したコード。 使用可能な値は、`Succeeded`、`Failed`、`EntryLevelErrors` です。|
+|state                        |String |この実行の結果を要約したコード。 可能な値は、`Succeeded`、`Failed`、`EntryLevelErrors` です。|
 |開始時刻                    |DateTimeOffset|このジョブの実行が開始された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |timeended                    |DateTimeOffset|このジョブの実行が終了した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 
@@ -74,8 +74,6 @@ ms.locfileid: "32453864"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationtaskexecution.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

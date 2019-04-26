@@ -4,15 +4,16 @@ description: '指定した outlookCategory オブジェクトの書き込み可�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 87c235b670036cb7f4d7e4c20a0e6c700d3843c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05290d9310f00f282684d2f2476b5a70f59f3e2f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539827"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332747"
 ---
 # <a name="update-outlook-category"></a>Outlook カテゴリを更新する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した [outlookCategory](../resources/outlookcategory.md) オブジェクトの書き込み可能な **color** プロパティを更新します。 **displayName** をプロパティは、カテゴリの作成後に変更することはできません。
 
@@ -52,11 +53,10 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
+PATCH https://graph.microsoft.com/beta/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 
@@ -77,7 +77,7 @@ Content-type: application/json
 Content-length: 251
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"bac262b7-485d-4739-b436-e31467d64fac",
   "displayName":"Project expenses",
   "color":"preset15"
@@ -86,10 +86,13 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

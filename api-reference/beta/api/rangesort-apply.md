@@ -4,12 +4,12 @@ description: 並べ替え操作を実行します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7979033ce520f0d29172a910f4935c428bee383f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: beaced8da56e82599fd2e900c04e909947d1893b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538267"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332169"
 ---
 # <a name="rangesort-apply"></a>RangeSort: 適用
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538267"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
+POST /workbook/names/{name}/range/sort/apply
 POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|fields|SortField|並べ替えに使用する条件の一覧。|
+|fields|workbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
 |hasHeaders|boolean|省略可能。範囲にヘッダーがあるかどうか。|
 |orientation|string|省略可能。操作が行と列のどちらの並べ替えかを示します。可能な値は、`Rows`、`Columns` です。|
@@ -63,7 +63,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
 Content-length: 358
 
@@ -108,8 +108,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

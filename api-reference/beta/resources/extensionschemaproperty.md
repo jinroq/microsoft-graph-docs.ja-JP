@@ -2,12 +2,12 @@
 title: extensionSchemaProperty リソースの種類
 description: '**extensionSchemaProperty** リソースを使用して、schemaExtension 定義の一部としてプロパティの名前とその種類を定義します。'
 localization_priority: Normal
-ms.openlocfilehash: bb044aa2f85ea5accdba4ed43a1a5b1c856a209d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05fb5eb94f760bce26ba09bf3e8e862ff5fd2fb8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542651"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340266"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "32542651"
 | Binary | 最大 256 バイトです。 |
 | Boolean | メッセージ、イベント、投稿ではサポートされていません。 |
 | DateTime | ISO 8601 形式で指定する必要があります。UTC で格納されます。 |
-| Integer | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
+| 整数 | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
 | String | 最大 256 文字です。 |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -61,8 +61,6 @@ ms.locfileid: "32542651"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extensionschemaproperty.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: ディレクトリの設定は、使用可能な directorysettingte
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b489bf1130bd91d28b3a2b41a78c38b881e90d27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3336ec351c44ba0b69df55e1383cca73b6ea1a96
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535240"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340743"
 ---
 # <a name="directorysetting-resource-type"></a>directorysetting リソースの種類
 
@@ -32,8 +32,8 @@ ms.locfileid: "32535240"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|string|関連付けられたテンプレートに由来する、この設定グループの表示名。 読み取り専用。|
-|id|string| これらの設定の一意の識別子。 読み取り専用。|
+|displayName|string|関連付けられたテンプレートに由来する、この設定グループの表示名。 読み取り専用です。|
+|id|string| これらの設定の一意の識別子。 読み取り専用です。|
 |templateId|string| この設定のグループを作成するために使用されるテンプレートの一意識別子。 読み取り専用です。|
 |values|[settingvalue](settingvalue.md)コレクション| 名前と値のペアのコレクション。 テンプレートで定義されているすべての設定が含まれていて、設定されている必要があります。|
 
@@ -72,8 +72,6 @@ ms.locfileid: "32535240"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directorysetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 連絡先が格納されたフォルダーです。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543386"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341203"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -41,8 +41,8 @@ ms.locfileid: "32543386"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName|String|フォルダーの表示名。|
-|id|String|連絡先フォルダーの一意識別子。読み取り専用。|
+|displayName|文字列|フォルダーの表示名。|
+|id|文字列|連絡先フォルダーの一意識別子。読み取り専用。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|
 |wellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。 現在、認識されている連絡先フォルダーは `contacts` のみです。|
 
@@ -83,7 +83,7 @@ ms.locfileid: "32543386"
 ## <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](/graph/delta-query-overview)
-- [フォルダー内のメッセージへの増分変更を取得する](/graph/delta-query-messages)
+- [フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -95,8 +95,6 @@ ms.locfileid: "32543386"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contactfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

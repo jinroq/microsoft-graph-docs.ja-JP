@@ -3,11 +3,11 @@ title: itemAttachment リソースの種類
 description: '別のイベント、メッセージ、または投稿に添付された連絡先、イベント、またはメッセージです。  '
 localization_priority: Priority
 ms.openlocfilehash: df996175e545b78f4ca9a1b6271b9cb012ffffce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584818"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
@@ -19,15 +19,15 @@ ms.locfileid: "27853523"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
+|[取得](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
 |[Delete](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
-|isInline|ブール値|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
+|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
 |name|String|添付ファイルの表示名。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|

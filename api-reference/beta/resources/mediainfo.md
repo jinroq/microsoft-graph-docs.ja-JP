@@ -4,12 +4,12 @@ description: プロンプトのアクションで使用されるメディア情�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 65cf71f5c116fe213d0e32d560ec24704bff1172
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c6f8e4f4ceea184f9663c433672d0892ed92467
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562618"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342644"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo リソースの種類
 

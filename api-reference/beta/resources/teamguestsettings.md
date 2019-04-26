@@ -4,12 +4,12 @@ description: ゲストがチームでチャネルを作成、更新、削除で�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b195590b696002d2ece9828ad8b65fb5b607765f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554010"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341712"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamguestsettings リソースの種類
 
@@ -20,8 +20,8 @@ ms.locfileid: "32554010"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|ブール値|true に設定すると、ゲストはチャネルを追加および更新できるようになります。|
-|allowDeleteChannels|ブール値|true に設定されている場合、ゲストはチャネルを削除できます。|
+|allowCreateUpdateChannels|Boolean|true に設定すると、ゲストはチャネルを追加および更新できるようになります。|
+|allowDeleteChannels|Boolean|true に設定されている場合、ゲストはチャネルを削除できます。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -48,8 +48,6 @@ ms.locfileid: "32554010"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamguestsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

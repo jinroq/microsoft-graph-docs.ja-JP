@@ -4,12 +4,12 @@ description: ディレクトリに登録されているデバイスを表しま�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f8b689840220267fe1f048b0108193ba1cdb308
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b91b6e595dfc062836d8193c7c2dad769140e51
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535249"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340862"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -49,10 +49,10 @@ ms.locfileid: "32535249"
 |deviceVersion|Int32| 内部使用のみ。 |
 |displayName|String| デバイスの表示名。必須。 |
 |id|String|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
-|isCompliant|ブール値|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 読み取り専用。 これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。|
+|isCompliant|ブール値|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 読み取り専用です。 これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。|
 |isManaged|Boolean|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
-|onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 読み取り専用。|
+|onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 読み取り専用です。|
 |operatingSystem|String| デバイス上のオペレーティング システムの種類。必須。 |
 |operatingSystemVersion|String| デバイスのオペレーティング システムのバージョン。 必須。 |
 |physicalIds|String collection| 内部使用専用です。 null 許容ではありません。 |
@@ -60,7 +60,7 @@ ms.locfileid: "32535249"
 |systemlabels|String collection| システムによってデバイスに適用されるラベルのリスト。 |
 |trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください |
 |名前| String | デバイスのフレンドリ名。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
-|状態 | String| デバイスがオンラインまたはオフライン。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
+|Status | String| デバイスがオンラインまたはオフライン。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
 |プラットフォーム |String|デバイスのプラットフォーム。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。|
 |Kind| 文字列| デバイスのフォームファクター。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
 |モデル| String| デバイスのモデル。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
@@ -70,12 +70,12 @@ ms.locfileid: "32535249"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
-|registeredOwners|[directoryObject](directoryobject.md) collection| デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザー。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。 読み取り専用。 Null 許容型。|
-|registeredUsers|[directoryObject](directoryobject.md) コレクション| デバイスの登録済みユーザーのコレクション。 クラウドに参加済みのデバイスと登録済みの個人用デバイスの場合、登録済みのユーザーは、登録時に登録済み所有者と同じ値に設定されます。 読み取り専用。 Null 許容型。|
+|registeredOwners|[directoryObject](directoryobject.md) collection| デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザー。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。 読み取り専用です。 Null 許容型。|
+|registeredUsers|[directoryObject](directoryobject.md) コレクション| デバイスの登録済みユーザーのコレクション。 クラウドに参加済みのデバイスと登録済みの個人用デバイスの場合、登録済みのユーザーは、登録時に登録済み所有者と同じ値に設定されます。 読み取り専用です。 Null 許容型。|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 |registeredOwners|[directoryObject](directoryobject.md) collection|デバイスの登録済み所有者であるユーザー。読み取り専用。Null 許容型。|
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーであるユーザー。読み取り専用。Null 許容型。|
-| コマンド | コレクション (microsoft graph) | このデバイスに送信されるコマンドのセット|
+| コマンド | [command](command.md)コレクション | このデバイスに送信されるコマンドのセット|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -136,8 +136,6 @@ ms.locfileid: "32535249"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/device.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

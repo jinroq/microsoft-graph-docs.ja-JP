@@ -14,11 +14,19 @@ title: "educationIdentitySynchronizationConfiguration resource type" description
 |:-|:-|
 | [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | この種類を使用して、azure Active Directory (azure AD) の既存のユーザーアカウントと照合します。 |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | この種類を使用して、Azure AD で新しいユーザーアカウントを作成します。 |
-<!--
+
+## <a name="json-representation"></a>JSON 表記
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
+}-->
+
+```json
 {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationidentitysynchronizationconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
 }
--->
+```
+

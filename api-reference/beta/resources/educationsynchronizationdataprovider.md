@@ -4,12 +4,12 @@ description: 'ソース SIS スキーマを表します。 これにより、シ
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f592e75a3a6df1728839494ee41ac28065450d60
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c48e8d18191172be25046d8b1d60c0765c5187
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507040"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334035"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>educationSynchronizationDataProvider リソースの種類
 
@@ -29,11 +29,3 @@ ms.locfileid: "32507040"
 ## <a name="properties"></a>プロパティ
 
 この種類のプロパティは公開されません。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsynchronizationdataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

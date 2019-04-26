@@ -158,7 +158,7 @@ items:
               - name: 所属を一覧表示する
                 href: api/user-list-memberof.md
           - name: 分析情報
-            href: resources/insights.md
+            href: resources/officegraphinsights.md
             items:
               - name: 人気上昇中を一覧表示する
                 href: api/insights-list-trending.md
@@ -773,7 +773,7 @@ items:
           - name: 予約可能なビジネス
             href: resources/bookingbusiness.md
             items:
-              - name: リスト
+              - name: List
                 href: api/bookingbusiness-list.md
               - name: 作成する
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -814,7 +814,7 @@ items:
           - name: 予約可能な顧客
             href: resources/bookingcustomer.md
             items:
-              - name: リスト
+              - name: List
                 href: api/bookingbusiness-list-customers.md
               - name: 作成する
                 href: api/bookingbusiness-post-customers.md
@@ -827,7 +827,7 @@ items:
           - name: 予約可能なサービス
             href: resources/bookingservice.md
             items:
-              - name: リスト
+              - name: List
                 href: api/bookingbusiness-list-services.md
               - name: 作成する
                 href: api/bookingbusiness-post-services.md
@@ -840,7 +840,7 @@ items:
           - name: 予約可能なスタッフ メンバー
             href: resources/bookingstaffmember.md
             items:
-              - name: リスト
+              - name: List
                 href: api/bookingbusiness-list-staffmembers.md
               - name: 作成する
                 href: api/bookingbusiness-post-staffmembers.md
@@ -7429,7 +7429,7 @@ items:
               - name: ビジネス フロー テンプレート
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: リスト
+                  - name: List
                     href: api/businessflowtemplate-list.md
               - name: プログラム
                 href: resources/program.md
@@ -7438,7 +7438,7 @@ items:
                     href: api/program-create.md
                   - name: 削除
                     href: api/program-delete.md
-                  - name: リスト
+                  - name: List
                     href: api/program-list.md
                   - name: 更新
                     href: api/program-update.md
@@ -7451,7 +7451,7 @@ items:
                     href: api/programcontrol-create.md
                   - name: 削除
                     href: api/programcontrol-delete.md
-                  - name: リスト
+                  - name: List
                     href: api/programcontrol-list.md
               - name: プログラムのコントロールの種類
                 href: resources/programcontroltype.md
@@ -7700,13 +7700,13 @@ items:
           - name: 信頼フレームワークポリシー
             href: resources/trustframeworkpolicy.md
             items:
-              - name: リスト
+              - name: List
                 href: api/trustframework-list-trustframeworkpolicies.md
               - name: 作成
                 href: api/trustframework-post-trustframeworkpolicy.md
               - name: 取得
                 href: api/trustframeworkpolicy-get.md
-              - name: Upate
+              - name: 更新
                 href: api/trustframework-put-trustframeworkpolicy.md
               - name: 削除
                 href: api/trustframeworkpolicy-delete.md
@@ -7719,7 +7719,7 @@ items:
                 href: api/identityprovider-post-identityproviders.md
               - name: ID プロバイダーを取得する
                 href: api/identityprovider-get.md
-              - name: ID プロバイダーを更新する
+              - name: id プロバイダーを更新する
                 href: api/identityprovider-update.md
               - name: ID プロバイダーを削除する
                 href: api/identityprovider-delete.md
@@ -8152,7 +8152,7 @@ items:
         href: resources/onenote-api-overview.md
         displayName: OneNote
         items:
-          - name: 備考
+          - name: ノート
             href: resources/onenote.md
             items:
               - name: ノートブックを一覧表示する
@@ -8191,7 +8191,7 @@ items:
               - name: セクション グループを作成する
                 href: api/notebook-post-sectiongroups.md
           - name: セクション
-            href: resources/section.md
+            href: resources/onenotesection.md
             items:
               - name: セクションを一覧表示する
                 href: api/onenote-list-sections.md
@@ -8221,7 +8221,7 @@ items:
               - name: セクションを作成する
                 href: api/sectiongroup-post-sections.md
           - name: ページ
-            href: resources/page.md
+            href: resources/onenotepage.md
             items:
               - name: ページを一覧表示する
                 href: api/onenote-list-pages.md
@@ -8236,7 +8236,7 @@ items:
               - name: セクションにコピーする
                 href: api/page-copytosection.md
           - name: リソース
-            href: resources/resource.md
+            href: resources/onenoteresource.md
             items:
               - name: リソースを取得する
                 href: api/resource-get.md
@@ -8652,7 +8652,7 @@ items:
         href: resources/social-overview.md
         items:
           - name: 分析情報
-            href: resources/insights.md
+            href: resources/officegraphinsights.md
             items:
               - name: 人気上昇中
                 href: resources/insights-trending.md
@@ -8864,6 +8864,17 @@ items:
                 href: api/channel-post-chatmessage.md
               - name: メッセージに返信する
                 href: api/channel-post-messagereply.md
+          - name: チャット
+            href: resources/chat.md
+            items:
+              - name: チャットの一覧表示
+                href: api/chat-list.md
+              - name: チャットの取得
+                href: api/chat-get.md
+              - name: チャット内のメッセージを一覧表示する
+                href: api/chat-list-messages.md
+              - name: チャットでメッセージを取得する
+                href: api/chat-get-message.md
           - name: アプリ
             href: resources/teamsapp.md
             items:
@@ -9003,7 +9014,7 @@ items:
           - name: Outlook タスク
             href: resources/outlooktask.md
             items:
-              - name: リスト
+              - name: List
                 href: api/outlookuser-list-tasks.md
               - name: 作成する
                 href: api/outlookuser-post-tasks.md
@@ -9022,7 +9033,7 @@ items:
           - name: Outlook タスク フォルダー
             href: resources/outlooktaskfolder.md
             items:
-              - name: リスト
+              - name: List
                 href: api/outlookuser-list-taskfolders.md
               - name: 作成する
                 href: api/outlookuser-post-taskfolders.md
@@ -9116,7 +9127,7 @@ items:
               - name: 名前を一覧表示する
                 href: api/workbook-list-names.md
           - name: ワークシート
-            href: resources/worksheet.md
+            href: resources/workbookworksheet.md
             items:
               - name: ワークシートを追加する
                 href: api/worksheetcollection-add.md
@@ -9139,7 +9150,7 @@ items:
               - name: グラフを追加する
                 href: api/worksheet-post-charts.md
           - name: 範囲
-            href: resources/range.md
+            href: resources/workbookrange.md
             items:
               - name: 範囲を取得する
                 href: api/range-get.md
@@ -9160,7 +9171,7 @@ items:
               - name: 削除する
                 href: api/range-delete.md
           - name: テーブル
-            href: resources/table.md
+            href: resources/workbooktable.md
             items:
               - name: テーブルを追加する
                 href: api/tablecollection-add.md
@@ -9181,7 +9192,7 @@ items:
               - name: 範囲を取得する
                 href: api/table-range.md
           - name: グラフ
-            href: resources/chart.md
+            href: resources/workbookchart.md
             items:
               - name: グラフを一覧表示する
                 href: api/chart-list.md
@@ -9200,7 +9211,7 @@ items:
               - name: 位置データを設定する
                 href: api/chart-setposition.md
           - name: 名前付きアイテム
-            href: resources/nameditem.md
+            href: resources/workbooknameditem.md
             items:
               - name: 名前付きアイテムを一覧表示する
                 href: api/nameditem-get.md

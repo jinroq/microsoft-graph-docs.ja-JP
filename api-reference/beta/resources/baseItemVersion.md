@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 56a2c230c53c4b5bd50e8c123dd69eedec67a141
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 735931e757297bd9846396d6f6c42988d8cb87fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543863"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328245"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion リソースの種類
 
@@ -36,9 +36,9 @@ ms.locfileid: "32543863"
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用。                 |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 
 
@@ -49,8 +49,6 @@ ms.locfileid: "32543863"
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
   "tocPath": "Facets/Version",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/baseItemVersion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

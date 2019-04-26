@@ -1,13 +1,13 @@
 ---
 title: hostsecuritystate リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: d6f566a2bd42163c570fe837d2419057c62664bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 670a052fa3d63da0b78ba620dbc6530a8ab122dc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547411"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340306"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostsecuritystate リソースの種類
 
@@ -20,9 +20,9 @@ ms.locfileid: "32547411"
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |fqdn|String|ホストの FQDN (完全修飾ドメイン名) (たとえば、machine.company.com)。|
-|isAzureAadJoined|ブール値|ホストが Azure Active Directory ドメインサービスにドメインに参加している場合は True。|
-|isAzureAadRegistered|ブール値|ホストが Azure Active Directory デバイス登録 (byod devices、enterprise によって完全に管理されていない) に登録されている場合は、True。|
-|isHybridAzureDomainJoined|ブール値|ホストがオンプレミスの Active Directory ドメインに参加しているドメインである場合は True。|
+|isAzureAadJoined|Boolean|ホストが Azure Active Directory ドメインサービスにドメインに参加している場合は True。|
+|isAzureAadRegistered|Boolean|ホストが Azure Active Directory デバイス登録 (byod devices、enterprise によって完全に管理されていない) に登録されている場合は、True。|
+|isHybridAzureDomainJoined|Boolean|ホストがオンプレミスの Active Directory ドメインに参加しているドメインである場合は True。|
 |netBiosName|String|DNS ドメイン名を除いたローカルホスト名。|
 |hp-ux|String|ホストオペレーティングシステム。 (たとえば、Windows10、MacOS、RHEL など)。|
 |privateIpAddress|String|プライベート (ルーティング可能ではない) IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照) 通知時。|
@@ -65,8 +65,6 @@ ms.locfileid: "32547411"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/hostsecuritystate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

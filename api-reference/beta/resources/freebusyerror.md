@@ -2,15 +2,17 @@
 title: freeBusyError リソースの種類
 description: ユーザー、配布リスト、またはリソースの空き時間情報を取得しようとしたときに発生したエラー情報を表します。
 localization_priority: Normal
-ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb83c99cf52a562bc10244143785313fe3a6c149
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547500"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340177"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError リソースの種類
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ 
 ユーザー、配布リスト、またはリソースの空き時間情報を取得しようとしたときに発生したエラー情報を表します。
 
 ## <a name="properties"></a>プロパティ
@@ -48,6 +50,7 @@ ms.locfileid: "32547500"
   "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->

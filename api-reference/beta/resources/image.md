@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: イメージ
 localization_priority: Normal
-ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a817f5b91c71d186fde1ae1ea0600b9645fe8a66
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506332"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339995"
 ---
 # <a name="image-resource-type"></a>イメージ リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **イメージ** リソースは、イメージ関連のプロパティを 1 つの構造にグループ化します。[**DriveItem**](driveitem.md) に null 以外の**イメージ** ファセットがある場合は、アイテムはビットマップ イメージを表します。
 
@@ -41,10 +43,13 @@ OneDrive for Business では、このリソースは、ファイル拡張子に�
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image"
-} -->
+  "tocPath": "Facets/Image",
+  "suppressions": []
+}
+-->

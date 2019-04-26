@@ -2,12 +2,12 @@
 title: コネクタグループリソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: de405d2f0cbe0417271ab54e66c5c30073d8ee7f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5de46f480ff101e6d149bbfbe246ef47baff2604
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543393"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341202"
 ---
 # <a name="connectorgroup-resource-type"></a>コネクタグループリソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32543393"
 |[アプリケーションを一覧表示する](../api/connectorgroup-list-applications.md) |[アプリケーション](application.md)コレクション| 関連付けられているアプリケーションオブジェクトのコレクションを取得します。|
 |[コネクタを作成する](../api/connectorgroup-post-members.md) |[コネクター](connector.md)| members コレクションへの投稿によってコネクタをコネクタグループに追加します。|
 |[メンバーを一覧表示する](../api/connectorgroup-list-members.md) |[connector](connector.md)コレクション| コネクタオブジェクトのコレクションを取得します。|
-|[更新](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |コネクタグループオブジェクトを更新します。 |
+|[更新する](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |コネクタグループオブジェクトを更新します。 |
 |[削除](../api/connectorgroup-delete.md) | なし |コネクタグループオブジェクトを削除します。 conector グループを削除する前に、すべてのコネクタを削除する必要があります。 |
 
 ## <a name="properties"></a>プロパティ
@@ -36,7 +36,7 @@ ms.locfileid: "32543393"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|アプリケーション|[アプリケーション](application.md)コレクション| 読み取り専用。 Null 許容型。|
+|アプリケーション|[アプリケーション](application.md)コレクション| 読み取り専用です。 Null 許容型。|
 |members|[connector](connector.md)コレクション| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,6 +45,7 @@ ms.locfileid: "32543393"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -70,8 +71,6 @@ ms.locfileid: "32543393"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/connectorgroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

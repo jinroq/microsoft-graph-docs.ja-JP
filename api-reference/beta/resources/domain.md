@@ -4,12 +4,12 @@ description: テナントに関連付けられているドメインを表しま�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6b349920f0849ec18b0d5e70fda0bcb16c41e63c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07a8e54cbd66096c1923145031de336b3ebc8cfd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535258"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340699"
 ---
 # <a name="domain-resource-type"></a>ドメインリソースの種類
 
@@ -52,11 +52,11 @@ ms.locfileid: "32535258"
 |authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、active directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 null 許容ではない |
 |availabilityStatus|String| [verify](../api/domain-verify.md)アクションが使用される場合を除き、このプロパティは常に null になります。 [verify](../api/domain-verify.md)アクションを使用すると、応答で**ドメイン**エンティティが返されます。 応答内の**ドメイン**エンティティの**availabilityStatus**プロパティは、*すぐに*、または*EmailVerifiedDomainTakeoverScheduled*でもかまいません。|
 |id|String| ドメインの完全修飾名。 キー、不変、null 許容ではない、unique |
-|isadminmanaged|ブール値| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 null 許容ではない |
+|isadminmanaged|Boolean| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 null 許容ではない |
 |isDefault|ブール型 (Boolean)| これがユーザーの作成に使用される既定のドメインの場合は True。 会社ごとに既定のドメインが1つだけ存在します。 null 許容ではない |
 |isinitial|ブール値| True は、Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインの場合です。 会社ごとに1つの初期ドメインのみが存在します。 null 許容ではない |
-|isRoot|ブール値| ドメインが確認されたルートドメインの場合は True。 それ以外の場合は、ドメインがサブドメインまたは未確認の場合は false。 null 許容ではない |
-|isverified|ブール値| ドメインの所有権の確認が完了した場合は True。 null 許容ではない |
+|isRoot|Boolean| ドメインが確認されたルートドメインの場合は True。 それ以外の場合は、ドメインがサブドメインまたは未確認の場合は false。 null 許容ではない |
+|isverified|Boolean| ドメインの所有権の確認が完了した場合は True。 null 許容ではない |
 |passwordNotificationWindowInDays|Int32|ユーザーがパスワードの有効期限が切れると通知を受信するまでの日数を指定します。 このプロパティが設定されていない場合は、既定値の14日が使用されます。|
 |passwordValidityPeriodInDays|Int32| パスワードを変更するまでの有効期間を指定します。 このプロパティが設定されていない場合は、既定値の90日が使用されます。 |
 |supportedservices|String collection| ドメインに割り当てられている機能。<br><br>0、1または次の値を含めることができます。 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、 *sharepointpublic*、*orgidauthentication*、 *Yammer*、 *Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。 *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>null 許容ではない|

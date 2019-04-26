@@ -4,12 +4,12 @@ description: . 削除されたアイテムは、最大 30 日間、復元可能�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 22c5b959f87b6178fa406bc4fd5d00ad52e5cf55
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92235775143b3f8341724340e4ad301a40571adb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535244"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340876"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32535244"
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|id|String| オブジェクトの一意識別子 (例: 12345678-9abc-def0-1234-56789abcde)。 キー。 null 許容ではありません。 読み取り専用です。|
+|id|String| オブジェクトの一意識別子 (例: 12345678-9abc-def0-1234-56789abcde)。 キー。 null 許容型ではありません。 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
@@ -44,6 +44,7 @@ ms.locfileid: "32535244"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -65,8 +66,6 @@ ms.locfileid: "32535244"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

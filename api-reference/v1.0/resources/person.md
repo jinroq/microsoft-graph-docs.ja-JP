@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: c92709143ee7def0ede98dfdb81a419df43c4493
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462558"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "27940296"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |birthday|String|人物の誕生日。|
 |companyName|String|人物の会社名。|

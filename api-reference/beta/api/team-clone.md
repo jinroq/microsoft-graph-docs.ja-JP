@@ -4,12 +4,12 @@ description: チームのコピーを作成します。 この操作では、対
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1495e00e2332ce6b963e654b8f5d63b2882c778d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a78312d755befccff6e4b12cc0ba432e4754317
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536910"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330594"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成する
 
@@ -57,7 +57,7 @@ POST /teams/{id}/clone
 |:---------------|:--------|:----------|
 |classification|String (省略可能)|グループの分類 (低、中、高のビジネスへの影響など) を記述します。 このプロパティの有効な値は、[テンプレート定義](../resources/directorysettingtemplate.md)に基づいて ClassificationList[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類が指定されていない場合は、元のチーム/グループから分類がコピーされます。|
 |description|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
-|displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
+|displayName|文字列|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合は、displayName から計算されます。 既知の問題: このプロパティは現在無視されています。|
 |partstoclone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
@@ -110,8 +110,6 @@ Content-Length: 0
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/team-clone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

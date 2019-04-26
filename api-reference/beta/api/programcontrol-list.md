@@ -2,12 +2,12 @@
 title: programcontrols のリスト
 description: Azure AD access レビュー機能で、すべての programcontrol オブジェクトを、テナント内のすべてのプログラムで一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 52361e3878445d4f739fd0cd33817d5b254ddc03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bfc224c0897b9e9edba2114bac4d88e06ca0720d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546429"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332079"
 ---
 # <a name="list-programcontrols"></a>programcontrols のリスト
 
@@ -19,9 +19,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。 |
+|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol.   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | programcontrol. all、programcontrol.  |
+
+サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -93,8 +95,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

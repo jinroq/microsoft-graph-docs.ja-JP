@@ -4,12 +4,12 @@ description: mailsearchfolder オブジェクトの書き込み可能なプロ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c51410389d3ed12b8959f5b4d4c98f2fb66e5ad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540610"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338634"
 ---
 # <a name="update-mailsearchfolder"></a>mailsearchfolder を更新する
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | displayName | String | [mailfolder](../resources/mailfolder.md)の表示名。|
-| includeNestedFolders | ブール値 | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
+| includeNestedFolders | Boolean | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
 | sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
 | filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
 
@@ -110,8 +110,6 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

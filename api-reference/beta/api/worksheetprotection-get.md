@@ -1,21 +1,21 @@
 ---
-title: WorksheetProtection を取得する
-description: worksheetprotection オブジェクトのプロパティと関係を取得します。
+title: workbookWorksheetProtection を取得する
+description: workbookworksheetprotection オブジェクトのプロパティとリレーションシップを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c3de9aa039b824cff5e5e746c599452b6cfed79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 342864453e60e66f1485a052ab225249a5a1380f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535740"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339357"
 ---
-# <a name="get-worksheetprotection"></a>WorksheetProtection を取得する
+# <a name="get-workbookworksheetprotection"></a>workbookWorksheetProtection を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-worksheetprotection オブジェクトのプロパティと関係を取得します。
+workbookWorksheetProtection オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -44,13 +44,13 @@ GET /workbook/worksheets/{id|name}/protection
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorksheetProtection](../resources/worksheetprotection.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookWorksheetProtection](../resources/workbookworksheetprotection.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "get_worksheetprotection"
+  "name": "get_workbookworksheetprotection"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -77,12 +77,10 @@ Content-length: 23
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get WorksheetProtection",
+  "description": "Get workbookWorksheetProtection",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

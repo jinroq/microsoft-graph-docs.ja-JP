@@ -1,19 +1,21 @@
 ---
 title: directReports を一覧表示する　
-description: ユーザーの直属の部下を取得します。このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
-localization_priority: Priority
+description: ユーザーの直属の部下を取得します。 このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a397e45675b245325d1a086e0b87117358514e15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571402"
 ---
 # <a name="list-directreports"></a>directReports を一覧表示する　
 
-ユーザーの直属の部下を取得します。このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ユーザーの直属の部下を取得します。 このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -50,7 +52,7 @@ GET /users/{id | userPrincipalName}/directReports
   "name": "get_directreports"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/directReports
+GET https://graph.microsoft.com/beta/me/directReports
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -76,10 +78,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,16 +2,18 @@
 title: 予定表を作成する
 description: この API を使用して、ユーザー用の新しい予定表を作成します。
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afbb37d9394f2c08c94c6c8f41c56431e6938831
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c70151dd4918a95bb5b3277ec074f8db40e003fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544129"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329902"
 ---
 # <a name="create-calendar"></a>予定表を作成する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、[ユーザー](../resources/user.md)用の新しい予定表を作成します。
 ## <a name="permissions"></a>アクセス許可
@@ -50,12 +52,13 @@ POST /users/{id | userPrincipalName}/calendars
   "name": "create_calendar_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendars
+POST https://graph.microsoft.com/beta/me/calendars
 Content-type: application/json
 
 {
   "name": "Volunteer"
 }
+
 ```
 要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
@@ -70,14 +73,18 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
-    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
     "id":"AAMkADJmMVAAA=",
     "name":"Volunteer",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
+    "isShared":false,
+    "isSharedWithMe":false,
     "canEdit":true,
     "owner":{
         "name":"Samantha Booth",
@@ -88,10 +95,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

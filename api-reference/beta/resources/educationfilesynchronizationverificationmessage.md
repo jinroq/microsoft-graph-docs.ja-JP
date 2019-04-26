@@ -4,12 +4,12 @@ description: CSV ベースの学校データプロファイルの同期を開始
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbf38f15fbe14112ef254c625a8747e57eb1cae4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507132"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340523"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage リソースの種類
 
@@ -21,7 +21,7 @@ CSV ベースの学校データプロファイルの[同期を開始](../api/edu
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **type** | string | メッセージの種類。 使用可能な値は、`error`、`warning`、`information` です。 | 
+| **type** | string | メッセージの種類。 可能な値は、`error`、`warning`、`information` です。 | 
 | **filename** | string | エラーを含むソースファイル。 |
 | **説明** | string | メッセージの種類に関する詳細情報。 |
 
@@ -42,11 +42,3 @@ CSV ベースの学校データプロファイルの[同期を開始](../api/edu
     "description": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationfilesynchronizationverificationmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

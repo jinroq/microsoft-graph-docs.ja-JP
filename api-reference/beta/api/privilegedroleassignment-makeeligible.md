@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: 役割の割り当てを対象として設定します。 呼び出し前に役割の割り当てが既に適用されている場合は、何も行われません。 役割の割り当てが永続的で、要求元がターゲットユーザーと異なる場合は、役割の割り当てが対象となり、その役割は対象ユーザーに対して無効になります。 リクエスターが対象ユーザーで、役割がセキュリティ管理者または特権の役割管理者である場合、役割は既定の有効期限を使用してアクティブ化されます。
 localization_priority: Normal
-ms.openlocfilehash: 54260da3f69819a1f7a351e072f8af851f0e3d3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d3e6e58119a7a757da65d08eeeb97247a78d714
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546599"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337146"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
@@ -87,8 +87,6 @@ Content-length: 184
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignment-makeeligible.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

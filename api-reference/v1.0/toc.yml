@@ -3188,7 +3188,7 @@ items:
                 href: api/identityprovider-post-identityproviders.md
               - name: ID プロバイダーを取得する
                 href: api/identityprovider-get.md
-              - name: ID プロバイダーを更新する
+              - name: id プロバイダーを更新する
                 href: api/identityprovider-update.md
               - name: ID プロバイダーを削除する
                 href: api/identityprovider-delete.md
@@ -3358,7 +3358,7 @@ items:
         href: resources/onenote-api-overview.md
         displayName: OneNote
         items:
-          - name: 備考
+          - name: ノート
             href: resources/onenote.md
             items:
               - name: ノートブックを一覧表示する

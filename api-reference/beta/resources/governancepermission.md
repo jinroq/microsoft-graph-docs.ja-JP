@@ -2,12 +2,12 @@
 title: governancePermission リソースの種類
 description: 'governanceSubject が特定の governanceResource に対して持つアクセス許可を表します。  '
 localization_priority: Normal
-ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f6be4bdc502f829b1dcfd991d1c2ae6130dea8a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547509"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340183"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission リソースの種類
 
@@ -20,13 +20,19 @@ ms.locfileid: "32547509"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accessLevel|String|アクセスレベル。 有効な値``None``は``UserRead``、 ``AdminRead``、、 ``AdminReadWrite``、です。|
-|isActive|ブール値|要求者がアクセスレベルに対してアクティブなロール割り当てを持っているかどうかを示します。|
-|isEligible|ブール値|要求者がアクセスレベルに対して適格な役割の割り当てを持っているかどうかを示します。|
+|isActive|Boolean|要求者がアクセスレベルに対してアクティブなロール割り当てを持っているかどうかを示します。|
+|isEligible|Boolean|要求者がアクセスレベルに対して適格な役割の割り当てを持っているかどうかを示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",
@@ -35,11 +41,3 @@ ms.locfileid: "32547509"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governancepermission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,14 +4,16 @@ description: licensedetails オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7dae02120f17dfbd329758734ba5fb912adfe0e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44402c4e673af2d1cce04e02ee7663f152d352e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547852"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329932"
 ---
 # <a name="list-licensedetails"></a>licenseDetails を一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 licensedetails オブジェクトの一覧を取得します。
 
@@ -30,7 +32,7 @@ licensedetails オブジェクトの一覧を取得します。
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、 [OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートし**ていません**。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -52,10 +54,10 @@ GET /users/{id}/licenseDetails
   "name": "get_licensedetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
+GET https://graph.microsoft.com/beta/me/licenseDetails
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +90,13 @@ Content-length: 389
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List licenseDetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

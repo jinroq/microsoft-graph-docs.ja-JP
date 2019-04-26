@@ -2,12 +2,12 @@
 title: '同期ジョブ: validateCredentials'
 description: テナントで資格情報が有効であることを検証します。
 localization_priority: Normal
-ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4be9317f753865fdb956e58566ec1302d1542de5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330090"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>同期ジョブ: validateCredentials
 
@@ -40,7 +40,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|の場合は、資格情報|ブール値|の`true`場合、 `credentials`パラメーターは無視され、以前に保存された資格情報 (ある場合) が代わりに検証されます。 |
+|の場合は、資格情報|Boolean|の`true`場合、 `credentials`パラメーターは無視され、以前に保存された資格情報 (ある場合) が代わりに検証されます。 |
 |クリデンシャル|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)コレクション|検証する資格情報。 `useSavedCredentials`パラメーターがの場合は`true`無視されます。|
 
 ## <a name="response"></a>応答
@@ -87,8 +87,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

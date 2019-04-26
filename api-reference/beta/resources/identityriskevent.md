@@ -4,12 +4,12 @@ description: Azure Active Directory id 保護によって検出されたリス�
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: b5c36ab898805c0638cc199ff8cfb893444f04ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 654b6380120c0584045d3267bddffb9db88a39aa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506401"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340004"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "32506401"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
 |riskEventStatus|string| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
 |riskLevel|string| 使用可能な値: `low`、`medium`、`high`。|
@@ -59,6 +59,7 @@ ms.locfileid: "32506401"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -76,7 +77,8 @@ ms.locfileid: "32506401"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -90,8 +92,6 @@ ms.locfileid: "32506401"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identityriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

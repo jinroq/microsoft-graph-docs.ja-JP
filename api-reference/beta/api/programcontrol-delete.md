@@ -2,12 +2,12 @@
 title: programcontrol の削除
 description: Azure AD access レビュー機能で、programcontrol オブジェクトを削除します。  これにより、プログラムからのアクセスレビューがリンク解除します。
 localization_priority: Normal
-ms.openlocfilehash: 7510dfe80f758a75f190402d3ae426138e60bbed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c0c0e3b9323777db946e562d9c6ea6aa3b81e92f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538558"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337277"
 ---
 # <a name="delete-programcontrol"></a>programcontrol の削除
 
@@ -19,9 +19,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  また、サインインしているユーザーは、programcontrol を削除することを許可するディレクトリロールにある必要があります。 |
+|委任 (職場または学校のアカウント)     | programcontrol   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | programcontrol  |
+
+サインインしているユーザーは、を`programControl`削除することを許可するディレクトリロールにある必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ DELETE /programControls('<id>')
   "name": "delete_programControl"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/programControls('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
 ##### <a name="response"></a>応答
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
@@ -68,8 +70,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/programcontrol-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

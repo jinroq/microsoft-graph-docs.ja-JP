@@ -1,19 +1,19 @@
 ---
 title: plannerPlan リソースの種類
-description: '**PlannerPlan**リソースでは、Office 365 のプランを表します。 計画は、グループが所有することができ、plannerTasks のコレクションが含まれています。 PlannerBuckets のコレクションもあります。 各プラン オブジェクトには、計画の詳細を含めることができる詳細オブジェクトがあります。 グループ、計画、およびタスク間の関係の詳細については、プランナーを参照してください。'
+description: '**plannerPlan** リソースは、Office 365 での計画を表します。 計画は group によって所有され、plannerTasks のコレクションが含まれています。 plannerBuckets のコレクションを含む場合もあります。 各計画オブジェクトには details オブジェクトがあり、計画に関する詳細情報が含まれていることがあります。 グループ、計画、タスク間のリレーションシップの詳細については、「Planner」を参照してください。'
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462292"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan リソースの種類
 
-**plannerPlan** リソースは、Office 365 での計画を表します。計画は [group](group.md) によって所有され、[plannerTasks](plannertask.md) のコレクションが含まれています。[plannerBuckets](plannerbucket.md) のコレクションを含む場合もあります。各計画オブジェクトには [details](plannerplandetails.md) オブジェクトがあり、計画に関する詳細情報が含まれていることがあります。グループ、計画、タスク間のリレーションシップの詳細については、「[Planner](planner-overview.md)」を参照してください。
+**plannerPlan** リソースは、Office 365 での計画を表します。 計画は [group](group.md) によって所有され、[plannerTasks](plannertask.md) のコレクションが含まれています。 [plannerBuckets](plannerbucket.md) のコレクションを含む場合もあります。 各計画オブジェクトには [details](plannerplandetails.md) オブジェクトがあり、計画に関する詳細情報が含まれていることがあります。 グループ、計画、タスク間のリレーションシップの詳細については、「[Planner](planner-overview.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
@@ -28,17 +28,17 @@ ms.locfileid: "27987896"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|id|String| 読み取り専用です。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
-|owner|String|計画を所有する[グループ](group.md)の ID です。 このフィールドを設定する前に、有効なグループが存在する必要があります。 設定すると後、は、このプロパティを更新できません。|
-|タイトル|String|必須。計画のタイトル。|
-|createdBy|[identitySet](identityset.md)|読み取り専用です。計画を作成したユーザー。|
+|id|String| 読み取り専用です。 計画の ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](planner-identifiers-disclaimer.md)はサービスによって行われます。|
+|owner|String|計画を所有している [Group](group.md) の ID。 このフィールドを設定するためには、有効なグループが存在していなければなりません。 設定すると、このプロパティを更新することはできません。|
+|title|String|必須。 計画のタイトル。|
+|createdBy|[identitySet](identityset.md)|読み取り専用です。 計画を作成したユーザー。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるバケットのコレクション。|
-|詳細|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用です。Null 許容型。計画に関する追加の詳細。|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるタスクのコレクション。|
+|詳細|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用です。 Null 許容型。 計画に関する追加の詳細。|
+|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。 Null 許容型。 計画に含まれるタスクのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 

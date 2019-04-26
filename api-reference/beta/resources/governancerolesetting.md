@@ -2,12 +2,12 @@
 title: governanceRoleSetting リソースの種類
 description: " ルールなど。"
 localization_priority: Normal
-ms.openlocfilehash: a52769d4714608df11bdde826ca37907d7942e4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 09e8cb65f8318294d483a2ad66a7119d7b48822a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506320"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340227"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "32506320"
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロール設定のコレクションを一覧表示します。|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |役割設定のプロパティと関係を読み取ります。|
-|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |役割設定オブジェクトを更新します。 |
+|[更新する](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |役割設定オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 |プロパティ               |型                                      |説明|
@@ -49,6 +49,7 @@ ms.locfileid: "32506320"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -80,8 +81,6 @@ ms.locfileid: "32506320"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governancerolesetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

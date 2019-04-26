@@ -4,14 +4,16 @@ description: テナント内の特定のドメインの DNS ゾーンファイ�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a80bfd1caa755a7b4f27f29e1c34ec4295a52f33
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535026"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340701"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナント内の特定のドメインの DNS ゾーンファイルに追加される SRV レコードを表します。 [domaindnsrecord](domaindnsrecord.md)エンティティから継承されます。
 
@@ -22,13 +24,13 @@ ms.locfileid: "32535026"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| このエンティティに割り当てられている一意の識別子。 null 許容ではありません。読み取り専用です。|
-|isoptional|ブール値| false の場合、SRV レコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
+|isoptional|Boolean| false の場合、SRV レコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
 |label|String| DNS ホストで SRV レコードの*name*プロパティを構成する場合に使用される値です。 |
 |nametarget|String| DNS ホストで SRV レコードの*Target*プロパティを構成する場合に使用する値です。 |
 |ポート|Int32| DNS ホストで SRV レコードの*port*プロパティを構成する場合に使用する値です。 |
 |priority|Int32| DNS ホストで SRV レコードの*priority*プロパティを構成する場合に使用する値です。 |
 |プロトコール|String| DNS ホストで SRV レコードの*protocol*プロパティを構成する場合に使用する値です。 |
-|recordType|String|  DNS レコードの種類。 値は常に*Srv*です。 キー |
+|recordType|String|  DNS レコードの種類。 値は常に*Srv*です。 Key |
 |service|String| DNS ホストで SRV レコードの*service*プロパティを構成する場合に使用する値です。 |
 |supportedservice|String| この SRV レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune* |
 |ttl|Int32| DNS ホストで SRV レコードの*タイムツーリブ (ttl)* プロパティを構成する場合に使用する値です。 null 許容ではない |
@@ -43,7 +45,6 @@ ms.locfileid: "32535026"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -52,6 +53,7 @@ ms.locfileid: "32535026"
 
 ```json
 {
+  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -70,10 +72,13 @@ ms.locfileid: "32535026"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

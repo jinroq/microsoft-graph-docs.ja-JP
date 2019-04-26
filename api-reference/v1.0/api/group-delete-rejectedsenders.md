@@ -1,18 +1,18 @@
 ---
 title: rejectedSender の削除
-description: rejectedSenders リストからユーザーまたはグループを削除します。
+description: 拒否された送信者の一覧からユーザーまたはグループを削除します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 58936ee410b63f43d9c0a9e8efcf3eb5a96e76ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63e34e39d25ea3e3cc4d352d7caf6a71c86a5a57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461137"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334486"
 ---
 # <a name="remove-rejectedsender"></a>rejectedSender の削除
-rejectedSenders リストからユーザーまたはグループを削除します。
+拒否された送信者の一覧からユーザーまたはグループを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

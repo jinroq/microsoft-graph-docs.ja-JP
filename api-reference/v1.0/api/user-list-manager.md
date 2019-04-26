@@ -1,19 +1,21 @@
 ---
 title: 上司を一覧表示する
-description: ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
-localization_priority: Priority
+description: ユーザーの上司を取得します。 ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ae243f0fa4c8212cecebedc39ebfc2d5713d5689
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571318"
 ---
 # <a name="list-manager"></a>上司を一覧表示する
 
-ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ユーザーの上司を取得します。 ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -45,21 +47,13 @@ GET /users/{id | userPrincipalName}/manager
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": false
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,10 +80,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

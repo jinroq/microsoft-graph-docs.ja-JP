@@ -4,12 +4,12 @@ description: 特定のユーザーに対する、iOS アプリの管理機能と
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d02e11762fcda5796d6073f6a7dcf995996869f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aeb1910655ad34a80fb8a57a458cbef7b4f0e9b9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563904"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341744"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration リソースの種類
 
@@ -62,7 +62,8 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.iosManagedAppRegistration"
+  "@odata.type": "microsoft.graph.iosManagedAppRegistration",
+  "baseType": "microsoft.graph.managedAppRegistration"
 }
 -->
 ``` json

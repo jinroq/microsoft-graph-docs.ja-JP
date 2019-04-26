@@ -1,19 +1,19 @@
 ---
-title: オペレーション リソースの種類
-description: 実行時間の長い操作のステータス。
+title: operation リソースの種類
+description: 長時間実行されている操作の状態。
 localization_priority: Normal
-ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e1e0f7a886d460bc378fdc75041e17b997897e2d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520187"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341785"
 ---
-# <a name="operation-resource-type"></a>オペレーション リソースの種類
+# <a name="operation-resource-type"></a>operation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-実行時間の長い操作のステータス。
+長時間実行されている操作の状態。
 
 ## <a name="methods"></a>メソッド
 
@@ -23,14 +23,14 @@ ms.locfileid: "29520187"
 
 | プロパティ           | 型            | 説明                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| createdDateTime    | DateTimeOffset  | 操作の開始時刻です。                                                |
-| id                 | String          | 操作 ID です。読み取り専用です。 サーバーを生成します。                                  |
-| lastActionDateTime | DateTimeOffset  | 操作の最後の操作の時間です。                                   |
+| createdDateTime    | DateTimeOffset  | 操作の開始時刻。                                                |
+| id                 | String          | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
+| lastactiondatetime | DateTimeOffset  | 操作の最後の操作の時刻。                                   |
 | status             | String          | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
-None
+なし
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -75,8 +75,6 @@ None
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

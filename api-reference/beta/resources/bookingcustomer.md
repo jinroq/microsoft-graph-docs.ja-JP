@@ -1,15 +1,15 @@
 ---
 title: bookingcustomer リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: cd4991b28f1dee0ba647a7f95b70817beffbef95
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f97f3d36599fe088f28176d001fecc701bb5e3ab
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543910"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339072"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingcustomer リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "32543910"
 |[顧客を一覧表示する](../api/bookingbusiness-list-customers.md) | [bookingcustomer](bookingcustomer.md)コレクション | **bookingcustomer**オブジェクトのリストを取得します。 |
 |[bookingcustomer の作成](../api/bookingbusiness-post-customers.md) | [bookingcustomer](bookingcustomer.md) | 新しい**bookcustomer**オブジェクトを作成します。 |
 |[bookingcustomer を取得する](../api/bookingcustomer-get.md) | [bookingcustomer](bookingcustomer.md) |**bookingcustomer**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新](../api/bookingcustomer-update.md) | [bookingcustomer](bookingcustomer.md) |**bookingcustomer**オブジェクトを更新します。 |
+|[更新する](../api/bookingcustomer-update.md) | [bookingcustomer](bookingcustomer.md) |**bookingcustomer**オブジェクトを更新します。 |
 |[削除](../api/bookingcustomer-delete.md) | なし |**bookingcustomer**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
@@ -33,7 +33,7 @@ ms.locfileid: "32543910"
 |:---------------|:--------|:----------|
 |displayName|String|顧客の名前。|
 |emailAddress|String|顧客の SMTP アドレス。|
-|id|String| 顧客の ID。 読み取り専用。|
+|id|String| 顧客の ID。 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -69,8 +69,6 @@ ms.locfileid: "32543910"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingcustomer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

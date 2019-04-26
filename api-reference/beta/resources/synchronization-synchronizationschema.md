@@ -2,12 +2,12 @@
 title: 同期スキーマリソースの種類
 description: 同期されるオブジェクトと、それらの同期方法を定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、属性マッピングの一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期するスコープフィルターを追加します。
 localization_priority: Normal
-ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fd43a028a7d94b6d4a7c1e5d3c47520bff507ec
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453850"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339874"
 ---
 # <a name="synchronizationschema-resource-type"></a>同期スキーマリソースの種類
 
@@ -34,8 +34,8 @@ ms.locfileid: "32453850"
 | メソッド        | 戻り値の型               | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[スキーマを取得する](../api/synchronization-synchronizationschema-get.md)    |[同期スキーマ](synchronization-synchronizationschema.md)   |**同期スキーマ**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[スキーマを更新する](../api/synchronization-synchronizationschema-update.md)    |None   |同期スキーマを更新します。 |
-|[スキーマの削除](../api/synchronization-synchronizationschema-delete.md)    |None   |カスタマイズしたスキーマを削除し、スキーマを既定の構成にリセットします。 |
+|[スキーマを更新する](../api/synchronization-synchronizationschema-update.md)    |なし   |同期スキーマを更新します。 |
+|[スキーマの削除](../api/synchronization-synchronizationschema-delete.md)    |なし   |カスタマイズしたスキーマを削除し、スキーマを既定の構成にリセットします。 |
 |[リストフィルター演算子](../api/synchronization-synchronizationschema-filteroperators.md)    |[filter演算子スキーマ](../resources/synchronization-filteroperatorschema.md)コレクション   |スコープフィルターでサポートされているすべての演算子を一覧表示します。 |
 |[リスト属性マッピング関数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション   |属性マッピング式でサポートされているすべての関数を一覧表示します。 |
 |[解析属性マッピング式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseexpression response](synchronization-parseexpressionresponse.md)|文字列式を解析し、[attributeMappingSource|(../resources/synchronization_attributemappingsource.md) オブジェクト。|
@@ -80,8 +80,6 @@ ms.locfileid: "32453850"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

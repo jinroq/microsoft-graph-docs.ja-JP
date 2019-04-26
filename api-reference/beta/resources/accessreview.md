@@ -4,12 +4,12 @@ description: 'Azure AD access レビュー機能では、は`accessReview`アク
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544112"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339378"
 ---
 # <a name="accessreview-resource-type"></a>accessreview リソースの種類
 
@@ -36,15 +36,6 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 |[accessreview の決定をリセットする](../api/accessreview-reset.md) |     なし。   |   進行中の accessreview で意思決定をリセットします。|
 |[accessreview の決定を適用する](../api/accessreview-apply.md) |     なし。   |   完了した accessreview から決定を適用します。|
 
-## <a name="permissions"></a>アクセス許可
-
-|アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview を参照してください。 |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
-
-
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
@@ -57,7 +48,7 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `businessFlowTemplateId`  |`String`                                                        | ビジネスフローテンプレートの識別子。 作成時に必要です。 |
 | `reviewerType`            |`String`                                                        | レビュー担当者の関係の種類 (ターゲットオブジェクト、また`self`は`delegated` `entityOwners`のいずれか)。 作成時に必要です。 | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | このレビューを作成したユーザー。 |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセスレビューでアクセス権の割り当てを確認しているオブジェクト。 これは、グループ内のユーザーのメンバーシップを確認したり、アプリケーションへのユーザーの割り当てを確認したりするためのグループであってもかまいません。 作成時に必要です。 | 
+| `reviewedEntity`          |[identity](identity.md)                                      | アクセスレビューでアクセス権の割り当てを確認しているオブジェクト。 これは、グループ内のユーザーのメンバーシップを確認したり、アプリケーションへのユーザーの割り当てを確認したりするためのグループであってもかまいません。 作成時に必要です。 | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | accessreview の設定については、以下の「型の定義」を参照してください。 |
 
 
@@ -88,6 +79,7 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -128,8 +120,6 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `autoApplyReviewResultsEnabled`|`Boolean` | 自動適用機能を使用して、ターゲットオブジェクトのアクセスリソースを自動的に変更するかどうかを示すフラグが有効になっていることを示します。  有効になっていない場合、ユーザーはレビューが完了した後、アクセスレビューを適用する必要があります。 |
 | `accessRecommendationsEnabled`|`Boolean` | レビュー担当者におすすめ候補を表示するかどうかを示すフラグ。 |
 
-
-
 ## <a name="the-autoreviewsettings-type"></a>autoreviewsettings の種類
 
 は`autoReviewSettings` 、アクセスレビューの設定内に埋め込まれ、アクセスレビューが完了したときの機能の動作を指定します。  この型には、 `notReviewedResult`1 つのプロパティがあります。
@@ -151,7 +141,6 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `recurrenceCount`|`Int32`    | 繰り返しの数 (の`recurrenceEndType`値が`occurrences`である場合)、そうでない場合は0。                                                        |
 
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -159,8 +148,6 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

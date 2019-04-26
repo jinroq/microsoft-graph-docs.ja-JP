@@ -2,12 +2,12 @@
 title: " controlscore リソースの種類"
 description: このリソースには、各コントロールのテナントのスコアと説明が含まれています。
 localization_priority: Normal
-ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34e94128ff3993a01d37770bea1ad046f936405f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543379"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341184"
 ---
 #  <a name="controlscore-resource-type"></a>controlscore リソースの種類
 
@@ -16,7 +16,7 @@ ms.locfileid: "32543379"
 |名前 |型 |説明 |
 |:--|:--|:--|
 |   controlName |   String  |   コントロールの一意の名前 |
-|   score   |   倍精度浮動小数点数  |  コントロールのテナントが獲得したスコア (コントロールのテナント操作に応じて日によって日付が変化します)。 |
+|   score   |   2 行分  |  コントロールのテナントが獲得したスコア (コントロールのテナント操作に応じて日によって日付が変化します)。 |
 |   controlcategory |   String  |  コントロールアクションカテゴリ (id、データ、デバイス、アプリ、インフラストラクチャ)。 |
 |   description |   String  |  コントロールの説明。 |
 
@@ -35,7 +35,7 @@ ms.locfileid: "32543379"
 ```json
 {
   "controlName": "String",
-  "score": "String",
+  "score": "Double",
   "controlCategory": "String",
   "description": "String"
 }

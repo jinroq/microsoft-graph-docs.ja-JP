@@ -4,12 +4,12 @@ description: 複数の要求ではなく1つの要求で複数の脅威インテ
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 82cdd0d9688e778982244a06a2a2e5d558d25807
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41c964f02e12d420c73e005fd0d669aecbd92d0f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537040"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335251"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiindicator: deleteTiIndicatorsByExternalId
 
@@ -62,7 +62,8 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_deletetiindicatorsbyexternalid"
+  "name": "tiindicator_deletetiindicatorsbyexternalid",
+  "isCollection":"true"
 }-->
 
 ```http
@@ -94,6 +95,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

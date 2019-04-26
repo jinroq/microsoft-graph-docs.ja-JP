@@ -4,12 +4,12 @@ description: 共有アイテムのプロパティを含む複合型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8718ab248dada75f04d92d6a8717dd4f43ee8106
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549574"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333597"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -20,6 +20,12 @@ ms.locfileid: "32549574"
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",
@@ -35,11 +41,3 @@ ms.locfileid: "32549574"
 | displayName       | String          | アイテムを共有したユーザーの表示名。 |
 | id              | String        | アイテムを共有したユーザーの id。     |
 | address             | String      | アイテムを共有したユーザーの電子メールアドレス。  |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

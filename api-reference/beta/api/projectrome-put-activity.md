@@ -3,12 +3,12 @@ title: アクティビティを作成または置換する
 description: アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、deep insert を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 497b0e0bf4e236065dc6b44c44e80d99b22a5dc4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538485"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337284"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 

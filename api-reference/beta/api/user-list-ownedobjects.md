@@ -4,14 +4,16 @@ description: ユーザーが所有しているディレクトリ オブジェク
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9436b1aa225885f007268e72cb35f83810db835c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32cf8a9e9583fbf1741e372a1638464e8b756821
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547810"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329852"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーが所有しているディレクトリ オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -50,7 +52,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
   "name": "get_ownedobjects"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/ownedObjects
+GET https://graph.microsoft.com/beta/me/ownedObjects
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -76,10 +78,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List ownedObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

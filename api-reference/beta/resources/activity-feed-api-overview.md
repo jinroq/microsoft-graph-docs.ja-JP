@@ -3,12 +3,12 @@ title: アクティビティフィード REST API を使用する
 description: 'Microsoft Graph のアクティビティフィード API を使用して、デバイスとプラットフォーム間でユーザーのアクティビティを再開できます。 アクティビティフィード API 要求は、委任されたアクセス許可とユーザーアクティビティのアクセス許可を使用してユーザーの代理として実行されます。これは、個人用アカウントまたは職場アカウントまたは学校アカウントで使用できます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12f4160a551895c4042a0e8577e28e73692b4265
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535809"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339100"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティフィード REST API を使用する
 
@@ -72,11 +72,3 @@ Each activity represents a unique...
 
 - [Microsoft エクスペリエンスがアクティビティをどのように使用しているかを](https://channel9.msdn.com/events/Build/2017/B8108)確認します。
 - [アクティビティフィード API](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)について説明し、中断した場所を選択します。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

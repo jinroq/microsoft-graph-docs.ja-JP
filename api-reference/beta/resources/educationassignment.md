@@ -4,12 +4,12 @@ description: '**educationAssignment**リソースは、クラス内の学生ま�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9722a5eec59431b4c4c8bbf7dfc9ebfc39d4a459
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543048"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334538"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "32543048"
 |[カテゴリの一覧表示](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md)コレクション| **educationCategory**オブジェクトのコレクションを取得します。|
 |[カテゴリを追加する](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | クラスに属する**educationCategory**をこの割り当てに割り当てます。|
 |[カテゴリを削除する](../api/educationassignment-remove-category.md) |なし| クラスに属する**educationCategory**をこの割り当てから削除します。|
-|[更新](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**educationAssignment**オブジェクトを更新します。 |
+|[更新する](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**educationAssignment**オブジェクトを更新します。 |
 |[削除](../api/educationassignment-delete.md) | なし |**educationAssignment**オブジェクトを削除します。 |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|**educationAssignment**オブジェクトの状態を下書きから発行済みに変更します。|
 |[リソース フォルダーの URL を取得する](../api/educationassignment-getresourcesfolderurl.md)| string| 割り当てリソースの一部として、ファイルベースのリソースが配置される OneDrive フォルダーです。 ファイルをリソースとして追加するには、このフォルダーに配置する必要があります。|
@@ -41,8 +41,8 @@ ms.locfileid: "32543048"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。|
-|allowLateSubmissions|ブール値| 学生が期日を過ぎて送信できるかどうかを指定します。 このプロパティが作成時に指定されていない場合、既定値は true になります。 |
-|allowStudentsToAddResourcesToSubmission|ブール値| 学生が自分のリソースを提出することができるかどうか、または教師が追加したリソースのみを変更できるかどうかを識別します。 |
+|allowLateSubmissions|Boolean| 学生が期日を過ぎて送信できるかどうかを指定します。 このプロパティが作成時に指定されていない場合、既定値は true になります。 |
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生が自分のリソースを提出することができるかどうか、または教師が追加したリソースのみを変更できるかどうかを識別します。 |
 |割り当ての datetime|DateTimeOffset|割り当てがアクティブになる日付を指定します。  今後、この日まで学生に割り当てが表示されることはありません。  **Timestamp**型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |への割り当て|[educationAssignmentRecipient](educationassignmentrecipient.md)| 割り当てが発行されると、どのユーザーまたはクラス全体が送信オブジェクトを受け取るかを指定します。 |
 |assignedDateTime|DateTimeOffset|割り当てが学生に公開され、課題が生徒のタイムラインに表示されます。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -61,8 +61,8 @@ ms.locfileid: "32543048"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |リソース|[educationAssignmentResource](educationassignmentresource.md)コレクション| この割り当てに関連付けられているオブジェクトを学習します。  このリストは教師のみが変更できます。 Null 許容型。|
-|投稿|[educationSubmission](educationsubmission.md)コレクション| 発行された後に、各学生の仕事と成績を表す送信オブジェクトがあります。  読み取り専用。 Null 許容型。|
-|categories|[educationCategory](educationcategory.md)コレクション| 設定されている場合、ユーザーは特定の種類の割り当てを簡単に見つけることができます。  読み取り専用。 Null 許容型。|
+|投稿|[educationSubmission](educationsubmission.md)コレクション| 発行された後に、各学生の仕事と成績を表す送信オブジェクトがあります。  読み取り専用です。 Null 許容型。|
+|categories|[educationCategory](educationcategory.md)コレクション| 設定されている場合、ユーザーは特定の種類の割り当てを簡単に見つけることができます。  読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -70,6 +70,7 @@ ms.locfileid: "32543048"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -106,8 +107,6 @@ ms.locfileid: "32543048"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

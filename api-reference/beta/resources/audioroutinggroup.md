@@ -4,12 +4,12 @@ description: 音声ルーティンググループでは、複数の参加者の�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544002"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328253"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -24,17 +24,17 @@ ms.locfileid: "32544002"
 | メソッド                                                  | 戻り値の型                               | 説明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [audioRoutingGroup を取得する](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | audioRoutingGroup オブジェクトのプロパティとリレーションシップを読み取ります。|
-| [更新](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者の一覧を更新します。                       |
-| [削除](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオルーティンググループを削除します。              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者の一覧を更新します。                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオルーティンググループを削除します。              |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | 読み取り専用です。 サーバーによって生成されます。                                         |
-| 配信     | String コレクション | 受信側参加者 id のリスト。                                   |
-| routingmode   | String            | ルーティンググループモード。  可能な値は、`oneToOne`、`multicast` です。   |
-| sources       | String コレクション | ソース参加者 id のリスト。                                      |
+| id            | string            | 読み取り専用です。 サーバーによって生成されます。                                         |
+| 配信     | collection(string) | 受信側参加者 id のリスト。                                   |
+| routingmode   | string            | ルーティンググループモード。  可能な値は、`oneToOne`、`multicast` です。   |
+| sources       | collection(string) | ソース参加者 id のリスト。                                      |
 
 > **注:** ルーティングモードは、送信元と受信者に対する制限を決定します。 次のルーティンググループのみがサポートされています。
 > - `oneToOne`-ソースと受信者には、それぞれ1人の参加者のみが含まれます。
@@ -58,10 +58,10 @@ ms.locfileid: "32544002"
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,8 +73,6 @@ ms.locfileid: "32544002"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

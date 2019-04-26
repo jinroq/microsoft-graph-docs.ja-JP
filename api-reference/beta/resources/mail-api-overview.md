@@ -4,12 +4,12 @@ description: Microsoft Graph を使用すると、アプリは個人または組
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6f5d084aa64424500a311577631fa232e8ddf523
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a42b1508ab022bfd530b9338dc8049c65f478727
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519683"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463797"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Outlook メール REST API を使用する
 
@@ -47,6 +47,7 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 | メッセージを下書き、読み取り、返信、転送、送信、更新、削除する | [message](../resources/message.md) | [message のメソッド](../resources/message.md#methods) |
 | メールボックス所有者の代理としてメッセージを送信するように別のユーザーに委任する | [message](../resources/message.md) | [メッセージ](../resources/message.md)の **from** プロパティと **sender** プロパティの設定 |
 | ユーザーがより重要なメッセージを最初に表示できるようにする | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [優先受信トレイ](../resources/manage-focused-inbox.md) |
+| メッセージまたはメッセージの添付ファイルの MIME コンテンツを取得する (プレビュー) | [message](../resources/message.md) | [MIME コンテンツを取得する](/graph/outlook-get-mime-message) |
 | メッセージの添付ファイルを追加、取得、削除する | [attachment](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [message](../resources/message.md) | [添付ファイルのメソッド](../resources/attachment.md#methods) |
 | ユーザーの言語とタイムゾーンの選択肢を取得する | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | ユーザーの自動応答、ロケール、タイム ゾーン、就業時間を取得または更新する | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [ユーザーのメールボックスの設定を取得する](../api/user-get-mailboxsettings.md)、 <br> [ユーザーのメールボックスの設定を更新する](../api/user-update-mailboxsettings.md) |
@@ -75,11 +76,3 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 
 さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mail-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

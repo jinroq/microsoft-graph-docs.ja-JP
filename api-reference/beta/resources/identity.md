@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/14/2017
 title: ID
 localization_priority: Normal
-ms.openlocfilehash: 1f2d1f5a305698438748ee69f73b4143b8afd8fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2ba76d5bac372be0a40001028dfb54e690a14fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547387"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333672"
 ---
 # <a name="identity-resource-type"></a>id リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "32547387"
 
 | プロパティ            | 型   | 説明                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。  |
+| displayName         | 文字列 | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。  |
 | id                  | String | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
 | tenantId            | String | テナントの一意の id (オプション)。                                                                                                                                                                                                                                                                             |
 
@@ -51,8 +51,6 @@ ms.locfileid: "32547387"
   "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
   "tocPath": "Resources/Identity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

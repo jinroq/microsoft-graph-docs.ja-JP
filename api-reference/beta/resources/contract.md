@@ -4,14 +4,17 @@ description: パートナーテナントと顧客テナントの間に存在す�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6309dfc370d414ccb66065fe4048d7cece51f018
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8da7c20705796cdb612ad1a24c4d03ce160447
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535432"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341213"
 ---
 # <a name="contract-resource-type"></a>Contract リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
 
 > **重要:** パートナーテナントのみに存在します。 パートナーテナントは、microsoft の[クラウドソリューションプロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 シンジケート、または microsoft Advisor パートナープログラムの一部である microsoft パートナーに属する Azure AD テナントです。
@@ -39,13 +42,12 @@ ms.locfileid: "32535432"
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
-  "@odata.type": "microsoft.graph.contract"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.Contract"
 }-->
 
 ```json
@@ -61,10 +63,13 @@ ms.locfileid: "32535432"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Contract resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

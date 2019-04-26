@@ -2,12 +2,12 @@
 title: attachment リソース型
 description: 関連するコンテンツをイベントに追加できます。
 localization_priority: Normal
-ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5cd02b665e9491ab4cf4b6046571273d88fee7e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535582"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339048"
 ---
 # <a name="attachment-resource-type"></a>attachment リソース型
 
@@ -46,7 +46,7 @@ ms.locfileid: "32535582"
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
 |id|String| 読み取り専用です。|
-|isInline|ブール値|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
+|isInline|Boolean|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |name|String|添付ファイルの表示名。実際のファイル名である必要はありません。|
 |size|Int32|添付ファイルの長さ (バイト単位)。|
@@ -89,8 +89,6 @@ ms.locfileid: "32535582"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/attachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

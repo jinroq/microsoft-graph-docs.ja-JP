@@ -1,25 +1,73 @@
 ---
 title: 列挙値
 description: Microsoft Graph 列挙値
-ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7394ee9dbfa70e7cda1269c8f61d3b77d92e8094
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542805"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340162"
 ---
 ### <a name="contactrelationship-values"></a>contactrelationship 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |親行|.0|ユーザーの親。|
-|合わせる|1 | ユーザーの相対パス。|
-|aide|2 | ユーザーの aide。|
-|診察|3 | ユーザーの医師。|
-|守護|4 | ユーザーのガーディアン。|
-|子供|5 | ユーザーの子。|
-|も|6 | ユーザーとの特定されていない関係。|
-|unknownfuturevalue という|7 | 将来の互換性のためのマーカー値。|
+|合わせる|1-d| ユーザーの相対パス。|
+|aide|pbm-2| ユーザーの aide。|
+|診察|1/3| ユーザーの医師。|
+|守護|2/4| ユーザーのガーディアン。|
+|子供|5| ユーザーの子。|
+|も|シックス| ユーザーとの特定されていない関係。|
+|unknownfuturevalue という|7| 将来の互換性のためのマーカー値。|
+
+
+### <a name="scheduleentitytheme-values"></a>scheduleentitytheme の値
+
+| 値
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| 灰色
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownfuturevalue という
+
+
+### <a name="timeoffreasonicontype-values"></a>timeoff理由 icontype 値
+
+|Member|
+|:---|
+|none|
+|故障|
+|予定表|
+|起動|
+|平面|
+|の方法 id|
+|診察|
+|notworking|
+|レコーダー|
+|juryDuty|
+|世界中|
+|カップ|
+|phone|
+|天気予報|
+|付|
+|piggyBank|
+|エサ|
+|ケーキ|
+|trafficCone|
+|pin|
+|晴れ|
+|unknownfuturevalue という|
+
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard の値
 
@@ -34,10 +82,10 @@ ms.locfileid: "32542805"
 | メンバー            |値
 |:------------------|:-------
 | 増やし              | .0
-| 一時的         | 1 
-| 多忙              | 2 
-| oof               | 3 
-| workingElsewhere  | 4 
+| 一時的         | 1-d
+| 多忙              | pbm-2
+| oof               | 1/3
+| workingElsewhere  | 2/4
 | 不明           | -1
 
 
@@ -64,7 +112,7 @@ ms.locfileid: "32542805"
 
 | 値
 |:-------------------------
-| なし
+| none
 | contactsOnly
 | すべての
 
@@ -84,27 +132,27 @@ ms.locfileid: "32542805"
 |:-----------|:----------
 | 自動       | -1
 | ライトブルー  | .0
-| ライトグリーン | 1 
-| ライトオレンジ| 2 
-| ライトグレー  | 3 
-| ライト黄| 4 
-| ライト青緑  | 5 
-| ライトピンク  | 6 
-| ライトブラウン | 7 
-| ライトレッド   | 8 
-| maxcolor   | 9 
+| ライトグリーン | 1-d
+| ライトオレンジ| pbm-2
+| ライトグレー  | 1/3
+| ライト黄| 2/4
+| ライト青緑  | 5
+| ライトピンク  | シックス
+| ライトブラウン | 7
+| ライトレッド   | ~
+| maxcolor   | i-9
 
 
 ### <a name="educationsynchronizationprofilestate-values"></a>educationSynchronizationProfileState の値
 
 | メンバー     | 値
 |:-----------|:----------
-| と          | 2 
-| deletionFailed    | 3 
-| プロビジョニングが失敗しました | 5 
-| 準備済み        | 6 
-| プロビジョン       | 7 
-| unknownfuturevalue という | 8 
+| と          | pbm-2
+| deletionFailed    | 1/3
+| プロビジョニングが失敗しました | 5
+| 準備済み        | シックス
+| プロビジョン       | 7
+| unknownfuturevalue という | ~
 
 
 ### <a name="educationsynchronizationstatus-values"></a>educationSynchronizationStatus の値
@@ -112,12 +160,12 @@ ms.locfileid: "32542805"
 | メンバー     | 値
 |:-----------|:----------
 | れ          | .0
-| inProgress    | 1 
-| success | 2 
-| error        | 3 
-| validationerror | 4 
-| 隔離       | 5 
-| unknownfuturevalue という | 6 
+| inProgress    | 1-d
+| success | pbm-2
+| error        | 1/3
+| validationerror | 2/4
+| 隔離       | 5
+| unknownfuturevalue という | シックス
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource の値
 
@@ -172,7 +220,7 @@ ms.locfileid: "32542805"
 |:---------------------
 | student
 | teacher
-| なし
+| none
 | unknownfuturevalue という
 
 
@@ -180,7 +228,7 @@ ms.locfileid: "32542805"
 
 | 値
 |:-----------------
-| なし
+| none
 | meetingRequest
 | 中止
 | 承諾
@@ -212,7 +260,7 @@ ms.locfileid: "32542805"
 | devicedefault
 | 尺
 | ポップアップ
-| なし
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason の値
 
@@ -286,8 +334,8 @@ ms.locfileid: "32542805"
 | メンバー      | 値
 |:------------|:------------
 | Owner       | .0
-| 共同作成者 | 1 
-| Reader      | 2 
+| 共同作成者 | 1-d
+| Reader      | pbm-2
 | なし        | -1
 
 
@@ -414,7 +462,7 @@ ms.locfileid: "32542805"
 
 | 値
 |:-------------------------
-| なし
+| none
 | organizer
 | tentativelyAccepted
 | 受け
@@ -447,17 +495,17 @@ ms.locfileid: "32542805"
 
 | メンバー   |値    
 |:---------|:--------
-| なし     | -1      
+| none     | -1      
 | preset0  | .0       
-| preset1  | 1        
-| preset2  | 2        
-| preset3  | 3        
-| preset4  | 4        
-| preset5  | 5        
-| preset6  | 6        
-| preset7  | 7        
-| preset8  | 8        
-| preset9  | 9        
+| preset1  | 1-d       
+| preset2  | pbm-2       
+| preset3  | 1/3       
+| preset4  | 2/4       
+| preset5  | 5       
+| preset6  | シックス       
+| preset7  | 7       
+| preset8  | ~       
+| preset9  | i-9       
 | preset10 | 10        
 | preset11 | 11       
 | preset12 | 12       
@@ -481,41 +529,41 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|わかり.|
-|truePositive|1 |Alert は true-正の数値です。|
-|falsePositive|2 | 警告は誤検知です-正数。|
-|benignPositive|3 | 通知は害のない-正。|
+|truePositive|1-d|Alert は true-正の数値です。|
+|falsePositive|pbm-2| 警告は誤検知です-正数。|
+|benignPositive|1/3| 通知は害のない-正。|
 
 ### <a name="filehashtype-values"></a>filehashtype の値
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な種類です。|
-|sha1|1 |SHA1 ハッシュの種類。|
-|sha256|2 | SHA256 ハッシュの種類。|
-|md5|3 | MD5 ハッシュ型。|
-|authenticodeHash256|4 | AuthenticodeHash256 ハッシュの種類。|
-|lsHash|5 | LsHash ハッシュの種類。|
-|ctph|6 | ctph ハッシュの種類。|
-|peSha1|7 | PESHA1 ハッシュの種類。|
-|peSha256|8 | PESHA256 ハッシュの種類。|
+|sha1|1-d|SHA1 ハッシュの種類。|
+|sha256|pbm-2| SHA256 ハッシュの種類。|
+|md5|1/3| MD5 ハッシュ型。|
+|authenticodeHash256|2/4| AuthenticodeHash256 ハッシュの種類。|
+|lsHash|5| LsHash ハッシュの種類。|
+|ctph|シックス| ctph ハッシュの種類。|
+|peSha1|7| PESHA1 ハッシュの種類。|
+|peSha256|~| PESHA256 ハッシュの種類。|
 
 ### <a name="connectiondirection-values"></a>connectiondirection 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な接続。|
-|受信|1 |受信接続。|
-|向き|2 | 送信接続。|
+|受信|1-d|受信接続。|
+|向き|pbm-2| 送信接続。|
 
 ### <a name="connectionstatus-values"></a>connectionstatus の値
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|接続状態が不明です。|
-|しよう|1 |接続を試行しました。|
-|失敗|2 | 接続に成功しました。|
-|ブロック|3 | 接続がブロックされました。|
-|フェール|4 | 接続に失敗しました。|
+|しよう|1-d|接続を試行しました。|
+|失敗|pbm-2| 接続に成功しました。|
+|ブロック|1/3| 接続がブロックされました。|
+|フェール|2/4| 接続に失敗しました。|
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel の値
 
@@ -535,12 +583,12 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明なハイブです。|
-|currentconfig|1 |HKEY_CURRENT_CONFIG ハイブ。|
-|currentUser|2 | HKEY_CURRENT_USER ハイブ。|
-|localmachinesam|3 | HKEY_LOCAL_MACHINE\SAM ハイブ。|
-|localmachinesamsoftware|4 | HKEY_LOCAL_MACHINE\Software ハイブ。|
-|localMachineSystem|5 | HKEY_LOCAL_MACHINE\System ハイブ。|
-|ユーザー既定|6 | HKEY_USERS\\既定のハイブ。|
+|currentconfig|1-d|HKEY_CURRENT_CONFIG ハイブ。|
+|currentUser|pbm-2| HKEY_CURRENT_USER ハイブ。|
+|localmachinesam|1/3| HKEY_LOCAL_MACHINE\SAM ハイブ。|
+|localmachinesamsoftware|2/4| HKEY_LOCAL_MACHINE\Software ハイブ。|
+|localMachineSystem|5| HKEY_LOCAL_MACHINE\System ハイブ。|
+|ユーザー既定|シックス| HKEY_USERS\\既定のハイブ。|
 
 ### <a name="registryoperation-values"></a>registryoperation の値
 
@@ -549,9 +597,9 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明なレジストリ値の種類です。|
-|create|1 |レジストリを作成します。|
-|modify|2 |レジストリを変更します。|
-|delete|3 |レジストリを削除します。|
+|create|1-d|レジストリを作成します。|
+|modify|pbm-2|レジストリを変更します。|
+|delete|1/3|レジストリを削除します。|
 
 ### <a name="registryvaluetype-values"></a>registryvaluetype 値
 
@@ -560,15 +608,15 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明なレジストリ値の種類です。|
-|バイナリ|1 |REG_BINARY レジストリ値の種類。|
-|dword|2 | REG_DWORD のレジストリ値の種類。|
-|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN レジストリ値の種類。|
-|dて dbigエンディアン|4 | REG_DWORD_BIG_ENDIAN レジストリ値の種類。|
-|expandsz|5 | REG_EXPAND_SZ レジストリ値の種類。|
-|link|6 | REG_LINK レジストリ値の種類。|
-|multisz|7 | REG_MULTI_SZ レジストリ値の種類。|
-|なし|8 | REG_NONE レジストリ値の種類。|
-|qword|9 | REG_QWORD レジストリ値の種類。|
+|バイナリ|1-d|REG_BINARY レジストリ値の種類。|
+|dword|pbm-2| REG_DWORD のレジストリ値の種類。|
+|dwordLittleEndian|1/3| REG_DWORD_LITTLE_ENDIAN レジストリ値の種類。|
+|dて dbigエンディアン|2/4| REG_DWORD_BIG_ENDIAN レジストリ値の種類。|
+|expandsz|5| REG_EXPAND_SZ レジストリ値の種類。|
+|link|シックス| REG_LINK レジストリ値の種類。|
+|multisz|7| REG_MULTI_SZ レジストリ値の種類。|
+|none|~| REG_NONE レジストリ値の種類。|
+|qword|i-9| REG_QWORD レジストリ値の種類。|
 |qwordlittleEndian|10  | REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
 |sz|11 | REG_SZ レジストリ値の種類。|
 
@@ -579,10 +627,10 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|重要度が不明です。|
-|だけ|1 |重要度は情報のみです。|
-|低さ|2 | 重要度は低くなります。|
-|medium|3 | 重要度は中程度です。|
-|高額|4 | 重要度は high です。|
+|だけ|1-d|重要度は情報のみです。|
+|低さ|pbm-2| 重要度は低くなります。|
+|medium|1/3| 重要度は中程度です。|
+|高額|2/4| 重要度は high です。|
 
 ### <a name="alertstatus-values"></a>alertstatus の値
 
@@ -602,8 +650,8 @@ ms.locfileid: "32542805"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な役割。|
-|sender|1 |電子メールの送信者。|
-|受信者|2 |電子メールの受信者。|
+|sender|1-d|電子メールの送信者。|
+|受信者|pbm-2|電子メールの受信者。|
 
 ### <a name="logontype-values"></a>logontype の値
 
@@ -613,10 +661,10 @@ ms.locfileid: "32542805"
 |:---|:---|:---|
 |不明|-1|わかり.|
 |対話的|.0|ログオンは対話的です。|
-|remoteinteractive|1 | ログオンはリモート対話型です。|
-|lan|2 | ログオンはネットワークです。|
-|batch|3 | ログオンはバッチです。|
-|service|4 | ログオンはサービスです。|
+|remoteinteractive|1-d| ログオンはリモート対話型です。|
+|lan|pbm-2| ログオンはネットワークです。|
+|batch|1/3| ログオンはバッチです。|
+|service|2/4| ログオンはサービスです。|
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType の値
 
@@ -626,5 +674,137 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |:---|:---|:---|
 |不明|-1|わかり.|
 |standard|.0|標準ユーザーグループのメンバ。|
-|power|1 | Power Users グループのメンバー。|
-|者|2 | Administrators グループのメンバー。|
+|power|1-d| Power Users グループのメンバー。|
+|者|pbm-2| Administrators グループのメンバー。|
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType の値
+
+|Member|
+|:---|
+|すべての|
+|any|
+
+### <a name="risklevel-values"></a>riskLevel の値
+
+|Member|
+|:---|
+|低さ|
+|medium|
+|高額|
+|hidden|
+|none|
+|unknownfuturevalue という|
+
+### <a name="riskstate-values"></a>riskState の値
+
+|Member|
+|:---|
+|none|
+|confirmedSafe|
+|改善|
+|非|
+|atrisk|
+|confirmedCompromised|
+|unknownfuturevalue という|
+
+### <a name="riskdetail-values"></a>riskDetail の値
+
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|unknownfuturevalue という|
+
+### <a name="referenceattachmentpermission-values"></a>referenceattachmentpermission の値
+
+|Member|
+|:---|
+|も|
+|ビュー|
+|edit|
+|anonymousView|
+|anonymousEdit|
+|組織ビュー|
+|組織の編集|
+
+### <a name="referenceattachmentprovider-values"></a>referenceattachmentprovider の値
+
+|Member|
+|:---|
+|も|
+|onedrive business|
+|oneDriveConsumer|
+|dropbox|
+
+### <a name="riskeventtype-values"></a>riskEventType の値
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|最小資格情報|
+|investigationsThreatIntelligence|
+|汎用|
+|adminConfirmedUserCompromised|
+|mcasimtimed トラベル|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownfuturevalue という|
+
+### <a name="networktype-values"></a>networkType の値
+
+|Member|
+|:---|
+|イントラネット|
+|社外|
+|namednetwork|
+|提供|
+|unknownfuturevalue という|
+
+### <a name="exchangeidformat-values"></a>exchangeIdFormat の値
+
+|Member|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
+
+### <a name="attributeflowbehavior-values"></a>attributeflowbehavior の値
+
+|Member|
+|:---|
+|flowWhenChanged|
+|flowalways|
+
+### <a name="attributeflowtype-values"></a>attributeflowtype の値
+
+|Member|
+|:---|
+|いつも|
+|objectaddonly|
+|multivalueaddonly|
+|restId|
+
+### <a name="objectflowtypes-values"></a>objectflowtypes の値
+
+|メンバー| 値|
+|:---|:-------|
+|なし| .0      |
+|加算| 1-d       |
+|Update|pbm-2     |
+|Delete|2/4     |

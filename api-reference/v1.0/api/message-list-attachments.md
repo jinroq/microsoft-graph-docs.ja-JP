@@ -1,15 +1,15 @@
 ---
 title: 添付ファイルを一覧表示する
-description: メッセージに添付された添付ファイル オブジェクトのリストを取得します。
+description: メッセージに添付された添付フィル オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 2e37e863d4b050a07b756b91f1e98a4349239154
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463716"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
@@ -24,7 +24,8 @@ ms.locfileid: "27918122"
 |アプリケーション | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイルです。
+<!-- { "blockType": "ignored" } -->
+ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments

@@ -4,14 +4,16 @@ description: この API を使用して、ユーザーのメールボックス�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b5d439b6b91c697bac41224c028ac07e11412fc4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 186a80b8b3e380dc5db48897a1511dbe8f47a3e3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334631"
 ---
 # <a name="create-mailfolder"></a>MailFolder を作成する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、ユーザーのメールボックスのルート フォルダーに新しいメール フォルダーを作成します。
 ## <a name="permissions"></a>アクセス許可
@@ -54,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders
+POST https://graph.microsoft.com/beta/me/mailFolders
 Content-type: application/json
 Content-length: 159
 
@@ -87,10 +89,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create MailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

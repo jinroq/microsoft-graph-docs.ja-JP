@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共有アクセス許可の変更
 localization_priority: Normal
-ms.openlocfilehash: fceffc8cc530e1beec9062aea6552d1dcc825c1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 990f452e35a0674fa60e36cbbe771fbb97655583
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539114"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337867"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -108,8 +108,6 @@ Content-type: application/json
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Update permission",
-  "suppressions": [
-    "Error: /api-reference/beta/api/permission-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

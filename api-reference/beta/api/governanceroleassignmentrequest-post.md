@@ -2,12 +2,12 @@
 title: governanceRoleAssignmentRequest を作成する
 description: 役割の割り当てに対して必要な操作を表すための役割の割り当て要求を作成します。 次の表に、操作の一覧を示します。
 localization_priority: Normal
-ms.openlocfilehash: 104ab1a0d4909bc2181df70bc4fc895fc4558260
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b9b5f701f3f8ad283f589d07b250ce8ea63aa479
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503283"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329628"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>governanceRoleAssignmentRequest を作成する
 
@@ -191,7 +191,7 @@ Content-type: application/json
 | resourceId       | String                                                   | はい                      | \<resourceId\> |
 | roleDefinitionId | String                                                   | はい                      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | はい                      | \<subjectId\> |
-| 割り当ての状態  | String                                                   | はい                      | Active |
+| 割り当ての状態  | String                                                   | はい                      | アクティブ |
 | type             | String                                                   | はい                      | UserAdd |
 | したがっ           | String                                                   | 役割の設定によって異なる |   |
 | スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                      |   |
@@ -294,8 +294,8 @@ Content-type: application/json
 | resourceId       | String                                                   | はい      | \<resourceId\> |
 | roleDefinitionId | String                                                   | はい      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | はい      | \<subjectId\> |
-| 割り当ての状態  | String                                                   | はい      | Active |
-| type             | String                                                   | はい      | userremove |
+| 割り当ての状態  | String                                                   | はい      | アクティブ |
+| type             | 文字列                                                   | はい      | userremove |
 | したがっ           | String                                                   | いいえ       |   |
 | スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
 
@@ -361,11 +361,11 @@ Content-type: application/json
 
 | プロパティ         | 型                                                     | 必須 | 値 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | 文字列                                                   | はい      | \<resourceId\> |
+| resourceId       | String                                                   | はい      | \<resourceId\> |
 | roleDefinitionId | 文字列                                                   | はい      | \<roleDefinitionId\> |
 | subjectId        | 文字列                                                   | はい      | \<subjectId\> |
 | 割り当ての状態  | 文字列                                                   | はい      | 対象/アクティブ |
-| type             | String                                                   | はい      | adminremove |
+| type             | 文字列                                                   | はい      | adminremove |
 | したがっ           | String                                                   | いいえ       |   |
 | スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
 
@@ -429,11 +429,11 @@ Content-type: application/json
 
 | プロパティ         | 型                                                     | 必須                | 値 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | 文字列                                                   | はい                     | \<resourceId\> |
+| resourceId       | String                                                   | はい                     | \<resourceId\> |
 | roleDefinitionId | 文字列                                                   | はい                     | \<roleDefinitionId\> |
 | subjectId        | 文字列                                                   | はい                     | \<subjectId\> |
 | 割り当ての状態  | 文字列                                                   | はい                     | 対象/アクティブ |
-| type             | String                                                   | はい                     | adminupdate |
+| type             | 文字列                                                   | はい                     | adminupdate |
 | したがっ           | String                                                   | rolesettings に依存 |   |
 | スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                     |   |
 
@@ -520,7 +520,7 @@ Content-type: application/json
 
 | プロパティ         | 型                                                     | 必須                | 値 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | 文字列                                                   | はい                     | \<resourceId\> |
+| resourceId       | String                                                   | はい                     | \<resourceId\> |
 | roleDefinitionId | 文字列                                                   | はい                     | \<roleDefinitionId\> |
 | subjectId        | 文字列                                                   | はい                     | \<subjectId\> |
 | 割り当ての状態  | String                                                   | はい                     | 対象/アクティブ |
@@ -613,8 +613,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

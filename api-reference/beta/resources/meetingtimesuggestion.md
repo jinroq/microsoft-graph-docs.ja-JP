@@ -4,12 +4,12 @@ description: '会議の時間、出席の可能性、個人などの情報を含
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d0f6c36d0fb76c1bc115b9cd0490a79a3f94a77b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e5abecaf1064eee3621e8800874dc6a2c3ef9e11
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581638"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342402"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion リソースの種類
 
@@ -49,7 +49,7 @@ ms.locfileid: "32581638"
 |locations|[location](location.md) コレクション|この提案された会議の各会議場所の名前と地理的な場所を指定する配列。|
 |会議タイムスロット|[timeSlot](timeslot.md)|会議の提案されている期間。|
 |降順|Int32|同じ信頼度がある場合に、chronology によって並べ替えられた、会議の時間の候補の順序 (高から低まで)。 |
-|組織の空き時間情報|availabilityStatus| この提案されている会議の開催者の空き時間情報。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|組織の空き時間情報|freeBusyStatus| この提案されている会議の開催者の空き時間情報。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会議時間を提案する理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -61,8 +61,6 @@ ms.locfileid: "32581638"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/meetingtimesuggestion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

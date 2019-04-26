@@ -1,42 +1,42 @@
 ---
-title: Workbook リソースタイプ
+title: ブックのリソースの種類
 description: Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2dbc2e53eec9b5c64d4249351e8c8366e07f2fd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453589"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341410"
 ---
-# <a name="workbook-resource-type"></a>Workbook リソースタイプ
+# <a name="workbook-resource-type"></a>ブックのリソースの種類
 
 Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
 
 ## <a name="properties"></a>プロパティ
-None
+なし
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[セッションを作成する](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |永続または非永続セッションを開始するために、ブック セッションを作成します。|
-|[セッションを閉じる](../api/workbook-closesession.md) | None |既存のセッションを終了します。|
+|[セッションを閉じる](../api/workbook-closesession.md) | なし |既存のセッションを終了します。|
 |[セッションを最新の情報に更新](../api/workbook-refreshsession.md) | なし |既存のセッションを更新します。|
 
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
-|tables|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
-|worksheets|[Worksheet](worksheet.md) コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
+|names|[workbookNamedItem](workbooknameditem.md)コレクション |ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
+|テーブル|[workbookTable](workbooktable.md)コレクション |ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
+|worksheets|[workbookWorksheet](workbookworksheet.md)コレクション |ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
 
 ## <a name="functions"></a>関数
 
-[Excel の関数](#functions):構文 `POST /workbook/functions/{function-name}` を使用し、また JSON オブジェクトを使用して本文の関数の引数を提供することでブック関数を呼び出します。関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。`error` の `null` 値は、関数の実行が成功したことを示します。 
+[Excel の関数](#functions):構文 `POST /workbook/functions/{function-name}` を使用し、また JSON オブジェクトを使用して本文の関数の引数を提供することでブック関数を呼び出します。関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。`null` の `error` 値は、関数の実行が成功したことを示します。 
 
 サポートされている関数の完全な一覧は、[こちら](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188) です。特定のパラメーター名とデータ型については関数のシグネチャを参照してください。
 
@@ -131,6 +131,19 @@ content-type: application/json;odata.metadata
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,
   "value": 30
+}
+```
+## <a name="json-representation"></a>JSON 表記
+以下は、リソースの JSON 表記です。
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+``` json
+{
+    "id": "string"
 }
 ```
 

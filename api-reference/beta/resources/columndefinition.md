@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460624"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341417"
 ---
 # <a name="columndefinition-resource-type"></a>columndefinition リソースの種類
 
@@ -64,10 +64,10 @@ ms.locfileid: "32460624"
 | **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
 | **説明**         | string  | 列に関するユーザー向けの説明。
 | **displayName**         | string  | 列を示すユーザー向けの名前。
-| **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
-| **hidden**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。
+| **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
+| **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
 | **id**                  | string  | 列の一意識別子。
-| **indexed**             | ブール値 | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
+| **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
 | **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
 | **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
 | **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
@@ -117,8 +117,6 @@ ms.locfileid: "32460624"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

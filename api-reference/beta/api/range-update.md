@@ -4,12 +4,12 @@ description: 範囲オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33aafe25a7537a6c392409f98677ab27dd9a50c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538442"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337006"
 ---
 # <a name="update-range"></a>範囲を更新する
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538442"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
@@ -48,12 +48,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 |formulasLocal|Json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。|
 |formulasR1C1|Json|R1C1 スタイル表記の数式を表します。|
 |numberFormat|Json|指定したセルの Excel の数値書式コードを表します。|
-|rowHidden|ブール値|現在の範囲のすべての行が非表示になっているかどうかを表します。|
+|rowHidden|boolean|現在の範囲のすべての行が非表示になっているかどうかを表します。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [Range](../resources/range.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookRange](../resources/workbookrange.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。値、数値書式、および数式の範囲が更新されます。`null` 入力は、その特定の入力用のセルを無視するように API に指示します。値、数値書式、および数式は、個別に更新したり、同じ API 呼び出しで一緒に結合したりできます。 
@@ -63,13 +63,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
-"formula" : [[null, null], [null, "=B1*2"]],
+"formulas" : [[null, null], [null, "=B1*2"]],
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
@@ -78,7 +78,7 @@ Content-length: 169
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,8 +104,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,15 +2,16 @@
 title: automaticRepliesMailTips リソースの種類
 description: メールボックスに設定されている自動応答に関するメールヒント。
 localization_priority: Normal
-ms.openlocfilehash: 7eb9d57da427090c554e111ae6ba1eeb369437ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: faefc5997f724afeaf09ff4740aac5702be159fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535559"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339073"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips リソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 メールボックスに設定されている自動応答に関する[メールヒント](../resources/mailtips.md)。
 
@@ -48,10 +49,13 @@ ms.locfileid: "32535559"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "automaticRepliesMailTips resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

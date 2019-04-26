@@ -1,21 +1,21 @@
 ---
 title: 添付ファイルを一覧表示する
-description: メッセージに添付された attachment オブジェクトのリストを取得します。
+description: メッセージに添付された添付フィル オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b394b2f5bc81954467ebb315750087141936f3d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92a8727bfb8bb95b4e059598256c4496075eeacf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540478"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338531"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-メッセージに添付された [attachment](../resources/attachment.md) オブジェクトのリストを取得します。
+メッセージに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-特に、$expand クエリパラメーターを使用して、メッセージのすべての添付ファイルを他のメッセージプロパティと共にインラインに含めることができます。 次に例を示します。
+特に、$expand クエリパラメーターを使用して、メッセージのすべての添付ファイルを他のメッセージプロパティと共にインラインに含めることができます。 例:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -112,8 +112,6 @@ Content-length: 215
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-list-attachments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

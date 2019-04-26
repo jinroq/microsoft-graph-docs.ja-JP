@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: 65bbd2e371c856a6ffbd2c55ecba88c1635ce41c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7eb9f9c5e292b720ca4c7dea772df6d28711a116
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506343"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340302"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo ファセット
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **FileSystemInfo** リソースには、アイテムのローカル バージョンについてデバイスのローカル ファイル システムによって報告されるプロパティが含まれています。このファセットは、ローカル デバイス上で、アイテムが最後に更新または作成された日付を指定するために使用できます。
 
@@ -61,10 +63,13 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo"
-} -->
+  "tocPath": "Facets/FileSystemInfo",
+  "suppressions": []
+}
+-->

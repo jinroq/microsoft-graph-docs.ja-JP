@@ -2,12 +2,12 @@
 title: anonymousIpRiskEvent リソースの種類
 description: Azure Active Directory id 保護によって検出された、匿名の IP アドレスからアカウントのサインインが試行されるリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 5f428a99466e67dfbbe4ef9b4ebe0006b56f99e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fa1210a8899af11e295e6503dfcae51dba43776
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461031"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339168"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>anonymousIpRiskEvent リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32461031"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -52,6 +52,7 @@ ms.locfileid: "32461031"
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.anonymousIpRiskEvent"
 }-->
 
@@ -68,7 +69,8 @@ ms.locfileid: "32461031"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +84,6 @@ ms.locfileid: "32461031"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/anonymousipriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

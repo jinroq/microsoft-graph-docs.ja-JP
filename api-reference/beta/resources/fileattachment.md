@@ -2,12 +2,12 @@
 title: fileAttachment リソースの種類
 description: イベントに添付されたファイル (テキストファイルや Word 文書など)
 localization_priority: Normal
-ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4c33619c7521d980c1c6c51fd7158390aec47b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506369"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340229"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32506369"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[取得](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
-|[削除する](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
+|[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -37,7 +37,7 @@ ms.locfileid: "32506369"
 |contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。|
-|isInline|ブール値|インライン添付ファイルの場合、true に設定します。|
+|isInline|Boolean|インライン添付ファイルの場合、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。|
 |name|String|埋め込み添付ファイルを表すアイコンの下に表示されるテキストを表す名前。これは、実際のファイル名にする必要はありません。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
@@ -82,8 +82,6 @@ ms.locfileid: "32506369"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

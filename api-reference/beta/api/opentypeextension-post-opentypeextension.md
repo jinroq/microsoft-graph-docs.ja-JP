@@ -3,12 +3,12 @@ title: オープン拡張機能を作成する
 description: オープン拡張機能 (opentypeextension オブジェクト) を作成し、カスタムプロパティを追加する
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24745ecfa5e59bd8bc455018690e813f82c33662
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539957"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338167"
 ---
 # <a name="create-open-extension"></a>オープン拡張機能を作成する
 
@@ -16,29 +16,29 @@ ms.locfileid: "32539957"
 
 オープン拡張機能 ([opentypeextension](../resources/opentypeextension.md)オブジェクト) を作成し、サポートされているリソースの新規または既存のインスタンスにカスタムプロパティを追加します。
 
-> **注:** outlook のリソースにオープン拡張機能を作成する場合は、「 [opentypeextension リソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)に**関する outlook 固有の考慮事項**」を参照してください。
+> **注:** Outlook リソースでオープン拡張機能を作成する場合は、[openTypeExtension リソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)にある**Outlook-固有の考慮事項** を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-拡張機能を作成しているリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能を含むリソースおよび要求されたアクセス許可の種類（代理またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>新規のリソース インスタンスに拡張機能を作成する
 
-インスタンスを作成するために使用するのと同じ REST 要求を使用します。
+インスタンスを作成するには、同じ REST 要求を使います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,13 +49,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注:** この構文は、サポートされているリソースインスタンスを作成する一般的な方法を示しています。 これらのリソースインスタンスを作成できる他のすべての POST 構文では、同様の方法でオープン拡張機能の作成がサポートされています。
+>**注:** この構文は、サポートされているリソース インスタンスを作成する一般的な方法を示しています。 こうしたリソース インスタンスを作成するために使用できる他の POST 構文すべても、同様の方法でオープン拡張機能を作成できます。
 
-要求本文に、新規のリソース インスタンスのプロパティおよび[拡張機能](#request-body)を含める方法については、_要求本文_のセクションをご覧ください。
+要求本文に、新規のリソース インスタンスのプロパティおよび_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>既存のリソース インスタンスに拡張機能を作成する
 
-要求でリソース インスタンスを識別し、`POST` ナビゲーション プロパティで **** を行います。
+その要求でリソース インスタンスを識別し、**機能拡張** ナビゲーション プロパティで `POST` を行います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +71,9 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注:** この構文は、拡張機能を作成するために、リソースインスタンスを識別する一般的な方法を示しています。 これらのリソースインスタンスを識別できる他のすべての構文では、同様の方法でオープン拡張機能の作成がサポートされています。
+>**注:** 上記の構文は、拡張機能をその中に作成するリソース インスタンスを特定する一般的な方法を示しています。 こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を作成できます。
 
-要求本文に[拡張機能](#request-body)を含める方法については、_要求本文_のセクションをご覧ください。
+要求本文にある_拡張機能_を含めた[要求本文](#request-body)のセクションを参照してください。
 
 ## <a name="path-parameters"></a>パス パラメーター
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>要求本文
 
-次の必須の名前と値のペアと追加のカスタムデータを使用して、 [opentypeextension](../resources/opentypeextension.md)の JSON 本文を指定します。 JSON ペイロード内のデータは、プリミティブ型か、プリミティブ型の配列にすることができます。
+次の必須の名前と値のペアと追加のカスタムデータを使用して、 [opentypeextension](../resources/opentypeextension.md)の JSON 本文を指定します。JSON ペイロードのデータは、プリミティブ型、またはプリミティブ型の配列にすることができます。
 
 | 名前       | 値 |
 |:---------------|:----------|
-| @odata.type | Microsoft Graph の opentypeextension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 _新しい_リソース インスタンスに拡張機能を作成するときは、新しい **openTypeExtension** オブジェクトに加えて、関連するプロパティの JSON 表現を指定して、このようなリソース インスタンスを作成します。
@@ -103,10 +103,10 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 
 ### <a name="response-code"></a>応答コード
 
-応答コードは、操作によって `201 Created` または `202 Accepted` になります。
+操作によって、応答コードは `201 Created` または `202 Accepted` になります。
 
-リソースインスタンスの作成に使用したのと同じ操作を使用して拡張機能を作成すると、操作を使用して拡張機能なしでリソースインスタンスを作成したときに返されるものと同じ応答コードが返されます。
-それぞれ対応するインスタンスの作成については[上記](#create-an-extension-in-a-new-resource-instance)のトピックをご覧ください。
+リソース インスタンスを作成するために使用するのと同じ操作を使用して、拡張子を作成すると、操作は拡張子なしのリソースのインスタンスの作成時に返される同じ応答コードを返します。
+それぞれ対応するインスタンスの作成については[上記](#create-an-extension-in-a-new-resource-instance)の一覧を参照してください。
 
 ### <a name="response-body"></a>応答本文
 
@@ -125,9 +125,9 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 - 新しいメッセージ固有の **subject**、**body**、**toRecipients** プロパティ。
 - 拡張情報に関する次のもの。
 
-  - 型 `Microsoft.Graph.OpenTypeExtension`。
+  - 型 `microsoft.graph.openTypeExtension`。
   - 拡張情報名 "Com.Contoso.Referral"。
-  - JSON ペイロードに3つのカスタムプロパティとして保存さ`companyName`れる`expirationDate`追加データ`dealValue`:、、。
+  - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`、`dealValue`。
 
 <!-- {
   "blockType": "request",
@@ -135,6 +135,7 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages
+Content-Type: application/json
 
 {
   "subject": "Annual review",
@@ -151,7 +152,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -165,11 +166,11 @@ POST https://graph.microsoft.com/beta/me/messages
 
 最初の例の応答を次に示します。応答本文には、新しいメッセージのプロパティと、新しい拡張情報に関する次のものが含まれています。
 
-- **id** プロパティと `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` の完全修飾名。
+- **id** プロパティと `microsoft.graph.openTypeExtension.Com.Contoso.Referral` の完全修飾名。
 - 要求で指定されている既定のプロパティ **extensionName**。
 - 要求で指定されている、3 つのカスタム プロパティとして格納されるカスタム データ。
 
-注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -228,10 +229,10 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-      "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
+      "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -247,7 +248,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 2 番目の例では、指定されたメッセージに拡張情報を作成します。要求本文には、拡張情報に関する次のものが含まれます。
 
-- 型 `Microsoft.Graph.OpenTypeExtension`。
+- 型 `microsoft.graph.openTypeExtension`。
 - 拡張情報名 "Com.Contoso.Referral"。
 - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`dealValue`、`expirationDate`。
 
@@ -256,10 +257,11 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
+Content-Type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -272,13 +274,13 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 2 番目の例の応答を次に示します。応答本文には、新しい拡張情報に関する次のものが含まれています。
 
 - 既定のプロパティ **extensionName**。
-- **id** プロパティと `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` の完全修飾名。
+- **id** プロパティと `microsoft.graph.openTypeExtension.Com.Contoso.Referral` の完全修飾名。
 - 格納されるカスタム データ。
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -286,11 +288,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
     "companyName": "Wingtip Toys",
     "dealValue": 500050,
     "expirationDate": "2015-12-03T10:00:00.000Z"
@@ -303,7 +305,7 @@ Content-type: application/json
 
 3 番目の例では、指定されたグループ イベントに拡張情報を作成します。要求本文には、拡張情報に関する次のものが含まれます。
 
-- 型 `Microsoft.Graph.OpenTypeExtension`。
+- 型 `microsoft.graph.openTypeExtension`。
 - 拡張情報名 "Com.Contoso.Deal"。
 - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`dealValue`、`expirationDate`。
 
@@ -312,10 +314,11 @@ Content-type: application/json
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
+POST https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
+Content-type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -330,7 +333,7 @@ POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -338,8 +341,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
     "dealValue": 1010100,
@@ -353,7 +356,7 @@ Content-type: application/json
 
 4 番目の例では、既存のグループ投稿に対する **reply** アクション呼び出しと同じ呼び出しを使用して、新しいグループ投稿に拡張情報を作成します。**reply** アクションは、新しい投稿と、投稿に埋め込まれる新しい拡張情報を作成します。要求本文には **post** プロパティが含まれます。そのプロパティには新しい投稿の **body** が含まれ、さらに新しい拡張情報の次のデータが含まれます。
 
-- 型 `Microsoft.Graph.OpenTypeExtension`。
+- 型 `microsoft.graph.openTypeExtension`。
 - 拡張情報名 "Com.Contoso.HR"。
 - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`、文字列 `topPicks` の配列。
 
@@ -362,7 +365,8 @@ Content-type: application/json
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/reply
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
+Content-type: application/json
 
 {
   "post": {
@@ -372,7 +376,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",
@@ -407,7 +411,7 @@ Content-Length: 0
 
 5 番目の例では、会話を作成するための同じ POST 操作を使用して、新しいグループ投稿に拡張情報を作成します。POST 操作は、新しい会話、スレッドと投稿、投稿に埋め込まれた新しい拡張情報を作成します。要求本文には、**Topic** プロパティと **Threads** プロパティや、新しい会話の子 **post** オブジェクトが含まれます。次いで、その **post** オブジェクトには、新しい投稿の **body** と、拡張情報の次のデータが含まれます。
 
-- 型 `Microsoft.Graph.OpenTypeExtension`。
+- 型 `microsoft.graph.openTypeExtension`。
 - 拡張情報名 "Com.Contoso.HR"。
 - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`、文字列 `topPicks` の配列。
 
@@ -416,7 +420,8 @@ Content-Length: 0
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
+Content-type: application/json
 
 {
   "Topic": "Does anyone have a second?",
@@ -430,7 +435,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
           },
           "Extensions": [
             {
-              "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+              "@odata.type": "microsoft.graph.openTypeExtension",
               "extensionName": "Com.Contoso.Benefits",
               "companyName": "Contoso",
               "expirationDate": "2016-08-03T11:00:00.000Z",
@@ -488,8 +493,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

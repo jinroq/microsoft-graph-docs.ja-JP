@@ -4,12 +4,12 @@ description: 管理単位は、ユーザーおよびグループのディレク�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4dbc1c00b87e35f90cb0e14169364591c28c406f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535781"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339133"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "32535781"
 |[adminstrativeUnit の更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |administrativeUnit オブジェクトを更新します。 |
 |[adminstrativeUnit の削除](../api/administrativeunit-delete.md) | なし |administrativeUnit オブジェクトを削除します。 |
 |[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| メンバー (ユーザーまたはグループ) を追加します。|
-|[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| (ユーザーおよびグループ) メンバーの一覧を取得します。|
+|[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) コレクション| (ユーザーおよびグループ) メンバーの一覧を取得します。|
 |[メンバーを取得する](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
 |[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
 |[スコープロールのメンバーを追加する](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ付きの役割メンバーを追加します。|
@@ -52,7 +52,7 @@ ms.locfileid: "32535781"
 |:---------------|:--------|:----------|
 |description|string|管理単位の説明 (オプション)。|
 |displayName|string|管理単位の表示名。|
-|id|string|管理単位の一意の識別子。 読み取り専用。|
+|id|文字列|管理単位の一意の識別子。 読み取り専用です。|
 |visibility|string|管理単位とそのメンバーを非表示にするか、または公開するかを制御します。 HiddenMembership または Public に設定できます。 設定されていない場合、既定の動作はパブリックになります。 HiddenMembership に設定されている場合、管理単位のメンバーのみが、管理単位の他のメンバーを一覧表示できます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -68,6 +68,7 @@ ms.locfileid: "32535781"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -101,8 +102,6 @@ ms.locfileid: "32535781"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

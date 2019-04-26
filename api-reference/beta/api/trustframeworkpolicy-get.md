@@ -4,16 +4,16 @@ description: この操作では、Azure AD B2C テナントから既存の trust
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e4e0a10c0a4c230c172230eecfce177deb4a4d91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e16c636dd1a367978396af7fcbe21aebfa4cd37
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536986"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335095"
 ---
 # <a name="get-trustframeworkpolicy"></a>trustframeworkpolicy の取得
 
->**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+>**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 既存の[trustframeworkpolicy](../resources/trustframeworkpolicy.md)の内容を取得します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "32536986"
 GET /trustFramework/policies/{id}/$value
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、 `$select`応答`$expand`をカスタマイズするためのおよび[OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
@@ -63,23 +63,24 @@ GET /trustFramework/policies/{id}/$value
 ##### <a name="request"></a>要求
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_trustFramework"
 }-->
 ```http
-https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
+GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
 ```
 
 ##### <a name="response"></a>応答
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy"
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-Type application/xml
+Content-Type: application/xml
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
     .....
     ....

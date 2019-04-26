@@ -2,12 +2,12 @@
 title: 同期規則リソースの種類
 description: 同期エンジンに対して同期を実行する方法を定義します。どのオブジェクトを同期するか、どの方向に、どのようにソースディレクトリのオブジェクトをターゲットディレクトリのオブジェクトと照合するか、どのように属性を使用するかを指定します。ソースとターゲットディレクトリの同期時に変換する必要があります。
 localization_priority: Normal
-ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b881c73d8fec8dc6b342192195d486807c744cf7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453645"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340027"
 ---
 # <a name="synchronizationrule-resource-type"></a>同期規則リソースの種類
 
@@ -23,10 +23,10 @@ ms.locfileid: "32453645"
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|可能       |ブール型    |`true`同期ルールをカスタマイズできる場合は、`false`このルールは読み取り専用であり、変更する必要はありません。|
+|可能       |Boolean    |`true`同期ルールをカスタマイズできる場合は、`false`このルールは読み取り専用であり、変更する必要はありません。|
 |id             |String     |同期ルール識別子。 同期エンジンで認識される識別子のいずれかである必要があります。 サポートされているルール識別子は、API によって返される同期テンプレートにあります。|
 |metadata       |[stringkeystringvaluepair](synchronization-stringkeystringvaluepair.md)コレクション |追加の拡張機能のプロパティ。 サポートチームによって明示的に指示されていない限り、メタデータ値は変更しないでください。|
-|name           |String     |ユーザーが読み取ることができる同期ルールの名前。 null 許容ではありません。|
+|name           |String     |ユーザーが読み取ることができる同期ルールの名前。 null 許容型ではありません。|
 |objectmappings |[objectmapping](synchronization-objectmapping.md)コレクション    |ルールでサポートされているオブジェクトマッピングのコレクション。 同期するオブジェクトを同期エンジンに通知します。|
 |priority       |整数    |[同期スキーマ](synchronization-synchronizationschema.md)内の他のルールに対する優先度。 優先度が最も低いルールが最初に処理されます。|
 |sourceDirectoryName       |String    |ソースディレクトリの名前。 は、[同期スキーマ](synchronization-synchronizationschema.md)のディレクトリ定義のいずれかと一致している必要があります。|
@@ -67,8 +67,6 @@ ms.locfileid: "32453645"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationrule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

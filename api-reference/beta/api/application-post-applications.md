@@ -1,21 +1,21 @@
 ---
-title: アプリケーションを作成します。
-description: 新しいアプリケーションを作成するのにには、この API を使用します。
+title: アプリケーションを作成する
+description: この API を使用して、新しいアプリケーションを作成します。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8cde90f31f7583d24361f6935701a91f69d7cfde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b86030eede69b85d7b66e4ec5acdd7e2dfef0ce4
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459109"
 ---
-# <a name="create-application"></a>アプリケーションを作成します。
+# <a name="create-application"></a>アプリケーションを作成する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しいアプリケーションを作成するのにには、この API を使用します。
+この API を使用して、新しいアプリケーションを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -34,16 +34,16 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[アプリケーション](../resources/application.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[application](../resources/application.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[アプリケーション](../resources/application.md)のオブジェクトです。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [application](../resources/application.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -62,7 +62,7 @@ Content-length: 67
   "displayName": "Display name"
 }
 ```
-要求の本文には、[アプリケーション](../resources/application.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[application](../resources/application.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -114,10 +114,13 @@ Content-length: 1145
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create application",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,17 +1,19 @@
 ---
 title: 予定表を一覧表示する
 description: 'すべてのユーザーの予定表を取得します (`/calendars` ナビゲーション プロパティ)。また既定の予定表グループまたは特定の予定表グループから予定表を取得します。 '
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 576defc97cfaf7b3d6924f522e6463fcb56907d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b68089df6002443f8d28376c995ca6a3746457e6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547866"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334837"
 ---
 # <a name="list-calendars"></a>予定表を一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 すべてのユーザーの予定表を取得します (`/calendars` ナビゲーション プロパティ)。また既定の予定表グループまたは特定の予定表グループから予定表を取得します。 
 ## <a name="permissions"></a>アクセス許可
@@ -66,7 +68,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendars
+GET https://graph.microsoft.com/beta/me/calendars
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -81,16 +83,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars",
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
             "id": "AAMkAGI2TGuLAAA=",
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
+            "isShared":false,
+            "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
                 "name":"Samantha Booth",
@@ -99,14 +105,18 @@ Content-type: application/json
         }
     ]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendars",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

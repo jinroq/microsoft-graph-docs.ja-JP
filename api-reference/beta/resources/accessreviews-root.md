@@ -4,12 +4,12 @@ description: Azure AD access レビューを使用して、ユーザーのアク
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 31b55697601e78fbf1e4af460d1ee7739b126d32
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544135"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339217"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD アクセス レビュー
 
@@ -27,15 +27,16 @@ ms.locfileid: "32544135"
 
 また、グローバル管理者または azure サブスクリプションの役割などの azure AD の役割に割り当てられている管理ユーザーの役割割り当てを確認し、証明するための関連機能もあります。  この機能は、 [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md)に含まれています。
 
-アクセスレビュー機能 (API を含む) は Azure AD Premium P2 に含まれていることに注意してください。 
+アクセスレビュー機能 (API を含む) は Azure AD Premium P2 に含まれていることに注意してください。  アクセスレビューを作成するテナントには、有効な、購入済みまたは試用版の Azure AD プレミアム P2 または EMS E5 サブスクリプションが必要です。 アクセスレビュー、プログラム、またはプログラムの制御を作成する前に、管理者は、利用を事前[](programcontroltype.md)に設定し[](businessflowtemplate.md)ておく必要があります。 azure ad のアクセスレビューに、または azure ad の役割または azure サブスクリプションの役割のアクセスレビューの場合は azure ad PIM に、組織をオンボードにすることができます。
 
-## <a name="methods"></a>メソッド
 
-Azure AD のアクセスレビューで提供されるメソッドの一覧を次に示します。  
+## <a name="methods"></a>メソッド 
+
+次の表に、アクセスレビュー関連のリソースを操作するために使用できるメソッドを示します。
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を取得する](../api/accessreview-get.md) |   [accessreview](accessreview.md) |   特定の id を持つアクセスレビューを取得します。 |
+|[accessreview を取得する](../api/accessreview-get.md) |   [accessreview](accessreview.md) |   特定の ID を持つアクセスレビューを取得します。 |
 |[accessreview を作成する](../api/accessreview-create.md) | [accessreview](accessreview.md) |   新しい accessreview を作成します。 |
 |[accessreview の削除](../api/accessreview-delete.md) | なし。   | accessreview を削除します。 |
 |[accessreview を更新する](../api/accessreview-update.md) | [accessreview](accessreview.md) | accessreview を更新します。 |
@@ -59,6 +60,20 @@ Azure AD のアクセスレビューで提供されるメソッドの一覧を�
 |[programcontrols のリスト](../api/programcontrol-list.md) | [programcontrol](programcontrol.md)コレクション| テナント内のすべてのプログラムでコントロールを一覧表示します。|
 |[programcontroltypes のリスト](../api/programcontroltype-list.md) | [programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
 
+## <a name="role-and-application-permission-authorization-checks"></a>役割とアプリケーションのアクセス許可の承認チェック
+
+呼び出し元ユーザーがアクセスレビュー、プログラム、および制御を管理するには、次のディレクトリの役割が必要です。
+
+| ターゲットリソース | 操作 | アプリケーションのアクセス許可 | 呼び出し元ユーザーの必要なディレクトリの役割 |
+|:----------------|:------------------|:------------|:--------------------------------------------|
+|Azure AD ロールの[accessreview](accessreview.md) | 読み取り | accessreview を参照してください。すべてのまたは accessreview. | 全体管理者、セキュリティ管理者、セキュリティリーダ、または特権ロール管理者 |
+|Azure AD ロールの[accessreview](accessreview.md) | 作成、更新、または削除 | accessreview すべて | グローバル管理者または特権ロール管理者 |
+|グループまたはアプリの[accessreview](accessreview.md) | 読み取り | accessreview を参照してください。すべてのまたは accessreview. | グローバル管理者、セキュリティ管理者、セキュリティリーダ、またはユーザー管理者 |
+|グループまたはアプリの[accessreview](accessreview.md) | 作成、更新、または削除 | accessreview すべて | 全体管理者またはユーザー管理者 |
+| [プログラム](program.md)および[programcontrol](programcontrol.md)| 読み取り | programcontrol. すべてのまたはすべてのプログラムを読み取ることができます。 |  グローバル管理者、セキュリティ管理者、セキュリティリーダ、またはユーザー管理者 |
+| [プログラム](program.md)および[programcontrol](programcontrol.md) | 作成、更新、または削除 | programcontrol | 全体管理者またはユーザー管理者 |
+
+また、アクセスレビューの担当者に割り当てられているユーザーは、ディレクトリロールに存在しなくても、決定を管理できます。
 
 ## <a name="see-also"></a>関連項目
 
@@ -74,8 +89,6 @@ Azure AD のアクセスレビューで提供されるメソッドの一覧を�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: 同期の進行状況リソースの種類
 description: 完了までの同期ジョブの進行状況を表します。
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d05193c7c242dc3f890aba6f4fcec5a8badc087f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453958"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340015"
 ---
 # <a name="synchronizationprogress-resource-type"></a>同期の進行状況リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "32453958"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json
@@ -57,8 +57,6 @@ ms.locfileid: "32453958"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

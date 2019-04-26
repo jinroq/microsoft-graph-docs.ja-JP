@@ -4,12 +4,12 @@ description: 特定のユーザーに対する、Android アプリの管理機�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97b704fb84e65f41060d2085700c32e3baef288e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bf5595c97b109f2cb7ec8e6ea61d4585235b85a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556838"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341751"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration リソースの種類
 
@@ -64,7 +64,8 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidManagedAppRegistration"
+  "@odata.type": "microsoft.graph.androidManagedAppRegistration",
+  "baseType": "microsoft.graph.managedAppRegistration"
 }
 -->
 ``` json

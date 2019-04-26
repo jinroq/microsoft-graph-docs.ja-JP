@@ -4,12 +4,12 @@ description: 範囲に含まれている行を 1 つ取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 645ea09a8ccef85c31ebca3e9fc3cf7150a261f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7184ad4a0bae0ab3861bc0db10d87f0b5ae96f5e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538466"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337057"
 ---
 # <a name="range-row"></a>範囲:Row
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538466"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Row
+POST /workbook/names/{name}/range/Row
 POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
 POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
@@ -48,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [workbookRange](../resources/workbookrange.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -59,7 +59,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
   "name": "range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/Row
 Content-type: application/json
 Content-length: 18
 
@@ -74,7 +74,7 @@ Content-length: 18
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -100,8 +100,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-row.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

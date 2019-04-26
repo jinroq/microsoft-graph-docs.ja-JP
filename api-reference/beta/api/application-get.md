@@ -1,21 +1,21 @@
 ---
-title: アプリケーションを取得します。
-description: プロパティとアプリケーションのオブジェクトの関係を取得します。
+title: アプリケーションを取得する
+description: アプリケーション オブジェクトのプロパティと関係を取得します。
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 444a95d437591bade674b350c67ec349b06f8d8c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9470243651d668d8a1440077be89225b0ebe7b21
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941808"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459250"
 ---
-# <a name="get-application"></a>アプリケーションを取得します。
+# <a name="get-application"></a>アプリケーションを取得する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロパティとアプリケーションのオブジェクトの関係を取得します。
+アプリケーション オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,7 +44,7 @@ GET /applications/{id}
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[アプリケーション](../resources/application.md)のオブジェクトです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [application](../resources/application.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -98,10 +98,13 @@ Content-length: 1044
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get application",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

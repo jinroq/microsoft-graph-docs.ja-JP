@@ -3,12 +3,12 @@ title: 通知を作成し送信する
 description: 'Microsoft Graph を使用してユーザーを対象にした通知を作成し、送信します。 通知は Microsoft Graph 通知フィードストアに格納され、ユーザーがサインインしているすべてのデバイスエンドポイント上のすべてのアプリクライアントに送信されます。  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546399"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331953"
 ---
 # <a name="create-and-send-a-notification"></a>通知を作成し送信する
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -94,11 +94,3 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
 ```
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-notification-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

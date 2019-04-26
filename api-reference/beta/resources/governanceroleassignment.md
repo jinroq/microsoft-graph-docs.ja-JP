@@ -2,12 +2,12 @@
 title: governanceRoleAssignment リソースの種類
 description: ユーザーまたはグループの役割への割り当てを表します。
 localization_priority: Normal
-ms.openlocfilehash: 77a5238aa337dd8d273d3156d285e081c4bc8875
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b70d356886a14b17fda7ed37292797ba99d51e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547443"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340256"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment リソースの種類
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,7 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
 
 | メソッド          | 戻り値の型 |説明|
 |:------------|:--------|:--------|
-|[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |役割割り当てエンティティのプロパティと関係を読み取ります。|
+|[取得](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |役割割り当てエンティティのプロパティと関係を読み取ります。|
 |[List](../api/governanceroleassignment-list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|リソースに対する役割の割り当てのコレクションを一覧表示します。 |
 |[Export](../api/governanceroleassignment-export.md) | オクテットストリーム |リソースに対する役割の割り当てのコレクションをダウンロードし、 `.csv`ファイルとして保存します。|
 
@@ -47,10 +47,10 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用。 役割の割り当てに関連付けられているリソース。 |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|読み取り専用。 役割の割り当てに関連付けられている役割の定義。 |
-|subject|[governanceSubject](../resources/governancesubject.md)|読み取り専用。 役割の割り当てに関連付けられている件名。 |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|読み取り専用。 が`active assignment`で、アクティブ化のために作成され`eligible assignment`ている場合は、そのオブジェクト`eligible assignment`を表します。それ以外の場合、 `null`値はです。 |
+|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用です。 役割の割り当てに関連付けられているリソース。 |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|読み取り専用です。 役割の割り当てに関連付けられている役割の定義。 |
+|subject|[governanceSubject](../resources/governancesubject.md)|読み取り専用です。 役割の割り当てに関連付けられている件名。 |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|読み取り専用です。 が`active assignment`で、アクティブ化のために作成され`eligible assignment`ている場合は、そのオブジェクト`eligible assignment`を表します。それ以外の場合、 `null`値はです。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -59,6 +59,7 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -90,8 +91,6 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

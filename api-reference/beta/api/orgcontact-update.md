@@ -4,12 +4,12 @@ description: orgcontact へオブジェクトのプロパティを更新しま�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 77eccacead0871c883da1baa005fefc796158fdc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539884"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338060"
 ---
 # <a name="update-orgcontact"></a>orgcontact への更新
 
@@ -44,7 +44,7 @@ PATCH /contacts/{id}
 |country|String||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
-|displayName|String||
+|displayName|文字列||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
@@ -118,8 +118,6 @@ Content-length: 222
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

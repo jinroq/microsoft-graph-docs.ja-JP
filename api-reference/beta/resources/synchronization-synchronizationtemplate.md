@@ -2,12 +2,12 @@
 title: 同期テンプレートリソースの種類
 description: " すべてのユーザーがテンプレートを取得して、同期スキーマを含む既定の設定を確認できます。"
 localization_priority: Normal
-ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561209"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339862"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>同期テンプレートリソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32561209"
 | メソッド        | 戻り値の型               | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationtemplate-list.md)    |[同期テンプレート](synchronization-synchronizationtemplate.md)のコレクション  |アプリケーションまたはアプリケーションインスタンス (サービスプリンシパル) に対して使用可能なテンプレートを一覧表示します。|
-|[取得](../api/synchronization-synchronizationtemplate-get.md)      |[同期テンプレート](synchronization-synchronizationtemplate.md)   |**同期テンプレート**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[同期テンプレート](synchronization-synchronizationtemplate.md)   |**同期テンプレート**オブジェクトのプロパティとリレーションシップを読み取ります。|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -34,7 +34,7 @@ ms.locfileid: "32561209"
 |:--------------|:--------------------------|:-----------------------------|
 |id             |String                     |一意のテンプレート識別子。|
 |applicationId  |String                     |このテンプレートが属しているアプリケーションの識別子。|
-|既定値です。        |ブール値                    |`true`このテンプレートをアプリケーションの既定として使用することをお勧めします。|
+|既定値です。        |Boolean                    |`true`このテンプレートをアプリケーションの既定として使用することをお勧めします。|
 |description    |String                     |テンプレートの説明。|
 |発見   |String                     |`true`このテンプレートをアプリケーションインスタンス (サービスプリンシパル) で使用可能なテンプレートのコレクションに表示する必要がある場合。|
 |factoryTag     |String                     |同期エンジンでサポートされている、既知の出荷済みのタグの1つ。 **factoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンに通知します。|
