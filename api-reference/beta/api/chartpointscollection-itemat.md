@@ -4,60 +4,60 @@ description: データ系列内の位置に基づくポイントを取得しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 79ed2cdd747436ffa8dc52013722fd943ff431c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 82ed466d2b3c1f81e9480c50747180e2d0f2ee79
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456109"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327521"
 ---
-# <a name="chartpointscollection-itemat"></a><span data-ttu-id="4a8f3-103">ChartPointsCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="4a8f3-103">ChartPointsCollection: ItemAt</span></span>
+# <a name="chartpointscollection-itemat"></a><span data-ttu-id="9aea7-103">ChartPointsCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="9aea7-103">ChartPointsCollection: ItemAt</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4a8f3-104">データ系列内の位置に基づくポイントを取得します。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-104">Retrieve a point based on its position within the series.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4a8f3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4a8f3-105">Permissions</span></span>
-<span data-ttu-id="4a8f3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9aea7-104">データ系列内の位置に基づくポイントを取得します。</span><span class="sxs-lookup"><span data-stu-id="9aea7-104">Retrieve a point based on its position within the series.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9aea7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9aea7-105">Permissions</span></span>
+<span data-ttu-id="9aea7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9aea7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a8f3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4a8f3-108">Permission type</span></span>      | <span data-ttu-id="4a8f3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4a8f3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9aea7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9aea7-108">Permission type</span></span>      | <span data-ttu-id="9aea7-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9aea7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a8f3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4a8f3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4a8f3-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a8f3-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4a8f3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4a8f3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a8f3-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a8f3-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4a8f3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4a8f3-114">Application</span></span> | <span data-ttu-id="4a8f3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-115">Not supported.</span></span> |
+|<span data-ttu-id="9aea7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9aea7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9aea7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9aea7-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9aea7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9aea7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9aea7-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9aea7-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9aea7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9aea7-114">Application</span></span> | <span data-ttu-id="9aea7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9aea7-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a8f3-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4a8f3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9aea7-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9aea7-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4a8f3-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4a8f3-117">Request headers</span></span>
-| <span data-ttu-id="4a8f3-118">名前</span><span class="sxs-lookup"><span data-stu-id="4a8f3-118">Name</span></span>       | <span data-ttu-id="4a8f3-119">説明</span><span class="sxs-lookup"><span data-stu-id="4a8f3-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9aea7-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9aea7-117">Request headers</span></span>
+| <span data-ttu-id="9aea7-118">名前</span><span class="sxs-lookup"><span data-stu-id="9aea7-118">Name</span></span>       | <span data-ttu-id="9aea7-119">説明</span><span class="sxs-lookup"><span data-stu-id="9aea7-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4a8f3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a8f3-120">Authorization</span></span>  | <span data-ttu-id="4a8f3-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4a8f3-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4a8f3-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="4a8f3-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="9aea7-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9aea7-120">Authorization</span></span>  | <span data-ttu-id="9aea7-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9aea7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9aea7-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9aea7-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="9aea7-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="9aea7-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4a8f3-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4a8f3-126">Request body</span></span>
-<span data-ttu-id="4a8f3-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9aea7-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="9aea7-126">Request body</span></span>
+<span data-ttu-id="9aea7-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="9aea7-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4a8f3-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4a8f3-128">Parameter</span></span>    | <span data-ttu-id="4a8f3-129">型</span><span class="sxs-lookup"><span data-stu-id="4a8f3-129">Type</span></span>   |<span data-ttu-id="4a8f3-130">説明</span><span class="sxs-lookup"><span data-stu-id="4a8f3-130">Description</span></span>|
+| <span data-ttu-id="9aea7-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9aea7-128">Parameter</span></span>    | <span data-ttu-id="9aea7-129">型</span><span class="sxs-lookup"><span data-stu-id="9aea7-129">Type</span></span>   |<span data-ttu-id="9aea7-130">説明</span><span class="sxs-lookup"><span data-stu-id="9aea7-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4a8f3-131">index</span><span class="sxs-lookup"><span data-stu-id="4a8f3-131">index</span></span>|<span data-ttu-id="4a8f3-132">number</span><span class="sxs-lookup"><span data-stu-id="4a8f3-132">number</span></span>|<span data-ttu-id="4a8f3-p104">取得するオブジェクトのインデックス値。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="9aea7-131">index</span><span class="sxs-lookup"><span data-stu-id="9aea7-131">index</span></span>|<span data-ttu-id="9aea7-132">number</span><span class="sxs-lookup"><span data-stu-id="9aea7-132">number</span></span>|<span data-ttu-id="9aea7-p104">取得するオブジェクトのインデックス値。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="9aea7-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4a8f3-135">応答</span><span class="sxs-lookup"><span data-stu-id="4a8f3-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9aea7-135">応答</span><span class="sxs-lookup"><span data-stu-id="9aea7-135">Response</span></span>
 
-<span data-ttu-id="4a8f3-136">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartPoint](../resources/chartpoint.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-136">If successful, this method returns `200 OK` response code and [ChartPoint](../resources/chartpoint.md) object in the response body.</span></span>
+<span data-ttu-id="9aea7-136">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[workbookChartPoint](../resources/workbookchartpoint.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9aea7-136">If successful, this method returns `200 OK` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a8f3-137">例</span><span class="sxs-lookup"><span data-stu-id="4a8f3-137">Example</span></span>
-<span data-ttu-id="4a8f3-138">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4a8f3-139">要求</span><span class="sxs-lookup"><span data-stu-id="4a8f3-139">Request</span></span>
-<span data-ttu-id="4a8f3-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9aea7-137">例</span><span class="sxs-lookup"><span data-stu-id="9aea7-137">Example</span></span>
+<span data-ttu-id="9aea7-138">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="9aea7-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="9aea7-139">要求</span><span class="sxs-lookup"><span data-stu-id="9aea7-139">Request</span></span>
+<span data-ttu-id="9aea7-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9aea7-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt
 Content-type: application/json
 Content-length: 20
 
@@ -67,12 +67,12 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4a8f3-141">応答</span><span class="sxs-lookup"><span data-stu-id="4a8f3-141">Response</span></span>
-<span data-ttu-id="4a8f3-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4a8f3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9aea7-141">応答</span><span class="sxs-lookup"><span data-stu-id="9aea7-141">Response</span></span>
+<span data-ttu-id="9aea7-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9aea7-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -94,8 +94,6 @@ Content-length: 20
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartpointscollection-itemat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

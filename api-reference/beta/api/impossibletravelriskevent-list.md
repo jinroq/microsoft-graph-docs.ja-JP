@@ -2,47 +2,47 @@
 title: リスト impossibleTravelRiskEvents
 description: impossibletravelriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: d9ba249e59710801bec34d5c08feb95ac970fa04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca526129abbee7381da1a6f957d5092ae00a06f5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501365"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328626"
 ---
-# <a name="list-impossibletravelriskevents"></a><span data-ttu-id="ec5b8-103">リスト impossibleTravelRiskEvents</span><span class="sxs-lookup"><span data-stu-id="ec5b8-103">List impossibleTravelRiskEvents</span></span>
+# <a name="list-impossibletravelriskevents"></a><span data-ttu-id="e19d2-103">リスト impossibleTravelRiskEvents</span><span class="sxs-lookup"><span data-stu-id="e19d2-103">List impossibleTravelRiskEvents</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ec5b8-104">impossibletravelriskevent オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-104">Retrieve a list of impossibletravelriskevent objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ec5b8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ec5b8-105">Permissions</span></span>
-<span data-ttu-id="ec5b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e19d2-104">impossibletravelriskevent オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="e19d2-104">Retrieve a list of impossibletravelriskevent objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e19d2-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e19d2-105">Permissions</span></span>
+<span data-ttu-id="e19d2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19d2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ec5b8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ec5b8-108">Permission type</span></span>      | <span data-ttu-id="ec5b8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ec5b8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e19d2-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e19d2-108">Permission type</span></span>      | <span data-ttu-id="e19d2-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e19d2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ec5b8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ec5b8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ec5b8-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="ec5b8-111">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="ec5b8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ec5b8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec5b8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-113">Not supported.</span></span>    |
-|<span data-ttu-id="ec5b8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ec5b8-114">Application</span></span> | <span data-ttu-id="ec5b8-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="ec5b8-115">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="e19d2-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e19d2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e19d2-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="e19d2-111">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="e19d2-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e19d2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e19d2-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e19d2-113">Not supported.</span></span>    |
+|<span data-ttu-id="e19d2-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e19d2-114">Application</span></span> | <span data-ttu-id="e19d2-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="e19d2-115">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ec5b8-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ec5b8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e19d2-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e19d2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /impossibleTravelRiskEvents
 ```
-## <a name="request-headers"></a><span data-ttu-id="ec5b8-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ec5b8-117">Request headers</span></span>
-| <span data-ttu-id="ec5b8-118">名前</span><span class="sxs-lookup"><span data-stu-id="ec5b8-118">Name</span></span>      |<span data-ttu-id="ec5b8-119">説明</span><span class="sxs-lookup"><span data-stu-id="ec5b8-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e19d2-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e19d2-117">Request headers</span></span>
+| <span data-ttu-id="e19d2-118">名前</span><span class="sxs-lookup"><span data-stu-id="e19d2-118">Name</span></span>      |<span data-ttu-id="e19d2-119">説明</span><span class="sxs-lookup"><span data-stu-id="e19d2-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ec5b8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec5b8-120">Authorization</span></span>  | <span data-ttu-id="ec5b8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ec5b8-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ec5b8-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ec5b8-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e19d2-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e19d2-120">Authorization</span></span>  | <span data-ttu-id="e19d2-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e19d2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e19d2-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e19d2-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e19d2-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e19d2-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ec5b8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="ec5b8-126">Request body</span></span>
-<span data-ttu-id="ec5b8-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e19d2-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e19d2-126">Request body</span></span>
+<span data-ttu-id="e19d2-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e19d2-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ec5b8-128">応答</span><span class="sxs-lookup"><span data-stu-id="ec5b8-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e19d2-128">応答</span><span class="sxs-lookup"><span data-stu-id="e19d2-128">Response</span></span>
 
-<span data-ttu-id="ec5b8-129">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-129">If successful, this method returns a `200 OK` response code and collection of [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ec5b8-130">例</span><span class="sxs-lookup"><span data-stu-id="ec5b8-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ec5b8-131">要求</span><span class="sxs-lookup"><span data-stu-id="ec5b8-131">Request</span></span>
-<span data-ttu-id="ec5b8-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-132">Here is an example of the request.</span></span>
+<span data-ttu-id="e19d2-129">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="e19d2-129">If successful, this method returns a `200 OK` response code and collection of [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e19d2-130">例</span><span class="sxs-lookup"><span data-stu-id="e19d2-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e19d2-131">要求</span><span class="sxs-lookup"><span data-stu-id="e19d2-131">Request</span></span>
+<span data-ttu-id="e19d2-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e19d2-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_impossibletravelriskevents"
@@ -50,8 +50,8 @@ GET /impossibleTravelRiskEvents
 ```http
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents
 ```
-##### <a name="response"></a><span data-ttu-id="ec5b8-133">応答</span><span class="sxs-lookup"><span data-stu-id="ec5b8-133">Response</span></span>
-<span data-ttu-id="ec5b8-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ec5b8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e19d2-133">応答</span><span class="sxs-lookup"><span data-stu-id="e19d2-133">Response</span></span>
+<span data-ttu-id="e19d2-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e19d2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,8 +98,6 @@ Content-length: 313
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/impossibletravelriskevent-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
