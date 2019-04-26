@@ -6,11 +6,11 @@ title: 他の形式に変換する
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481854"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575395"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 

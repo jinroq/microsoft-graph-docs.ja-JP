@@ -1,35 +1,35 @@
 ---
-title: セキュリティ リソースの種類
-description: セキュリティ リソースは、セキュリティ オブジェクト モデルのエントリ ポイントです。 シングルトンのセキュリティ リソースを返します。 使用可能なプロパティが含まれていません。
+title: セキュリティリソースの種類
+description: セキュリティリソースは、セキュリティオブジェクトモデルのエントリポイントです。 単一のセキュリティリソースを返します。 使用可能なプロパティは含まれていません。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: c7bf3f279e50efb451188426d030e356d55ad6be
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579213"
 ---
-# <a name="security-resource-type"></a>セキュリティ リソースの種類
+# <a name="security-resource-type"></a>セキュリティリソースの種類
 
-セキュリティ リソースは、セキュリティ オブジェクト モデルのエントリ ポイントです。 シングルトンのセキュリティ リソースを返します。 使用可能なプロパティが含まれていません。
+セキュリティリソースは、セキュリティオブジェクトモデルのエントリポイントです。 単一のセキュリティリソースを返します。 使用可能なプロパティは含まれていません。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型 | 説明 |
 |:-------------|:------------|:------------|
-| [警告の一覧表示](../api/alert-list.md) | [アラート](alert.md)のコレクション | Alert オブジェクトのコレクションを取得します。 |
-| [アラートを取得します。](../api/alert-get.md) | [アラート](alert.md)のコレクション | Alert オブジェクトを取得します。 |
-| [アラートを更新します。](../api/alert-update.md) | [アラート](alert.md)のコレクション | Alert オブジェクトを取得します。 |
+| [警告の一覧表示](../api/alert-list.md) | [alert](alert.md)コレクション | 通知オブジェクトのコレクションを取得します。 |
+| [通知を取得する](../api/alert-get.md) | [alert](alert.md)コレクション | 通知オブジェクトを取得します。 |
+| [アラートを更新する](../api/alert-update.md) | [alert](alert.md)コレクション | 通知オブジェクトを取得します。 |
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型        | 説明 |
 |:-------------|:------------|:------------|
-|alerts|[アラート](alert.md)のコレクション| 読み取り専用です。Null 許容型。|
+|アラート|[alert](alert.md)コレクション| 読み取り専用。Null 許容型です。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,7 +48,7 @@ ms.locfileid: "27983255"
 
 ## <a name="example"></a>例
 
-**セキュリティ**リソースは、グラフのルートに使用できます。
+**セキュリティ**リソースは、グラフのルートで使用できます。
 
 <!--{
   "blockType": "request"

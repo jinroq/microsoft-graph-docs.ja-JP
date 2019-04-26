@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574597"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -24,25 +24,25 @@ Microsoft Graph を使用して、作成した[タブ プロバイダー](https:
 
 ## <a name="website-tabs"></a>Web サイトのタブ
 
-Web サイトのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.web` です。 構成は以下のとおりです。
+Web サイトのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.web` です。 構成を次に示します。
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | Null                                                     |
-| contentUrl | 文字列      | Web サイトの URL                                       |
-| removeUrl  | 文字列      | Null                                                     |
-| websiteUrl | 文字列      | Web サイトの URL                                       |
+| entityId   | string      | Null                                                     |
+| contentUrl | string      | Web サイトの URL                                       |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Web サイトの URL                                       |
 
 ## <a name="planner-tabs"></a>Planner のタブ
 
-Planner のタブの場合、teamsAppId は `com.microsoft.teamspace.tab.planner` です。 構成は以下のとおりです。
+Planner のタブの場合、teamsAppId は `com.microsoft.teamspace.tab.planner` です。 構成を次に示します。
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | プラン ID (GET /planner/plans/{id} で使用する ID)。                                              |
-| contentUrl | 文字列      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`。ここで、{tenantName} はテナントの名前 (example.onmicrosoft.com など) で、{planId} はエンティティ ID と同じです。  |
-| removeUrl  | 文字列      | contentUrl と同じ値。    |
-| websiteUrl | 文字列      | contentUrl と同じ値。   |
+| entityId   | string      | プラン ID (GET /planner/plans/{id} で使用する ID)。                                              |
+| contentUrl | string      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`。ここで、{tenantName} はテナントの名前 (example.onmicrosoft.com など) で、{planId} はエンティティ ID と同じです。  |
+| removeUrl  | string      | contentUrl と同じ値。    |
+| websiteUrl | string      | contentUrl と同じ値。   |
 
 Planner タブに表示される新しいプランを作成するには、「[plannerPlan の作成](/graph/api/planner-post-plans?view=graph-rest-beta)」を参照してください。
 
@@ -52,10 +52,10 @@ Microsoft Stream のタブの場合、`teamsAppId` は `com.microsoftstream.embe
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | Null                                                     |
-| contentUrl | 文字列      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`。ここで、{id} は、ビデオ ストリームの ID です。 ストリームの {id} を見つけるには、ブラウザーでストリームを開いて、URL を調べます。形式は、`https://{domain}.microsoftstream.com/video/{id}` になります。  |
-| removeUrl  | 文字列      | Null                                                     |
-| websiteUrl | 文字列      | `https://web.microsoftstream.com/video/{id}`。ここで、{id} は、ビデオ ストリームの ID です。    |
+| entityId   | string      | Null                                                     |
+| contentUrl | string      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`。ここで、{id} は、ビデオ ストリームの ID です。 ストリームの {id} を見つけるには、ブラウザーでストリームを開いて、URL を調べます。形式は、`https://{domain}.microsoftstream.com/video/{id}` になります。  |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | `https://web.microsoftstream.com/video/{id}`。ここで、{id} は、ビデオ ストリームの ID です。    |
 
 ## <a name="microsoft-forms-tabs"></a>Microsoft Forms のタブ
 
@@ -64,10 +64,10 @@ Microsoft Forms のタブの場合、`teamsAppId` は `81fef3a6-72aa-4648-a763-d
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | フォームの ID。  この値を定義し、Forms Web サイトのフォームに移動して、フォームの URL (`https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`) を見つけます。      |
-| contentUrl | 文字列      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`。ここで、{formId} はエンティティ ID と同じで、{locale}、{groupId}、{tid}、{upn} はリテラルです。   |
-| removeUrl  | 文字列      | Null                                                     |
-| websiteUrl | 文字列      |  `https://forms.office.com`    |
+| entityId   | string      | フォームの ID。  この値を定義し、Forms Web サイトのフォームに移動して、フォームの URL (`https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`) を見つけます。      |
+| contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`。ここで、{formId} はエンティティ ID と同じで、{locale}、{groupId}、{tid}、{upn} はリテラルです。   |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      |  `https://forms.office.com`    |
 
 ## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Word、Excel、PowerPoint、PDF のタブ
 
@@ -84,9 +84,9 @@ Microsoft Forms のタブの場合、`teamsAppId` は `81fef3a6-72aa-4648-a763-d
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 文字列      | ファイルの sourceDoc ID。 これは、SharePoint でファイルを開き、アドレス バーを見ると確認できます。URL に `sourcedoc=%7B{sourceDocId}%7D` 句があります。 これは、ドキュメントの SharePoint ドライブ項目の webUrl から派生させることもできます。 詳細については、「[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)」を参照してください。 |
+| entityId   | string      | ファイルの sourceDoc ID。 これは、SharePoint でファイルを開き、アドレス バーを見ると確認できます。URL に `sourcedoc=%7B{sourceDocId}%7D` 句があります。 これは、ドキュメントの SharePoint ドライブ項目の webUrl から派生させることもできます。 詳細については、「[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)」を参照してください。 |
 | contentUrl | 文字列      | ファイルの URL (`{folder-webUrl}/{item-name}` 形式)。 {folder-webUrl} はファイルを含む SharePoint フォルダーの webUrl です。これは SharePoint でファイルを開いてアドレス バーを確認するか、[GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) から webUrl プロパティを使用することで確認できます。 {item-name} はファイル名です (例: file.docx)。これは [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) の `name` プロパティです。 |
-| removeUrl  | 文字列      | Null                                                     |
+| removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                       |
 
 ### <a name="example-create-a-configured-word-tab"></a>例: 構成された Word タブを作成する
@@ -115,7 +115,7 @@ Wiki のタブは、Graph による構成をサポートしていません。
 
 ## <a name="document-library-tabs"></a>ドキュメント ライブラリのタブ
 
-ドキュメント ライブラリのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.files.sharepoint` です。 構成は以下のとおりです。
+ドキュメント ライブラリのタブの場合、`teamsAppId` は `com.microsoft.teamspace.tab.files.sharepoint` です。 構成を次に示します。
 
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |

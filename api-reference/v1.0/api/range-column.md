@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 21338edb35c8e3e7c060d0f4a03e7e3e77f4e60b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575269"
 ---
 # <a name="range-column"></a>範囲:列
 
@@ -38,11 +38,11 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="path-parameters"></a>パス パラメーター
-要求のパスには、次のパラメーターを提供します。
+要求パスに、次のパラメーターを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|列|Int32|取得する範囲の列番号。0 を起点とする番号になります。|
+|column|Int32|取得する範囲の列番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 
