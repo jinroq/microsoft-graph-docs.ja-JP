@@ -4,45 +4,46 @@ description: serviceHostedMediaConfig の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fbd59694940d6d0b3abea1a8d56bd426a3dfbb3a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463282"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343304"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="cf050-103">serviceHostedMediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cf050-103">serviceHostedMediaConfig resource type</span></span>
+# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="83e45-103">serviceHostedMediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="83e45-103">serviceHostedMediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cf050-104">serviceHostedMediaConfig の種類。</span><span class="sxs-lookup"><span data-stu-id="cf050-104">The serviceHostedMediaConfig type.</span></span>
+<span data-ttu-id="83e45-104">serviceHostedMediaConfig の種類。</span><span class="sxs-lookup"><span data-stu-id="83e45-104">The serviceHostedMediaConfig type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cf050-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cf050-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="83e45-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="83e45-105">Properties</span></span>
 
-| <span data-ttu-id="cf050-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cf050-106">Property</span></span>                    | <span data-ttu-id="cf050-107">型</span><span class="sxs-lookup"><span data-stu-id="cf050-107">Type</span></span>                                                        | <span data-ttu-id="cf050-108">説明</span><span class="sxs-lookup"><span data-stu-id="cf050-108">Description</span></span>                                       |
+| <span data-ttu-id="83e45-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="83e45-106">Property</span></span>                    | <span data-ttu-id="83e45-107">型</span><span class="sxs-lookup"><span data-stu-id="83e45-107">Type</span></span>                                                        | <span data-ttu-id="83e45-108">説明</span><span class="sxs-lookup"><span data-stu-id="83e45-108">Description</span></span>                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| <span data-ttu-id="cf050-109">prefetchmedia</span><span class="sxs-lookup"><span data-stu-id="cf050-109">preFetchMedia</span></span>               | <span data-ttu-id="cf050-110">[mediaInfo](mediainfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="cf050-110">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="cf050-111">事前にフェッチするメディアのリスト。</span><span class="sxs-lookup"><span data-stu-id="cf050-111">The list of media to pre-fetch.</span></span>                   |
-| <span data-ttu-id="cf050-112">removefromdefaultaudiogroup</span><span class="sxs-lookup"><span data-stu-id="cf050-112">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="cf050-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="cf050-113">Boolean</span></span>                                                     | <span data-ttu-id="cf050-114">既定のオーディオグループから自分の参加者を削除します。</span><span class="sxs-lookup"><span data-stu-id="cf050-114">Remove self participant from default audio group.</span></span> |
+| <span data-ttu-id="83e45-109">prefetchmedia</span><span class="sxs-lookup"><span data-stu-id="83e45-109">preFetchMedia</span></span>               | <span data-ttu-id="83e45-110">[mediaInfo](mediainfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="83e45-110">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="83e45-111">事前にフェッチするメディアのリスト。</span><span class="sxs-lookup"><span data-stu-id="83e45-111">The list of media to pre-fetch.</span></span>                   |
+| <span data-ttu-id="83e45-112">removefromdefaultaudiogroup</span><span class="sxs-lookup"><span data-stu-id="83e45-112">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="83e45-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="83e45-113">Boolean</span></span>                                                     | <span data-ttu-id="83e45-114">既定のオーディオグループから自分の参加者を削除します。</span><span class="sxs-lookup"><span data-stu-id="83e45-114">Remove self participant from default audio group.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="cf050-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="cf050-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="83e45-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="83e45-115">JSON representation</span></span>
 
-<span data-ttu-id="cf050-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cf050-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="83e45-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="83e45-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "preFetchMedia"
   ],
+  "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="cf050-117">例</span><span class="sxs-lookup"><span data-stu-id="cf050-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="83e45-117">例</span><span class="sxs-lookup"><span data-stu-id="83e45-117">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -73,8 +74,6 @@ ms.locfileid: "32463282"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/servicehostedmediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,34 +4,35 @@ description: メディアがないことを示すためのメディア構成。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec1c70e233f46ad0098a6a7ee76d4d46f3b82c20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581637"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342157"
 ---
-# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="fd9d8-103">noMediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fd9d8-103">noMediaConfig resource type</span></span>
+# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="4e3ed-103">noMediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4e3ed-103">noMediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd9d8-104">メディアがないことを示すためのメディア構成。</span><span class="sxs-lookup"><span data-stu-id="fd9d8-104">Media configuration for indicating no media.</span></span>
+<span data-ttu-id="4e3ed-104">メディアがないことを示すためのメディア構成。</span><span class="sxs-lookup"><span data-stu-id="4e3ed-104">Media configuration for indicating no media.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fd9d8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fd9d8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4e3ed-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e3ed-105">Properties</span></span>
 
-| <span data-ttu-id="fd9d8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fd9d8-106">Property</span></span>       | <span data-ttu-id="fd9d8-107">型</span><span class="sxs-lookup"><span data-stu-id="fd9d8-107">Type</span></span>    | <span data-ttu-id="fd9d8-108">説明</span><span class="sxs-lookup"><span data-stu-id="fd9d8-108">Description</span></span>|
+| <span data-ttu-id="4e3ed-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e3ed-106">Property</span></span>       | <span data-ttu-id="4e3ed-107">型</span><span class="sxs-lookup"><span data-stu-id="4e3ed-107">Type</span></span>    | <span data-ttu-id="4e3ed-108">説明</span><span class="sxs-lookup"><span data-stu-id="4e3ed-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fd9d8-109">removefromdefaultaudiogroup</span><span class="sxs-lookup"><span data-stu-id="fd9d8-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="fd9d8-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="fd9d8-110">Boolean</span></span> |  |
+| <span data-ttu-id="4e3ed-109">removefromdefaultaudiogroup</span><span class="sxs-lookup"><span data-stu-id="4e3ed-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="4e3ed-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="4e3ed-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="fd9d8-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fd9d8-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4e3ed-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4e3ed-111">JSON representation</span></span>
 
-<span data-ttu-id="fd9d8-112">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fd9d8-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4e3ed-112">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4e3ed-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ ms.locfileid: "32581637"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/nomediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

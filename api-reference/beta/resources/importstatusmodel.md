@@ -2,20 +2,20 @@
 title: importstatusmodel リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: c3fe64245d0fbce98db3ba87c3c39694e998c7e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc1b0271d941b2e91d5b7ecbede9222de34a715e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548538"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340055"
 ---
-# <a name="importstatusmodel-resource-type"></a><span data-ttu-id="7f584-103">importstatusmodel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="7f584-103">importStatusModel resource type</span></span>
+# <a name="importstatusmodel-resource-type"></a><span data-ttu-id="637e4-103">importstatusmodel リソースの種類</span><span class="sxs-lookup"><span data-stu-id="637e4-103">importStatusModel resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="7f584-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7f584-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="637e4-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="637e4-104">JSON representation</span></span>
 
-<span data-ttu-id="7f584-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="7f584-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="637e4-105">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="637e4-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,12 +33,12 @@ ms.locfileid: "32548538"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="7f584-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7f584-106">Properties</span></span>
-| <span data-ttu-id="7f584-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7f584-107">Property</span></span>     | <span data-ttu-id="7f584-108">型</span><span class="sxs-lookup"><span data-stu-id="7f584-108">Type</span></span>   |<span data-ttu-id="7f584-109">説明</span><span class="sxs-lookup"><span data-stu-id="7f584-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="637e4-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="637e4-106">Properties</span></span>
+| <span data-ttu-id="637e4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="637e4-107">Property</span></span>     | <span data-ttu-id="637e4-108">型</span><span class="sxs-lookup"><span data-stu-id="637e4-108">Type</span></span>   |<span data-ttu-id="637e4-109">説明</span><span class="sxs-lookup"><span data-stu-id="637e4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7f584-110">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="7f584-110">createdDateTime</span></span>| <span data-ttu-id="7f584-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7f584-111">DateTimeOffset</span></span> ||
-|<span data-ttu-id="7f584-112">id</span><span class="sxs-lookup"><span data-stu-id="7f584-112">id</span></span>|<span data-ttu-id="7f584-113">string</span><span class="sxs-lookup"><span data-stu-id="7f584-113">string</span></span>||
-|<span data-ttu-id="7f584-114">status</span><span class="sxs-lookup"><span data-stu-id="7f584-114">status</span></span>|<span data-ttu-id="7f584-115">string</span><span class="sxs-lookup"><span data-stu-id="7f584-115">string</span></span>||
+|<span data-ttu-id="637e4-110">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="637e4-110">createdDateTime</span></span>| <span data-ttu-id="637e4-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="637e4-111">DateTimeOffset</span></span> ||
+|<span data-ttu-id="637e4-112">id</span><span class="sxs-lookup"><span data-stu-id="637e4-112">id</span></span>|<span data-ttu-id="637e4-113">string</span><span class="sxs-lookup"><span data-stu-id="637e4-113">string</span></span>||
+|<span data-ttu-id="637e4-114">status</span><span class="sxs-lookup"><span data-stu-id="637e4-114">status</span></span>|<span data-ttu-id="637e4-115">string</span><span class="sxs-lookup"><span data-stu-id="637e4-115">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -49,8 +49,6 @@ ms.locfileid: "32548538"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/importstatusmodel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

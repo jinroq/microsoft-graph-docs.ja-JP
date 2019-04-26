@@ -4,28 +4,28 @@ description: '**plannerRecentPlanReferenceCollection**リソースは、ユー�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: e27375e3f2395b3528873d8b83f0b5aa6f48d52e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2b2607f8b5cf3dbd91e69ab71a737037cbd0a94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583180"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344348"
 ---
-# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="97258-106">plannerRecentPlanReferenceCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="97258-106">plannerRecentPlanReferenceCollection resource type</span></span>
+# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="c580c-106">plannerRecentPlanReferenceCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c580c-106">plannerRecentPlanReferenceCollection resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97258-107">**plannerRecentPlanReferenceCollection**リソースは、ユーザーが最近参照したプランへの参照のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="97258-107">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="97258-108">このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="97258-108">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="97258-109">プロパティ名は、対応するプランの ID です。</span><span class="sxs-lookup"><span data-stu-id="97258-109">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="97258-110">プロパティと値のペアの値は、 [plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="97258-110">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
-<span data-ttu-id="97258-111">このコレクションに新しい参照を追加すると、コレクションのサイズが事前に定義された最大値を超えると、最も古いエントリが自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="97258-111">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
+<span data-ttu-id="c580c-107">**plannerRecentPlanReferenceCollection**リソースは、ユーザーが最近参照したプランへの参照のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="c580c-107">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="c580c-108">このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="c580c-108">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="c580c-109">プロパティ名は、対応するプランの ID です。</span><span class="sxs-lookup"><span data-stu-id="c580c-109">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="c580c-110">プロパティと値のペアの値は、 [plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="c580c-110">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
+<span data-ttu-id="c580c-111">このコレクションに新しい参照を追加すると、コレクションのサイズが事前に定義された最大値を超えると、最も古いエントリが自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="c580c-111">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="97258-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97258-112">Properties</span></span>
-<span data-ttu-id="97258-113">このオープン型のプロパティを定義できます。</span><span class="sxs-lookup"><span data-stu-id="97258-113">You can define the properties of this open type.</span></span> <span data-ttu-id="97258-114">プロパティ名は、 `id` plan リソース[](plannerplan.md)およびその値が[plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトである必要があることを示す値です。</span><span class="sxs-lookup"><span data-stu-id="97258-114">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="97258-115">[お気に入り] の一覧から項目を削除するには、プロパティの値`null`をに設定します。</span><span class="sxs-lookup"><span data-stu-id="97258-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="c580c-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c580c-112">Properties</span></span>
+<span data-ttu-id="c580c-113">このオープン型のプロパティを定義できます。</span><span class="sxs-lookup"><span data-stu-id="c580c-113">You can define the properties of this open type.</span></span> <span data-ttu-id="c580c-114">プロパティ名は、 `id` plan リソース[](plannerplan.md)およびその値が[plannerRecentPlanReference](plannerrecentplanreference.md)オブジェクトである必要があることを示す値です。</span><span class="sxs-lookup"><span data-stu-id="c580c-114">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="c580c-115">[お気に入り] の一覧から項目を削除するには、プロパティの値`null`をに設定します。</span><span class="sxs-lookup"><span data-stu-id="c580c-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="97258-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="97258-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c580c-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c580c-116">JSON representation</span></span>
 
-<span data-ttu-id="97258-117">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="97258-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c580c-117">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c580c-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -61,8 +61,6 @@ ms.locfileid: "32583180"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerrecentplanreferencecollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

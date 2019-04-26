@@ -4,22 +4,22 @@ description: OneNote ノートブックを開くためのリンクです。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f6995c112410d22cfe5849f54d0077bf8b79f6b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b9ea408c869c5ad8fb546b6ea9548f3fc7c33b63
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463286"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342152"
 ---
-# <a name="notebooklinks-resource-type"></a><span data-ttu-id="2242d-103">notebookLinks リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2242d-103">notebookLinks resource type</span></span>
+# <a name="notebooklinks-resource-type"></a><span data-ttu-id="3ea89-103">notebookLinks リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3ea89-103">notebookLinks resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2242d-104">OneNote ノートブックを開くためのリンクです。</span><span class="sxs-lookup"><span data-stu-id="2242d-104">Links for opening a OneNote notebook.</span></span>
+<span data-ttu-id="3ea89-104">OneNote ノートブックを開くためのリンクです。</span><span class="sxs-lookup"><span data-stu-id="3ea89-104">Links for opening a OneNote notebook.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2242d-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2242d-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ea89-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3ea89-105">JSON representation</span></span>
 
-<span data-ttu-id="2242d-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2242d-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ea89-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="3ea89-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,11 +36,11 @@ ms.locfileid: "32463286"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="2242d-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2242d-107">Properties</span></span>
-| <span data-ttu-id="2242d-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2242d-108">Property</span></span>     | <span data-ttu-id="2242d-109">型</span><span class="sxs-lookup"><span data-stu-id="2242d-109">Type</span></span>   |<span data-ttu-id="2242d-110">説明</span><span class="sxs-lookup"><span data-stu-id="2242d-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3ea89-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3ea89-107">Properties</span></span>
+| <span data-ttu-id="3ea89-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3ea89-108">Property</span></span>     | <span data-ttu-id="3ea89-109">型</span><span class="sxs-lookup"><span data-stu-id="3ea89-109">Type</span></span>   |<span data-ttu-id="3ea89-110">説明</span><span class="sxs-lookup"><span data-stu-id="3ea89-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2242d-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="2242d-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="2242d-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="2242d-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="2242d-113">OneNote のネイティブ クライアントでノートブックを開きます (インストールされている場合)。</span><span class="sxs-lookup"><span data-stu-id="2242d-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="2242d-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="2242d-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="2242d-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="2242d-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="2242d-116">OneNote Online でノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="2242d-116">Opens the notebook in OneNote Online.</span></span>|
+|<span data-ttu-id="3ea89-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="3ea89-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="3ea89-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="3ea89-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="3ea89-113">OneNote のネイティブ クライアントでノートブックを開きます (インストールされている場合)。</span><span class="sxs-lookup"><span data-stu-id="3ea89-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="3ea89-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="3ea89-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="3ea89-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="3ea89-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="3ea89-116">OneNote Online でノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="3ea89-116">Opens the notebook in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -51,8 +51,6 @@ ms.locfileid: "32463286"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/notebooklinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

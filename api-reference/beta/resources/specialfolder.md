@@ -4,29 +4,29 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: ff1bee4ce71bf76c94951d298f80db74609710e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fb192780e4841b584f9bb8b503ab47474949e20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582277"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342969"
 ---
-# <a name="specialfolder-resource-type"></a><span data-ttu-id="9eab7-102">SpecialFolder リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9eab7-102">SpecialFolder resource type</span></span>
+# <a name="specialfolder-resource-type"></a><span data-ttu-id="e743f-102">SpecialFolder リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e743f-102">SpecialFolder resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9eab7-103">**SpecialFolder**リソースは、特殊フォルダー関連のデータ項目を単一の構造にグループ化します。</span><span class="sxs-lookup"><span data-stu-id="9eab7-103">The **SpecialFolder** resource groups special folder-related data items into a single structure.</span></span>
+<span data-ttu-id="e743f-103">**SpecialFolder**リソースは、特殊フォルダー関連のデータ項目を単一の構造にグループ化します。</span><span class="sxs-lookup"><span data-stu-id="e743f-103">The **SpecialFolder** resource groups special folder-related data items into a single structure.</span></span>
 
-<span data-ttu-id="9eab7-104">**DriveItem** が null 以外の **specialFolder** ファセットを持つ場合、その項目は特殊な (名前が付けられた) フォルダーを示します。</span><span class="sxs-lookup"><span data-stu-id="9eab7-104">If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.</span></span>
-<span data-ttu-id="9eab7-105">特殊なフォルダーは [特殊なフォルダーのコレクション](../api/drive-get-specialfolder.md) 経由で直接アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="9eab7-105">Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).</span></span>
+<span data-ttu-id="e743f-104">**DriveItem** が null 以外の **specialFolder** ファセットを持つ場合、その項目は特殊な (名前が付けられた) フォルダーを示します。</span><span class="sxs-lookup"><span data-stu-id="e743f-104">If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.</span></span>
+<span data-ttu-id="e743f-105">特殊なフォルダーは [特殊なフォルダーのコレクション](../api/drive-get-specialfolder.md) 経由で直接アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="e743f-105">Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).</span></span>
 
-<span data-ttu-id="9eab7-p102">特殊なフォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊なフォルダーが名前変更されたりドライブ内の別の場所に移動されたりした場合、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="9eab7-p102">Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.</span></span>
+<span data-ttu-id="e743f-p102">特殊なフォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊なフォルダーが名前変更されたりドライブ内の別の場所に移動されたりした場合、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="e743f-p102">Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.</span></span>
 
-<span data-ttu-id="9eab7-p103">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="9eab7-p103">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+<span data-ttu-id="e743f-p103">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="e743f-p103">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-<span data-ttu-id="9eab7-110">**注:** アプリが **Files.Read** スコープのみを要求していて、存在しない特殊なフォルダーを要求する場合、返答は `403 Forbidden` エラーになります。</span><span class="sxs-lookup"><span data-stu-id="9eab7-110">**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.</span></span>
+<span data-ttu-id="e743f-110">**注:** アプリが **Files.Read** スコープのみを要求していて、存在しない特殊なフォルダーを要求する場合、返答は `403 Forbidden` エラーになります。</span><span class="sxs-lookup"><span data-stu-id="e743f-110">**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9eab7-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9eab7-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e743f-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e743f-111">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,27 +41,27 @@ ms.locfileid: "32582277"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="9eab7-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9eab7-112">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e743f-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e743f-112">Properties</span></span>
 
-| <span data-ttu-id="9eab7-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9eab7-113">Property</span></span>  | <span data-ttu-id="9eab7-114">型</span><span class="sxs-lookup"><span data-stu-id="9eab7-114">Type</span></span>   | <span data-ttu-id="9eab7-115">説明</span><span class="sxs-lookup"><span data-stu-id="9eab7-115">Description</span></span>                                                            |
+| <span data-ttu-id="e743f-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e743f-113">Property</span></span>  | <span data-ttu-id="e743f-114">型</span><span class="sxs-lookup"><span data-stu-id="e743f-114">Type</span></span>   | <span data-ttu-id="e743f-115">説明</span><span class="sxs-lookup"><span data-stu-id="e743f-115">Description</span></span>                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
-| <span data-ttu-id="9eab7-116">name</span><span class="sxs-lookup"><span data-stu-id="9eab7-116">name</span></span>      | <span data-ttu-id="9eab7-117">string</span><span class="sxs-lookup"><span data-stu-id="9eab7-117">string</span></span> | <span data-ttu-id="9eab7-118">`/drive/special` コレクション内のこの項目の一意識別子</span><span class="sxs-lookup"><span data-stu-id="9eab7-118">The unique identifier for this item in the `/drive/special` collection</span></span> |
+| <span data-ttu-id="e743f-116">name</span><span class="sxs-lookup"><span data-stu-id="e743f-116">name</span></span>      | <span data-ttu-id="e743f-117">string</span><span class="sxs-lookup"><span data-stu-id="e743f-117">string</span></span> | <span data-ttu-id="e743f-118">`/drive/special` コレクション内のこの項目の一意識別子</span><span class="sxs-lookup"><span data-stu-id="e743f-118">The unique identifier for this item in the `/drive/special` collection</span></span> |
 
-## <a name="special-folders"></a><span data-ttu-id="9eab7-119">特殊なフォルダー</span><span class="sxs-lookup"><span data-stu-id="9eab7-119">Special folders</span></span>
+## <a name="special-folders"></a><span data-ttu-id="e743f-119">特殊なフォルダー</span><span class="sxs-lookup"><span data-stu-id="e743f-119">Special folders</span></span>
 
-<span data-ttu-id="9eab7-120">以下は OneDrive Personal および OneDrive for Business で利用可能な特殊なフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="9eab7-120">Here are the special folders available in OneDrive Personal and OneDrive for Business.</span></span>
+<span data-ttu-id="e743f-120">以下は OneDrive Personal および OneDrive for Business で利用可能な特殊なフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="e743f-120">Here are the special folders available in OneDrive Personal and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="9eab7-121">名前</span><span class="sxs-lookup"><span data-stu-id="9eab7-121">Name</span></span>        | <span data-ttu-id="9eab7-122">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="9eab7-122">Folder id</span></span>    | <span data-ttu-id="9eab7-123">説明</span><span class="sxs-lookup"><span data-stu-id="9eab7-123">Description</span></span>                                                              |
+| <span data-ttu-id="e743f-121">名前</span><span class="sxs-lookup"><span data-stu-id="e743f-121">Name</span></span>        | <span data-ttu-id="e743f-122">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="e743f-122">Folder id</span></span>    | <span data-ttu-id="e743f-123">説明</span><span class="sxs-lookup"><span data-stu-id="e743f-123">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="9eab7-124">App Root</span><span class="sxs-lookup"><span data-stu-id="9eab7-124">App Root</span></span>    | `approot`    | <span data-ttu-id="9eab7-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="9eab7-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="9eab7-127">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="9eab7-127">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="9eab7-p105">カメラ ロールのバックアップ フォルダー。OneDrive for Business では利用不可です。</span><span class="sxs-lookup"><span data-stu-id="9eab7-p105">The Camera Roll Backup folder. Not available in OneDrive for Business.</span></span>   |
-| <span data-ttu-id="9eab7-130">Documents</span><span class="sxs-lookup"><span data-stu-id="9eab7-130">Documents</span></span>   | `documents`  | <span data-ttu-id="9eab7-131">ドキュメント フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="9eab7-131">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="9eab7-132">Music</span><span class="sxs-lookup"><span data-stu-id="9eab7-132">Music</span></span>       | `music`      | <span data-ttu-id="9eab7-p106">ミュージック フォルダーです。OneDrive for Business では利用不可です。</span><span class="sxs-lookup"><span data-stu-id="9eab7-p106">The Music folder. Not available in OneDrive for Business.</span></span>                |
-| <span data-ttu-id="9eab7-135">Photos</span><span class="sxs-lookup"><span data-stu-id="9eab7-135">Photos</span></span>      | `photos`     | <span data-ttu-id="9eab7-136">フォト フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="9eab7-136">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="e743f-124">App Root</span><span class="sxs-lookup"><span data-stu-id="e743f-124">App Root</span></span>    | `approot`    | <span data-ttu-id="e743f-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="e743f-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="e743f-127">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="e743f-127">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="e743f-p105">カメラ ロールのバックアップ フォルダー。OneDrive for Business では利用不可です。</span><span class="sxs-lookup"><span data-stu-id="e743f-p105">The Camera Roll Backup folder. Not available in OneDrive for Business.</span></span>   |
+| <span data-ttu-id="e743f-130">Documents</span><span class="sxs-lookup"><span data-stu-id="e743f-130">Documents</span></span>   | `documents`  | <span data-ttu-id="e743f-131">ドキュメント フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="e743f-131">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="e743f-132">Music</span><span class="sxs-lookup"><span data-stu-id="e743f-132">Music</span></span>       | `music`      | <span data-ttu-id="e743f-p106">ミュージック フォルダーです。OneDrive for Business では利用不可です。</span><span class="sxs-lookup"><span data-stu-id="e743f-p106">The Music folder. Not available in OneDrive for Business.</span></span>                |
+| <span data-ttu-id="e743f-135">Photos</span><span class="sxs-lookup"><span data-stu-id="e743f-135">Photos</span></span>      | `photos`     | <span data-ttu-id="e743f-136">フォト フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="e743f-136">The Photos folder.</span></span>                                                       |
 
-## <a name="remarks"></a><span data-ttu-id="9eab7-137">備考</span><span class="sxs-lookup"><span data-stu-id="9eab7-137">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="e743f-137">備考</span><span class="sxs-lookup"><span data-stu-id="e743f-137">Remarks</span></span> 
 
-<span data-ttu-id="9eab7-138">DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9eab7-138">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="e743f-138">DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e743f-138">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,8 +73,6 @@ ms.locfileid: "32582277"
   "keywords": "special folder,item,facet",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

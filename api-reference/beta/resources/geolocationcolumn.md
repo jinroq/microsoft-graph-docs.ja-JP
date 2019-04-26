@@ -4,22 +4,22 @@ ms.author: kevinlam
 ms.date: 09/10/2018
 title: geolocationcolumn
 localization_priority: Normal
-ms.openlocfilehash: 9c39a7f646f6f78a9e321f05765a252d5f66de30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506429"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333731"
 ---
-# <a name="geolocationcolumn-resource-type"></a><span data-ttu-id="d33b4-102">geolocationcolumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d33b4-102">geolocationColumn resource type</span></span>
+# <a name="geolocationcolumn-resource-type"></a><span data-ttu-id="a459d-102">geolocationcolumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a459d-102">geolocationColumn resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d33b4-103">[columndefinition](columndefinition.md)リソースの**geolocationcolumn**は、その列が位置情報を保持していることを示します。</span><span class="sxs-lookup"><span data-stu-id="d33b4-103">The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.</span></span>
+<span data-ttu-id="a459d-103">[columndefinition](columndefinition.md)リソースの**geolocationcolumn**は、その列が位置情報を保持していることを示します。</span><span class="sxs-lookup"><span data-stu-id="a459d-103">The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d33b4-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d33b4-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a459d-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a459d-104">JSON representation</span></span>
 
-<span data-ttu-id="d33b4-105">**geolocationcolumn**リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d33b4-105">Here is a JSON representation of a **geolocationColumn** resource.</span></span>
+<span data-ttu-id="a459d-105">**geolocationcolumn**リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a459d-105">Here is a JSON representation of a **geolocationColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -27,9 +27,9 @@ ms.locfileid: "32506429"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d33b4-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d33b4-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a459d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a459d-106">Properties</span></span>
 
-<span data-ttu-id="d33b4-107">**geolocationcolumn**リソースには、プロパティが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="d33b4-107">The **geolocationColumn** resource contains no properties.</span></span>
+<span data-ttu-id="a459d-107">**geolocationcolumn**リソースには、プロパティが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="a459d-107">The **geolocationColumn** resource contains no properties.</span></span>
 
 <!--
 {
@@ -38,8 +38,6 @@ ms.locfileid: "32506429"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/GeolocationColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/geolocationcolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

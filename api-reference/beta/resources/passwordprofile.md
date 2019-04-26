@@ -2,37 +2,37 @@
 title: passwordProfile リソースの種類
 description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。ユーザー エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
 localization_priority: Normal
-ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e1bb317015177d737719ff024586c94ee05474
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568459"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344896"
 ---
-# <a name="passwordprofile-resource-type"></a><span data-ttu-id="08522-104">passwordProfile リソースの種類</span><span class="sxs-lookup"><span data-stu-id="08522-104">passwordProfile resource type</span></span>
+# <a name="passwordprofile-resource-type"></a><span data-ttu-id="f8681-104">passwordProfile リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f8681-104">passwordProfile resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08522-p102">ユーザーに関連付けられているパスワードのプロファイルが含まれています。[ユーザー](user.md) エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="08522-p102">Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.</span></span>
+<span data-ttu-id="f8681-p102">ユーザーに関連付けられているパスワードのプロファイルが含まれています。[ユーザー](user.md) エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f8681-p102">Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="08522-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="08522-107">Properties</span></span>
-| <span data-ttu-id="08522-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="08522-108">Property</span></span>     | <span data-ttu-id="08522-109">型</span><span class="sxs-lookup"><span data-stu-id="08522-109">Type</span></span>   |<span data-ttu-id="08522-110">説明</span><span class="sxs-lookup"><span data-stu-id="08522-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f8681-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f8681-107">Properties</span></span>
+| <span data-ttu-id="f8681-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f8681-108">Property</span></span>     | <span data-ttu-id="f8681-109">型</span><span class="sxs-lookup"><span data-stu-id="f8681-109">Type</span></span>   |<span data-ttu-id="f8681-110">説明</span><span class="sxs-lookup"><span data-stu-id="f8681-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="08522-111">forceChangePasswordNextSignIn</span><span class="sxs-lookup"><span data-stu-id="08522-111">forceChangePasswordNextSignIn</span></span>|<span data-ttu-id="08522-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="08522-112">Boolean</span></span>| <span data-ttu-id="08522-113">**true**の場合、次のサインイン時に、ユーザーはパスワードを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="08522-113">If **true**, at next sign-in, the user must change their password.</span></span> <span data-ttu-id="08522-114">パスワードを変更すると、このプロパティは自動的に \***false**にリセットされます。</span><span class="sxs-lookup"><span data-stu-id="08522-114">After a password change, this property will be automatically reset to \***false**.</span></span> <span data-ttu-id="08522-115">設定しない場合、既定値は **false** です。</span><span class="sxs-lookup"><span data-stu-id="08522-115">If not set, default is **false**.</span></span> |
-|<span data-ttu-id="08522-116">forceChangePasswordNextSignInWithMfa</span><span class="sxs-lookup"><span data-stu-id="08522-116">forceChangePasswordNextSignInWithMfa</span></span>|<span data-ttu-id="08522-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="08522-117">Boolean</span></span>| <span data-ttu-id="08522-118">**true** の場合、次回のサインイン時にユーザーは、パスワードの変更を強制される前に多要素認証 (MFA) を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="08522-118">If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.</span></span> <span data-ttu-id="08522-119">この動作は **forceChangePasswordNextSignIn** と同じですが、パスワードを変更する前にユーザーが多要素認証を実行する必要がある点が異なります。</span><span class="sxs-lookup"><span data-stu-id="08522-119">The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change.</span></span> <span data-ttu-id="08522-120">パスワードを変更すると、このプロパティは自動的に **false** にリセットされます。</span><span class="sxs-lookup"><span data-stu-id="08522-120">After a password change, this property will be automatically reset to **false**.</span></span> <span data-ttu-id="08522-121">設定しない場合、既定値は **false** です。</span><span class="sxs-lookup"><span data-stu-id="08522-121">If not set, default is **false**.</span></span> |
-|<span data-ttu-id="08522-122">パスワード</span><span class="sxs-lookup"><span data-stu-id="08522-122">password</span></span>|<span data-ttu-id="08522-123">String</span><span class="sxs-lookup"><span data-stu-id="08522-123">String</span></span>|<span data-ttu-id="08522-p105">ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="08522-p105">The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.</span></span>|
+|<span data-ttu-id="f8681-111">forceChangePasswordNextSignIn</span><span class="sxs-lookup"><span data-stu-id="f8681-111">forceChangePasswordNextSignIn</span></span>|<span data-ttu-id="f8681-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="f8681-112">Boolean</span></span>| <span data-ttu-id="f8681-113">**true**の場合、次のサインイン時に、ユーザーはパスワードを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8681-113">If **true**, at next sign-in, the user must change their password.</span></span> <span data-ttu-id="f8681-114">パスワードを変更すると、このプロパティは自動的に \***false**にリセットされます。</span><span class="sxs-lookup"><span data-stu-id="f8681-114">After a password change, this property will be automatically reset to \***false**.</span></span> <span data-ttu-id="f8681-115">設定しない場合、既定値は **false** です。</span><span class="sxs-lookup"><span data-stu-id="f8681-115">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="f8681-116">forceChangePasswordNextSignInWithMfa</span><span class="sxs-lookup"><span data-stu-id="f8681-116">forceChangePasswordNextSignInWithMfa</span></span>|<span data-ttu-id="f8681-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="f8681-117">Boolean</span></span>| <span data-ttu-id="f8681-118">**true** の場合、次回のサインイン時にユーザーは、パスワードの変更を強制される前に多要素認証 (MFA) を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8681-118">If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.</span></span> <span data-ttu-id="f8681-119">この動作は **forceChangePasswordNextSignIn** と同じですが、パスワードを変更する前にユーザーが多要素認証を実行する必要がある点が異なります。</span><span class="sxs-lookup"><span data-stu-id="f8681-119">The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change.</span></span> <span data-ttu-id="f8681-120">パスワードを変更すると、このプロパティは自動的に **false** にリセットされます。</span><span class="sxs-lookup"><span data-stu-id="f8681-120">After a password change, this property will be automatically reset to **false**.</span></span> <span data-ttu-id="f8681-121">設定しない場合、既定値は **false** です。</span><span class="sxs-lookup"><span data-stu-id="f8681-121">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="f8681-122">パスワード</span><span class="sxs-lookup"><span data-stu-id="f8681-122">password</span></span>|<span data-ttu-id="f8681-123">String</span><span class="sxs-lookup"><span data-stu-id="f8681-123">String</span></span>|<span data-ttu-id="f8681-p105">ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="f8681-p105">The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="08522-129">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="08522-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f8681-129">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f8681-129">JSON representation</span></span>
 
-<span data-ttu-id="08522-130">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="08522-130">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f8681-130">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="f8681-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ ms.locfileid: "32568459"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/passwordprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

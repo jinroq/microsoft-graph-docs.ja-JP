@@ -116,14 +116,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: メッセージングを自動化する
             href: outlook-create-send-messages.md
-          - name: メッセージを整理する
-            href: outlook-organize-messages.md
+          - name: MIME コンテンツ (プレビュー) を取得する
+            href: outlook-get-mime-message.md
           - name: 共有メッセージを取得する
             href: outlook-share-messages-folders.md
+          - name: 別のユーザーからメールを送信する
+            href: outlook-send-mail-from-other-user.md
+          - name: メッセージを整理する
+            href: outlook-organize-messages.md
           - name: 不変 ID (プレビュー)
             href: outlook-immutable-id.md
-          - name: 別のユーザーからのメールを送信する
-            href: outlook-send-mail-from-other-user.md
       - name: ノート
         displayName: OneNote
         items:
@@ -251,8 +253,12 @@ items:
           - name: 調整
             href: throttling.md
           - name: 変更通知
-            href: webhooks.md
             displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: 概要
+                href: webhooks.md
+              - name: 欠落している Outlook の通知 (プレビュー)
+                href: webhooks-outlook-authz.md
           - name: 変更履歴の記録
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:

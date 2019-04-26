@@ -4,32 +4,32 @@ description: 新しい休暇を作成します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: df954be9d07797e663b205af6d4dc1ef5dfb20ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a17221aa3a9a8221cdf87ae17614bb09a22e46c2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545625"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336104"
 ---
-# <a name="create-timeoff"></a><span data-ttu-id="d3866-103">timeoff の作成</span><span class="sxs-lookup"><span data-stu-id="d3866-103">Create timeOff</span></span>
+# <a name="create-timeoff"></a><span data-ttu-id="f0ddc-103">timeoff の作成</span><span class="sxs-lookup"><span data-stu-id="f0ddc-103">Create timeOff</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3866-104">[スケジュール](../resources/schedule.md)に新しい[timeoff](../resources/timeoff.md)インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d3866-104">Create a new [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="f0ddc-104">[スケジュール](../resources/schedule.md)に新しい[timeoff](../resources/timeoff.md)インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-104">Create a new [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d3866-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d3866-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0ddc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f0ddc-105">Permissions</span></span>
 
-<span data-ttu-id="d3866-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3866-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f0ddc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d3866-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d3866-108">Permission type</span></span>      | <span data-ttu-id="d3866-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d3866-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f0ddc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f0ddc-108">Permission type</span></span>      | <span data-ttu-id="f0ddc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f0ddc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d3866-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d3866-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d3866-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3866-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d3866-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d3866-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3866-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3866-113">Not supported.</span></span>    |
-|<span data-ttu-id="d3866-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d3866-114">Application</span></span> | <span data-ttu-id="d3866-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3866-115">Not supported.</span></span> |
+|<span data-ttu-id="f0ddc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f0ddc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f0ddc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0ddc-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f0ddc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f0ddc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0ddc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-113">Not supported.</span></span>    |
+|<span data-ttu-id="f0ddc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f0ddc-114">Application</span></span> | <span data-ttu-id="f0ddc-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-115">Not supported.</span></span> |
 
-> <span data-ttu-id="d3866-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d3866-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="d3866-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d3866-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="f0ddc-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="f0ddc-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d3866-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d3866-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0ddc-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f0ddc-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,22 +37,22 @@ ms.locfileid: "32545625"
 POST /teams/{teamId}/schedule/timesOff
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d3866-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3866-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f0ddc-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f0ddc-119">Request headers</span></span>
 
-| <span data-ttu-id="d3866-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3866-120">Header</span></span>       | <span data-ttu-id="d3866-121">値</span><span class="sxs-lookup"><span data-stu-id="d3866-121">Value</span></span> |
+| <span data-ttu-id="f0ddc-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f0ddc-120">Header</span></span>       | <span data-ttu-id="f0ddc-121">値</span><span class="sxs-lookup"><span data-stu-id="f0ddc-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d3866-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3866-122">Authorization</span></span>  | <span data-ttu-id="d3866-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d3866-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d3866-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d3866-125">Content-Type</span></span>  | <span data-ttu-id="d3866-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d3866-126">application/json</span></span>  |
+| <span data-ttu-id="f0ddc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0ddc-122">Authorization</span></span>  | <span data-ttu-id="f0ddc-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f0ddc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f0ddc-125">Content-Type</span></span>  | <span data-ttu-id="f0ddc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f0ddc-126">application/json</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="d3866-127">応答</span><span class="sxs-lookup"><span data-stu-id="d3866-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f0ddc-127">応答</span><span class="sxs-lookup"><span data-stu-id="f0ddc-127">Response</span></span>
 
-<span data-ttu-id="d3866-128">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[timeoff](../resources/timeoff.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d3866-128">If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
+<span data-ttu-id="f0ddc-128">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[timeoff](../resources/timeoff.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-128">If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d3866-129">例</span><span class="sxs-lookup"><span data-stu-id="d3866-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f0ddc-129">例</span><span class="sxs-lookup"><span data-stu-id="f0ddc-129">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d3866-130">要求</span><span class="sxs-lookup"><span data-stu-id="d3866-130">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f0ddc-130">要求</span><span class="sxs-lookup"><span data-stu-id="f0ddc-130">Request</span></span>
 
-<span data-ttu-id="d3866-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3866-131">The following is an example of the request.</span></span>
+<span data-ttu-id="f0ddc-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "timeoff-post"
@@ -77,16 +77,15 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="response"></a><span data-ttu-id="f0ddc-132">応答</span><span class="sxs-lookup"><span data-stu-id="f0ddc-132">Response</span></span>
 
-#### <a name="response"></a><span data-ttu-id="d3866-132">応答</span><span class="sxs-lookup"><span data-stu-id="d3866-132">Response</span></span>
+<span data-ttu-id="f0ddc-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-133">The following is an example of the response.</span></span> 
 
-<span data-ttu-id="d3866-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3866-133">The following is an example of the response.</span></span> 
-
-><span data-ttu-id="d3866-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d3866-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f0ddc-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f0ddc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "schedule-post-timesoff"
+  "@odata.type":"microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -131,8 +130,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-timesoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

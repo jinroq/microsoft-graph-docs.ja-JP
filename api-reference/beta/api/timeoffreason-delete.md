@@ -4,34 +4,34 @@ description: isActive プロパティを設定して timeoffreason を非アク�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: adf5c7b25f2a0fada834f5d865958cba89673df3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74cf9ac748facb8693db1a6260cd3fbb08014068
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548181"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335116"
 ---
-# <a name="delete-timeoffreason"></a><span data-ttu-id="d9d09-103">timeoffreason の削除</span><span class="sxs-lookup"><span data-stu-id="d9d09-103">Delete timeOffReason</span></span>
+# <a name="delete-timeoffreason"></a><span data-ttu-id="236d7-103">timeoffreason の削除</span><span class="sxs-lookup"><span data-stu-id="236d7-103">Delete timeOffReason</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9d09-104">**isActive**プロパティを設定して、 [timeoffreason](../resources/timeoffreason.md)を非アクティブとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="d9d09-104">Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.</span></span>
+<span data-ttu-id="236d7-104">**isActive**プロパティを設定して、 [timeoffreason](../resources/timeoffreason.md)を非アクティブとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="236d7-104">Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.</span></span>
 
-<span data-ttu-id="d9d09-105">このメソッドでは、指定した[timeoffreason](../resources/timeoffreason.md)インスタンスは削除されません。</span><span class="sxs-lookup"><span data-stu-id="d9d09-105">This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance.</span></span> <span data-ttu-id="d9d09-106">この理由が割り当てられた[timeoffitem](../resources/timeoffitem.md)インスタンスは、この理由に割り当てられたままになります。</span><span class="sxs-lookup"><span data-stu-id="d9d09-106">[timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.</span></span>
+<span data-ttu-id="236d7-105">このメソッドでは、指定した[timeoffreason](../resources/timeoffreason.md)インスタンスは削除されません。</span><span class="sxs-lookup"><span data-stu-id="236d7-105">This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance.</span></span> <span data-ttu-id="236d7-106">この理由が割り当てられた[timeoffitem](../resources/timeoffitem.md)インスタンスは、この理由に割り当てられたままになります。</span><span class="sxs-lookup"><span data-stu-id="236d7-106">[timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9d09-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d9d09-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="236d7-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="236d7-107">Permissions</span></span>
 
-<span data-ttu-id="d9d09-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9d09-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="236d7-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="236d7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9d09-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d9d09-110">Permission type</span></span>      | <span data-ttu-id="d9d09-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d9d09-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="236d7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="236d7-110">Permission type</span></span>      | <span data-ttu-id="236d7-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="236d7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d9d09-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d9d09-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d9d09-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9d09-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d9d09-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d9d09-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9d09-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d9d09-115">Not supported.</span></span>    |
-|<span data-ttu-id="d9d09-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d9d09-116">Application</span></span> | <span data-ttu-id="d9d09-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d9d09-117">Not supported.</span></span> |
+|<span data-ttu-id="236d7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="236d7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="236d7-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="236d7-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="236d7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="236d7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="236d7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="236d7-115">Not supported.</span></span>    |
+|<span data-ttu-id="236d7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="236d7-116">Application</span></span> | <span data-ttu-id="236d7-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="236d7-117">Not supported.</span></span> |
 
-> <span data-ttu-id="d9d09-118">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d9d09-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="d9d09-119">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d9d09-119">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="236d7-118">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="236d7-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="236d7-119">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="236d7-119">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d9d09-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d9d09-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="236d7-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="236d7-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,25 +39,25 @@ ms.locfileid: "32548181"
 DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9d09-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d9d09-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="236d7-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="236d7-121">Request headers</span></span>
 
-| <span data-ttu-id="d9d09-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d9d09-122">Header</span></span>       | <span data-ttu-id="d9d09-123">値</span><span class="sxs-lookup"><span data-stu-id="d9d09-123">Value</span></span> |
+| <span data-ttu-id="236d7-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="236d7-122">Header</span></span>       | <span data-ttu-id="236d7-123">値</span><span class="sxs-lookup"><span data-stu-id="236d7-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d9d09-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9d09-124">Authorization</span></span>  | <span data-ttu-id="d9d09-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d9d09-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d9d09-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d9d09-127">Content-Type</span></span>  | <span data-ttu-id="d9d09-128">application/json</span><span class="sxs-lookup"><span data-stu-id="d9d09-128">application/json</span></span>  |
+| <span data-ttu-id="236d7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="236d7-124">Authorization</span></span>  | <span data-ttu-id="236d7-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="236d7-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="236d7-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="236d7-127">Content-Type</span></span>  | <span data-ttu-id="236d7-128">application/json</span><span class="sxs-lookup"><span data-stu-id="236d7-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d9d09-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="d9d09-129">Request body</span></span>
-<span data-ttu-id="d9d09-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d9d09-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="236d7-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="236d7-129">Request body</span></span>
+<span data-ttu-id="236d7-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="236d7-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9d09-131">応答</span><span class="sxs-lookup"><span data-stu-id="d9d09-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="236d7-131">応答</span><span class="sxs-lookup"><span data-stu-id="236d7-131">Response</span></span>
 
-<span data-ttu-id="d9d09-p105">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="d9d09-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="236d7-p105">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="236d7-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9d09-134">例</span><span class="sxs-lookup"><span data-stu-id="d9d09-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="236d7-134">例</span><span class="sxs-lookup"><span data-stu-id="236d7-134">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d9d09-135">要求</span><span class="sxs-lookup"><span data-stu-id="d9d09-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="236d7-135">要求</span><span class="sxs-lookup"><span data-stu-id="236d7-135">Request</span></span>
 
-<span data-ttu-id="d9d09-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d9d09-136">The following is an example of the request.</span></span>
+<span data-ttu-id="236d7-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="236d7-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "timeoffreason-delete"
@@ -66,11 +66,11 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-#### <a name="response"></a><span data-ttu-id="d9d09-137">応答</span><span class="sxs-lookup"><span data-stu-id="d9d09-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="236d7-137">応答</span><span class="sxs-lookup"><span data-stu-id="236d7-137">Response</span></span>
 
-<span data-ttu-id="d9d09-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d9d09-138">The following is an example of the response.</span></span> 
+<span data-ttu-id="236d7-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="236d7-138">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="d9d09-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d9d09-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="236d7-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="236d7-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,8 +90,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/timeoffreason-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

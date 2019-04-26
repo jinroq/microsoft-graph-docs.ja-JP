@@ -2,30 +2,30 @@
 title: provisionedPlan リソースの種類
 description: '**ユーザー** エンティティと組織エンティティの provisionedPlans プロパティは、**provisionedPlan** のコレクションです。'
 localization_priority: Normal
-ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1d6bec5cdcd4caaf8990caac6614f2fa589d4c4c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563348"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344031"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="fdbd8-103">provisionedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fdbd8-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="8df2a-103">provisionedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8df2a-103">provisionedPlan resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fdbd8-104">**ユーザー** エンティティと[組織](user.md)エンティティの [provisionedPlans](organization.md) プロパティは、**provisionedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="fdbd8-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="8df2a-104">**ユーザー** エンティティと[組織](user.md)エンティティの [provisionedPlans](organization.md) プロパティは、**provisionedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="8df2a-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="fdbd8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fdbd8-105">Properties</span></span>
-| <span data-ttu-id="fdbd8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fdbd8-106">Property</span></span>     | <span data-ttu-id="fdbd8-107">型</span><span class="sxs-lookup"><span data-stu-id="fdbd8-107">Type</span></span>   |<span data-ttu-id="fdbd8-108">説明</span><span class="sxs-lookup"><span data-stu-id="fdbd8-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8df2a-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8df2a-105">Properties</span></span>
+| <span data-ttu-id="8df2a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8df2a-106">Property</span></span>     | <span data-ttu-id="8df2a-107">型</span><span class="sxs-lookup"><span data-stu-id="8df2a-107">Type</span></span>   |<span data-ttu-id="8df2a-108">説明</span><span class="sxs-lookup"><span data-stu-id="8df2a-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fdbd8-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="fdbd8-109">capabilityStatus</span></span>|<span data-ttu-id="fdbd8-110">String</span><span class="sxs-lookup"><span data-stu-id="fdbd8-110">String</span></span>|<span data-ttu-id="fdbd8-111">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="fdbd8-111">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="fdbd8-112">プロビジョニング状態</span><span class="sxs-lookup"><span data-stu-id="fdbd8-112">provisioningStatus</span></span>|<span data-ttu-id="fdbd8-113">String</span><span class="sxs-lookup"><span data-stu-id="fdbd8-113">String</span></span>|<span data-ttu-id="fdbd8-114">「成功」など。</span><span class="sxs-lookup"><span data-stu-id="fdbd8-114">For example, “Success”.</span></span>|
-|<span data-ttu-id="fdbd8-115">service</span><span class="sxs-lookup"><span data-stu-id="fdbd8-115">service</span></span>|<span data-ttu-id="fdbd8-116">String</span><span class="sxs-lookup"><span data-stu-id="fdbd8-116">String</span></span>|<span data-ttu-id="fdbd8-117">サービスの名前。「AccessControlS2S」など。</span><span class="sxs-lookup"><span data-stu-id="fdbd8-117">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="8df2a-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="8df2a-109">capabilityStatus</span></span>|<span data-ttu-id="8df2a-110">String</span><span class="sxs-lookup"><span data-stu-id="8df2a-110">String</span></span>|<span data-ttu-id="8df2a-111">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="8df2a-111">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="8df2a-112">プロビジョニング状態</span><span class="sxs-lookup"><span data-stu-id="8df2a-112">provisioningStatus</span></span>|<span data-ttu-id="8df2a-113">String</span><span class="sxs-lookup"><span data-stu-id="8df2a-113">String</span></span>|<span data-ttu-id="8df2a-114">「成功」など。</span><span class="sxs-lookup"><span data-stu-id="8df2a-114">For example, “Success”.</span></span>|
+|<span data-ttu-id="8df2a-115">service</span><span class="sxs-lookup"><span data-stu-id="8df2a-115">service</span></span>|<span data-ttu-id="8df2a-116">String</span><span class="sxs-lookup"><span data-stu-id="8df2a-116">String</span></span>|<span data-ttu-id="8df2a-117">サービスの名前。「AccessControlS2S」など。</span><span class="sxs-lookup"><span data-stu-id="8df2a-117">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fdbd8-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fdbd8-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8df2a-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8df2a-118">JSON representation</span></span>
 
-<span data-ttu-id="fdbd8-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="fdbd8-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="8df2a-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="8df2a-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

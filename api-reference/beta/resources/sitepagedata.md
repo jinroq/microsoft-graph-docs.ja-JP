@@ -5,28 +5,29 @@ ms.date: 09/01/2018
 title: sitepagedata
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 881c645c8d61f3ebc7e1011b05eb254a8984915e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583397"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343009"
 ---
-# <a name="sitepagedata-resource"></a><span data-ttu-id="06178-102">sitepagedata リソース</span><span class="sxs-lookup"><span data-stu-id="06178-102">sitePageData resource</span></span>
+# <a name="sitepagedata-resource"></a><span data-ttu-id="7dd4d-102">sitepagedata リソース</span><span class="sxs-lookup"><span data-stu-id="7dd4d-102">sitePageData resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="06178-103">**sitepagedata**リソースは[webPart][]のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="06178-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="06178-104">これらのプロパティは web パーツによって異なるため、これは固定プロパティを持たない OpenType です。</span><span class="sxs-lookup"><span data-stu-id="06178-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
+<span data-ttu-id="7dd4d-103">**sitepagedata**リソースは[webPart][]のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="7dd4d-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="7dd4d-104">これらのプロパティは web パーツによって異なるため、これは固定プロパティを持たない OpenType です。</span><span class="sxs-lookup"><span data-stu-id="7dd4d-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
 
 [パーツ]: webpart.md
 [webPart]: webpart.md
 
-## <a name="json-representation"></a><span data-ttu-id="06178-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="06178-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7dd4d-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7dd4d-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.sitePageData"
+  "@odata.type": "microsoft.graph.sitePageData",
+   "openType": true
 }-->
 
 ```json
@@ -34,8 +35,8 @@ ms.locfileid: "32583397"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="06178-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="06178-107">Properties</span></span>
-<span data-ttu-id="06178-108">このリソースには固定されたプロパティはありませんが、web パーツを定義するために必要なすべてのプロパティを含む OpenType です。</span><span class="sxs-lookup"><span data-stu-id="06178-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
+## <a name="properties"></a><span data-ttu-id="7dd4d-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7dd4d-107">Properties</span></span>
+<span data-ttu-id="7dd4d-108">このリソースには固定されたプロパティはありませんが、web パーツを定義するために必要なすべてのプロパティを含む OpenType です。</span><span class="sxs-lookup"><span data-stu-id="7dd4d-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
 
 <!--
 {
@@ -44,8 +45,6 @@ ms.locfileid: "32583397"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/SitePageData",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sitepagedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
